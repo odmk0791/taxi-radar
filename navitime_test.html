@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>NAVITIME URLテスト</title>
+<style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,sans-serif;padding:20px}
+h2{font-size:15px;color:#f0a500;margin-bottom:6px}
+p{font-size:12px;color:#8b949e;margin-bottom:16px;line-height:1.6}
+.btn{display:block;width:100%;padding:14px 12px;margin-bottom:10px;border:none;border-radius:10px;
+  font-family:-apple-system,sans-serif;font-size:13px;font-weight:700;cursor:pointer;text-align:left}
+.url{font-size:10px;color:rgba(255,255,255,.4);margin-top:3px;word-break:break-all;font-family:monospace}
+.g{background:#1a4a2a;color:#39d353;border:1px solid rgba(57,211,83,.3)}
+.b{background:#1c2a3a;color:#58a6ff;border:1px solid rgba(88,166,255,.3)}
+.r{background:#2a1a1a;color:#f85149;border:1px solid rgba(248,81,73,.3)}
+#log{margin-top:20px;padding:12px;background:#161b22;border-radius:8px;font-size:11px;
+  min-height:50px;white-space:pre-wrap;color:#8b949e;border:1px solid #30363d}
+</style>
+</head>
+<body>
+<h2>🧪 NAVITIMEドライブサポーター URLテスト</h2>
+<p>テスト目的地：<b style="color:#e6edf3">港区六本木三丁目</b>（35.6599, 139.7313）<br>
+各ボタンを順番に押して、どれがピン表示またはルート表示になるか確認してください。</p>
+
+<button class="btn g" onclick="test('navitimedrive://navi?to_lat=35.6599&to_lon=139.7313&to_name=%E5%85%AD%E6%9C%AC%E6%9C%A8%E4%B8%89%E4%B8%81%E7%9B%AE')">
+  ① navi + to_lat/to_lon（現在の形式）
+  <div class="url">navitimedrive://navi?to_lat=35.6599&to_lon=139.7313&to_name=六本木三丁目</div>
+</button>
+
+<button class="btn b" onclick="test('navitimedrive://map?lat=35.6599&lon=139.7313&name=%E5%85%AD%E6%9C%AC%E6%9C%A8%E4%B8%89%E4%B8%81%E7%9B%AE')">
+  ② map + lat/lon
+  <div class="url">navitimedrive://map?lat=35.6599&lon=139.7313&name=六本木三丁目</div>
+</button>
+
+<button class="btn b" onclick="test('navitimedrive://map?lat=35.6599&lng=139.7313&name=%E5%85%AD%E6%9C%AC%E6%9C%A8%E4%B8%89%E4%B8%81%E7%9B%AE')">
+  ③ map + lat/lng
+  <div class="url">navitimedrive://map?lat=35.6599&lng=139.7313&name=六本木三丁目</div>
+</button>
+
+<button class="btn b" onclick="test('navitimedrive://navi?goal_lat=35.6599&goal_lon=139.7313&goal_name=%E5%85%AD%E6%9C%AC%E6%9C%A8%E4%B8%89%E4%B8%81%E7%9B%AE')">
+  ④ navi + goal_lat/goal_lon
+  <div class="url">navitimedrive://navi?goal_lat=35.6599&goal_lon=139.7313&goal_name=六本木三丁目</div>
+</button>
+
+<button class="btn b" onclick="test('navitimedrive://route?goal_lat=35.6599&goal_lon=139.7313&goal_name=%E5%85%AD%E6%9C%AC%E6%9C%A8%E4%B8%89%E4%B8%81%E7%9B%AE')">
+  ⑤ route + goal_lat/goal_lon
+  <div class="url">navitimedrive://route?goal_lat=35.6599&goal_lon=139.7313&goal_name=六本木三丁目</div>
+</button>
+
+<button class="btn b" onclick="test('navitimedrive://spot?lat=35.6599&lon=139.7313&name=%E5%85%AD%E6%9C%AC%E6%9C%A8%E4%B8%89%E4%B8%81%E7%9B%AE')">
+  ⑥ spot + lat/lon
+  <div class="url">navitimedrive://spot?lat=35.6599&lon=139.7313&name=六本木三丁目</div>
+</button>
+
+<button class="btn r" onclick="test('navitimedrive://navi?lat=35.6599&lon=139.7313&name=%E5%85%AD%E6%9C%AC%E6%9C%A8%E4%B8%89%E4%B8%81%E7%9B%AE')">
+  ⑦ navi + lat/lon（シンプル形式）
+  <div class="url">navitimedrive://navi?lat=35.6599&lon=139.7313&name=六本木三丁目</div>
+</button>
+
+<div id="log">ボタンを押した結果をここにメモしてください</div>
+
+<script>
+function test(url) {
+  var log = document.getElementById('log');
+  var num = url.match(/\/\/(\w+)\?/)[1];
+  log.textContent += new Date().toLocaleTimeString() + ' 起動: ' + url.split('?')[0] + '\n';
+  window.location.href = url;
+}
+</script>
+</body>
+</html>
