@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0d1117">
+<title>TAXI RADAR</title>
+<style>
+:root{--bg:#0d1117;--s:#161b22;--s2:#1c2230;--bd:#30363d;--g:#39d353;--gd:#1a4a2a;--am:#f0a500;--bl:#58a6ff;--re:#f85149;--tx:#e6edf3;--mu:#8b949e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:var(--bg);color:var(--tx);font-family:-apple-system,'Hiragino Sans',sans-serif;padding-bottom:env(safe-area-inset-bottom,16px)}
+/* HEADER */
+#hdr{position:sticky;top:0;z-index:200;background:rgba(13,17,23,.97);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0)}
+.hi{display:flex;align-items:center;gap:8px;padding:10px 14px}
+.logo{font-size:16px;font-weight:900;flex-shrink:0}.logo b{color:var(--am)}
+.hs{flex:1;min-width:0}
+.st{font-size:11px;color:var(--mu);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ck{font-size:14px;font-weight:700;color:var(--g);background:var(--gd);border:1px solid rgba(57,211,83,.3);border-radius:8px;padding:5px 9px;flex-shrink:0;text-align:center;font-family:ui-monospace,monospace}
+.cd{font-size:9px;color:rgba(57,211,83,.6);margin-top:1px}
+.set-btn{background:none;border:none;cursor:pointer;font-size:20px;padding:2px;flex-shrink:0}
+#notify-btn{font-size:11px;font-weight:700;font-family:-apple-system,sans-serif;padding:5px 8px;border-radius:8px;border:1px solid var(--bd);background:var(--s2);color:var(--mu);white-space:nowrap}
+/* SETUP OVERLAY */
+#setup{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;padding:20px}
+#setup.hidden{display:none}
+.setup-box{background:var(--s);border:1px solid var(--bd);border-radius:16px;padding:20px;width:100%;max-width:420px}
+.setup-box h2{font-size:16px;margin-bottom:6px}
+.setup-box p{font-size:12px;color:var(--mu);margin-bottom:14px;line-height:1.7}
+.setup-box ol{font-size:12px;color:var(--mu);padding-left:18px;margin-bottom:14px;line-height:2}
+.setup-box ol b{color:var(--tx)}
+.url-input{width:100%;padding:10px 12px;background:var(--bg);border:1px solid var(--bd);border-radius:8px;color:var(--tx);font-size:12px;margin-bottom:10px;font-family:-apple-system,sans-serif}
+.url-input:focus{outline:none;border-color:var(--g)}
+.setup-save{width:100%;padding:12px;background:var(--g);color:#000;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;font-family:-apple-system,sans-serif}
+.setup-note{font-size:11px;color:var(--mu);text-align:center;margin-top:10px;line-height:1.5}
+/* MAIN */
+main{padding:12px 14px}
+.data-bar{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:var(--s);border:1px solid var(--bd);border-radius:10px;margin-bottom:12px}
+.data-info{font-size:11px;color:var(--mu)}
+.data-info b{color:var(--g)}
+.refresh-btn{background:none;border:1px solid var(--bd);border-radius:6px;color:var(--bl);font-size:11px;font-weight:700;cursor:pointer;padding:4px 10px;font-family:-apple-system,sans-serif}
+.refresh-btn:disabled{opacity:.5}
+/* TABS */
+.tab-row{display:flex;border-bottom:1px solid var(--bd);margin-bottom:12px}
+.tabBtn{flex:1;padding:8px 4px;font-size:13px;font-weight:700;font-family:-apple-system,'Hiragino Sans',sans-serif;color:var(--mu);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer}
+.tabBtn.on{color:var(--g);border-bottom-color:var(--g)}
+/* GPS BOX */
+.gps-box{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:12px}
+.gps-top{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.loc-label{font-size:10px;color:var(--mu)}
+.loc-name{font-size:13px;font-weight:700;margin-top:2px}
+.btn-row{display:flex;gap:8px}
+.btn{flex:1;padding:11px 8px;border-radius:10px;border:none;font-family:-apple-system,'Hiragino Sans',sans-serif;font-size:13px;font-weight:700;cursor:pointer;text-align:center}
+.btn-g{background:var(--g);color:#000}
+.btn-g:disabled{background:var(--gd);color:var(--g)}
+.btn-b{background:var(--s2);color:var(--bl);border:1px solid var(--bd)!important}
+.err{display:none;background:rgba(248,81,73,.1);border:1px solid rgba(248,81,73,.4);border-radius:10px;padding:10px 12px;margin-top:8px;font-size:12px;color:var(--re);line-height:1.7;white-space:pre-line}
+.err.show{display:block}
+.err-btn{display:inline-block;margin-top:6px;padding:3px 10px;background:var(--re);color:#fff;border:none;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;font-family:-apple-system,sans-serif}
+/* CONTROLS */
+.ctrl{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.cr{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.cl{font-size:11px;color:var(--mu);flex-shrink:0}
+.cv{font-size:13px;font-weight:700;color:var(--am);flex-shrink:0;min-width:32px;text-align:right}
+input[type=range]{flex:1;height:4px;-webkit-appearance:none;outline:none;border-radius:2px;background:linear-gradient(to right,var(--g) 0%,var(--g) var(--p,14%),var(--bd) var(--p,14%))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--g);cursor:pointer}
+/* CHIPS */
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;padding:7px 14px;border-radius:20px;font-size:12px;font-weight:700;font-family:-apple-system,'Hiragino Sans',sans-serif;border:1px solid var(--bd);background:var(--bg);color:var(--mu);cursor:pointer;flex-shrink:0}
+.chip.on{background:var(--g);color:#000;border-color:var(--g)}
+/* CARDS */
+.sec{font-size:11px;color:var(--mu);margin-bottom:8px;display:flex;align-items:center;gap:6px;text-transform:uppercase;letter-spacing:.06em}
+.sec::after{content:'';flex:1;height:1px;background:var(--bd)}
+.card{display:flex;align-items:center;gap:10px;background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:8px;text-decoration:none;color:inherit;cursor:pointer}
+.rank{font-size:14px;font-weight:900;width:24px;text-align:center;flex-shrink:0}
+.r1{color:var(--am)}.r2{color:#94a3b8}.r3{color:#cd7f32}.rn{color:var(--mu)}
+.cb{flex:1;min-width:0}
+.cn{font-size:15px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-bottom:4px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:10px;padding:2px 8px;border-radius:20px;font-weight:700}
+.td{background:rgba(88,166,255,.12);color:var(--bl)}
+.tc{background:rgba(57,211,83,.12);color:var(--g)}
+.bar{height:3px;background:var(--bd);border-radius:2px;margin-top:6px}
+.barf{height:3px;border-radius:2px;background:linear-gradient(to right,var(--g),var(--am))}
+.carr{font-size:18px;color:var(--mu);flex-shrink:0}
+/* EMPTY / LOADING */
+.empty{padding:32px 0;text-align:center;color:var(--mu)}
+.empty span{font-size:40px;display:block;margin-bottom:8px}
+.empty p{font-size:13px;line-height:1.7}
+.loading{padding:24px;text-align:center;color:var(--mu);font-size:13px}
+.spin{display:inline-block;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* HOT AREA */
+.area{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.ah{display:flex;align-items:center;gap:7px;margin-bottom:7px}
+.adot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.an{font-size:13px;font-weight:700}
+.ac{font-size:11px;color:var(--mu);margin-left:auto}
+.aps{display:flex;flex-wrap:wrap;gap:4px}
+.pill{font-size:10px;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.05);color:var(--tx);border:1px solid var(--bd)}
+
+/* weather widget */
+.weather-bar{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--s);border:1px solid var(--bd);border-radius:10px;margin-bottom:10px}
+.wx-icon{font-size:20px;flex-shrink:0}
+.wx-info{flex:1;min-width:0}
+.wx-temp{font-size:13px;font-weight:700}
+.wx-desc{font-size:11px;color:var(--mu);margin-top:1px}
+.wx-rain{font-size:11px;font-weight:700;color:var(--bl);flex-shrink:0;background:rgba(88,166,255,.12);padding:3px 8px;border-radius:20px}
+.wx-rain.heavy{color:#f85149;background:rgba(248,81,73,.12)}
+/* ステータスフィルター */
+.filter-row{display:flex;gap:5px;margin-bottom:10px;flex-wrap:wrap}
+.filter-btn{padding:7px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--bg);color:var(--mu);font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;cursor:pointer;text-align:center;flex-shrink:0;transition:all .1s}
+.filter-btn.on{border-color:currentColor}
+.filter-btn.on.fa{background:var(--gd);color:var(--g)}
+.filter-btn.on.fg{background:rgba(57,211,83,.15);color:#39d353;border-color:#39d353}
+.filter-btn.on.fs{background:rgba(88,166,255,.15);color:#58a6ff;border-color:#58a6ff}
+.filter-btn.on.fk{background:rgba(240,165,0,.15);color:#f0a500;border-color:#f0a500}
+/* スポットバッジ */
+.badges{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+.badge{font-size:9px;padding:2px 6px;border-radius:10px;font-weight:700}
+.badge-go{background:rgba(57,211,83,.15);color:#39d353}
+.badge-sm{background:rgba(88,166,255,.15);color:#58a6ff}
+.badge-na{background:rgba(240,165,0,.15);color:#f0a500}
+</style>
+</head>
+<body>
+
+<!-- SETUP OVERLAY -->
+<div id="setup">
+  <div class="setup-box">
+    <h2>📊 Google スプレッドシート連携</h2>
+    <p>スプレッドシートをウェブ公開してURLを貼り付けると、データが自動更新されます。</p>
+    <ol>
+      <li>スプレッドシートを開く</li>
+      <li><b>ファイル → 共有 → ウェブに公開</b></li>
+      <li><b>「カンマ区切り形式（.csv）」</b>を選択</li>
+      <li><b>「公開」</b>をクリックしてURLをコピー</li>
+      <li>下にURLを貼り付けて保存</li>
+    </ol>
+    <input class="url-input" id="sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/e/..." />
+    <button class="setup-save" id="setup-save">保存してデータを読み込む</button>
+    <p class="setup-note">URLはこのブラウザ内のみに保存されます。<br>外部サーバーには送信されません。</p>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div id="hdr">
+  <div class="hi">
+    <div class="logo">🚖 TAXI<b>▸</b>RADAR</div>
+    <div class="hs"><div class="st" id="st">読み込み中...</div></div>
+    <div class="ck"><div id="ck">--:--</div><div class="cd" id="cd">---</div></div>
+    <button class="set-btn" id="notify-btn" onclick="toggleNotify()" title="通知">🔕 通知OFF</button>
+    <button class="set-btn" id="open-setup" title="設定">⚙️</button>
+  </div>
+</div>
+
+<main>
+  <!-- データバー -->
+  <div class="data-bar" id="data-bar" style="display:none">
+    <div class="data-info">📊 <b id="rec-count">-</b>件 ｜ 更新: <span id="last-update">-</span></div>
+    <button class="refresh-btn" id="refresh-btn">🔄 更新</button>
+  </div>
+
+  <div class="tab-row">
+    <button class="tabBtn on" id="tab-r">🎯 近くのスポット</button>
+    <button class="tabBtn" id="tab-h">🔥 エリア別</button>
+  </div>
+
+  <!-- RADAR TAB -->
+  <div id="pg-r">
+    <div class="gps-box">
+      <div class="gps-top">
+        <span style="font-size:20px">📍</span>
+        <div>
+          <div class="loc-label">現在地</div>
+          <div class="loc-name" id="locname">未設定</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-g" id="gpsbtn">📡 GPS取得</button>
+        <button class="btn btn-b" id="manualbtn">✏️ 手動入力</button>
+      </div>
+      <div class="err" id="errbox"><span id="errtxt"></span><br><button class="err-btn" id="errcls">閉じる</button></div>
+    </div>
+    <div class="ctrl">
+      <div class="cr">
+        <span class="cl">検索半径</span>
+        <input type="range" id="rs" min="1" max="30" value="5" style="--p:14%">
+        <span class="cv" id="rv">5km</span>
+      </div>
+      <div class="chips" id="tc">
+        <button class="chip on" data-o="0">今すぐ</button>
+        <button class="chip" data-o="1">+1h</button>
+        <button class="chip" data-o="2">+2h</button>
+        <button class="chip" data-o="3">+3h</button>
+        <button class="chip" data-o="-1">-1h</button>
+        <button class="chip" data-o="-2">-2h</button>
+      </div>
+    </div>
+    <!-- 天気バー -->
+    <div class="weather-bar" id="wx-bar" style="display:none">
+      <div class="wx-icon" id="wx-icon">🌤️</div>
+      <div class="wx-info">
+        <div class="wx-temp" id="wx-temp">--°C</div>
+        <div class="wx-desc" id="wx-desc">取得中...</div>
+      </div>
+      <div class="wx-rain" id="wx-rain" style="display:none"></div>
+    </div>
+    <!-- ステータスフィルター（複数選択可） -->
+    <div class="filter-row">
+      <button class="filter-btn on fa" data-st="all">すべて</button>
+      <button class="filter-btn fg" data-st="GO">🟢 GO</button>
+      <button class="filter-btn fs" data-st="スマ配">📱 スマ配</button>
+      <button class="filter-btn fk" data-st="流し">🚕 流し</button>
+    </div>
+    <div class="sec">近くのスポット</div>
+    <div id="rl"><div class="loading"><span class="spin">⏳</span> データ読み込み中...</div></div>
+  </div>
+
+  <!-- HOT TAB -->
+  <div id="pg-h" style="display:none">
+    <div class="chips" id="dc" style="margin-bottom:12px">
+      <button class="chip on" data-d="today">今日</button>
+      <button class="chip" data-d="月">月</button>
+      <button class="chip" data-d="火">火</button>
+      <button class="chip" data-d="水">水</button>
+      <button class="chip" data-d="木">木</button>
+      <button class="chip" data-d="金">金</button>
+      <button class="chip" data-d="土">土</button>
+      <button class="chip" data-d="日">日</button>
+    </div>
+    <div class="sec">エリア別ランキング</div>
+    <div id="hl"><div class="loading"><span class="spin">⏳</span> データ読み込み中...</div></div>
+  </div>
+</main>
+
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// 座標マップ (市区＋地名 → [lat, lng])
+// ============================================================
+var COORDS = {
+  '港区六本木三丁目':[35.6599,139.7313],'港区六本木一丁目':[35.6641,139.7318],
+  '港区六本木七丁目':[35.6568,139.728],'港区六本木五丁目':[35.6579,139.7297],
+  '港区六本木六丁目':[35.6589,139.7306],'港区六本木四丁目':[35.6595,139.7321],
+  '港区六本木二丁目':[35.662,139.7315],'港区西麻布一丁目':[35.6577,139.7226],
+  '港区西麻布二丁目':[35.6566,139.7215],'港区西麻布三丁目':[35.6555,139.7205],
+  '港区西麻布四丁目':[35.6545,139.7195],'港区麻布台一丁目':[35.665,139.7393],
+  '港区麻布台二丁目':[35.664,139.7383],'港区麻布台三丁目':[35.663,139.7373],
+  '港区麻布十番一丁目':[35.6563,139.7375],'港区麻布十番二丁目':[35.6553,139.7365],
+  '港区麻布十番三丁目':[35.6543,139.7355],'港区麻布十番四丁目':[35.6533,139.7345],
+  '港区南青山二丁目':[35.6684,139.717],'港区南青山一丁目':[35.6694,139.716],
+  '港区南青山三丁目':[35.6674,139.718],'港区南青山四丁目':[35.6664,139.719],
+  '港区南青山五丁目':[35.6654,139.72],'港区南青山六丁目':[35.6644,139.721],
+  '港区北青山三丁目':[35.6695,139.7198],'港区北青山二丁目':[35.6705,139.7188],
+  '港区赤坂九丁目':[35.6671,139.7366],'港区赤坂八丁目':[35.6681,139.7356],
+  '港区赤坂七丁目':[35.6691,139.7346],'港区赤坂六丁目':[35.6701,139.7336],
+  '港区赤坂五丁目':[35.6711,139.7326],'港区赤坂四丁目':[35.6721,139.7316],
+  '港区赤坂三丁目':[35.6731,139.7384],'港区赤坂二丁目':[35.6731,139.7374],
+  '港区赤坂一丁目':[35.6741,139.7364],'港区新橋二丁目':[35.6676,139.7578],
+  '港区新橋一丁目':[35.6676,139.7598],'港区新橋三丁目':[35.6666,139.7568],
+  '港区新橋四丁目':[35.6656,139.7558],'港区新橋五丁目':[35.6646,139.7548],
+  '港区新橋六丁目':[35.6636,139.7538],'港区芝浦四丁目':[35.6378,139.7482],
+  '港区芝浦三丁目':[35.6388,139.7472],'港区芝浦二丁目':[35.6398,139.7462],
+  '港区芝浦一丁目':[35.6408,139.7452],'港区虎ノ門一丁目':[35.6691,139.7499],
+  '港区虎ノ門二丁目':[35.6684,139.749],'港区虎ノ門三丁目':[35.6674,139.748],
+  '港区虎ノ門四丁目':[35.6664,139.747],'港区虎ノ門五丁目':[35.6654,139.746],
+  '港区愛宕一丁目':[35.6658,139.7484],'港区愛宕二丁目':[35.6648,139.7474],
+  '港区港南二丁目':[35.6266,139.7401],'港区港南三丁目':[35.6256,139.7391],
+  '港区港南四丁目':[35.6246,139.7381],'港区海岸一丁目':[35.653,139.758],
+  '港区海岸三丁目':[35.651,139.76],'港区芝四丁目':[35.6521,139.746],
+  '港区芝二丁目':[35.6541,139.748],'港区芝一丁目':[35.6551,139.749],
+  '港区三田一丁目':[35.6481,139.742],'港区高輪一丁目':[35.6381,139.731],
+  '港区高輪二丁目':[35.6371,139.732],'港区高輪三丁目':[35.6361,139.733],
+  '港区高輪四丁目':[35.6351,139.734],'港区白金台三丁目':[35.6361,139.722],
+  '港区白金二丁目':[35.6421,139.729],'港区白金四丁目':[35.6401,139.731],
+  '港区東新橋一丁目':[35.6643,139.7604],'港区東新橋二丁目':[35.6633,139.7594],
+  '港区東麻布一丁目':[35.6551,139.737],'港区南麻布四丁目':[35.6451,139.732],
+  '港区南麻布五丁目':[35.6441,139.733],'港区元麻布一丁目':[35.6521,139.722],
+  '港区元麻布三丁目':[35.6501,139.724],'港区西新橋一丁目':[35.6661,139.7509],
+  '港区西新橋二丁目':[35.6651,139.7519],'港区西新橋三丁目':[35.6641,139.7529],
+  '新宿区歌舞伎町二丁目':[35.6947,139.7028],'新宿区歌舞伎町一丁目':[35.6938,139.702],
+  '新宿区新宿三丁目':[35.6889,139.7075],'新宿区新宿二丁目':[35.6879,139.7065],
+  '新宿区新宿五丁目':[35.6909,139.7095],'新宿区新宿六丁目':[35.6919,139.7105],
+  '新宿区西新宿一丁目':[35.693,139.6953],'新宿区西新宿三丁目':[35.691,139.6933],
+  '新宿区西新宿六丁目':[35.688,139.6903],'新宿区北新宿一丁目':[35.697,139.6893],
+  '新宿区高田馬場二丁目':[35.7119,139.7028],'新宿区高田馬場三丁目':[35.7109,139.7018],
+  '渋谷区道玄坂二丁目':[35.6579,139.6983],'渋谷区道玄坂一丁目':[35.6589,139.6973],
+  '渋谷区渋谷一丁目':[35.6606,139.7011],'渋谷区渋谷二丁目':[35.6593,139.702],
+  '渋谷区渋谷三丁目':[35.658,139.703],'渋谷区渋谷四丁目':[35.657,139.704],
+  '渋谷区恵比寿一丁目':[35.6479,139.7097],'渋谷区恵比寿南一丁目':[35.6462,139.7087],
+  '渋谷区恵比寿西一丁目':[35.6469,139.7077],'渋谷区恵比寿西二丁目':[35.6459,139.7067],
+  '渋谷区神宮前六丁目':[35.6657,139.7063],'渋谷区神宮前四丁目':[35.6685,139.7057],
+  '渋谷区神宮前二丁目':[35.6712,139.7054],'渋谷区神宮前一丁目':[35.6722,139.7044],
+  '渋谷区神南一丁目':[35.6614,139.6991],'渋谷区宇田川町':[35.6614,139.6971],
+  '渋谷区広尾一丁目':[35.6479,139.7157],'渋谷区広尾三丁目':[35.6459,139.7177],
+  '渋谷区広尾四丁目':[35.6449,139.7187],'渋谷区広尾五丁目':[35.6439,139.7197],
+  '渋谷区笹塚一丁目':[35.6617,139.6711],'渋谷区笹塚二丁目':[35.6607,139.6701],
+  '品川区東五反田一丁目':[35.6263,139.7244],'品川区東五反田五丁目':[35.6231,139.7261],
+  '品川区西五反田一丁目':[35.6243,139.7224],'品川区西五反田二丁目':[35.6233,139.7214],
+  '品川区南大井六丁目':[35.5887,139.7303],'品川区東品川二丁目':[35.616,139.7454],
+  '品川区戸越一丁目':[35.6101,139.7172],'品川区旗の台一丁目':[35.6041,139.7182],
+  '目黒区青葉台一丁目':[35.649,139.706],'目黒区青葉台三丁目':[35.647,139.708],
+  '目黒区上目黒一丁目':[35.6442,139.6987],'目黒区上目黒二丁目':[35.6432,139.6977],
+  '目黒区上目黒三丁目':[35.6422,139.6967],'目黒区下目黒二丁目':[35.6322,139.7007],
+  '目黒区下目黒三丁目':[35.6312,139.7017],'目黒区大橋二丁目':[35.6532,139.6907],
+  '大田区山王二丁目':[35.596,139.721],'大田区蒲田五丁目':[35.564,139.7162],
+  '大田区羽田空港T2':[35.554,139.745],'大田区大森北一丁目':[35.5873,139.7288],
+  '大田区大森北四丁目':[35.5843,139.7258],'大田区南馬込四丁目':[35.5942,139.7063],
+  '大田区中馬込一丁目':[35.5952,139.7083],'大田区田園調布二丁目':[35.5962,139.6697],
+  '大田区下丸子二丁目':[35.5682,139.6967],'大田区池上六丁目':[35.5762,139.7052],
+  '世田谷区上北沢四丁目':[35.6617,139.6297],'世田谷区北烏山七丁目':[35.6705,139.6105],
+  '世田谷区経堂二丁目':[35.6478,139.6548],'世田谷区梅丘二丁目':[35.6478,139.6478],
+  '世田谷区北沢二丁目':[35.662,139.668],'世田谷区北沢三丁目':[35.661,139.669],
+  '世田谷区太子堂二丁目':[35.653,139.665],'世田谷区太子堂五丁目':[35.65,139.668],
+  '世田谷区池尻三丁目':[35.6541,139.677],'世田谷区三宿二丁目':[35.6571,139.674],
+  '世田谷区代沢一丁目':[35.656,139.668],'世田谷区梅丘一丁目':[35.6488,139.6468],
+  '世田谷区豪徳寺一丁目':[35.6418,139.6447],'世田谷区世田谷一丁目':[35.6467,139.653],
+  '世田谷区南烏山六丁目':[35.6598,139.6157],'世田谷区玉川三丁目':[35.61,139.646],
+  '三鷹市新川六丁目':[35.6823,139.56],'三鷹市下連雀八丁目':[35.682,139.5598],
+  '三鷹市下連雀五丁目':[35.6815,139.5593],'三鷹市下連雀一丁目':[35.6835,139.5613],
+  '三鷹市北野二丁目':[35.6836,139.5527],'三鷹市北野四丁目':[35.6836,139.5507],
+  '三鷹市牟礼一丁目':[35.6836,139.5697],'三鷹市野崎一丁目':[35.6836,139.5657],
+  '中央区銀座二丁目':[35.6723,139.7667],'中央区銀座五丁目':[35.6693,139.7697],
+  '中央区銀座七丁目':[35.6673,139.7717],'中央区銀座八丁目':[35.6663,139.7727],
+  '中央区八重洲一丁目':[35.6833,139.7707],'中央区勝どき三丁目':[35.6613,139.7797],
+  '千代田区丸の内一丁目':[35.684,139.7636],'千代田区大手町一丁目':[35.686,139.7676],
+  '千代田区有楽町一丁目':[35.676,139.7626],'杉並区高井戸東三丁目':[35.6934,139.6166],
+  '杉並区上高井戸二丁目':[35.6954,139.6186],'杉並区荻窪五丁目':[35.6964,139.6296],
+  '杉並区久我山三丁目':[35.6904,139.6016],'杉並区浜田山四丁目':[35.6834,139.6256],
+  '武蔵野市吉祥寺本町一丁目':[35.7074,139.5799],'武蔵野市吉祥寺南町一丁目':[35.7014,139.5769],
+  '中野区中野二丁目':[35.7073,139.6636],'中野区中野四丁目':[35.7073,139.6636],
+  '練馬区光が丘二丁目':[35.7617,139.6322],'練馬区石神井町二丁目':[35.7507,139.6182],
+  '豊島区東池袋一丁目':[35.7295,139.7186],'豊島区西池袋三丁目':[35.7295,139.7086],
+  '板橋区徳丸二丁目':[35.7878,139.7034],'板橋区大山東町':[35.7618,139.7154],
+  '足立区弘道一丁目':[35.7754,139.8044],'北区赤羽一丁目':[35.7778,139.7236],
+  '江東区有明一丁目':[35.6334,139.7851],'台東区根岸一丁目':[35.7246,139.7949],
+  '葛飾区東金町一丁目':[35.7624,139.8643],'葛飾区金町六丁目':[35.7664,139.8543]
+};
+// 市区レベルのデフォルト座標
+var WARD = {
+  '港区':[35.6581,139.7514],'渋谷区':[35.6637,139.7033],'新宿区':[35.6896,139.6997],
+  '品川区':[35.6094,139.7302],'目黒区':[35.6404,139.6987],'大田区':[35.5613,139.7157],
+  '世田谷区':[35.6465,139.6537],'中央区':[35.6703,139.7727],'千代田区':[35.694,139.7536],
+  '文京区':[35.7079,139.7519],'台東区':[35.7126,139.7779],'墨田区':[35.7104,139.8014],
+  '江東区':[35.6734,139.8174],'荒川区':[35.7361,139.7833],'足立区':[35.7754,139.8044],
+  '葛飾区':[35.7444,139.8473],'北区':[35.7528,139.7336],'板橋区':[35.7508,139.7094],
+  '練馬区':[35.7357,139.6522],'豊島区':[35.7295,139.7186],'中野区':[35.7073,139.6636],
+  '杉並区':[35.6994,139.6366],'三鷹市':[35.6836,139.5597],'武蔵野市':[35.7074,139.5659],
+  '調布市':[35.6514,139.5438],'府中市':[35.6694,139.4779],'江戸川区':[35.7067,139.8686]
+};
+
+function getCoords(ward, name) {
+  var k = ward + name;
+  if (COORDS[k]) return COORDS[k];
+  if (WARD[ward]) return WARD[ward];
+  return [35.6762, 139.6503];
+}
+
+// ============================================================
+// 状態変数
+// ============================================================
+var D = null;
+var DAYS = ['日','月','火','水','木','金','土'];
+var PC = ['#f0a500','#94a3b8','#cd7f32','#39d353','#58a6ff','#a78bfa','#f87171','#22d3ee'];
+var uLat = null, uLng = null, R = 5, off = 0;
+var hDay = DAYS[new Date().getDay()];
+
+// ============================================================
+// 時計
+// ============================================================
+function tick() {
+  var n = new Date();
+  document.getElementById('ck').textContent = ('0'+n.getHours()).slice(-2)+':'+('0'+n.getMinutes()).slice(-2);
+  document.getElementById('cd').textContent = DAYS[n.getDay()]+'曜';
+}
+setInterval(tick, 1000); tick();
+
+// ============================================================
+// CSV パース（配列ベース・重複列名に対応）
+// ============================================================
+function parseCSV(text) {
+  // BOM除去
+  text = text.replace(/^\uFEFF/, '');
+  var lines = text.split(/\r?\n/);
+  if (lines.length < 2) return { headers: [], rows: [] };
+  function splitLine(line) {
+    var cells = [], inQ = false, cell = '';
+    for (var c = 0; c < line.length; c++) {
+      var ch = line[c];
+      if (ch === '"') { inQ = !inQ; }
+      else if (ch === ',' && !inQ) { cells.push(cell.trim()); cell = ''; }
+      else { cell += ch; }
+    }
+    cells.push(cell.trim());
+    return cells;
+  }
+  var headers = splitLine(lines[0]);
+  var rows = [];
+  for (var i = 1; i < lines.length; i++) {
+    var line = lines[i].trim();
+    if (!line) continue;
+    rows.push(splitLine(line));
+  }
+  return { headers: headers, rows: rows };
+}
+
+// ============================================================
+// CSV → データ集計（列インデックスで直接取得）
+// ============================================================
+function buildData(parsed) {
+  var headers = parsed.headers;
+  var rows = parsed.rows;
+  // 列インデックスを検索（重複列は最初のものを使用）
+  var idxDay=-1, idxTime=-1, idxWard=-1, idxName=-1, idxStatus=-1;
+  for (var i=0; i<headers.length; i++) {
+    var h = headers[i].replace(/\s/g,'');
+    if (h==='曜' && idxDay===-1) idxDay=i;
+    if (h==='乗' && idxTime===-1) idxTime=i;
+    if ((h==='乗車地：市区'||h==='乗車地:市区') && idxWard===-1) idxWard=i;
+    if ((h==='乗車地：地名'||h==='乗車地:地名') && idxName===-1) idxName=i;
+    if (h==='ステータス' && idxStatus===-1) idxStatus=i;
+  }
+  if (idxDay===-1) idxDay=1;
+  if (idxTime===-1) idxTime=2;
+  if (idxWard===-1) idxWard=5;
+  if (idxName===-1) idxName=6;
+  if (idxStatus===-1) idxStatus=11;
+  var agg = {};
+  for (var j=0; j<rows.length; j++) {
+    var r = rows[j];
+    var day = (r[idxDay]||'').trim();
+    var timeStr = (r[idxTime]||'').trim();
+    var ward = (r[idxWard]||'').trim();
+    var name = (r[idxName]||'').trim();
+    var status = (r[idxStatus]||'').trim();
+    if (!day || !timeStr || !ward || !name) continue;
+    var hourMatch = timeStr.match(/^(\d+):/);
+    if (!hourMatch) continue;
+    var hour = parseInt(hourMatch[1]);
+    var key = day+'|'+hour+'|'+ward+'|'+name;
+    if (!agg[key]) {
+      var coords = getCoords(ward, name);
+      agg[key] = { day:day, hour:hour, ward:ward, name:name, count:0, goCount:0, smCount:0, naCount:0, lat:coords[0], lng:coords[1] };
+    }
+    agg[key].count++;
+    if (status === 'GO')    agg[key].goCount++;
+    if (status === 'スマ配') agg[key].smCount++;
+    if (status === '流し')  agg[key].naCount++;
+  }
+  return Object.values(agg);
+}
+
+// ============================================================
+// データ読み込み（Google Sheets CSV）
+// ============================================================
+function loadData(url, isRefresh) {
+  document.getElementById('st').textContent = isRefresh ? '🔄 データ更新中...' : '📊 データ読み込み中...';
+  document.getElementById('rl').innerHTML = '<div class="loading"><span class="spin">⏳</span> 読み込み中...</div>';
+  var btn = document.getElementById('refresh-btn');
+  if (btn) btn.disabled = true;
+
+  fetch(url)
+    .then(function(res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.text();
+    })
+    .then(function(text) {
+      var parsed = parseCSV(text);
+      if (parsed.rows.length === 0) throw new Error('データが空です');
+      D = buildData(parsed);
+      // ローカルキャッシュに保存
+      var cache = { data: D, time: new Date().toISOString(), count: parsed.rows.length };
+      try { localStorage.setItem('taxiradar_cache', JSON.stringify(cache)); } catch(e){}
+      updateDataBar(rows.length, new Date());
+      document.getElementById('st').textContent = '📍 現在地を設定してください';
+      if (btn) btn.disabled = false;
+      renderRadar();
+      renderHot();
+    })
+    .catch(function(err) {
+      // キャッシュがあればそちらを使う
+      var cached = loadCache();
+      if (cached) {
+        D = cached.data;
+        updateDataBar(cached.count, new Date(cached.time));
+        document.getElementById('st').textContent = '⚠️ オフライン（キャッシュ使用）';
+        if (btn) btn.disabled = false;
+        renderRadar(); renderHot();
+      } else {
+        document.getElementById('st').textContent = '❌ 読み込み失敗: ' + err.message;
+        document.getElementById('rl').innerHTML = '<div class="empty"><span>❌</span><p>データの読み込みに失敗しました。<br>URLを確認してください。<br><small>' + err.message + '</small></p></div>';
+        if (btn) btn.disabled = false;
+      }
+    });
+}
+
+function loadCache() {
+  try {
+    var raw = localStorage.getItem('taxiradar_cache');
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch(e) { return null; }
+}
+
+function updateDataBar(count, date) {
+  document.getElementById('data-bar').style.display = 'flex';
+  document.getElementById('rec-count').textContent = count.toLocaleString();
+  var d = new Date(date);
+  document.getElementById('last-update').textContent =
+    (d.getMonth()+1)+'/'+d.getDate()+' '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);
+}
+
+// ============================================================
+// 距離
+// ============================================================
+function km(a, b, c, d) {
+  var R2=6371, dL=(c-a)*Math.PI/180, dG=(d-b)*Math.PI/180;
+  var x=Math.sin(dL/2)*Math.sin(dL/2)+Math.cos(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.sin(dG/2)*Math.sin(dG/2);
+  return R2*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x));
+}
+
+// ============================================================
+// エラー表示
+// ============================================================
+function showErr(msg) { document.getElementById('errtxt').textContent=msg; document.getElementById('errbox').classList.add('show'); }
+function closeErr() { document.getElementById('errbox').classList.remove('show'); }
+
+// ============================================================
+// レーダー描画
+// ============================================================
+function renderRadar() {
+  var list = document.getElementById('rl');
+  if (!D) { list.innerHTML='<div class="loading"><span class="spin">⏳</span> データ読み込み中...</div>'; return; }
+  if (!uLat) { list.innerHTML='<div class="empty"><span>📡</span><p>GPS取得または手動入力で<br>現在地を設定してください</p></div>'; return; }
+  var now=new Date(), tgt=now.getHours()+off, day=DAYS[now.getDay()], agg={};
+  for (var i=0;i<D.length;i++) {
+    var r=D[i];
+    if (r.day!==day) continue;
+    var df=Math.abs(r.hour-tgt);
+    if (df>2&&df<22) continue;
+    if (km(uLat,uLng,r.lat,r.lng)>R) continue;
+    var k=r.ward+r.name;
+    if (!agg[k]) agg[k]={w:r.ward,n:r.name,c:0,lat:r.lat,lng:r.lng};
+    agg[k].c+=r.count;
+  }
+  var spots=Object.values(agg).sort(function(a,b){return b.c-a.c;}).slice(0,20);
+  if (!spots.length) { list.innerHTML='<div class="empty"><span>🔍</span><p>'+R+'km以内にデータなし<br>半径を広げてみてください</p></div>'; return; }
+  var mx=spots[0].c, rc=['r1','r2','r3'], html='';
+  for (var j=0;j<spots.length;j++) {
+    var s=spots[j];
+    var d=km(uLat,uLng,s.lat,s.lng);
+    var rankCls=j<3?rc[j]:'rn';
+    html+='<div class="card" onclick="openNav('+s.lat+','+s.lng+',\''+s.w+' '+s.n+'\')">'
+         +'<div class="rank '+rankCls+'">'+(j+1)+'</div>'
+         +'<div class="cb"><div class="cn">'+s.w+' '+s.n+'</div>'
+         +'<div class="tags"><span class="tag td">📍 '+d.toFixed(1)+'km</span><span class="tag tc">🏆 '+s.c+'件</span></div>'
+         +'<div class="bar"><div class="barf" style="width:'+Math.round(s.c/mx*100)+'%"></div></div></div>'
+         +'<div class="carr">›</div></div>';
+  }
+  list.innerHTML=html;
+}
+
+// ============================================================
+// ③ Google マップで目的地を開く（住所文字列方式）
+// ============================================================
+function openNav(lat, lng, name) {
+  var address = '東京都' + name.replace(/\s/g, '');
+  var url = 'https://maps.google.com/?daddr=' + encodeURIComponent(address) + '&dirflg=d';
+  window.open(url, '_blank');
+}
+
+    window.location.href = appUrls[index];
+  }
+  
+  // アプリを起動（最初のURLを試みる）
+  window.location.href = appUrls[0];
+}
+
+// ============================================================
+// エリア別
+// ============================================================
+// ============================================================
+// 天気取得（Open-Meteo API・APIキー不要）
+// ============================================================
+var wxCode = 0;
+
+function fetchWeather(lat, lng) {
+  var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lat
+    + '&longitude=' + lng
+    + '&current=temperature_2m,precipitation,weathercode'
+    + '&timezone=Asia%2FTokyo';
+  fetch(url)
+    .then(function(r){ return r.json(); })
+    .then(function(data) {
+      var cur = data.current;
+      var temp = Math.round(cur.temperature_2m);
+      var precip = cur.precipitation;
+      wxCode = cur.weathercode;
+      var icon = getWxIcon(wxCode);
+      var desc = getWxDesc(wxCode);
+      document.getElementById('wx-bar').style.display = 'flex';
+      document.getElementById('wx-icon').textContent = icon;
+      document.getElementById('wx-temp').textContent = temp + '°C';
+      document.getElementById('wx-desc').textContent = desc;
+      // 雨天ブースト設定
+      var rainEl = document.getElementById('wx-rain');
+      if (precip > 0 || isRainy(wxCode)) {
+        var boost = precip > 5 ? 1.5 : precip > 1 ? 1.3 : 1.15;
+        rainBoost = boost;
+        rainEl.style.display = 'block';
+        rainEl.textContent = '🌧️ 需要+' + Math.round((boost-1)*100) + '%';
+        rainEl.className = precip > 5 ? 'wx-rain heavy' : 'wx-rain';
+      } else {
+        rainBoost = 1.0;
+        rainEl.style.display = 'none';
+      }
+      if (uLat) renderRadar();
+    }).catch(function(){});
+}
+
+function isRainy(code) {
+  return (code >= 51 && code <= 67) || (code >= 80 && code <= 82) || code >= 95;
+}
+
+function getWxIcon(code) {
+  if (code === 0) return '☀️';
+  if (code <= 3) return '⛅';
+  if (code <= 48) return '🌫️';
+  if (code <= 67) return '🌧️';
+  if (code <= 77) return '❄️';
+  if (code <= 82) return '🌦️';
+  return '⛈️';
+}
+
+function getWxDesc(code) {
+  if (code === 0) return '快晴';
+  if (code <= 2) return '晴れ';
+  if (code === 3) return '曇り';
+  if (code <= 48) return '霧';
+  if (code <= 55) return '霧雨';
+  if (code <= 65) return '雨';
+  if (code <= 67) return '強い雨';
+  if (code <= 77) return '雪';
+  if (code <= 82) return 'にわか雨';
+  return '雷雨';
+}
+
+// ============================================================
+// ステータスフィルター（マルチセレクト）
+// ============================================================
+function toggleFilter(btn) {
+  var st = btn.getAttribute('data-st');
+  var btns = document.querySelectorAll('.filter-row .filter-btn');
+  var allBtn = document.querySelector('.filter-btn[data-st="all"]');
+  var btns = document.querySelectorAll('.filter-row .filter-btn');
+  if (st === 'all') {
+    activeFilters = [];
+    btns.forEach(function(b){ b.classList.remove('on'); });
+    allBtn.classList.add('on');
+  } else {
+    allBtn.classList.remove('on');
+    var idx = activeFilters.indexOf(st);
+    if (idx >= 0) {
+      activeFilters.splice(idx, 1);
+      btn.classList.remove('on');
+    } else {
+      activeFilters.push(st);
+      btn.classList.add('on');
+    }
+    if (activeFilters.length === 0) {
+      activeFilters = [];
+      allBtn.classList.add('on');
+    }
+  }
+  renderRadar();
+}
+
+function renderHot() {
+  if (!D) return;
+  var day=hDay, agg={};
+  for (var i=0;i<D.length;i++) {
+    var r=D[i];
+    if (r.day!==day) continue;
+    if (!agg[r.ward]) agg[r.ward]={t:0,s:{}};
+    agg[r.ward].t+=r.count;
+    agg[r.ward].s[r.name]=(agg[r.ward].s[r.name]||0)+r.count;
+  }
+  var areas=Object.entries(agg).sort(function(a,b){return b[1].t-a[1].t;}).slice(0,8);
+  var html='';
+  for (var j=0;j<areas.length;j++) {
+    var w=areas[j][0],d=areas[j][1];
+    var tops=Object.entries(d.s).sort(function(a,b){return b[1]-a[1];}).slice(0,5);
+    var pills='';
+    tops.forEach(function(x){pills+='<span class="pill">'+x[0]+' <b style="color:var(--g)">'+x[1]+'</b></span>';});
+    html+='<div class="area"><div class="ah"><div class="adot" style="background:'+PC[j]+'"></div>'
+         +'<div class="an">'+w+'</div><div class="ac">計'+d.t+'件</div></div>'
+         +'<div class="aps">'+pills+'</div></div>';
+  }
+  document.getElementById('hl').innerHTML = html || '<div class="empty"><span>📊</span><p>データなし</p></div>';
+}
+
+// ============================================================
+// タブ切替
+// ============================================================
+function swTab(t) {
+  document.getElementById('tab-r').classList.toggle('on',t==='r');
+  document.getElementById('tab-h').classList.toggle('on',t==='h');
+  document.getElementById('pg-r').style.display=t==='r'?'':'none';
+  document.getElementById('pg-h').style.display=t==='h'?'':'none';
+  if (t==='h') renderHot();
+}
+
+// ============================================================
+// セットアップ画面
+// ============================================================
+function openSetup() {
+  var saved = localStorage.getItem('taxiradar_url') || '';
+  document.getElementById('sheet-url').value = saved;
+  document.getElementById('setup').classList.remove('hidden');
+}
+function closeSetup() { document.getElementById('setup').classList.add('hidden'); }
+
+// ============================================================
+// イベント登録
+// ============================================================
+document.getElementById('tab-r').addEventListener('click', function(){swTab('r');});
+document.getElementById('tab-h').addEventListener('click', function(){swTab('h');});
+
+document.getElementById('errcls').addEventListener('click', closeErr);
+
+document.getElementById('open-setup').addEventListener('click', openSetup);
+
+document.getElementById('setup-save').addEventListener('click', function() {
+  var url = document.getElementById('sheet-url').value.trim();
+  if (!url || url.indexOf('http') !== 0) { alert('正しいURLを入力してください。'); return; }
+  localStorage.setItem('taxiradar_url', url);
+  closeSetup();
+  loadData(url, false);
+});
+
+document.getElementById('refresh-btn').addEventListener('click', function() {
+  // 通知設定の復元
+  notifyEnabled = localStorage.getItem('taxiradar_notify') === '1';
+  if (notifyEnabled && Notification.permission === 'granted') {
+    updateNotifyBtn();
+    startNotifyWatch();
+  } else {
+    notifyEnabled = false;
+    updateNotifyBtn();
+  }
+  var url = localStorage.getItem('taxiradar_url');
+  if (!url) { openSetup(); return; }
+  loadData(url, true);
+});
+
+document.getElementById('gpsbtn').addEventListener('click', function() {
+  if (!navigator.geolocation) { showErr('GPS非対応ブラウザです。手動入力をご利用ください。'); return; }
+  var btn = this;
+  btn.textContent='⏳ 取得中...'; btn.disabled=true;
+  document.getElementById('st').textContent='GPS取得中...';
+  navigator.geolocation.getCurrentPosition(
+    function(pos) {
+      uLat=pos.coords.latitude; uLng=pos.coords.longitude;
+      btn.textContent='📡 GPS取得'; btn.disabled=false;
+      document.getElementById('locname').textContent=uLat.toFixed(5)+', '+uLng.toFixed(5);
+      document.getElementById('st').textContent='現在地を取得しました ✓';
+      closeErr(); renderRadar();
+      if (notifyEnabled) startNotifyWatch();
+      fetchWeather(uLat, uLng);
+      fetch('https://nominatim.openstreetmap.org/reverse?lat='+uLat+'&lon='+uLng+'&format=json&accept-language=ja')
+        .then(function(r){return r.json();})
+        .then(function(data){
+          var a=data.address;
+          var n=(a.city_district||a.suburb||a.neighbourhood||a.city||'')+(a.quarter||'');
+          if(n){document.getElementById('locname').textContent=n;document.getElementById('st').textContent=n+'付近';}
+        }).catch(function(){});
+    },
+    function(err) {
+      btn.textContent='📡 GPS取得'; btn.disabled=false;
+      var msg='GPS取得に失敗しました。';
+      if(err.code===1) msg='位置情報が拒否されています。\n\nSafari設定 → 位置情報 →「このAppの使用中」に変更後、リロードしてください。\n\nまたは「手動入力」をお使いください。';
+      else if(err.code===3) msg='タイムアウトしました。屋外でお試しください。\n「手動入力」で緯度経度を直接入力することもできます。';
+      showErr(msg);
+      document.getElementById('st').textContent='GPS失敗 — 手動入力をお試しください';
+    },
+    {enableHighAccuracy:true,timeout:15000,maximumAge:0}
+  );
+});
+
+document.getElementById('manualbtn').addEventListener('click', function() {
+  var v=window.prompt('緯度,経度を入力してください\n例: 35.6580,139.7016\n(渋谷駅付近)');
+  if (!v) return;
+  var parts=v.split(',');
+  if (parts.length<2){alert('形式: 35.6580,139.7016');return;}
+  var lat=parseFloat(parts[0].trim()),lng=parseFloat(parts[1].trim());
+  if (isNaN(lat)||isNaN(lng)){alert('数値を入力してください');return;}
+  uLat=lat; uLng=lng;
+  document.getElementById('locname').textContent=uLat.toFixed(5)+', '+uLng.toFixed(5);
+  document.getElementById('st').textContent='手動設定済み ✓';
+  closeErr(); renderRadar();
+});
+
+document.querySelectorAll('.filter-row .filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function(){ toggleFilter(this); });
+});
+
+document.getElementById('rs').addEventListener('input', function() {
+  R=parseInt(this.value);
+  document.getElementById('rv').textContent=R+'km';
+  this.style.setProperty('--p',((R-1)/29*100).toFixed(1)+'%');
+  if(uLat) renderRadar();
+});
+
+document.querySelectorAll('#tc .chip').forEach(function(c) {
+  c.addEventListener('click', function() {
+    document.querySelectorAll('#tc .chip').forEach(function(x){x.classList.remove('on');});
+    this.classList.add('on');
+    off=parseInt(this.getAttribute('data-o'));
+    if(uLat) renderRadar();
+  });
+});
+
+document.querySelectorAll('#dc .chip').forEach(function(c) {
+  c.addEventListener('click', function() {
+    document.querySelectorAll('#dc .chip').forEach(function(x){x.classList.remove('on');});
+    this.classList.add('on');
+    var v=this.getAttribute('data-d');
+    hDay=(v==='today')?DAYS[new Date().getDay()]:v;
+    renderHot();
+  });
+});
+
+// ============================================================
+// ② 通知機能
+// ============================================================
+var notifyEnabled = false;
+var notifyInterval = null;
+
+function requestNotifyPermission() {
+  if (!('Notification' in window)) {
+    alert('このブラウザは通知に対応していません。\nホーム画面に追加してSafariで開くと通知が使えます。');
+    return;
+  }
+  Notification.requestPermission().then(function(result) {
+    if (result === 'granted') {
+      notifyEnabled = true;
+      localStorage.setItem('taxiradar_notify', '1');
+      updateNotifyBtn();
+      alert('✅ 通知をオンにしました！\n高スコアのスポットが近くにある場合にお知らせします。');
+      startNotifyWatch();
+    } else {
+      alert('通知が許可されませんでした。\niPhone設定 → Safari → 通知 から許可してください。');
+    }
+  });
+}
+
+function updateNotifyBtn() {
+  var btn = document.getElementById('notify-btn');
+  if (!btn) return;
+  if (notifyEnabled) {
+    btn.textContent = '🔔 通知ON';
+    btn.style.background = 'var(--gd)';
+    btn.style.color = 'var(--g)';
+    btn.style.borderColor = 'rgba(57,211,83,.4)';
+  } else {
+    btn.textContent = '🔕 通知OFF';
+    btn.style.background = 'var(--s2)';
+    btn.style.color = 'var(--mu)';
+    btn.style.borderColor = 'var(--bd)';
+  }
+}
+
+function toggleNotify() {
+  if (notifyEnabled) {
+    notifyEnabled = false;
+    localStorage.setItem('taxiradar_notify', '0');
+    if (notifyInterval) { clearInterval(notifyInterval); notifyInterval = null; }
+    updateNotifyBtn();
+  } else {
+    requestNotifyPermission();
+  }
+}
+
+function startNotifyWatch() {
+  if (notifyInterval) clearInterval(notifyInterval);
+  // 5分ごとにチェック
+  notifyInterval = setInterval(checkAndNotify, 5 * 60 * 1000);
+}
+
+function checkAndNotify() {
+  if (!notifyEnabled || !D || !uLat) return;
+  var now = new Date();
+  var tgt = now.getHours(), day = DAYS[now.getDay()];
+  var radius = 3; // 通知用は3km固定
+  var best = null, bestScore = 0;
+  for (var i = 0; i < D.length; i++) {
+    var r = D[i];
+    if (r.day !== day) continue;
+    var df = Math.abs(r.hour - tgt);
+    if (df > 1 && df < 23) continue;
+    var d = km(uLat, uLng, r.lat, r.lng);
+    if (d > radius) continue;
+    var score = r.count / (d + 0.5);
+    if (score > bestScore) { bestScore = score; best = r; }
+  }
+  if (best && bestScore > 2) {
+    var d = km(uLat, uLng, best.lat, best.lng).toFixed(1);
+    new Notification('🚖 TAXI RADAR', {
+      body: '📍 ' + best.ward + ' ' + best.name + '\n' + d + 'km先 ｜ 過去' + best.count + '件の乗車実績',
+      icon: 'https://odmk0791.github.io/taxi-radar/icon.png',
+      tag: 'taxiradar-spot'
+    });
+  }
+}
+
+// ============================================================
+// 起動処理
+// ============================================================
+(function init() {
+  // 通知設定の復元
+  notifyEnabled = localStorage.getItem('taxiradar_notify') === '1';
+  if (notifyEnabled && Notification.permission === 'granted') {
+    updateNotifyBtn();
+    startNotifyWatch();
+  } else {
+    notifyEnabled = false;
+    updateNotifyBtn();
+  }
+  var url = localStorage.getItem('taxiradar_url');
+  if (!url) {
+    // 初回：まずキャッシュがあれば使いつつセットアップを表示
+    var cached = loadCache();
+    if (cached) {
+      D = cached.data;
+      updateDataBar(cached.count, new Date(cached.time));
+      document.getElementById('st').textContent = '📍 現在地を設定してください';
+      renderRadar(); renderHot();
+    }
+    openSetup();
+  } else {
+    // キャッシュがあればすぐ表示し、バックグラウンドで更新
+    var cached = loadCache();
+    if (cached) {
+      D = cached.data;
+      updateDataBar(cached.count, new Date(cached.time));
+      document.getElementById('st').textContent = '📍 現在地を設定してください';
+      document.getElementById('setup').classList.add('hidden');
+      renderRadar(); renderHot();
+    }
+    // 最新データを取得
+    loadData(url, !!cached);
+  }
+})();
+</script>
+</body>
+</html>
