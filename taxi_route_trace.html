@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>営業ルートトレース</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', sans-serif;
+  background: #080810;
+  color: #d8daf0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ── SIDEBAR ──────────────────────────────── */
+#sidebar {
+  width: 310px; min-width: 310px;
+  background: #0d0d18;
+  border-right: 1px solid #1c1c2e;
+  display: flex; flex-direction: column;
+  overflow: hidden; z-index: 10;
+}
+.s-header {
+  padding: 14px 14px 10px;
+  border-bottom: 1px solid #1c1c2e;
+}
+.route-label {
+  font-size: 9px; letter-spacing: 0.2em; color: #f5a000;
+  text-transform: uppercase; margin-bottom: 6px;
+}
+.date-controls {
+  display: flex; align-items: center; gap: 8px;
+}
+#date-input {
+  flex: 1; background: #141420; border: 1px solid #2a2a40;
+  color: #fff; padding: 6px 10px; border-radius: 6px;
+  font-size: 13px; font-family: inherit;
+  outline: none;
+}
+#date-input:focus { border-color: #f5a00066; }
+#load-btn {
+  background: #f5a000; color: #000; border: none;
+  padding: 6px 12px; border-radius: 6px;
+  font-size: 11px; font-weight: 800;
+  cursor: pointer; white-space: nowrap;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+#load-btn:hover { background: #ffb733; }
+.date-sub { font-size: 10px; color: #444460; margin-top: 5px; }
+
+/* stats */
+.stats-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1px; background: #1c1c2e;
+  border-bottom: 1px solid #1c1c2e;
+}
+.stat-cell { background: #0d0d18; padding: 10px 13px; }
+.stat-label { font-size: 8px; letter-spacing: 0.1em; color: #3a3a55; text-transform: uppercase; margin-bottom: 2px; }
+.stat-value { font-size: 14px; font-weight: 800; color: #f5a000; line-height: 1; }
+.stat-unit { font-size: 9px; font-weight: 400; color: #777; }
+
+/* trip list */
+#trip-list { flex: 1; overflow-y: auto; padding: 4px 0; }
+#trip-list::-webkit-scrollbar { width: 3px; }
+#trip-list::-webkit-scrollbar-thumb { background: #1e1e30; border-radius: 2px; }
+
+.trip-row {
+  display: flex; align-items: flex-start; gap: 9px;
+  padding: 6px 12px;
+  cursor: pointer; border-left: 2px solid transparent;
+  transition: background .12s, border-color .12s;
+}
+.trip-row:hover { background: #12121f; border-left-color: #f5a00033; }
+.trip-row.active { background: #161626; border-left-color: #f5a000; }
+.trip-row.no-coords { opacity: 0.3; cursor: default; }
+.trip-row.no-coords:hover { background: transparent; border-left-color: transparent; }
+.trip-badge {
+  width: 21px; height: 21px; min-width: 21px;
+  background: #f5a000; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; font-weight: 900; color: #000; margin-top: 1px;
+}
+.trip-row.active .trip-badge { background: #fff; }
+.trip-row.no-coords .trip-badge { background: #222234; color: #555; }
+.trip-info { flex: 1; min-width: 0; }
+.trip-loc { font-size: 10px; color: #9090b0; line-height: 1.5; }
+.trip-loc span.from, .trip-loc span.to {
+  display: block; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
+.trip-loc span.arrow { font-size: 8px; color: #f5a00044; }
+.trip-meta { display: flex; gap: 8px; align-items: center; margin-top: 2px; }
+.trip-fare { font-size: 11px; font-weight: 800; color: #f5a000; }
+.trip-time { font-size: 9px; color: #333352; }
+.trip-tag { font-size: 8px; color: #3a3a58; }
+.trip-div { height: 1px; background: #13132a; margin: 0 12px; }
+
+/* debug */
+#debug-bar {
+  border-top: 1px solid #1c1c2e;
+  padding: 5px 12px;
+  font-size: 9px; color: #2a2a45;
+  cursor: pointer; display: flex; justify-content: space-between;
+  user-select: none;
+}
+#debug-bar:hover { color: #555578; }
+#debug-panel {
+  background: #06060d; padding: 7px 12px;
+  max-height: 140px; overflow-y: auto;
+  font-size: 9px; font-family: 'SF Mono','Consolas',monospace;
+  color: #2e2e4e; display: none;
+}
+#debug-panel.open { display: block; }
+#debug-panel::-webkit-scrollbar { width: 2px; }
+#debug-panel::-webkit-scrollbar-thumb { background: #1c1c2e; }
+.dl { margin-bottom: 1.5px; line-height: 1.4; }
+.ok { color: #2a6a45; } .warn { color: #806030; } .err { color: #7a2a2a; }
+
+/* ── MAP ───────────────────────────────────── */
+#map-wrap { flex: 1; position: relative; }
+#map { width: 100%; height: 100%; background: #080810; }
+#loading {
+  position: absolute; inset: 0; background: #080810;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 12px; z-index: 1000;
+}
+.spin {
+  width: 28px; height: 28px;
+  border: 2px solid #1c1c2e; border-top-color: #f5a000;
+  border-radius: 50%; animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.load-msg { font-size: 10px; color: #3a3a58; letter-spacing: .1em; }
+#load-step { font-size: 9px; color: #25253d; }
+#legend {
+  position: absolute; bottom: 20px; right: 10px;
+  background: rgba(8,8,20,.9); border: 1px solid #1c1c2e;
+  border-radius: 8px; padding: 9px 12px; z-index: 500;
+  font-size: 10px; color: #555578;
+  backdrop-filter: blur(6px); display: none;
+}
+.leg-row { display: flex; align-items: center; gap: 7px; margin-bottom: 5px; }
+.leg-row:last-child { margin-bottom: 0; }
+.leg-c { width: 17px; height: 17px; background: #f5a000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 8px; font-weight: 900; color: #000; flex-shrink: 0; }
+.leg-d { width: 8px; height: 8px; background: #888; border-radius: 50%; flex-shrink: 0; margin: 0 4.5px; }
+.leg-l { width: 20px; height: 2px; background: #f5a000; opacity: .6; flex-shrink: 0; }
+/* Leaflet */
+.leaflet-tooltip {
+  background: #0d0d1e !important; border: 1px solid #f5a00044 !important;
+  color: #d0d0f0 !important; font-size: 10px !important;
+  font-family: 'Hiragino Kaku Gothic ProN',sans-serif !important;
+  padding: 4px 9px !important; border-radius: 5px !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,.6) !important;
+}
+.leaflet-tooltip::before { display: none !important; }
+.leaflet-control-zoom a { background: #0d0d18 !important; color: #666 !important; border-color: #1c1c2e !important; }
+.leaflet-control-zoom a:hover { background: #14142a !important; color: #f5a000 !important; }
+</style>
+</head>
+<body>
+<div id="sidebar">
+  <div class="s-header">
+    <div class="route-label">Route Trace · 武三23区</div>
+    <div class="date-controls">
+      <input type="date" id="date-input" value="2026-03-19">
+      <button id="load-btn" onclick="loadData()">表示</button>
+    </div>
+    <div class="date-sub" id="date-sub">木曜日</div>
+  </div>
+  <div class="stats-grid" id="stats-grid">
+    <div class="stat-cell"><div class="stat-label">営収</div><div class="stat-value" id="st-fare">—</div></div>
+    <div class="stat-cell"><div class="stat-label">件数</div><div class="stat-value" id="st-cnt">—</div></div>
+    <div class="stat-cell"><div class="stat-label">¥5,000+</div><div class="stat-value" id="st-long">—</div></div>
+    <div class="stat-cell"><div class="stat-label">平均単価</div><div class="stat-value" id="st-avg">—</div></div>
+  </div>
+  <div id="trip-list"></div>
+  <div id="debug-bar" onclick="toggleDbg()">
+    <span>デバッグ情報</span><span id="dbg-arrow">▲</span>
+  </div>
+  <div id="debug-panel"></div>
+</div>
+<div id="map-wrap">
+  <div id="map"></div>
+  <div id="loading">
+    <div class="spin"></div>
+    <div class="load-msg">データを読み込み中...</div>
+    <div id="load-step">初期化中</div>
+  </div>
+  <div id="legend">
+    <div class="leg-row"><div class="leg-c">1</div>乗車地点（番号順）</div>
+    <div class="leg-row"><div class="leg-d"></div>降車地点</div>
+    <div class="leg-row"><div class="leg-l"></div>ルート（直線）</div>
+  </div>
+</div>
+
+<script>
+// ── URLS ─────────────────────────────────────
+const URL_BREAKDOWN = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+const URL_COORDS    = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=1210114672&single=true&output=csv';
+
+// ── STATE ────────────────────────────────────
+let leafMap, coordMap = new Map(), tripLayers = [], activeN = null;
+let csvCache = null; // cache breakdown CSV
+
+// ── MAP INIT ─────────────────────────────────
+leafMap = L.map('map', { center: [35.68, 139.71], zoom: 12 });
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '© OpenStreetMap © CARTO', subdomains: 'abcd', maxZoom: 19
+}).addTo(leafMap);
+
+// ── DEBUG ────────────────────────────────────
+function log(msg, cls='') {
+  const p = document.getElementById('debug-panel');
+  const d = document.createElement('div');
+  d.className = 'dl' + (cls ? ' '+cls : '');
+  d.textContent = msg;
+  p.appendChild(d);
+  p.scrollTop = 9999;
+}
+function clearLog() { document.getElementById('debug-panel').innerHTML = ''; }
+function toggleDbg() {
+  const p = document.getElementById('debug-panel');
+  const o = p.classList.toggle('open');
+  document.getElementById('dbg-arrow').textContent = o ? '▼' : '▲';
+}
+function setStep(msg) { document.getElementById('load-step').textContent = msg; }
+function showLoading() { document.getElementById('loading').style.display = 'flex'; document.getElementById('legend').style.display = 'none'; }
+function hideLoading() { document.getElementById('loading').style.display = 'none'; document.getElementById('legend').style.display = 'block'; }
+
+// ── CSV FETCH ────────────────────────────────
+async function fetchCSV(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  const text = await r.text();
+  const res = Papa.parse(text, {
+    header: true, skipEmptyLines: true, dynamicTyping: false,
+    transformHeader: h => h.trim().replace(/^\uFEFF/, '')
+  });
+  return res.data;
+}
+
+// ── NORMALIZE ────────────────────────────────
+function norm(s) {
+  if (!s) return '';
+  return String(s).trim()
+    .replace(/[\s　\t]+/g, '')  // 半角・全角スペース・タブ除去
+    .replace(/[０-９]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
+    .replace(/一丁目/g,'1丁目').replace(/二丁目/g,'2丁目').replace(/三丁目/g,'3丁目')
+    .replace(/四丁目/g,'4丁目').replace(/五丁目/g,'5丁目').replace(/六丁目/g,'6丁目')
+    .replace(/七丁目/g,'7丁目').replace(/八丁目/g,'8丁目').replace(/九丁目/g,'9丁目');
+}
+
+// ── FIND COLUMN ──────────────────────────────
+function findCol(keys, pats) {
+  for (const p of pats) { const f = keys.find(k => k.includes(p)); if (f) return f; }
+  return null;
+}
+
+// ── BUILD COORD MAP ──────────────────────────
+function buildCoordMap(rows) {
+  if (!rows.length) return new Map();
+  const keys = Object.keys(rows[0]);
+  log('座標CSV列: ' + keys.join(' | '));
+
+  const latCol = findCol(keys, ['緯度','lat','Lat']) || keys[keys.length-2];
+  const lngCol = findCol(keys, ['経度','lng','lon','Lng']) || keys[keys.length-1];
+
+  // Name column: prefer columns with ward/city info
+  const nameCol = findCol(keys, ['丁名','町丁名','地名','名称']) || keys[0];
+  const prefCol = findCol(keys, ['区市','市区','区名','市名']); // optional prefix col
+
+  log(`lat="${latCol}" lng="${lngCol}" name="${nameCol}" prefix="${prefCol||'—'}"`, 'ok');
+
+  const m = new Map();
+  rows.forEach(row => {
+    let rawName = (prefCol ? (row[prefCol]||'') : '') + (row[nameCol]||'');
+    if (!rawName) {
+      // fallback: concat all non-numeric cols
+      rawName = keys.filter(k=>k!==latCol&&k!==lngCol).map(k=>row[k]||'').join('');
+    }
+    const lat = parseFloat(row[latCol]);
+    const lng = parseFloat(row[lngCol]);
+    if (rawName && !isNaN(lat) && !isNaN(lng)) {
+      const key = norm(rawName);
+      m.set(key, {lat, lng});
+      // Also index without ward prefix (e.g. "笹塚1丁目" from "渋谷区笹塚1丁目")
+      const noPrefix = key.replace(/^[^\u4e00-\u9fa5]*[\u4e00-\u9fa5][区市町村]/, '');
+      if (noPrefix && noPrefix !== key) m.set(noPrefix, {lat, lng});
+    }
+  });
+  log('座標データ: '+m.size+'件', m.size>0?'ok':'err');
+  return m;
+}
+
+// ── COORD LOOKUP ─────────────────────────────
+function getCoords(loc, cmap) {
+  if (!loc) return null;
+  const n = norm(loc);
+  if (cmap.has(n)) return cmap.get(n);
+  // Longest prefix match
+  let best=null, bestLen=0;
+  for (const [k,v] of cmap) {
+    if (n.startsWith(k) && k.length>bestLen) { best=v; bestLen=k.length; }
+  }
+  return best;
+}
+
+// ── DATE FILTER ──────────────────────────────
+function matchDate(row, year, month, day) {
+  const vals = Object.values(row).map(v => String(v||''));
+  const fullStr = vals.join(' ');
+
+  // Patterns with year
+  const withYear = [
+    `${year}/${month}/${day}`,
+    `${year}/${String(month).padStart(2,'0')}/${String(day).padStart(2,'0')}`,
+    `${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`,
+    `${year}年${month}月${day}日`,
+    `${year}年${String(month).padStart(2,'0')}月${String(day).padStart(2,'0')}日`,
+  ];
+  if (withYear.some(p => fullStr.includes(p))) return true;
+
+  // If no year in any value, fall back to month/day only
+  const hasAnyYear = /20\d\d/.test(fullStr);
+  if (!hasAnyYear) {
+    const monthDay = [`${month}/${day}`, `${month}月${day}`];
+    return monthDay.some(p => fullStr.includes(p));
+  }
+  return false;
+}
+
+// ── PARSE FARE ───────────────────────────────
+function parseFare(v) {
+  if (!v) return 0;
+  return parseInt(String(v).replace(/[^0-9]/g,'')) || 0;
+}
+function fmtFare(n) { return n ? '¥'+n.toLocaleString() : '—'; }
+function shortLoc(s, n=14) {
+  if (!s) return '—';
+  return s.length > n ? s.slice(0,n)+'…' : s;
+}
+
+// ── DETECT LOCATION COLUMNS ──────────────────
+// Returns { ward, town } pair for pickup and dropoff
+// Handles BOTH combined ("渋谷区笹塚一丁目" in one col) and split (two cols)
+function detectLocCols(keys) {
+  log('全列: ' + keys.join(' | '));
+
+  // ── Pickup ──
+  // Combined: single col with full address
+  let pCombined = findCol(keys, ['乗車地点','乗車地区','乗車場所','乗車地','乗り場']);
+  // Split: separate ward and town cols
+  const pCols = keys.filter(k => (k.includes('乗') || k.includes('乗車')) && !k.includes('時') && !k.includes('間') && !k.includes('賃') && !k.includes('数'));
+  let pWard = pCols.find(k => k.includes('区') || k.includes('市'));
+  let pTown = pCols.find(k => k.includes('丁') || k.includes('町') || k.includes('地') || k.includes('名'));
+
+  // If pTown not found but there are 2+ pickup cols, 2nd one is probably town
+  if (!pTown && pCols.length >= 2) pTown = pCols.find(k => k !== pWard);
+  if (!pWard && pCols.length >= 1) pWard = pCols[0];
+
+  // ── Dropoff ──
+  let dCombined = findCol(keys, ['降車地点','降車地区','降車場所','降車地','降り場']);
+  const dCols = keys.filter(k => (k.includes('降') || k.includes('降車')) && !k.includes('時') && !k.includes('間') && !k.includes('賃') && !k.includes('数'));
+  let dWard = dCols.find(k => k.includes('区') || k.includes('市'));
+  let dTown = dCols.find(k => k.includes('丁') || k.includes('町') || k.includes('地') || k.includes('名'));
+  if (!dTown && dCols.length >= 2) dTown = dCols.find(k => k !== dWard);
+  if (!dWard && dCols.length >= 1) dWard = dCols[0];
+
+  log(`乗車列 combined="${pCombined||'—'}" ward="${pWard||'—'}" town="${pTown||'—'}"`, 'ok');
+  log(`降車列 combined="${dCombined||'—'}" ward="${dWard||'—'}" town="${dTown||'—'}"`, 'ok');
+
+  return { pCombined, pWard, pTown, dCombined, dWard, dTown };
+}
+
+function buildLoc(row, combined, ward, town) {
+  if (combined && row[combined]) return String(row[combined]).trim();
+  const w = ward ? String(row[ward]||'').trim() : '';
+  const t = town ? String(row[town]||'').trim() : '';
+  return w + t;
+}
+
+// ── ICONS ────────────────────────────────────
+function iconP(n, active) {
+  const bg = active ? '#ffffff' : '#f5a000';
+  const sh = active ? '0 0 0 2px #f5a000,0 2px 8px rgba(0,0,0,.7)' : '0 0 0 1.5px #000,0 2px 6px rgba(0,0,0,.6)';
+  return L.divIcon({
+    html:`<div style="width:22px;height:22px;background:${bg};border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#000;font-family:sans-serif;box-shadow:${sh};">${n}</div>`,
+    className:'', iconSize:[22,22], iconAnchor:[11,11]
+  });
+}
+function iconD(active) {
+  const bg = active ? '#f5a000' : '#7a7a9a';
+  return L.divIcon({
+    html:`<div style="width:9px;height:9px;background:${bg};border-radius:50%;border:1.5px solid ${active?'#f5a000':'#222'};box-shadow:0 1px 4px rgba(0,0,0,.5);"></div>`,
+    className:'', iconSize:[9,9], iconAnchor:[4,4]
+  });
+}
+
+// ── SET ACTIVE TRIP ──────────────────────────
+function setActive(n) {
+  if (activeN !== null) {
+    document.getElementById('tr-'+activeN)?.classList.remove('active');
+    const prev = tripLayers.find(l=>l.n===activeN);
+    if (prev) {
+      prev.line.setStyle({color:'#f5a000', weight:1.5, opacity:.4});
+      prev.pm.setIcon(iconP(activeN, false));
+      prev.dm.setIcon(iconD(false));
+    }
+  }
+  activeN = n;
+  const el = document.getElementById('tr-'+n);
+  if (el) { el.classList.add('active'); el.scrollIntoView({behavior:'smooth', block:'nearest'}); }
+  const cur = tripLayers.find(l=>l.n===n);
+  if (cur) {
+    cur.line.setStyle({color:'#ffffff', weight:3, opacity:.9});
+    cur.line.bringToFront();
+    cur.pm.setIcon(iconP(n, true));
+    cur.dm.setIcon(iconD(true));
+    leafMap.panTo(cur.pm.getLatLng(), {animate:true, duration:.4});
+  }
+}
+
+// ── CLEAR MAP ────────────────────────────────
+function clearMap() {
+  tripLayers.forEach(l => {
+    l.line.remove(); l.pm.remove(); l.dm.remove();
+  });
+  tripLayers = [];
+  activeN = null;
+  document.getElementById('trip-list').innerHTML = '';
+}
+
+// ── DOW helper ───────────────────────────────
+const DOW = ['日','月','火','水','木','金','土'];
+function dateSubText(dateStr) {
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const dow = DOW[new Date(y,m-1,d).getDay()];
+  return `${y}年${m}月${d}日（${dow}）`;
+}
+
+// ── MAIN LOAD ────────────────────────────────
+async function loadData() {
+  clearLog();
+  clearMap();
+  showLoading();
+
+  const dateStr = document.getElementById('date-input').value;
+  const [year, month, day] = dateStr.split('-').map(Number);
+  document.getElementById('date-sub').textContent = dateSubText(dateStr);
+
+  try {
+    // 1. Load coords (cached)
+    if (coordMap.size === 0) {
+      setStep('座標データを取得中...');
+      log('座標CSV読み込み開始');
+      const coordRows = await fetchCSV(URL_COORDS);
+      log('座標CSV: '+coordRows.length+'行');
+      coordMap = buildCoordMap(coordRows);
+    } else {
+      log('座標データ: キャッシュ使用 ('+coordMap.size+'件)', 'ok');
+    }
+
+    // 2. Load breakdown (cached)
+    if (!csvCache) {
+      setStep('日報詳細を取得中...');
+      log('日報詳細CSV読み込み開始');
+      csvCache = await fetchCSV(URL_BREAKDOWN);
+      log('日報詳細CSV: '+csvCache.length+'行');
+    } else {
+      log('日報詳細: キャッシュ使用 ('+csvCache.length+'行)', 'ok');
+    }
+
+    // 3. Filter by date
+    setStep(year+'/'+month+'/'+day+' のデータを抽出中...');
+    const dayRows = csvCache.filter(r => matchDate(r, year, month, day));
+    log(year+'/'+month+'/'+day+': '+dayRows.length+'件', dayRows.length?'ok':'err');
+
+    if (!dayRows.length) {
+      // Show sample dates
+      const samples = csvCache.slice(0,20)
+        .flatMap(r => Object.values(r))
+        .filter(v => /20\d\d/.test(String(v)) || /\d+\/\d+/.test(String(v)))
+        .filter((v,i,a) => a.indexOf(v)===i)
+        .slice(0,8);
+      log('日付サンプル: '+samples.join(' / '), 'warn');
+      throw new Error(year+'/'+month+'/'+day+'のデータが見つかりません');
+    }
+
+    // 4. Detect columns
+    const keys = Object.keys(dayRows[0]);
+    const lc = detectLocCols(keys);
+    const fareCol = findCol(keys, ['営収','売上','運賃','金額','料金','fare','amount','賃走']);
+    const timeCol = findCol(keys, ['乗車時刻','乗車時','出発時','時刻','time','Time']);
+    const statusCol = findCol(keys, ['ステータス','status','Status','種別']);
+    log(`金額="${fareCol||'—'}" 時刻="${timeCol||'—'}" ステータス="${statusCol||'—'}"`, 'ok');
+
+    // 5. Build trips
+    const trips = dayRows.map((row, i) => {
+      const pickup  = buildLoc(row, lc.pCombined, lc.pWard, lc.pTown);
+      const dropoff = buildLoc(row, lc.dCombined, lc.dWard, lc.dTown);
+      const fare   = parseFare(fareCol ? row[fareCol] : '');
+      const time   = timeCol ? String(row[timeCol]||'') : '';
+      const status = statusCol ? String(row[statusCol]||'') : '';
+      const pc = getCoords(pickup, coordMap);
+      const dc = getCoords(dropoff, coordMap);
+      return { n:i+1, pickup, dropoff, fare, time, status, pc, dc, ok:!!(pc&&dc) };
+    });
+
+    const matched = trips.filter(t=>t.ok).length;
+    log('座標マッチ: '+matched+'/'+trips.length+'件', matched>0?'ok':'err');
+    // Show unmatched locations
+    const unmatched = trips.filter(t=>!t.ok);
+    unmatched.slice(0,5).forEach(t => log('  未マッチ #'+t.n+': "'+t.pickup+'" → "'+t.dropoff+'"', 'warn'));
+    if (unmatched.length>5) log('  ...他'+(unmatched.length-5)+'件', 'warn');
+
+    // 6. Stats
+    const totalFare = trips.reduce((s,t)=>s+t.fare, 0);
+    const long = trips.filter(t=>t.fare>=5000).length;
+    const avg = trips.length ? Math.round(totalFare/trips.length) : 0;
+
+    document.getElementById('st-fare').innerHTML = '¥'+totalFare.toLocaleString();
+    document.getElementById('st-cnt').innerHTML  = trips.length+'<span class="stat-unit"> 件</span>';
+    document.getElementById('st-long').innerHTML = long+'<span class="stat-unit"> 件</span>';
+    document.getElementById('st-avg').innerHTML  = '¥'+avg.toLocaleString();
+
+    // 7. Trip list
+    const listEl = document.getElementById('trip-list');
+    trips.forEach((t, i) => {
+      if (i > 0) { const sep=document.createElement('div'); sep.className='trip-div'; listEl.appendChild(sep); }
+      const div = document.createElement('div');
+      div.className = 'trip-row'+(t.ok?'':' no-coords');
+      div.id = 'tr-'+t.n;
+      div.innerHTML = `
+        <div class="trip-badge">${t.n}</div>
+        <div class="trip-info">
+          <div class="trip-loc">
+            <span class="from">${shortLoc(t.pickup)}</span>
+            <span class="arrow">↓</span>
+            <span class="to">${shortLoc(t.dropoff)}</span>
+          </div>
+          <div class="trip-meta">
+            <div class="trip-fare">${fmtFare(t.fare)}</div>
+            ${t.time?`<div class="trip-time">${t.time}</div>`:''}
+            ${t.status?`<div class="trip-tag">${t.status}</div>`:''}
+            ${!t.ok?`<div class="trip-tag">未マッチ</div>`:''}
+          </div>
+        </div>`;
+      if (t.ok) div.addEventListener('click', ()=>setActive(t.n));
+      listEl.appendChild(div);
+    });
+
+    // 8. Draw on map
+    setStep('マップ描画中...');
+    const bounds = [];
+    trips.filter(t=>t.ok).forEach(t => {
+      const line = L.polyline([[t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]], {
+        color:'#f5a000', weight:1.5, opacity:.4
+      }).addTo(leafMap);
+      const pm = L.marker([t.pc.lat,t.pc.lng], {icon:iconP(t.n,false)})
+        .addTo(leafMap)
+        .bindTooltip('#'+t.n+' 乗車：'+t.pickup, {direction:'top'});
+      const dm = L.marker([t.dc.lat,t.dc.lng], {icon:iconD(false)})
+        .addTo(leafMap)
+        .bindTooltip('#'+t.n+' 降車：'+t.dropoff, {direction:'top'});
+      [line,pm,dm].forEach(el=>el.on('click',()=>setActive(t.n)));
+      tripLayers.push({n:t.n, line, pm, dm});
+      bounds.push([t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]);
+    });
+
+    if (bounds.length) leafMap.fitBounds(bounds, {padding:[50,50]});
+    log('描画完了: '+tripLayers.length+'件プロット', 'ok');
+    hideLoading();
+
+  } catch(err) {
+    log('エラー: '+err.message, 'err');
+    document.getElementById('loading').innerHTML=`
+      <div style="text-align:center;padding:24px">
+        <div style="color:#7a3030;font-size:13px;margin-bottom:8px">読み込みエラー</div>
+        <div style="color:#333352;font-size:11px;max-width:260px;line-height:1.7">${err.message}</div>
+        <div style="color:#222234;font-size:10px;margin-top:10px">デバッグパネルをご確認ください</div>
+      </div>`;
+    document.getElementById('debug-panel').classList.add('open');
+    document.getElementById('dbg-arrow').textContent = '▼';
+  }
+}
+
+// Init
+loadData();
+</script>
+</body>
+</html>
