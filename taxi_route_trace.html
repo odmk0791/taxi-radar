@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>営業ルートトレース 2025.3.19</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', sans-serif;
+  background: #080810;
+  color: #d8daf0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ─── SIDEBAR ─── */
+#sidebar {
+  width: 310px;
+  min-width: 310px;
+  background: #0d0d18;
+  border-right: 1px solid #1c1c2e;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.sidebar-header {
+  padding: 18px 16px 14px;
+  border-bottom: 1px solid #1c1c2e;
+}
+.route-label {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: #f5a000;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.date-main {
+  font-size: 21px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.date-sub {
+  font-size: 11px;
+  color: #555570;
+  margin-top: 4px;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: #1c1c2e;
+  border-bottom: 1px solid #1c1c2e;
+}
+.stat-cell {
+  background: #0d0d18;
+  padding: 11px 14px;
+}
+.stat-label {
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  color: #44445a;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.stat-value {
+  font-size: 15px;
+  font-weight: 800;
+  color: #f5a000;
+  line-height: 1;
+}
+.stat-unit { font-size: 9px; font-weight: 400; color: #888; }
+
+/* TRIP LIST */
+#trip-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px 0;
+}
+#trip-list::-webkit-scrollbar { width: 3px; }
+#trip-list::-webkit-scrollbar-track { background: transparent; }
+#trip-list::-webkit-scrollbar-thumb { background: #222234; border-radius: 2px; }
+
+.trip-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 7px 13px;
+  cursor: pointer;
+  border-left: 2px solid transparent;
+  transition: background 0.12s, border-color 0.12s;
+}
+.trip-row:hover { background: #12121f; border-left-color: #f5a00033; }
+.trip-row.active { background: #171726; border-left-color: #f5a000; }
+.trip-row.no-coords { opacity: 0.35; cursor: default; }
+.trip-row.no-coords:hover { background: transparent; border-left-color: transparent; }
+
+.trip-badge {
+  width: 22px; height: 22px; min-width: 22px;
+  background: #f5a000;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; font-weight: 900; color: #000;
+  margin-top: 1px;
+  transition: background 0.12s;
+}
+.trip-row.active .trip-badge { background: #fff; }
+.trip-row.no-coords .trip-badge { background: #2a2a3a; color: #555; }
+
+.trip-info { flex: 1; min-width: 0; }
+.trip-loc {
+  font-size: 10.5px;
+  color: #a0a2c0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+}
+.trip-loc-arrow { color: #f5a00055; font-size: 8px; margin: 0 1px; }
+.trip-meta {
+  display: flex; gap: 8px; align-items: center;
+  margin-top: 3px;
+}
+.trip-fare { font-size: 11.5px; font-weight: 800; color: #f5a000; }
+.trip-time { font-size: 9.5px; color: #3e3e58; }
+.trip-no-match { font-size: 8.5px; color: #3e3e58; }
+
+.trip-divider { height: 1px; background: #14142a; margin: 0 13px; }
+
+/* DEBUG */
+#debug-toggle {
+  border-top: 1px solid #1c1c2e;
+  padding: 6px 13px;
+  font-size: 9px;
+  color: #333354;
+  cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  user-select: none;
+}
+#debug-toggle:hover { color: #666688; }
+#debug-panel {
+  background: #07070e;
+  padding: 8px 13px;
+  max-height: 130px;
+  overflow-y: auto;
+  font-size: 9.5px;
+  font-family: 'SF Mono', 'Consolas', monospace;
+  color: #333354;
+  display: none;
+}
+#debug-panel.open { display: block; }
+#debug-panel::-webkit-scrollbar { width: 3px; }
+#debug-panel::-webkit-scrollbar-thumb { background: #1c1c2e; }
+.d-line { margin-bottom: 1.5px; line-height: 1.4; }
+.d-ok { color: #3a8a5a; }
+.d-warn { color: #a07020; }
+.d-err { color: #8a3030; }
+
+/* ─── MAP ─── */
+#map-wrap { flex: 1; position: relative; }
+#map { width: 100%; height: 100%; background: #080810; }
+
+#loading {
+  position: absolute; inset: 0;
+  background: #080810;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 14px;
+  z-index: 1000;
+}
+.spin {
+  width: 32px; height: 32px;
+  border: 2.5px solid #1c1c2e;
+  border-top-color: #f5a000;
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.load-msg { font-size: 11px; color: #44445a; letter-spacing: 0.1em; }
+#load-step { font-size: 9.5px; color: #333354; margin-top: 4px; }
+
+/* Map legend */
+#legend {
+  position: absolute; bottom: 22px; right: 10px;
+  background: rgba(8, 8, 20, 0.88);
+  border: 1px solid #1c1c2e;
+  border-radius: 8px;
+  padding: 10px 13px;
+  z-index: 500;
+  font-size: 10.5px;
+  color: #666688;
+  backdrop-filter: blur(6px);
+  display: none;
+}
+.leg-row { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+.leg-row:last-child { margin-bottom: 0; }
+.leg-circle {
+  width: 18px; height: 18px; flex-shrink: 0;
+  background: #f5a000; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 8px; font-weight: 900; color: #000;
+}
+.leg-dot {
+  width: 8px; height: 8px; flex-shrink: 0;
+  background: #888; border-radius: 50%;
+  margin: 0 5px;
+}
+.leg-line {
+  width: 22px; height: 2px; flex-shrink: 0;
+  background: linear-gradient(90deg, #f5a000, #f5a00066);
+}
+
+/* Leaflet overrides */
+.leaflet-tooltip {
+  background: #0d0d18 !important;
+  border: 1px solid #f5a00055 !important;
+  color: #d8daf0 !important;
+  font-size: 10.5px !important;
+  font-family: 'Hiragino Kaku Gothic ProN', sans-serif !important;
+  padding: 4px 9px !important;
+  border-radius: 5px !important;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.5) !important;
+}
+.leaflet-tooltip::before { display: none !important; }
+.leaflet-control-zoom a {
+  background: #0d0d18 !important;
+  color: #888 !important;
+  border-color: #1c1c2e !important;
+}
+.leaflet-control-zoom a:hover { background: #171726 !important; color: #f5a000 !important; }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div class="sidebar-header">
+    <div class="route-label">Route Trace · 武三23区</div>
+    <div class="date-main">2025年3月19日</div>
+    <div class="date-sub">木曜日 · 隔日勤務</div>
+  </div>
+  <div class="stats-grid" id="stats-grid">
+    <div class="stat-cell"><div class="stat-label">総売上</div><div class="stat-value">—</div></div>
+    <div class="stat-cell"><div class="stat-label">件数</div><div class="stat-value">—</div></div>
+    <div class="stat-cell"><div class="stat-label">¥5,000+</div><div class="stat-value">—</div></div>
+    <div class="stat-cell"><div class="stat-label">平均単価</div><div class="stat-value">—</div></div>
+  </div>
+  <div id="trip-list"></div>
+  <div id="debug-toggle" onclick="toggleDebug()">
+    <span>デバッグ情報</span><span id="debug-arrow">▲</span>
+  </div>
+  <div id="debug-panel"></div>
+</div>
+
+<div id="map-wrap">
+  <div id="map"></div>
+  <div id="loading">
+    <div class="spin"></div>
+    <div class="load-msg">データを読み込み中...</div>
+    <div id="load-step">座標データを取得しています</div>
+  </div>
+  <div id="legend">
+    <div class="leg-row"><div class="leg-circle">1</div>乗車地点（番号順）</div>
+    <div class="leg-row"><div class="leg-dot"></div>降車地点</div>
+    <div class="leg-row"><div class="leg-line"></div>ルート（直線）</div>
+  </div>
+</div>
+
+<script>
+// ─── URLS ─────────────────────────────────────────────
+const URL_BREAKDOWN = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+const URL_COORDS    = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=1210114672&single=true&output=csv';
+const TARGET_MONTH = 3, TARGET_DAY = 19;
+const LONG_RIDE_YEN = 5000;
+
+// ─── STATE ────────────────────────────────────────────
+let leafMap, tripLayers = [], activeN = null;
+
+// ─── LEAFLET MAP ──────────────────────────────────────
+leafMap = L.map('map', { center: [35.68, 139.71], zoom: 12 });
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '© OpenStreetMap © CARTO',
+  subdomains: 'abcd', maxZoom: 19
+}).addTo(leafMap);
+
+// ─── DEBUG ────────────────────────────────────────────
+function log(msg, cls = '') {
+  const p = document.getElementById('debug-panel');
+  const d = document.createElement('div');
+  d.className = 'd-line' + (cls ? ' d-' + cls : '');
+  d.textContent = msg;
+  p.appendChild(d);
+  p.scrollTop = 9999;
+}
+function toggleDebug() {
+  const p = document.getElementById('debug-panel');
+  const open = p.classList.toggle('open');
+  document.getElementById('debug-arrow').textContent = open ? '▼' : '▲';
+}
+function setStep(msg) {
+  document.getElementById('load-step').textContent = msg;
+}
+
+// ─── CSV FETCH ────────────────────────────────────────
+async function fetchCSV(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error('HTTP ' + r.status + ' for ' + url.slice(0, 60));
+  const text = await r.text();
+  const parsed = Papa.parse(text, {
+    header: true,
+    skipEmptyLines: true,
+    dynamicTyping: false,
+    transformHeader: h => h.trim().replace(/^\uFEFF/, '') // BOM対策
+  });
+  return parsed.data;
+}
+
+// ─── NORMALIZE ────────────────────────────────────────
+function norm(str) {
+  if (!str) return '';
+  return String(str)
+    .trim()
+    .replace(/\s+/g, '')
+    .replace(/[　]/g, '')                                            // 全角スペース
+    .replace(/[０-９]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))  // 全角→半角数字
+    .replace(/一丁目/g,'1丁目').replace(/二丁目/g,'2丁目').replace(/三丁目/g,'3丁目')
+    .replace(/四丁目/g,'4丁目').replace(/五丁目/g,'5丁目').replace(/六丁目/g,'6丁目')
+    .replace(/七丁目/g,'7丁目').replace(/八丁目/g,'8丁目').replace(/九丁目/g,'9丁目');
+}
+
+// ─── COLUMN FINDER ───────────────────────────────────
+function findCol(keys, patterns) {
+  for (const p of patterns) {
+    const found = keys.find(k => k.includes(p));
+    if (found) return found;
+  }
+  return null;
+}
+
+// ─── BUILD COORD MAP ─────────────────────────────────
+function buildCoordMap(rows) {
+  if (!rows.length) return new Map();
+  const keys = Object.keys(rows[0]);
+  log('座標CSV列: ' + keys.join(' | '));
+
+  // Detect lat/lng columns
+  const latCol = findCol(keys, ['緯度','lat','Lat','latitude']) || keys[keys.length - 2];
+  const lngCol = findCol(keys, ['経度','lng','lon','Lng','Lon','longitude']) || keys[keys.length - 1];
+
+  // Detect name column(s)
+  const nameCol1 = findCol(keys, ['丁名','町丁名','町名','地名','名称','name','Name','住所']);
+  const prefixCol = findCol(keys, ['区市','市区','区名','市名','自治体']);
+
+  log(`lat="${latCol}" lng="${lngCol}" name="${nameCol1}" prefix="${prefixCol}"`, 'ok');
+
+  const m = new Map();
+  let cnt = 0;
+  rows.forEach(row => {
+    let rawName = nameCol1 ? (row[nameCol1] || '') : '';
+    if (prefixCol && row[prefixCol]) rawName = row[prefixCol] + rawName;
+
+    // If no name col found, try concatenating non-numeric columns
+    if (!rawName) {
+      const nonNum = keys.filter(k => k !== latCol && k !== lngCol);
+      rawName = nonNum.map(k => row[k] || '').join('');
+    }
+
+    const lat = parseFloat(row[latCol]);
+    const lng = parseFloat(row[lngCol]);
+    if (rawName && !isNaN(lat) && !isNaN(lng)) {
+      const key = norm(rawName);
+      m.set(key, { lat, lng });
+      // Also index without ward/city prefix (e.g. "笹塚1丁目" from "渋谷区笹塚1丁目")
+      const withoutPrefix = key.replace(/^.+[区市]/, '');
+      if (withoutPrefix && withoutPrefix !== key) m.set(withoutPrefix, { lat, lng });
+      cnt++;
+    }
+  });
+
+  log('座標データ: ' + cnt + '件', cnt > 0 ? 'ok' : 'err');
+  return m;
+}
+
+// ─── COORD LOOKUP ─────────────────────────────────────
+function getCoords(location, coordMap) {
+  if (!location) return null;
+  const n = norm(location);
+  if (coordMap.has(n)) return coordMap.get(n);
+
+  // Longest prefix match
+  let best = null, bestLen = 0;
+  for (const [key, val] of coordMap) {
+    if (n.startsWith(key) && key.length > bestLen) { best = val; bestLen = key.length; }
+  }
+  return best;
+}
+
+// ─── DATE MATCH ───────────────────────────────────────
+function matchDate(row, m, d) {
+  const pats = [
+    `${m}/${d}`, `${m}月${d}`, `${m}-${d}`,
+    String(m).padStart(2,'0') + '/' + String(d).padStart(2,'0'),
+    String(m).padStart(2,'0') + '-' + String(d).padStart(2,'0'),
+  ];
+  return Object.values(row).some(v => pats.some(p => String(v).includes(p)));
+}
+
+// ─── FARE PARSE ───────────────────────────────────────
+function parseFare(v) {
+  if (!v) return 0;
+  return parseInt(String(v).replace(/[^0-9]/g, '')) || 0;
+}
+function fmtFare(n) { return n ? '¥' + n.toLocaleString() : '—'; }
+function shortLoc(s, len = 13) {
+  if (!s) return '—';
+  return s.length > len ? s.slice(0, len) + '…' : s;
+}
+
+// ─── ICONS ────────────────────────────────────────────
+function iconPickup(n, active) {
+  const bg = active ? '#ffffff' : '#f5a000';
+  const ring = active ? '0 0 0 2px #f5a000,0 2px 8px rgba(0,0,0,0.7)' : '0 0 0 1.5px #000,0 2px 6px rgba(0,0,0,0.6)';
+  return L.divIcon({
+    html: `<div style="width:22px;height:22px;background:${bg};border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#000;font-family:sans-serif;box-shadow:${ring};">${n}</div>`,
+    className: '', iconSize: [22,22], iconAnchor: [11,11]
+  });
+}
+function iconDropoff(active) {
+  const bg = active ? '#f5a000' : '#888898';
+  const sz = active ? 11 : 9;
+  const off = sz / 2;
+  return L.divIcon({
+    html: `<div style="width:${sz}px;height:${sz}px;background:${bg};border-radius:50%;border:1.5px solid ${active ? '#f5a000' : '#222'};box-shadow:0 1px 4px rgba(0,0,0,0.5);"></div>`,
+    className: '', iconSize: [sz,sz], iconAnchor: [off,off]
+  });
+}
+
+// ─── ACTIVE TRIP ──────────────────────────────────────
+function setActive(n) {
+  if (activeN !== null) {
+    document.getElementById('tr-' + activeN)?.classList.remove('active');
+    const prev = tripLayers.find(l => l.n === activeN);
+    if (prev) {
+      prev.line.setStyle({ color: '#f5a000', weight: 1.5, opacity: 0.45 });
+      prev.pm.setIcon(iconPickup(activeN, false));
+      prev.dm.setIcon(iconDropoff(false));
+    }
+  }
+  activeN = n;
+  const el = document.getElementById('tr-' + n);
+  if (el) { el.classList.add('active'); el.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+  const cur = tripLayers.find(l => l.n === n);
+  if (cur) {
+    cur.line.setStyle({ color: '#ffffff', weight: 3, opacity: 0.9 });
+    cur.line.bringToFront();
+    cur.pm.setIcon(iconPickup(n, true));
+    cur.dm.setIcon(iconDropoff(true));
+    leafMap.panTo(cur.pm.getLatLng(), { animate: true, duration: 0.5 });
+  }
+}
+
+// ─── MAIN ─────────────────────────────────────────────
+async function main() {
+  try {
+    // 1. Coords
+    setStep('座標データを取得中...');
+    log('座標CSV読み込み開始');
+    const coordRows = await fetchCSV(URL_COORDS);
+    log('座標CSV: ' + coordRows.length + '行');
+    const coordMap = buildCoordMap(coordRows);
+
+    // 2. Breakdown
+    setStep('日報詳細データを取得中...');
+    log('日報詳細CSV読み込み開始');
+    const bRows = await fetchCSV(URL_BREAKDOWN);
+    log('日報詳細CSV: ' + bRows.length + '行');
+    if (bRows.length > 0) log('日報詳細列: ' + Object.keys(bRows[0]).join(' | '));
+
+    // 3. Filter date
+    const dayRows = bRows.filter(r => matchDate(r, TARGET_MONTH, TARGET_DAY));
+    log('3/19フィルタ結果: ' + dayRows.length + '件', dayRows.length ? 'ok' : 'err');
+
+    if (dayRows.length === 0) {
+      // Show sample dates for debugging
+      const sampleVals = bRows.slice(0, 15).flatMap(r => Object.values(r))
+        .filter(v => /\d/.test(String(v)) && String(v).includes('/'))
+        .slice(0, 8);
+      log('日付候補例: ' + sampleVals.join(', '), 'warn');
+      throw new Error('3/19のデータが見つかりません。上記の日付候補をご確認ください。');
+    }
+
+    // 4. Detect columns
+    const keys = Object.keys(dayRows[0]);
+    const pickCol = findCol(keys, ['乗車地点','乗車地区','乗車場所','乗車地','乗り場','乗車場','乗車','pickup','from','出発地','From']);
+    const dropCol = findCol(keys, ['降車地点','降車地区','降車場所','降車地','降り場','降車場','降車','dropoff','to','到着地','To']);
+    const fareCol = findCol(keys, ['金額','売上','運賃','料金','fare','amount','売上金','賃走金','料']);
+    const timeCol = findCol(keys, ['時刻','時間','乗車時','乗車時刻','出発時','time','Time']);
+
+    log(`列: 乗車="${pickCol}" 降車="${dropCol}" 金額="${fareCol}" 時刻="${timeCol}"`, 'ok');
+
+    if (!pickCol || !dropCol) {
+      log('⚠ 乗車/降車列未検出。列名: ' + keys.join(', '), 'err');
+    }
+
+    // 5. Build trips
+    const trips = dayRows.map((row, i) => {
+      const pickup  = pickCol ? row[pickCol]?.trim() : '';
+      const dropoff = dropCol ? row[dropCol]?.trim() : '';
+      const fare    = parseFare(fareCol ? row[fareCol] : '');
+      const time    = timeCol ? row[timeCol] : '';
+      const pc = getCoords(pickup, coordMap);
+      const dc = getCoords(dropoff, coordMap);
+      return { n: i+1, pickup, dropoff, fare, time, pc, dc, ok: !!(pc && dc) };
+    });
+
+    const matched   = trips.filter(t => t.ok).length;
+    const unmatched = trips.filter(t => !t.ok);
+    log(`座標マッチ: ${matched}/${trips.length}件`, matched > 0 ? 'ok' : 'err');
+    unmatched.slice(0, 5).forEach(t => log(`  未マッチ #${t.n}: "${t.pickup}" → "${t.dropoff}"`, 'warn'));
+
+    // 6. Stats
+    const totalFare = trips.reduce((s, t) => s + t.fare, 0);
+    const longRides = trips.filter(t => t.fare >= LONG_RIDE_YEN).length;
+    const avg       = trips.length ? Math.round(totalFare / trips.length) : 0;
+
+    document.getElementById('stats-grid').innerHTML = `
+      <div class="stat-cell"><div class="stat-label">総売上</div><div class="stat-value">¥${totalFare.toLocaleString()}</div></div>
+      <div class="stat-cell"><div class="stat-label">件数</div><div class="stat-value">${trips.length}<span class="stat-unit"> 件</span></div></div>
+      <div class="stat-cell"><div class="stat-label">¥5,000+</div><div class="stat-value">${longRides}<span class="stat-unit"> 件</span></div></div>
+      <div class="stat-cell"><div class="stat-label">平均単価</div><div class="stat-value">¥${avg.toLocaleString()}</div></div>
+    `;
+
+    // 7. Trip list
+    const listEl = document.getElementById('trip-list');
+    trips.forEach((t, i) => {
+      if (i > 0) { const sep = document.createElement('div'); sep.className = 'trip-divider'; listEl.appendChild(sep); }
+      const div = document.createElement('div');
+      div.className = 'trip-row' + (t.ok ? '' : ' no-coords');
+      div.id = 'tr-' + t.n;
+      div.innerHTML = `
+        <div class="trip-badge">${t.n}</div>
+        <div class="trip-info">
+          <div class="trip-loc">${shortLoc(t.pickup)}<span class="trip-loc-arrow"> → </span>${shortLoc(t.dropoff)}</div>
+          <div class="trip-meta">
+            <div class="trip-fare">${fmtFare(t.fare)}</div>
+            ${t.time ? `<div class="trip-time">${t.time}</div>` : ''}
+            ${!t.ok ? `<div class="trip-no-match">未マッチ</div>` : ''}
+          </div>
+        </div>`;
+      if (t.ok) div.addEventListener('click', () => setActive(t.n));
+      listEl.appendChild(div);
+    });
+
+    // 8. Draw on map
+    setStep('マップを描画中...');
+    const bounds = [];
+    trips.filter(t => t.ok).forEach(t => {
+      const line = L.polyline([[t.pc.lat, t.pc.lng], [t.dc.lat, t.dc.lng]], {
+        color: '#f5a000', weight: 1.5, opacity: 0.45
+      }).addTo(leafMap);
+
+      const pm = L.marker([t.pc.lat, t.pc.lng], { icon: iconPickup(t.n, false) })
+        .addTo(leafMap)
+        .bindTooltip(`#${t.n} 乗車：${t.pickup}`, { direction: 'top' });
+
+      const dm = L.marker([t.dc.lat, t.dc.lng], { icon: iconDropoff(false) })
+        .addTo(leafMap)
+        .bindTooltip(`#${t.n} 降車：${t.dropoff}`, { direction: 'top' });
+
+      [line, pm, dm].forEach(el => el.on('click', () => setActive(t.n)));
+      tripLayers.push({ n: t.n, line, pm, dm });
+      bounds.push([t.pc.lat, t.pc.lng], [t.dc.lat, t.dc.lng]);
+    });
+
+    if (bounds.length) leafMap.fitBounds(bounds, { padding: [50, 50] });
+
+    log('描画完了: ' + tripLayers.length + '件プロット', 'ok');
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('legend').style.display = 'block';
+
+  } catch (err) {
+    log('エラー: ' + err.message, 'err');
+    document.getElementById('loading').innerHTML = `
+      <div style="text-align:center;padding:24px">
+        <div style="color:#8a3030;font-size:13px;margin-bottom:10px">読み込みエラー</div>
+        <div style="color:#44445a;font-size:11px;max-width:280px;line-height:1.6">${err.message}</div>
+        <div style="color:#2a2a3a;font-size:10px;margin-top:12px">左側のデバッグパネルをご確認ください</div>
+      </div>`;
+    // Open debug panel on error
+    document.getElementById('debug-panel').classList.add('open');
+    document.getElementById('debug-arrow').textContent = '▼';
+  }
+}
+
+main();
+</script>
+</body>
+</html>
