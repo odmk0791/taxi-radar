@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>営業ルートトレース</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP','Yu Gothic',sans-serif;
+  background:#07071a;color:#e4e6ff;display:flex;height:100vh;overflow:hidden;}
+
+#sidebar{width:300px;min-width:300px;background:#0f0f28;border-right:1px solid #28285a;
+  display:flex;flex-direction:column;overflow:hidden;z-index:10;}
+
+.s-head{padding:13px 14px 11px;border-bottom:1px solid #28285a;flex-shrink:0;}
+.s-eye{font-size:9px;letter-spacing:.2em;color:#f5a000;text-transform:uppercase;margin-bottom:7px;}
+.date-row{display:flex;gap:6px;align-items:center;}
+#date-input{flex:1;background:#1c1c3a;border:1px solid #383870;color:#fff;
+  padding:6px 10px;border-radius:6px;font-size:13px;font-family:inherit;outline:none;}
+#date-input:focus{border-color:#f5a00077;}
+#load-btn{background:#f5a000;color:#000;border:none;padding:6px 15px;border-radius:6px;
+  font-size:11px;font-weight:800;cursor:pointer;font-family:inherit;}
+#load-btn:hover{background:#ffbb33;}
+.s-dow{font-size:10px;color:#6060a0;margin-top:5px;}
+
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:#28285a;border-bottom:1px solid #28285a;flex-shrink:0;}
+.stat-cell{background:#0f0f28;padding:10px 14px;}
+.stat-lbl{font-size:8px;letter-spacing:.1em;color:#505090;text-transform:uppercase;margin-bottom:3px;}
+.stat-val{font-size:15px;font-weight:800;color:#f5a000;line-height:1;}
+.stat-unit{font-size:9px;font-weight:400;color:#8080b0;}
+
+/* progress */
+#prog-wrap{flex-shrink:0;padding:8px 14px 10px;border-bottom:1px solid #1e1e40;display:none;}
+.prog-lbl{font-size:10px;color:#9090c8;margin-bottom:5px;}
+.prog-bg{background:#1c1c3a;border-radius:4px;height:5px;overflow:hidden;}
+.prog-fill{background:#f5a000;height:100%;border-radius:4px;transition:width .25s;width:0%;}
+.prog-eta{font-size:9px;color:#505080;margin-top:3px;}
+
+/* trip list */
+#trip-list{flex:1;overflow-y:auto;padding:5px 0;}
+#trip-list::-webkit-scrollbar{width:3px;}
+#trip-list::-webkit-scrollbar-thumb{background:#28285a;border-radius:2px;}
+
+.t-row{display:flex;align-items:flex-start;gap:9px;padding:7px 13px;
+  cursor:pointer;border-left:2px solid transparent;transition:background .1s,border-color .1s;}
+.t-row:hover{background:#161640;border-left-color:#f5a00044;}
+.t-row.active{background:#1c1c50;border-left-color:#f5a000;}
+.t-row.no-map{opacity:.35;cursor:default;}
+.t-row.no-map:hover{background:transparent;border-left-color:transparent;}
+.t-num{width:22px;height:22px;min-width:22px;background:#f5a000;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:900;color:#000;margin-top:1px;flex-shrink:0;}
+.t-row.active .t-num{background:#fff;}
+.t-row.no-map .t-num{background:#252555;color:#505080;}
+.t-body{flex:1;min-width:0;}
+.t-loc{font-size:10.5px;color:#c0c2e8;line-height:1.5;}
+.t-from,.t-to{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.t-arr{font-size:8px;color:#f5a00040;}
+.t-meta{display:flex;gap:7px;align-items:center;margin-top:2px;}
+.t-fare{font-size:11.5px;font-weight:800;color:#f5a000;}
+.t-time{font-size:9.5px;color:#505080;}
+.t-tag{font-size:9px;color:#505080;}
+.t-sep{height:1px;background:#161640;margin:0 13px;}
+
+#status-bar{flex-shrink:0;padding:6px 14px;font-size:10px;color:#6060a0;
+  border-top:1px solid #1e1e40;line-height:1.6;}
+#status-bar.ok{color:#50b080;}
+#status-bar.ng{color:#c06040;}
+
+#map-wrap{flex:1;position:relative;}
+#map{width:100%;height:100%;background:#07071a;}
+#loading{position:absolute;inset:0;background:#07071a;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:13px;z-index:1000;}
+.spin{width:30px;height:30px;border:2.5px solid #28285a;border-top-color:#f5a000;
+  border-radius:50%;animation:spin .7s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.ld-main{font-size:12px;color:#5050a0;letter-spacing:.1em;}
+#ld-sub{font-size:9.5px;color:#333368;margin-top:3px;}
+#legend{position:absolute;bottom:20px;right:10px;background:rgba(7,7,26,.93);
+  border:1px solid #28285a;border-radius:8px;padding:9px 13px;z-index:500;
+  font-size:10px;color:#6060a0;backdrop-filter:blur(6px);display:none;}
+.lg-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.lg-row:last-child{margin-bottom:0;}
+.lg-c{width:17px;height:17px;background:#f5a000;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:900;color:#000;flex-shrink:0;}
+.lg-d{width:8px;height:8px;background:#888;border-radius:50%;flex-shrink:0;margin:0 4.5px;}
+.lg-l{width:20px;height:2px;background:#f5a000;opacity:.55;flex-shrink:0;}
+.leaflet-tooltip{background:#0c0c28 !important;border:1px solid #f5a00055 !important;
+  color:#d0d2f8 !important;font-size:10px !important;
+  font-family:'Hiragino Kaku Gothic ProN',sans-serif !important;
+  padding:4px 9px !important;border-radius:5px !important;}
+.leaflet-tooltip::before{display:none !important;}
+.leaflet-control-zoom a{background:#0f0f28 !important;color:#6060a0 !important;border-color:#28285a !important;}
+.leaflet-control-zoom a:hover{background:#1c1c50 !important;color:#f5a000 !important;}
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div class="s-head">
+    <div class="s-eye">Route Trace · 武三23区</div>
+    <div class="date-row">
+      <input type="date" id="date-input" value="2026-03-19">
+      <button id="load-btn" onclick="startLoad()">表示</button>
+    </div>
+    <div class="s-dow" id="s-dow">2026年3月19日（木）</div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-cell"><div class="stat-lbl">営収（日報）</div><div class="stat-val" id="st-fare">—</div></div>
+    <div class="stat-cell"><div class="stat-lbl">件数</div><div class="stat-val" id="st-cnt">—</div></div>
+    <div class="stat-cell"><div class="stat-lbl">¥5,000+</div><div class="stat-val" id="st-long">—</div></div>
+    <div class="stat-cell"><div class="stat-lbl">平均単価</div><div class="stat-val" id="st-avg">—</div></div>
+  </div>
+
+  <div id="prog-wrap">
+    <div class="prog-lbl" id="prog-lbl">住所を地図上に配置中...</div>
+    <div class="prog-bg"><div class="prog-fill" id="prog-fill"></div></div>
+    <div class="prog-eta" id="prog-eta"></div>
+  </div>
+
+  <div id="trip-list"></div>
+  <div id="status-bar">読み込み中...</div>
+</div>
+
+<div id="map-wrap">
+  <div id="map"></div>
+  <div id="loading">
+    <div class="spin"></div>
+    <div class="ld-main">データを読み込み中...</div>
+    <div id="ld-sub">初期化中</div>
+  </div>
+  <div id="legend">
+    <div class="lg-row"><div class="lg-c">1</div>乗車地点（番号順）</div>
+    <div class="lg-row"><div class="lg-d"></div>降車地点</div>
+    <div class="lg-row"><div class="lg-l"></div>ルート（直線）</div>
+  </div>
+</div>
+
+<script>
+// ── URLs ─────────────────────────────────────────────
+const URL_DAILY = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+const URL_BD    = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+
+// ── Fixed column names ────────────────────────────────
+const C_PW='乗車地：市区', C_PT='乗車地：地名';
+const C_DW='降車地：市区', C_DT='降車地：地名';
+const C_TIME='乗車時間';
+// fare comes from daily report, not breakdown
+
+// ── State ─────────────────────────────────────────────
+let leafMap, bdCache=null, dailyCache=null;
+let tripLayers=[], activeN=null;
+const geocache = new Map(); // persistent across date changes
+
+// ── Map init ─────────────────────────────────────────
+leafMap = L.map('map',{center:[35.68,139.71],zoom:12});
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+  {attribution:'© OpenStreetMap © CARTO',subdomains:'abcd',maxZoom:19}).addTo(leafMap);
+
+// ── Util ──────────────────────────────────────────────
+function setSub(s){document.getElementById('ld-sub').textContent=s;}
+function showLoad(){document.getElementById('loading').style.display='flex';document.getElementById('legend').style.display='none';}
+function hideLoad(){document.getElementById('loading').style.display='none';document.getElementById('legend').style.display='block';}
+function setStatus(s,cls=''){const el=document.getElementById('status-bar');el.textContent=s;el.className=cls;}
+function showProg(pct,label,eta){
+  document.getElementById('prog-wrap').style.display='block';
+  document.getElementById('prog-fill').style.width=pct+'%';
+  document.getElementById('prog-lbl').textContent=label;
+  document.getElementById('prog-eta').textContent=eta||'';
+}
+function hideProg(){document.getElementById('prog-wrap').style.display='none';}
+
+function na(s){
+  if(!s)return'';
+  return String(s).trim()
+    .replace(/[\s　\t\r\n]+/g,'')
+    .replace(/：/g,':').replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0))
+    .replace(/一丁目/g,'1丁目').replace(/二丁目/g,'2丁目').replace(/三丁目/g,'3丁目')
+    .replace(/四丁目/g,'4丁目').replace(/五丁目/g,'5丁目').replace(/六丁目/g,'6丁目')
+    .replace(/七丁目/g,'7丁目').replace(/八丁目/g,'8丁目').replace(/九丁目/g,'9丁目');
+}
+function stripSono(s){return String(s||'').replace(/^その他/,'');}
+function resolveCol(keys,want){
+  if(keys.includes(want))return want;
+  const alts=[want.replace(/：/g,':'),want.replace(/:/g,'：')];
+  return keys.find(k=>alts.includes(k)||na(k)===na(want))||null;
+}
+function parseFare(v){return parseInt(String(v||'').replace(/[^0-9]/g,''))||0;}
+function pf(n){return n?'¥'+n.toLocaleString():'—';}
+function sl(s,n=14){if(!s||!s.trim())return'—';return s.length>n?s.slice(0,n)+'…':s;}
+
+// ── CSV fetch ─────────────────────────────────────────
+async function fetchCSV(url){
+  const r=await fetch(url);
+  if(!r.ok)throw new Error('HTTP '+r.status);
+  return Papa.parse(await r.text(),{
+    header:true,skipEmptyLines:true,dynamicTyping:false,
+    transformHeader:h=>h.trim().replace(/^\uFEFF/,'')
+  }).data;
+}
+
+// ── Date match ────────────────────────────────────────
+function matchDate(row,y,m,d){
+  const s=Object.values(row).map(v=>String(v||'')).join(' ');
+  const m2=String(m).padStart(2,'0'),d2=String(d).padStart(2,'0'),ry=y-2018;
+  const pats=[
+    `${y}/${m}/${d}`,`${y}/${m2}/${d2}`,`${y}-${m2}-${d2}`,`${y}年${m}月${d}日`,
+    `R${ry}/${m}/${d}`,`R${ry}.${m}.${d}`,`令和${ry}年${m}月${d}日`,
+  ];
+  if(pats.some(p=>s.includes(p)))return true;
+  if(!/20\d\d|R\d|令和/.test(s))return[`${m}/${d}`,`${m}月${d}`].some(p=>s.includes(p));
+  return false;
+}
+
+// ── Geocoding: Nominatim (OpenStreetMap) ──────────────
+// Nominatim supports CORS and is free for reasonable use
+const NOMINATIM = 'https://nominatim.openstreetmap.org/search';
+const RATE_MS = 1100; // Nominatim requires ≥1 req/sec
+
+async function geocodeOne(addr){
+  const key = na(addr);
+  if(geocache.has(key)) return geocache.get(key);
+
+  // Build query — add 東京都 unless it's clearly outside Tokyo
+  const cleaned = stripSono(addr).trim();
+  if(!cleaned){ geocache.set(key,null); return null; }
+
+  const query = cleaned + (cleaned.match(/[都道府県]/) ? '' : ' 東京都');
+  const url = `${NOMINATIM}?format=json&limit=1&countrycodes=jp&q=${encodeURIComponent(query)}`;
+
+  try{
+    const res = await fetch(url, {headers:{'Accept-Language':'ja,en','Accept':'application/json'}});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    if(data && data.length > 0){
+      const lat=parseFloat(data[0].lat), lng=parseFloat(data[0].lon);
+      // Sanity check: greater Kanto area
+      if(lat>35.2 && lat<36.2 && lng>138.5 && lng<140.5){
+        const c={lat,lng};
+        geocache.set(key,c);
+        return c;
+      }
+    }
+  }catch(e){}
+
+  geocache.set(key,null);
+  return null;
+}
+
+async function geocodeAll(addrs){
+  const todo = addrs.filter(a => a && !geocache.has(na(a)));
+  if(!todo.length) return;
+
+  const start = Date.now();
+  for(let i=0; i<todo.length; i++){
+    const elapsed = Date.now()-start;
+    const perItem = i>0 ? elapsed/i : RATE_MS;
+    const remaining = Math.ceil((todo.length-i)*perItem/1000);
+    showProg(
+      Math.round((i+1)/todo.length*100),
+      `住所を地図上に配置中… ${i+1}/${todo.length}件`,
+      `残り約${remaining}秒`
+    );
+    await geocodeOne(todo[i]);
+    if(i < todo.length-1) await new Promise(r=>setTimeout(r, RATE_MS));
+  }
+  hideProg();
+}
+
+// ── Icons ─────────────────────────────────────────────
+function iconP(n,act){
+  const bg=act?'#fff':'#f5a000';
+  const sh=act?'0 0 0 2px #f5a000,0 2px 8px rgba(0,0,0,.7)':'0 0 0 1.5px #000,0 2px 6px rgba(0,0,0,.6)';
+  return L.divIcon({html:`<div style="width:22px;height:22px;background:${bg};border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#000;font-family:sans-serif;box-shadow:${sh};">${n}</div>`,className:'',iconSize:[22,22],iconAnchor:[11,11]});
+}
+function iconD(act){
+  return L.divIcon({html:`<div style="width:9px;height:9px;background:${act?'#f5a000':'#8888c0'};border-radius:50%;border:1.5px solid ${act?'#f5a000':'#222'};box-shadow:0 1px 4px rgba(0,0,0,.5);"></div>`,className:'',iconSize:[9,9],iconAnchor:[4,4]});
+}
+function setActive(n){
+  if(activeN!==null){
+    document.getElementById('tr-'+activeN)?.classList.remove('active');
+    const p=tripLayers.find(l=>l.n===activeN);
+    if(p){p.line.setStyle({color:'#f5a000',weight:1.8,opacity:.5});p.pm.setIcon(iconP(activeN,false));p.dm.setIcon(iconD(false));}
+  }
+  activeN=n;
+  const el=document.getElementById('tr-'+n);
+  if(el){el.classList.add('active');el.scrollIntoView({behavior:'smooth',block:'nearest'});}
+  const c=tripLayers.find(l=>l.n===n);
+  if(c){c.line.setStyle({color:'#fff',weight:3,opacity:.9});c.line.bringToFront();c.pm.setIcon(iconP(n,true));c.dm.setIcon(iconD(true));leafMap.panTo(c.pm.getLatLng(),{animate:true,duration:.4});}
+}
+function clearMap(){
+  tripLayers.forEach(l=>{l.line.remove();l.pm.remove();l.dm.remove();});
+  tripLayers=[];activeN=null;
+  document.getElementById('trip-list').innerHTML='';
+}
+
+const DOW=['日','月','火','水','木','金','土'];
+function dowLabel(s){const[y,m,d]=s.split('-').map(Number);return`${y}年${m}月${d}日（${DOW[new Date(y,m-1,d).getDay()]}）`;}
+
+// ── MAIN ──────────────────────────────────────────────
+async function startLoad(){
+  clearMap();
+  showLoad();
+  hideProg();
+
+  const dateStr=document.getElementById('date-input').value;
+  const[y,m,d]=dateStr.split('-').map(Number);
+  document.getElementById('s-dow').textContent=dowLabel(dateStr);
+
+  try{
+    // ── 1. 日報CSV（営収の正確な値を取得） ────────────
+    setSub('日報を取得中...');
+    if(!dailyCache) dailyCache = await fetchCSV(URL_DAILY);
+
+    let dailyFare = null, dailyCnt = null;
+    if(dailyCache.length > 0){
+      const dk = Object.keys(dailyCache[0]);
+      const dailyRow = dailyCache.find(r => matchDate(r, y, m, d));
+      if(dailyRow){
+        // Find 営収 column
+        const fareCol = dk.find(k=>k==='営収') || dk.find(k=>k.includes('営収')) ||
+          dk.find(k=>k.includes('売上')&&!k.includes('単価')&&!k.includes('歩合'));
+        if(fareCol) dailyFare = parseFare(dailyRow[fareCol]);
+        // Find 件数 column
+        const cntCol = dk.find(k=>k==='件数') || dk.find(k=>k.includes('件数'));
+        if(cntCol) dailyCnt = parseInt(dailyRow[cntCol])||null;
+      }
+    }
+
+    // ── 2. 日報詳細CSV ────────────────────────────────
+    setSub('日報詳細を取得中...');
+    if(!bdCache) bdCache = await fetchCSV(URL_BD);
+    if(!bdCache.length) throw new Error('日報詳細CSVが空');
+
+    const bKeys = Object.keys(bdCache[0]);
+    const cpw=resolveCol(bKeys,C_PW), cpt=resolveCol(bKeys,C_PT);
+    const cdw=resolveCol(bKeys,C_DW), cdt=resolveCol(bKeys,C_DT);
+    const ctm=resolveCol(bKeys,C_TIME);
+    // For per-trip fare display (from breakdown), find 料金
+    const cFareB = resolveCol(bKeys,'料金') || bKeys.find(k=>k.includes('料金'));
+
+    // ── 3. 日付フィルタ ────────────────────────────────
+    setSub(`${y}/${m}/${d} を抽出中...`);
+    const dayRows = bdCache.filter(r=>matchDate(r,y,m,d));
+    if(!dayRows.length){
+      const samp=[...new Set(bdCache.slice(0,40).flatMap(r=>Object.values(r))
+        .filter(v=>/\d+[\/\-年]\d/.test(String(v))))].slice(0,5);
+      throw new Error(`${y}/${m}/${d} のデータなし。値例: ${samp.join(' / ')}`);
+    }
+
+    // ── 4. トリップ構築 ────────────────────────────────
+    const trips = dayRows.map((row,i)=>{
+      const pw=cpw?String(row[cpw]||'').trim():'';
+      const pt=cpt?String(row[cpt]||'').trim():'';
+      const dw=cdw?String(row[cdw]||'').trim():'';
+      const dt=cdt?String(row[cdt]||'').trim():'';
+      const fare = parseFare(cFareB ? row[cFareB] : '');
+      const time = ctm ? String(row[ctm]||'') : '';
+      return{n:i+1, pickup:stripSono(pw+pt), dropoff:stripSono(dw+dt), fare, time, pc:null,dc:null,ok:false};
+    });
+
+    // ── 5. ジオコーディング (Nominatim) ─────────────────
+    const uniqueAddrs = [...new Set(trips.flatMap(t=>[t.pickup,t.dropoff]).filter(Boolean))];
+    await geocodeAll(uniqueAddrs);
+
+    // 座標割り当て
+    trips.forEach(t=>{
+      t.pc = geocache.get(na(t.pickup))||null;
+      t.dc = geocache.get(na(t.dropoff))||null;
+      t.ok = !!(t.pc&&t.dc);
+    });
+
+    const matched = trips.filter(t=>t.ok).length;
+    const tripCnt = dailyCnt || trips.length;
+
+    // ── 6. 統計（日報の値を優先） ─────────────────────
+    // 日報から正確な営収、件数を表示
+    const fareDisplay = dailyFare !== null ? dailyFare :
+      trips.reduce((s,t)=>s+t.fare, 0);
+    const long = trips.filter(t=>t.fare>=5000).length;
+    // 平均単価 = 営収 ÷ 件数
+    const avg = tripCnt > 0 ? Math.round(fareDisplay/tripCnt) : 0;
+
+    document.getElementById('st-fare').innerHTML = '¥'+fareDisplay.toLocaleString();
+    document.getElementById('st-cnt').innerHTML  = tripCnt+'<span class="stat-unit"> 件</span>';
+    document.getElementById('st-long').innerHTML = long+'<span class="stat-unit"> 件</span>';
+    document.getElementById('st-avg').innerHTML  = '¥'+avg.toLocaleString();
+    setStatus(`地図にプロット: ${matched}/${trips.length}件`, matched>0?'ok':'ng');
+
+    // ── 7. サイドバーリスト ────────────────────────────
+    const list = document.getElementById('trip-list');
+    trips.forEach((t,i)=>{
+      if(i>0){const s=document.createElement('div');s.className='t-sep';list.appendChild(s);}
+      const div=document.createElement('div');
+      div.className='t-row'+(t.ok?'':' no-map');
+      div.id='tr-'+t.n;
+      div.innerHTML=`<div class="t-num">${t.n}</div><div class="t-body"><div class="t-loc"><span class="t-from">${sl(t.pickup)}</span><span class="t-arr">↓</span><span class="t-to">${sl(t.dropoff)}</span></div><div class="t-meta"><div class="t-fare">${pf(t.fare)}</div>${t.time?`<div class="t-time">${t.time}</div>`:''}${!t.ok?'<div class="t-tag">未取得</div>':''}</div></div>`;
+      if(t.ok) div.addEventListener('click',()=>setActive(t.n));
+      list.appendChild(div);
+    });
+
+    // ── 8. 地図描画 ────────────────────────────────────
+    const bounds=[];
+    trips.filter(t=>t.ok).forEach(t=>{
+      const line=L.polyline([[t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]],
+        {color:'#f5a000',weight:1.8,opacity:.55}).addTo(leafMap);
+      const pm=L.marker([t.pc.lat,t.pc.lng],{icon:iconP(t.n,false)})
+        .addTo(leafMap).bindTooltip(`#${t.n} 乗：${t.pickup}`,{direction:'top'});
+      const dm=L.marker([t.dc.lat,t.dc.lng],{icon:iconD(false)})
+        .addTo(leafMap).bindTooltip(`#${t.n} 降：${t.dropoff}`,{direction:'top'});
+      [line,pm,dm].forEach(el=>el.on('click',()=>setActive(t.n)));
+      tripLayers.push({n:t.n,line,pm,dm});
+      bounds.push([t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]);
+    });
+    if(bounds.length) leafMap.fitBounds(bounds,{padding:[50,50]});
+    hideLoad();
+
+  }catch(err){
+    document.getElementById('loading').innerHTML=`<div style="text-align:center;padding:24px"><div style="color:#c04040;font-size:13px;margin-bottom:8px">エラー</div><div style="color:#5050a0;font-size:11px;max-width:260px;line-height:1.8">${err.message}</div></div>`;
+    setStatus('エラー: '+err.message,'ng');
+  }
+}
+
+startLoad();
+</script>
+</body>
+</html>
