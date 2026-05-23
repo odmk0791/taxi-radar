@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>営業ルートトレース</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP','Yu Gothic',sans-serif;
+  background:#07071a;color:#e4e6ff;display:flex;height:100vh;overflow:hidden;}
+
+#sidebar{width:300px;min-width:300px;background:#0f0f28;border-right:1px solid #28285a;
+  display:flex;flex-direction:column;overflow:hidden;z-index:10;}
+
+.s-head{padding:13px 14px 11px;border-bottom:1px solid #28285a;flex-shrink:0;}
+.s-eye{font-size:9px;letter-spacing:.2em;color:#f5a000;text-transform:uppercase;margin-bottom:7px;}
+.date-row{display:flex;gap:6px;align-items:center;}
+#date-input{flex:1;background:#1c1c3a;border:1px solid #383870;color:#fff;
+  padding:6px 10px;border-radius:6px;font-size:13px;font-family:inherit;outline:none;}
+#date-input:focus{border-color:#f5a00077;}
+#load-btn{background:#f5a000;color:#000;border:none;padding:6px 15px;
+  border-radius:6px;font-size:11px;font-weight:800;cursor:pointer;font-family:inherit;}
+#load-btn:hover{background:#ffbb33;}
+.s-dow{font-size:10px;color:#6060a0;margin-top:5px;}
+
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:#28285a;border-bottom:1px solid #28285a;flex-shrink:0;}
+.stat-cell{background:#0f0f28;padding:10px 14px;}
+.stat-lbl{font-size:8px;letter-spacing:.1em;color:#505090;text-transform:uppercase;margin-bottom:3px;}
+.stat-val{font-size:15px;font-weight:800;color:#f5a000;line-height:1;}
+.stat-unit{font-size:9px;font-weight:400;color:#8080b0;}
+
+/* progress */
+#prog-wrap{flex-shrink:0;padding:8px 14px;border-bottom:1px solid #1e1e40;display:none;}
+.prog-lbl{font-size:10px;color:#a0a0d0;margin-bottom:5px;}
+.prog-bar-bg{background:#1c1c3a;border-radius:4px;height:5px;overflow:hidden;}
+.prog-bar-fill{background:#f5a000;height:100%;border-radius:4px;transition:width .3s;width:0%;}
+
+/* trip list */
+#trip-list{flex:1;overflow-y:auto;padding:5px 0;}
+#trip-list::-webkit-scrollbar{width:3px;}
+#trip-list::-webkit-scrollbar-thumb{background:#28285a;border-radius:2px;}
+
+.t-row{display:flex;align-items:flex-start;gap:9px;padding:7px 13px;
+  cursor:pointer;border-left:2px solid transparent;transition:background .1s,border-color .1s;}
+.t-row:hover{background:#161640;border-left-color:#f5a00044;}
+.t-row.active{background:#1c1c50;border-left-color:#f5a000;}
+.t-row.no-map{opacity:.35;cursor:default;}
+.t-row.no-map:hover{background:transparent;border-left-color:transparent;}
+.t-num{width:22px;height:22px;min-width:22px;background:#f5a000;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:900;color:#000;margin-top:1px;flex-shrink:0;}
+.t-row.active .t-num{background:#fff;}
+.t-row.no-map .t-num{background:#252555;color:#505080;}
+.t-body{flex:1;min-width:0;}
+.t-loc{font-size:10.5px;color:#c0c2e8;line-height:1.5;}
+.t-from,.t-to{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.t-arr{font-size:8px;color:#f5a00040;}
+.t-meta{display:flex;gap:7px;align-items:center;margin-top:2px;}
+.t-fare{font-size:11.5px;font-weight:800;color:#f5a000;}
+.t-time{font-size:9.5px;color:#505080;}
+.t-tag{font-size:9px;color:#505080;}
+.t-sep{height:1px;background:#161640;margin:0 13px;}
+
+#status-bar{flex-shrink:0;padding:6px 14px;font-size:10px;color:#6060a0;
+  border-top:1px solid #1e1e40;line-height:1.6;}
+#status-bar.ok{color:#50b080;}
+#status-bar.ng{color:#c06040;}
+
+#map-wrap{flex:1;position:relative;}
+#map{width:100%;height:100%;background:#07071a;}
+#loading{position:absolute;inset:0;background:#07071a;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:13px;z-index:1000;}
+.spin{width:30px;height:30px;border:2.5px solid #28285a;border-top-color:#f5a000;
+  border-radius:50%;animation:spin .7s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.ld-main{font-size:12px;color:#5050a0;letter-spacing:.1em;}
+#ld-sub{font-size:9.5px;color:#333368;margin-top:3px;}
+#legend{position:absolute;bottom:20px;right:10px;background:rgba(7,7,26,.93);
+  border:1px solid #28285a;border-radius:8px;padding:9px 13px;z-index:500;
+  font-size:10px;color:#6060a0;backdrop-filter:blur(6px);display:none;}
+.lg-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.lg-row:last-child{margin-bottom:0;}
+.lg-c{width:17px;height:17px;background:#f5a000;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:900;color:#000;flex-shrink:0;}
+.lg-d{width:8px;height:8px;background:#888;border-radius:50%;flex-shrink:0;margin:0 4.5px;}
+.lg-l{width:20px;height:2px;background:#f5a000;opacity:.55;flex-shrink:0;}
+.leaflet-tooltip{background:#0c0c28 !important;border:1px solid #f5a00055 !important;
+  color:#d0d2f8 !important;font-size:10px !important;
+  font-family:'Hiragino Kaku Gothic ProN',sans-serif !important;
+  padding:4px 9px !important;border-radius:5px !important;
+  box-shadow:0 3px 10px rgba(0,0,0,.6) !important;}
+.leaflet-tooltip::before{display:none !important;}
+.leaflet-control-zoom a{background:#0f0f28 !important;color:#6060a0 !important;border-color:#28285a !important;}
+.leaflet-control-zoom a:hover{background:#1c1c50 !important;color:#f5a000 !important;}
+</style>
+</head>
+<body>
+<div id="sidebar">
+  <div class="s-head">
+    <div class="s-eye">Route Trace · 武三23区</div>
+    <div class="date-row">
+      <input type="date" id="date-input" value="2026-03-19">
+      <button id="load-btn" onclick="startLoad()">表示</button>
+    </div>
+    <div class="s-dow" id="s-dow">2026年3月19日（木）</div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-cell"><div class="stat-lbl">営収</div><div class="stat-val" id="st-fare">—</div></div>
+    <div class="stat-cell"><div class="stat-lbl">件数</div><div class="stat-val" id="st-cnt">—</div></div>
+    <div class="stat-cell"><div class="stat-lbl">¥5,000+</div><div class="stat-val" id="st-long">—</div></div>
+    <div class="stat-cell"><div class="stat-lbl">平均単価</div><div class="stat-val" id="st-avg">—</div></div>
+  </div>
+
+  <div id="prog-wrap">
+    <div class="prog-lbl" id="prog-lbl">住所を地図上に配置中...</div>
+    <div class="prog-bar-bg"><div class="prog-bar-fill" id="prog-fill"></div></div>
+  </div>
+
+  <div id="trip-list"></div>
+  <div id="status-bar">読み込み中...</div>
+</div>
+
+<div id="map-wrap">
+  <div id="map"></div>
+  <div id="loading">
+    <div class="spin"></div>
+    <div class="ld-main">データを読み込み中...</div>
+    <div id="ld-sub">初期化中</div>
+  </div>
+  <div id="legend">
+    <div class="lg-row"><div class="lg-c">1</div>乗車地点（番号順）</div>
+    <div class="lg-row"><div class="lg-d"></div>降車地点</div>
+    <div class="lg-row"><div class="lg-l"></div>ルート（直線）</div>
+  </div>
+</div>
+
+<script>
+const URL_BD    = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+const URL_CHOME = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=1210114672&single=true&output=csv';
+
+// ─── Column names (fixed) ──────────────────────────
+const C_PW = '乗車地：市区', C_PT = '乗車地：地名';
+const C_DW = '降車地：市区', C_DT = '降車地：地名';
+const C_FARE = '料金', C_TIME = '乗車時間';
+
+// ─── State ────────────────────────────────────────
+let leafMap, chomeSet = new Set(), csvCache = null;
+let tripLayers = [], activeN = null;
+const geocache = new Map();  // persistent: addr → {lat,lng} or null
+
+// ─── Map ──────────────────────────────────────────
+leafMap = L.map('map', {center:[35.68,139.71], zoom:12});
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+  {attribution:'© OpenStreetMap © CARTO', subdomains:'abcd', maxZoom:19}).addTo(leafMap);
+
+// ─── Helpers ──────────────────────────────────────
+function setSub(s){document.getElementById('ld-sub').textContent=s;}
+function showLoad(){document.getElementById('loading').style.display='flex';document.getElementById('legend').style.display='none';}
+function hideLoad(){document.getElementById('loading').style.display='none';document.getElementById('legend').style.display='block';}
+function setStatus(s,cls=''){const el=document.getElementById('status-bar');el.textContent=s;el.className=cls;}
+function showProg(v){document.getElementById('prog-wrap').style.display='block';document.getElementById('prog-fill').style.width=v+'%';}
+function setProgLbl(s){document.getElementById('prog-lbl').textContent=s;}
+function hideProg(){document.getElementById('prog-wrap').style.display='none';}
+
+// normalize address
+function na(s){
+  if(!s)return'';
+  return String(s).trim()
+    .replace(/[\s　\t\r\n]+/g,'')
+    .replace(/：/g,':').replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0))
+    .replace(/一丁目/g,'1丁目').replace(/二丁目/g,'2丁目').replace(/三丁目/g,'3丁目')
+    .replace(/四丁目/g,'4丁目').replace(/五丁目/g,'5丁目').replace(/六丁目/g,'6丁目')
+    .replace(/七丁目/g,'7丁目').replace(/八丁目/g,'8丁目').replace(/九丁目/g,'9丁目');
+}
+function stripSono(s){return String(s||'').replace(/^その他/,'');}
+function resolveCol(keys,want){
+  if(keys.includes(want))return want;
+  const w2=want.replace(/：/g,':'),w3=want.replace(/:/g,'：');
+  return keys.find(k=>k===w2||k===w3||na(k)===na(want))||null;
+}
+
+// ─── CSV fetch ────────────────────────────────────
+async function fetchCSV(url,noHeader=false){
+  const r=await fetch(url);
+  if(!r.ok)throw new Error('HTTP '+r.status);
+  const t=await r.text();
+  if(noHeader){
+    return Papa.parse(t,{header:false,skipEmptyLines:true}).data;
+  }
+  return Papa.parse(t,{header:true,skipEmptyLines:true,dynamicTyping:false,
+    transformHeader:h=>h.trim().replace(/^\uFEFF/,'')}).data;
+}
+
+// ─── Build chome set (address name list) ──────────
+function buildChomeSet(rows2d){
+  // rows2d is string[][] — each cell may be a 丁名
+  const s=new Set();
+  rows2d.forEach(row=>row.forEach(cell=>{
+    const v=String(cell||'').trim();
+    if(v.length>3)s.add(na(v));
+  }));
+  return s;
+}
+
+// Find best matching standard 丁名 for a given address
+function canonicalize(addr){
+  const n=na(addr);
+  if(chomeSet.has(n))return addr;
+  const s=na(stripSono(addr));
+  if(chomeSet.has(s))return stripSono(addr);
+  return stripSono(addr)||addr; // best effort
+}
+
+// ─── Geocoding via 国土地理院API ──────────────────
+async function geocodeGSI(addr){
+  const key=na(addr);
+  if(geocache.has(key))return geocache.get(key);
+
+  const query=addr+(addr.match(/[都道府県]/)?' ':' 東京都');
+  const url=`https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(query)}`;
+  try{
+    const res=await fetch(url);
+    const data=await res.json();
+    if(data&&data.length>0){
+      const[lng,lat]=data[0].geometry.coordinates;
+      // Sanity: must be in greater Tokyo area
+      if(lat>35.4&&lat<35.95&&lng>138.9&&lng<140.2){
+        const c={lat,lng};
+        geocache.set(key,c);
+        return c;
+      }
+    }
+  }catch(e){}
+  geocache.set(key,null);
+  return null;
+}
+
+// Geocode all unique addresses with rate limiting + progress
+async function geocodeAll(addrs){
+  const todo=addrs.filter(a=>!geocache.has(na(a)));
+  if(!todo.length)return;
+  document.getElementById('prog-wrap').style.display='block';
+  for(let i=0;i<todo.length;i++){
+    setProgLbl(`住所を地図に配置中… ${i+1}/${todo.length}件`);
+    showProg(Math.round((i+1)/todo.length*100));
+    await geocodeGSI(todo[i]);
+    if(i<todo.length-1)await new Promise(r=>setTimeout(r,220)); // 約200ms間隔
+  }
+  hideProg();
+}
+
+// ─── Date match ───────────────────────────────────
+function matchDate(row,y,m,d){
+  const s=Object.values(row).map(v=>String(v||'')).join(' ');
+  const m2=String(m).padStart(2,'0'),d2=String(d).padStart(2,'0');
+  const ry=y-2018;
+  const pats=[
+    `${y}/${m}/${d}`,`${y}/${m2}/${d2}`,`${y}-${m2}-${d2}`,`${y}年${m}月${d}日`,
+    `R${ry}/${m}/${d}`,`R${ry}.${m}.${d}`,`令和${ry}年${m}月${d}日`,
+  ];
+  if(pats.some(p=>s.includes(p)))return true;
+  if(!/20\d\d|R\d|令和/.test(s))return[`${m}/${d}`,`${m}月${d}`].some(p=>s.includes(p));
+  return false;
+}
+
+// ─── Icons ────────────────────────────────────────
+function iconP(n,act){
+  const bg=act?'#fff':'#f5a000';
+  const sh=act?'0 0 0 2px #f5a000,0 2px 8px rgba(0,0,0,.7)':'0 0 0 1.5px #000,0 2px 6px rgba(0,0,0,.6)';
+  return L.divIcon({html:`<div style="width:22px;height:22px;background:${bg};border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#000;font-family:sans-serif;box-shadow:${sh};">${n}</div>`,className:'',iconSize:[22,22],iconAnchor:[11,11]});
+}
+function iconD(act){return L.divIcon({html:`<div style="width:9px;height:9px;background:${act?'#f5a000':'#8888c0'};border-radius:50%;border:1.5px solid ${act?'#f5a000':'#222'};box-shadow:0 1px 4px rgba(0,0,0,.5);"></div>`,className:'',iconSize:[9,9],iconAnchor:[4,4]});}
+
+function setActive(n){
+  if(activeN!==null){
+    document.getElementById('tr-'+activeN)?.classList.remove('active');
+    const p=tripLayers.find(l=>l.n===activeN);
+    if(p){p.line.setStyle({color:'#f5a000',weight:1.5,opacity:.5});p.pm.setIcon(iconP(activeN,false));p.dm.setIcon(iconD(false));}
+  }
+  activeN=n;
+  const el=document.getElementById('tr-'+n);
+  if(el){el.classList.add('active');el.scrollIntoView({behavior:'smooth',block:'nearest'});}
+  const c=tripLayers.find(l=>l.n===n);
+  if(c){c.line.setStyle({color:'#fff',weight:3,opacity:.9});c.line.bringToFront();c.pm.setIcon(iconP(n,true));c.dm.setIcon(iconD(true));leafMap.panTo(c.pm.getLatLng(),{animate:true,duration:.4});}
+}
+function clearMap(){tripLayers.forEach(l=>{l.line.remove();l.pm.remove();l.dm.remove();});tripLayers=[];activeN=null;document.getElementById('trip-list').innerHTML='';}
+
+const DOW=['日','月','火','水','木','金','土'];
+function dowLabel(s){const[y,m,d]=s.split('-').map(Number);return`${y}年${m}月${d}日（${DOW[new Date(y,m-1,d).getDay()]}）`;}
+function pf(n){return n?'¥'+n.toLocaleString():'—';}
+function sl(s,n=14){if(!s||s==='')return'—';return s.length>n?s.slice(0,n)+'…':s;}
+function pfare(v){return parseInt(String(v||'').replace(/[^0-9]/g,''))||0;}
+
+// ─── MAIN ────────────────────────────────────────
+async function startLoad(){
+  clearMap();
+  showLoad();
+  hideProg();
+
+  const dateStr=document.getElementById('date-input').value;
+  const[y,m,d]=dateStr.split('-').map(Number);
+  document.getElementById('s-dow').textContent=dowLabel(dateStr);
+
+  try{
+    // 1. 丁名リスト（住所名のみ、緯度経度なし）
+    if(chomeSet.size===0){
+      setSub('丁名リストを取得中...');
+      const raw=await fetchCSV(URL_CHOME,true); // header:false → 2D array
+      chomeSet=buildChomeSet(raw);
+      setSub(`丁名リスト: ${chomeSet.size}件`);
+    }
+
+    // 2. 日報詳細
+    if(!csvCache){
+      setSub('日報詳細を取得中...');
+      csvCache=await fetchCSV(URL_BD);
+    }
+    if(!csvCache.length)throw new Error('日報詳細CSVが空');
+
+    const keys=Object.keys(csvCache[0]);
+    const cpw=resolveCol(keys,C_PW),cpt=resolveCol(keys,C_PT);
+    const cdw=resolveCol(keys,C_DW),cdt=resolveCol(keys,C_DT);
+    const cfr=resolveCol(keys,C_FARE),ctm=resolveCol(keys,C_TIME);
+
+    // 3. 日付フィルタ
+    setSub(`${y}/${m}/${d} を抽出中...`);
+    const dayRows=csvCache.filter(r=>matchDate(r,y,m,d));
+    if(!dayRows.length){
+      const samp=[...new Set(csvCache.slice(0,30).flatMap(r=>Object.values(r)).filter(v=>/\d\/\d|\d年/.test(String(v))))].slice(0,5);
+      throw new Error(`${y}/${m}/${d} のデータなし。日付例: ${samp.join(' / ')}`);
+    }
+
+    // 4. トリップ構築
+    const trips=dayRows.map((row,i)=>{
+      const pw=cpw?String(row[cpw]||'').trim():'';
+      const pt=cpt?String(row[cpt]||'').trim():'';
+      const dw=cdw?String(row[cdw]||'').trim():'';
+      const dt=cdt?String(row[cdt]||'').trim():'';
+      const pickup=canonicalize(pw+pt);
+      const dropoff=canonicalize(dw+dt);
+      return{n:i+1,pickup,dropoff,
+        fare:pfare(cfr?row[cfr]:''),
+        time:ctm?String(row[ctm]||''):'',
+        pc:null,dc:null,ok:false};
+    });
+
+    // 5. ジオコーディング（国土地理院API）
+    setSub('住所を地図上に配置中...');
+    const uniqAddrs=[...new Set(trips.flatMap(t=>[t.pickup,t.dropoff]).filter(Boolean))];
+    await geocodeAll(uniqAddrs);
+
+    // 6. 座標を割り当て
+    trips.forEach(t=>{
+      t.pc=geocache.get(na(t.pickup))||null;
+      t.dc=geocache.get(na(t.dropoff))||null;
+      t.ok=!!(t.pc&&t.dc);
+    });
+
+    const matched=trips.filter(t=>t.ok).length;
+
+    // 7. 統計
+    const tot=trips.reduce((s,t)=>s+t.fare,0);
+    const lng=trips.filter(t=>t.fare>=5000).length;
+    const avg=trips.length?Math.round(tot/trips.length):0;
+    document.getElementById('st-fare').innerHTML='¥'+tot.toLocaleString();
+    document.getElementById('st-cnt').innerHTML=trips.length+'<span class="stat-unit"> 件</span>';
+    document.getElementById('st-long').innerHTML=lng+'<span class="stat-unit"> 件</span>';
+    document.getElementById('st-avg').innerHTML='¥'+avg.toLocaleString();
+    setStatus(`地図にプロット: ${matched}/${trips.length}件`,matched>0?'ok':'ng');
+
+    // 8. トリップリスト
+    const list=document.getElementById('trip-list');
+    trips.forEach((t,i)=>{
+      if(i>0){const sep=document.createElement('div');sep.className='t-sep';list.appendChild(sep);}
+      const div=document.createElement('div');
+      div.className='t-row'+(t.ok?'':' no-map');
+      div.id='tr-'+t.n;
+      div.innerHTML=`<div class="t-num">${t.n}</div><div class="t-body"><div class="t-loc"><span class="t-from">${sl(t.pickup)}</span><span class="t-arr">↓</span><span class="t-to">${sl(t.dropoff)}</span></div><div class="t-meta"><div class="t-fare">${pf(t.fare)}</div>${t.time?`<div class="t-time">${t.time}</div>`:''}${!t.ok?'<div class="t-tag">未取得</div>':''}</div></div>`;
+      if(t.ok)div.addEventListener('click',()=>setActive(t.n));
+      list.appendChild(div);
+    });
+
+    // 9. 地図描画
+    const bounds=[];
+    trips.filter(t=>t.ok).forEach(t=>{
+      const line=L.polyline([[t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]],{color:'#f5a000',weight:1.8,opacity:.55}).addTo(leafMap);
+      const pm=L.marker([t.pc.lat,t.pc.lng],{icon:iconP(t.n,false)}).addTo(leafMap).bindTooltip(`#${t.n} 乗：${t.pickup}`,{direction:'top'});
+      const dm=L.marker([t.dc.lat,t.dc.lng],{icon:iconD(false)}).addTo(leafMap).bindTooltip(`#${t.n} 降：${t.dropoff}`,{direction:'top'});
+      [line,pm,dm].forEach(el=>el.on('click',()=>setActive(t.n)));
+      tripLayers.push({n:t.n,line,pm,dm});
+      bounds.push([t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]);
+    });
+    if(bounds.length)leafMap.fitBounds(bounds,{padding:[50,50]});
+    hideLoad();
+
+  }catch(err){
+    document.getElementById('loading').innerHTML=`<div style="text-align:center;padding:24px"><div style="color:#c04040;font-size:13px;margin-bottom:8px">エラー</div><div style="color:#5050a0;font-size:11px;max-width:260px;line-height:1.8">${err.message}</div></div>`;
+    setStatus('エラー: '+err.message,'ng');
+  }
+}
+
+startLoad();
+</script>
+</body>
+</html>
