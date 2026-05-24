@@ -199,7 +199,7 @@ const DOW=['日','月','火','水','木','金','土'];
 const DOWMAP={'日':0,'月':1,'火':2,'水':3,'木':4,'金':5,'土':6};
 
 leafMap=L.map('map',{center:[35.68,139.71],zoom:12});
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
   {attribution:'© OpenStreetMap © CARTO',subdomains:'abcd',maxZoom:19}).addTo(leafMap);
 
 // ── utils ────────────────────────────────────────────
@@ -351,7 +351,7 @@ function setActive(n){
     document.getElementById('tr-'+activeN)?.classList.remove('active');
     const p=tripLayers.find(l=>l.n===activeN);
     if(p){
-      if(p.line)p.line.setStyle({color:'#f5a000',weight:2,opacity:showTrip ? 0.6 : 0});
+      if(p.line)p.line.setStyle({color:'#f5a000',weight:3,opacity:showTrip ? 0.75 : 0});
       if(p.pm)p.pm.setIcon(iconP(activeN,false));
       if(p.dm)p.dm.setIcon(iconD(false));
     }
@@ -427,6 +427,7 @@ function showDates(){
 async function loadRoute(dayInfo){
   document.getElementById('view-dates').className='';
   document.getElementById('view-route').className='active';
+  setTimeout(()=>leafMap.invalidateSize(),150);
   clearMap();
   document.getElementById('map-loading').style.display='flex';
 
@@ -495,14 +496,14 @@ async function loadRoute(dayInfo){
     for(let i=0;i<valid.length-1;i++){
       const a=valid[i],b=valid[i+1];
       const dl=L.polyline([[a.dc.lat,a.dc.lng],[b.pc.lat,b.pc.lng]],
-        {color:'#4488bb',weight:1.2,opacity:showDead ? 0.4 : 0,dashArray:'6 9'}).addTo(leafMap);
+        {color:'#4488bb',weight:1.5,opacity:showDead ? 0.45 : 0,dashArray:'6 9'}).addTo(leafMap);
       deadLayers.push(dl);
     }
     // Trip lines + markers
     const bounds=[];
     valid.forEach(t=>{
       const line=L.polyline([[t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]],
-        {color:'#f5a000',weight:2,opacity:showTrip ? 0.65 : 0}).addTo(leafMap);
+        {color:'#f5a000',weight:3,opacity:showTrip ? 0.75 : 0}).addTo(leafMap);
       const pm=L.marker([t.pc.lat,t.pc.lng],{icon:iconP(t.n,false)}).addTo(leafMap)
         .bindTooltip(`#${t.n} 乗：${t.pickup}`,{direction:'top'});
       const dm=L.marker([t.dc.lat,t.dc.lng],{icon:iconD(false)}).addTo(leafMap)
