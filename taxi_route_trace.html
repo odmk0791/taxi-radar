@@ -195,6 +195,8 @@ const C_TIME='乗車時間',C_FARE_B='料金',C_STATUS='ステータス',C_THX='
 let leafMap,coordMap=new Map(),bdCache=null,dailyCache=null;
 let tripLayers=[],deadLayers=[],activeN=null,showTrip=true,showDead=true;
 let allDays=[],currentFilter='all';
+// 武三23区外アドレスのジオコーディングキャッシュ（セッション持続）
+const apiGeoCache=new Map();
 const DOW=['日','月','火','水','木','金','土'];
 const DOWMAP={'日':0,'月':1,'火':2,'水':3,'木':4,'金':5,'土':6};
 
@@ -214,6 +216,32 @@ function na(s){
 function stripSono(s){return String(s||'').replace(/^その他/,'');}
 function stripPref(s){return s.replace(/^[\u4e00-\u9fa5]{2,3}[都道府県]/,'');}
 function stripWard(s){return s.replace(/^[\u4e00-\u9fa5]+[区市]/,'');}
+
+// ── Nominatim fallback (武三23区外・その他の住所) ──────
+// CSVにない住所をNominatimでジオコード。セッション中はキャッシュ使用
+async function geocodeFallback(addrs, onProgress){
+  const todo=addrs.filter(a=>a&&!apiGeoCache.has(a));
+  for(let i=0;i<todo.length;i++){
+    const addr=todo[i];
+    const q=stripSono(addr).trim(); // 「その他」を除去してから検索
+    if(q){
+      try{
+        const url=`https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=jp&q=${encodeURIComponent(q)}`;
+        const r=await fetch(url,{headers:{'Accept':'application/json','Accept-Language':'ja'}});
+        const d=await r.json();
+        if(d&&d[0]&&d[0].lat){
+          apiGeoCache.set(addr,{lat:parseFloat(d[0].lat),lng:parseFloat(d[0].lon)});
+        } else {
+          apiGeoCache.set(addr,null); // 見つからない場合もキャッシュ
+        }
+      }catch(e){apiGeoCache.set(addr,null);}
+    } else {
+      apiGeoCache.set(addr,null);
+    }
+    if(onProgress)onProgress(i+1,todo.length);
+    if(i<todo.length-1)await new Promise(r=>setTimeout(r,1100));
+  }
+}
 function parseFare(v){return parseInt(String(v||'').replace(/[^0-9]/g,''))||0;}
 function pf(n){return n?'¥'+n.toLocaleString():'—';}
 function sl(s,n=13){if(!s||!s.trim())return'—';return s.length>n?s.slice(0,n)+'…':s;}
@@ -449,9 +477,6 @@ async function loadRoute(dayInfo){
     const dayRows=bdCache.filter(r=>matchDate(r,y,mo,d));
     if(!dayRows.length)throw new Error(`${y}/${mo}/${d} のデータが見つかりません`);
 
-    // サンキュー列のデバッグ情報を収集
-    const thxSamples=cth?dayRows.slice(0,5).map(r=>String(r[cth]||'(空)')).join(','):null;
-
     const trips=dayRows.map((row,i)=>{
       const pw=cpw?String(row[cpw]||'').trim():'';
       const pt=cpt?String(row[cpt]||'').trim():'';
@@ -466,6 +491,22 @@ async function loadRoute(dayInfo){
         pc:null,dc:null,ok:false};
     });
     trips.forEach(t=>{t.pc=getCoords(t.pickup);t.dc=getCoords(t.dropoff);t.ok=!!(t.pc&&t.dc);});
+
+    // CSVにない住所（武三23区外・「その他」）をNominatim APIで補完
+    const unmatchedAddrs=[...new Set(
+      trips.filter(t=>!t.ok).flatMap(t=>[t.pickup,t.dropoff]).filter(a=>a&&!getCoords(a))
+    )];
+    if(unmatchedAddrs.length>0){
+      await geocodeFallback(unmatchedAddrs,(done,total)=>{
+        document.getElementById('map-sub').textContent=`武三23区外 ${done}/${total}件を取得中...`;
+      });
+      // キャッシュから座標を再反映
+      trips.forEach(t=>{
+        if(!t.pc&&apiGeoCache.get(t.pickup))t.pc=apiGeoCache.get(t.pickup);
+        if(!t.dc&&apiGeoCache.get(t.dropoff))t.dc=apiGeoCache.get(t.dropoff);
+        t.ok=!!(t.pc&&t.dc);
+      });
+    }
 
     const matched=trips.filter(t=>t.ok).length;
     const fareDisp=dailyFare||trips.reduce((s,t)=>s+t.fare,0);
@@ -518,8 +559,6 @@ async function loadRoute(dayInfo){
     const stBar=document.getElementById('status-bar');
     let stMsg=`プロット: ${matched}/${trips.length}件`;
     if(unm.length)stMsg+=` | 未取得: `+unm.slice(0,2).map(t=>sl(t.pickup,9)).join(',');
-    // サンキュー列デバッグ
-    if(thxSamples)stMsg+=` | サンキュー列値: ${thxSamples}`;
     stBar.textContent=stMsg;
     stBar.className=matched>0?'ok':'ng';
     document.getElementById('map-loading').style.display='none';
