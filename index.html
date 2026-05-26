@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0d1117">
+<title>Meet a Customer for TAXI Driver</title>
+<style>
+:root{--bg:#0d1117;--s:#161b22;--s2:#1c2230;--bd:#30363d;--g:#39d353;--gd:#1a4a2a;--am:#f0a500;--bl:#58a6ff;--re:#f85149;--tx:#e6edf3;--mu:#8b949e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:var(--bg);color:var(--tx);font-family:-apple-system,'Hiragino Sans',sans-serif;padding-bottom:env(safe-area-inset-bottom,16px)}
+#setup{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.88);display:flex;align-items:center;justify-content:center;padding:20px}
+#setup.hidden{display:none}
+.setup-box{background:var(--s);border:1px solid var(--bd);border-radius:16px;padding:20px;width:100%;max-width:420px}
+.setup-box h2{font-size:16px;margin-bottom:6px}
+.setup-box p{font-size:12px;color:var(--mu);margin-bottom:14px;line-height:1.7}
+.setup-box ol{font-size:12px;color:var(--mu);padding-left:18px;margin-bottom:14px;line-height:2.2}
+.setup-box ol b{color:var(--tx)}
+.url-input{width:100%;padding:10px 12px;background:var(--bg);border:1px solid var(--bd);border-radius:8px;color:var(--tx);font-size:12px;margin-bottom:10px;font-family:-apple-system,sans-serif}
+.url-input:focus{outline:none;border-color:var(--g)}
+.setup-save{width:100%;padding:12px;background:var(--g);color:#000;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;font-family:-apple-system,sans-serif}
+.setup-note{font-size:11px;color:var(--mu);text-align:center;margin-top:10px}
+#area-modal{position:fixed;inset:0;z-index:400;background:rgba(0,0,0,.8);display:flex;align-items:flex-end;justify-content:center}
+#area-modal.hidden{display:none}
+.area-sheet{background:var(--s);border-radius:16px 16px 0 0;padding:16px;width:100%;max-width:480px;padding-bottom:calc(env(safe-area-inset-bottom,0px) + 16px);max-height:70vh;overflow-y:auto}
+.area-sheet h3{font-size:13px;color:var(--mu);text-align:center;margin-bottom:12px}
+.area-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.area-btn{padding:10px 4px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;cursor:pointer;text-align:center}
+.area-btn:active{background:var(--gd);color:var(--g);border-color:rgba(57,211,83,.4)}
+.area-cancel{width:100%;padding:12px;border-radius:10px;border:1px solid var(--bd);background:none;color:var(--mu);font-family:-apple-system,sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-top:8px}
+.name-btn{display:block;width:100%;padding:11px 14px;border-radius:8px;border:none;background:var(--bg);color:var(--tx);font-family:-apple-system,sans-serif;font-size:13px;font-weight:500;cursor:pointer;text-align:left;border-bottom:1px solid var(--bd)}
+.name-btn:active{background:var(--gd);color:var(--g)}
+.area-search{width:100%;padding:10px 14px;background:var(--bg);border:1px solid var(--bd);border-radius:10px;color:var(--tx);font-size:14px;font-family:-apple-system,sans-serif;margin-bottom:12px;outline:none}
+.area-search:focus{border-color:var(--g)}
+.area-search::placeholder{color:var(--mu)}
+.hist-label{font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;margin-top:2px}
+.hist-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.hist-chip{padding:6px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:12px;font-weight:700;font-family:-apple-system,sans-serif;cursor:pointer;display:flex;align-items:center;gap:4px}
+.hist-chip:active{background:var(--gd);color:var(--g)}
+.search-results{max-height:280px;overflow-y:auto}
+.search-result-item{display:block;width:100%;padding:11px 14px;border-radius:8px;border:none;background:var(--bg);color:var(--tx);font-family:-apple-system,sans-serif;font-size:13px;cursor:pointer;text-align:left;border-bottom:1px solid var(--bd)}
+.search-result-item:active{background:var(--gd);color:var(--g)}
+.search-result-item .ward-tag{font-size:10px;color:var(--mu);margin-right:4px}
+.search-empty{padding:20px;text-align:center;color:var(--mu);font-size:13px}
+#hdr{position:sticky;top:0;z-index:100;background:rgba(13,17,23,.97);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0)}
+.hi{display:flex;align-items:center;gap:6px;padding:9px 12px}
+.logo{font-size:15px;font-weight:900;flex-shrink:0}.logo b{color:var(--am)}
+.hs{flex:1;min-width:0}
+.st{font-size:11px;color:var(--mu);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ck{font-size:13px;font-weight:700;color:var(--g);background:var(--gd);border:1px solid rgba(57,211,83,.3);border-radius:8px;padding:4px 8px;flex-shrink:0;text-align:center;font-family:ui-monospace,monospace}
+.cd{font-size:9px;color:rgba(57,211,83,.6);margin-top:1px}
+.hbtn{background:none;border:none;cursor:pointer;font-size:18px;padding:2px;flex-shrink:0}
+.notify-btn{font-size:11px;font-weight:700;font-family:-apple-system,sans-serif;padding:5px 8px;border-radius:8px;border:1px solid var(--bd);background:var(--s2);color:var(--mu);white-space:nowrap;cursor:pointer}
+main{padding:10px 12px}
+.data-bar{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:var(--s);border:1px solid var(--bd);border-radius:10px;margin-bottom:10px}
+.data-info{font-size:11px;color:var(--mu)}.data-info b{color:var(--g)}
+.refresh-btn{background:none;border:1px solid var(--bd);border-radius:6px;color:var(--bl);font-size:11px;font-weight:700;cursor:pointer;padding:4px 10px;font-family:-apple-system,sans-serif}
+.tab-row{display:flex;border-bottom:1px solid var(--bd);margin-bottom:10px}
+.tabBtn{flex:1;padding:8px 4px;font-size:13px;font-weight:700;font-family:-apple-system,sans-serif;color:var(--mu);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer}
+.tabBtn.on{color:var(--g);border-bottom-color:var(--g)}
+.gps-box{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:10px}
+.gps-top{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.loc-label{font-size:10px;color:var(--mu)}.loc-name{font-size:13px;font-weight:700;margin-top:2px}
+.btn-row{display:flex;gap:8px}
+.btn{flex:1;padding:11px 8px;border-radius:10px;border:none;font-family:-apple-system,sans-serif;font-size:13px;font-weight:700;cursor:pointer;text-align:center}
+.btn-g{background:var(--g);color:#000}.btn-g:disabled{background:var(--gd);color:var(--g)}
+.btn-b{background:var(--s2);color:var(--bl);border:1px solid var(--bd)!important}
+.err{display:none;background:rgba(248,81,73,.1);border:1px solid rgba(248,81,73,.4);border-radius:10px;padding:10px 12px;margin-top:8px;font-size:12px;color:var(--re);line-height:1.7;white-space:pre-line}
+.err.show{display:block}
+.err-btn{display:inline-block;margin-top:6px;padding:3px 10px;background:var(--re);color:#fff;border:none;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;font-family:-apple-system,sans-serif}
+.ctrl{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.cr{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.cl{font-size:11px;color:var(--mu);flex-shrink:0}
+.cv{font-size:13px;font-weight:700;color:var(--am);flex-shrink:0;min-width:32px;text-align:right}
+input[type=range]{flex:1;height:4px;-webkit-appearance:none;outline:none;border-radius:2px;background:linear-gradient(to right,var(--g) 0%,var(--g) var(--p,0%),var(--bd) var(--p,0%))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--g);cursor:pointer}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;padding:7px 14px;border-radius:20px;font-size:12px;font-weight:700;font-family:-apple-system,sans-serif;border:1px solid var(--bd);background:var(--bg);color:var(--mu);cursor:pointer;flex-shrink:0}
+.chip.on{background:var(--g);color:#000;border-color:var(--g)}
+.wx-bar{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--s);border:1px solid var(--bd);border-radius:10px;margin-bottom:10px}
+.wx-icon{font-size:20px;flex-shrink:0}
+.wx-temp{font-size:13px;font-weight:700}.wx-desc{font-size:11px;color:var(--mu);margin-top:1px}
+.wx-rain{font-size:11px;font-weight:700;color:var(--bl);flex-shrink:0;background:rgba(88,166,255,.12);padding:3px 8px;border-radius:20px}
+.wx-rain.heavy{color:var(--re);background:rgba(248,81,73,.12)}
+.filter-sect{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.filter-label{font-size:10px;color:var(--mu);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.frow{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+.frow:last-child{margin-bottom:0}
+.fbtn{padding:6px 11px;border-radius:20px;border:1px solid var(--bd);background:var(--bg);color:var(--mu);font-family:-apple-system,sans-serif;font-size:11px;font-weight:700;cursor:pointer;flex-shrink:0}
+.fbtn.on-all{background:var(--gd);color:var(--g);border-color:rgba(57,211,83,.4)}
+.fbtn.on-go{background:rgba(57,211,83,.15);color:#39d353;border-color:#39d353}
+.fbtn.on-sm{background:rgba(88,166,255,.15);color:#58a6ff;border-color:#58a6ff}
+.fbtn.on-na{background:rgba(240,165,0,.15);color:#f0a500;border-color:#f0a500}
+.fbtn.on-fare{background:rgba(248,81,73,.15);color:#f85149;border-color:#f85149}
+.fbtn.on-sk{background:rgba(161,139,250,.15);color:#a78bfa;border-color:#a78bfa}
+.sec{font-size:11px;color:var(--mu);margin-bottom:8px;display:flex;align-items:center;gap:6px;text-transform:uppercase;letter-spacing:.06em}
+.sec::after{content:'';flex:1;height:1px;background:var(--bd)}
+.card{display:flex;align-items:center;gap:10px;background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer}
+.card:active{opacity:.7}
+.rank{font-size:14px;font-weight:900;width:24px;text-align:center;flex-shrink:0}
+.r1{color:var(--am)}.r2{color:#94a3b8}.r3{color:#cd7f32}.rn{color:var(--mu)}
+.cb{flex:1;min-width:0}
+.cn{font-size:15px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-bottom:3px}
+.badges{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px}
+.badge{font-size:9px;padding:2px 6px;border-radius:10px;font-weight:700}
+.bg{background:rgba(57,211,83,.15);color:#39d353}
+.bs{background:rgba(88,166,255,.15);color:#58a6ff}
+.bn{background:rgba(240,165,0,.15);color:#f0a500}
+.tags{display:flex;gap:6px}
+.tag{font-size:10px;padding:2px 8px;border-radius:20px;font-weight:700}
+.td{background:rgba(88,166,255,.12);color:var(--bl)}
+.tc{background:rgba(57,211,83,.12);color:var(--g)}
+.bar{height:3px;background:var(--bd);border-radius:2px;margin-top:5px}
+.barf{height:3px;border-radius:2px;background:linear-gradient(to right,var(--g),var(--am))}
+.carr{font-size:18px;color:var(--mu);flex-shrink:0}
+.empty{padding:28px 0;text-align:center;color:var(--mu)}
+.empty span{font-size:36px;display:block;margin-bottom:8px}
+.empty p{font-size:13px;line-height:1.7}
+.loading{padding:24px;text-align:center;color:var(--mu);font-size:13px}
+.spin{display:inline-block;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.area{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.ah{display:flex;align-items:center;gap:7px;margin-bottom:7px}
+.adot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.an{font-size:13px;font-weight:700}.ac{font-size:11px;color:var(--mu);margin-left:auto}
+.aps{display:flex;flex-wrap:wrap;gap:4px}
+.pill{font-size:10px;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.05);color:var(--tx);border:1px solid var(--bd)}
+</style>
+</head>
+<body>
+<div id="setup">
+  <div class="setup-box">
+    <h2>📊 Google スプレッドシート連携</h2>
+    <p>スプレッドシートをウェブ公開してURLを貼り付けると、データが自動更新されます。</p>
+    <ol>
+      <li>スプレッドシートを開く</li>
+      <li><b>ファイル → 共有 → ウェブに公開</b></li>
+      <li><b>「カンマ区切り形式(.csv)」</b>を選択</li>
+      <li><b>「公開」</b>をクリックしてURLをコピー</li>
+    </ol>
+    <input class="url-input" id="sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/e/..." />
+    <button class="setup-save" id="setup-save" onclick="doSaveSetup()">保存してデータを読み込む</button>
+    <p class="setup-note">URLはブラウザ内のみに保存されます。<br><span style="color:#30363d">v2025-05-20</span></p><button onclick="clearGeoCache()" style="width:100%;margin-top:8px;padding:8px;background:none;border:1px solid var(--bd);border-radius:8px;color:var(--mu);font-family:-apple-system,sans-serif;font-size:11px;cursor:pointer">🗑️ 座標キャッシュをクリア</button>
+<button onclick="diagAddr()" style="width:100%;margin-top:8px;padding:8px;background:none;border:1px solid rgba(88,166,255,.4);border-radius:8px;color:var(--bl);font-family:-apple-system,sans-serif;font-size:11px;cursor:pointer">🔍 住所診断（誤入力チェック）</button>
+<div id="diag-result" style="display:none;margin-top:10px;background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:10px;font-size:11px;max-height:200px;overflow-y:auto;line-height:2"></div>
+  </div>
+</div>
+<div id="area-modal" class="hidden">
+  <div class="area-sheet">
+    <input class="area-search" id="area-search-input" type="search" placeholder="🔍 住所を検索（例：六本木、三軒茶屋）" autocomplete="off">
+    <div id="area-search-results" style="display:none">
+      <div class="search-results" id="search-result-list"></div>
+    </div>
+    <div id="area-main-view">
+      <div id="area-history-section" style="display:none">
+        <div class="hist-label">🕐 最近使用</div>
+        <div class="hist-chips" id="hist-chips"></div>
+      </div>
+      <div id="area-step1">
+        <div class="hist-label">区・市を選択</div>
+        <div id="ward-grid" class="area-grid"></div>
+      </div>
+      <div id="area-step2" style="display:none">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+          <button onclick="backToStep1()" style="background:none;border:none;color:var(--bl);font-size:13px;cursor:pointer;padding:2px 6px;font-family:-apple-system,sans-serif">← 戻る</button>
+          <div id="step2-title" style="flex:1;font-size:13px;font-weight:700;color:var(--tx)"></div>
+        </div>
+        <div id="name-list"></div>
+      </div>
+    </div>
+    <button class="area-cancel" onclick="closeAreaModal()">キャンセル</button>
+  </div>
+</div>
+<div id="hdr">
+  <div class="hi">
+    <div class="logo">🚖 TAXI<b>▸</b>RADAR</div>
+    <div class="hs"><div class="st" id="st">読み込み中...</div></div>
+    <div class="ck"><div id="ck">--:--</div><div class="cd" id="cd">---</div></div>
+    <button class="notify-btn" id="notify-btn">🔕 通知OFF</button>
+    <button class="hbtn" id="open-setup">⚙️</button>
+  </div>
+</div>
+<main>
+  <div id="geo-status" style="display:none;font-size:11px;color:var(--mu);padding:4px 12px;text-align:center"></div>
+  <div class="data-bar" id="data-bar" style="display:none">
+    <div class="data-info">📊 <b id="rec-count">-</b>件 ｜ 更新: <span id="last-update">-</span></div>
+    <button class="refresh-btn" id="refresh-btn">🔄 更新</button>
+  </div>
+
+  <div class="tab-row">
+    <button class="tabBtn on" id="tab-r">🎯 近くのスポット</button>
+    <button class="tabBtn" id="tab-h">🔥 エリア別</button>
+  </div>
+  <div id="pg-r">
+    <div class="gps-box">
+      <div class="gps-top">
+        <span style="font-size:20px">📍</span>
+        <div><div class="loc-label">現在地</div><div class="loc-name" id="locname">未設定</div></div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-g" id="gpsbtn">📡 GPS取得</button>
+        <button class="btn btn-b" id="areabtn">🗺️ エリア選択</button>
+      </div>
+      <div class="err" id="errbox"><span id="errtxt"></span><br><button class="err-btn" id="errcls">閉じる</button></div>
+    </div>
+    <div class="ctrl">
+      <div class="cr">
+        <span class="cl">検索半径</span>
+        <input type="range" id="rs" min="1" max="5" value="1" style="--p:0%">
+        <span class="cv" id="rv">1km</span>
+      </div>
+      <div class="chips" id="tc">
+        <button class="chip on" data-o="0">今すぐ</button>
+        <button class="chip" data-o="1">+1h</button>
+        <button class="chip" data-o="2">+2h</button>
+        <button class="chip" data-o="3">+3h</button>
+        <button class="chip" data-o="-1">-1h</button>
+        <button class="chip" data-o="-2">-2h</button>
+      </div>
+    </div>
+    <div class="wx-bar" id="wx-bar" style="display:none">
+      <div class="wx-icon" id="wx-icon">🌤️</div>
+      <div style="flex:1"><div class="wx-temp" id="wx-temp">--°C</div><div class="wx-desc" id="wx-desc">-</div></div>
+      <div class="wx-rain" id="wx-rain" style="display:none"></div>
+      <div id="day-type-badge" style="font-size:10px;font-weight:700;flex-shrink:0;padding:3px 8px;border-radius:20px;background:rgba(88,166,255,.08);border:1px solid rgba(88,166,255,.3);color:var(--bl)"></div>
+      <div id="time-range-badge" style="font-size:10px;color:var(--mu);flex-shrink:0;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid var(--bd)"></div>
+    </div>
+    <div class="filter-sect">
+      <div class="filter-label">ステータス</div>
+      <div class="frow" id="fc-status">
+        <button class="fbtn on-all" data-ft="status" data-v="all">すべて</button>
+        <button class="fbtn" data-ft="status" data-v="GO">🟢 GO</button>
+        <button class="fbtn" data-ft="status" data-v="スマ配">📱 スマ配</button>
+        <button class="fbtn" data-ft="status" data-v="流し">🚕 流し</button>
+      </div>
+      <div class="filter-label">料金</div>
+      <div class="frow" id="fc-fare">
+        <button class="fbtn on-all" data-ft="fare" data-v="all">すべて</button>
+        <button class="fbtn" data-ft="fare" data-v="0">¥2,999以下</button>
+        <button class="fbtn" data-ft="fare" data-v="1">¥3,000〜4,999</button>
+        <button class="fbtn" data-ft="fare" data-v="2">¥5,000〜9,999</button>
+        <button class="fbtn" data-ft="fare" data-v="3">¥10,000以上</button>
+      </div>
+      <div class="filter-label">サンキュー</div>
+      <div class="frow" id="fc-sk">
+        <button class="fbtn on-all" data-ft="sk" data-v="all">すべて</button>
+        <button class="fbtn" data-ft="sk" data-v="sk_only">🎫 サンキューのみ</button>
+        <button class="fbtn" data-ft="sk" data-v="normal_sk">通常＋サンキュー</button>
+        <button class="fbtn" data-ft="sk" data-v="normal_sk_pt">通常＋サンキュー＋プレタク</button>
+        <button class="fbtn" data-ft="sk" data-v="ptP_only">⭐ プレタクPのみ</button>
+      </div>
+    </div>
+    <div class="sec">近くのスポット</div>
+    <div id="rl"><div class="loading"><span class="spin">⏳</span> 読み込み中...</div></div>
+  </div>
+  <div id="pg-h" style="display:none">
+    <div class="chips" id="dc" style="margin-bottom:10px">
+      <button class="chip on" data-d="today">今日</button>
+      <button class="chip" data-d="月">月</button>
+      <button class="chip" data-d="火">火</button>
+      <button class="chip" data-d="水">水</button>
+      <button class="chip" data-d="木">木</button>
+      <button class="chip" data-d="金">金</button>
+      <button class="chip" data-d="土">土</button>
+      <button class="chip" data-d="日">日</button>
+    </div>
+    <div class="sec">エリア別ランキング</div>
+    <div id="hl"><div class="loading"><span class="spin">⏳</span> 読み込み中...</div></div>
+  </div>
+</main>
+<script>
+var COORDS={};
+var WARD={
+'港区':[35.6581,139.7514],'渋谷区':[35.6637,139.7033],'新宿区':[35.6896,139.6997],
+'品川区':[35.6094,139.7302],'目黒区':[35.6404,139.6987],'大田区':[35.5613,139.7157],
+'世田谷区':[35.6465,139.6537],'中央区':[35.6703,139.7727],'千代田区':[35.694,139.7536],
+'台東区':[35.7126,139.7779],'墨田区':[35.7104,139.8014],'江東区':[35.6734,139.8174],
+'足立区':[35.7754,139.8044],'葛飾区':[35.7444,139.8473],'北区':[35.7528,139.7336],
+'板橋区':[35.7508,139.7094],'練馬区':[35.7357,139.6522],'豊島区':[35.7295,139.7186],
+'中野区':[35.7073,139.6636],'杉並区':[35.6994,139.6366],'三鷹市':[35.6836,139.5597],
+'武蔵野市':[35.7074,139.5659],'調布市':[35.6514,139.5438]
+};
+
+// 羽田空港特殊マッピング
+var SPECIAL={
+  '大田区羽田空港T1':{lat:35.5485,lng:139.7849,nav:'羽田空港第一ターミナル',label:'羽田空港T1'},
+  '大田区羽田空港T2':{lat:35.5517,lng:139.7877,nav:'羽田空港第二ターミナル',label:'羽田空港T2'},
+  '大田区羽田空港T3':{lat:35.5451,lng:139.7679,nav:'羽田空港第三ターミナル',label:'羽田空港T3'}
+};
+// ブラウザ側ジオコーディングキャッシュ
+var GEOCACHE={};
+// 座標スプレッドシートのURL
+var COORDS_CSV_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=657495537&single=true&output=csv';
+var COORDS_CACHE_KEY='taxiradar_coords_v1';
+
+function loadCoordsCSV(onDone){
+  // キャッシュから即時適用
+  try{
+    var cached=localStorage.getItem(COORDS_CACHE_KEY);
+    if(cached){
+      COORDS=JSON.parse(cached);
+      if(onDone)onDone(true);
+    }
+  }catch(e){}
+  // バックグラウンドで最新取得
+  fetch(COORDS_CSV_URL)
+    .then(function(r){return r.text();})
+    .then(function(text){
+      var lines=text.replace(/^\uFEFF/,'').split(/\r?\n/);
+      var newCoords={};
+      for(var i=1;i<lines.length;i++){
+        var cols=lines[i].split(',');
+        if(cols.length<3)continue;
+        var addr=cols[0].trim();
+        var lat=parseFloat(cols[1]);
+        var lng=parseFloat(cols[2]);
+        if(addr&&!isNaN(lat)&&!isNaN(lng)){
+          newCoords[addr]=[Math.round(lat*10000)/10000,Math.round(lng*10000)/10000];
+        }
+      }
+      if(Object.keys(newCoords).length>100){
+        COORDS=newCoords;
+        try{localStorage.setItem(COORDS_CACHE_KEY,JSON.stringify(COORDS));}catch(e){}
+        if(onDone)onDone(false);
+        // 座標更新後に再描画
+        if(uLat)renderRadar();
+      }
+    })
+    .catch(function(e){
+      console.warn('座標CSV読み込み失敗:',e);
+    });
+}
+try{var _gc=localStorage.getItem('taxiradar_geocache');if(_gc)GEOCACHE=JSON.parse(_gc);}catch(e){}
+function getCoords(w,n){
+  var k=w+n;
+  var sp=SPECIAL[k];if(sp)return[sp.lat,sp.lng];
+  if(COORDS[k])return COORDS[k];
+  if(GEOCACHE[k])return GEOCACHE[k];
+  return WARD[w]||[35.6762,139.6503];
+}
+// ジオコーディングキュー
+var _geoQ=[],_geoRunning=false,_geoTotal=0;
+function queueGeocode(w,n){
+  var k=w+n;
+  if(!SPECIAL[k]&&!COORDS[k]&&!GEOCACHE[k]&&_geoQ.indexOf(k)<0)_geoQ.push(k);
+}
+function startGeocoding(){
+  if(_geoRunning||_geoQ.length===0)return;
+  _geoTotal=_geoQ.length;
+  _geoRunning=true;
+  _processNext();
+}
+function _processNext(){
+  _updateGeoStatus();
+  if(_geoQ.length===0){_geoRunning=false;_updateGeoStatus();return;}
+  var key=_geoQ.shift();
+  fetch('https://msearch.gsi.go.jp/address-search/AddressSearch?q='+encodeURIComponent('東京都'+key))
+    .then(function(r){return r.json();})
+    .then(function(data){
+      if(data&&data.length>0){
+        var c=data[0].geometry.coordinates;
+        GEOCACHE[key]=[Math.round(c[1]*10000)/10000,Math.round(c[0]*10000)/10000];
+        try{localStorage.setItem('taxiradar_geocache',JSON.stringify(GEOCACHE));}catch(e){}
+      }
+    }).catch(function(){})
+    .then(function(){setTimeout(_processNext,650);});
+}
+function _updateGeoStatus(){
+  var el=document.getElementById('geo-status');
+  if(!el)return;
+  if(_geoQ.length>0){
+    el.style.display='block';
+    el.textContent='📍 座標取得中 '+(_geoTotal-_geoQ.length)+'/'+_geoTotal+'件';
+  }else{
+    el.style.display='none';
+  }
+}
+
+
+// ============================================================
+// 日タイプ判定（4分類）
+// 平日 / 祝前日型 / 土曜型（休日昼型） / 休日（日曜・祝日）
+// ============================================================
+var JP_HOLIDAYS = new Set([
+  // 2023年
+  '2023/1/1','2023/1/2','2023/1/9','2023/2/11','2023/2/23',
+  '2023/3/21','2023/4/29','2023/5/3','2023/5/4','2023/5/5',
+  '2023/7/17','2023/8/11','2023/9/18','2023/9/23',
+  '2023/10/9','2023/11/3','2023/11/23',
+  // 2024年
+  '2024/1/1','2024/1/8','2024/2/11','2024/2/12','2024/2/23',
+  '2024/3/20','2024/4/29','2024/5/3','2024/5/4','2024/5/5',
+  '2024/5/6','2024/7/15','2024/8/11','2024/8/12','2024/9/16',
+  '2024/9/22','2024/9/23','2024/10/14','2024/11/3','2024/11/4',
+  '2024/11/23',
+  // 2025年
+  '2025/1/1','2025/1/13','2025/2/11','2025/2/23','2025/2/24',
+  '2025/3/20','2025/4/29','2025/5/3','2025/5/4','2025/5/5',
+  '2025/5/6','2025/7/21','2025/8/11','2025/9/15','2025/9/23',
+  '2025/10/13','2025/11/3','2025/11/23','2025/11/24',
+  // 2026年
+  '2026/1/1','2026/1/12','2026/2/11','2026/2/23','2026/3/20',
+  '2026/4/29','2026/5/3','2026/5/4','2026/5/5','2026/5/6',
+  '2026/7/20','2026/8/11','2026/9/21','2026/9/23','2026/10/12',
+  '2026/11/3','2026/11/23'
+]);
+
+function isJPHoliday(y, m, d) {
+  return JP_HOLIDAYS.has(y+'/'+m+'/'+d);
+}
+
+function calcDayType(y, m, d) {
+  var dt = new Date(y, m-1, d);
+  var dow = dt.getDay(); // 0=日, 6=土
+  // 休日（日曜・祝日）
+  if (dow === 0 || isJPHoliday(y, m, d)) return 'holiday';
+  // 土曜（休日昼型）
+  if (dow === 6) return 'saturday';
+  // 翌日チェック（祝前日型）
+  var t = new Date(y, m-1, d+1);
+  var ty=t.getFullYear(), tm=t.getMonth()+1, td=t.getDate(), tdow=t.getDay();
+  if (tdow === 0 || tdow === 6 || isJPHoliday(ty,tm,td)) return 'pre-holiday';
+  // 平日
+  return 'weekday';
+}
+
+function getTodayDayType() {
+  var n = new Date();
+  return calcDayType(n.getFullYear(), n.getMonth()+1, n.getDate());
+}
+
+var DAY_TYPE_LABEL = {
+  'weekday':     '☀️ 平日',
+  'pre-holiday': '🌙 祝前日',
+  'saturday':    '🌟 土曜',
+  'holiday':     '🎌 休日'
+};
+var DAY_TYPE_COLOR = {
+  'weekday':     '#58a6ff',
+  'pre-holiday': '#f0a500',
+  'saturday':    '#a78bfa',
+  'holiday':     '#39d353'
+};
+
+var D=null;
+var DAYS=['日','月','火','水','木','金','土'];
+var PC=['#f0a500','#94a3b8','#cd7f32','#39d353','#58a6ff','#a78bfa','#f87171','#22d3ee'];
+var WARD_AREAS={"千代田区":["丸の内一丁目","丸の内二丁目","丸の内三丁目","大手町一丁目","大手町二丁目","内幸町一丁目","内幸町二丁目","有楽町一丁目","有楽町二丁目","霞が関一丁目","霞が関二丁目","霞が関三丁目","永田町一丁目","永田町二丁目","隼町","平河町一丁目","平河町二丁目","麹町一丁目","麹町二丁目","麹町三丁目","麹町四丁目","麹町五丁目","麹町六丁目","紀尾井町","皇居外苑","日比谷公園","千代田","北の丸公園","九段南一丁目","九段南二丁目","九段南三丁目","九段南四丁目","九段北一丁目","九段北二丁目","九段北三丁目","九段北四丁目","富士見一丁目","富士見二丁目","飯田橋一丁目","飯田橋二丁目","飯田橋三丁目","飯田橋四丁目","一ツ橋一丁目","一ツ橋二丁目","神田神保町一丁目","神田神保町二丁目","神田神保町三丁目","神田三崎町一丁目","神田三崎町二丁目","神田三崎町三丁目","西神田一丁目","西神田二丁目","西神田三丁目","神田猿楽町一丁目","神田猿楽町二丁目","神田駿河台一丁目","神田駿河台二丁目","神田駿河台三丁目","神田駿河台四丁目","神田錦町一丁目","神田錦町二丁目","神田錦町三丁目","神田小川町一丁目","神田小川町二丁目","神田小川町三丁目","神田美土代町","内神田一丁目","内神田二丁目","内神田三丁目","神田司町","神田多町","神田淡路町一丁目","神田淡路町二丁目","神田須田町一丁目","神田須田町二丁目","外神田一丁目","外神田二丁目","外神田三丁目","外神田四丁目","外神田五丁目","外神田六丁目","鍛冶町一丁目","鍛冶町二丁目","神田鍛冶町","神田紺屋町","神田北乗物町","神田富山町","神田美倉町","岩本町一丁目","岩本町二丁目","岩本町三丁目","神田西福田町","神田東松下町","神田東紺屋町","神田岩本町","東神田一丁目","東神田二丁目","東神田三丁目","神田和泉町","神田佐久間町一丁目","神田佐久間町二丁目","神田佐久間町三丁目","神田佐久間町四丁目","神田平河町","神田松永町","神田花岡町","神田佐久間河岸","神田練塀町","神田相生町","一番町","二番町","三番町","四番町","五番町","六番町"],"中央区":["八重洲一丁目","八重洲二丁目","京橋一丁目","京橋二丁目","京橋三丁目","銀座一丁目","銀座二丁目","銀座三丁目","銀座四丁目","銀座五丁目","銀座六丁目","銀座七丁目","銀座八丁目","新富一丁目","新富二丁目","入船一丁目","入船二丁目","入船三丁目","湊一丁目","湊二丁目","湊三丁目","明石町","築地一丁目","築地二丁目","築地三丁目","築地四丁目","築地五丁目","築地六丁目","築地七丁目","浜離宮庭園","八丁堀一丁目","八丁堀二丁目","八丁堀三丁目","八丁堀四丁目","新川一丁目","新川二丁目","日本橋本石町一丁目","日本橋本石町二丁目","日本橋本石町三丁目","日本橋本石町四丁目","日本橋室町一丁目","日本橋室町二丁目","日本橋室町三丁目","日本橋室町四丁目","日本橋本町一丁目","日本橋本町二丁目","日本橋本町三丁目","日本橋本町四丁目","日本橋小舟町","日本橋小伝馬町","日本橋大伝馬町","日本橋堀留町一丁目","日本橋堀留町二丁目","日本橋富沢町","日本橋人形町一丁目","日本橋人形町二丁目","日本橋人形町三丁目","日本橋小網町","日本橋蛎殻町一丁目","日本橋蛎殻町二丁目","日本橋箱崎町","日本橋馬喰町一丁目","日本橋馬喰町二丁目","日本橋横山町","東日本橋一丁目","東日本橋二丁目","東日本橋三丁目","日本橋久松町","日本橋浜町一丁目","日本橋浜町二丁目","日本橋浜町三丁目","日本橋中洲","日本橋一丁目","日本橋二丁目","日本橋三丁目","日本橋茅場町一丁目","日本橋茅場町二丁目","日本橋茅場町三丁目","日本橋兜町","佃一丁目","佃二丁目","佃三丁目","月島一丁目","月島二丁目","月島三丁目","月島四丁目","勝どき一丁目","勝どき二丁目","勝どき三丁目","勝どき四丁目","勝どき五丁目","勝どき六丁目","豊海町","晴海一丁目","晴海二丁目","晴海三丁目","晴海四丁目","晴海五丁目"],"港区":["芝一丁目","芝二丁目","芝三丁目","芝四丁目","芝五丁目","海岸一丁目","海岸二丁目","海岸三丁目","東新橋一丁目","東新橋二丁目","新橋一丁目","新橋二丁目","新橋三丁目","新橋四丁目","新橋五丁目","新橋六丁目","西新橋一丁目","西新橋二丁目","西新橋三丁目","三田一丁目","三田二丁目","三田三丁目","三田四丁目","三田五丁目","浜松町一丁目","浜松町二丁目","芝大門一丁目","芝大門二丁目","芝公園一丁目","芝公園二丁目","芝公園三丁目","芝公園四丁目","虎ノ門一丁目","虎ノ門二丁目","虎ノ門三丁目","虎ノ門四丁目","虎ノ門五丁目","愛宕一丁目","愛宕二丁目","麻布狸穴町","麻布永坂町","南麻布一丁目","南麻布二丁目","南麻布三丁目","南麻布四丁目","南麻布五丁目","元麻布一丁目","元麻布二丁目","元麻布三丁目","西麻布一丁目","西麻布二丁目","西麻布三丁目","西麻布四丁目","六本木一丁目","六本木二丁目","六本木三丁目","六本木四丁目","六本木五丁目","六本木六丁目","六本木七丁目","麻布台一丁目","麻布台二丁目","麻布台三丁目","麻布十番一丁目","麻布十番二丁目","麻布十番三丁目","麻布十番四丁目","東麻布一丁目","東麻布二丁目","東麻布三丁目","元赤坂一丁目","元赤坂二丁目","赤坂一丁目","赤坂二丁目","赤坂三丁目","赤坂四丁目","赤坂五丁目","赤坂六丁目","赤坂七丁目","赤坂八丁目","赤坂九丁目","南青山一丁目","南青山二丁目","南青山三丁目","南青山四丁目","南青山五丁目","南青山六丁目","南青山七丁目","北青山一丁目","北青山二丁目","北青山三丁目","高輪一丁目","高輪二丁目","高輪三丁目","高輪四丁目","白金一丁目","白金二丁目","白金三丁目","白金四丁目","白金五丁目","白金六丁目","白金台一丁目","白金台二丁目","白金台三丁目","白金台四丁目","白金台五丁目","芝浦一丁目","芝浦二丁目","芝浦三丁目","芝浦四丁目","港南一丁目","港南二丁目","港南三丁目","港南四丁目","港南五丁目","台場一丁目","台場二丁目"],"新宿区":["四谷一丁目","四谷二丁目","四谷三丁目","四谷四丁目","四谷本塩町","四谷三栄町","四谷坂町","若葉一丁目","若葉二丁目","若葉三丁目","須賀町","左門町","信濃町","南元町","荒木町","舟町","愛住町","大京町","霞ヶ丘町","内藤町","片町","新宿一丁目","新宿二丁目","新宿三丁目","新宿四丁目","新宿五丁目","新宿六丁目","新宿七丁目","歌舞伎町一丁目","歌舞伎町二丁目","市谷田町一丁目","市谷田町二丁目","市谷田町三丁目","市谷本村町","市谷砂土原町一丁目","市谷砂土原町二丁目","市谷砂土原町三丁目","市谷左内町","市谷加賀町一丁目","市谷加賀町二丁目","市谷甲良町","市谷船河原町","市谷長延寺町","市谷鷹匠町","市谷山伏町","市谷八幡町","神楽坂一丁目","神楽坂二丁目","神楽坂三丁目","神楽坂四丁目","神楽坂五丁目","神楽坂六丁目","細工町","二十騎町","揚場町","津久戸町","東五軒町","西五軒町","赤城元町","南榎町","袋町","払方町","南町","北町","納戸町","南山伏町","北山伏町","白銀町","下宮比町","矢来町","若宮町","岩戸町","中町","箪笥町","横寺町","筑土八幡町","新小川町","神楽河岸","市谷薬王寺町","市谷柳町","市谷仲之町","赤城下町","天神町","榎町","東榎町","早稲田町","早稲田南町","馬場下町","原町一丁目","原町二丁目","原町三丁目","喜久井町","築地町","弁天町","中里町","山吹町","改代町","水道町","早稲田鶴巻町","住吉町","市谷台町","河田町","若松町","余丁町","戸山一丁目","戸山二丁目","戸山三丁目","富久町","百人町一丁目","百人町二丁目","百人町三丁目","百人町四丁目","大久保一丁目","大久保二丁目","大久保三丁目","戸塚町","西早稲田一丁目","西早稲田二丁目","西早稲田三丁目","高田馬場一丁目","高田馬場二丁目","高田馬場三丁目","高田馬場四丁目","下落合一丁目","下落合二丁目","下落合三丁目","下落合四丁目","中落合一丁目","中落合二丁目","中落合三丁目","中落合四丁目","上落合一丁目","上落合二丁目","上落合三丁目","西落合一丁目","西落合二丁目","西落合三丁目","西落合四丁目","中井一丁目","中井二丁目","北新宿一丁目","北新宿二丁目","北新宿三丁目","北新宿四丁目","西新宿一丁目","西新宿二丁目","西新宿三丁目","西新宿四丁目","西新宿五丁目","西新宿六丁目","西新宿七丁目","西新宿八丁目"],"文京区":["後楽一丁目","後楽二丁目","春日一丁目","春日二丁目","小石川一丁目","小石川二丁目","小石川三丁目","小石川四丁目","小石川五丁目","白山一丁目","白山二丁目","白山三丁目","白山四丁目","白山五丁目","千石一丁目","千石二丁目","千石三丁目","千石四丁目","水道一丁目","水道二丁目","小日向一丁目","小日向二丁目","小日向三丁目","小日向四丁目","大塚一丁目","大塚二丁目","大塚三丁目","大塚四丁目","大塚五丁目","大塚六丁目","関口一丁目","関口二丁目","関口三丁目","目白台一丁目","目白台二丁目","目白台三丁目","音羽一丁目","音羽二丁目","本郷一丁目","本郷二丁目","本郷三丁目","本郷四丁目","本郷五丁目","本郷六丁目","本郷七丁目","湯島一丁目","湯島二丁目","湯島三丁目","湯島四丁目","西片一丁目","西片二丁目","向丘一丁目","向丘二丁目","弥生一丁目","弥生二丁目","根津一丁目","根津二丁目","千駄木一丁目","千駄木二丁目","千駄木三丁目","千駄木四丁目","千駄木五丁目","本駒込一丁目","本駒込二丁目","本駒込三丁目","本駒込四丁目","本駒込五丁目","本駒込六丁目"],"台東区":["台東一丁目","台東二丁目","台東三丁目","台東四丁目","秋葉原","東上野一丁目","東上野二丁目","東上野三丁目","東上野四丁目","東上野五丁目","東上野六丁目","上野一丁目","上野二丁目","上野三丁目","上野四丁目","上野五丁目","上野六丁目","上野七丁目","池之端一丁目","池之端二丁目","池之端三丁目","池之端四丁目","上野公園","北上野一丁目","北上野二丁目","下谷一丁目","下谷二丁目","下谷三丁目","入谷一丁目","入谷二丁目","根岸一丁目","根岸二丁目","根岸三丁目","根岸四丁目","根岸五丁目","竜泉一丁目","竜泉二丁目","竜泉三丁目","三ノ輪一丁目","三ノ輪二丁目","上野桜木一丁目","上野桜木二丁目","谷中一丁目","谷中二丁目","谷中三丁目","谷中四丁目","谷中五丁目","谷中六丁目","谷中七丁目","柳橋一丁目","柳橋二丁目","浅草橋一丁目","浅草橋二丁目","浅草橋三丁目","浅草橋四丁目","浅草橋五丁目","鳥越一丁目","鳥越二丁目","蔵前一丁目","蔵前二丁目","蔵前三丁目","蔵前四丁目","小島一丁目","小島二丁目","三筋一丁目","三筋二丁目","寿一丁目","寿二丁目","寿三丁目","寿四丁目","駒形一丁目","駒形二丁目","元浅草一丁目","元浅草二丁目","元浅草三丁目","元浅草四丁目","松が谷一丁目","松が谷二丁目","松が谷三丁目","松が谷四丁目","西浅草一丁目","西浅草二丁目","西浅草三丁目","雷門一丁目","雷門二丁目","花川戸一丁目","花川戸二丁目","浅草一丁目","浅草二丁目","浅草三丁目","浅草四丁目","浅草五丁目","浅草六丁目","浅草七丁目","千束一丁目","千束二丁目","千束三丁目","千束四丁目","東浅草一丁目","東浅草二丁目","日本堤一丁目","日本堤二丁目","今戸一丁目","今戸二丁目","清川一丁目","清川二丁目","橋場一丁目","橋場二丁目"],"墨田区":["両国一丁目","両国二丁目","両国三丁目","両国四丁目","千歳一丁目","千歳二丁目","千歳三丁目","緑一丁目","緑二丁目","緑三丁目","緑四丁目","立川一丁目","立川二丁目","立川三丁目","立川四丁目","菊川一丁目","菊川二丁目","菊川三丁目","江東橋一丁目","江東橋二丁目","江東橋三丁目","江東橋四丁目","江東橋五丁目","横網一丁目","横網二丁目","亀沢一丁目","亀沢二丁目","亀沢三丁目","亀沢四丁目","石原一丁目","石原二丁目","石原三丁目","石原四丁目","本所一丁目","本所二丁目","本所三丁目","本所四丁目","東駒形一丁目","東駒形二丁目","東駒形三丁目","東駒形四丁目","吾妻橋一丁目","吾妻橋二丁目","吾妻橋三丁目","錦糸一丁目","錦糸二丁目","錦糸三丁目","錦糸四丁目","太平一丁目","太平二丁目","太平三丁目","太平四丁目","横川一丁目","横川二丁目","横川三丁目","横川四丁目","横川五丁目","業平一丁目","業平二丁目","業平三丁目","業平四丁目","業平五丁目","向島一丁目","向島二丁目","向島三丁目","向島四丁目","向島五丁目","東向島一丁目","東向島二丁目","東向島三丁目","東向島四丁目","東向島五丁目","東向島六丁目","堤通一丁目","堤通二丁目","墨田一丁目","墨田二丁目","墨田三丁目","墨田四丁目","墨田五丁目","押上一丁目","押上二丁目","押上三丁目","京島一丁目","京島二丁目","京島三丁目","文花一丁目","文花二丁目","文花三丁目","八広一丁目","八広二丁目","八広三丁目","八広四丁目","八広五丁目","八広六丁目","立花一丁目","立花二丁目","立花三丁目","立花四丁目","立花五丁目","立花六丁目","東墨田一丁目","東墨田二丁目","東墨田三丁目"],"江東区":["清澄一丁目","清澄二丁目","清澄三丁目","常盤一丁目","常盤二丁目","新大橋一丁目","新大橋二丁目","新大橋三丁目","森下一丁目","森下二丁目","森下三丁目","森下四丁目","森下五丁目","平野一丁目","平野二丁目","平野三丁目","平野四丁目","三好一丁目","三好二丁目","三好三丁目","三好四丁目","白河一丁目","白河二丁目","白河三丁目","白河四丁目","高橋","佐賀一丁目","佐賀二丁目","永代一丁目","永代二丁目","福住一丁目","福住二丁目","深川一丁目","深川二丁目","冬木","門前仲町一丁目","門前仲町二丁目","富岡一丁目","富岡二丁目","牡丹一丁目","牡丹二丁目","牡丹三丁目","古石場一丁目","古石場二丁目","古石場三丁目","越中島一丁目","越中島二丁目","越中島三丁目","塩浜一丁目","塩浜二丁目","枝川一丁目","枝川二丁目","枝川三丁目","豊洲一丁目","豊洲二丁目","豊洲三丁目","豊洲四丁目","豊洲五丁目","豊洲六丁目","東雲一丁目","東雲二丁目","有明一丁目","有明二丁目","有明三丁目","有明四丁目","辰巳一丁目","辰巳二丁目","辰巳三丁目","潮見一丁目","潮見二丁目","青海一丁目","青海二丁目","青海三丁目","青海四丁目","千石一丁目","千石二丁目","千石三丁目","石島","千田","海辺","扇橋一丁目","扇橋二丁目","扇橋三丁目","猿江一丁目","猿江二丁目","住吉一丁目","住吉二丁目","毛利一丁目","毛利二丁目","木場一丁目","木場二丁目","木場三丁目","木場四丁目","木場五丁目","木場六丁目","東陽一丁目","東陽二丁目","東陽三丁目","東陽四丁目","東陽五丁目","東陽六丁目","東陽七丁目","亀戸一丁目","亀戸二丁目","亀戸三丁目","亀戸四丁目","亀戸五丁目","亀戸六丁目","亀戸七丁目","亀戸八丁目","亀戸九丁目","大島一丁目","大島二丁目","大島三丁目","大島四丁目","大島五丁目","大島六丁目","大島七丁目","大島八丁目","大島九丁目","北砂一丁目","北砂二丁目","北砂三丁目","北砂四丁目","北砂五丁目","北砂六丁目","北砂七丁目","東砂一丁目","東砂二丁目","東砂三丁目","東砂四丁目","東砂五丁目","東砂六丁目","東砂七丁目","東砂八丁目","南砂一丁目","南砂二丁目","南砂三丁目","南砂四丁目","南砂五丁目","南砂六丁目","南砂七丁目","新砂一丁目","新砂二丁目","新砂三丁目","新木場一丁目","新木場二丁目","新木場三丁目","新木場四丁目","夢の島一丁目","夢の島二丁目","夢の島三丁目","若洲一丁目","若洲二丁目","若洲三丁目"],"品川区":["荏原一丁目","荏原二丁目","荏原三丁目","荏原四丁目","荏原五丁目","荏原六丁目","荏原七丁目","大井一丁目","大井二丁目","大井三丁目","大井四丁目","大井五丁目","大井六丁目","大井七丁目","大崎一丁目","大崎二丁目","大崎三丁目","大崎四丁目","大崎五丁目","勝島一丁目","勝島二丁目","勝島三丁目","上大崎一丁目","上大崎二丁目","上大崎三丁目","上大崎四丁目","北品川一丁目","北品川二丁目","北品川三丁目","北品川四丁目","北品川五丁目","北品川六丁目","小山一丁目","小山二丁目","小山三丁目","小山四丁目","小山五丁目","小山六丁目","小山七丁目","小山台一丁目","小山台二丁目","戸越一丁目","戸越二丁目","戸越三丁目","戸越四丁目","戸越五丁目","戸越六丁目","中延一丁目","中延二丁目","中延三丁目","中延四丁目","中延五丁目","中延六丁目","西大井一丁目","西大井二丁目","西大井三丁目","西大井四丁目","西大井五丁目","西大井六丁目","西五反田一丁目","西五反田二丁目","西五反田三丁目","西五反田四丁目","西五反田五丁目","西五反田六丁目","西五反田七丁目","西五反田八丁目","西品川一丁目","西品川二丁目","西品川三丁目","西中延一丁目","西中延二丁目","西中延三丁目","旗の台一丁目","旗の台二丁目","旗の台三丁目","旗の台四丁目","旗の台五丁目","旗の台六丁目","東大井一丁目","東大井二丁目","東大井三丁目","東大井四丁目","東大井五丁目","東大井六丁目","東五反田一丁目","東五反田二丁目","東五反田三丁目","東五反田四丁目","東五反田五丁目","東品川一丁目","東品川二丁目","東品川三丁目","東品川四丁目","東品川五丁目","東中延一丁目","東中延二丁目","平塚一丁目","平塚二丁目","平塚三丁目","広町一丁目","広町二丁目","二葉一丁目","二葉二丁目","二葉三丁目","二葉四丁目","南大井一丁目","南大井二丁目","南大井三丁目","南大井四丁目","南大井五丁目","南大井六丁目","南品川一丁目","南品川二丁目","南品川三丁目","南品川四丁目","南品川五丁目","南品川六丁目","八潮一丁目","八潮二丁目","八潮三丁目","八潮四丁目","八潮五丁目","豊町一丁目","豊町二丁目","豊町三丁目","豊町四丁目","豊町五丁目","豊町六丁目","東八潮"],"目黒区":["駒場一丁目","駒場二丁目","駒場三丁目","駒場四丁目","青葉台一丁目","青葉台二丁目","青葉台三丁目","青葉台四丁目","東山一丁目","東山二丁目","東山三丁目","大橋一丁目","大橋二丁目","上目黒一丁目","上目黒二丁目","上目黒三丁目","上目黒四丁目","上目黒五丁目","中目黒一丁目","中目黒二丁目","中目黒三丁目","中目黒四丁目","中目黒五丁目","三田一丁目","三田二丁目","目黒一丁目","目黒二丁目","目黒三丁目","目黒四丁目","下目黒一丁目","下目黒二丁目","下目黒三丁目","下目黒四丁目","下目黒五丁目","下目黒六丁目","中町一丁目","中町二丁目","五本木一丁目","五本木二丁目","五本木三丁目","祐天寺一丁目","祐天寺二丁目","中央町一丁目","中央町二丁目","目黒本町一丁目","目黒本町二丁目","目黒本町三丁目","目黒本町四丁目","目黒本町五丁目","目黒本町六丁目","原町一丁目","原町二丁目","洗足一丁目","洗足二丁目","南一丁目","南二丁目","南三丁目","碑文谷一丁目","碑文谷二丁目","碑文谷三丁目","碑文谷四丁目","碑文谷五丁目","碑文谷六丁目","鷹番一丁目","鷹番二丁目","鷹番三丁目","平町一丁目","平町二丁目","大岡山一丁目","大岡山二丁目","緑が丘一丁目","緑が丘二丁目","緑が丘三丁目","自由が丘一丁目","自由が丘二丁目","自由が丘三丁目","中根一丁目","中根二丁目","柿の木坂一丁目","柿の木坂二丁目","柿の木坂三丁目","八雲一丁目","八雲二丁目","八雲三丁目","八雲四丁目","八雲五丁目","東が丘一丁目","東が丘二丁目"],"大田区":["大森中一丁目","大森中二丁目","大森中三丁目","大森東一丁目","大森東二丁目","大森東三丁目","大森東四丁目","大森東五丁目","大森南一丁目","大森南二丁目","大森南三丁目","大森南四丁目","大森南五丁目","大森本町一丁目","大森本町二丁目","大森西一丁目","大森西二丁目","大森西三丁目","大森西四丁目","大森西五丁目","大森西六丁目","大森西七丁目","山王一丁目","山王二丁目","山王三丁目","山王四丁目","大森北一丁目","大森北二丁目","大森北三丁目","大森北四丁目","大森北五丁目","大森北六丁目","平和の森公園","平和島一丁目","平和島二丁目","平和島三丁目","平和島四丁目","平和島五丁目","平和島六丁目","昭和島一丁目","昭和島二丁目","北馬込一丁目","北馬込二丁目","東馬込一丁目","東馬込二丁目","中馬込一丁目","中馬込二丁目","中馬込三丁目","西馬込一丁目","西馬込二丁目","南馬込一丁目","南馬込二丁目","南馬込三丁目","南馬込四丁目","南馬込五丁目","南馬込六丁目","中央一丁目","中央二丁目","中央三丁目","中央四丁目","中央五丁目","中央六丁目","中央七丁目","中央八丁目","池上一丁目","池上二丁目","池上三丁目","池上四丁目","池上五丁目","池上六丁目","池上七丁目","池上八丁目","田園調布本町","田園調布南","東嶺町","西嶺町","北嶺町","南雪谷一丁目","南雪谷二丁目","南雪谷三丁目","南雪谷四丁目","南雪谷五丁目","田園調布一丁目","田園調布二丁目","田園調布三丁目","田園調布四丁目","田園調布五丁目","雪谷大塚町","鵜の木一丁目","鵜の木二丁目","鵜の木三丁目","南久が原一丁目","南久が原二丁目","千鳥一丁目","千鳥二丁目","千鳥三丁目","仲池上一丁目","仲池上二丁目","久が原一丁目","久が原二丁目","久が原三丁目","久が原四丁目","久が原五丁目","久が原六丁目","南千束一丁目","南千束二丁目","南千束三丁目","石川町一丁目","石川町二丁目","東雪谷一丁目","東雪谷二丁目","東雪谷三丁目","東雪谷四丁目","東雪谷五丁目","上池台一丁目","上池台二丁目","上池台三丁目","上池台四丁目","上池台五丁目","北千束一丁目","北千束二丁目","北千束三丁目","北糀谷一丁目","北糀谷二丁目","西糀谷一丁目","西糀谷二丁目","西糀谷三丁目","西糀谷四丁目","東糀谷一丁目","東糀谷二丁目","東糀谷三丁目","東糀谷四丁目","東糀谷五丁目","東糀谷六丁目","萩中一丁目","萩中二丁目","萩中三丁目","本羽田一丁目","本羽田二丁目","本羽田三丁目","羽田旭町","羽田一丁目","羽田二丁目","羽田三丁目","羽田四丁目","羽田五丁目","羽田六丁目","羽田空港一丁目","羽田空港二丁目","羽田空港三丁目","西六郷一丁目","西六郷二丁目","西六郷三丁目","西六郷四丁目","仲六郷一丁目","仲六郷二丁目","仲六郷三丁目","仲六郷四丁目","南蒲田一丁目","南蒲田二丁目","南蒲田三丁目","東六郷一丁目","東六郷二丁目","東六郷三丁目","南六郷一丁目","南六郷二丁目","南六郷三丁目","下丸子一丁目","下丸子二丁目","下丸子三丁目","下丸子四丁目","矢口一丁目","矢口二丁目","矢口三丁目","東矢口一丁目","東矢口二丁目","東矢口三丁目","多摩川一丁目","多摩川二丁目","新蒲田一丁目","新蒲田二丁目","新蒲田三丁目","西蒲田一丁目","西蒲田二丁目","西蒲田三丁目","西蒲田四丁目","西蒲田五丁目","西蒲田六丁目","西蒲田七丁目","西蒲田八丁目","蒲田一丁目","蒲田二丁目","蒲田三丁目","蒲田四丁目","蒲田五丁目","蒲田本町一丁目","蒲田本町二丁目","東蒲田一丁目","東蒲田二丁目","東海一丁目","東海二丁目","東海三丁目","東海四丁目","東海五丁目","東海六丁目","城南島一丁目","城南島二丁目","城南島三丁目","城南島四丁目","城南島五丁目","城南島六丁目","城南島七丁目","京浜島一丁目","京浜島二丁目","京浜島三丁目","多摩川河川敷","ふるさとの浜辺公園","令和島一丁目","令和島二丁目","羽田空港T1","羽田空港T2","羽田空港T3"],"世田谷区":["池尻一丁目","池尻二丁目","池尻三丁目","池尻四丁目","三宿一丁目","三宿二丁目","太子堂一丁目","太子堂二丁目","太子堂三丁目","太子堂四丁目","太子堂五丁目","三軒茶屋一丁目","三軒茶屋二丁目","若林一丁目","若林二丁目","若林三丁目","若林四丁目","若林五丁目","世田谷一丁目","世田谷二丁目","世田谷三丁目","世田谷四丁目","桜一丁目","桜二丁目","桜三丁目","弦巻一丁目","弦巻二丁目","弦巻三丁目","弦巻四丁目","弦巻五丁目","経堂一丁目","経堂二丁目","経堂三丁目","経堂四丁目","経堂五丁目","宮坂一丁目","宮坂二丁目","宮坂三丁目","桜丘一丁目","桜丘二丁目","桜丘三丁目","桜丘四丁目","桜丘五丁目","下馬一丁目","下馬二丁目","下馬三丁目","下馬四丁目","下馬五丁目","下馬六丁目","野沢一丁目","野沢二丁目","野沢三丁目","野沢四丁目","上馬一丁目","上馬二丁目","上馬三丁目","上馬四丁目","上馬五丁目","駒沢一丁目","駒沢二丁目","駒沢三丁目","駒沢四丁目","駒沢五丁目","代田一丁目","代田二丁目","代田三丁目","代田四丁目","代田五丁目","代田六丁目","梅丘一丁目","梅丘二丁目","梅丘三丁目","豪徳寺一丁目","豪徳寺二丁目","代沢一丁目","代沢二丁目","代沢三丁目","代沢四丁目","代沢五丁目","羽根木一丁目","羽根木二丁目","大原一丁目","大原二丁目","北沢一丁目","北沢二丁目","北沢三丁目","北沢四丁目","北沢五丁目","松原一丁目","松原二丁目","松原三丁目","松原四丁目","松原五丁目","松原六丁目","赤堤一丁目","赤堤二丁目","赤堤三丁目","赤堤四丁目","赤堤五丁目","桜上水一丁目","桜上水二丁目","桜上水三丁目","桜上水四丁目","桜上水五丁目","東玉川一丁目","東玉川二丁目","奥沢一丁目","奥沢二丁目","奥沢三丁目","奥沢四丁目","奥沢五丁目","奥沢六丁目","奥沢七丁目","奥沢八丁目","玉川田園調布一丁目","玉川田園調布二丁目","玉堤一丁目","玉堤二丁目","等々力一丁目","等々力二丁目","等々力三丁目","等々力四丁目","等々力五丁目","等々力六丁目","等々力七丁目","等々力八丁目","尾山台一丁目","尾山台二丁目","尾山台三丁目","上野毛一丁目","上野毛二丁目","上野毛三丁目","上野毛四丁目","野毛一丁目","野毛二丁目","野毛三丁目","中町一丁目","中町二丁目","中町三丁目","中町四丁目","中町五丁目","上用賀一丁目","上用賀二丁目","上用賀三丁目","上用賀四丁目","上用賀五丁目","上用賀六丁目","用賀一丁目","用賀二丁目","用賀三丁目","用賀四丁目","玉川一丁目","玉川二丁目","玉川三丁目","玉川四丁目","瀬田一丁目","瀬田二丁目","瀬田三丁目","瀬田四丁目","瀬田五丁目","玉川台一丁目","玉川台二丁目","駒沢公園","新町一丁目","新町二丁目","新町三丁目","桜新町一丁目","桜新町二丁目","深沢一丁目","深沢二丁目","深沢三丁目","深沢四丁目","深沢五丁目","深沢六丁目","深沢七丁目","深沢八丁目","成城一丁目","成城二丁目","成城三丁目","成城四丁目","成城五丁目","成城六丁目","成城七丁目","成城八丁目","成城九丁目","祖師谷一丁目","祖師谷二丁目","祖師谷三丁目","祖師谷四丁目","祖師谷五丁目","祖師谷六丁目","千歳台一丁目","千歳台二丁目","千歳台三丁目","千歳台四丁目","千歳台五丁目","千歳台六丁目","船橋一丁目","船橋二丁目","船橋三丁目","船橋四丁目","船橋五丁目","船橋六丁目","船橋七丁目","喜多見一丁目","喜多見二丁目","喜多見三丁目","喜多見四丁目","喜多見五丁目","喜多見六丁目","喜多見七丁目","喜多見八丁目","喜多見九丁目","宇奈根一丁目","宇奈根二丁目","宇奈根三丁目","鎌田一丁目","鎌田二丁目","鎌田三丁目","鎌田四丁目","岡本一丁目","岡本二丁目","岡本三丁目","大蔵一丁目","大蔵二丁目","大蔵三丁目","大蔵四丁目","大蔵五丁目","大蔵六丁目","砧一丁目","砧二丁目","砧三丁目","砧四丁目","砧五丁目","砧六丁目","砧七丁目","砧八丁目","砧公園","上北沢一丁目","上北沢二丁目","上北沢三丁目","上北沢四丁目","上北沢五丁目","八幡山一丁目","八幡山二丁目","八幡山三丁目","上祖師谷一丁目","上祖師谷二丁目","上祖師谷三丁目","上祖師谷四丁目","上祖師谷五丁目","上祖師谷六丁目","上祖師谷七丁目","粕谷一丁目","粕谷二丁目","粕谷三丁目","粕谷四丁目","給田一丁目","給田二丁目","給田三丁目","給田四丁目","給田五丁目","南烏山一丁目","南烏山二丁目","南烏山三丁目","南烏山四丁目","南烏山五丁目","南烏山六丁目","北烏山一丁目","北烏山二丁目","北烏山三丁目","北烏山四丁目","北烏山五丁目","北烏山六丁目","北烏山七丁目","北烏山八丁目","北烏山九丁目"],"渋谷区":["恵比寿一丁目","恵比寿二丁目","恵比寿三丁目","恵比寿四丁目","広尾一丁目","広尾二丁目","広尾三丁目","広尾四丁目","広尾五丁目","東一丁目","東二丁目","東三丁目","東四丁目","恵比寿南一丁目","恵比寿南二丁目","恵比寿南三丁目","恵比寿西一丁目","恵比寿西二丁目","代官山町","猿楽町","鉢山町","鴬谷町","渋谷一丁目","渋谷二丁目","渋谷三丁目","渋谷四丁目","桜丘町","南平台町","道玄坂一丁目","道玄坂二丁目","円山町","神泉町","松涛一丁目","松涛二丁目","神山町","宇田川町","神南一丁目","神南二丁目","代々木神園町","上原一丁目","上原二丁目","上原三丁目","富ヶ谷一丁目","富ヶ谷二丁目","西原一丁目","西原二丁目","西原三丁目","元代々木町","大山町","初台一丁目","初台二丁目","本町一丁目","本町二丁目","本町三丁目","本町四丁目","本町五丁目","本町六丁目","笹塚一丁目","笹塚二丁目","笹塚三丁目","幡ヶ谷一丁目","幡ヶ谷二丁目","幡ヶ谷三丁目","代々木一丁目","代々木二丁目","代々木三丁目","代々木四丁目","代々木五丁目","千駄ヶ谷一丁目","千駄ヶ谷二丁目","千駄ヶ谷三丁目","千駄ヶ谷四丁目","千駄ヶ谷五丁目","千駄ヶ谷六丁目","神宮前一丁目","神宮前二丁目","神宮前三丁目","神宮前四丁目","神宮前五丁目","神宮前六丁目"],"中野区":["南台一丁目","南台二丁目","南台三丁目","南台四丁目","南台五丁目","弥生町一丁目","弥生町二丁目","弥生町三丁目","弥生町四丁目","弥生町五丁目","弥生町六丁目","本町一丁目","本町二丁目","本町三丁目","本町四丁目","本町五丁目","本町六丁目","中央一丁目","中央二丁目","中央三丁目","中央四丁目","中央五丁目","東中野一丁目","東中野二丁目","東中野三丁目","東中野四丁目","東中野五丁目","中野一丁目","中野二丁目","中野三丁目","中野四丁目","中野五丁目","中野六丁目","上高田一丁目","上高田二丁目","上高田三丁目","上高田四丁目","上高田五丁目","新井一丁目","新井二丁目","新井三丁目","新井四丁目","新井五丁目","沼袋一丁目","沼袋二丁目","沼袋三丁目","沼袋四丁目","松が丘一丁目","松が丘二丁目","江原町一丁目","江原町二丁目","江原町三丁目","江古田一丁目","江古田二丁目","江古田三丁目","江古田四丁目","丸山一丁目","丸山二丁目","野方一丁目","野方二丁目","野方三丁目","野方四丁目","野方五丁目","野方六丁目","大和町一丁目","大和町二丁目","大和町三丁目","大和町四丁目","若宮一丁目","若宮二丁目","若宮三丁目","白鷺一丁目","白鷺二丁目","白鷺三丁目","鷺宮一丁目","鷺宮二丁目","鷺宮三丁目","鷺宮四丁目","鷺宮五丁目","鷺宮六丁目","上鷺宮一丁目","上鷺宮二丁目","上鷺宮三丁目","上鷺宮四丁目","上鷺宮五丁目"],"杉並区":["方南一丁目","方南二丁目","和泉一丁目","和泉二丁目","和泉三丁目","和泉四丁目","下高井戸一丁目","下高井戸二丁目","下高井戸三丁目","下高井戸四丁目","下高井戸五丁目","永福一丁目","永福二丁目","永福三丁目","永福四丁目","浜田山一丁目","浜田山二丁目","浜田山三丁目","浜田山四丁目","和田一丁目","和田二丁目","和田三丁目","堀ノ内一丁目","堀ノ内二丁目","堀ノ内三丁目","松ノ木一丁目","松ノ木二丁目","松ノ木三丁目","大宮一丁目","大宮二丁目","梅里一丁目","梅里二丁目","高円寺南一丁目","高円寺南二丁目","高円寺南三丁目","高円寺南四丁目","高円寺南五丁目","高円寺北一丁目","高円寺北二丁目","高円寺北三丁目","高円寺北四丁目","阿佐谷南一丁目","阿佐谷南二丁目","阿佐谷南三丁目","阿佐谷北一丁目","阿佐谷北二丁目","阿佐谷北三丁目","阿佐谷北四丁目","阿佐谷北五丁目","阿佐谷北六丁目","天沼一丁目","天沼二丁目","天沼三丁目","本天沼一丁目","本天沼二丁目","本天沼三丁目","成田西一丁目","成田西二丁目","成田西三丁目","成田西四丁目","成田東一丁目","成田東二丁目","成田東三丁目","成田東四丁目","成田東五丁目","荻窪一丁目","荻窪二丁目","荻窪三丁目","荻窪四丁目","荻窪五丁目","南荻窪一丁目","南荻窪二丁目","南荻窪三丁目","南荻窪四丁目","上荻一丁目","上荻二丁目","上荻三丁目","上荻四丁目","西荻南一丁目","西荻南二丁目","西荻南三丁目","西荻南四丁目","西荻北一丁目","西荻北二丁目","西荻北三丁目","西荻北四丁目","西荻北五丁目","今川一丁目","今川二丁目","今川三丁目","今川四丁目","清水一丁目","清水二丁目","清水三丁目","桃井一丁目","桃井二丁目","桃井三丁目","桃井四丁目","井草一丁目","井草二丁目","井草三丁目","井草四丁目","井草五丁目","下井草一丁目","下井草二丁目","下井草三丁目","下井草四丁目","下井草五丁目","上井草一丁目","上井草二丁目","上井草三丁目","上井草四丁目","善福寺一丁目","善福寺二丁目","善福寺三丁目","善福寺四丁目","松庵一丁目","松庵二丁目","松庵三丁目","宮前一丁目","宮前二丁目","宮前三丁目","宮前四丁目","宮前五丁目","久我山一丁目","久我山二丁目","久我山三丁目","久我山四丁目","久我山五丁目","高井戸東一丁目","高井戸東二丁目","高井戸東三丁目","高井戸東四丁目","高井戸西一丁目","高井戸西二丁目","高井戸西三丁目","上高井戸一丁目","上高井戸二丁目","上高井戸三丁目"],"豊島区":["駒込一丁目","駒込二丁目","駒込三丁目","駒込四丁目","駒込五丁目","駒込六丁目","駒込七丁目","巣鴨一丁目","巣鴨二丁目","巣鴨三丁目","巣鴨四丁目","巣鴨五丁目","西巣鴨一丁目","西巣鴨二丁目","西巣鴨三丁目","西巣鴨四丁目","北大塚一丁目","北大塚二丁目","北大塚三丁目","南大塚一丁目","南大塚二丁目","南大塚三丁目","上池袋一丁目","上池袋二丁目","上池袋三丁目","上池袋四丁目","東池袋一丁目","東池袋二丁目","東池袋三丁目","東池袋四丁目","東池袋五丁目","南池袋一丁目","南池袋二丁目","南池袋三丁目","南池袋四丁目","西池袋一丁目","西池袋二丁目","西池袋三丁目","西池袋四丁目","西池袋五丁目","池袋一丁目","池袋二丁目","池袋三丁目","池袋四丁目","池袋本町一丁目","池袋本町二丁目","池袋本町三丁目","池袋本町四丁目","雑司が谷一丁目","雑司が谷二丁目","雑司が谷三丁目","高田一丁目","高田二丁目","高田三丁目","目白一丁目","目白二丁目","目白三丁目","目白四丁目","目白五丁目","南長崎一丁目","南長崎二丁目","南長崎三丁目","南長崎四丁目","南長崎五丁目","南長崎六丁目","長崎一丁目","長崎二丁目","長崎三丁目","長崎四丁目","長崎五丁目","長崎六丁目","千早一丁目","千早二丁目","千早三丁目","千早四丁目","要町一丁目","要町二丁目","要町三丁目","高松一丁目","高松二丁目","高松三丁目","千川一丁目","千川二丁目"],"北区":["王子一丁目","王子二丁目","王子三丁目","王子四丁目","王子五丁目","王子六丁目","豊島一丁目","豊島二丁目","豊島三丁目","豊島四丁目","豊島五丁目","豊島六丁目","豊島七丁目","豊島八丁目","堀船一丁目","堀船二丁目","堀船三丁目","堀船四丁目","東十条一丁目","東十条二丁目","東十条三丁目","東十条四丁目","東十条五丁目","東十条六丁目","王子本町一丁目","王子本町二丁目","王子本町三丁目","岸町一丁目","岸町二丁目","中十条一丁目","中十条二丁目","中十条三丁目","中十条四丁目","十条台一丁目","十条台二丁目","十条仲原一丁目","十条仲原二丁目","十条仲原三丁目","十条仲原四丁目","上十条一丁目","上十条二丁目","上十条三丁目","上十条四丁目","上十条五丁目","神谷一丁目","神谷二丁目","神谷三丁目","赤羽一丁目","赤羽二丁目","赤羽三丁目","西が丘一丁目","西が丘二丁目","西が丘三丁目","赤羽西一丁目","赤羽西二丁目","赤羽西三丁目","赤羽西四丁目","赤羽西五丁目","赤羽西六丁目","志茂一丁目","志茂二丁目","志茂三丁目","志茂四丁目","志茂五丁目","岩淵町","赤羽台一丁目","赤羽台二丁目","赤羽台三丁目","赤羽台四丁目","赤羽南一丁目","赤羽南二丁目","赤羽北一丁目","赤羽北二丁目","赤羽北三丁目","浮間一丁目","浮間二丁目","浮間三丁目","浮間四丁目","浮間五丁目","桐ヶ丘一丁目","桐ヶ丘二丁目","滝野川一丁目","滝野川二丁目","滝野川三丁目","滝野川四丁目","滝野川五丁目","滝野川六丁目","滝野川七丁目","西ヶ原一丁目","西ヶ原二丁目","西ヶ原三丁目","西ヶ原四丁目","栄町","上中里一丁目","上中里二丁目","上中里三丁目","中里一丁目","中里二丁目","中里三丁目","昭和町一丁目","昭和町二丁目","昭和町三丁目","田端新町一丁目","田端新町二丁目","田端新町三丁目","東田端一丁目","東田端二丁目","田端一丁目","田端二丁目","田端三丁目","田端四丁目","田端五丁目","田端六丁目"],"荒川区":["南千住一丁目","南千住二丁目","南千住三丁目","南千住四丁目","南千住五丁目","南千住六丁目","南千住七丁目","南千住八丁目","荒川一丁目","荒川二丁目","荒川三丁目","荒川四丁目","荒川五丁目","荒川六丁目","荒川七丁目","荒川八丁目","町屋一丁目","町屋二丁目","町屋三丁目","町屋四丁目","町屋五丁目","町屋六丁目","町屋七丁目","町屋八丁目","東尾久一丁目","東尾久二丁目","東尾久三丁目","東尾久四丁目","東尾久五丁目","東尾久六丁目","東尾久七丁目","東尾久八丁目","西尾久一丁目","西尾久二丁目","西尾久三丁目","西尾久四丁目","西尾久五丁目","西尾久六丁目","西尾久七丁目","西尾久八丁目","東日暮里一丁目","東日暮里二丁目","東日暮里三丁目","東日暮里四丁目","東日暮里五丁目","東日暮里六丁目","西日暮里一丁目","西日暮里二丁目","西日暮里三丁目","西日暮里四丁目","西日暮里五丁目","西日暮里六丁目"],"板橋区":["板橋一丁目","板橋二丁目","板橋三丁目","板橋四丁目","加賀一丁目","加賀二丁目","大山東町","大山金井町","熊野町","中丸町","南町","稲荷台","仲宿","氷川町","栄町","大山町","大山西町","幸町","中板橋","仲町","弥生町","本町","大和町","双葉町","富士見町","大谷口上町","大谷口北町","大谷口一丁目","大谷口二丁目","向原一丁目","向原二丁目","向原三丁目","小茂根一丁目","小茂根二丁目","小茂根三丁目","小茂根四丁目","小茂根五丁目","常盤台一丁目","常盤台二丁目","常盤台三丁目","常盤台四丁目","南常盤台一丁目","南常盤台二丁目","東新町一丁目","東新町二丁目","上板橋一丁目","上板橋二丁目","上板橋三丁目","清水町","蓮沼町","大原町","泉町","宮本町","志村一丁目","志村二丁目","志村三丁目","坂下一丁目","坂下二丁目","坂下三丁目","東坂下一丁目","東坂下二丁目","小豆沢一丁目","小豆沢二丁目","小豆沢三丁目","小豆沢四丁目","西台一丁目","西台二丁目","西台三丁目","西台四丁目","中台一丁目","中台二丁目","中台三丁目","若木一丁目","若木二丁目","若木三丁目","蓮根一丁目","蓮根二丁目","蓮根三丁目","相生町","前野町一丁目","前野町二丁目","前野町三丁目","前野町四丁目","前野町五丁目","前野町六丁目","赤塚一丁目","赤塚二丁目","赤塚三丁目","赤塚四丁目","赤塚五丁目","赤塚六丁目","赤塚七丁目","赤塚八丁目","赤塚新町一丁目","赤塚新町二丁目","赤塚新町三丁目","四葉一丁目","四葉二丁目","大門","三園一丁目","三園二丁目","成増一丁目","成増二丁目","成増三丁目","成増四丁目","成増五丁目","徳丸一丁目","徳丸二丁目","徳丸三丁目","徳丸四丁目","徳丸五丁目","徳丸六丁目","徳丸七丁目","徳丸八丁目","東山町","桜川一丁目","桜川二丁目","桜川三丁目","高島平一丁目","高島平二丁目","高島平三丁目","高島平四丁目","高島平五丁目","高島平六丁目","高島平七丁目","高島平八丁目","高島平九丁目","新河岸一丁目","新河岸二丁目","新河岸三丁目","舟渡一丁目","舟渡二丁目","舟渡三丁目","舟渡四丁目"],"練馬区":["旭丘一丁目","旭丘二丁目","小竹町一丁目","小竹町二丁目","栄町","羽沢一丁目","羽沢二丁目","羽沢三丁目","豊玉上一丁目","豊玉上二丁目","豊玉中一丁目","豊玉中二丁目","豊玉中三丁目","豊玉中四丁目","豊玉南一丁目","豊玉南二丁目","豊玉南三丁目","豊玉北一丁目","豊玉北二丁目","豊玉北三丁目","豊玉北四丁目","豊玉北五丁目","豊玉北六丁目","中村一丁目","中村二丁目","中村三丁目","中村南一丁目","中村南二丁目","中村南三丁目","中村北一丁目","中村北二丁目","中村北三丁目","中村北四丁目","桜台一丁目","桜台二丁目","桜台三丁目","桜台四丁目","桜台五丁目","桜台六丁目","練馬一丁目","練馬二丁目","練馬三丁目","練馬四丁目","向山一丁目","向山二丁目","向山三丁目","向山四丁目","貫井一丁目","貫井二丁目","貫井三丁目","貫井四丁目","貫井五丁目","錦一丁目","錦二丁目","氷川台一丁目","氷川台二丁目","氷川台三丁目","氷川台四丁目","平和台一丁目","平和台二丁目","平和台三丁目","平和台四丁目","早宮一丁目","早宮二丁目","早宮三丁目","早宮四丁目","春日町一丁目","春日町二丁目","春日町三丁目","春日町四丁目","春日町五丁目","春日町六丁目","高松一丁目","高松二丁目","高松三丁目","高松四丁目","高松五丁目","高松六丁目","北町一丁目","北町二丁目","北町三丁目","北町四丁目","北町五丁目","北町六丁目","北町七丁目","北町八丁目","田柄一丁目","田柄二丁目","田柄三丁目","田柄四丁目","田柄五丁目","光が丘一丁目","光が丘二丁目","光が丘三丁目","光が丘四丁目","光が丘五丁目","光が丘六丁目","光が丘七丁目","旭町一丁目","旭町二丁目","旭町三丁目","土支田一丁目","土支田二丁目","土支田三丁目","土支田四丁目","富士見台一丁目","富士見台二丁目","富士見台三丁目","富士見台四丁目","南田中一丁目","南田中二丁目","南田中三丁目","南田中四丁目","南田中五丁目","高野台一丁目","高野台二丁目","高野台三丁目","高野台四丁目","高野台五丁目","谷原一丁目","谷原二丁目","谷原三丁目","谷原四丁目","谷原五丁目","谷原六丁目","三原台一丁目","三原台二丁目","三原台三丁目","石神井町一丁目","石神井町二丁目","石神井町三丁目","石神井町四丁目","石神井町五丁目","石神井町六丁目","石神井町七丁目","石神井町八丁目","石神井台一丁目","石神井台二丁目","石神井台三丁目","石神井台四丁目","石神井台五丁目","石神井台六丁目","石神井台七丁目","石神井台八丁目","上石神井一丁目","上石神井二丁目","上石神井三丁目","上石神井四丁目","上石神井南町","下石神井一丁目","下石神井二丁目","下石神井三丁目","下石神井四丁目","下石神井五丁目","下石神井六丁目","立野町","関町東一丁目","関町東二丁目","関町北一丁目","関町北二丁目","関町北三丁目","関町北四丁目","関町北五丁目","関町南一丁目","関町南二丁目","関町南三丁目","関町南四丁目","東大泉一丁目","東大泉二丁目","東大泉三丁目","東大泉四丁目","東大泉五丁目","東大泉六丁目","東大泉七丁目","西大泉町","西大泉一丁目","西大泉二丁目","西大泉三丁目","西大泉四丁目","西大泉五丁目","西大泉六丁目","南大泉一丁目","南大泉二丁目","南大泉三丁目","南大泉四丁目","南大泉五丁目","南大泉六丁目","大泉町一丁目","大泉町二丁目","大泉町三丁目","大泉町四丁目","大泉町五丁目","大泉町六丁目","大泉学園町一丁目","大泉学園町二丁目","大泉学園町三丁目","大泉学園町四丁目","大泉学園町五丁目","大泉学園町六丁目","大泉学園町七丁目","大泉学園町八丁目","大泉学園町九丁目"],"足立区":["青井一丁目","青井二丁目","青井三丁目","青井四丁目","青井五丁目","青井六丁目","足立一丁目","足立二丁目","足立三丁目","足立四丁目","綾瀬一丁目","綾瀬二丁目","綾瀬三丁目","綾瀬四丁目","綾瀬五丁目","綾瀬六丁目","綾瀬七丁目","伊興一丁目","伊興二丁目","伊興三丁目","伊興四丁目","伊興五丁目","入谷一丁目","入谷二丁目","入谷三丁目","入谷四丁目","入谷五丁目","入谷六丁目","入谷七丁目","入谷八丁目","入谷九丁目","梅田一丁目","梅田二丁目","梅田三丁目","梅田四丁目","梅田五丁目","梅田六丁目","梅田七丁目","梅田八丁目","梅島一丁目","梅島二丁目","梅島三丁目","扇一丁目","扇二丁目","扇三丁目","大谷田一丁目","大谷田二丁目","大谷田三丁目","大谷田四丁目","大谷田五丁目","興野一丁目","興野二丁目","小台一丁目","小台二丁目","加賀一丁目","加賀二丁目","加平一丁目","加平二丁目","加平三丁目","北加平町","栗原一丁目","栗原二丁目","栗原三丁目","栗原四丁目","江北一丁目","江北二丁目","江北三丁目","江北四丁目","江北五丁目","江北六丁目","江北七丁目","古千谷一丁目","古千谷二丁目","弘道一丁目","弘道二丁目","佐野一丁目","佐野二丁目","皿沼一丁目","皿沼二丁目","皿沼三丁目","鹿浜一丁目","鹿浜二丁目","鹿浜三丁目","鹿浜四丁目","鹿浜五丁目","鹿浜六丁目","鹿浜七丁目","鹿浜八丁目","島根一丁目","島根二丁目","島根三丁目","島根四丁目","神明南一丁目","神明南二丁目","神明一丁目","神明二丁目","神明三丁目","新田一丁目","新田二丁目","新田三丁目","千住曙町","千住旭町","千住東一丁目","千住東二丁目","千住大川町","千住河原町","関原一丁目","関原二丁目","関原三丁目","千住寿町","千住桜木一丁目","千住桜木二丁目","千住関屋町","千住龍田町","千住橋戸町","千住宮元町","千住緑町一丁目","千住緑町二丁目","千住緑町三丁目","千住元町","千住柳町","千住中居町","千住仲町","千住一丁目","千住二丁目","千住三丁目","千住四丁目","千住五丁目","竹の塚一丁目","竹の塚二丁目","竹の塚三丁目","竹の塚四丁目","竹の塚五丁目","竹の塚六丁目","竹の塚七丁目","辰沼一丁目","辰沼二丁目","中央本町一丁目","中央本町二丁目","中央本町三丁目","中央本町四丁目","中央本町五丁目","椿一丁目","椿二丁目","東和一丁目","東和二丁目","東和三丁目","東和四丁目","東和五丁目","舎人一丁目","舎人二丁目","舎人三丁目","舎人四丁目","舎人五丁目","舎人六丁目","中川一丁目","中川二丁目","中川三丁目","中川四丁目","中川五丁目","西綾瀬一丁目","西綾瀬二丁目","西綾瀬三丁目","西綾瀬四丁目","西伊興町","西新井本町一丁目","西新井本町二丁目","西新井本町三丁目","西新井本町四丁目","西新井本町五丁目","西加平一丁目","西加平二丁目","西伊興一丁目","西伊興二丁目","西伊興三丁目","西伊興四丁目","西新井栄町一丁目","西新井栄町二丁目","西新井栄町三丁目","西新井一丁目","西新井二丁目","西新井三丁目","西新井四丁目","西新井五丁目","西新井六丁目","西新井七丁目","西竹の塚一丁目","西竹の塚二丁目","西保木間一丁目","西保木間二丁目","西保木間三丁目","西保木間四丁目","花畑一丁目","花畑二丁目","花畑三丁目","花畑四丁目","花畑五丁目","花畑六丁目","花畑七丁目","花畑八丁目","東綾瀬一丁目","東綾瀬二丁目","東綾瀬三丁目","東伊興一丁目","東伊興二丁目","東伊興三丁目","東伊興四丁目","一ツ家一丁目","一ツ家二丁目","一ツ家三丁目","一ツ家四丁目","日ノ出町","東保木間一丁目","東保木間二丁目","平野一丁目","平野二丁目","平野三丁目","東六月町","保木間一丁目","保木間二丁目","保木間三丁目","保木間四丁目","保木間五丁目","保塚町","堀之内一丁目","堀之内二丁目","南花畑一丁目","南花畑二丁目","南花畑三丁目","南花畑四丁目","南花畑五丁目","宮城一丁目","宮城二丁目","六木一丁目","六木二丁目","六木三丁目","六木四丁目","本木北町","本木一丁目","本木二丁目","本木西町","本木東町","本木南町","谷中一丁目","谷中二丁目","谷中三丁目","谷中四丁目","谷中五丁目","谷在家一丁目","谷在家二丁目","谷在家三丁目","柳原一丁目","柳原二丁目","六月一丁目","六月二丁目","六月三丁目","六町一丁目","六町二丁目","六町三丁目","六町四丁目","古千谷本町一丁目","古千谷本町二丁目","古千谷本町三丁目","古千谷本町四丁目","伊興本町一丁目","伊興本町二丁目","舎人公園"],"葛飾区":["立石一丁目","立石二丁目","立石三丁目","立石四丁目","立石五丁目","立石六丁目","立石七丁目","立石八丁目","東立石一丁目","東立石二丁目","東立石三丁目","東立石四丁目","四つ木一丁目","四つ木二丁目","四つ木三丁目","四つ木四丁目","四つ木五丁目","東四つ木一丁目","東四つ木二丁目","東四つ木三丁目","東四つ木四丁目","宝町一丁目","宝町二丁目","堀切一丁目","堀切二丁目","堀切三丁目","堀切四丁目","堀切五丁目","堀切六丁目","堀切七丁目","堀切八丁目","東堀切一丁目","東堀切二丁目","東堀切三丁目","小菅一丁目","小菅二丁目","小菅三丁目","小菅四丁目","お花茶屋一丁目","お花茶屋二丁目","お花茶屋三丁目","白鳥一丁目","白鳥二丁目","白鳥三丁目","白鳥四丁目","亀有一丁目","亀有二丁目","亀有三丁目","亀有四丁目","亀有五丁目","西亀有一丁目","西亀有二丁目","西亀有三丁目","西亀有四丁目","青戸一丁目","青戸二丁目","青戸三丁目","青戸四丁目","青戸五丁目","青戸六丁目","青戸七丁目","青戸八丁目","新小岩一丁目","新小岩二丁目","新小岩三丁目","新小岩四丁目","東新小岩一丁目","東新小岩二丁目","東新小岩三丁目","東新小岩四丁目","東新小岩五丁目","東新小岩六丁目","東新小岩七丁目","東新小岩八丁目","西新小岩一丁目","西新小岩二丁目","西新小岩三丁目","西新小岩四丁目","西新小岩五丁目","奥戸一丁目","奥戸二丁目","奥戸三丁目","奥戸四丁目","奥戸五丁目","奥戸六丁目","奥戸七丁目","奥戸八丁目","奥戸九丁目","高砂一丁目","高砂二丁目","高砂三丁目","高砂四丁目","高砂五丁目","高砂六丁目","高砂七丁目","高砂八丁目","鎌倉一丁目","鎌倉二丁目","鎌倉三丁目","鎌倉四丁目","細田一丁目","細田二丁目","細田三丁目","細田四丁目","細田五丁目","柴又一丁目","柴又二丁目","柴又三丁目","柴又四丁目","柴又五丁目","柴又六丁目","柴又七丁目","新宿一丁目","新宿二丁目","新宿三丁目","新宿四丁目","新宿五丁目","新宿六丁目","金町一丁目","金町二丁目","金町三丁目","金町四丁目","金町五丁目","金町六丁目","金町浄水場","東金町一丁目","東金町二丁目","東金町三丁目","東金町四丁目","東金町五丁目","東金町六丁目","東金町七丁目","東金町八丁目","水元一丁目","水元二丁目","水元三丁目","水元四丁目","水元五丁目","水元公園","東水元一丁目","東水元二丁目","東水元三丁目","東水元四丁目","東水元五丁目","東水元六丁目","南水元一丁目","南水元二丁目","南水元三丁目","南水元四丁目","西水元一丁目","西水元二丁目","西水元三丁目","西水元四丁目","西水元五丁目","西水元六丁目"],"江戸川区":["小松川一丁目","小松川二丁目","小松川三丁目","小松川三丁目","小松川四丁目","平井一丁目","平井二丁目","平井三丁目","平井四丁目","平井五丁目","平井六丁目","平井七丁目","中央一丁目","中央二丁目","中央三丁目","中央四丁目","松島一丁目","松島二丁目","松島三丁目","松島四丁目","松江一丁目","松江二丁目","松江三丁目","松江四丁目","松江五丁目","松江六丁目","松江七丁目","東小松川一丁目","東小松川二丁目","東小松川三丁目","東小松川四丁目","西小松川町","大杉一丁目","大杉二丁目","大杉三丁目","大杉四丁目","大杉五丁目","西一之江一丁目","西一之江二丁目","西一之江三丁目","西一之江四丁目","一之江町","一之江一丁目","一之江二丁目","一之江三丁目","一之江四丁目","一之江五丁目","一之江六丁目","一之江七丁目","一之江八丁目","二之江町","春江町一丁目","春江町二丁目","春江町三丁目","春江町四丁目","春江町五丁目","瑞江一丁目","瑞江二丁目","瑞江三丁目","瑞江四丁目","東瑞江一丁目","東瑞江二丁目","東瑞江三丁目","西瑞江三丁目","西瑞江四丁目","西瑞江五丁目","江戸川一丁目","江戸川二丁目","江戸川三丁目","江戸川四丁目","江戸川五丁目","江戸川六丁目","東小岩一丁目","東小岩二丁目","東小岩三丁目","東小岩四丁目","東小岩五丁目","東小岩六丁目","西小岩一丁目","西小岩二丁目","西小岩三丁目","西小岩四丁目","西小岩五丁目","南小岩一丁目","南小岩二丁目","南小岩三丁目","南小岩四丁目","南小岩五丁目","南小岩六丁目","南小岩七丁目","南小岩八丁目","北小岩一丁目","北小岩二丁目","北小岩三丁目","北小岩四丁目","北小岩五丁目","北小岩六丁目","北小岩七丁目","北小岩八丁目","鹿骨町","鹿骨一丁目","鹿骨二丁目","鹿骨三丁目","鹿骨四丁目","鹿骨五丁目","鹿骨六丁目","松本一丁目","松本二丁目","興宮町","上一色一丁目","上一色二丁目","上一色三丁目","本一色一丁目","本一色二丁目","本一色三丁目","篠崎町一丁目","篠崎町二丁目","篠崎町三丁目","篠崎町四丁目","篠崎町五丁目","篠崎町六丁目","篠崎町七丁目","篠崎町八丁目","東篠崎一丁目","東篠崎二丁目","東篠崎町","南篠崎町一丁目","南篠崎町二丁目","南篠崎町三丁目","南篠崎町四丁目","南篠崎町五丁目","北篠崎一丁目","北篠崎二丁目","上篠崎一丁目","上篠崎二丁目","上篠崎三丁目","上篠崎四丁目","下篠崎町","船堀一丁目","船堀二丁目","船堀三丁目","船堀四丁目","船堀五丁目","船堀六丁目","船堀七丁目","宇喜田町","新堀一丁目","新堀二丁目","東葛西一丁目","東葛西二丁目","東葛西三丁目","東葛西四丁目","東葛西五丁目","東葛西六丁目","東葛西七丁目","東葛西八丁目","東葛西九丁目","西葛西一丁目","西葛西二丁目","西葛西三丁目","西葛西四丁目","西葛西五丁目","西葛西六丁目","西葛西七丁目","西葛西八丁目","南葛西一丁目","南葛西二丁目","南葛西三丁目","南葛西四丁目","南葛西五丁目","南葛西六丁目","南葛西七丁目","北葛西一丁目","北葛西二丁目","北葛西三丁目","北葛西四丁目","北葛西五丁目","中葛西一丁目","中葛西二丁目","中葛西三丁目","中葛西四丁目","中葛西五丁目","中葛西六丁目","中葛西七丁目","中葛西八丁目","堀江町","清新町一丁目","清新町二丁目","臨海町一丁目","臨海町二丁目","臨海町三丁目","臨海町四丁目","臨海町五丁目","臨海町六丁目","谷河内一丁目","谷河内二丁目","東松本一丁目","東松本二丁目","西篠崎一丁目","西篠崎二丁目"],"武蔵野市":["吉祥寺東町一丁目","吉祥寺東町二丁目","吉祥寺東町三丁目","吉祥寺東町四丁目","吉祥寺南町一丁目","吉祥寺南町二丁目","吉祥寺南町三丁目","吉祥寺南町四丁目","吉祥寺南町五丁目","御殿山一丁目","御殿山二丁目","吉祥寺本町一丁目","吉祥寺本町二丁目","吉祥寺本町三丁目","吉祥寺本町四丁目","吉祥寺北町一丁目","吉祥寺北町二丁目","吉祥寺北町三丁目","吉祥寺北町四丁目","吉祥寺北町五丁目","中町一丁目","中町二丁目","中町三丁目","西久保一丁目","西久保二丁目","西久保三丁目","緑町一丁目","緑町二丁目","緑町三丁目","八幡町一丁目","八幡町二丁目","八幡町三丁目","八幡町四丁目","関前一丁目","関前二丁目","関前三丁目","関前四丁目","関前五丁目","境一丁目","境二丁目","境三丁目","境四丁目","境五丁目","境南町一丁目","境南町二丁目","境南町三丁目","境南町四丁目","境南町五丁目","桜堤一丁目","桜堤二丁目","桜堤三丁目"],"三鷹市":["下連雀一丁目","下連雀二丁目","下連雀三丁目","下連雀四丁目","下連雀五丁目","下連雀六丁目","下連雀七丁目","下連雀八丁目","下連雀九丁目","牟礼一丁目","牟礼二丁目","牟礼三丁目","牟礼四丁目","牟礼五丁目","牟礼六丁目","牟礼七丁目","井の頭一丁目","井の頭二丁目","井の頭三丁目","井の頭四丁目","井の頭五丁目","中原一丁目","中原二丁目","中原三丁目","中原四丁目","北野一丁目","北野二丁目","北野三丁目","北野四丁目","新川一丁目","新川二丁目","新川三丁目","新川四丁目","新川五丁目","新川六丁目","上連雀一丁目","上連雀二丁目","上連雀三丁目","上連雀四丁目","上連雀五丁目","上連雀六丁目","上連雀七丁目","上連雀八丁目","上連雀九丁目","井口一丁目","井口二丁目","井口三丁目","井口四丁目","井口五丁目","深大寺一丁目","深大寺二丁目","深大寺三丁目","野崎一丁目","野崎二丁目","野崎三丁目","野崎四丁目","大沢一丁目","大沢二丁目","大沢三丁目","大沢四丁目","大沢五丁目","大沢六丁目"]};
+var uLat=null,uLng=null,R=1,off=0;
+var hDay=DAYS[new Date().getDay()];
+var stFilter=[],fareFilter='all',skFilter='all';
+var rainBoost=1.0,notifyEnabled=false,notifyInterval=null;
+
+function tick(){
+  var n=new Date();
+  document.getElementById('ck').textContent=('0'+n.getHours()).slice(-2)+':'+('0'+n.getMinutes()).slice(-2);
+  document.getElementById('cd').textContent=DAYS[n.getDay()]+'曜';
+}
+setInterval(tick,1000);tick();
+
+function km(a,b,c,d){
+  var R2=6371,dL=(c-a)*Math.PI/180,dG=(d-b)*Math.PI/180;
+  var x=Math.sin(dL/2)*Math.sin(dL/2)+Math.cos(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.sin(dG/2)*Math.sin(dG/2);
+  return R2*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x));
+}
+function showErr(m){document.getElementById('errtxt').textContent=m;document.getElementById('errbox').classList.add('show');}
+function closeErr(){document.getElementById('errbox').classList.remove('show');}
+
+function parseCSV(text){
+  text=text.replace(/^\uFEFF/,'');
+  var lines=text.split(/\r?\n/);
+  if(lines.length<2)return{headers:[],rows:[]};
+  function sp(line){
+    var cells=[],inQ=false,cell='';
+    for(var c=0;c<line.length;c++){
+      var ch=line[c];
+      if(ch==='"'){inQ=!inQ;}
+      else if(ch===','&&!inQ){cells.push(cell.trim());cell='';}
+      else{cell+=ch;}
+    }
+    cells.push(cell.trim());
+    return cells;
+  }
+  var headers=sp(lines[0]),rows=[];
+  for(var i=1;i<lines.length;i++){var l=lines[i].trim();if(l)rows.push(sp(l));}
+  return{headers:headers,rows:rows};
+}
+
+function parseFare(s){
+  if(!s)return -1;
+  var n=parseInt(s.replace(/[^0-9]/g,''));
+  return isNaN(n)?-1:n;
+}
+function fareBucket(f){
+  if(f<0)return -1;
+  if(f<3000)return 0;
+  if(f<5000)return 1;
+  if(f<10000)return 2;
+  return 3;
+}
+
+function buildData(parsed){
+  var H=parsed.headers,rows=parsed.rows;
+  var iDate=-1,iD=-1,iT=-1,iW=-1,iN=-1,iS=-1,iF=-1,iK=-1;
+  for(var i=0;i<H.length;i++){
+    var h=H[i].replace(/\s/g,'');
+    if(h==='日付'&&iDate===-1)iDate=i;
+    if(h==='曜'&&iD===-1)iD=i;
+    if(h==='乗'&&iT===-1)iT=i;
+    if((h==='乗車地：市区'||h==='乗車地:市区')&&iW===-1)iW=i;
+    if((h==='乗車地：地名'||h==='乗車地:地名')&&iN===-1)iN=i;
+    if(h==='ステータス'&&iS===-1)iS=i;
+    if(h==='料金'&&iF===-1)iF=i;
+    if(h==='サンキュー'&&iK===-1)iK=i;
+  }
+  if(iDate===-1)iDate=0;if(iD===-1)iD=1;if(iT===-1)iT=2;if(iW===-1)iW=5;
+  if(iN===-1)iN=6;if(iS===-1)iS=11;if(iF===-1)iF=9;if(iK===-1)iK=13;
+  var agg={};
+  for(var j=0;j<rows.length;j++){
+    var r=rows[j];
+    var dateStr=(r[iDate]||'').trim();
+    var day=(r[iD]||'').trim(),ts=(r[iT]||'').trim();
+    var ward=(r[iW]||'').trim(),name=(r[iN]||'').trim();
+    var status=(r[iS]||'').trim(),fareRaw=(r[iF]||'').trim();
+    var sk=(r[iK]||'').trim();
+    if(!day||!ts||!ward||!name)continue;
+    var hm=ts.match(/^(\d+):/);if(!hm)continue;
+    var hour=parseInt(hm[1]);
+    // 日付からdayTypeを判定
+    var dayType='weekday';
+    if(dateStr){
+      var dp=dateStr.split('/');
+      if(dp.length===3) dayType=calcDayType(parseInt(dp[0]),parseInt(dp[1]),parseInt(dp[2]));
+    }
+    var key=dayType+'|'+hour+'|'+ward+'|'+name;
+    if(!agg[key]){
+      var co=getCoords(ward,name);
+      agg[key]={day:day,dayType:dayType,hour:hour,ward:ward,name:name,
+        count:0,goCount:0,smCount:0,naCount:0,
+        fb:[0,0,0,0],skCount:0,normalCount:0,ptCount:0,ptPCount:0,
+        lat:co[0],lng:co[1]};
+    }
+    var e=agg[key];
+    e.count++;
+    if(status==='GO')e.goCount++;
+    if(status==='スマ配')e.smCount++;
+    if(status==='流し')e.naCount++;
+    var fb=fareBucket(parseFare(fareRaw));
+    if(fb>=0)e.fb[fb]++;
+    if(sk==='サンキュー')e.skCount++;
+    if(sk==='通常'||sk==='')e.normalCount++;
+    if(sk==='プレタク')e.ptCount++;
+    if(sk==='プレタクP')e.ptPCount++;
+  }
+  return Object.values(agg);
+}
+function triggerGeocoding(data){
+  data.forEach(function(r){queueGeocode(r.ward,r.name);});
+  startGeocoding();
+}
+
+function loadData(url,isRefresh){
+  document.getElementById('st').textContent=isRefresh?'🔄 更新中...':'📊 読み込み中...';
+  document.getElementById('rl').innerHTML='<div class="loading"><span class="spin">⏳</span> 読み込み中...</div>';
+  var btn=document.getElementById('refresh-btn');
+  if(btn)btn.disabled=true;
+  fetch(url)
+    .then(function(res){if(!res.ok)throw new Error('HTTP '+res.status);return res.text();})
+    .then(function(text){
+      var parsed=parseCSV(text);
+      if(parsed.rows.length===0)throw new Error('データが空です');
+      D=buildData(parsed);
+      triggerGeocoding(D);
+      var cache={data:D,time:new Date().toISOString(),count:parsed.rows.length};
+      try{localStorage.setItem('taxiradar_cache_v2',JSON.stringify(cache));}catch(e){}
+      updateDataBar(parsed.rows.length,new Date());
+      document.getElementById('st').textContent='📍 現在地を設定してください';
+      if(btn)btn.disabled=false;
+      renderRadar();renderHot();
+    })
+    .catch(function(err){
+      var cached=loadCache();
+      if(cached){
+        D=cached.data;updateDataBar(cached.count,new Date(cached.time));
+        document.getElementById('st').textContent='⚠️ オフライン（キャッシュ使用）';
+        if(btn)btn.disabled=false;renderRadar();renderHot();
+      }else{
+        document.getElementById('st').textContent='❌ 読み込み失敗';
+        document.getElementById('rl').innerHTML='<div class="empty"><span>❌</span><p>読み込み失敗<br>URLと公開設定を確認してください</p></div>';
+        if(btn)btn.disabled=false;
+      }
+    });
+}
+function loadCache(){try{var r=localStorage.getItem('taxiradar_cache_v2');return r?JSON.parse(r):null;}catch(e){return null;}}
+function updateDataBar(count,date){
+  document.getElementById('data-bar').style.display='flex';
+  document.getElementById('rec-count').textContent=count.toLocaleString();
+  var d=new Date(date);
+  document.getElementById('last-update').textContent=(d.getMonth()+1)+'/'+d.getDate()+' '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);
+}
+
+function matchFilter(e){
+  // ステータス
+  if(stFilter.length>0){
+    var sc=0;
+    if(stFilter.indexOf('GO')>=0)sc+=e.goCount;
+    if(stFilter.indexOf('スマ配')>=0)sc+=e.smCount;
+    if(stFilter.indexOf('流し')>=0)sc+=e.naCount;
+    if(sc===0)return 0;
+  }
+  // 料金
+  if(fareFilter!=='all'){
+    var fi=parseInt(fareFilter);
+    if(e.fb[fi]===0)return 0;
+  }
+  // サンキュー
+  // サンキューフィルター
+  if(skFilter==='sk_only'&&e.skCount===0)return 0;
+  if(skFilter==='normal_sk'&&(e.normalCount+e.skCount)===0)return 0;
+  if(skFilter==='normal_sk_pt'&&(e.normalCount+e.skCount+e.ptCount)===0)return 0;
+  if(skFilter==='ptP_only'&&e.ptPCount===0)return 0;
+  // カウント
+  if(stFilter.length===0)return e.count;
+  var cnt=0;
+  if(stFilter.indexOf('GO')>=0)cnt+=e.goCount;
+  if(stFilter.indexOf('スマ配')>=0)cnt+=e.smCount;
+  if(stFilter.indexOf('流し')>=0)cnt+=e.naCount;
+  return cnt;
+}
+
+function renderRadar(){
+  var list=document.getElementById('rl');
+  // 時間帯バッジ更新
+  var _now=new Date(),_h=_now.getHours(),_isN=(_h>=20||_h<6);
+  var trBadge=document.getElementById('time-range-badge');
+  if(trBadge){
+    trBadge.textContent=_isN?'🌙 夜間(22〜8時) ±2h':'☀️ 昼間(8〜22時) ±1h';
+    trBadge.style.color=_isN?'#a78bfa':'#f0a500';
+    trBadge.style.borderColor=_isN?'rgba(161,139,250,.3)':'rgba(240,165,0,.3)';
+    trBadge.style.background=_isN?'rgba(161,139,250,.08)':'rgba(240,165,0,.08)';
+  }
+  if(!D){list.innerHTML='<div class="loading"><span class="spin">⏳</span> 読み込み中...</div>';return;}
+  if(!uLat){list.innerHTML='<div class="empty"><span>📡</span><p>GPS取得またはエリア選択で<br>現在地を設定してください</p></div>';return;}
+  var now=new Date(),tgt=now.getHours()+off,agg={};
+  var curH=now.getHours();
+  var isNight=(curH>=22||curH<8);
+  var todayType=getTodayDayType();
+  // 日タイプバッジ更新
+  var dtBadge=document.getElementById('day-type-badge');
+  if(dtBadge){
+    dtBadge.textContent=DAY_TYPE_LABEL[todayType]||'';
+    dtBadge.style.color=DAY_TYPE_COLOR[todayType]||'var(--mu)';
+    dtBadge.style.borderColor=(DAY_TYPE_COLOR[todayType]||'var(--bd)')+'66';
+    dtBadge.style.background=(DAY_TYPE_COLOR[todayType]||'var(--bd)')+'18';
+  }
+  for(var i=0;i<D.length;i++){
+    var r=D[i];
+    if(r.dayType!==todayType)continue;
+    var df=Math.abs(r.hour-tgt);
+    if(df>12)df=24-df;
+    var weight=0;
+    if(df===0||df===1)weight=1.0;
+    else if(df===2&&isNight)weight=0.5;
+    if(weight===0)continue;
+    if(km(uLat,uLng,r.lat,r.lng)>R)continue;
+    var cnt=matchFilter(r)*weight;
+    if(cnt===0)continue;
+    var k=r.ward+r.name;
+    if(!agg[k])agg[k]={w:r.ward,n:r.name,c:0,gc:0,sc:0,nc:0,lat:r.lat,lng:r.lng};
+    agg[k].c+=cnt;agg[k].gc+=r.goCount*weight;agg[k].sc+=r.smCount*weight;agg[k].nc+=r.naCount*weight;
+  }
+  var spots=Object.values(agg).sort(function(a,b){return b.c-a.c;}).slice(0,20);
+  if(!spots.length){list.innerHTML='<div class="empty"><span>🔍</span><p>'+R+'km以内にデータなし<br>半径を広げてみてください</p></div>';return;}
+  var mx=spots[0].c*rainBoost,rc=['r1','r2','r3'],html='';
+  var rl=rainBoost>1.0?'<span style="font-size:9px;margin-left:3px">🌧️+'+Math.round((rainBoost-1)*100)+'%</span>':'';
+  for(var j=0;j<spots.length;j++){
+    var s=spots[j],d=km(uLat,uLng,s.lat,s.lng),score=Math.round(s.c*rainBoost);
+    var gc=Math.round(s.gc),sc=Math.round(s.sc),nc=Math.round(s.nc);
+    var badges='';
+    if(gc>0)badges+='<span class="badge bg">🟢 GO '+gc+'</span>';
+    if(sc>0)badges+='<span class="badge bs">📱 スマ配 '+sc+'</span>';
+    if(nc>0)badges+='<span class="badge bn">🚕 流し '+nc+'</span>';
+    html+='<div class="card" data-idx="'+j+'">'+
+      '<div class="rank '+(j<3?rc[j]:'rn')+'">'+(j+1)+'</div>'+
+      (function(){var _sp=SPECIAL[s.w+s.n];return '<div class="cb"><div class="cn">'+s.w+' '+(_sp?_sp.label:s.n)+'</div>';})()+
+      (badges?'<div class="badges">'+badges+'</div>':'')+
+      '<div class="tags"><span class="tag td">📍 '+d.toFixed(1)+'km</span><span class="tag tc">🏆 '+score+'件'+rl+'</span></div>'+
+      '<div class="bar"><div class="barf" style="width:'+Math.round(s.c*rainBoost/mx*100)+'%"></div></div>'+
+      '</div><div class="carr">›</div></div>';
+  }
+  list.innerHTML=html;
+  window._spots=spots;
+  list.querySelectorAll('.card').forEach(function(card){
+    card.addEventListener('click',function(){
+      var idx=parseInt(this.getAttribute('data-idx'));
+      var s=window._spots[idx];
+      openNav(s.lat,s.lng,s.w+' '+s.n);
+    });
+  });
+}
+
+// Google マップナビ（SPECIAL対応）
+function openNav(lat,lng,name){
+  var key=name.replace(/\s/g,'');
+  var sp=SPECIAL[key];
+  var dest=sp?sp.nav:'東京都'+key;
+  window.location.href='https://maps.google.com/?daddr='+encodeURIComponent(dest)+'&dirflg=d';
+}
+
+function renderHot(){
+  if(!D)return;
+  var agg={};
+  D.forEach(function(r){
+    if(r.day!==hDay)return;
+    if(!agg[r.ward])agg[r.ward]={t:0,s:{}};
+    agg[r.ward].t+=r.count;agg[r.ward].s[r.name]=(agg[r.ward].s[r.name]||0)+r.count;
+  });
+  var areas=Object.entries(agg).sort(function(a,b){return b[1].t-a[1].t;}).slice(0,8);
+  document.getElementById('hl').innerHTML=areas.map(function(e,i){
+    var w=e[0],d=e[1];
+    var tops=Object.entries(d.s).sort(function(a,b){return b[1]-a[1];}).slice(0,5)
+      .map(function(x){return '<span class="pill">'+x[0]+' <b style="color:var(--g)">'+x[1]+'</b></span>';}).join('');
+    return '<div class="area"><div class="ah"><div class="adot" style="background:'+PC[i]+'"></div><div class="an">'+w+'</div><div class="ac">計'+d.t+'件</div></div><div class="aps">'+tops+'</div></div>';
+  }).join('')||'<div class="empty"><span>📊</span><p>データなし</p></div>';
+}
+
+function swTab(t){
+  document.getElementById('tab-r').classList.toggle('on',t==='r');
+  document.getElementById('tab-h').classList.toggle('on',t==='h');
+  document.getElementById('pg-r').style.display=t==='r'?'':'none';
+  document.getElementById('pg-h').style.display=t==='h'?'':'none';
+  if(t==='h')renderHot();
+}
+function openSetup(){
+  document.getElementById('sheet-url').value=localStorage.getItem('taxiradar_url')||'';
+  document.getElementById('setup').classList.remove('hidden');
+}
+function closeSetup(){document.getElementById('setup').classList.add('hidden');}
+function buildValidSet(){
+  var s={};
+  Object.keys(WARD_AREAS).forEach(function(w){
+    WARD_AREAS[w].forEach(function(n){s[w+n]=1;});
+  });
+  return s;
+}
+function diagAddr(){
+  var el=document.getElementById('diag-result');
+  if(!D){el.style.display='block';el.innerHTML='<span style="color:var(--re)">データ未読み込みです。🔄更新を押してください。</span>';return;}
+  var invalid=runDiag();
+  el.style.display='block';
+  if(invalid.length===0){
+    el.innerHTML='<span style="color:var(--g)">✅ 誤入力なし！全て有効リストと一致。</span>';
+  } else {
+    var h='<span style="color:var(--mu)">📍 エリア外（除外中・0.1%未満）'+invalid.length+'件：</span><br>';
+    invalid.forEach(function(x){
+      h+='<span style="color:var(--mu)">'+x.key+'（'+x.cnt+'件）</span><br>';
+    });
+    el.innerHTML=h;
+  }
+}
+function runDiag(){
+  if(!D) return [];
+  var validSet=buildValidSet(), seen={}, invalid=[];
+  D.forEach(function(r){
+    var k=r.ward+r.name;
+    if(!seen[k]){ seen[k]=1; if(!validSet[k]) invalid.push({key:k,cnt:r.count}); }
+  });
+  invalid.sort(function(a,b){return b.cnt-a.cnt;});
+  return invalid;
+}
+
+function clearGeoCache(){
+  GEOCACHE={};
+  try{localStorage.removeItem('taxiradar_geocache');}catch(e){}
+  _geoQ=[];_geoRunning=false;
+  if(D)triggerGeocoding(D);
+  alert('座標キャッシュをクリアしました。バックグラウンドで再取得します。');
+}
+function doSaveSetup(){
+  var url=document.getElementById('sheet-url').value.trim();
+  if(!url||url.indexOf('http')!==0){alert('正しいURLを入力してください。');return;}
+  localStorage.setItem('taxiradar_url',url);
+  closeSetup();
+  loadData(url,false);
+}
+
+// ============================================================
+// エリア選択（テキスト検索 + 履歴 + 2段階選択）
+// ============================================================
+var AREA_HISTORY_KEY='taxiradar_area_history';
+var MAX_HISTORY=8;
+
+function getAreaHistory(){
+  try{var h=localStorage.getItem(AREA_HISTORY_KEY);return h?JSON.parse(h):[];}catch(e){return[];}
+}
+function addAreaHistory(ward,name){
+  var hist=getAreaHistory();
+  // 重複削除
+  hist=hist.filter(function(h){return !(h.ward===ward&&h.name===name);});
+  hist.unshift({ward:ward,name:name});
+  if(hist.length>MAX_HISTORY)hist=hist.slice(0,MAX_HISTORY);
+  try{localStorage.setItem(AREA_HISTORY_KEY,JSON.stringify(hist));}catch(e){}
+}
+
+function openAreaModal(){
+  // 検索ボックスをリセット
+  var inp=document.getElementById('area-search-input');
+  inp.value='';
+  document.getElementById('area-search-results').style.display='none';
+  document.getElementById('area-main-view').style.display='';
+  document.getElementById('area-step1').style.display='';
+  document.getElementById('area-step2').style.display='none';
+  // 区グリッド生成
+  var grid=document.getElementById('ward-grid');
+  grid.innerHTML=Object.keys(WARD_AREAS).map(function(w){
+    return '<button class="area-btn" data-ward="'+w+'">'+w+'</button>';
+  }).join('');
+  grid.querySelectorAll('.area-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){showNames(this.getAttribute('data-ward'));});
+  });
+  // 履歴表示
+  renderHistoryChips();
+  document.getElementById('area-modal').classList.remove('hidden');
+  setTimeout(function(){inp.focus();},100);
+  // IME対応イベント登録（日本語入力の途中で検索しない）
+  inp.removeEventListener('compositionstart',_compStart);
+  inp.removeEventListener('compositionend',_compEnd);
+  inp.removeEventListener('input',_onInput);
+  inp.addEventListener('compositionstart',_compStart);
+  inp.addEventListener('compositionend',_compEnd);
+  inp.addEventListener('input',_onInput);
+}
+var _isComposing=false;
+function _compStart(){_isComposing=true;}
+function _compEnd(e){_isComposing=false;onAreaSearch(e.target.value);}
+function _onInput(e){if(!_isComposing)onAreaSearch(e.target.value);}
+
+function renderHistoryChips(){
+  var hist=getAreaHistory();
+  var sec=document.getElementById('area-history-section');
+  var chips=document.getElementById('hist-chips');
+  if(hist.length===0){sec.style.display='none';return;}
+  sec.style.display='';
+  chips.innerHTML=hist.map(function(h){
+    return '<button class="hist-chip" data-ward="'+h.ward+'" data-name="'+h.name+'">'+
+      '📍 '+h.ward+' '+h.name+'</button>';
+  }).join('');
+  chips.querySelectorAll('.hist-chip').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      selectAreaByName(this.getAttribute('data-ward'),this.getAttribute('data-name'));
+    });
+  });
+}
+
+function onAreaSearch(val){
+  var q=val.trim();
+  var results=document.getElementById('area-search-results');
+  var mainView=document.getElementById('area-main-view');
+  if(!q){
+    results.style.display='none';
+    mainView.style.display='';
+    return;
+  }
+  results.style.display='';
+  mainView.style.display='none';
+  // 全住所から検索
+  var matches=[];
+  Object.keys(WARD_AREAS).forEach(function(ward){
+    var wardMatch=ward.indexOf(q)>=0;
+    WARD_AREAS[ward].forEach(function(name){
+      if(wardMatch||name.indexOf(q)>=0||(ward+name).indexOf(q)>=0){
+        matches.push({ward:ward,name:name});
+      }
+    });
+  });
+  var list=document.getElementById('search-result-list');
+  if(matches.length===0){
+    list.innerHTML='<div class="search-empty">「'+q+'」に一致する住所がありません</div>';
+  } else {
+    list.innerHTML=matches.slice(0,30).map(function(m){
+      var full=m.ward+m.name;
+      var hi=full.split(q).join('<b style="color:var(--g)">'+q+'</b>');
+      return '<button class="search-result-item" data-ward="'+m.ward+'" data-name="'+m.name+'">'+hi+'</button>';
+    }).join('');
+    if(matches.length>30){
+      list.innerHTML+='<div class="search-empty" style="font-size:11px">他 '+(matches.length-30)+'件... 絞り込んでください</div>';
+    }
+    list.querySelectorAll('.search-result-item').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        selectAreaByName(this.getAttribute('data-ward'),this.getAttribute('data-name'));
+      });
+    });
+  }
+}
+
+function showNames(ward){
+  document.getElementById('area-step1').style.display='none';
+  document.getElementById('area-step2').style.display='';
+  document.getElementById('step2-title').textContent=ward;
+  var names=WARD_AREAS[ward]||[];
+  var list=document.getElementById('name-list');
+  list.innerHTML=names.map(function(n){
+    return '<button class="name-btn" data-ward="'+ward+'" data-name="'+n+'">'+n+'</button>';
+  }).join('');
+  list.querySelectorAll('.name-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      selectAreaByName(this.getAttribute('data-ward'),this.getAttribute('data-name'));
+    });
+  });
+}
+function backToStep1(){
+  document.getElementById('area-step1').style.display='';
+  document.getElementById('area-step2').style.display='none';
+}
+function closeAreaModal(){
+  document.getElementById('area-modal').classList.add('hidden');
+  document.getElementById('area-search-input').value='';
+  document.getElementById('area-search-results').style.display='none';
+  document.getElementById('area-main-view').style.display='';
+}
+function selectAreaByName(ward,name){
+  var co=getCoords(ward,name);
+  uLat=co[0];uLng=co[1];
+  document.getElementById('locname').textContent=ward+' '+name;
+  document.getElementById('st').textContent=ward+name+'付近';
+  addAreaHistory(ward,name);
+  closeAreaModal();renderRadar();
+}
+
+function fetchWeather(lat,lng){
+  fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lng+'&current=temperature_2m,precipitation,weathercode&timezone=Asia%2FTokyo')
+    .then(function(r){return r.json();})
+    .then(function(data){
+      var cur=data.current,temp=Math.round(cur.temperature_2m),precip=cur.precipitation,code=cur.weathercode;
+      var icons={0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',80:'🌦️',81:'🌧️',82:'⛈️',95:'⛈️'};
+      var descs={0:'快晴',1:'晴れ',2:'晴れ時々曇り',3:'曇り',45:'霧',51:'小雨',53:'霧雨',55:'雨',61:'小雨',63:'雨',65:'強い雨',80:'にわか雨',81:'雨',82:'強い雨',95:'雷雨'};
+      document.getElementById('wx-bar').style.display='flex';
+      document.getElementById('wx-icon').textContent=icons[code]||'🌤️';
+      document.getElementById('wx-temp').textContent=temp+'°C';
+      document.getElementById('wx-desc').textContent=descs[code]||'-';
+      var rainEl=document.getElementById('wx-rain');
+      if(precip>0||code>=51){
+        rainBoost=precip>5?1.5:precip>1?1.3:1.15;
+        rainEl.textContent='🌧️ 需要+'+Math.round((rainBoost-1)*100)+'%';
+        rainEl.className=precip>5?'wx-rain heavy':'wx-rain';
+        rainEl.style.display='block';
+      }else{rainBoost=1.0;rainEl.style.display='none';}
+      if(uLat)renderRadar();
+    }).catch(function(){});
+}
+
+function updateNotifyBtn(){
+  var btn=document.getElementById('notify-btn');
+  if(notifyEnabled){btn.textContent='🔔 通知ON';btn.style.background='var(--gd)';btn.style.color='var(--g)';btn.style.borderColor='rgba(57,211,83,.4)';}
+  else{btn.textContent='🔕 通知OFF';btn.style.background='';btn.style.color='';btn.style.borderColor='';}
+}
+function toggleNotify(){
+  if(notifyEnabled){
+    notifyEnabled=false;localStorage.setItem('taxiradar_notify','0');
+    if(notifyInterval){clearInterval(notifyInterval);notifyInterval=null;}
+    updateNotifyBtn();
+  }else{
+    if(!('Notification'in window)){alert('このブラウザは通知非対応です。ホーム画面に追加してください。');return;}
+    Notification.requestPermission().then(function(r){
+      if(r==='granted'){notifyEnabled=true;localStorage.setItem('taxiradar_notify','1');updateNotifyBtn();startNotifyWatch();}
+      else{alert('通知が許可されませんでした。');}
+    });
+  }
+}
+function startNotifyWatch(){
+  if(notifyInterval)clearInterval(notifyInterval);
+  notifyInterval=setInterval(function(){
+    if(!notifyEnabled||!D||!uLat)return;
+    var now=new Date(),tgt=now.getHours(),day=DAYS[now.getDay()],best=null,bestScore=0;
+    D.forEach(function(r){
+      if(r.day!==day||Math.abs(r.hour-tgt)>1||km(uLat,uLng,r.lat,r.lng)>3)return;
+      var sc=r.count/(km(uLat,uLng,r.lat,r.lng)+0.5);
+      if(sc>bestScore){bestScore=sc;best=r;}
+    });
+    if(best&&bestScore>2){
+      var d=km(uLat,uLng,best.lat,best.lng).toFixed(1);
+      new Notification('🚖 TAXI RADAR',{body:'📍 '+best.ward+' '+best.name+'\n'+d+'km先 ｜ '+best.count+'件',tag:'taxiradar'});
+    }
+  },5*60*1000);
+}
+
+// フィルター
+function toggleFilterBtn(btn){
+  var ft=btn.getAttribute('data-ft'),v=btn.getAttribute('data-v');
+  var container=btn.parentElement;
+  var allBtn=container.querySelector('[data-v="all"]');
+  if(v==='all'){
+    container.querySelectorAll('.fbtn').forEach(function(b){b.className='fbtn';});
+    allBtn.className='fbtn on-all';
+    if(ft==='status')stFilter=[];
+    else if(ft==='fare')fareFilter='all';
+    else skFilter='all';
+  }else{
+    allBtn.className='fbtn';
+    if(ft==='status'){
+      var idx=stFilter.indexOf(v);
+      if(idx>=0){stFilter.splice(idx,1);btn.className='fbtn';}
+      else{stFilter.push(v);btn.className='fbtn on-'+(v==='GO'?'go':v==='スマ配'?'sm':'na');}
+      if(stFilter.length===0)allBtn.className='fbtn on-all';
+    }else if(ft==='fare'){
+      container.querySelectorAll('.fbtn').forEach(function(b){b.className='fbtn';});
+      if(fareFilter===v){fareFilter='all';allBtn.className='fbtn on-all';}
+      else{fareFilter=v;btn.className='fbtn on-fare';}
+    }else{
+      container.querySelectorAll('.fbtn').forEach(function(b){b.className='fbtn';});
+      if(skFilter===v){skFilter='all';allBtn.className='fbtn on-all';}
+      else{skFilter=v;btn.className='fbtn on-sk';}
+    }
+  }
+  renderRadar();
+}
+
+// イベント登録
+document.getElementById('setup-save').addEventListener('click',doSaveSetup);
+document.getElementById('open-setup').addEventListener('click',openSetup);
+document.getElementById('notify-btn').addEventListener('click',toggleNotify);
+document.getElementById('tab-r').addEventListener('click',function(){swTab('r');});
+document.getElementById('tab-h').addEventListener('click',function(){swTab('h');});
+document.getElementById('errcls').addEventListener('click',closeErr);
+document.getElementById('areabtn').addEventListener('click',openAreaModal);
+document.getElementById('refresh-btn').addEventListener('click',function(){
+  var url=localStorage.getItem('taxiradar_url');
+  if(!url){openSetup();return;}
+  loadData(url,true);
+});
+document.getElementById('gpsbtn').addEventListener('click',function(){
+  if(!navigator.geolocation){showErr('GPS非対応です。エリア選択をご利用ください。');return;}
+  var btn=this;btn.textContent='⏳ 取得中...';btn.disabled=true;
+  document.getElementById('st').textContent='GPS取得中...';
+  navigator.geolocation.getCurrentPosition(
+    function(pos){
+      uLat=pos.coords.latitude;uLng=pos.coords.longitude;
+      btn.textContent='📡 GPS取得';btn.disabled=false;
+      document.getElementById('locname').textContent=uLat.toFixed(5)+', '+uLng.toFixed(5);
+      document.getElementById('st').textContent='現在地を取得しました ✓';
+      closeErr();renderRadar();fetchWeather(uLat,uLng);
+      if(notifyEnabled)startNotifyWatch();
+      fetch('https://nominatim.openstreetmap.org/reverse?lat='+uLat+'&lon='+uLng+'&format=json&accept-language=ja')
+        .then(function(r){return r.json();})
+        .then(function(data){
+          var a=data.address,n=(a.city_district||a.suburb||a.neighbourhood||a.city||'')+(a.quarter||'');
+          if(n){document.getElementById('locname').textContent=n;document.getElementById('st').textContent=n+'付近';}
+        }).catch(function(){});
+    },
+    function(err){
+      btn.textContent='📡 GPS取得';btn.disabled=false;
+      var msg='GPS取得に失敗しました。';
+      if(err.code===1)msg='位置情報が拒否されています。\nSafari設定 → 位置情報 →「このAppの使用中」に変更してください。';
+      else if(err.code===3)msg='タイムアウトしました。屋外でお試しください。';
+      showErr(msg);
+      document.getElementById('st').textContent='GPS失敗 — エリア選択をお試しください';
+    },
+    {enableHighAccuracy:true,timeout:15000,maximumAge:0}
+  );
+});
+document.getElementById('rs').addEventListener('input',function(){
+  R=parseInt(this.value);
+  document.getElementById('rv').textContent=R+'km';
+  this.style.setProperty('--p',((R-1)/4*100).toFixed(1)+'%');
+  if(uLat)renderRadar();
+});
+document.querySelectorAll('#tc .chip').forEach(function(c){
+  c.addEventListener('click',function(){
+    document.querySelectorAll('#tc .chip').forEach(function(x){x.classList.remove('on');});
+    this.classList.add('on');off=parseInt(this.getAttribute('data-o'));
+    if(uLat)renderRadar();
+  });
+});
+document.querySelectorAll('#dc .chip').forEach(function(c){
+  c.addEventListener('click',function(){
+    document.querySelectorAll('#dc .chip').forEach(function(x){x.classList.remove('on');});
+    this.classList.add('on');
+    var v=this.getAttribute('data-d');
+    hDay=(v==='today')?DAYS[new Date().getDay()]:v;
+    renderHot();
+  });
+});
+document.querySelectorAll('.fbtn').forEach(function(btn){
+  btn.addEventListener('click',function(){toggleFilterBtn(this);});
+});
+
+// 起動
+(function(){
+  notifyEnabled=localStorage.getItem('taxiradar_notify')==='1';
+  if(notifyEnabled&&typeof Notification!=='undefined'&&Notification.permission==='granted'){startNotifyWatch();}
+  else{notifyEnabled=false;}
+  updateNotifyBtn();
+  var url=localStorage.getItem('taxiradar_url');
+  // 座標スプレッドシートを読み込んでから起動
+  loadCoordsCSV(function(){
+    if(!url){
+      var cached=loadCache();
+      if(cached){D=cached.data;updateDataBar(cached.count,new Date(cached.time));renderRadar();renderHot();}
+      openSetup();
+    }else{
+      document.getElementById('setup').classList.add('hidden');
+      var cached=loadCache();
+      if(cached){
+        D=cached.data;updateDataBar(cached.count,new Date(cached.time));
+        document.getElementById('st').textContent='📍 現在地を設定してください';
+        renderRadar();renderHot();
+        if(D)triggerGeocoding(D);
+      }
+      loadData(url,!!cached);
+    }
+  });
+})();
+
+</script>
+</body>
+</html>
