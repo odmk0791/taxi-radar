@@ -150,7 +150,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 </div>
 <div id="area-modal" class="hidden">
   <div class="area-sheet">
-    <input class="area-search" id="area-search-input" type="search" placeholder="🔍 住所を検索（例：六本木、三軒茶屋）" oninput="onAreaSearch(this.value)" autocomplete="off">
+    <input class="area-search" id="area-search-input" type="search" placeholder="🔍 住所を検索（例：六本木、三軒茶屋）" autocomplete="off">
     <div id="area-search-results" style="display:none">
       <div class="search-results" id="search-result-list"></div>
     </div>
@@ -784,7 +784,18 @@ function openAreaModal(){
   renderHistoryChips();
   document.getElementById('area-modal').classList.remove('hidden');
   setTimeout(function(){inp.focus();},100);
+  // IME対応イベント登録（日本語入力の途中で検索しない）
+  inp.removeEventListener('compositionstart',_compStart);
+  inp.removeEventListener('compositionend',_compEnd);
+  inp.removeEventListener('input',_onInput);
+  inp.addEventListener('compositionstart',_compStart);
+  inp.addEventListener('compositionend',_compEnd);
+  inp.addEventListener('input',_onInput);
 }
+var _isComposing=false;
+function _compStart(){_isComposing=true;}
+function _compEnd(e){_isComposing=false;onAreaSearch(e.target.value);}
+function _onInput(e){if(!_isComposing)onAreaSearch(e.target.value);}
 
 function renderHistoryChips(){
   var hist=getAreaHistory();
@@ -829,10 +840,9 @@ function onAreaSearch(val){
     list.innerHTML='<div class="search-empty">「'+q+'」に一致する住所がありません</div>';
   } else {
     list.innerHTML=matches.slice(0,30).map(function(m){
-      var display=(ward+m.name).replace(q,'<b style="color:var(--g)">'+q+'</b>');
-      return '<button class="search-result-item" data-ward="'+m.ward+'" data-name="'+m.name+'">'+
-        '<span class="ward-tag">'+m.ward+'</span>'+m.name+
-        (matches.length>30&&m===matches[29]?'':'')+'</button>';
+      var full=m.ward+m.name;
+      var hi=full.split(q).join('<b style="color:var(--g)">'+q+'</b>');
+      return '<button class="search-result-item" data-ward="'+m.ward+'" data-name="'+m.name+'">'+hi+'</button>';
     }).join('');
     if(matches.length>30){
       list.innerHTML+='<div class="search-empty" style="font-size:11px">他 '+(matches.length-30)+'件... 絞り込んでください</div>';
