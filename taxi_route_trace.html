@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ROUTE TRACE for TAXI Driver</title>
+<title>Route Trace for TAXI Driver</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
@@ -273,7 +273,7 @@ td.cnt-cell,td.avg-cell{text-align:right;}
 <div id="view-dates">
   <div class="dl-head">
     <div>
-      <div class="dl-subtitle">ROUTE TRACE for TAXI Driver</div>
+      <div class="dl-subtitle">Route Trace for TAXI Driver</div>
       <div class="dl-title">営業日報 一覧</div>
     </div>
     <!-- 売上フィルター -->
@@ -323,7 +323,7 @@ td.cnt-cell,td.avg-cell{text-align:right;}
       <span>←</span><span>日報一覧に戻る</span>
     </div>
     <div class="s-head">
-      <div class="s-eye">ROUTE TRACE for TAXI Driver</div>
+      <div class="s-eye">Route Trace for TAXI Driver</div>
       <div class="s-date" id="s-date">—</div>
       <div class="s-dow" id="s-dow">—</div>
     </div>
@@ -355,7 +355,7 @@ td.cnt-cell,td.avg-cell{text-align:right;}
   </div>
 </div>
 <script>
-const URL_COORD='./busann23ku_gsi_coordinates.csv';
+const URL_COORD='https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=657495537&single=true&output=csv';
 const URL_DAILY='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
 const URL_BD='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
 const C_PW='乗車地：市区',C_PT='乗車地：地名',C_DW='降車地：市区',C_DT='降車地：地名';
