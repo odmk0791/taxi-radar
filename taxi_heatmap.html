@@ -135,7 +135,7 @@ body{background:var(--bg);color:var(--text);
   </div>
   <div id="time-group">
     <span class="ctrl-label">時間帯</span>
-    <input type="range" id="time-slider" min="0" max="34" step="1" value="19">
+    <input type="range" id="time-slider" min="0" max="40" step="1" value="19">
     <span id="time-display">19時台</span>
     <button class="ctrl-btn" id="now-btn">現在時刻</button>
     <button class="ctrl-btn" id="play-btn">▶ 再生</button>
@@ -202,7 +202,7 @@ const COL = {date:0, time:2, ward:5, place:6};
 
 let rideData = {};
 const resetData = () => {
-  for(let d=0;d<=7;d++){rideData[d]={};for(let h=0;h<=34;h++)rideData[d][h]={};}
+  for(let d=0;d<=7;d++){rideData[d]={};for(let h=0;h<=40;h++)rideData[d][h]={};}
 };
 resetData();
 let globalMax=1, totalCount=0;
@@ -369,7 +369,7 @@ function drawPolygons(){
 // ================================================================
 function updateStats(entries, slotMax){
   const total = entries.reduce((s,[,c])=>s+c, 0);
-  document.getElementById('s-count').textContent = total>0 ? total+'件' : '—';
+  document.getElementById('s-count').textContent = total>0 ? total+'件' : '0件';
 
   const hotPct = globalMax>0 ? Math.round(slotMax/globalMax*100) : 0;
   const level = hotPct>=70?'🔴 超ホット':hotPct>=40?'🟠 ホット':
@@ -380,7 +380,18 @@ function updateStats(entries, slotMax){
     const top = [...entries].sort((a,b)=>b[1]-a[1])[0];
     document.getElementById('s-top').textContent = `${top[0]}（${top[1]}件）`;
   } else {
-    document.getElementById('s-top').textContent = 'データなし';
+    // 近隣の時間帯を探してヒント表示
+    const days=['日','月','火','水','木','金','土','祝前'];
+    let hint='—';
+    const dayData = rideData[selectedDay]||{};
+    let bestH=-1, bestC=0;
+    for(let h=0;h<=40;h++){
+      const c=Object.values(dayData[h]||{}).reduce((s,v)=>s+v,0);
+      if(c>bestC){bestC=c;bestH=h;}
+    }
+    if(bestH>=0) hint=`データなし（${days[selectedDay]}の最多:${bestH}時台 ${bestC}件）`;
+    else hint=`${days[selectedDay]}のデータなし`;
+    document.getElementById('s-top').textContent = hint;
   }
 }
 
@@ -390,7 +401,7 @@ function updateStats(entries, slotMax){
 const computeGlobalMax = () => {
   globalMax=1;
   for(let d=0;d<=7;d++)
-    for(let h=0;h<=34;h++)  // 16〜34時シフト全体をカバー
+    for(let h=0;h<=40;h++)  // 16〜40時（余裕込み）
       Object.values(rideData[d][h]||{}).forEach(c=>{if(c>globalMax)globalMax=c;});
 };
 
@@ -408,6 +419,8 @@ function processCSV(rows){
     const date=new Date(ds+'T00:00:00');
     const dow=date.getDay();
     const cat=isHoliday(ds)?0:(isHolidayEve(ds)?7:dow);
+    // hour が 34 超の場合も安全に対応（深夜残業など）
+    if(!rideData[cat][hour]) rideData[cat][hour]={};
     rideData[cat][hour][addr]=(rideData[cat][hour][addr]||0)+1;
     ok++;
   }
