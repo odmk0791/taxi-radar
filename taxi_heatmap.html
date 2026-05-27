@@ -182,10 +182,15 @@ COORDS_REAL.forEach(([addr,lat,lng]) => { coordLookup[addr]=[lat,lng]; });
 // ================================================================
 const HOLIDAYS = new Set(["2024-01-01", "2024-01-08", "2024-02-11", "2024-02-12", "2024-02-23", "2024-03-20", "2024-04-29", "2024-05-03", "2024-05-04", "2024-05-05", "2024-05-06", "2024-07-15", "2024-08-11", "2024-08-12", "2024-09-16", "2024-09-22", "2024-09-23", "2024-10-14", "2024-11-03", "2024-11-04", "2024-11-23", "2025-01-01", "2025-01-13", "2025-02-11", "2025-02-23", "2025-02-24", "2025-03-20", "2025-04-29", "2025-05-03", "2025-05-04", "2025-05-05", "2025-05-06", "2025-07-21", "2025-08-11", "2025-09-15", "2025-09-23", "2025-10-13", "2025-11-03", "2025-11-23", "2025-11-24", "2026-01-01", "2026-01-12", "2026-02-11", "2026-02-23", "2026-03-20", "2026-04-29", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-07-20", "2026-08-11", "2026-09-21", "2026-09-22", "2026-09-23", "2026-10-12", "2026-11-03", "2026-11-23"]);
 const isHoliday  = ds => HOLIDAYS.has(ds);
+
+// toISOString()はUTC返却のため日本時間と最大9時間ずれる
+// → getFullYear/Month/Dateでローカル日付を取得
+const localDateStr = d =>
+  `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 const isHolidayEve = ds => {
   try{
     const d=new Date(ds+'T00:00:00'); d.setDate(d.getDate()+1);
-    return HOLIDAYS.has(d.toISOString().split('T')[0]);
+    return HOLIDAYS.has(localDateStr(d));  // UTC非依存
   }catch{return false;}
 };
 
@@ -385,7 +390,7 @@ function updateStats(entries, slotMax){
 const computeGlobalMax = () => {
   globalMax=1;
   for(let d=0;d<=7;d++)
-    for(let h=0;h<24;h++)
+    for(let h=0;h<=34;h++)  // 16〜34時シフト全体をカバー
       Object.values(rideData[d][h]||{}).forEach(c=>{if(c>globalMax)globalMax=c;});
 };
 
@@ -492,7 +497,7 @@ const updateTime = () => {
 const updateClock = () => {
   const n=new Date();
   const days=['日','月','火','水','木','金','土'];
-  const ds=n.toISOString().split('T')[0];
+  const ds=localDateStr(n);  // ローカル日付
   let lbl=days[n.getDay()]+'曜日';
   if(isHoliday(ds)) lbl+='（祝日）';
   else if(isHolidayEve(ds)) lbl+='（祝前日）';
@@ -502,17 +507,20 @@ const updateClock = () => {
 };
 
 const jumpToNow = () => {
-  const n=new Date();
-  let h=n.getHours();
-  let ds=n.toISOString().split('T')[0];
-  // 0〜10時は前日シフトの続き（+24して前日の曜日で検索）
-  if(h<=10){
-    h=h+24;
-    const prev=new Date(n); prev.setDate(prev.getDate()-1);
-    ds=prev.toISOString().split('T')[0];
+  const n = new Date();
+  let h = n.getHours();
+  // ローカル日付を使用（toISOString はUTCのため日本時間でズレる）
+  let ds = localDateStr(n);
+  // 0〜10時は前日シフトの続き → 時刻+24・日付を前日に
+  if(h <= 10){
+    h = h + 24;
+    const prev = new Date(n.getFullYear(), n.getMonth(), n.getDate() - 1);
+    ds = localDateStr(prev);
   }
-  selectedHour=h;
-  selectedDay=isHoliday(ds)?0:(isHolidayEve(ds)?7:new Date(ds+'T00:00:00').getDay());
+  selectedHour = h;
+  selectedDay = isHoliday(ds) ? 0
+              : isHolidayEve(ds) ? 7
+              : new Date(ds + 'T00:00:00').getDay();
   updateDayBtns(); updateTime(); drawPolygons();
 };
 
