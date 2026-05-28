@@ -135,7 +135,7 @@ body{background:var(--bg);color:var(--text);
   </div>
   <div id="time-group">
     <span class="ctrl-label">時間帯</span>
-    <input type="range" id="time-slider" min="0" max="40" step="1" value="19">
+    <input type="range" id="time-slider" min="0" max="36" step="1" value="19">
     <span id="time-display">19時台</span>
     <button class="ctrl-btn" id="now-btn">現在時刻</button>
     <button class="ctrl-btn" id="play-btn">▶ 再生</button>
@@ -396,7 +396,7 @@ function updateStats(entries, slotMax){
     let hint='—';
     const dayData = rideData[selectedDay]||{};
     let bestH=-1, bestC=0;
-    for(let h=0;h<=40;h++){
+    for(let h=0;h<=36;h++){
       const c=Object.values(dayData[h]||{}).reduce((s,v)=>s+v,0);
       if(c>bestC){bestC=c;bestH=h;}
     }
@@ -542,6 +542,8 @@ const jumpToNow = () => {
     ds = localDateStr(prev);
   }
   selectedHour = h;
+  // シフト外（11〜15時台）は16時台に補正
+  if(selectedHour >= 11 && selectedHour <= 15) selectedHour = 16;
   selectedDay = isHoliday(ds) ? 0
               : isHolidayEve(ds) ? 7
               : new Date(ds + 'T00:00:00').getDay();
@@ -556,7 +558,7 @@ const togglePlay = () => {
   }else{
     btn.textContent='⏸ 停止'; btn.classList.add('playing');
     playTimer=setInterval(()=>{
-      selectedHour = selectedHour >= 34 ? 0 : selectedHour + 1;
+      selectedHour = selectedHour >= 36 ? 16 : selectedHour + 1;
       updateTime(); drawPolygons();
     },750);
   }
