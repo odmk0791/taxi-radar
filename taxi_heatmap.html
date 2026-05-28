@@ -556,7 +556,7 @@ const togglePlay = () => {
   }else{
     btn.textContent='⏸ 停止'; btn.classList.add('playing');
     playTimer=setInterval(()=>{
-      selectedHour=(selectedHour+1)%24;
+      selectedHour = selectedHour >= 34 ? 0 : selectedHour + 1;
       updateTime(); drawPolygons();
     },750);
   }
