@@ -105,6 +105,9 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 .cb{flex:1;min-width:0}
 .cn{font-size:15px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-bottom:3px}
 .badges{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px}
+.hot-row{margin-bottom:5px}
+.badge-hot{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;border-radius:20px;background:rgba(255,90,0,.15);border:1px solid rgba(255,90,0,.45);color:#ff7a30;font-size:11px;font-weight:800;letter-spacing:.02em;animation:hotpulse 1.4s ease-in-out infinite;}
+@keyframes hotpulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,90,0,.35);}60%{opacity:.9;box-shadow:0 0 0 5px rgba(255,90,0,0);}}
 .badge{font-size:9px;padding:2px 6px;border-radius:10px;font-weight:700}
 .bg{background:rgba(57,211,83,.15);color:#39d353}
 .bs{background:rgba(88,166,255,.15);color:#58a6ff}
@@ -527,8 +530,9 @@ function buildData(parsed){
     var status=(r[iS]||'').trim(),fareRaw=(r[iF]||'').trim();
     var sk=(r[iK]||'').trim();
     if(!day||!ts||!ward||!name)continue;
-    var hm=ts.match(/^(\d+):/);if(!hm)continue;
+    var hm=ts.match(/^(\d+):(\d+)/);if(!hm)continue;
     var hour=parseInt(hm[1]);
+    var min=parseInt(hm[2])||0;
     // 日付からdayTypeを判定
     var dayType='weekday';
     if(dateStr){
@@ -541,10 +545,11 @@ function buildData(parsed){
       agg[key]={day:day,dayType:dayType,hour:hour,ward:ward,name:name,
         count:0,goCount:0,smCount:0,naCount:0,
         fb:[0,0,0,0],skCount:0,normalCount:0,ptCount:0,ptPCount:0,
-        lat:co[0],lng:co[1]};
+        lat:co[0],lng:co[1],mins:[]};
     }
     var e=agg[key];
     e.count++;
+    e.mins.push(min);
     if(status==='GO')e.goCount++;
     if(status==='スマ配')e.smCount++;
     if(status==='流し')e.naCount++;
@@ -669,10 +674,25 @@ function renderRadar(){
     var cnt=matchFilter(r)*weight;
     if(cnt===0)continue;
     var k=r.ward+r.name;
-    if(!agg[k])agg[k]={w:r.ward,n:r.name,c:0,gc:0,sc:0,nc:0,lat:r.lat,lng:r.lng};
+    if(!agg[k])agg[k]={w:r.ward,n:r.name,c:0,gc:0,sc:0,nc:0,lat:r.lat,lng:r.lng,mins:[]};
     agg[k].c+=cnt;agg[k].gc+=r.goCount*weight;agg[k].sc+=r.smCount*weight;agg[k].nc+=r.naCount*weight;
+    if(r.mins)r.mins.forEach(function(m){agg[k].mins.push(r.hour*60+m);});
   }
   var spots=Object.values(agg).sort(function(a,b){return b.c-a.c;}).slice(0,20);
+  // ±5分チェック
+  var nowTotalMins=(now.getHours()+off)*60+now.getMinutes();
+  spots.forEach(function(s){
+    s.hotDiff=null;s.hotTime=null;
+    (s.mins||[]).forEach(function(tm){
+      var diff=Math.abs(tm-nowTotalMins);
+      if(diff>720)diff=1440-diff;
+      if(diff<=5&&(s.hotDiff===null||diff<s.hotDiff)){
+        s.hotDiff=diff;
+        var hh=Math.floor(tm/60),mm=tm%60;
+        s.hotTime=(hh<0?hh+24:hh)+':'+(mm<10?'0':'')+mm;
+      }
+    });
+  });
   if(!spots.length){list.innerHTML='<div class="empty"><span>🔍</span><p>'+R+'km以内にデータなし<br>半径を広げてみてください</p></div>';return;}
   var mx=spots[0].c*rainBoost,rc=['r1','r2','r3'],html='';
   var rl=rainBoost>1.0?'<span style="font-size:9px;margin-left:3px">🌧️+'+Math.round((rainBoost-1)*100)+'%</span>':'';
@@ -683,10 +703,12 @@ function renderRadar(){
     if(gc>0)badges+='<span class="badge bg">🟢 GO '+gc+'</span>';
     if(sc>0)badges+='<span class="badge bs">📱 スマ配 '+sc+'</span>';
     if(nc>0)badges+='<span class="badge bn">🚕 流し '+nc+'</span>';
+    var hotBadge=s.hotTime?'<span class="badge-hot">⚡ '+s.hotTime+'の実績</span>':'';
     html+='<div class="card" data-idx="'+j+'">'+
       '<div class="rank '+(j<3?rc[j]:'rn')+'">'+(j+1)+'</div>'+
       (function(){var _sp=SPECIAL[s.w+s.n];return '<div class="cb"><div class="cn">'+s.w+' '+(_sp?_sp.label:s.n)+'</div>';})()+
       (badges?'<div class="badges">'+badges+'</div>':'')+
+      (hotBadge?'<div class="hot-row">'+hotBadge+'</div>':'')+
       '<div class="tags"><span class="tag td">📍 '+d.toFixed(1)+'km</span><span class="tag tc">🏆 '+score+'件'+rl+'</span></div>'+
       '<div class="bar"><div class="barf" style="width:'+Math.round(s.c*rainBoost/mx*100)+'%"></div></div>'+
       '</div><div class="carr">›</div></div>';
