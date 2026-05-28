@@ -685,7 +685,7 @@ function renderRadar(){
     s.hotDiff=null;s.hotTime=null;
     (s.mins||[]).forEach(function(tm){
       var diff=Math.abs(tm-nowTotalMins);
-      if(diff>720)diff=1440-diff;
+      if(diff>720)diff=Math.abs(1440-diff);
       if(diff<=5&&(s.hotDiff===null||diff<s.hotDiff)){
         s.hotDiff=diff;
         var hh=Math.floor(tm/60),mm=tm%60;
