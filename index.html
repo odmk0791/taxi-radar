@@ -1170,27 +1170,6 @@ function saveComp(val,e){
   var fab=document.getElementById('comp-fab');
   if(fab){fab.style.background='#39d353';setTimeout(function(){fab.style.background='';},600);}
 }
-}
-function saveComp(val){
-  var now=new Date();
-  var h=now.getHours(),m=now.getMinutes();
-  var rec={
-    ts:now.toISOString(),
-    disp:(h<10?'0':'')+h+':'+(m<10?'0':'')+m,
-    area:_compArea,
-    lat:_compLat,lng:_compLng,
-    count:val,
-    hour:h
-  };
-  var logs=JSON.parse(localStorage.getItem(COMP_LOG_KEY)||'[]');
-  logs.push(rec);
-  if(logs.length>2000)logs=logs.slice(-2000);
-  localStorage.setItem(COMP_LOG_KEY,JSON.stringify(logs));
-  closeCompLog();
-  var btn=document.getElementById('comp-fab');
-  btn.style.background='#39d353';
-  setTimeout(function(){btn.style.background='';},600);
-}
 
 // 競合記録ボタン登録
 (function(){
