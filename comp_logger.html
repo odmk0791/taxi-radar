@@ -73,6 +73,7 @@ body{display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:0}
       <div class="area-label">記録エリア</div>
       <div id="area-name" class="area-name">エリア未設定</div>
     </div>
+    <button id="gps-btn" class="area-change" onclick="getGPS()" style="margin-right:6px">📡 現在地</button>
     <button class="area-change" onclick="toggleSearch()">変更</button>
   </div>
   <div id="search-box" style="display:none" class="search-box">
@@ -144,6 +145,50 @@ function loadCoords(){
   }).catch(function(){});
 }
 loadCoords();
+
+// GPS現在地取得
+function getGPS(){
+  if(!navigator.geolocation){ alert('GPS非対応です'); return; }
+  var btn = document.getElementById('gps-btn');
+  btn.textContent = '⏳';
+  btn.disabled = true;
+  navigator.geolocation.getCurrentPosition(
+    function(pos){
+      currentLat = pos.coords.latitude;
+      currentLng = pos.coords.longitude;
+      btn.textContent = '📡 現在地';
+      btn.disabled = false;
+      // 最近傍エリアを座標DBから検索
+      var best = null, bestD = Infinity;
+      var keys = Object.keys(coords);
+      for(var i=0;i<keys.length;i++){
+        var c = coords[keys[i]];
+        var d = Math.pow(c[0]-currentLat,2) + Math.pow(c[1]-currentLng,2);
+        if(d < bestD){ bestD = d; best = keys[i]; }
+      }
+      if(best){
+        currentArea = best;
+        document.getElementById('area-name').textContent = best;
+        document.getElementById('area-name').style.color = '';
+      }
+      // Nominatimで住所も取得（非同期で上書き）
+      fetch('https://nominatim.openstreetmap.org/reverse?lat='+currentLat+'&lon='+currentLng+'&format=json&accept-language=ja')
+        .then(function(r){return r.json();})
+        .then(function(data){
+          var a = data.address;
+          var ward = a.city_district||a.suburb||a.neighbourhood||a.city||'';
+          var quarter = a.quarter||'';
+          if(ward){ document.getElementById('area-name').textContent = ward+quarter; }
+        }).catch(function(){});
+    },
+    function(err){
+      btn.textContent = '📡 現在地';
+      btn.disabled = false;
+      alert('GPS取得失敗。設定から位置情報を許可してください。');
+    },
+    {enableHighAccuracy:true, timeout:12000, maximumAge:0}
+  );
+}
 
 // エリア検索
 function toggleSearch(){
