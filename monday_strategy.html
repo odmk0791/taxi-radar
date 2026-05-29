@@ -6,72 +6,15 @@
 <title>月曜日 売上向上ダッシュボード</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans','Noto Sans JP',sans-serif;min-height:100vh;padding-bottom:48px}
-#hdr{background:linear-gradient(135deg,#1c0a3a,#0f1e40,#0a2050);border-bottom:1px solid #f8717155;padding:18px 16px 14px;position:sticky;top:0;z-index:100}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:40px}
+#hdr{background:linear-gradient(135deg,#1c0a3a,#0f1e40,#0a2050);border-bottom:1px solid #f8717155;padding:18px 16px 14px}
 #hdr .sub{font-size:10px;color:#f87171;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
 #hdr h1{font-size:19px;font-weight:800}
 #hdr .desc{font-size:11px;color:#475569;margin-top:3px}
-/* ステータス表示 */
-#status-area{padding:24px 20px;text-align:center}
-#status-icon{font-size:40px;margin-bottom:12px}
-#status-text{font-size:14px;color:#94a3b8;line-height:1.8;margin-bottom:8px}
-#status-detail{font-size:11px;color:#475569;word-break:break-all;line-height:1.7;margin-bottom:16px;background:#161626;border:1px solid #1e2d40;border-radius:8px;padding:10px;display:none}
-#btn-retry{background:#1a2035;border:1px solid #f87171;border-radius:10px;padding:10px 24px;color:#f87171;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;display:none}
-/* メイン */
-#main{display:none}
-.kpi-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:14px 14px 0}
-.kpi{background:#161626;border-radius:12px;padding:10px;border:1px solid #333}
-.kpi .ico{font-size:13px;margin-bottom:2px}
-.kpi .lbl{font-size:9px;color:#475569;letter-spacing:1px;margin-bottom:3px}
-.kpi .val{font-size:14px;font-weight:800;line-height:1.2}
-.kpi .sub{font-size:9px;color:#475569;margin-top:3px}
-.tabs{display:flex;gap:5px;padding:12px 14px 0;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.tab{padding:7px 12px;border-radius:20px;border:none;background:#151e30;color:#64748b;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0;-webkit-tap-highlight-color:transparent}
-.tab.on{background:#f87171;color:#fff}
-.panel{padding:12px 14px 0;display:none}
-.panel.on{display:block}
-.sec-lbl{font-size:11px;color:#475569;margin-bottom:12px}
-.dow-row{margin-bottom:9px}
-.dow-row .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}
-.dow-badge{width:27px;height:27px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;border:1.5px solid;flex-shrink:0}
-.bar-wrap{height:18px;background:#151e30;border-radius:4px;overflow:hidden;position:relative}
-.bar-inner{height:100%;border-radius:4px;display:flex;align-items:center}
-.bar-label{font-size:9px;color:#fff;padding-left:8px;font-weight:700}
-.bar-right{position:absolute;top:0;right:0;bottom:0;display:flex;align-items:center;padding-right:8px}
-.bar-right span{font-size:9px;color:#f87171;font-weight:700}
-.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:13px 14px;margin-bottom:10px}
-.card-title{font-size:11px;font-weight:700;margin-bottom:8px}
-.gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
-.gap-cell{background:#0d1220;border-radius:8px;padding:8px 10px}
-.gap-cell .lbl{font-size:9px;color:#475569;margin-bottom:3px}
-.gap-cell .val{font-size:14px;font-weight:800}
-.h-row{margin-bottom:8px}
-.h-row .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}
-.h-lbl{font-size:12px;font-weight:700;min-width:52px}
-.hot-badge{font-size:9px;background:#f59e0b22;color:#f59e0b;padding:1px 5px;border-radius:8px;margin-left:6px}
-.spot-item{border:1px solid #1e2d40;border-radius:12px;padding:9px 12px;margin-bottom:7px;background:#161626}
-.spot-item.top3{border-color:#facc1555;background:#facc1508}
-.spot-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px}
-.spot-name{font-size:11px;font-weight:700;line-height:1.3}
-.spot-cnt{font-size:13px;font-weight:700;text-align:right}
-.spot-avg{font-size:9px;color:#475569;text-align:right}
-.st-row{margin-bottom:10px}
-.st-row .top{display:flex;justify-content:space-between;margin-bottom:3px}
-.strategy-item{background:#161626;border-radius:12px;overflow:hidden;margin-bottom:9px}
-.s-head{padding:9px 14px;display:flex;align-items:center;gap:9px}
-.s-no{font-size:10px;font-weight:900;padding:2px 7px;border-radius:5px}
-.s-ttl{font-size:13px;font-weight:800}
-.s-body{padding:11px 14px}
-.s-body p{font-size:12px;color:#cbd5e1;line-height:1.8;margin-bottom:9px}
-.s-act{border-radius:0 6px 6px 0;padding:7px 12px;font-size:11px;line-height:1.7}
-.goal-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:10px}
-.goal-cell{background:#0d1220;border-radius:8px;padding:8px;text-align:center}
-.goal-cell .lbl{font-size:9px;color:#475569;margin-bottom:3px}
-.goal-cell .val{font-size:13px;font-weight:800}
-.mini-bar{overflow:hidden;border-radius:4px}
-.mini-bar-inner{border-radius:4px}
-.to-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #1e2d40;align-items:center}
-#btn-reload{background:#151e30;border:1px solid #1e2d40;border-radius:10px;padding:9px 22px;color:#64748b;font-size:12px;cursor:pointer;font-family:inherit;display:block;margin:20px auto 0}
+#wrap{padding:20px 16px}
+#msg{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:16px;margin-bottom:16px;font-size:13px;line-height:1.8;word-break:break-all}
+#log{background:#0d1117;border:1px solid #1e2d40;border-radius:8px;padding:12px;font-size:11px;color:#94a3b8;line-height:2;word-break:break-all;white-space:pre-wrap;max-height:300px;overflow-y:auto}
+button{background:linear-gradient(135deg,#f87171,#fb923c);border:none;border-radius:12px;padding:12px 28px;color:#fff;font-size:14px;font-weight:700;cursor:pointer;margin-top:12px;width:100%}
 @keyframes sp{to{transform:rotate(360deg)}}
 .spin{display:inline-block;animation:sp 1s linear infinite}
 </style>
@@ -82,351 +25,68 @@ body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans','Noto Sans JP'
   <h1>🔴 月曜日 売上向上ダッシュボード</h1>
   <div class="desc">日報データをリアルタイム分析</div>
 </div>
-
-<div id="status-area">
-  <div id="status-icon"><span class="spin">⏳</span></div>
-  <div id="status-text">CSVデータを取得中...</div>
-  <div id="status-detail"></div>
-  <button id="btn-retry" onclick="loadAll()">🔄 再試行</button>
+<div id="wrap">
+  <div id="msg"><span class="spin">⏳</span> 初期化中...</div>
+  <div id="log"></div>
+  <button onclick="loadAll()">🔄 再試行</button>
 </div>
-
-<div id="main">
-  <div class="kpi-grid">
-    <div class="kpi" id="kpi0"><div class="ico">💰</div><div class="lbl">月曜 平均営収</div><div class="val" id="k0v">—</div><div class="sub" id="k0s">—</div></div>
-    <div class="kpi" id="kpi1"><div class="ico">🏆</div><div class="lbl">売上ランク</div><div class="val" id="k1v">—</div><div class="sub" id="k1s">—</div></div>
-    <div class="kpi" id="kpi2"><div class="ico">📋</div><div class="lbl">月曜 総件数</div><div class="val" id="k2v">—</div><div class="sub" id="k2s">—</div></div>
-  </div>
-  <div class="tabs">
-    <button class="tab on" onclick="switchTab('compare',this)">📊 曜日比較</button>
-    <button class="tab" onclick="switchTab('hourly',this)">🕐 時間帯</button>
-    <button class="tab" onclick="switchTab('spots',this)">📍 乗車地</button>
-    <button class="tab" onclick="switchTab('status',this)">🚦 状態別</button>
-    <button class="tab" onclick="switchTab('strategy',this)">🎯 戦略</button>
-  </div>
-  <div class="panel on" id="p-compare"></div>
-  <div class="panel" id="p-hourly"></div>
-  <div class="panel" id="p-spots"></div>
-  <div class="panel" id="p-status"></div>
-  <div class="panel" id="p-strategy"></div>
-  <button id="btn-reload" onclick="loadAll()">🔄 データ再読み込み</button>
-</div>
-
 <script>
 var URL1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
 var URL2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
-var DOW_ORDER=['月','火','水','木','金','土','日'];
-var DOW_COL={月:'#f87171',火:'#fb923c',水:'#facc15',木:'#4ade80',金:'#60a5fa',土:'#a78bfa',日:'#f472b6'};
 
-function setStatus(icon,text,detail,showRetry){
-  document.getElementById('status-area').style.display='';
-  document.getElementById('main').style.display='none';
-  document.getElementById('status-icon').innerHTML=icon;
-  document.getElementById('status-text').textContent=text;
-  var det=document.getElementById('status-detail');
-  if(detail){det.style.display='';det.textContent=detail;}else{det.style.display='none';}
-  document.getElementById('btn-retry').style.display=showRetry?'':'none';
+var logs=[];
+function log(s){
+  logs.push(new Date().toLocaleTimeString('ja-JP')+' '+s);
+  document.getElementById('log').textContent=logs.join('\n');
 }
-function showMain(){
-  document.getElementById('status-area').style.display='none';
-  document.getElementById('main').style.display='';
-}
-
-function parseCSV(text){
-  var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
-  if(lines.length<2)return{headers:[],rows:[]};
-  function sp(line){
-    var cols=[],cur='',q=false;
-    for(var i=0;i<line.length;i++){
-      var c=line[i];
-      if(c==='"'){q=!q;continue;}
-      if(c===','&&!q){cols.push(cur.trim());cur='';continue;}
-      cur+=c;
-    }
-    cols.push(cur.trim());
-    return cols;
-  }
-  var headers=sp(lines[0]);
-  var rows=lines.slice(1).map(function(l){
-    var v=sp(l),obj={};
-    headers.forEach(function(h,i){obj[h]=v[i]||'';});
-    return obj;
-  });
-  return{headers:headers,rows:rows};
-}
-
-function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
-function avgArr(a){return a.length?Math.round(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
-function norm(s){return String(s||'').replace(/：/g,':').trim();}
-function fk(headers,words){return headers.find(function(h){return words.some(function(w){return norm(h).includes(w);});});}
-function toDow(r,dowK,dateK){
-  var D=['日','月','火','水','木','金','土'];
-  if(dowK&&r[dowK]&&r[dowK].trim())return r[dowK].trim();
-  var s=String(r[dateK]||'');
-  var m=s.match(/(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/);
-  if(m)return D[new Date(+m[1],+m[2]-1,+m[3]).getDay()];
-  return null;
-}
-function toHour(v){var m=String(v||'').match(/^(\d{1,2}):/);return m?+m[1]:null;}
-function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-function bar(pct,col,h){
-  h=h||18;
-  var lbl=pct>16?'<span class="bar-label">'+Math.round(pct)+'%</span>':'';
-  return '<div class="bar-wrap" style="height:'+h+'px"><div class="bar-inner" style="width:'+Math.min(pct,100)+'%;background:'+col+'">'+lbl+'</div></div>';
-}
-function miniBar(pct,col,h){
-  h=h||6;
-  return '<div class="mini-bar" style="height:'+h+'px;background:#151e30"><div class="mini-bar-inner" style="width:'+Math.min(pct,100)+'%;height:'+h+'px;background:'+col+'"></div></div>';
+function msg(s,col){
+  var el=document.getElementById('msg');
+  el.innerHTML=s;
+  el.style.borderColor=col||'#1e2d40';
+  el.style.color=col?'#fff':'#e2e8f0';
+  if(col)el.style.background=col+'22';
 }
 
 async function loadAll(){
-  setStatus('<span class="spin">⏳</span>','日報CSV を取得中...','',false);
+  logs=[];
+  log('loadAll() 開始');
+  msg('<span class="spin">⏳</span> 処理中...','');
+
   try{
+    log('fetch URL1 開始');
+    msg('<span class="spin">⏳</span> 日報CSV取得中...');
     var r1=await fetch(URL1);
-    if(!r1.ok)throw new Error('日報CSV fetch失敗: HTTP '+r1.status);
-    var raw1=await r1.text();
-    if(!raw1||raw1.length<10)throw new Error('日報CSV: データが空です');
+    log('fetch URL1 完了 status='+r1.status+' ok='+r1.ok);
+    if(!r1.ok)throw new Error('URL1 HTTP '+r1.status);
+    var t1=await r1.text();
+    log('URL1 テキスト取得 length='+t1.length+' 先頭='+t1.slice(0,80).replace(/\n/g,'↵'));
 
-    setStatus('<span class="spin">⏳</span>','日報詳細CSV を取得中...','',false);
+    log('fetch URL2 開始');
+    msg('<span class="spin">⏳</span> 日報詳細CSV取得中...');
     var r2=await fetch(URL2);
-    if(!r2.ok)throw new Error('日報詳細CSV fetch失敗: HTTP '+r2.status);
-    var raw2=await r2.text();
-    if(!raw2||raw2.length<10)throw new Error('日報詳細CSV: データが空です');
+    log('fetch URL2 完了 status='+r2.status+' ok='+r2.ok);
+    if(!r2.ok)throw new Error('URL2 HTTP '+r2.status);
+    var t2=await r2.text();
+    log('URL2 テキスト取得 length='+t2.length+' 先頭='+t2.slice(0,80).replace(/\n/g,'↵'));
 
-    setStatus('<span class="spin">⏳</span>','集計中... ('+raw1.split('\n').length+'行 / '+raw2.split('\n').length+'行)','',false);
+    var lines1=t1.trim().split('\n');
+    var lines2=t2.trim().split('\n');
+    log('URL1 行数='+lines1.length+' ヘッダー='+lines1[0].slice(0,100));
+    log('URL2 行数='+lines2.length+' ヘッダー='+lines2[0].slice(0,100));
 
-    var result=analyze(raw1,raw2);
-    render(result);
-    showMain();
+    msg('✅ CSV取得成功！\n\n日報: '+lines1.length+'行\nヘッダー: '+lines1[0]+'\n\n詳細: '+lines2.length+'行\nヘッダー: '+lines2[0],'#4ade80');
+
   }catch(e){
-    setStatus('⚠️','データの取得に失敗しました',String(e.message||e),true);
+    log('ERROR: '+String(e));
+    msg('⚠️ エラー: '+String(e),'#f87171');
   }
 }
 
-function analyze(raw1,raw2){
-  var d1=parseCSV(raw1),d2=parseCSV(raw2);
-  var h1=d1.headers,r1=d1.rows,h2=d2.headers,r2=d2.rows;
+window.onerror=function(msg,src,line,col,err){
+  log('JSエラー: '+msg+' ('+src+':'+line+')');
+};
 
-  var fareK1=fk(h1,['営収','売上']);
-  var dowK1=fk(h1,['曜']);
-  var dateK1=fk(h1,['日付','date']);
-  var tripK1=fk(h1,['回数','件数']);
-  var realK1=fk(h1,['実車率']);
-
-  var byDow={};
-  DOW_ORDER.forEach(function(d){byDow[d]={fares:[],trips:[],real:[]};});
-  r1.forEach(function(r){
-    var dow=toDow(r,dowK1,dateK1);
-    if(!dow||!byDow[dow])return;
-    var f=toN(r[fareK1]);if(f<=0)return;
-    byDow[dow].fares.push(f);
-    if(tripK1)byDow[dow].trips.push(toN(r[tripK1]));
-    if(realK1)byDow[dow].real.push(parseFloat(r[realK1])||0);
-  });
-  var dowStats=DOW_ORDER.map(function(dow){
-    var d=byDow[dow];
-    return{dow:dow,count:d.fares.length,avg:avgArr(d.fares),
-      max:d.fares.length?Math.max.apply(null,d.fares):0,
-      tripAvg:avgArr(d.trips),
-      realAvg:d.real.length?Math.round(avgArr(d.real)*10)/10:0};
-  });
-
-  var normH=h2.map(norm);
-  function fc(words){var i=normH.findIndex(function(h){return words.some(function(w){return h.includes(w);});});return i>=0?h2[i]:null;}
-  var dowK2=fc(['曜']),dateK2=fc(['日付']),hourK2=fc(['乗車時間','乗']),
-    wardK2=fc(['乗車地:市区','乗車地：市区']),nameK2=fc(['乗車地:地名','乗車地：地名']),
-    fareK2=fc(['料金']),statusK2=fc(['ステータス']),skK2=fc(['サンキュー']),
-    dWardK2=fc(['降車地:市区','降車地：市区']),dNameK2=fc(['降車地:地名','降車地：地名']);
-
-  var mon=r2.filter(function(r){return toDow(r,dowK2,dateK2)==='月';});
-
-  var hMap={};
-  mon.forEach(function(r){
-    var h=toHour(r[hourK2]),f=toN(r[fareK2]);
-    if(h===null||f<=0)return;
-    var lbl=h>=24?'翌'+(h-24)+'時台':h+'時台';
-    if(!hMap[lbl])hMap[lbl]={total:0,cnt:0,key:h};
-    hMap[lbl].total+=f;hMap[lbl].cnt++;
-  });
-  var hourly=Object.entries(hMap).sort(function(a,b){return a[1].key-b[1].key;})
-    .map(function(e){return{lbl:e[0],avg:Math.round(e[1].total/e[1].cnt),cnt:e[1].cnt};});
-
-  function buildTop(wk,nk,lim){
-    var m={};
-    mon.forEach(function(r){
-      var w=(r[wk]||'').trim(),n=(r[nk]||'').trim();
-      var full=w&&n?w+n:w||n;
-      var f=toN(r[fareK2]);if(!full||f<=0)return;
-      if(!m[full])m[full]={cnt:0,total:0};
-      m[full].cnt++;m[full].total+=f;
-    });
-    return Object.entries(m).sort(function(a,b){return b[1].cnt-a[1].cnt;}).slice(0,lim)
-      .map(function(e){return{name:e[0],cnt:e[1].cnt,avg:Math.round(e[1].total/e[1].cnt)};});
-  }
-  var fromTop=buildTop(wardK2,nameK2,15);
-  var toTop=buildTop(dWardK2,dNameK2,10);
-
-  var stMap={},skMap={};
-  mon.forEach(function(r){
-    var s=(r[statusK2]||'不明').trim();
-    if(!stMap[s])stMap[s]={cnt:0,total:0};
-    var f=toN(r[fareK2]);stMap[s].cnt++;if(f>0)stMap[s].total+=f;
-    var sk=(r[skK2]||'通常').trim()||'通常';
-    skMap[sk]=(skMap[sk]||0)+1;
-  });
-  var statusMix=Object.entries(stMap).sort(function(a,b){return b[1].cnt-a[1].cnt;})
-    .map(function(e){return{name:e[0],cnt:e[1].cnt,avg:e[1].cnt>0?Math.round(e[1].total/e[1].cnt):0};});
-  var skMix=Object.entries(skMap).sort(function(a,b){return b[1]-a[1];})
-    .map(function(e){return{name:e[0],cnt:e[1]};});
-
-  return{dowStats:dowStats,hourly:hourly,fromTop:fromTop,toTop:toTop,
-    statusMix:statusMix,skMix:skMix,monCount:mon.length};
-}
-
-function render(R){
-  var ds=R.dowStats;
-  var valid=ds.filter(function(d){return d.avg>0;});
-  var mon=ds.find(function(d){return d.dow==='月';})||{avg:0,max:0,count:0,tripAvg:0,realAvg:0};
-  var allAvg=avgArr(valid.map(function(d){return d.avg;}));
-  var othAvg=avgArr(valid.filter(function(d){return d.dow!=='月';}).map(function(d){return d.avg;}));
-  var gap=mon.avg-allAvg,gapOth=mon.avg-othAvg;
-  var maxA=valid.length?Math.max.apply(null,valid.map(function(d){return d.avg;})):1;
-  var sorted=[].concat(valid).sort(function(a,b){return b.avg-a.avg;});
-  var rank=sorted.findIndex(function(d){return d.dow==='月';})+1;
-  var maxHCnt=R.hourly.length?Math.max.apply(null,R.hourly.map(function(h){return h.cnt;})):1;
-  var maxFCnt=R.fromTop.length?Math.max.apply(null,R.fromTop.map(function(f){return f.cnt;})):1;
-  var totSt=R.statusMix.reduce(function(a,b){return a+b.cnt;},0);
-  var totSk=R.skMix.reduce(function(a,b){return a+b.cnt;},0);
-
-  // KPI
-  var ac0=gap<0?'#f87171':'#4ade80';
-  document.getElementById('kpi0').style.cssText='background:#161626;border-radius:12px;padding:10px;border:1px solid '+ac0+'33;border-top:3px solid '+ac0;
-  document.getElementById('k0v').style.color=ac0;document.getElementById('k0v').textContent='¥'+mon.avg.toLocaleString();
-  document.getElementById('k0s').textContent='全体比 '+(gap>=0?'+':'')+gap.toLocaleString();
-  var ac1=rank>=5?'#f87171':'#facc15';
-  document.getElementById('kpi1').style.cssText='background:#161626;border-radius:12px;padding:10px;border:1px solid '+ac1+'33;border-top:3px solid '+ac1;
-  document.getElementById('k1v').style.color=ac1;document.getElementById('k1v').textContent=rank+'位/'+valid.length+'曜日';
-  document.getElementById('k1s').textContent='最高¥'+mon.max.toLocaleString();
-  document.getElementById('kpi2').style.cssText='background:#161626;border-radius:12px;padding:10px;border:1px solid #60a5fa33;border-top:3px solid #60a5fa';
-  document.getElementById('k2v').style.color='#60a5fa';document.getElementById('k2v').textContent=R.monCount+'件';
-  document.getElementById('k2s').textContent='出勤'+mon.count+'日';
-
-  // ── 曜日比較 ──
-  var h='<div class="sec-lbl">曜日別 平均営収（高い順）</div>';
-  sorted.forEach(function(s){
-    var pct=s.avg/maxA*100,isMon=s.dow==='月';
-    var bg=isMon?'linear-gradient(90deg,#f87171,#fbbf24)':DOW_COL[s.dow]+'55';
-    h+='<div class="dow-row"><div class="top"><div style="display:flex;align-items:center;gap:7px">';
-    h+='<span class="dow-badge" style="background:'+(isMon?'#f87171':DOW_COL[s.dow]+'22')+';border-color:'+DOW_COL[s.dow]+';color:'+(isMon?'#fff':DOW_COL[s.dow])+'">'+s.dow+'</span>';
-    h+='<span style="font-size:11px;color:#475569">'+s.count+'日'+(s.tripAvg>0?' / avg'+s.tripAvg+'件':'')+'</span></div>';
-    h+='<span style="font-size:13px;font-weight:700;color:'+(isMon?'#f87171':'#e2e8f0')+'">¥'+s.avg.toLocaleString()+'</span></div>';
-    h+='<div class="bar-wrap"><div class="bar-inner" style="width:'+pct+'%;background:'+bg+'">'+(pct>14?'<span class="bar-label">'+pct.toFixed(0)+'%</span>':'')+'</div>'+(isMon?'<div class="bar-right"><span>全体比'+((s.avg/allAvg-1)*100).toFixed(1)+'%</span></div>':'')+'</div></div>';
-  });
-  h+='<div class="card" style="border-color:#f8717155;background:#f8717108;margin-top:4px"><div class="card-title" style="color:#f87171">⚡ 月曜ギャップ</div><div class="gap-grid">';
-  [{lbl:'vs 全体平均',val:(gap>=0?'+':'')+'¥'+Math.abs(gap).toLocaleString(),col:gap<0?'#f87171':'#4ade80'},
-   {lbl:'vs 他曜日平均',val:(gapOth>=0?'+':'')+'¥'+Math.abs(gapOth).toLocaleString(),col:gapOth<0?'#f87171':'#4ade80'},
-   {lbl:'トップとの差',val:'-¥'+(maxA-mon.avg).toLocaleString(),col:'#f87171'},
-   {lbl:'月曜最高記録',val:'¥'+mon.max.toLocaleString(),col:'#4ade80'},
-  ].forEach(function(x){h+='<div class="gap-cell"><div class="lbl">'+x.lbl+'</div><div class="val" style="color:'+x.col+'">'+x.val+'</div></div>';});
-  h+='</div></div>';
-  if(valid.some(function(d){return d.realAvg>0;})){
-    h+='<div class="card"><div class="card-title" style="color:#60a5fa">📐 実車率比較</div>';
-    var rv=valid.filter(function(d){return d.realAvg>0;}).sort(function(a,b){return b.realAvg-a.realAvg;});
-    var mr=Math.max.apply(null,rv.map(function(d){return d.realAvg;}));
-    rv.forEach(function(s){
-      h+='<div style="margin-bottom:6px"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:12px;color:'+(s.dow==='月'?'#f87171':'#94a3b8')+'">'+s.dow+'曜日</span><span style="font-size:11px;color:#475569">'+s.realAvg+'%</span></div>'+miniBar(s.realAvg/mr*100,s.dow==='月'?'#f87171':DOW_COL[s.dow]+'99',7)+'</div>';
-    });
-    h+='</div>';
-  }
-  document.getElementById('p-compare').innerHTML=h;
-
-  // ── 時間帯 ──
-  h='';
-  if(!R.hourly.length){h='<div class="card" style="color:#64748b;font-size:12px">時刻データ未検出</div>';}
-  else{
-    h='<div class="sec-lbl">月曜 時間帯別 件数/平均単価（計'+R.monCount+'件）</div>';
-    R.hourly.forEach(function(hh){
-      var pct=hh.cnt/maxHCnt*100,hot=pct>=55,mid=pct>=25;
-      var col=hot?'linear-gradient(90deg,#f59e0b,#f87171)':mid?'linear-gradient(90deg,#2563eb,#60a5fa44)':'#1e2d40';
-      h+='<div class="h-row"><div class="top"><div style="display:flex;align-items:center"><span class="h-lbl" style="color:'+(hot?'#facc15':mid?'#60a5fa':'#64748b')+'">'+esc(hh.lbl)+'</span>'+(hot?'<span class="hot-badge">🔥HOT</span>':'')+'</div><span style="font-size:11px;color:#475569">'+hh.cnt+'件 ¥'+hh.avg.toLocaleString()+'</span></div>';
-      h+='<div class="bar-wrap" style="height:20px"><div class="bar-inner" style="width:'+pct+'%;background:'+col+'">'+(pct>16?'<span class="bar-label">'+hh.cnt+'件</span>':'')+'</div></div></div>';
-    });
-    var hotS=R.hourly.filter(function(hh){return hh.cnt/maxHCnt>=.55;});
-    var deadS=R.hourly.filter(function(hh){return hh.cnt/maxHCnt<.15;});
-    if(hotS.length)h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b0a;margin-top:6px"><div class="card-title" style="color:#f59e0b">🔥 ピーク時間帯</div><p style="font-size:12px;color:#cbd5e1;margin-bottom:5px">'+hotS.map(function(hh){return esc(hh.lbl)+'（'+hh.cnt+'件・¥'+hh.avg.toLocaleString()+'）';}).join('　')+'</p><p style="font-size:11px;color:#94a3b8">→ この時間帯に確実にTOP乗車地エリアへ</p></div>';
-    if(deadS.length)h+='<div class="card" style="border-color:#47556944;background:#47556908"><div class="card-title" style="color:#64748b">💤 閑散時間帯</div><p style="font-size:12px;color:#64748b;margin-bottom:5px">'+deadS.map(function(hh){return esc(hh.lbl);}).join('・')+'</p><p style="font-size:11px;color:#475569">→ 食事・休憩・ピーク前の体力温存に活用</p></div>';
-  }
-  document.getElementById('p-hourly').innerHTML=h;
-
-  // ── 乗車地 ──
-  h='';
-  if(!R.fromTop.length){h='<div class="card" style="color:#64748b;font-size:12px">乗車地データ未検出</div>';}
-  else{
-    h='<div class="sec-lbl">月曜 乗車地 TOP'+R.fromTop.length+'（件数順）</div>';
-    R.fromTop.forEach(function(s,i){
-      var pct=s.cnt/maxFCnt*100,top=i<3,medal=['🥇','🥈','🥉'][i]||(i+1+'.');
-      h+='<div class="spot-item'+(top?' top3':'')+'"><div class="spot-row"><div style="display:flex;align-items:center;gap:6px;flex:1"><span style="font-size:13px;flex-shrink:0">'+medal+'</span><span class="spot-name" style="color:'+(top?'#facc15':'#e2e8f0')+'">'+esc(s.name)+'</span></div><div><div class="spot-cnt" style="color:'+(top?'#facc15':'#94a3b8')+'">'+s.cnt+'件</div><div class="spot-avg">avg ¥'+s.avg.toLocaleString()+'</div></div></div>'+miniBar(pct,top?'linear-gradient(90deg,#f59e0b,#facc15)':'#1e2d40',5)+'</div>';
-    });
-    h+='<div class="card" style="border-color:#4ade8055;background:#4ade8008;margin-top:4px"><div class="card-title" style="color:#4ade80">📍 月曜エリア戦略</div><p style="font-size:12px;color:#cbd5e1;line-height:1.8"><strong style="color:#facc15">TOP3：'+R.fromTop.slice(0,3).map(function(s){return esc(s.name);}).join(' · ')+'</strong><br>を月曜の定点ポジションに設定。意識的に巡回するだけで件数が安定します。</p></div>';
-    if(R.toTop.length){
-      h+='<div class="card"><div class="card-title" style="color:#60a5fa">🏁 降車地 TOP'+R.toTop.length+'</div>';
-      R.toTop.forEach(function(s,i){h+='<div class="to-row"><span style="font-size:11px;color:'+(i<3?'#60a5fa':'#94a3b8')+'">'+(i+1)+'. '+esc(s.name)+'</span><span style="font-size:11px;color:#475569">'+s.cnt+'件 ¥'+s.avg.toLocaleString()+'</span></div>';});
-      h+='</div>';
-    }
-  }
-  document.getElementById('p-spots').innerHTML=h;
-
-  // ── 状態別 ──
-  h='';
-  var stColors=['#60a5fa','#4ade80','#facc15','#f87171','#a78bfa'];
-  var stIcons={GO:'🟢',スマ配:'📱',流し:'🚕'};
-  if(R.statusMix.length){
-    h+='<div class="card"><div class="card-title" style="color:#60a5fa">🚦 ステータス別（計'+totSt+'件）</div>';
-    R.statusMix.forEach(function(s,i){
-      var pct=totSt>0?s.cnt/totSt*100:0,col=stColors[i%stColors.length],ico=stIcons[s.name]||'❓';
-      h+='<div class="st-row"><div class="top"><span style="font-size:12px;font-weight:600;color:'+col+'">'+ico+' '+esc(s.name)+'</span><span style="font-size:11px;color:#475569">'+s.cnt+'件（'+pct.toFixed(1)+'%） avg ¥'+s.avg.toLocaleString()+'</span></div>'+bar(pct,col+'99')+'</div>';
-    });
-    h+='<p style="font-size:11px;color:#94a3b8;margin-top:8px;line-height:1.7">→ GOアプリ比率が高い月曜こそ通知ONが重要。流し・スマ配のバランスを意識してエリア選定を。</p></div>';
-  }
-  var skColors=['#94a3b8','#a78bfa','#60a5fa','#4ade80'];
-  var skIcons={サンキュー:'🎫',プレタク:'⭐',プレタクP:'🌟',通常:'🚕'};
-  if(R.skMix.length){
-    h+='<div class="card"><div class="card-title" style="color:#a78bfa">🎫 サンキュー別（計'+totSk+'件）</div>';
-    R.skMix.forEach(function(s,i){
-      var pct=totSk>0?s.cnt/totSk*100:0,col=skColors[i%skColors.length],ico=skIcons[s.name]||'🚕';
-      h+='<div class="st-row"><div class="top"><span style="font-size:12px;font-weight:600;color:'+col+'">'+ico+' '+esc(s.name)+'</span><span style="font-size:11px;color:#475569">'+s.cnt+'件（'+pct.toFixed(1)+'%）</span></div>'+bar(pct,col+'99')+'</div>';
-    });
-    h+='<p style="font-size:11px;color:#94a3b8;margin-top:8px;line-height:1.7">→ 土日にサンキューチケットを配布して月曜のリピート利用を増やすことが売上底上げの鍵。</p></div>';
-  }
-  document.getElementById('p-status').innerHTML=h||'<div class="card" style="color:#64748b;font-size:12px">データ未検出</div>';
-
-  // ── 戦略 ──
-  var hotPeak=R.hourly.filter(function(hh){return hh.cnt/maxHCnt>=.55;}).map(function(hh){return hh.lbl;}).join('・')||'ピーク時間帯を確認';
-  var top3=R.fromTop.slice(0,3).map(function(s){return s.name;}).join('・')||'TOP乗車地を確認';
-  var monthly=Math.round(Math.abs(gap)/3);
-  var strats=[
-    {no:'01',ico:'🕐',col:'#60a5fa',ttl:'ピーク時間帯に確実に稼働',body:'時間帯タブのHOT時間帯（'+hotPeak+'）に確実に道路上にいる状態を作る。閑散時間帯に休憩を入れ、ピーク30分前には好立地へ移動完了。',act:'閑散時間に食事・休憩 → ピーク30分前にTOP乗車地エリアへ移動'},
-    {no:'02',ico:'📍',col:'#4ade80',ttl:'月曜TOP乗車地を定点巡回',body:top3+'を月曜の定点ポジションに設定。このエリアを軸に流し、待機時間を短縮して実車率UP。',act:'出庫後まずTOP3エリアへ。1時間に1回は通過する巡回ルートを設定'},
-    {no:'03',ico:'📱',col:'#facc15',ttl:'GOアプリ・スマ配をフル活用',body:'月曜の流し需要が少ない時間帯はアプリ配車が有効。状態別タブのGO比率を確認し、月曜はアプリ受注を重点的に狙う。',act:'月曜はGO通知ON・スマ配エリアに積極参入し受注率アップ'},
-    {no:'04',ico:'🎫',col:'#a78bfa',ttl:'土日乗客にサンキューチケット配布',body:'月曜需要の底上げには週末の仕込みが有効。土日の乗客（ビジネスパーソン・定期利用者）にサンキューチケットを渡し月曜の再利用を促す。',act:'土日の最後10件は必ずサンキューチケット配布 → 月曜朝の再利用促進'},
-    {no:'05',ico:'📊',col:'#fb923c',ttl:'毎週月曜に週次PDCA',body:'「月曜は仕方ない」という諦めが最大の敵。毎週月曜の帰りに日報を確認し、前週比で改善できたかを数字で記録する。',act:'月曜平均を毎月¥'+monthly.toLocaleString()+'ずつ改善 → 3ヶ月で全体平均に追いつく'},
-  ];
-  h='<div class="card" style="border-color:#f8717166;background:#f8717110"><div class="card-title" style="color:#f87171">🎯 現状と目標</div><div class="goal-grid">';
-  [{lbl:'月曜平均',val:'¥'+mon.avg.toLocaleString(),col:'#f87171'},{lbl:'全体平均',val:'¥'+allAvg.toLocaleString(),col:'#facc15'},{lbl:'最高記録',val:'¥'+mon.max.toLocaleString(),col:'#4ade80'}]
-    .forEach(function(x){h+='<div class="goal-cell"><div class="lbl">'+x.lbl+'</div><div class="val" style="color:'+x.col+'">'+x.val+'</div></div>';});
-  h+='</div><p style="font-size:12px;color:#cbd5e1;line-height:1.7;margin-top:10px">目標：<strong style="color:#facc15">全体平均¥'+allAvg.toLocaleString()+'</strong>まで引き上げ。差額<strong style="color:#f87171">¥'+Math.abs(gap).toLocaleString()+'</strong>の縮小が優先課題。</p></div>';
-  strats.forEach(function(s){
-    h+='<div class="strategy-item" style="border:1px solid '+s.col+'33"><div class="s-head" style="background:'+s.col+'15"><span class="s-no" style="color:'+s.col+';background:'+s.col+'22">#'+s.no+'</span><span style="font-size:18px">'+s.ico+'</span><span class="s-ttl" style="color:'+s.col+'">'+s.ttl+'</span></div><div class="s-body"><p>'+s.body+'</p><div class="s-act" style="background:'+s.col+'12;border-left:3px solid '+s.col+';color:'+s.col+'">✅ '+s.act+'</div></div></div>';
-  });
-  document.getElementById('p-strategy').innerHTML=h;
-}
-
-function switchTab(id,btn){
-  document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});
-  btn.classList.add('on');
-  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});
-  document.getElementById('p-'+id).classList.add('on');
-}
-
+log('スクリプト読み込み完了');
 loadAll();
 </script>
 </body>
