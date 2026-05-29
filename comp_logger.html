@@ -101,7 +101,7 @@ body{display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:0}
   <div id="history-list" class="history-list"></div>
 </div>
 
-<div id="total" class="total"></div>
+<div id="total" class="total" onclick="checkData()" style="cursor:pointer">👆 タップしてデータ確認</div>
 <div id="flash" class="flash">✓ 保存</div>
 
 <script>
@@ -291,6 +291,17 @@ function clearHistory(){
   if(!confirm('記録をすべて削除しますか？')) return;
   localStorage.removeItem(KEY);
   renderHistory();
+}
+
+function checkData(){
+  try{
+    var logs = JSON.parse(localStorage.getItem(KEY)||'[]');
+    var msg = '保存件数: '+logs.length+'件\n\n最新5件:\n';
+    logs.slice(-5).reverse().forEach(function(r){
+      msg += r.disp+' '+r.area+' '+r.count+'\n';
+    });
+    alert(msg);
+  }catch(e){ alert('エラー: '+e); }
 }
 
 renderHistory();
