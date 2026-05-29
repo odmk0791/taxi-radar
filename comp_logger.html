@@ -96,6 +96,7 @@ body{display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:0}
 <div class="history">
   <div class="history-hdr">
     <span class="history-title" id="history-title">最近の記録</span>
+    <span class="history-clear" id="undo-btn" onclick="undoLast()" style="color:var(--am);margin-right:8px">↩ 直前を削除</span>
     <span class="history-clear" onclick="clearHistory()">クリア</span>
   </div>
   <div id="history-list" class="history-list"></div>
@@ -276,6 +277,18 @@ function renderHistory(){
     }).join('');
     document.getElementById('history-title').textContent = '最近の記録（計'+logs.length+'件）';
     document.getElementById('total').textContent = '累計 '+logs.length+' 件のデータが蓄積されています';
+  }catch(e){}
+}
+
+function undoLast(){
+  try{
+    var logs = JSON.parse(localStorage.getItem(KEY)||'[]');
+    if(!logs.length){ alert('削除できる記録がありません'); return; }
+    var last = logs[logs.length-1];
+    if(!confirm(last.disp+' '+last.area+' '+last.count+'\nこの記録を削除しますか？')) return;
+    logs.pop();
+    localStorage.setItem(KEY, JSON.stringify(logs));
+    renderHistory();
   }catch(e){}
 }
 
