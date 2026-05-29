@@ -1056,15 +1056,20 @@ function toggleFilterBtn(btn){
 
 // ===== 競合記録 =====
 var COMP_LOG_KEY='taxiradar_complog';
+var _compLat=null,_compLng=null,_compArea='';
 
 function openCompLog(){
   var now=new Date();
   var h=now.getHours(),m=now.getMinutes();
-  var disp=(h<10?'0':'')+h+':'+(m<10?'0':'')+m;
-  document.getElementById('cl-time').textContent=disp;
+  document.getElementById('cl-time').textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m;
+  // デフォルトは現在地
   var areaEl=document.getElementById('locname');
-  var area=areaEl?areaEl.textContent:'不明';
-  document.getElementById('cl-area').textContent=area;
+  _compArea=areaEl?areaEl.textContent:'未設定';
+  _compLat=uLat||null;_compLng=uLng||null;
+  document.getElementById('cl-area').textContent=_compArea;
+  document.getElementById('cl-search-box').classList.add('hidden');
+  document.getElementById('cl-search-input').value='';
+  document.getElementById('cl-search-results').innerHTML='';
   document.getElementById('comp-modal').classList.remove('hidden');
   document.getElementById('comp-overlay').classList.remove('hidden');
 }
@@ -1072,15 +1077,43 @@ function closeCompLog(){
   document.getElementById('comp-modal').classList.add('hidden');
   document.getElementById('comp-overlay').classList.add('hidden');
 }
+function openCompAreaSearch(){
+  var box=document.getElementById('cl-search-box');
+  box.classList.toggle('hidden');
+  if(!box.classList.contains('hidden'))
+    setTimeout(function(){document.getElementById('cl-search-input').focus();},100);
+}
+function compAreaSearch(q){
+  var res=document.getElementById('cl-search-results');
+  if(!q||q.length<1){res.innerHTML='';return;}
+  // COORDS（座標DB）から検索
+  var matches=[];
+  if(window.COORDS){
+    Object.keys(window.COORDS).forEach(function(k){
+      if(k.indexOf(q)>=0&&matches.length<8)matches.push(k);
+    });
+  }
+  if(!matches.length){res.innerHTML='<div style="font-size:12px;color:var(--tx2);padding:8px">見つかりません</div>';return;}
+  res.innerHTML=matches.map(function(k){
+    return '<div onclick="selectCompArea(\''+k+'\')" style="padding:8px 10px;border-radius:8px;font-size:13px;color:var(--tx);cursor:pointer;border-bottom:0.5px solid var(--bd)">'+k+'</div>';
+  }).join('');
+}
+function selectCompArea(k){
+  _compArea=k;
+  var co=window.COORDS[k];
+  if(co){_compLat=co[0];_compLng=co[1];}
+  document.getElementById('cl-area').textContent=k;
+  document.getElementById('cl-search-box').classList.add('hidden');
+  document.getElementById('cl-search-input').value='';
+}
 function saveComp(val){
   var now=new Date();
   var h=now.getHours(),m=now.getMinutes();
-  var area=document.getElementById('cl-area').textContent;
   var rec={
     ts:now.toISOString(),
     disp:(h<10?'0':'')+h+':'+(m<10?'0':'')+m,
-    area:area,
-    lat:uLat||null,lng:uLng||null,
+    area:_compArea,
+    lat:_compLat,lng:_compLng,
     count:val,
     hour:h
   };
@@ -1089,7 +1122,6 @@ function saveComp(val){
   if(logs.length>2000)logs=logs.slice(-2000);
   localStorage.setItem(COMP_LOG_KEY,JSON.stringify(logs));
   closeCompLog();
-  // 一瞬フラッシュ
   var btn=document.getElementById('comp-fab');
   btn.style.background='#39d353';
   setTimeout(function(){btn.style.background='';},600);
@@ -1205,9 +1237,20 @@ document.querySelectorAll('.fbtn').forEach(function(btn){
     <span class="cl-title">競合台数を記録</span>
     <button class="cl-close" onclick="closeCompLog()">✕</button>
   </div>
-  <div class="cl-meta">
+  <div class="cl-meta" onclick="openCompAreaSearch()" style="cursor:pointer">
     <span id="cl-time" class="cl-time">--:--</span>
-    <span id="cl-area" class="cl-area">エリア取得中...</span>
+    <div style="flex:1;min-width:0">
+      <div id="cl-area" class="cl-area" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">エリア取得中...</div>
+      <div style="font-size:10px;color:var(--tx2);margin-top:1px">タップでエリア変更</div>
+    </div>
+    <span style="color:var(--tx2);font-size:14px">›</span>
+  </div>
+  <!-- エリア検索（インライン） -->
+  <div id="cl-search-box" class="hidden" style="margin-bottom:10px">
+    <input id="cl-search-input" type="text" placeholder="区・地名で検索（例：渋谷、六本木）"
+      style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:14px"
+      oninput="compAreaSearch(this.value)">
+    <div id="cl-search-results" style="max-height:160px;overflow-y:auto;margin-top:6px"></div>
   </div>
   <div class="cl-grid">
     <button class="cl-btn" onclick="saveComp('0')">0台</button>
@@ -1217,6 +1260,7 @@ document.querySelectorAll('.fbtn').forEach(function(btn){
     <button class="cl-btn cl-btn-many" onclick="saveComp('6以上')">6台以上</button>
   </div>
   <div class="cl-note">GOアプリで確認した周辺の競合台数を記録します</div>
+</div>v class="cl-note">GOアプリで確認した周辺の競合台数を記録します</div>
 </div>
 
 </body>
