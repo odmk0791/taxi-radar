@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>競合記録</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{--bg:#0a1628;--s:#0f2040;--s2:#162850;--bd:#2a3f6f;--tx:#e6edf3;--tx2:#8b949e;--g:#39d353;--am:#d29922;--rd:#f85149}
+html,body{height:100%;background:var(--bg);color:var(--tx);font-family:-apple-system,sans-serif}
+body{display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:0}
+
+/* ヘッダー */
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--s);border-bottom:1px solid var(--bd)}
+.hdr-title{font-size:16px;font-weight:700}
+.hdr-time{font-size:22px;font-weight:800;color:var(--g);font-variant-numeric:tabular-nums}
+
+/* エリア */
+.area-box{margin:12px 16px;background:var(--s);border:1px solid var(--bd);border-radius:12px;overflow:hidden}
+.area-row{display:flex;align-items:center;padding:12px 14px;gap:10px}
+.area-label{font-size:11px;color:var(--tx2);margin-bottom:2px}
+.area-name{font-size:15px;font-weight:600;color:var(--tx)}
+.area-change{background:var(--s2);border:1px solid var(--bd);border-radius:8px;color:var(--tx2);font-size:12px;padding:6px 12px;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.search-box{padding:0 14px 12px}
+.search-input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:15px;outline:none}
+.search-results{max-height:180px;overflow-y:auto;-webkit-overflow-scrolling:touch;margin-top:6px}
+.result-item{padding:11px 4px;font-size:14px;color:var(--tx);cursor:pointer;border-bottom:0.5px solid var(--bd)}
+.result-item:active{background:var(--s2)}
+.no-result{font-size:12px;color:var(--tx2);padding:8px 4px}
+
+/* カウントボタン */
+.count-section{padding:0 16px;flex:1}
+.count-label{font-size:12px;color:var(--tx2);margin-bottom:10px}
+.count-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.count-btn{padding:22px 8px;border-radius:14px;border:1.5px solid var(--bd);background:var(--s);color:var(--tx);font-size:22px;font-weight:800;cursor:pointer;transition:transform .1s,background .1s;text-align:center}
+.count-btn:active{transform:scale(.95);background:var(--s2)}
+.count-btn.many{grid-column:1/-1;background:rgba(255,90,0,.08);border-color:rgba(255,90,0,.35);color:#ff7a30}
+.count-btn.many:active{background:rgba(255,90,0,.18)}
+
+/* 履歴 */
+.history{margin:12px 16px 0;background:var(--s);border:1px solid var(--bd);border-radius:12px;overflow:hidden}
+.history-hdr{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:0.5px solid var(--bd)}
+.history-title{font-size:12px;font-weight:600;color:var(--tx2)}
+.history-clear{font-size:11px;color:var(--rd);cursor:pointer;padding:2px 6px}
+.history-list{max-height:120px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.history-item{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:0.5px solid var(--bd);font-size:12px}
+.history-item:last-child{border-bottom:none}
+.h-time{color:var(--tx2);font-variant-numeric:tabular-nums;min-width:42px}
+.h-area{color:var(--tx);flex:1;padding:0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.h-count{font-weight:700;color:var(--g)}
+.h-count.many{color:#ff7a30}
+
+/* フラッシュ */
+.flash{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--g);color:#000;font-size:20px;font-weight:800;padding:16px 32px;border-radius:16px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:100}
+.flash.show{opacity:1}
+
+/* 記録件数 */
+.total{text-align:center;font-size:11px;color:var(--tx2);padding:8px 0 16px}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="hdr-title">👥 競合記録</div>
+  <div id="clock" class="hdr-time">--:--</div>
+</div>
+
+<div class="area-box">
+  <div class="area-row">
+    <div style="flex:1;min-width:0">
+      <div class="area-label">記録エリア</div>
+      <div id="area-name" class="area-name">エリア未設定</div>
+    </div>
+    <button class="area-change" onclick="toggleSearch()">変更</button>
+  </div>
+  <div id="search-box" style="display:none" class="search-box">
+    <input id="search-input" class="search-input" type="text" placeholder="区・地名で検索（例：六本木、渋谷）" oninput="doSearch(this.value)">
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+<div class="count-section">
+  <div class="count-label">GOアプリで確認した周辺の空車台数</div>
+  <div class="count-grid">
+    <button class="count-btn" onclick="record('0台')">0台</button>
+    <button class="count-btn" onclick="record('1台')">1台</button>
+    <button class="count-btn" onclick="record('2〜3台')">2〜3台</button>
+    <button class="count-btn" onclick="record('4〜5台')">4〜5台</button>
+    <button class="count-btn many" onclick="record('6台以上')">6台以上</button>
+  </div>
+</div>
+
+<div class="history">
+  <div class="history-hdr">
+    <span class="history-title" id="history-title">最近の記録</span>
+    <span class="history-clear" onclick="clearHistory()">クリア</span>
+  </div>
+  <div id="history-list" class="history-list"></div>
+</div>
+
+<div id="total" class="total"></div>
+<div id="flash" class="flash">✓ 保存</div>
+
+<script>
+var KEY = 'taxiradar_complog';
+var COORDS_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=657495537&single=true&output=csv';
+var COORDS_CACHE = 'taxiradar_coords_cache';
+var coords = {};
+var currentArea = '';
+var currentLat = null, currentLng = null;
+var searchOpen = false;
+
+// 時計
+function updateClock(){
+  var now = new Date();
+  var h = now.getHours(), m = now.getMinutes();
+  document.getElementById('clock').textContent = (h<10?'0':'')+h+':'+(m<10?'0':'')+m;
+}
+updateClock();
+setInterval(updateClock, 5000);
+
+// 座標DB読み込み
+function loadCoords(){
+  try{
+    var cached = localStorage.getItem(COORDS_CACHE);
+    if(cached){ coords = JSON.parse(cached); }
+  }catch(e){}
+  fetch(COORDS_URL).then(function(r){return r.text();}).then(function(text){
+    var lines = text.replace(/^\uFEFF/,'').split(/\r?\n/);
+    var nc = {};
+    for(var i=1;i<lines.length;i++){
+      var cols = lines[i].split(',');
+      if(cols.length<3) continue;
+      var addr = cols[0].trim();
+      var lat = parseFloat(cols[1]), lng = parseFloat(cols[2]);
+      if(addr && !isNaN(lat) && !isNaN(lng)) nc[addr] = [lat,lng];
+    }
+    if(Object.keys(nc).length > 0){
+      coords = nc;
+      localStorage.setItem(COORDS_CACHE, JSON.stringify(nc));
+    }
+  }).catch(function(){});
+}
+loadCoords();
+
+// エリア検索
+function toggleSearch(){
+  searchOpen = !searchOpen;
+  var box = document.getElementById('search-box');
+  box.style.display = searchOpen ? 'block' : 'none';
+  if(searchOpen){
+    var inp = document.getElementById('search-input');
+    inp.value = '';
+    document.getElementById('search-results').innerHTML = '';
+    setTimeout(function(){inp.focus();}, 50);
+  }
+}
+function doSearch(q){
+  var res = document.getElementById('search-results');
+  res.innerHTML = '';
+  if(!q){ return; }
+  var keys = Object.keys(coords);
+  var matches = [];
+  for(var i=0;i<keys.length;i++){
+    if(keys[i].indexOf(q)>=0){ matches.push(keys[i]); if(matches.length>=10) break; }
+  }
+  if(!matches.length){
+    res.innerHTML = '<div class="no-result">見つかりません</div>';
+    return;
+  }
+  matches.forEach(function(k){
+    var d = document.createElement('div');
+    d.className = 'result-item';
+    d.textContent = k;
+    d.addEventListener('click', function(){
+      currentArea = k;
+      if(coords[k]){ currentLat = coords[k][0]; currentLng = coords[k][1]; }
+      document.getElementById('area-name').textContent = k;
+      searchOpen = false;
+      document.getElementById('search-box').style.display = 'none';
+    });
+    res.appendChild(d);
+  });
+}
+
+// 記録
+function record(val){
+  if(!currentArea){
+    document.getElementById('area-name').style.color = 'var(--rd)';
+    document.getElementById('area-name').textContent = '← エリアを選択してください';
+    setTimeout(function(){
+      document.getElementById('area-name').style.color = '';
+      document.getElementById('area-name').textContent = 'エリア未設定';
+    }, 2000);
+    return;
+  }
+  var now = new Date();
+  var h = now.getHours(), m = now.getMinutes();
+  var rec = {
+    ts: now.toISOString(),
+    disp: (h<10?'0':'')+h+':'+(m<10?'0':'')+m,
+    area: currentArea,
+    lat: currentLat, lng: currentLng,
+    count: val, hour: h
+  };
+  try{
+    var logs = JSON.parse(localStorage.getItem(KEY)||'[]');
+    logs.push(rec);
+    if(logs.length > 2000) logs = logs.slice(-2000);
+    localStorage.setItem(KEY, JSON.stringify(logs));
+  }catch(e){}
+  showFlash(val);
+  renderHistory();
+}
+
+function showFlash(val){
+  var f = document.getElementById('flash');
+  f.textContent = '✓ ' + val + ' 保存';
+  f.classList.add('show');
+  setTimeout(function(){ f.classList.remove('show'); }, 900);
+}
+
+// 履歴表示
+function renderHistory(){
+  try{
+    var logs = JSON.parse(localStorage.getItem(KEY)||'[]');
+    var recent = logs.slice(-8).reverse();
+    var list = document.getElementById('history-list');
+    if(!recent.length){ list.innerHTML = '<div style="padding:12px 14px;font-size:12px;color:var(--tx2)">記録なし</div>'; return; }
+    list.innerHTML = recent.map(function(r){
+      var many = r.count === '6台以上';
+      return '<div class="history-item">'
+        + '<span class="h-time">'+r.disp+'</span>'
+        + '<span class="h-area">'+r.area+'</span>'
+        + '<span class="h-count'+(many?' many':'')+'">'+r.count+'</span>'
+        + '</div>';
+    }).join('');
+    document.getElementById('history-title').textContent = '最近の記録（計'+logs.length+'件）';
+    document.getElementById('total').textContent = '累計 '+logs.length+' 件のデータが蓄積されています';
+  }catch(e){}
+}
+
+function clearHistory(){
+  if(!confirm('記録をすべて削除しますか？')) return;
+  localStorage.removeItem(KEY);
+  renderHistory();
+}
+
+renderHistory();
+</script>
+</body>
+</html>
