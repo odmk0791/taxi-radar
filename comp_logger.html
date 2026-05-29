@@ -103,10 +103,19 @@ body{display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:0}
   <!-- AI解析セクション -->
   <div class="ai-box" id="ai-box">
     <div class="ai-label">📸 スクリーンショットから自動入力</div>
+    <div id="ai-key-box" class="hidden" style="margin-bottom:10px">
+      <input id="ai-key-input" type="password" placeholder="Anthropic APIキーを入力（sk-ant-...）"
+        style="width:100%;box-sizing:border-box;padding:10px;border-radius:8px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:13px">
+      <button onclick="saveApiKey()" style="width:100%;margin-top:6px;padding:10px;background:var(--s2);border:1px solid var(--bd);border-radius:8px;color:var(--tx);font-size:13px;cursor:pointer">保存</button>
+      <div style="font-size:11px;color:var(--tx2);margin-top:6px">console.anthropic.com で取得できます。端末内のみに保存されます。</div>
+    </div>
     <label class="ai-upload-btn" for="ai-file-input">
       📂 写真を選択して解析
       <input id="ai-file-input" type="file" accept="image/*" style="display:none" onchange="analyzeImage(this)">
     </label>
+    <div style="text-align:right;margin-top:6px">
+      <span onclick="toggleApiKey()" style="font-size:11px;color:var(--tx2);cursor:pointer">🔑 APIキー設定</span>
+    </div>
     <div id="ai-result" class="ai-result hidden">
       <div class="ai-result-row"><span class="ai-result-label">🕐 時刻</span><span id="ai-time" class="ai-result-val">--</span></div>
       <div class="ai-result-row"><span class="ai-result-label">📍 エリア</span><span id="ai-area-val" class="ai-result-val">--</span></div>
@@ -181,10 +190,34 @@ function loadCoords(){
 }
 loadCoords();
 
+var API_KEY_STORAGE = 'taxiradar_apikey';
+
+function toggleApiKey(){
+  var box = document.getElementById('ai-key-box');
+  box.classList.toggle('hidden');
+  if(!box.classList.contains('hidden')){
+    var saved = localStorage.getItem(API_KEY_STORAGE)||'';
+    document.getElementById('ai-key-input').value = saved;
+  }
+}
+function saveApiKey(){
+  var key = document.getElementById('ai-key-input').value.trim();
+  if(key) localStorage.setItem(API_KEY_STORAGE, key);
+  document.getElementById('ai-key-box').classList.add('hidden');
+  showFlash('APIキー保存');
+}
+
 // AI画像解析
 var _aiData = {};
 
 function analyzeImage(input){
+  var apiKey = localStorage.getItem(API_KEY_STORAGE)||'';
+  if(!apiKey){
+    document.getElementById('ai-key-box').classList.remove('hidden');
+    document.getElementById('ai-error').textContent = '🔑 先にAPIキーを設定してください';
+    document.getElementById('ai-error').classList.remove('hidden');
+    return;
+  }
   if(!input.files||!input.files[0]) return;
   var file = input.files[0];
   var reader = new FileReader();
@@ -197,7 +230,12 @@ function analyzeImage(input){
 
     fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
-      headers:{'Content-Type':'application/json'},
+      headers:{
+        'Content-Type':'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version':'2023-06-01',
+        'anthropic-dangerous-direct-browser-access':'true'
+      },
       body: JSON.stringify({
         model:'claude-sonnet-4-20250514',
         max_tokens:200,
@@ -222,11 +260,7 @@ function analyzeImage(input){
       document.getElementById('ai-area-val').textContent = result.area||'--';
       document.getElementById('ai-count-val').textContent = result.count||'--';
       document.getElementById('ai-result').classList.remove('hidden');
-      // エリアを自動セット
-      if(result.area){
-        currentArea = result.area;
-        document.getElementById('area-name').textContent = result.area;
-      }
+      if(result.area){ currentArea=result.area; document.getElementById('area-name').textContent=result.area; }
     })
     .catch(function(err){
       document.getElementById('ai-loading').classList.add('hidden');
@@ -240,8 +274,8 @@ function analyzeImage(input){
 
 function saveFromAI(){
   if(!_aiData.count) return;
+  var savedCount = _aiData.count;
   var now = new Date();
-  // 時刻はスクリーンショットの時刻を使用
   var disp = _aiData.time || ((now.getHours()<10?'0':'')+now.getHours()+':'+(now.getMinutes()<10?'0':'')+now.getMinutes());
   var area = _aiData.area || currentArea || '未設定';
   var rec = {
@@ -249,7 +283,7 @@ function saveFromAI(){
     disp: disp,
     area: area,
     lat: currentLat, lng: currentLng,
-    count: _aiData.count,
+    count: savedCount,
     hour: parseInt(disp.split(':')[0])||now.getHours(),
     source: 'ai'
   };
@@ -261,8 +295,7 @@ function saveFromAI(){
   }catch(e){}
   _aiData = {};
   document.getElementById('ai-result').classList.add('hidden');
-  document.getElementById('ai-file-input').value='';
-  showFlash(_aiData.count||'保存');
+  showFlash(savedCount);
   renderHistory();
 }
 
