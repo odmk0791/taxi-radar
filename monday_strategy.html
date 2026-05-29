@@ -11,16 +11,16 @@ body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans','Noto Sans JP'
 .sub{font-size:10px;color:#f87171;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
 h1{font-size:19px;font-weight:800}
 .desc{font-size:11px;color:#475569;margin-top:3px}
-#msgbox{margin:20px 16px;padding:16px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
 @keyframes sp{to{transform:rotate(360deg)}}
 .spin{display:inline-block;animation:sp 1s linear infinite}
-.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:linear-gradient(135deg,#f87171,#fb923c);border:none;border-radius:12px;color:#fff;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
 .kpi-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:0 14px 14px}
 .kpi{background:#161626;border-radius:12px;padding:10px}
 .tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .tab{padding:7px 12px;border-radius:20px;border:none;background:#151e30;color:#64748b;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0}
 .tab.on{background:#f87171;color:#fff}
-.tab.gold{background:#f59e0b;color:#fff}
+.tab.gold{color:#fff}
 .panel{padding:0 14px;display:none}
 .panel.on{display:block}
 .card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:13px 14px;margin-bottom:10px}
@@ -30,21 +30,21 @@ h1{font-size:19px;font-weight:800}
 .mbari{height:6px;border-radius:4px}
 .spot{border:1px solid #1e2d40;border-radius:10px;padding:9px 12px;margin-bottom:7px;background:#161626}
 .spot.t{border-color:#facc1555;background:#facc1508}
-.spot.gold{border-color:#f59e0b55;background:#f59e0b08}
 .strat{background:#161626;border-radius:12px;overflow:hidden;margin-bottom:9px}
 .gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
 .gcell{background:#0d1220;border-radius:8px;padding:8px 10px}
 .ggrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:10px}
 .gcell2{background:#0d1220;border-radius:8px;padding:8px;text-align:center}
 .to-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #1e2d40;align-items:center}
-/* 比較テーブル */
-.cmp-table{width:100%;border-collapse:collapse;font-size:11px;margin-top:8px}
-.cmp-table th{color:#64748b;font-weight:600;padding:4px 6px;text-align:left;border-bottom:1px solid #1e2d40}
-.cmp-table td{padding:6px 6px;border-bottom:1px solid #0d1220;vertical-align:top}
-.cmp-table tr.hi td{background:#f59e0b08}
-/* 日付リスト */
-.day-item{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:#161626;border:1px solid #1e2d40;border-radius:8px;margin-bottom:6px;font-size:12px}
-.day-item.hi{border-color:#f59e0b55;background:#f59e0b08}
+.tl-item{border-radius:12px;overflow:hidden;margin-bottom:10px}
+.tl-head{padding:10px 14px;display:flex;align-items:center;gap:8px}
+.tl-body{padding:10px 14px}
+.tl-time{font-size:14px;font-weight:900;min-width:80px}
+.tl-ttl{font-size:13px;font-weight:800}
+.tl-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #1e2035;font-size:11px;color:#94a3b8}
+.tl-row:last-child{border:none}
+.kpi-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px}
+.kpi-mini{background:#0d1220;border-radius:8px;padding:7px 8px;text-align:center}
 #reloadbtn{background:#151e30;border:1px solid #1e2d40;border-radius:10px;padding:9px 22px;color:#64748b;font-size:12px;cursor:pointer;font-family:inherit;display:block;margin:20px auto 0}
 </style>
 </head>
@@ -52,9 +52,9 @@ h1{font-size:19px;font-weight:800}
 <div id="hdr">
   <div class="sub">Monday Performance Analysis</div>
   <h1>🔴 月曜日 売上向上ダッシュボード</h1>
-  <div class="desc">日報データをリアルタイム分析 ／ 10万超えパターン分析付き</div>
+  <div class="desc">JPN TAXI専用 / GO中心戦略 / サンキュー24時解放</div>
 </div>
-<div id="msgbox"><span class="spin">⏳</span> データを取得中...</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
 <button class="rbtn" id="rbtn" onclick="init()" style="display:none">🔄 再試行</button>
 <div id="dashboard" style="display:none">
   <div class="kpi-grid" id="kpis"></div>
@@ -63,8 +63,8 @@ h1{font-size:19px;font-weight:800}
     <button class="tab"      onclick="sw('hourly',this)">🕐 時間帯</button>
     <button class="tab"      onclick="sw('spots',this)">📍 乗車地</button>
     <button class="tab"      onclick="sw('status',this)">🚦 状態別</button>
-    <button class="tab gold" onclick="sw('best',this)">🏆 10万超え分析</button>
-    <button class="tab"      onclick="sw('strategy',this)">🎯 戦略</button>
+    <button class="tab gold" onclick="sw('best',this)" style="background:#f59e0b">🏆 10万超え</button>
+    <button class="tab gold" onclick="sw('strategy',this)" style="background:#f87171">🎯 月曜戦略</button>
   </div>
   <div class="panel on" id="p-compare"></div>
   <div class="panel"    id="p-hourly"></div>
@@ -83,11 +83,10 @@ var DC={月:'#f87171',火:'#fb923c',水:'#facc15',木:'#4ade80',金:'#60a5fa',�
 
 function msg(t,c){var el=document.getElementById('msgbox');el.innerHTML=t;el.style.borderColor=c||'#60a5fa';}
 function showDash(){document.getElementById('msgbox').style.display='none';document.getElementById('rbtn').style.display='none';document.getElementById('dashboard').style.display='';}
-function showErr(e){msg('⚠️ <strong style="color:#f87171">エラー</strong><br>'+e,'#f87171');document.getElementById('rbtn').style.display='';}
+function showErr(e){msg('⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e),'#f87171');document.getElementById('rbtn').style.display='';}
 
 function csv(text){
   var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
-  if(lines.length<2)return{h:[],r:[]};
   function sp(line){var cols=[],cur='',q=false;for(var i=0;i<line.length;i++){var c=line[i];if(c==='"'){q=!q;}else if(c===','&&!q){cols.push(cur.trim());cur='';}else{cur+=c;}}cols.push(cur.trim());return cols;}
   var h=sp(lines[0]);
   var r=lines.slice(1).map(function(l){var v=sp(l),o={};h.forEach(function(k,i){o[k]=v[i]||'';});return o;});
@@ -111,7 +110,7 @@ async function init(){
     var r2=await fetch(U2);if(!r2.ok)throw new Error('詳細 HTTP '+r2.status);var t2=await r2.text();
     msg('<span class="spin">⏳</span> 集計中...','#60a5fa');
     var R=analyze(t1,t2);render(R);showDash();
-  }catch(e){showErr(String(e.message||e));}
+  }catch(e){showErr(e);}
 }
 
 function analyze(t1,t2){
@@ -130,35 +129,30 @@ function analyze(t1,t2){
     var x=bd[d];
     return{d:d,cnt:x.f.length,avg:av(x.f),max:x.f.length?Math.max.apply(null,x.f):0,
       tavg:av(x.tr),ravg:x.re.length?Math.round(av(x.re)*10)/10:0,
-      over100:x.f.filter(function(v){return v>=100000;}).length,
-      rows:x.rows};
+      over100:x.f.filter(function(v){return v>=100000;}).length,rows:x.rows};
   });
 
-  /* 月曜10万超え日の詳細（日報①から日付を取得） */
+  /* 月曜10万超え日 */
   var monOver=[];
   bd['月'].rows.forEach(function(r){
     var f=toN(r['営収']);
-    if(f>=100000)monOver.push({date:r['日付']||'',fare:f,trips:toN(r['回数']),avg:toN(r['単価']),real:parseFloat(r['実車率'])||0});
+    if(f>=100000)monOver.push({date:r['日付']||'',fare:f,trips:toN(r['回数']),real:parseFloat(r['実車率'])||0});
   });
   monOver.sort(function(a,b){return b.fare-a.fare;});
-
-  /* 月曜通常日（10万未満）の平均像 */
-  var monNorm=bd['月'].rows.filter(function(r){return toN(r['営収'])>0&&toN(r['営収'])<100000;});
-  var normFares=monNorm.map(function(r){return toN(r['営収']);});
-  var normTrips=monNorm.map(function(r){return toN(r['回数']);}).filter(function(v){return v>0;});
-  var normReal=monNorm.map(function(r){return parseFloat(r['実車率'])||0;}).filter(function(v){return v>0;});
+  var monNormF=bd['月'].rows.filter(function(r){var f=toN(r['営収']);return f>0&&f<100000;}).map(function(r){return toN(r['営収']);});
 
   /* 日報② */
   var mon2=d2.r.filter(function(r){return(r['曜日']||'').trim()==='月';});
+  /* プレタク除外（サンキュー列がプレタク/プレタクPの行を除外） */
+  var mon2jpn=mon2.filter(function(r){
+    var sk=(r['サンキュー']||'').trim();
+    return sk!=='プレタク'&&sk!=='プレタクP';
+  });
 
-  /* 10万超え日と通常日の日付セット（日報①から） */
   var overDates=new Set(monOver.map(function(x){return x.date;}));
+  var monHi=mon2jpn.filter(function(r){return overDates.has(r['日付']||'');});
+  var monLo=mon2jpn.filter(function(r){return!overDates.has(r['日付']||'');});
 
-  /* 10万超え日の詳細行 vs 通常日の詳細行 */
-  var monHi=mon2.filter(function(r){return overDates.has(r['日付']||'');});
-  var monLo=mon2.filter(function(r){return!overDates.has(r['日付']||'');});
-
-  /* 時間帯比較（高/通常） */
   function hourDist(rows){
     var m={};
     rows.forEach(function(r){
@@ -171,7 +165,6 @@ function analyze(t1,t2){
       .map(function(e){return{lbl:e[0],avg:Math.round(e[1].tot/e[1].cnt),cnt:e[1].cnt,k:e[1].k};});
   }
 
-  /* 乗車地TOP */
   function buildTop(rows,lim){
     var m={};
     rows.forEach(function(r){
@@ -183,7 +176,6 @@ function analyze(t1,t2){
       .map(function(e){return{name:e[0],cnt:e[1].cnt,avg:Math.round(e[1].tot/e[1].cnt)};});
   }
 
-  /* ステータス/支払/サンキュー */
   function buildMix(rows,key){
     var m={};
     rows.forEach(function(r){
@@ -195,30 +187,26 @@ function analyze(t1,t2){
   }
 
   return{
-    ds:ds,
-    monOver:monOver,
-    normAvgFare:av(normFares),normAvgTrips:av(normTrips),normAvgReal:av(normReal),
-    /* 全月曜用 */
-    hourly:hourDist(mon2),
-    fromTop:buildTop(mon2,15),
-    toTop:buildTop(mon2.map(function(r){return{...r,'乗車地：市区':r['降車地：市区'],'乗車地：地名':r['降車地：地名']};}).filter(function(r){return true;}),10),
-    stMix:buildMix(mon2,'ステータス'),payMix:buildMix(mon2,'支払'),skMix:buildMix(mon2,'サンキュー'),
-    monCnt:mon2.length,
-    /* 比較用 */
+    ds:ds,monOver:monOver,
+    normAvgFare:av(monNormF),
+    hourly:hourDist(mon2jpn),
+    fromTop:buildTop(mon2jpn,15),
+    toTop:buildTop(mon2jpn.map(function(r){return Object.assign({},r,{'乗車地：市区':r['降車地：市区'],'乗車地：地名':r['降車地：地名']});}),10),
+    stMix:buildMix(mon2jpn,'ステータス'),
+    skMix:buildMix(mon2jpn,'サンキュー'),
+    monCnt:mon2jpn.length,
     hiHourly:hourDist(monHi),loHourly:hourDist(monLo),
     hiFrom:buildTop(monHi,10),loFrom:buildTop(monLo,10),
     hiSt:buildMix(monHi,'ステータス'),loSt:buildMix(monLo,'ステータス'),
-    hiSk:buildMix(monHi,'サンキュー'),loSk:buildMix(monLo,'サンキュー'),
-    hiCnt:monHi.length,loCnt:monLo.length
   };
 }
 
 function render(R){
   var valid=R.ds.filter(function(d){return d.avg>0;});
-  var mon=R.ds.find(function(d){return d.d==='月';})||{d:'月',cnt:0,avg:0,max:0,tavg:0,ravg:0,over100:0};
+  var mon=R.ds.find(function(d){return d.d==='月';})||{d:'月',cnt:0,avg:0,max:0,tavg:0,over100:0};
   var aAll=av(valid.map(function(d){return d.avg;}));
   var aOth=av(valid.filter(function(d){return d.d!=='月';}).map(function(d){return d.avg;}));
-  var gap=mon.avg-aAll,gapO=mon.avg-aOth;
+  var gap=mon.avg-aAll;
   var maxA=valid.length?Math.max.apply(null,valid.map(function(d){return d.avg;})):1;
   var sorted=[].concat(valid).sort(function(a,b){return b.avg-a.avg;});
   var rank=sorted.findIndex(function(d){return d.d==='月';})+1;
@@ -230,7 +218,7 @@ function render(R){
   document.getElementById('kpis').innerHTML=
     kpi('💰','月曜 平均営収','¥'+mon.avg.toLocaleString(),'全体比 '+(gap>=0?'+':'')+gap.toLocaleString(),c0)+
     kpi('🏆','売上ランク',rank+'位/'+valid.length+'曜','最高¥'+mon.max.toLocaleString(),c1)+
-    kpi('🌟','10万超え日',mon.over100+'日 / '+mon.cnt+'日','成功率'+(mon.cnt>0?Math.round(mon.over100/mon.cnt*100):0)+'%','#f59e0b');
+    kpi('🌟','10万超え日',mon.over100+'日/'+mon.cnt+'日','成功率'+(mon.cnt>0?Math.round(mon.over100/mon.cnt*100):0)+'%','#f59e0b');
 
   /* ── 曜日比較 ── */
   var h='<p style="font-size:11px;color:#475569;margin-bottom:12px">曜日別 平均営収（高い順）</p>';
@@ -240,43 +228,36 @@ function render(R){
     h+='<div style="margin-bottom:9px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px"><div style="display:flex;align-items:center;gap:7px"><span style="width:27px;height:27px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;border:1.5px solid '+DC[s.d]+';background:'+(im?'#f87171':DC[s.d]+'22')+';color:'+(im?'#fff':DC[s.d])+'">'+s.d+'</span><span style="font-size:11px;color:#475569">'+s.cnt+'日'+(s.tavg>0?' avg'+s.tavg+'件':'')+'</span></div><span style="font-size:13px;font-weight:700;color:'+(im?'#f87171':'#e2e8f0')+'">¥'+s.avg.toLocaleString()+'</span></div>'+bar(pct,bg,18,im?((s.avg/aAll-1)*100).toFixed(1)+'%':'')+'</div>';
   });
   h+='<div class="card" style="border-color:#f8717155;background:#f8717108"><p style="font-size:11px;font-weight:700;color:#f87171;margin-bottom:8px">⚡ 月曜ギャップ</p><div class="gap-grid">';
-  [{l:'vs 全体平均',v:(gap>=0?'+':'')+'¥'+Math.abs(gap).toLocaleString(),c:gap<0?'#f87171':'#4ade80'},{l:'vs 他曜日平均',v:(gapO>=0?'+':'')+'¥'+Math.abs(gapO).toLocaleString(),c:gapO<0?'#f87171':'#4ade80'},{l:'トップとの差',v:'-¥'+(maxA-mon.avg).toLocaleString(),c:'#f87171'},{l:'月曜最高記録',v:'¥'+mon.max.toLocaleString(),c:'#4ade80'}]
-    .forEach(function(x){h+='<div class="gcell"><p style="font-size:9px;color:#475569;margin-bottom:3px">'+x.l+'</p><p style="font-size:14px;font-weight:800;color:'+x.c+'">'+x.v+'</p></div>';});
+  [{l:'vs 全体平均',v:(gap>=0?'+':'')+'¥'+Math.abs(gap).toLocaleString(),c:gap<0?'#f87171':'#4ade80'},
+   {l:'vs 他曜日平均',v:(av(valid.filter(function(d){return d.d!=='月';}).map(function(d){return d.avg;}))-mon.avg>=0?'-':'+')+'¥'+Math.abs(mon.avg-aOth).toLocaleString(),c:mon.avg<aOth?'#f87171':'#4ade80'},
+   {l:'トップとの差',v:'-¥'+(maxA-mon.avg).toLocaleString(),c:'#f87171'},
+   {l:'月曜最高記録',v:'¥'+mon.max.toLocaleString(),c:'#4ade80'},
+  ].forEach(function(x){h+='<div class="gcell"><p style="font-size:9px;color:#475569;margin-bottom:3px">'+x.l+'</p><p style="font-size:14px;font-weight:800;color:'+x.c+'">'+x.v+'</p></div>';});
   h+='</div></div>';
-  if(valid.some(function(d){return d.ravg>0;})){
-    h+='<div class="card"><p style="font-size:11px;font-weight:700;color:#60a5fa;margin-bottom:8px">📐 実車率比較</p>';
-    var rv=valid.filter(function(d){return d.ravg>0;}).sort(function(a,b){return b.ravg-a.ravg;});
-    var mr=Math.max.apply(null,rv.map(function(d){return d.ravg;}));
-    rv.forEach(function(s){h+='<div style="margin-bottom:6px"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:12px;color:'+(s.d==='月'?'#f87171':'#94a3b8')+'">'+s.d+'曜日</span><span style="font-size:11px;color:#475569">'+s.ravg+'%</span></div>'+mbar(s.ravg/mr*100,s.d==='月'?'#f87171':DC[s.d]+'99')+'</div>';});
-    h+='</div>';
-  }
   document.getElementById('p-compare').innerHTML=h;
 
   /* ── 時間帯 ── */
-  h='<p style="font-size:11px;color:#475569;margin-bottom:12px">月曜 時間帯別 件数/平均単価（'+R.monCnt+'件）</p>';
-  if(!R.hourly.length){h='<div class="card" style="color:#64748b;font-size:12px">時刻データ未検出</div>';}
-  else{
-    R.hourly.forEach(function(hh){
-      var pct=hh.cnt/mxH*100,hot=pct>=55,mid=pct>=25;
-      var col=hot?'linear-gradient(90deg,#f59e0b,#f87171)':mid?'linear-gradient(90deg,#2563eb,#60a5fa44)':'#1e2d40';
-      h+='<div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px"><div style="display:flex;align-items:center"><span style="font-size:12px;font-weight:700;min-width:52px;color:'+(hot?'#facc15':mid?'#60a5fa':'#64748b')+'">'+es(hh.lbl)+'</span>';
-      if(hot)h+='<span style="font-size:9px;background:#f59e0b22;color:#f59e0b;padding:1px 5px;border-radius:8px;margin-left:4px">🔥HOT</span>';
-      h+='</div><span style="font-size:11px;color:#475569">'+hh.cnt+'件 ¥'+hh.avg.toLocaleString()+'</span></div>'+bar(pct,col,20)+'</div>';
-    });
-    var hotS=R.hourly.filter(function(hh){return hh.cnt/mxH>=.55;});
-    var deadS=R.hourly.filter(function(hh){return hh.cnt/mxH<.15;});
-    if(hotS.length)h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b0a"><p style="font-size:11px;font-weight:700;color:#f59e0b;margin-bottom:5px">🔥 ピーク時間帯</p><p style="font-size:12px;color:#cbd5e1;margin-bottom:5px">'+hotS.map(function(hh){return es(hh.lbl)+'（'+hh.cnt+'件）';}).join('　')+'</p><p style="font-size:11px;color:#94a3b8">→ この時間帯に確実にTOP乗車地エリアへ</p></div>';
-    if(deadS.length)h+='<div class="card" style="border-color:#47556944;background:#47556908"><p style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:5px">💤 閑散時間帯</p><p style="font-size:12px;color:#64748b;margin-bottom:5px">'+deadS.map(function(hh){return es(hh.lbl);}).join('・')+'</p><p style="font-size:11px;color:#475569">→ 食事・休憩・ピーク前の体力温存に活用</p></div>';
-  }
+  h='<p style="font-size:11px;color:#475569;margin-bottom:12px">月曜 時間帯別 件数/平均単価（JPN TAXI '+R.monCnt+'件）</p>';
+  R.hourly.forEach(function(hh){
+    var pct=hh.cnt/mxH*100,hot=pct>=55,mid=pct>=25;
+    var col=hot?'linear-gradient(90deg,#f59e0b,#f87171)':mid?'linear-gradient(90deg,#2563eb,#60a5fa44)':'#1e2d40';
+    h+='<div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px"><div style="display:flex;align-items:center"><span style="font-size:12px;font-weight:700;min-width:52px;color:'+(hot?'#facc15':mid?'#60a5fa':'#64748b')+'">'+es(hh.lbl)+'</span>';
+    if(hot)h+='<span style="font-size:9px;background:#f59e0b22;color:#f59e0b;padding:1px 5px;border-radius:8px;margin-left:4px">🔥HOT</span>';
+    h+='</div><span style="font-size:11px;color:#475569">'+hh.cnt+'件 ¥'+hh.avg.toLocaleString()+'</span></div>'+bar(pct,col,20)+'</div>';
+  });
+  var hotS=R.hourly.filter(function(hh){return hh.cnt/mxH>=.55;});
+  var deadS=R.hourly.filter(function(hh){return hh.cnt/mxH<.15;});
+  if(hotS.length)h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b0a"><p style="font-size:11px;font-weight:700;color:#f59e0b;margin-bottom:5px">🔥 ピーク時間帯</p><p style="font-size:12px;color:#cbd5e1;margin-bottom:5px">'+hotS.map(function(hh){return es(hh.lbl)+'（'+hh.cnt+'件）';}).join('　')+'</p><p style="font-size:11px;color:#94a3b8">→ この時間帯に確実にTOP乗車地エリアへ</p></div>';
+  if(deadS.length)h+='<div class="card" style="border-color:#47556944;background:#47556908"><p style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:5px">💤 閑散時間帯</p><p style="font-size:12px;color:#64748b;margin-bottom:5px">'+deadS.map(function(hh){return es(hh.lbl);}).join('・')+'</p><p style="font-size:11px;color:#475569">→ 食事・休憩・ピーク前の体力温存に活用</p></div>';
   document.getElementById('p-hourly').innerHTML=h;
 
   /* ── 乗車地 ── */
-  h='<p style="font-size:11px;color:#475569;margin-bottom:12px">月曜 乗車地 TOP'+R.fromTop.length+'（件数順）</p>';
+  h='<p style="font-size:11px;color:#475569;margin-bottom:12px">月曜 乗車地 TOP'+R.fromTop.length+'（JPN TAXI・件数順）</p>';
   R.fromTop.forEach(function(s,i){
     var pct=s.cnt/mxF*100,top=i<3,md=['🥇','🥈','🥉'][i]||(i+1+'.');
     h+='<div class="spot'+(top?' t':'')+'"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><div style="display:flex;align-items:center;gap:6px;flex:1"><span style="font-size:13px;flex-shrink:0">'+md+'</span><span style="font-size:11px;font-weight:700;color:'+(top?'#facc15':'#e2e8f0')+'">'+es(s.name)+'</span></div><div style="text-align:right;flex-shrink:0;margin-left:8px"><p style="font-size:13px;font-weight:700;color:'+(top?'#facc15':'#94a3b8')+'">'+s.cnt+'件</p><p style="font-size:9px;color:#475569">avg ¥'+s.avg.toLocaleString()+'</p></div></div>'+mbar(pct,top?'linear-gradient(90deg,#f59e0b,#facc15)':'#1e2d40')+'</div>';
   });
-  h+='<div class="card" style="border-color:#4ade8055;background:#4ade8008"><p style="font-size:11px;font-weight:700;color:#4ade80;margin-bottom:5px">📍 月曜エリア戦略</p><p style="font-size:12px;color:#cbd5e1;line-height:1.8"><strong style="color:#facc15">TOP3：'+R.fromTop.slice(0,3).map(function(s){return es(s.name);}).join(' · ')+'</strong><br>を月曜の定点ポジションに設定。意識的に巡回するだけで件数が安定します。</p></div>';
+  h+='<div class="card" style="border-color:#4ade8055;background:#4ade8008"><p style="font-size:11px;font-weight:700;color:#4ade80;margin-bottom:5px">📍 月曜定点エリア</p><p style="font-size:12px;color:#cbd5e1;line-height:1.8"><strong style="color:#facc15">TOP3：'+R.fromTop.slice(0,3).map(function(s){return es(s.name);}).join(' · ')+'</strong><br>繁華街のやや外側に位置取り、1時間に1回は通過する巡回ルートを設定。</p></div>';
   document.getElementById('p-spots').innerHTML=h;
 
   /* ── 状態別 ── */
@@ -287,171 +268,189 @@ function render(R){
     return s+'</div>';
   }
   var tSt=R.stMix.reduce(function(a,b){return a+b.cnt;},0);
-  var tPay=R.payMix.reduce(function(a,b){return a+b.cnt;},0);
   var tSk=R.skMix.reduce(function(a,b){return a+b.cnt;},0);
-  h='';
-  if(R.stMix.length)h+=mixSec('🚦 ステータス別','#60a5fa',R.stMix,tSt,{GO:'🟢',スマ配:'📱',流し:'🚕'});
-  if(R.payMix.length)h+=mixSec('💳 支払い方法','#facc15',R.payMix,tPay,{});
-  if(R.skMix.length)h+=mixSec('🎫 サンキュー別','#a78bfa',R.skMix,tSk,{サンキュー:'🎫',プレタク:'⭐',プレタクP:'🌟',通常:'🚕'});
-  document.getElementById('p-status').innerHTML=h||'<div class="card" style="color:#64748b">データ未検出</div>';
+  h=mixSec('🚦 ステータス別','#60a5fa',R.stMix,tSt,{GO:'🟢',スマ配:'📱',流し:'🚕'});
+  h+=mixSec('🎫 サンキュー別','#a78bfa',R.skMix,tSk,{サンキュー:'🎫',通常:'🚕'});
+  h+='<div class="card" style="border-color:#60a5fa44;background:#60a5fa08"><p style="font-size:11px;font-weight:700;color:#60a5fa;margin-bottom:6px">💡 月曜ステータス戦略</p><p style="font-size:12px;color:#cbd5e1;line-height:1.8">月曜はGO中心で組み立てる。スマ配は来たら受けるが待たない。流しはCV110%で中央値¥1,800と不安定なため補助的に活用。</p></div>';
+  document.getElementById('p-status').innerHTML=h;
 
-  /* ══════════════════════════════════
-     🏆 10万超え分析タブ
-  ══════════════════════════════════ */
+  /* ── 10万超え分析 ── */
   h='';
   var over=R.monOver;
-  var mon_d=R.ds.find(function(d){return d.d==='月';})||{cnt:0,over100:0,avg:0};
-
-  /* ヘッダーサマリー */
   h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b0a">';
-  h+='<p style="font-size:12px;font-weight:700;color:#f59e0b;margin-bottom:10px">🌟 月曜10万超え日の概要</p>';
-  h+='<div class="ggrid" style="grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">';
-  h+='<div class="gcell2"><p style="font-size:9px;color:#475569;margin-bottom:3px">10万超え日数</p><p style="font-size:18px;font-weight:800;color:#f59e0b">'+over.length+'日</p><p style="font-size:9px;color:#475569">/ 月曜'+mon_d.cnt+'日</p></div>';
-  h+='<div class="gcell2"><p style="font-size:9px;color:#475569;margin-bottom:3px">成功率</p><p style="font-size:18px;font-weight:800;color:#f59e0b">'+(mon_d.cnt>0?Math.round(over.length/mon_d.cnt*100):0)+'%</p><p style="font-size:9px;color:#475569">'+over.length+'日 / '+mon_d.cnt+'日</p></div>';
+  h+='<p style="font-size:12px;font-weight:700;color:#f59e0b;margin-bottom:10px">🌟 月曜10万超え概要</p>';
+  h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">';
+  h+='<div class="gcell2"><p style="font-size:9px;color:#475569;margin-bottom:3px">10万超え日数</p><p style="font-size:20px;font-weight:800;color:#f59e0b">'+over.length+'日</p><p style="font-size:9px;color:#475569">/ 月曜'+mon.cnt+'日</p></div>';
+  h+='<div class="gcell2"><p style="font-size:9px;color:#475569;margin-bottom:3px">成功率</p><p style="font-size:20px;font-weight:800;color:#f59e0b">'+(mon.cnt>0?Math.round(over.length/mon.cnt*100):0)+'%</p></div>';
   h+='</div>';
   if(over.length>0){
-    var overAvgFare=av(over.map(function(x){return x.fare;}));
-    var overAvgTrips=av(over.map(function(x){return x.trips;}).filter(function(v){return v>0;}));
-    var overAvgReal=av(over.map(function(x){return x.real;}).filter(function(v){return v>0;}));
+    var oAvg=av(over.map(function(x){return x.fare;}));
     h+='<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px">';
-    [{l:'10万超え平均営収',v:'¥'+overAvgFare.toLocaleString(),c:'#f59e0b'},
+    [{l:'10万超え平均',v:'¥'+oAvg.toLocaleString(),c:'#f59e0b'},
      {l:'通常日平均',v:'¥'+R.normAvgFare.toLocaleString(),c:'#94a3b8'},
-     {l:'差額',v:'+¥'+(overAvgFare-R.normAvgFare).toLocaleString(),c:'#4ade80'},
+     {l:'差額',v:'+¥'+(oAvg-R.normAvgFare).toLocaleString(),c:'#4ade80'},
     ].forEach(function(x){h+='<div class="gcell2"><p style="font-size:9px;color:#475569;margin-bottom:3px">'+x.l+'</p><p style="font-size:12px;font-weight:800;color:'+x.c+'">'+x.v+'</p></div>';});
     h+='</div>';
   }
   h+='</div>';
-
-  /* 10万超え日リスト */
   if(over.length>0){
-    h+='<p style="font-size:11px;color:#475569;margin-bottom:8px">📅 10万超え達成日（高い順）</p>';
+    h+='<p style="font-size:11px;color:#475569;margin-bottom:8px">📅 達成日リスト（高い順）</p>';
     over.forEach(function(x,i){
-      h+='<div class="day-item hi"><div><p style="font-size:12px;font-weight:700;color:#f59e0b">'+es(x.date)+'</p><p style="font-size:10px;color:#64748b">'+x.trips+'件 単価¥'+(x.avg||0).toLocaleString()+' 実車'+x.real+'%</p></div><p style="font-size:16px;font-weight:800;color:#f59e0b">¥'+x.fare.toLocaleString()+'</p></div>';
+      h+='<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:#161626;border:1px solid #f59e0b44;border-radius:8px;margin-bottom:6px"><div><p style="font-size:12px;font-weight:700;color:#f59e0b">'+es(x.date)+'</p><p style="font-size:10px;color:#64748b">'+x.trips+'件 実車'+x.real+'%</p></div><p style="font-size:16px;font-weight:800;color:#f59e0b">¥'+x.fare.toLocaleString()+'</p></div>';
     });
   }
-
-  /* 時間帯比較（10万超え vs 通常） */
-  if(R.hiHourly.length>0||R.loHourly.length>0){
-    h+='<div class="card" style="margin-top:4px">';
-    h+='<p style="font-size:11px;font-weight:700;color:#e2e8f0;margin-bottom:10px">🕐 時間帯パターン比較</p>';
-    h+='<table class="cmp-table"><thead><tr><th>時間帯</th><th style="color:#f59e0b">🌟10万超</th><th style="color:#94a3b8">通常日</th><th>差</th></tr></thead><tbody>';
-    /* 全時間帯のユニオン */
+  /* 時間帯比較 */
+  if(R.hiHourly.length>0){
+    h+='<div class="card" style="margin-top:4px"><p style="font-size:11px;font-weight:700;color:#e2e8f0;margin-bottom:10px">🕐 時間帯パターン比較</p>';
+    h+='<table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr><th style="text-align:left;color:#475569;padding:4px 6px;border-bottom:1px solid #1e2d40">時間帯</th><th style="text-align:right;color:#f59e0b;padding:4px 6px;border-bottom:1px solid #1e2d40">🌟10万超え</th><th style="text-align:right;color:#94a3b8;padding:4px 6px;border-bottom:1px solid #1e2d40">通常日</th><th style="text-align:right;color:#64748b;padding:4px 6px;border-bottom:1px solid #1e2d40">差</th></tr></thead><tbody>';
     var allH=[];
     R.hiHourly.forEach(function(x){if(allH.indexOf(x.lbl)<0)allH.push(x.lbl);});
     R.loHourly.forEach(function(x){if(allH.indexOf(x.lbl)<0)allH.push(x.lbl);});
     allH.sort(function(a,b){
-      var ka=R.hiHourly.find(function(x){return x.lbl===a;})||R.loHourly.find(function(x){return x.lbl===a;})||{k:99};
-      var kb=R.hiHourly.find(function(x){return x.lbl===b;})||R.loHourly.find(function(x){return x.lbl===b;})||{k:99};
-      return ka.k-kb.k;
+      var ka=(R.hiHourly.find(function(x){return x.lbl===a;})||R.loHourly.find(function(x){return x.lbl===a;})||{k:99}).k;
+      var kb=(R.hiHourly.find(function(x){return x.lbl===b;})||R.loHourly.find(function(x){return x.lbl===b;})||{k:99}).k;
+      return ka-kb;
     });
-    var hiTotal=R.hiHourly.reduce(function(a,b){return a+b.cnt;},0)||1;
-    var loTotal=R.loHourly.reduce(function(a,b){return a+b.cnt;},0)||1;
+    var hiT=R.hiHourly.reduce(function(a,b){return a+b.cnt;},0)||1;
+    var loT=R.loHourly.reduce(function(a,b){return a+b.cnt;},0)||1;
     allH.forEach(function(lbl){
       var hi=R.hiHourly.find(function(x){return x.lbl===lbl;});
       var lo=R.loHourly.find(function(x){return x.lbl===lbl;});
-      var hiPct=hi?Math.round(hi.cnt/hiTotal*100):0;
-      var loPct=lo?Math.round(lo.cnt/loTotal*100):0;
-      var diff=hiPct-loPct;
-      var isKey=Math.abs(diff)>=5;
-      h+='<tr'+(isKey?' class="hi"':'')+'><td style="font-weight:'+(isKey?700:400)+';color:'+(isKey?'#f59e0b':'#94a3b8')+'">'+es(lbl)+'</td>';
-      h+='<td style="color:#f59e0b;font-weight:700">'+(hi?hiPct+'%':'—')+'</td>';
-      h+='<td style="color:#94a3b8">'+(lo?loPct+'%':'—')+'</td>';
-      h+='<td style="color:'+(diff>0?'#4ade80':diff<0?'#f87171':'#475569')+';font-weight:700">'+(diff>=0?'+':'')+diff+'%</td></tr>';
-    });
-    h+='</tbody></table>';
-    h+='<p style="font-size:10px;color:#64748b;margin-top:8px;line-height:1.7">※ 5%以上差がある時間帯をハイライト。10万超え日に多い時間帯が高収入のカギ。</p>';
-    h+='</div>';
-  }
-
-  /* 乗車地比較 */
-  if(R.hiFrom.length>0){
-    h+='<div class="card">';
-    h+='<p style="font-size:11px;font-weight:700;color:#f59e0b;margin-bottom:8px">📍 乗車地：10万超え日 TOP10</p>';
-    var mxHiF=Math.max.apply(null,R.hiFrom.map(function(f){return f.cnt;}));
-    R.hiFrom.forEach(function(s,i){
-      var pct=s.cnt/mxHiF*100,top=i<3,md=['🥇','🥈','🥉'][i]||(i+1+'.');
-      h+='<div class="spot'+(top?' gold':'')+'"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><div style="display:flex;align-items:center;gap:6px;flex:1"><span style="font-size:12px;flex-shrink:0">'+md+'</span><span style="font-size:11px;font-weight:700;color:'+(top?'#f59e0b':'#e2e8f0')+'">'+es(s.name)+'</span></div><div style="text-align:right;flex-shrink:0"><p style="font-size:12px;font-weight:700;color:'+(top?'#f59e0b':'#94a3b8')+'">'+s.cnt+'件</p><p style="font-size:9px;color:#475569">avg ¥'+s.avg.toLocaleString()+'</p></div></div>'+mbar(pct,'linear-gradient(90deg,#f59e0b,#facc15)')+'</div>';
-    });
-
-    /* 通常日との差分（10万超えに多いが通常日に少ない場所） */
-    var loFromMap={};R.loFrom.forEach(function(x){loFromMap[x.name]=x.cnt;});
-    var hiTotal2=R.hiFrom.reduce(function(a,b){return a+b.cnt;},0)||1;
-    var loTotal2=R.loFrom.reduce(function(a,b){return a+b.cnt;},0)||1;
-    var keySpots=R.hiFrom.filter(function(s){
-      var hiPct=s.cnt/hiTotal2*100;
-      var loPct=(loFromMap[s.name]||0)/loTotal2*100;
-      return hiPct-loPct>=1.5;
-    }).slice(0,5);
-    if(keySpots.length){
-      h+='<div style="background:#f59e0b12;border-left:3px solid #f59e0b;border-radius:0 6px 6px 0;padding:8px 12px;margin-top:8px">';
-      h+='<p style="font-size:11px;font-weight:700;color:#f59e0b;margin-bottom:4px">⭐ 10万超え日に特徴的な乗車地</p>';
-      h+='<p style="font-size:11px;color:#cbd5e1;line-height:1.8">'+keySpots.map(function(s){return es(s.name);}).join('・')+'</p>';
-      h+='<p style="font-size:10px;color:#94a3b8;margin-top:4px">→ これらのエリアが月曜高収入と相関しています</p>';
-      h+='</div>';
-    }
-    h+='</div>';
-  }
-
-  /* ステータス比較 */
-  if(R.hiSt.length>0&&R.loSt.length>0){
-    h+='<div class="card">';
-    h+='<p style="font-size:11px;font-weight:700;color:#60a5fa;margin-bottom:8px">🚦 ステータス比較：10万超え vs 通常日</p>';
-    var hiStTot=R.hiSt.reduce(function(a,b){return a+b.cnt;},0)||1;
-    var loStTot=R.loSt.reduce(function(a,b){return a+b.cnt;},0)||1;
-    var loStMap={};R.loSt.forEach(function(x){loStMap[x.name]=x.cnt;});
-    h+='<table class="cmp-table"><thead><tr><th>ステータス</th><th style="color:#f59e0b">10万超え</th><th style="color:#94a3b8">通常日</th><th>差</th></tr></thead><tbody>';
-    R.hiSt.forEach(function(x){
-      var hiPct=Math.round(x.cnt/hiStTot*100);
-      var loPct=Math.round((loStMap[x.name]||0)/loStTot*100);
-      var diff=hiPct-loPct,isKey=Math.abs(diff)>=5;
-      h+='<tr'+(isKey?' class="hi"':'')+'><td style="color:'+(isKey?'#facc15':'#94a3b8')+';font-weight:'+(isKey?700:400)+'">'+es(x.name)+'</td><td style="color:#f59e0b;font-weight:700">'+hiPct+'%</td><td style="color:#94a3b8">'+loPct+'%</td><td style="color:'+(diff>0?'#4ade80':diff<0?'#f87171':'#475569')+';font-weight:700">'+(diff>=0?'+':'')+diff+'%</td></tr>';
+      var hp=hi?Math.round(hi.cnt/hiT*100):0,lp=lo?Math.round(lo.cnt/loT*100):0,diff=hp-lp;
+      var key=Math.abs(diff)>=5;
+      h+='<tr'+(key?' style="background:#f59e0b08"':'')+'><td style="font-size:11px;color:'+(key?'#f59e0b':'#64748b')+';padding:5px 6px;border-bottom:1px solid #0d1220">'+es(lbl)+'</td><td style="text-align:right;padding:5px 6px;border-bottom:1px solid #0d1220;color:#f59e0b;font-weight:'+(key?700:400)+'">'+hp+'%</td><td style="text-align:right;padding:5px 6px;border-bottom:1px solid #0d1220;color:#94a3b8">'+lp+'%</td><td style="text-align:right;padding:5px 6px;border-bottom:1px solid #0d1220;color:'+(diff>0?'#4ade80':diff<0?'#f87171':'#475569');h+=';font-weight:700">'+(diff>=0?'+':'')+diff+'%</td></tr>';
     });
     h+='</tbody></table></div>';
   }
-
-  /* サンキュー比較 */
-  if(R.hiSk.length>0&&R.loSk.length>0){
-    h+='<div class="card">';
-    h+='<p style="font-size:11px;font-weight:700;color:#a78bfa;margin-bottom:8px">🎫 サンキュー比較：10万超え vs 通常日</p>';
-    var hiSkTot=R.hiSk.reduce(function(a,b){return a+b.cnt;},0)||1;
-    var loSkTot=R.loSk.reduce(function(a,b){return a+b.cnt;},0)||1;
-    var loSkMap={};R.loSk.forEach(function(x){loSkMap[x.name]=x.cnt;});
-    h+='<table class="cmp-table"><thead><tr><th>種別</th><th style="color:#f59e0b">10万超え</th><th style="color:#94a3b8">通常日</th><th>差</th></tr></thead><tbody>';
-    R.hiSk.forEach(function(x){
-      var hiPct=Math.round(x.cnt/hiSkTot*100);
-      var loPct=Math.round((loSkMap[x.name]||0)/loSkTot*100);
-      var diff=hiPct-loPct,isKey=Math.abs(diff)>=5;
-      h+='<tr'+(isKey?' class="hi"':'')+'><td style="color:'+(isKey?'#a78bfa':'#94a3b8')+';font-weight:'+(isKey?700:400)+'">'+es(x.name)+'</td><td style="color:#f59e0b;font-weight:700">'+hiPct+'%</td><td style="color:#94a3b8">'+loPct+'%</td><td style="color:'+(diff>0?'#4ade80':diff<0?'#f87171':'#475569')+';font-weight:700">'+(diff>=0?'+':'')+diff+'%</td></tr>';
-    });
-    h+='</tbody></table></div>';
-  }
-
   document.getElementById('p-best').innerHTML=h;
 
-  /* ── 戦略タブ ── */
-  var mxH2=R.hourly.length?Math.max.apply(null,R.hourly.map(function(hh){return hh.cnt;})):1;
-  var hotP=R.hourly.filter(function(hh){return hh.cnt/mxH2>=.55;}).map(function(hh){return hh.lbl;}).join('・')||'ピーク時間帯確認';
-  var t3=R.fromTop.slice(0,3).map(function(s){return s.name;}).join('・')||'TOP乗車地確認';
-  var t3hi=R.hiFrom.slice(0,3).map(function(s){return s.name;}).join('・')||'10万超え乗車地確認';
-  var mo3=Math.round(Math.abs(gap)/3);
-  h='<div class="card" style="border-color:#f8717166;background:#f8717110">';
-  h+='<p style="font-size:12px;font-weight:700;color:#f87171;margin-bottom:8px">🎯 現状と目標</p>';
-  h+='<div class="ggrid"><div class="gcell2"><p style="font-size:9px;color:#475569;margin-bottom:3px">月曜平均</p><p style="font-size:13px;font-weight:800;color:#f87171">¥'+mon_d.avg.toLocaleString()+'</p></div><div class="gcell2"><p style="font-size:9px;color:#475569;margin-bottom:3px">全体平均</p><p style="font-size:13px;font-weight:800;color:#facc15">¥'+aAll.toLocaleString()+'</p></div><div class="gcell2"><p style="font-size:9px;color:#475569;margin-bottom:3px">最高記録</p><p style="font-size:13px;font-weight:800;color:#4ade80">¥'+mon_d.max.toLocaleString()+'</p></div></div>';
-  h+='<p style="font-size:12px;color:#cbd5e1;line-height:1.7;margin-top:10px">目標：<strong style="color:#facc15">全体平均¥'+aAll.toLocaleString()+'</strong>まで引き上げ。差額<strong style="color:#f87171">¥'+Math.abs(gap).toLocaleString()+'</strong>の縮小が優先課題。</p></div>';
-  [{no:'01',ico:'🌟',c:'#f59e0b',t:'10万超え日のパターンを再現する',b:'「🏆 10万超え分析」タブで判明した特徴的な時間帯・乗車地・ステータス構成を、毎週月曜に意識的に再現する。あなた自身が既に10万超えを達成しているので、そのパターンが最強の教科書。',a:'10万超え分析タブを毎週月曜の出庫前に確認 → 特徴的なエリア・時間帯を意識して再現'},
-   {no:'02',ico:'🕐',c:'#60a5fa',t:'ピーク時間帯に確実に稼働',b:'時間帯タブのHOT時間帯（'+hotP+'）に確実に道路上にいる状態を作る。閑散時間帯に休憩を入れ、ピーク30分前には好立地へ移動完了。',a:'閑散時間に食事・休憩 → ピーク30分前にTOP乗車地エリアへ移動'},
-   {no:'03',ico:'📍',c:'#4ade80',t:'10万超え日の乗車地を狙う',b:'10万超え分析で判明した特徴的な乗車地（'+t3hi+'）は通常日より出現率が高い。これらのエリアを月曜の「勝負スポット」として意識する。',a:'出庫後まず10万超え特徴エリアへ。1時間に1回は通過する巡回ルートを設定'},
-   {no:'04',ico:'📱',c:'#facc15',t:'GOアプリ・スマ配をフル活用',b:'月曜の流し需要が少ない時間帯はアプリ配車が有効。10万超え日のステータス比率を確認し、多いステータスに集中する。',a:'月曜はGO通知ON・スマ配エリアに積極参入し受注率アップ'},
-   {no:'05',ico:'🎫',c:'#a78bfa',t:'土日乗客にサンキューチケット配布',b:'月曜需要の底上げには週末の仕込みが有効。10万超え日のサンキュー比率が通常日と差がある場合、それが重要な要因。土日の乗客にサンキューチケットを渡し月曜の再利用を促す。',a:'土日の最後10件は必ずサンキューチケット配布 → 月曜朝の再利用促進'},
-   {no:'06',ico:'📊',c:'#fb923c',t:'毎週月曜に週次PDCA',b:'10万超えを達成した日と未達成の日の違いをデータで確認し、再現性を高める。「今日は何が違ったか」を帰りに振り返るだけで次第に精度が上がる。',a:'月曜帰りに日報入力 → 10万超え日との差を1つ特定 → 翌週に改善を試みる'},
-  ].forEach(function(s){
-    h+='<div class="strat" style="border:1px solid '+s.c+'33"><div style="background:'+s.c+'15;padding:9px 14px;display:flex;align-items:center;gap:9px"><span style="font-size:10px;font-weight:900;color:'+s.c+';background:'+s.c+'22;padding:2px 7px;border-radius:5px">#'+s.no+'</span><span style="font-size:18px">'+s.ico+'</span><span style="font-size:13px;font-weight:800;color:'+s.c+'">'+s.t+'</span></div><div style="padding:11px 14px"><p style="font-size:12px;color:#cbd5e1;line-height:1.8;margin-bottom:9px">'+s.b+'</p><div style="background:'+s.c+'12;border-left:3px solid '+s.c+';border-radius:0 6px 6px 0;padding:7px 12px;font-size:11px;color:'+s.c+';line-height:1.7">✅ '+s.a+'</div></div></div>';
+  /* ══════════════════════════════════
+     🎯 月曜戦略タブ（完全版）
+  ══════════════════════════════════ */
+  var hotP=R.hourly.filter(function(hh){return hh.cnt/mxH>=.55;}).map(function(hh){return hh.lbl;}).join('・')||'ピーク時間帯確認';
+  var t3=R.fromTop.slice(0,3).map(function(s){return s.name;}).join(' · ')||'TOP乗車地確認';
+  h='';
+
+  /* 前提条件バナー */
+  h+='<div class="card" style="border-color:#f8717166;background:#f8717110">';
+  h+='<p style="font-size:12px;font-weight:700;color:#f87171;margin-bottom:8px">⚠️ 月曜の特殊条件</p>';
+  h+='<div style="font-size:12px;color:#cbd5e1;line-height:2">';
+  h+='🎫 サンキュー：<strong style="color:#f87171">24時まで0枚（丸腰）</strong><br>';
+  h+='🟢 GO：<strong style="color:#4ade80">唯一の武器・中央値¥2,300</strong><br>';
+  h+='📱 スマ配：来たら受ける・待たない（CV91%・時間ロス大）<br>';
+  h+='🚕 流し：補助的のみ（中央値¥1,800・CV110%・不安定）';
+  h+='</div></div>';
+
+  /* タイムライン */
+  h+='<p style="font-size:11px;color:#475569;margin-bottom:10px;margin-top:4px">⏰ 月曜 営業タイムライン</p>';
+
+  var timeline=[
+    {
+      time:'16:00〜17:00',phase:'立ち上がり',col:'#60a5fa',icon:'🚀',
+      items:[
+        '環八を越えてから連続配車ON',
+        '吉祥寺エリアを避ける',
+        '外苑前方面へ移動しながらGO待受',
+        '目標：3〜4件 / ¥7,000',
+      ],
+      kpis:[{l:'目標件数',v:'3〜4件'},{l:'目標金額',v:'¥7,000'},{l:'サンキュー',v:'OFF'}]
+    },
+    {
+      time:'17:00〜22:00',phase:'回転重視フェーズ',col:'#facc15',icon:'🔄',
+      items:[
+        'サンキューOFF・近距離案件を腐らず受注',
+        '¥2,000前後でも積極受注（腐らない）',
+        'GOポジション：繁華街のやや外側',
+        '定点エリア：'+t3,
+        'ピーク時間帯（'+hotP+'）に確実に稼働',
+        '目標：22時までに30件・¥30,000',
+      ],
+      kpis:[{l:'目標件数',v:'26〜27件'},{l:'目標金額',v:'¥23,000'},{l:'サンキュー',v:'OFF'}]
+    },
+    {
+      time:'22:00〜24:00',phase:'割増・切り替え準備',col:'#fb923c',icon:'🌙',
+      items:[
+        '割増時間帯（22〜5時）に突入',
+        'サンキューはまだないが単価が自然に上がる',
+        'GOの回転を維持しながら単価UPを狙う',
+        '目標：8〜10件・¥15,000',
+      ],
+      kpis:[{l:'目標件数',v:'8〜10件'},{l:'目標金額',v:'¥15,000'},{l:'サンキュー',v:'まだOFF'}]
+    },
+    {
+      time:'24:00〜',phase:'サンキュー解放フェーズ',col:'#a78bfa',icon:'⭐',
+      items:[
+        'サンキューON（最大4枚＋優先パス分）',
+        '割増×サンキューの最強コンボ',
+        '¥3,000以上保証案件を優先',
+        '回数より単価に切り替え',
+        '目標：残り時間で¥20,000上乗せ',
+      ],
+      kpis:[{l:'目標金額',v:'¥20,000↑'},{l:'サンキュー',v:'最大4枚ON'},{l:'狙い',v:'単価重視'}]
+    },
+  ];
+
+  timeline.forEach(function(tl){
+    h+='<div class="tl-item" style="border:1px solid '+tl.col+'33">';
+    h+='<div class="tl-head" style="background:'+tl.col+'15">';
+    h+='<span style="font-size:18px">'+tl.icon+'</span>';
+    h+='<div><p class="tl-time" style="color:'+tl.col+'">'+tl.time+'</p><p class="tl-ttl" style="color:'+tl.col+'">'+tl.phase+'</p></div>';
+    h+='</div>';
+    h+='<div class="tl-body">';
+    tl.items.forEach(function(item){
+      h+='<div class="tl-row"><span>▸ '+es(item)+'</span></div>';
+    });
+    h+='<div class="kpi-row">';
+    tl.kpis.forEach(function(k){
+      h+='<div class="kpi-mini"><p style="font-size:9px;color:#475569;margin-bottom:2px">'+k.l+'</p><p style="font-size:11px;font-weight:800;color:'+tl.col+'">'+k.v+'</p></div>';
+    });
+    h+='</div></div></div>';
   });
+
+  /* 数値目標サマリー */
+  h+='<div class="card" style="border-color:#4ade8055;background:#4ade8008">';
+  h+='<p style="font-size:12px;font-weight:700;color:#4ade80;margin-bottom:10px">📊 月曜 数値目標サマリー</p>';
+  h+='<table style="width:100%;border-collapse:collapse;font-size:11px">';
+  h+='<thead><tr><th style="text-align:left;color:#475569;padding:4px 6px;border-bottom:1px solid #1e2d40">フェーズ</th><th style="text-align:right;color:#60a5fa;padding:4px 6px;border-bottom:1px solid #1e2d40">件数</th><th style="text-align:right;color:#4ade80;padding:4px 6px;border-bottom:1px solid #1e2d40">金額</th></tr></thead><tbody>';
+  [{ph:'16〜17時',cnt:'3〜4件',fare:'¥7,000'},
+   {ph:'17〜22時',cnt:'26〜27件',fare:'¥23,000'},
+   {ph:'22〜24時',cnt:'8〜10件',fare:'¥15,000'},
+   {ph:'24時〜',cnt:'単価重視',fare:'¥20,000↑'},
+   {ph:'合計',cnt:'約40件',fare:'¥65,000〜',bold:true},
+  ].forEach(function(r){
+    h+='<tr style="'+(r.bold?'border-top:2px solid #4ade8055;background:#4ade8008':'')+'">';
+    h+='<td style="padding:6px 6px;border-bottom:1px solid #0d1220;color:'+(r.bold?'#4ade80':'#94a3b8')+';font-weight:'+(r.bold?700:400)+'">'+r.ph+'</td>';
+    h+='<td style="text-align:right;padding:6px 6px;border-bottom:1px solid #0d1220;color:#60a5fa;font-weight:'+(r.bold?700:400)+'">'+r.cnt+'</td>';
+    h+='<td style="text-align:right;padding:6px 6px;border-bottom:1px solid #0d1220;color:#4ade80;font-weight:'+(r.bold?700:400)+'">'+r.fare+'</td></tr>';
+  });
+  h+='</tbody></table></div>';
+
+  /* 10万超えへの道 */
+  h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b08">';
+  h+='<p style="font-size:12px;font-weight:700;color:#f59e0b;margin-bottom:8px">🌟 10万超えへの条件</p>';
+  h+='<div style="font-size:12px;color:#cbd5e1;line-height:2">';
+  h+='✅ 前週の連続配車起動率60%超（サンキュー確保）<br>';
+  h+='✅ 17〜22時に<strong style="color:#facc15">30件以上</strong>こなせている<br>';
+  h+='✅ 24時以降にサンキューを<strong style="color:#a78bfa">効果的に消費</strong><br>';
+  h+='✅ GOポジショニングがハマる日（探索ナビで確認）<br>';
+  h+='✅ 月曜10万超え特徴エリア（'+R.hiFrom.slice(0,2).map(function(s){return es(s.name);}).join('・')+'）に位置取り';
+  h+='</div></div>';
+
+  /* 週次PDCA */
+  h+='<div class="card" style="border-color:#fb923c55;background:#fb923c08">';
+  h+='<p style="font-size:12px;font-weight:700;color:#fb923c;margin-bottom:8px">📊 週次PDCA（毎週月曜帰りに確認）</p>';
+  h+='<div style="font-size:12px;color:#cbd5e1;line-height:2">';
+  h+='① 22時時点の件数は<strong style="color:#facc15">30件超え</strong>ているか？<br>';
+  h+='② 24時以降のサンキュー消費枚数と平均単価<br>';
+  h+='③ 前週月曜との差額（改善しているか）<br>';
+  h+='→ 小さな改善の積み重ねが3ヶ月後に大きな差になる';
+  h+='</div></div>';
+
   document.getElementById('p-strategy').innerHTML=h;
 }
 
 function sw(id,btn){
-  document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');if(b.classList.contains('gold'))b.classList.add('gold');});
+  document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});
   btn.classList.add('on');
   document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});
   document.getElementById('p-'+id).classList.add('on');
