@@ -288,40 +288,6 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
     <div id="hl"><div class="loading"><span class="spin">⏳</span> 読み込み中...</div></div>
   </div>
 </main>
-<!-- 競合記録フローティングボタン -->
-<button id="comp-fab" title="競合台数を記録">👥</button>
-
-<!-- オーバーレイ -->
-<div id="comp-overlay" class="hidden"></div>
-
-<!-- 競合記録モーダル -->
-<div id="comp-modal" class="hidden">
-  <div class="cl-header">
-    <span class="cl-title">競合台数を記録</span>
-    <button class="cl-close" id="cl-close-btn">✕</button>
-  </div>
-  <div class="cl-meta">
-    <span id="cl-time" class="cl-time">--:--</span>
-    <div style="flex:1;min-width:0">
-      <div id="cl-area" class="cl-area" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">エリア取得中...</div>
-    </div>
-    <button id="cl-change-btn" style="background:var(--s2);border:1px solid var(--bd);border-radius:8px;color:var(--tx2);font-size:12px;padding:4px 10px;cursor:pointer;white-space:nowrap">変更</button>
-  </div>
-  <div id="cl-search-box" class="hidden" style="margin-bottom:10px">
-    <input id="cl-search-input" type="text" placeholder="区・地名で検索（例：渋谷、六本木）"
-      style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:14px">
-    <div id="cl-search-results" style="max-height:150px;overflow-y:scroll;margin-top:6px;-webkit-overflow-scrolling:touch"></div>
-  </div>
-  <div class="cl-grid">
-    <button class="cl-btn" id="cb0">0台</button>
-    <button class="cl-btn" id="cb1">1台</button>
-    <button class="cl-btn" id="cb2">2〜3台</button>
-    <button class="cl-btn" id="cb3">4〜5台</button>
-    <button class="cl-btn cl-btn-many" id="cb4">6台以上</button>
-  </div>
-  <div class="cl-note">GOアプリで確認した周辺の競合台数を記録します</div>
-</div>
-
 <script>
 var COORDS={};
 var WARD={
@@ -1091,19 +1057,18 @@ function toggleFilterBtn(btn){
 // ===== 競合記録 =====
 var COMP_LOG_KEY='taxiradar_complog';
 var _compLat=null,_compLng=null,_compArea='';
-var _compSearchActive=false;
 
 function openCompLog(){
   var now=new Date();
   var h=now.getHours(),m=now.getMinutes();
-  var timeEl=document.getElementById('cl-time');
-  if(timeEl) timeEl.textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m;
+  var disp=(h<10?'0':'')+h+':'+(m<10?'0':'')+m;
+  document.getElementById('cl-time').textContent=disp;
   var areaEl=document.getElementById('locname');
   _compArea=areaEl?areaEl.textContent:'未設定';
   _compLat=uLat||null;_compLng=uLng||null;
-  var areaDisp=document.getElementById('cl-area');
-  if(areaDisp) areaDisp.textContent=_compArea;
-  _hideCompSearch();
+  document.getElementById('cl-area').textContent=_compArea;
+  document.getElementById('cl-search-box').classList.add('hidden');
+  document.getElementById('cl-search-results').innerHTML='';
   document.getElementById('comp-modal').classList.remove('hidden');
   document.getElementById('comp-overlay').classList.remove('hidden');
   document.body.style.overflow='hidden';
@@ -1112,112 +1077,68 @@ function closeCompLog(){
   document.getElementById('comp-modal').classList.add('hidden');
   document.getElementById('comp-overlay').classList.add('hidden');
   document.body.style.overflow='';
-  _hideCompSearch();
 }
-function _hideCompSearch(){
-  _compSearchActive=false;
+function toggleCompSearch(){
   var box=document.getElementById('cl-search-box');
-  if(box) box.classList.add('hidden');
-  var inp=document.getElementById('cl-search-input');
-  if(inp){inp.blur();}
-  var res=document.getElementById('cl-search-results');
-  if(res) res.innerHTML='';
-}
-function toggleCompAreaSearch(e){
-  if(e) e.stopPropagation();
-  _compSearchActive=!_compSearchActive;
-  var box=document.getElementById('cl-search-box');
-  if(!box) return;
-  if(_compSearchActive){
-    box.classList.remove('hidden');
-    setTimeout(function(){
-      var inp=document.getElementById('cl-search-input');
-      if(inp){inp.value='';inp.focus();}
-    },50);
-  } else {
-    _hideCompSearch();
+  var isHidden=box.classList.contains('hidden');
+  box.classList.toggle('hidden');
+  if(isHidden){
+    var inp=document.getElementById('cl-search-input');
+    inp.value='';
+    document.getElementById('cl-search-results').innerHTML='';
+    setTimeout(function(){inp.focus();},50);
   }
 }
 function compAreaSearch(q){
   var res=document.getElementById('cl-search-results');
-  if(!res) return;
-  if(!q||q.length<1){res.innerHTML='';return;}
-  var matches=[];
-  if(window.COORDS){
-    var keys=Object.keys(window.COORDS);
-    for(var i=0;i<keys.length;i++){
-      if(keys[i].indexOf(q)>=0){
-        matches.push(keys[i]);
-        if(matches.length>=8) break;
-      }
-    }
-  }
-  if(!matches.length){
-    res.innerHTML='<div style="font-size:12px;color:var(--tx2);padding:8px">見つかりません</div>';
-    return;
-  }
   res.innerHTML='';
+  if(!q||!window.COORDS) return;
+  var keys=Object.keys(window.COORDS);
+  var matches=[];
+  for(var i=0;i<keys.length;i++){
+    if(keys[i].indexOf(q)>=0){matches.push(keys[i]);if(matches.length>=8)break;}
+  }
+  if(!matches.length){res.innerHTML='<div style="font-size:12px;color:var(--tx2);padding:8px">見つかりません</div>';return;}
   matches.forEach(function(k){
     var d=document.createElement('div');
     d.textContent=k;
-    d.style.cssText='padding:10px;border-radius:8px;font-size:14px;color:var(--tx);cursor:pointer;border-bottom:0.5px solid var(--bd)';
+    d.style.cssText='padding:10px;font-size:14px;color:var(--tx);cursor:pointer;border-bottom:0.5px solid var(--bd)';
     d.addEventListener('click',function(e){
       e.stopPropagation();
-      selectCompArea(k);
-    });
-    d.addEventListener('touchend',function(e){
-      e.stopPropagation();
-      e.preventDefault();
-      selectCompArea(k);
+      _compArea=k;
+      if(window.COORDS[k]){_compLat=window.COORDS[k][0];_compLng=window.COORDS[k][1];}
+      document.getElementById('cl-area').textContent=k;
+      document.getElementById('cl-search-box').classList.add('hidden');
+      document.getElementById('cl-search-results').innerHTML='';
     });
     res.appendChild(d);
   });
 }
-function selectCompArea(k){
-  _compArea=k;
-  if(window.COORDS&&window.COORDS[k]){
-    _compLat=window.COORDS[k][0];
-    _compLng=window.COORDS[k][1];
-  }
-  var areaDisp=document.getElementById('cl-area');
-  if(areaDisp) areaDisp.textContent=k;
-  _hideCompSearch();
-}
-function saveComp(val,e){
-  if(e) e.stopPropagation();
+function saveComp(val){
   var now=new Date();
   var h=now.getHours(),m=now.getMinutes();
+  var area=document.getElementById('cl-area').textContent;
   var rec={
     ts:now.toISOString(),
     disp:(h<10?'0':'')+h+':'+(m<10?'0':'')+m,
-    area:_compArea,
-    lat:_compLat,lng:_compLng,
-    count:val,hour:h
+    area:area,
+    lat:uLat||null,lng:uLng||null,
+    count:val,
+    hour:h
   };
-  try{
-    var logs=JSON.parse(localStorage.getItem(COMP_LOG_KEY)||'[]');
-    logs.push(rec);
-    if(logs.length>2000) logs=logs.slice(-2000);
-    localStorage.setItem(COMP_LOG_KEY,JSON.stringify(logs));
-  }catch(err){}
+  var logs=JSON.parse(localStorage.getItem(COMP_LOG_KEY)||'[]');
+  logs.push(rec);
+  if(logs.length>2000)logs=logs.slice(-2000);
+  localStorage.setItem(COMP_LOG_KEY,JSON.stringify(logs));
   closeCompLog();
-  var fab=document.getElementById('comp-fab');
-  if(fab){fab.style.background='#39d353';setTimeout(function(){fab.style.background='';},600);}
+  // 一瞬フラッシュ
+  var btn=document.getElementById('comp-fab');
+  btn.style.background='#39d353';
+  setTimeout(function(){btn.style.background='';},600);
 }
 
-// 競合記録ボタン登録
-(function(){
-  document.getElementById('comp-fab').addEventListener('click',function(e){e.stopPropagation();openCompLog();});
-  document.getElementById('comp-overlay').addEventListener('click',function(){closeCompLog();});
-  document.getElementById('cl-close-btn').addEventListener('click',function(e){e.stopPropagation();closeCompLog();});
-  document.getElementById('cl-change-btn').addEventListener('click',function(e){toggleCompAreaSearch(e);});
-  document.getElementById('cl-search-input').addEventListener('input',function(){compAreaSearch(this.value);});
-  document.getElementById('comp-modal').addEventListener('click',function(e){e.stopPropagation();});
-  var counts=[['cb0','0'],['cb1','1'],['cb2','2〜3'],['cb3','4〜5'],['cb4','6以上']];
-  counts.forEach(function(pair){
-    document.getElementById(pair[0]).addEventListener('click',function(e){saveComp(pair[1],e);});
-  });
-})();
+// イベント登録
+document.getElementById('setup-save').addEventListener('click',doSaveSetup);
 document.getElementById('open-setup').addEventListener('click',openSetup);
 document.getElementById('notify-btn').addEventListener('click',toggleNotify);
 document.getElementById('tab-r').addEventListener('click',function(){swTab('r');});
@@ -1285,9 +1206,6 @@ document.querySelectorAll('.fbtn').forEach(function(btn){
   btn.addEventListener('click',function(){toggleFilterBtn(this);});
 });
 
-// イベント登録
-document.getElementById('setup-save').addEventListener('click',doSaveSetup);
-
 // 起動
 (function(){
   notifyEnabled=localStorage.getItem('taxiradar_notify')==='1';
@@ -1317,6 +1235,40 @@ document.getElementById('setup-save').addEventListener('click',doSaveSetup);
 
 </script>
 
+<!-- 競合記録フローティングボタン -->
+<button id="comp-fab" onclick="openCompLog()" title="競合台数を記録">👥</button>
+
+<!-- オーバーレイ -->
+<div id="comp-overlay" class="hidden" onclick="closeCompLog()"></div>
+
+<!-- 競合記録モーダル -->
+<div id="comp-modal" class="hidden" onclick="event.stopPropagation()">
+  <div class="cl-header">
+    <span class="cl-title">競合台数を記録</span>
+    <button class="cl-close" onclick="closeCompLog()">✕</button>
+  </div>
+  <div class="cl-meta">
+    <span id="cl-time" class="cl-time">--:--</span>
+    <div style="flex:1;min-width:0">
+      <div id="cl-area" class="cl-area" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">エリア取得中...</div>
+    </div>
+    <button onclick="toggleCompSearch()" style="background:var(--s2);border:1px solid var(--bd);border-radius:8px;color:var(--tx2);font-size:12px;padding:4px 10px;cursor:pointer">変更</button>
+  </div>
+  <div id="cl-search-box" class="hidden" style="margin-bottom:10px">
+    <input id="cl-search-input" type="text" placeholder="区・地名で検索（例：渋谷、六本木）"
+      oninput="compAreaSearch(this.value)"
+      style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:14px">
+    <div id="cl-search-results" style="max-height:150px;overflow-y:auto;margin-top:6px"></div>
+  </div>
+  <div class="cl-grid">
+    <button class="cl-btn" onclick="saveComp('0')">0台</button>
+    <button class="cl-btn" onclick="saveComp('1')">1台</button>
+    <button class="cl-btn" onclick="saveComp('2〜3')">2〜3台</button>
+    <button class="cl-btn" onclick="saveComp('4〜5')">4〜5台</button>
+    <button class="cl-btn cl-btn-many" onclick="saveComp('6以上')">6台以上</button>
+  </div>
+  <div class="cl-note">GOアプリで確認した周辺の競合台数を記録します</div>
+</div>
 
 </body>
 </html>
