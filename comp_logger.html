@@ -390,7 +390,7 @@ function getGPS(){
       currentLng = pos.coords.longitude;
       btn.textContent = '📡 現在地';
       btn.disabled = false;
-      // 最近傍エリアを座標DBから検索
+      // まずCOORDS最近傍でセット
       var best = null, bestD = Infinity;
       var keys = Object.keys(coords);
       for(var i=0;i<keys.length;i++){
@@ -403,14 +403,22 @@ function getGPS(){
         document.getElementById('area-name').textContent = best;
         document.getElementById('area-name').style.color = '';
       }
-      // Nominatimで住所も取得（非同期で上書き）
+      // Nominatimでより正確な住所を取得
       fetch('https://nominatim.openstreetmap.org/reverse?lat='+currentLat+'&lon='+currentLng+'&format=json&accept-language=ja')
         .then(function(r){return r.json();})
         .then(function(data){
-          var a = data.address;
-          var ward = a.city_district||a.suburb||a.neighbourhood||a.city||'';
-          var quarter = a.quarter||'';
-          if(ward){ document.getElementById('area-name').textContent = ward+quarter; }
+          var a = data.address||{};
+          // 区名を取得
+          var ward = a.city_district||a.county||'';
+          // 丁目を取得（neighbourhood > quarterの優先順）
+          var chome = a.neighbourhood||a.quarter||a.suburb||'';
+          // 区名が丁目に含まれていたら除去
+          if(chome.indexOf(ward)===0) chome = chome.replace(ward,'');
+          var fullAddr = ward && chome ? ward+chome : (ward||chome);
+          if(fullAddr){
+            currentArea = fullAddr;
+            document.getElementById('area-name').textContent = fullAddr;
+          }
         }).catch(function(){});
     },
     function(err){
