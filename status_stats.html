@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ステータス別 統計分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#1c0a3a,#0f1e40);border-bottom:1px solid #a78bfa44;padding:18px 16px 14px}
+.sub{font-size:10px;color:#a78bfa;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:18px;font-weight:800}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+/* タブ */
+.tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin-top:14px}
+.tab{padding:8px 16px;border-radius:20px;border:none;background:#151e30;color:#64748b;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0}
+.tab.on{color:#fff}
+.panel{padding:0 14px;display:none}
+.panel.on{display:block}
+/* 部品 */
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:8px}
+.cell{background:#0d1220;border-radius:8px;padding:8px 10px}
+.cell .lbl{font-size:9px;color:#475569;margin-bottom:3px}
+.cell .val{font-size:13px;font-weight:800;line-height:1.3}
+.cell .sub{font-size:9px;color:#64748b;margin-top:2px}
+.bwrap{height:12px;background:#151e30;border-radius:4px;overflow:hidden;margin-top:3px}
+.binner{height:100%;border-radius:4px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid #0d1220;font-size:12px}
+.row:last-child{border:none}
+.sbox{border-radius:10px;padding:11px 12px;margin-bottom:8px}
+.highlight{border-radius:8px;padding:10px 12px;margin-top:8px;font-size:12px;color:#cbd5e1;line-height:1.9}
+/* 比較バー */
+.cmp-wrap{margin-bottom:10px}
+.cmp-lbl{display:flex;justify-content:space-between;margin-bottom:3px;font-size:11px}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Statistical Analysis</div>
+  <h1>📊 ステータス別 統計・外れ値分析</h1>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="dashboard" style="display:none">
+  <div class="tabs">
+    <button class="tab on" onclick="sw('compare',this)" id="tab-compare">🔢 3社比較</button>
+    <button class="tab"    onclick="sw('go',this)"      id="tab-go"     >🟢 GO</button>
+    <button class="tab"    onclick="sw('sma',this)"     id="tab-sma"    >📱 スマ配</button>
+    <button class="tab"    onclick="sw('nag',this)"     id="tab-nag"    >🚕 流し</button>
+  </div>
+  <div class="panel on" id="p-compare"></div>
+  <div class="panel"    id="p-go"></div>
+  <div class="panel"    id="p-sma"></div>
+  <div class="panel"    id="p-nag"></div>
+</div>
+
+<script>
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+
+function parseCSV(t){
+  var lines=t.trim().split(/\r?\n/).filter(function(l){return l.trim();});
+  function sp(line){var cols=[],cur='',q=false;for(var i=0;i<line.length;i++){var c=line[i];if(c==='"'){q=!q;}else if(c===','&&!q){cols.push(cur.trim());cur='';}else{cur+=c;}}cols.push(cur.trim());return cols;}
+  var h=sp(lines[0]);
+  return lines.slice(1).map(function(l){var v=sp(l),o={};h.forEach(function(k,i){o[k]=v[i]||'';});return o;});
+}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function bar(pct,col,h){h=h||12;return '<div class="bwrap" style="height:'+h+'px"><div class="binner" style="width:'+Math.min(pct||0,100)+'%;background:'+col+'"></div></div>';}
+
+/* 統計 */
+function mean(a){return a.length?a.reduce(function(x,y){return x+y;},0)/a.length:0;}
+function median(a){
+  var s=[].concat(a).sort(function(x,y){return x-y;});
+  var m=Math.floor(s.length/2);
+  return s.length%2?s[m]:Math.round((s[m-1]+s[m])/2);
+}
+function stddev(a){
+  var mu=mean(a);
+  return Math.sqrt(a.reduce(function(s,x){return s+(x-mu)*(x-mu);},0)/a.length);
+}
+function pctile(a,p){
+  var s=[].concat(a).sort(function(x,y){return x-y;});
+  var idx=(p/100)*(s.length-1),lo=Math.floor(idx),hi=Math.ceil(idx);
+  return Math.round(s[lo]+(s[hi]-s[lo])*(idx-lo));
+}
+
+/* ステータス統計オブジェクト生成 */
+function calcStat(fares,allAvg){
+  var n=fares.length;
+  if(!n)return null;
+  var avg=Math.round(mean(fares));
+  var med=median(fares);
+  var sd=Math.round(stddev(fares));
+  var cv=avg>0?Math.round(sd/avg*100):0;
+  var mu2hi=Math.round(avg+2*sd);
+  var mu2lo=Math.max(0,Math.round(avg-2*sd));
+  var mu3hi=Math.round(avg+3*sd);
+  var inliers2=fares.filter(function(f){return f>=mu2lo&&f<=mu2hi;});
+  var inliers3=fares.filter(function(f){return f>=Math.max(0,avg-3*sd)&&f<=mu3hi;});
+  var ghosts2=fares.filter(function(f){return f>mu2hi;}).sort(function(a,b){return b-a;});
+  var p25=pctile(fares,25),p75=pctile(fares,75);
+  var iqrHi=p75+1.5*(p75-p25);
+  var iqrIn=fares.filter(function(f){return f<=iqrHi;});
+  var cleanAvg2=inliers2.length?Math.round(mean(inliers2)):avg;
+  var cleanAvgIqr=iqrIn.length?Math.round(mean(iqrIn)):avg;
+  return{
+    n:n,avg:avg,med:med,sd:sd,cv:cv,
+    mu2lo:mu2lo,mu2hi:mu2hi,mu3hi:mu3hi,
+    in1:fares.filter(function(f){return f>=Math.max(0,avg-sd)&&f<=avg+sd;}).length,
+    in2:inliers2.length,in3:inliers3.length,
+    ghosts:ghosts2,
+    p25:p25,p50:med,p75:p75,p90:pctile(fares,90),p95:pctile(fares,95),
+    iqrHi:Math.round(iqrHi),iqrOutCnt:fares.filter(function(f){return f>iqrHi;}).length,
+    cleanAvg2:cleanAvg2,cleanAvgIqr:cleanAvgIqr,
+    diffAll:cleanAvg2-allAvg,
+    max:Math.max.apply(null,fares),min:Math.min.apply(null,fares)
+  };
+}
+
+/* 個別ステータスページHTML */
+function buildPage(st,col,icon,allAvg){
+  var s=st;
+  if(!s)return '<p style="color:#64748b;padding:20px">データなし</p>';
+  var h='';
+
+  /* 基本統計 */
+  h+='<div class="card" style="border-color:'+col+'44">';
+  h+='<div class="card-ttl" style="color:'+col+'">'+icon+' 基本統計量（'+s.n+'件）</div>';
+  h+='<div class="grid2">';
+  h+='<div class="cell"><div class="lbl">平均値（mean）</div><div class="val" style="color:#f87171">¥'+s.avg.toLocaleString()+'</div><div class="sub">外れ値込み</div></div>';
+  h+='<div class="cell"><div class="lbl">中央値（median）</div><div class="val" style="color:#4ade80">¥'+s.med.toLocaleString()+'</div><div class="sub">実態に近い数字</div></div>';
+  h+='</div>';
+  h+='<div class="grid2">';
+  h+='<div class="cell"><div class="lbl">標準偏差（σ）</div><div class="val" style="color:#facc15">¥'+s.sd.toLocaleString()+'</div></div>';
+  h+='<div class="cell"><div class="lbl">変動係数（CV）</div><div class="val" style="color:'+(s.cv>=80?'#f87171':s.cv>=50?'#facc15':'#4ade80')+'">'+s.cv+'%</div><div class="sub">'+(s.cv>=80?'超ばらつき大':s.cv>=50?'ばらつき大':'安定')+'</div></div>';
+  h+='</div>';
+  h+='<div class="grid2" style="margin-top:4px">';
+  h+='<div class="cell"><div class="lbl">最高単価</div><div class="val" style="color:#4ade80">¥'+s.max.toLocaleString()+'</div></div>';
+  h+='<div class="cell"><div class="lbl">最低単価</div><div class="val" style="color:#94a3b8">¥'+s.min.toLocaleString()+'</div></div>';
+  h+='</div></div>';
+
+  /* σ区間 */
+  h+='<div class="card"><div class="card-ttl" style="color:#facc15">📊 σ区間と外れ値</div>';
+  [
+    {lbl:'±1σ（68%区間）',lo:s.mu2lo>0?Math.max(0,s.avg-s.sd):0,hi:s.avg+s.sd,cnt:s.in1,col:'#60a5fa'},
+    {lbl:'±2σ（95%区間）',lo:s.mu2lo,hi:s.mu2hi,cnt:s.in2,col:'#4ade80'},
+    {lbl:'±3σ（99.7%区間）',lo:Math.max(0,s.avg-3*s.sd),hi:s.mu3hi,cnt:s.in3,col:'#a78bfa'},
+  ].forEach(function(x){
+    var pct=s.n>0?x.cnt/s.n*100:0;
+    h+='<div class="sbox" style="background:'+x.col+'0d;border:1px solid '+x.col+'33">';
+    h+='<div style="display:flex;justify-content:space-between;margin-bottom:5px"><span style="font-size:11px;font-weight:700;color:'+x.col+'">'+x.lbl+'</span><span style="font-size:11px;color:#475569">'+x.cnt+'件 ('+pct.toFixed(1)+'%)</span></div>';
+    h+='<div style="font-size:11px;color:#cbd5e1;margin-bottom:5px">¥'+Math.round(x.lo).toLocaleString()+' 〜 ¥'+Math.round(x.hi).toLocaleString()+'</div>';
+    h+=bar(pct,x.col,10);
+    h+='</div>';
+  });
+  h+='<div class="grid2">';
+  h+='<div class="cell" style="border-color:#f8717133"><div class="lbl">±2σ外れ値</div><div class="val" style="color:#f87171">'+s.ghosts.length+'件</div><div class="sub">¥'+s.mu2hi.toLocaleString()+'超</div></div>';
+  h+='<div class="cell" style="border-color:#f8717133"><div class="lbl">IQR外れ値</div><div class="val" style="color:#f87171">'+s.iqrOutCnt+'件</div><div class="sub">¥'+s.iqrHi.toLocaleString()+'超</div></div>';
+  h+='</div></div>';
+
+  /* 外れ値除外後 */
+  h+='<div class="card" style="border-color:#4ade8044">';
+  h+='<div class="card-ttl" style="color:#4ade80">✅ 外れ値除外後の実態平均</div>';
+  h+='<div class="grid3">';
+  h+='<div class="cell"><div class="lbl">全件平均</div><div class="val" style="color:#f87171">¥'+s.avg.toLocaleString()+'</div><div class="sub">外れ値込み</div></div>';
+  h+='<div class="cell"><div class="lbl">±2σ除外後</div><div class="val" style="color:#4ade80">¥'+s.cleanAvg2.toLocaleString()+'</div><div class="sub">'+s.in2+'件</div></div>';
+  h+='<div class="cell"><div class="lbl">IQR除外後</div><div class="val" style="color:#4ade80">¥'+s.cleanAvgIqr.toLocaleString()+'</div></div>';
+  h+='</div>';
+  h+='<div class="highlight" style="background:'+(s.diffAll>=0?'#4ade8010':'#f8717110')+';border:1px solid '+(s.diffAll>=0?'#4ade8033':'#f8717133')+'">';
+  h+='実態平均 <strong style="color:#4ade80">¥'+s.cleanAvg2.toLocaleString()+'</strong> vs 全体平均 <strong style="color:#94a3b8">¥'+allAvg.toLocaleString()+'</strong><br>';
+  h+='差額：<strong style="color:'+(s.diffAll>=0?'#4ade80':'#f87171')+'">'+(s.diffAll>=0?'+':'')+'¥'+s.diffAll.toLocaleString()+'</strong>';
+  h+='</div></div>';
+
+  /* パーセンタイル */
+  h+='<div class="card"><div class="card-ttl" style="color:#a78bfa">📈 パーセンタイル</div>';
+  [{lbl:'25%（下位25%）',v:s.p25,col:'#f87171'},{lbl:'50%（中央値）',v:s.p50,col:'#facc15'},
+   {lbl:'75%（上位25%）',v:s.p75,col:'#60a5fa'},{lbl:'90%（上位10%）',v:s.p90,col:'#4ade80'},
+   {lbl:'95%（上位5%）', v:s.p95,col:'#a78bfa'}].forEach(function(p){
+    h+='<div style="margin-bottom:7px"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:11px;color:#94a3b8">'+p.lbl+'</span><span style="font-size:12px;font-weight:700;color:'+p.col+'">¥'+p.v.toLocaleString()+'</span></div>'+bar(p.v/(s.p95||1)*100,p.col)+'</div>';
+  });
+  h+='<div style="font-size:11px;color:#64748b;margin-top:6px;line-height:1.8">IQR外れ値ライン：¥'+s.iqrHi.toLocaleString()+'超（'+s.iqrOutCnt+'件がおばけ）</div>';
+  h+='</div>';
+
+  /* おばけリスト */
+  if(s.ghosts.length){
+    h+='<div class="card" style="border-color:#f8717144">';
+    h+='<div class="card-ttl" style="color:#f87171">👻 おばけ案件（±2σ超：¥'+s.mu2hi.toLocaleString()+'超）</div>';
+    h+='<p style="font-size:11px;color:#64748b;margin-bottom:8px">'+s.ghosts.length+'件。これらが平均を引き上げている。</p>';
+    s.ghosts.slice(0,20).forEach(function(f,i){
+      h+='<div class="row"><span style="font-size:11px;color:#64748b">'+(i+1)+'位</span><span style="font-size:14px;font-weight:800;color:#f87171">¥'+f.toLocaleString()+'</span></div>';
+    });
+    if(s.ghosts.length>20)h+='<p style="font-size:10px;color:#475569;margin-top:6px">...他'+(s.ghosts.length-20)+'件</p>';
+    h+='</div>';
+  }
+  return h;
+}
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> データ取得中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  document.getElementById('dashboard').style.display='none';
+  try{
+    var r=await fetch(U2);
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    var text=await r.text();
+    document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 集計中...';
+
+    var rows=parseCSV(text);
+    var allF=rows.map(function(r){return toN(r['料金']);}).filter(function(v){return v>0;});
+    var allAvg=Math.round(allF.reduce(function(a,b){return a+b;},0)/allF.length);
+
+    function getFares(st){
+      return rows.filter(function(r){return(r['ステータス']||'').trim()===st;})
+        .map(function(r){return toN(r['料金']);}).filter(function(v){return v>0;});
+    }
+
+    var goF =getFares('GO');
+    var smaF=getFares('スマ配');
+    var nagF=getFares('流し');
+
+    var goS =calcStat(goF, allAvg);
+    var smaS=calcStat(smaF,allAvg);
+    var nagS=calcStat(nagF,allAvg);
+
+    /* タブカラー */
+    var tabCols={go:'#4ade80',sma:'#60a5fa',nag:'#facc15'};
+    document.getElementById('tab-go') .style.background=tabCols.go;
+    document.getElementById('tab-sma').style.background=tabCols.sma;
+    document.getElementById('tab-nag').style.background=tabCols.nag;
+    document.getElementById('tab-compare').style.background='#a78bfa';
+
+    /* ── 比較タブ ── */
+    var maxAvgVal=Math.max(goS?goS.cleanAvg2:0,smaS?smaS.cleanAvg2:0,nagS?nagS.cleanAvg2:0)||1;
+    var maxCnt=Math.max(goS?goS.n:0,smaS?smaS.n:0,nagS?nagS.n:0)||1;
+    var h='';
+
+    /* 全体サマリー */
+    h+='<div class="card" style="border-color:#a78bfa44">';
+    h+='<div class="card-ttl" style="color:#a78bfa">🔢 3ステータス 一覧比較</div>';
+    h+='<p style="font-size:10px;color:#475569;margin-bottom:10px">全体平均単価（外れ値込み）：¥'+allAvg.toLocaleString()+'</p>';
+
+    /* 件数 */
+    h+='<p style="font-size:10px;color:#64748b;margin-bottom:6px;font-weight:700">件数</p>';
+    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
+    .forEach(function(x){
+      if(!x.s)return;
+      var pct=x.s.n/maxCnt*100;
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:#475569">'+x.s.n+'件 ('+(allF.length>0?(x.s.n/allF.length*100).toFixed(1):0)+'%)</span></div>'+bar(pct,x.col,14)+'</div>';
+    });
+
+    /* 中央値比較 */
+    h+='<p style="font-size:10px;color:#64748b;margin:12px 0 6px;font-weight:700">中央値（実態単価）</p>';
+    var maxMed=Math.max(goS?goS.med:0,smaS?smaS.med:0,nagS?nagS.med:0)||1;
+    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
+    .forEach(function(x){
+      if(!x.s)return;
+      var pct=x.s.med/maxMed*100;
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="font-weight:700;color:'+x.col+'">¥'+x.s.med.toLocaleString()+'</span></div>'+bar(pct,x.col,14)+'</div>';
+    });
+
+    /* 外れ値除外後の実態平均比較 */
+    h+='<p style="font-size:10px;color:#64748b;margin:12px 0 6px;font-weight:700">外れ値除外後の実態平均（±2σ除外）</p>';
+    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
+    .forEach(function(x){
+      if(!x.s)return;
+      var pct=x.s.cleanAvg2/maxAvgVal*100;
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="font-weight:700;color:'+x.col+'">¥'+x.s.cleanAvg2.toLocaleString()+' <span style="font-size:10px;color:'+(x.s.diffAll>=0?'#4ade80':'#f87171')+'">'+(x.s.diffAll>=0?'↑+':'↓')+'¥'+Math.abs(x.s.diffAll).toLocaleString()+'</span></span></div>'+bar(pct,x.col,14)+'</div>';
+    });
+
+    /* 変動係数（安定度） */
+    h+='<p style="font-size:10px;color:#64748b;margin:12px 0 6px;font-weight:700">変動係数 CV（低いほど安定）</p>';
+    var maxCV=Math.max(goS?goS.cv:0,smaS?smaS.cv:0,nagS?nagS.cv:0)||1;
+    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
+    .forEach(function(x){
+      if(!x.s)return;
+      var pct=x.s.cv/maxCV*100;
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:'+(x.s.cv>=80?'#f87171':x.s.cv>=50?'#facc15':'#4ade80')+'">'+x.s.cv+'% '+(x.s.cv>=80?'超ばらつき大':x.s.cv>=50?'ばらつき大':'安定')+'</span></div>'+bar(pct,x.col+'99',14)+'</div>';
+    });
+
+    /* おばけ件数比較 */
+    h+='<p style="font-size:10px;color:#64748b;margin:12px 0 6px;font-weight:700">おばけ件数（±2σ超）</p>';
+    var maxGh=Math.max(goS?goS.ghosts.length:0,smaS?smaS.ghosts.length:0,nagS?nagS.ghosts.length:0)||1;
+    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
+    .forEach(function(x){
+      if(!x.s)return;
+      var pct=x.s.ghosts.length/maxGh*100;
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:#f87171">'+x.s.ghosts.length+'件（¥'+x.s.mu2hi.toLocaleString()+'超）</span></div>'+bar(pct,'#f8717199',14)+'</div>';
+    });
+    h+='</div>';
+
+    /* 総評 */
+    h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b08">';
+    h+='<div class="card-ttl" style="color:#f59e0b">💡 3ステータスの性格まとめ</div>';
+    h+='<div style="font-size:12px;color:#cbd5e1;line-height:2.1">';
+    if(goS&&smaS&&nagS){
+      var ranks=[{n:'GO',v:goS.cleanAvg2},{n:'スマ配',v:smaS.cleanAvg2},{n:'流し',v:nagS.cleanAvg2}]
+        .sort(function(a,b){return b.v-a.v;});
+      h+='単価ランク：<strong style="color:#facc15">'+ranks.map(function(r,i){return (i+1)+'位 '+r.n+' ¥'+r.v.toLocaleString();}).join(' / ')+'</strong><br>';
+      var stableRanks=[{n:'GO',v:goS.cv},{n:'スマ配',v:smaS.cv},{n:'流し',v:nagS.cv}]
+        .sort(function(a,b){return a.v-b.v;});
+      h+='安定度ランク：<strong style="color:#60a5fa">'+stableRanks.map(function(r,i){return (i+1)+'位 '+r.n+' CV'+r.v+'%';}).join(' / ')+'</strong><br>';
+    }
+    h+='→ 各タブで詳細を確認してください。';
+    h+='</div></div>';
+
+    document.getElementById('p-compare').innerHTML=h;
+    document.getElementById('p-go') .innerHTML=buildPage(goS, '#4ade80','🟢 GO',allAvg);
+    document.getElementById('p-sma').innerHTML=buildPage(smaS,'#60a5fa','📱 スマ配',allAvg);
+    document.getElementById('p-nag').innerHTML=buildPage(nagS,'#facc15','🚕 流し',allAvg);
+
+    document.getElementById('msgbox').style.display='none';
+    document.getElementById('dashboard').style.display='';
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+
+function sw(id,btn){
+  document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});
+  btn.classList.add('on');
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});
+  document.getElementById('p-'+id).classList.add('on');
+}
+
+run();
+</script>
+</body>
+</html>
