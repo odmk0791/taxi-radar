@@ -14,13 +14,11 @@ h1{font-size:18px;font-weight:800}
 @keyframes sp{to{transform:rotate(360deg)}}
 .spin{display:inline-block;animation:sp 1s linear infinite}
 .rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
-/* タブ */
 .tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin-top:14px}
-.tab{padding:8px 16px;border-radius:20px;border:none;background:#151e30;color:#64748b;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0}
-.tab.on{color:#fff}
+.tab{padding:8px 14px;border-radius:20px;border:none;background:#151e30;color:#fff;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0;opacity:.6}
+.tab.on{opacity:1}
 .panel{padding:0 14px;display:none}
 .panel.on{display:block}
-/* 部品 */
 .card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
 .card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
@@ -35,7 +33,6 @@ h1{font-size:18px;font-weight:800}
 .row:last-child{border:none}
 .sbox{border-radius:10px;padding:11px 12px;margin-bottom:8px}
 .highlight{border-radius:8px;padding:10px 12px;margin-top:8px;font-size:12px;color:#cbd5e1;line-height:1.9}
-/* 比較バー */
 .cmp-wrap{margin-bottom:10px}
 .cmp-lbl{display:flex;justify-content:space-between;margin-bottom:3px;font-size:11px}
 </style>
@@ -43,21 +40,27 @@ h1{font-size:18px;font-weight:800}
 <body>
 <div id="hdr">
   <div class="sub">Statistical Analysis</div>
-  <h1>📊 ステータス別 統計・外れ値分析</h1>
+  <h1>📊 ステータス・サンキュー別 統計分析</h1>
 </div>
 <div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
 <button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
 <div id="dashboard" style="display:none">
   <div class="tabs">
-    <button class="tab on" onclick="sw('compare',this)" id="tab-compare">🔢 3社比較</button>
-    <button class="tab"    onclick="sw('go',this)"      id="tab-go"     >🟢 GO</button>
-    <button class="tab"    onclick="sw('sma',this)"     id="tab-sma"    >📱 スマ配</button>
-    <button class="tab"    onclick="sw('nag',this)"     id="tab-nag"    >🚕 流し</button>
+    <button class="tab on"  onclick="sw('compare',this)"  style="background:#a78bfa">🔢 全体比較</button>
+    <button class="tab"     onclick="sw('pretax',this)"   style="background:#f59e0b">⭐ プレタク比較</button>
+    <button class="tab"     onclick="sw('go',this)"       style="background:#4ade80">🟢 GO</button>
+    <button class="tab"     onclick="sw('sma',this)"      style="background:#60a5fa">📱 スマ配</button>
+    <button class="tab"     onclick="sw('nag',this)"      style="background:#facc15">🚕 流し</button>
+    <button class="tab"     onclick="sw('pt',this)"       style="background:#f59e0b">🚐 プレタク</button>
+    <button class="tab"     onclick="sw('ptp',this)"      style="background:#fb923c">✨ プレタクP</button>
   </div>
   <div class="panel on" id="p-compare"></div>
+  <div class="panel"    id="p-pretax"></div>
   <div class="panel"    id="p-go"></div>
   <div class="panel"    id="p-sma"></div>
   <div class="panel"    id="p-nag"></div>
+  <div class="panel"    id="p-pt"></div>
+  <div class="panel"    id="p-ptp"></div>
 </div>
 
 <script>
@@ -73,7 +76,6 @@ function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
 function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function bar(pct,col,h){h=h||12;return '<div class="bwrap" style="height:'+h+'px"><div class="binner" style="width:'+Math.min(pct||0,100)+'%;background:'+col+'"></div></div>';}
 
-/* 統計 */
 function mean(a){return a.length?a.reduce(function(x,y){return x+y;},0)/a.length:0;}
 function median(a){
   var s=[].concat(a).sort(function(x,y){return x-y;});
@@ -90,7 +92,6 @@ function pctile(a,p){
   return Math.round(s[lo]+(s[hi]-s[lo])*(idx-lo));
 }
 
-/* ステータス統計オブジェクト生成 */
 function calcStat(fares,allAvg){
   var n=fares.length;
   if(!n)return null;
@@ -101,101 +102,91 @@ function calcStat(fares,allAvg){
   var mu2hi=Math.round(avg+2*sd);
   var mu2lo=Math.max(0,Math.round(avg-2*sd));
   var mu3hi=Math.round(avg+3*sd);
-  var inliers2=fares.filter(function(f){return f>=mu2lo&&f<=mu2hi;});
-  var inliers3=fares.filter(function(f){return f>=Math.max(0,avg-3*sd)&&f<=mu3hi;});
-  var ghosts2=fares.filter(function(f){return f>mu2hi;}).sort(function(a,b){return b-a;});
+  var in1=fares.filter(function(f){return f>=Math.max(0,avg-sd)&&f<=avg+sd;}).length;
+  var in2=fares.filter(function(f){return f>=mu2lo&&f<=mu2hi;}).length;
+  var in3=fares.filter(function(f){return f>=Math.max(0,avg-3*sd)&&f<=mu3hi;}).length;
+  var ghosts=fares.filter(function(f){return f>mu2hi;}).sort(function(a,b){return b-a;});
   var p25=pctile(fares,25),p75=pctile(fares,75);
   var iqrHi=p75+1.5*(p75-p25);
   var iqrIn=fares.filter(function(f){return f<=iqrHi;});
-  var cleanAvg2=inliers2.length?Math.round(mean(inliers2)):avg;
+  var cleanAvg2=in2>0?Math.round(mean(fares.filter(function(f){return f>=mu2lo&&f<=mu2hi;}))):avg;
   var cleanAvgIqr=iqrIn.length?Math.round(mean(iqrIn)):avg;
   return{
     n:n,avg:avg,med:med,sd:sd,cv:cv,
     mu2lo:mu2lo,mu2hi:mu2hi,mu3hi:mu3hi,
-    in1:fares.filter(function(f){return f>=Math.max(0,avg-sd)&&f<=avg+sd;}).length,
-    in2:inliers2.length,in3:inliers3.length,
-    ghosts:ghosts2,
-    p25:p25,p50:med,p75:p75,p90:pctile(fares,90),p95:pctile(fares,95),
-    iqrHi:Math.round(iqrHi),iqrOutCnt:fares.filter(function(f){return f>iqrHi;}).length,
+    in1:in1,in2:in2,in3:in3,
+    ghosts:ghosts,
+    p25:p25,p50:med,p75:p75,
+    p90:pctile(fares,90),p95:pctile(fares,95),
+    iqrHi:Math.round(iqrHi),
+    iqrOutCnt:fares.filter(function(f){return f>iqrHi;}).length,
     cleanAvg2:cleanAvg2,cleanAvgIqr:cleanAvgIqr,
     diffAll:cleanAvg2-allAvg,
     max:Math.max.apply(null,fares),min:Math.min.apply(null,fares)
   };
 }
 
-/* 個別ステータスページHTML */
 function buildPage(st,col,icon,allAvg){
-  var s=st;
-  if(!s)return '<p style="color:#64748b;padding:20px">データなし</p>';
-  var h='';
-
-  /* 基本統計 */
+  if(!st)return '<p style="color:#64748b;padding:20px;font-size:13px">データなし</p>';
+  var s=st,h='';
   h+='<div class="card" style="border-color:'+col+'44">';
-  h+='<div class="card-ttl" style="color:'+col+'">'+icon+' 基本統計量（'+s.n+'件）</div>';
+  h+='<div class="card-ttl" style="color:'+col+'">'+icon+' 基本統計（'+s.n+'件）</div>';
   h+='<div class="grid2">';
-  h+='<div class="cell"><div class="lbl">平均値（mean）</div><div class="val" style="color:#f87171">¥'+s.avg.toLocaleString()+'</div><div class="sub">外れ値込み</div></div>';
-  h+='<div class="cell"><div class="lbl">中央値（median）</div><div class="val" style="color:#4ade80">¥'+s.med.toLocaleString()+'</div><div class="sub">実態に近い数字</div></div>';
-  h+='</div>';
-  h+='<div class="grid2">';
+  h+='<div class="cell"><div class="lbl">平均値</div><div class="val" style="color:#f87171">¥'+s.avg.toLocaleString()+'</div><div class="sub">外れ値込み</div></div>';
+  h+='<div class="cell"><div class="lbl">中央値（実態）</div><div class="val" style="color:#4ade80">¥'+s.med.toLocaleString()+'</div><div class="sub">最も信頼できる値</div></div>';
+  h+='</div><div class="grid2">';
   h+='<div class="cell"><div class="lbl">標準偏差（σ）</div><div class="val" style="color:#facc15">¥'+s.sd.toLocaleString()+'</div></div>';
-  h+='<div class="cell"><div class="lbl">変動係数（CV）</div><div class="val" style="color:'+(s.cv>=80?'#f87171':s.cv>=50?'#facc15':'#4ade80')+'">'+s.cv+'%</div><div class="sub">'+(s.cv>=80?'超ばらつき大':s.cv>=50?'ばらつき大':'安定')+'</div></div>';
-  h+='</div>';
-  h+='<div class="grid2" style="margin-top:4px">';
+  h+='<div class="cell"><div class="lbl">変動係数 CV</div><div class="val" style="color:'+(s.cv>=80?'#f87171':s.cv>=50?'#facc15':'#4ade80')+'">'+s.cv+'%</div><div class="sub">'+(s.cv>=80?'超ばらつき':s.cv>=50?'ばらつき大':'安定')+'</div></div>';
+  h+='</div><div class="grid2" style="margin-top:4px">';
   h+='<div class="cell"><div class="lbl">最高単価</div><div class="val" style="color:#4ade80">¥'+s.max.toLocaleString()+'</div></div>';
   h+='<div class="cell"><div class="lbl">最低単価</div><div class="val" style="color:#94a3b8">¥'+s.min.toLocaleString()+'</div></div>';
   h+='</div></div>';
 
-  /* σ区間 */
   h+='<div class="card"><div class="card-ttl" style="color:#facc15">📊 σ区間と外れ値</div>';
-  [
-    {lbl:'±1σ（68%区間）',lo:s.mu2lo>0?Math.max(0,s.avg-s.sd):0,hi:s.avg+s.sd,cnt:s.in1,col:'#60a5fa'},
-    {lbl:'±2σ（95%区間）',lo:s.mu2lo,hi:s.mu2hi,cnt:s.in2,col:'#4ade80'},
-    {lbl:'±3σ（99.7%区間）',lo:Math.max(0,s.avg-3*s.sd),hi:s.mu3hi,cnt:s.in3,col:'#a78bfa'},
+  [{lbl:'±1σ（68%）',lo:Math.max(0,s.avg-s.sd),hi:s.avg+s.sd,cnt:s.in1,col:'#60a5fa'},
+   {lbl:'±2σ（95%）',lo:s.mu2lo,hi:s.mu2hi,cnt:s.in2,col:'#4ade80'},
+   {lbl:'±3σ（99.7%）',lo:Math.max(0,s.avg-3*s.sd),hi:s.mu3hi,cnt:s.in3,col:'#a78bfa'},
   ].forEach(function(x){
     var pct=s.n>0?x.cnt/s.n*100:0;
     h+='<div class="sbox" style="background:'+x.col+'0d;border:1px solid '+x.col+'33">';
-    h+='<div style="display:flex;justify-content:space-between;margin-bottom:5px"><span style="font-size:11px;font-weight:700;color:'+x.col+'">'+x.lbl+'</span><span style="font-size:11px;color:#475569">'+x.cnt+'件 ('+pct.toFixed(1)+'%)</span></div>';
-    h+='<div style="font-size:11px;color:#cbd5e1;margin-bottom:5px">¥'+Math.round(x.lo).toLocaleString()+' 〜 ¥'+Math.round(x.hi).toLocaleString()+'</div>';
-    h+=bar(pct,x.col,10);
-    h+='</div>';
+    h+='<div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:11px;font-weight:700;color:'+x.col+'">'+x.lbl+'</span><span style="font-size:11px;color:#475569">'+x.cnt+'件 ('+pct.toFixed(1)+'%)</span></div>';
+    h+='<div style="font-size:11px;color:#cbd5e1;margin-bottom:4px">¥'+Math.round(x.lo).toLocaleString()+' 〜 ¥'+Math.round(x.hi).toLocaleString()+'</div>';
+    h+=bar(pct,x.col,10)+'</div>';
   });
   h+='<div class="grid2">';
-  h+='<div class="cell" style="border-color:#f8717133"><div class="lbl">±2σ外れ値</div><div class="val" style="color:#f87171">'+s.ghosts.length+'件</div><div class="sub">¥'+s.mu2hi.toLocaleString()+'超</div></div>';
+  h+='<div class="cell" style="border-color:#f8717133"><div class="lbl">±2σ外れ値（おばけ）</div><div class="val" style="color:#f87171">'+s.ghosts.length+'件</div><div class="sub">¥'+s.mu2hi.toLocaleString()+'超</div></div>';
   h+='<div class="cell" style="border-color:#f8717133"><div class="lbl">IQR外れ値</div><div class="val" style="color:#f87171">'+s.iqrOutCnt+'件</div><div class="sub">¥'+s.iqrHi.toLocaleString()+'超</div></div>';
   h+='</div></div>';
 
-  /* 外れ値除外後 */
   h+='<div class="card" style="border-color:#4ade8044">';
   h+='<div class="card-ttl" style="color:#4ade80">✅ 外れ値除外後の実態平均</div>';
   h+='<div class="grid3">';
-  h+='<div class="cell"><div class="lbl">全件平均</div><div class="val" style="color:#f87171">¥'+s.avg.toLocaleString()+'</div><div class="sub">外れ値込み</div></div>';
+  h+='<div class="cell"><div class="lbl">全件平均</div><div class="val" style="color:#f87171">¥'+s.avg.toLocaleString()+'</div><div class="sub">おばけ込み</div></div>';
   h+='<div class="cell"><div class="lbl">±2σ除外後</div><div class="val" style="color:#4ade80">¥'+s.cleanAvg2.toLocaleString()+'</div><div class="sub">'+s.in2+'件</div></div>';
   h+='<div class="cell"><div class="lbl">IQR除外後</div><div class="val" style="color:#4ade80">¥'+s.cleanAvgIqr.toLocaleString()+'</div></div>';
   h+='</div>';
   h+='<div class="highlight" style="background:'+(s.diffAll>=0?'#4ade8010':'#f8717110')+';border:1px solid '+(s.diffAll>=0?'#4ade8033':'#f8717133')+'">';
-  h+='実態平均 <strong style="color:#4ade80">¥'+s.cleanAvg2.toLocaleString()+'</strong> vs 全体平均 <strong style="color:#94a3b8">¥'+allAvg.toLocaleString()+'</strong><br>';
+  h+='実態平均 <strong style="color:#4ade80">¥'+s.cleanAvg2.toLocaleString()+'</strong> vs 全体平均 <strong style="color:#94a3b8">¥'+allAvg.toLocaleString()+'</strong>　';
   h+='差額：<strong style="color:'+(s.diffAll>=0?'#4ade80':'#f87171')+'">'+(s.diffAll>=0?'+':'')+'¥'+s.diffAll.toLocaleString()+'</strong>';
   h+='</div></div>';
 
-  /* パーセンタイル */
   h+='<div class="card"><div class="card-ttl" style="color:#a78bfa">📈 パーセンタイル</div>';
+  var maxP=s.p95||1;
   [{lbl:'25%（下位25%）',v:s.p25,col:'#f87171'},{lbl:'50%（中央値）',v:s.p50,col:'#facc15'},
    {lbl:'75%（上位25%）',v:s.p75,col:'#60a5fa'},{lbl:'90%（上位10%）',v:s.p90,col:'#4ade80'},
-   {lbl:'95%（上位5%）', v:s.p95,col:'#a78bfa'}].forEach(function(p){
-    h+='<div style="margin-bottom:7px"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:11px;color:#94a3b8">'+p.lbl+'</span><span style="font-size:12px;font-weight:700;color:'+p.col+'">¥'+p.v.toLocaleString()+'</span></div>'+bar(p.v/(s.p95||1)*100,p.col)+'</div>';
+   {lbl:'95%（上位5%）',v:s.p95,col:'#a78bfa'}].forEach(function(p){
+    h+='<div style="margin-bottom:7px"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:11px;color:#94a3b8">'+p.lbl+'</span><span style="font-size:12px;font-weight:700;color:'+p.col+'">¥'+p.v.toLocaleString()+'</span></div>'+bar(p.v/maxP*100,p.col)+'</div>';
   });
-  h+='<div style="font-size:11px;color:#64748b;margin-top:6px;line-height:1.8">IQR外れ値ライン：¥'+s.iqrHi.toLocaleString()+'超（'+s.iqrOutCnt+'件がおばけ）</div>';
+  h+='<div style="font-size:11px;color:#64748b;margin-top:4px">IQR外れ値ライン：¥'+s.iqrHi.toLocaleString()+'超（'+s.iqrOutCnt+'件）</div>';
   h+='</div>';
 
-  /* おばけリスト */
   if(s.ghosts.length){
     h+='<div class="card" style="border-color:#f8717144">';
-    h+='<div class="card-ttl" style="color:#f87171">👻 おばけ案件（±2σ超：¥'+s.mu2hi.toLocaleString()+'超）</div>';
-    h+='<p style="font-size:11px;color:#64748b;margin-bottom:8px">'+s.ghosts.length+'件。これらが平均を引き上げている。</p>';
-    s.ghosts.slice(0,20).forEach(function(f,i){
+    h+='<div class="card-ttl" style="color:#f87171">👻 おばけ案件（±2σ超 '+s.ghosts.length+'件）</div>';
+    s.ghosts.slice(0,15).forEach(function(f,i){
       h+='<div class="row"><span style="font-size:11px;color:#64748b">'+(i+1)+'位</span><span style="font-size:14px;font-weight:800;color:#f87171">¥'+f.toLocaleString()+'</span></div>';
     });
-    if(s.ghosts.length>20)h+='<p style="font-size:10px;color:#475569;margin-top:6px">...他'+(s.ghosts.length-20)+'件</p>';
+    if(s.ghosts.length>15)h+='<p style="font-size:10px;color:#475569;margin-top:6px">他'+(s.ghosts.length-15)+'件</p>';
     h+='</div>';
   }
   return h;
@@ -215,106 +206,189 @@ async function run(){
 
     var rows=parseCSV(text);
     var allF=rows.map(function(r){return toN(r['料金']);}).filter(function(v){return v>0;});
-    var allAvg=Math.round(allF.reduce(function(a,b){return a+b;},0)/allF.length);
+    var allAvg=Math.round(mean(allF));
 
-    function getFares(st){
+    /* ステータス別 */
+    function byStatus(st){
       return rows.filter(function(r){return(r['ステータス']||'').trim()===st;})
         .map(function(r){return toN(r['料金']);}).filter(function(v){return v>0;});
     }
+    /* サンキュー列別 */
+    function bySanq(sk){
+      return rows.filter(function(r){return(r['サンキュー']||'').trim()===sk;})
+        .map(function(r){return toN(r['料金']);}).filter(function(v){return v>0;});
+    }
 
-    var goF =getFares('GO');
-    var smaF=getFares('スマ配');
-    var nagF=getFares('流し');
+    var goF =byStatus('GO');
+    var smaF=byStatus('スマ配');
+    var nagF=byStatus('流し');
+    var ptF =bySanq('プレタク');
+    var ptpF=bySanq('プレタクP');
 
     var goS =calcStat(goF, allAvg);
     var smaS=calcStat(smaF,allAvg);
     var nagS=calcStat(nagF,allAvg);
+    var ptS =calcStat(ptF, allAvg);
+    var ptpS=calcStat(ptpF,allAvg);
 
-    /* タブカラー */
-    var tabCols={go:'#4ade80',sma:'#60a5fa',nag:'#facc15'};
-    document.getElementById('tab-go') .style.background=tabCols.go;
-    document.getElementById('tab-sma').style.background=tabCols.sma;
-    document.getElementById('tab-nag').style.background=tabCols.nag;
-    document.getElementById('tab-compare').style.background='#a78bfa';
-
-    /* ── 比較タブ ── */
-    var maxAvgVal=Math.max(goS?goS.cleanAvg2:0,smaS?smaS.cleanAvg2:0,nagS?nagS.cleanAvg2:0)||1;
-    var maxCnt=Math.max(goS?goS.n:0,smaS?smaS.n:0,nagS?nagS.n:0)||1;
+    /* ── 全体比較タブ ── */
+    var allStats=[
+      {lbl:'🟢 GO',    s:goS, col:'#4ade80'},
+      {lbl:'📱 スマ配', s:smaS,col:'#60a5fa'},
+      {lbl:'🚕 流し',   s:nagS,col:'#facc15'},
+    ];
     var h='';
-
-    /* 全体サマリー */
     h+='<div class="card" style="border-color:#a78bfa44">';
-    h+='<div class="card-ttl" style="color:#a78bfa">🔢 3ステータス 一覧比較</div>';
-    h+='<p style="font-size:10px;color:#475569;margin-bottom:10px">全体平均単価（外れ値込み）：¥'+allAvg.toLocaleString()+'</p>';
+    h+='<div class="card-ttl" style="color:#a78bfa">🔢 GO / スマ配 / 流し 比較</div>';
+    h+='<p style="font-size:10px;color:#475569;margin-bottom:10px">全体平均単価（外れ値込み）：¥'+allAvg.toLocaleString()+'　全'+allF.length+'件</p>';
 
     /* 件数 */
-    h+='<p style="font-size:10px;color:#64748b;margin-bottom:6px;font-weight:700">件数</p>';
-    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
-    .forEach(function(x){
+    var maxCnt=Math.max.apply(null,allStats.map(function(x){return x.s?x.s.n:0;}))||1;
+    h+='<p style="font-size:10px;color:#64748b;font-weight:700;margin-bottom:6px">件数</p>';
+    allStats.forEach(function(x){
       if(!x.s)return;
-      var pct=x.s.n/maxCnt*100;
-      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:#475569">'+x.s.n+'件 ('+(allF.length>0?(x.s.n/allF.length*100).toFixed(1):0)+'%)</span></div>'+bar(pct,x.col,14)+'</div>';
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:#475569">'+x.s.n+'件 ('+(allF.length>0?(x.s.n/allF.length*100).toFixed(1):0)+'%)</span></div>'+bar(x.s.n/maxCnt*100,x.col,14)+'</div>';
     });
 
-    /* 中央値比較 */
-    h+='<p style="font-size:10px;color:#64748b;margin:12px 0 6px;font-weight:700">中央値（実態単価）</p>';
-    var maxMed=Math.max(goS?goS.med:0,smaS?smaS.med:0,nagS?nagS.med:0)||1;
-    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
-    .forEach(function(x){
+    /* 中央値 */
+    var maxMed=Math.max.apply(null,allStats.map(function(x){return x.s?x.s.med:0;}))||1;
+    h+='<p style="font-size:10px;color:#64748b;font-weight:700;margin:12px 0 6px">中央値（実態単価）</p>';
+    allStats.forEach(function(x){
       if(!x.s)return;
-      var pct=x.s.med/maxMed*100;
-      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="font-weight:700;color:'+x.col+'">¥'+x.s.med.toLocaleString()+'</span></div>'+bar(pct,x.col,14)+'</div>';
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="font-weight:700;color:'+x.col+'">¥'+x.s.med.toLocaleString()+'</span></div>'+bar(x.s.med/maxMed*100,x.col,14)+'</div>';
     });
 
-    /* 外れ値除外後の実態平均比較 */
-    h+='<p style="font-size:10px;color:#64748b;margin:12px 0 6px;font-weight:700">外れ値除外後の実態平均（±2σ除外）</p>';
-    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
-    .forEach(function(x){
+    /* 実態平均（±2σ除外） */
+    var maxClean=Math.max.apply(null,allStats.map(function(x){return x.s?x.s.cleanAvg2:0;}))||1;
+    h+='<p style="font-size:10px;color:#64748b;font-weight:700;margin:12px 0 6px">実態平均（±2σ除外後）</p>';
+    allStats.forEach(function(x){
       if(!x.s)return;
-      var pct=x.s.cleanAvg2/maxAvgVal*100;
-      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="font-weight:700;color:'+x.col+'">¥'+x.s.cleanAvg2.toLocaleString()+' <span style="font-size:10px;color:'+(x.s.diffAll>=0?'#4ade80':'#f87171')+'">'+(x.s.diffAll>=0?'↑+':'↓')+'¥'+Math.abs(x.s.diffAll).toLocaleString()+'</span></span></div>'+bar(pct,x.col,14)+'</div>';
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="font-weight:700;color:'+x.col+'">¥'+x.s.cleanAvg2.toLocaleString()+' <span style="font-size:10px;color:'+(x.s.diffAll>=0?'#4ade80':'#f87171')+'">'+(x.s.diffAll>=0?'↑+':'↓')+'¥'+Math.abs(x.s.diffAll).toLocaleString()+'</span></span></div>'+bar(x.s.cleanAvg2/maxClean*100,x.col,14)+'</div>';
     });
 
-    /* 変動係数（安定度） */
-    h+='<p style="font-size:10px;color:#64748b;margin:12px 0 6px;font-weight:700">変動係数 CV（低いほど安定）</p>';
-    var maxCV=Math.max(goS?goS.cv:0,smaS?smaS.cv:0,nagS?nagS.cv:0)||1;
-    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
-    .forEach(function(x){
+    /* CV安定度 */
+    var maxCV=Math.max.apply(null,allStats.map(function(x){return x.s?x.s.cv:0;}))||1;
+    h+='<p style="font-size:10px;color:#64748b;font-weight:700;margin:12px 0 6px">変動係数 CV（低いほど安定）</p>';
+    allStats.forEach(function(x){
       if(!x.s)return;
-      var pct=x.s.cv/maxCV*100;
-      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:'+(x.s.cv>=80?'#f87171':x.s.cv>=50?'#facc15':'#4ade80')+'">'+x.s.cv+'% '+(x.s.cv>=80?'超ばらつき大':x.s.cv>=50?'ばらつき大':'安定')+'</span></div>'+bar(pct,x.col+'99',14)+'</div>';
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:'+(x.s.cv>=80?'#f87171':x.s.cv>=50?'#facc15':'#4ade80')+'">'+x.s.cv+'% '+(x.s.cv>=80?'超ばらつき':x.s.cv>=50?'ばらつき大':'安定')+'</span></div>'+bar(x.s.cv/maxCV*100,x.col+'99',14)+'</div>';
     });
 
-    /* おばけ件数比較 */
-    h+='<p style="font-size:10px;color:#64748b;margin:12px 0 6px;font-weight:700">おばけ件数（±2σ超）</p>';
-    var maxGh=Math.max(goS?goS.ghosts.length:0,smaS?smaS.ghosts.length:0,nagS?nagS.ghosts.length:0)||1;
-    [{lbl:'🟢 GO',s:goS,col:'#4ade80'},{lbl:'📱 スマ配',s:smaS,col:'#60a5fa'},{lbl:'🚕 流し',s:nagS,col:'#facc15'}]
-    .forEach(function(x){
+    /* おばけ件数 */
+    var maxGh=Math.max.apply(null,allStats.map(function(x){return x.s?x.s.ghosts.length:0;}))||1;
+    h+='<p style="font-size:10px;color:#64748b;font-weight:700;margin:12px 0 6px">おばけ件数（±2σ超）</p>';
+    allStats.forEach(function(x){
       if(!x.s)return;
-      var pct=x.s.ghosts.length/maxGh*100;
-      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:#f87171">'+x.s.ghosts.length+'件（¥'+x.s.mu2hi.toLocaleString()+'超）</span></div>'+bar(pct,'#f8717199',14)+'</div>';
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:#f87171">'+x.s.ghosts.length+'件（¥'+x.s.mu2hi.toLocaleString()+'超）</span></div>'+bar(x.s.ghosts.length/maxGh*100,'#f8717199',14)+'</div>';
     });
-    h+='</div>';
 
     /* 総評 */
+    var ranks=[{n:'GO',v:goS?goS.cleanAvg2:0},{n:'スマ配',v:smaS?smaS.cleanAvg2:0},{n:'流し',v:nagS?nagS.cleanAvg2:0}]
+      .filter(function(x){return x.v>0;}).sort(function(a,b){return b.v-a.v;});
+    var stableRanks=[{n:'GO',v:goS?goS.cv:999},{n:'スマ配',v:smaS?smaS.cv:999},{n:'流し',v:nagS?nagS.cv:999}]
+      .filter(function(x){return x.v<999;}).sort(function(a,b){return a.v-b.v;});
+    h+='</div>';
     h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b08">';
     h+='<div class="card-ttl" style="color:#f59e0b">💡 3ステータスの性格まとめ</div>';
     h+='<div style="font-size:12px;color:#cbd5e1;line-height:2.1">';
-    if(goS&&smaS&&nagS){
-      var ranks=[{n:'GO',v:goS.cleanAvg2},{n:'スマ配',v:smaS.cleanAvg2},{n:'流し',v:nagS.cleanAvg2}]
-        .sort(function(a,b){return b.v-a.v;});
-      h+='単価ランク：<strong style="color:#facc15">'+ranks.map(function(r,i){return (i+1)+'位 '+r.n+' ¥'+r.v.toLocaleString();}).join(' / ')+'</strong><br>';
-      var stableRanks=[{n:'GO',v:goS.cv},{n:'スマ配',v:smaS.cv},{n:'流し',v:nagS.cv}]
-        .sort(function(a,b){return a.v-b.v;});
-      h+='安定度ランク：<strong style="color:#60a5fa">'+stableRanks.map(function(r,i){return (i+1)+'位 '+r.n+' CV'+r.v+'%';}).join(' / ')+'</strong><br>';
-    }
-    h+='→ 各タブで詳細を確認してください。';
+    h+='単価ランク：<strong style="color:#facc15">'+ranks.map(function(r,i){return(i+1)+'位 '+r.n+' ¥'+r.v.toLocaleString();}).join(' / ')+'</strong><br>';
+    h+='安定度ランク：<strong style="color:#60a5fa">'+stableRanks.map(function(r,i){return(i+1)+'位 '+r.n+' CV'+r.v+'%';}).join(' / ')+'</strong>';
     h+='</div></div>';
-
     document.getElementById('p-compare').innerHTML=h;
+
+    /* ── プレタク比較タブ ── */
+    h='';
+    h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b08">';
+    h+='<div class="card-ttl" style="color:#f59e0b">⭐ プレタク vs プレタクP 直接比較</div>';
+    h+='<p style="font-size:11px;color:#94a3b8;margin-bottom:12px;line-height:1.8">';
+    h+='プレタク = 通常GO案件が自動アップグレード<br>';
+    h+='プレタクP = 客がチャージ払って指名';
+    h+='</p>';
+
+    var ptStats=[
+      {lbl:'⭐ プレタク', s:ptS, col:'#f59e0b'},
+      {lbl:'✨ プレタクP',s:ptpS,col:'#fb923c'},
+    ];
+
+    /* 件数 */
+    h+='<p style="font-size:10px;color:#64748b;font-weight:700;margin-bottom:6px">件数</p>';
+    var maxPtCnt=Math.max(ptS?ptS.n:0,ptpS?ptpS.n:0)||1;
+    ptStats.forEach(function(x){
+      if(!x.s)return;
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:#475569">'+x.s.n+'件</span></div>'+bar(x.s.n/maxPtCnt*100,x.col,14)+'</div>';
+    });
+
+    /* 中央値 */
+    h+='<p style="font-size:10px;color:#64748b;font-weight:700;margin:12px 0 6px">中央値（実態単価）</p>';
+    var maxPtMed=Math.max(ptS?ptS.med:0,ptpS?ptpS.med:0)||1;
+    ptStats.forEach(function(x){
+      if(!x.s)return;
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="font-weight:700;color:'+x.col+'">¥'+x.s.med.toLocaleString()+'</span></div>'+bar(x.s.med/maxPtMed*100,x.col,14)+'</div>';
+    });
+
+    /* 実態平均 */
+    h+='<p style="font-size:10px;color:#64748b;font-weight:700;margin:12px 0 6px">実態平均（±2σ除外後）</p>';
+    var maxPtClean=Math.max(ptS?ptS.cleanAvg2:0,ptpS?ptpS.cleanAvg2:0)||1;
+    ptStats.forEach(function(x){
+      if(!x.s)return;
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="font-weight:700;color:'+x.col+'">¥'+x.s.cleanAvg2.toLocaleString()+' <span style="font-size:10px;color:'+(x.s.diffAll>=0?'#4ade80':'#f87171')+'">'+(x.s.diffAll>=0?'↑+':'↓')+'¥'+Math.abs(x.s.diffAll).toLocaleString()+'</span></span></div>'+bar(x.s.cleanAvg2/maxPtClean*100,x.col,14)+'</div>';
+    });
+
+    /* CV */
+    h+='<p style="font-size:10px;color:#64748b;font-weight:700;margin:12px 0 6px">変動係数 CV</p>';
+    var maxPtCV=Math.max(ptS?ptS.cv:0,ptpS?ptpS.cv:0)||1;
+    ptStats.forEach(function(x){
+      if(!x.s)return;
+      h+='<div class="cmp-wrap"><div class="cmp-lbl"><span style="color:'+x.col+'">'+x.lbl+'</span><span style="color:'+(x.s.cv>=80?'#f87171':x.s.cv>=50?'#facc15':'#4ade80')+'">'+x.s.cv+'%</span></div>'+bar(x.s.cv/maxPtCV*100,x.col+'99',14)+'</div>';
+    });
+
+    /* パーセンタイル横並び比較 */
+    h+='</div>';
+    h+='<div class="card">';
+    h+='<div class="card-ttl" style="color:#e2e8f0">📈 パーセンタイル比較</div>';
+    h+='<table style="width:100%;border-collapse:collapse;font-size:11px">';
+    h+='<thead><tr><th style="text-align:left;color:#475569;padding:4px 6px;border-bottom:1px solid #1e2d40">パーセンタイル</th><th style="text-align:right;color:#f59e0b;padding:4px 6px;border-bottom:1px solid #1e2d40">⭐ プレタク</th><th style="text-align:right;color:#fb923c;padding:4px 6px;border-bottom:1px solid #1e2d40">✨ プレタクP</th></tr></thead><tbody>';
+    [
+      {lbl:'25%（下位）',pa:'p25',pb:'p25'},
+      {lbl:'50%（中央値）',pa:'p50',pb:'p50'},
+      {lbl:'75%（上位25%）',pa:'p75',pb:'p75'},
+      {lbl:'90%（上位10%）',pa:'p90',pb:'p90'},
+      {lbl:'95%（上位5%）',pa:'p95',pb:'p95'},
+    ].forEach(function(row){
+      var va=ptS?ptS[row.pa]:0,vb=ptpS?ptpS[row.pb]:0;
+      var higher=va>vb?'pt':'ptp';
+      h+='<tr><td style="color:#64748b;padding:6px 6px;border-bottom:1px solid #0d1220">'+row.lbl+'</td>';
+      h+='<td style="text-align:right;padding:6px 6px;border-bottom:1px solid #0d1220;font-weight:'+(higher==='pt'?800:400)+';color:'+(higher==='pt'?'#f59e0b':'#94a3b8')+'">¥'+(va||0).toLocaleString()+(higher==='pt'?' ↑':'')+'</td>';
+      h+='<td style="text-align:right;padding:6px 6px;border-bottom:1px solid #0d1220;font-weight:'+(higher==='ptp'?800:400)+';color:'+(higher==='ptp'?'#fb923c':'#94a3b8')+'">¥'+(vb||0).toLocaleString()+(higher==='ptp'?' ↑':'')+'</td></tr>';
+    });
+    h+='</tbody></table></div>';
+
+    /* 結論 */
+    h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b08">';
+    h+='<div class="card-ttl" style="color:#f59e0b">💡 プレタク vs プレタクP 結論</div>';
+    h+='<div style="font-size:12px;color:#cbd5e1;line-height:2">';
+    if(ptS&&ptpS){
+      var winner=ptS.cleanAvg2>=ptpS.cleanAvg2?'プレタク':'プレタクP';
+      var loser=winner==='プレタク'?'プレタクP':'プレタク';
+      var winV=winner==='プレタク'?ptS.cleanAvg2:ptpS.cleanAvg2;
+      var losV=loser==='プレタク'?ptS.cleanAvg2:ptpS.cleanAvg2;
+      h+='実態平均が高いのは <strong style="color:#f59e0b">'+winner+'</strong>（¥'+winV.toLocaleString()+'）<br>';
+      h+=loser+'との差：<strong style="color:'+(winV-losV>0?'#4ade80':'#94a3b8')+'">+¥'+(winV-losV).toLocaleString()+'</strong><br>';
+      if(winner==='プレタク'){
+        h+='→ <strong style="color:#facc15">「自動アップグレード = 売上見込みの高い案件が振られる」</strong>という仮説をデータが裏付けています。';
+      }else{
+        h+='→ プレタクPのほうが単価が高い結果に。チャージを払う層の利用距離が長い可能性があります。';
+      }
+    }
+    h+='</div></div>';
+    document.getElementById('p-pretax').innerHTML=h;
+
+    /* 各詳細タブ */
     document.getElementById('p-go') .innerHTML=buildPage(goS, '#4ade80','🟢 GO',allAvg);
     document.getElementById('p-sma').innerHTML=buildPage(smaS,'#60a5fa','📱 スマ配',allAvg);
     document.getElementById('p-nag').innerHTML=buildPage(nagS,'#facc15','🚕 流し',allAvg);
+    document.getElementById('p-pt') .innerHTML=buildPage(ptS, '#f59e0b','⭐ プレタク',allAvg);
+    document.getElementById('p-ptp').innerHTML=buildPage(ptpS,'#fb923c','✨ プレタクP',allAvg);
 
     document.getElementById('msgbox').style.display='none';
     document.getElementById('dashboard').style.display='';
