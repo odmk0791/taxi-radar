@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>月曜日 売上向上ダッシュボード</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans','Noto Sans JP',sans-serif;min-height:100vh;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#1c0a3a,#0f1e40,#0a2050);border-bottom:1px solid #f8717155;padding:18px 16px 14px;position:sticky;top:0;z-index:100}
+#hdr .sub{font-size:10px;color:#f87171;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+#hdr h1{font-size:19px;font-weight:800}
+#hdr .desc{font-size:11px;color:#475569;margin-top:3px}
+#idle{padding:52px 24px;text-align:center}
+#idle .ico{font-size:52px;margin-bottom:16px}
+#idle p{font-size:14px;color:#94a3b8;line-height:1.9;margin-bottom:32px}
+#btn-load{background:linear-gradient(135deg,#f87171,#fb923c);border:none;border-radius:16px;padding:16px 40px;color:#fff;font-size:16px;font-weight:800;cursor:pointer;box-shadow:0 4px 28px #f8717155;font-family:inherit}
+#loading{padding:64px 24px;text-align:center;color:#60a5fa;display:none}
+#loading .spin{font-size:40px;display:inline-block;animation:sp 1s linear infinite;margin-bottom:16px}
+@keyframes sp{to{transform:rotate(360deg)}}
+#loading p{font-size:14px;color:#94a3b8}
+#err{padding:20px;display:none}
+.err-box{background:#f8717110;border:1px solid #f8717155;border-radius:12px;padding:13px 14px;margin-bottom:12px}
+.err-box strong{color:#f87171;font-size:13px;display:block;margin-bottom:6px}
+.err-box span{font-size:12px;color:#94a3b8;word-break:break-all;line-height:1.7}
+#btn-retry{background:#1a2035;border:1px solid #f87171;border-radius:10px;padding:10px 24px;color:#f87171;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+#main{display:none}
+.kpi-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:14px 14px 0}
+.kpi{background:#161626;border-radius:12px;padding:10px;border:1px solid #333}
+.kpi .ico{font-size:13px;margin-bottom:2px}
+.kpi .lbl{font-size:9px;color:#475569;letter-spacing:1px;margin-bottom:3px}
+.kpi .val{font-size:14px;font-weight:800;line-height:1.2}
+.kpi .sub{font-size:9px;color:#475569;margin-top:3px}
+.tabs{display:flex;gap:5px;padding:12px 14px 0;overflow-x:auto;scrollbar-width:none}
+.tab{padding:7px 12px;border-radius:20px;border:none;background:#151e30;color:#64748b;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0}
+.tab.on{background:#f87171;color:#fff}
+.panel{padding:12px 14px 0;display:none}
+.panel.on{display:block}
+.sec-lbl{font-size:11px;color:#475569;margin-bottom:12px}
+.dow-row{margin-bottom:9px}
+.dow-row .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}
+.dow-badge{width:27px;height:27px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;border:1.5px solid}
+.bar-wrap{height:18px;background:#151e30;border-radius:4px;overflow:hidden;position:relative}
+.bar-inner{height:100%;border-radius:4px;display:flex;align-items:center;transition:width .6s ease}
+.bar-label{font-size:9px;color:#fff;padding-left:8px;font-weight:700}
+.bar-right{position:absolute;top:0;right:0;bottom:0;display:flex;align-items:center;padding-right:8px}
+.bar-right span{font-size:9px;color:#f87171;font-weight:700}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:13px 14px;margin-bottom:10px}
+.card-title{font-size:11px;font-weight:700;margin-bottom:8px}
+.gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.gap-cell{background:#0d1220;border-radius:8px;padding:8px 10px}
+.gap-cell .lbl{font-size:9px;color:#475569;margin-bottom:3px}
+.gap-cell .val{font-size:14px;font-weight:800}
+.h-row{margin-bottom:8px}
+.h-row .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}
+.h-row .lbl{font-size:12px;font-weight:700;min-width:52px}
+.hot-badge{font-size:9px;background:#f59e0b22;color:#f59e0b;padding:1px 5px;border-radius:8px;margin-left:6px}
+.spot-item{border:1px solid #1e2d40;border-radius:12px;padding:9px 12px;margin-bottom:7px;background:#161626}
+.spot-item.top3{border-color:#facc1555;background:#facc1508}
+.spot-item .row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px}
+.spot-name{font-size:11px;font-weight:700;line-height:1.3}
+.spot-cnt{font-size:13px;font-weight:700;text-align:right}
+.spot-avg{font-size:9px;color:#475569;text-align:right}
+.st-row{margin-bottom:10px}
+.st-row .top{display:flex;justify-content:space-between;margin-bottom:3px}
+.strategy-item{background:#161626;border-radius:12px;overflow:hidden;margin-bottom:9px}
+.strategy-head{padding:9px 14px;display:flex;align-items:center;gap:9px}
+.strategy-no{font-size:10px;font-weight:900;padding:2px 7px;border-radius:5px}
+.strategy-ttl{font-size:13px;font-weight:800}
+.strategy-body{padding:11px 14px}
+.strategy-body p{font-size:12px;color:#cbd5e1;line-height:1.8;margin-bottom:9px}
+.strategy-act{border-radius:0 6px 6px 0;padding:7px 12px;font-size:11px;line-height:1.7}
+#goal-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:10px}
+.goal-cell{background:#0d1220;border-radius:8px;padding:8px;text-align:center}
+.goal-cell .lbl{font-size:9px;color:#475569;margin-bottom:3px}
+.goal-cell .val{font-size:13px;font-weight:800}
+#btn-reload{background:#151e30;border:1px solid #1e2d40;border-radius:10px;padding:9px 22px;color:#64748b;font-size:12px;cursor:pointer;font-family:inherit;display:block;margin:20px auto 0}
+.real-row{margin-bottom:6px}
+.real-row .top{display:flex;justify-content:space-between;margin-bottom:2px}
+.mini-bar{height:7px;background:#151e30;border-radius:4px;overflow:hidden}
+.mini-bar-inner{height:100%;border-radius:4px}
+.divider{border:none;border-top:1px solid #1e2d40;margin:8px 0}
+.to-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #1e2d40;align-items:center}
+</style>
+</head>
+<body>
+
+<div id="hdr">
+  <div class="sub">Monday Performance Analysis</div>
+  <h1>🔴 月曜日 売上向上ダッシュボード</h1>
+  <div class="desc">日報データをリアルタイム分析</div>
+</div>
+
+<div id="idle">
+  <div class="ico">📊</div>
+  <p>日報・日報詳細CSVを読み込んで<br>月曜日の売上を分析します</p>
+  <button id="btn-load" onclick="loadAll()">🚀 データを読み込む</button>
+</div>
+
+<div id="loading">
+  <div class="spin">⏳</div>
+  <p id="load-msg">読み込み中...</p>
+</div>
+
+<div id="err">
+  <div class="err-box">
+    <strong>⚠️ エラー</strong>
+    <span id="err-msg"></span>
+  </div>
+  <button id="btn-retry" onclick="loadAll()">🔄 再試行</button>
+</div>
+
+<div id="main">
+  <div class="kpi-grid">
+    <div class="kpi" id="kpi0">
+      <div class="ico">💰</div>
+      <div class="lbl">月曜 平均営収</div>
+      <div class="val" id="k0v">—</div>
+      <div class="sub" id="k0s">—</div>
+    </div>
+    <div class="kpi" id="kpi1">
+      <div class="ico">🏆</div>
+      <div class="lbl">売上ランク</div>
+      <div class="val" id="k1v">—</div>
+      <div class="sub" id="k1s">—</div>
+    </div>
+    <div class="kpi" id="kpi2">
+      <div class="ico">📋</div>
+      <div class="lbl">月曜 総件数</div>
+      <div class="val" id="k2v">—</div>
+      <div class="sub" id="k2s">—</div>
+    </div>
+  </div>
+
+  <div class="tabs" id="tabs">
+    <button class="tab on" onclick="switchTab('compare',this)">📊 曜日比較</button>
+    <button class="tab" onclick="switchTab('hourly',this)">🕐 時間帯</button>
+    <button class="tab" onclick="switchTab('spots',this)">📍 乗車地</button>
+    <button class="tab" onclick="switchTab('status',this)">🚦 状態別</button>
+    <button class="tab" onclick="switchTab('strategy',this)">🎯 戦略</button>
+  </div>
+
+  <div class="panel on" id="p-compare"></div>
+  <div class="panel" id="p-hourly"></div>
+  <div class="panel" id="p-spots"></div>
+  <div class="panel" id="p-status"></div>
+  <div class="panel" id="p-strategy"></div>
+
+  <button id="btn-reload" onclick="loadAll()">🔄 データ再読み込み</button>
+</div>
+
+<script>
+const URL1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+const URL2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+const DOW_ORDER=['月','火','水','木','金','土','日'];
+const DOW_COL={月:'#f87171',火:'#fb923c',水:'#facc15',木:'#4ade80',金:'#60a5fa',土:'#a78bfa',日:'#f472b6'};
+
+function show(id){['idle','loading','err','main'].forEach(x=>document.getElementById(x).style.display='none');document.getElementById(id).style.display='';}
+function setMsg(m){document.getElementById('load-msg').textContent=m;}
+
+function parseCSV(text){
+  var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
+  if(lines.length<2)return{headers:[],rows:[]};
+  function sp(line){
+    var cols=[],cur='',q=false;
+    for(var i=0;i<line.length;i++){
+      var c=line[i];
+      if(c==='"'){q=!q;continue;}
+      if(c===','&&!q){cols.push(cur.trim());cur='';continue;}
+      cur+=c;
+    }
+    cols.push(cur.trim());
+    return cols;
+  }
+  var headers=sp(lines[0]);
+  var rows=lines.slice(1).map(function(l){
+    var v=sp(l),obj={};
+    headers.forEach(function(h,i){obj[h]=v[i]||'';});
+    return obj;
+  });
+  return{headers:headers,rows:rows};
+}
+
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function avg(a){return a.length?Math.round(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
+function norm(s){return String(s||'').replace(/：/g,':').trim();}
+function fk(headers,words){
+  return headers.find(function(h){return words.some(function(w){return norm(h).includes(w);});});
+}
+function toDow(r,dowK,dateK){
+  var D=['日','月','火','水','木','金','土'];
+  if(dowK&&r[dowK]&&r[dowK].trim())return r[dowK].trim();
+  var s=String(r[dateK]||'');
+  var m=s.match(/(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/);
+  if(m)return D[new Date(+m[1],+m[2]-1,+m[3]).getDay()];
+  return null;
+}
+function toHour(v){
+  var m=String(v||'').match(/^(\d{1,2}):/);
+  return m?+m[1]:null;
+}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function bar(pct,col,h){
+  h=h||18;
+  var label=pct>16?'<span class="bar-label">'+Math.round(pct)+'%</span>':'';
+  return '<div class="bar-wrap" style="height:'+h+'px"><div class="bar-inner" style="width:'+pct+'%;background:'+col+'">'+label+'</div></div>';
+}
+
+async function loadAll(){
+  show('loading');
+  try{
+    setMsg('📄 日報CSV 取得中...');
+    var r1=await fetch(URL1);
+    if(!r1.ok)throw new Error('日報CSV: HTTP '+r1.status);
+    var raw1=await r1.text();
+
+    setMsg('📄 日報詳細CSV 取得中...');
+    var r2=await fetch(URL2);
+    if(!r2.ok)throw new Error('詳細CSV: HTTP '+r2.status);
+    var raw2=await r2.text();
+
+    setMsg('🔢 集計中...');
+    var result=analyze(raw1,raw2);
+    render(result);
+    show('main');
+  }catch(e){
+    document.getElementById('err-msg').textContent=String(e.message||e);
+    show('err');
+  }
+}
+
+function analyze(raw1,raw2){
+  var d1=parseCSV(raw1), d2=parseCSV(raw2);
+  var h1=d1.headers, r1=d1.rows;
+  var h2=d2.headers, r2=d2.rows;
+
+  // 日報① 曜日別集計
+  var fareK1=fk(h1,['営収','売上']);
+  var dowK1=fk(h1,['曜']);
+  var dateK1=fk(h1,['日付','date']);
+  var tripK1=fk(h1,['回数','件数']);
+  var realK1=fk(h1,['実車率']);
+
+  var byDow={};
+  DOW_ORDER.forEach(function(d){byDow[d]={fares:[],trips:[],real:[]};});
+  r1.forEach(function(r){
+    var dow=toDow(r,dowK1,dateK1);
+    if(!dow||!byDow[dow])return;
+    var f=toN(r[fareK1]);
+    if(f<=0)return;
+    byDow[dow].fares.push(f);
+    if(tripK1)byDow[dow].trips.push(toN(r[tripK1]));
+    if(realK1)byDow[dow].real.push(parseFloat(r[realK1])||0);
+  });
+  var dowStats=DOW_ORDER.map(function(dow){
+    var d=byDow[dow];
+    var realAvg=d.real.length?Math.round(avg(d.real)*10)/10:0;
+    return{dow:dow,count:d.fares.length,avg:avg(d.fares),
+      max:d.fares.length?Math.max.apply(null,d.fares):0,
+      min:d.fares.length?Math.min.apply(null,d.fares):0,
+      tripAvg:avg(d.trips),realAvg:realAvg};
+  });
+
+  // 日報② 月曜詳細
+  var normH=h2.map(norm);
+  function findCol(words){
+    var idx=normH.findIndex(function(h){return words.some(function(w){return h.includes(w);});});
+    return idx>=0?h2[idx]:null;
+  }
+  var dowK2=findCol(['曜']);
+  var dateK2=findCol(['日付']);
+  var hourK2=findCol(['乗車時間','乗']);
+  var wardK2=findCol(['乗車地:市区','乗車地：市区']);
+  var nameK2=findCol(['乗車地:地名','乗車地：地名']);
+  var fareK2=findCol(['料金']);
+  var statusK2=findCol(['ステータス']);
+  var skK2=findCol(['サンキュー']);
+  var dWardK2=findCol(['降車地:市区','降車地：市区']);
+  var dNameK2=findCol(['降車地:地名','降車地：地名']);
+
+  var mon=r2.filter(function(r){return toDow(r,dowK2,dateK2)==='月';});
+
+  // 時間帯別
+  var hMap={};
+  mon.forEach(function(r){
+    var h=toHour(r[hourK2]),f=toN(r[fareK2]);
+    if(h===null||f<=0)return;
+    var lbl=h>=24?'翌'+(h-24)+'時台':h+'時台';
+    if(!hMap[lbl])hMap[lbl]={total:0,cnt:0,key:h};
+    hMap[lbl].total+=f;hMap[lbl].cnt++;
+  });
+  var hourly=Object.entries(hMap).sort(function(a,b){return a[1].key-b[1].key;})
+    .map(function(e){return{lbl:e[0],avg:Math.round(e[1].total/e[1].cnt),cnt:e[1].cnt};});
+
+  // 乗車地TOP
+  var fMap={};
+  mon.forEach(function(r){
+    var w=(r[wardK2]||'').trim(),n=(r[nameK2]||'').trim();
+    var full=w&&n?w+n:w||n;
+    var f=toN(r[fareK2]);
+    if(!full||f<=0)return;
+    if(!fMap[full])fMap[full]={cnt:0,total:0};
+    fMap[full].cnt++;fMap[full].total+=f;
+  });
+  var fromTop=Object.entries(fMap).sort(function(a,b){return b[1].cnt-a[1].cnt;}).slice(0,15)
+    .map(function(e){return{name:e[0],cnt:e[1].cnt,avg:Math.round(e[1].total/e[1].cnt)};});
+
+  // 降車地TOP
+  var dMap={};
+  mon.forEach(function(r){
+    var w=(r[dWardK2]||'').trim(),n=(r[dNameK2]||'').trim();
+    var full=w&&n?w+n:w||n;
+    var f=toN(r[fareK2]);
+    if(!full||f<=0)return;
+    if(!dMap[full])dMap[full]={cnt:0,total:0};
+    dMap[full].cnt++;dMap[full].total+=f;
+  });
+  var toTop=Object.entries(dMap).sort(function(a,b){return b[1].cnt-a[1].cnt;}).slice(0,10)
+    .map(function(e){return{name:e[0],cnt:e[1].cnt,avg:Math.round(e[1].total/e[1].cnt)};});
+
+  // ステータス
+  var stMap={};
+  mon.forEach(function(r){
+    var s=(r[statusK2]||'不明').trim();
+    if(!stMap[s])stMap[s]={cnt:0,total:0};
+    var f=toN(r[fareK2]);stMap[s].cnt++;if(f>0)stMap[s].total+=f;
+  });
+  var statusMix=Object.entries(stMap).sort(function(a,b){return b[1].cnt-a[1].cnt;})
+    .map(function(e){return{name:e[0],cnt:e[1].cnt,avg:e[1].cnt>0?Math.round(e[1].total/e[1].cnt):0};});
+
+  // サンキュー
+  var skMap={};
+  mon.forEach(function(r){
+    var s=(r[skK2]||'通常').trim()||'通常';
+    skMap[s]=(skMap[s]||0)+1;
+  });
+  var skMix=Object.entries(skMap).sort(function(a,b){return b[1]-a[1];})
+    .map(function(e){return{name:e[0],cnt:e[1]};});
+
+  return{dowStats:dowStats,hourly:hourly,fromTop:fromTop,toTop:toTop,
+    statusMix:statusMix,skMix:skMix,monCount:mon.length,h1:h1,h2:h2};
+}
+
+function render(R){
+  var ds=R.dowStats;
+  var valid=ds.filter(function(d){return d.avg>0;});
+  var mon=ds.find(function(d){return d.dow==='月';})||{avg:0,max:0,count:0,tripAvg:0,realAvg:0};
+  var allAvg=avg(valid.map(function(d){return d.avg;}));
+  var othAvg=avg(valid.filter(function(d){return d.dow!=='月';}).map(function(d){return d.avg;}));
+  var gap=mon.avg-allAvg;
+  var gapOth=mon.avg-othAvg;
+  var maxA=valid.length?Math.max.apply(null,valid.map(function(d){return d.avg;})):1;
+  var sorted=[].concat(valid).sort(function(a,b){return b.avg-a.avg;});
+  var rank=sorted.findIndex(function(d){return d.dow==='月';})+1;
+  var maxHCnt=R.hourly.length?Math.max.apply(null,R.hourly.map(function(h){return h.cnt;})):1;
+  var maxFCnt=R.fromTop.length?Math.max.apply(null,R.fromTop.map(function(f){return f.cnt;})):1;
+  var totSt=R.statusMix.reduce(function(a,b){return a+b.cnt;},0);
+  var totSk=R.skMix.reduce(function(a,b){return a+b.cnt;},0);
+
+  // KPI
+  var accentGap=gap<0?'#f87171':'#4ade80';
+  document.getElementById('kpi0').style.borderTop='3px solid '+accentGap;
+  document.getElementById('k0v').textContent='¥'+mon.avg.toLocaleString();
+  document.getElementById('k0v').style.color=accentGap;
+  document.getElementById('k0s').textContent='全体比 '+(gap>=0?'+':'')+gap.toLocaleString();
+  var accentRank=rank>=5?'#f87171':'#facc15';
+  document.getElementById('kpi1').style.borderTop='3px solid '+accentRank;
+  document.getElementById('k1v').textContent=rank+'位 / '+valid.length+'曜日';
+  document.getElementById('k1v').style.color=accentRank;
+  document.getElementById('k1s').textContent='最高¥'+mon.max.toLocaleString();
+  document.getElementById('kpi2').style.borderTop='3px solid #60a5fa';
+  document.getElementById('k2v').textContent=R.monCount+'件';
+  document.getElementById('k2v').style.color='#60a5fa';
+  document.getElementById('k2s').textContent='出勤'+mon.count+'日';
+
+  // ── 曜日比較 ──
+  var html='<div class="sec-lbl">曜日別 平均営収（高い順）</div>';
+  sorted.forEach(function(s){
+    var pct=s.avg/maxA*100;
+    var isMon=s.dow==='月';
+    var bgBar=isMon?'linear-gradient(90deg,#f87171,#fbbf24)':DOW_COL[s.dow]+'55';
+    var labelPct=pct>14?'<span class="bar-label">'+pct.toFixed(0)+'%</span>':'';
+    var rightLabel=isMon?'<div class="bar-right"><span>全体比'+((s.avg/allAvg-1)*100).toFixed(1)+'%</span></div>':'';
+    html+='<div class="dow-row">';
+    html+='<div class="top">';
+    html+='<div style="display:flex;align-items:center;gap:7px">';
+    html+='<span class="dow-badge" style="background:'+(isMon?'#f87171':DOW_COL[s.dow]+'22')+';border-color:'+DOW_COL[s.dow]+';color:'+(isMon?'#fff':DOW_COL[s.dow])+'">'+s.dow+'</span>';
+    html+='<span style="font-size:11px;color:#475569">'+s.count+'日'+(s.tripAvg>0?' / avg'+s.tripAvg+'件':'')+'</span>';
+    html+='</div>';
+    html+='<span style="font-size:13px;font-weight:700;color:'+(isMon?'#f87171':'#e2e8f0')+'">¥'+s.avg.toLocaleString()+'</span>';
+    html+='</div>';
+    html+='<div class="bar-wrap"><div class="bar-inner" style="width:'+pct+'%;background:'+bgBar+'">'+labelPct+'</div>'+rightLabel+'</div>';
+    html+='</div>';
+  });
+  html+='<div class="card" style="border-color:#f8717155;background:#f8717108;margin-top:4px">';
+  html+='<div class="card-title" style="color:#f87171">⚡ 月曜ギャップ</div>';
+  html+='<div class="gap-grid">';
+  [{lbl:'vs 全体平均',val:(gap>=0?'+':'')+'¥'+Math.abs(gap).toLocaleString(),col:gap<0?'#f87171':'#4ade80'},
+   {lbl:'vs 他曜日平均',val:(gapOth>=0?'+':'')+'¥'+Math.abs(gapOth).toLocaleString(),col:gapOth<0?'#f87171':'#4ade80'},
+   {lbl:'トップとの差',val:'-¥'+(maxA-mon.avg).toLocaleString(),col:'#f87171'},
+   {lbl:'月曜最高記録',val:'¥'+mon.max.toLocaleString(),col:'#4ade80'},
+  ].forEach(function(x){
+    html+='<div class="gap-cell"><div class="lbl">'+x.lbl+'</div><div class="val" style="color:'+x.col+'">'+x.val+'</div></div>';
+  });
+  html+='</div></div>';
+  if(valid.some(function(d){return d.realAvg>0;})){
+    html+='<div class="card"><div class="card-title" style="color:#60a5fa">📐 実車率比較</div>';
+    var realValid=valid.filter(function(d){return d.realAvg>0;}).sort(function(a,b){return b.realAvg-a.realAvg;});
+    var mr=Math.max.apply(null,realValid.map(function(d){return d.realAvg;}));
+    realValid.forEach(function(s){
+      html+='<div class="real-row"><div class="top"><span style="font-size:12px;color:'+(s.dow==='月'?'#f87171':'#94a3b8')+'">'+s.dow+'曜日</span><span style="font-size:11px;color:#475569">'+s.realAvg+'%</span></div>';
+      html+='<div class="mini-bar"><div class="mini-bar-inner" style="width:'+(s.realAvg/mr*100)+'%;background:'+(s.dow==='月'?'#f87171':DOW_COL[s.dow]+'99')+'"></div></div></div>';
+    });
+    html+='</div>';
+  }
+  document.getElementById('p-compare').innerHTML=html;
+
+  // ── 時間帯 ──
+  html='';
+  if(R.hourly.length===0){
+    html='<div class="card" style="color:#64748b;font-size:12px">時刻データ未検出</div>';
+  }else{
+    html='<div class="sec-lbl">月曜 時間帯別 件数 / 平均単価（計'+R.monCount+'件）</div>';
+    R.hourly.forEach(function(h){
+      var pct=h.cnt/maxHCnt*100;
+      var hot=pct>=55,mid=pct>=25;
+      var col=hot?'linear-gradient(90deg,#f59e0b,#f87171)':mid?'linear-gradient(90deg,#2563eb,#60a5fa44)':'#1e2d40';
+      var hotBadge=hot?'<span class="hot-badge">🔥HOT</span>':'';
+      html+='<div class="h-row"><div class="top"><div style="display:flex;align-items:center"><span class="lbl" style="color:'+(hot?'#facc15':mid?'#60a5fa':'#64748b')+'">'+esc(h.lbl)+'</span>'+hotBadge+'</div><span style="font-size:11px;color:#475569">'+h.cnt+'件　¥'+h.avg.toLocaleString()+'</span></div>';
+      html+='<div class="bar-wrap" style="height:20px"><div class="bar-inner" style="width:'+pct+'%;background:'+col+'">'+(pct>16?'<span class="bar-label">'+h.cnt+'件</span>':'')+'</div></div></div>';
+    });
+    var hotSlots=R.hourly.filter(function(h){return h.cnt/maxHCnt>=.55;});
+    var deadSlots=R.hourly.filter(function(h){return h.cnt/maxHCnt<.15;});
+    if(hotSlots.length){
+      html+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b0a;margin-top:6px"><div class="card-title" style="color:#f59e0b">🔥 ピーク時間帯</div>';
+      html+='<p style="font-size:12px;color:#cbd5e1;margin-bottom:6px">'+hotSlots.map(function(h){return esc(h.lbl)+'（'+h.cnt+'件・¥'+h.avg.toLocaleString()+'）';}).join('　')+'</p>';
+      html+='<p style="font-size:11px;color:#94a3b8">→ この時間帯に確実にTOP乗車地エリアへ</p></div>';
+    }
+    if(deadSlots.length){
+      html+='<div class="card" style="border-color:#47556944;background:#47556908"><div class="card-title" style="color:#64748b">💤 閑散時間帯</div>';
+      html+='<p style="font-size:12px;color:#64748b;margin-bottom:6px">'+deadSlots.map(function(h){return esc(h.lbl);}).join('・')+'</p>';
+      html+='<p style="font-size:11px;color:#475569">→ 食事・休憩・ピーク前の体力温存に活用</p></div>';
+    }
+  }
+  document.getElementById('p-hourly').innerHTML=html;
+
+  // ── 乗車地 ──
+  html='';
+  if(R.fromTop.length===0){
+    html='<div class="card" style="color:#64748b;font-size:12px">乗車地データ未検出</div>';
+  }else{
+    html='<div class="sec-lbl">月曜 乗車地 TOP'+R.fromTop.length+'（件数順）</div>';
+    R.fromTop.forEach(function(s,i){
+      var pct=s.cnt/maxFCnt*100,top=i<3;
+      var medal=['🥇','🥈','🥉'][i]||(i+1+'. ');
+      html+='<div class="spot-item'+(top?' top3':'')+'"><div class="row"><div style="display:flex;align-items:center;gap:6px;flex:1"><span style="font-size:13px;flex-shrink:0">'+medal+'</span><span class="spot-name" style="color:'+(top?'#facc15':'#e2e8f0')+'">'+esc(s.name)+'</span></div><div><div class="spot-cnt" style="color:'+(top?'#facc15':'#94a3b8')+'">'+s.cnt+'件</div><div class="spot-avg">avg ¥'+s.avg.toLocaleString()+'</div></div></div>';
+      html+='<div class="mini-bar"><div class="mini-bar-inner" style="width:'+pct+'%;height:5px;background:'+(top?'linear-gradient(90deg,#f59e0b,#facc15)':'#1e2d40')+'"></div></div></div>';
+    });
+    html+='<div class="card" style="border-color:#4ade8055;background:#4ade8008;margin-top:4px"><div class="card-title" style="color:#4ade80">📍 月曜エリア戦略</div>';
+    html+='<p style="font-size:12px;color:#cbd5e1;line-height:1.8"><strong style="color:#facc15">TOP3：'+R.fromTop.slice(0,3).map(function(s){return esc(s.name);}).join(' · ')+'</strong><br>を月曜の定点ポジションに設定。意識的に巡回するだけで件数が安定します。</p></div>';
+    if(R.toTop.length){
+      html+='<div class="card"><div class="card-title" style="color:#60a5fa">🏁 降車地 TOP'+R.toTop.length+'</div>';
+      R.toTop.forEach(function(s,i){
+        html+='<div class="to-row"><span style="font-size:11px;color:'+(i<3?'#60a5fa':'#94a3b8')+'">'+(i+1)+'. '+esc(s.name)+'</span><span style="font-size:11px;color:#475569">'+s.cnt+'件　¥'+s.avg.toLocaleString()+'</span></div>';
+      });
+      html+='</div>';
+    }
+  }
+  document.getElementById('p-spots').innerHTML=html;
+
+  // ── 状態別 ──
+  html='';
+  if(R.statusMix.length){
+    var stColors=['#60a5fa','#4ade80','#facc15','#f87171','#a78bfa'];
+    var stIcons={GO:'🟢',スマ配:'📱',流し:'🚕'};
+    html+='<div class="card"><div class="card-title" style="color:#60a5fa">🚦 ステータス別（計'+totSt+'件）</div>';
+    R.statusMix.forEach(function(s,i){
+      var pct=totSt>0?s.cnt/totSt*100:0;
+      var col=stColors[i%stColors.length];
+      var ico=stIcons[s.name]||'❓';
+      html+='<div class="st-row"><div class="top"><span style="font-size:12px;font-weight:600;color:'+col+'">'+ico+' '+esc(s.name)+'</span><span style="font-size:11px;color:#475569">'+s.cnt+'件（'+pct.toFixed(1)+'%）　avg ¥'+s.avg.toLocaleString()+'</span></div>';
+      html+='<div class="bar-wrap"><div class="bar-inner" style="width:'+pct+'%;background:'+col+'99"></div></div></div>';
+    });
+    html+='<p style="font-size:11px;color:#94a3b8;margin-top:8px;line-height:1.7">→ GOアプリ比率が高い月曜こそ通知ONが重要。流し・スマ配のバランスを意識してエリア選定を。</p>';
+    html+='</div>';
+  }
+  if(R.skMix.length){
+    var skColors=['#94a3b8','#a78bfa','#60a5fa','#4ade80'];
+    var skIcons={サンキュー:'🎫',プレタク:'⭐',プレタクP:'🌟',通常:'🚕'};
+    html+='<div class="card"><div class="card-title" style="color:#a78bfa">🎫 サンキュー別（計'+totSk+'件）</div>';
+    R.skMix.forEach(function(s,i){
+      var pct=totSk>0?s.cnt/totSk*100:0;
+      var col=skColors[i%skColors.length];
+      var ico=skIcons[s.name]||'🚕';
+      html+='<div class="st-row"><div class="top"><span style="font-size:12px;font-weight:600;color:'+col+'">'+ico+' '+esc(s.name)+'</span><span style="font-size:11px;color:#475569">'+s.cnt+'件（'+pct.toFixed(1)+'%）</span></div>';
+      html+='<div class="bar-wrap"><div class="bar-inner" style="width:'+pct+'%;background:'+col+'99"></div></div></div>';
+    });
+    html+='<p style="font-size:11px;color:#94a3b8;margin-top:8px;line-height:1.7">→ 土日にサンキューチケットを配布して月曜のリピート利用を増やすことが売上底上げの鍵。</p>';
+    html+='</div>';
+  }
+  document.getElementById('p-status').innerHTML=html||'<div class="card" style="color:#64748b;font-size:12px">データ未検出</div>';
+
+  // ── 戦略 ──
+  var hotPeak=R.hourly.filter(function(h){return h.cnt/maxHCnt>=.55;}).map(function(h){return h.lbl;}).join('・')||'ピーク時間帯を確認';
+  var top3=R.fromTop.slice(0,3).map(function(s){return s.name;}).join('・')||'TOP乗車地を確認';
+  var monthly=Math.round(Math.abs(gap)/3);
+  var strategies=[
+    {no:'01',icon:'🕐',col:'#60a5fa',ttl:'ピーク時間帯に確実に稼働',
+     body:'時間帯タブのHOT時間帯（'+hotPeak+'）に確実に道路上にいる状態を作る。閑散時間帯に休憩を入れ、ピーク30分前には好立地へ移動完了。',
+     act:'閑散時間に食事・休憩 → ピーク30分前にTOP乗車地エリアへ移動'},
+    {no:'02',icon:'📍',col:'#4ade80',ttl:'月曜TOP乗車地を定点巡回',
+     body:top3+'を月曜の定点ポジションに設定。このエリアを軸に流し、待機時間を短縮して実車率UP。',
+     act:'出庫後まずTOP3エリアへ。1時間に1回は通過する巡回ルートを設定'},
+    {no:'03',icon:'📱',col:'#facc15',ttl:'GOアプリ・スマ配をフル活用',
+     body:'月曜の流し需要が少ない時間帯はアプリ配車が有効。状態別タブのGO比率を確認し、月曜はアプリ受注を重点的に狙う。',
+     act:'月曜はGO通知ON・スマ配エリアに積極参入し受注率アップ'},
+    {no:'04',icon:'🎫',col:'#a78bfa',ttl:'土日乗客にサンキューチケット配布',
+     body:'月曜需要の底上げには週末の仕込みが有効。土日の乗客（特にビジネスパーソン・定期利用者）にサンキューチケットを渡し月曜の再利用を促す。',
+     act:'土日の最後10件は必ずサンキューチケット配布 → 月曜朝の再利用促進'},
+    {no:'05',icon:'📊',col:'#fb923c',ttl:'毎週月曜に週次PDCA',
+     body:'「月曜は仕方ない」という諦めが最大の敵。毎週月曜の帰りに日報を確認し、前週比で改善できたかを数字で記録する。',
+     act:'月曜平均を毎月¥'+monthly.toLocaleString()+'ずつ改善 → 3ヶ月で全体平均に追いつく'},
+  ];
+  html='<div class="card" style="border-color:#f8717166;background:#f8717110">';
+  html+='<div class="card-title" style="color:#f87171">🎯 現状と目標</div>';
+  html+='<div id="goal-grid">';
+  [{lbl:'月曜平均',val:'¥'+mon.avg.toLocaleString(),col:'#f87171'},
+   {lbl:'全体平均',val:'¥'+allAvg.toLocaleString(),col:'#facc15'},
+   {lbl:'最高記録',val:'¥'+mon.max.toLocaleString(),col:'#4ade80'},
+  ].forEach(function(x){
+    html+='<div class="goal-cell"><div class="lbl">'+x.lbl+'</div><div class="val" style="color:'+x.col+'">'+x.val+'</div></div>';
+  });
+  html+='</div>';
+  html+='<p style="font-size:12px;color:#cbd5e1;line-height:1.7;margin-top:10px">目標：<strong style="color:#facc15">全体平均¥'+allAvg.toLocaleString()+'</strong>まで引き上げ。差額<strong style="color:#f87171">¥'+Math.abs(gap).toLocaleString()+'</strong>の縮小が優先課題。</p>';
+  html+='</div>';
+  strategies.forEach(function(s){
+    html+='<div class="strategy-item" style="border:1px solid '+s.col+'33">';
+    html+='<div class="strategy-head" style="background:'+s.col+'15">';
+    html+='<span class="strategy-no" style="color:'+s.col+';background:'+s.col+'22">#'+s.no+'</span>';
+    html+='<span style="font-size:18px">'+s.icon+'</span>';
+    html+='<span class="strategy-ttl" style="color:'+s.col+'">'+s.ttl+'</span>';
+    html+='</div>';
+    html+='<div class="strategy-body"><p>'+s.body+'</p>';
+    html+='<div class="strategy-act" style="background:'+s.col+'12;border-left:3px solid '+s.col+';color:'+s.col+'">✅ '+s.act+'</div>';
+    html+='</div></div>';
+  });
+  document.getElementById('p-strategy').innerHTML=html;
+}
+
+function switchTab(id,btn){
+  document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});
+  btn.classList.add('on');
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});
+  document.getElementById('p-'+id).classList.add('on');
+}
+
+// 自動ロード
+loadAll();
+</script>
+</body>
+</html>
