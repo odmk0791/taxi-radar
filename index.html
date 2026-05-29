@@ -1253,6 +1253,9 @@ document.querySelectorAll('.fbtn').forEach(function(btn){
 
 // イベント登録
 document.getElementById('setup-save').addEventListener('click',doSaveSetup);
+
+// 起動
+(function(){
   notifyEnabled=localStorage.getItem('taxiradar_notify')==='1';
   if(notifyEnabled&&typeof Notification!=='undefined'&&Notification.permission==='granted'){startNotifyWatch();}
   else{notifyEnabled=false;}
