@@ -131,6 +131,20 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 .an{font-size:13px;font-weight:700}.ac{font-size:11px;color:var(--mu);margin-left:auto}
 .aps{display:flex;flex-wrap:wrap;gap:4px}
 .pill{font-size:10px;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.05);color:var(--tx);border:1px solid var(--bd)}
+#comp-fab{position:fixed;bottom:24px;right:16px;width:52px;height:52px;border-radius:50%;background:var(--s2);border:1.5px solid var(--bd);font-size:22px;cursor:pointer;z-index:200;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,.4);transition:background .3s}
+#comp-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:300}
+#comp-modal{position:fixed;bottom:0;left:0;right:0;background:var(--s);border-radius:18px 18px 0 0;padding:20px 16px 36px;z-index:400;border-top:1px solid var(--bd)}
+.cl-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.cl-title{font-size:15px;font-weight:700;color:var(--tx)}
+.cl-close{background:none;border:none;color:var(--tx2);font-size:18px;cursor:pointer;padding:4px 8px}
+.cl-meta{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding:8px 12px;background:var(--s2);border-radius:10px}
+.cl-time{font-size:20px;font-weight:800;color:var(--g);font-variant-numeric:tabular-nums}
+.cl-area{font-size:13px;color:var(--tx2)}
+.cl-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.cl-btn{padding:18px 8px;border-radius:12px;border:1.5px solid var(--bd);background:var(--s2);color:var(--tx);font-size:20px;font-weight:800;cursor:pointer;transition:all .1s}
+.cl-btn:active{transform:scale(.96);background:var(--bd)}
+.cl-btn-many{grid-column:1/-1;background:rgba(255,90,0,.1);border-color:rgba(255,90,0,.4);color:#ff7a30}
+.cl-note{font-size:11px;color:var(--tx2);text-align:center}
 </style>
 </head>
 <body>
@@ -1040,6 +1054,47 @@ function toggleFilterBtn(btn){
   renderRadar();
 }
 
+// ===== 競合記録 =====
+var COMP_LOG_KEY='taxiradar_complog';
+
+function openCompLog(){
+  var now=new Date();
+  var h=now.getHours(),m=now.getMinutes();
+  var disp=(h<10?'0':'')+h+':'+(m<10?'0':'')+m;
+  document.getElementById('cl-time').textContent=disp;
+  var areaEl=document.getElementById('locname');
+  var area=areaEl?areaEl.textContent:'不明';
+  document.getElementById('cl-area').textContent=area;
+  document.getElementById('comp-modal').classList.remove('hidden');
+  document.getElementById('comp-overlay').classList.remove('hidden');
+}
+function closeCompLog(){
+  document.getElementById('comp-modal').classList.add('hidden');
+  document.getElementById('comp-overlay').classList.add('hidden');
+}
+function saveComp(val){
+  var now=new Date();
+  var h=now.getHours(),m=now.getMinutes();
+  var area=document.getElementById('cl-area').textContent;
+  var rec={
+    ts:now.toISOString(),
+    disp:(h<10?'0':'')+h+':'+(m<10?'0':'')+m,
+    area:area,
+    lat:uLat||null,lng:uLng||null,
+    count:val,
+    hour:h
+  };
+  var logs=JSON.parse(localStorage.getItem(COMP_LOG_KEY)||'[]');
+  logs.push(rec);
+  if(logs.length>2000)logs=logs.slice(-2000);
+  localStorage.setItem(COMP_LOG_KEY,JSON.stringify(logs));
+  closeCompLog();
+  // 一瞬フラッシュ
+  var btn=document.getElementById('comp-fab');
+  btn.style.background='#39d353';
+  setTimeout(function(){btn.style.background='';},600);
+}
+
 // イベント登録
 document.getElementById('setup-save').addEventListener('click',doSaveSetup);
 document.getElementById('open-setup').addEventListener('click',openSetup);
@@ -1137,5 +1192,32 @@ document.querySelectorAll('.fbtn').forEach(function(btn){
 })();
 
 </script>
+
+<!-- 競合記録フローティングボタン -->
+<button id="comp-fab" onclick="openCompLog()" title="競合台数を記録">👥</button>
+
+<!-- オーバーレイ -->
+<div id="comp-overlay" class="hidden" onclick="closeCompLog()"></div>
+
+<!-- 競合記録モーダル -->
+<div id="comp-modal" class="hidden">
+  <div class="cl-header">
+    <span class="cl-title">競合台数を記録</span>
+    <button class="cl-close" onclick="closeCompLog()">✕</button>
+  </div>
+  <div class="cl-meta">
+    <span id="cl-time" class="cl-time">--:--</span>
+    <span id="cl-area" class="cl-area">エリア取得中...</span>
+  </div>
+  <div class="cl-grid">
+    <button class="cl-btn" onclick="saveComp('0')">0台</button>
+    <button class="cl-btn" onclick="saveComp('1')">1台</button>
+    <button class="cl-btn" onclick="saveComp('2〜3')">2〜3台</button>
+    <button class="cl-btn" onclick="saveComp('4〜5')">4〜5台</button>
+    <button class="cl-btn cl-btn-many" onclick="saveComp('6以上')">6台以上</button>
+  </div>
+  <div class="cl-note">GOアプリで確認した周辺の競合台数を記録します</div>
+</div>
+
 </body>
 </html>
