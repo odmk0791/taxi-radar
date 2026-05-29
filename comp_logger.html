@@ -52,6 +52,22 @@ body{display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:0}
 .h-count{font-weight:700;color:var(--g)}
 .h-count.many{color:#ff7a30}
 
+/* AI解析 */
+.ai-box{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:4px}
+.ai-label{font-size:11px;color:var(--tx2);margin-bottom:10px}
+.ai-upload-btn{display:block;text-align:center;padding:14px;background:var(--s2);border:1.5px dashed var(--bd);border-radius:10px;color:var(--tx);font-size:15px;cursor:pointer}
+.ai-upload-btn:active{background:var(--bd)}
+.ai-result{margin-top:12px;background:var(--s2);border-radius:10px;padding:12px;border:1px solid var(--g)}
+.ai-result-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:0.5px solid var(--bd)}
+.ai-result-row:last-of-type{border-bottom:none}
+.ai-result-label{font-size:12px;color:var(--tx2)}
+.ai-result-val{font-size:14px;font-weight:600;color:var(--tx)}
+.ai-save-btn{width:100%;margin-top:12px;padding:14px;background:var(--g);color:#000;font-size:16px;font-weight:800;border:none;border-radius:10px;cursor:pointer}
+.ai-save-btn:active{opacity:.85}
+.ai-loading{margin-top:10px;text-align:center;font-size:13px;color:var(--tx2)}
+.ai-error{margin-top:10px;font-size:12px;color:var(--rd);text-align:center}
+.hidden{display:none}
+
 /* フラッシュ */
 .flash{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--g);color:#000;font-size:20px;font-weight:800;padding:16px 32px;border-radius:16px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:100}
 .flash.show{opacity:1}
@@ -83,7 +99,25 @@ body{display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:0}
 </div>
 
 <div class="count-section">
-  <div class="count-label">GOアプリで確認した周辺の空車台数</div>
+
+  <!-- AI解析セクション -->
+  <div class="ai-box" id="ai-box">
+    <div class="ai-label">📸 スクリーンショットから自動入力</div>
+    <label class="ai-upload-btn" for="ai-file-input">
+      📂 写真を選択して解析
+      <input id="ai-file-input" type="file" accept="image/*" style="display:none" onchange="analyzeImage(this)">
+    </label>
+    <div id="ai-result" class="ai-result hidden">
+      <div class="ai-result-row"><span class="ai-result-label">🕐 時刻</span><span id="ai-time" class="ai-result-val">--</span></div>
+      <div class="ai-result-row"><span class="ai-result-label">📍 エリア</span><span id="ai-area-val" class="ai-result-val">--</span></div>
+      <div class="ai-result-row"><span class="ai-result-label">🚕 台数</span><span id="ai-count-val" class="ai-result-val">--</span></div>
+      <button class="ai-save-btn" onclick="saveFromAI()">✅ この内容で保存</button>
+    </div>
+    <div id="ai-loading" class="ai-loading hidden">⏳ AI解析中...</div>
+    <div id="ai-error" class="ai-error hidden"></div>
+  </div>
+
+  <div class="count-label" style="margin-top:14px">または手動で入力</div>
   <div class="count-grid">
     <button class="count-btn" onclick="record('0台')">0台</button>
     <button class="count-btn" onclick="record('1台')">1台</button>
@@ -146,6 +180,91 @@ function loadCoords(){
   }).catch(function(){});
 }
 loadCoords();
+
+// AI画像解析
+var _aiData = {};
+
+function analyzeImage(input){
+  if(!input.files||!input.files[0]) return;
+  var file = input.files[0];
+  var reader = new FileReader();
+  reader.onload = function(e){
+    var b64 = e.target.result.split(',')[1];
+    var mediaType = file.type || 'image/jpeg';
+    document.getElementById('ai-loading').classList.remove('hidden');
+    document.getElementById('ai-result').classList.add('hidden');
+    document.getElementById('ai-error').classList.add('hidden');
+
+    fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:200,
+        messages:[{
+          role:'user',
+          content:[
+            {type:'image',source:{type:'base64',media_type:mediaType,data:b64}},
+            {type:'text',text:'このGOタクシーアプリのスクリーンショットを解析してください。必ずJSON形式のみで回答し、他のテキストは一切含めないでください。\n{"time":"ステータスバーの時刻HH:MM","area":"乗車地または現在地のエリア名（港区六本木一丁目など）","count":"地図上の空車タクシーアイコンの台数（0台/1台/2〜3台/4〜5台/6台以上のいずれか）"}'}
+          ]
+        }]
+      })
+    })
+    .then(function(r){return r.json();})
+    .then(function(data){
+      document.getElementById('ai-loading').classList.add('hidden');
+      var text = data.content&&data.content[0]&&data.content[0].text;
+      if(!text) throw new Error('解析失敗');
+      var clean = text.replace(/```json|```/g,'').trim();
+      var result = JSON.parse(clean);
+      _aiData = result;
+      document.getElementById('ai-time').textContent = result.time||'--';
+      document.getElementById('ai-area-val').textContent = result.area||'--';
+      document.getElementById('ai-count-val').textContent = result.count||'--';
+      document.getElementById('ai-result').classList.remove('hidden');
+      // エリアを自動セット
+      if(result.area){
+        currentArea = result.area;
+        document.getElementById('area-name').textContent = result.area;
+      }
+    })
+    .catch(function(err){
+      document.getElementById('ai-loading').classList.add('hidden');
+      document.getElementById('ai-error').textContent = '解析エラー: '+err.message;
+      document.getElementById('ai-error').classList.remove('hidden');
+    });
+  };
+  reader.readAsDataURL(file);
+  input.value='';
+}
+
+function saveFromAI(){
+  if(!_aiData.count) return;
+  var now = new Date();
+  // 時刻はスクリーンショットの時刻を使用
+  var disp = _aiData.time || ((now.getHours()<10?'0':'')+now.getHours()+':'+(now.getMinutes()<10?'0':'')+now.getMinutes());
+  var area = _aiData.area || currentArea || '未設定';
+  var rec = {
+    ts: now.toISOString(),
+    disp: disp,
+    area: area,
+    lat: currentLat, lng: currentLng,
+    count: _aiData.count,
+    hour: parseInt(disp.split(':')[0])||now.getHours(),
+    source: 'ai'
+  };
+  try{
+    var logs = JSON.parse(localStorage.getItem(KEY)||'[]');
+    logs.push(rec);
+    if(logs.length>2000) logs=logs.slice(-2000);
+    localStorage.setItem(KEY, JSON.stringify(logs));
+  }catch(e){}
+  _aiData = {};
+  document.getElementById('ai-result').classList.add('hidden');
+  document.getElementById('ai-file-input').value='';
+  showFlash(_aiData.count||'保存');
+  renderHistory();
+}
 
 // GPS現在地取得
 function getGPS(){
