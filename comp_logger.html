@@ -232,15 +232,7 @@ function doSearch(q){
 
 // 記録
 function record(val){
-  if(!currentArea){
-    document.getElementById('area-name').style.color = 'var(--rd)';
-    document.getElementById('area-name').textContent = '← エリアを選択してください';
-    setTimeout(function(){
-      document.getElementById('area-name').style.color = '';
-      document.getElementById('area-name').textContent = 'エリア未設定';
-    }, 2000);
-    return;
-  }
+  if(!currentArea) currentArea = '未設定';
   var now = new Date();
   var h = now.getHours(), m = now.getMinutes();
   var rec = {
