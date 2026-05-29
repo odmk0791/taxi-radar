@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>スマ配 分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding:0 0 48px}
+#hdr{background:linear-gradient(135deg,#1c0a3a,#0f1e40);border-bottom:1px solid #60a5fa44;padding:18px 16px 14px}
+.sub{font-size:10px;color:#60a5fa;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:18px;font-weight:800}
+#msg{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+#out{padding:0 16px;display:none}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+.big{font-size:22px;font-weight:800}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:4px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.cell{background:#0d1220;border-radius:8px;padding:8px 10px}
+.cell .lbl{font-size:9px;color:#475569;margin-bottom:3px}
+.cell .val{font-size:14px;font-weight:800}
+.bwrap{height:14px;background:#151e30;border-radius:4px;overflow:hidden;margin-top:3px}
+.binner{height:100%;border-radius:4px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid #0d1220;font-size:12px}
+.row:last-child{border:none}
+.tag{font-size:9px;padding:2px 6px;border-radius:6px;font-weight:700}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Status Analysis</div>
+  <h1>📱 スマ配 詳細分析</h1>
+</div>
+<div id="msg"><span class="spin">⏳</span> データ取得中...</div>
+<div id="out"></div>
+<script>
+var URL2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+
+function parseCSV(text){
+  var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
+  function sp(line){var cols=[],cur='',q=false;for(var i=0;i<line.length;i++){var c=line[i];if(c==='"'){q=!q;}else if(c===','&&!q){cols.push(cur.trim());cur='';}else{cur+=c;}}cols.push(cur.trim());return cols;}
+  var h=sp(lines[0]);
+  return lines.slice(1).map(function(l){var v=sp(l),o={};h.forEach(function(k,i){o[k]=v[i]||'';});return o;});
+}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function av(a){return a.length?Math.round(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+async function run(){
+  try{
+    var r=await fetch(URL2);
+    var text=await r.text();
+    var rows=parseCSV(text);
+    var msg=document.getElementById('msg');
+    msg.textContent='集計中... ('+rows.length+'行)';
+
+    // 全ステータス確認
+    var stMap={};
+    rows.forEach(function(r){var s=(r['ステータス']||'').trim();stMap[s]=(stMap[s]||0)+1;});
+
+    // スマ配抽出
+    var sma=rows.filter(function(r){return(r['ステータス']||'').trim()==='スマ配';});
+    var all=rows.filter(function(r){var f=toN(r['料金']);return f>0;});
+
+    var DOW=['月','火','水','木','金','土','日'];
+    var DC={月:'#f87171',火:'#fb923c',水:'#facc15',木:'#4ade80',金:'#60a5fa',土:'#a78bfa',日:'#f472b6'};
+
+    // スマ配の料金
+    var smaFares=sma.map(function(r){return toN(r['料金']);}).filter(function(v){return v>0;});
+    var allFares=all.map(function(r){return toN(r['料金']);});
+    var smaAvg=av(smaFares);
+    var allAvg=av(allFares);
+
+    // 曜日別
+    var byDow={};
+    DOW.forEach(function(d){byDow[d]={sma:[],all:[]};});
+    rows.forEach(function(r){
+      var dow=(r['曜日']||'').trim();
+      var f=toN(r['料金']);
+      if(!dow||!byDow[dow]||f<=0)return;
+      byDow[dow].all.push(f);
+      if((r['ステータス']||'').trim()==='スマ配')byDow[dow].sma.push(f);
+    });
+
+    // 料金帯分布
+    var bands=[
+      {lo:0,hi:1000,lbl:'〜999円'},
+      {lo:1000,hi:2000,lbl:'1,000〜1,999円'},
+      {lo:2000,hi:3000,lbl:'2,000〜2,999円'},
+      {lo:3000,hi:5000,lbl:'3,000〜4,999円'},
+      {lo:5000,hi:10000,lbl:'5,000〜9,999円'},
+      {lo:10000,hi:999999,lbl:'10,000円〜'},
+    ];
+
+    // 乗車地TOP（スマ配）
+    var fMap={};
+    sma.forEach(function(r){
+      var w=(r['乗車地：市区']||'').trim(),nm=(r['乗車地：地名']||'').trim();
+      var full=w&&nm?w+nm:w||nm;
+      var f=toN(r['料金']);if(!full||f<=0)return;
+      if(!fMap[full])fMap[full]={cnt:0,tot:0};
+      fMap[full].cnt++;fMap[full].tot+=f;
+    });
+    var fromTop=Object.entries(fMap).sort(function(a,b){return b[1].cnt-a[1].cnt;}).slice(0,10)
+      .map(function(e){return{name:e[0],cnt:e[1].cnt,avg:Math.round(e[1].tot/e[1].cnt)};});
+    var mxF=fromTop.length?Math.max.apply(null,fromTop.map(function(f){return f.cnt;})):1;
+
+    // 時間帯別（スマ配）
+    var hMap={};
+    sma.forEach(function(r){
+      var ts=(r['乗車時間']||'').trim();var m=ts.match(/^(\d{1,2}):/);if(!m)return;
+      var h=+m[1],f=toN(r['料金']);if(f<=0)return;
+      var lbl=h>=24?'翌'+(h-24)+'時台':h+'時台';
+      if(!hMap[lbl])hMap[lbl]={tot:0,cnt:0,k:h};
+      hMap[lbl].tot+=f;hMap[lbl].cnt++;
+    });
+    var hourly=Object.entries(hMap).sort(function(a,b){return a[1].k-b[1].k;})
+      .map(function(e){return{lbl:e[0],avg:Math.round(e[1].tot/e[1].cnt),cnt:e[1].cnt};});
+    var mxH=hourly.length?Math.max.apply(null,hourly.map(function(h){return h.cnt;})):1;
+
+    // HTML生成
+    var h='';
+
+    // サマリー
+    h+='<div class="card" style="border-color:#60a5fa44">';
+    h+='<div class="card-ttl" style="color:#60a5fa">📱 スマ配 総合サマリー</div>';
+    h+='<div class="grid3" style="margin-bottom:10px">';
+    h+='<div class="cell"><div class="lbl">総件数</div><div class="val" style="color:#60a5fa">'+smaFares.length+'件</div></div>';
+    h+='<div class="cell"><div class="lbl">全体に占める割合</div><div class="val" style="color:#60a5fa">'+(allFares.length>0?(smaFares.length/allFares.length*100).toFixed(1):0)+'%</div></div>';
+    h+='<div class="cell"><div class="lbl">合計売上</div><div class="val" style="color:#60a5fa">¥'+smaFares.reduce(function(a,b){return a+b;},0).toLocaleString()+'</div></div>';
+    h+='</div>';
+    h+='<div class="grid3">';
+    h+='<div class="cell"><div class="lbl">スマ配 平均単価</div><div class="val" style="color:#f87171">¥'+smaAvg.toLocaleString()+'</div></div>';
+    h+='<div class="cell"><div class="lbl">全体 平均単価</div><div class="val" style="color:#94a3b8">¥'+allAvg.toLocaleString()+'</div></div>';
+    h+='<div class="cell"><div class="lbl">単価差</div><div class="val" style="color:'+(smaAvg-allAvg<0?'#f87171':'#4ade80')+'">'+(smaAvg-allAvg>=0?'+':'')+'¥'+(smaAvg-allAvg).toLocaleString()+'</div></div>';
+    h+='</div>';
+    if(smaFares.length>0){
+      h+='<div style="margin-top:10px;padding-top:10px;border-top:1px solid #1e2d40;display:grid;grid-template-columns:1fr 1fr;gap:8px">';
+      h+='<div class="cell"><div class="lbl">最高単価</div><div class="val" style="color:#4ade80">¥'+Math.max.apply(null,smaFares).toLocaleString()+'</div></div>';
+      h+='<div class="cell"><div class="lbl">最低単価</div><div class="val" style="color:#94a3b8">¥'+Math.min.apply(null,smaFares).toLocaleString()+'</div></div>';
+      h+='</div>';
+    }
+    h+='</div>';
+
+    // 料金帯分布
+    h+='<div class="card"><div class="card-ttl" style="color:#facc15">💴 料金帯分布（スマ配）</div>';
+    var mxB=0;
+    bands.forEach(function(b){b.cnt=smaFares.filter(function(f){return f>=b.lo&&f<b.hi;}).length;if(b.cnt>mxB)mxB=b.cnt;});
+    bands.forEach(function(b){
+      var pct=mxB>0?b.cnt/mxB*100:0;
+      var pctAll=smaFares.length>0?b.cnt/smaFares.length*100:0;
+      var col=b.lo>=5000?'#4ade80':b.lo>=3000?'#60a5fa':b.lo>=1000?'#facc15':'#f87171';
+      h+='<div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:11px;color:'+(b.lo>=3000?'#4ade80':'#94a3b8')+'">'+b.lbl+'</span><span style="font-size:11px;color:#475569">'+b.cnt+'件 ('+pctAll.toFixed(1)+'%)</span></div>';
+      h+='<div class="bwrap"><div class="binner" style="width:'+pct+'%;background:'+col+'"></div></div></div>';
+    });
+    // 3000円未満の割合強調
+    var under3k=smaFares.filter(function(f){return f<3000;}).length;
+    var over3k=smaFares.filter(function(f){return f>=3000;}).length;
+    h+='<div style="margin-top:8px;padding:10px;background:#f8717108;border:1px solid #f8717133;border-radius:8px;font-size:11px;color:#cbd5e1;line-height:1.8">';
+    h+='3,000円未満：<strong style="color:#f87171">'+under3k+'件 ('+(smaFares.length>0?(under3k/smaFares.length*100).toFixed(1):0)+'%)</strong>　';
+    h+='3,000円以上：<strong style="color:#4ade80">'+over3k+'件 ('+(smaFares.length>0?(over3k/smaFares.length*100).toFixed(1):0)+'%)</strong>';
+    h+='</div></div>';
+
+    // 曜日別
+    h+='<div class="card"><div class="card-ttl" style="color:#a78bfa">📅 曜日別 スマ配件数・単価</div>';
+    DOW.forEach(function(d){
+      var sd=byDow[d].sma,ad=byDow[d].all;
+      if(!sd.length)return;
+      var sAvg=av(sd),aAvg=av(ad);
+      var pct=sd.length/smaFares.length*100;
+      h+='<div class="row"><div style="display:flex;align-items:center;gap:8px"><span style="width:24px;height:24px;border-radius:5px;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;background:'+DC[d]+'22;border:1px solid '+DC[d]+';color:'+DC[d]+'">'+d+'</span><span style="font-size:12px;color:#94a3b8">'+sd.length+'件</span></div>';
+      h+='<div style="text-align:right"><div style="font-size:12px;font-weight:700;color:'+(sAvg<aAvg?'#f87171':'#4ade80')+'">¥'+sAvg.toLocaleString()+'</div><div style="font-size:9px;color:#475569">全体avg ¥'+aAvg.toLocaleString()+' (差'+(sAvg-aAvg>=0?'+':'')+(sAvg-aAvg).toLocaleString()+')</div></div></div>';
+    });
+    h+='</div>';
+
+    // 時間帯別
+    if(hourly.length){
+      h+='<div class="card"><div class="card-ttl" style="color:#fb923c">🕐 時間帯別（スマ配）</div>';
+      hourly.forEach(function(hh){
+        var pct=hh.cnt/mxH*100;
+        h+='<div style="margin-bottom:7px"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:11px;color:#94a3b8">'+es(hh.lbl)+'</span><span style="font-size:11px;color:#475569">'+hh.cnt+'件 ¥'+hh.avg.toLocaleString()+'</span></div>';
+        h+='<div class="bwrap"><div class="binner" style="width:'+pct+'%;background:#fb923c88"></div></div></div>';
+      });
+      h+='</div>';
+    }
+
+    // 乗車地TOP
+    if(fromTop.length){
+      h+='<div class="card"><div class="card-ttl" style="color:#4ade80">📍 乗車地 TOP'+fromTop.length+'（スマ配）</div>';
+      fromTop.forEach(function(s,i){
+        var pct=s.cnt/mxF*100,top=i<3;
+        h+='<div class="row"><span style="font-size:12px;color:'+(top?'#facc15':'#94a3b8')+'">'+(i+1)+'. '+es(s.name)+'</span><div style="text-align:right"><div style="font-size:12px;font-weight:700;color:'+(top?'#facc15':'#94a3b8')+'">'+s.cnt+'件</div><div style="font-size:9px;color:#475569">avg ¥'+s.avg.toLocaleString()+'</div></div></div>';
+      });
+      h+='</div>';
+    }
+
+    // 全ステータス一覧（参考）
+    h+='<div class="card" style="opacity:.6"><div class="card-ttl" style="color:#475569">全ステータス一覧（参考）</div>';
+    Object.entries(stMap).sort(function(a,b){return b[1]-a[1];}).forEach(function(e){
+      h+='<div class="row"><span style="font-size:11px;color:#64748b">'+es(e[0]||'(空)')+'</span><span style="font-size:11px;color:#475569">'+e[1]+'件</span></div>';
+    });
+    h+='</div>';
+
+    document.getElementById('msg').style.display='none';
+    document.getElementById('out').style.display='';
+    document.getElementById('out').innerHTML=h;
+
+  }catch(e){
+    document.getElementById('msg').innerHTML='⚠️ <span style="color:#f87171">'+String(e)+'</span>';
+  }
+}
+run();
+</script>
+</body>
+</html>
