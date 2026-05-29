@@ -1056,7 +1056,6 @@ function toggleFilterBtn(btn){
 
 // ===== 競合記録 =====
 var COMP_LOG_KEY='taxiradar_complog';
-var _compLat=null,_compLng=null,_compArea='';
 
 function openCompLog(){
   var now=new Date();
@@ -1064,55 +1063,14 @@ function openCompLog(){
   var disp=(h<10?'0':'')+h+':'+(m<10?'0':'')+m;
   document.getElementById('cl-time').textContent=disp;
   var areaEl=document.getElementById('locname');
-  _compArea=areaEl?areaEl.textContent:'未設定';
-  _compLat=uLat||null;_compLng=uLng||null;
-  document.getElementById('cl-area').textContent=_compArea;
-  document.getElementById('cl-search-box').classList.add('hidden');
-  document.getElementById('cl-search-results').innerHTML='';
+  var area=areaEl?areaEl.textContent:'不明';
+  document.getElementById('cl-area').textContent=area;
   document.getElementById('comp-modal').classList.remove('hidden');
   document.getElementById('comp-overlay').classList.remove('hidden');
-  document.body.style.overflow='hidden';
 }
 function closeCompLog(){
   document.getElementById('comp-modal').classList.add('hidden');
   document.getElementById('comp-overlay').classList.add('hidden');
-  document.body.style.overflow='';
-}
-function toggleCompSearch(){
-  var box=document.getElementById('cl-search-box');
-  var isHidden=box.classList.contains('hidden');
-  box.classList.toggle('hidden');
-  if(isHidden){
-    var inp=document.getElementById('cl-search-input');
-    inp.value='';
-    document.getElementById('cl-search-results').innerHTML='';
-    setTimeout(function(){inp.focus();},50);
-  }
-}
-function compAreaSearch(q){
-  var res=document.getElementById('cl-search-results');
-  res.innerHTML='';
-  if(!q||!window.COORDS) return;
-  var keys=Object.keys(window.COORDS);
-  var matches=[];
-  for(var i=0;i<keys.length;i++){
-    if(keys[i].indexOf(q)>=0){matches.push(keys[i]);if(matches.length>=8)break;}
-  }
-  if(!matches.length){res.innerHTML='<div style="font-size:12px;color:var(--tx2);padding:8px">見つかりません</div>';return;}
-  matches.forEach(function(k){
-    var d=document.createElement('div');
-    d.textContent=k;
-    d.style.cssText='padding:10px;font-size:14px;color:var(--tx);cursor:pointer;border-bottom:0.5px solid var(--bd)';
-    d.addEventListener('click',function(e){
-      e.stopPropagation();
-      _compArea=k;
-      if(window.COORDS[k]){_compLat=window.COORDS[k][0];_compLng=window.COORDS[k][1];}
-      document.getElementById('cl-area').textContent=k;
-      document.getElementById('cl-search-box').classList.add('hidden');
-      document.getElementById('cl-search-results').innerHTML='';
-    });
-    res.appendChild(d);
-  });
 }
 function saveComp(val){
   var now=new Date();
@@ -1242,23 +1200,14 @@ document.querySelectorAll('.fbtn').forEach(function(btn){
 <div id="comp-overlay" class="hidden" onclick="closeCompLog()"></div>
 
 <!-- 競合記録モーダル -->
-<div id="comp-modal" class="hidden" onclick="event.stopPropagation()">
+<div id="comp-modal" class="hidden">
   <div class="cl-header">
     <span class="cl-title">競合台数を記録</span>
     <button class="cl-close" onclick="closeCompLog()">✕</button>
   </div>
   <div class="cl-meta">
     <span id="cl-time" class="cl-time">--:--</span>
-    <div style="flex:1;min-width:0">
-      <div id="cl-area" class="cl-area" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">エリア取得中...</div>
-    </div>
-    <button onclick="toggleCompSearch()" style="background:var(--s2);border:1px solid var(--bd);border-radius:8px;color:var(--tx2);font-size:12px;padding:4px 10px;cursor:pointer">変更</button>
-  </div>
-  <div id="cl-search-box" class="hidden" style="margin-bottom:10px">
-    <input id="cl-search-input" type="text" placeholder="区・地名で検索（例：渋谷、六本木）"
-      oninput="compAreaSearch(this.value)"
-      style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:14px">
-    <div id="cl-search-results" style="max-height:150px;overflow-y:auto;margin-top:6px"></div>
+    <span id="cl-area" class="cl-area">エリア取得中...</span>
   </div>
   <div class="cl-grid">
     <button class="cl-btn" onclick="saveComp('0')">0台</button>
