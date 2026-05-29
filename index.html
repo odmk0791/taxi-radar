@@ -288,6 +288,40 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
     <div id="hl"><div class="loading"><span class="spin">⏳</span> 読み込み中...</div></div>
   </div>
 </main>
+<!-- 競合記録フローティングボタン -->
+<button id="comp-fab" title="競合台数を記録">👥</button>
+
+<!-- オーバーレイ -->
+<div id="comp-overlay" class="hidden"></div>
+
+<!-- 競合記録モーダル -->
+<div id="comp-modal" class="hidden">
+  <div class="cl-header">
+    <span class="cl-title">競合台数を記録</span>
+    <button class="cl-close" id="cl-close-btn">✕</button>
+  </div>
+  <div class="cl-meta">
+    <span id="cl-time" class="cl-time">--:--</span>
+    <div style="flex:1;min-width:0">
+      <div id="cl-area" class="cl-area" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">エリア取得中...</div>
+    </div>
+    <button id="cl-change-btn" style="background:var(--s2);border:1px solid var(--bd);border-radius:8px;color:var(--tx2);font-size:12px;padding:4px 10px;cursor:pointer;white-space:nowrap">変更</button>
+  </div>
+  <div id="cl-search-box" class="hidden" style="margin-bottom:10px">
+    <input id="cl-search-input" type="text" placeholder="区・地名で検索（例：渋谷、六本木）"
+      style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:14px">
+    <div id="cl-search-results" style="max-height:150px;overflow-y:scroll;margin-top:6px;-webkit-overflow-scrolling:touch"></div>
+  </div>
+  <div class="cl-grid">
+    <button class="cl-btn" id="cb0">0台</button>
+    <button class="cl-btn" id="cb1">1台</button>
+    <button class="cl-btn" id="cb2">2〜3台</button>
+    <button class="cl-btn" id="cb3">4〜5台</button>
+    <button class="cl-btn cl-btn-many" id="cb4">6台以上</button>
+  </div>
+  <div class="cl-note">GOアプリで確認した周辺の競合台数を記録します</div>
+</div>
+
 <script>
 var COORDS={};
 var WARD={
@@ -1283,39 +1317,6 @@ document.getElementById('setup-save').addEventListener('click',doSaveSetup);
 
 </script>
 
-<!-- 競合記録フローティングボタン -->
-<button id="comp-fab" title="競合台数を記録">👥</button>
-
-<!-- オーバーレイ -->
-<div id="comp-overlay" class="hidden"></div>
-
-<!-- 競合記録モーダル -->
-<div id="comp-modal" class="hidden">
-  <div class="cl-header">
-    <span class="cl-title">競合台数を記録</span>
-    <button class="cl-close" id="cl-close-btn">✕</button>
-  </div>
-  <div class="cl-meta">
-    <span id="cl-time" class="cl-time">--:--</span>
-    <div style="flex:1;min-width:0">
-      <div id="cl-area" class="cl-area" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">エリア取得中...</div>
-    </div>
-    <button id="cl-change-btn" style="background:var(--s2);border:1px solid var(--bd);border-radius:8px;color:var(--tx2);font-size:12px;padding:4px 10px;cursor:pointer;white-space:nowrap">変更</button>
-  </div>
-  <div id="cl-search-box" class="hidden" style="margin-bottom:10px">
-    <input id="cl-search-input" type="text" placeholder="区・地名で検索（例：渋谷、六本木）"
-      style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:14px">
-    <div id="cl-search-results" style="max-height:150px;overflow-y:scroll;margin-top:6px;-webkit-overflow-scrolling:touch"></div>
-  </div>
-  <div class="cl-grid">
-    <button class="cl-btn" id="cb0">0台</button>
-    <button class="cl-btn" id="cb1">1台</button>
-    <button class="cl-btn" id="cb2">2〜3台</button>
-    <button class="cl-btn" id="cb3">4〜5台</button>
-    <button class="cl-btn cl-btn-many" id="cb4">6台以上</button>
-  </div>
-  <div class="cl-note">GOアプリで確認した周辺の競合台数を記録します</div>
-</div>
 
 </body>
 </html>
