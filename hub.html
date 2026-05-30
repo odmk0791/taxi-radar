@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>タクシー営業 分析ハブ</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans','Noto Sans JP',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#1c0a3a,#0f1e40,#0a2050);border-bottom:1px solid #f8717155;padding:24px 18px 20px}
+.sub{font-size:10px;color:#f87171;letter-spacing:3px;text-transform:uppercase;margin-bottom:3px}
+h1{font-size:22px;font-weight:800;line-height:1.2}
+.desc{font-size:12px;color:#94a3b8;margin-top:6px}
+.section{padding:18px 16px 0}
+.sec-ttl{font-size:12px;font-weight:700;color:#64748b;letter-spacing:1px;margin-bottom:12px;text-transform:uppercase}
+.card{display:block;text-decoration:none;background:#161626;border:1px solid #1e2d40;border-radius:14px;padding:16px;margin-bottom:12px;transition:all .15s;border-left:4px solid}
+.card:active{transform:scale(0.98)}
+.card-head{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.card-ico{font-size:24px}
+.card-ttl{font-size:15px;font-weight:800;color:#e2e8f0}
+.card-desc{font-size:12px;color:#94a3b8;line-height:1.7}
+.card-tags{display:flex;gap:5px;margin-top:8px;flex-wrap:wrap}
+.tag{font-size:9px;padding:2px 8px;border-radius:10px;font-weight:600}
+.arrow{margin-left:auto;color:#475569;font-size:18px}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Taxi Operation Analytics</div>
+  <h1>🚕 タクシー営業 分析ハブ</h1>
+  <div class="desc">月曜売上向上プロジェクト ／ JPN TAXI</div>
+</div>
+
+<div class="section">
+  <div class="sec-ttl">🎯 月曜戦略レポート</div>
+
+  <a class="card" href="monday_strategy.html" style="border-left-color:#f87171">
+    <div class="card-head"><span class="card-ico">🔴</span><span class="card-ttl">月曜ダッシュボード</span><span class="arrow">›</span></div>
+    <div class="card-desc">曜日比較・時間帯・乗車地・状態別・10万超え・戦略タイムラインの総合ダッシュボード</div>
+    <div class="card-tags"><span class="tag" style="background:#f8717122;color:#f87171">メイン</span><span class="tag" style="background:#60a5fa22;color:#60a5fa">6タブ</span></div>
+  </a>
+
+  <a class="card" href="monday_best.html" style="border-left-color:#f59e0b">
+    <div class="card-head"><span class="card-ico">🏆</span><span class="card-ttl">月曜 10万超え分析</span><span class="arrow">›</span></div>
+    <div class="card-desc">プレタク除外したJPN TAXIだけの10万超え日。10万超え日と通常日の違いを要因分析</div>
+    <div class="card-tags"><span class="tag" style="background:#f59e0b22;color:#f59e0b">プレタク除外</span><span class="tag" style="background:#4ade8022;color:#4ade80">要因分析</span></div>
+  </a>
+
+  <a class="card" href="ideal_days.html" style="border-left-color:#4ade80">
+    <div class="card-head"><span class="card-ico">🎯</span><span class="card-ttl">理想的な営業日</span><span class="arrow">›</span></div>
+    <div class="card-desc">ロングに頼らず回数で安定高営収を出した日（低ばらつき）。No.1日を時間帯・エリア別に完全分解</div>
+    <div class="card-tags"><span class="tag" style="background:#4ade8022;color:#4ade80">低ばらつき</span><span class="tag" style="background:#facc1522;color:#facc15">再現性</span></div>
+  </a>
+</div>
+
+<div class="section">
+  <div class="sec-ttl">📊 ステータス分析レポート</div>
+
+  <a class="card" href="status_stats.html" style="border-left-color:#a78bfa">
+    <div class="card-head"><span class="card-ico">📊</span><span class="card-ttl">ステータス統計分析</span><span class="arrow">›</span></div>
+    <div class="card-desc">GO・スマ配・流し・プレタク・プレタクPの標準偏差・外れ値・実態平均を7タブで比較</div>
+    <div class="card-tags"><span class="tag" style="background:#a78bfa22;color:#a78bfa">7タブ</span><span class="tag" style="background:#4ade8022;color:#4ade80">標準偏差</span></div>
+  </a>
+
+  <a class="card" href="smahai_stats.html" style="border-left-color:#60a5fa">
+    <div class="card-head"><span class="card-ico">📱</span><span class="card-ttl">スマ配 標準偏差分析</span><span class="arrow">›</span></div>
+    <div class="card-desc">スマ配単体の標準偏差・σ区間・おばけ案件・外れ値除外後の実態平均</div>
+    <div class="card-tags"><span class="tag" style="background:#60a5fa22;color:#60a5fa">スマ配専用</span></div>
+  </a>
+</div>
+
+<div class="section">
+  <div class="sec-ttl">🗺️ 現場ツール（既存）</div>
+
+  <a class="card" href="index.html" style="border-left-color:#4ade80">
+    <div class="card-head"><span class="card-ico">🧭</span><span class="card-ttl">探索ナビ</span><span class="arrow">›</span></div>
+    <div class="card-desc">現在地から過去データを基にGOが鳴るエリアをナビゲーション</div>
+    <div class="card-tags"><span class="tag" style="background:#4ade8022;color:#4ade80">リアルタイム</span></div>
+  </a>
+
+  <a class="card" href="taxi_heatmap.html" style="border-left-color:#f59e0b">
+    <div class="card-head"><span class="card-ico">🔥</span><span class="card-ttl">ヒートマップ</span><span class="arrow">›</span></div>
+    <div class="card-desc">乗車地の密度をヒートマップで可視化</div>
+    <div class="card-tags"><span class="tag" style="background:#f59e0b22;color:#f59e0b">地図</span></div>
+  </a>
+
+  <a class="card" href="taxi_route_trace.html" style="border-left-color:#60a5fa">
+    <div class="card-head"><span class="card-ico">📍</span><span class="card-ttl">ルートトレース</span><span class="arrow">›</span></div>
+    <div class="card-desc">乗車から降車までの経路をトレース表示</div>
+    <div class="card-tags"><span class="tag" style="background:#60a5fa22;color:#60a5fa">経路</span></div>
+  </a>
+</div>
+
+<div style="padding:24px 16px 0;text-align:center">
+  <p style="font-size:10px;color:#475569;line-height:1.8">JPN TAXI 月曜売上向上プロジェクト<br>データは日報スプレッドシートから自動取得</p>
+</div>
+</body>
+</html>
