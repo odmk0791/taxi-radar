@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中心 vs 周辺 エリア戦略分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#0a2e3a,#0f2040);border-bottom:1px solid #60a5fa55;padding:18px 16px 14px}
+.sub{font-size:10px;color:#60a5fa;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:18px;font-weight:800}
+.dscr{font-size:11px;color:#475569;margin-top:3px}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;margin-top:14px}
+.tab{padding:8px 14px;border-radius:20px;border:none;background:#151e30;color:#fff;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0;opacity:.6}
+.tab.on{opacity:1}
+.panel{padding:0 14px;display:none}
+.panel.on{display:block}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+.kg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.kg3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px}
+.kc{background:#0d1220;border-radius:8px;padding:10px;text-align:center}
+.kc .l{font-size:9px;color:#475569;margin-bottom:3px}
+.kc .v{font-size:16px;font-weight:800}
+.kc .s{font-size:9px;color:#64748b;margin-top:2px}
+.bwrap{height:16px;background:#151e30;border-radius:4px;overflow:hidden;position:relative;margin-top:4px}
+.binner{height:100%;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;font-size:9px;font-weight:700;color:#fff}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:#475569;padding:5px 5px;border-bottom:1px solid #1e2d40;font-weight:600}
+td{padding:6px 5px;border-bottom:1px solid #0d1220}
+.legend{display:flex;gap:14px;font-size:10px;color:#64748b;margin-bottom:10px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:4px}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Central vs Peripheral</div>
+  <h1>🗺️ 中心 vs 周辺 エリア戦略</h1>
+  <div class="dscr">浅い時間(16-19時)にどこにいたかで最終着地を比較</div>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="dashboard" style="display:none">
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+</div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+
+/* 中心3区 */
+var CENTRAL=['港区','中央区','千代田区'];
+/* 準中心（繁華中心部） */
+var SUBCENTER=['新宿区','渋谷区','目黒区','品川区'];
+/* 周辺区（それ以外の主要） */
+var PERIPHERAL=['練馬区','中野区','豊島区','板橋区','杉並区','世田谷区','大田区','北区','文京区','台東区','墨田区','江東区','荒川区','足立区','葛飾区','江戸川区','三鷹市','武蔵野市','調布市','狛江市'];
+
+function classifyWard(ward){
+  ward=String(ward||'').trim();
+  for(var i=0;i<CENTRAL.length;i++)if(ward.indexOf(CENTRAL[i])>=0)return 'central';
+  for(var i=0;i<SUBCENTER.length;i++)if(ward.indexOf(SUBCENTER[i])>=0)return 'subcenter';
+  for(var i=0;i<PERIPHERAL.length;i++)if(ward.indexOf(PERIPHERAL[i])>=0)return 'peripheral';
+  return 'other';
+}
+
+function csvArr(text){
+  var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
+  function sp(line){var c=[],cur='',q=false;for(var i=0;i<line.length;i++){var ch=line[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else{cur+=ch;}}c.push(cur.trim());return c;}
+  return lines.map(sp);
+}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function av(a){return a.length?Math.round(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
+function avf(a){return a.length?(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+
+var G={};
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 取得中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  document.getElementById('dashboard').style.display='none';
+  try{
+    var t1=await (await fetch(U1)).text();
+    var t2=await (await fetch(U2)).text();
+    document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 集計中...';
+    var a1=csvArr(t1),a2=csvArr(t2),h1=a1[0],h2=a2[0];
+    function idx(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+    var i1d=idx(h1,'日付'),i1t=idx(h1,'TAXI'),i1e=idx(h1,'営収'),i1tr=idx(h1,'回数'),i1r=idx(h1,'実車率'),i1w=idx(h1,'曜');
+    var i2t=idx(h2,'乗車時間'),i2wd=idx(h2,'乗車地:市区'),i2f=idx(h2,'料金');
+
+    /* メタ（プレタク除外） */
+    var meta={};
+    a1.slice(1).forEach(function(r){
+      if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
+      var d=normDate(r[i1d]);if(!d)return;
+      meta[d]={eikyu:toN(r[i1e]),trips:toN(r[i1tr]),real:parseFloat(r[i1r])||0,dow:String(r[i1w]||'').trim()};
+    });
+
+    /* 日報②を日付ごとに、浅い時間(16-19時)の乗車地分類 */
+    var byDate={};
+    a2.slice(1).forEach(function(r){
+      var d=normDate(r[0]);var f=toN(r[i2f]);if(!d||f<=0)return;
+      var mt=String(r[i2t]||'').match(/^(\d{1,2}):/);if(!mt)return;
+      var hh=+mt[1];
+      if(!byDate[d])byDate[d]={early:{central:0,subcenter:0,peripheral:0,other:0,total:0}};
+      // 浅い時間 16,17,18,19時のみカウント
+      if(hh>=16&&hh<=19){
+        var cls=classifyWard(r[i2wd]);
+        byDate[d].early[cls]++;
+        byDate[d].early.total++;
+      }
+    });
+
+    /* 各日を「浅い時間の主戦場」で分類 */
+    var days=[];
+    Object.keys(byDate).forEach(function(d){
+      var m=meta[d];if(!m||m.eikyu<=0)return;
+      var e=byDate[d].early;
+      if(e.total<3)return; // 浅い時間に3件未満は判定不能
+      // 中心率・周辺率
+      var centralRate=e.central/e.total;
+      var periRate=e.peripheral/e.total;
+      var subRate=e.subcenter/e.total;
+      // 主戦場判定：最も多いカテゴリ
+      var maxCat='other',maxVal=e.other;
+      ['central','subcenter','peripheral'].forEach(function(c){if(e[c]>maxVal){maxVal=e[c];maxCat=c;}});
+      days.push({
+        date:d,dow:m.dow,eikyu:m.eikyu,trips:m.trips,real:m.real,
+        early:e,centralRate:centralRate,periRate:periRate,subRate:subRate,
+        mainField:maxCat
+      });
+    });
+
+    G.days=days;
+    G.meta=meta;
+
+    if(days.length===0){
+      document.getElementById('msgbox').innerHTML='⚠️ 対象0日（浅い時間データ不足）';
+      document.getElementById('msgbox').style.borderColor='#f87171';
+      document.getElementById('rbtn').style.display='';
+      return;
+    }
+
+    document.getElementById('tabs').innerHTML=
+      '<button class="tab on" style="background:#60a5fa" onclick="sw(\'overall\',this)">📊 全体比較</button>'+
+      '<button class="tab" style="background:#4ade80" onclick="sw(\'bydow\',this)">📅 曜日別</button>'+
+      '<button class="tab" style="background:#f59e0b" onclick="sw(\'days\',this)">📋 日別一覧</button>';
+    document.getElementById('panels').innerHTML=
+      '<div class="panel on" id="p-overall"></div><div class="panel" id="p-bydow"></div><div class="panel" id="p-days"></div>';
+
+    renderOverall();renderByDow();renderDays();
+
+    document.getElementById('msgbox').style.display='none';
+    document.getElementById('dashboard').style.display='';
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e&&e.stack||e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+
+var FIELD={central:{n:'中心3区',c:'#f87171',d:'港・中央・千代田'},subcenter:{n:'準中心',c:'#fb923c',d:'新宿・渋谷・目黒・品川'},peripheral:{n:'周辺区',c:'#4ade80',d:'練馬・中野・豊島・板橋など'},other:{n:'その他',c:'#64748b',d:''}};
+
+function statsOf(days){
+  return {
+    n:days.length,
+    eikyu:av(days.map(function(d){return d.eikyu;})),
+    trips:av(days.map(function(d){return d.trips;}).filter(function(v){return v>0;})),
+    real:Math.round(avf(days.map(function(d){return d.real;}).filter(function(v){return v>0;}))*10)/10,
+    eikyuMed:(function(){var s=days.map(function(d){return d.eikyu;}).sort(function(a,b){return a-b;});return s.length?s[Math.floor(s.length/2)]:0;})()
+  };
+}
+
+function renderOverall(){
+  var groups={central:[],subcenter:[],peripheral:[]};
+  G.days.forEach(function(d){if(groups[d.mainField])groups[d.mainField].push(d);});
+
+  var h='<div class="card" style="border-color:#60a5fa44;background:#60a5fa08">';
+  h+='<div class="card-ttl" style="color:#60a5fa">📊 浅い時間(16-19時)の主戦場で分類</div>';
+  h+='<p style="font-size:11px;color:#94a3b8;line-height:1.7">16〜19時に最も多く乗車した区分でその日を分類し、<strong style="color:#60a5fa">最終的な営収・件数・実車率</strong>を比較。仮説「周辺で稼いだ方が着地がいい」の検証。</p></div>';
+
+  /* 営収比較 */
+  var maxE=0;
+  ['central','subcenter','peripheral'].forEach(function(k){var s=statsOf(groups[k]);if(s.eikyu>maxE)maxE=s.eikyu;});
+
+  h+='<div class="card"><div class="card-ttl">💰 主戦場別 最終営収（平均）</div>';
+  ['central','subcenter','peripheral'].forEach(function(k){
+    var s=statsOf(groups[k]),f=FIELD[k];
+    if(s.n===0)return;
+    var pct=maxE>0?s.eikyu/maxE*100:0;
+    h+='<div style="margin-bottom:12px">';
+    h+='<div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:12px;font-weight:700;color:'+f.c+'">'+f.n+'<span style="font-size:9px;color:#475569;font-weight:400"> '+f.d+'</span></span><span style="font-size:13px;font-weight:800;color:'+f.c+'">¥'+s.eikyu.toLocaleString()+'</span></div>';
+    h+='<div class="bwrap"><div class="binner" style="width:'+pct+'%;background:'+f.c+'">'+s.n+'日</div></div>';
+    h+='<div style="display:flex;gap:10px;margin-top:3px;font-size:10px;color:#64748b"><span>中央値¥'+s.eikyuMed.toLocaleString()+'</span><span>件数'+s.trips+'</span><span>実車率'+s.real+'%</span></div>';
+    h+='</div>';
+  });
+  h+='</div>';
+
+  /* 詳細テーブル */
+  h+='<div class="card"><div class="card-ttl">📋 詳細比較</div>';
+  h+='<table><thead><tr><th>主戦場</th><th style="text-align:right">日数</th><th style="text-align:right">営収</th><th style="text-align:right">件数</th><th style="text-align:right">実車率</th></tr></thead><tbody>';
+  ['central','subcenter','peripheral'].forEach(function(k){
+    var s=statsOf(groups[k]),f=FIELD[k];
+    if(s.n===0)return;
+    h+='<tr><td style="color:'+f.c+';font-weight:700">'+f.n+'</td><td style="text-align:right;color:#94a3b8">'+s.n+'日</td><td style="text-align:right;color:'+f.c+';font-weight:700">¥'+s.eikyu.toLocaleString()+'</td><td style="text-align:right;color:#94a3b8">'+s.trips+'</td><td style="text-align:right;color:#94a3b8">'+s.real+'%</td></tr>';
+  });
+  h+='</tbody></table></div>';
+
+  /* 結論 */
+  var ranked=['central','subcenter','peripheral'].map(function(k){return {k:k,s:statsOf(groups[k])};}).filter(function(x){return x.s.n>=3;}).sort(function(a,b){return b.s.eikyu-a.s.eikyu;});
+  if(ranked.length){
+    h+='<div class="card" style="border-color:#facc1555;background:#facc1508">';
+    h+='<div class="card-ttl" style="color:#facc15">💡 検証結果</div>';
+    h+='<div style="font-size:12px;color:#cbd5e1;line-height:1.9">';
+    h+='浅い時間の主戦場別 最終営収ランク：<br>';
+    ranked.forEach(function(x,i){h+='<strong style="color:'+FIELD[x.k].c+'">'+(i+1)+'位 '+FIELD[x.k].n+' ¥'+x.s.eikyu.toLocaleString()+'</strong>（'+x.s.n+'日）<br>';});
+    var top=ranked[0];
+    h+='<br>';
+    if(top.k==='peripheral'){
+      h+='→ <strong style="color:#4ade80">仮説的中。周辺区で浅い時間を動いた日が最も着地が良い。</strong>';
+    }else if(top.k==='central'){
+      h+='→ 中心3区主戦場の日が最も高い。ただし周辺区の日数・実車率も確認を。';
+    }else{
+      h+='→ 準中心主戦場が最高。中心と周辺の中間が良いバランスかも。';
+    }
+    h+='</div></div>';
+  }
+
+  document.getElementById('p-overall').innerHTML=h;
+}
+
+function renderByDow(){
+  var DOW=['月','火','水','木','金','土','日'];
+  var h='<div class="card" style="border-color:#4ade8044;background:#4ade8008"><div class="card-ttl" style="color:#4ade80">📅 曜日別 × 主戦場</div><p style="font-size:11px;color:#94a3b8;line-height:1.7">曜日ごとに、浅い時間の主戦場別の最終営収を比較。曜日によって最適な主戦場が違うかもしれない。</p></div>';
+
+  DOW.forEach(function(dow){
+    var dd=G.days.filter(function(d){return d.dow===dow;});
+    if(dd.length<2)return;
+    var groups={central:[],subcenter:[],peripheral:[]};
+    dd.forEach(function(d){if(groups[d.mainField])groups[d.mainField].push(d);});
+    var dc={月:'#f87171',火:'#fb923c',水:'#facc15',木:'#4ade80',金:'#60a5fa',土:'#a78bfa',日:'#f472b6'}[dow];
+    h+='<div class="card"><div style="display:flex;align-items:center;gap:8px;margin-bottom:10px"><span style="width:26px;height:26px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;background:'+dc+'22;border:1.5px solid '+dc+';color:'+dc+'">'+dow+'</span><span style="font-size:12px;color:#94a3b8">'+dd.length+'日</span></div>';
+    var maxE=0;['central','subcenter','peripheral'].forEach(function(k){var s=statsOf(groups[k]);if(s.eikyu>maxE)maxE=s.eikyu;});
+    ['central','subcenter','peripheral'].forEach(function(k){
+      var s=statsOf(groups[k]),f=FIELD[k];
+      if(s.n===0)return;
+      var pct=maxE>0?s.eikyu/maxE*100:0;
+      h+='<div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:11px;color:'+f.c+'">'+f.n+'('+s.n+'日)</span><span style="font-size:12px;font-weight:700;color:'+f.c+'">¥'+s.eikyu.toLocaleString()+'</span></div><div class="bwrap" style="height:12px"><div class="binner" style="width:'+pct+'%;background:'+f.c+'"></div></div></div>';
+    });
+    h+='</div>';
+  });
+  document.getElementById('p-bydow').innerHTML=h;
+}
+
+function renderDays(){
+  var h='<div class="card"><div class="card-ttl" style="color:#f59e0b">📋 日別一覧（営収順）</div>';
+  h+='<div class="legend"><span><span class="dot" style="background:#f87171"></span>中心</span><span><span class="dot" style="background:#fb923c"></span>準中心</span><span><span class="dot" style="background:#4ade80"></span>周辺</span></div>';
+  h+='<table><thead><tr><th>日付</th><th>曜</th><th>主戦場</th><th style="text-align:right">営収</th><th style="text-align:right">件数</th></tr></thead><tbody>';
+  [].concat(G.days).sort(function(a,b){return b.eikyu-a.eikyu;}).slice(0,40).forEach(function(d){
+    var f=FIELD[d.mainField];
+    var m=String(d.date).match(/(\d{4})-(\d{2})-(\d{2})/);
+    var disp=m?(+m[2])+'/'+(+m[3]):d.date;
+    h+='<tr><td style="color:#94a3b8">'+disp+'</td><td style="color:#64748b">'+d.dow+'</td><td><span style="color:'+f.c+';font-weight:700">'+f.n+'</span> <span style="font-size:9px;color:#475569">'+d.early[d.mainField]+'/'+d.early.total+'件</span></td><td style="text-align:right;font-weight:700;color:#e2e8f0">¥'+d.eikyu.toLocaleString()+'</td><td style="text-align:right;color:#64748b">'+d.trips+'</td></tr>';
+  });
+  h+='</tbody></table></div>';
+  document.getElementById('p-days').innerHTML=h;
+}
+
+function sw(id,btn){document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});document.getElementById('p-'+id).classList.add('on');}
+run();
+</script>
+</body></html>
