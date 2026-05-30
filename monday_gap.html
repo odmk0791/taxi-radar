@@ -147,6 +147,28 @@ async function run(){
     G.monDays=monDays;G.hiDays=hiDays;G.loDays=loDays;
     G.specialMon=specialMon;G.meta=meta;
 
+    /* デバッグ：0日なら原因を表示 */
+    if(monDays.length===0){
+      var sample1=normDate(a1[1]?a1[1][i1d]:'');
+      var sample2=normDate(a2[1]?a2[1][0]:'');
+      var monMetaCnt=Object.keys(meta).filter(function(d){return meta[d].dow==='月';}).length;
+      var rbdKeys=Object.keys(rowsByDate).length;
+      var dbg='平日月曜0日。\n';
+      dbg+='日報①日付例='+sample1+' (i1d='+i1d+')\n';
+      dbg+='日報②日付例='+sample2+' (A列)\n';
+      dbg+='メタ全体='+Object.keys(meta).length+'件\n';
+      dbg+='メタ月曜='+monMetaCnt+'件\n';
+      dbg+='特殊月曜除外後='+monDates.length+'件\n';
+      dbg+='日報②日付グループ='+rbdKeys+'件\n';
+      dbg+='日報②キー例='+Object.keys(rowsByDate).slice(0,3).join(', ');
+      document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">'+dbg.replace(/\n/g,'<br>')+'</strong>';
+      document.getElementById('msgbox').style.borderColor='#f87171';
+      document.getElementById('msgbox').style.display='';
+      document.getElementById('rbtn').style.display='';
+      document.getElementById('dashboard').style.display='none';
+      return;
+    }
+
     /* 時間帯別：高営収日 vs 平均日（1日あたり平均件数で比較） */
     function hourPerDay(days){
       var m={};
