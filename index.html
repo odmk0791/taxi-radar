@@ -119,6 +119,13 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 .bar{height:3px;background:var(--bd);border-radius:2px;margin-top:5px}
 .barf{height:3px;border-radius:2px;background:linear-gradient(to right,var(--g),var(--am))}
 .carr{font-size:18px;color:var(--mu);flex-shrink:0}
+.fb-row{display:flex;align-items:center;gap:6px;margin-top:7px;padding-top:6px;border-top:0.5px solid var(--bd)}
+.fb-btn{padding:5px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s2);color:var(--tx2);font-size:12px;cursor:pointer}
+.fb-hit:active{background:rgba(57,211,83,.2);border-color:var(--g);color:var(--g)}
+.fb-miss:active{background:rgba(248,81,73,.15);border-color:var(--rd);color:var(--rd)}
+.fb-btn.done-hit{background:rgba(57,211,83,.15);border-color:var(--g);color:var(--g)}
+.fb-btn.done-miss{background:rgba(248,81,73,.1);border-color:var(--rd);color:var(--rd)}
+.fb-stats{font-size:11px;color:var(--tx2);margin-left:auto}
 .empty{padding:28px 0;text-align:center;color:var(--mu)}
 .empty span{font-size:36px;display:block;margin-bottom:8px}
 .empty p{font-size:13px;line-height:1.7}
@@ -704,6 +711,11 @@ function renderRadar(){
     if(sc>0)badges+='<span class="badge bs">📱 スマ配 '+sc+'</span>';
     if(nc>0)badges+='<span class="badge bn">🚕 流し '+nc+'</span>';
     var hotBadge=s.hotTime?'<span class="badge-hot">⚡ '+s.hotTime+'の実績</span>':'';
+    var fbStats=getFbStats(s.w+s.n,tgt);
+    var fbHtml='<div class="fb-row">'+
+      '<button class="fb-btn fb-hit" onclick="event.stopPropagation();recordFb(\''+s.w+'\',\''+s.n+'\','+tgt+',1)">✅ 乗せた</button>'+
+      '<button class="fb-btn fb-miss" onclick="event.stopPropagation();recordFb(\''+s.w+'\',\''+s.n+'\','+tgt+',0)">❌ 空振り</button>'+
+      (fbStats?'<span class="fb-stats">'+fbStats+'</span>':'')+'</div>';
     html+='<div class="card" data-idx="'+j+'">'+
       '<div class="rank '+(j<3?rc[j]:'rn')+'">'+(j+1)+'</div>'+
       (function(){var _sp=SPECIAL[s.w+s.n];return '<div class="cb"><div class="cn">'+s.w+' '+(_sp?_sp.label:s.n)+'</div>';})()+
@@ -711,6 +723,7 @@ function renderRadar(){
       (hotBadge?'<div class="hot-row">'+hotBadge+'</div>':'')+
       '<div class="tags"><span class="tag td">📍 '+d.toFixed(1)+'km</span><span class="tag tc">🏆 '+score+'件'+rl+'</span></div>'+
       '<div class="bar"><div class="barf" style="width:'+Math.round(s.c*rainBoost/mx*100)+'%"></div></div>'+
+      fbHtml+
       '</div><div class="carr">›</div></div>';
   }
   list.innerHTML=html;
@@ -1040,8 +1053,44 @@ function toggleFilterBtn(btn){
   renderRadar();
 }
 
-// イベント登録
-document.getElementById('setup-save').addEventListener('click',doSaveSetup);
+// ===== フィードバック =====
+var FB_KEY='taxiradar_feedback';
+function recordFb(ward,name,hour,hit){
+  var key=ward+'|'+name+'|'+Math.round(hour);
+  var store=JSON.parse(localStorage.getItem(FB_KEY)||'{}');
+  if(!store[key]) store[key]={h:0,m:0};
+  if(hit) store[key].h++; else store[key].m++;
+  localStorage.setItem(FB_KEY,JSON.stringify(store));
+  // ボタンの見た目を更新
+  var btns=document.querySelectorAll('.fb-btn[onclick*="\''+ward+'\',\''+name+'\'"]');
+  btns.forEach(function(b){
+    b.classList.remove('done-hit','done-miss');
+    if(hit) b.classList.add('done-hit'); else b.classList.add('done-miss');
+  });
+  // stats更新
+  var st=document.querySelectorAll('.fb-stats');
+  st.forEach(function(el){
+    var row=el.closest('.card');
+    if(!row) return;
+    var hb=row.querySelector('.fb-hit');
+    if(hb&&hb.getAttribute('onclick')&&hb.getAttribute('onclick').indexOf("'"+ward+"','"+name+"'")>=0){
+      el.textContent=getFbStats(ward+name,hour)||'';
+    }
+  });
+}
+function getFbStats(wardName,hour){
+  var store=JSON.parse(localStorage.getItem(FB_KEY)||'{}');
+  // ±2時間の記録を集計
+  var h=0,m=0;
+  for(var dh=-2;dh<=2;dh++){
+    var parts=wardName.match(/^(.+区|.+市)(.+)$/)||[];
+    var ward=parts[1]||'',name=parts[2]||wardName;
+    var key=ward+'|'+name+'|'+(Math.round(hour)+dh);
+    if(store[key]){h+=store[key].h;m+=store[key].m;}
+  }
+  if(h+m===0) return '';
+  return '✅'+h+' ❌'+m;
+}
 document.getElementById('open-setup').addEventListener('click',openSetup);
 document.getElementById('notify-btn').addEventListener('click',toggleNotify);
 document.getElementById('tab-r').addEventListener('click',function(){swTab('r');});
@@ -1108,6 +1157,9 @@ document.querySelectorAll('#dc .chip').forEach(function(c){
 document.querySelectorAll('.fbtn').forEach(function(btn){
   btn.addEventListener('click',function(){toggleFilterBtn(this);});
 });
+
+// イベント登録
+document.getElementById('setup-save').addEventListener('click',doSaveSetup);
 
 // 起動
 (function(){
