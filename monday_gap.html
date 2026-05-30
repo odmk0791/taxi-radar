@@ -86,7 +86,19 @@ function csvArr(text){
 function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
 function av(a){return a.length?Math.round(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
 function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function normDate(s){
+  s=String(s||'').trim();
+  // 24年2月19日 形式
+  var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);
+  if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);
+  // 2024/01/16 や 2024-1-16 形式（年4桁）
+  m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);
+  if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);
+  // 24/01/16 形式（年2桁）
+  m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);
+  if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);
+  return s;
+}
 function dispDate(iso){var m=String(iso).match(/(\d{4})-(\d{2})-(\d{2})/);return m?(+m[2])+'/'+(+m[3])+'/'+m[1].slice(2):iso;}
 
 var G={};
