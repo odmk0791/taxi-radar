@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>月曜 JPN 10万超え分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#1c0a3a,#0f1e40);border-bottom:1px solid #f59e0b44;padding:18px 16px 14px}
+.sub{font-size:10px;color:#f59e0b;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:18px;font-weight:800}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+#out{padding:0 16px}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.cell{background:#0d1220;border-radius:8px;padding:8px 10px;text-align:center}
+.cell .lbl{font-size:9px;color:#475569;margin-bottom:3px}
+.cell .val{font-size:15px;font-weight:800}
+.cell .sub{font-size:9px;color:#64748b;margin-top:2px}
+.day{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-radius:8px;margin-bottom:6px}
+.bwrap{height:14px;background:#151e30;border-radius:4px;overflow:hidden;margin-top:3px}
+.binner{height:100%;border-radius:4px}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:#475569;padding:5px 6px;border-bottom:1px solid #1e2d40}
+td{padding:6px 6px;border-bottom:1px solid #0d1220}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Monday JPN Analysis</div>
+  <h1>🏆 月曜 JPN 10万超え分析（プレタク除外）</h1>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="out"></div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+
+function csv(text){
+  var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
+  function sp(line){var cols=[],cur='',q=false;for(var i=0;i<line.length;i++){var c=line[i];if(c==='"'){q=!q;}else if(c===','&&!q){cols.push(cur.trim());cur='';}else{cur+=c;}}cols.push(cur.trim());return cols;}
+  var h=sp(lines[0]);
+  return lines.slice(1).map(function(l){var v=sp(l),o={};h.forEach(function(k,i){o[k]=v[i]||'';});return o;});
+}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function av(a){return a.length?Math.round(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 日報CSV取得中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  try{
+    var r=await fetch(U1);
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    var text=await r.text();
+    var rows=csv(text);
+
+    /* 月曜のみ */
+    var mon=rows.filter(function(r){return(r['曜']||'').trim()==='月';});
+
+    /* TAXI列でPRE/JPN判定 */
+    function isPRE(r){
+      var t=String(r['TAXI']||'').trim().toUpperCase();
+      return t.indexOf('PRE')>=0;
+    }
+
+    var monJPN=mon.filter(function(r){return!isPRE(r)&&toN(r['営収'])>0;});
+    var monPRE=mon.filter(function(r){return isPRE(r)&&toN(r['営収'])>0;});
+
+    /* JPN 10万超え */
+    var jpnOver=monJPN.filter(function(r){return toN(r['営収'])>=100000;})
+      .map(function(r){return{date:r['日付']||'',fare:toN(r['営収']),trips:toN(r['回数']),avg:toN(r['単価']),real:parseFloat(r['実車率'])||0};})
+      .sort(function(a,b){return b.fare-a.fare;});
+
+    /* PRE 10万超え（参考） */
+    var preOver=monPRE.filter(function(r){return toN(r['営収'])>=100000;}).length;
+
+    /* JPN通常日 */
+    var jpnNorm=monJPN.filter(function(r){return toN(r['営収'])<100000;});
+    var jpnNormFares=jpnNorm.map(function(r){return toN(r['営収']);});
+    var jpnAllFares=monJPN.map(function(r){return toN(r['営収']);});
+
+    var jpnAvg=av(jpnAllFares);
+    var jpnMax=jpnAllFares.length?Math.max.apply(null,jpnAllFares):0;
+    var overAvg=av(jpnOver.map(function(x){return x.fare;}));
+    var normAvg=av(jpnNormFares);
+
+    var h='';
+
+    /* サマリー */
+    h+='<div class="card" style="border-color:#f59e0b55;background:#f59e0b0a">';
+    h+='<div class="card-ttl" style="color:#f59e0b">📋 月曜 JPN TAXI（プレタク除外）</div>';
+    h+='<div class="grid3" style="margin-bottom:8px">';
+    h+='<div class="cell"><div class="lbl">月曜 JPN日数</div><div class="val" style="color:#60a5fa">'+monJPN.length+'日</div></div>';
+    h+='<div class="cell"><div class="lbl">JPN平均営収</div><div class="val" style="color:#f87171">¥'+jpnAvg.toLocaleString()+'</div></div>';
+    h+='<div class="cell"><div class="lbl">JPN最高</div><div class="val" style="color:#4ade80">¥'+jpnMax.toLocaleString()+'</div></div>';
+    h+='</div>';
+    h+='<div class="grid2">';
+    h+='<div class="cell" style="border:1px solid #f59e0b33"><div class="lbl">JPN 10万超え</div><div class="val" style="color:#f59e0b">'+jpnOver.length+'日</div><div class="sub">成功率'+(monJPN.length>0?Math.round(jpnOver.length/monJPN.length*100):0)+'%</div></div>';
+    h+='<div class="cell" style="opacity:.6"><div class="lbl">参考：PRE 10万超え</div><div class="val" style="color:#64748b">'+preOver+'日</div><div class="sub">プレタク稼働日</div></div>';
+    h+='</div>';
+    h+='</div>';
+
+    /* JPN 10万超えリスト */
+    if(jpnOver.length>0){
+      h+='<div class="card">';
+      h+='<div class="card-ttl" style="color:#f59e0b">🏆 JPN 月曜10万超え達成日（'+jpnOver.length+'日）</div>';
+      jpnOver.forEach(function(x,i){
+        h+='<div class="day" style="background:#f59e0b08;border:1px solid #f59e0b33"><div><div style="font-size:13px;font-weight:700;color:#f59e0b">'+(i+1)+'位　'+es(x.date)+'</div><div style="font-size:10px;color:#64748b">'+x.trips+'件 / 単価¥'+x.avg.toLocaleString()+' / 実車'+x.real+'%</div></div><div style="font-size:17px;font-weight:800;color:#f59e0b">¥'+x.fare.toLocaleString()+'</div></div>';
+      });
+      h+='</div>';
+
+      /* 10万超え vs 通常日 */
+      var overTrips=av(jpnOver.map(function(x){return x.trips;}).filter(function(v){return v>0;}));
+      var normTrips=av(jpnNorm.map(function(r){return toN(r['回数']);}).filter(function(v){return v>0;}));
+      var overReal=av(jpnOver.map(function(x){return x.real;}).filter(function(v){return v>0;}));
+      var normReal=av(jpnNorm.map(function(r){return parseFloat(r['実車率'])||0;}).filter(function(v){return v>0;}));
+      var overAvgU=av(jpnOver.map(function(x){return x.avg;}).filter(function(v){return v>0;}));
+      var normAvgU=av(jpnNorm.map(function(r){return toN(r['単価']);}).filter(function(v){return v>0;}));
+
+      h+='<div class="card" style="border-color:#4ade8044">';
+      h+='<div class="card-ttl" style="color:#4ade80">🔍 10万超え日 vs 通常日（何が違う？）</div>';
+      h+='<table><thead><tr><th>指標</th><th style="text-align:right;color:#f59e0b">🌟10万超え</th><th style="text-align:right;color:#94a3b8">通常日</th><th style="text-align:right;color:#64748b">差</th></tr></thead><tbody>';
+      [
+        {l:'平均営収',o:overAvg,n:normAvg,unit:'¥'},
+        {l:'平均件数',o:overTrips,n:normTrips,unit:'件'},
+        {l:'平均単価',o:overAvgU,n:normAvgU,unit:'¥'},
+        {l:'平均実車率',o:overReal,n:normReal,unit:'%'},
+      ].forEach(function(row){
+        var diff=row.o-row.n;
+        var fmt=function(v){return row.unit==='¥'?'¥'+v.toLocaleString():v+row.unit;};
+        h+='<tr><td style="color:#94a3b8">'+row.l+'</td><td style="text-align:right;color:#f59e0b;font-weight:700">'+fmt(row.o)+'</td><td style="text-align:right;color:#94a3b8">'+fmt(row.n)+'</td><td style="text-align:right;color:'+(diff>0?'#4ade80':'#f87171')+';font-weight:700">'+(diff>=0?'+':'')+fmt(diff)+'</td></tr>';
+      });
+      h+='</tbody></table>';
+
+      /* 件数 vs 単価 どちらで稼いだか */
+      h+='<div style="margin-top:10px;padding:10px;background:#0d1220;border-radius:8px;font-size:12px;color:#cbd5e1;line-height:1.9">';
+      var tripGain=normTrips>0?(overTrips/normTrips-1)*100:0;
+      var avgGain=normAvgU>0?(overAvgU/normAvgU-1)*100:0;
+      h+='<strong style="color:#facc15">10万超えの要因分析：</strong><br>';
+      h+='件数は通常比 <strong style="color:'+(tripGain>0?'#4ade80':'#f87171')+'">'+(tripGain>=0?'+':'')+tripGain.toFixed(0)+'%</strong>　';
+      h+='単価は通常比 <strong style="color:'+(avgGain>0?'#4ade80':'#f87171')+'">'+(avgGain>=0?'+':'')+avgGain.toFixed(0)+'%</strong><br>';
+      if(tripGain>avgGain){
+        h+='→ <strong style="color:#4ade80">「件数」で稼いだ日</strong>が多い。回転重視ポリシーと一致。';
+      }else{
+        h+='→ <strong style="color:#a78bfa">「単価」で稼いだ日</strong>が多い。ロングや高単価案件が効いている。';
+      }
+      h+='</div></div>';
+    }else{
+      h+='<div class="card" style="color:#64748b;font-size:13px">JPN TAXIの月曜10万超え日はありませんでした（プレタク稼働日を除外した結果）。</div>';
+    }
+
+    document.getElementById('msgbox').style.display='none';
+    document.getElementById('out').innerHTML=h;
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+run();
+</script>
+</body>
+</html>
