@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>平日月曜 取りこぼし分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#3a0a1a,#40110f);border-bottom:1px solid #f8717155;padding:18px 16px 14px}
+.sub{font-size:10px;color:#f87171;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:18px;font-weight:800}
+.dscr{font-size:11px;color:#475569;margin-top:3px}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;margin-top:14px}
+.tab{padding:8px 14px;border-radius:20px;border:none;background:#151e30;color:#fff;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0;opacity:.6}
+.tab.on{opacity:1}
+.panel{padding:0 14px;display:none}
+.panel.on{display:block}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+.bwrap{height:14px;background:#151e30;border-radius:4px;overflow:hidden;position:relative}
+.binner{height:100%;border-radius:4px}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:#475569;padding:5px 5px;border-bottom:1px solid #1e2d40;font-weight:600}
+td{padding:6px 5px;border-bottom:1px solid #0d1220}
+tr.gap td{background:#f8717108}
+tr.good td{background:#4ade8008}
+.kg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:10px}
+.kc{background:#0d1220;border-radius:8px;padding:8px;text-align:center}
+.kc .l{font-size:9px;color:#475569;margin-bottom:3px}
+.kc .v{font-size:14px;font-weight:800}
+.legend{display:flex;gap:12px;font-size:10px;color:#64748b;margin-bottom:8px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:3px}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Monday Gap Analysis</div>
+  <h1>📉 平日月曜 取りこぼし分析</h1>
+  <div class="dscr">祝日・振替休日・年末年始を除外 / 高営収日 vs 平均日の差分</div>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="dashboard" style="display:none">
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+</div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+
+/* 日本の祝日（2024-2026 主要）＋振替休日 */
+var HOLIDAYS={
+  '2024-01-01':1,'2024-01-08':1,'2024-02-11':1,'2024-02-12':1,'2024-02-23':1,'2024-03-20':1,
+  '2024-04-29':1,'2024-05-03':1,'2024-05-04':1,'2024-05-05':1,'2024-05-06':1,'2024-07-15':1,
+  '2024-08-11':1,'2024-08-12':1,'2024-09-16':1,'2024-09-22':1,'2024-09-23':1,'2024-10-14':1,
+  '2024-11-03':1,'2024-11-04':1,'2024-11-23':1,
+  '2025-01-01':1,'2025-01-13':1,'2025-02-11':1,'2025-02-23':1,'2025-02-24':1,'2025-03-20':1,
+  '2025-04-29':1,'2025-05-03':1,'2025-05-04':1,'2025-05-05':1,'2025-05-06':1,'2025-07-21':1,
+  '2025-08-11':1,'2025-09-15':1,'2025-09-23':1,'2025-10-13':1,'2025-11-03':1,'2025-11-23':1,'2025-11-24':1,
+  '2026-01-01':1,'2026-01-12':1,'2026-02-11':1,'2026-02-23':1,'2026-03-20':1,
+  '2026-04-29':1,'2026-05-03':1,'2026-05-04':1,'2026-05-05':1,'2026-05-06':1,'2026-07-20':1,
+  '2026-08-11':1,'2026-09-21':1,'2026-09-22':1,'2026-09-23':1,'2026-10-12':1,'2026-11-03':1,'2026-11-23':1
+};
+/* 年末年始（12/28-1/4）も特殊扱い */
+function isSpecial(iso){
+  if(HOLIDAYS[iso])return '祝日/振休';
+  var m=iso.match(/\d{4}-(\d{2})-(\d{2})/);
+  if(m){
+    var mm=+m[1],dd=+m[2];
+    if(mm===12&&dd>=28)return '年末';
+    if(mm===1&&dd<=4)return '年始';
+  }
+  return null;
+}
+
+function csvArr(text){
+  var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
+  function sp(line){var c=[],cur='',q=false;for(var i=0;i<line.length;i++){var ch=line[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else{cur+=ch;}}c.push(cur.trim());return c;}
+  return lines.map(sp);
+}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function av(a){return a.length?Math.round(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function dispDate(iso){var m=String(iso).match(/(\d{4})-(\d{2})-(\d{2})/);return m?(+m[2])+'/'+(+m[3])+'/'+m[1].slice(2):iso;}
+
+var G={};
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 取得中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  document.getElementById('dashboard').style.display='none';
+  try{
+    var t1=await (await fetch(U1)).text();
+    var t2=await (await fetch(U2)).text();
+    document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 集計中...';
+    var a1=csvArr(t1),a2=csvArr(t2),h1=a1[0],h2=a2[0];
+    function idx(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+    var i1d=idx(h1,'日付'),i1t=idx(h1,'TAXI'),i1e=idx(h1,'営収'),i1tr=idx(h1,'回数'),i1r=idx(h1,'実車率'),i1w=idx(h1,'曜');
+    var i2w=idx(h2,'曜日'),i2t=idx(h2,'乗車時間'),i2wd=idx(h2,'乗車地:市区'),i2nm=idx(h2,'乗車地:地名'),i2f=idx(h2,'料金'),i2s=idx(h2,'ステータス'),i2sk=idx(h2,'サンキュー');
+
+    /* 日報①メタ（プレタク除外、月曜のみ） */
+    var meta={};
+    a1.slice(1).forEach(function(r){
+      if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
+      var d=normDate(r[i1d]);if(!d)return;
+      meta[d]={eikyu:toN(r[i1e]),trips:toN(r[i1tr]),real:parseFloat(r[i1r])||0,dow:String(r[i1w]||'').trim()};
+    });
+
+    /* 平日月曜だけの日付セット */
+    var monDates=Object.keys(meta).filter(function(d){
+      return meta[d].dow==='月' && !isSpecial(d) && meta[d].eikyu>0;
+    });
+    var specialMon=Object.keys(meta).filter(function(d){
+      return meta[d].dow==='月' && isSpecial(d);
+    });
+
+    /* 日報②を平日月曜だけ集計（プレタク除外） */
+    var rowsByDate={};
+    a2.slice(1).forEach(function(r){
+      var sk=String(r[i2sk]||'').trim();
+      if(sk==='プレタク'||sk==='プレタクP')return;
+      var d=normDate(r[0]); // A列=日付
+      var f=toN(r[i2f]);
+      if(!d||f<=0)return;
+      if(!rowsByDate[d])rowsByDate[d]=[];
+      rowsByDate[d].push({time:r[i2t],ward:r[i2wd],name:r[i2nm],fare:f,st:r[i2s]});
+    });
+
+    /* 平日月曜の各日営収でソート→上位30%を「高営収日」、下位を「平均日」 */
+    var monDays=monDates.map(function(d){
+      return {date:d,eikyu:meta[d].eikyu,trips:meta[d].trips,real:meta[d].real,rows:rowsByDate[d]||[]};
+    }).filter(function(x){return x.rows.length>0;});
+    monDays.sort(function(a,b){return b.eikyu-a.eikyu;});
+
+    var topN=Math.max(1,Math.round(monDays.length*0.3));
+    var hiDays=monDays.slice(0,topN);
+    var loDays=monDays.slice(topN);
+
+    G.monDays=monDays;G.hiDays=hiDays;G.loDays=loDays;
+    G.specialMon=specialMon;G.meta=meta;
+
+    /* 時間帯別：高営収日 vs 平均日（1日あたり平均件数で比較） */
+    function hourPerDay(days){
+      var m={};
+      days.forEach(function(day){
+        var dayMap={};
+        day.rows.forEach(function(r){
+          var mt=String(r.time||'').match(/^(\d{1,2}):/);if(!mt)return;
+          var hh=+mt[1];dayMap[hh]=(dayMap[hh]||0)+1;
+        });
+        Object.keys(dayMap).forEach(function(hh){
+          if(!m[hh])m[hh]={totalCnt:0};
+          m[hh].totalCnt+=dayMap[hh];
+        });
+      });
+      var res={};
+      Object.keys(m).forEach(function(hh){res[hh]=m[hh].totalCnt/days.length;}); // 1日あたり平均件数
+      return res;
+    }
+    G.hiHour=hourPerDay(hiDays);
+    G.loHour=hourPerDay(loDays);
+
+    /* エリア別：1日あたり平均件数 */
+    function areaPerDay(days){
+      var m={};
+      days.forEach(function(day){
+        day.rows.forEach(function(r){
+          var w=(r.ward||'').trim(),nm=(r.name||'').trim();var full=w&&nm?w+nm:w||nm;if(!full)return;
+          if(!m[full])m[full]={cnt:0,tot:0};m[full].cnt++;m[full].tot+=r.fare;
+        });
+      });
+      var res={};
+      Object.keys(m).forEach(function(k){res[k]={perDay:m[k].cnt/days.length,avg:Math.round(m[k].tot/m[k].cnt),cnt:m[k].cnt};});
+      return res;
+    }
+    G.hiArea=areaPerDay(hiDays);
+    G.loArea=areaPerDay(loDays);
+
+    document.getElementById('tabs').innerHTML=
+      '<button class="tab on" style="background:#f87171" onclick="sw(\'hour\',this)">🕐 時間帯ギャップ</button>'+
+      '<button class="tab" style="background:#4ade80" onclick="sw(\'area\',this)">📍 エリアギャップ</button>'+
+      '<button class="tab" style="background:#64748b" onclick="sw(\'excluded\',this)">🚫 除外日</button>';
+    document.getElementById('panels').innerHTML=
+      '<div class="panel on" id="p-hour"></div><div class="panel" id="p-area"></div><div class="panel" id="p-excluded"></div>';
+
+    renderHour();renderArea();renderExcluded();
+
+    document.getElementById('msgbox').style.display='none';
+    document.getElementById('dashboard').style.display='';
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e&&e.stack||e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+
+function renderHour(){
+  var hi=G.hiHour,lo=G.loHour;
+  var hiEikyu=av(G.hiDays.map(function(d){return d.eikyu;}));
+  var loEikyu=av(G.loDays.map(function(d){return d.eikyu;}));
+  var h='<div class="card" style="border-color:#f8717144;background:#f8717108">';
+  h+='<div class="card-ttl" style="color:#f87171">📊 平日月曜：高営収日 vs 平均日</div>';
+  h+='<div class="kg">';
+  h+='<div class="kc"><div class="l">高営収日('+G.hiDays.length+'日)</div><div class="v" style="color:#4ade80">¥'+hiEikyu.toLocaleString()+'</div></div>';
+  h+='<div class="kc"><div class="l">平均日('+G.loDays.length+'日)</div><div class="v" style="color:#f87171">¥'+loEikyu.toLocaleString()+'</div></div>';
+  h+='<div class="kc"><div class="l">差</div><div class="v" style="color:#facc15">¥'+(hiEikyu-loEikyu).toLocaleString()+'</div></div>';
+  h+='</div>';
+  h+='<p style="font-size:11px;color:#94a3b8;line-height:1.7">高営収日（上位30%）が各時間帯で「1日あたり何件」拾っているか。<strong style="color:#f87171">平均日との差が大きい時間帯＝取りこぼしポイント</strong>。</p></div>';
+
+  h+='<div class="card"><div class="card-ttl">🕐 時間帯別 1日あたり件数</div>';
+  h+='<div class="legend"><span><span class="dot" style="background:#4ade80"></span>高営収日</span><span><span class="dot" style="background:#f87171"></span>平均日</span></div>';
+  h+='<table><thead><tr><th>時間</th><th style="text-align:right;color:#4ade80">高営収</th><th style="text-align:right;color:#f87171">平均</th><th style="text-align:right">差/日</th></tr></thead><tbody>';
+  var hours=[];for(var k=5;k<=29;k++)hours.push(k);
+  var rows=[];
+  hours.forEach(function(hh){
+    var hv=hi[hh]||0,lv=lo[hh]||0;
+    if(hv<0.1&&lv<0.1)return;
+    rows.push({hh:hh,hv:hv,lv:lv,diff:hv-lv});
+  });
+  rows.forEach(function(r){
+    var lbl=r.hh>=24?'翌'+(r.hh-24)+'時':r.hh+'時';
+    var key=r.diff>=0.3;
+    h+='<tr'+(key?' class="gap"':'')+'><td style="color:'+(key?'#f87171':'#94a3b8')+';font-weight:'+(key?700:400)+'">'+lbl+(key?' ⚠️':'')+'</td><td style="text-align:right;color:#4ade80;font-weight:700">'+r.hv.toFixed(1)+'</td><td style="text-align:right;color:#94a3b8">'+r.lv.toFixed(1)+'</td><td style="text-align:right;color:'+(r.diff>0.3?'#f87171':r.diff>0?'#facc15':'#475569')+';font-weight:700">'+(r.diff>=0?'+':'')+r.diff.toFixed(1)+'</td></tr>';
+  });
+  h+='</tbody></table>';
+  /* 取りこぼし時間帯まとめ */
+  var gapHours=rows.filter(function(r){return r.diff>=0.3;}).sort(function(a,b){return b.diff-a.diff;});
+  if(gapHours.length){
+    h+='<div style="margin-top:10px;padding:10px;background:#f8717110;border-left:3px solid #f87171;border-radius:0 6px 6px 0;font-size:12px;color:#cbd5e1;line-height:1.9">';
+    h+='<strong style="color:#f87171">⚠️ 取りこぼし時間帯TOP：</strong><br>';
+    gapHours.slice(0,5).forEach(function(r){var lbl=r.hh>=24?'翌'+(r.hh-24)+'時':r.hh+'時';h+=lbl+'（高営収日は+'+r.diff.toFixed(1)+'件/日多い）<br>';});
+    h+='<span style="color:#94a3b8">→ この時間帯にGOが鳴る場所にいられていない可能性</span>';
+    h+='</div>';
+  }
+  h+='</div>';
+  document.getElementById('p-hour').innerHTML=h;
+}
+
+function renderArea(){
+  var hi=G.hiArea,lo=G.loArea;
+  /* 高営収日に多く、平均日に少ないエリア＝取りこぼしエリア */
+  var allAreas={};
+  Object.keys(hi).forEach(function(k){allAreas[k]=1;});
+  Object.keys(lo).forEach(function(k){allAreas[k]=1;});
+  var arr=Object.keys(allAreas).map(function(k){
+    var hv=hi[k]?hi[k].perDay:0;
+    var lv=lo[k]?lo[k].perDay:0;
+    var avg=hi[k]?hi[k].avg:(lo[k]?lo[k].avg:0);
+    return {name:k,hv:hv,lv:lv,diff:hv-lv,avg:avg};
+  });
+  /* 差が大きい順（高営収日で多く取れているエリア） */
+  var gapAreas=arr.filter(function(a){return a.diff>0.1;}).sort(function(a,b){return b.diff-a.diff;}).slice(0,20);
+
+  var h='<div class="card" style="border-color:#4ade8044;background:#4ade8008">';
+  h+='<div class="card-ttl" style="color:#4ade80">📍 取りこぼしエリア</div>';
+  h+='<p style="font-size:11px;color:#94a3b8;line-height:1.7"><strong style="color:#4ade80">高営収日に多く拾えているのに、平均日では取れていないエリア</strong>。ここに行けば底上げできる。1日あたり件数の差で算出。</p></div>';
+
+  h+='<div class="card"><div class="card-ttl">📍 高営収日で稼げるエリア TOP'+gapAreas.length+'</div>';
+  h+='<table><thead><tr><th>エリア</th><th style="text-align:right;color:#4ade80">高営収</th><th style="text-align:right;color:#f87171">平均</th><th style="text-align:right">差</th></tr></thead><tbody>';
+  gapAreas.forEach(function(a,i){
+    var top=i<5;
+    h+='<tr'+(top?' class="good"':'')+'><td style="color:'+(top?'#4ade80':'#94a3b8')+';font-weight:'+(top?700:400)+'">'+es(a.name)+' <span style="color:#475569;font-size:9px">¥'+a.avg.toLocaleString()+'</span></td><td style="text-align:right;color:#4ade80;font-weight:700">'+a.hv.toFixed(1)+'</td><td style="text-align:right;color:#94a3b8">'+a.lv.toFixed(1)+'</td><td style="text-align:right;color:#facc15;font-weight:700">+'+a.diff.toFixed(1)+'</td></tr>';
+  });
+  h+='</tbody></table>';
+  h+='<div style="margin-top:10px;padding:10px;background:#4ade8010;border-left:3px solid #4ade80;border-radius:0 6px 6px 0;font-size:12px;color:#cbd5e1;line-height:1.9">';
+  h+='<strong style="color:#4ade80">📍 月曜の狙うべきエリア：</strong><br>';
+  gapAreas.slice(0,5).forEach(function(a){h+=es(a.name)+'<br>';});
+  h+='<span style="color:#94a3b8">→ これらが「鳴る月曜エリア」。平均日はここを取れていない</span>';
+  h+='</div></div>';
+  document.getElementById('p-area').innerHTML=h;
+}
+
+function renderExcluded(){
+  var h='<div class="card" style="border-color:#64748b44">';
+  h+='<div class="card-ttl" style="color:#64748b">🚫 除外した特殊な月曜（'+G.specialMon.length+'日）</div>';
+  h+='<p style="font-size:11px;color:#94a3b8;line-height:1.7;margin-bottom:10px">祝日・振替休日・年末年始は「日曜的/金曜的」な需要のため、通常月曜の分析から除外しています。</p>';
+  if(G.specialMon.length===0){
+    h+='<p style="color:#475569;font-size:12px">該当なし</p>';
+  }else{
+    G.specialMon.sort().forEach(function(d){
+      var typ=isSpecial(d);var ek=G.meta[d]?G.meta[d].eikyu:0;
+      h+='<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #0d1220;font-size:12px"><span style="color:#94a3b8">'+dispDate(d)+' <span class="badge" style="background:#64748b22;color:#94a3b8;font-size:9px;padding:2px 6px;border-radius:6px">'+typ+'</span></span><span style="color:#475569">¥'+ek.toLocaleString()+'</span></div>';
+    });
+  }
+  h+='</div>';
+  h+='<div class="card"><div class="card-ttl" style="color:#60a5fa">📊 分析対象サマリー</div>';
+  h+='<div class="kg"><div class="kc"><div class="l">平日月曜</div><div class="v" style="color:#60a5fa">'+G.monDays.length+'日</div></div>';
+  h+='<div class="kc"><div class="l">高営収日</div><div class="v" style="color:#4ade80">'+G.hiDays.length+'日</div></div>';
+  h+='<div class="kc"><div class="l">除外日</div><div class="v" style="color:#64748b">'+G.specialMon.length+'日</div></div></div></div>';
+  document.getElementById('p-excluded').innerHTML=h;
+}
+
+function sw(id,btn){document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});document.getElementById('p-'+id).classList.add('on');}
+run();
+</script>
+</body></html>
