@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>区の素顔 & 月曜フロー分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#2a0a3a,#1a2040);border-bottom:1px solid #a78bfa55;padding:18px 16px 14px}
+.sub{font-size:10px;color:#a78bfa;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:18px;font-weight:800}
+.dscr{font-size:11px;color:#475569;margin-top:3px}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;margin-top:14px}
+.tab{padding:8px 14px;border-radius:20px;border:none;background:#151e30;color:#fff;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0;opacity:.6}
+.tab.on{opacity:1}
+.panel{padding:0 14px;display:none}
+.panel.on{display:block}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:#475569;padding:6px 4px;border-bottom:1px solid #1e2d40;font-weight:600;font-size:10px}
+td{padding:7px 4px;border-bottom:1px solid #0d1220}
+.flow{border:1px solid #1e2d40;border-radius:10px;padding:10px 12px;margin-bottom:8px;background:#161626}
+.flow-from{font-size:12px;font-weight:700;color:#60a5fa;margin-bottom:6px}
+.flow-to{display:flex;justify-content:space-between;font-size:11px;padding:3px 0;color:#94a3b8}
+.bwrap{height:10px;background:#151e30;border-radius:3px;overflow:hidden;margin-top:2px}
+.binner{height:100%;border-radius:3px}
+select{background:#0d1220;color:#e2e8f0;border:1px solid #1e2d40;border-radius:8px;padding:9px;font-size:13px;font-family:inherit;width:100%;margin-bottom:12px}
+.hot{color:#4ade80;font-weight:700}
+.cold{color:#f87171}
+.toggle{display:flex;gap:6px;margin-bottom:12px}
+.tg{flex:1;padding:9px;border-radius:8px;border:1px solid #1e2d40;background:#0d1220;color:#64748b;font-size:12px;font-weight:700;text-align:center;cursor:pointer;font-family:inherit}
+.tg.on{background:#a78bfa22;border-color:#a78bfa;color:#a78bfa}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Ward Profile & Flow</div>
+  <h1>🗾 区の素顔 & 月曜フロー</h1>
+  <div class="dscr">区ごとの性格 / 月日群 vs 金土群 / 区→区の流れ</div>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="dashboard" style="display:none">
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+</div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+
+function csvArr(text){
+  var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
+  function sp(line){var c=[],cur='',q=false;for(var i=0;i<line.length;i++){var ch=line[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else{cur+=ch;}}c.push(cur.trim());return c;}
+  return lines.map(sp);
+}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function av(a){return a.length?Math.round(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function hourOf(t){var m=String(t||'').match(/^(\d{1,2}):/);return m?+m[1]:null;}
+
+var G={};
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 取得中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  document.getElementById('dashboard').style.display='none';
+  try{
+    var t1=await (await fetch(U1)).text();
+    var t2=await (await fetch(U2)).text();
+    document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 集計中...';
+    var a1=csvArr(t1),a2=csvArr(t2),h1=a1[0],h2=a2[0];
+    function idx(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+    var i1d=idx(h1,'日付'),i1t=idx(h1,'TAXI'),i1w=idx(h1,'曜');
+    var i2t=idx(h2,'乗車時間'),i2ew=idx(h2,'乗車地:市区'),i2dw=idx(h2,'降車地:市区'),i2f=idx(h2,'料金'),i2sk=idx(h2,'サンキュー');
+
+    /* プレタク日除外のための日付セット */
+    var preDate={};
+    a1.slice(1).forEach(function(r){
+      if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0){var d=normDate(r[i1d]);if(d)preDate[d]=1;}
+    });
+    /* 曜日マップ */
+    var dowOf={};
+    a1.slice(1).forEach(function(r){var d=normDate(r[i1d]);if(d)dowOf[d]=String(r[i1w]||'').trim();});
+
+    /* 全乗車（プレタク行/プレタク日除外） */
+    var trips=[];
+    a2.slice(1).forEach(function(r){
+      var sk=String(r[i2sk]||'').trim();
+      if(sk==='プレタク'||sk==='プレタクP')return;
+      var d=normDate(r[0]);if(preDate[d])return;
+      var f=toN(r[i2f]);if(f<=0)return;
+      trips.push({
+        date:d,dow:dowOf[d]||'',hour:hourOf(r[i2t]),
+        ew:String(r[i2ew]||'').trim(),dw:String(r[i2dw]||'').trim(),fare:f
+      });
+    });
+
+    G.trips=trips;
+    G.dowOf=dowOf;
+
+    document.getElementById('tabs').innerHTML=
+      '<button class="tab on" style="background:#a78bfa" onclick="sw(\'profile\',this)">🗾 区の素顔</button>'+
+      '<button class="tab" style="background:#60a5fa" onclick="sw(\'flow\',this)">🔀 月曜フロー</button>';
+    document.getElementById('panels').innerHTML=
+      '<div class="panel on" id="p-profile"></div><div class="panel" id="p-flow"></div>';
+
+    renderProfile('weekday_low');
+    renderFlow();
+
+    document.getElementById('msgbox').style.display='none';
+    document.getElementById('dashboard').style.display='';
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e&&e.stack||e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+
+/* 区の素顔：群を指定して区ごとに集計 */
+function renderProfile(group){
+  G.curGroup=group;
+  var filterDow;
+  if(group==='weekday_low')filterDow=function(d){return d==='月'||d==='日';};
+  else if(group==='weekend')filterDow=function(d){return d==='金'||d==='土';};
+  else filterDow=function(d){return true;};
+
+  var trips=G.trips.filter(function(t){return filterDow(t.dow)&&t.ew;});
+
+  /* 区ごと集計（乗車地ベース） */
+  var wards={};
+  trips.forEach(function(t){
+    if(!wards[t.ew])wards[t.ew]={cnt:0,tot:0,early:0,deep:0};
+    var w=wards[t.ew];
+    w.cnt++;w.tot+=t.fare;
+    if(t.hour!==null&&t.hour>=16&&t.hour<=19)w.early++;
+    if(t.hour!==null&&(t.hour>=23||t.hour<=2))w.deep++;
+  });
+
+  var arr=Object.entries(wards).map(function(e){
+    var w=e[1];
+    return {ward:e[0],cnt:w.cnt,avg:Math.round(w.tot/w.cnt),
+      earlyRate:Math.round(w.early/w.cnt*100),deepRate:Math.round(w.deep/w.cnt*100)};
+  }).filter(function(x){return x.cnt>=5;}).sort(function(a,b){return b.cnt-a.cnt;});
+
+  var h='<div class="toggle">';
+  h+='<button class="tg'+(group==='weekday_low'?' on':'')+'" onclick="renderProfile(\'weekday_low\')">月日（底上げ群）</button>';
+  h+='<button class="tg'+(group==='weekend'?' on':'')+'" onclick="renderProfile(\'weekend\')">金土（稼ぎ頭群）</button>';
+  h+='<button class="tg'+(group==='all'?' on':'')+'" onclick="renderProfile(\'all\')">全曜日</button>';
+  h+='</div>';
+
+  h+='<div class="card" style="border-color:#a78bfa44;background:#a78bfa08"><div class="card-ttl" style="color:#a78bfa">🗾 区の素顔（乗車地ベース・件数順）</div>';
+  h+='<p style="font-size:11px;color:#94a3b8;line-height:1.7">各区で何件乗せ、平均単価いくらで、その区が「浅い時間(16-19)に鳴るか」「深夜(23-2)に鳴るか」。プレタク除外。5件以上の区のみ。</p></div>';
+
+  h+='<div class="card"><table><thead><tr><th>区</th><th style="text-align:right">件数</th><th style="text-align:right">単価</th><th style="text-align:right">浅い時間</th><th style="text-align:right">深夜</th></tr></thead><tbody>';
+  arr.slice(0,30).forEach(function(x){
+    var earlyHot=x.earlyRate>=35,deepHot=x.deepRate>=30;
+    h+='<tr><td style="color:#e2e8f0;font-weight:600">'+es(x.ward)+'</td>';
+    h+='<td style="text-align:right;color:#60a5fa;font-weight:700">'+x.cnt+'</td>';
+    h+='<td style="text-align:right;color:'+(x.avg>=3000?'#4ade80':'#94a3b8')+'">¥'+x.avg.toLocaleString()+'</td>';
+    h+='<td style="text-align:right" class="'+(earlyHot?'hot':'')+'">'+x.earlyRate+'%</td>';
+    h+='<td style="text-align:right" class="'+(deepHot?'hot':'')+'">'+x.deepRate+'%</td></tr>';
+  });
+  h+='</tbody></table>';
+  h+='<p style="font-size:10px;color:#64748b;margin-top:8px;line-height:1.6">緑の浅い時間% = その区は夕方に鳴りやすい / 緑の深夜% = その区は深夜に鳴りやすい</p>';
+  h+='</div>';
+
+  /* 浅い時間に強い区TOP */
+  var earlyTop=[].concat(arr).filter(function(x){return x.cnt>=8;}).sort(function(a,b){return b.earlyRate-a.earlyRate;}).slice(0,8);
+  h+='<div class="card" style="border-color:#facc1544;background:#facc1508"><div class="card-ttl" style="color:#facc15">🌆 浅い時間(16-19)に鳴る区 TOP8</div>';
+  earlyTop.forEach(function(x,i){h+='<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0d1220;font-size:12px"><span style="color:#e2e8f0">'+(i+1)+'. '+es(x.ward)+' <span style="font-size:9px;color:#475569">'+x.cnt+'件 ¥'+x.avg.toLocaleString()+'</span></span><span style="color:#facc15;font-weight:700">浅'+x.earlyRate+'%</span></div>';});
+  h+='</div>';
+
+  document.getElementById('p-profile').innerHTML=h;
+  /* トグルのスクロール位置維持のためタブ状態を戻す */
+  document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});
+  document.getElementById('tabs').children[0].classList.add('on');
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});
+  document.getElementById('p-profile').classList.add('on');
+}
+
+/* 月曜フロー：区→区 */
+function renderFlow(){
+  var mon=G.trips.filter(function(t){return t.dow==='月'&&t.ew&&t.dw;});
+  /* 乗車区ごとに、降車区の分布 */
+  var flow={};
+  mon.forEach(function(t){
+    if(!flow[t.ew])flow[t.ew]={total:0,to:{}};
+    flow[t.ew].total++;
+    flow[t.ew].to[t.dw]=(flow[t.ew].to[t.dw]||0)+1;
+  });
+  var fromArr=Object.entries(flow).map(function(e){return {ward:e[0],total:e[1].total,to:e[1].to};})
+    .filter(function(x){return x.total>=8;}).sort(function(a,b){return b.total-a.total;});
+
+  var h='<div class="card" style="border-color:#60a5fa44;background:#60a5fa08"><div class="card-ttl" style="color:#60a5fa">🔀 月曜 区→区フロー</div>';
+  h+='<p style="font-size:11px;color:#94a3b8;line-height:1.7">月曜にどの区で乗せると、どこへ運ばれるか。<strong style="color:#60a5fa">周辺で乗せた客が中心へ流してくれるか</strong>の検証。乗車8件以上の区。</p></div>';
+
+  fromArr.slice(0,18).forEach(function(f){
+    var toArr=Object.entries(f.to).sort(function(a,b){return b[1]-a[1];}).slice(0,4);
+    var mx=toArr.length?toArr[0][1]:1;
+    h+='<div class="flow"><div class="flow-from">'+es(f.ward)+' <span style="font-size:9px;color:#475569;font-weight:400">で乗車 '+f.total+'件 → 行き先</span></div>';
+    toArr.forEach(function(e){
+      var pct=Math.round(e[1]/f.total*100);
+      var same=e[0]===f.ward;
+      h+='<div class="flow-to"><span style="color:'+(same?'#64748b':'#cbd5e1')+'">'+es(e[0])+(same?'（区内）':'')+'</span><span style="color:#94a3b8">'+e[1]+'件 '+pct+'%</span></div>';
+      h+='<div class="bwrap"><div class="binner" style="width:'+(e[1]/mx*100)+'%;background:'+(same?'#64748b':'#60a5fa88')+'"></div></div>';
+    });
+    h+='</div>';
+  });
+
+  document.getElementById('p-flow').innerHTML=h;
+}
+
+function sw(id,btn){document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});document.getElementById('p-'+id).classList.add('on');}
+run();
+</script>
+</body></html>
