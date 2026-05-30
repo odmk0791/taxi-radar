@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>デバッグ</title>
+<style>body{background:#090912;color:#e2e8f0;font-family:monospace;padding:16px;font-size:12px;line-height:1.8}
+.box{background:#161626;border:1px solid #1e2d40;border-radius:8px;padding:12px;margin-bottom:12px;word-break:break-all;white-space:pre-wrap}</style></head>
+<body>
+<h2>🔍 デバッグ：日付フォーマット確認</h2>
+<div class="box" id="out">⏳ 取得中...</div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+function csv(text){var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});function sp(line){var c=[],cur='',q=false;for(var i=0;i<line.length;i++){var ch=line[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else{cur+=ch;}}c.push(cur.trim());return c;}var h=sp(lines[0]);return{h:h,r:lines.slice(1).map(function(l){var v=sp(l),o={};h.forEach(function(k,i){o[k]=v[i]||'';});return o;})};}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+(async function(){
+  var out=document.getElementById('out');
+  try{
+    var r1=await fetch(U1);var t1=await r1.text();
+    var r2=await fetch(U2);var t2=await r2.text();
+    var d1=csv(t1),d2=csv(t2);
+    var s='=== 日報①ヘッダー ===\n'+d1.h.join(' | ')+'\n\n';
+    s+='=== 日報①最初の3行の日付・曜・TAXI ===\n';
+    d1.r.slice(0,3).forEach(function(r){s+='日付['+r['日付']+'] 曜['+r['曜']+'] TAXI['+r['TAXI']+'] 営収['+r['営収']+']\n';});
+    s+='\n=== 日報②ヘッダー ===\n'+d2.h.join(' | ')+'\n\n';
+    s+='=== 日報②最初の3行の日付・曜日 ===\n';
+    d2.r.slice(0,3).forEach(function(r){s+='日付['+r['日付']+'] 曜日['+r['曜日']+'] 料金['+r['料金']+'] 乗車時間['+r['乗車時間']+']\n';});
+
+    // 月曜の日報②を日付集計
+    var byDate={};
+    d2.r.forEach(function(r){
+      var sk=(r['サンキュー']||'').trim();
+      if(sk==='プレタク'||sk==='プレタクP')return;
+      var dt=(r['日付']||'').trim();var dow=(r['曜日']||'').trim();var f=toN(r['料金']);
+      if(!dt||f<=0)return;
+      if(!byDate[dt])byDate[dt]={dow:dow,cnt:0};
+      byDate[dt].cnt++;
+    });
+    var dates=Object.keys(byDate);
+    s+='\n=== 日報②の日付ユニーク数 ===\n'+dates.length+'日\n';
+    s+='\n=== 件数20以上の日（金曜除く）===\n';
+    var ok=dates.filter(function(d){return byDate[d].cnt>=20&&byDate[d].dow!=='金';});
+    s+=ok.length+'日\n';
+    s+='\n=== サンプル（最初の5日）===\n';
+    dates.slice(0,5).forEach(function(d){s+='['+d+'] 曜日:'+byDate[d].dow+' '+byDate[d].cnt+'件\n';});
+
+    // 日報①の日付サンプル
+    s+='\n=== 日報①日付サンプル（最初の5）===\n';
+    d1.r.slice(0,5).forEach(function(r){s+='['+r['日付']+']\n';});
+
+    out.textContent=s;
+  }catch(e){out.textContent='エラー: '+e;}
+})();
+</script>
+</body></html>
