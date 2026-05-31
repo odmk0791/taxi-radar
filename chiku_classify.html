@@ -22,23 +22,30 @@ h1{font-size:18px;font-weight:800}
 .panel.on{display:block}
 .card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
 .card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
-table{width:100%;border-collapse:collapse;font-size:11px}
-th{text-align:left;color:#475569;padding:6px 4px;border-bottom:1px solid #1e2d40;font-weight:600;font-size:10px}
-td{padding:7px 4px;border-bottom:1px solid #0d1220}
 .note{font-size:11px;color:#94a3b8;line-height:1.7}
-.tag{font-size:9px;padding:2px 7px;border-radius:8px;font-weight:700;white-space:nowrap}
-.t-hanka{background:#f8717122;color:#f87171}
-.t-jutaku{background:#4ade8022;color:#4ade80}
+.row{display:flex;align-items:center;gap:10px;padding:9px 6px;border-bottom:1px solid #0d1220}
+.row:last-child{border:none}
+.rname{flex:1;min-width:0}
+.rname .nm{font-size:12px;font-weight:600;color:#e2e8f0}
+.rname .meta{font-size:9px;color:#64748b;margin-top:2px}
 .hot{color:#facc15;font-weight:700}
+.toggle{flex-shrink:0;width:88px;height:30px;border-radius:8px;border:1px solid #1e2d40;background:#0d1220;display:flex;cursor:pointer;overflow:hidden;font-size:10px;font-weight:700}
+.toggle div{flex:1;display:flex;align-items:center;justify-content:center;transition:all .12s}
+.toggle .jt{color:#475569}
+.toggle .hk{color:#475569}
+.toggle.is-hanka .hk{background:#f87171;color:#fff}
+.toggle.is-jutaku .jt{background:#4ade80;color:#062012}
+#savebar{position:fixed;bottom:0;left:0;right:0;background:#0d1220;border-top:1px solid #1e2d40;padding:10px 16px;font-size:11px;color:#64748b;text-align:center;z-index:50}
 .mism{background:#facc1510}
-.editbox{background:#0d1220;border:1px solid #1e2d40;border-radius:8px;padding:10px;font-family:monospace;font-size:11px;color:#cbd5e1;line-height:1.8;word-break:break-all}
+.editbox{background:#0d1220;border:1px solid #1e2d40;border-radius:8px;padding:10px;font-size:12px;color:#cbd5e1;line-height:1.9;word-break:break-all}
+.btn-sm{background:#1a2035;border:1px solid #60a5fa44;border-radius:8px;padding:7px 12px;color:#60a5fa;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;margin-right:6px;margin-top:8px}
 </style>
 </head>
 <body>
 <div id="hdr">
-  <div class="sub">Chiku Classify (Manual List)</div>
+  <div class="sub">Chiku Classify (Editable + Saved)</div>
   <h1>🏙️ 地名別 繁華/住宅 分類</h1>
-  <div class="dscr">手動リスト方式 / データは参考表示</div>
+  <div class="dscr">タップで切替・自動保存</div>
 </div>
 <div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
 <button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
@@ -46,28 +53,23 @@ td{padding:7px 4px;border-bottom:1px solid #0d1220}
   <div class="tabs" id="tabs"></div>
   <div id="panels"></div>
 </div>
+<div id="savebar" style="display:none">💾 変更は自動保存されます</div>
+
 <script>
 var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
 var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
 
-/* ════════════════════════════════════════════
-   ★ 繁華街リスト（ここを編集するだけで分類が変わる）
-   地名の一部に含まれていれば繁華と判定。
-   例:'三軒茶屋' は「世田谷区三軒茶屋一丁目」「二丁目」全部にマッチ
-════════════════════════════════════════════ */
-var HANKA={
+var WARDS=['世田谷区','目黒区'];
+
+/* デフォルト繁華街（地名の部分一致）。保存データが無い初回のみ適用 */
+var DEFAULT_HANKA={
   '世田谷区':['三軒茶屋','太子堂','下北沢','三宿','池尻','北沢'],
   '目黒区':['中目黒','上目黒','自由が丘','目黒','下目黒']
 };
-/* ════════════════════════════════════════════ */
 
-var WARDS=['世田谷区','目黒区'];
-
-function isHanka(ward,name){
-  var list=HANKA[ward]||[];
-  for(var i=0;i<list.length;i++)if(name.indexOf(list[i])>=0)return true;
-  return false;
-}
+/* 保存される分類: { '世田谷区|三軒茶屋一丁目': 'hanka', ... } 地名フルネーム単位 */
+var CLASSIFY={};
+var STORAGE_KEY='chiku-classify-v1';
 
 function csvArr(text){
   var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
@@ -79,7 +81,26 @@ function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').r
 function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
 function hourOf(t){var m=String(t||'').match(/^(\d{1,2}):/);return m?+m[1]:null;}
 
+function key(ward,name){return ward+'|'+name;}
+function defIsHanka(ward,name){var list=DEFAULT_HANKA[ward]||[];for(var i=0;i<list.length;i++)if(name.indexOf(list[i])>=0)return true;return false;}
+
 var G={};
+
+async function loadSaved(){
+  try{
+    var res=await window.storage.get(STORAGE_KEY);
+    if(res&&res.value){CLASSIFY=JSON.parse(res.value);return true;}
+  }catch(e){/* 無ければ初回 */}
+  return false;
+}
+async function save(){
+  try{await window.storage.set(STORAGE_KEY,JSON.stringify(CLASSIFY));
+    var sb=document.getElementById('savebar');sb.textContent='✅ 保存しました';sb.style.color='#4ade80';
+    setTimeout(function(){sb.textContent='💾 変更は自動保存されます';sb.style.color='#64748b';},1200);
+  }catch(e){
+    var sb=document.getElementById('savebar');sb.textContent='⚠️ 保存失敗';sb.style.color='#f87171';
+  }
+}
 
 async function run(){
   document.getElementById('msgbox').style.display='';
@@ -87,7 +108,9 @@ async function run(){
   document.getElementById('msgbox').style.borderColor='#60a5fa';
   document.getElementById('rbtn').style.display='none';
   document.getElementById('dashboard').style.display='none';
+  document.getElementById('savebar').style.display='none';
   try{
+    await loadSaved();
     var t1=await (await fetch(U1)).text();
     var t2=await (await fetch(U2)).text();
     document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 集計中...';
@@ -116,6 +139,14 @@ async function run(){
     });
     G.data=data;
 
+    /* 保存が無い地名はデフォルトで初期化 */
+    WARDS.forEach(function(w){
+      Object.keys(data[w]).forEach(function(nm){
+        var k=key(w,nm);
+        if(CLASSIFY[k]===undefined)CLASSIFY[k]=defIsHanka(w,nm)?'hanka':'jutaku';
+      });
+    });
+
     var tabsHtml='';var panelsHtml='';
     WARDS.forEach(function(w,i){
       var id='w'+i;
@@ -128,6 +159,7 @@ async function run(){
 
     document.getElementById('msgbox').style.display='none';
     document.getElementById('dashboard').style.display='';
+    document.getElementById('savebar').style.display='';
   }catch(e){
     document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e&&e.stack||e);
     document.getElementById('msgbox').style.borderColor='#f87171';
@@ -139,41 +171,67 @@ function renderWard(ward,pid){
   var d=G.data[ward];
   var arr=Object.entries(d).map(function(e){
     var o=e[1];
-    var x={name:e[0],cnt:o.cnt,avg:Math.round(o.tot/o.cnt),
+    return {name:e[0],cnt:o.cnt,avg:Math.round(o.tot/o.cnt),
       earlyRate:Math.round(o.early/o.cnt*100),deepRate:Math.round(o.deep/o.cnt*100)};
-    x.hanka=isHanka(ward,e[0]);
-    return x;
   }).filter(function(x){return x.cnt>=3;}).sort(function(a,b){return b.cnt-a.cnt;});
 
-  var hanka=arr.filter(function(x){return x.hanka;});
-  var jutaku=arr.filter(function(x){return !x.hanka;});
+  var hankaCnt=arr.filter(function(x){return CLASSIFY[key(ward,x.name)]==='hanka';}).length;
 
   var h='<div class="card" style="border-color:#fb923c44;background:#fb923c08">';
-  h+='<div class="card-ttl" style="color:#fb923c">🏙️ '+ward+'（件数順）</div>';
-  h+='<p class="note"><span style="color:#f87171">繁華</span>＝下の手動リストに載っている地名 / <span style="color:#4ade80">住宅</span>＝それ以外。データの浅%・深%は参考。</p>';
-  h+='<p style="font-size:11px;color:#64748b;margin-top:8px">繁華'+hanka.length+' / 住宅'+jutaku.length+' 地名</p></div>';
+  h+='<div class="card-ttl" style="color:#fb923c">🏙️ '+ward+'（件数順・3件以上）</div>';
+  h+='<p class="note">各地名のトグルをタップして<span style="color:#f87171">繁華</span>/<span style="color:#4ade80">住宅</span>を切替。自動保存されます。浅%・深%・単価は判断の参考。</p>';
+  h+='<p style="font-size:11px;color:#64748b;margin-top:6px" id="cnt-'+pid+'">繁華'+hankaCnt+' / 住宅'+(arr.length-hankaCnt)+' 地名</p>';
+  h+='<button class="btn-sm" onclick="applyDataHint(\''+ward+'\',\''+pid+'\')">📊 データ推奨で一括設定</button>';
+  h+='<button class="btn-sm" onclick="resetDefault(\''+ward+'\',\''+pid+'\')" style="border-color:#f8717144;color:#f87171">↩️ 初期リストに戻す</button>';
+  h+='</div>';
 
-  /* 現在の繁華リスト表示 */
-  h+='<div class="card"><div class="card-ttl" style="color:#f87171">📝 現在の繁華街リスト</div>';
-  h+='<div class="editbox">'+(HANKA[ward]||[]).join('、 ')+'</div>';
-  h+='<p class="note" style="margin-top:8px">このリストを編集すれば分類が変わります（HTMLの HANKA 部分）。修正したい地名を教えてください。</p></div>';
-
-  h+='<div class="card"><table><thead><tr><th>地名</th><th style="text-align:center">判定</th><th style="text-align:right">件数</th><th style="text-align:right">単価</th><th style="text-align:right">浅</th><th style="text-align:right">深</th></tr></thead><tbody>';
+  h+='<div class="card">';
   arr.forEach(function(x){
-    /* データ傾向と手動判定が食い違う場合に印 */
+    var k=key(ward,x.name);
+    var isH=CLASSIFY[k]==='hanka';
     var dataHanka=x.deepRate>x.earlyRate&&x.avg>=3200;
-    var mismatch=x.hanka!==dataHanka;
-    h+='<tr'+(mismatch?' class="mism"':'')+'><td style="color:#e2e8f0;font-weight:600">'+es(x.name)+(mismatch?' <span style="font-size:9px;color:#facc15">⚠️</span>':'')+'</td>';
-    h+='<td style="text-align:center"><span class="tag '+(x.hanka?'t-hanka':'t-jutaku')+'">'+(x.hanka?'繁華':'住宅')+'</span></td>';
-    h+='<td style="text-align:right;color:#60a5fa;font-weight:700">'+x.cnt+'</td>';
-    h+='<td style="text-align:right;color:'+(x.avg>=3300?'#4ade80':'#94a3b8')+'">¥'+x.avg.toLocaleString()+'</td>';
-    h+='<td style="text-align:right" class="'+(x.earlyRate>=35?'hot':'')+'">'+x.earlyRate+'%</td>';
-    h+='<td style="text-align:right" class="'+(x.deepRate>=50?'hot':'')+'">'+x.deepRate+'%</td></tr>';
+    var mismatch=isH!==dataHanka;
+    h+='<div class="row'+(mismatch?' mism':'')+'" id="row-'+pid+'-'+es(x.name)+'">';
+    h+='<div class="rname"><div class="nm">'+es(x.name)+(mismatch?' <span style="font-size:9px;color:#facc15">⚠️</span>':'')+'</div>';
+    h+='<div class="meta">'+x.cnt+'件 ¥'+x.avg.toLocaleString()+' / <span class="'+(x.earlyRate>=35?'hot':'')+'">浅'+x.earlyRate+'%</span> <span class="'+(x.deepRate>=50?'hot':'')+'">深'+x.deepRate+'%</span></div></div>';
+    h+='<div class="toggle '+(isH?'is-hanka':'is-jutaku')+'" onclick="toggle(\''+ward+'\',\''+es(x.name)+'\',\''+pid+'\',this)"><div class="jt">住宅</div><div class="hk">繁華</div></div>';
+    h+='</div>';
   });
-  h+='</tbody></table>';
-  h+='<p style="font-size:10px;color:#64748b;margin-top:8px;line-height:1.6">⚠️ = 手動判定とデータ傾向（深夜多＆高単価=繁華のはず）が食い違う地名。リスト見直しの候補。</p></div>';
+  h+='</div>';
+  h+='<p style="font-size:10px;color:#64748b;padding:0 4px 8px;line-height:1.6">⚠️ = あなたの判定とデータ傾向（深夜多＆高単価=繁華のはず）が食い違う地名。</p>';
 
   document.getElementById('p-'+pid).innerHTML=h;
+}
+
+function toggle(ward,name,pid,el){
+  var k=key(ward,name);
+  CLASSIFY[k]=CLASSIFY[k]==='hanka'?'jutaku':'hanka';
+  el.classList.toggle('is-hanka');
+  el.classList.toggle('is-jutaku');
+  updateCount(ward,pid);
+  save();
+}
+function updateCount(ward,pid){
+  var d=G.data[ward];
+  var names=Object.keys(d).filter(function(nm){return d[nm].cnt>=3;});
+  var hk=names.filter(function(nm){return CLASSIFY[key(ward,nm)]==='hanka';}).length;
+  var el=document.getElementById('cnt-'+pid);
+  if(el)el.textContent='繁華'+hk+' / 住宅'+(names.length-hk)+' 地名';
+}
+function applyDataHint(ward,pid){
+  var d=G.data[ward];
+  Object.keys(d).forEach(function(nm){
+    if(d[nm].cnt<3)return;
+    var o=d[nm];var avg=Math.round(o.tot/o.cnt);
+    var early=Math.round(o.early/o.cnt*100),deep=Math.round(o.deep/o.cnt*100);
+    CLASSIFY[key(ward,nm)]=(deep>early&&avg>=3200)?'hanka':'jutaku';
+  });
+  renderWard(ward,pid);save();
+}
+function resetDefault(ward,pid){
+  var d=G.data[ward];
+  Object.keys(d).forEach(function(nm){CLASSIFY[key(ward,nm)]=defIsHanka(ward,nm)?'hanka':'jutaku';});
+  renderWard(ward,pid);save();
 }
 
 function sw(id,btn){document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});document.getElementById('p-'+id).classList.add('on');}
