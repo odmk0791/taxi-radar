@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>地名別 繁華/住宅 自動判定</title>
+<title>地名別 繁華/住宅 分類</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
@@ -29,15 +29,16 @@ td{padding:7px 4px;border-bottom:1px solid #0d1220}
 .tag{font-size:9px;padding:2px 7px;border-radius:8px;font-weight:700;white-space:nowrap}
 .t-hanka{background:#f8717122;color:#f87171}
 .t-jutaku{background:#4ade8022;color:#4ade80}
-.t-mid{background:#facc1522;color:#facc15}
 .hot{color:#facc15;font-weight:700}
+.mism{background:#facc1510}
+.editbox{background:#0d1220;border:1px solid #1e2d40;border-radius:8px;padding:10px;font-family:monospace;font-size:11px;color:#cbd5e1;line-height:1.8;word-break:break-all}
 </style>
 </head>
 <body>
 <div id="hdr">
-  <div class="sub">Chiku Auto-Classify</div>
-  <h1>🏙️ 地名別 繁華/住宅 自動判定</h1>
-  <div class="dscr">深夜率・単価=繁華 / 浅い時間率=住宅 をデータが判定</div>
+  <div class="sub">Chiku Classify (Manual List)</div>
+  <h1>🏙️ 地名別 繁華/住宅 分類</h1>
+  <div class="dscr">手動リスト方式 / データは参考表示</div>
 </div>
 <div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
 <button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
@@ -49,8 +50,24 @@ td{padding:7px 4px;border-bottom:1px solid #0d1220}
 var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
 var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
 
-/* 対象区 */
+/* ════════════════════════════════════════════
+   ★ 繁華街リスト（ここを編集するだけで分類が変わる）
+   地名の一部に含まれていれば繁華と判定。
+   例:'三軒茶屋' は「世田谷区三軒茶屋一丁目」「二丁目」全部にマッチ
+════════════════════════════════════════════ */
+var HANKA={
+  '世田谷区':['三軒茶屋','太子堂','下北沢','三宿','池尻','北沢'],
+  '目黒区':['中目黒','上目黒','自由が丘','目黒','下目黒']
+};
+/* ════════════════════════════════════════════ */
+
 var WARDS=['世田谷区','目黒区'];
+
+function isHanka(ward,name){
+  var list=HANKA[ward]||[];
+  for(var i=0;i<list.length;i++)if(name.indexOf(list[i])>=0)return true;
+  return false;
+}
 
 function csvArr(text){
   var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
@@ -61,17 +78,6 @@ function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
 function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
 function hourOf(t){var m=String(t||'').match(/^(\d{1,2}):/);return m?+m[1]:null;}
-
-/* 繁華/住宅 自動判定ロジック
-   繁華 = 深夜率が高い & 単価が高い（深夜に飲み・繁華街需要）
-   住宅 = 浅い時間率が高い（夕方の生活需要）
-   判定スコア: 深夜率 - 浅い時間率 + (単価-3000)/100 が プラス→繁華 マイナス→住宅 */
-function classify(x){
-  var score=x.deepRate-x.earlyRate+(x.avg-3000)/100;
-  if(score>=15)return {cls:'hanka',label:'繁華',score:score};
-  if(score<=-10)return {cls:'jutaku',label:'住宅',score:score};
-  return {cls:'mid',label:'中間',score:score};
-}
 
 var G={};
 
@@ -135,41 +141,37 @@ function renderWard(ward,pid){
     var o=e[1];
     var x={name:e[0],cnt:o.cnt,avg:Math.round(o.tot/o.cnt),
       earlyRate:Math.round(o.early/o.cnt*100),deepRate:Math.round(o.deep/o.cnt*100)};
-    var c=classify(x);x.cls=c.cls;x.label=c.label;x.score=c.score;
+    x.hanka=isHanka(ward,e[0]);
     return x;
   }).filter(function(x){return x.cnt>=3;}).sort(function(a,b){return b.cnt-a.cnt;});
 
-  var hanka=arr.filter(function(x){return x.cls==='hanka';});
-  var jutaku=arr.filter(function(x){return x.cls==='jutaku';});
-  var mid=arr.filter(function(x){return x.cls==='mid';});
+  var hanka=arr.filter(function(x){return x.hanka;});
+  var jutaku=arr.filter(function(x){return !x.hanka;});
 
   var h='<div class="card" style="border-color:#fb923c44;background:#fb923c08">';
-  h+='<div class="card-ttl" style="color:#fb923c">🏙️ '+ward+' 地名別判定（件数順）</div>';
-  h+='<p class="note">データが自動判定。<span style="color:#f87171">繁華=深夜＆高単価</span> / <span style="color:#4ade80">住宅=浅い時間に鳴る</span> / <span style="color:#facc15">中間</span>。3件以上の地名。</p>';
-  h+='<p style="font-size:11px;color:#64748b;margin-top:8px">繁華'+hanka.length+' / 住宅'+jutaku.length+' / 中間'+mid.length+' 地名</p></div>';
+  h+='<div class="card-ttl" style="color:#fb923c">🏙️ '+ward+'（件数順）</div>';
+  h+='<p class="note"><span style="color:#f87171">繁華</span>＝下の手動リストに載っている地名 / <span style="color:#4ade80">住宅</span>＝それ以外。データの浅%・深%は参考。</p>';
+  h+='<p style="font-size:11px;color:#64748b;margin-top:8px">繁華'+hanka.length+' / 住宅'+jutaku.length+' 地名</p></div>';
+
+  /* 現在の繁華リスト表示 */
+  h+='<div class="card"><div class="card-ttl" style="color:#f87171">📝 現在の繁華街リスト</div>';
+  h+='<div class="editbox">'+(HANKA[ward]||[]).join('、 ')+'</div>';
+  h+='<p class="note" style="margin-top:8px">このリストを編集すれば分類が変わります（HTMLの HANKA 部分）。修正したい地名を教えてください。</p></div>';
 
   h+='<div class="card"><table><thead><tr><th>地名</th><th style="text-align:center">判定</th><th style="text-align:right">件数</th><th style="text-align:right">単価</th><th style="text-align:right">浅</th><th style="text-align:right">深</th></tr></thead><tbody>';
   arr.forEach(function(x){
-    var tagCls=x.cls==='hanka'?'t-hanka':x.cls==='jutaku'?'t-jutaku':'t-mid';
-    h+='<tr><td style="color:#e2e8f0;font-weight:600">'+es(x.name)+'</td>';
-    h+='<td style="text-align:center"><span class="tag '+tagCls+'">'+x.label+'</span></td>';
+    /* データ傾向と手動判定が食い違う場合に印 */
+    var dataHanka=x.deepRate>x.earlyRate&&x.avg>=3200;
+    var mismatch=x.hanka!==dataHanka;
+    h+='<tr'+(mismatch?' class="mism"':'')+'><td style="color:#e2e8f0;font-weight:600">'+es(x.name)+(mismatch?' <span style="font-size:9px;color:#facc15">⚠️</span>':'')+'</td>';
+    h+='<td style="text-align:center"><span class="tag '+(x.hanka?'t-hanka':'t-jutaku')+'">'+(x.hanka?'繁華':'住宅')+'</span></td>';
     h+='<td style="text-align:right;color:#60a5fa;font-weight:700">'+x.cnt+'</td>';
     h+='<td style="text-align:right;color:'+(x.avg>=3300?'#4ade80':'#94a3b8')+'">¥'+x.avg.toLocaleString()+'</td>';
     h+='<td style="text-align:right" class="'+(x.earlyRate>=35?'hot':'')+'">'+x.earlyRate+'%</td>';
     h+='<td style="text-align:right" class="'+(x.deepRate>=50?'hot':'')+'">'+x.deepRate+'%</td></tr>';
   });
-  h+='</tbody></table></div>';
-
-  /* 繁華地名まとめ */
-  if(hanka.length){
-    h+='<div class="card" style="border-color:#f8717144;background:#f8717108"><div class="card-ttl" style="color:#f87171">🌃 '+ward+' の繁華エリア</div>';
-    h+='<p class="note">'+hanka.map(function(x){return es(x.name)+'(¥'+x.avg.toLocaleString()+'/深'+x.deepRate+'%)';}).join('、 ')+'</p></div>';
-  }
-  /* 住宅地名まとめ */
-  if(jutaku.length){
-    h+='<div class="card" style="border-color:#4ade8044;background:#4ade8008"><div class="card-ttl" style="color:#4ade80">🏘️ '+ward+' の住宅エリア（浅い時間に鳴る）</div>';
-    h+='<p class="note">'+jutaku.slice(0,15).map(function(x){return es(x.name)+'(浅'+x.earlyRate+'%)';}).join('、 ')+'</p></div>';
-  }
+  h+='</tbody></table>';
+  h+='<p style="font-size:10px;color:#64748b;margin-top:8px;line-height:1.6">⚠️ = 手動判定とデータ傾向（深夜多＆高単価=繁華のはず）が食い違う地名。リスト見直しの候補。</p></div>';
 
   document.getElementById('p-'+pid).innerHTML=h;
 }
