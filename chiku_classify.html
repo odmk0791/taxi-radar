@@ -53,7 +53,7 @@ h1{font-size:18px;font-weight:800}
   <div class="tabs" id="tabs"></div>
   <div id="panels"></div>
 </div>
-<div id="savebar" style="display:none">💾 変更は自動保存されます</div>
+<div id="savebar" style="display:none">💾 変更はこの端末に自動保存されます</div>
 
 <script>
 var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
@@ -96,19 +96,20 @@ function defIsHanka(ward,name){var list=DEFAULT_HANKA[ward]||[];for(var i=0;i<li
 
 var G={};
 
-async function loadSaved(){
+function loadSaved(){
   try{
-    var res=await window.storage.get(STORAGE_KEY);
-    if(res&&res.value){CLASSIFY=JSON.parse(res.value);return true;}
-  }catch(e){/* 無ければ初回 */}
+    var v=localStorage.getItem(STORAGE_KEY);
+    if(v){CLASSIFY=JSON.parse(v);return true;}
+  }catch(e){}
   return false;
 }
-async function save(){
-  try{await window.storage.set(STORAGE_KEY,JSON.stringify(CLASSIFY));
-    var sb=document.getElementById('savebar');sb.textContent='✅ 保存しました';sb.style.color='#4ade80';
-    setTimeout(function(){sb.textContent='💾 変更は自動保存されます';sb.style.color='#64748b';},1200);
+function save(){
+  try{
+    localStorage.setItem(STORAGE_KEY,JSON.stringify(CLASSIFY));
+    var sb=document.getElementById('savebar');sb.textContent='✅ 保存しました（この端末のブラウザに記憶）';sb.style.color='#4ade80';
+    setTimeout(function(){sb.textContent='💾 変更はこの端末に自動保存されます';sb.style.color='#64748b';},1400);
   }catch(e){
-    var sb=document.getElementById('savebar');sb.textContent='⚠️ 保存失敗';sb.style.color='#f87171';
+    var sb=document.getElementById('savebar');sb.textContent='⚠️ 保存失敗: '+e;sb.style.color='#f87171';
   }
 }
 
@@ -120,7 +121,7 @@ async function run(){
   document.getElementById('dashboard').style.display='none';
   document.getElementById('savebar').style.display='none';
   try{
-    await loadSaved();
+    loadSaved();
     var t1=await (await fetch(U1)).text();
     var t2=await (await fetch(U2)).text();
     document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 集計中...';
