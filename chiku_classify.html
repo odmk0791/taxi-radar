@@ -59,17 +59,27 @@ h1{font-size:18px;font-weight:800}
 var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
 var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
 
-var WARDS=['世田谷区','目黒区'];
+var WARDS=['港区','渋谷区','世田谷区','新宿区','品川区','杉並区','大田区','中央区','千代田区','目黒区','中野区','練馬区'];
 
 /* デフォルト繁華街（地名の部分一致）。保存データが無い初回のみ適用 */
 var DEFAULT_HANKA={
+  '港区':['六本木','赤坂','西麻布','麻布十番','新橋','虎ノ門','浜松町','芝','三田','白金','南青山','北青山','元赤坂','台場','お台場'],
+  '渋谷区':['道玄坂','宇田川','渋谷','神南','桜丘','円山','松濤','神泉','恵比寿','恵比寿南','恵比寿西','代官山','猿楽','神宮前','千駄ヶ谷'],
   '世田谷区':['三軒茶屋','太子堂','下北沢','三宿','池尻','北沢'],
-  '目黒区':['中目黒','上目黒','自由が丘','目黒','下目黒']
+  '新宿区':['歌舞伎町','新宿','西新宿','歌舞伎','大久保','百人町','四谷','荒木町','神楽坂'],
+  '品川区':['北品川','東品川','大崎','五反田','西五反田','東五反田','上大崎'],
+  '杉並区':['阿佐谷','高円寺','荻窪','西荻'],
+  '大田区':['蒲田','大森','羽田','西蒲田'],
+  '中央区':['銀座','築地','日本橋','京橋','八重洲','月島','勝どき','晴海'],
+  '千代田区':['丸の内','大手町','有楽町','神田','秋葉原','永田町','霞が関','内幸町','飯田橋','九段'],
+  '目黒区':['中目黒','上目黒','自由が丘','目黒','下目黒'],
+  '中野区':['中野','新井','東中野'],
+  '練馬区':['練馬','石神井','大泉','江古田']
 };
 
 /* 保存される分類: { '世田谷区|三軒茶屋一丁目': 'hanka', ... } 地名フルネーム単位 */
 var CLASSIFY={};
-var STORAGE_KEY='chiku-classify-v1';
+var STORAGE_KEY='chiku-classify-v2';
 
 function csvArr(text){
   var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});
@@ -143,7 +153,12 @@ async function run(){
     WARDS.forEach(function(w){
       Object.keys(data[w]).forEach(function(nm){
         var k=key(w,nm);
-        if(CLASSIFY[k]===undefined)CLASSIFY[k]=defIsHanka(w,nm)?'hanka':'jutaku';
+        if(CLASSIFY[k]===undefined){
+          var oo=data[w][nm];var av2=Math.round(oo.tot/oo.cnt);
+          var er=Math.round(oo.early/oo.cnt*100),dr=Math.round(oo.deep/oo.cnt*100);
+          var dataHk=(dr>er&&av2>=3200);
+          CLASSIFY[k]=(defIsHanka(w,nm)||dataHk)?'hanka':'jutaku';
+        }
       });
     });
 
