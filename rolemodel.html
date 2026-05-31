@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>曜日別 ロールモデル</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#0a3a2a,#0f4030);border-bottom:1px solid #4ade8055;padding:18px 16px 14px}
+.sub{font-size:10px;color:#4ade80;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:18px;font-weight:800}
+.dscr{font-size:11px;color:#475569;margin-top:3px}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;margin-top:14px}
+.tab{padding:8px 15px;border-radius:20px;border:none;color:#fff;font-size:13px;font-weight:800;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0;opacity:.55}
+.tab.on{opacity:1}
+.panel{padding:0 14px;display:none}
+.panel.on{display:block}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+.note{font-size:11px;color:#94a3b8;line-height:1.7}
+.slot{display:flex;gap:10px;margin-bottom:2px;align-items:stretch}
+.slot-time{flex-shrink:0;width:52px;font-size:13px;font-weight:800;color:#4ade80;display:flex;align-items:center;justify-content:center;background:#0d1220;border-radius:8px}
+.slot-body{flex:1;min-width:0;background:#0d1220;border-radius:8px;padding:9px 11px}
+.slot-main{font-size:13px;font-weight:700;color:#e2e8f0}
+.slot-alt{font-size:10px;color:#64748b;margin-top:3px}
+.slot-meta{font-size:9px;color:#475569;margin-top:3px}
+.connector{text-align:center;color:#1e3a2e;font-size:11px;line-height:.8;margin:1px 0}
+.chip{display:inline-block;font-size:9px;padding:1px 6px;border-radius:6px;background:#4ade8022;color:#4ade80;margin-left:4px}
+.daylist{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.daychip{font-size:10px;padding:3px 8px;border-radius:8px;background:#0d1220;color:#94a3b8;border:1px solid #1e2d40}
+.phase{font-size:10px;font-weight:700;letter-spacing:1px;color:#475569;margin:14px 0 6px;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Daily Role Model</div>
+  <h1>🎯 曜日別 ロールモデル</h1>
+  <div class="dscr">良い日に共通する動き / 高単価除外 / 30分スロット</div>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="dashboard" style="display:none">
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+</div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+var DOW=['月','火','水','木','金','土','日'];
+var DC={月:'#f87171',火:'#fb923c',水:'#facc15',木:'#4ade80',金:'#60a5fa',土:'#a78bfa',日:'#f472b6'};
+
+/* 祝日・振替休日・年末年始（特殊日除外用） */
+var HOLIDAYS={'2024-01-01':1,'2024-01-08':1,'2024-02-11':1,'2024-02-12':1,'2024-02-23':1,'2024-03-20':1,'2024-04-29':1,'2024-05-03':1,'2024-05-04':1,'2024-05-05':1,'2024-05-06':1,'2024-07-15':1,'2024-08-11':1,'2024-08-12':1,'2024-09-16':1,'2024-09-22':1,'2024-09-23':1,'2024-10-14':1,'2024-11-03':1,'2024-11-04':1,'2024-11-23':1,'2025-01-01':1,'2025-01-13':1,'2025-02-11':1,'2025-02-23':1,'2025-02-24':1,'2025-03-20':1,'2025-04-29':1,'2025-05-03':1,'2025-05-04':1,'2025-05-05':1,'2025-05-06':1,'2025-07-21':1,'2025-08-11':1,'2025-09-15':1,'2025-09-23':1,'2025-10-13':1,'2025-11-03':1,'2025-11-23':1,'2025-11-24':1,'2026-01-01':1,'2026-01-12':1,'2026-02-11':1,'2026-02-23':1,'2026-03-20':1,'2026-04-29':1,'2026-05-03':1,'2026-05-04':1,'2026-05-05':1,'2026-05-06':1,'2026-07-20':1,'2026-08-11':1,'2026-09-21':1,'2026-09-22':1,'2026-09-23':1,'2026-10-12':1,'2026-11-03':1,'2026-11-23':1};
+function isSpecial(iso){if(HOLIDAYS[iso])return true;var m=iso.match(/\d{4}-(\d{2})-(\d{2})/);if(m){var mm=+m[1],dd=+m[2];if(mm===12&&dd>=28)return true;if(mm===1&&dd<=4)return true;}return false;}
+
+function csvArr(text){var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});function sp(line){var c=[],cur='',q=false;for(var i=0;i<line.length;i++){var ch=line[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else{cur+=ch;}}c.push(cur.trim());return c;}return lines.map(sp);}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function av(a){return a.length?Math.round(a.reduce(function(x,y){return x+y;},0)/a.length):0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function mean(a){return a.length?a.reduce(function(x,y){return x+y;},0)/a.length:0;}
+function stddev(a){var m=mean(a);return a.length?Math.sqrt(a.reduce(function(s,x){return s+(x-m)*(x-m);},0)/a.length):0;}
+function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function dispDate(iso){var m=String(iso).match(/(\d{4})-(\d{2})-(\d{2})/);return m?(+m[2])+'/'+(+m[3]):iso;}
+/* 時刻→分 */
+function toMin(t){var m=String(t||'').match(/^(\d{1,2}):(\d{2})/);if(!m)return null;var hh=+m[1],mm=+m[2];return hh*60+mm;}
+/* 分→30分スロット開始ラベル。26時超は翌X時表記 */
+function slotLabel(min){var s=Math.floor(min/30)*30;var hh=Math.floor(s/60),mm=s%60;var disp=hh>=24?'翌'+(hh-24):''+hh;return disp+':'+('0'+mm).slice(-2);}
+function slotKey(min){return Math.floor(min/30)*30;}
+
+var G={};
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 取得中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  document.getElementById('dashboard').style.display='none';
+  try{
+    var t1=await (await fetch(U1)).text();
+    var t2=await (await fetch(U2)).text();
+    document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 雛形を生成中...';
+    var a1=csvArr(t1),a2=csvArr(t2),h1=a1[0],h2=a2[0];
+    function idx(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+    var i1d=idx(h1,'日付'),i1t=idx(h1,'TAXI'),i1e=idx(h1,'営収'),i1w=idx(h1,'曜');
+    var i2t=idx(h2,'乗車時間'),i2ew=idx(h2,'乗車地:市区'),i2en=idx(h2,'乗車地:地名'),i2f=idx(h2,'料金'),i2sk=idx(h2,'サンキュー');
+
+    /* メタ：プレタク日除外、特殊日除外、営収・曜日 */
+    var meta={};
+    a1.slice(1).forEach(function(r){
+      if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
+      var d=normDate(r[i1d]);if(!d||isSpecial(d))return;
+      meta[d]={eikyu:toN(r[i1e]),dow:String(r[i1w]||'').trim()};
+    });
+
+    /* 日報②を日付ごと（プレタク行除外） */
+    var byDate={};
+    a2.slice(1).forEach(function(r){
+      var sk=String(r[i2sk]||'').trim();
+      if(sk==='プレタク'||sk==='プレタクP')return;
+      var d=normDate(r[0]);if(!meta[d])return;
+      var f=toN(r[i2f]);if(f<=0)return;
+      var min=toMin(r[i2t]);if(min===null)return;
+      if(min<300)min+=1440; /* 0-5時は翌日扱いで+24h */
+      var w=String(r[i2ew]||'').trim(),nm=String(r[i2en]||'').trim();
+      var full=w&&nm?w+nm:(w||nm);if(!full)return;
+      if(!byDate[d])byDate[d]={rows:[]};
+      byDate[d].rows.push({min:min,ward:w,name:nm,full:full,fare:f});
+    });
+
+    G.meta=meta;G.byDate=byDate;
+    G.models={};
+    DOW.forEach(function(dow){G.models[dow]=buildModel(dow);});
+
+    /* タブ生成 */
+    var tabsHtml='',panelsHtml='';
+    DOW.forEach(function(dow,i){
+      tabsHtml+='<button class="tab'+(dow==='月'?' on':'')+'" style="background:'+DC[dow]+'" onclick="sw(\''+dow+'\',this)">'+dow+'</button>';
+      panelsHtml+='<div class="panel'+(dow==='月'?' on':'')+'" id="p-'+dow+'"></div>';
+    });
+    document.getElementById('tabs').innerHTML=tabsHtml;
+    document.getElementById('panels').innerHTML=panelsHtml;
+    DOW.forEach(function(dow){renderModel(dow);});
+
+    document.getElementById('msgbox').style.display='none';
+    document.getElementById('dashboard').style.display='';
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e&&e.stack||e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+
+/* ロールモデル生成：その曜日の高営収日を選び、高単価除外、30分スロットで頻出地名を抽出 */
+function buildModel(dow){
+  /* その曜日の日（特殊日除外済み） */
+  var days=Object.keys(G.byDate).filter(function(d){return G.meta[d].dow===dow;})
+    .map(function(d){return {date:d,eikyu:G.meta[d].eikyu,rows:G.byDate[d].rows};})
+    .filter(function(x){return x.eikyu>0&&x.rows.length>=15;});
+  if(days.length<3)return {days:[],slots:[],baseDays:[]};
+
+  /* 営収上位40%（最低3日、最大8日）をベースに */
+  days.sort(function(a,b){return b.eikyu-a.eikyu;});
+  var n=Math.min(Math.max(3,Math.round(days.length*0.4)),8);
+  var base=days.slice(0,n);
+
+  /* 各ベース日について高単価(±2σ超)を除外 */
+  base.forEach(function(day){
+    var fares=day.rows.map(function(r){return r.fare;});
+    var m=mean(fares),sd=stddev(fares);
+    var hi=m+2*sd;
+    day.kept=day.rows.filter(function(r){return r.fare<=hi;});
+  });
+
+  /* スロットごとに地名を集計（ベース日横断） */
+  var slotMap={}; /* slotKey -> { name -> {cnt, days:Set, fareSum} } */
+  base.forEach(function(day){
+    /* 1日の中で同一スロット複数乗車あり得る。各乗車をスロットに割当 */
+    day.kept.forEach(function(r){
+      var sk=slotKey(r.min);
+      if(!slotMap[sk])slotMap[sk]={names:{},total:0,dset:{}};
+      var s=slotMap[sk];
+      if(!s.names[r.full])s.names[r.full]={cnt:0,fareSum:0,dset:{}};
+      s.names[r.full].cnt++;s.names[r.full].fareSum+=r.fare;s.names[r.full].dset[day.date]=1;
+      s.total++;s.dset[day.date]=1;
+    });
+  });
+
+  /* スロット配列化（5時=300分〜翌5時=1740分の範囲、データある所だけ） */
+  var slots=Object.keys(slotMap).map(function(k){return +k;}).sort(function(a,b){return a-b;}).map(function(sk){
+    var s=slotMap[sk];
+    var arr=Object.entries(s.names).map(function(e){
+      return {name:e[0],cnt:e[1].cnt,days:Object.keys(e[1].dset).length,avg:Math.round(e[1].fareSum/e[1].cnt)};
+    }).sort(function(a,b){
+      /* 出現日数優先→件数 */
+      if(b.days!==a.days)return b.days-a.days;
+      return b.cnt-a.cnt;
+    });
+    return {slot:sk,label:slotLabel(sk),total:s.total,activeDays:Object.keys(s.dset).length,cands:arr};
+  });
+
+  return {days:days,baseDays:base,slots:slots,baseN:n};
+}
+
+function renderModel(dow){
+  var M=G.models[dow];
+  var h='';
+  if(!M.slots.length){
+    h='<div class="card"><p class="note">'+dow+'曜のデータが不足しています（特殊日除外後）。</p></div>';
+    document.getElementById('p-'+dow).innerHTML=h;return;
+  }
+
+  /* ヘッダー情報 */
+  h+='<div class="card" style="border-color:'+DC[dow]+'44;background:'+DC[dow]+'08">';
+  h+='<div class="card-ttl" style="color:'+DC[dow]+'">🎯 '+dow+'曜 ロールモデル</div>';
+  h+='<p class="note">'+dow+'曜の<strong style="color:'+DC[dow]+'">営収上位'+M.baseN+'日</strong>をベースに、高単価案件(±2σ超)を除外して、30分スロットごとに頻出する地名を抽出。複数の良い日に共通して現れる地名＝そのスロットの「いるべき地名」。</p>';
+  h+='<div class="daylist">';
+  M.baseDays.forEach(function(d){h+='<span class="daychip">'+dispDate(d.date)+' ¥'+(d.eikyu/1000).toFixed(0)+'k</span>';});
+  h+='</div></div>';
+
+  /* フェーズ見出しを挟みながらスロット表示 */
+  var lastPhase='';
+  function phaseOf(sk){var hh=Math.floor(sk/60);if(hh<19)return '立ち上がり (16-19時)';if(hh<22)return '回転 (19-22時)';if(hh<24)return '割増前半 (22-24時)';return '深夜・サンキュー (24時-)';}
+
+  M.slots.forEach(function(s,i){
+    var ph=phaseOf(s.slot);
+    if(ph!==lastPhase){h+='<div class="phase">'+ph+'</div>';lastPhase=ph;}
+    var top=s.cands[0];
+    var alts=s.cands.slice(1,3);
+    /* 出現日数が多いほど信頼度高 */
+    var conf=Math.round(top.days/M.baseN*100);
+    h+='<div class="slot"><div class="slot-time">'+s.label+'</div><div class="slot-body">';
+    h+='<div class="slot-main">'+es(top.name)+'<span class="chip">'+conf+'% '+top.days+'/'+M.baseN+'日</span></div>';
+    if(alts.length){
+      h+='<div class="slot-alt">候補: '+alts.map(function(a){return es(a.name)+'('+a.days+'日)';}).join(' / ')+'</div>';
+    }
+    h+='<div class="slot-meta">平均¥'+top.avg.toLocaleString()+' ・ このスロット稼働'+s.activeDays+'/'+M.baseN+'日</div>';
+    h+='</div></div>';
+    if(i<M.slots.length-1)h+='<div class="connector">↓</div>';
+  });
+
+  h+='<div class="card" style="margin-top:14px"><p class="note">📌 <strong>見方</strong>：各スロットの太字が「最も多くの良い日で乗車した地名」。％と日数はベース日のうち何日その地名にいたか（信頼度）。候補は次点。複数日に現れる地名ほど再現価値が高い。単発の地名はそのスロットの参考。</p></div>';
+
+  document.getElementById('p-'+dow).innerHTML=h;
+}
+
+function sw(dow,btn){document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});document.getElementById('p-'+dow).classList.add('on');}
+run();
+</script>
+</body></html>
