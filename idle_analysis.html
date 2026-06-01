@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>空車時間・休憩分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#1a0a3a,#2a1040);border-bottom:1px solid #a78bfa55;padding:18px 16px 14px}
+.sub{font-size:10px;color:#a78bfa;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:18px;font-weight:800}
+.dscr{font-size:11px;color:#475569;margin-top:3px}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;margin-top:14px}
+.tab{padding:8px 14px;border-radius:20px;border:none;color:#fff;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0;opacity:.55}
+.tab.on{opacity:1}
+.panel{padding:0 14px;display:none}
+.panel.on{display:block}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+.note{font-size:11px;color:#94a3b8;line-height:1.7}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40;font-weight:600;font-size:10px}
+td{padding:6px 4px;border-bottom:1px solid #0d1220}
+.kg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:10px}
+.kc{background:#0d1220;border-radius:8px;padding:9px;text-align:center}
+.kc .l{font-size:9px;color:#475569;margin-bottom:3px}
+.kc .v{font-size:15px;font-weight:800}
+.bwrap{height:14px;background:#151e30;border-radius:4px;overflow:hidden;position:relative}
+.binner{height:100%;border-radius:4px}
+.seg{display:flex;height:22px;border-radius:6px;overflow:hidden;margin-top:4px}
+.seg div{display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#fff}
+.legend{display:flex;gap:12px;font-size:10px;color:#64748b;margin:8px 0}
+.dot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:3px}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Idle Time & Break Analysis</div>
+  <h1>⏱️ 空車時間・休憩分析</h1>
+  <div class="dscr">降車→次乗車の空き / 日月主軸・火水木金対比</div>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="dashboard" style="display:none">
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+</div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+
+var HOLIDAYS={'2024-01-01':1,'2024-01-08':1,'2024-02-11':1,'2024-02-12':1,'2024-02-23':1,'2024-03-20':1,'2024-04-29':1,'2024-05-03':1,'2024-05-04':1,'2024-05-05':1,'2024-05-06':1,'2024-07-15':1,'2024-08-11':1,'2024-08-12':1,'2024-09-16':1,'2024-09-22':1,'2024-09-23':1,'2024-10-14':1,'2024-11-03':1,'2024-11-04':1,'2024-11-23':1,'2025-01-01':1,'2025-01-13':1,'2025-02-11':1,'2025-02-23':1,'2025-02-24':1,'2025-03-20':1,'2025-04-29':1,'2025-05-03':1,'2025-05-04':1,'2025-05-05':1,'2025-05-06':1,'2025-07-21':1,'2025-08-11':1,'2025-09-15':1,'2025-09-23':1,'2025-10-13':1,'2025-11-03':1,'2025-11-23':1,'2025-11-24':1,'2026-01-01':1,'2026-01-12':1,'2026-02-11':1,'2026-02-23':1,'2026-03-20':1,'2026-04-29':1,'2026-05-03':1,'2026-05-04':1,'2026-05-05':1,'2026-05-06':1,'2026-07-20':1,'2026-08-11':1,'2026-09-21':1,'2026-09-22':1,'2026-09-23':1,'2026-10-12':1,'2026-11-03':1,'2026-11-23':1};
+function isSpecial(iso){if(HOLIDAYS[iso])return true;var m=iso.match(/\d{4}-(\d{2})-(\d{2})/);if(m){var mm=+m[1],dd=+m[2];if(mm===12&&dd>=28)return true;if(mm===1&&dd<=4)return true;}return false;}
+
+function csvArr(text){var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});function sp(line){var c=[],cur='',q=false;for(var i=0;i<line.length;i++){var ch=line[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else{cur+=ch;}}c.push(cur.trim());return c;}return lines.map(sp);}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function av(a){return a.length?a.reduce(function(x,y){return x+y;},0)/a.length:0;}
+function med(a){if(!a.length)return 0;var s=[].concat(a).sort(function(x,y){return x-y;});var m=Math.floor(s.length/2);return s.length%2?s[m]:(s[m-1]+s[m])/2;}
+function sd(a){var m=av(a);return a.length?Math.sqrt(a.reduce(function(s,x){return s+(x-m)*(x-m);},0)/a.length):0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function toMin(t){var m=String(t||'').match(/^(\d{1,2}):(\d{2})/);if(!m)return null;return +m[1]*60+ +m[2];}
+function hm(m){m=Math.round(m);return Math.floor(m/60)+'時間'+('0'+(m%60)).slice(-2)+'分';}
+function hhmm(min){var h=Math.floor(min/60),m=min%60;var disp=h>=24?'翌'+(h-24):''+h;return disp+':'+('0'+m).slice(-2);}
+
+var G={};
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 取得中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  document.getElementById('dashboard').style.display='none';
+  try{
+    var t1=await (await fetch(U1)).text();
+    var t2=await (await fetch(U2)).text();
+    document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 空車時間を計算中...';
+    var a1=csvArr(t1),a2=csvArr(t2),h1=a1[0],h2=a2[0];
+    function idx(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+    var i1d=idx(h1,'日付'),i1t=idx(h1,'TAXI'),i1e=idx(h1,'営収'),i1w=idx(h1,'曜'),i1sh=idx(h1,'出番');
+    var i2on=idx(h2,'乗車時間'),i2off=idx(h2,'降車時間'),i2f=idx(h2,'料金'),i2sk=idx(h2,'サンキュー');
+
+    /* メタ：J勤務・プレタク日除外・特殊日除外 */
+    var meta={};
+    a1.slice(1).forEach(function(r){
+      if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
+      if(String(r[i1sh]||'').trim()!=='J')return;
+      var d=normDate(r[i1d]);if(!d||isSpecial(d))return;
+      meta[d]={eikyu:toN(r[i1e]),dow:String(r[i1w]||'').trim()};
+    });
+
+    /* 日報②を日付ごと、乗車・降車を時系列で */
+    var byDate={};
+    a2.slice(1).forEach(function(r){
+      var sk=String(r[i2sk]||'').trim();
+      if(sk==='プレタク'||sk==='プレタクP')return;
+      var d=normDate(r[0]);if(!meta[d])return;
+      var on=toMin(r[i2on]),off=toMin(r[i2off]);if(on===null)return;
+      if(on<960)on+=1440;
+      if(off!==null){if(off<960)off+=1440;if(off<on)off+=1440;}
+      var f=toN(r[i2f]);if(f<=0)return;
+      if(!byDate[d])byDate[d]={rides:[]};
+      byDate[d].rides.push({on:on,off:off,fare:f});
+    });
+
+    /* 各日の空車時間（降車→次乗車）を計算 */
+    var days=[];
+    Object.keys(byDate).forEach(function(d){
+      var rides=byDate[d].rides.sort(function(a,b){return a.on-b.on;});
+      if(rides.length<15)return;
+      /* 初乗車16:00-17:30の日のみ（早出除外） */
+      if(rides[0].on<960||rides[0].on>1050)return;
+      var gaps=[];
+      for(var i=0;i<rides.length-1;i++){
+        var endPrev=rides[i].off!==null?rides[i].off:rides[i].on; /* 降車不明なら乗車時刻 */
+        var startNext=rides[i+1].on;
+        var gap=startNext-endPrev;
+        if(gap<0)gap=0;
+        if(gap>240)continue; /* 4時間超は終業またぎ等の異常として除外 */
+        gaps.push({gap:gap,atMin:endPrev}); /* 空きの開始時刻=前の降車時刻 */
+      }
+      days.push({date:d,dow:meta[d].dow,eikyu:meta[d].eikyu,rides:rides,gaps:gaps});
+    });
+
+    G.days=days;
+
+    /* 曜日群定義 */
+    G.groups={
+      '日':days.filter(function(x){return x.dow==='日';}),
+      '月':days.filter(function(x){return x.dow==='月';}),
+      '火水木金':days.filter(function(x){return ['火','水','木','金'].indexOf(x.dow)>=0;})
+    };
+
+    document.getElementById('tabs').innerHTML=
+      '<button class="tab on" style="background:#f472b6" onclick="sw(\'sun\',this)">日曜</button>'+
+      '<button class="tab" style="background:#f87171" onclick="sw(\'mon\',this)">月曜</button>'+
+      '<button class="tab" style="background:#60a5fa" onclick="sw(\'mid\',this)">火水木金</button>'+
+      '<button class="tab" style="background:#4ade80" onclick="sw(\'cmp\',this)">比較まとめ</button>';
+    document.getElementById('panels').innerHTML=
+      '<div class="panel on" id="p-sun"></div><div class="panel" id="p-mon"></div><div class="panel" id="p-mid"></div><div class="panel" id="p-cmp"></div>';
+
+    renderGroup('日','sun','#f472b6');
+    renderGroup('月','mon','#f87171');
+    renderGroup('火水木金','mid','#60a5fa');
+    renderCompare();
+
+    document.getElementById('msgbox').style.display='none';
+    document.getElementById('dashboard').style.display='';
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e&&e.stack||e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+
+/* 群の中で高営収日 vs 平均日に分けて空車時間を比較 */
+function splitHiLo(days){
+  var sorted=[].concat(days).sort(function(a,b){return b.eikyu-a.eikyu;});
+  var n=Math.max(1,Math.round(days.length*0.3));
+  return {hi:sorted.slice(0,n),lo:sorted.slice(n)};
+}
+
+/* 空きを階層別に集計。短(〜10分),中(11〜29分),大(30分以上) */
+function gapStats(days){
+  var all=[];days.forEach(function(d){d.gaps.forEach(function(g){all.push(g.gap);});});
+  var short=all.filter(function(g){return g<=10;});
+  var mid=all.filter(function(g){return g>10&&g<30;});
+  var big=all.filter(function(g){return g>=30;});
+  /* 1日あたりの大休憩回数 */
+  var bigPerDay=av(days.map(function(d){return d.gaps.filter(function(g){return g.gap>=30;}).length;}));
+  /* 1日あたり総空車時間 */
+  var idlePerDay=av(days.map(function(d){return d.gaps.reduce(function(s,g){return s+g.gap;},0);}));
+  /* 純回転待ち(30分未満)の平均 */
+  var turnGaps=all.filter(function(g){return g<30;});
+  return {
+    n:days.length,allCnt:all.length,
+    avgGap:av(all),medGap:med(all),sdGap:sd(all),
+    shortCnt:short.length,midCnt:mid.length,bigCnt:big.length,
+    turnAvg:av(turnGaps),
+    bigPerDay:bigPerDay,idlePerDay:idlePerDay,
+    bigTotal:big.reduce(function(s,g){return s+g;},0)/Math.max(1,days.length)
+  };
+}
+
+function renderGroup(gkey,pid,col){
+  var days=G.groups[gkey];
+  if(!days||!days.length){document.getElementById('p-'+pid).innerHTML='<div class="card"><p class="note">データなし</p></div>';return;}
+  var sp=splitHiLo(days);
+  var hi=gapStats(sp.hi),lo=gapStats(sp.lo);
+  var eikyuHi=Math.round(av(sp.hi.map(function(d){return d.eikyu;}))),eikyuLo=Math.round(av(sp.lo.map(function(d){return d.eikyu;})));
+
+  var h='<div class="card" style="border-color:'+col+'44;background:'+col+'08">';
+  h+='<div class="card-ttl" style="color:'+col+'">⏱️ '+gkey+' の空車時間（高営収日 vs 平均日）</div>';
+  h+='<p class="note">'+days.length+'日を営収上位30%('+hi.n+'日 ¥'+(eikyuHi/1000).toFixed(0)+'k)と残り('+lo.n+'日 ¥'+(eikyuLo/1000).toFixed(0)+'k)に分けて比較。空き=降車→次乗車。4時間超は終業またぎとして除外。</p></div>';
+
+  /* 主要指標の対比 */
+  h+='<div class="card"><div class="card-ttl">📊 空き時間の指標</div>';
+  h+='<table><thead><tr><th>指標</th><th style="text-align:right;color:'+col+'">高営収日</th><th style="text-align:right;color:#94a3b8">平均日</th><th style="text-align:right">差</th></tr></thead><tbody>';
+  function row(label,hv,lv,unit,better){
+    var diff=hv-lv;
+    var dcol=diff===0?'#475569':((better==='low'?diff<0:diff>0)?'#4ade80':'#f87171');
+    var fmt=function(v){return unit==='分'?v.toFixed(1)+'分':unit==='回'?v.toFixed(1)+'回':unit==='件'?Math.round(v)+'件':v.toFixed(0)+unit;};
+    return '<tr><td style="color:#94a3b8">'+label+'</td><td style="text-align:right;color:'+col+';font-weight:700">'+fmt(hv)+'</td><td style="text-align:right;color:#94a3b8">'+fmt(lv)+'</td><td style="text-align:right;color:'+dcol+';font-weight:700">'+(diff>=0?'+':'')+fmt(diff)+'</td></tr>';
+  }
+  h+=row('純回転待ち平均(30分未満)',hi.turnAvg,lo.turnAvg,'分','low');
+  h+=row('空き全体の中央値',hi.medGap,lo.medGap,'分','low');
+  h+=row('空き全体のばらつき(σ)',hi.sdGap,lo.sdGap,'分','low');
+  h+=row('大休憩(30分↑)回数/日',hi.bigPerDay,lo.bigPerDay,'回','');
+  h+=row('総空車時間/日',hi.idlePerDay,lo.idlePerDay,'分','low');
+  h+='</tbody></table>';
+  h+='<p class="note" style="margin-top:8px">純回転待ち＝GOが鳴るまでの時間。短いほど良い(緑)。大休憩回数は良し悪しでなく取り方の差。</p></div>';
+
+  /* 時間帯別 回転待ち */
+  h+='<div class="card"><div class="card-ttl">🕐 時間帯別 平均空き時間（回転速度）</div>';
+  h+='<div class="legend"><span><span class="dot" style="background:'+col+'"></span>高営収日</span><span><span class="dot" style="background:#475569"></span>平均日</span></div>';
+  var slotHi=slotIdle(sp.hi),slotLo=slotIdle(sp.lo);
+  var allSlots=[];for(var s=960;s<=2070;s+=60){allSlots.push(s);}
+  var mx=0;allSlots.forEach(function(s){if(slotHi[s])mx=Math.max(mx,slotHi[s].avg);if(slotLo[s])mx=Math.max(mx,slotLo[s].avg);});
+  allSlots.forEach(function(s){
+    var hv=slotHi[s]?slotHi[s].avg:null,lv=slotLo[s]?slotLo[s].avg:null;
+    if(hv===null&&lv===null)return;
+    var lbl=hhmm(s);
+    h+='<div style="margin-bottom:6px"><div style="font-size:10px;color:#94a3b8;margin-bottom:2px">'+lbl+'　<span style="color:'+col+'">高'+(hv!==null?hv.toFixed(0)+'分':'-')+'</span> / <span style="color:#64748b">平'+(lv!==null?lv.toFixed(0)+'分':'-')+'</span></div>';
+    h+='<div class="bwrap" style="height:8px">'+(hv!==null?'<div class="binner" style="width:'+(hv/mx*100)+'%;background:'+col+';height:4px"></div>':'')+(lv!==null?'<div class="binner" style="width:'+(lv/mx*100)+'%;background:#475569;height:4px"></div>':'')+'</div></div>';
+  });
+  h+='</div>';
+
+  /* 大休憩のタイミング分布 */
+  h+='<div class="card"><div class="card-ttl">🛑 大休憩(30分以上)を取った時刻</div>';
+  var bigSlots={};
+  days.forEach(function(d){d.gaps.forEach(function(g){if(g.gap>=30){var sk=Math.floor(g.atMin/60)*60;bigSlots[sk]=(bigSlots[sk]||0)+1;}});});
+  var bsArr=Object.keys(bigSlots).map(function(k){return {h:+k,c:bigSlots[k]};}).sort(function(a,b){return a.h-b.h;});
+  var bmx=bsArr.length?Math.max.apply(null,bsArr.map(function(x){return x.c;})):1;
+  if(bsArr.length){
+    bsArr.forEach(function(x){
+      h+='<div style="margin-bottom:5px"><div style="display:flex;justify-content:space-between;font-size:10px;color:#94a3b8"><span>'+hhmm(x.h)+'台</span><span>'+x.c+'回</span></div><div class="bwrap" style="height:8px"><div class="binner" style="width:'+(x.c/bmx*100)+'%;background:'+col+'88"></div></div></div>';
+    });
+    h+='<p class="note" style="margin-top:8px">ルール上の休憩タイミング（22時台の食事・27〜28時・32時前後の仮眠）と照合。山が立つ時刻が習慣化された休憩帯。</p>';
+  }else{h+='<p class="note">大休憩データなし</p>';}
+  h+='</div>';
+
+  document.getElementById('p-'+pid).innerHTML=h;
+}
+
+/* 時間帯別の平均空き時間 */
+function slotIdle(days){
+  var m={};
+  days.forEach(function(d){
+    d.gaps.forEach(function(g){
+      var sk=Math.floor(g.atMin/60)*60;
+      if(!m[sk])m[sk]={sum:0,cnt:0};
+      /* 回転速度を見るので30分未満の空きだけ（大休憩は除く） */
+      if(g.gap<30){m[sk].sum+=g.gap;m[sk].cnt++;}
+    });
+  });
+  var res={};Object.keys(m).forEach(function(k){if(m[k].cnt>0)res[k]={avg:m[k].sum/m[k].cnt,cnt:m[k].cnt};});
+  return res;
+}
+
+function renderCompare(){
+  var h='<div class="card" style="border-color:#4ade8044;background:#4ade8008"><div class="card-ttl" style="color:#4ade80">📊 曜日群の比較まとめ</div>';
+  h+='<p class="note">日・月（底上げ対象）と火水木金（9万前後の基準）で、時間の使い方がどう違うか。</p></div>';
+
+  var groups=[{k:'日',c:'#f472b6'},{k:'月',c:'#f87171'},{k:'火水木金',c:'#60a5fa'}];
+  h+='<div class="card"><div class="card-ttl">⏱️ 群別 空き時間サマリー</div>';
+  h+='<table><thead><tr><th>曜日群</th><th style="text-align:right">日数</th><th style="text-align:right">営収</th><th style="text-align:right">回転待ち</th><th style="text-align:right">総空車/日</th><th style="text-align:right">大休憩/日</th></tr></thead><tbody>';
+  groups.forEach(function(g){
+    var days=G.groups[g.k];if(!days.length)return;
+    var st=gapStats(days);
+    var eik=Math.round(av(days.map(function(d){return d.eikyu;})));
+    h+='<tr><td style="color:'+g.c+';font-weight:700">'+g.k+'</td><td style="text-align:right;color:#94a3b8">'+days.length+'</td><td style="text-align:right;color:#4ade80;font-weight:600">¥'+(eik/1000).toFixed(0)+'k</td><td style="text-align:right;color:#94a3b8">'+st.turnAvg.toFixed(1)+'分</td><td style="text-align:right;color:#94a3b8">'+hm(st.idlePerDay)+'</td><td style="text-align:right;color:#94a3b8">'+st.bigPerDay.toFixed(1)+'回</td></tr>';
+  });
+  h+='</tbody></table>';
+  h+='<p class="note" style="margin-top:8px">回転待ち＝30分未満の空きの平均（GOが鳴るまでの時間）。総空車/日＝1日の空き時間合計。</p></div>';
+
+  /* 解釈 */
+  var mon=gapStats(G.groups['月']),sun=gapStats(G.groups['日']),mid=gapStats(G.groups['火水木金']);
+  h+='<div class="card" style="border-color:#facc1544;background:#facc1508"><div class="card-ttl" style="color:#facc15">💡 読み取り</div><div class="note">';
+  h+='日曜の回転待ち '+sun.turnAvg.toFixed(1)+'分、月曜 '+mon.turnAvg.toFixed(1)+'分、火水木金 '+mid.turnAvg.toFixed(1)+'分。<br>';
+  var worst=[{k:'日',v:sun.turnAvg},{k:'月',v:mon.turnAvg},{k:'火水木金',v:mid.turnAvg}].sort(function(a,b){return b.v-a.v;})[0];
+  h+='回転待ちが最も長いのは<strong style="color:#facc15">'+worst.k+'（'+worst.v.toFixed(1)+'分）</strong>。';
+  h+='これは「乗せたいのに拾えない時間」が長い＝GOが鳴っていない時間が多いことを示す。各曜日タブで高営収日と比較すると、底上げの余地が見える。';
+  h+='</div></div>';
+
+  document.getElementById('p-cmp').innerHTML=h;
+}
+
+function sw(id,btn){document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});document.getElementById('p-'+id).classList.add('on');}
+run();
+</script>
+</body></html>
