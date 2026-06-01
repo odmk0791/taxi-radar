@@ -206,9 +206,28 @@ function renderModel(dow){
   h+='<div class="card" style="border-color:'+DC[dow]+'44;background:'+DC[dow]+'08">';
   h+='<div class="card-ttl" style="color:'+DC[dow]+'">🎯 '+dow+'曜 ロールモデル</div>';
   h+='<p class="note">'+dow+'曜の<strong style="color:'+DC[dow]+'">営収上位'+M.baseN+'日</strong>をベースに、高単価案件(±2σ超)を除外して、30分スロットごとに頻出する地名を抽出。複数の良い日に共通して現れる地名＝そのスロットの「いるべき地名」。</p>';
-  h+='<div class="daylist">';
-  M.baseDays.forEach(function(d){h+='<span class="daychip">'+dispDate(d.date)+' ¥'+(d.eikyu/1000).toFixed(0)+'k</span>';});
-  h+='</div></div>';
+  h+='</div>';
+
+  /* 🔍 ベース日点検テーブル */
+  h+='<div class="card" style="border-color:#facc1544;background:#facc1508"><div class="card-ttl" style="color:#facc15">🔍 ベース日の点検（怪しい日を確認）</div>';
+  h+='<p class="note" style="margin-bottom:8px">初乗車が16時台から外れる日や、件数が少ない/最高単価が突出する日は要確認。</p>';
+  h+='<table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr><th style="text-align:left;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">日付</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">初乗車</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">最終</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">件数</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">営収</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">最高</th></tr></thead><tbody>';
+  M.baseDays.forEach(function(d){
+    var mins=d.rows.map(function(r){return r.min;});
+    var mn=Math.min.apply(null,mins),mx=Math.max.apply(null,mins);
+    var maxF=Math.max.apply(null,d.rows.map(function(r){return r.fare;}));
+    function hm(m){return Math.floor(m/60)+':'+('0'+(m%60)).slice(-2);}
+    var early=!(mn>=960&&mn<=1050);
+    h+='<tr'+(early?' style="background:#f8717115"':'')+'>';
+    h+='<td style="padding:6px 4px;border-bottom:1px solid #0d1220;color:#e2e8f0;font-weight:600">'+dispDate(d.date)+(early?' <span style="color:#f87171;font-size:9px">⚠早出</span>':'')+'</td>';
+    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:'+(early?'#f87171':'#94a3b8')+';font-weight:'+(early?700:400)+'">'+hm(mn)+'</td>';
+    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:#64748b">'+hm(mx)+'</td>';
+    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:#60a5fa">'+d.rows.length+'</td>';
+    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:#4ade80;font-weight:700">¥'+(d.eikyu/1000).toFixed(0)+'k</td>';
+    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:'+(maxF>=15000?'#f87171':'#64748b')+'">¥'+maxF.toLocaleString()+'</td>';
+    h+='</tr>';
+  });
+  h+='</tbody></table></div>';
 
   /* フェーズ見出しを挟みながらスロット表示 */
   var lastPhase='';
