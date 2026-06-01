@@ -287,6 +287,18 @@ function renderCompare(){
   h+='これは「乗せたいのに拾えない時間」が長い＝GOが鳴っていない時間が多いことを示す。各曜日タブで高営収日と比較すると、底上げの余地が見える。';
   h+='</div></div>';
 
+  /* ★ 時間分析の結論：日曜と月曜で処方箋が違う */
+  h+='<div class="card" style="border-color:#4ade8066;background:#4ade8010">';
+  h+='<div class="card-ttl" style="color:#4ade80">🔑 結論：日曜と月曜は底上げの効きどころが違う</div>';
+  h+='<div class="note" style="line-height:2">';
+  h+='回転待ち(1件ごとの鳴り待ち)は日月火水木金どれも約11分で差はない。差は<strong style="color:#facc15">空車の総量と大きな空きの出方</strong>に出る。<br><br>';
+  h+='<strong style="color:#f472b6">■ 日曜 = 宵(19〜21時)に空車を作らない</strong><br>';
+  h+='宵の30分以上の空きが、高営収日0.64回 vs 平均日0.96回。良い日曜は宵に乗せ続けている。<strong style="color:#4ade80">日曜は19〜21時に空車を作らないことが底上げの鍵</strong>。<br><br>';
+  h+='<strong style="color:#f87171">■ 月曜 = 宵より深夜(23時・翌2時)の粘り</strong><br>';
+  h+='月曜は宵の空きが高営収日1.13回 vs 平均日0.94回で、むしろ良い日の方が宵は空いている。月曜の勝負は宵ではなく深夜。取りこぼし分析の「23時・翌2時に+0.4件/日」と整合。<strong style="color:#4ade80">月曜は深夜に粘ることが底上げの鍵</strong>。<br><br>';
+  h+='<span style="color:#94a3b8">※ 30分以上の空きは「意図的休憩」と「客がいない不本意な空き」が混在。長さからの推定。今後の休憩記録アプリで実測に置き換え予定。</span>';
+  h+='</div></div>';
+
   document.getElementById('p-cmp').innerHTML=h;
 }
 
