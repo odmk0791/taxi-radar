@@ -73,6 +73,17 @@ function slotLabel(min){var s=Math.floor(min/30)*30;var hh=Math.floor(s/60),mm=s
 function slotKey(min){return Math.floor(min/30)*30;}
 
 var G={};
+var EXCLUDED={};
+var EXC_KEY='rolemodel-excluded-v1';
+
+function loadExcluded(){try{var v=localStorage.getItem(EXC_KEY);if(v)EXCLUDED=JSON.parse(v);}catch(e){}}
+function saveExcluded(){try{localStorage.setItem(EXC_KEY,JSON.stringify(EXCLUDED));}catch(e){}}
+function toggleExclude(date,dow){
+  if(EXCLUDED[date])delete EXCLUDED[date];else EXCLUDED[date]=true;
+  saveExcluded();
+  G.models[dow]=buildModel(dow);
+  renderModel(dow);
+}
 
 async function run(){
   document.getElementById('msgbox').style.display='';
@@ -117,6 +128,7 @@ async function run(){
 
     G.meta=meta;G.byDate=byDate;
     G.models={};
+    loadExcluded();
     DOW.forEach(function(dow){G.models[dow]=buildModel(dow);});
 
     /* タブ生成 */
@@ -149,12 +161,13 @@ function buildModel(dow){
       var mn=Math.min.apply(null,x.rows.map(function(r){return r.min;}));
       return mn>=960&&mn<=1050;
     });
-  if(days.length<3)return {days:[],slots:[],baseDays:[]};
+  if(days.length<3)return {days:[],slots:[],baseDays:[],allCands:[]};
 
-  /* 営収上位40%（最低3日、最大8日）をベースに */
+  /* 営収順にソート。除外日を除いてベースを選ぶ */
   days.sort(function(a,b){return b.eikyu-a.eikyu;});
-  var n=Math.min(Math.max(3,Math.round(days.length*0.4)),8);
-  var base=days.slice(0,n);
+  var available=days.filter(function(d){return !EXCLUDED[d.date];});
+  var n=Math.min(Math.max(3,Math.round(available.length*0.4)),8);
+  var base=available.slice(0,n);
 
   /* 各ベース日について高単価(±2σ超)を除外 */
   base.forEach(function(day){
@@ -191,7 +204,17 @@ function buildModel(dow){
     return {slot:sk,label:slotLabel(sk),total:s.total,activeDays:Object.keys(s.dset).length,cands:arr};
   });
 
-  return {days:days,baseDays:base,slots:slots,baseN:n};
+  /* 除外UI用：上位候補日（除外済み含む）の情報。上位15日まで */
+  var candList=days.slice(0,15).map(function(d){
+    var fares=d.rows.map(function(r){return r.fare;});
+    var m=mean(fares),sd=stddev(fares);
+    var obake=fares.filter(function(f){return f>m+2*sd;}).length;
+    var mn=Math.min.apply(null,d.rows.map(function(r){return r.min;}));
+    return {date:d.date,eikyu:d.eikyu,trips:d.rows.length,firstMin:mn,obake:obake,
+            excluded:!!EXCLUDED[d.date],inBase:base.indexOf(d)>=0};
+  });
+
+  return {days:days,baseDays:base,slots:slots,baseN:n,candList:candList};
 }
 
 function renderModel(dow){
@@ -208,26 +231,32 @@ function renderModel(dow){
   h+='<p class="note">'+dow+'曜の<strong style="color:'+DC[dow]+'">営収上位'+M.baseN+'日</strong>をベースに、高単価案件(±2σ超)を除外して、30分スロットごとに頻出する地名を抽出。複数の良い日に共通して現れる地名＝そのスロットの「いるべき地名」。</p>';
   h+='</div>';
 
-  /* 🔍 ベース日点検テーブル */
-  h+='<div class="card" style="border-color:#facc1544;background:#facc1508"><div class="card-ttl" style="color:#facc15">🔍 ベース日の点検（怪しい日を確認）</div>';
-  h+='<p class="note" style="margin-bottom:8px">初乗車が16時台から外れる日や、件数が少ない/最高単価が突出する日は要確認。</p>';
-  h+='<table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr><th style="text-align:left;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">日付</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">初乗車</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">最終</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">件数</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">営収</th><th style="text-align:right;color:#475569;padding:5px 4px;border-bottom:1px solid #1e2d40">最高</th></tr></thead><tbody>';
-  M.baseDays.forEach(function(d){
-    var mins=d.rows.map(function(r){return r.min;});
-    var mn=Math.min.apply(null,mins),mx=Math.max.apply(null,mins);
-    var maxF=Math.max.apply(null,d.rows.map(function(r){return r.fare;}));
-    function hm(m){return Math.floor(m/60)+':'+('0'+(m%60)).slice(-2);}
-    var early=!(mn>=960&&mn<=1050);
-    h+='<tr'+(early?' style="background:#f8717115"':'')+'>';
-    h+='<td style="padding:6px 4px;border-bottom:1px solid #0d1220;color:#e2e8f0;font-weight:600">'+dispDate(d.date)+(early?' <span style="color:#f87171;font-size:9px">⚠早出</span>':'')+'</td>';
-    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:'+(early?'#f87171':'#94a3b8')+';font-weight:'+(early?700:400)+'">'+hm(mn)+'</td>';
-    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:#64748b">'+hm(mx)+'</td>';
-    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:#60a5fa">'+d.rows.length+'</td>';
-    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:#4ade80;font-weight:700">¥'+(d.eikyu/1000).toFixed(0)+'k</td>';
-    h+='<td style="text-align:right;padding:6px 4px;border-bottom:1px solid #0d1220;color:'+(maxF>=15000?'#f87171':'#64748b')+'">¥'+maxF.toLocaleString()+'</td>';
-    h+='</tr>';
+  /* 🔍 ベース日点検＋除外トグル */
+  h+='<div class="card" style="border-color:#facc1544;background:#facc1508"><div class="card-ttl" style="color:#facc15">🔍 ベース日の点検・除外</div>';
+  h+='<p class="note" style="margin-bottom:8px">営収上位日。<strong style="color:#facc15">緑=ベース採用中</strong>。怪しい日（早出・件数少・おばけ多い等）は「除外」をタップすると雛形から外れ、次の良い日が繰り上がります。設定は保存されます。</p>';
+  h+='<table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr><th style="text-align:left;color:#475569;padding:5px 3px;border-bottom:1px solid #1e2d40">日付</th><th style="text-align:right;color:#475569;padding:5px 3px;border-bottom:1px solid #1e2d40">初乗</th><th style="text-align:right;color:#475569;padding:5px 3px;border-bottom:1px solid #1e2d40">件</th><th style="text-align:right;color:#475569;padding:5px 3px;border-bottom:1px solid #1e2d40">営収</th><th style="text-align:right;color:#475569;padding:5px 3px;border-bottom:1px solid #1e2d40">おばけ</th><th style="text-align:center;color:#475569;padding:5px 3px;border-bottom:1px solid #1e2d40">採用</th></tr></thead><tbody>';
+  function hm2(m){return Math.floor(m/60)+':'+('0'+(m%60)).slice(-2);}
+  M.candList.forEach(function(c){
+    var early=!(c.firstMin>=960&&c.firstMin<=1050);
+    var bg=c.excluded?'background:#0d1220;opacity:.5':(c.inBase?'background:#4ade8010':'');
+    h+='<tr style="'+bg+'">';
+    h+='<td style="padding:6px 3px;border-bottom:1px solid #0d1220;color:'+(c.inBase?'#4ade80':'#94a3b8')+';font-weight:'+(c.inBase?700:400)+'">'+dispDate(c.date)+(early?' <span style="color:#f87171;font-size:8px">⚠早出</span>':'')+'</td>';
+    h+='<td style="text-align:right;padding:6px 3px;border-bottom:1px solid #0d1220;color:'+(early?'#f87171':'#64748b')+'">'+hm2(c.firstMin)+'</td>';
+    h+='<td style="text-align:right;padding:6px 3px;border-bottom:1px solid #0d1220;color:#60a5fa">'+c.trips+'</td>';
+    h+='<td style="text-align:right;padding:6px 3px;border-bottom:1px solid #0d1220;color:#4ade80;font-weight:600">¥'+(c.eikyu/1000).toFixed(0)+'k</td>';
+    h+='<td style="text-align:right;padding:6px 3px;border-bottom:1px solid #0d1220;color:'+(c.obake>=2?'#f87171':'#64748b')+'">'+c.obake+'件</td>';
+    h+='<td style="text-align:center;padding:6px 3px;border-bottom:1px solid #0d1220">';
+    if(c.excluded){
+      h+='<span onclick="toggleExclude(\''+c.date+'\',\''+dow+'\')" style="cursor:pointer;font-size:10px;padding:3px 8px;border-radius:6px;background:#f8717122;color:#f87171;font-weight:700">除外中↩</span>';
+    }else{
+      h+='<span onclick="toggleExclude(\''+c.date+'\',\''+dow+'\')" style="cursor:pointer;font-size:10px;padding:3px 8px;border-radius:6px;background:#1a2035;color:#94a3b8;border:1px solid #1e2d40">除外</span>';
+    }
+    h+='</td></tr>';
   });
-  h+='</tbody></table></div>';
+  h+='</tbody></table>';
+  var excCount=Object.keys(EXCLUDED).length;
+  if(excCount>0)h+='<p class="note" style="margin-top:8px;color:#f87171">全曜日で'+excCount+'日を除外中</p>';
+  h+='</div>';
 
   /* フェーズ見出しを挟みながらスロット表示 */
   var lastPhase='';
