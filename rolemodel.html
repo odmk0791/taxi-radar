@@ -40,7 +40,7 @@ h1{font-size:18px;font-weight:800}
 <div id="hdr">
   <div class="sub">Daily Role Model</div>
   <h1>🎯 曜日別 ロールモデル</h1>
-  <div class="dscr">16時点呼(J)の日 / 乗車16:20〜翌11:00 / 高単価除外 / 30分スロット</div>
+  <div class="dscr">16時点呼の日(初乗車16時台) / 乗車16:20〜翌11:00 / 高単価除外</div>
 </div>
 <div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
 <button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
@@ -106,7 +106,7 @@ async function run(){
       var d=normDate(r[0]);if(!meta[d])return;
       var f=toN(r[i2f]);if(f<=0)return;
       var min=toMin(r[i2t]);if(min===null)return;
-      if(min<720)min+=1440; /* 0:00-11:59 は翌日（一晩通し）扱いで+24h */
+      if(min<960)min+=1440; /* 16時(960分)より前は翌日（一晩通し）扱いで+24h */
       /* 稼働範囲: 16:20(980分)〜翌11:00(2100分)の乗車のみ */
       if(min<980||min>2100)return;
       var w=String(r[i2ew]||'').trim(),nm=String(r[i2en]||'').trim();
@@ -143,7 +143,12 @@ function buildModel(dow){
   /* その曜日の日（特殊日除外済み） */
   var days=Object.keys(G.byDate).filter(function(d){return G.meta[d].dow===dow;})
     .map(function(d){return {date:d,eikyu:G.meta[d].eikyu,rows:G.byDate[d].rows};})
-    .filter(function(x){return x.eikyu>0&&x.rows.length>=15;});
+    .filter(function(x){
+      if(x.eikyu<=0||x.rows.length<15)return false;
+      /* 早出日除外: その日の最初の乗車が16:00(960)〜17:30(1050)の範囲にあること */
+      var mn=Math.min.apply(null,x.rows.map(function(r){return r.min;}));
+      return mn>=960&&mn<=1050;
+    });
   if(days.length<3)return {days:[],slots:[],baseDays:[]};
 
   /* 営収上位40%（最低3日、最大8日）をベースに */
