@@ -40,7 +40,7 @@ h1{font-size:18px;font-weight:800}
 <div id="hdr">
   <div class="sub">Daily Role Model</div>
   <h1>🎯 曜日別 ロールモデル</h1>
-  <div class="dscr">16時点呼の日(初乗車16時台) / 乗車16:20〜翌11:00 / 高単価除外</div>
+  <div class="dscr">16時点呼の日 / 町名レベル集計 / 高単価除外 / 30分スロット</div>
 </div>
 <div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
 <button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
@@ -71,6 +71,14 @@ function toMin(t){var m=String(t||'').match(/^(\d{1,2}):(\d{2})/);if(!m)return n
 /* 分→30分スロット開始ラベル。26時超は翌X時表記 */
 function slotLabel(min){var s=Math.floor(min/30)*30;var hh=Math.floor(s/60),mm=s%60;var disp=hh>=24?'翌'+(hh-24):''+hh;return disp+':'+('0'+mm).slice(-2);}
 function slotKey(min){return Math.floor(min/30)*30;}
+/* 丁目・番地を落として町名レベルに: 「世田谷区三軒茶屋二丁目」→「世田谷区三軒茶屋」 */
+function townLevel(full){
+  return String(full||'')
+    .replace(/[一二三四五六七八九十〇0-9]+丁目.*$/,'')
+    .replace(/[0-9]+(-[0-9]+)*$/,'')
+    .replace(/[0-9]+番.*$/,'')
+    .trim();
+}
 
 var G={};
 var EXCLUDED={};
@@ -123,7 +131,7 @@ async function run(){
       var w=String(r[i2ew]||'').trim(),nm=String(r[i2en]||'').trim();
       var full=w&&nm?w+nm:(w||nm);if(!full)return;
       if(!byDate[d])byDate[d]={rows:[]};
-      byDate[d].rows.push({min:min,ward:w,name:nm,full:full,fare:f});
+      byDate[d].rows.push({min:min,ward:w,name:nm,full:full,town:townLevel(full),fare:f});
     });
 
     G.meta=meta;G.byDate=byDate;
@@ -185,8 +193,9 @@ function buildModel(dow){
       var sk=slotKey(r.min);
       if(!slotMap[sk])slotMap[sk]={names:{},total:0,dset:{}};
       var s=slotMap[sk];
-      if(!s.names[r.full])s.names[r.full]={cnt:0,fareSum:0,dset:{}};
-      s.names[r.full].cnt++;s.names[r.full].fareSum+=r.fare;s.names[r.full].dset[day.date]=1;
+      var keyName=r.town||r.full;
+      if(!s.names[keyName])s.names[keyName]={cnt:0,fareSum:0,dset:{}};
+      s.names[keyName].cnt++;s.names[keyName].fareSum+=r.fare;s.names[keyName].dset[day.date]=1;
       s.total++;s.dset[day.date]=1;
     });
   });
