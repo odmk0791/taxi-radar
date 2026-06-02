@@ -160,9 +160,8 @@ body{display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:0}
 <div class="history">
   <div class="history-hdr">
     <span class="history-title" id="history-title">最近の記録</span>
-    <span onclick="bulkSubmit()" style="font-size:11px;color:var(--g);cursor:pointer;margin-right:8px">☁️ 一括送信</span>
-    <span onclick="exportCSV()" style="font-size:11px;color:var(--am);cursor:pointer;margin-right:8px">📥 CSV</span>
-    <span onclick="bulkSubmit()" style="font-size:11px;color:#58a6ff;cursor:pointer;margin-right:8px">☁️ 一括送信</span>
+    <span onclick="bulkSubmit()" style="font-size:11px;color:#58a6ff;cursor:pointer;margin-right:6px" title="過去データを一括送信">☁️ 過去データ送信</span>
+    <span onclick="exportCSV()" style="font-size:11px;color:var(--am);cursor:pointer;margin-right:6px">📥 CSV</span>
     <span class="history-clear" id="undo-btn" onclick="undoLast()" style="color:var(--am);margin-right:8px">↩ 直前を削除</span>
     <span class="history-clear" onclick="clearHistory()">クリア</span>
   </div>
