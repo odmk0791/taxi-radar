@@ -1058,7 +1058,7 @@ var FB_KEY='taxiradar_feedback';
 var FB_FORM='https://docs.google.com/forms/d/e/1FAIpQLSeuaCYnYmKlHUPDtP69xGmDPhCyQfFbdR7wvS01J_DYH1RebQ/formResponse';
 
 function submitFbToForm(ward,name,hour,result){
-  var sh = hour < 16 ? hour + 24 : hour; // 36時間制に変換
+  var sh = hour < 12 ? hour + 24 : hour; // 36時間制変換（0-11時 → 24-35時）
   var params=new URLSearchParams({
     'entry.1675835855': new Date().toISOString(),
     'entry.1651962748': ward+name,
