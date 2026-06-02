@@ -471,6 +471,23 @@ function doSearch(q){
   });
 }
 
+// Googleフォーム送信
+var FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSecTUrQBDC4GLyM4meAsvdF_vi3Y3kh03WfMuLPzVLSkVo3Yw/formResponse';
+function submitToForm(rec){
+  var params = new URLSearchParams({
+    'entry.85957826':  rec.ts,
+    'entry.1300013482': rec.area,
+    'entry.1638910415': rec.count,
+    'entry.1273362015': String(rec.hour)
+  });
+  fetch(FORM_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+    body: params.toString()
+  }).catch(function(){});
+}
+
 // 記録
 function record(val){
   if(!currentArea) currentArea = '未設定';
@@ -489,6 +506,7 @@ function record(val){
     if(logs.length > 2000) logs = logs.slice(-2000);
     localStorage.setItem(KEY, JSON.stringify(logs));
   }catch(e){}
+  submitToForm(rec);
   showFlash(val);
   renderHistory();
 }
