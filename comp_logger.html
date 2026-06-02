@@ -494,12 +494,13 @@ function record(val){
   if(!currentArea) currentArea = '未設定';
   var now = new Date();
   var h = now.getHours(), m = now.getMinutes();
+  var sh = h < 16 ? h + 24 : h; // シフト時間（16〜36時）に変換
   var rec = {
     ts: now.toISOString(),
     disp: (h<10?'0':'')+h+':'+(m<10?'0':'')+m,
     area: currentArea,
     lat: currentLat, lng: currentLng,
-    count: val, hour: h
+    count: val, hour: sh
   };
   try{
     var logs = JSON.parse(localStorage.getItem(KEY)||'[]');
