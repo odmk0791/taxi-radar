@@ -160,7 +160,9 @@ body{display:flex;flex-direction:column;max-width:480px;margin:0 auto;padding:0}
 <div class="history">
   <div class="history-hdr">
     <span class="history-title" id="history-title">最近の記録</span>
+    <span onclick="bulkSubmit()" style="font-size:11px;color:var(--g);cursor:pointer;margin-right:8px">☁️ 一括送信</span>
     <span onclick="exportCSV()" style="font-size:11px;color:var(--am);cursor:pointer;margin-right:8px">📥 CSV</span>
+    <span onclick="bulkSubmit()" style="font-size:11px;color:#58a6ff;cursor:pointer;margin-right:8px">☁️ 一括送信</span>
     <span class="history-clear" id="undo-btn" onclick="undoLast()" style="color:var(--am);margin-right:8px">↩ 直前を削除</span>
     <span class="history-clear" onclick="clearHistory()">クリア</span>
   </div>
@@ -536,6 +538,29 @@ function renderHistory(){
     document.getElementById('history-title').textContent = '最近の記録（計'+logs.length+'件）';
     document.getElementById('total').textContent = '累計 '+logs.length+' 件のデータが蓄積されています';
   }catch(e){}
+}
+
+function bulkSubmit(){
+  var logs = JSON.parse(localStorage.getItem(KEY)||'[]');
+  if(!logs.length){ alert('送信するデータがありません'); return; }
+  if(!confirm(logs.length+'件をスプレッドシートに送信します。\n（数分かかる場合があります）')) return;
+
+  var total = logs.length, done = 0;
+  var statusEl = document.getElementById('history-title');
+  var original = statusEl.textContent;
+
+  function sendNext(i){
+    if(i >= logs.length){
+      statusEl.textContent = original;
+      showFlash('送信完了 '+total+'件');
+      return;
+    }
+    statusEl.textContent = '送信中... '+done+'/'+total;
+    submitToForm(logs[i]);
+    done++;
+    setTimeout(function(){ sendNext(i+1); }, 300);
+  }
+  sendNext(0);
 }
 
 function exportCSV(){
