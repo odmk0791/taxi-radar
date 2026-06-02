@@ -1058,10 +1058,11 @@ var FB_KEY='taxiradar_feedback';
 var FB_FORM='https://docs.google.com/forms/d/e/1FAIpQLSeuaCYnYmKlHUPDtP69xGmDPhCyQfFbdR7wvS01J_DYH1RebQ/formResponse';
 
 function submitFbToForm(ward,name,hour,result){
+  var sh = hour < 16 ? hour + 24 : hour; // 36時間制に変換
   var params=new URLSearchParams({
     'entry.1675835855': new Date().toISOString(),
     'entry.1651962748': ward+name,
-    'entry.223084366':  String(Math.round(hour)),
+    'entry.223084366':  String(sh),
     'entry.1454398756': result
   });
   fetch(FB_FORM,{method:'POST',mode:'no-cors',
