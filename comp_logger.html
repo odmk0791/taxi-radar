@@ -494,7 +494,7 @@ function record(val){
   if(!currentArea) currentArea = '未設定';
   var now = new Date();
   var h = now.getHours(), m = now.getMinutes();
-  var sh = h < 16 ? h + 24 : h; // シフト時間（16〜36時）に変換
+  var sh = h < 12 ? h + 24 : h; // 36時間制変換（0-11時 → 24-35時）
   var rec = {
     ts: now.toISOString(),
     disp: (h<10?'0':'')+h+':'+(m<10?'0':'')+m,
