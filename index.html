@@ -306,12 +306,23 @@ var GEOCACHE={};
 var COORDS_CSV_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=657495537&single=true&output=csv';
 var COORDS_CACHE_KEY='taxiradar_coords_v1';
 
+
+// 座標修正（DBの誤りを上書き）
+var COORDS_FIX={
+  '和光市白子':[35.7728,139.6057]
+};
+function applyCoordsFix(){
+  Object.keys(COORDS_FIX).forEach(function(k){
+    COORDS[k]=COORDS_FIX[k];
+  });
+}
 function loadCoordsCSV(onDone){
   // キャッシュから即時適用
   try{
     var cached=localStorage.getItem(COORDS_CACHE_KEY);
     if(cached){
       COORDS=JSON.parse(cached);
+      applyCoordsFix();
       if(onDone)onDone(true);
     }
   }catch(e){}
@@ -333,7 +344,8 @@ function loadCoordsCSV(onDone){
       }
       if(Object.keys(newCoords).length>100){
         COORDS=newCoords;
-        try{localStorage.setItem(COORDS_CACHE_KEY,JSON.stringify(COORDS));}catch(e){}
+        try{applyCoordsFix();
+        localStorage.setItem(COORDS_CACHE_KEY,JSON.stringify(COORDS));}catch(e){}
         if(onDone)onDone(false);
         // 座標更新後に再描画
         if(uLat)renderRadar();
