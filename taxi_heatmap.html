@@ -45,6 +45,11 @@ body{background:var(--bg);color:var(--text);
   background:var(--surface2);color:var(--muted);font-size:11px;cursor:pointer;
   white-space:nowrap;-webkit-tap-highlight-color:transparent}
 .ctrl-btn:hover,.ctrl-btn:active{border-color:var(--blue);color:var(--blue)}
+.mode-btn{padding:4px 8px;border-radius:4px;border:1px solid var(--border);
+  background:var(--surface2);color:var(--muted);font-size:11px;font-weight:700;
+  cursor:pointer;transition:all .15s;-webkit-tap-highlight-color:transparent}
+.mode-btn.active{background:var(--green);color:#0d1117;border-color:var(--green)}
+.mode-btn:hover{border-color:var(--green);color:var(--green)}
 #play-btn.playing{border-color:var(--orange);color:var(--orange)}
 
 /* ── ステータスバー ── */
@@ -122,6 +127,12 @@ body{background:var(--bg);color:var(--text);
 </div>
 
 <div id="controls">
+  <div id="mode-group" style="display:flex;gap:3px;align-items:center">
+    <span class="ctrl-label">表示</span>
+    <button class="mode-btn active" data-mode="count">件数</button>
+    <button class="mode-btn" data-mode="revenue">売上</button>
+    <button class="mode-btn" data-mode="price">単価</button>
+  </div>
   <div id="day-group">
     <span class="ctrl-label">曜日</span>
     <button class="day-btn" data-day="1">月</button>
@@ -211,12 +222,16 @@ const isHolidayEve = ds => {
 const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv";
 const COL = {date:0, time:2, ward:5, place:6};
 
-let rideData = {};
+let rideData = {}, fareData = {};
 const resetData = () => {
-  for(let d=0;d<=7;d++){rideData[d]={};for(let h=0;h<=40;h++)rideData[d][h]={};}
+  for(let d=0;d<=7;d++){
+    rideData[d]={}; fareData[d]={};
+    for(let h=0;h<=40;h++){ rideData[d][h]={}; fareData[d][h]={}; }
+  }
 };
 resetData();
 let globalMax=1, totalCount=0;
+let displayMode = 'count'; // count / revenue / price
 let map, polygonLayer, voronoiObj=null;
 let selectedDay=1, selectedHour=19, playTimer=null;
 let locationMarker=null, locationCircle=null;
@@ -259,6 +274,13 @@ const parseCSV = text => {
   return text.split(/\r?\n/).filter(l=>l.trim()).map(parse);
 };
 
+// 料金文字列 → 数値（¥1,500 → 1500）
+const parseFare = s => {
+  if(!s) return 0;
+  const n = parseInt(s.replace(/[^0-9]/g, ''));
+  return isNaN(n) ? 0 : n;
+};
+
 // 強度→色（青→水色→緑→黄→オレンジ→赤）
 const intensityToColor = t => {
   const stops=[
@@ -299,11 +321,21 @@ function drawPolygons(){
   polygonLayer.clearLayers();
 
   const hourData = rideData[selectedDay]?.[selectedHour] || {};
+  const fareHourData = fareData[selectedDay]?.[selectedHour] || {};
   const entries = Object.entries(hourData);
+
+  // モード別の値を返す関数
+  const getVal = addr => {
+    const cnt = hourData[addr] || 0;
+    if(displayMode === 'count') return cnt;
+    if(displayMode === 'revenue') return fareHourData[addr] || 0;
+    if(displayMode === 'price') return cnt > 0 ? Math.round((fareHourData[addr]||0)/cnt) : 0;
+    return cnt;
+  };
 
   // スロット内最大値（相対カラー）
   let slotMax=1;
-  entries.forEach(([,c])=>{if(c>slotMax)slotMax=c;});
+  entries.forEach(([addr]) => { const v=getVal(addr); if(v>slotMax)slotMax=v; });
 
   // 全インデックスループ（実データのみ描画）
   COORDS_ALL.forEach(([addr,lat,lng],i) => {
@@ -338,7 +370,7 @@ function drawPolygons(){
     }
 
     // 件数あり → 色付き
-    const intensity = Math.pow(count/slotMax, 0.5);
+    const intensity = Math.pow((getVal?getVal(addr):count)/slotMax, 0.5);
     const color = intensityToColor(intensity);
     const fillOpacity = 0.22 + intensity*0.55;
 
@@ -359,8 +391,16 @@ function drawPolygons(){
         .setContent(`
           <div class="pop-addr">${addr}</div>
           <div class="pop-row">
-            <span class="pop-key">${days[selectedDay]} ${selectedHour}時台</span>
+            <span class="pop-key">${days[selectedDay]} ${selectedHour}時台 乗車</span>
             <span class="pop-val" style="color:${color}">${count}件</span>
+          </div>
+          <div class="pop-row">
+            <span class="pop-key">売上合計</span>
+            <span class="pop-val">¥${(fareHourData[addr]||0).toLocaleString()}</span>
+          </div>
+          <div class="pop-row">
+            <span class="pop-key">平均単価</span>
+            <span class="pop-val">${count>0?'¥'+Math.round((fareHourData[addr]||0)/count).toLocaleString():'—'}</span>
           </div>
           <div class="pop-bar-bg"><div class="pop-bar" style="width:${barW}%;background:${color}"></div></div>
           <div class="pop-row" style="margin-top:4px">
@@ -432,7 +472,9 @@ function processCSV(rows){
     const cat=isHoliday(ds)?0:(isHolidayEve(ds)?7:dow);
     // hour が 34 超の場合も安全に対応（深夜残業など）
     if(!rideData[cat][hour]) rideData[cat][hour]={};
+    if(!fareData[cat][hour]) fareData[cat][hour]={};
     rideData[cat][hour][addr]=(rideData[cat][hour][addr]||0)+1;
+    fareData[cat][hour][addr]=(fareData[cat][hour][addr]||0)+parseFare(cols[9]);
     ok++;
   }
   totalCount=ok;
@@ -611,6 +653,13 @@ document.getElementById('dbg-close').addEventListener('click', ()=>{
 // ================================================================
 // イベント & 起動
 // ================================================================
+document.querySelectorAll('.mode-btn').forEach(btn=>
+  btn.addEventListener('click',()=>{
+    displayMode = btn.dataset.mode;
+    document.querySelectorAll('.mode-btn').forEach(b=>b.classList.toggle('active',b===btn));
+    drawPolygons();
+  }));
+
 document.querySelectorAll('.day-btn').forEach(btn=>
   btn.addEventListener('click',()=>{selectedDay=+btn.dataset.day;updateDayBtns();drawPolygons();}));
 document.getElementById('time-slider').addEventListener('input',e=>{
