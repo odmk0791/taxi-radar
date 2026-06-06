@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>月曜 空き発生の降車地分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#3a0a1a,#40110f);border-bottom:1px solid #f8717155;padding:18px 16px 14px}
+.sub{font-size:10px;color:#f87171;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:18px;font-weight:800}
+.dscr{font-size:11px;color:#475569;margin-top:3px}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;margin-top:14px}
+.tab{padding:8px 14px;border-radius:20px;border:none;color:#fff;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0;opacity:.55}
+.tab.on{opacity:1}
+.panel{padding:0 14px;display:none}
+.panel.on{display:block}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+.note{font-size:11px;color:#94a3b8;line-height:1.7}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:#475569;padding:6px 4px;border-bottom:1px solid #1e2d40;font-weight:600;font-size:10px}
+td{padding:7px 4px;border-bottom:1px solid #0d1220}
+.bwrap{height:12px;background:#151e30;border-radius:4px;overflow:hidden;margin-top:3px}
+.binner{height:100%;border-radius:4px}
+.kg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:10px}
+.kc{background:#0d1220;border-radius:8px;padding:9px;text-align:center}
+.kc .l{font-size:9px;color:#475569;margin-bottom:3px}
+.kc .v{font-size:15px;font-weight:800}
+.hot{color:#f87171;font-weight:700}
+.good{color:#4ade80;font-weight:700}
+select{background:#0d1220;color:#e2e8f0;border:1px solid #1e2d40;border-radius:8px;padding:9px;font-size:13px;font-family:inherit;width:100%;margin-bottom:12px}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Idle-After Dropoff (Monday)</div>
+  <h1>📍 月曜 空き発生の降車地分析</h1>
+  <div class="dscr">どこで降ろすと次が鳴らず空車になるか / 区レベル・時間帯別</div>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="dashboard" style="display:none">
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+</div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+
+var HOLIDAYS={'2024-01-01':1,'2024-01-08':1,'2024-02-11':1,'2024-02-12':1,'2024-02-23':1,'2024-03-20':1,'2024-04-29':1,'2024-05-03':1,'2024-05-04':1,'2024-05-05':1,'2024-05-06':1,'2024-07-15':1,'2024-08-11':1,'2024-08-12':1,'2024-09-16':1,'2024-09-22':1,'2024-09-23':1,'2024-10-14':1,'2024-11-03':1,'2024-11-04':1,'2024-11-23':1,'2025-01-01':1,'2025-01-13':1,'2025-02-11':1,'2025-02-23':1,'2025-02-24':1,'2025-03-20':1,'2025-04-29':1,'2025-05-03':1,'2025-05-04':1,'2025-05-05':1,'2025-05-06':1,'2025-07-21':1,'2025-08-11':1,'2025-09-15':1,'2025-09-23':1,'2025-10-13':1,'2025-11-03':1,'2025-11-23':1,'2025-11-24':1,'2026-01-01':1,'2026-01-12':1,'2026-02-11':1,'2026-02-23':1,'2026-03-20':1,'2026-04-29':1,'2026-05-03':1,'2026-05-04':1,'2026-05-05':1,'2026-05-06':1,'2026-07-20':1,'2026-08-11':1,'2026-09-21':1,'2026-09-22':1,'2026-09-23':1,'2026-10-12':1,'2026-11-03':1,'2026-11-23':1};
+function isSpecial(iso){if(HOLIDAYS[iso])return true;var m=iso.match(/\d{4}-(\d{2})-(\d{2})/);if(m){var mm=+m[1],dd=+m[2];if(mm===12&&dd>=28)return true;if(mm===1&&dd<=4)return true;}return false;}
+
+function csvArr(text){var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});function sp(line){var c=[],cur='',q=false;for(var i=0;i<line.length;i++){var ch=line[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else{cur+=ch;}}c.push(cur.trim());return c;}return lines.map(sp);}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function av(a){return a.length?a.reduce(function(x,y){return x+y;},0)/a.length:0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function toMin(t){var m=String(t||'').match(/^(\d{1,2}):(\d{2})/);if(!m)return null;return +m[1]*60+ +m[2];}
+function hhmm(min){var h=Math.floor(min/60),m=min%60;var disp=h>=24?'翌'+(h-24):''+h;return disp+':'+('0'+m).slice(-2);}
+
+var G={};
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 取得中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  document.getElementById('dashboard').style.display='none';
+  try{
+    var t1=await (await fetch(U1)).text();
+    var t2=await (await fetch(U2)).text();
+    document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 空き区間を計算中...';
+    var a1=csvArr(t1),a2=csvArr(t2),h1=a1[0],h2=a2[0];
+    function idx(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+    var i1d=idx(h1,'日付'),i1t=idx(h1,'TAXI'),i1e=idx(h1,'営収'),i1w=idx(h1,'曜'),i1sh=idx(h1,'出番');
+    var i2on=idx(h2,'乗車時間'),i2off=idx(h2,'降車時間'),i2dw=idx(h2,'降車地:市区'),i2ew=idx(h2,'乗車地:市区'),i2f=idx(h2,'料金'),i2sk=idx(h2,'サンキュー'),i2st=idx(h2,'ステータス');
+
+    /* メタ：J勤務・プレタク日除外・特殊日除外・月曜のみ */
+    var meta={};
+    a1.slice(1).forEach(function(r){
+      if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
+      if(String(r[i1sh]||'').trim()!=='J')return;
+      var d=normDate(r[i1d]);if(!d||isSpecial(d))return;
+      meta[d]={eikyu:toN(r[i1e]),dow:String(r[i1w]||'').trim()};
+    });
+
+    /* 月曜の日報②を日付ごと、時系列で（乗車地・降車地・時刻） */
+    var byDate={};
+    a2.slice(1).forEach(function(r){
+      var sk=String(r[i2sk]||'').trim();
+      if(sk==='プレタク'||sk==='プレタクP')return;
+      var d=normDate(r[0]);if(!meta[d]||meta[d].dow!=='月')return;
+      var on=toMin(r[i2on]),off=toMin(r[i2off]);if(on===null)return;
+      if(on<960)on+=1440;
+      if(off!==null){if(off<960)off+=1440;if(off<on)off+=1440;}
+      var f=toN(r[i2f]);if(f<=0)return;
+      if(!byDate[d])byDate[d]={rides:[]};
+      byDate[d].rides.push({on:on,off:off,
+        ewGroup:String(r[i2ew]||'').trim(),dwGroup:String(r[i2dw]||'').trim(),
+        fare:f,st:String(r[i2st]||'').trim()});
+    });
+
+    /* 各日で 降車→次乗車の空きを計算。空きの「直前降車地」を記録 */
+    var days=[];
+    Object.keys(byDate).forEach(function(d){
+      var rides=byDate[d].rides.sort(function(a,b){return a.on-b.on;});
+      if(rides.length<15)return;
+      if(rides[0].on<960||rides[0].on>1050)return; /* 早出除外 */
+      var gaps=[];
+      for(var i=0;i<rides.length-1;i++){
+        var endPrev=rides[i].off!==null?rides[i].off:rides[i].on;
+        var gap=rides[i+1].on-endPrev;
+        if(gap<0)gap=0;
+        if(gap>240)continue;
+        gaps.push({gap:gap,atMin:endPrev,dropWard:rides[i].dwGroup,nextSt:rides[i+1].st});
+      }
+      days.push({date:d,eikyu:meta[d].eikyu,rides:rides,gaps:gaps});
+    });
+
+    G.days=days;
+    document.getElementById('tabs').innerHTML=
+      '<button class="tab on" style="background:#f87171" onclick="sw(\'ward\',this)">📍 降車区ランク</button>'+
+      '<button class="tab" style="background:#fb923c" onclick="sw(\'time\',this)">🕐 時間帯×空き</button>'+
+      '<button class="tab" style="background:#4ade80" onclick="sw(\'next\',this)">🚦 空き後の手段</button>';
+    document.getElementById('panels').innerHTML=
+      '<div class="panel on" id="p-ward"></div><div class="panel" id="p-time"></div><div class="panel" id="p-next"></div>';
+
+    renderWard();renderTime();renderNext();
+
+    document.getElementById('msgbox').style.display='none';
+    document.getElementById('dashboard').style.display='';
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e&&e.stack||e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+
+/* 降車区ごとに「降りた後の平均空き時間」を集計。長いほど鳴らない区 */
+function renderWard(){
+  var m={};
+  G.days.forEach(function(d){
+    d.gaps.forEach(function(g){
+      if(!g.dropWard)return;
+      if(!m[g.dropWard])m[g.dropWard]={gaps:[],bigCnt:0};
+      m[g.dropWard].gaps.push(g.gap);
+      if(g.gap>=30)m[g.dropWard].bigCnt++;
+    });
+  });
+  var arr=Object.entries(m).map(function(e){
+    var gaps=e[1].gaps;
+    return {ward:e[0],n:gaps.length,avgGap:av(gaps),
+      bigRate:Math.round(e[1].bigCnt/gaps.length*100)};
+  }).filter(function(x){return x.n>=10;}).sort(function(a,b){return b.avgGap-a.avgGap;});
+
+  var h='<div class="card" style="border-color:#f8717144;background:#f8717108">';
+  h+='<div class="card-ttl" style="color:#f87171">📍 月曜：降りた後に鳴らない区</div>';
+  h+='<p class="note">月曜にその区で<strong style="color:#f87171">降ろした後、次の乗車までの平均空き時間</strong>。長い区ほど「降りると次が鳴らず空車になりやすい」＝避けるか、降りた後すぐ移動すべき区。10回以上降車した区のみ。</p></div>';
+
+  h+='<div class="card"><table><thead><tr><th>降車区</th><th style="text-align:right">降車数</th><th style="text-align:right">平均空き</th><th style="text-align:right">30分↑率</th></tr></thead><tbody>';
+  arr.forEach(function(x,i){
+    var hot=i<5;
+    h+='<tr><td style="color:'+(hot?'#f87171':'#e2e8f0')+';font-weight:'+(hot?700:400)+'">'+(i+1)+'. '+es(x.ward)+'</td>';
+    h+='<td style="text-align:right;color:#60a5fa">'+x.n+'</td>';
+    h+='<td style="text-align:right;color:'+(hot?'#f87171':'#94a3b8')+';font-weight:'+(hot?700:400)+'">'+x.avgGap.toFixed(1)+'分</td>';
+    h+='<td style="text-align:right;color:'+(x.bigRate>=25?'#f87171':'#64748b')+'">'+x.bigRate+'%</td></tr>';
+  });
+  h+='</tbody></table>';
+  /* 逆に鳴りやすい区 */
+  var good=[].concat(arr).sort(function(a,b){return a.avgGap-b.avgGap;}).slice(0,5);
+  h+='<div style="margin-top:12px;padding:10px;background:#4ade8010;border-left:3px solid #4ade80;border-radius:0 6px 6px 0;font-size:12px;color:#cbd5e1;line-height:1.9">';
+  h+='<strong style="color:#4ade80">⭕ 降りても次が早い区（空き短い）：</strong><br>';
+  good.forEach(function(x){h+=es(x.ward)+'（'+x.avgGap.toFixed(1)+'分）　';});
+  h+='</div></div>';
+  document.getElementById('p-ward').innerHTML=h;
+}
+
+/* 時間帯×空き：時間帯ごとに平均空き時間と、その時間帯の主な降車区 */
+function renderTime(){
+  var slots={};
+  G.days.forEach(function(d){
+    d.gaps.forEach(function(g){
+      var hh=Math.floor(g.atMin/60);
+      if(!slots[hh])slots[hh]={gaps:[],wards:{}};
+      slots[hh].gaps.push(g.gap);
+      if(g.dropWard)slots[hh].wards[g.dropWard]=(slots[hh].wards[g.dropWard]||0)+1;
+    });
+  });
+  var arr=Object.keys(slots).map(function(k){return +k;}).sort(function(a,b){return a-b;}).map(function(hh){
+    var s=slots[hh];
+    var topWard=Object.entries(s.wards).sort(function(a,b){return b[1]-a[1];}).slice(0,2).map(function(e){return e[0];});
+    return {hh:hh,avgGap:av(s.gaps),n:s.gaps.length,topWards:topWard};
+  });
+  var mx=Math.max.apply(null,arr.map(function(x){return x.avgGap;}));
+
+  var h='<div class="card" style="border-color:#fb923c44;background:#fb923c08"><div class="card-ttl" style="color:#fb923c">🕐 時間帯別 平均空き時間</div>';
+  h+='<p class="note">月曜の各時間帯で、降車後の平均空き時間がどれだけ長いか。長い時間帯＝GOが鳴っていない＝そこが手薄。その時間帯によく降りていた区も表示。</p></div>';
+  h+='<div class="card">';
+  arr.forEach(function(x){
+    var hot=x.avgGap>=mx*0.8;
+    h+='<div style="margin-bottom:9px"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:12px;font-weight:700;color:'+(hot?'#fb923c':'#94a3b8')+'">'+hhmm(x.hh*60)+(hot?' ⚠️':'')+'</span><span style="font-size:11px;color:#64748b">平均'+x.avgGap.toFixed(1)+'分 ('+x.n+'回)</span></div>';
+    h+='<div class="bwrap"><div class="binner" style="width:'+(x.avgGap/mx*100)+'%;background:'+(hot?'#fb923c':'#fb923c66')+'"></div></div>';
+    if(x.topWards.length)h+='<div style="font-size:9px;color:#475569;margin-top:2px">主な降車区: '+x.topWards.map(es).join('・')+'</div>';
+    h+='</div>';
+  });
+  h+='</div>';
+  document.getElementById('p-time').innerHTML=h;
+}
+
+/* 空き後にどの手段で乗れたか：空きが解消したとき次の乗車のステータス */
+function renderNext(){
+  /* 空きの長さ別に、次の乗車のステータス分布 */
+  function dist(filter){
+    var m={};var tot=0;
+    G.days.forEach(function(d){d.gaps.forEach(function(g){if(!filter(g.gap))return;var s=g.nextSt||'?';m[s]=(m[s]||0)+1;tot++;});});
+    return {m:m,tot:tot};
+  }
+  function render1(title,col,filter,desc){
+    var r=dist(filter);
+    var s='<div class="card"><div class="card-ttl" style="color:'+col+'">'+title+'（'+r.tot+'回）</div><p class="note" style="margin-bottom:8px">'+desc+'</p>';
+    Object.entries(r.m).sort(function(a,b){return b[1]-a[1];}).forEach(function(e){
+      var pct=r.tot>0?e[1]/r.tot*100:0;
+      s+='<div style="margin-bottom:7px"><div style="display:flex;justify-content:space-between;font-size:11px"><span style="color:#cbd5e1">'+es(e[0])+'</span><span style="color:#64748b">'+e[1]+'回 '+pct.toFixed(0)+'%</span></div><div class="bwrap"><div class="binner" style="width:'+pct+'%;background:'+col+'88"></div></div></div>';
+    });
+    return s+'</div>';
+  }
+  var h='<div class="card" style="border-color:#4ade8044;background:#4ade8008"><div class="card-ttl" style="color:#4ade80">🚦 空きが解消したときの手段</div>';
+  h+='<p class="note">空車だった後、次の客を<strong style="color:#4ade80">何（GO/流し/スマ配）で拾えたか</strong>。空き時間の長さ別に見ると、長い空きを破ったのが何かが分かる＝月曜の空きを埋める手段のヒント。</p></div>';
+  h+=render1('短い空き(〜10分)を破った手段','#4ade80',function(g){return g<=10;},'すぐ次が来たケース。月曜に回転できている時の主力手段。');
+  h+=render1('長い空き(30分↑)を破った手段','#f87171',function(g){return g>=30;},'長く空いた後にやっと乗れたケース。この手段を能動的に狙えば空きを短縮できる可能性。');
+  document.getElementById('p-next').innerHTML=h;
+}
+
+function sw(id,btn){document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});document.getElementById('p-'+id).classList.add('on');}
+run();
+</script>
+</body></html>
