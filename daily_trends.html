@@ -9,7 +9,7 @@
 :root{
   --bg:#0d1117;--surface:#161b22;--surface2:#21262d;--border:#30363d;
   --text:#e6edf3;--muted:#8b949e;--blue:#79c0ff;--green:#3fb950;
-  --orange:#f0883e;--red:#f85149;--purple:#d2a8ff;
+  --orange:#f0883e;--red:#f85149;--purple:#d2a8ff;--yellow:#e3b341;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);
@@ -17,48 +17,78 @@ body{background:var(--bg);color:var(--text);
   min-height:100vh;padding-bottom:40px}
 
 #header{background:var(--surface);border-bottom:1px solid var(--border);
-  padding:10px 20px;display:flex;align-items:center;justify-content:space-between}
+  padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
 #header h1{font-size:15px;font-weight:800}
 #header a{font-size:11px;color:var(--blue);text-decoration:none;border:1px solid var(--border);
   padding:4px 10px;border-radius:4px}
-#header a:hover{border-color:var(--blue)}
 
-#status{padding:8px 20px;font-size:12px;color:var(--muted);
+#status{padding:6px 20px;font-size:12px;color:var(--muted);
   background:var(--surface);border-bottom:1px solid var(--border)}
 #status.loading{color:var(--blue)}
 #status.ok{color:var(--green)}
 #status.error{color:var(--red)}
 
-/* KPIカード */
-#kpi-row{display:flex;gap:12px;padding:16px 20px;flex-wrap:wrap}
-.kpi{flex:1;min-width:140px;background:var(--surface);border:1px solid var(--border);
-  border-radius:8px;padding:14px 16px}
-.kpi-label{font-size:11px;color:var(--muted);margin-bottom:6px}
-.kpi-val{font-size:22px;font-weight:800;color:var(--text)}
-.kpi-sub{font-size:11px;color:var(--muted);margin-top:4px}
-
-/* グラフグリッド */
-#charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:0 20px}
-.chart-card{background:var(--surface);border:1px solid var(--border);
-  border-radius:8px;padding:16px}
-.chart-card.wide{grid-column:1/-1}
-.chart-title{font-size:12px;font-weight:700;color:var(--muted);
-  text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
-.chart-wrap{position:relative;height:220px}
-.chart-wrap.tall{height:280px}
-
 /* 期間フィルタ */
-#filter-row{display:flex;gap:8px;padding:12px 20px 4px;flex-wrap:wrap;align-items:center}
+#filter-row{display:flex;gap:8px;padding:12px 20px 4px;align-items:center;flex-wrap:wrap}
 .filter-label{font-size:11px;color:var(--muted)}
 .period-btn{padding:4px 10px;border-radius:4px;border:1px solid var(--border);
   background:var(--surface2);color:var(--muted);font-size:11px;cursor:pointer}
 .period-btn.active{background:var(--blue);color:#0d1117;border-color:var(--blue)}
 
+/* KPIカード */
+#kpi-row{display:flex;gap:10px;padding:12px 20px;flex-wrap:wrap}
+.kpi{flex:1;min-width:120px;background:var(--surface);border:1px solid var(--border);
+  border-radius:8px;padding:12px 14px;position:relative}
+.kpi-label{font-size:10px;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
+.kpi-val{font-size:20px;font-weight:800}
+.kpi-sub{font-size:10px;color:var(--muted);margin-top:3px}
+.kpi-badge{position:absolute;top:10px;right:10px;font-size:10px;font-weight:700;
+  padding:2px 7px;border-radius:20px}
+.badge-good{background:rgba(63,185,80,.15);color:var(--green);border:1px solid rgba(63,185,80,.3)}
+.badge-warn{background:rgba(240,136,62,.15);color:var(--orange);border:1px solid rgba(240,136,62,.3)}
+.badge-bad{background:rgba(248,81,73,.15);color:var(--red);border:1px solid rgba(248,81,73,.3)}
+
+/* セクション区切り */
+.section-title{font-size:11px;font-weight:700;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.08em;
+  padding:14px 20px 4px;border-top:1px solid var(--border);margin-top:8px}
+
+/* グラフグリッド */
+#charts{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:10px 20px}
+.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px}
+.chart-card.wide{grid-column:1/-1}
+.chart-title{font-size:11px;font-weight:700;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;
+  display:flex;align-items:center;justify-content:space-between}
+.chart-title span{font-size:10px;color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0}
+.chart-wrap{position:relative;height:200px}
+.chart-wrap.tall{height:260px}
+.chart-wrap.short{height:160px}
+
+/* 安定性スコアカード */
+#stability-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;
+  padding:16px 20px;margin:10px 20px}
+#stability-card h3{font-size:12px;font-weight:700;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+.stab-row{display:flex;gap:16px;flex-wrap:wrap}
+.stab-item{flex:1;min-width:140px}
+.stab-name{font-size:11px;color:var(--muted);margin-bottom:4px}
+.stab-val{font-size:16px;font-weight:800;margin-bottom:4px}
+.stab-bar-bg{height:6px;background:var(--border);border-radius:3px}
+.stab-bar{height:6px;border-radius:3px;transition:width .5s}
+
+/* 凡例 */
+.legend-inline{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+.legend-item{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted)}
+.legend-dot{width:10px;height:4px;border-radius:2px}
+
 @media(max-width:600px){
   #charts{grid-template-columns:1fr}
   .chart-card.wide{grid-column:1}
-  #kpi-row{gap:8px;padding:12px}
-  .kpi-val{font-size:18px}
+  .chart-wrap{height:180px}
+  .chart-wrap.tall{height:220px}
+  #kpi-row{gap:8px;padding:10px}
+  .kpi-val{font-size:16px}
 }
 </style>
 </head>
@@ -72,62 +102,125 @@ body{background:var(--bg);color:var(--text);
 
 <div id="filter-row">
   <span class="filter-label">期間</span>
-  <button class="period-btn active" data-days="30">1ヶ月</button>
+  <button class="period-btn" data-days="30">1ヶ月</button>
   <button class="period-btn" data-days="90">3ヶ月</button>
-  <button class="period-btn" data-days="180">6ヶ月</button>
+  <button class="period-btn active" data-days="180">6ヶ月</button>
   <button class="period-btn" data-days="0">全期間</button>
 </div>
 
+<!-- KPIカード -->
 <div id="kpi-row">
-  <div class="kpi"><div class="kpi-label">平均日次売上</div><div class="kpi-val" id="kpi-rev">—</div><div class="kpi-sub" id="kpi-rev-sub"></div></div>
-  <div class="kpi"><div class="kpi-label">平均乗車回数</div><div class="kpi-val" id="kpi-cnt">—</div><div class="kpi-sub" id="kpi-cnt-sub"></div></div>
-  <div class="kpi"><div class="kpi-label">平均単価</div><div class="kpi-val" id="kpi-price">—</div><div class="kpi-sub" id="kpi-price-sub"></div></div>
-  <div class="kpi"><div class="kpi-label">平均実車率</div><div class="kpi-val" id="kpi-occ">—</div><div class="kpi-sub" id="kpi-occ-sub"></div></div>
+  <div class="kpi">
+    <div class="kpi-label">平均日次売上</div>
+    <div class="kpi-val" id="kpi-rev">—</div>
+    <div class="kpi-sub" id="kpi-rev-sub"></div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">標準偏差 (σ)</div>
+    <div class="kpi-val" id="kpi-sd">—</div>
+    <div class="kpi-sub" id="kpi-sd-sub"></div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">変動係数 (CV)</div>
+    <div class="kpi-val" id="kpi-cv">—</div>
+    <div class="kpi-sub">低いほど安定</div>
+    <div class="kpi-badge" id="kpi-cv-badge"></div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">平均乗車回数</div>
+    <div class="kpi-val" id="kpi-cnt">—</div>
+    <div class="kpi-sub" id="kpi-cnt-sub"></div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">平均単価</div>
+    <div class="kpi-val" id="kpi-price">—</div>
+    <div class="kpi-sub" id="kpi-price-sub"></div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">平均実車率</div>
+    <div class="kpi-val" id="kpi-occ">—</div>
+    <div class="kpi-sub" id="kpi-occ-sub"></div>
+  </div>
 </div>
 
+<!-- 安定性分析 -->
+<div id="stability-card">
+  <h3>📐 安定性サマリー（μ±σ）</h3>
+  <div class="stab-row" id="stab-row"></div>
+</div>
+
+<div class="section-title">売上トレンド</div>
 <div id="charts">
+
   <div class="chart-card wide">
-    <div class="chart-title">日次売上の推移（7日移動平均）</div>
+    <div class="chart-title">
+      日次売上の推移
+      <span>— 7日移動平均 ／ 薄帯 = ±1σ（平均±標準偏差）</span>
+    </div>
+    <div class="legend-inline">
+      <div class="legend-item"><div class="legend-dot" style="background:#79c0ff"></div>日次売上</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f0883e;height:2px"></div>7日移動平均</div>
+      <div class="legend-item"><div class="legend-dot" style="background:rgba(240,136,62,.2);width:16px;height:8px;border-radius:2px"></div>±1σ帯</div>
+    </div>
     <div class="chart-wrap tall"><canvas id="c-daily-rev"></canvas></div>
   </div>
+
   <div class="chart-card">
-    <div class="chart-title">曜日別 平均売上</div>
-    <div class="chart-wrap"><canvas id="c-dow-rev"></canvas></div>
+    <div class="chart-title">収入分布ヒストグラム<span>何日がどの金額帯か</span></div>
+    <div class="chart-wrap"><canvas id="c-hist"></canvas></div>
   </div>
+
   <div class="chart-card">
-    <div class="chart-title">曜日別 平均乗車回数</div>
-    <div class="chart-wrap"><canvas id="c-dow-cnt"></canvas></div>
-  </div>
-  <div class="chart-card">
-    <div class="chart-title">曜日別 平均単価</div>
-    <div class="chart-wrap"><canvas id="c-dow-price"></canvas></div>
-  </div>
-  <div class="chart-card">
-    <div class="chart-title">実車率の推移（7日移動平均）</div>
+    <div class="chart-title">実車率の推移<span>7日移動平均</span></div>
     <div class="chart-wrap"><canvas id="c-occ"></canvas></div>
   </div>
-  <div class="chart-card">
-    <div class="chart-title">月別売上サマリー</div>
-    <div class="chart-wrap"><canvas id="c-monthly"></canvas></div>
-  </div>
+
+</div>
+
+<div class="section-title">曜日別分析</div>
+<div id="charts" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:10px 20px">
+
   <div class="chart-card wide">
-    <div class="chart-title">時間帯別 乗車売上（詳細日報）</div>
+    <div class="chart-title">
+      曜日別 平均売上 ± 標準偏差
+      <span>棒=平均 / エラーバー=±1σ</span>
+    </div>
+    <div class="chart-wrap"><canvas id="c-dow-sd"></canvas></div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-title">曜日別 変動係数 (CV)<span>低いほど収入が安定</span></div>
+    <div class="chart-wrap short"><canvas id="c-dow-cv"></canvas></div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-title">曜日別 平均乗車回数<span></span></div>
+    <div class="chart-wrap short"><canvas id="c-dow-cnt"></canvas></div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-title">月別平均売上<span></span></div>
+    <div class="chart-wrap short"><canvas id="c-monthly"></canvas></div>
+  </div>
+
+  <div class="chart-card wide">
+    <div class="chart-title">時間帯別 乗車売上（詳細日報）<span>棒=平均単価 / 折れ線=件数</span></div>
     <div class="chart-wrap"><canvas id="c-hourly"></canvas></div>
   </div>
+
 </div>
 
 <script>
 const DAILY_URL  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
 const DETAIL_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv";
 const DAYS_JP = ['日','月','火','水','木','金','土'];
-const COLORS = ['#f85149','#f0883e','#e3b341','#3fb950','#79c0ff','#d2a8ff','#ff7edb'];
-const DAY_COLORS = DAYS_JP.map((_,i)=>COLORS[i]);
+const DAY_COLORS = ['#f85149','#f0883e','#e3b341','#3fb950','#79c0ff','#d2a8ff','#ff7edb'];
 
-// Chart.jsデフォルト設定
 Chart.defaults.color = '#8b949e';
 Chart.defaults.borderColor = '#30363d';
 Chart.defaults.font.family = "Helvetica Neue,Arial,'Hiragino Kaku Gothic ProN',Meiryo,sans-serif";
 
+// ── ユーティリティ ──────────────────────────────────────────
 const parseCSV = text => {
   const parse = line => {
     const res=[]; let cur='',inq=false;
@@ -136,78 +229,120 @@ const parseCSV = text => {
   };
   return text.split(/\r?\n/).filter(l=>l.trim()).map(parse);
 };
-
 const parseNum = s => { const n=parseInt((s||'').replace(/[^0-9]/g,'')); return isNaN(n)?0:n; };
 const parseFloat2 = s => { const n=parseFloat((s||'').replace(/[^0-9.]/g,'')); return isNaN(n)?0:n; };
 const parseDate = s => {
   if(!s) return null;
-  // "24年2月19日" or "2024/02/19" or "2024-02-19"
   let m = s.match(/(\d{2,4})年(\d{1,2})月(\d{1,2})日/);
-  if(m) return new Date(parseInt(m[1])<100?2000+parseInt(m[1]):parseInt(m[1]), parseInt(m[2])-1, parseInt(m[3]));
+  if(m) return new Date(parseInt(m[1])<100?2000+parseInt(m[1]):m[1], parseInt(m[2])-1, parseInt(m[3]));
   m = s.match(/^(\d{4})[\-\/](\d{1,2})[\-\/](\d{1,2})/);
   if(m) return new Date(parseInt(m[1]),parseInt(m[2])-1,parseInt(m[3]));
   return null;
 };
-
 const movingAvg = (arr, w) => arr.map((_,i) => {
   const sl=arr.slice(Math.max(0,i-w+1),i+1).filter(v=>v>0);
-  return sl.length?Math.round(sl.reduce((a,b)=>a+b,0)/sl.length):null;
+  return sl.length ? Math.round(sl.reduce((a,b)=>a+b,0)/sl.length) : null;
 });
 
-let allDailyRows=[], allDetailRows=[];
-let charts={};
-let filterDays=30;
+// ── 統計関数 ─────────────────────────────────────────────────
+const mean  = arr => arr.length ? arr.reduce((a,b)=>a+b,0)/arr.length : 0;
+const stdev = arr => {
+  if(arr.length < 2) return 0;
+  const m = mean(arr);
+  return Math.sqrt(arr.reduce((s,v)=>s+(v-m)**2,0)/arr.length);
+};
+const cv = (m, s) => m > 0 ? (s/m*100) : 0;
+const percentile = (arr, p) => {
+  const s=[...arr].sort((a,b)=>a-b);
+  const i=(p/100)*(s.length-1);
+  const lo=Math.floor(i), hi=Math.ceil(i);
+  return s[lo]+(s[hi]-s[lo])*(i-lo);
+};
 
-// 期間フィルタ適用
+// CV → 安定性ラベル
+const cvLabel = v => v<15?['安定','badge-good']:v<25?['やや不安定','badge-warn']:['不安定','badge-bad'];
+
+let allDailyRows=[], allDetailRows=[], filterDays=180, charts={};
+
 const filterRows = rows => {
   if(!filterDays) return rows;
-  const cutoff = new Date(); cutoff.setDate(cutoff.getDate()-filterDays);
+  const cutoff=new Date(); cutoff.setDate(cutoff.getDate()-filterDays);
   return rows.filter(r=>r.date && r.date>=cutoff);
 };
 
-function buildKPI(rows){
+// ── KPI & 安定性サマリー ──────────────────────────────────────
+function buildKPI(rows) {
   if(!rows.length) return;
-  const avg = key => Math.round(rows.reduce((s,r)=>s+r[key],0)/rows.length);
-  const avgF = key => (rows.reduce((s,r)=>s+r[key],0)/rows.length).toFixed(1);
-  document.getElementById('kpi-rev').textContent = '¥'+avg('revenue').toLocaleString();
-  document.getElementById('kpi-cnt').textContent = avg('count')+'回';
-  document.getElementById('kpi-price').textContent = '¥'+avg('price').toLocaleString();
-  document.getElementById('kpi-occ').textContent = avgF('occRate')+'%';
-  document.getElementById('kpi-rev-sub').textContent = `最高: ¥${Math.max(...rows.map(r=>r.revenue)).toLocaleString()}`;
-  document.getElementById('kpi-cnt-sub').textContent = `最高: ${Math.max(...rows.map(r=>r.count))}回`;
-  document.getElementById('kpi-price-sub').textContent = `最高: ¥${Math.max(...rows.map(r=>r.price)).toLocaleString()}`;
-  document.getElementById('kpi-occ-sub').textContent = `最高: ${Math.max(...rows.map(r=>r.occRate)).toFixed(1)}%`;
+  const revs = rows.map(r=>r.revenue).filter(v=>v>0);
+  const μ=mean(revs), σ=stdev(revs), cvVal=cv(μ,σ);
+  const p25=percentile(revs,25), p75=percentile(revs,75);
+  const med=percentile(revs,50);
+
+  document.getElementById('kpi-rev').textContent = '¥'+Math.round(μ).toLocaleString();
+  document.getElementById('kpi-rev-sub').textContent = `中央値 ¥${Math.round(med).toLocaleString()}`;
+  document.getElementById('kpi-sd').textContent  = '¥'+Math.round(σ).toLocaleString();
+  document.getElementById('kpi-sd-sub').textContent = `μ±σ: ¥${Math.round(μ-σ).toLocaleString()}〜¥${Math.round(μ+σ).toLocaleString()}`;
+  document.getElementById('kpi-cv').textContent  = cvVal.toFixed(1)+'%';
+  const [lbl,cls] = cvLabel(cvVal);
+  const badge=document.getElementById('kpi-cv-badge');
+  badge.textContent=lbl; badge.className='kpi-badge '+cls;
+
+  const cnts=rows.map(r=>r.count).filter(v=>v>0);
+  const prices=rows.map(r=>r.price).filter(v=>v>0);
+  const occs=rows.map(r=>r.occRate).filter(v=>v>0);
+  document.getElementById('kpi-cnt').textContent   = Math.round(mean(cnts))+'回';
+  document.getElementById('kpi-cnt-sub').textContent = `σ=${Math.round(stdev(cnts))}回`;
+  document.getElementById('kpi-price').textContent  = '¥'+Math.round(mean(prices)).toLocaleString();
+  document.getElementById('kpi-price-sub').textContent = `σ=¥${Math.round(stdev(prices)).toLocaleString()}`;
+  document.getElementById('kpi-occ').textContent   = mean(occs).toFixed(1)+'%';
+  document.getElementById('kpi-occ-sub').textContent  = `σ=${stdev(occs).toFixed(1)}%`;
+
+  // 安定性サマリー
+  const items = [
+    {name:'売上 (μ±σ)', val:`¥${Math.round(μ).toLocaleString()}`, sub:`±¥${Math.round(σ).toLocaleString()}`, pct: Math.min(100,100-cvVal), color:cvVal<15?'var(--green)':cvVal<25?'var(--orange)':'var(--red)'},
+    {name:'25%〜75%区間', val:`¥${Math.round(p25).toLocaleString()}〜¥${Math.round(p75).toLocaleString()}`, sub:`四分位範囲: ¥${Math.round(p75-p25).toLocaleString()}`, pct:Math.min(100,(p75-p25)/μ*100*2), color:'var(--blue)'},
+    {name:'最低売上', val:'¥'+Math.min(...revs).toLocaleString(), sub:`平均の${Math.round(Math.min(...revs)/μ*100)}%`, pct:Math.min(...revs)/μ*100, color:'var(--purple)'},
+    {name:'最高売上', val:'¥'+Math.max(...revs).toLocaleString(), sub:`平均の${Math.round(Math.max(...revs)/μ*100)}%`, pct:100, color:'var(--yellow)'},
+  ];
+  document.getElementById('stab-row').innerHTML = items.map(it=>`
+    <div class="stab-item">
+      <div class="stab-name">${it.name}</div>
+      <div class="stab-val" style="color:${it.color}">${it.val}</div>
+      <div class="stab-name">${it.sub}</div>
+    </div>
+  `).join('');
 }
 
-function makeChart(id, cfg){
+// ── グラフ描画 ────────────────────────────────────────────────
+function makeChart(id, cfg) {
   if(charts[id]) charts[id].destroy();
-  const ctx = document.getElementById(id).getContext('2d');
-  charts[id] = new Chart(ctx, cfg);
+  charts[id] = new Chart(document.getElementById(id).getContext('2d'), cfg);
 }
 
-function renderAll(){
+function renderAll() {
   const rows = filterRows(allDailyRows);
   if(!rows.length) return;
-
   buildKPI(rows);
 
-  // ① 日次売上推移
-  const dates = rows.map(r=>r.date.toLocaleDateString('ja-JP',{month:'2-digit',day:'2-digit'}));
   const revs  = rows.map(r=>r.revenue);
-  const ma7   = movingAvg(revs, 7);
+  const dates = rows.map(r=>r.date.toLocaleDateString('ja-JP',{month:'2-digit',day:'2-digit'}));
+  const ma7   = movingAvg(revs,7);
+  const μAll  = mean(revs.filter(v=>v>0));
+  const σAll  = stdev(revs.filter(v=>v>0));
+  const upper = revs.map(()=>Math.round(μAll+σAll));
+  const lower = revs.map(()=>Math.round(Math.max(0,μAll-σAll)));
+
+  // ① 日次売上 + ±1σ帯
   makeChart('c-daily-rev',{
     type:'line',
-    data:{
-      labels:dates,
-      datasets:[
-        {label:'日次売上',data:revs,borderColor:'#79c0ff',backgroundColor:'rgba(121,192,255,.08)',
-          borderWidth:1,pointRadius:1,tension:0.3},
-        {label:'7日平均',data:ma7,borderColor:'#f0883e',backgroundColor:'transparent',
-          borderWidth:2,pointRadius:0,tension:0.4,spanGaps:true}
-      ]
-    },
+    data:{ labels:dates, datasets:[
+      {label:'上限(μ+σ)',data:upper,borderColor:'transparent',backgroundColor:'rgba(240,136,62,.12)',fill:'+1',pointRadius:0,tension:0},
+      {label:'下限(μ-σ)',data:lower,borderColor:'transparent',backgroundColor:'rgba(240,136,62,.12)',fill:false,pointRadius:0,tension:0},
+      {label:'日次売上',data:revs,borderColor:'rgba(121,192,255,.7)',backgroundColor:'transparent',borderWidth:1,pointRadius:1.5,tension:0.2},
+      {label:'7日平均',data:ma7,borderColor:'#f0883e',backgroundColor:'transparent',borderWidth:2,pointRadius:0,tension:0.4,spanGaps:true},
+    ]},
     options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:11}}}},
+      plugins:{legend:{display:false}},
       scales:{
         x:{ticks:{maxTicksLimit:12,font:{size:10}}},
         y:{ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}}
@@ -215,110 +350,164 @@ function renderAll(){
     }
   });
 
-  // ② 曜日別平均売上
-  const dowData = Array(7).fill(0).map(()=>{return{sum:0,cnt:0};});
-  rows.forEach(r=>{ if(r.dow>=0){ dowData[r.dow].sum+=r.revenue; dowData[r.dow].cnt++; } });
-  const dowAvgRev = dowData.map(d=>d.cnt?Math.round(d.sum/d.cnt):0);
-  makeChart('c-dow-rev',{
+  // ② ヒストグラム
+  const bucket = 10000;
+  const hist = {};
+  revs.filter(v=>v>0).forEach(v => {
+    const k=Math.floor(v/bucket)*bucket;
+    hist[k]=(hist[k]||0)+1;
+  });
+  const hKeys = Object.keys(hist).map(Number).sort((a,b)=>a-b);
+  const hLabels = hKeys.map(k=>`¥${(k/10000).toFixed(0)}万`);
+  const hVals = hKeys.map(k=>hist[k]);
+  const barColors = hKeys.map(k => {
+    const v=k+bucket/2;
+    return v>=μAll-σAll&&v<=μAll+σAll ? 'rgba(63,185,80,.8)' : 'rgba(121,192,255,.5)';
+  });
+  makeChart('c-hist',{
     type:'bar',
-    data:{labels:DAYS_JP,datasets:[{data:dowAvgRev,backgroundColor:DAY_COLORS,borderRadius:4}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
-      scales:{y:{ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}}}
+    data:{labels:hLabels,datasets:[{data:hVals,backgroundColor:barColors,borderRadius:3,
+      label:'日数'}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.parsed.y+'日'}}},
+      scales:{y:{ticks:{font:{size:10}},title:{display:true,text:'日数',font:{size:10}}},
+              x:{ticks:{font:{size:9}}}}
     }
   });
 
-  // ③ 曜日別平均回数
-  const dowCntData = Array(7).fill(0).map(()=>{return{sum:0,cnt:0};});
-  rows.forEach(r=>{ if(r.dow>=0){ dowCntData[r.dow].sum+=r.count; dowCntData[r.dow].cnt++; } });
-  const dowAvgCnt = dowCntData.map(d=>d.cnt?Math.round(d.sum/d.cnt):0);
-  makeChart('c-dow-cnt',{
-    type:'bar',
-    data:{labels:DAYS_JP,datasets:[{data:dowAvgCnt,backgroundColor:DAY_COLORS,borderRadius:4}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
-      scales:{y:{ticks:{font:{size:10}}}}
-    }
-  });
-
-  // ④ 曜日別平均単価
-  const dowPriceData = Array(7).fill(0).map(()=>{return{sum:0,cnt:0};});
-  rows.forEach(r=>{ if(r.dow>=0){ dowPriceData[r.dow].sum+=r.price; dowPriceData[r.dow].cnt++; } });
-  const dowAvgPrice = dowPriceData.map(d=>d.cnt?Math.round(d.sum/d.cnt):0);
-  makeChart('c-dow-price',{
-    type:'bar',
-    data:{labels:DAYS_JP,datasets:[{data:dowAvgPrice,backgroundColor:DAY_COLORS,borderRadius:4}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
-      scales:{y:{ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}}}
-    }
-  });
-
-  // ⑤ 実車率推移
-  const occs = rows.map(r=>r.occRate);
-  const occMa = movingAvg(occs, 7);
+  // ③ 実車率
+  const occs=rows.map(r=>r.occRate);
+  const occMa=movingAvg(occs,7);
   makeChart('c-occ',{
     type:'line',
+    data:{labels:dates,datasets:[
+      {label:'実車率',data:occs,borderColor:'rgba(63,185,80,.6)',backgroundColor:'rgba(63,185,80,.06)',borderWidth:1,pointRadius:1,tension:0.3,fill:true},
+      {label:'7日平均',data:occMa,borderColor:'#d2a8ff',backgroundColor:'transparent',borderWidth:2,pointRadius:0,tension:0.4,spanGaps:true},
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{ticks:{maxTicksLimit:10,font:{size:10}}},
+              y:{min:0,max:100,ticks:{callback:v=>v+'%',font:{size:10}}}}
+    }
+  });
+
+  // ④ 曜日別 μ±σ（浮動棒グラフで上限・下限を表現）
+  const dowStats = Array(7).fill(null).map(()=>[]); 
+  rows.forEach(r=>{ if(r.dow>=0&&r.revenue>0) dowStats[r.dow].push(r.revenue); });
+  const dowMu = dowStats.map(a=>a.length?Math.round(mean(a)):0);
+  const dowSd = dowStats.map(a=>a.length>1?Math.round(stdev(a)):0);
+  const dowLo = dowMu.map((m,i)=>Math.max(0,m-dowSd[i]));
+  const dowHi = dowMu.map((m,i)=>m+dowSd[i]);
+  const dowCnt= dowStats.map(a=>a.length);
+
+  makeChart('c-dow-sd',{
+    type:'bar',
     data:{
-      labels:dates,
+      labels:DAYS_JP.map((d,i)=>`${d}(${dowCnt[i]}日)`),
       datasets:[
-        {label:'実車率',data:occs,borderColor:'#3fb950',backgroundColor:'rgba(63,185,80,.08)',
-          borderWidth:1,pointRadius:1,tension:0.3},
-        {label:'7日平均',data:occMa,borderColor:'#d2a8ff',backgroundColor:'transparent',
-          borderWidth:2,pointRadius:0,tension:0.4,spanGaps:true}
+        {label:'下限(μ-σ)',data:dowLo,backgroundColor:'transparent',stack:'s'},
+        {label:'平均売上',data:dowSd.map((s,i)=>dowSd[i]),backgroundColor:DAY_COLORS.map(c=>c+'cc'),borderRadius:{topLeft:4,topRight:4},stack:'s',
+          borderColor:DAY_COLORS,borderWidth:1},
+        // σ上バー
+        {label:'上振れ(+σ)',data:dowSd,backgroundColor:DAY_COLORS.map(c=>c+'44'),
+          borderColor:DAY_COLORS.map(c=>c+'88'),borderWidth:1,
+          borderRadius:{topLeft:4,topRight:4},stack:'s2'},
+        {label:'平均(base)',data:dowMu,backgroundColor:'transparent',stack:'s2'},
       ]
     },
     options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:11}}}},
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{
+          title:ctx=>DAYS_JP[ctx[0].dataIndex]+'曜日',
+          label:ctx=>{
+            const i=ctx.dataIndex;
+            return [`平均: ¥${dowMu[i].toLocaleString()}`,`σ: ¥${dowSd[i].toLocaleString()}`,`CV: ${dowMu[i]>0?(dowSd[i]/dowMu[i]*100).toFixed(1):0}%`,`範囲: ¥${dowLo[i].toLocaleString()}〜¥${dowHi[i].toLocaleString()}`];
+          }
+        }}
+      },
       scales:{
-        x:{ticks:{maxTicksLimit:12,font:{size:10}}},
-        y:{min:0,max:100,ticks:{callback:v=>v+'%',font:{size:10}}}
+        y:{stacked:true,ticks:{callback:v=>v?'¥'+v.toLocaleString():'',font:{size:10}}},
+        x:{stacked:true,ticks:{font:{size:11}}}
       }
     }
   });
 
-  // ⑥ 月別売上
-  const monthly = {};
-  rows.forEach(r=>{
-    const key=`${r.date.getFullYear()}/${String(r.date.getMonth()+1).padStart(2,'0')}`;
-    if(!monthly[key]) monthly[key]={sum:0,cnt:0};
-    monthly[key].sum+=r.revenue; monthly[key].cnt++;
-  });
-  const mKeys = Object.keys(monthly).sort();
-  const mVals = mKeys.map(k=>Math.round(monthly[k].sum/monthly[k].cnt));
-  makeChart('c-monthly',{
+  // ⑤ 曜日別CV
+  const dowCV = dowStats.map((a,i)=>a.length>1?parseFloat(cv(mean(a),stdev(a)).toFixed(1)):0);
+  const cvColors = dowCV.map(v=>v<15?'rgba(63,185,80,.8)':v<25?'rgba(240,136,62,.8)':'rgba(248,81,73,.8)');
+  makeChart('c-dow-cv',{
     type:'bar',
-    data:{labels:mKeys,datasets:[{data:mVals,backgroundColor:'#79c0ff',borderRadius:4}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
-      scales:{y:{ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}}}
+    data:{labels:DAYS_JP,datasets:[{data:dowCV,backgroundColor:cvColors,borderRadius:4,label:'CV(%)' }]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},
+        annotation:{annotations:{line1:{type:'line',yMin:15,yMax:15,borderColor:'rgba(63,185,80,.5)',borderWidth:1,borderDash:[4,4]},
+                                  line2:{type:'line',yMin:25,yMax:25,borderColor:'rgba(248,81,73,.5)',borderWidth:1,borderDash:[4,4]}}}
+      },
+      scales:{y:{ticks:{callback:v=>v+'%',font:{size:10}}},x:{ticks:{font:{size:11}}}}
     }
   });
 
-  // ⑦ 時間帯別売上（詳細日報）
+  // ⑥ 曜日別平均回数
+  const dowCntAvg = dowStats.map((_,i)=>{
+    const a=rows.filter(r=>r.dow===i).map(r=>r.count).filter(v=>v>0);
+    return a.length?Math.round(mean(a)):0;
+  });
+  makeChart('c-dow-cnt',{
+    type:'bar',
+    data:{labels:DAYS_JP,datasets:[{data:dowCntAvg,backgroundColor:DAY_COLORS.map(c=>c+'aa'),borderRadius:4,label:'回数'}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{y:{ticks:{font:{size:10}}},x:{ticks:{font:{size:11}}}}
+    }
+  });
+
+  // ⑦ 月別
+  const monthly={};
+  rows.forEach(r=>{
+    const k=`${r.date.getFullYear()}/${String(r.date.getMonth()+1).padStart(2,'0')}`;
+    if(!monthly[k])monthly[k]=[];
+    if(r.revenue>0)monthly[k].push(r.revenue);
+  });
+  const mKeys=Object.keys(monthly).sort();
+  makeChart('c-monthly',{
+    type:'bar',
+    data:{labels:mKeys,datasets:[
+      {label:'平均',data:mKeys.map(k=>Math.round(mean(monthly[k]))),backgroundColor:'rgba(121,192,255,.7)',borderRadius:4},
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{y:{ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}},x:{ticks:{font:{size:10}}}}
+    }
+  });
+
   renderHourly();
 }
 
-function renderHourly(){
+function renderHourly() {
   if(!allDetailRows.length) return;
-  const cutoff = filterDays ? new Date(Date.now()-filterDays*86400000) : null;
-  const hourRev = Array(37).fill(0);
-  const hourCnt = Array(37).fill(0);
+  const cutoff = filterDays?new Date(Date.now()-filterDays*86400000):null;
+  const hourFare={}, hourCnt={};
   allDetailRows.forEach(r=>{
-    if(cutoff && r.date < cutoff) return;
+    if(cutoff&&r.date<cutoff) return;
     if(r.hour>=13&&r.hour<=36){
-      hourRev[r.hour]+=r.fare; hourCnt[r.hour]++;
+      if(!hourFare[r.hour]) hourFare[r.hour]=[];
+      hourFare[r.hour].push(r.fare);
+      hourCnt[r.hour]=(hourCnt[r.hour]||0)+1;
     }
   });
-  const labels = Array.from({length:24},(_,i)=>i+13).map(h=>h+'時台');
-  const avgFares = Array.from({length:24},(_,i)=>
-    hourCnt[i+13]>0?Math.round(hourRev[i+13]/hourCnt[i+13]):0);
-  const counts = Array.from({length:24},(_,i)=>hourCnt[i+13]);
+  const labels=[], avgF=[], cnts=[];
+  for(let h=13;h<=36;h++){
+    labels.push(h+'時台');
+    avgF.push(hourFare[h]&&hourFare[h].length?Math.round(mean(hourFare[h])):0);
+    cnts.push(hourCnt[h]||0);
+  }
   makeChart('c-hourly',{
     type:'bar',
-    data:{
-      labels,
-      datasets:[
-        {label:'平均単価',data:avgFares,backgroundColor:'rgba(240,136,62,.8)',borderRadius:3,yAxisID:'y1'},
-        {label:'乗車件数',data:counts,backgroundColor:'rgba(121,192,255,.5)',borderRadius:3,yAxisID:'y2'}
-      ]
-    },
+    data:{labels,datasets:[
+      {label:'平均単価',data:avgF,backgroundColor:'rgba(240,136,62,.75)',borderRadius:3,yAxisID:'y1'},
+      {label:'乗車件数',data:cnts,type:'line',borderColor:'#79c0ff',backgroundColor:'transparent',borderWidth:2,pointRadius:2,yAxisID:'y2',tension:0.3},
+    ]},
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:11}}}},
       scales:{
@@ -329,50 +518,38 @@ function renderHourly(){
   });
 }
 
-// 営業日報のロード
-async function loadDailyReport(){
-  const res = await fetch(DAILY_URL);
-  const text = await res.text();
-  const rows = parseCSV(text);
-  const start = isNaN(Date.parse((rows[0]?.[0]||'').replace(/\//g,'-')))?1:0;
-  allDailyRows = rows.slice(start).map(cols=>{
+// ── データロード ───────────────────────────────────────────────
+async function loadDailyReport() {
+  const res=await fetch(DAILY_URL);
+  const rows=parseCSV(await res.text());
+  const start=isNaN(Date.parse((rows[0]?.[0]||'').replace(/\//g,'-')))?1:0;
+  allDailyRows=rows.slice(start).map(cols=>{
     if(cols.length<12) return null;
-    const date = parseDate(cols[0]);
-    if(!date) return null;
-    return {
-      date,
-      dow: date.getDay(),
-      revenue: parseNum(cols[3]),
-      count:   parseNum(cols[4]),
-      price:   parseNum(cols[5]),
-      occRate: parseFloat2(cols[11])
-    };
+    const date=parseDate(cols[0]); if(!date) return null;
+    return {date,dow:date.getDay(),revenue:parseNum(cols[3]),count:parseNum(cols[4]),
+             price:parseNum(cols[5]),occRate:parseFloat2(cols[11])};
   }).filter(Boolean);
 }
 
-// 詳細日報のロード
-async function loadDetailReport(){
-  const res = await fetch(DETAIL_URL);
-  const text = await res.text();
-  const rows = parseCSV(text);
-  const start = isNaN(Date.parse((rows[0]?.[0]||'').replace(/\//g,'-')))?1:0;
-  allDetailRows = rows.slice(start).map(cols=>{
+async function loadDetailReport() {
+  const res=await fetch(DETAIL_URL);
+  const rows=parseCSV(await res.text());
+  const start=isNaN(Date.parse((rows[0]?.[0]||'').replace(/\//g,'-')))?1:0;
+  allDetailRows=rows.slice(start).map(cols=>{
     if(cols.length<10) return null;
-    const date = parseDate(cols[0]);
-    if(!date) return null;
-    const hourStr = (cols[2]||'').trim().match(/^(\d+):/);
-    const hour = hourStr ? parseInt(hourStr[1]) : null;
-    if(hour===null) return null;
-    return { date, hour, fare: parseNum(cols[9]) };
+    const date=parseDate(cols[0]); if(!date) return null;
+    const m=(cols[2]||'').trim().match(/^(\d+):/);
+    const hour=m?parseInt(m[1]):null; if(hour===null) return null;
+    return {date,hour,fare:parseNum(cols[9])};
   }).filter(Boolean);
 }
 
-async function init(){
+async function init() {
   try{
-    await Promise.all([loadDailyReport(), loadDetailReport()]);
+    await Promise.all([loadDailyReport(),loadDetailReport()]);
     document.getElementById('status').className='ok';
     document.getElementById('status').textContent=
-      `✅ 日報${allDailyRows.length}件 / 詳細${allDetailRows.length}件 読込済`;
+      `✅ 日報${allDailyRows.length}日分 / 詳細${allDetailRows.length}件 読込済`;
     renderAll();
   }catch(e){
     document.getElementById('status').className='error';
@@ -381,10 +558,9 @@ async function init(){
   }
 }
 
-// 期間ボタン
 document.querySelectorAll('.period-btn').forEach(btn=>
   btn.addEventListener('click',()=>{
-    filterDays = +btn.dataset.days;
+    filterDays=+btn.dataset.days;
     document.querySelectorAll('.period-btn').forEach(b=>b.classList.toggle('active',b===btn));
     renderAll();
   }));
