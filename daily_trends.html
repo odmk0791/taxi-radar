@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Trends for TAXI Driver</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#0d1117;--surface:#161b22;--surface2:#21262d;--border:#30363d;
+  --text:#e6edf3;--muted:#8b949e;--blue:#79c0ff;--green:#3fb950;
+  --orange:#f0883e;--red:#f85149;--purple:#d2a8ff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);
+  font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
+  min-height:100vh;padding-bottom:40px}
+
+#header{background:var(--surface);border-bottom:1px solid var(--border);
+  padding:10px 20px;display:flex;align-items:center;justify-content:space-between}
+#header h1{font-size:15px;font-weight:800}
+#header a{font-size:11px;color:var(--blue);text-decoration:none;border:1px solid var(--border);
+  padding:4px 10px;border-radius:4px}
+#header a:hover{border-color:var(--blue)}
+
+#status{padding:8px 20px;font-size:12px;color:var(--muted);
+  background:var(--surface);border-bottom:1px solid var(--border)}
+#status.loading{color:var(--blue)}
+#status.ok{color:var(--green)}
+#status.error{color:var(--red)}
+
+/* KPIカード */
+#kpi-row{display:flex;gap:12px;padding:16px 20px;flex-wrap:wrap}
+.kpi{flex:1;min-width:140px;background:var(--surface);border:1px solid var(--border);
+  border-radius:8px;padding:14px 16px}
+.kpi-label{font-size:11px;color:var(--muted);margin-bottom:6px}
+.kpi-val{font-size:22px;font-weight:800;color:var(--text)}
+.kpi-sub{font-size:11px;color:var(--muted);margin-top:4px}
+
+/* グラフグリッド */
+#charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:0 20px}
+.chart-card{background:var(--surface);border:1px solid var(--border);
+  border-radius:8px;padding:16px}
+.chart-card.wide{grid-column:1/-1}
+.chart-title{font-size:12px;font-weight:700;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+.chart-wrap{position:relative;height:220px}
+.chart-wrap.tall{height:280px}
+
+/* 期間フィルタ */
+#filter-row{display:flex;gap:8px;padding:12px 20px 4px;flex-wrap:wrap;align-items:center}
+.filter-label{font-size:11px;color:var(--muted)}
+.period-btn{padding:4px 10px;border-radius:4px;border:1px solid var(--border);
+  background:var(--surface2);color:var(--muted);font-size:11px;cursor:pointer}
+.period-btn.active{background:var(--blue);color:#0d1117;border-color:var(--blue)}
+
+@media(max-width:600px){
+  #charts{grid-template-columns:1fr}
+  .chart-card.wide{grid-column:1}
+  #kpi-row{gap:8px;padding:12px}
+  .kpi-val{font-size:18px}
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>📊 Sales Trends for TAXI Driver</h1>
+  <a href="taxi_heatmap.html">← Heat Map</a>
+</div>
+<div id="status" class="loading">⏳ データ読込中...</div>
+
+<div id="filter-row">
+  <span class="filter-label">期間</span>
+  <button class="period-btn active" data-days="30">1ヶ月</button>
+  <button class="period-btn" data-days="90">3ヶ月</button>
+  <button class="period-btn" data-days="180">6ヶ月</button>
+  <button class="period-btn" data-days="0">全期間</button>
+</div>
+
+<div id="kpi-row">
+  <div class="kpi"><div class="kpi-label">平均日次売上</div><div class="kpi-val" id="kpi-rev">—</div><div class="kpi-sub" id="kpi-rev-sub"></div></div>
+  <div class="kpi"><div class="kpi-label">平均乗車回数</div><div class="kpi-val" id="kpi-cnt">—</div><div class="kpi-sub" id="kpi-cnt-sub"></div></div>
+  <div class="kpi"><div class="kpi-label">平均単価</div><div class="kpi-val" id="kpi-price">—</div><div class="kpi-sub" id="kpi-price-sub"></div></div>
+  <div class="kpi"><div class="kpi-label">平均実車率</div><div class="kpi-val" id="kpi-occ">—</div><div class="kpi-sub" id="kpi-occ-sub"></div></div>
+</div>
+
+<div id="charts">
+  <div class="chart-card wide">
+    <div class="chart-title">日次売上の推移（7日移動平均）</div>
+    <div class="chart-wrap tall"><canvas id="c-daily-rev"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">曜日別 平均売上</div>
+    <div class="chart-wrap"><canvas id="c-dow-rev"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">曜日別 平均乗車回数</div>
+    <div class="chart-wrap"><canvas id="c-dow-cnt"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">曜日別 平均単価</div>
+    <div class="chart-wrap"><canvas id="c-dow-price"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">実車率の推移（7日移動平均）</div>
+    <div class="chart-wrap"><canvas id="c-occ"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">月別売上サマリー</div>
+    <div class="chart-wrap"><canvas id="c-monthly"></canvas></div>
+  </div>
+  <div class="chart-card wide">
+    <div class="chart-title">時間帯別 乗車売上（詳細日報）</div>
+    <div class="chart-wrap"><canvas id="c-hourly"></canvas></div>
+  </div>
+</div>
+
+<script>
+const DAILY_URL  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
+const DETAIL_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv";
+const DAYS_JP = ['日','月','火','水','木','金','土'];
+const COLORS = ['#f85149','#f0883e','#e3b341','#3fb950','#79c0ff','#d2a8ff','#ff7edb'];
+const DAY_COLORS = DAYS_JP.map((_,i)=>COLORS[i]);
+
+// Chart.jsデフォルト設定
+Chart.defaults.color = '#8b949e';
+Chart.defaults.borderColor = '#30363d';
+Chart.defaults.font.family = "Helvetica Neue,Arial,'Hiragino Kaku Gothic ProN',Meiryo,sans-serif";
+
+const parseCSV = text => {
+  const parse = line => {
+    const res=[]; let cur='',inq=false;
+    for(const c of line){if(c==='"')inq=!inq;else if(c===','&&!inq){res.push(cur.trim());cur='';}else cur+=c;}
+    res.push(cur.trim()); return res;
+  };
+  return text.split(/\r?\n/).filter(l=>l.trim()).map(parse);
+};
+
+const parseNum = s => { const n=parseInt((s||'').replace(/[^0-9]/g,'')); return isNaN(n)?0:n; };
+const parseFloat2 = s => { const n=parseFloat((s||'').replace(/[^0-9.]/g,'')); return isNaN(n)?0:n; };
+const parseDate = s => {
+  if(!s) return null;
+  // "24年2月19日" or "2024/02/19" or "2024-02-19"
+  let m = s.match(/(\d{2,4})年(\d{1,2})月(\d{1,2})日/);
+  if(m) return new Date(parseInt(m[1])<100?2000+parseInt(m[1]):parseInt(m[1]), parseInt(m[2])-1, parseInt(m[3]));
+  m = s.match(/^(\d{4})[\-\/](\d{1,2})[\-\/](\d{1,2})/);
+  if(m) return new Date(parseInt(m[1]),parseInt(m[2])-1,parseInt(m[3]));
+  return null;
+};
+
+const movingAvg = (arr, w) => arr.map((_,i) => {
+  const sl=arr.slice(Math.max(0,i-w+1),i+1).filter(v=>v>0);
+  return sl.length?Math.round(sl.reduce((a,b)=>a+b,0)/sl.length):null;
+});
+
+let allDailyRows=[], allDetailRows=[];
+let charts={};
+let filterDays=30;
+
+// 期間フィルタ適用
+const filterRows = rows => {
+  if(!filterDays) return rows;
+  const cutoff = new Date(); cutoff.setDate(cutoff.getDate()-filterDays);
+  return rows.filter(r=>r.date && r.date>=cutoff);
+};
+
+function buildKPI(rows){
+  if(!rows.length) return;
+  const avg = key => Math.round(rows.reduce((s,r)=>s+r[key],0)/rows.length);
+  const avgF = key => (rows.reduce((s,r)=>s+r[key],0)/rows.length).toFixed(1);
+  document.getElementById('kpi-rev').textContent = '¥'+avg('revenue').toLocaleString();
+  document.getElementById('kpi-cnt').textContent = avg('count')+'回';
+  document.getElementById('kpi-price').textContent = '¥'+avg('price').toLocaleString();
+  document.getElementById('kpi-occ').textContent = avgF('occRate')+'%';
+  document.getElementById('kpi-rev-sub').textContent = `最高: ¥${Math.max(...rows.map(r=>r.revenue)).toLocaleString()}`;
+  document.getElementById('kpi-cnt-sub').textContent = `最高: ${Math.max(...rows.map(r=>r.count))}回`;
+  document.getElementById('kpi-price-sub').textContent = `最高: ¥${Math.max(...rows.map(r=>r.price)).toLocaleString()}`;
+  document.getElementById('kpi-occ-sub').textContent = `最高: ${Math.max(...rows.map(r=>r.occRate)).toFixed(1)}%`;
+}
+
+function makeChart(id, cfg){
+  if(charts[id]) charts[id].destroy();
+  const ctx = document.getElementById(id).getContext('2d');
+  charts[id] = new Chart(ctx, cfg);
+}
+
+function renderAll(){
+  const rows = filterRows(allDailyRows);
+  if(!rows.length) return;
+
+  buildKPI(rows);
+
+  // ① 日次売上推移
+  const dates = rows.map(r=>r.date.toLocaleDateString('ja-JP',{month:'2-digit',day:'2-digit'}));
+  const revs  = rows.map(r=>r.revenue);
+  const ma7   = movingAvg(revs, 7);
+  makeChart('c-daily-rev',{
+    type:'line',
+    data:{
+      labels:dates,
+      datasets:[
+        {label:'日次売上',data:revs,borderColor:'#79c0ff',backgroundColor:'rgba(121,192,255,.08)',
+          borderWidth:1,pointRadius:1,tension:0.3},
+        {label:'7日平均',data:ma7,borderColor:'#f0883e',backgroundColor:'transparent',
+          borderWidth:2,pointRadius:0,tension:0.4,spanGaps:true}
+      ]
+    },
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:11}}}},
+      scales:{
+        x:{ticks:{maxTicksLimit:12,font:{size:10}}},
+        y:{ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}}
+      }
+    }
+  });
+
+  // ② 曜日別平均売上
+  const dowData = Array(7).fill(0).map(()=>{return{sum:0,cnt:0};});
+  rows.forEach(r=>{ if(r.dow>=0){ dowData[r.dow].sum+=r.revenue; dowData[r.dow].cnt++; } });
+  const dowAvgRev = dowData.map(d=>d.cnt?Math.round(d.sum/d.cnt):0);
+  makeChart('c-dow-rev',{
+    type:'bar',
+    data:{labels:DAYS_JP,datasets:[{data:dowAvgRev,backgroundColor:DAY_COLORS,borderRadius:4}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+      scales:{y:{ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}}}
+    }
+  });
+
+  // ③ 曜日別平均回数
+  const dowCntData = Array(7).fill(0).map(()=>{return{sum:0,cnt:0};});
+  rows.forEach(r=>{ if(r.dow>=0){ dowCntData[r.dow].sum+=r.count; dowCntData[r.dow].cnt++; } });
+  const dowAvgCnt = dowCntData.map(d=>d.cnt?Math.round(d.sum/d.cnt):0);
+  makeChart('c-dow-cnt',{
+    type:'bar',
+    data:{labels:DAYS_JP,datasets:[{data:dowAvgCnt,backgroundColor:DAY_COLORS,borderRadius:4}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+      scales:{y:{ticks:{font:{size:10}}}}
+    }
+  });
+
+  // ④ 曜日別平均単価
+  const dowPriceData = Array(7).fill(0).map(()=>{return{sum:0,cnt:0};});
+  rows.forEach(r=>{ if(r.dow>=0){ dowPriceData[r.dow].sum+=r.price; dowPriceData[r.dow].cnt++; } });
+  const dowAvgPrice = dowPriceData.map(d=>d.cnt?Math.round(d.sum/d.cnt):0);
+  makeChart('c-dow-price',{
+    type:'bar',
+    data:{labels:DAYS_JP,datasets:[{data:dowAvgPrice,backgroundColor:DAY_COLORS,borderRadius:4}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+      scales:{y:{ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}}}
+    }
+  });
+
+  // ⑤ 実車率推移
+  const occs = rows.map(r=>r.occRate);
+  const occMa = movingAvg(occs, 7);
+  makeChart('c-occ',{
+    type:'line',
+    data:{
+      labels:dates,
+      datasets:[
+        {label:'実車率',data:occs,borderColor:'#3fb950',backgroundColor:'rgba(63,185,80,.08)',
+          borderWidth:1,pointRadius:1,tension:0.3},
+        {label:'7日平均',data:occMa,borderColor:'#d2a8ff',backgroundColor:'transparent',
+          borderWidth:2,pointRadius:0,tension:0.4,spanGaps:true}
+      ]
+    },
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:11}}}},
+      scales:{
+        x:{ticks:{maxTicksLimit:12,font:{size:10}}},
+        y:{min:0,max:100,ticks:{callback:v=>v+'%',font:{size:10}}}
+      }
+    }
+  });
+
+  // ⑥ 月別売上
+  const monthly = {};
+  rows.forEach(r=>{
+    const key=`${r.date.getFullYear()}/${String(r.date.getMonth()+1).padStart(2,'0')}`;
+    if(!monthly[key]) monthly[key]={sum:0,cnt:0};
+    monthly[key].sum+=r.revenue; monthly[key].cnt++;
+  });
+  const mKeys = Object.keys(monthly).sort();
+  const mVals = mKeys.map(k=>Math.round(monthly[k].sum/monthly[k].cnt));
+  makeChart('c-monthly',{
+    type:'bar',
+    data:{labels:mKeys,datasets:[{data:mVals,backgroundColor:'#79c0ff',borderRadius:4}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+      scales:{y:{ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}}}
+    }
+  });
+
+  // ⑦ 時間帯別売上（詳細日報）
+  renderHourly();
+}
+
+function renderHourly(){
+  if(!allDetailRows.length) return;
+  const cutoff = filterDays ? new Date(Date.now()-filterDays*86400000) : null;
+  const hourRev = Array(37).fill(0);
+  const hourCnt = Array(37).fill(0);
+  allDetailRows.forEach(r=>{
+    if(cutoff && r.date < cutoff) return;
+    if(r.hour>=13&&r.hour<=36){
+      hourRev[r.hour]+=r.fare; hourCnt[r.hour]++;
+    }
+  });
+  const labels = Array.from({length:24},(_,i)=>i+13).map(h=>h+'時台');
+  const avgFares = Array.from({length:24},(_,i)=>
+    hourCnt[i+13]>0?Math.round(hourRev[i+13]/hourCnt[i+13]):0);
+  const counts = Array.from({length:24},(_,i)=>hourCnt[i+13]);
+  makeChart('c-hourly',{
+    type:'bar',
+    data:{
+      labels,
+      datasets:[
+        {label:'平均単価',data:avgFares,backgroundColor:'rgba(240,136,62,.8)',borderRadius:3,yAxisID:'y1'},
+        {label:'乗車件数',data:counts,backgroundColor:'rgba(121,192,255,.5)',borderRadius:3,yAxisID:'y2'}
+      ]
+    },
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:11}}}},
+      scales:{
+        y1:{position:'left',ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}},
+        y2:{position:'right',grid:{drawOnChartArea:false},ticks:{font:{size:10}}}
+      }
+    }
+  });
+}
+
+// 営業日報のロード
+async function loadDailyReport(){
+  const res = await fetch(DAILY_URL);
+  const text = await res.text();
+  const rows = parseCSV(text);
+  const start = isNaN(Date.parse((rows[0]?.[0]||'').replace(/\//g,'-')))?1:0;
+  allDailyRows = rows.slice(start).map(cols=>{
+    if(cols.length<12) return null;
+    const date = parseDate(cols[0]);
+    if(!date) return null;
+    return {
+      date,
+      dow: date.getDay(),
+      revenue: parseNum(cols[3]),
+      count:   parseNum(cols[4]),
+      price:   parseNum(cols[5]),
+      occRate: parseFloat2(cols[11])
+    };
+  }).filter(Boolean);
+}
+
+// 詳細日報のロード
+async function loadDetailReport(){
+  const res = await fetch(DETAIL_URL);
+  const text = await res.text();
+  const rows = parseCSV(text);
+  const start = isNaN(Date.parse((rows[0]?.[0]||'').replace(/\//g,'-')))?1:0;
+  allDetailRows = rows.slice(start).map(cols=>{
+    if(cols.length<10) return null;
+    const date = parseDate(cols[0]);
+    if(!date) return null;
+    const hourStr = (cols[2]||'').trim().match(/^(\d+):/);
+    const hour = hourStr ? parseInt(hourStr[1]) : null;
+    if(hour===null) return null;
+    return { date, hour, fare: parseNum(cols[9]) };
+  }).filter(Boolean);
+}
+
+async function init(){
+  try{
+    await Promise.all([loadDailyReport(), loadDetailReport()]);
+    document.getElementById('status').className='ok';
+    document.getElementById('status').textContent=
+      `✅ 日報${allDailyRows.length}件 / 詳細${allDetailRows.length}件 読込済`;
+    renderAll();
+  }catch(e){
+    document.getElementById('status').className='error';
+    document.getElementById('status').textContent='❌ '+e.message;
+    console.error(e);
+  }
+}
+
+// 期間ボタン
+document.querySelectorAll('.period-btn').forEach(btn=>
+  btn.addEventListener('click',()=>{
+    filterDays = +btn.dataset.days;
+    document.querySelectorAll('.period-btn').forEach(b=>b.classList.toggle('active',b===btn));
+    renderAll();
+  }));
+
+init();
+</script>
+</body>
+</html>
