@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>給与・拘束時間・対予算ダッシュボード</title>
+<title>出番表・給与・拘束時間</title>
 <style>
   :root{
     --bg:#0d1117; --panel:#161b22; --panel2:#1c232c; --border:#2d3640;
@@ -12,54 +12,44 @@
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI",sans-serif;
-    padding:14px;max-width:1100px;margin:0 auto;line-height:1.5;}
-  h1{font-size:1.15rem;font-weight:700;letter-spacing:.02em;display:flex;align-items:center;gap:8px;margin-bottom:2px;}
-  h1 .tag{font-size:.62rem;background:var(--accent);color:#06250f;padding:2px 7px;border-radius:10px;font-weight:700;}
-  .sub{color:var(--dim);font-size:.72rem;margin-bottom:14px;}
-  .panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:14px;}
-  .panel h2{font-size:.92rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:7px;
+    padding:14px;max-width:760px;margin:0 auto;line-height:1.5;}
+  h1{font-size:1.1rem;font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:2px;}
+  h1 .tag{font-size:.6rem;background:var(--accent);color:#06250f;padding:2px 7px;border-radius:10px;font-weight:700;}
+  .sub{color:var(--dim);font-size:.7rem;margin-bottom:14px;}
+  .panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:15px;margin-bottom:14px;}
+  .panel h2{font-size:.9rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:7px;
     border-left:3px solid var(--accent);padding-left:9px;}
   .panel h2.t-time{border-color:var(--accent2);}
-  .panel h2.t-budget{border-color:var(--gold);}
-  .grid{display:grid;gap:10px;}
-  .g3{grid-template-columns:repeat(3,1fr);} .g2{grid-template-columns:repeat(2,1fr);} .g4{grid-template-columns:repeat(4,1fr);}
-  @media(max-width:680px){.g3,.g4{grid-template-columns:repeat(2,1fr);}}
-  .stat{background:var(--panel2);border:1px solid var(--border);border-radius:9px;padding:11px 13px;}
-  .stat .lbl{font-size:.64rem;color:var(--dim);margin-bottom:3px;letter-spacing:.03em;}
-  .stat .val{font-size:1.25rem;font-weight:700;font-family:var(--mono);}
-  .stat .val.sm{font-size:1.0rem;}
-  .stat .note{font-size:.6rem;color:var(--dim);margin-top:2px;}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px;}
+  select,button{background:var(--panel2);color:var(--txt);border:1px solid var(--border);border-radius:7px;padding:7px 11px;font-size:.82rem;font-family:inherit;}
+  button{cursor:pointer;} button.ghost:hover{border-color:var(--accent2);}
+  .summary{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:6px;}
+  @media(max-width:560px){.summary{grid-template-columns:repeat(2,1fr);}}
+  .stat{background:var(--panel2);border:1px solid var(--border);border-radius:9px;padding:10px 12px;}
+  .stat .lbl{font-size:.62rem;color:var(--dim);margin-bottom:3px;}
+  .stat .val{font-size:1.15rem;font-weight:700;font-family:var(--mono);}
   .ok{color:var(--accent);} .blue{color:var(--accent2);} .warn{color:var(--warn);} .danger{color:var(--danger);} .gold{color:var(--gold);}
-  .bar{height:9px;background:#0a0d12;border-radius:6px;overflow:hidden;margin:6px 0;border:1px solid var(--border);}
-  .bar > i{display:block;height:100%;border-radius:6px;transition:width .6s;}
-  table{width:100%;border-collapse:collapse;font-size:.74rem;margin-top:4px;}
-  th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono);white-space:nowrap;}
-  th{color:var(--dim);font-weight:600;font-size:.66rem;text-align:right;}
-  td:first-child,th:first-child{text-align:left;}
+  .pace{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:13px 15px;margin-top:9px;}
+  .pace .big{font-size:1.9rem;font-weight:800;font-family:var(--mono);line-height:1.1;}
+  .pace .msg{font-size:.82rem;font-weight:700;margin-top:2px;}
+  .pace .note{font-size:.64rem;color:var(--dim);margin-top:3px;}
+  table{width:100%;border-collapse:collapse;font-size:.84rem;}
+  th,td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono);white-space:nowrap;}
+  th{color:var(--dim);font-weight:600;font-size:.68rem;}
+  td:first-child,th:first-child,td:nth-child(2),th:nth-child(2){text-align:left;}
+  tr.future td{color:var(--dim);}
+  tr.future .machi{color:var(--accent2);}
   tr.over td{background:rgba(248,81,73,.08);}
-  .pill{display:inline-block;font-size:.6rem;padding:1px 6px;border-radius:8px;font-family:inherit;}
-  .pill.dai{background:rgba(227,179,65,.18);color:var(--gold);}
-  .pill.sho{background:rgba(88,166,255,.16);color:var(--accent2);}
-  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px;}
-  select,input,button{background:var(--panel2);color:var(--txt);border:1px solid var(--border);border-radius:7px;padding:6px 10px;font-size:.78rem;font-family:inherit;}
-  button{cursor:pointer;background:var(--accent2);color:#04203f;border:none;font-weight:700;}
-  button.ghost{background:var(--panel2);color:var(--txt);border:1px solid var(--border);font-weight:400;}
-  button:hover{opacity:.88;}
-  .shiftday{display:inline-flex;align-items:center;gap:4px;background:var(--panel2);border:1px solid var(--border);border-radius:7px;padding:3px 6px 3px 9px;font-size:.72rem;font-family:var(--mono);margin:3px;}
-  .shiftday.done{border-color:var(--accent);} .shiftday.future{border-color:var(--accent2);}
-  .shiftday b{font-weight:700;} .shiftday .x{cursor:pointer;color:var(--dim);padding:0 3px;border-radius:4px;}
-  .shiftday .x:hover{color:var(--danger);}
-  .loading{text-align:center;color:var(--dim);padding:30px;font-size:.85rem;}
-  .big{font-size:1.7rem;font-weight:800;font-family:var(--mono);line-height:1.1;}
-  .miniflex{display:flex;justify-content:space-between;align-items:baseline;gap:8px;}
-  .legend{font-size:.62rem;color:var(--dim);margin-top:8px;line-height:1.7;}
-  .err{background:rgba(248,81,73,.12);border:1px solid var(--danger);color:#ffb4ae;padding:10px;border-radius:8px;font-size:.78rem;}
-  details{margin-top:8px;} summary{cursor:pointer;font-size:.72rem;color:var(--dim);}
-  /* calendar */
+  tfoot td{font-weight:700;border-top:2px solid var(--border);border-bottom:none;background:var(--panel2);}
+  .badge{display:inline-block;font-size:.6rem;padding:1px 6px;border-radius:8px;}
+  .badge.done{background:rgba(63,185,80,.18);color:var(--accent);}
+  .badge.future{background:rgba(88,166,255,.16);color:var(--accent2);}
+  .badge.dai{background:rgba(227,179,65,.18);color:var(--gold);}
+  .badge.sho{background:rgba(88,166,255,.16);color:var(--accent2);}
   .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;}
   .cal-dow{text-align:center;font-size:.64rem;color:var(--dim);padding:2px 0;font-weight:600;}
   .cal-dow.sat{color:var(--accent2);} .cal-dow.sun{color:var(--danger);}
-  .cal-cell{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;border-radius:8px;font-size:.82rem;
+  .cal-cell{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;border-radius:8px;font-size:.84rem;
     font-family:var(--mono);cursor:pointer;border:1px solid transparent;background:var(--panel2);position:relative;user-select:none;}
   .cal-cell.empty{background:transparent;cursor:default;}
   .cal-cell:hover:not(.empty):not(.done){border-color:var(--accent2);}
@@ -69,122 +59,82 @@
   .cal-cell.sat{color:var(--accent2);} .cal-cell.sun{color:var(--danger);}
   .cal-cell.sel.sat,.cal-cell.sel.sun{color:#04203f;}
   .cal-cell.today{box-shadow:inset 0 0 0 2px var(--gold);}
-  .summary-box{background:var(--panel2);border:1px solid var(--border);border-radius:9px;padding:12px;}
-  .summary-box .row{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px;}
+  .legend{font-size:.64rem;color:var(--dim);margin-top:10px;line-height:1.7;}
+  .err{background:rgba(248,81,73,.12);border:1px solid var(--danger);color:#ffb4ae;padding:10px;border-radius:8px;font-size:.78rem;margin-bottom:12px;}
 </style>
 </head>
 <body>
-<h1>給与・拘束時間・対予算 <span class="tag">⑦</span></h1>
+<h1>出番表・給与・拘束時間 <span class="tag">⑦</span></h1>
 <div class="sub" id="sub">読み込み中…</div>
-
 <div id="err"></div>
 
-<!-- ① 拘束時間 -->
+<div class="controls">
+  <label style="font-size:.78rem;color:var(--dim)">周期</label>
+  <select id="cycleSel"></select>
+  <span id="cycleType"></span>
+</div>
+
 <div class="panel">
-  <h2 class="t-time">⏱ 拘束時間管理 — 現在の周期</h2>
-  <div class="controls">
-    <label style="font-size:.74rem;color:var(--dim)">表示周期:</label>
-    <select id="cycleSel"></select>
-  </div>
-  <div class="grid g4" id="timeStats"></div>
-  <div style="margin-top:14px">
-    <div class="miniflex"><span style="font-size:.72rem;color:var(--dim)">月間枠の消化</span><span id="timeBarLbl" style="font-size:.7rem;font-family:var(--mono)"></span></div>
-    <div class="bar"><i id="timeBar"></i></div>
-  </div>
-  <details><summary>この周期の出番ごとの拘束時間</summary>
-    <table id="timeTable"><thead><tr><th>日付</th><th>曜</th><th>営収</th><th>拘束時間</th><th>判定</th></tr></thead><tbody></tbody></table>
-  </details>
+  <h2>📋 出番表 — <span id="otTitle"></span></h2>
+  <table id="otTable">
+    <thead><tr><th>日付</th><th>曜</th><th>売上</th><th>拘束時間</th><th>状態</th></tr></thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+  </table>
+  <div class="legend" id="otLegend"></div>
+</div>
+
+<div class="panel">
+  <h2 class="t-time">⏱ 拘束時間 — 使い切りペース</h2>
+  <div class="summary" id="timeStats"></div>
+  <div class="pace" id="pace"></div>
   <div class="legend" id="timeLegend"></div>
 </div>
 
-<!-- ② 給与 -->
 <div class="panel">
-  <h2>💴 給与計算 — 周期別（空転差引後）</h2>
-  <div class="grid g4" id="salStats"></div>
-  <details open><summary>周期別 明細</summary>
-    <table id="salTable"><thead><tr><th>周期</th><th>出番</th><th>営収合計</th><th>空転</th><th>補正営収</th><th>推定給与<br>×52%</th><th>明細値</th><th>差</th></tr></thead><tbody></tbody></table>
-  </details>
-  <div class="legend">推定給与 = (営収合計 − 空転) × 52%。「明細値」は給与明細から手入力した実給与。空転CSV未連携の周期は空転0で計算。</div>
+  <h2>💴 この周期の給与（空転差引・52%）</h2>
+  <div class="summary" id="salStats"></div>
+  <div class="legend" id="salLegend"></div>
 </div>
 
-<!-- ③ 対予算 -->
 <div class="panel">
-  <h2 class="t-budget">🎯 対予算 — 年収目標</h2>
-  <div class="controls">
-    <label style="font-size:.74rem;color:var(--dim)">目標年収:</label>
-    <select id="goalSel">
-      <option value="10000000">1000万円（目標）</option>
-      <option value="9300000" selected>930万円（現実線）</option>
-      <option value="9000000">900万円</option>
-    </select>
-    <label style="font-size:.74rem;color:var(--dim)">年度:</label>
-    <select id="yearSel"></select>
-  </div>
-  <div class="grid g3" id="budgetStats"></div>
-  <div style="margin-top:14px">
-    <div class="miniflex"><span style="font-size:.72rem;color:var(--dim)">年収進捗（給与ベース）</span><span id="budgetBarLbl" style="font-size:.7rem;font-family:var(--mono)"></span></div>
-    <div class="bar"><i id="budgetBar"></i></div>
-  </div>
-  <div class="legend" id="budgetLegend"></div>
-</div>
-
-<!-- 出勤予定（手入力・暫定） -->
-<div class="panel">
-  <h2 style="border-color:var(--dim)">📋 出勤予定カレンダー</h2>
+  <h2 style="border-color:var(--dim)">🗓 出番を登録</h2>
   <div class="controls">
     <button class="ghost" id="calPrev">‹ 前月</button>
-    <strong id="calTitle" style="font-size:.95rem;min-width:120px;text-align:center"></strong>
+    <strong id="calTitle" style="font-size:.92rem;min-width:110px;text-align:center"></strong>
     <button class="ghost" id="calNext">翌月 ›</button>
     <span style="flex:1"></span>
     <button class="ghost" id="clearShift">この周期をクリア</button>
   </div>
   <div id="calendar"></div>
-  <div id="shiftSummary" style="margin-top:14px"></div>
-  <div class="legend">月13〜14日に勤務表が出たら、翌16日以降の出番日をカレンダーで<b>タップして選択</b>。下に「○月度の出番一覧」が出るので入力ミスを確認できます。日報CSVに営収がある日は「消化済」、無い日は「これから」と自動判定し、残出番として拘束時間・対予算に反映します。<br>※将来はGoogleフォーム→スプレッドシート連携に差し替え予定。</div>
+  <div class="legend">勤務表が出たら出番日を<b>タップ</b>。上の出番表に反映されます。売上が入った日は緑✓（消化済）で固定。<br>※将来はGoogleフォーム→スプレッドシート連携に差し替え予定。</div>
 </div>
 
 <script>
-// ===== 設定 =====
 const NIPPOU_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
-// 空転CSV（日付=col1, 金額=col8）
-const KUTEN_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTYCG_9IrMI-g9yXrshVt6Jy6EXRVOlDSrelt_BgBI5qi5U9m240OrY7APtcEQyNFd3CXrvbqswE2_/pub?gid=0&single=true&output=csv";
-const PAY_RATE = 0.52;        // 給与計算（毎月の歩合）
-const BUDGET_RATE = 0.60;     // 対予算（3/6/12月の分離給を含めた実質年率）
-const DAY_LIMIT_MIN = 20*60+59; // 1出番上限 20:59
-const LS_SHIFT = "salary_dash_shifts_v1";
-
-// 大小マスタ（周期開始 YYYY/MM をキー / 'dai' or 'sho'）。表から確定値。
+const KUTEN_CSV  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTYCG_9IrMI-g9yXrshVt6Jy6EXRVOlDSrelt_BgBI5qi5U9m240OrY7APtcEQyNFd3CXrvbqswE2_/pub?gid=0&single=true&output=csv";
+const PAY_RATE = 0.52;
+const DAY_LIMIT_MIN = 20*60+59;
+const LS_SHIFT = "otban_shifts_v1";
+const LIMIT_DAI = 270*60, LIMIT_SHO = 262*60;
 const CYCLE_TYPE = {
   '2025/04':'sho','2025/05':'dai','2025/06':'sho','2025/07':'dai','2025/08':'dai',
   '2025/09':'sho','2025/10':'dai','2025/11':'dai','2025/12':'sho','2026/01':'sho',
   '2026/02':'sho','2026/03':'dai','2026/04':'sho','2026/05':'dai','2026/06':'sho',
   '2026/07':'dai','2026/08':'dai','2026/09':'sho','2026/10':'dai','2026/11':'dai','2026/12':'sho'
 };
-const LIMIT_DAI = 270*60, LIMIT_SHO = 262*60;
-
-// ===== ユーティリティ =====
 function yen(s){ s=(s||'').replace(/[¥,\s]/g,''); const n=parseInt(s,10); return isNaN(n)?0:n; }
 function hm2min(s){ s=(s||'').trim(); if(!s||s.indexOf(':')<0) return 0; const[h,m]=s.split(':'); const H=parseInt(h,10),M=parseInt(m,10); return (isNaN(H)?0:H)*60+(isNaN(M)?0:M); }
 function min2hm(t){ const sign=t<0?'-':''; t=Math.abs(t); const h=Math.floor(t/60), m=Math.round(t%60); return sign+h+':'+String(m).padStart(2,'0'); }
 function fmtYen(n){ return '¥'+n.toLocaleString('ja-JP'); }
-function parseDate(s){ const m=(s||'').match(/(\d+)年(\d+)月(\d+)日/); if(!m) return null; let y=parseInt(m[1],10); y+= (y<100?2000:0); return {y, mo:parseInt(m[2],10), d:parseInt(m[3],10)}; }
+function parseDate(s){ const m=(s||'').match(/(\d+)年(\d+)月(\d+)日/); if(!m) return null; let y=parseInt(m[1],10); y+=(y<100?2000:0); return {y, mo:parseInt(m[2],10), d:parseInt(m[3],10)}; }
 function localDateStr(dt){ return dt.getFullYear()+'/'+String(dt.getMonth()+1).padStart(2,'0')+'/'+String(dt.getDate()).padStart(2,'0'); }
-
-// 給与周期キー：16日以降はその月、15日以前は前月（変則締めは近似で吸収）
-function cycleOf(y,mo,d){
-  let sy=y, smo=mo;
-  if(d<16){ smo=mo-1; if(smo===0){smo=12; sy=y-1;} }
-  return sy+'/'+String(smo).padStart(2,'0');
-}
-function cycleLabel(key){
-  const [y,m]=key.split('/').map(Number);
-  let ny=y, nm=m+1; if(nm>12){nm=1; ny=y+1;}
-  return `${y}年 ${m}月16日〜${nm}月15日`;
-}
-function cycleLimit(key){ return (CYCLE_TYPE[key]==='dai')?LIMIT_DAI:LIMIT_SHO; }
-function cycleTypeLabel(key){ return (CYCLE_TYPE[key]==='dai')?'大':'小'; }
-
-// 簡易CSVパーサ（ダブルクオート対応）
+const WD=['日','月','火','水','木','金','土'];
+function wdOf(iso){ const[y,m,d]=iso.split('/').map(Number); return WD[new Date(y,m-1,d).getDay()]; }
+function cycleOf(y,mo,d){ let sy=y,smo=mo; if(d<16){ smo=mo-1; if(smo===0){smo=12; sy=y-1;} } return sy+'/'+String(smo).padStart(2,'0'); }
+function cycleLabel(key){ const[y,m]=key.split('/').map(Number); let ny=y,nm=m+1; if(nm>12){nm=1;ny=y+1;} return `${y}年 ${m}月16日〜${nm}月15日`; }
+function cycleLimit(key){ return CYCLE_TYPE[key]==='dai'?LIMIT_DAI:LIMIT_SHO; }
+function cycleTypeJP(key){ return CYCLE_TYPE[key]==='dai'?'大':'小'; }
 function parseCSV(text){
   const rows=[]; let row=[],cur='',q=false;
   for(let i=0;i<text.length;i++){ const c=text[i];
@@ -194,131 +144,159 @@ function parseCSV(text){
   if(cur!==''||row.length){row.push(cur);rows.push(row);}
   return rows;
 }
+let RECORDS=[];
+let KUTEN={}, KUTEN_CNT={};
+let CYCLES=[];
+let CAL_Y,CAL_M;
 
-// ===== 状態 =====
-let RECORDS=[];   // {y,mo,d,key,dateStr,wd,rev,kosoku,taxi,deban}
-let KUTEN={};     // key(YYYY/MM) -> 合計空転額
-let KUTEN_CNT={}; // key(YYYY/MM) -> 空転件数
-let CYCLES=[];    // 周期キー新しい順
-
-// ===== データ取得 =====
 async function loadData(){
   try{
     const res=await fetch(NIPPOU_CSV+'&_cb='+Date.now());
-    if(!res.ok) throw new Error('日報CSV取得失敗 ('+res.status+')');
+    if(!res.ok) throw new Error('日報CSV取得失敗('+res.status+')');
     const rows=parseCSV(await res.text());
     RECORDS=[];
     for(let i=1;i<rows.length;i++){
       const r=rows[i]; if(!r||r.length<16) continue;
       const pd=parseDate(r[0]); if(!pd) continue;
       const rev=yen(r[3]); if(!rev) continue;
-      RECORDS.push({
-        y:pd.y, mo:pd.mo, d:pd.d, key:cycleOf(pd.y,pd.mo,pd.d),
-        dateStr:`${pd.mo}/${pd.d}`, iso:`${pd.y}/${String(pd.mo).padStart(2,'0')}/${String(pd.d).padStart(2,'0')}`,
-        wd:r[1]||'', rev, kosoku:hm2min(r[15]), taxi:(r[20]||'').trim(), deban:(r[12]||'').trim()
-      });
+      const iso=`${pd.y}/${String(pd.mo).padStart(2,'0')}/${String(pd.d).padStart(2,'0')}`;
+      RECORDS.push({y:pd.y,mo:pd.mo,d:pd.d,key:cycleOf(pd.y,pd.mo,pd.d),iso,
+        wd:r[1]||wdOf(iso),rev,kosoku:hm2min(r[15]),deban:(r[12]||'').trim()});
     }
-    // 空転
-    KUTEN={}; KUTEN_CNT={};
-    if(KUTEN_CSV){
-      try{
-        const k=await fetch(KUTEN_CSV+'&_cb='+Date.now());
-        if(k.ok){ const kr=parseCSV(await k.text());
-          for(let i=1;i<kr.length;i++){ const r=kr[i]; if(!r||r.length<9) continue;
-            // 空転CSV: col1=日付(YYYY/MM/DD), col8=金額
-            const dm=(r[1]||'').match(/(\d{4})[\/\-](\d+)[\/\-](\d+)/); if(!dm) continue;
-            const key=cycleOf(+dm[1],+dm[2],+dm[3]); const amt=yen(r[8]);
-            if(!amt) continue;
-            KUTEN[key]=(KUTEN[key]||0)+amt;
-            KUTEN_CNT[key]=(KUTEN_CNT[key]||0)+1;
-          }
+    KUTEN={};KUTEN_CNT={};
+    try{
+      const k=await fetch(KUTEN_CSV+'&_cb='+Date.now());
+      if(k.ok){ const kr=parseCSV(await k.text());
+        for(let i=1;i<kr.length;i++){ const r=kr[i]; if(!r||r.length<9) continue;
+          const dm=(r[1]||'').match(/(\d{4})[\/\-](\d+)[\/\-](\d+)/); if(!dm) continue;
+          const key=cycleOf(+dm[1],+dm[2],+dm[3]); const amt=yen(r[8]); if(!amt) continue;
+          KUTEN[key]=(KUTEN[key]||0)+amt; KUTEN_CNT[key]=(KUTEN_CNT[key]||0)+1;
         }
-      }catch(e){ console.warn('空転CSV未取得',e); }
-    }
+      }
+    }catch(e){ console.warn('空転CSV未取得',e); }
     CYCLES=[...new Set(RECORDS.map(r=>r.key))].sort().reverse();
-    render();
+    init();
   }catch(e){
-    document.getElementById('err').innerHTML='<div class="err">⚠ '+e.message+'<br>ネットワーク制限環境では読めない場合があります。GitHub Pages上では正常動作します。</div>';
+    document.getElementById('err').innerHTML='<div class="err">⚠ '+e.message+'<br>GitHub Pages上では正常に読み込めます。</div>';
     document.getElementById('sub').textContent='読み込み失敗';
   }
 }
-
-// ===== 描画 =====
-function recordsOfCycle(key){ return RECORDS.filter(r=>r.key===key && r.deban==='J'); }
-
-function render(){
-  if(!RECORDS.length){document.getElementById('sub').textContent='データなし';return;}
-  const latest=CYCLES[0];
-  document.getElementById('sub').textContent=`日報CSV ${RECORDS.length}件読込（最新: ${RECORDS[RECORDS.length-1].iso}） / 歩合率 ${(PAY_RATE*100)}%`;
-
-  // 周期セレクタ
-  const cs=document.getElementById('cycleSel');
-  cs.innerHTML=CYCLES.map(k=>`<option value="${k}">${cycleLabel(k)}（${cycleTypeLabel(k)}）</option>`).join('');
-  cs.value=latest; cs.onchange=()=>renderTime(cs.value);
-
-  // 年度セレクタ（4月始まり）
-  const fy=[...new Set(RECORDS.map(r=> (r.mo>=4?r.y:r.y-1) ))].sort().reverse();
-  const ys=document.getElementById('yearSel');
-  ys.innerHTML=fy.map(y=>`<option value="${y}">${y}年度（${y}/4〜${y+1}/3）</option>`).join('');
-  ys.value=fy[0];
-  ys.onchange=renderBudget;
-  document.getElementById('goalSel').onchange=renderBudget;
-
-  // 出勤予定
-  renderShiftControls();
-
-  renderTime(latest);
-  renderSalary();
-  renderBudget();
-}
-
-function shiftKeyOfSelectedCycle(){ return document.getElementById('cycleSel').value; }
 function getShifts(){ try{return JSON.parse(localStorage.getItem(LS_SHIFT)||'{}');}catch(e){return {};} }
 function setShifts(o){ localStorage.setItem(LS_SHIFT,JSON.stringify(o)); }
-
-// カレンダー表示中の年月
-let CAL_Y, CAL_M;
+function recsOf(key){ return RECORDS.filter(r=>r.key===key && r.deban==='J').sort((a,b)=>a.iso<b.iso?-1:1); }
+function shiftRowsOf(key){
+  const done=recsOf(key);
+  const doneIso=new Set(done.map(r=>r.iso));
+  const planned=(getShifts()[key]||[]);
+  const rows=done.map(r=>({iso:r.iso,wd:r.wd,rev:r.rev,kosoku:r.kosoku,done:true}));
+  planned.forEach(iso=>{ if(!doneIso.has(iso)) rows.push({iso,wd:wdOf(iso),rev:null,kosoku:null,done:false}); });
+  rows.sort((a,b)=>a.iso<b.iso?-1:1);
+  return rows;
+}
+function init(){
+  if(!RECORDS.length){document.getElementById('sub').textContent='データなし';return;}
+  const latest=CYCLES[0];
+  document.getElementById('sub').textContent=`日報CSV ${RECORDS.length}件（最新 ${RECORDS[RECORDS.length-1].iso}）`;
+  const cs=document.getElementById('cycleSel');
+  cs.innerHTML=CYCLES.map(k=>`<option value="${k}">${cycleLabel(k)}</option>`).join('');
+  cs.value=latest;
+  cs.onchange=()=>renderAll(cs.value);
+  const last=RECORDS[RECORDS.length-1]; CAL_Y=last.y; CAL_M=last.mo;
+  document.getElementById('calPrev').onclick=()=>{CAL_M--;if(CAL_M<1){CAL_M=12;CAL_Y--;}renderCalendar();};
+  document.getElementById('calNext').onclick=()=>{CAL_M++;if(CAL_M>12){CAL_M=1;CAL_Y++;}renderCalendar();};
+  document.getElementById('clearShift').onclick=()=>{ const key=cs.value; const all=getShifts(); delete all[key]; setShifts(all); renderAll(key); };
+  renderAll(latest);
+}
+function renderAll(key){
+  document.getElementById('cycleType').innerHTML=`<span class="badge ${CYCLE_TYPE[key]}">${cycleTypeJP(key)}の月 / 上限${min2hm(cycleLimit(key))}</span>`;
+  renderOtTable(key);
+  renderTime(key);
+  renderSalary(key);
+  renderCalendar();
+}
+function renderOtTable(key){
+  document.getElementById('otTitle').textContent=cycleLabel(key);
+  const rows=shiftRowsOf(key);
+  const tb=document.querySelector('#otTable tbody'); tb.innerHTML='';
+  let revSum=0,kSum=0,doneN=0,futureN=0;
+  rows.forEach(r=>{
+    if(r.done){ revSum+=r.rev; kSum+=r.kosoku; doneN++; } else futureN++;
+    const over=r.done && r.kosoku>DAY_LIMIT_MIN;
+    tb.insertAdjacentHTML('beforeend',
+      `<tr class="${r.done?'':'future'} ${over?'over':''}">
+        <td>${r.iso.slice(5)}</td>
+        <td>${r.wd}</td>
+        <td>${r.done?fmtYen(r.rev):'<span class="machi">— 予定 —</span>'}</td>
+        <td class="${over?'danger':''}">${r.done?(min2hm(r.kosoku)+(over?' ⚠':'')):'—'}</td>
+        <td>${r.done?'<span class="badge done">消化</span>':'<span class="badge future">これから</span>'}</td>
+      </tr>`);
+  });
+  document.querySelector('#otTable tfoot').innerHTML=
+    `<tr><td>合計</td><td>${doneN+futureN}出番</td><td>${fmtYen(revSum)}</td><td>${min2hm(kSum)}</td><td>消化${doneN}/予定${futureN}</td></tr>`;
+  document.getElementById('otLegend').innerHTML=
+    rows.length? `消化 ${doneN}出番・これから ${futureN}出番。⚠は1出番20:59超（始末書ライン）。`
+    : 'この周期の出番が未登録です。下のカレンダーで出番日をタップしてください。';
+}
+function renderTime(key){
+  const done=recsOf(key);
+  const used=done.reduce((s,r)=>s+r.kosoku,0);
+  const limit=cycleLimit(key); const rem=limit-used;
+  const remShifts=shiftRowsOf(key).filter(r=>!r.done).length;
+  const perShift = remShifts>0 ? rem/remShifts : null;
+  document.getElementById('timeStats').innerHTML=`
+    <div class="stat"><div class="lbl">消化（打刻）</div><div class="val">${min2hm(used)}</div></div>
+    <div class="stat"><div class="lbl">残り時間（枠まで）</div><div class="val ${rem<0?'danger':''}">${min2hm(rem)}</div></div>
+    <div class="stat"><div class="lbl">残り出番</div><div class="val">${remShifts}</div></div>`;
+  const pace=document.getElementById('pace');
+  if(perShift===null){
+    pace.innerHTML=`<div class="note">残り出番がありません（この周期は終了、または予定未登録）。消化 ${min2hm(used)} / 上限 ${min2hm(limit)}。</div>`;
+  }else{
+    const diff=perShift-DAY_LIMIT_MIN;
+    let cls='ok',msg='ほぼ理想：ぴったり使い切れるペース';
+    if(rem<0){cls='danger';msg='超過：月間枠を超えています';}
+    else if(diff<-20){cls='danger';msg='危険：残出番をかなり短縮しないと超過';}
+    else if(diff<0){cls='warn';msg='注意：全出番20:59だと超過。どこかで早上がりを';}
+    else if(diff<30){cls='ok';msg='ほぼ理想：ぴったり使い切れるペース';}
+    else{cls='blue';msg='余裕：枠が余ります。限界まで走ってOK';}
+    pace.innerHTML=`
+      <div class="lbl" style="font-size:.64rem;color:var(--dim)">残り時間 ÷ 残り出番 ＝ 1出番あたり使える時間</div>
+      <div class="big ${cls}">${min2hm(Math.round(perShift))}</div>
+      <div class="msg ${cls}">${msg}</div>
+      <div class="note">1出番上限 20:59 との差：<b class="${cls}">${diff>=0?'+':''}${min2hm(Math.round(diff))}</b>（プラスなら全出番フルで走っても枠が余る）</div>`;
+  }
+  document.getElementById('timeLegend').innerHTML=
+    `月間枠（${cycleTypeJP(key)}＝${min2hm(limit)}）は<b>絶対に超えない</b>。各出番の<b>20:59超は始末書</b>。枠ギリギリまで使い切るのが売上最大。`;
+}
+function renderSalary(key){
+  const done=recsOf(key);
+  const rev=done.reduce((s,r)=>s+r.rev,0);
+  const kut=KUTEN[key]||0; const cnt=KUTEN_CNT[key]||0;
+  const adj=rev-kut; const pay=Math.round(adj*PAY_RATE);
+  document.getElementById('salStats').innerHTML=`
+    <div class="stat"><div class="lbl">売上合計（${done.length}出番）</div><div class="val">${fmtYen(rev)}</div></div>
+    <div class="stat"><div class="lbl">空転 ${cnt?('('+cnt+'件)'):''}</div><div class="val ${kut?'warn':''}">${kut?('−'+fmtYen(kut)):'—'}</div></div>
+    <div class="stat"><div class="lbl">推定給与（×52%）</div><div class="val ok">${fmtYen(pay)}</div></div>`;
+  document.getElementById('salLegend').textContent=
+    `推定給与 ＝（売上合計 ${fmtYen(rev)} − 空転 ${fmtYen(kut)}）× 52% ＝ ${fmtYen(pay)}。空転は走るほど記録が増え、明細に近づきます。`;
+}
 function toggleShiftDay(iso){
-  // isoは 'YYYY/MM/DD'。所属周期キーを求めてトグル
-  const [y,mo,d]=iso.split('/').map(Number);
-  const key=cycleOf(y,mo,d);
-  // すでに営収記録のある日（消化済）は変更不可
-  if(recordsOfCycle(key).some(r=>r.iso===iso)) return;
+  const[y,mo,d]=iso.split('/').map(Number); const key=cycleOf(y,mo,d);
+  if(recsOf(key).some(r=>r.iso===iso)) return;
   const all=getShifts(); all[key]=all[key]||[];
-  if(all[key].includes(iso)) all[key]=all[key].filter(v=>v!==iso);
-  else all[key].push(iso);
-  all[key].sort();
-  if(all[key].length===0) delete all[key];
+  if(all[key].includes(iso)) all[key]=all[key].filter(v=>v!==iso); else all[key].push(iso);
+  all[key].sort(); if(!all[key].length) delete all[key];
   setShifts(all);
-  renderCalendar(); renderShiftSummary();
-  renderTime(document.getElementById('cycleSel').value); renderBudget();
+  renderAll(document.getElementById('cycleSel').value);
 }
-
-function renderShiftControls(){
-  // 初期表示月：最新データの翌月（＝これから組む月）か、現在月
-  const last=RECORDS[RECORDS.length-1];
-  CAL_Y = last? last.y : new Date().getFullYear();
-  CAL_M = last? last.mo : (new Date().getMonth()+1);
-  document.getElementById('calPrev').onclick=()=>{ CAL_M--; if(CAL_M<1){CAL_M=12;CAL_Y--;} renderCalendar(); };
-  document.getElementById('calNext').onclick=()=>{ CAL_M++; if(CAL_M>12){CAL_M=1;CAL_Y++;} renderCalendar(); };
-  document.getElementById('clearShift').onclick=()=>{
-    const key=shiftKeyOfSelectedCycle(); const all=getShifts(); delete all[key]; setShifts(all);
-    renderCalendar(); renderShiftSummary(); renderTime(key); renderBudget();
-  };
-  renderCalendar(); renderShiftSummary();
-}
-
 function renderCalendar(){
   document.getElementById('calTitle').textContent=`${CAL_Y}年 ${CAL_M}月`;
-  const all=getShifts();
-  const sel=new Set(); Object.values(all).forEach(arr=>arr.forEach(iso=>sel.add(iso)));
+  const sel=new Set(); Object.values(getShifts()).forEach(a=>a.forEach(i=>sel.add(i)));
   const doneAll=new Set(RECORDS.map(r=>r.iso));
   const today=localDateStr(new Date());
-  const dows=['日','月','火','水','木','金','土'];
-  const first=new Date(CAL_Y,CAL_M-1,1); const startDow=first.getDay();
+  const startDow=new Date(CAL_Y,CAL_M-1,1).getDay();
   const days=new Date(CAL_Y,CAL_M,0).getDate();
   let html='<div class="cal-grid">';
-  dows.forEach((w,i)=>html+=`<div class="cal-dow ${i===0?'sun':i===6?'sat':''}">${w}</div>`);
+  ['日','月','火','水','木','金','土'].forEach((w,i)=>html+=`<div class="cal-dow ${i===0?'sun':i===6?'sat':''}">${w}</div>`);
   for(let i=0;i<startDow;i++) html+='<div class="cal-cell empty"></div>';
   for(let d=1;d<=days;d++){
     const iso=`${CAL_Y}/${String(CAL_M).padStart(2,'0')}/${String(d).padStart(2,'0')}`;
@@ -330,160 +308,8 @@ function renderCalendar(){
   }
   html+='</div>';
   document.getElementById('calendar').innerHTML=html;
-  document.querySelectorAll('#calendar .cal-cell:not(.empty):not(.done)').forEach(c=>{
-    c.onclick=()=>toggleShiftDay(c.dataset.iso);
-  });
+  document.querySelectorAll('#calendar .cal-cell:not(.empty):not(.done)').forEach(c=>c.onclick=()=>toggleShiftDay(c.dataset.iso));
 }
-
-function renderShiftSummary(){
-  const key=document.getElementById('cycleSel').value||CYCLES[0];
-  const all=getShifts(); const list=(all[key]||[]).slice().sort();
-  const doneIso=new Set(recordsOfCycle(key).map(r=>r.iso));
-  // 周期に属する全出番＝営収済み(消化) ∪ 予定。消化済も一覧に出す
-  const doneList=recordsOfCycle(key).map(r=>r.iso);
-  const merged=[...new Set([...doneList,...list])].sort();
-  const future=merged.filter(iso=>!doneIso.has(iso));
-  const wd=['日','月','火','水','木','金','土'];
-  const fmt=iso=>{const[y,m,d]=iso.split('/').map(Number);return `${m}/${d}(${wd[new Date(y,m-1,d).getDay()]})`;};
-  const cells=merged.map(iso=>{
-    const done=doneIso.has(iso);
-    return `<span class="shiftday ${done?'done':'future'}"><b>${fmt(iso)}</b>${done?'<span class="ok" style="font-size:.6rem">消化</span>':'<span class="blue" style="font-size:.6rem">予定</span>'}</span>`;
-  }).join('');
-  document.getElementById('shiftSummary').innerHTML=
-    `<div class="summary-box">
-       <div class="miniflex"><strong style="font-size:.82rem">${cycleLabel(key)} の出番一覧</strong>
-         <span style="font-size:.72rem;color:var(--dim)">計${merged.length}出番（消化${doneList.length}／予定${future.length}）</span></div>
-       <div class="row">${cells||'<span style="font-size:.72rem;color:var(--dim)">未登録。カレンダーで出番日をタップ</span>'}</div>
-     </div>`;
-}
-
-function renderTime(key){
-  const recs=recordsOfCycle(key);
-  const used=recs.reduce((s,r)=>s+r.kosoku,0);
-  const limit=cycleLimit(key); const rem=limit-used;
-  // 残り出番数：出勤予定のうち、まだ営収記録がない日数
-  const all=getShifts(); const planned=all[key]||[];
-  const doneIso=new Set(recs.map(r=>r.iso));
-  let remShifts=planned.filter(iso=>!doneIso.has(iso)).length;
-  // 予定未登録なら、よくある13出番想定で残出番を逆算（参考）
-  let estimated=false;
-  if(planned.length===0){ remShifts=Math.max(0,13-recs.length); estimated=true; }
-  const perShift = remShifts>0 ? rem/remShifts : null;
-  // 判定
-  let cls='ok',msg='余裕：全出番フルでも枠が余ります';
-  if(perShift!==null){
-    const diff=perShift-DAY_LIMIT_MIN;
-    if(perShift<0){cls='danger';msg='危険：このままでは月間枠を超過します。早上がり必須';}
-    else if(diff < -20){cls='danger';msg='危険：残出番をかなり短縮しないと超過します';}
-    else if(diff < 0){cls='warn';msg='注意：全出番20:59だと超過。どこかで早めに上がる調整を';}
-    else if(diff < 30){cls='ok';msg='ほぼ理想：ぴったり使い切れるペース';}
-    else {cls='blue';msg='余裕：枠が余ります。限界まで走ってOK';}
-  }
-  const ts=document.getElementById('timeStats');
-  ts.innerHTML=`
-    <div class="stat"><div class="lbl">月間上限（${cycleTypeLabel(key)}の月）</div><div class="val">${min2hm(limit)}</div><div class="note">${cycleTypeLabel(key)==='大'?'270:00':'262:00'}</div></div>
-    <div class="stat"><div class="lbl">打刻（消化済）</div><div class="val">${min2hm(used)}</div><div class="note">${recs.length}出番分</div></div>
-    <div class="stat"><div class="lbl">残り時間</div><div class="val ${rem<0?'danger':''}">${min2hm(rem)}</div><div class="note">枠まで</div></div>
-    <div class="stat"><div class="lbl">残り出番</div><div class="val">${remShifts}<span style="font-size:.7rem">出番</span></div><div class="note">${estimated?'※13想定':'予定より'}</div></div>
-  `;
-  // 大きい指標：1出番あたり使える時間
-  if(perShift!==null){
-    const extra=document.createElement('div'); extra.className='stat'; extra.style.gridColumn='1/-1';
-    extra.innerHTML=`<div class="miniflex"><div><div class="lbl">残り時間 ÷ 残出番 ＝ 1出番あたり使える時間</div><div class="big ${cls}">${min2hm(Math.round(perShift))}</div></div>
-      <div style="text-align:right;max-width:55%"><div class="${cls}" style="font-size:.8rem;font-weight:700">${msg}</div><div class="note" style="margin-top:4px">1出番上限 20:59 との差：<b class="${cls}">${(perShift-DAY_LIMIT_MIN>=0?'+':'')}${min2hm(Math.round(perShift-DAY_LIMIT_MIN))}</b></div></div></div>`;
-    ts.appendChild(extra);
-  }
-  // バー
-  const pct=Math.min(100,used/limit*100);
-  const bar=document.getElementById('timeBar'); bar.style.width=pct+'%';
-  bar.style.background = pct>100?'var(--danger)': pct>95?'var(--warn)':'linear-gradient(90deg,var(--accent2),#1f6feb)';
-  document.getElementById('timeBarLbl').textContent=`${min2hm(used)} / ${min2hm(limit)}（${pct.toFixed(1)}%）`;
-  // テーブル
-  const tb=document.querySelector('#timeTable tbody');
-  tb.innerHTML=recs.map(r=>{
-    const over=r.kosoku>DAY_LIMIT_MIN;
-    return `<tr class="${over?'over':''}"><td>${r.dateStr}</td><td>${r.wd}</td><td>${fmtYen(r.rev)}</td><td class="${over?'danger':''}">${min2hm(r.kosoku)}</td><td>${over?'<span class="danger">⚠ 20:59超</span>':'<span class="ok">OK</span>'}</td></tr>`;
-  }).join('');
-  document.getElementById('timeLegend').innerHTML=
-    `🟢ほぼ理想（±0〜+30分） 🔵余裕（+30分〜） 🟡注意（−20〜0分 早上がり調整） 🔴危険（超過/大幅短縮）<br>`+
-    `各出番の<b>20:59超過は始末書ライン</b>。月間枠（${cycleTypeLabel(key)}=${min2hm(limit)}）超過は重大違反。枠ギリギリまで使い切るのが理想。`;
-  if(typeof renderShiftSummary==='function') renderShiftSummary();
-}
-
-function renderSalary(){
-  const tb=document.querySelector('#salTable tbody'); tb.innerHTML='';
-  let totEst=0, totDetail=0, nDetail=0;
-  CYCLES.slice(0,8).forEach(key=>{
-    const recs=recordsOfCycle(key);
-    const rev=recs.reduce((s,r)=>s+r.rev,0);
-    const kut=KUTEN[key]||0;
-    const adj=rev-kut; const est=Math.round(adj*PAY_RATE);
-    totEst+=est;
-    const detail=DETAIL_PAY[key]; // 手入力明細（任意）
-    let diffCell='—', dCls='';
-    if(detail){ const diff=est-detail; diffCell=(diff>=0?'+':'')+fmtYen(diff); dCls=Math.abs(diff)<10000?'ok':'warn'; totDetail+=detail; nDetail++; }
-    tb.insertAdjacentHTML('beforeend',
-      `<tr><td>${key.replace('/','/')}</td><td>${recs.length}</td><td>${fmtYen(rev)}</td><td class="${kut?'warn':'dim'}">${kut?('−'+fmtYen(kut)+'<br><span style="font-size:.6rem;color:var(--dim)">'+(KUTEN_CNT[key]||0)+'件</span>'):'—'}</td><td>${fmtYen(adj)}</td><td class="ok">${fmtYen(est)}</td><td>${detail?fmtYen(detail):'—'}</td><td class="${dCls}">${diffCell}</td></tr>`);
-  });
-  const ss=document.getElementById('salStats');
-  const latest=CYCLES[0]; const lr=recordsOfCycle(latest);
-  const lrev=lr.reduce((s,r)=>s+r.rev,0); const lest=Math.round((lrev-(KUTEN[latest]||0))*PAY_RATE);
-  ss.innerHTML=`
-    <div class="stat"><div class="lbl">最新周期 ${cycleLabel(latest).replace(/年 /,'/')}</div><div class="val sm">${fmtYen(lrev)}</div><div class="note">${lr.length}出番の営収</div></div>
-    <div class="stat"><div class="lbl">最新周期 推定給与</div><div class="val sm ok">${fmtYen(lest)}</div><div class="note">×52%${KUTEN[latest]?'（空転差引）':''}</div></div>
-    <div class="stat"><div class="lbl">直近${Math.min(8,CYCLES.length)}周期 推定給与計</div><div class="val sm">${fmtYen(totEst)}</div><div class="note">合算</div></div>
-    <div class="stat"><div class="lbl">空転CSV</div><div class="val sm ${KUTEN_CSV?'ok':'dim'}">${KUTEN_CSV?'連携済':'未連携'}</div><div class="note">${KUTEN_CSV?'差引反映':'公開URL待ち'}</div></div>
-  `;
-}
-
-function renderBudget(){
-  const fy=parseInt(document.getElementById('yearSel').value,10);
-  const goal=parseInt(document.getElementById('goalSel').value,10);
-  // 年度（4月始まり）の給与累計：周期は16-15なので、4月周期〜翌3月周期で集計
-  let revSum=0, paySum=0, shifts=0;
-  RECORDS.filter(r=>r.deban==='J').forEach(r=>{
-    const ry = r.mo>=4? r.y : r.y-1;
-    if(ry===fy){ revSum+=r.rev; shifts++; }
-  });
-  // 対予算は分離給(3/6/12月)込みの実質年率60%で年度内の周期を合算
-  let payCalc=0;
-  CYCLES.forEach(key=>{
-    const [ky,km]=key.split('/').map(Number);
-    const ry=km>=4?ky:ky-1;
-    if(ry===fy){ const recs=recordsOfCycle(key); const rev=recs.reduce((s,x)=>s+x.rev,0); payCalc+=Math.round((rev-(KUTEN[key]||0))*BUDGET_RATE); }
-  });
-  const pct=Math.min(100,payCalc/goal*100);
-  const remain=goal-payCalc;
-  // 残り出番（年度内の登録済み予定で未消化）
-  const all=getShifts(); let remShifts=0;
-  Object.keys(all).forEach(key=>{ const [ky,km]=key.split('/').map(Number); const ry=km>=4?ky:ky-1;
-    if(ry===fy){ const done=new Set(recordsOfCycle(key).map(r=>r.iso)); remShifts+=all[key].filter(iso=>!done.has(iso)).length; } });
-  const avgRev=shifts?Math.round(revSum/shifts):0;
-  // 必要営収ペース：残給与 ÷ 0.60 = 必要営収、÷ 残出番
-  const needRevPerShift = remShifts>0 ? Math.round((remain/BUDGET_RATE)/remShifts) : null;
-
-  document.getElementById('budgetStats').innerHTML=`
-    <div class="stat"><div class="lbl">${fy}年度 給与累計（60%換算）</div><div class="val sm gold">${fmtYen(payCalc)}</div><div class="note">営収計 ${fmtYen(revSum)} / ${shifts}出番</div></div>
-    <div class="stat"><div class="lbl">目標まで残り</div><div class="val sm ${remain<=0?'ok':''}">${remain<=0?'達成 🎉':fmtYen(remain)}</div><div class="note">目標 ${fmtYen(goal)}</div></div>
-    <div class="stat"><div class="lbl">残出番の必要営収ペース</div><div class="val sm ${needRevPerShift&&needRevPerShift>avgRev?'warn':'ok'}">${needRevPerShift!==null?fmtYen(needRevPerShift):'—'}</div><div class="note">${remShifts}出番予定 / 平均実績${fmtYen(avgRev)}</div></div>
-  `;
-  const bar=document.getElementById('budgetBar'); bar.style.width=pct+'%';
-  bar.style.background = pct>=100?'var(--accent)':'linear-gradient(90deg,var(--gold),#d4a017)';
-  document.getElementById('budgetBarLbl').textContent=`${fmtYen(payCalc)} / ${fmtYen(goal)}（${pct.toFixed(1)}%）`;
-  let note=`目標年収 ${fmtYen(goal)}（分離給込み実質60%換算）に対し、現在 ${pct.toFixed(1)}%。`;
-  if(needRevPerShift!==null){
-    note += needRevPerShift>avgRev
-      ? ` 残出番で1出番あたり${fmtYen(needRevPerShift)}必要（平均実績${fmtYen(avgRev)}を上回るペースが必要）。`
-      : ` 残出番で1出番あたり${fmtYen(needRevPerShift)}で到達（平均実績${fmtYen(avgRev)}内で達成可能）。`;
-  } else if(remain>0){ note+=' 残出番が未登録のため必要ペース未算出。出勤予定を入力してください。'; }
-  document.getElementById('budgetLegend').textContent=note;
-}
-
-// 給与明細（手入力・任意）周期キー -> 実給与（明細値）。分かっている分だけ。
-const DETAIL_PAY = {
-  // 例: '2026/04': 587798  ← 明細から
-};
-
 loadData();
 </script>
 </body>
