@@ -82,7 +82,16 @@ body{background:var(--bg);color:var(--text);
 .legend-item{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted)}
 .legend-dot{width:10px;height:4px;border-radius:2px}
 
+.seg-kpi-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.seg-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+.seg-row{display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap}
+.seg-item{flex:1;min-width:60px}
+.seg-label{font-size:10px;color:var(--muted);margin-bottom:2px}
+.seg-val{font-size:14px;font-weight:800}
+.seg-sub{font-size:10px;color:var(--muted);margin-top:1px}
+
 @media(max-width:600px){
+  #segment-kpi{grid-template-columns:1fr!important}
   #charts{grid-template-columns:1fr}
   .chart-card.wide{grid-column:1}
   .chart-wrap{height:180px}
@@ -147,6 +156,36 @@ body{background:var(--bg);color:var(--text);
 <div id="stability-card">
   <h3>📐 安定性サマリー（μ±σ）</h3>
   <div class="stab-row" id="stab-row"></div>
+</div>
+
+<div class="section-title">シフト時間帯別分析（詳細日報）</div>
+
+<!-- 3区間KPIカード -->
+<div id="segment-kpi" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;padding:10px 20px">
+  <!-- JS で生成 -->
+</div>
+
+<!-- 曜日×区間 グラフ -->
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;padding:0 20px 4px">
+  <div class="chart-card">
+    <div class="chart-title">16〜22時 曜日別売上</div>
+    <div class="chart-wrap short"><canvas id="c-seg1-dow"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">22〜28時 曜日別売上</div>
+    <div class="chart-wrap short"><canvas id="c-seg2-dow"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">28〜ラスト 曜日別売上</div>
+    <div class="chart-wrap short"><canvas id="c-seg3-dow"></canvas></div>
+  </div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:0 20px 4px">
+  <div class="chart-card wide" style="grid-column:1/-1">
+    <div class="chart-title">曜日別 区間売上の積み上げ<span>16〜22時 / 22〜28時 / 28時〜</span></div>
+    <div class="chart-wrap" style="height:220px"><canvas id="c-seg-stacked"></canvas></div>
+  </div>
 </div>
 
 <div class="section-title">売上トレンド</div>
@@ -482,6 +521,7 @@ function renderAll() {
   });
 
   renderHourly();
+  renderSegments();
 }
 
 function renderHourly() {
@@ -513,6 +553,125 @@ function renderHourly() {
       scales:{
         y1:{position:'left',ticks:{callback:v=>'¥'+v.toLocaleString(),font:{size:10}}},
         y2:{position:'right',grid:{drawOnChartArea:false},ticks:{font:{size:10}}}
+      }
+    }
+  });
+}
+
+// ── シフト区間分析 ────────────────────────────────────────────
+const SEGMENTS = [
+  {id:'seg1', label:'16〜22時台', color:'#79c0ff', min:16, max:22},
+  {id:'seg2', label:'22〜28時台', color:'#f0883e', min:22, max:28},
+  {id:'seg3', label:'28〜ラスト', color:'#d2a8ff', min:28, max:37},
+];
+
+function renderSegments() {
+  if(!allDetailRows.length) return;
+  const cutoff = filterDays ? new Date(Date.now()-filterDays*86400000) : null;
+
+  // 区間 × 曜日 でデータ集計
+  // structure: segData[segIdx][dow] = {fares:[...], count:0}
+  const segData = SEGMENTS.map(() => Array(7).fill(null).map(()=>({fares:[],count:0})));
+
+  allDetailRows.forEach(r => {
+    if(cutoff && r.date < cutoff) return;
+    const dow = r.date.getDay();
+    SEGMENTS.forEach((seg, si) => {
+      if(r.hour >= seg.min && r.hour < seg.max) {
+        segData[si][dow].fares.push(r.fare);
+        segData[si][dow].count++;
+      }
+    });
+  });
+
+  // KPIカード（全曜日合計）
+  const kpiHtml = SEGMENTS.map((seg, si) => {
+    const allFares = segData[si].flatMap(d=>d.fares);
+    const total    = allFares.reduce((s,v)=>s+v,0);
+    const count    = allFares.length;
+    const avg      = count ? Math.round(total/count) : 0;
+    const days     = filterDays||180;
+    const shifts   = allDailyRows.filter(r=>!cutoff||r.date>=cutoff).length;
+    const avgPerShift = shifts ? Math.round(total/shifts) : 0;
+
+    return `<div class="seg-kpi-card" style="border-top:3px solid ${seg.color}">
+      <div class="seg-title" style="color:${seg.color}">${seg.label}</div>
+      <div class="seg-row">
+        <div class="seg-item">
+          <div class="seg-label">1出番あたり平均売上</div>
+          <div class="seg-val" style="color:${seg.color}">¥${avgPerShift.toLocaleString()}</div>
+          <div class="seg-sub">合計 ¥${(total/10000).toFixed(0)}万</div>
+        </div>
+        <div class="seg-item">
+          <div class="seg-label">総乗車回数</div>
+          <div class="seg-val">${count.toLocaleString()}回</div>
+          <div class="seg-sub">1出番 ${shifts?Math.round(count/shifts):0}回</div>
+        </div>
+        <div class="seg-item">
+          <div class="seg-label">平均単価</div>
+          <div class="seg-val">¥${avg.toLocaleString()}</div>
+          <div class="seg-sub">σ ¥${Math.round(stdev(allFares)).toLocaleString()}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('segment-kpi').innerHTML = kpiHtml;
+
+  // 曜日別棒グラフ（各区間）
+  SEGMENTS.forEach((seg, si) => {
+    const dowAvgRev = Array(7).fill(0).map((_,d) => {
+      const shifts = allDailyRows.filter(r=>(!cutoff||r.date>=cutoff)&&r.date.getDay()===d).length;
+      const total  = segData[si][d].fares.reduce((s,v)=>s+v,0);
+      return shifts ? Math.round(total/shifts) : 0;
+    });
+    makeChart(`c-${seg.id}-dow`, {
+      type:'bar',
+      data:{labels:DAYS_JP, datasets:[{
+        data:dowAvgRev, backgroundColor:seg.color+'aa',
+        borderColor:seg.color, borderWidth:1, borderRadius:4, label:'売上'
+      }]},
+      options:{responsive:true, maintainAspectRatio:false,
+        plugins:{legend:{display:false},
+          tooltip:{callbacks:{label:ctx=>`¥${ctx.parsed.y.toLocaleString()}`}}},
+        scales:{y:{ticks:{callback:v=>v?'¥'+(v/10000).toFixed(1)+'万':'', font:{size:9}}},
+                x:{ticks:{font:{size:11}}}}
+      }
+    });
+  });
+
+  // 積み上げ棒グラフ（曜日×3区間）
+  const stackedData = SEGMENTS.map((seg, si) =>
+    Array(7).fill(0).map((_,d) => {
+      const shifts = allDailyRows.filter(r=>(!cutoff||r.date>=cutoff)&&r.date.getDay()===d).length;
+      const total  = segData[si][d].fares.reduce((s,v)=>s+v,0);
+      return shifts ? Math.round(total/shifts) : 0;
+    })
+  );
+  makeChart('c-seg-stacked', {
+    type:'bar',
+    data:{
+      labels:DAYS_JP,
+      datasets: SEGMENTS.map((seg,si)=>({
+        label: seg.label,
+        data: stackedData[si],
+        backgroundColor: seg.color+'bb',
+        borderColor: seg.color,
+        borderWidth:1,
+        borderRadius: si===2?4:0,
+        borderSkipped: si===0?'bottom':false,
+        stack:'s'
+      }))
+    },
+    options:{responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:11}}},
+        tooltip:{callbacks:{
+          label:ctx=>`${ctx.dataset.label}: ¥${ctx.parsed.y.toLocaleString()}`,
+          footer:items=>`合計: ¥${items.reduce((s,i)=>s+i.parsed.y,0).toLocaleString()}`
+        }}
+      },
+      scales:{
+        x:{stacked:true, ticks:{font:{size:12}}},
+        y:{stacked:true, ticks:{callback:v=>'¥'+(v/10000).toFixed(0)+'万', font:{size:10}}}
       }
     }
   });
