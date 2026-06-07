@@ -55,6 +55,22 @@
   .legend{font-size:.62rem;color:var(--dim);margin-top:8px;line-height:1.7;}
   .err{background:rgba(248,81,73,.12);border:1px solid var(--danger);color:#ffb4ae;padding:10px;border-radius:8px;font-size:.78rem;}
   details{margin-top:8px;} summary{cursor:pointer;font-size:.72rem;color:var(--dim);}
+  /* calendar */
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;}
+  .cal-dow{text-align:center;font-size:.64rem;color:var(--dim);padding:2px 0;font-weight:600;}
+  .cal-dow.sat{color:var(--accent2);} .cal-dow.sun{color:var(--danger);}
+  .cal-cell{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;border-radius:8px;font-size:.82rem;
+    font-family:var(--mono);cursor:pointer;border:1px solid transparent;background:var(--panel2);position:relative;user-select:none;}
+  .cal-cell.empty{background:transparent;cursor:default;}
+  .cal-cell:hover:not(.empty):not(.done){border-color:var(--accent2);}
+  .cal-cell.sel{background:var(--accent2);color:#04203f;font-weight:800;}
+  .cal-cell.done{background:rgba(63,185,80,.18);color:var(--accent);border-color:var(--accent);font-weight:700;cursor:default;}
+  .cal-cell.done::after{content:'✓';position:absolute;top:1px;right:3px;font-size:.55rem;}
+  .cal-cell.sat{color:var(--accent2);} .cal-cell.sun{color:var(--danger);}
+  .cal-cell.sel.sat,.cal-cell.sel.sun{color:#04203f;}
+  .cal-cell.today{box-shadow:inset 0 0 0 2px var(--gold);}
+  .summary-box{background:var(--panel2);border:1px solid var(--border);border-radius:9px;padding:12px;}
+  .summary-box .row{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px;}
 </style>
 </head>
 <body>
@@ -114,14 +130,17 @@
 
 <!-- 出勤予定（手入力・暫定） -->
 <div class="panel">
-  <h2 style="border-color:var(--dim)">📋 出勤予定日（暫定：手入力）</h2>
+  <h2 style="border-color:var(--dim)">📋 出勤予定カレンダー</h2>
   <div class="controls">
-    <input type="date" id="shiftDate">
-    <button id="addShift">追加</button>
+    <button class="ghost" id="calPrev">‹ 前月</button>
+    <strong id="calTitle" style="font-size:.95rem;min-width:120px;text-align:center"></strong>
+    <button class="ghost" id="calNext">翌月 ›</button>
+    <span style="flex:1"></span>
     <button class="ghost" id="clearShift">この周期をクリア</button>
   </div>
-  <div id="shiftList"></div>
-  <div class="legend">勤務表が出たら出勤予定日を入力。日報CSVに営収がある日は「消化済」、無い日は「これから」と自動判定し、残り出番数として拘束時間・対予算の計算に反映します。<br>※将来はGoogleフォーム→スプレッドシート連携に差し替え予定。</div>
+  <div id="calendar"></div>
+  <div id="shiftSummary" style="margin-top:14px"></div>
+  <div class="legend">月13〜14日に勤務表が出たら、翌16日以降の出番日をカレンダーで<b>タップして選択</b>。下に「○月度の出番一覧」が出るので入力ミスを確認できます。日報CSVに営収がある日は「消化済」、無い日は「これから」と自動判定し、残出番として拘束時間・対予算に反映します。<br>※将来はGoogleフォーム→スプレッドシート連携に差し替え予定。</div>
 </div>
 
 <script>
@@ -129,7 +148,8 @@
 const NIPPOU_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
 // 空転CSV（後で公開URLに差し替え）
 const KUTEN_CSV = "";
-const PAY_RATE = 0.52;
+const PAY_RATE = 0.52;        // 給与計算（毎月の歩合）
+const BUDGET_RATE = 0.60;     // 対予算（3/6/12月の分離給を含めた実質年率）
 const DAY_LIMIT_MIN = 20*60+59; // 1出番上限 20:59
 const LS_SHIFT = "salary_dash_shifts_v1";
 
@@ -252,32 +272,85 @@ function shiftKeyOfSelectedCycle(){ return document.getElementById('cycleSel').v
 function getShifts(){ try{return JSON.parse(localStorage.getItem(LS_SHIFT)||'{}');}catch(e){return {};} }
 function setShifts(o){ localStorage.setItem(LS_SHIFT,JSON.stringify(o)); }
 
+// カレンダー表示中の年月
+let CAL_Y, CAL_M;
+function toggleShiftDay(iso){
+  // isoは 'YYYY/MM/DD'。所属周期キーを求めてトグル
+  const [y,mo,d]=iso.split('/').map(Number);
+  const key=cycleOf(y,mo,d);
+  // すでに営収記録のある日（消化済）は変更不可
+  if(recordsOfCycle(key).some(r=>r.iso===iso)) return;
+  const all=getShifts(); all[key]=all[key]||[];
+  if(all[key].includes(iso)) all[key]=all[key].filter(v=>v!==iso);
+  else all[key].push(iso);
+  all[key].sort();
+  if(all[key].length===0) delete all[key];
+  setShifts(all);
+  renderCalendar(); renderShiftSummary();
+  renderTime(document.getElementById('cycleSel').value); renderBudget();
+}
+
 function renderShiftControls(){
-  document.getElementById('addShift').onclick=()=>{
-    const v=document.getElementById('shiftDate').value; if(!v)return;
-    const [y,mo,d]=v.split('-').map(Number); const key=cycleOf(y,mo,d);
-    const all=getShifts(); all[key]=all[key]||[]; const iso=`${y}/${String(mo).padStart(2,'0')}/${String(d).padStart(2,'0')}`;
-    if(!all[key].includes(iso)) all[key].push(iso); all[key].sort(); setShifts(all);
-    renderShiftList(); renderTime(document.getElementById('cycleSel').value); renderBudget();
-  };
+  // 初期表示月：最新データの翌月（＝これから組む月）か、現在月
+  const last=RECORDS[RECORDS.length-1];
+  CAL_Y = last? last.y : new Date().getFullYear();
+  CAL_M = last? last.mo : (new Date().getMonth()+1);
+  document.getElementById('calPrev').onclick=()=>{ CAL_M--; if(CAL_M<1){CAL_M=12;CAL_Y--;} renderCalendar(); };
+  document.getElementById('calNext').onclick=()=>{ CAL_M++; if(CAL_M>12){CAL_M=1;CAL_Y++;} renderCalendar(); };
   document.getElementById('clearShift').onclick=()=>{
     const key=shiftKeyOfSelectedCycle(); const all=getShifts(); delete all[key]; setShifts(all);
-    renderShiftList(); renderTime(key); renderBudget();
+    renderCalendar(); renderShiftSummary(); renderTime(key); renderBudget();
   };
-  renderShiftList();
+  renderCalendar(); renderShiftSummary();
 }
-function renderShiftList(){
-  const key=document.getElementById('cycleSel').value||CYCLES[0];
-  const all=getShifts(); const list=all[key]||[];
-  const doneIso=new Set(recordsOfCycle(key).map(r=>r.iso));
-  document.getElementById('shiftList').innerHTML = list.length? list.map(iso=>{
-    const done=doneIso.has(iso);
-    return `<span class="shiftday ${done?'done':'future'}"><b>${iso.slice(5)}</b>${done?'<span class="ok" style="font-size:.6rem">消化</span>':'<span class="blue" style="font-size:.6rem">予定</span>'}<span class="x" data-iso="${iso}" data-key="${key}">✕</span></span>`;
-  }).join('') : '<span style="font-size:.72rem;color:var(--dim)">この周期の出勤予定は未登録</span>';
-  document.querySelectorAll('#shiftList .x').forEach(x=>x.onclick=()=>{
-    const all=getShifts(); all[x.dataset.key]=(all[x.dataset.key]||[]).filter(v=>v!==x.dataset.iso); setShifts(all);
-    renderShiftList(); renderTime(x.dataset.key); renderBudget();
+
+function renderCalendar(){
+  document.getElementById('calTitle').textContent=`${CAL_Y}年 ${CAL_M}月`;
+  const all=getShifts();
+  const sel=new Set(); Object.values(all).forEach(arr=>arr.forEach(iso=>sel.add(iso)));
+  const doneAll=new Set(RECORDS.map(r=>r.iso));
+  const today=localDateStr(new Date());
+  const dows=['日','月','火','水','木','金','土'];
+  const first=new Date(CAL_Y,CAL_M-1,1); const startDow=first.getDay();
+  const days=new Date(CAL_Y,CAL_M,0).getDate();
+  let html='<div class="cal-grid">';
+  dows.forEach((w,i)=>html+=`<div class="cal-dow ${i===0?'sun':i===6?'sat':''}">${w}</div>`);
+  for(let i=0;i<startDow;i++) html+='<div class="cal-cell empty"></div>';
+  for(let d=1;d<=days;d++){
+    const iso=`${CAL_Y}/${String(CAL_M).padStart(2,'0')}/${String(d).padStart(2,'0')}`;
+    const dow=new Date(CAL_Y,CAL_M-1,d).getDay();
+    const cls=['cal-cell']; if(dow===0)cls.push('sun'); if(dow===6)cls.push('sat');
+    if(doneAll.has(iso))cls.push('done'); else if(sel.has(iso))cls.push('sel');
+    if(iso===today)cls.push('today');
+    html+=`<div class="${cls.join(' ')}" data-iso="${iso}">${d}</div>`;
+  }
+  html+='</div>';
+  document.getElementById('calendar').innerHTML=html;
+  document.querySelectorAll('#calendar .cal-cell:not(.empty):not(.done)').forEach(c=>{
+    c.onclick=()=>toggleShiftDay(c.dataset.iso);
   });
+}
+
+function renderShiftSummary(){
+  const key=document.getElementById('cycleSel').value||CYCLES[0];
+  const all=getShifts(); const list=(all[key]||[]).slice().sort();
+  const doneIso=new Set(recordsOfCycle(key).map(r=>r.iso));
+  // 周期に属する全出番＝営収済み(消化) ∪ 予定。消化済も一覧に出す
+  const doneList=recordsOfCycle(key).map(r=>r.iso);
+  const merged=[...new Set([...doneList,...list])].sort();
+  const future=merged.filter(iso=>!doneIso.has(iso));
+  const wd=['日','月','火','水','木','金','土'];
+  const fmt=iso=>{const[y,m,d]=iso.split('/').map(Number);return `${m}/${d}(${wd[new Date(y,m-1,d).getDay()]})`;};
+  const cells=merged.map(iso=>{
+    const done=doneIso.has(iso);
+    return `<span class="shiftday ${done?'done':'future'}"><b>${fmt(iso)}</b>${done?'<span class="ok" style="font-size:.6rem">消化</span>':'<span class="blue" style="font-size:.6rem">予定</span>'}</span>`;
+  }).join('');
+  document.getElementById('shiftSummary').innerHTML=
+    `<div class="summary-box">
+       <div class="miniflex"><strong style="font-size:.82rem">${cycleLabel(key)} の出番一覧</strong>
+         <span style="font-size:.72rem;color:var(--dim)">計${merged.length}出番（消化${doneList.length}／予定${future.length}）</span></div>
+       <div class="row">${cells||'<span style="font-size:.72rem;color:var(--dim)">未登録。カレンダーで出番日をタップ</span>'}</div>
+     </div>`;
 }
 
 function renderTime(key){
@@ -330,7 +403,7 @@ function renderTime(key){
   document.getElementById('timeLegend').innerHTML=
     `🟢ほぼ理想（±0〜+30分） 🔵余裕（+30分〜） 🟡注意（−20〜0分 早上がり調整） 🔴危険（超過/大幅短縮）<br>`+
     `各出番の<b>20:59超過は始末書ライン</b>。月間枠（${cycleTypeLabel(key)}=${min2hm(limit)}）超過は重大違反。枠ギリギリまで使い切るのが理想。`;
-  renderShiftList();
+  if(typeof renderShiftSummary==='function') renderShiftSummary();
 }
 
 function renderSalary(){
@@ -368,12 +441,12 @@ function renderBudget(){
     const ry = r.mo>=4? r.y : r.y-1;
     if(ry===fy){ revSum+=r.rev; shifts++; }
   });
-  // 給与は周期単位で空転差引→52%。年度内の周期を合算
+  // 対予算は分離給(3/6/12月)込みの実質年率60%で年度内の周期を合算
   let payCalc=0;
   CYCLES.forEach(key=>{
     const [ky,km]=key.split('/').map(Number);
     const ry=km>=4?ky:ky-1;
-    if(ry===fy){ const recs=recordsOfCycle(key); const rev=recs.reduce((s,x)=>s+x.rev,0); payCalc+=Math.round((rev-(KUTEN[key]||0))*PAY_RATE); }
+    if(ry===fy){ const recs=recordsOfCycle(key); const rev=recs.reduce((s,x)=>s+x.rev,0); payCalc+=Math.round((rev-(KUTEN[key]||0))*BUDGET_RATE); }
   });
   const pct=Math.min(100,payCalc/goal*100);
   const remain=goal-payCalc;
@@ -382,18 +455,18 @@ function renderBudget(){
   Object.keys(all).forEach(key=>{ const [ky,km]=key.split('/').map(Number); const ry=km>=4?ky:ky-1;
     if(ry===fy){ const done=new Set(recordsOfCycle(key).map(r=>r.iso)); remShifts+=all[key].filter(iso=>!done.has(iso)).length; } });
   const avgRev=shifts?Math.round(revSum/shifts):0;
-  // 必要営収ペース：残給与 ÷ 0.52 = 必要営収、÷ 残出番
-  const needRevPerShift = remShifts>0 ? Math.round((remain/PAY_RATE)/remShifts) : null;
+  // 必要営収ペース：残給与 ÷ 0.60 = 必要営収、÷ 残出番
+  const needRevPerShift = remShifts>0 ? Math.round((remain/BUDGET_RATE)/remShifts) : null;
 
   document.getElementById('budgetStats').innerHTML=`
-    <div class="stat"><div class="lbl">${fy}年度 給与累計（計算）</div><div class="val sm gold">${fmtYen(payCalc)}</div><div class="note">営収計 ${fmtYen(revSum)} / ${shifts}出番</div></div>
+    <div class="stat"><div class="lbl">${fy}年度 給与累計（60%換算）</div><div class="val sm gold">${fmtYen(payCalc)}</div><div class="note">営収計 ${fmtYen(revSum)} / ${shifts}出番</div></div>
     <div class="stat"><div class="lbl">目標まで残り</div><div class="val sm ${remain<=0?'ok':''}">${remain<=0?'達成 🎉':fmtYen(remain)}</div><div class="note">目標 ${fmtYen(goal)}</div></div>
     <div class="stat"><div class="lbl">残出番の必要営収ペース</div><div class="val sm ${needRevPerShift&&needRevPerShift>avgRev?'warn':'ok'}">${needRevPerShift!==null?fmtYen(needRevPerShift):'—'}</div><div class="note">${remShifts}出番予定 / 平均実績${fmtYen(avgRev)}</div></div>
   `;
   const bar=document.getElementById('budgetBar'); bar.style.width=pct+'%';
   bar.style.background = pct>=100?'var(--accent)':'linear-gradient(90deg,var(--gold),#d4a017)';
   document.getElementById('budgetBarLbl').textContent=`${fmtYen(payCalc)} / ${fmtYen(goal)}（${pct.toFixed(1)}%）`;
-  let note=`目標年収 ${fmtYen(goal)} に対し、現在 ${pct.toFixed(1)}%。`;
+  let note=`目標年収 ${fmtYen(goal)}（分離給込み実質60%換算）に対し、現在 ${pct.toFixed(1)}%。`;
   if(needRevPerShift!==null){
     note += needRevPerShift>avgRev
       ? ` 残出番で1出番あたり${fmtYen(needRevPerShift)}必要（平均実績${fmtYen(avgRev)}を上回るペースが必要）。`
