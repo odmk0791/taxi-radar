@@ -146,8 +146,8 @@
 <script>
 // ===== 設定 =====
 const NIPPOU_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
-// 空転CSV（後で公開URLに差し替え）
-const KUTEN_CSV = "";
+// 空転CSV（日付=col1, 金額=col8）
+const KUTEN_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTYCG_9IrMI-g9yXrshVt6Jy6EXRVOlDSrelt_BgBI5qi5U9m240OrY7APtcEQyNFd3CXrvbqswE2_/pub?gid=0&single=true&output=csv";
 const PAY_RATE = 0.52;        // 給与計算（毎月の歩合）
 const BUDGET_RATE = 0.60;     // 対予算（3/6/12月の分離給を含めた実質年率）
 const DAY_LIMIT_MIN = 20*60+59; // 1出番上限 20:59
@@ -198,6 +198,7 @@ function parseCSV(text){
 // ===== 状態 =====
 let RECORDS=[];   // {y,mo,d,key,dateStr,wd,rev,kosoku,taxi,deban}
 let KUTEN={};     // key(YYYY/MM) -> 合計空転額
+let KUTEN_CNT={}; // key(YYYY/MM) -> 空転件数
 let CYCLES=[];    // 周期キー新しい順
 
 // ===== データ取得 =====
@@ -218,15 +219,18 @@ async function loadData(){
       });
     }
     // 空転
+    KUTEN={}; KUTEN_CNT={};
     if(KUTEN_CSV){
       try{
         const k=await fetch(KUTEN_CSV+'&_cb='+Date.now());
         if(k.ok){ const kr=parseCSV(await k.text());
-          for(let i=1;i<kr.length;i++){ const r=kr[i]; if(!r||r.length<2) continue;
-            // 空転CSV: B列=日付(YYYY/MM/DD), I列=金額
+          for(let i=1;i<kr.length;i++){ const r=kr[i]; if(!r||r.length<9) continue;
+            // 空転CSV: col1=日付(YYYY/MM/DD), col8=金額
             const dm=(r[1]||'').match(/(\d{4})[\/\-](\d+)[\/\-](\d+)/); if(!dm) continue;
-            const key=cycleOf(+dm[1],+dm[2],+dm[3]); const amt=yen(r[8]||r[r.length-2]||'');
+            const key=cycleOf(+dm[1],+dm[2],+dm[3]); const amt=yen(r[8]);
+            if(!amt) continue;
             KUTEN[key]=(KUTEN[key]||0)+amt;
+            KUTEN_CNT[key]=(KUTEN_CNT[key]||0)+1;
           }
         }
       }catch(e){ console.warn('空転CSV未取得',e); }
@@ -419,7 +423,7 @@ function renderSalary(){
     let diffCell='—', dCls='';
     if(detail){ const diff=est-detail; diffCell=(diff>=0?'+':'')+fmtYen(diff); dCls=Math.abs(diff)<10000?'ok':'warn'; totDetail+=detail; nDetail++; }
     tb.insertAdjacentHTML('beforeend',
-      `<tr><td>${key.replace('/','/')}</td><td>${recs.length}</td><td>${fmtYen(rev)}</td><td class="${kut?'warn':'dim'}">${kut?('−'+fmtYen(kut)):'—'}</td><td>${fmtYen(adj)}</td><td class="ok">${fmtYen(est)}</td><td>${detail?fmtYen(detail):'—'}</td><td class="${dCls}">${diffCell}</td></tr>`);
+      `<tr><td>${key.replace('/','/')}</td><td>${recs.length}</td><td>${fmtYen(rev)}</td><td class="${kut?'warn':'dim'}">${kut?('−'+fmtYen(kut)+'<br><span style="font-size:.6rem;color:var(--dim)">'+(KUTEN_CNT[key]||0)+'件</span>'):'—'}</td><td>${fmtYen(adj)}</td><td class="ok">${fmtYen(est)}</td><td>${detail?fmtYen(detail):'—'}</td><td class="${dCls}">${diffCell}</td></tr>`);
   });
   const ss=document.getElementById('salStats');
   const latest=CYCLES[0]; const lr=recordsOfCycle(latest);
