@@ -103,6 +103,24 @@ td.cnt-cell,td.avg-cell{text-align:right;}
 .badge-app{background:#102820;color:#44bb88;border:1px solid #1a5530;}
 .badge-thx{background:#2e1e00;color:#f5a000;border:1px solid #553300;}
 .badge-other{background:#1e1230;color:#8866cc;border:1px solid #332255;}
+/* 乗車条件バッジ */
+.badge-pre-ride{background:#1e1040;color:#aa88ff;border:1px solid #6644bb;}
+.badge-prep-ride{background:#003030;color:#44ddcc;border:1px solid #00aaaa;}
+/* 休憩行（トリップリスト内） */
+.t-row-brk{
+  display:flex;align-items:center;gap:8px;
+  padding:5px 12px;background:#071a10;
+  border-left:2px solid #33cc6688;
+}
+.brk-icon{
+  width:22px;height:22px;min-width:22px;
+  background:#1a3a22;border:1.5px solid #33cc66;
+  border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:9px;color:#33cc66;
+}
+.brk-body{flex:1;min-width:0;}
+.brk-time{font-size:10px;color:#33cc66;font-weight:700;}
+.brk-sub{font-size:9px;color:#2a5a38;margin-top:1px;}
 .t-sep{height:1px;background:#0e0e28;margin:0 12px;}
 #status-bar{flex-shrink:0;padding:5px 12px;font-size:9px;color:#404060;
   border-top:1px solid #181838;line-height:1.5;word-break:break-all;}
@@ -340,6 +358,9 @@ td.cnt-cell,td.avg-cell{text-align:right;}
       <div class="leg-btn active" id="lb-dead" onclick="toggleLeg('dead',this)">
         <span class="leg-dash"></span>空車移動
       </div>
+      <div class="leg-btn active" id="lb-brk" onclick="toggleLeg('brk',this)">
+        <span style="width:16px;height:0;border-top:2px dashed #33cc66;flex-shrink:0;"></span>休憩
+      </div>
     </div>
     <div id="trip-list"></div>
     <div id="status-bar">—</div>
@@ -358,11 +379,12 @@ td.cnt-cell,td.avg-cell{text-align:right;}
 const URL_COORD='https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=657495537&single=true&output=csv';
 const URL_DAILY='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
 const URL_BD='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+const URL_BREAK='https://docs.google.com/spreadsheets/d/e/2PACX-1vRQ2FcXX3nBh2gGAge5wNY-UFP76jXbHHyQl485_2aGSikdsNs8xHznpnM0Pwhxj82sxSWCJ-6tnXJs/pub?gid=0&single=true&output=csv';
 const C_PW='乗車地：市区',C_PT='乗車地：地名',C_DW='降車地：市区',C_DT='降車地：地名';
 const C_TIME='乗車時間',C_FARE_B='料金',C_STATUS='ステータス',C_THX='サンキュー';
 
-let leafMap,coordMap=new Map(),bdCache=null,dailyCache=null;
-let tripLayers=[],deadLayers=[],activeN=null,showTrip=true,showDead=true;
+let leafMap,coordMap=new Map(),bdCache=null,dailyCache=null,breakCache=null;
+let tripLayers=[],deadLayers=[],breakLayers=[],activeN=null,showTrip=true,showDead=true;
 let allDays=[];
 // 武三23区外アドレスのジオコーディングキャッシュ（セッション持続）
 const apiGeoCache=new Map();
@@ -543,16 +565,22 @@ function getCoords(addr){
 
 // ── サンキュー判定 ─────────────────────────────────────
 // 値を確認して判定: 数字>0 or TRUE/yes/サンキュー/○ を陽性とみなす
-function isThx(val){
-  if(val===null||val===undefined)return false;
-  const s=String(val).trim();
-  if(!s||s==='-')return false;
-  const n=parseFloat(s);
-  if(!isNaN(n))return n>0; // 数値: 1以上でサンキュー
-  return/^(true|yes|サンキュー|○|◯|〇)$/i.test(s);
+// ── 乗車条件バッジ（サンキュー列の実際の値を表示） ───────
+// 通常=非表示、サンキュー=琥珀、プレタク=紫、プレタクP=シアン
+function mkCondBadge(val){
+  if(!val)return'';
+  const v=String(val).trim();
+  if(!v||v==='通常')return''; // 通常は多すぎるので非表示
+  if(v==='サンキュー')return`<span class="badge badge-thx">サンキュー</span>`;
+  if(v==='プレタク')  return`<span class="badge badge-pre-ride">プレタク</span>`;
+  if(v==='プレタクP') return`<span class="badge badge-prep-ride">プレタクP</span>`;
+  // 数値形式（旧形式）: 1以上ならサンキュー扱い
+  const n=parseFloat(v);
+  if(!isNaN(n)&&n>0)return`<span class="badge badge-thx">サンキュー</span>`;
+  return'';
 }
 
-// ── status badge ──────────────────────────────────────
+// ── ステータス＋乗車条件 バッジ ────────────────────────
 function mkBadge(status,thx){
   let html='';
   if(status&&status.trim()){
@@ -561,7 +589,7 @@ function mkBadge(status,thx){
     else if(/アプリ|配車|無線|スマ/i.test(s))html+=`<span class="badge badge-app">${sl(s,6)}</span>`;
     else if(s)html+=`<span class="badge badge-other">${sl(s,7)}</span>`;
   }
-  if(isThx(thx))html+=`<span class="badge badge-thx">サンキュー</span>`;
+  html+=mkCondBadge(thx);
   return html;
 }
 
@@ -609,9 +637,11 @@ function setActive(n){
 function clearMap(){
   tripLayers.forEach(l=>{if(l.line)l.line.remove();if(l.pm)l.pm.remove();if(l.dm)l.dm.remove();});
   deadLayers.forEach(l=>l.remove());
-  tripLayers=[];deadLayers=[];activeN=null;
+  breakLayers.forEach(l=>l.remove());
+  tripLayers=[];deadLayers=[];breakLayers=[];activeN=null;
   document.getElementById('trip-list').innerHTML='';
 }
+let showBrk=true;
 function toggleLeg(type,btn){
   btn.classList.toggle('active');
   if(type==='trip'){
@@ -621,10 +651,26 @@ function toggleLeg(type,btn){
       if(l.pm)l.pm.setOpacity(showTrip ? 1 : 0);
       if(l.dm)l.dm.setOpacity(showTrip ? 1 : 0);
     });
-  } else {
+  } else if(type==='dead'){
     showDead=btn.classList.contains('active');
     deadLayers.forEach(l=>l.setOpacity(showDead ? 0.4 : 0));
+  } else if(type==='brk'){
+    showBrk=btn.classList.contains('active');
+    breakLayers.forEach(l=>l.setOpacity(showBrk ? 0.65 : 0));
   }
+}
+
+// 時刻文字列 "HH:MM" → 分数（36h表記対応）
+function timeToMin(s){
+  const m=String(s||'').match(/(\d+):(\d+)/);
+  return m?+m[1]*60+ +m[2]:-1;
+}
+// 休憩マーカーアイコン
+function iconBreak(){
+  return L.divIcon({
+    html:`<div style="width:20px;height:20px;background:#1a3a22;border:1.5px solid #33cc66;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;color:#33cc66;font-weight:900;">休</div>`,
+    className:'',iconSize:[20,20],iconAnchor:[10,10]
+  });
 }
 
 // ── VIEW 1 ────────────────────────────────────────────
@@ -827,6 +873,26 @@ async function loadRoute(dayInfo){
       });
     }
 
+    // ── 休憩データを取得・日付フィルター ──────────────────
+    if(!breakCache){
+      try{ breakCache=await fetchCSV(URL_BREAK); }
+      catch(e){ breakCache=[]; }
+    }
+    const dateKey=`${y}/${String(mo).padStart(2,'0')}/${String(d).padStart(2,'0')}`;
+    const dateKeyAlt=`${y}/${mo}/${d}`;
+    const dayBreaks=breakCache.filter(r=>{
+      const bDate=String(r['日付']||'').trim();
+      return bDate===dateKey||bDate===dateKeyAlt;
+    }).map(r=>({
+      start: String(r['開始時間']||'').trim(),
+      end:   String(r['終了時間']||'').trim(),
+      mins:  parseInt(r['休憩時間']||'0')||0,
+      memo:  String(r['メモ']||'').trim(),
+      lat:   parseFloat(r['休憩：緯度']||r['緯度']||''),
+      lng:   parseFloat(r['休憩：経度']||r['経度']||''),
+      startMin: timeToMin(String(r['開始時間']||'')),
+    })).filter(b=>b.startMin>=0);
+
     const matched=trips.filter(t=>t.ok).length;
     const fareDisp=dailyFare||trips.reduce((s,t)=>s+t.fare,0);
     const cntDisp=dailyCnt||trips.length;
@@ -837,21 +903,44 @@ async function loadRoute(dayInfo){
     document.getElementById('st-long').innerHTML=long+'<span class="stat-unit"> 件</span>';
     document.getElementById('st-avg').innerHTML='¥'+avg.toLocaleString();
 
-    // Trip list
+    // ── サイドバー：営業と休憩を時刻順に混合表示 ──────────
     const list=document.getElementById('trip-list');
-    trips.forEach((t,i)=>{
-      if(i>0){const s=document.createElement('div');s.className='t-sep';list.appendChild(s);}
+    // trips に time を分数で付加（ソート用）
+    trips.forEach(t=>{ t.startMin=timeToMin(t.time); });
+    // 全アイテムを時刻順に並べる（休憩含む）
+    const allItems=[
+      ...trips.map(t=>({type:'trip',data:t,min:t.startMin})),
+      ...dayBreaks.map(b=>({type:'brk',data:b,min:b.startMin}))
+    ].sort((a,b)=>(a.min<0?9999:a.min)-(b.min<0?9999:b.min));
+
+    let prevDiv=null;
+    allItems.forEach(item=>{
+      if(prevDiv){const s=document.createElement('div');s.className='t-sep';list.appendChild(s);}
       const div=document.createElement('div');
-      div.className='t-row'+(t.ok?'':' no-map');div.id='tr-'+t.n;
-      div.innerHTML=`<div class="t-num">${t.n}</div><div class="t-body">
-        <div class="t-loc"><span class="t-from">${sl(t.pickup)}</span><span class="t-arr">↓</span><span class="t-to">${sl(t.dropoff)}</span></div>
-        <div class="t-meta"><div class="t-fare">${pf(t.fare)}</div>${t.time?`<span class="t-time">${t.time}</span>`:''}${mkBadge(t.status,t.thx)}${!t.ok?'<span style="font-size:8px;color:#303050;">未取得</span>':''}</div>
-      </div>`;
-      if(t.ok)div.addEventListener('click',()=>setActive(t.n));
+      if(item.type==='trip'){
+        const t=item.data;
+        div.className='t-row'+(t.ok?'':' no-map');div.id='tr-'+t.n;
+        div.innerHTML=`<div class="t-num">${t.n}</div><div class="t-body">
+          <div class="t-loc"><span class="t-from">${sl(t.pickup)}</span><span class="t-arr">↓</span><span class="t-to">${sl(t.dropoff)}</span></div>
+          <div class="t-meta"><div class="t-fare">${pf(t.fare)}</div>${t.time?`<span class="t-time">${t.time}</span>`:''}${mkBadge(t.status,t.thx)}${!t.ok?'<span style="font-size:8px;color:#303050;">未取得</span>':''}</div>
+        </div>`;
+        if(t.ok)div.addEventListener('click',()=>setActive(t.n));
+      } else {
+        const b=item.data;
+        const hasLoc=!isNaN(b.lat)&&!isNaN(b.lng);
+        const brkLabel=b.mins>0?`${b.mins}分`:
+          (b.start&&b.end&&b.start!==b.end)?`${b.start}〜${b.end}`:`${b.start}`;
+        div.className='t-row-brk';
+        div.innerHTML=`<div class="brk-icon">休</div><div class="brk-body">
+          <div class="brk-time">☕ 休憩 ${brkLabel}</div>
+          <div class="brk-sub">${b.memo||''} ${hasLoc?'📍':''}</div>
+        </div>`;
+      }
       list.appendChild(div);
+      prevDiv=div;
     });
 
-    // Dead-run lines
+    // ── 地図：Dead-runライン ──────────────────────────────
     const valid=trips.filter(t=>t.ok);
     for(let i=0;i<valid.length-1;i++){
       const a=valid[i],b=valid[i+1];
@@ -859,7 +948,7 @@ async function loadRoute(dayInfo){
         {color:'#00ccee',weight:1.5,opacity:showDead ? 0.65 : 0,dashArray:'6 9'}).addTo(leafMap);
       deadLayers.push(dl);
     }
-    // Trip lines + markers
+    // ── 地図：実車ライン＋マーカー ────────────────────────
     const bounds=[];
     valid.forEach(t=>{
       const line=L.polyline([[t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]],
@@ -872,12 +961,39 @@ async function loadRoute(dayInfo){
       tripLayers.push({n:t.n,line,pm,dm});
       bounds.push([t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]);
     });
+
+    // ── 地図：休憩マーカー＋ライン（緯度経度がある場合のみ） ──
+    dayBreaks.filter(b=>!isNaN(b.lat)&&!isNaN(b.lng)).forEach(b=>{
+      const brkLabel=b.mins>0?`${b.mins}分`:
+        (b.start&&b.end&&b.start!==b.end)?`${b.start}〜${b.end}`:b.start;
+      // 前の営業の降車地→休憩地（緑点線）
+      const prevTrip=valid.filter(t=>t.startMin<b.startMin).slice(-1)[0];
+      if(prevTrip){
+        const l=L.polyline([[prevTrip.dc.lat,prevTrip.dc.lng],[b.lat,b.lng]],
+          {color:'#33cc66',weight:1.5,opacity:showBrk?0.65:0,dashArray:'5 8'}).addTo(leafMap);
+        breakLayers.push(l);
+      }
+      // 休憩地→次の営業の乗車地（緑点線）
+      const nextTrip=valid.filter(t=>t.startMin>b.startMin)[0];
+      if(nextTrip){
+        const l=L.polyline([[b.lat,b.lng],[nextTrip.pc.lat,nextTrip.pc.lng]],
+          {color:'#33cc66',weight:1.5,opacity:showBrk?0.65:0,dashArray:'5 8'}).addTo(leafMap);
+        breakLayers.push(l);
+      }
+      // 休憩マーカー
+      const bm=L.marker([b.lat,b.lng],{icon:iconBreak()}).addTo(leafMap)
+        .bindTooltip(`休憩 ${brkLabel}${b.memo?' '+b.memo:''}`,{direction:'top',permanent:false});
+      breakLayers.push(bm);
+      bounds.push([b.lat,b.lng]);
+    });
+
     if(bounds.length)leafMap.fitBounds(bounds,{padding:[50,50]});
 
     const unm=trips.filter(t=>!t.ok);
     const stBar=document.getElementById('status-bar');
     let stMsg=`プロット: ${matched}/${trips.length}件`;
     if(unm.length)stMsg+=` | 未取得: `+unm.slice(0,2).map(t=>sl(t.pickup,9)).join(',');
+    if(dayBreaks.length)stMsg+=` | 休憩: ${dayBreaks.length}件`;
     stBar.textContent=stMsg;
     stBar.className=matched>0?'ok':'ng';
     document.getElementById('map-loading').style.display='none';
