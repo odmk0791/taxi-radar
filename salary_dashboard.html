@@ -54,6 +54,8 @@
   .cal-cell.empty{background:transparent;cursor:default;}
   .cal-cell:hover:not(.empty):not(.done){border-color:var(--accent2);}
   .cal-cell.sel{background:var(--accent2);color:#04203f;font-weight:800;}
+  .cal-cell.form{background:var(--gold);color:#2a1f00;font-weight:800;}
+  .cal-cell.form::after{content:'F';position:absolute;top:1px;right:3px;font-size:.5rem;opacity:.7;}
   .cal-cell.done{background:rgba(63,185,80,.18);color:var(--accent);border-color:var(--accent);font-weight:700;cursor:default;}
   .cal-cell.done::after{content:'✓';position:absolute;top:1px;right:3px;font-size:.55rem;}
   .cal-cell.sat{color:var(--accent2);} .cal-cell.sun{color:var(--danger);}
@@ -107,12 +109,14 @@
     <button class="ghost" id="clearShift">この周期をクリア</button>
   </div>
   <div id="calendar"></div>
-  <div class="legend">勤務表が出たら出番日を<b>タップ</b>。上の出番表に反映されます。売上が入った日は緑✓（消化済）で固定。<br>※将来はGoogleフォーム→スプレッドシート連携に差し替え予定。</div>
+  <div class="legend">出番日は<b style="color:var(--gold)">フォーム送信（金色F）</b>が基本。フォームで入れ忘れた日は<b style="color:var(--accent2)">カレンダーをタップ（青）</b>で補完できます。売上が入った日は<b style="color:var(--accent)">緑✓（消化済）</b>で固定。<br>金色のフォーム出番はフォーム側で管理（タップ削除不可）、青の手入力分はタップで削除できます。</div>
 </div>
 
 <script>
 const NIPPOU_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
 const KUTEN_CSV  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTYCG_9IrMI-g9yXrshVt6Jy6EXRVOlDSrelt_BgBI5qi5U9m240OrY7APtcEQyNFd3CXrvbqswE2_/pub?gid=0&single=true&output=csv";
+// 出勤入力CSV（col1=出勤予定日, col2=種別）
+const SHUKKIN_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRbknDgXj8d0hlGQ_uA0fCr9Zfc6SYNzAnP8Jw7tpmLXnMRWtGO5zOj09KWrOlR33SucJS7EIrq4I4Y/pub?gid=664179602&single=true&output=csv";
 const PAY_RATE = 0.52;
 const DAY_LIMIT_MIN = 20*60+59;
 const LS_SHIFT = "otban_shifts_v1";
@@ -146,6 +150,7 @@ function parseCSV(text){
 }
 let RECORDS=[];
 let KUTEN={}, KUTEN_CNT={};
+let FORM_SHIFTS={};  // key(YYYY/MM) -> [iso,...] フォームから登録された出番
 let CYCLES=[];
 let CAL_Y,CAL_M;
 
@@ -174,6 +179,22 @@ async function loadData(){
         }
       }
     }catch(e){ console.warn('空転CSV未取得',e); }
+    // 出勤入力（col1=出勤予定日）
+    FORM_SHIFTS={};
+    try{
+      const s=await fetch(SHUKKIN_CSV+'&_cb='+Date.now());
+      if(s.ok){ const sr=parseCSV(await s.text());
+        for(let i=1;i<sr.length;i++){ const r=sr[i]; if(!r||r.length<2) continue;
+          const dm=(r[1]||'').match(/(\d{4})[\/\-](\d+)[\/\-](\d+)/); if(!dm) continue;
+          const y=+dm[1],mo=+dm[2],d=+dm[3];
+          const iso=`${y}/${String(mo).padStart(2,'0')}/${String(d).padStart(2,'0')}`;
+          const key=cycleOf(y,mo,d);
+          FORM_SHIFTS[key]=FORM_SHIFTS[key]||[];
+          if(!FORM_SHIFTS[key].includes(iso)) FORM_SHIFTS[key].push(iso);
+        }
+        Object.values(FORM_SHIFTS).forEach(a=>a.sort());
+      }
+    }catch(e){ console.warn('出勤入力CSV未取得',e); }
     CYCLES=[...new Set(RECORDS.map(r=>r.key))].sort().reverse();
     init();
   }catch(e){
@@ -183,11 +204,22 @@ async function loadData(){
 }
 function getShifts(){ try{return JSON.parse(localStorage.getItem(LS_SHIFT)||'{}');}catch(e){return {};} }
 function setShifts(o){ localStorage.setItem(LS_SHIFT,JSON.stringify(o)); }
+// フォーム出番 ∪ 手入力出番（重複排除・ソート）
+function plannedOf(key){
+  const manual=(getShifts()[key]||[]);
+  const form=(FORM_SHIFTS[key]||[]);
+  return [...new Set([...form,...manual])].sort();
+}
+// その日がフォーム由来か（カレンダー表示の区別用）
+function isFormShift(iso){
+  const[y,mo,d]=iso.split('/').map(Number); const key=cycleOf(y,mo,d);
+  return (FORM_SHIFTS[key]||[]).includes(iso);
+}
 function recsOf(key){ return RECORDS.filter(r=>r.key===key && r.deban==='J').sort((a,b)=>a.iso<b.iso?-1:1); }
 function shiftRowsOf(key){
   const done=recsOf(key);
   const doneIso=new Set(done.map(r=>r.iso));
-  const planned=(getShifts()[key]||[]);
+  const planned=plannedOf(key);
   const rows=done.map(r=>({iso:r.iso,wd:r.wd,rev:r.rev,kosoku:r.kosoku,done:true}));
   planned.forEach(iso=>{ if(!doneIso.has(iso)) rows.push({iso,wd:wdOf(iso),rev:null,kosoku:null,done:false}); });
   rows.sort((a,b)=>a.iso<b.iso?-1:1);
@@ -290,7 +322,6 @@ function toggleShiftDay(iso){
 }
 function renderCalendar(){
   document.getElementById('calTitle').textContent=`${CAL_Y}年 ${CAL_M}月`;
-  const sel=new Set(); Object.values(getShifts()).forEach(a=>a.forEach(i=>sel.add(i)));
   const doneAll=new Set(RECORDS.map(r=>r.iso));
   const today=localDateStr(new Date());
   const startDow=new Date(CAL_Y,CAL_M-1,1).getDay();
@@ -298,17 +329,21 @@ function renderCalendar(){
   let html='<div class="cal-grid">';
   ['日','月','火','水','木','金','土'].forEach((w,i)=>html+=`<div class="cal-dow ${i===0?'sun':i===6?'sat':''}">${w}</div>`);
   for(let i=0;i<startDow;i++) html+='<div class="cal-cell empty"></div>';
+  const manualSel=new Set(); Object.values(getShifts()).forEach(a=>a.forEach(i=>manualSel.add(i)));
   for(let d=1;d<=days;d++){
     const iso=`${CAL_Y}/${String(CAL_M).padStart(2,'0')}/${String(d).padStart(2,'0')}`;
     const dow=new Date(CAL_Y,CAL_M-1,d).getDay();
     const cls=['cal-cell']; if(dow===0)cls.push('sun'); if(dow===6)cls.push('sat');
-    if(doneAll.has(iso))cls.push('done'); else if(sel.has(iso))cls.push('sel');
+    if(doneAll.has(iso))cls.push('done');
+    else if(isFormShift(iso))cls.push('form');
+    else if(manualSel.has(iso))cls.push('sel');
     if(iso===today)cls.push('today');
     html+=`<div class="${cls.join(' ')}" data-iso="${iso}">${d}</div>`;
   }
   html+='</div>';
   document.getElementById('calendar').innerHTML=html;
-  document.querySelectorAll('#calendar .cal-cell:not(.empty):not(.done)').forEach(c=>c.onclick=()=>toggleShiftDay(c.dataset.iso));
+  // 消化済・フォーム由来はクリック不可（手入力分だけトグル可）
+  document.querySelectorAll('#calendar .cal-cell:not(.empty):not(.done):not(.form)').forEach(c=>c.onclick=()=>toggleShiftDay(c.dataset.iso));
 }
 loadData();
 </script>
