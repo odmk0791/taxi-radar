@@ -197,19 +197,19 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
   </div>
 </div>
 
-<!-- 除外リストモーダル -->
-<div id="excl-modal" class="hidden" style="position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.6);flex-direction:column;justify-content:flex-end">
-  <div style="background:var(--s);border-radius:18px 18px 0 0;padding:20px 16px 40px;width:100%;max-height:70vh;overflow-y:auto">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
-      <span style="font-size:15px;font-weight:700">🚫 除外エリア</span>
-      <div style="display:flex;gap:10px;align-items:center">
-        <span onclick="clearAllExcl()" style="font-size:12px;color:var(--rd);cursor:pointer">全解除</span>
-        <button onclick="document.getElementById('excl-modal').style.display='none'" style="background:none;border:none;color:var(--tx2);font-size:18px;cursor:pointer">✕</button>
-      </div>
+<!-- 除外エリア背景 -->
+<div id="excl-overlay" onclick="document.getElementById('excl-sheet').style.display='none';this.style.display='none';" style="display:none;position:fixed;inset:0;z-index:498;background:rgba(0,0,0,.6)"></div>
+<!-- 除外リストシート -->
+<div id="excl-sheet" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:499;background:var(--s);border-radius:18px 18px 0 0;padding:20px 16px 40px;max-height:70vh;overflow-y:auto;border-top:1px solid var(--bd)">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+    <span style="font-size:15px;font-weight:700">🚫 除外エリア</span>
+    <div style="display:flex;gap:12px;align-items:center">
+      <span onclick="clearAllExcl()" style="font-size:12px;color:var(--rd);cursor:pointer">全解除</span>
+      <button onclick="closeExclSheet()" style="background:none;border:none;color:var(--tx2);font-size:20px;cursor:pointer;line-height:1">✕</button>
     </div>
-    <div id="excl-list"></div>
-    <p style="font-size:11px;color:var(--tx2);margin-top:12px">スポット一覧の🚫ボタンでエリアを除外できます</p>
   </div>
+  <div id="excl-list"></div>
+  <p style="font-size:11px;color:var(--tx2);margin-top:12px">スポット一覧の🚫ボタンでエリアを除外できます</p>
 </div>
 <main>
   <div id="geo-status" style="display:none;font-size:11px;color:var(--mu);padding:4px 12px;text-align:center"></div>
@@ -1117,7 +1117,6 @@ function showExclToast(label){
 }
 function openExclSettings(){
   var list=JSON.parse(localStorage.getItem(EXCL_KEY)||'[]');
-  var modal=document.getElementById('excl-modal');
   var html=list.length?list.map(function(k,i){
     return '<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:0.5px solid var(--bd);font-size:13px">'+
       '<span>'+k+'</span>'+
@@ -1125,7 +1124,12 @@ function openExclSettings(){
       '</div>';
   }).join(''):'<div style="font-size:13px;color:var(--tx2);padding:8px 0">除外中のエリアはありません</div>';
   document.getElementById('excl-list').innerHTML=html;
-  modal.style.display='flex';
+  document.getElementById('excl-sheet').style.display='block';
+  document.getElementById('excl-overlay').style.display='block';
+}
+function closeExclSheet(){
+  document.getElementById('excl-sheet').style.display='none';
+  document.getElementById('excl-overlay').style.display='none';
 }
 function removeExcl(i){
   var list=JSON.parse(localStorage.getItem(EXCL_KEY)||'[]');
@@ -1137,7 +1141,7 @@ function removeExcl(i){
 function clearAllExcl(){
   if(!confirm('除外リストをすべてクリアしますか？')) return;
   localStorage.removeItem(EXCL_KEY);
-  document.getElementById('excl-modal').style.display='none';
+  closeExclSheet();
   renderRadar();renderHot();
 }
 var FB_KEY='taxiradar_feedback';
