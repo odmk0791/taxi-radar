@@ -12,7 +12,7 @@
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI",sans-serif;
-    padding:14px;max-width:760px;margin:0 auto;line-height:1.5;}
+    padding:14px 10px;max-width:760px;margin:0 auto;line-height:1.5;overflow-x:hidden;}
   h1{font-size:1.1rem;font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:2px;}
   h1 .tag{font-size:.6rem;background:var(--accent);color:#06250f;padding:2px 7px;border-radius:10px;font-weight:700;}
   .sub{color:var(--dim);font-size:.7rem;margin-bottom:14px;}
@@ -33,8 +33,14 @@
   .pace .big{font-size:1.9rem;font-weight:800;font-family:var(--mono);line-height:1.1;}
   .pace .msg{font-size:.82rem;font-weight:700;margin-top:2px;}
   .pace .note{font-size:.64rem;color:var(--dim);margin-top:3px;}
-  table{width:100%;border-collapse:collapse;font-size:.84rem;}
-  th,td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono);white-space:nowrap;}
+  table{width:100%;border-collapse:collapse;font-size:.8rem;table-layout:fixed;}
+  th,td{padding:9px 4px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  /* 列幅配分：日付/曜/売上/拘束/状態 */
+  #otTable th:nth-child(1),#otTable td:nth-child(1){width:15%;padding-left:6px;}
+  #otTable th:nth-child(2),#otTable td:nth-child(2){width:8%;}
+  #otTable th:nth-child(3),#otTable td:nth-child(3){width:28%;}
+  #otTable th:nth-child(4),#otTable td:nth-child(4){width:25%;}
+  #otTable th:nth-child(5),#otTable td:nth-child(5){width:24%;padding-right:6px;}
   th{color:var(--dim);font-weight:600;font-size:.68rem;}
   td:first-child,th:first-child,td:nth-child(2),th:nth-child(2){text-align:left;}
   tr.future td{color:var(--dim);}
