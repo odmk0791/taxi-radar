@@ -112,6 +112,8 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
   .kpi-val{font-size:16px}
   /* パディング均一化 */
   #filter-row,#stability-card,.section-title{padding-left:12px;padding-right:12px}
+  #shift-select{max-width:100%!important;width:100%}
+  #filter-row{flex-direction:column;align-items:flex-start;gap:6px}
   .grid-3col,.grid-2col,#charts{padding:0 12px}
   /* フォント縮小 */
   .seg-val{font-size:13px}
@@ -133,6 +135,13 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
   <button class="period-btn" data-days="90">3ヶ月</button>
   <button class="period-btn active" data-days="180">6ヶ月</button>
   <button class="period-btn" data-days="0">全期間</button>
+  <span class="filter-label" style="margin-left:6px">シフト</span>
+  <select id="shift-select" style="
+    padding:4px 8px;border-radius:4px;border:1px solid var(--border);
+    background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;
+    max-width:200px">
+    <option value="">-- シフト期間で絞り込む --</option>
+  </select>
 </div>
 
 <!-- KPIカード -->
@@ -320,12 +329,60 @@ const percentile = (arr, p) => {
 const cvLabel = v => v<15?['安定','badge-good']:v<25?['やや不安定','badge-warn']:['不安定','badge-bad'];
 
 let allDailyRows=[], allDetailRows=[], filterDays=180, charts={};
+let filterStart=null, filterEnd=null; // シフト期間フィルタ用
 
 const filterRows = rows => {
+  if(filterStart && filterEnd) {
+    const s=new Date(filterStart), e=new Date(filterEnd); e.setHours(23,59,59);
+    return rows.filter(r=>r.date && r.date>=s && r.date<=e);
+  }
   if(!filterDays) return rows;
   const cutoff=new Date(); cutoff.setDate(cutoff.getDate()-filterDays);
   return rows.filter(r=>r.date && r.date>=cutoff);
 };
+
+const SHIFT_PERIODS = [
+  {label:'2024年11月16日〜12月15日', start:'2024-11-16', end:'2024-12-15'},
+  {label:'2024年12月16日〜2025年01月14日', start:'2024-12-16', end:'2025-01-14'},
+  {label:'2025年01月15日〜02月13日', start:'2025-01-15', end:'2025-02-13'},
+  {label:'2025年02月14日〜03月15日', start:'2025-02-14', end:'2025-03-15'},
+  {label:'2025年03月16日〜04月15日', start:'2025-03-16', end:'2025-04-15'},
+  {label:'2025年04月16日〜05月15日', start:'2025-04-16', end:'2025-05-15'},
+  {label:'2025年05月16日〜06月15日', start:'2025-05-16', end:'2025-06-15'},
+  {label:'2025年06月16日〜07月15日', start:'2025-06-16', end:'2025-07-15'},
+  {label:'2025年07月16日〜08月15日', start:'2025-07-16', end:'2025-08-15'},
+  {label:'2025年08月16日〜09月15日', start:'2025-08-16', end:'2025-09-15'},
+  {label:'2025年09月16日〜10月15日', start:'2025-09-16', end:'2025-10-15'},
+  {label:'2025年10月16日〜11月15日', start:'2025-10-16', end:'2025-11-15'},
+  {label:'2025年11月16日〜12月15日', start:'2025-11-16', end:'2025-12-15'},
+  {label:'2025年12月16日〜2026年01月14日', start:'2025-12-16', end:'2026-01-14'},
+  {label:'2026年01月15日〜02月13日', start:'2026-01-15', end:'2026-02-13'},
+  {label:'2026年02月14日〜03月15日', start:'2026-02-14', end:'2026-03-15'},
+  {label:'2026年03月16日〜04月15日', start:'2026-03-16', end:'2026-04-15'},
+  {label:'2026年04月16日〜05月15日', start:'2026-04-16', end:'2026-05-15'},
+  {label:'2026年05月16日〜06月15日', start:'2026-05-16', end:'2026-06-15'},
+  {label:'2026年06月16日〜07月15日', start:'2026-06-16', end:'2026-07-15'},
+  {label:'2026年07月16日〜08月15日', start:'2026-07-16', end:'2026-08-15'},
+  {label:'2026年08月16日〜09月15日', start:'2026-08-16', end:'2026-09-15'},
+  {label:'2026年09月16日〜10月15日', start:'2026-09-16', end:'2026-10-15'},
+  {label:'2026年10月16日〜11月15日', start:'2026-10-16', end:'2026-11-15'},
+  {label:'2026年11月16日〜12月15日', start:'2026-11-16', end:'2026-12-15'},
+  {label:'2026年12月16日〜2027年01月14日', start:'2026-12-16', end:'2027-01-14'},
+  {label:'2027年01月17日〜02月13日', start:'2027-01-17', end:'2027-02-13'},
+  {label:'2027年02月14日〜03月15日', start:'2027-02-14', end:'2027-03-15'},
+];
+
+// 今日の日付から現在のシフト期間を自動判定
+function getCurrentShiftIndex() {
+  const today = new Date();
+  for(let i=0; i<SHIFT_PERIODS.length; i++) {
+    const s = new Date(SHIFT_PERIODS[i].start);
+    const e = new Date(SHIFT_PERIODS[i].end);
+    e.setHours(23,59,59);
+    if(today >= s && today <= e) return i;
+  }
+  return -1;
+}
 
 // ── KPI & 安定性サマリー ──────────────────────────────────────
 function buildKPI(rows) {
@@ -722,6 +779,7 @@ async function loadDetailReport() {
 }
 
 async function init() {
+  initShiftSelect();
   try{
     await Promise.all([loadDailyReport(),loadDetailReport()]);
     document.getElementById('status').className='ok';
@@ -738,9 +796,50 @@ async function init() {
 document.querySelectorAll('.period-btn').forEach(btn=>
   btn.addEventListener('click',()=>{
     filterDays=+btn.dataset.days;
+    filterStart=null; filterEnd=null;
     document.querySelectorAll('.period-btn').forEach(b=>b.classList.toggle('active',b===btn));
+    document.getElementById('shift-select').value='';
     renderAll();
   }));
+
+// シフト選択ドロップダウンを初期化
+function initShiftSelect() {
+  const sel = document.getElementById('shift-select');
+  const today = new Date();
+  SHIFT_PERIODS.forEach((p, i) => {
+    const end = new Date(p.end);
+    if(end < new Date('2024-11-01')) return; // 古すぎるものは除外
+    const opt = document.createElement('option');
+    opt.value = i;
+    const isCurrent = today >= new Date(p.start) && today <= new Date(p.end+'T23:59:59');
+    const isPast = end < today;
+    opt.textContent = (isCurrent ? '▶ ' : isPast ? '　' : '○ ') + p.label;
+    if(isCurrent) opt.style.color = '#79c0ff';
+    sel.appendChild(opt);
+  });
+  // 現在のシフトを自動選択
+  const cur = getCurrentShiftIndex();
+  if(cur >= 0) {
+    sel.value = cur;
+    const p = SHIFT_PERIODS[cur];
+    filterStart = p.start; filterEnd = p.end;
+    filterStart = p.start; filterEnd = p.end; filterDays = 0;
+    document.querySelectorAll('.period-btn').forEach(b=>b.classList.remove('active'));
+  }
+}
+
+document.getElementById('shift-select').addEventListener('change', e => {
+  const val = e.target.value;
+  if(!val) {
+    filterStart=null; filterEnd=null; filterDays=180;
+    document.querySelectorAll('.period-btn').forEach(b=>b.classList.toggle('active',b.dataset.days==='180'));
+  } else {
+    const p = SHIFT_PERIODS[+val];
+    filterStart = p.start; filterEnd = p.end; filterDays = 0;
+    document.querySelectorAll('.period-btn').forEach(b=>b.classList.remove('active'));
+  }
+  renderAll();
+});
 
 init();
 </script>
