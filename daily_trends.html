@@ -12,7 +12,7 @@
   --orange:#f0883e;--red:#f85149;--purple:#d2a8ff;--yellow:#e3b341;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);
+body{background:var(--bg);color:var(--text);overflow-x:hidden;
   font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
   min-height:100vh;padding-bottom:40px}
 
@@ -82,6 +82,10 @@ body{background:var(--bg);color:var(--text);
 .legend-item{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted)}
 .legend-dot{width:10px;height:4px;border-radius:2px}
 
+.grid-3col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.grid-2col{display:grid;gap:14px}
+#segment-kpi{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.grid-2col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .seg-kpi-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
 .seg-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
 .seg-row{display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap}
@@ -90,14 +94,28 @@ body{background:var(--bg);color:var(--text);
 .seg-val{font-size:14px;font-weight:800}
 .seg-sub{font-size:10px;color:var(--muted);margin-top:1px}
 
-@media(max-width:600px){
-  #segment-kpi{grid-template-columns:1fr!important}
-  #charts{grid-template-columns:1fr}
-  .chart-card.wide{grid-column:1}
-  .chart-wrap{height:180px}
-  .chart-wrap.tall{height:220px}
-  #kpi-row{gap:8px;padding:10px}
+@media(max-width:640px){
+  /* 横スクロール防止 */
+  *{max-width:100%}
+  /* 全グリッドを1カラムに */
+  #segment-kpi,.grid-3col,.grid-2col,#charts{
+    grid-template-columns:1fr!important;display:grid!important
+  }
+  .chart-card.wide{grid-column:1!important}
+  /* 高さ */
+  .chart-wrap{height:180px!important}
+  .chart-wrap.tall{height:220px!important}
+  .chart-wrap.short{height:150px!important}
+  /* KPI */
+  #kpi-row{gap:8px;padding:10px 12px;flex-wrap:wrap}
+  .kpi{min-width:calc(50% - 8px)}
   .kpi-val{font-size:16px}
+  /* パディング均一化 */
+  #filter-row,#stability-card,.section-title{padding-left:12px;padding-right:12px}
+  .grid-3col,.grid-2col,#charts{padding:0 12px}
+  /* フォント縮小 */
+  .seg-val{font-size:13px}
+  .seg-kpi-card{padding:10px 12px}
 }
 </style>
 </head>
@@ -161,12 +179,12 @@ body{background:var(--bg);color:var(--text);
 <div class="section-title">シフト時間帯別分析（詳細日報）</div>
 
 <!-- 3区間KPIカード -->
-<div id="segment-kpi" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;padding:10px 20px">
+<div id="segment-kpi" style="padding:10px 20px">
   <!-- JS で生成 -->
 </div>
 
 <!-- 曜日×区間 グラフ -->
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;padding:0 20px 4px">
+<div class="grid-3col" style="padding:0 20px 4px">
   <div class="chart-card">
     <div class="chart-title">16〜22時 曜日別売上</div>
     <div class="chart-wrap short"><canvas id="c-seg1-dow"></canvas></div>
@@ -181,7 +199,7 @@ body{background:var(--bg);color:var(--text);
   </div>
 </div>
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:0 20px 4px">
+<div class="grid-2col" style="padding:0 20px 4px">
   <div class="chart-card wide" style="grid-column:1/-1">
     <div class="chart-title">曜日別 区間売上の積み上げ<span>16〜22時 / 22〜28時 / 28時〜</span></div>
     <div class="chart-wrap" style="height:220px"><canvas id="c-seg-stacked"></canvas></div>
