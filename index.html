@@ -119,6 +119,8 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 .bar{height:3px;background:var(--bd);border-radius:2px;margin-top:5px}
 .barf{height:3px;border-radius:2px;background:linear-gradient(to right,var(--g),var(--am))}
 .carr{font-size:18px;color:var(--mu);flex-shrink:0}
+.excl-btn{background:none;border:none;font-size:14px;cursor:pointer;padding:4px 6px;opacity:.4;flex-shrink:0}
+.excl-btn:active{opacity:1}
 .fb-row{display:flex;align-items:center;gap:6px;margin-top:7px;padding-top:6px;border-top:0.5px solid var(--bd)}
 .fb-btn{padding:5px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s2);color:var(--tx2);font-size:12px;cursor:pointer}
 .fb-hit:active{background:rgba(57,211,83,.2);border-color:var(--g);color:var(--g)}
@@ -190,7 +192,23 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
     <div class="hs"><div class="st" id="st">読み込み中...</div></div>
     <div class="ck"><div id="ck">--:--</div><div class="cd" id="cd">---</div></div>
     <button class="notify-btn" id="notify-btn">🔕 通知OFF</button>
+    <button class="hbtn" id="open-excl" onclick="openExclSettings()" title="除外エリア">🚫</button>
     <button class="hbtn" id="open-setup">⚙️</button>
+  </div>
+</div>
+
+<!-- 除外リストモーダル -->
+<div id="excl-modal" class="hidden" style="position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.6);display:flex;align-items:flex-end">
+  <div style="background:var(--s);border-radius:18px 18px 0 0;padding:20px 16px 40px;width:100%;max-height:70vh;overflow-y:auto">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <span style="font-size:15px;font-weight:700">🚫 除外エリア</span>
+      <div style="display:flex;gap:10px;align-items:center">
+        <span onclick="clearAllExcl()" style="font-size:12px;color:var(--rd);cursor:pointer">全解除</span>
+        <button onclick="document.getElementById('excl-modal').classList.add('hidden')" style="background:none;border:none;color:var(--tx2);font-size:18px;cursor:pointer">✕</button>
+      </div>
+    </div>
+    <div id="excl-list"></div>
+    <p style="font-size:11px;color:var(--tx2);margin-top:12px">スポット一覧の🚫ボタンでエリアを除外できます</p>
   </div>
 </div>
 <main>
@@ -702,7 +720,10 @@ function renderRadar(){
     agg[k].c+=cnt;agg[k].gc+=r.goCount*weight;agg[k].sc+=r.smCount*weight;agg[k].nc+=r.naCount*weight;
     if(r.mins)r.mins.forEach(function(m){agg[k].mins.push(r.hour*60+m);});
   }
-  var spots=Object.values(agg).sort(function(a,b){return b.c-a.c;}).slice(0,20);
+  var EXCL=JSON.parse(localStorage.getItem('taxiradar_exclude')||'[]');
+  var spots=Object.values(agg)
+    .filter(function(a){return EXCL.indexOf(a.w+a.n)<0;})
+    .sort(function(a,b){return b.c-a.c;}).slice(0,20);
   // ±5分チェック
   var nowTotalMins=(now.getHours()+off)*60+now.getMinutes();
   spots.forEach(function(s){
@@ -741,7 +762,7 @@ function renderRadar(){
       '<div class="tags"><span class="tag td">📍 '+d.toFixed(1)+'km</span><span class="tag tc">🏆 '+score+'件'+rl+'</span></div>'+
       '<div class="bar"><div class="barf" style="width:'+Math.round(s.c*rainBoost/mx*100)+'%"></div></div>'+
       fbHtml+
-      '</div><div class="carr">›</div></div>';
+      '</div><div class="carr">›</div><button class="excl-btn" onclick="event.stopPropagation();excludeSpot(\''+s.w+'\',\''+s.n+'\')">🚫</button></div>';
   }
   list.innerHTML=html;
   window._spots=spots;
@@ -1070,7 +1091,55 @@ function toggleFilterBtn(btn){
   renderRadar();
 }
 
-// ===== フィードバック =====
+// ===== 除外リスト =====
+var EXCL_KEY='taxiradar_exclude';
+function excludeSpot(ward,name){
+  var list=JSON.parse(localStorage.getItem(EXCL_KEY)||'[]');
+  var key=ward+name;
+  if(list.indexOf(key)<0){
+    list.push(key);
+    localStorage.setItem(EXCL_KEY,JSON.stringify(list));
+    renderRadar();renderHot();
+    showExclToast(ward+' '+name);
+  }
+}
+function showExclToast(label){
+  var t=document.getElementById('excl-toast');
+  if(!t){
+    t=document.createElement('div');
+    t.id='excl-toast';
+    t.style.cssText='position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:var(--rd);color:#fff;font-size:12px;padding:8px 16px;border-radius:20px;z-index:999;opacity:0;transition:opacity .3s';
+    document.body.appendChild(t);
+  }
+  t.textContent='🚫 '+label+' を除外';
+  t.style.opacity='1';
+  setTimeout(function(){t.style.opacity='0';},2000);
+}
+function openExclSettings(){
+  var list=JSON.parse(localStorage.getItem(EXCL_KEY)||'[]');
+  var modal=document.getElementById('excl-modal');
+  var html=list.length?list.map(function(k,i){
+    return '<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:0.5px solid var(--bd);font-size:13px">'+
+      '<span>'+k+'</span>'+
+      '<button onclick="removeExcl('+i+')" style="background:none;border:none;color:var(--rd);cursor:pointer;font-size:13px">解除</button>'+
+      '</div>';
+  }).join(''):'<div style="font-size:13px;color:var(--tx2);padding:8px 0">除外中のエリアはありません</div>';
+  document.getElementById('excl-list').innerHTML=html;
+  modal.classList.remove('hidden');
+}
+function removeExcl(i){
+  var list=JSON.parse(localStorage.getItem(EXCL_KEY)||'[]');
+  list.splice(i,1);
+  localStorage.setItem(EXCL_KEY,JSON.stringify(list));
+  openExclSettings();
+  renderRadar();renderHot();
+}
+function clearAllExcl(){
+  if(!confirm('除外リストをすべてクリアしますか？')) return;
+  localStorage.removeItem(EXCL_KEY);
+  openExclSettings();
+  renderRadar();renderHot();
+}
 var FB_KEY='taxiradar_feedback';
 var FB_FORM='https://docs.google.com/forms/d/e/1FAIpQLSeuaCYnYmKlHUPDtP69xGmDPhCyQfFbdR7wvS01J_DYH1RebQ/formResponse';
 
