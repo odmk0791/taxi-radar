@@ -137,7 +137,16 @@ function yen(s){ s=(s||'').replace(/[¥,\s]/g,''); const n=parseInt(s,10); retur
 function hm2min(s){ s=(s||'').trim(); if(!s||s.indexOf(':')<0) return 0; const[h,m]=s.split(':'); const H=parseInt(h,10),M=parseInt(m,10); return (isNaN(H)?0:H)*60+(isNaN(M)?0:M); }
 function min2hm(t){ const sign=t<0?'-':''; t=Math.abs(t); const h=Math.floor(t/60), m=Math.round(t%60); return sign+h+':'+String(m).padStart(2,'0'); }
 function fmtYen(n){ return '¥'+n.toLocaleString('ja-JP'); }
-function parseDate(s){ const m=(s||'').match(/(\d+)年(\d+)月(\d+)日/); if(!m) return null; let y=parseInt(m[1],10); y+=(y<100?2000:0); return {y, mo:parseInt(m[2],10), d:parseInt(m[3],10)}; }
+function parseDate(s){
+  s=(s||'').trim();
+  // 形式1: 和暦/西暦区切り「26年6月5日」「2026年6月5日」
+  let m=s.match(/(\d+)年(\d+)月(\d+)日/);
+  if(m){ let y=parseInt(m[1],10); y+=(y<100?2000:0); return {y, mo:parseInt(m[2],10), d:parseInt(m[3],10)}; }
+  // 形式2: スラッシュ/ハイフン西暦「2026/05/20」「2026-05-20」（先頭に日時が付いていても拾う）
+  m=s.match(/(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/);
+  if(m){ return {y:parseInt(m[1],10), mo:parseInt(m[2],10), d:parseInt(m[3],10)}; }
+  return null;
+}
 function localDateStr(dt){ return dt.getFullYear()+'/'+String(dt.getMonth()+1).padStart(2,'0')+'/'+String(dt.getDate()).padStart(2,'0'); }
 const WD=['日','月','火','水','木','金','土'];
 function wdOf(iso){ const[y,m,d]=iso.split('/').map(Number); return WD[new Date(y,m-1,d).getDay()]; }
