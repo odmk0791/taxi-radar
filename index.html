@@ -840,8 +840,8 @@ function _buildMap(){
   if(!_mapInited){
     var cx=uLat||spots[0].la,cy=uLng||spots[0].ln;
     _leafMap=L.map('spot-map',{zoomControl:true}).setView([cx,cy],14);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-      attribution:'© OpenStreetMap',maxZoom:18
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+      attribution:'© OpenStreetMap © CARTO',maxZoom:19
     }).addTo(_leafMap);
     _mapInited=true;
   }
@@ -852,10 +852,14 @@ function _buildMap(){
   spots.forEach(function(s,i){
     if(!s.lat||!s.lng) return;
     var color=i<3?'#f85149':i<10?'#d29922':'#39d353';
+    var label=s.n.replace(/[一二三四五六七八九十]丁目$/,'').slice(0,5);
     var icon=L.divIcon({
       className:'',
-      html:'<div style="width:28px;height:28px;border-radius:50%;background:'+color+';color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4)">'+(i+1)+'</div>',
-      iconSize:[28,28],iconAnchor:[14,14]
+      html:'<div style="text-align:center">'+
+        '<div style="width:36px;height:36px;border-radius:50%;background:'+color+';color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2.5px solid #fff;box-shadow:0 3px 8px rgba(0,0,0,.6);margin:0 auto">'+(i+1)+'</div>'+
+        '<div style="background:rgba(0,0,0,.75);color:#fff;font-size:10px;font-weight:600;padding:1px 4px;border-radius:4px;margin-top:2px;white-space:nowrap;max-width:70px;overflow:hidden;text-overflow:ellipsis">'+label+'</div>'+
+        '</div>',
+      iconSize:[70,54],iconAnchor:[35,18]
     });
     var d=(uLat&&uLng)?km(uLat,uLng,s.lat,s.lng):null;
     var popup='<b>'+s.w+' '+s.n+'</b><br>🏆 '+Math.round(s.c)+'件'+(d?' 📍 '+d.toFixed(1)+'km':'');
