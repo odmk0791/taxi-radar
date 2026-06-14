@@ -850,16 +850,16 @@ function _buildMap(){
   _mapMarkers=[];
   // スポットのピン
   spots.forEach(function(s,i){
-    if(!s.la||!s.ln) return;
+    if(!s.lat||!s.lng) return;
     var color=i<3?'#f85149':i<10?'#d29922':'#39d353';
     var icon=L.divIcon({
       className:'',
       html:'<div style="width:28px;height:28px;border-radius:50%;background:'+color+';color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4)">'+(i+1)+'</div>',
       iconSize:[28,28],iconAnchor:[14,14]
     });
-    var popup='<b>'+s.w+' '+s.n+'</b><br>🏆 '+Math.round(s.c)+'件 📍 '+
-      (s.dist?s.dist.toFixed(1)+'km':'');
-    var m=L.marker([s.la,s.ln],{icon:icon}).addTo(_leafMap).bindPopup(popup);
+    var d=(uLat&&uLng)?km(uLat,uLng,s.lat,s.lng):null;
+    var popup='<b>'+s.w+' '+s.n+'</b><br>🏆 '+Math.round(s.c)+'件'+(d?' 📍 '+d.toFixed(1)+'km':'');
+    var m=L.marker([s.lat,s.lng],{icon:icon}).addTo(_leafMap).bindPopup(popup);
     _mapMarkers.push(m);
   });
   // 現在地ピン
@@ -872,8 +872,8 @@ function _buildMap(){
     var um=L.marker([uLat,uLng],{icon:userIcon}).addTo(_leafMap).bindPopup('現在地');
     _mapMarkers.push(um);
     // 全マーカーが見えるようにズーム
-    var lats=spots.map(function(s){return s.la;}).filter(Boolean);
-    var lngs=spots.map(function(s){return s.ln;}).filter(Boolean);
+    var lats=spots.map(function(s){return s.lat;}).filter(Boolean);
+    var lngs=spots.map(function(s){return s.lng;}).filter(Boolean);
     lats.push(uLat);lngs.push(uLng);
     _leafMap.fitBounds([[Math.min.apply(null,lats),Math.min.apply(null,lngs)],[Math.max.apply(null,lats),Math.max.apply(null,lngs)]],{padding:[20,20]});
   }
