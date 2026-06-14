@@ -862,7 +862,7 @@ function _buildMap(){
       iconSize:[70,54],iconAnchor:[35,18]
     });
     var d=(uLat&&uLng)?km(uLat,uLng,s.lat,s.lng):null;
-    var navUrl='maps:?daddr='+s.lat+','+s.lng;
+    var navUrl='https://www.google.com/maps/dir/?api=1&destination='+s.lat+','+s.lng+'&travelmode=driving';
     var popup='<b>'+s.w+' '+s.n+'</b><br>🏆 '+Math.round(s.c)+'件'+(d?' 📍 '+d.toFixed(1)+'km':'')+'<br><a href="'+navUrl+'" style="display:inline-block;margin-top:6px;padding:4px 12px;background:#39d353;color:#000;border-radius:12px;font-size:12px;font-weight:700;text-decoration:none">🗺 ナビ開始</a>';
     var m=L.marker([s.lat,s.lng],{icon:icon}).addTo(_leafMap).bindPopup(popup);
     _mapMarkers.push(m);
