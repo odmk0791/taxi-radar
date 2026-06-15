@@ -2,370 +2,691 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>イベントレーダー</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>EventRadar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
-  :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1a2235;--border:#1e2d45;--accent:#00d4ff;--accent2:#ff6b35;--text:#e2e8f0;--text-muted:#64748b;--danger:#ff4444;--warn:#ffbb33;--green:#22c55e}
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--bg);color:var(--text);font-family:'Noto Sans JP',sans-serif;min-height:100vh;overflow-x:hidden}
-  body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,212,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
-  .header{position:relative;z-index:10;padding:14px 16px 12px;border-bottom:1px solid var(--border);background:rgba(10,14,26,.97);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;gap:10px}
-  .header-left{display:flex;align-items:center;gap:8px}
-  .logo{font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--accent);letter-spacing:2px;text-transform:uppercase}
-  .logo span{color:var(--accent2)}
-  .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse-anim 2s infinite}
-  @keyframes pulse-anim{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,212,255,.4)}50%{opacity:.6;box-shadow:0 0 0 6px rgba(0,212,255,0)}}
-  .header-right{display:flex;align-items:center;gap:8px}
-  .gps-badge{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-muted);background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:4px 10px}
-  .gps-badge.active{color:var(--green);border-color:var(--green)}
-  .gps-badge.active .gps-dot{background:var(--green)}
-  .gps-dot{width:6px;height:6px;border-radius:50%;background:var(--text-muted)}
-  .now-time{font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--accent);letter-spacing:1px}
-  #map{position:relative;z-index:1;width:100%;height:260px;border-bottom:1px solid var(--border)}
-  .scan-area{position:relative;z-index:10;padding:12px 16px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:center}
-  .btn-scan{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#0066cc,#00d4ff);border:none;border-radius:10px;padding:12px 20px;color:#fff;font-family:'Noto Sans JP',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s}
-  .btn-scan:hover{opacity:.85;transform:translateY(-1px)}.btn-scan:active{transform:translateY(0)}
-  .btn-scan:disabled{background:var(--border);cursor:not-allowed;transform:none}
-  .btn-scan.scanning .scan-icon{animation:spin 1s linear infinite}
-  @keyframes spin{to{transform:rotate(360deg)}}
-  .range-select{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;color:var(--text);font-size:13px;outline:none}
-  .status-bar{position:relative;z-index:10;padding:8px 16px;background:var(--bg);border-bottom:1px solid var(--border);font-size:12px;color:var(--text-muted);min-height:32px;display:flex;align-items:center;gap:8px}
-  .status-bar.loading{color:var(--accent)}.status-bar.error{color:var(--danger)}.status-bar.success{color:var(--green)}
-  .info-bar{position:relative;z-index:10;padding:6px 16px;background:var(--surface);border-bottom:1px solid var(--border);font-size:11px;color:var(--text-muted);display:flex;align-items:center;gap:6px}
-  .info-bar a{color:var(--accent);text-decoration:none}
-  .filter-bar{position:relative;z-index:10;padding:8px 16px;background:var(--bg);border-bottom:1px solid var(--border);display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch}
-  .filter-bar::-webkit-scrollbar{display:none}
-  .filter-chip{flex-shrink:0;font-size:11px;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);cursor:pointer;transition:all .15s;white-space:nowrap}
-  .filter-chip.active{border-color:var(--accent);background:rgba(0,212,255,.1);color:var(--accent)}
-  .event-list{position:relative;z-index:1;padding:12px 16px 80px;display:flex;flex-direction:column;gap:10px}
-  .event-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;transition:border-color .2s,transform .15s;cursor:pointer;position:relative;overflow:hidden}
-  .event-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px}
-  .event-card.urgency-now::before{background:var(--danger)}
-  .event-card.urgency-soon::before{background:var(--warn)}
-  .event-card.urgency-later::before{background:var(--accent)}
-  .event-card.urgency-ended::before{background:var(--text-muted)}
-  .event-card:hover{border-color:var(--accent);transform:translateY(-1px)}
-  .event-card.urgency-ended{opacity:.5}
-  .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
-  .event-name{font-size:14px;font-weight:700;line-height:1.4;flex:1}
-  .urgency-badge{flex-shrink:0;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;letter-spacing:.5px}
-  .urgency-badge.now{background:rgba(255,68,68,.2);color:var(--danger);border:1px solid var(--danger)}
-  .urgency-badge.soon{background:rgba(255,187,51,.2);color:var(--warn);border:1px solid var(--warn)}
-  .urgency-badge.later{background:rgba(0,212,255,.15);color:var(--accent);border:1px solid var(--accent)}
-  .urgency-badge.ended{background:var(--surface2);color:var(--text-muted);border:1px solid var(--border)}
-  .card-meta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--text-muted)}
-  .meta-accent{color:var(--accent)}.meta-warn{color:var(--warn)}.meta-danger{color:var(--danger)}
-  .venue-tag{font-size:11px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:2px 8px;color:var(--text-muted)}
-  .card-bottom{display:flex;align-items:center;justify-content:space-between}
-  .crowd-bar{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text-muted)}
-  .crowd-dots{display:flex;gap:3px}
-  .crowd-dot{width:6px;height:6px;border-radius:50%;background:var(--border)}
-  .crowd-dot.filled{background:var(--accent2)}
-  .nav-btn{font-size:11px;color:var(--accent);background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.3);border-radius:6px;padding:4px 10px;cursor:pointer;text-decoration:none;transition:background .2s}
-  .nav-btn:hover{background:rgba(0,212,255,.2)}
-  .empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;gap:12px;color:var(--text-muted);text-align:center}
-  .empty-icon{font-size:48px;opacity:.3}.empty-text{font-size:14px}.empty-hint{font-size:12px;opacity:.6;line-height:1.7}
-  .skeleton{background:linear-gradient(90deg,var(--surface) 25%,var(--surface2) 50%,var(--surface) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:6px}
-  @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
-  .skeleton-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
-  .leaflet-container{background:#0d1520}
-  .my-loc-icon{width:16px;height:16px;border-radius:50%;background:var(--accent);border:3px solid #fff;box-shadow:0 0 0 4px rgba(0,212,255,.3),0 2px 8px rgba(0,0,0,.5)}
-  .event-marker-icon{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
-  .event-marker-icon span{transform:rotate(45deg);display:block;line-height:1}
-  .leaflet-popup-content-wrapper{background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,.5)}
-  .leaflet-popup-tip{background:var(--surface2)}
-  .popup-inner{font-size:13px;line-height:1.6;min-width:180px}
-  .popup-inner strong{font-size:14px;display:block;margin-bottom:4px}
-  .popup-end{color:var(--warn);font-weight:700}.popup-dist{color:var(--accent);font-size:12px}
+:root {
+  --bg:       #080c18;
+  --surface:  #0f1623;
+  --surface2: #162030;
+  --border:   #1c2d42;
+  --accent:   #00c8f0;
+  --amber:    #f0a000;
+  --red:      #f03040;
+  --green:    #20c870;
+  --text:     #dde6f0;
+  --muted:    #506070;
+}
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-serif; min-height:100vh; }
+
+/* ── HEADER ── */
+.hdr {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 16px; background:var(--surface);
+  border-bottom:1px solid var(--border); position:sticky; top:0; z-index:200;
+}
+.hdr-logo { font-family:'Rajdhani',sans-serif; font-size:19px; font-weight:700; letter-spacing:3px; color:var(--accent); }
+.hdr-logo em { color:var(--amber); font-style:normal; }
+.hdr-right { display:flex; align-items:center; gap:10px; }
+.clock { font-family:'Rajdhani',sans-serif; font-size:15px; color:var(--accent); letter-spacing:2px; }
+.gps-pill {
+  display:flex; align-items:center; gap:5px; font-size:10px;
+  border:1px solid var(--border); border-radius:20px; padding:3px 9px; color:var(--muted);
+}
+.gps-pill.on { color:var(--green); border-color:var(--green); }
+.gps-pip { width:5px; height:5px; border-radius:50%; background:currentColor; }
+
+/* ── TAB BAR ── */
+.tabs {
+  display:flex; background:var(--surface); border-bottom:1px solid var(--border);
+  position:sticky; top:49px; z-index:190;
+}
+.tab {
+  flex:1; padding:11px 0; text-align:center; font-size:12px; font-weight:700;
+  color:var(--muted); cursor:pointer; border-bottom:2px solid transparent;
+  transition:color .15s, border-color .15s; letter-spacing:.5px;
+}
+.tab.active { color:var(--accent); border-color:var(--accent); }
+
+/* ── MAP ── */
+#map { width:100%; height:240px; }
+.leaflet-container { background:#08111e; }
+
+/* ── FILTER BAR ── */
+.filter-bar {
+  display:flex; gap:6px; padding:8px 14px; overflow-x:auto;
+  background:var(--bg); border-bottom:1px solid var(--border);
+}
+.filter-bar::-webkit-scrollbar { display:none; }
+.chip {
+  flex-shrink:0; font-size:11px; padding:4px 12px; border-radius:20px;
+  border:1px solid var(--border); color:var(--muted); background:var(--surface);
+  cursor:pointer; white-space:nowrap; transition:all .15s;
+}
+.chip.on { border-color:var(--accent); color:var(--accent); background:rgba(0,200,240,.08); }
+
+/* ── EVENT LIST ── */
+.evt-list { padding:10px 14px 90px; display:flex; flex-direction:column; gap:9px; }
+
+.evt-card {
+  background:var(--surface); border:1px solid var(--border); border-radius:11px;
+  padding:13px 14px; display:flex; flex-direction:column; gap:7px;
+  cursor:pointer; position:relative; overflow:hidden; transition:border-color .15s, transform .1s;
+}
+.evt-card::before {
+  content:''; position:absolute; left:0; top:0; bottom:0; width:3px;
+}
+.evt-card.u-now::before   { background:var(--red); }
+.evt-card.u-soon::before  { background:var(--amber); }
+.evt-card.u-later::before { background:var(--accent); }
+.evt-card.u-ended::before { background:var(--muted); }
+.evt-card.u-ended { opacity:.45; }
+.evt-card:active { transform:scale(.99); }
+
+.evt-top { display:flex; align-items:flex-start; justify-content:space-between; gap:8px; }
+.evt-name { font-size:13px; font-weight:700; line-height:1.4; flex:1; }
+.badge {
+  flex-shrink:0; font-size:10px; font-weight:700; padding:2px 8px;
+  border-radius:20px; letter-spacing:.5px;
+}
+.badge.now  { background:rgba(240,48,64,.18); color:var(--red);   border:1px solid var(--red);   }
+.badge.soon { background:rgba(240,160,0,.18);  color:var(--amber); border:1px solid var(--amber); }
+.badge.later{ background:rgba(0,200,240,.13);  color:var(--accent);border:1px solid var(--accent);}
+.badge.ended{ background:var(--surface2); color:var(--muted); border:1px solid var(--border); }
+
+.evt-meta { display:flex; flex-wrap:wrap; gap:6px 12px; font-size:11px; color:var(--muted); }
+.evt-meta .hi   { color:var(--text); }
+.evt-meta .acc  { color:var(--accent); font-weight:700; }
+.evt-meta .warn { color:var(--amber); font-weight:700; }
+.evt-meta .dngr { color:var(--red);   font-weight:700; }
+
+.evt-foot { display:flex; align-items:center; justify-content:space-between; }
+.scale-bar { display:flex; gap:3px; align-items:center; }
+.scale-pip { width:7px; height:7px; border-radius:2px; background:var(--border); }
+.scale-pip.on { background:var(--amber); }
+.scale-lbl { font-size:10px; color:var(--muted); margin-left:5px; }
+.detail-btn {
+  font-size:11px; color:var(--accent); border:1px solid rgba(0,200,240,.3);
+  background:rgba(0,200,240,.08); border-radius:6px; padding:4px 10px;
+  text-decoration:none; transition:background .15s;
+}
+.detail-btn:hover { background:rgba(0,200,240,.16); }
+
+/* ── EMPTY ── */
+.empty {
+  display:flex; flex-direction:column; align-items:center;
+  padding:56px 20px; gap:10px; color:var(--muted); text-align:center;
+}
+.empty-ico { font-size:44px; opacity:.25; }
+.empty-ttl { font-size:14px; }
+.empty-sub { font-size:12px; line-height:1.7; opacity:.7; }
+
+/* ── SKELETON ── */
+.skel-card { background:var(--surface); border:1px solid var(--border); border-radius:11px; padding:13px 14px; display:flex; flex-direction:column; gap:9px; }
+.skel { border-radius:5px; background:linear-gradient(90deg,var(--surface) 25%,var(--surface2) 50%,var(--surface) 75%); background-size:200% 100%; animation:sh 1.4s infinite; }
+@keyframes sh { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+
+/* ── REGISTER FORM ── */
+.reg-wrap { padding:14px 16px 90px; display:flex; flex-direction:column; gap:14px; }
+
+.reg-section { background:var(--surface); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+.reg-section-hd {
+  padding:10px 14px; font-size:11px; font-weight:700; letter-spacing:1.5px;
+  color:var(--muted); border-bottom:1px solid var(--border); text-transform:uppercase;
+}
+.reg-fields { padding:12px 14px; display:flex; flex-direction:column; gap:10px; }
+
+.fld { display:flex; flex-direction:column; gap:5px; }
+.fld label { font-size:11px; color:var(--muted); font-weight:700; letter-spacing:.5px; }
+.fld input, .fld select, .fld textarea {
+  background:var(--surface2); border:1px solid var(--border); border-radius:8px;
+  padding:10px 12px; color:var(--text); font-family:'Noto Sans JP',sans-serif;
+  font-size:13px; outline:none; width:100%;
+  transition:border-color .15s;
+}
+.fld input:focus, .fld select:focus, .fld textarea:focus { border-color:var(--accent); }
+.fld textarea { resize:none; height:60px; }
+.fld-row { display:flex; gap:10px; }
+.fld-row .fld { flex:1; }
+
+.scale-select { display:flex; gap:6px; }
+.scale-opt {
+  flex:1; padding:8px 4px; text-align:center; font-size:11px; border-radius:8px;
+  border:1px solid var(--border); color:var(--muted); cursor:pointer; transition:all .15s;
+  background:var(--surface2); line-height:1.4;
+}
+.scale-opt.on { border-color:var(--amber); color:var(--amber); background:rgba(240,160,0,.1); }
+
+.geo-row { display:flex; gap:8px; align-items:flex-end; }
+.geo-row .fld { flex:1; }
+.geo-btn {
+  flex-shrink:0; padding:10px 12px; background:var(--surface2); border:1px solid var(--border);
+  border-radius:8px; color:var(--accent); font-size:12px; cursor:pointer;
+  white-space:nowrap; transition:background .15s;
+}
+.geo-btn:hover { background:rgba(0,200,240,.1); }
+
+.reg-list { padding:8px 14px 12px; display:flex; flex-direction:column; gap:6px; max-height:240px; overflow-y:auto; }
+.reg-item {
+  display:flex; align-items:center; gap:8px; padding:8px 10px;
+  background:var(--surface2); border-radius:8px; font-size:12px;
+}
+.reg-item-name { flex:1; font-weight:700; }
+.reg-item-time { color:var(--amber); font-family:'Rajdhani',sans-serif; font-size:13px; }
+.reg-del { color:var(--red); background:none; border:none; font-size:16px; cursor:pointer; padding:0 2px; }
+
+/* ── ACTION BUTTONS ── */
+.action-bar {
+  position:fixed; bottom:0; left:0; right:0; z-index:300;
+  padding:12px 16px 20px; background:linear-gradient(transparent,var(--bg) 35%);
+  display:flex; gap:10px;
+}
+.btn-primary {
+  flex:1; display:flex; align-items:center; justify-content:center; gap:7px;
+  background:linear-gradient(135deg,#005fa3,#00c8f0); border:none; border-radius:11px;
+  padding:13px; color:#fff; font-family:'Noto Sans JP',sans-serif; font-size:14px;
+  font-weight:700; cursor:pointer; transition:opacity .15s, transform .1s;
+}
+.btn-primary:active { transform:scale(.98); opacity:.9; }
+.btn-primary:disabled { background:var(--border); cursor:not-allowed; transform:none; }
+.btn-primary.spin .btn-ico { animation:spin 1s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
+.btn-secondary {
+  padding:13px 16px; background:var(--surface); border:1px solid var(--border);
+  border-radius:11px; color:var(--text); font-size:13px; cursor:pointer;
+  font-family:'Noto Sans JP',sans-serif; transition:border-color .15s;
+}
+.btn-secondary:hover { border-color:var(--accent); }
+
+/* ── STATUS ── */
+.status-bar {
+  padding:7px 16px; font-size:11px; color:var(--muted);
+  background:var(--bg); border-bottom:1px solid var(--border); min-height:30px;
+  display:flex; align-items:center; gap:6px;
+}
+.status-bar.loading { color:var(--accent); }
+.status-bar.ok  { color:var(--green); }
+.status-bar.err { color:var(--red); }
+
+/* ── LEAFLET OVERRIDES ── */
+.my-dot { width:14px; height:14px; border-radius:50%; background:var(--accent); border:3px solid #fff; box-shadow:0 0 0 4px rgba(0,200,240,.25); }
+.ev-pin { width:28px; height:28px; border-radius:50% 50% 50% 0; transform:rotate(-45deg); display:flex; align-items:center; justify-content:center; border:2px solid rgba(255,255,255,.8); font-size:12px; box-shadow:0 2px 8px rgba(0,0,0,.5); }
+.ev-pin span { transform:rotate(45deg); display:block; }
+.leaflet-popup-content-wrapper { background:var(--surface2); border:1px solid var(--border); color:var(--text); border-radius:10px; box-shadow:0 4px 20px rgba(0,0,0,.6); }
+.leaflet-popup-tip { background:var(--surface2); }
+.pop { font-size:12px; line-height:1.7; min-width:160px; }
+.pop strong { font-size:13px; display:block; }
+.pop .pt { color:var(--amber); font-weight:700; }
+.pop .pd { color:var(--accent); font-size:11px; }
 </style>
 </head>
 <body>
 
-<header class="header">
-  <div class="header-left">
-    <div class="pulse-dot"></div>
-    <div class="logo">Event<span>Radar</span></div>
-  </div>
-  <div class="header-right">
-    <div class="gps-badge" id="gpsBadge"><div class="gps-dot"></div><span id="gpsLabel">GPS待機中</span></div>
-    <div class="now-time" id="nowTime"></div>
+<header class="hdr">
+  <div class="hdr-logo">EVENT<em>RADAR</em></div>
+  <div class="hdr-right">
+    <div class="gps-pill" id="gpsPill"><div class="gps-pip"></div><span id="gpsLbl">--</span></div>
+    <div class="clock" id="clock">--:--</div>
   </div>
 </header>
 
-<div id="map"></div>
-
-<div class="scan-area">
-  <select class="range-select" id="rangeSelect">
-    <option value="5">5km</option>
-    <option value="10" selected>10km</option>
-    <option value="20">20km</option>
-    <option value="50">50km</option>
-  </select>
-  <button class="btn-scan" id="scanBtn" onclick="startScan()">
-    <span class="scan-icon">⚡</span>
-    <span id="scanBtnText">イベントをスキャン</span>
-  </button>
+<div class="tabs">
+  <div class="tab active" id="tabRadar" onclick="switchTab('radar')">📡 レーダー</div>
+  <div class="tab" id="tabReg"   onclick="switchTab('reg')">＋ イベント登録</div>
 </div>
 
-<div class="status-bar" id="statusBar">準備完了 — スキャンボタンで周辺イベントを検索</div>
-
-<div class="info-bar" id="infoBar" style="display:none">
-  📡 データ: <span id="fetchedAt">-</span> 取得 &nbsp;|&nbsp; Connpass (東京・神奈川・埼玉・千葉) &nbsp;|&nbsp; <a href="https://github.com/odmk0791/taxi-radar/actions" target="_blank">Actions状況</a>
+<!-- ═══════════ RADAR TAB ═══════════ -->
+<div id="viewRadar">
+  <div id="map"></div>
+  <div class="status-bar" id="statusBar">スキャンボタンで周辺のイベントを確認</div>
+  <div class="filter-bar" id="filterBar" style="display:none">
+    <div class="chip on"  data-f="all"   onclick="setFilter('all')">すべて</div>
+    <div class="chip"     data-f="now"   onclick="setFilter('now')">🔴 30分以内</div>
+    <div class="chip"     data-f="soon"  onclick="setFilter('soon')">🟡 1時間以内</div>
+    <div class="chip"     data-f="later" onclick="setFilter('later')">🔵 開催中</div>
+    <div class="chip"     data-f="ended" onclick="setFilter('ended')">⚫ 終了済み</div>
+  </div>
+  <div id="evtList">
+    <div class="empty">
+      <div class="empty-ico">📡</div>
+      <div class="empty-ttl">スキャン待機中</div>
+      <div class="empty-sub">下のボタンで現在地周辺の<br>登録イベントを表示します</div>
+    </div>
+  </div>
+  <div class="action-bar">
+    <select id="rangeSelect" class="btn-secondary" style="padding:13px 10px; font-size:13px;">
+      <option value="5">5km</option>
+      <option value="10" selected>10km</option>
+      <option value="20">20km</option>
+      <option value="50">全件</option>
+    </select>
+    <button class="btn-primary" id="scanBtn" onclick="startScan()">
+      <span class="btn-ico">⚡</span>
+      <span id="scanTxt">スキャン</span>
+    </button>
+  </div>
 </div>
 
-<div class="filter-bar" id="filterBar" style="display:none">
-  <div class="filter-chip active" data-filter="all" onclick="setFilter('all')">すべて</div>
-  <div class="filter-chip" data-filter="now" onclick="setFilter('now')">🔴 30分以内</div>
-  <div class="filter-chip" data-filter="soon" onclick="setFilter('soon')">🟡 1時間以内</div>
-  <div class="filter-chip" data-filter="later" onclick="setFilter('later')">🔵 開催中</div>
-  <div class="filter-chip" data-filter="ended" onclick="setFilter('ended')">⚫ 終了済み</div>
-</div>
+<!-- ═══════════ REGISTER TAB ═══════════ -->
+<div id="viewReg" style="display:none">
+  <div class="reg-wrap">
 
-<div id="eventContainer">
-  <div class="empty-state">
-    <div class="empty-icon">📡</div>
-    <div class="empty-text">スキャン待機中</div>
-    <div class="empty-hint">上のボタンを押して<br>周辺のイベント終了時間を取得</div>
+    <div class="reg-section">
+      <div class="reg-section-hd">イベント情報</div>
+      <div class="reg-fields">
+        <div class="fld">
+          <label>イベント名 *</label>
+          <input type="text" id="fName" placeholder="例：武道館ライブ / 神宮球場ナイター">
+        </div>
+        <div class="fld">
+          <label>会場名 *</label>
+          <input type="text" id="fVenue" placeholder="例：日本武道館 / 明治神宮野球場">
+        </div>
+        <div class="fld">
+          <label>住所（区・町まで）*</label>
+          <div class="geo-row">
+            <div class="fld" style="margin:0">
+              <input type="text" id="fAddr" placeholder="例：千代田区北の丸公園2-3">
+            </div>
+            <button class="geo-btn" onclick="geocodeAddr()">📍 座標取得</button>
+          </div>
+        </div>
+        <div class="fld-row">
+          <div class="fld">
+            <label>緯度</label>
+            <input type="number" id="fLat" placeholder="35.6938" step="0.0001">
+          </div>
+          <div class="fld">
+            <label>経度</label>
+            <input type="number" id="fLng" placeholder="139.7498" step="0.0001">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-section">
+      <div class="reg-section-hd">日時</div>
+      <div class="reg-fields">
+        <div class="fld">
+          <label>開催日</label>
+          <input type="date" id="fDate">
+        </div>
+        <div class="fld-row">
+          <div class="fld">
+            <label>開始時刻</label>
+            <input type="time" id="fStart">
+          </div>
+          <div class="fld">
+            <label>終了時刻 *</label>
+            <input type="time" id="fEnd">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-section">
+      <div class="reg-section-hd">来場規模（予想）</div>
+      <div class="reg-fields">
+        <div class="scale-select" id="scaleSelect">
+          <div class="scale-opt on" data-v="1" onclick="setScale(1)">〜500<br>小</div>
+          <div class="scale-opt"   data-v="2" onclick="setScale(2)">〜2000<br>中</div>
+          <div class="scale-opt"   data-v="3" onclick="setScale(3)">〜1万<br>大</div>
+          <div class="scale-opt"   data-v="4" onclick="setScale(4)">1万超<br>特大</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reg-section">
+      <div class="reg-section-hd">登録済みイベント（本日）</div>
+      <div id="regList">
+        <div class="empty" style="padding:24px">
+          <div class="empty-sub">まだ登録がありません</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="action-bar">
+    <button class="btn-secondary" onclick="clearForm()">クリア</button>
+    <button class="btn-primary" id="regBtn" onclick="registerEvent()">
+      <span>＋ 登録する</span>
+    </button>
   </div>
 </div>
 
 <script>
-// データソース: GitHub Actionsが毎時更新するJSON
-const DATA_URL = 'https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/connpass_events.json';
-
+// ═══ STATE ═══
 let userLat=null, userLng=null, map=null, userMarker=null;
-let eventMarkers=[], allEvents=[], currentFilter='all';
+let evMarkers=[], allEvents=[], filtered=[], curFilter='all';
+let scaleVal=1;
+const STORAGE_KEY='event_radar_events';
 
-function updateClock(){
-  const n=new Date(), h=String(n.getHours()).padStart(2,'0'), m=String(n.getMinutes()).padStart(2,'0');
-  document.getElementById('nowTime').textContent=h+':'+m;
+// ─ Google Form placeholder（後で差し込む）─
+const FORM_ACTION = 'FORM_ACTION_PLACEHOLDER';
+const FIELDS = {
+  name:    'FIELD_NAME',
+  venue:   'FIELD_VENUE',
+  address: 'FIELD_ADDR',
+  lat:     'FIELD_LAT',
+  lng:     'FIELD_LNG',
+  date:    'FIELD_DATE',
+  start:   'FIELD_START',
+  end:     'FIELD_END',
+  scale:   'FIELD_SCALE',
+};
+
+// ═══ CLOCK ═══
+function tick(){
+  const n=new Date();
+  document.getElementById('clock').textContent=
+    String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0');
 }
-setInterval(updateClock,1000); updateClock();
+setInterval(tick,1000); tick();
 
+// ═══ TAB ═══
+function switchTab(t){
+  document.getElementById('viewRadar').style.display = t==='radar'?'':'none';
+  document.getElementById('viewReg').style.display   = t==='reg'?'':'none';
+  document.getElementById('tabRadar').classList.toggle('active', t==='radar');
+  document.getElementById('tabReg').classList.toggle('active',   t==='reg');
+  if(t==='reg') renderRegList();
+  if(t==='radar' && map) setTimeout(()=>map.invalidateSize(),50);
+}
+
+// ═══ MAP ═══
 function initMap(lat,lng){
-  if(map){map.setView([lat,lng],12);return;}
+  if(map){ map.setView([lat,lng],12); return; }
   map=L.map('map',{zoomControl:true,attributionControl:false}).setView([lat,lng],12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(map);
 }
-function setUserMarker(lat,lng){
-  const icon=L.divIcon({html:'<div class="my-loc-icon"></div>',className:'',iconSize:[16,16],iconAnchor:[8,8]});
+function setMyMarker(lat,lng){
+  const ic=L.divIcon({html:'<div class="my-dot"></div>',className:'',iconSize:[14,14],iconAnchor:[7,7]});
   if(userMarker) userMarker.setLatLng([lat,lng]);
-  else userMarker=L.marker([lat,lng],{icon}).addTo(map).bindPopup('<div class="popup-inner"><strong>現在地</strong></div>');
+  else userMarker=L.marker([lat,lng],{icon:ic}).addTo(map).bindPopup('<div class="pop"><strong>現在地</strong></div>');
 }
+
+// ═══ GPS ═══
 function getGPS(){
-  return new Promise((resolve,reject)=>{
-    if(!navigator.geolocation){reject('GPS未対応');return;}
+  return new Promise((res,rej)=>{
+    if(!navigator.geolocation){ rej('GPS非対応'); return; }
     navigator.geolocation.getCurrentPosition(
-      p=>resolve({lat:p.coords.latitude,lng:p.coords.longitude}),
-      e=>reject(e.message),{timeout:10000,enableHighAccuracy:true}
+      p=>res({lat:p.coords.latitude,lng:p.coords.longitude}),
+      e=>rej(e.message), {timeout:10000,enableHighAccuracy:true}
     );
   });
 }
-function calcDist(lat1,lng1,lat2,lng2){
-  const R=6371,dLat=(lat2-lat1)*Math.PI/180,dLng=(lng2-lng1)*Math.PI/180;
-  const a=Math.sin(dLat/2)**2+Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
+
+// ═══ UTILS ═══
+function dist(la1,lo1,la2,lo2){
+  const R=6371, dL=(la2-la1)*Math.PI/180, dO=(lo2-lo1)*Math.PI/180;
+  const a=Math.sin(dL/2)**2+Math.cos(la1*Math.PI/180)*Math.cos(la2*Math.PI/180)*Math.sin(dO/2)**2;
   return R*2*Math.asin(Math.sqrt(a));
 }
-function getUrgency(endStr){
-  if(!endStr) return 'later';
-  const diff=(new Date(endStr)-new Date())/60000;
-  if(diff<0) return 'ended';
-  if(diff<=30) return 'now';
-  if(diff<=60) return 'soon';
-  return 'later';
+function urgency(endISO){
+  if(!endISO) return 'later';
+  const m=(new Date(endISO)-Date.now())/60000;
+  if(m<0) return 'ended'; if(m<=30) return 'now'; if(m<=60) return 'soon'; return 'later';
 }
-function timeUntilEnd(endStr){
-  if(!endStr) return '';
-  const diff=Math.round((new Date(endStr)-new Date())/60000);
-  if(diff<0) return Math.abs(diff)+'分前に終了';
-  if(diff<60) return 'あと'+diff+'分';
-  return 'あと'+Math.floor(diff/60)+'時間'+(diff%60 ? diff%60+'分' : '');
+function timeLeft(endISO){
+  if(!endISO) return '';
+  const m=Math.round((new Date(endISO)-Date.now())/60000);
+  if(m<0) return Math.abs(m)+'分前終了';
+  if(m<60) return 'あと'+m+'分';
+  return 'あと'+Math.floor(m/60)+'時間'+(m%60?m%60+'分':'');
 }
-function fmtTime(isoStr){
-  if(!isoStr) return '不明';
-  const d=new Date(isoStr);
-  return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
-}
-function crowdLevel(n){
-  if(!n) return 1;
-  if(n<=50) return 1; if(n<=200) return 2; if(n<=500) return 3; if(n<=2000) return 4; return 5;
-}
-const crowdLabel=['','〜50人','〜200人','〜500人','〜2000人','2000人超'];
+function fmtT(iso){ if(!iso) return '--'; const d=new Date(iso); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
+function setStatus(msg,t){ const b=document.getElementById('statusBar'); b.textContent=msg; b.className='status-bar'+(t?' '+t:''); }
 
-function addEventMarkers(events){
-  eventMarkers.forEach(m=>map.removeLayer(m)); eventMarkers=[];
-  events.forEach((ev,i)=>{
+const scaleLabels=['','〜500人','〜2000人','〜1万人','1万人超'];
+
+// ═══ MARKERS ═══
+function drawMarkers(evs){
+  evMarkers.forEach(m=>map.removeLayer(m)); evMarkers=[];
+  evs.forEach((ev,i)=>{
     if(!ev.lat||!ev.lng) return;
-    const colors={now:'#ff4444',soon:'#ffbb33',later:'#00d4ff',ended:'#555'};
-    const color=colors[ev._urgency]||'#00d4ff';
-    const icon=L.divIcon({
-      html:'<div class="event-marker-icon" style="background:'+color+'"><span>📍</span></div>',
-      className:'',iconSize:[32,32],iconAnchor:[16,32],popupAnchor:[0,-32]
+    const col={now:'#f03040',soon:'#f0a000',later:'#00c8f0',ended:'#404050'}[ev._u]||'#00c8f0';
+    const ic=L.divIcon({
+      html:'<div class="ev-pin" style="background:'+col+'"><span>📍</span></div>',
+      className:'',iconSize:[28,28],iconAnchor:[14,28],popupAnchor:[0,-28]
     });
-    const m=L.marker([ev.lat,ev.lng],{icon}).addTo(map).bindPopup(
-      '<div class="popup-inner"><strong>'+ev.title+'</strong><div>'+(ev.place||'')+'</div><div class="popup-end">終了: '+fmtTime(ev.ended_at)+' ('+timeUntilEnd(ev.ended_at)+')</div><div class="popup-dist">📍 '+(ev._dist?ev._dist.toFixed(1)+'km':'')+'</div></div>'
+    const m=L.marker([ev.lat,ev.lng],{icon:ic}).addTo(map).bindPopup(
+      '<div class="pop"><strong>'+ev.name+'</strong>'
+      +'<div>'+ev.venue+'</div>'
+      +'<div class="pt">終了 '+fmtT(ev.end_iso)+' ('+timeLeft(ev.end_iso)+')</div>'
+      +'<div class="pd">📍 '+(ev._dist?ev._dist.toFixed(1)+'km':'')+'</div></div>'
     );
-    eventMarkers.push(m);
+    evMarkers.push(m);
   });
 }
 
+// ═══ FILTER ═══
 function setFilter(f){
-  currentFilter=f;
-  document.querySelectorAll('.filter-chip').forEach(c=>c.classList.toggle('active',c.dataset.filter===f));
-  renderEvents(allEvents);
+  curFilter=f;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.f===f));
+  renderList();
 }
 
-function renderEvents(events){
-  const container=document.getElementById('eventContainer');
-  const filtered=currentFilter==='all'?events:events.filter(e=>e._urgency===currentFilter);
-  if(filtered.length===0){
-    container.innerHTML='<div class="empty-state"><div class="empty-icon">🔍</div><div class="empty-text">該当イベントなし</div></div>';
+// ═══ RENDER EVENT LIST ═══
+function renderList(){
+  const list=document.getElementById('evtList');
+  const evs=curFilter==='all'?allEvents:allEvents.filter(e=>e._u===curFilter);
+  if(!evs.length){
+    list.innerHTML='<div class="empty"><div class="empty-ico">🔍</div><div class="empty-ttl">該当なし</div></div>';
     return;
   }
-  const urgencyLabels={now:'まもなく終了',soon:'1時間以内',later:'開催中',ended:'終了済み'};
-  let html='<div class="event-list">';
-  filtered.forEach((ev)=>{
-    const u=ev._urgency, badge=urgencyLabels[u]||'', dist=ev._dist?ev._dist.toFixed(1)+'km':'不明';
-    const timeLeft=timeUntilEnd(ev.ended_at), endTime=fmtTime(ev.ended_at);
-    const cl=crowdLevel(ev.accepted);
-    const dots=Array(5).fill(0).map((_,j)=>'<div class="crowd-dot'+(j<cl?' filled':'')+'"></div>').join('');
-    const timeColor=u==='now'?'meta-danger':u==='soon'?'meta-warn':'meta-accent';
+  const ul={now:'まもなく終了',soon:'1時間以内',later:'開催中',ended:'終了済み'};
+  let h='<div class="evt-list">';
+  evs.forEach(ev=>{
+    const u=ev._u, tc=u==='now'?'dngr':u==='soon'?'warn':'acc';
     const idx=allEvents.indexOf(ev);
-    html+='<div class="event-card urgency-'+u+'" onclick="focusEvent('+idx+')">'
-      +'<div class="card-top"><div class="event-name">'+ev.title+'</div><div class="urgency-badge '+u+'">'+badge+'</div></div>'
-      +'<div class="card-meta">'
-      +'<span>🏛 '+(ev.place||'会場不明')+'</span>'
-      +'<span class="'+timeColor+'">⏰ <strong>'+endTime+'</strong>終了'+(timeLeft?' ('+timeLeft+')':'')+'</span>'
-      +'<span>📍 '+dist+'</span>'
-      +(ev.accepted?'<span class="venue-tag">参加'+ev.accepted+'人</span>':'')
+    const sc=parseInt(ev.scale)||1;
+    const pips=Array(4).fill(0).map((_,j)=>'<div class="scale-pip'+(j<sc?' on':'')+'"></div>').join('');
+    h+='<div class="evt-card u-'+u+'" onclick="focusEv('+idx+')">'
+      +'<div class="evt-top"><div class="evt-name">'+ev.name+'</div><div class="badge '+u+'">'+ul[u]+'</div></div>'
+      +'<div class="evt-meta">'
+      +'<span class="hi">🏛 '+ev.venue+'</span>'
+      +'<span class="'+tc+'">⏰ <strong>'+fmtT(ev.end_iso)+'</strong>終了'+(timeLeft(ev.end_iso)?' ('+timeLeft(ev.end_iso)+')':'')+'</span>'
+      +(ev._dist<900?'<span>📍 '+ev._dist.toFixed(1)+'km</span>':'')
       +'</div>'
-      +'<div class="card-bottom">'
-      +'<div class="crowd-bar"><div class="crowd-dots">'+dots+'</div><span>'+(crowdLabel[cl]||'')+'</span></div>'
-      +'<a class="nav-btn" href="'+(ev.url||'#')+'" target="_blank" onclick="event.stopPropagation()">詳細 →</a>'
+      +'<div class="evt-foot">'
+      +'<div class="scale-bar">'+pips+'<span class="scale-lbl">'+scaleLabels[sc]+'</span></div>'
+      +'<button class="detail-btn" onclick="event.stopPropagation();focusEv('+idx+')">地図で見る</button>'
       +'</div></div>';
   });
-  html+='</div>';
-  container.innerHTML=html;
+  h+='</div>';
+  list.innerHTML=h;
 }
 
-function focusEvent(idx){
-  const ev=allEvents[idx];
+function focusEv(i){
+  const ev=allEvents[i];
   if(!ev||!ev.lat||!ev.lng||!map) return;
-  map.setView([ev.lat,ev.lng],14);
-  eventMarkers[idx]?.openPopup();
+  map.setView([ev.lat,ev.lng],15);
+  evMarkers[i]?.openPopup();
+  switchTab('radar');
+  document.getElementById('viewRadar').scrollIntoView({behavior:'smooth'});
 }
 
-function showSkeletons(){
-  let html='<div class="event-list">';
-  for(let i=0;i<5;i++) html+='<div class="skeleton-card"><div class="skeleton" style="height:18px;width:70%"></div><div class="skeleton" style="height:13px;width:50%"></div><div class="skeleton" style="height:13px;width:40%"></div></div>';
-  html+='</div>';
-  document.getElementById('eventContainer').innerHTML=html;
-}
-
-function setStatus(msg,type){
-  const bar=document.getElementById('statusBar');
-  bar.textContent=msg; bar.className='status-bar'+(type?' '+type:'');
-}
-
+// ═══ SCAN ═══
 async function startScan(){
   const btn=document.getElementById('scanBtn');
-  btn.disabled=true; btn.classList.add('scanning');
-  btn.querySelector('.scan-icon').textContent='🔄';
-  document.getElementById('scanBtnText').textContent='スキャン中...';
+  btn.disabled=true; btn.classList.add('spin');
+  document.getElementById('scanTxt').textContent='取得中...';
 
-  // GPS取得
   setStatus('📡 現在地を取得中...','loading');
   try{
-    const pos=await getGPS();
-    userLat=pos.lat; userLng=pos.lng;
-    document.getElementById('gpsBadge').className='gps-badge active';
-    document.getElementById('gpsLabel').textContent=userLat.toFixed(4)+', '+userLng.toFixed(4);
-    initMap(userLat,userLng); setUserMarker(userLat,userLng);
-    setStatus('✅ 現在地取得 — データを読み込み中...','loading');
+    const p=await getGPS();
+    userLat=p.lat; userLng=p.lng;
+    const pill=document.getElementById('gpsPill');
+    pill.className='gps-pill on';
+    document.getElementById('gpsLbl').textContent=userLat.toFixed(3)+','+userLng.toFixed(3);
+    initMap(userLat,userLng); setMyMarker(userLat,userLng);
   }catch(e){
     userLat=35.6812; userLng=139.7671;
-    initMap(userLat,userLng); setUserMarker(userLat,userLng);
-    setStatus('⚠ GPS取得失敗（東京中心で表示）','loading');
+    initMap(userLat,userLng); setMyMarker(userLat,userLng);
+    setStatus('⚠ GPS失敗（東京中心で表示）');
   }
 
-  showSkeletons();
+  // localStorageからイベントを読み込み
+  const range=parseInt(document.getElementById('rangeSelect').value);
+  const stored=loadEvents();
+  const today=new Date().toISOString().slice(0,10);
 
-  // GitHub Actionsが毎時更新するJSONをfetch
-  try{
-    setStatus('📂 イベントデータを読み込み中...','loading');
-    const r=await fetch(DATA_URL+'?t='+Date.now(), {signal:AbortSignal.timeout(10000)});
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    const data=await r.json();
+  allEvents = stored
+    .filter(ev=>ev.date===today || !ev.date) // 今日のイベントのみ
+    .map(ev=>({
+      ...ev,
+      _dist: (userLat&&ev.lat&&ev.lng) ? dist(userLat,userLng,ev.lat,ev.lng) : 999,
+      _u: urgency(ev.end_iso)
+    }))
+    .filter(ev=>range>=50 || ev._dist<=range)
+    .sort((a,b)=>{
+      const o={now:0,soon:1,later:2,ended:3};
+      return (o[a._u]??2)-(o[b._u]??2) || a._dist-b._dist;
+    });
 
-    // 取得日時を表示
-    if(data.fetched_at){
-      const fa=new Date(data.fetched_at);
-      document.getElementById('fetchedAt').textContent=
-        fa.getMonth()+1+'/'+fa.getDate()+' '+String(fa.getHours()).padStart(2,'0')+':'+String(fa.getMinutes()).padStart(2,'0');
-      document.getElementById('infoBar').style.display='flex';
+  if(!allEvents.length){
+    setStatus('登録イベントなし — 「＋ イベント登録」タブで追加してください','err');
+    document.getElementById('evtList').innerHTML=
+      '<div class="empty"><div class="empty-ico">📋</div>'
+      +'<div class="empty-ttl">本日のイベントなし</div>'
+      +'<div class="empty-sub">「＋ イベント登録」タブから<br>乗務前に登録してください</div></div>';
+  } else {
+    setStatus('✅ '+allEvents.length+'件表示中','ok');
+    document.getElementById('filterBar').style.display='flex';
+    renderList();
+    drawMarkers(allEvents);
+    if(allEvents.length>0){
+      const pts=allEvents.filter(e=>e.lat&&e.lng).map(e=>[e.lat,e.lng]);
+      if(userLat) pts.push([userLat,userLng]);
+      if(pts.length>1) map.fitBounds(L.latLngBounds(pts).pad(0.2));
     }
-
-    // 今日のイベントのみフィルタ（念のため）
-    const today=new Date();
-    const todayStr=today.getFullYear()+String(today.getMonth()+1).padStart(2,'0')+String(today.getDate()).padStart(2,'0');
-
-    const range=parseInt(document.getElementById('rangeSelect').value);
-    const events=(data.events||[])
-      .filter(ev=>ev.ended_at)
-      .map(ev=>{
-        const lat=parseFloat(ev.lat)||null;
-        const lng=parseFloat(ev.lon)||null;
-        const dist=(userLat&&lat&&lng)?calcDist(userLat,userLng,lat,lng):999;
-        return Object.assign({},ev,{lat,lng,_dist:dist,_urgency:getUrgency(ev.ended_at)});
-      })
-      .filter(ev=>ev._dist<=range)
-      .sort((a,b)=>{
-        const o={now:0,soon:1,later:2,ended:3};
-        const ao=o[a._urgency]??2, bo=o[b._urgency]??2;
-        if(ao!==bo) return ao-bo;
-        return a._dist-b._dist;
-      });
-
-    allEvents=events;
-
-    if(events.length===0){
-      // データは空だがJSONは取得できた場合
-      const isPlaceholder=!data.fetched_at;
-      setStatus(isPlaceholder
-        ? '⏳ GitHub Actionsの初回実行を待機中... しばらくお待ちください'
-        : range+'km圏内に本日のイベントが見つかりませんでした','error');
-      document.getElementById('eventContainer').innerHTML=
-        '<div class="empty-state"><div class="empty-icon">'+(isPlaceholder?'⏳':'🔍')+'</div>'
-        +'<div class="empty-text">'+(isPlaceholder?'データ準備中':'イベントなし')+'</div>'
-        +'<div class="empty-hint">'+(isPlaceholder?'GitHub Actionsが毎正時にデータを更新します<br>最初の実行まで最大1時間かかります':'範囲を広げてお試しください')+'</div></div>';
-    }else{
-      setStatus('✅ '+events.length+'件取得 (Connpass / 東京近郊・本日)','success');
-      document.getElementById('filterBar').style.display='flex';
-      renderEvents(events);
-      addEventMarkers(events);
-      if(map&&events.length>0){
-        const pts=events.filter(e=>e.lat&&e.lng).map(e=>[e.lat,e.lng]);
-        if(userLat) pts.push([userLat,userLng]);
-        if(pts.length>1) map.fitBounds(L.latLngBounds(pts).pad(0.15));
-      }
-    }
-  }catch(e){
-    setStatus('❌ データ取得失敗: '+e.message,'error');
-    document.getElementById('eventContainer').innerHTML=
-      '<div class="empty-state"><div class="empty-icon">⚠️</div><div class="empty-text">エラー</div><div class="empty-hint">'+e.message+'</div></div>';
   }
 
-  btn.disabled=false; btn.classList.remove('scanning');
-  btn.querySelector('.scan-icon').textContent='⚡';
-  document.getElementById('scanBtnText').textContent='再スキャン';
+  btn.disabled=false; btn.classList.remove('spin');
+  document.getElementById('scanTxt').textContent='スキャン';
 }
 
-initMap(35.6812,139.7671);
+// ═══ LOCAL STORAGE ═══
+function loadEvents(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]'); }catch{ return []; } }
+function saveEvents(evs){ localStorage.setItem(STORAGE_KEY, JSON.stringify(evs)); }
+
+// ═══ SCALE ═══
+function setScale(v){
+  scaleVal=v;
+  document.querySelectorAll('.scale-opt').forEach(o=>o.classList.toggle('on',parseInt(o.dataset.v)===v));
+}
+
+// ═══ GEOCODE ═══
+async function geocodeAddr(){
+  const addr=document.getElementById('fAddr').value.trim();
+  if(!addr){ alert('住所を入力してください'); return; }
+  const url='https://nominatim.openstreetmap.org/search?format=json&q='+encodeURIComponent(addr+'、日本')+'&limit=1';
+  try{
+    const r=await fetch(url,{headers:{'Accept-Language':'ja'}});
+    const d=await r.json();
+    if(!d.length){ alert('座標が見つかりませんでした'); return; }
+    document.getElementById('fLat').value=parseFloat(d[0].lat).toFixed(5);
+    document.getElementById('fLng').value=parseFloat(d[0].lon).toFixed(5);
+  }catch(e){ alert('取得失敗: '+e.message); }
+}
+
+// ═══ REGISTER ═══
+function registerEvent(){
+  const name=document.getElementById('fName').value.trim();
+  const venue=document.getElementById('fVenue').value.trim();
+  const addr=document.getElementById('fAddr').value.trim();
+  const lat=parseFloat(document.getElementById('fLat').value)||null;
+  const lng=parseFloat(document.getElementById('fLng').value)||null;
+  const date=document.getElementById('fDate').value;
+  const start=document.getElementById('fStart').value;
+  const end=document.getElementById('fEnd').value;
+
+  if(!name||!venue||!end){ alert('イベント名・会場名・終了時刻は必須です'); return; }
+
+  const endISO = date && end ? date+'T'+end+':00' : null;
+  const startISO = date && start ? date+'T'+start+':00' : null;
+
+  const ev={
+    id: Date.now(),
+    name, venue, address:addr,
+    lat, lng,
+    date: date||new Date().toISOString().slice(0,10),
+    start_iso: startISO,
+    end_iso: endISO,
+    scale: scaleVal,
+  };
+
+  const evs=loadEvents();
+  evs.push(ev);
+  saveEvents(evs);
+
+  // Googleフォームにも送信（フォームID設定後に有効化）
+  if(FORM_ACTION !== 'FORM_ACTION_PLACEHOLDER'){
+    const fd=new FormData();
+    fd.append(FIELDS.name,   name);
+    fd.append(FIELDS.venue,  venue);
+    fd.append(FIELDS.address,addr);
+    fd.append(FIELDS.lat,    lat||'');
+    fd.append(FIELDS.lng,    lng||'');
+    fd.append(FIELDS.date,   date);
+    fd.append(FIELDS.start,  start);
+    fd.append(FIELDS.end,    end);
+    fd.append(FIELDS.scale,  scaleVal);
+    fetch(FORM_ACTION,{method:'POST',mode:'no-cors',body:fd}).catch(()=>{});
+  }
+
+  renderRegList();
+  clearForm();
+  alert('登録しました：'+name);
+}
+
+// ═══ REGISTER LIST ═══
+function renderRegList(){
+  const evs=loadEvents();
+  const today=new Date().toISOString().slice(0,10);
+  const todayEvs=evs.filter(e=>e.date===today||!e.date);
+  const el=document.getElementById('regList');
+  if(!todayEvs.length){
+    el.innerHTML='<div class="empty" style="padding:20px"><div class="empty-sub">まだ登録がありません</div></div>';
+    return;
+  }
+  el.innerHTML='<div class="reg-list">'+todayEvs.map(ev=>
+    '<div class="reg-item">'
+    +'<div class="reg-item-name">'+ev.name+'</div>'
+    +'<div class="reg-item-time">〜'+fmtT(ev.end_iso)+'</div>'
+    +'<button class="reg-del" onclick="deleteEv('+ev.id+')">✕</button>'
+    +'</div>'
+  ).join('')+'</div>';
+}
+
+function deleteEv(id){
+  if(!confirm('削除しますか？')) return;
+  saveEvents(loadEvents().filter(e=>e.id!==id));
+  renderRegList();
+}
+
+// ═══ FORM UTILS ═══
+function clearForm(){
+  ['fName','fVenue','fAddr','fLat','fLng','fStart','fEnd'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('fDate').value=new Date().toISOString().slice(0,10);
+  setScale(1);
+}
+
+// ═══ INIT ═══
+(function init(){
+  // デフォルト日付を今日に
+  document.getElementById('fDate').value=new Date().toISOString().slice(0,10);
+  // 地図初期化
+  initMap(35.6812,139.7671);
+  // 登録リスト表示
+  renderRegList();
+})();
 </script>
 </body>
 </html>
