@@ -1,0 +1,86 @@
+{
+  "fetched_at": "2026-06-16T01:11:02.009013+09:00",
+  "date": "20260617",
+  "source": "manual",
+  "count": 6,
+  "events": [
+    {
+      "id": "manual_20260617_01",
+      "name": "SKY-HI",
+      "venue": "日本武道館",
+      "address": "千代田区北の丸公園2-3",
+      "lat": 35.6933,
+      "lon": 139.7498,
+      "started_at": "2026-06-17T18:30:00+09:00",
+      "ended_at": "2026-06-17T21:00:00+09:00",
+      "accepted": 11000,
+      "url": "",
+      "category": "コンサート"
+    },
+    {
+      "id": "manual_20260617_02",
+      "name": "沢田研二",
+      "venue": "NHKホール",
+      "address": "渋谷区神南2-2-1",
+      "lat": 35.6678,
+      "lon": 139.694,
+      "started_at": "2026-06-17T17:00:00+09:00",
+      "ended_at": "2026-06-17T19:30:00+09:00",
+      "accepted": 3400,
+      "url": "",
+      "category": "コンサート"
+    },
+    {
+      "id": "manual_20260617_03",
+      "name": "DISH//",
+      "venue": "Kanadevia Hall（東京ドームシティ）",
+      "address": "文京区後楽1-3-61",
+      "lat": 35.7056,
+      "lon": 139.7519,
+      "started_at": "2026-06-17T18:30:00+09:00",
+      "ended_at": "2026-06-17T21:00:00+09:00",
+      "accepted": 3000,
+      "url": "",
+      "category": "コンサート"
+    },
+    {
+      "id": "manual_20260617_04",
+      "name": "原信夫とシャープス＆フラッツ BIG BAND SCOPE 2026",
+      "venue": "東京国際フォーラム ホールA",
+      "address": "千代田区丸の内3-5-1",
+      "lat": 35.6772,
+      "lon": 139.7637,
+      "started_at": "2026-06-17T18:00:00+09:00",
+      "ended_at": "2026-06-17T21:00:00+09:00",
+      "accepted": 5000,
+      "url": "",
+      "category": "コンサート"
+    },
+    {
+      "id": "manual_20260617_05",
+      "name": "the HIATUS",
+      "venue": "Zepp Haneda(TOKYO)",
+      "address": "大田区羽田空港1-1-4",
+      "lat": 35.5494,
+      "lon": 139.7872,
+      "started_at": "2026-06-17T19:00:00+09:00",
+      "ended_at": "2026-06-17T21:30:00+09:00",
+      "accepted": 3000,
+      "url": "",
+      "category": "ライブ"
+    },
+    {
+      "id": "manual_20260617_06",
+      "name": "Dragon Pony",
+      "venue": "Shibuya WWW",
+      "address": "渋谷区宇田川町13-17",
+      "lat": 35.6618,
+      "lon": 139.6979,
+      "started_at": "2026-06-17T18:30:00+09:00",
+      "ended_at": "2026-06-17T20:30:00+09:00",
+      "accepted": 700,
+      "url": "",
+      "category": "ライブ"
+    }
+  ]
+}
