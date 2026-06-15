@@ -1,39 +1,8 @@
 {
-  "fetched_at": "2026-06-16T03:22:00.562916+09:00",
+  "fetched_at": "2026-06-16T06:39:21.373580+09:00",
   "date": "20260616",
   "count": 9,
   "events": [
-    {
-      "id": 389755,
-      "title": "Kubernetes祭り #1",
-      "catch": "",
-      "description": "<h1>イベント概要</h1>\n<p>本イベントは、Kubernetesを始めとしたインフラ・SRE/DevOps支援サービス「Sreake」を提供するスリーシェイクが主催する、Kubernetesのためのイベントです。\nKubernetesを中心としたクラウドネイテイブ技術に関する情報を中心に、これらをどう活用してるのかを発信していきます！</p>\n<p>第一回目となる今回は、Kubernetesをテーマとして、各社の登壇者様に様々な事例についてお話しいただきます。</p>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>Kubernetesに関する情報や事例に興味のある方</li>\n<li>Kubernetesなどのクラウドネイテイブ技術を活用したSRE/Platform Engineeringに興味のある方</li>\n<li>SRE やインフラエンジニアの技術情報をキャッチアップしたい方</li>\n</ul>\n<h1>配信</h1>\n<p>当日は YouTube Live で配信を行います。URLは参加申し込み後の「参加者への情報」に記載予定です。</p>\n<h1>会場案内</h1>\n<p>株式会社ログラス オフィス<br>\n〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階<br>\n最寄り駅：</p>\n<ul>\n<li>都営地下鉄浅草線・京浜急行電鉄　泉岳寺駅 徒歩1分</li>\n<li>JR山手線・京浜東北線　高輪ゲートウェイ駅 徒歩7分</li>\n<li>東京メトロ南北線・都営地下鉄三田線　白金高輪駅 徒歩12分</li>\n</ul>\n<p>※当日は直接会場の9Fまでお越しください。</p>\n<h2>受付</h2>\n<p>イベントの受付時間は 19:00 から 19:30 までとなります。<br>\n会場にお越しいただきましたら、受付で参加用 QR コードまたは Connpass ID をご提示ください。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:30-19:35</td>\n<td>オープニング</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:35-19:50</td>\n<td>セッション1: Platform Engineering の土台になぜ Kubernetes を選ぶのか</td>\n<td>株式会社スリーシェイク <a href=\"https://x.com/r4ynode\" rel=\"nofollow\">Ray</a></td>\n</tr>\n<tr>\n<td>19:50-20:05</td>\n<td>セッション2: ツールではなく軸で選べ — 流行りに溺れないPlatform Engineeringの育て方</td>\n<td>株式会社サイバーエージェント <a href=\"https://x.com/ishikawa_kumo\" rel=\"nofollow\">@ishikawa_kumo</a></td>\n</tr>\n<tr>\n<td>20:05-20:20</td>\n<td>セッション3: ACK + kro ではじめる「使いやすいPlatform」の作りかた</td>\n<td>株式会社ログラス <a href=\"https://x.com/melpo_mel\" rel=\"nofollow\">@mekka</a></td>\n</tr>\n<tr>\n<td>20:20-20:35</td>\n<td>セッション4: kubernetesのモニタリングパターンと実践</td>\n<td>ソフトバンク株式会社 <a href=\"https://x.com/yoshitake945\" rel=\"nofollow\">浅野 剛丈</a></td>\n</tr>\n<tr>\n<td>20:35-20:50</td>\n<td>セッション5: TBD</td>\n<td>株式会社ギフティ <a href=\"https://x.com/jmakingng\" rel=\"nofollow\">じぇまき</a></td>\n</tr>\n<tr>\n<td>20:50-21:05</td>\n<td>セッション6: Kubernetesにおける学習基盤とLLMOpsの概要</td>\n<td>デル・テクノロジーズ株式会社 <a href=\"https://x.com/uryo_0213\" rel=\"nofollow\">@ry</a></td>\n</tr>\n<tr>\n<td>21:05-21:10</td>\n<td>会場提供スポンサー様セッション</td>\n<td>-</td>\n</tr>\n<tr>\n<td>21:10-21:15</td>\n<td>エンディング</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<h2>登壇内容</h2>\n<h3>セッション1: Platform Engineering の土台になぜ Kubernetes を選ぶのか (株式会社スリーシェイク <a href=\"https://x.com/r4ynode\" rel=\"nofollow\">Ray</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1937451721149808646/pZY2t_62_400x400.jpg\" width=\"170\"><br></p>\n<p>Platform Engineering の文脈で Kubernetes が選ばれる理由を、SaaS との使い分けや他のコンテナ基盤との比較を通じて整理します。PE に関する書籍や事例の多くが K8s ベースで語られている背景には、選択肢の中での K8s の構造的な位置づけがあります。PE が解こうとしている課題と K8s が PE 基盤として持つ特性を結びつけながら、PE の土台選定の判断軸を考えます。</p>\n<h3>セッション2: ツールではなく軸で選べ — 流行りに溺れないPlatform Engineeringの育て方 (株式会社サイバーエージェント <a href=\"https://x.com/ishikawa_kumo\" rel=\"nofollow\">@ishikawa_kumo</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1929834993695838208/FDG-g-Yh_400x400.jpg\" width=\"170\"><br></p>\n<p>ツールの流行に疲れ、増え続ける認知負荷に苦しむ――そんなPlatform Engineeringの失敗談はよく語られます。では、生き残るPlatformは何が違うのでしょうか。私たちは6人で40サービスを支えるPlatformを6年間運用してきました。責任者や体制が変わっても継続できた理由は、「認知負荷を下げる」という軸で意思決定してきたことです。Backstageを見送り、Argo Workflowsを導入した実例を交えながら、軸の決め方、ユーザの声の拾い方、導入・撤退判断のプロセスを紹介します。</p>\n<h3>セッション3: ACK + kro ではじめる「使いやすいPlatform」の作りかた (株式会社ログラス <a href=\"https://x.com/melpo_mel\" rel=\"nofollow\">@mekka</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1194804418882883585/heYxBm3O_400x400.jpg\" width=\"170\"><br></p>\n<p>Platform Engineeringの肝は、開発者に「ちょうどいい抽象」を提供すること。ACKでAWSリソースをKubernetesのCRDとして扱い、kroのResourceGraphDefinitionで複数リソースをまとめて独自APIに昇華する — このスタックを選んだ理由と、ぶつかったペイン、簡単な実装例をお話しします。</p>\n<h3>セッション4: kubernetesのモニタリングパターンと実践 (ソフトバンク株式会社 <a href=\"https://x.com/yoshitake945\" rel=\"nofollow\">浅野 剛丈</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1581485196167516160/ZTPnOwWv_200x200.jpg\" width=\"170\"><br></p>\n<p>Kubernetesの監視をはじめるとき、cAdvisor、metrics-server、kube-state-metricsなど、まず知っておきたいコンポーネントがいくつかあります。\n一方で、監視したい対象や項目は、クラスタを管理するチームとアプリケーションを運用するチームで異なります。\n実装方法によっては、ServiceAccountやRBAC、外部監視用のAPIトークンなど、権限設計を考慮する場面もあります。\n本発表では、Kubernetesで「誰が、どの権限で、何を監視するのか」についてお話しします。</p>\n<h3>セッション5: TBD (株式会社ギフティ <a href=\"https://x.com/jmakingng\" rel=\"nofollow\">じぇまき</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/2005955257055207424/tOwvPdVi_400x400.jpg\" width=\"170\"><br></p>\n<p>TBD</p>\n<h3>セッション6: Kubernetesにおける学習基盤とLLMOpsの概要 (デル・テクノロジーズ株式会社 <a href=\"https://x.com/URyo_0213\" rel=\"nofollow\">ry</a>)</h3>\n<p><img src=\"https://media.connpass.com/thumbs/87/b9/87b9b2bc09e18c79e4dadd78882676a7.png\" width=\"170\"><br></p>\n<p>近年、LLMの開発現場では、学習からデプロイ、運用までを支える基盤として Kubernetes の活用が進んでいます。本セッションでは、学習基盤を構築する際の分散学習やジョブスケジューリングの考慮点を解説し、LLMの運用課題に対応する「LLMOps」のプラクティスもご紹介します。学習基盤の設計に取り組む方、Kubernetes と AI 運用の概要を把握したい方向けの入門的な内容です。</p>\n<h1>注意事項（来場者向け）</h1>\n<ul>\n<li>本イベントではSNSや記事の投稿を目的として写真や動画撮影、音声録音をする予定です。ご懸念のある方は、写りづらい席にご案内も可能ですが、保証は致しかねます。当日、写真の確認や削除は対応できませんのでご了承ください。</li>\n</ul>\n<h1>行動規範 (Code of Conduct) について</h1>\n<p>本イベントは、Kubernetes に関連する技術について参加者と知見を共有するための場です。\nそのため、主催者を含む全ての参加者は下記ページに記載される行動規範に同意していただく必要があります。\nご理解・ご協力をお願いいたします。</p>\n<p><a href=\"https://3-shake.com/event-code-of-conduct/\" rel=\"nofollow\">https://3-shake.com/event-code-of-conduct/</a></p>\n<h1>お問い合わせ</h1>\n<p>イベントに関するお問い合わせはこちらからお願いします:\nmeetup@3-shake.com</p>",
-      "url": "https://3-shake.connpass.com/event/389755/",
-      "image_url": "https://media.connpass.com/thumbs/99/47/9947cca337ac204f52ab3ca7d34ea734.png",
-      "hash_tag": "k8smatsuri",
-      "started_at": "2026-06-16T19:30:00+09:00",
-      "ended_at": "2026-06-16T21:30:00+09:00",
-      "published_at": "2026-05-19T12:56:44+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 11361,
-        "subdomain": "3-shake",
-        "title": "3-shake Meetup",
-        "url": "https://3-shake.connpass.com/"
-      },
-      "address": "〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階",
-      "place": "株式会社ログラス",
-      "lat": "35.640438500000",
-      "lon": "139.741414800000",
-      "owner_id": 877054,
-      "owner_nickname": "shinri_koda",
-      "owner_display_name": "koda",
-      "accepted": 273,
-      "waiting": 0,
-      "updated_at": "2026-06-08T16:13:04+09:00"
-    },
     {
       "id": 393624,
       "title": "v-tokyo Meetup #25",
@@ -64,6 +33,37 @@
       "accepted": 127,
       "waiting": 0,
       "updated_at": "2026-06-15T16:16:51+09:00"
+    },
+    {
+      "id": 389755,
+      "title": "Kubernetes祭り #1",
+      "catch": "",
+      "description": "<h1>イベント概要</h1>\n<p>本イベントは、Kubernetesを始めとしたインフラ・SRE/DevOps支援サービス「Sreake」を提供するスリーシェイクが主催する、Kubernetesのためのイベントです。\nKubernetesを中心としたクラウドネイテイブ技術に関する情報を中心に、これらをどう活用してるのかを発信していきます！</p>\n<p>第一回目となる今回は、Kubernetesをテーマとして、各社の登壇者様に様々な事例についてお話しいただきます。</p>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>Kubernetesに関する情報や事例に興味のある方</li>\n<li>Kubernetesなどのクラウドネイテイブ技術を活用したSRE/Platform Engineeringに興味のある方</li>\n<li>SRE やインフラエンジニアの技術情報をキャッチアップしたい方</li>\n</ul>\n<h1>配信</h1>\n<p>当日は YouTube Live で配信を行います。URLは参加申し込み後の「参加者への情報」に記載予定です。</p>\n<h1>会場案内</h1>\n<p>株式会社ログラス オフィス<br>\n〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階<br>\n最寄り駅：</p>\n<ul>\n<li>都営地下鉄浅草線・京浜急行電鉄　泉岳寺駅 徒歩1分</li>\n<li>JR山手線・京浜東北線　高輪ゲートウェイ駅 徒歩7分</li>\n<li>東京メトロ南北線・都営地下鉄三田線　白金高輪駅 徒歩12分</li>\n</ul>\n<p>※当日は直接会場の9Fまでお越しください。</p>\n<h2>受付</h2>\n<p>イベントの受付時間は 19:00 から 19:30 までとなります。<br>\n会場にお越しいただきましたら、受付で参加用 QR コードまたは Connpass ID をご提示ください。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:30-19:35</td>\n<td>オープニング</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:35-19:50</td>\n<td>セッション1: Platform Engineering の土台になぜ Kubernetes を選ぶのか</td>\n<td>株式会社スリーシェイク <a href=\"https://x.com/r4ynode\" rel=\"nofollow\">Ray</a></td>\n</tr>\n<tr>\n<td>19:50-20:05</td>\n<td>セッション2: ツールではなく軸で選べ — 流行りに溺れないPlatform Engineeringの育て方</td>\n<td>株式会社サイバーエージェント <a href=\"https://x.com/ishikawa_kumo\" rel=\"nofollow\">@ishikawa_kumo</a></td>\n</tr>\n<tr>\n<td>20:05-20:20</td>\n<td>セッション3: ACK + kro ではじめる「使いやすいPlatform」の作りかた</td>\n<td>株式会社ログラス <a href=\"https://x.com/melpo_mel\" rel=\"nofollow\">@mekka</a></td>\n</tr>\n<tr>\n<td>20:20-20:35</td>\n<td>セッション4: kubernetesのモニタリングパターンと実践</td>\n<td>ソフトバンク株式会社 <a href=\"https://x.com/yoshitake945\" rel=\"nofollow\">浅野 剛丈</a></td>\n</tr>\n<tr>\n<td>20:35-20:50</td>\n<td>セッション5: TBD</td>\n<td>株式会社ギフティ <a href=\"https://x.com/jmakingng\" rel=\"nofollow\">じぇまき</a></td>\n</tr>\n<tr>\n<td>20:50-21:05</td>\n<td>セッション6: Kubernetesにおける学習基盤とLLMOpsの概要</td>\n<td>デル・テクノロジーズ株式会社 <a href=\"https://x.com/uryo_0213\" rel=\"nofollow\">@ry</a></td>\n</tr>\n<tr>\n<td>21:05-21:10</td>\n<td>会場提供スポンサー様セッション</td>\n<td>-</td>\n</tr>\n<tr>\n<td>21:10-21:15</td>\n<td>エンディング</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<h2>登壇内容</h2>\n<h3>セッション1: Platform Engineering の土台になぜ Kubernetes を選ぶのか (株式会社スリーシェイク <a href=\"https://x.com/r4ynode\" rel=\"nofollow\">Ray</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1937451721149808646/pZY2t_62_400x400.jpg\" width=\"170\"><br></p>\n<p>Platform Engineering の文脈で Kubernetes が選ばれる理由を、SaaS との使い分けや他のコンテナ基盤との比較を通じて整理します。PE に関する書籍や事例の多くが K8s ベースで語られている背景には、選択肢の中での K8s の構造的な位置づけがあります。PE が解こうとしている課題と K8s が PE 基盤として持つ特性を結びつけながら、PE の土台選定の判断軸を考えます。</p>\n<h3>セッション2: ツールではなく軸で選べ — 流行りに溺れないPlatform Engineeringの育て方 (株式会社サイバーエージェント <a href=\"https://x.com/ishikawa_kumo\" rel=\"nofollow\">@ishikawa_kumo</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1929834993695838208/FDG-g-Yh_400x400.jpg\" width=\"170\"><br></p>\n<p>ツールの流行に疲れ、増え続ける認知負荷に苦しむ――そんなPlatform Engineeringの失敗談はよく語られます。では、生き残るPlatformは何が違うのでしょうか。私たちは6人で40サービスを支えるPlatformを6年間運用してきました。責任者や体制が変わっても継続できた理由は、「認知負荷を下げる」という軸で意思決定してきたことです。Backstageを見送り、Argo Workflowsを導入した実例を交えながら、軸の決め方、ユーザの声の拾い方、導入・撤退判断のプロセスを紹介します。</p>\n<h3>セッション3: ACK + kro ではじめる「使いやすいPlatform」の作りかた (株式会社ログラス <a href=\"https://x.com/melpo_mel\" rel=\"nofollow\">@mekka</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1194804418882883585/heYxBm3O_400x400.jpg\" width=\"170\"><br></p>\n<p>Platform Engineeringの肝は、開発者に「ちょうどいい抽象」を提供すること。ACKでAWSリソースをKubernetesのCRDとして扱い、kroのResourceGraphDefinitionで複数リソースをまとめて独自APIに昇華する — このスタックを選んだ理由と、ぶつかったペイン、簡単な実装例をお話しします。</p>\n<h3>セッション4: kubernetesのモニタリングパターンと実践 (ソフトバンク株式会社 <a href=\"https://x.com/yoshitake945\" rel=\"nofollow\">浅野 剛丈</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1581485196167516160/ZTPnOwWv_200x200.jpg\" width=\"170\"><br></p>\n<p>Kubernetesの監視をはじめるとき、cAdvisor、metrics-server、kube-state-metricsなど、まず知っておきたいコンポーネントがいくつかあります。\n一方で、監視したい対象や項目は、クラスタを管理するチームとアプリケーションを運用するチームで異なります。\n実装方法によっては、ServiceAccountやRBAC、外部監視用のAPIトークンなど、権限設計を考慮する場面もあります。\n本発表では、Kubernetesで「誰が、どの権限で、何を監視するのか」についてお話しします。</p>\n<h3>セッション5: TBD (株式会社ギフティ <a href=\"https://x.com/jmakingng\" rel=\"nofollow\">じぇまき</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/2005955257055207424/tOwvPdVi_400x400.jpg\" width=\"170\"><br></p>\n<p>TBD</p>\n<h3>セッション6: Kubernetesにおける学習基盤とLLMOpsの概要 (デル・テクノロジーズ株式会社 <a href=\"https://x.com/URyo_0213\" rel=\"nofollow\">ry</a>)</h3>\n<p><img src=\"https://media.connpass.com/thumbs/87/b9/87b9b2bc09e18c79e4dadd78882676a7.png\" width=\"170\"><br></p>\n<p>近年、LLMの開発現場では、学習からデプロイ、運用までを支える基盤として Kubernetes の活用が進んでいます。本セッションでは、学習基盤を構築する際の分散学習やジョブスケジューリングの考慮点を解説し、LLMの運用課題に対応する「LLMOps」のプラクティスもご紹介します。学習基盤の設計に取り組む方、Kubernetes と AI 運用の概要を把握したい方向けの入門的な内容です。</p>\n<h1>注意事項（来場者向け）</h1>\n<ul>\n<li>本イベントではSNSや記事の投稿を目的として写真や動画撮影、音声録音をする予定です。ご懸念のある方は、写りづらい席にご案内も可能ですが、保証は致しかねます。当日、写真の確認や削除は対応できませんのでご了承ください。</li>\n</ul>\n<h1>行動規範 (Code of Conduct) について</h1>\n<p>本イベントは、Kubernetes に関連する技術について参加者と知見を共有するための場です。\nそのため、主催者を含む全ての参加者は下記ページに記載される行動規範に同意していただく必要があります。\nご理解・ご協力をお願いいたします。</p>\n<p><a href=\"https://3-shake.com/event-code-of-conduct/\" rel=\"nofollow\">https://3-shake.com/event-code-of-conduct/</a></p>\n<h1>お問い合わせ</h1>\n<p>イベントに関するお問い合わせはこちらからお願いします:\nmeetup@3-shake.com</p>",
+      "url": "https://3-shake.connpass.com/event/389755/",
+      "image_url": "https://media.connpass.com/thumbs/99/47/9947cca337ac204f52ab3ca7d34ea734.png",
+      "hash_tag": "k8smatsuri",
+      "started_at": "2026-06-16T19:30:00+09:00",
+      "ended_at": "2026-06-16T21:30:00+09:00",
+      "published_at": "2026-05-19T12:56:44+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 11361,
+        "subdomain": "3-shake",
+        "title": "3-shake Meetup",
+        "url": "https://3-shake.connpass.com/"
+      },
+      "address": "〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階",
+      "place": "株式会社ログラス",
+      "lat": "35.640438500000",
+      "lon": "139.741414800000",
+      "owner_id": 877054,
+      "owner_nickname": "shinri_koda",
+      "owner_display_name": "koda",
+      "accepted": 273,
+      "waiting": 0,
+      "updated_at": "2026-06-08T16:13:04+09:00"
     },
     {
       "id": 393225,
@@ -155,7 +155,7 @@
       "owner_nickname": "minorun365",
       "owner_display_name": "みのるん",
       "accepted": 173,
-      "waiting": 21,
+      "waiting": 18,
       "updated_at": "2026-06-15T17:58:57+09:00"
     },
     {
@@ -185,8 +185,8 @@
       "owner_id": 80606,
       "owner_nickname": "shosuz",
       "owner_display_name": "Shotaro Suzuki",
-      "accepted": 1738,
-      "waiting": 57,
+      "accepted": 1740,
+      "waiting": 55,
       "updated_at": "2026-06-12T10:28:50+09:00"
     },
     {
@@ -216,7 +216,7 @@
       "owner_id": 50007,
       "owner_nickname": "osk_kamui",
       "owner_display_name": "Akihiro Mukai",
-      "accepted": 53,
+      "accepted": 51,
       "waiting": 0,
       "updated_at": "2026-06-12T08:37:39+09:00"
     },
