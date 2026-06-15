@@ -279,9 +279,12 @@ function setStatus(msg,type=''){
 
 async function fetchConnpass(params){
   const base='https://connpass.com/api/v2/events/';
-  const headers={'Authorization':`Bearer ${CONNPASS_API_KEY}`,'Content-Type':'application/json'};
+  params['api_key'] = CONNPASS_API_KEY;
   const qs=new URLSearchParams(params).toString();
-  const r=await fetch(`${base}?${qs}`,{headers,signal:AbortSignal.timeout(10000)});
+  const directUrl=`${base}?${qs}`;
+  // CORSプロキシ経由
+  const proxyUrl='https://corsproxy.io/?url='+encodeURIComponent(directUrl);
+  const r=await fetch(proxyUrl,{signal:AbortSignal.timeout(12000)});
   if(!r.ok){
     const txt=await r.text();
     throw new Error(`Connpass API エラー ${r.status}: ${txt.substring(0,100)}`);
