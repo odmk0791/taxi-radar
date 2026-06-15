@@ -11,79 +11,43 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
   :root {
-    --bg: #0a0e1a;
-    --surface: #111827;
-    --surface2: #1a2235;
-    --border: #1e2d45;
-    --accent: #00d4ff;
-    --accent2: #ff6b35;
-    --text: #e2e8f0;
-    --text-muted: #64748b;
-    --danger: #ff4444;
-    --warn: #ffbb33;
-    --green: #22c55e;
+    --bg:#0a0e1a;--surface:#111827;--surface2:#1a2235;--border:#1e2d45;
+    --accent:#00d4ff;--accent2:#ff6b35;--text:#e2e8f0;--text-muted:#64748b;
+    --danger:#ff4444;--warn:#ffbb33;--green:#22c55e;
   }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-serif; min-height:100vh; overflow-x:hidden; }
-  body::before {
-    content:''; position:fixed; inset:0;
-    background-image: linear-gradient(rgba(0,212,255,0.03) 1px,transparent 1px), linear-gradient(90deg,rgba(0,212,255,0.03) 1px,transparent 1px);
-    background-size:40px 40px; pointer-events:none; z-index:0;
-  }
-  .header {
-    position:relative; z-index:10; padding:14px 16px 12px;
-    border-bottom:1px solid var(--border); background:rgba(10,14,26,0.97);
-    backdrop-filter:blur(8px); display:flex; align-items:center; justify-content:space-between; gap:10px;
-  }
-  .header-left { display:flex; align-items:center; gap:8px; }
-  .logo { font-family:'Rajdhani',sans-serif; font-size:20px; font-weight:700; color:var(--accent); letter-spacing:2px; text-transform:uppercase; }
-  .logo span { color:var(--accent2); }
-  .pulse-dot { width:8px; height:8px; border-radius:50%; background:var(--accent); animation:pulse-anim 2s infinite; }
-  @keyframes pulse-anim { 0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,212,255,.4)} 50%{opacity:.6;box-shadow:0 0 0 6px rgba(0,212,255,0)} }
-  .header-right { display:flex; align-items:center; gap:8px; }
-  .gps-badge { display:flex; align-items:center; gap:5px; font-size:11px; color:var(--text-muted); background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:4px 10px; }
-  .gps-badge.active { color:var(--green); border-color:var(--green); }
-  .gps-badge.active .gps-dot { background:var(--green); }
-  .gps-dot { width:6px; height:6px; border-radius:50%; background:var(--text-muted); }
-  .now-time { font-family:'Rajdhani',sans-serif; font-size:13px; color:var(--accent); letter-spacing:1px; }
-  #map { position:relative; z-index:1; width:100%; height:260px; border-bottom:1px solid var(--border); }
-  .scan-area {
-    position:relative; z-index:10; padding:12px 16px;
-    background:var(--surface); border-bottom:1px solid var(--border);
-    display:flex; gap:10px; align-items:center;
-  }
-  .btn-scan {
-    flex:1; display:flex; align-items:center; justify-content:center; gap:8px;
-    background:linear-gradient(135deg,#0066cc,#00d4ff); border:none; border-radius:10px;
-    padding:12px 20px; color:#fff; font-family:'Noto Sans JP',sans-serif; font-size:14px; font-weight:700;
-    cursor:pointer; transition:all .2s; letter-spacing:.5px;
-  }
-  .btn-scan:hover{opacity:.85;transform:translateY(-1px)} .btn-scan:active{transform:translateY(0)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:'Noto Sans JP',sans-serif;min-height:100vh;overflow-x:hidden}
+  body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,212,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
+  .header{position:relative;z-index:10;padding:14px 16px 12px;border-bottom:1px solid var(--border);background:rgba(10,14,26,.97);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .header-left{display:flex;align-items:center;gap:8px}
+  .logo{font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--accent);letter-spacing:2px;text-transform:uppercase}
+  .logo span{color:var(--accent2)}
+  .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse-anim 2s infinite}
+  @keyframes pulse-anim{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,212,255,.4)}50%{opacity:.6;box-shadow:0 0 0 6px rgba(0,212,255,0)}}
+  .header-right{display:flex;align-items:center;gap:8px}
+  .gps-badge{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-muted);background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:4px 10px}
+  .gps-badge.active{color:var(--green);border-color:var(--green)}
+  .gps-badge.active .gps-dot{background:var(--green)}
+  .gps-dot{width:6px;height:6px;border-radius:50%;background:var(--text-muted)}
+  .now-time{font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--accent);letter-spacing:1px}
+  #map{position:relative;z-index:1;width:100%;height:260px;border-bottom:1px solid var(--border)}
+  .scan-area{position:relative;z-index:10;padding:12px 16px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:center}
+  .btn-scan{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#0066cc,#00d4ff);border:none;border-radius:10px;padding:12px 20px;color:#fff;font-family:'Noto Sans JP',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;letter-spacing:.5px}
+  .btn-scan:hover{opacity:.85;transform:translateY(-1px)}.btn-scan:active{transform:translateY(0)}
   .btn-scan:disabled{background:var(--border);cursor:not-allowed;transform:none}
   .btn-scan .scan-icon{font-size:16px}
   .btn-scan.scanning .scan-icon{animation:spin 1s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
-  .range-select { background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; color:var(--text); font-size:13px; outline:none; }
-  .status-bar {
-    position:relative; z-index:10; padding:8px 16px; background:var(--bg);
-    border-bottom:1px solid var(--border); font-size:12px; color:var(--text-muted);
-    min-height:32px; display:flex; align-items:center; gap:8px;
-  }
-  .status-bar.loading{color:var(--accent)} .status-bar.error{color:var(--danger)} .status-bar.success{color:var(--green)}
-  .filter-bar {
-    position:relative; z-index:10; padding:8px 16px; background:var(--bg);
-    border-bottom:1px solid var(--border); display:flex; gap:6px; overflow-x:auto; -webkit-overflow-scrolling:touch;
-  }
+  .range-select{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;color:var(--text);font-size:13px;outline:none}
+  .status-bar{position:relative;z-index:10;padding:8px 16px;background:var(--bg);border-bottom:1px solid var(--border);font-size:12px;color:var(--text-muted);min-height:32px;display:flex;align-items:center;gap:8px}
+  .status-bar.loading{color:var(--accent)}.status-bar.error{color:var(--danger)}.status-bar.success{color:var(--green)}
+  .filter-bar{position:relative;z-index:10;padding:8px 16px;background:var(--bg);border-bottom:1px solid var(--border);display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch}
   .filter-bar::-webkit-scrollbar{display:none}
-  .filter-chip { flex-shrink:0; font-size:11px; padding:5px 12px; border-radius:20px; border:1px solid var(--border); background:var(--surface); color:var(--text-muted); cursor:pointer; transition:all .15s; white-space:nowrap; }
-  .filter-chip.active { border-color:var(--accent); background:rgba(0,212,255,.1); color:var(--accent); }
-  .event-list { position:relative; z-index:1; padding:12px 16px 80px; display:flex; flex-direction:column; gap:10px; }
-  .event-card {
-    background:var(--surface); border:1px solid var(--border); border-radius:12px;
-    padding:14px 16px; display:flex; flex-direction:column; gap:8px;
-    transition:border-color .2s,transform .15s; cursor:pointer; position:relative; overflow:hidden;
-  }
-  .event-card::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; border-radius:3px 0 0 3px; }
+  .filter-chip{flex-shrink:0;font-size:11px;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);cursor:pointer;transition:all .15s;white-space:nowrap}
+  .filter-chip.active{border-color:var(--accent);background:rgba(0,212,255,.1);color:var(--accent)}
+  .event-list{position:relative;z-index:1;padding:12px 16px 80px;display:flex;flex-direction:column;gap:10px}
+  .event-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;transition:border-color .2s,transform .15s;cursor:pointer;position:relative;overflow:hidden}
+  .event-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px}
   .event-card.urgency-now::before{background:var(--danger)}
   .event-card.urgency-soon::before{background:var(--warn)}
   .event-card.urgency-later::before{background:var(--accent)}
@@ -99,7 +63,7 @@
   .urgency-badge.ended{background:var(--surface2);color:var(--text-muted);border:1px solid var(--border)}
   .card-meta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--text-muted)}
   .meta-item{display:flex;align-items:center;gap:4px}
-  .meta-item.accent-color{color:var(--accent)} .meta-item.warn-color{color:var(--warn)} .meta-item.danger-color{color:var(--danger)}
+  .meta-item.accent-color{color:var(--accent)}.meta-item.warn-color{color:var(--warn)}.meta-item.danger-color{color:var(--danger)}
   .venue-tag{font-size:11px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:2px 8px;color:var(--text-muted)}
   .card-bottom{display:flex;align-items:center;justify-content:space-between}
   .crowd-bar{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text-muted)}
@@ -109,7 +73,7 @@
   .nav-btn{font-size:11px;color:var(--accent);background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.3);border-radius:6px;padding:4px 10px;cursor:pointer;text-decoration:none;transition:background .2s}
   .nav-btn:hover{background:rgba(0,212,255,.2)}
   .empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;gap:12px;color:var(--text-muted);text-align:center}
-  .empty-icon{font-size:48px;opacity:.3} .empty-text{font-size:14px} .empty-hint{font-size:12px;opacity:.6}
+  .empty-icon{font-size:48px;opacity:.3}.empty-text{font-size:14px}.empty-hint{font-size:12px;opacity:.6;line-height:1.7}
   .skeleton{background:linear-gradient(90deg,var(--surface) 25%,var(--surface2) 50%,var(--surface) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:6px}
   @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
   .skeleton-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
@@ -121,9 +85,7 @@
   .leaflet-popup-tip{background:var(--surface2)}
   .popup-inner{font-size:13px;line-height:1.6;min-width:180px}
   .popup-inner strong{font-size:14px;display:block;margin-bottom:4px}
-  .popup-end{color:var(--warn);font-weight:700} .popup-dist{color:var(--accent);font-size:12px}
-  .connpass-note{font-size:11px;color:var(--text-muted);padding:6px 16px;text-align:center;background:var(--surface);border-bottom:1px solid var(--border)}
-  .connpass-note a{color:var(--accent);text-decoration:none}
+  .popup-end{color:var(--warn);font-weight:700}.popup-dist{color:var(--accent);font-size:12px}
 </style>
 </head>
 <body>
@@ -173,17 +135,17 @@
 </div>
 
 <script>
-let userLat=null, userLng=null, map=null, userMarker=null;
-let eventMarkers=[], allEvents=[], currentFilter='all';
+const CONNPASS_API_KEY = 'hp2OHNGF.JC2wgGd0mWv6J4F167IpyP34fylIpacspyuINfxYkuS2bw8GJofZkCVc';
 
-// Clock
+let userLat=null,userLng=null,map=null,userMarker=null;
+let eventMarkers=[],allEvents=[],currentFilter='all';
+
 function updateClock(){
-  const n=new Date(), h=String(n.getHours()).padStart(2,'0'), m=String(n.getMinutes()).padStart(2,'0');
+  const n=new Date(),h=String(n.getHours()).padStart(2,'0'),m=String(n.getMinutes()).padStart(2,'0');
   document.getElementById('nowTime').textContent=`${h}:${m}`;
 }
-setInterval(updateClock,1000); updateClock();
+setInterval(updateClock,1000);updateClock();
 
-// Map
 function initMap(lat,lng){
   if(map){map.setView([lat,lng],12);return;}
   map=L.map('map',{zoomControl:true,attributionControl:false}).setView([lat,lng],12);
@@ -191,11 +153,10 @@ function initMap(lat,lng){
 }
 function setUserMarker(lat,lng){
   const icon=L.divIcon({html:'<div class="my-loc-icon"></div>',className:'',iconSize:[16,16],iconAnchor:[8,8]});
-  if(userMarker) userMarker.setLatLng([lat,lng]);
+  if(userMarker)userMarker.setLatLng([lat,lng]);
   else userMarker=L.marker([lat,lng],{icon}).addTo(map).bindPopup('<div class="popup-inner"><strong>現在地</strong></div>');
 }
 
-// GPS
 function getGPS(){
   return new Promise((resolve,reject)=>{
     if(!navigator.geolocation){reject('GPS未対応');return;}
@@ -206,52 +167,42 @@ function getGPS(){
   });
 }
 
-// Distance
 function calcDist(lat1,lng1,lat2,lng2){
   const R=6371,dLat=(lat2-lat1)*Math.PI/180,dLng=(lng2-lng1)*Math.PI/180;
   const a=Math.sin(dLat/2)**2+Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
   return R*2*Math.asin(Math.sqrt(a));
 }
 
-// Time
 function getUrgency(endStr){
-  if(!endStr) return 'later';
-  const end=new Date(endStr), now=new Date(), diff=(end-now)/60000;
-  if(diff<0) return 'ended';
-  if(diff<=30) return 'now';
-  if(diff<=60) return 'soon';
-  return 'later';
+  if(!endStr)return'later';
+  const diff=(new Date(endStr)-new Date())/60000;
+  if(diff<0)return'ended';
+  if(diff<=30)return'now';
+  if(diff<=60)return'soon';
+  return'later';
 }
 function timeUntilEnd(endStr){
-  if(!endStr) return '';
-  const end=new Date(endStr), now=new Date(), diff=Math.round((end-now)/60000);
-  if(diff<0) return `${Math.abs(diff)}分前に終了`;
-  if(diff<60) return `あと${diff}分`;
-  return `あと${Math.floor(diff/60)}時間${diff%60 ? diff%60+'分' : ''}`;
+  if(!endStr)return'';
+  const diff=Math.round((new Date(endStr)-new Date())/60000);
+  if(diff<0)return`${Math.abs(diff)}分前に終了`;
+  if(diff<60)return`あと${diff}分`;
+  return`あと${Math.floor(diff/60)}時間${diff%60?diff%60+'分':''}`;
 }
 function fmtTime(isoStr){
-  if(!isoStr) return '不明';
+  if(!isoStr)return'不明';
   const d=new Date(isoStr);
-  return `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+  return`${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
 }
-
-// Crowd level from accepted count
-function crowdLevel(accepted){
-  if(!accepted) return 1;
-  if(accepted<=50) return 1;
-  if(accepted<=200) return 2;
-  if(accepted<=500) return 3;
-  if(accepted<=2000) return 4;
-  return 5;
+function crowdLevel(n){
+  if(!n)return 1;
+  if(n<=50)return 1;if(n<=200)return 2;if(n<=500)return 3;if(n<=2000)return 4;return 5;
 }
 const crowdLabel=['','〜50人','〜200人','〜500人','〜2000人','2000人超'];
 
-// Markers
 function addEventMarkers(events){
-  eventMarkers.forEach(m=>map.removeLayer(m));
-  eventMarkers=[];
+  eventMarkers.forEach(m=>map.removeLayer(m));eventMarkers=[];
   events.forEach((ev,i)=>{
-    if(!ev.lat||!ev.lng) return;
+    if(!ev.lat||!ev.lng)return;
     const colors={now:'#ff4444',soon:'#ffbb33',later:'#00d4ff',ended:'#555'};
     const color=colors[ev._urgency]||'#00d4ff';
     const icon=L.divIcon({
@@ -265,14 +216,12 @@ function addEventMarkers(events){
   });
 }
 
-// Filter
 function setFilter(f){
   currentFilter=f;
   document.querySelectorAll('.filter-chip').forEach(c=>c.classList.toggle('active',c.dataset.filter===f));
   renderEvents(allEvents);
 }
 
-// Render
 function renderEvents(events){
   const container=document.getElementById('eventContainer');
   const filtered=currentFilter==='all'?events:events.filter(e=>e._urgency===currentFilter);
@@ -283,14 +232,12 @@ function renderEvents(events){
   const urgencyLabels={now:'まもなく終了',soon:'1時間以内',later:'開催中',ended:'終了済み'};
   let html='<div class="event-list">';
   filtered.forEach((ev,i)=>{
-    const u=ev._urgency, badge=urgencyLabels[u]||'', dist=ev._dist?`${ev._dist.toFixed(1)}km`:'不明';
-    const timeLeft=timeUntilEnd(ev.ended_at), endTime=fmtTime(ev.ended_at);
+    const u=ev._urgency,badge=urgencyLabels[u]||'',dist=ev._dist?`${ev._dist.toFixed(1)}km`:'不明';
+    const timeLeft=timeUntilEnd(ev.ended_at),endTime=fmtTime(ev.ended_at);
     const cl=crowdLevel(ev.accepted);
     const dots=Array(5).fill(0).map((_,j)=>`<div class="crowd-dot${j<cl?' filled':''}"></div>`).join('');
-    const navUrl=`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(ev.address||ev.place||'')}&travelmode=driving`;
-    const connpassUrl=ev.event_url||'#';
     const timeColor=u==='now'?'danger-color':u==='soon'?'warn-color':'accent-color';
-    html+=`<div class="event-card urgency-${u}" onclick="focusEvent(${i})">
+    html+=`<div class="event-card urgency-${u}" onclick="focusEvent(${allEvents.indexOf(ev)})">
       <div class="card-top">
         <div class="event-name">${ev.title}</div>
         <div class="urgency-badge ${u}">${badge}</div>
@@ -303,7 +250,7 @@ function renderEvents(events){
       </div>
       <div class="card-bottom">
         <div class="crowd-bar"><div class="crowd-dots">${dots}</div><span>${crowdLabel[cl]||''}</span></div>
-        <a class="nav-btn" href="${connpassUrl}" target="_blank" onclick="event.stopPropagation()">詳細 →</a>
+        <a class="nav-btn" href="${ev.event_url||'#'}" target="_blank" onclick="event.stopPropagation()">詳細 →</a>
       </div>
     </div>`;
   });
@@ -313,118 +260,109 @@ function renderEvents(events){
 
 function focusEvent(idx){
   const ev=allEvents[idx];
-  if(!ev||!ev.lat||!ev.lng||!map) return;
+  if(!ev||!ev.lat||!ev.lng||!map)return;
   map.setView([ev.lat,ev.lng],14);
   eventMarkers[idx]?.openPopup();
 }
 
 function showSkeletons(){
   let html='<div class="event-list">';
-  for(let i=0;i<5;i++) html+=`<div class="skeleton-card"><div class="skeleton" style="height:18px;width:70%"></div><div class="skeleton" style="height:13px;width:50%"></div><div class="skeleton" style="height:13px;width:40%"></div></div>`;
+  for(let i=0;i<5;i++)html+=`<div class="skeleton-card"><div class="skeleton" style="height:18px;width:70%"></div><div class="skeleton" style="height:13px;width:50%"></div><div class="skeleton" style="height:13px;width:40%"></div></div>`;
   html+='</div>';
   document.getElementById('eventContainer').innerHTML=html;
 }
 
 function setStatus(msg,type=''){
   const bar=document.getElementById('statusBar');
-  bar.textContent=msg; bar.className='status-bar'+(type?' '+type:'');
+  bar.textContent=msg;bar.className='status-bar'+(type?' '+type:'');
 }
 
-// Connpass API fetch with CORS proxy fallback
 async function fetchConnpass(params){
-  const base='https://connpass.com/api/v1/event/';
-  const qs=new URLSearchParams({...params, format:'json'}).toString();
-  // 直接fetch（CORSが通る場合）
-  try {
-    const r=await fetch(`${base}?${qs}`,{signal:AbortSignal.timeout(8000)});
-    if(r.ok) return await r.json();
-  } catch(e){}
-  // CORS proxy経由
-  const proxy='https://corsproxy.io/?'+encodeURIComponent(`${base}?${qs}`);
-  const r2=await fetch(proxy,{signal:AbortSignal.timeout(10000)});
-  if(!r2.ok) throw new Error(`HTTP ${r2.status}`);
-  return await r2.json();
+  const base='https://connpass.com/api/v2/events/';
+  const headers={'Authorization':`Bearer ${CONNPASS_API_KEY}`,'Content-Type':'application/json'};
+  const qs=new URLSearchParams(params).toString();
+  const r=await fetch(`${base}?${qs}`,{headers,signal:AbortSignal.timeout(10000)});
+  if(!r.ok){
+    const txt=await r.text();
+    throw new Error(`Connpass API エラー ${r.status}: ${txt.substring(0,100)}`);
+  }
+  return await r.json();
 }
 
-// Main
 async function startScan(){
   const btn=document.getElementById('scanBtn');
-  btn.disabled=true; btn.classList.add('scanning');
+  btn.disabled=true;btn.classList.add('scanning');
   btn.querySelector('.scan-icon').textContent='🔄';
   document.getElementById('scanBtnText').textContent='スキャン中...';
 
-  // GPS
   setStatus('📡 現在地を取得中...','loading');
-  try {
+  try{
     const pos=await getGPS();
-    userLat=pos.lat; userLng=pos.lng;
+    userLat=pos.lat;userLng=pos.lng;
     document.getElementById('gpsBadge').className='gps-badge active';
     document.getElementById('gpsLabel').textContent=`${userLat.toFixed(4)}, ${userLng.toFixed(4)}`;
-    initMap(userLat,userLng); setUserMarker(userLat,userLng);
+    initMap(userLat,userLng);setUserMarker(userLat,userLng);
     setStatus('✅ 現在地取得 — Connpassを検索中...','loading');
-  } catch(e){
-    userLat=35.6812; userLng=139.7671;
-    initMap(userLat,userLng); setUserMarker(userLat,userLng);
+  }catch(e){
+    userLat=35.6812;userLng=139.7671;
+    initMap(userLat,userLng);setUserMarker(userLat,userLng);
     setStatus('⚠ GPS取得失敗（東京中心部で検索）','loading');
   }
 
   showSkeletons();
 
-  // 今日の日付
   const now=new Date();
-  const ymd=`${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}`;
+  const ymd=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
   const range=parseInt(document.getElementById('rangeSelect').value);
 
-  try {
+  try{
     setStatus('🔍 Connpassからイベントを取得中...','loading');
-
-    // 複数クエリ並列（今日開催のTokyoイベント、最大100件）
-    const data = await fetchConnpass({
-      prefecture: 'tokyo',
-      ym: `${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}`,
-      ymd: ymd,
-      count: 100,
-      order: 2  // 開催日時順
+    const data=await fetchConnpass({
+      start_from: ymd+'T00:00:00',
+      start_to:   ymd+'T23:59:59',
+      prefecture:  'tokyo',
+      count:       100,
+      order:       2
     });
 
-    const events = (data.events || [])
-      .filter(ev => ev.ended_at) // 終了時刻があるもの
-      .map(ev => {
-        const lat = parseFloat(ev.lat) || null;
-        const lng = parseFloat(ev.lon) || null;
-        const dist = (userLat && lat && lng) ? calcDist(userLat, userLng, lat, lng) : 999;
-        return { ...ev, lat, lng, _dist: dist, _urgency: getUrgency(ev.ended_at) };
+    const events=(data.events||[])
+      .filter(ev=>ev.ended_at)
+      .map(ev=>{
+        const lat=parseFloat(ev.lat)||null;
+        const lng=parseFloat(ev.lon)||null;
+        const dist=(userLat&&lat&&lng)?calcDist(userLat,userLng,lat,lng):999;
+        return{...ev,lat,lng,_dist:dist,_urgency:getUrgency(ev.ended_at)};
       })
-      .filter(ev => ev._dist <= range)
+      .filter(ev=>ev._dist<=range)
       .sort((a,b)=>{
         const o={now:0,soon:1,later:2,ended:3};
-        const ao=o[a._urgency]??2, bo=o[b._urgency]??2;
-        if(ao!==bo) return ao-bo;
+        const ao=o[a._urgency]??2,bo=o[b._urgency]??2;
+        if(ao!==bo)return ao-bo;
         return a._dist-b._dist;
       });
 
-    allEvents = events;
+    allEvents=events;
 
     if(events.length===0){
       setStatus(`🔍 ${range}km圏内・本日のイベントが見つかりませんでした`,'error');
-      document.getElementById('eventContainer').innerHTML=`<div class="empty-state"><div class="empty-icon">🔍</div><div class="empty-text">${range}km圏内にイベントなし</div><div class="empty-hint">範囲を広げるか時間帯を変えてお試しください</div></div>`;
-    } else {
+      document.getElementById('eventContainer').innerHTML=`<div class="empty-state"><div class="empty-icon">🔍</div><div class="empty-text">${range}km圏内にイベントなし</div><div class="empty-hint">範囲を広げてお試しください</div></div>`;
+    }else{
       setStatus(`✅ ${events.length}件取得 (Connpass / 本日の東京)`,'success');
       document.getElementById('filterBar').style.display='flex';
       renderEvents(events);
       addEventMarkers(events);
-      if(map && events.length>0){
+      if(map&&events.length>0){
         const pts=events.filter(e=>e.lat&&e.lng).map(e=>[e.lat,e.lng]);
-        if(userLat) pts.push([userLat,userLng]);
-        if(pts.length>1) map.fitBounds(L.latLngBounds(pts).pad(0.15));
+        if(userLat)pts.push([userLat,userLng]);
+        if(pts.length>1)map.fitBounds(L.latLngBounds(pts).pad(0.15));
       }
     }
-  } catch(e){
+  }catch(e){
     setStatus('❌ 取得失敗: '+e.message,'error');
     document.getElementById('eventContainer').innerHTML=`<div class="empty-state"><div class="empty-icon">⚠️</div><div class="empty-text">エラーが発生しました</div><div class="empty-hint">${e.message}</div></div>`;
   }
 
-  btn.disabled=false; btn.classList.remove('scanning');
+  btn.disabled=false;btn.classList.remove('scanning');
   btn.querySelector('.scan-icon').textContent='⚡';
   document.getElementById('scanBtnText').textContent='再スキャン';
 }
