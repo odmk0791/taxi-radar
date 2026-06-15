@@ -99,6 +99,9 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 .badge.soon { background:rgba(240,160,0,.18);  color:var(--amber); border:1px solid var(--amber); }
 .badge.later{ background:rgba(0,200,240,.13);  color:var(--accent);border:1px solid var(--accent);}
 .badge.ended{ background:var(--surface2); color:var(--muted); border:1px solid var(--border); }
+.src-badge { flex-shrink:0; font-size:9px; font-weight:700; padding:2px 6px; border-radius:5px; letter-spacing:.3px; }
+.src-badge.connpass { background:rgba(120,90,240,.18); color:#9b7cff; border:1px solid #6a4dd0; }
+.src-badge.manual   { background:rgba(32,200,112,.15); color:var(--green); border:1px solid var(--green); }
 
 .evt-meta { display:flex; flex-wrap:wrap; gap:6px 12px; font-size:11px; color:var(--muted); }
 .evt-meta .hi   { color:var(--text); }
@@ -366,6 +369,9 @@ let userLat=null, userLng=null, map=null, userMarker=null;
 let evMarkers=[], allEvents=[], filtered=[], curFilter='all';
 let scaleVal=1;
 const STORAGE_KEY='event_radar_events';
+// Connpass自動取得データ（GitHub Actionsが毎時更新）
+const CONNPASS_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/connpass_events.json';
+const MANUAL_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/manual_events.json';
 
 // ─ Google Form placeholder（後で差し込む）─
 const FORM_ACTION = 'FORM_ACTION_PLACEHOLDER';
@@ -532,13 +538,72 @@ async function startScan(){
     setStatus('⚠ GPS失敗（東京中心で表示）');
   }
 
-  // localStorageからイベントを読み込み
+  // ── データ収集：手動登録 + Connpass自動取得をマージ ──
   const range=parseInt(document.getElementById('rangeSelect').value);
-  const stored=loadEvents();
   const today=new Date().toISOString().slice(0,10);
 
-  allEvents = stored
-    .filter(ev=>ev.date===today || !ev.date) // 今日のイベントのみ
+  // 1) 手動登録イベント（localStorage）
+  const manualEvents=loadEvents()
+    .filter(ev=>ev.date===today || !ev.date)
+    .map(ev=>({...ev, _source:'manual'}));
+
+  // 2) Connpass自動取得イベント（GitHub Actions JSON）
+  let connpassEvents=[];
+  setStatus('📂 Connpassデータを取得中...','loading');
+  try{
+    const r=await fetch(CONNPASS_URL+'?t='+Date.now(),{signal:AbortSignal.timeout(8000)});
+    if(r.ok){
+      const data=await r.json();
+      connpassEvents=(data.events||[])
+        .filter(ev=>ev.ended_at)
+        .map(ev=>({
+          id: 'cp_'+ev.id,
+          name: ev.title,
+          venue: ev.place||'(会場未定)',
+          address: ev.address||'',
+          lat: parseFloat(ev.lat)||null,
+          lng: parseFloat(ev.lon)||null,
+          date: (ev.started_at||'').slice(0,10),
+          start_iso: ev.started_at,
+          end_iso: ev.ended_at,
+          scale: ev.accepted>500?3:ev.accepted>200?2:1,
+          accepted: ev.accepted,
+          url: ev.url,
+          _source:'connpass'
+        }))
+        .filter(ev=>ev.date===today || !ev.date);
+    }
+  }catch(e){ /* Connpass取得失敗時は手動のみで継続 */ }
+
+  // 2.5) サーバー側の手動イベント（data/manual_events.json）
+  let serverEvents=[];
+  try{
+    const r=await fetch(MANUAL_URL+'?t='+Date.now(),{signal:AbortSignal.timeout(8000)});
+    if(r.ok){
+      const data=await r.json();
+      serverEvents=(data.events||[])
+        .filter(ev=>ev.ended_at)
+        .map(ev=>({
+          id: ev.id,
+          name: ev.name,
+          venue: ev.venue||'(会場未定)',
+          address: ev.address||'',
+          lat: parseFloat(ev.lat)||null,
+          lng: parseFloat(ev.lon)||null,
+          date: (ev.started_at||'').slice(0,10),
+          start_iso: ev.started_at,
+          end_iso: ev.ended_at,
+          scale: ev.accepted>10000?4:ev.accepted>2000?3:ev.accepted>500?2:1,
+          accepted: ev.accepted,
+          url: ev.url||'',
+          _source:'manual'
+        }))
+        .filter(ev=>ev.date===today || !ev.date);
+    }
+  }catch(e){ /* 取得失敗時はスキップ */ }
+
+  // 3) マージ → 距離・緊急度を計算 → 絞り込み → ソート
+  allEvents = [...manualEvents, ...serverEvents, ...connpassEvents]
     .map(ev=>({
       ...ev,
       _dist: (userLat&&ev.lat&&ev.lng) ? dist(userLat,userLng,ev.lat,ev.lng) : 999,
@@ -551,13 +616,14 @@ async function startScan(){
     });
 
   if(!allEvents.length){
-    setStatus('登録イベントなし — 「＋ イベント登録」タブで追加してください','err');
+    setStatus('本日のイベントなし — 手動登録するかConnpass更新を待ってください','err');
     document.getElementById('evtList').innerHTML=
       '<div class="empty"><div class="empty-ico">📋</div>'
       +'<div class="empty-ttl">本日のイベントなし</div>'
-      +'<div class="empty-sub">「＋ イベント登録」タブから<br>乗務前に登録してください</div></div>';
+      +'<div class="empty-sub">「＋ イベント登録」タブから追加するか<br>Connpassの自動更新（毎時）をお待ちください</div></div>';
   } else {
-    setStatus('✅ '+allEvents.length+'件表示中','ok');
+    const mc=manualEvents.length+serverEvents.length, cc=connpassEvents.length;
+    setStatus('✅ '+allEvents.length+'件表示中（手動'+mc+' / Connpass'+cc+'）','ok');
     document.getElementById('filterBar').style.display='flex';
     renderList();
     drawMarkers(allEvents);
