@@ -597,8 +597,8 @@ async function startScan(){
           accepted: ev.accepted,
           url: ev.url||'',
           _source:'manual'
-        }))
-        .filter(ev=>ev.date===today || !ev.date);
+        }));
+      // ※確認用：日付フィルタを外して全件表示
     }
   }catch(e){ /* 取得失敗時はスキップ */ }
 
