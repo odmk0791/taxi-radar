@@ -554,7 +554,7 @@ function fareBucket(f){
 
 function buildData(parsed){
   var H=parsed.headers,rows=parsed.rows;
-  var iDate=-1,iD=-1,iT=-1,iW=-1,iN=-1,iS=-1,iF=-1,iK=-1;
+  var iDate=-1,iD=-1,iT=-1,iW=-1,iN=-1,iS=-1,iF=-1,iK=-1,iFix=-1;
   for(var i=0;i<H.length;i++){
     var h=H[i].replace(/\s/g,'');
     if(h==='日付'&&iDate===-1)iDate=i;
@@ -565,9 +565,11 @@ function buildData(parsed){
     if(h==='ステータス'&&iS===-1)iS=i;
     if(h==='料金'&&iF===-1)iF=i;
     if(h==='サンキュー'&&iK===-1)iK=i;
+    if(h==='固定客'&&iFix===-1)iFix=i;
   }
   if(iDate===-1)iDate=0;if(iD===-1)iD=1;if(iT===-1)iT=2;if(iW===-1)iW=5;
   if(iN===-1)iN=6;if(iS===-1)iS=11;if(iF===-1)iF=9;if(iK===-1)iK=13;
+  if(iFix===-1)iFix=14;
   var agg={};
   for(var j=0;j<rows.length;j++){
     var r=rows[j];
@@ -592,7 +594,7 @@ function buildData(parsed){
       agg[key]={day:day,dayType:dayType,hour:hour,ward:ward,name:name,
         count:0,goCount:0,smCount:0,naCount:0,
         fb:[0,0,0,0],skCount:0,normalCount:0,ptCount:0,ptPCount:0,
-        lat:co[0],lng:co[1],mins:[]};
+        lat:co[0],lng:co[1],mins:[],fixS:0,fixM:0,fixL:0};
     }
     var e=agg[key];
     e.count++;
@@ -600,6 +602,10 @@ function buildData(parsed){
     if(status==='GO')e.goCount++;
     if(status==='スマ配')e.smCount++;
     if(status==='流し')e.naCount++;
+    var fixVal=(r[iFix]||'').trim();
+    if(fixVal==='S')e.fixS++;
+    else if(fixVal==='M')e.fixM++;
+    else if(fixVal==='L')e.fixL++;
     var fb=fareBucket(parseFare(fareRaw));
     if(fb>=0)e.fb[fb]++;
     if(sk==='サンキュー')e.skCount++;
@@ -714,15 +720,16 @@ function renderRadar(){
     var df=Math.abs(r.hour-tgt);
     if(df>12)df=24-df;
     var weight=0;
-    if(df===0||df===1)weight=1.0;
-    else if(df===2&&isNight)weight=0.5;
+    if(df===0)weight=1.0;
+    else if(df===1&&isNight)weight=1.0;
     if(weight===0)continue;
     if(km(uLat,uLng,r.lat,r.lng)>R)continue;
     var cnt=matchFilter(r)*weight;
     if(cnt===0)continue;
     var k=r.ward+r.name;
-    if(!agg[k])agg[k]={w:r.ward,n:r.name,c:0,gc:0,sc:0,nc:0,lat:r.lat,lng:r.lng,mins:[]};
+    if(!agg[k])agg[k]={w:r.ward,n:r.name,c:0,gc:0,sc:0,nc:0,lat:r.lat,lng:r.lng,mins:[],fixS:0,fixM:0,fixL:0};
     agg[k].c+=cnt;agg[k].gc+=r.goCount*weight;agg[k].sc+=r.smCount*weight;agg[k].nc+=r.naCount*weight;
+    agg[k].fixS+=(r.fixS||0);agg[k].fixM+=(r.fixM||0);agg[k].fixL+=(r.fixL||0);
     if(r.mins)r.mins.forEach(function(m){agg[k].mins.push(r.hour*60+m);});
   }
   var EXCL=JSON.parse(localStorage.getItem('taxiradar_exclude')||'[]');
@@ -753,6 +760,9 @@ function renderRadar(){
     if(gc>0)badges+='<span class="badge bg">🟢 GO '+gc+'</span>';
     if(sc>0)badges+='<span class="badge bs">📱 スマ配 '+sc+'</span>';
     if(nc>0)badges+='<span class="badge bn">🚕 流し '+nc+'</span>';
+    if((s.fixL||0)>0)badges+='<span class="badge" style="background:rgba(248,81,73,.15);color:#f85149">⭐L '+s.fixL+'</span>';
+    if((s.fixM||0)>0)badges+='<span class="badge" style="background:rgba(210,153,34,.15);color:#d29922">⭐M '+s.fixM+'</span>';
+    if((s.fixS||0)>0)badges+='<span class="badge" style="background:rgba(88,166,255,.15);color:#58a6ff">⭐S '+s.fixS+'</span>';
     var hotBadge=s.hotTime?'<span class="badge-hot">⚡ '+s.hotTime+'の実績</span>':'';
     var fbStats=getFbStats(s.w+s.n,tgt);
     var fbHtml='<div class="fb-row">'+
