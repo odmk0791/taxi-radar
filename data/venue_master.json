@@ -26,7 +26,10 @@
       "capacity": 68000,
       "lat": 35.6779,
       "lng": 139.7146,
-      "schedule_url": "https://jns-e.com/event/"
+      "schedule_url": "https://jns-e.com/event/",
+      "walk_min": 1,
+      "rail_weak": 2,
+      "guest_type": "スポーツ/コンサート混在"
     },
     {
       "name": "東京ドーム",
@@ -35,7 +38,10 @@
       "capacity": 55000,
       "lat": 35.7056,
       "lng": 139.7519,
-      "schedule_url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html"
+      "schedule_url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html",
+      "walk_min": 2,
+      "rail_weak": 1,
+      "guest_type": "スポーツ/コンサート混在"
     },
     {
       "name": "明治神宮野球場",
@@ -44,7 +50,10 @@
       "capacity": 31000,
       "lat": 35.6741,
       "lng": 139.717,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 3,
+      "guest_type": "スポーツ(野球)"
     },
     {
       "name": "有明アリーナ",
@@ -53,7 +62,10 @@
       "capacity": 15000,
       "lat": 35.642,
       "lng": 139.7945,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 8,
+      "rail_weak": 4,
+      "guest_type": "コンサート/アイドル"
     },
     {
       "name": "国立代々木競技場第一体育館",
@@ -62,7 +74,10 @@
       "capacity": 13000,
       "lat": 35.668,
       "lng": 139.6975,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 2,
+      "guest_type": "コンサート/スポーツ"
     },
     {
       "name": "日本武道館",
@@ -71,7 +86,10 @@
       "capacity": 11000,
       "lat": 35.6933,
       "lng": 139.7498,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 2,
+      "guest_type": "コンサート(年齢層広い)"
     },
     {
       "name": "両国国技館",
@@ -80,7 +98,10 @@
       "capacity": 11000,
       "lat": 35.6967,
       "lng": 139.7933,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 2,
+      "rail_weak": 3,
+      "guest_type": "スポーツ(相撲)/コンサート"
     },
     {
       "name": "東京体育館",
@@ -89,7 +110,10 @@
       "capacity": 10000,
       "lat": 35.6802,
       "lng": 139.7128,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 1,
+      "rail_weak": 2,
+      "guest_type": "スポーツ/コンサート"
     },
     {
       "name": "トヨタアリーナ東京",
@@ -98,7 +122,10 @@
       "capacity": 10000,
       "lat": 35.6447,
       "lng": 139.7831,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 4,
+      "guest_type": "コンサート/アイドル"
     },
     {
       "name": "東京ガーデンシアター",
@@ -107,7 +134,10 @@
       "capacity": 8000,
       "lat": 35.631,
       "lng": 139.793,
-      "schedule_url": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/schedule/"
+      "schedule_url": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/schedule/",
+      "walk_min": 4,
+      "rail_weak": 4,
+      "guest_type": "コンサート/ミュージカル"
     },
     {
       "name": "東京国際フォーラム ホールA",
@@ -116,7 +146,10 @@
       "capacity": 5000,
       "lat": 35.6772,
       "lng": 139.7637,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 1,
+      "rail_weak": 1,
+      "guest_type": "コンサート/クラシック/式典"
     },
     {
       "name": "NHKホール",
@@ -125,7 +158,10 @@
       "capacity": 3400,
       "lat": 35.6678,
       "lng": 139.694,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 12,
+      "rail_weak": 3,
+      "guest_type": "コンサート(年齢層高め)"
     },
     {
       "name": "東京文化会館",
@@ -134,7 +170,10 @@
       "capacity": 2300,
       "lat": 35.714,
       "lng": 139.7745,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 1,
+      "rail_weak": 2,
+      "guest_type": "クラシック/オペラ/バレエ"
     },
     {
       "name": "Bunkamuraオーチャードホール",
@@ -143,7 +182,10 @@
       "capacity": 2150,
       "lat": 35.6593,
       "lng": 139.6968,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 7,
+      "rail_weak": 2,
+      "guest_type": "クラシック/バレエ"
     },
     {
       "name": "東京芸術劇場",
@@ -152,7 +194,10 @@
       "capacity": 2000,
       "lat": 35.7307,
       "lng": 139.71,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 2,
+      "rail_weak": 2,
+      "guest_type": "クラシック/演劇"
     },
     {
       "name": "サントリーホール",
@@ -161,7 +206,10 @@
       "capacity": 2000,
       "lat": 35.6694,
       "lng": 139.7405,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 4,
+      "guest_type": "クラシック(高所得)"
     },
     {
       "name": "LINE CUBE SHIBUYA",
@@ -170,7 +218,10 @@
       "capacity": 2000,
       "lat": 35.6614,
       "lng": 139.6987,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 2,
+      "guest_type": "コンサート/式典"
     },
     {
       "name": "昭和女子大学人見記念講堂",
@@ -179,7 +230,10 @@
       "capacity": 2000,
       "lat": 35.631,
       "lng": 139.668,
-      "schedule_url": "https://hall.swu.ac.jp/schedule/"
+      "schedule_url": "https://hall.swu.ac.jp/schedule/",
+      "walk_min": 7,
+      "rail_weak": 3,
+      "guest_type": "クラシック/コンサート"
     },
     {
       "name": "文京シビックホール",
@@ -188,7 +242,10 @@
       "capacity": 1800,
       "lat": 35.7075,
       "lng": 139.752,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 1,
+      "rail_weak": 2,
+      "guest_type": "クラシック/コンサート"
     },
     {
       "name": "Kanadevia Hall",
@@ -197,7 +254,10 @@
       "capacity": 3000,
       "lat": 35.7056,
       "lng": 139.7519,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 3,
+      "rail_weak": 2,
+      "guest_type": "コンサート/ライブ"
     },
     {
       "name": "豊洲PIT",
@@ -206,7 +266,10 @@
       "capacity": 3000,
       "lat": 35.647,
       "lng": 139.796,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 7,
+      "rail_weak": 4,
+      "guest_type": "ライブ/アイドル"
     },
     {
       "name": "Zepp Haneda(TOKYO)",
@@ -215,7 +278,10 @@
       "capacity": 3000,
       "lat": 35.5494,
       "lng": 139.7872,
-      "schedule_url": "https://www.zepp.co.jp/hall/haneda/schedule/"
+      "schedule_url": "https://www.zepp.co.jp/hall/haneda/schedule/",
+      "walk_min": 5,
+      "rail_weak": 5,
+      "guest_type": "ライブ/アイドル"
     },
     {
       "name": "Zepp DiverCity(TOKYO)",
@@ -224,7 +290,10 @@
       "capacity": 2500,
       "lat": 35.6258,
       "lng": 139.7745,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 4,
+      "guest_type": "ライブ/アイドル"
     },
     {
       "name": "EX THEATER ROPPONGI",
@@ -233,7 +302,10 @@
       "capacity": 1700,
       "lat": 35.6602,
       "lng": 139.734,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 4,
+      "rail_weak": 3,
+      "guest_type": "ライブ"
     },
     {
       "name": "Zepp Shinjuku(TOKYO)",
@@ -242,7 +314,10 @@
       "capacity": 1500,
       "lat": 35.6948,
       "lng": 139.7016,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 9,
+      "rail_weak": 1,
+      "guest_type": "ライブ/アイドル"
     },
     {
       "name": "マイナビBLITZ赤坂",
@@ -251,7 +326,10 @@
       "capacity": 1400,
       "lat": 35.6735,
       "lng": 139.737,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 3,
+      "rail_weak": 3,
+      "guest_type": "ライブ"
     },
     {
       "name": "Spotify O-EAST",
@@ -260,7 +338,10 @@
       "capacity": 1300,
       "lat": 35.6573,
       "lng": 139.6963,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 10,
+      "rail_weak": 2,
+      "guest_type": "ライブ"
     },
     {
       "name": "なかのZERO 大ホール",
@@ -269,7 +350,10 @@
       "capacity": 1300,
       "lat": 35.705,
       "lng": 139.664,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 8,
+      "rail_weak": 3,
+      "guest_type": "ライブ/クラシック"
     },
     {
       "name": "恵比寿ガーデンホール",
@@ -278,7 +362,10 @@
       "capacity": 1000,
       "lat": 35.642,
       "lng": 139.713,
-      "schedule_url": "https://gardenplace.jp/event/"
+      "schedule_url": "https://gardenplace.jp/event/",
+      "walk_min": 7,
+      "rail_weak": 3,
+      "guest_type": "ライブ/イベント"
     },
     {
       "name": "Spotify O-WEST",
@@ -287,7 +374,10 @@
       "capacity": 900,
       "lat": 35.657,
       "lng": 139.696,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 11,
+      "rail_weak": 2,
+      "guest_type": "ライブ"
     },
     {
       "name": "LIQUIDROOM",
@@ -296,7 +386,10 @@
       "capacity": 900,
       "lat": 35.647,
       "lng": 139.71,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 4,
+      "rail_weak": 2,
+      "guest_type": "ライブ"
     },
     {
       "name": "新宿ReNY",
@@ -305,7 +398,10 @@
       "capacity": 860,
       "lat": 35.696,
       "lng": 139.699,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 1,
+      "guest_type": "ライブ/アイドル"
     },
     {
       "name": "Shibuya WWW X",
@@ -314,7 +410,10 @@
       "capacity": 700,
       "lat": 35.6618,
       "lng": 139.6979,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 2,
+      "guest_type": "ライブ/アイドル"
     },
     {
       "name": "duo MUSIC EXCHANGE",
@@ -323,7 +422,10 @@
       "capacity": 700,
       "lat": 35.661,
       "lng": 139.697,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 7,
+      "rail_weak": 2,
+      "guest_type": "ライブ/アイドル"
     },
     {
       "name": "品川インターシティホール",
@@ -332,7 +434,10 @@
       "capacity": 650,
       "lat": 35.6285,
       "lng": 139.7405,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 2,
+      "guest_type": "ライブ/ビジネス"
     },
     {
       "name": "東京キネマ倶楽部",
@@ -341,7 +446,10 @@
       "capacity": 600,
       "lat": 35.721,
       "lng": 139.779,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 3,
+      "rail_weak": 3,
+      "guest_type": "ライブ"
     },
     {
       "name": "ニューピアホール",
@@ -350,7 +458,10 @@
       "capacity": 600,
       "lat": 35.6555,
       "lng": 139.757,
-      "schedule_url": "http://www.newpier-hall.jp/pdf/NPH_schedule.pdf"
+      "schedule_url": "http://www.newpier-hall.jp/pdf/NPH_schedule.pdf",
+      "walk_min": 2,
+      "rail_weak": 3,
+      "guest_type": "イベント/ビジネス"
     },
     {
       "name": "TSUTAYA O-Crest",
@@ -359,7 +470,10 @@
       "capacity": 500,
       "lat": 35.657,
       "lng": 139.6955,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "Shibuya WWW",
@@ -368,7 +482,10 @@
       "capacity": 500,
       "lat": 35.6618,
       "lng": 139.6979,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 2,
+      "guest_type": "ライブ/アイドル"
     },
     {
       "name": "BLAZE GOTANDA",
@@ -377,7 +494,10 @@
       "capacity": 500,
       "lat": 35.626,
       "lng": 139.7235,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "新宿BLAZE",
@@ -386,7 +506,10 @@
       "capacity": 800,
       "lat": 35.696,
       "lng": 139.701,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "東京宝塚劇場",
@@ -395,7 +518,10 @@
       "capacity": 2069,
       "lat": 35.6725,
       "lng": 139.7595,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 1,
+      "rail_weak": 2,
+      "guest_type": "ミュージカル(高所得)"
     },
     {
       "name": "東急シアターオーブ",
@@ -404,7 +530,10 @@
       "capacity": 1972,
       "lat": 35.6595,
       "lng": 139.7035,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 3,
+      "rail_weak": 2,
+      "guest_type": "ミュージカル"
     },
     {
       "name": "帝国劇場",
@@ -413,7 +542,10 @@
       "capacity": 1897,
       "lat": 35.676,
       "lng": 139.7615,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 1,
+      "rail_weak": 2,
+      "guest_type": "ミュージカル(高所得)"
     },
     {
       "name": "新国立劇場",
@@ -422,7 +554,10 @@
       "capacity": 1810,
       "lat": 35.6835,
       "lng": 139.6865,
-      "schedule_url": "https://www.nntt.jac.go.jp/performance/calendar.html"
+      "schedule_url": "https://www.nntt.jac.go.jp/performance/calendar.html",
+      "walk_min": 1,
+      "rail_weak": 4,
+      "guest_type": "オペラ/バレエ/演劇(高所得)"
     },
     {
       "name": "歌舞伎座",
@@ -431,7 +566,10 @@
       "capacity": 1808,
       "lat": 35.6695,
       "lng": 139.768,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 1,
+      "rail_weak": 2,
+      "guest_type": "歌舞伎(高所得・年配)"
     },
     {
       "name": "新橋演舞場",
@@ -440,7 +578,10 @@
       "capacity": 1428,
       "lat": 35.668,
       "lng": 139.767,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 3,
+      "guest_type": "歌舞伎/演劇(年配)"
     },
     {
       "name": "明治座",
@@ -449,7 +590,10 @@
       "capacity": 1368,
       "lat": 35.689,
       "lng": 139.787,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 3,
+      "rail_weak": 4,
+      "guest_type": "演劇(年配・高所得)"
     },
     {
       "name": "日生劇場",
@@ -458,7 +602,10 @@
       "capacity": 1330,
       "lat": 35.6735,
       "lng": 139.758,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 2,
+      "rail_weak": 2,
+      "guest_type": "ミュージカル/演劇"
     },
     {
       "name": "IHIステージアラウンド東京",
@@ -467,7 +614,10 @@
       "capacity": 1300,
       "lat": 35.649,
       "lng": 139.796,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "サンシャイン劇場",
@@ -476,7 +626,10 @@
       "capacity": 808,
       "lat": 35.729,
       "lng": 139.7195,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 3,
+      "rail_weak": 3,
+      "guest_type": "演劇/舞台"
     },
     {
       "name": "シアタークリエ",
@@ -485,7 +638,10 @@
       "capacity": 746,
       "lat": 35.674,
       "lng": 139.7595,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 2,
+      "rail_weak": 2,
+      "guest_type": "ミュージカル"
     },
     {
       "name": "天王洲 銀河劇場",
@@ -494,7 +650,10 @@
       "capacity": 746,
       "lat": 35.6225,
       "lng": 139.749,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "世田谷パブリックシアター",
@@ -503,7 +662,10 @@
       "capacity": 600,
       "lat": 35.6435,
       "lng": 139.668,
-      "schedule_url": "https://setagaya-pt.jp/stage/calendar/"
+      "schedule_url": "https://setagaya-pt.jp/stage/calendar/",
+      "walk_min": 3,
+      "rail_weak": 3,
+      "guest_type": "演劇"
     },
     {
       "name": "紀伊國屋ホール",
@@ -512,7 +674,10 @@
       "capacity": 418,
       "lat": 35.6915,
       "lng": 139.7035,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "THEATRE1010",
@@ -521,7 +686,10 @@
       "capacity": 700,
       "lat": 35.749,
       "lng": 139.805,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "代々木公園イベント広場",
@@ -530,7 +698,10 @@
       "capacity": 0,
       "lat": 35.672,
       "lng": 139.696,
-      "schedule_url": "https://www.yoyogikoen.info/"
+      "schedule_url": "https://www.yoyogikoen.info/",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "代々木公園野外ステージ",
@@ -539,7 +710,10 @@
       "capacity": 0,
       "lat": 35.6705,
       "lng": 139.6975,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "上野恩賜公園",
@@ -548,7 +722,10 @@
       "capacity": 0,
       "lat": 35.7148,
       "lng": 139.774,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "日比谷公園",
@@ -557,7 +734,10 @@
       "capacity": 0,
       "lat": 35.674,
       "lng": 139.756,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "駒沢オリンピック公園",
@@ -566,7 +746,10 @@
       "capacity": 0,
       "lat": 35.6255,
       "lng": 139.662,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "芝公園",
@@ -575,7 +758,10 @@
       "capacity": 0,
       "lat": 35.6555,
       "lng": 139.749,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "お台場シンボルプロムナード公園",
@@ -584,7 +770,10 @@
       "capacity": 0,
       "lat": 35.626,
       "lng": 139.778,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "お台場海浜公園",
@@ -593,7 +782,10 @@
       "capacity": 0,
       "lat": 35.63,
       "lng": 139.774,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "新宿中央公園",
@@ -602,7 +794,10 @@
       "capacity": 0,
       "lat": 35.6905,
       "lng": 139.6915,
-      "schedule_url": "https://shinjukuchuo-park.jp/events/"
+      "schedule_url": "https://shinjukuchuo-park.jp/events/",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "大久保公園",
@@ -611,7 +806,10 @@
       "capacity": 0,
       "lat": 35.6955,
       "lng": 139.702,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "木場公園",
@@ -620,7 +818,10 @@
       "capacity": 0,
       "lat": 35.672,
       "lng": 139.805,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "豊洲ぐるり公園",
@@ -629,7 +830,10 @@
       "capacity": 0,
       "lat": 35.647,
       "lng": 139.79,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "錦糸公園",
@@ -638,7 +842,10 @@
       "capacity": 0,
       "lat": 35.6985,
       "lng": 139.815,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "隅田公園",
@@ -647,7 +854,10 @@
       "capacity": 0,
       "lat": 35.713,
       "lng": 139.801,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "井の頭恩賜公園",
@@ -656,7 +866,10 @@
       "capacity": 0,
       "lat": 35.7,
       "lng": 139.575,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "汐入公園",
@@ -665,7 +878,10 @@
       "capacity": 0,
       "lat": 35.734,
       "lng": 139.803,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "後楽園ホール",
@@ -674,7 +890,10 @@
       "capacity": 2000,
       "lat": 35.7058,
       "lng": 139.7515,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 2,
+      "rail_weak": 2,
+      "guest_type": "格闘技/ボクシング"
     },
     {
       "name": "大田区総合体育館",
@@ -683,7 +902,10 @@
       "capacity": 4000,
       "lat": 35.5615,
       "lng": 139.716,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 8,
+      "rail_weak": 4,
+      "guest_type": "格闘技/バスケ"
     },
     {
       "name": "駒沢オリンピック公園総合運動場体育館",
@@ -692,7 +914,10 @@
       "capacity": 3700,
       "lat": 35.623,
       "lng": 139.661,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "墨田区総合体育館",
@@ -701,7 +926,10 @@
       "capacity": 4000,
       "lat": 35.7,
       "lng": 139.806,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "青山学院記念館",
@@ -710,7 +938,10 @@
       "capacity": 3000,
       "lat": 35.661,
       "lng": 139.708,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "大井競馬場",
@@ -719,7 +950,10 @@
       "capacity": 0,
       "lat": 35.5925,
       "lng": 139.7475,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "夢の島競技場",
@@ -728,7 +962,10 @@
       "capacity": 5000,
       "lat": 35.648,
       "lng": 139.827,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "江戸川区陸上競技場",
@@ -737,7 +974,10 @@
       "capacity": 5000,
       "lat": 35.671,
       "lng": 139.87,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "東京ビッグサイト",
@@ -746,7 +986,10 @@
       "capacity": 0,
       "lat": 35.63,
       "lng": 139.7945,
-      "schedule_url": "https://www.bigsight.jp/visitor/event/"
+      "schedule_url": "https://www.bigsight.jp/visitor/event/",
+      "walk_min": 5,
+      "rail_weak": 4,
+      "guest_type": "展示会/ビジネス"
     },
     {
       "name": "サンシャインシティ文化会館",
@@ -755,7 +998,10 @@
       "capacity": 0,
       "lat": 35.729,
       "lng": 139.7195,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 8,
+      "rail_weak": 3,
+      "guest_type": "イベント/展示"
     },
     {
       "name": "ベルサール新宿グランド",
@@ -764,7 +1010,10 @@
       "capacity": 0,
       "lat": 35.692,
       "lng": 139.69,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "ベルサール渋谷ガーデン",
@@ -773,7 +1022,10 @@
       "capacity": 0,
       "lat": 35.6555,
       "lng": 139.6985,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "ベルサール六本木",
@@ -782,7 +1034,10 @@
       "capacity": 0,
       "lat": 35.664,
       "lng": 139.731,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "ベルサール秋葉原",
@@ -791,7 +1046,10 @@
       "capacity": 0,
       "lat": 35.6985,
       "lng": 139.773,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "東京流通センター",
@@ -800,7 +1058,10 @@
       "capacity": 0,
       "lat": 35.587,
       "lng": 139.753,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "科学技術館",
@@ -809,7 +1070,10 @@
       "capacity": 0,
       "lat": 35.6915,
       "lng": 139.753,
-      "schedule_url": "https://www.jsf.or.jp/event/"
+      "schedule_url": "https://www.jsf.or.jp/event/",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "TFTビル",
@@ -818,7 +1082,10 @@
       "capacity": 0,
       "lat": 35.636,
       "lng": 139.7935,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "帝国ホテル東京",
@@ -827,7 +1094,10 @@
       "capacity": 0,
       "lat": 35.672,
       "lng": 139.7585,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 3,
+      "rail_weak": 2,
+      "guest_type": "宴会/パーティー(高所得)"
     },
     {
       "name": "ホテルニューオータニ",
@@ -836,7 +1106,10 @@
       "capacity": 0,
       "lat": 35.68,
       "lng": 139.734,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 4,
+      "guest_type": "宴会/パーティー(高所得)"
     },
     {
       "name": "ホテルオークラ東京",
@@ -845,7 +1118,10 @@
       "capacity": 0,
       "lat": 35.6675,
       "lng": 139.7445,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 7,
+      "rail_weak": 4,
+      "guest_type": "宴会/パーティー(高所得)"
     },
     {
       "name": "グランドハイアット東京",
@@ -854,7 +1130,10 @@
       "capacity": 0,
       "lat": 35.6595,
       "lng": 139.729,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "京王プラザホテル",
@@ -863,7 +1142,10 @@
       "capacity": 0,
       "lat": 35.6905,
       "lng": 139.694,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "ホテル椿山荘東京",
@@ -872,7 +1154,10 @@
       "capacity": 0,
       "lat": 35.7165,
       "lng": 139.7195,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "グランドプリンスホテル新高輪 飛天",
@@ -881,7 +1166,10 @@
       "capacity": 0,
       "lat": 35.63,
       "lng": 139.73,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": 5,
+      "rail_weak": 3,
+      "guest_type": "宴会/学会(高所得)"
     },
     {
       "name": "ヒルトン東京",
@@ -890,7 +1178,10 @@
       "capacity": 0,
       "lat": 35.6935,
       "lng": 139.6905,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "早稲田大学大隈講堂",
@@ -899,7 +1190,10 @@
       "capacity": 1100,
       "lat": 35.709,
       "lng": 139.7195,
-      "schedule_url": "https://www.waseda.jp/culture/event/"
+      "schedule_url": "https://www.waseda.jp/culture/event/",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "東京大学安田講堂",
@@ -908,7 +1202,10 @@
       "capacity": 1100,
       "lat": 35.713,
       "lng": 139.76,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "上智大学",
@@ -917,7 +1214,10 @@
       "capacity": 0,
       "lat": 35.6835,
       "lng": 139.733,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "明治大学アカデミーホール",
@@ -926,7 +1226,10 @@
       "capacity": 1200,
       "lat": 35.696,
       "lng": 139.753,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "立教大学",
@@ -935,7 +1238,10 @@
       "capacity": 0,
       "lat": 35.731,
       "lng": 139.7045,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "WOMB",
@@ -944,7 +1250,10 @@
       "capacity": 1000,
       "lat": 35.657,
       "lng": 139.694,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "SOUND MUSEUM VISION",
@@ -953,7 +1262,10 @@
       "capacity": 1500,
       "lat": 35.657,
       "lng": 139.6945,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "V2 TOKYO",
@@ -962,7 +1274,10 @@
       "capacity": 0,
       "lat": 35.662,
       "lng": 139.732,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "TOHOシネマズ日比谷",
@@ -971,7 +1286,10 @@
       "capacity": 0,
       "lat": 35.6735,
       "lng": 139.76,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "TOHOシネマズ六本木ヒルズ",
@@ -980,7 +1298,10 @@
       "capacity": 0,
       "lat": 35.6595,
       "lng": 139.729,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "丸の内ピカデリー",
@@ -989,7 +1310,10 @@
       "capacity": 0,
       "lat": 35.679,
       "lng": 139.764,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "新宿バルト9",
@@ -998,7 +1322,10 @@
       "capacity": 0,
       "lat": 35.69,
       "lng": 139.7035,
-      "schedule_url": "https://tjoy.jp/shinjuku_wald9/events"
+      "schedule_url": "https://tjoy.jp/shinjuku_wald9/events",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "グランドシネマサンシャイン池袋",
@@ -1007,7 +1334,10 @@
       "capacity": 0,
       "lat": 35.729,
       "lng": 139.717,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "浅草寺",
@@ -1016,7 +1346,10 @@
       "capacity": 0,
       "lat": 35.7148,
       "lng": 139.7967,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "神田明神",
@@ -1025,7 +1358,10 @@
       "capacity": 0,
       "lat": 35.702,
       "lng": 139.768,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "明治神宮",
@@ -1034,7 +1370,10 @@
       "capacity": 0,
       "lat": 35.6764,
       "lng": 139.6993,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "靖国神社",
@@ -1043,7 +1382,10 @@
       "capacity": 0,
       "lat": 35.694,
       "lng": 139.7435,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "増上寺",
@@ -1052,7 +1394,10 @@
       "capacity": 0,
       "lat": 35.6575,
       "lng": 139.748,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "渋谷ヒカリエ",
@@ -1061,7 +1406,10 @@
       "capacity": 0,
       "lat": 35.659,
       "lng": 139.7035,
-      "schedule_url": "https://www.hikarie.jp/event/"
+      "schedule_url": "https://www.hikarie.jp/event/",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "東京ミッドタウン",
@@ -1070,7 +1418,10 @@
       "capacity": 0,
       "lat": 35.6655,
       "lng": 139.7305,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "六本木ヒルズアリーナ",
@@ -1079,7 +1430,10 @@
       "capacity": 0,
       "lat": 35.6605,
       "lng": 139.729,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "丸ビルホール",
@@ -1088,7 +1442,10 @@
       "capacity": 0,
       "lat": 35.681,
       "lng": 139.765,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "ルミネゼロ",
@@ -1097,7 +1454,10 @@
       "capacity": 0,
       "lat": 35.69,
       "lng": 139.699,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "すみだ水族館",
@@ -1106,7 +1466,10 @@
       "capacity": 0,
       "lat": 35.71,
       "lng": 139.8107,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "サンシャイン水族館",
@@ -1115,7 +1478,10 @@
       "capacity": 0,
       "lat": 35.729,
       "lng": 139.7195,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "チームラボプラネッツ豊洲",
@@ -1124,7 +1490,10 @@
       "capacity": 0,
       "lat": 35.648,
       "lng": 139.79,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "マクセルアクアパーク品川",
@@ -1133,7 +1502,10 @@
       "capacity": 0,
       "lat": 35.6285,
       "lng": 139.7385,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "竹芝客船ターミナル",
@@ -1142,7 +1514,10 @@
       "capacity": 0,
       "lat": 35.6555,
       "lng": 139.757,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "日の出桟橋",
@@ -1151,7 +1526,10 @@
       "capacity": 0,
       "lat": 35.648,
       "lng": 139.7595,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     },
     {
       "name": "晴海客船ターミナル",
@@ -1160,7 +1538,10 @@
       "capacity": 0,
       "lat": 35.648,
       "lng": 139.782,
-      "schedule_url": ""
+      "schedule_url": "",
+      "walk_min": null,
+      "rail_weak": null,
+      "guest_type": ""
     }
   ]
 }
