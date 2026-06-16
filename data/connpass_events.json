@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-16T17:47:49.219554+09:00",
+  "fetched_at": "2026-06-16T22:24:50.591975+09:00",
   "date": "20260616",
   "count": 9,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-05-19T12:56:44+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 11361,
         "subdomain": "3-shake",
@@ -30,9 +30,9 @@
       "owner_id": 877054,
       "owner_nickname": "shinri_koda",
       "owner_display_name": "koda",
-      "accepted": 280,
+      "accepted": 292,
       "waiting": 0,
-      "updated_at": "2026-06-16T15:22:31+09:00"
+      "updated_at": "2026-06-16T19:57:54+09:00"
     },
     {
       "id": 393624,
@@ -47,7 +47,7 @@
       "published_at": "2026-05-19T11:57:52+09:00",
       "limit": 192,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 1229,
         "subdomain": "vuejs-meetup",
@@ -61,9 +61,9 @@
       "owner_id": 463553,
       "owner_nickname": "chabatake_i",
       "owner_display_name": "yamageji",
-      "accepted": 136,
+      "accepted": 144,
       "waiting": 0,
-      "updated_at": "2026-06-16T10:45:40+09:00"
+      "updated_at": "2026-06-16T18:29:54+09:00"
     },
     {
       "id": 393225,
@@ -78,7 +78,7 @@
       "published_at": "2026-05-08T09:01:46+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17330,
         "subdomain": "hello-output",
@@ -92,7 +92,7 @@
       "owner_id": 828572,
       "owner_nickname": "kakecyan",
       "owner_display_name": "kakecyan",
-      "accepted": 15,
+      "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-05-08T09:01:46+09:00"
     },
@@ -100,7 +100,7 @@
       "id": 394025,
       "title": "OCIjp #72 Oracle Cloud Infrastructure ユーザーグループ",
       "catch": "【オフライン開催！！】OCI AI活用＆開発最前線",
-      "description": "<h1>【開催概要】</h1>\n\n<p><b>今回は「オフライン開催」となりますのでご注意ください!!</b></p>\n<p>日時：2026年6月16日(火) 19:00-20:30<br>\n現地参加：日本オラクル社　本社オフィス( 東京都港区北青山2-5-8　オラクル青山センター )<br>\n名刺の持参をお願いします。<br></p>\n<h1>【タイムテーブル】（暫定・変更になる可能性もございます）</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">登壇者・備考</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00-19:10</td>\n<td style=\"text-align: left;\"><b>オープニング</b></td>\n<td style=\"text-align: left;\">OCIjp運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10-19:40</td>\n<td style=\"text-align: left;\"><b>Oracle AI Database Private Agent FactoryとAPEXの連携による次世代アプリ </b></td>\n<td style=\"text-align: left;\">株式会社野村総合研究所Shinichiro Otsuka（Oracle ACE Director）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40-20:00</td>\n<td style=\"text-align: left;\"><b>AI時代におくる平成時代延長型Webフレームワーク「Hinoki」の紹介</b></td>\n<td style=\"text-align: left;\">日本オラクル株式会社　鈴木様</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-20:25</td>\n<td style=\"text-align: left;\"><b>LT大会</b></td>\n<td style=\"text-align: left;\">　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:25-20:30</td>\n<td style=\"text-align: left;\"><b>次回予告</b></td>\n<td style=\"text-align: left;\">OCIjp運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30-</td>\n<td style=\"text-align: left;\"><b>交流会</b></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p><br>\n<b>Oracle AI Database Private Agent FactoryとAPEXの連携による次世代アプリ </b> <br>\nこれからのAIシステム構築の主軸となる大注目の'Oracle AI Database Private Agent Factory'を特集したいと思います。<br>\nAPEXとの連携による次世代アプリ実現に向けた考察や実装についてご紹介します。<br>\nOracle AI Database Private Agent Factoryに取り組むきっかけになれればうれしいです。<br>\nどうぞよろしくお願いいたします。<br></p>\n<p><b>「AI時代におくる平成時代延長型Webフレームワーク「Hinoki」の紹介」</b><br>\nAIコーディングが幅を利かせるようになっても、「最終的には人の目でレビューする」ことが求められている現状。人にとって読みやすいはずのRails風DSLを使って、ADB上で動作するWebアプリケーションを作成できる「Hinoki」の紹介をします。 <br></p>\n<p><b>LT大会</b><br>\n少しでもOCIに関係していればなんでもOKです！<br>\nOCIの事例・質問・自慢話・失敗事例などなど・・・。<br>\n<br></p>\n<h1>【OCIjpのテーマ】</h1>\n<p>OCIjpはOCIユーザー企業有志による、ユーザーグループです。<br>\n2019年5月に東京/ソウル リージョンがオープンし、2020年2月に大阪リージョンがオープンした、今まさに勢いを増している次世代クラウド Oracle Cloud Infrastructure (OCI)について熱く語ります！<br>\nこれから身に付けるクラウドテクノロジーとしてはNo.1のOCIに、ぜひ触れてみてください。<br>仕事ではオンプレミスしか触れない、AWSしか知らない、そういった方々にも、いずれこのOCIが移行先候補に挙がる日が来ます！\n<br><br>\nユーザーグループだからこそ、公平な立場でユニークな切り口のイベントを企画してきます！</p>\n<h1>【こんな方におすすめ】</h1>\n\n<p>◆クラウドやセキュリティ、データベースに興味がある方</p>\n<p>◆IT企業に就職予定の学生の方、IT企業に転職予定のIT未経験者</p>\n<p>◆これから稼げるITスキルを身に付けたい方、資格を取りたい方</p>\n<p>◆オンプレミスしか経験がないエンジニア</p>\n<p>◆OCIを知らないクラウドエンジニア</p>\n<p>◆最新のトレンドに興味があるエンジニア</p>\n<p>◆イベント運営に興味がある方は、運営スラックにjoinしてください！<br>\n<a href=\"https://join.slack.com/t/oraclecloudusergroup/shared_invite/zt-1l90ah6cj-zfFrrAfgfcHKHTf8qb_JgQ\" rel=\"nofollow\">https://join.slack.com/t/oraclecloudusergroup/shared_invite/zt-1l90ah6cj-zfFrrAfgfcHKHTf8qb_JgQ</a></p>\n<h1>【注意点】</h1>\n<p>本イベント参加者には、本勉強会等のお知らせを継続的に送付させて頂きます。あらかじめご了承いただければ幸いです。</p>\n<p>&lt;プライバシーポリシー / 個人情報の取り扱いについて&gt;<br>\n<a href=\"https://fullenergy.co.jp/privacy-policy/\" rel=\"nofollow\">https://fullenergy.co.jp/privacy-policy/</a>\n<a href=\"https://fullenergy.co.jp/privacy-handling/\" rel=\"nofollow\">https://fullenergy.co.jp/privacy-handling/</a></p>\n<h1>【運営】</h1>\n<p>OCIjpユーザグループ有志<br>\n担当：松本、鈴木、大森、Shinichiro Otsuka（Oracle ACE Director）、原田、山川、武井、白栁、千明、他多数</p>",
+      "description": "<h1>【開催概要】</h1>\n\n<p><b>今回は「オフライン開催」となりますのでご注意ください!!</b></p>\n<p>日時：2026年6月16日(火) 19:00-20:30<br>\n現地参加：日本オラクル社　本社オフィス( 東京都港区北青山2-5-8　オラクル青山センター )<br>\n名刺の持参をお願いします。<br></p>\n<h1>【タイムテーブル】（暫定・変更になる可能性もございます）</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">登壇者・備考</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00-19:10</td>\n<td style=\"text-align: left;\"><b>オープニング</b></td>\n<td style=\"text-align: left;\">OCIjp運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10-19:40</td>\n<td style=\"text-align: left;\"><b>Oracle AI Database Private Agent FactoryとAPEXの連携による次世代アプリ </b></td>\n<td style=\"text-align: left;\">株式会社野村総合研究所Shinichiro Otsuka（Oracle ACE Director）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40-20:00</td>\n<td style=\"text-align: left;\"><b>AI時代におくる平成時代延長型Webフレームワーク「Hinoki」の紹介</b></td>\n<td style=\"text-align: left;\">OCIjp運営 鈴木</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-20:25</td>\n<td style=\"text-align: left;\"><b>LT大会</b></td>\n<td style=\"text-align: left;\">　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:25-20:30</td>\n<td style=\"text-align: left;\"><b>次回予告</b></td>\n<td style=\"text-align: left;\">OCIjp運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30-</td>\n<td style=\"text-align: left;\"><b>交流会</b></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p><br>\n<b>Oracle AI Database Private Agent FactoryとAPEXの連携による次世代アプリ </b> <br>\nこれからのAIシステム構築の主軸となる大注目の'Oracle AI Database Private Agent Factory'を特集したいと思います。<br>\nAPEXとの連携による次世代アプリ実現に向けた考察や実装についてご紹介します。<br>\nOracle AI Database Private Agent Factoryに取り組むきっかけになれればうれしいです。<br>\nどうぞよろしくお願いいたします。<br></p>\n<p><b>「AI時代におくる平成時代延長型Webフレームワーク「Hinoki」の紹介」</b><br>\nAIコーディングが幅を利かせるようになっても、「最終的には人の目でレビューする」ことが求められている現状。人にとって読みやすいはずのRails風DSLを使って、ADB上で動作するWebアプリケーションを作成できる「Hinoki」の紹介をします。 <br></p>\n<p><b>LT大会</b><br>\n少しでもOCIに関係していればなんでもOKです！<br>\nOCIの事例・質問・自慢話・失敗事例などなど・・・。<br>\n<br></p>\n<h1>【OCIjpのテーマ】</h1>\n<p>OCIjpはOCIユーザー企業有志による、ユーザーグループです。<br>\n2019年5月に東京/ソウル リージョンがオープンし、2020年2月に大阪リージョンがオープンした、今まさに勢いを増している次世代クラウド Oracle Cloud Infrastructure (OCI)について熱く語ります！<br>\nこれから身に付けるクラウドテクノロジーとしてはNo.1のOCIに、ぜひ触れてみてください。<br>仕事ではオンプレミスしか触れない、AWSしか知らない、そういった方々にも、いずれこのOCIが移行先候補に挙がる日が来ます！\n<br><br>\nユーザーグループだからこそ、公平な立場でユニークな切り口のイベントを企画してきます！</p>\n<h1>【こんな方におすすめ】</h1>\n\n<p>◆クラウドやセキュリティ、データベースに興味がある方</p>\n<p>◆IT企業に就職予定の学生の方、IT企業に転職予定のIT未経験者</p>\n<p>◆これから稼げるITスキルを身に付けたい方、資格を取りたい方</p>\n<p>◆オンプレミスしか経験がないエンジニア</p>\n<p>◆OCIを知らないクラウドエンジニア</p>\n<p>◆最新のトレンドに興味があるエンジニア</p>\n<p>◆イベント運営に興味がある方は、運営スラックにjoinしてください！<br>\n<a href=\"https://join.slack.com/t/oraclecloudusergroup/shared_invite/zt-1l90ah6cj-zfFrrAfgfcHKHTf8qb_JgQ\" rel=\"nofollow\">https://join.slack.com/t/oraclecloudusergroup/shared_invite/zt-1l90ah6cj-zfFrrAfgfcHKHTf8qb_JgQ</a></p>\n<h1>【注意点】</h1>\n<p>本イベント参加者には、本勉強会等のお知らせを継続的に送付させて頂きます。あらかじめご了承いただければ幸いです。</p>\n<p>&lt;プライバシーポリシー / 個人情報の取り扱いについて&gt;<br>\n<a href=\"https://fullenergy.co.jp/privacy-policy/\" rel=\"nofollow\">https://fullenergy.co.jp/privacy-policy/</a>\n<a href=\"https://fullenergy.co.jp/privacy-handling/\" rel=\"nofollow\">https://fullenergy.co.jp/privacy-handling/</a></p>\n<h1>【運営】</h1>\n<p>OCIjpユーザグループ有志<br>\n担当：松本、鈴木、大森、Shinichiro Otsuka（Oracle ACE Director）、原田、山川、武井、白栁、千明、他多数</p>",
       "url": "https://fullenergy-oci.connpass.com/event/394025/",
       "image_url": "https://media.connpass.com/thumbs/f2/ff/f2ffa8c00272e627eb8e0d70c8106110.png",
       "hash_tag": "OCIjp",
@@ -109,7 +109,7 @@
       "published_at": "2026-05-19T17:01:17+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 8329,
         "subdomain": "fullenergy-oci",
@@ -120,12 +120,12 @@
       "place": "日本オラクル株式会社　本社",
       "lat": "35.671246100000",
       "lon": "139.718562900000",
-      "owner_id": 925462,
-      "owner_nickname": "hazukyu0000232",
-      "owner_display_name": "hazukyu0000232",
+      "owner_id": 191620,
+      "owner_nickname": "shimizu_yuuki",
+      "owner_display_name": "yuki_shimizu",
       "accepted": 34,
       "waiting": 0,
-      "updated_at": "2026-06-16T16:34:21+09:00"
+      "updated_at": "2026-06-16T18:54:59+09:00"
     },
     {
       "id": 394175,
@@ -138,9 +138,9 @@
       "started_at": "2026-06-16T19:00:00+09:00",
       "ended_at": "2026-06-16T21:00:00+09:00",
       "published_at": "2026-05-25T13:35:56+09:00",
-      "limit": 173,
+      "limit": 174,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17382,
         "subdomain": "aibuilders",
@@ -154,15 +154,15 @@
       "owner_id": 578955,
       "owner_nickname": "minorun365",
       "owner_display_name": "みのるん",
-      "accepted": 173,
-      "waiting": 11,
-      "updated_at": "2026-06-15T17:58:57+09:00"
+      "accepted": 174,
+      "waiting": 9,
+      "updated_at": "2026-06-16T18:16:10+09:00"
     },
     {
       "id": 394427,
       "title": "Claude Code Meetup Japan #6 (Claude Code祭り!)",
       "catch": "進化し続けるClaude Code！！ Claude CodeによるAI駆動開発の新時代！！",
-      "description": "<h1><b>Claude Code Meetup Japan #6 (Claude Code祭り!)</b></h1>\n<h2><b>自律型エージェントが切り拓く、AI駆動開発の新時代<br> 「Claude Code」の実践事例とテクニックを徹底紹介！！</b></h2>\n<p>生成AI・LLMの登場からGitHub Copilot, Cursorをはじめとする開発ツールの登場により、コード生成・自動補完のみならず、要件整理、UIデザイン、設計、テスト作成、ドキュメント作成においてもAIを駆使する新たな開発スタイルが生まれつつあります。\n更に「AI駆動要件定義」「AI駆動テスト」とも言える新たなパラダイムシフトにより、今後アプリケーション・システム開発プロセス全体の大きな変化が予想されます。<br>\n<b>Claude Code Meetup JapanはAI駆動開発の自律型エージェントのデファクトスタンダードとも言える「Claude Code」にフォーカスし、Meetupを開催します！！</b></p>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！</p>\n<p>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！</p>\n<h2>日時</h2>\n<p><strong>2026年6月16日(火) 19:00〜21:00（開場：18:30）</strong></p>\n<p><b>配信機材の調整等により開始が遅れる場合がございます。予めご了承ください。</b><br>\n<b><font color=\"red\">開始直前は受付が混み合うことが予想されるため、現地参加の方は余裕をもって会場にお越しください。</font></b><br></p>\n<p>※現地参加の方向けに<br>\n<strong>21:00〜22:00 懇親会（ネットワーキング）</strong> を予定しています。</p>\n<blockquote>\n<p>配信機材の調整等により開始が若干遅れる場合がございます。予めご了承ください。</p>\n</blockquote>\n<hr>\n<h2>開催形式</h2>\n<p><strong>オンサイト＋オンライン（ハイブリッド）</strong></p>\n<ul>\n<li>現地参加：最大250名（増枠の場合あり）</li>\n<li>オンライン：YouTube Live 配信予定</li>\n<li>申し込み：Connpass（本サイト）</li>\n<li>配信URLは参加者向けに後日掲載します</li>\n</ul>\n<hr>\n<h2>会場</h2>\n<p><strong>LINEヤフー株式会社 セミナールーム</strong></p>\n<p>〒102-8282 東京都千代田区紀尾井町1-3<br>\n東京ガーデンテラス紀尾井町 紀尾井タワー</p>\n<p>※入館申請は不要です。当日は直接会場へお越しください。</p>\n<p>📍 マップ<br>\n<a href=\"https://map.yahoo.co.jp/place?ac=13101&amp;az=MzUuMS4z&amp;lat=35.68010&amp;lon=139.73173&amp;zoom=14&amp;maptype=basic\" rel=\"nofollow\">https://map.yahoo.co.jp/place?ac=13101&amp;az=MzUuMS4z&amp;lat=35.68010&amp;lon=139.73173&amp;zoom=14&amp;maptype=basic</a></p>\n<hr>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:10</td>\n<td>オープニング/会場案内</td>\n<td>森茂さん</td>\n</tr>\n<tr>\n<td>19:10-19:30</td>\n<td>Agent Skills 徹底解説！ ルール / Tool / Skill / MCP / Subagent — まず何で始めて、いつ何を足すか</td>\n<td>佐藤亮さん(<a href=\"https://x.com/nobita2040\" rel=\"nofollow\">@nobita2040</a>)</td>\n</tr>\n<tr>\n<td>19:30-19:50</td>\n<td>AI駆動開発を爆速化する：Kanary / Gista.js開発者からみたClaude Fable 5の実力とは？</td>\n<td>Kenn Ejimaさん(<a href=\"https://x.com/kenn\" rel=\"nofollow\">@kenn</a>)</td>\n</tr>\n<tr>\n<td>19:50-20:00</td>\n<td>勉強会&amp;スポンサー紹介</td>\n<td>Yasuhiro Arai(<a href=\"https://x.com/kimotuki\" rel=\"nofollow\">@kimotuki</a>)</td>\n</tr>\n<tr>\n<td>20:00-20:10</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>20:10-20:15</td>\n<td>大企業におけるClaude Codeでの開発はどこまで進んでいるのか？</td>\n<td>田口 悠希@ソフトバンク株式会社satto開発責任者(<a href=\"https://x.com/satto_ai_agent\" rel=\"nofollow\">@satto_ai_agent</a>)</td>\n</tr>\n<tr>\n<td>20:15-20:20</td>\n<td>実装はしない。でも、誰よりもAIと喋っている。- Claude Codeで回すAI駆動PM -</td>\n<td>shimitomoさん</td>\n</tr>\n<tr>\n<td>20:20-20:25</td>\n<td>Claude Codeで作る\"ハーネス\" — 個人技を組織に広げる実践録</td>\n<td>吉本 圭さん@グリーエックス執行役員</td>\n</tr>\n<tr>\n<td>20:26-20:31</td>\n<td>スマートグラスで並列バイブコーディング</td>\n<td>aq_hyshuさん</td>\n</tr>\n<tr>\n<td>20:32-20:37</td>\n<td>Claude Code の Sandbox機能を Anthropic Sandbox Runtime (srt) で試そう！</td>\n<td>tmkさん(<a href=\"https://x.com/tmk2154\" rel=\"nofollow\">@tmk2154</a>)</td>\n</tr>\n<tr>\n<td>20:38-20:43</td>\n<td>AIはレガシーシステムを保守できるのか？</td>\n<td>Tadashi Sugieさん(tdash)</td>\n</tr>\n<tr>\n<td>20:44-20:49</td>\n<td>普段の開発業務におけるClaude Codeの活用フロー</td>\n<td>Gen Tamuraさん(<a href=\"https://x.com/gentamura84\" rel=\"nofollow\">@gentamura84</a>)</td>\n</tr>\n<tr>\n<td>20:50-20:55</td>\n<td>MCP カスタムツールキット戦略</td>\n<td>杉本 和也さん(<a href=\"https://x.com/sugimomoto\" rel=\"nofollow\">@sugimomoto</a>)</td>\n</tr>\n<tr>\n<td>20:55-21:00</td>\n<td>クロージング&amp;アンケート</td>\n<td>菅本さん</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります  <br>\n※一部セッションはリモート登壇となる可能性があります  <br></p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：LINEヤフー株式会社<br>\n配信協力：ソフトバンク株式会社_satto開発チーム、LINEヤフー株式会社<br>\n懇親会協力：ソフトバンク株式会社_satto開発チーム、LINEヤフー株式会社<br>\n協力：<a href=\"https://www.ai-driven.dev/ai%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0/\" rel=\"nofollow\">AI駆動開発コンソーシアム</a>、<a href=\"https://gais.jp/\" rel=\"nofollow\">一般社団法人 生成ＡＩ協会（GAIS）</a>、ULSコンサルティング株式会社、株式会社ログラス、クラスメソッド株式会社、KDDIアジャイル開発センター株式会社<br>\n後援：さくらインターネット株式会社、株式会社ラック、Autify, Inc.、<br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h2>スポンサー（Special Thanks）</h2>\n<p>本勉強会は以下の企業様のご協力により開催されます。</p>\n<ul>\n<li>会場提供：<a href=\"https://www.lycorp.co.jp/ja/\" rel=\"nofollow\">LINEヤフー株式会社</a></li>\n<li>配信協力：<a href=\"https://zenn.dev/p/satto_workspace\" rel=\"nofollow\">ソフトバンク株式会社_satto開発チーム</a>、<a href=\"https://www.lycorp.co.jp/ja/\" rel=\"nofollow\">LINEヤフー株式会社</a></li>\n<li>懇親会スポンサー：<a href=\"https://zenn.dev/p/satto_workspace\" rel=\"nofollow\">ソフトバンク株式会社_satto開発チーム</a>、<a href=\"https://www.lycorp.co.jp/ja/\" rel=\"nofollow\">LINEヤフー株式会社</a></li>\n</ul>",
+      "description": "<h1><b>Claude Code Meetup Japan #6 (Claude Code祭り!)</b></h1>\n<h2><b>自律型エージェントが切り拓く、AI駆動開発の新時代<br> 「Claude Code」の実践事例とテクニックを徹底紹介！！</b></h2>\n<p>生成AI・LLMの登場からGitHub Copilot, Cursorをはじめとする開発ツールの登場により、コード生成・自動補完のみならず、要件整理、UIデザイン、設計、テスト作成、ドキュメント作成においてもAIを駆使する新たな開発スタイルが生まれつつあります。\n更に「AI駆動要件定義」「AI駆動テスト」とも言える新たなパラダイムシフトにより、今後アプリケーション・システム開発プロセス全体の大きな変化が予想されます。<br>\n<b>Claude Code Meetup JapanはAI駆動開発の自律型エージェントのデファクトスタンダードとも言える「Claude Code」にフォーカスし、Meetupを開催します！！</b></p>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！</p>\n<p>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！</p>\n<h2>日時</h2>\n<p><strong>2026年6月16日(火) 19:00〜21:00（開場：18:30）</strong></p>\n<p><b>配信機材の調整等により開始が遅れる場合がございます。予めご了承ください。</b><br>\n<b><font color=\"red\">開始直前は受付が混み合うことが予想されるため、現地参加の方は余裕をもって会場にお越しください。</font></b><br></p>\n<p>※現地参加の方向けに<br>\n<strong>21:00〜22:00 懇親会（ネットワーキング）</strong> を予定しています。</p>\n<blockquote>\n<p>配信機材の調整等により開始が若干遅れる場合がございます。予めご了承ください。</p>\n</blockquote>\n<hr>\n<h2>開催形式</h2>\n<p><strong>オンサイト＋オンライン（ハイブリッド）</strong></p>\n<ul>\n<li>現地参加：最大250名（増枠の場合あり）</li>\n<li>オンライン：YouTube Live 配信予定</li>\n<li>申し込み：Connpass（本サイト）</li>\n<li>配信URLは参加者向けに後日掲載します</li>\n</ul>\n<hr>\n<h2>会場</h2>\n<p><strong>LINEヤフー株式会社 セミナールーム</strong></p>\n<p>〒102-8282 東京都千代田区紀尾井町1-3<br>\n東京ガーデンテラス紀尾井町 紀尾井タワー</p>\n<p>※入館申請は不要です。当日は直接会場へお越しください。</p>\n<p>📍 マップ<br>\n<a href=\"https://map.yahoo.co.jp/place?ac=13101&amp;az=MzUuMS4z&amp;lat=35.68010&amp;lon=139.73173&amp;zoom=14&amp;maptype=basic\" rel=\"nofollow\">https://map.yahoo.co.jp/place?ac=13101&amp;az=MzUuMS4z&amp;lat=35.68010&amp;lon=139.73173&amp;zoom=14&amp;maptype=basic</a></p>\n<hr>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:10</td>\n<td>オープニング/会場案内</td>\n<td>森茂さん</td>\n</tr>\n<tr>\n<td>19:10-19:30</td>\n<td>Agent Skills 徹底解説！ ルール / Tool / Skill / MCP / Subagent — まず何で始めて、いつ何を足すか</td>\n<td>佐藤亮さん(<a href=\"https://x.com/nobita2040\" rel=\"nofollow\">@nobita2040</a>)</td>\n</tr>\n<tr>\n<td>19:30-19:50</td>\n<td>AI駆動開発を爆速化する：Kanary / Gista.js開発者からみたClaude Fable 5の実力とは？</td>\n<td>Kenn Ejimaさん(<a href=\"https://x.com/kenn\" rel=\"nofollow\">@kenn</a>)</td>\n</tr>\n<tr>\n<td>19:50-20:00</td>\n<td>勉強会&amp;スポンサー紹介</td>\n<td>Yasuhiro Arai(<a href=\"https://x.com/kimotuki\" rel=\"nofollow\">@kimotuki</a>)</td>\n</tr>\n<tr>\n<td>20:00-20:10</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>20:10-20:15</td>\n<td>大企業におけるClaude Codeでの開発はどこまで進んでいるのか？</td>\n<td>田口 悠希@ソフトバンク株式会社satto開発責任者(<a href=\"https://x.com/satto_ai_agent\" rel=\"nofollow\">@satto_ai_agent</a>)</td>\n</tr>\n<tr>\n<td>20:15-20:20</td>\n<td>実装はしない。でも、誰よりもAIと喋っている。- Claude Codeで回すAI駆動PM -</td>\n<td>shimitomoさん</td>\n</tr>\n<tr>\n<td>20:20-20:25</td>\n<td>Claude Codeで作る\"ハーネス\" — 個人技を組織に広げる実践録</td>\n<td>吉本 圭さん@グリーエックス執行役員</td>\n</tr>\n<tr>\n<td>20:26-20:31</td>\n<td>スマートグラスで並列バイブコーディング</td>\n<td>aq_hyshuさん</td>\n</tr>\n<tr>\n<td>20:32-20:37</td>\n<td>Claude Code の Sandbox機能を Anthropic Sandbox Runtime (srt) で試そう！</td>\n<td>tmkさん(<a href=\"https://x.com/tmk2154\" rel=\"nofollow\">@tmk2154</a>)</td>\n</tr>\n<tr>\n<td>20:38-20:43</td>\n<td>AIはレガシーシステムを保守できるのか？</td>\n<td>Tadashi Sugieさん(tdash)</td>\n</tr>\n<tr>\n<td>20:44-20:49</td>\n<td>普段の開発業務におけるClaude Codeの活用フロー</td>\n<td>Gen Tamuraさん(<a href=\"https://x.com/gentamura84\" rel=\"nofollow\">@gentamura84</a>)</td>\n</tr>\n<tr>\n<td>20:50-20:55</td>\n<td>MCP カスタムツールキット戦略</td>\n<td>杉本 和也さん(<a href=\"https://x.com/sugimomoto\" rel=\"nofollow\">@sugimomoto</a>)</td>\n</tr>\n<tr>\n<td>20:55-21:00</td>\n<td>クロージング&amp;アンケート</td>\n<td>菅本さん</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります  <br>\n※一部セッションはリモート登壇となる可能性があります  <br></p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：LINEヤフー株式会社<br>\n配信協力：ソフトバンク株式会社_satto開発チーム、LINEヤフー株式会社、クリエーションライン株式会社<br>\n懇親会協力：ソフトバンク株式会社_satto開発チーム、LINEヤフー株式会社<br>\n協力：<a href=\"https://www.ai-driven.dev/ai%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0/\" rel=\"nofollow\">AI駆動開発コンソーシアム</a>、<a href=\"https://gais.jp/\" rel=\"nofollow\">一般社団法人 生成ＡＩ協会（GAIS）</a>、ULSコンサルティング株式会社、株式会社ログラス、クラスメソッド株式会社、KDDIアジャイル開発センター株式会社<br>\n後援：さくらインターネット株式会社、株式会社ラック、Autify, Inc.、<br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h2>スポンサー（Special Thanks）</h2>\n<p>本勉強会は以下の企業様のご協力により開催されます。</p>\n<ul>\n<li>会場提供：<a href=\"https://www.lycorp.co.jp/ja/\" rel=\"nofollow\">LINEヤフー株式会社</a></li>\n<li>配信協力：<a href=\"https://zenn.dev/p/satto_workspace\" rel=\"nofollow\">ソフトバンク株式会社_satto開発チーム</a>、<a href=\"https://www.lycorp.co.jp/ja/\" rel=\"nofollow\">LINEヤフー株式会社</a> 、<a href=\"https://www.creationline.com/\" rel=\"nofollow\">クリエーションライン株式会社</a> </li>\n<li>懇親会スポンサー：<a href=\"https://zenn.dev/p/satto_workspace\" rel=\"nofollow\">ソフトバンク株式会社_satto開発チーム</a>、<a href=\"https://www.lycorp.co.jp/ja/\" rel=\"nofollow\">LINEヤフー株式会社</a></li>\n</ul>",
       "url": "https://aid.connpass.com/event/394427/",
       "image_url": "https://media.connpass.com/thumbs/24/0d/240df3d596e91de6723722b0a477772f.png",
       "hash_tag": "ClaudeCodeMeetup",
@@ -171,7 +171,7 @@
       "published_at": "2026-05-26T12:00:05+09:00",
       "limit": 2770,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 14543,
         "subdomain": "aid",
@@ -182,12 +182,12 @@
       "place": "東京ガーデンテラス紀尾井町　LINEヤフー株式会社",
       "lat": "35.679992600000",
       "lon": "139.737936300000",
-      "owner_id": 937755,
-      "owner_nickname": "naoya_kato",
-      "owner_display_name": "加藤直矢(ログラスAI-Ops)",
-      "accepted": 1888,
-      "waiting": 31,
-      "updated_at": "2026-06-16T17:37:09+09:00"
+      "owner_id": 458146,
+      "owner_nickname": "yu-ma22",
+      "owner_display_name": "yuma_prog",
+      "accepted": 1956,
+      "waiting": 15,
+      "updated_at": "2026-06-16T19:20:21+09:00"
     },
     {
       "id": 396230,
@@ -202,7 +202,7 @@
       "published_at": "2026-06-05T07:52:41+09:00",
       "limit": 60,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16164,
         "subdomain": "design-team-no-chi",
@@ -216,7 +216,7 @@
       "owner_id": 50007,
       "owner_nickname": "osk_kamui",
       "owner_display_name": "Akihiro Mukai",
-      "accepted": 46,
+      "accepted": 42,
       "waiting": 0,
       "updated_at": "2026-06-12T08:37:39+09:00"
     },
@@ -224,7 +224,7 @@
       "id": 395881,
       "title": "SALT2 MEETUP #5 AIエンジニアリング勉強会【現地開催】",
       "catch": "記事発表（鬼澤、桑原）",
-      "description": "<h1>SALT2 MEETUP #5 AIエンジニアリング勉強会【現地開催】</h1>\n<h2>概要</h2>\n<p>SALT2 による記事発表イベントです。</p>\n<p>本イベントでは、AI、機械学習、深層学習、LLM、データサイエンス、ソフトウェア開発、プロダクト開発などに関する論文・技術記事・技術トピックを取り上げ、登壇者が背景、主要な考え方、技術的なポイントをわかりやすく解説します。</p>\n<p>当日は、SALT2 メンバーによるオリジナル記事をもとに、特定の技術・手法・開発事例について、その背景や課題設定、重要な考え方、実装・検証上のポイントを紹介する予定です。</p>\n<p>単なる概要紹介にとどまらず、技術をどのように理解し、実務やプロダクト開発にどう活かせるかという観点から、登壇者が自身の理解や考察を交えて発表します。</p>\n<p>後半では、参加者からの質問を受けながら、登壇者・参加者同士で自由に議論できる時間を設ける予定です。</p>\n<p>記事や論文を読むだけでは見えにくい背景や考え方について、発表とディスカッションを通じて理解を深める場を目指します。</p>\n<h2>こういう方におすすめ</h2>\n<ul>\n<li>AI、機械学習、深層学習、LLM、データサイエンスに関心のある方</li>\n<li>論文を読んでみたいが、どこから理解すればよいか悩んでいる方</li>\n<li>技術トピックについて、登壇者の調査や考察をもとに理解を深めたい方</li>\n<li>論文や技術的な知見を実務やプロダクト開発にどう活かすかに関心のある方</li>\n<li>データサイエンス、AIエンジニアリング、AIソリューション開発に取り組んでいる方</li>\n<li>SALT2labの活動に関心のある方</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>18:00</code></td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td><code>18:05</code></td>\n<td>記事発表 1</td>\n</tr>\n<tr>\n<td><code>18:25</code></td>\n<td>質疑応答・ディスカッション 1</td>\n</tr>\n<tr>\n<td><code>18:35</code></td>\n<td>記事発表 2</td>\n</tr>\n<tr>\n<td><code>18:55</code></td>\n<td>質疑応答・ディスカッション 2</td>\n</tr>\n<tr>\n<td><code>19:05</code></td>\n<td>クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>登壇者</h2>\n<h3>鬼澤 輔</h3>\n<p><strong>CEO / Senior AI Engineer</strong></p>\n<p>プロフィール：東京大学工学部システム創成学科 PSIコース松尾・岩澤研究室出身。FUJITSU(富士通)で、自然言語処理技術のリサーチインターンに従事。その後、東京大学松尾・岩澤研究室にて、大規模言語モデル、Embedding model、RAG/in context learningの研究を行う。2023年総務省生成AIプロジェクトに有識者として参画。2023年10月に株式会社SALT2を創業し、2025年10月にブーストコンサルティングへM&amp;A（子会社化）。</p>\n<h3>桑原 輝来</h3>\n<p><strong>Marketing</strong></p>\n<p>プロフィール：松本大学総合経営学部総合経営学科3年。現在は大学を1年間休学し、上京中。直近約6ヶ月間、AIスタートアップにて営業・マーケティングを担当。</p>\n<h2>日時・場所・アクセス</h2>\n<ul>\n<li>日時：2026年6月16日（火）18:00〜</li>\n<li>会場：東京都港区麻布台1-8-10 麻布偕成ビル3階</li>\n<li>アクセス：東京メトロ日比谷線「神谷町駅」より徒歩6分</li>\n<li>開催形式：現地開催</li>\n</ul>\n<h2>到着後の受付手順</h2>\n<ul>\n<li>エレベーターで3階に上がります。   </li>\n<li>右手前方の扉から中にお入りください。（※右手後方にも扉がありますが、そちらではございません）   </li>\n<li>入ってすぐ正面に受付用のiPadがございます。   </li>\n<li>画面の「QRコードをお持ちでない方」をタップしてください。   </li>\n<li>担当者がすぐにお迎えに参りますので、そのまま少々お待ちください。   </li>\n</ul>\n<div align=\"center\" style=\"\">\n  <img height=\"220\" src=\"https://drive.google.com/thumbnail?id=10rzg8iy4hAmAscDg5o3R8lLGMlRf6ZSf&amp;sz=w1000\" style=\"margin-right: 12px;\">\n  <img height=\"220\" src=\"https://drive.google.com/thumbnail?id=19kQl2QvJVrHWlFJr9PqVbfQLiZQvTTSR&amp;sz=w1000\" style=\"margin-right: 12px;\">\n  <img height=\"220\" src=\"https://drive.google.com/thumbnail?id=1vkx5rGpMsWHBDwLUbRBZUtn14snYlAow&amp;sz=w1000\" style=\"\">\n</div>\n\n<h2>申し込み方法</h2>\n<p>本ページよりお申し込みください。参加者多数の場合は、参加枠の調整または抽選を行う場合があります。</p>\n<h2>ハッシュタグ</h2>\n<p>SNS での投稿は <strong>#SALT2</strong> をご利用ください。</p>\n<h2>注意事項</h2>\n<ul>\n<li>イベント内容は予告なく変更となる場合があります。</li>\n<li>オンライン参加URLがある場合は、開催前に参加者向けにご案内します。</li>\n<li>営業目的のみでの参加はご遠慮ください。</li>\n</ul>",
+      "description": "<h1>SALT2 MEETUP #5 AIエンジニアリング勉強会【現地開催】</h1>\n<h2>概要</h2>\n<p>SALT2 による記事発表イベントです。</p>\n<p>本イベントでは、AI、機械学習、深層学習、LLM、データサイエンス、ソフトウェア開発、プロダクト開発などに関する論文・技術記事・技術トピックを取り上げ、登壇者が背景、主要な考え方、技術的なポイントをわかりやすく解説します。</p>\n<p>当日は、SALT2 メンバーによるオリジナル記事をもとに、特定の技術・手法・開発事例について、その背景や課題設定、重要な考え方、実装・検証上のポイントを紹介する予定です。</p>\n<p>単なる概要紹介にとどまらず、技術をどのように理解し、実務やプロダクト開発にどう活かせるかという観点から、登壇者が自身の理解や考察を交えて発表します。</p>\n<p>後半では、参加者からの質問を受けながら、登壇者・参加者同士で自由に議論できる時間を設ける予定です。</p>\n<p>記事や論文を読むだけでは見えにくい背景や考え方について、発表とディスカッションを通じて理解を深める場を目指します。</p>\n<p>Zenn記事：https://zenn.dev/salt2/articles/a618f381e058bb</p>\n<h2>こういう方におすすめ</h2>\n<ul>\n<li>AI、機械学習、深層学習、LLM、データサイエンスに関心のある方</li>\n<li>論文を読んでみたいが、どこから理解すればよいか悩んでいる方</li>\n<li>技術トピックについて、登壇者の調査や考察をもとに理解を深めたい方</li>\n<li>論文や技術的な知見を実務やプロダクト開発にどう活かすかに関心のある方</li>\n<li>データサイエンス、AIエンジニアリング、AIソリューション開発に取り組んでいる方</li>\n<li>SALT2labの活動に関心のある方</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>18:00</code></td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td><code>18:05</code></td>\n<td>記事発表 1</td>\n</tr>\n<tr>\n<td><code>18:25</code></td>\n<td>質疑応答・ディスカッション 1</td>\n</tr>\n<tr>\n<td><code>18:35</code></td>\n<td>記事発表 2</td>\n</tr>\n<tr>\n<td><code>18:55</code></td>\n<td>質疑応答・ディスカッション 2</td>\n</tr>\n<tr>\n<td><code>19:05</code></td>\n<td>クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>登壇者</h2>\n<h3>鬼澤 輔</h3>\n<p><strong>CEO / Senior AI Engineer</strong></p>\n<p>プロフィール：東京大学工学部システム創成学科 PSIコース松尾・岩澤研究室出身。FUJITSU(富士通)で、自然言語処理技術のリサーチインターンに従事。その後、東京大学松尾・岩澤研究室にて、大規模言語モデル、Embedding model、RAG/in context learningの研究を行う。2023年総務省生成AIプロジェクトに有識者として参画。2023年10月に株式会社SALT2を創業し、2025年10月にブーストコンサルティングへM&amp;A（子会社化）。</p>\n<h3>桑原 輝来</h3>\n<p><strong>Marketing</strong></p>\n<p>プロフィール：松本大学総合経営学部総合経営学科3年。現在は大学を1年間休学し、上京中。直近約6ヶ月間、AIスタートアップにて営業・マーケティングを担当。</p>\n<h2>日時・場所・アクセス</h2>\n<ul>\n<li>日時：2026年6月16日（火）18:00〜</li>\n<li>会場：東京都港区麻布台1-8-10 麻布偕成ビル3階</li>\n<li>アクセス：東京メトロ日比谷線「神谷町駅」より徒歩6分</li>\n<li>開催形式：現地開催</li>\n</ul>\n<h2>到着後の受付手順</h2>\n<ul>\n<li>エレベーターで3階に上がります。   </li>\n<li>右手前方の扉から中にお入りください。（※右手後方にも扉がありますが、そちらではございません）   </li>\n<li>入ってすぐ正面に受付用のiPadがございます。   </li>\n<li>画面の「QRコードをお持ちでない方」をタップしてください。   </li>\n<li>担当者がすぐにお迎えに参りますので、そのまま少々お待ちください。   </li>\n</ul>\n<div align=\"center\" style=\"\">\n  <img height=\"220\" src=\"https://drive.google.com/thumbnail?id=10rzg8iy4hAmAscDg5o3R8lLGMlRf6ZSf&amp;sz=w1000\" style=\"margin-right: 12px;\">\n  <img height=\"220\" src=\"https://drive.google.com/thumbnail?id=19kQl2QvJVrHWlFJr9PqVbfQLiZQvTTSR&amp;sz=w1000\" style=\"margin-right: 12px;\">\n  <img height=\"220\" src=\"https://drive.google.com/thumbnail?id=1vkx5rGpMsWHBDwLUbRBZUtn14snYlAow&amp;sz=w1000\" style=\"\">\n</div>\n\n<h2>申し込み方法</h2>\n<p>本ページよりお申し込みください。参加者多数の場合は、参加枠の調整または抽選を行う場合があります。</p>\n<h2>ハッシュタグ</h2>\n<p>SNS での投稿は <strong>#SALT2</strong> をご利用ください。</p>\n<h2>注意事項</h2>\n<ul>\n<li>イベント内容は予告なく変更となる場合があります。</li>\n<li>オンライン参加URLがある場合は、開催前に参加者向けにご案内します。</li>\n<li>営業目的のみでの参加はご遠慮ください。</li>\n</ul>",
       "url": "https://salt2.connpass.com/event/395881/",
       "image_url": "https://media.connpass.com/thumbs/dd/6e/dd6e5fc9112a095981391e242868d9fd.png",
       "hash_tag": "SALT2",
@@ -233,7 +233,7 @@
       "published_at": "2026-06-08T18:08:02+09:00",
       "limit": 25,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17684,
         "subdomain": "salt2",
@@ -249,7 +249,7 @@
       "owner_display_name": "株式会社SALT2",
       "accepted": 2,
       "waiting": 0,
-      "updated_at": "2026-06-15T18:18:35+09:00"
+      "updated_at": "2026-06-16T18:02:39+09:00"
     },
     {
       "id": 393942,
