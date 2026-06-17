@@ -474,8 +474,8 @@ function calcDayType(y, m, d) {
 
 function getTodayDayType() {
   var n = new Date();
-  // 16時前は前日のシフト日付を使う（乗務は16時スタート）
-  if(n.getHours() < 16) n.setDate(n.getDate() - 1);
+  // 13時前は前日のシフト日付を使う（I番13時/J番16時を13:00〜36:59でくくる）
+  if(n.getHours() < 13) n.setDate(n.getDate() - 1);
   return calcDayType(n.getFullYear(), n.getMonth()+1, n.getDate());
 }
 
@@ -504,9 +504,9 @@ var rainBoost=1.0,notifyEnabled=false,notifyInterval=null;
 function tick(){
   var n=new Date();
   document.getElementById('ck').textContent=('0'+n.getHours()).slice(-2)+':'+('0'+n.getMinutes()).slice(-2);
-  // シフト日付：16時前は前日
+  // シフト日付：13時前は前日（I番13時始まりに対応）
   var d=new Date(n);
-  if(d.getHours()<16) d.setDate(d.getDate()-1);
+  if(d.getHours()<13) d.setDate(d.getDate()-1);
   document.getElementById('cd').textContent=DAYS[d.getDay()]+'曜';
 }
 setInterval(tick,1000);tick();
