@@ -1,39 +1,8 @@
 {
-  "fetched_at": "2026-06-17T11:55:09.000770+09:00",
+  "fetched_at": "2026-06-17T17:24:29.606981+09:00",
   "date": "20260617",
   "count": 13,
   "events": [
-    {
-      "id": 396693,
-      "title": "【飛び入り歓迎】千住.dev #16 –足立区にゆかりのあるエンジニアの交流会",
-      "catch": "北千住界隈の技術コミュニティ",
-      "description": "<h2>概要</h2>\n<p>「千住.dev」は、北千住を拠点にエンジニアが集まり、自由に開発・勉強・交流ができるコミュニティです。\n初心者・経験者を問わず、各自が好きな技術に取り組みながら、ゆるくつながることを目的としています。</p>\n<p>わいわいと作業をしてもOK、雑談しながら情報交換するもOK！\n普段の仕事とは別の技術を試したり、積読していた本を読んだり、新しいツールを触ってみたり……気軽に参加してください！\n例）Claude Code、Copilot Agent、GPT画像(ロゴ)生成、Raspberry Pi Pico、量子コンピュータ、アプリ制作、Ruby on Rais、Udemy、Reactなど。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>北千住周辺でエンジニア仲間を見つけたい</li>\n<li>もくもく作業をしながら、技術的な雑談をしたい</li>\n<li>Ruby、Rails、TypeScript、フロントエンド、モバイル、AI、どんな技術でもOK</li>\n<li>オンラインではなくリアルで集まる場を探している</li>\n</ul>\n<h2>🗓️ 当日の流れ（予定）</h2>\n<ol>\n<li>19:15 - 19:30 開場受付</li>\n<li>19:30 - 19:45 簡単な自己紹介</li>\n<li>19:30 - 20:45 雑談したり、もくもく作業したりする時間</li>\n<li>20:45 - 21:00 振り返り・LT</li>\n</ol>\n<p>※終了後、希望者で懇親会を行います。22時終わりの健全な会の予定です。</p>\n<h2>📍 開催場所</h2>\n<ul>\n<li><strong>場所:</strong> <a href=\"https://www.art-center.jp/tokyo/\" rel=\"nofollow\">東京芸術センター</a> 9F 会議室</li>\n<li><strong>持ち物:</strong> PC・書籍など作業に必要なもの</li>\n<li><strong>アクセス:</strong> 北千住駅から徒歩7分  </li>\n</ul>\n<p><img height=\"300\" src=\"https://lh3.googleusercontent.com/pw/AP1GczOvFYbyR1hFpI1dmopB5ffeQSL5Ir6ttRI4XQLHDNfBK_d9b_YP51VhKZ72c7umv_hWTq3D6jP_TnDtNnc7XN-aD7Zmq36kAigI7_NE_8sVvWeuD870Rk_Z00idyGBNOk1onYkx1jntjm0f_KNNEBGs3g=w1518-h1012-s-no-gm?authuser=0\"></p>\n<p>主催者がプロジェクターを持っていきますので、LTの際はこちら利用してください。</p>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>施設にWi-Fiはありませんが、ゲストWifi付きのポケットWifi（楽天モバイル）持っていきますので、必要であればそちらをお使いください。</li>\n<li>参加者が快適に過ごせるよう、誹謗中傷や勧誘行為は禁止です。</li>\n<li>途中参加・途中退出OKです。</li>\n<li>初めての方も大歓迎！</li>\n</ul>\n<h2>📢 ハッシュタグ</h2>\n<p><strong>#senju_dev</strong></p>\n<p>イベントの感想や写真の投稿は大歓迎！ぜひSNSでシェアしてください！</p>\n<hr>\n<p>千住から広がる新しいつながり、あなたの参加をお待ちしています！🚀</p>",
-      "url": "https://senju.connpass.com/event/396693/",
-      "image_url": "https://media.connpass.com/thumbs/c1/a6/c1a68bccf585fdb4d591f5f9223bdaea.png",
-      "hash_tag": "",
-      "started_at": "2026-06-17T19:30:00+09:00",
-      "ended_at": "2026-06-17T21:00:00+09:00",
-      "published_at": "2026-06-08T12:55:50+09:00",
-      "limit": 15,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 11169,
-        "subdomain": "senju",
-        "title": "千住.dev",
-        "url": "https://senju.connpass.com/"
-      },
-      "address": "〒120-0034 東京都足立区千住１丁目４−１",
-      "place": "東京芸術センター",
-      "lat": "35.746939200000",
-      "lon": "139.800599700000",
-      "owner_id": 24917,
-      "owner_nickname": "yancya",
-      "owner_display_name": "yancya",
-      "accepted": 4,
-      "waiting": 0,
-      "updated_at": "2026-06-08T12:55:50+09:00"
-    },
     {
       "id": 397471,
       "title": "【無料/平日夜オフライン開催@代々木】Claude Code 実践ブートキャンプ",
@@ -66,6 +35,37 @@
       "updated_at": "2026-06-15T22:40:05+09:00"
     },
     {
+      "id": 396693,
+      "title": "【飛び入り歓迎】千住.dev #16 –足立区にゆかりのあるエンジニアの交流会",
+      "catch": "北千住界隈の技術コミュニティ",
+      "description": "<h2>概要</h2>\n<p>「千住.dev」は、北千住を拠点にエンジニアが集まり、自由に開発・勉強・交流ができるコミュニティです。\n初心者・経験者を問わず、各自が好きな技術に取り組みながら、ゆるくつながることを目的としています。</p>\n<p>わいわいと作業をしてもOK、雑談しながら情報交換するもOK！\n普段の仕事とは別の技術を試したり、積読していた本を読んだり、新しいツールを触ってみたり……気軽に参加してください！\n例）Claude Code、Copilot Agent、GPT画像(ロゴ)生成、Raspberry Pi Pico、量子コンピュータ、アプリ制作、Ruby on Rais、Udemy、Reactなど。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>北千住周辺でエンジニア仲間を見つけたい</li>\n<li>もくもく作業をしながら、技術的な雑談をしたい</li>\n<li>Ruby、Rails、TypeScript、フロントエンド、モバイル、AI、どんな技術でもOK</li>\n<li>オンラインではなくリアルで集まる場を探している</li>\n</ul>\n<h2>🗓️ 当日の流れ（予定）</h2>\n<ol>\n<li>19:15 - 19:30 開場受付</li>\n<li>19:30 - 19:45 簡単な自己紹介</li>\n<li>19:30 - 20:45 雑談したり、もくもく作業したりする時間</li>\n<li>20:45 - 21:00 振り返り・LT</li>\n</ol>\n<p>※終了後、希望者で懇親会を行います。22時終わりの健全な会の予定です。</p>\n<h2>📍 開催場所</h2>\n<ul>\n<li><strong>場所:</strong> <a href=\"https://www.art-center.jp/tokyo/\" rel=\"nofollow\">東京芸術センター</a> 9F 会議室</li>\n<li><strong>持ち物:</strong> PC・書籍など作業に必要なもの</li>\n<li><strong>アクセス:</strong> 北千住駅から徒歩7分  </li>\n</ul>\n<p><img height=\"300\" src=\"https://lh3.googleusercontent.com/pw/AP1GczOvFYbyR1hFpI1dmopB5ffeQSL5Ir6ttRI4XQLHDNfBK_d9b_YP51VhKZ72c7umv_hWTq3D6jP_TnDtNnc7XN-aD7Zmq36kAigI7_NE_8sVvWeuD870Rk_Z00idyGBNOk1onYkx1jntjm0f_KNNEBGs3g=w1518-h1012-s-no-gm?authuser=0\"></p>\n<p>主催者がプロジェクターを持っていきますので、LTの際はこちら利用してください。</p>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>施設にWi-Fiはありませんが、ゲストWifi付きのポケットWifi（楽天モバイル）持っていきますので、必要であればそちらをお使いください。</li>\n<li>参加者が快適に過ごせるよう、誹謗中傷や勧誘行為は禁止です。</li>\n<li>途中参加・途中退出OKです。</li>\n<li>初めての方も大歓迎！</li>\n</ul>\n<h2>📢 ハッシュタグ</h2>\n<p><strong>#senju_dev</strong></p>\n<p>イベントの感想や写真の投稿は大歓迎！ぜひSNSでシェアしてください！</p>\n<hr>\n<p>千住から広がる新しいつながり、あなたの参加をお待ちしています！🚀</p>",
+      "url": "https://senju.connpass.com/event/396693/",
+      "image_url": "https://media.connpass.com/thumbs/c1/a6/c1a68bccf585fdb4d591f5f9223bdaea.png",
+      "hash_tag": "",
+      "started_at": "2026-06-17T19:30:00+09:00",
+      "ended_at": "2026-06-17T21:00:00+09:00",
+      "published_at": "2026-06-08T12:55:50+09:00",
+      "limit": 15,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 11169,
+        "subdomain": "senju",
+        "title": "千住.dev",
+        "url": "https://senju.connpass.com/"
+      },
+      "address": "〒120-0034 東京都足立区千住１丁目４−１",
+      "place": "東京芸術センター",
+      "lat": "35.746939200000",
+      "lon": "139.800599700000",
+      "owner_id": 24917,
+      "owner_nickname": "yancya",
+      "owner_display_name": "yancya",
+      "accepted": 5,
+      "waiting": 0,
+      "updated_at": "2026-06-08T12:55:50+09:00"
+    },
+    {
       "id": 388086,
       "title": "Go Connect #14",
       "catch": "",
@@ -92,7 +92,7 @@
       "owner_id": 829205,
       "owner_nickname": "shi-uchida",
       "owner_display_name": "Injection KID",
-      "accepted": 17,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-06-14T14:25:47+09:00"
     },
@@ -128,68 +128,6 @@
       "updated_at": "2026-06-16T01:01:57+09:00"
     },
     {
-      "id": 394436,
-      "title": "tech.stmn #1",
-      "catch": "すべての技術に、スポットライトを。",
-      "description": "<h1>イベントについて</h1>\n<p>Web、アプリ、インフラ、AI、はたまたこだわりの開発環境やガジェットまで。tech.stmn は、領域の垣根をすべて取っ払った、オープンな勉強会です。</p>\n<p>「何でもアリ」だからこそ、思わぬ技術との出会いや、新しいインスピレーションが生まれるはず…✨<br></p>\n<p>あなたが今一番熱量を注いでいる「Tech」を、ぜひここに持ち寄ってください！少しでもTechにまつわるものであれば何でも大歓迎です！<br></p>\n<p>本イベントは<strong>オフライン（会場参加）</strong>のLT会になりますのでご注意ください。</p>\n<p>交流会も予定していますので、日頃の開発のあれこれなどについてお話ししましょう！<br></p>\n<h2>会場について</h2>\n<p>会場は株式会社スタメン 東京オフィス（wework麹町）になります。受付はwework 5Fの共用ラウンジにて行いますので、エレベーターで5Fまでお越しください。</p>\n<p>住所<br>\n〒102-0083 東京都千代田区麹町6-6-2番町麹町ビルディング 5F</p>\n<h3>注意点</h3>\n<ul>\n<li>広報のため、写真撮影を行い、SNS等で発信する場合があります。撮影を避けたい場合は当日の受付時にお申し付けください。</li>\n<li>当イベントはwework麹町の5F共用ラウンジにて開催いたします。イベント参加者の他に、wework入居者の方の出入りがございます。ご了承くださいませ。</li>\n</ul>\n<h2>交流会について</h2>\n<p>LT発表後に参加者での交流会を予定しています。<br>\n任意での参加になりますので、LTのみの参加でもOKです。<br>\n交流会ではジュースなどの飲み物や菓子類の提供を予定しています。<br></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">　　　時間　　　</th>\n<th style=\"text-align: center;\">　　　　　　　　　内容　　　　　　　　　</th>\n<th style=\"text-align: center;\">　　　登壇者　　　</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">開場・受付開始 (wework麹町 5F 共用ラウンジ)</td>\n<td style=\"text-align: center;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30</td>\n<td style=\"text-align: center;\">オープニング・挨拶</td>\n<td style=\"text-align: center;\">司会</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:35</td>\n<td style=\"text-align: center;\">受託開発、フリーランス、事業会社を渡り歩いた僕の感想</td>\n<td style=\"text-align: center;\">HiraishiTaro</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:40</td>\n<td style=\"text-align: center;\">Claude Agentでテストカバレッジ改善を自動化してみた</td>\n<td style=\"text-align: center;\">kotaro-shima</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45</td>\n<td style=\"text-align: center;\">LT</td>\n<td style=\"text-align: center;\">CookieySun</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:50</td>\n<td style=\"text-align: center;\">VimユーザーがEmacs を使い始めた話し(仮</td>\n<td style=\"text-align: center;\">とんとんぼ</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">LT</td>\n<td style=\"text-align: center;\">Kijima Daigo</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:00</td>\n<td style=\"text-align: center;\">交流会 (wework麹町 9F 株式会社スタメンオフィス)</td>\n<td style=\"text-align: center;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:00</td>\n<td style=\"text-align: center;\">解散</td>\n<td style=\"text-align: center;\">-</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>LTの発表時間は5分程度を予定しています。</li>\n<li>LT発表の方は事前にアンケートに発表内容を入力ください。</li>\n<li>発表順に関しては運営で決めさせていただきます。（当日前後する可能性もあります）</li>\n</ul>\n<h1>諸注意</h1>\n<ul>\n<li>セクシュアルハラスメント・パワーハラスメント・ストーカー等他人への迷惑行為を行うことは禁止します。</li>\n<li>その他、イベント趣旨とは異なる行為があった場合は、イベント参加をお断りさせていただきます。</li>\n<li>懇親会ではアルコールの提供がありますが、未成年者の方や車を運転される方の飲酒は法律で禁止されています。</li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。</li>\n<li>咳や発熱、倦怠感など、体調が優れない方は参加を控えていただくようお願いします。</li>\n</ul>\n<h1>👤 主催者</h1>\n<h2>株式会社スタメン</h2>\n<p><img src=\"https://2025.tskaigi.org/sponsors/stmn.png\" width=\"45%\"></p>\n<h2>会社概要</h2>\n<p>株式会社スタメンは、「一人でも多くの人に、感動を届け、幸せを広める。」を経営理念に、2016年に創業しました。その後順調な事業拡大により2020年12月に東証グロース市場に株式上場。</p>\n<p>エンゲージメントプラットフォーム「TUNAG（ツナグ）」をはじめとした、複数のサービスを自社で開発・運営しています。2023年2月には、新規事業として、SaaS型サービスである情報漏洩対策ツール「Watchy（ウォッチー）」を正式にリリースしています。</p>\n<h2>採用情報</h2>\n<p>「TUNAG」「Watchy」ともに、一緒に働く仲間を募集中です🤝</p>\n<p><a href=\"https://recruit.stmn.co.jp/\" rel=\"nofollow\"><img alt=\"\" src=\"https://2025.tskaigi.org/sponsors/jobBoard/stmn.jpg\"></a></p>",
-      "url": "https://stmn.connpass.com/event/394436/",
-      "image_url": "https://media.connpass.com/thumbs/7c/17/7c171a6355c3b4583f4388685379b6c7.png",
-      "hash_tag": "tech_stmn",
-      "started_at": "2026-06-17T19:00:00+09:00",
-      "ended_at": "2026-06-17T21:30:00+09:00",
-      "published_at": "2026-05-21T16:32:47+09:00",
-      "limit": 20,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 4449,
-        "subdomain": "stmn",
-        "title": "stmn, inc.",
-        "url": "https://stmn.connpass.com/"
-      },
-      "address": "東京都千代田区麹町6-6-2 番町麹町ビルディング 5F",
-      "place": "株式会社スタメン 東京オフィス",
-      "lat": "35.685702100000",
-      "lon": "139.732034200000",
-      "owner_id": 97324,
-      "owner_nickname": "asashin227",
-      "owner_display_name": "asashin227",
-      "accepted": 10,
-      "waiting": 0,
-      "updated_at": "2026-06-16T13:41:04+09:00"
-    },
-    {
-      "id": 394168,
-      "title": "第37回オープンエッジデバイス研究会",
-      "catch": "",
-      "description": "<h1>【第37回オープンエッジデバイス研究会】開催のお知らせ</h1>\n<h4>2023年度より、オープンエッジデバイス研究会として、<br>定期的な情報共有の会を小さく始め、<br>おかげさまで4年目を迎えることができました。皆様に感謝致します。</h4>\n<h2>アジェンダ<br></h2>\n<p>三矢達彦さん（ボウ・ネットシステムズ株式会社）「世界最小人型ロボットNISUNで創るフィジカルGitHub構想」<br>\nしぶちょーさん「AIエージェントに機械設計を手伝ってもらった結果」<br></p>\n<h2>開催場所<br></h2>\n<p>現地: ソニークリエイティブラウンジ (ソニーグループ品川本社1F)<br>\nオンライン: 参加者のみにconnpass上でMicrosoft Teamsリンクを共有します<br></p>\n<h2>タイムテーブル<br></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">会場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">三矢達彦さん（ボウ・ネットシステムズ株式会社）「世界最小人型ロボットNISUNで創るフィジカルGitHub構想」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">しぶちょーさん「AIエージェントに機械設計を手伝ってもらった結果」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">関連イベント紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">解散</td>\n</tr>\n</tbody>\n</table>\n<p><strong>懇親会参加の場合は、参加費・飲食代として現金で500円をご用意ください 。</strong></p>\n<h3>その他<br></h3>\n<p>開催情報は随時更新していきますのでご了承下さい。<br></p>\n<p>オープンエッジデバイスについて思うことやご相談なんでも結構です。<br>\nこの会で共有したい事があれば是非エントリーをお願いします。<br></p>\n<p>ご質問等ありましたら次のメールアドレスまでお問い合わせください。\nopenedgedevice@gmail.com</p>",
-      "url": "https://openedgedevice.connpass.com/event/394168/",
-      "image_url": "https://media.connpass.com/thumbs/94/f5/94f5d2b80c0ab3ff0b1b671fd2c9fbde.png",
-      "hash_tag": "OEDC",
-      "started_at": "2026-06-17T19:00:00+09:00",
-      "ended_at": "2026-06-17T21:30:00+09:00",
-      "published_at": "2026-05-18T11:58:59+09:00",
-      "limit": 48,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13535,
-        "subdomain": "openedgedevice",
-        "title": "オープンエッジデバイス研究コミュニティ",
-        "url": "https://openedgedevice.connpass.com/"
-      },
-      "address": "東京都港区港南1-7-1",
-      "place": "ソニークリエイティブラウンジ",
-      "lat": "35.631211900000",
-      "lon": "139.743647700000",
-      "owner_id": 770224,
-      "owner_nickname": "mikami_hiroshi",
-      "owner_display_name": "mikami_hiroshi",
-      "accepted": 24,
-      "waiting": 0,
-      "updated_at": "2026-06-16T20:36:32+09:00"
-    },
-    {
       "id": 386234,
       "title": "Japan Datadog User Group Meetup#18@東京",
       "catch": "Datadog を利用しているユーザーのためのユーザーによるコミュニティです",
@@ -221,6 +159,37 @@
       "updated_at": "2026-06-17T09:30:45+09:00"
     },
     {
+      "id": 394168,
+      "title": "第37回オープンエッジデバイス研究会",
+      "catch": "",
+      "description": "<h1>【第37回オープンエッジデバイス研究会】開催のお知らせ</h1>\n<h4>2023年度より、オープンエッジデバイス研究会として、<br>定期的な情報共有の会を小さく始め、<br>おかげさまで4年目を迎えることができました。皆様に感謝致します。</h4>\n<h2>アジェンダ<br></h2>\n<p>三矢達彦さん（ボウ・ネットシステムズ株式会社）「世界最小人型ロボットNISUNで創るフィジカルGitHub構想」<br>\nしぶちょーさん「AIエージェントに機械設計を手伝ってもらった結果」<br></p>\n<h2>開催場所<br></h2>\n<p>現地: ソニークリエイティブラウンジ (ソニーグループ品川本社1F)<br>\nオンライン: 参加者のみにconnpass上でMicrosoft Teamsリンクを共有します<br></p>\n<h2>タイムテーブル<br></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">会場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">三矢達彦さん（ボウ・ネットシステムズ株式会社）「世界最小人型ロボットNISUNで創るフィジカルGitHub構想」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">しぶちょーさん「AIエージェントに機械設計を手伝ってもらった結果」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">関連イベント紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">解散</td>\n</tr>\n</tbody>\n</table>\n<p><strong>懇親会参加の場合は、参加費・飲食代として現金で500円をご用意ください 。</strong></p>\n<h3>その他<br></h3>\n<p>開催情報は随時更新していきますのでご了承下さい。<br></p>\n<p>オープンエッジデバイスについて思うことやご相談なんでも結構です。<br>\nこの会で共有したい事があれば是非エントリーをお願いします。<br></p>\n<p>ご質問等ありましたら次のメールアドレスまでお問い合わせください。\nopenedgedevice@gmail.com</p>",
+      "url": "https://openedgedevice.connpass.com/event/394168/",
+      "image_url": "https://media.connpass.com/thumbs/94/f5/94f5d2b80c0ab3ff0b1b671fd2c9fbde.png",
+      "hash_tag": "OEDC",
+      "started_at": "2026-06-17T19:00:00+09:00",
+      "ended_at": "2026-06-17T21:30:00+09:00",
+      "published_at": "2026-05-18T11:58:59+09:00",
+      "limit": 48,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13535,
+        "subdomain": "openedgedevice",
+        "title": "オープンエッジデバイス研究コミュニティ",
+        "url": "https://openedgedevice.connpass.com/"
+      },
+      "address": "東京都港区港南1-7-1",
+      "place": "ソニークリエイティブラウンジ",
+      "lat": "35.631211900000",
+      "lon": "139.743647700000",
+      "owner_id": 770224,
+      "owner_nickname": "mikami_hiroshi",
+      "owner_display_name": "mikami_hiroshi",
+      "accepted": 23,
+      "waiting": 0,
+      "updated_at": "2026-06-16T20:36:32+09:00"
+    },
+    {
       "id": 394199,
       "title": "【残り3枠】夏の勉強会&交流会（FDE最新戦略）",
       "catch": "2026年夏地点における最新のAI駆動開発戦略を学ぶ",
@@ -247,9 +216,40 @@
       "owner_id": 790801,
       "owner_nickname": "MacopeninSUTABA",
       "owner_display_name": "KNR",
-      "accepted": 49,
+      "accepted": 53,
       "waiting": 0,
       "updated_at": "2026-06-16T20:40:08+09:00"
+    },
+    {
+      "id": 394436,
+      "title": "tech.stmn #1",
+      "catch": "すべての技術に、スポットライトを。",
+      "description": "<h1>イベントについて</h1>\n<p>Web、アプリ、インフラ、AI、はたまたこだわりの開発環境やガジェットまで。tech.stmn は、領域の垣根をすべて取っ払った、オープンな勉強会です。</p>\n<p>「何でもアリ」だからこそ、思わぬ技術との出会いや、新しいインスピレーションが生まれるはず…✨<br></p>\n<p>あなたが今一番熱量を注いでいる「Tech」を、ぜひここに持ち寄ってください！少しでもTechにまつわるものであれば何でも大歓迎です！<br></p>\n<p>本イベントは<strong>オフライン（会場参加）</strong>のLT会になりますのでご注意ください。</p>\n<p>交流会も予定していますので、日頃の開発のあれこれなどについてお話ししましょう！<br></p>\n<h2>会場について</h2>\n<p>会場は株式会社スタメン 東京オフィス（wework麹町）になります。受付はwework 5Fの共用ラウンジにて行いますので、エレベーターで5Fまでお越しください。</p>\n<p>住所<br>\n〒102-0083 東京都千代田区麹町6-6-2番町麹町ビルディング 5F</p>\n<h3>注意点</h3>\n<ul>\n<li>広報のため、写真撮影を行い、SNS等で発信する場合があります。撮影を避けたい場合は当日の受付時にお申し付けください。</li>\n<li>当イベントはwework麹町の5F共用ラウンジにて開催いたします。イベント参加者の他に、wework入居者の方の出入りがございます。ご了承くださいませ。</li>\n</ul>\n<h2>交流会について</h2>\n<p>LT発表後に参加者での交流会を予定しています。<br>\n任意での参加になりますので、LTのみの参加でもOKです。<br>\n交流会ではジュースなどの飲み物や菓子類の提供を予定しています。<br></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">　　　時間　　　</th>\n<th style=\"text-align: center;\">　　　　　　　　　内容　　　　　　　　　</th>\n<th style=\"text-align: center;\">　　　登壇者　　　</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">開場・受付開始 (wework麹町 5F 共用ラウンジ)</td>\n<td style=\"text-align: center;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30</td>\n<td style=\"text-align: center;\">オープニング・挨拶</td>\n<td style=\"text-align: center;\">司会</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:35</td>\n<td style=\"text-align: center;\">受託開発、フリーランス、事業会社を渡り歩いた僕の感想</td>\n<td style=\"text-align: center;\">HiraishiTaro</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:40</td>\n<td style=\"text-align: center;\">Claude Agentでテストカバレッジ改善を自動化してみた</td>\n<td style=\"text-align: center;\">kotaro-shima</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45</td>\n<td style=\"text-align: center;\">LT</td>\n<td style=\"text-align: center;\">CookieySun</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:50</td>\n<td style=\"text-align: center;\">VimユーザーがEmacs を使い始めた話し(仮</td>\n<td style=\"text-align: center;\">とんとんぼ</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">LT</td>\n<td style=\"text-align: center;\">Kijima Daigo</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:00</td>\n<td style=\"text-align: center;\">交流会 (wework麹町 9F 株式会社スタメンオフィス)</td>\n<td style=\"text-align: center;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:00</td>\n<td style=\"text-align: center;\">解散</td>\n<td style=\"text-align: center;\">-</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>LTの発表時間は5分程度を予定しています。</li>\n<li>LT発表の方は事前にアンケートに発表内容を入力ください。</li>\n<li>発表順に関しては運営で決めさせていただきます。（当日前後する可能性もあります）</li>\n</ul>\n<h1>諸注意</h1>\n<ul>\n<li>セクシュアルハラスメント・パワーハラスメント・ストーカー等他人への迷惑行為を行うことは禁止します。</li>\n<li>その他、イベント趣旨とは異なる行為があった場合は、イベント参加をお断りさせていただきます。</li>\n<li>懇親会ではアルコールの提供がありますが、未成年者の方や車を運転される方の飲酒は法律で禁止されています。</li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。</li>\n<li>咳や発熱、倦怠感など、体調が優れない方は参加を控えていただくようお願いします。</li>\n</ul>\n<h1>👤 主催者</h1>\n<h2>株式会社スタメン</h2>\n<p><img src=\"https://2025.tskaigi.org/sponsors/stmn.png\" width=\"45%\"></p>\n<h2>会社概要</h2>\n<p>株式会社スタメンは、「一人でも多くの人に、感動を届け、幸せを広める。」を経営理念に、2016年に創業しました。その後順調な事業拡大により2020年12月に東証グロース市場に株式上場。</p>\n<p>エンゲージメントプラットフォーム「TUNAG（ツナグ）」をはじめとした、複数のサービスを自社で開発・運営しています。2023年2月には、新規事業として、SaaS型サービスである情報漏洩対策ツール「Watchy（ウォッチー）」を正式にリリースしています。</p>\n<h2>採用情報</h2>\n<p>「TUNAG」「Watchy」ともに、一緒に働く仲間を募集中です🤝</p>\n<p><a href=\"https://recruit.stmn.co.jp/\" rel=\"nofollow\"><img alt=\"\" src=\"https://2025.tskaigi.org/sponsors/jobBoard/stmn.jpg\"></a></p>",
+      "url": "https://stmn.connpass.com/event/394436/",
+      "image_url": "https://media.connpass.com/thumbs/7c/17/7c171a6355c3b4583f4388685379b6c7.png",
+      "hash_tag": "tech_stmn",
+      "started_at": "2026-06-17T19:00:00+09:00",
+      "ended_at": "2026-06-17T21:30:00+09:00",
+      "published_at": "2026-05-21T16:32:47+09:00",
+      "limit": 20,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 4449,
+        "subdomain": "stmn",
+        "title": "stmn, inc.",
+        "url": "https://stmn.connpass.com/"
+      },
+      "address": "東京都千代田区麹町6-6-2 番町麹町ビルディング 5F",
+      "place": "株式会社スタメン 東京オフィス",
+      "lat": "35.685702100000",
+      "lon": "139.732034200000",
+      "owner_id": 97324,
+      "owner_nickname": "asashin227",
+      "owner_display_name": "asashin227",
+      "accepted": 11,
+      "waiting": 0,
+      "updated_at": "2026-06-16T13:41:04+09:00"
     },
     {
       "id": 395439,
@@ -278,7 +278,7 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 390,
+      "accepted": 402,
       "waiting": 0,
       "updated_at": "2026-06-16T18:28:45+09:00"
     },
@@ -286,7 +286,7 @@
       "id": 395841,
       "title": "(New) 食べログ × ANDPAD × Sansan モバイル勉強会 #4",
       "catch": "#4 の開催テーマは「 OS アップデート」",
-      "description": "<hr>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">🆕 6/17 開催のお知らせ</h2>\n\n<p><a href=\"https://andpad.connpass.com/event/390093/\" rel=\"nofollow\">前回 6/3 開催予定だったモバイル勉強会</a> を台風の影響により延期しましたが、 <strong>6/17</strong> に開催できることになりました。</p>\n<p>ご参加お待ちしております！</p>\n<hr>\n<p>(以下、イベント内容は前回と同じです)</p>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">食べログ x ANDPAD x Sansan モバイル勉強会 #4 のテーマは「OS アップデート」 !</h2>\n\n<p>Sansan、アンドパッド、食べログのモバイルエンジニアたちのモバイル勉強会の #4 のテーマは <strong>「OS・アップデート」</strong> です !</p>\n<p>モバイルアプリ開発において OS アップデートは対応が欠かせないもの。 それだけに悲喜こもごものエピソード、例えば、 OS 標準の API でいい機能が入ったり、 UX が予想を超えて良さそうになったりで小躍りしたり、一方で、非推奨がぁ、RC になったら動かなくなった、などなどで絶望したり、皆さまにも沢山よぎるものがあるでしょう！</p>\n<p>そこで、今回は共催企業各社のエンジニアだけでなく、 <strong>公募の登壇枠も設けました！</strong> ぜひ共感を生むエピソード、 Tips をぜひ教えてください。 お待ちしております。</p>\n<h3 style=\"border-left: #ef3340 .4em solid; padding: .5em; border-bottom: none; margin: 1em 1em 1em .5em;\">こんな方にオススメ</h3>\n\n<ul>\n<li>OS アップデートを楽しみにしている方</li>\n<li>OS アップデートにツラミを感じている方</li>\n<li>OS アップデートに一家言ある方</li>\n<li>OS アップデートの悲喜こもごもエピソードが大好きな方</li>\n<li>モバイルアプリ開発が大好きな方</li>\n</ul>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">タイムテーブル</h2>\n\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>タイトル</th>\n<th>発表者</th>\n<th>X・Github</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45</td>\n<td>開場 / 受付</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>オープニング</td>\n<td>会場ホストの Sansan より</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:05</td>\n<td>公募トーク 1</td>\n<td><strong>SDK が顧客アプリをリードする</strong></td>\n<td>古川真次（ふるしん）(TRUSTDOCK)</td>\n<td><a href=\"https://x.com/furusin_oriver\" rel=\"nofollow\">@furusin_oriver</a></td>\n</tr>\n<tr>\n<td>19:15</td>\n<td>公募トーク 2</td>\n<td><strong>絶賛、募集中</strong></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:25</td>\n<td>トーク 1</td>\n<td><strong>OS アップデートの進め方がもっと共有されてほしい</strong></td>\n<td>長堀 翔太 (アンドパッド)</td>\n<td><a href=\"https://x.com/nashcft\" rel=\"nofollow\">@nashcft</a></td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>トーク 2</td>\n<td><strong>食べログにおけるLiquid Glass対応事例</strong></td>\n<td>大澤 由憲 (食べログ)</td>\n<td><a href=\"https://x.com/osawa_yoshi\" rel=\"nofollow\">@osawa_yoshi</a></td>\n</tr>\n<tr>\n<td>19:45</td>\n<td>トーク 3</td>\n<td><strong>食べログ Android アプリ OSアップデートのすゝめ</strong> (仮)</td>\n<td>太田 定志 (食べログ)</td>\n<td><a href=\"https://x.com/sadashi_ota\" rel=\"nofollow\">@sadashi_ota</a></td>\n</tr>\n<tr>\n<td>19:55</td>\n<td>休憩 ( 10 分)</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20:05</td>\n<td>トーク 4</td>\n<td><strong>toBアプリでLiquid Glassに挑んだ話</strong></td>\n<td>盛重 晴登 (Sansan)</td>\n<td></td>\n</tr>\n<tr>\n<td>20:15</td>\n<td>トーク 5</td>\n<td><strong>100以上ある画面のEdgeToEdge対応を爆速で終わらせた話</strong></td>\n<td>若田 直希 (Sansan)</td>\n<td></td>\n</tr>\n<tr>\n<td>20:25</td>\n<td>クロージング</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20:35</td>\n<td>懇親会</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>終了</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>共催企業の発表の順番は変更する可能性があります</p>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">登壇者紹介</h2>\n\n<h3 style=\"border-bottom: none;\">トーク 1: OS アップデートの進め方がもっと共有されてほしい</h3>\n\n<p><img alt=\"nashcft\" src=\"https://media.connpass.com/thumbs/b7/51/b751141b985183db0122ca4760e3f095.png\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">長堀 翔太</h4>\n\n<p><a href=\"https://x.com/nashcft\" rel=\"nofollow\">@nashcft</a> / <strong>株式会社アンドパッド</strong></p>\n<p>2023 年 6 月に Android アプリエンジニアとして入社。チャットアプリの開発に携わりつつ、チームビルディングや開発プロセス改善にも取り組んでいる。</p>\n<h3 style=\"border-bottom: none;\">トーク 2: 食べログにおけるLiquid Glass対応事例</h3>\n\n<p><img alt=\"icon\" height=\"auto\" src=\"https://media.connpass.com/thumbs/a9/38/a93808b3345f81ffbc5f1a54d01834b5.png\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">大澤 由憲</h4>\n\n<p><a href=\"https://x.com/osawa_yoshi\" rel=\"nofollow\">@osawa_yoshi</a> / 株式会社カカクコム 食べログカンパニー</p>\n<p>2023年カカクコム入社。大手QR決済アプリの立ち上げや、暗号資産アプリのリードを経て、現在は食べログのiOS基盤開発を牽引しています。プライベートでは1歳と3歳の育児と、趣味のアニメ・ゲームの両立が最近の密かな目標です。</p>\n<h3 style=\"border-bottom: none;\">トーク 3: 食べログ Android アプリ OSアップデートのすゝめ (仮)</h3>\n\n<p><img alt=\"icon\" height=\"auto\" src=\"https://pbs.twimg.com/profile_images/1052957197599035392/jJ6H6N1r_400x400.jpg\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">太田 定志</h4>\n\n<p><a href=\"https://x.com/sadashi_ota\" rel=\"nofollow\">@sadashi_ota</a> / 株式会社カカクコム 食べログカンパニー</p>\n<p>2010年からAndroidアプリ開発を始め、2018年より株式会社カカクコムに入社。以降、食べログアプリ開発では、開発環境整備や技術支援を主とするチームでAndroidのテックリードを努めながら、Androidアプリの技術的負債の返済に取り組んでいる。</p>\n<h3 style=\"border-bottom: none;\">トーク 4: toBアプリでLiquid Glassに挑んだ話</h3>\n\n<p><img alt=\"morishige-san\" height=\"auto\" src=\"https://static.zenn.studio/user-upload/4b6ae4288cb4-20260514.jpg\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">盛重 晴登</h4>\n\n<p><strong>Sansan株式会社</strong></p>\n<p>2025 年に新卒でSansan株式会社に入社、以来ビジネスデータベース「Sansan」のiOS版アプリ開発に従事。社内共通コンポーネントのSwiftUI版の開発や、Swift 6移行プロジェクトなどに参画。直近ではiOS 26対応（Liquid Glass）のプロジェクトオーナーを務めた。趣味はスノーボード、キャンプ。</p>\n<h3 style=\"border-bottom: none;\">トーク 5: 100以上ある画面のEdgeToEdge対応を爆速で終わらせた話</h3>\n\n<p><img alt=\"wakada-san\" height=\"auto\" src=\"https://static.zenn.studio/user-upload/c0d2409b1b4d-20260514.png\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">若田 直希</h4>\n\n<p><strong>Sansan株式会社</strong></p>\n<p>2023年からAndroid開発に従事し、2025年11月にSansan株式会社に入社。ToC向け名刺管理サービス「Eight」のAndroidアプリ開発を担当。</p>\n<h3 style=\"border-bottom: none;\">公募トーク 1: SDK が顧客アプリをリードする</h3>\n\n<p><img alt=\"ふるしん\" src=\"https://media.connpass.com/thumbs/bf/a4/bfa49c9dc012f1a393e2de9c19118f8e.png\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">古川真次（ふるしん）</h4>\n\n<p><a href=\"https://x.com/furusin_oriver\" rel=\"nofollow\">@furusin_oriver</a> / <strong>株式会社 TRUSTDOCK</strong> Android リードエンジニア</p>\n<p>株式会社 TRUSTDOCK にて Android 向け SDK 開発のリードエンジニアをしています。 HT-03A から Android が好き。ディズニーやポケモンなどキャラクターものが好き。</p>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">主催・運営</h2>\n\n<h3>Sansan 株式会社</h3>\n<p>Sansan株式会社は、「出会いからイノベーションを生み出す」をミッションとして掲げ、ビジネスにおける出会いを後押ししています。主なサービスとして、ビジネスデータベース「Sansan」や、名刺アプリ「Eight」、経理DXサービス「Bill One」、取引管理サービス「Contract One」、データクオリティマネジメント「Sansan Data Intelligence」を国内外で提供しています。</p>\n<ul>\n<li><a href=\"https://jp.corp-sansan.com/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://media.sansan-engineering.com/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://buildersbox.corp-sansan.com/\" rel=\"nofollow\">テックブログ</a></li>\n<li><a href=\"https://x.com/SansanTech\" rel=\"nofollow\">X (旧 Twitter )</a></li>\n</ul>\n<h3>株式会社カカクコム 食べログカンパニー</h3>\n<p>株式会社カカクコムは「ユーザーファーストで、新しい常識を作る」をミッションに掲げ、日々の生活が豊かになるような、さまざまな生活シーンで役立つサービスを展開しています。 主なサービスは、購買支援サイト「価格<span></span>.com」、レストラン検索・予約サービス「食べログ」、求人情報の一括検索サービス「求人ボックス」。</p>\n<ul>\n<li><a href=\"https://corporate.kakaku.com/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://kakaku.com/info/recruit/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech-blog.tabelog.com/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<h3>株式会社アンドパッド</h3>\n<p>アンドパッドは、「幸せを築く人を、幸せに。」というミッションを掲げ、業界の人手不足解決、働き方改革を加速させる建設・建築業に特化したクラウド型建設プロジェクト管理サービス「 ANDPAD 」を提供しています。</p>\n<ul>\n<li><a href=\"https://andpad.co.jp/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://engineer.andpad.co.jp/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech.andpad.co.jp/\" rel=\"nofollow\">テックブログ</a></li>\n<li><a href=\"https://x.com/andpad_dev\" rel=\"nofollow\">X (旧 Twitter )</a></li>\n</ul>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">行動規範・プライバシーポリシー</h2>\n\n<h3>行動規範</h3>\n<p>本イベントは、開催テーマやその他トピックスに関する情報交換や交流を行うための場所です。 そのため、参加者に対して以下のようなハラスメント行為は許容しません。</p>\n<ul>\n<li>言葉による性別、性的指向、障害の有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント</li>\n<li>公的空間での性的な映像表現</li>\n<li>意図的な威力行為、ストーキング、つきまとい</li>\n<li>写真撮影や録音によるいやがらせ</li>\n<li>トークやその他の会議イベントに対して繰り返して中断しようとする行為</li>\n<li>望まれない性的な注意を引きつける行為</li>\n<li>知識の共有および、参加者同士の交流を目的（ ex. 飲食や勧誘）としないような行為</li>\n</ul>\n<p>ハラスメント行為に遭った、目撃した場合には、スタッフの誰かに連絡していただくようお願いします。\nハラスメント行為を止めるように言われた参加者は、直ちに従ってください。</p>\n<h3>プライバシーポリシー</h3>\n<p>本イベントで取得する個人情報のお取り扱い方針は、以下のポリシーを参照願います</p>\n<ul>\n<li><a href=\"https://andpad.jp/privacy\" rel=\"nofollow\">https://andpad.jp/privacy</a></li>\n<li><a href=\"https://jp.corp-sansan.com/privacy/\" rel=\"nofollow\">https://jp.corp-sansan.com/privacy/</a></li>\n<li><a href=\"https://corporate.kakaku.com/privacy/about\" rel=\"nofollow\">https://corporate.kakaku.com/privacy/about</a></li>\n</ul>",
+      "description": "<hr>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">🆕 6/17 開催のお知らせ</h2>\n\n<p><a href=\"https://andpad.connpass.com/event/390093/\" rel=\"nofollow\">前回 6/3 開催予定だったモバイル勉強会</a> を台風の影響により延期しましたが、 <strong>6/17</strong> に開催できることになりました。</p>\n<p>ご参加お待ちしております！</p>\n<hr>\n<p>(以下、イベント内容は前回と同じです)</p>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">食べログ x ANDPAD x Sansan モバイル勉強会 #4 のテーマは「OS アップデート」 !</h2>\n\n<p>Sansan、アンドパッド、食べログのモバイルエンジニアたちのモバイル勉強会の #4 のテーマは <strong>「OS・アップデート」</strong> です !</p>\n<p>モバイルアプリ開発において OS アップデートは対応が欠かせないもの。 それだけに悲喜こもごものエピソード、例えば、 OS 標準の API でいい機能が入ったり、 UX が予想を超えて良さそうになったりで小躍りしたり、一方で、非推奨がぁ、RC になったら動かなくなった、などなどで絶望したり、皆さまにも沢山よぎるものがあるでしょう！</p>\n<p>そこで、今回は共催企業各社のエンジニアだけでなく、 <strong>公募の登壇枠も設けました！</strong> ぜひ共感を生むエピソード、 Tips をぜひ教えてください。 お待ちしております。</p>\n<h3 style=\"border-left: #ef3340 .4em solid; padding: .5em; border-bottom: none; margin: 1em 1em 1em .5em;\">こんな方にオススメ</h3>\n\n<ul>\n<li>OS アップデートを楽しみにしている方</li>\n<li>OS アップデートにツラミを感じている方</li>\n<li>OS アップデートに一家言ある方</li>\n<li>OS アップデートの悲喜こもごもエピソードが大好きな方</li>\n<li>モバイルアプリ開発が大好きな方</li>\n</ul>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">タイムテーブル</h2>\n\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>タイトル</th>\n<th>発表者</th>\n<th>X・Github</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45</td>\n<td>開場 / 受付</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>オープニング</td>\n<td>会場ホストの Sansan より</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:05</td>\n<td>公募トーク 1</td>\n<td><strong>SDK が顧客アプリをリードする</strong></td>\n<td>古川真次（ふるしん）(TRUSTDOCK)</td>\n<td><a href=\"https://x.com/furusin_oriver\" rel=\"nofollow\">@furusin_oriver</a></td>\n</tr>\n<tr>\n<td>19:15</td>\n<td>トーク 1</td>\n<td><strong>OS アップデートの進め方がもっと共有されてほしい</strong></td>\n<td>長堀 翔太 (アンドパッド)</td>\n<td><a href=\"https://x.com/nashcft\" rel=\"nofollow\">@nashcft</a></td>\n</tr>\n<tr>\n<td>19:25</td>\n<td>トーク 2</td>\n<td><strong>食べログにおけるLiquid Glass対応事例</strong></td>\n<td>大澤 由憲 (食べログ)</td>\n<td><a href=\"https://x.com/osawa_yoshi\" rel=\"nofollow\">@osawa_yoshi</a></td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>トーク 3</td>\n<td><strong>食べログ Android アプリ OSアップデートのすゝめ</strong></td>\n<td>太田 定志 (食べログ)</td>\n<td><a href=\"https://x.com/sadashi_ota\" rel=\"nofollow\">@sadashi_ota</a></td>\n</tr>\n<tr>\n<td>19:45</td>\n<td>休憩 ( 10 分)</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:55</td>\n<td>トーク 4</td>\n<td><strong>toBアプリでLiquid Glassに挑んだ話</strong></td>\n<td>盛重 晴登 (Sansan)</td>\n<td></td>\n</tr>\n<tr>\n<td>20:05</td>\n<td>トーク 5</td>\n<td><strong>100以上ある画面のEdgeToEdge対応を爆速で終わらせた話</strong></td>\n<td>若田 直希 (Sansan)</td>\n<td></td>\n</tr>\n<tr>\n<td>20:15</td>\n<td>クロージング</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20:25</td>\n<td>懇親会</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>終了</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>共催企業の発表の順番は変更する可能性があります</p>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">登壇者紹介</h2>\n\n<h3 style=\"border-bottom: none;\">トーク 1: OS アップデートの進め方がもっと共有されてほしい</h3>\n\n<p><img alt=\"nashcft\" src=\"https://media.connpass.com/thumbs/b7/51/b751141b985183db0122ca4760e3f095.png\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">長堀 翔太</h4>\n\n<p><a href=\"https://x.com/nashcft\" rel=\"nofollow\">@nashcft</a> / <strong>株式会社アンドパッド</strong></p>\n<p>2023 年 6 月に Android アプリエンジニアとして入社。チャットアプリの開発に携わりつつ、チームビルディングや開発プロセス改善にも取り組んでいる。</p>\n<h3 style=\"border-bottom: none;\">トーク 2: 食べログにおけるLiquid Glass対応事例</h3>\n\n<p><img alt=\"icon\" height=\"auto\" src=\"https://media.connpass.com/thumbs/a9/38/a93808b3345f81ffbc5f1a54d01834b5.png\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">大澤 由憲</h4>\n\n<p><a href=\"https://x.com/osawa_yoshi\" rel=\"nofollow\">@osawa_yoshi</a> / 株式会社カカクコム 食べログカンパニー</p>\n<p>2023年カカクコム入社。大手QR決済アプリの立ち上げや、暗号資産アプリのリードを経て、現在は食べログのiOS基盤開発を牽引しています。プライベートでは1歳と3歳の育児と、趣味のアニメ・ゲームの両立が最近の密かな目標です。</p>\n<h3 style=\"border-bottom: none;\">トーク 3: 食べログ Android アプリ OSアップデートのすゝめ</h3>\n\n<p><img alt=\"icon\" height=\"auto\" src=\"https://pbs.twimg.com/profile_images/1052957197599035392/jJ6H6N1r_400x400.jpg\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">太田 定志</h4>\n\n<p><a href=\"https://x.com/sadashi_ota\" rel=\"nofollow\">@sadashi_ota</a> / 株式会社カカクコム 食べログカンパニー</p>\n<p>2010年からAndroidアプリ開発を始め、2018年より株式会社カカクコムに入社。以降、食べログアプリ開発では、開発環境整備や技術支援を主とするチームでAndroidのテックリードを努めながら、Androidアプリの技術的負債の返済に取り組んでいる。</p>\n<h3 style=\"border-bottom: none;\">トーク 4: toBアプリでLiquid Glassに挑んだ話</h3>\n\n<p><img alt=\"morishige-san\" height=\"auto\" src=\"https://static.zenn.studio/user-upload/4b6ae4288cb4-20260514.jpg\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">盛重 晴登</h4>\n\n<p><strong>Sansan株式会社</strong></p>\n<p>2025 年に新卒でSansan株式会社に入社、以来ビジネスデータベース「Sansan」のiOS版アプリ開発に従事。社内共通コンポーネントのSwiftUI版の開発や、Swift 6移行プロジェクトなどに参画。直近ではiOS 26対応（Liquid Glass）のプロジェクトオーナーを務めた。趣味はスノーボード、キャンプ。</p>\n<h3 style=\"border-bottom: none;\">トーク 5: 100以上ある画面のEdgeToEdge対応を爆速で終わらせた話</h3>\n\n<p><img alt=\"wakada-san\" height=\"auto\" src=\"https://static.zenn.studio/user-upload/c0d2409b1b4d-20260514.png\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">若田 直希</h4>\n\n<p><strong>Sansan株式会社</strong></p>\n<p>2023年からAndroid開発に従事し、2025年11月にSansan株式会社に入社。ToC向け名刺管理サービス「Eight」のAndroidアプリ開発を担当。</p>\n<h3 style=\"border-bottom: none;\">公募トーク 1: SDK が顧客アプリをリードする</h3>\n\n<p><img alt=\"ふるしん\" src=\"https://media.connpass.com/thumbs/bf/a4/bfa49c9dc012f1a393e2de9c19118f8e.png\" width=\"100\"></p>\n<h4 style=\"border-bottom: none;\">古川真次（ふるしん）</h4>\n\n<p><a href=\"https://x.com/furusin_oriver\" rel=\"nofollow\">@furusin_oriver</a> / <strong>株式会社 TRUSTDOCK</strong> Android リードエンジニア</p>\n<p>株式会社 TRUSTDOCK にて Android 向け SDK 開発のリードエンジニアをしています。 HT-03A から Android が好き。ディズニーやポケモンなどキャラクターものが好き。</p>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">主催・運営</h2>\n\n<h3>Sansan 株式会社</h3>\n<p>Sansan株式会社は、「出会いからイノベーションを生み出す」をミッションとして掲げ、ビジネスにおける出会いを後押ししています。主なサービスとして、ビジネスデータベース「Sansan」や、名刺アプリ「Eight」、経理DXサービス「Bill One」、取引管理サービス「Contract One」、データクオリティマネジメント「Sansan Data Intelligence」を国内外で提供しています。</p>\n<ul>\n<li><a href=\"https://jp.corp-sansan.com/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://media.sansan-engineering.com/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://buildersbox.corp-sansan.com/\" rel=\"nofollow\">テックブログ</a></li>\n<li><a href=\"https://x.com/SansanTech\" rel=\"nofollow\">X (旧 Twitter )</a></li>\n</ul>\n<h3>株式会社カカクコム 食べログカンパニー</h3>\n<p>株式会社カカクコムは「ユーザーファーストで、新しい常識を作る」をミッションに掲げ、日々の生活が豊かになるような、さまざまな生活シーンで役立つサービスを展開しています。 主なサービスは、購買支援サイト「価格<span></span>.com」、レストラン検索・予約サービス「食べログ」、求人情報の一括検索サービス「求人ボックス」。</p>\n<ul>\n<li><a href=\"https://corporate.kakaku.com/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://kakaku.com/info/recruit/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech-blog.tabelog.com/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<h3>株式会社アンドパッド</h3>\n<p>アンドパッドは、「幸せを築く人を、幸せに。」というミッションを掲げ、業界の人手不足解決、働き方改革を加速させる建設・建築業に特化したクラウド型建設プロジェクト管理サービス「 ANDPAD 」を提供しています。</p>\n<ul>\n<li><a href=\"https://andpad.co.jp/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://engineer.andpad.co.jp/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech.andpad.co.jp/\" rel=\"nofollow\">テックブログ</a></li>\n<li><a href=\"https://x.com/andpad_dev\" rel=\"nofollow\">X (旧 Twitter )</a></li>\n</ul>\n<h2 style=\"border-left: #ef3340 .5em solid; padding: .5em; border-bottom: #ef3340 .1em solid; margin: 1em 1em 1em .5em;\">行動規範・プライバシーポリシー</h2>\n\n<h3>行動規範</h3>\n<p>本イベントは、開催テーマやその他トピックスに関する情報交換や交流を行うための場所です。 そのため、参加者に対して以下のようなハラスメント行為は許容しません。</p>\n<ul>\n<li>言葉による性別、性的指向、障害の有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント</li>\n<li>公的空間での性的な映像表現</li>\n<li>意図的な威力行為、ストーキング、つきまとい</li>\n<li>写真撮影や録音によるいやがらせ</li>\n<li>トークやその他の会議イベントに対して繰り返して中断しようとする行為</li>\n<li>望まれない性的な注意を引きつける行為</li>\n<li>知識の共有および、参加者同士の交流を目的（ ex. 飲食や勧誘）としないような行為</li>\n</ul>\n<p>ハラスメント行為に遭った、目撃した場合には、スタッフの誰かに連絡していただくようお願いします。\nハラスメント行為を止めるように言われた参加者は、直ちに従ってください。</p>\n<h3>プライバシーポリシー</h3>\n<p>本イベントで取得する個人情報のお取り扱い方針は、以下のポリシーを参照願います</p>\n<ul>\n<li><a href=\"https://andpad.jp/privacy\" rel=\"nofollow\">https://andpad.jp/privacy</a></li>\n<li><a href=\"https://jp.corp-sansan.com/privacy/\" rel=\"nofollow\">https://jp.corp-sansan.com/privacy/</a></li>\n<li><a href=\"https://corporate.kakaku.com/privacy/about\" rel=\"nofollow\">https://corporate.kakaku.com/privacy/about</a></li>\n</ul>",
       "url": "https://andpad.connpass.com/event/395841/",
       "image_url": "https://media.connpass.com/thumbs/29/44/2944a8ed27b209730a617ab99e7d68e0.png",
       "hash_tag": "食べログxANDPADxSansanモバイル勉強会",
@@ -309,9 +309,9 @@
       "owner_id": 555936,
       "owner_nickname": "ANDPAD_TechLive",
       "owner_display_name": "ANDPAD_TechLive",
-      "accepted": 63,
+      "accepted": 65,
       "waiting": 0,
-      "updated_at": "2026-06-09T13:39:58+09:00"
+      "updated_at": "2026-06-17T14:32:40+09:00"
     },
     {
       "id": 396765,
@@ -366,7 +366,7 @@
       "owner_id": 26526,
       "owner_nickname": "le_miyachi",
       "owner_display_name": "LE宮地",
-      "accepted": 113,
+      "accepted": 118,
       "waiting": 0,
       "updated_at": "2026-06-11T10:52:19+09:00"
     },
@@ -374,7 +374,7 @@
       "id": 394699,
       "title": "【増枠】【みなとみらい開催】横浜アジャイル#2",
       "catch": "横浜周辺でアジャイルを試行錯誤している人たちを中心とした会",
-      "description": "<ul>\n<li>時間を気にせずに語り合いたい</li>\n<li>都内のイベントに通うのは遠すぎる</li>\n<li>子育てで遅くまでいられない</li>\n</ul>\n<p>それでも、アジャイル・AI開発・組織変革に取り組む仲間が欲しい、もっと語りたい、誰かに悩みを打ち明けたい——そんな方、いないでしょうか？<br></p>\n<p>そんなメンバーが集まり、横浜アジャイルを始めます。<br></p>\n<h2>横浜アジャイルとは</h2>\n<p>横浜アジャイルは、横浜・横浜近郊に「ゆかりがある／好き」な人が自然に集まり、アジャイル・プロダクト開発・組織変革の知見を持ち寄って対話・共創するコミュニティです。<br>\n都内のコミュニティは「遠くて通えない」「時間のコストが高い」と感じていた方、大歓迎です。  <br>\n横浜を拠点に、距離・時間の壁を下げながら、熱量と共創が生まれる場をつくっていきます。<br></p>\n<ul>\n<li>みんなが「講師」であり、みんなが「生徒」</li>\n<li>雑談から共創が生まれる場</li>\n<li>企業・領域横断の学びと実践</li>\n<li>社内に熱量を持ち帰り、周囲を巻き込むハブになる存在</li>\n</ul>\n<h2>OSTとは</h2>\n<p>OST（オープンスペーステクノロジー）とは、集まった人たちがその場で対話したい内容を提案し、提案者自身がセッション枠を割り当て、自己組織的に進行していくやり方です。</p>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>：2026年6月17日（水）18:45〜20:45（18:30開場／18:45開始）</li>\n<li><strong>会場</strong>：ソニーシティみなとみらい</li>\n<li><strong>参加費</strong>：無料</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>開場・受付</td>\n<td>－</td>\n</tr>\n<tr>\n<td>18:45</td>\n<td>オープニングなど</td>\n<td>主催者</td>\n</tr>\n<tr>\n<td>19:05</td>\n<td>LT（5分）枠①</td>\n<td>NatsumiShinya</td>\n</tr>\n<tr>\n<td>19:10</td>\n<td>LT（5分）枠②</td>\n<td>alroborol</td>\n</tr>\n<tr>\n<td>19:15</td>\n<td>OSTの説明</td>\n<td>主催者</td>\n</tr>\n<tr>\n<td>19:20</td>\n<td>テーマ出し・マーケットプレイス</td>\n<td></td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>OST (30分 × 2)</td>\n<td></td>\n</tr>\n<tr>\n<td>20:35</td>\n<td>クロージング</td>\n<td>主催者</td>\n</tr>\n<tr>\n<td>20:45以降</td>\n<td>有志で懇親会（任意）</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇募集</h2>\n<h3>LT（5分×2名）</h3>\n<p>アジャイル・プロダクト開発・組織変革・AI活用など、横浜・近郊での実践や学びを話してみませんか？<br>\n完成した話でなくても、どんなささいな内容でも、試行中・失敗談も大歓迎です。はじめての登壇も歓迎します！</p>\n<ul>\n<li>アジャイル・スクラムの実践・失敗談・学び</li>\n<li>プロダクト開発のリアル（PO、SM、エンジニア、デザイナー視点）</li>\n<li>組織変革・チームビルディングの経験</li>\n<li>AIとアジャイルの組み合わせで変わったこと</li>\n<li>横浜企業ならではの越境・共創の話</li>\n<li>最近ハマっている学び・ツール・本</li>\n<li>なんでも「横浜でやってみた話」</li>\n</ul>\n<p>※ご質問は上記「交流用Discordサーバー」よりお願いします。</p>\n<h2>参加者種別について</h2>\n<ul>\n<li><strong>一般参加枠</strong>……一般の参加枠です。基本的にはこちらをお使いください。</li>\n<li><strong>アジャイル何も分からん枠</strong>……アジャイルに興味はあるけど参加を迷っている方、自由な解釈で登録ください。</li>\n<li><strong>LT登壇枠</strong>……LTで登壇いただく方の枠です。</li>\n</ul>\n<h2>行動規範</h2>\n<p>横浜アジャイルでは、<a href=\"https://2026.scrumgatheringtokyo.org/conference_coc_ja.html\" rel=\"nofollow\">RSGTの行動規範</a> に準じた行動規範を適用します。</p>\n<ul>\n<li>お互いを尊重し、対話と学び合いを大切にします</li>\n<li>性別・年齢・属性・職種・スキルレベルによる差別的な言動はしません</li>\n<li>保険、宗教、ネットワークビジネス等の勧誘目的の参加はお断りします</li>\n<li>運営が不適切と判断した場合、ご退席をお願いすることがあります</li>\n</ul>\n<h2>会場</h2>\n<p><a href=\"https://www.sony.co.jp/co-creation/\" rel=\"nofollow\">ソニー株式会社さま</a>のご厚意で会場をお借りできることになりました🎉</p>\n<h3>会場スポンサー様PR</h3>\n<p>世界中に広がる、多様な事業領域に携わる全てのソニーグループ社員は、「クリエイティビティとテクノロジーの力で、世界を感動で満たす」ことをソニーの存在意義として共有しながら、これからも挑戦を続けていきます。「感動」を創り、届け続ける為、私たちと一緒に「夢と好奇心」から未来を拓く、個性と意欲に満ち溢れた皆さんの参画をお待ちしています。</p>\n<h3>アクセス</h3>\n<ul>\n<li>横浜駅（JR各線）徒歩10分</li>\n<li>新高島駅（みなとみらい線）徒歩5分</li>\n<li>みなとみらい駅（みなとみらい線）徒歩10分</li>\n</ul>\n<h3>アンケート</h3>\n<p>ご入力いただいた個人情報は、入館申請および当日の受付対応のために利用いたします。</p>",
+      "description": "<ul>\n<li>時間を気にせずに語り合いたい</li>\n<li>都内のイベントに通うのは遠すぎる</li>\n<li>子育てで遅くまでいられない</li>\n</ul>\n<p>それでも、アジャイル・AI開発・組織変革に取り組む仲間が欲しい、もっと語りたい、誰かに悩みを打ち明けたい——そんな方、いないでしょうか？<br></p>\n<p>そんなメンバーが集まり、横浜アジャイルを始めます。<br></p>\n<h2>横浜アジャイルとは</h2>\n<p>横浜アジャイルは、横浜・横浜近郊に「ゆかりがある／好き」な人が自然に集まり、アジャイル・プロダクト開発・組織変革の知見を持ち寄って対話・共創するコミュニティです。<br>\n都内のコミュニティは「遠くて通えない」「時間のコストが高い」と感じていた方、大歓迎です。  <br>\n横浜を拠点に、距離・時間の壁を下げながら、熱量と共創が生まれる場をつくっていきます。<br></p>\n<ul>\n<li>みんなが「講師」であり、みんなが「生徒」</li>\n<li>雑談から共創が生まれる場</li>\n<li>企業・領域横断の学びと実践</li>\n<li>社内に熱量を持ち帰り、周囲を巻き込むハブになる存在</li>\n</ul>\n<h2>OSTとは</h2>\n<p>OST（オープンスペーステクノロジー）とは、集まった人たちがその場で対話したい内容を提案し、提案者自身がセッション枠を割り当て、自己組織的に進行していくやり方です。</p>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>：2026年6月17日（水）18:45〜20:45（18:30開場／18:45開始）</li>\n<li><strong>会場</strong>：ソニーシティみなとみらい</li>\n<li><strong>参加費</strong>：無料</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>開場・受付</td>\n<td>－</td>\n</tr>\n<tr>\n<td>18:45</td>\n<td>オープニングなど</td>\n<td>主催者</td>\n</tr>\n<tr>\n<td>19:05</td>\n<td>LT（5分）枠①</td>\n<td>NatsumiShinya</td>\n</tr>\n<tr>\n<td>19:10</td>\n<td>LT（5分）枠②</td>\n<td>alroborol</td>\n</tr>\n<tr>\n<td>19:15</td>\n<td>OSTの説明</td>\n<td>主催者</td>\n</tr>\n<tr>\n<td>19:20</td>\n<td>テーマ出し・マーケットプレイス</td>\n<td></td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>OST (30分 × 2)</td>\n<td></td>\n</tr>\n<tr>\n<td>20:35</td>\n<td>クロージング</td>\n<td>主催者</td>\n</tr>\n<tr>\n<td>20:45以降</td>\n<td>有志で懇親会（任意）</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇募集</h2>\n<h3>LT（5分×2名）</h3>\n<p>アジャイル・プロダクト開発・組織変革・AI活用など、横浜・近郊での実践や学びを話してみませんか？<br>\n完成した話でなくても、どんなささいな内容でも、試行中・失敗談も大歓迎です。はじめての登壇も歓迎します！</p>\n<ul>\n<li>アジャイル・スクラムの実践・失敗談・学び</li>\n<li>プロダクト開発のリアル（PO、SM、エンジニア、デザイナー視点）</li>\n<li>組織変革・チームビルディングの経験</li>\n<li>AIとアジャイルの組み合わせで変わったこと</li>\n<li>横浜企業ならではの越境・共創の話</li>\n<li>最近ハマっている学び・ツール・本</li>\n<li>なんでも「横浜でやってみた話」</li>\n</ul>\n<p>※ご質問は上記「交流用Discordサーバー」よりお願いします。</p>\n<h2>参加者種別について</h2>\n<ul>\n<li><strong>一般参加枠</strong>……一般の参加枠です。基本的にはこちらをお使いください。</li>\n<li><strong>アジャイル何も分からん枠</strong>……アジャイルに興味はあるけど参加を迷っている方、自由な解釈で登録ください。</li>\n<li><strong>LT登壇枠</strong>……LTで登壇いただく方の枠です。</li>\n</ul>\n<h2>行動規範</h2>\n<p>横浜アジャイルでは、<a href=\"https://2026.scrumgatheringtokyo.org/conference_coc_ja.html\" rel=\"nofollow\">RSGTの行動規範</a> に準じた行動規範を適用します。</p>\n<ul>\n<li>お互いを尊重し、対話と学び合いを大切にします</li>\n<li>性別・年齢・属性・職種・スキルレベルによる差別的な言動はしません</li>\n<li>保険、宗教、ネットワークビジネス等の勧誘目的の参加はお断りします</li>\n<li>運営が不適切と判断した場合、ご退席をお願いすることがあります</li>\n</ul>\n<h2>会場</h2>\n<p><a href=\"https://www.sony.co.jp/co-creation/\" rel=\"nofollow\">ソニー株式会社さま</a>のご厚意で会場をお借りできることになりました🎉</p>\n<h3>会場スポンサー様PR</h3>\n<p>世界中に広がる、多様な事業領域に携わる全てのソニーグループ社員は、「クリエイティビティとテクノロジーの力で、世界を感動で満たす」ことをソニーの存在意義として共有しながら、これからも挑戦を続けていきます。「感動」を創り、届け続ける為、私たちと一緒に「夢と好奇心」から未来を拓く、個性と意欲に満ち溢れた皆さんの参画をお待ちしています。</p>\n<h3>アクセス</h3>\n<ul>\n<li>横浜駅（JR各線）徒歩10分</li>\n<li>新高島駅（みなとみらい線）徒歩5分</li>\n<li>みなとみらい駅（みなとみらい線）徒歩10分</li>\n</ul>\n<p>当日の受付場所についてご案内です。</p>\n<p>会場は「ソニーシティみなとみらい」ですが、受付は建物の 2F で行います。\n1Fではなく、2F受付までお越しください。</p>\n<p>新高島駅からお越しの場合は、みなとみらい線「新高島駅」4番出口（臨港パーク口）方面が便利です。\n横浜駅方面からお越しの場合は、はまみらいウォーク／NISSANウォーク方面から歩道橋を通っていただくと、2F側にアクセスしやすいです。</p>\n<p>当日は18:30開場、18:45開始予定です。\n受付でお名前を確認させていただきますので、時間に余裕をもってお越しください。\n以下サイトが見やすいです!\n<a href=\"https://hamapita.com/2563\" rel=\"nofollow\">https://hamapita.com/2563</a></p>\n<h3>アンケート</h3>\n<p>ご入力いただいた個人情報は、入館申請および当日の受付対応のために利用いたします。</p>",
       "url": "https://yokohama-agile.connpass.com/event/394699/",
       "image_url": "https://media.connpass.com/thumbs/9a/d4/9ad420abf1d3ae2bfe44006bf01e1c25.png",
       "hash_tag": "yokohamagile",
@@ -399,7 +399,7 @@
       "owner_display_name": "JIN",
       "accepted": 39,
       "waiting": 0,
-      "updated_at": "2026-06-16T19:38:20+09:00"
+      "updated_at": "2026-06-17T17:09:52+09:00"
     }
   ]
 }
