@@ -1018,8 +1018,26 @@ async function init() {
   try{
     await Promise.all([loadDailyReport(),loadDetailReport()]);
     document.getElementById('status').className='ok';
-    document.getElementById('status').textContent=
-      `✅ 日報${allDailyRows.length}日分 / 詳細${allDetailRows.length}件 読込済`;
+
+    // ── デバッグ情報 ──────────────────────────────────
+    const sortedDates = allDailyRows.map(r=>r.date).filter(d=>d&&!isNaN(d)).sort((a,b)=>a-b);
+    const validCount = sortedDates.length;
+    const invalidCount = allDailyRows.length - validCount;
+    const minD = sortedDates[0];
+    const maxD = sortedDates[sortedDates.length-1];
+    const today = new Date();
+    const cutoff180 = new Date(); cutoff180.setDate(cutoff180.getDate()-180);
+    const filtered180 = allDailyRows.filter(r=>r.date && !isNaN(r.date) && r.date>=cutoff180).length;
+
+    document.getElementById('status').innerHTML =
+      `✅ 日報${allDailyRows.length}日分(有効${validCount}/無効${invalidCount}) / 詳細${allDetailRows.length}件 読込済<br>` +
+      `<span style="font-size:10px;color:#8b949e">` +
+      `最古:${minD?minD.toLocaleDateString('ja-JP'):'—'} 最新:${maxD?maxD.toLocaleDateString('ja-JP'):'—'} ` +
+      `今日:${today.toLocaleDateString('ja-JP')} 180日cutoff:${cutoff180.toLocaleDateString('ja-JP')} ` +
+      `180日以内:${filtered180}件` +
+      `</span>`;
+    // ─────────────────────────────────────────────────
+
     renderAll();
   }catch(e){
     document.getElementById('status').className='error';
