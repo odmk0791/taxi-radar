@@ -577,15 +577,13 @@ const jumpToNow = () => {
   let h = n.getHours();
   // ローカル日付を使用（toISOString はUTCのため日本時間でズレる）
   let ds = localDateStr(n);
-  // 0〜10時は前日シフトの続き → 時刻+24・日付を前日に
-  if(h <= 10){
+  // 13時前は前日シフトの続き → 時刻+24・日付を前日に（13:00〜36:59で1シフト）
+  if(h < 13){
     h = h + 24;
     const prev = new Date(n.getFullYear(), n.getMonth(), n.getDate() - 1);
     ds = localDateStr(prev);
   }
   selectedHour = h;
-  // シフト外（11〜15時台）は16時台に補正
-  if(selectedHour < 13) selectedHour = 13;
   selectedDay = isHoliday(ds) ? 0
               : isHolidayEve(ds) ? 7
               : new Date(ds + 'T00:00:00').getDay();
