@@ -358,6 +358,12 @@ const stdev = arr => {
 };
 const cv = (m, s) => m > 0 ? (s/m*100) : 0;
 
+// "YYYY-MM-DD" → ローカル時間のDateオブジェクト（UTC解釈を回避）
+const parseLocalDate = str => {
+  const [y,m,d] = str.split('-').map(Number);
+  return new Date(y, m-1, d);
+};
+
 // "16:12" → 分（整数）。36時間超も対応
 const parseTimeMin = s => {
   if(!s) return 0;
@@ -383,12 +389,14 @@ let filterStart=null, filterEnd=null; // シフト期間フィルタ用
 
 const filterRows = rows => {
   if(filterStart && filterEnd) {
-    const s=new Date(filterStart), e=new Date(filterEnd); e.setHours(23,59,59);
-    return rows.filter(r=>r.date && r.date>=s && r.date<=e);
+    // ローカル時間で比較（new Date('YYYY-MM-DD')はUTC解釈になるため使わない）
+    const s = parseLocalDate(filterStart);
+    const e = parseLocalDate(filterEnd); e.setHours(23,59,59);
+    return rows.filter(r=>r.date && !isNaN(r.date) && r.date>=s && r.date<=e);
   }
   if(!filterDays) return rows;
   const cutoff=new Date(); cutoff.setDate(cutoff.getDate()-filterDays);
-  return rows.filter(r=>r.date && r.date>=cutoff);
+  return rows.filter(r=>r.date && !isNaN(r.date) && r.date>=cutoff);
 };
 
 const SHIFT_PERIODS = [
@@ -426,8 +434,8 @@ const SHIFT_PERIODS = [
 function getCurrentShiftIndex() {
   const today = new Date();
   for(let i=0; i<SHIFT_PERIODS.length; i++) {
-    const s = new Date(SHIFT_PERIODS[i].start);
-    const e = new Date(SHIFT_PERIODS[i].end);
+    const s = parseLocalDate(SHIFT_PERIODS[i].start);
+    const e = parseLocalDate(SHIFT_PERIODS[i].end);
     e.setHours(23,59,59);
     if(today >= s && today <= e) return i;
   }
@@ -654,9 +662,9 @@ function renderKusha() {
   if(!allDailyRows.length || !allDetailRows.length) return;
 
   const cutoff = filterStart
-    ? new Date(filterStart)
+    ? parseLocalDate(filterStart)
     : (filterDays ? new Date(Date.now()-filterDays*86400000) : null);
-  const endDate = filterEnd ? new Date(filterEnd+'T23:59:59') : null;
+  const endDate = filterEnd ? (()=>{const e=parseLocalDate(filterEnd);e.setHours(23,59,59);return e;})() : null;
 
   // 詳細日報から日付別に実車時間を集計（分）
   const jisshaByDate = {};
@@ -832,10 +840,13 @@ function renderKusha() {
 
 function renderHourly() {
   if(!allDetailRows.length) return;
-  const cutoff = filterDays?new Date(Date.now()-filterDays*86400000):null;
+  const cutoff = filterStart ? parseLocalDate(filterStart)
+    : (filterDays?new Date(Date.now()-filterDays*86400000):null);
+  const endDateH = filterEnd ? (()=>{const e=parseLocalDate(filterEnd);e.setHours(23,59,59);return e;})() : null;
   const hourFare={}, hourCnt={};
   allDetailRows.forEach(r=>{
     if(cutoff&&r.date<cutoff) return;
+    if(endDateH&&r.date>endDateH) return;
     if(r.hour>=13&&r.hour<=36){
       if(!hourFare[r.hour]) hourFare[r.hour]=[];
       hourFare[r.hour].push(r.fare);
@@ -1018,26 +1029,8 @@ async function init() {
   try{
     await Promise.all([loadDailyReport(),loadDetailReport()]);
     document.getElementById('status').className='ok';
-
-    // ── デバッグ情報 ──────────────────────────────────
-    const sortedDates = allDailyRows.map(r=>r.date).filter(d=>d&&!isNaN(d)).sort((a,b)=>a-b);
-    const validCount = sortedDates.length;
-    const invalidCount = allDailyRows.length - validCount;
-    const minD = sortedDates[0];
-    const maxD = sortedDates[sortedDates.length-1];
-    const today = new Date();
-    const cutoff180 = new Date(); cutoff180.setDate(cutoff180.getDate()-180);
-    const filtered180 = allDailyRows.filter(r=>r.date && !isNaN(r.date) && r.date>=cutoff180).length;
-
-    document.getElementById('status').innerHTML =
-      `✅ 日報${allDailyRows.length}日分(有効${validCount}/無効${invalidCount}) / 詳細${allDetailRows.length}件 読込済<br>` +
-      `<span style="font-size:10px;color:#8b949e">` +
-      `最古:${minD?minD.toLocaleDateString('ja-JP'):'—'} 最新:${maxD?maxD.toLocaleDateString('ja-JP'):'—'} ` +
-      `今日:${today.toLocaleDateString('ja-JP')} 180日cutoff:${cutoff180.toLocaleDateString('ja-JP')} ` +
-      `180日以内:${filtered180}件` +
-      `</span>`;
-    // ─────────────────────────────────────────────────
-
+    document.getElementById('status').textContent=
+      `✅ 日報${allDailyRows.length}日分 / 詳細${allDetailRows.length}件 読込済`;
     renderAll();
   }catch(e){
     document.getElementById('status').className='error';
@@ -1060,11 +1053,11 @@ function initShiftSelect() {
   const sel = document.getElementById('shift-select');
   const today = new Date();
   SHIFT_PERIODS.forEach((p, i) => {
-    const end = new Date(p.end);
+    const end = parseLocalDate(p.end);
     if(end < new Date('2024-11-01')) return; // 古すぎるものは除外
     const opt = document.createElement('option');
     opt.value = i;
-    const isCurrent = today >= new Date(p.start) && today <= new Date(p.end+'T23:59:59');
+    const isCurrent = today >= parseLocalDate(p.start) && today <= (()=>{const e=parseLocalDate(p.end);e.setHours(23,59,59);return e;})();
     const isPast = end < today;
     opt.textContent = (isCurrent ? '▶ ' : isPast ? '　' : '○ ') + p.label;
     if(isCurrent) opt.style.color = '#79c0ff';
