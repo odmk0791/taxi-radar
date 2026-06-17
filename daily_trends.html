@@ -1004,7 +1004,7 @@ async function loadDailyReport() {
     const date=parseDate(cols[0]); if(!date) return null;
     return {date, dow:date.getDay(),
             revenue:parseNum(cols[3]), count:parseNum(cols[4]),
-            price:parseNum(cols[5]),  occRate:parseFloat2(cols[10]),  // K列=実車率
+            price:parseNum(cols[5]),  occRate:parseFloat2(cols[11]),  // L列=実車率(K列は実車距離)
             handleMin:  parseTimeMin(cols[7]),  // ハンドル時間
             kyukeiMin:  parseTimeMin(cols[8])   // 休憩時間
            };
@@ -1020,7 +1020,8 @@ async function loadDetailReport() {
     const date=parseDate(cols[0]); if(!date) return null;
     const m=(cols[2]||'').trim().match(/^(\d+):/);
     const hour=m?parseInt(m[1]):null; if(hour===null) return null;
-    return {date,hour,fare:parseNum(cols[9])};
+    return {date, hour, fare:parseNum(cols[9]),
+            jisshaMin: parseTimeMin(cols[4])};  // E列=実車時間
   }).filter(Boolean);
 }
 
