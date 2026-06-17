@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-18T04:20:14.912596+09:00",
+  "fetched_at": "2026-06-18T06:54:34.182109+09:00",
   "date": "20260618",
   "count": 21,
   "events": [
@@ -283,37 +283,6 @@
       "updated_at": "2026-06-17T18:06:44+09:00"
     },
     {
-      "id": 393701,
-      "title": "Cyber-sec+ Meetup vol.9",
-      "catch": "テーマ：セキュリティ予算をどうやって引き出す？",
-      "description": "<h1><strong>Cyber-sec+ Meetup vol.9 概要</strong></h1>\n<p>「その対策は本当に必要なの？」「ROI は？」「それって他社もやってるの？」</p>\n<p>セキュリティに関わっていると、一度は「経営層への説明」に悩んだことがあるのではないでしょうか？</p>\n<p>被害額をどう見積もるのか。どこまでをリスクとして説明するのか。定量化できないものを、どう伝えるのか。そして何より「どうすれば、ちゃんと予算が通るのか？」</p>\n<p>今回の Cyber-sec+ Meetup vol.9 では、そんな「セキュリティ予算獲得」をテーマに事業会社のリアルな実践知を共有します。</p>\n<p>「他社事例を使う」「失注リスクで説明する」「松竹梅で提案する」「株価インパクトを出す」「SLE で最低被害額を見積もる」などなど、理想論ではなく現場で実際に使われている「説得メニュー」を LT 形式で持ち寄る会です。</p>\n<p>また懇親会では参加者同士が近いテーマで会話しやすいよう、グループ分けなども予定しています。「本編より懇親会が本番」くらいの温度感で、是非とも気軽にご参加ください。</p>\n<h1><strong>Cyber-sec+ Meetup とは</strong></h1>\n<p><a href=\"https://www.cscloud.co.jp/dx-security/dx_news/20230608-1/\" rel=\"nofollow\">Cyber-sec+（サイバーセキュリティ プラス・略称：セキュプラ）</a> の企画・運営メンバーである Cyber-sec+ X が主催するサイバーセキュリティに関するミートアップイベントです。</p>\n<p>主に事業会社でサイバーセキュリティに関わっている方を対象にしています。</p>\n<p>ハッシュタグ：<a href=\"https://twitter.com/hashtag/CSecMeetup\" rel=\"nofollow\">#CSecMeetup</a> </p>\n<h1><strong>今回のテーマ</strong></h1>\n<p>今回のテーマは「セキュリティ予算をどうやって引き出す？」となりますが、セキュリティ投資は単純な費用対効果だけでは語れない領域です。</p>\n<ul>\n<li>リスク受容をどう考えるか</li>\n<li>どこまでを「最低限」とするか</li>\n<li>売上・信用・株価への影響をどう伝えるか</li>\n<li>「数字にならない損失」をどう扱うか</li>\n<li>CEO / CFO / 事業責任者それぞれにどう話すか</li>\n</ul>\n<p>など、各社の「リアルな戦い方」を共有できればと思っています。</p>\n<h1><strong>こんな方にオススメ</strong></h1>\n<ul>\n<li>経営層への説明に悩んでいる方</li>\n<li>セキュリティ予算を担当している方</li>\n<li>情報システム・セキュリティ責任者</li>\n<li>CISO / CSIRT / SOC 関係者</li>\n<li>セキュリティチェックシート対応をしている方</li>\n<li>「どう説明すれば通るのか」を知りたい方</li>\n<li>他社のリアルな温度感を知りたい方</li>\n</ul>\n<h1><strong>LT 登壇</strong></h1>\n<p>今回は「私の最強の説得メニュー」をテーマに LT 登壇者を募集します！</p>\n<ul>\n<li>経営層への説明で実際に刺さった話</li>\n<li>セキュリティ投資を通した時の資料や考え方</li>\n<li>「これは通らなかった」という失敗談</li>\n<li>ランサムウェア被害や失注リスクの見積り方法</li>\n<li>松竹梅提案の実践</li>\n<li>SLE / ALE の扱い方</li>\n<li>営業・広報・IR を巻き込んだ話</li>\n</ul>\n<p>など「実際にどうしているか」という話を歓迎します。「完成された話」ではなくても大丈夫です。むしろ、現場の試行錯誤やリアルな悩みこそ歓迎しています。</p>\n<p>※ LT は 10 分程度を予定しています。</p>\n<p>※ 原則、現地会場でご登壇いただける方を募集しています。</p>\n<h1><strong>タイムテーブル</strong></h1>\n<p>※ 内容は変更となる場合がございます。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: center;\">タイトル</th>\n<th style=\"text-align: center;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:45〜19:00</td>\n<td style=\"text-align: center;\">開場・受付</td>\n<td style=\"text-align: center;\">ー</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00〜19:10</td>\n<td style=\"text-align: center;\">開会挨拶・アイスブレイク</td>\n<td style=\"text-align: center;\">Cyber-sec+ X</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:10〜19:20</td>\n<td style=\"text-align: center;\">経営の「予算ない」にどう立ち向かうか？</td>\n<td style=\"text-align: center;\">大野 隆司</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:20〜19:30</td>\n<td style=\"text-align: center;\">EPP から EDR へ - 経営層にどう説明したか</td>\n<td style=\"text-align: center;\">Mitsu</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30〜19:35</td>\n<td style=\"text-align: center;\">リモート開発環境のサプライチェーン攻撃対策</td>\n<td style=\"text-align: center;\">春山 征吾 様</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:35〜19:40</td>\n<td style=\"text-align: center;\">休憩</td>\n<td style=\"text-align: center;\">ー</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:40〜19:45</td>\n<td style=\"text-align: center;\">AI 関連セキュリティ（調整中）</td>\n<td style=\"text-align: center;\">サイバーセキュリティクラウド 様</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45〜19:55</td>\n<td style=\"text-align: center;\">経営層を\"動かす\"ための考え方</td>\n<td style=\"text-align: center;\">Hisashi Hibino</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55〜20:05</td>\n<td style=\"text-align: center;\">経営層へのセキュリティ対策進捗共有</td>\n<td style=\"text-align: center;\">KC</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:05〜20:10</td>\n<td style=\"text-align: center;\">BTCONJP 2026 &amp; corp-engr スポンサー募集</td>\n<td style=\"text-align: center;\">hikky 様</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:10〜20:20</td>\n<td style=\"text-align: center;\">クロージング &amp; 写真撮影</td>\n<td style=\"text-align: center;\">Cyber-sec+ X</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:20〜21:15</td>\n<td style=\"text-align: center;\">懇親会</td>\n<td style=\"text-align: center;\">乾杯発声：春山 征吾 様</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:30</td>\n<td style=\"text-align: center;\">完全撤収</td>\n<td style=\"text-align: center;\">ー</td>\n</tr>\n</tbody>\n</table>\n<h1><strong>参加方法</strong></h1>\n<p>本ページからお申し込みください。</p>\n<h1><strong>参加費用</strong></h1>\n<p>無料</p>\n<p>※ 飲食物は飲食物スポンサーよりご提供いただきます。</p>\n<h1><strong>イベント形式</strong></h1>\n<p>ハイブリッド形式（オフライン + オンライン）</p>\n<p>※ 開場時刻は 18:45 頃となります。</p>\n<p>※ 視聴 URL は当日の 18:30 頃に当ページ（connpass）で共有いたします。</p>\n<h1><strong>スポンサー</strong></h1>\n<ul>\n<li>会場：<a href=\"https://www.cscloud.co.jp/\" rel=\"nofollow\">株式会社サイバーセキュリティクラウド</a> 様</li>\n<li>飲食物：春山 征吾 様</li>\n<li>配信：hikky 様</li>\n</ul>\n<p>本イベントシリーズでは飲食等をご支援いただけるスポンサー様を募集しております。</p>\n<p>Cyber-sec+ Meetup は、</p>\n<ul>\n<li>事業会社のセキュリティ実務者</li>\n<li>情報システム / セキュリティ担当者</li>\n<li>CISO / CSIRT / SOC 関係者</li>\n</ul>\n<p>などを中心に「実務目線」の知見交換を重視したコミュニティです。</p>\n<p>ご興味をお持ちいただけましたら、connpass にてお申し込みください。こちらからご連絡を差し上げます。</p>\n<h1><strong>注意事項</strong></h1>\n<ul>\n<li>当日は写真撮影・録画を行います。一部、メディアへ露出する場合もございますので、予めご了承ください。</li>\n<li>会場での受付時刻を 19:35 までといたします。</li>\n</ul>\n<h1><strong>参加者へのお願い事項</strong></h1>\n<p>Cyber-sec+ X が主催・運営するイベントは、お集まりになる参加者、登壇者、運営者、スポンサーなどの参加種別を問わず、全員でサイバーセキュリティに関する情報交換や交流などを行い楽しむためのものです。</p>\n<p>それを実現するために以下のような行動指針・ポリシーを定めております。ご確認の上、ご理解・ご協力をお願いいたします。</p>\n<ol>\n<li>\n<p>技術、趣味、信仰など、各自が大事にしているものを尊重しましょう。</p>\n</li>\n<li>\n<p>法律や運営者の指示に従い、安心してコンテンツや交流会を楽しめる場にしましょう。</p>\n</li>\n<li>\n<p>登壇者の発表を真剣に聞き、終わったら温かい拍手や歓声を送りましょう。</p>\n</li>\n<li>\n<p>技術的な知見や発表内容に誤りがあったとしても、敬意を持ち適切な言葉で質問しましょう。また、質問する態度・声色などを始めとした質問の仕方も気を付けましょう。</p>\n</li>\n<li>\n<p>自分自身が得た知見は「会場限定」などの指定がない場合、積極的に外部発信して知識交流を図りましょう。</p>\n</li>\n<li>\n<p>懇親会は、発表内容や技術情報などに関する情報交換が主目的となりますので、知識の共有および、参加者同士の交流を目的としないような方の参加はお控えください。</p>\n</li>\n</ol>",
-      "url": "https://cyber-sec-plus.connpass.com/event/393701/",
-      "image_url": "https://media.connpass.com/thumbs/c4/58/c45803b9b5178591265d25d557788221.png",
-      "hash_tag": "CSecMeetup",
-      "started_at": "2026-06-18T19:00:00+09:00",
-      "ended_at": "2026-06-18T21:30:00+09:00",
-      "published_at": "2026-05-20T09:31:33+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14017,
-        "subdomain": "cyber-sec-plus",
-        "title": "Cyber-sec+（サイバーセキュリティ プラス）",
-        "url": "https://cyber-sec-plus.connpass.com/"
-      },
-      "address": "東京都品川区上大崎3-1-1（JR東急目黒ビル 13階）",
-      "place": "株式会社サイバーセキュリティクラウド",
-      "lat": "35.633409600000",
-      "lon": "139.716748300000",
-      "owner_id": 802878,
-      "owner_nickname": "CSA",
-      "owner_display_name": "Nissy",
-      "accepted": 100,
-      "waiting": 0,
-      "updated_at": "2026-06-17T18:53:32+09:00"
-    },
-    {
       "id": 394627,
       "title": "Web制作会社のための CREATORS UPDATE 2026 Summer【増枠しました】",
       "catch": "AIで加速するWeb制作と、セキュリティ・運用の落とし穴を実例から学ぶ",
@@ -374,6 +343,37 @@
       "accepted": 74,
       "waiting": 0,
       "updated_at": "2026-06-11T17:52:09+09:00"
+    },
+    {
+      "id": 393701,
+      "title": "Cyber-sec+ Meetup vol.9",
+      "catch": "テーマ：セキュリティ予算をどうやって引き出す？",
+      "description": "<h1><strong>Cyber-sec+ Meetup vol.9 概要</strong></h1>\n<p>「その対策は本当に必要なの？」「ROI は？」「それって他社もやってるの？」</p>\n<p>セキュリティに関わっていると、一度は「経営層への説明」に悩んだことがあるのではないでしょうか？</p>\n<p>被害額をどう見積もるのか。どこまでをリスクとして説明するのか。定量化できないものを、どう伝えるのか。そして何より「どうすれば、ちゃんと予算が通るのか？」</p>\n<p>今回の Cyber-sec+ Meetup vol.9 では、そんな「セキュリティ予算獲得」をテーマに事業会社のリアルな実践知を共有します。</p>\n<p>「他社事例を使う」「失注リスクで説明する」「松竹梅で提案する」「株価インパクトを出す」「SLE で最低被害額を見積もる」などなど、理想論ではなく現場で実際に使われている「説得メニュー」を LT 形式で持ち寄る会です。</p>\n<p>また懇親会では参加者同士が近いテーマで会話しやすいよう、グループ分けなども予定しています。「本編より懇親会が本番」くらいの温度感で、是非とも気軽にご参加ください。</p>\n<h1><strong>Cyber-sec+ Meetup とは</strong></h1>\n<p><a href=\"https://www.cscloud.co.jp/dx-security/dx_news/20230608-1/\" rel=\"nofollow\">Cyber-sec+（サイバーセキュリティ プラス・略称：セキュプラ）</a> の企画・運営メンバーである Cyber-sec+ X が主催するサイバーセキュリティに関するミートアップイベントです。</p>\n<p>主に事業会社でサイバーセキュリティに関わっている方を対象にしています。</p>\n<p>ハッシュタグ：<a href=\"https://twitter.com/hashtag/CSecMeetup\" rel=\"nofollow\">#CSecMeetup</a> </p>\n<h1><strong>今回のテーマ</strong></h1>\n<p>今回のテーマは「セキュリティ予算をどうやって引き出す？」となりますが、セキュリティ投資は単純な費用対効果だけでは語れない領域です。</p>\n<ul>\n<li>リスク受容をどう考えるか</li>\n<li>どこまでを「最低限」とするか</li>\n<li>売上・信用・株価への影響をどう伝えるか</li>\n<li>「数字にならない損失」をどう扱うか</li>\n<li>CEO / CFO / 事業責任者それぞれにどう話すか</li>\n</ul>\n<p>など、各社の「リアルな戦い方」を共有できればと思っています。</p>\n<h1><strong>こんな方にオススメ</strong></h1>\n<ul>\n<li>経営層への説明に悩んでいる方</li>\n<li>セキュリティ予算を担当している方</li>\n<li>情報システム・セキュリティ責任者</li>\n<li>CISO / CSIRT / SOC 関係者</li>\n<li>セキュリティチェックシート対応をしている方</li>\n<li>「どう説明すれば通るのか」を知りたい方</li>\n<li>他社のリアルな温度感を知りたい方</li>\n</ul>\n<h1><strong>LT 登壇</strong></h1>\n<p>今回は「私の最強の説得メニュー」をテーマに LT 登壇者を募集します！</p>\n<ul>\n<li>経営層への説明で実際に刺さった話</li>\n<li>セキュリティ投資を通した時の資料や考え方</li>\n<li>「これは通らなかった」という失敗談</li>\n<li>ランサムウェア被害や失注リスクの見積り方法</li>\n<li>松竹梅提案の実践</li>\n<li>SLE / ALE の扱い方</li>\n<li>営業・広報・IR を巻き込んだ話</li>\n</ul>\n<p>など「実際にどうしているか」という話を歓迎します。「完成された話」ではなくても大丈夫です。むしろ、現場の試行錯誤やリアルな悩みこそ歓迎しています。</p>\n<p>※ LT は 10 分程度を予定しています。</p>\n<p>※ 原則、現地会場でご登壇いただける方を募集しています。</p>\n<h1><strong>タイムテーブル</strong></h1>\n<p>※ 内容は変更となる場合がございます。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: center;\">タイトル</th>\n<th style=\"text-align: center;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:45〜19:00</td>\n<td style=\"text-align: center;\">開場・受付</td>\n<td style=\"text-align: center;\">ー</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00〜19:10</td>\n<td style=\"text-align: center;\">開会挨拶・アイスブレイク</td>\n<td style=\"text-align: center;\">Cyber-sec+ X</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:10〜19:20</td>\n<td style=\"text-align: center;\">経営の「予算ない」にどう立ち向かうか？</td>\n<td style=\"text-align: center;\">大野 隆司</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:20〜19:30</td>\n<td style=\"text-align: center;\">EPP から EDR へ - 経営層にどう説明したか</td>\n<td style=\"text-align: center;\">Mitsu</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30〜19:35</td>\n<td style=\"text-align: center;\">リモート開発環境のサプライチェーン攻撃対策</td>\n<td style=\"text-align: center;\">春山 征吾 様</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:35〜19:40</td>\n<td style=\"text-align: center;\">休憩</td>\n<td style=\"text-align: center;\">ー</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:40〜19:45</td>\n<td style=\"text-align: center;\">AI 関連セキュリティ（調整中）</td>\n<td style=\"text-align: center;\">サイバーセキュリティクラウド 様</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45〜19:55</td>\n<td style=\"text-align: center;\">経営層を\"動かす\"ための考え方</td>\n<td style=\"text-align: center;\">Hisashi Hibino</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55〜20:05</td>\n<td style=\"text-align: center;\">経営層へのセキュリティ対策進捗共有</td>\n<td style=\"text-align: center;\">KC</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:05〜20:10</td>\n<td style=\"text-align: center;\">BTCONJP 2026 &amp; corp-engr スポンサー募集</td>\n<td style=\"text-align: center;\">hikky 様</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:10〜20:20</td>\n<td style=\"text-align: center;\">クロージング &amp; 写真撮影</td>\n<td style=\"text-align: center;\">Cyber-sec+ X</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:20〜21:15</td>\n<td style=\"text-align: center;\">懇親会</td>\n<td style=\"text-align: center;\">乾杯発声：春山 征吾 様</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:30</td>\n<td style=\"text-align: center;\">完全撤収</td>\n<td style=\"text-align: center;\">ー</td>\n</tr>\n</tbody>\n</table>\n<h1><strong>参加方法</strong></h1>\n<p>本ページからお申し込みください。</p>\n<h1><strong>参加費用</strong></h1>\n<p>無料</p>\n<p>※ 飲食物は飲食物スポンサーよりご提供いただきます。</p>\n<h1><strong>イベント形式</strong></h1>\n<p>ハイブリッド形式（オフライン + オンライン）</p>\n<p>※ 開場時刻は 18:45 頃となります。</p>\n<p>※ 視聴 URL は当日の 18:30 頃に当ページ（connpass）で共有いたします。</p>\n<h1><strong>スポンサー</strong></h1>\n<ul>\n<li>会場：<a href=\"https://www.cscloud.co.jp/\" rel=\"nofollow\">株式会社サイバーセキュリティクラウド</a> 様</li>\n<li>飲食物：春山 征吾 様</li>\n<li>配信：hikky 様</li>\n</ul>\n<p>本イベントシリーズでは飲食等をご支援いただけるスポンサー様を募集しております。</p>\n<p>Cyber-sec+ Meetup は、</p>\n<ul>\n<li>事業会社のセキュリティ実務者</li>\n<li>情報システム / セキュリティ担当者</li>\n<li>CISO / CSIRT / SOC 関係者</li>\n</ul>\n<p>などを中心に「実務目線」の知見交換を重視したコミュニティです。</p>\n<p>ご興味をお持ちいただけましたら、connpass にてお申し込みください。こちらからご連絡を差し上げます。</p>\n<h1><strong>注意事項</strong></h1>\n<ul>\n<li>当日は写真撮影・録画を行います。一部、メディアへ露出する場合もございますので、予めご了承ください。</li>\n<li>会場での受付時刻を 19:35 までといたします。</li>\n</ul>\n<h1><strong>参加者へのお願い事項</strong></h1>\n<p>Cyber-sec+ X が主催・運営するイベントは、お集まりになる参加者、登壇者、運営者、スポンサーなどの参加種別を問わず、全員でサイバーセキュリティに関する情報交換や交流などを行い楽しむためのものです。</p>\n<p>それを実現するために以下のような行動指針・ポリシーを定めております。ご確認の上、ご理解・ご協力をお願いいたします。</p>\n<ol>\n<li>\n<p>技術、趣味、信仰など、各自が大事にしているものを尊重しましょう。</p>\n</li>\n<li>\n<p>法律や運営者の指示に従い、安心してコンテンツや交流会を楽しめる場にしましょう。</p>\n</li>\n<li>\n<p>登壇者の発表を真剣に聞き、終わったら温かい拍手や歓声を送りましょう。</p>\n</li>\n<li>\n<p>技術的な知見や発表内容に誤りがあったとしても、敬意を持ち適切な言葉で質問しましょう。また、質問する態度・声色などを始めとした質問の仕方も気を付けましょう。</p>\n</li>\n<li>\n<p>自分自身が得た知見は「会場限定」などの指定がない場合、積極的に外部発信して知識交流を図りましょう。</p>\n</li>\n<li>\n<p>懇親会は、発表内容や技術情報などに関する情報交換が主目的となりますので、知識の共有および、参加者同士の交流を目的としないような方の参加はお控えください。</p>\n</li>\n</ol>",
+      "url": "https://cyber-sec-plus.connpass.com/event/393701/",
+      "image_url": "https://media.connpass.com/thumbs/c4/58/c45803b9b5178591265d25d557788221.png",
+      "hash_tag": "CSecMeetup",
+      "started_at": "2026-06-18T19:00:00+09:00",
+      "ended_at": "2026-06-18T21:30:00+09:00",
+      "published_at": "2026-05-20T09:31:33+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14017,
+        "subdomain": "cyber-sec-plus",
+        "title": "Cyber-sec+（サイバーセキュリティ プラス）",
+        "url": "https://cyber-sec-plus.connpass.com/"
+      },
+      "address": "東京都品川区上大崎3-1-1（JR東急目黒ビル 13階）",
+      "place": "株式会社サイバーセキュリティクラウド",
+      "lat": "35.633409600000",
+      "lon": "139.716748300000",
+      "owner_id": 802878,
+      "owner_nickname": "CSA",
+      "owner_display_name": "Nissy",
+      "accepted": 100,
+      "waiting": 0,
+      "updated_at": "2026-06-17T18:53:32+09:00"
     },
     {
       "id": 392729,
@@ -583,7 +583,7 @@
       "owner_id": 424659,
       "owner_nickname": "TED_Nishiwaki",
       "owner_display_name": "西脇 章彦",
-      "accepted": 227,
+      "accepted": 228,
       "waiting": 0,
       "updated_at": "2026-06-17T18:47:41+09:00"
     },
@@ -616,7 +616,7 @@
       "owner_display_name": "クラスメソッド株式会社",
       "accepted": 32,
       "waiting": 0,
-      "updated_at": "2026-06-16T17:56:10+09:00"
+      "updated_at": "2026-06-18T06:27:15+09:00"
     },
     {
       "id": 394842,
