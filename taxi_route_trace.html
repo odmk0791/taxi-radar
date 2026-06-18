@@ -121,6 +121,22 @@ td.cnt-cell,td.avg-cell{text-align:right;}
 .brk-body{flex:1;min-width:0;}
 .brk-time{font-size:10px;color:#33cc66;font-weight:700;}
 .brk-sub{font-size:9px;color:#2a5a38;margin-top:1px;}
+
+/* 空転（メーター空転・迎車キャンセル） */
+.t-row-ktn{
+  display:flex;align-items:center;gap:8px;
+  padding:5px 12px;background:#2a1010;
+  border-left:2px solid #ee445588;
+}
+.ktn-icon{
+  width:22px;height:22px;min-width:22px;
+  background:#3a1a1a;border:1.5px solid #ee4455;
+  border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:9px;color:#ee4455;
+}
+.ktn-body{flex:1;min-width:0;}
+.ktn-time{font-size:10px;color:#ee4455;font-weight:700;}
+.ktn-sub{font-size:9px;color:#7a3030;margin-top:1px;}
 .t-sep{height:1px;background:#0e0e28;margin:0 12px;}
 #status-bar{flex-shrink:0;padding:5px 12px;font-size:9px;color:#404060;
   border-top:1px solid #181838;line-height:1.5;word-break:break-all;}
@@ -361,6 +377,9 @@ td.cnt-cell,td.avg-cell{text-align:right;}
       <div class="leg-btn active" id="lb-brk" onclick="toggleLeg('brk',this)">
         <span style="width:16px;height:0;border-top:2px dashed #33cc66;flex-shrink:0;"></span>休憩
       </div>
+      <div class="leg-btn active" id="lb-ktn" onclick="toggleLeg('ktn',this)">
+        <span style="width:10px;height:10px;border-radius:50%;background:#ee4455;flex-shrink:0;"></span>空転
+      </div>
     </div>
     <div id="trip-list"></div>
     <div id="status-bar">—</div>
@@ -380,11 +399,12 @@ const URL_COORD='https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtT
 const URL_DAILY='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
 const URL_BD='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
 const URL_BREAK='https://docs.google.com/spreadsheets/d/e/2PACX-1vRQ2FcXX3nBh2gGAge5wNY-UFP76jXbHHyQl485_2aGSikdsNs8xHznpnM0Pwhxj82sxSWCJ-6tnXJs/pub?gid=0&single=true&output=csv';
+const URL_KUTEN='https://docs.google.com/spreadsheets/d/e/2PACX-1vTTYCG_9IrMI-g9yXrshVt6Jy6EXRVOlDSrelt_BgBI5qi5U9m240OrY7APtcEQyNFd3CXrvbqswE2_/pub?gid=0&single=true&output=csv';
 const C_PW='乗車地：市区',C_PT='乗車地：地名',C_DW='降車地：市区',C_DT='降車地：地名';
 const C_TIME='乗車時間',C_FARE_B='料金',C_STATUS='ステータス',C_THX='サンキュー';
 
-let leafMap,coordMap=new Map(),bdCache=null,dailyCache=null,breakCache=null;
-let tripLayers=[],deadLayers=[],breakLayers=[],activeN=null,showTrip=true,showDead=true;
+let leafMap,coordMap=new Map(),bdCache=null,dailyCache=null,breakCache=null,kutenCache=null;
+let tripLayers=[],deadLayers=[],breakLayers=[],kutenLayers=[],activeN=null,showTrip=true,showDead=true;
 let allDays=[];
 // 武三23区外アドレスのジオコーディングキャッシュ（セッション持続）
 const apiGeoCache=new Map();
@@ -638,10 +658,11 @@ function clearMap(){
   tripLayers.forEach(l=>{if(l.line)l.line.remove();if(l.pm)l.pm.remove();if(l.dm)l.dm.remove();});
   deadLayers.forEach(l=>l.remove());
   breakLayers.forEach(l=>l.remove());
-  tripLayers=[];deadLayers=[];breakLayers=[];activeN=null;
+  kutenLayers.forEach(l=>l.remove());
+  tripLayers=[];deadLayers=[];breakLayers=[];kutenLayers=[];activeN=null;
   document.getElementById('trip-list').innerHTML='';
 }
-let showBrk=true;
+let showBrk=true,showKtn=true;
 function toggleLeg(type,btn){
   btn.classList.toggle('active');
   if(type==='trip'){
@@ -657,6 +678,9 @@ function toggleLeg(type,btn){
   } else if(type==='brk'){
     showBrk=btn.classList.contains('active');
     breakLayers.forEach(l=>l.setOpacity(showBrk ? 0.65 : 0));
+  } else if(type==='ktn'){
+    showKtn=btn.classList.contains('active');
+    kutenLayers.forEach(l=>l.setOpacity(showKtn ? 0.85 : 0));
   }
 }
 
@@ -669,6 +693,14 @@ function timeToMin(s){
 function iconBreak(){
   return L.divIcon({
     html:`<div style="width:20px;height:20px;background:#1a3a22;border:1.5px solid #33cc66;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;color:#33cc66;font-weight:900;">休</div>`,
+    className:'',iconSize:[20,20],iconAnchor:[10,10]
+  });
+}
+// 空転マーカーアイコン（種別により文字を変える）
+function iconKuten(kind){
+  const label = kind==='迎車キャンセル' ? '迎' : '空';
+  return L.divIcon({
+    html:`<div style="width:20px;height:20px;background:#3a1a1a;border:1.5px solid #ee4455;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;color:#ee4455;font-weight:900;">${label}</div>`,
     className:'',iconSize:[20,20],iconAnchor:[10,10]
   });
 }
@@ -893,6 +925,27 @@ async function loadRoute(dayInfo){
       startMin: timeToMin(String(r['開始時間']||'')),
     })).filter(b=>b.startMin>=0);
 
+    // ── 空転データを取得・日付フィルター ──────────────────
+    // 日付列は「2026/06/03」(=シフト日) 形式。タイムスタンプではなくこちらを使う
+    if(!kutenCache){
+      try{ kutenCache=await fetchCSV(URL_KUTEN); }
+      catch(e){ kutenCache=[]; }
+    }
+    const dayKuten=kutenCache.filter(r=>{
+      const kDate=String(r['日付']||'').trim();
+      return kDate===dateKey||kDate===dateKeyAlt;
+    }).map(r=>({
+      kind: String(r['種別']||'').trim(), // メーター空転 / 迎車キャンセル
+      time: String(r['時刻']||'').trim(),
+      ward: String(r['場所_市区']||'').trim(),
+      place:String(r['場所_地名']||'').trim(),
+      lat:  parseFloat(r['緯度']||''),
+      lng:  parseFloat(r['経度']||''),
+      fare: parseFare(r['金額']),
+      memo: String(r['メモ']||'').trim(),
+      startMin: timeToMin(String(r['時刻']||'')),
+    })).filter(k=>k.startMin>=0);
+
     const matched=trips.filter(t=>t.ok).length;
     const fareDisp=dailyFare||trips.reduce((s,t)=>s+t.fare,0);
     const cntDisp=dailyCnt||trips.length;
@@ -907,10 +960,11 @@ async function loadRoute(dayInfo){
     const list=document.getElementById('trip-list');
     // trips に time を分数で付加（ソート用）
     trips.forEach(t=>{ t.startMin=timeToMin(t.time); });
-    // 全アイテムを時刻順に並べる（休憩含む）
+    // 全アイテムを時刻順に並べる（休憩・空転含む）
     const allItems=[
       ...trips.map(t=>({type:'trip',data:t,min:t.startMin})),
-      ...dayBreaks.map(b=>({type:'brk',data:b,min:b.startMin}))
+      ...dayBreaks.map(b=>({type:'brk',data:b,min:b.startMin})),
+      ...dayKuten.map(k=>({type:'ktn',data:k,min:k.startMin}))
     ].sort((a,b)=>(a.min<0?9999:a.min)-(b.min<0?9999:b.min));
 
     let prevDiv=null;
@@ -925,7 +979,7 @@ async function loadRoute(dayInfo){
           <div class="t-meta"><div class="t-fare">${pf(t.fare)}</div>${t.time?`<span class="t-time">${t.time}</span>`:''}${mkBadge(t.status,t.thx)}${!t.ok?'<span style="font-size:8px;color:#303050;">未取得</span>':''}</div>
         </div>`;
         if(t.ok)div.addEventListener('click',()=>setActive(t.n));
-      } else {
+      } else if(item.type==='brk'){
         const b=item.data;
         const hasLoc=!isNaN(b.lat)&&!isNaN(b.lng);
         const brkLabel=b.mins>0?`${b.mins}分`:
@@ -934,6 +988,16 @@ async function loadRoute(dayInfo){
         div.innerHTML=`<div class="brk-icon">休</div><div class="brk-body">
           <div class="brk-time">☕ 休憩 ${brkLabel}</div>
           <div class="brk-sub">${b.memo||''} ${hasLoc?'📍':''}</div>
+        </div>`;
+      } else {
+        const k=item.data;
+        const hasLoc=!isNaN(k.lat)&&!isNaN(k.lng);
+        const label = k.kind==='迎車キャンセル' ? '迎' : '空';
+        const kindLabel = k.kind || '空転';
+        div.className='t-row-ktn';
+        div.innerHTML=`<div class="ktn-icon">${label}</div><div class="ktn-body">
+          <div class="ktn-time">⚠ ${kindLabel} ${k.time}${k.ward||k.place?` ／ ${sl((k.ward||'')+(k.place||''),14)}`:''}</div>
+          <div class="ktn-sub">${k.memo||''} ${hasLoc?'📍':''}</div>
         </div>`;
       }
       list.appendChild(div);
@@ -987,6 +1051,15 @@ async function loadRoute(dayInfo){
       bounds.push([b.lat,b.lng]);
     });
 
+    // ── 地図：空転マーカー（緯度経度がある場合のみ。位置のみ、線は引かない） ──
+    dayKuten.filter(k=>!isNaN(k.lat)&&!isNaN(k.lng)).forEach(k=>{
+      const kindLabel=k.kind||'空転';
+      const km=L.marker([k.lat,k.lng],{icon:iconKuten(k.kind),opacity:showKtn?0.85:0}).addTo(leafMap)
+        .bindTooltip(`⚠ ${kindLabel} ${k.time}${k.memo?' '+k.memo:''}`,{direction:'top',permanent:false});
+      kutenLayers.push(km);
+      bounds.push([k.lat,k.lng]);
+    });
+
     if(bounds.length)leafMap.fitBounds(bounds,{padding:[50,50]});
 
     const unm=trips.filter(t=>!t.ok);
@@ -994,6 +1067,7 @@ async function loadRoute(dayInfo){
     let stMsg=`プロット: ${matched}/${trips.length}件`;
     if(unm.length)stMsg+=` | 未取得: `+unm.slice(0,2).map(t=>sl(t.pickup,9)).join(',');
     if(dayBreaks.length)stMsg+=` | 休憩: ${dayBreaks.length}件`;
+    if(dayKuten.length)stMsg+=` | 空転: ${dayKuten.length}件`;
     stBar.textContent=stMsg;
     stBar.className=matched>0?'ok':'ng';
     document.getElementById('map-loading').style.display='none';
