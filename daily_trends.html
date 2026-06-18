@@ -706,7 +706,7 @@ function renderKusha() {
   const kushaRate   = avgHandle>0 ? (avgKushaPure/avgHandle*100) : 0;
 
   document.getElementById('kusha-kpi').innerHTML = `
-    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
       <div class="kpi">
         <div class="kpi-label">純粋な空車時間/出番</div>
         <div class="kpi-val" style="color:var(--orange)">${fmtMin(Math.round(avgKushaPure))}</div>
@@ -726,11 +726,6 @@ function renderKusha() {
         <div class="kpi-label">1乗車あたり待ち</div>
         <div class="kpi-val" style="color:var(--blue)">${Math.round(avgWait)}分</div>
         <div class="kpi-sub">純粋な空車時間÷乗車回数</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-label">公式休憩時間/出番</div>
-        <div class="kpi-val" style="color:var(--muted)">${fmtMin(Math.round(avgKyukei))}</div>
-        <div class="kpi-sub">ハンドル${fmtMin(Math.round(avgHandle))}(日報I列)</div>
       </div>
     </div>`;
 
@@ -760,9 +755,7 @@ function renderKusha() {
         {label:'純粋な空車(客探し)', data:dowData.map(d=>avgK(d.kushaPure)),
           backgroundColor:'rgba(240,136,62,.75)', borderRadius:0, stack:'t'},
         {label:'立ち寄り休憩', data:dowData.map(d=>avgInformalDow(d.informal)),
-          backgroundColor:'rgba(227,179,65,.7)', borderRadius:0, stack:'t'},
-        {label:'公式休憩時間', data:dowData.map(d=>avgK(d.kyukei)),
-          backgroundColor:'rgba(139,148,158,.5)', borderRadius:{topLeft:4,topRight:4}, stack:'t'},
+          backgroundColor:'rgba(227,179,65,.7)', borderRadius:{topLeft:4,topRight:4}, stack:'t'},
       ]
     },
     options:{responsive:true,maintainAspectRatio:false,
