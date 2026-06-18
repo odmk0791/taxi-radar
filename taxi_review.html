@@ -130,7 +130,7 @@ table.loss td{padding:7px 4px;border-bottom:1px solid var(--surface2)}
   </div>
 
   <div class="card">
-    <h2><span class="num">⑤</span>純空車ロス分析</h2>
+    <h2><span class="num">⑤</span>純空車ロス（報われた空車／報われにくい空車）</h2>
     <div id="lossArea"></div>
   </div>
 
@@ -417,7 +417,7 @@ function renderPace(day,dow,items){
   document.getElementById('paceNote').innerHTML=`<div class="note ${finalDiff>=0?'good':'warn'}">同曜日標準ペースとの最終差：${finalDiff>=0?'+':''}${yen(finalDiff)}。${typeMsg}</div>`;
 }
 
-// ⑤ 純空車ロス分析
+// ⑤ 純空車ロス分析（報われた空車／報われなかった空車を事実で示す・断定しない）
 function renderLoss(day,items,rests){
   const rows=[];
   for(let i=1;i<items.length;i++){
@@ -427,27 +427,30 @@ function renderLoss(day,items,rests){
     let overlap=0;rests.forEach(rt=>{if(rt.s!=null&&rt.t!=null)overlap+=Math.max(0,Math.min(cur.pt,rt.t)-Math.max(prev.dt,rt.s));});
     const pure=gap-overlap;
     if(pure<LOSS_MIN)continue;
-    const addr=prev.dku+prev.dna;
-    // 除外判定（特別リスト）
-    const excluded=EXCLUDE_KW.some(k=>addr.includes(k)||prev.dku.includes(k));
-    let h=Math.floor(prev.dt/60);if(h>=24)h-=24;
-    const spot=(pickupHist[h+'|'+addr]||[]).length;
-    const area=areaHist[h+'|'+prev.dku]||0;
-    let verdict,tag;
-    if(excluded){verdict='ロング/空港後（構造的・除外）';tag='tag-x';}
-    else if(spot>=3){verdict='GO待ち妥当（不可抗力寄り）';tag='tag-ok';}
-    else if(area>=10){verdict='域内移動すべきだった';tag='tag-warn';}
-    else{verdict='エリア全体が薄い・降車地課題';tag='tag-bad';}
-    rows.push({h:prev.dt,addr:prev.dku+prev.dna,pure,spot,area,verdict,tag,excluded});
+    const dropAddr=prev.dku+prev.dna, nextAddr=cur.pku+cur.pna, nextFare=cur.fare;
+    // 除外判定（特別リスト＝ロング/空港後の構造的空車）
+    const excluded=EXCLUDE_KW.some(k=>dropAddr.includes(k)||prev.dku.includes(k));
+    // 報われ度（断定でなく事実ベースの目安）
+    let tag,cls;
+    if(excluded){tag='除外（ロング/空港後）';cls='tag-x';}
+    else if(nextFare>=5000){tag='報われた（距離客に）';cls='tag-ok';}
+    else if(pure>=30&&nextFare<2000){tag='報われにくい（長空車→安単価）';cls='tag-bad';}
+    else if(pure>=30){tag='長め空車';cls='tag-warn';}
+    else{tag='まずまず';cls='tag-ok';}
+    rows.push({h:prev.dt,dropAddr,nextAddr,pure,nextFare,tag,cls,excluded});
   }
   const area=document.getElementById('lossArea');
   if(!rows.length){area.innerHTML='<div class="empty">純空車20分以上のロス区間はありませんでした。淀みなく回せた1日。</div>';return;}
   const counted=rows.filter(r=>!r.excluded);
   const totLoss=counted.reduce((a,r)=>a+r.pure,0);
-  let html=`<div class="note">計上対象ロス：${counted.length}区間 計${fmtMin(totLoss)}（除外${rows.length-counted.length}区間は別掲）。この時間を縮めることが地力向上の核心。</div>`;
-  html+=`<table class="loss"><tr><th>降車時刻</th><th>降車地</th><th>純空車</th><th>降車地実績</th><th>診断</th></tr>`;
+  const unrewarded=counted.filter(r=>r.cls==='tag-bad');
+  let html=`<div class="note">純空車20分以上：${counted.length}区間 計${fmtMin(totLoss)}（除外${rows.length-counted.length}区間は別掲）。`;
+  if(unrewarded.length)html+=`うち「報われにくい空車」が${unrewarded.length}区間。ここを縮めることが地力向上の核心。`;
+  else html+=`報われにくい空車は無し。空車は長くても次につながっていた。`;
+  html+=` ※どこへ動くべきだったかは断定しません。事実から自分で判断する材料です。</div>`;
+  html+=`<table class="loss"><tr><th>降車時刻</th><th>降車地→次の乗車地</th><th>純空車</th><th>次の単価</th><th>報われ度</th></tr>`;
   rows.forEach(r=>{const hh=Math.floor(r.h/60),mm=r.h%60;
-    html+=`<tr><td>${hh}:${String(mm).padStart(2,'0')}</td><td>${r.addr}</td><td>${r.pure}分</td><td>${r.spot}件/市区${r.area}</td><td><span class="tag ${r.tag}">${r.verdict}</span></td></tr>`;});
+    html+=`<tr><td>${hh}:${String(mm).padStart(2,'0')}</td><td>${r.dropAddr}<br><span style="color:var(--muted)">→ ${r.nextAddr}</span></td><td>${r.pure}分</td><td>${yen(r.nextFare)}</td><td><span class="tag ${r.cls}">${r.tag}</span></td></tr>`;});
   html+=`</table>`;
   area.innerHTML=html;
 }
