@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-18T16:29:32.974462+09:00",
+  "fetched_at": "2026-06-18T20:46:21.616773+09:00",
   "date": "20260618",
   "count": 21,
   "events": [
@@ -7,7 +7,7 @@
       "id": 394468,
       "title": "新卒N年目のLT交流会！最近の自分の取り組み・チームの取り組みをシェアしよう！",
       "catch": "新卒エンジニアの交流会！",
-      "description": "<h1 style=\"text-align: center; color: #B74A14; border-bottom: 2px solid #B74A14; border-top: 2px solid #B74A14; border-left: 0px; background-color: #faf6f0; font-weight: bold;\">新卒N年目のLT交流会！<br>〜最近の自分の取り組み・チームの取り組みをシェアしよう〜</h1>\n\n<p>新卒エンジニア同士で、最近の取り組みについて話すLT &amp; 交流イベントです！（新卒1~3年目くらいを想定していますが、それ以外でもOKです！学生でもOK！）</p>\n<p>前半はカジュアルなLT会、後半は懇親会を予定しています。\n普段は関わることの少ない、会社を超えた横のつながりを作りましょう！<br>\n<strong>初登壇はもちろん、初めてのイベント参加の方もウェルカムです！</strong></p>\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">タイムテーブル</h2>\n\n<table>\n  <thead>\n    <tr>\n       <th colspan=\"2\" style=\"background-color: #faf6f0; color: #B74A14; font-weight: bold;\">タイムテーブル</th>\n    </tr>\n  </thead><tbody>\n     <tr>\n       <td style=\"background-color: #faf6f0;\">19:00~</td><td>開場</td>\n     </tr>\n     <tr>\n       <td rowspan=\"2\" style=\"background-color: #faf6f0;\">19:30~</td>\n       <td>\n         <img height=\"48px\" src=\"https://yuta-ike.github.io/yuta-ike/x-icon.jpg\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\">オープニング</span> / <a href=\"https://x.com/Selria1\" rel=\"nofollow\">yuta-ike</a>\n       </td>\n     </tr>\n     <tr>\n       <td>\n         <img height=\"48px\" src=\"https://yuta-ike.github.io/yuta-ike/white.png\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\">会場案内・会社紹介 / 株式会社ヤプリ様</span>\n       </td>\n     </tr>\n     <tr>\n       <td rowspan=\"5\" style=\"background-color: #faf6f0;\">19:45~</td>\n       <td style=\"background-color: #faf6f0; color: #B74A14; font-weight: bold; text-align: center;\">\n         LT前半\n      </td>\n     </tr>\n\n     <tr>\n       <td>\n         <img height=\"48px\" src=\"https://media.connpass.com/thumbs/25/5c/255c38ae56931b01d6ae4d881516fbcd.png\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\">AIで社員の就労意欲を喪失させてしまった話</span> / <a href=\"https://x.com/hoshiken_\" rel=\"nofollow\">hoshiken_</a>\n      </td>\n     </tr>\n\n     <tr>\n       <td>\n         <img height=\"48px\" src=\"https://media.connpass.com/thumbs/53/f0/53f0afd0898b783d26ab34a89e204f46.png\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\">新卒一年目のコミュニティ駆動ライフ</span> / <a href=\"https://x.com/itojum1230\" rel=\"nofollow\">itojum</a>\n      </td>\n     </tr>\n\n     <tr>\n       <td>\n         <img height=\"48px\" src=\"https://media.connpass.com/thumbs/14/ab/14ab9919155f3b84bd57bb14a604a13d.png\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\">要件定義からシナリオテストまで一気通貫で動かせた話</span> / <a href=\"https://x.com/basketyossy\" rel=\"nofollow\">よっしー</a>\n      </td>\n     </tr>\n\n     <tr>\n       <td>\n         <img height=\"48px\" src=\"https://media.connpass.com/thumbs/c5/ef/c5ef8477cff0b2f5abb1a14a539534ab.png\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\">未定</span> / <a href=\"https://github.com/shumizu418128\" rel=\"nofollow\"> shumizu418128 </a>\n      </td>\n    </tr>\n\n     <tr>\n       <td rowspan=\"5\" style=\"background-color: #faf6f0;\">20:20~</td>\n       <td style=\"background-color: #faf6f0; color: #B74A14; font-weight: bold; text-align: center;\">\n         LT後半\n      </td>\n     </tr>\n\n     <tr>\n       <td>\n         <img height=\"48px\" src=\"https://media.connpass.com/thumbs/4f/82/4f82258a9596967389c7578acdb2cc12.png\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\">捨てることを前提としたプロトでコミュニケーションしよう</span> / <a href=\"https://x.com/SoraAkagami0709\" rel=\"nofollow\"> 赤神青空\n </a>\n      </td>\n     </tr>\n\n     <tr>\n       <td>\n         <img height=\"48px\" src=\"https://media.connpass.com/thumbs/92/33/9233d0579d0cfd9dfdf38cd6c191176a.png\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\">N度目のObsidian挑戦</span> / <a href=\"https://github.com/airRnot1106\" rel=\"nofollow\"> airRnot </a>\n      </td>\n    </tr>\n\n     <tr>\n       <td>\n         <img height=\"48px\" src=\"https://media.connpass.com/thumbs/9e/b2/9eb24192832c0e521981319b66561a5a.png\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\"> 新卒だからこそいろいろ挑戦するぞの巻 </span> / <a href=\"https://x.com/Melmol_27\" rel=\"nofollow\">kota</a>\n      </td>\n    </tr>\n\n     <tr>\n       <td>\n         <img height=\"48px\" src=\"https://media.connpass.com/thumbs/b7/14/b71491b60c418238e56ba6962f8b970a.png\" style=\"margin-right: 4px;\" width=\"48px\">\n         <span style=\"font-weight: bold;\"> エンジニアとして、プロダクトと歩き切るということ </span> / <a href=\"https://x.com/tosa_now\" rel=\"nofollow\">とさ</a>\n      </td>\n    </tr>\n\n     <tr>\n       <td style=\"background-color: #faf6f0;\">20:45~</td><td style=\"font-weight: bold; font-size: 16px;\">懇親会</td>\n     </tr>\n     <tr>\n       <td style=\"background-color: #faf6f0;\">21:30</td><td>イベント終了</td>\n     </tr>\n  </tbody>\n</table>\n\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">LT</h2>\n\n<p>今回は「最近の自分の取り組み・チームの取り組みをシェアしよう」をテーマとします！</p>\n<p>個人開発・情報収集のやり方・AIとの付き合い方など自分の取り組みでも、チームや社内で実践している取り組みでも何でもOKです！</p>\n<p>テーマに（多少でも）かすっていればOKです！</p>\n<p>スライド5~10枚程度でシェアしましょう！（時間は質疑応答含め7分ご用意しています）</p>\n<p>6/4追記: LT時間を変更しました</p>\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">日時</h2>\n\n<p>2026/6/18 19:30~21:00</p>\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">会場</h2>\n\n<p>株式会社ヤプリ様に会場をお借りします。</p>\n<p>東京都港区六本木3-2-1住友不動産六本木グランドタワー 41階（<a href=\"https://www.google.com/maps?ll=35.664587,139.737778&amp;z=15&amp;t=m&amp;hl=ja&amp;gl=US&amp;mapclient=embed&amp;cid=13297245450528393253\" rel=\"nofollow\">Google Map</a>）</p>\n<ul>\n<li>南北線「六本木一丁目」駅直結（オフィスビル1階へ直結）</li>\n<li>日比谷線 大江戸線「六本木駅」より徒歩10分（地上からは4階が入口となります）</li>\n</ul>\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">行動規範</h2>\n\n<p><a href=\"https://2026.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigi の行動規範</a> に則り運営いたします。参加者の皆さまも行動規範の遵守をお願いいたします。</p>\n<p>上記に加え、営業や勧誘を目的とした参加や懇親会のみを目的とした参加はお断りいたします。</p>\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">問い合わせ先</h2>\n\n<p>メール: <a href=\"mailto:n-study-info@googlegroups.com\">n-study-info@googlegroups.com</a>（運営メーリス）</p>\n<p>X: <a href=\"https://x.com/Selria1\" rel=\"nofollow\">https://x.com/Selria1</a> （主催者）</p>",
+      "description": "<h1 style=\"text-align: center; color: #B74A14; border-bottom: 2px solid #B74A14; border-top: 2px solid #B74A14; border-left: 0; background-color: #faf6f0; font-weight: bold;\">\n新卒N年目のLT交流会！<br>\n〜最近の自分の取り組み・チームの取り組みをシェアしよう〜\n</h1>\n\n<p>新卒エンジニア同士で、最近の取り組みについて話すLT &amp; 交流イベントです！（新卒1~3年目くらいを想定していますが、それ以外でもOKです！学生でもOK！）</p>\n<p>前半はカジュアルなLT会、後半は懇親会を予定しています。<br>\n普段は関わることの少ない、会社を超えた横のつながりを作りましょう！<br>\n<strong>初登壇はもちろん、初めてのイベント参加の方もウェルカムです！</strong></p>\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0 10px 0;\">\nタイムテーブル\n</h2>\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\" style=\"background-color: #faf6f0; color: #B74A14; font-weight: bold;\">\n        タイムテーブル\n      </th>\n    </tr>\n  </thead>\n\n  <tbody>\n\n    <tr>\n      <td style=\"background-color: #faf6f0;\">19:00~</td>\n      <td>開場</td>\n    </tr>\n\n    <tr>\n      <td style=\"background-color: #faf6f0;\">19:30~</td>\n      <td>\n        <img height=\"48\" src=\"https://yuta-ike.github.io/yuta-ike/x-icon.jpg\" style=\"margin-right: 4px;\" width=\"48\">\n        <span style=\"font-weight: bold;\">オープニング</span>\n        /\n        <a href=\"https://x.com/Selria1\" rel=\"nofollow\">yuta-ike</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"5\" style=\"background-color: #faf6f0;\">19:45~</td>\n      <td style=\"background-color: #faf6f0; color: #B74A14; font-weight: bold; text-align: center;\">\n        LT前半\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <span style=\"font-weight: bold;\">会場案内・会社紹介 / 株式会社ヤプリ様</span>\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <img height=\"48\" src=\"https://media.connpass.com/thumbs/53/f0/53f0afd0898b783d26ab34a89e204f46.png\" style=\"margin-right: 4px;\" width=\"48\">\n        <span style=\"font-weight: bold;\">新卒一年目のコミュニティ駆動ライフ</span>\n        /\n        <a href=\"https://x.com/itojum1230\" rel=\"nofollow\">itojum</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <img height=\"48\" src=\"https://media.connpass.com/thumbs/c5/ef/c5ef8477cff0b2f5abb1a14a539534ab.png\" style=\"margin-right: 4px;\" width=\"48\">\n        <span style=\"font-weight: bold;\">もう2026年だけど “コールセンター” を考える</span>\n        /\n        <a href=\"https://github.com/shumizu418128\" rel=\"nofollow\">shumizu418128</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"5\" style=\"background-color: #faf6f0;\">20:20~</td>\n      <td style=\"background-color: #faf6f0; color: #B74A14; font-weight: bold; text-align: center;\">\n        LT後半\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <img height=\"48\" src=\"https://media.connpass.com/thumbs/4f/82/4f82258a9596967389c7578acdb2cc12.png\" style=\"margin-right: 4px;\" width=\"48\">\n        <span style=\"font-weight: bold;\">捨てることを前提としたプロトでコミュニケーションしよう</span>\n        /\n        <a href=\"https://x.com/SoraAkagami0709\" rel=\"nofollow\">赤神青空</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <img height=\"48\" src=\"https://media.connpass.com/thumbs/92/33/9233d0579d0cfd9dfdf38cd6c191176a.png\" style=\"margin-right: 4px;\" width=\"48\">\n        <span style=\"font-weight: bold;\">N度目のObsidian挑戦</span>\n        /\n        <a href=\"https://github.com/airRnot1106\" rel=\"nofollow\">airRnot</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <img height=\"48\" src=\"https://media.connpass.com/thumbs/9e/b2/9eb24192832c0e521981319b66561a5a.png\" style=\"margin-right: 4px;\" width=\"48\">\n        <span style=\"font-weight: bold;\">新卒だからこそいろいろ挑戦するぞの巻</span>\n        /\n        <a href=\"https://x.com/Melmol_27\" rel=\"nofollow\">kota</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <img height=\"48\" src=\"https://media.connpass.com/thumbs/b7/14/b71491b60c418238e56ba6962f8b970a.png\" style=\"margin-right: 4px;\" width=\"48\">\n        <span style=\"font-weight: bold;\">エンジニアとして、プロダクトと歩き切るということ</span>\n        /\n        <a href=\"https://x.com/tosa_now\" rel=\"nofollow\">とさ</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td style=\"background-color: #faf6f0;\">20:45~</td>\n      <td style=\"font-weight: bold; font-size: 16px;\">懇親会</td>\n    </tr>\n\n    <tr>\n      <td style=\"background-color: #faf6f0;\">21:30</td>\n      <td>イベント終了</td>\n    </tr>\n\n  </tbody>\n</table>\n\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0 10px 0;\">\nLT\n</h2>\n\n<p>今回は「最近の自分の取り組み・チームの取り組みをシェアしよう」をテーマとします！</p>\n<p>個人開発・情報収集のやり方・AIとの付き合い方など自分の取り組みでも、チームや社内で実践している取り組みでも何でもOKです！</p>\n<p>テーマに（多少でも）かすっていればOKです！</p>\n<p>スライド5~10枚程度でシェアしましょう！（時間は質疑応答含め7分ご用意しています）</p>\n<p>6/4追記: LT時間を変更しました</p>\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0 10px 0;\">\n日時\n</h2>\n\n<p>2026/6/18 19:30~21:00</p>\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0 10px 0;\">\n会場\n</h2>\n\n<p>株式会社ヤプリ様に会場をお借りします。</p>\n<p>東京都港区六本木3-2-1住友不動産六本木グランドタワー 41階（<a href=\"https://www.google.com/maps?ll=35.664587,139.737778&amp;z=15&amp;t=m&amp;hl=ja&amp;gl=US&amp;mapclient=embed&amp;cid=13297245450528393253\" rel=\"nofollow\">Google Map</a>）</p>\n<ul>\n<li>南北線「六本木一丁目」駅直結（オフィスビル1階へ直結）</li>\n<li>日比谷線 大江戸線「六本木駅」より徒歩10分（地上からは4階が入口となります）</li>\n</ul>\n\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0 10px 0;\">\n行動規範\n</h2>\n\n<p><a href=\"https://2026.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigi の行動規範</a> に則り運営いたします。参加者の皆さまも行動規範の遵守をお願いいたします。</p>\n<p><br><br></p>\n<p>上記に加え、営業や勧誘を目的とした参加や懇親会のみを目的とした参加はお断りいたします。</p>\n<h2 style=\"color: #B74A14; border-bottom: 2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0 10px 0;\">\n問い合わせ先\n</h2>\n\n<p>メール:\n<a href=\"mailto:n-study-info@googlegroups.com\">n-study-info@googlegroups.com</a>\n（運営メーリス）</p>\n<p><br><br></p>\n<p>X:\n<a href=\"https://x.com/Selria1\" rel=\"nofollow\"></a><a href=\"https://x.com/Selria1</a>\" rel=\"nofollow\">https://x.com/Selria1</a>\n（主催者）</p>",
       "url": "https://fresh-engineers.connpass.com/event/394468/",
       "image_url": "https://media.connpass.com/thumbs/3d/c9/3dc9806174969274b49afc637e1e4bda.png",
       "hash_tag": "n_study",
@@ -16,7 +16,7 @@
       "published_at": "2026-05-21T22:15:07+09:00",
       "limit": 37,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17440,
         "subdomain": "fresh-engineers",
@@ -30,9 +30,9 @@
       "owner_id": 566009,
       "owner_nickname": "Eri-0910",
       "owner_display_name": "Erina Yamakawa",
-      "accepted": 34,
-      "waiting": 2,
-      "updated_at": "2026-06-18T15:20:11+09:00"
+      "accepted": 33,
+      "waiting": 1,
+      "updated_at": "2026-06-18T19:29:46+09:00"
     },
     {
       "id": 395349,
@@ -47,7 +47,7 @@
       "published_at": "2026-06-03T14:01:51+09:00",
       "limit": 127,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 8992,
         "subdomain": "optim",
@@ -61,7 +61,7 @@
       "owner_id": 392772,
       "owner_nickname": "hitsan",
       "owner_display_name": "hitsan",
-      "accepted": 32,
+      "accepted": 44,
       "waiting": 0,
       "updated_at": "2026-06-17T21:00:46+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-04-16T20:07:24+09:00",
       "limit": 180,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16151,
         "subdomain": "pn-developer-lounge",
@@ -92,7 +92,7 @@
       "owner_id": 102046,
       "owner_nickname": "kekekenta",
       "owner_display_name": "kekekenta",
-      "accepted": 138,
+      "accepted": 143,
       "waiting": 0,
       "updated_at": "2026-06-18T15:21:22+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-05-15T19:22:06+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17422,
         "subdomain": "techbooklibrary",
@@ -140,7 +140,7 @@
       "published_at": "2026-05-21T14:35:43+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14623,
         "subdomain": "tech4u",
@@ -171,7 +171,7 @@
       "published_at": "2026-06-04T17:14:37+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 12277,
         "subdomain": "fffff",
@@ -190,6 +190,37 @@
       "updated_at": "2026-06-04T17:14:37+09:00"
     },
     {
+      "id": 394076,
+      "title": "PHPerKaigi mini #2",
+      "catch": "PHPerのためのココロトキメク勉強会",
+      "description": "<h1>PHPerKaigi mini</h1>\n<p>PHPerKaigi mini は技術カンファレンス PHPerKaigi のスポンサーさまおよびスポンサーをご検討頂いている企業さまにホストになって頂いてPHPer（ペチパー）向けに開催される勉強会イベントです。\nPHPerとは現在PHPを使っている、過去にPHPを使用していた、これからPHPを使いたい、PHPが好きだと思っている方みなさんの総称です。\n知的好奇心を刺激する技術関連の話題を楽しみましょう！</p>\n<h1>LT枠</h1>\n<p>PHPerKaigi mini のメインコンテンツLT（5分）のスピーカーを募集します。</p>\n<p>トークのテーマは必ずしもPHP関連の話である必要はありません。PHPerが聞いて面白ければ何でもアリです！\nWebアプリ開発やライブラリ開発といった王道テーマから、言語そのものの実装、ハードウェア、ネットワークなど、PHPerが聞いて楽しい、PHPer聞かせたい技術ネタをご応募ください！</p>\n<p>PHPerKaigi miniでは、あなたならではの経験や、愛と情熱の込められたトークを歓迎します。\nあなたのとっておきの「アツいトーク」を聞かせてください。</p>\n<h1>タイムテーブル</h1>\n<p>19:00 開場<br>\n19:30<br>\n - オープニング tomzoh<br>\n - 会社紹介<br>\n - 自己紹介タイム  参加者全員<br>\n20:00 LT x 5本  <br>\n - Keisuke Ikeda (ksk1kd) さん 「AIを活用してノーコードツールから脱却した話」<br>\n - 77web (77web) さん 「AI時代のジュニアエンジニア育成（n=1）」<br>\n - asumikam (__asumikan) さん  「テストCI高速化発展途上記」<br>\n - msng (msng) さん  「日本語確定の enter でサブミットしてしまうウェブサービスと、我々 IME 必要民はどう向き合えばいいのか」<br>\n - higaki (higaki_program) さん 「ペチコン愛媛のタイムテーブルへの思い」<br>\n20:30 懇親会<br>\n22:00 解散</p>\n<h1>その他</h1>\n<ul>\n<li>オーディエンス枠の人数は拡張されることがあります。拡張は遅くとも開催1週間前までに実施します。</li>\n<li>LT枠についてもお申込人数によって拡張されることがあります。</li>\n<li>スタッフ枠は会場提供の管理者の方およびPHPerKaigi 2026実行委員会で参加依頼した方のための枠です。それ以外の方のお申込はキャンセルさせていただきます。</li>\n<li>参加目的が不適切だと判断される場合には運営判断で参加をキャンセルさせていただく場合があります。</li>\n</ul>\n<h1>行動規範</h1>\n<p>PHPerKaigi のイベントは行動規範が適用されます。 <a href=\"https://phperkaigi.jp/coc.html\" rel=\"nofollow\">https://phperkaigi.jp/coc.html</a></p>",
+      "url": "https://phperkaigi.connpass.com/event/394076/",
+      "image_url": "https://media.connpass.com/thumbs/b7/92/b792fee19e5c2048dd05c64f4f6a1d61.png",
+      "hash_tag": "phperkaigi",
+      "started_at": "2026-06-18T19:00:00+09:00",
+      "ended_at": "2026-06-18T22:00:00+09:00",
+      "published_at": "2026-05-21T10:01:07+09:00",
+      "limit": 33,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 9220,
+        "subdomain": "phperkaigi",
+        "title": "PHPerKaigi",
+        "url": "https://phperkaigi.connpass.com/"
+      },
+      "address": "東京都港区芝公園2-11-1 (住友不動産芝公園タワー) 18階",
+      "place": "株式会社エス・エム・エス",
+      "lat": "35.654166900000",
+      "lon": "139.751592200000",
+      "owner_id": 20414,
+      "owner_nickname": "tomzoh",
+      "owner_display_name": "tomzoh",
+      "accepted": 19,
+      "waiting": 0,
+      "updated_at": "2026-06-18T20:29:26+09:00"
+    },
+    {
       "id": 394700,
       "title": "【AI時代の採用のホンネ】AIオフレコトーク＃6",
       "catch": "Helpfeel・レバレジーズ・PKSHAが語る、採用基準と見極めのリアル",
@@ -202,7 +233,7 @@
       "published_at": "2026-05-29T13:05:55+09:00",
       "limit": 25,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2005,
         "subdomain": "flexy",
@@ -216,7 +247,7 @@
       "owner_id": 710815,
       "owner_nickname": "flexy_circu",
       "owner_display_name": "flexy_circu",
-      "accepted": 18,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-06-16T15:40:55+09:00"
     },
@@ -233,7 +264,7 @@
       "published_at": "2026-05-20T09:31:33+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14017,
         "subdomain": "cyber-sec-plus",
@@ -249,38 +280,7 @@
       "owner_display_name": "Nissy",
       "accepted": 106,
       "waiting": 0,
-      "updated_at": "2026-06-18T15:22:38+09:00"
-    },
-    {
-      "id": 394076,
-      "title": "PHPerKaigi mini #2",
-      "catch": "PHPerのためのココロトキメク勉強会",
-      "description": "<h1>PHPerKaigi mini</h1>\n<p>PHPerKaigi mini は技術カンファレンス PHPerKaigi のスポンサーさまおよびスポンサーをご検討頂いている企業さまにホストになって頂いてPHPer（ペチパー）向けに開催される勉強会イベントです。\nPHPerとは現在PHPを使っている、過去にPHPを使用していた、これからPHPを使いたい、PHPが好きだと思っている方みなさんの総称です。\n知的好奇心を刺激する技術関連の話題を楽しみましょう！</p>\n<h1>LT枠</h1>\n<p>PHPerKaigi mini のメインコンテンツLT（5分）のスピーカーを募集します。</p>\n<p>トークのテーマは必ずしもPHP関連の話である必要はありません。PHPerが聞いて面白ければ何でもアリです！\nWebアプリ開発やライブラリ開発といった王道テーマから、言語そのものの実装、ハードウェア、ネットワークなど、PHPerが聞いて楽しい、PHPer聞かせたい技術ネタをご応募ください！</p>\n<p>PHPerKaigi miniでは、あなたならではの経験や、愛と情熱の込められたトークを歓迎します。\nあなたのとっておきの「アツいトーク」を聞かせてください。</p>\n<h1>タイムテーブル</h1>\n<p>19:00 開場<br>\n19:30<br>\n - オープニング tomzoh<br>\n - 会社紹介<br>\n - 自己紹介タイム  参加者全員<br>\n20:00 LT x 5本  <br>\n - Keisuke Ikeda (ksk1kd) さん 「AIを活用してノーコードツールから脱却した話」<br>\n - 77web (77web) さん 「AI時代のジュニアエンジニア育成（n=1）」<br>\n - asumikam (__asumikan) さん<br>\n - msng (msng) さん  「日本語確定の enter でサブミットしてしまうウェブサービスと、我々 IME 必要民はどう向き合えばいいのか」<br>\n - higaki (higaki_program) 「ペチコン愛媛のタイムテーブルへの思い」<br>\n20:30 懇親会<br>\n22:00 解散</p>\n<h1>その他</h1>\n<ul>\n<li>オーディエンス枠の人数は拡張されることがあります。拡張は遅くとも開催1週間前までに実施します。</li>\n<li>LT枠についてもお申込人数によって拡張されることがあります。</li>\n<li>スタッフ枠は会場提供の管理者の方およびPHPerKaigi 2026実行委員会で参加依頼した方のための枠です。それ以外の方のお申込はキャンセルさせていただきます。</li>\n<li>参加目的が不適切だと判断される場合には運営判断で参加をキャンセルさせていただく場合があります。</li>\n</ul>\n<h1>行動規範</h1>\n<p>PHPerKaigi のイベントは行動規範が適用されます。 <a href=\"https://phperkaigi.jp/coc.html\" rel=\"nofollow\">https://phperkaigi.jp/coc.html</a></p>",
-      "url": "https://phperkaigi.connpass.com/event/394076/",
-      "image_url": "https://media.connpass.com/thumbs/b7/92/b792fee19e5c2048dd05c64f4f6a1d61.png",
-      "hash_tag": "phperkaigi",
-      "started_at": "2026-06-18T19:00:00+09:00",
-      "ended_at": "2026-06-18T22:00:00+09:00",
-      "published_at": "2026-05-21T10:01:07+09:00",
-      "limit": 33,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 9220,
-        "subdomain": "phperkaigi",
-        "title": "PHPerKaigi",
-        "url": "https://phperkaigi.connpass.com/"
-      },
-      "address": "東京都港区芝公園2-11-1 (住友不動産芝公園タワー) 18階",
-      "place": "株式会社エス・エム・エス",
-      "lat": "35.654166900000",
-      "lon": "139.751592200000",
-      "owner_id": 20414,
-      "owner_nickname": "tomzoh",
-      "owner_display_name": "tomzoh",
-      "accepted": 19,
-      "waiting": 0,
-      "updated_at": "2026-06-18T14:09:47+09:00"
+      "updated_at": "2026-06-18T19:07:19+09:00"
     },
     {
       "id": 394627,
@@ -293,9 +293,9 @@
       "started_at": "2026-06-18T19:00:00+09:00",
       "ended_at": "2026-06-18T21:30:00+09:00",
       "published_at": "2026-05-22T18:45:05+09:00",
-      "limit": 450,
+      "limit": 460,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2748,
         "subdomain": "gmo",
@@ -309,9 +309,9 @@
       "owner_id": 1016745,
       "owner_nickname": "GMO_ConoHa",
       "owner_display_name": "ConoHa byGMO",
-      "accepted": 439,
+      "accepted": 437,
       "waiting": 0,
-      "updated_at": "2026-06-18T15:11:51+09:00"
+      "updated_at": "2026-06-18T17:32:36+09:00"
     },
     {
       "id": 395566,
@@ -324,9 +324,9 @@
       "started_at": "2026-06-18T19:00:00+09:00",
       "ended_at": "2026-06-18T21:30:00+09:00",
       "published_at": "2026-05-29T14:57:12+09:00",
-      "limit": 120,
+      "limit": 160,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10626,
         "subdomain": "finatext",
@@ -337,12 +337,12 @@
       "place": "株式会社ナウキャスト",
       "lat": "35.697650400000",
       "lon": "139.751691000000",
-      "owner_id": 943584,
-      "owner_nickname": "Now_toyoki",
-      "owner_display_name": "Now_toyoki",
-      "accepted": 92,
+      "owner_id": 653102,
+      "owner_nickname": "kkuv553",
+      "owner_display_name": "kkuv553",
+      "accepted": 110,
       "waiting": 0,
-      "updated_at": "2026-06-18T16:08:01+09:00"
+      "updated_at": "2026-06-18T16:38:43+09:00"
     },
     {
       "id": 396375,
@@ -357,7 +357,7 @@
       "published_at": "2026-06-05T11:13:06+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14178,
         "subdomain": "lycorptech-jp",
@@ -371,9 +371,9 @@
       "owner_id": 814332,
       "owner_nickname": "lycorptech_jp",
       "owner_display_name": "LINEヤフー Tech",
-      "accepted": 30,
+      "accepted": 32,
       "waiting": 0,
-      "updated_at": "2026-06-18T13:47:13+09:00"
+      "updated_at": "2026-06-18T19:29:14+09:00"
     },
     {
       "id": 392729,
@@ -388,7 +388,7 @@
       "published_at": "2026-05-18T11:02:14+09:00",
       "limit": 60,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 5956,
         "subdomain": "brainpad-meetup",
@@ -402,7 +402,7 @@
       "owner_id": 880407,
       "owner_nickname": "wata_f",
       "owner_display_name": "wata_f",
-      "accepted": 48,
+      "accepted": 50,
       "waiting": 0,
       "updated_at": "2026-06-18T08:34:52+09:00"
     },
@@ -419,7 +419,7 @@
       "published_at": "2026-04-16T18:00:00+09:00",
       "limit": 26,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17372,
         "subdomain": "lenovopro-comunity-gaget-lab",
@@ -450,7 +450,7 @@
       "published_at": "2026-04-24T18:07:52+09:00",
       "limit": 28,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16286,
         "subdomain": "engineers-afterwork",
@@ -481,7 +481,7 @@
       "published_at": "2026-05-21T18:03:18+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 11156,
         "subdomain": "re-shine",
@@ -495,7 +495,7 @@
       "owner_id": 511009,
       "owner_nickname": "ataboy86",
       "owner_display_name": "ataboy86",
-      "accepted": 18,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-06-17T13:42:38+09:00"
     },
@@ -512,7 +512,7 @@
       "published_at": "2026-06-09T20:29:30+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 9236,
         "subdomain": "legalforce",
@@ -543,7 +543,7 @@
       "published_at": "2026-05-28T08:39:31+09:00",
       "limit": 152,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都港区三田３丁目１１−２４ (国際興業三田第2ビル 9階)",
       "place": "株式会社ログラス",
@@ -552,7 +552,7 @@
       "owner_id": 686047,
       "owner_nickname": "Cocoda",
       "owner_display_name": "Cocoda",
-      "accepted": 109,
+      "accepted": 110,
       "waiting": 0,
       "updated_at": "2026-06-10T07:30:39+09:00"
     },
@@ -569,7 +569,7 @@
       "published_at": "2026-05-21T13:47:46+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1769,
         "subdomain": "iotbizlabo",
@@ -631,7 +631,7 @@
       "published_at": "2026-05-22T21:45:03+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4422,
         "subdomain": "fgstudy",
@@ -645,7 +645,7 @@
       "owner_id": 8108,
       "owner_nickname": "nuki_pon",
       "owner_display_name": "ぬきぽん",
-      "accepted": 2,
+      "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-05-22T21:45:03+09:00"
     }
