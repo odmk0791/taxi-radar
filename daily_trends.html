@@ -884,7 +884,9 @@ const SEGMENTS = [
 
 function renderSegments() {
   if(!allDetailRows.length) return;
-  const cutoff = filterDays ? new Date(Date.now()-filterDays*86400000) : null;
+  const cutoff = filterStart ? parseLocalDate(filterStart)
+    : (filterDays ? new Date(Date.now()-filterDays*86400000) : null);
+  const endDateSeg = filterEnd ? (()=>{const e=parseLocalDate(filterEnd);e.setHours(23,59,59);return e;})() : null;
 
   // 区間 × 曜日 でデータ集計
   // structure: segData[segIdx][dow] = {fares:[...], count:0}
@@ -892,6 +894,7 @@ function renderSegments() {
 
   allDetailRows.forEach(r => {
     if(cutoff && r.date < cutoff) return;
+    if(endDateSeg && r.date > endDateSeg) return;
     const dow = r.date.getDay();
     SEGMENTS.forEach((seg, si) => {
       if(r.hour >= seg.min && r.hour < seg.max) {
@@ -908,7 +911,9 @@ function renderSegments() {
     const count    = allFares.length;
     const avg      = count ? Math.round(total/count) : 0;
     const days     = filterDays||180;
-    const shifts   = allDailyRows.filter(r=>!cutoff||r.date>=cutoff).length;
+    const shifts   = allDailyRows.filter(r=>
+      (!cutoff||r.date>=cutoff) && (!endDateSeg||r.date<=endDateSeg)
+    ).length;
     const avgPerShift = shifts ? Math.round(total/shifts) : 0;
 
     return `<div class="seg-kpi-card" style="border-top:3px solid ${seg.color}">
@@ -937,7 +942,9 @@ function renderSegments() {
   // 曜日別棒グラフ（各区間）
   SEGMENTS.forEach((seg, si) => {
     const dowAvgRev = Array(7).fill(0).map((_,d) => {
-      const shifts = allDailyRows.filter(r=>(!cutoff||r.date>=cutoff)&&r.date.getDay()===d).length;
+      const shifts = allDailyRows.filter(r=>
+        (!cutoff||r.date>=cutoff) && (!endDateSeg||r.date<=endDateSeg) && r.date.getDay()===d
+      ).length;
       const total  = segData[si][d].fares.reduce((s,v)=>s+v,0);
       return shifts ? Math.round(total/shifts) : 0;
     });
@@ -959,7 +966,9 @@ function renderSegments() {
   // 積み上げ棒グラフ（曜日×3区間）
   const stackedData = SEGMENTS.map((seg, si) =>
     Array(7).fill(0).map((_,d) => {
-      const shifts = allDailyRows.filter(r=>(!cutoff||r.date>=cutoff)&&r.date.getDay()===d).length;
+      const shifts = allDailyRows.filter(r=>
+        (!cutoff||r.date>=cutoff) && (!endDateSeg||r.date<=endDateSeg) && r.date.getDay()===d
+      ).length;
       const total  = segData[si][d].fares.reduce((s,v)=>s+v,0);
       return shifts ? Math.round(total/shifts) : 0;
     })
@@ -999,14 +1008,33 @@ async function loadDailyReport() {
   const res=await fetch(DAILY_URL);
   const rows=parseCSV(await res.text());
   const start=isNaN(Date.parse((rows[0]?.[0]||'').replace(/\//g,'-')))?1:0;
+
+  // ── ヘッダー名から列位置を動的に検出（列順が変わっても安全） ──
+  const header = start===1 ? rows[0] : [];
+  const findCol = (names, fallback) => {
+    for(const name of names){
+      const i = header.findIndex(h => (h||'').trim() === name);
+      if(i>=0) return i;
+    }
+    return fallback;
+  };
+  const COL = {
+    revenue:  findCol(['営収'], 3),
+    count:    findCol(['回数'], 4),
+    price:    findCol(['単価'], 5),
+    handle:   findCol(['ハンドル'], 7),
+    kyukei:   findCol(['休憩'], 8),
+    occRate:  findCol(['実車率'], 11),
+  };
+
   allDailyRows=rows.slice(start).map(cols=>{
     if(cols.length<12) return null;
     const date=parseDate(cols[0]); if(!date) return null;
     return {date, dow:date.getDay(),
-            revenue:parseNum(cols[3]), count:parseNum(cols[4]),
-            price:parseNum(cols[5]),  occRate:parseFloat2(cols[11]),  // L列=実車率(K列は実車距離)
-            handleMin:  parseTimeMin(cols[7]),  // ハンドル時間
-            kyukeiMin:  parseTimeMin(cols[8])   // 休憩時間
+            revenue:parseNum(cols[COL.revenue]), count:parseNum(cols[COL.count]),
+            price:parseNum(cols[COL.price]),  occRate:parseFloat2(cols[COL.occRate]),
+            handleMin:  parseTimeMin(cols[COL.handle]),
+            kyukeiMin:  parseTimeMin(cols[COL.kyukei])
            };
   }).filter(Boolean);
 }
