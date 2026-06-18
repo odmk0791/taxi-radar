@@ -325,7 +325,8 @@ function renderVerdict(day,vt,B,jiriki,obakeItems){
 // ② 売上スコア
 function renderRevenue(day,vt,B,jiriki,obakeItems,thxItems){
   const bar=document.getElementById('revbar');
-  const max=B.stretch*1.05, scale=p=>Math.min(100,p/max*100);
+  const MIN=65000, max=B.stretch*1.03;
+  const scale=p=>Math.max(0,Math.min(100,(p-MIN)/(max-MIN)*100));
   const rev=day.rev;
   // バー塗り（地力 + お化け分を色分け）
   let html=`<div class="barfill" style="width:${scale(jiriki)}%;background:linear-gradient(90deg,#1f6feb,#388bfd)"></div>`;
@@ -351,27 +352,27 @@ function renderRevenue(day,vt,B,jiriki,obakeItems,thxItems){
 function renderAlloc(day,dow){
   const handle=day.handle||0, occ=day.occ||0, rest=day.rest||0, bind=day.bind||handle+rest;
   const jisha=handle*occ/100, kusha=handle-jisha;
-  const alpha=Math.max(0,bind-handle-rest);
   const A=ALLOC[dow]||ALLOC['月'];
-  // ドーナツ
+  // ドーナツ＝ハンドル時間の内訳（実車/空車）。実車%は実車率と一致する
   if(charts.alloc)charts.alloc.destroy();
   charts.alloc=new Chart(document.getElementById('allocDonut'),{
     type:'doughnut',
-    data:{labels:['実車','空車','休憩','点検等'],
-      datasets:[{data:[jisha,kusha,rest,alpha],
-        backgroundColor:['#3fb950','#f0883e','#79c0ff','#30363d'],borderWidth:0}]},
+    data:{labels:['実車','空車'],
+      datasets:[{data:[jisha,kusha],
+        backgroundColor:['#3fb950','#f0883e'],borderWidth:0}]},
     options:{plugins:{legend:{display:false}},cutout:'62%'}
   });
-  const tot=jisha+kusha+rest+alpha;
   document.getElementById('allocLegend').innerHTML=[
-    ['実車',jisha,'#3fb950'],['空車',kusha,'#f0883e'],['休憩',rest,'#79c0ff'],['点検等',alpha,'#30363d']
-  ].map(([l,v,c])=>`<div class="legrow"><span class="dot" style="background:${c}"></span>${l}<span class="lv">${fmtMin(v)} (${tot?Math.round(v/tot*100):0}%)</span></div>`).join('');
+    ['実車',jisha,'#3fb950'],['空車',kusha,'#f0883e']
+  ].map(([l,v,c])=>`<div class="legrow"><span class="dot" style="background:${c}"></span>${l}<span class="lv">${fmtMin(v)} (${handle?Math.round(v/handle*100):0}%)</span></div>`).join('')
+   +`<div class="legrow" style="border-top:1px solid var(--border);margin-top:6px;padding-top:8px;color:var(--muted)"><span class="dot" style="background:#79c0ff"></span>休憩<span class="lv">${fmtMin(rest)}</span></div>`
+   +`<div class="legrow" style="color:var(--muted)"><span class="dot" style="background:#30363d"></span>拘束時間<span class="lv">${fmtMin(bind)}</span></div>`;
   // 1回あたり空車
   const gap=day.cnt?kusha/day.cnt:0;
   document.getElementById('allocKpi').innerHTML=`
-    <div class="kbox"><div class="kl">実車率（結果指標）</div><div class="kv ${occ>=A.occ?'up':'down'}">${occ.toFixed(1)}%</div><div class="ks">同曜日平均 ${A.occ}% (${(occ-A.occ>=0?'+':'')}${(occ-A.occ).toFixed(1)}pt)</div></div>
+    <div class="kbox"><div class="kl">実車率（結果指標）</div><div class="kv ${occ>=A.occ?'up':'down'}">${occ.toFixed(1)}%</div><div class="ks">同曜日平均 ${A.occ}% (${(occ-A.occ>=0?'+':'')}${(occ-A.occ).toFixed(1)}pt)・実車÷ハンドル</div></div>
     <div class="kbox"><div class="kl">1回あたり空車（行動指標）</div><div class="kv ${gap<=16?'up':'down'}">${gap.toFixed(1)}分</div><div class="ks">全体平均16.0分・短いほど良い</div></div>`;
-  let note=`<div class="note">空車${fmtMin(kusha)}（同曜日平均${fmtMin(A.kusha)}）／休憩${fmtMin(rest)}（平均${fmtMin(A.rest)}）。`;
+  let note=`<div class="note">空車${fmtMin(kusha)}（同曜日平均${fmtMin(A.kusha)}）／休憩${fmtMin(rest)}（平均${fmtMin(A.rest)}）。円グラフはハンドル時間の内訳なので実車%＝実車率。`;
   if(occ>=A.occ&&gap<=16)note+=' 効率◎：実車率も空車回転も同曜日平均を上回る。';
   else if(occ<A.occ&&gap>16)note+=' 効率課題：実車率が低く空車も長い。客探しに時間を食われた。';
   note+=' ※実車率はロング偏重でも上がるため、地力評価は1回あたり空車を重視。</div>';
