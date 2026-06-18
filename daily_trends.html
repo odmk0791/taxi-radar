@@ -215,7 +215,7 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
   </div>
 </div>
 
-<div class="section-title">空車時間分析（ハンドル時間 − 実車時間）</div>
+<div class="section-title">空車時間分析（ハンドル時間 − 実車時間 − 立ち寄り休憩）</div>
 
 <!-- 空車KPIカード -->
 <div id="kusha-kpi" style="padding:10px 20px">
@@ -234,7 +234,7 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
 
 <div class="grid-2col" style="padding:0 20px 4px">
   <div class="chart-card">
-    <div class="chart-title">曜日別 平均空車時間<span>短いほど効率的</span></div>
+    <div class="chart-title">曜日別 純粋な空車時間<span>客探し+迎車のみ・短いほど効率的</span></div>
     <div class="chart-wrap short"><canvas id="c-kusha-dow"></canvas></div>
   </div>
   <div class="chart-card">
@@ -245,7 +245,7 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
 
 <div class="grid-2col" style="padding:0 20px 12px">
   <div class="chart-card">
-    <div class="chart-title">空車時間の推移<span>7日移動平均</span></div>
+    <div class="chart-title">純粋な空車時間の推移<span>7日移動平均・客探し+迎車のみ</span></div>
     <div class="chart-wrap"><canvas id="c-kusha-trend"></canvas></div>
   </div>
   <div class="chart-card">
@@ -318,6 +318,7 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
 <script>
 const DAILY_URL  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
 const DETAIL_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv";
+const REST_URL   = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRQ2FcXX3nBh2gGAge5wNY-UFP76jXbHHyQl485_2aGSikdsNs8xHznpnM0Pwhxj82sxSWCJ-6tnXJs/pub?gid=0&single=true&output=csv";
 const DAYS_JP = ['日','月','火','水','木','金','土'];
 const DAY_COLORS = ['#f85149','#f0883e','#e3b341','#3fb950','#79c0ff','#d2a8ff','#ff7edb'];
 
@@ -364,6 +365,9 @@ const parseLocalDate = str => {
   return new Date(y, m-1, d);
 };
 
+// Dateオブジェクト → "YYYY-M-D" キー（ローカル基準・toISOStringのUTCずれを回避）
+const dateKey = d => `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+
 // "16:12" → 分（整数）。36時間超も対応
 const parseTimeMin = s => {
   if(!s) return 0;
@@ -384,7 +388,7 @@ const percentile = (arr, p) => {
 // CV → 安定性ラベル
 const cvLabel = v => v<15?['安定','badge-good']:v<25?['やや不安定','badge-warn']:['不安定','badge-bad'];
 
-let allDailyRows=[], allDetailRows=[], filterDays=180, charts={};
+let allDailyRows=[], allDetailRows=[], allRestRows=[], filterDays=180, charts={};
 let filterStart=null, filterEnd=null; // シフト期間フィルタ用
 
 const filterRows = rows => {
@@ -661,40 +665,52 @@ function renderAll() {
 function renderKusha() {
   if(!allDailyRows.length) return;
 
-  // 日報1本だけで計算（詳細日報との突き合わせは行わない）
-  // 実車時間 = ハンドル時間 × 実車率(L列)
-  // 空車時間 = ハンドル時間 − 実車時間
+  // 日報1本で計算: 実車時間=ハンドル×実車率, 空車時間=ハンドル-実車時間
+  // さらに、立ち寄り休憩ログ(6/3〜)があれば差し引いて「純粋な空車(客探し)時間」を算出
+  const restByDate = {};
+  allRestRows.forEach(r => {
+    const k = dateKey(r.date);
+    restByDate[k] = (restByDate[k]||0) + r.min;
+  });
+
   const rows = filterRows(allDailyRows);
   const kushaTimes = rows
     .filter(r => r.handleMin > 0)
     .map(r => {
-      const occFrac  = Math.min(1, Math.max(0, r.occRate / 100)); // 0〜1に正規化
-      const jissha   = r.handleMin * occFrac;
-      const kusha    = r.handleMin - jissha;
+      const occFrac    = Math.min(1, Math.max(0, r.occRate / 100));
+      const jissha     = r.handleMin * occFrac;
+      const kushaRaw   = r.handleMin - jissha;             // 客探し＋立ち寄り休憩 込み
+      const informalRest = restByDate[dateKey(r.date)] || 0; // 立ち寄り休憩(新ログ)
+      const kushaPure  = Math.max(0, kushaRaw - informalRest); // 純粋な空車(客探し)時間
       return {
         date: r.date, dow: r.dow,
-        kushaMin: kusha, handleMin: r.handleMin,
-        kyukeiMin: r.kyukeiMin, jisshaMin: jissha,
-        occRate: r.occRate, count: r.count
+        kushaRawMin: kushaRaw, kushaPureMin: kushaPure, informalRestMin: informalRest,
+        handleMin: r.handleMin, kyukeiMin: r.kyukeiMin, jisshaMin: jissha,
+        occRate: r.occRate, count: r.count,
+        hasRestLog: informalRest > 0
       };
     });
   if(!kushaTimes.length) return;
 
+  // 休憩ログがある日だけで「立ち寄り休憩」を平均する（6/3以前は対象外にして薄める影響を避ける）
+  const withRestLog = kushaTimes.filter(r=>r.hasRestLog || r.date >= parseLocalDate('2026-06-03'));
+
   // KPIカード
-  const avgKusha  = mean(kushaTimes.map(r=>r.kushaMin));
-  const avgJissha = mean(kushaTimes.map(r=>r.jisshaMin));
-  const avgHandle = mean(kushaTimes.map(r=>r.handleMin));
-  const avgKyukei = mean(kushaTimes.map(r=>r.kyukeiMin));
-  const avgWait   = mean(kushaTimes.filter(r=>r.count>0).map(r=>r.kushaMin/r.count));
-  const avgOcc    = mean(kushaTimes.map(r=>r.occRate)); // = 実車率の単純平均(スプレッドシートのAVERAGE(L列)と一致)
-  const kushaRate = 100 - avgOcc;
+  const avgKushaPure = mean(kushaTimes.map(r=>r.kushaPureMin));
+  const avgJissha   = mean(kushaTimes.map(r=>r.jisshaMin));
+  const avgHandle   = mean(kushaTimes.map(r=>r.handleMin));
+  const avgKyukei   = mean(kushaTimes.map(r=>r.kyukeiMin));
+  const avgInformal = withRestLog.length ? mean(withRestLog.map(r=>r.informalRestMin)) : 0;
+  const avgWait     = mean(kushaTimes.filter(r=>r.count>0).map(r=>r.kushaPureMin/r.count));
+  const avgOcc      = mean(kushaTimes.map(r=>r.occRate));
+  const kushaRate   = avgHandle>0 ? (avgKushaPure/avgHandle*100) : 0;
 
   document.getElementById('kusha-kpi').innerHTML = `
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px">
       <div class="kpi">
-        <div class="kpi-label">平均空車時間/出番</div>
-        <div class="kpi-val" style="color:var(--orange)">${fmtMin(Math.round(avgKusha))}</div>
-        <div class="kpi-sub">空車率 ${kushaRate.toFixed(1)}%</div>
+        <div class="kpi-label">純粋な空車時間/出番</div>
+        <div class="kpi-val" style="color:var(--orange)">${fmtMin(Math.round(avgKushaPure))}</div>
+        <div class="kpi-sub">客探し+迎車のみ・空車率${kushaRate.toFixed(1)}%</div>
       </div>
       <div class="kpi">
         <div class="kpi-label">平均実車時間/出番</div>
@@ -702,31 +718,38 @@ function renderKusha() {
         <div class="kpi-sub">実車率 ${avgOcc.toFixed(1)}%</div>
       </div>
       <div class="kpi">
-        <div class="kpi-label">1乗車あたり待ち</div>
-        <div class="kpi-val" style="color:var(--blue)">${Math.round(avgWait)}分</div>
-        <div class="kpi-sub">空車時間÷乗車回数</div>
+        <div class="kpi-label">立ち寄り休憩/出番</div>
+        <div class="kpi-val" style="color:var(--yellow)">${fmtMin(Math.round(avgInformal))}</div>
+        <div class="kpi-sub">${withRestLog.length}出番分(6/3〜記録)</div>
       </div>
       <div class="kpi">
-        <div class="kpi-label">平均休憩時間/出番</div>
+        <div class="kpi-label">1乗車あたり待ち</div>
+        <div class="kpi-val" style="color:var(--blue)">${Math.round(avgWait)}分</div>
+        <div class="kpi-sub">純粋な空車時間÷乗車回数</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">公式休憩時間/出番</div>
         <div class="kpi-val" style="color:var(--muted)">${fmtMin(Math.round(avgKyukei))}</div>
-        <div class="kpi-sub">ハンドル${fmtMin(Math.round(avgHandle))}</div>
+        <div class="kpi-sub">ハンドル${fmtMin(Math.round(avgHandle))}(日報I列)</div>
       </div>
     </div>`;
 
   // 曜日別集計
   const dowData = Array(7).fill(null).map(()=>
-    ({kusha:[],jissha:[],kyukei:[],waitPerRide:[],occRate:[]}));
+    ({kushaPure:[],informal:[],jissha:[],kyukei:[],waitPerRide:[],occRate:[]}));
   kushaTimes.forEach(r => {
     if(r.dow<0||r.dow>6) return;
-    dowData[r.dow].kusha.push(r.kushaMin);
+    dowData[r.dow].kushaPure.push(r.kushaPureMin);
+    if(r.hasRestLog) dowData[r.dow].informal.push(r.informalRestMin);
     dowData[r.dow].jissha.push(r.jisshaMin);
     dowData[r.dow].kyukei.push(r.kyukeiMin);
     dowData[r.dow].occRate.push(r.occRate);
-    if(r.count>0) dowData[r.dow].waitPerRide.push(r.kushaMin/r.count);
+    if(r.count>0) dowData[r.dow].waitPerRide.push(r.kushaPureMin/r.count);
   });
   const avgK = d=>d.length?Math.round(mean(d)):0;
 
-  // ① 時間配分 積み上げ棒グラフ
+  // ① 時間配分 積み上げ棒グラフ（実車/純粋空車/立ち寄り休憩/公式休憩）
+  const avgInformalDow = d => d.length ? Math.round(mean(d)) : 0;
   makeChart('c-time-stack',{
     type:'bar',
     data:{
@@ -734,14 +757,16 @@ function renderKusha() {
       datasets:[
         {label:'実車時間', data:dowData.map(d=>avgK(d.jissha)),
           backgroundColor:'rgba(63,185,80,.75)', borderRadius:0, stack:'t'},
-        {label:'空車時間', data:dowData.map(d=>avgK(d.kusha)),
+        {label:'純粋な空車(客探し)', data:dowData.map(d=>avgK(d.kushaPure)),
           backgroundColor:'rgba(240,136,62,.75)', borderRadius:0, stack:'t'},
-        {label:'休憩時間', data:dowData.map(d=>avgK(d.kyukei)),
+        {label:'立ち寄り休憩', data:dowData.map(d=>avgInformalDow(d.informal)),
+          backgroundColor:'rgba(227,179,65,.7)', borderRadius:0, stack:'t'},
+        {label:'公式休憩時間', data:dowData.map(d=>avgK(d.kyukei)),
           backgroundColor:'rgba(139,148,158,.5)', borderRadius:{topLeft:4,topRight:4}, stack:'t'},
       ]
     },
     options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:11}}},
+      plugins:{legend:{position:'top',labels:{boxWidth:11,font:{size:10}}},
         tooltip:{callbacks:{
           label:ctx=>`${ctx.dataset.label}: ${fmtMin(ctx.parsed.y)}`,
           footer:items=>`合計: ${fmtMin(items.reduce((s,i)=>s+i.parsed.y,0))}`
@@ -758,8 +783,8 @@ function renderKusha() {
   makeChart('c-kusha-dow',{
     type:'bar',
     data:{labels:DAYS_JP,datasets:[{
-      data:dowData.map(d=>avgK(d.kusha)),
-      backgroundColor:DAY_COLORS.map(c=>c+'bb'),borderRadius:4,label:'空車時間(分)'
+      data:dowData.map(d=>avgK(d.kushaPure)),
+      backgroundColor:DAY_COLORS.map(c=>c+'bb'),borderRadius:4,label:'純粋な空車時間(分)'
     }]},
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>fmtMin(ctx.parsed.y)}}},
@@ -783,12 +808,12 @@ function renderKusha() {
   // ④ 空車時間の推移（日次）
   const sorted = [...kushaTimes].sort((a,b)=>a.date-b.date);
   const tDates = sorted.map(r=>r.date.toLocaleDateString('ja-JP',{month:'2-digit',day:'2-digit'}));
-  const tKusha = sorted.map(r=>r.kushaMin);
+  const tKusha = sorted.map(r=>r.kushaPureMin);
   const tMa7   = movingAvg(tKusha,7);
   makeChart('c-kusha-trend',{
     type:'line',
     data:{labels:tDates,datasets:[
-      {label:'空車時間',data:tKusha,borderColor:'rgba(240,136,62,.6)',
+      {label:'純粋な空車時間',data:tKusha,borderColor:'rgba(240,136,62,.6)',
         backgroundColor:'rgba(240,136,62,.06)',fill:true,borderWidth:1,pointRadius:1,tension:0.3},
       {label:'7日平均',data:tMa7,borderColor:'#f0883e',backgroundColor:'transparent',
         borderWidth:2,pointRadius:0,tension:0.4,spanGaps:true},
@@ -1039,13 +1064,31 @@ async function loadDetailReport() {
   }).filter(Boolean);
 }
 
+async function loadRestLog() {
+  try {
+    const res = await fetch(REST_URL);
+    const rows = parseCSV(await res.text());
+    const start = isNaN(Date.parse((rows[0]?.[1]||'').replace(/\//g,'-'))) ? 1 : 0;
+    allRestRows = rows.slice(start).map(cols => {
+      if(cols.length<5) return null;
+      const date = parseDate(cols[1]); // B列=日付
+      if(!date) return null;
+      const min = parseNum(cols[4]);   // E列=休憩時間(分)
+      return {date, min};
+    }).filter(Boolean);
+  } catch(e) {
+    console.error('休憩ログ読込エラー:', e);
+    allRestRows = [];
+  }
+}
+
 async function init() {
   initShiftSelect();
   try{
-    await Promise.all([loadDailyReport(),loadDetailReport()]);
+    await Promise.all([loadDailyReport(),loadDetailReport(),loadRestLog()]);
     document.getElementById('status').className='ok';
     document.getElementById('status').textContent=
-      `✅ 日報${allDailyRows.length}日分 / 詳細${allDetailRows.length}件 読込済`;
+      `✅ 日報${allDailyRows.length}日分 / 詳細${allDetailRows.length}件 / 休憩ログ${allRestRows.length}件 読込済`;
     renderAll();
   }catch(e){
     document.getElementById('status').className='error';
