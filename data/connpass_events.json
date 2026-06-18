@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-18T08:18:24.283682+09:00",
+  "fetched_at": "2026-06-18T11:50:20.240651+09:00",
   "date": "20260618",
   "count": 21,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 392772,
       "owner_nickname": "hitsan",
       "owner_display_name": "hitsan",
-      "accepted": 30,
+      "accepted": 31,
       "waiting": 0,
       "updated_at": "2026-06-17T21:00:46+09:00"
     },
@@ -92,8 +92,8 @@
       "owner_id": 102046,
       "owner_nickname": "kekekenta",
       "owner_display_name": "kekekenta",
-      "accepted": 134,
-      "waiting": 1,
+      "accepted": 135,
+      "waiting": 0,
       "updated_at": "2026-06-17T17:36:44+09:00"
     },
     {
@@ -128,37 +128,6 @@
       "updated_at": "2026-06-17T22:47:12+09:00"
     },
     {
-      "id": 394076,
-      "title": "PHPerKaigi mini #2",
-      "catch": "PHPerのためのココロトキメク勉強会",
-      "description": "<h1>PHPerKaigi mini</h1>\n<p>PHPerKaigi mini は技術カンファレンス PHPerKaigi のスポンサーさまおよびスポンサーをご検討頂いている企業さまにホストになって頂いてPHPer（ペチパー）向けに開催される勉強会イベントです。\nPHPerとは現在PHPを使っている、過去にPHPを使用していた、これからPHPを使いたい、PHPが好きだと思っている方みなさんの総称です。\n知的好奇心を刺激する技術関連の話題を楽しみましょう！</p>\n<h1>LT枠</h1>\n<p>PHPerKaigi mini のメインコンテンツLT（5分）のスピーカーを募集します。</p>\n<p>トークのテーマは必ずしもPHP関連の話である必要はありません。PHPerが聞いて面白ければ何でもアリです！\nWebアプリ開発やライブラリ開発といった王道テーマから、言語そのものの実装、ハードウェア、ネットワークなど、PHPerが聞いて楽しい、PHPer聞かせたい技術ネタをご応募ください！</p>\n<p>PHPerKaigi miniでは、あなたならではの経験や、愛と情熱の込められたトークを歓迎します。\nあなたのとっておきの「アツいトーク」を聞かせてください。</p>\n<h1>タイムテーブル</h1>\n<p>19:00 開場<br>\n19:30<br>\n - オープニング tomzoh<br>\n - 会社紹介<br>\n - 自己紹介タイム  参加者全員<br>\n20:00 LT x 5本  <br>\n - Keisuke Ikeda (ksk1kd) さん 「AIを活用してノーコードツールから脱却した話」<br>\n - 77web (77web) さん 「AI時代のジュニアエンジニア育成（n=1）」<br>\n - asumikam (__asumikan) さん<br>\n - msng (msng) さん  「日本語確定の enter でサブミットしてしまうウェブサービスと、我々 IME 必要民はどう向き合えばいいのか」\n - tomzoh (tomzoh) 「フロントエンド&amp;PHPカンファレンス北海道 参加報告」<br>\n20:30 懇親会<br>\n22:00 解散</p>\n<h1>その他</h1>\n<ul>\n<li>オーディエンス枠の人数は拡張されることがあります。拡張は遅くとも開催1週間前までに実施します。</li>\n<li>LT枠についてもお申込人数によって拡張されることがあります。</li>\n<li>スタッフ枠は会場提供の管理者の方およびPHPerKaigi 2026実行委員会で参加依頼した方のための枠です。それ以外の方のお申込はキャンセルさせていただきます。</li>\n<li>参加目的が不適切だと判断される場合には運営判断で参加をキャンセルさせていただく場合があります。</li>\n</ul>\n<h1>行動規範</h1>\n<p>PHPerKaigi のイベントは行動規範が適用されます。 <a href=\"https://phperkaigi.jp/coc.html\" rel=\"nofollow\">https://phperkaigi.jp/coc.html</a></p>",
-      "url": "https://phperkaigi.connpass.com/event/394076/",
-      "image_url": "https://media.connpass.com/thumbs/b7/92/b792fee19e5c2048dd05c64f4f6a1d61.png",
-      "hash_tag": "phperkaigi",
-      "started_at": "2026-06-18T19:00:00+09:00",
-      "ended_at": "2026-06-18T22:00:00+09:00",
-      "published_at": "2026-05-21T10:01:07+09:00",
-      "limit": 33,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 9220,
-        "subdomain": "phperkaigi",
-        "title": "PHPerKaigi",
-        "url": "https://phperkaigi.connpass.com/"
-      },
-      "address": "東京都港区芝公園2-11-1 (住友不動産芝公園タワー) 18階",
-      "place": "株式会社エス・エム・エス",
-      "lat": "35.654166900000",
-      "lon": "139.751592200000",
-      "owner_id": 20414,
-      "owner_nickname": "tomzoh",
-      "owner_display_name": "tomzoh",
-      "accepted": 16,
-      "waiting": 0,
-      "updated_at": "2026-06-17T13:32:02+09:00"
-    },
-    {
       "id": 394488,
       "title": "6/18(木)  BBQエンジニア交流会",
       "catch": "エンジニア流会ダヨ！",
@@ -188,37 +157,6 @@
       "accepted": 12,
       "waiting": 0,
       "updated_at": "2026-06-10T09:38:09+09:00"
-    },
-    {
-      "id": 394700,
-      "title": "【AI時代の採用のホンネ】AIオフレコトーク＃6",
-      "catch": "Helpfeel・レバレジーズ・PKSHAが語る、採用基準と見極めのリアル",
-      "description": "<p>「『AIが使えます』という候補者は増えたけど、面接での見極め方がわからない。」「PMとエンジニアの境界が溶け始めているのに採用基準は旧来のままになっている」そんなモヤモヤを抱えているCTO・VPoE・採用に関わるエンジニアリングマネージャーの方は多いのではないでしょうか？</p>\n\n<p>今回はHelpfeel CTO・秋山博紀氏、レバレジーズ テクノロジー戦略室 室長・竹下義晃氏、PKSHA Associates CTO/CPO・砂塚紀彦氏をお招きし、「AI時代にエンジニアの役割や採用基準はどう変わったのか」「選考でどう見極めているのか」を完全オフレコで深掘りします。</p>\n\n<p>軽食・ドリンクも用意しています。ぜひお気軽にご参加ください！\n</p>\n\n<h2>🕒タイムテーブル</h2>\n<table border=\"\">\n<tbody><tr>\n<th>18:30〜19:00</th>\n<td>受付</td>\n</tr>\n\n<tr>\n<th>19:00〜19:05</th>\n<td>オープニング</td>\n</tr>\n\n<tr>\n<th>19:05〜20:30</th>\n<td>パネルディスカッション・Q&amp;Aセッション</td>\n</tr>\n\n<tr>\n<th>20:30〜21:30</th>\n<td>交流会</td>\n</tr>\n\n</tbody>\n</table>\n\n<h2>✨こんな方へおすすめ</h2>\n<ul>\n<li>AI時代に「採りたいエンジニア像」を再定義できていないまま、PMとエンジニアの境界が溶け始めているのに採用基準は旧来のままになっている</li>\n<li>「AIが使えます」と言う候補者が増えたが、面接でその実力を測る方法がなく、コーディングテストの設計も止まったまま採用判断してしまっている</li>\n<li>採用後に「思ってたのと違う」というギャップが生まれても、次の採用基準の改善に活かせないままループしている</li>\n</ul>\n\n<h1>登壇者</h1>\n\n<h2>秋山 博紀 氏｜株式会社Helpfeel 執行役員 CTO   \n<a href=\"https://x.com/akiroom\" rel=\"nofollow\">@akiroom</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/05/d904ce0d448400462e631e76e2006aef-scaled.jpg\" width=\"200\"></p>\n<p>慶應義塾大学大学院政策・メディア研究科卒。11歳の頃からソフトウェア作家として活動し、2005年経済産業大臣賞を受賞。2008年未踏ソフトウェア創造事業採択。大学院在籍中にはユーザーインタフェースおよびインタラクションデザインを研究。現在は株式会社HelpfeelのCTOとして開発チームのマネジメントや組織づくりに従事。2022年よりCTO。</p>\n\n<h2>竹下 義晃 氏｜レバレジーズ株式会社 テクノロジー戦略室 室長 兼 AI 推進室 <a href=\"https://x.com/takezoux2\" rel=\"nofollow\">@takezoux2</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/05/af5864e7cc0f91fa99ba4a937dd35cc3.jpg\" width=\"200\"></p>\n<p>レバレジーズ株式会社にて、テクノロジー戦略室 室長 兼 AI 推進室を務めるテックリード。「全社員が AI を当たり前に活用できる組織」を目指し、AI 機能の開発や LLMOps 基盤の構築、エンジニア/非エンジニアへの研修等による「AI の民主化」を推進しています。常に最先端技術を追求し、失敗を恐れず素早くトライ＆エラーを繰り返す姿勢で、ビジネスと技術を融合させた新たな仕組み作りに挑戦し続けています。</p>\n\n<h2>砂塚 紀彦氏｜株式会社PKSHA Associates 執行役員CTO兼CPO <a href=\"https://x.com/sunazukan\" rel=\"nofollow\">@sunazukan</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2025/11/8ee39bd41f8d436f97892536e607d2da.jpg\" width=\"200\"></p>\n<p>新卒でERP開発を行うベンチャー企業に入社し、不動産管理・購買管理システムの開発に従事。その後、BPO領域でスタートアップを創業し、定型業務の自動化技術の開発に取り組む。2019年よりPKSHA Associatesに参画し、現在はCTO兼CPOとして業務自動化AIプロダクトの開発をリード。また、2025年よりPKSHA Technology内に新設されたAI NativeカンパニーのCTOを兼任し、最先端のAIプロダクト開発に挑戦中。</p>\n\n<h2>会場</h2>\n<ul>\n<li>会場名：株式会社サーキュレーション</li>\n<li>住所　：東京都渋谷区神宮前3丁目21−5 サーキュレーションビル ForPro</li>\n　　　・東京メトロ明治神宮前駅 出口5より徒歩5分<br>\n　　　・JR原宿駅 表参道口より徒歩13分<br>\n　　　・東京メトロ表参道駅 A2出口より徒歩10分<br>\n<img src=\"https://flxy.jp/media/wp-content/uploads/2026/03/9fb57b6f410328f6bd50846578988bab.jpeg\" width=\"338\">\n</ul>\n\n<h2>ご参加にあたって</h2>\n<ul>参加費： 無料</ul>\n<ul>持ち物： 名刺を1枚お持ちください</ul>\n<ul>SNSハッシュタグ：#flexymeetup #AIオフレコ</ul>\n\n<h1>その他</h1>\n\n<h2>AIオフレコトークとは</h2>\n<p>AIをテーマに、録音・録画・SNS投稿完全NGのクローズドなトークイベントを毎月開催しています！</p>\n\n<p>ここでしか聞けない「ぶっちゃけ話」や本音トークが盛りだくさん。Q&amp;Aの時間もたっぷり取っているので、あなたの気になる質問にもどんどんお答えします！</p>\n\n<p>もし本編で聞ききれなくてもその後の懇親会で、登壇者に直接じっくり質問もできちゃいます。</p>\n\n<p>ネットには絶対に出てこない「ここだけの話」を、毎月一緒に楽しみませんか？\n</p>\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/01/38678dabc628daba0d77c334bfb9fd9b.jpg\" width=\"438\"></p>\n<h2>主催者</h2>\n<p><a href=\"http://www.circu.co.jp/\" rel=\"nofollow\">株式会社サーキュレーション</a>/FLEXY（フレキシー）本部<br>\n「世界中の経験・知見が循環する社会の創造」をビジョンに掲げ個人/法人のオープンイノベーションを支援しています。</p>\n<p><a href=\"http://flxy.jp/\" rel=\"nofollow\">FLEXY</a><br>\n独立エンジニア/デザイナー・技術顧問向けの案件紹介サービス</p>\n\n<h2>FLEXY meetupとは</h2>\n<p><strong>有識者の経験や知見を循環させ、エンジニアのみなさんのスキルアップを後押しする学びの場。</strong></p>\n<p>各技術の普及から技術環境の改善、組織づくりまで、毎回様々なテーマに対して各分野の第一線で活躍をされているCTO/エンジニア等をお招きし、トークセッションを行います。</p>\n\n<h2>個人情報の取扱について</h2>\n<p>イベントの主催者である株式会社サーキュレーション並びに、株式会社PKSHA Technology・株式会社PKSHA Associatesがそれぞれの個人情報取扱い規定にもとづき管理させていただきます。<br></p>\n<ul>\n<li><a href=\"https://www.circu.co.jp/privacy/\" rel=\"nofollow\">株式会社サーキュレーション プライバシーポリシー</a></li>\n<li><a href=\"https://www.pkshatech.com/privacy/\" rel=\"nofollow\">株式会社PKSHA Technology プライバシーポリシー</a></li>\n<li><a href=\"https://asc.pkshatech.com/policy/\" rel=\"nofollow\">株式会社PKSHA Associates プライバシーポリシー</a></li>\n</ul>\n\n<h2>行動規範</h2>\n<p>本イベントは技術の発展やその他開発トピックスに関する情報交換・交流を行うための場所です。<br>\nそのため、参加者に対して以下のようなハラスメント行為は許容しません。</p>\n\n<ul>\n<li>言葉による性別、性的指向、障がいの有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント</li>\n<li>公的空間での性的な映像表現</li>\n<li>意図的な威力行為、ストーキング、つきまとい</li>\n<li>写真撮影や録音によるいやがらせ</li>\n<li>トークやその他の会議イベントに対して繰り返して中断しようとする行為</li>\n<li>望まれない性的な注意を引きつける行為</li>\n</ul>\n<p>ハラスメント行為に遭った、目撃した場合には、スタッフの誰かに連絡していただくようお願いします。</p>",
-      "url": "https://flexy.connpass.com/event/394700/",
-      "image_url": "https://media.connpass.com/thumbs/67/93/679318fa5ea12ef697305df8af0202bd.png",
-      "hash_tag": "flexymeetup",
-      "started_at": "2026-06-18T19:00:00+09:00",
-      "ended_at": "2026-06-18T21:30:00+09:00",
-      "published_at": "2026-05-29T13:05:55+09:00",
-      "limit": 25,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 2005,
-        "subdomain": "flexy",
-        "title": "FLEXY by PKSHA",
-        "url": "https://flexy.connpass.com/"
-      },
-      "address": "東京都渋⾕区神宮前3-21-5 サーキュレーションビル ForPro",
-      "place": "株式会社サーキュレーション",
-      "lat": "35.670494400000",
-      "lon": "139.707951600000",
-      "owner_id": 710815,
-      "owner_nickname": "flexy_circu",
-      "owner_display_name": "flexy_circu",
-      "accepted": 17,
-      "waiting": 0,
-      "updated_at": "2026-06-16T15:40:55+09:00"
     },
     {
       "id": 396273,
@@ -252,6 +190,37 @@
       "updated_at": "2026-06-04T17:14:37+09:00"
     },
     {
+      "id": 394700,
+      "title": "【AI時代の採用のホンネ】AIオフレコトーク＃6",
+      "catch": "Helpfeel・レバレジーズ・PKSHAが語る、採用基準と見極めのリアル",
+      "description": "<p>「『AIが使えます』という候補者は増えたけど、面接での見極め方がわからない。」「PMとエンジニアの境界が溶け始めているのに採用基準は旧来のままになっている」そんなモヤモヤを抱えているCTO・VPoE・採用に関わるエンジニアリングマネージャーの方は多いのではないでしょうか？</p>\n\n<p>今回はHelpfeel CTO・秋山博紀氏、レバレジーズ テクノロジー戦略室 室長・竹下義晃氏、PKSHA Associates CTO/CPO・砂塚紀彦氏をお招きし、「AI時代にエンジニアの役割や採用基準はどう変わったのか」「選考でどう見極めているのか」を完全オフレコで深掘りします。</p>\n\n<p>軽食・ドリンクも用意しています。ぜひお気軽にご参加ください！\n</p>\n\n<h2>🕒タイムテーブル</h2>\n<table border=\"\">\n<tbody><tr>\n<th>18:30〜19:00</th>\n<td>受付</td>\n</tr>\n\n<tr>\n<th>19:00〜19:05</th>\n<td>オープニング</td>\n</tr>\n\n<tr>\n<th>19:05〜20:30</th>\n<td>パネルディスカッション・Q&amp;Aセッション</td>\n</tr>\n\n<tr>\n<th>20:30〜21:30</th>\n<td>交流会</td>\n</tr>\n\n</tbody>\n</table>\n\n<h2>✨こんな方へおすすめ</h2>\n<ul>\n<li>AI時代に「採りたいエンジニア像」を再定義できていないまま、PMとエンジニアの境界が溶け始めているのに採用基準は旧来のままになっている</li>\n<li>「AIが使えます」と言う候補者が増えたが、面接でその実力を測る方法がなく、コーディングテストの設計も止まったまま採用判断してしまっている</li>\n<li>採用後に「思ってたのと違う」というギャップが生まれても、次の採用基準の改善に活かせないままループしている</li>\n</ul>\n\n<h1>登壇者</h1>\n\n<h2>秋山 博紀 氏｜株式会社Helpfeel 執行役員 CTO   \n<a href=\"https://x.com/akiroom\" rel=\"nofollow\">@akiroom</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/05/d904ce0d448400462e631e76e2006aef-scaled.jpg\" width=\"200\"></p>\n<p>慶應義塾大学大学院政策・メディア研究科卒。11歳の頃からソフトウェア作家として活動し、2005年経済産業大臣賞を受賞。2008年未踏ソフトウェア創造事業採択。大学院在籍中にはユーザーインタフェースおよびインタラクションデザインを研究。現在は株式会社HelpfeelのCTOとして開発チームのマネジメントや組織づくりに従事。2022年よりCTO。</p>\n\n<h2>竹下 義晃 氏｜レバレジーズ株式会社 テクノロジー戦略室 室長 兼 AI 推進室 <a href=\"https://x.com/takezoux2\" rel=\"nofollow\">@takezoux2</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/05/af5864e7cc0f91fa99ba4a937dd35cc3.jpg\" width=\"200\"></p>\n<p>レバレジーズ株式会社にて、テクノロジー戦略室 室長 兼 AI 推進室を務めるテックリード。「全社員が AI を当たり前に活用できる組織」を目指し、AI 機能の開発や LLMOps 基盤の構築、エンジニア/非エンジニアへの研修等による「AI の民主化」を推進しています。常に最先端技術を追求し、失敗を恐れず素早くトライ＆エラーを繰り返す姿勢で、ビジネスと技術を融合させた新たな仕組み作りに挑戦し続けています。</p>\n\n<h2>砂塚 紀彦氏｜株式会社PKSHA Associates 執行役員CTO兼CPO <a href=\"https://x.com/sunazukan\" rel=\"nofollow\">@sunazukan</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2025/11/8ee39bd41f8d436f97892536e607d2da.jpg\" width=\"200\"></p>\n<p>新卒でERP開発を行うベンチャー企業に入社し、不動産管理・購買管理システムの開発に従事。その後、BPO領域でスタートアップを創業し、定型業務の自動化技術の開発に取り組む。2019年よりPKSHA Associatesに参画し、現在はCTO兼CPOとして業務自動化AIプロダクトの開発をリード。また、2025年よりPKSHA Technology内に新設されたAI NativeカンパニーのCTOを兼任し、最先端のAIプロダクト開発に挑戦中。</p>\n\n<h2>会場</h2>\n<ul>\n<li>会場名：株式会社サーキュレーション</li>\n<li>住所　：東京都渋谷区神宮前3丁目21−5 サーキュレーションビル ForPro</li>\n　　　・東京メトロ明治神宮前駅 出口5より徒歩5分<br>\n　　　・JR原宿駅 表参道口より徒歩13分<br>\n　　　・東京メトロ表参道駅 A2出口より徒歩10分<br>\n<img src=\"https://flxy.jp/media/wp-content/uploads/2026/03/9fb57b6f410328f6bd50846578988bab.jpeg\" width=\"338\">\n</ul>\n\n<h2>ご参加にあたって</h2>\n<ul>参加費： 無料</ul>\n<ul>持ち物： 名刺を1枚お持ちください</ul>\n<ul>SNSハッシュタグ：#flexymeetup #AIオフレコ</ul>\n\n<h1>その他</h1>\n\n<h2>AIオフレコトークとは</h2>\n<p>AIをテーマに、録音・録画・SNS投稿完全NGのクローズドなトークイベントを毎月開催しています！</p>\n\n<p>ここでしか聞けない「ぶっちゃけ話」や本音トークが盛りだくさん。Q&amp;Aの時間もたっぷり取っているので、あなたの気になる質問にもどんどんお答えします！</p>\n\n<p>もし本編で聞ききれなくてもその後の懇親会で、登壇者に直接じっくり質問もできちゃいます。</p>\n\n<p>ネットには絶対に出てこない「ここだけの話」を、毎月一緒に楽しみませんか？\n</p>\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/01/38678dabc628daba0d77c334bfb9fd9b.jpg\" width=\"438\"></p>\n<h2>主催者</h2>\n<p><a href=\"http://www.circu.co.jp/\" rel=\"nofollow\">株式会社サーキュレーション</a>/FLEXY（フレキシー）本部<br>\n「世界中の経験・知見が循環する社会の創造」をビジョンに掲げ個人/法人のオープンイノベーションを支援しています。</p>\n<p><a href=\"http://flxy.jp/\" rel=\"nofollow\">FLEXY</a><br>\n独立エンジニア/デザイナー・技術顧問向けの案件紹介サービス</p>\n\n<h2>FLEXY meetupとは</h2>\n<p><strong>有識者の経験や知見を循環させ、エンジニアのみなさんのスキルアップを後押しする学びの場。</strong></p>\n<p>各技術の普及から技術環境の改善、組織づくりまで、毎回様々なテーマに対して各分野の第一線で活躍をされているCTO/エンジニア等をお招きし、トークセッションを行います。</p>\n\n<h2>個人情報の取扱について</h2>\n<p>イベントの主催者である株式会社サーキュレーション並びに、株式会社PKSHA Technology・株式会社PKSHA Associatesがそれぞれの個人情報取扱い規定にもとづき管理させていただきます。<br></p>\n<ul>\n<li><a href=\"https://www.circu.co.jp/privacy/\" rel=\"nofollow\">株式会社サーキュレーション プライバシーポリシー</a></li>\n<li><a href=\"https://www.pkshatech.com/privacy/\" rel=\"nofollow\">株式会社PKSHA Technology プライバシーポリシー</a></li>\n<li><a href=\"https://asc.pkshatech.com/policy/\" rel=\"nofollow\">株式会社PKSHA Associates プライバシーポリシー</a></li>\n</ul>\n\n<h2>行動規範</h2>\n<p>本イベントは技術の発展やその他開発トピックスに関する情報交換・交流を行うための場所です。<br>\nそのため、参加者に対して以下のようなハラスメント行為は許容しません。</p>\n\n<ul>\n<li>言葉による性別、性的指向、障がいの有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント</li>\n<li>公的空間での性的な映像表現</li>\n<li>意図的な威力行為、ストーキング、つきまとい</li>\n<li>写真撮影や録音によるいやがらせ</li>\n<li>トークやその他の会議イベントに対して繰り返して中断しようとする行為</li>\n<li>望まれない性的な注意を引きつける行為</li>\n</ul>\n<p>ハラスメント行為に遭った、目撃した場合には、スタッフの誰かに連絡していただくようお願いします。</p>",
+      "url": "https://flexy.connpass.com/event/394700/",
+      "image_url": "https://media.connpass.com/thumbs/67/93/679318fa5ea12ef697305df8af0202bd.png",
+      "hash_tag": "flexymeetup",
+      "started_at": "2026-06-18T19:00:00+09:00",
+      "ended_at": "2026-06-18T21:30:00+09:00",
+      "published_at": "2026-05-29T13:05:55+09:00",
+      "limit": 25,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 2005,
+        "subdomain": "flexy",
+        "title": "FLEXY by PKSHA",
+        "url": "https://flexy.connpass.com/"
+      },
+      "address": "東京都渋⾕区神宮前3-21-5 サーキュレーションビル ForPro",
+      "place": "株式会社サーキュレーション",
+      "lat": "35.670494400000",
+      "lon": "139.707951600000",
+      "owner_id": 710815,
+      "owner_nickname": "flexy_circu",
+      "owner_display_name": "flexy_circu",
+      "accepted": 18,
+      "waiting": 0,
+      "updated_at": "2026-06-16T15:40:55+09:00"
+    },
+    {
       "id": 393701,
       "title": "Cyber-sec+ Meetup vol.9",
       "catch": "テーマ：セキュリティ予算をどうやって引き出す？",
@@ -278,9 +247,40 @@
       "owner_id": 802878,
       "owner_nickname": "CSA",
       "owner_display_name": "Nissy",
-      "accepted": 100,
+      "accepted": 103,
       "waiting": 0,
-      "updated_at": "2026-06-17T18:53:32+09:00"
+      "updated_at": "2026-06-18T09:04:02+09:00"
+    },
+    {
+      "id": 394076,
+      "title": "PHPerKaigi mini #2",
+      "catch": "PHPerのためのココロトキメク勉強会",
+      "description": "<h1>PHPerKaigi mini</h1>\n<p>PHPerKaigi mini は技術カンファレンス PHPerKaigi のスポンサーさまおよびスポンサーをご検討頂いている企業さまにホストになって頂いてPHPer（ペチパー）向けに開催される勉強会イベントです。\nPHPerとは現在PHPを使っている、過去にPHPを使用していた、これからPHPを使いたい、PHPが好きだと思っている方みなさんの総称です。\n知的好奇心を刺激する技術関連の話題を楽しみましょう！</p>\n<h1>LT枠</h1>\n<p>PHPerKaigi mini のメインコンテンツLT（5分）のスピーカーを募集します。</p>\n<p>トークのテーマは必ずしもPHP関連の話である必要はありません。PHPerが聞いて面白ければ何でもアリです！\nWebアプリ開発やライブラリ開発といった王道テーマから、言語そのものの実装、ハードウェア、ネットワークなど、PHPerが聞いて楽しい、PHPer聞かせたい技術ネタをご応募ください！</p>\n<p>PHPerKaigi miniでは、あなたならではの経験や、愛と情熱の込められたトークを歓迎します。\nあなたのとっておきの「アツいトーク」を聞かせてください。</p>\n<h1>タイムテーブル</h1>\n<p>19:00 開場<br>\n19:30<br>\n - オープニング tomzoh<br>\n - 会社紹介<br>\n - 自己紹介タイム  参加者全員<br>\n20:00 LT x 5本  <br>\n - Keisuke Ikeda (ksk1kd) さん 「AIを活用してノーコードツールから脱却した話」<br>\n - 77web (77web) さん 「AI時代のジュニアエンジニア育成（n=1）」<br>\n - asumikam (__asumikan) さん<br>\n - msng (msng) さん  「日本語確定の enter でサブミットしてしまうウェブサービスと、我々 IME 必要民はどう向き合えばいいのか」\n - tomzoh (tomzoh) 「フロントエンド&amp;PHPカンファレンス北海道 参加報告」<br>\n20:30 懇親会<br>\n22:00 解散</p>\n<h1>その他</h1>\n<ul>\n<li>オーディエンス枠の人数は拡張されることがあります。拡張は遅くとも開催1週間前までに実施します。</li>\n<li>LT枠についてもお申込人数によって拡張されることがあります。</li>\n<li>スタッフ枠は会場提供の管理者の方およびPHPerKaigi 2026実行委員会で参加依頼した方のための枠です。それ以外の方のお申込はキャンセルさせていただきます。</li>\n<li>参加目的が不適切だと判断される場合には運営判断で参加をキャンセルさせていただく場合があります。</li>\n</ul>\n<h1>行動規範</h1>\n<p>PHPerKaigi のイベントは行動規範が適用されます。 <a href=\"https://phperkaigi.jp/coc.html\" rel=\"nofollow\">https://phperkaigi.jp/coc.html</a></p>",
+      "url": "https://phperkaigi.connpass.com/event/394076/",
+      "image_url": "https://media.connpass.com/thumbs/b7/92/b792fee19e5c2048dd05c64f4f6a1d61.png",
+      "hash_tag": "phperkaigi",
+      "started_at": "2026-06-18T19:00:00+09:00",
+      "ended_at": "2026-06-18T22:00:00+09:00",
+      "published_at": "2026-05-21T10:01:07+09:00",
+      "limit": 33,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 9220,
+        "subdomain": "phperkaigi",
+        "title": "PHPerKaigi",
+        "url": "https://phperkaigi.connpass.com/"
+      },
+      "address": "東京都港区芝公園2-11-1 (住友不動産芝公園タワー) 18階",
+      "place": "株式会社エス・エム・エス",
+      "lat": "35.654166900000",
+      "lon": "139.751592200000",
+      "owner_id": 20414,
+      "owner_nickname": "tomzoh",
+      "owner_display_name": "tomzoh",
+      "accepted": 17,
+      "waiting": 0,
+      "updated_at": "2026-06-17T13:32:02+09:00"
     },
     {
       "id": 394627,
@@ -293,7 +293,7 @@
       "started_at": "2026-06-18T19:00:00+09:00",
       "ended_at": "2026-06-18T21:30:00+09:00",
       "published_at": "2026-05-22T18:45:05+09:00",
-      "limit": 430,
+      "limit": 435,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -309,9 +309,9 @@
       "owner_id": 1016745,
       "owner_nickname": "GMO_ConoHa",
       "owner_display_name": "ConoHa byGMO",
-      "accepted": 412,
+      "accepted": 419,
       "waiting": 0,
-      "updated_at": "2026-06-18T07:58:17+09:00"
+      "updated_at": "2026-06-18T09:29:14+09:00"
     },
     {
       "id": 395566,
@@ -337,10 +337,10 @@
       "place": "株式会社ナウキャスト",
       "lat": "35.697650400000",
       "lon": "139.751691000000",
-      "owner_id": 884245,
-      "owner_nickname": "shichimi3",
-      "owner_display_name": "TAKUMI_MUKAIYAMA",
-      "accepted": 76,
+      "owner_id": 943584,
+      "owner_nickname": "Now_toyoki",
+      "owner_display_name": "Now_toyoki",
+      "accepted": 82,
       "waiting": 0,
       "updated_at": "2026-06-11T17:52:09+09:00"
     },
@@ -371,7 +371,7 @@
       "owner_id": 814332,
       "owner_nickname": "lycorptech_jp",
       "owner_display_name": "LINEヤフー Tech",
-      "accepted": 33,
+      "accepted": 32,
       "waiting": 0,
       "updated_at": "2026-06-18T07:19:21+09:00"
     },
@@ -402,9 +402,9 @@
       "owner_id": 880407,
       "owner_nickname": "wata_f",
       "owner_display_name": "wata_f",
-      "accepted": 51,
+      "accepted": 50,
       "waiting": 0,
-      "updated_at": "2026-06-17T19:15:50+09:00"
+      "updated_at": "2026-06-18T08:34:52+09:00"
     },
     {
       "id": 391343,
@@ -433,7 +433,7 @@
       "owner_id": 839351,
       "owner_nickname": "Macccoto",
       "owner_display_name": "まこと（まことのこと研究所）",
-      "accepted": 25,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-06-15T09:02:10+09:00"
     },
@@ -526,7 +526,7 @@
       "owner_id": 957907,
       "owner_nickname": "mariko_horitsugi",
       "owner_display_name": "mariko_horitsugi",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-06-09T20:29:30+09:00"
     },
@@ -552,7 +552,7 @@
       "owner_id": 686047,
       "owner_nickname": "Cocoda",
       "owner_display_name": "Cocoda",
-      "accepted": 112,
+      "accepted": 110,
       "waiting": 0,
       "updated_at": "2026-06-10T07:30:39+09:00"
     },
@@ -583,9 +583,9 @@
       "owner_id": 424659,
       "owner_nickname": "TED_Nishiwaki",
       "owner_display_name": "西脇 章彦",
-      "accepted": 228,
-      "waiting": 0,
-      "updated_at": "2026-06-17T18:47:41+09:00"
+      "accepted": 248,
+      "waiting": 4,
+      "updated_at": "2026-06-18T09:14:49+09:00"
     },
     {
       "id": 395812,
@@ -600,7 +600,7 @@
       "published_at": "2026-06-01T14:01:14+09:00",
       "limit": 60,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 1001,
         "subdomain": "classmethod",
@@ -614,9 +614,9 @@
       "owner_id": 14553,
       "owner_nickname": "classmethod",
       "owner_display_name": "クラスメソッド株式会社",
-      "accepted": 32,
+      "accepted": 30,
       "waiting": 0,
-      "updated_at": "2026-06-18T06:27:15+09:00"
+      "updated_at": "2026-06-18T11:37:38+09:00"
     },
     {
       "id": 394842,
