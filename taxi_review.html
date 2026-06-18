@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Review for TAXI Driver</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#0d1117;--surface:#161b22;--surface2:#21262d;--border:#30363d;
+  --text:#e6edf3;--muted:#8b949e;--blue:#79c0ff;--green:#3fb950;
+  --orange:#f0883e;--red:#f85149;--purple:#d2a8ff;--yellow:#e3b341;
+}
+*{box-sizing:border-box;margin:0;padding:0;max-width:100%}
+body{background:var(--bg);color:var(--text);overflow-x:hidden;
+  font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
+  min-height:100vh;padding-bottom:40px}
+#header{background:var(--surface);border-bottom:1px solid var(--border);
+  padding:10px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+#header h1{font-size:15px;font-weight:800}
+#header a{font-size:11px;color:var(--blue);text-decoration:none;border:1px solid var(--border);
+  padding:4px 10px;border-radius:4px}
+#status{padding:6px 16px;font-size:12px;color:var(--muted);
+  background:var(--surface);border-bottom:1px solid var(--border)}
+#status.loading{color:var(--blue)}#status.ok{color:var(--green)}#status.error{color:var(--red)}
+#ctrl{display:flex;gap:8px;padding:12px 16px;align-items:center;flex-wrap:wrap;
+  background:var(--surface);border-bottom:1px solid var(--border)}
+#ctrl select{background:var(--surface2);color:var(--text);border:1px solid var(--border);
+  border-radius:6px;padding:7px 10px;font-size:14px;font-weight:700}
+#ctrl .lbl{font-size:11px;color:var(--muted)}
+.wrap{padding:0 16px;max-width:760px;margin:0 auto}
+
+/* 総合評定カード */
+#verdict{margin:16px auto;background:var(--surface);border:1px solid var(--border);
+  border-radius:12px;padding:18px;display:flex;gap:16px;align-items:center}
+#grade{font-size:48px;font-weight:900;line-height:1;min-width:70px;text-align:center}
+#verdict .vmeta{flex:1}
+#verdict .vtitle{font-size:13px;color:var(--muted);margin-bottom:4px}
+#verdict .vcomment{font-size:14px;line-height:1.5}
+.gA{color:var(--green)}.gB{color:var(--blue)}.gC{color:var(--yellow)}
+.gD{color:var(--orange)}.gE{color:var(--red)}
+
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  padding:16px;margin:12px 0}
+.card h2{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.06em;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card h2 .num{background:var(--surface2);border:1px solid var(--border);border-radius:6px;
+  width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;
+  font-size:12px;color:var(--text)}
+
+/* 売上バー */
+.barwrap{position:relative;height:42px;background:var(--surface2);border-radius:8px;margin:18px 0 28px;overflow:visible}
+.barfill{position:absolute;left:0;top:0;bottom:0;border-radius:8px;transition:width .6s}
+.barmark{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--muted)}
+.barmark .ml{position:absolute;top:-16px;left:50%;transform:translateX(-50%);
+  font-size:9px;color:var(--muted);white-space:nowrap}
+.barmark .mv{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);
+  font-size:9px;color:var(--muted);white-space:nowrap}
+.barnow{position:absolute;top:-8px;bottom:-8px;width:3px;background:var(--text);z-index:5}
+.barnow .nl{position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);
+  font-size:11px;font-weight:800;white-space:nowrap}
+
+.kgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.kbox{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.kbox .kl{font-size:10px;color:var(--muted);margin-bottom:3px}
+.kbox .kv{font-size:18px;font-weight:800}
+.kbox .ks{font-size:10px;color:var(--muted);margin-top:2px}
+.up{color:var(--green)}.down{color:var(--red)}
+.note{font-size:11px;color:var(--muted);line-height:1.5;margin-top:10px;
+  padding:8px 10px;background:var(--surface2);border-radius:6px;border-left:2px solid var(--border)}
+.note.warn{border-left-color:var(--orange)}
+.note.good{border-left-color:var(--green)}
+.note.bad{border-left-color:var(--red)}
+.chart-box{position:relative;height:240px;margin-top:8px}
+table.loss{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
+table.loss th{text-align:left;color:var(--muted);font-weight:600;font-size:10px;
+  padding:6px 4px;border-bottom:1px solid var(--border)}
+table.loss td{padding:7px 4px;border-bottom:1px solid var(--surface2)}
+.tag{display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:10px}
+.tag-ok{background:rgba(63,185,80,.15);color:var(--green)}
+.tag-warn{background:rgba(240,136,62,.15);color:var(--orange)}
+.tag-bad{background:rgba(248,81,73,.15);color:var(--red)}
+.tag-x{background:var(--surface2);color:var(--muted)}
+.donut-wrap{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.donut-box{width:150px;height:150px;flex-shrink:0}
+.legend{flex:1;min-width:180px}
+.legrow{display:flex;align-items:center;gap:8px;font-size:12px;padding:3px 0}
+.legrow .dot{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+.legrow .lv{margin-left:auto;font-weight:700}
+.empty{color:var(--muted);font-size:12px;padding:8px 0}
+</style>
+</head>
+<body>
+<div id="header">
+  <h1>🚕 Daily Review<span style="font-size:10px;color:var(--muted);font-weight:400;margin-left:6px">その日の反省会</span></h1>
+  <a href="https://odmk0791.github.io/taxi-radar/">← Radar</a>
+</div>
+<div id="status" class="loading">データ読み込み中…</div>
+<div id="ctrl">
+  <span class="lbl">営業日</span>
+  <select id="daySel"><option>読込中…</option></select>
+</div>
+<div class="wrap" id="report" style="display:none">
+  <div id="verdict">
+    <div id="grade">–</div>
+    <div class="vmeta"><div class="vtitle" id="vtitle"></div><div class="vcomment" id="vcomment"></div></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">②</span>売上スコア</h2>
+    <div class="barwrap" id="revbar"></div>
+    <div class="kgrid" id="revkpi"></div>
+    <div id="revnote"></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">③</span>時間配分</h2>
+    <div class="donut-wrap">
+      <div class="donut-box"><canvas id="allocDonut"></canvas></div>
+      <div class="legend" id="allocLegend"></div>
+    </div>
+    <div class="kgrid" id="allocKpi" style="margin-top:12px"></div>
+    <div id="allocNote"></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">⑥</span>同曜日比較（累積ペース）</h2>
+    <div class="chart-box"><canvas id="paceChart"></canvas></div>
+    <div id="paceNote"></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">⑤</span>純空車ロス分析</h2>
+    <div id="lossArea"></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">④</span>軌跡評価（降車地の質）</h2>
+    <div id="dropArea"></div>
+  </div>
+</div>
+
+<script>
+// ════════ 確定定数（設計書v1.0より）════════
+const BUDGET={ // 青タク基準 2025〜 特殊日除外
+ '月':{low:81821,budget:86150,high:94808,stretch:95000},
+ '火':{low:81758,budget:87155,high:97949,stretch:100000},
+ '水':{low:89363,budget:93025,high:100349,stretch:105000},
+ '木':{low:88169,budget:92730,high:101852,stretch:105000},
+ '金':{low:92500,budget:97400,high:107200,stretch:105000},
+ '土':{low:88034,budget:91865,high:99526,stretch:100000},
+ '日':{low:72916,budget:79120,high:91529,stretch:90000}};
+const BUDGET_P={'水':97160,'土':92750,'日':95240,'月':92570}; // プレタク参考値
+const ALLOC={ // 同曜日 実車率% 空車min 休憩min
+ '月':{occ:53.3,kusha:476,rest:161},'火':{occ:53.5,kusha:466,rest:164},
+ '水':{occ:55.0,kusha:461,rest:160},'木':{occ:54.7,kusha:463,rest:158},
+ '金':{occ:55.4,kusha:464,rest:148},'土':{occ:55.2,kusha:460,rest:158},
+ '日':{occ:50.0,kusha:502,rest:168}};
+const DISPATCH={'日':{ev:87787,p:'青73%/黒7%/プレ20%'},'月':{ev:85588,p:'青53%/黒43%/プレ3%'}};
+const OBAKE=15000;        // お化け閾値
+const LOSS_MIN=20;        // 純空車ロス抽出閾値(分)
+const EXCLUDE_KW=['羽田','成田','港北区','鶴見区']; // ロス除外特別リスト
+const FAR_KM=15, NEAR_KM=5; // 距離判定閾値
+
+// CSV URL（既存ツールと共通）
+const DAILY_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
+const DETAIL_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv";
+const REST_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vRQ2FcXX3nBh2gGAge5wNY-UFP76jXbHHyQl485_2aGSikdsNs8xHznpnM0Pwhxj82sxSWCJ-6tnXJs/pub?gid=0&single=true&output=csv";
+
+// ════════ ユーティリティ ════════
+const parseCSV=text=>{
+  const parse=line=>{const r=[];let c='',q=false;
+    for(const ch of line){if(ch==='"')q=!q;else if(ch===','&&!q){r.push(c.trim());c='';}else c+=ch;}
+    r.push(c.trim());return r;};
+  return text.split(/\r?\n/).filter(l=>l.trim()).map(parse);
+};
+const pNum=s=>{const n=parseInt((s||'').replace(/[^0-9]/g,''));return isNaN(n)?0:n;};
+const pFloat=s=>{const n=parseFloat((s||'').replace(/[^0-9.]/g,''));return isNaN(n)?0:n;};
+const parseDate=s=>{
+  if(!s)return null;
+  let m=s.match(/(\d{2,4})年(\d{1,2})月(\d{1,2})日/);
+  if(m)return new Date(parseInt(m[1])<100?2000+parseInt(m[1]):+m[1],+m[2]-1,+m[3]);
+  m=s.match(/^(\d{4})[\-\/](\d{1,2})[\-\/](\d{1,2})/);
+  if(m)return new Date(+m[1],+m[2]-1,+m[3]);
+  return null;
+};
+const dKey=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const tMin=s=>{const m=(s||'').match(/(\d+):(\d+)/);return m?+m[1]*60+ +m[2]:null;};
+const fmtMin=m=>`${Math.floor(m/60)}:${String(Math.round(m%60)).padStart(2,'0')}`;
+const yen=n=>'¥'+Math.round(n).toLocaleString();
+const DOW=['日','月','火','水','木','金','土'];
+const median=arr=>{if(!arr.length)return 0;const s=[...arr].sort((a,b)=>a-b);const m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2;};
+const mean=arr=>arr.length?arr.reduce((a,b)=>a+b,0)/arr.length:0;
+const haversine=(a,b)=>{const R=6371,r=Math.PI/180;
+  const dLa=(b[0]-a[0])*r,dLo=(b[1]-a[1])*r,la1=a[0]*r,la2=b[0]*r;
+  const x=Math.sin(dLa/2)**2+Math.cos(la1)*Math.cos(la2)*Math.sin(dLo/2)**2;
+  return 2*R*Math.asin(Math.sqrt(x));};
+const isSpecial=d=>{const m=d.getMonth()+1,day=d.getDate();
+  if((m===12&&day>=28)||(m===1&&day<=5))return true;
+  if((m===4&&day>=29)||(m===5&&day<=6))return true;
+  if(m===8&&day>=11&&day<=17)return true;return false;};
+const vtype=r=>{ // U列TAXI W列黒タク
+  if(r.taxi==='PRE'||r.kuro==='P')return 'プレタク';
+  if(r.kuro==='黒')return '黒';return '青';};
+
+// ════════ データ格納 ════════
+let DAILY=[], DETAIL=[], REST=[], COORD={};
+let detailByDate={}, restByDate={};
+let pickupHist={}; // "hour|addr" -> [fares]  (乗車地集計=Heatmap基準)
+let areaHist={};   // "hour|市区" -> count
+
+// ════════ 読み込み ════════
+async function loadAll(){
+  const st=document.getElementById('status');
+  try{
+    const [d1,d2,d4]=await Promise.all([
+      fetch(DAILY_URL).then(r=>r.text()),
+      fetch(DETAIL_URL).then(r=>r.text()),
+      fetch(REST_URL).then(r=>r.text()).catch(()=>'')
+    ]);
+    // 日報①
+    const r1=parseCSV(d1),h1=r1[0];
+    const col=(names,fb)=>{for(const n of names){const i=h1.findIndex(c=>c.includes(n));if(i>=0)return i;}return fb;};
+    const c={date:col(['日付'],0),dow:col(['曜'],1),rev:col(['営収'],3),cnt:col(['回数'],4),
+      price:col(['単価'],5),handle:col(['ハンドル'],7),rest:col(['休憩'],8),occ:col(['実車率'],11),
+      bind:col(['拘束'],15),taxi:col(['TAXI'],20),kuro:col(['黒タク'],22)};
+    DAILY=r1.slice(1).map(row=>({
+      date:parseDate(row[c.date]),dow:row[c.dow],rev:pNum(row[c.rev]),cnt:pNum(row[c.cnt]),
+      price:pNum(row[c.price]),handle:tMin(row[c.handle]),rest:tMin(row[c.rest]),
+      occ:pFloat(row[c.occ]),bind:tMin(row[c.bind]),taxi:row[c.taxi]||'',kuro:row[c.kuro]||''
+    })).filter(r=>r.date&&r.rev>0);
+    // 日報②
+    const r2=parseCSV(d2),h2=r2[0];
+    const cc=(names,fb)=>{for(const n of names){const i=h2.findIndex(x=>x.includes(n));if(i>=0)return i;}return fb;};
+    const d={date:cc(['日付'],0),pt:cc(['乗車時間'],2),dt:cc(['降車時間'],3),
+      pku:cc(['乗車地：市区'],5),pna:cc(['乗車地：地名'],6),dku:cc(['降車地：市区'],7),dna:cc(['降車地：地名'],8),
+      fare:cc(['料金'],9),acc:cc(['アカウント'],10),st:cc(['ステータス'],11),thx:cc(['サンキュー'],13)};
+    DETAIL=r2.slice(1).map(row=>({
+      date:parseDate(row[d.date]),pt:tMin(row[d.pt]),dt:tMin(row[d.dt]),
+      pku:row[d.pku]||'',pna:row[d.pna]||'',dku:row[d.dku]||'',dna:row[d.dna]||'',
+      fare:pNum(row[d.fare]),acc:row[d.acc]||'',st:row[d.st]||'',thx:row[d.thx]||''
+    })).filter(r=>r.date);
+    // 日報④休憩
+    if(d4){const r4=parseCSV(d4),h4=r4[0];
+      const c4=(n,fb)=>{const i=h4.findIndex(x=>x.includes(n));return i>=0?i:fb;};
+      const e={date:c4('日付',1),s:c4('開始',2),t:c4('終了',3),m:c4('休憩時間',4)};
+      REST=r4.slice(1).map(row=>({date:parseDate(row[e.date]),s:tMin(row[e.s]),t:tMin(row[e.t]),m:pNum(row[e.m])})).filter(r=>r.date);
+    }
+    buildIndex();
+    initSelector();
+    st.className='ok';st.textContent=`✓ 日報①${DAILY.length}日 / 案件${DETAIL.length}件 / 休憩${REST.length}件`;
+  }catch(e){st.className='error';st.textContent='✗ 読込失敗: '+e.message;console.error(e);}
+}
+
+function buildIndex(){
+  // 案件・休憩を日付別に
+  DETAIL.forEach(r=>{const k=dKey(r.date);(detailByDate[k]=detailByDate[k]||[]).push(r);});
+  REST.forEach(r=>{const k=dKey(r.date);(restByDate[k]=restByDate[k]||[]).push(r);});
+  Object.values(detailByDate).forEach(a=>a.sort((x,y)=>(x.pt||0)-(y.pt||0)));
+  // Heatmap基準（乗車地集計・2025〜・青タク日）
+  const blueDays=new Set(DAILY.filter(r=>vtype(r)==='青'&&r.date>=new Date(2025,0,1)).map(r=>dKey(r.date)));
+  DETAIL.forEach(r=>{
+    if(!blueDays.has(dKey(r.date))||r.pt==null)return;
+    let h=Math.floor(r.pt/60); if(h>=24)h-=24;
+    const addr=r.pku+r.pna;
+    (pickupHist[h+'|'+addr]=pickupHist[h+'|'+addr]||[]).push(r.fare);
+    areaHist[h+'|'+r.pku]=(areaHist[h+'|'+r.pku]||0)+1;
+  });
+}
+
+function initSelector(){
+  const sel=document.getElementById('daySel');
+  const days=[...DAILY].sort((a,b)=>b.date-a.date);
+  sel.innerHTML=days.map((r,i)=>{
+    const vt=vtype(r);
+    return `<option value="${dKey(r.date)}">${dKey(r.date)}(${r.dow}) ${yen(r.rev)} [${vt}]</option>`;
+  }).join('');
+  sel.onchange=()=>renderDay(sel.value);
+  renderDay(days[0]?dKey(days[0].date):null);
+}
+
+// ════════ メイン描画 ════════
+let charts={};
+function renderDay(key){
+  if(!key)return;
+  const day=DAILY.find(r=>dKey(r.date)===key);
+  if(!day)return;
+  document.getElementById('report').style.display='block';
+  const dow=day.dow, vt=vtype(day), items=detailByDate[key]||[], rests=restByDate[key]||[];
+  const B=BUDGET[dow]||BUDGET['月'];
+  // ── お化け抜き地力 ──
+  const obakeItems=items.filter(r=>r.fare>=OBAKE);
+  const obakeSum=obakeItems.reduce((a,r)=>a+r.fare,0);
+  // サンキューブースト（純粋サンキュー案件の通常超過分≒+3595/件 を寄与とみなさず、ここでは実額で算出）
+  const thxItems=items.filter(r=>r.thx==='サンキュー');
+  const thxSum=thxItems.reduce((a,r)=>a+r.fare,0);
+  const jiriki=day.rev-obakeSum; // お化け抜き地力
+
+  renderVerdict(day,vt,B,jiriki,obakeItems);
+  renderRevenue(day,vt,B,jiriki,obakeItems,thxItems);
+  renderAlloc(day,dow);
+  renderPace(day,dow,items);
+  renderLoss(day,items,rests);
+  renderDrop(items);
+}
+
+// ① 総合評定
+function renderVerdict(day,vt,B,jiriki,obakeItems){
+  const g=document.getElementById('grade'),t=document.getElementById('vtitle'),c=document.getElementById('vcomment');
+  const rev=day.rev;
+  let grade,cls,msg;
+  // 地力（お化け抜き）で評価
+  if(jiriki>=B.high){grade='A';cls='gA';msg='上出来。お化け抜きの地力で上出来ラインを突破。再現性のある好調。';}
+  else if(jiriki>=B.budget){grade='B';cls='gB';msg='良好。地力で予算ラインをクリア。安定した営業。';}
+  else if(jiriki>=B.low){grade='C';cls='gC';msg='及第。地力で最低ラインは確保。予算には届かず、改善余地あり。';}
+  else if(rev>=B.low){grade='D';cls='gD';msg='要注意。実績は最低ライン上だが、お化け頼み。地力では最低ラインを割っている。';}
+  else{grade='E';cls='gE';msg='要改善。最低ラインに届かず。基礎体力を立て直す日。';}
+  g.textContent=grade;g.className=cls;
+  t.textContent=`${dKey(day.date)}（${day.dow}）${vt}タク ・ 営収 ${yen(rev)}`;
+  let extra='';
+  if(obakeItems.length){extra=` お化け${obakeItems.length}本(${yen(obakeItems.reduce((a,r)=>a+r.fare,0))})を除いた地力は ${yen(jiriki)}。`;}
+  c.textContent=msg+extra;
+}
+
+// ② 売上スコア
+function renderRevenue(day,vt,B,jiriki,obakeItems,thxItems){
+  const bar=document.getElementById('revbar');
+  const max=B.stretch*1.05, scale=p=>Math.min(100,p/max*100);
+  const rev=day.rev;
+  // バー塗り（地力 + お化け分を色分け）
+  let html=`<div class="barfill" style="width:${scale(jiriki)}%;background:linear-gradient(90deg,#1f6feb,#388bfd)"></div>`;
+  if(obakeItems.length)html+=`<div class="barfill" style="left:${scale(jiriki)}%;width:${scale(rev)-scale(jiriki)}%;background:repeating-linear-gradient(45deg,#8957e5,#8957e5 4px,#6e40c9 4px,#6e40c9 8px)"></div>`;
+  // 目盛り
+  [['最低',B.low],['予算',B.budget],['上出来',B.high],['ｽﾄﾚｯﾁ',B.stretch]].forEach(([l,v])=>{
+    html+=`<div class="barmark" style="left:${scale(v)}%"><span class="ml">${l}</span><span class="mv">${yen(v).replace('¥','')}</span></div>`;});
+  html+=`<div class="barnow" style="left:${scale(rev)}%"><span class="nl">${yen(rev)}</span></div>`;
+  bar.innerHTML=html;
+  // KPI
+  const dispEv=DISPATCH[day.dow];
+  document.getElementById('revkpi').innerHTML=`
+    <div class="kbox"><div class="kl">対 予算ライン</div><div class="kv ${rev>=B.budget?'up':'down'}">${rev>=B.budget?'+':''}${yen(rev-B.budget)}</div><div class="ks">予算 ${yen(B.budget)}</div></div>
+    <div class="kbox"><div class="kl">お化け抜き地力</div><div class="kv ${jiriki>=B.low?'':'down'}">${yen(jiriki)}</div><div class="ks">${jiriki>=B.budget?'予算クリア':jiriki>=B.low?'最低ライン上':'最低ライン割れ'}</div></div>`;
+  let note='';
+  if(vt==='プレタク'){const bp=BUDGET_P[day.dow];note+=`<div class="note warn">★今日はプレタク。${bp?day.dow+'曜のプレタク実績は約'+yen(bp)+'(参考値・サンプル薄)。':'この曜日のプレタク実績データは僅少。'}青基準の予算超過は車両要因の可能性。割り引いて評価。</div>`;}
+  if(obakeItems.length)note+=`<div class="note ${jiriki>=B.low?'good':'bad'}">お化け${obakeItems.length}本が無い世界線：地力${yen(jiriki)}。最低ライン${yen(B.low)}を${jiriki>=B.low?'クリア（お化けに頼らず成立）':yen(B.low-jiriki)+'下回る（この差を空車ロス短縮で埋めたい）'}。</div>`;
+  if(dispEv)note+=`<div class="note">参考：${day.dow}曜の配車期待値 約${yen(dispEv.ev)}（${dispEv.p}）。事前の心づもりライン。</div>`;
+  document.getElementById('revnote').innerHTML=note;
+}
+
+// ③ 時間配分
+function renderAlloc(day,dow){
+  const handle=day.handle||0, occ=day.occ||0, rest=day.rest||0, bind=day.bind||handle+rest;
+  const jisha=handle*occ/100, kusha=handle-jisha;
+  const alpha=Math.max(0,bind-handle-rest);
+  const A=ALLOC[dow]||ALLOC['月'];
+  // ドーナツ
+  if(charts.alloc)charts.alloc.destroy();
+  charts.alloc=new Chart(document.getElementById('allocDonut'),{
+    type:'doughnut',
+    data:{labels:['実車','空車','休憩','点検等'],
+      datasets:[{data:[jisha,kusha,rest,alpha],
+        backgroundColor:['#3fb950','#f0883e','#79c0ff','#30363d'],borderWidth:0}]},
+    options:{plugins:{legend:{display:false}},cutout:'62%'}
+  });
+  const tot=jisha+kusha+rest+alpha;
+  document.getElementById('allocLegend').innerHTML=[
+    ['実車',jisha,'#3fb950'],['空車',kusha,'#f0883e'],['休憩',rest,'#79c0ff'],['点検等',alpha,'#30363d']
+  ].map(([l,v,c])=>`<div class="legrow"><span class="dot" style="background:${c}"></span>${l}<span class="lv">${fmtMin(v)} (${tot?Math.round(v/tot*100):0}%)</span></div>`).join('');
+  // 1回あたり空車
+  const gap=day.cnt?kusha/day.cnt:0;
+  document.getElementById('allocKpi').innerHTML=`
+    <div class="kbox"><div class="kl">実車率（結果指標）</div><div class="kv ${occ>=A.occ?'up':'down'}">${occ.toFixed(1)}%</div><div class="ks">同曜日平均 ${A.occ}% (${(occ-A.occ>=0?'+':'')}${(occ-A.occ).toFixed(1)}pt)</div></div>
+    <div class="kbox"><div class="kl">1回あたり空車（行動指標）</div><div class="kv ${gap<=16?'up':'down'}">${gap.toFixed(1)}分</div><div class="ks">全体平均16.0分・短いほど良い</div></div>`;
+  let note=`<div class="note">空車${fmtMin(kusha)}（同曜日平均${fmtMin(A.kusha)}）／休憩${fmtMin(rest)}（平均${fmtMin(A.rest)}）。`;
+  if(occ>=A.occ&&gap<=16)note+=' 効率◎：実車率も空車回転も同曜日平均を上回る。';
+  else if(occ<A.occ&&gap>16)note+=' 効率課題：実車率が低く空車も長い。客探しに時間を食われた。';
+  note+=' ※実車率はロング偏重でも上がるため、地力評価は1回あたり空車を重視。</div>';
+  document.getElementById('allocNote').innerHTML=note;
+}
+
+// ⑥ 同曜日比較（累積ペース）
+function renderPace(day,dow,items){
+  const key=dKey(day.date);
+  const hours=[]; for(let h=16;h<36;h++)hours.push(h);
+  // その日の累積（売上・件数）
+  const todayRev=hours.map(()=>0), todayCnt=hours.map(()=>0);
+  items.forEach(r=>{if(r.pt==null)return;const h=Math.floor(r.pt/60);const i=hours.indexOf(h);if(i>=0){todayRev[i]+=r.fare;todayCnt[i]++;}});
+  let cr=0,cc=0;const tR=todayRev.map(v=>cr+=v), tC=todayCnt.map(v=>cc+=v);
+  // 同曜日標準（青タク・2025〜・各時刻の累積中央値）
+  const blueSameDow=DAILY.filter(r=>r.dow===dow&&vtype(r)==='青'&&r.date>=new Date(2025,0,1)&&!isSpecial(r.date)&&dKey(r.date)!==key);
+  const cumByDay=[];
+  blueSameDow.forEach(r=>{const it=detailByDate[dKey(r.date)]||[];const hr=hours.map(()=>0);
+    it.forEach(x=>{if(x.pt==null)return;const h=Math.floor(x.pt/60);const i=hours.indexOf(h);if(i>=0)hr[i]+=x.fare;});
+    let c=0;cumByDay.push(hr.map(v=>c+=v));});
+  const stdRev=hours.map((_,i)=>cumByDay.length?median(cumByDay.map(d=>d[i])):0);
+  const labels=hours.map(h=>(h<24?h:h-24)+'時');
+  if(charts.pace)charts.pace.destroy();
+  charts.pace=new Chart(document.getElementById('paceChart'),{
+    type:'line',
+    data:{labels,datasets:[
+      {label:`${dow}曜の標準ペース`,data:stdRev,borderColor:'#8b949e',borderDash:[5,4],borderWidth:1.5,pointRadius:0,tension:.3,yAxisID:'y'},
+      {label:'この日の累積売上',data:tR,borderColor:'#388bfd',borderWidth:2.5,pointRadius:0,tension:.3,fill:true,backgroundColor:'rgba(56,139,253,.08)',yAxisID:'y'},
+      {label:'この日の累積件数',data:tC,borderColor:'#3fb950',borderWidth:1.5,pointRadius:0,tension:.3,yAxisID:'y1'}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},
+      plugins:{legend:{labels:{color:'#8b949e',font:{size:10},boxWidth:12}}},
+      scales:{x:{ticks:{color:'#8b949e',font:{size:9},maxTicksLimit:10},grid:{color:'#21262d'}},
+        y:{ticks:{color:'#8b949e',font:{size:9},callback:v=>'¥'+(v/1000)+'k'},grid:{color:'#21262d'}},
+        y1:{position:'right',ticks:{color:'#3fb950',font:{size:9}},grid:{display:false}}}}
+  });
+  // 乖離コメント
+  const finalDiff=tR[tR.length-1]-(stdRev[stdRev.length-1]||0);
+  let typeMsg={'日':'序盤から遅れると挽回しにくい型。早い時間帯の取りこぼしが致命的。',
+    '金':'夜の入りは遅いが深夜(24-28時)で抜く型。22時最下位でも焦らず深夜勝負。',
+    '土':'明け方(28-30時)まで粘れるが、22-24時の早い時間は弱い。'}[dow]||'';
+  document.getElementById('paceNote').innerHTML=`<div class="note ${finalDiff>=0?'good':'warn'}">同曜日標準ペースとの最終差：${finalDiff>=0?'+':''}${yen(finalDiff)}。${typeMsg}</div>`;
+}
+
+// ⑤ 純空車ロス分析
+function renderLoss(day,items,rests){
+  const rows=[];
+  for(let i=1;i<items.length;i++){
+    const prev=items[i-1],cur=items[i];
+    if(prev.dt==null||cur.pt==null||cur.pt<prev.dt)continue;
+    const gap=cur.pt-prev.dt;
+    let overlap=0;rests.forEach(rt=>{if(rt.s!=null&&rt.t!=null)overlap+=Math.max(0,Math.min(cur.pt,rt.t)-Math.max(prev.dt,rt.s));});
+    const pure=gap-overlap;
+    if(pure<LOSS_MIN)continue;
+    const addr=prev.dku+prev.dna;
+    // 除外判定（特別リスト）
+    const excluded=EXCLUDE_KW.some(k=>addr.includes(k)||prev.dku.includes(k));
+    let h=Math.floor(prev.dt/60);if(h>=24)h-=24;
+    const spot=(pickupHist[h+'|'+addr]||[]).length;
+    const area=areaHist[h+'|'+prev.dku]||0;
+    let verdict,tag;
+    if(excluded){verdict='ロング/空港後（構造的・除外）';tag='tag-x';}
+    else if(spot>=3){verdict='GO待ち妥当（不可抗力寄り）';tag='tag-ok';}
+    else if(area>=10){verdict='域内移動すべきだった';tag='tag-warn';}
+    else{verdict='エリア全体が薄い・降車地課題';tag='tag-bad';}
+    rows.push({h:prev.dt,addr:prev.dku+prev.dna,pure,spot,area,verdict,tag,excluded});
+  }
+  const area=document.getElementById('lossArea');
+  if(!rows.length){area.innerHTML='<div class="empty">純空車20分以上のロス区間はありませんでした。淀みなく回せた1日。</div>';return;}
+  const counted=rows.filter(r=>!r.excluded);
+  const totLoss=counted.reduce((a,r)=>a+r.pure,0);
+  let html=`<div class="note">計上対象ロス：${counted.length}区間 計${fmtMin(totLoss)}（除外${rows.length-counted.length}区間は別掲）。この時間を縮めることが地力向上の核心。</div>`;
+  html+=`<table class="loss"><tr><th>降車時刻</th><th>降車地</th><th>純空車</th><th>降車地実績</th><th>診断</th></tr>`;
+  rows.forEach(r=>{const hh=Math.floor(r.h/60),mm=r.h%60;
+    html+=`<tr><td>${hh}:${String(mm).padStart(2,'0')}</td><td>${r.addr}</td><td>${r.pure}分</td><td>${r.spot}件/市区${r.area}</td><td><span class="tag ${r.tag}">${r.verdict}</span></td></tr>`;});
+  html+=`</table>`;
+  area.innerHTML=html;
+}
+
+// ④ 軌跡評価（降車地の質）
+function renderDrop(items){
+  const rows=[];
+  items.forEach(r=>{
+    if(r.dt==null)return;
+    const addr=r.dku+r.dna;
+    let h=Math.floor(r.dt/60);if(h>=24)h-=24;
+    const fares=pickupHist[h+'|'+addr]||[];
+    const cnt=fares.length;
+    if(cnt<2){rows.push({h:r.dt,addr,cnt,score:null});return;}
+    // 案D：件数主×単価従
+    const maxc=20; // log基準
+    const cntScore=Math.log(cnt+1)/Math.log(maxc+1);
+    const medf=median(fares);
+    // 全体中央単価（簡易：2100）
+    const fareAdj=Math.max(0.7,Math.min(1.3,medf/2100));
+    rows.push({h:r.dt,addr,cnt,score:Math.round(cntScore*fareAdj*100),medf});
+  });
+  const scored=rows.filter(r=>r.score!=null);
+  const area=document.getElementById('dropArea');
+  if(!scored.length){area.innerHTML='<div class="empty">降車地の質を評価できる案件がありませんでした。</div>';return;}
+  const avg=Math.round(mean(scored.map(r=>r.score)));
+  let html=`<div class="note">降車地の質スコア平均：${avg}（高いほど次客を拾いやすい降車地。件数主×単価従、2件未満は評価対象外）。</div>`;
+  html+=`<table class="loss"><tr><th>降車時刻</th><th>降車地</th><th>過去実績</th><th>質スコア</th></tr>`;
+  // スコア低い順（改善対象）に上位表示 + 全件
+  rows.sort((a,b)=>(a.score==null?999:a.score)-(b.score==null?999:b.score));
+  rows.forEach(r=>{const hh=Math.floor(r.h/60),mm=r.h%60;
+    let tag,label;
+    if(r.score==null){tag='tag-x';label='—(実績薄)';}
+    else if(r.score>=85){tag='tag-ok';label='good drop '+r.score;}
+    else if(r.score>=60){tag='tag-warn';label='普通 '+r.score;}
+    else{tag='tag-bad';label='要回送 '+r.score;}
+    html+=`<tr><td>${hh}:${String(mm).padStart(2,'0')}</td><td>${r.addr}</td><td>${r.cnt}件</td><td><span class="tag ${tag}">${label}</span></td></tr>`;});
+  html+=`</table>`;
+  area.innerHTML=html;
+}
+
+loadAll();
+</script>
+</body>
+</html>
