@@ -726,8 +726,9 @@ function loadData(url,isRefresh){
       updateDataBar(parsed.rows.length,new Date());
       document.getElementById('st').textContent='📍 現在地を設定してください';
       if(btn)btn.disabled=false;
-      renderRadar();renderHot();
-      if(window._mapInited)_buildMap();else refreshMapPins();
+      try{renderRadar();}catch(e2){throw new Error('renderRadar: '+e2.message);}
+      try{renderHot();}catch(e3){throw new Error('renderHot: '+e3.message);}
+      try{if(window._mapInited)_buildMap();else refreshMapPins();}catch(e4){}
     })
     .catch(function(err){
       var cached=loadCache();
