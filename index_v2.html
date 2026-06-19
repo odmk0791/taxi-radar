@@ -1500,6 +1500,16 @@ function _initAndBuild(){
   }
   _buildMap();
 }
+// ===== v2用パッチ：tab-m/pg-mを参照しない安全版に上書き =====
+swTab = function(t){
+  var tr=document.getElementById('tab-r'),th=document.getElementById('tab-h');
+  var pr=document.getElementById('pg-r'),ph=document.getElementById('pg-h');
+  if(tr)tr.classList.toggle('on',t==='r');
+  if(th)th.classList.toggle('on',t==='h');
+  if(pr)pr.style.display=t==='r'?'':'none';
+  if(ph)ph.style.display=t==='h'?'':'none';
+  if(t==='h')renderHot();
+};
 </script>
 </body>
 </html>
