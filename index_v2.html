@@ -132,6 +132,8 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
 .area-hist{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
 .hist-chip{padding:4px 10px;border-radius:16px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:11px;cursor:pointer}
 </style>
+<style>#err-overlay{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.9);color:#f85149;font-size:12px;padding:20px;overflow:auto;display:none;white-space:pre-wrap;font-family:monospace}</style>
+<div id="err-overlay"></div>
 </head>
 <body>
 
@@ -304,6 +306,16 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
 </div>
 
 <script>
+window.onerror=function(msg,src,line,col,err){
+  var el=document.getElementById('err-overlay');
+  if(el){el.style.display='block';el.textContent+='ERROR: '+msg+'\n@'+src+':'+line+'\n\n';}
+  return false;
+};
+window.addEventListener('unhandledrejection',function(e){
+  var el=document.getElementById('err-overlay');
+  if(el){el.style.display='block';el.textContent+='PROMISE: '+e.reason+'\n\n';}
+});
+
 // ========== ボトムシート ドラッグ ==========
 (function(){
   var sheet = document.getElementById('bottom-sheet');
