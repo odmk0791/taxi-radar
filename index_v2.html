@@ -736,7 +736,7 @@ function loadData(url,isRefresh){
         document.getElementById('st').textContent='⚠️ オフライン（キャッシュ使用）';
         if(btn)btn.disabled=false;renderRadar();renderHot();
       }else{
-        document.getElementById('st').textContent='❌ '+e.message;
+        document.getElementById('st').textContent='❌ '+err.message;
         document.getElementById('rl').innerHTML='<div class="empty"><span>❌</span><p>読み込み失敗<br>URLと公開設定を確認してください</p></div>';
         if(btn)btn.disabled=false;
       }
