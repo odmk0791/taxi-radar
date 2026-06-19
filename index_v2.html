@@ -354,6 +354,7 @@ window.addEventListener('unhandledrejection',function(e){
   function updateFloatPos(sheetH){
     var fl = document.getElementById('float-loc');
     if(fl) fl.style.bottom = (sheetH + 12) + 'px';
+    if(_mapInited && _leafMap) setTimeout(function(){_leafMap.invalidateSize();},50);
   }
 
   function snapTo(h){
@@ -749,7 +750,7 @@ function loadData(url,isRefresh){
       if(btn)btn.disabled=false;
       try{renderRadar();}catch(e2){throw new Error('renderRadar: '+e2.message);}
       try{renderHot();}catch(e3){throw new Error('renderHot: '+e3.message);}
-      try{if(window._mapInited)_buildMap();else refreshMapPins();}catch(e4){}
+      try{if(_mapInited)_buildMap();else refreshMapPins();}catch(e4){}
     })
     .catch(function(err){
       var cached=loadCache();
