@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-19T07:52:39.239914+09:00",
+  "fetched_at": "2026-06-19T09:20:59.571339+09:00",
   "date": "20260619",
   "count": 18,
   "events": [
@@ -543,7 +543,7 @@
       "owner_nickname": "nishi-y",
       "owner_display_name": "y.nishimura",
       "accepted": 131,
-      "waiting": 33,
+      "waiting": 32,
       "updated_at": "2026-06-15T13:50:52+09:00"
     }
   ]
