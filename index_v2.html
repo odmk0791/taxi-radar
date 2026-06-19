@@ -7,8 +7,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0d1117">
 <title>Meet a Customer for TAXI Driver</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
 :root{--bg:#0a1628;--s:#0f2040;--s2:#162850;--bd:#2a3f6f;--g:#39d353;--gd:#1a4a2a;--am:#f0a500;--bl:#58a6ff;--rd:#f85149;--tx:#e6edf3;--mu:#8b949e;--safe-b:env(safe-area-inset-bottom,16px)}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
@@ -717,7 +715,7 @@ function loadData(url,isRefresh){
       document.getElementById('st').textContent='📍 現在地を設定してください';
       if(btn)btn.disabled=false;
       renderRadar();renderHot();
-      if(window._mapInited)_buildMap();
+      if(window._mapInited)_buildMap();else refreshMapPins();
     })
     .catch(function(err){
       var cached=loadCache();
@@ -1463,16 +1461,33 @@ document.getElementById('setup-save').addEventListener('click',doSaveSetup);
 
 
 
-// ========== 地図初期化（起動時） ==========
-(function initMap(){
-  _leafMap = L.map('spot-map', {zoomControl:false, attributionControl:true})
-    .setView([35.6812, 139.7671], 13);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-    attribution:'© OpenStreetMap © CARTO', maxZoom:19
-  }).addTo(_leafMap);
-  L.control.zoom({position:'topright'}).addTo(_leafMap);
-  _mapInited = true;
-})();
+// ========== 地図（遅延初期化） ==========
+function refreshMapPins(){
+  if(!window.L){
+    var css=document.createElement('link');
+    css.rel='stylesheet';
+    css.href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css';
+    document.head.appendChild(css);
+    var s=document.createElement('script');
+    s.src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
+    s.onload=function(){_initAndBuild();};
+    document.head.appendChild(s);
+  } else { _initAndBuild(); }
+}
+function _initAndBuild(){
+  if(!_mapInited){
+    var spots=window._spots;
+    var cx=uLat||(spots&&spots[0]&&spots[0].lat)||35.6812;
+    var cy=uLng||(spots&&spots[0]&&spots[0].lng)||139.7671;
+    _leafMap=L.map('spot-map',{zoomControl:false}).setView([cx,cy],13);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+      attribution:'© OpenStreetMap © CARTO',maxZoom:19
+    }).addTo(_leafMap);
+    L.control.zoom({position:'topright'}).addTo(_leafMap);
+    _mapInited=true;
+  }
+  _buildMap();
+}
 </script>
 </body>
 </html>
