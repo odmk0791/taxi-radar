@@ -1520,8 +1520,14 @@ function _initAndBuild(){
     }).addTo(_leafMap);
     L.control.zoom({position:'topright'}).addTo(_leafMap);
     _mapInited=true;
+    setTimeout(function(){
+      _leafMap.invalidateSize();
+      _buildMap();
+    },300);
+  } else {
+    _leafMap.invalidateSize();
+    _buildMap();
   }
-  _buildMap();
 }
 // ===== v2用パッチ：tab-m/pg-mを参照しない安全版に上書き =====
 swTab = function(t){
