@@ -141,38 +141,39 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 .aps{display:flex;flex-wrap:wrap;gap:4px}
 .pill{font-size:10px;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.05);color:var(--tx);border:1px solid var(--bd)}
 
-/* ===== v2: 地図メインUI ===== */
+/* ===== v2: 地図メインUI (CSS only) ===== */
 html,body{overflow:hidden;height:100%}
 
-/* 地図パネルを常時フルスクリーン表示 */
+/* 地図を常時フルスクリーン（最背面） */
 #pg-m{
   display:block!important;
-  position:fixed;
+  position:fixed!important;
   top:0;left:0;right:0;bottom:0;
   z-index:0;
 }
 #spot-map{width:100%;height:100%}
 
-/* ヘッダーを地図の上に浮かせる */
+/* ヘッダーを地図の上に */
 #hdr{
   position:fixed;top:0;left:0;right:0;
   z-index:50;
-  background:rgba(10,22,40,.88);
-  backdrop-filter:blur(8px);
+  background:rgba(10,22,40,.9);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
 }
 
-/* mainをボトムシートに */
+/* mainをボトムシートに（地図の上に重ねる） */
 main{
   position:fixed;
   bottom:0;left:0;right:0;
-  height:52vh;
+  height:55vh;
   z-index:20;
   background:var(--s);
   border-radius:18px 18px 0 0;
   border-top:1px solid var(--bd);
   overflow-y:auto;
   -webkit-overflow-scrolling:touch;
-  padding:0 12px 16px;
+  padding:0;
   margin:0;
 }
 main::before{
@@ -184,9 +185,10 @@ main::before{
   margin:10px auto 6px;
 }
 
-/* data-barは地図右上に小さく */
+/* data-barを地図上に小さく表示 */
 .data-bar{
-  position:fixed;top:52px;right:12px;
+  position:fixed!important;
+  top:52px;right:12px;
   z-index:51;
   background:rgba(15,32,64,.9);
   border:1px solid var(--bd);
@@ -195,32 +197,10 @@ main::before{
   font-size:10px;
 }
 
-/* gps-boxを地図上に浮かせる（左側） */
-.gps-box{
-  position:fixed;
-  left:12px;
-  bottom:calc(52vh + 16px);
-  z-index:51;
-  background:none;
-  border:none;
-  padding:0;
-}
-.gps-top{display:none}
-.gps-mid{display:flex;flex-direction:column;gap:8px}
-.gps-btn,.area-btn{
-  background:rgba(15,32,64,.92)!important;
-  border:1px solid var(--bd)!important;
-  border-radius:12px!important;
-  padding:10px 16px!important;
-  font-size:13px!important;
-  font-weight:700!important;
-  backdrop-filter:blur(6px);
-}
-
-/* ctrl,wx-bar,filter-sectは非表示 */
+/* ctrl・wx-bar・filter-sectは非表示 */
 .ctrl,.wx-bar,.filter-sect{display:none!important}
 
-/* 地図タブボタンを非表示 */
+/* 地図タブボタンは非表示（常時表示のため） */
 #tab-m{display:none!important}
 </style>
 </head>
@@ -720,7 +700,7 @@ function loadData(url,isRefresh){
       document.getElementById('st').textContent='📍 現在地を設定してください';
       if(btn)btn.disabled=false;
       renderRadar();renderHot();
-      swTab('m');
+      renderMap();
     })
     .catch(function(err){
       var cached=loadCache();
