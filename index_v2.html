@@ -8,297 +8,195 @@
 <meta name="theme-color" content="#0d1117">
 <title>Meet a Customer for TAXI Driver</title>
 <style>
-:root{--bg:#0a1628;--s:#0f2040;--s2:#162850;--bd:#2a3f6f;--g:#39d353;--gd:#1a4a2a;--am:#f0a500;--bl:#58a6ff;--rd:#f85149;--tx:#e6edf3;--mu:#8b949e;--safe-b:env(safe-area-inset-bottom,16px)}
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-family:-apple-system,'Hiragino Sans',sans-serif}
-
-/* === 地図 === */
-#map-wrap{position:fixed;top:0;left:0;right:0;bottom:0;z-index:0}
-#spot-map{position:absolute;top:0;left:0;right:0;bottom:0;background:#111}
-
-/* === フローティングヘッダー === */
-#float-hdr{position:fixed;top:0;left:0;right:0;z-index:100;padding:calc(env(safe-area-inset-top,0px) + 8px) 12px 8px;display:flex;align-items:center;gap:8px;background:linear-gradient(to bottom,rgba(10,22,40,.85) 0%,rgba(10,22,40,0) 100%)}
-#float-hdr .logo{font-size:14px;font-weight:800;white-space:nowrap;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
-#float-hdr .logo span{color:var(--am)}
-#clock-chip{background:rgba(15,32,64,.9);border:1px solid var(--bd);border-radius:10px;padding:4px 10px;font-size:13px;font-weight:800;color:var(--g);font-variant-numeric:tabular-nums;white-space:nowrap}
-#day-chip{font-size:11px;color:var(--mu);font-weight:600}
-#notify-btn{background:rgba(15,32,64,.9);border:1px solid var(--bd);border-radius:10px;padding:5px 10px;font-size:12px;color:var(--tx);cursor:pointer;white-space:nowrap;flex-shrink:0}
-#open-excl,#open-setup{background:rgba(15,32,64,.9);border:1px solid var(--bd);border-radius:10px;padding:5px 8px;font-size:16px;cursor:pointer;flex-shrink:0}
-
-/* === フローティングGPS/エリアボタン === */
-#float-loc{position:fixed;left:12px;z-index:100;display:flex;flex-direction:column;gap:8px;transition:bottom .35s ease}
-.floc-btn{background:rgba(15,32,64,.95);border:1px solid var(--bd);border-radius:12px;padding:10px 14px;font-size:13px;font-weight:700;color:var(--tx);cursor:pointer;white-space:nowrap;backdrop-filter:blur(6px);display:flex;align-items:center;gap:6px}
-.floc-btn.gps-active{border-color:var(--g);color:var(--g)}
-#locname-chip{position:fixed;top:calc(env(safe-area-inset-top,0px) + 56px);left:50%;transform:translateX(-50%);background:rgba(15,32,64,.92);border:1px solid var(--bd);border-radius:20px;padding:4px 14px;font-size:11px;color:var(--tx2,#aaa);white-space:nowrap;z-index:100;max-width:200px;overflow:hidden;text-overflow:ellipsis;display:none}
-
-/* === フローティングデータバー === */
-#data-chip{position:fixed;right:12px;top:calc(env(safe-area-inset-top,0px) + 52px);z-index:100;background:rgba(15,32,64,.92);border:1px solid var(--bd);border-radius:10px;padding:4px 10px;font-size:10px;color:var(--mu);display:flex;align-items:center;gap:4px;max-width:180px;white-space:nowrap}
-#data-chip button{background:none;border:none;color:var(--bl);font-size:10px;cursor:pointer;padding:0}
-
-/* === ボトムシート === */
-#bottom-sheet{position:fixed;left:0;right:0;bottom:0;z-index:200;background:var(--s);border-radius:20px 20px 0 0;border-top:1px solid var(--bd);transition:height .3s cubic-bezier(.4,0,.2,1);overflow:hidden;display:flex;flex-direction:column}
-#sheet-handle-area{flex-shrink:0;padding:10px 0 6px;display:flex;flex-direction:column;align-items:center;gap:6px;cursor:grab;user-select:none}
-#sheet-grip{width:40px;height:4px;border-radius:2px;background:var(--bd)}
-#sheet-top-row{width:100%;display:flex;align-items:center;justify-content:space-between;padding:0 12px 4px}
-#sheet-tab-row{display:flex;gap:8px}
-.s-tab{padding:5px 14px;border-radius:20px;font-size:13px;font-weight:700;border:none;background:none;color:var(--mu);cursor:pointer}
-.s-tab.on{background:var(--g);color:#000}
-#filter-btn{background:var(--s2);border:1px solid var(--bd);border-radius:20px;padding:5px 12px;font-size:12px;color:var(--tx);cursor:pointer;display:flex;align-items:center;gap:4px}
-#sheet-scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 12px}
-
-/* === カード === */
-.card{background:var(--s2);border:1px solid var(--bd);border-radius:14px;padding:12px;margin-bottom:8px;cursor:pointer;display:flex;flex-wrap:wrap;align-items:flex-start;position:relative}
-.rank{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0;margin-right:10px}
-.r1{background:#f0a500;color:#000}.r2{background:#94a3b8;color:#000}.r3{background:#cd7f32;color:#fff}.rn{background:var(--bd);color:var(--mu)}
-.cb{flex:1;min-width:0}
-.cn{font-size:15px;font-weight:700;margin-bottom:4px}
-.badges{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px}
-.badge{font-size:10px;padding:2px 7px;border-radius:10px;font-weight:600}
-.bg{background:rgba(57,211,83,.12);color:var(--g)}
-.bs{background:rgba(88,166,255,.12);color:var(--bl)}
-.bn{background:rgba(240,165,0,.12);color:var(--am)}
-.hot-row{width:100%;margin-bottom:4px}
-.hot-badge{display:inline-flex;align-items:center;gap:4px;background:rgba(248,81,73,.15);border:1px solid rgba(248,81,73,.4);border-radius:20px;padding:2px 8px;font-size:11px;color:var(--rd);font-weight:700}
-.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px}
-.tag{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:600}
-.td{background:rgba(88,166,255,.12);color:var(--bl)}
-.tc{background:rgba(57,211,83,.12);color:var(--g)}
-.bar{height:3px;background:var(--bd);border-radius:2px;margin-top:4px;width:100%}
-.barf{height:3px;border-radius:2px;background:linear-gradient(to right,var(--g),var(--am))}
-.fb-row{display:flex;align-items:center;gap:6px;margin-top:7px;padding-top:6px;border-top:0.5px solid var(--bd);width:100%}
-.fb-btn{padding:5px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s);color:var(--tx2,#aaa);font-size:12px;cursor:pointer}
-.fb-stats{font-size:11px;color:var(--mu);margin-left:auto}
-.excl-btn{background:none;border:none;font-size:14px;cursor:pointer;padding:4px 6px;opacity:.4;flex-shrink:0;position:absolute;top:8px;right:8px}
-.excl-btn:active{opacity:1}
-.carr{display:none}
-.empty{padding:32px 0;text-align:center;color:var(--mu);font-size:13px;line-height:2}
-
-/* === エリア別（ホット） === */
-.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:none}
-.chips::-webkit-scrollbar{display:none}
-.chip{padding:6px 14px;border-radius:20px;border:1px solid var(--bd);background:var(--s);color:var(--mu);font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0}
-.chip.on{background:var(--am);color:#000;border-color:var(--am)}
-.hcard{background:var(--s2);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:6px;display:flex;align-items:center;gap:10px}
-.hrank{font-size:16px;font-weight:800;width:28px;text-align:right;flex-shrink:0}
-.hname{flex:1;font-size:13px;font-weight:600}
-.hbars{display:flex;gap:4px}
-.hbar{width:8px;border-radius:2px}
-
-/* === フィルターシート === */
-#filter-sheet{position:fixed;left:0;right:0;bottom:0;z-index:300;background:var(--s);border-radius:20px 20px 0 0;border-top:1px solid var(--bd);padding:16px 16px calc(var(--safe-b) + 16px);display:none;max-height:80vh;overflow-y:auto}
-#filter-sheet h3{font-size:13px;color:var(--mu);margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
-#filter-overlay{position:fixed;inset:0;z-index:299;background:rgba(0,0,0,.5);display:none}
-.fsec{margin-bottom:14px}
-.fsec-label{font-size:11px;color:var(--mu);margin-bottom:6px}
-.fbtn-row{display:flex;gap:6px;flex-wrap:wrap}
-.fbtn{padding:6px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:12px;cursor:pointer}
-.fbtn.on{background:var(--g);color:#000;border-color:var(--g)}
-.rs-row{display:flex;align-items:center;gap:10px}
-.rs-row input{flex:1;accent-color:var(--g)}
-.rs-val{font-size:13px;font-weight:700;color:var(--am);min-width:40px}
-.off-row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
-.off-row::-webkit-scrollbar{display:none}
-.off-btn{padding:6px 14px;border-radius:20px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0}
-.off-btn.on{background:var(--g);color:#000;border-color:var(--g)}
-
-/* === 天気チップ === */
-#wx-chip{font-size:11px;color:var(--mu);display:flex;align-items:center;gap:4px}
-
-/* === 除外シート === */
-#excl-overlay{position:fixed;inset:0;z-index:498;background:rgba(0,0,0,.6);display:none}
-#excl-sheet{display:none;position:fixed;bottom:0;left:0;right:0;z-index:499;background:var(--s);border-radius:18px 18px 0 0;padding:20px 16px calc(var(--safe-b) + 20px);max-height:70vh;overflow-y:auto;border-top:1px solid var(--bd)}
-
-/* === セットアップ・エリア選択モーダル === */
+:root{--bg:#0a1628;--s:#0f2040;--s2:#162850;--bd:#30363d;--g:#39d353;--gd:#1a4a2a;--am:#f0a500;--bl:#58a6ff;--re:#f85149;--tx:#e6edf3;--mu:#8b949e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:var(--bg);color:var(--tx);font-family:-apple-system,'Hiragino Sans',sans-serif;padding-bottom:env(safe-area-inset-bottom,16px)}
 #setup{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.88);display:flex;align-items:center;justify-content:center;padding:20px}
 #setup.hidden{display:none}
 .setup-box{background:var(--s);border:1px solid var(--bd);border-radius:16px;padding:20px;width:100%;max-width:420px}
 .setup-box h2{font-size:16px;margin-bottom:6px}
-.setup-box p,.setup-box ol{font-size:12px;color:var(--mu);margin-bottom:14px;line-height:1.7}
-.setup-box ol{padding-left:18px;line-height:2.2}
+.setup-box p{font-size:12px;color:var(--mu);margin-bottom:14px;line-height:1.7}
+.setup-box ol{font-size:12px;color:var(--mu);padding-left:18px;margin-bottom:14px;line-height:2.2}
 .setup-box ol b{color:var(--tx)}
-.url-input{width:100%;padding:10px 12px;background:var(--bg);border:1px solid var(--bd);border-radius:8px;color:var(--tx);font-size:12px;margin-bottom:10px}
+.url-input{width:100%;padding:10px 12px;background:var(--bg);border:1px solid var(--bd);border-radius:8px;color:var(--tx);font-size:12px;margin-bottom:10px;font-family:-apple-system,sans-serif}
 .url-input:focus{outline:none;border-color:var(--g)}
-.setup-save{width:100%;padding:12px;background:var(--g);color:#000;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer}
+.setup-save{width:100%;padding:12px;background:var(--g);color:#000;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;font-family:-apple-system,sans-serif}
 .setup-note{font-size:11px;color:var(--mu);text-align:center;margin-top:10px}
 #area-modal{position:fixed;inset:0;z-index:400;background:rgba(0,0,0,.8);display:flex;align-items:flex-end;justify-content:center}
 #area-modal.hidden{display:none}
 .area-sheet{background:var(--s);border-radius:16px 16px 0 0;padding:16px;width:100%;max-width:480px;padding-bottom:calc(env(safe-area-inset-bottom,0px) + 16px);max-height:70vh;overflow-y:auto}
 .area-sheet h3{font-size:13px;color:var(--mu);text-align:center;margin-bottom:12px}
-.ward-grid,.chome-grid{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-.wbtn,.cbtn{padding:6px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:12px;cursor:pointer}
-.wbtn:active,.cbtn:active{background:var(--g);color:#000}
-.area-search-input{width:100%;padding:10px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font-size:13px;margin-bottom:8px}
-.area-search-input:focus{outline:none;border-color:var(--g)}
-.area-hist{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
-.hist-chip{padding:4px 10px;border-radius:16px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:11px;cursor:pointer}
+.area-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.area-btn{padding:10px 4px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;cursor:pointer;text-align:center}
+.area-btn:active{background:var(--gd);color:var(--g);border-color:rgba(57,211,83,.4)}
+.area-cancel{width:100%;padding:12px;border-radius:10px;border:1px solid var(--bd);background:none;color:var(--mu);font-family:-apple-system,sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-top:8px}
+.name-btn{display:block;width:100%;padding:11px 14px;border-radius:8px;border:none;background:var(--bg);color:var(--tx);font-family:-apple-system,sans-serif;font-size:13px;font-weight:500;cursor:pointer;text-align:left;border-bottom:1px solid var(--bd)}
+.name-btn:active{background:var(--gd);color:var(--g)}
+.area-search{width:100%;padding:10px 14px;background:var(--bg);border:1px solid var(--bd);border-radius:10px;color:var(--tx);font-size:14px;font-family:-apple-system,sans-serif;margin-bottom:12px;outline:none}
+.area-search:focus{border-color:var(--g)}
+.area-search::placeholder{color:var(--mu)}
+.hist-label{font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;margin-top:2px}
+.hist-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.hist-chip{padding:6px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-size:12px;font-weight:700;font-family:-apple-system,sans-serif;cursor:pointer;display:flex;align-items:center;gap:4px}
+.hist-chip:active{background:var(--gd);color:var(--g)}
+.search-results{max-height:280px;overflow-y:auto}
+.search-result-item{display:block;width:100%;padding:11px 14px;border-radius:8px;border:none;background:var(--bg);color:var(--tx);font-family:-apple-system,sans-serif;font-size:13px;cursor:pointer;text-align:left;border-bottom:1px solid var(--bd)}
+.search-result-item:active{background:var(--gd);color:var(--g)}
+.search-result-item .ward-tag{font-size:10px;color:var(--mu);margin-right:4px}
+.search-empty{padding:20px;text-align:center;color:var(--mu);font-size:13px}
+#hdr{position:sticky;top:0;z-index:100;background:rgba(13,17,23,.97);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0)}
+.hi{display:flex;align-items:center;gap:6px;padding:9px 12px}
+.logo{font-size:15px;font-weight:900;flex-shrink:0}.logo b{color:var(--am)}
+.hs{flex:1;min-width:0}
+.st{font-size:11px;color:var(--mu);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ck{font-size:13px;font-weight:700;color:var(--g);background:var(--gd);border:1px solid rgba(57,211,83,.3);border-radius:8px;padding:4px 8px;flex-shrink:0;text-align:center;font-family:ui-monospace,monospace}
+.cd{font-size:9px;color:rgba(57,211,83,.6);margin-top:1px}
+.hbtn{background:none;border:none;cursor:pointer;font-size:18px;padding:2px;flex-shrink:0}
+.notify-btn{font-size:11px;font-weight:700;font-family:-apple-system,sans-serif;padding:5px 8px;border-radius:8px;border:1px solid var(--bd);background:var(--s2);color:var(--mu);white-space:nowrap;cursor:pointer}
+main{padding:10px 12px}
+.data-bar{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:var(--s);border:1px solid var(--bd);border-radius:10px;margin-bottom:10px}
+.data-info{font-size:11px;color:var(--mu)}.data-info b{color:var(--g)}
+.refresh-btn{background:none;border:1px solid var(--bd);border-radius:6px;color:var(--bl);font-size:11px;font-weight:700;cursor:pointer;padding:4px 10px;font-family:-apple-system,sans-serif}
+.tab-row{display:flex;border-bottom:1px solid var(--bd);margin-bottom:10px}
+.tabBtn{flex:1;padding:8px 4px;font-size:13px;font-weight:700;font-family:-apple-system,sans-serif;color:var(--mu);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer}
+.tabBtn.on{color:var(--g);border-bottom-color:var(--g)}
+.gps-box{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:10px}
+.gps-top{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.loc-label{font-size:10px;color:var(--mu)}.loc-name{font-size:13px;font-weight:700;margin-top:2px}
+.btn-row{display:flex;gap:8px}
+.btn{flex:1;padding:11px 8px;border-radius:10px;border:none;font-family:-apple-system,sans-serif;font-size:13px;font-weight:700;cursor:pointer;text-align:center}
+.btn-g{background:var(--g);color:#000}.btn-g:disabled{background:var(--gd);color:var(--g)}
+.btn-b{background:var(--s2);color:var(--bl);border:1px solid var(--bd)!important}
+.err{display:none;background:rgba(248,81,73,.1);border:1px solid rgba(248,81,73,.4);border-radius:10px;padding:10px 12px;margin-top:8px;font-size:12px;color:var(--re);line-height:1.7;white-space:pre-line}
+.err.show{display:block}
+.err-btn{display:inline-block;margin-top:6px;padding:3px 10px;background:var(--re);color:#fff;border:none;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;font-family:-apple-system,sans-serif}
+.ctrl{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.cr{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.cl{font-size:11px;color:var(--mu);flex-shrink:0}
+.cv{font-size:13px;font-weight:700;color:var(--am);flex-shrink:0;min-width:32px;text-align:right}
+input[type=range]{flex:1;height:4px;-webkit-appearance:none;outline:none;border-radius:2px;background:linear-gradient(to right,var(--g) 0%,var(--g) var(--p,0%),var(--bd) var(--p,0%))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--g);cursor:pointer}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;padding:7px 14px;border-radius:20px;font-size:12px;font-weight:700;font-family:-apple-system,sans-serif;border:1px solid var(--bd);background:var(--bg);color:var(--mu);cursor:pointer;flex-shrink:0}
+.chip.on{background:var(--g);color:#000;border-color:var(--g)}
+.wx-bar{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--s);border:1px solid var(--bd);border-radius:10px;margin-bottom:10px}
+.wx-icon{font-size:20px;flex-shrink:0}
+.wx-temp{font-size:13px;font-weight:700}.wx-desc{font-size:11px;color:var(--mu);margin-top:1px}
+.wx-rain{font-size:11px;font-weight:700;color:var(--bl);flex-shrink:0;background:rgba(88,166,255,.12);padding:3px 8px;border-radius:20px}
+.wx-rain.heavy{color:var(--re);background:rgba(248,81,73,.12)}
+.filter-sect{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.filter-label{font-size:10px;color:var(--mu);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.frow{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+.frow:last-child{margin-bottom:0}
+.fbtn{padding:6px 11px;border-radius:20px;border:1px solid var(--bd);background:var(--bg);color:var(--mu);font-family:-apple-system,sans-serif;font-size:11px;font-weight:700;cursor:pointer;flex-shrink:0}
+.fbtn.on-all{background:var(--gd);color:var(--g);border-color:rgba(57,211,83,.4)}
+.fbtn.on-go{background:rgba(57,211,83,.15);color:#39d353;border-color:#39d353}
+.fbtn.on-sm{background:rgba(88,166,255,.15);color:#58a6ff;border-color:#58a6ff}
+.fbtn.on-na{background:rgba(240,165,0,.15);color:#f0a500;border-color:#f0a500}
+.fbtn.on-fare{background:rgba(248,81,73,.15);color:#f85149;border-color:#f85149}
+.fbtn.on-sk{background:rgba(161,139,250,.15);color:#a78bfa;border-color:#a78bfa}
+.sec{font-size:11px;color:var(--mu);margin-bottom:8px;display:flex;align-items:center;gap:6px;text-transform:uppercase;letter-spacing:.06em}
+.sec::after{content:'';flex:1;height:1px;background:var(--bd)}
+.card{display:flex;align-items:center;gap:10px;background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer}
+.card:active{opacity:.7}
+.rank{font-size:14px;font-weight:900;width:24px;text-align:center;flex-shrink:0}
+.r1{color:var(--am)}.r2{color:#94a3b8}.r3{color:#cd7f32}.rn{color:var(--mu)}
+.cb{flex:1;min-width:0}
+.cn{font-size:15px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-bottom:3px}
+.badges{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px}
+.hot-row{margin-bottom:5px}
+.badge-hot{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;border-radius:20px;background:rgba(255,90,0,.15);border:1px solid rgba(255,90,0,.45);color:#ff7a30;font-size:11px;font-weight:800;letter-spacing:.02em;animation:hotpulse 1.4s ease-in-out infinite;}
+@keyframes hotpulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,90,0,.35);}60%{opacity:.9;box-shadow:0 0 0 5px rgba(255,90,0,0);}}
+.badge{font-size:9px;padding:2px 6px;border-radius:10px;font-weight:700}
+.bg{background:rgba(57,211,83,.15);color:#39d353}
+.bs{background:rgba(88,166,255,.15);color:#58a6ff}
+.bn{background:rgba(240,165,0,.15);color:#f0a500}
+.tags{display:flex;gap:6px}
+.tag{font-size:10px;padding:2px 8px;border-radius:20px;font-weight:700}
+.td{background:rgba(88,166,255,.12);color:var(--bl)}
+.tc{background:rgba(57,211,83,.12);color:var(--g)}
+.bar{height:3px;background:var(--bd);border-radius:2px;margin-top:5px}
+.barf{height:3px;border-radius:2px;background:linear-gradient(to right,var(--g),var(--am))}
+.carr{font-size:18px;color:var(--mu);flex-shrink:0}
+.excl-btn{background:none;border:none;font-size:14px;cursor:pointer;padding:4px 6px;opacity:.4;flex-shrink:0}
+.excl-btn:active{opacity:1}
+.fb-row{display:flex;align-items:center;gap:6px;margin-top:7px;padding-top:6px;border-top:0.5px solid var(--bd)}
+.fb-btn{padding:5px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s2);color:var(--tx2);font-size:12px;cursor:pointer}
+.fb-hit:active{background:rgba(57,211,83,.2);border-color:var(--g);color:var(--g)}
+.fb-miss:active{background:rgba(248,81,73,.15);border-color:var(--rd);color:var(--rd)}
+.fb-btn.done-hit{background:rgba(57,211,83,.15);border-color:var(--g);color:var(--g)}
+.fb-btn.done-miss{background:rgba(248,81,73,.1);border-color:var(--rd);color:var(--rd)}
+.fb-stats{font-size:11px;color:var(--tx2);margin-left:auto}
+.empty{padding:28px 0;text-align:center;color:var(--mu)}
+.empty span{font-size:36px;display:block;margin-bottom:8px}
+.empty p{font-size:13px;line-height:1.7}
+.loading{padding:24px;text-align:center;color:var(--mu);font-size:13px}
+.spin{display:inline-block;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.area{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.ah{display:flex;align-items:center;gap:7px;margin-bottom:7px}
+.adot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.an{font-size:13px;font-weight:700}.ac{font-size:11px;color:var(--mu);margin-left:auto}
+.aps{display:flex;flex-wrap:wrap;gap:4px}
+.pill{font-size:10px;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.05);color:var(--tx);border:1px solid var(--bd)}
+
+/* ===== v2: 地図メインUI ===== */
+html,body{overflow:hidden;height:100%}
+
+/* 地図パネルを常時フルスクリーン表示 */
+#pg-m{
+  display:block!important;
+  position:fixed;
+  top:0;left:0;right:0;bottom:0;
+  z-index:0;
+}
+#spot-map{width:100%;height:100%}
+
+/* ヘッダーを地図の上に浮かせる */
+#hdr{
+  position:fixed;top:0;left:0;right:0;
+  z-index:50;
+  background:rgba(10,22,40,.88);
+  backdrop-filter:blur(8px);
+}
+
+/* mainをボトムシートに */
+main{
+  position:fixed;
+  bottom:0;left:0;right:0;
+  height:48vh;
+  z-index:20;
+  background:var(--s);
+  border-radius:18px 18px 0 0;
+  border-top:1px solid var(--bd);
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  padding:0 12px;
+  margin:0;
+}
+main::before{
+  content:'';
+  display:block;
+  width:40px;height:4px;
+  background:var(--bd);
+  border-radius:2px;
+  margin:10px auto 8px;
+}
+
+/* タブ以外（gps-box,ctrl,wx-bar,filter-sect）は非表示 */
+.gps-box,.ctrl,.wx-bar,.filter-sect{display:none!important}
+.data-bar{display:none!important}
+
+/* エリア別・スポット一覧のみ表示 */
+#pg-r,#pg-h{padding-bottom:20px}
+
+/* map-pageのタブボタンも非表示（地図は常時表示のため）*/
+#tab-m{display:none!important}
 </style>
-<div id="err-overlay" style="display:none"></div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 </head>
 <body>
-
-<!-- 地図 (フルスクリーン) -->
-<div id="map-wrap">
-  <div id="spot-map"></div>
-</div>
-
-<!-- フローティングヘッダー -->
-<div id="float-hdr">
-  <div class="logo">🚖 Meet a <span>C</span> <span id="locname" style="font-size:11px;color:var(--mu);font-weight:400"></span></div>
-  <div style="display:flex;flex-direction:column;align-items:flex-end;gap:1px">
-    <div id="clock-chip"><span id="ck">--:--</span></div>
-    <div id="day-chip"><span id="cd">--曜</span></div>
-  </div>
-  <button id="notify-btn" class="notify-btn">🔕 通知OFF</button>
-  <button id="open-excl" onclick="openExclSettings()">🚫</button>
-  <button id="open-setup" onclick="openSetup()">⚙️</button>
-</div>
-
-<!-- データバー（右上） -->
-<div id="data-chip">
-  <span id="st">📊 読込中...</span>
-  <button id="refresh-btn" onclick="doRefresh()">↻</button>
-</div>
-
-<!-- フローティングGPS/エリアボタン（左） -->
-<div id="float-loc" style="bottom:calc(var(--sheet-half,45vh) + 20px)">
-  <button id="gpsbtn" class="floc-btn">📡 GPS</button>
-  <button id="areabtn" class="floc-btn">🗺️ エリア</button>
-</div>
-
-<!-- ボトムシート -->
-<div id="bottom-sheet">
-  <div id="sheet-handle-area">
-    <div id="sheet-grip"></div>
-    <div id="sheet-top-row">
-      <div id="sheet-tab-row">
-        <button class="s-tab on" id="tab-r" onclick="swTab('r')">🎯 スポット</button>
-        <button class="s-tab" id="tab-h" onclick="swTab('h')">🔥 エリア別</button>
-      </div>
-      <button id="filter-btn" onclick="openFilterSheet()">
-        🔧 フィルター <span id="filter-count" style="display:none;background:var(--rd);color:#fff;border-radius:10px;padding:1px 5px;font-size:10px"></span>
-      </button>
-    </div>
-  </div>
-  <div id="sheet-scroll">
-    <!-- 近くのスポット -->
-    <div id="pg-r">
-      <div id="geo-status" style="display:none;font-size:11px;color:var(--mu);padding:4px 0 8px;text-align:center"></div>
-      <div id="rl"></div>
-    </div>
-    <!-- エリア別 -->
-    <div id="pg-h" style="display:none">
-      <div class="chips" id="dc"></div>
-      <div id="hl"></div>
-    </div>
-  </div>
-</div>
-
-<!-- フィルターシート -->
-<div id="filter-overlay" onclick="closeFilterSheet()"></div>
-<div id="filter-sheet">
-  <h3>🔧 フィルター <button onclick="closeFilterSheet()" style="background:none;border:none;color:var(--mu);font-size:18px;cursor:pointer">✕</button></h3>
-  <div class="fsec">
-    <div class="fsec-label">検索半径</div>
-    <div class="rs-row">
-      <input type="range" id="rs" min="0.5" max="5" step="0.5" value="1">
-      <span class="rs-val"><span id="rv">1</span>km</span>
-    </div>
-  </div>
-  <div class="fsec">
-    <div class="fsec-label">時間オフセット</div>
-    <div class="off-row" id="tc">
-      <button class="off-btn on" data-off="0">今すぐ</button>
-      <button class="off-btn" data-off="1">+1h</button>
-      <button class="off-btn" data-off="2">+2h</button>
-      <button class="off-btn" data-off="3">+3h</button>
-      <button class="off-btn" data-off="-1">-1h</button>
-      <button class="off-btn" data-off="-2">-2h</button>
-    </div>
-  </div>
-  <div class="fsec">
-    <div class="fsec-label">ステータス</div>
-    <div class="fbtn-row" id="sf">
-      <button class="fbtn on" data-v="">すべて</button>
-      <button class="fbtn" data-v="GO">🟢 GO</button>
-      <button class="fbtn" data-v="スマ配">📱 スマ配</button>
-      <button class="fbtn" data-v="流し">🚕 流し</button>
-    </div>
-  </div>
-  <div class="fsec">
-    <div class="fsec-label">料金</div>
-    <div class="fbtn-row" id="ff">
-      <button class="fbtn on" data-v="">すべて</button>
-      <button class="fbtn" data-v="low">¥2,999以下</button>
-      <button class="fbtn" data-v="mid">¥3,000〜4,999</button>
-      <button class="fbtn" data-v="high">¥5,000〜9,999</button>
-      <button class="fbtn" data-v="vhigh">¥10,000以上</button>
-    </div>
-  </div>
-  <div class="fsec">
-    <div class="fsec-label">サンキュー</div>
-    <div class="fbtn-row" id="kf">
-      <button class="fbtn on" data-v="">すべて</button>
-      <button class="fbtn" data-v="sk">📋 サンキューのみ</button>
-      <button class="fbtn" data-v="nsk">通常＋サンキュー</button>
-      <button class="fbtn" data-v="nsk_pt">通常＋サンキュー＋プレタク</button>
-      <button class="fbtn" data-v="pt_p">⭐ プレタクPのみ</button>
-    </div>
-  </div>
-  <div class="fsec">
-    <div id="wx-chip">
-      <span id="wx-icon">--</span>
-      <span id="wx-tmp">--°C</span>
-      <span id="wx-desc"></span>
-    </div>
-    <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
-      <span id="day-type-badge" style="font-size:11px;padding:3px 8px;border-radius:20px;background:rgba(88,166,255,.08);border:1px solid rgba(88,166,255,.3);color:var(--bl)"></span>
-      <span id="isnt-badge" style="font-size:11px;padding:3px 8px;border-radius:20px;background:rgba(57,211,83,.06);border:1px solid rgba(57,211,83,.2);color:var(--g)"></span>
-    </div>
-  </div>
-</div>
-
-<!-- 除外シート -->
-<div id="excl-overlay" onclick="closeExclSheet()"></div>
-<div id="excl-sheet">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
-    <span style="font-size:15px;font-weight:700">🚫 除外エリア</span>
-    <div style="display:flex;gap:12px;align-items:center">
-      <span onclick="clearAllExcl()" style="font-size:12px;color:var(--rd);cursor:pointer">全解除</span>
-      <button onclick="closeExclSheet()" style="background:none;border:none;color:var(--mu);font-size:20px;cursor:pointer">✕</button>
-    </div>
-  </div>
-  <div id="excl-list"></div>
-  <p style="font-size:11px;color:var(--mu);margin-top:12px">スポット一覧の🚫ボタンでエリアを除外できます</p>
-</div>
-
-<!-- 非表示ユーティリティ要素 -->
-<span id="errcls" style="display:none" onclick="closeErr()">×</span>
-<!-- v1互換のプレースホルダー（非表示） -->
-<div id="data-bar" style="display:none"></div>
-<div id="errbox" style="display:none"><span id="errtxt"></span></div>
-<div id="wx-bar" style="display:none">
-  <span id="wx-temp"></span><span id="wx-rain"></span>
-</div>
-<div id="time-range-badge" style="display:none"></div>
-<div id="rec-count" style="display:none"></div>
-<div id="last-update" style="display:none"></div>
-<div id="pg-m" style="display:none"></div>
-<div id="tab-m" style="display:none"></div>
-<div id="diag-result" style="display:none"></div>
-<!-- エリア選択用プレースホルダー -->
-<div id="area-step1" style="display:none"></div>
-<div id="area-step2" style="display:none"></div>
-<div id="area-main-view" style="display:none"></div>
-<div id="area-history-section" style="display:none"></div>
-<div id="hist-chips" style="display:none"></div>
-<div id="name-list" style="display:none"></div>
-<div id="search-result-list" style="display:none"></div>
-<div id="step2-title" style="display:none"></div>
-<input id="area-search-input" style="display:none" type="text">
-
-<!-- セットアップモーダル -->
-<div id="setup" class="hidden">
+<div id="setup">
   <div class="setup-box">
     <h2>📊 Google スプレッドシート連携</h2>
     <p>スプレッドシートをウェブ公開してURLを貼り付けると、データが自動更新されます。</p>
@@ -308,116 +206,158 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
       <li><b>「カンマ区切り形式(.csv)」</b>を選択</li>
       <li><b>「公開」</b>をクリックしてURLをコピー</li>
     </ol>
-    <input class="url-input" id="sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/e/...">
+    <input class="url-input" id="sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/e/..." />
     <button class="setup-save" id="setup-save" onclick="doSaveSetup()">保存してデータを読み込む</button>
-    <p class="setup-note">設定後にページを更新してください</p>
+    <p class="setup-note">URLはブラウザ内のみに保存されます。<br><span style="color:#30363d">v2025-05-20</span></p><button onclick="clearGeoCache()" style="width:100%;margin-top:8px;padding:8px;background:none;border:1px solid var(--bd);border-radius:8px;color:var(--mu);font-family:-apple-system,sans-serif;font-size:11px;cursor:pointer">🗑️ 座標キャッシュをクリア</button>
+<button onclick="diagAddr()" style="width:100%;margin-top:8px;padding:8px;background:none;border:1px solid rgba(88,166,255,.4);border-radius:8px;color:var(--bl);font-family:-apple-system,sans-serif;font-size:11px;cursor:pointer">🔍 住所診断（誤入力チェック）</button>
+<div id="diag-result" style="display:none;margin-top:10px;background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:10px;font-size:11px;max-height:200px;overflow-y:auto;line-height:2"></div>
   </div>
 </div>
-
-<!-- エリア選択モーダル -->
 <div id="area-modal" class="hidden">
   <div class="area-sheet">
-    <h3>エリアを選択</h3>
-    <input type="text" id="area-search" class="area-search-input" placeholder="地名で検索（例：渋谷、六本木...）">
-    <div id="area-search-results" class="ward-grid" style="display:none"></div>
-    <div id="area-hist-row" class="area-hist"></div>
-    <div id="ward-grid" class="ward-grid"></div>
-    <div id="chome-grid" class="chome-grid" style="display:none"></div>
-    <button onclick="closeAreaModal()" style="width:100%;padding:10px;background:var(--s2);border:1px solid var(--bd);border-radius:10px;color:var(--mu);font-size:13px;cursor:pointer;margin-top:8px">閉じる</button>
+    <input class="area-search" id="area-search-input" type="search" placeholder="🔍 住所を検索（例：六本木、三軒茶屋）" autocomplete="off">
+    <div id="area-search-results" style="display:none">
+      <div class="search-results" id="search-result-list"></div>
+    </div>
+    <div id="area-main-view">
+      <div id="area-history-section" style="display:none">
+        <div class="hist-label">🕐 最近使用</div>
+        <div class="hist-chips" id="hist-chips"></div>
+      </div>
+      <div id="area-step1">
+        <div class="hist-label">区・市を選択</div>
+        <div id="ward-grid" class="area-grid"></div>
+      </div>
+      <div id="area-step2" style="display:none">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+          <button onclick="backToStep1()" style="background:none;border:none;color:var(--bl);font-size:13px;cursor:pointer;padding:2px 6px;font-family:-apple-system,sans-serif">← 戻る</button>
+          <div id="step2-title" style="flex:1;font-size:13px;font-weight:700;color:var(--tx)"></div>
+        </div>
+        <div id="name-list"></div>
+      </div>
+    </div>
+    <button class="area-cancel" onclick="closeAreaModal()">キャンセル</button>
+  </div>
+</div>
+<div id="hdr">
+  <div class="hi">
+    <div class="logo">🚖 Meet a <b>C</b></div>
+    <div class="hs"><div class="st" id="st">読み込み中...</div></div>
+    <div class="ck"><div id="ck">--:--</div><div class="cd" id="cd">---</div></div>
+    <button class="notify-btn" id="notify-btn">🔕 通知OFF</button>
+    <button class="hbtn" id="open-excl" onclick="openExclSettings()" title="除外エリア">🚫</button>
+    <button class="hbtn" id="open-setup">⚙️</button>
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<!-- 除外エリア背景 -->
+<div id="excl-overlay" onclick="document.getElementById('excl-sheet').style.display='none';this.style.display='none';" style="display:none;position:fixed;inset:0;z-index:498;background:rgba(0,0,0,.6)"></div>
+<!-- 除外リストシート -->
+<div id="excl-sheet" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:499;background:var(--s);border-radius:18px 18px 0 0;padding:20px 16px 40px;max-height:70vh;overflow-y:auto;border-top:1px solid var(--bd)">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+    <span style="font-size:15px;font-weight:700">🚫 除外エリア</span>
+    <div style="display:flex;gap:12px;align-items:center">
+      <span onclick="clearAllExcl()" style="font-size:12px;color:var(--rd);cursor:pointer">全解除</span>
+      <button onclick="closeExclSheet()" style="background:none;border:none;color:var(--tx2);font-size:20px;cursor:pointer;line-height:1">✕</button>
+    </div>
+  </div>
+  <div id="excl-list"></div>
+  <p style="font-size:11px;color:var(--tx2);margin-top:12px">スポット一覧の🚫ボタンでエリアを除外できます</p>
+</div>
+<main>
+  <div id="geo-status" style="display:none;font-size:11px;color:var(--mu);padding:4px 12px;text-align:center"></div>
+  <div class="data-bar" id="data-bar" style="display:none">
+    <div class="data-info">📊 <b id="rec-count">-</b>件 ｜ 更新: <span id="last-update">-</span></div>
+    <button class="refresh-btn" id="refresh-btn">🔄 更新</button>
+  </div>
+
+  <div class="tab-row">
+    <button class="tabBtn on" id="tab-r" onclick="swTab('r')">🎯 近くのスポット</button>
+    <button class="tabBtn" id="tab-h" onclick="swTab('h')">🔥 エリア別</button>
+    <button class="tabBtn" id="tab-m" onclick="swTab('m')">🗺️ 地図</button>
+  </div>
+  <div id="pg-r">
+    <div class="gps-box">
+      <div class="gps-top">
+        <span style="font-size:20px">📍</span>
+        <div><div class="loc-label">現在地</div><div class="loc-name" id="locname">未設定</div></div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-g" id="gpsbtn">📡 GPS取得</button>
+        <button class="btn btn-b" id="areabtn">🗺️ エリア選択</button>
+      </div>
+      <div class="err" id="errbox"><span id="errtxt"></span><br><button class="err-btn" id="errcls">閉じる</button></div>
+    </div>
+    <div class="ctrl">
+      <div class="cr">
+        <span class="cl">検索半径</span>
+        <input type="range" id="rs" min="1" max="5" value="1" style="--p:0%">
+        <span class="cv" id="rv">1km</span>
+      </div>
+      <div class="chips" id="tc">
+        <button class="chip on" data-o="0">今すぐ</button>
+        <button class="chip" data-o="1">+1h</button>
+        <button class="chip" data-o="2">+2h</button>
+        <button class="chip" data-o="3">+3h</button>
+        <button class="chip" data-o="-1">-1h</button>
+        <button class="chip" data-o="-2">-2h</button>
+      </div>
+    </div>
+    <div class="wx-bar" id="wx-bar" style="display:none">
+      <div class="wx-icon" id="wx-icon">🌤️</div>
+      <div style="flex:1"><div class="wx-temp" id="wx-temp">--°C</div><div class="wx-desc" id="wx-desc">-</div></div>
+      <div class="wx-rain" id="wx-rain" style="display:none"></div>
+      <div id="day-type-badge" style="font-size:10px;font-weight:700;flex-shrink:0;padding:3px 8px;border-radius:20px;background:rgba(88,166,255,.08);border:1px solid rgba(88,166,255,.3);color:var(--bl)"></div>
+      <div id="time-range-badge" style="font-size:10px;color:var(--mu);flex-shrink:0;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid var(--bd)"></div>
+    </div>
+    <div class="filter-sect">
+      <div class="filter-label">ステータス</div>
+      <div class="frow" id="fc-status">
+        <button class="fbtn on-all" data-ft="status" data-v="all">すべて</button>
+        <button class="fbtn" data-ft="status" data-v="GO">🟢 GO</button>
+        <button class="fbtn" data-ft="status" data-v="スマ配">📱 スマ配</button>
+        <button class="fbtn" data-ft="status" data-v="流し">🚕 流し</button>
+      </div>
+      <div class="filter-label">料金</div>
+      <div class="frow" id="fc-fare">
+        <button class="fbtn on-all" data-ft="fare" data-v="all">すべて</button>
+        <button class="fbtn" data-ft="fare" data-v="0">¥2,999以下</button>
+        <button class="fbtn" data-ft="fare" data-v="1">¥3,000〜4,999</button>
+        <button class="fbtn" data-ft="fare" data-v="2">¥5,000〜9,999</button>
+        <button class="fbtn" data-ft="fare" data-v="3">¥10,000以上</button>
+      </div>
+      <div class="filter-label">サンキュー</div>
+      <div class="frow" id="fc-sk">
+        <button class="fbtn on-all" data-ft="sk" data-v="all">すべて</button>
+        <button class="fbtn" data-ft="sk" data-v="sk_only">🎫 サンキューのみ</button>
+        <button class="fbtn" data-ft="sk" data-v="normal_sk">通常＋サンキュー</button>
+        <button class="fbtn" data-ft="sk" data-v="normal_sk_pt">通常＋サンキュー＋プレタク</button>
+        <button class="fbtn" data-ft="sk" data-v="ptP_only">⭐ プレタクPのみ</button>
+      </div>
+    </div>
+    <div class="sec">近くのスポット</div>
+    <div id="rl"><div class="loading"><span class="spin">⏳</span> 読み込み中...</div></div>
+  </div>
+  <div id="pg-h" style="display:none">
+    <div class="chips" id="dc" style="margin-bottom:10px">
+      <button class="chip on" data-d="today">今日</button>
+      <button class="chip" data-d="月">月</button>
+      <button class="chip" data-d="火">火</button>
+      <button class="chip" data-d="水">水</button>
+      <button class="chip" data-d="木">木</button>
+      <button class="chip" data-d="金">金</button>
+      <button class="chip" data-d="土">土</button>
+      <button class="chip" data-d="日">日</button>
+    </div>
+    <div class="sec">エリア別ランキング</div>
+    <div id="hl"><div class="loading"><span class="spin">⏳</span> 読み込み中...</div></div>
+  </div>
+  <!-- 地図パネル -->
+  <div id="pg-m" style="display:none">
+    <div id="spot-map" style="height:calc(100vh - 220px);width:100%;border-radius:12px;overflow:hidden"></div>
+  </div>
+</main>
 <script>
-window.onerror=function(msg,src,line,col,err){
-  var el=document.getElementById('err-overlay');
-  if(el){el.style.display='block';el.textContent+='ERROR: '+msg+'\n@'+src+':'+line+'\n\n';}
-  return false;
-};
-window.addEventListener('unhandledrejection',function(e){
-  var el=document.getElementById('err-overlay');
-  if(el){el.style.display='block';el.textContent+='PROMISE: '+e.reason+'\n\n';}
-});
-
-// ========== ボトムシート ドラッグ ==========
-(function(){
-  var sheet = document.getElementById('bottom-sheet');
-  var vh = window.innerHeight;
-  var SNAP = {col: 64, half: Math.round(vh * 0.45), full: Math.round(vh * 0.88)};
-  var startY, startH, dragging = false;
-
-  function setH(h, animate){
-    if(animate) sheet.style.transition = 'height .3s cubic-bezier(.4,0,.2,1)';
-    else sheet.style.transition = 'none';
-    sheet.style.height = h + 'px';
-    updateFloatPos(h);
-  }
-
-  function updateFloatPos(sheetH){
-    var fl = document.getElementById('float-loc');
-    if(fl) fl.style.bottom = (sheetH + 12) + 'px';
-    if(_mapInited && _leafMap) setTimeout(function(){_leafMap.invalidateSize();},50);
-  }
-
-  function snapTo(h){
-    var mid1 = (SNAP.col + SNAP.half) / 2;
-    var mid2 = (SNAP.half + SNAP.full) / 2;
-    var target = h < mid1 ? SNAP.col : h < mid2 ? SNAP.half : SNAP.full;
-    setH(target, true);
-    // 地図リサイズ
-    if(window._leafMap) setTimeout(function(){window._leafMap.invalidateSize();}, 350);
-  }
-
-  // 初期状態
-  setH(SNAP.half, false);
-
-  var handle = document.getElementById('sheet-handle-area');
-  handle.addEventListener('touchstart', function(e){
-    startY = e.touches[0].clientY;
-    startH = sheet.offsetHeight;
-    dragging = true;
-  }, {passive: true});
-
-  document.addEventListener('touchmove', function(e){
-    if(!dragging) return;
-    var dy = startY - e.touches[0].clientY;
-    var newH = Math.min(Math.max(startH + dy, SNAP.col), SNAP.full);
-    setH(newH, false);
-  }, {passive: true});
-
-  document.addEventListener('touchend', function(){
-    if(!dragging) return;
-    dragging = false;
-    snapTo(sheet.offsetHeight);
-  });
-
-  window._sheetSnap = function(target){ setH(SNAP[target]||SNAP.half, true); };
-  window._updateFloatPos = updateFloatPos;
-  window._SNAP = SNAP;
-})();
-
-// ========== フィルターシート ==========
-function openFilterSheet(){
-  document.getElementById('filter-sheet').style.display = 'block';
-  document.getElementById('filter-overlay').style.display = 'block';
-}
-function closeFilterSheet(){
-  document.getElementById('filter-sheet').style.display = 'none';
-  document.getElementById('filter-overlay').style.display = 'none';
-}
-
-// ========== タブ切替 ==========
-function swTab(t){
-  document.getElementById('tab-r').classList.toggle('on', t==='r');
-  document.getElementById('tab-h').classList.toggle('on', t==='h');
-  document.getElementById('pg-r').style.display = t==='r' ? '' : 'none';
-  document.getElementById('pg-h').style.display = t==='h' ? '' : 'none';
-  if(t==='h') renderHot();
-  if(t==='r' && window._leafMap) setTimeout(function(){window._leafMap.invalidateSize();}, 50);
-}
-
-// ========== メインJS ==========
-
 var COORDS={};
 var WARD={
 '港区':[35.6581,139.7514],'渋谷区':[35.6637,139.7033],'新宿区':[35.6896,139.6997],
@@ -750,9 +690,7 @@ function loadData(url,isRefresh){
       updateDataBar(parsed.rows.length,new Date());
       document.getElementById('st').textContent='📍 現在地を設定してください';
       if(btn)btn.disabled=false;
-      try{renderRadar();}catch(e2){throw new Error('renderRadar: '+e2.message);}
-      try{renderHot();}catch(e3){throw new Error('renderHot: '+e3.message);}
-      try{if(_mapInited)_buildMap();else refreshMapPins();}catch(e4){}
+      renderRadar();renderHot();
     })
     .catch(function(err){
       var cached=loadCache();
@@ -761,7 +699,7 @@ function loadData(url,isRefresh){
         document.getElementById('st').textContent='⚠️ オフライン（キャッシュ使用）';
         if(btn)btn.disabled=false;renderRadar();renderHot();
       }else{
-        document.getElementById('st').textContent='❌ '+err.message;
+        document.getElementById('st').textContent='❌ 読み込み失敗';
         document.getElementById('rl').innerHTML='<div class="empty"><span>❌</span><p>読み込み失敗<br>URLと公開設定を確認してください</p></div>';
         if(btn)btn.disabled=false;
       }
@@ -1496,59 +1434,6 @@ document.getElementById('setup-save').addEventListener('click',doSaveSetup);
   });
 })();
 
-
-
-// ========== 地図（遅延初期化） ==========
-function refreshMapPins(){
-  if(window.L){ _initAndBuild(); }
-}
-function _initAndBuild(){
-  if(!_mapInited){
-    var spots=window._spots;
-    var cx=uLat||(spots&&spots[0]&&spots[0].lat)||35.6812;
-    var cy=uLng||(spots&&spots[0]&&spots[0].lng)||139.7671;
-    _leafMap=L.map('spot-map',{zoomControl:false}).setView([cx,cy],13);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-      attribution:'© OpenStreetMap © CARTO',maxZoom:19
-    }).addTo(_leafMap);
-    L.control.zoom({position:'topright'}).addTo(_leafMap);
-    _mapInited=true;
-    setTimeout(function(){
-      _leafMap.invalidateSize();
-      _buildMap();
-    },300);
-  } else {
-    _leafMap.invalidateSize();
-    _buildMap();
-  }
-}
-// ===== v2 地図即時初期化 =====
-(function(){
-  if(!window.L) return;
-  var el = document.getElementById('spot-map');
-  if(!el||_mapInited) return;
-  try{
-    // 明示的にピクセル高さをセット
-    el.style.height = window.innerHeight + 'px';
-    _leafMap = L.map('spot-map',{zoomControl:false,fadeAnimation:false,markerZoomAnimation:false}).setView([35.6812,139.7671],13);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-      attribution:'© OpenStreetMap © CARTO',maxZoom:19
-    }).addTo(_leafMap);
-    L.control.zoom({position:'topright'}).addTo(_leafMap);
-    _mapInited=true;
-  }catch(e){console.error('map init:',e);}
-})();
-
-// ===== v2用パッチ：tab-m/pg-mを参照しない安全版に上書き =====
-swTab = function(t){
-  var tr=document.getElementById('tab-r'),th=document.getElementById('tab-h');
-  var pr=document.getElementById('pg-r'),ph=document.getElementById('pg-h');
-  if(tr)tr.classList.toggle('on',t==='r');
-  if(th)th.classList.toggle('on',t==='h');
-  if(pr)pr.style.display=t==='r'?'':'none';
-  if(ph)ph.style.display=t==='h'?'':'none';
-  if(t==='h')renderHot();
-};
 </script>
 </body>
 </html>
