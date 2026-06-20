@@ -913,8 +913,8 @@ function _buildMap(){
   if(!_mapInited){
     var cx=uLat||spots[0].la,cy=uLng||spots[0].ln;
     _leafMap=L.map('spot-map',{zoomControl:true}).setView([cx,cy],14);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-      attribution:'© OpenStreetMap © CARTO',maxZoom:19
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
+      attribution:'© OpenStreetMap © CARTO',maxZoom:18,subdomains:'abcd',crossOrigin:true
     }).addTo(_leafMap);
     _mapInited=true;
   }
@@ -1452,8 +1452,8 @@ renderMap = function(){
     if(el) el.innerHTML='';
     try{
       _leafMap=L.map('spot-map',{zoomControl:false}).setView([35.6812,139.7671],13);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-        attribution:'© OpenStreetMap © CARTO',maxZoom:19
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
+        attribution:'© OpenStreetMap © CARTO',maxZoom:18,subdomains:'abcd',crossOrigin:true
       }).addTo(_leafMap);
       _mapInited=true;
       setTimeout(function(){_leafMap.invalidateSize();},200);
