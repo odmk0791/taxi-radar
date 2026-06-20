@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-21T06:07:52.608236+09:00",
+  "fetched_at": "2026-06-21T08:00:13.577032+09:00",
   "date": "20260621",
   "count": 20,
   "events": [
@@ -314,37 +314,6 @@
       "updated_at": "2026-06-08T12:01:34+09:00"
     },
     {
-      "id": 395048,
-      "title": "子どものためのプログラミング道場【CoderDojo日野】第19回",
-      "catch": "",
-      "description": "<h1><font color=\"blue\">6月も自由テーマ！　事前に「やりたいこと」を考えて来よう</font></h1>\n<p><strong>自分でテーマを決めて自由にチャレンジ。作品の発表にも挑戦</strong></p>\n<ul>\n<li><strong>Scratch、Python、ゲーム、アニメーション、アート、音楽、サイエンス、microbit…何でもOK</strong>  </li>\n<li><strong>自分のアイデアをカタチに</strong>  </li>\n</ul>\n<p><strong>やりたいことが決まらなくても大丈夫。</strong><br>\n<strong>テーマ例も用意しています。そこから選んでもOK</strong>  </p>\n<p><font color=\"red\">自由テーマですが、特に<strong>Pythonの学習</strong>を希望されれる方は、アンケートの『こんなことをやりたい』に<strong>Python</strong>と記入していただくか、メールでお知らせください!</font></p>\n<p><strong><font color=\"blue\">プログラミング初心者も歓迎。初歩からサポートします！</font></strong></p>\n<h2></h2>\n<h1><font color=\"blue\">CoderDojo日野に来て、楽しくプログラミングで遊ぼう！</font></h1>\n<p><strong>CoderDojo日野は、無料で参加できる子どものためのプログラミング道場です。初心者向けのプログラミング言語scratchを使用して、ゲームやアニメーション作りにチャレンジしましょう。</strong></p>\n<ul>\n<li><strong>「いろいろなプログラムを作成してみたい！」</strong> </li>\n<li><strong>「もっと技術を習得したい！」</strong></li>\n<li><strong>「今、プログラミンで悩んでいることを相談したい！」</strong> </li>\n</ul>\n<p><strong>と思っている方、ぜひ参加してください。<br>\n<font color=\"red\">もちろんscratchが初めての人には基礎から丁寧に指導しますので安心してください。</font></strong><br>\n<strong>※電子工作も始めました。今後、ご希望に応じて様々なテーマを計画していきます。</strong></p>\n<p><strong>CoderDojoの基本方針は『自学自習』です。教えてもらう場ではなく、勉強の成果を発表できる場所と考えてください。<br>必要に応じてメンターがサポートしますが、事前にやりたいことを考え、自由に自分の好きな作品を作り、最後にみんなで作品を発表し、共有しましょう。</strong></p>\n<h1><font color=\"blue\">会場</font></h1>\n<p><strong>日野市立ひの市民活動支援センタ分館<br>中央線豊田駅北口から徒歩6分,  詳細は右側の地図参照<br><font color=\"black\">(注)経路上に支援センタ”本館”がありますが、会場は分館ですのでお間違えの無い様ご注意ください。</font></strong></p>\n<h1><font color=\"blue\">参加申し込み</font></h1>\n<p><strong>・参加費：無料<br>・このConnpassの「イベントに申し込む」から申し込んでください。<br>　※Connpassにユーザー登録が必要です。<br>・参加できなくなった場合は早めにキャンセル登録をお願いします。</strong></p>\n<h1><font color=\"blue\">参加条件</font></h1>\n<ul>\n<li><strong>7歳～17歳<br>    ※安全最優先のため、小学生のお子さまは<font color=\"red\">保護者の方同伴</font>でご参加ください。</strong></li>\n<li><strong>保護者の会場参加は任意ですがPCの操作に不慣れなお子様の場合は、是非ご一緒に参加をお願いします。</strong></li>\n<li>__ 会場までの移動は保護者の責任でお願いします。__</li>\n<li><strong>車で来られる場合、近隣の駐車場をご利用ください。分館の駐車場は、お体の不自由な方、又は荷物の出し入れ時のみ利用可能です。</strong></li>\n<li><strong>インターネットにつながるパソコンをご持参ください。<br>   ※貸出用のパソコンを用意していますが台数に限りがあります。</strong></li>\n</ul>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">　時間</th>\n<th style=\"text-align: left;\">　　　内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">9:45</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">10:00</td>\n<td style=\"text-align: left;\">オリエンテーション 　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">10:10～</td>\n<td style=\"text-align: left;\">プログラミング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">11:30～</td>\n<td style=\"text-align: left;\">発表</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">12:00～</td>\n<td style=\"text-align: left;\">片付け・解散</td>\n</tr>\n</tbody>\n</table>\n<p><font color=\"red\">令和7年度の4月以降の開催は原則第3日曜日の午前中、場所は支援センタ分館になりますが、今後変更になる場合もありますので、申し込み時に確認をお願いします。</font></p>\n<h2>ご準備いただくもの</h2>\n<p><strong>・インターネットにつながるパソコン（Windos, Mac, chromeBook）<br></strong>\n<strong>・ACアダプタ、マウス等<br></strong>\n<strong>・WEBブラウザ「Edge または Chrome」等がインストールされていること<br></strong></p>\n<h2>問い合わせメールアドレス</h2>\n<p><font color=\"blue\">coderdojo.hino@gmail.com</font></p>",
-      "url": "https://coderdojo-hino.connpass.com/event/395048/",
-      "image_url": "https://media.connpass.com/thumbs/2f/e8/2fe803f5dd141fd17ed02fce40f57103.png",
-      "hash_tag": "",
-      "started_at": "2026-06-21T10:00:00+09:00",
-      "ended_at": "2026-06-21T12:00:00+09:00",
-      "published_at": "2026-05-25T17:52:52+09:00",
-      "limit": 14,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 15409,
-        "subdomain": "coderdojo-hino",
-        "title": "CoderDojo日野",
-        "url": "https://coderdojo-hino.connpass.com/"
-      },
-      "address": "〒191-0062 日野市多摩平1-14-95",
-      "place": "日野市立ひの市民活動支援センター分館",
-      "lat": "35.661480000000",
-      "lon": "139.378187700000",
-      "owner_id": 885202,
-      "owner_nickname": "coderdojo_hino",
-      "owner_display_name": "coderdojo_hino",
-      "accepted": 11,
-      "waiting": 0,
-      "updated_at": "2026-06-20T15:23:25+09:00"
-    },
-    {
       "id": 397423,
       "title": "非公式 RevenueCat 課金実装 ガチもく会",
       "catch": "",
@@ -405,6 +374,37 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-06-20T10:49:47+09:00"
+    },
+    {
+      "id": 395048,
+      "title": "子どものためのプログラミング道場【CoderDojo日野】第19回",
+      "catch": "",
+      "description": "<h1><font color=\"blue\">6月も自由テーマ！　事前に「やりたいこと」を考えて来よう</font></h1>\n<p><strong>自分でテーマを決めて自由にチャレンジ。作品の発表にも挑戦</strong></p>\n<ul>\n<li><strong>Scratch、Python、ゲーム、アニメーション、アート、音楽、サイエンス、microbit…何でもOK</strong>  </li>\n<li><strong>自分のアイデアをカタチに</strong>  </li>\n</ul>\n<p><strong>やりたいことが決まらなくても大丈夫。</strong><br>\n<strong>テーマ例も用意しています。そこから選んでもOK</strong>  </p>\n<p><font color=\"red\">自由テーマですが、特に<strong>Pythonの学習</strong>を希望されれる方は、アンケートの『こんなことをやりたい』に<strong>Python</strong>と記入していただくか、メールでお知らせください!</font></p>\n<p><strong><font color=\"blue\">プログラミング初心者も歓迎。初歩からサポートします！</font></strong></p>\n<h2></h2>\n<h1><font color=\"blue\">CoderDojo日野に来て、楽しくプログラミングで遊ぼう！</font></h1>\n<p><strong>CoderDojo日野は、無料で参加できる子どものためのプログラミング道場です。初心者向けのプログラミング言語scratchを使用して、ゲームやアニメーション作りにチャレンジしましょう。</strong></p>\n<ul>\n<li><strong>「いろいろなプログラムを作成してみたい！」</strong> </li>\n<li><strong>「もっと技術を習得したい！」</strong></li>\n<li><strong>「今、プログラミンで悩んでいることを相談したい！」</strong> </li>\n</ul>\n<p><strong>と思っている方、ぜひ参加してください。<br>\n<font color=\"red\">もちろんscratchが初めての人には基礎から丁寧に指導しますので安心してください。</font></strong><br>\n<strong>※電子工作も始めました。今後、ご希望に応じて様々なテーマを計画していきます。</strong></p>\n<p><strong>CoderDojoの基本方針は『自学自習』です。教えてもらう場ではなく、勉強の成果を発表できる場所と考えてください。<br>必要に応じてメンターがサポートしますが、事前にやりたいことを考え、自由に自分の好きな作品を作り、最後にみんなで作品を発表し、共有しましょう。</strong></p>\n<h1><font color=\"blue\">会場</font></h1>\n<p><strong>日野市立ひの市民活動支援センタ分館<br>中央線豊田駅北口から徒歩6分,  詳細は右側の地図参照<br><font color=\"black\">(注)経路上に支援センタ”本館”がありますが、会場は分館ですのでお間違えの無い様ご注意ください。</font></strong></p>\n<h1><font color=\"blue\">参加申し込み</font></h1>\n<p><strong>・参加費：無料<br>・このConnpassの「イベントに申し込む」から申し込んでください。<br>　※Connpassにユーザー登録が必要です。<br>・参加できなくなった場合は早めにキャンセル登録をお願いします。</strong></p>\n<h1><font color=\"blue\">参加条件</font></h1>\n<ul>\n<li><strong>7歳～17歳<br>    ※安全最優先のため、小学生のお子さまは<font color=\"red\">保護者の方同伴</font>でご参加ください。</strong></li>\n<li><strong>保護者の会場参加は任意ですがPCの操作に不慣れなお子様の場合は、是非ご一緒に参加をお願いします。</strong></li>\n<li>__ 会場までの移動は保護者の責任でお願いします。__</li>\n<li><strong>車で来られる場合、近隣の駐車場をご利用ください。分館の駐車場は、お体の不自由な方、又は荷物の出し入れ時のみ利用可能です。</strong></li>\n<li><strong>インターネットにつながるパソコンをご持参ください。<br>   ※貸出用のパソコンを用意していますが台数に限りがあります。</strong></li>\n</ul>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">　時間</th>\n<th style=\"text-align: left;\">　　　内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">9:45</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">10:00</td>\n<td style=\"text-align: left;\">オリエンテーション 　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">10:10～</td>\n<td style=\"text-align: left;\">プログラミング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">11:30～</td>\n<td style=\"text-align: left;\">発表</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">12:00～</td>\n<td style=\"text-align: left;\">片付け・解散</td>\n</tr>\n</tbody>\n</table>\n<p><font color=\"red\">令和7年度の4月以降の開催は原則第3日曜日の午前中、場所は支援センタ分館になりますが、今後変更になる場合もありますので、申し込み時に確認をお願いします。</font></p>\n<h2>ご準備いただくもの</h2>\n<p><strong>・インターネットにつながるパソコン（Windos, Mac, chromeBook）<br></strong>\n<strong>・ACアダプタ、マウス等<br></strong>\n<strong>・WEBブラウザ「Edge または Chrome」等がインストールされていること<br></strong></p>\n<h2>問い合わせメールアドレス</h2>\n<p><font color=\"blue\">coderdojo.hino@gmail.com</font></p>",
+      "url": "https://coderdojo-hino.connpass.com/event/395048/",
+      "image_url": "https://media.connpass.com/thumbs/2f/e8/2fe803f5dd141fd17ed02fce40f57103.png",
+      "hash_tag": "",
+      "started_at": "2026-06-21T10:00:00+09:00",
+      "ended_at": "2026-06-21T12:00:00+09:00",
+      "published_at": "2026-05-25T17:52:52+09:00",
+      "limit": 14,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 15409,
+        "subdomain": "coderdojo-hino",
+        "title": "CoderDojo日野",
+        "url": "https://coderdojo-hino.connpass.com/"
+      },
+      "address": "〒191-0062 日野市多摩平1-14-95",
+      "place": "日野市立ひの市民活動支援センター分館",
+      "lat": "35.661480000000",
+      "lon": "139.378187700000",
+      "owner_id": 885202,
+      "owner_nickname": "coderdojo_hino",
+      "owner_display_name": "coderdojo_hino",
+      "accepted": 10,
+      "waiting": 0,
+      "updated_at": "2026-06-20T15:23:25+09:00"
     },
     {
       "id": 394948,
@@ -593,35 +593,35 @@
       "updated_at": "2026-06-04T20:04:35+09:00"
     },
     {
-      "id": 394156,
-      "title": "第127回 (2026/6/21(日)) CoderDojo 柏の葉",
-      "catch": "",
-      "description": "<p>CoderDojo Kashowa no ha (柏の葉) を開催します。<br></p>\n<p>■受付について<br>\n以前から参加している人は、【参加したことがある人】を選んでください。<br>\nまた、CoderDojo Kashowa no ha (柏の葉)ではなく、近隣の 柏、南柏、沼南 に来た事がある人も【参加したことがある人】を選んでください。<br>\n今までにCoderDojo Kashowa no ha (柏の葉)や近隣の 柏、南柏、沼南にも来たことが無い人、または、Scratch を使ったことが無い人は、【初めて参加する人】を選んでください。<br>\n<br>\n■年齢について<br>\n7〜17歳を対象としています。<br>\n見学という事でしたら、それ以外の年齢の方も受け付けています。<br>\n事前に見学である事をお知らせいただけますと助かります。<br></p>\n<p>■当日について<br>\n【時間】10:00～ 12:00 時間に遅れないようにお願いします。<br>\n【場所】KOILスタジオ(ららぽーと柏の葉北館6F)<br>\n【最寄り駅】つくばエクスプレス線 柏の葉キャンパス駅<br></p>\n<p>KOIL の紹介<br>\n<a href=\"https://www.koil.jp/</br>\" rel=\"nofollow\">https://www.koil.jp/<br></a>\n<br>\n会場へのお問い合わせは、ご遠慮ください。<br>\n当日の欠席や遅刻の連絡も会場ではなく、「イベントへのお問い合わせ」にてお願いいたします。\n<br>\n<br>パソコンを持参できる方は会場に持ってきてください。<br>\nパソコンの貸し出しを希望される方は、「イベントへのお問い合わせ」からお知らせください。3台と限りがありますが、お貸しできます\n<br>\n<br>\nそれ以外にご不明な点等ございましたら、お問い合わせください。\n<br><br>\nそれでは当日お会いできることを楽しみにしています。<br>\n子どものためのプログラミング道場<br>\nCoderDojo Kashiwa <br>\n<br>\nCoderDojo については、以下の CoderDojo Japan のサイトを参考ください<br>\n<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">https://coderdojo.jp/</a></p>",
-      "url": "https://kashiwa-no-ha.connpass.com/event/394156/",
-      "image_url": null,
-      "hash_tag": "",
-      "started_at": "2026-06-21T10:00:00+09:00",
-      "ended_at": "2026-06-21T12:00:00+09:00",
-      "published_at": "2026-05-17T11:59:28+09:00",
-      "limit": 15,
+      "id": 391432,
+      "title": "朝霞IT勉強会 #52 〜Remote でもくもく",
+      "catch": "朝霞IT勉強",
+      "description": "<h1>朝霞IT勉強会とは</h1>\n<p>ITの勉強会を都心以外でも開きたいと思い立ち上げました！\n東武東上線朝霞台駅周辺で行う勉強会です。ふだんは市の施設をお借りして、カジュアルに</p>\n<ul>\n<li>もくもく会</li>\n<li>LT会</li>\n</ul>\n<p>なんかを実施しています。  </p>\n<h1>アジェンダ</h1>\n<p>今回もGoogle Meetを使ってリモートで実施します。\nGoogle MeetのURLは前日にconnpassからのメールでお知らせします。\n加えて、当日に朝霞IT勉強会のSlackでも共有します。\nいつもの市民センターは予約していませんので、お間違えのないようお願いします。</p>\n<p>今回はLT無しの「もくもく」のみで行きたいと思います。\nもくもくの間は、いつもどおり画面を共有するタイミングを設けようかと思います。（強制はしません）</p>\n<p>もし話したいことがあれば、飛び込みのLTも大歓迎です！</p>\n<p>13:00~13:10 受付<br>\n13:10~13:15 はじめに<br>\n13:15~13:20 自己紹介<br>\n13:20~16:00 もくもく<br>\n16:00~16:25 成果発表 / そろそろオフライン会の調整をしたい\n16:30 完全撤収  </p>\n<h1>対象者</h1>\n<ul>\n<li>ITに興味のある方</li>\n<li>勉強会、もくもく会に参加してみたいけどちょっと怖いという方</li>\n<li>勉強会に参加したいけど、都内はちょっと遠い、、、という埼玉勢</li>\n</ul>\n<h1>参加費用</h1>\n<ul>\n<li>無料</li>\n</ul>\n<h1>会場案内</h1>\n<h2>場所</h2>\n<ul>\n<li>Google Meet（当日お昼までに、メール or Slack で URL を連絡します）<br>\n朝霞IT勉強会のSlackに参加されていない方は、下記連絡手段からワークスペースへの参加を依頼してください。</li>\n</ul>\n<h2>連絡手段</h2>\n<ul>\n<li>slackを用意してみました。</li>\n<li>当日に呟く場として使ってみますので、<a href=\"https://join.slack.com/t/asaka-it-study/shared_invite/zt-fy11oso3-3Kt4IVeXsa1OtVsSG7gURQ\" rel=\"nofollow\">こちら</a>からどうぞ</li>\n</ul>\n<h1>その他</h1>\n<ul>\n<li>お時間ありましたら、希望者で懇親会しましょう。</li>\n<li>イベント画像、アイコン募集中です。</li>\n</ul>",
+      "url": "https://asaka-it.connpass.com/event/391432/",
+      "image_url": "https://media.connpass.com/thumbs/a8/b7/a8b79ffd8101480628efb65f445d5a28.png",
+      "hash_tag": "asaka_it_study",
+      "started_at": "2026-06-21T13:00:00+09:00",
+      "ended_at": "2026-06-21T16:30:00+09:00",
+      "published_at": "2026-06-08T11:01:35+09:00",
+      "limit": 10,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
-        "id": 15705,
-        "subdomain": "kashiwa-no-ha",
-        "title": "CoderDojo柏の葉",
-        "url": "https://kashiwa-no-ha.connpass.com/"
+        "id": 4672,
+        "subdomain": "asaka-it",
+        "title": "朝霞IT勉強会グループ",
+        "url": "https://asaka-it.connpass.com/"
       },
-      "address": "千葉県柏市若柴178-4",
-      "place": "KOIL",
-      "lat": "35.895519200000",
-      "lon": "139.951149200000",
-      "owner_id": 116459,
-      "owner_nickname": "KenIcs",
-      "owner_display_name": "KenIcs",
-      "accepted": 3,
+      "address": "",
+      "place": "Google Meet",
+      "lat": "35.812323000000",
+      "lon": "139.581869000000",
+      "owner_id": 34655,
+      "owner_nickname": "Yutako0217kawa",
+      "owner_display_name": "yutako",
+      "accepted": 2,
       "waiting": 0,
-      "updated_at": "2026-05-17T11:59:28+09:00"
+      "updated_at": "2026-06-08T11:01:35+09:00"
     }
   ]
 }
