@@ -1443,6 +1443,25 @@ document.getElementById('setup-save').addEventListener('click',doSaveSetup);
   });
 })();
 
+// v2パッチ: スポットなしでも地図初期化
+var _orig_renderMap = renderMap;
+renderMap = function(){
+  _orig_renderMap();
+  if(window.L && !_mapInited){
+    var el=document.getElementById('spot-map');
+    if(el) el.innerHTML='';
+    try{
+      _leafMap=L.map('spot-map',{zoomControl:false}).setView([35.6812,139.7671],13);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+        attribution:'© OpenStreetMap © CARTO',maxZoom:19
+      }).addTo(_leafMap);
+      _mapInited=true;
+      setTimeout(function(){_leafMap.invalidateSize();},200);
+    }catch(e){}
+  }
+};
+// ページロード後にも一度地図を初期化
+setTimeout(function(){if(window.L)renderMap();},800);
 </script>
 </body>
 </html>
