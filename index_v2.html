@@ -1443,25 +1443,47 @@ document.getElementById('setup-save').addEventListener('click',doSaveSetup);
   });
 })();
 
-// v2パッチ: スポットなしでも地図初期化
-var _orig_renderMap = renderMap;
+// v2パッチ: renderMapを完全に置き換え（_buildMapのinnerHTML破壊を防ぐ）
 renderMap = function(){
-  _orig_renderMap();
   if(window.L && !_mapInited){
-    var el=document.getElementById('spot-map');
-    if(el) el.innerHTML='';
+    // 初回: 地図を作成
     try{
       _leafMap=L.map('spot-map',{zoomControl:false}).setView([35.6812,139.7671],13);
       L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
         attribution:'© OpenStreetMap © CARTO',maxZoom:18,subdomains:'abcd',crossOrigin:true
       }).addTo(_leafMap);
+      L.control.zoom({position:'topright'}).addTo(_leafMap);
       _mapInited=true;
-      setTimeout(function(){_leafMap.invalidateSize();},200);
-    }catch(e){}
+    }catch(e){
+      if(e.message&&e.message.indexOf('already')>=0) _mapInited=true;
+    }
+  }
+  // スポットがある場合のみピンを追加（innerHTML破壊しない）
+  if(_mapInited && _leafMap && window._spots && window._spots.length){
+    _mapMarkers.forEach(function(m){_leafMap.removeLayer(m);});
+    _mapMarkers=[];
+    window._spots.forEach(function(s,i){
+      if(!s.lat||!s.lng) return;
+      var color=i<3?'#f85149':i<10?'#d29922':'#39d353';
+      var label=s.n.replace(/[一二三四五六七八九十]丁目$/,'').slice(0,5);
+      var icon=L.divIcon({className:'',
+        html:'<div style="text-align:center"><div style="width:34px;height:34px;border-radius:50%;background:'+color+';color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.5);margin:0 auto">'+(i+1)+'</div><div style="background:rgba(0,0,0,.75);color:#fff;font-size:10px;font-weight:600;padding:1px 4px;border-radius:4px;margin-top:2px;white-space:nowrap">'+label+'</div></div>',
+        iconSize:[70,50],iconAnchor:[35,17]});
+      var d=uLat&&uLng?Math.round(km(uLat,uLng,s.lat,s.lng)*10)/10:null;
+      var navUrl='https://www.google.com/maps/dir/?api=1&destination='+s.lat+','+s.lng+'&travelmode=driving';
+      var popup='<b>'+s.w+' '+s.n+'</b><br>🏆 '+Math.round(s.c)+'件'+(d?' 📍 '+d+'km':'')+'<br><a href="'+navUrl+'" style="display:inline-block;margin-top:6px;padding:4px 12px;background:#39d353;color:#000;border-radius:12px;font-size:12px;font-weight:700;text-decoration:none">🗺 ナビ開始</a>';
+      var marker=L.marker([s.lat,s.lng],{icon:icon}).addTo(_leafMap).bindPopup(popup);
+      _mapMarkers.push(marker);
+    });
+    if(uLat&&uLng){
+      var userIcon=L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:#58a6ff;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4)"></div>',iconSize:[14,14],iconAnchor:[7,7]});
+      _mapMarkers.push(L.marker([uLat,uLng],{icon:userIcon}).addTo(_leafMap).bindPopup('現在地'));
+    }
+    setTimeout(function(){_leafMap.invalidateSize();},100);
   }
 };
-// ページロード後にも一度地図を初期化
-setTimeout(function(){if(window.L)renderMap();},800);
+// ページロード後に地図を初期化（データより先に）
+setTimeout(function(){if(window.L && !_mapInited) renderMap();},300);
 </script>
 </body>
 </html>
