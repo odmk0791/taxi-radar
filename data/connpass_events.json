@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-21T11:56:24.862799+09:00",
+  "fetched_at": "2026-06-21T16:57:42.275319+09:00",
   "date": "20260621",
   "count": 19,
   "events": [
@@ -32,7 +32,7 @@
       "owner_display_name": "ko_mo_san",
       "accepted": 1,
       "waiting": 0,
-      "updated_at": "2026-05-31T16:05:57+09:00"
+      "updated_at": "2026-06-21T15:08:34+09:00"
     },
     {
       "id": 397256,
@@ -45,7 +45,7 @@
       "started_at": "2026-06-21T18:00:00+09:00",
       "ended_at": "2026-06-21T20:00:00+09:00",
       "published_at": "2026-06-13T20:00:53+09:00",
-      "limit": 12,
+      "limit": 14,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -61,9 +61,9 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 11,
+      "accepted": 12,
       "waiting": 0,
-      "updated_at": "2026-06-21T03:49:44+09:00"
+      "updated_at": "2026-06-21T16:24:35+09:00"
     },
     {
       "id": 397289,
@@ -109,7 +109,7 @@
       "published_at": "2026-05-30T17:01:39+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16152,
         "subdomain": "atsumaru-mokumoku",
@@ -140,7 +140,7 @@
       "published_at": "2026-05-25T14:23:07+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15549,
         "subdomain": "yuru-engineer",
@@ -171,7 +171,7 @@
       "published_at": "2026-06-09T13:00:00+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4032,
         "subdomain": "iotlab",
@@ -202,7 +202,7 @@
       "published_at": "2026-05-17T14:48:55+09:00",
       "limit": 80,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14543,
         "subdomain": "aid",
@@ -216,7 +216,7 @@
       "owner_id": 28038,
       "owner_nickname": "koji_yamaoka_7",
       "owner_display_name": "kozzy",
-      "accepted": 43,
+      "accepted": 38,
       "waiting": 0,
       "updated_at": "2026-06-02T15:18:41+09:00"
     },
@@ -231,9 +231,9 @@
       "started_at": "2026-06-21T13:00:00+09:00",
       "ended_at": "2026-06-21T16:00:00+09:00",
       "published_at": "2026-05-24T18:01:14+09:00",
-      "limit": 30,
+      "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16280,
         "subdomain": "ai-meetup",
@@ -248,8 +248,8 @@
       "owner_nickname": "T-Kawate",
       "owner_display_name": "T-Kawate",
       "accepted": 24,
-      "waiting": 1,
-      "updated_at": "2026-05-26T06:59:18+09:00"
+      "waiting": 0,
+      "updated_at": "2026-06-21T12:21:01+09:00"
     },
     {
       "id": 397241,
@@ -262,9 +262,9 @@
       "started_at": "2026-06-21T13:00:00+09:00",
       "ended_at": "2026-06-21T17:00:00+09:00",
       "published_at": "2026-06-13T15:15:44+09:00",
-      "limit": 12,
+      "limit": 14,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -278,9 +278,9 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 10,
+      "accepted": 12,
       "waiting": 0,
-      "updated_at": "2026-06-21T11:56:14+09:00"
+      "updated_at": "2026-06-21T12:41:17+09:00"
     },
     {
       "id": 390105,
@@ -357,7 +357,7 @@
       "published_at": "2026-06-20T10:49:47+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 966,
         "subdomain": "devmorning",
@@ -388,7 +388,7 @@
       "published_at": "2026-05-25T17:52:52+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15409,
         "subdomain": "coderdojo-hino",
@@ -438,37 +438,6 @@
       "updated_at": "2026-06-08T21:21:17+09:00"
     },
     {
-      "id": 394948,
-      "title": "第40回CoderDojoたまち",
-      "catch": "東京都港区 田町駅周辺でみんなでプログラミングを楽しもう",
-      "description": "<h1>第40回CoderDojoたまち</h1>\n<h2>CoderDojoとは</h2>\n<p>CoderDojo は、主に7〜17歳を対象とした地域のボランティアで運営される非営利のプログラミング道場です。2011年にアイルランドから始まり、世界では112カ国・2,200以上の道場、日本には221以上の道場があります。日本では2012年4月に東京で初めて開催されました。CoderDojo は全国各地で定期的に開催されており、延べ10,000人以上の子ども達が毎年楽しみながら様々な作品を創っています。CoderDojoでは、先生が教えるのではなく、子供たちが自分のやりたいことに取り組み、分からないことは子供たち同士で教え合ったり、メンターがサポートします。</p>\n<p>※是非事前にガイダンス資料をご確認いただき、道場の雰囲気や考えをご理解ください→<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">CoderDojo Japan</a></p>\n<p>CoderDojo たまちでは、Scratch、Hour of Code、電子工作(IoT)、Webアプリケーション開発、スマートフォンアプリ開発などを行うことができます。</p>\n<p>プログラミングが初めてのお子さん、プログラミングに興味があるお子さんも是非お気軽にご参加ください。</p>\n<h2>各種感染症対策について</h2>\n<p>新型コロナやインフルエンザ感染対策に十分に注意しながらオフラインでのCoderDojoを実施します。\n全ての人が安心安全な空間を作るためにも、個々人の判断でのマスクの着用、会場入り口での手指の消毒、密にならないなど予防にご協力いただければと存じます。\n※感染状況が急激に悪化した場合など、安全のためイベントを中止とすることがあります。</p>\n<h2>参加資格</h2>\n<ul>\n<li>対象　：小学生、中学生、高校生 (※小学生までは開催中可能な限り保護者付き添いをお願いします。)</li>\n<li>持ち物：Wi-Fi接続可能なノートパソコン（iPadなどタブレット\nでもOK）</li>\n<li>※マウス&amp;マウスパッド等お持ちいただけると良いです。</li>\n<li>定員　：10名</li>\n<li>費用　：無料 (お気持ちで結構ですので寄付して頂けると助かります)</li>\n</ul>\n<h2>開催日時、場所</h2>\n<ul>\n<li>日時：2026/6/21(日) 09:30-11:30(09:15 受付開始)</li>\n<li>場所：三田いきいきプラザ(〒108-0014　東京都港区芝4-1-17）集会室C</li>\n<li>アクセス方法：<a href=\"https://shiba-ikiiki.com/mita/access/\" rel=\"nofollow\">こちら</a>からご確認ください</li>\n</ul>\n<h2>お申込み手順</h2>\n<h3>当ページで「このイベントを申し込む」をクリックしてください。</h3>\n<ul>\n<li>connpass上で受付管理を実施しています。connpassの会員登録がまだの方、または既に登録されている方でログインしていない方は、右上の「ログイン・会員登録」ボタンから会員登録、ログイン後お申込みをお願いいたします。</li>\n<li>会員登録の方法は<a href=\"https://help.connpass.com/basic/register.html\" rel=\"nofollow\">こちら</a>を参考にしてください。</li>\n<li>参加枠は先着順です。<strong>やむを得ずキャンセルする場合は必ず当ページにで「申し込みキャンセル」ボタンを押してください。</strong> 他の参加者が参加できなくなってしまいます。</li>\n<li><strong>ご兄弟など2人以上でご参加の場合は必ずお一人ずつご登録いただきますようよろしくお願いいたします。</strong></li>\n</ul>\n<h3>申し込み時のアンケートについて</h3>\n<ul>\n<li>お子さまの学年、お名前、保護者様のご連絡先をご入力ください。（いただいた個人情報は受付および、万一感染症や非常事態が発生した場合のご連絡のみに使用いたします。）</li>\n<li>その他簡単なアンケートにご協力をお願いいたします。</li>\n</ul>\n<h2>寄付について</h2>\n<p>CoderDojoたまちはボランティアで開催をしています。 今後の継続のため、少しでも寄付していただけると助かります。寄付金は全てCoderDojoたまちの運営費として使わせて頂きます。</p>\n<h2>撮影について</h2>\n<p>会場内では写真を撮影します。Twitterやブログ、SNSなどで利用し、インターネットで公開する場合があります。あらかじめご了承ください。</p>\n<h2>PCレンタル枠について</h2>\n<p>当日無料レンタル用のノートPCを2台用意しております。 ノートPCをお持ちでない方はレンタル枠でお申し込みください。 マウスも用意いたします。(ノートPCをお持ち)の方は必ずPC持参枠でお申し込みください。</p>\n<h2>メンターについて</h2>\n<p>CoderDojoたまちでは、一緒に子供たちをサポートしてくださるメンターの方々を大募集しています。 </p>\n<p>中学生や高校生のジュニアメンターさんも大歓迎です!興味があれば是非参加してみてください。</p>\n<p>Scratchやプログラミング自体の技術力は問いません。こども達の相談にのって一緒に考えてサポートしてくれる方、ご協力をお願いします！</p>\n<p>完全ボランティアとなります。交通費・報酬などは一切ございません。ご理解の上でご参加下さい。</p>\n<p>09:15を目処にお越し下さい。不明点はお問合せください。</p>\n<h2>その他</h2>\n<ul>\n<li>持参されるPCをプロジェクタに投影するためのコネクタやケーブル(HDMI, USB-C to HDMI)をお持ちでしたら持参願います。</li>\n<li>保護者の方は、慣れるまでは子どもをフォロー頂きつつ、一緒に取り組まれることをオススメしています。</li>\n<li>あまり保護者のフォローがいらないお子さまについては、是非子ども同士で座って欲しいため、保護者の方は後ろで見守っていただければと存じます。</li>\n</ul>\n<h2>お問い合わせ</h2>\n<p><a href=\"https://forms.gle/cGevA8DaWmGHiYdQA\" rel=\"nofollow\">こちら</a>のフォームもしくはConnpassのイベント管理者への問い合わせからお願いいたします。</p>\n<h2>免責事項</h2>\n<ul>\n<li>CoderDojoたまちの活動参加中や行き帰りなどで発生したトラブル、損失、損害、傷病、事故に対して、CoderDojoたまちは一切責任を負いません。これらに対して自己責任においてご参加くださるようお願いいたします。</li>\n</ul>\n<h2>スポンサー</h2>\n<p><a href=\"https://endorphinix.com\" rel=\"nofollow\">合同会社エンドルフィニクス</a></p>\n<p><img alt=\"合同会社エンドルフィニクス\" src=\"https://endorphinix.com/images/endorphinix-logo.png\"> </p>\n<p>ご紹介</p>\n<p>エンドルフィニクスは、山口県・徳山高専の学生および卒業生から構成されるエンジニアチームです。\n「技術の地産地消」をコンセプトに2017年にチームが発足して以来、地域の課題をメンバーが持つ技術を活かして解決する取り組みを行っています。\nCoderDojoたまちでは、会場費などの運営費やメンターとしてご支援いただいています。</p>",
-      "url": "https://coderdojo-tamachi.connpass.com/event/394948/",
-      "image_url": "https://media.connpass.com/thumbs/d7/e7/d7e7a2917a77428ddf73e767c40e0fcf.png",
-      "hash_tag": "",
-      "started_at": "2026-06-21T09:30:00+09:00",
-      "ended_at": "2026-06-21T11:30:00+09:00",
-      "published_at": "2026-05-24T09:50:38+09:00",
-      "limit": 13,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 13058,
-        "subdomain": "coderdojo-tamachi",
-        "title": "CoderDojoたまち",
-        "url": "https://coderdojo-tamachi.connpass.com/"
-      },
-      "address": "東京都港区芝4-1-17",
-      "place": "三田いきいきプラザ",
-      "lat": "35.648932300000",
-      "lon": "139.749463600000",
-      "owner_id": 731595,
-      "owner_nickname": "CoderDojoTamachi",
-      "owner_display_name": "CoderDojoTamachi",
-      "accepted": 2,
-      "waiting": 0,
-      "updated_at": "2026-05-24T09:50:38+09:00"
-    },
-    {
       "id": 396092,
       "title": "CoderDojo赤羽 #72",
       "catch": "メンターとして参加の方・ご見学も大歓迎です！お気軽に覗きに来てください",
@@ -500,6 +469,37 @@
       "updated_at": "2026-06-03T08:52:47+09:00"
     },
     {
+      "id": 394948,
+      "title": "第40回CoderDojoたまち",
+      "catch": "東京都港区 田町駅周辺でみんなでプログラミングを楽しもう",
+      "description": "<h1>第40回CoderDojoたまち</h1>\n<h2>CoderDojoとは</h2>\n<p>CoderDojo は、主に7〜17歳を対象とした地域のボランティアで運営される非営利のプログラミング道場です。2011年にアイルランドから始まり、世界では112カ国・2,200以上の道場、日本には221以上の道場があります。日本では2012年4月に東京で初めて開催されました。CoderDojo は全国各地で定期的に開催されており、延べ10,000人以上の子ども達が毎年楽しみながら様々な作品を創っています。CoderDojoでは、先生が教えるのではなく、子供たちが自分のやりたいことに取り組み、分からないことは子供たち同士で教え合ったり、メンターがサポートします。</p>\n<p>※是非事前にガイダンス資料をご確認いただき、道場の雰囲気や考えをご理解ください→<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">CoderDojo Japan</a></p>\n<p>CoderDojo たまちでは、Scratch、Hour of Code、電子工作(IoT)、Webアプリケーション開発、スマートフォンアプリ開発などを行うことができます。</p>\n<p>プログラミングが初めてのお子さん、プログラミングに興味があるお子さんも是非お気軽にご参加ください。</p>\n<h2>各種感染症対策について</h2>\n<p>新型コロナやインフルエンザ感染対策に十分に注意しながらオフラインでのCoderDojoを実施します。\n全ての人が安心安全な空間を作るためにも、個々人の判断でのマスクの着用、会場入り口での手指の消毒、密にならないなど予防にご協力いただければと存じます。\n※感染状況が急激に悪化した場合など、安全のためイベントを中止とすることがあります。</p>\n<h2>参加資格</h2>\n<ul>\n<li>対象　：小学生、中学生、高校生 (※小学生までは開催中可能な限り保護者付き添いをお願いします。)</li>\n<li>持ち物：Wi-Fi接続可能なノートパソコン（iPadなどタブレット\nでもOK）</li>\n<li>※マウス&amp;マウスパッド等お持ちいただけると良いです。</li>\n<li>定員　：10名</li>\n<li>費用　：無料 (お気持ちで結構ですので寄付して頂けると助かります)</li>\n</ul>\n<h2>開催日時、場所</h2>\n<ul>\n<li>日時：2026/6/21(日) 09:30-11:30(09:15 受付開始)</li>\n<li>場所：三田いきいきプラザ(〒108-0014　東京都港区芝4-1-17）集会室C</li>\n<li>アクセス方法：<a href=\"https://shiba-ikiiki.com/mita/access/\" rel=\"nofollow\">こちら</a>からご確認ください</li>\n</ul>\n<h2>お申込み手順</h2>\n<h3>当ページで「このイベントを申し込む」をクリックしてください。</h3>\n<ul>\n<li>connpass上で受付管理を実施しています。connpassの会員登録がまだの方、または既に登録されている方でログインしていない方は、右上の「ログイン・会員登録」ボタンから会員登録、ログイン後お申込みをお願いいたします。</li>\n<li>会員登録の方法は<a href=\"https://help.connpass.com/basic/register.html\" rel=\"nofollow\">こちら</a>を参考にしてください。</li>\n<li>参加枠は先着順です。<strong>やむを得ずキャンセルする場合は必ず当ページにで「申し込みキャンセル」ボタンを押してください。</strong> 他の参加者が参加できなくなってしまいます。</li>\n<li><strong>ご兄弟など2人以上でご参加の場合は必ずお一人ずつご登録いただきますようよろしくお願いいたします。</strong></li>\n</ul>\n<h3>申し込み時のアンケートについて</h3>\n<ul>\n<li>お子さまの学年、お名前、保護者様のご連絡先をご入力ください。（いただいた個人情報は受付および、万一感染症や非常事態が発生した場合のご連絡のみに使用いたします。）</li>\n<li>その他簡単なアンケートにご協力をお願いいたします。</li>\n</ul>\n<h2>寄付について</h2>\n<p>CoderDojoたまちはボランティアで開催をしています。 今後の継続のため、少しでも寄付していただけると助かります。寄付金は全てCoderDojoたまちの運営費として使わせて頂きます。</p>\n<h2>撮影について</h2>\n<p>会場内では写真を撮影します。Twitterやブログ、SNSなどで利用し、インターネットで公開する場合があります。あらかじめご了承ください。</p>\n<h2>PCレンタル枠について</h2>\n<p>当日無料レンタル用のノートPCを2台用意しております。 ノートPCをお持ちでない方はレンタル枠でお申し込みください。 マウスも用意いたします。(ノートPCをお持ち)の方は必ずPC持参枠でお申し込みください。</p>\n<h2>メンターについて</h2>\n<p>CoderDojoたまちでは、一緒に子供たちをサポートしてくださるメンターの方々を大募集しています。 </p>\n<p>中学生や高校生のジュニアメンターさんも大歓迎です!興味があれば是非参加してみてください。</p>\n<p>Scratchやプログラミング自体の技術力は問いません。こども達の相談にのって一緒に考えてサポートしてくれる方、ご協力をお願いします！</p>\n<p>完全ボランティアとなります。交通費・報酬などは一切ございません。ご理解の上でご参加下さい。</p>\n<p>09:15を目処にお越し下さい。不明点はお問合せください。</p>\n<h2>その他</h2>\n<ul>\n<li>持参されるPCをプロジェクタに投影するためのコネクタやケーブル(HDMI, USB-C to HDMI)をお持ちでしたら持参願います。</li>\n<li>保護者の方は、慣れるまでは子どもをフォロー頂きつつ、一緒に取り組まれることをオススメしています。</li>\n<li>あまり保護者のフォローがいらないお子さまについては、是非子ども同士で座って欲しいため、保護者の方は後ろで見守っていただければと存じます。</li>\n</ul>\n<h2>お問い合わせ</h2>\n<p><a href=\"https://forms.gle/cGevA8DaWmGHiYdQA\" rel=\"nofollow\">こちら</a>のフォームもしくはConnpassのイベント管理者への問い合わせからお願いいたします。</p>\n<h2>免責事項</h2>\n<ul>\n<li>CoderDojoたまちの活動参加中や行き帰りなどで発生したトラブル、損失、損害、傷病、事故に対して、CoderDojoたまちは一切責任を負いません。これらに対して自己責任においてご参加くださるようお願いいたします。</li>\n</ul>\n<h2>スポンサー</h2>\n<p><a href=\"https://endorphinix.com\" rel=\"nofollow\">合同会社エンドルフィニクス</a></p>\n<p><img alt=\"合同会社エンドルフィニクス\" src=\"https://endorphinix.com/images/endorphinix-logo.png\"> </p>\n<p>ご紹介</p>\n<p>エンドルフィニクスは、山口県・徳山高専の学生および卒業生から構成されるエンジニアチームです。\n「技術の地産地消」をコンセプトに2017年にチームが発足して以来、地域の課題をメンバーが持つ技術を活かして解決する取り組みを行っています。\nCoderDojoたまちでは、会場費などの運営費やメンターとしてご支援いただいています。</p>",
+      "url": "https://coderdojo-tamachi.connpass.com/event/394948/",
+      "image_url": "https://media.connpass.com/thumbs/d7/e7/d7e7a2917a77428ddf73e767c40e0fcf.png",
+      "hash_tag": "",
+      "started_at": "2026-06-21T09:30:00+09:00",
+      "ended_at": "2026-06-21T11:30:00+09:00",
+      "published_at": "2026-05-24T09:50:38+09:00",
+      "limit": 13,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 13058,
+        "subdomain": "coderdojo-tamachi",
+        "title": "CoderDojoたまち",
+        "url": "https://coderdojo-tamachi.connpass.com/"
+      },
+      "address": "東京都港区芝4-1-17",
+      "place": "三田いきいきプラザ",
+      "lat": "35.648932300000",
+      "lon": "139.749463600000",
+      "owner_id": 731595,
+      "owner_nickname": "CoderDojoTamachi",
+      "owner_display_name": "CoderDojoTamachi",
+      "accepted": 2,
+      "waiting": 0,
+      "updated_at": "2026-05-24T09:50:38+09:00"
+    },
+    {
       "id": 394099,
       "title": "第93回CoderDojoあざみ野",
       "catch": "7〜17歳の子どもを対象にした無償のプログラミングクラブ",
@@ -512,7 +512,7 @@
       "published_at": "2026-05-17T12:01:09+09:00",
       "limit": 7,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 6773,
         "subdomain": "coderdojo-azamino",
@@ -543,7 +543,7 @@
       "published_at": "2026-06-04T20:04:19+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15944,
         "subdomain": "coderdojo-odawara",
@@ -574,7 +574,7 @@
       "published_at": "2026-05-17T11:59:28+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15705,
         "subdomain": "kashiwa-no-ha",
