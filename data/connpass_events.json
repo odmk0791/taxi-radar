@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-22T00:46:46.359580+09:00",
+  "fetched_at": "2026-06-22T02:21:19.859637+09:00",
   "date": "20260622",
   "count": 7,
   "events": [
@@ -33,37 +33,6 @@
       "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-05-19T08:01:55+09:00"
-    },
-    {
-      "id": 397406,
-      "title": "【初心者大歓迎】エンジニア交流会！",
-      "catch": "",
-      "description": "<p>freeCodeCamp Coffee &amp; Code 交流会 in 東京</p>\n<p>freeCodeCampのCoffee &amp; Codeは、プログラミングやテクノロジーに興味のある方々が気軽に集まり、学びや交流を楽しむためのイベントです☕</p>\n<p>今回はfreeCodeCampの創設者であるQuincy Larson（クインシー・ラーソン）さんをお迎えします！</p>\n<p>freeCodeCampを利用している方、これからプログラミングを学びたい方、エンジニアの方も大歓迎です。</p>\n<p>お食事を楽しみながら、コーディングの話はもちろん、そのほかについても気軽に交流できればと思っています。</p>\n<p>※お食事代は、Quincyさんがご負担します。</p>\n<p>お互いを尊重し、安心して交流できる雰囲気を大切にしています。他の参加者を不快にさせる発言はお控えください。</p>\n<hr>\n<p>👥 対象者</p>\n<ul>\n<li>freeCodeCampをご存知の方</li>\n<li>エンジニアの方</li>\n<li>プログラミングが好きな方</li>\n<li>他の学習者やエンジニアと交流したい方</li>\n<li>グローバルなコミュニティに興味がある方</li>\n</ul>\n<p>など、経験やスキルは問いません。お気軽にご参加ください。お一人での参加も、お友達との参加も大歓迎です！</p>\n<hr>\n<p>📍 場所</p>\n<p>FREEMAN CAFE 渋谷メトロプラザ</p>\n<hr>\n<p>📢 参加に関するご案内</p>\n<p>本イベントは他プラットフォームでも参加者を募集しております。定員に達した場合は、Connpassでの募集を締め切る場合がございます。ご了承ください。</p>\n<hr>\n<p>⚠️ 注意事項</p>\n<ul>\n<li>イベント中および会場周辺で発生した事故・盗難等について、主催者および会場は責任を負いかねます。</li>\n<li>天災やその他やむを得ない事情により、イベント内容の変更または中止となる場合があります。</li>\n<li>当日の飛び入り参加はご遠慮ください。</li>\n<li>遅刻やキャンセルの際は、可能な限り事前にご連絡をお願いいたします。</li>\n</ul>",
-      "url": "https://freecodecamp-tokyo.connpass.com/event/397406/",
-      "image_url": "https://media.connpass.com/thumbs/e4/f9/e4f92bf0c83c5bc35dbbf09f671d42be.png",
-      "hash_tag": "交流会",
-      "started_at": "2026-06-22T19:00:00+09:00",
-      "ended_at": "2026-06-22T21:00:00+09:00",
-      "published_at": "2026-06-15T16:28:45+09:00",
-      "limit": 3,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17798,
-        "subdomain": "freecodecamp-tokyo",
-        "title": "freeCodeCamp-Tokyo",
-        "url": "https://freecodecamp-tokyo.connpass.com/"
-      },
-      "address": "〒150-0002 Tokyo, Shibuya, 1 Chome−16−14 メトロプラザ ２階",
-      "place": "FREEMAN CAFE 渋谷メトロプラザ",
-      "lat": "35.661414600000",
-      "lon": "139.702600700000",
-      "owner_id": 1029494,
-      "owner_nickname": "section000",
-      "owner_display_name": "unagi",
-      "accepted": 3,
-      "waiting": 0,
-      "updated_at": "2026-06-22T00:26:44+09:00"
     },
     {
       "id": 394361,
@@ -157,6 +126,37 @@
       "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-06-17T16:45:44+09:00"
+    },
+    {
+      "id": 397406,
+      "title": "【初心者大歓迎】エンジニア交流会！",
+      "catch": "",
+      "description": "<p>freeCodeCamp Coffee &amp; Code 交流会 in 東京</p>\n<p>freeCodeCampのCoffee &amp; Codeは、プログラミングやテクノロジーに興味のある方々が気軽に集まり、学びや交流を楽しむためのイベントです☕</p>\n<p>今回はfreeCodeCampの創設者であるQuincy Larson（クインシー・ラーソン）さんをお迎えします！</p>\n<p>freeCodeCampを利用している方、これからプログラミングを学びたい方、エンジニアの方も大歓迎です。</p>\n<p>お食事を楽しみながら、コーディングの話はもちろん、そのほかについても気軽に交流できればと思っています。</p>\n<p>※お食事代は、Quincyさんがご負担します。</p>\n<p>お互いを尊重し、安心して交流できる雰囲気を大切にしています。他の参加者を不快にさせる発言はお控えください。</p>\n<hr>\n<p>👥 対象者</p>\n<ul>\n<li>freeCodeCampをご存知の方</li>\n<li>エンジニアの方</li>\n<li>プログラミングが好きな方</li>\n<li>他の学習者やエンジニアと交流したい方</li>\n<li>グローバルなコミュニティに興味がある方</li>\n</ul>\n<p>など、経験やスキルは問いません。お気軽にご参加ください。お一人での参加も、お友達との参加も大歓迎です！</p>\n<hr>\n<p>📍 場所</p>\n<p>FREEMAN CAFE 渋谷メトロプラザ</p>\n<hr>\n<p>📢 参加に関するご案内</p>\n<p>本イベントは他プラットフォームでも参加者を募集しております。定員に達した場合は、Connpassでの募集を締め切る場合がございます。ご了承ください。</p>\n<hr>\n<p>⚠️ 注意事項</p>\n<ul>\n<li>イベント中および会場周辺で発生した事故・盗難等について、主催者および会場は責任を負いかねます。</li>\n<li>天災やその他やむを得ない事情により、イベント内容の変更または中止となる場合があります。</li>\n<li>当日の飛び入り参加はご遠慮ください。</li>\n<li>遅刻やキャンセルの際は、可能な限り事前にご連絡をお願いいたします。</li>\n</ul>",
+      "url": "https://freecodecamp-tokyo.connpass.com/event/397406/",
+      "image_url": "https://media.connpass.com/thumbs/e4/f9/e4f92bf0c83c5bc35dbbf09f671d42be.png",
+      "hash_tag": "交流会",
+      "started_at": "2026-06-22T19:00:00+09:00",
+      "ended_at": "2026-06-22T21:00:00+09:00",
+      "published_at": "2026-06-15T16:28:45+09:00",
+      "limit": 3,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17798,
+        "subdomain": "freecodecamp-tokyo",
+        "title": "freeCodeCamp-Tokyo",
+        "url": "https://freecodecamp-tokyo.connpass.com/"
+      },
+      "address": "〒150-0002 Tokyo, Shibuya, 1 Chome−16−14 メトロプラザ ２階",
+      "place": "FREEMAN CAFE 渋谷メトロプラザ",
+      "lat": "35.661414600000",
+      "lon": "139.702600700000",
+      "owner_id": 1029494,
+      "owner_nickname": "section000",
+      "owner_display_name": "unagi",
+      "accepted": 3,
+      "waiting": 0,
+      "updated_at": "2026-06-22T00:26:44+09:00"
     },
     {
       "id": 395351,
