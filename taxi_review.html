@@ -49,7 +49,7 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
   font-size:12px;color:var(--text)}
 
 /* 売上バー */
-.barwrap{position:relative;height:42px;background:var(--surface2);border-radius:8px;margin:18px 0 28px;overflow:visible}
+.barwrap{position:relative;height:42px;background:var(--surface2);border-radius:8px;margin:34px 0 28px;overflow:visible}
 .barfill{position:absolute;left:0;top:0;bottom:0;border-radius:8px;transition:width .6s}
 .barmark{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--muted)}
 .barmark .ml{position:absolute;top:-16px;left:50%;transform:translateX(-50%);
@@ -135,7 +135,7 @@ table.loss td{padding:7px 4px;border-bottom:1px solid var(--surface2)}
   </div>
 
   <div class="card">
-    <h2><span class="num">④</span>軌跡評価（降車地の質）</h2>
+    <h2><span class="num">④</span>拾いにくかった降車地</h2>
     <div id="dropArea"></div>
   </div>
 </div>
@@ -331,10 +331,18 @@ function renderRevenue(day,vt,B,jiriki,obakeItems,thxItems){
   // バー塗り（地力 + お化け分を色分け）
   let html=`<div class="barfill" style="width:${scale(jiriki)}%;background:linear-gradient(90deg,#1f6feb,#388bfd)"></div>`;
   if(obakeItems.length)html+=`<div class="barfill" style="left:${scale(jiriki)}%;width:${scale(rev)-scale(jiriki)}%;background:repeating-linear-gradient(45deg,#8957e5,#8957e5 4px,#6e40c9 4px,#6e40c9 8px)"></div>`;
-  // 目盛り
-  [['最低',B.low],['予算',B.budget],['上出来',B.high],['ｽﾄﾚｯﾁ',B.stretch]].forEach(([l,v])=>{
-    html+=`<div class="barmark" style="left:${scale(v)}%"><span class="ml">${l}</span><span class="mv">${yen(v).replace('¥','')}</span></div>`;});
-  html+=`<div class="barnow" style="left:${scale(rev)}%"><span class="nl">${yen(rev)}</span></div>`;
+  // 目盛り（ラベル名のみ・数字は省略。近接時は上下段を互い違いに）
+  const marks=[['最低',B.low],['予算',B.budget],['上出来',B.high],['ｽﾄﾚｯﾁ',B.stretch]];
+  let lastPos=-99;
+  marks.forEach(([l,v],idx)=>{
+    const pos=scale(v);
+    const up=(pos-lastPos<14)?-26:-16; // 前のラベルと近ければ上にずらす
+    html+=`<div class="barmark" style="left:${pos}%"><span class="ml" style="top:${up}px">${l}</span></div>`;
+    lastPos=pos;});
+  // 現在地（端で切れないよう寄せ）
+  const nowPos=scale(rev);
+  const align=nowPos>80?'right:0;left:auto;transform:none;text-align:right':(nowPos<12?'left:0;transform:none':'');
+  html+=`<div class="barnow" style="left:${nowPos}%"><span class="nl" style="${align}">${yen(rev)}</span></div>`;
   bar.innerHTML=html;
   // KPI
   const dispEv=DISPATCH[day.dow];
@@ -455,7 +463,7 @@ function renderLoss(day,items,rests){
   area.innerHTML=html;
 }
 
-// ④ 軌跡評価（降車地の質）
+// ④ 軌跡評価（拾いにくい降車地のみ抽出）
 function renderDrop(items){
   const rows=[];
   items.forEach(r=>{
@@ -464,30 +472,22 @@ function renderDrop(items){
     let h=Math.floor(r.dt/60);if(h>=24)h-=24;
     const fares=pickupHist[h+'|'+addr]||[];
     const cnt=fares.length;
-    if(cnt<2){rows.push({h:r.dt,addr,cnt,score:null});return;}
-    // 案D：件数主×単価従
-    const maxc=20; // log基準
-    const cntScore=Math.log(cnt+1)/Math.log(maxc+1);
-    const medf=median(fares);
-    // 全体中央単価（簡易：2100）
-    const fareAdj=Math.max(0.7,Math.min(1.3,medf/2100));
-    rows.push({h:r.dt,addr,cnt,score:Math.round(cntScore*fareAdj*100),medf});
+    // 除外（ロング/空港後は降車地の質を問わない）
+    if(EXCLUDE_KW.some(k=>addr.includes(k)||r.dku.includes(k)))return;
+    rows.push({h:r.dt,addr,cnt});
   });
-  const scored=rows.filter(r=>r.score!=null);
   const area=document.getElementById('dropArea');
-  if(!scored.length){area.innerHTML='<div class="empty">降車地の質を評価できる案件がありませんでした。</div>';return;}
-  const avg=Math.round(mean(scored.map(r=>r.score)));
-  let html=`<div class="note">降車地の質スコア平均：${avg}（高いほど次客を拾いやすい降車地。件数主×単価従、2件未満は評価対象外）。</div>`;
-  html+=`<table class="loss"><tr><th>降車時刻</th><th>降車地</th><th>過去実績</th><th>質スコア</th></tr>`;
-  // スコア低い順（改善対象）に上位表示 + 全件
-  rows.sort((a,b)=>(a.score==null?999:a.score)-(b.score==null?999:b.score));
-  rows.forEach(r=>{const hh=Math.floor(r.h/60),mm=r.h%60;
-    let tag,label;
-    if(r.score==null){tag='tag-x';label='—(実績薄)';}
-    else if(r.score>=85){tag='tag-ok';label='good drop '+r.score;}
-    else if(r.score>=60){tag='tag-warn';label='普通 '+r.score;}
-    else{tag='tag-bad';label='要回送 '+r.score;}
-    html+=`<tr><td>${hh}:${String(mm).padStart(2,'0')}</td><td>${r.addr}</td><td>${r.cnt}件</td><td><span class="tag ${tag}">${label}</span></td></tr>`;});
+  if(!rows.length){area.innerHTML='<div class="empty">評価対象の降車地がありませんでした。</div>';return;}
+  // 拾いにくい順（過去実績の少ない順）。実績2件未満＝特に拾いにくい
+  const hard=rows.filter(r=>r.cnt<3).sort((a,b)=>a.cnt-b.cnt);
+  const total=rows.length, hardCnt=hard.length;
+  let html=`<div class="note">この日の降車地${total}地点のうち、その時間帯に過去あまり客を拾えていない（実績3件未満の）降車地が${hardCnt}地点。降りた後そのまま待っても拾いにくく、空車移動になりやすい場所です。${hardCnt>total*0.6?'今日は拾いにくい降車地が多めでした。':''}</div>`;
+  if(!hardCnt){html+='<div class="empty">拾いにくい降車地はありませんでした。降車地の流れは良好。</div>';area.innerHTML=html;return;}
+  html+=`<table class="loss"><tr><th>降車時刻</th><th>降車地</th><th>その時間帯の過去実績</th></tr>`;
+  hard.slice(0,8).forEach(r=>{const hh=Math.floor(r.h/60),mm=r.h%60;
+    const tag=r.cnt===0?'tag-bad':'tag-warn';
+    const lbl=r.cnt===0?'実績ほぼ無し':r.cnt+'件のみ';
+    html+=`<tr><td>${hh}:${String(mm).padStart(2,'0')}</td><td>${r.addr}</td><td><span class="tag ${tag}">${lbl}</span></td></tr>`;});
   html+=`</table>`;
   area.innerHTML=html;
 }
