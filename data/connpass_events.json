@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-21T16:57:42.275319+09:00",
+  "fetched_at": "2026-06-21T20:15:48.869166+09:00",
   "date": "20260621",
   "count": 19,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-05-31T16:05:57+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17325,
         "subdomain": "1daydesk",
@@ -47,7 +47,7 @@
       "published_at": "2026-06-13T20:00:53+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -202,7 +202,7 @@
       "published_at": "2026-05-17T14:48:55+09:00",
       "limit": 80,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14543,
         "subdomain": "aid",
@@ -264,7 +264,7 @@
       "published_at": "2026-06-13T15:15:44+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -295,7 +295,7 @@
       "published_at": "2026-06-08T12:01:34+09:00",
       "limit": 18,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -562,35 +562,35 @@
       "updated_at": "2026-06-04T20:04:35+09:00"
     },
     {
-      "id": 394156,
-      "title": "第127回 (2026/6/21(日)) CoderDojo 柏の葉",
-      "catch": "",
-      "description": "<p>CoderDojo Kashowa no ha (柏の葉) を開催します。<br></p>\n<p>■受付について<br>\n以前から参加している人は、【参加したことがある人】を選んでください。<br>\nまた、CoderDojo Kashowa no ha (柏の葉)ではなく、近隣の 柏、南柏、沼南 に来た事がある人も【参加したことがある人】を選んでください。<br>\n今までにCoderDojo Kashowa no ha (柏の葉)や近隣の 柏、南柏、沼南にも来たことが無い人、または、Scratch を使ったことが無い人は、【初めて参加する人】を選んでください。<br>\n<br>\n■年齢について<br>\n7〜17歳を対象としています。<br>\n見学という事でしたら、それ以外の年齢の方も受け付けています。<br>\n事前に見学である事をお知らせいただけますと助かります。<br></p>\n<p>■当日について<br>\n【時間】10:00～ 12:00 時間に遅れないようにお願いします。<br>\n【場所】KOILスタジオ(ららぽーと柏の葉北館6F)<br>\n【最寄り駅】つくばエクスプレス線 柏の葉キャンパス駅<br></p>\n<p>KOIL の紹介<br>\n<a href=\"https://www.koil.jp/</br>\" rel=\"nofollow\">https://www.koil.jp/<br></a>\n<br>\n会場へのお問い合わせは、ご遠慮ください。<br>\n当日の欠席や遅刻の連絡も会場ではなく、「イベントへのお問い合わせ」にてお願いいたします。\n<br>\n<br>パソコンを持参できる方は会場に持ってきてください。<br>\nパソコンの貸し出しを希望される方は、「イベントへのお問い合わせ」からお知らせください。3台と限りがありますが、お貸しできます\n<br>\n<br>\nそれ以外にご不明な点等ございましたら、お問い合わせください。\n<br><br>\nそれでは当日お会いできることを楽しみにしています。<br>\n子どものためのプログラミング道場<br>\nCoderDojo Kashiwa <br>\n<br>\nCoderDojo については、以下の CoderDojo Japan のサイトを参考ください<br>\n<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">https://coderdojo.jp/</a></p>",
-      "url": "https://kashiwa-no-ha.connpass.com/event/394156/",
-      "image_url": null,
-      "hash_tag": "",
-      "started_at": "2026-06-21T10:00:00+09:00",
-      "ended_at": "2026-06-21T12:00:00+09:00",
-      "published_at": "2026-05-17T11:59:28+09:00",
-      "limit": 15,
+      "id": 391432,
+      "title": "朝霞IT勉強会 #52 〜Remote でもくもく",
+      "catch": "朝霞IT勉強",
+      "description": "<h1>朝霞IT勉強会とは</h1>\n<p>ITの勉強会を都心以外でも開きたいと思い立ち上げました！\n東武東上線朝霞台駅周辺で行う勉強会です。ふだんは市の施設をお借りして、カジュアルに</p>\n<ul>\n<li>もくもく会</li>\n<li>LT会</li>\n</ul>\n<p>なんかを実施しています。  </p>\n<h1>アジェンダ</h1>\n<p>今回もGoogle Meetを使ってリモートで実施します。\nGoogle MeetのURLは前日にconnpassからのメールでお知らせします。\n加えて、当日に朝霞IT勉強会のSlackでも共有します。\nいつもの市民センターは予約していませんので、お間違えのないようお願いします。</p>\n<p>今回はLT無しの「もくもく」のみで行きたいと思います。\nもくもくの間は、いつもどおり画面を共有するタイミングを設けようかと思います。（強制はしません）</p>\n<p>もし話したいことがあれば、飛び込みのLTも大歓迎です！</p>\n<p>13:00~13:10 受付<br>\n13:10~13:15 はじめに<br>\n13:15~13:20 自己紹介<br>\n13:20~16:00 もくもく<br>\n16:00~16:25 成果発表 / そろそろオフライン会の調整をしたい\n16:30 完全撤収  </p>\n<h1>対象者</h1>\n<ul>\n<li>ITに興味のある方</li>\n<li>勉強会、もくもく会に参加してみたいけどちょっと怖いという方</li>\n<li>勉強会に参加したいけど、都内はちょっと遠い、、、という埼玉勢</li>\n</ul>\n<h1>参加費用</h1>\n<ul>\n<li>無料</li>\n</ul>\n<h1>会場案内</h1>\n<h2>場所</h2>\n<ul>\n<li>Google Meet（当日お昼までに、メール or Slack で URL を連絡します）<br>\n朝霞IT勉強会のSlackに参加されていない方は、下記連絡手段からワークスペースへの参加を依頼してください。</li>\n</ul>\n<h2>連絡手段</h2>\n<ul>\n<li>slackを用意してみました。</li>\n<li>当日に呟く場として使ってみますので、<a href=\"https://join.slack.com/t/asaka-it-study/shared_invite/zt-fy11oso3-3Kt4IVeXsa1OtVsSG7gURQ\" rel=\"nofollow\">こちら</a>からどうぞ</li>\n</ul>\n<h1>その他</h1>\n<ul>\n<li>お時間ありましたら、希望者で懇親会しましょう。</li>\n<li>イベント画像、アイコン募集中です。</li>\n</ul>",
+      "url": "https://asaka-it.connpass.com/event/391432/",
+      "image_url": "https://media.connpass.com/thumbs/a8/b7/a8b79ffd8101480628efb65f445d5a28.png",
+      "hash_tag": "asaka_it_study",
+      "started_at": "2026-06-21T13:00:00+09:00",
+      "ended_at": "2026-06-21T16:30:00+09:00",
+      "published_at": "2026-06-08T11:01:35+09:00",
+      "limit": 10,
       "event_type": "participation",
       "open_status": "close",
       "group": {
-        "id": 15705,
-        "subdomain": "kashiwa-no-ha",
-        "title": "CoderDojo柏の葉",
-        "url": "https://kashiwa-no-ha.connpass.com/"
+        "id": 4672,
+        "subdomain": "asaka-it",
+        "title": "朝霞IT勉強会グループ",
+        "url": "https://asaka-it.connpass.com/"
       },
-      "address": "千葉県柏市若柴178-4",
-      "place": "KOIL",
-      "lat": "35.895519200000",
-      "lon": "139.951149200000",
-      "owner_id": 116459,
-      "owner_nickname": "KenIcs",
-      "owner_display_name": "KenIcs",
-      "accepted": 3,
+      "address": "",
+      "place": "Google Meet",
+      "lat": "35.812323000000",
+      "lon": "139.581869000000",
+      "owner_id": 34655,
+      "owner_nickname": "Yutako0217kawa",
+      "owner_display_name": "yutako",
+      "accepted": 2,
       "waiting": 0,
-      "updated_at": "2026-05-17T11:59:28+09:00"
+      "updated_at": "2026-06-08T11:01:35+09:00"
     }
   ]
 }
