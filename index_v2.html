@@ -149,7 +149,7 @@ html,body{overflow:hidden;height:100%}
   display:block!important;
   position:fixed!important;
   top:0;left:0;right:0;bottom:0;
-  z-index:0;
+  z-index:1;
 }
 #spot-map{width:100%;height:100%}
 
@@ -362,10 +362,12 @@ main::before{
     <div id="hl"><div class="loading"><span class="spin">⏳</span> 読み込み中...</div></div>
   </div>
   <!-- 地図パネル -->
-  <div id="pg-m" style="display:none">
-    <div id="spot-map" style="height:calc(100vh - 220px);width:100%;border-radius:12px;overflow:hidden"></div>
-  </div>
+  
 </main>
+<div id="pg-m">
+  <div id="spot-map"></div>
+</div>
+
 <script>
 var COORDS={};
 var WARD={
