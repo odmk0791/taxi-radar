@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>年収1000万への道</title>
+<style>
+:root{
+  --ink:#0d0f14;        /* 計器盤の黒 */
+  --panel:#15181f;      /* パネル面 */
+  --panel2:#1c2027;
+  --line:#2a2f3a;       /* ヘアライン */
+  --amber:#ffb000;      /* メーター琥珀 */
+  --amber-dim:#7a5410;
+  --green:#37d36b;      /* 貯金 */
+  --red:#ff5a52;        /* 借金 */
+  --txt:#e8eaed;
+  --mu:#8b91a0;         /* 補助文字 */
+  --mu2:#5a606e;
+  --goal:#ff3b6b;       /* 1000万ライン */
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--ink);color:var(--txt)}
+body{
+  font-family:"Helvetica Neue","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  max-width:480px;margin:0 auto;padding:0 0 60px;
+  font-feature-settings:"tnum";
+}
+/* ── 計器の数字フォント感 ── */
+.dgt{font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+
+/* ── ヘッダー ── */
+header{
+  padding:22px 20px 16px;border-bottom:1px solid var(--line);
+  position:sticky;top:0;background:linear-gradient(180deg,var(--ink),rgba(13,15,20,.96));z-index:20;backdrop-filter:blur(6px);
+}
+.eyebrow{font-size:10px;letter-spacing:.32em;color:var(--amber);font-weight:700;text-transform:uppercase}
+h1{font-size:21px;font-weight:800;margin-top:4px;letter-spacing:.01em}
+.sub{font-size:11px;color:var(--mu);margin-top:3px}
+
+/* ── 大計器（残距離メーター） ── */
+.odo{padding:26px 20px 8px;text-align:center}
+.odo-label{font-size:11px;color:var(--mu);letter-spacing:.18em;margin-bottom:6px}
+.odo-big{font-size:clamp(40px,13vw,60px);font-weight:800;line-height:1;color:var(--amber);text-shadow:0 0 22px rgba(255,176,0,.28)}
+.odo-yen{font-size:.42em;vertical-align:.5em;color:var(--amber-dim);font-weight:700;margin-right:2px}
+.odo-cap{font-size:12px;color:var(--mu);margin-top:8px}
+.odo-cap b{color:var(--txt);font-weight:700}
+
+/* ── ゲージ（1000万への到達率） ── */
+.gauge-wrap{padding:14px 20px 4px}
+.gauge-head{display:flex;justify-content:space-between;align-items:baseline;font-size:11px;color:var(--mu);margin-bottom:7px}
+.gauge-head .pct{font-size:15px;font-weight:800;color:var(--txt)}
+.track{height:14px;background:var(--panel2);border-radius:8px;position:relative;overflow:hidden;border:1px solid var(--line)}
+.fill{height:100%;border-radius:8px 0 0 8px;background:linear-gradient(90deg,#ff8a00,var(--amber));transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.tick-base{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--mu2)}
+.tick-base::after{content:attr(data-l);position:absolute;top:-15px;left:50%;transform:translateX(-50%);font-size:8.5px;color:var(--mu2);white-space:nowrap}
+.scale{display:flex;justify-content:space-between;font-size:9px;color:var(--mu2);margin-top:5px}
+
+/* ── ペース判定（貯金/借金） ── */
+.pace{margin:18px 20px 0;padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--panel)}
+.pace.saving{border-color:rgba(55,211,107,.35);background:linear-gradient(180deg,rgba(55,211,107,.07),var(--panel))}
+.pace.debt{border-color:rgba(255,90,82,.35);background:linear-gradient(180deg,rgba(255,90,82,.07),var(--panel))}
+.pace-top{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mu);margin-bottom:8px}
+.pace-dot{width:8px;height:8px;border-radius:50%}
+.saving .pace-dot{background:var(--green);box-shadow:0 0 10px var(--green)}
+.debt .pace-dot{background:var(--red);box-shadow:0 0 10px var(--red)}
+.pace-amt{font-size:30px;font-weight:800;line-height:1}
+.saving .pace-amt{color:var(--green)} .debt .pace-amt{color:var(--red)}
+.pace-amt .yen{font-size:.5em;font-weight:700;opacity:.7}
+.pace-sub{font-size:11.5px;color:var(--mu);margin-top:8px;line-height:1.55}
+.pace-sub b{color:var(--txt)}
+
+/* ── セクション見出し ── */
+.sec{display:flex;align-items:center;gap:9px;margin:30px 20px 12px}
+.sec-n{font-size:10px;font-weight:800;color:var(--ink);background:var(--amber);width:19px;height:19px;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sec h2{font-size:14px;font-weight:800;letter-spacing:.02em}
+.sec .note{font-size:10px;color:var(--mu);margin-left:auto}
+
+/* ── 月別テーブル ── */
+.mtable{margin:0 14px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel)}
+.mrow{display:grid;grid-template-columns:38px 1fr 78px 64px;align-items:center;padding:11px 12px;border-bottom:1px solid var(--line);font-size:12px}
+.mrow:last-child{border-bottom:none}
+.mrow.head{background:var(--panel2);font-size:9.5px;color:var(--mu);letter-spacing:.06em;font-weight:700;padding:8px 12px}
+.mrow.done{opacity:.95}
+.m-mon{font-weight:800;font-size:13px}
+.m-mon .yk{display:block;font-size:8.5px;color:var(--mu2);font-weight:600;letter-spacing:.04em}
+.m-mon.leave .yk{color:var(--amber)}
+.m-bar{height:7px;background:var(--panel2);border-radius:5px;position:relative;overflow:hidden;margin-right:10px}
+.m-bar i{position:absolute;left:0;top:0;bottom:0;border-radius:5px;background:var(--amber-dim)}
+.m-bar i.act{background:var(--amber)}
+.m-tan{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.m-up{text-align:right;font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}
+.m-up.ok{color:var(--green)} .m-up.need{color:var(--amber)}
+.m-detail{grid-column:1/-1;font-size:10.5px;color:var(--mu);padding:2px 2px 0;line-height:1.5;display:none}
+.mrow.open .m-detail{display:block}
+
+/* ── 係数の説明 ── */
+.coef{margin:14px 20px 0;font-size:11px;color:var(--mu);line-height:1.7;padding:14px 16px;border-left:2px solid var(--amber);background:var(--panel)}
+.coef b{color:var(--txt)}
+.coef .k{color:var(--amber);font-weight:700}
+
+/* ── 入力（今月の進捗） ── */
+.input-card{margin:0 14px;padding:16px;border:1px dashed var(--line);border-radius:14px;background:var(--panel)}
+.input-card label{font-size:11px;color:var(--mu);display:block;margin-bottom:7px}
+.in-row{display:flex;gap:8px;align-items:center}
+.in-row input{flex:1;background:var(--ink);border:1px solid var(--line);color:var(--txt);font-size:18px;font-weight:700;padding:11px 12px;border-radius:9px;font-variant-numeric:tabular-nums;width:100%}
+.in-row input:focus{outline:none;border-color:var(--amber)}
+.in-suffix{font-size:12px;color:var(--mu);white-space:nowrap}
+.in-result{margin-top:12px;font-size:12px;color:var(--mu);line-height:1.6;display:none}
+.in-result.show{display:block}
+.in-result .big{font-size:17px;font-weight:800;color:var(--txt);display:block;margin-top:2px}
+
+/* ── 内訳カード ── */
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 14px}
+.fact{padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.fact .l{font-size:10px;color:var(--mu);letter-spacing:.04em}
+.fact .v{font-size:19px;font-weight:800;margin-top:5px;font-variant-numeric:tabular-nums}
+.fact .x{font-size:10px;color:var(--mu2);margin-top:3px}
+.fact.wide{grid-column:1/-1}
+
+footer{margin:34px 20px 0;font-size:10px;color:var(--mu2);line-height:1.7;text-align:center}
+.divider{height:1px;background:var(--line);margin:30px 20px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Project ¥10,000,000</div>
+  <h1>年収1000万への道</h1>
+  <div class="sub">昨年実績 <span class="dgt">865.8万円</span> ／ 目標まで <span class="dgt" style="color:var(--amber);font-weight:700">あと134.2万円</span></div>
+</header>
+
+<!-- ── 大計器：残り営収 ── -->
+<div class="odo">
+  <div class="odo-label">1000万まで 残り必要営収（年間）</div>
+  <div class="odo-big dgt"><span class="odo-yen">¥</span><span id="odoRemain">—</span></div>
+  <div class="odo-cap">必要年間営収 <b class="dgt">¥1,582万</b> − 昨年営収 <b class="dgt">¥1,369.6万</b></div>
+</div>
+
+<!-- ── ゲージ ── -->
+<div class="gauge-wrap">
+  <div class="gauge-head">
+    <span>昨年の到達度（年収ベース）</span>
+    <span class="pct dgt" id="gPct">—</span>
+  </div>
+  <div class="track">
+    <div class="fill" id="gFill" style="width:0%"></div>
+    <div class="tick-base" id="gBase" data-l="昨年 865.8万" style="left:86.6%"></div>
+  </div>
+  <div class="scale"><span>0</span><span>500万</span><span style="color:var(--goal);font-weight:700">1000万</span></div>
+</div>
+
+<!-- ── ペース判定 ── -->
+<div class="pace" id="paceCard">
+  <div class="pace-top"><span class="pace-dot"></span><span id="paceLabel">2026年 1000万ペースとの差（1〜5月時点）</span></div>
+  <div class="pace-amt dgt"><span class="yen">¥</span><span id="paceAmt">—</span></div>
+  <div class="pace-sub" id="paceSub"></div>
+</div>
+
+<!-- ── 月別の必要ライン ── -->
+<div class="sec">
+  <div class="sec-n">A</div>
+  <h2>月別の必要ライン</h2>
+  <span class="note">タップで詳細</span>
+</div>
+
+<div class="coef">
+  不足分 +212万円/年 を<b>平均で薄く割らず</b>、月ごとの<span class="k">シーズン係数 × 出番数</span>で配分しています。よく稼げる月（8・12月）は高く、底になりやすい月（2・10月）は低く目標を設定。単価は<b>今年7：昨年3</b>の加重で、最近の実力を反映しています。
+</div>
+
+<div class="mtable" id="mtable" style="margin-top:14px"></div>
+
+<div class="divider"></div>
+
+<!-- ── 今月の達成チェック ── -->
+<div class="sec">
+  <div class="sec-n">B</div>
+  <h2>今月はあと何営収？</h2>
+</div>
+<div class="input-card">
+  <label>今月の月を選んで、現時点の営収累計を入れると、目標まであと何円／1出番あたりいくら必要かを出します</label>
+  <div class="in-row" style="margin-bottom:9px">
+    <select id="selMon" style="flex:1;background:var(--ink);border:1px solid var(--line);color:var(--txt);font-size:14px;font-weight:700;padding:11px 12px;border-radius:9px"></select>
+  </div>
+  <div class="in-row">
+    <input id="inEishu" type="number" inputmode="numeric" placeholder="現時点の営収累計" />
+    <span class="in-suffix">円</span>
+  </div>
+  <div class="in-row" style="margin-top:9px">
+    <input id="inDone" type="number" inputmode="numeric" placeholder="消化した出番数" style="font-size:14px" />
+    <span class="in-suffix">出番 消化</span>
+  </div>
+  <div class="in-result" id="inResult"></div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ── 内訳 ── -->
+<div class="sec">
+  <div class="sec-n">C</div>
+  <h2>年収の構造（昨年実測）</h2>
+</div>
+<div class="facts">
+  <div class="fact"><div class="l">営収合計</div><div class="v dgt">¥1,369.6万</div><div class="x">154出番</div></div>
+  <div class="fact"><div class="l">実効係数</div><div class="v dgt" style="color:var(--amber)">63.21%</div><div class="x">年収 ÷ 営収</div></div>
+  <div class="fact"><div class="l">月給（歩合）</div><div class="v dgt">¥729.2万</div><div class="x">営収の53.24%</div></div>
+  <div class="fact"><div class="l">賞与 年3回</div><div class="v dgt">¥136.6万</div><div class="x">営収の9.97%</div></div>
+  <div class="fact wide"><div class="l">想定の前提</div><div class="v dgt" style="font-size:15px">52%＋8%＝60% ではなく 実測63.21%</div><div class="x">調整金・手当ぶん（行って来い）が支給額に乗るため実効は高め。これで逆算しないと「足りない額」が過大に出る</div></div>
+</div>
+
+<footer>
+  数値は給与明細PDF（2025年1月〜2026年5月）と各営業実績の照合に基づく。営収＝日々の売上から高速代・アプリ手数料・消費税を引いた額。空転金額は2026/6/3より記録化、今後は会社計算との差異が縮小する想定。<br>
+  係数は今後データ追加で再計算可能。
+</footer>
+
+<script>
+// ─────────────────────────────────────────────
+//  確定データ（PDF照合済み・検算一致）
+// ─────────────────────────────────────────────
+const MON=['01','02','03','04','05','06','07','08','09','10','11','12'];
+const MONJP=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+const LEAVE=[0,4,8]; // 1月・5月＝有給消化指定月(index)
+// 2025フル
+const E25=[1049190,1076920,1145070,1095760,1102710,1182890,1155400,1234450,1181890,1087290,1184960,1199660];
+const D25=[12,13,13,13,12,13,13,13,13,13,13,13];
+// 2026（1〜5月のみ確定）
+const E26=[1011200,1105190,1182000,1230010,1130380,null,null,null,null,null,null,null];
+const D26=[11,13,13,13,12,null,null,null,null,null,null,null];
+
+const EFF=0.6321;               // 実効係数（年収/営収）
+const TARGET=10000000;
+const NEED_YEAR=TARGET/EFF;     // 必要年間営収 ≈15,820,282
+const E25_TOT=E25.reduce((a,b)=>a+b,0);
+const D25_TOT=D25.reduce((a,b)=>a+b,0);
+const NENSHO25=8657782;
+
+// ── 基準単価：今年7:昨年3（今年なき月は昨年のみ）──
+const W=0.7;
+const tan25=E25.map((e,i)=>e/D25[i]);
+const tan26=E26.map((e,i)=>e?e/D26[i]:null);
+const baseTan=MON.map((_,i)=> tan26[i]!=null ? (W*tan26[i]+(1-W)*tan25[i]) : tan25[i]);
+
+// ── シーズン係数：基準単価 ÷ 出番加重平均単価 ──
+const stdDays=D25.slice();
+const wavg=baseTan.reduce((a,t,i)=>a+t*stdDays[i],0)/D25_TOT;
+const season=baseTan.map(t=>t/wavg);
+
+// ── 目標配分：season×出番 で必要年間営収を配分 ──
+const weight=MON.map((_,i)=>season[i]*stdDays[i]);
+const wsum=weight.reduce((a,b)=>a+b,0);
+const targetMon=MON.map((_,i)=>NEED_YEAR*weight[i]/wsum);
+const targetTan=MON.map((_,i)=>targetMon[i]/stdDays[i]);
+
+// ─────────────────────────────────────────────
+//  描画
+// ─────────────────────────────────────────────
+const yen=n=>Math.round(n).toLocaleString('ja-JP');
+const man=n=>(n/10000).toFixed(1)+'万';
+
+// 大計器：残り必要営収
+document.getElementById('odoRemain').textContent=yen(NEED_YEAR-E25_TOT);
+
+// ゲージ
+const pct=NENSHO25/TARGET*100;
+document.getElementById('gPct').textContent=pct.toFixed(1)+'%';
+setTimeout(()=>{document.getElementById('gFill').style.width=pct+'%';},120);
+
+// ペース判定（2026 1-5月）
+const cumA=E26.slice(0,5).reduce((a,b)=>a+b,0);
+const cumT=targetMon.slice(0,5).reduce((a,b)=>a+b,0);
+const diffEishu=cumA-cumT;
+const diffNensho=diffEishu*EFF;
+const cum25=E25.slice(0,5).reduce((a,b)=>a+b,0);
+const pc=document.getElementById('paceCard');
+const saving=diffEishu>=0;
+pc.classList.add(saving?'saving':'debt');
+document.getElementById('paceAmt').textContent=(saving?'+':'−')+yen(Math.abs(diffNensho));
+document.getElementById('paceSub').innerHTML=
+  `営収ベースでは <b>${saving?'+':'−'}¥${yen(Math.abs(diffEishu))}</b>（年収換算 上記）。`
+  +`<br>昨年同期 ¥${yen(cum25)} → 今年 ¥${yen(cumA)}（<b>${cumA-cum25>=0?'+':'−'}¥${yen(Math.abs(cumA-cum25))}</b>）。`
+  +(saving
+     ? ` 昨年を上回り、目標ペースも先行。`
+     : ` <b>昨年より伸びているのに目標ラインには届いていない</b> — 1000万の線がそれだけ上にあるということ。`);
+
+// 月別テーブル
+const mt=document.getElementById('mtable');
+const maxTarget=Math.max(...targetMon);
+let html=`<div class="mrow head"><span>月</span><span>目標営収/月</span><span style="text-align:right">目標単価</span><span style="text-align:right">昨年比</span></div>`;
+MON.forEach((m,i)=>{
+  const done=E26[i]!=null;
+  const up=targetTan[i]-tan25[i];
+  const barW=targetMon[i]/maxTarget*100;
+  const actW=done? Math.min(E26[i]/targetMon[i]*100,100):0;
+  const leave=LEAVE.includes(i);
+  html+=`<div class="mrow ${done?'done':''}" data-i="${i}">
+    <span class="m-mon ${leave?'leave':''}">${MONJP[i]}<span class="yk">${stdDays[i]}出番${leave?' 有給':''}</span></span>
+    <div class="m-bar"><i style="width:${barW}%"></i><i class="act" style="width:${barW*actW/100}%"></i></div>
+    <span class="m-tan dgt">¥${yen(targetMon[i])}</span>
+    <span class="m-up need dgt">+¥${yen(up)}</span>
+    <div class="m-detail">
+      目標単価 <b style="color:var(--txt)">¥${yen(targetTan[i])}/出番</b>（昨年 ¥${yen(tan25[i])}）・シーズン係数 <b style="color:var(--amber)">${season[i].toFixed(3)}</b>
+      ${done?`<br>2026年実績：¥${yen(E26[i])}（${D26[i]}出番・単価¥${yen(E26[i]/D26[i])}）／ 目標差 <b style="color:${E26[i]>=targetMon[i]?'var(--green)':'var(--red)'}">${E26[i]>=targetMon[i]?'+':'−'}¥${yen(Math.abs(E26[i]-targetMon[i]))}</b>`:''}
+    </div>
+  </div>`;
+});
+mt.innerHTML=html;
+mt.querySelectorAll('.mrow[data-i]').forEach(r=>{
+  r.addEventListener('click',()=>r.classList.toggle('open'));
+});
+
+// 入力セレクタ
+const sel=document.getElementById('selMon');
+MONJP.forEach((m,i)=>{const o=document.createElement('option');o.value=i;o.textContent=m+`（目標¥${yen(targetMon[i])} / ${stdDays[i]}出番）`;sel.appendChild(o);});
+sel.value=5; // 6月を初期表示
+
+function calcInput(){
+  const i=+sel.value;
+  const eishu=parseFloat(document.getElementById('inEishu').value)||0;
+  const done=parseFloat(document.getElementById('inDone').value)||0;
+  const box=document.getElementById('inResult');
+  if(eishu<=0&&done<=0){box.classList.remove('show');return;}
+  const remain=targetMon[i]-eishu;
+  const restDays=Math.max(stdDays[i]-done,0);
+  box.classList.add('show');
+  if(remain<=0){
+    box.innerHTML=`<span class="big" style="color:var(--green)">月間目標を達成済み 🎉</span>目標¥${yen(targetMon[i])}を ¥${yen(-remain)} 超過。この調子で。`;
+  }else if(restDays<=0){
+    box.innerHTML=`<span class="big" style="color:var(--red)">残出番なしで ¥${yen(remain)} 不足</span>今月の出番(${stdDays[i]})を使い切り、目標まで ¥${yen(remain)} 届かず。`;
+  }else{
+    const per=remain/restDays;
+    box.innerHTML=`目標まで残り<span class="big">¥${yen(remain)}</span>残り<b>${restDays}出番</b>で割ると、1出番あたり <b style="color:var(--amber);font-size:15px">¥${yen(per)}</b> 必要。`;
+  }
+}
+document.getElementById('inEishu').addEventListener('input',calcInput);
+document.getElementById('inDone').addEventListener('input',calcInput);
+sel.addEventListener('change',calcInput);
+</script>
+</body>
+</html>
