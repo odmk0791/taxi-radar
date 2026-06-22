@@ -138,6 +138,11 @@ table.loss td{padding:7px 4px;border-bottom:1px solid var(--surface2)}
     <h2><span class="num">④</span>拾いにくかった降車地</h2>
     <div id="dropArea"></div>
   </div>
+
+  <div class="card" style="border-color:#3a2f1a">
+    <h2><span class="num">⑦</span>1000万円への道</h2>
+    <div id="roadArea"></div>
+  </div>
 </div>
 
 <script>
@@ -157,6 +162,12 @@ const ALLOC={ // 同曜日 実車率% 空車min 休憩min
  '金':{occ:55.4,kusha:464,rest:148},'土':{occ:55.2,kusha:460,rest:158},
  '日':{occ:50.0,kusha:502,rest:168}};
 const DISPATCH={'日':{ev:87787,p:'青73%/黒7%/プレ20%'},'月':{ev:85588,p:'青53%/黒43%/プレ3%'}};
+// 1000万円への道（2025〜・特殊日除外ベース。基準=152出番×¥110,000×0.6）
+const LINE_10M_DOW={'月':103050,'火':105834,'水':113215,'木':112715,'金':118757,'土':114720,'日':98507};
+const LINE_10M_MONTH={1:103336,2:104168,3:111310,4:110805,5:114519,6:111198,7:111160,8:116785,9:102982,10:104198,11:112687,12:118073};
+const PAY_RATE=0.6;        // 給与率（基本給52%+分離給約8%）
+const SHIFTS_YEAR=152;     // 年間出番数
+const TARGET_INCOME=10000000;
 const OBAKE=15000;        // お化け閾値
 const LOSS_MIN=20;        // 純空車ロス抽出閾値(分)
 const EXCLUDE_KW=['羽田','成田','港北区','鶴見区']; // ロス除外特別リスト
@@ -302,6 +313,7 @@ function renderDay(key){
   renderPace(day,dow,items);
   renderLoss(day,items,rests);
   renderDrop(items);
+  renderRoad(day);
 }
 
 // ① 総合評定
@@ -489,6 +501,56 @@ function renderDrop(items){
     const lbl=r.cnt===0?'実績ほぼ無し':r.cnt+'件のみ';
     html+=`<tr><td>${hh}:${String(mm).padStart(2,'0')}</td><td>${r.addr}</td><td><span class="tag ${tag}">${lbl}</span></td></tr>`;});
   html+=`</table>`;
+  area.innerHTML=html;
+}
+
+// ⑦ 1000万円への道
+function renderRoad(day){
+  const area=document.getElementById('roadArea');
+  const rev=day.rev, dow=day.dow;
+  const lineDow=LINE_10M_DOW[dow]||109649;
+  // 今日の達成度
+  const todayDiff=rev-lineDow;
+  // 今月のペース（同年同月の累計営収 vs 月別ライン×当月出番数）
+  const y=day.date.getFullYear(), m=day.date.getMonth();
+  const monthDays=DAILY.filter(r=>r.date.getFullYear()===y&&r.date.getMonth()===m&&r.rev>0);
+  const monthRev=monthDays.reduce((a,r)=>a+r.rev,0);
+  const lineMonth=LINE_10M_MONTH[m+1]||109649;
+  const monthTarget=lineMonth*monthDays.length;
+  const monthDiff=monthRev-monthTarget;
+  // 年間ペース（2025年以降の1出番平均 × 152出番 × 0.6）
+  const since25=DAILY.filter(r=>r.date>=new Date(2025,0,1)&&r.rev>0);
+  const avgRev=since25.length?since25.reduce((a,r)=>a+r.rev,0)/since25.length:0;
+  const yearRevProj=avgRev*SHIFTS_YEAR;
+  const incomeProj=yearRevProj*PAY_RATE;
+  const incomePct=incomeProj/TARGET_INCOME*100;
+  const needAvg=TARGET_INCOME/PAY_RATE/SHIFTS_YEAR; // ¥109,649
+
+  let html=`<div class="note">基準：年間${SHIFTS_YEAR}出番 × ¥110,000 × ${PAY_RATE} ≒ 1000万円／必要な1出番平均 <b>${yen(needAvg)}</b>（2025年〜実績ベース）。</div>`;
+
+  // 今日
+  html+=`<div class="kgrid" style="margin-top:10px">
+    <div class="kbox"><div class="kl">今日の達成度（${dow}曜ライン）</div>
+      <div class="kv ${todayDiff>=0?'up':'down'}">${todayDiff>=0?'達成 +':''}${yen(todayDiff).replace('¥','¥')}</div>
+      <div class="ks">${dow}曜の1000万ライン ${yen(lineDow)}</div></div>
+    <div class="kbox"><div class="kl">今月のペース（${m+1}月ライン）</div>
+      <div class="kv ${monthDiff>=0?'up':'down'}">${monthDiff>=0?'+':''}${yen(monthDiff)}</div>
+      <div class="ks">${monthDays.length}出番 累計${yen(monthRev)} / 目標${yen(monthTarget)}</div></div>
+  </div>`;
+
+  // 年間ペースバー
+  const pct=Math.min(100,incomePct);
+  html+=`<div style="margin-top:14px">
+    <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:4px">
+      <span>年間ペース（2025年〜換算）</span><span>${incomePct.toFixed(1)}%</span></div>
+    <div style="position:relative;height:24px;background:var(--surface2);border-radius:6px;overflow:hidden">
+      <div style="position:absolute;left:0;top:0;bottom:0;width:${pct}%;background:linear-gradient(90deg,#bb8930,#e3b341);border-radius:6px"></div>
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">
+        年収換算 ${yen(incomeProj)} / 1000万</div>
+    </div>
+    <div class="ks" style="margin-top:6px;color:var(--muted);font-size:11px">
+      1出番平均 ${yen(avgRev)} ＝ 年収換算 ${yen(incomeProj)}。1000万まであと ${yen(Math.max(0,TARGET_INCOME-incomeProj))}（1出番あたり ${yen(Math.max(0,needAvg-avgRev))} 上乗せ）。</div>
+  </div>`;
   area.innerHTML=html;
 }
 
