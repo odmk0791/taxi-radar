@@ -1445,24 +1445,38 @@ document.getElementById('setup-save').addEventListener('click',doSaveSetup);
   });
 })();
 
-// v2パッチ: スポットなしでも地図初期化
-var _orig_renderMap = renderMap;
+// v2パッチ: Leaflet遅延ロード対応の地図初期化
+function _v2InitMap(){
+  if(_mapInited) return;
+  try{
+    _leafMap=L.map('spot-map',{zoomControl:false}).setView([35.6812,139.7671],13);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
+      attribution:'© OpenStreetMap © CARTO',maxZoom:18,subdomains:'abcd',crossOrigin:true
+    }).addTo(_leafMap);
+    L.control.zoom({position:'topright'}).addTo(_leafMap);
+    _mapInited=true;
+    setTimeout(function(){_leafMap.invalidateSize();},200);
+  }catch(e){console.error('map init error:',e);}
+}
 renderMap = function(){
-  _orig_renderMap();
-  if(window.L && !_mapInited){
-    try{
-      _leafMap=L.map('spot-map',{zoomControl:false}).setView([35.6812,139.7671],13);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
-        attribution:'© OpenStreetMap © CARTO',maxZoom:18,subdomains:'abcd',crossOrigin:true
-      }).addTo(_leafMap);
-      L.control.zoom({position:'topright'}).addTo(_leafMap);
-      _mapInited=true;
-      setTimeout(function(){_leafMap.invalidateSize();},200);
-    }catch(e){}
+  if(window.L){
+    _v2InitMap();
+    if(window._spots&&window._spots.length) _buildMap();
+  } else {
+    var css=document.createElement('link');
+    css.rel='stylesheet';
+    css.href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css';
+    document.head.appendChild(css);
+    var s=document.createElement('script');
+    s.src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
+    s.onload=function(){
+      _v2InitMap();
+      if(window._spots&&window._spots.length) _buildMap();
+    };
+    document.head.appendChild(s);
   }
 };
-// ページロード後に地図を初期化
-setTimeout(function(){if(window.L)renderMap();},500);
+setTimeout(function(){renderMap();},300);
 
 </script>
 </body>
