@@ -98,7 +98,7 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
   /* 横スクロール防止 */
   *{max-width:100%}
   /* 全グリッドを1カラムに */
-  #segment-kpi,.grid-3col,.grid-2col,#charts{
+  #segment-kpi,.grid-3col,.grid-2col,#charts,#yoy-cards{
     grid-template-columns:1fr!important;display:grid!important
   }
   .chart-card.wide{grid-column:1!important}
@@ -495,7 +495,149 @@ function makeChart(id, cfg) {
   charts[id] = new Chart(document.getElementById(id).getContext('2d'), cfg);
 }
 
+// ══════════════════════════════════════════════════════════
+// 昨対比（前年同期比）の計算・描画
+// ══════════════════════════════════════════════════════════
+function renderYoY() {
+  if(!allDailyRows.length) return;
+
+  // ── 現在の比較期間を決定 ───────────────────────────────
+  let curStart, curEnd, prevStart, prevEnd, periodLabel, prevLabel;
+
+  if(filterStart && filterEnd) {
+    // シフト期間選択 → 前年の同じシフト期間を探す
+    curStart  = parseLocalDate(filterStart);
+    curEnd    = parseLocalDate(filterEnd); curEnd.setHours(23,59,59);
+    // 前年の同名シフト期間を SHIFT_PERIODS から検索
+    const curIdx = SHIFT_PERIODS.findIndex(p=>p.start===filterStart && p.end===filterEnd);
+    // 同じ月・日のシフトを前年から探す (start月日が同じ、または近い)
+    const curMD = filterStart.slice(5); // "MM-DD"
+    const prevPeriod = SHIFT_PERIODS.find(p =>
+      p.start < filterStart && p.start.slice(5) === curMD
+    ) || SHIFT_PERIODS.find(p =>
+      p.start < filterStart &&
+      Math.abs(new Date(p.start) - new Date(filterStart)) < 35*86400000
+    );
+    if(prevPeriod) {
+      prevStart = parseLocalDate(prevPeriod.start);
+      prevEnd   = parseLocalDate(prevPeriod.end); prevEnd.setHours(23,59,59);
+      prevLabel = `${prevPeriod.start.slice(0,7).replace('-','年')}月〜`;
+    } else {
+      // 見つからない場合は1年前の同期間
+      prevStart = new Date(curStart); prevStart.setFullYear(prevStart.getFullYear()-1);
+      prevEnd   = new Date(curEnd);   prevEnd.setFullYear(prevEnd.getFullYear()-1);
+      prevLabel = `${prevStart.getFullYear()}年同期`;
+    }
+    periodLabel = `${filterStart} 〜 ${filterEnd}`;
+  } else {
+    // 期間ボタン → 同じ日数を1年前にずらす
+    const now = new Date();
+    const days = filterDays || 180;
+    curEnd   = new Date(now); curEnd.setHours(23,59,59);
+    curStart = new Date(now); curStart.setDate(curStart.getDate()-days);
+    prevEnd   = new Date(curStart); prevEnd.setDate(prevEnd.getDate()-1); prevEnd.setHours(23,59,59);
+    prevStart = new Date(prevEnd);  prevStart.setDate(prevStart.getDate()-days+1); prevStart.setHours(0,0,0,0);
+    periodLabel = `直近${days}日間`;
+    prevLabel   = `前年同期（${prevStart.toLocaleDateString('ja-JP',{month:'short',day:'numeric'})}〜${prevEnd.toLocaleDateString('ja-JP',{month:'short',day:'numeric'})}）`;
+  }
+
+  // ── データ抽出 ──────────────────────────────────────────
+  const pick = (s, e) => allDailyRows.filter(r =>
+    r.date && !isNaN(r.date) && r.date>=s && r.date<=e && r.revenue>0
+  );
+  const cur  = pick(curStart,  curEnd);
+  const prev = pick(prevStart, prevEnd);
+
+  if(!cur.length && !prev.length) {
+    document.getElementById('yoy-section').style.display='none';
+    return;
+  }
+  document.getElementById('yoy-section').style.display='';
+
+  // ── 期間ラベル表示 ────────────────────────────────────
+  const curLabel2 = cur.length  ? `今期: ${cur.length}出番` : '今期: データなし';
+  const prv2      = prev.length ? `前年: ${prev.length}出番` : '前年: データなし';
+  document.getElementById('yoy-periods').innerHTML =
+    `<span style="background:rgba(121,192,255,.15);color:var(--blue);padding:3px 10px;border-radius:20px">📅 ${curLabel2}</span>` +
+    `<span style="background:rgba(139,148,158,.12);color:var(--muted);padding:3px 10px;border-radius:20px">📅 ${prv2}同期</span>`;
+
+  // ── 統計計算 ──────────────────────────────────────────
+  const avg = (arr, key) => arr.length ? mean(arr.map(r=>r[key]).filter(v=>v>0)) : 0;
+  const metrics = [
+    {
+      label:'平均日次売上',
+      cur: avg(cur,'revenue'), prev: avg(prev,'revenue'),
+      fmt: v => '¥'+Math.round(v).toLocaleString(), unit:'¥'
+    },
+    {
+      label:'平均乗車回数',
+      cur: avg(cur,'count'), prev: avg(prev,'count'),
+      fmt: v => Math.round(v)+'回', unit:'回'
+    },
+    {
+      label:'平均単価',
+      cur: avg(cur,'price'), prev: avg(prev,'price'),
+      fmt: v => '¥'+Math.round(v).toLocaleString(), unit:'¥'
+    },
+    {
+      label:'実車率',
+      cur: avg(cur,'occRate'), prev: avg(prev,'occRate'),
+      fmt: v => v.toFixed(1)+'%', unit:'%'
+    },
+    {
+      label:'ハンドル時間/出番',
+      cur: avg(cur,'handleMin'), prev: avg(prev,'handleMin'),
+      fmt: v => fmtMin(Math.round(v)), unit:'min', higherIsBetter: false
+    },
+    {
+      label:'出番数',
+      cur: cur.length, prev: prev.length,
+      fmt: v => v+'出番', unit:'出番'
+    },
+  ];
+
+  // ── カード生成 ────────────────────────────────────────
+  const cardsHtml = metrics.map(m => {
+    const hasCur  = m.cur  > 0;
+    const hasPrev = m.prev > 0;
+    const diffAbs = hasCur && hasPrev ? m.cur - m.prev : null;
+    const diffPct = hasCur && hasPrev && m.prev > 0
+      ? ((m.cur - m.prev) / m.prev * 100) : null;
+
+    let diffHtml = '';
+    if(diffPct !== null) {
+      const up = m.higherIsBetter===false ? diffAbs < 0 : diffAbs > 0;
+      const flat = Math.abs(diffPct) < 0.5;
+      const cls  = flat ? 'yoy-flat' : up ? 'yoy-up' : 'yoy-down';
+      const arrow = flat ? '→' : (diffAbs > 0 ? '▲' : '▼');
+      diffHtml = `<span class="yoy-diff ${cls}">${arrow}${Math.abs(diffPct).toFixed(1)}%</span>`;
+    }
+
+    // バー（今期/前年の比率）
+    const barPct = hasCur && hasPrev && m.prev > 0
+      ? Math.min(140, Math.round(m.cur/m.prev*100)) : 100;
+
+    return `<div class="yoy-card">
+      <div class="yoy-label">${m.label}</div>
+      <div class="yoy-row">
+        <div>
+          <div class="yoy-cur">${hasCur ? m.fmt(m.cur) : '—'}</div>
+          <div class="yoy-prev"><span>前年同期 </span>${hasPrev ? m.fmt(m.prev) : '—'}</div>
+        </div>
+        ${diffHtml}
+      </div>
+      ${hasCur && hasPrev ? `
+      <div class="yoy-bar-bg">
+        <div class="yoy-bar" style="width:${Math.min(100,barPct)}%;background:${barPct>=100?'var(--green)':'var(--red)'}"></div>
+      </div>` : ''}
+    </div>`;
+  }).join('');
+
+  document.getElementById('yoy-cards').innerHTML = cardsHtml;
+}
+
 function renderAll() {
+  renderYoY();
   const rows = filterRows(allDailyRows);
   if(!rows.length) return;
   buildKPI(rows);
