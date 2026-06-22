@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-23T06:56:34.120845+09:00",
+  "fetched_at": "2026-06-23T08:16:39.697705+09:00",
   "date": "20260623",
   "count": 15,
   "events": [
@@ -185,7 +185,7 @@
       "owner_id": 852824,
       "owner_nickname": "d-plus",
       "owner_display_name": "D-Plus運営事務局",
-      "accepted": 12,
+      "accepted": 11,
       "waiting": 0,
       "updated_at": "2026-06-19T19:16:25+09:00"
     },
@@ -283,37 +283,6 @@
       "updated_at": "2026-06-21T22:33:28+09:00"
     },
     {
-      "id": 395359,
-      "title": "OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える",
-      "catch": "",
-      "description": "<h1><strong>OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える</strong></h1>\n<p>本イベントでは、昨今増え続けるソフトウェアサプライチェーン侵害について、OSS開発者視点での知見や課題意識を共有し、対策を考えます。<br>第一線でOSSを開発・運営する当事者が実践知を持ち寄り、自身のプロジェクト運営やOSSの利用に活かせる学びを得る場にすることを目指します。</p>\n<h3>開催日時</h3>\n<p>2026年6月23日（火）19:00~ （18:30開場）</p>\n<h3>開催場所</h3>\n<p>株式会社LayerX イベントスペース<br>\n東京都中央区築地1-13-1 銀座松竹スクエア 5階</p>\n<p>※本イベントはオフラインのみでの開催です。</p>\n<h3>タイムテーブル</h3>\n<p>タイムテーブル、セッション詳細は随時更新します。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30 ~ 19:00</td>\n<td><strong>受付</strong></td>\n</tr>\n<tr>\n<td>19:00 ~ 19:05</td>\n<td><strong>開会のご挨拶</strong></td>\n</tr>\n<tr>\n<td>19:05 ~ 19:15</td>\n<td><strong>スポンサーセッション</strong></td>\n</tr>\n<tr>\n<td>19:15 ~ 19:30</td>\n<td><strong>セッション①：PRを取り込むのが怖くなった理由</strong><br>Kyohei</td>\n</tr>\n<tr>\n<td>19:35 ~ 19:50</td>\n<td><strong>セッション②：Honoでのサプライチェーン攻撃対策</strong><br>Yusuke Wada</td>\n</tr>\n<tr>\n<td>19:55 ~ 20:10</td>\n<td><strong>セッション③：Hardening npm Publishing</strong><br>azu</td>\n</tr>\n<tr>\n<td>20:15 ~ 20:25</td>\n<td><strong>セッション総括</strong><br>GMO Flatt Security株式会社 Co-CTO 米内貴志</td>\n</tr>\n<tr>\n<td>20:25 ~ 20:55</td>\n<td><strong>懇親会</strong></td>\n</tr>\n<tr>\n<td>20:55 ~ 21:00</td>\n<td><strong>閉会のご挨拶</strong></td>\n</tr>\n</tbody>\n</table>\n<h3>セッション &amp; 登壇者紹介</h3>\n<h4>セッション①：PRを取り込むのが怖くなった理由</h4>\n<p>OSS開発者がレビューしているのはコード差分だけではなく、コントリビューターの信頼性、依存、CIなど多岐に渡ります。\n本セッションでは、PRを取り込むことへの怖さを起点に、サプライチェーン侵害の時代にOSS開発者が苦しんでいること、失敗談や運用知見をどうエコシステムへ返していくかを話します。</p>\n<p><code>写真撮影OK・SNS投稿OK・資料公開予定</code></p>\n<p><strong>Kyohei <a href=\"https://x.com/labelmake\" rel=\"nofollow\">@labelmake</a></strong></p>\n<p><img src=\"https://avatars.githubusercontent.com/u/24843808?v=4\" width=\"120\"></p>\n<p>OSSの文化が大好きで、いくつかのライブラリや翻訳プロジェクトに貢献していました。その後、2020年からpdfmeというMITライセンスの帳票ライブラリを自身で開発しています。OSSエコシステム、バイブコーディングとセキュリティなどに興味があります。</p>\n<h4>セッション②：Honoでのサプライチェーン侵害対策 〜 3つのライブラリに学ぶ</h4>\n<p>サプライチェーン攻撃について、Honoを題材にライブラリサイドから語ります。Honoでは今、何が起こっているのか？将来、何が起こりそうなのか？そしてその対策。具体的にはnpmパッケージの公開、GitHubプロジェクトの管理についてです。</p>\n<p><code>写真撮影OK・SNS投稿OK・資料公開予定</code></p>\n<p><strong>Yusuke Wada <a href=\"https://x.com/yusukebe\" rel=\"nofollow\">@yusukebe</a></strong></p>\n<p><img src=\"https://avatars.githubusercontent.com/u/10682?v=4\" width=\"120\"></p>\n<p>Cloudflare Developer Advocate、Hono作者</p>\n<h4>セッション③：Hardening npm Publishing</h4>\n<p>npmは依存が深く、1つのパッケージの侵害が広い範囲に波及します。攻撃者は一番弱い場所を狙うため、1つの対策で守れる魔法の弾丸はありません。\n数百個のパッケージを公開する立場から、ローカルのトークン管理、OIDC Trusted Publishingによるトークンレス公開、GitHub ActionsでのRelease PRと公開前の承認ステップ、npm staged publishingまで、公開フローに最小権限と承認を積み重ねていくフローについて解説します。</p>\n<p><code>人物写真撮影NG・SNS投稿OK・資料公開予定</code></p>\n<p><strong>azu <a href=\"https://x.com/azu_re\" rel=\"nofollow\">@azu_re</a></strong></p>\n<p><img src=\"https://avatars.githubusercontent.com/u/19714?v=4\" width=\"120\"></p>\n<p>jsprimer/JSer.info著者、textlint/secretlint/HonKit作者、月に約90パッケージ・160回以上npm publishしています。</p>\n<h4>スポンサーセッション：LayerX コーポレートエンジニアリング室におけるサプライチェーンセキュリティへの取り組み</h4>\n<p><strong>竹山 雄也 / LayerX コーポレートエンジニア <a href=\"https://x.com/yuya_takeyama\" rel=\"nofollow\">@yuya_takeyama</a></strong></p>\n<p><img src=\"https://avatars.githubusercontent.com/u/241542?v=4\" width=\"120\"></p>\n<p>新卒ではWebエンジニアとしてPHPなどでの開発を経験。2社目でRails/Reactでの開発を経験した後、SREチームに異動し、日本とグローバルチームのマネージャーを経験。少しずつ横にずれながら、3社目ではLayerXにコーポレートエンジニアとして入社。2025年は会社の行動指針がBet AIに変わったのもあり、AI関連の仕事に従事。</p>\n<h4>司会</h4>\n<p><strong>GMO Flatt Security株式会社 Co-CTO 米内貴志 <a href=\"https://x.com/lmt_swallow\" rel=\"nofollow\">@lmt_swallow</a></strong></p>\n<p><img src=\"https://gyazo.com/c48bc806ae1d8079c7301e308cbfd718.jpg\" width=\"120\"></p>\n<p>2019年に入社。2021年6月にCTOに就任以後、同社にて製品セキュリティに関するソリューションの研究開発を牽引する。その他、サイバーセキュリティ国際会議「CODE BLUE 2024」レビューボード、サイバーセキュリティ競技「International Cybersecurity Challenge 2023」アジア代表チームキャプテン等を歴任。著書に『Webブラウザセキュリティ ― Webアプリケーションの安全性を支える仕組みを整理する』（2021年、ラムダノート社）等。</p>\n<h4>会場スポンサー</h4>\n<p><a href=\"https://layerx.co.jp/\" rel=\"nofollow\"><img src=\"https://gyazo.com/31047f60be5cef370e1933c674938f65.png\" width=\"300\"></a></p>\n<p>LayerXは、「すべての経済活動を、デジタル化する。」をミッションに掲げるAIカンパニーです。バックオフィス向けAIクラウド「バクラク」事業、Fintech事業、エンタープライズ向けAIプラットフォーム「Ai Workforce」事業などの複合的な事業を通して日本の社会課題を解決し、AIの力で人々の創造力がより発揮される未来をつくります。</p>\n<h3>参加にあたってのお願い</h3>\n<ul>\n<li>本イベントには<a href=\"https://flatt.tech/anti-harassment/\" rel=\"nofollow\">アンチハラスメントポリシー</a>が適用されます。事前にご確認ください。</li>\n<li>勧誘・採用・宣伝目的のご参加はお断りします。</li>\n<li>お酒の提供を伴うイベントの特性上、ご参加は20歳以上の方に限定させていただきます。</li>\n</ul>\n<h3>持ち物</h3>\n<ul>\n<li>受付票</li>\n</ul>",
-      "url": "https://flatt.connpass.com/event/395359/",
-      "image_url": "https://media.connpass.com/thumbs/67/01/6701561b2837ee6452063f6228f08b0c.png",
-      "hash_tag": "oss_supplychain",
-      "started_at": "2026-06-23T19:00:00+09:00",
-      "ended_at": "2026-06-23T21:00:00+09:00",
-      "published_at": "2026-06-04T19:31:38+09:00",
-      "limit": 100,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 11598,
-        "subdomain": "flatt",
-        "title": "GMO Flatt Security",
-        "url": "https://flatt.connpass.com/"
-      },
-      "address": "東京都中央区築地1-13-1 銀座松竹スクエア 5階",
-      "place": "株式会社LayerX イベントスペース",
-      "lat": "35.668390500000",
-      "lon": "139.769413700000",
-      "owner_id": 575303,
-      "owner_nickname": "FuyukiKimura",
-      "owner_display_name": "fkim",
-      "accepted": 90,
-      "waiting": 0,
-      "updated_at": "2026-06-22T16:16:14+09:00"
-    },
-    {
       "id": 395985,
       "title": "目黒もくもく会",
       "catch": "ITエンジニアの方、ITエンジニア目指している方、仲間を増やしたい方",
@@ -366,9 +335,40 @@
       "owner_id": 791229,
       "owner_nickname": "sontixyou",
       "owner_display_name": "sontixyou",
-      "accepted": 794,
+      "accepted": 796,
       "waiting": 3,
       "updated_at": "2026-06-22T16:09:15+09:00"
+    },
+    {
+      "id": 395359,
+      "title": "OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える",
+      "catch": "",
+      "description": "<h1><strong>OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える</strong></h1>\n<p>本イベントでは、昨今増え続けるソフトウェアサプライチェーン侵害について、OSS開発者視点での知見や課題意識を共有し、対策を考えます。<br>第一線でOSSを開発・運営する当事者が実践知を持ち寄り、自身のプロジェクト運営やOSSの利用に活かせる学びを得る場にすることを目指します。</p>\n<h3>開催日時</h3>\n<p>2026年6月23日（火）19:00~ （18:30開場）</p>\n<h3>開催場所</h3>\n<p>株式会社LayerX イベントスペース<br>\n東京都中央区築地1-13-1 銀座松竹スクエア 5階</p>\n<p>※本イベントはオフラインのみでの開催です。</p>\n<h3>タイムテーブル</h3>\n<p>タイムテーブル、セッション詳細は随時更新します。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30 ~ 19:00</td>\n<td><strong>受付</strong></td>\n</tr>\n<tr>\n<td>19:00 ~ 19:05</td>\n<td><strong>開会のご挨拶</strong></td>\n</tr>\n<tr>\n<td>19:05 ~ 19:15</td>\n<td><strong>スポンサーセッション</strong></td>\n</tr>\n<tr>\n<td>19:15 ~ 19:30</td>\n<td><strong>セッション①：PRを取り込むのが怖くなった理由</strong><br>Kyohei</td>\n</tr>\n<tr>\n<td>19:35 ~ 19:50</td>\n<td><strong>セッション②：Honoでのサプライチェーン攻撃対策</strong><br>Yusuke Wada</td>\n</tr>\n<tr>\n<td>19:55 ~ 20:10</td>\n<td><strong>セッション③：Hardening npm Publishing</strong><br>azu</td>\n</tr>\n<tr>\n<td>20:15 ~ 20:25</td>\n<td><strong>セッション総括</strong><br>GMO Flatt Security株式会社 Co-CTO 米内貴志</td>\n</tr>\n<tr>\n<td>20:25 ~ 20:55</td>\n<td><strong>懇親会</strong></td>\n</tr>\n<tr>\n<td>20:55 ~ 21:00</td>\n<td><strong>閉会のご挨拶</strong></td>\n</tr>\n</tbody>\n</table>\n<h3>セッション &amp; 登壇者紹介</h3>\n<h4>セッション①：PRを取り込むのが怖くなった理由</h4>\n<p>OSS開発者がレビューしているのはコード差分だけではなく、コントリビューターの信頼性、依存、CIなど多岐に渡ります。\n本セッションでは、PRを取り込むことへの怖さを起点に、サプライチェーン侵害の時代にOSS開発者が苦しんでいること、失敗談や運用知見をどうエコシステムへ返していくかを話します。</p>\n<p><code>写真撮影OK・SNS投稿OK・資料公開予定</code></p>\n<p><strong>Kyohei <a href=\"https://x.com/labelmake\" rel=\"nofollow\">@labelmake</a></strong></p>\n<p><img src=\"https://avatars.githubusercontent.com/u/24843808?v=4\" width=\"120\"></p>\n<p>OSSの文化が大好きで、いくつかのライブラリや翻訳プロジェクトに貢献していました。その後、2020年からpdfmeというMITライセンスの帳票ライブラリを自身で開発しています。OSSエコシステム、バイブコーディングとセキュリティなどに興味があります。</p>\n<h4>セッション②：Honoでのサプライチェーン侵害対策 〜 3つのライブラリに学ぶ</h4>\n<p>サプライチェーン攻撃について、Honoを題材にライブラリサイドから語ります。Honoでは今、何が起こっているのか？将来、何が起こりそうなのか？そしてその対策。具体的にはnpmパッケージの公開、GitHubプロジェクトの管理についてです。</p>\n<p><code>写真撮影OK・SNS投稿OK・資料公開予定</code></p>\n<p><strong>Yusuke Wada <a href=\"https://x.com/yusukebe\" rel=\"nofollow\">@yusukebe</a></strong></p>\n<p><img src=\"https://avatars.githubusercontent.com/u/10682?v=4\" width=\"120\"></p>\n<p>Cloudflare Developer Advocate、Hono作者</p>\n<h4>セッション③：Hardening npm Publishing</h4>\n<p>npmは依存が深く、1つのパッケージの侵害が広い範囲に波及します。攻撃者は一番弱い場所を狙うため、1つの対策で守れる魔法の弾丸はありません。\n数百個のパッケージを公開する立場から、ローカルのトークン管理、OIDC Trusted Publishingによるトークンレス公開、GitHub ActionsでのRelease PRと公開前の承認ステップ、npm staged publishingまで、公開フローに最小権限と承認を積み重ねていくフローについて解説します。</p>\n<p><code>人物写真撮影NG・SNS投稿OK・資料公開予定</code></p>\n<p><strong>azu <a href=\"https://x.com/azu_re\" rel=\"nofollow\">@azu_re</a></strong></p>\n<p><img src=\"https://avatars.githubusercontent.com/u/19714?v=4\" width=\"120\"></p>\n<p>jsprimer/JSer.info著者、textlint/secretlint/HonKit作者、月に約90パッケージ・160回以上npm publishしています。</p>\n<h4>スポンサーセッション：LayerX コーポレートエンジニアリング室におけるサプライチェーンセキュリティへの取り組み</h4>\n<p><strong>竹山 雄也 / LayerX コーポレートエンジニア <a href=\"https://x.com/yuya_takeyama\" rel=\"nofollow\">@yuya_takeyama</a></strong></p>\n<p><img src=\"https://avatars.githubusercontent.com/u/241542?v=4\" width=\"120\"></p>\n<p>新卒ではWebエンジニアとしてPHPなどでの開発を経験。2社目でRails/Reactでの開発を経験した後、SREチームに異動し、日本とグローバルチームのマネージャーを経験。少しずつ横にずれながら、3社目ではLayerXにコーポレートエンジニアとして入社。2025年は会社の行動指針がBet AIに変わったのもあり、AI関連の仕事に従事。</p>\n<h4>司会</h4>\n<p><strong>GMO Flatt Security株式会社 Co-CTO 米内貴志 <a href=\"https://x.com/lmt_swallow\" rel=\"nofollow\">@lmt_swallow</a></strong></p>\n<p><img src=\"https://gyazo.com/c48bc806ae1d8079c7301e308cbfd718.jpg\" width=\"120\"></p>\n<p>2019年に入社。2021年6月にCTOに就任以後、同社にて製品セキュリティに関するソリューションの研究開発を牽引する。その他、サイバーセキュリティ国際会議「CODE BLUE 2024」レビューボード、サイバーセキュリティ競技「International Cybersecurity Challenge 2023」アジア代表チームキャプテン等を歴任。著書に『Webブラウザセキュリティ ― Webアプリケーションの安全性を支える仕組みを整理する』（2021年、ラムダノート社）等。</p>\n<h4>会場スポンサー</h4>\n<p><a href=\"https://layerx.co.jp/\" rel=\"nofollow\"><img src=\"https://gyazo.com/31047f60be5cef370e1933c674938f65.png\" width=\"300\"></a></p>\n<p>LayerXは、「すべての経済活動を、デジタル化する。」をミッションに掲げるAIカンパニーです。バックオフィス向けAIクラウド「バクラク」事業、Fintech事業、エンタープライズ向けAIプラットフォーム「Ai Workforce」事業などの複合的な事業を通して日本の社会課題を解決し、AIの力で人々の創造力がより発揮される未来をつくります。</p>\n<h3>参加にあたってのお願い</h3>\n<ul>\n<li>本イベントには<a href=\"https://flatt.tech/anti-harassment/\" rel=\"nofollow\">アンチハラスメントポリシー</a>が適用されます。事前にご確認ください。</li>\n<li>勧誘・採用・宣伝目的のご参加はお断りします。</li>\n<li>お酒の提供を伴うイベントの特性上、ご参加は20歳以上の方に限定させていただきます。</li>\n</ul>\n<h3>持ち物</h3>\n<ul>\n<li>受付票</li>\n</ul>",
+      "url": "https://flatt.connpass.com/event/395359/",
+      "image_url": "https://media.connpass.com/thumbs/67/01/6701561b2837ee6452063f6228f08b0c.png",
+      "hash_tag": "oss_supplychain",
+      "started_at": "2026-06-23T19:00:00+09:00",
+      "ended_at": "2026-06-23T21:00:00+09:00",
+      "published_at": "2026-06-04T19:31:38+09:00",
+      "limit": 100,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 11598,
+        "subdomain": "flatt",
+        "title": "GMO Flatt Security",
+        "url": "https://flatt.connpass.com/"
+      },
+      "address": "東京都中央区築地1-13-1 銀座松竹スクエア 5階",
+      "place": "株式会社LayerX イベントスペース",
+      "lat": "35.668390500000",
+      "lon": "139.769413700000",
+      "owner_id": 575303,
+      "owner_nickname": "FuyukiKimura",
+      "owner_display_name": "fkim",
+      "accepted": 90,
+      "waiting": 0,
+      "updated_at": "2026-06-22T16:16:14+09:00"
     },
     {
       "id": 395554,
