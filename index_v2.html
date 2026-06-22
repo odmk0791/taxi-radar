@@ -364,6 +364,9 @@ main::before{
   <!-- 地図パネル -->
   
 </main>
+<div id="v2-drag-handle" onclick="v2ToggleSheet()" style="position:fixed;bottom:calc(55vh - 2px);left:50%;transform:translateX(-50%);width:60px;height:28px;z-index:21;display:flex;align-items:center;justify-content:center;cursor:grab">
+  <div style="width:40px;height:5px;background:var(--bd);border-radius:3px"></div>
+</div>
 <div id="pg-m">
   <div id="spot-map"></div>
 </div>
@@ -1444,6 +1447,83 @@ document.getElementById('setup-save').addEventListener('click',doSaveSetup);
     }
   });
 })();
+
+// v2パッチ: ボトムシートのドラッグ/トグル
+var _v2SheetState = 'half'; // half / full / mini
+function v2ToggleSheet(){
+  var mn = document.querySelector('main');
+  var dh = document.getElementById('v2-drag-handle');
+  if(_v2SheetState === 'half'){
+    _v2SheetState = 'mini';
+    mn.style.height = '120px';
+    mn.style.transition = 'height .3s ease';
+    if(dh) dh.style.bottom = 'calc(120px - 2px)';
+  } else {
+    _v2SheetState = 'half';
+    mn.style.height = '55vh';
+    mn.style.transition = 'height .3s ease';
+    if(dh) dh.style.bottom = 'calc(55vh - 2px)';
+  }
+  if(_mapInited && _leafMap) setTimeout(function(){_leafMap.invalidateSize();}, 350);
+}
+// タッチドラッグ
+(function(){
+  var mn = document.querySelector('main');
+  var dh;
+  function getHandle(){ return document.getElementById('v2-drag-handle'); }
+  var startY, startH;
+  function onStart(e){
+    startY = (e.touches ? e.touches[0] : e).clientY;
+    startH = mn.offsetHeight;
+    mn.style.transition = 'none';
+    e.preventDefault();
+  }
+  function onMove(e){
+    if(startY == null) return;
+    var y = (e.touches ? e.touches[0] : e).clientY;
+    var newH = Math.max(80, Math.min(window.innerHeight * 0.9, startH + (startY - y)));
+    mn.style.height = newH + 'px';
+    var dh2 = getHandle();
+    if(dh2) dh2.style.bottom = (newH - 2) + 'px';
+    e.preventDefault();
+  }
+  function onEnd(){
+    if(startY == null) return;
+    startY = null;
+    mn.style.transition = 'height .3s ease';
+    var h = mn.offsetHeight, vh = window.innerHeight;
+    var target = h < vh*0.2 ? 80 : h < vh*0.65 ? Math.round(vh*0.55) : Math.round(vh*0.88);
+    _v2SheetState = target <= 80 ? 'mini' : target < vh*0.7 ? 'half' : 'full';
+    mn.style.height = target + 'px';
+    var dh2 = getHandle();
+    if(dh2) dh2.style.bottom = (target - 2) + 'px';
+    if(_mapInited && _leafMap) setTimeout(function(){_leafMap.invalidateSize();}, 350);
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    var h = getHandle();
+    if(h){
+      h.addEventListener('touchstart', onStart, {passive:false});
+      document.addEventListener('touchmove', function(e){ if(startY!=null) onMove(e); }, {passive:false});
+      document.addEventListener('touchend', onEnd);
+      h.addEventListener('mousedown', onStart);
+      document.addEventListener('mousemove', function(e){ if(startY!=null) onMove(e); });
+      document.addEventListener('mouseup', onEnd);
+    }
+  });
+})();
+
+// v2パッチ: GPS設定後に地図を自動更新
+var _orig_renderRadar = renderRadar;
+renderRadar = function(){
+  _orig_renderRadar();
+  // renderRadar後にmapも更新
+  if(_mapInited && _leafMap){
+    if(window._spots && window._spots.length) _buildMap();
+    else if(uLat && uLng) _leafMap.setView([uLat, uLng], 14);
+  } else {
+    renderMap();
+  }
+};
 
 // v2パッチ: Leaflet遅延ロード対応の地図初期化
 function _v2InitMap(){
