@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-23T04:19:32.687989+09:00",
+  "fetched_at": "2026-06-23T06:56:34.120845+09:00",
   "date": "20260623",
   "count": 15,
   "events": [
@@ -97,37 +97,6 @@
       "updated_at": "2026-05-14T20:09:15+09:00"
     },
     {
-      "id": 394479,
-      "title": "改善の軌跡から学ぶ！開発生産性向上のこれまでの取り組みと次の一手【D-Plus Tokyo #25】",
-      "catch": "",
-      "description": "<h2>📝イベント概要</h2>\n<p>「開発生産性を上げたい」と思って施策を始めたものの、気づけば手段が目的化していたり、現場に負荷だけが残ってしまったり...<br>\n改善には“うまくいった軌跡”だけでなく、“つまずいた軌跡”もたくさんあると思います。<br></p>\n<p>・メトリクスを追い始めたが、結局どこを見れば良いのかわからない  <br>\n・施策は打っているのに、なぜか現場の納得感が上がらない  <br>\n・仕組みを整えたはずが、運用が続かず形骸化してしまう  <br></p>\n<p>当日は、これまでの取り組みでの学び、そしてこれからの次の一手をテーマにLT（ライトニングトーク）を実施します。<br>\nLT後は恒例の懇親会も開催しますので、「ぶっちゃけ、その施策続いた？」「指標どう落とし込んだ？」など、<br>\nここだけの裏話や悩みをざっくばらんに話せる場にできれば嬉しいです！<br>\n成功事例だけでなく、「これは遠回りだった」「この観点が抜けていた」といったリアルな学びも含めて持ち寄り、<br>\n明日からの改善活動をアップデートするヒントを持ち帰りましょう。<br>\n<br></p>\n<h3>🧑‍💻こんな方におすすめ</h3>\n<p>『開発生産性向上』に向き合っている方なら、どなたでも歓迎です！<br>\n - 開発生産性の改善を進めているが、次の一手が見えなくなっている方<br>\n - 指標（メトリクス）を導入したものの、意思決定や行動に繋げられていない方<br>\n - 施策が形骸化した／運用が続かなかった経験があり、学び直したい方<br>\n - 現場の納得感を損なわずに改善を進める方法を探している方<br>\n - 他社・他チームの「何を試して、何を学んだか」を具体的に知りたい方<br>\n<br></p>\n<h2>開催概要</h2>\n<p><font size=\"3\">📆 開催日時：2026年6月23日（火）19:30-21:30</font>\n<br>\n<font size=\"3\">📍 開催場所：開催場所：株式会社Works Human Intelligence</font>\n<br>\n<font size=\"3\">　　 　 住所：東京都港区虎ノ門2-6-1　虎ノ門ヒルズステーションタワー 10階 </font>\n<br>\n<font size=\"3\">　　 　 アクセス：<br>\n　　　　　・東京メトロ日比谷線「虎ノ門ヒルズ駅」直結<br>\n　　　　　・東京メトロ銀座線「虎ノ門駅」地下通路経由 徒歩6分<br>\n　　　　　・東京メトロ丸ノ内線・千代田線・日比谷線「霞ヶ関駅」A12・A13出口より徒歩8分<br>\n</font>\n<br>\n<font size=\"3\">💰 参加費：無料</font></p>\n<h2>📝当日のコンテンツ</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間　　　　</th>\n<th style=\"text-align: center;\">セッションタイトル</th>\n<th style=\"text-align: center;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00〜19:30    　</td>\n<td style=\"text-align: center;\">開場・受付</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30〜19:45    　</td>\n<td style=\"text-align: center;\">ご挨拶・30秒自己紹介・会社LT</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45〜19:55    　</td>\n<td style=\"text-align: center;\">システムデータの前に知りたかった、アンケートの科学で組織の傾向を掴む開発生産性指標へのアプローチ</td>\n<td style=\"text-align: center;\">株式会社Hacobu / 井田 献一朗</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55〜20:05  　</td>\n<td style=\"text-align: center;\">AI活用を前提としたチーム開発での生産性（仮）</td>\n<td style=\"text-align: center;\">株式会社Sun Asterisk / Kurogoma4D</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05〜20:10   　</td>\n<td style=\"text-align: center;\">休憩（バッファ込）</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10〜20:20   　</td>\n<td style=\"text-align: center;\">開発生産性3倍から10倍の壁</td>\n<td style=\"text-align: center;\">株式会社ADWAYS DEEE / tomoda_naoto</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20〜20:30   　</td>\n<td style=\"text-align: center;\">大規模組織における開発生産性向上の取り組みと苦悩</td>\n<td style=\"text-align: center;\">株式会社Works Human Intelligence / 萩田 篤</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30〜21:30   　</td>\n<td style=\"text-align: center;\">懇親会</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<p><br>※22:00完全撤収、21:30以降は片付けながらお話できると嬉しいです！</p>\n<h2>スピーカー</h2>\n<h3>スピーカー①</h3>\n<p><img src=\"https://res.cloudinary.com/diphg19s2/image/upload/c_pad,w_256,h_256,ar_1:1/v1744195092/ida.kenichiro.png\" width=\"40%\">\n<br>\n<font size=\"3\">井田 献一朗 <a href=\"https://x.com/rinatz3\" rel=\"nofollow\">@rinatz3</a> </font>\n<br>\n<font size=\"3\">株式会社Hacobu</font><br>\n<font size=\"3\">業務委託　技術広報</font>\n<br>\n組織開発や技術広報もこなすフリーランスエンジニア。\n2011年2月に株式会社ナビタイムジャパンに入社し、バックエンドエンジニア、プロジェクトマネージャーを経て2022年11月に株式会社Hacobuに入社。\nエンジニアリングマネージャー、組織開発に従事した後、独立してHacobuで業務委託となる。現在は技術広報を行っている。\n<br></p>\n<h3>スピーカー②</h3>\n<p><img src=\"https://i.gyazo.com/a336fc0796544a6a274aa0d4665985f0.png\" width=\"40%\">\n<br>\n<font size=\"3\">Kurogoma4D </font>\n<br>\n<font size=\"3\">株式会社Sun Asterisk</font><br>\n<font size=\"3\">シニアエンジニア/DevRel</font>\n<br>\n情報工学の専攻として高等専門学校を卒業後、モバイルアプリエンジニアとしてベンチャー企業に入社。その後運送業のDX事業等を経験し、2022年10月Sun*に入社。モバイルアプリ開発のリードとして要件定義、UI/UX設計サポート、開発、テスト設計や技術的な調査を担当。またAIエージェントの業務フロー導入においてのサポートも行う。\n<br></p>\n<h3>スピーカー③</h3>\n<p><img src=\"https://i.gyazo.com/aa4ef728798af5f689d460d73247421a.png\" width=\"40%\">\n<br>\n<font size=\"3\">tomoda_naoto</font>\n<br>\n<font size=\"3\">株式会社ADWAYS DEEE</font><br>\n<font size=\"3\">技術改善ディビジョン バイスゼネラルマネージャー</font>\n<br>\n2012年にエンジニアとして株式会社アドウェイズに入社。プロダクト開発や自社システムの開発を経て、プロジェクトリーダーやスクラムマスターを経験。現在は、複数チームのエンジニアリングマネージャーを務めながら、組織の開発生産性向上やAI活用にも注力しています。モットーは「仕事も楽しく」。チームの垣根を超え、メンバーと切磋琢磨する日々を送っています。\n<br></p>\n<h3>スピーカー④</h3>\n<p><img src=\"https://i.gyazo.com/aa182138cdd4c7f325fcd456a81cb56d.png\" width=\"40%\">\n<br>\n<font size=\"3\">萩田 篤 <a href=\"https://x.com/_athagi\" rel=\"nofollow\">@_athagi</a> </font>\n<br>\n<font size=\"3\">株式会社Works Human Intelligence</font><br>\n<font size=\"3\">Product Div. DX推進部 EM</font>\n<br>\n2016年に前身となる会社に入社。<br>\nインフラやSREを経て、現在は開発部署のDevExやその周辺の周辺業務においてやれることならなんでもやってます。最近は生成AIを軸に、開発生産性、組織浸透、AIネイティブな業務設計のあり方を探っています。\n<br></p>\n<p><br></p>\n<h1>⚠️諸注意</h1>\n<ul>\n<li>お申し込みいただいた人数が多い場合は、抽選とさせていただきます。</li>\n<li>万一抽選となった場合、ConnpassもしくはX（旧Twitter）等で、6/16（火）までに抽選結果を通知いたします。<br>（※抽選でない場合は通知いたしません）</li>\n<li>開催人数は30-50名程度を予定しています。</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください。</li>\n<li>飲食や勧誘などを目的とした参加は固くお断りします。運営側で当イベントの対象や目的に反すると判断した場合、キャンセル・退席していただくことがございます。</li>\n<li>会場内では、写真や動画撮影が行われる予定のため会場内の参加者の皆様が映り込む場合があります。 それらは、SNSなどで掲載される場合がありますので、あらかじめご了承ください。</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>悪天候等により、運営事務局の判断にてイベントを中止する場合があります。</li>\n<li>運営の状況によりスケジュール、内容は変更となる場合があります。</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、 誰もが気持ちよく参加できるようにご協力ください。</li>\n<li><strong>当日の緊急連絡先は、お申込後に公開される「参加者への情報」をご確認ください。</strong></li>\n</ul>\n<h1>🤝会場スポンサー</h1>\n<p><img src=\"https://cdn.phototourl.com/free/2026-05-25-8ca43101-ecc6-4367-b5cd-c68d2b5006d8.jpg\" width=\"70%\"><br>\n<font size=\"3\"><a href=\"https://www.works-hi.co.jp/\" rel=\"nofollow\">株式会社Works Human Intelligence</a></font>\n<br>WHIは大手企業および公共・公益法人向け統合人事システム「COMPANY」の開発・販売・サポートの他、HR関連サービスの提供を行っています。<br>\n「COMPANY」は、人事管理、給与計算、勤怠管理、タレントマネジメント等、人的資本マネジメントにまつわる業務領域を広くカバーしており、約1,200法人グループへの導入実績を持つ、ERP市場 人事・給与業務分野 シェアNo.1※の製品です。\n私たちは、「人に真価を。」というコーポレートブランドのもと、企業と従業員の両者の価値を最大化するソリューションを提供することで、すべての人が「真価」を発揮し、情熱と貢献意欲を持って「はたらく」を楽しむ社会を実現します。\n※2024年度　ERP市場 - 人事・給与業務分野：ベンダー別売上金額シェア　出典：ITR「ITR Market View：ERP市場2026」\n<br>- <a href=\"youtube.com/watch?si=5b-FGwed1x4kNJdy&amp;v=A5m07_otDQ0&amp;feature=youtu.be\" rel=\"nofollow\">Works Human Intelligence紹介動画</a><br>- <a href=\"https://speakerdeck.com/whisaiyo/works-human-intelligence-engineer\" rel=\"nofollow\">エンジニア向け会社紹介資料</a><br>- <a href=\"https://qiita.com/organizations/works-hi?page=1\" rel=\"nofollow\">エンジニアブログ</a><br>- <a href=\"https://www.works-hi.co.jp/\" rel=\"nofollow\">会社ホームページ　実績、特徴、機能、導入事例など</a><br>- <a href=\"https://www.career.works-hi.co.jp/\" rel=\"nofollow\">採用ホームページ　活躍社員の想いを知る(社員インタビュー)</a><br>\n<br></p>\n<p><br></p>",
-      "url": "https://d-plus.connpass.com/event/394479/",
-      "image_url": "https://media.connpass.com/thumbs/b0/e3/b0e3fa1988a2b6bd55c80555dae46989.png",
-      "hash_tag": "でぃーぷらすトウキョウ",
-      "started_at": "2026-06-23T19:30:00+09:00",
-      "ended_at": "2026-06-23T21:30:00+09:00",
-      "published_at": "2026-05-20T21:01:10+09:00",
-      "limit": 33,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14809,
-        "subdomain": "d-plus",
-        "title": "D-Plus｜開発生産性コミュニティ",
-        "url": "https://d-plus.connpass.com/"
-      },
-      "address": "東京都港区虎ノ門2-6-1（虎ノ門ヒルズステーションタワー 10階）",
-      "place": "株式会社Works Human Intelligence",
-      "lat": "35.667881100000",
-      "lon": "139.747080100000",
-      "owner_id": 852824,
-      "owner_nickname": "d-plus",
-      "owner_display_name": "D-Plus運営事務局",
-      "accepted": 13,
-      "waiting": 0,
-      "updated_at": "2026-06-19T19:16:25+09:00"
-    },
-    {
       "id": 394777,
       "title": "SaaSがこの先生きのこるには #2",
       "catch": "組織・個人としてSaaS is Dead にどう向き合うか",
@@ -188,6 +157,37 @@
       "accepted": 34,
       "waiting": 0,
       "updated_at": "2026-06-22T21:39:57+09:00"
+    },
+    {
+      "id": 394479,
+      "title": "改善の軌跡から学ぶ！開発生産性向上のこれまでの取り組みと次の一手【D-Plus Tokyo #25】",
+      "catch": "",
+      "description": "<h2>📝イベント概要</h2>\n<p>「開発生産性を上げたい」と思って施策を始めたものの、気づけば手段が目的化していたり、現場に負荷だけが残ってしまったり...<br>\n改善には“うまくいった軌跡”だけでなく、“つまずいた軌跡”もたくさんあると思います。<br></p>\n<p>・メトリクスを追い始めたが、結局どこを見れば良いのかわからない  <br>\n・施策は打っているのに、なぜか現場の納得感が上がらない  <br>\n・仕組みを整えたはずが、運用が続かず形骸化してしまう  <br></p>\n<p>当日は、これまでの取り組みでの学び、そしてこれからの次の一手をテーマにLT（ライトニングトーク）を実施します。<br>\nLT後は恒例の懇親会も開催しますので、「ぶっちゃけ、その施策続いた？」「指標どう落とし込んだ？」など、<br>\nここだけの裏話や悩みをざっくばらんに話せる場にできれば嬉しいです！<br>\n成功事例だけでなく、「これは遠回りだった」「この観点が抜けていた」といったリアルな学びも含めて持ち寄り、<br>\n明日からの改善活動をアップデートするヒントを持ち帰りましょう。<br>\n<br></p>\n<h3>🧑‍💻こんな方におすすめ</h3>\n<p>『開発生産性向上』に向き合っている方なら、どなたでも歓迎です！<br>\n - 開発生産性の改善を進めているが、次の一手が見えなくなっている方<br>\n - 指標（メトリクス）を導入したものの、意思決定や行動に繋げられていない方<br>\n - 施策が形骸化した／運用が続かなかった経験があり、学び直したい方<br>\n - 現場の納得感を損なわずに改善を進める方法を探している方<br>\n - 他社・他チームの「何を試して、何を学んだか」を具体的に知りたい方<br>\n<br></p>\n<h2>開催概要</h2>\n<p><font size=\"3\">📆 開催日時：2026年6月23日（火）19:30-21:30</font>\n<br>\n<font size=\"3\">📍 開催場所：開催場所：株式会社Works Human Intelligence</font>\n<br>\n<font size=\"3\">　　 　 住所：東京都港区虎ノ門2-6-1　虎ノ門ヒルズステーションタワー 10階 </font>\n<br>\n<font size=\"3\">　　 　 アクセス：<br>\n　　　　　・東京メトロ日比谷線「虎ノ門ヒルズ駅」直結<br>\n　　　　　・東京メトロ銀座線「虎ノ門駅」地下通路経由 徒歩6分<br>\n　　　　　・東京メトロ丸ノ内線・千代田線・日比谷線「霞ヶ関駅」A12・A13出口より徒歩8分<br>\n</font>\n<br>\n<font size=\"3\">💰 参加費：無料</font></p>\n<h2>📝当日のコンテンツ</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間　　　　</th>\n<th style=\"text-align: center;\">セッションタイトル</th>\n<th style=\"text-align: center;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00〜19:30    　</td>\n<td style=\"text-align: center;\">開場・受付</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30〜19:45    　</td>\n<td style=\"text-align: center;\">ご挨拶・30秒自己紹介・会社LT</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45〜19:55    　</td>\n<td style=\"text-align: center;\">システムデータの前に知りたかった、アンケートの科学で組織の傾向を掴む開発生産性指標へのアプローチ</td>\n<td style=\"text-align: center;\">株式会社Hacobu / 井田 献一朗</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55〜20:05  　</td>\n<td style=\"text-align: center;\">AI活用を前提としたチーム開発での生産性（仮）</td>\n<td style=\"text-align: center;\">株式会社Sun Asterisk / Kurogoma4D</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05〜20:10   　</td>\n<td style=\"text-align: center;\">休憩（バッファ込）</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10〜20:20   　</td>\n<td style=\"text-align: center;\">開発生産性3倍から10倍の壁</td>\n<td style=\"text-align: center;\">株式会社ADWAYS DEEE / tomoda_naoto</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20〜20:30   　</td>\n<td style=\"text-align: center;\">大規模組織における開発生産性向上の取り組みと苦悩</td>\n<td style=\"text-align: center;\">株式会社Works Human Intelligence / 萩田 篤</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30〜21:30   　</td>\n<td style=\"text-align: center;\">懇親会</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<p><br>※22:00完全撤収、21:30以降は片付けながらお話できると嬉しいです！</p>\n<h2>スピーカー</h2>\n<h3>スピーカー①</h3>\n<p><img src=\"https://res.cloudinary.com/diphg19s2/image/upload/c_pad,w_256,h_256,ar_1:1/v1744195092/ida.kenichiro.png\" width=\"40%\">\n<br>\n<font size=\"3\">井田 献一朗 <a href=\"https://x.com/rinatz3\" rel=\"nofollow\">@rinatz3</a> </font>\n<br>\n<font size=\"3\">株式会社Hacobu</font><br>\n<font size=\"3\">業務委託　技術広報</font>\n<br>\n組織開発や技術広報もこなすフリーランスエンジニア。\n2011年2月に株式会社ナビタイムジャパンに入社し、バックエンドエンジニア、プロジェクトマネージャーを経て2022年11月に株式会社Hacobuに入社。\nエンジニアリングマネージャー、組織開発に従事した後、独立してHacobuで業務委託となる。現在は技術広報を行っている。\n<br></p>\n<h3>スピーカー②</h3>\n<p><img src=\"https://i.gyazo.com/a336fc0796544a6a274aa0d4665985f0.png\" width=\"40%\">\n<br>\n<font size=\"3\">Kurogoma4D </font>\n<br>\n<font size=\"3\">株式会社Sun Asterisk</font><br>\n<font size=\"3\">シニアエンジニア/DevRel</font>\n<br>\n情報工学の専攻として高等専門学校を卒業後、モバイルアプリエンジニアとしてベンチャー企業に入社。その後運送業のDX事業等を経験し、2022年10月Sun*に入社。モバイルアプリ開発のリードとして要件定義、UI/UX設計サポート、開発、テスト設計や技術的な調査を担当。またAIエージェントの業務フロー導入においてのサポートも行う。\n<br></p>\n<h3>スピーカー③</h3>\n<p><img src=\"https://i.gyazo.com/aa4ef728798af5f689d460d73247421a.png\" width=\"40%\">\n<br>\n<font size=\"3\">tomoda_naoto</font>\n<br>\n<font size=\"3\">株式会社ADWAYS DEEE</font><br>\n<font size=\"3\">技術改善ディビジョン バイスゼネラルマネージャー</font>\n<br>\n2012年にエンジニアとして株式会社アドウェイズに入社。プロダクト開発や自社システムの開発を経て、プロジェクトリーダーやスクラムマスターを経験。現在は、複数チームのエンジニアリングマネージャーを務めながら、組織の開発生産性向上やAI活用にも注力しています。モットーは「仕事も楽しく」。チームの垣根を超え、メンバーと切磋琢磨する日々を送っています。\n<br></p>\n<h3>スピーカー④</h3>\n<p><img src=\"https://i.gyazo.com/aa182138cdd4c7f325fcd456a81cb56d.png\" width=\"40%\">\n<br>\n<font size=\"3\">萩田 篤 <a href=\"https://x.com/_athagi\" rel=\"nofollow\">@_athagi</a> </font>\n<br>\n<font size=\"3\">株式会社Works Human Intelligence</font><br>\n<font size=\"3\">Product Div. DX推進部 EM</font>\n<br>\n2016年に前身となる会社に入社。<br>\nインフラやSREを経て、現在は開発部署のDevExやその周辺の周辺業務においてやれることならなんでもやってます。最近は生成AIを軸に、開発生産性、組織浸透、AIネイティブな業務設計のあり方を探っています。\n<br></p>\n<p><br></p>\n<h1>⚠️諸注意</h1>\n<ul>\n<li>お申し込みいただいた人数が多い場合は、抽選とさせていただきます。</li>\n<li>万一抽選となった場合、ConnpassもしくはX（旧Twitter）等で、6/16（火）までに抽選結果を通知いたします。<br>（※抽選でない場合は通知いたしません）</li>\n<li>開催人数は30-50名程度を予定しています。</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください。</li>\n<li>飲食や勧誘などを目的とした参加は固くお断りします。運営側で当イベントの対象や目的に反すると判断した場合、キャンセル・退席していただくことがございます。</li>\n<li>会場内では、写真や動画撮影が行われる予定のため会場内の参加者の皆様が映り込む場合があります。 それらは、SNSなどで掲載される場合がありますので、あらかじめご了承ください。</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>悪天候等により、運営事務局の判断にてイベントを中止する場合があります。</li>\n<li>運営の状況によりスケジュール、内容は変更となる場合があります。</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、 誰もが気持ちよく参加できるようにご協力ください。</li>\n<li><strong>当日の緊急連絡先は、お申込後に公開される「参加者への情報」をご確認ください。</strong></li>\n</ul>\n<h1>🤝会場スポンサー</h1>\n<p><img src=\"https://cdn.phototourl.com/free/2026-05-25-8ca43101-ecc6-4367-b5cd-c68d2b5006d8.jpg\" width=\"70%\"><br>\n<font size=\"3\"><a href=\"https://www.works-hi.co.jp/\" rel=\"nofollow\">株式会社Works Human Intelligence</a></font>\n<br>WHIは大手企業および公共・公益法人向け統合人事システム「COMPANY」の開発・販売・サポートの他、HR関連サービスの提供を行っています。<br>\n「COMPANY」は、人事管理、給与計算、勤怠管理、タレントマネジメント等、人的資本マネジメントにまつわる業務領域を広くカバーしており、約1,200法人グループへの導入実績を持つ、ERP市場 人事・給与業務分野 シェアNo.1※の製品です。\n私たちは、「人に真価を。」というコーポレートブランドのもと、企業と従業員の両者の価値を最大化するソリューションを提供することで、すべての人が「真価」を発揮し、情熱と貢献意欲を持って「はたらく」を楽しむ社会を実現します。\n※2024年度　ERP市場 - 人事・給与業務分野：ベンダー別売上金額シェア　出典：ITR「ITR Market View：ERP市場2026」\n<br>- <a href=\"youtube.com/watch?si=5b-FGwed1x4kNJdy&amp;v=A5m07_otDQ0&amp;feature=youtu.be\" rel=\"nofollow\">Works Human Intelligence紹介動画</a><br>- <a href=\"https://speakerdeck.com/whisaiyo/works-human-intelligence-engineer\" rel=\"nofollow\">エンジニア向け会社紹介資料</a><br>- <a href=\"https://qiita.com/organizations/works-hi?page=1\" rel=\"nofollow\">エンジニアブログ</a><br>- <a href=\"https://www.works-hi.co.jp/\" rel=\"nofollow\">会社ホームページ　実績、特徴、機能、導入事例など</a><br>- <a href=\"https://www.career.works-hi.co.jp/\" rel=\"nofollow\">採用ホームページ　活躍社員の想いを知る(社員インタビュー)</a><br>\n<br></p>\n<p><br></p>",
+      "url": "https://d-plus.connpass.com/event/394479/",
+      "image_url": "https://media.connpass.com/thumbs/b0/e3/b0e3fa1988a2b6bd55c80555dae46989.png",
+      "hash_tag": "でぃーぷらすトウキョウ",
+      "started_at": "2026-06-23T19:30:00+09:00",
+      "ended_at": "2026-06-23T21:30:00+09:00",
+      "published_at": "2026-05-20T21:01:10+09:00",
+      "limit": 33,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14809,
+        "subdomain": "d-plus",
+        "title": "D-Plus｜開発生産性コミュニティ",
+        "url": "https://d-plus.connpass.com/"
+      },
+      "address": "東京都港区虎ノ門2-6-1（虎ノ門ヒルズステーションタワー 10階）",
+      "place": "株式会社Works Human Intelligence",
+      "lat": "35.667881100000",
+      "lon": "139.747080100000",
+      "owner_id": 852824,
+      "owner_nickname": "d-plus",
+      "owner_display_name": "D-Plus運営事務局",
+      "accepted": 12,
+      "waiting": 0,
+      "updated_at": "2026-06-19T19:16:25+09:00"
     },
     {
       "id": 393625,
@@ -309,7 +309,7 @@
       "owner_id": 575303,
       "owner_nickname": "FuyukiKimura",
       "owner_display_name": "fkim",
-      "accepted": 91,
+      "accepted": 90,
       "waiting": 0,
       "updated_at": "2026-06-22T16:16:14+09:00"
     },
@@ -366,7 +366,7 @@
       "owner_id": 791229,
       "owner_nickname": "sontixyou",
       "owner_display_name": "sontixyou",
-      "accepted": 793,
+      "accepted": 794,
       "waiting": 3,
       "updated_at": "2026-06-22T16:09:15+09:00"
     },
