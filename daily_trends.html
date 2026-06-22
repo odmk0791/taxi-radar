@@ -119,6 +119,25 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
   .seg-val{font-size:13px}
   .seg-kpi-card{padding:10px 12px}
 }
+
+/* 昨対比カード */
+.yoy-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:8px;
+  padding:14px 16px;display:flex;flex-direction:column;gap:6px
+}
+.yoy-label{font-size:10px;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.06em;font-weight:700}
+.yoy-main-row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.yoy-cur{font-size:22px;font-weight:800;line-height:1}
+.yoy-badge{font-size:12px;font-weight:800;padding:3px 10px;
+  border-radius:20px;white-space:nowrap;flex-shrink:0}
+.yoy-up  {background:rgba(63,185,80,.15); color:var(--green);border:1px solid rgba(63,185,80,.3)}
+.yoy-down{background:rgba(248,81,73,.15); color:var(--red);  border:1px solid rgba(248,81,73,.3)}
+.yoy-flat{background:rgba(139,148,158,.1);color:var(--muted);border:1px solid var(--border)}
+.yoy-prev-row{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+.yoy-prev-val{font-weight:700;color:var(--text);opacity:.6}
+.yoy-bar-bg{height:5px;background:var(--surface2);border-radius:3px;overflow:hidden}
+.yoy-bar-fill{height:5px;border-radius:3px;transition:width .5s}
 </style>
 </head>
 <body>
@@ -567,8 +586,8 @@ function renderYoY() {
   const curLabel2 = cur.length  ? `今期: ${cur.length}出番` : '今期: データなし';
   const prv2      = prev.length ? `前年: ${prev.length}出番` : '前年: データなし';
   document.getElementById('yoy-periods').innerHTML =
-    `<span style="background:rgba(121,192,255,.15);color:var(--blue);padding:3px 10px;border-radius:20px">📅 ${curLabel2}</span>` +
-    `<span style="background:rgba(139,148,158,.12);color:var(--muted);padding:3px 10px;border-radius:20px">📅 ${prv2}同期</span>`;
+    `<span style="background:rgba(121,192,255,.12);color:var(--blue);padding:4px 12px;border-radius:20px;border:1px solid rgba(121,192,255,.2)">今期：${curLabel2}</span>` +
+    `<span style="background:rgba(139,148,158,.1);color:var(--muted);padding:4px 12px;border-radius:20px;border:1px solid var(--border)">前年同期：${prv2}</span>`;
 
   // ── 統計計算 ──────────────────────────────────────────
   const avg = (arr, key) => arr.length ? mean(arr.map(r=>r[key]).filter(v=>v>0)) : 0;
@@ -619,25 +638,26 @@ function renderYoY() {
       const flat = Math.abs(diffPct) < 0.5;
       const cls  = flat ? 'yoy-flat' : up ? 'yoy-up' : 'yoy-down';
       const arrow = flat ? '→' : (diffAbs > 0 ? '▲' : '▼');
-      diffHtml = `<span class="yoy-diff ${cls}">${arrow}${Math.abs(diffPct).toFixed(1)}%</span>`;
+      diffHtml = `<span class="yoy-badge ${cls}">${arrow}${Math.abs(diffPct).toFixed(1)}%</span>`;
     }
 
     // バー（今期/前年の比率）
     const barPct = hasCur && hasPrev && m.prev > 0
       ? Math.min(140, Math.round(m.cur/m.prev*100)) : 100;
 
+    const barColor = barPct>=100 ? 'var(--green)' : 'var(--red)';
     return `<div class="yoy-card">
       <div class="yoy-label">${m.label}</div>
-      <div class="yoy-row">
-        <div>
-          <div class="yoy-cur">${hasCur ? m.fmt(m.cur) : '—'}</div>
-          <div class="yoy-prev"><span>前年同期 </span>${hasPrev ? m.fmt(m.prev) : '—'}</div>
-        </div>
+      <div class="yoy-main-row">
+        <div class="yoy-cur">${hasCur ? m.fmt(m.cur) : '—'}</div>
         ${diffHtml}
       </div>
-      ${hasCur && hasPrev ? `
-      <div class="yoy-bar-bg">
-        <div class="yoy-bar" style="width:${Math.min(100,barPct)}%;background:${barPct>=100?'var(--green)':'var(--red)'}"></div>
+      <div class="yoy-prev-row">
+        <span>前年同期</span>
+        <span class="yoy-prev-val">${hasPrev ? m.fmt(m.prev) : '—'}</span>
+      </div>
+      ${hasCur && hasPrev ? `<div class="yoy-bar-bg">
+        <div class="yoy-bar-fill" style="width:${Math.min(100,barPct)}%;background:${barColor}"></div>
       </div>` : ''}
     </div>`;
   }).join('');
