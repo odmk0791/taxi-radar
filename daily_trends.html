@@ -185,6 +185,13 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
   <div class="stab-row" id="stab-row"></div>
 </div>
 
+<div class="section-title">昨対比（前年同期比）</div>
+
+<div id="yoy-section" style="padding:0 20px 12px">
+  <div id="yoy-periods" style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;font-size:11px;color:var(--muted)"></div>
+  <div id="yoy-cards" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px"></div>
+</div>
+
 <div class="section-title">シフト時間帯別分析（詳細日報）</div>
 
 <!-- 3区間KPIカード -->
@@ -499,6 +506,8 @@ function makeChart(id, cfg) {
 // 昨対比（前年同期比）の計算・描画
 // ══════════════════════════════════════════════════════════
 function renderYoY() {
+  const yoySec = document.getElementById('yoy-section');
+  if(!yoySec) return;  // 要素が存在しない場合は何もしない
   if(!allDailyRows.length) return;
 
   // ── 現在の比較期間を決定 ───────────────────────────────
@@ -549,10 +558,10 @@ function renderYoY() {
   const prev = pick(prevStart, prevEnd);
 
   if(!cur.length && !prev.length) {
-    document.getElementById('yoy-section').style.display='none';
+    yoySec.style.display='none';
     return;
   }
-  document.getElementById('yoy-section').style.display='';
+  yoySec.style.display='';
 
   // ── 期間ラベル表示 ────────────────────────────────────
   const curLabel2 = cur.length  ? `今期: ${cur.length}出番` : '今期: データなし';
