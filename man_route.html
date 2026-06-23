@@ -6,334 +6,592 @@
 <title>年収1000万への道</title>
 <style>
 :root{
-  --ink:#0d0f14;        /* 計器盤の黒 */
-  --panel:#15181f;      /* パネル面 */
-  --panel2:#1c2027;
-  --line:#2a2f3a;       /* ヘアライン */
-  --amber:#ffb000;      /* メーター琥珀 */
-  --amber-dim:#7a5410;
-  --green:#37d36b;      /* 貯金 */
-  --red:#ff5a52;        /* 借金 */
-  --txt:#e8eaed;
-  --mu:#8b91a0;         /* 補助文字 */
-  --mu2:#5a606e;
-  --goal:#ff3b6b;       /* 1000万ライン */
+  --bg:#0a0c10;          /* 夜の車内 */
+  --panel:#13161d;
+  --panel2:#1a1e27;
+  --line:#262b36;
+  --line2:#333a48;
+  --amber:#ffae3c;       /* 計器の琥珀 */
+  --amber-d:#6e4d1a;
+  --cyan:#43d9c4;        /* 実績 */
+  --cyan-d:#1d5a52;
+  --green:#41d97a;
+  --red:#ff5c54;
+  --red-d:#6e2420;
+  --txt:#eef1f5;
+  --mu:#878fa0;
+  --mu2:#525a6b;
+  --goal:#ff4d7d;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html,body{background:var(--ink);color:var(--txt)}
+html,body{background:var(--bg);color:var(--txt)}
 body{
-  font-family:"Helvetica Neue","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
-  max-width:480px;margin:0 auto;padding:0 0 60px;
-  font-feature-settings:"tnum";
+  font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+  max-width:480px;margin:0 auto;padding:0 0 70px;
 }
-/* ── 計器の数字フォント感 ── */
-.dgt{font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.tnum{font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 
-/* ── ヘッダー ── */
-header{
-  padding:22px 20px 16px;border-bottom:1px solid var(--line);
-  position:sticky;top:0;background:linear-gradient(180deg,var(--ink),rgba(13,15,20,.96));z-index:20;backdrop-filter:blur(6px);
-}
-.eyebrow{font-size:10px;letter-spacing:.32em;color:var(--amber);font-weight:700;text-transform:uppercase}
-h1{font-size:21px;font-weight:800;margin-top:4px;letter-spacing:.01em}
-.sub{font-size:11px;color:var(--mu);margin-top:3px}
+/* loading */
+#load{position:fixed;inset:0;background:var(--bg);z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .5s}
+#load.hide{opacity:0;pointer-events:none}
+.spin{width:42px;height:42px;border:3px solid var(--line);border-top-color:var(--amber);border-radius:50%;animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+#loadMsg{font-size:12px;color:var(--mu);letter-spacing:.05em}
 
-/* ── 大計器（残距離メーター） ── */
-.odo{padding:26px 20px 8px;text-align:center}
-.odo-label{font-size:11px;color:var(--mu);letter-spacing:.18em;margin-bottom:6px}
-.odo-big{font-size:clamp(40px,13vw,60px);font-weight:800;line-height:1;color:var(--amber);text-shadow:0 0 22px rgba(255,176,0,.28)}
-.odo-yen{font-size:.42em;vertical-align:.5em;color:var(--amber-dim);font-weight:700;margin-right:2px}
-.odo-cap{font-size:12px;color:var(--mu);margin-top:8px}
-.odo-cap b{color:var(--txt);font-weight:700}
+/* header */
+header{padding:24px 20px 18px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--amber),transparent);opacity:.4}
+.eyebrow{font-size:10px;letter-spacing:.34em;color:var(--amber);font-weight:700}
+h1{font-size:23px;font-weight:800;margin-top:5px;letter-spacing:.02em}
+.hsub{font-size:11.5px;color:var(--mu);margin-top:5px;line-height:1.5}
 
-/* ── ゲージ（1000万への到達率） ── */
-.gauge-wrap{padding:14px 20px 4px}
-.gauge-head{display:flex;justify-content:space-between;align-items:baseline;font-size:11px;color:var(--mu);margin-bottom:7px}
-.gauge-head .pct{font-size:15px;font-weight:800;color:var(--txt)}
-.track{height:14px;background:var(--panel2);border-radius:8px;position:relative;overflow:hidden;border:1px solid var(--line)}
-.fill{height:100%;border-radius:8px 0 0 8px;background:linear-gradient(90deg,#ff8a00,var(--amber));transition:width .9s cubic-bezier(.2,.8,.2,1)}
-.tick-base{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--mu2)}
-.tick-base::after{content:attr(data-l);position:absolute;top:-15px;left:50%;transform:translateX(-50%);font-size:8.5px;color:var(--mu2);white-space:nowrap}
-.scale{display:flex;justify-content:space-between;font-size:9px;color:var(--mu2);margin-top:5px}
+/* dual gauge: 今年着地 / 来年 */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.duo .cell{background:var(--bg);padding:16px 16px 14px}
+.duo .yr{font-size:10px;letter-spacing:.1em;color:var(--mu);font-weight:700}
+.duo .yr b{color:var(--txt)}
+.duo .amt{font-size:24px;font-weight:800;margin-top:6px;line-height:1}
+.duo .cell.now .amt{color:var(--amber)}
+.duo .cell.next .amt{color:var(--cyan)}
+.duo .gap{font-size:11px;margin-top:5px;font-weight:600}
+.duo .gap.miss{color:var(--red)} .duo .gap.ok{color:var(--green)}
+.duo .mini{height:5px;background:var(--panel2);border-radius:3px;margin-top:9px;overflow:hidden}
+.duo .mini i{display:block;height:100%;border-radius:3px}
+.duo .now .mini i{background:linear-gradient(90deg,var(--amber-d),var(--amber))}
+.duo .next .mini i{background:linear-gradient(90deg,var(--cyan-d),var(--cyan))}
+.duo .lbl{font-size:9.5px;color:var(--mu2);margin-top:5px}
 
-/* ── ペース判定（貯金/借金） ── */
-.pace{margin:18px 20px 0;padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--panel)}
-.pace.saving{border-color:rgba(55,211,107,.35);background:linear-gradient(180deg,rgba(55,211,107,.07),var(--panel))}
-.pace.debt{border-color:rgba(255,90,82,.35);background:linear-gradient(180deg,rgba(255,90,82,.07),var(--panel))}
-.pace-top{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mu);margin-bottom:8px}
-.pace-dot{width:8px;height:8px;border-radius:50%}
-.saving .pace-dot{background:var(--green);box-shadow:0 0 10px var(--green)}
-.debt .pace-dot{background:var(--red);box-shadow:0 0 10px var(--red)}
-.pace-amt{font-size:30px;font-weight:800;line-height:1}
-.saving .pace-amt{color:var(--green)} .debt .pace-amt{color:var(--red)}
-.pace-amt .yen{font-size:.5em;font-weight:700;opacity:.7}
-.pace-sub{font-size:11.5px;color:var(--mu);margin-top:8px;line-height:1.55}
-.pace-sub b{color:var(--txt)}
+/* section */
+.sec{display:flex;align-items:baseline;gap:9px;margin:30px 20px 14px}
+.sec h2{font-size:14px;font-weight:800;letter-spacing:.03em}
+.sec .tag{font-size:9.5px;color:var(--mu);margin-left:auto;letter-spacing:.04em}
+.sec .bar{width:3px;height:15px;background:var(--amber);border-radius:2px;align-self:center}
 
-/* ── セクション見出し ── */
-.sec{display:flex;align-items:center;gap:9px;margin:30px 20px 12px}
-.sec-n{font-size:10px;font-weight:800;color:var(--ink);background:var(--amber);width:19px;height:19px;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.sec h2{font-size:14px;font-weight:800;letter-spacing:.02em}
-.sec .note{font-size:10px;color:var(--mu);margin-left:auto}
+/* ===== 棒グラフ ===== */
+.chart{margin:0 12px;padding:18px 10px 10px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+.chart-leg{display:flex;gap:14px;justify-content:center;margin-bottom:14px;font-size:10px;color:var(--mu);flex-wrap:wrap}
+.chart-leg span{display:flex;align-items:center;gap:5px}
+.chart-leg i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.bars{display:flex;align-items:flex-end;gap:3px;height:170px;padding:0 2px}
+.bcol{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative;cursor:pointer}
+.bwrap{width:100%;display:flex;justify-content:center;align-items:flex-end;gap:2px;height:150px;position:relative}
+.btarget{width:42%;background:repeating-linear-gradient(0deg,var(--amber-d),var(--amber-d) 3px,transparent 3px,transparent 6px);border-radius:3px 3px 0 0;opacity:.65}
+.bactual{width:42%;border-radius:3px 3px 0 0;transition:height .8s cubic-bezier(.2,.8,.2,1)}
+.bactual.hit{background:linear-gradient(180deg,var(--cyan),var(--cyan-d))}
+.bactual.miss{background:linear-gradient(180deg,#ff7a73,var(--red-d))}
+.bactual.proj{background:repeating-linear-gradient(135deg,var(--mu2),var(--mu2) 2px,transparent 2px,transparent 5px);opacity:.7}
+.bmon{font-size:9px;color:var(--mu);margin-top:6px;font-weight:600}
+.bcol.cur .bmon{color:var(--amber);font-weight:800}
+.bcol.cur::before{content:"今";position:absolute;top:-4px;font-size:8px;color:var(--amber);font-weight:800}
+.btip{position:absolute;bottom:158px;left:50%;transform:translateX(-50%);background:var(--panel2);border:1px solid var(--line2);border-radius:8px;padding:7px 9px;font-size:10px;white-space:nowrap;z-index:5;display:none;box-shadow:0 6px 20px rgba(0,0,0,.5)}
+.bcol.show .btip{display:block}
+.btip b{color:var(--txt)} .btip .g{color:var(--green)} .btip .r{color:var(--red)}
 
-/* ── 月別テーブル ── */
-.mtable{margin:0 14px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel)}
-.mrow{display:grid;grid-template-columns:38px 1fr 78px 64px;align-items:center;padding:11px 12px;border-bottom:1px solid var(--line);font-size:12px}
+/* 累積借金 折れ線 */
+.debt-wrap{margin:14px 12px 0;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+.debt-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
+.debt-head .t{font-size:12px;color:var(--mu);font-weight:600}
+.debt-head .v{font-size:18px;font-weight:800}
+.debt-head .v.miss{color:var(--red)} .debt-head .v.ok{color:var(--green)}
+.debt-sub{font-size:10.5px;color:var(--mu2);margin-bottom:10px}
+#debtSvg{width:100%;height:120px;display:block}
+
+/* now panel */
+.now-card{margin:0 12px;padding:18px;border-radius:16px;border:1px solid var(--line2);background:linear-gradient(180deg,rgba(255,174,60,.06),var(--panel))}
+.now-top{font-size:11px;color:var(--amber);font-weight:700;letter-spacing:.06em;margin-bottom:3px}
+.now-period{font-size:10.5px;color:var(--mu);margin-bottom:14px}
+.now-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.now-cell .l{font-size:10px;color:var(--mu)}
+.now-cell .v{font-size:20px;font-weight:800;margin-top:3px}
+.now-cell .v.amber{color:var(--amber)} .now-cell .v.cyan{color:var(--cyan)}
+.now-cell .x{font-size:9.5px;color:var(--mu2);margin-top:2px}
+.now-big{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.now-big .l{font-size:11px;color:var(--mu)}
+.now-big .v{font-size:15px;font-weight:700;margin-top:4px;line-height:1.5}
+.now-big .v b{font-size:22px;color:var(--amber)}
+
+.toggle{display:flex;gap:0;margin:14px 12px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.toggle button{flex:1;background:var(--panel);color:var(--mu);border:none;padding:10px;font-size:11.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.toggle button.on{background:var(--panel2);color:var(--amber)}
+
+.manual{margin:12px 12px 0;padding:16px;border:1px dashed var(--line2);border-radius:14px;background:var(--panel);display:none}
+.manual.show{display:block}
+.manual label{font-size:10.5px;color:var(--mu);display:block;margin-bottom:6px}
+.mfield{margin-bottom:10px}
+.manual input,.manual select{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--txt);font-size:15px;font-weight:700;padding:10px 12px;border-radius:9px;font-family:inherit}
+.manual input:focus,.manual select:focus{outline:none;border-color:var(--amber)}
+.mresult{margin-top:6px;font-size:12px;color:var(--mu);line-height:1.6;display:none}
+.mresult.show{display:block}
+.mresult b{color:var(--amber);font-size:16px}
+
+/* table */
+.mtable{margin:0 12px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel)}
+.mrow{display:grid;grid-template-columns:34px 1fr 70px 60px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);font-size:12px}
 .mrow:last-child{border-bottom:none}
-.mrow.head{background:var(--panel2);font-size:9.5px;color:var(--mu);letter-spacing:.06em;font-weight:700;padding:8px 12px}
-.mrow.done{opacity:.95}
-.m-mon{font-weight:800;font-size:13px}
-.m-mon .yk{display:block;font-size:8.5px;color:var(--mu2);font-weight:600;letter-spacing:.04em}
-.m-mon.leave .yk{color:var(--amber)}
-.m-bar{height:7px;background:var(--panel2);border-radius:5px;position:relative;overflow:hidden;margin-right:10px}
-.m-bar i{position:absolute;left:0;top:0;bottom:0;border-radius:5px;background:var(--amber-dim)}
-.m-bar i.act{background:var(--amber)}
-.m-tan{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
-.m-up{text-align:right;font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}
-.m-up.ok{color:var(--green)} .m-up.need{color:var(--amber)}
-.m-detail{grid-column:1/-1;font-size:10.5px;color:var(--mu);padding:2px 2px 0;line-height:1.5;display:none}
+.mrow.head{background:var(--panel2);font-size:9px;color:var(--mu);font-weight:700;letter-spacing:.04em}
+.m-mon{font-weight:800}
+.m-mon .s{display:block;font-size:8px;color:var(--mu2);font-weight:600}
+.m-mon.leave .s{color:var(--amber)}
+.m-bar{height:6px;background:var(--panel2);border-radius:4px;margin-right:8px;overflow:hidden}
+.m-bar i{display:block;height:100%;border-radius:4px}
+.m-val{text-align:right;font-weight:700}
+.m-diff{text-align:right;font-size:10.5px;font-weight:700}
+.m-diff.ok{color:var(--green)} .m-diff.miss{color:var(--red)} .m-diff.proj{color:var(--mu2)}
+.m-detail{grid-column:1/-1;font-size:10px;color:var(--mu);line-height:1.6;padding:4px 2px 0;display:none}
 .mrow.open .m-detail{display:block}
 
-/* ── 係数の説明 ── */
-.coef{margin:14px 20px 0;font-size:11px;color:var(--mu);line-height:1.7;padding:14px 16px;border-left:2px solid var(--amber);background:var(--panel)}
-.coef b{color:var(--txt)}
-.coef .k{color:var(--amber);font-weight:700}
-
-/* ── 入力（今月の進捗） ── */
-.input-card{margin:0 14px;padding:16px;border:1px dashed var(--line);border-radius:14px;background:var(--panel)}
-.input-card label{font-size:11px;color:var(--mu);display:block;margin-bottom:7px}
-.in-row{display:flex;gap:8px;align-items:center}
-.in-row input{flex:1;background:var(--ink);border:1px solid var(--line);color:var(--txt);font-size:18px;font-weight:700;padding:11px 12px;border-radius:9px;font-variant-numeric:tabular-nums;width:100%}
-.in-row input:focus{outline:none;border-color:var(--amber)}
-.in-suffix{font-size:12px;color:var(--mu);white-space:nowrap}
-.in-result{margin-top:12px;font-size:12px;color:var(--mu);line-height:1.6;display:none}
-.in-result.show{display:block}
-.in-result .big{font-size:17px;font-weight:800;color:var(--txt);display:block;margin-top:2px}
-
-/* ── 内訳カード ── */
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 14px}
-.fact{padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
-.fact .l{font-size:10px;color:var(--mu);letter-spacing:.04em}
-.fact .v{font-size:19px;font-weight:800;margin-top:5px;font-variant-numeric:tabular-nums}
-.fact .x{font-size:10px;color:var(--mu2);margin-top:3px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 12px}
+.fact{padding:13px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.fact .l{font-size:9.5px;color:var(--mu)}
+.fact .v{font-size:18px;font-weight:800;margin-top:4px}
+.fact .x{font-size:9px;color:var(--mu2);margin-top:3px;line-height:1.4}
 .fact.wide{grid-column:1/-1}
 
-footer{margin:34px 20px 0;font-size:10px;color:var(--mu2);line-height:1.7;text-align:center}
+.coef{margin:14px 12px 0;font-size:11px;color:var(--mu);line-height:1.7;padding:13px 15px;border-left:2px solid var(--amber);background:var(--panel);border-radius:0 10px 10px 0}
+.coef b{color:var(--txt)} .coef .k{color:var(--amber);font-weight:700}
+
 .divider{height:1px;background:var(--line);margin:30px 20px}
+footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-align:center}
+.verify{margin:12px 12px 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);font-size:10.5px;color:var(--mu);line-height:1.6}
+.verify .ttl{color:var(--amber);font-weight:700;font-size:11px;margin-bottom:5px}
+.verify .ok{color:var(--green)} .verify .warn{color:var(--red)}
 </style>
 </head>
 <body>
 
+<div id="load"><div class="spin"></div><div id="loadMsg">日報データを集計中…</div></div>
+
 <header>
-  <div class="eyebrow">Project ¥10,000,000</div>
+  <div class="eyebrow">PROJECT ¥10,000,000</div>
   <h1>年収1000万への道</h1>
-  <div class="sub">昨年実績 <span class="dgt">865.8万円</span> ／ 目標まで <span class="dgt" style="color:var(--amber);font-weight:700">あと134.2万円</span></div>
+  <div class="hsub">本命は来年到達。今年は地力の伸びと、目標までの距離を見る年。</div>
 </header>
 
-<!-- ── 大計器：残り営収 ── -->
-<div class="odo">
-  <div class="odo-label">1000万まで 残り必要営収（年間）</div>
-  <div class="odo-big dgt"><span class="odo-yen">¥</span><span id="odoRemain">—</span></div>
-  <div class="odo-cap">必要年間営収 <b class="dgt">¥1,582万</b> − 昨年営収 <b class="dgt">¥1,369.6万</b></div>
-</div>
-
-<!-- ── ゲージ ── -->
-<div class="gauge-wrap">
-  <div class="gauge-head">
-    <span>昨年の到達度（年収ベース）</span>
-    <span class="pct dgt" id="gPct">—</span>
+<!-- 今年着地見込み / 来年必要 -->
+<div class="duo">
+  <div class="cell now">
+    <div class="yr"><b>2026</b> 今年の着地見込み</div>
+    <div class="amt tnum" id="nowLand">—</div>
+    <div class="gap miss tnum" id="nowGap">—</div>
+    <div class="mini"><i id="nowMini" style="width:0%"></i></div>
+    <div class="lbl">単価伸び率を後半に適用</div>
   </div>
-  <div class="track">
-    <div class="fill" id="gFill" style="width:0%"></div>
-    <div class="tick-base" id="gBase" data-l="昨年 865.8万" style="left:86.6%"></div>
+  <div class="cell next">
+    <div class="yr"><b>2027</b> 来年1000万に必要</div>
+    <div class="amt tnum" id="nextTan">—</div>
+    <div class="gap tnum" id="nextGrow">—</div>
+    <div class="mini"><i id="nextMini" style="width:0%"></i></div>
+    <div class="lbl">154出番での必要平均単価</div>
   </div>
-  <div class="scale"><span>0</span><span>500万</span><span style="color:var(--goal);font-weight:700">1000万</span></div>
 </div>
 
-<!-- ── ペース判定 ── -->
-<div class="pace" id="paceCard">
-  <div class="pace-top"><span class="pace-dot"></span><span id="paceLabel">2026年 1000万ペースとの差（1〜5月時点）</span></div>
-  <div class="pace-amt dgt"><span class="yen">¥</span><span id="paceAmt">—</span></div>
-  <div class="pace-sub" id="paceSub"></div>
+<!-- 月別到達 棒グラフ -->
+<div class="sec"><span class="bar"></span><h2>月別の到達状況</h2><span class="tag">タップで詳細</span></div>
+<div class="chart">
+  <div class="chart-leg">
+    <span><i style="background:var(--amber-d)"></i>目標ライン</span>
+    <span><i style="background:var(--cyan)"></i>達成</span>
+    <span><i style="background:var(--red)"></i>未達</span>
+    <span><i style="background:var(--mu2)"></i>見込み</span>
+  </div>
+  <div class="bars" id="bars"></div>
 </div>
 
-<!-- ── 月別の必要ライン ── -->
-<div class="sec">
-  <div class="sec-n">A</div>
-  <h2>月別の必要ライン</h2>
-  <span class="note">タップで詳細</span>
+<!-- 累積借金 -->
+<div class="debt-wrap">
+  <div class="debt-head">
+    <span class="t">1000万ペースに対する累積（年収換算）</span>
+    <span class="v miss tnum" id="debtNow">—</span>
+  </div>
+  <div class="debt-sub" id="debtSub">1月からの貯金／借金の推移。確定実線・見込み点線。</div>
+  <svg id="debtSvg" viewBox="0 0 440 120" preserveAspectRatio="none"></svg>
 </div>
 
+<!-- 今期ライブ -->
+<div class="sec"><span class="bar"></span><h2>今この瞬間の進捗</h2><span class="tag" id="liveTag">自動</span></div>
+<div class="now-card">
+  <div class="now-top" id="nowTitle">— 月給</div>
+  <div class="now-period" id="nowPeriod">—</div>
+  <div class="now-grid">
+    <div class="now-cell"><div class="l">今期 営収累計</div><div class="v cyan tnum" id="liveEishu">—</div><div class="x" id="liveDays">—</div></div>
+    <div class="now-cell"><div class="l">今期 目標営収</div><div class="v amber tnum" id="liveTarget">—</div><div class="x" id="liveTan">—</div></div>
+  </div>
+  <div class="now-big">
+    <div class="l" id="liveRemainL">目標まで残り</div>
+    <div class="v" id="liveRemain">—</div>
+  </div>
+</div>
+
+<div class="toggle">
+  <button class="on" id="tabAuto">自動（今期）</button>
+  <button id="tabManual">手入力で試算</button>
+</div>
+<div class="manual" id="manualBox">
+  <div class="mfield"><label>月</label><select id="mSel"></select></div>
+  <div class="mfield"><label>現時点の営収累計（円）</label><input id="mEishu" type="number" inputmode="numeric" placeholder="例 650000"></div>
+  <div class="mfield"><label>消化した出番数</label><input id="mDone" type="number" inputmode="numeric" placeholder="例 7"></div>
+  <div class="mresult" id="mResult"></div>
+</div>
+
+<!-- 月別必要ライン根拠 -->
 <div class="coef">
-  不足分 +212万円/年 を<b>平均で薄く割らず</b>、月ごとの<span class="k">シーズン係数 × 出番数</span>で配分しています。よく稼げる月（8・12月）は高く、底になりやすい月（2・10月）は低く目標を設定。単価は<b>今年7：昨年3</b>の加重で、最近の実力を反映しています。
+  不足分を<b>平均で薄く割らず</b>、月ごとの<span class="k">シーズン係数 × 出番数</span>で配分。よく稼げる月（8・12月）は高く、底になりやすい月（2・10月）は低く設定。単価は<b>今年7：昨年3</b>の加重で最近の実力を反映しています。
 </div>
 
-<div class="mtable" id="mtable" style="margin-top:14px"></div>
+<div class="sec" style="margin-top:24px"><span class="bar"></span><h2>月別 内訳</h2></div>
+<div class="mtable" id="mtable"></div>
+
+<!-- 検算 -->
+<div class="verify" id="verifyBox"></div>
 
 <div class="divider"></div>
-
-<!-- ── 今月の達成チェック ── -->
-<div class="sec">
-  <div class="sec-n">B</div>
-  <h2>今月はあと何営収？</h2>
-</div>
-<div class="input-card">
-  <label>今月の月を選んで、現時点の営収累計を入れると、目標まであと何円／1出番あたりいくら必要かを出します</label>
-  <div class="in-row" style="margin-bottom:9px">
-    <select id="selMon" style="flex:1;background:var(--ink);border:1px solid var(--line);color:var(--txt);font-size:14px;font-weight:700;padding:11px 12px;border-radius:9px"></select>
-  </div>
-  <div class="in-row">
-    <input id="inEishu" type="number" inputmode="numeric" placeholder="現時点の営収累計" />
-    <span class="in-suffix">円</span>
-  </div>
-  <div class="in-row" style="margin-top:9px">
-    <input id="inDone" type="number" inputmode="numeric" placeholder="消化した出番数" style="font-size:14px" />
-    <span class="in-suffix">出番 消化</span>
-  </div>
-  <div class="in-result" id="inResult"></div>
-</div>
-
-<div class="divider"></div>
-
-<!-- ── 内訳 ── -->
-<div class="sec">
-  <div class="sec-n">C</div>
-  <h2>年収の構造（昨年実測）</h2>
-</div>
+<div class="sec"><span class="bar"></span><h2>年収の構造（昨年実測）</h2></div>
 <div class="facts">
-  <div class="fact"><div class="l">営収合計</div><div class="v dgt">¥1,369.6万</div><div class="x">154出番</div></div>
-  <div class="fact"><div class="l">実効係数</div><div class="v dgt" style="color:var(--amber)">63.21%</div><div class="x">年収 ÷ 営収</div></div>
-  <div class="fact"><div class="l">月給（歩合）</div><div class="v dgt">¥729.2万</div><div class="x">営収の53.24%</div></div>
-  <div class="fact"><div class="l">賞与 年3回</div><div class="v dgt">¥136.6万</div><div class="x">営収の9.97%</div></div>
-  <div class="fact wide"><div class="l">想定の前提</div><div class="v dgt" style="font-size:15px">52%＋8%＝60% ではなく 実測63.21%</div><div class="x">調整金・手当ぶん（行って来い）が支給額に乗るため実効は高め。これで逆算しないと「足りない額」が過大に出る</div></div>
+  <div class="fact"><div class="l">2025 営収合計</div><div class="v tnum">¥1,369.6万</div><div class="x">154出番</div></div>
+  <div class="fact"><div class="l">実効係数</div><div class="v tnum" style="color:var(--amber)">63.21%</div><div class="x">年収÷営収（実測）</div></div>
+  <div class="fact"><div class="l">月給（歩合）</div><div class="v tnum">¥729.2万</div><div class="x">営収の53.24%</div></div>
+  <div class="fact"><div class="l">賞与 年3回</div><div class="v tnum">¥136.6万</div><div class="x">営収の9.97%</div></div>
+  <div class="fact wide"><div class="l">想定の前提</div><div class="v tnum" style="font-size:14px">52%＋8%＝60% ではなく 実測63.21%</div><div class="x">調整金・手当（行って来い）が支給額に乗るため実効は高め。52%で逆算すると不足額が過大に出る</div></div>
 </div>
 
-<footer>
-  数値は給与明細PDF（2025年1月〜2026年5月）と各営業実績の照合に基づく。営収＝日々の売上から高速代・アプリ手数料・消費税を引いた額。空転金額は2026/6/3より記録化、今後は会社計算との差異が縮小する想定。<br>
-  係数は今後データ追加で再計算可能。
-</footer>
+<footer id="foot"></footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script>
-// ─────────────────────────────────────────────
-//  確定データ（PDF照合済み・検算一致）
-// ─────────────────────────────────────────────
-const MON=['01','02','03','04','05','06','07','08','09','10','11','12'];
-const MONJP=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
-const LEAVE=[0,4,8]; // 1月・5月＝有給消化指定月(index)
-// 2025フル
+/* ════════════════════════════════════════════════
+   確定データ（給与明細PDF照合済み・検算一致）
+   ════════════════════════════════════════════════ */
+const EFF=0.6321, TARGET=10_000_000, NEED_YEAR=TARGET/EFF; // 必要年間営収
+const NENSHO25=8657782;
+const MJP=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+const LEAVE=[0,4]; // 1月・5月＝有給消化月
+
+// 2025フル（給与明細確定値：営収合計H / 出番G）
 const E25=[1049190,1076920,1145070,1095760,1102710,1182890,1155400,1234450,1181890,1087290,1184960,1199660];
 const D25=[12,13,13,13,12,13,13,13,13,13,13,13];
-// 2026（1〜5月のみ確定）
-const E26=[1011200,1105190,1182000,1230010,1130380,null,null,null,null,null,null,null];
-const D26=[11,13,13,13,12,null,null,null,null,null,null,null];
+// 給与明細 営収(B)・公出(C)・支給額(E)（2025）
+const PAY25=[582953,568099,611557,585719,604854,625809,613975,653386,617945,568752,629197,629738];
+// 2026 確定（1〜5月）
+const E26C=[1011200,1105190,1182000,1230010,1130380];
+const D26C=[11,13,13,13,12];
+// 賞与（営収比に含まれない別給）
+const BONUS={'2025-3':426799,'2025-6':498914,'2025-12':440085,'2026-3':420807};
 
-const EFF=0.6321;               // 実効係数（年収/営収）
-const TARGET=10000000;
-const NEED_YEAR=TARGET/EFF;     // 必要年間営収 ≈15,820,282
-const E25_TOT=E25.reduce((a,b)=>a+b,0);
-const D25_TOT=D25.reduce((a,b)=>a+b,0);
-const NENSHO25=8657782;
+/* ── 期間マスター（締め日 16〜15基準・年初は例外）──
+   [給与年, 給与月, [開始Y,M,D], [終了Y,M,D]] */
+const PERIODS=[
+[2024,2,[2024,1,15],[2024,2,13]],[2024,3,[2024,2,14],[2024,3,15]],[2024,4,[2024,3,16],[2024,4,15]],
+[2024,5,[2024,4,16],[2024,5,15]],[2024,6,[2024,5,16],[2024,6,15]],[2024,7,[2024,6,16],[2024,7,15]],
+[2024,8,[2024,7,16],[2024,8,15]],[2024,9,[2024,8,16],[2024,9,15]],[2024,10,[2024,9,16],[2024,10,15]],
+[2024,11,[2024,10,16],[2024,11,15]],[2024,12,[2024,11,16],[2024,12,15]],[2025,1,[2024,12,16],[2025,1,14]],
+[2025,2,[2025,1,15],[2025,2,13]],[2025,3,[2025,2,14],[2025,3,15]],[2025,4,[2025,3,16],[2025,4,15]],
+[2025,5,[2025,4,16],[2025,5,15]],[2025,6,[2025,5,16],[2025,6,15]],[2025,7,[2025,6,16],[2025,7,15]],
+[2025,8,[2025,7,16],[2025,8,15]],[2025,9,[2025,8,16],[2025,9,15]],[2025,10,[2025,9,16],[2025,10,15]],
+[2025,11,[2025,10,16],[2025,11,15]],[2025,12,[2025,11,16],[2025,12,15]],[2026,1,[2025,12,16],[2026,1,14]],
+[2026,2,[2026,1,15],[2026,2,13]],[2026,3,[2026,2,14],[2026,3,15]],[2026,4,[2026,3,16],[2026,4,15]],
+[2026,5,[2026,4,16],[2026,5,15]],[2026,6,[2026,5,16],[2026,6,15]],[2026,7,[2026,6,16],[2026,7,15]],
+[2026,8,[2026,7,16],[2026,8,15]],[2026,9,[2026,8,16],[2026,9,15]],[2026,10,[2026,9,16],[2026,10,15]],
+[2026,11,[2026,10,16],[2026,11,15]],[2026,12,[2026,11,16],[2026,12,15]],[2027,1,[2026,12,16],[2027,1,14]],
+[2027,2,[2027,1,17],[2027,2,13]],[2027,3,[2027,2,14],[2027,3,15]]
+];
+const DAILY_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
 
-// ── 基準単価：今年7:昨年3（今年なき月は昨年のみ）──
-const W=0.7;
-const tan25=E25.map((e,i)=>e/D25[i]);
-const tan26=E26.map((e,i)=>e?e/D26[i]:null);
-const baseTan=MON.map((_,i)=> tan26[i]!=null ? (W*tan26[i]+(1-W)*tan25[i]) : tan25[i]);
+/* ════════════════════════════════════════════════
+   計算ロジック
+   ════════════════════════════════════════════════ */
+const yen=n=>'¥'+Math.round(n).toLocaleString('ja-JP');
+const man=n=>(n/10000).toFixed(0)+'万';
+const man1=n=>(n/10000).toFixed(1)+'万';
 
-// ── シーズン係数：基準単価 ÷ 出番加重平均単価 ──
-const stdDays=D25.slice();
-const wavg=baseTan.reduce((a,t,i)=>a+t*stdDays[i],0)/D25_TOT;
-const season=baseTan.map(t=>t/wavg);
+// 月別目標営収（シーズン係数×出番数 配分）
+function buildTargets(){
+  const W=0.7;
+  const tan25=E25.map((e,i)=>e/D25[i]);
+  const tan26=MJP.map((_,i)=> i<E26C.length ? E26C[i]/D26C[i] : null);
+  const baseTan=MJP.map((_,i)=> tan26[i]!=null ? W*tan26[i]+(1-W)*tan25[i] : tan25[i]);
+  const stdDays=D25.slice();
+  const Dtot=stdDays.reduce((a,b)=>a+b,0);
+  const wavg=baseTan.reduce((a,t,i)=>a+t*stdDays[i],0)/Dtot;
+  const season=baseTan.map(t=>t/wavg);
+  const weight=MJP.map((_,i)=>season[i]*stdDays[i]);
+  const wsum=weight.reduce((a,b)=>a+b,0);
+  const targetMon=MJP.map((_,i)=>NEED_YEAR*weight[i]/wsum);
+  const targetTan=MJP.map((_,i)=>targetMon[i]/stdDays[i]);
+  return {targetMon,targetTan,season,stdDays,tan25};
+}
 
-// ── 目標配分：season×出番 で必要年間営収を配分 ──
-const weight=MON.map((_,i)=>season[i]*stdDays[i]);
-const wsum=weight.reduce((a,b)=>a+b,0);
-const targetMon=MON.map((_,i)=>NEED_YEAR*weight[i]/wsum);
-const targetTan=MON.map((_,i)=>targetMon[i]/stdDays[i]);
+// 着地見込み：単価伸び率を後半に適用、出番は昨年並み
+function buildProjection(){
+  const tan25=E25.map((e,i)=>e/D25[i]);
+  const growth=[];
+  for(let i=0;i<E26C.length;i++) growth.push((E26C[i]/D26C[i])/tan25[i]);
+  const avgG=growth.reduce((a,b)=>a+b,0)/growth.length;
+  const proj=[];
+  for(let i=0;i<12;i++){
+    if(i<E26C.length){ proj.push({eishu:E26C[i],days:D26C[i],confirmed:true}); }
+    else { const t=tan25[i]*avgG; proj.push({eishu:t*D25[i],days:D25[i],confirmed:false}); }
+  }
+  const landEishu=proj.reduce((a,p)=>a+p.eishu,0);
+  const landNensho=landEishu*EFF;
+  return {proj,avgG,landEishu,landNensho};
+}
 
-// ─────────────────────────────────────────────
-//  描画
-// ─────────────────────────────────────────────
-const yen=n=>Math.round(n).toLocaleString('ja-JP');
-const man=n=>(n/10000).toFixed(1)+'万';
+function dnum(y,m,d){return y*10000+m*100+d;}
+function payMonthOf(y,m,d){
+  const k=dnum(y,m,d);
+  for(const [py,pm,s,e] of PERIODS){
+    if(dnum(...s)<=k && k<=dnum(...e)) return [py,pm];
+  }
+  return null;
+}
 
-// 大計器：残り必要営収
-document.getElementById('odoRemain').textContent=yen(NEED_YEAR-E25_TOT);
+/* ════════════════════════════════════════════════
+   描画
+   ════════════════════════════════════════════════ */
+const T=buildTargets();
+const P=buildProjection();
 
-// ゲージ
-const pct=NENSHO25/TARGET*100;
-document.getElementById('gPct').textContent=pct.toFixed(1)+'%';
-setTimeout(()=>{document.getElementById('gFill').style.width=pct+'%';},120);
+// ── 上部デュアル：今年着地 / 来年必要 ──
+document.getElementById('nowLand').textContent='¥'+man1(P.landNensho)+'円';
+const miss=TARGET-P.landNensho;
+document.getElementById('nowGap').textContent=(miss>0?'1000万まで −':'+')+man1(Math.abs(miss))+'円';
+document.getElementById('nowGap').className='gap tnum '+(miss>0?'miss':'ok');
+document.getElementById('nowMini').style.width=Math.min(P.landNensho/TARGET*100,100)+'%';
 
-// ペース判定（2026 1-5月）
-const cumA=E26.slice(0,5).reduce((a,b)=>a+b,0);
-const cumT=targetMon.slice(0,5).reduce((a,b)=>a+b,0);
-const diffEishu=cumA-cumT;
-const diffNensho=diffEishu*EFF;
-const cum25=E25.slice(0,5).reduce((a,b)=>a+b,0);
-const pc=document.getElementById('paceCard');
-const saving=diffEishu>=0;
-pc.classList.add(saving?'saving':'debt');
-document.getElementById('paceAmt').textContent=(saving?'+':'−')+yen(Math.abs(diffNensho));
-document.getElementById('paceSub').innerHTML=
-  `営収ベースでは <b>${saving?'+':'−'}¥${yen(Math.abs(diffEishu))}</b>（年収換算 上記）。`
-  +`<br>昨年同期 ¥${yen(cum25)} → 今年 ¥${yen(cumA)}（<b>${cumA-cum25>=0?'+':'−'}¥${yen(Math.abs(cumA-cum25))}</b>）。`
-  +(saving
-     ? ` 昨年を上回り、目標ペースも先行。`
-     : ` <b>昨年より伸びているのに目標ラインには届いていない</b> — 1000万の線がそれだけ上にあるということ。`);
+const needTan2027=NEED_YEAR/154;
+const curTanLand=P.landEishu/D25.reduce((a,b)=>a+b,0);
+document.getElementById('nextTan').textContent='¥'+Math.round(needTan2027).toLocaleString();
+const growNeed=(needTan2027/curTanLand-1)*100;
+document.getElementById('nextGrow').textContent='単価あと+'+growNeed.toFixed(1)+'%';
+document.getElementById('nextGrow').className='gap tnum '+(growNeed<=6?'ok':'');
+document.getElementById('nextMini').style.width=Math.min(curTanLand/needTan2027*100,100)+'%';
 
-// 月別テーブル
+// ── 棒グラフ ──
+const barsEl=document.getElementById('bars');
+const maxV=Math.max(...T.targetMon, ...P.proj.map(p=>p.eishu))*1.05;
+let bhtml='';
+for(let i=0;i<12;i++){
+  const tgt=T.targetMon[i], act=P.proj[i].eishu, conf=P.proj[i].confirmed;
+  const th=tgt/maxV*150, ah=act/maxV*150;
+  const hit=act>=tgt;
+  const cls=!conf?'proj':(hit?'hit':'miss');
+  const _td=new Date(); let curMonth=(_td.getDate()>=16?_td.getMonth()+2:_td.getMonth()+1); if(curMonth>12)curMonth-=12;
+  const cur=(curMonth===i+1);
+  const diff=act-tgt;
+  const tipDiff=conf?`<span class="${hit?'g':'r'}">${hit?'+':'−'}${yen(Math.abs(diff))}</span>`:'<span style="color:var(--mu)">見込み</span>';
+  bhtml+=`<div class="bcol ${cur?'cur':''}" data-i="${i}">
+    <div class="btip">${MJP[i]}<br>実績 <b>${yen(act)}</b><br>目標 ${yen(tgt)}<br>${tipDiff}</div>
+    <div class="bwrap">
+      <div class="btarget" style="height:${th}px"></div>
+      <div class="bactual ${cls}" style="height:${ah}px"></div>
+    </div>
+    <div class="bmon">${MJP[i].replace('月','')}</div>
+  </div>`;
+}
+barsEl.innerHTML=bhtml;
+barsEl.querySelectorAll('.bcol').forEach(c=>{
+  c.addEventListener('click',()=>{
+    const was=c.classList.contains('show');
+    barsEl.querySelectorAll('.bcol').forEach(x=>x.classList.remove('show'));
+    if(!was)c.classList.add('show');
+  });
+});
+
+// ── 累積借金 折れ線 ──
+function drawDebt(){
+  const svg=document.getElementById('debtSvg');
+  const W=440,H=120,pad=8;
+  // 各月末時点の累積（実績/見込み営収 − 目標営収）×EFF
+  let cumA=0,cumT=0; const pts=[];
+  for(let i=0;i<12;i++){ cumA+=P.proj[i].eishu; cumT+=T.targetMon[i]; pts.push((cumA-cumT)*EFF); }
+  const maxAbs=Math.max(...pts.map(Math.abs),100000);
+  const x=i=>pad+(W-2*pad)*i/11;
+  const y=v=>H/2 - (v/maxAbs)*(H/2-pad);
+  // ゼロ線
+  let s=`<line x1="${pad}" y1="${H/2}" x2="${W-pad}" y2="${H/2}" stroke="var(--line2)" stroke-width="1" stroke-dasharray="3 3"/>`;
+  // 確定(0-4)実線, 見込み(5-11)点線
+  const confIdx=E26C.length-1; // 4
+  let dConf='',dProj='';
+  pts.forEach((v,i)=>{ const cmd=(i===0?'M':'L')+x(i)+' '+y(v); if(i<=confIdx)dConf+=cmd; });
+  // つなぎ目から見込み
+  dProj='M'+x(confIdx)+' '+y(pts[confIdx]);
+  for(let i=confIdx+1;i<12;i++) dProj+='L'+x(i)+' '+y(pts[i]);
+  s+=`<path d="${dConf}" fill="none" stroke="var(--cyan)" stroke-width="2.5"/>`;
+  s+=`<path d="${dProj}" fill="none" stroke="var(--mu)" stroke-width="2" stroke-dasharray="4 3"/>`;
+  pts.forEach((v,i)=>{ const neg=v<0; s+=`<circle cx="${x(i)}" cy="${y(v)}" r="${i===confIdx?3.5:2.5}" fill="${neg?'var(--red)':'var(--green)'}"/>`; });
+  // 年末着地ラベル
+  const endV=pts[11];
+  s+=`<text x="${W-pad}" y="${y(endV)+(endV<0?14:-7)}" text-anchor="end" font-size="10" fill="${endV<0?'var(--red)':'var(--green)'}" font-weight="700">${endV<0?'−':'+'}${man1(Math.abs(endV))}</text>`;
+  svg.innerHTML=s;
+  // 現在の借金（確定末＝5月時点）
+  const now=pts[confIdx];
+  const el=document.getElementById('debtNow');
+  el.textContent=(now<0?'−':'+')+man1(Math.abs(now))+'円';
+  el.className='v tnum '+(now<0?'miss':'ok');
+  document.getElementById('debtSub').innerHTML=
+    `5月末で <b style="color:${now<0?'var(--red)':'var(--green)'}">${now<0?'借金':'貯金'} ${man1(Math.abs(now))}円</b>。`
+    +`年末見込みは <b style="color:${endV<0?'var(--red)':'var(--green)'}">${endV<0?'−':'+'}${man1(Math.abs(endV))}円</b>（点線）。`;
+}
+drawDebt();
+
+// ── 月別テーブル ──
 const mt=document.getElementById('mtable');
-const maxTarget=Math.max(...targetMon);
-let html=`<div class="mrow head"><span>月</span><span>目標営収/月</span><span style="text-align:right">目標単価</span><span style="text-align:right">昨年比</span></div>`;
-MON.forEach((m,i)=>{
-  const done=E26[i]!=null;
-  const up=targetTan[i]-tan25[i];
-  const barW=targetMon[i]/maxTarget*100;
-  const actW=done? Math.min(E26[i]/targetMon[i]*100,100):0;
+let thtml=`<div class="mrow head"><span>月</span><span>目標/実績</span><span style="text-align:right">実績</span><span style="text-align:right">対目標</span></div>`;
+for(let i=0;i<12;i++){
+  const tgt=T.targetMon[i], act=P.proj[i].eishu, conf=P.proj[i].confirmed;
+  const hit=act>=tgt, diff=act-tgt;
+  const fillW=Math.min(act/tgt*100,100);
+  const col=!conf?'var(--mu2)':(hit?'var(--green)':'var(--red)');
   const leave=LEAVE.includes(i);
-  html+=`<div class="mrow ${done?'done':''}" data-i="${i}">
-    <span class="m-mon ${leave?'leave':''}">${MONJP[i]}<span class="yk">${stdDays[i]}出番${leave?' 有給':''}</span></span>
-    <div class="m-bar"><i style="width:${barW}%"></i><i class="act" style="width:${barW*actW/100}%"></i></div>
-    <span class="m-tan dgt">¥${yen(targetMon[i])}</span>
-    <span class="m-up need dgt">+¥${yen(up)}</span>
+  const diffCls=!conf?'proj':(hit?'ok':'miss');
+  const diffTxt=!conf?'見込':(hit?'+':'−')+man1(Math.abs(diff));
+  thtml+=`<div class="mrow" data-i="${i}">
+    <span class="m-mon ${leave?'leave':''}">${MJP[i].replace('月','')}<span class="s">${T.stdDays[i]}番${leave?'有給':''}</span></span>
+    <div class="m-bar"><i style="width:${fillW}%;background:${col}"></i></div>
+    <span class="m-val tnum">${conf?yen(act):'—'}</span>
+    <span class="m-diff ${diffCls} tnum">${diffTxt}</span>
     <div class="m-detail">
-      目標単価 <b style="color:var(--txt)">¥${yen(targetTan[i])}/出番</b>（昨年 ¥${yen(tan25[i])}）・シーズン係数 <b style="color:var(--amber)">${season[i].toFixed(3)}</b>
-      ${done?`<br>2026年実績：¥${yen(E26[i])}（${D26[i]}出番・単価¥${yen(E26[i]/D26[i])}）／ 目標差 <b style="color:${E26[i]>=targetMon[i]?'var(--green)':'var(--red)'}">${E26[i]>=targetMon[i]?'+':'−'}¥${yen(Math.abs(E26[i]-targetMon[i]))}</b>`:''}
+      目標 <b style="color:var(--txt)">${yen(tgt)}</b>（単価¥${Math.round(T.targetTan[i]).toLocaleString()}/番・係数${T.season[i].toFixed(3)}）
+      ${conf?`<br>実績 ${yen(act)}（${P.proj[i].days}番・単価¥${Math.round(act/P.proj[i].days).toLocaleString()}）`:`<br>見込み ${yen(act)}（単価伸び率${((P.avgG-1)*100).toFixed(1)}%適用）`}
     </div>
   </div>`;
-});
-mt.innerHTML=html;
-mt.querySelectorAll('.mrow[data-i]').forEach(r=>{
-  r.addEventListener('click',()=>r.classList.toggle('open'));
-});
+}
+mt.innerHTML=thtml;
+mt.querySelectorAll('.mrow[data-i]').forEach(r=>r.addEventListener('click',()=>r.classList.toggle('open')));
 
-// 入力セレクタ
-const sel=document.getElementById('selMon');
-MONJP.forEach((m,i)=>{const o=document.createElement('option');o.value=i;o.textContent=m+`（目標¥${yen(targetMon[i])} / ${stdDays[i]}出番）`;sel.appendChild(o);});
-sel.value=5; // 6月を初期表示
-
-function calcInput(){
-  const i=+sel.value;
-  const eishu=parseFloat(document.getElementById('inEishu').value)||0;
-  const done=parseFloat(document.getElementById('inDone').value)||0;
-  const box=document.getElementById('inResult');
-  if(eishu<=0&&done<=0){box.classList.remove('show');return;}
-  const remain=targetMon[i]-eishu;
-  const restDays=Math.max(stdDays[i]-done,0);
+// ── 手入力タブ ──
+const mSel=document.getElementById('mSel');
+MJP.forEach((m,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`${m}（目標${yen(T.targetMon[i])} / ${T.stdDays[i]}番）`;mSel.appendChild(o);});
+function calcManual(){
+  const i=+mSel.value;
+  const e=parseFloat(document.getElementById('mEishu').value)||0;
+  const d=parseFloat(document.getElementById('mDone').value)||0;
+  const box=document.getElementById('mResult');
+  if(e<=0&&d<=0){box.classList.remove('show');return;}
   box.classList.add('show');
+  const remain=T.targetMon[i]-e, rest=Math.max(T.stdDays[i]-d,0);
+  if(remain<=0) box.innerHTML=`月間目標を達成済み（${yen(-remain)} 超過）`;
+  else if(rest<=0) box.innerHTML=`残出番なしで ${yen(remain)} 不足`;
+  else box.innerHTML=`残り${rest}番で1番あたり <b>${yen(remain/rest)}</b> 必要`;
+}
+['mEishu','mDone'].forEach(id=>document.getElementById(id).addEventListener('input',calcManual));
+mSel.addEventListener('change',calcManual);
+document.getElementById('tabAuto').addEventListener('click',()=>{
+  document.getElementById('tabAuto').classList.add('on');document.getElementById('tabManual').classList.remove('on');
+  document.getElementById('manualBox').classList.remove('show');
+});
+document.getElementById('tabManual').addEventListener('click',()=>{
+  document.getElementById('tabManual').classList.add('on');document.getElementById('tabAuto').classList.remove('on');
+  document.getElementById('manualBox').classList.add('show');
+});
+
+// ── footer ──
+document.getElementById('foot').innerHTML=
+  `必要年間営収 ${yen(NEED_YEAR)}（1000万÷実効係数63.21%）。営収は空転込み（給与明細の営収合計と一致）。`
+  +`着地見込みは1〜5月の単価伸び率（平均${((P.avgG-1)*100).toFixed(1)}%）を後半に適用、出番は昨年並み想定。`
+  +`日報CSVが繋がれば今期の進捗が自動更新されます。`;
+
+/* ════════════════════════════════════════════════
+   日報CSV 読み込み → 今期ライブ進捗 ＆ 検算
+   ════════════════════════════════════════════════ */
+function parseDate(s){
+  if(!s) return null;
+  const m=String(s).trim().match(/(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/);
+  return m?[+m[1],+m[2],+m[3]]:null;
+}
+function parseNum(s){ if(s==null)return 0; return parseFloat(String(s).replace(/[¥,\s]/g,''))||0; }
+
+function aggregateDaily(rows){
+  // payKey "YYYY-M" → {eishu, days}
+  const agg={};
+  rows.forEach(r=>{
+    const dt=parseDate(r['日付']);
+    const ei=parseNum(r['営収']);
+    if(!dt||ei<=0) return;
+    const pm=payMonthOf(dt[0],dt[1],dt[2]);
+    if(!pm) return;
+    const k=pm[0]+'-'+pm[1];
+    if(!agg[k])agg[k]={eishu:0,days:0};
+    agg[k].eishu+=ei; agg[k].days+=1;
+  });
+  return agg;
+}
+
+function todayParts(){const d=new Date();return [d.getFullYear(),d.getMonth()+1,d.getDate()];}
+
+function renderLive(agg){
+  const [ty,tm,td]=todayParts();
+  const pm=payMonthOf(ty,tm,td);
+  if(!pm){document.getElementById('nowTitle').textContent='対象期間外';return;}
+  const [py,pmo]=pm;
+  const period=PERIODS.find(p=>p[0]===py&&p[1]===pmo);
+  const k=py+'-'+pmo;
+  const cur=agg[k]||{eishu:0,days:0};
+  const tIdx=pmo-1;
+  const target=T.targetMon[tIdx], stdD=T.stdDays[tIdx];
+  document.getElementById('nowTitle').textContent=`${py}年${pmo}月給与`;
+  const f=d=>`${d[1]}/${d[2]}`;
+  document.getElementById('nowPeriod').textContent=`集計期間 ${f(period[2])} 〜 ${f(period[3])}`;
+  document.getElementById('liveEishu').textContent=yen(cur.eishu);
+  document.getElementById('liveDays').textContent=`${cur.days}番 消化`;
+  document.getElementById('liveTarget').textContent=yen(target);
+  document.getElementById('liveTan').textContent=`目標単価 ¥${Math.round(target/stdD).toLocaleString()}/番`;
+  const remain=target-cur.eishu, rest=Math.max(stdD-cur.days,0);
   if(remain<=0){
-    box.innerHTML=`<span class="big" style="color:var(--green)">月間目標を達成済み 🎉</span>目標¥${yen(targetMon[i])}を ¥${yen(-remain)} 超過。この調子で。`;
-  }else if(restDays<=0){
-    box.innerHTML=`<span class="big" style="color:var(--red)">残出番なしで ¥${yen(remain)} 不足</span>今月の出番(${stdDays[i]})を使い切り、目標まで ¥${yen(remain)} 届かず。`;
+    document.getElementById('liveRemainL').textContent='目標達成';
+    document.getElementById('liveRemain').innerHTML=`目標を <b>${yen(-remain)}</b> 超過 🎉`;
+  }else if(rest<=0){
+    document.getElementById('liveRemainL').textContent='残出番なし';
+    document.getElementById('liveRemain').innerHTML=`目標まで <b>${yen(remain)}</b> 届かず`;
   }else{
-    const per=remain/restDays;
-    box.innerHTML=`目標まで残り<span class="big">¥${yen(remain)}</span>残り<b>${restDays}出番</b>で割ると、1出番あたり <b style="color:var(--amber);font-size:15px">¥${yen(per)}</b> 必要。`;
+    document.getElementById('liveRemainL').textContent=`目標まで残り ${yen(remain)} ／ 残${rest}番`;
+    document.getElementById('liveRemain').innerHTML=`1番あたり <b>${yen(remain/rest)}</b>`;
+  }
+  document.getElementById('liveTag').textContent='日報CSV 自動集計';
+}
+
+function renderVerify(agg){
+  // 確定月（2025全月＋2026 1-5月）で 日報集計 vs 給与明細H列 を突合
+  const box=document.getElementById('verifyBox');
+  let rows='';let okc=0,tot=0;
+  const check=(label,y,m,truth)=>{
+    const k=y+'-'+m; const a=agg[k];
+    if(!a){return;}
+    tot++; const diff=a.eishu-truth; const ok=Math.abs(diff)<1000;
+    if(ok)okc++;
+    rows+=`<div>${label}：日報 ${yen(a.eishu)}（${a.days}番） vs 明細 ${yen(truth)} → <span class="${ok?'ok':'warn'}">${diff>=0?'+':'−'}${yen(Math.abs(diff)).replace('¥','¥')}</span></div>`;
+  };
+  for(let i=0;i<12;i++) check(`2025/${i+1}`,2025,i+1,E25[i]);
+  for(let i=0;i<E26C.length;i++) check(`2026/${i+1}`,2026,i+1,E26C[i]);
+  if(tot===0){
+    box.innerHTML=`<div class="ttl">検算</div>日報CSVの該当データがまだ集計されていません。日報が揃うと、各月で「日報集計＝給与明細の営収合計」になるか自動照合します。`;
+  }else{
+    box.innerHTML=`<div class="ttl">検算：日報集計 vs 給与明細（${okc}/${tot} 一致）</div>${rows}`
+      +`<div style="margin-top:6px;color:var(--mu2)">差が出る場合、月境界のシフト日付か記録漏れを確認。営収は空転込みのため一致するはず。</div>`;
   }
 }
-document.getElementById('inEishu').addEventListener('input',calcInput);
-document.getElementById('inDone').addEventListener('input',calcInput);
-sel.addEventListener('change',calcInput);
+
+function finish(){document.getElementById('load').classList.add('hide');}
+
+if(typeof Papa!=='undefined'){
+  Papa.parse(DAILY_URL,{
+    download:true,header:true,skipEmptyLines:true,
+    transformHeader:h=>h.trim(),
+    complete:(res)=>{
+      try{
+        const agg=aggregateDaily(res.data);
+        renderLive(agg); renderVerify(agg);
+      }catch(e){ console.error(e); document.getElementById('verifyBox').innerHTML='<div class="ttl">検算</div>日報の読み込み中に問題が発生しました。'; }
+      finish();
+    },
+    error:()=>{
+      document.getElementById('nowTitle').textContent='日報CSV 未接続';
+      document.getElementById('nowPeriod').textContent='ネットワーク環境で再読み込みしてください';
+      renderVerify({});
+      finish();
+    }
+  });
+}else{ finish(); }
 </script>
 </body>
 </html>
