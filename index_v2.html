@@ -1515,12 +1515,12 @@ renderRadar = function(){
   _orig_renderRadar();
   // renderRadar後にmapも更新
   if(_mapInited && _leafMap){
-    // GPS位置中心にズーム（fitBoundsで遠くに飛ばない）
+    // GPS位置中心にズーム（先にsetView→その後buildMapでピン追加）
     if(uLat && uLng) _leafMap.setView([uLat, uLng], 14);
-    // ピンだけ更新（fitBoundsは使わない）
     if(window._spots && window._spots.length){
-      _mapMarkers.forEach(function(m){_leafMap.removeLayer(m);});
-      _mapMarkers=[];
+      _buildMap();
+      // fitBoundsでズームアウトした場合はsetViewで戻す
+      if(uLat && uLng) setTimeout(function(){_leafMap.setView([uLat,uLng],14);},50);
     }
   } else {
     renderMap();
