@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-24T04:05:46.050585+09:00",
+  "fetched_at": "2026-06-24T06:25:46.435747+09:00",
   "date": "20260624",
   "count": 19,
   "events": [
@@ -123,7 +123,7 @@
       "owner_id": 981742,
       "owner_nickname": "ascend_career",
       "owner_display_name": "ascend_career",
-      "accepted": 47,
+      "accepted": 46,
       "waiting": 0,
       "updated_at": "2026-06-17T15:07:32+09:00"
     },
@@ -188,37 +188,6 @@
       "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-06-11T17:10:40+09:00"
-    },
-    {
-      "id": 395079,
-      "title": "freee Tech Night「スピードと品質を両立！使い捨て環境で実現する進化した開発フロー」",
-      "catch": "",
-      "description": "<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　今回のfreee Tech Nightは……？</h2>\n\n<p>「PRごとに、使い捨ての検証環境が立ち上がる」——そんな開発フローを freee で実現しました。</p>\n<p>AIコーディングの普及により、freeeの開発現場では PR の量が加速度的に増えています。一方で freee のプロダクトは多数のマイクロサービスが複雑に依存し合っており、検証環境をひとつ立ち上げるだけでも一苦労。依存サービスの洗い出しや各チームへの調整に手間がかかり、検証環境は5年以上ほとんど増えないまま逼迫していました。</p>\n<p>この課題に対し、「使い捨て環境（Preview環境）」を構築。開発者がやることは、いつものPRに Label を貼るだけです。デザイナーや PM のレビューにも刺さり、パイロット導入以降現場で使われ続けています。</p>\n<p>「確実に機能を届け切る」ことにこだわって生まれた進化した開発フローの裏側を、 SRE /実際に使っているDevelopr それぞれのの視点でお話しします。</p>\n<p>当日お話しする内容:</p>\n<ul>\n<li>Preview環境の全体像</li>\n<li>Headerルーティング・Chrome拡張など、開発者体験を高めるための工夫</li>\n<li>プロダクトで実際に使ってみて変わった開発フローの変化</li>\n<li>etc...</li>\n</ul>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　配信 URL</h2>\n\n<ul>\n<li>YouTube: <a href=\"https://www.youtube.com/live/OcNLOelZZjA\" rel=\"nofollow\">https://www.youtube.com/live/OcNLOelZZjA</a></li>\n<li><a href=\"http://Sli.do\" rel=\"nofollow\">Sli.do</a>: 当日ご案内します</li>\n</ul>\n<p>※オフライン会場はフリー株式会社本社（東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 19F / Asobiba）です。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　日時・タイムテーブル</h2>\n\n<p>2026/6/24（水）19:00〜21:00</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">開会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">イントロダクション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05 - 19:30</td>\n<td style=\"text-align: left;\">トークタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:40</td>\n<td style=\"text-align: left;\">質疑応答</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40 -</td>\n<td style=\"text-align: left;\">クロージング ＆ 懇親会 (オフライン参加のみ)</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>懇親会は 21:00 頃終了予定です</li>\n<li>希望者はオフィスツアーが可能です</li>\n</ul>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　内容・出演者</h2>\n\n<h2>ゲスト : yuria（SRE）</h2>\n<p><img src=\"https://github.com/yuriacats.png\" width=\"120\"></p>\n<p>2023年にフリーに入社。普段はSRE時々司会をやっています。</p>\n<h2>ゲスト : てらら（IAM PdL）</h2>\n<p><img src=\"https://github.com/terara-a.png\" width=\"120\"></p>\n<p>OAuth2.0 / OIDCをこよなく愛する認証認可エンジニアとして日々奮闘している。ホラーの話になると俄然テンションがあがる。好きな食べ物はにんじんぺこ。</p>\n<h2>司会 : WaTTson</h2>\n<p><img src=\"https://github.com/Watson496.png\" width=\"120\"></p>\n<p>基盤マイクロサービスのエンジニア。2022年新卒入社。PSIRTでセキュリティ周りを2年やった後、現在は通知基盤・タスク基盤などを開発。社内の部活（オフカツ）に30個ぐらい入っている。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　freee Tech Night って何？</h2>\n\n<p>フリー株式会社のエンジニアによる、エンジニアのためのイベントです！ freeeで利用している技術、組織、エンジニアの生態の紹介を皆様に知っていただけるような内容を定期的に配信します。 freeeでの自由度と裁量権の高い独自の開発文化を支えるエンジニア達がどういう想いや熱意でfreeeを開発しているのかに興味を持っていただければ幸いです。</p>\n<p>ちょっと短めの時間で、参加しやすい・聞きやすい内容を目指します。 普段はなかなか参加できない…という方も、ラジオを聴く感覚で、ぜひご参加ください！</p>\n<p>freeeはクラウド会計・人事労務ソフトを5年以上開発を続けており、技術的な成果や経験を広く公開させていただきます。会計や人事労務などのセキュアなドメインならではの技術的工夫や苦労を、世の中にシェアし役に立てたいという想いから定期的にイベントを開催しています。</p>\n<p>多くの方にご参加頂き、経験やノウハウの共有や交換のネットワークを広げるきっかけになれれば幸いです。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　キーワード</h2>\n\n<p>freee / SRE / DX / Preview環境 / Argo CD / GitHub Actions / 開発生産性</p>\n<table style=\"border: 2px solid red;\">\n<tbody><tr>\n<td>\n<h2 style=\"border: 0;\">🔔 注意事項</h2>\n<ul>\n<li>本イベントの参加には<a href=\"https://www.freee.co.jp/events/promise/\" rel=\"nofollow\">イベント参加時のfreeeとの約束</a>を守る必要があります。</li>\n<li>当社の判断において申し込みをキャンセルさせていただく場合がございますので、予めご了承ください。</li>\n</ul>\n\n<h4 style=\"border: 0;\">現地参加向け</h4>\n\n<ul>\n<li>本イベントは技術に関わる情報発信や交流を行う場として行っています。過度な営業行為や飲食のみを目的とした入場などを含め、イベントの目的にそぐわない行動はお控えください。</li>\n<li>来場者・登壇者・スタッフなど全ての参加者に対して、意識的・無意識的を問わず、相手が不快・不安に感じるようなハラスメント行為を行わないよう努めてください。</li>\n<li>イベント会場の内装・備品などを故意に壊したり、危険物を持ち込むことは行わないでください。</li>\n<li>イベントレポート用に写真や動画の撮影を行い SNS 等に投稿する可能性があります。参加者が映り込む可能性がありますので予めご了承ください。</li>\n</ul>\n\n<h4 style=\"border: 0;\">オンライン (YouTube Live) 参加向け</h4>\n<ul>\n<li>YouTube の視聴環境をご用意のうえご参加ください。</li>\n<li>通信状況や機材トラブルにより配信が滞る可能性があります。</li>\n<li>YouTube Live による配信後はアーカイブを残す予定です。</li>\n</ul>\n\n</td>\n</tr>\n</tbody></table>\n\n<table style=\"border: 2px solid #2864f0;\">\n<tbody><tr>\n<td>\n<h2 style=\"border: 0;\">🔒 プライバシーポリシー</h2>\n<p>お申し込みフォームやアンケートなどで収集した個人情報に関しては、フリー株式会社のプライバシーポリシーに則ってお取り扱いいたします。</p>\n<ul>\n<li><a href=\"https://jobs.freee.co.jp/privacy-policy/\" rel=\"nofollow\">フリー株式会社 プライバシーポリシー</a></li>\n</ul>\n</td>\n</tr>\n</tbody></table>",
-      "url": "https://freee-tech-night.connpass.com/event/395079/",
-      "image_url": "https://media.connpass.com/thumbs/4e/28/4e28a5b32d0f73d7463031d104154518.png",
-      "hash_tag": "freeeTechNight",
-      "started_at": "2026-06-24T19:00:00+09:00",
-      "ended_at": "2026-06-24T21:00:00+09:00",
-      "published_at": "2026-06-10T19:02:13+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 6839,
-        "subdomain": "freee-tech-night",
-        "title": "freee Tech Night",
-        "url": "https://freee-tech-night.connpass.com/"
-      },
-      "address": "東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 19F Asobiba",
-      "place": "フリー株式会社",
-      "lat": "35.622377100000",
-      "lon": "139.727459400000",
-      "owner_id": 692538,
-      "owner_nickname": "ishiyama_tomoya",
-      "owner_display_name": "ふぃる",
-      "accepted": 52,
-      "waiting": 0,
-      "updated_at": "2026-06-19T19:03:19+09:00"
     },
     {
       "id": 395859,
@@ -407,6 +376,37 @@
       "updated_at": "2026-06-12T01:19:38+09:00"
     },
     {
+      "id": 395079,
+      "title": "freee Tech Night「スピードと品質を両立！使い捨て環境で実現する進化した開発フロー」",
+      "catch": "",
+      "description": "<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　今回のfreee Tech Nightは……？</h2>\n\n<p>「PRごとに、使い捨ての検証環境が立ち上がる」——そんな開発フローを freee で実現しました。</p>\n<p>AIコーディングの普及により、freeeの開発現場では PR の量が加速度的に増えています。一方で freee のプロダクトは多数のマイクロサービスが複雑に依存し合っており、検証環境をひとつ立ち上げるだけでも一苦労。依存サービスの洗い出しや各チームへの調整に手間がかかり、検証環境は5年以上ほとんど増えないまま逼迫していました。</p>\n<p>この課題に対し、「使い捨て環境（Preview環境）」を構築。開発者がやることは、いつものPRに Label を貼るだけです。デザイナーや PM のレビューにも刺さり、パイロット導入以降現場で使われ続けています。</p>\n<p>「確実に機能を届け切る」ことにこだわって生まれた進化した開発フローの裏側を、 SRE /実際に使っているDevelopr それぞれのの視点でお話しします。</p>\n<p>当日お話しする内容:</p>\n<ul>\n<li>Preview環境の全体像</li>\n<li>Headerルーティング・Chrome拡張など、開発者体験を高めるための工夫</li>\n<li>プロダクトで実際に使ってみて変わった開発フローの変化</li>\n<li>etc...</li>\n</ul>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　配信 URL</h2>\n\n<ul>\n<li>YouTube: <a href=\"https://www.youtube.com/live/OcNLOelZZjA\" rel=\"nofollow\">https://www.youtube.com/live/OcNLOelZZjA</a></li>\n<li><a href=\"http://Sli.do\" rel=\"nofollow\">Sli.do</a>: 当日ご案内します</li>\n</ul>\n<p>※オフライン会場はフリー株式会社本社（東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 19F / Asobiba）です。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　日時・タイムテーブル</h2>\n\n<p>2026/6/24（水）19:00〜21:00</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">開会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">イントロダクション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05 - 19:30</td>\n<td style=\"text-align: left;\">トークタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:40</td>\n<td style=\"text-align: left;\">質疑応答</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40 -</td>\n<td style=\"text-align: left;\">クロージング ＆ 懇親会 (オフライン参加のみ)</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>懇親会は 21:00 頃終了予定です</li>\n<li>希望者はオフィスツアーが可能です</li>\n</ul>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　内容・出演者</h2>\n\n<h2>ゲスト : yuria（SRE）</h2>\n<p><img src=\"https://github.com/yuriacats.png\" width=\"120\"></p>\n<p>2023年にフリーに入社。普段はSRE時々司会をやっています。</p>\n<h2>ゲスト : てらら（IAM PdL）</h2>\n<p><img src=\"https://github.com/terara-a.png\" width=\"120\"></p>\n<p>OAuth2.0 / OIDCをこよなく愛する認証認可エンジニアとして日々奮闘している。ホラーの話になると俄然テンションがあがる。好きな食べ物はにんじんぺこ。</p>\n<h2>司会 : WaTTson</h2>\n<p><img src=\"https://github.com/Watson496.png\" width=\"120\"></p>\n<p>基盤マイクロサービスのエンジニア。2022年新卒入社。PSIRTでセキュリティ周りを2年やった後、現在は通知基盤・タスク基盤などを開発。社内の部活（オフカツ）に30個ぐらい入っている。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　freee Tech Night って何？</h2>\n\n<p>フリー株式会社のエンジニアによる、エンジニアのためのイベントです！ freeeで利用している技術、組織、エンジニアの生態の紹介を皆様に知っていただけるような内容を定期的に配信します。 freeeでの自由度と裁量権の高い独自の開発文化を支えるエンジニア達がどういう想いや熱意でfreeeを開発しているのかに興味を持っていただければ幸いです。</p>\n<p>ちょっと短めの時間で、参加しやすい・聞きやすい内容を目指します。 普段はなかなか参加できない…という方も、ラジオを聴く感覚で、ぜひご参加ください！</p>\n<p>freeeはクラウド会計・人事労務ソフトを5年以上開発を続けており、技術的な成果や経験を広く公開させていただきます。会計や人事労務などのセキュアなドメインならではの技術的工夫や苦労を、世の中にシェアし役に立てたいという想いから定期的にイベントを開催しています。</p>\n<p>多くの方にご参加頂き、経験やノウハウの共有や交換のネットワークを広げるきっかけになれれば幸いです。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　キーワード</h2>\n\n<p>freee / SRE / DX / Preview環境 / Argo CD / GitHub Actions / 開発生産性</p>\n<table style=\"border: 2px solid red;\">\n<tbody><tr>\n<td>\n<h2 style=\"border: 0;\">🔔 注意事項</h2>\n<ul>\n<li>本イベントの参加には<a href=\"https://www.freee.co.jp/events/promise/\" rel=\"nofollow\">イベント参加時のfreeeとの約束</a>を守る必要があります。</li>\n<li>当社の判断において申し込みをキャンセルさせていただく場合がございますので、予めご了承ください。</li>\n</ul>\n\n<h4 style=\"border: 0;\">現地参加向け</h4>\n\n<ul>\n<li>本イベントは技術に関わる情報発信や交流を行う場として行っています。過度な営業行為や飲食のみを目的とした入場などを含め、イベントの目的にそぐわない行動はお控えください。</li>\n<li>来場者・登壇者・スタッフなど全ての参加者に対して、意識的・無意識的を問わず、相手が不快・不安に感じるようなハラスメント行為を行わないよう努めてください。</li>\n<li>イベント会場の内装・備品などを故意に壊したり、危険物を持ち込むことは行わないでください。</li>\n<li>イベントレポート用に写真や動画の撮影を行い SNS 等に投稿する可能性があります。参加者が映り込む可能性がありますので予めご了承ください。</li>\n</ul>\n\n<h4 style=\"border: 0;\">オンライン (YouTube Live) 参加向け</h4>\n<ul>\n<li>YouTube の視聴環境をご用意のうえご参加ください。</li>\n<li>通信状況や機材トラブルにより配信が滞る可能性があります。</li>\n<li>YouTube Live による配信後はアーカイブを残す予定です。</li>\n</ul>\n\n</td>\n</tr>\n</tbody></table>\n\n<table style=\"border: 2px solid #2864f0;\">\n<tbody><tr>\n<td>\n<h2 style=\"border: 0;\">🔒 プライバシーポリシー</h2>\n<p>お申し込みフォームやアンケートなどで収集した個人情報に関しては、フリー株式会社のプライバシーポリシーに則ってお取り扱いいたします。</p>\n<ul>\n<li><a href=\"https://jobs.freee.co.jp/privacy-policy/\" rel=\"nofollow\">フリー株式会社 プライバシーポリシー</a></li>\n</ul>\n</td>\n</tr>\n</tbody></table>",
+      "url": "https://freee-tech-night.connpass.com/event/395079/",
+      "image_url": "https://media.connpass.com/thumbs/4e/28/4e28a5b32d0f73d7463031d104154518.png",
+      "hash_tag": "freeeTechNight",
+      "started_at": "2026-06-24T19:00:00+09:00",
+      "ended_at": "2026-06-24T21:00:00+09:00",
+      "published_at": "2026-06-10T19:02:13+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 6839,
+        "subdomain": "freee-tech-night",
+        "title": "freee Tech Night",
+        "url": "https://freee-tech-night.connpass.com/"
+      },
+      "address": "東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 19F Asobiba",
+      "place": "フリー株式会社",
+      "lat": "35.622377100000",
+      "lon": "139.727459400000",
+      "owner_id": 692538,
+      "owner_nickname": "ishiyama_tomoya",
+      "owner_display_name": "ふぃる",
+      "accepted": 53,
+      "waiting": 0,
+      "updated_at": "2026-06-19T19:03:19+09:00"
+    },
+    {
       "id": 396155,
       "title": "AI効果検証 meet up！#2〜どんな指標を・どのように読み解き、改善に繋げるか〜",
       "catch": "",
@@ -433,7 +433,7 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 269,
+      "accepted": 270,
       "waiting": 0,
       "updated_at": "2026-06-23T10:06:33+09:00"
     },
