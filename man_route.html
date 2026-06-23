@@ -175,7 +175,7 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
 <header>
   <div class="eyebrow">GOAL ¥10,000,000 ／ 2026 STEP ¥9,000,000</div>
   <h1>年収1000万への道</h1>
-  <div class="hsub">最終目標は1000万。今年はその助走として、まず900万に乗せる。</div>
+  <div class="hsub">最終目標は1000万。今年はその助走として、まず900万に乗せる。<br>基準は歩合の芯（給与合計D × 62%）＝上振れを読まない堅い見方。</div>
 </header>
 
 <!-- 今年着地見込み / 来年必要 -->
@@ -185,7 +185,7 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
     <div class="amt tnum" id="nowLand">—</div>
     <div class="gap ok tnum" id="nowGap">—</div>
     <div class="mini"><i id="nowMini" style="width:0%"></i></div>
-    <div class="lbl">主軸目標 900万に対して</div>
+    <div class="lbl">芯=D×62%・900万に対して</div>
   </div>
   <div class="cell next">
     <div class="yr"><b>2027</b> 来年1000万に必要</div>
@@ -211,7 +211,7 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
 <!-- 累積借金 -->
 <div class="debt-wrap">
   <div class="debt-head">
-    <span class="t">900万ペースに対する累積（年収換算）</span>
+    <span class="t">900万ペースに対する累積（芯年収換算）</span>
     <span class="v miss tnum" id="debtNow">—</span>
   </div>
   <div class="debt-sub" id="debtSub">1月からの貯金／借金の推移。確定実線・見込み点線。</div>
@@ -224,8 +224,8 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
   <div class="now-top" id="nowTitle">— 月給</div>
   <div class="now-period" id="nowPeriod">—</div>
   <div class="now-grid">
-    <div class="now-cell"><div class="l">今期 営収累計</div><div class="v cyan tnum" id="liveEishu">—</div><div class="x" id="liveDays">—</div></div>
-    <div class="now-cell"><div class="l">今期 目標営収</div><div class="v amber tnum" id="liveTarget">—</div><div class="x" id="liveTan">—</div></div>
+    <div class="now-cell"><div class="l">今期 給与合計D累計</div><div class="v cyan tnum" id="liveEishu">—</div><div class="x" id="liveDays">—</div></div>
+    <div class="now-cell"><div class="l">今期 目標D</div><div class="v amber tnum" id="liveTarget">—</div><div class="x" id="liveTan">—</div></div>
   </div>
   <div class="now-big">
     <div class="l" id="liveRemainL">目標まで残り</div>
@@ -240,7 +240,7 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
 </div>
 <div class="manual" id="manualBox">
   <div class="mfield"><label>月</label><select id="mSel"></select></div>
-  <div class="mfield"><label>現時点の営収累計（円）</label><input id="mEishu" type="number" inputmode="numeric" placeholder="例 650000"></div>
+  <div class="mfield"><label>現時点の給与合計D累計（円）</label><input id="mEishu" type="number" inputmode="numeric" placeholder="例 620000"></div>
   <div class="mfield"><label>消化した出番数</label><input id="mDone" type="number" inputmode="numeric" placeholder="例 7"></div>
   <div class="mresult" id="mResult"></div>
 </div>
@@ -257,13 +257,13 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
 <div class="verify" id="verifyBox"></div>
 
 <div class="divider"></div>
-<div class="sec"><span class="bar"></span><h2>年収の構造（昨年実測）</h2></div>
+<div class="sec"><span class="bar"></span><h2>歩合の芯の構造（昨年実測）</h2></div>
 <div class="facts">
-  <div class="fact"><div class="l">2025 営収合計</div><div class="v tnum">¥1,369.6万</div><div class="x">154出番</div></div>
-  <div class="fact"><div class="l">実効係数</div><div class="v tnum" style="color:var(--amber)">63.21%</div><div class="x">年収÷営収（実測）</div></div>
-  <div class="fact"><div class="l">月給（歩合）</div><div class="v tnum">¥729.2万</div><div class="x">営収の53.24%</div></div>
-  <div class="fact"><div class="l">賞与 年3回</div><div class="v tnum">¥136.6万</div><div class="x">営収の9.97%</div></div>
-  <div class="fact wide"><div class="l">想定の前提</div><div class="v tnum" style="font-size:14px">52%＋8%＝60% ではなく 実測63.21%</div><div class="x">調整金・手当（行って来い）が支給額に乗るため実効は高め。52%で逆算すると不足額が過大に出る</div></div>
+  <div class="fact"><div class="l">2025 給与合計D</div><div class="v tnum">¥1,339.3万</div><div class="x">154出番・空転なし</div></div>
+  <div class="fact"><div class="l">歩合の芯率</div><div class="v tnum" style="color:var(--amber)">62%</div><div class="x">歩合52%＋プール10%</div></div>
+  <div class="fact"><div class="l">歩合 52%</div><div class="v tnum">¥696.4万</div><div class="x">D×52%</div></div>
+  <div class="fact"><div class="l">プール分離給</div><div class="v tnum">¥133.9万</div><div class="x">D×10%・年3回支給</div></div>
+  <div class="fact wide"><div class="l">堅い見方の理由</div><div class="v tnum" style="font-size:14px">芯年収 ¥833万 ＝ 実年収 ¥865.8万 の 96%</div><div class="x">差の約33万は交通費・手当（行って来い／率がブレる）。これを読まず歩合の芯D×62%で堅く管理。実際の着地は常にこれより少し上に出る。</div></div>
 </div>
 
 <footer id="foot"></footer>
@@ -272,24 +272,28 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
 <script>
 /* ════════════════════════════════════════════════
    確定データ（給与明細PDF照合済み・検算一致）
+   基準：歩合の芯 = D列(給与合計) × 62%
+        （歩合52% ＋ プール分離給10%。賞与はD×10%で分離給）
    ════════════════════════════════════════════════ */
-const EFF=0.6321;
+const RATE=0.62;               // 歩合の芯率（D→芯年収）
 const TARGET=9_000_000;        // 今年の主軸目標（来年1000万への助走）
 const TARGET_NEXT=10_000_000;  // 来年の本命目標
-const NEED_YEAR=TARGET/EFF;        // 900万の必要年間営収
-const NEED_NEXT=TARGET_NEXT/EFF;   // 1000万の必要年間営収
-const NENSHO25=8657782;
+const NEED_YEAR=TARGET/RATE;       // 900万の必要D合計
+const NEED_NEXT=TARGET_NEXT/RATE;  // 1000万の必要D合計
+const NENSHO25=8657782;        // 実年収（E+賞与・源泉徴収）参考値
 const MJP=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
 const LEAVE=[0,4]; // 1月・5月＝有給消化月
 
-// 2025フル（給与明細確定値：営収合計H / 出番G）
-const E25=[1049190,1076920,1145070,1095760,1102710,1182890,1155400,1234450,1181890,1087290,1184960,1199660];
+// 2025フル D列（給与合計＝B+C、空転なし・歩合の元）
+const E25=[1039670,1055280,1126630,1081300,1081010,1157920,1130880,1207350,1144350,1050760,1158050,1159580];
 const D25=[12,13,13,13,12,13,13,13,13,13,13,13];
-// 給与明細 営収(B)・公出(C)・支給額(E)（2025）
-const PAY25=[582953,568099,611557,585719,604854,625809,613975,653386,617945,568752,629197,629738];
-// 2026 確定（1〜5月）
-const E26C=[1011200,1105190,1182000,1230010,1130380];
+// 2025 H列（営収・空転込み）＝空転追跡用
+const H25=[1049190,1076920,1145070,1095760,1102710,1182890,1155400,1234450,1181890,1087290,1184960,1199660];
+// 2026 確定 D列（1〜5月）
+const E26C=[993010,1079720,1157570,1205730,1096950];
 const D26C=[11,13,13,13,12];
+// 2026 H列（営収・空転込み 1〜5月）
+const H26C=[1011200,1105190,1182000,1230010,1130380];
 // 賞与（営収比に含まれない別給）
 const BONUS={'2025-3':426799,'2025-6':498914,'2025-12':440085,'2026-3':420807};
 
@@ -319,7 +323,7 @@ const yen=n=>'¥'+Math.round(n).toLocaleString('ja-JP');
 const man=n=>(n/10000).toFixed(0)+'万';
 const man1=n=>(n/10000).toFixed(1)+'万';
 
-// 月別目標営収（シーズン係数×出番数 配分）
+// 月別目標D（シーズン係数×出番数 配分）
 function buildTargets(){
   const W=0.7;
   const tan25=E25.map((e,i)=>e/D25[i]);
@@ -348,7 +352,7 @@ function buildProjection(){
     else { const t=tan25[i]*avgG; proj.push({eishu:t*D25[i],days:D25[i],confirmed:false}); }
   }
   const landEishu=proj.reduce((a,p)=>a+p.eishu,0);
-  const landNensho=landEishu*EFF;
+  const landNensho=landEishu*RATE;
   return {proj,avgG,landEishu,landNensho};
 }
 
@@ -417,9 +421,9 @@ barsEl.querySelectorAll('.bcol').forEach(c=>{
 function drawDebt(){
   const svg=document.getElementById('debtSvg');
   const W=440,H=120,pad=8;
-  // 各月末時点の累積（実績/見込み営収 − 目標営収）×EFF
+  // 各月末時点の累積（実績/見込みD − 目標D）×62%＝芯年収換算
   let cumA=0,cumT=0; const pts=[];
-  for(let i=0;i<12;i++){ cumA+=P.proj[i].eishu; cumT+=T.targetMon[i]; pts.push((cumA-cumT)*EFF); }
+  for(let i=0;i<12;i++){ cumA+=P.proj[i].eishu; cumT+=T.targetMon[i]; pts.push((cumA-cumT)*RATE); }
   const maxAbs=Math.max(...pts.map(Math.abs),100000);
   const x=i=>pad+(W-2*pad)*i/11;
   const y=v=>H/2 - (v/maxAbs)*(H/2-pad);
@@ -503,7 +507,7 @@ document.getElementById('tabManual').addEventListener('click',()=>{
 
 // ── footer ──
 document.getElementById('foot').innerHTML=
-  `必要年間営収 ${yen(NEED_YEAR)}（今年の主軸900万÷実効係数63.21%）。営収は空転込み（給与明細の営収合計と一致）。`
+  `今年の主軸900万 ÷ 歩合の芯62%（歩合52%＋プール分離給10%）＝ 必要D合計 ${yen(NEED_YEAR)}。基準は給与合計D（空転なし）。`
   +`着地見込みは1〜5月の単価伸び率（平均${((P.avgG-1)*100).toFixed(1)}%）を後半に適用、出番は昨年並み想定。`
   +`日報CSVが繋がれば今期の進捗が自動更新されます。`;
 
@@ -517,18 +521,24 @@ function parseDate(s){
 }
 function parseNum(s){ if(s==null)return 0; return parseFloat(String(s).replace(/[¥,\s]/g,''))||0; }
 
+// 空転率（2025実測：(ΣH−ΣD)/ΣH）。日報のH→D相当換算に使用。
+// 6月以降は空転を実記録するので、将来は実値で置換可能。
+const KUTEN_RATE=(H25.reduce((a,b)=>a+b,0)-E25.reduce((a,b)=>a+b,0))/H25.reduce((a,b)=>a+b,0);
+
 function aggregateDaily(rows){
-  // payKey "YYYY-M" → {eishu, days}
+  // payKey "YYYY-M" → {hEishu(空転込み), dEq(D相当), days}
   const agg={};
   rows.forEach(r=>{
     const dt=parseDate(r['日付']);
-    const ei=parseNum(r['営収']);
-    if(!dt||ei<=0) return;
+    const h=parseNum(r['営収']); // 日報の営収＝空転込み（H相当）
+    if(!dt||h<=0) return;
     const pm=payMonthOf(dt[0],dt[1],dt[2]);
     if(!pm) return;
     const k=pm[0]+'-'+pm[1];
-    if(!agg[k])agg[k]={eishu:0,days:0};
-    agg[k].eishu+=ei; agg[k].days+=1;
+    if(!agg[k])agg[k]={hEishu:0,dEq:0,days:0};
+    agg[k].hEishu+=h;
+    agg[k].dEq+=h*(1-KUTEN_RATE); // 空転を抜いてD相当に
+    agg[k].days+=1;
   });
   return agg;
 }
@@ -547,21 +557,23 @@ function renderLive(agg){
   const target=T.targetMon[tIdx], stdD=T.stdDays[tIdx];
   document.getElementById('nowTitle').textContent=`${py}年${pmo}月給与`;
   const f=d=>`${d[1]}/${d[2]}`;
-  document.getElementById('nowPeriod').textContent=`集計期間 ${f(period[2])} 〜 ${f(period[3])}`;
-  document.getElementById('liveEishu').textContent=yen(cur.eishu);
-  document.getElementById('liveDays').textContent=`${cur.days}番 消化`;
+  document.getElementById('nowPeriod').textContent=`集計期間 ${f(period[2])} 〜 ${f(period[3])}（基準：給与合計D）`;
+  document.getElementById('liveEishu').textContent=yen(cur.dEq);
+  document.getElementById('liveDays').textContent=`${cur.days}番 ／ 営収H ${yen(cur.hEishu)}`;
   document.getElementById('liveTarget').textContent=yen(target);
-  document.getElementById('liveTan').textContent=`目標単価 ¥${Math.round(target/stdD).toLocaleString()}/番`;
-  const remain=target-cur.eishu, rest=Math.max(stdD-cur.days,0);
+  document.getElementById('liveTan').textContent=`目標D単価 ¥${Math.round(target/stdD).toLocaleString()}/番`;
+  const remain=target-cur.dEq, rest=Math.max(stdD-cur.days,0);
+  // 現場で見るH建ての必要額（D必要額を空転率で割り戻す）
+  const toH=v=>v/(1-KUTEN_RATE);
   if(remain<=0){
     document.getElementById('liveRemainL').textContent='目標達成';
-    document.getElementById('liveRemain').innerHTML=`目標を <b>${yen(-remain)}</b> 超過 🎉`;
+    document.getElementById('liveRemain').innerHTML=`目標Dを <b>${yen(-remain)}</b> 超過 🎉`;
   }else if(rest<=0){
     document.getElementById('liveRemainL').textContent='残出番なし';
-    document.getElementById('liveRemain').innerHTML=`目標まで <b>${yen(remain)}</b> 届かず`;
+    document.getElementById('liveRemain').innerHTML=`目標Dまで <b>${yen(remain)}</b> 届かず`;
   }else{
-    document.getElementById('liveRemainL').textContent=`目標まで残り ${yen(remain)} ／ 残${rest}番`;
-    document.getElementById('liveRemain').innerHTML=`1番あたり <b>${yen(remain/rest)}</b>`;
+    document.getElementById('liveRemainL').textContent=`目標Dまで残り ${yen(remain)} ／ 残${rest}番`;
+    document.getElementById('liveRemain').innerHTML=`1番あたり D <b>${yen(remain/rest)}</b> <span style="font-size:11px;color:var(--mu)">（メーター営収では ${yen(toH(remain/rest))}）</span>`;
   }
   document.getElementById('liveTag').textContent='日報CSV 自動集計';
 
@@ -569,16 +581,17 @@ function renderLive(agg){
   const stepsEl=document.getElementById('liveSteps');
   if(rest>0 && remain>0){
     const perStep=remain/rest;
-    let sh=`<div class="steps"><div class="steps-h">残り <b>${rest}出番</b> の着地ライン（1番ずつの最低必要営収・累計）</div>`;
-    let cum=cur.eishu;
+    const perStepH=toH(perStep);
+    let sh=`<div class="steps"><div class="steps-h">残り <b>${rest}出番</b> の着地ライン（1番ずつ・D基準／括弧はメーター営収）</div>`;
+    let cum=cur.dEq;
     for(let s=1;s<=rest;s++){
       cum+=perStep;
       const num=cur.days+s;
-      const barW=Math.min(perStep/120000*100,100); // 12万を満タン目安
+      const barW=Math.min(perStepH/120000*100,100); // 12万を満タン目安
       sh+=`<div class="step-row">
         <div class="step-n">${num}</div>
         <div class="step-bar"><i style="width:${barW}%"></i></div>
-        <div class="step-amt">${yen(perStep)}</div>
+        <div class="step-amt">${yen(perStep)}<span style="font-size:9px;color:var(--mu2);font-weight:600;display:block">営収${yen(perStepH)}</span></div>
         <div class="step-cum">計${man1(cum)}</div>
       </div>`;
     }
@@ -590,23 +603,27 @@ function renderLive(agg){
 }
 
 function renderVerify(agg){
-  // 確定月（2025全月＋2026 1-5月）で 日報集計 vs 給与明細H列 を突合
+  // ①日報のH集計（空転込み）vs 給与明細H列 → 一致するはず
+  // ②空転差（明細H − 明細D）＝会社が抜いた空転。6月以降は実記録と照合可能
   const box=document.getElementById('verifyBox');
+  const H_DETAIL={2025:H25,2026:H26C}; // 明細H列
+  const D_DETAIL={2025:E25,2026:E26C}; // 明細D列（コード上E変数＝D列）
   let rows='';let okc=0,tot=0;
-  const check=(label,y,m,truth)=>{
-    const k=y+'-'+m; const a=agg[k];
-    if(!a){return;}
-    tot++; const diff=a.eishu-truth; const ok=Math.abs(diff)<1000;
-    if(ok)okc++;
-    rows+=`<div>${label}：日報 ${yen(a.eishu)}（${a.days}番） vs 明細 ${yen(truth)} → <span class="${ok?'ok':'warn'}">${diff>=0?'+':'−'}${yen(Math.abs(diff)).replace('¥','¥')}</span></div>`;
+  const check=(y,m)=>{
+    const k=y+'-'+m; const a=agg[k]; if(!a)return;
+    const hTruth=H_DETAIL[y][m-1], dTruth=D_DETAIL[y][m-1];
+    if(hTruth==null)return;
+    tot++; const diff=a.hEishu-hTruth; const ok=Math.abs(diff)<1500; if(ok)okc++;
+    const kuten=hTruth-dTruth;
+    rows+=`<div>${y}/${m}：日報H ${yen(a.hEishu)}（${a.days}番） vs 明細H ${yen(hTruth)} <span class="${ok?'ok':'warn'}">${diff>=0?'+':'−'}${yen(Math.abs(diff))}</span> ／ 空転 ${yen(kuten)}</div>`;
   };
-  for(let i=0;i<12;i++) check(`2025/${i+1}`,2025,i+1,E25[i]);
-  for(let i=0;i<E26C.length;i++) check(`2026/${i+1}`,2026,i+1,E26C[i]);
+  for(let i=0;i<12;i++) check(2025,i+1);
+  for(let i=0;i<H26C.length;i++) check(2026,i+1);
   if(tot===0){
-    box.innerHTML=`<div class="ttl">検算</div>日報CSVの該当データがまだ集計されていません。日報が揃うと、各月で「日報集計＝給与明細の営収合計」になるか自動照合します。`;
+    box.innerHTML=`<div class="ttl">検算</div>日報CSVの該当データがまだ集計されていません。日報が揃うと、日報H集計＝給与明細H列（空転込み同士）になるか自動照合します。`;
   }else{
-    box.innerHTML=`<div class="ttl">検算：日報集計 vs 給与明細（${okc}/${tot} 一致）</div>${rows}`
-      +`<div style="margin-top:6px;color:var(--mu2)">差が出る場合、月境界のシフト日付か記録漏れを確認。営収は空転込みのため一致するはず。</div>`;
+    box.innerHTML=`<div class="ttl">検算：日報H vs 給与明細H（${okc}/${tot} 一致）</div>${rows}`
+      +`<div style="margin-top:6px;color:var(--mu2)">日報の営収は空転込み（H相当）なので明細H列と一致するはず。空転＝明細H−明細D。年収はD×62%で算出（空転は歩合の対象外）。6月以降は実記録の空転と照合可能になります。</div>`;
   }
 }
 
