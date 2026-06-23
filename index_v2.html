@@ -955,7 +955,7 @@ function _buildMap(){
     var lats=spots.map(function(s){return s.lat;}).filter(Boolean);
     var lngs=spots.map(function(s){return s.lng;}).filter(Boolean);
     lats.push(uLat);lngs.push(uLng);
-    _leafMap.fitBounds([[Math.min.apply(null,lats),Math.min.apply(null,lngs)],[Math.max.apply(null,lats),Math.max.apply(null,lngs)]],{padding:[20,20]});
+    _leafMap.fitBounds([[Math.min.apply(null,lats),Math.min.apply(null,lngs)],[Math.max.apply(null,lats),Math.max.apply(null,lngs)]],{padding:[20,20],maxZoom:14});
   }
   setTimeout(function(){_leafMap.invalidateSize();},100);
 }
@@ -1489,7 +1489,7 @@ function v2ToggleSheet(){
     startY = null;
     mn.style.transition = 'height .3s ease';
     var h = mn.offsetHeight, vh = window.innerHeight;
-    var target = h < vh*0.2 ? 80 : h < vh*0.65 ? Math.round(vh*0.55) : Math.round(vh*0.88);
+    var target = h < vh*0.15 ? 80 : h < vh*0.65 ? Math.round(vh*0.55) : Math.round(vh*0.88);
     _v2SheetState = target <= 80 ? 'mini' : target < vh*0.7 ? 'half' : 'full';
     mn.style.height = target + 'px';
     var dh2 = getHandle();
@@ -1515,8 +1515,13 @@ renderRadar = function(){
   _orig_renderRadar();
   // renderRadar後にmapも更新
   if(_mapInited && _leafMap){
-    if(window._spots && window._spots.length) _buildMap();
-    else if(uLat && uLng) _leafMap.setView([uLat, uLng], 14);
+    // GPS位置中心にズーム（fitBoundsで遠くに飛ばない）
+    if(uLat && uLng) _leafMap.setView([uLat, uLng], 14);
+    // ピンだけ更新（fitBoundsは使わない）
+    if(window._spots && window._spots.length){
+      _mapMarkers.forEach(function(m){_leafMap.removeLayer(m);});
+      _mapMarkers=[];
+    }
   } else {
     renderMap();
   }
