@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-25T05:29:32.196437+09:00",
+  "fetched_at": "2026-06-25T07:10:15.075654+09:00",
   "date": "20260625",
   "count": 19,
   "events": [
@@ -247,7 +247,7 @@
       "owner_id": 790801,
       "owner_nickname": "MacopeninSUTABA",
       "owner_display_name": "KNR",
-      "accepted": 48,
+      "accepted": 47,
       "waiting": 0,
       "updated_at": "2026-06-23T21:53:35+09:00"
     },
@@ -278,7 +278,7 @@
       "owner_id": 614007,
       "owner_nickname": "HisayaUchida",
       "owner_display_name": "h-ucchi",
-      "accepted": 409,
+      "accepted": 410,
       "waiting": 0,
       "updated_at": "2026-06-24T23:33:33+09:00"
     },
@@ -402,7 +402,7 @@
       "owner_id": 81602,
       "owner_nickname": "MasahiroAoki",
       "owner_display_name": "mafreud",
-      "accepted": 38,
+      "accepted": 39,
       "waiting": 0,
       "updated_at": "2026-06-24T22:19:20+09:00"
     },
@@ -490,7 +490,7 @@
       "owner_id": 13780,
       "owner_nickname": "mihochannel",
       "owner_display_name": "Miho Yamamoto",
-      "accepted": 26,
+      "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-06-11T12:56:58+09:00"
     },
