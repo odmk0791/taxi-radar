@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <style>
 :root {
   --bg:       #080c18;
@@ -77,6 +78,24 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 .sort-btn { font-size:12px; font-weight:700; padding:5px 14px; border-radius:8px; border:1px solid var(--accent); background:rgba(0,200,240,.1); color:var(--accent); cursor:pointer; white-space:nowrap; }
 .sort-btn:active { transform:scale(.97); }
 .sort-hint { font-size:10px; color:var(--muted); margin-left:auto; }
+
+/* ── VENUE TAB ── */
+.venue-controls { display:flex; gap:8px; padding:12px 14px; background:var(--surface); border-bottom:1px solid var(--border); align-items:center; flex-wrap:wrap; }
+.venue-urlonly { font-size:11px; color:var(--muted); display:flex; align-items:center; gap:4px; cursor:pointer; }
+.venue-status { padding:8px 16px; font-size:12px; color:var(--muted); background:var(--bg); border-bottom:1px solid var(--border); min-height:32px; display:flex; align-items:center; }
+.venue-status.ok { color:var(--green); }
+.venue-list { padding:10px 14px 90px; display:flex; flex-direction:column; gap:8px; }
+.venue-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:12px 14px; display:flex; flex-direction:column; gap:7px; }
+.venue-card-top { display:flex; align-items:flex-start; justify-content:space-between; gap:8px; }
+.venue-name { font-size:13px; font-weight:700; line-height:1.4; flex:1; }
+.venue-cat-tag { flex-shrink:0; font-size:10px; padding:2px 7px; border-radius:5px; background:var(--surface2); color:var(--muted); border:1px solid var(--border); }
+.venue-meta { display:flex; flex-wrap:wrap; gap:6px 12px; font-size:11px; color:var(--muted); }
+.venue-meta .dist { color:var(--accent); font-weight:700; }
+.venue-foot { display:flex; gap:8px; align-items:center; }
+.venue-url-btn { flex:1; text-align:center; font-size:12px; font-weight:700; padding:8px; border-radius:8px; background:rgba(0,200,240,.1); border:1px solid var(--accent); color:var(--accent); text-decoration:none; transition:background .15s; }
+.venue-url-btn:active { background:rgba(0,200,240,.2); }
+.venue-url-btn.disabled { background:var(--surface2); border-color:var(--border); color:var(--muted); pointer-events:none; }
+.venue-map-btn { flex-shrink:0; font-size:12px; padding:8px 12px; border-radius:8px; background:var(--surface2); border:1px solid var(--border); color:var(--text); cursor:pointer; }
 
 /* ── EVENT LIST ── */
 .evt-list { padding:10px 14px 90px; display:flex; flex-direction:column; gap:9px; }
@@ -252,7 +271,8 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 
 <div class="tabs">
   <div class="tab active" id="tabRadar" onclick="switchTab('radar')">📡 レーダー</div>
-  <div class="tab" id="tabReg"   onclick="switchTab('reg')">＋ イベント登録</div>
+  <div class="tab" id="tabVenue" onclick="switchTab('venue')">🏛 会場</div>
+  <div class="tab" id="tabReg"   onclick="switchTab('reg')">＋ 登録</div>
 </div>
 
 <!-- ═══════════ RADAR TAB ═══════════ -->
@@ -288,6 +308,44 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
     <button class="btn-primary" id="scanBtn" onclick="startScan()">
       <span class="btn-ico">⚡</span>
       <span id="scanTxt">スキャン</span>
+    </button>
+  </div>
+</div>
+
+<!-- ═══════════ VENUE TAB ═══════════ -->
+<div id="viewVenue" style="display:none">
+  <div class="venue-controls">
+    <select class="range-select" id="venueRange" onchange="renderVenues()">
+      <option value="3">3km以内</option>
+      <option value="5" selected>5km以内</option>
+      <option value="10">10km以内</option>
+      <option value="999">全件</option>
+    </select>
+    <select class="range-select" id="venueCat" onchange="renderVenues()">
+      <option value="all">全カテゴリ</option>
+      <option value="arena">アリーナ/ドーム</option>
+      <option value="hall">ホール</option>
+      <option value="livehouse">ライブハウス</option>
+      <option value="theater">劇場</option>
+      <option value="park">公園/屋外</option>
+      <option value="sports">スポーツ施設</option>
+      <option value="expo">展示/見本市</option>
+      <option value="hotel">ホテル宴会場</option>
+    </select>
+    <label class="venue-urlonly"><input type="checkbox" id="venueUrlOnly" onchange="renderVenues()"> URL有のみ</label>
+  </div>
+  <div class="venue-status" id="venueStatus">📍 位置情報ボタンで近くの会場を表示</div>
+  <div id="venueList">
+    <div class="empty">
+      <div class="empty-ico">🏛</div>
+      <div class="empty-ttl">会場台帳</div>
+      <div class="empty-sub">下のボタンで現在地周辺の<br>イベント会場を距離順に表示</div>
+    </div>
+  </div>
+  <div class="action-bar">
+    <button class="btn-primary" id="venueGpsBtn" onclick="loadVenuesNearby()">
+      <span class="btn-ico">📍</span>
+      <span id="venueGpsTxt">近くの会場を表示</span>
     </button>
   </div>
 </div>
@@ -389,6 +447,9 @@ const STORAGE_KEY='event_radar_events';
 const CONNPASS_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/connpass_events.json';
 const MANUAL_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/manual_events.json';
 const VENUE_MASTER_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/venue_master.json';
+// 会場台帳スプレッドシート（HironoriさんがURL等を追記）
+const VENUE_SHEET_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vS7U-m7Q6G76MsSeIaJRZRmtnjwsJpWYeIo9MRJNhjv-OaDvYCRmJ-9dDHslnc1J6D5plIVEbxx5zZz/pub?gid=342590463&single=true&output=csv';
+let venueSheet=[]; // スプレッドシートから読んだ会場台帳
 let venueMaster=[]; // 会場マスタ（穴スコア計算用）
 let sortMode='urgency'; // 'urgency'(終了が近い順) or 'hole'(穴スコア順)
 
@@ -417,8 +478,10 @@ setInterval(tick,1000); tick();
 // ═══ TAB ═══
 function switchTab(t){
   document.getElementById('viewRadar').style.display = t==='radar'?'':'none';
+  document.getElementById('viewVenue').style.display = t==='venue'?'':'none';
   document.getElementById('viewReg').style.display   = t==='reg'?'':'none';
   document.getElementById('tabRadar').classList.toggle('active', t==='radar');
+  document.getElementById('tabVenue').classList.toggle('active', t==='venue');
   document.getElementById('tabReg').classList.toggle('active',   t==='reg');
   if(t==='reg') renderRegList();
   if(t==='radar' && map) setTimeout(()=>map.invalidateSize(),50);
@@ -620,6 +683,117 @@ function focusEv(i){
   map.setView([ev.lat,ev.lng],15);
   evMarkers[i]?.openPopup();
   switchTab('radar');
+  document.getElementById('viewRadar').scrollIntoView({behavior:'smooth'});
+}
+
+// ═══ 会場タブ ═══
+const VENUE_CAT_JP={arena:'アリーナ',hall:'ホール',livehouse:'ライブH',theater:'劇場',
+  park:'公園',sports:'スポーツ',expo:'展示',hotel:'ホテル',univ:'大学',club:'クラブ',
+  cinema:'映画',shrine:'神社',mall:'商業',aquarium:'水族',terminal:'港'};
+
+// スプレッドシートから会場台帳を読み込み
+async function loadVenueSheet(){
+  if(venueSheet.length) return venueSheet;
+  return new Promise((resolve)=>{
+    Papa.parse(VENUE_SHEET_URL+'&t='+Date.now(),{
+      download:true, header:true, skipEmptyLines:true,
+      complete:(res)=>{
+        venueSheet=(res.data||[]).filter(v=>v.name&&v.lat&&v.lng).map(v=>({
+          name:v.name, ward:v.ward||'', category:v.category||'',
+          capacity:parseInt(v.capacity)||0,
+          lat:parseFloat(v.lat), lng:parseFloat(v.lng),
+          schedule_url:(v.schedule_url||'').trim(),
+          guest_type:v.guest_type||''
+        }));
+        resolve(venueSheet);
+      },
+      error:()=>resolve([])
+    });
+  });
+}
+
+async function loadVenuesNearby(){
+  const btn=document.getElementById('venueGpsBtn');
+  btn.disabled=true; btn.classList.add('spin');
+  document.getElementById('venueGpsTxt').textContent='取得中...';
+  const vs=document.getElementById('venueStatus');
+
+  vs.textContent='📍 現在地を取得中...'; vs.className='venue-status';
+  try{
+    const p=await getGPS();
+    userLat=p.lat; userLng=p.lng;
+    const pill=document.getElementById('gpsPill');
+    pill.className='gps-pill on';
+    document.getElementById('gpsLbl').textContent=userLat.toFixed(3)+','+userLng.toFixed(3);
+  }catch(e){
+    userLat=35.6812; userLng=139.7671;
+    vs.textContent='⚠ GPS失敗（東京中心で表示）';
+  }
+
+  vs.textContent='📂 会場台帳を読み込み中...';
+  await loadVenueSheet();
+  renderVenues();
+
+  btn.disabled=false; btn.classList.remove('spin');
+  document.getElementById('venueGpsTxt').textContent='再取得';
+}
+
+function renderVenues(){
+  if(!venueSheet.length) return;
+  const range=parseInt(document.getElementById('venueRange').value);
+  const cat=document.getElementById('venueCat').value;
+  const urlOnly=document.getElementById('venueUrlOnly').checked;
+  const vs=document.getElementById('venueStatus');
+
+  let list=venueSheet.map(v=>({
+    ...v,
+    _dist:(userLat&&v.lat&&v.lng)?dist(userLat,userLng,v.lat,v.lng):999
+  }));
+
+  list=list.filter(v=>v._dist<=range);
+  if(cat!=='all') list=list.filter(v=>v.category===cat);
+  if(urlOnly) list=list.filter(v=>v.schedule_url);
+  list.sort((a,b)=>a._dist-b._dist);
+
+  const el=document.getElementById('venueList');
+  if(!list.length){
+    el.innerHTML='<div class="empty"><div class="empty-ico">🔍</div><div class="empty-ttl">該当会場なし</div><div class="empty-sub">範囲やカテゴリを変えてお試しください</div></div>';
+    vs.textContent='0件'; vs.className='venue-status';
+    return;
+  }
+  vs.textContent='✅ '+list.length+'会場（近い順）'; vs.className='venue-status ok';
+
+  let h='<div class="venue-list">';
+  list.forEach(v=>{
+    const cap=v.capacity>0?v.capacity.toLocaleString()+'人':'';
+    const urlBtn=v.schedule_url
+      ? '<a class="venue-url-btn" href="'+v.schedule_url+'" target="_blank" rel="noopener">📅 スケジュールを見る</a>'
+      : '<span class="venue-url-btn disabled">URL未登録</span>';
+    h+='<div class="venue-card">'
+      +'<div class="venue-card-top"><div class="venue-name">'+v.name+'</div>'
+      +'<span class="venue-cat-tag">'+(VENUE_CAT_JP[v.category]||v.category)+'</span></div>'
+      +'<div class="venue-meta">'
+      +'<span class="dist">📍 '+v._dist.toFixed(1)+'km</span>'
+      +'<span>'+v.ward+'</span>'
+      +(cap?'<span>👥 '+cap+'</span>':'')
+      +(v.guest_type?'<span>'+v.guest_type+'</span>':'')
+      +'</div>'
+      +'<div class="venue-foot">'+urlBtn
+      +'<button class="venue-map-btn" onclick="venueOnMap('+v.lat+','+v.lng+",'"+v.name.replace(/'/g,"\\'")+"')\">🗺</button>"
+      +'</div></div>';
+  });
+  h+='</div>';
+  el.innerHTML=h;
+}
+
+function venueOnMap(lat,lng,name){
+  switchTab('radar');
+  if(!map) initMap(lat,lng);
+  setTimeout(()=>{
+    map.invalidateSize();
+    map.setView([lat,lng],15);
+    L.popup().setLatLng([lat,lng]).setContent('<div class="pop"><strong>'+name+'</strong></div>').openOn(map);
+  },100);
   document.getElementById('viewRadar').scrollIntoView({behavior:'smooth'});
 }
 
