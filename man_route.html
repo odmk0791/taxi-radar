@@ -248,8 +248,8 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
   <div class="now-top" id="nowTitle">— 月給</div>
   <div class="now-period" id="nowPeriod">—</div>
   <div class="now-grid">
-    <div class="now-cell"><div class="l">今期 実車D累計</div><div class="v cyan tnum" id="liveEishu">—</div><div class="x" id="liveDays">—</div></div>
-    <div class="now-cell"><div class="l">今期 目標D</div><div class="v amber tnum" id="liveTarget">—</div><div class="x" id="liveTan">—</div></div>
+    <div class="now-cell"><div class="l">今月 実車D累計</div><div class="v cyan tnum" id="liveEishu">—</div><div class="x" id="liveDays">—</div></div>
+    <div class="now-cell"><div class="l">今月 目標D</div><div class="v amber tnum" id="liveTarget">—</div><div class="x" id="liveTan">—</div></div>
   </div>
   <div class="now-big">
     <div class="l" id="liveRemainL">目標まで残り</div>
@@ -818,7 +818,7 @@ function renderFooter(){
   document.getElementById('foot').innerHTML=
     `今年の目標900万 ÷ 歩合ベース率62%（歩合52%＋プール分離給10%）＝ 必要D合計 ${yen(NEED_YEAR)}。基準は給与の元D（B+C・空転なし）。`
     +`着地見込みは確定月の単価伸び率（平均${((P.avgG-1)*100).toFixed(1)}%）を後半に適用、出番は昨年並み。`
-    +`給与・分離給は上の入力フォームから。日報CSVで今期が自動更新。`;
+    +`給与・分離給は上の入力フォームから。日報CSVで今月が自動更新。`;
 }
 
 /* ════════════════════════════════════════════════
