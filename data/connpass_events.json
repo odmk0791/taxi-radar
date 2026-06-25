@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-26T06:24:41.412084+09:00",
+  "fetched_at": "2026-06-26T08:10:26.991756+09:00",
   "date": "20260626",
   "count": 19,
   "events": [
@@ -90,37 +90,6 @@
       "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-06-11T12:03:18+09:00"
-    },
-    {
-      "id": 390480,
-      "title": "集まれSwift好き！Swift愛好会スピンオフ WWDC26セッション要約会",
-      "catch": "WWDC26のセッションを要約して発表するよ！",
-      "description": "<p>今年もやります！ 『WWDC26セッション要約会』</p>\n<p>今回も <strong>株式会社ディー・エヌ・エー</strong> さんに会場をご提供頂き開催をします！<br>\n日本全国のiOSアプリエンジニアのみなさまの幅広い参加をお待ちしています。</p>\n<h2>過去の様子</h2>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=bnbJdbeADQ8\" rel=\"nofollow\">2025</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=MTsYRcRdYX4\" rel=\"nofollow\">2024</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=g7jbFvS4zWE\" rel=\"nofollow\">2023</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=IpQAovAzwf8\" rel=\"nofollow\">2022</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=OVXr4Rb7zsU\" rel=\"nofollow\">2021</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=9PNw8t5CIFI\" rel=\"nofollow\">2020</a></li>\n</ul>\n<h2>📃 イベント概要</h2>\n<p>今回はスピンオフでWWDC26のキャッチアップ5分LT会を行います！</p>\n<p>今年のWWDCも例年通りハイブリッドにて開催されました。全てのセッションはWebにて公開されており、いつでも視聴することが可能です。しかし、英語が苦手でセッションを観ずに諦めている方もいると思います。イチイチ動画を止めて英語の字幕を翻訳しながら観ているので、とてもすべてのセッションを観られません。</p>\n<p>そんな方々のために！セッションを5分に要約して発表する会を開催します！日本語で要約した発表を聴くことで、少しは英語のセッションが観やすくなることを期待しています。WWDCのセッションは貴重なApple公式の一次ソースであり、本勉強会はあくまでセッションを観る手助けのために行います！</p>\n<p><strong>みんな要約を聞いて満足せずに、WWDCのセッションも観てくれよな！</strong></p>\n<h2>🎯 対象者</h2>\n<ul>\n<li>今年もWWDCがやって来たな…と思った方</li>\n<li>Swiftが好きな人！</li>\n<li>Swiftを好きになる予定の人</li>\n<li>むしろSwiftから好かれている人</li>\n</ul>\n<h2>🎤 談義者</h2>\n<p>気軽にLTしてほしいので、以下のように制限をゆるくしています！</p>\n<ul>\n<li>一次ソースは公式のセッションとわかっているので、多少間違えてもつよい人が教えてくれるのでOKです</li>\n<li>スライドは伝わればかんたんで構いません</li>\n<li>ブログ記事などテキストベースでもいいです</li>\n<li>むしろぜひ関連する情報や個人の意見も聞きたいです</li>\n<li>LT未経験者大歓迎です！</li>\n<li>今回は 🔰初登壇枠（Swift愛好会で登壇したことがない人向けの枠） を用意しているので、ぜひこの機会に談義してみてください！</li>\n<li>たとえ失敗してもojunが慰めるので心理的安全性はカンペキです（慰められなかったらごめんなさい）</li>\n</ul>\n<h4>談義の応募概要</h4>\n<ul>\n<li>持ち時間は <strong>5分</strong> です（超えた場合は強制終了します）</li>\n<li>今年のWWDCにて発表された内容であればどういった物でも構いませんが、テーマは早いもの勝ち（重複不可）となります</li>\n<li>テーマが決まった方はフィード欄にセッション名をご記入ください</li>\n<li>配信機材の都合上、オフラインでの登壇に限定されています</li>\n<li>当日の配信はアーカイブが残ります</li>\n<li>談義を希望する場合は応募の上、イベント前日までに登壇タイトルをイベントページ下のフィードにご記入ください</li>\n</ul>\n<h4>談義枠</h4>\n<table>\n<thead>\n<tr>\n<th>No.</th>\n<th>談義タイトル</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Platforms State of the Union まとめ</td>\n<td>Roku</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Swift Testingへの移行（Migrate to Swift Testing）</td>\n<td>log5</td>\n</tr>\n<tr>\n<td>3</td>\n<td>SwiftUIの遅延スタックとスクロール処理の詳細</td>\n<td>🔰 ibuki</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Validate your App Intents adoption with AppIntentsTesting</td>\n<td>野瀬田（@ynoseda）</td>\n</tr>\n<tr>\n<td>5</td>\n<td>String Catalog × AIエージェントでローカライズが楽になる</td>\n<td>🔰 もた</td>\n</tr>\n<tr>\n<td>6</td>\n<td>未定</td>\n<td>🔰 yazaki</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Xcode 27の新機能</td>\n<td>とんとんぼ</td>\n</tr>\n<tr>\n<td>8</td>\n<td>未定</td>\n<td>🔰 tominagaaaaa</td>\n</tr>\n</tbody>\n</table>\n<h2>⏰ 当日のタイムスケジュール(予定)</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00～19:30</td>\n<td>開場・集合</td>\n</tr>\n<tr>\n<td>19:30～19:40</td>\n<td>オープニング / 乾杯！</td>\n</tr>\n<tr>\n<td>19:40～20:10</td>\n<td>談義 LTタイム</td>\n</tr>\n<tr>\n<td>20:10～20:25</td>\n<td>パネルディスカッション</td>\n</tr>\n<tr>\n<td>20:30～21:00</td>\n<td>談義 LTタイム(後半)</td>\n</tr>\n<tr>\n<td>21:00～21:45</td>\n<td>懇親会</td>\n</tr>\n<tr>\n<td>22:00</td>\n<td>完全撤収</td>\n</tr>\n</tbody>\n</table>\n<h2>■主催者プロフィール</h2>\n<h3>yamaken (<a href=\"https://x.com/yamakentoc\" rel=\"nofollow\">@yamakentoc</a>)</h3>\n<p><img alt=\"yamaken\" src=\"https://pbs.twimg.com/profile_images/1723630622823071744/t8FbdG9Q_400x400.jpg\" width=\"100\"></p>\n<p>りんごと桜の街・弘前から出てきた iOS えんじにあ。\nくるくる髪が特徴で、パーマだと思われがちだが天然物らしい。</p>\n<h3>ojun (<a href=\"https://x.com/ojun_9\" rel=\"nofollow\">@ojun_9</a>)</h3>\n<p><img alt=\"ojun\" src=\"https://pbs.twimg.com/profile_images/1874649499492352000/EPj-zVxE_400x400.jpg\" width=\"100\"></p>\n<p>かくかく鹿々の街で生まれたiOSエンジニア。国語は Swift。<br>\n渋谷スクランブルスクエアの一室に住み込みで働いてるらしい。</p>\n<h3>treastrain (<a href=\"https://x.com/treastrain\" rel=\"nofollow\">@treastrain</a>)</h3>\n<p><img alt=\"treastrain\" src=\"https://pbs.twimg.com/profile_images/1935376287901626368/vpFiluJG_400x400.jpg\" width=\"100\"></p>\n<p>弘前の反対側にある八戸から出てきた Swift 使い。名前は treastrain と読む。<br>\nこういう技術イベントを縁の下で支えてくれるらしい。</p>\n<h2>🗺️ 会場・支援企業</h2>\n<h3>オフライン参加の方</h3>\n<p><a href=\"https://www.shibuya-scramble-square.com/access/\" rel=\"nofollow\">渋谷スクランブルスクエア</a></p>\n<p>ご用意いただくもの：connpass の受付番号もしくはアカウントのご提示をお願いいたします。</p>\n<p>入館時間： 入館受付は19:00～19:30頃を予定しております。オフィスフロア入口（17F）にお越しください。オフィスフロア入り口へは、地下もしくは2Fのオフィス用エレベーターをご利用ください。オフィスフロア入口（17F）オフィス総合受付の側に本イベント用の特設受付を設置しています。 そちらでconnpassの受付番号もしくはアカウントの提示後、受付の案内に従ってください。</p>\n<p>座席は先着順となります。感染症対策のため間隔を空けていただくためにお席の移動をお願いすることがあるかもしれませんので予めご了承ください。</p>\n<p>※19:30になりましたら特設受付を一旦閉めさせていただきますので、参加される方はなるべくこの時間までにお越し下さるようお願いします。遅れての参加の場合は <a href=\"https://twitter.com/66nylon_y\" rel=\"nofollow\">@66nylon_y</a> までメンションをお願いいたします。</p>\n<h3>設備など</h3>\n<ul>\n<li>無線LAN<br>\n※17Fにローソンがありますので、何かご入用の際は受付前にお立ち寄りください。入館後の出入りはできませんので予めご留意ください。<br></li>\n</ul>\n<h3>会場からの注意事項</h3>\n<ul>\n<li>当日は、来場者を含む会場の様子等の動画、写真を撮影し、公開する場合があります。<br></li>\n<li>懇親会ではアルコールの提供がありますが、未成年者の方や車を運転される方の飲酒は法律で禁止されています。<br></li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。<br></li>\n<li>悪天候等により、運営事務局の判断にてイベントを中止する場合があります。<br></li>\n<li>会場内は禁煙です。<br></li>\n</ul>\n<h3>新型コロナウイルス感染対策について</h3>\n<p>ディー・エヌ・エー（会場提供の株式会社ディー・エヌ・エー様）では2023/3/13以降、新型コロナウイルス感染症対策としてのマスクの着用のルールが変わりました。<br>\n厚生労働省からの発表内容に準じ、マスクの着脱については個人の主体的な判断を尊重することとしますが、可能であればマスクの着用にご協力ください。<br>\n来場者への感染防止の観点から、本イベントスタッフは引き続きマスクを着用しておりますので、ご理解いただきますようお願いします。<br>\nまた、以下に該当する場合は参加を控えていただくようお願いします。<br></p>\n<ul>\n<li>咳や喉の痛みなど、体調に違和感がある</li>\n<li>同居者に感染者・体調不良者がいる場合など、感染蔓延のリスクがある</li>\n</ul>\n<h3>オンライン参加の方</h3>\n<p>YouTubeLiveで配信を行います</p>\n<h4>会場からの注意事項</h4>\n<ul>\n<li>当日は、来場者を含む会場の様子等の動画、写真を撮影し、公開する場合があります</li>\n<li>懇親会ではアルコールの提供がありますが、未成年者の方や車を運転される方の飲酒は法律で禁止されています</li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません</li>\n<li>悪天候等により、運営事務局の判断にてイベントを中止する場合があります</li>\n<li>会場内は禁煙です</li>\n</ul>\n<h2>👷 運営</h2>\n<p>以下のゆかいな仲間たちで運営しています。よろしく！</p>\n<table>\n<thead>\n<tr>\n<th><a href=\"https://twitter.com/o_chicchi\" rel=\"nofollow\">@o_chicchi</a></th>\n<th><a href=\"https://twitter.com/66nylon_y\" rel=\"nofollow\">@roku</a></th>\n<th><a href=\"https://twitter.com/entaku_0818\" rel=\"nofollow\">@entaku</a></th>\n<th><a href=\"https://x.com/psnzbss\" rel=\"nofollow\">@uetyo</a></th>\n<th><a href=\"https://x.com/kanta_Swift\" rel=\"nofollow\">@kamijo</a></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img alt=\"o_chicchi\" src=\"https://pbs.twimg.com/profile_images/1273260349714649088/umncFZ5R_400x400.jpg\" width=\"100\"></td>\n<td><img alt=\"roku\" src=\"https://pbs.twimg.com/profile_images/1563711100390195212/MVIo_1xM_400x400.jpg\" width=\"100\"></td>\n<td><img alt=\"entaku\" src=\"https://pbs.twimg.com/profile_images/1598892937131458560/sgidJlol_400x400.jpg\" width=\"100\"></td>\n<td><img src=\"https://media.connpass.com/thumbs/00/ec/00eca8fbc177a6a7938cec6301ad0766.png\" width=\"100\"></td>\n<td><img src=\"https://pbs.twimg.com/profile_images/1560247523322630149/FGsQTgMR_400x400.jpg\" width=\"100\"></td>\n</tr>\n</tbody>\n</table>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>本勉強会は、技術交流が目的です。 知識の共有や参加者同士の交流を目的としない方の参加はお断りします。<br>\n<font color=\"#ff0000\">参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます</font></li>\n<li>講演内容やタイムスケジュールは変更となる可能性がございます</li>\n<li>当日の内容は収録してYouTubeの愛好会チャンネルで公開されます。あらかじめご了承ください</li>\n<li>当日のイベント内容は後日任意の媒体にて公開させていただくことがあります</li>\n<li>イベントレポート作成のため、お写真を撮らせていただくことがございますので予めご了承ください</li>\n<li>イベントは、止むを得ず中止させていただく場合がございます。<br>その際は、本サイトからのメッセージよりご連絡させていただきますのでご確認をお願いいたします</li>\n</ul>",
-      "url": "https://love-swift.connpass.com/event/390480/",
-      "image_url": "https://media.connpass.com/thumbs/d2/d9/d2d9d450f9cb4e1220aebe4a70acaa8f.png",
-      "hash_tag": "love_swift",
-      "started_at": "2026-06-26T19:00:00+09:00",
-      "ended_at": "2026-06-26T22:00:00+09:00",
-      "published_at": "2026-04-28T21:08:35+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 1620,
-        "subdomain": "love-swift",
-        "title": "Swift愛好会",
-        "url": "https://love-swift.connpass.com/"
-      },
-      "address": "東京都渋谷区渋谷二丁目24番12号 (渋谷スクランブルスクエア40F)",
-      "place": "DeNA 渋谷オフィス 40F",
-      "lat": "35.657706000000",
-      "lon": "139.703834900000",
-      "owner_id": 87108,
-      "owner_nickname": "o_chicchi",
-      "owner_display_name": "Satoru Ohguchi",
-      "accepted": 91,
-      "waiting": 1,
-      "updated_at": "2026-06-23T23:39:09+09:00"
     },
     {
       "id": 393632,
@@ -366,6 +335,37 @@
       "updated_at": "2026-06-09T09:57:29+09:00"
     },
     {
+      "id": 390480,
+      "title": "集まれSwift好き！Swift愛好会スピンオフ WWDC26セッション要約会",
+      "catch": "WWDC26のセッションを要約して発表するよ！",
+      "description": "<p>今年もやります！ 『WWDC26セッション要約会』</p>\n<p>今回も <strong>株式会社ディー・エヌ・エー</strong> さんに会場をご提供頂き開催をします！<br>\n日本全国のiOSアプリエンジニアのみなさまの幅広い参加をお待ちしています。</p>\n<h2>過去の様子</h2>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=bnbJdbeADQ8\" rel=\"nofollow\">2025</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=MTsYRcRdYX4\" rel=\"nofollow\">2024</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=g7jbFvS4zWE\" rel=\"nofollow\">2023</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=IpQAovAzwf8\" rel=\"nofollow\">2022</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=OVXr4Rb7zsU\" rel=\"nofollow\">2021</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=9PNw8t5CIFI\" rel=\"nofollow\">2020</a></li>\n</ul>\n<h2>📃 イベント概要</h2>\n<p>今回はスピンオフでWWDC26のキャッチアップ5分LT会を行います！</p>\n<p>今年のWWDCも例年通りハイブリッドにて開催されました。全てのセッションはWebにて公開されており、いつでも視聴することが可能です。しかし、英語が苦手でセッションを観ずに諦めている方もいると思います。イチイチ動画を止めて英語の字幕を翻訳しながら観ているので、とてもすべてのセッションを観られません。</p>\n<p>そんな方々のために！セッションを5分に要約して発表する会を開催します！日本語で要約した発表を聴くことで、少しは英語のセッションが観やすくなることを期待しています。WWDCのセッションは貴重なApple公式の一次ソースであり、本勉強会はあくまでセッションを観る手助けのために行います！</p>\n<p><strong>みんな要約を聞いて満足せずに、WWDCのセッションも観てくれよな！</strong></p>\n<h2>🎯 対象者</h2>\n<ul>\n<li>今年もWWDCがやって来たな…と思った方</li>\n<li>Swiftが好きな人！</li>\n<li>Swiftを好きになる予定の人</li>\n<li>むしろSwiftから好かれている人</li>\n</ul>\n<h2>🎤 談義者</h2>\n<p>気軽にLTしてほしいので、以下のように制限をゆるくしています！</p>\n<ul>\n<li>一次ソースは公式のセッションとわかっているので、多少間違えてもつよい人が教えてくれるのでOKです</li>\n<li>スライドは伝わればかんたんで構いません</li>\n<li>ブログ記事などテキストベースでもいいです</li>\n<li>むしろぜひ関連する情報や個人の意見も聞きたいです</li>\n<li>LT未経験者大歓迎です！</li>\n<li>今回は 🔰初登壇枠（Swift愛好会で登壇したことがない人向けの枠） を用意しているので、ぜひこの機会に談義してみてください！</li>\n<li>たとえ失敗してもojunが慰めるので心理的安全性はカンペキです（慰められなかったらごめんなさい）</li>\n</ul>\n<h4>談義の応募概要</h4>\n<ul>\n<li>持ち時間は <strong>5分</strong> です（超えた場合は強制終了します）</li>\n<li>今年のWWDCにて発表された内容であればどういった物でも構いませんが、テーマは早いもの勝ち（重複不可）となります</li>\n<li>テーマが決まった方はフィード欄にセッション名をご記入ください</li>\n<li>配信機材の都合上、オフラインでの登壇に限定されています</li>\n<li>当日の配信はアーカイブが残ります</li>\n<li>談義を希望する場合は応募の上、イベント前日までに登壇タイトルをイベントページ下のフィードにご記入ください</li>\n</ul>\n<h4>談義枠</h4>\n<table>\n<thead>\n<tr>\n<th>No.</th>\n<th>談義タイトル</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Platforms State of the Union まとめ</td>\n<td>Roku</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Swift Testingへの移行（Migrate to Swift Testing）</td>\n<td>log5</td>\n</tr>\n<tr>\n<td>3</td>\n<td>SwiftUIの遅延スタックとスクロール処理の詳細</td>\n<td>🔰 ibuki</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Validate your App Intents adoption with AppIntentsTesting</td>\n<td>野瀬田（@ynoseda）</td>\n</tr>\n<tr>\n<td>5</td>\n<td>String Catalog × AIエージェントでローカライズが楽になる</td>\n<td>🔰 もた</td>\n</tr>\n<tr>\n<td>6</td>\n<td>未定</td>\n<td>🔰 yazaki</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Xcode 27の新機能</td>\n<td>とんとんぼ</td>\n</tr>\n<tr>\n<td>8</td>\n<td>未定</td>\n<td>🔰 tominagaaaaa</td>\n</tr>\n</tbody>\n</table>\n<h2>⏰ 当日のタイムスケジュール(予定)</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00～19:30</td>\n<td>開場・集合</td>\n</tr>\n<tr>\n<td>19:30～19:40</td>\n<td>オープニング / 乾杯！</td>\n</tr>\n<tr>\n<td>19:40～20:10</td>\n<td>談義 LTタイム</td>\n</tr>\n<tr>\n<td>20:10～20:25</td>\n<td>パネルディスカッション</td>\n</tr>\n<tr>\n<td>20:30～21:00</td>\n<td>談義 LTタイム(後半)</td>\n</tr>\n<tr>\n<td>21:00～21:45</td>\n<td>懇親会</td>\n</tr>\n<tr>\n<td>22:00</td>\n<td>完全撤収</td>\n</tr>\n</tbody>\n</table>\n<h2>■主催者プロフィール</h2>\n<h3>yamaken (<a href=\"https://x.com/yamakentoc\" rel=\"nofollow\">@yamakentoc</a>)</h3>\n<p><img alt=\"yamaken\" src=\"https://pbs.twimg.com/profile_images/1723630622823071744/t8FbdG9Q_400x400.jpg\" width=\"100\"></p>\n<p>りんごと桜の街・弘前から出てきた iOS えんじにあ。\nくるくる髪が特徴で、パーマだと思われがちだが天然物らしい。</p>\n<h3>ojun (<a href=\"https://x.com/ojun_9\" rel=\"nofollow\">@ojun_9</a>)</h3>\n<p><img alt=\"ojun\" src=\"https://pbs.twimg.com/profile_images/1874649499492352000/EPj-zVxE_400x400.jpg\" width=\"100\"></p>\n<p>かくかく鹿々の街で生まれたiOSエンジニア。国語は Swift。<br>\n渋谷スクランブルスクエアの一室に住み込みで働いてるらしい。</p>\n<h3>treastrain (<a href=\"https://x.com/treastrain\" rel=\"nofollow\">@treastrain</a>)</h3>\n<p><img alt=\"treastrain\" src=\"https://pbs.twimg.com/profile_images/1935376287901626368/vpFiluJG_400x400.jpg\" width=\"100\"></p>\n<p>弘前の反対側にある八戸から出てきた Swift 使い。名前は treastrain と読む。<br>\nこういう技術イベントを縁の下で支えてくれるらしい。</p>\n<h2>🗺️ 会場・支援企業</h2>\n<h3>オフライン参加の方</h3>\n<p><a href=\"https://www.shibuya-scramble-square.com/access/\" rel=\"nofollow\">渋谷スクランブルスクエア</a></p>\n<p>ご用意いただくもの：connpass の受付番号もしくはアカウントのご提示をお願いいたします。</p>\n<p>入館時間： 入館受付は19:00～19:30頃を予定しております。オフィスフロア入口（17F）にお越しください。オフィスフロア入り口へは、地下もしくは2Fのオフィス用エレベーターをご利用ください。オフィスフロア入口（17F）オフィス総合受付の側に本イベント用の特設受付を設置しています。 そちらでconnpassの受付番号もしくはアカウントの提示後、受付の案内に従ってください。</p>\n<p>座席は先着順となります。感染症対策のため間隔を空けていただくためにお席の移動をお願いすることがあるかもしれませんので予めご了承ください。</p>\n<p>※19:30になりましたら特設受付を一旦閉めさせていただきますので、参加される方はなるべくこの時間までにお越し下さるようお願いします。遅れての参加の場合は <a href=\"https://twitter.com/66nylon_y\" rel=\"nofollow\">@66nylon_y</a> までメンションをお願いいたします。</p>\n<h3>設備など</h3>\n<ul>\n<li>無線LAN<br>\n※17Fにローソンがありますので、何かご入用の際は受付前にお立ち寄りください。入館後の出入りはできませんので予めご留意ください。<br></li>\n</ul>\n<h3>会場からの注意事項</h3>\n<ul>\n<li>当日は、来場者を含む会場の様子等の動画、写真を撮影し、公開する場合があります。<br></li>\n<li>懇親会ではアルコールの提供がありますが、未成年者の方や車を運転される方の飲酒は法律で禁止されています。<br></li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。<br></li>\n<li>悪天候等により、運営事務局の判断にてイベントを中止する場合があります。<br></li>\n<li>会場内は禁煙です。<br></li>\n</ul>\n<h3>新型コロナウイルス感染対策について</h3>\n<p>ディー・エヌ・エー（会場提供の株式会社ディー・エヌ・エー様）では2023/3/13以降、新型コロナウイルス感染症対策としてのマスクの着用のルールが変わりました。<br>\n厚生労働省からの発表内容に準じ、マスクの着脱については個人の主体的な判断を尊重することとしますが、可能であればマスクの着用にご協力ください。<br>\n来場者への感染防止の観点から、本イベントスタッフは引き続きマスクを着用しておりますので、ご理解いただきますようお願いします。<br>\nまた、以下に該当する場合は参加を控えていただくようお願いします。<br></p>\n<ul>\n<li>咳や喉の痛みなど、体調に違和感がある</li>\n<li>同居者に感染者・体調不良者がいる場合など、感染蔓延のリスクがある</li>\n</ul>\n<h3>オンライン参加の方</h3>\n<p>YouTubeLiveで配信を行います</p>\n<h4>会場からの注意事項</h4>\n<ul>\n<li>当日は、来場者を含む会場の様子等の動画、写真を撮影し、公開する場合があります</li>\n<li>懇親会ではアルコールの提供がありますが、未成年者の方や車を運転される方の飲酒は法律で禁止されています</li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません</li>\n<li>悪天候等により、運営事務局の判断にてイベントを中止する場合があります</li>\n<li>会場内は禁煙です</li>\n</ul>\n<h2>👷 運営</h2>\n<p>以下のゆかいな仲間たちで運営しています。よろしく！</p>\n<table>\n<thead>\n<tr>\n<th><a href=\"https://twitter.com/o_chicchi\" rel=\"nofollow\">@o_chicchi</a></th>\n<th><a href=\"https://twitter.com/66nylon_y\" rel=\"nofollow\">@roku</a></th>\n<th><a href=\"https://twitter.com/entaku_0818\" rel=\"nofollow\">@entaku</a></th>\n<th><a href=\"https://x.com/psnzbss\" rel=\"nofollow\">@uetyo</a></th>\n<th><a href=\"https://x.com/kanta_Swift\" rel=\"nofollow\">@kamijo</a></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img alt=\"o_chicchi\" src=\"https://pbs.twimg.com/profile_images/1273260349714649088/umncFZ5R_400x400.jpg\" width=\"100\"></td>\n<td><img alt=\"roku\" src=\"https://pbs.twimg.com/profile_images/1563711100390195212/MVIo_1xM_400x400.jpg\" width=\"100\"></td>\n<td><img alt=\"entaku\" src=\"https://pbs.twimg.com/profile_images/1598892937131458560/sgidJlol_400x400.jpg\" width=\"100\"></td>\n<td><img src=\"https://media.connpass.com/thumbs/00/ec/00eca8fbc177a6a7938cec6301ad0766.png\" width=\"100\"></td>\n<td><img src=\"https://pbs.twimg.com/profile_images/1560247523322630149/FGsQTgMR_400x400.jpg\" width=\"100\"></td>\n</tr>\n</tbody>\n</table>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>本勉強会は、技術交流が目的です。 知識の共有や参加者同士の交流を目的としない方の参加はお断りします。<br>\n<font color=\"#ff0000\">参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます</font></li>\n<li>講演内容やタイムスケジュールは変更となる可能性がございます</li>\n<li>当日の内容は収録してYouTubeの愛好会チャンネルで公開されます。あらかじめご了承ください</li>\n<li>当日のイベント内容は後日任意の媒体にて公開させていただくことがあります</li>\n<li>イベントレポート作成のため、お写真を撮らせていただくことがございますので予めご了承ください</li>\n<li>イベントは、止むを得ず中止させていただく場合がございます。<br>その際は、本サイトからのメッセージよりご連絡させていただきますのでご確認をお願いいたします</li>\n</ul>",
+      "url": "https://love-swift.connpass.com/event/390480/",
+      "image_url": "https://media.connpass.com/thumbs/d2/d9/d2d9d450f9cb4e1220aebe4a70acaa8f.png",
+      "hash_tag": "love_swift",
+      "started_at": "2026-06-26T19:00:00+09:00",
+      "ended_at": "2026-06-26T22:00:00+09:00",
+      "published_at": "2026-04-28T21:08:35+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 1620,
+        "subdomain": "love-swift",
+        "title": "Swift愛好会",
+        "url": "https://love-swift.connpass.com/"
+      },
+      "address": "東京都渋谷区渋谷二丁目24番12号 (渋谷スクランブルスクエア40F)",
+      "place": "DeNA 渋谷オフィス 40F",
+      "lat": "35.657706000000",
+      "lon": "139.703834900000",
+      "owner_id": 87108,
+      "owner_nickname": "o_chicchi",
+      "owner_display_name": "Satoru Ohguchi",
+      "accepted": 92,
+      "waiting": 0,
+      "updated_at": "2026-06-23T23:39:09+09:00"
+    },
+    {
       "id": 396618,
       "title": "LLMOps — PoCの壁を越える現場のリアル[Tokyo AI(TAI)]",
       "catch": "多くのビルダーがPoCから本番運用の移行に苦戦する今。次世代AIを社会実装するグローバル標準とは",
@@ -547,7 +547,7 @@
       "owner_id": 393016,
       "owner_nickname": "rs_ikeda",
       "owner_display_name": "rs_ikeda",
-      "accepted": 147,
+      "accepted": 146,
       "waiting": 0,
       "updated_at": "2026-06-25T14:48:48+09:00"
     },
