@@ -855,15 +855,15 @@ function renderVerify(){
       const dEq=h-idle;
       const diff=dEq-salD;
       const ok=Math.abs(diff)<3000; if(ok)okc++; tot++;
-      rows+=`<div class="row">${y}/${m}：日報営収 ${yen(h)} − 空転 ${yen(idle)} = <b style="color:var(--txt)">${yen(dEq)}</b> vs 明細D ${yen(salD)} <span class="${ok?'ok':'warn'}">${diff>=0?'+':'−'}${yen(Math.abs(diff))}</span></div>`;
+      rows+=`<div class="row">${y}/${m}：日報営収 ${yen(h)} − 空転 ${yen(idle)} = <b style="color:var(--txt)">${yen(dEq)}</b> ＝ 明細B+C ${yen(salD)} <span class="${ok?'ok':'warn'}">${ok?'一致':'差'}${diff>=0?'+':'−'}${yen(Math.abs(diff))}</span></div>`;
     }
   });
   if(tot===0){
-    box.innerHTML=`<div class="ttl">検算（日報D − 空転 vs 給与明細B+C）</div>`
-      +`<div class="pend">6/3以降の空転記録が給与月分そろうと自動照合します。それ以前は空転未記録のため、給与明細のB+Cで月売上を確定しています。</div>`;
+    box.innerHTML=`<div class="ttl">一致確認（日報D−空転 ＝ 給与明細B+C）</div>`
+      +`<div class="pend">同じ稼ぎを日報と給与明細の両ルートで記録したもの。本来この2つは一致します。6/3以降の空転記録が給与月分そろうと自動照合します。それ以前は空転未記録のため、給与明細のB+Cで月売上を確定しています。</div>`;
   }else{
-    box.innerHTML=`<div class="ttl">検算：日報D−空転 vs 給与明細B+C（${okc}/${tot} 一致）</div>${rows}`
-      +`<div class="note">6/3以降：日報営収（空転込み）から空転CSVを引いた実車Dが、給与明細のB+Cと一致するか照合。それ以前は空転未記録のため明細B+Cで確定。年収はD×62%で算出。</div>`;
+    box.innerHTML=`<div class="ttl">一致確認：日報D−空転 ＝ 給与明細B+C（${okc}/${tot} 一致）</div>${rows}`
+      +`<div class="note">同じ稼ぎを両ルートで記録したものなので本来は一致。6/3以降：日報営収（空転込み）から空転CSVを引いた実車Dが、給与明細のB+Cと一致するか照合。ズレたら日報の付け忘れか空転の取りこぼしを疑う。それ以前は空転未記録のため明細B+Cで確定。年収はD×62%で算出。</div>`;
   }
 }
 
