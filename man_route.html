@@ -104,6 +104,26 @@ h1{font-size:23px;font-weight:800;margin-top:5px;letter-spacing:.02em}
 .step-amt{font-size:13px;font-weight:800;color:var(--txt);width:78px;text-align:right;font-variant-numeric:tabular-nums}
 .step-cum{font-size:9px;color:var(--mu2);width:60px;text-align:right;font-variant-numeric:tabular-nums}
 
+/* 曜日別2系統ステップ */
+.steps-legend{display:flex;gap:12px;margin-bottom:10px;font-size:9px;color:var(--mu2)}
+.steps-legend .lg{display:flex;align-items:center;gap:4px}
+.steps-legend .lg::before{content:'';width:9px;height:9px;border-radius:2px}
+.lg-d::before{background:var(--cyan)}
+.lg-r::before{background:var(--amber)}
+.lg-f::before{background:var(--mu2)}
+.step-row2{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}
+.step-row2:last-child{border-bottom:none}
+.step-date{width:42px;flex-shrink:0;text-align:center;font-size:13px;font-weight:800;color:var(--txt);line-height:1.1;font-variant-numeric:tabular-nums}
+.step-date small{display:block;font-size:9px;font-weight:600;color:var(--mu);margin-top:1px}
+.step-date.we{color:var(--red)} .step-date.we small{color:var(--red)}
+.step-date.fr{color:var(--amber)} .step-date.fr small{color:var(--amber)}
+.step-mid{flex:1;min-width:0}
+.step-mid .step-bar{margin-bottom:5px}
+.step-amts{display:flex;gap:9px;flex-wrap:wrap;font-size:10px;font-variant-numeric:tabular-nums}
+.step-amts .aD{color:var(--cyan);font-weight:800}
+.step-amts .aR{color:var(--amber);font-weight:700}
+.step-amts .aF{color:var(--mu2);font-weight:600}
+
 /* フォーム導線 */
 .forms{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 12px 0}
 .formbtn{display:flex;flex-direction:column;gap:3px;padding:14px;border:1px solid var(--line2);border-radius:13px;background:var(--panel);color:var(--txt);text-decoration:none;cursor:pointer;transition:border-color .2s}
@@ -302,6 +322,7 @@ const SALARY_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vRRUHrlLfO6ZDQ
 const BONUS_URL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6F6e8nnGrHSg2fUBZgAG-2_qRkOvbcIGHyXTc84SoNaeetaG2e1ztQJo-qYQggpInaWw0h70lowra/pub?gid=0&single=true&output=csv";
 const DAILY_URL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
 const IDLE_URL  ="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTYCG_9IrMI-g9yXrshVt6Jy6EXRVOlDSrelt_BgBI5qi5U9m240OrY7APtcEQyNFd3CXrvbqswE2_/pub?gid=0&single=true&output=csv";
+const SHIFT_URL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vSSMFQ_ayXrBR-5lso6skyh7CEYfACk5psLYLQlXh43CVrPgY2YmyRd4f0nWsH75bQvriohg84zHsoC/pub?gid=0&single=true&output=csv";
 // 入力UI → Googleフォーム formResponse へ直接POST（no-cors）。
 // 送信後CSVが更新されるまで数十秒ラグがあるため、楽観的に再読込する。
 const SALARY_FORM_POST="https://docs.google.com/forms/d/e/1FAIpQLSdjUenaC_C7PbGOmcogd606K-U66QAvO6kdkuunrPFni__Lag/formResponse";
@@ -336,6 +357,7 @@ const IDLE_START=[2026,6,3];
 const yen=n=>'¥'+Math.round(n).toLocaleString('ja-JP');
 const man=n=>(n/10000).toFixed(0)+'万';
 const man1=n=>(n/10000).toFixed(1)+'万';
+const WDJP=['日','月','火','水','木','金','土'];
 function dnum(y,m,d){return y*10000+m*100+d;}
 function parseNum(s){ if(s==null)return 0; return parseFloat(String(s).replace(/[¥,\s]/g,''))||0; }
 function parseDate(s){
@@ -358,6 +380,9 @@ let SAL={};       // "YYYY-M" → {B,C,D,days}
 let BONUS=[];     // [{pay:"YYYY-M", amount, span}]
 let DAILY=[];     // 日報生データ
 let IDLE_AGG={};  // "YYYY-M" → 空転金額合計
+let SHIFT=[];     // [{y,m,d,type}] 出勤予定（shift CSV）
+let DOW_D={};     // 曜日(0=日..6=土) → 実車D平均
+let DOW_REV={};   // 曜日 → 営収平均（⑨予算ライン用・2025以降）
 let YEARS={2025:null,2026:null}; // 年別 月配列
 
 /* ════════════════════════════════════════════════
@@ -371,6 +396,65 @@ function loadCSV(url){
       error:err=>reject(err)
     });
   });
+}
+
+// 出勤予定 → SHIFT（shift CSV：A=出勤予定日, B=出番種別）
+function buildShift(rows){
+  SHIFT=[];
+  rows.forEach(r=>{
+    const ds=r['出勤予定日']||r['出勤日']||Object.values(r)[0];
+    const dt=parseDate(ds); if(!dt) return;
+    const type=String(r['出番種別']||Object.values(r)[1]||'J').trim();
+    SHIFT.push({y:dt[0],m:dt[1],d:dt[2],type});
+  });
+}
+
+// 曜日別の実車D平均 & 営収平均（2025年以降のみ・⑨方針）
+// 実車D＝営収−その日の空転。空転は日付単位で引けないため月按分の近似ではなく、
+// 営収ベースの曜日比だけを純粋に取り、配分の「重み」として使う。
+function buildDOW(){
+  const accD={},accR={},cnt={};
+  for(let w=0;w<7;w++){accD[w]=0;accR[w]=0;cnt[w]=0;}
+  DAILY.forEach(r=>{
+    const dt=parseDate(r['日付']); if(!dt) return;
+    if(dt[0]<2025) return;                       // 2024は技量不足として除外（⑨方針）
+    const rev=parseNum(r['営収']); if(rev<=0) return;
+    const w=new Date(dt[0],dt[1]-1,dt[2]).getDay();
+    accR[w]+=rev; cnt[w]++;
+    // 実車D近似：日報に実車率があれば営収×実車率、無ければ営収そのまま
+    const jr=parseNum(r['実車率']);
+    accD[w]+= jr>0 ? rev*(jr>1?jr/100:jr) : rev;
+  });
+  DOW_D={};DOW_REV={};
+  for(let w=0;w<7;w++){
+    DOW_D[w]  = cnt[w]? accD[w]/cnt[w] : 0;
+    DOW_REV[w]= cnt[w]? accR[w]/cnt[w] : 0;
+  }
+}
+
+// 今期の残り出番（shift登録済みで日報に売上がまだ無い日）を日付順で返す
+function remainingShifts(py,pmo){
+  const out=[];
+  SHIFT.forEach(s=>{
+    const pm=payMonthOf(s.y,s.m,s.d);
+    if(!pm||pm[0]!==py||pm[1]!==pmo) return;
+    // 日報に同日の売上があれば消化済
+    const done=DAILY.some(r=>{
+      const dt=parseDate(r['日付']);
+      return dt&&dt[0]===s.y&&dt[1]===s.m&&dt[2]===s.d&&parseNum(r['営収'])>0;
+    });
+    if(!done) out.push(s);
+  });
+  out.sort((a,b)=>dnum(a.y,a.m,a.d)-dnum(b.y,b.m,b.d));
+  return out;
+}
+
+// 残額remainを、与えた出番リストへ曜日weightで比例配分（合計＝remain）
+function allocByWeight(list,remain,weightFn){
+  const ws=list.map(weightFn);
+  const sum=ws.reduce((a,b)=>a+b,0);
+  if(sum<=0) return list.map(()=>remain/list.length); // 重み無→均等
+  return ws.map(w=>remain*w/sum);
 }
 
 // 給与明細 → SAL & 年別配列
@@ -635,7 +719,10 @@ function renderLive(){
   document.getElementById('liveDays').textContent=`${days}番 ／ 営収 ${yen(hSum)}・空転 ${yen(idle)}`;
   document.getElementById('liveTarget').textContent=yen(target);
   document.getElementById('liveTan').textContent=`目標D単価 ¥${Math.round(target/stdD).toLocaleString()}/番`;
-  const remain=target-dEq, rest=Math.max(stdD-days,0);
+  // 残り出番：shift CSVの登録から、まだ売上が無い日を取得（月の出番数12/13差に自動対応）
+  const remList=remainingShifts(py,pmo);
+  const rest=remList.length;
+  const remain=target-dEq;
   if(remain<=0){
     document.getElementById('liveRemainL').textContent='目標達成';
     document.getElementById('liveRemain').innerHTML=`目標Dを <b>${yen(-remain)}</b> 超過 🎉`;
@@ -643,25 +730,41 @@ function renderLive(){
     document.getElementById('liveRemainL').textContent='残出番なし';
     document.getElementById('liveRemain').innerHTML=`目標Dまで <b>${yen(remain)}</b> 届かず`;
   }else{
-    document.getElementById('liveRemainL').textContent=`目標Dまで残り ${yen(remain)} ／ 残${rest}番`;
-    document.getElementById('liveRemain').innerHTML=`1番あたり 実車D <b>${yen(remain/rest)}</b>`;
+    document.getElementById('liveRemainL').textContent=`目標Dまで残り ${yen(remain)} ／ 残${rest}番（出勤予定ベース）`;
+    document.getElementById('liveRemain').innerHTML=`均等なら 1番 <b>${yen(remain/rest)}</b>`;
   }
-  // 残り出番ごと着地ライン
+  // 残り出番ごと着地ライン（曜日別配分・2系統）
   const stepsEl=document.getElementById('liveSteps');
   if(rest>0 && remain>0){
-    const perStep=remain/rest;
-    let sh=`<div class="steps"><div class="steps-h">残り <b>${rest}出番</b> の着地ライン（1番ずつ・実車D基準）</div>`;
-    let cum=dEq;
-    for(let st=1;st<=rest;st++){
-      cum+=perStep; const num=days+st;
-      const barW=Math.min(perStep/110000*100,100);
-      sh+=`<div class="step-row">
-        <div class="step-n">${num}</div>
-        <div class="step-bar"><i style="width:${barW}%"></i></div>
-        <div class="step-amt">${yen(perStep)}</div>
-        <div class="step-cum">計${man1(cum)}</div>
+    // 配分A：実車D曜日平均で重み付け／配分B：⑨予算ライン(営収曜日平均)で重み付け
+    const wf=s=>new Date(s.y,s.m-1,s.d).getDay();
+    const allocD  =allocByWeight(remList,remain,s=>DOW_D[wf(s)]||0);
+    const allocRev=allocByWeight(remList,remain,s=>DOW_REV[wf(s)]||0);
+    const flat=remain/rest;
+    let sh=`<div class="steps">
+      <div class="steps-h">残り <b>${rest}出番</b> の曜日別ノルマ（合計＝残${yen(remain)}）</div>
+      <div class="steps-legend"><span class="lg lg-d">実車D曜日平均</span><span class="lg lg-r">⑨予算ライン</span><span class="lg lg-f">均等</span></div>`;
+    let cumD=dEq;
+    remList.forEach((s,i)=>{
+      const w=wf(s);
+      const isWE=(w===0); // 日＝赤強調
+      const isFr=(w===5||w===6);
+      cumD+=allocD[i];
+      const aD=allocD[i],aR=allocRev[i];
+      const barW=Math.min(aD/110000*100,100);
+      sh+=`<div class="step-row2">
+        <div class="step-date ${isWE?'we':''} ${isFr?'fr':''}">${s.m}/${s.d}<small>${WDJP[w]}</small></div>
+        <div class="step-mid">
+          <div class="step-bar"><i style="width:${barW}%"></i></div>
+          <div class="step-amts">
+            <span class="aD">D基準 ${yen(aD)}</span>
+            <span class="aR">予算 ${yen(aR)}</span>
+            <span class="aF">均等比 ${aD>=flat?'+':'−'}${yen(Math.abs(aD-flat))}</span>
+          </div>
+        </div>
+        <div class="step-cum">計${man1(cumD)}</div>
       </div>`;
-    }
+    });
     sh+=`</div>`; stepsEl.innerHTML=sh;
   }else stepsEl.innerHTML='';
 }
@@ -885,14 +988,16 @@ async function submitModal(){
 // データ再読込（送信後）
 async function reload(){
   try{
-    const [sal,bon,daily,idle]=await Promise.all([
+    const [sal,bon,daily,idle,shift]=await Promise.all([
       loadCSV(SALARY_URL).catch(()=>[]),
       loadCSV(BONUS_URL).catch(()=>[]),
       loadCSV(DAILY_URL).catch(()=>[]),
-      loadCSV(IDLE_URL).catch(()=>[])
+      loadCSV(IDLE_URL).catch(()=>[]),
+      loadCSV(SHIFT_URL).catch(()=>[])
     ]);
     SAL={};BONUS=[];IDLE_AGG={};
     buildSalary(sal); buildBonus(bon); DAILY=daily; buildIdle(idle);
+    buildShift(shift); buildDOW();
     renderAll(); renderVerify();
   }catch(e){console.error(e);}
   finish();
@@ -909,13 +1014,15 @@ function finish(){document.getElementById('load').classList.add('hide');}
 
 async function boot(){
   try{
-    const [sal,bon,daily,idle]=await Promise.all([
+    const [sal,bon,daily,idle,shift]=await Promise.all([
       loadCSV(SALARY_URL).catch(()=>[]),
       loadCSV(BONUS_URL).catch(()=>[]),
       loadCSV(DAILY_URL).catch(()=>[]),
-      loadCSV(IDLE_URL).catch(()=>[])
+      loadCSV(IDLE_URL).catch(()=>[]),
+      loadCSV(SHIFT_URL).catch(()=>[])
     ]);
     buildSalary(sal); buildBonus(bon); DAILY=daily; buildIdle(idle);
+    buildShift(shift); buildDOW();
     if(Object.keys(SAL).length===0){
       document.getElementById('nowTitle').textContent='給与CSV 未接続';
       document.getElementById('nowPeriod').textContent='ネットワーク環境で再読み込みしてください';
