@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-06-26T04:48:25.756529+09:00",
+  "fetched_at": "2026-06-26T06:24:41.412084+09:00",
   "date": "20260626",
-  "count": 18,
+  "count": 19,
   "events": [
     {
       "id": 398602,
@@ -152,37 +152,6 @@
       "accepted": 29,
       "waiting": 0,
       "updated_at": "2026-05-18T09:08:41+09:00"
-    },
-    {
-      "id": 393805,
-      "title": "PdMオフレコ会議：AIの壁編〜AIはなぜうまくいかないのか〜【DMM/CA/Gp合同】",
-      "catch": "",
-      "description": "<h2>3社による合同イベント</h2>\n<p>本イベントは、​ <br>\n<a href=\"http://合同会社DMM.com\" rel=\"nofollow\">合同会社DMM.com</a>、​株式会社サイバーエージェント、​株式会社グッドパッチの​3社に​よる​ <br>\nPdM向け合同コミュニティ​「PdMオフレコ会議​（#OffRecPdM）」の​取り組みの​一環と​して​開催します。​</p>\n<p>本コミュニティは、​ <br>\n「リアルな​意思決定の​裏側を、本音で​語る​場」を​コンセプトに、​ <br>\n少人数・クローズドな​環境だから​こそ​話せる​失敗・葛藤・意思決定の​背景と​いった、​ <br>\n普段は​表に​出にくいリアルな​実践知を​共有し、​継続的なつながりが​生まれる​場を​つくっていきます。​</p>\n<h2>イベント概要</h2>\n<p>AIは個人レベルでの活用が進むなか、   <br>\nプロダクトや組織への導入・活用においては、 <br>\n<strong>「どう接続し、どう意思決定するか」</strong>がPdMに問われています。</p>\n<p>昨今、成功事例や理想的な活用は多く語られているものの、 <br>\n実際の現場でどのように考え、判断しているのか、その意思決定の裏側や失敗は見えづらい状態にあります。 <br>\nその結果、多くの企業が同じような壁にぶつかりながら、手探りでAI導入・活用を進めているのが実情です。   </p>\n<p>本イベントでは、​PdMが​直面する​「AIの​壁」を​テーマに、​  </p>\n<ul>\n<li>「AI活用できている状態」の曖昧さ</li>\n<li>本当に全員がAIを活用する必要があるのかという問い</li>\n<li>AI導入によって曖昧になる責任範囲</li>\n<li>セキュリティと利便性のジレンマ</li>\n</ul>\n<p>など、実際の現場で起きているリアルな課題や試行錯誤を題材にしながら、 <br>\n何が起き、どんな意思決定をし、今どう向き合っているのかを、3社のリアルな実体験として共有します。</p>\n<p>成功事例ではなく、​</p>\n<ul>\n<li>AI導入に​おける​失敗の​構造理解​（な​ぜ​うまく​いかないのか）</li>\n<li>各社の​意思決定の​判断軸</li>\n<li>AIに​対する​適切な​期待値・スタンス</li>\n<li>組織・プロダクトへの​接続の​ヒント</li>\n</ul>\n<p>など、​失敗や本音を​起点に​した意思決定の​リアルを​通じて​ 「何が​正解か」ではなく、 <br>\n​「どう​考え、​どう​判断するか」を​持ち帰る​場を​目指します。​</p>\n<h2>このような方におすすめです</h2>\n<ul>\n<li>AI導入・活用に​関する​意思決定に​関わっている​人</li>\n<li>個人での​AI活用から、​組織・プロダクトへの​展開に​悩んでいる​人</li>\n<li>AI導入・活用に​おける​ROIや​合意形成、​期待値調整に​課題を​感じている​人</li>\n<li>正解が​ない​中での​意思決定に​不安や​迷いが​ある方</li>\n<li>​他社PdMの​“思考プロセスそのもの”に​触れたい​人</li>\n<li>キャリアの​次の​フェーズ​（Senior PdM / CPO / 事業責任者）を​意識している​人</li>\n<li>PdMの​コミュニティを​探している​人</li>\n</ul>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">項目</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30〜</td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00〜19:10</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10〜19:50</td>\n<td style=\"text-align: left;\">ライトニングトーク</td>\n<td style=\"text-align: left;\">３社から1名ずつ登壇</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜20:50</td>\n<td style=\"text-align: left;\">懇親会・テーブルトーク</td>\n<td style=\"text-align: left;\">フリーテーブルとトークテーマを用意したテーマテーブルでご歓談</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:50〜21:00</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">〜21:20</td>\n<td style=\"text-align: left;\">完全撤退</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>登壇者</h2>\n<h3>【合同会社DMM .com | 渡邊 麗子 | アルファ室 PdM】</h3>\n<p><img src=\"https://lh3.googleusercontent.com/pw/AP1GczPVh3tv9y1BpGXTTNr-j0hj0yceAcZFOYqiJJmHqnCLmDEzwBlD1tmCXi6MffVbrTazYaiwzsBLEdC2wDL3hss7BwEeZL-sLtp3dIfWM4gvlMyrCcscs4DCZdHN_eBYCy6KHGjT6G0dPvDHUXJzohSM=w1000-h1000-s-no-gm?authuser=0\" width=\"200\"></p>\n<p>デザイナーとしてキャリアをスタートし、\n2019年 SaaSプロダクト「Unipos」のPdMとして、グロース戦略を推進。 <br>\n2025年 DMMにて横断組織アルファ室のPdMとして、プラットフォーム基盤の戦略・UX改善支援に従事。 <br>\n人間中心設計専門家として、定量・定性分析を活用したUX起点の体験設計が強み。   </p>\n<h3>【株式会社サイバーエージェント | 池垣 隼介 | PdM 】</h3>\n<p><img src=\"https://lh3.googleusercontent.com/pw/AP1GczP5SpO2XiB4IO5LWoEqys_cYP9A7KEWlaOAAPrLVhQbHfr5SxKsjuAmHvynq7XQ-mITB5oSydGf8yuNIzsLaE_C6Dz9VtvkIhD-A8JV2Vk2izdGZ_nCG4xfgL_7eE3b4ktVpKeHQIFBUbHBvV0ecKGI=w1000-h1000-s-no-gm?authuser=0\" width=\"200\"></p>\n<p>ビジネス要件と技術的な制約の両面から最適解を設計し、実装と現場導入まで一気通貫で担うPdM。 <br>\n新卒で株式会社サイバーエージェントに入社し、サーバーサイドエンジニアとして調剤DX領域のプロダクト開発に従事した後、PdMへ転身。 <br>\n薬局現場の業務理解と技術的な実装感覚の両方を踏まえ、要件定義から設計・導入・効果検証までを一貫して進めるFDE的アプローチを実践している。 <br>\nあわせて、組織全体のAI活用推進をリードするとともに、自身もPM向けAIエージェントを構築し、PM業務の大部分をAIに委譲。\n人間は判断とレビューに専念する体制を整え、組織の意思決定のスピードとプロダクト品質を両立している。</p>\n<h3>【株式会社グッドパッチ | 福田 智也 | PdM 】</h3>\n<p><img src=\"https://lh3.googleusercontent.com/pw/AP1GczP0z2NfNXnRiJHtgwcJm4ukxMQ5aIZKbnRBEWGy7hh_eOtzsjMwdAZUgx5akLkQmaC-AjCoG__R9iU_vr3mlcLcnAptKYfP-T5l41hqvwmVmJ5Oijcn5WqlsEAqi8cFFcJNRw1N0kTYL-HxHpkR7S22=w1000-h1000-s-no-gm?authuser=0\" width=\"200\"></p>\n<p>データ・事業戦略・プロダクトマネジメントの接続を強みとするPdM。\n新卒でホテルマンとしてキャリアを始め、都内ビジネスホテルの支配人を経験。その後、医療DXスタートアップでPdM兼研究開発部門マネージャーとして新規サービス立ち上げや有料化を推進。\n直近では大手EC企業にてネットスーパー領域のPdMを担当し、売上拡大に貢献。KPI・組織・運用設計まで含めた、事業成長の基盤づくりを得意とする。</p>\n<h2>🏢主催・運営</h2>\n<p>このイベントは、以下の3社によって主催・運営されています。</p>\n<p>主催：合同会社DMM .com <br>\n会場提供：株式会社サイバーエージェント <br>\n協力：株式会社グッドパッチ ／ 株式会社サイバーエージェント  </p>\n<h2>🏢会場アクセス</h2>\n<p>株式会社サイバーエージェント オフィス   </p>\n<p>〒150-0042 <br>\n東京都渋谷区宇田川町40番1号 Abema Towers       </p>\n<ul>\n<li>JR・東京メトロ各線「渋谷駅」より徒歩7分</li>\n<li>京王井の頭線「神泉駅」より徒歩8分</li>\n</ul>\n<p>入館案内は開催前にconnpassを通じてご連絡します。 <br>\n<a href=\"https://www.cyberagent.co.jp/way/list/detail/id=23135\" rel=\"nofollow\" title=\"「Abema Towers（アベマタワーズ）」へのアクセス・入館方法\">Abema Towersへの行き方</a>     </p>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>本イベントは先着順となります。予めご了承ください。</li>\n<li>当日はお名刺をご持参ください。</li>\n<li>営業・採用・勧誘活動を目的とする参加はご遠慮ください。</li>\n<li>本イベントは「オフレコ」をコンセプトとしているため、登壇内容や参加者同士の具体的な発言・相談内容については、外部共有を前提としない場として運営します。</li>\n<li>イベントレポートやコミュニティ活動紹介を目的として、当日の会場全体の様子や雰囲気が分かる写真を、Webサイト・SNS等へ掲載させていただく場合があります。 <br>\nなお、個人が特定される写真撮影・掲載については十分配慮し、顔出しNGの方への確認や写り込み配慮を行いますので、当日運営までお気軽にお声がけください。</li>\n<li>急遽参加が難しくなった場合は、早めにキャンセルのご連絡をお願いいたします。</li>\n<li>イベントは止むを得ず中止させていただく場合がございます。その際はconnpassにてご連絡します。</li>\n</ul>\n<h2>🔒 個人情報の取り扱いについて</h2>\n<p>本イベントは、以下3社による共催イベントです。     <br>\nイベント参加時にご提供いただいた個人情報（氏名・メールアドレス等）は、各社が以下の目的で利用します。</p>\n<ul>\n<li>採用活動に関連する情報提供</li>\n<li>セミナー・イベント等に関連した情報提供<br>\n詳しくは各社のプライバシーポリシーをご確認いただき、ご同意いただいた上でお申し込みをお願いいたします。</li>\n</ul>\n<p><a href=\"https://dmm-corp.com/privacy/\" rel=\"nofollow\" title=\"合同会社DMM.com プライバシーポリシー\">合同会社DMM.com プライバシーポリシー</a>   <br>\n<a href=\"https://www.cyberagent.co.jp/privacy/\" rel=\"nofollow\" title=\"株式会社サイバーエージェント プライバシーポリシー\">株式会社サイバーエージェント プライバシーポリシー</a>   <br>\n<a href=\"https://goodpatch.com/privacy-policy\" rel=\"nofollow\" title=\"株式会社グッドパッチ プライバシーポリシー\">株式会社グッドパッチ プライバシーポリシー</a></p>",
-      "url": "https://dmm.connpass.com/event/393805/",
-      "image_url": "https://media.connpass.com/thumbs/56/2c/562c522b3614f759aa23b491627e2a44.png",
-      "hash_tag": "OffRecPdM",
-      "started_at": "2026-06-26T19:00:00+09:00",
-      "ended_at": "2026-06-26T21:00:00+09:00",
-      "published_at": "2026-05-29T11:41:40+09:00",
-      "limit": 50,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 3866,
-        "subdomain": "dmm",
-        "title": "DMM.com",
-        "url": "https://dmm.connpass.com/"
-      },
-      "address": "東京都渋谷区宇田川町40番1号 Abema Towers 11F",
-      "place": "株式会社サイバーエージェント オフィス",
-      "lat": "35.662543700000",
-      "lon": "139.696433700000",
-      "owner_id": 997492,
-      "owner_nickname": "Rwatanabe_pdm",
-      "owner_display_name": "Rwatanabe_pdm",
-      "accepted": 47,
-      "waiting": 0,
-      "updated_at": "2026-06-09T09:57:29+09:00"
     },
     {
       "id": 394266,
@@ -366,6 +335,37 @@
       "updated_at": "2026-06-13T17:23:54+09:00"
     },
     {
+      "id": 393805,
+      "title": "PdMオフレコ会議：AIの壁編〜AIはなぜうまくいかないのか〜【DMM/CA/Gp合同】",
+      "catch": "",
+      "description": "<h2>3社による合同イベント</h2>\n<p>本イベントは、​ <br>\n<a href=\"http://合同会社DMM.com\" rel=\"nofollow\">合同会社DMM.com</a>、​株式会社サイバーエージェント、​株式会社グッドパッチの​3社に​よる​ <br>\nPdM向け合同コミュニティ​「PdMオフレコ会議​（#OffRecPdM）」の​取り組みの​一環と​して​開催します。​</p>\n<p>本コミュニティは、​ <br>\n「リアルな​意思決定の​裏側を、本音で​語る​場」を​コンセプトに、​ <br>\n少人数・クローズドな​環境だから​こそ​話せる​失敗・葛藤・意思決定の​背景と​いった、​ <br>\n普段は​表に​出にくいリアルな​実践知を​共有し、​継続的なつながりが​生まれる​場を​つくっていきます。​</p>\n<h2>イベント概要</h2>\n<p>AIは個人レベルでの活用が進むなか、   <br>\nプロダクトや組織への導入・活用においては、 <br>\n<strong>「どう接続し、どう意思決定するか」</strong>がPdMに問われています。</p>\n<p>昨今、成功事例や理想的な活用は多く語られているものの、 <br>\n実際の現場でどのように考え、判断しているのか、その意思決定の裏側や失敗は見えづらい状態にあります。 <br>\nその結果、多くの企業が同じような壁にぶつかりながら、手探りでAI導入・活用を進めているのが実情です。   </p>\n<p>本イベントでは、​PdMが​直面する​「AIの​壁」を​テーマに、​  </p>\n<ul>\n<li>「AI活用できている状態」の曖昧さ</li>\n<li>本当に全員がAIを活用する必要があるのかという問い</li>\n<li>AI導入によって曖昧になる責任範囲</li>\n<li>セキュリティと利便性のジレンマ</li>\n</ul>\n<p>など、実際の現場で起きているリアルな課題や試行錯誤を題材にしながら、 <br>\n何が起き、どんな意思決定をし、今どう向き合っているのかを、3社のリアルな実体験として共有します。</p>\n<p>成功事例ではなく、​</p>\n<ul>\n<li>AI導入に​おける​失敗の​構造理解​（な​ぜ​うまく​いかないのか）</li>\n<li>各社の​意思決定の​判断軸</li>\n<li>AIに​対する​適切な​期待値・スタンス</li>\n<li>組織・プロダクトへの​接続の​ヒント</li>\n</ul>\n<p>など、​失敗や本音を​起点に​した意思決定の​リアルを​通じて​ 「何が​正解か」ではなく、 <br>\n​「どう​考え、​どう​判断するか」を​持ち帰る​場を​目指します。​</p>\n<h2>このような方におすすめです</h2>\n<ul>\n<li>AI導入・活用に​関する​意思決定に​関わっている​人</li>\n<li>個人での​AI活用から、​組織・プロダクトへの​展開に​悩んでいる​人</li>\n<li>AI導入・活用に​おける​ROIや​合意形成、​期待値調整に​課題を​感じている​人</li>\n<li>正解が​ない​中での​意思決定に​不安や​迷いが​ある方</li>\n<li>​他社PdMの​“思考プロセスそのもの”に​触れたい​人</li>\n<li>キャリアの​次の​フェーズ​（Senior PdM / CPO / 事業責任者）を​意識している​人</li>\n<li>PdMの​コミュニティを​探している​人</li>\n</ul>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">項目</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30〜</td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00〜19:10</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10〜19:50</td>\n<td style=\"text-align: left;\">ライトニングトーク</td>\n<td style=\"text-align: left;\">３社から1名ずつ登壇</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜20:50</td>\n<td style=\"text-align: left;\">懇親会・テーブルトーク</td>\n<td style=\"text-align: left;\">フリーテーブルとトークテーマを用意したテーマテーブルでご歓談</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:50〜21:00</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">〜21:20</td>\n<td style=\"text-align: left;\">完全撤退</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>登壇者</h2>\n<h3>【合同会社DMM .com | 渡邊 麗子 | アルファ室 PdM】</h3>\n<p><img src=\"https://lh3.googleusercontent.com/pw/AP1GczPVh3tv9y1BpGXTTNr-j0hj0yceAcZFOYqiJJmHqnCLmDEzwBlD1tmCXi6MffVbrTazYaiwzsBLEdC2wDL3hss7BwEeZL-sLtp3dIfWM4gvlMyrCcscs4DCZdHN_eBYCy6KHGjT6G0dPvDHUXJzohSM=w1000-h1000-s-no-gm?authuser=0\" width=\"200\"></p>\n<p>デザイナーとしてキャリアをスタートし、\n2019年 SaaSプロダクト「Unipos」のPdMとして、グロース戦略を推進。 <br>\n2025年 DMMにて横断組織アルファ室のPdMとして、プラットフォーム基盤の戦略・UX改善支援に従事。 <br>\n人間中心設計専門家として、定量・定性分析を活用したUX起点の体験設計が強み。   </p>\n<h3>【株式会社サイバーエージェント | 池垣 隼介 | PdM 】</h3>\n<p><img src=\"https://lh3.googleusercontent.com/pw/AP1GczP5SpO2XiB4IO5LWoEqys_cYP9A7KEWlaOAAPrLVhQbHfr5SxKsjuAmHvynq7XQ-mITB5oSydGf8yuNIzsLaE_C6Dz9VtvkIhD-A8JV2Vk2izdGZ_nCG4xfgL_7eE3b4ktVpKeHQIFBUbHBvV0ecKGI=w1000-h1000-s-no-gm?authuser=0\" width=\"200\"></p>\n<p>ビジネス要件と技術的な制約の両面から最適解を設計し、実装と現場導入まで一気通貫で担うPdM。 <br>\n新卒で株式会社サイバーエージェントに入社し、サーバーサイドエンジニアとして調剤DX領域のプロダクト開発に従事した後、PdMへ転身。 <br>\n薬局現場の業務理解と技術的な実装感覚の両方を踏まえ、要件定義から設計・導入・効果検証までを一貫して進めるFDE的アプローチを実践している。 <br>\nあわせて、組織全体のAI活用推進をリードするとともに、自身もPM向けAIエージェントを構築し、PM業務の大部分をAIに委譲。\n人間は判断とレビューに専念する体制を整え、組織の意思決定のスピードとプロダクト品質を両立している。</p>\n<h3>【株式会社グッドパッチ | 福田 智也 | PdM 】</h3>\n<p><img src=\"https://lh3.googleusercontent.com/pw/AP1GczP0z2NfNXnRiJHtgwcJm4ukxMQ5aIZKbnRBEWGy7hh_eOtzsjMwdAZUgx5akLkQmaC-AjCoG__R9iU_vr3mlcLcnAptKYfP-T5l41hqvwmVmJ5Oijcn5WqlsEAqi8cFFcJNRw1N0kTYL-HxHpkR7S22=w1000-h1000-s-no-gm?authuser=0\" width=\"200\"></p>\n<p>データ・事業戦略・プロダクトマネジメントの接続を強みとするPdM。\n新卒でホテルマンとしてキャリアを始め、都内ビジネスホテルの支配人を経験。その後、医療DXスタートアップでPdM兼研究開発部門マネージャーとして新規サービス立ち上げや有料化を推進。\n直近では大手EC企業にてネットスーパー領域のPdMを担当し、売上拡大に貢献。KPI・組織・運用設計まで含めた、事業成長の基盤づくりを得意とする。</p>\n<h2>🏢主催・運営</h2>\n<p>このイベントは、以下の3社によって主催・運営されています。</p>\n<p>主催：合同会社DMM .com <br>\n会場提供：株式会社サイバーエージェント <br>\n協力：株式会社グッドパッチ ／ 株式会社サイバーエージェント  </p>\n<h2>🏢会場アクセス</h2>\n<p>株式会社サイバーエージェント オフィス   </p>\n<p>〒150-0042 <br>\n東京都渋谷区宇田川町40番1号 Abema Towers       </p>\n<ul>\n<li>JR・東京メトロ各線「渋谷駅」より徒歩7分</li>\n<li>京王井の頭線「神泉駅」より徒歩8分</li>\n</ul>\n<p>入館案内は開催前にconnpassを通じてご連絡します。 <br>\n<a href=\"https://www.cyberagent.co.jp/way/list/detail/id=23135\" rel=\"nofollow\" title=\"「Abema Towers（アベマタワーズ）」へのアクセス・入館方法\">Abema Towersへの行き方</a>     </p>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>本イベントは先着順となります。予めご了承ください。</li>\n<li>当日はお名刺をご持参ください。</li>\n<li>営業・採用・勧誘活動を目的とする参加はご遠慮ください。</li>\n<li>本イベントは「オフレコ」をコンセプトとしているため、登壇内容や参加者同士の具体的な発言・相談内容については、外部共有を前提としない場として運営します。</li>\n<li>イベントレポートやコミュニティ活動紹介を目的として、当日の会場全体の様子や雰囲気が分かる写真を、Webサイト・SNS等へ掲載させていただく場合があります。 <br>\nなお、個人が特定される写真撮影・掲載については十分配慮し、顔出しNGの方への確認や写り込み配慮を行いますので、当日運営までお気軽にお声がけください。</li>\n<li>急遽参加が難しくなった場合は、早めにキャンセルのご連絡をお願いいたします。</li>\n<li>イベントは止むを得ず中止させていただく場合がございます。その際はconnpassにてご連絡します。</li>\n</ul>\n<h2>🔒 個人情報の取り扱いについて</h2>\n<p>本イベントは、以下3社による共催イベントです。     <br>\nイベント参加時にご提供いただいた個人情報（氏名・メールアドレス等）は、各社が以下の目的で利用します。</p>\n<ul>\n<li>採用活動に関連する情報提供</li>\n<li>セミナー・イベント等に関連した情報提供<br>\n詳しくは各社のプライバシーポリシーをご確認いただき、ご同意いただいた上でお申し込みをお願いいたします。</li>\n</ul>\n<p><a href=\"https://dmm-corp.com/privacy/\" rel=\"nofollow\" title=\"合同会社DMM.com プライバシーポリシー\">合同会社DMM.com プライバシーポリシー</a>   <br>\n<a href=\"https://www.cyberagent.co.jp/privacy/\" rel=\"nofollow\" title=\"株式会社サイバーエージェント プライバシーポリシー\">株式会社サイバーエージェント プライバシーポリシー</a>   <br>\n<a href=\"https://goodpatch.com/privacy-policy\" rel=\"nofollow\" title=\"株式会社グッドパッチ プライバシーポリシー\">株式会社グッドパッチ プライバシーポリシー</a></p>",
+      "url": "https://dmm.connpass.com/event/393805/",
+      "image_url": "https://media.connpass.com/thumbs/56/2c/562c522b3614f759aa23b491627e2a44.png",
+      "hash_tag": "OffRecPdM",
+      "started_at": "2026-06-26T19:00:00+09:00",
+      "ended_at": "2026-06-26T21:00:00+09:00",
+      "published_at": "2026-05-29T11:41:40+09:00",
+      "limit": 50,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 3866,
+        "subdomain": "dmm",
+        "title": "DMM.com",
+        "url": "https://dmm.connpass.com/"
+      },
+      "address": "東京都渋谷区宇田川町40番1号 Abema Towers 11F",
+      "place": "株式会社サイバーエージェント オフィス",
+      "lat": "35.662543700000",
+      "lon": "139.696433700000",
+      "owner_id": 997492,
+      "owner_nickname": "Rwatanabe_pdm",
+      "owner_display_name": "Rwatanabe_pdm",
+      "accepted": 48,
+      "waiting": 0,
+      "updated_at": "2026-06-09T09:57:29+09:00"
+    },
+    {
       "id": 396618,
       "title": "LLMOps — PoCの壁を越える現場のリアル[Tokyo AI(TAI)]",
       "catch": "多くのビルダーがPoCから本番運用の移行に苦戦する今。次世代AIを社会実装するグローバル標準とは",
@@ -547,9 +547,40 @@
       "owner_id": 393016,
       "owner_nickname": "rs_ikeda",
       "owner_display_name": "rs_ikeda",
-      "accepted": 148,
+      "accepted": 147,
       "waiting": 0,
       "updated_at": "2026-06-25T14:48:48+09:00"
+    },
+    {
+      "id": 393826,
+      "title": "盆栽.dev 2026年水無月 芽吹き Tech Talk",
+      "catch": "Where Code Takes Root and New Ideas Begin to Bloom",
+      "description": "<p>盆栽.dev は、埼玉を拠点に、エンジニア同士が学び、つながり、盆栽のように技術をじっくり育てていくコミュニティです。派手さより継続、消費より積み重ねを大切にしながら、地域に根ざした交流と実践知の共有を目指します。</p>\n<h1>芽吹きTech Talk</h1>\n<p><strong>芽吹きTech Talk</strong> は、気軽に発表できる場を目指したイベントです。<br>\n技術イベントではありますが、発表テーマは技術に限りません。</p>\n<p>自己紹介、最近触ってみた技術の話、仕事で学んだこと、開発のふりかえり、勉強中の内容、個人開発、失敗談、工夫したこと、コミュニティ運営、キャリアのこと、日々の仕事の中で考えたこと、ゲーム、アニメ、本、趣味、酒など幅広いテーマを歓迎します。</p>\n<h2>こんな方を歓迎します</h2>\n<p>特に、<strong>はじめて発表してみたい方</strong> や <strong>発表にまだ慣れていない方</strong> を歓迎しています。</p>\n<ul>\n<li>LTや登壇は少しハードルが高いと感じている方</li>\n<li>技術の深い話ではないけれど、誰かに共有してみたいことがある方</li>\n<li>完成された内容ではなくても、今考えていることや学んだことを話してみたい方</li>\n</ul>\n<p>はじめての一歩を踏み出しやすい場にしたいと考えています。</p>\n<h2>参加枠について</h2>\n<p>盆栽.dev らしく少しだけ言い換えています。</p>\n<ul>\n<li><strong>芽吹き手</strong>：発表する人</li>\n<li><strong>水やり手</strong>：発表を聞き、応援する人</li>\n</ul>\n<p>発表する人も、聞く人も、どちらもコミュニティを育てる大切な参加者であり、お互いの小さな一歩を育て合う場にしたいと考えています。</p>\n<h2>発表について</h2>\n<ul>\n<li>発表時間は <strong>3〜7分程度</strong>（最大8分）</li>\n<li>スライドを使っても、使わずに話してもOK</li>\n</ul>\n<p>話したいことを、自分のやりやすい形で持ち寄っていただければ大丈夫です。</p>\n<h2>大切にしたいこと</h2>\n<p>完成された知見や強い専門性がなくても問題ありません。<br>\nうまく話すことよりも、<strong>自分の言葉で話してみること</strong>、<strong>誰かに共有してみること</strong> を大切にしています。</p>\n<p>聞くだけ参加ではなく、少しずつ話してみることを大切にする会です。</p>\n<h2>参加を考えている方へ</h2>\n<p>はじめての登壇も、ひさしぶりの発表も、発表に慣れている方の参加も歓迎です。<br>\n気負わずに話せる、小さな最初の一歩として、ぜひご参加ください。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>～18:30</td>\n<td>空いていない可能性があります</td>\n</tr>\n<tr>\n<td>18:30～19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:10～19:20</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:20～19:25</td>\n<td>自己紹介</td>\n</tr>\n<tr>\n<td>19:25～19:30</td>\n<td>発表順抽せん</td>\n</tr>\n<tr>\n<td>19:30～19:40</td>\n<td>1人目</td>\n</tr>\n<tr>\n<td>19:40～19:50</td>\n<td>2人目</td>\n</tr>\n<tr>\n<td>19:50～20:00</td>\n<td>3人目</td>\n</tr>\n<tr>\n<td>20:00～20:10</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>20:10～20:20</td>\n<td>4人目</td>\n</tr>\n<tr>\n<td>20:20～20:30</td>\n<td>5人目</td>\n</tr>\n<tr>\n<td>20:30～20:40</td>\n<td>6人目</td>\n</tr>\n<tr>\n<td>20:40～20:50</td>\n<td>7人目</td>\n</tr>\n<tr>\n<td>20:50～21:00</td>\n<td>8人目</td>\n</tr>\n<tr>\n<td>21:00～21:30</td>\n<td>クロージング</td>\n</tr>\n<tr>\n<td>21:30～</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<h2>おやくそく</h2>\n<p>本イベントは、参加者同士が安心して交流できる場を目指しています。故に、すべての参加者は、互いに敬意を持って行動してください。</p>\n<p>コミュニティ内での立場や、イベントの内外を問わず、次に掲げる行為は容認されません。</p>\n<ul>\n<li>営業・勧誘・採用・宗教・政治活動など、イベントの趣旨に反する行為</li>\n<li>迷惑行為・脅迫、暴力・差別・ハラスメント・ストーキングなど、不適切な言動</li>\n</ul>",
+      "url": "https://bonsai-dev.connpass.com/event/393826/",
+      "image_url": "https://media.connpass.com/thumbs/bf/c4/bfc4cb3df7e393938e55b9dc2bd82c00.png",
+      "hash_tag": "bonsaidev",
+      "started_at": "2026-06-26T19:00:00+09:00",
+      "ended_at": "2026-06-26T21:00:00+09:00",
+      "published_at": "2026-05-17T19:24:28+09:00",
+      "limit": 14,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17667,
+        "subdomain": "bonsai-dev",
+        "title": "盆栽.dev",
+        "url": "https://bonsai-dev.connpass.com/"
+      },
+      "address": "埼玉県さいたま市大宮区大門町2丁目118",
+      "place": "RaiBoC Hall 市民会館おおみや 6F 集会室3",
+      "lat": "35.907340200000",
+      "lon": "139.627170100000",
+      "owner_id": 874577,
+      "owner_nickname": "yuzneri",
+      "owner_display_name": "ゆずねり",
+      "accepted": 12,
+      "waiting": 0,
+      "updated_at": "2026-06-25T18:22:19+09:00"
     }
   ]
 }
