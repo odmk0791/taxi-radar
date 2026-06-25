@@ -71,6 +71,13 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 }
 .chip.on { border-color:var(--accent); color:var(--accent); background:rgba(0,200,240,.08); }
 
+/* ── SORT BAR ── */
+.sort-bar { display:flex; align-items:center; gap:10px; padding:8px 14px; background:var(--bg); border-bottom:1px solid var(--border); }
+.sort-label { font-size:11px; color:var(--muted); }
+.sort-btn { font-size:12px; font-weight:700; padding:5px 14px; border-radius:8px; border:1px solid var(--accent); background:rgba(0,200,240,.1); color:var(--accent); cursor:pointer; white-space:nowrap; }
+.sort-btn:active { transform:scale(.97); }
+.sort-hint { font-size:10px; color:var(--muted); margin-left:auto; }
+
 /* ── EVENT LIST ── */
 .evt-list { padding:10px 14px 90px; display:flex; flex-direction:column; gap:9px; }
 
@@ -102,6 +109,10 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 .src-badge { flex-shrink:0; font-size:9px; font-weight:700; padding:2px 6px; border-radius:5px; letter-spacing:.3px; }
 .src-badge.connpass { background:rgba(120,90,240,.18); color:#9b7cff; border:1px solid #6a4dd0; }
 .src-badge.manual   { background:rgba(32,200,112,.15); color:var(--green); border:1px solid var(--green); }
+.hole-badge { flex-shrink:0; font-size:10px; font-weight:700; padding:2px 7px; border-radius:5px; letter-spacing:.3px; }
+.hole-badge.hole-high { background:rgba(240,160,0,.22); color:#ffc850; border:1px solid var(--amber); }
+.hole-badge.hole-mid  { background:rgba(0,200,240,.15); color:var(--accent); border:1px solid var(--accent); }
+.hole-badge.hole-low  { background:var(--surface2); color:var(--muted); border:1px solid var(--border); }
 
 .evt-meta { display:flex; flex-wrap:wrap; gap:6px 12px; font-size:11px; color:var(--muted); }
 .evt-meta .hi   { color:var(--text); }
@@ -248,6 +259,11 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 <div id="viewRadar">
   <div id="map"></div>
   <div class="status-bar" id="statusBar">スキャンボタンで周辺のイベントを確認</div>
+  <div class="sort-bar" id="sortBar" style="display:none">
+    <span class="sort-label">並び順</span>
+    <button class="sort-btn" id="sortBtn" onclick="toggleSort()">⏰ 終了が近い順</button>
+    <span class="sort-hint">🎯=競合が薄い穴</span>
+  </div>
   <div class="filter-bar" id="filterBar" style="display:none">
     <div class="chip on"  data-f="all"   onclick="setFilter('all')">すべて</div>
     <div class="chip"     data-f="now"   onclick="setFilter('now')">🔴 30分以内</div>
@@ -372,6 +388,9 @@ const STORAGE_KEY='event_radar_events';
 // Connpass自動取得データ（GitHub Actionsが毎時更新）
 const CONNPASS_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/connpass_events.json';
 const MANUAL_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/manual_events.json';
+const VENUE_MASTER_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/venue_master.json';
+let venueMaster=[]; // 会場マスタ（穴スコア計算用）
+let sortMode='urgency'; // 'urgency'(終了が近い順) or 'hole'(穴スコア順)
 
 // ─ Google Form placeholder（後で差し込む）─
 const FORM_ACTION = 'FORM_ACTION_PLACEHOLDER';
@@ -449,7 +468,86 @@ function timeLeft(endISO){
 function fmtT(iso){ if(!iso) return '--'; const d=new Date(iso); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
 function setStatus(msg,t){ const b=document.getElementById('statusBar'); b.textContent=msg; b.className='status-bar'+(t?' '+t:''); }
 
+// ソート適用（urgency=終了が近い順 / hole=穴スコア順）
+function applySorting(){
+  if(sortMode==='hole'){
+    allEvents.sort((a,b)=>{
+      const ah=a._hole==null?-99:a._hole, bh=b._hole==null?-99:b._hole;
+      return bh-ah || a._dist-b._dist; // 穴スコア高い順、同点は近い順
+    });
+  } else {
+    allEvents.sort((a,b)=>{
+      const o={now:0,soon:1,later:2,ended:3};
+      return (o[a._u]??2)-(o[b._u]??2) || a._dist-b._dist;
+    });
+  }
+}
+function toggleSort(){
+  sortMode = sortMode==='hole' ? 'urgency' : 'hole';
+  const btn=document.getElementById('sortBtn');
+  if(btn) btn.textContent = sortMode==='hole' ? '🎯 穴スコア順' : '⏰ 終了が近い順';
+  applySorting();
+  renderList();
+}
+
 const scaleLabels=['','〜500人','〜2000人','〜1万人','1万人超'];
+
+// ═══ 穴スコア ═══
+// 会場マスタを読み込む
+async function loadVenueMaster(){
+  if(venueMaster.length) return venueMaster;
+  try{
+    const r=await fetch(VENUE_MASTER_URL+'?t='+Date.now(),{signal:AbortSignal.timeout(8000)});
+    if(r.ok){ const d=await r.json(); venueMaster=d.venues||[]; }
+  }catch(e){}
+  return venueMaster;
+}
+// 会場名でマスタを引く（部分一致も許容）
+function findVenue(name){
+  if(!name) return null;
+  let v=venueMaster.find(x=>x.name===name);
+  if(v) return v;
+  // 部分一致（「Zepp Haneda(TOKYO)」⇔「Zepp Haneda」など）
+  const norm=s=>s.replace(/[\s　()（）]/g,'').toLowerCase();
+  const n=norm(name);
+  v=venueMaster.find(x=>norm(x.name).includes(n)||n.includes(norm(x.name)));
+  return v||null;
+}
+// 客層タグ→タクシー利用度
+function guestScore(tag){
+  if(!tag) return 2.0;
+  if(tag.includes('高所得')||tag.includes('年配')) return 5.0;
+  if(tag.includes('クラシック')||tag.includes('オペラ')||tag.includes('バレエ')) return 4.5;
+  if(tag.includes('歌舞伎')||tag.includes('ミュージカル')||tag.includes('演劇')) return 4.0;
+  if(tag.includes('宴会')||tag.includes('ビジネス')||tag.includes('学会')||tag.includes('式典')) return 4.5;
+  if(tag.includes('スポーツ')) return 3.0;
+  if(tag.includes('アイドル')) return 1.5;
+  if(tag.includes('ライブ')) return 2.5;
+  return 2.5;
+}
+// 終演時刻→時間点（遅いほど高い、22時以降が穴）
+function timeScore(endISO){
+  if(!endISO) return 0;
+  const h=new Date(endISO).getHours();
+  if(h>=23||h<4) return 3.0;   // 深夜＝競合激減
+  if(h>=22) return 2.5;
+  if(h>=21) return 1.0;        // ゴールデン＝競合集中
+  if(h>=20) return 1.5;
+  if(h>=19) return 2.0;        // 中途半端＝競合少なめ
+  return 1.5;
+}
+// イベントの穴スコアを計算（会場マスタとマッチした場合のみ）
+function calcHoleScore(ev){
+  const v=findVenue(ev.venue);
+  if(!v||v.walk_min==null||v.crowd_lv==null){ ev._venue=v; ev._hole=null; return null; }
+  const walkPt=Math.min(v.walk_min/2,5);
+  const locPt=(walkPt+v.rail_weak)/2;
+  const gPt=guestScore(v.guest_type);
+  const tPt=timeScore(ev.end_iso);
+  const hole=Math.round((locPt+gPt+tPt-v.crowd_lv*1.5)*10)/10;
+  ev._venue=v; ev._hole=hole;
+  return hole;
+}
 
 // ═══ MARKERS ═══
 function drawMarkers(evs){
@@ -493,8 +591,15 @@ function renderList(){
     const idx=allEvents.indexOf(ev);
     const sc=parseInt(ev.scale)||1;
     const pips=Array(4).fill(0).map((_,j)=>'<div class="scale-pip'+(j<sc?' on':'')+'"></div>').join('');
+    // 穴スコアバッジ（マスタにある会場のみ）
+    let holeBadge='';
+    if(ev._hole!=null){
+      const hcls = ev._hole>=4?'hole-high' : ev._hole>=2?'hole-mid' : 'hole-low';
+      holeBadge='<span class="hole-badge '+hcls+'">穴 '+ev._hole+'</span>';
+    }
     h+='<div class="evt-card u-'+u+'" onclick="focusEv('+idx+')">'
-      +'<div class="evt-top"><div class="evt-name">'+ev.name+'</div><div class="badge '+u+'">'+ul[u]+'</div></div>'
+      +'<div class="evt-top"><div class="evt-name">'+ev.name+'</div>'
+      +'<div style="display:flex;gap:5px;align-items:center;flex-shrink:0">'+holeBadge+'<div class="badge '+u+'">'+ul[u]+'</div></div></div>'
       +'<div class="evt-meta">'
       +'<span class="hi">🏛 '+ev.venue+'</span>'
       +'<span class="'+tc+'">⏰ <strong>'+fmtT(ev.end_iso)+'</strong>終了'+(timeLeft(ev.end_iso)?' ('+timeLeft(ev.end_iso)+')':'')+'</span>'
@@ -602,18 +707,23 @@ async function startScan(){
     }
   }catch(e){ /* 取得失敗時はスキップ */ }
 
-  // 3) マージ → 距離・緊急度を計算 → 絞り込み → ソート
+  // 会場マスタを読み込み（穴スコア計算用）
+  await loadVenueMaster();
+
+  // 3) マージ → 距離・緊急度・穴スコアを計算 → 絞り込み → ソート
   allEvents = [...manualEvents, ...serverEvents, ...connpassEvents]
-    .map(ev=>({
-      ...ev,
-      _dist: (userLat&&ev.lat&&ev.lng) ? dist(userLat,userLng,ev.lat,ev.lng) : 999,
-      _u: urgency(ev.end_iso)
-    }))
-    .filter(ev=>range>=50 || ev._dist<=range)
-    .sort((a,b)=>{
-      const o={now:0,soon:1,later:2,ended:3};
-      return (o[a._u]??2)-(o[b._u]??2) || a._dist-b._dist;
-    });
+    .map(ev=>{
+      const e={
+        ...ev,
+        _dist: (userLat&&ev.lat&&ev.lng) ? dist(userLat,userLng,ev.lat,ev.lng) : 999,
+        _u: urgency(ev.end_iso)
+      };
+      calcHoleScore(e); // e._hole に穴スコア、e._venue にマスタ会場
+      return e;
+    })
+    .filter(ev=>range>=50 || ev._dist<=range);
+
+  applySorting();
 
   if(!allEvents.length){
     setStatus('本日のイベントなし — 手動登録するかConnpass更新を待ってください','err');
@@ -625,6 +735,7 @@ async function startScan(){
     const mc=manualEvents.length+serverEvents.length, cc=connpassEvents.length;
     setStatus('✅ '+allEvents.length+'件表示中（手動'+mc+' / Connpass'+cc+'）','ok');
     document.getElementById('filterBar').style.display='flex';
+    document.getElementById('sortBar').style.display='flex';
     renderList();
     drawMarkers(allEvents);
     if(allEvents.length>0){
