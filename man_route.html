@@ -78,7 +78,7 @@ h1{font-size:23px;font-weight:800;margin-top:5px;letter-spacing:.02em}
 .debt-head .v.miss{color:var(--red)} .debt-head .v.ok{color:var(--green)}
 .debt-sub{font-size:10.5px;color:var(--mu2);margin-bottom:10px;line-height:1.5}
 .debt-sub b{color:var(--txt)}
-#debtSvg{width:100%;height:120px;display:block}
+#debtSvg{width:100%;height:132px;display:block}
 
 /* now panel */
 .now-card{margin:0 12px;padding:18px;border-radius:16px;border:1px solid var(--line2);background:linear-gradient(180deg,rgba(255,174,60,.06),var(--panel))}
@@ -239,7 +239,7 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
     <span class="v miss tnum" id="debtNow">—</span>
   </div>
   <div class="debt-sub" id="debtSub">1月からの貯金／借金の推移。確定＝実線・予測＝点線。</div>
-  <svg id="debtSvg" viewBox="0 0 440 120" preserveAspectRatio="none"></svg>
+  <svg id="debtSvg" viewBox="0 0 440 132" preserveAspectRatio="xMidYMid meet"></svg>
 </div>
 
 <!-- 今期ライブ -->
@@ -681,7 +681,10 @@ function drawDebt(){
   s+=`<path d="${dProj}" fill="none" stroke="var(--mu)" stroke-width="2" stroke-dasharray="4 3"/>`;
   pts.forEach((v,i)=>{ const neg=v<0; s+=`<circle cx="${x(i)}" cy="${y(v)}" r="${i===confIdx?3.5:2.5}" fill="${neg?'var(--red)':'var(--green)'}"/>`; });
   const endV=pts[11];
-  s+=`<text x="${W-pad}" y="${y(endV)+(endV<0?14:-7)}" text-anchor="end" font-size="10" fill="${endV<0?'var(--red)':'var(--green)'}" font-weight="700">${endV<0?'−':'+'}${man1(Math.abs(endV))}</text>`;
+  // ラベルが枠外に出ないようy座標をクランプ、x も少し内側へ
+  let lblY=y(endV)+(endV<0?14:-7);
+  lblY=Math.max(12,Math.min(H-4,lblY));
+  s+=`<text x="${W-pad-2}" y="${lblY}" text-anchor="end" font-size="10" fill="${endV<0?'var(--red)':'var(--green)'}" font-weight="700">${endV<0?'−':'+'}${man1(Math.abs(endV))}円</text>`;
   svg.innerHTML=s;
   const now=confIdx>=0?pts[confIdx]:0;
   const el=document.getElementById('debtNow');
