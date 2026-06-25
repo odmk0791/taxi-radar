@@ -731,7 +731,7 @@ function renderLive(){
     document.getElementById('liveRemain').innerHTML=`目標Dまで <b>${yen(remain)}</b> 届かず`;
   }else{
     document.getElementById('liveRemainL').textContent=`目標Dまで残り ${yen(remain)} ／ 残${rest}番（出勤予定ベース）`;
-    document.getElementById('liveRemain').innerHTML=`均等なら 1番 <b>${yen(remain/rest)}</b>`;
+    document.getElementById('liveRemain').innerHTML=`均等割りなら <b>${yen(remain/rest)}</b>／出番`;
   }
   // 残り出番ごと着地ライン（曜日別配分・2系統）
   const stepsEl=document.getElementById('liveSteps');
