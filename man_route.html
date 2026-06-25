@@ -146,6 +146,29 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
 .verify .row:last-child{border-bottom:none}
 .verify .ok{color:var(--green)} .verify .warn{color:var(--red)} .verify .pend{color:var(--mu2)}
 .verify .note{margin-top:7px;color:var(--mu2);font-size:9.5px}
+
+/* ════ 入力モーダル ════ */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:200;display:none;align-items:flex-end;justify-content:center;backdrop-filter:blur(3px)}
+.modal-bg.show{display:flex}
+.modal{width:100%;max-width:480px;background:var(--panel);border:1px solid var(--line2);border-radius:20px 20px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));animation:slideUp .28s cubic-bezier(.2,.8,.2,1)}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.modal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+.modal-head span{font-size:16px;font-weight:800;letter-spacing:.02em}
+.modal-x{background:none;border:none;color:var(--mu);font-size:26px;line-height:1;cursor:pointer;padding:0 4px;font-weight:300}
+.modal-body{margin-top:14px;display:flex;flex-direction:column;gap:13px}
+.fld{display:flex;flex-direction:column;gap:5px}
+.fld label{font-size:11px;color:var(--mu);font-weight:600;letter-spacing:.02em}
+.fld label .req{color:var(--amber);margin-left:3px}
+.fld input{background:var(--bg);border:1px solid var(--line2);border-radius:11px;padding:13px 14px;color:var(--txt);font-size:16px;font-variant-numeric:tabular-nums;font-family:inherit;transition:border-color .15s;width:100%}
+.fld input:focus{outline:none;border-color:var(--amber)}
+.fld .hint{font-size:9.5px;color:var(--mu2);line-height:1.4}
+.fld.bad input{border-color:var(--red)}
+.modal-msg{font-size:11px;margin-top:12px;min-height:15px;text-align:center;font-weight:600}
+.modal-msg.ok{color:var(--green)} .modal-msg.err{color:var(--red)}
+.modal-send{width:100%;margin-top:12px;padding:15px;border:none;border-radius:13px;background:linear-gradient(180deg,var(--amber),#e0901f);color:#1a1206;font-size:15px;font-weight:800;letter-spacing:.04em;cursor:pointer;transition:opacity .15s}
+.modal-send:active{opacity:.8}
+.modal-send:disabled{opacity:.45;cursor:default}
+.modal-note{margin-top:12px;font-size:9.5px;color:var(--mu2);line-height:1.6;text-align:center}
 </style>
 </head>
 <body>
@@ -217,14 +240,14 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
 
 <!-- 入力フォーム導線 -->
 <div class="forms">
-  <a class="formbtn" id="formSalary" href="#" target="_blank" rel="noopener">
+  <button class="formbtn" id="formSalary" type="button">
     <span class="ic">📝</span><span class="t">給与を入力</span>
-    <span class="x">月の給与営収B・公出営収C・出勤日数（毎月25日）</span>
-  </a>
-  <a class="formbtn" id="formBonus" href="#" target="_blank" rel="noopener">
+    <span class="x">給与営収・公出営収・出勤日数（毎月25日）</span>
+  </button>
+  <button class="formbtn" id="formBonus" type="button">
     <span class="ic">💰</span><span class="t">分離給を入力</span>
-    <span class="x">支給日・金額・帰属期間（3/6/12月）</span>
-  </a>
+    <span class="x">支給日・金額（3/6/12月・帰属は自動）</span>
+  </button>
 </div>
 
 <!-- 根拠 -->
@@ -243,6 +266,20 @@ footer{margin:30px 16px 0;font-size:9.5px;color:var(--mu2);line-height:1.7;text-
 <div class="facts" id="factsBox"></div>
 
 <footer id="foot"></footer>
+
+<!-- ════ 入力モーダル ════ -->
+<div id="modal" class="modal-bg">
+  <div class="modal">
+    <div class="modal-head">
+      <span id="modalTitle">給与を入力</span>
+      <button class="modal-x" id="modalClose" type="button">×</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div id="modalMsg" class="modal-msg"></div>
+    <button class="modal-send" id="modalSend" type="button">送信</button>
+    <div class="modal-note" id="modalNote"></div>
+  </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script>
@@ -265,10 +302,12 @@ const SALARY_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vRRUHrlLfO6ZDQ
 const BONUS_URL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6F6e8nnGrHSg2fUBZgAG-2_qRkOvbcIGHyXTc84SoNaeetaG2e1ztQJo-qYQggpInaWw0h70lowra/pub?gid=0&single=true&output=csv";
 const DAILY_URL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
 const IDLE_URL  ="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTYCG_9IrMI-g9yXrshVt6Jy6EXRVOlDSrelt_BgBI5qi5U9m240OrY7APtcEQyNFd3CXrvbqswE2_/pub?gid=0&single=true&output=csv";
-// 入力フォーム（プロジェクト2フォーム）。FormResponses編集URLは別なので公開フォームURLが必要。
-// 暫定でスプレッドシート（回答先）を開く導線。実フォームURLが分かれば差し替え。
-const SALARY_FORM_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vRRUHrlLfO6ZDQ54Kdi9LQ_ECFz9nacUnMDmsOie8J2u4MNWkNokJVnRea-2chmUKyOUKQb8OJe7jKI/pubhtml";
-const BONUS_FORM_URL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6F6e8nnGrHSg2fUBZgAG-2_qRkOvbcIGHyXTc84SoNaeetaG2e1ztQJo-qYQggpInaWw0h70lowra/pubhtml";
+// 入力UI → Googleフォーム formResponse へ直接POST（no-cors）。
+// 送信後CSVが更新されるまで数十秒ラグがあるため、楽観的に再読込する。
+const SALARY_FORM_POST="https://docs.google.com/forms/d/e/1FAIpQLSdjUenaC_C7PbGOmcogd606K-U66QAvO6kdkuunrPFni__Lag/formResponse";
+const SALARY_ENTRY={month:"entry.35138343",B:"entry.701076438",C:"entry.1067207646",days:"entry.1335911534"};
+const BONUS_FORM_POST="https://docs.google.com/forms/d/e/1FAIpQLSdgHecNtVTzNtV5K_S3oOMuAYFRt_xl78ke7zFO_MGTJxelqw/formResponse";
+const BONUS_ENTRY={payday:"entry.1612173792",amount:"entry.1949665565",span:"entry.805094493"};
 
 /* ── 期間マスター（締め日 16〜15基準・年初は例外）──
    [給与年, 給与月, [開始Y,M,D], [終了Y,M,D]] */
@@ -498,8 +537,8 @@ function renderAll(){
   renderFacts();
   renderFooter();
 
-  document.getElementById('formSalary').href=SALARY_FORM_URL;
-  document.getElementById('formBonus').href=BONUS_FORM_URL;
+  document.getElementById('formSalary').onclick=()=>openModal('salary');
+  document.getElementById('formBonus').onclick=()=>openModal('bonus');
 }
 
 // 棒グラフ：確定■／予測▨（失敗②の修正）
@@ -721,6 +760,147 @@ function renderVerify(){
       +`<div class="note">6/3以降：日報営収（空転込み）から空転CSVを引いた実車Dが、給与明細のB+Cと一致するか照合。それ以前は空転未記録のため明細B+Cで確定。年収はD×62%で算出。</div>`;
   }
 }
+
+/* ════════════════════════════════════════════════
+   入力モーダル（給与／分離給）
+   アプリ内で入力 → formResponse に no-cors POST → CSV追記。
+   ════════════════════════════════════════════════ */
+let MODAL_KIND=null;
+
+// 分離給：支給月から帰属期間を自動算出
+// 3月支給→前年11〜当年2 ／ 6月支給→当年3〜6 ／ 12月支給→当年7〜10
+function bonusSpanFromPayday(payStr){
+  const m=String(payStr).match(/(\d{4})-(\d{1,2})/);
+  if(!m) return '';
+  const y=+m[1], mo=+m[2];
+  const z=n=>String(n).padStart(2,'0');
+  if(mo===3)  return `${y-1}-11〜${y}-02`;
+  if(mo===6)  return `${y}-03〜${y}-06`;
+  if(mo===12) return `${y}-07〜${y}-10`;
+  return ''; // 想定外の月は空欄（手動補記）
+}
+
+function openModal(kind){
+  MODAL_KIND=kind;
+  const body=document.getElementById('modalBody');
+  const msg=document.getElementById('modalMsg');
+  msg.textContent=''; msg.className='modal-msg';
+  document.getElementById('modalSend').disabled=false;
+  document.getElementById('modalSend').textContent='送信';
+  if(kind==='salary'){
+    document.getElementById('modalTitle').textContent='給与を入力';
+    // 次に入力すべき月をsalary最終+1で初期表示
+    let last=null;
+    Object.keys(SAL).forEach(k=>{const [y,m]=k.split('-').map(Number);const v=y*100+m;if(!last||v>last.v)last={y,m,v};});
+    let nextMo='';
+    if(last){let ny=last.y,nm=last.m+1;if(nm>12){nm=1;ny++;}nextMo=`${ny}-${String(nm).padStart(2,'0')}`;}
+    body.innerHTML=`
+      <div class="fld"><label>対象月<span class="req">*</span></label>
+        <input id="i_month" inputmode="numeric" placeholder="2026-06" value="${nextMo}">
+        <span class="hint">給与明細の対象月。25日に配られる明細なら当月。</span></div>
+      <div class="fld"><label>給与営収<span class="req">*</span></label>
+        <input id="i_B" inputmode="numeric" placeholder="989370">
+        <span class="hint">明細の「給与営収」。数字だけ。</span></div>
+      <div class="fld"><label>公出営収<span class="req">*</span></label>
+        <input id="i_C" inputmode="numeric" placeholder="168550">
+        <span class="hint">明細の「公出営収」。数字だけ。</span></div>
+      <div class="fld"><label>出勤日数<span class="req">*</span></label>
+        <input id="i_days" inputmode="numeric" placeholder="13"></div>`;
+    document.getElementById('modalNote').textContent='送信するとsalary01シートに1行追加されます。反映まで数十秒かかることがあります。';
+  }else{
+    document.getElementById('modalTitle').textContent='分離給を入力';
+    body.innerHTML=`
+      <div class="fld"><label>支給日<span class="req">*</span></label>
+        <input id="i_payday" inputmode="numeric" placeholder="2026-06-30">
+        <span class="hint">実際に振り込まれた日。帰属期間は支給月から自動。</span></div>
+      <div class="fld"><label>金額<span class="req">*</span></label>
+        <input id="i_amount" inputmode="numeric" placeholder="498914">
+        <span class="hint" id="spanHint">　</span></div>`;
+    document.getElementById('modalNote').textContent='送信するとsalary02シートに1行追加されます。帰属期間は3月→前年11〜2月／6月→3〜6月／12月→7〜10月で自動付与。';
+    // 支給日入力に応じて帰属期間プレビュー
+    setTimeout(()=>{
+      const pd=document.getElementById('i_payday');
+      const hint=document.getElementById('spanHint');
+      const upd=()=>{const sp=bonusSpanFromPayday(pd.value);hint.textContent=sp?`帰属期間（自動）: ${sp}`:'　';};
+      pd.addEventListener('input',upd);
+    },0);
+  }
+  document.getElementById('modal').classList.add('show');
+}
+function closeModal(){document.getElementById('modal').classList.remove('show');MODAL_KIND=null;}
+
+// no-cors POST（hidden iframe方式：fetch no-corsより確実に通る）
+function postToForm(action,fields){
+  return new Promise(resolve=>{
+    const ifr=document.createElement('iframe');
+    ifr.name='gf_'+Date.now(); ifr.style.display='none';
+    document.body.appendChild(ifr);
+    const form=document.createElement('form');
+    form.action=action; form.method='POST'; form.target=ifr.name; form.style.display='none';
+    Object.entries(fields).forEach(([k,v])=>{
+      const inp=document.createElement('input'); inp.type='hidden'; inp.name=k; inp.value=v; form.appendChild(inp);
+    });
+    document.body.appendChild(form);
+    form.submit();
+    setTimeout(()=>{form.remove();ifr.remove();resolve();},1200);
+  });
+}
+
+async function submitModal(){
+  const msg=document.getElementById('modalMsg');
+  const sendBtn=document.getElementById('modalSend');
+  const val=id=>document.getElementById(id).value.trim();
+  const num=s=>s.replace(/[¥,\s]/g,'');
+  let fields={}, action='';
+  if(MODAL_KIND==='salary'){
+    const month=val('i_month'), B=num(val('i_B')), C=num(val('i_C')), days=num(val('i_days'));
+    if(!/^\d{4}-\d{1,2}$/.test(month)){msg.textContent='対象月は 2026-06 の形式で入力してください';msg.className='modal-msg err';return;}
+    if(!B||!C||!days){msg.textContent='給与営収・公出営収・出勤日数をすべて入力してください';msg.className='modal-msg err';return;}
+    fields={[SALARY_ENTRY.month]:month,[SALARY_ENTRY.B]:B,[SALARY_ENTRY.C]:C,[SALARY_ENTRY.days]:days};
+    action=SALARY_FORM_POST;
+  }else{
+    const payday=val('i_payday'), amount=num(val('i_amount'));
+    if(!/^\d{4}-\d{1,2}-\d{1,2}$/.test(payday)){msg.textContent='支給日は 2026-06-30 の形式で入力してください';msg.className='modal-msg err';return;}
+    if(!amount){msg.textContent='金額を入力してください';msg.className='modal-msg err';return;}
+    const span=bonusSpanFromPayday(payday);
+    fields={[BONUS_ENTRY.payday]:payday,[BONUS_ENTRY.amount]:amount};
+    if(span) fields[BONUS_ENTRY.span]=span;
+    action=BONUS_FORM_POST;
+  }
+  sendBtn.disabled=true; sendBtn.textContent='送信中…';
+  msg.textContent=''; msg.className='modal-msg';
+  await postToForm(action,fields);
+  msg.textContent='✓ 送信しました。データに反映中…';
+  msg.className='modal-msg ok';
+  sendBtn.textContent='完了';
+  // CSV反映ラグを見込んで少し待ってから再読込
+  setTimeout(async()=>{
+    closeModal();
+    document.getElementById('load').classList.remove('hide');
+    document.getElementById('loadMsg').textContent='送信を反映して再集計中…';
+    await reload();
+  },2200);
+}
+
+// データ再読込（送信後）
+async function reload(){
+  try{
+    const [sal,bon,daily,idle]=await Promise.all([
+      loadCSV(SALARY_URL).catch(()=>[]),
+      loadCSV(BONUS_URL).catch(()=>[]),
+      loadCSV(DAILY_URL).catch(()=>[]),
+      loadCSV(IDLE_URL).catch(()=>[])
+    ]);
+    SAL={};BONUS=[];IDLE_AGG={};
+    buildSalary(sal); buildBonus(bon); DAILY=daily; buildIdle(idle);
+    renderAll(); renderVerify();
+  }catch(e){console.error(e);}
+  finish();
+}
+
+document.getElementById('modalClose').onclick=closeModal;
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal();});
+document.getElementById('modalSend').onclick=submitModal;
 
 /* ════════════════════════════════════════════════
    起動
