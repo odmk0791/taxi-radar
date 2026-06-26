@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-27T07:05:19.837608+09:00",
+  "fetched_at": "2026-06-27T08:57:37.233380+09:00",
   "date": "20260627",
   "count": 34,
   "events": [
@@ -247,7 +247,7 @@
       "owner_id": 101971,
       "owner_nickname": "sakahukamaki",
       "owner_display_name": "sakahukamaki",
-      "accepted": 118,
+      "accepted": 117,
       "waiting": 0,
       "updated_at": "2026-06-25T14:14:33+09:00"
     },
@@ -645,7 +645,7 @@
       "owner_id": 890061,
       "owner_nickname": "Wakamatsu_snow",
       "owner_display_name": "サポーターズ若松",
-      "accepted": 1097,
+      "accepted": 1103,
       "waiting": 0,
       "updated_at": "2026-06-26T19:54:12+09:00"
     },
@@ -831,7 +831,7 @@
       "owner_id": 277091,
       "owner_nickname": "MitsuruIchikawa",
       "owner_display_name": "MitsuruIchikawa",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-06-26T17:53:09+09:00"
     },
