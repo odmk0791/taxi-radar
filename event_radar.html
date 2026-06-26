@@ -257,6 +257,8 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 .pop strong { font-size:13px; display:block; }
 .pop .pt { color:var(--amber); font-weight:700; }
 .pop .pd { color:var(--accent); font-size:11px; }
+.pop-nav { display:block; margin-top:8px; text-align:center; font-size:12px; font-weight:700; padding:7px; border-radius:7px; background:#1a73e8; color:#fff; text-decoration:none; }
+.pop-nav:active { opacity:.85; }
 </style>
 </head>
 <body>
@@ -626,7 +628,9 @@ function drawMarkers(evs){
       '<div class="pop"><strong>'+ev.name+'</strong>'
       +'<div>'+ev.venue+'</div>'
       +'<div class="pt">終了 '+fmtT(ev.end_iso)+' ('+timeLeft(ev.end_iso)+')</div>'
-      +'<div class="pd">📍 '+(ev._dist?ev._dist.toFixed(1)+'km':'')+'</div></div>'
+      +'<div class="pd">📍 '+(ev._dist?ev._dist.toFixed(1)+'km':'')+'</div>'
+      +'<a class="pop-nav" href="https://www.google.com/maps/dir/?api=1&destination='+ev.lat+','+ev.lng+'&travelmode=driving" target="_blank" rel="noopener">🚗 Googleマップで経路</a>'
+      +'</div>'
     );
     evMarkers.push(m);
   });
@@ -792,7 +796,7 @@ function venueOnMap(lat,lng,name){
   setTimeout(()=>{
     map.invalidateSize();
     map.setView([lat,lng],15);
-    L.popup().setLatLng([lat,lng]).setContent('<div class="pop"><strong>'+name+'</strong></div>').openOn(map);
+    L.popup().setLatLng([lat,lng]).setContent('<div class="pop"><strong>'+name+'</strong><a class="pop-nav" href="https://www.google.com/maps/dir/?api=1&destination='+lat+','+lng+'&travelmode=driving" target="_blank" rel="noopener">🚗 Googleマップで経路</a></div>').openOn(map);
   },100);
   document.getElementById('viewRadar').scrollIntoView({behavior:'smooth'});
 }
