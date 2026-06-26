@@ -78,6 +78,8 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 .sort-btn { font-size:12px; font-weight:700; padding:5px 14px; border-radius:8px; border:1px solid var(--accent); background:rgba(0,200,240,.1); color:var(--accent); cursor:pointer; white-space:nowrap; }
 .sort-btn:active { transform:scale(.97); }
 .sort-hint { font-size:10px; color:var(--muted); margin-left:auto; }
+.cp-btn { font-size:11px; font-weight:700; padding:5px 11px; border-radius:8px; border:1px solid var(--border); background:var(--surface2); color:var(--muted); cursor:pointer; white-space:nowrap; }
+.cp-btn.on { border-color:#9b7cff; background:rgba(120,90,240,.12); color:#9b7cff; }
 
 /* ── VENUE TAB ── */
 .venue-controls { display:flex; gap:8px; padding:12px 14px; background:var(--surface); border-bottom:1px solid var(--border); align-items:center; flex-wrap:wrap; }
@@ -285,6 +287,7 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
   <div class="sort-bar" id="sortBar" style="display:none">
     <span class="sort-label">並び順</span>
     <button class="sort-btn" id="sortBtn" onclick="toggleSort()">⏰ 終了が近い順</button>
+    <button class="cp-btn on" id="cpBtn" onclick="toggleConnpass()">Connpass表示</button>
     <span class="sort-hint">🎯=競合が薄い穴</span>
   </div>
   <div class="filter-bar" id="filterBar" style="display:none">
@@ -455,6 +458,7 @@ const VENUE_SHEET_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vS7U-m7Q6
 let venueSheet=[]; // スプレッドシートから読んだ会場台帳
 let venueMaster=[]; // 会場マスタ（穴スコア計算用）
 let sortMode='urgency'; // 'urgency'(終了が近い順) or 'hole'(穴スコア順)
+let showConnpass=true; // Connpass(IT勉強会)を表示するか
 
 // ─ Google Form placeholder（後で差し込む）─
 const FORM_ACTION = 'FORM_ACTION_PLACEHOLDER';
@@ -555,6 +559,18 @@ function toggleSort(){
   applySorting();
   renderList();
 }
+function toggleConnpass(){
+  showConnpass = !showConnpass;
+  const btn=document.getElementById('cpBtn');
+  if(btn){
+    btn.textContent = showConnpass ? 'Connpass表示' : 'Connpass非表示';
+    btn.classList.toggle('on', showConnpass);
+  }
+  renderList();
+  // 地図ピンも連動
+  const shown = showConnpass ? allEvents : allEvents.filter(e=>e._source!=='connpass');
+  drawMarkers(shown);
+}
 
 const scaleLabels=['','〜500人','〜2000人','〜1万人','1万人超'];
 
@@ -647,7 +663,8 @@ function setFilter(f){
 // ═══ RENDER EVENT LIST ═══
 function renderList(){
   const list=document.getElementById('evtList');
-  const evs=curFilter==='all'?allEvents:allEvents.filter(e=>e._u===curFilter);
+  let evs=curFilter==='all'?allEvents:allEvents.filter(e=>e._u===curFilter);
+  if(!showConnpass) evs=evs.filter(e=>e._source!=='connpass');
   if(!evs.length){
     list.innerHTML='<div class="empty"><div class="empty-ico">🔍</div><div class="empty-ttl">該当なし</div></div>';
     return;
