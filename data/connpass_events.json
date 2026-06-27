@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-06-27T08:57:37.233380+09:00",
+  "fetched_at": "2026-06-27T12:24:18.890899+09:00",
   "date": "20260627",
-  "count": 34,
+  "count": 33,
   "events": [
     {
       "id": 396555,
@@ -92,7 +92,7 @@
       "owner_id": 314048,
       "owner_nickname": "jista_kanto",
       "owner_display_name": "日本ITストラテジスト協会関東支部スタッフ",
-      "accepted": 35,
+      "accepted": 33,
       "waiting": 0,
       "updated_at": "2026-06-21T12:24:11+09:00"
     },
@@ -216,7 +216,7 @@
       "owner_id": 314048,
       "owner_nickname": "jista_kanto",
       "owner_display_name": "日本ITストラテジスト協会関東支部スタッフ",
-      "accepted": 56,
+      "accepted": 54,
       "waiting": 0,
       "updated_at": "2026-06-21T12:20:59+09:00"
     },
@@ -247,7 +247,7 @@
       "owner_id": 101971,
       "owner_nickname": "sakahukamaki",
       "owner_display_name": "sakahukamaki",
-      "accepted": 117,
+      "accepted": 111,
       "waiting": 0,
       "updated_at": "2026-06-25T14:14:33+09:00"
     },
@@ -278,7 +278,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 21,
+      "accepted": 22,
       "waiting": 0,
       "updated_at": "2026-06-22T13:09:58+09:00"
     },
@@ -557,37 +557,6 @@
       "updated_at": "2026-06-26T12:35:38+09:00"
     },
     {
-      "id": 390843,
-      "title": ".NETラボ 勉強会 2026年6月",
-      "catch": "ハイブリッド勉強会(YouTube Live)",
-      "description": "<p>.NETラボは、.NET技術やマイクロソフト製品について勉強するコミュニティーです。</p>\n<p>毎月第4土曜日に勉強会を開催しており、資料等も公開しています。\n技術に興味がある方、技術者同士の交流に興味がある方はどなたでもご参加いただけます。</p>\n<p>スキルアップのきっかけを目的とした仲間との交流の場としてご活用ください。積極的な参加をお待ちしています。</p>\n<p>上記以外を目的とした参加は固くお断りいたします。</p>\n<h1>ハイブリッド勉強会の開催</h1>\n<p>今回はハイブリッドイベントです。 </p>\n<p>FutureOne株式会社様のご厚意により会場を提供頂いております。</p>\n<p>現地でまたは、YouTubeライブ配信でご覧ください。 </p>\n<h1>参加方法</h1>\n<h2>会場参加</h2>\n<p>会場までお越しください。</p>\n<p>会場：大崎ウエストシティビル 6F</p>\n<p>住所：東京都品川区大崎2-9-3　大崎ウエストシティビル </p>\n<p>地図：<a href=\"https://maps.app.goo.gl/dZFVdNmENSxdJLt2A\" rel=\"nofollow\">https://maps.app.goo.gl/dZFVdNmENSxdJLt2A</a></p>\n<p>参考：<a href=\"https://black-plant-0767a7310.2.azurestaticapps.net/\" rel=\"nofollow\">https://black-plant-0767a7310.2.azurestaticapps.net/</a></p>\n<h2>オンライン参加</h2>\n<p>お手数ですが下記URLからご参加ください。</p>\n<p>YouTubeライブ</p>\n<p><a href=\"https://youtube.com/live/Ks_6J9WQdFA?feature=share\" rel=\"nofollow\">YouTubeライブでの参加はこちら</a></p>\n<h1>開催日時・場所</h1>\n<p>※随時、セッション情報は更新していきます。</p>\n<p>■日時：2026年6月27日（土） 13:00-</p>\n<p>■会場：FutureOne株式会社 or オンライン</p>\n<p>■会費：会場参加者：500円（登壇者、フューチャーグループ様関係者は無料）※会費はコミュニティ運営費として充当させて頂きます。</p>\n<h1>セッション</h1>\n<p><strong>登壇順ではありません。登壇の順序は下の方にあるタイムテーブルをご覧ください。</strong></p>\n<h2>Microsoft のサポートとフィードバック総まとめ</h2>\n<p>株式会社エクシード・ワン 技術フェロー Microsoft MVP for Windows and Devices, Cloud and Datacenter Management 村地 彰</p>\n<p>Microsoft 製品/サービスを利用する上で発生した問題や課題の解決に、Microsoft のサポートが利用できる場合があります。\nまた製品/サービス自体の問題の報告、機能の改善や追加の要望には Microsoft へのフィードバックが送信できます。<br>\nこうしたサポートやフィードバックは、Microsoft 製品/サービスが多義多様にわたるため、どの製品/サービスはどこからサポートを受けられるのか、どこからフィードバックが行えるのか分かりにくい場合もあります。<br>\nこのセッションでは Microsoft 製品/サービスを利用する上で覚えておきたいサポートを受ける方法、フィードバックを送信する方法を、代表的な製品/サービスごとに解説します。</p>\n<h2>AI PCの新次元 NVIDIA RTX Sparcと新型Surfaceが描く未来</h2>\n<p>Microsoft MVP for Windows and Devices(Surface) 木澤 朋和</p>\n<p>NVIDIAより、ローカルでの生成AIワークロードを高速処理するエッジ向けAIコンピューティングプラットフォーム「RTX Sparc」が発表されました。本セッションでは、Microsoftによる同プラットフォームのWindows対応、および新型Surfaceシリーズの全貌に迫ります。ハードウェアとOSの進化がもたらす、これからのAI PC市場の展望と技術的インパクトを解説します。</p>\n<h2>トークンをケチるな、設計しろ：GitHub Copilotを賢く使うコンテキスト戦略</h2>\n<p>Takeda Junichi（@Ochtum18）</p>\n<p>GitHub Copilotを使うほど、課題は「どう質問するか」から「何をAIに読ませるか」へ移ります。本セッションでは、MCP、Skills、AGENTS .md、DESIGN.mdがどのタイミングで読み込まれ、レスポンスでトークンが増えるのかを整理します。自動化による速度向上だけでなく、レビュー有無・設計品質・コストのバランスを取るための判断軸を紹介します。</p>\n<h2>AIエージェント時代のノンヒューマンアイデンティティ（NHI）管理</h2>\n<p>～人の権限管理からAIの権限管理へ～</p>\n<p>ISMS審査員補　クラウドセキュリティ審査員　プライバシーマーク審査員補　AIMS審査員　澤田 賢也</p>\n<p>生成AIやAIエージェントの普及により、システムへアクセスする主体は人間だけではなくなりつつあります。</p>\n<p>本セッションでは、生成AIシステムの全体像と社内ナレッジ基盤の考え方を整理したうえで、人間とAIエージェントの違いを解説します。特に、人間とAIエージェントでは権限の利用方法が大きく異なることを踏まえ、AI時代に求められるアクセス制御の考え方や、ノンヒューマンアイデンティティ（NHI）の重要性について説明します。</p>\n<p>また、人とシステムのアイデンティティを分離する設計原則を通じて、安全なAIシステムを実現するために考慮すべきポイントを紹介します。</p>\n<h2>AzureサービスとAIエージェントによるシステム運用の現実解</h2>\n<p>Microsoft MVP for Developer Technologies 山田 顕人</p>\n<p>前回のdotnetlabでは有人対応から自動化への昇華とシステム運用におけるAIエージェントの可能性について実績を交えてお話ししました。今回はそこからさらに踏み込み、Azureを活用したシステム運用はどのようになるか、AIエージェントはシステム運用にどう組み込まれるべきか、その現実解についてお話しします。単なる理想論ではなく、実運用における壁や人間による承認の重要性やAIの推論とルールベースの確実性をどう使い分けるべきかという実装者ならではの知見を共有します。Azureの監視機能や自動化サービスといった守りを整理しつつ、自律型運用と伴走型運用の境界線や責任分界点を含めた設計について解説します。インシデント対応の各フェーズにおけるAzureとAIのマッピング、ビルダーとしての運用エンジニアのあり方まで理想的な自律運用を目指す過程で見えてきた現場の実践知を共有します。</p>\n<h2>GitHub Copilot CLIのスラッシュコマンドを自作してみる</h2>\n<p>FutureOne株式会社 Microsoft MVP for Developer Technologies 高山 博司</p>\n<p>GitHub Copilot CLI のスラッシュコマンドはたくさんあって便利です。スラッシュコマンドは最初からある組み込みのものだけではなくて、自作することも可能です。今回は自作するスラッシュコマンドについて、お話したいと思います。作り方や制約、実際に作ってみたものついて触れていく予定です。</p>\n<h2>GitHub Copilot appとGitHub Copilot CLIとVS CodeのCopilot Chat Agent Modeの使い分け</h2>\n<p>FutureOne株式会社 Microsoft MVP for Developer Technologies 草場 友光</p>\n<p>C#/.NETの開発において現在「デスクトップアプリのGitHub Copilot app」と「ターミナルで動く Copilot CLI」 と 「VS Code の Copilot Chat Agent Mode」 という、似ているようで性格の異なる 3 つのGitHub Copilotの選択肢が大きくあります。</p>\n<p>これについての2026年6月断面での使い分けの考察をしていきたいと思います。</p>\n<h2>当日飛び込みLTの実施</h2>\n<p>当日飛び込みLTの実施します。</p>\n<p>.NETラボ勉強会としてのイベントですのでMicrosoft製品にかかわることであればなんでもOKです。</p>\n<p>当日の飛び込みLTという内容の性質上事前に内容をチェックすることは致しませんが、あまりにもIT技術からかけ離れた内容であった場合は途中であってもストップをかけさせていただく場合がありますのでご了承ください。</p>\n<h1>講師（敬称略）</h1>\n<ul>\n<li>\n<p>株式会社エクシード・ワン 技術フェロー Microsoft MVP for Windows and Devices, Cloud and Datacenter Management 村地 彰</p>\n</li>\n<li>\n<p>Microsoft MVP for Windows and Devices(Surface) 木澤 朋和</p>\n</li>\n<li>\n<p>Takeda Junichi（@Ochtum18）</p>\n</li>\n<li>\n<p>ISMS審査員補　クラウドセキュリティ審査員　プライバシーマーク審査員補　AIMS審査員　澤田 賢也</p>\n</li>\n<li>\n<p>Microsoft MVP for Developer Technologies 山田 顕人</p>\n</li>\n<li>\n<p>FutureOne株式会社 Microsoft MVP for Developer Technologies 高山 博司</p>\n</li>\n<li>\n<p>FutureOne株式会社 Microsoft MVP for Developer Technologies 草場 友光</p>\n</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\"></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30</td>\n<td style=\"text-align: left;\">会場側受付開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">オンライン側配信開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:29</td>\n<td style=\"text-align: left;\">登壇者・スタッフによるオープニングテーブルトーク</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:30 - 13:40</td>\n<td style=\"text-align: left;\">会場スポンサーセッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:40 - 13:45</td>\n<td style=\"text-align: left;\">.NETラボ紹介とご案内</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:50 - 14:20</td>\n<td style=\"text-align: left;\">AI PCの新次元 NVIDIA RTX Sparcと新型Surfaceが描く未来 <br> 木澤 朋和</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:20 - 14:30</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:30 - 15:00</td>\n<td style=\"text-align: left;\">AIエージェント時代のノンヒューマンアイデンティティ（NHI）管理 ～人の権限管理からAIの権限管理へ～ <br> 澤田 賢也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00 - 15:10</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:10 - 15:40</td>\n<td style=\"text-align: left;\">Microsoft のサポートとフィードバック総まとめ <br> 村地 彰</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:40 - 15:50</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50 - 16:20</td>\n<td style=\"text-align: left;\">AzureサービスとAIエージェントによるシステム運用の現実解 <br> 山田 顕人 　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:20 - 16:30</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\">トークンをケチるな、設計しろ：GitHub Copilotを賢く使うコンテキスト戦略 <br> Takeda Junichi（@Ochtum18）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00 - 17:10</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:10 - 17:40</td>\n<td style=\"text-align: left;\">GitHub Copilot CLIのスラッシュコマンドを自作してみる <br> 高山 博司</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:40 - 17:50</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:50 - 18:20</td>\n<td style=\"text-align: left;\">GitHub Copilot appとGitHub Copilot CLIとVS CodeのCopilot Chat Agent Modeの使い分け <br> 草場 友光</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:20 - 18:50</td>\n<td style=\"text-align: left;\">当日飛び込み　LT大会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:50 - 18:55</td>\n<td style=\"text-align: left;\">(閉会のあいさつ)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:55</td>\n<td style=\"text-align: left;\">閉会</td>\n</tr>\n</tbody>\n</table>\n<p>終了後、オフライン懇親会を予定しています。会場にて案内をします。</p>\n<h1>[アンケート記入のお願い]</h1>\n<p><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSc2EO2NhH5NJSWEpDIheiYJHuRzVzwG6biZnjJoTz16ax0NiQ/viewform?usp=publish-editor\" rel=\"nofollow\">アンケートはこちらからお願いします。</a></p>\n<h1>Discordについて</h1>\n<p>.NETラボの運用・.NETラボの登壇者の連絡用・技術者同士の交流スキルアップに貢献することを目的としてDiscordサーバーを開設しました。是非ともご参加ください。</p>\n<p><a href=\"https://discord.gg/AurBBtJuuc\" rel=\"nofollow\">https://discord.gg/AurBBtJuuc</a></p>",
-      "url": "https://dotnetlab.connpass.com/event/390843/",
-      "image_url": "https://media.connpass.com/thumbs/4c/34/4c34a3c865867ec45d8efee142f41b27.png",
-      "hash_tag": "dotnetlab",
-      "started_at": "2026-06-27T13:00:00+09:00",
-      "ended_at": "2026-06-27T18:30:00+09:00",
-      "published_at": "2026-04-22T17:56:29+09:00",
-      "limit": 20050,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 2205,
-        "subdomain": "dotnetlab",
-        "title": ".NETラボ",
-        "url": "https://dotnetlab.connpass.com/"
-      },
-      "address": "東京都品川区大崎2-9-3",
-      "place": "FutureOne",
-      "lat": "35.617253000000",
-      "lon": "139.727296500000",
-      "owner_id": 103684,
-      "owner_nickname": "dotnetlab",
-      "owner_display_name": "dotnetlab",
-      "accepted": 39,
-      "waiting": 0,
-      "updated_at": "2026-06-26T12:22:42+09:00"
-    },
-    {
       "id": 394846,
       "title": "ｽﾀｯｸﾁｬﾝお誕生日会2026",
       "catch": "企業内プロのエンジニア集団VS 野生のアマチュアエンジニアによるものづくり対決-2026",
@@ -619,6 +588,37 @@
       "updated_at": "2026-06-26T22:19:21+09:00"
     },
     {
+      "id": 390843,
+      "title": ".NETラボ 勉強会 2026年6月",
+      "catch": "ハイブリッド勉強会(YouTube Live)",
+      "description": "<p>.NETラボは、.NET技術やマイクロソフト製品について勉強するコミュニティーです。</p>\n<p>毎月第4土曜日に勉強会を開催しており、資料等も公開しています。\n技術に興味がある方、技術者同士の交流に興味がある方はどなたでもご参加いただけます。</p>\n<p>スキルアップのきっかけを目的とした仲間との交流の場としてご活用ください。積極的な参加をお待ちしています。</p>\n<p>上記以外を目的とした参加は固くお断りいたします。</p>\n<h1>ハイブリッド勉強会の開催</h1>\n<p>今回はハイブリッドイベントです。 </p>\n<p>FutureOne株式会社様のご厚意により会場を提供頂いております。</p>\n<p>現地でまたは、YouTubeライブ配信でご覧ください。 </p>\n<h1>参加方法</h1>\n<h2>会場参加</h2>\n<p>会場までお越しください。</p>\n<p>会場：大崎ウエストシティビル 6F</p>\n<p>住所：東京都品川区大崎2-9-3　大崎ウエストシティビル </p>\n<p>地図：<a href=\"https://maps.app.goo.gl/dZFVdNmENSxdJLt2A\" rel=\"nofollow\">https://maps.app.goo.gl/dZFVdNmENSxdJLt2A</a></p>\n<p>参考：<a href=\"https://black-plant-0767a7310.2.azurestaticapps.net/\" rel=\"nofollow\">https://black-plant-0767a7310.2.azurestaticapps.net/</a></p>\n<h2>オンライン参加</h2>\n<p>お手数ですが下記URLからご参加ください。</p>\n<p>YouTubeライブ</p>\n<p><a href=\"https://youtube.com/live/Ks_6J9WQdFA?feature=share\" rel=\"nofollow\">YouTubeライブでの参加はこちら</a></p>\n<h1>開催日時・場所</h1>\n<p>※随時、セッション情報は更新していきます。</p>\n<p>■日時：2026年6月27日（土） 13:00-</p>\n<p>■会場：FutureOne株式会社 or オンライン</p>\n<p>■会費：会場参加者：500円（登壇者、フューチャーグループ様関係者は無料）※会費はコミュニティ運営費として充当させて頂きます。</p>\n<h1>セッション</h1>\n<p><strong>登壇順ではありません。登壇の順序は下の方にあるタイムテーブルをご覧ください。</strong></p>\n<h2>Microsoft のサポートとフィードバック総まとめ</h2>\n<p>株式会社エクシード・ワン 技術フェロー Microsoft MVP for Windows and Devices, Cloud and Datacenter Management 村地 彰</p>\n<p>Microsoft 製品/サービスを利用する上で発生した問題や課題の解決に、Microsoft のサポートが利用できる場合があります。\nまた製品/サービス自体の問題の報告、機能の改善や追加の要望には Microsoft へのフィードバックが送信できます。<br>\nこうしたサポートやフィードバックは、Microsoft 製品/サービスが多義多様にわたるため、どの製品/サービスはどこからサポートを受けられるのか、どこからフィードバックが行えるのか分かりにくい場合もあります。<br>\nこのセッションでは Microsoft 製品/サービスを利用する上で覚えておきたいサポートを受ける方法、フィードバックを送信する方法を、代表的な製品/サービスごとに解説します。</p>\n<h2>AI PCの新次元 NVIDIA RTX Sparcと新型Surfaceが描く未来</h2>\n<p>Microsoft MVP for Windows and Devices(Surface) 木澤 朋和</p>\n<p>NVIDIAより、ローカルでの生成AIワークロードを高速処理するエッジ向けAIコンピューティングプラットフォーム「RTX Sparc」が発表されました。本セッションでは、Microsoftによる同プラットフォームのWindows対応、および新型Surfaceシリーズの全貌に迫ります。ハードウェアとOSの進化がもたらす、これからのAI PC市場の展望と技術的インパクトを解説します。</p>\n<h2>トークンをケチるな、設計しろ：GitHub Copilotを賢く使うコンテキスト戦略</h2>\n<p>Takeda Junichi（@Ochtum18）</p>\n<p>GitHub Copilotを使うほど、課題は「どう質問するか」から「何をAIに読ませるか」へ移ります。本セッションでは、MCP、Skills、AGENTS .md、DESIGN.mdがどのタイミングで読み込まれ、レスポンスでトークンが増えるのかを整理します。自動化による速度向上だけでなく、レビュー有無・設計品質・コストのバランスを取るための判断軸を紹介します。</p>\n<h2>AIエージェント時代のノンヒューマンアイデンティティ（NHI）管理</h2>\n<p>～人の権限管理からAIの権限管理へ～</p>\n<p>ISMS審査員補　クラウドセキュリティ審査員　プライバシーマーク審査員補　AIMS審査員　澤田 賢也</p>\n<p>生成AIやAIエージェントの普及により、システムへアクセスする主体は人間だけではなくなりつつあります。</p>\n<p>本セッションでは、生成AIシステムの全体像と社内ナレッジ基盤の考え方を整理したうえで、人間とAIエージェントの違いを解説します。特に、人間とAIエージェントでは権限の利用方法が大きく異なることを踏まえ、AI時代に求められるアクセス制御の考え方や、ノンヒューマンアイデンティティ（NHI）の重要性について説明します。</p>\n<p>また、人とシステムのアイデンティティを分離する設計原則を通じて、安全なAIシステムを実現するために考慮すべきポイントを紹介します。</p>\n<h2>AzureサービスとAIエージェントによるシステム運用の現実解</h2>\n<p>Microsoft MVP for Developer Technologies 山田 顕人</p>\n<p>前回のdotnetlabでは有人対応から自動化への昇華とシステム運用におけるAIエージェントの可能性について実績を交えてお話ししました。今回はそこからさらに踏み込み、Azureを活用したシステム運用はどのようになるか、AIエージェントはシステム運用にどう組み込まれるべきか、その現実解についてお話しします。単なる理想論ではなく、実運用における壁や人間による承認の重要性やAIの推論とルールベースの確実性をどう使い分けるべきかという実装者ならではの知見を共有します。Azureの監視機能や自動化サービスといった守りを整理しつつ、自律型運用と伴走型運用の境界線や責任分界点を含めた設計について解説します。インシデント対応の各フェーズにおけるAzureとAIのマッピング、ビルダーとしての運用エンジニアのあり方まで理想的な自律運用を目指す過程で見えてきた現場の実践知を共有します。</p>\n<h2>GitHub Copilot CLIのスラッシュコマンドを自作してみる</h2>\n<p>FutureOne株式会社 Microsoft MVP for Developer Technologies 高山 博司</p>\n<p>GitHub Copilot CLI のスラッシュコマンドはたくさんあって便利です。スラッシュコマンドは最初からある組み込みのものだけではなくて、自作することも可能です。今回は自作するスラッシュコマンドについて、お話したいと思います。作り方や制約、実際に作ってみたものついて触れていく予定です。</p>\n<h2>GitHub Copilot appとGitHub Copilot CLIとVS CodeのCopilot Chat Agent Modeの使い分け</h2>\n<p>FutureOne株式会社 Microsoft MVP for Developer Technologies 草場 友光</p>\n<p>C#/.NETの開発において現在「デスクトップアプリのGitHub Copilot app」と「ターミナルで動く Copilot CLI」 と 「VS Code の Copilot Chat Agent Mode」 という、似ているようで性格の異なる 3 つのGitHub Copilotの選択肢が大きくあります。</p>\n<p>これについての2026年6月断面での使い分けの考察をしていきたいと思います。</p>\n<h2>当日飛び込みLTの実施</h2>\n<p>当日飛び込みLTの実施します。</p>\n<p>.NETラボ勉強会としてのイベントですのでMicrosoft製品にかかわることであればなんでもOKです。</p>\n<p>当日の飛び込みLTという内容の性質上事前に内容をチェックすることは致しませんが、あまりにもIT技術からかけ離れた内容であった場合は途中であってもストップをかけさせていただく場合がありますのでご了承ください。</p>\n<h1>講師（敬称略）</h1>\n<ul>\n<li>\n<p>株式会社エクシード・ワン 技術フェロー Microsoft MVP for Windows and Devices, Cloud and Datacenter Management 村地 彰</p>\n</li>\n<li>\n<p>Microsoft MVP for Windows and Devices(Surface) 木澤 朋和</p>\n</li>\n<li>\n<p>Takeda Junichi（@Ochtum18）</p>\n</li>\n<li>\n<p>ISMS審査員補　クラウドセキュリティ審査員　プライバシーマーク審査員補　AIMS審査員　澤田 賢也</p>\n</li>\n<li>\n<p>Microsoft MVP for Developer Technologies 山田 顕人</p>\n</li>\n<li>\n<p>FutureOne株式会社 Microsoft MVP for Developer Technologies 高山 博司</p>\n</li>\n<li>\n<p>FutureOne株式会社 Microsoft MVP for Developer Technologies 草場 友光</p>\n</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\"></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30</td>\n<td style=\"text-align: left;\">会場側受付開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">オンライン側配信開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:29</td>\n<td style=\"text-align: left;\">登壇者・スタッフによるオープニングテーブルトーク</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:30 - 13:40</td>\n<td style=\"text-align: left;\">会場スポンサーセッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:40 - 13:45</td>\n<td style=\"text-align: left;\">.NETラボ紹介とご案内</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:50 - 14:20</td>\n<td style=\"text-align: left;\">AI PCの新次元 NVIDIA RTX Sparcと新型Surfaceが描く未来 <br> 木澤 朋和</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:20 - 14:30</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:30 - 15:00</td>\n<td style=\"text-align: left;\">AIエージェント時代のノンヒューマンアイデンティティ（NHI）管理 ～人の権限管理からAIの権限管理へ～ <br> 澤田 賢也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00 - 15:10</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:10 - 15:40</td>\n<td style=\"text-align: left;\">Microsoft のサポートとフィードバック総まとめ <br> 村地 彰</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:40 - 15:50</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50 - 16:20</td>\n<td style=\"text-align: left;\">AzureサービスとAIエージェントによるシステム運用の現実解 <br> 山田 顕人 　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:20 - 16:30</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\">トークンをケチるな、設計しろ：GitHub Copilotを賢く使うコンテキスト戦略 <br> Takeda Junichi（@Ochtum18）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00 - 17:10</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:10 - 17:40</td>\n<td style=\"text-align: left;\">GitHub Copilot CLIのスラッシュコマンドを自作してみる <br> 高山 博司</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:40 - 17:50</td>\n<td style=\"text-align: left;\">(10分休憩)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:50 - 18:20</td>\n<td style=\"text-align: left;\">GitHub Copilot appとGitHub Copilot CLIとVS CodeのCopilot Chat Agent Modeの使い分け <br> 草場 友光</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:20 - 18:50</td>\n<td style=\"text-align: left;\">当日飛び込み　LT大会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:50 - 18:55</td>\n<td style=\"text-align: left;\">(閉会のあいさつ)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:55</td>\n<td style=\"text-align: left;\">閉会</td>\n</tr>\n</tbody>\n</table>\n<p>終了後、オフライン懇親会を予定しています。会場にて案内をします。</p>\n<h1>[アンケート記入のお願い]</h1>\n<p><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSc2EO2NhH5NJSWEpDIheiYJHuRzVzwG6biZnjJoTz16ax0NiQ/viewform?usp=publish-editor\" rel=\"nofollow\">アンケートはこちらからお願いします。</a></p>\n<h1>Discordについて</h1>\n<p>.NETラボの運用・.NETラボの登壇者の連絡用・技術者同士の交流スキルアップに貢献することを目的としてDiscordサーバーを開設しました。是非ともご参加ください。</p>\n<p><a href=\"https://discord.gg/AurBBtJuuc\" rel=\"nofollow\">https://discord.gg/AurBBtJuuc</a></p>",
+      "url": "https://dotnetlab.connpass.com/event/390843/",
+      "image_url": "https://media.connpass.com/thumbs/4c/34/4c34a3c865867ec45d8efee142f41b27.png",
+      "hash_tag": "dotnetlab",
+      "started_at": "2026-06-27T13:00:00+09:00",
+      "ended_at": "2026-06-27T18:30:00+09:00",
+      "published_at": "2026-04-22T17:56:29+09:00",
+      "limit": 20050,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 2205,
+        "subdomain": "dotnetlab",
+        "title": ".NETラボ",
+        "url": "https://dotnetlab.connpass.com/"
+      },
+      "address": "東京都品川区大崎2-9-3",
+      "place": "FutureOne",
+      "lat": "35.617253000000",
+      "lon": "139.727296500000",
+      "owner_id": 103684,
+      "owner_nickname": "dotnetlab",
+      "owner_display_name": "dotnetlab",
+      "accepted": 43,
+      "waiting": 0,
+      "updated_at": "2026-06-26T12:22:42+09:00"
+    },
+    {
       "id": 391880,
       "title": "【残枠20名】CoLab Conf（コラコン）【テックカンファレンス】",
       "catch": "ひろゆき氏・ラムダ技術部・IPA登大遊氏など豪華ゲスト約20名（駅直結の会場）",
@@ -631,7 +631,7 @@
       "published_at": "2026-04-28T16:14:21+09:00",
       "limit": 2600,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 3032,
         "subdomain": "supporterz-seminar",
@@ -645,7 +645,7 @@
       "owner_id": 890061,
       "owner_nickname": "Wakamatsu_snow",
       "owner_display_name": "サポーターズ若松",
-      "accepted": 1103,
+      "accepted": 1120,
       "waiting": 0,
       "updated_at": "2026-06-26T19:54:12+09:00"
     },
@@ -679,37 +679,6 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-06-26T16:36:41+09:00"
-    },
-    {
-      "id": 394752,
-      "title": "(第184回)Python mini Hack-a-thon(ハイブリッド)",
-      "catch": "起業を応援する日",
-      "description": "<h2>ハイブリッド開催です</h2>\n<ul>\n<li>オンラインとオフラインのハイブリッド開催をします。</li>\n<li>前日か当日にZoomのURLを送るので、ぜひご参加ください。</li>\n</ul>\n<h2>現地参加について</h2>\n<ul>\n<li>今回の会場は中野の<strong>Pleasanter Lounge</strong>です</li>\n<li>住所: 東京都中野区中野2-30-5 中野アーバンビル7F(中野駅徒歩2分、<a href=\"https://maps.app.goo.gl/zUrBNJARAQrQ7zqc6\" rel=\"nofollow\">Googleマップ</a>)</li>\n</ul>\n<p>参加者は直接7階にいってください、11時までには開場する予定です。</p>\n<h2>この勉強会について</h2>\n<p>基本的に毎月開催です。スプリントのゆるい版みたいな感じで各自自分でやりたいことを持ってきて、勝手に開発を進めています。参加費は無料です。\n初めての方も常連さんもぜひご参加ください。</p>\n<ul>\n<li>slackあります <a href=\"https://join.slack.com/t/pyhack/shared_invite/zt-1j3v4er5g-B0QUOjWIa_cc5zVnyDd~ag\" rel=\"nofollow\">参加はこちら</a></li>\n</ul>\n<p>オフラインの場合、会場には無線LANと電源があります。各自で用意するものは以下のとおりです。</p>\n<ul>\n<li>開発用のPC</li>\n</ul>\n<h3>タイムテーブル</h3>\n<p>以下は大体の目安です。また、遅刻早退はご自由にどうぞ（ただし事前にお知らせください）。</p>\n<ul>\n<li>11:00- 入館、自己紹介とやること発表</li>\n<li>11:30- 開発開始</li>\n<li>12:30- 昼食</li>\n<li>13:30- もくもくと開発</li>\n<li>17:30- 成果発表(できたとこまで)</li>\n<li>18:45- 後片付け</li>\n<li>19:15- 懇親会</li>\n</ul>\n<h3>会場スポンサー</h3>\n<ul>\n<li><a href=\"https://pleasanter.org/\" rel=\"nofollow\">プリザンター｜OSSのノーコード・ローコード開発ツール</a></li>\n</ul>\n<p><img src=\"https://pleasanter.org/pleasanter/assets/images/logo_hayato/pleasanter_h.png\" width=\"300\"></p>\n<h3>前回の様子や関連リンク</h3>\n<ul>\n<li>TBD</li>\n</ul>\n<h3>成果物とかブログとか</h3>\n<ul>\n<li>TBD</li>\n</ul>\n<h3>参考リンク</h3>\n<ul>\n<li>TBD</li>\n</ul>\n<h3>告知されたイベント</h3>\n<ul>\n<li>TBD</li>\n</ul>",
-      "url": "https://pyhack.connpass.com/event/394752/",
-      "image_url": "https://media.connpass.com/thumbs/c8/9b/c89bb74b527222e37efd4350d3c72af6.png",
-      "hash_tag": "pyhack",
-      "started_at": "2026-06-27T11:00:00+09:00",
-      "ended_at": "2026-06-27T19:00:00+09:00",
-      "published_at": "2026-05-22T13:58:18+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14,
-        "subdomain": "pyhack",
-        "title": "Python mini Hack-a-thon",
-        "url": "https://pyhack.connpass.com/"
-      },
-      "address": "東京都中野区中野2-30-5 中野アーバンビル7F",
-      "place": "Pleasanter Lounge",
-      "lat": "35.704475200000",
-      "lon": "139.665657200000",
-      "owner_id": 51,
-      "owner_nickname": "takanori",
-      "owner_display_name": "Takanori Suzuki",
-      "accepted": 14,
-      "waiting": 0,
-      "updated_at": "2026-05-22T13:58:18+09:00"
     },
     {
       "id": 395230,
@@ -755,7 +724,7 @@
       "published_at": "2026-06-15T05:32:22+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10492,
         "subdomain": "zeki-chan-lab",
@@ -774,6 +743,37 @@
       "updated_at": "2026-06-20T15:03:18+09:00"
     },
     {
+      "id": 394752,
+      "title": "(第184回)Python mini Hack-a-thon(ハイブリッド)",
+      "catch": "起業を応援する日",
+      "description": "<h2>ハイブリッド開催です</h2>\n<ul>\n<li>オンラインとオフラインのハイブリッド開催をします。</li>\n<li>前日か当日にZoomのURLを送るので、ぜひご参加ください。</li>\n</ul>\n<h2>現地参加について</h2>\n<ul>\n<li>今回の会場は中野の<strong>Pleasanter Lounge</strong>です</li>\n<li>住所: 東京都中野区中野2-30-5 中野アーバンビル7F(中野駅徒歩2分、<a href=\"https://maps.app.goo.gl/zUrBNJARAQrQ7zqc6\" rel=\"nofollow\">Googleマップ</a>)</li>\n</ul>\n<p>参加者は直接7階にいってください、11時までには開場する予定です。</p>\n<h2>この勉強会について</h2>\n<p>基本的に毎月開催です。スプリントのゆるい版みたいな感じで各自自分でやりたいことを持ってきて、勝手に開発を進めています。参加費は無料です。\n初めての方も常連さんもぜひご参加ください。</p>\n<ul>\n<li>slackあります <a href=\"https://join.slack.com/t/pyhack/shared_invite/zt-1j3v4er5g-B0QUOjWIa_cc5zVnyDd~ag\" rel=\"nofollow\">参加はこちら</a></li>\n</ul>\n<p>オフラインの場合、会場には無線LANと電源があります。各自で用意するものは以下のとおりです。</p>\n<ul>\n<li>開発用のPC</li>\n</ul>\n<h3>タイムテーブル</h3>\n<p>以下は大体の目安です。また、遅刻早退はご自由にどうぞ（ただし事前にお知らせください）。</p>\n<ul>\n<li>11:00- 入館、自己紹介とやること発表</li>\n<li>11:30- 開発開始</li>\n<li>12:30- 昼食</li>\n<li>13:30- もくもくと開発</li>\n<li>17:30- 成果発表(できたとこまで)</li>\n<li>18:45- 後片付け</li>\n<li>19:15- 懇親会</li>\n</ul>\n<h3>会場スポンサー</h3>\n<ul>\n<li><a href=\"https://pleasanter.org/\" rel=\"nofollow\">プリザンター｜OSSのノーコード・ローコード開発ツール</a></li>\n</ul>\n<p><img src=\"https://pleasanter.org/pleasanter/assets/images/logo_hayato/pleasanter_h.png\" width=\"300\"></p>\n<h3>前回の様子や関連リンク</h3>\n<ul>\n<li>TBD</li>\n</ul>\n<h3>成果物とかブログとか</h3>\n<ul>\n<li>TBD</li>\n</ul>\n<h3>参考リンク</h3>\n<ul>\n<li>TBD</li>\n</ul>\n<h3>告知されたイベント</h3>\n<ul>\n<li>TBD</li>\n</ul>",
+      "url": "https://pyhack.connpass.com/event/394752/",
+      "image_url": "https://media.connpass.com/thumbs/c8/9b/c89bb74b527222e37efd4350d3c72af6.png",
+      "hash_tag": "pyhack",
+      "started_at": "2026-06-27T11:00:00+09:00",
+      "ended_at": "2026-06-27T19:00:00+09:00",
+      "published_at": "2026-05-22T13:58:18+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 14,
+        "subdomain": "pyhack",
+        "title": "Python mini Hack-a-thon",
+        "url": "https://pyhack.connpass.com/"
+      },
+      "address": "東京都中野区中野2-30-5 中野アーバンビル7F",
+      "place": "Pleasanter Lounge",
+      "lat": "35.704475200000",
+      "lon": "139.665657200000",
+      "owner_id": 51,
+      "owner_nickname": "takanori",
+      "owner_display_name": "Takanori Suzuki",
+      "accepted": 15,
+      "waiting": 0,
+      "updated_at": "2026-05-22T13:58:18+09:00"
+    },
+    {
       "id": 393723,
       "title": "第7回 半蔵門インディゲームもくもく会 | 協賛：株式会社ボーンデジタル",
       "catch": "参加費無料！みんなでもくもくゲーム開発しよう！",
@@ -786,7 +786,7 @@
       "published_at": "2026-06-15T12:01:10+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -817,7 +817,7 @@
       "published_at": "2026-05-23T12:01:08+09:00",
       "limit": 24,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 8400,
         "subdomain": "coderdojosuehirocho",
@@ -831,7 +831,7 @@
       "owner_id": 277091,
       "owner_nickname": "MitsuruIchikawa",
       "owner_display_name": "MitsuruIchikawa",
-      "accepted": 3,
+      "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-06-26T17:53:09+09:00"
     },
@@ -848,7 +848,7 @@
       "published_at": "2026-06-18T13:14:40+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "cancelled",
       "group": {
         "id": 15113,
         "subdomain": "ai-developer-monetization-lab",
@@ -862,9 +862,9 @@
       "owner_id": 40873,
       "owner_nickname": "ryousei_takahashi_5",
       "owner_display_name": "ryyy",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
-      "updated_at": "2026-06-18T13:18:46+09:00"
+      "updated_at": "2026-06-27T10:45:51+09:00"
     },
     {
       "id": 397991,
@@ -910,7 +910,7 @@
       "published_at": "2026-06-20T17:25:08+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13254,
         "subdomain": "mokumokumokumoku",
@@ -941,7 +941,7 @@
       "published_at": "2026-05-02T17:37:34+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 14409,
         "subdomain": "coderdojo-nihonbashi",
@@ -970,9 +970,9 @@
       "started_at": "2026-06-27T09:00:00+09:00",
       "ended_at": "2026-06-27T16:30:00+09:00",
       "published_at": "2026-05-03T14:42:41+09:00",
-      "limit": 20,
+      "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16634,
         "subdomain": "kintech",
@@ -988,7 +988,7 @@
       "owner_display_name": "ともち",
       "accepted": 3,
       "waiting": 0,
-      "updated_at": "2026-06-20T19:59:58+09:00"
+      "updated_at": "2026-06-27T11:42:08+09:00"
     },
     {
       "id": 394875,
@@ -1017,40 +1017,9 @@
       "owner_id": 17474,
       "owner_nickname": "yotakagi77",
       "owner_display_name": "yotakagi77",
-      "accepted": 18,
+      "accepted": 23,
       "waiting": 0,
       "updated_at": "2026-06-26T13:10:04+09:00"
-    },
-    {
-      "id": 396507,
-      "title": "【CDLE埼玉】製造現場で使えるAI② －画像で不良を見つけよう－",
-      "catch": "画像認識AI・しきい値調整・Geminiプロンプトで、外観検査AIを実践体験",
-      "description": "<h1>全体テーマ</h1>\n<p>製造現場で使える実用AI：画像で不良を見つける\n── 実例から学ぶAI外観検査と、しきい値調整・生成AI活用</p>\n<h1>開催趣旨</h1>\n<p>製造業の現場では、外観検査や目視確認のばらつき、検査員の負担、人手不足、熟練者依存といった課題が、生産性や品質保証に大きく影響します。</p>\n<p>近年、AIを用いた画像認識や異常検知は、部品画像からキズ・欠陥・異常の兆候を捉える技術として成熟しつつあり、中小規模の製造現場でも手の届くユースケースになってきました。</p>\n<p>一方で、AI外観検査と聞くと「大規模な設備投資が必要」「専門家がいないと難しい」「自社の現場でどう始めればよいか分からない」と感じる方も少なくありません。</p>\n<p>本イベントでは、製造現場に直結したユースケースである「画像による不良検出」を軸に、AI外観検査の基本、導入時の考え方、しきい値調整、生成AI活用を学びます。</p>\n<p>後半では、参加者自身がGoogle Colabを使って、画像分類AIを実際に動かすハンズオンを行います。プログラミング不要。事前に準備したプログラムを当日「動かすだけ」で、入力画像 → AIモデル → 判定結果 → 混同行列 → しきい値調整、という基本構造を体感できる設計です。</p>\n<p>「自社でも試せそうだ」という実感を持ち帰っていただくことが最大のゴールです。</p>\n<h1>イベントの特徴</h1>\n<h2>製造現場に特化したテーマ設定</h2>\n<p>汎用的なAI活用話ではなく、外観検査・目視検査・品質確認・不良検出という製造業の現場課題に絞り込みます。</p>\n<h2>AI外観検査の導入イメージを学ぶ講義</h2>\n<p>目視検査の限界、AI導入による効果、撮影条件、AIモデルの選び方、導入ロードマップなど、現場導入を見据えた考え方を扱います。</p>\n<h2>「3分クッキング方式」のハンズオン</h2>\n<p>事前に準備したプログラムを当日「動かすだけ」。プログラミング経験は不要です。公開データセットを使い、水中ポンプ用インペラー画像の良品・不良品判定を体験します。</p>\n<p>※ハンズオンのため、Googleアカウントが必要となります。</p>\n<h2>しきい値調整でAIの“さじ加減”を体験</h2>\n<p>AIの判定結果は、しきい値によって変わります。\n「見逃しを減らすのか」「誤検出を減らすのか」という現場判断を、混同行列を見ながら体験します。</p>\n<h2>Geminiを使った現場向けプロンプト作成</h2>\n<p>外観検査、5S診断、設備・機械の状態確認などに使えるプロンプトを生成し、生成AIを現場で試すための第一歩を体験します。</p>\n<h1>開催概要</h1>\n<p>日時：2026年6月27日（土）<br>\n開場：15:00〜<br>\nセミナー：15:00〜17:00 \n会場：オンラインまたは会場開催<br>\n主催：CDLE埼玉<br>\n参加費：無料（事前申込制）<br>\n定員：30名<br>\n対象：製造業の経営者・役員、現場担当者・品質管理担当、DX推進担当、生成AIや機械学習に関心のあるCDLEメンバー<br>\n※懇親会　17:30－　会場近くのお店（希望者）</p>\n<h1>議事次第</h1>\n<h2>第1部　講義：AI外観検査の基本と導入の考え方（約40分）</h2>\n<p>「なぜ今、目視検査の自動化が必要なのか」を起点に、AI外観検査の全体像を解説します。</p>\n<p>目視検査では、判定基準のばらつき、疲労による見落とし、熟練者依存、人手不足、ライン速度への対応といった課題があります。AI外観検査は、これらの課題に対して、判定の一貫性、処理速度、トレーサビリティ、品質保証の面で有効な選択肢となります。</p>\n<h2>第2部　ハンズオン：画像で不良を見つけるAIを動かしてみよう（約40分）</h2>\n<p>参加者が実際にAIモデルを動かす体験型セッションです。</p>\n<p>Google Colabを使い、水中ポンプ用インペラーの公開画像データセットを題材に、良品・不良品を判定するAIを動かします。コードは基本的に実行するだけで進められる構成です。</p>\n<p>※Googleアカウントをご準備ください。\n※社外秘情報・機密情報・個人情報を含む画像は使用しないでください。\n※当日はサンプル画像でも参加可能です。</p>\n<p>登壇者：東北よっしー（製造系エンジニア / CDLE埼玉）</p>\n<h2>第3部　Q&amp;A・まとめ（約15分）</h2>\n<p>講義・ハンズオンの内容に関する質疑応答を行います。</p>\n<p>最後に、AI外観検査を自社現場で試すための次のステップを整理します。</p>\n<h1>参加前の準備</h1>\n<h2>必須</h2>\n<ul>\n<li>インターネット接続可能なPC</li>\n<li>Googleアカウント</li>\n<li>Chromeブラウザ推奨</li>\n</ul>\n<h2>資料</h2>\n<p><a href=\"https://drive.google.com/drive/folders/1NkMyYVJyxO2y_jgml-eWct5FdA8pBPuq?usp=sharing\" rel=\"nofollow\">イベント資料</a></p>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>製造業でAI活用を始めたい方</li>\n<li>外観検査や目視検査に課題を感じている方</li>\n<li>品質管理・工程管理・DX推進に関わっている方</li>\n<li>画像認識AIを実務目線で学びたい方</li>\n<li>しきい値、混同行列、見逃し、誤検出の考え方を体験したい方</li>\n<li>生成AIを現場改善に使ってみたい方</li>\n<li>CDLEメンバーとして、実践的なAI活用を学びたい方</li>\n</ul>",
-      "url": "https://cdle-saitama.connpass.com/event/396507/",
-      "image_url": "https://media.connpass.com/thumbs/6d/c2/6dc24593009196e38ed1a3bc6f7f3119.png",
-      "hash_tag": "CDLE埼玉",
-      "started_at": "2026-06-27T15:00:00+09:00",
-      "ended_at": "2026-06-27T17:00:00+09:00",
-      "published_at": "2026-06-15T21:45:49+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 15823,
-        "subdomain": "cdle-saitama",
-        "title": "CDLE埼玉",
-        "url": "https://cdle-saitama.connpass.com/"
-      },
-      "address": "〒330-0843 埼玉県さいたま市大宮区吉敷町４丁目２６２−１８ 5階",
-      "place": "渋沢MIX",
-      "lat": "35.894354600000",
-      "lon": "139.633780800000",
-      "owner_id": 765357,
-      "owner_nickname": "Hirohito-Ito",
-      "owner_display_name": "Hirohito Ito",
-      "accepted": 8,
-      "waiting": 0,
-      "updated_at": "2026-06-23T23:23:33+09:00"
     }
   ]
 }
