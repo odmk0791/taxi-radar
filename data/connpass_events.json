@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-27T20:22:26.296382+09:00",
+  "fetched_at": "2026-06-27T22:16:50.198503+09:00",
   "date": "20260627",
   "count": 33,
   "events": [
@@ -910,7 +910,7 @@
       "published_at": "2026-06-20T17:25:08+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13254,
         "subdomain": "mokumokumokumoku",
