@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-06-27T18:24:32.989304+09:00",
+  "fetched_at": "2026-06-27T20:22:26.296382+09:00",
   "date": "20260627",
-  "count": 34,
+  "count": 33,
   "events": [
     {
       "id": 397696,
@@ -47,7 +47,7 @@
       "published_at": "2026-06-07T07:34:34+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17320,
         "subdomain": "hacksick",
@@ -78,7 +78,7 @@
       "published_at": "2026-05-16T15:26:17+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8740,
         "subdomain": "jista-kanto",
@@ -326,7 +326,7 @@
       "published_at": "2026-05-20T16:34:11+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3084,
         "subdomain": "cyberagent",
@@ -600,7 +600,7 @@
       "published_at": "2026-04-22T17:56:29+09:00",
       "limit": 20050,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2205,
         "subdomain": "dotnetlab",
@@ -631,7 +631,7 @@
       "published_at": "2026-04-28T16:14:21+09:00",
       "limit": 2600,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3032,
         "subdomain": "supporterz-seminar",
@@ -645,7 +645,7 @@
       "owner_id": 890061,
       "owner_nickname": "Wakamatsu_snow",
       "owner_display_name": "サポーターズ若松",
-      "accepted": 1136,
+      "accepted": 1138,
       "waiting": 0,
       "updated_at": "2026-06-26T19:54:12+09:00"
     },
@@ -755,7 +755,7 @@
       "published_at": "2026-05-22T13:58:18+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14,
         "subdomain": "pyhack",
@@ -786,7 +786,7 @@
       "published_at": "2026-06-15T12:01:10+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -1020,37 +1020,6 @@
       "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-06-27T12:50:32+09:00"
-    },
-    {
-      "id": 396507,
-      "title": "【CDLE埼玉】製造現場で使えるAI② －画像で不良を見つけよう－",
-      "catch": "画像認識AI・しきい値調整・Geminiプロンプトで、外観検査AIを実践体験",
-      "description": "<h1>全体テーマ</h1>\n<p>製造現場で使える実用AI：画像で不良を見つける\n── 実例から学ぶAI外観検査と、しきい値調整・生成AI活用</p>\n<h1>開催趣旨</h1>\n<p>製造業の現場では、外観検査や目視確認のばらつき、検査員の負担、人手不足、熟練者依存といった課題が、生産性や品質保証に大きく影響します。</p>\n<p>近年、AIを用いた画像認識や異常検知は、部品画像からキズ・欠陥・異常の兆候を捉える技術として成熟しつつあり、中小規模の製造現場でも手の届くユースケースになってきました。</p>\n<p>一方で、AI外観検査と聞くと「大規模な設備投資が必要」「専門家がいないと難しい」「自社の現場でどう始めればよいか分からない」と感じる方も少なくありません。</p>\n<p>本イベントでは、製造現場に直結したユースケースである「画像による不良検出」を軸に、AI外観検査の基本、導入時の考え方、しきい値調整、生成AI活用を学びます。</p>\n<p>後半では、参加者自身がGoogle Colabを使って、画像分類AIを実際に動かすハンズオンを行います。プログラミング不要。事前に準備したプログラムを当日「動かすだけ」で、入力画像 → AIモデル → 判定結果 → 混同行列 → しきい値調整、という基本構造を体感できる設計です。</p>\n<p>「自社でも試せそうだ」という実感を持ち帰っていただくことが最大のゴールです。</p>\n<h1>イベントの特徴</h1>\n<h2>製造現場に特化したテーマ設定</h2>\n<p>汎用的なAI活用話ではなく、外観検査・目視検査・品質確認・不良検出という製造業の現場課題に絞り込みます。</p>\n<h2>AI外観検査の導入イメージを学ぶ講義</h2>\n<p>目視検査の限界、AI導入による効果、撮影条件、AIモデルの選び方、導入ロードマップなど、現場導入を見据えた考え方を扱います。</p>\n<h2>「3分クッキング方式」のハンズオン</h2>\n<p>事前に準備したプログラムを当日「動かすだけ」。プログラミング経験は不要です。公開データセットを使い、水中ポンプ用インペラー画像の良品・不良品判定を体験します。</p>\n<p>※ハンズオンのため、Googleアカウントが必要となります。</p>\n<h2>しきい値調整でAIの“さじ加減”を体験</h2>\n<p>AIの判定結果は、しきい値によって変わります。\n「見逃しを減らすのか」「誤検出を減らすのか」という現場判断を、混同行列を見ながら体験します。</p>\n<h2>Geminiを使った現場向けプロンプト作成</h2>\n<p>外観検査、5S診断、設備・機械の状態確認などに使えるプロンプトを生成し、生成AIを現場で試すための第一歩を体験します。</p>\n<h1>開催概要</h1>\n<p>日時：2026年6月27日（土）<br>\n開場：15:00〜<br>\nセミナー：15:00〜17:00 \n会場：オンラインまたは会場開催<br>\n主催：CDLE埼玉<br>\n参加費：無料（事前申込制）<br>\n定員：30名<br>\n対象：製造業の経営者・役員、現場担当者・品質管理担当、DX推進担当、生成AIや機械学習に関心のあるCDLEメンバー<br>\n※懇親会　17:30－　会場近くのお店（希望者）</p>\n<h1>議事次第</h1>\n<h2>第1部　講義：AI外観検査の基本と導入の考え方（約40分）</h2>\n<p>「なぜ今、目視検査の自動化が必要なのか」を起点に、AI外観検査の全体像を解説します。</p>\n<p>目視検査では、判定基準のばらつき、疲労による見落とし、熟練者依存、人手不足、ライン速度への対応といった課題があります。AI外観検査は、これらの課題に対して、判定の一貫性、処理速度、トレーサビリティ、品質保証の面で有効な選択肢となります。</p>\n<h2>第2部　ハンズオン：画像で不良を見つけるAIを動かしてみよう（約40分）</h2>\n<p>参加者が実際にAIモデルを動かす体験型セッションです。</p>\n<p>Google Colabを使い、水中ポンプ用インペラーの公開画像データセットを題材に、良品・不良品を判定するAIを動かします。コードは基本的に実行するだけで進められる構成です。</p>\n<p>※Googleアカウントをご準備ください。\n※社外秘情報・機密情報・個人情報を含む画像は使用しないでください。\n※当日はサンプル画像でも参加可能です。</p>\n<p>登壇者：東北よっしー（製造系エンジニア / CDLE埼玉）</p>\n<h2>第3部　Q&amp;A・まとめ（約15分）</h2>\n<p>講義・ハンズオンの内容に関する質疑応答を行います。</p>\n<p>最後に、AI外観検査を自社現場で試すための次のステップを整理します。</p>\n<h1>参加前の準備</h1>\n<h2>必須</h2>\n<ul>\n<li>インターネット接続可能なPC</li>\n<li>Googleアカウント</li>\n<li>Chromeブラウザ推奨</li>\n</ul>\n<h2>資料</h2>\n<p><a href=\"https://drive.google.com/drive/folders/1NkMyYVJyxO2y_jgml-eWct5FdA8pBPuq?usp=sharing\" rel=\"nofollow\">イベント資料</a></p>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>製造業でAI活用を始めたい方</li>\n<li>外観検査や目視検査に課題を感じている方</li>\n<li>品質管理・工程管理・DX推進に関わっている方</li>\n<li>画像認識AIを実務目線で学びたい方</li>\n<li>しきい値、混同行列、見逃し、誤検出の考え方を体験したい方</li>\n<li>生成AIを現場改善に使ってみたい方</li>\n<li>CDLEメンバーとして、実践的なAI活用を学びたい方</li>\n</ul>\n<h1>参加後アンケート</h1>\n<p><a href=\"https://forms.gle/cf87Vkv9njSFug9T8\" rel=\"nofollow\">アンケート</a></p>\n<p>本日参加しての感想など、簡単なアンケートにご回答ください。</p>",
-      "url": "https://cdle-saitama.connpass.com/event/396507/",
-      "image_url": "https://media.connpass.com/thumbs/6d/c2/6dc24593009196e38ed1a3bc6f7f3119.png",
-      "hash_tag": "CDLE埼玉",
-      "started_at": "2026-06-27T15:00:00+09:00",
-      "ended_at": "2026-06-27T17:00:00+09:00",
-      "published_at": "2026-06-15T21:45:49+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 15823,
-        "subdomain": "cdle-saitama",
-        "title": "CDLE埼玉",
-        "url": "https://cdle-saitama.connpass.com/"
-      },
-      "address": "〒330-0843 埼玉県さいたま市大宮区吉敷町４丁目２６２−１８ 5階",
-      "place": "渋沢MIX",
-      "lat": "35.894354600000",
-      "lon": "139.633780800000",
-      "owner_id": 765357,
-      "owner_nickname": "Hirohito-Ito",
-      "owner_display_name": "Hirohito Ito",
-      "accepted": 5,
-      "waiting": 0,
-      "updated_at": "2026-06-27T13:34:41+09:00"
     }
   ]
 }
