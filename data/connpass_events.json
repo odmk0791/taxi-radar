@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-06-28T05:52:53.948525+09:00",
+  "fetched_at": "2026-06-28T06:56:56.899814+09:00",
   "date": "20260628",
-  "count": 19,
+  "count": 18,
   "events": [
     {
       "id": 398733,
@@ -206,7 +206,7 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 8,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-06-27T19:34:15+09:00"
     },
@@ -423,8 +423,8 @@
       "owner_id": 593073,
       "owner_nickname": "kayoccoli",
       "owner_display_name": "kayoccoli",
-      "accepted": 1036,
-      "waiting": 38,
+      "accepted": 1042,
+      "waiting": 37,
       "updated_at": "2026-06-27T02:24:19+09:00"
     },
     {
@@ -550,37 +550,6 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-06-02T04:47:42+09:00"
-    },
-    {
-      "id": 397957,
-      "title": "川越インディーゲーム + イラスト・まんが もくもく会　第28回",
-      "catch": "第28回",
-      "description": "<h1>川越インディーゲーム + イラスト・まんが もくもく会</h1>\n<h2>会場</h2>\n<p>ウエスタ川越　活動室４</p>\n<h2>会の内容</h2>\n<p>インディーゲームを作っている人で集まってもくもく作業をする会です。</p>\n<p>インディーゲームと銘打っていますが、ゲーム制作に関係することであればなんでもOKです</p>\n<p>各自で作業環境を持参して頂いてもくもく作業をします。</p>\n<p>会の最初に自己紹介と今日やることを共有、最後に成果発表をします！</p>\n<p>自宅で作業してもなかなか捗らないですよね…ぜひこの会で進捗しちゃいましょう！</p>\n<p>※この会の特徴としてイラスト・漫画の作業される方も参加可能です。（イラスト・漫画の製作をしていてゲーム制作に興味のある方にお勧めします）</p>\n<h2>今日のやったこと共有について</h2>\n<p><strong>川越もくもく会のDiscord</strong>を使って共有しますので、\n事前に以下のアドレスから参加してメンバーになっておくと当日スムースに発表できます。</p>\n<p><a href=\"https://discord.gg/Y4vA9WSrbV\" rel=\"nofollow\">https://discord.gg/Y4vA9WSrbV</a></p>\n<h2>時間割</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">9:30</td>\n<td style=\"text-align: left;\">開会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">11:00</td>\n<td style=\"text-align: left;\">自己紹介、今日やることを共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">11:15</td>\n<td style=\"text-align: left;\">もくもく</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">12:30-13:30</td>\n<td style=\"text-align: left;\">各自昼食</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00</td>\n<td style=\"text-align: left;\">希望者によるLT</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">今日やったことを共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:50</td>\n<td style=\"text-align: left;\">会場の清掃、退室準備</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">閉会</td>\n</tr>\n</tbody>\n</table>\n<h2>飲み会</h2>\n<p>イベント終了後に「川越もくもく会 飲み会」を\n希望者で川越駅周辺で開催します。\n希望者は <strong>もくもく会＋飲み会</strong>　枠で申し込みお願いします\n※飲み会だけの参加はNGです\n4000円～5000円 前後のお店を予約予定です</p>\n<h2>参加者数上限について</h2>\n<p>会場は２２名まで入れますが、\nCommpassのシステムの都合上２つの参加枠の合算ができないため\n２２名を超えた場合は開催者のほうでキャンセル処理をする場合があります</p>\n<h2>施設利用料</h2>\n<p>施設利用料を参加者で実費負担をお願いしています\n当日の参加人数で変動しますが、800~1000円程度になります</p>\n<p>※当もくもく会は非営利として運営しています</p>\n<p>無料Wifiあります。ssidとPassは当日会場のホワイトボードに掲示します</p>\n<p>会場の詳細はこちらをご覧ください\n<a href=\"https://www.westa-kawagoe.jp/access/\" rel=\"nofollow\">https://www.westa-kawagoe.jp/access/</a></p>\n<p>埼玉県川越市新宿町1-17-17</p>\n<h2>注意事項</h2>\n<ul>\n<li>マスクの着用は各自の判断でお願いします。</li>\n<li>本会での営業活動、ネットワークビジネスや宗教等の勧誘行為はお断りします。</li>\n<li>雑談もOKですが、もくもくがメインの会ですので出来る限り作業をする心構えでお願いします。</li>\n<li>なるべく自己紹介の時間までに来てください。遅刻する場合はDiscordに報告お願いします</li>\n</ul>",
-      "url": "https://kawagoemokumoku.connpass.com/event/397957/",
-      "image_url": "https://media.connpass.com/thumbs/89/dc/89dcba04b5c7eda61b173a6fe13c1e47.png",
-      "hash_tag": "川越もくもく会",
-      "started_at": "2026-06-28T09:30:00+09:00",
-      "ended_at": "2026-06-28T19:00:00+09:00",
-      "published_at": "2026-06-19T18:35:34+09:00",
-      "limit": 22,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14498,
-        "subdomain": "kawagoemokumoku",
-        "title": "川越インディーゲーム + イラスト・まんが もくもく会",
-        "url": "https://kawagoemokumoku.connpass.com/"
-      },
-      "address": "埼玉県川越市新宿町1-17-17",
-      "place": "ウエスタ川越",
-      "lat": "35.904089500000",
-      "lon": "139.479178300000",
-      "owner_id": 18182,
-      "owner_nickname": "kamipallet",
-      "owner_display_name": "紙パレット",
-      "accepted": 8,
-      "waiting": 0,
-      "updated_at": "2026-06-19T18:35:34+09:00"
     }
   ]
 }
