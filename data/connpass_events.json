@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-27T15:47:21.580327+09:00",
+  "fetched_at": "2026-06-27T18:24:32.989304+09:00",
   "date": "20260627",
   "count": 34,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-06-07T07:34:34+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17320,
         "subdomain": "hacksick",
@@ -78,7 +78,7 @@
       "published_at": "2026-05-16T15:26:17+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 8740,
         "subdomain": "jista-kanto",
@@ -140,7 +140,7 @@
       "published_at": "2026-06-14T16:54:09+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 10265,
         "subdomain": "glass-sun",
@@ -202,7 +202,7 @@
       "published_at": "2026-05-16T15:26:07+09:00",
       "limit": 80,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8740,
         "subdomain": "jista-kanto",
@@ -219,37 +219,6 @@
       "accepted": 54,
       "waiting": 0,
       "updated_at": "2026-06-21T12:20:59+09:00"
-    },
-    {
-      "id": 390179,
-      "title": "東京Ruby会議13",
-      "catch": "緞帳のうらがわ",
-      "description": "<hr>\n<p>東京Ruby会議13「緞帳のうらがわ」</p>\n<p>物事には必ず裏側がある。<br>\n人には人の、イベントにはイベントの、コミュニティにはコミュニティの、だれかのなにかのうらがわが、ある。<br>\n緞帳のうらがわには、何があるのだろう。</p>\n<hr>\n<p><a href=\"https://regional.rubykaigi.org/tokyo13/\" rel=\"nofollow\">https://regional.rubykaigi.org/tokyo13/</a></p>\n<hr>\n<p>日時　2026年6月27日(土) 13:30 開演（13:00 開場）<br>\n会場　座・高円寺2（JR中央線 高円寺駅 北口より徒歩5分）<br>\n入場料　無料・自由席（要申込）</p>\n<hr>\n<p>出演<br>\nsorah　高橋征義　金子雄一郎<br>\n主催<br>\n炬燵　いかるが　ただあき　ヨヨイ<br>\n後援<br>\n一般社団法人日本Rubyの会  </p>\n<hr>\n<p>Q&amp;A  </p>\n<p>未就学児は参加可能ですか？<br>\n  可能です。</p>\n<p>撮影・録音は可能ですか？  <br>\n  原則として禁止です。演者ごとにご確認ください。登壇前にかならず撮影・録音可否に関連するアナウンスをいたします。</p>\n<p>飲食物の持ち込みは可能ですか？<br>\n  蓋付きの水に限り可能です。</p>\n<p>懇親会はありますか？<br>\n  運営による公式の懇親会は開催しません。本公演を通して出会った人と、あるいはいつものお前らと連れだって高円寺の街をお楽しみください。</p>",
-      "url": "https://tokyorubykaigi-13.connpass.com/event/390179/",
-      "image_url": "https://media.connpass.com/thumbs/1c/96/1c96d6d4ab96a0801ccdb21c7b0e59d4.png",
-      "hash_tag": "tokyorubykaigi",
-      "started_at": "2026-06-27T13:30:00+09:00",
-      "ended_at": "2026-06-27T17:00:00+09:00",
-      "published_at": "2026-04-20T00:01:08+09:00",
-      "limit": 130,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 17565,
-        "subdomain": "tokyorubykaigi-13",
-        "title": "東京Ruby会議13実行委員会",
-        "url": "https://tokyorubykaigi-13.connpass.com/"
-      },
-      "address": "東京都杉並区高円寺北２丁目１−２",
-      "place": "座・高円寺2",
-      "lat": "35.705893700000",
-      "lon": "139.654000200000",
-      "owner_id": 101971,
-      "owner_nickname": "sakahukamaki",
-      "owner_display_name": "sakahukamaki",
-      "accepted": 104,
-      "waiting": 0,
-      "updated_at": "2026-06-25T14:14:33+09:00"
     },
     {
       "id": 398173,
@@ -281,6 +250,37 @@
       "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-06-22T13:09:58+09:00"
+    },
+    {
+      "id": 390179,
+      "title": "東京Ruby会議13",
+      "catch": "緞帳のうらがわ",
+      "description": "<hr>\n<p>東京Ruby会議13「緞帳のうらがわ」</p>\n<p>物事には必ず裏側がある。<br>\n人には人の、イベントにはイベントの、コミュニティにはコミュニティの、だれかのなにかのうらがわが、ある。<br>\n緞帳のうらがわには、何があるのだろう。</p>\n<hr>\n<p><a href=\"https://regional.rubykaigi.org/tokyo13/\" rel=\"nofollow\">https://regional.rubykaigi.org/tokyo13/</a></p>\n<hr>\n<p>日時　2026年6月27日(土) 13:30 開演（13:00 開場）<br>\n会場　座・高円寺2（JR中央線 高円寺駅 北口より徒歩5分）<br>\n入場料　無料・自由席（要申込）</p>\n<hr>\n<p>出演<br>\nsorah　高橋征義　金子雄一郎<br>\n主催<br>\n炬燵　いかるが　ただあき　ヨヨイ<br>\n後援<br>\n一般社団法人日本Rubyの会  </p>\n<hr>\n<p>Q&amp;A  </p>\n<p>未就学児は参加可能ですか？<br>\n  可能です。</p>\n<p>撮影・録音は可能ですか？  <br>\n  原則として禁止です。演者ごとにご確認ください。登壇前にかならず撮影・録音可否に関連するアナウンスをいたします。</p>\n<p>飲食物の持ち込みは可能ですか？<br>\n  蓋付きの水に限り可能です。</p>\n<p>懇親会はありますか？<br>\n  運営による公式の懇親会は開催しません。本公演を通して出会った人と、あるいはいつものお前らと連れだって高円寺の街をお楽しみください。</p>",
+      "url": "https://tokyorubykaigi-13.connpass.com/event/390179/",
+      "image_url": "https://media.connpass.com/thumbs/1c/96/1c96d6d4ab96a0801ccdb21c7b0e59d4.png",
+      "hash_tag": "tokyorubykaigi",
+      "started_at": "2026-06-27T13:30:00+09:00",
+      "ended_at": "2026-06-27T17:00:00+09:00",
+      "published_at": "2026-04-20T00:01:08+09:00",
+      "limit": 130,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 17565,
+        "subdomain": "tokyorubykaigi-13",
+        "title": "東京Ruby会議13実行委員会",
+        "url": "https://tokyorubykaigi-13.connpass.com/"
+      },
+      "address": "東京都杉並区高円寺北２丁目１−２",
+      "place": "座・高円寺2",
+      "lat": "35.705893700000",
+      "lon": "139.654000200000",
+      "owner_id": 101971,
+      "owner_nickname": "sakahukamaki",
+      "owner_display_name": "sakahukamaki",
+      "accepted": 103,
+      "waiting": 0,
+      "updated_at": "2026-06-25T14:14:33+09:00"
     },
     {
       "id": 389224,
@@ -569,7 +569,7 @@
       "published_at": "2026-06-01T20:01:36+09:00",
       "limit": 295,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12723,
         "subdomain": "stack-chan",
@@ -616,7 +616,7 @@
       "owner_display_name": "dotnetlab",
       "accepted": 46,
       "waiting": 0,
-      "updated_at": "2026-06-26T12:22:42+09:00"
+      "updated_at": "2026-06-27T17:03:31+09:00"
     },
     {
       "id": 391880,
@@ -645,7 +645,7 @@
       "owner_id": 890061,
       "owner_nickname": "Wakamatsu_snow",
       "owner_display_name": "サポーターズ若松",
-      "accepted": 1130,
+      "accepted": 1136,
       "waiting": 0,
       "updated_at": "2026-06-26T19:54:12+09:00"
     },
@@ -972,7 +972,7 @@
       "published_at": "2026-05-03T14:42:41+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16634,
         "subdomain": "kintech",
@@ -1003,7 +1003,7 @@
       "published_at": "2026-05-23T13:12:56+09:00",
       "limit": 60,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13534,
         "subdomain": "ocbyokohama",
@@ -1034,7 +1034,7 @@
       "published_at": "2026-06-15T21:45:49+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15823,
         "subdomain": "cdle-saitama",
@@ -1048,7 +1048,7 @@
       "owner_id": 765357,
       "owner_nickname": "Hirohito-Ito",
       "owner_display_name": "Hirohito Ito",
-      "accepted": 6,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-06-27T13:34:41+09:00"
     }
