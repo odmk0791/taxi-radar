@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-28T17:42:52.877531+09:00",
+  "fetched_at": "2026-06-28T20:01:30.061008+09:00",
   "date": "20260628",
   "count": 19,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-27T17:33:08+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15688,
         "subdomain": "kinoko",
@@ -47,7 +47,7 @@
       "published_at": "2026-06-27T17:33:31+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15688,
         "subdomain": "kinoko",
@@ -61,7 +61,7 @@
       "owner_id": 399893,
       "owner_nickname": "takter00",
       "owner_display_name": "てらうちたかし",
-      "accepted": 2,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-06-27T18:16:26+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-05-11T12:03:37+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "世田谷区成城6丁目2−１",
       "place": "世田谷区砧総合支所 4F 区民集会所",
@@ -90,6 +90,32 @@
       "accepted": 0,
       "waiting": 0,
       "updated_at": "2026-05-11T12:03:37+09:00"
+    },
+    {
+      "id": 397182,
+      "title": "【JavaScriptでVSTプラグインをつくろう！】Suara/unworklet ハンズオン会",
+      "catch": "αテスト会です！",
+      "description": "<h1>Suara/unworkletハンズオン会</h1>\n<h2>概要</h2>\n<p>6/28 13:46 追記:\n【部屋情報！！】</p>\n<p>すみません部屋情報を掲載し忘れていたのですが、3階の3F-Aです！</p>\n<hr>\n<p>こちらの会は、<a href=\"https://audio.dev/adc-japan-26/\" rel=\"nofollow\">ADC Japan</a> にて主催者であるYuichi Yogoが発表した、現在開発中のOSSオーディオ開発フレームワーク Suaraおよびunworkletのハンズオン会となります。</p>\n<p>本イベントはリリース前にクローズドαテストを兼ねて、フレームワークの説明と実際にハンズオンをしていただき、フィードバックを得ることを目的としています。</p>\n<h3>Suaraとは</h3>\n<p>web 技術（HTML / CSS / JavaScript / Web Audio）で作ったアプリを、<strong>そのまま DAW のプラグインとして動かせる</strong>ランタイムです。<br>\nいわば「<strong>オーディオプラグイン版の Electron</strong>」。</p>\n<p>どんな web ページでもプラグインにできます。（現在は VST3 に対応。今後は対応フォーマットを増やす予定です）</p>\n<p><strong>⭐ アピールポイント</strong></p>\n<ul>\n<li>🔥 HMR<ul>\n<li>UI もDSP（音の処理）も、ビルドなし・プラグイン起動し直しなしで、<strong>DAW上で動かしたまま更新</strong>できます</li>\n</ul>\n</li>\n<li>↔️ プラグインごとのプロセス分離<ul>\n<li>Suaraプラグインは独立したprocessでchromiumを立ち上げるので、（まず起こらないことですが）仮に1つのSuara製プラグインが落ちても、DAW 本体や他のプラグインは巻き込まれません</li>\n</ul>\n</li>\n<li>⚡ 低レイテンシ<ul>\n<li>「プラグインから別プロセスでchromiumを立ち上げて通信するなんて、レイテンシーが大きくて使い物にならないのでは？」<ul>\n<li>→ <strong>平均85μs程度</strong> の往復通信コスト（実測値）に抑えることができており、超ヘビーなDSPでなければ、概ね問題ないレイテンシに抑えることができています</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>🚀 同じhtml/css/jsのコードが、VSTプラグインとしても、普通のWebアプリとしても動く！！<ul>\n<li>同じソースコードで、そのままブラウザで試せる体験版やデモを用意できます</li>\n</ul>\n</li>\n</ul>\n<p><strong>🔧 開発体験</strong></p>\n<ul>\n<li><strong>UI周りはWebそのまま 👍</strong><ul>\n<li>HTML / CSS / SVG / WebGL（あるいはWebGPU） で凝った GUI も作りやすく、デバッグも簡単です</li>\n</ul>\n</li>\n<li><strong>プラグイン制作者が C++ を書く必要はなし 👍</strong><ul>\n<li>UI部分もDSP部分も、プラグイン開発者が書くのは JavaScript だけです</li>\n</ul>\n</li>\n<li><strong>トライアルの速さ 👍</strong> <ul>\n<li>「変更のたびに長いビルドを待って DAW を再起動」という消耗から解放されます</li>\n</ul>\n</li>\n</ul>\n<h3>unworkletとは</h3>\n<p>TypeScript で書いた音声処理（DSP）を、<strong>「リアルタイムに安全だとコンパイル時に確かめた WebAssembly」</strong> へ変換するフレームワークです。<br>\n「<strong>音版の <a href=\"https://docs.swmansion.com/TypeGPU/\" rel=\"nofollow\">TypeGPU</a></strong>」と言える立ち位置で、web で DSP を書くときの定番（3Dグラフィックスでいうところのthree.js のような存在）を目指しています。</p>\n<p><strong>⭐ アピールポイント</strong></p>\n<ul>\n<li>🛡️ コンパイル時の安全保証<ul>\n<li>メモリ確保・GC・無限ループ・例外・ブロッキングといった<strong>音が途切れる原因を、コンパイル時に締め出します</strong><ul>\n<li>→ これらの要因を構造的に排除するので、コンパイルが通った時点で、その種の不具合は入り込めません</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>⚙️ 設計図とランタイムの分離<ul>\n<li>書いた TypeScript は、ビルド時に処理の設計図を組み立てるだけです<ul>\n<li>→ 実際に音声スレッドで動くのは、生成された WebAssembly だけです</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>🌍 場所を選ばない実行<ul>\n<li>同じ DSP がさまざまな場所で動きます<ul>\n<li>ブラウザ</li>\n<li>サーバー</li>\n<li>コマンドラインツール</li>\n<li>（将来的にはマイコンなどの組み込みでも）</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>✅ e2eテスト<ul>\n<li>出荷するものと全く同じ WebAssembly を、ブラウザなしでそのままテストできます<ul>\n<li>→ 結果は毎回同じで再現性があり、近似ではなく本物です</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>🔧 開発体験</strong></p>\n<ul>\n<li><strong>低レベルの配線はフレームワーク任せ 👍</strong><ul>\n<li>スレッド間のメモリ共有や同期、AudioWorklet の組み立てなどを意識せず、TypeScript を 1 ファイル書くだけです</li>\n</ul>\n</li>\n<li><strong>正確なイベント処理 👍</strong><ul>\n<li>MIDI やイベントを、サンプル単位の正確さで標準的に扱えます</li>\n</ul>\n</li>\n<li><strong>デバッグのしやすさ 👍</strong> <ul>\n<li>動いている音声処理の中身を、開発ツール上でそのまま確認できます。内部の状態を正確に見ながらデバッグでき、本番のビルドには一切残りません</li>\n</ul>\n</li>\n</ul>\n<h2>イベントの流れ</h2>\n<p>14:00-15:00 Suara/unworkletについて解説・デモ<br>\n15:00-17:00 β版のinstallerを配るので、各自自由にハンズオン。質問/相談/フィードバックはいつでもOK！</p>\n<h2>参加にあたって</h2>\n<h3>会場</h3>\n<p>connpassのイベントページの会場欄をご確認ください。<br>\n当日の部屋については会場側から連絡があり次第、connpassページを更新します</p>\n<h3>参加費用について</h3>\n<p>会場にてPayPayか現金で <strong>1500円/1名</strong> を頂戴できると幸いです。 </p>\n<h3>持ち物</h3>\n<p>ハンズオンを希望する方は、パソコンをご持参ください。<br>\n現状はMacの方がよくテストされているのですが、当日までにWindowsでも動作するように調整しておきます！</p>\n<h3>懇親会について</h3>\n<p>イベント終了後に近くの飲食店・居酒屋などで懇親会をしようと思います。<br>\nご参加を希望の方はconnpassのアンケートにて参加意思をご表明ください。</p>",
+      "url": "https://connpass.com/event/397182/",
+      "image_url": "https://media.connpass.com/thumbs/08/16/081683358fa8d62b3fa95037ac68e27d.png",
+      "hash_tag": "audio",
+      "started_at": "2026-06-28T14:00:00+09:00",
+      "ended_at": "2026-06-28T17:00:00+09:00",
+      "published_at": "2026-06-15T00:13:32+09:00",
+      "limit": 17,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": null,
+      "address": "〒104-0061東京都中央区銀座1丁目14 第二五味ビル　３Ｆ-A",
+      "place": "One-Space Ginza",
+      "lat": "35.673128300000",
+      "lon": "139.769830500000",
+      "owner_id": 83618,
+      "owner_nickname": "YuichiYogo",
+      "owner_display_name": "余湖雄一",
+      "accepted": 14,
+      "waiting": 0,
+      "updated_at": "2026-06-28T13:46:41+09:00"
     },
     {
       "id": 398048,
@@ -121,32 +147,6 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-06-20T19:04:07+09:00"
-    },
-    {
-      "id": 397182,
-      "title": "【JavaScriptでVSTプラグインをつくろう！】Suara/unworklet ハンズオン会",
-      "catch": "αテスト会です！",
-      "description": "<h1>Suara/unworkletハンズオン会</h1>\n<h2>概要</h2>\n<p>6/28 13:46 追記:\n【部屋情報！！】</p>\n<p>すみません部屋情報を掲載し忘れていたのですが、3階の3F-Aです！</p>\n<hr>\n<p>こちらの会は、<a href=\"https://audio.dev/adc-japan-26/\" rel=\"nofollow\">ADC Japan</a> にて主催者であるYuichi Yogoが発表した、現在開発中のOSSオーディオ開発フレームワーク Suaraおよびunworkletのハンズオン会となります。</p>\n<p>本イベントはリリース前にクローズドαテストを兼ねて、フレームワークの説明と実際にハンズオンをしていただき、フィードバックを得ることを目的としています。</p>\n<h3>Suaraとは</h3>\n<p>web 技術（HTML / CSS / JavaScript / Web Audio）で作ったアプリを、<strong>そのまま DAW のプラグインとして動かせる</strong>ランタイムです。<br>\nいわば「<strong>オーディオプラグイン版の Electron</strong>」。</p>\n<p>どんな web ページでもプラグインにできます。（現在は VST3 に対応。今後は対応フォーマットを増やす予定です）</p>\n<p><strong>⭐ アピールポイント</strong></p>\n<ul>\n<li>🔥 HMR<ul>\n<li>UI もDSP（音の処理）も、ビルドなし・プラグイン起動し直しなしで、<strong>DAW上で動かしたまま更新</strong>できます</li>\n</ul>\n</li>\n<li>↔️ プラグインごとのプロセス分離<ul>\n<li>Suaraプラグインは独立したprocessでchromiumを立ち上げるので、（まず起こらないことですが）仮に1つのSuara製プラグインが落ちても、DAW 本体や他のプラグインは巻き込まれません</li>\n</ul>\n</li>\n<li>⚡ 低レイテンシ<ul>\n<li>「プラグインから別プロセスでchromiumを立ち上げて通信するなんて、レイテンシーが大きくて使い物にならないのでは？」<ul>\n<li>→ <strong>平均85μs程度</strong> の往復通信コスト（実測値）に抑えることができており、超ヘビーなDSPでなければ、概ね問題ないレイテンシに抑えることができています</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>🚀 同じhtml/css/jsのコードが、VSTプラグインとしても、普通のWebアプリとしても動く！！<ul>\n<li>同じソースコードで、そのままブラウザで試せる体験版やデモを用意できます</li>\n</ul>\n</li>\n</ul>\n<p><strong>🔧 開発体験</strong></p>\n<ul>\n<li><strong>UI周りはWebそのまま 👍</strong><ul>\n<li>HTML / CSS / SVG / WebGL（あるいはWebGPU） で凝った GUI も作りやすく、デバッグも簡単です</li>\n</ul>\n</li>\n<li><strong>プラグイン制作者が C++ を書く必要はなし 👍</strong><ul>\n<li>UI部分もDSP部分も、プラグイン開発者が書くのは JavaScript だけです</li>\n</ul>\n</li>\n<li><strong>トライアルの速さ 👍</strong> <ul>\n<li>「変更のたびに長いビルドを待って DAW を再起動」という消耗から解放されます</li>\n</ul>\n</li>\n</ul>\n<h3>unworkletとは</h3>\n<p>TypeScript で書いた音声処理（DSP）を、<strong>「リアルタイムに安全だとコンパイル時に確かめた WebAssembly」</strong> へ変換するフレームワークです。<br>\n「<strong>音版の <a href=\"https://docs.swmansion.com/TypeGPU/\" rel=\"nofollow\">TypeGPU</a></strong>」と言える立ち位置で、web で DSP を書くときの定番（3Dグラフィックスでいうところのthree.js のような存在）を目指しています。</p>\n<p><strong>⭐ アピールポイント</strong></p>\n<ul>\n<li>🛡️ コンパイル時の安全保証<ul>\n<li>メモリ確保・GC・無限ループ・例外・ブロッキングといった<strong>音が途切れる原因を、コンパイル時に締め出します</strong><ul>\n<li>→ これらの要因を構造的に排除するので、コンパイルが通った時点で、その種の不具合は入り込めません</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>⚙️ 設計図とランタイムの分離<ul>\n<li>書いた TypeScript は、ビルド時に処理の設計図を組み立てるだけです<ul>\n<li>→ 実際に音声スレッドで動くのは、生成された WebAssembly だけです</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>🌍 場所を選ばない実行<ul>\n<li>同じ DSP がさまざまな場所で動きます<ul>\n<li>ブラウザ</li>\n<li>サーバー</li>\n<li>コマンドラインツール</li>\n<li>（将来的にはマイコンなどの組み込みでも）</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>✅ e2eテスト<ul>\n<li>出荷するものと全く同じ WebAssembly を、ブラウザなしでそのままテストできます<ul>\n<li>→ 結果は毎回同じで再現性があり、近似ではなく本物です</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>🔧 開発体験</strong></p>\n<ul>\n<li><strong>低レベルの配線はフレームワーク任せ 👍</strong><ul>\n<li>スレッド間のメモリ共有や同期、AudioWorklet の組み立てなどを意識せず、TypeScript を 1 ファイル書くだけです</li>\n</ul>\n</li>\n<li><strong>正確なイベント処理 👍</strong><ul>\n<li>MIDI やイベントを、サンプル単位の正確さで標準的に扱えます</li>\n</ul>\n</li>\n<li><strong>デバッグのしやすさ 👍</strong> <ul>\n<li>動いている音声処理の中身を、開発ツール上でそのまま確認できます。内部の状態を正確に見ながらデバッグでき、本番のビルドには一切残りません</li>\n</ul>\n</li>\n</ul>\n<h2>イベントの流れ</h2>\n<p>14:00-15:00 Suara/unworkletについて解説・デモ<br>\n15:00-17:00 β版のinstallerを配るので、各自自由にハンズオン。質問/相談/フィードバックはいつでもOK！</p>\n<h2>参加にあたって</h2>\n<h3>会場</h3>\n<p>connpassのイベントページの会場欄をご確認ください。<br>\n当日の部屋については会場側から連絡があり次第、connpassページを更新します</p>\n<h3>参加費用について</h3>\n<p>会場にてPayPayか現金で <strong>1500円/1名</strong> を頂戴できると幸いです。 </p>\n<h3>持ち物</h3>\n<p>ハンズオンを希望する方は、パソコンをご持参ください。<br>\n現状はMacの方がよくテストされているのですが、当日までにWindowsでも動作するように調整しておきます！</p>\n<h3>懇親会について</h3>\n<p>イベント終了後に近くの飲食店・居酒屋などで懇親会をしようと思います。<br>\nご参加を希望の方はconnpassのアンケートにて参加意思をご表明ください。</p>",
-      "url": "https://connpass.com/event/397182/",
-      "image_url": "https://media.connpass.com/thumbs/08/16/081683358fa8d62b3fa95037ac68e27d.png",
-      "hash_tag": "audio",
-      "started_at": "2026-06-28T14:00:00+09:00",
-      "ended_at": "2026-06-28T17:00:00+09:00",
-      "published_at": "2026-06-15T00:13:32+09:00",
-      "limit": 17,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": null,
-      "address": "〒104-0061東京都中央区銀座1丁目14 第二五味ビル　３Ｆ-A",
-      "place": "One-Space Ginza",
-      "lat": "35.673128300000",
-      "lon": "139.769830500000",
-      "owner_id": 83618,
-      "owner_nickname": "YuichiYogo",
-      "owner_display_name": "余湖雄一",
-      "accepted": 14,
-      "waiting": 0,
-      "updated_at": "2026-06-28T13:46:41+09:00"
     },
     {
       "id": 397824,
@@ -192,7 +192,7 @@
       "published_at": "2026-06-06T10:26:46+09:00",
       "limit": 13,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15574,
         "subdomain": "robostadion",
@@ -254,7 +254,7 @@
       "published_at": "2026-04-18T12:01:17+09:00",
       "limit": 595,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15688,
         "subdomain": "kinoko",
@@ -268,7 +268,7 @@
       "owner_id": 26042,
       "owner_nickname": "magnolia_k_",
       "owner_display_name": "magnoliak",
-      "accepted": 377,
+      "accepted": 376,
       "waiting": 0,
       "updated_at": "2026-06-28T10:44:54+09:00"
     },
@@ -285,7 +285,7 @@
       "published_at": "2026-06-14T12:01:12+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -502,7 +502,7 @@
       "published_at": "2026-05-09T13:00:00+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17576,
         "subdomain": "fujisawa-mokumoku",
@@ -564,7 +564,7 @@
       "published_at": "2026-06-19T18:35:34+09:00",
       "limit": 22,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14498,
         "subdomain": "kawagoemokumoku",
