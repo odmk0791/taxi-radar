@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-06-28T09:07:56.310051+09:00",
+  "fetched_at": "2026-06-28T14:12:46.394607+09:00",
   "date": "20260628",
-  "count": 19,
+  "count": 17,
   "events": [
     {
       "id": 398733,
@@ -30,7 +30,7 @@
       "owner_id": 399893,
       "owner_nickname": "takter00",
       "owner_display_name": "てらうちたかし",
-      "accepted": 0,
+      "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-06-27T18:16:26+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 287267,
       "owner_nickname": "mt_satak",
       "owner_display_name": "さたけ(あだ名)",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-06-27T18:16:49+09:00"
     },
@@ -95,7 +95,7 @@
       "id": 397182,
       "title": "【JavaScriptでVSTプラグインをつくろう！】Suara/unworklet ハンズオン会",
       "catch": "αテスト会です！",
-      "description": "<h1>Suara/unworkletハンズオン会</h1>\n<h2>概要</h2>\n<p>こちらの会は、<a href=\"https://audio.dev/adc-japan-26/\" rel=\"nofollow\">ADC Japan</a> にて主催者であるYuichi Yogoが発表した、現在開発中のOSSオーディオ開発フレームワーク Suaraおよびunworkletのハンズオン会となります。</p>\n<p>本イベントはリリース前にクローズドαテストを兼ねて、フレームワークの説明と実際にハンズオンをしていただき、フィードバックを得ることを目的としています。</p>\n<h3>Suaraとは</h3>\n<p>web 技術（HTML / CSS / JavaScript / Web Audio）で作ったアプリを、<strong>そのまま DAW のプラグインとして動かせる</strong>ランタイムです。<br>\nいわば「<strong>オーディオプラグイン版の Electron</strong>」。</p>\n<p>どんな web ページでもプラグインにできます。（現在は VST3 に対応。今後は対応フォーマットを増やす予定です）</p>\n<p><strong>⭐ アピールポイント</strong></p>\n<ul>\n<li>🔥 HMR<ul>\n<li>UI もDSP（音の処理）も、ビルドなし・プラグイン起動し直しなしで、<strong>DAW上で動かしたまま更新</strong>できます</li>\n</ul>\n</li>\n<li>↔️ プラグインごとのプロセス分離<ul>\n<li>Suaraプラグインは独立したprocessでchromiumを立ち上げるので、（まず起こらないことですが）仮に1つのSuara製プラグインが落ちても、DAW 本体や他のプラグインは巻き込まれません</li>\n</ul>\n</li>\n<li>⚡ 低レイテンシ<ul>\n<li>「プラグインから別プロセスでchromiumを立ち上げて通信するなんて、レイテンシーが大きくて使い物にならないのでは？」<ul>\n<li>→ <strong>平均85μs程度</strong> の往復通信コスト（実測値）に抑えることができており、超ヘビーなDSPでなければ、概ね問題ないレイテンシに抑えることができています</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>🚀 同じhtml/css/jsのコードが、VSTプラグインとしても、普通のWebアプリとしても動く！！<ul>\n<li>同じソースコードで、そのままブラウザで試せる体験版やデモを用意できます</li>\n</ul>\n</li>\n</ul>\n<p><strong>🔧 開発体験</strong></p>\n<ul>\n<li><strong>UI周りはWebそのまま 👍</strong><ul>\n<li>HTML / CSS / SVG / WebGL（あるいはWebGPU） で凝った GUI も作りやすく、デバッグも簡単です</li>\n</ul>\n</li>\n<li><strong>プラグイン制作者が C++ を書く必要はなし 👍</strong><ul>\n<li>UI部分もDSP部分も、プラグイン開発者が書くのは JavaScript だけです</li>\n</ul>\n</li>\n<li><strong>トライアルの速さ 👍</strong> <ul>\n<li>「変更のたびに長いビルドを待って DAW を再起動」という消耗から解放されます</li>\n</ul>\n</li>\n</ul>\n<h3>unworkletとは</h3>\n<p>TypeScript で書いた音声処理（DSP）を、<strong>「リアルタイムに安全だとコンパイル時に確かめた WebAssembly」</strong> へ変換するフレームワークです。<br>\n「<strong>音版の <a href=\"https://docs.swmansion.com/TypeGPU/\" rel=\"nofollow\">TypeGPU</a></strong>」と言える立ち位置で、web で DSP を書くときの定番（3Dグラフィックスでいうところのthree.js のような存在）を目指しています。</p>\n<p><strong>⭐ アピールポイント</strong></p>\n<ul>\n<li>🛡️ コンパイル時の安全保証<ul>\n<li>メモリ確保・GC・無限ループ・例外・ブロッキングといった<strong>音が途切れる原因を、コンパイル時に締め出します</strong><ul>\n<li>→ これらの要因を構造的に排除するので、コンパイルが通った時点で、その種の不具合は入り込めません</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>⚙️ 設計図とランタイムの分離<ul>\n<li>書いた TypeScript は、ビルド時に処理の設計図を組み立てるだけです<ul>\n<li>→ 実際に音声スレッドで動くのは、生成された WebAssembly だけです</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>🌍 場所を選ばない実行<ul>\n<li>同じ DSP がさまざまな場所で動きます<ul>\n<li>ブラウザ</li>\n<li>サーバー</li>\n<li>コマンドラインツール</li>\n<li>（将来的にはマイコンなどの組み込みでも）</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>✅ e2eテスト<ul>\n<li>出荷するものと全く同じ WebAssembly を、ブラウザなしでそのままテストできます<ul>\n<li>→ 結果は毎回同じで再現性があり、近似ではなく本物です</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>🔧 開発体験</strong></p>\n<ul>\n<li><strong>低レベルの配線はフレームワーク任せ 👍</strong><ul>\n<li>スレッド間のメモリ共有や同期、AudioWorklet の組み立てなどを意識せず、TypeScript を 1 ファイル書くだけです</li>\n</ul>\n</li>\n<li><strong>正確なイベント処理 👍</strong><ul>\n<li>MIDI やイベントを、サンプル単位の正確さで標準的に扱えます</li>\n</ul>\n</li>\n<li><strong>デバッグのしやすさ 👍</strong> <ul>\n<li>動いている音声処理の中身を、開発ツール上でそのまま確認できます。内部の状態を正確に見ながらデバッグでき、本番のビルドには一切残りません</li>\n</ul>\n</li>\n</ul>\n<h2>イベントの流れ</h2>\n<p>14:00-15:00 Suara/unworkletについて解説・デモ<br>\n15:00-17:00 β版のinstallerを配るので、各自自由にハンズオン。質問/相談/フィードバックはいつでもOK！</p>\n<h2>参加にあたって</h2>\n<h3>会場</h3>\n<p>connpassのイベントページの会場欄をご確認ください。<br>\n当日の部屋については会場側から連絡があり次第、connpassページを更新します</p>\n<h3>参加費用について</h3>\n<p>会場にてPayPayか現金で <strong>1500円/1名</strong> を頂戴できると幸いです。 </p>\n<h3>持ち物</h3>\n<p>ハンズオンを希望する方は、パソコンをご持参ください。<br>\n現状はMacの方がよくテストされているのですが、当日までにWindowsでも動作するように調整しておきます！</p>\n<h3>懇親会について</h3>\n<p>イベント終了後に近くの飲食店・居酒屋などで懇親会をしようと思います。<br>\nご参加を希望の方はconnpassのアンケートにて参加意思をご表明ください。</p>",
+      "description": "<h1>Suara/unworkletハンズオン会</h1>\n<h2>概要</h2>\n<p>6/28 13:46 追記:\n【部屋情報！！】</p>\n<p>すみません部屋情報を掲載し忘れていたのですが、3階の3F-Aです！</p>\n<hr>\n<p>こちらの会は、<a href=\"https://audio.dev/adc-japan-26/\" rel=\"nofollow\">ADC Japan</a> にて主催者であるYuichi Yogoが発表した、現在開発中のOSSオーディオ開発フレームワーク Suaraおよびunworkletのハンズオン会となります。</p>\n<p>本イベントはリリース前にクローズドαテストを兼ねて、フレームワークの説明と実際にハンズオンをしていただき、フィードバックを得ることを目的としています。</p>\n<h3>Suaraとは</h3>\n<p>web 技術（HTML / CSS / JavaScript / Web Audio）で作ったアプリを、<strong>そのまま DAW のプラグインとして動かせる</strong>ランタイムです。<br>\nいわば「<strong>オーディオプラグイン版の Electron</strong>」。</p>\n<p>どんな web ページでもプラグインにできます。（現在は VST3 に対応。今後は対応フォーマットを増やす予定です）</p>\n<p><strong>⭐ アピールポイント</strong></p>\n<ul>\n<li>🔥 HMR<ul>\n<li>UI もDSP（音の処理）も、ビルドなし・プラグイン起動し直しなしで、<strong>DAW上で動かしたまま更新</strong>できます</li>\n</ul>\n</li>\n<li>↔️ プラグインごとのプロセス分離<ul>\n<li>Suaraプラグインは独立したprocessでchromiumを立ち上げるので、（まず起こらないことですが）仮に1つのSuara製プラグインが落ちても、DAW 本体や他のプラグインは巻き込まれません</li>\n</ul>\n</li>\n<li>⚡ 低レイテンシ<ul>\n<li>「プラグインから別プロセスでchromiumを立ち上げて通信するなんて、レイテンシーが大きくて使い物にならないのでは？」<ul>\n<li>→ <strong>平均85μs程度</strong> の往復通信コスト（実測値）に抑えることができており、超ヘビーなDSPでなければ、概ね問題ないレイテンシに抑えることができています</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>🚀 同じhtml/css/jsのコードが、VSTプラグインとしても、普通のWebアプリとしても動く！！<ul>\n<li>同じソースコードで、そのままブラウザで試せる体験版やデモを用意できます</li>\n</ul>\n</li>\n</ul>\n<p><strong>🔧 開発体験</strong></p>\n<ul>\n<li><strong>UI周りはWebそのまま 👍</strong><ul>\n<li>HTML / CSS / SVG / WebGL（あるいはWebGPU） で凝った GUI も作りやすく、デバッグも簡単です</li>\n</ul>\n</li>\n<li><strong>プラグイン制作者が C++ を書く必要はなし 👍</strong><ul>\n<li>UI部分もDSP部分も、プラグイン開発者が書くのは JavaScript だけです</li>\n</ul>\n</li>\n<li><strong>トライアルの速さ 👍</strong> <ul>\n<li>「変更のたびに長いビルドを待って DAW を再起動」という消耗から解放されます</li>\n</ul>\n</li>\n</ul>\n<h3>unworkletとは</h3>\n<p>TypeScript で書いた音声処理（DSP）を、<strong>「リアルタイムに安全だとコンパイル時に確かめた WebAssembly」</strong> へ変換するフレームワークです。<br>\n「<strong>音版の <a href=\"https://docs.swmansion.com/TypeGPU/\" rel=\"nofollow\">TypeGPU</a></strong>」と言える立ち位置で、web で DSP を書くときの定番（3Dグラフィックスでいうところのthree.js のような存在）を目指しています。</p>\n<p><strong>⭐ アピールポイント</strong></p>\n<ul>\n<li>🛡️ コンパイル時の安全保証<ul>\n<li>メモリ確保・GC・無限ループ・例外・ブロッキングといった<strong>音が途切れる原因を、コンパイル時に締め出します</strong><ul>\n<li>→ これらの要因を構造的に排除するので、コンパイルが通った時点で、その種の不具合は入り込めません</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>⚙️ 設計図とランタイムの分離<ul>\n<li>書いた TypeScript は、ビルド時に処理の設計図を組み立てるだけです<ul>\n<li>→ 実際に音声スレッドで動くのは、生成された WebAssembly だけです</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>🌍 場所を選ばない実行<ul>\n<li>同じ DSP がさまざまな場所で動きます<ul>\n<li>ブラウザ</li>\n<li>サーバー</li>\n<li>コマンドラインツール</li>\n<li>（将来的にはマイコンなどの組み込みでも）</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>✅ e2eテスト<ul>\n<li>出荷するものと全く同じ WebAssembly を、ブラウザなしでそのままテストできます<ul>\n<li>→ 結果は毎回同じで再現性があり、近似ではなく本物です</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>🔧 開発体験</strong></p>\n<ul>\n<li><strong>低レベルの配線はフレームワーク任せ 👍</strong><ul>\n<li>スレッド間のメモリ共有や同期、AudioWorklet の組み立てなどを意識せず、TypeScript を 1 ファイル書くだけです</li>\n</ul>\n</li>\n<li><strong>正確なイベント処理 👍</strong><ul>\n<li>MIDI やイベントを、サンプル単位の正確さで標準的に扱えます</li>\n</ul>\n</li>\n<li><strong>デバッグのしやすさ 👍</strong> <ul>\n<li>動いている音声処理の中身を、開発ツール上でそのまま確認できます。内部の状態を正確に見ながらデバッグでき、本番のビルドには一切残りません</li>\n</ul>\n</li>\n</ul>\n<h2>イベントの流れ</h2>\n<p>14:00-15:00 Suara/unworkletについて解説・デモ<br>\n15:00-17:00 β版のinstallerを配るので、各自自由にハンズオン。質問/相談/フィードバックはいつでもOK！</p>\n<h2>参加にあたって</h2>\n<h3>会場</h3>\n<p>connpassのイベントページの会場欄をご確認ください。<br>\n当日の部屋については会場側から連絡があり次第、connpassページを更新します</p>\n<h3>参加費用について</h3>\n<p>会場にてPayPayか現金で <strong>1500円/1名</strong> を頂戴できると幸いです。 </p>\n<h3>持ち物</h3>\n<p>ハンズオンを希望する方は、パソコンをご持参ください。<br>\n現状はMacの方がよくテストされているのですが、当日までにWindowsでも動作するように調整しておきます！</p>\n<h3>懇親会について</h3>\n<p>イベント終了後に近くの飲食店・居酒屋などで懇親会をしようと思います。<br>\nご参加を希望の方はconnpassのアンケートにて参加意思をご表明ください。</p>",
       "url": "https://connpass.com/event/397182/",
       "image_url": "https://media.connpass.com/thumbs/08/16/081683358fa8d62b3fa95037ac68e27d.png",
       "hash_tag": "audio",
@@ -104,9 +104,9 @@
       "published_at": "2026-06-15T00:13:32+09:00",
       "limit": 17,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
-      "address": "〒104-0061東京都中央区銀座1丁目14 第二五味ビル　３Ｆ－５Ｆ",
+      "address": "〒104-0061東京都中央区銀座1丁目14 第二五味ビル　３Ｆ-A",
       "place": "One-Space Ginza",
       "lat": "35.673128300000",
       "lon": "139.769830500000",
@@ -115,7 +115,7 @@
       "owner_display_name": "余湖雄一",
       "accepted": 14,
       "waiting": 0,
-      "updated_at": "2026-06-27T14:41:34+09:00"
+      "updated_at": "2026-06-28T13:46:41+09:00"
     },
     {
       "id": 398048,
@@ -130,7 +130,7 @@
       "published_at": "2026-06-20T19:04:07+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -144,7 +144,7 @@
       "owner_id": 197714,
       "owner_nickname": "clear_",
       "owner_display_name": "clear_",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-06-20T19:04:07+09:00"
     },
@@ -161,7 +161,7 @@
       "published_at": "2026-06-06T10:26:46+09:00",
       "limit": 13,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15574,
         "subdomain": "robostadion",
@@ -175,7 +175,7 @@
       "owner_id": 41927,
       "owner_nickname": "kosuga_masakatsu",
       "owner_display_name": "kosuga_masakatsu",
-      "accepted": 8,
+      "accepted": 9,
       "waiting": 0,
       "updated_at": "2026-06-06T10:26:46+09:00"
     },
@@ -192,7 +192,7 @@
       "published_at": "2026-06-18T18:22:46+09:00",
       "limit": 9,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2959,
         "subdomain": "weeyble-creative",
@@ -206,7 +206,7 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 7,
+      "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-06-27T19:34:15+09:00"
     },
@@ -223,7 +223,7 @@
       "published_at": "2026-05-22T08:58:50+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13898,
         "subdomain": "programmersguild",
@@ -252,9 +252,9 @@
       "started_at": "2026-06-28T11:00:00+09:00",
       "ended_at": "2026-06-28T20:00:00+09:00",
       "published_at": "2026-04-18T12:01:17+09:00",
-      "limit": 585,
+      "limit": 595,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15688,
         "subdomain": "kinoko",
@@ -268,9 +268,9 @@
       "owner_id": 26042,
       "owner_nickname": "magnolia_k_",
       "owner_display_name": "magnoliak",
-      "accepted": 356,
+      "accepted": 375,
       "waiting": 0,
-      "updated_at": "2026-06-27T18:16:02+09:00"
+      "updated_at": "2026-06-28T10:44:54+09:00"
     },
     {
       "id": 391491,
@@ -285,7 +285,7 @@
       "published_at": "2026-06-14T12:01:12+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -299,7 +299,7 @@
       "owner_id": 123017,
       "owner_nickname": "iwski",
       "owner_display_name": "岩崎",
-      "accepted": 40,
+      "accepted": 39,
       "waiting": 0,
       "updated_at": "2026-06-15T20:37:13+09:00"
     },
@@ -347,7 +347,7 @@
       "published_at": "2026-06-27T13:29:51+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 966,
         "subdomain": "devmorning",
@@ -361,40 +361,9 @@
       "owner_id": 21068,
       "owner_nickname": "kon_yuichi",
       "owner_display_name": "kon_yuichi",
-      "accepted": 3,
+      "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-06-27T13:29:51+09:00"
-    },
-    {
-      "id": 391190,
-      "title": "RESEARCH Conference 2026",
-      "catch": "",
-      "description": "<p></p><h1 style=\"font-size: 2rem;\n            font-weight: 700;\n            padding: 0.5em 0.8em;\n            background-color: #2045a6;\n            color: white;\n            text-align: center;\">RESEARCH Conference 2026\n</h1>\n<p></p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">イベント概要\n</h2><p></p>\n<p>RESEARCH Conferenceは、リサーチをテーマとした日本発のカンファレンスです。より良いサービスづくりの土壌を育むために、デザインリサーチやUXリサーチ、UXデザインの実践知を共有し、リサーチの価値や可能性を広く伝えることを目的としています。<br>\n2026年のテーマは「WEAVING」です。<br>\n<br>\n 年々リサーチに求められることは多様で高度になり、もはや一つの専門性や視点だけでは抱えきれなくなっています。そんな中、私たちはこれからどのように新たな価値を生み出していけるのでしょうか。このような状況において、異なる特徴をもつ人や役割を「織る」ことに可能性があると考え、テーマを定めました。<br>\n<br>\n例年のセッションだけでなく、パネルディスカッション、ワークショップを新たに加えることで、さまざまな要素が織り交ざる場を目指しています。本カンファレンスを通じて対話が生まれ、自分なりの織り方を見いだせるきっかけになることを期待しています。<br></p>\n<p><a href=\"https://researchconf.jp/\" rel=\"nofollow\">https://researchconf.jp/</a></p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">開催日時\n</h2><p></p>\n<p>2026年6月28日（日）10:00–17:00（終了後、<strong>17:10〜18:00懇親会</strong>を予定）<br>\n※現地会場：9:30受付開始、16:30受付終了を予定<br>\n※オンライン：16:30受付終了、17:00配信終了<br></p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">会場\n</h2><p></p>\n<p>①〜⑤現地参加枠、ワークショップ参加枠<br>\n合同会社DMM .com<br>\n住所：東京都港区六本木三丁目2番1号 住友不動産六本木グランドタワー 24階<br>\nアクセス：南北線「六本木一丁目駅」直結、日比谷線・大江戸線「六本木駅」徒歩5分<br><br>\n⑥オンライン参加枠<br>\nYouTube Live + Miroでの開催<br>\n※各種URLは前日までに本connpassページに掲載の上、お申し込みいただいたメールアドレス宛にご共有いたします。<br></p>\n<hr>\n<p><strong>情報保障、その他の合理的配慮について</strong><br></p>\n<p>より多くの方に参加いただける場を目指しています。<br>\n一部のセッションでは、音声認識字幕による情報保障を行います。 対象セッションの詳細については、参加申し込みが完了した方へご案内いたします。<br>\nまた、会場でのご案内（視覚障害のある方の誘導、車いす席のご利用等）を含め、その他の合理的配慮についてご希望がある場合は、事前にご相談ください。<br>\nなお、参加にあたりご不安や配慮のご要望がある場合は、可能な範囲で対応を検討いたします。<br><br>\n詳細は、<a href=\"https://research-conf.connpass.com/event/391190/inquiry/\" rel=\"nofollow\">イベント管理者への問い合わせ</a>よりご連絡ください。</p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">参加費用</h2><p></p>\n<p>無料</p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">参加申し込み方法</h2><p></p>\n<ul>\n<li>connpassよりお申し込みをお願いします。</li>\n<li>事情により参加できなくなった方はキャンセルをお願い致します。<br></li>\n<li>現地ワークショップ枠補欠の方へ（対象者限定）<br> \nワークショップ付きの枠（②〜⑤）で「補欠」となった場合、補欠のまま「①現地参加枠」や「⑥オンライン参加枠」へ変更（申し込み）することができません。<br>\n「ワークショップが補欠なら、通常の現地参加に切り替えたい」という場合は、大変お手数ですが一度現在のワークショップ枠の申し込みをキャンセルした上で、改めて空いている枠へお申し込みください。<br></li>\n</ul>\n<p></p><h2 style=\"font-size: 1.4rem;\n    margin-left: unset;\n    font-weight: 600;\n    border-bottom: unset;\n    color: #2045a6;\n    padding: 0.5em;\n    background-color: #e8eeff;\n    border-left: solid 5px #2045a6;\">タイムテーブル</h2>\n<p></p>\n<table style=\"font-size: 0.95rem; color: #333;\">\n  <thead>\n    <tr style=\"background-color: #2045A6; color: #111111; border-bottom: 2px solid #eee;\">\n      <th style=\"padding:12px; text-align:left; color:#000;\">時間</th>\n      <th style=\"padding:12px; text-align:left; color:#000;\">MAIN STAGE (トークセッション)</th>\n      <th style=\"padding:12px; text-align:left; color:#000;\">OTHER CONTENTS (ワークショップ)</th>\n    </tr>\n  </thead>\n  <tbody>\n    \n    <tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">10:00</td>\n      <td colspan=\"2\" style=\"padding:15px; border-bottom:1px solid #eee; background-color:#e8eeff; text-align:center;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">10:00 〜 10:10</div>\n        <strong>Opening</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">10:10 〜 10:40</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Guest Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社MIXI</div>\n        <strong>モンスト海外展開のリサーチ：「そのまま出さない」判断はどう生まれたか</strong>\n      </td>\n      <td rowspan=\"2\" style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">10:40 〜 10:50</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Sponsor Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Muture</div>\n        <strong>組織にリサーチを根付かせる、技術よりも大切な「土着」の視点</strong>\n      </td>\n    </tr>\n    \n<tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">11:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">11:00 〜 11:20</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Open Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">川口 いりえ</div> \n        <strong>よそ者の役得ー異文化で学んだ、当たり前を疑う視点の持ち方</strong>\n      </td>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">11:00 - 11:45</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Workshop</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">アサヒグループジャパン株式会社</div>\n        <strong>連想リサーチから再定義するタッチポイント設計とカテゴリーデザインワークショップ</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">11:20 〜 12:00</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Panel Discussion</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">GMOメディア株式会社/ 株式会社Anthronomos </div>\n        <strong>組織のリサーチ</strong>\n      </td>\n    </tr>\n    <tr>\n      <td style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">12:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">12:00 〜 13:00</div>\n        <strong>Lunch Break 🍴 (60min)</strong><br>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Sponsor Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社プロダクトフォース</div>\n        <strong>「100人のインタビューを1日で」。AIインタビュー開始1ヶ月で見えた、リサーチの民主化と人間の役割</strong>\n       <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Lupe </div>\n        <strong>Human Insight, AI Scale. ─ AIハイブリッドリサーチの実践</strong>\n       <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Sun Asterisk</div>\n        <strong>手を動かすリサーチ：AIには作れない、発見のつくり方</strong>\n       <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社インフォバーン</div>\n        <strong>「ノイズ」を捉え、拡張する。 AIを挑発するためのリサーチの模索</strong>\n       <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社メンバーズ ポップインサイトカンパニー</div>\n        <strong>調査報告書だけでは響かない…リサーチャーが他業種・他職種とひとつのプロダクトを織る技術</strong>\n      </td>\n      <td style=\"border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">13:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">13:00 〜 13:30</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Guest Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社KESIKI / 東海旅客鉄道株式会社</div>\n        <strong>「 LOCAL RESEARCH LAB 中津川」の立ち上げと産学官横断での街のアクティベーション</strong>\n      </td>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">13:00 - 13:45</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Workshop</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Muture</div>\n        <strong>いまこそ伸ばせ！「AIじゃないスキル」：成功も失敗も肥やしにするパターン・ランゲージWS</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">13:30 〜 13:40</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Sponsor Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">toitta</div>\n        <strong>State of \"Research meets AI\" 2026</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">13:50 〜 14:10</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Open Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">公益財団法人社会変革推進財団 / 株式会社エクスライト / アトリエ・アンソロポロジー合同会社</div> \n        <strong>インパクト投資の成果を「パラ・エスノグラフィ」で測る　ー投資家・当事者・編集者・研究者が織る評価ー</strong>\n      </td>\n      <td style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">14:00</td>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">14:00 - 14:45</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Workshop</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">toitta</div>\n        <strong>AI時代のリサーチャーの仕事は？toittaとclaudeで「問いを立て、チームに声を届ける」に挑む</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">14:20 〜 15:00</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Panel Discussion</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">PLAYWORKS株式会社 / 富士通株式会社 / CULUMU</div> \n        <strong>多様性を織るリサーチ</strong><br>\n        <div style=\"font-size:0.8rem; color:#666; margin-top:4px;\">\n   ※音声認識字幕による情報保障あり</div>\n      </td>\n    </tr>\n    <tr>\n      <td style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">15:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">15:30 〜 15:50</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Open Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">LINEヤフー株式会社</div>\n        <strong>日本の​常識を​現地で​織り直す。​​台湾の日本アニメファンが​4社連合チームの​戦略を​変えた​話</strong>\n      </td>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">15:00 - 15:45</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Workshop</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">合同会社DMM .com</div>\n        <strong>Vibe UX Research Lab — AIと\"やり切る\"共創リサーチ</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">15:50 〜 16:20</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Guest Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Awarefy</div>\n        <strong>繊細な事業ドメインで安全性と事業価値を両立するための実践〜心理士と開発したAIメンタルヘルスアプリ〜</strong>\n      </td>\n    </tr>\n    <tr>\n      <td style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">16:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">16:30 〜 16:50</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Panel Discussion</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">一般社団法人リサーチアソシエーション</div>\n        <strong>リサーチカンファレンスが織ってきたもの</strong>\n      </td>\n      <td rowspan=\"2\" style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td colspan=\"2\" style=\"padding:15px; border-bottom:1px solid #eee; background-color:#e8eeff; text-align:center;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">16:50 〜 17:00</div>\n        <strong>Closing</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">17:00</td>\n      <td colspan=\"2\" style=\"padding:15px; border-bottom:1px solid #eee; background-color:#e8eeff; text-align:center;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">17:10 〜 18:00</div>\n        <strong>Networking 現地会場にて懇親会を開催します<br>（現地参加のみ・どなたでもご参加いただけます）</strong>\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">主催</h2><p></p>\n<p>一般社団法人リサーチアソシエーション</p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">スポンサー募集</h2><p></p>\n<p>ご関心のある企業・団体の皆様は、ぜひお早めにご検討ください。<br>\n<a href=\"https://docs.google.com/document/d/1O4mofmI7LEkNZ0Ke9V5ZOc2pym33iQtjzZfhXBxY3EE/edit?tab=t.0#heading=h.hqlsguuc21o9\" rel=\"nofollow\">スポンサープラン一覧・詳細</a></p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">注意事項</h2><p></p>\n<p>・ワークショップはお一人1枠につき1枠までのお申し込みとなります。ご了承ください。<br>\n・アーカイブ動画もご用意予定ですが、一部コンテンツはアーカイブに残らない場合がございます。ご了承ください。<br>\n・本人確認のため、必ず名刺2枚をご持参ください。名刺をお持ちでない場合はお手数ですが写真付身分証明書（運転免許証、マイナンバーカード、パスポート、学生証等）をご持参ください。<br>\n・持ち込まれた貴重品の破損・紛失等には責任を負いかねます。各自管理をお願いします。<br>\n・お子様をお連れになる場合は目を離さないように十分注意お願いします。<br>\n・忘れ物がないようご注意お願いします。<br>\n・全ての参加者は<a href=\"https://docs.google.com/document/d/1sVUr-pmGmKDyNBj7IJxev1j6xF7efeJ8/edit?usp=sharing\" rel=\"nofollow\">行動規範</a>に同意していただく必要があります。ご理解ご協力をお願いいたします。<br>\n ・<a href=\"https://docs.google.com/document/d/1U4w9XKqVoujcPvgHjRq0rfvdS-B3Bg0k/edit?usp=sharing\" rel=\"nofollow\">プライバシーポリシー</a>をご確認の上お申し込みください。<br>\n ・託児補助(現地参加のみ)をご希望の方は<a href=\"https://docs.google.com/document/d/1EmppMP141DQ1S1bpcHx_bFRkNQmPWiaSfNwHA6MWnv4/edit?tab=t.0\" rel=\"nofollow\">託児補助概要</a>をご確認の上、お申し込みください。</p>",
-      "url": "https://research-conf.connpass.com/event/391190/",
-      "image_url": "https://media.connpass.com/thumbs/89/66/89664de27f05a1e28f4e15885753ba03.png",
-      "hash_tag": "ResearchConf",
-      "started_at": "2026-06-28T10:00:00+09:00",
-      "ended_at": "2026-06-28T17:00:00+09:00",
-      "published_at": "2026-05-18T10:01:22+09:00",
-      "limit": 1420,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 12425,
-        "subdomain": "research-conf",
-        "title": "RESEARCH Conference",
-        "url": "https://research-conf.connpass.com/"
-      },
-      "address": "東京都港区六本木三丁目2番1号 住友不動産六本木グランドタワー 24階",
-      "place": "合同会社DMM .com",
-      "lat": "35.664586900000",
-      "lon": "139.737777600000",
-      "owner_id": 593073,
-      "owner_nickname": "kayoccoli",
-      "owner_display_name": "kayoccoli",
-      "accepted": 1057,
-      "waiting": 28,
-      "updated_at": "2026-06-27T02:24:19+09:00"
     },
     {
       "id": 394157,
@@ -409,7 +378,7 @@
       "published_at": "2026-06-15T10:45:37+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 6408,
         "subdomain": "geekfeed",
@@ -428,6 +397,37 @@
       "updated_at": "2026-06-15T10:45:37+09:00"
     },
     {
+      "id": 391190,
+      "title": "RESEARCH Conference 2026",
+      "catch": "",
+      "description": "<p></p><h1 style=\"font-size: 2rem;\n            font-weight: 700;\n            padding: 0.5em 0.8em;\n            background-color: #2045a6;\n            color: white;\n            text-align: center;\">RESEARCH Conference 2026\n</h1>\n<p></p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">イベント概要\n</h2><p></p>\n<p>RESEARCH Conferenceは、リサーチをテーマとした日本発のカンファレンスです。より良いサービスづくりの土壌を育むために、デザインリサーチやUXリサーチ、UXデザインの実践知を共有し、リサーチの価値や可能性を広く伝えることを目的としています。<br>\n2026年のテーマは「WEAVING」です。<br>\n<br>\n 年々リサーチに求められることは多様で高度になり、もはや一つの専門性や視点だけでは抱えきれなくなっています。そんな中、私たちはこれからどのように新たな価値を生み出していけるのでしょうか。このような状況において、異なる特徴をもつ人や役割を「織る」ことに可能性があると考え、テーマを定めました。<br>\n<br>\n例年のセッションだけでなく、パネルディスカッション、ワークショップを新たに加えることで、さまざまな要素が織り交ざる場を目指しています。本カンファレンスを通じて対話が生まれ、自分なりの織り方を見いだせるきっかけになることを期待しています。<br></p>\n<p><a href=\"https://researchconf.jp/\" rel=\"nofollow\">https://researchconf.jp/</a></p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">開催日時\n</h2><p></p>\n<p>2026年6月28日（日）10:00–17:00（終了後、<strong>17:10〜18:00懇親会</strong>を予定）<br>\n※現地会場：9:30受付開始、16:30受付終了を予定<br>\n※オンライン：16:30受付終了、17:00配信終了<br></p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">会場\n</h2><p></p>\n<p>①〜⑤現地参加枠、ワークショップ参加枠<br>\n合同会社DMM .com<br>\n住所：東京都港区六本木三丁目2番1号 住友不動産六本木グランドタワー 24階<br>\nアクセス：南北線「六本木一丁目駅」直結、日比谷線・大江戸線「六本木駅」徒歩5分<br><br>\n⑥オンライン参加枠<br>\nYouTube Live + Miroでの開催<br>\n※各種URLは前日までに本connpassページに掲載の上、お申し込みいただいたメールアドレス宛にご共有いたします。<br></p>\n<hr>\n<p><strong>情報保障、その他の合理的配慮について</strong><br></p>\n<p>より多くの方に参加いただける場を目指しています。<br>\n一部のセッションでは、音声認識字幕による情報保障を行います。 対象セッションの詳細については、参加申し込みが完了した方へご案内いたします。<br>\nまた、会場でのご案内（視覚障害のある方の誘導、車いす席のご利用等）を含め、その他の合理的配慮についてご希望がある場合は、事前にご相談ください。<br>\nなお、参加にあたりご不安や配慮のご要望がある場合は、可能な範囲で対応を検討いたします。<br><br>\n詳細は、<a href=\"https://research-conf.connpass.com/event/391190/inquiry/\" rel=\"nofollow\">イベント管理者への問い合わせ</a>よりご連絡ください。</p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">参加費用</h2><p></p>\n<p>無料</p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">参加申し込み方法</h2><p></p>\n<ul>\n<li>connpassよりお申し込みをお願いします。</li>\n<li>事情により参加できなくなった方はキャンセルをお願い致します。<br></li>\n<li>現地ワークショップ枠補欠の方へ（対象者限定）<br> \nワークショップ付きの枠（②〜⑤）で「補欠」となった場合、補欠のまま「①現地参加枠」や「⑥オンライン参加枠」へ変更（申し込み）することができません。<br>\n「ワークショップが補欠なら、通常の現地参加に切り替えたい」という場合は、大変お手数ですが一度現在のワークショップ枠の申し込みをキャンセルした上で、改めて空いている枠へお申し込みください。<br></li>\n</ul>\n<p></p><h2 style=\"font-size: 1.4rem;\n    margin-left: unset;\n    font-weight: 600;\n    border-bottom: unset;\n    color: #2045a6;\n    padding: 0.5em;\n    background-color: #e8eeff;\n    border-left: solid 5px #2045a6;\">タイムテーブル</h2>\n<p></p>\n<table style=\"font-size: 0.95rem; color: #333;\">\n  <thead>\n    <tr style=\"background-color: #2045A6; color: #111111; border-bottom: 2px solid #eee;\">\n      <th style=\"padding:12px; text-align:left; color:#000;\">時間</th>\n      <th style=\"padding:12px; text-align:left; color:#000;\">MAIN STAGE (トークセッション)</th>\n      <th style=\"padding:12px; text-align:left; color:#000;\">OTHER CONTENTS (ワークショップ)</th>\n    </tr>\n  </thead>\n  <tbody>\n    \n    <tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">10:00</td>\n      <td colspan=\"2\" style=\"padding:15px; border-bottom:1px solid #eee; background-color:#e8eeff; text-align:center;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">10:00 〜 10:10</div>\n        <strong>Opening</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">10:10 〜 10:40</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Guest Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社MIXI</div>\n        <strong>モンスト海外展開のリサーチ：「そのまま出さない」判断はどう生まれたか</strong>\n      </td>\n      <td rowspan=\"2\" style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">10:40 〜 10:50</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Sponsor Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Muture</div>\n        <strong>組織にリサーチを根付かせる、技術よりも大切な「土着」の視点</strong>\n      </td>\n    </tr>\n    \n<tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">11:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">11:00 〜 11:20</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Open Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">川口 いりえ</div> \n        <strong>よそ者の役得ー異文化で学んだ、当たり前を疑う視点の持ち方</strong>\n      </td>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">11:00 - 11:45</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Workshop</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">アサヒグループジャパン株式会社</div>\n        <strong>連想リサーチから再定義するタッチポイント設計とカテゴリーデザインワークショップ</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">11:20 〜 12:00</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Panel Discussion</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">GMOメディア株式会社/ 株式会社Anthronomos </div>\n        <strong>組織のリサーチ</strong>\n      </td>\n    </tr>\n    <tr>\n      <td style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">12:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">12:00 〜 13:00</div>\n        <strong>Lunch Break 🍴 (60min)</strong><br>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Sponsor Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社プロダクトフォース</div>\n        <strong>「100人のインタビューを1日で」。AIインタビュー開始1ヶ月で見えた、リサーチの民主化と人間の役割</strong>\n       <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Lupe </div>\n        <strong>Human Insight, AI Scale. ─ AIハイブリッドリサーチの実践</strong>\n       <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Sun Asterisk</div>\n        <strong>手を動かすリサーチ：AIには作れない、発見のつくり方</strong>\n       <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社インフォバーン</div>\n        <strong>「ノイズ」を捉え、拡張する。 AIを挑発するためのリサーチの模索</strong>\n       <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社メンバーズ ポップインサイトカンパニー</div>\n        <strong>調査報告書だけでは響かない…リサーチャーが他業種・他職種とひとつのプロダクトを織る技術</strong>\n      </td>\n      <td style=\"border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">13:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">13:00 〜 13:30</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Guest Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社KESIKI / 東海旅客鉄道株式会社</div>\n        <strong>「 LOCAL RESEARCH LAB 中津川」の立ち上げと産学官横断での街のアクティベーション</strong>\n      </td>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">13:00 - 13:45</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Workshop</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Muture</div>\n        <strong>いまこそ伸ばせ！「AIじゃないスキル」：成功も失敗も肥やしにするパターン・ランゲージWS</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">13:30 〜 13:40</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Sponsor Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">toitta</div>\n        <strong>State of \"Research meets AI\" 2026</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">13:50 〜 14:10</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Open Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">公益財団法人社会変革推進財団 / 株式会社エクスライト / アトリエ・アンソロポロジー合同会社</div> \n        <strong>インパクト投資の成果を「パラ・エスノグラフィ」で測る　ー投資家・当事者・編集者・研究者が織る評価ー</strong>\n      </td>\n      <td style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">14:00</td>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">14:00 - 14:45</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Workshop</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">toitta</div>\n        <strong>AI時代のリサーチャーの仕事は？toittaとclaudeで「問いを立て、チームに声を届ける」に挑む</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">14:20 〜 15:00</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Panel Discussion</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">PLAYWORKS株式会社 / 富士通株式会社 / CULUMU</div> \n        <strong>多様性を織るリサーチ</strong><br>\n        <div style=\"font-size:0.8rem; color:#666; margin-top:4px;\">\n   ※音声認識字幕による情報保障あり</div>\n      </td>\n    </tr>\n    <tr>\n      <td style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"3\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">15:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">15:30 〜 15:50</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Open Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">LINEヤフー株式会社</div>\n        <strong>日本の​常識を​現地で​織り直す。​​台湾の日本アニメファンが​4社連合チームの​戦略を​変えた​話</strong>\n      </td>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">15:00 - 15:45</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Workshop</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">合同会社DMM .com</div>\n        <strong>Vibe UX Research Lab — AIと\"やり切る\"共創リサーチ</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">15:50 〜 16:20</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Guest Session</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">株式会社Awarefy</div>\n        <strong>繊細な事業ドメインで安全性と事業価値を両立するための実践〜心理士と開発したAIメンタルヘルスアプリ〜</strong>\n      </td>\n    </tr>\n    <tr>\n      <td style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td rowspan=\"2\" style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">16:00</td>\n      <td style=\"padding:10px; border-bottom:1px solid #eee;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">16:30 〜 16:50</div>\n        <span style=\"color:#2045a6; font-size:0.8rem;\">Panel Discussion</span><br>\n        <div style=\"font-size:0.85rem; color:#666; margin-top:4px;\">一般社団法人リサーチアソシエーション</div>\n        <strong>リサーチカンファレンスが織ってきたもの</strong>\n      </td>\n      <td rowspan=\"2\" style=\"background-color:#fafafa; border-bottom:1px solid #eee;\"></td>\n    </tr>\n    \n    <tr>\n      <td colspan=\"2\" style=\"padding:15px; border-bottom:1px solid #eee; background-color:#e8eeff; text-align:center;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">16:50 〜 17:00</div>\n        <strong>Closing</strong>\n      </td>\n    </tr>\n    \n    <tr>\n      <td style=\"padding:10px; border-bottom:1px solid #eee; font-weight:bold; background-color:#f8f9ff;\">17:00</td>\n      <td colspan=\"2\" style=\"padding:15px; border-bottom:1px solid #eee; background-color:#e8eeff; text-align:center;\">\n        <div style=\"color:#2045a6; font-size:0.75rem; margin-bottom:4px;\">17:10 〜 18:00</div>\n        <strong>Networking 現地会場にて懇親会を開催します<br>（現地参加のみ・どなたでもご参加いただけます）</strong>\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">主催</h2><p></p>\n<p>一般社団法人リサーチアソシエーション</p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">スポンサー募集</h2><p></p>\n<p>ご関心のある企業・団体の皆様は、ぜひお早めにご検討ください。<br>\n<a href=\"https://docs.google.com/document/d/1O4mofmI7LEkNZ0Ke9V5ZOc2pym33iQtjzZfhXBxY3EE/edit?tab=t.0#heading=h.hqlsguuc21o9\" rel=\"nofollow\">スポンサープラン一覧・詳細</a></p>\n<p></p><h2 style=\"font-size: 1.4rem;\n            margin-left: unset;\n            font-weight: 600;\n            border-bottom: unset;\n            color: #2045a6;\n            padding: 0.5em;\n            background-color: #e8eeff;\n            border-left: solid 5px #2045a6;\">注意事項</h2><p></p>\n<p>・ワークショップはお一人1枠につき1枠までのお申し込みとなります。ご了承ください。<br>\n・アーカイブ動画もご用意予定ですが、一部コンテンツはアーカイブに残らない場合がございます。ご了承ください。<br>\n・本人確認のため、必ず名刺2枚をご持参ください。名刺をお持ちでない場合はお手数ですが写真付身分証明書（運転免許証、マイナンバーカード、パスポート、学生証等）をご持参ください。<br>\n・持ち込まれた貴重品の破損・紛失等には責任を負いかねます。各自管理をお願いします。<br>\n・お子様をお連れになる場合は目を離さないように十分注意お願いします。<br>\n・忘れ物がないようご注意お願いします。<br>\n・全ての参加者は<a href=\"https://docs.google.com/document/d/1sVUr-pmGmKDyNBj7IJxev1j6xF7efeJ8/edit?usp=sharing\" rel=\"nofollow\">行動規範</a>に同意していただく必要があります。ご理解ご協力をお願いいたします。<br>\n ・<a href=\"https://docs.google.com/document/d/1U4w9XKqVoujcPvgHjRq0rfvdS-B3Bg0k/edit?usp=sharing\" rel=\"nofollow\">プライバシーポリシー</a>をご確認の上お申し込みください。<br>\n ・託児補助(現地参加のみ)をご希望の方は<a href=\"https://docs.google.com/document/d/1EmppMP141DQ1S1bpcHx_bFRkNQmPWiaSfNwHA6MWnv4/edit?tab=t.0\" rel=\"nofollow\">託児補助概要</a>をご確認の上、お申し込みください。</p>",
+      "url": "https://research-conf.connpass.com/event/391190/",
+      "image_url": "https://media.connpass.com/thumbs/89/66/89664de27f05a1e28f4e15885753ba03.png",
+      "hash_tag": "ResearchConf",
+      "started_at": "2026-06-28T10:00:00+09:00",
+      "ended_at": "2026-06-28T17:00:00+09:00",
+      "published_at": "2026-05-18T10:01:22+09:00",
+      "limit": 1420,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 12425,
+        "subdomain": "research-conf",
+        "title": "RESEARCH Conference",
+        "url": "https://research-conf.connpass.com/"
+      },
+      "address": "東京都港区六本木三丁目2番1号 住友不動産六本木グランドタワー 24階",
+      "place": "合同会社DMM .com",
+      "lat": "35.664586900000",
+      "lon": "139.737777600000",
+      "owner_id": 593073,
+      "owner_nickname": "kayoccoli",
+      "owner_display_name": "kayoccoli",
+      "accepted": 1094,
+      "waiting": 8,
+      "updated_at": "2026-06-28T10:34:06+09:00"
+    },
+    {
       "id": 398083,
       "title": "第38回 目黒 (下目黒いこいの家) プログラミング・IT・AI・ゲーム開発関連 黙々もくもく会",
       "catch": "",
@@ -440,7 +440,7 @@
       "published_at": "2026-06-21T11:34:17+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13254,
         "subdomain": "mokumokumokumoku",
@@ -490,68 +490,6 @@
       "updated_at": "2026-06-27T09:01:44+09:00"
     },
     {
-      "id": 394887,
-      "title": "藤沢もくもく会 vol.2",
-      "catch": "雑談も適度にしつつなもくもく会です",
-      "description": "<h2>概要</h2>\n<p>藤沢駅南口から徒歩2分のレンタルスペースでもくもく会を開催します。<br>\n<br>\nまだ2度目なのでお試しで無料開催にします。（今後は少し頂くことになると思います）<br>\n<br>\n作業内容は開発でも勉強でも何でも構いません。（僕はたぶんWebデザインをやります）<br>\n<br>\n途中参加・途中退出はご自由に。<br>\n<br>\n希望者がいたらイベント後に飲みに行ってもいいかなぁと思っています。<br></p>\n<p><br></p><h2>注意事項</h2><p></p>\n<p>・他の参加者さんの迷惑になるようなことはおやめください<br></p>\n<p><br></p><h2>スケジュール</h2><p></p>\n<p><br></p><table>\n<tbody><tr><td>13:00～13:15</td><td></td><td>軽い自己紹介・今日やることの発表</td><td></td></tr><tr>\n</tr><tr><td>13:15～17:15</td><td></td><td>もくもく作業</td><td></td></tr><tr>\n</tr><tr><td>17:15～17:30</td><td></td><td>成果発表</td><td></td></tr><tr>\n</tr><tr><td>17:30～18:00</td><td></td><td>ゆるく雑談</td><td></td></tr><tr>\n</tr>\n\n</tbody></table>",
-      "url": "https://fujisawa-mokumoku.connpass.com/event/394887/",
-      "image_url": "https://media.connpass.com/thumbs/9b/27/9b277e582f43cb99dd6977bd15afaa28.png",
-      "hash_tag": "もくもく会",
-      "started_at": "2026-06-28T13:00:00+09:00",
-      "ended_at": "2026-06-28T18:00:00+09:00",
-      "published_at": "2026-05-09T13:00:00+09:00",
-      "limit": 6,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17576,
-        "subdomain": "fujisawa-mokumoku",
-        "title": "藤沢もくもく会",
-        "url": "https://fujisawa-mokumoku.connpass.com/"
-      },
-      "address": "神奈川県 藤沢市 南藤沢 ３−５ 山の手ビル ３０１号室",
-      "place": "GS会議室藤沢駅南口店・ブルー",
-      "lat": "35.337993100000",
-      "lon": "139.489061800000",
-      "owner_id": 294683,
-      "owner_nickname": "growing_shin",
-      "owner_display_name": "やのしん",
-      "accepted": 6,
-      "waiting": 0,
-      "updated_at": "2026-06-22T10:40:22+09:00"
-    },
-    {
-      "id": 395914,
-      "title": "第66回 CoderDojo厚木",
-      "catch": "CoderDojoは、誰でも無料で参加できる子どもたちがプログラミングを学ぶ場を提供する活動です。",
-      "description": "<h2><strong>CoderDojo厚木</strong></h2>\n<h3><strong>参加資格</strong></h3>\n<ul>\n<li>対象者 : 小学生、中学生（保護者の付き添い必須。未就学児の参加も保護者判断でOKです。）、17才まで</li>\n<li>参加費用： 無料</li>\n<li>定員 : 6組まで\n <br>    ※ プログラミングを始めてみようという方、PCがなくても大丈夫</li>\n</ul>\n<p>ロボット トイやアナログなゲームで対戦して技術に触れて交流するだけでもＯｋです。\nそして、相談できる仲間もいます。</p>\n<h5><em>活動内容：</em>　<a href=\"https://sites.google.com/view/coderdojo-atsugi/\" rel=\"nofollow\">厚木Dojo ホームページ</a></h5>\n<ul>\n<li>未経験者：プログラミングの考え方をアナログなゲームやtoioで学ぶ</li>\n<li>初心者：プログラムを作る環境(Scratch, micro:bit, python など)、作り方を学ぶ</li>\n<li>\n<p>その他：メンターやNinjaと交流して腕磨き</p>\n<p>などなど、参加者のみんなで楽しく学ぶ！ それぞれで作った作品、やったことを発表し合います。未完成でもOk！</p>\n</li>\n</ul>\n<h3><strong>持参するもの</strong></h3>\n<ul>\n<li>WiFi接続可能なノートパソコン or タブレット\n<br><b> (ロボット トイで技術に触れる、アナログなゲームでプログラムを学ぶ、手ぶらでもOkです！)</b></li>\n<li>プロジェクタに接続するためのアダプタ（必須ではありませんが、接続できない可能性もあり持参いただけると助かります。）</li>\n</ul>\n<p><strong>※：WiFiは、施設で借用するWiFiを使用します。接続時、保護者のサポートをお願いします。</strong></p>\n<h3><strong>開催日時・場所</strong></h3>\n<ul>\n<li>日時： 2026/6/28(日)  10:30-12:30　(10:15 受付開始)</li>\n<li>場所： アミューあつぎ　 　6階 会議室 604</li>\n</ul>\n<h3><strong>タイムテーブル</strong></h3>\n<ul>\n<li>10:30 道場スタート (スタート前に会場のWiFiに接続をお願いします。）</li>\n<li>12:30 道場おわり、解散</li>\n</ul>\n<p>(施設の利用時間が、13:00までのため、5分前までに退出する必要があります。ご協力をお願いします。）</p>\n<h3><strong>はじめに</strong></h3>\n<p>CoderDojoは子ども達自身が自発的にプログラミングに挑戦し楽しむ場です。特にカリキュラムはありません。各自が課題を持って取組んでもらいます。</p>\n<p>下記は参考情報です。</p>\n<ol>\n<li>\n<p>CoderDojo:  <a href=\"https://projects.raspberrypi.org/ja-JP/coderdojo\" rel=\"nofollow\">https://projects.raspberrypi.org/ja-JP/coderdojo</a></p>\n</li>\n<li>\n<p>プログラム初心者の教材（参考）</p>\n<p>Hour Of Code: <a href=\"https://hourofcode.com/jp\" rel=\"nofollow\">https://hourofcode.com/jp</a></p>\n<p>マインクラフト <a href=\"https://code.org/mc\" rel=\"nofollow\">https://code.org/mc</a></p>\n<p>アナとエルザ <a href=\"http://code.org/api/hour/begin/frozen\" rel=\"nofollow\">http://code.org/api/hour/begin/frozen</a>　</p>\n<p>フラッピーコード <a href=\"http://studio.code.org/s/flappy/reset\" rel=\"nofollow\">http://studio.code.org/s/flappy/reset</a></p>\n</li>\n<li>\n<p>Scratch の準備：<a href=\"https://scratch.mit.edu/\" rel=\"nofollow\">https://scratch.mit.edu/</a></p>\n<p>予め「アカウント作成」しておくことをお勧めします。</p>\n<p>厚木Dojoスタジオ：<a href=\"https://scratch.mit.edu/studios/5221423\" rel=\"nofollow\">https://scratch.mit.edu/studios/5221423</a></p>\n</li>\n<li>\n<p>CoderDojo Kata の資料: <a href=\"https://coderdojo.jp/kata\" rel=\"nofollow\">https://coderdojo.jp/kata</a></p>\n<p>課題を探すための参考になる教材があります。またDojoの活動の様子も分かると思います。</p>\n</li>\n<li>\n<p>プログラミング学習環境の利用</p>\n<ul>\n<li>\n<p>株式会社 Progateより CoderDojoに提供される学習コンテンツを利用させていただきます。使用を希望される場合は、チャンピオンにご相談ください。\n<a href=\"http://news.coderdojo.jp/2018/10/29/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%AD%A6%E7%BF%92%E3%81%AEprogate%E3%80%81%E5%85%A8%E5%9B%BD%E3%81%AEcoderdojo%E3%81%B8%E6%B3%95%E4%BA%BA%E3%83%97%E3%83%A9%E3%83%B3/\" rel=\"nofollow\">プレスリリース</a></p>\n</li>\n<li>\n<p>株式会社 DIVE INTO CODE より CoderDojoに提供される学習コンテンツを利用させていただきます。使用を希望される場合は、チャンピオンにご相談ください。<a href=\"https://news.coderdojo.jp/2021/12/27/diver-learnings-for-coderdojo/\" rel=\"nofollow\">プレスリリース</a></p>\n</li>\n</ul>\n</li>\n<li>\n<p>教育版 Minecraft 利用可能 → 利用においては要相談です。　</p>\n</li>\n<li>\n<p>ロボットトイ toio  </p>\n<p>株式会社 ソニー・インタラクティブエンタテインメントからロボットトイ toio を提供いだきました。厚木Dojoで利用させていただきます。<a href=\"https://news.coderdojo.jp/2022/03/17/toio-sony-interactive-entertainment/\" rel=\"nofollow\">プレスリリース</a></p>\n</li>\n<li>\n<p>Nyaice! CODE:<a href=\"https://www.nyaicecode.net/\" rel=\"nofollow\">https://www.nyaicecode.net/</a></p>\n<p>プログラミング的体験ができるアナログなゲームです。株式会社 RPGworks 代表の常田さんから寄贈いただきました。<a href=\"https://news.coderdojo.jp/2025/02/14/coderdojo-de-nyaicecode/\" rel=\"nofollow\">プレスリリース</a></p>\n</li>\n</ol>\n<h3>** Scratch 以外にもいろいろ挑戦してます**</h3>\n<ul>\n<li>\n<p>Raspberry Pi ：<a href=\"https://www.raspberrypi.com\" rel=\"nofollow\">https://www.raspberrypi.com</a></p>\n<p>使えるようにしたが、その先何をやるかです。\n <a href=\"https://fukuno.jig.jp/app/IchigoJam/\" rel=\"nofollow\">IchigoJam</a> もその一つ</p>\n<p>（※ IchigoJamは、上記リンクからWeb上でBASICプログラムの作成・実行が可能です。）</p>\n</li>\n<li>\n<p>Python -  機械学習学んでみて、ネットワーク プログラミングも試してみたい</p>\n</li>\n<li>\n<p>micro:bit　-  複数台での通信を試してみました。次は何か動くものを作ってみたい。Scratchと連携できます。</p>\n</li>\n<li>\n<p>Viscuit - 使うのは簡単。（あたらしいバージョンになり、だいぶん様子が変わりました）</p>\n</li>\n<li>\n<p>tinkercad :<a href=\"https://www.tinkercad.com/\" rel=\"nofollow\">https://www.tinkercad.com/</a></p>\n<p>3D cad, 電子回路の作成シミュレーションができます。</p>\n</li>\n</ul>\n<h3><strong>注意事項</strong></h3>\n<ul>\n<li>中学生までは、保護者の方がイベント会場への送迎および、イベント中に付き添えることが参加条件となります。</li>\n<li>パソコンなど機器の基本的な操作、およびFree WiFiへの接続は保護者の方でサポートをお願いします。</li>\n<li>問合せは、イベントへのお問い合わせより電子メールにてお願いします。</li>\n</ul>\n<h3><strong>撮影について</strong></h3>\n<p>会場内では写真を撮影します。Facebookなど、インターネットで公開する場合があります。あらかじめご了承ください。</p>",
-      "url": "https://coderdojo-atsugi.connpass.com/event/395914/",
-      "image_url": "https://media.connpass.com/thumbs/4d/c0/4dc03d99370c80b8a4b07781493d0d0c.png",
-      "hash_tag": "CoderDojo",
-      "started_at": "2026-06-28T10:30:00+09:00",
-      "ended_at": "2026-06-28T12:30:00+09:00",
-      "published_at": "2026-06-02T04:47:42+09:00",
-      "limit": 8,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 5371,
-        "subdomain": "coderdojo-atsugi",
-        "title": "CoderDojo厚木",
-        "url": "https://coderdojo-atsugi.connpass.com/"
-      },
-      "address": "神奈川県厚木市中町2丁目12-15",
-      "place": "アミューあつぎ 6F",
-      "lat": "35.442445300000",
-      "lon": "139.365635300000",
-      "owner_id": 196908,
-      "owner_nickname": "YImazu",
-      "owner_display_name": "YImazu",
-      "accepted": 1,
-      "waiting": 0,
-      "updated_at": "2026-06-02T04:47:42+09:00"
-    },
-    {
       "id": 397957,
       "title": "川越インディーゲーム + イラスト・まんが もくもく会　第28回",
       "catch": "第28回",
@@ -564,7 +502,7 @@
       "published_at": "2026-06-19T18:35:34+09:00",
       "limit": 22,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14498,
         "subdomain": "kawagoemokumoku",
