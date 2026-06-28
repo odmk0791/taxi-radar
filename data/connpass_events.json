@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-29T05:53:43.330617+09:00",
+  "fetched_at": "2026-06-29T06:56:33.674149+09:00",
   "date": "20260629",
   "count": 11,
   "events": [
@@ -159,37 +159,6 @@
       "updated_at": "2026-06-18T20:46:15+09:00"
     },
     {
-      "id": 395482,
-      "title": "AI時代のEdTech開発最前線",
-      "catch": "〜教育プロダクトを支えるエンジニアリングのリアル〜",
-      "description": "<h1>📋 概要</h1>\n<p>教育・学び領域でプロダクトを育てている3社のCTO/VPoEが、AI時代のEdTech開発の最前線を語るオフラインイベントです。</p>\n<p>生成AIが当たり前になりつつある今、教育現場では何が起きているのか。法制度・現場の慣習・リテラシーの壁と向き合いながら、どうプロダクトを磨いているのか。AIは学びを助けるのか、それとも考える力を削ぐのか——現場で向き合っている3名のリアルな声を、ショートセッション＋パネルディスカッションでお届けします。</p>\n<p>教育領域のエンジニアリングに少しでも関心があるエンジニア・PdMの方に、ぜひご参加いただきたいイベントです。</p>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション</th>\n<th style=\"text-align: left;\">企業</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場・受付 / ドリンク提供 / ネットワーキング</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング（主催挨拶・趣旨説明・タイムテーブル案内）</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">セッション①: 紙の求人票からAIエージェントへ —— ハンディ進路指導室が支える、高校生の進路選択</td>\n<td style=\"text-align: left;\">ハンディ株式会社</td>\n<td style=\"text-align: left;\">田中 郁</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20</td>\n<td style=\"text-align: left;\">セッション②: 「答えを出す」より「わかる」をつくる — atama plusにおける教育×AIの向き合い方</td>\n<td style=\"text-align: left;\">atama plus株式会社</td>\n<td style=\"text-align: left;\">前田 和樹</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">セッション③: AI時代に社会人が学び続ける意義とAIプロダクトを通した挑戦</td>\n<td style=\"text-align: left;\">株式会社グロービス</td>\n<td style=\"text-align: left;\">末永 昌也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">登壇者3名+モデレーター</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">Q&amp;Aセッション</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35</td>\n<td style=\"text-align: left;\">懇親会・ネットワーキング（軽食＋ドリンク）</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<h3>👨‍💻 こんな方におすすめ</h3>\n<ul>\n<li>教育・学び領域に関心があり、現場のリアルを知りたいエンジニア・PdM</li>\n<li>自分の技術力が社会課題の解決に貢献している手触り感を求めているエンジニア</li>\n<li>AIの台頭をきっかけに、自身のキャリアの方向性を模索しているエンジニア</li>\n</ul>\n<h3>✅ イベントのゴール</h3>\n<ul>\n<li><strong>教育×エンジニアリングの伸びしろ</strong>：法制度の制約はあれど、日本の未来を担う人々の学びをつくる、伸びしろの大きな領域だと感じてもらう</li>\n<li><strong>教育現場×AIの実態</strong>：学校・社会人教育など、現場でAIがどこまで使われ、どこに課題があるのかをリアルに知ってもらう</li>\n<li><strong>プロダクトの手触り感</strong>：自分の技術力が社会課題の解決にどう繋がるのか、教育・学び領域のエンジニアリングにどんな面白さ・難しさがあるのかをイメージしてもらう</li>\n</ul>\n<hr>\n<h1>🎤 登壇者</h1>\n<h3>紙の求人票からAIエージェントへ —— ハンディ進路指導室が支える、高校生の進路選択</h3>\n<p><img src=\"https://i.gyazo.com/59297716019be833b9676c276b7602ad.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">田中 郁</span><br>\n<span style=\"font-size: 150%; color: black;\">ハンディ株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">最高技術責任者 兼 CTO</span><br></p>\n<p>博士号取得後、日系メーカーを経て2012年にリクルートに入社。Media Technology Labs で複数の新サービスのテックリードを務めた後、AI研究所の創立メンバとして日米の拠点をまたいだ深層学習の研究開発と事業装着に従事。ハンディ社CTOに就任後は文書解析技術の最新化や開発体制構築、複数プロダクトの技術統括を務める。犬が好き。プライベートではボストンテリアと暮らしています。</p>\n<hr>\n<h3>「答えを出す」より「わかる」をつくる — atama plusにおける教育×AIの向き合い方</h3>\n<p><img src=\"https://pub-85bb7d2e93a04cd9909c9a823a7915b5.r2.dev/k.maeda.png\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">前田 和樹</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/kzk_maeda\" rel=\"nofollow\">(@kzk_maeda)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">atama plus株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">VPoE</span><br></p>\n<p>リクルート、EdTechスタートアップを経て2022年にatama plus株式会社に入社。SRE、データエンジニア、EMを経て、現在はVPoEとして開発組織の統括や技術戦略に携わる。個人ではAWS Startup Community Core MemberおよびAWS Community BuilderとしてコミュニティやOSS活動を実施。</p>\n<hr>\n<h3>AI時代に社会人が学び続ける意義とAIプロダクトを通した挑戦</h3>\n<p><img src=\"https://i.gyazo.com/4f8aa5be37c849899368e4a7a75629f2.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">末永 昌也</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/sue738\" rel=\"nofollow\">(@sue738)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">株式会社グロービス</span><br>\n<span style=\"font-size: 150%; color: black;\">CTO</span><br></p>\n<p>東京工業大学大学院 情報理工学研究科修了。グロービス経営大学院 経営学修士課程修了。Startup Weekend世界大会入賞を機にEdTechサービスを手がける株式会社LOUPE（現ARROWS）を共同創業。CTOとしてプロダクトの新規立ち上げ、技術リードを行う。グロービスに入社後は「GLOBIS 学び放題」等の立ち上げに携わり、現在はグロービス・デジタル・プラットフォームにおける開発全般の統括を行う。</p>\n<hr>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>本イベントはオフライン開催です。オンライン配信はありません</li>\n<li>会場への入館方法は、参加確定後にconnpass経由でご案内します</li>\n<li>撮影・録音については、当日スタッフの案内に従ってください</li>\n<li>20時以降のご参加はお断りしております。</li>\n<li>性別・人種・年齢・技術選択等に関わりなく、誰もが気持ちよく参加できるようご協力ください</li>\n<li>エージェント・採用目的でのご参加はご遠慮ください</li>\n<li>イベント内容・スケジュールは予告なく変更となる場合があります</li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://i.gyazo.com/d6e26a77b900482b92fcc7a079b713c6.png\" width=\"300\"></p>\n<p><strong><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a></strong>（主催）</p>\n<p><img src=\"https://i.gyazo.com/1f0f7e9d70de0c11f88af1484f72fae3.png\" width=\"300\"></p>\n<p><strong><a href=\"https://handy.school/corporate\" rel=\"nofollow\">ハンディ株式会社</a></strong>（スポンサー）</p>\n<p>お問い合わせ：connpassイベントページのメッセージ機能よりご連絡ください</p>",
-      "url": "https://findy-tools.connpass.com/event/395482/",
-      "image_url": "https://media.connpass.com/thumbs/7b/14/7b14aa7851c427c21cbcb98b8e8f62d1.png",
-      "hash_tag": "Edtech_findy",
-      "started_at": "2026-06-29T19:00:00+09:00",
-      "ended_at": "2026-06-29T21:40:00+09:00",
-      "published_at": "2026-06-02T09:04:40+09:00",
-      "limit": 100,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 15543,
-        "subdomain": "findy-tools",
-        "title": "Findy Tools",
-        "url": "https://findy-tools.connpass.com/"
-      },
-      "address": "東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 5階",
-      "place": "ファインディ(株) 5Fイベントスペース",
-      "lat": "35.622377100000",
-      "lon": "139.727459400000",
-      "owner_id": 895415,
-      "owner_nickname": "okiwatarufindy",
-      "owner_display_name": "okiwatarufindy",
-      "accepted": 94,
-      "waiting": 0,
-      "updated_at": "2026-06-10T17:38:36+09:00"
-    },
-    {
       "id": 396370,
       "title": "現場のためのGoogle AI Stack Deep Dive",
       "catch": "〜Next & I/Oから考えるAI Agentの実装と運用〜",
@@ -338,6 +307,37 @@
       "accepted": 40,
       "waiting": 1,
       "updated_at": "2026-06-24T15:42:20+09:00"
+    },
+    {
+      "id": 395482,
+      "title": "AI時代のEdTech開発最前線",
+      "catch": "〜教育プロダクトを支えるエンジニアリングのリアル〜",
+      "description": "<h1>📋 概要</h1>\n<p>教育・学び領域でプロダクトを育てている3社のCTO/VPoEが、AI時代のEdTech開発の最前線を語るオフラインイベントです。</p>\n<p>生成AIが当たり前になりつつある今、教育現場では何が起きているのか。法制度・現場の慣習・リテラシーの壁と向き合いながら、どうプロダクトを磨いているのか。AIは学びを助けるのか、それとも考える力を削ぐのか——現場で向き合っている3名のリアルな声を、ショートセッション＋パネルディスカッションでお届けします。</p>\n<p>教育領域のエンジニアリングに少しでも関心があるエンジニア・PdMの方に、ぜひご参加いただきたいイベントです。</p>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション</th>\n<th style=\"text-align: left;\">企業</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場・受付 / ドリンク提供 / ネットワーキング</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング（主催挨拶・趣旨説明・タイムテーブル案内）</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">セッション①: 紙の求人票からAIエージェントへ —— ハンディ進路指導室が支える、高校生の進路選択</td>\n<td style=\"text-align: left;\">ハンディ株式会社</td>\n<td style=\"text-align: left;\">田中 郁</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20</td>\n<td style=\"text-align: left;\">セッション②: 「答えを出す」より「わかる」をつくる — atama plusにおける教育×AIの向き合い方</td>\n<td style=\"text-align: left;\">atama plus株式会社</td>\n<td style=\"text-align: left;\">前田 和樹</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">セッション③: AI時代に社会人が学び続ける意義とAIプロダクトを通した挑戦</td>\n<td style=\"text-align: left;\">株式会社グロービス</td>\n<td style=\"text-align: left;\">末永 昌也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">登壇者3名+モデレーター</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">Q&amp;Aセッション</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35</td>\n<td style=\"text-align: left;\">懇親会・ネットワーキング（軽食＋ドリンク）</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<h3>👨‍💻 こんな方におすすめ</h3>\n<ul>\n<li>教育・学び領域に関心があり、現場のリアルを知りたいエンジニア・PdM</li>\n<li>自分の技術力が社会課題の解決に貢献している手触り感を求めているエンジニア</li>\n<li>AIの台頭をきっかけに、自身のキャリアの方向性を模索しているエンジニア</li>\n</ul>\n<h3>✅ イベントのゴール</h3>\n<ul>\n<li><strong>教育×エンジニアリングの伸びしろ</strong>：法制度の制約はあれど、日本の未来を担う人々の学びをつくる、伸びしろの大きな領域だと感じてもらう</li>\n<li><strong>教育現場×AIの実態</strong>：学校・社会人教育など、現場でAIがどこまで使われ、どこに課題があるのかをリアルに知ってもらう</li>\n<li><strong>プロダクトの手触り感</strong>：自分の技術力が社会課題の解決にどう繋がるのか、教育・学び領域のエンジニアリングにどんな面白さ・難しさがあるのかをイメージしてもらう</li>\n</ul>\n<hr>\n<h1>🎤 登壇者</h1>\n<h3>紙の求人票からAIエージェントへ —— ハンディ進路指導室が支える、高校生の進路選択</h3>\n<p><img src=\"https://i.gyazo.com/59297716019be833b9676c276b7602ad.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">田中 郁</span><br>\n<span style=\"font-size: 150%; color: black;\">ハンディ株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">最高技術責任者 兼 CTO</span><br></p>\n<p>博士号取得後、日系メーカーを経て2012年にリクルートに入社。Media Technology Labs で複数の新サービスのテックリードを務めた後、AI研究所の創立メンバとして日米の拠点をまたいだ深層学習の研究開発と事業装着に従事。ハンディ社CTOに就任後は文書解析技術の最新化や開発体制構築、複数プロダクトの技術統括を務める。犬が好き。プライベートではボストンテリアと暮らしています。</p>\n<hr>\n<h3>「答えを出す」より「わかる」をつくる — atama plusにおける教育×AIの向き合い方</h3>\n<p><img src=\"https://pub-85bb7d2e93a04cd9909c9a823a7915b5.r2.dev/k.maeda.png\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">前田 和樹</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/kzk_maeda\" rel=\"nofollow\">(@kzk_maeda)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">atama plus株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">VPoE</span><br></p>\n<p>リクルート、EdTechスタートアップを経て2022年にatama plus株式会社に入社。SRE、データエンジニア、EMを経て、現在はVPoEとして開発組織の統括や技術戦略に携わる。個人ではAWS Startup Community Core MemberおよびAWS Community BuilderとしてコミュニティやOSS活動を実施。</p>\n<hr>\n<h3>AI時代に社会人が学び続ける意義とAIプロダクトを通した挑戦</h3>\n<p><img src=\"https://i.gyazo.com/4f8aa5be37c849899368e4a7a75629f2.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">末永 昌也</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/sue738\" rel=\"nofollow\">(@sue738)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">株式会社グロービス</span><br>\n<span style=\"font-size: 150%; color: black;\">CTO</span><br></p>\n<p>東京工業大学大学院 情報理工学研究科修了。グロービス経営大学院 経営学修士課程修了。Startup Weekend世界大会入賞を機にEdTechサービスを手がける株式会社LOUPE（現ARROWS）を共同創業。CTOとしてプロダクトの新規立ち上げ、技術リードを行う。グロービスに入社後は「GLOBIS 学び放題」等の立ち上げに携わり、現在はグロービス・デジタル・プラットフォームにおける開発全般の統括を行う。</p>\n<hr>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>本イベントはオフライン開催です。オンライン配信はありません</li>\n<li>会場への入館方法は、参加確定後にconnpass経由でご案内します</li>\n<li>撮影・録音については、当日スタッフの案内に従ってください</li>\n<li>20時以降のご参加はお断りしております。</li>\n<li>性別・人種・年齢・技術選択等に関わりなく、誰もが気持ちよく参加できるようご協力ください</li>\n<li>エージェント・採用目的でのご参加はご遠慮ください</li>\n<li>イベント内容・スケジュールは予告なく変更となる場合があります</li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://i.gyazo.com/d6e26a77b900482b92fcc7a079b713c6.png\" width=\"300\"></p>\n<p><strong><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a></strong>（主催）</p>\n<p><img src=\"https://i.gyazo.com/1f0f7e9d70de0c11f88af1484f72fae3.png\" width=\"300\"></p>\n<p><strong><a href=\"https://handy.school/corporate\" rel=\"nofollow\">ハンディ株式会社</a></strong>（スポンサー）</p>\n<p>お問い合わせ：connpassイベントページのメッセージ機能よりご連絡ください</p>",
+      "url": "https://findy-tools.connpass.com/event/395482/",
+      "image_url": "https://media.connpass.com/thumbs/7b/14/7b14aa7851c427c21cbcb98b8e8f62d1.png",
+      "hash_tag": "Edtech_findy",
+      "started_at": "2026-06-29T19:00:00+09:00",
+      "ended_at": "2026-06-29T21:40:00+09:00",
+      "published_at": "2026-06-02T09:04:40+09:00",
+      "limit": 100,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 15543,
+        "subdomain": "findy-tools",
+        "title": "Findy Tools",
+        "url": "https://findy-tools.connpass.com/"
+      },
+      "address": "東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 5階",
+      "place": "ファインディ(株) 5Fイベントスペース",
+      "lat": "35.622377100000",
+      "lon": "139.727459400000",
+      "owner_id": 895415,
+      "owner_nickname": "okiwatarufindy",
+      "owner_display_name": "okiwatarufindy",
+      "accepted": 94,
+      "waiting": 0,
+      "updated_at": "2026-06-10T17:38:36+09:00"
     }
   ]
 }
