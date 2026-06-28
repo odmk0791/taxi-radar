@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-29T00:12:44.844858+09:00",
+  "fetched_at": "2026-06-29T02:01:40.888320+09:00",
   "date": "20260629",
   "count": 11,
   "events": [
@@ -126,37 +126,6 @@
       "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-06-28T21:42:07+09:00"
-    },
-    {
-      "id": 395452,
-      "title": "PyCon US 2026 参加報告会",
-      "catch": "カリフォルニア州ロングビーチで開催されたPyCon US 2026を参加者が振り返ります！",
-      "description": "<h1>イベント概要</h1>\n<p><a href=\"https://us.pycon.org/2026/\" rel=\"nofollow\"><strong>PyCon US 2026</strong></a>は5月13日~19日にカリフォルニア州ロングビーチで開催された、世界最大級のPythonの国際カンファレンスです。このイベントに関する <strong>報告会</strong> を現地参加したメンバーで実施します。ハイブリッド開催で、オンサイト会場は渋谷のHENNGEオフィスです。</p>\n<p>本イベントでは、PyCon US 2026のスピーカーや、参加したメンバーの体験を元にした参加報告と、後半ではパネルディスカッションを実施します。また、報告会の最後にはオンサイト会場では、<strong>懇親会</strong> としてピザパーティーを開催します。「PyConって何？」という人から、「海外PyConに参加してみたい」「海外で登壇したい」という人まで、ぜひご参加ください。現地参加の方はピザを片手に交流しましょう！</p>\n<p>懇親会では「PyCon US 2026 <strong>おみやげのプレゼント</strong>」もあります。</p>\n<p>（このイベントはPyCon JP Associationの支援を受けています）</p>\n<h2>報告会へ参加するメリット</h2>\n<ul>\n<li>PyCon USがどのようなイベントかを知れる</li>\n<li>海外開催のPyConで日本メンバーがどうやって発表してきたかを知れる</li>\n<li>PyCon USでどのような体験ができるかを知れる</li>\n<li>パネルディスカッションにて、PyCon US参加者のリアルな話を聞くことができる</li>\n<li>ピザパーティーを通して参加メンバーと交流できる</li>\n</ul>\n<h2>おすすめの参加者</h2>\n<ul>\n<li>海外開催のPyConの雰囲気を知りたい人</li>\n<li>海外イベントで今後登壇したいと思う人</li>\n<li>海外イベントに参加してみたい人</li>\n</ul>\n<h2>オンサイト入場について</h2>\n<ul>\n<li>HENNGEオフィスの11階に直接来てください</li>\n<li>20時を過ぎると正面の自動ドアが閉まるので、その前に来てください</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>開場・集合</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>イベント開始・全体説明</td>\n<td></td>\n</tr>\n<tr>\n<td>19:05</td>\n<td>また来年も行きたくなったPyCon US 〜PAOブースとカメラ越しに見たコミュニティ〜</td>\n<td>寺田 学</td>\n</tr>\n<tr>\n<td>19:15</td>\n<td>3年連続でPyCon USに採択される方法</td>\n<td>青野 高大</td>\n</tr>\n<tr>\n<td>19:25</td>\n<td>おもしろトーク紹介</td>\n<td>鈴木 たかのり</td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>My First PyCon US</td>\n<td>Calvin Tsang</td>\n</tr>\n<tr>\n<td>19:45</td>\n<td>肩肘張らずに楽しむPyCon US</td>\n<td>橘 祐一郎</td>\n</tr>\n<tr>\n<td>19:50</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>パネルディスカッション</td>\n<td>スピーカー全員</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>懇親会 ＠オンサイト</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>イベント終了</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h1>スピーカープロフィール</h1>\n<h2>また来年も行きたくなったPyCon US 〜PAOブースとカメラ越しに見たコミュニティ〜 / <a href=\"https://podcast.terapyon.net/\" rel=\"nofollow\">寺田 学</a></h2>\n<p><img src=\"https://www.pycon.jp/_images/terada.jpg\" width=\"100\"></p>\n<p>Python Asia Organization Founder and Board member 及び PSF Fellow</p>\n<p>Python Web関係の業務を中心にコンサルティングやシステム構築を(株)CMSコミュニケーションズ代表取締役として手がけている。</p>\n<p>Pythonをはじめとした技術話題を扱うPodcast「terapyon channel」<a href=\"https://podcast.terapyon.net/\" rel=\"nofollow\">https://podcast.terapyon.net/</a> を配信中</p>\n<h2>3年連続でPyCon USに採択される方法 / <a href=\"https://github.com/koxudaxi\" rel=\"nofollow\">青野 高大</a></h2>\n<p><img src=\"https://avatars.githubusercontent.com/u/630670\" width=\"100\"></p>\n<p>OSS メンテナ（datamodel-code-generator など）で、PyCharm 向け Ruff／Pydantic プラグインを開発。</p>\n<p>PEP 750（Template Strings）の共同著者。</p>\n<p>PyCon JP 2025・EuroPython 2024/2025・PyCon US 2024/2025/2026 に登壇。</p>\n<h2>おもしろトーク紹介  / <a href=\"https://slides.takanory.net/\" rel=\"nofollow\">鈴木 たかのり</a></h2>\n<p><img src=\"https://slides.takanory.net/_static/takanory.jpg\" width=\"100\"></p>\n<p><a href=\"https://www.pycon.jp/\" rel=\"nofollow\">一般社団法人PyCon JP Association</a>代表理事、<a href=\"https://www.beproud.jp/\" rel=\"nofollow\">株式会社ビープラウド</a> 取締役 / Python Climber</p>\n<p>部内のサイトを作るためにZope/Ploneと出会い、その後必要にかられてPythonを使い始める。PyCon JPでは2011年1月のPyCon mini JPからスタッフとして活動。PyCon JP 2024共同座長。\n他の主な活動は、<a href=\"https://kabepy.connpass.com/\" rel=\"nofollow\">Pythonボルダリング部(#kabepy)</a> 部長、<a href=\"https://pyhack.connpass.com/\" rel=\"nofollow\">Python mini Hack-a-thon(#pyhack)</a> 主催など。</p>\n<p>各国PyConやPython Boot Campで訪れた土地で、現地のクラフトビールを飲むことが楽しみ。 フェレットとビールとレゴが好き。趣味は吹奏楽(トランペット)とボルダリング。</p>\n<h2>My First PyCon US / <a href=\"https://www.linkedin.com/in/calvin-tyl\" rel=\"nofollow\">Calvin Tsang</a></h2>\n<p><img src=\"https://media.connpass.com/thumbs/23/3f/233f2460f37461acdd026ac1c3161681.png\" width=\"100\"></p>\n<p>PyCon HK 2026 Chair </p>\n<p>Open Source Hong Kong Vice Chair</p>\n<p>Hong Kong OSS community organizer</p>\n<h2>肩肘張らずに楽しむPyCon US / <a href=\"https://www.whitphx.info/\" rel=\"nofollow\">橘 祐一郎 (@whitphx)</a></h2>\n<p><img src=\"https://avatars.githubusercontent.com/u/3135397\" width=\"100\"></p>\n<p>学術専門職員 @ 東大先端研</p>\n<p>StreamlitのPyodide移植版(Stlite)やStreamlit-WebRTCなどの開発者。\nその辺のテーマで何度か各地のPyConでトークしました。\nOSSへの貢献やその周辺のエコシステムに関心があります。</p>\n<p><a href=\"https://github.com/whitphx\" rel=\"nofollow\">https://github.com/whitphx</a></p>",
-      "url": "https://pyconjp.connpass.com/event/395452/",
-      "image_url": "https://media.connpass.com/thumbs/f3/e2/f3e25d50fe03dad997b9b9c5ac541781.png",
-      "hash_tag": "PyConUS2026報告会",
-      "started_at": "2026-06-29T19:00:00+09:00",
-      "ended_at": "2026-06-29T21:00:00+09:00",
-      "published_at": "2026-06-02T18:30:24+09:00",
-      "limit": 55,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 137,
-        "subdomain": "pyconjp",
-        "title": "PyCon JP",
-        "url": "https://pyconjp.connpass.com/"
-      },
-      "address": "東京都渋谷区南平台町16番28号 Daiwa渋谷スクエア 11F",
-      "place": "HENNGE",
-      "lat": "35.655053000000",
-      "lon": "139.694703300000",
-      "owner_id": 51,
-      "owner_nickname": "takanori",
-      "owner_display_name": "Takanori Suzuki",
-      "accepted": 39,
-      "waiting": 1,
-      "updated_at": "2026-06-24T15:42:20+09:00"
     },
     {
       "id": 396370,
@@ -338,6 +307,37 @@
       "accepted": 95,
       "waiting": 0,
       "updated_at": "2026-06-10T17:38:36+09:00"
+    },
+    {
+      "id": 395452,
+      "title": "PyCon US 2026 参加報告会",
+      "catch": "カリフォルニア州ロングビーチで開催されたPyCon US 2026を参加者が振り返ります！",
+      "description": "<h1>イベント概要</h1>\n<p><a href=\"https://us.pycon.org/2026/\" rel=\"nofollow\"><strong>PyCon US 2026</strong></a>は5月13日~19日にカリフォルニア州ロングビーチで開催された、世界最大級のPythonの国際カンファレンスです。このイベントに関する <strong>報告会</strong> を現地参加したメンバーで実施します。ハイブリッド開催で、オンサイト会場は渋谷のHENNGEオフィスです。</p>\n<p>本イベントでは、PyCon US 2026のスピーカーや、参加したメンバーの体験を元にした参加報告と、後半ではパネルディスカッションを実施します。また、報告会の最後にはオンサイト会場では、<strong>懇親会</strong> としてピザパーティーを開催します。「PyConって何？」という人から、「海外PyConに参加してみたい」「海外で登壇したい」という人まで、ぜひご参加ください。現地参加の方はピザを片手に交流しましょう！</p>\n<p>懇親会では「PyCon US 2026 <strong>おみやげのプレゼント</strong>」もあります。</p>\n<p>（このイベントはPyCon JP Associationの支援を受けています）</p>\n<h2>報告会へ参加するメリット</h2>\n<ul>\n<li>PyCon USがどのようなイベントかを知れる</li>\n<li>海外開催のPyConで日本メンバーがどうやって発表してきたかを知れる</li>\n<li>PyCon USでどのような体験ができるかを知れる</li>\n<li>パネルディスカッションにて、PyCon US参加者のリアルな話を聞くことができる</li>\n<li>ピザパーティーを通して参加メンバーと交流できる</li>\n</ul>\n<h2>おすすめの参加者</h2>\n<ul>\n<li>海外開催のPyConの雰囲気を知りたい人</li>\n<li>海外イベントで今後登壇したいと思う人</li>\n<li>海外イベントに参加してみたい人</li>\n</ul>\n<h2>オンサイト入場について</h2>\n<ul>\n<li>HENNGEオフィスの11階に直接来てください</li>\n<li>20時を過ぎると正面の自動ドアが閉まるので、その前に来てください</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>開場・集合</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>イベント開始・全体説明</td>\n<td></td>\n</tr>\n<tr>\n<td>19:05</td>\n<td>また来年も行きたくなったPyCon US 〜PAOブースとカメラ越しに見たコミュニティ〜</td>\n<td>寺田 学</td>\n</tr>\n<tr>\n<td>19:15</td>\n<td>3年連続でPyCon USに採択される方法</td>\n<td>青野 高大</td>\n</tr>\n<tr>\n<td>19:25</td>\n<td>おもしろトーク紹介</td>\n<td>鈴木 たかのり</td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>My First PyCon US</td>\n<td>Calvin Tsang</td>\n</tr>\n<tr>\n<td>19:45</td>\n<td>肩肘張らずに楽しむPyCon US</td>\n<td>橘 祐一郎</td>\n</tr>\n<tr>\n<td>19:50</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>パネルディスカッション</td>\n<td>スピーカー全員</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>懇親会 ＠オンサイト</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>イベント終了</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h1>スピーカープロフィール</h1>\n<h2>また来年も行きたくなったPyCon US 〜PAOブースとカメラ越しに見たコミュニティ〜 / <a href=\"https://podcast.terapyon.net/\" rel=\"nofollow\">寺田 学</a></h2>\n<p><img src=\"https://www.pycon.jp/_images/terada.jpg\" width=\"100\"></p>\n<p>Python Asia Organization Founder and Board member 及び PSF Fellow</p>\n<p>Python Web関係の業務を中心にコンサルティングやシステム構築を(株)CMSコミュニケーションズ代表取締役として手がけている。</p>\n<p>Pythonをはじめとした技術話題を扱うPodcast「terapyon channel」<a href=\"https://podcast.terapyon.net/\" rel=\"nofollow\">https://podcast.terapyon.net/</a> を配信中</p>\n<h2>3年連続でPyCon USに採択される方法 / <a href=\"https://github.com/koxudaxi\" rel=\"nofollow\">青野 高大</a></h2>\n<p><img src=\"https://avatars.githubusercontent.com/u/630670\" width=\"100\"></p>\n<p>OSS メンテナ（datamodel-code-generator など）で、PyCharm 向け Ruff／Pydantic プラグインを開発。</p>\n<p>PEP 750（Template Strings）の共同著者。</p>\n<p>PyCon JP 2025・EuroPython 2024/2025・PyCon US 2024/2025/2026 に登壇。</p>\n<h2>おもしろトーク紹介  / <a href=\"https://slides.takanory.net/\" rel=\"nofollow\">鈴木 たかのり</a></h2>\n<p><img src=\"https://slides.takanory.net/_static/takanory.jpg\" width=\"100\"></p>\n<p><a href=\"https://www.pycon.jp/\" rel=\"nofollow\">一般社団法人PyCon JP Association</a>代表理事、<a href=\"https://www.beproud.jp/\" rel=\"nofollow\">株式会社ビープラウド</a> 取締役 / Python Climber</p>\n<p>部内のサイトを作るためにZope/Ploneと出会い、その後必要にかられてPythonを使い始める。PyCon JPでは2011年1月のPyCon mini JPからスタッフとして活動。PyCon JP 2024共同座長。\n他の主な活動は、<a href=\"https://kabepy.connpass.com/\" rel=\"nofollow\">Pythonボルダリング部(#kabepy)</a> 部長、<a href=\"https://pyhack.connpass.com/\" rel=\"nofollow\">Python mini Hack-a-thon(#pyhack)</a> 主催など。</p>\n<p>各国PyConやPython Boot Campで訪れた土地で、現地のクラフトビールを飲むことが楽しみ。 フェレットとビールとレゴが好き。趣味は吹奏楽(トランペット)とボルダリング。</p>\n<h2>My First PyCon US / <a href=\"https://www.linkedin.com/in/calvin-tyl\" rel=\"nofollow\">Calvin Tsang</a></h2>\n<p><img src=\"https://media.connpass.com/thumbs/23/3f/233f2460f37461acdd026ac1c3161681.png\" width=\"100\"></p>\n<p>PyCon HK 2026 Chair </p>\n<p>Open Source Hong Kong Vice Chair</p>\n<p>Hong Kong OSS community organizer</p>\n<h2>肩肘張らずに楽しむPyCon US / <a href=\"https://www.whitphx.info/\" rel=\"nofollow\">橘 祐一郎 (@whitphx)</a></h2>\n<p><img src=\"https://avatars.githubusercontent.com/u/3135397\" width=\"100\"></p>\n<p>学術専門職員 @ 東大先端研</p>\n<p>StreamlitのPyodide移植版(Stlite)やStreamlit-WebRTCなどの開発者。\nその辺のテーマで何度か各地のPyConでトークしました。\nOSSへの貢献やその周辺のエコシステムに関心があります。</p>\n<p><a href=\"https://github.com/whitphx\" rel=\"nofollow\">https://github.com/whitphx</a></p>",
+      "url": "https://pyconjp.connpass.com/event/395452/",
+      "image_url": "https://media.connpass.com/thumbs/f3/e2/f3e25d50fe03dad997b9b9c5ac541781.png",
+      "hash_tag": "PyConUS2026報告会",
+      "started_at": "2026-06-29T19:00:00+09:00",
+      "ended_at": "2026-06-29T21:00:00+09:00",
+      "published_at": "2026-06-02T18:30:24+09:00",
+      "limit": 55,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 137,
+        "subdomain": "pyconjp",
+        "title": "PyCon JP",
+        "url": "https://pyconjp.connpass.com/"
+      },
+      "address": "東京都渋谷区南平台町16番28号 Daiwa渋谷スクエア 11F",
+      "place": "HENNGE",
+      "lat": "35.655053000000",
+      "lon": "139.694703300000",
+      "owner_id": 51,
+      "owner_nickname": "takanori",
+      "owner_display_name": "Takanori Suzuki",
+      "accepted": 40,
+      "waiting": 1,
+      "updated_at": "2026-06-24T15:42:20+09:00"
     }
   ]
 }
