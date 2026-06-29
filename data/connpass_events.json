@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-29T19:27:38.658369+09:00",
+  "fetched_at": "2026-06-29T23:43:38.653208+09:00",
   "date": "20260629",
   "count": 11,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-17T07:21:38+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -30,7 +30,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 29,
+      "accepted": 30,
       "waiting": 0,
       "updated_at": "2026-06-21T23:00:34+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-06-11T21:38:18+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16931,
         "subdomain": "nomi-agile",
@@ -69,7 +69,7 @@
       "id": 396282,
       "title": "Outreach Meetup #10",
       "catch": "研究発信 / 研究アウトリーチ / 科学コミュニケーション等について、少人数でゆるりと語り合う勉強会",
-      "description": "<h2>\"Outreach Meetup\"とは？</h2>\n<p>学術界における「アウトリーチ」は、研究の内容や成果などを広く社会に向けて分かりやすく発信したり、学術界を越えた対話を生み出す、あるいは協同を推進したりするような役割/活動を指します。</p>\n<p>Outreach Meetupは、「アウトリーチ」や「科学コミュニケーション」など研究や科学の発信に関わっている方々で集まり、ワイワイとゆる〜くカジュアルに情報交換を行うイベントです。</p>\n<h3>前半はLT (ライトニングトーク) 大会！(登壇者募集中！)</h3>\n<p>話す内容は、研究や科学の発信に関わるテーマなら、なんでもOK。\n3~20分ほどであなたのアウトリーチに関わるお話をお聞かせください！</p>\n<p>どのような発信活動を行っているか、うまくいった事例やうまくいかなかった事例、アウトリーチ活動を通じた学び、アウトリーチの役割をどのようなものと捉えているか、アウトリーチに関して悩んでること、みんなに相談したいことなど、アウトリーチに関わるいろんなトピックについて、みんなで知見を共有しだり、意見を交換し、学術界のアウトリーチを盛り上げていきましょう！</p>\n<h3>後半は、懇親タイム！</h3>\n<p>飲み物、食べ物を片手に、ゆるりと「アウトリーチ」について語り合いつつ、交流しましょう！</p>\n<h2>登壇者 (募集中!!)</h2>\n<p>※登壇希望の方は、LT発表枠よりお申し込みください。(申し込み時点でタイトルが未定の場合は、決まり次第、本connpassイベントページ下のフィードにタイトルのご記入をお願いします！)</p>\n<table>\n<thead>\n<tr>\n<th>LTタイトル</th>\n<th>登壇者名</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>生成AIの記事なのにフライデイデジタルに取材されて記事になってしまった話</td>\n<td><a href=\"https://x.com/Yh_Taguchi\" rel=\"nofollow\">@yh_taguchi</a></td>\n</tr>\n<tr>\n<td>某助成金プロジェクト採択に向けて企業研究所のアウトリーチ専任者がやったこと</td>\n<td><a href=\"https://x.com/afroscript10\" rel=\"nofollow\">@afroscript10</a></td>\n</tr>\n<tr>\n<td>ペンギンを題材とする「生物多様性」啓発教材</td>\n<td><a href=\"https://x.com/U_Penguin2018\" rel=\"nofollow\">@U_Penguin2018</a></td>\n</tr>\n</tbody>\n</table>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15～19:30</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30～19:50</td>\n<td>オープニング (乾杯&amp;お互いに軽く自己紹介)</td>\n</tr>\n<tr>\n<td>19:50～21:30</td>\n<td>LT発表タイム</td>\n</tr>\n<tr>\n<td>21:30～21:50</td>\n<td>雑談&amp;懇親タイム</td>\n</tr>\n<tr>\n<td>放課後タイム</td>\n<td>お時間ある方はみんなで軽くご飯でも食べに行きましょう！</td>\n</tr>\n</tbody>\n</table>\n<h2>参加対象者</h2>\n<p>・研究機関、研究チームでアウトリーチを担当している方\n・研究内容を社会に分かりやすく/おもしろく伝えるためにあれこれ試行錯誤している方\n・論文にとらわれず、いろんな形で研究を発信したいと思っている方\n・アウトリーチについて研究している方\n・なんらかの形でアウトリーチに関わっている方\n・これからアウトリーチのことを考える方\n・とにかくアウトリーチについてなにか話したい！という方</p>\n<p>など、学術的なアウトリーチ活動に携わる方であれば、所属は大学や企業、公的研究機関など特に問いません。</p>\n<h2>運営メンバー</h2>\n<ul>\n<li><a href=\"https://twitter.com/afroscript10\" rel=\"nofollow\">@afroscript10</a> (メルカリR4D アウトリーチ)</li>\n<li><a href=\"https://x.com/Keita_Saiki_\" rel=\"nofollow\">@Keita_Saiki_</a> (俳優兼サイエンスコミュニケーター)</li>\n<li>higochan (大阪大学)</li>\n</ul>\n<h2>注意事項</h2>\n<ul>\n<li>会場への入場方法は、本イベントページの「参加者への情報」欄をご確認ください。</li>\n<li>本勉強会は、アウトリーチに関する知識や意見の交流が目的です。 知識の共有や参加者同士の交流を目的としない方の参加はお断りします。 <em>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</em></li>\n<li>講演内容やタイムスケジュールは変更となる可能性がございます。</li>\n<li>当日のイベント内容は後日任意の媒体にて レポート記事などで公開させていただくことがあります。</li>\n<li>イベントレポート作成のため、お写真を撮らせていただくことがございますので予めご了承ください。</li>\n<li>イベントは、止むを得ず中止させていただく場合がございます。その際は、本サイトからのメッセージよりご連絡させていただきますのでご確認をお願いいたします。</li>\n</ul>",
+      "description": "<h2>\"Outreach Meetup\"とは？</h2>\n<p>学術界における「アウトリーチ」は、研究の内容や成果などを広く社会に向けて分かりやすく発信したり、学術界を越えた対話を生み出す、あるいは協同を推進したりするような役割/活動を指します。</p>\n<p>Outreach Meetupは、「アウトリーチ」や「科学コミュニケーション」など研究や科学の発信に関わっている方々で集まり、ワイワイとゆる〜くカジュアルに情報交換を行うイベントです。</p>\n<h3>前半はLT (ライトニングトーク) 大会！(登壇者募集中！)</h3>\n<p>話す内容は、研究や科学の発信に関わるテーマなら、なんでもOK。\n3~20分ほどであなたのアウトリーチに関わるお話をお聞かせください！</p>\n<p>どのような発信活動を行っているか、うまくいった事例やうまくいかなかった事例、アウトリーチ活動を通じた学び、アウトリーチの役割をどのようなものと捉えているか、アウトリーチに関して悩んでること、みんなに相談したいことなど、アウトリーチに関わるいろんなトピックについて、みんなで知見を共有しだり、意見を交換し、学術界のアウトリーチを盛り上げていきましょう！</p>\n<h3>後半は、懇親タイム！</h3>\n<p>飲み物、食べ物を片手に、ゆるりと「アウトリーチ」について語り合いつつ、交流しましょう！</p>\n<h2>登壇者 (募集中!!)</h2>\n<p>※登壇希望の方は、LT発表枠よりお申し込みください。(申し込み時点でタイトルが未定の場合は、決まり次第、本connpassイベントページ下のフィードにタイトルのご記入をお願いします！)</p>\n<table>\n<thead>\n<tr>\n<th>LTタイトル</th>\n<th>登壇者名</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>某助成金プロジェクト採択に向けて企業研究所のアウトリーチ専任者がやったこと</td>\n<td><a href=\"https://x.com/afroscript10\" rel=\"nofollow\">@afroscript10</a></td>\n</tr>\n<tr>\n<td>ペンギンを題材とする「生物多様性」啓発教材</td>\n<td><a href=\"https://x.com/U_Penguin2018\" rel=\"nofollow\">@U_Penguin2018</a></td>\n</tr>\n<tr>\n<td>(仮)基礎研究にサイエンスコミュニケーションにおける課題</td>\n<td><a href=\"https://x.com/ae_riona\" rel=\"nofollow\">@ae_riona</a></td>\n</tr>\n<tr>\n<td>生成AIの記事なのにフライデイデジタルに取材されて記事になってしまった話</td>\n<td><a href=\"https://x.com/Yh_Taguchi\" rel=\"nofollow\">@yh_taguchi</a></td>\n</tr>\n</tbody>\n</table>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15～19:30</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30～19:50</td>\n<td>オープニング (乾杯&amp;お互いに軽く自己紹介)</td>\n</tr>\n<tr>\n<td>19:50～21:30</td>\n<td>LT発表タイム</td>\n</tr>\n<tr>\n<td>21:30～21:50</td>\n<td>雑談&amp;懇親タイム</td>\n</tr>\n<tr>\n<td>放課後タイム</td>\n<td>お時間ある方はみんなで軽くご飯でも食べに行きましょう！</td>\n</tr>\n</tbody>\n</table>\n<h2>参加対象者</h2>\n<p>・研究機関、研究チームでアウトリーチを担当している方\n・研究内容を社会に分かりやすく/おもしろく伝えるためにあれこれ試行錯誤している方\n・論文にとらわれず、いろんな形で研究を発信したいと思っている方\n・アウトリーチについて研究している方\n・なんらかの形でアウトリーチに関わっている方\n・これからアウトリーチのことを考える方\n・とにかくアウトリーチについてなにか話したい！という方</p>\n<p>など、学術的なアウトリーチ活動に携わる方であれば、所属は大学や企業、公的研究機関など特に問いません。</p>\n<h2>運営メンバー</h2>\n<ul>\n<li><a href=\"https://twitter.com/afroscript10\" rel=\"nofollow\">@afroscript10</a> (メルカリR4D アウトリーチ)</li>\n<li><a href=\"https://x.com/Keita_Saiki_\" rel=\"nofollow\">@Keita_Saiki_</a> (俳優兼サイエンスコミュニケーター)</li>\n<li>higochan (大阪大学)</li>\n</ul>\n<h2>注意事項</h2>\n<ul>\n<li>会場への入場方法は、本イベントページの「参加者への情報」欄をご確認ください。</li>\n<li>本勉強会は、アウトリーチに関する知識や意見の交流が目的です。 知識の共有や参加者同士の交流を目的としない方の参加はお断りします。 <em>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</em></li>\n<li>講演内容やタイムスケジュールは変更となる可能性がございます。</li>\n<li>当日のイベント内容は後日任意の媒体にて レポート記事などで公開させていただくことがあります。</li>\n<li>イベントレポート作成のため、お写真を撮らせていただくことがございますので予めご了承ください。</li>\n<li>イベントは、止むを得ず中止させていただく場合がございます。その際は、本サイトからのメッセージよりご連絡させていただきますのでご確認をお願いいたします。</li>\n</ul>",
       "url": "https://outreach-meetup.connpass.com/event/396282/",
       "image_url": "https://media.connpass.com/thumbs/aa/ae/aaae919b8dde46002f9e519a309e054a.png",
       "hash_tag": "outreach_meetup",
@@ -78,7 +78,7 @@
       "published_at": "2026-06-04T17:59:52+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 14891,
         "subdomain": "outreach-meetup",
@@ -92,9 +92,9 @@
       "owner_id": 864055,
       "owner_nickname": "Keita_Saiki_",
       "owner_display_name": "Keita_Saiki_",
-      "accepted": 13,
+      "accepted": 14,
       "waiting": 0,
-      "updated_at": "2026-06-29T19:25:13+09:00"
+      "updated_at": "2026-06-29T19:28:04+09:00"
     },
     {
       "id": 392443,
@@ -109,7 +109,7 @@
       "published_at": "2026-05-20T13:01:14+09:00",
       "limit": 31,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17015,
         "subdomain": "megu-meet02",
@@ -123,7 +123,7 @@
       "owner_id": 328750,
       "owner_nickname": "yuta_k0911",
       "owner_display_name": "Yuta Kawasaki（ゆーた）",
-      "accepted": 28,
+      "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-06-29T11:15:53+09:00"
     },
@@ -140,7 +140,7 @@
       "published_at": "2026-06-11T11:57:14+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都渋谷区渋谷1丁目13番5号　大協渋谷ビル10階",
       "place": "Acrosstudioオフィス",
@@ -152,6 +152,37 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-06-15T18:43:34+09:00"
+    },
+    {
+      "id": 397378,
+      "title": "AI Shift Local LLM Meetup #2",
+      "catch": "AI Shift が主催する、Local LLM にまつわる知見を共有する Meetup",
+      "description": "<h1>AI Shift Local LLM Meetup #2 〜クラウドLLMに頼りきらない開発体験をつくる〜</h1>\n<p>AI Shift が主催する、Local LLM にまつわる知見を共有・実践する Meetup です。<br>\n第2回は、Local LLM を開発の相棒として使ってみる個人参加型ハッカソン として開催します。</p>\n<p>近年、商用クラウドLLMは開発ワークフローに欠かせない存在になりつつあります。一方で、モデル提供側の仕様変更・制限・フォールバック・ポリシー変更、従量課金の高騰などによって、同じように使っているつもりでも挙動やコストが変わる可能性があります。</p>\n<p>そうした背景を踏まえ、今回はあらためて Local LLM での開発 に注目します。</p>\n<p>クラウドLLMに完全依存しない形で、どこまで開発体験を作れるのか、小さくても自分たちで観測できる・評価できる・コントロールできるLLM活用を、各自で実際に試してみる会です。</p>\n<p>本イベントは、基本的に 個人参加・個人開発形式 です。<br>\nチームで大きなものを作るのではなく、それぞれが持ち寄ったテーマに対して、Local LLM を使いながら開発・検証・実験を進めます。テーマは運営側からは指定しません。各自が事前に考えてくるか、当日 Local LLM に相談しながら決めていただく形を想定しています。</p>\n<p>今回は 1時間という限られた時間で集中して取り組むハッカソン です。そのため環境構築を当日に行う時間は確保できません（後述の事前準備をご確認ください）。開発だけでなく、アイデア出し・壁打ち・設計相談・コードレビュー・デバッグ相談なども、できるだけ Local LLM を使って行うことを推奨します。</p>\n<p>「Local LLM を開発の相棒としてどこまで使えるのか」<br>\n「クラウドLLMに頼らない開発体験はどこまで実用的なのか」<br>\n「小型モデルで何ができて、どこに限界があるのか」</p>\n<p>そうした実用性や限界を、実際に手を動かしながら試してみましょう。</p>\n<p>完成度は問いません。<br>\n動かなくてもOKです。<br>\n「ここまで試した」「ここで詰まった」「このモデルが意外と良かった」といった発見も歓迎します。</p>\n<p>少しでも興味のある方、ぜひご参加ください！</p>\n<h2>事前準備</h2>\n<p>本イベントは、限られた1時間でLocal LLMを使った開発・検証に集中するため、開発環境は各自で事前に準備したうえでご参加ください。</p>\n<p>当日は、環境構築そのものをメインにするのではなく、Local LLMを使って実際に作る・試す・検証する時間にしたいと考えています。</p>\n<p>事前にLocal LLMを利用できる開発環境を用意しておくことを推奨します。<br>\nGPU搭載PCは必須ではありません。<br>\nCPUで動く小型モデル、ローカルネットワーク内のGPUサーバー、手元のMac / Windows / Linux環境など、各自の環境で問題ありません。</p>\n<p>環境構築に迷う場合は、以下を参考にしてください（あくまで一例です）。</p>\n<ul>\n<li>実行ツール：Ollama / LM Studio / llama.cpp（Macの場合は MLX も）</li>\n<li>モデル：CPUでも動く小型モデル（例：Qwen3 系の小型モデル、Gemma 4 の小型モデル、LFM2.5 系など）</li>\n</ul>\n<p>使い慣れたツール・モデルがあればそちらで構いません。</p>\n<p>当日は運営側でも可能な範囲でサポートしますが、個別の環境構築サポートには十分な時間を取れない可能性があります。<br>\nそのため、セットアップで詰まりそうな方は、事前に動作確認まで済ませておくことをおすすめします。</p>\n<h2>日時/場所について</h2>\n<p>オフラインで開催いたします。\nまた、発表後は懇親会を予定しております。コミュニケーションの場としてご活用ください。</p>\n<ul>\n<li>開催日：2026年6月29日（月）19：00〜21:30</li>\n<li>形式：オフライン\n<br>東京都渋谷区宇田川町40-1 Abema Towers 10F <a href=\"https://www.cyberagent.co.jp/way/list/detail/id=23135\" rel=\"nofollow\">※アクセス</a>\n　　　　</li>\n<li>\n<p>参加費：無料\n<br>※交通費等は自己負担となります。</p>\n</li>\n<li>\n<p>入館証に関する注意\n<br><span style=\"color:red;\">※イベント当日の17:30以降にconnpassへ参加登録された方にはメールにて配布する入館証（QRコード）が送信されません。</span>\n<br><span style=\"color:red;\">※本ページの「参加者への情報」の欄に入館証取得用URLを記載いたしますので、メールを受け取っていない場合はそちらからQRコードを取得してください。（「参加者への情報」は参加登録をしていただいた方のみご確認いただけます）</span></p>\n</li>\n</ul>\n<h2>参加の申し込みについて</h2>\n<ul>\n<li><span style=\"color: red;\">お申し込み時、アンケートのすべての項目をご回答ください。</span></li>\n<li>該当のご回答が無い場合はオフライン参加をお断りさせていただきます。ご了承ください。</li>\n</ul>\n<h2>当日の進行について</h2>\n<ul>\n<li>入館方法をいただいたメールアドレスにお送りいたしますので手順に沿ってご来社ください。\n<br>※当日お申込された方は、申込時のアンケートにご回答いただいていることを確認後、ビル1階にて入館証をお渡しいたします。\n<br>※当日、会場にてお名刺または学生証の提示をいただく可能性がございます。</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>受付開始</td>\n</tr>\n<tr>\n<td>19:00 - 19:10</td>\n<td>オープニング・趣旨説明</td>\n</tr>\n<tr>\n<td>19:10 - 20:10</td>\n<td>個人ハッカソン</td>\n</tr>\n<tr>\n<td>20:10 - 20:40</td>\n<td>成果共有 (2分 x 15人)</td>\n</tr>\n<tr>\n<td>20:40 - 20:45</td>\n<td>クロージング</td>\n</tr>\n<tr>\n<td>20:45 - 21:45</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<p><br>※ 時間配分、内容が変更になる可能性がございます。</p>\n<h1>Code of Conduct</h1>\n<p>本イベントでは、以下のCode of Conductを適用しております。皆様が歓迎され、安心・安全なイベントとして楽しい時間を過ごせるよう、Code of Conductをぜひご一読ください。</p>\n<p>CA Tech Events - <a href=\"https://cyberagent.events/code-of-conduct\" rel=\"nofollow\">Code of Conduct</a> <br></p>\n<h1>注意事項（必ずご確認ください）</h1>\n<ul>\n<li>\n<p>connpassの受付票に記載のご本人のみが参加できます。受付票をお持ちでない方は入場できません。受付票はスマートフォンでの提示で入場できます。</p>\n</li>\n<li>\n<p>入館後は、会場内だけでなく共用部（廊下・エレベーター・トイレ・エントランス等）を含む建物内全域での写真・動画撮影を禁止しております。ご協力をお願いいたします。</p>\n</li>\n<li>\n<p>イベントスタッフは、このイベントに関わる全員が気持ちよく過ごせるように考えています。参加者の皆さまも、ほかの方を不快にさせるような発言・行動は謹んでいただくようご了承のほどお願いいたします。またそのような行動を目にした方は、お近くの社員に声をかけていただくか、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n</li>\n<li>\n<p>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</p>\n</li>\n<li>\n<p>当勉強会はセッション内容に興味のある方の参加をお願いしております。飲食のみ、勧誘、営業などを目的とした参加はご遠慮ください。なお、運営者が該当すると判断した方が見受けられた場合は、お帰りいただく場合がございますのでご了承ください。</p>\n</li>\n<li>\n<p>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</p>\n</li>\n<li>\n<p>会場内は禁煙です。</p>\n</li>\n<li>\n<p>悪天候等により、運営事務局の判断にてイベントを中止する場合があります。</p>\n</li>\n<li>\n<p>運営の状況によりスケジュール、内容は変更となる場合があります。</p>\n</li>\n</ul>\n<h2>免責事項</h2>\n<ul>\n<li>\n<p>本カンファレンス内において発生した一切の事故や怪我・病気などの責任を負いかねますことをあらかじめご了承ください。</p>\n</li>\n<li>\n<p>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。</p>\n</li>\n<li>\n<p>本カンファレンスから得られた情報により、何らかの損害を負った場合であっても、発表者並びに主催者は一切の責任を負いません。予めご了承ください。</p>\n</li>\n</ul>\n<h2>主催・協力</h2>\n<p>主催： 株式会社AI Shift<br>\n会場提供： 株式会社サイバーエージェント</p>\n<h2>個人情報のお取り扱いについて</h2>\n<p>事前・事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いはプライバシーポリシーに従って取り扱います。</p>\n<p>またイベント受付管理や各種ご案内（サービス・イベント・採用等）に利用させていただく場合があります。\nご同意の上、ご参加ください。</p>\n<p>株式会社サイバーエージェント プライバシーポリシー：<a href=\"https://www.cyberagent.co.jp/privacy/&lt;br>\" rel=\"nofollow\">https://www.cyberagent.co.jp/privacy/<br></a></p>",
+      "url": "https://cyberagent.connpass.com/event/397378/",
+      "image_url": "https://media.connpass.com/thumbs/53/3c/533cf5ec3087dd330512772c5464263b.png",
+      "hash_tag": "aishiftmeetup",
+      "started_at": "2026-06-29T19:00:00+09:00",
+      "ended_at": "2026-06-29T21:30:00+09:00",
+      "published_at": "2026-05-14T19:00:00+09:00",
+      "limit": 15,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 3084,
+        "subdomain": "cyberagent",
+        "title": "サイバーエージェント / CyberAgent",
+        "url": "https://cyberagent.connpass.com/"
+      },
+      "address": "東京都渋谷区宇田川町40-1",
+      "place": "Abema Towers",
+      "lat": "35.662469400000",
+      "lon": "139.696101800000",
+      "owner_id": 803906,
+      "owner_nickname": "EikiMurata",
+      "owner_display_name": "Eiki Murata",
+      "accepted": 10,
+      "waiting": 0,
+      "updated_at": "2026-06-29T17:46:28+09:00"
     },
     {
       "id": 395420,
@@ -166,7 +197,7 @@
       "published_at": "2026-05-29T14:13:02+09:00",
       "limit": 98,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1873,
         "subdomain": "jawsug-bgnr",
@@ -197,7 +228,7 @@
       "published_at": "2026-06-02T18:30:24+09:00",
       "limit": 55,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 137,
         "subdomain": "pyconjp",
@@ -216,37 +247,6 @@
       "updated_at": "2026-06-29T18:51:32+09:00"
     },
     {
-      "id": 395482,
-      "title": "AI時代のEdTech開発最前線",
-      "catch": "〜教育プロダクトを支えるエンジニアリングのリアル〜",
-      "description": "<h1>📋 概要</h1>\n<p>教育・学び領域でプロダクトを育てている3社のCTO/VPoEが、AI時代のEdTech開発の最前線を語るオフラインイベントです。</p>\n<p>生成AIが当たり前になりつつある今、教育現場では何が起きているのか。法制度・現場の慣習・リテラシーの壁と向き合いながら、どうプロダクトを磨いているのか。AIは学びを助けるのか、それとも考える力を削ぐのか——現場で向き合っている3名のリアルな声を、ショートセッション＋パネルディスカッションでお届けします。</p>\n<p>教育領域のエンジニアリングに少しでも関心があるエンジニア・PdMの方に、ぜひご参加いただきたいイベントです。</p>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション</th>\n<th style=\"text-align: left;\">企業</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場・受付 / ドリンク提供 / ネットワーキング</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング（主催挨拶・趣旨説明・タイムテーブル案内）</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">セッション①: 紙の求人票からAIエージェントへ —— ハンディ進路指導室が支える、高校生の進路選択</td>\n<td style=\"text-align: left;\">ハンディ株式会社</td>\n<td style=\"text-align: left;\">田中 郁</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20</td>\n<td style=\"text-align: left;\">セッション②: 「答えを出す」より「わかる」をつくる — atama plusにおける教育×AIの向き合い方</td>\n<td style=\"text-align: left;\">atama plus株式会社</td>\n<td style=\"text-align: left;\">前田 和樹</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">セッション③: AI時代に社会人が学び続ける意義とAIプロダクトを通した挑戦</td>\n<td style=\"text-align: left;\">株式会社グロービス</td>\n<td style=\"text-align: left;\">末永 昌也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">登壇者3名+モデレーター</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">Q&amp;Aセッション</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35</td>\n<td style=\"text-align: left;\">懇親会・ネットワーキング（軽食＋ドリンク）</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<h3>👨‍💻 こんな方におすすめ</h3>\n<ul>\n<li>教育・学び領域に関心があり、現場のリアルを知りたいエンジニア・PdM</li>\n<li>自分の技術力が社会課題の解決に貢献している手触り感を求めているエンジニア</li>\n<li>AIの台頭をきっかけに、自身のキャリアの方向性を模索しているエンジニア</li>\n</ul>\n<h3>✅ イベントのゴール</h3>\n<ul>\n<li><strong>教育×エンジニアリングの伸びしろ</strong>：法制度の制約はあれど、日本の未来を担う人々の学びをつくる、伸びしろの大きな領域だと感じてもらう</li>\n<li><strong>教育現場×AIの実態</strong>：学校・社会人教育など、現場でAIがどこまで使われ、どこに課題があるのかをリアルに知ってもらう</li>\n<li><strong>プロダクトの手触り感</strong>：自分の技術力が社会課題の解決にどう繋がるのか、教育・学び領域のエンジニアリングにどんな面白さ・難しさがあるのかをイメージしてもらう</li>\n</ul>\n<hr>\n<h1>🎤 登壇者</h1>\n<h3>紙の求人票からAIエージェントへ —— ハンディ進路指導室が支える、高校生の進路選択</h3>\n<p><img src=\"https://i.gyazo.com/59297716019be833b9676c276b7602ad.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">田中 郁</span><br>\n<span style=\"font-size: 150%; color: black;\">ハンディ株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">最高技術責任者 兼 CTO</span><br></p>\n<p>博士号取得後、日系メーカーを経て2012年にリクルートに入社。Media Technology Labs で複数の新サービスのテックリードを務めた後、AI研究所の創立メンバとして日米の拠点をまたいだ深層学習の研究開発と事業装着に従事。ハンディ社CTOに就任後は文書解析技術の最新化や開発体制構築、複数プロダクトの技術統括を務める。犬が好き。プライベートではボストンテリアと暮らしています。</p>\n<hr>\n<h3>「答えを出す」より「わかる」をつくる — atama plusにおける教育×AIの向き合い方</h3>\n<p><img src=\"https://pub-85bb7d2e93a04cd9909c9a823a7915b5.r2.dev/k.maeda.png\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">前田 和樹</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/kzk_maeda\" rel=\"nofollow\">(@kzk_maeda)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">atama plus株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">VPoE</span><br></p>\n<p>リクルート、EdTechスタートアップを経て2022年にatama plus株式会社に入社。SRE、データエンジニア、EMを経て、現在はVPoEとして開発組織の統括や技術戦略に携わる。個人ではAWS Startup Community Core MemberおよびAWS Community BuilderとしてコミュニティやOSS活動を実施。</p>\n<hr>\n<h3>AI時代に社会人が学び続ける意義とAIプロダクトを通した挑戦</h3>\n<p><img src=\"https://i.gyazo.com/4f8aa5be37c849899368e4a7a75629f2.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">末永 昌也</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/sue738\" rel=\"nofollow\">(@sue738)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">株式会社グロービス</span><br>\n<span style=\"font-size: 150%; color: black;\">CTO</span><br></p>\n<p>東京工業大学大学院 情報理工学研究科修了。グロービス経営大学院 経営学修士課程修了。Startup Weekend世界大会入賞を機にEdTechサービスを手がける株式会社LOUPE（現ARROWS）を共同創業。CTOとしてプロダクトの新規立ち上げ、技術リードを行う。グロービスに入社後は「GLOBIS 学び放題」等の立ち上げに携わり、現在はグロービス・デジタル・プラットフォームにおける開発全般の統括を行う。</p>\n<hr>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>本イベントはオフライン開催です。オンライン配信はありません</li>\n<li>会場への入館方法は、参加確定後にconnpass経由でご案内します</li>\n<li>撮影・録音については、当日スタッフの案内に従ってください</li>\n<li>20時以降のご参加はお断りしております。</li>\n<li>性別・人種・年齢・技術選択等に関わりなく、誰もが気持ちよく参加できるようご協力ください</li>\n<li>エージェント・採用目的でのご参加はご遠慮ください</li>\n<li>イベント内容・スケジュールは予告なく変更となる場合があります</li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://i.gyazo.com/d6e26a77b900482b92fcc7a079b713c6.png\" width=\"300\"></p>\n<p><strong><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a></strong>（主催）</p>\n<p><img src=\"https://i.gyazo.com/1f0f7e9d70de0c11f88af1484f72fae3.png\" width=\"300\"></p>\n<p><strong><a href=\"https://handy.school/corporate\" rel=\"nofollow\">ハンディ株式会社</a></strong>（スポンサー）</p>\n<p>お問い合わせ：connpassイベントページのメッセージ機能よりご連絡ください</p>",
-      "url": "https://findy-tools.connpass.com/event/395482/",
-      "image_url": "https://media.connpass.com/thumbs/7b/14/7b14aa7851c427c21cbcb98b8e8f62d1.png",
-      "hash_tag": "Edtech_findy",
-      "started_at": "2026-06-29T19:00:00+09:00",
-      "ended_at": "2026-06-29T21:40:00+09:00",
-      "published_at": "2026-06-02T09:04:40+09:00",
-      "limit": 100,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 15543,
-        "subdomain": "findy-tools",
-        "title": "Findy Tools",
-        "url": "https://findy-tools.connpass.com/"
-      },
-      "address": "東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 5階",
-      "place": "ファインディ(株) 5Fイベントスペース",
-      "lat": "35.622377100000",
-      "lon": "139.727459400000",
-      "owner_id": 895415,
-      "owner_nickname": "okiwatarufindy",
-      "owner_display_name": "okiwatarufindy",
-      "accepted": 83,
-      "waiting": 0,
-      "updated_at": "2026-06-10T17:38:36+09:00"
-    },
-    {
       "id": 396370,
       "title": "現場のためのGoogle AI Stack Deep Dive",
       "catch": "〜Next & I/Oから考えるAI Agentの実装と運用〜",
@@ -259,7 +259,7 @@
       "published_at": "2026-06-10T16:20:10+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 6642,
         "subdomain": "ubie",
@@ -278,37 +278,6 @@
       "updated_at": "2026-06-29T17:55:24+09:00"
     },
     {
-      "id": 397378,
-      "title": "AI Shift Local LLM Meetup #2",
-      "catch": "AI Shift が主催する、Local LLM にまつわる知見を共有する Meetup",
-      "description": "<h1>AI Shift Local LLM Meetup #2 〜クラウドLLMに頼りきらない開発体験をつくる〜</h1>\n<p>AI Shift が主催する、Local LLM にまつわる知見を共有・実践する Meetup です。<br>\n第2回は、Local LLM を開発の相棒として使ってみる個人参加型ハッカソン として開催します。</p>\n<p>近年、商用クラウドLLMは開発ワークフローに欠かせない存在になりつつあります。一方で、モデル提供側の仕様変更・制限・フォールバック・ポリシー変更、従量課金の高騰などによって、同じように使っているつもりでも挙動やコストが変わる可能性があります。</p>\n<p>そうした背景を踏まえ、今回はあらためて Local LLM での開発 に注目します。</p>\n<p>クラウドLLMに完全依存しない形で、どこまで開発体験を作れるのか、小さくても自分たちで観測できる・評価できる・コントロールできるLLM活用を、各自で実際に試してみる会です。</p>\n<p>本イベントは、基本的に 個人参加・個人開発形式 です。<br>\nチームで大きなものを作るのではなく、それぞれが持ち寄ったテーマに対して、Local LLM を使いながら開発・検証・実験を進めます。テーマは運営側からは指定しません。各自が事前に考えてくるか、当日 Local LLM に相談しながら決めていただく形を想定しています。</p>\n<p>今回は 1時間という限られた時間で集中して取り組むハッカソン です。そのため環境構築を当日に行う時間は確保できません（後述の事前準備をご確認ください）。開発だけでなく、アイデア出し・壁打ち・設計相談・コードレビュー・デバッグ相談なども、できるだけ Local LLM を使って行うことを推奨します。</p>\n<p>「Local LLM を開発の相棒としてどこまで使えるのか」<br>\n「クラウドLLMに頼らない開発体験はどこまで実用的なのか」<br>\n「小型モデルで何ができて、どこに限界があるのか」</p>\n<p>そうした実用性や限界を、実際に手を動かしながら試してみましょう。</p>\n<p>完成度は問いません。<br>\n動かなくてもOKです。<br>\n「ここまで試した」「ここで詰まった」「このモデルが意外と良かった」といった発見も歓迎します。</p>\n<p>少しでも興味のある方、ぜひご参加ください！</p>\n<h2>事前準備</h2>\n<p>本イベントは、限られた1時間でLocal LLMを使った開発・検証に集中するため、開発環境は各自で事前に準備したうえでご参加ください。</p>\n<p>当日は、環境構築そのものをメインにするのではなく、Local LLMを使って実際に作る・試す・検証する時間にしたいと考えています。</p>\n<p>事前にLocal LLMを利用できる開発環境を用意しておくことを推奨します。<br>\nGPU搭載PCは必須ではありません。<br>\nCPUで動く小型モデル、ローカルネットワーク内のGPUサーバー、手元のMac / Windows / Linux環境など、各自の環境で問題ありません。</p>\n<p>環境構築に迷う場合は、以下を参考にしてください（あくまで一例です）。</p>\n<ul>\n<li>実行ツール：Ollama / LM Studio / llama.cpp（Macの場合は MLX も）</li>\n<li>モデル：CPUでも動く小型モデル（例：Qwen3 系の小型モデル、Gemma 4 の小型モデル、LFM2.5 系など）</li>\n</ul>\n<p>使い慣れたツール・モデルがあればそちらで構いません。</p>\n<p>当日は運営側でも可能な範囲でサポートしますが、個別の環境構築サポートには十分な時間を取れない可能性があります。<br>\nそのため、セットアップで詰まりそうな方は、事前に動作確認まで済ませておくことをおすすめします。</p>\n<h2>日時/場所について</h2>\n<p>オフラインで開催いたします。\nまた、発表後は懇親会を予定しております。コミュニケーションの場としてご活用ください。</p>\n<ul>\n<li>開催日：2026年6月29日（月）19：00〜21:30</li>\n<li>形式：オフライン\n<br>東京都渋谷区宇田川町40-1 Abema Towers 10F <a href=\"https://www.cyberagent.co.jp/way/list/detail/id=23135\" rel=\"nofollow\">※アクセス</a>\n　　　　</li>\n<li>\n<p>参加費：無料\n<br>※交通費等は自己負担となります。</p>\n</li>\n<li>\n<p>入館証に関する注意\n<br><span style=\"color:red;\">※イベント当日の17:30以降にconnpassへ参加登録された方にはメールにて配布する入館証（QRコード）が送信されません。</span>\n<br><span style=\"color:red;\">※本ページの「参加者への情報」の欄に入館証取得用URLを記載いたしますので、メールを受け取っていない場合はそちらからQRコードを取得してください。（「参加者への情報」は参加登録をしていただいた方のみご確認いただけます）</span></p>\n</li>\n</ul>\n<h2>参加の申し込みについて</h2>\n<ul>\n<li><span style=\"color: red;\">お申し込み時、アンケートのすべての項目をご回答ください。</span></li>\n<li>該当のご回答が無い場合はオフライン参加をお断りさせていただきます。ご了承ください。</li>\n</ul>\n<h2>当日の進行について</h2>\n<ul>\n<li>入館方法をいただいたメールアドレスにお送りいたしますので手順に沿ってご来社ください。\n<br>※当日お申込された方は、申込時のアンケートにご回答いただいていることを確認後、ビル1階にて入館証をお渡しいたします。\n<br>※当日、会場にてお名刺または学生証の提示をいただく可能性がございます。</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>受付開始</td>\n</tr>\n<tr>\n<td>19:00 - 19:10</td>\n<td>オープニング・趣旨説明</td>\n</tr>\n<tr>\n<td>19:10 - 20:10</td>\n<td>個人ハッカソン</td>\n</tr>\n<tr>\n<td>20:10 - 20:40</td>\n<td>成果共有 (2分 x 15人)</td>\n</tr>\n<tr>\n<td>20:40 - 20:45</td>\n<td>クロージング</td>\n</tr>\n<tr>\n<td>20:45 - 21:45</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<p><br>※ 時間配分、内容が変更になる可能性がございます。</p>\n<h1>Code of Conduct</h1>\n<p>本イベントでは、以下のCode of Conductを適用しております。皆様が歓迎され、安心・安全なイベントとして楽しい時間を過ごせるよう、Code of Conductをぜひご一読ください。</p>\n<p>CA Tech Events - <a href=\"https://cyberagent.events/code-of-conduct\" rel=\"nofollow\">Code of Conduct</a> <br></p>\n<h1>注意事項（必ずご確認ください）</h1>\n<ul>\n<li>\n<p>connpassの受付票に記載のご本人のみが参加できます。受付票をお持ちでない方は入場できません。受付票はスマートフォンでの提示で入場できます。</p>\n</li>\n<li>\n<p>入館後は、会場内だけでなく共用部（廊下・エレベーター・トイレ・エントランス等）を含む建物内全域での写真・動画撮影を禁止しております。ご協力をお願いいたします。</p>\n</li>\n<li>\n<p>イベントスタッフは、このイベントに関わる全員が気持ちよく過ごせるように考えています。参加者の皆さまも、ほかの方を不快にさせるような発言・行動は謹んでいただくようご了承のほどお願いいたします。またそのような行動を目にした方は、お近くの社員に声をかけていただくか、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n</li>\n<li>\n<p>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</p>\n</li>\n<li>\n<p>当勉強会はセッション内容に興味のある方の参加をお願いしております。飲食のみ、勧誘、営業などを目的とした参加はご遠慮ください。なお、運営者が該当すると判断した方が見受けられた場合は、お帰りいただく場合がございますのでご了承ください。</p>\n</li>\n<li>\n<p>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</p>\n</li>\n<li>\n<p>会場内は禁煙です。</p>\n</li>\n<li>\n<p>悪天候等により、運営事務局の判断にてイベントを中止する場合があります。</p>\n</li>\n<li>\n<p>運営の状況によりスケジュール、内容は変更となる場合があります。</p>\n</li>\n</ul>\n<h2>免責事項</h2>\n<ul>\n<li>\n<p>本カンファレンス内において発生した一切の事故や怪我・病気などの責任を負いかねますことをあらかじめご了承ください。</p>\n</li>\n<li>\n<p>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。</p>\n</li>\n<li>\n<p>本カンファレンスから得られた情報により、何らかの損害を負った場合であっても、発表者並びに主催者は一切の責任を負いません。予めご了承ください。</p>\n</li>\n</ul>\n<h2>主催・協力</h2>\n<p>主催： 株式会社AI Shift<br>\n会場提供： 株式会社サイバーエージェント</p>\n<h2>個人情報のお取り扱いについて</h2>\n<p>事前・事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いはプライバシーポリシーに従って取り扱います。</p>\n<p>またイベント受付管理や各種ご案内（サービス・イベント・採用等）に利用させていただく場合があります。\nご同意の上、ご参加ください。</p>\n<p>株式会社サイバーエージェント プライバシーポリシー：<a href=\"https://www.cyberagent.co.jp/privacy/&lt;br>\" rel=\"nofollow\">https://www.cyberagent.co.jp/privacy/<br></a></p>",
-      "url": "https://cyberagent.connpass.com/event/397378/",
-      "image_url": "https://media.connpass.com/thumbs/53/3c/533cf5ec3087dd330512772c5464263b.png",
-      "hash_tag": "aishiftmeetup",
-      "started_at": "2026-06-29T19:00:00+09:00",
-      "ended_at": "2026-06-29T21:30:00+09:00",
-      "published_at": "2026-05-14T19:00:00+09:00",
-      "limit": 15,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 3084,
-        "subdomain": "cyberagent",
-        "title": "サイバーエージェント / CyberAgent",
-        "url": "https://cyberagent.connpass.com/"
-      },
-      "address": "東京都渋谷区宇田川町40-1",
-      "place": "Abema Towers",
-      "lat": "35.662469400000",
-      "lon": "139.696101800000",
-      "owner_id": 803906,
-      "owner_nickname": "EikiMurata",
-      "owner_display_name": "Eiki Murata",
-      "accepted": 10,
-      "waiting": 0,
-      "updated_at": "2026-06-29T17:46:28+09:00"
-    },
-    {
       "id": 398429,
       "title": "【第5回】【初心者/中級者歓迎】Claude Codeもくもく会 @ 新宿御苑前",
       "catch": "",
@@ -321,7 +290,7 @@
       "published_at": "2026-06-24T10:17:11+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17553,
         "subdomain": "mokumoku-infra-ai",
@@ -338,6 +307,37 @@
       "accepted": 9,
       "waiting": 0,
       "updated_at": "2026-06-24T22:12:09+09:00"
+    },
+    {
+      "id": 395482,
+      "title": "AI時代のEdTech開発最前線",
+      "catch": "〜教育プロダクトを支えるエンジニアリングのリアル〜",
+      "description": "<h1>📋 概要</h1>\n<p>教育・学び領域でプロダクトを育てている3社のCTO/VPoEが、AI時代のEdTech開発の最前線を語るオフラインイベントです。</p>\n<p>生成AIが当たり前になりつつある今、教育現場では何が起きているのか。法制度・現場の慣習・リテラシーの壁と向き合いながら、どうプロダクトを磨いているのか。AIは学びを助けるのか、それとも考える力を削ぐのか——現場で向き合っている3名のリアルな声を、ショートセッション＋パネルディスカッションでお届けします。</p>\n<p>教育領域のエンジニアリングに少しでも関心があるエンジニア・PdMの方に、ぜひご参加いただきたいイベントです。</p>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション</th>\n<th style=\"text-align: left;\">企業</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場・受付 / ドリンク提供 / ネットワーキング</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング（主催挨拶・趣旨説明・タイムテーブル案内）</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">セッション①: 紙の求人票からAIエージェントへ —— ハンディ進路指導室が支える、高校生の進路選択</td>\n<td style=\"text-align: left;\">ハンディ株式会社</td>\n<td style=\"text-align: left;\">田中 郁</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20</td>\n<td style=\"text-align: left;\">セッション②: 「答えを出す」より「わかる」をつくる — atama plusにおける教育×AIの向き合い方</td>\n<td style=\"text-align: left;\">atama plus株式会社</td>\n<td style=\"text-align: left;\">前田 和樹</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">セッション③: AI時代に社会人が学び続ける意義とAIプロダクトを通した挑戦</td>\n<td style=\"text-align: left;\">株式会社グロービス</td>\n<td style=\"text-align: left;\">末永 昌也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">登壇者3名+モデレーター</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">Q&amp;Aセッション</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35</td>\n<td style=\"text-align: left;\">懇親会・ネットワーキング（軽食＋ドリンク）</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<h3>👨‍💻 こんな方におすすめ</h3>\n<ul>\n<li>教育・学び領域に関心があり、現場のリアルを知りたいエンジニア・PdM</li>\n<li>自分の技術力が社会課題の解決に貢献している手触り感を求めているエンジニア</li>\n<li>AIの台頭をきっかけに、自身のキャリアの方向性を模索しているエンジニア</li>\n</ul>\n<h3>✅ イベントのゴール</h3>\n<ul>\n<li><strong>教育×エンジニアリングの伸びしろ</strong>：法制度の制約はあれど、日本の未来を担う人々の学びをつくる、伸びしろの大きな領域だと感じてもらう</li>\n<li><strong>教育現場×AIの実態</strong>：学校・社会人教育など、現場でAIがどこまで使われ、どこに課題があるのかをリアルに知ってもらう</li>\n<li><strong>プロダクトの手触り感</strong>：自分の技術力が社会課題の解決にどう繋がるのか、教育・学び領域のエンジニアリングにどんな面白さ・難しさがあるのかをイメージしてもらう</li>\n</ul>\n<hr>\n<h1>🎤 登壇者</h1>\n<h3>紙の求人票からAIエージェントへ —— ハンディ進路指導室が支える、高校生の進路選択</h3>\n<p><img src=\"https://i.gyazo.com/59297716019be833b9676c276b7602ad.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">田中 郁</span><br>\n<span style=\"font-size: 150%; color: black;\">ハンディ株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">最高技術責任者 兼 CTO</span><br></p>\n<p>博士号取得後、日系メーカーを経て2012年にリクルートに入社。Media Technology Labs で複数の新サービスのテックリードを務めた後、AI研究所の創立メンバとして日米の拠点をまたいだ深層学習の研究開発と事業装着に従事。ハンディ社CTOに就任後は文書解析技術の最新化や開発体制構築、複数プロダクトの技術統括を務める。犬が好き。プライベートではボストンテリアと暮らしています。</p>\n<hr>\n<h3>「答えを出す」より「わかる」をつくる — atama plusにおける教育×AIの向き合い方</h3>\n<p><img src=\"https://pub-85bb7d2e93a04cd9909c9a823a7915b5.r2.dev/k.maeda.png\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">前田 和樹</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/kzk_maeda\" rel=\"nofollow\">(@kzk_maeda)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">atama plus株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">VPoE</span><br></p>\n<p>リクルート、EdTechスタートアップを経て2022年にatama plus株式会社に入社。SRE、データエンジニア、EMを経て、現在はVPoEとして開発組織の統括や技術戦略に携わる。個人ではAWS Startup Community Core MemberおよびAWS Community BuilderとしてコミュニティやOSS活動を実施。</p>\n<hr>\n<h3>AI時代に社会人が学び続ける意義とAIプロダクトを通した挑戦</h3>\n<p><img src=\"https://i.gyazo.com/4f8aa5be37c849899368e4a7a75629f2.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">末永 昌也</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/sue738\" rel=\"nofollow\">(@sue738)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">株式会社グロービス</span><br>\n<span style=\"font-size: 150%; color: black;\">CTO</span><br></p>\n<p>東京工業大学大学院 情報理工学研究科修了。グロービス経営大学院 経営学修士課程修了。Startup Weekend世界大会入賞を機にEdTechサービスを手がける株式会社LOUPE（現ARROWS）を共同創業。CTOとしてプロダクトの新規立ち上げ、技術リードを行う。グロービスに入社後は「GLOBIS 学び放題」等の立ち上げに携わり、現在はグロービス・デジタル・プラットフォームにおける開発全般の統括を行う。</p>\n<hr>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>本イベントはオフライン開催です。オンライン配信はありません</li>\n<li>会場への入館方法は、参加確定後にconnpass経由でご案内します</li>\n<li>撮影・録音については、当日スタッフの案内に従ってください</li>\n<li>20時以降のご参加はお断りしております。</li>\n<li>性別・人種・年齢・技術選択等に関わりなく、誰もが気持ちよく参加できるようご協力ください</li>\n<li>エージェント・採用目的でのご参加はご遠慮ください</li>\n<li>イベント内容・スケジュールは予告なく変更となる場合があります</li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://i.gyazo.com/d6e26a77b900482b92fcc7a079b713c6.png\" width=\"300\"></p>\n<p><strong><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a></strong>（主催）</p>\n<p><img src=\"https://i.gyazo.com/1f0f7e9d70de0c11f88af1484f72fae3.png\" width=\"300\"></p>\n<p><strong><a href=\"https://handy.school/corporate\" rel=\"nofollow\">ハンディ株式会社</a></strong>（スポンサー）</p>\n<p>お問い合わせ：connpassイベントページのメッセージ機能よりご連絡ください</p>",
+      "url": "https://findy-tools.connpass.com/event/395482/",
+      "image_url": "https://media.connpass.com/thumbs/7b/14/7b14aa7851c427c21cbcb98b8e8f62d1.png",
+      "hash_tag": "Edtech_findy",
+      "started_at": "2026-06-29T19:00:00+09:00",
+      "ended_at": "2026-06-29T21:40:00+09:00",
+      "published_at": "2026-06-02T09:04:40+09:00",
+      "limit": 100,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 15543,
+        "subdomain": "findy-tools",
+        "title": "Findy Tools",
+        "url": "https://findy-tools.connpass.com/"
+      },
+      "address": "東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 5階",
+      "place": "ファインディ(株) 5Fイベントスペース",
+      "lat": "35.622377100000",
+      "lon": "139.727459400000",
+      "owner_id": 895415,
+      "owner_nickname": "okiwatarufindy",
+      "owner_display_name": "okiwatarufindy",
+      "accepted": 82,
+      "waiting": 0,
+      "updated_at": "2026-06-10T17:38:36+09:00"
     }
   ]
 }
