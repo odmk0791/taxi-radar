@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T07:49:09.360430+09:00",
+  "fetched_at": "2026-06-30T08:56:17.763359+09:00",
   "date": "20260630",
   "count": 9,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 441072,
       "owner_nickname": "uv_recruit",
       "owner_display_name": "ユニークビジョン",
-      "accepted": 12,
+      "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-06-04T15:21:52+09:00"
     },
@@ -221,37 +221,6 @@
       "updated_at": "2026-06-25T15:23:09+09:00"
     },
     {
-      "id": 383793,
-      "title": "【K8s Noviceコラボ】Jagu'e'r O11y分科会 K8s/GKE O11yの第一歩",
-      "catch": "Jagu'e'r オブザーバビリティ分科会 × Kubernetes Novice Meetup",
-      "description": "<h1>📢 オブザーバビリティ分科会からのお知らせ</h1>\n<p>オブザーバビリティ分科会からのお知らせです📢</p>\n<p>本コミュニティは Jagu'e'r の分科会の一つとして、<strong>オブザーバビリティ</strong>という技術トピックにフォーカスして、Meetup を開催しています🔭</p>\n<p>今回の Meetup のテーマは、</p>\n<p><strong></strong></p><p><strong><font size=\"3\">「 ☸️ Kubernetes × オブザーバビリティ 🔍」</font></strong></p><p></p>\n<p>になります。</p>\n<p>今回は <strong>Kubernetes Meetup Novice 🔰</strong> とのコラボ回！<br>\n複雑なコンテナ環境を安全に運用するためには、Kubernetes とオブザーバビリティの深い理解が欠かせません。でも、「クラスターのどこを監視すべき？」「GKE ではどう設定するのが正解？」など、疑問も多いのではないでしょうか。<br>\n今回は、Kubernetes とオブザーバビリティの基礎から、GKE での実践例まで、第一歩を踏み出すための知見を共有します！</p>\n<p>ぜひ、ご参加ください！ 🙌</p>\n<h1>👩‍💻 Jagu'e'r オブザーバビリティ分科会 × Kubernetes Novice Meetup 🔰</h1>\n<p>どなたでも参加 OK です。\n皆様の周りで、オブザーバビリティ領域に興味がある方をぜひお誘いいただければ幸いです。</p>\n<p>また、<strong>本イベントはオープンイベントとなっていますのでこちらの Connpass からのみ参加が可能となっています。奮ってご参加ください！</strong></p>\n<ul>\n<li>日　程: 2026 年 6 月 30 日（火）</li>\n<li>時　間: 18:30 - 20:30</li>\n<li>場　所:  Datadog オフィス &amp; Google Meet (参加方法は[参加者への情報]からご確認ください！！！)</li>\n</ul>\n<p>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓   Google Cloud 公式ユーザーコミュニティ Jagu'e'r に興味ある方   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓</p>\n<ul>\n<li>本 Meetup 参加において必須ではありません</li>\n<li>Jagu'e'r 会員のお申し込みは<a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfs6TQitRD7i3qGbPk3mkUxxUZFuKcebls_3uweUHiNuSyh7w/viewform\" rel=\"nofollow\">こちら</a></li>\n<li>Jagu'e'r オブザーバビリティ分科会 への参加方法 : Jagu'e'r Slackチャンネルの <a href=\"https://japangooglecl-xxv7878.slack.com/archives/C0367PW2UJE\" rel=\"nofollow\">ch_オブザーバビリティ分科会</a> からご参加ください！</li>\n</ul>\n<p>↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑</p>\n<h1>🕐 アジェンダ</h1>\n<h2>18:30 - 20:30</h2>\n<p>登壇内容は変更になる可能性がありますのでご注意ください</p>\n<table>\n<thead>\n<tr>\n<th>時間(目安)</th>\n<th>セッションタイトル</th>\n<th>企業名</th>\n<th>Speaker</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30-18:35</td>\n<td>オープニング</td>\n<td>----</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>18:35-18:45</td>\n<td>スポンサーセッション</td>\n<td>Datadog Japan 合同会社</td>\n<td>----</td>\n</tr>\n<tr>\n<td>18:45-19:05</td>\n<td>（仮）Google Cloud における Managed OTel Collector へのディープダイブ</td>\n<td>Datadog Japan 合同会社</td>\n<td>逆井 氏</td>\n</tr>\n<tr>\n<td>19:05-19:25</td>\n<td>Observability Analytics で始める GKE オブザーバビリティ</td>\n<td>クラウドエース株式会社</td>\n<td>佐久間 氏</td>\n</tr>\n<tr>\n<td>19:25-19:45</td>\n<td>kubectl logsのその先へ、実は使えるGKEの色んなKubernetesログを追ってみよう</td>\n<td>Google Cloud Japan 合同会社</td>\n<td>石井 氏</td>\n</tr>\n<tr>\n<td>19:45-19:50</td>\n<td>休憩</td>\n<td>----</td>\n<td>----</td>\n</tr>\n<tr>\n<td>19:50-20:10</td>\n<td>（仮）GKEトラブルシューティングのための安全なエージェントの育て方</td>\n<td>株式会社Synspective</td>\n<td>新井 氏</td>\n</tr>\n<tr>\n<td>20:10-20:20</td>\n<td>Calico VPP における SRv6 egress path steering の実装</td>\n<td>東京都立産業技術高等専門学校</td>\n<td>中山 氏</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>初めてのKubernetes本番運用でハマった話</td>\n<td>株式会社Hajimari</td>\n<td>奥 氏</td>\n</tr>\n<tr>\n<td>20:30-20:35</td>\n<td>クロージング</td>\n<td>----</td>\n<td>----</td>\n</tr>\n<tr>\n<td>20:35-20:40</td>\n<td>撤収！</td>\n<td>----</td>\n<td>----</td>\n</tr>\n</tbody>\n</table>\n<h2>🎤 登壇者一覧</h2>\n<h3>逆井 / さかさい / <a href=\"https://x.com/k6s4i53rx\" rel=\"nofollow\">@k6s4i53rx</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1577991336472776704/bmkAMrOz_400x400.jpg\" width=\"150\"></p>\n<p><font size=\"3\"><strong> Datadog Japan 合同会社 </strong></font></p>\n<p><font size=\"3\"><strong> セールスエンジニア </strong></font></p>\n\n<blockquote>\n<p>Datadog Japan で Datadog やオブザーバビリティを広める仕事をしています。Google Developer Experts や OpenTelemetry Meetup コミュニティに所属しています。最近はマグマ式サウナにハマっているので、ドライサウナとの違いが気になる方はぜひ話しましょう！</p>\n</blockquote>\n<h3>佐久間 昂太</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/98725121?v=4\" width=\"150\"></p>\n<p><font size=\"3\"><strong> クラウドエース株式会社 </strong></font></p>\n<p><font size=\"3\"><strong> ソフトウェアエンジニア </strong></font></p>\n\n<blockquote>\n<p>新卒でクラウドエース株式会社に入社し、小売業界のお客様を中心にデリバリーを担当。\n現在は大規模な次世代 POS システムプロジェクトに参画。\nGKE 基盤の設計、サービスメッシュによるトラフィック制御、性能検証の推進などを行っている。</p>\n</blockquote>\n<h3>石井 翔 / <a href=\"https://x.com/kyasbal_k\" rel=\"nofollow\">@kyasbal_k</a></h3>\n<p><img src=\"https://media.connpass.com/thumbs/e8/f8/e8f8483ac566249c27240633321caa66.png\" width=\"150\"></p>\n<p><font size=\"3\"><strong> Google Cloud Japan 合同会社 </strong></font></p>\n<p><font size=\"3\"><strong> テクニカルソリューションズエンジニア </strong></font></p>\n\n<blockquote>\n<p>Google Cloud Japan のテクニカルサポートチームにて、Google Kubernetes Engine (GKE) や Google Distributed Cloud (GDC) を中心とした高度な技術課題の解決に従事。社内調査の効率化を目的として自ら開発したログ分析ツール「Kubernetes History Inspector」を OSS として公開。\nKubeCon Japan や Cloud Next Tokyo 等の技術カンファレンスへの登壇を通じ、広範な Kubernetes 環境における障害調査の知見を広く発信している。</p>\n</blockquote>\n<h3>新井 雅也 / <a href=\"https://x.com/msy78\" rel=\"nofollow\">@msy78</a></h3>\n<p><img src=\"https://ca.slack-edge.com/T01LMH91KNF-U02PR6ANAUW-f46b9d6ca57f-512\" width=\"150\"></p>\n<p><font size=\"3\"><strong> 株式会社 Synspective </strong></font></p>\n<p><font size=\"3\"><strong> プリンシパルアーキテクト </strong></font></p>\n\n<blockquote>\n<p>衛星の開発・運用を手掛けるSynspectiveにて、クラウドを中心とした技術力を活かしつつ、宇宙業界の発展に尽力している。\nAWS Container Hero (2022~)\nGoogle Developer Expert - Cloud (2024~)</p>\n</blockquote>\n<h3>中山 亮佑 <a href=\"https://x.com/rysknkym\" rel=\"nofollow\">@rysknkym</a></h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/78244973?v=4\" width=\"150\"></p>\n<p><font size=\"3\"><strong> 東京都立産業技術高等専門学校  </strong></font></p>\n<p><font size=\"3\"><strong> 情報システム工学コース 5年生 </strong></font></p>\n\n<blockquote>\n<p>Kubernetes Networking / Linux / SDN / OSS に関心があり、最近は Calico VPP の SRv6、BGP、CNAT 周辺を中心にコントリビューションを行っている。\n 現在は Calico VPP の SRv6 関連実装にコントリビュートしつつ、Kubernetes クラスタの egress gateway と DC バックボーンネットワークを BGP / SRv6 で接続するためのネットワーク制御を研究している。</p>\n</blockquote>\n<h3>奥 琉之介 <a href=\"https://x.com/Kobujee_53\" rel=\"nofollow\">@Kobujee_53</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1842005253493030912/a_wEg85t.jpg\" width=\"150\"></p>\n<p><font size=\"3\"><strong> 株式会社Hajimari  </strong></font></p>\n<p><font size=\"3\"><strong> ソフトウェアエンジニア </strong></font></p>\n\n<blockquote>\n<p>新卒でHajimariに入社し、様々なWEBサービスの開発・運用を担当。現在は、社内システムのインフラ管理・コーポレートセキュリティ・データ活用基盤など、全社に跨る技術課題の解決を目的としたチームの立ち上げに奔走中。</p>\n</blockquote>\n<p>運営チーム一同</p>",
-      "url": "https://jaguer-o11y-sre.connpass.com/event/383793/",
-      "image_url": "https://media.connpass.com/thumbs/f8/07/f80783695eafd71d429e97e91908f665.png",
-      "hash_tag": "o11y_jaguer",
-      "started_at": "2026-06-30T18:30:00+09:00",
-      "ended_at": "2026-06-30T20:30:00+09:00",
-      "published_at": "2026-05-26T12:55:04+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 15177,
-        "subdomain": "jaguer-o11y-sre",
-        "title": "Jagu'e'r オブザーバビリティ分科会",
-        "url": "https://jaguer-o11y-sre.connpass.com/"
-      },
-      "address": "〒100-0005 Tokyo, Chiyoda City, Marunouchi, 2 Chome−7−2 JPタワー 19F",
-      "place": "Datadog 東京オフィス",
-      "lat": "35.679845300000",
-      "lon": "139.764728800000",
-      "owner_id": 667626,
-      "owner_nickname": "parupappa2929",
-      "owner_display_name": "Annosuke Yokoo",
-      "accepted": 83,
-      "waiting": 0,
-      "updated_at": "2026-06-29T23:35:39+09:00"
-    },
-    {
       "id": 395442,
       "title": "日本MySQLユーザ会会(MyNA会) 2026年06月",
       "catch": "ワイルドに変化し続けるMySQLの最新情報をキャッチアップしちゃおう",
@@ -278,9 +247,40 @@
       "owner_id": 58062,
       "owner_nickname": "sakaik1",
       "owner_display_name": "sakaik",
-      "accepted": 40,
+      "accepted": 41,
       "waiting": 0,
       "updated_at": "2026-06-29T12:32:44+09:00"
+    },
+    {
+      "id": 383793,
+      "title": "【K8s Noviceコラボ】Jagu'e'r O11y分科会 K8s/GKE O11yの第一歩",
+      "catch": "Jagu'e'r オブザーバビリティ分科会 × Kubernetes Novice Meetup",
+      "description": "<h1>📢 オブザーバビリティ分科会からのお知らせ</h1>\n<p>オブザーバビリティ分科会からのお知らせです📢</p>\n<p>本コミュニティは Jagu'e'r の分科会の一つとして、<strong>オブザーバビリティ</strong>という技術トピックにフォーカスして、Meetup を開催しています🔭</p>\n<p>今回の Meetup のテーマは、</p>\n<p><strong></strong></p><p><strong><font size=\"3\">「 ☸️ Kubernetes × オブザーバビリティ 🔍」</font></strong></p><p></p>\n<p>になります。</p>\n<p>今回は <strong>Kubernetes Meetup Novice 🔰</strong> とのコラボ回！<br>\n複雑なコンテナ環境を安全に運用するためには、Kubernetes とオブザーバビリティの深い理解が欠かせません。でも、「クラスターのどこを監視すべき？」「GKE ではどう設定するのが正解？」など、疑問も多いのではないでしょうか。<br>\n今回は、Kubernetes とオブザーバビリティの基礎から、GKE での実践例まで、第一歩を踏み出すための知見を共有します！</p>\n<p>ぜひ、ご参加ください！ 🙌</p>\n<h1>👩‍💻 Jagu'e'r オブザーバビリティ分科会 × Kubernetes Novice Meetup 🔰</h1>\n<p>どなたでも参加 OK です。\n皆様の周りで、オブザーバビリティ領域に興味がある方をぜひお誘いいただければ幸いです。</p>\n<p>また、<strong>本イベントはオープンイベントとなっていますのでこちらの Connpass からのみ参加が可能となっています。奮ってご参加ください！</strong></p>\n<ul>\n<li>日　程: 2026 年 6 月 30 日（火）</li>\n<li>時　間: 18:30 - 20:30</li>\n<li>場　所:  Datadog オフィス &amp; Google Meet (参加方法は[参加者への情報]からご確認ください！！！)</li>\n</ul>\n<p>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓   Google Cloud 公式ユーザーコミュニティ Jagu'e'r に興味ある方   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓</p>\n<ul>\n<li>本 Meetup 参加において必須ではありません</li>\n<li>Jagu'e'r 会員のお申し込みは<a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfs6TQitRD7i3qGbPk3mkUxxUZFuKcebls_3uweUHiNuSyh7w/viewform\" rel=\"nofollow\">こちら</a></li>\n<li>Jagu'e'r オブザーバビリティ分科会 への参加方法 : Jagu'e'r Slackチャンネルの <a href=\"https://japangooglecl-xxv7878.slack.com/archives/C0367PW2UJE\" rel=\"nofollow\">ch_オブザーバビリティ分科会</a> からご参加ください！</li>\n</ul>\n<p>↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑</p>\n<h1>🕐 アジェンダ</h1>\n<h2>18:30 - 20:30</h2>\n<p>登壇内容は変更になる可能性がありますのでご注意ください</p>\n<table>\n<thead>\n<tr>\n<th>時間(目安)</th>\n<th>セッションタイトル</th>\n<th>企業名</th>\n<th>Speaker</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30-18:35</td>\n<td>オープニング</td>\n<td>----</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>18:35-18:45</td>\n<td>スポンサーセッション</td>\n<td>Datadog Japan 合同会社</td>\n<td>----</td>\n</tr>\n<tr>\n<td>18:45-19:05</td>\n<td>（仮）Google Cloud における Managed OTel Collector へのディープダイブ</td>\n<td>Datadog Japan 合同会社</td>\n<td>逆井 氏</td>\n</tr>\n<tr>\n<td>19:05-19:25</td>\n<td>Observability Analytics で始める GKE オブザーバビリティ</td>\n<td>クラウドエース株式会社</td>\n<td>佐久間 氏</td>\n</tr>\n<tr>\n<td>19:25-19:45</td>\n<td>kubectl logsのその先へ、実は使えるGKEの色んなKubernetesログを追ってみよう</td>\n<td>Google Cloud Japan 合同会社</td>\n<td>石井 氏</td>\n</tr>\n<tr>\n<td>19:45-19:50</td>\n<td>休憩</td>\n<td>----</td>\n<td>----</td>\n</tr>\n<tr>\n<td>19:50-20:10</td>\n<td>（仮）GKEトラブルシューティングのための安全なエージェントの育て方</td>\n<td>株式会社Synspective</td>\n<td>新井 氏</td>\n</tr>\n<tr>\n<td>20:10-20:20</td>\n<td>Calico VPP における SRv6 egress path steering の実装</td>\n<td>東京都立産業技術高等専門学校</td>\n<td>中山 氏</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>初めてのKubernetes本番運用でハマった話</td>\n<td>株式会社Hajimari</td>\n<td>奥 氏</td>\n</tr>\n<tr>\n<td>20:30-20:35</td>\n<td>クロージング</td>\n<td>----</td>\n<td>----</td>\n</tr>\n<tr>\n<td>20:35-20:40</td>\n<td>撤収！</td>\n<td>----</td>\n<td>----</td>\n</tr>\n</tbody>\n</table>\n<h2>🎤 登壇者一覧</h2>\n<h3>逆井 / さかさい / <a href=\"https://x.com/k6s4i53rx\" rel=\"nofollow\">@k6s4i53rx</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1577991336472776704/bmkAMrOz_400x400.jpg\" width=\"150\"></p>\n<p><font size=\"3\"><strong> Datadog Japan 合同会社 </strong></font></p>\n<p><font size=\"3\"><strong> セールスエンジニア </strong></font></p>\n\n<blockquote>\n<p>Datadog Japan で Datadog やオブザーバビリティを広める仕事をしています。Google Developer Experts や OpenTelemetry Meetup コミュニティに所属しています。最近はマグマ式サウナにハマっているので、ドライサウナとの違いが気になる方はぜひ話しましょう！</p>\n</blockquote>\n<h3>佐久間 昂太</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/98725121?v=4\" width=\"150\"></p>\n<p><font size=\"3\"><strong> クラウドエース株式会社 </strong></font></p>\n<p><font size=\"3\"><strong> ソフトウェアエンジニア </strong></font></p>\n\n<blockquote>\n<p>新卒でクラウドエース株式会社に入社し、小売業界のお客様を中心にデリバリーを担当。\n現在は大規模な次世代 POS システムプロジェクトに参画。\nGKE 基盤の設計、サービスメッシュによるトラフィック制御、性能検証の推進などを行っている。</p>\n</blockquote>\n<h3>石井 翔 / <a href=\"https://x.com/kyasbal_k\" rel=\"nofollow\">@kyasbal_k</a></h3>\n<p><img src=\"https://media.connpass.com/thumbs/e8/f8/e8f8483ac566249c27240633321caa66.png\" width=\"150\"></p>\n<p><font size=\"3\"><strong> Google Cloud Japan 合同会社 </strong></font></p>\n<p><font size=\"3\"><strong> テクニカルソリューションズエンジニア </strong></font></p>\n\n<blockquote>\n<p>Google Cloud Japan のテクニカルサポートチームにて、Google Kubernetes Engine (GKE) や Google Distributed Cloud (GDC) を中心とした高度な技術課題の解決に従事。社内調査の効率化を目的として自ら開発したログ分析ツール「Kubernetes History Inspector」を OSS として公開。\nKubeCon Japan や Cloud Next Tokyo 等の技術カンファレンスへの登壇を通じ、広範な Kubernetes 環境における障害調査の知見を広く発信している。</p>\n</blockquote>\n<h3>新井 雅也 / <a href=\"https://x.com/msy78\" rel=\"nofollow\">@msy78</a></h3>\n<p><img src=\"https://ca.slack-edge.com/T01LMH91KNF-U02PR6ANAUW-f46b9d6ca57f-512\" width=\"150\"></p>\n<p><font size=\"3\"><strong> 株式会社 Synspective </strong></font></p>\n<p><font size=\"3\"><strong> プリンシパルアーキテクト </strong></font></p>\n\n<blockquote>\n<p>衛星の開発・運用を手掛けるSynspectiveにて、クラウドを中心とした技術力を活かしつつ、宇宙業界の発展に尽力している。\nAWS Container Hero (2022~)\nGoogle Developer Expert - Cloud (2024~)</p>\n</blockquote>\n<h3>中山 亮佑 <a href=\"https://x.com/rysknkym\" rel=\"nofollow\">@rysknkym</a></h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/78244973?v=4\" width=\"150\"></p>\n<p><font size=\"3\"><strong> 東京都立産業技術高等専門学校  </strong></font></p>\n<p><font size=\"3\"><strong> 情報システム工学コース 5年生 </strong></font></p>\n\n<blockquote>\n<p>Kubernetes Networking / Linux / SDN / OSS に関心があり、最近は Calico VPP の SRv6、BGP、CNAT 周辺を中心にコントリビューションを行っている。\n 現在は Calico VPP の SRv6 関連実装にコントリビュートしつつ、Kubernetes クラスタの egress gateway と DC バックボーンネットワークを BGP / SRv6 で接続するためのネットワーク制御を研究している。</p>\n</blockquote>\n<h3>奥 琉之介 <a href=\"https://x.com/Kobujee_53\" rel=\"nofollow\">@Kobujee_53</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1842005253493030912/a_wEg85t.jpg\" width=\"150\"></p>\n<p><font size=\"3\"><strong> 株式会社Hajimari  </strong></font></p>\n<p><font size=\"3\"><strong> ソフトウェアエンジニア </strong></font></p>\n\n<blockquote>\n<p>新卒でHajimariに入社し、様々なWEBサービスの開発・運用を担当。現在は、社内システムのインフラ管理・コーポレートセキュリティ・データ活用基盤など、全社に跨る技術課題の解決を目的としたチームの立ち上げに奔走中。</p>\n</blockquote>\n<p>運営チーム一同</p>",
+      "url": "https://jaguer-o11y-sre.connpass.com/event/383793/",
+      "image_url": "https://media.connpass.com/thumbs/f8/07/f80783695eafd71d429e97e91908f665.png",
+      "hash_tag": "o11y_jaguer",
+      "started_at": "2026-06-30T18:30:00+09:00",
+      "ended_at": "2026-06-30T20:30:00+09:00",
+      "published_at": "2026-05-26T12:55:04+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 15177,
+        "subdomain": "jaguer-o11y-sre",
+        "title": "Jagu'e'r オブザーバビリティ分科会",
+        "url": "https://jaguer-o11y-sre.connpass.com/"
+      },
+      "address": "〒100-0005 Tokyo, Chiyoda City, Marunouchi, 2 Chome−7−2 JPタワー 19F",
+      "place": "Datadog 東京オフィス",
+      "lat": "35.679845300000",
+      "lon": "139.764728800000",
+      "owner_id": 667626,
+      "owner_nickname": "parupappa2929",
+      "owner_display_name": "Annosuke Yokoo",
+      "accepted": 85,
+      "waiting": 0,
+      "updated_at": "2026-06-29T23:35:39+09:00"
     }
   ]
 }
