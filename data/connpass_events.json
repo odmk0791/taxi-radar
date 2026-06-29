@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T04:46:31.637901+09:00",
+  "fetched_at": "2026-06-30T06:18:42.202174+09:00",
   "date": "20260630",
   "count": 9,
   "events": [
@@ -216,7 +216,7 @@
       "owner_id": 992322,
       "owner_nickname": "ipod_nana7",
       "owner_display_name": "Nana Ota",
-      "accepted": 111,
+      "accepted": 110,
       "waiting": 2,
       "updated_at": "2026-06-25T15:23:09+09:00"
     },
