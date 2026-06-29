@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T02:30:02.507523+09:00",
+  "fetched_at": "2026-06-30T04:46:31.637901+09:00",
   "date": "20260630",
   "count": 9,
   "events": [
@@ -123,7 +123,7 @@
       "owner_id": 14580,
       "owner_nickname": "shota_inoue_9212",
       "owner_display_name": "syossan27",
-      "accepted": 43,
+      "accepted": 42,
       "waiting": 0,
       "updated_at": "2026-05-27T20:50:52+09:00"
     },
@@ -221,37 +221,6 @@
       "updated_at": "2026-06-25T15:23:09+09:00"
     },
     {
-      "id": 395442,
-      "title": "日本MySQLユーザ会会(MyNA会) 2026年06月",
-      "catch": "ワイルドに変化し続けるMySQLの最新情報をキャッチアップしちゃおう",
-      "description": "<h2>MySQLの最新のコミュニティ戦略を情報をキャッチアップしよう</h2>\n<p>5月26日にアメリカで開催されたMySQL Contributor Summitでは、AmazonやPerconaなどから様々な新機能の提案やMySQLの開発方針に対するフィードバックが示されました。</p>\n<p>今回のイベントでは、MySQLのコミュニティ・チームのリーダーであるHeather VanCura(ヘザー・バンクーラ)氏が来日され、MySQLのコミュニティとの連携に関する指針である Community Engagement Strategy や最新の状況を紹介していただきます。また、MySQL Contributor Summitでは、AWSはRETURNING句やVECTORデータ型、コンポーネント・フレーム枠の拡張などを提案しています。AWSでオープンソースデータベースの普及拡大などに注力されている Andrew Bowles(アンドリュー・ボウレス)氏より、オープンソースへのコントリビューションをテーマとした講演も予定しています。</p>\n<p>今回の機会で もう1つ重要なのは、日本のMySQLユーザの皆さんからHeatherさんへのフィードバックです。個別の機能に関する要望はもちろん、オラクルさんのコミュニティとの連携の方針に対する意見や感想をお伝えする貴重な機会とできればと思います。</p>\n<h2>開催概要</h2>\n<ul>\n<li>開催日時： 2026年6月30日(火) 18:30から (18:00 - 入場可能)</li>\n<li>開催形態： オフライン(青山＠東京)で開催  (YouTube Live配信あり）</li>\n<li>テーマ： MySQLの新しいコミュニティとの連携方針とは？</li>\n</ul>\n<h2>登壇者</h2>\n<p><strong>Heather VanCura</strong>, Vice President of External Standards &amp; Community Engagement, Oracle</p>\n<p>コミュニティ関連ではJavaコミュニティのプログラムやMySQLコミュニティ・チームを担当。サン・マイクロシステムズの時代より20年以上にわたり、グローバルのエコシステムやコミュニティの成長支援、標準化などを担当。</p>\n<p><strong>Andrew Bowles</strong>, Principal WW GTM Specialist, AWS</p>\n<p>オープンソースデータベース、サードパーティISVとのパートナーシップ、戦略的な顧客開拓と次世代ネイティブサービスの統合を通じた新技術の普及拡大に注力。グローバルSI企業でのリーダーシップ経験を持ち、職場の多様性とAWSのイノベーション文化を推進。</p>\n<h2>内容</h2>\n<p>↓こんな感じの内容をざっくりお話しししながらご質問やご要望など議論できればと考えています。英語のセッションには逐次通訳が入る予定です。</p>\n<ol>\n<li>MySQLのコミュニティ戦略最新動向 by Heather VanCuraさん</li>\n<li>AWS x Open Source Community Collaboration by Andrew Bowlesさん</li>\n<li>日本からリモートでMySQL Contributor Summitに参加された方からの講演</li>\n<li>Heatherさんへのフィードバックや質疑応答</li>\n</ol>\n<h2>予定進行</h2>\n<p>上記の1.と2.はそれぞれ30分ずつで、残りの時間は質疑応答などの時間をとりたいと思います。現地での質疑のほか、<a href=\"http://Sli.do\" rel=\"nofollow\">Sli.do</a> の使用も予定しています。</p>\n<h2>大事なこと</h2>\n<ul>\n<li>アルコールは持ち込めません！！</li>\n<li>施設の保安上の観点から会場での懇親会は開催いたしません。あらかじめご了承ください。</li>\n</ul>",
-      "url": "https://mysql.connpass.com/event/395442/",
-      "image_url": "https://media.connpass.com/thumbs/a1/90/a19027c3a62ad4b598b95c79abae1b49.png",
-      "hash_tag": "mysql_jp",
-      "started_at": "2026-06-30T18:30:00+09:00",
-      "ended_at": "2026-06-30T20:30:00+09:00",
-      "published_at": "2026-06-04T19:58:53+09:00",
-      "limit": 130,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 8615,
-        "subdomain": "mysql",
-        "title": "MyNA(日本MySQLユーザ会)",
-        "url": "https://mysql.connpass.com/"
-      },
-      "address": "東京都港区北青山2-5-8  オラクル青山センター",
-      "place": "日本オラクル 青山センター13F",
-      "lat": "35.671246100000",
-      "lon": "139.718562900000",
-      "owner_id": 58062,
-      "owner_nickname": "sakaik1",
-      "owner_display_name": "sakaik",
-      "accepted": 39,
-      "waiting": 0,
-      "updated_at": "2026-06-29T12:32:44+09:00"
-    },
-    {
       "id": 383793,
       "title": "【K8s Noviceコラボ】Jagu'e'r O11y分科会 K8s/GKE O11yの第一歩",
       "catch": "Jagu'e'r オブザーバビリティ分科会 × Kubernetes Novice Meetup",
@@ -281,6 +250,37 @@
       "accepted": 83,
       "waiting": 0,
       "updated_at": "2026-06-29T23:35:39+09:00"
+    },
+    {
+      "id": 395442,
+      "title": "日本MySQLユーザ会会(MyNA会) 2026年06月",
+      "catch": "ワイルドに変化し続けるMySQLの最新情報をキャッチアップしちゃおう",
+      "description": "<h2>MySQLの最新のコミュニティ戦略を情報をキャッチアップしよう</h2>\n<p>5月26日にアメリカで開催されたMySQL Contributor Summitでは、AmazonやPerconaなどから様々な新機能の提案やMySQLの開発方針に対するフィードバックが示されました。</p>\n<p>今回のイベントでは、MySQLのコミュニティ・チームのリーダーであるHeather VanCura(ヘザー・バンクーラ)氏が来日され、MySQLのコミュニティとの連携に関する指針である Community Engagement Strategy や最新の状況を紹介していただきます。また、MySQL Contributor Summitでは、AWSはRETURNING句やVECTORデータ型、コンポーネント・フレーム枠の拡張などを提案しています。AWSでオープンソースデータベースの普及拡大などに注力されている Andrew Bowles(アンドリュー・ボウレス)氏より、オープンソースへのコントリビューションをテーマとした講演も予定しています。</p>\n<p>今回の機会で もう1つ重要なのは、日本のMySQLユーザの皆さんからHeatherさんへのフィードバックです。個別の機能に関する要望はもちろん、オラクルさんのコミュニティとの連携の方針に対する意見や感想をお伝えする貴重な機会とできればと思います。</p>\n<h2>開催概要</h2>\n<ul>\n<li>開催日時： 2026年6月30日(火) 18:30から (18:00 - 入場可能)</li>\n<li>開催形態： オフライン(青山＠東京)で開催  (YouTube Live配信あり）</li>\n<li>テーマ： MySQLの新しいコミュニティとの連携方針とは？</li>\n</ul>\n<h2>登壇者</h2>\n<p><strong>Heather VanCura</strong>, Vice President of External Standards &amp; Community Engagement, Oracle</p>\n<p>コミュニティ関連ではJavaコミュニティのプログラムやMySQLコミュニティ・チームを担当。サン・マイクロシステムズの時代より20年以上にわたり、グローバルのエコシステムやコミュニティの成長支援、標準化などを担当。</p>\n<p><strong>Andrew Bowles</strong>, Principal WW GTM Specialist, AWS</p>\n<p>オープンソースデータベース、サードパーティISVとのパートナーシップ、戦略的な顧客開拓と次世代ネイティブサービスの統合を通じた新技術の普及拡大に注力。グローバルSI企業でのリーダーシップ経験を持ち、職場の多様性とAWSのイノベーション文化を推進。</p>\n<h2>内容</h2>\n<p>↓こんな感じの内容をざっくりお話しししながらご質問やご要望など議論できればと考えています。英語のセッションには逐次通訳が入る予定です。</p>\n<ol>\n<li>MySQLのコミュニティ戦略最新動向 by Heather VanCuraさん</li>\n<li>AWS x Open Source Community Collaboration by Andrew Bowlesさん</li>\n<li>日本からリモートでMySQL Contributor Summitに参加された方からの講演</li>\n<li>Heatherさんへのフィードバックや質疑応答</li>\n</ol>\n<h2>予定進行</h2>\n<p>上記の1.と2.はそれぞれ30分ずつで、残りの時間は質疑応答などの時間をとりたいと思います。現地での質疑のほか、<a href=\"http://Sli.do\" rel=\"nofollow\">Sli.do</a> の使用も予定しています。</p>\n<h2>大事なこと</h2>\n<ul>\n<li>アルコールは持ち込めません！！</li>\n<li>施設の保安上の観点から会場での懇親会は開催いたしません。あらかじめご了承ください。</li>\n</ul>",
+      "url": "https://mysql.connpass.com/event/395442/",
+      "image_url": "https://media.connpass.com/thumbs/a1/90/a19027c3a62ad4b598b95c79abae1b49.png",
+      "hash_tag": "mysql_jp",
+      "started_at": "2026-06-30T18:30:00+09:00",
+      "ended_at": "2026-06-30T20:30:00+09:00",
+      "published_at": "2026-06-04T19:58:53+09:00",
+      "limit": 130,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 8615,
+        "subdomain": "mysql",
+        "title": "MyNA(日本MySQLユーザ会)",
+        "url": "https://mysql.connpass.com/"
+      },
+      "address": "東京都港区北青山2-5-8  オラクル青山センター",
+      "place": "日本オラクル 青山センター13F",
+      "lat": "35.671246100000",
+      "lon": "139.718562900000",
+      "owner_id": 58062,
+      "owner_nickname": "sakaik1",
+      "owner_display_name": "sakaik",
+      "accepted": 40,
+      "waiting": 0,
+      "updated_at": "2026-06-29T12:32:44+09:00"
     }
   ]
 }
