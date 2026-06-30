@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T19:28:17.891981+09:00",
+  "fetched_at": "2026-06-30T22:05:54.018119+09:00",
   "date": "20260630",
   "count": 9,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-02T16:55:41+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -78,7 +78,7 @@
       "published_at": "2026-05-29T13:15:55+09:00",
       "limit": 139,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 8889,
         "subdomain": "uniquevision",
@@ -92,7 +92,7 @@
       "owner_id": 441072,
       "owner_nickname": "uv_recruit",
       "owner_display_name": "ユニークビジョン",
-      "accepted": 16,
+      "accepted": 17,
       "waiting": 0,
       "updated_at": "2026-06-30T11:23:16+09:00"
     },
@@ -100,7 +100,7 @@
       "id": 392834,
       "title": "ゆるAI勉強会 #1",
       "catch": "",
-      "description": "<h2>イベント概要</h2>\n<p>ゆるAI勉強会は、ゆるくAIを学ぶをテーマに開催される初心者大歓迎の勉強会です。</p>\n<p>ChatGPTとか、Claudeとか、Geminiとか、画像生成とか、便利そうなAIツールとか色々あるけども、\n「これ使ってみたら面白かった」「なんか仕事で使えそうだった」「よくわからないけどすごかった」\nみたいにゆる〜く話を、共有できればと思っています！</p>\n<p>初回のテーマは <strong>『ゆるくAIの話をしよう』</strong> です 🤖</p>\n<p>AIがどんどん身近になってきている今日この頃。<br>\nChatGPT、Claude、Gemini、画像生成、AIエージェント、業務活用、個人開発、プロンプトの工夫など、AIにまつわる話題をゆるく持ち寄って話す回です！</p>\n<p>「最近こんなAIツールを使ってみた」\n「仕事でこういうふうに使ってみた」\n「よくわからないけど、これ面白かった」\n「AIで遊んでいたらこんなことができた」</p>\n<p>みたいな話をワイワイ共有しましょう。</p>\n<p>AIにめちゃくちゃ詳しい方も、最近ちょっと触り始めた方も、これから触ってみたい方も、ぜひお気軽にご参加ください！</p>\n<p>Xハッシュタグ: <code>#yuruai</code></p>\n<h2>発表枠について</h2>\n<p>今回は以下の発表枠を予定しています。</p>\n<ul>\n<li>10分発表枠：6名</li>\n</ul>\n<p>テーマはAIに関する内容であれば幅広く歓迎です。</p>\n<p>たとえば、以下のような内容を想定しています。</p>\n<ul>\n<li>ChatGPT / Claude / Gemini などを使ってみた話</li>\n<li>AIを仕事で使ってみた話</li>\n<li>AIを日常で使ってみた話</li>\n<li>便利だったAIツール紹介</li>\n<li>プロンプトの工夫</li>\n<li>AIエージェントを試してみた話</li>\n<li>画像生成・動画生成・音声生成で遊んでみた話</li>\n<li>AIで個人開発してみた話</li>\n<li>AI活用で失敗した話</li>\n<li>最近気になっているAIニュース</li>\n<li>完全には理解してないけど面白かったAIの話</li>\n</ul>\n<p>発表の完成度は高くなくても大丈夫です。<br>\n「試してみたらこんな感じでした」くらいのゆるい共有も大歓迎です。</p>\n<h2>日時</h2>\n<p>2026/06/30(火) 19:20 ~ 21:40（開場 19:00）</p>\n<h2>場所</h2>\n<p>レッドハット株式会社 本社\n〒150-0013 東京都渋谷区恵比寿4丁目1番18号 恵比寿ネオナート3階</p>\n<p>JR・東京メトロ日比谷線「恵比寿駅」東口 徒歩約1分</p>\n<p>※入館方法などは追ってご案内します。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>アジェンダ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:20</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:20-19:25</td>\n<td>挨拶&amp;イベント説明</td>\n</tr>\n<tr>\n<td>19:25-19:35</td>\n<td>会場スポンサーセッション</td>\n</tr>\n<tr>\n<td>19:35-19:45</td>\n<td>10分発表枠①：<strong>『フルAIで個人開発して学んだあれこれ』</strong> - Isao Shimizu</td>\n</tr>\n<tr>\n<td>19:45-19:55</td>\n<td>10分発表枠②：<strong>『AI Agentをシステムに組み込む前にゆるく向き合ってみる』</strong> - hayama17</td>\n</tr>\n<tr>\n<td>19:55-20:05</td>\n<td>10分発表枠③：<strong>『AIをフル活用してオンコール機能のプロトタイプを2日で作った話』</strong> - nari_ex</td>\n</tr>\n<tr>\n<td>20:05-20:10</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>20:10-20:20</td>\n<td>10分発表枠④：<strong>『飲食経営もAIで。レジ締めやハンディシステムをつくってる話』</strong> - VTRyo</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>10分発表枠⑤：<strong>『AIネイティブな開発についてのモヤモヤを吐き出す』</strong> - maru</td>\n</tr>\n<tr>\n<td>20:30-20:40</td>\n<td>10分発表枠⑥：<strong>『AIと運用』</strong> - ryuichi1208</td>\n</tr>\n<tr>\n<td>20:40-20:45</td>\n<td>アンケート回答・お知らせ</td>\n</tr>\n<tr>\n<td>20:45-21:40</td>\n<td>交流タイム</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは変更になる可能性があります。</p>\n<h3>ご注意</h3>\n<p><strong>交流タイムでは食事のご提供はございません。</strong></p>\n<p>飲み物などの提供有無については、決まり次第追記します。</p>\n<h2>会場スポンサー：レッドハット株式会社 様</h2>\n<p><img src=\"https://i.gyazo.com/6cae835218a6572ab31f9f0dd7452b8a.jpg\" width=\"100%\"></p>\n<p>Red hatは、オープン・ハイブリッドクラウド・テクノロジーのリーダー として、Linux、AI、仮想化、自動化といった柔軟なハイブリッドクラウド・ソリューション を、世界中のコミュニティやお客様、パートナーと連携しながら開発・提供しています。</p>\n<p>Red Hat Enterprise Linux、OpenShift、Ansible Automation Platformなどを通じて、組織が一貫性・選択肢・制御性を確保しながら自信を持ってオープンなイノベーションを実現できるよう支援しています。</p>\n<p><a href=\"https://www.redhat.com/\" rel=\"nofollow\">https://www.redhat.com/</a></p>\n<h2>参加に関するご注意</h2>\n<p>現地参加の際には、お名前、所属、メールアドレスの情報が入館申請のために必要となります。参加登録時アンケートに正確にご入力くださいますようご協力をお願い致します。全ての方にアンケートは表示されますが、オンライン参加の方においては、任意の内容にてご回答頂ければ結構です。</p>\n<p>また、本ベント内容に関係せず、飲食や勧誘などを主目的とした参加は固くお断りします。また、公序良俗に反する行動や、ほかの参加者への迷惑となる行為などは一切容認致しません。発見次第、その場でご退場いただきます。退場の指示に従えない場合は、然るべき対応を取らせて頂きますので予めご了承ください。</p>\n<h2>行動規範</h2>\n<p>私たちは勉強会に参加されるみなさんが、ジェンダー、性的指向、障碍、身体的外観、身体の大きさ、人種、宗教その他のいかなる属性に関わらず、安心して参加できる場であることを大切にしています。</p>\n<p>参加者間でのいかなる形のハラスメントも容認しません。<br>\n性的な表現や画像、参加者を不快にさせる発言・行動は、本勉強会におけるいずれの発表・会話においても許容いたしません。</p>\n<p>当規則に違反する参加者は、主催者の裁量により退出をお願いする可能性があります。</p>\n<p>We are dedicated to providing a harassment-free event experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery are not appropriate for any presentations or conversations. Participants violating these rules may be sanctioned or expelled from the event at the discretion of the organizers.</p>\n<h2>迷惑行為について</h2>\n<p>他の方への迷惑行為を運営が確認した場合には、行動を改めるよう警告をさせていただきます。<br>\nそれでも改善が見られない場合は、退出していただく場合があります。</p>\n<p>また、他の参加者や運営への迷惑行為を目撃した、または受けたと感じた場合には、会場内の運営スタッフまでご連絡ください。</p>\n<p>ボットやスパム、他イベントでのキャンセル率が高いアカウント、運営が不適切と判断したアカウントによる登録があった場合、運営の判断によって強制的にキャンセルする場合があります。</p>",
+      "description": "<h2>イベント概要</h2>\n<p>ゆるAI勉強会は、ゆるくAIを学ぶをテーマに開催される初心者大歓迎の勉強会です。</p>\n<p>ChatGPTとか、Claudeとか、Geminiとか、画像生成とか、便利そうなAIツールとか色々あるけども、\n「これ使ってみたら面白かった」「なんか仕事で使えそうだった」「よくわからないけどすごかった」\nみたいにゆる〜く話を、共有できればと思っています！</p>\n<p>初回のテーマは <strong>『ゆるくAIの話をしよう』</strong> です 🤖</p>\n<p>AIがどんどん身近になってきている今日この頃。<br>\nChatGPT、Claude、Gemini、画像生成、AIエージェント、業務活用、個人開発、プロンプトの工夫など、AIにまつわる話題をゆるく持ち寄って話す回です！</p>\n<p>「最近こんなAIツールを使ってみた」\n「仕事でこういうふうに使ってみた」\n「よくわからないけど、これ面白かった」\n「AIで遊んでいたらこんなことができた」</p>\n<p>みたいな話をワイワイ共有しましょう。</p>\n<p>AIにめちゃくちゃ詳しい方も、最近ちょっと触り始めた方も、これから触ってみたい方も、ぜひお気軽にご参加ください！</p>\n<p>Xハッシュタグ: <code>#yuruai</code></p>\n<h2>発表枠について</h2>\n<p>今回は以下の発表枠を予定しています。</p>\n<ul>\n<li>10分発表枠：6名</li>\n</ul>\n<p>テーマはAIに関する内容であれば幅広く歓迎です。</p>\n<p>たとえば、以下のような内容を想定しています。</p>\n<ul>\n<li>ChatGPT / Claude / Gemini などを使ってみた話</li>\n<li>AIを仕事で使ってみた話</li>\n<li>AIを日常で使ってみた話</li>\n<li>便利だったAIツール紹介</li>\n<li>プロンプトの工夫</li>\n<li>AIエージェントを試してみた話</li>\n<li>画像生成・動画生成・音声生成で遊んでみた話</li>\n<li>AIで個人開発してみた話</li>\n<li>AI活用で失敗した話</li>\n<li>最近気になっているAIニュース</li>\n<li>完全には理解してないけど面白かったAIの話</li>\n</ul>\n<p>発表の完成度は高くなくても大丈夫です。<br>\n「試してみたらこんな感じでした」くらいのゆるい共有も大歓迎です。</p>\n<h2>日時</h2>\n<p>2026/06/30(火) 19:20 ~ 21:40（開場 19:00）</p>\n<h2>場所</h2>\n<p>レッドハット株式会社 本社\n〒150-0013 東京都渋谷区恵比寿4丁目1番18号 恵比寿ネオナート3階</p>\n<p>JR・東京メトロ日比谷線「恵比寿駅」東口 徒歩約1分</p>\n<p>※入館方法などは追ってご案内します。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>アジェンダ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:20</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:20-19:25</td>\n<td>挨拶&amp;イベント説明</td>\n</tr>\n<tr>\n<td>19:25-19:35</td>\n<td>会場スポンサーセッション</td>\n</tr>\n<tr>\n<td>19:35-19:45</td>\n<td>10分発表枠①：<strong>『フルAIで個人開発して学んだあれこれ』</strong> - Isao Shimizu</td>\n</tr>\n<tr>\n<td>19:45-19:55</td>\n<td>10分発表枠②：<strong>『AI Agentをシステムに組み込む前にゆるく向き合ってみる』</strong> - hayama17</td>\n</tr>\n<tr>\n<td>19:55-20:05</td>\n<td>10分発表枠③：<strong>『AIをフル活用してオンコール機能のプロトタイプを2日で作った話』</strong> - nari_ex</td>\n</tr>\n<tr>\n<td>20:05-20:10</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>20:10-20:20</td>\n<td>10分発表枠④：<strong>『飲食経営もAIで。レジ締めやハンディシステムをつくってる話』</strong> - VTRyo</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>10分発表枠⑤：<strong>『AIネイティブな開発についてのモヤモヤを吐き出す』</strong> - maru</td>\n</tr>\n<tr>\n<td>20:30-20:40</td>\n<td>10分発表枠⑥：<strong>『AIと運用』</strong> - ryuichi1208</td>\n</tr>\n<tr>\n<td>20:40-20:45</td>\n<td>アンケート回答・お知らせ</td>\n</tr>\n<tr>\n<td>20:45-21:40</td>\n<td>交流タイム</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは変更になる可能性があります。</p>\n<h3>ご注意</h3>\n<p><strong>交流タイムでは食事のご提供はございません。</strong></p>\n<p>飲み物などの提供有無については、決まり次第追記します。</p>\n<h2>会場スポンサー：レッドハット株式会社 様</h2>\n<p><img src=\"https://i.gyazo.com/6cae835218a6572ab31f9f0dd7452b8a.jpg\" width=\"100%\"></p>\n<p>Red Hatは、オープン・ハイブリッドクラウド・テクノロジーのリーダー として、Linux、AI、仮想化、自動化といった柔軟なハイブリッドクラウド・ソリューション を、世界中のコミュニティやお客様、パートナーと連携しながら開発・提供しています。</p>\n<p>Red Hat Enterprise Linux、OpenShift、Ansible Automation Platformなどを通じて、組織が一貫性・選択肢・制御性を確保しながら自信を持ってオープンなイノベーションを実現できるよう支援しています。</p>\n<p><a href=\"https://www.redhat.com/\" rel=\"nofollow\">https://www.redhat.com/</a></p>\n<h2>参加に関するご注意</h2>\n<p>現地参加の際には、お名前、所属、メールアドレスの情報が入館申請のために必要となります。参加登録時アンケートに正確にご入力くださいますようご協力をお願い致します。全ての方にアンケートは表示されますが、オンライン参加の方においては、任意の内容にてご回答頂ければ結構です。</p>\n<p>また、本ベント内容に関係せず、飲食や勧誘などを主目的とした参加は固くお断りします。また、公序良俗に反する行動や、ほかの参加者への迷惑となる行為などは一切容認致しません。発見次第、その場でご退場いただきます。退場の指示に従えない場合は、然るべき対応を取らせて頂きますので予めご了承ください。</p>\n<h2>行動規範</h2>\n<p>私たちは勉強会に参加されるみなさんが、ジェンダー、性的指向、障碍、身体的外観、身体の大きさ、人種、宗教その他のいかなる属性に関わらず、安心して参加できる場であることを大切にしています。</p>\n<p>参加者間でのいかなる形のハラスメントも容認しません。<br>\n性的な表現や画像、参加者を不快にさせる発言・行動は、本勉強会におけるいずれの発表・会話においても許容いたしません。</p>\n<p>当規則に違反する参加者は、主催者の裁量により退出をお願いする可能性があります。</p>\n<p>We are dedicated to providing a harassment-free event experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery are not appropriate for any presentations or conversations. Participants violating these rules may be sanctioned or expelled from the event at the discretion of the organizers.</p>\n<h2>迷惑行為について</h2>\n<p>他の方への迷惑行為を運営が確認した場合には、行動を改めるよう警告をさせていただきます。<br>\nそれでも改善が見られない場合は、退出していただく場合があります。</p>\n<p>また、他の参加者や運営への迷惑行為を目撃した、または受けたと感じた場合には、会場内の運営スタッフまでご連絡ください。</p>\n<p>ボットやスパム、他イベントでのキャンセル率が高いアカウント、運営が不適切と判断したアカウントによる登録があった場合、運営の判断によって強制的にキャンセルする場合があります。</p>",
       "url": "https://yuru-ai.connpass.com/event/392834/",
       "image_url": "https://media.connpass.com/thumbs/4a/7e/4a7eb65889ec2f2abe5c5b15a5f750d8.png",
       "hash_tag": "yuruai",
@@ -109,7 +109,7 @@
       "published_at": "2026-05-25T10:37:31+09:00",
       "limit": 46,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17644,
         "subdomain": "yuru-ai",
@@ -125,7 +125,7 @@
       "owner_display_name": "syossan27",
       "accepted": 44,
       "waiting": 0,
-      "updated_at": "2026-06-30T18:12:36+09:00"
+      "updated_at": "2026-06-30T20:31:26+09:00"
     },
     {
       "id": 391001,
@@ -140,7 +140,7 @@
       "published_at": "2026-05-26T07:01:13+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1717,
         "subdomain": "hfs",
@@ -159,37 +159,6 @@
       "updated_at": "2026-05-26T07:01:13+09:00"
     },
     {
-      "id": 394351,
-      "title": "The SRE Backlog: 蔵出し事例共有会",
-      "catch": "最高の知見を眠らせない！",
-      "description": "<h2>概要</h2>\n<p>日々、急速に成長する多様なプロダクトやインフラと向き合う中で、エンジニアの手元には数多くの「実践知」が溜まっています。しかし、世の中には「最高の内容なのに、発表の枠が足りなくてまだ表に出せていない素晴らしいネタ（SRE Backlog）」が、私たち以外にもたくさん眠っているはずです。</p>\n<p>「アイデアや内容が素晴らしいのに、お披露目できないのはもったいない！」\nそれなら、LayerXで一挙に“蔵出し”して、みんなでワイワイ楽しむ事例共有会をやろう！というノリで企画されたのがこのイベントです。</p>\n<p>今回は、LayerXのSREメンバーに加え、バリエーション豊富なネタをもった勇者(登壇者)を公募します。\n熱量の高いディープな知見を20分のガッツリセッションと10分のライトニングトーク（LT）で一挙に大放出します。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>他社のSREやインフラ運用のリアルな泥臭い・濃い事例を聞きたい方</li>\n<li>LayerXのSREチームがどんな技術的挑戦をしているか知りたい方</li>\n<li>エンジニア同士で熱く、楽しく技術交流をしたい方</li>\n</ul>\n<h2>日時・場所</h2>\n<ul>\n<li><strong>日時</strong>: 2026年6月30日（火）19:00〜21:00（開場18:40）</li>\n<li><strong>開催場所</strong>: 株式会社LayerX（銀座松竹スクエア 5階）</li>\n</ul>\n<h2>開催形式</h2>\n<ul>\n<li>ハイブリッド開催</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:40~19:00</td>\n<td>会場OPEN・ご挨拶</td>\n<td>ー</td>\n</tr>\n<tr>\n<td>19:00-19:05</td>\n<td>オープニング</td>\n<td>Ryo Yoshii (Yosh)</td>\n</tr>\n<tr>\n<td>19:05~19:25</td>\n<td>4人目のSREはAgent: Ai WorkforceにおけるSRE Agent化計画</td>\n<td>Yuki Tanimura (tanimu)</td>\n</tr>\n<tr>\n<td>19:25~19:45</td>\n<td>tcpdumpで追うDatastream障害 〜SSHトンネル断の調査と、Transit Gateway VPNリアーキ設計〜</td>\n<td>徳富 博 様</td>\n</tr>\n<tr>\n<td>19:45~20:05</td>\n<td>【FinOps】データドリブンな意思決定を目指して</td>\n<td>kaita 様</td>\n</tr>\n<tr>\n<td>20:05-20:15</td>\n<td>休憩&amp;バッファ</td>\n<td></td>\n</tr>\n<tr>\n<td>20:15-20:25</td>\n<td>SRE依頼をセルフサービス化する 〜「助けてSRE」を Claude Skills で Pull Request に変えた話〜</td>\n<td>Kenta Ishida (ishiken)</td>\n</tr>\n<tr>\n<td>20:25-20:35</td>\n<td>PoCしていたアラート調査向けAIエージェントの本番導入とその後(仮)</td>\n<td>Sadayoshi Tada</td>\n</tr>\n<tr>\n<td>20:35-20:45</td>\n<td>SRE歴2ヶ月でも開発6年の知見を活かして、チームで止まっていた環境改善を前に進めた話</td>\n<td>大野厚 様</td>\n</tr>\n<tr>\n<td>20:45-20:55</td>\n<td>AIで運用をスケールする (仮)</td>\n<td>徳原 晋一 様</td>\n</tr>\n<tr>\n<td>20:55~21:00</td>\n<td>アンケート記入, クロージング</td>\n<td>Ryo Yoshii (Yosh)</td>\n</tr>\n</tbody>\n</table>\n<p>※講演内容・プログラムは都合により変更となる場合があります。あらかじめご了承ください。</p>\n<h2>株式会社LayerXについて</h2>\n<p>LayerXは、「すべての経済活動を、デジタル化する。」をミッションに掲げるAIカンパニーです。バックオフィス向けAIエージェントサービス「バクラク」事業、資産運用サービス「ALTERNA（オルタナ）」を提供するFintech事業、エンタープライズ向けAIプラットフォーム「Ai Workforce」事業などの複合的な事業を通して日本の社会課題を解決し、AIの力で人々の創造力がより発揮される未来をつくります。</p>\n<p>コーポレートサイト: <a href=\"https://layerx.co.jp/\" rel=\"nofollow\">https://layerx.co.jp/</a></p>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<h3>行動規範</h3>\n<ul>\n<li><a href=\"https://jobs.layerx.co.jp/code-of-conduct\" rel=\"nofollow\">LayerX イベント行動規範</a></li>\n</ul>\n<h3>プライバシーポリシー</h3>\n<p>本イベントでご提供いただいた個人情報は、イベントの運営・管理、イベントの改善又は新規企画のための分析、採用情報等のご案内で利用いたします。</p>\n<ul>\n<li><a href=\"https://layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX プライバシーポリシー</a></li>\n<li><a href=\"https://jobs.layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX 採用プライバシーポリシー</a></li>\n</ul>\n<h2>注意事項</h2>\n<ul>\n<li>お席に限りがございますため、お早めにお申し込みください。欠席される場合は、お手数ですが速やかにキャンセル処理をお願いいたします。</li>\n<li>本勉強会の目的は技術交流です。知識の共有や参加者同士の交流を目的としない方の参加はお断りします。</li>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</li>\n<li>セールスやリクルーティング目的など、趣旨にそぐわないと主催者側で判断した場合にはご退席いただく場合がございます。</li>\n<li>イベント当日の様子を写真撮影・SNS 発信することは可能です。他人のプライバシーに十分配慮してくださるようお願い申し上げます。</li>\n<li>動画撮影は禁止にさせていただきます。ご了承ください。</li>\n<li>現地参加の方々へ、意図せずオンライン配信にお姿が映り込む可能性があります。ご了承ください。</li>\n<li>登壇枠、LT枠は抽選です。当選された方はアンケートで回答されたメールアドレス宛に連絡します。返信が無い場合は当選取り消しとなる場合がございます。</li>\n</ul>",
-      "url": "https://layerx.connpass.com/event/394351/",
-      "image_url": "https://media.connpass.com/thumbs/ad/72/ad72a0b259c0135a8a9fc790539d0d66.png",
-      "hash_tag": "LayerXSRE",
-      "started_at": "2026-06-30T19:00:00+09:00",
-      "ended_at": "2026-06-30T21:00:00+09:00",
-      "published_at": "2026-05-22T15:19:32+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 6108,
-        "subdomain": "layerx",
-        "title": "LayerX",
-        "url": "https://layerx.connpass.com/"
-      },
-      "address": "東京都中央区築地1-13-1 銀座松竹スクエア5階",
-      "place": "株式会社 LayerX 東銀座オフィス",
-      "lat": "35.668390500000",
-      "lon": "139.769413700000",
-      "owner_id": 992322,
-      "owner_nickname": "ipod_nana7",
-      "owner_display_name": "Nana Ota",
-      "accepted": 120,
-      "waiting": 2,
-      "updated_at": "2026-06-25T15:23:09+09:00"
-    },
-    {
       "id": 395509,
       "title": "生成AI時代の持続可能なデータ流通へ — ソフトバンクが挑む「データエコシステム基盤」とは",
       "catch": "SoftBank Tech Night",
@@ -202,7 +171,7 @@
       "published_at": "2026-06-11T14:24:02+09:00",
       "limit": 140,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 11349,
         "subdomain": "sbtechnight",
@@ -221,6 +190,37 @@
       "updated_at": "2026-06-30T16:46:26+09:00"
     },
     {
+      "id": 394351,
+      "title": "The SRE Backlog: 蔵出し事例共有会",
+      "catch": "最高の知見を眠らせない！",
+      "description": "<h2>概要</h2>\n<p>日々、急速に成長する多様なプロダクトやインフラと向き合う中で、エンジニアの手元には数多くの「実践知」が溜まっています。しかし、世の中には「最高の内容なのに、発表の枠が足りなくてまだ表に出せていない素晴らしいネタ（SRE Backlog）」が、私たち以外にもたくさん眠っているはずです。</p>\n<p>「アイデアや内容が素晴らしいのに、お披露目できないのはもったいない！」\nそれなら、LayerXで一挙に“蔵出し”して、みんなでワイワイ楽しむ事例共有会をやろう！というノリで企画されたのがこのイベントです。</p>\n<p>今回は、LayerXのSREメンバーに加え、バリエーション豊富なネタをもった勇者(登壇者)を公募します。\n熱量の高いディープな知見を20分のガッツリセッションと10分のライトニングトーク（LT）で一挙に大放出します。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>他社のSREやインフラ運用のリアルな泥臭い・濃い事例を聞きたい方</li>\n<li>LayerXのSREチームがどんな技術的挑戦をしているか知りたい方</li>\n<li>エンジニア同士で熱く、楽しく技術交流をしたい方</li>\n</ul>\n<h2>日時・場所</h2>\n<ul>\n<li><strong>日時</strong>: 2026年6月30日（火）19:00〜21:00（開場18:40）</li>\n<li><strong>開催場所</strong>: 株式会社LayerX（銀座松竹スクエア 5階）</li>\n</ul>\n<h2>開催形式</h2>\n<ul>\n<li>ハイブリッド開催</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:40~19:00</td>\n<td>会場OPEN・ご挨拶</td>\n<td>ー</td>\n</tr>\n<tr>\n<td>19:00-19:05</td>\n<td>オープニング</td>\n<td>Ryo Yoshii (Yosh)</td>\n</tr>\n<tr>\n<td>19:05~19:25</td>\n<td>4人目のSREはAgent: Ai WorkforceにおけるSRE Agent化計画</td>\n<td>Yuki Tanimura (tanimu)</td>\n</tr>\n<tr>\n<td>19:25~19:45</td>\n<td>tcpdumpで追うDatastream障害 〜SSHトンネル断の調査と、Transit Gateway VPNリアーキ設計〜</td>\n<td>徳富 博 様</td>\n</tr>\n<tr>\n<td>19:45~20:05</td>\n<td>【FinOps】データドリブンな意思決定を目指して</td>\n<td>kaita 様</td>\n</tr>\n<tr>\n<td>20:05-20:15</td>\n<td>休憩&amp;バッファ</td>\n<td></td>\n</tr>\n<tr>\n<td>20:15-20:25</td>\n<td>SRE依頼をセルフサービス化する 〜「助けてSRE」を Claude Skills で Pull Request に変えた話〜</td>\n<td>Kenta Ishida (ishiken)</td>\n</tr>\n<tr>\n<td>20:25-20:35</td>\n<td>PoCしていたアラート調査向けAIエージェントの本番導入とその後(仮)</td>\n<td>Sadayoshi Tada</td>\n</tr>\n<tr>\n<td>20:35-20:45</td>\n<td>SRE歴2ヶ月でも開発6年の知見を活かして、チームで止まっていた環境改善を前に進めた話</td>\n<td>大野厚 様</td>\n</tr>\n<tr>\n<td>20:45-20:55</td>\n<td>AIで運用をスケールする (仮)</td>\n<td>徳原 晋一 様</td>\n</tr>\n<tr>\n<td>20:55~21:00</td>\n<td>アンケート記入, クロージング</td>\n<td>Ryo Yoshii (Yosh)</td>\n</tr>\n</tbody>\n</table>\n<p>※講演内容・プログラムは都合により変更となる場合があります。あらかじめご了承ください。</p>\n<h2>株式会社LayerXについて</h2>\n<p>LayerXは、「すべての経済活動を、デジタル化する。」をミッションに掲げるAIカンパニーです。バックオフィス向けAIエージェントサービス「バクラク」事業、資産運用サービス「ALTERNA（オルタナ）」を提供するFintech事業、エンタープライズ向けAIプラットフォーム「Ai Workforce」事業などの複合的な事業を通して日本の社会課題を解決し、AIの力で人々の創造力がより発揮される未来をつくります。</p>\n<p>コーポレートサイト: <a href=\"https://layerx.co.jp/\" rel=\"nofollow\">https://layerx.co.jp/</a></p>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<h3>行動規範</h3>\n<ul>\n<li><a href=\"https://jobs.layerx.co.jp/code-of-conduct\" rel=\"nofollow\">LayerX イベント行動規範</a></li>\n</ul>\n<h3>プライバシーポリシー</h3>\n<p>本イベントでご提供いただいた個人情報は、イベントの運営・管理、イベントの改善又は新規企画のための分析、採用情報等のご案内で利用いたします。</p>\n<ul>\n<li><a href=\"https://layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX プライバシーポリシー</a></li>\n<li><a href=\"https://jobs.layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX 採用プライバシーポリシー</a></li>\n</ul>\n<h2>注意事項</h2>\n<ul>\n<li>お席に限りがございますため、お早めにお申し込みください。欠席される場合は、お手数ですが速やかにキャンセル処理をお願いいたします。</li>\n<li>本勉強会の目的は技術交流です。知識の共有や参加者同士の交流を目的としない方の参加はお断りします。</li>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</li>\n<li>セールスやリクルーティング目的など、趣旨にそぐわないと主催者側で判断した場合にはご退席いただく場合がございます。</li>\n<li>イベント当日の様子を写真撮影・SNS 発信することは可能です。他人のプライバシーに十分配慮してくださるようお願い申し上げます。</li>\n<li>動画撮影は禁止にさせていただきます。ご了承ください。</li>\n<li>現地参加の方々へ、意図せずオンライン配信にお姿が映り込む可能性があります。ご了承ください。</li>\n<li>登壇枠、LT枠は抽選です。当選された方はアンケートで回答されたメールアドレス宛に連絡します。返信が無い場合は当選取り消しとなる場合がございます。</li>\n</ul>",
+      "url": "https://layerx.connpass.com/event/394351/",
+      "image_url": "https://media.connpass.com/thumbs/ad/72/ad72a0b259c0135a8a9fc790539d0d66.png",
+      "hash_tag": "LayerXSRE",
+      "started_at": "2026-06-30T19:00:00+09:00",
+      "ended_at": "2026-06-30T21:00:00+09:00",
+      "published_at": "2026-05-22T15:19:32+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 6108,
+        "subdomain": "layerx",
+        "title": "LayerX",
+        "url": "https://layerx.connpass.com/"
+      },
+      "address": "東京都中央区築地1-13-1 銀座松竹スクエア5階",
+      "place": "株式会社 LayerX 東銀座オフィス",
+      "lat": "35.668390500000",
+      "lon": "139.769413700000",
+      "owner_id": 992322,
+      "owner_nickname": "ipod_nana7",
+      "owner_display_name": "Nana Ota",
+      "accepted": 122,
+      "waiting": 2,
+      "updated_at": "2026-06-25T15:23:09+09:00"
+    },
+    {
       "id": 383793,
       "title": "【K8s Noviceコラボ】Jagu'e'r O11y分科会 K8s/GKE O11yの第一歩",
       "catch": "Jagu'e'r オブザーバビリティ分科会 × Kubernetes Novice Meetup",
@@ -233,7 +233,7 @@
       "published_at": "2026-05-26T12:55:04+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15177,
         "subdomain": "jaguer-o11y-sre",
@@ -264,7 +264,7 @@
       "published_at": "2026-06-04T19:58:53+09:00",
       "limit": 130,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8615,
         "subdomain": "mysql",
