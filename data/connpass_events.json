@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T11:55:02.001631+09:00",
+  "fetched_at": "2026-06-30T15:51:19.170758+09:00",
   "date": "20260630",
   "count": 9,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 33,
+      "accepted": 35,
       "waiting": 0,
       "updated_at": "2026-06-25T08:36:27+09:00"
     },
@@ -92,7 +92,7 @@
       "owner_id": 441072,
       "owner_nickname": "uv_recruit",
       "owner_display_name": "ユニークビジョン",
-      "accepted": 14,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-06-30T11:23:16+09:00"
     },
@@ -123,7 +123,7 @@
       "owner_id": 14580,
       "owner_nickname": "shota_inoue_9212",
       "owner_display_name": "syossan27",
-      "accepted": 41,
+      "accepted": 44,
       "waiting": 0,
       "updated_at": "2026-05-27T20:50:52+09:00"
     },
@@ -216,7 +216,7 @@
       "owner_id": 992322,
       "owner_nickname": "ipod_nana7",
       "owner_display_name": "Nana Ota",
-      "accepted": 111,
+      "accepted": 112,
       "waiting": 2,
       "updated_at": "2026-06-25T15:23:09+09:00"
     },
@@ -247,7 +247,7 @@
       "owner_id": 667626,
       "owner_nickname": "parupappa2929",
       "owner_display_name": "Annosuke Yokoo",
-      "accepted": 91,
+      "accepted": 93,
       "waiting": 0,
       "updated_at": "2026-06-29T23:35:39+09:00"
     },
@@ -278,7 +278,7 @@
       "owner_id": 58062,
       "owner_nickname": "sakaik1",
       "owner_display_name": "sakaik",
-      "accepted": 43,
+      "accepted": 47,
       "waiting": 0,
       "updated_at": "2026-06-29T12:32:44+09:00"
     }
