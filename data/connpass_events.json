@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-01T01:22:39.094855+09:00",
+  "fetched_at": "2026-07-01T03:51:18.349818+09:00",
   "date": "20260701",
   "count": 8,
   "events": [
@@ -66,37 +66,6 @@
       "updated_at": "2026-06-20T13:42:16+09:00"
     },
     {
-      "id": 396231,
-      "title": "kaonavi Tech Night #1",
-      "catch": "ミートアップイベント。今回のコンセプトは「カオナビのリアルを知る夜」",
-      "description": "<h2>📝 申し込み方法</h2>\n<p>お申し込みは下記のフォームよりお願いいたします。</p>\n<p>👉 <strong><a href=\"https://forms.gle/4sPw1xQy6FqCo6uq9\" rel=\"nofollow\">カオナビ Tech Night 申し込みフォーム</a></strong></p>\n<p>※本イベントへの申し込みは <strong>【先着順】</strong>となります。<br>\n定員に達し次第、期間内でも受付を締め切らせていただきますので、お早めにお申し込みください。</p>\n<p><strong>【重要】</strong>\n当日の詳細（入館方法や会場案内など）につきましては、イベント1週間前となる <strong>【6月24日（水）】</strong> に、アンケートフォームにご入力いただいたアドレス宛へメールでお送りいたします。</p>\n<h2>🌟概要</h2>\n<p>カオナビのエンジニアリングの「現在地」を、本音で語る夜。</p>\n<p>選考や面接の場だけではどうしても伝えきれない、現場のリアルな意思決定、技術的な挑戦、そして泥臭い課題までをオープンに共有するテックナイトを開催します。</p>\n<p>当日は最前線で活躍するエンジニア3名によるショートセッションに加え、CTOの松下も参戦。\n後半のフリータイムでは、美味しいお寿司やお酒を用意しています。カオナビのエンジニアたちと「これからの開発」についてフランクに語り合いませんか？</p>\n<p>お気軽なご参加をお待ちしております！</p>\n<h2>🎯 このような方にオススメです！</h2>\n<ul>\n<li>カオナビのエンジニアリングや技術スタックに興味がある方</li>\n<li>現場のリアルな課題解決や意思決定のプロセスを知りたい方</li>\n<li>TypeScript、インフラ、スクラムなどのキーワードにピンとくる方</li>\n<li>カオナビのエンジニアやCTOとフランクに情報交換をしてみたい方</li>\n<li>カジュアル面談よりもさらに一歩踏み込んだ現場の「生の声」を聞きたい方</li>\n</ul>\n<h2>📆 開催日時</h2>\n<ul>\n<li><strong>日時</strong>：2026年7月1日（水）19:00〜21:00（18:30 受付開始）</li>\n<li>※基本出入り自由、途中参加・途中退席もOKです。</li>\n</ul>\n<h2>📍 会場</h2>\n<ul>\n<li><strong>場所</strong>：渋谷スクランブルスクエア 38F オフィス</li>\n<li>まずは<strong>17Fの受付</strong>までお越しください。その後、38F会場へとご案内いたします。</li>\n</ul>\n<h2>🕒 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">登壇者・担当</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>18:30〜19:00</strong></td>\n<td style=\"text-align: left;\">🏢 <strong>受付開始</strong>（38F会場へご案内します）</td>\n<td style=\"text-align: left;\">運営スタッフ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:00〜19:10</strong></td>\n<td style=\"text-align: left;\">📣 <strong>オープニング</strong></td>\n<td style=\"text-align: left;\">運営スタッフ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:10〜19:20</strong></td>\n<td style=\"text-align: left;\">🏢 <strong>会社・技術・組織紹介</strong></td>\n<td style=\"text-align: left;\">松下（CTO）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:20〜19:30</strong></td>\n<td style=\"text-align: left;\">🎤 <strong>ショートセッション①</strong>：「TypeScriptに関する技術的なお話」</td>\n<td style=\"text-align: left;\">uhyo</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:30〜19:40</strong></td>\n<td style=\"text-align: left;\">🎤 <strong>ショートセッション②</strong>：「インフラエンジニア、プロダクトチームへ留学中」</td>\n<td style=\"text-align: left;\">水谷</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:40〜19:50</strong></td>\n<td style=\"text-align: left;\">🎤 <strong>ショートセッション③</strong>：「迅速な機能提供をするためのスクラム改善」</td>\n<td style=\"text-align: left;\">平山</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:50〜20:00</strong></td>\n<td style=\"text-align: left;\">🍣 <strong>お酒＆お寿司の案内</strong>（乾杯の準備をしましょう！）</td>\n<td style=\"text-align: left;\">運営スタッフ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:00〜20:50</strong></td>\n<td style=\"text-align: left;\">🍻 <strong>乾杯・フリータイム（懇親会）</strong></td>\n<td style=\"text-align: left;\">エンジニア全員</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:50〜21:00</strong></td>\n<td style=\"text-align: left;\">📝 <strong>クロージング</strong>（アンケート回答依頼など）</td>\n<td style=\"text-align: left;\">運営スタッフ</td>\n</tr>\n</tbody>\n</table>\n<h2>🎤 ライトニングトーク登壇者</h2>\n<h3>uhyo（鈴木 僚太）</h3>\n<p>東京大学大学院情報理工学系研究科を修士で卒業後、新卒でLINE株式会社に入社。LINE証券のフロントエンド開発を担当。2018年からECMAScript・TypeScript・Reactを中心としたフロントエンド領域で活動。AIオートメーションを専門とするバベルを経て、カオナビに参画。カオナビではCTO室エキスパート（フロントエンド）として、開発環境や設計改善を通じ開発効率の向上に取り組む。著書に『プロを目指す人のためのTypeScript入門』（技術評論社、2022）</p>\n<ul>\n<li><strong>X</strong>: <a href=\"https://x.com/uhyo_\" rel=\"nofollow\">@uhyo_</a></li>\n<li><strong>GitHub</strong>: <a href=\"https://github.com/uhyo\" rel=\"nofollow\">uhyo</a></li>\n</ul>\n<hr>\n<h3>水谷 圭佑</h3>\n<p>SIer企業でのインフラ設計・構築業務を経て、2023年にカオナビ入社。複数プロダクトのインフラ基盤運用、開発支援、セキュリティ認証取得に携わる。現在は新規機能の開発チームに所属し、フロントエンド・バックエンドにも挑戦中。</p>\n<ul>\n<li><strong>X</strong>: <a href=\"https://x.com/m1ztch\" rel=\"nofollow\">@m1ztch</a></li>\n<li><strong>Zenn</strong>: <a href=\"https://zenn.dev/miztch\" rel=\"nofollow\">miztch</a></li>\n<li><strong>GitHub</strong>: <a href=\"https://github.com/miztch\" rel=\"nofollow\">miztch</a></li>\n</ul>\n<hr>\n<h3>平山 涼也</h3>\n<p>2014年にデザイナーとしてヤフー株式会社（現LINEヤフー株式会社）に新卒入社。\nYahoo!ショッピングのReact化を契機にフロントエンド開発へとシフトし、UIデザインの知見を活かしたフロントエンド実装・設計・設計支援・UIコンポーネントライブラリ開発を複数社およびフリーランスとして経験。\n現在はカオナビにフロントエンドエンジニアとして参画後、テックリードとして役割を広げ、ポジションマッチングのフロントエンド領域を担当しながら、カオナビ全体のフロントエンド開発の改善にも取り組んでいる。</p>\n<ul>\n<li><strong>X</strong>: <a href=\"https://x.com/rhirayamaaan\" rel=\"nofollow\">@rhirayamaaan</a></li>\n<li><strong>GitHub</strong>: <a href=\"https://github.com/rhirayamaaan\" rel=\"nofollow\">rhirayamaaan</a></li>\n</ul>\n<hr>\n<h2>ご興味ある方はこちらもどうぞ</h2>\n<ul>\n<li><a href=\"https://www.kaonavi.jp/\" rel=\"nofollow\">カオナビサービスのご案内</a></li>\n<li><a href=\"https://recruit.kaonavi.jp/engineer/?link=glonavi\" rel=\"nofollow\">エンジニア採用ページ</a></li>\n<li><a href=\"https://vivivi.kaonavi.jp/tags/engineer/\" rel=\"nofollow\">エンジニアインタビュー記事</a></li>\n</ul>\n<h2>案内・注意事項</h2>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止です。運営側の判断でご退出をお願いする場合があります。</li>\n<li>ブログやSNSなどで当イベントに関する発信を行う際には、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>当日は写真を撮影し、レポート等に掲載予定です。顔出しNGの方は当日受付にてお申し出ください</li>\n</ul>",
-      "url": "https://kaonavi.connpass.com/event/396231/",
-      "image_url": "https://media.connpass.com/thumbs/36/ab/36ab811385c96180aa4fb3dfdc83debb.png",
-      "hash_tag": "kaonaviTechNight",
-      "started_at": "2026-07-01T19:00:00+09:00",
-      "ended_at": "2026-07-01T21:00:00+09:00",
-      "published_at": "2026-06-15T11:28:41+09:00",
-      "limit": 1,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 12201,
-        "subdomain": "kaonavi",
-        "title": "カオナビ",
-        "url": "https://kaonavi.connpass.com/"
-      },
-      "address": "東京都渋谷区渋谷2-24-12 (渋谷スクランブルスクエア 38F)",
-      "place": "カオナビ本社(東京)",
-      "lat": "35.658446600000",
-      "lon": "139.702163600000",
-      "owner_id": 648513,
-      "owner_nickname": "kaonavi",
-      "owner_display_name": "kaonavi",
-      "accepted": 1,
-      "waiting": 0,
-      "updated_at": "2026-06-22T16:38:27+09:00"
-    },
-    {
       "id": 394371,
       "title": "カミナシ Tech Night #4 - プロダクト開発は現場が9割",
       "catch": "エンジニアが現場に飛び込む、カミナシの開発スタイルをご紹介",
@@ -126,6 +95,37 @@
       "accepted": 25,
       "waiting": 4,
       "updated_at": "2026-06-27T14:44:16+09:00"
+    },
+    {
+      "id": 396231,
+      "title": "kaonavi Tech Night #1",
+      "catch": "ミートアップイベント。今回のコンセプトは「カオナビのリアルを知る夜」",
+      "description": "<h2>📝 申し込み方法</h2>\n<p>お申し込みは下記のフォームよりお願いいたします。</p>\n<p>👉 <strong><a href=\"https://forms.gle/4sPw1xQy6FqCo6uq9\" rel=\"nofollow\">カオナビ Tech Night 申し込みフォーム</a></strong></p>\n<p>※本イベントへの申し込みは <strong>【先着順】</strong>となります。<br>\n定員に達し次第、期間内でも受付を締め切らせていただきますので、お早めにお申し込みください。</p>\n<p><strong>【重要】</strong>\n当日の詳細（入館方法や会場案内など）につきましては、イベント1週間前となる <strong>【6月24日（水）】</strong> に、アンケートフォームにご入力いただいたアドレス宛へメールでお送りいたします。</p>\n<h2>🌟概要</h2>\n<p>カオナビのエンジニアリングの「現在地」を、本音で語る夜。</p>\n<p>選考や面接の場だけではどうしても伝えきれない、現場のリアルな意思決定、技術的な挑戦、そして泥臭い課題までをオープンに共有するテックナイトを開催します。</p>\n<p>当日は最前線で活躍するエンジニア3名によるショートセッションに加え、CTOの松下も参戦。\n後半のフリータイムでは、美味しいお寿司やお酒を用意しています。カオナビのエンジニアたちと「これからの開発」についてフランクに語り合いませんか？</p>\n<p>お気軽なご参加をお待ちしております！</p>\n<h2>🎯 このような方にオススメです！</h2>\n<ul>\n<li>カオナビのエンジニアリングや技術スタックに興味がある方</li>\n<li>現場のリアルな課題解決や意思決定のプロセスを知りたい方</li>\n<li>TypeScript、インフラ、スクラムなどのキーワードにピンとくる方</li>\n<li>カオナビのエンジニアやCTOとフランクに情報交換をしてみたい方</li>\n<li>カジュアル面談よりもさらに一歩踏み込んだ現場の「生の声」を聞きたい方</li>\n</ul>\n<h2>📆 開催日時</h2>\n<ul>\n<li><strong>日時</strong>：2026年7月1日（水）19:00〜21:00（18:30 受付開始）</li>\n<li>※基本出入り自由、途中参加・途中退席もOKです。</li>\n</ul>\n<h2>📍 会場</h2>\n<ul>\n<li><strong>場所</strong>：渋谷スクランブルスクエア 38F オフィス</li>\n<li>まずは<strong>17Fの受付</strong>までお越しください。その後、38F会場へとご案内いたします。</li>\n</ul>\n<h2>🕒 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">登壇者・担当</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>18:30〜19:00</strong></td>\n<td style=\"text-align: left;\">🏢 <strong>受付開始</strong>（38F会場へご案内します）</td>\n<td style=\"text-align: left;\">運営スタッフ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:00〜19:10</strong></td>\n<td style=\"text-align: left;\">📣 <strong>オープニング</strong></td>\n<td style=\"text-align: left;\">運営スタッフ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:10〜19:20</strong></td>\n<td style=\"text-align: left;\">🏢 <strong>会社・技術・組織紹介</strong></td>\n<td style=\"text-align: left;\">松下（CTO）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:20〜19:30</strong></td>\n<td style=\"text-align: left;\">🎤 <strong>ショートセッション①</strong>：「TypeScriptに関する技術的なお話」</td>\n<td style=\"text-align: left;\">uhyo</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:30〜19:40</strong></td>\n<td style=\"text-align: left;\">🎤 <strong>ショートセッション②</strong>：「インフラエンジニア、プロダクトチームへ留学中」</td>\n<td style=\"text-align: left;\">水谷</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:40〜19:50</strong></td>\n<td style=\"text-align: left;\">🎤 <strong>ショートセッション③</strong>：「迅速な機能提供をするためのスクラム改善」</td>\n<td style=\"text-align: left;\">平山</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:50〜20:00</strong></td>\n<td style=\"text-align: left;\">🍣 <strong>お酒＆お寿司の案内</strong>（乾杯の準備をしましょう！）</td>\n<td style=\"text-align: left;\">運営スタッフ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:00〜20:50</strong></td>\n<td style=\"text-align: left;\">🍻 <strong>乾杯・フリータイム（懇親会）</strong></td>\n<td style=\"text-align: left;\">エンジニア全員</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:50〜21:00</strong></td>\n<td style=\"text-align: left;\">📝 <strong>クロージング</strong>（アンケート回答依頼など）</td>\n<td style=\"text-align: left;\">運営スタッフ</td>\n</tr>\n</tbody>\n</table>\n<h2>🎤 ライトニングトーク登壇者</h2>\n<h3>uhyo（鈴木 僚太）</h3>\n<p>東京大学大学院情報理工学系研究科を修士で卒業後、新卒でLINE株式会社に入社。LINE証券のフロントエンド開発を担当。2018年からECMAScript・TypeScript・Reactを中心としたフロントエンド領域で活動。AIオートメーションを専門とするバベルを経て、カオナビに参画。カオナビではCTO室エキスパート（フロントエンド）として、開発環境や設計改善を通じ開発効率の向上に取り組む。著書に『プロを目指す人のためのTypeScript入門』（技術評論社、2022）</p>\n<ul>\n<li><strong>X</strong>: <a href=\"https://x.com/uhyo_\" rel=\"nofollow\">@uhyo_</a></li>\n<li><strong>GitHub</strong>: <a href=\"https://github.com/uhyo\" rel=\"nofollow\">uhyo</a></li>\n</ul>\n<hr>\n<h3>水谷 圭佑</h3>\n<p>SIer企業でのインフラ設計・構築業務を経て、2023年にカオナビ入社。複数プロダクトのインフラ基盤運用、開発支援、セキュリティ認証取得に携わる。現在は新規機能の開発チームに所属し、フロントエンド・バックエンドにも挑戦中。</p>\n<ul>\n<li><strong>X</strong>: <a href=\"https://x.com/m1ztch\" rel=\"nofollow\">@m1ztch</a></li>\n<li><strong>Zenn</strong>: <a href=\"https://zenn.dev/miztch\" rel=\"nofollow\">miztch</a></li>\n<li><strong>GitHub</strong>: <a href=\"https://github.com/miztch\" rel=\"nofollow\">miztch</a></li>\n</ul>\n<hr>\n<h3>平山 涼也</h3>\n<p>2014年にデザイナーとしてヤフー株式会社（現LINEヤフー株式会社）に新卒入社。\nYahoo!ショッピングのReact化を契機にフロントエンド開発へとシフトし、UIデザインの知見を活かしたフロントエンド実装・設計・設計支援・UIコンポーネントライブラリ開発を複数社およびフリーランスとして経験。\n現在はカオナビにフロントエンドエンジニアとして参画後、テックリードとして役割を広げ、ポジションマッチングのフロントエンド領域を担当しながら、カオナビ全体のフロントエンド開発の改善にも取り組んでいる。</p>\n<ul>\n<li><strong>X</strong>: <a href=\"https://x.com/rhirayamaaan\" rel=\"nofollow\">@rhirayamaaan</a></li>\n<li><strong>GitHub</strong>: <a href=\"https://github.com/rhirayamaaan\" rel=\"nofollow\">rhirayamaaan</a></li>\n</ul>\n<hr>\n<h2>ご興味ある方はこちらもどうぞ</h2>\n<ul>\n<li><a href=\"https://www.kaonavi.jp/\" rel=\"nofollow\">カオナビサービスのご案内</a></li>\n<li><a href=\"https://recruit.kaonavi.jp/engineer/?link=glonavi\" rel=\"nofollow\">エンジニア採用ページ</a></li>\n<li><a href=\"https://vivivi.kaonavi.jp/tags/engineer/\" rel=\"nofollow\">エンジニアインタビュー記事</a></li>\n</ul>\n<h2>案内・注意事項</h2>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止です。運営側の判断でご退出をお願いする場合があります。</li>\n<li>ブログやSNSなどで当イベントに関する発信を行う際には、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>当日は写真を撮影し、レポート等に掲載予定です。顔出しNGの方は当日受付にてお申し出ください</li>\n</ul>",
+      "url": "https://kaonavi.connpass.com/event/396231/",
+      "image_url": "https://media.connpass.com/thumbs/36/ab/36ab811385c96180aa4fb3dfdc83debb.png",
+      "hash_tag": "kaonaviTechNight",
+      "started_at": "2026-07-01T19:00:00+09:00",
+      "ended_at": "2026-07-01T21:00:00+09:00",
+      "published_at": "2026-06-15T11:28:41+09:00",
+      "limit": 1,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 12201,
+        "subdomain": "kaonavi",
+        "title": "カオナビ",
+        "url": "https://kaonavi.connpass.com/"
+      },
+      "address": "東京都渋谷区渋谷2-24-12 (渋谷スクランブルスクエア 38F)",
+      "place": "カオナビ本社(東京)",
+      "lat": "35.658446600000",
+      "lon": "139.702163600000",
+      "owner_id": 648513,
+      "owner_nickname": "kaonavi",
+      "owner_display_name": "kaonavi",
+      "accepted": 1,
+      "waiting": 0,
+      "updated_at": "2026-06-22T16:38:27+09:00"
     },
     {
       "id": 396958,
@@ -216,7 +216,7 @@
       "owner_id": 614007,
       "owner_nickname": "HisayaUchida",
       "owner_display_name": "h-ucchi",
-      "accepted": 103,
+      "accepted": 105,
       "waiting": 0,
       "updated_at": "2026-07-01T00:26:49+09:00"
     },
