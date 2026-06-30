@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T15:51:19.170758+09:00",
+  "fetched_at": "2026-06-30T19:28:17.891981+09:00",
   "date": "20260630",
   "count": 9,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 35,
+      "accepted": 37,
       "waiting": 0,
       "updated_at": "2026-06-25T08:36:27+09:00"
     },
@@ -92,7 +92,7 @@
       "owner_id": 441072,
       "owner_nickname": "uv_recruit",
       "owner_display_name": "ユニークビジョン",
-      "accepted": 15,
+      "accepted": 16,
       "waiting": 0,
       "updated_at": "2026-06-30T11:23:16+09:00"
     },
@@ -100,7 +100,7 @@
       "id": 392834,
       "title": "ゆるAI勉強会 #1",
       "catch": "",
-      "description": "<h2>イベント概要</h2>\n<p>ゆるAI勉強会は、ゆるくAIを学ぶをテーマに開催される初心者大歓迎の勉強会です。</p>\n<p>ChatGPTとか、Claudeとか、Geminiとか、画像生成とか、便利そうなAIツールとか色々あるけども、\n「これ使ってみたら面白かった」「なんか仕事で使えそうだった」「よくわからないけどすごかった」\nみたいにゆる〜く話を、共有できればと思っています！</p>\n<p>初回のテーマは <strong>『ゆるくAIの話をしよう』</strong> です 🤖</p>\n<p>AIがどんどん身近になってきている今日この頃。<br>\nChatGPT、Claude、Gemini、画像生成、AIエージェント、業務活用、個人開発、プロンプトの工夫など、AIにまつわる話題をゆるく持ち寄って話す回です！</p>\n<p>「最近こんなAIツールを使ってみた」\n「仕事でこういうふうに使ってみた」\n「よくわからないけど、これ面白かった」\n「AIで遊んでいたらこんなことができた」</p>\n<p>みたいな話をワイワイ共有しましょう。</p>\n<p>AIにめちゃくちゃ詳しい方も、最近ちょっと触り始めた方も、これから触ってみたい方も、ぜひお気軽にご参加ください！</p>\n<p>Xハッシュタグ: <code>#yuruai</code></p>\n<h2>発表枠について</h2>\n<p>今回は以下の発表枠を予定しています。</p>\n<ul>\n<li>10分発表枠：6名</li>\n</ul>\n<p>テーマはAIに関する内容であれば幅広く歓迎です。</p>\n<p>たとえば、以下のような内容を想定しています。</p>\n<ul>\n<li>ChatGPT / Claude / Gemini などを使ってみた話</li>\n<li>AIを仕事で使ってみた話</li>\n<li>AIを日常で使ってみた話</li>\n<li>便利だったAIツール紹介</li>\n<li>プロンプトの工夫</li>\n<li>AIエージェントを試してみた話</li>\n<li>画像生成・動画生成・音声生成で遊んでみた話</li>\n<li>AIで個人開発してみた話</li>\n<li>AI活用で失敗した話</li>\n<li>最近気になっているAIニュース</li>\n<li>完全には理解してないけど面白かったAIの話</li>\n</ul>\n<p>発表の完成度は高くなくても大丈夫です。<br>\n「試してみたらこんな感じでした」くらいのゆるい共有も大歓迎です。</p>\n<h2>日時</h2>\n<p>2026/06/30(火) 19:20 ~ 21:40（開場 19:00）</p>\n<h2>場所</h2>\n<p>レッドハット株式会社 本社\n〒150-0013 東京都渋谷区恵比寿4丁目1番18号 恵比寿ネオナート3階</p>\n<p>JR・東京メトロ日比谷線「恵比寿駅」東口 徒歩約1分</p>\n<p>※入館方法などは追ってご案内します。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>アジェンダ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:20</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:20-19:25</td>\n<td>挨拶&amp;イベント説明</td>\n</tr>\n<tr>\n<td>19:25-19:35</td>\n<td>会場スポンサーLT</td>\n</tr>\n<tr>\n<td>19:35-19:45</td>\n<td>10分発表枠①：<strong>『フルAIで個人開発して学んだあれこれ』</strong> - Isao Shimizu</td>\n</tr>\n<tr>\n<td>19:45-19:55</td>\n<td>10分発表枠②：<strong>『AI Agentをシステムに組み込む前にゆるく向き合ってみる』</strong> - hayama17</td>\n</tr>\n<tr>\n<td>19:55-20:05</td>\n<td>10分発表枠③：<strong>『AIをフル活用してオンコール機能のプロトタイプを2日で作った話』</strong> - nari_ex</td>\n</tr>\n<tr>\n<td>20:05-20:10</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>20:10-20:20</td>\n<td>10分発表枠④：<strong>『飲食経営もAIで。レジ締めやハンディシステムをつくってる話』</strong> - VTRyo</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>10分発表枠⑤：<strong>『AIネイティブな開発についてのモヤモヤを吐き出す』</strong> - maru</td>\n</tr>\n<tr>\n<td>20:30-20:40</td>\n<td>10分発表枠⑥：<strong>『AIと運用』</strong> - ryuichi1208</td>\n</tr>\n<tr>\n<td>20:40-20:45</td>\n<td>アンケート回答・お知らせ</td>\n</tr>\n<tr>\n<td>20:45-21:40</td>\n<td>交流タイム</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは変更になる可能性があります。</p>\n<h3>ご注意</h3>\n<p><strong>交流タイムでは食事のご提供はございません。</strong></p>\n<p>飲み物などの提供有無については、決まり次第追記します。</p>\n<h2>会場スポンサー：レッドハット株式会社 様</h2>\n<p><img src=\"https://i.gyazo.com/6cae835218a6572ab31f9f0dd7452b8a.jpg\" width=\"100%\"></p>\n<p>Red hatは、オープン・ハイブリッドクラウド・テクノロジーのリーダー として、Linux、AI、仮想化、自動化といった柔軟なハイブリッドクラウド・ソリューション を、世界中のコミュニティやお客様、パートナーと連携しながら開発・提供しています。</p>\n<p>Red Hat Enterprise Linux、OpenShift、Ansible Automation Platformなどを通じて、組織が一貫性・選択肢・制御性を確保しながら自信を持ってオープンなイノベーションを実現できるよう支援しています。</p>\n<p><a href=\"https://www.redhat.com/\" rel=\"nofollow\">https://www.redhat.com/</a></p>\n<h2>参加に関するご注意</h2>\n<p>現地参加の際には、お名前、所属、メールアドレスの情報が入館申請のために必要となります。参加登録時アンケートに正確にご入力くださいますようご協力をお願い致します。全ての方にアンケートは表示されますが、オンライン参加の方においては、任意の内容にてご回答頂ければ結構です。</p>\n<p>また、本ベント内容に関係せず、飲食や勧誘などを主目的とした参加は固くお断りします。また、公序良俗に反する行動や、ほかの参加者への迷惑となる行為などは一切容認致しません。発見次第、その場でご退場いただきます。退場の指示に従えない場合は、然るべき対応を取らせて頂きますので予めご了承ください。</p>\n<h2>行動規範</h2>\n<p>私たちは勉強会に参加されるみなさんが、ジェンダー、性的指向、障碍、身体的外観、身体の大きさ、人種、宗教その他のいかなる属性に関わらず、安心して参加できる場であることを大切にしています。</p>\n<p>参加者間でのいかなる形のハラスメントも容認しません。<br>\n性的な表現や画像、参加者を不快にさせる発言・行動は、本勉強会におけるいずれの発表・会話においても許容いたしません。</p>\n<p>当規則に違反する参加者は、主催者の裁量により退出をお願いする可能性があります。</p>\n<p>We are dedicated to providing a harassment-free event experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery are not appropriate for any presentations or conversations. Participants violating these rules may be sanctioned or expelled from the event at the discretion of the organizers.</p>\n<h2>迷惑行為について</h2>\n<p>他の方への迷惑行為を運営が確認した場合には、行動を改めるよう警告をさせていただきます。<br>\nそれでも改善が見られない場合は、退出していただく場合があります。</p>\n<p>また、他の参加者や運営への迷惑行為を目撃した、または受けたと感じた場合には、会場内の運営スタッフまでご連絡ください。</p>\n<p>ボットやスパム、他イベントでのキャンセル率が高いアカウント、運営が不適切と判断したアカウントによる登録があった場合、運営の判断によって強制的にキャンセルする場合があります。</p>",
+      "description": "<h2>イベント概要</h2>\n<p>ゆるAI勉強会は、ゆるくAIを学ぶをテーマに開催される初心者大歓迎の勉強会です。</p>\n<p>ChatGPTとか、Claudeとか、Geminiとか、画像生成とか、便利そうなAIツールとか色々あるけども、\n「これ使ってみたら面白かった」「なんか仕事で使えそうだった」「よくわからないけどすごかった」\nみたいにゆる〜く話を、共有できればと思っています！</p>\n<p>初回のテーマは <strong>『ゆるくAIの話をしよう』</strong> です 🤖</p>\n<p>AIがどんどん身近になってきている今日この頃。<br>\nChatGPT、Claude、Gemini、画像生成、AIエージェント、業務活用、個人開発、プロンプトの工夫など、AIにまつわる話題をゆるく持ち寄って話す回です！</p>\n<p>「最近こんなAIツールを使ってみた」\n「仕事でこういうふうに使ってみた」\n「よくわからないけど、これ面白かった」\n「AIで遊んでいたらこんなことができた」</p>\n<p>みたいな話をワイワイ共有しましょう。</p>\n<p>AIにめちゃくちゃ詳しい方も、最近ちょっと触り始めた方も、これから触ってみたい方も、ぜひお気軽にご参加ください！</p>\n<p>Xハッシュタグ: <code>#yuruai</code></p>\n<h2>発表枠について</h2>\n<p>今回は以下の発表枠を予定しています。</p>\n<ul>\n<li>10分発表枠：6名</li>\n</ul>\n<p>テーマはAIに関する内容であれば幅広く歓迎です。</p>\n<p>たとえば、以下のような内容を想定しています。</p>\n<ul>\n<li>ChatGPT / Claude / Gemini などを使ってみた話</li>\n<li>AIを仕事で使ってみた話</li>\n<li>AIを日常で使ってみた話</li>\n<li>便利だったAIツール紹介</li>\n<li>プロンプトの工夫</li>\n<li>AIエージェントを試してみた話</li>\n<li>画像生成・動画生成・音声生成で遊んでみた話</li>\n<li>AIで個人開発してみた話</li>\n<li>AI活用で失敗した話</li>\n<li>最近気になっているAIニュース</li>\n<li>完全には理解してないけど面白かったAIの話</li>\n</ul>\n<p>発表の完成度は高くなくても大丈夫です。<br>\n「試してみたらこんな感じでした」くらいのゆるい共有も大歓迎です。</p>\n<h2>日時</h2>\n<p>2026/06/30(火) 19:20 ~ 21:40（開場 19:00）</p>\n<h2>場所</h2>\n<p>レッドハット株式会社 本社\n〒150-0013 東京都渋谷区恵比寿4丁目1番18号 恵比寿ネオナート3階</p>\n<p>JR・東京メトロ日比谷線「恵比寿駅」東口 徒歩約1分</p>\n<p>※入館方法などは追ってご案内します。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>アジェンダ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:20</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:20-19:25</td>\n<td>挨拶&amp;イベント説明</td>\n</tr>\n<tr>\n<td>19:25-19:35</td>\n<td>会場スポンサーセッション</td>\n</tr>\n<tr>\n<td>19:35-19:45</td>\n<td>10分発表枠①：<strong>『フルAIで個人開発して学んだあれこれ』</strong> - Isao Shimizu</td>\n</tr>\n<tr>\n<td>19:45-19:55</td>\n<td>10分発表枠②：<strong>『AI Agentをシステムに組み込む前にゆるく向き合ってみる』</strong> - hayama17</td>\n</tr>\n<tr>\n<td>19:55-20:05</td>\n<td>10分発表枠③：<strong>『AIをフル活用してオンコール機能のプロトタイプを2日で作った話』</strong> - nari_ex</td>\n</tr>\n<tr>\n<td>20:05-20:10</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>20:10-20:20</td>\n<td>10分発表枠④：<strong>『飲食経営もAIで。レジ締めやハンディシステムをつくってる話』</strong> - VTRyo</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>10分発表枠⑤：<strong>『AIネイティブな開発についてのモヤモヤを吐き出す』</strong> - maru</td>\n</tr>\n<tr>\n<td>20:30-20:40</td>\n<td>10分発表枠⑥：<strong>『AIと運用』</strong> - ryuichi1208</td>\n</tr>\n<tr>\n<td>20:40-20:45</td>\n<td>アンケート回答・お知らせ</td>\n</tr>\n<tr>\n<td>20:45-21:40</td>\n<td>交流タイム</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは変更になる可能性があります。</p>\n<h3>ご注意</h3>\n<p><strong>交流タイムでは食事のご提供はございません。</strong></p>\n<p>飲み物などの提供有無については、決まり次第追記します。</p>\n<h2>会場スポンサー：レッドハット株式会社 様</h2>\n<p><img src=\"https://i.gyazo.com/6cae835218a6572ab31f9f0dd7452b8a.jpg\" width=\"100%\"></p>\n<p>Red hatは、オープン・ハイブリッドクラウド・テクノロジーのリーダー として、Linux、AI、仮想化、自動化といった柔軟なハイブリッドクラウド・ソリューション を、世界中のコミュニティやお客様、パートナーと連携しながら開発・提供しています。</p>\n<p>Red Hat Enterprise Linux、OpenShift、Ansible Automation Platformなどを通じて、組織が一貫性・選択肢・制御性を確保しながら自信を持ってオープンなイノベーションを実現できるよう支援しています。</p>\n<p><a href=\"https://www.redhat.com/\" rel=\"nofollow\">https://www.redhat.com/</a></p>\n<h2>参加に関するご注意</h2>\n<p>現地参加の際には、お名前、所属、メールアドレスの情報が入館申請のために必要となります。参加登録時アンケートに正確にご入力くださいますようご協力をお願い致します。全ての方にアンケートは表示されますが、オンライン参加の方においては、任意の内容にてご回答頂ければ結構です。</p>\n<p>また、本ベント内容に関係せず、飲食や勧誘などを主目的とした参加は固くお断りします。また、公序良俗に反する行動や、ほかの参加者への迷惑となる行為などは一切容認致しません。発見次第、その場でご退場いただきます。退場の指示に従えない場合は、然るべき対応を取らせて頂きますので予めご了承ください。</p>\n<h2>行動規範</h2>\n<p>私たちは勉強会に参加されるみなさんが、ジェンダー、性的指向、障碍、身体的外観、身体の大きさ、人種、宗教その他のいかなる属性に関わらず、安心して参加できる場であることを大切にしています。</p>\n<p>参加者間でのいかなる形のハラスメントも容認しません。<br>\n性的な表現や画像、参加者を不快にさせる発言・行動は、本勉強会におけるいずれの発表・会話においても許容いたしません。</p>\n<p>当規則に違反する参加者は、主催者の裁量により退出をお願いする可能性があります。</p>\n<p>We are dedicated to providing a harassment-free event experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery are not appropriate for any presentations or conversations. Participants violating these rules may be sanctioned or expelled from the event at the discretion of the organizers.</p>\n<h2>迷惑行為について</h2>\n<p>他の方への迷惑行為を運営が確認した場合には、行動を改めるよう警告をさせていただきます。<br>\nそれでも改善が見られない場合は、退出していただく場合があります。</p>\n<p>また、他の参加者や運営への迷惑行為を目撃した、または受けたと感じた場合には、会場内の運営スタッフまでご連絡ください。</p>\n<p>ボットやスパム、他イベントでのキャンセル率が高いアカウント、運営が不適切と判断したアカウントによる登録があった場合、運営の判断によって強制的にキャンセルする場合があります。</p>",
       "url": "https://yuru-ai.connpass.com/event/392834/",
       "image_url": "https://media.connpass.com/thumbs/4a/7e/4a7eb65889ec2f2abe5c5b15a5f750d8.png",
       "hash_tag": "yuruai",
@@ -109,7 +109,7 @@
       "published_at": "2026-05-25T10:37:31+09:00",
       "limit": 46,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17644,
         "subdomain": "yuru-ai",
@@ -125,7 +125,7 @@
       "owner_display_name": "syossan27",
       "accepted": 44,
       "waiting": 0,
-      "updated_at": "2026-05-27T20:50:52+09:00"
+      "updated_at": "2026-06-30T18:12:36+09:00"
     },
     {
       "id": 391001,
@@ -140,7 +140,7 @@
       "published_at": "2026-05-26T07:01:13+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 1717,
         "subdomain": "hfs",
@@ -159,37 +159,6 @@
       "updated_at": "2026-05-26T07:01:13+09:00"
     },
     {
-      "id": 395509,
-      "title": "生成AI時代の持続可能なデータ流通へ — ソフトバンクが挑む「データエコシステム基盤」とは",
-      "catch": "SoftBank Tech Night",
-      "description": "<h2>生成AI時代の持続可能なデータ流通へ — ソフトバンクが挑む「データエコシステム基盤」とは</h2>\n<p>生成AIモデルの急速な進化により、社会のデジタル化は次なるフェーズへと向かっています。しかしその一方で、AI開発の根幹を揺るがす構造的課題も表面化してきました。</p>\n<p>現在、インターネット上の公開データに依存した学習は間もなく限界を迎えるとされており、今後は企業のストレージに眠る未加工の専門知識（クローズドデータ）の活用が不可欠となっています。しかし、適切な許諾や対価のないスクレイピングは、コンテンツホルダーとの法的リスクや不信感を生み、結果として良質なデータ流通を停滞させる要因となっています。</p>\n<p>この「権利者保護」と「AI開発の加速」という二者択一の課題を乗り越え、双方が共存共栄できる中立な社会インフラとして、ソフトバンクが立ち上げたのが<strong>「データエコシステム基盤」</strong>です。</p>\n<p>本イベントでは、現在開発を進めている本基盤の事業構想と、それを支える高度な技術的アプローチの全貌を明かします。日本のデータ流通、そしてAI開発の持続可能な未来について、技術とビジネスの双方の視点から深く議論を交わします。まだ見ぬ次世代インフラが社会実装される、その歴史的な第一歩をぜひ目撃してください。</p>\n<p>※本事業に関する情報は、今後もSoftbank Tech Nightを通じて継続的にアップデートをお届けする予定です（隔月予定）。今回はそのコミュニティ活動としてのキックオフ（第1回）となります。これからの展開に、ぜひご期待ください。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>生成AI・LLM開発や、自然言語処理（NLP）のデータ加工技術に関心がある方</li>\n<li>生成AIを活用した新規ビジネスの企画や、データ利活用のシステム構築に興味がある方</li>\n<li>独自のコンテンツを持つクリエイターやメディア事業者で、安全なデータ流通・還元スキームを模索している方</li>\n<li>ソフトバンクが仕掛ける次世代インフラ事業に興味がある方</li>\n</ul>\n<h2>日程・場所</h2>\n<ul>\n<li><strong>日程</strong>: 2026/6/30 (水) 19:00 ~ 21:00（開場18:30 ~ ）</li>\n<li><strong>会場</strong>: ソフトバンク株式会社</li>\n<li><strong>住所</strong>: 東京都港区海岸一丁目7番1号 (東京ポートシティ竹芝オフィスタワー 32F)</li>\n<li><strong>受付時間</strong>: 18:30-19:30</li>\n</ul>\n<p>ハッシュタグ： #SBTechNight</p>\n<h2>プログラム</h2>\n<table>\n<thead>\n<tr>\n<th><strong>時間</strong></th>\n<th><strong>所要時間</strong></th>\n<th><strong>セッション内容</strong></th>\n<th><strong>発表者</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30〜</td>\n<td>30分</td>\n<td>受付開始</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00〜</td>\n<td>5分</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:05〜</td>\n<td>40分</td>\n<td>データエコシステム基盤の事業化への具体的な取り組み<br>- その全貌と技術的アプローチ -</td>\n<td>ソフトバンク<br>佐藤 敏紀<br>塚本 直樹</td>\n</tr>\n<tr>\n<td>19:45〜</td>\n<td>15分</td>\n<td>質疑応答</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00〜</td>\n<td>10分</td>\n<td>クロージング・アンケート記入</td>\n<td></td>\n</tr>\n<tr>\n<td>20:10〜</td>\n<td>40分</td>\n<td>懇親会開始 <br></td>\n<td>会場参加者の方</td>\n</tr>\n<tr>\n<td>20:50〜</td>\n<td>--</td>\n<td>終了</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※プログラム・時間は変更の場合があります。予めご了承ください。</p>\n<h2>登壇者紹介</h2>\n<h3>佐藤 敏紀 (ソフトバンク株式会社）</h3>\n<p><img src=\"https://s3.techplay.jp/tp-images/event/e5c47724288ffc78eced3548efe0902cab85a9fc.jpg\" width=\"200px\"></p>\n<p><strong>次世代サービス基盤本部 基盤アーキテクチャ統括部 データエコシステム開発室 室長</strong></p>\n<p>2008年ヤフーに入社し検索補助機能開発に従事。その後、NHN Japan～LINEにて自然言語処理の研究開発、日本語LLM「HyperCLOVA」の日本語モデル技術責任者を担当。OSS辞書『mecab-ipadic-NEologd』の開発者としても知られる。2023年よりソフトバンクへ転籍し、AIの社会実装を推進。</p>\n<h3>塚本 直樹 (ソフトバンク株式会社）</h3>\n<p><img src=\"https://s3.techplay.jp/tp-images/event/04480ec50f42422770c1cb18890199e772103225.jpg\" width=\"200px\"></p>\n<p><strong>次世代サービス基盤本部 基盤アーキテクチャ統括部 データエコシステム開発室 推進課 課長</strong></p>\n<p>2009年ソフトバンクに中途入社。全国営業No.1を獲得するなどビジネスフロントで頭角を現し、課長職、SBPS出向を経て、2025年より次世代技術開発本部（現・次世代サービス基盤本部）へ異動。データエコシステム基盤の事業化推進を牽引。</p>\n<h2>注意事項</h2>\n<ul>\n<li>主催者の判断によりお申し込みをキャンセルさせていただく場合があります。</li>\n<li>参加確定後のキャンセルは、なるべく早めにご連絡ください。</li>\n<li>主催者の許可を得ない会場内でのプロモーション行為は禁止となります。</li>\n<li>イベント中の写真撮影・動画録画・録音は禁止です。</li>\n<li>発表資料の公開については、各発表者の意向に従います。</li>\n</ul>",
-      "url": "https://sbtechnight.connpass.com/event/395509/",
-      "image_url": "https://media.connpass.com/thumbs/7a/7d/7a7d844bde78349247f7b48d96d7b22c.png",
-      "hash_tag": "SBTechNight",
-      "started_at": "2026-06-30T19:00:00+09:00",
-      "ended_at": "2026-06-30T21:00:00+09:00",
-      "published_at": "2026-06-11T14:24:02+09:00",
-      "limit": 140,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 11349,
-        "subdomain": "sbtechnight",
-        "title": "SoftBank Tech Night",
-        "url": "https://sbtechnight.connpass.com/"
-      },
-      "address": "東京都港区海岸一丁目7番1号 (東京ポートシティ竹芝オフィスタワー )",
-      "place": "ソフトバンク株式会社",
-      "lat": "35.655061900000",
-      "lon": "139.760895300000",
-      "owner_id": 20941,
-      "owner_nickname": "eterao",
-      "owner_display_name": "eterao",
-      "accepted": 58,
-      "waiting": 0,
-      "updated_at": "2026-06-29T19:45:39+09:00"
-    },
-    {
       "id": 394351,
       "title": "The SRE Backlog: 蔵出し事例共有会",
       "catch": "最高の知見を眠らせない！",
@@ -202,7 +171,7 @@
       "published_at": "2026-05-22T15:19:32+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6108,
         "subdomain": "layerx",
@@ -216,9 +185,40 @@
       "owner_id": 992322,
       "owner_nickname": "ipod_nana7",
       "owner_display_name": "Nana Ota",
-      "accepted": 112,
+      "accepted": 120,
       "waiting": 2,
       "updated_at": "2026-06-25T15:23:09+09:00"
+    },
+    {
+      "id": 395509,
+      "title": "生成AI時代の持続可能なデータ流通へ — ソフトバンクが挑む「データエコシステム基盤」とは",
+      "catch": "SoftBank Tech Night",
+      "description": "<h2>生成AI時代の持続可能なデータ流通へ — ソフトバンクが挑む「データエコシステム基盤」とは</h2>\n<p>生成AIモデルの急速な進化により、社会のデジタル化は次なるフェーズへと向かっています。しかしその一方で、AI開発の根幹を揺るがす構造的課題も表面化してきました。</p>\n<p>現在、インターネット上の公開データに依存した学習は間もなく限界を迎えるとされており、今後は企業のストレージに眠る未加工の専門知識（クローズドデータ）の活用が不可欠となっています。しかし、適切な許諾や対価のないスクレイピングは、コンテンツホルダーとの法的リスクや不信感を生み、結果として良質なデータ流通を停滞させる要因となっています。</p>\n<p>この「権利者保護」と「AI開発の加速」という二者択一の課題を乗り越え、双方が共存共栄できる中立な社会インフラとして、ソフトバンクが立ち上げたのが<strong>「データエコシステム基盤」</strong>です。</p>\n<p>本イベントでは、現在開発を進めている本基盤の事業構想と、それを支える高度な技術的アプローチの全貌を明かします。日本のデータ流通、そしてAI開発の持続可能な未来について、技術とビジネスの双方の視点から深く議論を交わします。まだ見ぬ次世代インフラが社会実装される、その歴史的な第一歩をぜひ目撃してください。</p>\n<p>※本事業に関する情報は、今後もSoftbank Tech Nightを通じて継続的にアップデートをお届けする予定です（隔月予定）。今回はそのコミュニティ活動としてのキックオフ（第1回）となります。これからの展開に、ぜひご期待ください。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>生成AI・LLM開発や、自然言語処理（NLP）のデータ加工技術に関心がある方</li>\n<li>生成AIを活用した新規ビジネスの企画や、データ利活用のシステム構築に興味がある方</li>\n<li>独自のコンテンツを持つクリエイターやメディア事業者で、安全なデータ流通・還元スキームを模索している方</li>\n<li>ソフトバンクが仕掛ける次世代インフラ事業に興味がある方</li>\n</ul>\n<h2>日程・場所</h2>\n<ul>\n<li><strong>日程</strong>: 2026/6/30 (水) 19:00 ~ 21:00（開場18:30 ~ ）</li>\n<li><strong>会場</strong>: ソフトバンク株式会社</li>\n<li><strong>住所</strong>: 東京都港区海岸一丁目7番1号 (東京ポートシティ竹芝オフィスタワー 32F)</li>\n<li><strong>受付時間</strong>: 18:30-19:30</li>\n</ul>\n<h2>プログラム</h2>\n<table>\n<thead>\n<tr>\n<th><strong>時間</strong></th>\n<th><strong>所要時間</strong></th>\n<th><strong>セッション内容</strong></th>\n<th><strong>発表者</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30〜</td>\n<td>30分</td>\n<td>受付開始</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00〜</td>\n<td>5分</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:05〜</td>\n<td>40分</td>\n<td>データエコシステム基盤の事業化への具体的な取り組み<br>- その全貌と技術的アプローチ -</td>\n<td>ソフトバンク<br>佐藤 敏紀<br>塚本 直樹</td>\n</tr>\n<tr>\n<td>19:45〜</td>\n<td>15分</td>\n<td>質疑応答</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00〜</td>\n<td>10分</td>\n<td>クロージング・アンケート記入</td>\n<td></td>\n</tr>\n<tr>\n<td>20:10〜</td>\n<td>40分</td>\n<td>懇親会開始 <br></td>\n<td>会場参加者の方</td>\n</tr>\n<tr>\n<td>20:50〜</td>\n<td>--</td>\n<td>終了</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※プログラム・時間は変更の場合があります。予めご了承ください。</p>\n<h2>登壇者紹介</h2>\n<h3>佐藤 敏紀 (ソフトバンク株式会社）</h3>\n<p><img src=\"https://s3.techplay.jp/tp-images/event/e5c47724288ffc78eced3548efe0902cab85a9fc.jpg\" width=\"200px\"></p>\n<p><strong>次世代サービス基盤本部 基盤アーキテクチャ統括部 データエコシステム開発室 室長</strong></p>\n<p>2008年ヤフーに入社し検索補助機能開発に従事。その後、NHN Japan～LINEにて自然言語処理の研究開発、日本語LLM「HyperCLOVA」の日本語モデル技術責任者を担当。OSS辞書『mecab-ipadic-NEologd』の開発者としても知られる。2023年よりソフトバンクへ転籍し、AIの社会実装を推進。</p>\n<h3>塚本 直樹 (ソフトバンク株式会社）</h3>\n<p><img src=\"https://s3.techplay.jp/tp-images/event/04480ec50f42422770c1cb18890199e772103225.jpg\" width=\"200px\"></p>\n<p><strong>次世代サービス基盤本部 基盤アーキテクチャ統括部 データエコシステム開発室 推進課 課長</strong></p>\n<p>2009年ソフトバンクに中途入社。全国営業No.1を獲得するなどビジネスフロントで頭角を現し、課長職、SBPS出向を経て、2025年より次世代技術開発本部（現・次世代サービス基盤本部）へ異動。データエコシステム基盤の事業化推進を牽引。</p>\n<h2>注意事項</h2>\n<ul>\n<li>主催者の判断によりお申し込みをキャンセルさせていただく場合があります。</li>\n<li>参加確定後のキャンセルは、なるべく早めにご連絡ください。</li>\n<li>主催者の許可を得ない会場内でのプロモーション行為は禁止となります。</li>\n<li>イベント中の写真撮影・動画録画・録音は禁止です。</li>\n<li>発表資料の公開については、各発表者の意向に従います。</li>\n</ul>",
+      "url": "https://sbtechnight.connpass.com/event/395509/",
+      "image_url": "https://media.connpass.com/thumbs/7a/7d/7a7d844bde78349247f7b48d96d7b22c.png",
+      "hash_tag": "",
+      "started_at": "2026-06-30T19:00:00+09:00",
+      "ended_at": "2026-06-30T21:00:00+09:00",
+      "published_at": "2026-06-11T14:24:02+09:00",
+      "limit": 140,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 11349,
+        "subdomain": "sbtechnight",
+        "title": "SoftBank Tech Night",
+        "url": "https://sbtechnight.connpass.com/"
+      },
+      "address": "東京都港区海岸一丁目7番1号 (東京ポートシティ竹芝オフィスタワー )",
+      "place": "ソフトバンク株式会社",
+      "lat": "35.655061900000",
+      "lon": "139.760895300000",
+      "owner_id": 20941,
+      "owner_nickname": "eterao",
+      "owner_display_name": "eterao",
+      "accepted": 57,
+      "waiting": 0,
+      "updated_at": "2026-06-30T16:46:26+09:00"
     },
     {
       "id": 383793,
@@ -227,13 +227,13 @@
       "description": "<h1>📢 オブザーバビリティ分科会からのお知らせ</h1>\n<p>オブザーバビリティ分科会からのお知らせです📢</p>\n<p>本コミュニティは Jagu'e'r の分科会の一つとして、<strong>オブザーバビリティ</strong>という技術トピックにフォーカスして、Meetup を開催しています🔭</p>\n<p>今回の Meetup のテーマは、</p>\n<p><strong></strong></p><p><strong><font size=\"3\">「 ☸️ Kubernetes × オブザーバビリティ 🔍」</font></strong></p><p></p>\n<p>になります。</p>\n<p>今回は <strong>Kubernetes Meetup Novice 🔰</strong> とのコラボ回！<br>\n複雑なコンテナ環境を安全に運用するためには、Kubernetes とオブザーバビリティの深い理解が欠かせません。でも、「クラスターのどこを監視すべき？」「GKE ではどう設定するのが正解？」など、疑問も多いのではないでしょうか。<br>\n今回は、Kubernetes とオブザーバビリティの基礎から、GKE での実践例まで、第一歩を踏み出すための知見を共有します！</p>\n<p>ぜひ、ご参加ください！ 🙌</p>\n<h1>👩‍💻 Jagu'e'r オブザーバビリティ分科会 × Kubernetes Novice Meetup 🔰</h1>\n<p>どなたでも参加 OK です。\n皆様の周りで、オブザーバビリティ領域に興味がある方をぜひお誘いいただければ幸いです。</p>\n<p>また、<strong>本イベントはオープンイベントとなっていますのでこちらの Connpass からのみ参加が可能となっています。奮ってご参加ください！</strong></p>\n<ul>\n<li>日　程: 2026 年 6 月 30 日（火）</li>\n<li>時　間: 18:30 - 20:30</li>\n<li>場　所:  Datadog オフィス &amp; Google Meet (参加方法は[参加者への情報]からご確認ください！！！)</li>\n</ul>\n<p>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓   Google Cloud 公式ユーザーコミュニティ Jagu'e'r に興味ある方   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓</p>\n<ul>\n<li>本 Meetup 参加において必須ではありません</li>\n<li>Jagu'e'r 会員のお申し込みは<a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfs6TQitRD7i3qGbPk3mkUxxUZFuKcebls_3uweUHiNuSyh7w/viewform\" rel=\"nofollow\">こちら</a></li>\n<li>Jagu'e'r オブザーバビリティ分科会 への参加方法 : Jagu'e'r Slackチャンネルの <a href=\"https://japangooglecl-xxv7878.slack.com/archives/C0367PW2UJE\" rel=\"nofollow\">ch_オブザーバビリティ分科会</a> からご参加ください！</li>\n</ul>\n<p>↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑</p>\n<h1>🕐 アジェンダ</h1>\n<h2>18:30 - 20:30</h2>\n<p>登壇内容は変更になる可能性がありますのでご注意ください</p>\n<table>\n<thead>\n<tr>\n<th>時間(目安)</th>\n<th>セッションタイトル</th>\n<th>企業名</th>\n<th>Speaker</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30-18:35</td>\n<td>オープニング</td>\n<td>----</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>18:35-18:45</td>\n<td>スポンサーセッション</td>\n<td>Datadog Japan 合同会社</td>\n<td>----</td>\n</tr>\n<tr>\n<td>18:45-19:05</td>\n<td>（仮）Google Cloud における Managed OTel Collector へのディープダイブ</td>\n<td>Datadog Japan 合同会社</td>\n<td>逆井 氏</td>\n</tr>\n<tr>\n<td>19:05-19:25</td>\n<td>Observability Analytics で始める GKE オブザーバビリティ</td>\n<td>クラウドエース株式会社</td>\n<td>佐久間 氏</td>\n</tr>\n<tr>\n<td>19:25-19:45</td>\n<td>kubectl logsのその先へ、実は使えるGKEの色んなKubernetesログを追ってみよう</td>\n<td>Google Cloud Japan 合同会社</td>\n<td>石井 氏</td>\n</tr>\n<tr>\n<td>19:45-19:50</td>\n<td>休憩</td>\n<td>----</td>\n<td>----</td>\n</tr>\n<tr>\n<td>19:50-20:10</td>\n<td>（仮）GKEトラブルシューティングのための安全なエージェントの育て方</td>\n<td>株式会社Synspective</td>\n<td>新井 氏</td>\n</tr>\n<tr>\n<td>20:10-20:20</td>\n<td>Calico VPP における SRv6 egress path steering の実装</td>\n<td>東京都立産業技術高等専門学校</td>\n<td>中山 氏</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>初めてのKubernetes本番運用でハマった話</td>\n<td>株式会社Hajimari</td>\n<td>奥 氏</td>\n</tr>\n<tr>\n<td>20:30-20:35</td>\n<td>クロージング</td>\n<td>----</td>\n<td>----</td>\n</tr>\n<tr>\n<td>20:35-20:40</td>\n<td>撤収！</td>\n<td>----</td>\n<td>----</td>\n</tr>\n</tbody>\n</table>\n<h2>🎤 登壇者一覧</h2>\n<h3>逆井 / さかさい / <a href=\"https://x.com/k6s4i53rx\" rel=\"nofollow\">@k6s4i53rx</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1577991336472776704/bmkAMrOz_400x400.jpg\" width=\"150\"></p>\n<p><font size=\"3\"><strong> Datadog Japan 合同会社 </strong></font></p>\n<p><font size=\"3\"><strong> セールスエンジニア </strong></font></p>\n\n<blockquote>\n<p>Datadog Japan で Datadog やオブザーバビリティを広める仕事をしています。Google Developer Experts や OpenTelemetry Meetup コミュニティに所属しています。最近はマグマ式サウナにハマっているので、ドライサウナとの違いが気になる方はぜひ話しましょう！</p>\n</blockquote>\n<h3>佐久間 昂太</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/98725121?v=4\" width=\"150\"></p>\n<p><font size=\"3\"><strong> クラウドエース株式会社 </strong></font></p>\n<p><font size=\"3\"><strong> ソフトウェアエンジニア </strong></font></p>\n\n<blockquote>\n<p>新卒でクラウドエース株式会社に入社し、小売業界のお客様を中心にデリバリーを担当。\n現在は大規模な次世代 POS システムプロジェクトに参画。\nGKE 基盤の設計、サービスメッシュによるトラフィック制御、性能検証の推進などを行っている。</p>\n</blockquote>\n<h3>石井 翔 / <a href=\"https://x.com/kyasbal_k\" rel=\"nofollow\">@kyasbal_k</a></h3>\n<p><img src=\"https://media.connpass.com/thumbs/e8/f8/e8f8483ac566249c27240633321caa66.png\" width=\"150\"></p>\n<p><font size=\"3\"><strong> Google Cloud Japan 合同会社 </strong></font></p>\n<p><font size=\"3\"><strong> テクニカルソリューションズエンジニア </strong></font></p>\n\n<blockquote>\n<p>Google Cloud Japan のテクニカルサポートチームにて、Google Kubernetes Engine (GKE) や Google Distributed Cloud (GDC) を中心とした高度な技術課題の解決に従事。社内調査の効率化を目的として自ら開発したログ分析ツール「Kubernetes History Inspector」を OSS として公開。\nKubeCon Japan や Cloud Next Tokyo 等の技術カンファレンスへの登壇を通じ、広範な Kubernetes 環境における障害調査の知見を広く発信している。</p>\n</blockquote>\n<h3>新井 雅也 / <a href=\"https://x.com/msy78\" rel=\"nofollow\">@msy78</a></h3>\n<p><img src=\"https://ca.slack-edge.com/T01LMH91KNF-U02PR6ANAUW-f46b9d6ca57f-512\" width=\"150\"></p>\n<p><font size=\"3\"><strong> 株式会社 Synspective </strong></font></p>\n<p><font size=\"3\"><strong> プリンシパルアーキテクト </strong></font></p>\n\n<blockquote>\n<p>衛星の開発・運用を手掛けるSynspectiveにて、クラウドを中心とした技術力を活かしつつ、宇宙業界の発展に尽力している。\nAWS Container Hero (2022~)\nGoogle Developer Expert - Cloud (2024~)</p>\n</blockquote>\n<h3>中山 亮佑 <a href=\"https://x.com/rysknkym\" rel=\"nofollow\">@rysknkym</a></h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/78244973?v=4\" width=\"150\"></p>\n<p><font size=\"3\"><strong> 東京都立産業技術高等専門学校  </strong></font></p>\n<p><font size=\"3\"><strong> 情報システム工学コース 5年生 </strong></font></p>\n\n<blockquote>\n<p>Kubernetes Networking / Linux / SDN / OSS に関心があり、最近は Calico VPP の SRv6、BGP、CNAT 周辺を中心にコントリビューションを行っている。\n 現在は Calico VPP の SRv6 関連実装にコントリビュートしつつ、Kubernetes クラスタの egress gateway と DC バックボーンネットワークを BGP / SRv6 で接続するためのネットワーク制御を研究している。</p>\n</blockquote>\n<h3>奥 琉之介 <a href=\"https://x.com/Kobujee_53\" rel=\"nofollow\">@Kobujee_53</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1842005253493030912/a_wEg85t.jpg\" width=\"150\"></p>\n<p><font size=\"3\"><strong> 株式会社Hajimari  </strong></font></p>\n<p><font size=\"3\"><strong> ソフトウェアエンジニア </strong></font></p>\n\n<blockquote>\n<p>新卒でHajimariに入社し、様々なWEBサービスの開発・運用を担当。現在は、社内システムのインフラ管理・コーポレートセキュリティ・データ活用基盤など、全社に跨る技術課題の解決を目的としたチームの立ち上げに奔走中。</p>\n</blockquote>\n<p>運営チーム一同</p>",
       "url": "https://jaguer-o11y-sre.connpass.com/event/383793/",
       "image_url": "https://media.connpass.com/thumbs/f8/07/f80783695eafd71d429e97e91908f665.png",
-      "hash_tag": "o11y_jaguer",
+      "hash_tag": "k8s_o11y",
       "started_at": "2026-06-30T18:30:00+09:00",
       "ended_at": "2026-06-30T20:30:00+09:00",
       "published_at": "2026-05-26T12:55:04+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15177,
         "subdomain": "jaguer-o11y-sre",
@@ -247,9 +247,9 @@
       "owner_id": 667626,
       "owner_nickname": "parupappa2929",
       "owner_display_name": "Annosuke Yokoo",
-      "accepted": 93,
+      "accepted": 100,
       "waiting": 0,
-      "updated_at": "2026-06-29T23:35:39+09:00"
+      "updated_at": "2026-06-30T18:44:11+09:00"
     },
     {
       "id": 395442,
@@ -264,7 +264,7 @@
       "published_at": "2026-06-04T19:58:53+09:00",
       "limit": 130,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 8615,
         "subdomain": "mysql",
@@ -278,7 +278,7 @@
       "owner_id": 58062,
       "owner_nickname": "sakaik1",
       "owner_display_name": "sakaik",
-      "accepted": 47,
+      "accepted": 52,
       "waiting": 0,
       "updated_at": "2026-06-29T12:32:44+09:00"
     }
