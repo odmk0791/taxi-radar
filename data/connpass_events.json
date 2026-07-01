@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-01T07:10:52.628694+09:00",
+  "fetched_at": "2026-07-01T09:01:05.337415+09:00",
   "date": "20260701",
   "count": 8,
   "events": [
@@ -154,7 +154,7 @@
       "owner_id": 928269,
       "owner_nickname": "Relance",
       "owner_display_name": "Relance",
-      "accepted": 37,
+      "accepted": 39,
       "waiting": 0,
       "updated_at": "2026-06-30T11:15:40+09:00"
     },
@@ -216,9 +216,9 @@
       "owner_id": 614007,
       "owner_nickname": "HisayaUchida",
       "owner_display_name": "h-ucchi",
-      "accepted": 107,
+      "accepted": 110,
       "waiting": 0,
-      "updated_at": "2026-07-01T00:26:49+09:00"
+      "updated_at": "2026-07-01T08:43:24+09:00"
     },
     {
       "id": 393142,
