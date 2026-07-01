@@ -803,18 +803,23 @@ function renderTable(){
 function renderFacts(){
   const D25=YEARS[2025].D.filter(d=>d!=null);
   const sumD25=D25.reduce((a,b)=>a+b,0);
-  const goukei=sumD25*RATE;
   const buai=sumD25*0.52;
   const poolTheory=sumD25*0.10;
-  // 2025帰属の分離給実額（pay月で2025年に入った分の合計＝概算照合）
+  // 各年の分離給実額（支給日の年で合計）
   const bonus25=BONUS.filter(b=>b.pay.startsWith('2025')).reduce((a,b)=>a+b.amount,0);
+  const bonus26=BONUS.filter(b=>b.pay.startsWith('2026')).reduce((a,b)=>a+b.amount,0);
+  // 2026：確定月のD合計×10%を理論値に（年途中）
+  const D26arr=YEARS[2026].D.filter(d=>d!=null);
+  const sumD26=D26arr.reduce((a,b)=>a+b,0);
+  const pool26=sumD26*0.10;
   const box=document.getElementById('factsBox');
   box.innerHTML=`
     <div class="fact"><div class="l">2025 給与の元D合計</div><div class="v tnum">${man1(sumD25)}</div><div class="x">${D25.length}ヶ月・B+C（空転なし）</div></div>
     <div class="fact"><div class="l">歩合ベース率</div><div class="v tnum" style="color:var(--amber)">62%</div><div class="x">歩合52%＋プール10%</div></div>
     <div class="fact"><div class="l">歩合 52%</div><div class="v tnum">${man1(buai)}</div><div class="x">D×52%</div></div>
-    <div class="fact"><div class="l">プール分離給 理論10%</div><div class="v tnum">${man1(poolTheory)}</div><div class="x">D×10%</div></div>
-    <div class="fact wide"><div class="l">分離給 実額の照合（2025支給）</div><div class="v tnum" style="font-size:14px">理論 ${yen(poolTheory)} ／ 実額 ${yen(bonus25)}（${poolTheory?Math.round(bonus25/poolTheory*100):0}%）</div><div class="x">62%という係数が実態と合うかの検算。実額は名ばかり賞与＝D比でプールされ年3回支給。差は手当・率ブレ。歩合ベース年収D×62%で堅く管理し、着地は常にこれより少し上に出る。</div></div>`;
+    <div class="fact"><div class="l">プール分離給 理論10%</div><div class="v tnum">${man1(poolTheory)}</div><div class="x">2025 D×10%</div></div>
+    <div class="fact wide"><div class="l">分離給 実額の照合（2025支給・年3回で確定）</div><div class="v tnum" style="font-size:14px">理論 ${yen(poolTheory)} ／ 実額 ${yen(bonus25)}（${poolTheory?Math.round(bonus25/poolTheory*100):0}%）</div><div class="x">62%という係数が実態と合うかの検算。実額は名ばかり賞与＝D比でプールされ年3回支給。差は手当・率ブレ。歩合ベース年収D×62%で堅く管理し、着地は常にこれより少し上に出る。</div></div>
+    <div class="fact wide"><div class="l">分離給 実額の照合（2026支給・進行中）</div><div class="v tnum" style="font-size:14px">理論 ${yen(pool26)} ／ 実額 ${yen(bonus26)}（${pool26?Math.round(bonus26/pool26*100):0}%）</div><div class="x">2026は年の途中。理論は確定月（${D26arr.length}ヶ月）のD×10%、実額は2026支給済みの分離給合計。12月支給分が入ると年間で揃う。今年3月・6月支給分がここに乗る。</div></div>`;
 }
 
 function renderFooter(){
