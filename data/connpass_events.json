@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-02T06:20:34.767137+09:00",
+  "fetched_at": "2026-07-02T08:05:22.046328+09:00",
   "date": "20260702",
   "count": 13,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 52432,
       "owner_nickname": "hoge_suzuki",
       "owner_display_name": "suzuki-hoge",
-      "accepted": 59,
+      "accepted": 60,
       "waiting": 0,
       "updated_at": "2026-06-04T21:19:30+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 2208,
       "owner_nickname": "Kirika_K2",
       "owner_display_name": "Kirika_K2",
-      "accepted": 14,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-06-18T14:48:43+09:00"
     },
@@ -95,37 +95,6 @@
       "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-06-29T08:46:59+09:00"
-    },
-    {
-      "id": 396727,
-      "title": "【再演】デブサミ2026「デベロッパーに“変化の作り手”としての期待を寄せられない組織は早晩滅びる」",
-      "catch": "",
-      "description": "<h1>【再演】Developers Summit 2026 Dev x PM Day 「デベロッパーに“変化の作り手”としての期待を寄せられない組織は早晩滅びる」by CROWDWORKS</h1>\n<p>2026年2月に開催された Developers Summit 2026 Dev x PM Day において、多くの反響をいただいた市谷さんのセッションの再演をいたします。</p>\n<p>本講演では、開発の現場で培われた「作る・試す・正す」という考え方を手がかりに、プロダクト開発のみにとどまらず、「ソフトウェアを作るだけではない開発者の価値」についてお話しします。</p>\n<p>アジャイル開発は、作るべきものと作り方に可逆性をもたらしました。しかし、事業判断や組織判断が不可逆なままであれば、本当の意味で学び続けることはできません。</p>\n<p>AIによって単に作る速度は飛躍的に高まる今、重要なのは効率化ではなく、「どの判断を行い、どの未来を選ぶのか」を考え続けることです。</p>\n<p>開発者は与えられた要求を実装するだけの存在なのか。それとも、組織が次の一手を選べる自由を生み出す存在なのか。</p>\n<p>デベロッパーサミット2026で好評を博した『デベロッパーに“変化の作り手”としての期待を寄せられない組織は早晩滅びる』を再演し、AI時代のプロダクト開発と組織変革について改めて考えます。</p>\n<p>デブサミ本編では時間の制約もあり十分に扱えなかった論点についても触れながら、参加者との対話を交えて内容を深掘りする予定です。</p>\n<p>当日参加できなかった方はもちろん、参加された方にも改めて議論の材料を持ち帰っていただける場を目指します。</p>\n<p>⚠️ 主催について <br>\n本イベントは株式会社クラウドワークスが主催として独自に企画・運営する再演および深掘りイベントです。<br>\nDevelopers Summit運営事務局による主催・共催イベントではございません。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>エンジニアリングマネージャー</li>\n<li>テックリード</li>\n<li>プロダクトマネージャー</li>\n<li>VPoE / CTO</li>\n<li>開発組織づくりに関心のある方</li>\n<li>AI時代のエンジニアの価値について考えたい方</li>\n</ul>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">セッション（50分）</td>\n<td style=\"text-align: left;\">市谷氏</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">パネルディスカッション（20分）</td>\n<td style=\"text-align: left;\">市谷氏 x CWメンバー</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">質問タイム（15分）</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">終了</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<p>※ スケジュールは進行状況により前後する場合がございます。</p>\n<h2>登壇者紹介</h2>\n<p><img alt=\"市谷 聡啓\" src=\"https://dm25qh0q2b215.cloudfront.net/static/images/speaker/6865/20a1_ichitani.png\"></p>\n<p><a href=\"https://x.com/papanda\" rel=\"nofollow\">市谷 聡啓</a></p>\n<p>プログラマーとしてキャリアを始め、SIerでのマネジメントや大規模インターネットサービスの運営を経て独立。20年以上にわたり現場と組織の両面からアジャイルを実践し、「正しいものを正しくつくる」あり方を探究してきた。個人や組織の力を結び合わせ、変化を現実にしていく「芯」を見出すことに熱意を注ぎ、越境を続けている。著書に『カイゼン・ジャーニー』『正しいものを正しくつくる』『組織を芯からアジャイルにする』『作る、試す、正す。』がある。</p>\n<h3>パネルディスカッション登壇者（CWメンバー）</h3>\n<ul>\n<li>パネラー: <a href=\"https://x.com/eigobluesnow\" rel=\"nofollow\">高澤 英悟</a>（クラウドワークス プロダクト責任者）</li>\n<li>モデレーター：<a href=\"https://x.com/hihats\" rel=\"nofollow\">塚本 久博</a>（クラウドワークス IC）</li>\n</ul>\n<h2>ビールスポンサー</h2>\n<p><img src=\"https://imgur.com/zL51WbQ.png\" width=\"400\"></p>\n<p>転職ドラフトは、「年収も実力も磨ける仕事」に出会える、ITエンジニア向けの転職サービスです。\n年収付きのスカウトが企業から届く「転職ドラフトスカウト」、ITエンジニアキャリアのプロに相談できる「転職ドラフトエージェント」を運営しています。</p>",
-      "url": "https://crowdworks.connpass.com/event/396727/",
-      "image_url": "https://media.connpass.com/thumbs/0e/80/0e808e67eb7f733e444f20a32633b10f.png",
-      "hash_tag": "cw_product",
-      "started_at": "2026-07-02T19:00:00+09:00",
-      "ended_at": "2026-07-02T21:30:00+09:00",
-      "published_at": "2026-06-17T20:35:48+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 1771,
-        "subdomain": "crowdworks",
-        "title": "CROWDWORKS",
-        "url": "https://crowdworks.connpass.com/"
-      },
-      "address": "東京都港区麻布台1-3-1 麻布台ヒルズ 森JPタワー28階",
-      "place": "株式会社クラウドワークス 麻布台ヒルズオフィス",
-      "lat": "35.661215500000",
-      "lon": "139.740616000000",
-      "owner_id": 20036,
-      "owner_nickname": "hihats",
-      "owner_display_name": "hihats",
-      "accepted": 15,
-      "waiting": 0,
-      "updated_at": "2026-06-29T21:17:51+09:00"
     },
     {
       "id": 398404,
@@ -221,6 +190,37 @@
       "updated_at": "2026-07-01T16:05:35+09:00"
     },
     {
+      "id": 396727,
+      "title": "【再演】デブサミ2026「デベロッパーに“変化の作り手”としての期待を寄せられない組織は早晩滅びる」",
+      "catch": "",
+      "description": "<h1>【再演】Developers Summit 2026 Dev x PM Day 「デベロッパーに“変化の作り手”としての期待を寄せられない組織は早晩滅びる」by CROWDWORKS</h1>\n<p>2026年2月に開催された Developers Summit 2026 Dev x PM Day において、多くの反響をいただいた市谷さんのセッションの再演をいたします。</p>\n<p>本講演では、開発の現場で培われた「作る・試す・正す」という考え方を手がかりに、プロダクト開発のみにとどまらず、「ソフトウェアを作るだけではない開発者の価値」についてお話しします。</p>\n<p>アジャイル開発は、作るべきものと作り方に可逆性をもたらしました。しかし、事業判断や組織判断が不可逆なままであれば、本当の意味で学び続けることはできません。</p>\n<p>AIによって単に作る速度は飛躍的に高まる今、重要なのは効率化ではなく、「どの判断を行い、どの未来を選ぶのか」を考え続けることです。</p>\n<p>開発者は与えられた要求を実装するだけの存在なのか。それとも、組織が次の一手を選べる自由を生み出す存在なのか。</p>\n<p>デベロッパーサミット2026で好評を博した『デベロッパーに“変化の作り手”としての期待を寄せられない組織は早晩滅びる』を再演し、AI時代のプロダクト開発と組織変革について改めて考えます。</p>\n<p>デブサミ本編では時間の制約もあり十分に扱えなかった論点についても触れながら、参加者との対話を交えて内容を深掘りする予定です。</p>\n<p>当日参加できなかった方はもちろん、参加された方にも改めて議論の材料を持ち帰っていただける場を目指します。</p>\n<p>⚠️ 主催について <br>\n本イベントは株式会社クラウドワークスが主催として独自に企画・運営する再演および深掘りイベントです。<br>\nDevelopers Summit運営事務局による主催・共催イベントではございません。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>エンジニアリングマネージャー</li>\n<li>テックリード</li>\n<li>プロダクトマネージャー</li>\n<li>VPoE / CTO</li>\n<li>開発組織づくりに関心のある方</li>\n<li>AI時代のエンジニアの価値について考えたい方</li>\n</ul>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">セッション（50分）</td>\n<td style=\"text-align: left;\">市谷氏</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">パネルディスカッション（20分）</td>\n<td style=\"text-align: left;\">市谷氏 x CWメンバー</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">質問タイム（15分）</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">終了</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<p>※ スケジュールは進行状況により前後する場合がございます。</p>\n<h2>登壇者紹介</h2>\n<p><img alt=\"市谷 聡啓\" src=\"https://dm25qh0q2b215.cloudfront.net/static/images/speaker/6865/20a1_ichitani.png\"></p>\n<p><a href=\"https://x.com/papanda\" rel=\"nofollow\">市谷 聡啓</a></p>\n<p>プログラマーとしてキャリアを始め、SIerでのマネジメントや大規模インターネットサービスの運営を経て独立。20年以上にわたり現場と組織の両面からアジャイルを実践し、「正しいものを正しくつくる」あり方を探究してきた。個人や組織の力を結び合わせ、変化を現実にしていく「芯」を見出すことに熱意を注ぎ、越境を続けている。著書に『カイゼン・ジャーニー』『正しいものを正しくつくる』『組織を芯からアジャイルにする』『作る、試す、正す。』がある。</p>\n<h3>パネルディスカッション登壇者（CWメンバー）</h3>\n<ul>\n<li>パネラー: <a href=\"https://x.com/eigobluesnow\" rel=\"nofollow\">高澤 英悟</a>（クラウドワークス プロダクト責任者）</li>\n<li>モデレーター：<a href=\"https://x.com/hihats\" rel=\"nofollow\">塚本 久博</a>（クラウドワークス IC）</li>\n</ul>\n<h2>ビールスポンサー</h2>\n<p><img src=\"https://imgur.com/zL51WbQ.png\" width=\"400\"></p>\n<p>転職ドラフトは、「年収も実力も磨ける仕事」に出会える、ITエンジニア向けの転職サービスです。\n年収付きのスカウトが企業から届く「転職ドラフトスカウト」、ITエンジニアキャリアのプロに相談できる「転職ドラフトエージェント」を運営しています。</p>",
+      "url": "https://crowdworks.connpass.com/event/396727/",
+      "image_url": "https://media.connpass.com/thumbs/0e/80/0e808e67eb7f733e444f20a32633b10f.png",
+      "hash_tag": "cw_product",
+      "started_at": "2026-07-02T19:00:00+09:00",
+      "ended_at": "2026-07-02T21:30:00+09:00",
+      "published_at": "2026-06-17T20:35:48+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 1771,
+        "subdomain": "crowdworks",
+        "title": "CROWDWORKS",
+        "url": "https://crowdworks.connpass.com/"
+      },
+      "address": "東京都港区麻布台1-3-1 麻布台ヒルズ 森JPタワー28階",
+      "place": "株式会社クラウドワークス 麻布台ヒルズオフィス",
+      "lat": "35.661215500000",
+      "lon": "139.740616000000",
+      "owner_id": 20036,
+      "owner_nickname": "hihats",
+      "owner_display_name": "hihats",
+      "accepted": 14,
+      "waiting": 0,
+      "updated_at": "2026-06-29T21:17:51+09:00"
+    },
+    {
       "id": 397782,
       "title": "WCAG 2.2 もくもく会 #2 ～ ガイドライン 1.2 時間ベースのメディア ～",
       "catch": "WCAG 2.2 をもくもくと読んで感想を言い合う勉強会",
@@ -262,7 +262,7 @@
       "started_at": "2026-07-02T15:00:00+09:00",
       "ended_at": "2026-07-02T18:30:00+09:00",
       "published_at": "2026-06-03T08:01:47+09:00",
-      "limit": 420,
+      "limit": 440,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -278,9 +278,9 @@
       "owner_id": 254161,
       "owner_nickname": "sghirokon",
       "owner_display_name": "sghirokon",
-      "accepted": 401,
+      "accepted": 402,
       "waiting": 0,
-      "updated_at": "2026-07-01T15:11:33+09:00"
+      "updated_at": "2026-07-02T07:08:31+09:00"
     },
     {
       "id": 395215,
