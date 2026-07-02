@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0a1628">
+<title>固定客 | TAXI Driver</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+:root{--bg:#0a1628;--s:#0f2040;--s2:#162850;--bd:#30363d;--g:#39d353;--gd:#1a4a2a;--am:#f0a500;--bl:#58a6ff;--re:#f85149;--tx:#e6edf3;--mu:#8b949e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:var(--bg);color:var(--tx);font-family:-apple-system,'Hiragino Sans',sans-serif;padding-bottom:env(safe-area-inset-bottom,16px)}
+#hdr{position:sticky;top:0;z-index:100;background:rgba(13,17,23,.97);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0)}
+.hi{display:flex;align-items:center;gap:6px;padding:9px 12px}
+.logo{font-size:15px;font-weight:900;flex-shrink:0}.logo b{color:var(--am)}
+.hs{flex:1;min-width:0}
+.st{font-size:11px;color:var(--mu)}
+.hbtn{background:none;border:none;color:var(--mu);font-size:18px;padding:2px;flex-shrink:0;text-decoration:none}
+main{padding:10px 12px;max-width:520px;margin:0 auto}
+
+.data-bar{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:var(--s);border:1px solid var(--bd);border-radius:10px;margin-bottom:10px}
+.data-info{font-size:11px;color:var(--mu)}.data-info b{color:var(--g)}
+.refresh-btn{background:none;border:1px solid var(--bd);border-radius:6px;color:var(--bl);font-size:11px;font-weight:700;cursor:pointer;padding:4px 10px;font-family:-apple-system,sans-serif}
+
+.tab-row{display:flex;border-bottom:1px solid var(--bd);margin-bottom:10px}
+.tabBtn{flex:1;padding:8px 4px;font-size:13px;font-weight:700;font-family:-apple-system,sans-serif;color:var(--mu);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer}
+.tabBtn.on{color:var(--g);border-bottom-color:var(--g)}
+
+.search-box{width:100%;padding:10px 12px;background:var(--s);border:1px solid var(--bd);border-radius:10px;color:var(--tx);font-size:14px;margin-bottom:10px;font-family:-apple-system,sans-serif;outline:none}
+.search-box:focus{border-color:var(--g)}
+.search-box::placeholder{color:var(--mu)}
+
+.filter-label{font-size:10px;color:var(--mu);margin-bottom:5px;margin-top:2px}
+.fbtn-row{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.fbtn{padding:6px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s);color:var(--mu);font-size:12px;font-weight:700;cursor:pointer;font-family:-apple-system,sans-serif}
+.fbtn.on-all{background:var(--gd);color:var(--g);border-color:rgba(57,211,83,.4)}
+.fbtn.on-fixL{background:rgba(248,81,73,.15);color:#f85149;border-color:rgba(248,81,73,.4)}
+.fbtn.on-fixM{background:rgba(210,153,34,.15);color:#d29922;border-color:rgba(210,153,34,.4)}
+.fbtn.on-fixS{background:rgba(88,166,255,.15);color:#58a6ff;border-color:rgba(88,166,255,.4)}
+
+.card{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.card-top{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+.badge{font-size:10px;padding:3px 9px;border-radius:20px;font-weight:800;flex-shrink:0}
+.badge-L{background:rgba(248,81,73,.15);color:#f85149}
+.badge-M{background:rgba(210,153,34,.15);color:#d29922}
+.badge-S{background:rgba(88,166,255,.15);color:#58a6ff}
+.card-title{font-size:14px;font-weight:700;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-title.no-memo{color:var(--mu);font-weight:500}
+.visit-count{font-size:10px;color:var(--am);flex-shrink:0;font-weight:700}
+.card-row{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--mu);margin-top:3px}
+.card-row .ic{font-size:11px;flex-shrink:0}
+.card-row b{color:var(--tx);font-weight:600}
+.gps-tag{font-size:9px;color:var(--g);border:1px solid rgba(57,211,83,.3);border-radius:8px;padding:1px 6px;margin-left:4px}
+.hist-list{margin-top:8px;padding-top:8px;border-top:1px solid var(--bd)}
+.hist-item{font-size:11px;color:var(--mu);padding:2px 0}
+.hist-item b{color:var(--tx)}
+
+#map{height:calc(100vh - 220px);min-height:400px;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}
+.pin-pop{font-family:-apple-system,sans-serif;font-size:12px;line-height:1.6;color:#111}
+.pin-pop b{font-size:13px}
+
+.empty{padding:40px 0;text-align:center;color:var(--mu)}
+.empty span{font-size:32px;display:block;margin-bottom:8px}
+.empty p{font-size:12px;line-height:1.8}
+.loading{padding:30px;text-align:center;color:var(--mu);font-size:13px}
+.spin{display:inline-block;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="hi">
+    <div class="logo">⭐<b>固定客</b></div>
+    <div class="hs">
+      <div class="st" id="hdr-sub">読み込み中…</div>
+    </div>
+    <a class="hbtn" href="hub.html" title="ハブへ戻る">🏠</a>
+  </div>
+</div>
+
+<main>
+  <div class="data-bar">
+    <div class="data-info">対象 <b id="data-count">–</b> 件</div>
+    <button class="refresh-btn" onclick="loadAll(true)">🔄 更新</button>
+  </div>
+
+  <div class="tab-row">
+    <button class="tabBtn on" id="tab-list" onclick="switchTab('list')">📋 リスト</button>
+    <button class="tabBtn" id="tab-map" onclick="switchTab('map')">🗺️ 地図</button>
+  </div>
+
+  <input class="search-box" id="search-input" type="search" placeholder="🔍 名前・行き先・会社名で検索" oninput="render()">
+
+  <div class="filter-label">運賃帯</div>
+  <div class="fbtn-row">
+    <button class="fbtn on-all" data-v="all" onclick="toggleRank('all',this)">すべて</button>
+    <button class="fbtn" data-v="L" onclick="toggleRank('L',this)">⭐L (~¥6,000超)</button>
+    <button class="fbtn" data-v="M" onclick="toggleRank('M',this)">⭐M (~¥6,000)</button>
+    <button class="fbtn" data-v="S" onclick="toggleRank('S',this)">⭐S (~¥3,000)</button>
+  </div>
+
+  <div id="view-list"><div class="loading"><span class="spin">⏳</span> データ読み込み中...</div></div>
+  <div id="view-map" style="display:none"><div id="map"></div></div>
+</main>
+
+<script>
+const MEMO_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv";
+const COORDS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=657495537&single=true&output=csv";
+const CACHE_KEY_MEMO = "kotei_customer_memo_v1";
+const CACHE_KEY_COORDS = "kotei_customer_coords_v1";
+const RANK_LABEL = {L:"⭐L", M:"⭐M", S:"⭐S"};
+const RANK_COLOR = {L:"#f85149", M:"#d29922", S:"#58a6ff"};
+
+let ALL_GROUPS = [];      // grouped by memo text (or ungrouped singles)
+let COORDS = {};          // chome address -> [lat,lng]
+let rankFilter = [];      // empty = all
+let currentTab = "list";
+let leafMap = null;
+let mapMarkers = [];
+
+function norm(s){ return (s||"").trim(); }
+
+function fetchCSV(url){
+  return fetch(url).then(r=>{
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    return r.text();
+  }).then(text=>{
+    return Papa.parse(text, {
+      header:true, skipEmptyLines:true, dynamicTyping:false,
+      transformHeader:h=>h.trim().replace(/^\uFEFF/,'')
+    }).data;
+  });
+}
+
+function loadCoords(){
+  try{
+    const cached = localStorage.getItem(CACHE_KEY_COORDS);
+    if(cached) COORDS = JSON.parse(cached);
+  }catch(e){}
+  return fetchCSV(COORDS_CSV).then(rows=>{
+    const c = {};
+    rows.forEach(row=>{
+      const vals = Object.values(row);
+      const addr = norm(vals[0]);
+      const lat = parseFloat(vals[1]);
+      const lng = parseFloat(vals[2]);
+      if(addr && !isNaN(lat) && !isNaN(lng)) c[addr] = [lat,lng];
+    });
+    if(Object.keys(c).length > 100){
+      COORDS = c;
+      try{ localStorage.setItem(CACHE_KEY_COORDS, JSON.stringify(c)); }catch(e){}
+    }
+  }).catch(e=>console.warn("座標CSV読み込み失敗", e));
+}
+
+function buildGroups(rows){
+  // フィルタ：固定客ランクが S/M/L の行のみ
+  const flagged = rows.filter(r => ["S","M","L"].indexOf(norm(r["固定客"])) >= 0);
+
+  const groups = new Map(); // key -> group
+  let ungroupedIdx = 0;
+
+  flagged.forEach(r=>{
+    const rank = norm(r["固定客"]);
+    const memo = norm(r["固定客メモ"]);
+    const ward = norm(r["乗車地：市区"]);
+    const area = norm(r["乗車地：地名"]);
+    const lat = parseFloat(r["乗車地：緯度"]);
+    const lng = parseFloat(r["乗車地：経度"]);
+    const date = norm(r["日付"]);
+    const dow = norm(r["曜日"]);
+    const time = norm(r["乗車時間"]);
+    const fare = norm(r["料金"]);
+
+    const visit = {
+      rank, ward, area,
+      lat: !isNaN(lat) ? lat : null,
+      lng: !isNaN(lng) ? lng : null,
+      date, dow, time, fare, memo
+    };
+
+    const key = memo ? "memo::" + memo : "single::" + (ungroupedIdx++);
+    if(!groups.has(key)){
+      groups.set(key, { memo, rank, visits: [] });
+    }
+    const g = groups.get(key);
+    g.visits.push(visit);
+    // グループの代表ランクは最新訪問のランクを使う
+  });
+
+  const list = [];
+  groups.forEach(g=>{
+    g.visits.sort((a,b)=> (b.date+b.time).localeCompare(a.date+a.time));
+    const latest = g.visits[0];
+    list.push({
+      memo: g.memo,
+      rank: latest.rank,
+      latest,
+      visits: g.visits,
+      count: g.visits.length
+    });
+  });
+
+  list.sort((a,b)=> (b.latest.date+b.latest.time).localeCompare(a.latest.date+a.latest.time));
+  return list;
+}
+
+function resolveLatLng(v){
+  if(v.lat != null && v.lng != null) return {lat:v.lat, lng:v.lng, precise:true};
+  const key = v.ward + v.area;
+  if(COORDS[key]) return {lat:COORDS[key][0], lng:COORDS[key][1], precise:false};
+  const key2 = v.area;
+  if(COORDS[key2]) return {lat:COORDS[key2][0], lng:COORDS[key2][1], precise:false};
+  return null;
+}
+
+function toggleRank(v, btn){
+  if(v === "all"){
+    rankFilter = [];
+    document.querySelectorAll(".fbtn").forEach(b=>{
+      if(b.dataset.v === "all") b.className = "fbtn on-all";
+      else b.className = "fbtn";
+    });
+  } else {
+    const idx = rankFilter.indexOf(v);
+    const allBtn = document.querySelector('.fbtn[data-v="all"]');
+    if(idx >= 0){
+      rankFilter.splice(idx,1);
+      btn.className = "fbtn";
+    } else {
+      rankFilter.push(v);
+      btn.className = "fbtn on-fix" + v;
+    }
+    if(rankFilter.length === 0) allBtn.className = "fbtn on-all";
+    else allBtn.className = "fbtn";
+  }
+  render();
+}
+
+function switchTab(tab){
+  currentTab = tab;
+  document.getElementById("tab-list").className = tab==="list" ? "tabBtn on" : "tabBtn";
+  document.getElementById("tab-map").className = tab==="map" ? "tabBtn on" : "tabBtn";
+  document.getElementById("view-list").style.display = tab==="list" ? "" : "none";
+  document.getElementById("view-map").style.display = tab==="map" ? "" : "none";
+  if(tab==="map"){
+    if(!leafMap) initMap();
+    renderMap();
+    setTimeout(()=>leafMap.invalidateSize(), 100);
+  }
+}
+
+function getFiltered(){
+  const q = norm(document.getElementById("search-input").value).toLowerCase();
+  return ALL_GROUPS.filter(g=>{
+    if(rankFilter.length > 0 && rankFilter.indexOf(g.rank) < 0) return false;
+    if(q && !(g.memo||"").toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+
+function render(){
+  if(currentTab === "list") renderList();
+  else renderMap();
+}
+
+function renderList(){
+  const list = getFiltered();
+  const wrap = document.getElementById("view-list");
+  document.getElementById("data-count").textContent = ALL_GROUPS.length;
+
+  if(list.length === 0){
+    wrap.innerHTML = '<div class="empty"><span>🈳</span><p>該当する固定客がいません</p></div>';
+    return;
+  }
+
+  wrap.innerHTML = list.map(g=>{
+    const rc = RANK_COLOR[g.rank];
+    const title = g.memo ? g.memo : "固定客（メモ未記入）";
+    const titleClass = g.memo ? "card-title" : "card-title no-memo";
+    const loc = (g.latest.ward + g.latest.area) || "地名不明";
+    const gpsTag = g.latest.lat != null ? '<span class="gps-tag">📍GPS</span>' : '';
+    const hist = g.visits.slice(1,4).map(v=>
+      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.ward}${v.area} ¥${v.fare||"-"}</div>`
+    ).join("");
+    const histMore = g.visits.length > 4 ? `<div class="hist-item">…他 ${g.visits.length-4}件</div>` : "";
+
+    return `<div class="card">
+      <div class="card-top">
+        <span class="badge badge-${g.rank}">${RANK_LABEL[g.rank]}</span>
+        <span class="${titleClass}">${title}</span>
+        ${g.count>1 ? `<span class="visit-count">${g.count}回</span>` : ""}
+      </div>
+      <div class="card-row"><span class="ic">📍</span><b>${loc}</b>${gpsTag}</div>
+      <div class="card-row"><span class="ic">🕐</span>前回 ${g.latest.date}(${g.latest.dow}) ${g.latest.time}</div>
+      <div class="card-row"><span class="ic">💴</span>¥${g.latest.fare || "-"}</div>
+      ${hist || histMore ? `<div class="hist-list">${hist}${histMore}</div>` : ""}
+    </div>`;
+  }).join("");
+}
+
+function initMap(){
+  leafMap = L.map('map', {zoomControl:true}).setView([35.68,139.70], 12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution:'&copy; OpenStreetMap', maxZoom:19
+  }).addTo(leafMap);
+}
+
+function renderMap(){
+  if(!leafMap) return;
+  mapMarkers.forEach(m=>leafMap.removeLayer(m));
+  mapMarkers = [];
+
+  const list = getFiltered();
+  const bounds = [];
+
+  list.forEach(g=>{
+    const pos = resolveLatLng(g.latest);
+    if(!pos) return;
+    const rc = RANK_COLOR[g.rank];
+    const icon = L.divIcon({
+      html: `<div style="width:16px;height:16px;border-radius:50%;background:${rc};border:2px solid #fff;box-shadow:0 0 4px rgba(0,0,0,.5)"></div>`,
+      className:'', iconSize:[16,16], iconAnchor:[8,8]
+    });
+    const marker = L.marker([pos.lat,pos.lng], {icon}).addTo(leafMap);
+    const title = g.memo ? g.memo : "固定客（メモ未記入）";
+    const precTag = pos.precise ? "📍GPSピンポイント" : "🏘️ 丁目レベル(概算)";
+    marker.bindPopup(`<div class="pin-pop"><b>${RANK_LABEL[g.rank]} ${title}</b><br>
+      ${g.latest.ward}${g.latest.area}<br>
+      前回：${g.latest.date}(${g.latest.dow}) ${g.latest.time}<br>
+      ¥${g.latest.fare||"-"}　${g.count>1?g.count+"回":""}<br>
+      <span style="color:#888;font-size:10px">${precTag}</span></div>`);
+    mapMarkers.push(marker);
+    bounds.push([pos.lat,pos.lng]);
+  });
+
+  if(bounds.length) leafMap.fitBounds(bounds, {padding:[40,40]});
+}
+
+function loadAll(force){
+  document.getElementById("hdr-sub").textContent = "読み込み中…";
+  Promise.all([ loadCoords(), fetchCSV(MEMO_CSV) ]).then(([_, rows])=>{
+    ALL_GROUPS = buildGroups(rows);
+    document.getElementById("hdr-sub").textContent = ALL_GROUPS.length + "件の固定客データ";
+    render();
+    if(currentTab==="map" && leafMap) renderMap();
+  }).catch(e=>{
+    document.getElementById("view-list").innerHTML =
+      `<div class="empty"><span>⚠️</span><p>読み込みエラー：${e.message}</p></div>`;
+    document.getElementById("hdr-sub").textContent = "読み込みエラー";
+  });
+}
+
+loadAll();
+</script>
+</body>
+</html>
