@@ -110,6 +110,14 @@ main{padding:10px 12px;max-width:520px;margin:0 auto}
     <button class="fbtn" id="sort-near-btn" onclick="enableNearSort()">📍 現在地から近い順</button>
   </div>
 
+  <div class="filter-label">時間帯（現在時刻に近い順で絞り込み）</div>
+  <div class="fbtn-row">
+    <button class="fbtn" id="time-filter-btn" onclick="toggleTimeFilter()">⏰ 今の時間帯のみ</button>
+    <button class="fbtn" id="time-30" onclick="setTimeWindow(30)">±30分</button>
+    <button class="fbtn on-all" id="time-90" onclick="setTimeWindow(90)">±90分</button>
+    <button class="fbtn" id="time-180" onclick="setTimeWindow(180)">±3時間</button>
+  </div>
+
   <div id="view-list"><div class="loading"><span class="spin">⏳</span> データ読み込み中...</div></div>
   <div id="view-map" style="display:none"><div id="map"></div></div>
 </main>
@@ -145,6 +153,8 @@ let leafMap = null;
 let mapMarkers = [];
 let userPos = null;
 let sortMode = "recent"; // 'recent' | 'near'
+let timeFilterOn = false;
+let timeWindowMin = 90;
 
 function norm(s){ return (s==null?"":String(s)).trim(); }
 function na(s){ return norm(s).replace(/[\s　]/g,''); }
@@ -343,6 +353,26 @@ function sortList(list){
   return list.slice().sort((a,b)=> (b.latest.date+b.latest.time).localeCompare(a.latest.date+a.latest.time));
 }
 
+function toggleTimeFilter(){
+  timeFilterOn = !timeFilterOn;
+  updateTimeButtons();
+  render();
+}
+
+function setTimeWindow(mins){
+  timeWindowMin = mins;
+  timeFilterOn = true;
+  updateTimeButtons();
+  render();
+}
+
+function updateTimeButtons(){
+  document.getElementById("time-filter-btn").className = timeFilterOn ? "fbtn on-all" : "fbtn";
+  [30,90,180].forEach(w=>{
+    document.getElementById("time-"+w).className = (timeFilterOn && timeWindowMin===w) ? "fbtn on-all" : "fbtn";
+  });
+}
+
 function toggleRank(v, btn){
   if(v === "all"){
     rankFilter = [];
@@ -377,9 +407,16 @@ function switchTab(tab){
 
 function getFiltered(){
   const q = norm(document.getElementById("search-input").value).toLowerCase();
+  const now = new Date();
+  const nowMin = now.getHours()*60 + now.getMinutes();
   return ALL_GROUPS.filter(g=>{
     if(rankFilter.length > 0 && rankFilter.indexOf(g.rank) < 0) return false;
     if(q && !(g.memo||"").toLowerCase().includes(q)) return false;
+    if(timeFilterOn){
+      const tMin = timeToMinutes(g.latest.time);
+      if(tMin == null) return false; // 時間不明は絞り込み時は除外
+      if(circularDiffMin(nowMin, tMin) > timeWindowMin) return false;
+    }
     return true;
   });
 }
@@ -390,9 +427,11 @@ function render(){
 }
 
 function renderList(){
-  const list = sortList(getFiltered());
+  const filtered = getFiltered();
+  const list = sortList(filtered);
   const wrap = document.getElementById("view-list");
-  document.getElementById("data-count").textContent = ALL_GROUPS.length;
+  document.getElementById("data-count").textContent =
+    filtered.length === ALL_GROUPS.length ? ALL_GROUPS.length : filtered.length + " / " + ALL_GROUPS.length;
 
   if(list.length === 0){
     wrap.innerHTML = '<div class="empty"><span>🈳</span><p>該当する固定客がいません</p></div>';
