@@ -51,6 +51,7 @@ main{padding:10px 12px;max-width:520px;margin:0 auto}
 .card-title{font-size:14px;font-weight:700;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .card-title.no-memo{color:var(--mu);font-weight:500}
 .visit-count{font-size:10px;color:var(--am);flex-shrink:0;font-weight:700}
+.dist-tag{font-size:10px;color:#39d353;flex-shrink:0;font-weight:700}
 .card-row{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--mu);margin-top:3px}
 .card-row .ic{font-size:11px;flex-shrink:0}
 .card-row b{color:var(--tx);font-weight:600}
@@ -103,6 +104,12 @@ main{padding:10px 12px;max-width:520px;margin:0 auto}
     <button class="fbtn" data-v="S" onclick="toggleRank('S',this)">⭐S (~¥3,000)</button>
   </div>
 
+  <div class="filter-label">並び順</div>
+  <div class="fbtn-row">
+    <button class="fbtn on-all" id="sort-recent-btn" onclick="setSortRecent()">🕐 新しい順</button>
+    <button class="fbtn" id="sort-near-btn" onclick="enableNearSort()">📍 現在地から近い順</button>
+  </div>
+
   <div id="view-list"><div class="loading"><span class="spin">⏳</span> データ読み込み中...</div></div>
   <div id="view-map" style="display:none"><div id="map"></div></div>
 </main>
@@ -110,19 +117,52 @@ main{padding:10px 12px;max-width:520px;margin:0 auto}
 <script>
 const MEMO_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv";
 const COORDS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=657495537&single=true&output=csv";
-const CACHE_KEY_MEMO = "kotei_customer_memo_v1";
 const CACHE_KEY_COORDS = "kotei_customer_coords_v1";
 const RANK_LABEL = {L:"⭐L", M:"⭐M", S:"⭐S"};
 const RANK_COLOR = {L:"#f85149", M:"#d29922", S:"#58a6ff"};
 
-let ALL_GROUPS = [];      // grouped by memo text (or ungrouped singles)
-let COORDS = {};          // chome address -> [lat,lng]
-let rankFilter = [];      // empty = all
+// 列名の表記ゆれに対応するための候補リスト
+const COL_CANDIDATES = {
+  rank:   ["固定客"],
+  memo:   ["固定客メモ","固定客メモ（名前・宛先・ひとこと）","固定客メモ(名前・宛先・ひとこと)"],
+  pWard:  ["乗車地：市区","乗車地:市区"],
+  pArea:  ["乗車地：地名","乗車地:地名"],
+  pLat:   ["乗車地：緯度","乗車地:緯度"],
+  pLng:   ["乗車地：経度","乗車地:経度"],
+  dWard:  ["降車地：市区","降車地:市区"],
+  dArea:  ["降車地：地名","降車地:地名"],
+  date:   ["日付"],
+  dow:    ["曜日"],
+  time:   ["乗車時間"],
+  fare:   ["料金"]
+};
+
+let ALL_GROUPS = [];
+let COORDS = {};
+let rankFilter = [];
 let currentTab = "list";
 let leafMap = null;
 let mapMarkers = [];
+let userPos = null;
+let sortMode = "recent"; // 'recent' | 'near'
 
-function norm(s){ return (s||"").trim(); }
+function norm(s){ return (s==null?"":String(s)).trim(); }
+function na(s){ return norm(s).replace(/[\s　]/g,''); }
+
+function getCol(row, key){
+  const candidates = COL_CANDIDATES[key] || [];
+  for(const c of candidates){
+    if(row[c] !== undefined && norm(row[c]) !== "") return norm(row[c]);
+  }
+  // フォールバック：部分一致で列を探す
+  const rowKeys = Object.keys(row);
+  for(const c of candidates){
+    const target = na(c);
+    const found = rowKeys.find(k => na(k).includes(target) || target.includes(na(k)));
+    if(found && norm(row[found]) !== "") return norm(row[found]);
+  }
+  return "";
+}
 
 function fetchCSV(url){
   return fetch(url).then(r=>{
@@ -158,28 +198,30 @@ function loadCoords(){
 }
 
 function buildGroups(rows){
-  // フィルタ：固定客ランクが S/M/L の行のみ
-  const flagged = rows.filter(r => ["S","M","L"].indexOf(norm(r["固定客"])) >= 0);
+  const flagged = rows.filter(r => ["S","M","L"].indexOf(getCol(r,"rank")) >= 0);
 
-  const groups = new Map(); // key -> group
+  const groups = new Map();
   let ungroupedIdx = 0;
 
   flagged.forEach(r=>{
-    const rank = norm(r["固定客"]);
-    const memo = norm(r["固定客メモ"]);
-    const ward = norm(r["乗車地：市区"]);
-    const area = norm(r["乗車地：地名"]);
-    const lat = parseFloat(r["乗車地：緯度"]);
-    const lng = parseFloat(r["乗車地：経度"]);
-    const date = norm(r["日付"]);
-    const dow = norm(r["曜日"]);
-    const time = norm(r["乗車時間"]);
-    const fare = norm(r["料金"]);
+    const rank = getCol(r,"rank");
+    const memo = getCol(r,"memo");
+    const ward = getCol(r,"pWard");
+    const area = getCol(r,"pArea");
+    const lat  = parseFloat(getCol(r,"pLat"));
+    const lng  = parseFloat(getCol(r,"pLng"));
+    const dWard= getCol(r,"dWard");
+    const dArea= getCol(r,"dArea");
+    const date = getCol(r,"date");
+    const dow  = getCol(r,"dow");
+    const time = getCol(r,"time");
+    const fare = getCol(r,"fare");
 
     const visit = {
       rank, ward, area,
       lat: !isNaN(lat) ? lat : null,
       lng: !isNaN(lng) ? lng : null,
+      dWard, dArea,
       date, dow, time, fare, memo
     };
 
@@ -187,25 +229,16 @@ function buildGroups(rows){
     if(!groups.has(key)){
       groups.set(key, { memo, rank, visits: [] });
     }
-    const g = groups.get(key);
-    g.visits.push(visit);
-    // グループの代表ランクは最新訪問のランクを使う
+    groups.get(key).visits.push(visit);
   });
 
   const list = [];
   groups.forEach(g=>{
     g.visits.sort((a,b)=> (b.date+b.time).localeCompare(a.date+a.time));
     const latest = g.visits[0];
-    list.push({
-      memo: g.memo,
-      rank: latest.rank,
-      latest,
-      visits: g.visits,
-      count: g.visits.length
-    });
+    list.push({ memo: g.memo, rank: latest.rank, latest, visits: g.visits, count: g.visits.length });
   });
 
-  list.sort((a,b)=> (b.latest.date+b.latest.time).localeCompare(a.latest.date+a.latest.time));
   return list;
 }
 
@@ -218,23 +251,100 @@ function resolveLatLng(v){
   return null;
 }
 
+function haversine(lat1,lon1,lat2,lon2){
+  const R=6371, toR=d=>d*Math.PI/180;
+  const dLat=toR(lat2-lat1), dLon=toR(lon2-lon1);
+  const a=Math.sin(dLat/2)**2 + Math.cos(toR(lat1))*Math.cos(toR(lat2))*Math.sin(dLon/2)**2;
+  return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
+}
+
+function timeToMinutes(timeStr){
+  const m = String(timeStr||"").match(/(\d{1,2}):(\d{2})/);
+  if(!m) return null;
+  return (+m[1])*60 + (+m[2]);
+}
+
+function circularDiffMin(a,b){
+  const d = Math.abs(a-b);
+  return Math.min(d, 1440-d);
+}
+
+function getGPS(){
+  return new Promise((resolve,reject)=>{
+    if(!navigator.geolocation){reject(new Error("この端末はGPS非対応です"));return;}
+    navigator.geolocation.getCurrentPosition(
+      p=>resolve({lat:p.coords.latitude,lng:p.coords.longitude}),
+      e=>reject(new Error(e.code===1?"位置情報の許可が必要です":"GPS取得に失敗しました")),
+      {timeout:8000}
+    );
+  });
+}
+
+async function enableNearSort(){
+  const btn = document.getElementById("sort-near-btn");
+  const orig = btn.textContent;
+  btn.textContent = "📍 取得中…";
+  try{
+    userPos = await getGPS();
+    sortMode = "near";
+    updateSortButtons();
+    render();
+  }catch(e){
+    alert(e.message);
+    btn.textContent = orig;
+  }
+}
+
+function setSortRecent(){
+  sortMode = "recent";
+  updateSortButtons();
+  render();
+}
+
+function updateSortButtons(){
+  document.getElementById("sort-recent-btn").className = sortMode==="recent" ? "fbtn on-all" : "fbtn";
+  document.getElementById("sort-near-btn").className = sortMode==="near" ? "fbtn on-all" : "fbtn";
+  document.getElementById("sort-near-btn").textContent = sortMode==="near" ? "📍 現在地優先中" : "📍 現在地から近い順";
+}
+
+// スコア：距離(km) × 時間帯の乖離による倍率(0.6〜1.4)
+function scoreForNear(g){
+  const pos = resolveLatLng(g.latest);
+  const dist = pos ? haversine(userPos.lat,userPos.lng,pos.lat,pos.lng) : 999;
+  const tMin = timeToMinutes(g.latest.time);
+  const now = new Date();
+  const nowMin = now.getHours()*60 + now.getMinutes();
+  let mult = 1;
+  if(tMin != null){
+    const diff = circularDiffMin(nowMin, tMin); // 0〜720分
+    mult = 0.6 + (diff/720)*0.8;
+  }
+  return { dist, score: dist*mult };
+}
+
+function sortList(list){
+  if(sortMode === "near" && userPos){
+    return list.map(g=>{
+      const {dist,score} = scoreForNear(g);
+      return {g, dist, score};
+    }).sort((a,b)=>a.score-b.score).map(x=>{ x.g._dist = x.dist; return x.g; });
+  }
+  return list.slice().sort((a,b)=> (b.latest.date+b.latest.time).localeCompare(a.latest.date+a.latest.time));
+}
+
 function toggleRank(v, btn){
   if(v === "all"){
     rankFilter = [];
-    document.querySelectorAll(".fbtn").forEach(b=>{
+    document.querySelectorAll('.fbtn-row:nth-of-type(1) .fbtn, .fbtn[data-v]').forEach(()=>{});
+    document.querySelectorAll('.fbtn[data-v]').forEach(b=>{
       if(b.dataset.v === "all") b.className = "fbtn on-all";
       else b.className = "fbtn";
     });
   } else {
     const idx = rankFilter.indexOf(v);
     const allBtn = document.querySelector('.fbtn[data-v="all"]');
-    if(idx >= 0){
-      rankFilter.splice(idx,1);
-      btn.className = "fbtn";
-    } else {
-      rankFilter.push(v);
-      btn.className = "fbtn on-fix" + v;
-    }
+    if(idx >= 0){ rankFilter.splice(idx,1); btn.className = "fbtn"; }
+    else { rankFilter.push(v); btn.className = "fbtn on-fix" + v; }
     if(rankFilter.length === 0) allBtn.className = "fbtn on-all";
     else allBtn.className = "fbtn";
   }
@@ -269,7 +379,7 @@ function render(){
 }
 
 function renderList(){
-  const list = getFiltered();
+  const list = sortList(getFiltered());
   const wrap = document.getElementById("view-list");
   document.getElementById("data-count").textContent = ALL_GROUPS.length;
 
@@ -279,13 +389,14 @@ function renderList(){
   }
 
   wrap.innerHTML = list.map(g=>{
-    const rc = RANK_COLOR[g.rank];
     const title = g.memo ? g.memo : "固定客（メモ未記入）";
     const titleClass = g.memo ? "card-title" : "card-title no-memo";
     const loc = (g.latest.ward + g.latest.area) || "地名不明";
+    const dloc = (g.latest.dWard + g.latest.dArea) || "";
     const gpsTag = g.latest.lat != null ? '<span class="gps-tag">📍GPS</span>' : '';
+    const distTag = (sortMode==="near" && g._dist != null) ? `<span class="dist-tag">${g._dist.toFixed(1)}km</span>` : "";
     const hist = g.visits.slice(1,4).map(v=>
-      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.ward}${v.area} ¥${v.fare||"-"}</div>`
+      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.ward}${v.area}${v.dWard||v.dArea?"→"+v.dWard+v.dArea:""} ¥${v.fare||"-"}</div>`
     ).join("");
     const histMore = g.visits.length > 4 ? `<div class="hist-item">…他 ${g.visits.length-4}件</div>` : "";
 
@@ -293,9 +404,11 @@ function renderList(){
       <div class="card-top">
         <span class="badge badge-${g.rank}">${RANK_LABEL[g.rank]}</span>
         <span class="${titleClass}">${title}</span>
+        ${distTag}
         ${g.count>1 ? `<span class="visit-count">${g.count}回</span>` : ""}
       </div>
       <div class="card-row"><span class="ic">📍</span><b>${loc}</b>${gpsTag}</div>
+      ${dloc ? `<div class="card-row"><span class="ic">🏁</span>→ ${dloc}</div>` : ""}
       <div class="card-row"><span class="ic">🕐</span>前回 ${g.latest.date}(${g.latest.dow}) ${g.latest.time}</div>
       <div class="card-row"><span class="ic">💴</span>¥${g.latest.fare || "-"}</div>
       ${hist || histMore ? `<div class="hist-list">${hist}${histMore}</div>` : ""}
@@ -305,8 +418,8 @@ function renderList(){
 
 function initMap(){
   leafMap = L.map('map', {zoomControl:true}).setView([35.68,139.70], 12);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution:'&copy; OpenStreetMap', maxZoom:19
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution:'&copy; OpenStreetMap &copy; CARTO', subdomains:'abcd', maxZoom:19
   }).addTo(leafMap);
 }
 
@@ -315,7 +428,7 @@ function renderMap(){
   mapMarkers.forEach(m=>leafMap.removeLayer(m));
   mapMarkers = [];
 
-  const list = getFiltered();
+  const list = sortList(getFiltered());
   const bounds = [];
 
   list.forEach(g=>{
@@ -323,20 +436,30 @@ function renderMap(){
     if(!pos) return;
     const rc = RANK_COLOR[g.rank];
     const icon = L.divIcon({
-      html: `<div style="width:16px;height:16px;border-radius:50%;background:${rc};border:2px solid #fff;box-shadow:0 0 4px rgba(0,0,0,.5)"></div>`,
+      html: `<div style="width:16px;height:16px;border-radius:50%;background:${rc};border:2px solid #fff;box-shadow:0 0 4px rgba(0,0,0,.6)"></div>`,
       className:'', iconSize:[16,16], iconAnchor:[8,8]
     });
     const marker = L.marker([pos.lat,pos.lng], {icon}).addTo(leafMap);
     const title = g.memo ? g.memo : "固定客（メモ未記入）";
     const precTag = pos.precise ? "📍GPSピンポイント" : "🏘️ 丁目レベル(概算)";
+    const dloc = (g.latest.dWard + g.latest.dArea) || "";
     marker.bindPopup(`<div class="pin-pop"><b>${RANK_LABEL[g.rank]} ${title}</b><br>
-      ${g.latest.ward}${g.latest.area}<br>
+      ${g.latest.ward}${g.latest.area}${dloc?"→"+dloc:""}<br>
       前回：${g.latest.date}(${g.latest.dow}) ${g.latest.time}<br>
       ¥${g.latest.fare||"-"}　${g.count>1?g.count+"回":""}<br>
       <span style="color:#888;font-size:10px">${precTag}</span></div>`);
     mapMarkers.push(marker);
     bounds.push([pos.lat,pos.lng]);
   });
+
+  if(userPos){
+    const uIcon = L.divIcon({
+      html: `<div style="width:14px;height:14px;border-radius:50%;background:#39d353;border:3px solid #fff;box-shadow:0 0 6px rgba(57,211,83,.8)"></div>`,
+      className:'', iconSize:[14,14], iconAnchor:[7,7]
+    });
+    L.marker([userPos.lat,userPos.lng], {icon:uIcon}).addTo(leafMap).bindPopup("現在地");
+    bounds.push([userPos.lat,userPos.lng]);
+  }
 
   if(bounds.length) leafMap.fitBounds(bounds, {padding:[40,40]});
 }
