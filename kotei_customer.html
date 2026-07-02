@@ -151,17 +151,28 @@ function na(s){ return norm(s).replace(/[\s　]/g,''); }
 
 function getCol(row, key){
   const candidates = COL_CANDIDATES[key] || [];
+  // 1. 完全一致の列名が存在すれば、値が空でもそれを正として採用する
+  //    （空欄を「見つからなかった」扱いにすると、別の列への誤マッチを招くため）
   for(const c of candidates){
-    if(row[c] !== undefined && norm(row[c]) !== "") return norm(row[c]);
+    if(Object.prototype.hasOwnProperty.call(row, c)) return norm(row[c]);
   }
-  // フォールバック：部分一致で列を探す
+  // 2. 完全一致の列が一つも無い場合のみ、部分一致で探す（列名変更対策）
+  //    ※ 必ず「実際の列名 が 候補語を含む」方向のみ許可。
+  //      逆方向（候補語が列名を含む）を許すと「固定客メモ」候補が
+  //      短い列名「固定客」に誤ヒットするため禁止。
   const rowKeys = Object.keys(row);
   for(const c of candidates){
     const target = na(c);
-    const found = rowKeys.find(k => na(k).includes(target) || target.includes(na(k)));
-    if(found && norm(row[found]) !== "") return norm(row[found]);
+    const found = rowKeys.find(k => na(k).length > target.length && na(k).includes(target));
+    if(found) return norm(row[found]);
   }
   return "";
+}
+
+function fmtFareDisplay(fare){
+  const f = norm(fare);
+  if(!f) return "-";
+  return f.startsWith("¥") ? f : "¥"+f;
 }
 
 function fetchCSV(url){
@@ -396,7 +407,7 @@ function renderList(){
     const gpsTag = g.latest.lat != null ? '<span class="gps-tag">📍GPS</span>' : '';
     const distTag = (sortMode==="near" && g._dist != null) ? `<span class="dist-tag">${g._dist.toFixed(1)}km</span>` : "";
     const hist = g.visits.slice(1,4).map(v=>
-      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.ward}${v.area}${v.dWard||v.dArea?"→"+v.dWard+v.dArea:""} ¥${v.fare||"-"}</div>`
+      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.ward}${v.area}${v.dWard||v.dArea?"→"+v.dWard+v.dArea:""} ${fmtFareDisplay(v.fare)}</div>`
     ).join("");
     const histMore = g.visits.length > 4 ? `<div class="hist-item">…他 ${g.visits.length-4}件</div>` : "";
 
@@ -410,7 +421,7 @@ function renderList(){
       <div class="card-row"><span class="ic">📍</span><b>${loc}</b>${gpsTag}</div>
       ${dloc ? `<div class="card-row"><span class="ic">🏁</span>→ ${dloc}</div>` : ""}
       <div class="card-row"><span class="ic">🕐</span>前回 ${g.latest.date}(${g.latest.dow}) ${g.latest.time}</div>
-      <div class="card-row"><span class="ic">💴</span>¥${g.latest.fare || "-"}</div>
+      <div class="card-row"><span class="ic">💴</span>${fmtFareDisplay(g.latest.fare)}</div>
       ${hist || histMore ? `<div class="hist-list">${hist}${histMore}</div>` : ""}
     </div>`;
   }).join("");
@@ -446,7 +457,7 @@ function renderMap(){
     marker.bindPopup(`<div class="pin-pop"><b>${RANK_LABEL[g.rank]} ${title}</b><br>
       ${g.latest.ward}${g.latest.area}${dloc?"→"+dloc:""}<br>
       前回：${g.latest.date}(${g.latest.dow}) ${g.latest.time}<br>
-      ¥${g.latest.fare||"-"}　${g.count>1?g.count+"回":""}<br>
+      ${fmtFareDisplay(g.latest.fare)}　${g.count>1?g.count+"回":""}<br>
       <span style="color:#888;font-size:10px">${precTag}</span></div>`);
     mapMarkers.push(marker);
     bounds.push([pos.lat,pos.lng]);
