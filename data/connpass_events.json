@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-02T08:05:22.046328+09:00",
+  "fetched_at": "2026-07-02T11:35:01.475309+09:00",
   "date": "20260702",
   "count": 13,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 52432,
       "owner_nickname": "hoge_suzuki",
       "owner_display_name": "suzuki-hoge",
-      "accepted": 60,
+      "accepted": 61,
       "waiting": 0,
       "updated_at": "2026-06-04T21:19:30+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 2208,
       "owner_nickname": "Kirika_K2",
       "owner_display_name": "Kirika_K2",
-      "accepted": 15,
+      "accepted": 16,
       "waiting": 0,
       "updated_at": "2026-06-18T14:48:43+09:00"
     },
@@ -123,40 +123,9 @@
       "owner_id": 18310,
       "owner_nickname": "kixixixixi",
       "owner_display_name": "kixixixixi",
-      "accepted": 4,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-06-23T23:10:27+09:00"
-    },
-    {
-      "id": 395291,
-      "title": "AI Builder's Night #1",
-      "catch": "ーAI時代の“Builder”は、どこに集まるのかー",
-      "description": "<h1>AI Builder's Night #1</h1>\n<p><strong>-AI時代の“Builder”は、どこに集まるのか-</strong>\n<br>\n生成AIの登場により、ソフトウェア産業の前提は大きく覆りました。過去の成功体験が通用しなくなるこの「AIネイティブ時代」において、事業を創り、組織を率いる真の“Builder”たちは、いまどこへ向かっているのでしょうか。\n<br>\n<br>\n参考：LayerX COOの福島（kozo）が公開したNote「<a href=\"https://note.com/kozofk/n/ncb4bee9f92dc\" rel=\"nofollow\">AI Builder 〜組織のアウトカムを10倍にする新職種〜</a>」\n<br>\n<br>\n本イベントは、メディアでも大きな注目を集める株式会社AgenticSecの代表取締役CEO 中谷と、株式会社LayerX CTOの松本が登壇するAI Builder同士の一夜限りの特別セッションです。ファシリテーターはLayerX CHROの石黒が務めます。\n<br>\n<br>\nなぜ今、AgenticSecはLayerXグループへのJoinを決断したのか。両社が描く「AIカンパニーとしての非連続な成長戦略」の全貌から、最前線で求められる「過去のアンラーン（学習棄却）」のリアルまで、ここでしか聞けない生々しいディスカッションをお届けします。\n<br>\n<br>\nイベント後半では、登壇者と直接近い距離で話せる懇親会（ネットワーキング）の時間もご用意しています。AI時代の最前線を走るリーダーたちと、これからの事業・組織について熱く議論しませんか？</p>\n<h2>こんな方におすすめです</h2>\n<p>・AI Nativeなプロダクト・事業開発の最前線に興味がある方\n<br>・過去の成功体験に固執せず、自らをアンラーンし続けたいプロフェッショナルの方\n<br>・カオスな環境を楽しみ、自律駆動で事業や組織を牽引していきたい方\n<br>・AgenticSec社、LayerXグループの今後の展開や組織づくりに興味がある方</p>\n<h2>概要</h2>\n<p>日時：2026年7月2日（木）18:45開場\n<br>\n場所：株式会社LayerX イベントスペース \n<br>\n費用：無料\n<br></p>\n<h2>TIME TABLE</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">ご挨拶</td>\n<td style=\"text-align: left;\">石黒</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n<td style=\"text-align: left;\">モデレーター：<br>石黒<br><br>パネリスト：<br>中谷・松本</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">質疑応答</td>\n<td style=\"text-align: left;\">モデレーター：<br>石黒<br><br>パネリスト：<br>中谷・松本</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00</td>\n<td style=\"text-align: left;\">終了予定</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<p><br></p>\n<h2>登壇者</h2>\n<h3>中谷 翔 <a href=\"https://x.com/laysakura\" rel=\"nofollow\">@laysakura</a></h3>\n<p><strong>株式会社AgenticSec 代表取締役CEO</strong>\n<br>\n<br>\n東京大学大学院修了。ディー・エヌ・エー、FOLIO執行役員を経て、トヨタ自動車株式会社にて主幹・プリンシパルリサーチャーとしてサイバーセキュリティ研究に従事。2025年にAgenticSecを設立。AIエージェントでの初期侵入の完全自動化を世界初達成。OSCP、CISSP等の高度資格を保有し、セキュリティコンテスト上位入賞実績、世界最高峰のセキュリティカンファレンス「Black Hat USA」への登壇実績を持つ。</p>\n<h3>松本 勇気 <a href=\"https://x.com/y_matsuwitter\" rel=\"nofollow\">@y_matsuwitter</a></h3>\n<p><strong>株式会社LayerX 代表取締役CTO</strong>\n<br>\n<br>\n株式会社Gunosy、合同会社DMM.comのCTOを経て、2021年3月よりLayerX代表取締役CTOに就任。開発や組織づくり、ならびにFintechとAI・LLMの2事業の推進を担当。2019年には日本CTO協会の立ち上げに関わり、理事として活動したのち、2025年より顧問に就任。</p>\n<h3>石黒 卓弥 <a href=\"https://x.com/takaya_i\" rel=\"nofollow\">@takaya_i</a></h3>\n<p><strong>株式会社LayerX 執行役員CHRO</strong>\n<br>\n<br>\nNTTドコモに新卒入社後、マーケティングのほか、営業・採用育成・人事制度を担当。また事業会社の立ち上げや新規事業開発なども手掛ける。2015年1月、60名のメルカリに入社し人事部門の立上げ、5年で1800名規模までの組織拡大を牽引。採用広報や国内外の採用をメインとし、人材育成・組織開発・アナリティクスなど幅広い人事機能を歴任。2020年5月LayerXに参画。</p>\n<h2>information</h2>\n<p><strong>お願い</strong>\n<br>\nイベントレポートを作成し、SNSやnoteに掲載するために運営による撮影を行う可能性があります。お顔が映る場合もありますので、気になる方はお声がけください。\n<br>内容に関するブログ・X（旧Twitter）等での発信はオフレコ部分を除き積極的に協力いただけると幸いです。</p>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<h2>行動規範</h2>\n<p><a href=\"https://layerx.connpass.com/event/392455/#:~:text=%E8%A1%8C%E5%8B%95%E8%A6%8F%E7%AF%84-,LayerX%20%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E8%A1%8C%E5%8B%95%E8%A6%8F%E7%AF%84,-%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC\" rel=\"nofollow\">LayerX イベント行動規範</a></p>\n<h2>プライバシーポリシー</h2>\n<p><a href=\"https://layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX プライバシーポリシー</a>\n<br><a href=\"https://layerx.connpass.com/event/392455/#:~:text=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BELayerX%20%E6%8E%A1%E7%94%A8%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC\" rel=\"nofollow\">株式会社LayerX 採用プライバシーポリシー</a>\n<br>※ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善又は新規企画のための分析、登壇企業の採用情報等のご案内で利用いたします。</p>",
-      "url": "https://layerx.connpass.com/event/395291/",
-      "image_url": "https://media.connpass.com/thumbs/01/f2/01f2b6f982c905f120b710e3acb85e7c.png",
-      "hash_tag": "AIbuilder",
-      "started_at": "2026-07-02T19:00:00+09:00",
-      "ended_at": "2026-07-02T21:00:00+09:00",
-      "published_at": "2026-05-29T16:41:20+09:00",
-      "limit": 72,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 6108,
-        "subdomain": "layerx",
-        "title": "LayerX",
-        "url": "https://layerx.connpass.com/"
-      },
-      "address": "東京都中央区築地1-13-1 銀座松竹スクエア 5階",
-      "place": "LayerX",
-      "lat": "35.668390500000",
-      "lon": "139.769413700000",
-      "owner_id": 425456,
-      "owner_nickname": "takefuku",
-      "owner_display_name": "takefuku",
-      "accepted": 69,
-      "waiting": 0,
-      "updated_at": "2026-07-01T10:46:43+09:00"
     },
     {
       "id": 397873,
@@ -185,9 +154,40 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 41,
+      "accepted": 42,
       "waiting": 0,
       "updated_at": "2026-07-01T16:05:35+09:00"
+    },
+    {
+      "id": 395291,
+      "title": "AI Builder's Night #1",
+      "catch": "ーAI時代の“Builder”は、どこに集まるのかー",
+      "description": "<h1>AI Builder's Night #1</h1>\n<p><strong>-AI時代の“Builder”は、どこに集まるのか-</strong>\n<br>\n生成AIの登場により、ソフトウェア産業の前提は大きく覆りました。過去の成功体験が通用しなくなるこの「AIネイティブ時代」において、事業を創り、組織を率いる真の“Builder”たちは、いまどこへ向かっているのでしょうか。\n<br>\n<br>\n参考：LayerX COOの福島（kozo）が公開したNote「<a href=\"https://note.com/kozofk/n/ncb4bee9f92dc\" rel=\"nofollow\">AI Builder 〜組織のアウトカムを10倍にする新職種〜</a>」\n<br>\n<br>\n本イベントは、メディアでも大きな注目を集める株式会社AgenticSecの代表取締役CEO 中谷と、株式会社LayerX CTOの松本が登壇するAI Builder同士の一夜限りの特別セッションです。ファシリテーターはLayerX CHROの石黒が務めます。\n<br>\n<br>\nなぜ今、AgenticSecはLayerXグループへのJoinを決断したのか。両社が描く「AIカンパニーとしての非連続な成長戦略」の全貌から、最前線で求められる「過去のアンラーン（学習棄却）」のリアルまで、ここでしか聞けない生々しいディスカッションをお届けします。\n<br>\n<br>\nイベント後半では、登壇者と直接近い距離で話せる懇親会（ネットワーキング）の時間もご用意しています。AI時代の最前線を走るリーダーたちと、これからの事業・組織について熱く議論しませんか？</p>\n<h2>こんな方におすすめです</h2>\n<p>・AI Nativeなプロダクト・事業開発の最前線に興味がある方\n<br>・過去の成功体験に固執せず、自らをアンラーンし続けたいプロフェッショナルの方\n<br>・カオスな環境を楽しみ、自律駆動で事業や組織を牽引していきたい方\n<br>・AgenticSec社、LayerXグループの今後の展開や組織づくりに興味がある方</p>\n<h2>概要</h2>\n<p>日時：2026年7月2日（木）18:45開場\n<br>\n場所：株式会社LayerX イベントスペース \n<br>\n費用：無料\n<br></p>\n<h2>TIME TABLE</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">ご挨拶</td>\n<td style=\"text-align: left;\">石黒</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n<td style=\"text-align: left;\">モデレーター：<br>石黒<br><br>パネリスト：<br>中谷・松本</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">質疑応答</td>\n<td style=\"text-align: left;\">モデレーター：<br>石黒<br><br>パネリスト：<br>中谷・松本</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00</td>\n<td style=\"text-align: left;\">終了予定</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<p><br></p>\n<h2>登壇者</h2>\n<h3>中谷 翔 <a href=\"https://x.com/laysakura\" rel=\"nofollow\">@laysakura</a></h3>\n<p><strong>株式会社AgenticSec 代表取締役CEO</strong>\n<br>\n<br>\n東京大学大学院修了。ディー・エヌ・エー、FOLIO執行役員を経て、トヨタ自動車株式会社にて主幹・プリンシパルリサーチャーとしてサイバーセキュリティ研究に従事。2025年にAgenticSecを設立。AIエージェントでの初期侵入の完全自動化を世界初達成。OSCP、CISSP等の高度資格を保有し、セキュリティコンテスト上位入賞実績、世界最高峰のセキュリティカンファレンス「Black Hat USA」への登壇実績を持つ。</p>\n<h3>松本 勇気 <a href=\"https://x.com/y_matsuwitter\" rel=\"nofollow\">@y_matsuwitter</a></h3>\n<p><strong>株式会社LayerX 代表取締役CTO</strong>\n<br>\n<br>\n株式会社Gunosy、合同会社DMM.comのCTOを経て、2021年3月よりLayerX代表取締役CTOに就任。開発や組織づくり、ならびにFintechとAI・LLMの2事業の推進を担当。2019年には日本CTO協会の立ち上げに関わり、理事として活動したのち、2025年より顧問に就任。</p>\n<h3>石黒 卓弥 <a href=\"https://x.com/takaya_i\" rel=\"nofollow\">@takaya_i</a></h3>\n<p><strong>株式会社LayerX 執行役員CHRO</strong>\n<br>\n<br>\nNTTドコモに新卒入社後、マーケティングのほか、営業・採用育成・人事制度を担当。また事業会社の立ち上げや新規事業開発なども手掛ける。2015年1月、60名のメルカリに入社し人事部門の立上げ、5年で1800名規模までの組織拡大を牽引。採用広報や国内外の採用をメインとし、人材育成・組織開発・アナリティクスなど幅広い人事機能を歴任。2020年5月LayerXに参画。</p>\n<h2>information</h2>\n<p><strong>お願い</strong>\n<br>\nイベントレポートを作成し、SNSやnoteに掲載するために運営による撮影を行う可能性があります。お顔が映る場合もありますので、気になる方はお声がけください。\n<br>内容に関するブログ・X（旧Twitter）等での発信はオフレコ部分を除き積極的に協力いただけると幸いです。</p>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<h2>行動規範</h2>\n<p><a href=\"https://layerx.connpass.com/event/392455/#:~:text=%E8%A1%8C%E5%8B%95%E8%A6%8F%E7%AF%84-,LayerX%20%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E8%A1%8C%E5%8B%95%E8%A6%8F%E7%AF%84,-%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC\" rel=\"nofollow\">LayerX イベント行動規範</a></p>\n<h2>プライバシーポリシー</h2>\n<p><a href=\"https://layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX プライバシーポリシー</a>\n<br><a href=\"https://layerx.connpass.com/event/392455/#:~:text=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BELayerX%20%E6%8E%A1%E7%94%A8%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC\" rel=\"nofollow\">株式会社LayerX 採用プライバシーポリシー</a>\n<br>※ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善又は新規企画のための分析、登壇企業の採用情報等のご案内で利用いたします。</p>",
+      "url": "https://layerx.connpass.com/event/395291/",
+      "image_url": "https://media.connpass.com/thumbs/01/f2/01f2b6f982c905f120b710e3acb85e7c.png",
+      "hash_tag": "AIbuilder",
+      "started_at": "2026-07-02T19:00:00+09:00",
+      "ended_at": "2026-07-02T21:00:00+09:00",
+      "published_at": "2026-05-29T16:41:20+09:00",
+      "limit": 72,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 6108,
+        "subdomain": "layerx",
+        "title": "LayerX",
+        "url": "https://layerx.connpass.com/"
+      },
+      "address": "東京都中央区築地1-13-1 銀座松竹スクエア 5階",
+      "place": "LayerX",
+      "lat": "35.668390500000",
+      "lon": "139.769413700000",
+      "owner_id": 425456,
+      "owner_nickname": "takefuku",
+      "owner_display_name": "takefuku",
+      "accepted": 68,
+      "waiting": 0,
+      "updated_at": "2026-07-01T10:46:43+09:00"
     },
     {
       "id": 396727,
@@ -216,7 +216,7 @@
       "owner_id": 20036,
       "owner_nickname": "hihats",
       "owner_display_name": "hihats",
-      "accepted": 14,
+      "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-06-29T21:17:51+09:00"
     },
@@ -278,7 +278,7 @@
       "owner_id": 254161,
       "owner_nickname": "sghirokon",
       "owner_display_name": "sghirokon",
-      "accepted": 402,
+      "accepted": 417,
       "waiting": 0,
       "updated_at": "2026-07-02T07:08:31+09:00"
     },
@@ -293,7 +293,7 @@
       "started_at": "2026-07-02T14:00:00+09:00",
       "ended_at": "2026-07-02T17:00:00+09:00",
       "published_at": "2026-05-28T15:19:02+09:00",
-      "limit": 360,
+      "limit": 361,
       "event_type": "participation",
       "open_status": "preopen",
       "group": null,
@@ -304,9 +304,9 @@
       "owner_id": 1025410,
       "owner_nickname": "bsd-seminar",
       "owner_display_name": "bsd-seminar",
-      "accepted": 105,
-      "waiting": 1,
-      "updated_at": "2026-06-25T10:04:57+09:00"
+      "accepted": 114,
+      "waiting": 0,
+      "updated_at": "2026-07-02T08:58:47+09:00"
     },
     {
       "id": 378798,
@@ -350,7 +350,7 @@
       "started_at": "2026-07-02T12:00:00+09:00",
       "ended_at": "2026-07-03T19:00:00+09:00",
       "published_at": "2026-01-12T10:02:03+09:00",
-      "limit": 1150,
+      "limit": 1149,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -366,9 +366,9 @@
       "owner_id": 370324,
       "owner_nickname": "LASA_Official",
       "owner_display_name": "LASA Official",
-      "accepted": 1034,
-      "waiting": 15,
-      "updated_at": "2026-06-29T10:54:07+09:00"
+      "accepted": 1049,
+      "waiting": 16,
+      "updated_at": "2026-07-02T10:18:54+09:00"
     },
     {
       "id": 398576,
@@ -383,7 +383,7 @@
       "published_at": "2026-06-25T17:11:20+09:00",
       "limit": 900,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17836,
         "subdomain": "active-retech",
