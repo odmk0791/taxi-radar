@@ -142,7 +142,8 @@ const COL_CANDIDATES = {
   date:   ["日付"],
   dow:    ["曜日"],
   time:   ["乗車時間"],
-  fare:   ["料金"]
+  fare:   ["料金"],
+  sankyu: ["サンキュー"]
 };
 
 let ALL_GROUPS = [];
@@ -237,13 +238,14 @@ function buildGroups(rows){
     const dow  = getCol(r,"dow");
     const time = getCol(r,"time");
     const fare = getCol(r,"fare");
+    const sankyu = getCol(r,"sankyu");
 
     const visit = {
       rank, ward, area,
       lat: !isNaN(lat) ? lat : null,
       lng: !isNaN(lng) ? lng : null,
       dWard, dArea,
-      date, dow, time, fare, memo
+      date, dow, time, fare, sankyu, memo
     };
 
     const key = memo ? "memo::" + memo : "single::" + (ungroupedIdx++);
@@ -445,9 +447,10 @@ function renderList(){
     const loc = (g.latest.ward + g.latest.area) || "地名不明";
     const dloc = (g.latest.dWard + g.latest.dArea) || "";
     const gpsTag = g.latest.lat != null ? '<span class="gps-tag">📍GPS</span>' : '';
+    const sankyuTag = g.latest.sankyu === "サンキュー" ? '<span class="gps-tag" style="color:#f0a500;border-color:rgba(240,165,0,.4)">🎫サンキュー</span>' : '';
     const distTag = (sortMode==="near" && g._dist != null) ? `<span class="dist-tag">${g._dist.toFixed(1)}km</span>` : "";
     const hist = g.visits.slice(1,4).map(v=>
-      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.ward}${v.area}${v.dWard||v.dArea?"→"+v.dWard+v.dArea:""} ${fmtFareDisplay(v.fare)}</div>`
+      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.ward}${v.area}${v.dWard||v.dArea?"→"+v.dWard+v.dArea:""} ${fmtFareDisplay(v.fare)}${v.sankyu==="サンキュー"?" 🎫":""}</div>`
     ).join("");
     const histMore = g.visits.length > 4 ? `<div class="hist-item">…他 ${g.visits.length-4}件</div>` : "";
 
@@ -458,7 +461,7 @@ function renderList(){
         ${distTag}
         ${g.count>1 ? `<span class="visit-count">${g.count}回</span>` : ""}
       </div>
-      <div class="card-row"><span class="ic">📍</span><b>${loc}</b>${gpsTag}</div>
+      <div class="card-row"><span class="ic">📍</span><b>${loc}</b>${gpsTag}${sankyuTag}</div>
       ${dloc ? `<div class="card-row"><span class="ic">🏁</span>→ ${dloc}</div>` : ""}
       <div class="card-row"><span class="ic">🕐</span>前回 ${g.latest.date}(${g.latest.dow}) ${g.latest.time}</div>
       <div class="card-row"><span class="ic">💴</span>${fmtFareDisplay(g.latest.fare)}</div>
@@ -497,7 +500,7 @@ function renderMap(){
     marker.bindPopup(`<div class="pin-pop"><b>${RANK_LABEL[g.rank]} ${title}</b><br>
       ${g.latest.ward}${g.latest.area}${dloc?"→"+dloc:""}<br>
       前回：${g.latest.date}(${g.latest.dow}) ${g.latest.time}<br>
-      ${fmtFareDisplay(g.latest.fare)}　${g.count>1?g.count+"回":""}<br>
+      ${fmtFareDisplay(g.latest.fare)}${g.latest.sankyu==="サンキュー"?" 🎫サンキュー":""}　${g.count>1?g.count+"回":""}<br>
       <span style="color:#888;font-size:10px">${precTag}</span></div>`);
     mapMarkers.push(marker);
     bounds.push([pos.lat,pos.lng]);
