@@ -113,9 +113,9 @@ main{padding:10px 12px;max-width:520px;margin:0 auto}
   <div class="filter-label">時間帯（現在時刻に近い順で絞り込み）</div>
   <div class="fbtn-row">
     <button class="fbtn" id="time-filter-btn" onclick="toggleTimeFilter()">⏰ 今の時間帯のみ</button>
-    <button class="fbtn" id="time-30" onclick="setTimeWindow(30)">±30分</button>
-    <button class="fbtn on-all" id="time-90" onclick="setTimeWindow(90)">±90分</button>
-    <button class="fbtn" id="time-180" onclick="setTimeWindow(180)">±3時間</button>
+    <button class="fbtn" id="time-10" onclick="setTimeWindow(10)">10分以内</button>
+    <button class="fbtn on-all" id="time-20" onclick="setTimeWindow(20)">20分以内</button>
+    <button class="fbtn" id="time-30" onclick="setTimeWindow(30)">30分以内</button>
   </div>
 
   <div id="view-list"><div class="loading"><span class="spin">⏳</span> データ読み込み中...</div></div>
@@ -154,7 +154,7 @@ let mapMarkers = [];
 let userPos = null;
 let sortMode = "recent"; // 'recent' | 'near'
 let timeFilterOn = false;
-let timeWindowMin = 90;
+let timeWindowMin = 20;
 
 function norm(s){ return (s==null?"":String(s)).trim(); }
 function na(s){ return norm(s).replace(/[\s　]/g,''); }
@@ -368,7 +368,7 @@ function setTimeWindow(mins){
 
 function updateTimeButtons(){
   document.getElementById("time-filter-btn").className = timeFilterOn ? "fbtn on-all" : "fbtn";
-  [30,90,180].forEach(w=>{
+  [10,20,30].forEach(w=>{
     document.getElementById("time-"+w).className = (timeFilterOn && timeWindowMin===w) ? "fbtn on-all" : "fbtn";
   });
 }
