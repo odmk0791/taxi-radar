@@ -59,6 +59,7 @@ main{padding:10px 12px;max-width:520px;margin:0 auto}
 .hist-list{margin-top:8px;padding-top:8px;border-top:1px solid var(--bd)}
 .hist-item{font-size:11px;color:var(--mu);padding:2px 0}
 .hist-item b{color:var(--tx)}
+.route-btn{display:inline-flex;align-items:center;gap:4px;margin-top:9px;padding:7px 12px;border-radius:8px;background:rgba(88,166,255,.12);border:1px solid rgba(88,166,255,.35);color:#58a6ff;font-size:12px;font-weight:700;text-decoration:none}
 
 #map{height:calc(100vh - 220px);min-height:400px;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}
 .pin-pop{font-family:-apple-system,sans-serif;font-size:12px;line-height:1.6;color:#111}
@@ -280,6 +281,10 @@ function resolveLatLng(v){
   return null;
 }
 
+function mapsRouteUrl(lat,lng){
+  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`;
+}
+
 function haversine(lat1,lon1,lat2,lon2){
   const R=6371, toR=d=>d*Math.PI/180;
   const dLat=toR(lat2-lat1), dLon=toR(lon2-lon1);
@@ -466,6 +471,8 @@ function renderList(){
       `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.ward}${v.area}${v.dWard||v.dArea?"→"+v.dWard+v.dArea:""} ${fmtFareDisplay(v.fare)}${v.sankyu==="サンキュー"?" 🎫":""}</div>`
     ).join("");
     const histMore = g.visits.length > 4 ? `<div class="hist-item">…他 ${g.visits.length-4}件</div>` : "";
+    const pos = resolveLatLng(g.latest);
+    const routeBtn = pos ? `<a class="route-btn" href="${mapsRouteUrl(pos.lat,pos.lng)}" target="_blank" rel="noopener">🧭 ルート${pos.precise?"":"（概算地点）"}</a>` : "";
 
     return `<div class="card">
       <div class="card-top">
@@ -479,6 +486,7 @@ function renderList(){
       <div class="card-row"><span class="ic">🕐</span>前回 ${g.latest.date}(${g.latest.dow}) ${g.latest.time}</div>
       <div class="card-row"><span class="ic">💴</span>${fmtFareDisplay(g.latest.fare)}</div>
       ${hist || histMore ? `<div class="hist-list">${hist}${histMore}</div>` : ""}
+      ${routeBtn}
     </div>`;
   }).join("");
 }
@@ -514,7 +522,8 @@ function renderMap(){
       ${g.latest.ward}${g.latest.area}${dloc?"→"+dloc:""}<br>
       前回：${g.latest.date}(${g.latest.dow}) ${g.latest.time}<br>
       ${fmtFareDisplay(g.latest.fare)}${g.latest.sankyu==="サンキュー"?" 🎫サンキュー":""}　${g.count>1?g.count+"回":""}<br>
-      <span style="color:#888;font-size:10px">${precTag}</span></div>`);
+      <span style="color:#888;font-size:10px">${precTag}</span><br>
+      <a href="${mapsRouteUrl(pos.lat,pos.lng)}" target="_blank" rel="noopener" style="color:#1a73e8;font-weight:700">🧭 Googleマップでルート</a></div>`);
     mapMarkers.push(marker);
     bounds.push([pos.lat,pos.lng]);
   });
