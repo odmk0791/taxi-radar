@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-03T04:13:16.567172+09:00",
+  "fetched_at": "2026-07-03T05:56:43.005784+09:00",
   "date": "20260703",
   "count": 9,
   "events": [
@@ -211,7 +211,7 @@
       "owner_id": 96117,
       "owner_nickname": "Qiita",
       "owner_display_name": "Qiita株式会社",
-      "accepted": 340,
+      "accepted": 342,
       "waiting": 6,
       "updated_at": "2026-07-01T12:58:17+09:00"
     },
