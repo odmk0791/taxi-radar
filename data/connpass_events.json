@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-03T12:17:46.399847+09:00",
+  "fetched_at": "2026-07-03T15:55:07.768049+09:00",
   "date": "20260703",
-  "count": 9,
+  "count": 10,
   "events": [
     {
       "id": 392065,
@@ -61,7 +61,7 @@
       "owner_id": 806694,
       "owner_nickname": "pompom_gao",
       "owner_display_name": "なっぴー",
-      "accepted": 18,
+      "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-06-11T18:07:42+09:00"
     },
@@ -211,7 +211,7 @@
       "owner_id": 96117,
       "owner_nickname": "Qiita",
       "owner_display_name": "Qiita株式会社",
-      "accepted": 368,
+      "accepted": 381,
       "waiting": 2,
       "updated_at": "2026-07-03T11:00:47+09:00"
     },
@@ -242,7 +242,7 @@
       "owner_id": 596993,
       "owner_nickname": "chacco38",
       "owner_display_name": "Satoshi Matsuzawa (Matt)",
-      "accepted": 86,
+      "accepted": 83,
       "waiting": 0,
       "updated_at": "2026-07-02T15:54:41+09:00"
     },
@@ -276,6 +276,37 @@
       "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-07-03T07:03:56+09:00"
+    },
+    {
+      "id": 399480,
+      "title": "OpenLab Hybrid #98 at #JLCPCB",
+      "catch": "PCBでキーホルダー作り",
+      "description": "<p>JLCPCB のツールを使い、オープンソースハードウェアを作りましょう。</p>\n<p>あるいはそれ以外のツールを使って JLCPCB に発注データを作りましょう。</p>\n<h1>開催日程</h1>\n<p>今回は JLCPCB オフィスで開催！ 担当者と話したり遊びながら、ハードウェア開発をしましょう。\n行っている内容のうち、 14:30〜16:30頃には YouTube で作業内容を配信記録します →  <a href=\"https://www.youtube.com/@open4th\" rel=\"nofollow\">https://www.youtube.com/@open4th</a></p>\n<h1>開催場所</h1>\n<p>オンラインとオフラインのハイブリッド開催です。\n詳細はエントリーすると詳細が表示されます。</p>\n<h1>やること</h1>\n<p>オープンソースハードウェアを以下のようにして開発します。</p>\n<ul>\n<li>GitHub でレポジトリ作成</li>\n<li>基板CADを使ったPCB設計</li>\n<li>JLCPCB で PCBA</li>\n<li>3D CADでモデリング、3Dプリント/CNC発注</li>\n<li>OSHWC Lab に登録</li>\n</ul>\n<p>作業している画面を解説を交え、配信を行います。</p>\n<p>参加者も、できれば自分の画面を共有しながら作業していきましょう。</p>\n<h1>参加にあたって</h1>\n<ul>\n<li>もくもく( ? )と作ります。</li>\n<li>オープンソースハードウェアでなくてもOKです。オープンソースハードウェアの場合はぜひとも成果をPRしてください。</li>\n<li>画面共有Welcome です。</li>\n<li>質問歓迎です。質問するだけの目的でのご参加もOKです。</li>\n<li>成果の見せびらかしもしてみましょう。</li>\n</ul>\n<h1>クーポン</h1>\n<p>イベントで作成した基板などの JLCPCB の注文に使えるクーポンを配布します。\nこちらから、入力してください。</p>\n<p><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeS0TQZEyNyvOOHV1Uo2hvMkCpppYtlgolDXPxUEVTGaXgbXQ/viewform?usp=dialog\" rel=\"nofollow\">https://docs.google.com/forms/d/e/1FAIpQLSeS0TQZEyNyvOOHV1Uo2hvMkCpppYtlgolDXPxUEVTGaXgbXQ/viewform?usp=dialog</a></p>\n<p>入力 すると人力でクーポンが発行されます。入力したことを、主催者などにお伝えください。</p>\n<h1>インターネット配信</h1>\n<p>作業画面を YouTube でストリーミングします。\n活動時間のうち、14時30分頃〜17時前ぐらいを配信します。\nあとから見返しもできます。</p>\n<p><a href=\"https://www.youtube.com/@open4th/streams\" rel=\"nofollow\">https://www.youtube.com/@open4th/streams</a></p>\n<h1>秘密結社オープンフォース</h1>\n<p>Discord 「オープンハードテラス」サーバーでディスカッションしています。</p>\n<ul>\n<li>各種オープンソースハードウェア開発</li>\n<li>オープンソースハードウェアもくもく会</li>\n<li>イベント開催・イベント出展</li>\n<li>読書会</li>\n<li>災害支援作戦</li>\n</ul>\n<p>よろしければご参加下さい。\n<a href=\"https://discord.gg/9UTNdtSrdX\" rel=\"nofollow\">https://discord.gg/9UTNdtSrdX</a></p>",
+      "url": "https://openforce.connpass.com/event/399480/",
+      "image_url": "https://media.connpass.com/thumbs/91/fa/91fa0f8fe99b7138cfe05a34feb438a9.png",
+      "hash_tag": "",
+      "started_at": "2026-07-03T14:30:00+09:00",
+      "ended_at": "2026-07-03T16:30:00+09:00",
+      "published_at": "2026-07-03T14:29:33+09:00",
+      "limit": 15,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 9942,
+        "subdomain": "openforce",
+        "title": "秘密結社オープンフォース",
+        "url": "https://openforce.connpass.com/"
+      },
+      "address": "東京都千代田区岩本町三丁目2番1号ビリーフ岩本町201号室",
+      "place": "ハイブリッド開催(リモート開催およびJLCPCBオフィス)",
+      "lat": "35.694802100000",
+      "lon": "139.775610200000",
+      "owner_id": 10191,
+      "owner_nickname": "nanbuwks",
+      "owner_display_name": "nanbuwks",
+      "accepted": 1,
+      "waiting": 0,
+      "updated_at": "2026-07-03T14:29:33+09:00"
     }
   ]
 }
