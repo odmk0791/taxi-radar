@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-04T04:06:11.212781+09:00",
+  "fetched_at": "2026-07-04T05:55:42.809937+09:00",
   "date": "20260704",
   "count": 19,
   "events": [
@@ -273,7 +273,7 @@
       "owner_id": 2909,
       "owner_nickname": "tatmos",
       "owner_display_name": "tatmos",
-      "accepted": 7,
+      "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-07-03T14:24:29+09:00"
     },
