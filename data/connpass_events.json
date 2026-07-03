@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-03T15:55:07.768049+09:00",
+  "fetched_at": "2026-07-03T18:51:32.451810+09:00",
   "date": "20260703",
   "count": 10,
   "events": [
@@ -7,7 +7,7 @@
       "id": 392065,
       "title": "Server-Side Kotlin LT大会 vol.19",
       "catch": "『オフラインLT大会！』 （登壇者募集してます！初心者の方も歓迎）",
-      "description": "<h1>概要</h1>\n<p>今回はServer-Side Kotlin Meetupオフライン開催です！<br></p>\n<h2>Server-Side Kotlin Meetupとは？</h2>\n<p>Server-Side Kotlinの開発者コミュニティです 🐣 <br>\nLTを中心をしたイベントを定期的に開催しています。</p>\n<p>詳しくは<a href=\"https://server-side-kotlin-meetup.connpass.com/\" rel=\"nofollow\">connpassグループページ</a>をご覧ください。</p>\n<p><strong>こんなエンジニアにおすすめ</strong>  </p>\n<ul>\n<li>Server-Side Kotlin をすでに触っている方</li>\n<li>Server-Side Kotlin を盛り上げたいと考えている方</li>\n<li>Server-Side Kotlin がきになる/これから触ろうと思っている方</li>\n<li>リアルでの技術勉強会が好きな方</li>\n</ul>\n<h2>LTテーマ例</h2>\n<p>過去のLTテーマ例です👇<br>\n公募LTに興味のある方は参考にしてみてください！</p>\n<p><strong>15分LT</strong></p>\n<ul>\n<li>これどうやって動いてるんだ？ Spring Framework/Bootのソースを読む</li>\n<li>サーバーサイドでのKotlin Coroutines</li>\n<li>事業スピードを落とさずにPHP→Kotlinリプレイスに挑戦している話</li>\n<li>(DDD) Kotlin 1.5 で stable になった value class を深掘りする</li>\n</ul>\n<p><strong>5分LT</strong></p>\n<ul>\n<li>Sequenceを理解する</li>\n<li>よくつかっているIterableの自作extensionを紹介します</li>\n<li>Kotlinにコミットしてみた</li>\n<li>「B2B SaaSあるあるな一括更新処理のエラーハンドリングをKotlinで関数型的に処理する」</li>\n</ul>\n<h2>開催方法</h2>\n<ul>\n<li>第1部: LT発表<ul>\n<li>当日は会場での質問に回答しながら進行します</li>\n</ul>\n</li>\n<li>第2部: 懇親会 🍻</li>\n</ul>\n<h2>会場</h2>\n<p>今回はFinGATE KAYABA 1Fイベントスペースをお借りし開催いたします 👏</p>\n<p><strong>住所</strong></p>\n<p>〒103-0025 東京都中央区日本橋茅場町１丁目８−１ FinGATE KAYABA\n東西線・日比谷線「茅場町」駅 6番出口 徒歩1分 </p>\n<p><strong>案内</strong> </p>\n<p>connpass内「参加者への情報」欄をご確認ください。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15 - 19:30</td>\n<td>オフライン会場オープン</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:30 - 19:35</td>\n<td>オープニング</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:35 - 19:40</td>\n<td><strong>会場LT</strong></td>\n<td>株式会社justInCaseTechnologies</td>\n</tr>\n<tr>\n<td>19:40 - 20:00</td>\n<td><strong>スポンサーLT：(仮題) 技術選定とその振り返り</strong></td>\n<td>小佐野 洋さん（株式会社justInCaseTechnologies）</td>\n</tr>\n<tr>\n<td>20:00 - 20:20</td>\n<td><strong>招待LT: Kotlin × Hybrid Search ／ 3つの設計判断</strong></td>\n<td>Enokido Keisuke （榎土景介）さん</td>\n</tr>\n<tr>\n<td>20:20 - 20:30</td>\n<td><strong>休憩</strong></td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:30 - 20:45</td>\n<td><strong>公募LT：どうして今サーバーサイドKotlinを選択したのか</strong></td>\n<td>野呂有我さん</td>\n</tr>\n<tr>\n<td>20:45 - 20:50</td>\n<td><strong>公募LT：context parameterから見る暗黙の関数依存について</strong></td>\n<td>Udomomoさん</td>\n</tr>\n<tr>\n<td>20:50 - 20:55</td>\n<td><strong>公募LT：5分でわかるKotlinConf 2026 現地参加レポート</strong></td>\n<td>竹端 尚人さん</td>\n</tr>\n<tr>\n<td>20:55 - 21:00</td>\n<td><strong>エンディング</strong></td>\n<td>-</td>\n</tr>\n<tr>\n<td>21:00 - 21:40</td>\n<td><strong>オフライン懇親会</strong>（22:00 完全撤収）</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<p>※ 上記当日のタイムテーブルには変更が生じる可能性があります</p>\n<h1>発表者紹介</h1>\n<h2>会場LT</h2>\n<h3>小佐野 洋（<a href=\"https://x.com/diostray\" rel=\"nofollow\">@diostray</a>）</h3>\n<p>株式会社justInCaseTechnologies CTO\nバックエンド / AWSインフラを含めた技術的な責任を負う。Kotlin/SpringBoot、TypeScript/AWS-CDK が多いが、たまにWebフロントエンドもやったりやらなかったり。</p>\n<h2>招待LT</h2>\n<h3>Enokido Keisuke （榎土景介）</h3>\n<p>2023年、LINE Digital Frontier株式会社に入社。\nサーバーサイドエンジニアとして、多くのユーザーが利用する「LINEマンガ」のコンテンツ配信の開発を担当。\n最近は5歳の子供と日々戦いつつ一緒に成長しています。</p>\n<h2>公募LT</h2>\n<h3>野呂有我（<a href=\"https://x.com/ev_yug\" rel=\"nofollow\">@ev_yug</a>）</h3>\n<p>株式会社ニーリーでアーキテクトをやっています</p>\n<h3>Udomomo（<a href=\"https://x.com/Udomomo\" rel=\"nofollow\">@Udomomo</a>）</h3>\n<p>バックエンドエンジニアとして自社サービスの開発をしています。最近はオライリーの「コンピュータシステムの理論と実装」にハマっています。</p>\n<h3>竹端 尚人（<a href=\"https://x.com/n_takehata\" rel=\"nofollow\">@n_takehata</a>）</h3>\n<p>サーバーサイドKotlinを得意とするフリーランスエンジニア。2021年に著書『Kotlin サーバーサイドプログラミング実践開発』を出版し、サーバーサイドKotlin導入企業で技術顧問の経験も。Kotlin Fest 2024登壇。Kotlin愛好会運営メンバー。</p>\n<h1>運営・サポート</h1>\n<p>このコミュニティは、以下の企業・団体の支援により運営をしています👇</p>\n<h2>運営企業</h2>\n<h3><a href=\"https://jp.smartround.com/\" rel=\"nofollow\">株式会社スマートラウンド</a></h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/39250233?s=200&amp;v=4\" width=\"120\"> <br></p>\n<p>スタートアップと投資家の業務を効率化するデータ作成・共有プラットフォーム「smartround」を提供。株主総会・資本政策・経営管理・ストックオプション管理などスタートアップが企業運営する上で必須とする機能を提供することで、起業家が事務作業から開放され事業に専念できる世界を実現します。</p>\n<ul>\n<li><a href=\"https://jobs.smartround.com/\" rel=\"nofollow\">採用ページ</a></li>\n<li><a href=\"https://note.com/smartround\" rel=\"nofollow\">公式note</a></li>\n</ul>\n<h3><a href=\"https://justincase.jp/\" rel=\"nofollow\">株式会社justInCaseTechnologies</a></h3>\n<p><img src=\"https://storage.googleapis.com/studio-design-asset-files/projects/bXqzL4MdWD/s-400x100_935c5292-ba7f-4051-8bcd-b1a204054dbf.svg\" width=\"150\"> <br></p>\n<p>デジタル完結型保険を一気通貫で提供してきた経験やシステム設計を形にした保険システム「joinsure（ジョインシュア）」を提供。\"助けられ、助ける喜びを、すべての人へ。\"というビジョンのもと、あらゆる不安に寄り添う、“良い”保険を発明するためのシステムを開発・提供していきます。</p>\n<ul>\n<li><a href=\"https://justincase.notion.site/justInCaseTechnologies-52406704512b4990bbf025ffef53ebbc\" rel=\"nofollow\">採用ページ</a></li>\n</ul>\n<h3><a href=\"https://henry.jp/\" rel=\"nofollow\">株式会社ヘンリー</a></h3>\n<p><img src=\"https://github.com/user-attachments/assets/4e2a3304-8cf5-4717-819c-85e856db8481\" width=\"100\"> <br></p>\n<p>ヘンリーは「社会課題を解決しつづけ、より良い世界をつくる」を企業理念に、人類にとって解決が困難な課題に向き合っていきます。まず、超高齢化社会で医療費が高騰し続けている日本の状況に着目し、特に電子化が進んでいない中小病院向けに業務の中心となる現代的なシステムを提供すべく、クラウド型電子カルテ・レセコンシステム「Henry」を提供しています。</p>\n<ul>\n<li><a href=\"https://dev.henry.jp/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<h3><a href=\"https://www.codmon.co.jp/\" rel=\"nofollow\">株式会社コドモン</a></h3>\n<p><img src=\"https://i.gyazo.com/9fcee74be0ae2cfd2a1fcbb2f2e9227c.png\" width=\"130\"> <br></p>\n<p>株式会社コドモンは、「子どもを取り巻く環境をテクノロジーの力でよりよいものに」というミッションを掲げ、保育・教育施設向けICTサービス「CoDMON(コドモン)」を中心に、複数のサービスを展開しています。ビジョンは「子どもの育ちや学びを社会全体で支えられる世の中へ」。子育て当事者となる保護者・こども施設・行政それぞれの課題の解決と連携の促進によって、豊かな子育て環境づくりに貢献していきます。</p>\n<ul>\n<li><a href=\"https://tech.codmon.com/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<h2>支援/サポート</h2>\n<p>This group is supported by JetBrains 👋</p>\n<p><img src=\"https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg\" alt=\"JetBrains Logo (Main) logo.\"></p>\n<h1>個人情報のお取り扱いについて</h1>\n<p>本イベントにおいて参加者の方から取得した情報を、イベント終了後のアンケートや本イベントに関する連絡・必要な手続きにおいて利用することがございます。取得した個人情報等の取り扱いに関しては、以下の各社の該当規約・方針に従って取り扱います。</p>\n<ul>\n<li>株式会社スマートラウンド: <a href=\"https://jp.smartround.com/privacy\" rel=\"nofollow\">https://jp.smartround.com/privacy</a></li>\n<li>株式会社justInCaseTechnologies: <a href=\"https://document.justincase-tech.com/privacy_policy_20241126.pdf\" rel=\"nofollow\">https://document.justincase-tech.com/privacy_policy_20241126.pdf</a></li>\n<li>株式会社ヘンリー: <a href=\"https://henry.jp/privacy-policy\" rel=\"nofollow\">https://henry.jp/privacy-policy</a></li>\n<li>株式会社コドモン: <a href=\"https://www.codmon.co.jp/privacypolicy/\" rel=\"nofollow\">https://www.codmon.co.jp/privacypolicy/</a></li>\n</ul>\n<h1>関連リンク</h1>\n<ul>\n<li>公式X: <a href=\"https://x.com/Kotlin_Meetup\" rel=\"nofollow\">https://x.com/Kotlin_Meetup</a></li>\n<li>Youtubeチャンネル(過去イベントのアーカイブ動画): <a href=\"https://www.youtube.com/channel/UCLoFfktkwCUVRLraEMJaBMw\" rel=\"nofollow\">https://www.youtube.com/channel/UCLoFfktkwCUVRLraEMJaBMw</a></li>\n</ul>",
+      "description": "<h1>概要</h1>\n<p>今回はServer-Side Kotlin Meetupオフライン開催です！<br></p>\n<h2>Server-Side Kotlin Meetupとは？</h2>\n<p>Server-Side Kotlinの開発者コミュニティです 🐣 <br>\nLTを中心をしたイベントを定期的に開催しています。</p>\n<p>詳しくは<a href=\"https://server-side-kotlin-meetup.connpass.com/\" rel=\"nofollow\">connpassグループページ</a>をご覧ください。</p>\n<p><strong>こんなエンジニアにおすすめ</strong>  </p>\n<ul>\n<li>Server-Side Kotlin をすでに触っている方</li>\n<li>Server-Side Kotlin を盛り上げたいと考えている方</li>\n<li>Server-Side Kotlin がきになる/これから触ろうと思っている方</li>\n<li>リアルでの技術勉強会が好きな方</li>\n</ul>\n<h2>LTテーマ例</h2>\n<p>過去のLTテーマ例です👇<br>\n公募LTに興味のある方は参考にしてみてください！</p>\n<p><strong>15分LT</strong></p>\n<ul>\n<li>これどうやって動いてるんだ？ Spring Framework/Bootのソースを読む</li>\n<li>サーバーサイドでのKotlin Coroutines</li>\n<li>事業スピードを落とさずにPHP→Kotlinリプレイスに挑戦している話</li>\n<li>(DDD) Kotlin 1.5 で stable になった value class を深掘りする</li>\n</ul>\n<p><strong>5分LT</strong></p>\n<ul>\n<li>Sequenceを理解する</li>\n<li>よくつかっているIterableの自作extensionを紹介します</li>\n<li>Kotlinにコミットしてみた</li>\n<li>「B2B SaaSあるあるな一括更新処理のエラーハンドリングをKotlinで関数型的に処理する」</li>\n</ul>\n<h2>開催方法</h2>\n<ul>\n<li>第1部: LT発表<ul>\n<li>当日は会場での質問に回答しながら進行します</li>\n</ul>\n</li>\n<li>第2部: 懇親会 🍻</li>\n</ul>\n<h2>会場</h2>\n<p>今回はFinGATE KAYABA 1Fイベントスペースをお借りし開催いたします 👏</p>\n<p><strong>住所</strong></p>\n<p>〒103-0025 東京都中央区日本橋茅場町１丁目８−１ FinGATE KAYABA\n東西線・日比谷線「茅場町」駅 6番出口 徒歩1分 </p>\n<p><strong>案内</strong> </p>\n<p>connpass内「参加者への情報」欄をご確認ください。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15 - 19:30</td>\n<td>オフライン会場オープン</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:30 - 19:35</td>\n<td>オープニング</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:35 - 19:40</td>\n<td><strong>会場LT</strong></td>\n<td>株式会社justInCaseTechnologies</td>\n</tr>\n<tr>\n<td>19:40 - 20:00</td>\n<td><strong>スポンサーLT：(仮題) 技術選定とその振り返り</strong></td>\n<td>小佐野 洋さん（株式会社justInCaseTechnologies）</td>\n</tr>\n<tr>\n<td>20:00 - 20:20</td>\n<td><strong>招待LT: Kotlin × Hybrid Search ／ 3つの設計判断</strong></td>\n<td>Enokido Keisuke （榎土景介）さん</td>\n</tr>\n<tr>\n<td>20:20 - 20:30</td>\n<td><strong>休憩</strong></td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:30 - 20:45</td>\n<td><strong>公募LT：どうして今サーバーサイドKotlinを選択したのか</strong></td>\n<td>野呂有我さん</td>\n</tr>\n<tr>\n<td>20:45 - 20:50</td>\n<td><strong>公募LT：context parameterから見る暗黙の関数依存について</strong></td>\n<td>Udomomoさん</td>\n</tr>\n<tr>\n<td>20:50 - 20:55</td>\n<td><strong>公募LT：Kotlin 開発のツラミを爆破した話！</strong></td>\n<td>Kengo TODAさん</td>\n</tr>\n<tr>\n<td>20:55 - 21:00</td>\n<td><strong>エンディング</strong></td>\n<td>-</td>\n</tr>\n<tr>\n<td>21:00 - 21:40</td>\n<td><strong>オフライン懇親会</strong>（22:00 完全撤収）</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<p>※ 上記当日のタイムテーブルには変更が生じる可能性があります</p>\n<h1>発表者紹介</h1>\n<h2>会場LT</h2>\n<h3>小佐野 洋（<a href=\"https://x.com/diostray\" rel=\"nofollow\">@diostray</a>）</h3>\n<p>株式会社justInCaseTechnologies CTO。\nバックエンド / AWSインフラを含めた技術的な責任を負う。Kotlin/SpringBoot、TypeScript/AWS-CDK が多いが、たまにWebフロントエンドもやったりやらなかったり。</p>\n<h2>招待LT</h2>\n<h3>Enokido Keisuke （榎土景介）</h3>\n<p>2023年、LINE Digital Frontier株式会社に入社。\nサーバーサイドエンジニアとして、多くのユーザーが利用する「LINEマンガ」のコンテンツ配信の開発を担当。\n最近は5歳の子供と日々戦いつつ一緒に成長しています。</p>\n<h2>公募LT</h2>\n<h3>野呂有我（<a href=\"https://x.com/ev_yug\" rel=\"nofollow\">@ev_yug</a>）</h3>\n<p>株式会社ニーリーでアーキテクトをやっています</p>\n<h3>Udomomo（<a href=\"https://x.com/Udomomo\" rel=\"nofollow\">@Udomomo</a>）</h3>\n<p>バックエンドエンジニアとして自社サービスの開発をしています。最近はオライリーの「コンピュータシステムの理論と実装」にハマっています。</p>\n<h3>Kengo TODA（<a href=\"https://x.com/Kengo_TODA\" rel=\"nofollow\">@Kengo_TODA</a>）</h3>\n<h1>運営・サポート</h1>\n<p>このコミュニティは、以下の企業・団体の支援により運営をしています👇</p>\n<h2>運営企業</h2>\n<h3><a href=\"https://jp.smartround.com/\" rel=\"nofollow\">株式会社スマートラウンド</a></h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/39250233?s=200&amp;v=4\" width=\"120\"> <br></p>\n<p>スタートアップと投資家の業務を効率化するデータ作成・共有プラットフォーム「smartround」を提供。株主総会・資本政策・経営管理・ストックオプション管理などスタートアップが企業運営する上で必須とする機能を提供することで、起業家が事務作業から開放され事業に専念できる世界を実現します。</p>\n<ul>\n<li><a href=\"https://jobs.smartround.com/\" rel=\"nofollow\">採用ページ</a></li>\n<li><a href=\"https://note.com/smartround\" rel=\"nofollow\">公式note</a></li>\n</ul>\n<h3><a href=\"https://justincase.jp/\" rel=\"nofollow\">株式会社justInCaseTechnologies</a></h3>\n<p><img src=\"https://storage.googleapis.com/studio-design-asset-files/projects/bXqzL4MdWD/s-400x100_935c5292-ba7f-4051-8bcd-b1a204054dbf.svg\" width=\"150\"> <br></p>\n<p>デジタル完結型保険を一気通貫で提供してきた経験やシステム設計を形にした保険システム「joinsure（ジョインシュア）」を提供。\"助けられ、助ける喜びを、すべての人へ。\"というビジョンのもと、あらゆる不安に寄り添う、“良い”保険を発明するためのシステムを開発・提供していきます。</p>\n<ul>\n<li><a href=\"https://justincase.notion.site/justInCaseTechnologies-52406704512b4990bbf025ffef53ebbc\" rel=\"nofollow\">採用ページ</a></li>\n</ul>\n<h3><a href=\"https://henry.jp/\" rel=\"nofollow\">株式会社ヘンリー</a></h3>\n<p><img src=\"https://github.com/user-attachments/assets/4e2a3304-8cf5-4717-819c-85e856db8481\" width=\"100\"> <br></p>\n<p>ヘンリーは「社会課題を解決しつづけ、より良い世界をつくる」を企業理念に、人類にとって解決が困難な課題に向き合っていきます。まず、超高齢化社会で医療費が高騰し続けている日本の状況に着目し、特に電子化が進んでいない中小病院向けに業務の中心となる現代的なシステムを提供すべく、クラウド型電子カルテ・レセコンシステム「Henry」を提供しています。</p>\n<ul>\n<li><a href=\"https://dev.henry.jp/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<h3><a href=\"https://www.codmon.co.jp/\" rel=\"nofollow\">株式会社コドモン</a></h3>\n<p><img src=\"https://i.gyazo.com/9fcee74be0ae2cfd2a1fcbb2f2e9227c.png\" width=\"130\"> <br></p>\n<p>株式会社コドモンは、「子どもを取り巻く環境をテクノロジーの力でよりよいものに」というミッションを掲げ、保育・教育施設向けICTサービス「CoDMON(コドモン)」を中心に、複数のサービスを展開しています。ビジョンは「子どもの育ちや学びを社会全体で支えられる世の中へ」。子育て当事者となる保護者・こども施設・行政それぞれの課題の解決と連携の促進によって、豊かな子育て環境づくりに貢献していきます。</p>\n<ul>\n<li><a href=\"https://tech.codmon.com/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<h2>支援/サポート</h2>\n<p>This group is supported by JetBrains 👋</p>\n<p><img src=\"https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg\" alt=\"JetBrains Logo (Main) logo.\"></p>\n<h1>個人情報のお取り扱いについて</h1>\n<p>本イベントにおいて参加者の方から取得した情報を、イベント終了後のアンケートや本イベントに関する連絡・必要な手続きにおいて利用することがございます。取得した個人情報等の取り扱いに関しては、以下の各社の該当規約・方針に従って取り扱います。</p>\n<ul>\n<li>株式会社スマートラウンド: <a href=\"https://jp.smartround.com/privacy\" rel=\"nofollow\">https://jp.smartround.com/privacy</a></li>\n<li>株式会社justInCaseTechnologies: <a href=\"https://document.justincase-tech.com/privacy_policy_20241126.pdf\" rel=\"nofollow\">https://document.justincase-tech.com/privacy_policy_20241126.pdf</a></li>\n<li>株式会社ヘンリー: <a href=\"https://henry.jp/privacy-policy\" rel=\"nofollow\">https://henry.jp/privacy-policy</a></li>\n<li>株式会社コドモン: <a href=\"https://www.codmon.co.jp/privacypolicy/\" rel=\"nofollow\">https://www.codmon.co.jp/privacypolicy/</a></li>\n</ul>\n<h1>関連リンク</h1>\n<ul>\n<li>公式X: <a href=\"https://x.com/Kotlin_Meetup\" rel=\"nofollow\">https://x.com/Kotlin_Meetup</a></li>\n<li>Youtubeチャンネル(過去イベントのアーカイブ動画): <a href=\"https://www.youtube.com/channel/UCLoFfktkwCUVRLraEMJaBMw\" rel=\"nofollow\">https://www.youtube.com/channel/UCLoFfktkwCUVRLraEMJaBMw</a></li>\n</ul>",
       "url": "https://server-side-kotlin-meetup.connpass.com/event/392065/",
       "image_url": "https://media.connpass.com/thumbs/d3/5b/d35b4c1594cb6e50c34d5f238fab4dde.png",
       "hash_tag": "serverside_kotlin_meetup",
@@ -32,7 +32,7 @@
       "owner_display_name": "osano_jic",
       "accepted": 25,
       "waiting": 0,
-      "updated_at": "2026-06-26T17:16:36+09:00"
+      "updated_at": "2026-07-03T18:51:14+09:00"
     },
     {
       "id": 396973,
@@ -61,7 +61,7 @@
       "owner_id": 806694,
       "owner_nickname": "pompom_gao",
       "owner_display_name": "なっぴー",
-      "accepted": 20,
+      "accepted": 22,
       "waiting": 0,
       "updated_at": "2026-06-11T18:07:42+09:00"
     },
@@ -100,7 +100,7 @@
       "id": 393590,
       "title": "アイマスNight #Day2",
       "catch": "",
-      "description": "<h2>イベント概要</h2>\n<p>プロデューサーとして、そしてエンジニアとして。<br>\nお互いの「担当」と「技術」を持ち寄り、新しい「プロデュースの形」を模索しませんか？</p>\n<p>今回のテーマは<br>\n<strong>「担当アイドル/ブランドの良いと思っているところ紹介」</strong> です！</p>\n<p>「この楽曲が好き」「このキャラクター解像度がすごい」「ライブ演出が良い」「プロダクトとして面白い」などなど、語り方は自由。<br>\n<strong>もちろん、テーマに沿わない発表も歓迎です</strong>！</p>\n<p>現場での名刺交換とはまた一味違う、技術者同士の「同僚」としての交流を楽しみましょう。</p>\n<p>もちろんアイマスをまだ知らない、これから知りたいあなたも大歓迎です！<br>\nハッシュタグは <code>#アイマスNight</code> でお願いします！</p>\n<hr>\n<h2>会場</h2>\n<h3>関東ITソフトウェア健康保険組合 大久保健保会館</h3>\n<ul>\n<li>JR総武線「大久保駅」下車北口改札より徒歩1分</li>\n<li>JR山手線「新大久保駅」下車徒歩5分</li>\n</ul>\n<p><a href=\"https://www.its-kenpo.or.jp/fuzoku/kaigi/ookubo.html\" rel=\"nofollow\">アクセスはこちら</a></p>\n<p>地下1階 B室が今回の会場です。</p>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45~19:00</td>\n<td>開場・受付</td>\n</tr>\n<tr>\n<td>19:00~19:05</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:10~19:15</td>\n<td>発表（5分枠）①</td>\n</tr>\n<tr>\n<td>19:20~19:25</td>\n<td>発表（5分枠）②</td>\n</tr>\n<tr>\n<td>19:30~19:45</td>\n<td>発表（15分枠）①</td>\n</tr>\n<tr>\n<td>19:50~20:05</td>\n<td>発表（15分枠）②</td>\n</tr>\n<tr>\n<td>20:10~20:25</td>\n<td>発表（15分枠）③</td>\n</tr>\n<tr>\n<td>20:25~20:50</td>\n<td>バッファ兼交流タイム</td>\n</tr>\n<tr>\n<td>20:50~21:00</td>\n<td>完全撤収</td>\n</tr>\n</tbody>\n</table>",
+      "description": "<h1>開場19:00~になりそうです、申し訳ありません！！</h1>\n<h2>イベント概要</h2>\n<p>プロデューサーとして、そしてエンジニアとして。<br>\nお互いの「担当」と「技術」を持ち寄り、新しい「プロデュースの形」を模索しませんか？</p>\n<p>今回のテーマは<br>\n<strong>「担当アイドル/ブランドの良いと思っているところ紹介」</strong> です！</p>\n<p>「この楽曲が好き」「このキャラクター解像度がすごい」「ライブ演出が良い」「プロダクトとして面白い」などなど、語り方は自由。<br>\n<strong>もちろん、テーマに沿わない発表も歓迎です</strong>！</p>\n<p>現場での名刺交換とはまた一味違う、技術者同士の「同僚」としての交流を楽しみましょう。</p>\n<p>もちろんアイマスをまだ知らない、これから知りたいあなたも大歓迎です！<br>\nハッシュタグは <code>#アイマスNight</code> でお願いします！</p>\n<hr>\n<h2>会場</h2>\n<h3>関東ITソフトウェア健康保険組合 大久保健保会館</h3>\n<ul>\n<li>JR総武線「大久保駅」下車北口改札より徒歩1分</li>\n<li>JR山手線「新大久保駅」下車徒歩5分</li>\n</ul>\n<p><a href=\"https://www.its-kenpo.or.jp/fuzoku/kaigi/ookubo.html\" rel=\"nofollow\">アクセスはこちら</a></p>\n<p>地下1階 B室が今回の会場です。</p>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45~19:00</td>\n<td>開場・受付</td>\n</tr>\n<tr>\n<td>19:00~19:05</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:10~19:15</td>\n<td>発表（5分枠）①</td>\n</tr>\n<tr>\n<td>19:20~19:25</td>\n<td>発表（5分枠）②</td>\n</tr>\n<tr>\n<td>19:30~19:45</td>\n<td>発表（15分枠）①</td>\n</tr>\n<tr>\n<td>19:50~20:05</td>\n<td>発表（15分枠）②</td>\n</tr>\n<tr>\n<td>20:10~20:25</td>\n<td>発表（15分枠）③</td>\n</tr>\n<tr>\n<td>20:25~20:50</td>\n<td>バッファ兼交流タイム</td>\n</tr>\n<tr>\n<td>20:50~21:00</td>\n<td>完全撤収</td>\n</tr>\n</tbody>\n</table>",
       "url": "https://imasnight.connpass.com/event/393590/",
       "image_url": "https://media.connpass.com/thumbs/0a/26/0a26688d92c0eb589541b5552332f7c9.png",
       "hash_tag": "",
@@ -125,7 +125,7 @@
       "owner_display_name": "ラティ",
       "accepted": 4,
       "waiting": 0,
-      "updated_at": "2026-06-14T19:11:16+09:00"
+      "updated_at": "2026-07-03T18:49:22+09:00"
     },
     {
       "id": 395594,
@@ -197,7 +197,7 @@
       "published_at": "2026-06-02T11:01:35+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4035,
         "subdomain": "increments",
@@ -211,8 +211,8 @@
       "owner_id": 96117,
       "owner_nickname": "Qiita",
       "owner_display_name": "Qiita株式会社",
-      "accepted": 381,
-      "waiting": 2,
+      "accepted": 388,
+      "waiting": 1,
       "updated_at": "2026-07-03T11:00:47+09:00"
     },
     {
@@ -228,7 +228,7 @@
       "published_at": "2026-06-05T17:39:15+09:00",
       "limit": 110,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15768,
         "subdomain": "finops",
@@ -242,7 +242,7 @@
       "owner_id": 596993,
       "owner_nickname": "chacco38",
       "owner_display_name": "Satoshi Matsuzawa (Matt)",
-      "accepted": 83,
+      "accepted": 79,
       "waiting": 0,
       "updated_at": "2026-07-02T15:54:41+09:00"
     },
@@ -255,11 +255,11 @@
       "image_url": "https://media.connpass.com/thumbs/65/1c/651c4df02815f1e782cc3589575b6de2.png",
       "hash_tag": "",
       "started_at": "2026-07-03T17:00:00+09:00",
-      "ended_at": "2026-07-03T20:30:00+09:00",
+      "ended_at": "2026-07-03T20:00:00+09:00",
       "published_at": "2026-07-01T13:16:28+09:00",
       "limit": 17,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 9942,
         "subdomain": "openforce",
@@ -275,7 +275,7 @@
       "owner_display_name": "nanbuwks",
       "accepted": 3,
       "waiting": 0,
-      "updated_at": "2026-07-03T07:03:56+09:00"
+      "updated_at": "2026-07-03T18:39:42+09:00"
     },
     {
       "id": 399480,
@@ -290,7 +290,7 @@
       "published_at": "2026-07-03T14:29:33+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 9942,
         "subdomain": "openforce",
