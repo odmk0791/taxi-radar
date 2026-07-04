@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-04T20:19:49.130920+09:00",
+  "fetched_at": "2026-07-04T22:05:58.030937+09:00",
   "date": "20260704",
-  "count": 19,
+  "count": 20,
   "events": [
     {
       "id": 397266,
@@ -290,7 +290,7 @@
       "published_at": "2026-06-23T15:44:16+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13254,
         "subdomain": "mokumokumokumoku",
@@ -352,7 +352,7 @@
       "published_at": "2026-06-23T07:45:44+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12918,
         "subdomain": "ras-duino",
@@ -445,7 +445,7 @@
       "published_at": "2026-07-03T13:29:08+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16988,
         "subdomain": "mokumokuios",
@@ -524,6 +524,37 @@
       "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-06-11T22:15:09+09:00"
+    },
+    {
+      "id": 398699,
+      "title": "第72回 CoderDojo 戸田公園",
+      "catch": "小学生・中学生向けプログラミングクラブ",
+      "description": "<h1>CoderDojo戸田公園に参加するニンジャを募集します</h1>\n<p>CoderDojo(コーダー道場)戸田公園は、主に埼玉県戸田市及び隣接する地域の小学生・中学生を対象としたプログラミングクラブです。</p>\n<p>下記の内容をよくお読みになってからお申し込みください。お申込みはこちらのページから保護者の方がおこなってください。</p>\n<h2>お願い</h2>\n<ul>\n<li>参加登録の際のアンケートに、「連絡先電話番号」の入力をお願いいたします。</li>\n<li>当日、発熱・体調不良等の場合には、参加をご遠慮ください。</li>\n<li>必要に応じ、マスク等の着用をお願いします。</li>\n</ul>\n<p><strong>今後の状況により、開催を中止することがありますのでご了承ください。</strong></p>\n<h2>CoderDojoとは</h2>\n<p>CoderDojoとは、7〜17歳の子どもを対象にしたプログラミング道場です。2011年にアイルランドで始まり、日本には180以上の道場があります。CoderDojoについて詳しくは、<a href=\"https://coderdojo.jp\" rel=\"nofollow\">CoderDojo JapanのWebサイト</a>をご覧ください。<br>\n<a href=\"https://coderdojo-todakoen.com\" rel=\"nofollow\">CoderDojo戸田公園のWebサイト</a>では、過去の開催の様子をレポートしています。</p>\n<h2>ニンジャとは</h2>\n<p>CoderDojoに参加する子どもたちのことをニンジャと呼びます。自主的にプログラミングを学びたい、アプリやゲームを製作したい、そんなみんなが対象です。そうして集まった仲間や、メンターと呼ばれるボランティアの大人たちが、一緒になって学び合い・教え合いながらプログラミングを楽しむ場所がCoderDojo戸田公園です。</p>\n<h2>参加資格</h2>\n<h3>対象</h3>\n<ul>\n<li>小学生・中学生(13歳以下は保護者の同伴が必要です)</li>\n<li>自分が作りたいものを考え作れること</li>\n<li>プログラミングを楽しめること</li>\n<li>Scratch、micro:bit、Unity、Viscuit、Ruby、Pythonなど興味のあるものなら内容は何でもOKです。</li>\n</ul>\n<h3>参加料</h3>\n<p>無料</p>\n<h4>寄付のお願い</h4>\n<p>今後のCoderDojo戸田公園の活動を末永く続けていけるように皆様からの寄付を集めています。<br>\n会場には皆様から寄付金を集めるためのBoxを配置しています。お気持ち程度で結構ですので皆様のご協力をお願いします。<br>\nお預かりした寄付金は、印刷代、備品代、書籍の購入などに利用させていただきます。</p>\n<h3>持ち物</h3>\n<ul>\n<li><strong>使用する環境に必要なノートパソコン、タブレット、電源ケーブル、マウス等をご用意ください。</strong>(WiFi環境は会場で準備します)</li>\n<li>飲み物(水筒、ペットボトル等)をご持参ください。</li>\n</ul>\n<h2>当日のスケジュール</h2>\n<table>\n<tbody><tr><td>9:45〜</td><td>受付開始</td></tr>\n<tr><td>10:00〜12:00</td><td>Dojoの説明<br>自己紹介<br>ワークショップ</td></tr>\n</tbody></table>\n\n<h2>注意事項</h2>\n<ul>\n<li>会場は、早稲田アカデミー個別進学館戸田公園校さんの2階となります。<strong>早稲田アカデミー個別進学館さん入り口横の階段を上がって2階へお入りください。</strong>なお、戸田公園駅前の早稲田アカデミー戸田公園校さんとは異なりますのでご注意ください。</li>\n<li>会場には駐車場がありません。お車でお越しの場合は近隣のコインパーキング等をご利用ください。</li>\n</ul>\n<h2>メンターご希望の方へ</h2>\n<p>メンターご希望の方は、このページのメンター枠よりお申し込みいただくか、<a href=\"https://coderdojo-todakoen.com/お問い合わせ/\" rel=\"nofollow\">お問い合わせページ</a>や<a href=\"https://www.facebook.com/coderdojo.todakoen\" rel=\"nofollow\">Facebookページ</a>より直接ご連絡ください。</p>",
+      "url": "https://corderdojo-todakoen.connpass.com/event/398699/",
+      "image_url": "https://media.connpass.com/thumbs/33/b2/33b2194ff8c8a28ac7fc50e9c7fb9679.png",
+      "hash_tag": "",
+      "started_at": "2026-07-04T10:00:00+09:00",
+      "ended_at": "2026-07-04T12:00:00+09:00",
+      "published_at": "2026-06-27T09:35:12+09:00",
+      "limit": 9,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 8487,
+        "subdomain": "corderdojo-todakoen",
+        "title": "CoderDojo戸田公園",
+        "url": "https://corderdojo-todakoen.connpass.com/"
+      },
+      "address": "埼玉県戸田市本町1-3-3(ライオンズマンション戸田公園206)",
+      "place": "(有)ミネルバ内 会議室",
+      "lat": "35.810941000000",
+      "lon": "139.682456900000",
+      "owner_id": 337737,
+      "owner_nickname": "coderdojo-todakoen",
+      "owner_display_name": "CoderDojo戸田公園",
+      "accepted": 0,
+      "waiting": 0,
+      "updated_at": "2026-06-27T09:35:12+09:00"
     },
     {
       "id": 394079,
