@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-05T18:36:39.907825+09:00",
+  "fetched_at": "2026-07-05T20:24:38.926852+09:00",
   "date": "20260705",
   "count": 17,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-28T14:22:19+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -47,7 +47,7 @@
       "published_at": "2026-06-17T16:46:08+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16634,
         "subdomain": "kintech",
@@ -154,7 +154,7 @@
       "owner_id": 40964,
       "owner_nickname": "Kuxumarin",
       "owner_display_name": "Kuu / Sushi",
-      "accepted": 63,
+      "accepted": 64,
       "waiting": 0,
       "updated_at": "2026-07-05T16:45:17+09:00"
     },
@@ -450,7 +450,7 @@
       "published_at": "2026-06-13T13:06:23+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16047,
         "subdomain": "jawsug-sainokuni-saitama",
