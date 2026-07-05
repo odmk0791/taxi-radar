@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-05T15:33:23.793628+09:00",
+  "fetched_at": "2026-07-05T18:36:39.907825+09:00",
   "date": "20260705",
   "count": 17,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-28T14:22:19+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -30,7 +30,7 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 11,
+      "accepted": 10,
       "waiting": 0,
       "updated_at": "2026-07-05T14:19:18+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-07-02T00:07:44+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -109,7 +109,7 @@
       "published_at": "2026-05-11T21:48:01+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 10914,
         "subdomain": "pg-beginner-mtg",
@@ -154,9 +154,9 @@
       "owner_id": 40964,
       "owner_nickname": "Kuxumarin",
       "owner_display_name": "Kuu / Sushi",
-      "accepted": 59,
+      "accepted": 63,
       "waiting": 0,
-      "updated_at": "2026-07-05T12:23:53+09:00"
+      "updated_at": "2026-07-05T16:45:17+09:00"
     },
     {
       "id": 397592,
@@ -171,7 +171,7 @@
       "published_at": "2026-06-17T02:01:02+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 499,
         "subdomain": "cocoa-kanto",
@@ -202,7 +202,7 @@
       "published_at": "2026-06-21T16:16:31+09:00",
       "limit": 60,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14543,
         "subdomain": "aid",
@@ -233,7 +233,7 @@
       "published_at": "2026-06-26T22:06:05+09:00",
       "limit": 11,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -264,7 +264,7 @@
       "published_at": "2026-06-22T15:45:48+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15625,
         "subdomain": "tougebu",
@@ -357,7 +357,7 @@
       "published_at": "2026-06-15T14:05:17+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15113,
         "subdomain": "ai-developer-monetization-lab",
@@ -450,7 +450,7 @@
       "published_at": "2026-06-13T13:06:23+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16047,
         "subdomain": "jawsug-sainokuni-saitama",
@@ -481,7 +481,7 @@
       "published_at": "2026-05-01T20:49:55+09:00",
       "limit": 77,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16047,
         "subdomain": "jawsug-sainokuni-saitama",
