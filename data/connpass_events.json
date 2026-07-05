@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-06T05:08:00.122860+09:00",
+  "fetched_at": "2026-07-06T06:54:41.378109+09:00",
   "date": "20260706",
   "count": 8,
   "events": [
@@ -92,7 +92,7 @@
       "owner_id": 650482,
       "owner_nickname": "kaho1009",
       "owner_display_name": "かほ",
-      "accepted": 43,
+      "accepted": 44,
       "waiting": 0,
       "updated_at": "2026-07-05T23:19:56+09:00"
     },
@@ -185,7 +185,7 @@
       "owner_id": 648275,
       "owner_nickname": "TimeeDev",
       "owner_display_name": "TimeeDev",
-      "accepted": 15,
+      "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-06-21T23:24:38+09:00"
     },
