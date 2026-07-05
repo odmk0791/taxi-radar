@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-06T03:06:38.171553+09:00",
+  "fetched_at": "2026-07-06T05:08:00.122860+09:00",
   "date": "20260706",
   "count": 8,
   "events": [
@@ -62,7 +62,7 @@
       "owner_nickname": "shoyakawamura",
       "owner_display_name": "shoyakawamura",
       "accepted": 35,
-      "waiting": 0,
+      "waiting": 1,
       "updated_at": "2026-06-17T08:50:54+09:00"
     },
     {
