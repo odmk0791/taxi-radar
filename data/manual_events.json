@@ -2,8 +2,22 @@
   "fetched_at": "2026-07-05T08:08:58.751097+09:00",
   "date": "20260705",
   "source": "eventernote+fes",
-  "count": 17,
+  "count": 18,
   "events": [
+    {
+      "id": "mga_kokuritsu_20260705",
+      "name": "Mrs. GREEN APPLE ゼンジン未到とイ/ミュータブル〜間奏編〜 ツアーファイナル",
+      "venue": "国立競技場（MUFGスタジアム）",
+      "address": "新宿区霞ヶ丘町10-1",
+      "lat": 35.6779,
+      "lon": 139.7146,
+      "started_at": "2026-07-05T18:30:00+09:00",
+      "ended_at": "2026-07-05T21:00:00+09:00",
+      "accepted": 68000,
+      "url": "https://mrsgreenapple.com/feature/zenjinmito_2026",
+      "category": "コンサート(大型)",
+      "source": "manual_bigbox"
+    },
     {
       "id": "en_20260705_01",
       "name": "FUEGO FLAMENCO FEST 2026",
