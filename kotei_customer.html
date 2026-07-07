@@ -86,7 +86,7 @@ main{padding:10px 12px;max-width:520px;margin:0 auto}
 
 <main>
   <div class="data-bar">
-    <div class="data-info">対象 <b id="data-count">–</b> 件</div>
+    <div class="data-info">対象 <b id="data-count">–</b> 件　/　📍GPS取得済み <b id="gps-count" style="color:#39d353">–</b> 件</div>
     <button class="refresh-btn" onclick="loadAll(true)">🔄 更新</button>
   </div>
 
@@ -122,6 +122,7 @@ main{padding:10px 12px;max-width:520px;margin:0 auto}
   <div class="filter-label">決済</div>
   <div class="fbtn-row">
     <button class="fbtn" id="sankyu-filter-btn" onclick="toggleSankyuFilter()">🎫 サンキューのみ</button>
+    <button class="fbtn" id="gps-filter-btn" onclick="toggleGpsFilter()">📍 GPSピンポイントのみ</button>
   </div>
 
   <div id="view-list"><div class="loading"><span class="spin">⏳</span> データ読み込み中...</div></div>
@@ -163,6 +164,7 @@ let sortMode = "recent"; // 'recent' | 'near'
 let timeFilterOn = false;
 let timeWindowMin = 20;
 let sankyuFilterOn = false;
+let gpsFilterOn = false;
 
 function norm(s){ return (s==null?"":String(s)).trim(); }
 function na(s){ return norm(s).replace(/[\s　]/g,''); }
@@ -367,6 +369,12 @@ function sortList(list){
   return list.slice().sort((a,b)=> (b.latest.date+b.latest.time).localeCompare(a.latest.date+a.latest.time));
 }
 
+function toggleGpsFilter(){
+  gpsFilterOn = !gpsFilterOn;
+  document.getElementById("gps-filter-btn").className = gpsFilterOn ? "fbtn on-all" : "fbtn";
+  render();
+}
+
 function toggleSankyuFilter(){
   sankyuFilterOn = !sankyuFilterOn;
   document.getElementById("sankyu-filter-btn").className = sankyuFilterOn ? "fbtn on-all" : "fbtn";
@@ -433,6 +441,7 @@ function getFiltered(){
     if(rankFilter.length > 0 && rankFilter.indexOf(g.rank) < 0) return false;
     if(q && !(g.memo||"").toLowerCase().includes(q)) return false;
     if(sankyuFilterOn && g.latest.sankyu !== "サンキュー") return false;
+    if(gpsFilterOn && g.latest.lat == null) return false;
     if(timeFilterOn){
       const tMin = timeToMinutes(g.latest.time);
       if(tMin == null) return false; // 時間不明は絞り込み時は除外
@@ -545,6 +554,8 @@ function loadAll(force){
   Promise.all([ loadCoords(), fetchCSV(MEMO_CSV) ]).then(([_, rows])=>{
     ALL_GROUPS = buildGroups(rows);
     document.getElementById("hdr-sub").textContent = ALL_GROUPS.length + "件の固定客データ";
+    const gpsN = ALL_GROUPS.filter(g=>g.latest.lat != null).length;
+    document.getElementById("gps-count").textContent = gpsN;
     render();
     if(currentTab==="map" && leafMap) renderMap();
   }).catch(e=>{
