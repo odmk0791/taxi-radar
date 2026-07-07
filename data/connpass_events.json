@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-08T07:53:36.608504+09:00",
+  "fetched_at": "2026-07-08T08:51:33.350999+09:00",
   "date": "20260708",
   "count": 13,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 93475,
       "owner_nickname": "SuguruOki",
       "owner_display_name": "Suguru Oki(スー)",
-      "accepted": 20,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-07-08T00:57:16+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 175042,
       "owner_nickname": "kobase16",
       "owner_display_name": "kobase",
-      "accepted": 24,
+      "accepted": 25,
       "waiting": 0,
       "updated_at": "2026-06-29T20:32:24+09:00"
     },
@@ -123,7 +123,7 @@
       "owner_id": 72245,
       "owner_nickname": "mki_skt",
       "owner_display_name": "sakito",
-      "accepted": 19,
+      "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-07-06T17:02:54+09:00"
     },
@@ -157,37 +157,6 @@
       "accepted": 12,
       "waiting": 0,
       "updated_at": "2026-07-04T16:18:57+09:00"
-    },
-    {
-      "id": 397968,
-      "title": "（増枠！）ループエンジニアリング meetup！#1",
-      "catch": "ループエンジニアリングを実践してみた知見を語り合おう！",
-      "description": "<h1>✍️概要</h1>\n<p>Claude Code 開発者の Boris Cherny 氏が提唱し、話題を呼んでいる「ループエンジニアリング（Loop Engineering）」。AIに逐一プロンプトを打つのをやめ、目的さえ定義すればAIが自走する“仕組み”そのものを設計する考え方です。</p>\n<p>AIエージェントの進化に伴い、ボトルネックはモデルの能力からハーネスやAIをどう動かすかという仕組みの設計に移っています。<br>\nこのmeet upでは、ループエンジニアリングを実際に試してみた知見を、一人5分のショートトークで持ち寄って語り尽くします。</p>\n<p>明日から自分の現場で組めるループのヒントを、ぜひ持ち帰ってください。お待ちしています！</p>\n<h2>開催形式</h2>\n<ul>\n<li>オンサイトのみ：タイミー株式会社（会場）</li>\n<li>申し込み：connpass（本サイト）</li>\n</ul>\n<hr>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:06</td>\n<td>オープニング / 会場案内（6分）</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>19:08 - 19:13</td>\n<td>ADDF - あなたのリポジトリでループエンジニアリングするフレームワーク作ったら</td>\n<td>果物リン (FruitRiin)さん</td>\n</tr>\n<tr>\n<td>19:15 - 19:20</td>\n<td>ループエンジニアリングの鍵はゲーム理論とナッシュ均衡</td>\n<td>中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td>19:22 - 19:27</td>\n<td>ゼロをイチにする仕事が終わったあと</td>\n<td>Masato Sugiyama（LT募集枠）</td>\n</tr>\n<tr>\n<td>19:29 - 19:39</td>\n<td>勉強会紹介＆スポンサー紹介（10分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:39 - 19:44</td>\n<td>個人でループエンジニアリングを2ヶ月・1000PR以上作ってみて思ったことまとめ</td>\n<td>高根沢さん（株式会社ワンキャリア社）</td>\n</tr>\n<tr>\n<td>19:46 - 19:51</td>\n<td>AIエージェントが自分で直して再実行する〜Claude Code × Playwrightで作るE2Eテスト自走環境〜</td>\n<td>noriyukitakeiさん（LT募集枠）</td>\n</tr>\n<tr>\n<td>19:53 - 19:58</td>\n<td>調整中</td>\n<td>調整中</td>\n</tr>\n<tr>\n<td>20:01 - 20:24</td>\n<td>Q&amp;A</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:24 - 20:30</td>\n<td>クロージング</td>\n<td>運営</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>※1人5分のLTです（各トーク間に転換2分を確保しています）。</p>\n<blockquote>\n<p>※20:30〜21:30 懇親会（ネットワーキング）\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>🤝<strong>会場スポンサー</strong></h1>\n<p><img src=\"https://media.connpass.com/thumbs/4f/74/4f7475952f1b621f9326dc74627ca56f.png\" width=\"300\"></p>\n<p><a href=\"https://corp.timee.co.jp/\" rel=\"nofollow\">株式会社タイミー</a><br>\n本イベントは、会場スポンサーとして株式会社タイミー様にご協力いただき開催しております。<br>\nタイミー様の開発組織・採用についてご興味のある方は以下ページをぜひご覧ください！\n<br><br>\n- <a href=\"https://product-recruit.timee.co.jp/engneer\" rel=\"nofollow\">エンジニア採用ページ</a><br>\n- <a href=\"https://tech.timee.co.jp \" rel=\"nofollow\">テックブログ</a></p>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/\" rel=\"nofollow\">生成AI活用のボトルネックを可視化し、開発組織の変革を実現するAIツール「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
-      "url": "https://findy-aiplus.connpass.com/event/397968/",
-      "image_url": "https://media.connpass.com/thumbs/f4/c8/f4c803a503726391d82558b93ac6cae9.png",
-      "hash_tag": "loopengineering",
-      "started_at": "2026-07-08T19:00:00+09:00",
-      "ended_at": "2026-07-08T20:30:00+09:00",
-      "published_at": "2026-06-24T12:02:03+09:00",
-      "limit": 103,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17529,
-        "subdomain": "findy-aiplus",
-        "title": "Findy AI+",
-        "url": "https://findy-aiplus.connpass.com/"
-      },
-      "address": "〒105-7135 東京都港区東新橋１丁目５−２ 汐留シティセンタ 35階",
-      "place": "株式会社タイミー",
-      "lat": "35.665379500000",
-      "lon": "139.760345900000",
-      "owner_id": 986836,
-      "owner_nickname": "sugamotota",
-      "owner_display_name": "t.sugamoto",
-      "accepted": 74,
-      "waiting": 0,
-      "updated_at": "2026-07-07T19:03:00+09:00"
     },
     {
       "id": 398419,
@@ -273,9 +242,40 @@
       "owner_id": 841123,
       "owner_nickname": "sadabon4",
       "owner_display_name": "Sadaomi Nishi",
-      "accepted": 101,
+      "accepted": 102,
       "waiting": 0,
       "updated_at": "2026-07-07T23:19:49+09:00"
+    },
+    {
+      "id": 397968,
+      "title": "（増枠！）ループエンジニアリング meetup！#1",
+      "catch": "ループエンジニアリングを実践してみた知見を語り合おう！",
+      "description": "<h1>✍️概要</h1>\n<p>Claude Code 開発者の Boris Cherny 氏が提唱し、話題を呼んでいる「ループエンジニアリング（Loop Engineering）」。AIに逐一プロンプトを打つのをやめ、目的さえ定義すればAIが自走する“仕組み”そのものを設計する考え方です。</p>\n<p>AIエージェントの進化に伴い、ボトルネックはモデルの能力からハーネスやAIをどう動かすかという仕組みの設計に移っています。<br>\nこのmeet upでは、ループエンジニアリングを実際に試してみた知見を、一人5分のショートトークで持ち寄って語り尽くします。</p>\n<p>明日から自分の現場で組めるループのヒントを、ぜひ持ち帰ってください。お待ちしています！</p>\n<h2>開催形式</h2>\n<ul>\n<li>オンサイトのみ：タイミー株式会社（会場）</li>\n<li>申し込み：connpass（本サイト）</li>\n</ul>\n<hr>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:06</td>\n<td>オープニング / 会場案内（6分）</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>19:08 - 19:13</td>\n<td>ADDF - あなたのリポジトリでループエンジニアリングするフレームワーク作ったら</td>\n<td>果物リン (FruitRiin)さん</td>\n</tr>\n<tr>\n<td>19:15 - 19:20</td>\n<td>ループエンジニアリングの鍵はゲーム理論とナッシュ均衡</td>\n<td>中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td>19:22 - 19:27</td>\n<td>ゼロをイチにする仕事が終わったあと</td>\n<td>Masato Sugiyama（LT募集枠）</td>\n</tr>\n<tr>\n<td>19:29 - 19:39</td>\n<td>勉強会紹介＆スポンサー紹介（10分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:39 - 19:44</td>\n<td>個人でループエンジニアリングを2ヶ月・1000PR以上作ってみて思ったことまとめ</td>\n<td>高根沢さん（株式会社ワンキャリア社）</td>\n</tr>\n<tr>\n<td>19:46 - 19:51</td>\n<td>AIエージェントが自分で直して再実行する〜Claude Code × Playwrightで作るE2Eテスト自走環境〜</td>\n<td>noriyukitakeiさん（LT募集枠）</td>\n</tr>\n<tr>\n<td>19:53 - 19:58</td>\n<td>調整中</td>\n<td>調整中</td>\n</tr>\n<tr>\n<td>20:01 - 20:24</td>\n<td>Q&amp;A</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:24 - 20:30</td>\n<td>クロージング</td>\n<td>運営</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>※1人5分のLTです（各トーク間に転換2分を確保しています）。</p>\n<blockquote>\n<p>※20:30〜21:30 懇親会（ネットワーキング）\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>🤝<strong>会場スポンサー</strong></h1>\n<p><img src=\"https://media.connpass.com/thumbs/4f/74/4f7475952f1b621f9326dc74627ca56f.png\" width=\"300\"></p>\n<p><a href=\"https://corp.timee.co.jp/\" rel=\"nofollow\">株式会社タイミー</a><br>\n本イベントは、会場スポンサーとして株式会社タイミー様にご協力いただき開催しております。<br>\nタイミー様の開発組織・採用についてご興味のある方は以下ページをぜひご覧ください！\n<br><br>\n- <a href=\"https://product-recruit.timee.co.jp/engneer\" rel=\"nofollow\">エンジニア採用ページ</a><br>\n- <a href=\"https://tech.timee.co.jp \" rel=\"nofollow\">テックブログ</a></p>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/\" rel=\"nofollow\">生成AI活用のボトルネックを可視化し、開発組織の変革を実現するAIツール「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
+      "url": "https://findy-aiplus.connpass.com/event/397968/",
+      "image_url": "https://media.connpass.com/thumbs/f4/c8/f4c803a503726391d82558b93ac6cae9.png",
+      "hash_tag": "loopengineering",
+      "started_at": "2026-07-08T19:00:00+09:00",
+      "ended_at": "2026-07-08T20:30:00+09:00",
+      "published_at": "2026-06-24T12:02:03+09:00",
+      "limit": 103,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17529,
+        "subdomain": "findy-aiplus",
+        "title": "Findy AI+",
+        "url": "https://findy-aiplus.connpass.com/"
+      },
+      "address": "〒105-7135 東京都港区東新橋１丁目５−２ 汐留シティセンタ 35階",
+      "place": "株式会社タイミー",
+      "lat": "35.665379500000",
+      "lon": "139.760345900000",
+      "owner_id": 986836,
+      "owner_nickname": "sugamotota",
+      "owner_display_name": "t.sugamoto",
+      "accepted": 75,
+      "waiting": 0,
+      "updated_at": "2026-07-07T19:03:00+09:00"
     },
     {
       "id": 396687,
@@ -304,7 +304,7 @@
       "owner_id": 1379,
       "owner_nickname": "smzksts",
       "owner_display_name": "Satoshi Shimazaki",
-      "accepted": 83,
+      "accepted": 84,
       "waiting": 0,
       "updated_at": "2026-07-08T02:42:43+09:00"
     },
@@ -346,7 +346,7 @@
       "description": "<h1>これからのプロダクトデザイン</h1>\n<p>これからのプロダクトデザインの役割とは？</p>\n<p>「これからのプロダクトデザイン」は、変化の激しいプロダクトづくりの現場をリードする6社のプロダクトデザイナーの先行事例を掘り下げる、カンファレンス型イベントです。</p>\n<p>職種を越えて分岐していくプロダクトデザインの形をトップ事例から読み解き、自分にとっての理想像を見つける一夜限りの場。</p>\n<p>これからのプロダクトづくりをリードしたい方、そして何より楽しみたい方へ。ここがプロダクトデザインの最前線です。</p>\n<h2>▼イベント詳細はこちらから (特設サイト)</h2>\n<p><a href=\"https://events.cocoda.design/product-design\" rel=\"nofollow\">https://events.cocoda.design/product-design</a></p>\n<p>参加を希望される方は、以下の概要をよくお読みいただいた上で、こちらのconnpassページよりお申し込みください。</p>\n<h2>日程について</h2>\n<ul>\n<li>2026年 7月8日(水) 17:00〜21:30<ul>\n<li>イベントは、セッションの時間とミートアップの時間で構成されています。</li>\n<li>オープニングミートアップは17:00から、オープニングセッションは18:00から開始します。</li>\n<li>できるだけお時間を確保してご参加いただければ幸いです。</li>\n</ul>\n</li>\n</ul>\n<h2>会場について</h2>\n<ul>\n<li>\n<p>「株式会社ログラスオフィス (9F)」にて開催します。</p>\n<ul>\n<li>住所: <a href=\"https://maps.app.goo.gl/MFZ8K3sts3FzRW7a6\" rel=\"nofollow\">東京都港区三田３丁目１１−２４ (国際興業三田第2ビル 9階)</a></li>\n<li>最寄り駅: 泉岳寺駅、または高輪ゲートウェイ駅</li>\n</ul>\n</li>\n<li>\n<p>(具体的な当日の会場へのアクセス・移動の流れについては、お申込み後にイベントページに表示されます。)</p>\n</li>\n</ul>\n<h2>お申し込みについて</h2>\n<ul>\n<li>参加希望の方は、こちらのconnpassページ上からお申し込みください。</li>\n<li>イベント会場の都合上、参加者の上限を設けています。先着制なので、お早めにお申し込みいただければと思います。</li>\n<li>イベント当日は、イベント会場の管理上の目的と、参加者同士の安全を考慮した本人確認の目的で、Connpassの受付票のご提示と、お名刺のご提出をお願い申し上げます。スムーズにご案内するため手元に準備いただくことをお忘れないようご協力ください。</li>\n<li>本イベントは参加費無料で開催します。</li>\n</ul>\n<h2>その他</h2>\n<p><strong><em>参加者情報の取り扱いなどについて</em></strong></p>\n<ul>\n<li>イベントに関する情報については、以下のプライバシーポリシーに基づき適切に扱います。<ul>\n<li>株式会社alma (Cocoda運営): <a href=\"https://alma-inc.co.jp/privacy-policy\" rel=\"nofollow\">https://alma-inc.co.jp/privacy-policy</a></li>\n</ul>\n</li>\n</ul>\n<p><strong><em>行動規範</em></strong></p>\n<ul>\n<li>本イベントは、現場の最前線のデザイン業務に関する情報交換や交流を行うための場所です。 そのため、参加者に対して以下のようなハラスメント行為は許容しません。<ul>\n<li>言葉による性別、性的指向、障害の有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント</li>\n<li>公的空間での性的な映像表現</li>\n<li>意図的な威力行為、ストーキング、つきまとい</li>\n<li>写真撮影や録音によるいやがらせ</li>\n<li>トークやその他の会議イベントに対して繰り返して中断しようとする行為</li>\n<li>望まれない性的な注意を引きつける行為</li>\n</ul>\n</li>\n<li>ハラスメント行為に遭った、目撃した場合には、スタッフの誰かに連絡していただくようお願いします。</li>\n</ul>\n<p><strong><em>本イベントに関するお問い合わせについて</em></strong></p>\n<ul>\n<li>ご不明点については、以下のメールアドレスへメール、またはCocodaのXアカウントにDMでお問い合わせください (通常、1~2営業日以内にご返信します。)<ul>\n<li>メール: <a href=\"support@cocoda.design\" rel=\"nofollow\">support@cocoda.design</a></li>\n<li>X DM: <a href=\"https://x.com/Cocoda_design\" rel=\"nofollow\">https://x.com/Cocoda_design</a></li>\n</ul>\n</li>\n</ul>",
       "url": "https://connpass.com/event/395321/",
       "image_url": "https://media.connpass.com/thumbs/2a/45/2a451dfb4a316a1048b0f821db6a44de.png",
-      "hash_tag": "事業と市場のつなげ方",
+      "hash_tag": "これからのプロダクトデザイン",
       "started_at": "2026-07-08T17:00:00+09:00",
       "ended_at": "2026-07-08T21:30:00+09:00",
       "published_at": "2026-06-19T07:32:11+09:00",
@@ -363,7 +363,7 @@
       "owner_display_name": "Cocoda",
       "accepted": 129,
       "waiting": 0,
-      "updated_at": "2026-07-06T14:39:44+09:00"
+      "updated_at": "2026-07-08T08:39:13+09:00"
     },
     {
       "id": 398554,
