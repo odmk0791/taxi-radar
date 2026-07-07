@@ -98,6 +98,19 @@ main{padding:10px 12px;max-width:520px;margin:0 auto}
     <button class="fbtn" data-v="T3" onclick="toggleTerminal('T3',this)">✈️T3(国際線)</button>
   </div>
 
+  <div class="filter-label">状況</div>
+  <div class="fbtn-row">
+    <button class="fbtn on-all" data-sv="all" onclick="toggleStatus('all',this)">すべて</button>
+    <button class="fbtn" data-sv="GO" onclick="toggleStatus('GO',this)">GO</button>
+    <button class="fbtn" data-sv="流し" onclick="toggleStatus('流し',this)">流し</button>
+    <button class="fbtn" data-sv="スマ配" onclick="toggleStatus('スマ配',this)">スマ配</button>
+  </div>
+
+  <div class="filter-label">決済</div>
+  <div class="fbtn-row">
+    <button class="fbtn" id="sankyu-filter-btn" onclick="toggleSankyuFilter()">🎫 サンキューのみ</button>
+  </div>
+
   <div class="filter-label">並び順</div>
   <div class="fbtn-row">
     <button class="fbtn on-all" id="sort-recent-btn" onclick="setSortRecent()">🕐 新しい順</button>
@@ -133,12 +146,16 @@ const COL_CANDIDATES = {
   date:   ["日付"],
   dow:    ["曜日"],
   time:   ["乗車時間"],
-  fare:   ["料金"]
+  fare:   ["料金"],
+  status: ["ステータス"],
+  sankyu: ["サンキュー"]
 };
 
 let ALL_GROUPS = [];
 let COORDS = {};
 let terminalFilter = [];
+let statusFilter = [];
+let sankyuFilterOn = false;
 let currentTab = "list";
 let leafMap = null;
 let mapMarkers = [];
@@ -226,12 +243,14 @@ function buildGroups(rows){
     const dow  = getCol(r,"dow");
     const time = getCol(r,"time");
     const fare = getCol(r,"fare");
+    const status = getCol(r,"status");
+    const sankyu = getCol(r,"sankyu");
 
     hits.push({
       terminal, ward, area,
       lat: !isNaN(lat) ? lat : null,
       lng: !isNaN(lng) ? lng : null,
-      date, dow, time, fare
+      date, dow, time, fare, status, sankyu
     });
   });
 
@@ -360,6 +379,29 @@ function toggleTerminal(v, btn){
   render();
 }
 
+function toggleStatus(v, btn){
+  if(v === "all"){
+    statusFilter = [];
+    document.querySelectorAll('.fbtn[data-sv]').forEach(b=>{
+      b.className = b.dataset.sv === "all" ? "fbtn on-all" : "fbtn";
+    });
+  } else {
+    const idx = statusFilter.indexOf(v);
+    const allBtn = document.querySelector('.fbtn[data-sv="all"]');
+    if(idx >= 0){ statusFilter.splice(idx,1); btn.className = "fbtn"; }
+    else { statusFilter.push(v); btn.className = "fbtn on-all"; }
+    if(statusFilter.length === 0) allBtn.className = "fbtn on-all";
+    else allBtn.className = "fbtn";
+  }
+  render();
+}
+
+function toggleSankyuFilter(){
+  sankyuFilterOn = !sankyuFilterOn;
+  document.getElementById("sankyu-filter-btn").className = sankyuFilterOn ? "fbtn on-all" : "fbtn";
+  render();
+}
+
 function toggleTimeFilter(){
   timeFilterOn = !timeFilterOn;
   updateTimeButtons();
@@ -398,6 +440,8 @@ function getFiltered(){
   const nowMin = now.getHours()*60 + now.getMinutes();
   return ALL_GROUPS.filter(g=>{
     if(terminalFilter.length > 0 && terminalFilter.indexOf(g.terminal) < 0) return false;
+    if(statusFilter.length > 0 && statusFilter.indexOf(g.latest.status) < 0) return false;
+    if(sankyuFilterOn && g.latest.sankyu !== "サンキュー") return false;
     if(timeFilterOn){
       const tMin = timeToMinutes(g.latest.time);
       if(tMin == null) return false;
@@ -427,9 +471,10 @@ function renderList(){
   wrap.innerHTML = list.map(g=>{
     const loc = (g.latest.ward + g.latest.area) || "地名不明";
     const gpsTag = g.latest.lat != null ? '<span class="gps-tag">📍GPS</span>' : '';
+    const sankyuTag = g.latest.sankyu === "サンキュー" ? '<span class="gps-tag" style="color:#f0a500;border-color:rgba(240,165,0,.4)">🎫サンキュー</span>' : '';
     const distTag = (sortMode==="near" && g._dist != null) ? `<span class="dist-tag">${g._dist.toFixed(1)}km</span>` : "";
     const hist = g.visits.slice(1,4).map(v=>
-      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.time} ${fmtFareDisplay(v.fare)}</div>`
+      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.time} ${fmtFareDisplay(v.fare)}${v.sankyu==="サンキュー"?" 🎫":""}</div>`
     ).join("");
     const histMore = g.visits.length > 4 ? `<div class="hist-item">…他 ${g.visits.length-4}件</div>` : "";
     const pos = resolveLatLng(g.latest);
@@ -442,7 +487,7 @@ function renderList(){
         ${distTag}
         ${g.count>1 ? `<span class="visit-count">${g.count}回</span>` : ""}
       </div>
-      <div class="card-row"><span class="ic">📍</span><b>${loc}</b>から乗車${gpsTag}</div>
+      <div class="card-row"><span class="ic">📍</span><b>${loc}</b>から乗車${gpsTag}${sankyuTag}</div>
       <div class="card-row"><span class="ic">🕐</span>前回 ${g.latest.date}(${g.latest.dow}) ${g.latest.time}</div>
       <div class="card-row"><span class="ic">💴</span>${fmtFareDisplay(g.latest.fare)}</div>
       ${hist || histMore ? `<div class="hist-list">${hist}${histMore}</div>` : ""}
