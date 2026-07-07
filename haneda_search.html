@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0a1628">
+<title>羽田空港サーチ | TAXI Driver</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+:root{--bg:#0a1628;--s:#0f2040;--s2:#162850;--bd:#30363d;--g:#39d353;--gd:#1a4a2a;--am:#f0a500;--bl:#58a6ff;--re:#f85149;--tx:#e6edf3;--mu:#8b949e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:var(--bg);color:var(--tx);font-family:-apple-system,'Hiragino Sans',sans-serif;padding-bottom:env(safe-area-inset-bottom,16px)}
+#hdr{position:sticky;top:0;z-index:100;background:rgba(13,17,23,.97);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0)}
+.hi{display:flex;align-items:center;gap:6px;padding:9px 12px}
+.logo{font-size:15px;font-weight:900;flex-shrink:0}.logo b{color:var(--bl)}
+.hs{flex:1;min-width:0}
+.st{font-size:11px;color:var(--mu)}
+.hbtn{background:none;border:none;color:var(--mu);font-size:18px;padding:2px;flex-shrink:0;text-decoration:none}
+main{padding:10px 12px;max-width:520px;margin:0 auto}
+
+.data-bar{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:var(--s);border:1px solid var(--bd);border-radius:10px;margin-bottom:10px}
+.data-info{font-size:11px;color:var(--mu)}.data-info b{color:var(--g)}
+.refresh-btn{background:none;border:1px solid var(--bd);border-radius:6px;color:var(--bl);font-size:11px;font-weight:700;cursor:pointer;padding:4px 10px;font-family:-apple-system,sans-serif}
+
+.tab-row{display:flex;border-bottom:1px solid var(--bd);margin-bottom:10px}
+.tabBtn{flex:1;padding:8px 4px;font-size:13px;font-weight:700;font-family:-apple-system,sans-serif;color:var(--mu);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer}
+.tabBtn.on{color:var(--g);border-bottom-color:var(--g)}
+
+.filter-label{font-size:10px;color:var(--mu);margin-bottom:5px;margin-top:2px}
+.fbtn-row{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.fbtn{padding:6px 12px;border-radius:20px;border:1px solid var(--bd);background:var(--s);color:var(--mu);font-size:12px;font-weight:700;cursor:pointer;font-family:-apple-system,sans-serif}
+.fbtn.on-all{background:var(--gd);color:var(--g);border-color:rgba(57,211,83,.4)}
+.fbtn.on-t1{background:rgba(88,166,255,.15);color:#58a6ff;border-color:rgba(88,166,255,.4)}
+.fbtn.on-t2{background:rgba(57,211,83,.15);color:#39d353;border-color:rgba(57,211,83,.4)}
+.fbtn.on-t3{background:rgba(240,165,0,.15);color:#f0a500;border-color:rgba(240,165,0,.4)}
+
+.card{background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.card-top{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+.badge{font-size:10px;padding:3px 9px;border-radius:20px;font-weight:800;flex-shrink:0}
+.badge-T1{background:rgba(88,166,255,.15);color:#58a6ff}
+.badge-T2{background:rgba(57,211,83,.15);color:#39d353}
+.badge-T3{background:rgba(240,165,0,.15);color:#f0a500}
+.card-title{font-size:14px;font-weight:700;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.visit-count{font-size:10px;color:var(--am);flex-shrink:0;font-weight:700}
+.dist-tag{font-size:10px;color:#39d353;flex-shrink:0;font-weight:700}
+.card-row{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--mu);margin-top:3px}
+.card-row .ic{font-size:11px;flex-shrink:0}
+.card-row b{color:var(--tx);font-weight:600}
+.gps-tag{font-size:9px;color:var(--g);border:1px solid rgba(57,211,83,.3);border-radius:8px;padding:1px 6px;margin-left:4px}
+.hist-list{margin-top:8px;padding-top:8px;border-top:1px solid var(--bd)}
+.hist-item{font-size:11px;color:var(--mu);padding:2px 0}
+.hist-item b{color:var(--tx)}
+.route-btn{display:inline-flex;align-items:center;gap:4px;margin-top:9px;padding:7px 12px;border-radius:8px;background:rgba(88,166,255,.12);border:1px solid rgba(88,166,255,.35);color:#58a6ff;font-size:12px;font-weight:700;text-decoration:none}
+
+#map{height:calc(100vh - 220px);min-height:400px;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}
+.pin-pop{font-family:-apple-system,sans-serif;font-size:12px;line-height:1.6;color:#111}
+.pin-pop b{font-size:13px}
+
+.empty{padding:40px 0;text-align:center;color:var(--mu)}
+.empty span{font-size:32px;display:block;margin-bottom:8px}
+.empty p{font-size:12px;line-height:1.8}
+.loading{padding:30px;text-align:center;color:var(--mu);font-size:13px}
+.spin{display:inline-block;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="hi">
+    <div class="logo">✈️<b>羽田サーチ</b></div>
+    <div class="hs">
+      <div class="st" id="hdr-sub">読み込み中…</div>
+    </div>
+    <a class="hbtn" href="hub.html" title="ハブへ戻る">🏠</a>
+  </div>
+</div>
+
+<main>
+  <div class="data-bar">
+    <div class="data-info">羽田行き実績 <b id="data-count">–</b> 件</div>
+    <button class="refresh-btn" onclick="loadAll(true)">🔄 更新</button>
+  </div>
+
+  <div class="tab-row">
+    <button class="tabBtn on" id="tab-list" onclick="switchTab('list')">📋 リスト</button>
+    <button class="tabBtn" id="tab-map" onclick="switchTab('map')">🗺️ 地図</button>
+  </div>
+
+  <div class="filter-label">ターミナル</div>
+  <div class="fbtn-row">
+    <button class="fbtn on-all" data-v="all" onclick="toggleTerminal('all',this)">すべて</button>
+    <button class="fbtn" data-v="T1" onclick="toggleTerminal('T1',this)">✈️T1</button>
+    <button class="fbtn" data-v="T2" onclick="toggleTerminal('T2',this)">✈️T2</button>
+    <button class="fbtn" data-v="T3" onclick="toggleTerminal('T3',this)">✈️T3(国際線)</button>
+  </div>
+
+  <div class="filter-label">並び順</div>
+  <div class="fbtn-row">
+    <button class="fbtn on-all" id="sort-recent-btn" onclick="setSortRecent()">🕐 新しい順</button>
+    <button class="fbtn" id="sort-near-btn" onclick="enableNearSort()">📍 現在地から近い順</button>
+  </div>
+
+  <div class="filter-label">時間帯（現在時刻に近い順で絞り込み）</div>
+  <div class="fbtn-row">
+    <button class="fbtn" id="time-filter-btn" onclick="toggleTimeFilter()">⏰ 今の時間帯のみ</button>
+    <button class="fbtn" id="time-10" onclick="setTimeWindow(10)">10分以内</button>
+    <button class="fbtn on-all" id="time-20" onclick="setTimeWindow(20)">20分以内</button>
+    <button class="fbtn" id="time-30" onclick="setTimeWindow(30)">30分以内</button>
+  </div>
+
+  <div id="view-list"><div class="loading"><span class="spin">⏳</span> データ読み込み中...</div></div>
+  <div id="view-map" style="display:none"><div id="map"></div></div>
+</main>
+
+<script>
+const MEMO_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv";
+const COORDS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpOj4QzyarqZtTDM5bld8QDEIzRodRLUwAfF8u42CbgTuGPoKqWrOKtw2Ddrhm0OnONlVnzwc8c1BX/pub?gid=657495537&single=true&output=csv";
+const CACHE_KEY_COORDS = "haneda_search_coords_v1";
+const T_LABEL = {T1:"✈️T1", T2:"✈️T2", T3:"✈️T3"};
+const T_COLOR = {T1:"#58a6ff", T2:"#39d353", T3:"#f0a500"};
+
+const COL_CANDIDATES = {
+  pWard:  ["乗車地：市区","乗車地:市区"],
+  pArea:  ["乗車地：地名","乗車地:地名"],
+  pLat:   ["乗車地：緯度","乗車地:緯度"],
+  pLng:   ["乗車地：経度","乗車地:経度"],
+  dWard:  ["降車地：市区","降車地:市区"],
+  dArea:  ["降車地：地名","降車地:地名"],
+  date:   ["日付"],
+  dow:    ["曜日"],
+  time:   ["乗車時間"],
+  fare:   ["料金"]
+};
+
+let ALL_GROUPS = [];
+let COORDS = {};
+let terminalFilter = [];
+let currentTab = "list";
+let leafMap = null;
+let mapMarkers = [];
+let userPos = null;
+let sortMode = "recent";
+let timeFilterOn = false;
+let timeWindowMin = 20;
+
+function norm(s){ return (s==null?"":String(s)).trim(); }
+function na(s){ return norm(s).replace(/[\s　]/g,''); }
+
+function getCol(row, key){
+  const candidates = COL_CANDIDATES[key] || [];
+  for(const c of candidates){
+    if(Object.prototype.hasOwnProperty.call(row, c)) return norm(row[c]);
+  }
+  const rowKeys = Object.keys(row);
+  for(const c of candidates){
+    const target = na(c);
+    const found = rowKeys.find(k => na(k).length > target.length && na(k).includes(target));
+    if(found) return norm(row[found]);
+  }
+  return "";
+}
+
+function fmtFareDisplay(fare){
+  const f = norm(fare);
+  if(!f) return "-";
+  return f.startsWith("¥") ? f : "¥"+f;
+}
+
+function detectTerminal(dWard, dArea){
+  const s = dWard + dArea;
+  const m = s.match(/羽田空港\s*T\s*([123])/i) || s.match(/羽田空港.*第\s*([123])\s*(旅客)?タ[ーー]?ミナル/);
+  if(m) return "T"+m[1];
+  return null;
+}
+
+function fetchCSV(url){
+  return fetch(url).then(r=>{
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    return r.text();
+  }).then(text=>{
+    return Papa.parse(text, {
+      header:true, skipEmptyLines:true, dynamicTyping:false,
+      transformHeader:h=>h.trim().replace(/^\uFEFF/,'')
+    }).data;
+  });
+}
+
+function loadCoords(){
+  try{
+    const cached = localStorage.getItem(CACHE_KEY_COORDS);
+    if(cached) COORDS = JSON.parse(cached);
+  }catch(e){}
+  return fetchCSV(COORDS_CSV).then(rows=>{
+    const c = {};
+    rows.forEach(row=>{
+      const vals = Object.values(row);
+      const addr = norm(vals[0]);
+      const lat = parseFloat(vals[1]);
+      const lng = parseFloat(vals[2]);
+      if(addr && !isNaN(lat) && !isNaN(lng)) c[addr] = [lat,lng];
+    });
+    if(Object.keys(c).length > 100){
+      COORDS = c;
+      try{ localStorage.setItem(CACHE_KEY_COORDS, JSON.stringify(c)); }catch(e){}
+    }
+  }).catch(e=>console.warn("座標CSV読み込み失敗", e));
+}
+
+function buildGroups(rows){
+  const hits = [];
+  rows.forEach(r=>{
+    const dWard = getCol(r,"dWard");
+    const dArea = getCol(r,"dArea");
+    const terminal = detectTerminal(dWard, dArea);
+    if(!terminal) return;
+
+    const ward = getCol(r,"pWard");
+    const area = getCol(r,"pArea");
+    const lat  = parseFloat(getCol(r,"pLat"));
+    const lng  = parseFloat(getCol(r,"pLng"));
+    const date = getCol(r,"date");
+    const dow  = getCol(r,"dow");
+    const time = getCol(r,"time");
+    const fare = getCol(r,"fare");
+
+    hits.push({
+      terminal, ward, area,
+      lat: !isNaN(lat) ? lat : null,
+      lng: !isNaN(lng) ? lng : null,
+      date, dow, time, fare
+    });
+  });
+
+  const groups = new Map();
+  hits.forEach(v=>{
+    const key = v.terminal + "::" + v.ward + v.area;
+    if(!groups.has(key)) groups.set(key, { terminal:v.terminal, ward:v.ward, area:v.area, visits: [] });
+    groups.get(key).visits.push(v);
+  });
+
+  const list = [];
+  groups.forEach(g=>{
+    g.visits.sort((a,b)=> (b.date+b.time).localeCompare(a.date+a.time));
+    list.push({ terminal:g.terminal, ward:g.ward, area:g.area, latest:g.visits[0], visits:g.visits, count:g.visits.length });
+  });
+  return list;
+}
+
+function resolveLatLng(v){
+  if(v.lat != null && v.lng != null) return {lat:v.lat, lng:v.lng, precise:true};
+  const key = v.ward + v.area;
+  if(COORDS[key]) return {lat:COORDS[key][0], lng:COORDS[key][1], precise:false};
+  const key2 = v.area;
+  if(COORDS[key2]) return {lat:COORDS[key2][0], lng:COORDS[key2][1], precise:false};
+  return null;
+}
+
+function haversine(lat1,lon1,lat2,lon2){
+  const R=6371, toR=d=>d*Math.PI/180;
+  const dLat=toR(lat2-lat1), dLon=toR(lon2-lon1);
+  const a=Math.sin(dLat/2)**2 + Math.cos(toR(lat1))*Math.cos(toR(lat2))*Math.sin(dLon/2)**2;
+  return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
+}
+
+function timeToMinutes(timeStr){
+  const m = String(timeStr||"").match(/(\d{1,2}):(\d{2})/);
+  if(!m) return null;
+  return (((+m[1])*60 + (+m[2])) % 1440 + 1440) % 1440;
+}
+
+function circularDiffMin(a,b){
+  const d = Math.abs(a-b);
+  return Math.min(d, 1440-d);
+}
+
+function mapsRouteUrl(lat,lng){
+  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`;
+}
+
+function getGPS(){
+  return new Promise((resolve,reject)=>{
+    if(!navigator.geolocation){reject(new Error("この端末はGPS非対応です"));return;}
+    navigator.geolocation.getCurrentPosition(
+      p=>resolve({lat:p.coords.latitude,lng:p.coords.longitude}),
+      e=>reject(new Error(e.code===1?"位置情報の許可が必要です":"GPS取得に失敗しました")),
+      {timeout:8000}
+    );
+  });
+}
+
+async function enableNearSort(){
+  const btn = document.getElementById("sort-near-btn");
+  const orig = btn.textContent;
+  btn.textContent = "📍 取得中…";
+  try{
+    userPos = await getGPS();
+    sortMode = "near";
+    updateSortButtons();
+    render();
+  }catch(e){
+    alert(e.message);
+    btn.textContent = orig;
+  }
+}
+
+function setSortRecent(){
+  sortMode = "recent";
+  updateSortButtons();
+  render();
+}
+
+function updateSortButtons(){
+  document.getElementById("sort-recent-btn").className = sortMode==="recent" ? "fbtn on-all" : "fbtn";
+  document.getElementById("sort-near-btn").className = sortMode==="near" ? "fbtn on-all" : "fbtn";
+  document.getElementById("sort-near-btn").textContent = sortMode==="near" ? "📍 現在地優先中" : "📍 現在地から近い順";
+}
+
+function scoreForNear(g){
+  const pos = resolveLatLng(g.latest);
+  const dist = pos ? haversine(userPos.lat,userPos.lng,pos.lat,pos.lng) : 999;
+  const tMin = timeToMinutes(g.latest.time);
+  const now = new Date();
+  const nowMin = now.getHours()*60 + now.getMinutes();
+  let mult = 1;
+  if(tMin != null){
+    const diff = circularDiffMin(nowMin, tMin);
+    mult = 0.6 + (diff/720)*0.8;
+  }
+  return { dist, score: dist*mult };
+}
+
+function sortList(list){
+  if(sortMode === "near" && userPos){
+    return list.map(g=>{
+      const {dist,score} = scoreForNear(g);
+      return {g, dist, score};
+    }).sort((a,b)=>a.score-b.score).map(x=>{ x.g._dist = x.dist; return x.g; });
+  }
+  return list.slice().sort((a,b)=> (b.latest.date+b.latest.time).localeCompare(a.latest.date+a.latest.time));
+}
+
+function toggleTerminal(v, btn){
+  if(v === "all"){
+    terminalFilter = [];
+    document.querySelectorAll('.fbtn[data-v]').forEach(b=>{
+      b.className = b.dataset.v === "all" ? "fbtn on-all" : "fbtn";
+    });
+  } else {
+    const idx = terminalFilter.indexOf(v);
+    const allBtn = document.querySelector('.fbtn[data-v="all"]');
+    if(idx >= 0){ terminalFilter.splice(idx,1); btn.className = "fbtn"; }
+    else { terminalFilter.push(v); btn.className = "fbtn on-t"+v.slice(1); }
+    if(terminalFilter.length === 0) allBtn.className = "fbtn on-all";
+    else allBtn.className = "fbtn";
+  }
+  render();
+}
+
+function toggleTimeFilter(){
+  timeFilterOn = !timeFilterOn;
+  updateTimeButtons();
+  render();
+}
+
+function setTimeWindow(mins){
+  timeWindowMin = mins;
+  timeFilterOn = true;
+  updateTimeButtons();
+  render();
+}
+
+function updateTimeButtons(){
+  document.getElementById("time-filter-btn").className = timeFilterOn ? "fbtn on-all" : "fbtn";
+  [10,20,30].forEach(w=>{
+    document.getElementById("time-"+w).className = (timeFilterOn && timeWindowMin===w) ? "fbtn on-all" : "fbtn";
+  });
+}
+
+function switchTab(tab){
+  currentTab = tab;
+  document.getElementById("tab-list").className = tab==="list" ? "tabBtn on" : "tabBtn";
+  document.getElementById("tab-map").className = tab==="map" ? "tabBtn on" : "tabBtn";
+  document.getElementById("view-list").style.display = tab==="list" ? "" : "none";
+  document.getElementById("view-map").style.display = tab==="map" ? "" : "none";
+  if(tab==="map"){
+    if(!leafMap) initMap();
+    renderMap();
+    setTimeout(()=>leafMap.invalidateSize(), 100);
+  }
+}
+
+function getFiltered(){
+  const now = new Date();
+  const nowMin = now.getHours()*60 + now.getMinutes();
+  return ALL_GROUPS.filter(g=>{
+    if(terminalFilter.length > 0 && terminalFilter.indexOf(g.terminal) < 0) return false;
+    if(timeFilterOn){
+      const tMin = timeToMinutes(g.latest.time);
+      if(tMin == null) return false;
+      if(circularDiffMin(nowMin, tMin) > timeWindowMin) return false;
+    }
+    return true;
+  });
+}
+
+function render(){
+  if(currentTab === "list") renderList();
+  else renderMap();
+}
+
+function renderList(){
+  const filtered = getFiltered();
+  const list = sortList(filtered);
+  const wrap = document.getElementById("view-list");
+  document.getElementById("data-count").textContent =
+    filtered.length === ALL_GROUPS.length ? ALL_GROUPS.length : filtered.length + " / " + ALL_GROUPS.length;
+
+  if(list.length === 0){
+    wrap.innerHTML = '<div class="empty"><span>🈳</span><p>該当する実績がありません</p></div>';
+    return;
+  }
+
+  wrap.innerHTML = list.map(g=>{
+    const loc = (g.latest.ward + g.latest.area) || "地名不明";
+    const gpsTag = g.latest.lat != null ? '<span class="gps-tag">📍GPS</span>' : '';
+    const distTag = (sortMode==="near" && g._dist != null) ? `<span class="dist-tag">${g._dist.toFixed(1)}km</span>` : "";
+    const hist = g.visits.slice(1,4).map(v=>
+      `<div class="hist-item"><b>${v.date}(${v.dow})</b> ${v.time} ${fmtFareDisplay(v.fare)}</div>`
+    ).join("");
+    const histMore = g.visits.length > 4 ? `<div class="hist-item">…他 ${g.visits.length-4}件</div>` : "";
+    const pos = resolveLatLng(g.latest);
+    const routeBtn = pos ? `<a class="route-btn" href="${mapsRouteUrl(pos.lat,pos.lng)}" target="_blank" rel="noopener">🧭 ルート${pos.precise?"":"（概算地点）"}</a>` : "";
+
+    return `<div class="card">
+      <div class="card-top">
+        <span class="badge badge-${g.terminal}">${T_LABEL[g.terminal]}行き</span>
+        <span class="card-title">${loc}</span>
+        ${distTag}
+        ${g.count>1 ? `<span class="visit-count">${g.count}回</span>` : ""}
+      </div>
+      <div class="card-row"><span class="ic">📍</span><b>${loc}</b>から乗車${gpsTag}</div>
+      <div class="card-row"><span class="ic">🕐</span>前回 ${g.latest.date}(${g.latest.dow}) ${g.latest.time}</div>
+      <div class="card-row"><span class="ic">💴</span>${fmtFareDisplay(g.latest.fare)}</div>
+      ${hist || histMore ? `<div class="hist-list">${hist}${histMore}</div>` : ""}
+      ${routeBtn}
+    </div>`;
+  }).join("");
+}
+
+function initMap(){
+  leafMap = L.map('map', {zoomControl:true}).setView([35.68,139.70], 12);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution:'&copy; OpenStreetMap &copy; CARTO', subdomains:'abcd', maxZoom:19
+  }).addTo(leafMap);
+}
+
+function renderMap(){
+  if(!leafMap) return;
+  mapMarkers.forEach(m=>leafMap.removeLayer(m));
+  mapMarkers = [];
+
+  const list = sortList(getFiltered());
+  const bounds = [];
+
+  list.forEach(g=>{
+    const pos = resolveLatLng(g.latest);
+    if(!pos) return;
+    const tc = T_COLOR[g.terminal];
+    const icon = L.divIcon({
+      html: `<div style="width:16px;height:16px;border-radius:50%;background:${tc};border:2px solid #fff;box-shadow:0 0 4px rgba(0,0,0,.6)"></div>`,
+      className:'', iconSize:[16,16], iconAnchor:[8,8]
+    });
+    const marker = L.marker([pos.lat,pos.lng], {icon}).addTo(leafMap);
+    const precTag = pos.precise ? "📍GPSピンポイント" : "🏘️ 丁目レベル(概算)";
+    marker.bindPopup(`<div class="pin-pop"><b>${T_LABEL[g.terminal]}行き　${g.latest.ward}${g.latest.area}</b><br>
+      前回：${g.latest.date}(${g.latest.dow}) ${g.latest.time}<br>
+      ${fmtFareDisplay(g.latest.fare)}　${g.count>1?g.count+"回":""}<br>
+      <span style="color:#888;font-size:10px">${precTag}</span><br>
+      <a href="${mapsRouteUrl(pos.lat,pos.lng)}" target="_blank" rel="noopener" style="color:#1a73e8;font-weight:700">🧭 Googleマップでルート</a></div>`);
+    mapMarkers.push(marker);
+    bounds.push([pos.lat,pos.lng]);
+  });
+
+  if(userPos){
+    const uIcon = L.divIcon({
+      html: `<div style="width:14px;height:14px;border-radius:50%;background:#39d353;border:3px solid #fff;box-shadow:0 0 6px rgba(57,211,83,.8)"></div>`,
+      className:'', iconSize:[14,14], iconAnchor:[7,7]
+    });
+    L.marker([userPos.lat,userPos.lng], {icon:uIcon}).addTo(leafMap).bindPopup("現在地");
+    bounds.push([userPos.lat,userPos.lng]);
+  }
+
+  if(bounds.length) leafMap.fitBounds(bounds, {padding:[40,40]});
+}
+
+function loadAll(force){
+  document.getElementById("hdr-sub").textContent = "読み込み中…";
+  Promise.all([ loadCoords(), fetchCSV(MEMO_CSV) ]).then(([_, rows])=>{
+    ALL_GROUPS = buildGroups(rows);
+    document.getElementById("hdr-sub").textContent = ALL_GROUPS.length + "件の羽田空港行き実績";
+    render();
+    if(currentTab==="map" && leafMap) renderMap();
+  }).catch(e=>{
+    document.getElementById("view-list").innerHTML =
+      `<div class="empty"><span>⚠️</span><p>読み込みエラー：${e.message}</p></div>`;
+    document.getElementById("hdr-sub").textContent = "読み込みエラー";
+  });
+}
+
+loadAll();
+</script>
+</body>
+</html>
