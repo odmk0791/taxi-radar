@@ -70,22 +70,25 @@ async function run(){
     var i1d=idx(h1,'日付'),i1t=idx(h1,'TAXI'),i1w=idx(h1,'曜'),i1sh=idx(h1,'出番');
 
     /* J勤務・プレタク除外の日 → 曜日 */
+    var i1e=idx(h1,'営収');
     var meta={};
     a1.slice(1).forEach(function(r){
       if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
       if(String(r[i1sh]||'').trim()!=='J')return;
       var d=normDate(r[i1d]);if(!d)return;
-      meta[d]=String(r[i1w]||'').trim();
+      meta[d]={dow:String(r[i1w]||'').trim(),eikyu:toN(r[i1e])};
     });
 
     /* 日報②：22〜28時(1320〜1680分)の乗車のみ、日月火別に乗車地を集計 */
     var i2on=idx(h2,'乗車時間'),i2ew=idx(h2,'乗車地:市区'),i2en=idx(h2,'乗車地:地名'),i2f=idx(h2,'料金'),i2sk=idx(h2,'サンキュー'),i2st=idx(h2,'ステータス');
     /* dow -> { ward: {sum,cnt}, town: {sum,cnt,ward} } + 日数カウント用 dset */
-    var A={'日':{ward:{},town:{},dset:{}},'月':{ward:{},town:{},dset:{}},'火':{ward:{},town:{},dset:{}}};
+    function mk(){return {'日':{ward:{},town:{},dset:{}},'月':{ward:{},town:{},dset:{}},'火':{ward:{},town:{},dset:{}}};}
+    var A=mk(),AH=mk(); /* A=全日 AH=10万以上の日 */
     a2.slice(1).forEach(function(r){
       var sk=String(r[i2sk]||'').trim();
       if(sk==='プレタク'||sk==='プレタクP')return;
-      var d=normDate(r[0]);var dow=meta[d];
+      var d=normDate(r[0]);var mt=meta[d];
+      var dow=mt?mt.dow:null;
       if(!dow||!A[dow])return;
       var on=toMin(r[i2on]);if(on===null)return;
       if(on<960)on+=1440;
@@ -94,20 +97,27 @@ async function run(){
       var w=String(r[i2ew]||'').trim(),nm=String(r[i2en]||'').trim();
       if(!w)return;
       var full=w+nm;var town=townLevel(full)||w;
-      var g=A[dow];
-      if(!g.ward[w])g.ward[w]={sum:0,cnt:0,dset:{}};
-      g.ward[w].sum+=f;g.ward[w].cnt++;g.ward[w].dset[d]=1;
-      if(!g.town[town])g.town[town]={sum:0,cnt:0,dset:{}};
-      g.town[town].sum+=f;g.town[town].cnt++;g.town[town].dset[d]=1;
-      g.dset[d]=1;
+      function addTo(g){
+        if(!g.ward[w])g.ward[w]={sum:0,cnt:0,dset:{}};
+        g.ward[w].sum+=f;g.ward[w].cnt++;g.ward[w].dset[d]=1;
+        if(!g.town[town])g.town[town]={sum:0,cnt:0,dset:{}};
+        g.town[town].sum+=f;g.town[town].cnt++;g.town[town].dset[d]=1;
+        g.dset[d]=1;
+      }
+      addTo(A[dow]);
+      if(mt.eikyu>=100000)addTo(AH[dow]);
     });
-    G.A=A;
+    G.A=A;G.AH=AH;G.mode='hi';
 
     document.getElementById('tabs').innerHTML=
       '<button class="tab on" style="background:#f472b6" onclick="sw(\'日\',this)">日曜</button>'+
       '<button class="tab" style="background:#f87171" onclick="sw(\'月\',this)">月曜</button>'+
       '<button class="tab" style="background:#fb923c" onclick="sw(\'火\',this)">火曜</button>';
     document.getElementById('panels').innerHTML=
+      '<div style="display:flex;gap:8px;margin-bottom:12px">'+
+      '<button class="modebtn" style="flex:1;padding:10px;border-radius:10px;border:1px solid #4ade80;background:#4ade8018;color:#4ade80;font-weight:800;font-size:13px;font-family:inherit;cursor:pointer;opacity:1" onclick="setMode(\'hi\',this)">💰 10万以上の日</button>'+
+      '<button class="modebtn" style="flex:1;padding:10px;border-radius:10px;border:1px solid #64748b;background:#16162600;color:#94a3b8;font-weight:800;font-size:13px;font-family:inherit;cursor:pointer;opacity:.45" onclick="setMode(\'all\',this)">全日</button>'+
+      '</div>'+
       '<div class="panel on" id="p-日"></div><div class="panel" id="p-月"></div><div class="panel" id="p-火"></div>';
     ['日','月','火'].forEach(render);
 
@@ -120,8 +130,9 @@ async function run(){
   }
 }
 
+function setMode(m,btn){G.mode=m;document.querySelectorAll('.modebtn').forEach(function(b){b.style.opacity=.45;});btn.style.opacity=1;['日','月','火'].forEach(render);}
 function render(dow){
-  var g=G.A[dow];
+  var g=(G.mode==='hi'?G.AH:G.A)[dow];
   var dayN=Object.keys(g.dset).length;
   var col=dow==='日'?'#f472b6':dow==='月'?'#f87171':'#fb923c';
 
@@ -135,7 +146,7 @@ function render(dow){
   }).filter(function(x){return x.cnt>=5;}).sort(function(a,b){return b.sum-a.sum;});
 
   var h='<div class="card" style="border-color:'+col+'44;background:'+col+'08">';
-  h+='<div class="card-ttl" style="color:'+col+'">🌙 '+dow+'曜 22〜28時（'+dayN+'営業日の実績）</div>';
+  h+='<div class="card-ttl" style="color:'+col+'">🌙 '+dow+'曜 22〜28時 '+(G.mode==='hi'?'<span style="color:#4ade80">【10万以上の日だけ】</span>':'【全日】')+'（'+dayN+'営業日）</div>';
   h+='<p class="note">この時間帯に乗車した場所ごとの<strong style="color:'+col+'">総売上</strong>。単価でなく合計。件数と「出現日数（何日の営業で乗車があったか）」も表示。出現日数が多いほど再現性が高い。</p></div>';
 
   h+='<div class="card"><div class="card-ttl">📍 区レベル 総売上ランキング</div>';
