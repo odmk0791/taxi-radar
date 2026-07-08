@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>日月火 22〜28時 稼げた乗車エリア</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#2a0a3a,#401035);border-bottom:1px solid #f472b655;padding:18px 16px 14px}
+.sub{font-size:10px;color:#f472b6;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:17px;font-weight:800}
+.dscr{font-size:11px;color:#475569;margin-top:3px}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabs{display:flex;gap:5px;padding:0 14px 12px;overflow-x:auto;scrollbar-width:none;margin-top:14px}
+.tab{padding:8px 14px;border-radius:20px;border:none;color:#fff;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap;font-family:inherit;flex-shrink:0;opacity:.55}
+.tab.on{opacity:1}
+.panel{padding:0 14px;display:none}
+.panel.on{display:block}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin-bottom:12px}
+.card-ttl{font-size:12px;font-weight:700;margin-bottom:10px}
+.note{font-size:11px;color:#94a3b8;line-height:1.7}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:#475569;padding:6px 3px;border-bottom:1px solid #1e2d40;font-weight:600;font-size:10px}
+td{padding:7px 3px;border-bottom:1px solid #0d1220}
+.bwrap{height:5px;background:#151e30;border-radius:3px;overflow:hidden;margin-top:3px}
+.binner{height:100%;border-radius:3px}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Night Earning Areas</div>
+  <h1>🌙 日月火 22〜28時 稼げた乗車エリア</h1>
+  <div class="dscr">単価でなく総額 / 繁華街バイアスなし / 過去全実績</div>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="dashboard" style="display:none">
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+</div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+
+function csvArr(text){var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});function sp(line){var c=[],cur='',q=false;for(var i=0;i<line.length;i++){var ch=line[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else{cur+=ch;}}c.push(cur.trim());return c;}return lines.map(sp);}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function toMin(t){var m=String(t||'').match(/^(\d{1,2}):(\d{2})/);if(!m)return null;return +m[1]*60+ +m[2];}
+function townLevel(full){return String(full||'').replace(/[一二三四五六七八九十〇0-9]+丁目.*$/,'').replace(/[0-9]+(-[0-9]+)*$/,'').replace(/[0-9]+番.*$/,'').trim();}
+
+var G={};
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 取得中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  document.getElementById('dashboard').style.display='none';
+  try{
+    var t1=await (await fetch(U1)).text();
+    var t2=await (await fetch(U2)).text();
+    document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 集計中...';
+    var a1=csvArr(t1),a2=csvArr(t2),h1=a1[0],h2=a2[0];
+    function idx(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+    var i1d=idx(h1,'日付'),i1t=idx(h1,'TAXI'),i1w=idx(h1,'曜'),i1sh=idx(h1,'出番');
+
+    /* J勤務・プレタク除外の日 → 曜日 */
+    var meta={};
+    a1.slice(1).forEach(function(r){
+      if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
+      if(String(r[i1sh]||'').trim()!=='J')return;
+      var d=normDate(r[i1d]);if(!d)return;
+      meta[d]=String(r[i1w]||'').trim();
+    });
+
+    /* 日報②：22〜28時(1320〜1680分)の乗車のみ、日月火別に乗車地を集計 */
+    var i2on=idx(h2,'乗車時間'),i2ew=idx(h2,'乗車地:市区'),i2en=idx(h2,'乗車地:地名'),i2f=idx(h2,'料金'),i2sk=idx(h2,'サンキュー'),i2st=idx(h2,'ステータス');
+    /* dow -> { ward: {sum,cnt}, town: {sum,cnt,ward} } + 日数カウント用 dset */
+    var A={'日':{ward:{},town:{},dset:{}},'月':{ward:{},town:{},dset:{}},'火':{ward:{},town:{},dset:{}}};
+    a2.slice(1).forEach(function(r){
+      var sk=String(r[i2sk]||'').trim();
+      if(sk==='プレタク'||sk==='プレタクP')return;
+      var d=normDate(r[0]);var dow=meta[d];
+      if(!dow||!A[dow])return;
+      var on=toMin(r[i2on]);if(on===null)return;
+      if(on<960)on+=1440;
+      if(on<1320||on>=1680)return; /* 22:00〜27:59 */
+      var f=toN(r[i2f]);if(f<=0)return;
+      var w=String(r[i2ew]||'').trim(),nm=String(r[i2en]||'').trim();
+      if(!w)return;
+      var full=w+nm;var town=townLevel(full)||w;
+      var g=A[dow];
+      if(!g.ward[w])g.ward[w]={sum:0,cnt:0,dset:{}};
+      g.ward[w].sum+=f;g.ward[w].cnt++;g.ward[w].dset[d]=1;
+      if(!g.town[town])g.town[town]={sum:0,cnt:0,dset:{}};
+      g.town[town].sum+=f;g.town[town].cnt++;g.town[town].dset[d]=1;
+      g.dset[d]=1;
+    });
+    G.A=A;
+
+    document.getElementById('tabs').innerHTML=
+      '<button class="tab on" style="background:#f472b6" onclick="sw(\'日\',this)">日曜</button>'+
+      '<button class="tab" style="background:#f87171" onclick="sw(\'月\',this)">月曜</button>'+
+      '<button class="tab" style="background:#fb923c" onclick="sw(\'火\',this)">火曜</button>';
+    document.getElementById('panels').innerHTML=
+      '<div class="panel on" id="p-日"></div><div class="panel" id="p-月"></div><div class="panel" id="p-火"></div>';
+    ['日','月','火'].forEach(render);
+
+    document.getElementById('msgbox').style.display='none';
+    document.getElementById('dashboard').style.display='';
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e&&e.stack||e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+
+function render(dow){
+  var g=G.A[dow];
+  var dayN=Object.keys(g.dset).length;
+  var col=dow==='日'?'#f472b6':dow==='月'?'#f87171':'#fb923c';
+
+  /* 区ランキング（1日あたり売上=総額÷営業日数で公平比較） */
+  var wards=Object.entries(g.ward).map(function(e){
+    return {name:e[0],sum:e[1].sum,cnt:e[1].cnt,days:Object.keys(e[1].dset).length,perDay:e[1].sum/dayN};
+  }).sort(function(a,b){return b.sum-a.sum;});
+
+  var towns=Object.entries(g.town).map(function(e){
+    return {name:e[0],sum:e[1].sum,cnt:e[1].cnt,days:Object.keys(e[1].dset).length};
+  }).filter(function(x){return x.cnt>=5;}).sort(function(a,b){return b.sum-a.sum;});
+
+  var h='<div class="card" style="border-color:'+col+'44;background:'+col+'08">';
+  h+='<div class="card-ttl" style="color:'+col+'">🌙 '+dow+'曜 22〜28時（'+dayN+'営業日の実績）</div>';
+  h+='<p class="note">この時間帯に乗車した場所ごとの<strong style="color:'+col+'">総売上</strong>。単価でなく合計。件数と「出現日数（何日の営業で乗車があったか）」も表示。出現日数が多いほど再現性が高い。</p></div>';
+
+  h+='<div class="card"><div class="card-ttl">📍 区レベル 総売上ランキング</div>';
+  h+='<table><thead><tr><th>区</th><th style="text-align:right">総売上</th><th style="text-align:right">件数</th><th style="text-align:right">出現日</th><th style="text-align:right">単価</th></tr></thead><tbody>';
+  var mx=wards.length?wards[0].sum:1;
+  wards.slice(0,12).forEach(function(x,i){
+    var hot=i<3;
+    h+='<tr><td style="color:'+(hot?col:'#e2e8f0')+';font-weight:'+(hot?700:400)+'">'+(i+1)+'. '+es(x.name)+'<div class="bwrap"><div class="binner" style="width:'+(x.sum/mx*100)+'%;background:'+col+'"></div></div></td>';
+    h+='<td style="text-align:right;color:'+col+';font-weight:700">¥'+Math.round(x.sum/1000)+'k</td>';
+    h+='<td style="text-align:right;color:#60a5fa">'+x.cnt+'</td>';
+    h+='<td style="text-align:right;color:#94a3b8">'+x.days+'/'+dayN+'</td>';
+    h+='<td style="text-align:right;color:#64748b">¥'+Math.round(x.sum/x.cnt).toLocaleString()+'</td></tr>';
+  });
+  h+='</tbody></table></div>';
+
+  h+='<div class="card"><div class="card-ttl">🏘️ 町名レベル 総売上ランキング（5件以上）</div>';
+  h+='<table><thead><tr><th>町名</th><th style="text-align:right">総売上</th><th style="text-align:right">件数</th><th style="text-align:right">出現日</th></tr></thead><tbody>';
+  towns.slice(0,20).forEach(function(x,i){
+    var hot=i<5;
+    h+='<tr><td style="color:'+(hot?col:'#e2e8f0')+';font-weight:'+(hot?700:400)+'">'+(i+1)+'. '+es(x.name)+'</td>';
+    h+='<td style="text-align:right;color:'+col+';font-weight:600">¥'+Math.round(x.sum/1000)+'k</td>';
+    h+='<td style="text-align:right;color:#60a5fa">'+x.cnt+'</td>';
+    h+='<td style="text-align:right;color:#94a3b8">'+x.days+'</td></tr>';
+  });
+  h+='</tbody></table>';
+  h+='<p class="note" style="margin-top:8px">💡 出現日数が多い町名＝多くの営業日で実際に乗車があった＝行けば拾える再現性の高い場所。総額が高くても出現日が少ない場所は「たまたまの大口」の可能性。</p></div>';
+
+  document.getElementById('p-'+dow).innerHTML=h;
+}
+
+function sw(id,btn){document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});document.getElementById('p-'+id).classList.add('on');}
+run();
+</script>
+</body></html>
