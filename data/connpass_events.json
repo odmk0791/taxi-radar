@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-10T04:25:54.919211+09:00",
+  "fetched_at": "2026-07-10T06:15:19.735534+09:00",
   "date": "20260710",
   "count": 16,
   "events": [
@@ -35,37 +35,6 @@
       "updated_at": "2026-07-09T15:07:57+09:00"
     },
     {
-      "id": 397834,
-      "title": "LINE DC Generative AI Meetup #8",
-      "catch": "高度なAIサービス開発からプロンプト講座まで！",
-      "description": "<h2>イベント概要</h2>\n<p>-- 書籍『MastraによるAIエージェント開発・運用［実践入門］』発売記念！著者陣と生成AIを語り尽くす一夜 --</p>\n<p>今回のGenerative AI Meetup #8は、技術評論社より2026年7月に発売される書籍『MastraによるAIエージェント開発・運用［実践入門］』の<strong>発売記念イベント</strong>として開催します！</p>\n<p>メインセッションには、本書の著者三名が登壇。\nMastraを使ったAIエージェント開発・運用のリアルな知見や、執筆の裏側まで、たっぷりお話しいただきます。</p>\n<p>その後のLTセッションでは、参加者のみなさんと生成AIの可能性や課題について語り合い、新たなアイデアや人脈を広げる交流の場にしましょう！</p>\n<p><strong>📖 書籍について</strong></p>\n<p>『MastraによるAIエージェント開発・運用［実践入門］』（技術評論社／464ページ）は、<strong>Mastraについて体系的に学べる日本初の入門書</strong>です。</p>\n<p>TypeScriptで記述でき、既存プロジェクトへの組み込みが容易なMastraを使って、AIエージェント開発・運用を一気通貫で学べます。RAG、Human-in-the-Loopを組み込んだDeep Research、画像生成アプリという3つの充実したハンズオンを通して、ガードレール・メモリ・オブザーバビリティ・AIエージェント評価・デプロイまで幅広くカバー。経験豊富な著者陣の実践的な知恵が詰まった一冊です。</p>\n<p>▶️ 書籍詳細：<a href=\"https://www.amazon.co.jp/dp/4297157667\" rel=\"nofollow\">https://www.amazon.co.jp/dp/4297157667</a></p>\n<h2>📣 公募LT枠も大募集！</h2>\n<p>LLMやプロンプト、生成AIプラットフォーム等に関する知見やアイデアをお持ちの方、ぜひお気軽にLT登壇にチャレンジください。運営が親切にサポート致します。</p>\n<h2>開催概要</h2>\n<ul>\n<li>日時：2026年7月10日（金）19:30 - 21:30（予定）</li>\n<li>会場：MOSH株式会社 ＋ オンライン（ハイブリッド開催）</li>\n<li>参加費：無料</li>\n</ul>\n<p>※ 20:00以降はビルのセキュリティ上、入館ができません。ご了承ください。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: center;\">内容</th>\n<th style=\"text-align: center;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">19:00 -</td>\n<td style=\"text-align: center;\">開場</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30 - 19:40</td>\n<td style=\"text-align: center;\">オープニング</td>\n<td style=\"text-align: center;\">山本さん</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:40 - 20:20</td>\n<td style=\"text-align: center;\">メインセッション</td>\n<td style=\"text-align: center;\">aki.tsさん<br>伊野瀬さん<br>みのるんさん</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:20 - 20:25</td>\n<td style=\"text-align: center;\">ローカルLLMとLINE Botの組み合わせ その3</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/youtoy\" rel=\"nofollow\">you</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:25 - 20:30</td>\n<td style=\"text-align: center;\">見守りエージェントを作ってみた（ローカルLLM+Hermes Agent）</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/HappySamurai294\" rel=\"nofollow\">コロッケそば</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:30 - 20:35</td>\n<td style=\"text-align: center;\">LT枠3</td>\n<td style=\"text-align: center;\">未定</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:35 - 20:40</td>\n<td style=\"text-align: center;\">クロージング</td>\n<td style=\"text-align: center;\">山本さん</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">~ 21:20</td>\n<td style=\"text-align: center;\">懇親会</td>\n<td style=\"text-align: center;\">全員</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:30</td>\n<td style=\"text-align: center;\">完全撤収</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは変更の可能性がございます</p>\n<h2>参加URL</h2>\n<p>Youtube Liveで配信します。\n「参加者への情報」にURLを掲載します！</p>\n<div style=\"background-color:#27BA64; color:#ffffff; padding:10px; font-size:15pt; text-align: center;\"><strong>LT大募集中！</strong></div>\n<p><br></p>\n<h2>司会</h2>\n<h3>山本一将｜焚き火を愛するエンジニア <a href=\"https://x.com/kyamamoto9120\" rel=\"nofollow\">@kyamamoto9120</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1521284561040150528/O_RFOjxz_400x400.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>MOSH株式会社。2025年の参画以来、開発組織の強化や採用を主導するEM領域と、技術広報を兼務。<br>\nキャリアのスタートは鉄道システム開発。その後、SNSマーケティングツールの開発を経て現職に至る。<br>\n個人活動としてコンピュータ将棋開発（2015年世界9位）や、LINE API Expert（2024年〜）としても活動中。</p>\n</blockquote>\n<h2>登壇者</h2>\n<h3>aki.ts🦔 <a href=\"https://x.com/HedgehogPython\" rel=\"nofollow\">@HedgehogPython</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1821774596514738176/h9K3HlYs_400x400.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>デザイン苦手、typescript,python 使い(´⊙ω⊙`)エンジニアやプログラミング学習してる方基本フォロー返します #React #python #Nextjs #typescript #Go #AWS #Bedrock #CBs #LINE #キミガタリ #Mastra\n<a href=\"https://github.com/huanshenyi\" rel=\"nofollow\">https://github.com/huanshenyi</a></p>\n</blockquote>\n<h3>伊野瀬 出 <a href=\"https://x.com/i_inose0304\" rel=\"nofollow\">@i_inose0304</a></h3>\n<p><img src=\"https://i.gyazo.com/6e9d2d97e0e7426b859d6b24afcb15ff.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>KDDIアジャイル開発センター株式会社 ソフトウェアエンジニア。2025年新卒入社。生成AIを組み込んだプロダクト開発や社内向けデータ分析基盤構築・運用保守に従事。大学時代はデータサイエンスを専攻しており、武藤佳恭教授の元で医学に関するデータ分析の研究に没頭。趣味は格闘技で、観戦だけでなくプロ格闘家としても活躍するため仕事と練習の両立に奮闘中。愛犬「ゆず」をSNS等でよく発信している。</p>\n</blockquote>\n<h3>御田 稔（みのるん） <a href=\"https://x.com/minorun365\" rel=\"nofollow\">@minorun365</a></h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\" width=\"200\"><br></p>\n<blockquote>\n<p>KDDIアジャイル開発センター株式会社 テックエバンジェリスト / KDDI株式会社 シニアエキスパート。クラウドやAIの分野を中心に、技術コンサルティングやプリセールス、トレーニング講師などに従事。AWS社グローバルより、日本初のAWS AI Hero に認定。</p>\n</blockquote>\n<p>著書：</p>\n<ul>\n<li>『Amazon Bedrock 生成AIアプリ開発入門［AWS深掘りガイド］』（SBクリエイティブ）</li>\n<li>『やさしいMCP入門』（秀和システム新社）</li>\n<li>『AIエージェント開発/運用入門［生成AI深掘りガイド］』（SBクリエイティブ）</li>\n<li>『［入門］LLMアプリ開発』（技術評論社）</li>\n<li>『AgentCore実践入門』（SBクリエイティブ）</li>\n</ul>\n<h1>LT 登壇者</h1>\n<h3><a href=\"https://twitter.com/youtoy\" rel=\"nofollow\">you</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/512100374816124929/Scsxt-2G_400x400.jpeg\" width=\"200\"><br>\nポストは技術系多め。■個人活動: IT系イベント主催・運営、CoderDojoメンター、Maker、技術記事・技術書執筆／■興味あり: ガジェット、JavaScript、ビジュアルプログラミング、AI・機械学習、2D・3Dアート、IoT、マジック・バルーンアート等。長年、主に通信業界で勤務（※ ツイートは個人的なもの）</p>\n<p><a href=\"https://qiita.com/youtoy\" rel=\"nofollow\">https://qiita.com/youtoy</a></p>\n<h3><a href=\"https://twitter.com/HappySamurai294\" rel=\"nofollow\">コロッケそば</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1991570323687563264/kEtuAJw0_400x400.jpg\" width=\"200\"><br>\n「コロッケそば」のコロッケはツユに負けない\"具＆コロモ\"硬めに限る。 67歳 ロボホン、コロッケそば、フィジカルコンピューティング、生成AI hack through the jungle. <a href=\"https://t.co/e5BuM3BUct\" rel=\"nofollow\">https://t.co/e5BuM3BUct</a></p>\n<p><a href=\"https://note.com/hs294\" rel=\"nofollow\">https://note.com/hs294</a></p>\n<h1><a href=\"https://linedevelopercommunity.connpass.com/\" rel=\"nofollow\">LINE Developer Community</a>とは</h1>\n<p>LINE Platformでものづくりするエンジニア・クリエイターによるコミュニティです。LINE社外の有志メンバーを中心に運営しています。</p>\n<h2>コミュニティ行動規範（Code of Conduct)について</h2>\n<p>本コミュニティは参加する全ての方が不快な思いをすることなく、楽しんでいただくことを目的としております。\nそのために、以下のような行為は禁止されております。</p>\n<ul>\n<li>ヘイトスピーチ</li>\n<li>性的な言葉や画像、性別に言及したり、性別により受け取り方の変わる言葉や画像の使用</li>\n<li>侮辱や軽蔑的、中傷や他者を貶めるような発言</li>\n<li>他者のプライバシーや私的な情報の無許可での公開</li>\n<li>その他多様性への配慮を著しく欠く発言や行動</li>\n<li>食事のみを目的とした参加</li>\n</ul>\n<p>運営サイドで参加にふさわしくないと判断させて頂いた方は、イベント中ご退席をお願いすることがございます。</p>\n<p>ハラスメントを受けた、と感じた方は以下までご連絡下さい。<br>\n <a href=\"https://twitter.com/linedc_jp\" rel=\"nofollow\">X @linedc_jp</a><br>\n<a href=\"mailto:linedevcom@gmail.com\">E-mail</a><br></p>",
-      "url": "https://linedevelopercommunity.connpass.com/event/397834/",
-      "image_url": "https://media.connpass.com/thumbs/03/09/0309b97d691dd672ff77c62b58e0df8e.png",
-      "hash_tag": "LINEDC",
-      "started_at": "2026-07-10T19:30:00+09:00",
-      "ended_at": "2026-07-10T21:30:00+09:00",
-      "published_at": "2026-06-24T08:08:43+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 7348,
-        "subdomain": "linedevelopercommunity",
-        "title": "LINE Developer Community",
-        "url": "https://linedevelopercommunity.connpass.com/"
-      },
-      "address": "東京都渋谷区桜丘町9番8号 KN渋谷3 4階",
-      "place": "MOSH株式会社",
-      "lat": "35.654901200000",
-      "lon": "139.702519400000",
-      "owner_id": 485331,
-      "owner_nickname": "linedc_jp",
-      "owner_display_name": "linedc_jp",
-      "accepted": 28,
-      "waiting": 0,
-      "updated_at": "2026-07-01T14:21:35+09:00"
-    },
-    {
       "id": 396261,
       "title": "デザイナー染み出汁Night",
       "catch": "事業とプロダクトに染み出すデザイナー交流会",
@@ -93,8 +62,39 @@
       "owner_nickname": "SmartBank",
       "owner_display_name": "SmartBank",
       "accepted": 35,
-      "waiting": 18,
+      "waiting": 17,
       "updated_at": "2026-07-08T14:11:51+09:00"
+    },
+    {
+      "id": 397834,
+      "title": "LINE DC Generative AI Meetup #8",
+      "catch": "高度なAIサービス開発からプロンプト講座まで！",
+      "description": "<h2>イベント概要</h2>\n<p>-- 書籍『MastraによるAIエージェント開発・運用［実践入門］』発売記念！著者陣と生成AIを語り尽くす一夜 --</p>\n<p>今回のGenerative AI Meetup #8は、技術評論社より2026年7月に発売される書籍『MastraによるAIエージェント開発・運用［実践入門］』の<strong>発売記念イベント</strong>として開催します！</p>\n<p>メインセッションには、本書の著者三名が登壇。\nMastraを使ったAIエージェント開発・運用のリアルな知見や、執筆の裏側まで、たっぷりお話しいただきます。</p>\n<p>その後のLTセッションでは、参加者のみなさんと生成AIの可能性や課題について語り合い、新たなアイデアや人脈を広げる交流の場にしましょう！</p>\n<p><strong>📖 書籍について</strong></p>\n<p>『MastraによるAIエージェント開発・運用［実践入門］』（技術評論社／464ページ）は、<strong>Mastraについて体系的に学べる日本初の入門書</strong>です。</p>\n<p>TypeScriptで記述でき、既存プロジェクトへの組み込みが容易なMastraを使って、AIエージェント開発・運用を一気通貫で学べます。RAG、Human-in-the-Loopを組み込んだDeep Research、画像生成アプリという3つの充実したハンズオンを通して、ガードレール・メモリ・オブザーバビリティ・AIエージェント評価・デプロイまで幅広くカバー。経験豊富な著者陣の実践的な知恵が詰まった一冊です。</p>\n<p>▶️ 書籍詳細：<a href=\"https://www.amazon.co.jp/dp/4297157667\" rel=\"nofollow\">https://www.amazon.co.jp/dp/4297157667</a></p>\n<h2>📣 公募LT枠も大募集！</h2>\n<p>LLMやプロンプト、生成AIプラットフォーム等に関する知見やアイデアをお持ちの方、ぜひお気軽にLT登壇にチャレンジください。運営が親切にサポート致します。</p>\n<h2>開催概要</h2>\n<ul>\n<li>日時：2026年7月10日（金）19:30 - 21:30（予定）</li>\n<li>会場：MOSH株式会社 ＋ オンライン（ハイブリッド開催）</li>\n<li>参加費：無料</li>\n</ul>\n<p>※ 20:00以降はビルのセキュリティ上、入館ができません。ご了承ください。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: center;\">内容</th>\n<th style=\"text-align: center;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">19:00 -</td>\n<td style=\"text-align: center;\">開場</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30 - 19:40</td>\n<td style=\"text-align: center;\">オープニング</td>\n<td style=\"text-align: center;\">山本さん</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:40 - 20:20</td>\n<td style=\"text-align: center;\">メインセッション</td>\n<td style=\"text-align: center;\">aki.tsさん<br>伊野瀬さん<br>みのるんさん</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:20 - 20:25</td>\n<td style=\"text-align: center;\">ローカルLLMとLINE Botの組み合わせ その3</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/youtoy\" rel=\"nofollow\">you</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:25 - 20:30</td>\n<td style=\"text-align: center;\">見守りエージェントを作ってみた（ローカルLLM+Hermes Agent）</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/HappySamurai294\" rel=\"nofollow\">コロッケそば</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:30 - 20:35</td>\n<td style=\"text-align: center;\">LT枠3</td>\n<td style=\"text-align: center;\">未定</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:35 - 20:40</td>\n<td style=\"text-align: center;\">クロージング</td>\n<td style=\"text-align: center;\">山本さん</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">~ 21:20</td>\n<td style=\"text-align: center;\">懇親会</td>\n<td style=\"text-align: center;\">全員</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:30</td>\n<td style=\"text-align: center;\">完全撤収</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは変更の可能性がございます</p>\n<h2>参加URL</h2>\n<p>Youtube Liveで配信します。\n「参加者への情報」にURLを掲載します！</p>\n<div style=\"background-color:#27BA64; color:#ffffff; padding:10px; font-size:15pt; text-align: center;\"><strong>LT大募集中！</strong></div>\n<p><br></p>\n<h2>司会</h2>\n<h3>山本一将｜焚き火を愛するエンジニア <a href=\"https://x.com/kyamamoto9120\" rel=\"nofollow\">@kyamamoto9120</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1521284561040150528/O_RFOjxz_400x400.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>MOSH株式会社。2025年の参画以来、開発組織の強化や採用を主導するEM領域と、技術広報を兼務。<br>\nキャリアのスタートは鉄道システム開発。その後、SNSマーケティングツールの開発を経て現職に至る。<br>\n個人活動としてコンピュータ将棋開発（2015年世界9位）や、LINE API Expert（2024年〜）としても活動中。</p>\n</blockquote>\n<h2>登壇者</h2>\n<h3>aki.ts🦔 <a href=\"https://x.com/HedgehogPython\" rel=\"nofollow\">@HedgehogPython</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1821774596514738176/h9K3HlYs_400x400.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>デザイン苦手、typescript,python 使い(´⊙ω⊙`)エンジニアやプログラミング学習してる方基本フォロー返します #React #python #Nextjs #typescript #Go #AWS #Bedrock #CBs #LINE #キミガタリ #Mastra\n<a href=\"https://github.com/huanshenyi\" rel=\"nofollow\">https://github.com/huanshenyi</a></p>\n</blockquote>\n<h3>伊野瀬 出 <a href=\"https://x.com/i_inose0304\" rel=\"nofollow\">@i_inose0304</a></h3>\n<p><img src=\"https://i.gyazo.com/6e9d2d97e0e7426b859d6b24afcb15ff.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>KDDIアジャイル開発センター株式会社 ソフトウェアエンジニア。2025年新卒入社。生成AIを組み込んだプロダクト開発や社内向けデータ分析基盤構築・運用保守に従事。大学時代はデータサイエンスを専攻しており、武藤佳恭教授の元で医学に関するデータ分析の研究に没頭。趣味は格闘技で、観戦だけでなくプロ格闘家としても活躍するため仕事と練習の両立に奮闘中。愛犬「ゆず」をSNS等でよく発信している。</p>\n</blockquote>\n<h3>御田 稔（みのるん） <a href=\"https://x.com/minorun365\" rel=\"nofollow\">@minorun365</a></h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\" width=\"200\"><br></p>\n<blockquote>\n<p>KDDIアジャイル開発センター株式会社 テックエバンジェリスト / KDDI株式会社 シニアエキスパート。クラウドやAIの分野を中心に、技術コンサルティングやプリセールス、トレーニング講師などに従事。AWS社グローバルより、日本初のAWS AI Hero に認定。</p>\n</blockquote>\n<p>著書：</p>\n<ul>\n<li>『Amazon Bedrock 生成AIアプリ開発入門［AWS深掘りガイド］』（SBクリエイティブ）</li>\n<li>『やさしいMCP入門』（秀和システム新社）</li>\n<li>『AIエージェント開発/運用入門［生成AI深掘りガイド］』（SBクリエイティブ）</li>\n<li>『［入門］LLMアプリ開発』（技術評論社）</li>\n<li>『AgentCore実践入門』（SBクリエイティブ）</li>\n</ul>\n<h1>LT 登壇者</h1>\n<h3><a href=\"https://twitter.com/youtoy\" rel=\"nofollow\">you</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/512100374816124929/Scsxt-2G_400x400.jpeg\" width=\"200\"><br>\nポストは技術系多め。■個人活動: IT系イベント主催・運営、CoderDojoメンター、Maker、技術記事・技術書執筆／■興味あり: ガジェット、JavaScript、ビジュアルプログラミング、AI・機械学習、2D・3Dアート、IoT、マジック・バルーンアート等。長年、主に通信業界で勤務（※ ツイートは個人的なもの）</p>\n<p><a href=\"https://qiita.com/youtoy\" rel=\"nofollow\">https://qiita.com/youtoy</a></p>\n<h3><a href=\"https://twitter.com/HappySamurai294\" rel=\"nofollow\">コロッケそば</a></h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1991570323687563264/kEtuAJw0_400x400.jpg\" width=\"200\"><br>\n「コロッケそば」のコロッケはツユに負けない\"具＆コロモ\"硬めに限る。 67歳 ロボホン、コロッケそば、フィジカルコンピューティング、生成AI hack through the jungle. <a href=\"https://t.co/e5BuM3BUct\" rel=\"nofollow\">https://t.co/e5BuM3BUct</a></p>\n<p><a href=\"https://note.com/hs294\" rel=\"nofollow\">https://note.com/hs294</a></p>\n<h1><a href=\"https://linedevelopercommunity.connpass.com/\" rel=\"nofollow\">LINE Developer Community</a>とは</h1>\n<p>LINE Platformでものづくりするエンジニア・クリエイターによるコミュニティです。LINE社外の有志メンバーを中心に運営しています。</p>\n<h2>コミュニティ行動規範（Code of Conduct)について</h2>\n<p>本コミュニティは参加する全ての方が不快な思いをすることなく、楽しんでいただくことを目的としております。\nそのために、以下のような行為は禁止されております。</p>\n<ul>\n<li>ヘイトスピーチ</li>\n<li>性的な言葉や画像、性別に言及したり、性別により受け取り方の変わる言葉や画像の使用</li>\n<li>侮辱や軽蔑的、中傷や他者を貶めるような発言</li>\n<li>他者のプライバシーや私的な情報の無許可での公開</li>\n<li>その他多様性への配慮を著しく欠く発言や行動</li>\n<li>食事のみを目的とした参加</li>\n</ul>\n<p>運営サイドで参加にふさわしくないと判断させて頂いた方は、イベント中ご退席をお願いすることがございます。</p>\n<p>ハラスメントを受けた、と感じた方は以下までご連絡下さい。<br>\n <a href=\"https://twitter.com/linedc_jp\" rel=\"nofollow\">X @linedc_jp</a><br>\n<a href=\"mailto:linedevcom@gmail.com\">E-mail</a><br></p>",
+      "url": "https://linedevelopercommunity.connpass.com/event/397834/",
+      "image_url": "https://media.connpass.com/thumbs/03/09/0309b97d691dd672ff77c62b58e0df8e.png",
+      "hash_tag": "LINEDC",
+      "started_at": "2026-07-10T19:30:00+09:00",
+      "ended_at": "2026-07-10T21:30:00+09:00",
+      "published_at": "2026-06-24T08:08:43+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 7348,
+        "subdomain": "linedevelopercommunity",
+        "title": "LINE Developer Community",
+        "url": "https://linedevelopercommunity.connpass.com/"
+      },
+      "address": "東京都渋谷区桜丘町9番8号 KN渋谷3 4階",
+      "place": "MOSH株式会社",
+      "lat": "35.654901200000",
+      "lon": "139.702519400000",
+      "owner_id": 485331,
+      "owner_nickname": "linedc_jp",
+      "owner_display_name": "linedc_jp",
+      "accepted": 29,
+      "waiting": 0,
+      "updated_at": "2026-07-01T14:21:35+09:00"
     },
     {
       "id": 394449,
