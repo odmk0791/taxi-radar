@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-11T07:53:49.214521+09:00",
+  "fetched_at": "2026-07-11T08:52:39.189132+09:00",
   "date": "20260711",
   "count": 35,
   "events": [
@@ -63,7 +63,7 @@
       "owner_display_name": "ko_mo_san",
       "accepted": 1,
       "waiting": 0,
-      "updated_at": "2026-07-06T21:19:26+09:00"
+      "updated_at": "2026-07-11T08:08:32+09:00"
     },
     {
       "id": 397462,
@@ -123,7 +123,7 @@
       "owner_id": 25068,
       "owner_nickname": "masahiko_yokota",
       "owner_display_name": "myokota",
-      "accepted": 17,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-07-10T02:26:10+09:00"
     },
@@ -216,7 +216,7 @@
       "owner_id": 199220,
       "owner_nickname": "HirokazuOnomichi",
       "owner_display_name": "Micchy",
-      "accepted": 94,
+      "accepted": 96,
       "waiting": 0,
       "updated_at": "2026-07-10T23:44:38+09:00"
     },
@@ -433,68 +433,6 @@
       "updated_at": "2026-05-23T19:01:11+09:00"
     },
     {
-      "id": 397243,
-      "title": "もくもく＆LT会＠中野 #9",
-      "catch": "",
-      "description": "<h1>主催者からのメッセージ</h1>\n<p>主にWebエンジニア（BtoB / バックエンド多め）の技術スキルを持つエンジニアを中心とした、もくもく&amp;LT会を開催します。\n以下のような言語 / プラットフォームに詳しいエンジニアが参加しますが、特に言語やプラットフォームは限定いたしません。</p>\n<ul>\n<li>Azure</li>\n<li>AWS</li>\n<li>GitHub</li>\n<li>JavaScript</li>\n<li>C#</li>\n<li><a href=\"http://ASP.NET\" rel=\"nofollow\">ASP.NET</a></li>\n<li>Python</li>\n<li>PowerShell</li>\n<li>PostgreSQL</li>\n<li>SQL Server</li>\n<li>Windows Server</li>\n</ul>\n<p>最近は生成AIを利用した開発に関するトピック・LTが多めです。個人でプロダクト開発を行っているエンジニアも多数参加しています。</p>\n<h1>開催概要</h1>\n<ul>\n<li>日時：2026/7/11(土) 13:00～18:00（12:45受け付け開始）</li>\n<li>場所：東京都中野区中野2丁目30-5 中野アーバンビル Pleasanter Lounge 7F（JR中野駅 南口 徒歩2分）</li>\n<li>主催：Nakano Tech Lounge</li>\n</ul>\n<h1>参加費</h1>\n<p>無料</p>\n<h1>スケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">所要時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">担当者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:45</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">5分</td>\n<td style=\"text-align: left;\">会の説明</td>\n<td style=\"text-align: left;\">主催者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:05</td>\n<td style=\"text-align: left;\">15分</td>\n<td style=\"text-align: left;\">自己紹介&amp;今日やること</td>\n<td style=\"text-align: left;\">参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:20</td>\n<td style=\"text-align: left;\">200分</td>\n<td style=\"text-align: left;\">もくもく会</td>\n<td style=\"text-align: left;\">参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:40</td>\n<td style=\"text-align: left;\">40分</td>\n<td style=\"text-align: left;\">LT（やったこと等）</td>\n<td style=\"text-align: left;\">LT枠参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:20</td>\n<td style=\"text-align: left;\">40分</td>\n<td style=\"text-align: left;\">ネットワーキング</td>\n<td style=\"text-align: left;\">参加者（希望者のみ）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">閉会</td>\n<td style=\"text-align: left;\">主催者</td>\n</tr>\n</tbody>\n</table>\n<p>※LTではLT枠にお申し込みいただいた方に5分程度の発表をお願いしておりますので、ご準備の程よろしくお願いいたします。発表いただく内容は当日やった以外でも何でも構いません！  </p>\n<h1>対象者</h1>\n<ul>\n<li>Webエンジニアまたは志望者（経験問いません）</li>\n<li>個人でプロダクト開発を行っている方、または興味のある方</li>\n</ul>\n<h1>持ち物</h1>\n<ul>\n<li>作業用PC</li>\n<li>お名前が確認できるもの(名刺、学生証等)</li>\n</ul>\n<h1>飲食</h1>\n<p>可能です。ニオイの強いものは避けてください。</p>\n<h1>LINE オープンチャット</h1>\n<p>「Nakano Tech Lounge」のオープンチャットを作りました！\n下記URLより登録をお願いします。</p>\n<p><a href=\"https://line.me/ti/g2/Sjzh9WidzCp0GMpCNwFRtbvZxy5Oat2bSSQ7OQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default\" rel=\"nofollow\">https://line.me/ti/g2/Sjzh9WidzCp0GMpCNwFRtbvZxy5Oat2bSSQ7OQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default</a></p>\n<h1>アンチハラスメントポリシー</h1>\n<p>このグループではアンチハラスメントポリシーを定めています。誰もが安心して参加できるよう下記に抵触する可能性のある行為を行った場合には、会場からの退場およびグループへの出入り禁止とします。</p>\n<ul>\n<li>攻撃的なコメント(ジェンダー・性自認やジェンダー表現・性的指向・障碍・容貌・体型・人種・民族・年齢・宗教あるいは無宗教についてなど)</li>\n<li>脅迫、ストーキング、つきまとい</li>\n<li>いやがらせ目的の撮影や録音</li>\n<li>発表や他のイベントの継続的妨害</li>\n<li>不適切な身体的接触</li>\n<li>性的な画像の掲示などを含む不適切な情報の開示</li>\n<li>上記行為の推奨や擁護</li>\n<li>上記に限らず、当社がハラスメントとして判断する行為</li>\n</ul>\n<h1>ご参加いただく皆様へのお願い</h1>\n<p>当日の参加が出来なくなった場合、下記の「フィード」へ参加できない旨のコメントをしていただきますようお願いいたします。無断での不参加の場合、こちらから参加のキャンセルをさせていただく場合がございますので、予めご了承ください。</p>",
-      "url": "https://nakano-tech-lounge.connpass.com/event/397243/",
-      "image_url": "https://media.connpass.com/thumbs/67/d0/67d0a269ca76afe8d0ec0838bb89965f.png",
-      "hash_tag": "",
-      "started_at": "2026-07-11T13:00:00+09:00",
-      "ended_at": "2026-07-11T18:00:00+09:00",
-      "published_at": "2026-06-13T15:34:46+09:00",
-      "limit": 24,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16813,
-        "subdomain": "nakano-tech-lounge",
-        "title": "Nakano Tech Lounge",
-        "url": "https://nakano-tech-lounge.connpass.com/"
-      },
-      "address": "東京都中野区中野2-30-5 中野アーバンビル7F",
-      "place": "Pleasanter Lounge",
-      "lat": "35.704475200000",
-      "lon": "139.665657200000",
-      "owner_id": 68585,
-      "owner_nickname": "pierusan2010",
-      "owner_display_name": "pierusan2010",
-      "accepted": 12,
-      "waiting": 0,
-      "updated_at": "2026-06-13T15:34:46+09:00"
-    },
-    {
-      "id": 398093,
-      "title": "ゆる～いもくもく会（青山一丁目・乃木坂）",
-      "catch": "初参加、お一人様大歓迎！作業テーマ自由、読書だけでもOK、遅刻、途中退室OK、工作もできます。",
-      "description": "<h2>概要</h2>\n<p><br>\nもくもく会のあとは、かる〜く懇親会もあります。参加は自由です。</p>\n<h2>対象者</h2>\n<p>・何かできるようになって、自信をつけたい人</p>\n<p>・個人開発者</p>\n<p>・言語やフレームワークを学んで何かつくれるようになりたい人</p>\n<p>・フルスタックエンジニアになりたい人</p>\n<p>・Raspberry Piを買ったけど眠らせている人</p>\n<p>・電子工作をしてみたいけど何から初めていいかわからない人</p>\n<p>・３Dプリンターに興味がある人</p>\n<p>などなど、スキルレベルは問いません。\n目標に向かってのんびり進めていきましょう。</p>\n<h2>持ち物</h2>\n<p>PC</p>\n<p>数に限りはありますが、Raspberry Pi、Jetson Nanoを試したりすることもできます。また、３Dプリンターもあるので試すこともできます。（A1mini、X2D）</p>\n<h2>費用</h2>\n<p>¥1000</p>\n<p>現金もしくはpaypayでお願いいたします。</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00-</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>13:15-13:30</td>\n<td>軽く自己紹介</td>\n</tr>\n<tr>\n<td>13:30-17:00</td>\n<td>もくもく</td>\n</tr>\n<tr>\n<td>17:30-18:00</td>\n<td>学びシェア</td>\n</tr>\n<tr>\n<td>18:00-</td>\n<td>随時解散</td>\n</tr>\n</tbody>\n</table>\n<h2>アクセス</h2>\n<p>東京都港区赤坂８丁目</p>\n<p>&lt;最寄駅&gt;</p>\n<ul>\n<li>東京メトロ千代田線 / 乃木坂駅 徒歩7分</li>\n<li>東京メトロ銀座線 / 青山一丁目駅 徒歩8分</li>\n<li>東京メトロ千代田線 / 赤坂駅 徒歩12分</li>\n<li>東京メトロ日比谷線 / 六本木駅 徒歩15分</li>\n</ul>\n<h2>主催者について</h2>\n<p>清水　顕<br>\n<img alt=\"Ken Shimizu\" src=\"https://imgur.com/P35zQQ0.png\"></p>\n<p>略歴<br>\n - GUI研究開発プロジェクト<br>\n - ERP<br>\n - Business Analyst<br>\n - Web系システム<br>\n - 金融系システム<br></p>\n<p>できること<br>\n - React<br>\n - Flask<br>\n - Java<br>\n - Raspberry Pi<br>\n - ESP32<br>\nなど。<br></p>\n<h2>注意点</h2>\n<p>1:ハラスメント、暴力行為、勧誘、マウントなど、他の参加者が不快になるような行為は禁止します。</p>\n<p>2:会の趣旨にそぐわない営業行為、勧誘などを目的としたご参加はご遠慮ください。</p>\n<p>3:対象外の方はお断りさせていただくこともあります。ご了承ください。</p>\n<p>4:連絡なしの無断遅刻やキャンセルはご遠慮ください。次回以降参加をお断りする可能性があります（補欠の方もいる場合があるので）</p>\n<p>５:SNSへの投稿は自由ですが、写真・動画投稿時の顔出し可否の確認など、プライバシーへのご配慮をお願いいたします。</p>\n<h2>その他</h2>\n<p>ご不明点ございましたら、開催者までご連絡下さい。</p>",
-      "url": "https://ras-duino.connpass.com/event/398093/",
-      "image_url": "https://media.connpass.com/thumbs/84/84/8484bd86f80c2d8adc7a20ab98df067d.png",
-      "hash_tag": "",
-      "started_at": "2026-07-11T13:00:00+09:00",
-      "ended_at": "2026-07-11T18:00:00+09:00",
-      "published_at": "2026-06-29T21:07:31+09:00",
-      "limit": 8,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 12918,
-        "subdomain": "ras-duino",
-        "title": "Raspberry Pi & Arduino もくもく会(Ras-Duino)",
-        "url": "https://ras-duino.connpass.com/"
-      },
-      "address": "東京都港区赤坂８丁目",
-      "place": "参加者への情報に記載",
-      "lat": "35.671090400000",
-      "lon": "139.727522600000",
-      "owner_id": 359968,
-      "owner_nickname": "KenShimizu246",
-      "owner_display_name": "Ken Shimizu",
-      "accepted": 6,
-      "waiting": 0,
-      "updated_at": "2026-06-29T21:07:31+09:00"
-    },
-    {
       "id": 398270,
       "title": "Google Stitch の最新機能を使いまくる高速プロダクト試作デザインスプリント！",
       "catch": "Google I/O 2026 で発表された最新情報の総まとめ & 振り返りオフラインイベント",
@@ -650,6 +588,68 @@
       "updated_at": "2026-07-11T01:29:23+09:00"
     },
     {
+      "id": 397243,
+      "title": "もくもく＆LT会＠中野 #9",
+      "catch": "",
+      "description": "<h1>主催者からのメッセージ</h1>\n<p>主にWebエンジニア（BtoB / バックエンド多め）の技術スキルを持つエンジニアを中心とした、もくもく&amp;LT会を開催します。\n以下のような言語 / プラットフォームに詳しいエンジニアが参加しますが、特に言語やプラットフォームは限定いたしません。</p>\n<ul>\n<li>Azure</li>\n<li>AWS</li>\n<li>GitHub</li>\n<li>JavaScript</li>\n<li>C#</li>\n<li><a href=\"http://ASP.NET\" rel=\"nofollow\">ASP.NET</a></li>\n<li>Python</li>\n<li>PowerShell</li>\n<li>PostgreSQL</li>\n<li>SQL Server</li>\n<li>Windows Server</li>\n</ul>\n<p>最近は生成AIを利用した開発に関するトピック・LTが多めです。個人でプロダクト開発を行っているエンジニアも多数参加しています。</p>\n<h1>開催概要</h1>\n<ul>\n<li>日時：2026/7/11(土) 13:00～18:00（12:45受け付け開始）</li>\n<li>場所：東京都中野区中野2丁目30-5 中野アーバンビル Pleasanter Lounge 7F（JR中野駅 南口 徒歩2分）</li>\n<li>主催：Nakano Tech Lounge</li>\n</ul>\n<h1>参加費</h1>\n<p>無料</p>\n<h1>スケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">所要時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">担当者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:45</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">5分</td>\n<td style=\"text-align: left;\">会の説明</td>\n<td style=\"text-align: left;\">主催者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:05</td>\n<td style=\"text-align: left;\">15分</td>\n<td style=\"text-align: left;\">自己紹介&amp;今日やること</td>\n<td style=\"text-align: left;\">参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:20</td>\n<td style=\"text-align: left;\">200分</td>\n<td style=\"text-align: left;\">もくもく会</td>\n<td style=\"text-align: left;\">参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:40</td>\n<td style=\"text-align: left;\">40分</td>\n<td style=\"text-align: left;\">LT（やったこと等）</td>\n<td style=\"text-align: left;\">LT枠参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:20</td>\n<td style=\"text-align: left;\">40分</td>\n<td style=\"text-align: left;\">ネットワーキング</td>\n<td style=\"text-align: left;\">参加者（希望者のみ）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">閉会</td>\n<td style=\"text-align: left;\">主催者</td>\n</tr>\n</tbody>\n</table>\n<p>※LTではLT枠にお申し込みいただいた方に5分程度の発表をお願いしておりますので、ご準備の程よろしくお願いいたします。発表いただく内容は当日やった以外でも何でも構いません！  </p>\n<h1>対象者</h1>\n<ul>\n<li>Webエンジニアまたは志望者（経験問いません）</li>\n<li>個人でプロダクト開発を行っている方、または興味のある方</li>\n</ul>\n<h1>持ち物</h1>\n<ul>\n<li>作業用PC</li>\n<li>お名前が確認できるもの(名刺、学生証等)</li>\n</ul>\n<h1>飲食</h1>\n<p>可能です。ニオイの強いものは避けてください。</p>\n<h1>LINE オープンチャット</h1>\n<p>「Nakano Tech Lounge」のオープンチャットを作りました！\n下記URLより登録をお願いします。</p>\n<p><a href=\"https://line.me/ti/g2/Sjzh9WidzCp0GMpCNwFRtbvZxy5Oat2bSSQ7OQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default\" rel=\"nofollow\">https://line.me/ti/g2/Sjzh9WidzCp0GMpCNwFRtbvZxy5Oat2bSSQ7OQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default</a></p>\n<h1>アンチハラスメントポリシー</h1>\n<p>このグループではアンチハラスメントポリシーを定めています。誰もが安心して参加できるよう下記に抵触する可能性のある行為を行った場合には、会場からの退場およびグループへの出入り禁止とします。</p>\n<ul>\n<li>攻撃的なコメント(ジェンダー・性自認やジェンダー表現・性的指向・障碍・容貌・体型・人種・民族・年齢・宗教あるいは無宗教についてなど)</li>\n<li>脅迫、ストーキング、つきまとい</li>\n<li>いやがらせ目的の撮影や録音</li>\n<li>発表や他のイベントの継続的妨害</li>\n<li>不適切な身体的接触</li>\n<li>性的な画像の掲示などを含む不適切な情報の開示</li>\n<li>上記行為の推奨や擁護</li>\n<li>上記に限らず、当社がハラスメントとして判断する行為</li>\n</ul>\n<h1>ご参加いただく皆様へのお願い</h1>\n<p>当日の参加が出来なくなった場合、下記の「フィード」へ参加できない旨のコメントをしていただきますようお願いいたします。無断での不参加の場合、こちらから参加のキャンセルをさせていただく場合がございますので、予めご了承ください。</p>",
+      "url": "https://nakano-tech-lounge.connpass.com/event/397243/",
+      "image_url": "https://media.connpass.com/thumbs/67/d0/67d0a269ca76afe8d0ec0838bb89965f.png",
+      "hash_tag": "",
+      "started_at": "2026-07-11T13:00:00+09:00",
+      "ended_at": "2026-07-11T18:00:00+09:00",
+      "published_at": "2026-06-13T15:34:46+09:00",
+      "limit": 24,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 16813,
+        "subdomain": "nakano-tech-lounge",
+        "title": "Nakano Tech Lounge",
+        "url": "https://nakano-tech-lounge.connpass.com/"
+      },
+      "address": "東京都中野区中野2-30-5 中野アーバンビル7F",
+      "place": "Pleasanter Lounge",
+      "lat": "35.704475200000",
+      "lon": "139.665657200000",
+      "owner_id": 68585,
+      "owner_nickname": "pierusan2010",
+      "owner_display_name": "pierusan2010",
+      "accepted": 12,
+      "waiting": 0,
+      "updated_at": "2026-06-13T15:34:46+09:00"
+    },
+    {
+      "id": 398093,
+      "title": "ゆる～いもくもく会（青山一丁目・乃木坂）",
+      "catch": "初参加、お一人様大歓迎！作業テーマ自由、読書だけでもOK、遅刻、途中退室OK、工作もできます。",
+      "description": "<h2>概要</h2>\n<p><br>\nもくもく会のあとは、かる〜く懇親会もあります。参加は自由です。</p>\n<h2>対象者</h2>\n<p>・何かできるようになって、自信をつけたい人</p>\n<p>・個人開発者</p>\n<p>・言語やフレームワークを学んで何かつくれるようになりたい人</p>\n<p>・フルスタックエンジニアになりたい人</p>\n<p>・Raspberry Piを買ったけど眠らせている人</p>\n<p>・電子工作をしてみたいけど何から初めていいかわからない人</p>\n<p>・３Dプリンターに興味がある人</p>\n<p>などなど、スキルレベルは問いません。\n目標に向かってのんびり進めていきましょう。</p>\n<h2>持ち物</h2>\n<p>PC</p>\n<p>数に限りはありますが、Raspberry Pi、Jetson Nanoを試したりすることもできます。また、３Dプリンターもあるので試すこともできます。（A1mini、X2D）</p>\n<h2>費用</h2>\n<p>¥1000</p>\n<p>現金もしくはpaypayでお願いいたします。</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00-</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>13:15-13:30</td>\n<td>軽く自己紹介</td>\n</tr>\n<tr>\n<td>13:30-17:00</td>\n<td>もくもく</td>\n</tr>\n<tr>\n<td>17:30-18:00</td>\n<td>学びシェア</td>\n</tr>\n<tr>\n<td>18:00-</td>\n<td>随時解散</td>\n</tr>\n</tbody>\n</table>\n<h2>アクセス</h2>\n<p>東京都港区赤坂８丁目</p>\n<p>&lt;最寄駅&gt;</p>\n<ul>\n<li>東京メトロ千代田線 / 乃木坂駅 徒歩7分</li>\n<li>東京メトロ銀座線 / 青山一丁目駅 徒歩8分</li>\n<li>東京メトロ千代田線 / 赤坂駅 徒歩12分</li>\n<li>東京メトロ日比谷線 / 六本木駅 徒歩15分</li>\n</ul>\n<h2>主催者について</h2>\n<p>清水　顕<br>\n<img alt=\"Ken Shimizu\" src=\"https://imgur.com/P35zQQ0.png\"></p>\n<p>略歴<br>\n - GUI研究開発プロジェクト<br>\n - ERP<br>\n - Business Analyst<br>\n - Web系システム<br>\n - 金融系システム<br></p>\n<p>できること<br>\n - React<br>\n - Flask<br>\n - Java<br>\n - Raspberry Pi<br>\n - ESP32<br>\nなど。<br></p>\n<h2>注意点</h2>\n<p>1:ハラスメント、暴力行為、勧誘、マウントなど、他の参加者が不快になるような行為は禁止します。</p>\n<p>2:会の趣旨にそぐわない営業行為、勧誘などを目的としたご参加はご遠慮ください。</p>\n<p>3:対象外の方はお断りさせていただくこともあります。ご了承ください。</p>\n<p>4:連絡なしの無断遅刻やキャンセルはご遠慮ください。次回以降参加をお断りする可能性があります（補欠の方もいる場合があるので）</p>\n<p>５:SNSへの投稿は自由ですが、写真・動画投稿時の顔出し可否の確認など、プライバシーへのご配慮をお願いいたします。</p>\n<h2>その他</h2>\n<p>ご不明点ございましたら、開催者までご連絡下さい。</p>",
+      "url": "https://ras-duino.connpass.com/event/398093/",
+      "image_url": "https://media.connpass.com/thumbs/84/84/8484bd86f80c2d8adc7a20ab98df067d.png",
+      "hash_tag": "",
+      "started_at": "2026-07-11T13:00:00+09:00",
+      "ended_at": "2026-07-11T18:00:00+09:00",
+      "published_at": "2026-06-29T21:07:31+09:00",
+      "limit": 8,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 12918,
+        "subdomain": "ras-duino",
+        "title": "Raspberry Pi & Arduino もくもく会(Ras-Duino)",
+        "url": "https://ras-duino.connpass.com/"
+      },
+      "address": "東京都港区赤坂８丁目",
+      "place": "参加者への情報に記載",
+      "lat": "35.671090400000",
+      "lon": "139.727522600000",
+      "owner_id": 359968,
+      "owner_nickname": "KenShimizu246",
+      "owner_display_name": "Ken Shimizu",
+      "accepted": 6,
+      "waiting": 0,
+      "updated_at": "2026-06-29T21:07:31+09:00"
+    },
+    {
       "id": 398029,
       "title": "RUNTEQ発｜エンジニアもくもく会8",
       "catch": "初心者大歓迎｜質問してもOK・しなくてもOK",
@@ -795,7 +795,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 25,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-07-08T13:20:27+09:00"
     },
@@ -859,7 +859,7 @@
       "owner_display_name": "Kinoshita@創意ラボ株式会社",
       "accepted": 2,
       "waiting": 0,
-      "updated_at": "2026-07-10T17:39:41+09:00"
+      "updated_at": "2026-07-11T07:57:17+09:00"
     },
     {
       "id": 399556,
