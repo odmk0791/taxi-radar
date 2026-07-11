@@ -719,17 +719,19 @@ function classifyGps(pts,trips,breaks){
       if(pts[i][0]>=s)cls[i]='brk';
     }
   });
-  // 実車: 乗車時刻から降車地250m以内に到達するまで(上限=次営業の乗車時刻)
+  // 実車: 乗車時間〜降車時間の窓で確定。降車時間が無い行のみ降車地到達で推定
   const seq=trips.filter(t=>t.ok&&t.startMin>=0).sort((a,b)=>a.startMin-b.startMin);
   seq.forEach((t,ti)=>{
     const s=t.startMin*60;
     const next=seq[ti+1];
-    const limit=next?next.startMin*60:s+3*3600;
+    const hardEnd=(t.endMin>t.startMin)?t.endMin*60:null;
+    const limit=hardEnd!==null?Math.min(hardEnd,next?next.startMin*60:hardEnd)
+                              :(next?next.startMin*60:s+3*3600);
     for(let i=0;i<pts.length;i++){
       if(pts[i][0]<s)continue;
-      if(pts[i][0]>=limit)break;
+      if(pts[i][0]>limit)break;
       cls[i]='ride';tripN[i]=t.n;
-      if(pts[i][0]>s+120&&distM(pts[i][1],pts[i][2],t.dc.lat,t.dc.lng)<(t.dg?150:250))break;
+      if(hardEnd===null&&pts[i][0]>s+120&&distM(pts[i][1],pts[i][2],t.dc.lat,t.dc.lng)<(t.dg?150:250))break;
     }
   });
   return{cls,tripN};
@@ -912,6 +914,7 @@ async function loadRoute(dayInfo){
     const cpw=resolveCol(bk,C_PW),cpt=resolveCol(bk,C_PT);
     const cdw=resolveCol(bk,C_DW),cdt=resolveCol(bk,C_DT);
     const ctm=resolveCol(bk,C_TIME);
+    const ctmEnd=bk.find(k=>k==='降車時間')||bk.find(k=>k.includes('降車時間'));
     const cfb=resolveCol(bk,C_FARE_B)||bk.find(k=>k.includes('料金'));
     const cst=resolveCol(bk,C_STATUS)||bk.find(k=>k.includes('ステータス'));
     const cth=resolveCol(bk,C_THX)||bk.find(k=>k==='サンキュー')||bk.find(k=>k.includes('サンキュー'));
@@ -934,6 +937,7 @@ async function loadRoute(dayInfo){
         pickup:(pw+pt).trim(),dropoff:(dw+dt).trim(),
         fare:parseFare(cfb?row[cfb]:''),
         time:ctm?String(row[ctm]||''):'',
+        timeEnd:ctmEnd?String(row[ctmEnd]||''):'',
         status:cst?String(row[cst]||''):'',
         thx:cth?row[cth]:null,
         pg:validGeo(pgLat,pgLng)?{lat:pgLat,lng:pgLng}:null,
@@ -1024,7 +1028,7 @@ async function loadRoute(dayInfo){
     // ── サイドバー：営業と休憩を時刻順に混合表示 ──────────
     const list=document.getElementById('trip-list');
     // trips に time を分数で付加（ソート用）
-    trips.forEach(t=>{ t.startMin=timeToMin(t.time); });
+    trips.forEach(t=>{ t.startMin=timeToMin(t.time); t.endMin=timeToMin(t.timeEnd); });
     // 全アイテムを時刻順に並べる（休憩・空転含む）
     const allItems=[
       ...trips.map(t=>({type:'trip',data:t,min:t.startMin})),
