@@ -729,7 +729,7 @@ function classifyGps(pts,trips,breaks){
       if(pts[i][0]<s)continue;
       if(pts[i][0]>=limit)break;
       cls[i]='ride';tripN[i]=t.n;
-      if(pts[i][0]>s+120&&distM(pts[i][1],pts[i][2],t.dc.lat,t.dc.lng)<250)break;
+      if(pts[i][0]>s+120&&distM(pts[i][1],pts[i][2],t.dc.lat,t.dc.lng)<(t.dg?150:250))break;
     }
   });
   return{cls,tripN};
@@ -915,6 +915,10 @@ async function loadRoute(dayInfo){
     const cfb=resolveCol(bk,C_FARE_B)||bk.find(k=>k.includes('料金'));
     const cst=resolveCol(bk,C_STATUS)||bk.find(k=>k.includes('ステータス'));
     const cth=resolveCol(bk,C_THX)||bk.find(k=>k==='サンキュー')||bk.find(k=>k.includes('サンキュー'));
+    // 営業メモが記録したピンポイントGPS列（あれば最優先で使う）
+    const cplat=bk.find(k=>/乗車地[：:]\s*緯度/.test(k)),cplng=bk.find(k=>/乗車地[：:]\s*経度/.test(k));
+    const cdlat=bk.find(k=>/降車地[：:]\s*緯度/.test(k)),cdlng=bk.find(k=>/降車地[：:]\s*経度/.test(k));
+    const validGeo=(lat,lng)=>!isNaN(lat)&&!isNaN(lng)&&lat>20&&lat<46&&lng>122&&lng<154;
 
     const dayRows=bdCache.filter(r=>matchDate(r,y,mo,d));
     if(!dayRows.length)throw new Error(`${y}/${mo}/${d} のデータが見つかりません`);
@@ -924,15 +928,19 @@ async function loadRoute(dayInfo){
       const pt=cpt?String(row[cpt]||'').trim():'';
       const dw=cdw?String(row[cdw]||'').trim():'';
       const dt=cdt?String(row[cdt]||'').trim():'';
+      const pgLat=cplat?parseFloat(row[cplat]):NaN,pgLng=cplng?parseFloat(row[cplng]):NaN;
+      const dgLat=cdlat?parseFloat(row[cdlat]):NaN,dgLng=cdlng?parseFloat(row[cdlng]):NaN;
       return{n:i+1,
         pickup:(pw+pt).trim(),dropoff:(dw+dt).trim(),
         fare:parseFare(cfb?row[cfb]:''),
         time:ctm?String(row[ctm]||''):'',
         status:cst?String(row[cst]||''):'',
         thx:cth?row[cth]:null,
+        pg:validGeo(pgLat,pgLng)?{lat:pgLat,lng:pgLng}:null,
+        dg:validGeo(dgLat,dgLng)?{lat:dgLat,lng:dgLng}:null,
         pc:null,dc:null,ok:false};
     });
-    trips.forEach(t=>{t.pc=getCoords(t.pickup);t.dc=getCoords(t.dropoff);t.ok=!!(t.pc&&t.dc);});
+    trips.forEach(t=>{t.pc=t.pg||getCoords(t.pickup);t.dc=t.dg||getCoords(t.dropoff);t.ok=!!(t.pc&&t.dc);});
 
     // CSVにない住所（武三23区外・「その他」）をNominatim APIで補完
     const unmatchedAddrs=[...new Set(
@@ -1161,6 +1169,8 @@ async function loadRoute(dayInfo){
     if(dayBreaks.length)stMsg+=` | 休憩: ${dayBreaks.length}件`;
     if(dayKuten.length)stMsg+=` | 空転: ${dayKuten.length}件`;
     if(gpsData)stMsg+=` | GPS実測: ${gpsData.n_points||gpsData.points.length}点`;
+    const pinCnt=trips.filter(t=>t.pg||t.dg).length;
+    if(pinCnt)stMsg+=` | ピン座標: ${pinCnt}件`;
     stBar.textContent=stMsg;
     stBar.className=matched>0?'ok':'ng';
     document.getElementById('map-loading').style.display='none';
