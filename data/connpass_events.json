@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-12T03:49:29.750166+09:00",
+  "fetched_at": "2026-07-12T05:00:35.509183+09:00",
   "date": "20260712",
   "count": 15,
   "events": [
@@ -123,37 +123,6 @@
       "updated_at": "2026-07-10T13:40:06+09:00"
     },
     {
-      "id": 395818,
-      "title": "第1回 よわよわセキュリティ勉強会（初心者歓迎・ゆるくもくもく＋LT）",
-      "catch": "こわくないセキュリティ勉強会",
-      "description": "<h1>概要</h1>\n<p>「セキュリティに興味はあるけど、ガチガチの勉強会はちょっとこわい…」\nそんな方向けの、ゆるい勉強会です。</p>\n<p>初心者の方も大歓迎です！\nゆるく一緒に学べる場にできればと思っています。</p>\n<p>今回は記念すべき第1回目です！</p>\n<p>LTのテーマは<strong>「私がセキュリティを始めたきっかけ！」</strong>です。\nもくもくタイムの内容は自由となります。</p>\n<h2>対象者</h2>\n<ul>\n<li>セキュリティに興味はあるけど、何から始めればいいかわからない方</li>\n<li>一人で勉強していて仲間がほしい方</li>\n<li>初心者でも安心して参加できる場を探している方</li>\n<li>LTで知識・技術を共有したい中上級者の方も歓迎です！</li>\n</ul>\n<h2>開催情報</h2>\n<ul>\n<li>日時：7/17（日）13:00〜16:00（12:30受付開始）</li>\n<li>会場：株式会社セキュアスカイ・テクノロジー 東京本社（都営新宿線「岩本町」駅　徒歩3分 / JR総武線快速「新日本橋」駅　徒歩7分 / JR・銀座線「神田」駅　徒歩7分 / 東京メトロ日比谷線「小伝馬町」駅　徒歩7分）</li>\n<li>定員：20名（LT枠3名・一般参加17名）</li>\n<li>参加費：無料</li>\n<li>飲食：持ち込みOK（匂いの強いものはご遠慮ください）</li>\n<li>設備：書籍、Wi-Fi、電源、プロジェクタあり</li>\n</ul>\n<h2>タイムテーブル（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">開始・自己紹介 ＋ やること宣言</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10</td>\n<td style=\"text-align: left;\">もくもくタイム（勉強・読書など）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:40</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45</td>\n<td style=\"text-align: left;\">スポンサー紹介タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:50</td>\n<td style=\"text-align: left;\">LT（1人5分程度）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:20</td>\n<td style=\"text-align: left;\">もくもくタイムでやったこと発表（口頭）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:30</td>\n<td style=\"text-align: left;\">交流タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50</td>\n<td style=\"text-align: left;\">片付け</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00</td>\n<td style=\"text-align: left;\">終了</td>\n</tr>\n</tbody>\n</table>\n<h2>もくもくタイムについて</h2>\n<p>セキュリティに少しでも関係あればOKです！\n（例：読書 / 資格勉強 / 技術記事執筆 / 常設CTFをやる / 環境構築をやる など）</p>\n<p>何をやればいいかわからない場合は、その場で相談もOKです！</p>\n<h2>LTについて</h2>\n<p>「私がセキュリティを始めたきっかけ！」をテーマに、学習法などをシェアいただけると嬉しいです！</p>\n<p>スライドなし・軽い共有でも大歓迎です！</p>\n<h2>Q&amp;A</h2>\n<ul>\n<li>Q. セキュリティが全くわからない非エンジニアでも参加していいですか？</li>\n<li>A. 大歓迎です！基礎からゆるく学べる場を目指しています</li>\n<li>Q. よわよわ（初心者）じゃない中上級者でも参加していい？</li>\n<li>A. ぜひどうぞ！LTや質問対応などで、場を一緒に盛り上げていただけると嬉しいです！</li>\n</ul>\n<h2>会場スポンサー</h2>\n<p><a href=\"https://www.securesky-tech.com/\" rel=\"nofollow\">株式会社セキュアスカイ・テクノロジー さま</a></p>\n<h2>注意事項</h2>\n<p>ハラスメント行為は禁止です。\n技術レベルでのマウントなどはご遠慮ください。</p>\n<p>違反があった場合は運営が対応します。</p>\n<h2>お願い</h2>\n<p>少人数開催のため、満席の場合はご了承ください。</p>\n<p>また、参加できなくなった場合はお早めにキャンセルをお願いします。</p>\n<p><strong>ゆるく、楽しく、一緒に学びましょう〜🐣</strong></p>",
-      "url": "https://yowayowasec.connpass.com/event/395818/",
-      "image_url": null,
-      "hash_tag": "yowasec",
-      "started_at": "2026-07-12T13:00:00+09:00",
-      "ended_at": "2026-07-12T16:00:00+09:00",
-      "published_at": "2026-06-04T20:01:42+09:00",
-      "limit": 21,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17633,
-        "subdomain": "yowayowasec",
-        "title": "よわよわセキュリティ勉強会",
-        "url": "https://yowayowasec.connpass.com/"
-      },
-      "address": "東京都千代田区岩本町2-2-4 (PMO神田岩本町II 10F)",
-      "place": "株式会社セキュアスカイ・テクノロジー 東京本社",
-      "lat": "35.692967500000",
-      "lon": "139.775314900000",
-      "owner_id": 224259,
-      "owner_nickname": "akihanari",
-      "owner_display_name": "choco_py3",
-      "accepted": 21,
-      "waiting": 7,
-      "updated_at": "2026-06-30T01:03:36+09:00"
-    },
-    {
       "id": 397707,
       "title": "Claude Codeで考える AI駆動開発のしくみづくりワークショップ",
       "catch": "自分やチームの開発フローを実験してみる",
@@ -214,6 +183,37 @@
       "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-07-03T21:31:18+09:00"
+    },
+    {
+      "id": 395818,
+      "title": "第1回 よわよわセキュリティ勉強会（初心者歓迎・ゆるくもくもく＋LT）",
+      "catch": "こわくないセキュリティ勉強会",
+      "description": "<h1>概要</h1>\n<p>「セキュリティに興味はあるけど、ガチガチの勉強会はちょっとこわい…」\nそんな方向けの、ゆるい勉強会です。</p>\n<p>初心者の方も大歓迎です！\nゆるく一緒に学べる場にできればと思っています。</p>\n<p>今回は記念すべき第1回目です！</p>\n<p>LTのテーマは<strong>「私がセキュリティを始めたきっかけ！」</strong>です。\nもくもくタイムの内容は自由となります。</p>\n<h2>対象者</h2>\n<ul>\n<li>セキュリティに興味はあるけど、何から始めればいいかわからない方</li>\n<li>一人で勉強していて仲間がほしい方</li>\n<li>初心者でも安心して参加できる場を探している方</li>\n<li>LTで知識・技術を共有したい中上級者の方も歓迎です！</li>\n</ul>\n<h2>開催情報</h2>\n<ul>\n<li>日時：7/17（日）13:00〜16:00（12:30受付開始）</li>\n<li>会場：株式会社セキュアスカイ・テクノロジー 東京本社（都営新宿線「岩本町」駅　徒歩3分 / JR総武線快速「新日本橋」駅　徒歩7分 / JR・銀座線「神田」駅　徒歩7分 / 東京メトロ日比谷線「小伝馬町」駅　徒歩7分）</li>\n<li>定員：20名（LT枠3名・一般参加17名）</li>\n<li>参加費：無料</li>\n<li>飲食：持ち込みOK（匂いの強いものはご遠慮ください）</li>\n<li>設備：書籍、Wi-Fi、電源、プロジェクタあり</li>\n</ul>\n<h2>タイムテーブル（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">開始・自己紹介 ＋ やること宣言</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10</td>\n<td style=\"text-align: left;\">もくもくタイム（勉強・読書など）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:40</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45</td>\n<td style=\"text-align: left;\">スポンサー紹介タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:50</td>\n<td style=\"text-align: left;\">LT（1人5分程度）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:20</td>\n<td style=\"text-align: left;\">もくもくタイムでやったこと発表（口頭）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:30</td>\n<td style=\"text-align: left;\">交流タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50</td>\n<td style=\"text-align: left;\">片付け</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00</td>\n<td style=\"text-align: left;\">終了</td>\n</tr>\n</tbody>\n</table>\n<h2>もくもくタイムについて</h2>\n<p>セキュリティに少しでも関係あればOKです！\n（例：読書 / 資格勉強 / 技術記事執筆 / 常設CTFをやる / 環境構築をやる など）</p>\n<p>何をやればいいかわからない場合は、その場で相談もOKです！</p>\n<h2>LTについて</h2>\n<p>「私がセキュリティを始めたきっかけ！」をテーマに、学習法などをシェアいただけると嬉しいです！</p>\n<p>スライドなし・軽い共有でも大歓迎です！</p>\n<h2>Q&amp;A</h2>\n<ul>\n<li>Q. セキュリティが全くわからない非エンジニアでも参加していいですか？</li>\n<li>A. 大歓迎です！基礎からゆるく学べる場を目指しています</li>\n<li>Q. よわよわ（初心者）じゃない中上級者でも参加していい？</li>\n<li>A. ぜひどうぞ！LTや質問対応などで、場を一緒に盛り上げていただけると嬉しいです！</li>\n</ul>\n<h2>会場スポンサー</h2>\n<p><a href=\"https://www.securesky-tech.com/\" rel=\"nofollow\">株式会社セキュアスカイ・テクノロジー さま</a></p>\n<h2>注意事項</h2>\n<p>ハラスメント行為は禁止です。\n技術レベルでのマウントなどはご遠慮ください。</p>\n<p>違反があった場合は運営が対応します。</p>\n<h2>お願い</h2>\n<p>少人数開催のため、満席の場合はご了承ください。</p>\n<p>また、参加できなくなった場合はお早めにキャンセルをお願いします。</p>\n<p><strong>ゆるく、楽しく、一緒に学びましょう〜🐣</strong></p>",
+      "url": "https://yowayowasec.connpass.com/event/395818/",
+      "image_url": null,
+      "hash_tag": "yowasec",
+      "started_at": "2026-07-12T13:00:00+09:00",
+      "ended_at": "2026-07-12T16:00:00+09:00",
+      "published_at": "2026-06-04T20:01:42+09:00",
+      "limit": 21,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17633,
+        "subdomain": "yowayowasec",
+        "title": "よわよわセキュリティ勉強会",
+        "url": "https://yowayowasec.connpass.com/"
+      },
+      "address": "東京都千代田区岩本町2-2-4 (PMO神田岩本町II 10F)",
+      "place": "株式会社セキュアスカイ・テクノロジー 東京本社",
+      "lat": "35.692967500000",
+      "lon": "139.775314900000",
+      "owner_id": 224259,
+      "owner_nickname": "akihanari",
+      "owner_display_name": "choco_py3",
+      "accepted": 21,
+      "waiting": 6,
+      "updated_at": "2026-06-30T01:03:36+09:00"
     },
     {
       "id": 397328,
