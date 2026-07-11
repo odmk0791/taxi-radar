@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-11T18:19:46.540180+09:00",
+  "fetched_at": "2026-07-11T19:57:29.270006+09:00",
   "date": "20260711",
   "count": 35,
   "events": [
@@ -92,7 +92,7 @@
       "owner_id": 315321,
       "owner_nickname": "95inari",
       "owner_display_name": "Kuko",
-      "accepted": 32,
+      "accepted": 31,
       "waiting": 0,
       "updated_at": "2026-07-03T19:04:58+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-06-29T08:02:11+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1937,
         "subdomain": "gdg-tokyo",
@@ -171,7 +171,7 @@
       "published_at": "2026-06-29T08:02:10+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1937,
         "subdomain": "gdg-tokyo",
@@ -383,7 +383,7 @@
       "published_at": "2026-05-23T19:01:11+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3173,
         "subdomain": "megurovim",
