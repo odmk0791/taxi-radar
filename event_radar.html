@@ -536,6 +536,12 @@ function timeLeft(endISO){
   return 'あと'+Math.floor(m/60)+'時間'+(m%60?m%60+'分':'');
 }
 function fmtT(iso){ if(!iso) return '--'; const d=new Date(iso); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
+// JST(日本時間)で今日の日付 YYYY-MM-DD を返す。toISOString()はUTCで9時間ずれるため使わない
+function todayJST(){
+  const n=new Date();
+  const j=new Date(n.getTime()+(n.getTimezoneOffset()+540)*60000);
+  return j.getFullYear()+'-'+String(j.getMonth()+1).padStart(2,'0')+'-'+String(j.getDate()).padStart(2,'0');
+}
 function setStatus(msg,t){ const b=document.getElementById('statusBar'); b.textContent=msg; b.className='status-bar'+(t?' '+t:''); }
 
 // ソート適用（urgency=終了が近い順 / hole=穴スコア順）
@@ -841,7 +847,7 @@ async function startScan(){
 
   // ── データ収集：手動登録 + Connpass自動取得をマージ ──
   const range=parseInt(document.getElementById('rangeSelect').value);
-  const today=new Date().toISOString().slice(0,10);
+  const today=todayJST();
 
   // 1) 手動登録イベント（localStorage）
   const manualEvents=loadEvents()
@@ -989,7 +995,7 @@ function registerEvent(){
     id: Date.now(),
     name, venue, address:addr,
     lat, lng,
-    date: date||new Date().toISOString().slice(0,10),
+    date: date||todayJST(),
     start_iso: startISO,
     end_iso: endISO,
     scale: scaleVal,
@@ -1022,7 +1028,7 @@ function registerEvent(){
 // ═══ REGISTER LIST ═══
 function renderRegList(){
   const evs=loadEvents();
-  const today=new Date().toISOString().slice(0,10);
+  const today=todayJST();
   const todayEvs=evs.filter(e=>e.date===today||!e.date);
   const el=document.getElementById('regList');
   if(!todayEvs.length){
@@ -1047,14 +1053,14 @@ function deleteEv(id){
 // ═══ FORM UTILS ═══
 function clearForm(){
   ['fName','fVenue','fAddr','fLat','fLng','fStart','fEnd'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('fDate').value=new Date().toISOString().slice(0,10);
+  document.getElementById('fDate').value=todayJST();
   setScale(1);
 }
 
 // ═══ INIT ═══
 (function init(){
   // デフォルト日付を今日に
-  document.getElementById('fDate').value=new Date().toISOString().slice(0,10);
+  document.getElementById('fDate').value=todayJST();
   // 地図初期化
   initMap(35.6812,139.7671);
   // 登録リスト表示
