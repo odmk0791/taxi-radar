@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>日曜 今夜のポジション 22-24 / 24-28</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:48px}
+#hdr{background:linear-gradient(135deg,#2a0a3a,#401035);border-bottom:1px solid #f472b655;padding:18px 16px 14px}
+.sub{font-size:10px;color:#f472b6;letter-spacing:3px;text-transform:uppercase;margin-bottom:2px}
+h1{font-size:17px;font-weight:800}
+.dscr{font-size:11px;color:#475569;margin-top:3px}
+#msgbox{margin:20px 16px;padding:14px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.9;word-break:break-all;min-height:60px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.rbtn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:13px;background:#1a2035;border:1px solid #f87171;border-radius:12px;color:#f87171;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:12px;padding:14px;margin:0 14px 12px}
+.card-ttl{font-size:13px;font-weight:800;margin-bottom:10px}
+.note{font-size:11px;color:#94a3b8;line-height:1.7}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:#475569;padding:6px 3px;border-bottom:1px solid #1e2d40;font-weight:600;font-size:10px}
+td{padding:7px 3px;border-bottom:1px solid #0d1220}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Sunday Tonight Positions</div>
+  <h1>🌙 日曜 22-24時 / 24-28時 の乗車実績地</h1>
+  <div class="dscr">日曜J番の全実績 / 乗車場所を総売上順</div>
+</div>
+<div id="msgbox"><span class="spin">⏳</span> データ取得中...</div>
+<button class="rbtn" id="rbtn" onclick="run()" style="display:none">🔄 再試行</button>
+<div id="out"></div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+function csvArr(text){var lines=text.trim().split(/\r?\n/).filter(function(l){return l.trim();});function sp(line){var c=[],cur='',q=false;for(var i=0;i<line.length;i++){var ch=line[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else{cur+=ch;}}c.push(cur.trim());return c;}return lines.map(sp);}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function normDate(s){s=String(s||'').trim();var m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function toMin(t){var m=String(t||'').match(/^(\d{1,2}):(\d{2})/);if(!m)return null;return +m[1]*60+ +m[2];}
+function townLevel(f){return String(f||'').replace(/[一二三四五六七八九十〇0-9]+丁目.*$/,'').replace(/[0-9]+(-[0-9]+)*$/,'').replace(/[0-9]+番.*$/,'').trim();}
+
+async function run(){
+  document.getElementById('msgbox').style.display='';
+  document.getElementById('msgbox').innerHTML='<span class="spin">⏳</span> 集計中...';
+  document.getElementById('msgbox').style.borderColor='#60a5fa';
+  document.getElementById('rbtn').style.display='none';
+  document.getElementById('out').innerHTML='';
+  try{
+    var t1=await (await fetch(U1)).text();
+    var t2=await (await fetch(U2)).text();
+    var a1=csvArr(t1),a2=csvArr(t2),h1=a1[0],h2=a2[0];
+    function idx(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+    var i1d=idx(h1,'日付'),i1t=idx(h1,'TAXI'),i1w=idx(h1,'曜'),i1sh=idx(h1,'出番');
+    var meta={};var sunN=0;
+    a1.slice(1).forEach(function(r){
+      if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
+      if(String(r[i1sh]||'').trim()!=='J')return;
+      var d=normDate(r[i1d]);if(!d)return;
+      if(String(r[i1w]||'').trim()!=='日')return;
+      meta[d]=1;sunN++;
+    });
+    var i2on=idx(h2,'乗車時間'),i2ew=idx(h2,'乗車地:市区'),i2en=idx(h2,'乗車地:地名'),i2f=idx(h2,'料金'),i2st=idx(h2,'ステータス');
+
+    function agg(lo,hi,ttl,col){
+      var ward={},town={};
+      a2.slice(1).forEach(function(r){
+        var d=normDate(r[0]);if(!meta[d])return;
+        var on=toMin(r[i2on]);if(on===null)return;
+        if(on<960)on+=1440;
+        if(on<lo||on>=hi)return;
+        var f=toN(r[i2f]);if(f<=0)return;
+        var w=String(r[i2ew]||'').trim();if(!w)return;
+        var t=townLevel(w+String(r[i2en]||'').trim())||w;
+        if(!ward[w])ward[w]={c:0,f:0,dset:{}};ward[w].c++;ward[w].f+=f;ward[w].dset[d]=1;
+        if(!town[t])town[t]={c:0,f:0,dset:{}};town[t].c++;town[t].f+=f;town[t].dset[d]=1;
+      });
+      var ws=Object.entries(ward).map(function(e){return {n:e[0],c:e[1].c,f:e[1].f,d:Object.keys(e[1].dset).length};}).sort(function(a,b){return b.f-a.f;}).slice(0,8);
+      var ts=Object.entries(town).map(function(e){return {n:e[0],c:e[1].c,f:e[1].f,d:Object.keys(e[1].dset).length};}).filter(function(x){return x.c>=3;}).sort(function(a,b){return b.f-a.f;}).slice(0,15);
+      var h='<div class="card" style="border-color:'+col+'44"><div class="card-ttl" style="color:'+col+'">'+ttl+'</div>';
+      h+='<table><thead><tr><th>区</th><th style="text-align:right">総売上</th><th style="text-align:right">件</th><th style="text-align:right">出現日</th></tr></thead><tbody>';
+      ws.forEach(function(x,i){h+='<tr><td style="color:'+(i<3?col:'#e2e8f0')+';font-weight:'+(i<3?700:400)+'">'+(i+1)+'. '+es(x.n)+'</td><td style="text-align:right;color:'+col+';font-weight:600">¥'+Math.round(x.f/1000)+'k</td><td style="text-align:right;color:#60a5fa">'+x.c+'</td><td style="text-align:right;color:#94a3b8">'+x.d+'/'+sunN+'</td></tr>';});
+      h+='</tbody></table>';
+      h+='<div style="margin-top:12px"><table><thead><tr><th>町名(3件↑)</th><th style="text-align:right">総売上</th><th style="text-align:right">件</th><th style="text-align:right">出現日</th></tr></thead><tbody>';
+      ts.forEach(function(x,i){h+='<tr><td style="color:'+(i<5?col:'#e2e8f0')+';font-weight:'+(i<5?700:400)+'">'+(i+1)+'. '+es(x.n)+'</td><td style="text-align:right;color:'+col+';font-weight:600">¥'+Math.round(x.f/1000)+'k</td><td style="text-align:right;color:#60a5fa">'+x.c+'</td><td style="text-align:right;color:#94a3b8">'+x.d+'</td></tr>';});
+      h+='</tbody></table></div></div>';
+      return h;
+    }
+    var h='<div class="card"><p class="note">対象: 日曜J番 '+sunN+'日。乗車発生地を総売上順。出現日=何日の日曜で乗車があったか（多いほど再現性）。</p></div>';
+    h+=agg(1320,1440,'🕙 22〜24時（凪の時間・数少ない実績地）','#fb923c');
+    h+=agg(1440,1680,'🌙 24〜28時（ロング帯 翌1:30-2:30含む）','#f472b6');
+    document.getElementById('out').innerHTML=h;
+    document.getElementById('msgbox').style.display='none';
+  }catch(e){
+    document.getElementById('msgbox').innerHTML='⚠️ <strong style="color:#f87171">エラー</strong><br>'+String(e&&e.stack||e);
+    document.getElementById('msgbox').style.borderColor='#f87171';
+    document.getElementById('rbtn').style.display='';
+  }
+}
+run();
+</script>
+</body></html>
