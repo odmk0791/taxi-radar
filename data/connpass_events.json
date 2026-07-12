@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-13T07:39:22.785530+09:00",
+  "fetched_at": "2026-07-13T08:44:35.320358+09:00",
   "date": "20260713",
   "count": 5,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 558750,
       "owner_nickname": "sge_unity",
       "owner_display_name": "sge_unity",
-      "accepted": 116,
+      "accepted": 118,
       "waiting": 0,
       "updated_at": "2026-07-08T17:47:55+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 555936,
       "owner_nickname": "ANDPAD_TechLive",
       "owner_display_name": "ANDPAD_TechLive",
-      "accepted": 48,
+      "accepted": 49,
       "waiting": 0,
       "updated_at": "2026-07-10T19:13:53+09:00"
     },
@@ -140,7 +140,7 @@
       "published_at": "2026-07-09T18:30:41+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17883,
         "subdomain": "canuu",
