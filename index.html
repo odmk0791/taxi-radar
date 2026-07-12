@@ -324,7 +324,16 @@ var WARD={
 '足立区':[35.7754,139.8044],'葛飾区':[35.7444,139.8473],'北区':[35.7528,139.7336],
 '板橋区':[35.7508,139.7094],'練馬区':[35.7357,139.6522],'豊島区':[35.7295,139.7186],
 '中野区':[35.7073,139.6636],'杉並区':[35.6994,139.6366],'三鷹市':[35.6836,139.5597],
-'武蔵野市':[35.7074,139.5659],'調布市':[35.6514,139.5438]
+'武蔵野市':[35.7074,139.5659],'調布市':[35.6514,139.5438],
+// 近隣自治体（概算・区市中心座標）
+'和光市':[35.7797,139.6047],'朝霞市':[35.7967,139.5987],'志木市':[35.8225,139.5766],
+'新座市':[35.7847,139.5654],'川口市':[35.8078,139.7241],'さいたま市':[35.8617,139.6455],
+'三郷市':[35.8319,139.8757],'松戸市':[35.7877,139.9028],'柏市':[35.8676,139.9754],
+'市川市':[35.7217,139.9312],'船橋市':[35.6947,139.9825],'習志野市':[35.6647,140.0223],
+'川崎市':[35.5308,139.7029],'横浜市':[35.4437,139.638],'大和市':[35.4919,139.4634],
+'狛江市':[35.6357,139.5773],'稲城市':[35.6377,139.5049],'多摩市':[35.6368,139.4464],
+'町田市':[35.5461,139.4468],'八王子市':[35.6558,139.3389],'府中市':[35.6693,139.4776],
+'国分寺市':[35.7115,139.4664],'小金井市':[35.6996,139.5052],'立川市':[35.6941,139.4137]
 };
 
 // 羽田空港特殊マッピング
@@ -393,8 +402,10 @@ function getCoords(w,n){
   var k=w+n;
   var sp=SPECIAL[k];if(sp)return[sp.lat,sp.lng];
   if(COORDS[k])return COORDS[k];
+  if(COORDS[n])return COORDS[n]; // 地名単体でも一致すれば採用（「その他」区分の住所対策）
   if(GEOCACHE[k])return GEOCACHE[k];
-  return WARD[w]||[35.6762,139.6503];
+  if(WARD[w])return WARD[w];
+  return null; // 座標不明：呼び出し側で除外・警告すること
 }
 // ジオコーディングキュー
 var _geoQ=[],_geoRunning=false,_geoTotal=0;
@@ -601,6 +612,7 @@ function buildData(parsed){
     var key=dayType+'|'+hour+'|'+ward+'|'+name;
     if(!agg[key]){
       var co=getCoords(ward,name);
+      if(!co)continue; // 座標が特定できない住所はランキングから除外
       agg[key]={day:day,dayType:dayType,hour:hour,ward:ward,name:name,
         count:0,goCount:0,smCount:0,naCount:0,
         fb:[0,0,0,0],skCount:0,normalCount:0,ptCount:0,ptPCount:0,
@@ -1101,6 +1113,10 @@ function closeAreaModal(){
 }
 function selectAreaByName(ward,name){
   var co=getCoords(ward,name);
+  if(!co){
+    alert('「'+ward+name+'」の座標が見つかりませんでした。近隣の地名で試してください。');
+    return;
+  }
   uLat=co[0];uLng=co[1];
   document.getElementById('locname').textContent=ward+' '+name;
   document.getElementById('st').textContent=ward+name+'付近';
