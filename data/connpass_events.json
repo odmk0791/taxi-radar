@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-13T01:50:37.395038+09:00",
+  "fetched_at": "2026-07-13T02:53:29.042248+09:00",
   "date": "20260713",
   "count": 5,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 558750,
       "owner_nickname": "sge_unity",
       "owner_display_name": "sge_unity",
-      "accepted": 113,
+      "accepted": 115,
       "waiting": 0,
       "updated_at": "2026-07-08T17:47:55+09:00"
     },
