@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-14T07:48:22.678379+09:00",
+  "fetched_at": "2026-07-14T08:45:24.612828+09:00",
   "date": "20260714",
-  "count": 13,
+  "count": 12,
   "events": [
     {
       "id": 400351,
@@ -92,7 +92,7 @@
       "owner_id": 904254,
       "owner_nickname": "ROSCAM",
       "owner_display_name": "Kota_Takahashi",
-      "accepted": 22,
+      "accepted": 23,
       "waiting": 0,
       "updated_at": "2026-07-13T10:11:28+09:00"
     },
@@ -221,37 +221,6 @@
       "updated_at": "2026-07-12T20:24:15+09:00"
     },
     {
-      "id": 399499,
-      "title": "プロダクト開発、AIに丸ごと任せられるのか？Meetup！大規模コードへのAI駆動開発、どう進める？",
-      "catch": "",
-      "description": "<h1>✍️概要</h1>\n<p>比較的新しいサービスでのAI駆動開発の事例は急速に蓄積されつつある一方、<br>\n事業を長年支えてきた大規模・長寿命コードベースに対しては、コンテキスト量の膨大さや依存関係の複雑さが壁となり、どこまでAI駆動開発を適用できるか手探りの方も多いのではないでしょうか？</p>\n<p>本イベント「プロダクト開発、AIに丸ごと任せられるのか？Meet up #2」では、<br>「大規模・長寿命コードベースへのAI駆動開発適用」をテーマに、コンテキスト設計・ドキュメント整備、設計理解や影響範囲調査へのエージェント適用、リファクタリング／改修プロセスの再設計といった観点で、各社が実務で得つつある知見を持ち寄って深掘りします。</p>\n<p>異なるドメイン・スタックで大規模コードに向き合う各社の取り組みを比較しながら、「自社の既存プロダクトに、明日から取り入れられるAI駆動開発のヒント」を持ち帰っていただける場を目指します。<br>\nぜひご参加ください！</p>\n<h2>開催形式</h2>\n<ul>\n<li>オンライン・オフラインハイブリッド：ファインディ株式会社（会場）、Zoom配信</li>\n<li>申し込み：connpass（本サイト）</li>\n</ul>\n<hr>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:06</td>\n<td>オープニング / 会場案内（6分）</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>19:08 - 19:13</td>\n<td>（仮）マイクロサービス間の依存関係をAIに把握させる仕組み作り</td>\n<td>sontixyouさん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td>19:15 - 19:20</td>\n<td>AIに任せる領域を広げるまで ~大規模な認証基盤での AI駆動開発~</td>\n<td>中島 暢哉さん（合同会社DMM&zwnj;.com ）</td>\n</tr>\n<tr>\n<td>19:22 - 19:32</td>\n<td>勉強会紹介＆スポンサー紹介（10分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:34 - 19:39</td>\n<td>大規模コードベースへのAI導入 ── 何を委譲し、何を委譲しないかの判断基準とその拡張</td>\n<td>こまさん<a href=\"https://x.com/ai_yorozuya\" rel=\"nofollow\">@ai_yorozuya</a></td>\n</tr>\n<tr>\n<td>19:41 - 19:46</td>\n<td>AIの出力を安定させたのは、プロンプトではなくドキュメント構造だった</td>\n<td>中川 泰夫さん（Sansan株式会社）</td>\n</tr>\n<tr>\n<td>19:48 - 20:20</td>\n<td>Q&amp;A（32分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:22 - 20:30</td>\n<td>クロージング（8分）</td>\n<td>運営</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>※1人5分のLTです（各トーク間に転換2分を確保しています）。</p>\n<blockquote>\n<p>※20:30〜21:30 懇親会（ネットワーキング）\n<font color=\"red\"><br>※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>🤝会場スポンサー</h1>\n<p><img src=\"https://media.connpass.com/thumbs/9e/f6/9ef6fa5e43dd68600a718ba021188ebd.png\" width=\"300\"></p>\n<p><a href=\"https://unext-hd.co.jp/\" rel=\"nofollow\">株式会社U-NEXT HOLDINGS（USEN＆U-NEXT GROUP）</a><br></p>\n<p>本イベントは、会場スポンサーとして株式会社U-NEXT HOLDINGS様にご協力いただき開催しております。<br>\nU-NEXT HOLDINGS様の開発組織・採用についてご興味のある方は以下ページをぜひご覧ください！<br>\n<br></p>\n<ul>\n<li><a href=\"https://recruit.unext-hd.co.jp/\" rel=\"nofollow\">グループ採用サイト</a><br></li>\n<li><a href=\"https://hrmos.co/pages/u-nextholdings/jobs?jobType=FULL&amp;category=1600764878347055107\" rel=\"nofollow\">エンジニア求人一覧</a></li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/\" rel=\"nofollow\">生成AI活用のボトルネックを可視化し、開発組織の変革を実現するAIツール「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
-      "url": "https://findy-aiplus.connpass.com/event/399499/",
-      "image_url": "https://media.connpass.com/thumbs/de/b1/deb1d09650d77d2e86d1f85f37394d38.png",
-      "hash_tag": "AImarugoto_FindyAIPlus",
-      "started_at": "2026-07-14T19:00:00+09:00",
-      "ended_at": "2026-07-14T20:30:00+09:00",
-      "published_at": "2026-07-06T17:01:37+09:00",
-      "limit": 500,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17529,
-        "subdomain": "findy-aiplus",
-        "title": "Findy AI+",
-        "url": "https://findy-aiplus.connpass.com/"
-      },
-      "address": "東京都品川区大崎1丁目2−2（アートヴィレッジ大崎セントラルタワー）5F",
-      "place": "ファインディ株式会社",
-      "lat": "35.622384700000",
-      "lon": "139.727363000000",
-      "owner_id": 986836,
-      "owner_nickname": "sugamotota",
-      "owner_display_name": "t.sugamoto",
-      "accepted": 57,
-      "waiting": 0,
-      "updated_at": "2026-07-13T15:38:33+09:00"
-    },
-    {
       "id": 399573,
       "title": "[秋葉原] AI駆動開発入門！バイブコーディングで作るデジタル名刺ハンズオン (初心者大歓迎！)",
       "catch": "",
@@ -372,39 +341,39 @@
       "owner_nickname": "soleil-usan",
       "owner_display_name": "inouye",
       "accepted": 264,
-      "waiting": 5,
+      "waiting": 6,
       "updated_at": "2026-07-13T14:04:45+09:00"
     },
     {
-      "id": 398003,
-      "title": "Chigasaki.goもくもく会 #1",
+      "id": 399499,
+      "title": "プロダクト開発、AIに丸ごと任せられるのか？Meetup！大規模コードへのAI駆動開発、どう進める？",
       "catch": "",
-      "description": "<h2>概要</h2>\n<p>茅ヶ崎のGoコミュニティ「Chigasaki.go」を開催します。</p>\n<p>各自がやりたい事を持ち込む「もくもく会」です。\n特にテーマはないので、やりたいことを自由に持ち寄って頂ければと思います。 IT関連であれば特に制限はありません。</p>\n<p>Go、TinyGoに関する質問・相談などが目的の参加でもOKです。</p>\n<p>みんなでお喋りしつつ、楽しみましょう！</p>\n<h2>会場について</h2>\n<p>会場はフリーグーフォ合同会社 （FreeGufo G.K.）さんのオフィスです。Chigasaki.goに協力していただいています。ありがとうございます。</p>\n<p>自転車、バイクの駐輪が可能です。\n駐車場はありません。近くのコインパーキングをご利用下さい。</p>\n<p>会場は飲食可です。\n持ち込みOK、さしいれ歓迎。</p>\n<h2>参加費について</h2>\n<p>会場費500円をいただきます。</p>\n<h2>イベント参加対象者</h2>\n<ul>\n<li>Go、TinyGoに興味がある人（初心者歓迎）</li>\n<li>鍋好きの人</li>\n</ul>",
-      "url": "https://chigasakigo.connpass.com/event/398003/",
-      "image_url": "https://media.connpass.com/thumbs/86/70/8670341ed8f062f8360939143ee35a5f.png",
-      "hash_tag": "",
-      "started_at": "2026-07-14T19:30:00+09:00",
-      "ended_at": "2026-07-14T21:00:00+09:00",
-      "published_at": "2026-06-22T04:01:45+09:00",
-      "limit": 6,
+      "description": "<h1>✍️概要</h1>\n<p>比較的新しいサービスでのAI駆動開発の事例は急速に蓄積されつつある一方、<br>\n事業を長年支えてきた大規模・長寿命コードベースに対しては、コンテキスト量の膨大さや依存関係の複雑さが壁となり、どこまでAI駆動開発を適用できるか手探りの方も多いのではないでしょうか？</p>\n<p>本イベント「プロダクト開発、AIに丸ごと任せられるのか？Meet up #2」では、<br>「大規模・長寿命コードベースへのAI駆動開発適用」をテーマに、コンテキスト設計・ドキュメント整備、設計理解や影響範囲調査へのエージェント適用、リファクタリング／改修プロセスの再設計といった観点で、各社が実務で得つつある知見を持ち寄って深掘りします。</p>\n<p>異なるドメイン・スタックで大規模コードに向き合う各社の取り組みを比較しながら、「自社の既存プロダクトに、明日から取り入れられるAI駆動開発のヒント」を持ち帰っていただける場を目指します。<br>\nぜひご参加ください！</p>\n<h2>開催形式</h2>\n<ul>\n<li>オンライン・オフラインハイブリッド：ファインディ株式会社（会場）、Zoom配信</li>\n<li>申し込み：connpass（本サイト）</li>\n</ul>\n<hr>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:06</td>\n<td>オープニング / 会場案内（6分）</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>19:08 - 19:13</td>\n<td>（仮）マイクロサービス間の依存関係をAIに把握させる仕組み作り</td>\n<td>sontixyouさん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td>19:15 - 19:20</td>\n<td>AIに任せる領域を広げるまで ~大規模な認証基盤での AI駆動開発~</td>\n<td>中島 暢哉さん（合同会社DMM&zwnj;.com ）</td>\n</tr>\n<tr>\n<td>19:22 - 19:32</td>\n<td>勉強会紹介＆スポンサー紹介（10分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:34 - 19:39</td>\n<td>大規模コードベースへのAI導入 ── 何を委譲し、何を委譲しないかの判断基準とその拡張</td>\n<td>こまさん<a href=\"https://x.com/ai_yorozuya\" rel=\"nofollow\">@ai_yorozuya</a></td>\n</tr>\n<tr>\n<td>19:41 - 19:46</td>\n<td>AIの出力を安定させたのは、プロンプトではなくドキュメント構造だった</td>\n<td>中川 泰夫さん（Sansan株式会社）</td>\n</tr>\n<tr>\n<td>19:48 - 20:20</td>\n<td>Q&amp;A（32分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:22 - 20:30</td>\n<td>クロージング（8分）</td>\n<td>運営</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>※1人5分のLTです（各トーク間に転換2分を確保しています）。</p>\n<blockquote>\n<p>※20:30〜21:30 懇親会（ネットワーキング）\n<font color=\"red\"><br>※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>🤝会場スポンサー</h1>\n<p><img src=\"https://media.connpass.com/thumbs/9e/f6/9ef6fa5e43dd68600a718ba021188ebd.png\" width=\"300\"></p>\n<p><a href=\"https://unext-hd.co.jp/\" rel=\"nofollow\">株式会社U-NEXT HOLDINGS（USEN＆U-NEXT GROUP）</a><br></p>\n<p>本イベントは、会場スポンサーとして株式会社U-NEXT HOLDINGS様にご協力いただき開催しております。<br>\nU-NEXT HOLDINGS様の開発組織・採用についてご興味のある方は以下ページをぜひご覧ください！<br>\n<br></p>\n<ul>\n<li><a href=\"https://recruit.unext-hd.co.jp/\" rel=\"nofollow\">グループ採用サイト</a><br></li>\n<li><a href=\"https://hrmos.co/pages/u-nextholdings/jobs?jobType=FULL&amp;category=1600764878347055107\" rel=\"nofollow\">エンジニア求人一覧</a></li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/\" rel=\"nofollow\">生成AI活用のボトルネックを可視化し、開発組織の変革を実現するAIツール「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
+      "url": "https://findy-aiplus.connpass.com/event/399499/",
+      "image_url": "https://media.connpass.com/thumbs/de/b1/deb1d09650d77d2e86d1f85f37394d38.png",
+      "hash_tag": "AImarugoto_FindyAIPlus",
+      "started_at": "2026-07-14T19:00:00+09:00",
+      "ended_at": "2026-07-14T20:30:00+09:00",
+      "published_at": "2026-07-06T17:01:37+09:00",
+      "limit": 500,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
-        "id": 8683,
-        "subdomain": "chigasakigo",
-        "title": "Chigasaki.go",
-        "url": "https://chigasakigo.connpass.com/"
+        "id": 17529,
+        "subdomain": "findy-aiplus",
+        "title": "Findy AI+",
+        "url": "https://findy-aiplus.connpass.com/"
       },
-      "address": "神奈川県茅ヶ崎市十間坂 1-4-2",
-      "place": "FG-Space",
-      "lat": "35.330730900000",
-      "lon": "139.401596100000",
-      "owner_id": 8108,
-      "owner_nickname": "nuki_pon",
-      "owner_display_name": "ぬきぽん",
-      "accepted": 2,
+      "address": "東京都品川区大崎1丁目2−2（アートヴィレッジ大崎セントラルタワー）5F",
+      "place": "ファインディ株式会社",
+      "lat": "35.622384700000",
+      "lon": "139.727363000000",
+      "owner_id": 986836,
+      "owner_nickname": "sugamotota",
+      "owner_display_name": "t.sugamoto",
+      "accepted": 58,
       "waiting": 0,
-      "updated_at": "2026-06-22T15:51:36+09:00"
+      "updated_at": "2026-07-13T15:38:33+09:00"
     }
   ]
 }
