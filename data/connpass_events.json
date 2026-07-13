@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-13T15:06:53.825128+09:00",
+  "fetched_at": "2026-07-13T19:17:18.758246+09:00",
   "date": "20260713",
-  "count": 6,
+  "count": 5,
   "events": [
     {
       "id": 397789,
@@ -30,7 +30,7 @@
       "owner_id": 558750,
       "owner_nickname": "sge_unity",
       "owner_display_name": "sge_unity",
-      "accepted": 147,
+      "accepted": 173,
       "waiting": 0,
       "updated_at": "2026-07-08T17:47:55+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-06-16T18:03:38+09:00",
       "limit": 144,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2221,
         "subdomain": "andpad",
@@ -61,7 +61,7 @@
       "owner_id": 555936,
       "owner_nickname": "ANDPAD_TechLive",
       "owner_display_name": "ANDPAD_TechLive",
-      "accepted": 54,
+      "accepted": 58,
       "waiting": 0,
       "updated_at": "2026-07-10T19:13:53+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-06-08T11:02:47+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16162,
         "subdomain": "korb",
@@ -109,7 +109,7 @@
       "published_at": "2026-06-15T18:07:10+09:00",
       "limit": 44,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14959,
         "subdomain": "welcome-fintech",
@@ -123,8 +123,8 @@
       "owner_id": 67713,
       "owner_nickname": "takashi_matsuyuki",
       "owner_display_name": "applepine1125",
-      "accepted": 44,
-      "waiting": 1,
+      "accepted": 37,
+      "waiting": 0,
       "updated_at": "2026-07-03T17:54:11+09:00"
     },
     {
@@ -157,37 +157,6 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-07-10T14:56:13+09:00"
-    },
-    {
-      "id": 397371,
-      "title": "フレスコラジヲ ep.1",
-      "catch": "四つの知性の交差点。和田卓人 × 酒匂寛 × kyon_mm × 関将俊、台本なき思考の奔流。",
-      "description": "<h1>📻<strong>フレスコラジヲ</strong></h1>\n<p>フレスコラジヲは、あるテーマについて「いま、この人が何を考えているのか、感じているのかを知りたい」「この人とこの人が対談したらどんな議論が繰り広げられるのか聴いてみたい」といった主催者の欲望（知的好奇心）を満たすために開局しました。</p>\n<p>今回は和田卓人さん、酒匂寛さん、kyon_mmさん、関将俊さんをお迎えし、2026年5月に開催された<a href=\"https://www.scrumfestniigata.org/\" rel=\"nofollow\">スクラムフェス新潟</a>の基調講演『<a href=\"https://speakerdeck.com/twada/software-engineering-scrum-fest-niigata-2026-edition\" rel=\"nofollow\">2026年のソフトウェア開発を考える（2026/05版）</a>』から、パネリストのみなさんに「いま、話したいこと」を選定していただきました。パネリスト同士が話したいことを話しまくる様子をご覧いただけます。最後に「まとめ」ない放談スタイルです。</p>\n<p>💡フレスコラジヲのフレスコはフレスコ画のフレスコです。代表的なフレスコ画としてミケランジェロ『最後の審判』があります。フレスコ画には「漆喰が乾く前に描き切る」制約と「数百年単位で色が保持される」特徴があります。セッションのライブ感と希少性をお楽しみください。いつまでも色褪せず、長く語り継がれる対談になることを願っております。</p>\n<h2>📆 開催概要</h2>\n<ul>\n<li>日時：2026/7/13(月) 15:00 - 17:00（開場 14:30）</li>\n<li>会場：<a href=\"https://www.mitsubishielectric.co.jp/serendie/about/innovation-hub/\" rel=\"nofollow\">三菱電機㈱ Serendie Street YIMP</a> + オンライン（Zoom）</li>\n<li>住所：〒220-0012 神奈川県 横浜市西区 みなとみらい4-4-5 横浜アイマークプレイス10F</li>\n<li>最寄り駅：新高島駅（みなとみらい線） 徒歩7分、みなとみらい駅（みなとみらい線） 徒歩9分</li>\n<li>参加費：無料</li>\n</ul>\n<h2>⏰ タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">14:30</td>\n<td style=\"text-align: left;\">開場、受付開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:10</td>\n<td style=\"text-align: left;\">パネルディスカッション（テーマ1）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:30</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:35</td>\n<td style=\"text-align: left;\">パネルディスカッション（テーマ2）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:55</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00</td>\n<td style=\"text-align: left;\">パネルディスカッション（テーマ3）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:20</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:25</td>\n<td style=\"text-align: left;\">パネルディスカッション（テーマ4）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:45</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00</td>\n<td style=\"text-align: left;\">終了</td>\n</tr>\n</tbody>\n</table>\n<p>※ 進行の都合上、タイムテーブルに記載の時間が前後する可能性があります、予めご了承ください。</p>\n<h2>🎤 パネリスト</h2>\n<h3>和田卓人　タワーズ・クエスト株式会社</h3>\n<ul>\n<li>プログラマ、テスト駆動開発者。学生時代にソフトウェア工学を学び、オブジェクト指向分析/設計に傾倒。執筆活動や講演、ハンズオンイベントなどを通じてテスト駆動開発を広めようと努力している。『プログラマが知るべき97のこと』（オライリージャパン、2010）監修。『テスト駆動開発』（オーム社、2017）翻訳。『事業をエンジニアリングする技術者たち』（ラムダノート、2022）編者。『SQLアンチパターン第2版』（オライリージャパン、2025）監訳。テストライブラリ power-assert-js 作者。</li>\n<li>X(Twitter): @t_wada</li>\n<li>GitHub: @twada</li>\n<li>Bluesky: @twada</li>\n</ul>\n<h3>酒匂寛　（有）デザイナーズデン</h3>\n<ul>\n<li>東京大学農学部畜産獣医学科卒。1980年代初頭よりソフトウェア開発に従事。汎用機上のCOBOLプログラミングを皮切りに、COBOL統合開発環境やワークステーションのシステムプログラミングを経て独立。オブジェクト指向分析設計実装のコンサルテーションを行いながら大規模プロジェクトや組み込みシステムに携わる。21世紀以降はいわゆる形式手法に関わり、非接触型ICチップ（FeliCa）の仕様記述を始めとする複数のプロジェクトに関わる。現時点では形式手法を始めとする厳密な記述手段を、生成AIで支援することで普及させたいと思っている。2024年には日経BPより『上流から下流まで生成AIが変革するシステム開発』を刊行。以後も各種シンポジウムやカンファレンスで、生成AIを課題探求、要求整理、仕様化、設計、検証に組み込む実践的な開発像を発信している。単なるコード生成ではなく、人間の判断と厳密な記述をAIでどう支援するかを主題としている。</li>\n</ul>\n<h3>kyon_mm　合同会社デロイトトーマツ</h3>\n<ul>\n<li>コネクテッド及びMaaSのクラウドシステムに係るプラットフォーム及びインフラ設備に関する開発を10年にわたり経験。また、アジャイルコーチとして、新事業及び大規模システム開発を支援。加えて、筑波大学の非常勤講師として、同大学生にアジャイル開発について指導。全社アジャイル導入や、新規事業開発を中心に支援。2021年より現職で、フロント部署で防災DX、アジャイル変革、新規事業開発などのコンサルをやりながら、人事部門を兼務し社内エンゲージメントのリーダーを務める。</li>\n</ul>\n<h3>関将俊　三菱電機株式会社</h3>\n<ul>\n<li>アーティスト、プログラマ、XP実践者、Legendary Japanese Ruby hacker。1980年代初頭からプログラマ。1990年に「オブジェクト指向入門」に傾倒し、契約プログラミングに強く影響されたプログラミングスタイルを確立する。音声／画像認識の研究を経て、医用機器システムの開発に従事、2001年から2025年まで世界で最も長命のエクストリームプログラミングのチームを率いる。また同時にロール「プロの無職（プリンシパルエンジニア）」を提唱し実践した。1990年代終わりからRubyistで、20世紀に分散オブジェクトシステムdRuby、テンプレートシステムERBを開発し、多くのプログラマに影響を与えた。現在は三菱電機株式会社に所属、新たなロールを探っている。主著：「 The dRuby Book」「ロールプレイングゲーム（プログラマが知るべき97のこと への寄稿）」</li>\n</ul>\n<h2>🤝 ご参加にあたって</h2>\n<h3>現地参加の方</h3>\n<ul>\n<li>参加登録時の個人情報は 三菱電機㈱ Serendie Street YIMP の来場登録を目的に利用いたします。</li>\n<li>写真撮影についてはオープニングでご案内いたします。</li>\n<li>本イベントは、主催者による写真撮影、録音、録画を予定しております。撮影された写真や映像がSNS等に掲載されることをあらかじめご了承ください。</li>\n<li>会場内と会場周辺は禁煙となっております。</li>\n</ul>\n<h3>オンライン参加の方</h3>\n<ul>\n<li>配信URL(Zoom)は開催前日までに connpass の「参加者への情報」欄に掲載いたします。</li>\n<li>通信状況や機材トラブルにより配信が滞る可能性があります。</li>\n</ul>\n<h3>共通</h3>\n<ul>\n<li>本イベントの録音、録画はご遠慮ください。配信後はアーカイブを残す予定です。</li>\n<li>内容・時間などは、告知なく変更されることがございます。</li>\n<li>CC-BY-4.0で公開されている <a href=\"https://gist.github.com/JunichiIto/7a080f1cfb0ae27ef600c14b94a02db7\" rel=\"nofollow\">TokyoGirls.rb アンチハラスメントポリシー</a> に準じたアンチハラスメントポリシーを適用します。</li>\n</ul>\n<h2>🎨 主催</h2>\n<p>フレスコラジヲ</p>",
-      "url": "https://frescoradio.connpass.com/event/397371/",
-      "image_url": "https://media.connpass.com/thumbs/ae/70/ae70968d02ad4af9be13f0a856229a6f.png",
-      "hash_tag": "frescoradio",
-      "started_at": "2026-07-13T15:00:00+09:00",
-      "ended_at": "2026-07-13T17:00:00+09:00",
-      "published_at": "2026-06-19T15:56:23+09:00",
-      "limit": 120,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 17794,
-        "subdomain": "frescoradio",
-        "title": "フレスコラジヲ",
-        "url": "https://frescoradio.connpass.com/"
-      },
-      "address": "神奈川県横浜市西区みなとみらい4-4-5 横浜アイマークプレイス10F",
-      "place": "三菱電機㈱ Serendie Street YIMP",
-      "lat": "35.460222300000",
-      "lon": "139.628153800000",
-      "owner_id": 172119,
-      "owner_nickname": "miwa719",
-      "owner_display_name": "miwa719",
-      "accepted": 82,
-      "waiting": 0,
-      "updated_at": "2026-07-11T09:55:37+09:00"
     }
   ]
 }
