@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-14T03:27:00.686486+09:00",
+  "fetched_at": "2026-07-14T05:06:50.507239+09:00",
   "date": "20260714",
   "count": 13,
   "events": [
@@ -314,37 +314,6 @@
       "updated_at": "2026-07-10T15:06:08+09:00"
     },
     {
-      "id": 396547,
-      "title": "AIプロダクト開発者が語る！実践 AI-Driven Development Meetup",
-      "catch": "LINEヤフー Developer Meetup",
-      "description": "<p>7/3(金) 好評につき、オフライン 60 → 80名、オンライン 60 → 100名 に増枠しました。<br>\n7/1(水) 好評につき、オフライン 50 → 60名 に増枠しました。</p>\n<h2>イベント概要</h2>\n<p>LINEヤフーでは、<a href=\"https://www.lycorp.co.jp/ja/news/release/020366/\" rel=\"nofollow\">「Agent i」</a>構想のもと、多岐に渡る領域で AI Agent を活用したプロダクトの開発・提供を進めています。 ユーザーのみなさまに向けて Agentic で最適なユーザー体験を突き詰める中で、私たちの開発現場自身も、AX（AI Transformation）を強く推進・実行し続けており、アプリケーション開発の現場も日々進化を続けています。 今回の Meetup では、AIプロダクトの開発者が集い、各現場における AI-Driven Development のイマを余すことなくお伝えます。 コーディングやレビューといった開発現場の様子から、プロダクトチームの働き方の変化まで、LINEヤフーの開発現場のイマをお伝えします。</p>\n<h2>開催概要</h2>\n<p>📆 日時：2026年7月14日(火) 19:00-21:00（受付：18:30~） <br>\n📍 オフライン会場：LINEヤフー株式会社 紀尾井町オフィス 17F （受付2F）  <br>\n💻 オンライン会場：Zoom  ※URLは後日メールでお知らせいたします<br> \n💰 参加費：無料  <br></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">Opening</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:20</td>\n<td style=\"text-align: left;\">AIが実装を自走する時代の認知負債との戦い</td>\n<td style=\"text-align: left;\">山手 政実 (Masami Yamate)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:35</td>\n<td style=\"text-align: left;\">AIと1000本ノックしてたどり着いた、最速のプロダクト開発</td>\n<td style=\"text-align: left;\">栗原 祐二（Kurihara Yuji）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:50</td>\n<td style=\"text-align: left;\">実践！既存 Project への AI-Driven Development 適用〜 一ヶ月で Project 唯一のフロントエンドエンジニアを作り出せ〜</td>\n<td style=\"text-align: left;\">花谷 拓磨 (Hanatani Takuma)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:05</td>\n<td style=\"text-align: left;\">0→1のプロダクトを1ヶ月で形にするAI-Driven プロダクト開発</td>\n<td style=\"text-align: left;\">本宮 和明（Hongu Kazuaki）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05-21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00</td>\n<td style=\"text-align: left;\">Close</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルや開始時間は変更となる可能性がございます。  </p>\n<h1>セッション・登壇者紹介</h1>\n<h2>花谷 拓磨 (Hanatani Takuma)  / @potato4d</h2>\n<h3>タイトル / 実践！既存 Project への AI-Driven Development 適用〜 一ヶ月で Project 唯一のフロントエンドエンジニアを作り出せ〜</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1471782695676317702/8C1THi0C_400x400.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>2018年LINE株式会社中途入社。LINE求人領域サービスの開発リードを務めたのち、現在は専門技術によるプロダクト貢献を管轄する組織のマネジメントとAI関連サービスの開発を中心に従事する傍ら、AI-Driven Development の推進業務にも携わる。</p>\n</blockquote>\n<h2>山手 政実 (Masami Yamate) / @aikawa_japan</h2>\n<h3>タイトル / AIが実装を自走する時代の認知負債との戦い</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260217/yamate.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>LINEヤフー株式会社 2023年中途入社。Agent i コマース領域のAgentおよびコンテンツ開発を担当。直近は、AIによる自律開発、AIを主導とした開発手法の模索と業務フローの確立に取り組んでいる。</p>\n</blockquote>\n<h2>栗原 祐二（Kurihara Yuji）</h2>\n<h3>タイトル / AIと1000本ノックしてたどり着いた、最速のプロダクト開発</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260714/Kurihara.png\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>ソーシャルコマース SBU所属。2020年新卒入社。LINEアプリのショッピングタブの開発やAI関連サービスの開発を担当。AIエージェントを活用した開発ワークフローの構築・推進にも取り組んでいる。</p>\n</blockquote>\n<h2>本宮 和明（Hongu Kazuaki）</h2>\n<h3>タイトル / 0→1のプロダクトを1ヶ月で形にするAI-Driven プロダクト開発</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260714/Hongu.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>LINE株式会社 2022年新卒入社。入社以来LINE公式アカウントのサーバーサイド開発を担当。\n現在はLINE公式アカウント AIモードの開発を行っている。</p>\n</blockquote>\n<h1>注意事項</h1>\n<ul>\n<li>本イベントの内容は、後日主催団体のブログやYouTube等の媒体にて紹介する可能性があります。その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。</li>\n<li>技術交流が目的の勉強会ですので、知識の共有および、参加者同士の交流を目的としない参加はお断りしています。</li>\n<li>当イベントを通じて取得した個人情報等の取扱いは、LINEヤフー株式会社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想についてお聞きする予定です。\n<br>\n・LINEヤフー株式会社  <a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">個人情報保護方針</a>  </li>\n</ul>\n<h2>アンチハラスメントポリシー</h2>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーカ、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。\nTipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。\nそのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h2>キャンセルポリシー</h2>\n<ul>\n<li>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。</li>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</li>\n</ul>",
-      "url": "https://lycorptech-jp.connpass.com/event/396547/",
-      "image_url": "https://media.connpass.com/thumbs/a1/ba/a1ba9444a089bf2555f262289a8adb44.png",
-      "hash_tag": "aidrivendevmeetup",
-      "started_at": "2026-07-14T19:00:00+09:00",
-      "ended_at": "2026-07-14T21:00:00+09:00",
-      "published_at": "2026-06-17T12:01:08+09:00",
-      "limit": 280,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14178,
-        "subdomain": "lycorptech-jp",
-        "title": "LINEヤフー Tech",
-        "url": "https://lycorptech-jp.connpass.com/"
-      },
-      "address": "東京都千代田区紀尾井町１−２ 東京ガーデンテラス 17F",
-      "place": "LINEヤフー株式会社 紀尾井町オフィス",
-      "lat": "35.679992600000",
-      "lon": "139.737936300000",
-      "owner_id": 757858,
-      "owner_nickname": "soleil-usan",
-      "owner_display_name": "inouye",
-      "accepted": 264,
-      "waiting": 5,
-      "updated_at": "2026-07-13T14:04:45+09:00"
-    },
-    {
       "id": 397435,
       "title": "estie PM Meetup #7 エンジニア・事業開発・セールスから広がるプロダクトマネジメント",
       "catch": "",
@@ -374,6 +343,37 @@
       "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-07-13T22:16:46+09:00"
+    },
+    {
+      "id": 396547,
+      "title": "AIプロダクト開発者が語る！実践 AI-Driven Development Meetup",
+      "catch": "LINEヤフー Developer Meetup",
+      "description": "<p>7/3(金) 好評につき、オフライン 60 → 80名、オンライン 60 → 100名 に増枠しました。<br>\n7/1(水) 好評につき、オフライン 50 → 60名 に増枠しました。</p>\n<h2>イベント概要</h2>\n<p>LINEヤフーでは、<a href=\"https://www.lycorp.co.jp/ja/news/release/020366/\" rel=\"nofollow\">「Agent i」</a>構想のもと、多岐に渡る領域で AI Agent を活用したプロダクトの開発・提供を進めています。 ユーザーのみなさまに向けて Agentic で最適なユーザー体験を突き詰める中で、私たちの開発現場自身も、AX（AI Transformation）を強く推進・実行し続けており、アプリケーション開発の現場も日々進化を続けています。 今回の Meetup では、AIプロダクトの開発者が集い、各現場における AI-Driven Development のイマを余すことなくお伝えます。 コーディングやレビューといった開発現場の様子から、プロダクトチームの働き方の変化まで、LINEヤフーの開発現場のイマをお伝えします。</p>\n<h2>開催概要</h2>\n<p>📆 日時：2026年7月14日(火) 19:00-21:00（受付：18:30~） <br>\n📍 オフライン会場：LINEヤフー株式会社 紀尾井町オフィス 17F （受付2F）  <br>\n💻 オンライン会場：Zoom  ※URLは後日メールでお知らせいたします<br> \n💰 参加費：無料  <br></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">Opening</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:20</td>\n<td style=\"text-align: left;\">AIが実装を自走する時代の認知負債との戦い</td>\n<td style=\"text-align: left;\">山手 政実 (Masami Yamate)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:35</td>\n<td style=\"text-align: left;\">AIと1000本ノックしてたどり着いた、最速のプロダクト開発</td>\n<td style=\"text-align: left;\">栗原 祐二（Kurihara Yuji）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:50</td>\n<td style=\"text-align: left;\">実践！既存 Project への AI-Driven Development 適用〜 一ヶ月で Project 唯一のフロントエンドエンジニアを作り出せ〜</td>\n<td style=\"text-align: left;\">花谷 拓磨 (Hanatani Takuma)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:05</td>\n<td style=\"text-align: left;\">0→1のプロダクトを1ヶ月で形にするAI-Driven プロダクト開発</td>\n<td style=\"text-align: left;\">本宮 和明（Hongu Kazuaki）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05-21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00</td>\n<td style=\"text-align: left;\">Close</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルや開始時間は変更となる可能性がございます。  </p>\n<h1>セッション・登壇者紹介</h1>\n<h2>花谷 拓磨 (Hanatani Takuma)  / @potato4d</h2>\n<h3>タイトル / 実践！既存 Project への AI-Driven Development 適用〜 一ヶ月で Project 唯一のフロントエンドエンジニアを作り出せ〜</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1471782695676317702/8C1THi0C_400x400.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>2018年LINE株式会社中途入社。LINE求人領域サービスの開発リードを務めたのち、現在は専門技術によるプロダクト貢献を管轄する組織のマネジメントとAI関連サービスの開発を中心に従事する傍ら、AI-Driven Development の推進業務にも携わる。</p>\n</blockquote>\n<h2>山手 政実 (Masami Yamate) / @aikawa_japan</h2>\n<h3>タイトル / AIが実装を自走する時代の認知負債との戦い</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260217/yamate.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>LINEヤフー株式会社 2023年中途入社。Agent i コマース領域のAgentおよびコンテンツ開発を担当。直近は、AIによる自律開発、AIを主導とした開発手法の模索と業務フローの確立に取り組んでいる。</p>\n</blockquote>\n<h2>栗原 祐二（Kurihara Yuji）</h2>\n<h3>タイトル / AIと1000本ノックしてたどり着いた、最速のプロダクト開発</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260714/Kurihara.png\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>ソーシャルコマース SBU所属。2020年新卒入社。LINEアプリのショッピングタブの開発やAI関連サービスの開発を担当。AIエージェントを活用した開発ワークフローの構築・推進にも取り組んでいる。</p>\n</blockquote>\n<h2>本宮 和明（Hongu Kazuaki）</h2>\n<h3>タイトル / 0→1のプロダクトを1ヶ月で形にするAI-Driven プロダクト開発</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260714/Hongu.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>LINE株式会社 2022年新卒入社。入社以来LINE公式アカウントのサーバーサイド開発を担当。\n現在はLINE公式アカウント AIモードの開発を行っている。</p>\n</blockquote>\n<h1>注意事項</h1>\n<ul>\n<li>本イベントの内容は、後日主催団体のブログやYouTube等の媒体にて紹介する可能性があります。その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。</li>\n<li>技術交流が目的の勉強会ですので、知識の共有および、参加者同士の交流を目的としない参加はお断りしています。</li>\n<li>当イベントを通じて取得した個人情報等の取扱いは、LINEヤフー株式会社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想についてお聞きする予定です。\n<br>\n・LINEヤフー株式会社  <a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">個人情報保護方針</a>  </li>\n</ul>\n<h2>アンチハラスメントポリシー</h2>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーカ、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。\nTipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。\nそのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h2>キャンセルポリシー</h2>\n<ul>\n<li>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。</li>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</li>\n</ul>",
+      "url": "https://lycorptech-jp.connpass.com/event/396547/",
+      "image_url": "https://media.connpass.com/thumbs/a1/ba/a1ba9444a089bf2555f262289a8adb44.png",
+      "hash_tag": "aidrivendevmeetup",
+      "started_at": "2026-07-14T19:00:00+09:00",
+      "ended_at": "2026-07-14T21:00:00+09:00",
+      "published_at": "2026-06-17T12:01:08+09:00",
+      "limit": 280,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14178,
+        "subdomain": "lycorptech-jp",
+        "title": "LINEヤフー Tech",
+        "url": "https://lycorptech-jp.connpass.com/"
+      },
+      "address": "東京都千代田区紀尾井町１−２ 東京ガーデンテラス 17F",
+      "place": "LINEヤフー株式会社 紀尾井町オフィス",
+      "lat": "35.679992600000",
+      "lon": "139.737936300000",
+      "owner_id": 757858,
+      "owner_nickname": "soleil-usan",
+      "owner_display_name": "inouye",
+      "accepted": 264,
+      "waiting": 5,
+      "updated_at": "2026-07-13T14:04:45+09:00"
     },
     {
       "id": 398003,
