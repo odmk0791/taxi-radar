@@ -380,6 +380,9 @@ td.cnt-cell,td.avg-cell{text-align:right;}
       <div class="leg-btn active" id="lb-ktn" onclick="toggleLeg('ktn',this)">
         <span style="width:10px;height:10px;border-radius:50%;background:#ee4455;flex-shrink:0;"></span>空転
       </div>
+      <div class="leg-btn active" id="gps-mode-btn" onclick="toggleGpsMode()" style="display:none;margin-left:auto;color:#c0a040;border-color:#5a4a20;">
+        GPS: フル
+      </div>
     </div>
     <div id="trip-list"></div>
     <div id="status-bar">—</div>
@@ -406,6 +409,16 @@ const C_TIME='乗車時間',C_FARE_B='料金',C_STATUS='ステータス',C_THX='
 let leafMap,coordMap=new Map(),bdCache=null,dailyCache=null,breakCache=null,kutenCache=null;
 let tripLayers=[],deadLayers=[],breakLayers=[],kutenLayers=[],activeN=null,showTrip=true,showDead=true;
 let gpsLayers=[],gpsActive=false; // GPS実測軌跡(data/gps/YYYY-MM-DD.json がある日のみ)
+let gpsMode='full'; // 'full'=実車もGPS軌跡 / 'idle'=実車は従来の直線、空車のみGPS
+let currentDay=null;
+function toggleGpsMode(){
+  gpsMode=(gpsMode==='full')?'idle':'full';
+  const b=document.getElementById('gps-mode-btn');
+  if(b)b.textContent='GPS: '+(gpsMode==='full'?'フル':'空車のみ');
+  if(currentDay)loadRoute(currentDay);
+}
+// GPS日の実車OD直線の透明度(フルGPS時は薄く、空車のみモードでは従来通り主役)
+function odOpacity(){return showTrip?((gpsActive&&gpsMode==='full')?0.2:0.75):0;}
 let allDays=[];
 // 武三23区外アドレスのジオコーディングキャッシュ（セッション持続）
 const apiGeoCache=new Map();
@@ -627,7 +640,7 @@ function setActive(n){
     document.getElementById('tr-'+activeN)?.classList.remove('active');
     const p=tripLayers.find(l=>l.n===activeN);
     if(p){
-      if(p.line)p.line.setStyle({color:'#f5a000',weight:3,opacity:showTrip ? (gpsActive?0.2:0.75) : 0});
+      if(p.line)p.line.setStyle({color:'#f5a000',weight:3,opacity:odOpacity()});
       if(p.pm)p.pm.setIcon(iconP(activeN,false));
       if(p.dm)p.dm.setIcon(iconD(false));
     }
@@ -670,7 +683,7 @@ function toggleLeg(type,btn){
   if(type==='trip'){
     showTrip=btn.classList.contains('active');
     tripLayers.forEach(l=>{
-      if(l.line)l.line.setStyle({opacity:showTrip ? (gpsActive?0.2:0.75) : 0});
+      if(l.line)l.line.setStyle({opacity:odOpacity()});
       if(l.pm)l.pm.setOpacity(showTrip ? 1 : 0);
       if(l.dm)l.dm.setOpacity(showTrip ? 1 : 0);
     });
@@ -895,6 +908,7 @@ function getMobBottomPad(){
 
 // ── VIEW 2 ────────────────────────────────────────────
 async function loadRoute(dayInfo){
+  currentDay=dayInfo;
   document.getElementById('view-dates').className='';
   document.getElementById('view-route').className='active';
   setTimeout(()=>leafMap.invalidateSize(),150);
@@ -1014,6 +1028,8 @@ async function loadRoute(dayInfo){
       }
     }catch(e){gpsData=null;}
     gpsActive=!!gpsData;
+    const gmb=document.getElementById('gps-mode-btn');
+    if(gmb){gmb.style.display=gpsActive?'flex':'none';gmb.textContent='GPS: '+(gpsMode==='full'?'フル':'空車のみ');}
 
     const matched=trips.filter(t=>t.ok).length;
     const fareDisp=dailyFare||trips.reduce((s,t)=>s+t.fare,0);
@@ -1087,7 +1103,7 @@ async function loadRoute(dayInfo){
     const bounds=[];
     valid.forEach(t=>{
       const line=L.polyline([[t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]],
-        {color:'#f5a000',weight:3,opacity:showTrip ? (gpsData?0.2:0.75) : 0}).addTo(leafMap);
+        {color:'#f5a000',weight:3,opacity:(gpsData?odOpacity():(showTrip?0.75:0))}).addTo(leafMap);
       const pm=L.marker([t.pc.lat,t.pc.lng],{icon:iconP(t.n,false)}).addTo(leafMap)
         .bindTooltip(`#${t.n} 乗：${t.pickup}`,{direction:'top'});
       const dm=L.marker([t.dc.lat,t.dc.lng],{icon:iconD(false)}).addTo(leafMap)
@@ -1137,12 +1153,13 @@ async function loadRoute(dayInfo){
     if(gpsData){
       const P=gpsData.points;
       const{cls,tripN}=classifyGps(P,trips,dayBreaks);
+      const drawRide=(gpsMode==='full'); // 空車のみモードでは実車GPS軌跡を描かない(OD直線が主役)
       const styleOf=t=>t==='ride'?{color:'#f5a000',weight:3,opacity:showTrip?0.85:0}
         :t==='brk'?{color:'#33cc66',weight:2,opacity:showBrk?0.65:0}
         :{color:'#00ccee',weight:2,opacity:showDead?0.7:0};
       let run=[P[0]],runCls=cls[0],runN=tripN[0];
       const flush=()=>{
-        if(run.length>1){
+        if(run.length>1&&(drawRide||runCls!=='ride')){
           const line=L.polyline(run.map(p=>[p[1],p[2]]),styleOf(runCls)).addTo(leafMap);
           const cn=runN;
           if(runCls==='ride'&&cn)line.on('click',()=>setActive(cn));
@@ -1150,8 +1167,10 @@ async function loadRoute(dayInfo){
         }
       };
       for(let i=1;i<P.length;i++){
-        const gap=P[i][0]-P[i-1][0]>180; // 3分超は欠測として線を切る
-        if(gap||cls[i]!==runCls||tripN[i]!==runN){
+        const gap=P[i][0]-P[i-1][0]>180; // 3分超は欠測
+        // 同一実車内の欠測(トンネル等)はフルGPSモードでは橙実線で直結する
+        const bridge=gap&&drawRide&&cls[i]==='ride'&&runCls==='ride'&&tripN[i]===runN;
+        if((gap&&!bridge)||cls[i]!==runCls||tripN[i]!==runN){
           if(!gap)run.push(P[i]); // 区分変化点は繋いで隙間を作らない
           flush();
           run=[P[i]];runCls=cls[i];runN=tripN[i];
