@@ -575,7 +575,7 @@ function fareBucket(f){
 
 function buildData(parsed){
   var H=parsed.headers,rows=parsed.rows;
-  var iDate=-1,iD=-1,iT=-1,iW=-1,iN=-1,iS=-1,iF=-1,iK=-1,iFix=-1;
+  var iDate=-1,iD=-1,iT=-1,iW=-1,iN=-1,iS=-1,iF=-1,iK=-1,iFix=-1,iLat=-1,iLng=-1;
   for(var i=0;i<H.length;i++){
     var h=H[i].replace(/\s/g,'');
     if(h==='日付'&&iDate===-1)iDate=i;
@@ -587,6 +587,8 @@ function buildData(parsed){
     if(h==='料金'&&iF===-1)iF=i;
     if(h==='サンキュー'&&iK===-1)iK=i;
     if(h==='固定客'&&iFix===-1)iFix=i;
+    if((h==='乗車地：緯度'||h==='乗車地:緯度')&&iLat===-1)iLat=i;
+    if((h==='乗車地：経度'||h==='乗車地:経度')&&iLng===-1)iLng=i;
   }
   if(iDate===-1)iDate=0;if(iD===-1)iD=1;if(iT===-1)iT=2;if(iW===-1)iW=5;
   if(iN===-1)iN=6;if(iS===-1)iS=11;if(iF===-1)iF=9;if(iK===-1)iK=13;
@@ -599,6 +601,9 @@ function buildData(parsed){
     var ward=(r[iW]||'').trim(),name=(r[iN]||'').trim();
     var status=(r[iS]||'').trim(),fareRaw=(r[iF]||'').trim();
     var sk=(r[iK]||'').trim();
+    var rowLat=iLat>=0?parseFloat(r[iLat]):NaN;
+    var rowLng=iLng>=0?parseFloat(r[iLng]):NaN;
+    var hasGps=!isNaN(rowLat)&&!isNaN(rowLng);
     if(!day||!ts||!ward||!name)continue;
     var hm=ts.match(/^(\d+):(\d+)/);if(!hm)continue;
     var hour=parseInt(hm[1]);
@@ -616,11 +621,13 @@ function buildData(parsed){
       agg[key]={day:day,dayType:dayType,hour:hour,ward:ward,name:name,
         count:0,goCount:0,smCount:0,naCount:0,
         fb:[0,0,0,0],skCount:0,normalCount:0,ptCount:0,ptPCount:0,
-        lat:co[0],lng:co[1],mins:[],fixS:0,fixM:0,fixL:0};
+        lat:co[0],lng:co[1],mins:[],fixS:0,fixM:0,fixL:0,
+        gpsLat:null,gpsLng:null,gpsCount:0};
     }
     var e=agg[key];
     e.count++;
     e.mins.push(min);
+    if(hasGps){e.gpsCount++;e.gpsLat=rowLat;e.gpsLng=rowLng;}
     if(status==='GO')e.goCount++;
     if(status==='スマ配')e.smCount++;
     if(status==='流し')e.naCount++;
@@ -719,6 +726,23 @@ function matchFilter(e){
   return cnt;
 }
 
+function showPreciseAddr(btn, lat, lng){
+  btn.textContent='🔍 調べています…';
+  btn.disabled=true;
+  fetch('https://nominatim.openstreetmap.org/reverse?format=json&lat='+lat+'&lon='+lng+'&zoom=18&addressdetails=1',{
+    headers:{'Accept-Language':'ja'}
+  }).then(function(r){return r.json();}).then(function(data){
+    var addr=data.display_name||'住所取得失敗';
+    var short=addr.split(',').slice(0,3).join('、');
+    var url='https://www.google.com/maps/dir/?api=1&destination='+lat+','+lng+'&travelmode=driving';
+    btn.outerHTML='<div style="font-size:11px;color:#8b949e;margin-top:2px;line-height:1.5">📍 '+short+
+      ' <a href="'+url+'" target="_blank" onclick="event.stopPropagation()" style="color:#58a6ff;font-weight:700;text-decoration:none">🧭ルート</a></div>';
+  }).catch(function(e){
+    btn.textContent='⚠️ 取得失敗（再タップで再試行）';
+    btn.disabled=false;
+  });
+}
+
 function renderRadar(){
   var list=document.getElementById('rl');
   // 時間帯バッジ更新
@@ -757,9 +781,11 @@ function renderRadar(){
     var cnt=matchFilter(r)*weight;
     if(cnt===0)continue;
     var k=r.ward+r.name;
-    if(!agg[k])agg[k]={w:r.ward,n:r.name,c:0,gc:0,sc:0,nc:0,lat:r.lat,lng:r.lng,mins:[],fixS:0,fixM:0,fixL:0};
+    if(!agg[k])agg[k]={w:r.ward,n:r.name,c:0,gc:0,sc:0,nc:0,lat:r.lat,lng:r.lng,mins:[],fixS:0,fixM:0,fixL:0,gpsLat:null,gpsLng:null,gpsCount:0};
     agg[k].c+=cnt;agg[k].gc+=r.goCount*weight;agg[k].sc+=r.smCount*weight;agg[k].nc+=r.naCount*weight;
     agg[k].fixS+=(r.fixS||0);agg[k].fixM+=(r.fixM||0);agg[k].fixL+=(r.fixL||0);
+    agg[k].gpsCount+=(r.gpsCount||0);
+    if(r.gpsLat!=null){agg[k].gpsLat=r.gpsLat;agg[k].gpsLng=r.gpsLng;}
     if(r.mins)r.mins.forEach(function(m){agg[k].mins.push(r.hour*60+m);});
   }
   var EXCL=JSON.parse(localStorage.getItem('taxiradar_exclude')||'[]');
@@ -794,6 +820,11 @@ function renderRadar(){
     if((s.fixM||0)>0)badges+='<span class="badge" style="background:rgba(210,153,34,.15);color:#d29922">⭐M '+s.fixM+'</span>';
     if((s.fixS||0)>0)badges+='<span class="badge" style="background:rgba(88,166,255,.15);color:#58a6ff">⭐S '+s.fixS+'</span>';
     var hotBadge=s.hotTime?'<span class="badge-hot">⚡ '+s.hotTime+'の実績</span>':'';
+    var gpsRow=(s.gpsCount>0)?
+      '<div class="tags" style="margin-top:4px">'+
+        '<span class="tag" style="background:rgba(57,211,83,.12);color:#39d353">📍 GPS実績 '+s.gpsCount+'件</span>'+
+        '<button style="background:rgba(88,166,255,.12);color:#58a6ff;border:none;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit" onclick="event.stopPropagation();showPreciseAddr(this,'+s.gpsLat+','+s.gpsLng+')">🔍 詳細住所</button>'+
+      '</div>':'';
     var fbStats=getFbStats(s.w+s.n,tgt);
     var fbHtml='<div class="fb-row">'+
       '<button class="fb-btn fb-hit" onclick="event.stopPropagation();recordFb(\''+s.w+'\',\''+s.n+'\','+tgt+',1)">✅ 乗せた</button>'+
@@ -805,6 +836,7 @@ function renderRadar(){
       (badges?'<div class="badges">'+badges+'</div>':'')+
       (hotBadge?'<div class="hot-row">'+hotBadge+'</div>':'')+
       '<div class="tags"><span class="tag td">📍 '+d.toFixed(1)+'km</span><span class="tag tc">🏆 '+score+'件'+rl+'</span></div>'+
+      gpsRow+
       '<div class="bar"><div class="barf" style="width:'+Math.round(s.c*rainBoost/mx*100)+'%"></div></div>'+
       fbHtml+
       '</div><div class="carr">›</div><button class="excl-btn" onclick="event.stopPropagation();excludeSpot(\''+s.w+'\',\''+s.n+'\')">🚫</button></div>';
