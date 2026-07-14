@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-14T10:48:06.452949+09:00",
+  "fetched_at": "2026-07-14T13:44:11.054055+09:00",
   "date": "20260714",
-  "count": 12,
+  "count": 13,
   "events": [
     {
       "id": 400351,
@@ -35,37 +35,6 @@
       "updated_at": "2026-07-12T10:48:49+09:00"
     },
     {
-      "id": 394713,
-      "title": "Scrum Masters Night! in Tokyo（オンサイト）",
-      "catch": "スクラムマスターのための、スクラムマスターによる課題解決型イベントです！",
-      "description": "<h2>実施概要 💁‍♀️</h2>\n<p><strong>Scrum Masters Night!</strong>（スクラムマスターズナイト） は、オープンスペーステクノロジー（※）で運営される、スクラムマスターのための、スクラムマスターによる課題解決型イベントです！</p>\n<p>参加者同士のディスカッションを通じて、スクラムを実践する上でぶつかった課題や疑問に対して解決のヒントを得ることを目的としています。</p>\n<h2>日時・会場</h2>\n<p>日時：2026年7月14日(火)　19:30~(19:15開場） <br>\n場所： 株式会社ログラス本社<br>\n〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階<br></p>\n<h2>電車で来る場合</h2>\n<p>都営地下鉄浅草線・京浜急行電鉄「泉岳寺駅」: A4出口から徒歩1分<br>\nJR山手線・京浜東北線「高輪ゲートウェイ駅」: 徒歩7分<br></p>\n<h2>入館方法</h2>\n<p>ビル正面玄関からエレベーターで9階までお越しください。<br>\n※19時30分以降はビルの入り口がしまっている可能性があります。その場合は Connpassの「イベントへ問い合わせ」から連絡ください。<br></p>\n<h3>会場諸注意</h3>\n<ul>\n<li>会場は禁煙です。</li>\n<li>イベントの様子を撮影し、ブログや SNS などで公開することがあります。その際、来場者の姿も公開されることがあることをご承知おきください。</li>\n</ul>\n<h3>新型コロナ感染対策について</h3>\n<ul>\n<li>体温が37.5度以上の方は入館をお控え下さい</li>\n</ul>\n<h3>テーマの例</h3>\n<p>以下、参考として過去のテーマをあげさせて頂きます。<br></p>\n<ul>\n<li>複数のプロジェクトチームから別々の業務を依頼される横断チームにスクラムが向いているか悩み</li>\n<li>アフターコロナにおけるセレモニーなど運営</li>\n<li>開発者兼任スクラムマスターの振る舞い方について</li>\n<li>POがウォーターフォール的に段階的に作りたがる、価値を最大化するには？</li>\n<li>チームメンバー（社外）からのフィードバックの集め方</li>\n<li>仲の良いチーム、深い（KPTの）Pやタフクエスチョンが自分たちから出るようにするには？</li>\n<li>初心者向けのスクラム体験ワークショップのアイデアで良いの知ってます？</li>\n<li>賢い愚者の具体的な振る舞いや必要な能力とは？</li>\n<li>1メンバーの立場でスクラムを導入するにはどうすればよいか</li>\n<li>スクラムマスター自身が自分のスキルを高めるためにどう内省しているか語り合いたい</li>\n<li>現場とリモートでメンバーが分かれているときのチームの醸成、Sprintの使い方</li>\n<li>スクラムチームと情シスなどバックオフィス部門のより良いかかわり方</li>\n<li>スクラムにおける新人教育について</li>\n<li>チームの問題意識（先の問題と先手を考えること）を高める&amp;自発的行動を促すには？</li>\n<li>人事評価制度どうすればいいのかわからない</li>\n<li>タイムボックスを維持したまま開発量を増やすには？</li>\n<li>受託開発であじゃいる</li>\n<li>コロナ禍(リモートワーク）でのチーム開発</li>\n<li>スクラム開発を組織に導入するときに困ったこと・うまくいったこと</li>\n<li>非ITでアジャイル・スクラムやっている人集まれー</li>\n<li>モブプロ・ペアプロやっている人、やりたい人話が聞きたいです</li>\n<li>課題を発見するためにチームでどういう指標 ・データを取っていますか？ </li>\n</ul>\n<h3>※オープンスペーステクノロジーについて</h3>\n<p>Scrum Masters Night! はオープンスペーステクノロジー（OST）で運営しています。</p>\n<p>OST は、スクラムアライアンスが主催する「Global Scrum Gathering」などでも活用されている、ディスカッションのための方法論です。</p>\n<p>参加者自身が議論したいトピックを持ち寄り、小グループで自己組織化してディスカッションを行います。</p>\n<p>OST の雰囲気や進め方を知りたい方は、<a href=\"https://techblog.recruit.co.jp/article-413/\" rel=\"nofollow\">こちらのブログ</a>もご覧ください。（当イベントの進行とはやや異なります）</p>\n<p>備品として付箋、ペン、ホワイトボード、マーカーを用意しています。議論中のメモ等にお使いください。</p>\n<h2>参加対象者 👥</h2>\n<ul>\n<li>スクラムの実践や導入に関わっている方</li>\n<li>スクラムを最近始めた方</li>\n<li>スクラムをこれから始めようと思っている方</li>\n</ul>\n<p>※ スクラム未経験の方も参加可ですが、書籍や Web 等で、基礎知識を習得していることを必須条件とさせていただきます。 </p>\n<h2>タイムスケジュール ⏰</h2>\n<p>下記の時間を目安に進行します。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15 -</td>\n<td>開場・受付開始</td>\n</tr>\n<tr>\n<td>19:30 - 19:50</td>\n<td>運営からの説明、テーマ選び</td>\n</tr>\n<tr>\n<td>19:50 - 21:00</td>\n<td>2回に分けてディスカッション</td>\n</tr>\n<tr>\n<td>21:00 - 21:05</td>\n<td>フィードバック、クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>準備・持参いただきたいもの 💼</h2>\n<h3>1. ディスカッションテーマを事前に考えておく</h3>\n<p>スムーズな進行と有意義な学びのために、 ディスカッションしたいテーマについて、何を話したいか、何を得て帰りたいかを事前に考えておくことをおすすめします。 </p>\n<h3>2. 当日の持物</h3>\n<h4>ディスカッション時の飲物・軽食の持参</h4>\n<ul>\n<li>飲食に関しては、BYOB（Bring Your Own Beverage/Beer/Booze）形式ですが、以下の注意点を考慮して各自ご用意の上ご来場ください。</li>\n<li>アルコールはOKですが、1人3缶までとさせていただきます。</li>\n</ul>\n<h3>3. Scrum Masters Night! Facebook グループ への参加</h3>\n<p><a href=\"https://www.facebook.com/groups/339161719556500/\" rel=\"nofollow\">Scrum Masters Night! Facebook グループ</a> で当日の連絡や、今後のイベントの告知をしていますので、ぜひ事前にご参加ください。</p>\n<h2>運営メンバーのご紹介（一部）👻</h2>\n<p><img alt=\"中村　浩司\" src=\"https://media.connpass.com/thumbs/fc/a9/fca90c672e90babdac220228c08533c2.png\"><br>\n名前：中村　浩司<br>\n所属：株式会社ジーニー<br>\n職種：エンジニア 兼 スクラムマスター<br>\nコメント：<br>\n駆け出しスクラムマスターとして日々奮闘中です！<br>\n皆さんの現場での悩みや工夫をぜひお聞かせください。一緒に学べることを楽しみにしています！<br></p>\n<p><img alt=\"白鳥　航亮\" src=\"https://media.connpass.com/thumbs/09/e8/09e80c687537fafe7f415c5a1b4e5965.png\"><br>\n名前：白鳥　航亮<br>\n所属：LINEヤフー株式会社<br>\n職種：スクラムマスター<br>\n保有資格：認定スクラムマスター(Certified Scrum Master (CSM))<br>\nコメント：<br>\n運用チームのスクラムマスターとして一つのチームで、３年間スクラムを続けてきました。<br>\n色々な現場経験がありますので、ご興味があればぜひこの機会に質問してください。<br>\n　・運用チームでのスクラムの経験<br>\n　・現場での課題解決の経験<br>\n　・チームの成長過程に関して<br>\n　・TDD、モブプログラミングなどの技術的な解決策の実践例<br></p>\n<p><img alt=\"山崎 耕太郎\" src=\"https://media.connpass.com/thumbs/fe/ec/feec124d09c7aabb7bd1aebf5603997f.png\"><br>\n名前: 山崎 耕太郎<br>\n所属: 株式会社MIXI<br>\n職種: エンジニア / スクラムマスター　<br>\nコメント: 様々な現場のことを聞けることを楽しみにしています！よろしくお願いします！<br></p>\n<p><img alt=\"森島 諒\" src=\"https://media.connpass.com/thumbs/a8/07/a8070ec9fde0385e6efca845aba3fdf6.png\"><br>\n名前: 森島 諒<br>\n所属: 株式会社ログラス<br>\n職種: QAエンジニア / スクラムマスター<br>\n保有資格: CSM<br>\nコメント: 現場の課題や工夫を持ち寄り、一緒に知見を増やしていきましょう！<br></p>\n<p><img alt=\"松下 純\" src=\"https://media.connpass.com/thumbs/e4/26/e4264afb7f5a2e40ac922b863cb9f9ec.png\"><br>\n名前: 松下 純<br>\n所属: QiQ Lab. Inc. / ミンカブ・ジ・インフォノイド<br>\n職種: テックリード / スクラムマスター<br>\n保有資格: CSM<br>\nコメント: 一緒にわいわいしましょう！<br></p>\n<p><img alt=\"KAKKA\" src=\"https://media.connpass.com/thumbs/35/7d/357d5da8561ab4bab7c6ac000d6730d7.png\"><br>\n名前: KAKKA(平田将久)<br>\n所属: 株式会社MIXI<br>\n職種: Engineering Manager, DX Promoter, Agile Coach<br>\n保有資格: CSP-SM<br>\nコメント: これまで様々なスクラムチームと関わってきましたが、まだまだ学びは増え続けています。ここでもお互いにたくさん学びましょう！<br></p>\n<h3>アンチハラスメントポリシー</h3>\n<p>セクシュアルハラスメント・パワーハラスメント・ストーカー等の他人への迷惑行為を行うことは禁止します。 反する行為があった場合、警告や退去勧告などの対策を行います。 具体的に何をしたかではなく、相手に嫌な思いをさせたらそれはハラスメントです。以下についての不快な言動・表現・差別を含みます。<br>\n<br>\n性のこと：性差・性同一性・性的指向<br>\n体のこと：外見・身体的特徴・年齢・ハンディキャップ（障がい・病気）<br>\n文化のこと：国籍・言語・宗教・支持政党・社会的身分<br>\n一方的な迷惑行為：不適切な接触・ストーカー・妨害・脅迫・強要・望まない写真撮影や録音録画<br></p>\n<h4>みなさんに期待する行動</h4>\n<ul>\n<li>ハラスメント行為に加担しないこと。</li>\n<li>相手をリスペクトして行動すること。（全員が個性を表現できるよう過ごしましょう）</li>\n<li>すべての法令を遵守すること。（知的財産権・商標・意匠・その他の権利侵害をせぬようにしましょう）</li>\n<li>妨害となる行為をしないこと。（破壊的や威圧的な言動、武器や危険物の持ち込みなどは禁止です）</li>\n<li>スタッフの指示に従うこと。</li>\n</ul>\n<h4>不適切な行為を見つけたら？</h4>\n<p>もしもあなたがハラスメントを感じたり、不適切な行為を目撃した場合、お近くの運営スタッフまでお声がけください。</p>",
-      "url": "https://smn.connpass.com/event/394713/",
-      "image_url": "https://media.connpass.com/thumbs/88/a4/88a49fa959ba38b9203b8f7863c7950c.png",
-      "hash_tag": "SMNtokyo",
-      "started_at": "2026-07-14T19:30:00+09:00",
-      "ended_at": "2026-07-14T21:00:00+09:00",
-      "published_at": "2026-05-26T19:55:55+09:00",
-      "limit": 40,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 1267,
-        "subdomain": "smn",
-        "title": "Scrum Masters Night!",
-        "url": "https://smn.connpass.com/"
-      },
-      "address": "〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階",
-      "place": "株式会社ログラス本社",
-      "lat": "35.640438500000",
-      "lon": "139.741414800000",
-      "owner_id": 4271,
-      "owner_nickname": "physalis_gp02",
-      "owner_display_name": "physalis_gp02",
-      "accepted": 19,
-      "waiting": 0,
-      "updated_at": "2026-05-27T17:34:32+09:00"
-    },
-    {
       "id": 397520,
       "title": "【満員御礼増枠！】【エンジニア向け勉強&交流会】AIでこんなことしてみました発表会！",
       "catch": "成功体験も失敗体験も学べる、エンジニア向け交流会",
@@ -97,6 +66,37 @@
       "updated_at": "2026-07-13T10:11:28+09:00"
     },
     {
+      "id": 394713,
+      "title": "Scrum Masters Night! in Tokyo（オンサイト）",
+      "catch": "スクラムマスターのための、スクラムマスターによる課題解決型イベントです！",
+      "description": "<h2>実施概要 💁‍♀️</h2>\n<p><strong>Scrum Masters Night!</strong>（スクラムマスターズナイト） は、オープンスペーステクノロジー（※）で運営される、スクラムマスターのための、スクラムマスターによる課題解決型イベントです！</p>\n<p>参加者同士のディスカッションを通じて、スクラムを実践する上でぶつかった課題や疑問に対して解決のヒントを得ることを目的としています。</p>\n<h2>日時・会場</h2>\n<p>日時：2026年7月14日(火)　19:30~(19:15開場） <br>\n場所： 株式会社ログラス本社<br>\n〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階<br></p>\n<h2>電車で来る場合</h2>\n<p>都営地下鉄浅草線・京浜急行電鉄「泉岳寺駅」: A4出口から徒歩1分<br>\nJR山手線・京浜東北線「高輪ゲートウェイ駅」: 徒歩7分<br></p>\n<h2>入館方法</h2>\n<p>ビル正面玄関からエレベーターで9階までお越しください。<br>\n※19時30分以降はビルの入り口がしまっている可能性があります。その場合は Connpassの「イベントへ問い合わせ」から連絡ください。<br></p>\n<h3>会場諸注意</h3>\n<ul>\n<li>会場は禁煙です。</li>\n<li>イベントの様子を撮影し、ブログや SNS などで公開することがあります。その際、来場者の姿も公開されることがあることをご承知おきください。</li>\n</ul>\n<h3>新型コロナ感染対策について</h3>\n<ul>\n<li>体温が37.5度以上の方は入館をお控え下さい</li>\n</ul>\n<h3>テーマの例</h3>\n<p>以下、参考として過去のテーマをあげさせて頂きます。<br></p>\n<ul>\n<li>複数のプロジェクトチームから別々の業務を依頼される横断チームにスクラムが向いているか悩み</li>\n<li>アフターコロナにおけるセレモニーなど運営</li>\n<li>開発者兼任スクラムマスターの振る舞い方について</li>\n<li>POがウォーターフォール的に段階的に作りたがる、価値を最大化するには？</li>\n<li>チームメンバー（社外）からのフィードバックの集め方</li>\n<li>仲の良いチーム、深い（KPTの）Pやタフクエスチョンが自分たちから出るようにするには？</li>\n<li>初心者向けのスクラム体験ワークショップのアイデアで良いの知ってます？</li>\n<li>賢い愚者の具体的な振る舞いや必要な能力とは？</li>\n<li>1メンバーの立場でスクラムを導入するにはどうすればよいか</li>\n<li>スクラムマスター自身が自分のスキルを高めるためにどう内省しているか語り合いたい</li>\n<li>現場とリモートでメンバーが分かれているときのチームの醸成、Sprintの使い方</li>\n<li>スクラムチームと情シスなどバックオフィス部門のより良いかかわり方</li>\n<li>スクラムにおける新人教育について</li>\n<li>チームの問題意識（先の問題と先手を考えること）を高める&amp;自発的行動を促すには？</li>\n<li>人事評価制度どうすればいいのかわからない</li>\n<li>タイムボックスを維持したまま開発量を増やすには？</li>\n<li>受託開発であじゃいる</li>\n<li>コロナ禍(リモートワーク）でのチーム開発</li>\n<li>スクラム開発を組織に導入するときに困ったこと・うまくいったこと</li>\n<li>非ITでアジャイル・スクラムやっている人集まれー</li>\n<li>モブプロ・ペアプロやっている人、やりたい人話が聞きたいです</li>\n<li>課題を発見するためにチームでどういう指標 ・データを取っていますか？ </li>\n</ul>\n<h3>※オープンスペーステクノロジーについて</h3>\n<p>Scrum Masters Night! はオープンスペーステクノロジー（OST）で運営しています。</p>\n<p>OST は、スクラムアライアンスが主催する「Global Scrum Gathering」などでも活用されている、ディスカッションのための方法論です。</p>\n<p>参加者自身が議論したいトピックを持ち寄り、小グループで自己組織化してディスカッションを行います。</p>\n<p>OST の雰囲気や進め方を知りたい方は、<a href=\"https://techblog.recruit.co.jp/article-413/\" rel=\"nofollow\">こちらのブログ</a>もご覧ください。（当イベントの進行とはやや異なります）</p>\n<p>備品として付箋、ペン、ホワイトボード、マーカーを用意しています。議論中のメモ等にお使いください。</p>\n<h2>参加対象者 👥</h2>\n<ul>\n<li>スクラムの実践や導入に関わっている方</li>\n<li>スクラムを最近始めた方</li>\n<li>スクラムをこれから始めようと思っている方</li>\n</ul>\n<p>※ スクラム未経験の方も参加可ですが、書籍や Web 等で、基礎知識を習得していることを必須条件とさせていただきます。 </p>\n<h2>タイムスケジュール ⏰</h2>\n<p>下記の時間を目安に進行します。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15 -</td>\n<td>開場・受付開始</td>\n</tr>\n<tr>\n<td>19:30 - 19:50</td>\n<td>運営からの説明、テーマ選び</td>\n</tr>\n<tr>\n<td>19:50 - 21:00</td>\n<td>2回に分けてディスカッション</td>\n</tr>\n<tr>\n<td>21:00 - 21:05</td>\n<td>フィードバック、クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>準備・持参いただきたいもの 💼</h2>\n<h3>1. ディスカッションテーマを事前に考えておく</h3>\n<p>スムーズな進行と有意義な学びのために、 ディスカッションしたいテーマについて、何を話したいか、何を得て帰りたいかを事前に考えておくことをおすすめします。 </p>\n<h3>2. 当日の持物</h3>\n<h4>ディスカッション時の飲物・軽食の持参</h4>\n<ul>\n<li>飲食に関しては、BYOB（Bring Your Own Beverage/Beer/Booze）形式ですが、以下の注意点を考慮して各自ご用意の上ご来場ください。</li>\n<li>アルコールはOKですが、1人3缶までとさせていただきます。</li>\n</ul>\n<h3>3. Scrum Masters Night! Facebook グループ への参加</h3>\n<p><a href=\"https://www.facebook.com/groups/339161719556500/\" rel=\"nofollow\">Scrum Masters Night! Facebook グループ</a> で当日の連絡や、今後のイベントの告知をしていますので、ぜひ事前にご参加ください。</p>\n<h2>運営メンバーのご紹介（一部）👻</h2>\n<p><img alt=\"中村　浩司\" src=\"https://media.connpass.com/thumbs/fc/a9/fca90c672e90babdac220228c08533c2.png\"><br>\n名前：中村　浩司<br>\n所属：株式会社ジーニー<br>\n職種：エンジニア 兼 スクラムマスター<br>\nコメント：<br>\n駆け出しスクラムマスターとして日々奮闘中です！<br>\n皆さんの現場での悩みや工夫をぜひお聞かせください。一緒に学べることを楽しみにしています！<br></p>\n<p><img alt=\"白鳥　航亮\" src=\"https://media.connpass.com/thumbs/09/e8/09e80c687537fafe7f415c5a1b4e5965.png\"><br>\n名前：白鳥　航亮<br>\n所属：LINEヤフー株式会社<br>\n職種：スクラムマスター<br>\n保有資格：認定スクラムマスター(Certified Scrum Master (CSM))<br>\nコメント：<br>\n運用チームのスクラムマスターとして一つのチームで、３年間スクラムを続けてきました。<br>\n色々な現場経験がありますので、ご興味があればぜひこの機会に質問してください。<br>\n　・運用チームでのスクラムの経験<br>\n　・現場での課題解決の経験<br>\n　・チームの成長過程に関して<br>\n　・TDD、モブプログラミングなどの技術的な解決策の実践例<br></p>\n<p><img alt=\"山崎 耕太郎\" src=\"https://media.connpass.com/thumbs/fe/ec/feec124d09c7aabb7bd1aebf5603997f.png\"><br>\n名前: 山崎 耕太郎<br>\n所属: 株式会社MIXI<br>\n職種: エンジニア / スクラムマスター　<br>\nコメント: 様々な現場のことを聞けることを楽しみにしています！よろしくお願いします！<br></p>\n<p><img alt=\"森島 諒\" src=\"https://media.connpass.com/thumbs/a8/07/a8070ec9fde0385e6efca845aba3fdf6.png\"><br>\n名前: 森島 諒<br>\n所属: 株式会社ログラス<br>\n職種: QAエンジニア / スクラムマスター<br>\n保有資格: CSM<br>\nコメント: 現場の課題や工夫を持ち寄り、一緒に知見を増やしていきましょう！<br></p>\n<p><img alt=\"松下 純\" src=\"https://media.connpass.com/thumbs/e4/26/e4264afb7f5a2e40ac922b863cb9f9ec.png\"><br>\n名前: 松下 純<br>\n所属: QiQ Lab. Inc. / ミンカブ・ジ・インフォノイド<br>\n職種: テックリード / スクラムマスター<br>\n保有資格: CSM<br>\nコメント: 一緒にわいわいしましょう！<br></p>\n<p><img alt=\"KAKKA\" src=\"https://media.connpass.com/thumbs/35/7d/357d5da8561ab4bab7c6ac000d6730d7.png\"><br>\n名前: KAKKA(平田将久)<br>\n所属: 株式会社MIXI<br>\n職種: Engineering Manager, DX Promoter, Agile Coach<br>\n保有資格: CSP-SM<br>\nコメント: これまで様々なスクラムチームと関わってきましたが、まだまだ学びは増え続けています。ここでもお互いにたくさん学びましょう！<br></p>\n<h3>アンチハラスメントポリシー</h3>\n<p>セクシュアルハラスメント・パワーハラスメント・ストーカー等の他人への迷惑行為を行うことは禁止します。 反する行為があった場合、警告や退去勧告などの対策を行います。 具体的に何をしたかではなく、相手に嫌な思いをさせたらそれはハラスメントです。以下についての不快な言動・表現・差別を含みます。<br>\n<br>\n性のこと：性差・性同一性・性的指向<br>\n体のこと：外見・身体的特徴・年齢・ハンディキャップ（障がい・病気）<br>\n文化のこと：国籍・言語・宗教・支持政党・社会的身分<br>\n一方的な迷惑行為：不適切な接触・ストーカー・妨害・脅迫・強要・望まない写真撮影や録音録画<br></p>\n<h4>みなさんに期待する行動</h4>\n<ul>\n<li>ハラスメント行為に加担しないこと。</li>\n<li>相手をリスペクトして行動すること。（全員が個性を表現できるよう過ごしましょう）</li>\n<li>すべての法令を遵守すること。（知的財産権・商標・意匠・その他の権利侵害をせぬようにしましょう）</li>\n<li>妨害となる行為をしないこと。（破壊的や威圧的な言動、武器や危険物の持ち込みなどは禁止です）</li>\n<li>スタッフの指示に従うこと。</li>\n</ul>\n<h4>不適切な行為を見つけたら？</h4>\n<p>もしもあなたがハラスメントを感じたり、不適切な行為を目撃した場合、お近くの運営スタッフまでお声がけください。</p>",
+      "url": "https://smn.connpass.com/event/394713/",
+      "image_url": "https://media.connpass.com/thumbs/88/a4/88a49fa959ba38b9203b8f7863c7950c.png",
+      "hash_tag": "SMNtokyo",
+      "started_at": "2026-07-14T19:30:00+09:00",
+      "ended_at": "2026-07-14T21:00:00+09:00",
+      "published_at": "2026-05-26T19:55:55+09:00",
+      "limit": 40,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 1267,
+        "subdomain": "smn",
+        "title": "Scrum Masters Night!",
+        "url": "https://smn.connpass.com/"
+      },
+      "address": "〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階",
+      "place": "株式会社ログラス本社",
+      "lat": "35.640438500000",
+      "lon": "139.741414800000",
+      "owner_id": 4271,
+      "owner_nickname": "physalis_gp02",
+      "owner_display_name": "physalis_gp02",
+      "accepted": 18,
+      "waiting": 0,
+      "updated_at": "2026-05-27T17:34:32+09:00"
+    },
+    {
       "id": 399126,
       "title": "医療情報技師 重要ポイント&問題集 読書会 #1",
       "catch": "",
@@ -123,7 +123,7 @@
       "owner_id": 194029,
       "owner_nickname": "nagashi_ma_w",
       "owner_display_name": "nagashi_ma_w",
-      "accepted": 8,
+      "accepted": 9,
       "waiting": 0,
       "updated_at": "2026-06-30T20:41:32+09:00"
     },
@@ -283,6 +283,37 @@
       "updated_at": "2026-07-10T15:06:08+09:00"
     },
     {
+      "id": 396547,
+      "title": "AIプロダクト開発者が語る！実践 AI-Driven Development Meetup",
+      "catch": "LINEヤフー Developer Meetup",
+      "description": "<p>7/3(金) 好評につき、オフライン 60 → 80名、オンライン 60 → 100名 に増枠しました。<br>\n7/1(水) 好評につき、オフライン 50 → 60名 に増枠しました。</p>\n<h2>イベント概要</h2>\n<p>LINEヤフーでは、<a href=\"https://www.lycorp.co.jp/ja/news/release/020366/\" rel=\"nofollow\">「Agent i」</a>構想のもと、多岐に渡る領域で AI Agent を活用したプロダクトの開発・提供を進めています。 ユーザーのみなさまに向けて Agentic で最適なユーザー体験を突き詰める中で、私たちの開発現場自身も、AX（AI Transformation）を強く推進・実行し続けており、アプリケーション開発の現場も日々進化を続けています。 今回の Meetup では、AIプロダクトの開発者が集い、各現場における AI-Driven Development のイマを余すことなくお伝えます。 コーディングやレビューといった開発現場の様子から、プロダクトチームの働き方の変化まで、LINEヤフーの開発現場のイマをお伝えします。</p>\n<h2>開催概要</h2>\n<p>📆 日時：2026年7月14日(火) 19:00-21:00（受付：18:30~） <br>\n📍 オフライン会場：LINEヤフー株式会社 紀尾井町オフィス 17F （受付2F）  <br>\n💻 オンライン会場：Zoom  ※URLは後日メールでお知らせいたします<br> \n💰 参加費：無料  <br></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">Opening</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:20</td>\n<td style=\"text-align: left;\">AIが実装を自走する時代の認知負債との戦い</td>\n<td style=\"text-align: left;\">山手 政実 (Masami Yamate)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:35</td>\n<td style=\"text-align: left;\">AIと1000本ノックしてたどり着いた、最速のプロダクト開発</td>\n<td style=\"text-align: left;\">栗原 祐二（Kurihara Yuji）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:50</td>\n<td style=\"text-align: left;\">実践！既存 Project への AI-Driven Development 適用〜 一ヶ月で Project 唯一のフロントエンドエンジニアを作り出せ〜</td>\n<td style=\"text-align: left;\">花谷 拓磨 (Hanatani Takuma)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:05</td>\n<td style=\"text-align: left;\">0→1のプロダクトを1ヶ月で形にするAI-Driven プロダクト開発</td>\n<td style=\"text-align: left;\">本宮 和明（Hongu Kazuaki）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05-21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00</td>\n<td style=\"text-align: left;\">Close</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルや開始時間は変更となる可能性がございます。  </p>\n<h1>セッション・登壇者紹介</h1>\n<h2>花谷 拓磨 (Hanatani Takuma)  / @potato4d</h2>\n<h3>タイトル / 実践！既存 Project への AI-Driven Development 適用〜 一ヶ月で Project 唯一のフロントエンドエンジニアを作り出せ〜</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1471782695676317702/8C1THi0C_400x400.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>2018年LINE株式会社中途入社。LINE求人領域サービスの開発リードを務めたのち、現在は専門技術によるプロダクト貢献を管轄する組織のマネジメントとAI関連サービスの開発を中心に従事する傍ら、AI-Driven Development の推進業務にも携わる。</p>\n</blockquote>\n<h2>山手 政実 (Masami Yamate) / @aikawa_japan</h2>\n<h3>タイトル / AIが実装を自走する時代の認知負債との戦い</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260217/yamate.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>LINEヤフー株式会社 2023年中途入社。Agent i コマース領域のAgentおよびコンテンツ開発を担当。直近は、AIによる自律開発、AIを主導とした開発手法の模索と業務フローの確立に取り組んでいる。</p>\n</blockquote>\n<h2>栗原 祐二（Kurihara Yuji）</h2>\n<h3>タイトル / AIと1000本ノックしてたどり着いた、最速のプロダクト開発</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260714/Kurihara.png\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>ソーシャルコマース SBU所属。2020年新卒入社。LINEアプリのショッピングタブの開発やAI関連サービスの開発を担当。AIエージェントを活用した開発ワークフローの構築・推進にも取り組んでいる。</p>\n</blockquote>\n<h2>本宮 和明（Hongu Kazuaki）</h2>\n<h3>タイトル / 0→1のプロダクトを1ヶ月で形にするAI-Driven プロダクト開発</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260714/Hongu.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>LINE株式会社 2022年新卒入社。入社以来LINE公式アカウントのサーバーサイド開発を担当。\n現在はLINE公式アカウント AIモードの開発を行っている。</p>\n</blockquote>\n<h1>注意事項</h1>\n<ul>\n<li>本イベントの内容は、後日主催団体のブログやYouTube等の媒体にて紹介する可能性があります。その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。</li>\n<li>技術交流が目的の勉強会ですので、知識の共有および、参加者同士の交流を目的としない参加はお断りしています。</li>\n<li>当イベントを通じて取得した個人情報等の取扱いは、LINEヤフー株式会社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想についてお聞きする予定です。\n<br>\n・LINEヤフー株式会社  <a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">個人情報保護方針</a>  </li>\n</ul>\n<h2>アンチハラスメントポリシー</h2>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーカ、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。\nTipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。\nそのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h2>キャンセルポリシー</h2>\n<ul>\n<li>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。</li>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</li>\n</ul>",
+      "url": "https://lycorptech-jp.connpass.com/event/396547/",
+      "image_url": "https://media.connpass.com/thumbs/a1/ba/a1ba9444a089bf2555f262289a8adb44.png",
+      "hash_tag": "aidrivendevmeetup",
+      "started_at": "2026-07-14T19:00:00+09:00",
+      "ended_at": "2026-07-14T21:00:00+09:00",
+      "published_at": "2026-06-17T12:01:08+09:00",
+      "limit": 280,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14178,
+        "subdomain": "lycorptech-jp",
+        "title": "LINEヤフー Tech",
+        "url": "https://lycorptech-jp.connpass.com/"
+      },
+      "address": "東京都千代田区紀尾井町１−２ 東京ガーデンテラス 17F",
+      "place": "LINEヤフー株式会社 紀尾井町オフィス",
+      "lat": "35.679992600000",
+      "lon": "139.737936300000",
+      "owner_id": 757858,
+      "owner_nickname": "soleil-usan",
+      "owner_display_name": "inouye",
+      "accepted": 267,
+      "waiting": 16,
+      "updated_at": "2026-07-13T14:04:45+09:00"
+    },
+    {
       "id": 397435,
       "title": "estie PM Meetup #7 エンジニア・事業開発・セールスから広がるプロダクトマネジメント",
       "catch": "",
@@ -311,38 +342,7 @@
       "owner_display_name": "estie",
       "accepted": 20,
       "waiting": 0,
-      "updated_at": "2026-07-13T22:16:46+09:00"
-    },
-    {
-      "id": 396547,
-      "title": "AIプロダクト開発者が語る！実践 AI-Driven Development Meetup",
-      "catch": "LINEヤフー Developer Meetup",
-      "description": "<p>7/3(金) 好評につき、オフライン 60 → 80名、オンライン 60 → 100名 に増枠しました。<br>\n7/1(水) 好評につき、オフライン 50 → 60名 に増枠しました。</p>\n<h2>イベント概要</h2>\n<p>LINEヤフーでは、<a href=\"https://www.lycorp.co.jp/ja/news/release/020366/\" rel=\"nofollow\">「Agent i」</a>構想のもと、多岐に渡る領域で AI Agent を活用したプロダクトの開発・提供を進めています。 ユーザーのみなさまに向けて Agentic で最適なユーザー体験を突き詰める中で、私たちの開発現場自身も、AX（AI Transformation）を強く推進・実行し続けており、アプリケーション開発の現場も日々進化を続けています。 今回の Meetup では、AIプロダクトの開発者が集い、各現場における AI-Driven Development のイマを余すことなくお伝えます。 コーディングやレビューといった開発現場の様子から、プロダクトチームの働き方の変化まで、LINEヤフーの開発現場のイマをお伝えします。</p>\n<h2>開催概要</h2>\n<p>📆 日時：2026年7月14日(火) 19:00-21:00（受付：18:30~） <br>\n📍 オフライン会場：LINEヤフー株式会社 紀尾井町オフィス 17F （受付2F）  <br>\n💻 オンライン会場：Zoom  ※URLは後日メールでお知らせいたします<br> \n💰 参加費：無料  <br></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">Opening</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:20</td>\n<td style=\"text-align: left;\">AIが実装を自走する時代の認知負債との戦い</td>\n<td style=\"text-align: left;\">山手 政実 (Masami Yamate)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:35</td>\n<td style=\"text-align: left;\">AIと1000本ノックしてたどり着いた、最速のプロダクト開発</td>\n<td style=\"text-align: left;\">栗原 祐二（Kurihara Yuji）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:50</td>\n<td style=\"text-align: left;\">実践！既存 Project への AI-Driven Development 適用〜 一ヶ月で Project 唯一のフロントエンドエンジニアを作り出せ〜</td>\n<td style=\"text-align: left;\">花谷 拓磨 (Hanatani Takuma)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:05</td>\n<td style=\"text-align: left;\">0→1のプロダクトを1ヶ月で形にするAI-Driven プロダクト開発</td>\n<td style=\"text-align: left;\">本宮 和明（Hongu Kazuaki）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05-21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00</td>\n<td style=\"text-align: left;\">Close</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルや開始時間は変更となる可能性がございます。  </p>\n<h1>セッション・登壇者紹介</h1>\n<h2>花谷 拓磨 (Hanatani Takuma)  / @potato4d</h2>\n<h3>タイトル / 実践！既存 Project への AI-Driven Development 適用〜 一ヶ月で Project 唯一のフロントエンドエンジニアを作り出せ〜</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1471782695676317702/8C1THi0C_400x400.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>2018年LINE株式会社中途入社。LINE求人領域サービスの開発リードを務めたのち、現在は専門技術によるプロダクト貢献を管轄する組織のマネジメントとAI関連サービスの開発を中心に従事する傍ら、AI-Driven Development の推進業務にも携わる。</p>\n</blockquote>\n<h2>山手 政実 (Masami Yamate) / @aikawa_japan</h2>\n<h3>タイトル / AIが実装を自走する時代の認知負債との戦い</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260217/yamate.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>LINEヤフー株式会社 2023年中途入社。Agent i コマース領域のAgentおよびコンテンツ開発を担当。直近は、AIによる自律開発、AIを主導とした開発手法の模索と業務フローの確立に取り組んでいる。</p>\n</blockquote>\n<h2>栗原 祐二（Kurihara Yuji）</h2>\n<h3>タイトル / AIと1000本ノックしてたどり着いた、最速のプロダクト開発</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260714/Kurihara.png\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>ソーシャルコマース SBU所属。2020年新卒入社。LINEアプリのショッピングタブの開発やAI関連サービスの開発を担当。AIエージェントを活用した開発ワークフローの構築・推進にも取り組んでいる。</p>\n</blockquote>\n<h2>本宮 和明（Hongu Kazuaki）</h2>\n<h3>タイトル / 0→1のプロダクトを1ヶ月で形にするAI-Driven プロダクト開発</h3>\n<p><img src=\"https://s.yimg.jp/images/devrel/meetup/event/260714/Hongu.jpg\" alt=\"\" width=\"150\"> <br></p>\n<blockquote>\n<p>LINE株式会社 2022年新卒入社。入社以来LINE公式アカウントのサーバーサイド開発を担当。\n現在はLINE公式アカウント AIモードの開発を行っている。</p>\n</blockquote>\n<h1>注意事項</h1>\n<ul>\n<li>本イベントの内容は、後日主催団体のブログやYouTube等の媒体にて紹介する可能性があります。その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。</li>\n<li>技術交流が目的の勉強会ですので、知識の共有および、参加者同士の交流を目的としない参加はお断りしています。</li>\n<li>当イベントを通じて取得した個人情報等の取扱いは、LINEヤフー株式会社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想についてお聞きする予定です。\n<br>\n・LINEヤフー株式会社  <a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">個人情報保護方針</a>  </li>\n</ul>\n<h2>アンチハラスメントポリシー</h2>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーカ、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。\nTipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。\nそのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h2>キャンセルポリシー</h2>\n<ul>\n<li>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。</li>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</li>\n</ul>",
-      "url": "https://lycorptech-jp.connpass.com/event/396547/",
-      "image_url": "https://media.connpass.com/thumbs/a1/ba/a1ba9444a089bf2555f262289a8adb44.png",
-      "hash_tag": "aidrivendevmeetup",
-      "started_at": "2026-07-14T19:00:00+09:00",
-      "ended_at": "2026-07-14T21:00:00+09:00",
-      "published_at": "2026-06-17T12:01:08+09:00",
-      "limit": 280,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14178,
-        "subdomain": "lycorptech-jp",
-        "title": "LINEヤフー Tech",
-        "url": "https://lycorptech-jp.connpass.com/"
-      },
-      "address": "東京都千代田区紀尾井町１−２ 東京ガーデンテラス 17F",
-      "place": "LINEヤフー株式会社 紀尾井町オフィス",
-      "lat": "35.679992600000",
-      "lon": "139.737936300000",
-      "owner_id": 757858,
-      "owner_nickname": "soleil-usan",
-      "owner_display_name": "inouye",
-      "accepted": 265,
-      "waiting": 8,
-      "updated_at": "2026-07-13T14:04:45+09:00"
+      "updated_at": "2026-07-14T11:29:05+09:00"
     },
     {
       "id": 399499,
@@ -371,9 +371,40 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 61,
+      "accepted": 68,
       "waiting": 0,
       "updated_at": "2026-07-14T10:10:07+09:00"
+    },
+    {
+      "id": 398003,
+      "title": "Chigasaki.goもくもく会 #1",
+      "catch": "",
+      "description": "<h2>概要</h2>\n<p>茅ヶ崎のGoコミュニティ「Chigasaki.go」を開催します。</p>\n<p>各自がやりたい事を持ち込む「もくもく会」です。\n特にテーマはないので、やりたいことを自由に持ち寄って頂ければと思います。 IT関連であれば特に制限はありません。</p>\n<p>Go、TinyGoに関する質問・相談などが目的の参加でもOKです。</p>\n<p>みんなでお喋りしつつ、楽しみましょう！</p>\n<h2>会場について</h2>\n<p>会場はフリーグーフォ合同会社 （FreeGufo G.K.）さんのオフィスです。Chigasaki.goに協力していただいています。ありがとうございます。</p>\n<p>自転車、バイクの駐輪が可能です。\n駐車場はありません。近くのコインパーキングをご利用下さい。</p>\n<p>会場は飲食可です。\n持ち込みOK、さしいれ歓迎。</p>\n<h2>参加費について</h2>\n<p>会場費500円をいただきます。</p>\n<h2>イベント参加対象者</h2>\n<ul>\n<li>Go、TinyGoに興味がある人（初心者歓迎）</li>\n<li>鍋好きの人</li>\n</ul>",
+      "url": "https://chigasakigo.connpass.com/event/398003/",
+      "image_url": "https://media.connpass.com/thumbs/86/70/8670341ed8f062f8360939143ee35a5f.png",
+      "hash_tag": "",
+      "started_at": "2026-07-14T19:30:00+09:00",
+      "ended_at": "2026-07-14T21:00:00+09:00",
+      "published_at": "2026-06-22T04:01:45+09:00",
+      "limit": 6,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 8683,
+        "subdomain": "chigasakigo",
+        "title": "Chigasaki.go",
+        "url": "https://chigasakigo.connpass.com/"
+      },
+      "address": "神奈川県茅ヶ崎市十間坂 1-4-2",
+      "place": "FG-Space",
+      "lat": "35.330730900000",
+      "lon": "139.401596100000",
+      "owner_id": 8108,
+      "owner_nickname": "nuki_pon",
+      "owner_display_name": "ぬきぽん",
+      "accepted": 2,
+      "waiting": 0,
+      "updated_at": "2026-06-22T15:51:36+09:00"
     }
   ]
 }
