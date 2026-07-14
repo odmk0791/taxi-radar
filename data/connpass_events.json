@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-15T00:18:13.327153+09:00",
+  "fetched_at": "2026-07-15T02:05:49.094466+09:00",
   "date": "20260715",
   "count": 10,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 921260,
       "owner_nickname": "MasahiroNakazawa",
       "owner_display_name": "MasahiroNakazawa",
-      "accepted": 56,
+      "accepted": 55,
       "waiting": 0,
       "updated_at": "2026-07-14T10:39:05+09:00"
     },
@@ -185,6 +185,37 @@
       "updated_at": "2026-07-13T01:01:48+09:00"
     },
     {
+      "id": 394852,
+      "title": "Data + AI Summit 2026をみんなで振り返ろう！",
+      "catch": "現地参加 + オンラインのハイブリッド開催です！",
+      "description": "<h1>Data + AI Summit 2026をみんなで振り返ろう！</h1>\n<p>7月のMeetupは、6月15日から開催されるDatabricksのグローバルイベント<a href=\"https://www.databricks.com/dataaisummit/\" rel=\"nofollow\">Data + AI Summit 2026</a>をテーマに開催いたします。実際にDAISに参加されたユーザー、パートナーの皆様からイベント内容の共有・感想・今後への期待を語っていただきます。DAISに参加できなかった方もこのイベントでキャッチアップしていただき、今後の展開について意見交換で盛り上がりましょう！今回は現地とオンラインでのハイブリッド開催となりますので気軽にご参加ください。</p>\n<h2>開催概要</h2>\n<p>日時：2026年7月15日（水）18:30 開始<br>\n場所：INFORIUM豊洲イノベーションセンター（東京都江東区豊洲3-3-3 豊洲センタービル10F）<br>\n形式：ハイブリッド開催（現地参加・オンライン参加）</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>アジェンダ</th>\n<th>登壇者（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:00 - 18:30</td>\n<td>受付（設営/登壇者スライド表示テスト）</td>\n<td></td>\n</tr>\n<tr>\n<td>18:30 - 18:35</td>\n<td>オープニング</td>\n<td>Databricks 小出</td>\n</tr>\n<tr>\n<td>18:35 - 19:45</td>\n<td>ライトニングトーク（10分/枠）</td>\n<td><ul><li>株式会社NTTデータ：井能 猛</li><li>東京ガス株式会社：小池 俊吾</li><li>三井情報株式会社：西村 泰希</li><li>NTTドコモビジネス株式会社：露崎 浩太</li><li>IVRy株式会社：松田 健司</li><li>株式会社GENDA：松田 一志</li></ul></td>\n</tr>\n<tr>\n<td>19:45 - 20:30</td>\n<td>雑談タイム🍺</td>\n<td></td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>クロージング（会場片付け）</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>発表内容について</h2>\n<p>Data + AI Summit 2026に参加された方々から、10分間のライトニングトーク形式で、イベントの感想、印象に残ったセッション、新機能・新製品の紹介、今後の展望などを共有いただきます。技術的な深掘り、ビジネス活用の観点、パートナー視点など、様々な角度からDAISを振り返ります。</p>\n<h1>JEDAI（Japan Enduser Group | Databricks Innovation）について</h1>\n<p>データブリックス・ジャパン株式会社が運営するユーザーコミュニティーです。 日本の全ての組織が「データとAIの民主化」を実現すべく、AIや機械学習を活用したデータプロジェクトの実用化の促進を、ボトムアップで支えるユーザーコミュニティです。</p>",
+      "url": "https://jedai.connpass.com/event/394852/",
+      "image_url": "https://media.connpass.com/thumbs/3d/e0/3de01bcaf00a627825cebff9dddfd014.png",
+      "hash_tag": "jedai",
+      "started_at": "2026-07-15T18:30:00+09:00",
+      "ended_at": "2026-07-15T20:30:00+09:00",
+      "published_at": "2026-05-29T09:56:44+09:00",
+      "limit": 500,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 11319,
+        "subdomain": "jedai",
+        "title": "JEDAI - Japan Databricks User Group",
+        "url": "https://jedai.connpass.com/"
+      },
+      "address": "東京都江東区豊洲3-3-3 豊洲センタービル10F",
+      "place": "INFORIUM豊洲イノベーションセンター",
+      "lat": "35.655862700000",
+      "lon": "139.796344600000",
+      "owner_id": 271950,
+      "owner_nickname": "nakazax",
+      "owner_display_name": "Hiroyuki Nakazato",
+      "accepted": 363,
+      "waiting": 19,
+      "updated_at": "2026-07-06T12:01:00+09:00"
+    },
+    {
       "id": 397485,
       "title": "Hello LT world『ガチ推しガジェット LT Night 』",
       "catch": "「登壇してみたい」「もっと発信を増やしていきたい」人のためのLTイベント！",
@@ -214,37 +245,6 @@
       "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-07-13T17:02:40+09:00"
-    },
-    {
-      "id": 394852,
-      "title": "Data + AI Summit 2026をみんなで振り返ろう！",
-      "catch": "現地参加 + オンラインのハイブリッド開催です！",
-      "description": "<h1>Data + AI Summit 2026をみんなで振り返ろう！</h1>\n<p>7月のMeetupは、6月15日から開催されるDatabricksのグローバルイベント<a href=\"https://www.databricks.com/dataaisummit/\" rel=\"nofollow\">Data + AI Summit 2026</a>をテーマに開催いたします。実際にDAISに参加されたユーザー、パートナーの皆様からイベント内容の共有・感想・今後への期待を語っていただきます。DAISに参加できなかった方もこのイベントでキャッチアップしていただき、今後の展開について意見交換で盛り上がりましょう！今回は現地とオンラインでのハイブリッド開催となりますので気軽にご参加ください。</p>\n<h2>開催概要</h2>\n<p>日時：2026年7月15日（水）18:30 開始<br>\n場所：INFORIUM豊洲イノベーションセンター（東京都江東区豊洲3-3-3 豊洲センタービル10F）<br>\n形式：ハイブリッド開催（現地参加・オンライン参加）</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>アジェンダ</th>\n<th>登壇者（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:00 - 18:30</td>\n<td>受付（設営/登壇者スライド表示テスト）</td>\n<td></td>\n</tr>\n<tr>\n<td>18:30 - 18:35</td>\n<td>オープニング</td>\n<td>Databricks 小出</td>\n</tr>\n<tr>\n<td>18:35 - 19:45</td>\n<td>ライトニングトーク（10分/枠）</td>\n<td><ul><li>株式会社NTTデータ：井能 猛</li><li>東京ガス株式会社：小池 俊吾</li><li>三井情報株式会社：西村 泰希</li><li>NTTドコモビジネス株式会社：露崎 浩太</li><li>IVRy株式会社：松田 健司</li><li>株式会社GENDA：松田 一志</li></ul></td>\n</tr>\n<tr>\n<td>19:45 - 20:30</td>\n<td>雑談タイム🍺</td>\n<td></td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>クロージング（会場片付け）</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>発表内容について</h2>\n<p>Data + AI Summit 2026に参加された方々から、10分間のライトニングトーク形式で、イベントの感想、印象に残ったセッション、新機能・新製品の紹介、今後の展望などを共有いただきます。技術的な深掘り、ビジネス活用の観点、パートナー視点など、様々な角度からDAISを振り返ります。</p>\n<h1>JEDAI（Japan Enduser Group | Databricks Innovation）について</h1>\n<p>データブリックス・ジャパン株式会社が運営するユーザーコミュニティーです。 日本の全ての組織が「データとAIの民主化」を実現すべく、AIや機械学習を活用したデータプロジェクトの実用化の促進を、ボトムアップで支えるユーザーコミュニティです。</p>",
-      "url": "https://jedai.connpass.com/event/394852/",
-      "image_url": "https://media.connpass.com/thumbs/3d/e0/3de01bcaf00a627825cebff9dddfd014.png",
-      "hash_tag": "jedai",
-      "started_at": "2026-07-15T18:30:00+09:00",
-      "ended_at": "2026-07-15T20:30:00+09:00",
-      "published_at": "2026-05-29T09:56:44+09:00",
-      "limit": 500,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 11319,
-        "subdomain": "jedai",
-        "title": "JEDAI - Japan Databricks User Group",
-        "url": "https://jedai.connpass.com/"
-      },
-      "address": "東京都江東区豊洲3-3-3 豊洲センタービル10F",
-      "place": "INFORIUM豊洲イノベーションセンター",
-      "lat": "35.655862700000",
-      "lon": "139.796344600000",
-      "owner_id": 271950,
-      "owner_nickname": "nakazax",
-      "owner_display_name": "Hiroyuki Nakazato",
-      "accepted": 362,
-      "waiting": 19,
-      "updated_at": "2026-07-06T12:01:00+09:00"
     },
     {
       "id": 399584,
