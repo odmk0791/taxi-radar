@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-15T20:23:45.923500+09:00",
+  "fetched_at": "2026-07-15T22:19:11.709303+09:00",
   "date": "20260715",
   "count": 10,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-05-20T12:51:35+09:00",
       "limit": 67,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15906,
         "subdomain": "cloud-shokudo",
@@ -78,7 +78,7 @@
       "published_at": "2026-06-18T20:23:04+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17440,
         "subdomain": "fresh-engineers",
@@ -92,7 +92,7 @@
       "owner_id": 566009,
       "owner_nickname": "Eri-0910",
       "owner_display_name": "Erina Yamakawa",
-      "accepted": 44,
+      "accepted": 43,
       "waiting": 4,
       "updated_at": "2026-07-15T19:33:59+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-06-16T20:17:16+09:00",
       "limit": 48,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13535,
         "subdomain": "openedgedevice",
@@ -140,7 +140,7 @@
       "published_at": "2026-06-22T20:45:55+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16283,
         "subdomain": "picopicoruby",
@@ -171,7 +171,7 @@
       "published_at": "2026-07-01T14:30:28+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都 渋谷区 道玄坂 1-7-10 新大宗渋谷道玄坂一丁目ビル 4階",
       "place": "渋谷ガーデンホール",
@@ -197,7 +197,7 @@
       "published_at": "2026-05-29T09:56:44+09:00",
       "limit": 500,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 11319,
         "subdomain": "jedai",
@@ -228,7 +228,7 @@
       "published_at": "2026-06-17T08:31:21+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3494,
         "subdomain": "findy",
