@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-16T00:20:20.431862+09:00",
+  "fetched_at": "2026-07-16T02:08:26.810095+09:00",
   "date": "20260716",
-  "count": 21,
+  "count": 23,
   "events": [
     {
       "id": 400689,
@@ -402,7 +402,7 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 122,
+      "accepted": 124,
       "waiting": 0,
       "updated_at": "2026-07-15T19:42:15+09:00"
     },
@@ -653,6 +653,68 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-07-10T11:15:08+09:00"
+    },
+    {
+      "id": 398018,
+      "title": "Google Antigravity（中心の）もくもく会 in 茅ヶ崎",
+      "catch": "",
+      "description": "<h2>概要</h2>\n<h3>🚀 Google Antigravity もくもく会：AIエージェントで作業を「無重力」に</h3>\n<p>最近話題の <strong>Google Antigravity</strong>、皆さんは使いこなせていますか？\nAI Agentによる爆速の開発体験から、MCPサーバー連携による拡張性まで、その可能性はアイデア次第で無限に広がります。</p>\n<p>「一人で設定するのは大変だけど、誰かと一緒なら新しい発見があるかも」\nそんな想いで、みんなで手を動かしながら情報交換する場を作りました！</p>\n<p>別途開催していた「FGStudyもくもく会 feat.なんでも in 茅ヶ崎」と統合してみました。<br>\nAntigravityを使わない方でもお気軽に参加いただければと思います。</p>\n<h3>💡 こんなことをやります</h3>\n<ul>\n<li><strong>もくもく作業：</strong> Antigravityを使って(使わなくても）自分のプロジェクトを進める。</li>\n<li><strong>知見シェア：</strong> MCPサーバーの導入、<code>Google Workspace CLI</code> との連携など、一歩踏み込んだ活用術の共有。</li>\n<li><strong>雑談・相談：</strong> 「Workspaceアカウントでどう使ってる？」「有料プランの元は取れてる？」など、ざっくばらんな意見交換。</li>\n</ul>\n<p>基本的に、もくもく会なので、主催者側で用意しているものはありませんが、もくもくする時間よりも参加者同士で話をする時間を多めにしたいと考えています。</p>\n<h3>🛠️ 技術トピック（例）</h3>\n<ul>\n<li><strong>AI Agentとしての活用：</strong> IDEとの連携で開発効率をどこまで上げられるか？</li>\n<li><strong>エコシステムの拡張：</strong> MCP（Model Context Protocol）サーバー導入による外部データ連携。</li>\n<li><strong>CLI連携：</strong> <code>Google Workspace CLI (</code>gws<code>)</code> 等を駆使した高度な自動化設定。</li>\n<li><strong>Workspace活用：</strong> 仕事のワークフローにどう組み込むか？</li>\n</ul>\n<h3>👤 主催者（ぬきぽん）より</h3>\n<p>最近Google WorkspaceアカウントでもAntigravityが利用可能になり、僕自身もガッツリ使い倒し始めました。一人で黙々とやるのも良いですが、皆さんのユニークなアイデアを聞くことで、より面白い使い方に気づけるといいなと思っています！</p>\n<h2>📆 タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">オープニング・自己紹介・今日やること</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45</td>\n<td style=\"text-align: left;\">やったこと共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>FGStudyについて</h2>\n<p>茅ヶ崎を中心に活動している、フリーグーフォ合同会社 （FreeGufo G.K.）が運営するWeb系の勉強会です。</p>\n<h2>会場について</h2>\n<p>会場は、イベント等が入っていなければコワーキングスペースとして利用が可能です。</p>\n<p>店舗前に、自転車、バイクの駐輪が可能です。</p>\n<p>駐車場はありません。近くのコインパーキングをご利用下さい。</p>\n<h2>宣伝</h2>\n<p>FreeGufoは、Google Workspace のリセールも行っています。1アカウントからでも対応致しますので、仕事でGoogle Workspaceを使いたい、Antigravity を安全に使いたい。などご要望がありましたら、ぜひご相談下さい。</p>",
+      "url": "https://fgstudy.connpass.com/event/398018/",
+      "image_url": "https://media.connpass.com/thumbs/3a/80/3a8012e2f91d1bcceea08f003168c51c.png",
+      "hash_tag": "FGStudy",
+      "started_at": "2026-07-16T19:30:00+09:00",
+      "ended_at": "2026-07-16T21:00:00+09:00",
+      "published_at": "2026-06-20T14:37:53+09:00",
+      "limit": 5,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 4422,
+        "subdomain": "fgstudy",
+        "title": "FGStudy",
+        "url": "https://fgstudy.connpass.com/"
+      },
+      "address": "神奈川県茅ヶ崎市十間坂 1-4-2",
+      "place": "FG-Space",
+      "lat": "35.330723600000",
+      "lon": "139.401633300000",
+      "owner_id": 8108,
+      "owner_nickname": "nuki_pon",
+      "owner_display_name": "ぬきぽん",
+      "accepted": 3,
+      "waiting": 0,
+      "updated_at": "2026-06-20T14:37:53+09:00"
+    },
+    {
+      "id": 396302,
+      "title": "【みなとみらい開催】横浜アジャイル#3",
+      "catch": "横浜周辺でアジャイルを試行錯誤している人たちを中心とした会",
+      "description": "<ul>\n<li>時間を気にせずに語り合いたい</li>\n<li>都内のイベントに通うのは遠すぎる</li>\n<li>子育てで遅くまでいられない</li>\n</ul>\n<p>それでも、アジャイル・プロダクト開発・組織変革・AI活用に取り組む仲間が欲しい、もっと語りたい、誰かに悩みを打ち明けたい——そんな方、いないでしょうか？<br></p>\n<p>そんなメンバーが集まり、横浜アジャイルを始めます。<br></p>\n<h2>横浜アジャイルとは</h2>\n<p>横浜アジャイルは、横浜・横浜近郊に「ゆかりがある／好き」な人が自然に集まり、アジャイル・プロダクト開発・組織変革の知見を持ち寄って対話・共創するコミュニティです。<br>\n都内のコミュニティは「遠くて通えない」「時間のコストが高い」と感じていた方、大歓迎です。  <br>\n横浜を拠点に、距離・時間の壁を下げながら、熱量と共創が生まれる場をつくっていきます。<br></p>\n<ul>\n<li>みんなが「講師」であり、みんなが「生徒」</li>\n<li>雑談から共創が生まれる場</li>\n<li>企業・領域横断の学びと実践</li>\n<li>社内に熱量を持ち帰り、周囲を巻き込むハブになる存在</li>\n</ul>\n<h2>OSTとは</h2>\n<p>OST（オープンスペーステクノロジー）とは、集まった人たちがその場で対話したい内容を提案し、提案者自身がセッション枠を割り当て、自己組織的に進行していくやり方です。</p>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>：2026年7月16日（木）19:00〜21:00（18:45開場／19:00開始）</li>\n<li><strong>会場</strong>：横浜三井ビルディング Fujitsu Yokohama Hub 16階 F3rd X</li>\n<li><strong>参加費</strong>：無料</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45</td>\n<td>開場・受付</td>\n<td>－</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>オープニングなど</td>\n<td>主催者</td>\n</tr>\n<tr>\n<td>19:15</td>\n<td>LT（5分）枠①</td>\n<td>y_justice_t</td>\n</tr>\n<tr>\n<td>19:20</td>\n<td>LT（5分）枠②</td>\n<td>ryuguyana</td>\n</tr>\n<tr>\n<td>19:25</td>\n<td>LT（5分）枠③</td>\n<td>tmoriya</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>OSTの説明</td>\n<td>主催者</td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>テーマ出し・マーケットプレイス</td>\n<td></td>\n</tr>\n<tr>\n<td>19:50</td>\n<td>OST (20分ぐらい × 2)</td>\n<td></td>\n</tr>\n<tr>\n<td>20:40</td>\n<td>クロージング</td>\n<td>主催者</td>\n</tr>\n<tr>\n<td>20:45</td>\n<td>LT（5分）枠④</td>\n<td>kobase</td>\n</tr>\n<tr>\n<td>20:55以降</td>\n<td>有志で懇親会（任意）</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇募集</h2>\n<h3>LT（5分×2名）</h3>\n<p>アジャイル・プロダクト開発・組織変革・AI活用など、横浜・近郊での実践や学びを話してみませんか？<br>\n完成した話でなくても、どんなささいな内容でも、試行中・失敗談も大歓迎です。はじめての登壇も歓迎します！</p>\n<ul>\n<li>アジャイル・スクラムの実践・失敗談・学び</li>\n<li>プロダクト開発のリアル（PdM、PO、SM、エンジニア、デザイナー視点）</li>\n<li>組織変革・チームビルディングの経験</li>\n<li>AIとアジャイルの組み合わせで変わったこと</li>\n<li>横浜企業ならではの越境・共創の話</li>\n<li>最近ハマっている学び・ツール・本</li>\n<li>なんでも「横浜でやってみた話」</li>\n</ul>\n<p>※ご質問は上記「交流用Discordサーバー」よりお願いします。</p>\n<h2>参加者種別について</h2>\n<ul>\n<li><strong>一般参加枠</strong>……一般の参加枠です。基本的にはこちらをお使いください。</li>\n<li><strong>アジャイル何も分からん枠</strong>……アジャイルに興味はあるけど参加を迷っている方、自由な解釈で登録ください。</li>\n<li><strong>LT登壇枠</strong>……LTで登壇いただく方の枠です。</li>\n</ul>\n<h2>行動規範</h2>\n<p>横浜アジャイルでは、<a href=\"https://2026.scrumgatheringtokyo.org/conference_coc_ja.html\" rel=\"nofollow\">RSGTの行動規範</a> に準じた行動規範を適用します。</p>\n<ul>\n<li>お互いを尊重し、対話と学び合いを大切にします</li>\n<li>性別・年齢・属性・職種・スキルレベルによる差別的な言動はしません</li>\n<li>保険、宗教、ネットワークビジネス等の勧誘目的の参加はお断りします</li>\n<li>運営が不適切と判断した場合、ご退席をお願いすることがあります</li>\n</ul>\n<h2>会場</h2>\n<p><a href=\"https://global.fujitsu/ja-jp\" rel=\"nofollow\">富士通株式会社</a>さまのご厚意で会場をお借りできることになりました🎉</p>\n<h3>会場スポンサー様PR</h3>\n<p>富士通は「イノベーションによって社会に信頼をもたらし、世界をより持続可能にしていく」ことをパーパスに、テクノロジーと共創によるビジネスと社会の変革に挑戦しています。本イベントでは会場提供を通じて、アジャイルの実践や知見共有、参加者同士の共創を後押しします。横浜から新たな挑戦とつながりを広げ、持続可能な未来づくりに貢献していきます。</p>\n<h3>アクセス</h3>\n<ul>\n<li>横浜駅（JR各線）徒歩5分</li>\n<li>新高島駅（みなとみらい線）徒歩2分</li>\n</ul>\n<h3>アンケート</h3>\n<p>ご入力いただいた個人情報は、入館申請および当日の受付対応のために利用いたします。</p>",
+      "url": "https://yokohama-agile.connpass.com/event/396302/",
+      "image_url": "https://media.connpass.com/thumbs/99/ed/99ede4a9a83c28fefe97ca3a33582c24.png",
+      "hash_tag": "yokohamagile",
+      "started_at": "2026-07-16T19:00:00+09:00",
+      "ended_at": "2026-07-16T21:00:00+09:00",
+      "published_at": "2026-06-17T20:31:50+09:00",
+      "limit": 38,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17413,
+        "subdomain": "yokohama-agile",
+        "title": "横浜アジャイル",
+        "url": "https://yokohama-agile.connpass.com/"
+      },
+      "address": "神奈川県横浜市西区高島1-1-2",
+      "place": "横浜三井ビルディング Fujitsu Yokohama Hub 16階 F3rd X",
+      "lat": "35.463143800000",
+      "lon": "139.624887800000",
+      "owner_id": 779642,
+      "owner_nickname": "formua",
+      "owner_display_name": "JIN",
+      "accepted": 35,
+      "waiting": 0,
+      "updated_at": "2026-07-15T22:05:16+09:00"
     }
   ]
 }
