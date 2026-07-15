@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-15T13:44:01.762779+09:00",
+  "fetched_at": "2026-07-15T16:08:36.350335+09:00",
   "date": "20260715",
   "count": 10,
   "events": [
@@ -27,9 +27,9 @@
       "place": "虎ノ門ヒルズ 森タワー 18階",
       "lat": "35.666812600000",
       "lon": "139.749394600000",
-      "owner_id": 981355,
-      "owner_nickname": "Simplex_hirose",
-      "owner_display_name": "Simplex_hirose",
+      "owner_id": 981354,
+      "owner_nickname": "Simplex_segawa",
+      "owner_display_name": "Simplex_segawa",
       "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-07-09T14:41:21+09:00"
@@ -208,9 +208,9 @@
       "place": "Findy イベントスペース",
       "lat": "35.622568800000",
       "lon": "139.727612700000",
-      "owner_id": 452878,
-      "owner_nickname": "masashi_kitagawa",
-      "owner_display_name": "masashi_kitagawa",
+      "owner_id": 939636,
+      "owner_nickname": "sadorin_findy",
+      "owner_display_name": "sadorin_findy",
       "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-07-15T07:46:59+09:00"
@@ -242,7 +242,7 @@
       "owner_id": 271950,
       "owner_nickname": "nakazax",
       "owner_display_name": "Hiroyuki Nakazato",
-      "accepted": 389,
+      "accepted": 402,
       "waiting": 18,
       "updated_at": "2026-07-06T12:01:00+09:00"
     },
@@ -285,7 +285,7 @@
       "published_at": "2026-05-13T09:39:06+09:00",
       "limit": 450,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6823,
         "subdomain": "openid",
@@ -299,7 +299,7 @@
       "owner_id": 254161,
       "owner_nickname": "sghirokon",
       "owner_display_name": "sghirokon",
-      "accepted": 318,
+      "accepted": 327,
       "waiting": 0,
       "updated_at": "2026-07-13T18:39:50+09:00"
     }
