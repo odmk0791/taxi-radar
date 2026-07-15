@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-15T10:44:23.540673+09:00",
+  "fetched_at": "2026-07-15T13:44:01.762779+09:00",
   "date": "20260715",
   "count": 10,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 921260,
       "owner_nickname": "MasahiroNakazawa",
       "owner_display_name": "MasahiroNakazawa",
-      "accepted": 55,
+      "accepted": 54,
       "waiting": 0,
       "updated_at": "2026-07-14T10:39:05+09:00"
     },
@@ -242,8 +242,8 @@
       "owner_id": 271950,
       "owner_nickname": "nakazax",
       "owner_display_name": "Hiroyuki Nakazato",
-      "accepted": 382,
-      "waiting": 19,
+      "accepted": 389,
+      "waiting": 18,
       "updated_at": "2026-07-06T12:01:00+09:00"
     },
     {
@@ -299,7 +299,7 @@
       "owner_id": 254161,
       "owner_nickname": "sghirokon",
       "owner_display_name": "sghirokon",
-      "accepted": 306,
+      "accepted": 318,
       "waiting": 0,
       "updated_at": "2026-07-13T18:39:50+09:00"
     }
