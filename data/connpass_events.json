@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-16T06:51:35.853644+09:00",
+  "fetched_at": "2026-07-16T07:52:07.296943+09:00",
   "date": "20260716",
   "count": 21,
   "events": [
@@ -159,37 +159,6 @@
       "updated_at": "2026-07-14T15:55:40+09:00"
     },
     {
-      "id": 394623,
-      "title": "Security.any #11 灼熱の攻防セキュリティLT",
-      "catch": "みなさんが個人や仕事で関わるセキュリティの中でみんなに伝えたい想いを語るLT",
-      "description": "<h1>Security.any #11 灼熱の攻防セキュリティLT</h1>\n<p>普段の診断業務や開発業務、私的探求などでサイバーセキュリティに携わる皆さんが、日々の体験を共有してみませんか？このLT会では、初心者からベテランまで、エンジニアからリサーチャーまで、セキュリティに興味がある人、誰もが共感できるセキュリティネタを集めます。</p>\n<p>お互いの経験を通じて、セキュリティの複雑さや楽しさを再確認し、笑い合いながら学びましょう。\nあなたの経験もきっと、他の人にとって貴重な学びや新たな出会いの場になると思います。</p>\n<h1>参加者イメージ</h1>\n<p>幅広く色々な人に参加してもらいたいので、以下のような方々に参加いただきたいです。\n（運営も随意募集中です）</p>\n<ul>\n<li>セキュリティに興味がある</li>\n<li>セキュリティの業務に従事している</li>\n<li>セキュリティ関連の人と交流した人</li>\n<li>IT技術なんでも興味がある</li>\n</ul>\n<h2>LT希望の方へ</h2>\n<p><strong>発表は5-8分</strong></p>\n<p>奮って参加をお待ちしています！\nあまりに時間オーバーすると途中で切ってしまうかもしれませんので、ご了承ください。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">&nbsp;開&nbsp;始&nbsp;</th>\n<th style=\"text-align: left;\">アジェンダ 　 　 　 　</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:50</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: left;\">オープニング + Security.any について</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05</td>\n<td style=\"text-align: left;\">スポンサーLT</td>\n<td style=\"text-align: left;\">株式会社viviON 開発部SREチーム<br><img src=\"https://d2utywpx8b4n8n.cloudfront.net/394623/profile01.png\" width=\"36\" height=\"36\"> <a href=\"https://github.com/totechite\" rel=\"nofollow\">片岡 裕亮</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:15</td>\n<td style=\"text-align: left;\">AWS BuilderCardsで学ぶセキュリティの攻防（仮）</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/e0/36/e0367dada15805a8bf415dd9eca7bcfe.png\" alt=\"ウタカタ\" width=\"36\" height=\"36\"> ウタカタ</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:35</td>\n<td style=\"text-align: left;\">\"週に3億ダウンロード\"のStarletteに見つかった脆弱性、BadHost（仮）</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/7e/34/7e345277aa48daeefda1ea3e9c9bb261.png\" alt=\"nikkie\" width=\"36\" height=\"36\"> <a href=\"https://x.com/ftnext\" rel=\"nofollow\">nikkie</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45</td>\n<td style=\"text-align: left;\">あなたの知らないFirewallの世界</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/62/23/622317984baa93f5555b4ec86662289b.png\" alt=\"ryoAccount\" width=\"36\" height=\"36\"> <a href=\"https://x.com/RYO_nami\" rel=\"nofollow\">ryoAccount</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\">みんな</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:10</td>\n<td style=\"text-align: left;\">(仮)AIで認証・認可機能作った！でも本当に安全なの？</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/5d/36/5d36bcd65f66a546667fdc398e9d753e.png\" alt=\"hiroki\" width=\"36\" height=\"36\"> hiroki</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:20</td>\n<td style=\"text-align: left;\">診断は一期一会♪ちょっと変わった診断案件の事例紹介</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/6e/4c/6e4ca2ff159c92b0945cce798c16b85f.png\" alt=\"wildonion\" width=\"36\" height=\"36\"> wildonion</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:30</td>\n<td style=\"text-align: left;\">クレカ不正利用被害その後</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/a8/e5/a8e599f359f49f7ff2bfaf6101b331f0.png\" alt=\"白柳隆司\" width=\"36\" height=\"36\"> <a href=\"https://x.com/ShirayanagiRyuj\" rel=\"nofollow\">白柳隆司</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:40</td>\n<td style=\"text-align: left;\">「知られざる物理セキュリティの攻防」(仮)</td>\n<td style=\"text-align: left;\"><img src=\"https://connpass.com/static/img/common/user_no_image.gif\" alt=\"ぼうけん\" width=\"36\" height=\"36\"> ぼうけん</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:50</td>\n<td style=\"text-align: left;\">お知らせ</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:55</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">みんな</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:45</td>\n<td style=\"text-align: left;\">解散</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h1>登壇者プロフィール</h1>\n<h2>【スポンサーLT枠】<a href=\"https://github.com/totechite\" rel=\"nofollow\">片岡 裕亮</a></h2>\n<p><img src=\"https://d2utywpx8b4n8n.cloudfront.net/394623/profile01.png\" width=\"200\"></p>\n<h3>自己紹介</h3>\n<p>株式会社viviON 開発部SREチーム所属のソフトウェアエンジニアです。所属4年目になります。<br>\nアイドルマスターが好きです。ソフトウェア技術とSREingで世界中のオタクを幸せにする仲間を募集しています。</p>\n<h3>登壇内容</h3>\n<p><strong>秘伝の共用アカウント卒業します</strong><br><strong>HashiCorp Vaultによって実現するDBアカウントの可監査性担保と運用管理のトイル削減</strong></p>\n<p>皆さんは秘伝の共用アカウントを運用していませんか？管理者の知らぬところでパスワードが二次配布されていませんか？クエリを実行した個人を追跡可能ですか？個人アカウントの発行に疲弊していませんか？失効処理はできてますか？パスワードローテーションは実施していますか？<br>\nviviONではOSSのHashiCorp Vaultを中心とした業務設計に変更しこれらの課題解決を図っています。同じ悩みを抱えている方々のご参考になりましたら幸いです。</p>\n<h1>持ち物</h1>\n<p><strong>1. 気持ち</strong></p>\n<p>楽しむ気持ちが大事です。</p>\n<p><strong>2. 参加費用: 500円</strong></p>\n<p>懇親会の飲食代に利用します。（PayPay推奨、現金可）</p>\n<h1>会場</h1>\n<p>株式会社viviON\n東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階\n<img src=\"https://d2utywpx8b4n8n.cloudfront.net/394623/sponsor01.png\"></p>\n<h1>行動規範</h1>\n<p><a href=\"https://github.com/kitaji0306/security_any_code_of_conduct/blob/main/README.md\" rel=\"nofollow\">こちら</a></p>\n<hr>\n<h1>Security.any とは</h1>\n<p>サイバーセキュリティについての『<strong>アウトプット</strong>』を通して人との『<strong>繋がり</strong>』や学ぶことを『<strong>楽しむ</strong>』コミュニティです！！</p>\n<h2>Security.anyの成り立ち</h2>\n<ul>\n<li>サイバーセキュリティについてライトにアウトプット出来る場が欲しい！</li>\n<li>社外交流初心者からベテランまで幅広く集まれる勉強会があるといいね！</li>\n</ul>\n<h2>Security.anyに込めた想い</h2>\n<ul>\n<li>サイバーセキュリティについて誰でも楽しみながら学ぼう！</li>\n<li>サイバーセキュリティについて誰でも学ぶことを楽しもう！</li>\n</ul>\n<h2>Security.anyの目指すべき姿</h2>\n<ul>\n<li>サイバーセキュリティの誰でも交流出来るコミュニティ！</li>\n<li>企業の枠にとらわれない繋がりを作ろう！</li>\n</ul>",
-      "url": "https://security-any.connpass.com/event/394623/",
-      "image_url": "https://media.connpass.com/thumbs/92/e6/92e673447c73c3b5a291fd628fc862f2.png",
-      "hash_tag": "security_any",
-      "started_at": "2026-07-16T19:00:00+09:00",
-      "ended_at": "2026-07-16T21:00:00+09:00",
-      "published_at": "2026-05-28T20:37:04+09:00",
-      "limit": 35,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 15489,
-        "subdomain": "security-any",
-        "title": "Security.any",
-        "url": "https://security-any.connpass.com/"
-      },
-      "address": "〒101-0022 東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階",
-      "place": "株式会社viviON",
-      "lat": "35.699923200000",
-      "lon": "139.774652600000",
-      "owner_id": 17039,
-      "owner_nickname": "kitaji0306",
-      "owner_display_name": "キタジー（kitaji0306）",
-      "accepted": 27,
-      "waiting": 0,
-      "updated_at": "2026-07-13T21:00:14+09:00"
-    },
-    {
       "id": 395053,
       "title": "Deep Tech Business Meetup “自動運転・量子・核融合のBizDev最前線”",
       "catch": "",
@@ -340,7 +309,7 @@
       "owner_id": 18310,
       "owner_nickname": "kixixixixi",
       "owner_display_name": "kixixixixi",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-06-29T21:29:29+09:00"
     },
@@ -374,6 +343,37 @@
       "accepted": 124,
       "waiting": 0,
       "updated_at": "2026-07-15T19:42:15+09:00"
+    },
+    {
+      "id": 394623,
+      "title": "Security.any #11 灼熱の攻防セキュリティLT",
+      "catch": "みなさんが個人や仕事で関わるセキュリティの中でみんなに伝えたい想いを語るLT",
+      "description": "<h1>Security.any #11 灼熱の攻防セキュリティLT</h1>\n<p>普段の診断業務や開発業務、私的探求などでサイバーセキュリティに携わる皆さんが、日々の体験を共有してみませんか？このLT会では、初心者からベテランまで、エンジニアからリサーチャーまで、セキュリティに興味がある人、誰もが共感できるセキュリティネタを集めます。</p>\n<p>お互いの経験を通じて、セキュリティの複雑さや楽しさを再確認し、笑い合いながら学びましょう。\nあなたの経験もきっと、他の人にとって貴重な学びや新たな出会いの場になると思います。</p>\n<h1>参加者イメージ</h1>\n<p>幅広く色々な人に参加してもらいたいので、以下のような方々に参加いただきたいです。\n（運営も随意募集中です）</p>\n<ul>\n<li>セキュリティに興味がある</li>\n<li>セキュリティの業務に従事している</li>\n<li>セキュリティ関連の人と交流した人</li>\n<li>IT技術なんでも興味がある</li>\n</ul>\n<h2>LT希望の方へ</h2>\n<p><strong>発表は5-8分</strong></p>\n<p>奮って参加をお待ちしています！\nあまりに時間オーバーすると途中で切ってしまうかもしれませんので、ご了承ください。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">&nbsp;開&nbsp;始&nbsp;</th>\n<th style=\"text-align: left;\">アジェンダ 　 　 　 　</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:50</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: left;\">オープニング + Security.any について</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05</td>\n<td style=\"text-align: left;\">スポンサーLT</td>\n<td style=\"text-align: left;\">株式会社viviON 開発部SREチーム<br><img src=\"https://d2utywpx8b4n8n.cloudfront.net/394623/profile01.png\" width=\"36\" height=\"36\"> <a href=\"https://github.com/totechite\" rel=\"nofollow\">片岡 裕亮</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:15</td>\n<td style=\"text-align: left;\">AWS BuilderCardsで学ぶセキュリティの攻防（仮）</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/e0/36/e0367dada15805a8bf415dd9eca7bcfe.png\" alt=\"ウタカタ\" width=\"36\" height=\"36\"> ウタカタ</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:35</td>\n<td style=\"text-align: left;\">\"週に3億ダウンロード\"のStarletteに見つかった脆弱性、BadHost（仮）</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/7e/34/7e345277aa48daeefda1ea3e9c9bb261.png\" alt=\"nikkie\" width=\"36\" height=\"36\"> <a href=\"https://x.com/ftnext\" rel=\"nofollow\">nikkie</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45</td>\n<td style=\"text-align: left;\">あなたの知らないFirewallの世界</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/62/23/622317984baa93f5555b4ec86662289b.png\" alt=\"ryoAccount\" width=\"36\" height=\"36\"> <a href=\"https://x.com/RYO_nami\" rel=\"nofollow\">ryoAccount</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\">みんな</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:10</td>\n<td style=\"text-align: left;\">(仮)AIで認証・認可機能作った！でも本当に安全なの？</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/5d/36/5d36bcd65f66a546667fdc398e9d753e.png\" alt=\"hiroki\" width=\"36\" height=\"36\"> hiroki</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:20</td>\n<td style=\"text-align: left;\">診断は一期一会♪ちょっと変わった診断案件の事例紹介</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/6e/4c/6e4ca2ff159c92b0945cce798c16b85f.png\" alt=\"wildonion\" width=\"36\" height=\"36\"> wildonion</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:30</td>\n<td style=\"text-align: left;\">クレカ不正利用被害その後</td>\n<td style=\"text-align: left;\"><img src=\"https://media.connpass.com/thumbs/a8/e5/a8e599f359f49f7ff2bfaf6101b331f0.png\" alt=\"白柳隆司\" width=\"36\" height=\"36\"> <a href=\"https://x.com/ShirayanagiRyuj\" rel=\"nofollow\">白柳隆司</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:40</td>\n<td style=\"text-align: left;\">「知られざる物理セキュリティの攻防」(仮)</td>\n<td style=\"text-align: left;\"><img src=\"https://connpass.com/static/img/common/user_no_image.gif\" alt=\"ぼうけん\" width=\"36\" height=\"36\"> ぼうけん</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:50</td>\n<td style=\"text-align: left;\">お知らせ</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:55</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">みんな</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:45</td>\n<td style=\"text-align: left;\">解散</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h1>登壇者プロフィール</h1>\n<h2>【スポンサーLT枠】<a href=\"https://github.com/totechite\" rel=\"nofollow\">片岡 裕亮</a></h2>\n<p><img src=\"https://d2utywpx8b4n8n.cloudfront.net/394623/profile01.png\" width=\"200\"></p>\n<h3>自己紹介</h3>\n<p>株式会社viviON 開発部SREチーム所属のソフトウェアエンジニアです。所属4年目になります。<br>\nアイドルマスターが好きです。ソフトウェア技術とSREingで世界中のオタクを幸せにする仲間を募集しています。</p>\n<h3>登壇内容</h3>\n<p><strong>秘伝の共用アカウント卒業します</strong><br><strong>HashiCorp Vaultによって実現するDBアカウントの可監査性担保と運用管理のトイル削減</strong></p>\n<p>皆さんは秘伝の共用アカウントを運用していませんか？管理者の知らぬところでパスワードが二次配布されていませんか？クエリを実行した個人を追跡可能ですか？個人アカウントの発行に疲弊していませんか？失効処理はできてますか？パスワードローテーションは実施していますか？<br>\nviviONではOSSのHashiCorp Vaultを中心とした業務設計に変更しこれらの課題解決を図っています。同じ悩みを抱えている方々のご参考になりましたら幸いです。</p>\n<h1>持ち物</h1>\n<p><strong>1. 気持ち</strong></p>\n<p>楽しむ気持ちが大事です。</p>\n<p><strong>2. 参加費用: 500円</strong></p>\n<p>懇親会の飲食代に利用します。（PayPay推奨、現金可）</p>\n<h1>会場</h1>\n<p>株式会社viviON\n東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階\n<img src=\"https://d2utywpx8b4n8n.cloudfront.net/394623/sponsor01.png\"></p>\n<h1>行動規範</h1>\n<p><a href=\"https://github.com/kitaji0306/security_any_code_of_conduct/blob/main/README.md\" rel=\"nofollow\">こちら</a></p>\n<hr>\n<h1>Security.any とは</h1>\n<p>サイバーセキュリティについての『<strong>アウトプット</strong>』を通して人との『<strong>繋がり</strong>』や学ぶことを『<strong>楽しむ</strong>』コミュニティです！！</p>\n<h2>Security.anyの成り立ち</h2>\n<ul>\n<li>サイバーセキュリティについてライトにアウトプット出来る場が欲しい！</li>\n<li>社外交流初心者からベテランまで幅広く集まれる勉強会があるといいね！</li>\n</ul>\n<h2>Security.anyに込めた想い</h2>\n<ul>\n<li>サイバーセキュリティについて誰でも楽しみながら学ぼう！</li>\n<li>サイバーセキュリティについて誰でも学ぶことを楽しもう！</li>\n</ul>\n<h2>Security.anyの目指すべき姿</h2>\n<ul>\n<li>サイバーセキュリティの誰でも交流出来るコミュニティ！</li>\n<li>企業の枠にとらわれない繋がりを作ろう！</li>\n</ul>",
+      "url": "https://security-any.connpass.com/event/394623/",
+      "image_url": "https://media.connpass.com/thumbs/92/e6/92e673447c73c3b5a291fd628fc862f2.png",
+      "hash_tag": "security_any",
+      "started_at": "2026-07-16T19:00:00+09:00",
+      "ended_at": "2026-07-16T21:00:00+09:00",
+      "published_at": "2026-05-28T20:37:04+09:00",
+      "limit": 35,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 15489,
+        "subdomain": "security-any",
+        "title": "Security.any",
+        "url": "https://security-any.connpass.com/"
+      },
+      "address": "〒101-0022 東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階",
+      "place": "株式会社viviON",
+      "lat": "35.699923200000",
+      "lon": "139.774652600000",
+      "owner_id": 17039,
+      "owner_nickname": "kitaji0306",
+      "owner_display_name": "キタジー（kitaji0306）",
+      "accepted": 27,
+      "waiting": 0,
+      "updated_at": "2026-07-13T21:00:14+09:00"
     },
     {
       "id": 396250,
@@ -469,6 +469,37 @@
       "updated_at": "2026-07-14T11:31:45+09:00"
     },
     {
+      "id": 399079,
+      "title": "その「好き」で、はじめてのLTに挑戦しよう - Progate BAR",
+      "catch": "LT未経験者のための、はじめての登壇ステージ。あなたの熱量を 5 分で語ろう！",
+      "description": "<p>（7/9 13:00 追記）</p>\n<p>📡 <strong>【お知らせ】今回は東京・京都の同時開催＋オンライン配信です！</strong></p>\n<p>今回のProgate BARは、この<strong>東京会場（Progate渋谷オフィス）</strong>に加えて、<strong>京都会場（ハッカソンハウス京都）でも同時開催</strong>します！\nさらに、当日の様子を<strong>オンライン配信</strong>。現地に来られない方も、リスナーとして視聴・応援で参加できます📡</p>\n<ul>\n<li>🎙️ <strong>LT登壇・現地参加を希望する方</strong>は、このページからお申し込みください（<strong>登壇者は現地会場に集合</strong>が条件です）</li>\n<li>📍 <strong>京都で参加したい方</strong> → <a href=\"https://progate.connpass.com/event/399143/\" rel=\"nofollow\">京都版はこちら</a></li>\n<li>📺 <strong>オンラインでリスナー参加したい方</strong> → <a href=\"https://discord.gg/progate-path-973145176723836948?event=1524622831181365399\" rel=\"nofollow\">Discordイベントはこちら</a></li>\n</ul>\n<h2>🎉 イベント概要</h2>\n<p><strong style=\"font-size: 1.5rem;\">その「好き」で、はじめてのLTに挑戦しよう - Progate BAR</strong></p>\n<p><strong style=\"font-size: 1.2rem;\">LT未経験者のための、はじめての登壇ステージ。あなたの熱量を5分で語ろう！</strong></p>\n<p>「LTって、なんかすごい人が話すやつでしょ？」——そう思っていませんか？</p>\n<p>今回のProgate BARは、<strong>LTをしたことがない人やもっと練習したい人</strong>のための回です。🍸</p>\n<p>話すテーマは、技術でも趣味でも、ハマっているゲームでも、最近の推しでも、なんでもOK。\n大事なのは\"うまさ\"じゃなくて、<strong>あなたの「好き」「熱量」</strong>です。</p>\n<p>実は、人前で自分の考えを語る経験は、インターンや就活の面接でめちゃくちゃ効いてきます。\n「伝える力」は場数で伸ばせる！その<strong>最初の一歩</strong>を、Progateが全力で後押しします！</p>\n<p>一人だと緊張する……という方は、<strong>友達や知り合いを誘って一緒に来るのがとってもオススメ</strong>！\n知ってる人がいるだけで、登壇のハードルはぐっと下がります。😊</p>\n<h2>🧑‍💻 こんな方にオススメ</h2>\n<ul>\n<li>🙋 LT・登壇を一度もしたことがなくて、挑戦してみたい方</li>\n<li>🌱 人前で話すのは緊張するけど、克服したい方</li>\n<li>🗣️ 就活・インターンに向けて「伝える力」を鍛えたい方</li>\n<li>🔥 好きなこと・ハマっていることを誰かに聞いてほしい方</li>\n<li>🤝 新しいことに挑戦したい方</li>\n</ul>\n<h2>Progate BAR 参加条件</h2>\n<p><a href=\"https://path.progate.com/\" rel=\"nofollow\">Progate Path</a>に登録していること（所要時間約1分）</p>\n<h1>📆 開催日時</h1>\n<p>2026年7月16日(木)　17:30 開場・受付開始 〜 21:00（解散予定）</p>\n<h1>📍 開催場所</h1>\n<p>株式会社Progate</p>\n<p>〒150-0032\n東京都渋谷区鶯谷町2-7 エクセルビル 5F</p>\n<p>最寄り駅は渋谷駅</p>\n<h1>🕰️ タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>17:30</td>\n<td>受付開始</td>\n</tr>\n<tr>\n<td>18:00</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>18:15</td>\n<td>LTセッション</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>交流セッション</td>\n</tr>\n<tr>\n<td>20:45</td>\n<td>クロージング</td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>解散</td>\n</tr>\n</tbody>\n</table>\n<p>※登壇人数によってタイムテーブルは調整します。</p>\n<h1>🎙️ セッション情報</h1>\n<h2>⚡ LTセッション</h2>\n<p style=\"font-size: 1.5rem;\">テーマは「わたしの\"好き\"を聞いてほしい」</p>\n\n<p>技術の話じゃなくて大丈夫。あなたが熱量を持っているものなら、<strong>なんでもOK</strong>です。</p>\n<ul>\n<li>ハマっているプログラミング言語・ツールの話</li>\n<li>学校でやっている研究の話</li>\n<li>最近沼っている趣味、推し、ゲーム、ガジェット</li>\n<li>「これだけは語らせて！」という個人的なこだわり</li>\n<li>ハッカソンで作ったもの・やらかした話</li>\n</ul>\n<p style=\"font-size: 1.5rem;\">LTの持ち時間はひとり 5 分</p>\n\n<h3>登壇者募集</h3>\n<p>今回のLT会はいつもにまして、<strong>はじめてのLTに挑戦する人</strong>のための場です。</p>\n<p>「オチがなくてもいい」「途中で噛んでもいい」「スライドが質素でもいい」。<br>\n完璧じゃなくて大丈夫。あなたの熱量が伝われば、それが最高のLTです。</p>\n<p><strong style=\"color:red;\">「人前で話す経験」は、就活・インターンであなたの強い武器になります。最初の一歩、ここで踏み出しましょう٩( 'ω' )وﾖｯｼｬ!</strong></p>\n<blockquote>\n<p>👥 <strong>緊張しそうな方へ</strong>\n友達・知り合いを誘って一緒に来るのがオススメです！\n知ってる顔が客席にいるだけで、ぐっと話しやすくなりますよ😊</p>\n</blockquote>\n<h2>🌪️ 交流セッション</h2>\n<p>「どうやってそのテーマ選んだの？」「発表どうだった？」</p>\n<p>LT登壇者へのリアクションから始まり、参加者同士でざっくばらんに話しましょう。\nはじめての登壇をやり切った人も、聞きに来た人も、お互いの「好き」を肴に盛り上がりましょう！('ω' )</p>\n<h1>🍹 ドリンクメニュー</h1>\n<p>Progate BARではオリジナルのステータスコードカクテルやのみものを用意しています！</p>\n<p><img width=\"400px\" src=\"https://github.com/user-attachments/assets/c25da6d5-169b-4979-8435-57c26251d389\"></p>\n<p><strong style=\"color: red;\">オリジナルのカクテルはつぎの条件を満たしている方への限定提供となります！</strong></p>\n<ul>\n<li>Progate Pathに登録し<a href=\"https://app.path.progate.com/career-support\" rel=\"nofollow\">プロフィールで開発経験を入力</a>している</li>\n</ul>\n<p>カクテルを頼むときにBARカウンターにて入力済みの画面をお見せください〜！</p>\n<p>ステータスコードドリンクの感想はX（旧Twitter）の #ProgateBAR つきの投稿でぜひ教えてください！見ます！</p>\n<h3>ボランティアバーテンダー募集(先着2名)</h3>\n<p>バーカウンターでのドリンク提供を手伝ってくれる方を2名募集します！</p>\n<p>※バーテンダーとして参加登録をされた方は<strong>簡単な事前説明のために開場15分前頃会場へお越しください</strong>！</p>\n<ul>\n<li>未経験OK</li>\n<li>基本的にはバーカウンターにいて、注文が入った際にドリンクを提供していただきます</li>\n<li>LTもすべて視聴できます！バーテンダーをしながら色んな方とお話しする機会があります！</li>\n</ul>\n<p>過去担当してくださった方は「楽しかったです！」と言ってくれました！</p>\n<h1>📷 過去の開催の様子</h1>\n<p><img alt=\"image\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar.png\"></p>\n<div style=\"\">\n<img width=\"320px\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar-1.png\">\n<img width=\"320px\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar-5.png\">\n<img width=\"320px\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar-2.png\">\n<img width=\"320px\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar-4.png\">\n</div>\n\n<h1>🏢 主催企業</h1>\n<h3><a href=\"https://prog-8.com/about\" rel=\"nofollow\">株式会社Progate</a></h3>\n<p>株式会社 Progate は、初心者から楽しくプログラミングを学ぶことができる「Progate」や、自分のローカル環境をつかって実務に近い開発経験を積める「Progate Path」といったサービスを提供しています。</p>\n<p>学習者の熱意とポテンシャルを見える化して企業に応募できる「Progate Prospects」も提供しており、学習から就職・転職までをProgateで行えます。</p>\n<p>企業とつながるイベントや交流会などを順次企画しております！\nキャリアで悩んでいるかた、ぜひお話ししましょう！٩( 'ω' )وﾖｯｼｬ!</p>\n<p><img width=\"240px\" src=\"https://images.microcms-assets.io/assets/7919edd997d14a198d234596751afab9/a1085eea9a944cae980c32361639b7f6/logo-color_horizontal-composition.png\"></p>\n<h1>注意点</h1>\n<ul>\n<li>応募多数となった場合は、先着順とさせていただきます。</li>\n<li>参加が難しくなった場合は、お早めにキャンセルのご連絡をいただけますようよろしくお願い致します。</li>\n<li>イベントは、止むを得ず中止させて頂く場合がございます。その場合はconnpassのメッセージにてご連絡させていただきます。</li>\n<li>イベントの様子について、どなたでもブログやSNSなどで公開可能としています点、ご了承ください。</li>\n<li>当日録画した内容は、後日弊社サイトやSNS等で掲載させていただくことがあります。ご了承ください。</li>\n<li>イベントに関係のない営業や勧誘を目的としたご参加はご遠慮ください。</li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。</li>\n</ul>\n<h1>行動規範</h1>\n<p>本行動規範は、イベントの運営・登壇・協賛・参加をするすべてのステークホルダーに適用されるものです。\nご一読の上、イベントを誰にとっても心地よく、優れた体験を提供できるように共に協力していきましょう。</p>\n<p>本イベントは、技術が好きな学生エンジニアで技術交流を行うことを目的としたイベントです。私たちは、すべての参加者にとって、安全で歓迎されるような場を作ることに努めます。</p>\n<p>本イベントに参加するすべての人は、以下の行動規範を守ることを求められます。この行動規範を当イベントに関する全てにおいて適用します。全ての人にとって安全な場所を提供するため、一般参加者、登壇者、スポンサー、運営スタッフ含めた全参加者に、ご協力をお願いします。</p>\n<p>私たちは、以下のような事柄に関わらず、全ての人にとって安全な場を提供することに努めます。</p>\n<p>・社会的あるいは法的な性、性自認、性表現（外見の性）、性指向\n・年齢、障がい、容姿、体格\n・人種、民族、宗教（無宗教を含む）\n・技術の選択</p>\n<p>そして、下記のようなハラスメント行為をいかなる形であっても決して許容しません。</p>\n<p>・脅迫、つきまとい、ストーキング\n・不適切な画像、動画、録音の再生（性的な画像など）\n・発表や他のイベントに対する妨害行為\n・不適切な身体的接触\n・これらに限らない性的嫌がらせ\n・相手の尊厳を傷つけるような言葉</p>\n<p>スポンサーや登壇者、主催者ならびに運営スタッフもこのポリシーの対象となります。性的な言葉はもちろん、相手の尊厳を傷つけるような言葉や画像はいかなる発表やワークショップ、パーティ、X（旧Twitter）のようなオンラインメディアにおいても不適切です。</p>\n<p>もしハラスメント行為をやめるように指示された場合、すべての参加者は直ちに従うことが求められます。ポリシーに則ることができない参加者は、主催者の判断により、退場処分や今後のイベントに一般参加者、登壇者、スポンサー、運営スタッフとして関わることを禁止します。</p>\n<p>もしハラスメントを受けていると感じたり、他の誰かがハラスメントされていることに気がついた場合、または他に何かお困りのことがあれば、すぐにスタッフまでご連絡ください。警察への連絡などを含め、安心してイベントに参加できるようにお手伝いさせていただきます。</p>\n<p>※本文章はKotlinFest Code of Conductとして公開された文章https://<a href=\"http://github.com/KotlinFest/KotlinFest2018/blob/master/CODE-OF-CONDUCT.md\" rel=\"nofollow\">github.com/KotlinFest/KotlinFest2018/blob/master/CODE-OF-CONDUCT.md</a> を元に派生しています。\n※本文章はCreative Commons Zero ライセンス( <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\" rel=\"nofollow\">https://creativecommons.org/publicdomain/zero/1.0/</a> )で公開されています。</p>",
+      "url": "https://progate.connpass.com/event/399079/",
+      "image_url": "https://media.connpass.com/thumbs/28/8f/288fa37e7671ec77d8c3957f93a4bf4b.png",
+      "hash_tag": "",
+      "started_at": "2026-07-16T18:00:00+09:00",
+      "ended_at": "2026-07-16T21:00:00+09:00",
+      "published_at": "2026-06-30T17:26:54+09:00",
+      "limit": 31,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 9024,
+        "subdomain": "progate",
+        "title": "Progate",
+        "url": "https://progate.connpass.com/"
+      },
+      "address": "〒150-0032 東京都渋谷区鶯谷町2-7 エクセルビル 5F",
+      "place": "Progate東京オフィス",
+      "lat": "35.653605400000",
+      "lon": "139.704559800000",
+      "owner_id": 875013,
+      "owner_nickname": "ukeya",
+      "owner_display_name": "yuki arai",
+      "accepted": 8,
+      "waiting": 0,
+      "updated_at": "2026-07-09T13:04:19+09:00"
+    },
+    {
       "id": 396132,
       "title": "渋谷でビール片手にLT会！ ※初心者大歓迎",
       "catch": "第3木曜LT会 #31",
@@ -495,7 +526,7 @@
       "owner_id": 511009,
       "owner_nickname": "ataboy86",
       "owner_display_name": "ataboy86",
-      "accepted": 19,
+      "accepted": 18,
       "waiting": 2,
       "updated_at": "2026-07-13T18:23:44+09:00"
     },
@@ -529,37 +560,6 @@
       "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-07-06T15:14:07+09:00"
-    },
-    {
-      "id": 399079,
-      "title": "その「好き」で、はじめてのLTに挑戦しよう - Progate BAR",
-      "catch": "LT未経験者のための、はじめての登壇ステージ。あなたの熱量を 5 分で語ろう！",
-      "description": "<p>（7/9 13:00 追記）</p>\n<p>📡 <strong>【お知らせ】今回は東京・京都の同時開催＋オンライン配信です！</strong></p>\n<p>今回のProgate BARは、この<strong>東京会場（Progate渋谷オフィス）</strong>に加えて、<strong>京都会場（ハッカソンハウス京都）でも同時開催</strong>します！\nさらに、当日の様子を<strong>オンライン配信</strong>。現地に来られない方も、リスナーとして視聴・応援で参加できます📡</p>\n<ul>\n<li>🎙️ <strong>LT登壇・現地参加を希望する方</strong>は、このページからお申し込みください（<strong>登壇者は現地会場に集合</strong>が条件です）</li>\n<li>📍 <strong>京都で参加したい方</strong> → <a href=\"https://progate.connpass.com/event/399143/\" rel=\"nofollow\">京都版はこちら</a></li>\n<li>📺 <strong>オンラインでリスナー参加したい方</strong> → <a href=\"https://discord.gg/progate-path-973145176723836948?event=1524622831181365399\" rel=\"nofollow\">Discordイベントはこちら</a></li>\n</ul>\n<h2>🎉 イベント概要</h2>\n<p><strong style=\"font-size: 1.5rem;\">その「好き」で、はじめてのLTに挑戦しよう - Progate BAR</strong></p>\n<p><strong style=\"font-size: 1.2rem;\">LT未経験者のための、はじめての登壇ステージ。あなたの熱量を5分で語ろう！</strong></p>\n<p>「LTって、なんかすごい人が話すやつでしょ？」——そう思っていませんか？</p>\n<p>今回のProgate BARは、<strong>LTをしたことがない人やもっと練習したい人</strong>のための回です。🍸</p>\n<p>話すテーマは、技術でも趣味でも、ハマっているゲームでも、最近の推しでも、なんでもOK。\n大事なのは\"うまさ\"じゃなくて、<strong>あなたの「好き」「熱量」</strong>です。</p>\n<p>実は、人前で自分の考えを語る経験は、インターンや就活の面接でめちゃくちゃ効いてきます。\n「伝える力」は場数で伸ばせる！その<strong>最初の一歩</strong>を、Progateが全力で後押しします！</p>\n<p>一人だと緊張する……という方は、<strong>友達や知り合いを誘って一緒に来るのがとってもオススメ</strong>！\n知ってる人がいるだけで、登壇のハードルはぐっと下がります。😊</p>\n<h2>🧑‍💻 こんな方にオススメ</h2>\n<ul>\n<li>🙋 LT・登壇を一度もしたことがなくて、挑戦してみたい方</li>\n<li>🌱 人前で話すのは緊張するけど、克服したい方</li>\n<li>🗣️ 就活・インターンに向けて「伝える力」を鍛えたい方</li>\n<li>🔥 好きなこと・ハマっていることを誰かに聞いてほしい方</li>\n<li>🤝 新しいことに挑戦したい方</li>\n</ul>\n<h2>Progate BAR 参加条件</h2>\n<p><a href=\"https://path.progate.com/\" rel=\"nofollow\">Progate Path</a>に登録していること（所要時間約1分）</p>\n<h1>📆 開催日時</h1>\n<p>2026年7月16日(木)　17:30 開場・受付開始 〜 21:00（解散予定）</p>\n<h1>📍 開催場所</h1>\n<p>株式会社Progate</p>\n<p>〒150-0032\n東京都渋谷区鶯谷町2-7 エクセルビル 5F</p>\n<p>最寄り駅は渋谷駅</p>\n<h1>🕰️ タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>17:30</td>\n<td>受付開始</td>\n</tr>\n<tr>\n<td>18:00</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>18:15</td>\n<td>LTセッション</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>交流セッション</td>\n</tr>\n<tr>\n<td>20:45</td>\n<td>クロージング</td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>解散</td>\n</tr>\n</tbody>\n</table>\n<p>※登壇人数によってタイムテーブルは調整します。</p>\n<h1>🎙️ セッション情報</h1>\n<h2>⚡ LTセッション</h2>\n<p style=\"font-size: 1.5rem;\">テーマは「わたしの\"好き\"を聞いてほしい」</p>\n\n<p>技術の話じゃなくて大丈夫。あなたが熱量を持っているものなら、<strong>なんでもOK</strong>です。</p>\n<ul>\n<li>ハマっているプログラミング言語・ツールの話</li>\n<li>学校でやっている研究の話</li>\n<li>最近沼っている趣味、推し、ゲーム、ガジェット</li>\n<li>「これだけは語らせて！」という個人的なこだわり</li>\n<li>ハッカソンで作ったもの・やらかした話</li>\n</ul>\n<p style=\"font-size: 1.5rem;\">LTの持ち時間はひとり 5 分</p>\n\n<h3>登壇者募集</h3>\n<p>今回のLT会はいつもにまして、<strong>はじめてのLTに挑戦する人</strong>のための場です。</p>\n<p>「オチがなくてもいい」「途中で噛んでもいい」「スライドが質素でもいい」。<br>\n完璧じゃなくて大丈夫。あなたの熱量が伝われば、それが最高のLTです。</p>\n<p><strong style=\"color:red;\">「人前で話す経験」は、就活・インターンであなたの強い武器になります。最初の一歩、ここで踏み出しましょう٩( 'ω' )وﾖｯｼｬ!</strong></p>\n<blockquote>\n<p>👥 <strong>緊張しそうな方へ</strong>\n友達・知り合いを誘って一緒に来るのがオススメです！\n知ってる顔が客席にいるだけで、ぐっと話しやすくなりますよ😊</p>\n</blockquote>\n<h2>🌪️ 交流セッション</h2>\n<p>「どうやってそのテーマ選んだの？」「発表どうだった？」</p>\n<p>LT登壇者へのリアクションから始まり、参加者同士でざっくばらんに話しましょう。\nはじめての登壇をやり切った人も、聞きに来た人も、お互いの「好き」を肴に盛り上がりましょう！('ω' )</p>\n<h1>🍹 ドリンクメニュー</h1>\n<p>Progate BARではオリジナルのステータスコードカクテルやのみものを用意しています！</p>\n<p><img width=\"400px\" src=\"https://github.com/user-attachments/assets/c25da6d5-169b-4979-8435-57c26251d389\"></p>\n<p><strong style=\"color: red;\">オリジナルのカクテルはつぎの条件を満たしている方への限定提供となります！</strong></p>\n<ul>\n<li>Progate Pathに登録し<a href=\"https://app.path.progate.com/career-support\" rel=\"nofollow\">プロフィールで開発経験を入力</a>している</li>\n</ul>\n<p>カクテルを頼むときにBARカウンターにて入力済みの画面をお見せください〜！</p>\n<p>ステータスコードドリンクの感想はX（旧Twitter）の #ProgateBAR つきの投稿でぜひ教えてください！見ます！</p>\n<h3>ボランティアバーテンダー募集(先着2名)</h3>\n<p>バーカウンターでのドリンク提供を手伝ってくれる方を2名募集します！</p>\n<p>※バーテンダーとして参加登録をされた方は<strong>簡単な事前説明のために開場15分前頃会場へお越しください</strong>！</p>\n<ul>\n<li>未経験OK</li>\n<li>基本的にはバーカウンターにいて、注文が入った際にドリンクを提供していただきます</li>\n<li>LTもすべて視聴できます！バーテンダーをしながら色んな方とお話しする機会があります！</li>\n</ul>\n<p>過去担当してくださった方は「楽しかったです！」と言ってくれました！</p>\n<h1>📷 過去の開催の様子</h1>\n<p><img alt=\"image\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar.png\"></p>\n<div style=\"\">\n<img width=\"320px\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar-1.png\">\n<img width=\"320px\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar-5.png\">\n<img width=\"320px\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar-2.png\">\n<img width=\"320px\" src=\"https://ddb6ltykpq547.cloudfront.net/community_mkt_images/connpass_images/bar-4.png\">\n</div>\n\n<h1>🏢 主催企業</h1>\n<h3><a href=\"https://prog-8.com/about\" rel=\"nofollow\">株式会社Progate</a></h3>\n<p>株式会社 Progate は、初心者から楽しくプログラミングを学ぶことができる「Progate」や、自分のローカル環境をつかって実務に近い開発経験を積める「Progate Path」といったサービスを提供しています。</p>\n<p>学習者の熱意とポテンシャルを見える化して企業に応募できる「Progate Prospects」も提供しており、学習から就職・転職までをProgateで行えます。</p>\n<p>企業とつながるイベントや交流会などを順次企画しております！\nキャリアで悩んでいるかた、ぜひお話ししましょう！٩( 'ω' )وﾖｯｼｬ!</p>\n<p><img width=\"240px\" src=\"https://images.microcms-assets.io/assets/7919edd997d14a198d234596751afab9/a1085eea9a944cae980c32361639b7f6/logo-color_horizontal-composition.png\"></p>\n<h1>注意点</h1>\n<ul>\n<li>応募多数となった場合は、先着順とさせていただきます。</li>\n<li>参加が難しくなった場合は、お早めにキャンセルのご連絡をいただけますようよろしくお願い致します。</li>\n<li>イベントは、止むを得ず中止させて頂く場合がございます。その場合はconnpassのメッセージにてご連絡させていただきます。</li>\n<li>イベントの様子について、どなたでもブログやSNSなどで公開可能としています点、ご了承ください。</li>\n<li>当日録画した内容は、後日弊社サイトやSNS等で掲載させていただくことがあります。ご了承ください。</li>\n<li>イベントに関係のない営業や勧誘を目的としたご参加はご遠慮ください。</li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。</li>\n</ul>\n<h1>行動規範</h1>\n<p>本行動規範は、イベントの運営・登壇・協賛・参加をするすべてのステークホルダーに適用されるものです。\nご一読の上、イベントを誰にとっても心地よく、優れた体験を提供できるように共に協力していきましょう。</p>\n<p>本イベントは、技術が好きな学生エンジニアで技術交流を行うことを目的としたイベントです。私たちは、すべての参加者にとって、安全で歓迎されるような場を作ることに努めます。</p>\n<p>本イベントに参加するすべての人は、以下の行動規範を守ることを求められます。この行動規範を当イベントに関する全てにおいて適用します。全ての人にとって安全な場所を提供するため、一般参加者、登壇者、スポンサー、運営スタッフ含めた全参加者に、ご協力をお願いします。</p>\n<p>私たちは、以下のような事柄に関わらず、全ての人にとって安全な場を提供することに努めます。</p>\n<p>・社会的あるいは法的な性、性自認、性表現（外見の性）、性指向\n・年齢、障がい、容姿、体格\n・人種、民族、宗教（無宗教を含む）\n・技術の選択</p>\n<p>そして、下記のようなハラスメント行為をいかなる形であっても決して許容しません。</p>\n<p>・脅迫、つきまとい、ストーキング\n・不適切な画像、動画、録音の再生（性的な画像など）\n・発表や他のイベントに対する妨害行為\n・不適切な身体的接触\n・これらに限らない性的嫌がらせ\n・相手の尊厳を傷つけるような言葉</p>\n<p>スポンサーや登壇者、主催者ならびに運営スタッフもこのポリシーの対象となります。性的な言葉はもちろん、相手の尊厳を傷つけるような言葉や画像はいかなる発表やワークショップ、パーティ、X（旧Twitter）のようなオンラインメディアにおいても不適切です。</p>\n<p>もしハラスメント行為をやめるように指示された場合、すべての参加者は直ちに従うことが求められます。ポリシーに則ることができない参加者は、主催者の判断により、退場処分や今後のイベントに一般参加者、登壇者、スポンサー、運営スタッフとして関わることを禁止します。</p>\n<p>もしハラスメントを受けていると感じたり、他の誰かがハラスメントされていることに気がついた場合、または他に何かお困りのことがあれば、すぐにスタッフまでご連絡ください。警察への連絡などを含め、安心してイベントに参加できるようにお手伝いさせていただきます。</p>\n<p>※本文章はKotlinFest Code of Conductとして公開された文章https://<a href=\"http://github.com/KotlinFest/KotlinFest2018/blob/master/CODE-OF-CONDUCT.md\" rel=\"nofollow\">github.com/KotlinFest/KotlinFest2018/blob/master/CODE-OF-CONDUCT.md</a> を元に派生しています。\n※本文章はCreative Commons Zero ライセンス( <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\" rel=\"nofollow\">https://creativecommons.org/publicdomain/zero/1.0/</a> )で公開されています。</p>",
-      "url": "https://progate.connpass.com/event/399079/",
-      "image_url": "https://media.connpass.com/thumbs/28/8f/288fa37e7671ec77d8c3957f93a4bf4b.png",
-      "hash_tag": "",
-      "started_at": "2026-07-16T18:00:00+09:00",
-      "ended_at": "2026-07-16T21:00:00+09:00",
-      "published_at": "2026-06-30T17:26:54+09:00",
-      "limit": 31,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 9024,
-        "subdomain": "progate",
-        "title": "Progate",
-        "url": "https://progate.connpass.com/"
-      },
-      "address": "〒150-0032 東京都渋谷区鶯谷町2-7 エクセルビル 5F",
-      "place": "Progate東京オフィス",
-      "lat": "35.653605400000",
-      "lon": "139.704559800000",
-      "owner_id": 875013,
-      "owner_nickname": "ukeya",
-      "owner_display_name": "yuki arai",
-      "accepted": 8,
-      "waiting": 0,
-      "updated_at": "2026-07-09T13:04:19+09:00"
     },
     {
       "id": 398033,
