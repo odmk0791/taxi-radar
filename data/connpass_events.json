@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-16T03:58:43.072194+09:00",
+  "fetched_at": "2026-07-16T05:11:11.876447+09:00",
   "date": "20260716",
   "count": 23,
   "events": [
@@ -252,37 +252,6 @@
       "updated_at": "2026-07-15T13:34:56+09:00"
     },
     {
-      "id": 396250,
-      "title": "AWS新オフィスでやっていき宣言LT会！【現地・オンライン開催】",
-      "catch": "AWSの新オフィスへ来訪し、やっていきを高めていきましょう！",
-      "description": "<p>オンライン視聴<br>\nYouTube: <a href=\"https://youtube.com/live/4P-79goa9BU\" rel=\"nofollow\">https://youtube.com/live/4P-79goa9BU</a></p>\n<hr>\n<h1>イベント概要</h1>\n<p>AWS Japanのオフィスが目黒から麻布台ヒルズへ移転しました！</p>\n<p>そこで今回は、新しいAWS Japanオフィスに集まり、みんなで「AWSのやっていき」をテーマにしたLT会を開催します。<br>\n「やっていき」とは、これからやりたいこと、最近はじめたこと、AWSで挑戦してみたいこと、学んでいること、業務や個人開発で試していることなど、前向きな取り組み全般です！</p>\n<p>たとえば、</p>\n<ul>\n<li>これからAWSで挑戦したいこと</li>\n<li>最近はじめたAWSの学習や検証</li>\n<li>AWSを使った個人開発・業務改善</li>\n<li>気になっているAWSサービス</li>\n<li>今年やっていきたい技術テーマ</li>\n<li>失敗談・学び・これからの改善宣言</li>\n</ul>\n<p>LTは1人あたり5分ほどを予定しています。\nAWSに関する内容であれば、初心者・経験者を問わず大歓迎です。</p>\n<p>新しいオフィスで、ゆるく楽しく、AWSの「やっていき」を共有しましょう！</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>タイトル</th>\n<th>登壇者（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:05</td>\n<td>オープニング 〜やっていき宣言〜</td>\n<td>y-ohgi</td>\n</tr>\n<tr>\n<td>19:05-19:10</td>\n<td>コミュニティへのメッセージ</td>\n<td>Woosuk Choi さん / AWS Japan</td>\n</tr>\n<tr>\n<td>19:10-19:20</td>\n<td>凡エンジニアがこの先生きのこるためには。TypeScript完全に理解したい</td>\n<td>原田涼太郎（あるけみー）</td>\n</tr>\n<tr>\n<td>19:20-19:30</td>\n<td>VPCとも向き合いたい2026(年度)</td>\n<td>umitsu</td>\n</tr>\n<tr>\n<td>19:30-19:40</td>\n<td>Network Firewallやっていき！</td>\n<td>荒木 ARK</td>\n</tr>\n<tr>\n<td>19:40-19:50</td>\n<td>Amazon Quick 入門！</td>\n<td>鈴木陽介 / 株式会社 uhuru</td>\n</tr>\n<tr>\n<td>19:50-20:00</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00-20:10</td>\n<td>インフラと開発の垣根を超えていき！〜元AWSインフラエンジニアがAWS開発で奮闘している話〜</td>\n<td>畠山大治</td>\n</tr>\n<tr>\n<td>20:10-20:20</td>\n<td>シンガポールで登壇してきます</td>\n<td>山下 祐樹</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>re:Invent2025で英語に苦戦したのでテクノロジーで解決しようとしている話(仮)</td>\n<td>yuuuuuuu</td>\n</tr>\n<tr>\n<td>20:30-20:40</td>\n<td>the UG re:Invent Grant 2026に選ばれたので、後に続く人のために責任を負う宣言をしたい</td>\n<td>Shintaro FUKATSU</td>\n</tr>\n<tr>\n<td>20:40-20:50</td>\n<td>クロージング</td>\n<td>くらっち</td>\n</tr>\n</tbody>\n</table>\n<p>※内容は予告なく変更することがあります。</p>\n<hr>\n<h1>アクセス</h1>\n<ul>\n<li>\n<p><strong>六本木一丁目 or 神谷町</strong>で降りれば地下道直結<br>(麻布十番は坂を登るので非推奨)</p>\n</li>\n<li>\n<p>麻布台ヒルズではなく<strong>森JPタワーを目指す</strong></p>\n</li>\n<li>\n<p>ルート1: 地下街から（S1ホール経由）<br>\n①地下街からエスカレーターを上がる → 1階（= 森JPタワーの地下1階）<br>\n②S1エレベーターホールに向かう（「Hills House」の看板が目印）<br>\n③S1エレベーターで 33階（オフィス連絡階）へ<br>\n④3階でエレベーターを乗り換え → 36階 AWS受付へ</p>\n</li>\n<li>\n<p>ルート2: 地上から（S2ホール経由）<br>\n①森JPタワーの1階から入る or 地下街からエスカレーターを2階分上がる <br>\n②S2エレベーターホールに向かう（「Hills House」の看板が目印）<br>\n③S2エレベーターで 34階（オフィス連絡階）へ<br>\n④34階でエレベーターを乗り換え → 36階 AWS受付へ<br></p>\n</li>\n<li>\n<p>エレベーターホール<br>\n<img src=\"https://gyazo.com/5b516e49a25b68b2da04a4cbb667dbb6.jpg\" width=\"500\"></p>\n</li>\n<li>\n<p>オフィス入口<br>\n<img src=\"https://gyazo.com/d6ffe068abe510fabd9d586295d6a849.jpg\" width=\"500\"></p>\n</li>\n</ul>\n<h1>運営メンバー紹介</h1>\n<h3>みのるん <a href=\"https://twitter.com/minorun365\" rel=\"nofollow\">@minorun365</a>（KDDIアジャイル開発センター株式会社）</h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\" width=\"200\"></p>\n<blockquote>\n<p>KDDIアジャイル開発センター テックエバンジェリスト。クラウドや生成AIで内製開発を行いながら、技術の楽しさを伝える活動をしています。AWS Community Hero, AWS Samurai 2023, 2024 Japan AWS Top Engineer &amp; All Certs, Qiita 2024 Top Contributor / 著書「Amazon Bedrock 生成AIアプリ開発入門」（SBクリエイティブ刊）</p>\n</blockquote>\n<h3>watany <a href=\"https://twitter.com/_watany\" rel=\"nofollow\">@_watany</a>（NTTテクノクロス株式会社）</h3>\n<p><img src=\"https://i.gyazo.com/bfe7931d64dbed0c0d09c60fcd46ef8e.jpg\" width=\"200\"></p>\n<blockquote>\n<p>2015年からAWSを用いた開発に携わり、アーキテクト・運用設計支援として活動する一方で、社内にてテクニカルサポートや研修講師を務めています。また、AWS Community BuilderとしてAWS CDKのContributeや技術ブログの執筆を行っています。2024 AWS Ambassadorを受賞。</p>\n</blockquote>\n<h3>y-ohgi <a href=\"https://twitter.com/_y_ohgi\" rel=\"nofollow\">@_y_ohgi</a>（株式会社Topotal）</h3>\n<p><img src=\"https://i.gyazo.com/1625e49e58810ac2fed169ae399516a5.jpg\" width=\"200\"></p>\n<blockquote>\n<p>株式会社topotalでSREをやっております。AWS Community Builder (Container)</p>\n</blockquote>\n<h3>ムリギッテ <a href=\"https://twitter.com/momitanJP\" rel=\"nofollow\">@momitanJP</a></h3>\n<p><img src=\"https://i.gyazo.com/7d1bf04f5dfd29ce36dddc338d8afda7.jpg\" width=\"200\"></p>\n<blockquote>\n<p>パブリックセクターから金融機関、製造業まで様々な業界のお客様に向けたシステム提案・導入をしています。最近はCDK、コンテナ、データ基盤がメイン。趣味はBlackbeltを聞きながら筋トレです。</p>\n</blockquote>\n<h3>ふくち <a href=\"https://x.com/har1101mony\" rel=\"nofollow\">@har1101mony</a></h3>\n<p><img src=\"https://gyazo.com/c42dd465aa74c4407ae8ab89afb2e428.jpg\" width=\"200\"></p>\n<blockquote>\n<p>LLMを触って遊んだり、LLMを組み込んだシステムの開発をしています。AWS Community Builder(AI Engineering) / 2025 Japan AWS Jr.Champion</p>\n</blockquote>\n<h3>くらっち<a href=\"https://x.com/kuracchi_enj\" rel=\"nofollow\">@kuracchi_enj</a></h3>\n<p><img src=\"https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-image-store%2F0%2F2711491%2Fb479cddc71fc153f6c011695a19ac02e3565c6da%2Flarge.png%3F1696581508?ixlib=rb-4.1.1&amp;auto=compress%2Cformat&amp;lossless=0&amp;w=128&amp;s=00f43f0d4f18dcc8223bafd298a013dd\" width=\"200\"></p>\n<blockquote>\n<p>普段はRuby on Railsを用いたWebアプリケーション開発をメイン業務としています。好きなAWSサービスは、Bedrock AgentCoreです。私が何者なのかわからなくなってきている今日この頃...</p>\n</blockquote>\n<h1>参加のルール/マナー</h1>\n<p>勉強会に参加される方は、JAWS-UGの定める以下のルール/マナーに則って行動することをお願いしております。</p>\n<h2>ルール</h2>\n<ul>\n<li>関係者の人種、性別、性的指向、身体的特徴、見た目、政治、宗教（または無宗教）などに係る表現は、いかなる場合も適切ではありません。  </li>\n<li>JAWS-UG は No sell, No Job です。イベントの趣旨と関係のない宣伝行為・採用活動・ネットワーキングのみを目的としたご参加はご遠慮ください。  </li>\n</ul>\n<p>ルールに違反する方は参加をお断りする場合がございます。</p>\n<h2>マナー</h2>\n<ul>\n<li>あなたのクリエイティブで前向きな発言がイベントをより楽しくします。発表者や質問者に対して疑問や意見がある場合は批判や罵り・嘲りではなく提案と課題解決の態度でポジティブな発言を心がけましょう。  </li>\n<li>全てのイベントは有志のボランティアにより非営利目的にて運営され、いつでもあなたの手助けを必要としています。お気付きの点があればぜひご協力をお願いいたします。  </li>\n<li>私たちはコミュニティへの貢献を通じて社会からの信頼を得ることがより良いビジネスに繋がり、より自分らしい働き方を見つける手段になると信じています。  </li>\n<li>AWSのユーザーグループは日本中、世界中に存在し、あなたの参加を待っています。是非コミュニティを通じて世界中の仲間と繋がりましょう。  </li>\n</ul>\n<p><a href=\"https://jaws-ug.jp/for-participant/\" rel=\"nofollow\">https://jaws-ug.jp/for-participant/</a></p>",
-      "url": "https://jawsug.connpass.com/event/396250/",
-      "image_url": "https://media.connpass.com/thumbs/c0/c0/c0c0ee0eae019c568274e152c144a5e8.png",
-      "hash_tag": "jawsug_tokyo",
-      "started_at": "2026-07-16T19:00:00+09:00",
-      "ended_at": "2026-07-16T21:00:00+09:00",
-      "published_at": "2026-06-15T12:13:04+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 8206,
-        "subdomain": "jawsug",
-        "title": "JAWS-UG東京",
-        "url": "https://jawsug.connpass.com/"
-      },
-      "address": "〒106-0041 東京都港区麻布台一丁目三番一号",
-      "place": "麻布台ヒルズ森JPタワー 35階",
-      "lat": "35.661638200000",
-      "lon": "139.740366900000",
-      "owner_id": 334344,
-      "owner_nickname": "y-ohgi",
-      "owner_display_name": "y-ohgi",
-      "accepted": 123,
-      "waiting": 11,
-      "updated_at": "2026-07-14T15:28:41+09:00"
-    },
-    {
       "id": 396769,
       "title": "CS/Sales交流会 〜AIで当たり前が変わる夜〜",
       "catch": "堅苦しい要素はなし！気軽に話せる交流会です",
@@ -405,6 +374,37 @@
       "accepted": 124,
       "waiting": 0,
       "updated_at": "2026-07-15T19:42:15+09:00"
+    },
+    {
+      "id": 396250,
+      "title": "AWS新オフィスでやっていき宣言LT会！【現地・オンライン開催】",
+      "catch": "AWSの新オフィスへ来訪し、やっていきを高めていきましょう！",
+      "description": "<p>会場をお借りする都合で受付の締切を行いました。<br>\nオンラインは以下で配信しているので、ぜひご覧ください！</p>\n<p>YouTube: <a href=\"https://youtube.com/live/4P-79goa9BU\" rel=\"nofollow\">https://youtube.com/live/4P-79goa9BU</a></p>\n<hr>\n<h1>イベント概要</h1>\n<p>AWS Japanのオフィスが目黒から麻布台ヒルズへ移転しました！</p>\n<p>そこで今回は、新しいAWS Japanオフィスに集まり、みんなで「AWSのやっていき」をテーマにしたLT会を開催します。<br>\n「やっていき」とは、これからやりたいこと、最近はじめたこと、AWSで挑戦してみたいこと、学んでいること、業務や個人開発で試していることなど、前向きな取り組み全般です！</p>\n<p>たとえば、</p>\n<ul>\n<li>これからAWSで挑戦したいこと</li>\n<li>最近はじめたAWSの学習や検証</li>\n<li>AWSを使った個人開発・業務改善</li>\n<li>気になっているAWSサービス</li>\n<li>今年やっていきたい技術テーマ</li>\n<li>失敗談・学び・これからの改善宣言</li>\n</ul>\n<p>LTは1人あたり5分ほどを予定しています。\nAWSに関する内容であれば、初心者・経験者を問わず大歓迎です。</p>\n<p>新しいオフィスで、ゆるく楽しく、AWSの「やっていき」を共有しましょう！</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>タイトル</th>\n<th>登壇者（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:05</td>\n<td>オープニング 〜やっていき宣言〜</td>\n<td>y-ohgi</td>\n</tr>\n<tr>\n<td>19:05-19:10</td>\n<td>コミュニティへのメッセージ</td>\n<td>Woosuk Choi さん / AWS Japan</td>\n</tr>\n<tr>\n<td>19:10-19:20</td>\n<td>凡エンジニアがこの先生きのこるためには。TypeScript完全に理解したい</td>\n<td>原田涼太郎（あるけみー）</td>\n</tr>\n<tr>\n<td>19:20-19:30</td>\n<td>VPCとも向き合いたい2026(年度)</td>\n<td>umitsu</td>\n</tr>\n<tr>\n<td>19:30-19:40</td>\n<td>Network Firewallやっていき！</td>\n<td>荒木 ARK</td>\n</tr>\n<tr>\n<td>19:40-19:50</td>\n<td>Amazon Quick 入門！</td>\n<td>鈴木陽介 / 株式会社 uhuru</td>\n</tr>\n<tr>\n<td>19:50-20:00</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00-20:10</td>\n<td>インフラと開発の垣根を超えていき！〜元AWSインフラエンジニアがAWS開発で奮闘している話〜</td>\n<td>畠山大治</td>\n</tr>\n<tr>\n<td>20:10-20:20</td>\n<td>シンガポールで登壇してきます</td>\n<td>山下 祐樹</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>re:Invent2025で英語に苦戦したのでテクノロジーで解決しようとしている話</td>\n<td>yuuuuuuu</td>\n</tr>\n<tr>\n<td>20:30-20:40</td>\n<td>User Groups re:Invent Grants 2026 選ばれたあとに、何をするか</td>\n<td>Shintaro FUKATSU</td>\n</tr>\n<tr>\n<td>20:40-20:50</td>\n<td>クロージング</td>\n<td>くらっち</td>\n</tr>\n</tbody>\n</table>\n<p>※内容は予告なく変更することがあります。</p>\n<hr>\n<h1>アクセス</h1>\n<ul>\n<li>\n<p><strong>六本木一丁目 or 神谷町</strong>で降りれば地下道直結<br>(麻布十番は坂を登るので非推奨)</p>\n</li>\n<li>\n<p>麻布台ヒルズではなく<strong>森JPタワーを目指す</strong></p>\n</li>\n<li>\n<p>ルート1: 地下街から（S1ホール経由）<br>\n①地下街からエスカレーターを上がる → 1階（= 森JPタワーの地下1階）<br>\n②S1エレベーターホールに向かう（「Hills House」の看板が目印）<br>\n③S1エレベーターで 33階（オフィス連絡階）へ<br>\n④3階でエレベーターを乗り換え → 36階 AWS受付へ</p>\n</li>\n<li>\n<p>ルート2: 地上から（S2ホール経由）<br>\n①森JPタワーの1階から入る or 地下街からエスカレーターを2階分上がる <br>\n②S2エレベーターホールに向かう（「Hills House」の看板が目印）<br>\n③S2エレベーターで 34階（オフィス連絡階）へ<br>\n④34階でエレベーターを乗り換え → 36階 AWS受付へ<br></p>\n</li>\n<li>\n<p>エレベーターホール<br>\n<img src=\"https://gyazo.com/5b516e49a25b68b2da04a4cbb667dbb6.jpg\" width=\"500\"></p>\n</li>\n<li>\n<p>オフィス入口<br>\n<img src=\"https://gyazo.com/d6ffe068abe510fabd9d586295d6a849.jpg\" width=\"500\"></p>\n</li>\n</ul>\n<h1>運営メンバー紹介</h1>\n<h3>みのるん <a href=\"https://twitter.com/minorun365\" rel=\"nofollow\">@minorun365</a>（KDDIアジャイル開発センター株式会社）</h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\" width=\"200\"></p>\n<blockquote>\n<p>KDDIアジャイル開発センター テックエバンジェリスト。クラウドや生成AIで内製開発を行いながら、技術の楽しさを伝える活動をしています。AWS Community Hero, AWS Samurai 2023, 2024 Japan AWS Top Engineer &amp; All Certs, Qiita 2024 Top Contributor / 著書「Amazon Bedrock 生成AIアプリ開発入門」（SBクリエイティブ刊）</p>\n</blockquote>\n<h3>watany <a href=\"https://twitter.com/_watany\" rel=\"nofollow\">@_watany</a>（NTTテクノクロス株式会社）</h3>\n<p><img src=\"https://i.gyazo.com/bfe7931d64dbed0c0d09c60fcd46ef8e.jpg\" width=\"200\"></p>\n<blockquote>\n<p>2015年からAWSを用いた開発に携わり、アーキテクト・運用設計支援として活動する一方で、社内にてテクニカルサポートや研修講師を務めています。また、AWS Community BuilderとしてAWS CDKのContributeや技術ブログの執筆を行っています。2024 AWS Ambassadorを受賞。</p>\n</blockquote>\n<h3>y-ohgi <a href=\"https://twitter.com/_y_ohgi\" rel=\"nofollow\">@_y_ohgi</a>（株式会社Topotal）</h3>\n<p><img src=\"https://i.gyazo.com/1625e49e58810ac2fed169ae399516a5.jpg\" width=\"200\"></p>\n<blockquote>\n<p>株式会社topotalでSREをやっております。AWS Community Builder (Container)</p>\n</blockquote>\n<h3>ムリギッテ <a href=\"https://twitter.com/momitanJP\" rel=\"nofollow\">@momitanJP</a></h3>\n<p><img src=\"https://i.gyazo.com/7d1bf04f5dfd29ce36dddc338d8afda7.jpg\" width=\"200\"></p>\n<blockquote>\n<p>パブリックセクターから金融機関、製造業まで様々な業界のお客様に向けたシステム提案・導入をしています。最近はCDK、コンテナ、データ基盤がメイン。趣味はBlackbeltを聞きながら筋トレです。</p>\n</blockquote>\n<h3>ふくち <a href=\"https://x.com/har1101mony\" rel=\"nofollow\">@har1101mony</a></h3>\n<p><img src=\"https://gyazo.com/c42dd465aa74c4407ae8ab89afb2e428.jpg\" width=\"200\"></p>\n<blockquote>\n<p>LLMを触って遊んだり、LLMを組み込んだシステムの開発をしています。AWS Community Builder(AI Engineering) / 2025 Japan AWS Jr.Champion</p>\n</blockquote>\n<h3>くらっち<a href=\"https://x.com/kuracchi_enj\" rel=\"nofollow\">@kuracchi_enj</a></h3>\n<p><img src=\"https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-image-store%2F0%2F2711491%2Fb479cddc71fc153f6c011695a19ac02e3565c6da%2Flarge.png%3F1696581508?ixlib=rb-4.1.1&amp;auto=compress%2Cformat&amp;lossless=0&amp;w=128&amp;s=00f43f0d4f18dcc8223bafd298a013dd\" width=\"200\"></p>\n<blockquote>\n<p>普段はRuby on Railsを用いたWebアプリケーション開発をメイン業務としています。好きなAWSサービスは、Bedrock AgentCoreです。私が何者なのかわからなくなってきている今日この頃...</p>\n</blockquote>\n<h1>参加のルール/マナー</h1>\n<p>勉強会に参加される方は、JAWS-UGの定める以下のルール/マナーに則って行動することをお願いしております。</p>\n<h2>ルール</h2>\n<ul>\n<li>関係者の人種、性別、性的指向、身体的特徴、見た目、政治、宗教（または無宗教）などに係る表現は、いかなる場合も適切ではありません。  </li>\n<li>JAWS-UG は No sell, No Job です。イベントの趣旨と関係のない宣伝行為・採用活動・ネットワーキングのみを目的としたご参加はご遠慮ください。  </li>\n</ul>\n<p>ルールに違反する方は参加をお断りする場合がございます。</p>\n<h2>マナー</h2>\n<ul>\n<li>あなたのクリエイティブで前向きな発言がイベントをより楽しくします。発表者や質問者に対して疑問や意見がある場合は批判や罵り・嘲りではなく提案と課題解決の態度でポジティブな発言を心がけましょう。  </li>\n<li>全てのイベントは有志のボランティアにより非営利目的にて運営され、いつでもあなたの手助けを必要としています。お気付きの点があればぜひご協力をお願いいたします。  </li>\n<li>私たちはコミュニティへの貢献を通じて社会からの信頼を得ることがより良いビジネスに繋がり、より自分らしい働き方を見つける手段になると信じています。  </li>\n<li>AWSのユーザーグループは日本中、世界中に存在し、あなたの参加を待っています。是非コミュニティを通じて世界中の仲間と繋がりましょう。  </li>\n</ul>\n<p><a href=\"https://jaws-ug.jp/for-participant/\" rel=\"nofollow\">https://jaws-ug.jp/for-participant/</a></p>",
+      "url": "https://jawsug.connpass.com/event/396250/",
+      "image_url": "https://media.connpass.com/thumbs/c0/c0/c0c0ee0eae019c568274e152c144a5e8.png",
+      "hash_tag": "jawsug_tokyo",
+      "started_at": "2026-07-16T19:00:00+09:00",
+      "ended_at": "2026-07-16T21:00:00+09:00",
+      "published_at": "2026-06-15T12:13:04+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 8206,
+        "subdomain": "jawsug",
+        "title": "JAWS-UG東京",
+        "url": "https://jawsug.connpass.com/"
+      },
+      "address": "〒106-0041 東京都港区麻布台一丁目三番一号",
+      "place": "麻布台ヒルズ森JPタワー 35階",
+      "lat": "35.661638200000",
+      "lon": "139.740366900000",
+      "owner_id": 334344,
+      "owner_nickname": "y-ohgi",
+      "owner_display_name": "y-ohgi",
+      "accepted": 123,
+      "waiting": 11,
+      "updated_at": "2026-07-16T04:04:52+09:00"
     },
     {
       "id": 399033,
