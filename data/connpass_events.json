@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-15T18:53:37.699671+09:00",
+  "fetched_at": "2026-07-15T20:23:45.923500+09:00",
   "date": "20260715",
   "count": 10,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-05-20T12:51:35+09:00",
       "limit": 67,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15906,
         "subdomain": "cloud-shokudo",
@@ -61,7 +61,7 @@
       "owner_id": 921260,
       "owner_nickname": "MasahiroNakazawa",
       "owner_display_name": "MasahiroNakazawa",
-      "accepted": 51,
+      "accepted": 50,
       "waiting": 0,
       "updated_at": "2026-07-14T10:39:05+09:00"
     },
@@ -69,7 +69,7 @@
       "id": 397821,
       "title": "新卒N年目のLT交流会！最近沼ったことをシェアしよう！",
       "catch": "新卒エンジニアの交流会！",
-      "description": "<h1 style=\"text-align:center; color:#B74A14; border-bottom:2px solid #B74A14; border-top:2px solid #B74A14; border-left: 0px; background-color: #faf6f0; font-weight: bold;\">新卒N年目のLT交流会！<br>〜最近の沼ったことをシェアしよう〜</h1>\n\n<p>新卒エンジニア同士で、最近沼ったことついて話すLT &amp; 交流イベントです！（新卒1~5年目くらいを想定していますが、それ以外でもOKです！学生でもOK！）</p>\n<p>前半はカジュアルなLT会、後半は懇親会を予定しています。\n普段は関わることの少ない、会社を超えた横のつながりを作りましょう！<br>\n<strong>初登壇はもちろん、初めてのイベント参加の方もウェルカムです！</strong></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">タイムテーブル</h2>\n\n<p>後日公開です！乞うご期待！</p>\n<table>\n  <thead>\n    <tr>\n      <th style=\"background-color:#faf6f0;color:#B74A14;font-weight:bold;\" colspan=\"2\">\n        タイムテーブル\n      </th>\n    </tr>\n    <tr>\n      <th style=\"background-color:#faf6f0;color:#B74A14;font-weight:bold;padding:0px 200px;\" colspan=\"2\">\n      </th>\n    </tr>\n  </thead>\n\n  <tbody>\n\n    <tr>\n      <td style=\"background-color:#faf6f0;\">19:00~</td>\n      <td>開場</td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"2\" style=\"background-color:#faf6f0;\">19:20~</td>\n      <td>\n        <img src=\"https://yuta-ike.github.io/yuta-ike/x-icon.jpg\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"yuta-ikeのアイコン\">\n        <span style=\"font-weight:bold;\">オープニング</span>\n        /\n        <a href=\"https://x.com/Selria1\" rel=\"nofollow\">yuta-ike</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <img src=\"https://yuta-ike.github.io/yuta-ike/white.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"\">\n        <span style=\"font-weight:bold;\">会場説明</span>\n      </td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"8\" style=\"background-color:#faf6f0;\">19:30~</td>\n      <td>\n        LT\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/aa/47/aa4756fbc7063771f6b58be86000cb22.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"odenのアイコン\">\n        <span style=\"font-weight:bold;\">調子に乗って全ユーザを利用停止しそうになった話</span>\n        /\n        <a href=\"https://x.com/Oden612\" rel=\"nofollow\">oden</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/71/81/7181823e85c6832d1ddf8cdf275da972.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"hukuのアイコン\">\n        <span style=\"font-weight:bold;\">素晴らしい提案をしよう！君もハーネスエンジニアにならないか？</span>\n        /\n        <a href=\"https://x.com/huku_developer\" rel=\"nofollow\">huku_developer</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/7d/d2/7dd29bc41f29f5a89c16a3b38ddb1d73.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"190のアイコン\">\n        <span style=\"font-weight:bold;\">Orca沼にようこそ</span>\n        /\n        <a href=\"https://x.com/190_eng\" rel=\"nofollow\"> 190 </a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/87/84/8784cbb18b577b5cdb98a4419ad41514.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"39Panda_3939のアイコン\">\n        <span style=\"font-weight:bold;\">Notion沼へようこそ</span>\n        /\n        <a href=\"https://x.com/39Panda_3939\" rel=\"nofollow\"> 39Panda_3939 </a>\n      </td>\n    </tr>\n\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/70/f6/70f639c6081cc335831310f25a8d172e.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"aoiのアイコン\">\n        <span style=\"font-weight:bold;\"> 6,000円で始める分割キーボード沼 </span>\n        /\n        <a href=\"https://x.com/4o1sobblue\" rel=\"nofollow\"> aoi </a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/d6/04/d6045d8e9b1f066305d4000790daf545.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"imaikosukeのアイコン\">\n        <span style=\"font-weight:bold;\">分割キーボード Cornix LP で経験した解放と絶望</span>\n        /\n        <a href=\"https://x.com/imaikosuke_\" rel=\"nofollow\">imaikosuke</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/74/71/747177e7809d6bbf17bcaf99a87f962d.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"chronollのアイコン\">\n        <span style=\"font-weight:bold;\"> AIエージェント沼 〜夢だけ広がってアウトカムが出せなかった話〜</span>\n        /\n        <a href=\"https://x.com/chronoll\" rel=\"nofollow\"> chronoll </a>\n      </td>\n    </tr>\n\n    <tr>\n      <td style=\"background-color:#faf6f0;\">20:30~</td>\n      <td style=\"font-weight:bold;font-size:16px;\">懇親会</td>\n    </tr>\n\n    <tr>\n      <td style=\"background-color:#faf6f0;\">21:30</td>\n      <td>イベント終了</td>\n    </tr>\n\n  </tbody>\n</table>\n\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">LT</h2>\n\n<p>今回は「最近の沼ったことをシェアしよう」をテーマとします！</p>\n<p><strong>「沼った、辛かった」</strong>という話でも<strong>「最高だからみんなも沼ろうよ」</strong>という話でもOK！テーマに（多少でも）かすっていればOKです！スライド5~10枚程度でシェアしましょう！（時間は質疑応答含め7分ご用意しています）</p>\n<p>※ 抽選に外れてしまった方は次回の開催にて優先的に枠をご案内します！埋まっている場合でも諦めずにぜひお申し込みください。</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">会場提供</h2>\n\n<p>株式会社サイバーエージェント様に会場をお借りします。</p>\n<p><img src=\"https://yuta-ike.github.io/yuta-ike/20260715/logo_cyberagent.png\" alt=\"CyberAgent\" width=\"400\"></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">会場</h2>\n\n<p>【住所】</p>\n<p>〒150-0042 東京都渋谷区宇田川町40番1号 Abema Towers 10F</p>\n<p>【ご来社方法】</p>\n<p>QRコードを携帯端末で表示し、入口ゲートに直接かざしてお入りください。</p>\n<p>低層階用（左側）のエレベーターで10階へお越しください。</p>\n<p>10Fに到着されましたら、目の前の扉から中にお入りください。左側のセミナールームBが会場です。</p>\n<p>お帰りの際も、1FゲートにてQRコードをかざしてください。</p>\n<p>【入館時の注意事項】</p>\n<p>ビル入り口に受付機がありますが、受付する必要はございません。</p>\n<p>イベント開始前の受付時間は、18:30-19:00となっております。</p>\n<p>※イベント開始後の最終受付は20:00までとなります。それ以降にご来館いただく場合は下記問い合わせ先までご連絡ください。</p>\n<p>入館ゲート右側のエレベーターは上層階用のため、10Fには止まりませんのでご注意ください。</p>\n\n\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">持ち物</h2>\n\n<p>名刺2枚（名刺をお持ちでない方は身分証をご持参ください）</p>\n<p>connpassの受付票を10F受付で確認させていただきます。</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">Code of Conduct</h2>\n<p>本イベントでは、以下のCode of Conductを適用しております。皆様が歓迎され、安心・安全なイベントとして楽しい時間を過ごせるよう、Code of Conductをぜひご一読ください。</p>\n<p>CA Tech Events - <a href=\"https://cyberagent.events/code-of-conduct\" rel=\"nofollow\">Code Of Conduct</a></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">イベント行動規範</h2>\n\n<p><a href=\"https://2026.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigi の行動規範</a> に則り運営いたします。参加者の皆さまも行動規範の遵守をお願いいたします。</p>\n<p>上記に加え、営業や勧誘を目的とした参加や懇親会のみを目的とした参加はお断りいたします。</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">問い合わせ先</h2>\n\n<p>メール: <a href=\"mailto:n-study-info@googlegroups.com\">n-study-info@googlegroups.com</a>（運営メーリス）</p>\n<p>X: <a href=\"https://x.com/Selria1\" rel=\"nofollow\">https://x.com/Selria1</a> （ff関係外の場合は、DMが高確率でフィルタリングされますのでメールにてお願いします）</p>",
+      "description": "<h1 style=\"text-align:center; color:#B74A14; border-bottom:2px solid #B74A14; border-top:2px solid #B74A14; border-left: 0px; background-color: #faf6f0; font-weight: bold;\">新卒N年目のLT交流会！<br>〜最近の沼ったことをシェアしよう〜</h1>\n\n<p>新卒エンジニア同士で、最近沼ったことついて話すLT &amp; 交流イベントです！（新卒1~5年目くらいを想定していますが、それ以外でもOKです！学生でもOK！）</p>\n<p>前半はカジュアルなLT会、後半は懇親会を予定しています。\n普段は関わることの少ない、会社を超えた横のつながりを作りましょう！<br>\n<strong>初登壇はもちろん、初めてのイベント参加の方もウェルカムです！</strong></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">タイムテーブル</h2>\n\n<p>後日公開です！乞うご期待！</p>\n<table>\n  <thead>\n    <tr>\n      <th style=\"background-color:#faf6f0;color:#B74A14;font-weight:bold;\" colspan=\"2\">\n        タイムテーブル\n      </th>\n    </tr>\n    <tr>\n      <th style=\"background-color:#faf6f0;color:#B74A14;font-weight:bold;padding:0px 200px;\" colspan=\"2\">\n      </th>\n    </tr>\n  </thead>\n\n  <tbody>\n\n    <tr>\n      <td style=\"background-color:#faf6f0;\">19:00~</td>\n      <td>開場</td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"2\" style=\"background-color:#faf6f0;\">19:20~</td>\n      <td>\n        <img src=\"https://yuta-ike.github.io/yuta-ike/x-icon.jpg\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"yuta-ikeのアイコン\">\n        <span style=\"font-weight:bold;\">オープニング</span>\n        /\n        <a href=\"https://x.com/Selria1\" rel=\"nofollow\">yuta-ike</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <img src=\"https://yuta-ike.github.io/yuta-ike/white.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"\">\n        <span style=\"font-weight:bold;\">会場説明</span>\n      </td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"8\" style=\"background-color:#faf6f0;\">19:30~</td>\n      <td>\n        LT\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/aa/47/aa4756fbc7063771f6b58be86000cb22.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"odenのアイコン\">\n        <span style=\"font-weight:bold;\">調子に乗って全ユーザを利用停止しそうになった話</span>\n        /\n        <a href=\"https://x.com/Oden612\" rel=\"nofollow\">oden</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/71/81/7181823e85c6832d1ddf8cdf275da972.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"hukuのアイコン\">\n        <span style=\"font-weight:bold;\">素晴らしい提案をしよう！君もハーネスエンジニアにならないか？</span>\n        /\n        <a href=\"https://x.com/huku_developer\" rel=\"nofollow\">huku_developer</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/7d/d2/7dd29bc41f29f5a89c16a3b38ddb1d73.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"190のアイコン\">\n        <span style=\"font-weight:bold;\">Orca沼にようこそ</span>\n        /\n        <a href=\"https://x.com/190_eng\" rel=\"nofollow\"> 190 </a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/87/84/8784cbb18b577b5cdb98a4419ad41514.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"39Panda_3939のアイコン\">\n        <span style=\"font-weight:bold;\">Notion沼へようこそ</span>\n        /\n        <a href=\"https://x.com/39Panda_3939\" rel=\"nofollow\"> 39Panda_3939 </a>\n      </td>\n    </tr>\n\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/70/f6/70f639c6081cc335831310f25a8d172e.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"aoiのアイコン\">\n        <span style=\"font-weight:bold;\"> 6,000円で始める分割キーボード沼 </span>\n        /\n        <a href=\"https://x.com/4o1sobblue\" rel=\"nofollow\"> aoi </a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/d6/04/d6045d8e9b1f066305d4000790daf545.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"imaikosukeのアイコン\">\n        <span style=\"font-weight:bold;\">分割キーボード Cornix LP で経験した解放と絶望</span>\n        /\n        <a href=\"https://x.com/imaikosuke_\" rel=\"nofollow\">imaikosuke</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/74/71/747177e7809d6bbf17bcaf99a87f962d.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"chronollのアイコン\">\n        <span style=\"font-weight:bold;\"> AIエージェント沼 〜夢だけ広がってアウトカムが出せなかった話〜</span>\n        /\n        <a href=\"https://x.com/chronoll\" rel=\"nofollow\"> chronoll </a>\n      </td>\n    </tr>\n\n    <tr>\n      <td style=\"background-color:#faf6f0;\">20:30~</td>\n      <td style=\"font-weight:bold;font-size:16px;\">懇親会</td>\n    </tr>\n\n    <tr>\n      <td style=\"background-color:#faf6f0;\">21:30</td>\n      <td>イベント終了</td>\n    </tr>\n\n  </tbody>\n</table>\n\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">LT</h2>\n\n<p>今回は「最近の沼ったことをシェアしよう」をテーマとします！</p>\n<p><strong>「沼った、辛かった」</strong>という話でも<strong>「最高だからみんなも沼ろうよ」</strong>という話でもOK！テーマに（多少でも）かすっていればOKです！スライド5~10枚程度でシェアしましょう！（時間は質疑応答含め7分ご用意しています）</p>\n<p>※ 抽選に外れてしまった方は次回の開催にて優先的に枠をご案内します！埋まっている場合でも諦めずにぜひお申し込みください。</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">会場提供</h2>\n\n<p>株式会社サイバーエージェント様に会場をお借りします。</p>\n<p><img src=\"https://yuta-ike.github.io/yuta-ike/20260715/logo_cyberagent.png\" alt=\"CyberAgent\" width=\"400\"></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">会場</h2>\n\n<p>【住所】</p>\n<p>〒150-0042 東京都渋谷区宇田川町40番1号 Abema Towers 10F</p>\n<p>【ご来社方法】</p>\n<p>QRコードを携帯端末で表示し、入口ゲートに直接かざしてお入りください。</p>\n<p>低層階用（左側）のエレベーターで10階へお越しください。</p>\n<p>10Fに到着されましたら、目の前の扉から中にお入りください。左側のセミナールームAが会場です。</p>\n<p>お帰りの際も、1FゲートにてQRコードをかざしてください。</p>\n<p>【入館時の注意事項】</p>\n<p>ビル入り口に受付機がありますが、受付する必要はございません。</p>\n<p>イベント開始前の受付時間は、18:30-19:00となっております。</p>\n<p>※イベント開始後の最終受付は20:00までとなります。それ以降にご来館いただく場合は下記問い合わせ先までご連絡ください。</p>\n<p>入館ゲート右側のエレベーターは上層階用のため、10Fには止まりませんのでご注意ください。</p>\n\n\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">持ち物</h2>\n\n<p>名刺2枚（名刺をお持ちでない方は身分証をご持参ください）</p>\n<p>connpassの受付票を10F受付で確認させていただきます。</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">Code of Conduct</h2>\n<p>本イベントでは、以下のCode of Conductを適用しております。皆様が歓迎され、安心・安全なイベントとして楽しい時間を過ごせるよう、Code of Conductをぜひご一読ください。</p>\n<p>CA Tech Events - <a href=\"https://cyberagent.events/code-of-conduct\" rel=\"nofollow\">Code Of Conduct</a></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">イベント行動規範</h2>\n\n<p><a href=\"https://2026.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigi の行動規範</a> に則り運営いたします。参加者の皆さまも行動規範の遵守をお願いいたします。</p>\n<p>上記に加え、営業や勧誘を目的とした参加や懇親会のみを目的とした参加はお断りいたします。</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">問い合わせ先</h2>\n\n<p>メール: <a href=\"mailto:n-study-info@googlegroups.com\">n-study-info@googlegroups.com</a>（運営メーリス）</p>\n<p>X: <a href=\"https://x.com/Selria1\" rel=\"nofollow\">https://x.com/Selria1</a> （ff関係外の場合は、DMが高確率でフィルタリングされますのでメールにてお願いします）</p>",
       "url": "https://fresh-engineers.connpass.com/event/397821/",
       "image_url": "https://media.connpass.com/thumbs/06/41/0641e40e91c003f07b2e9ff6e2198eff.png",
       "hash_tag": "n_study",
@@ -78,7 +78,7 @@
       "published_at": "2026-06-18T20:23:04+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17440,
         "subdomain": "fresh-engineers",
@@ -92,9 +92,9 @@
       "owner_id": 566009,
       "owner_nickname": "Eri-0910",
       "owner_display_name": "Erina Yamakawa",
-      "accepted": 45,
+      "accepted": 44,
       "waiting": 4,
-      "updated_at": "2026-07-15T00:06:09+09:00"
+      "updated_at": "2026-07-15T19:33:59+09:00"
     },
     {
       "id": 397565,
@@ -109,7 +109,7 @@
       "published_at": "2026-06-16T20:17:16+09:00",
       "limit": 48,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13535,
         "subdomain": "openedgedevice",
@@ -140,7 +140,7 @@
       "published_at": "2026-06-22T20:45:55+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16283,
         "subdomain": "picopicoruby",
@@ -211,7 +211,7 @@
       "owner_id": 271950,
       "owner_nickname": "nakazax",
       "owner_display_name": "Hiroyuki Nakazato",
-      "accepted": 424,
+      "accepted": 428,
       "waiting": 12,
       "updated_at": "2026-07-06T12:01:00+09:00"
     },
@@ -242,7 +242,7 @@
       "owner_id": 939636,
       "owner_nickname": "sadorin_findy",
       "owner_display_name": "sadorin_findy",
-      "accepted": 22,
+      "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-07-15T07:46:59+09:00"
     },
@@ -259,7 +259,7 @@
       "published_at": "2026-07-04T17:33:43+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都港区海岸1-7-1 10F",
       "place": "WeWork 竹芝",
@@ -285,7 +285,7 @@
       "published_at": "2026-05-13T09:39:06+09:00",
       "limit": 450,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 6823,
         "subdomain": "openid",
