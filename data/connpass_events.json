@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-17T07:56:11.607554+09:00",
+  "fetched_at": "2026-07-17T08:54:45.226547+09:00",
   "date": "20260717",
   "count": 18,
   "events": [
@@ -304,7 +304,7 @@
       "owner_id": 282297,
       "owner_nickname": "Tomoya_Kitaura",
       "owner_display_name": "Tomoya_Kitaura",
-      "accepted": 81,
+      "accepted": 83,
       "waiting": 0,
       "updated_at": "2026-07-16T10:38:44+09:00"
     },
@@ -392,7 +392,7 @@
       "owner_id": 351724,
       "owner_nickname": "OPTiM",
       "owner_display_name": "株式会社オプティム",
-      "accepted": 15,
+      "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-07-15T16:37:02+09:00"
     },
@@ -418,9 +418,9 @@
       "owner_id": 987301,
       "owner_nickname": "yokoko12",
       "owner_display_name": "yokoko12",
-      "accepted": 24,
+      "accepted": 25,
       "waiting": 0,
-      "updated_at": "2026-06-12T10:50:00+09:00"
+      "updated_at": "2026-07-17T08:33:04+09:00"
     },
     {
       "id": 398642,
@@ -449,7 +449,7 @@
       "owner_id": 968510,
       "owner_nickname": "rikuto_baba",
       "owner_display_name": "rikuto",
-      "accepted": 59,
+      "accepted": 58,
       "waiting": 0,
       "updated_at": "2026-07-16T19:11:01+09:00"
     },
