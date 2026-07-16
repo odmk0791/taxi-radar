@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-17T04:17:03.087013+09:00",
+  "fetched_at": "2026-07-17T05:49:22.448358+09:00",
   "date": "20260717",
   "count": 18,
   "events": [
@@ -216,37 +216,6 @@
       "updated_at": "2026-07-13T15:20:00+09:00"
     },
     {
-      "id": 396222,
-      "title": "OPTiM Frontend Meetup #1",
-      "catch": "",
-      "description": "<h2>✍️ イベント概要</h2>\n<p>フロントエンドは、ユーザー体験を直接形づくる重要な領域でありながら、チームや製品をまたいだ知見の共有が難しく、組織ごとに試行錯誤が続きがちです。</p>\n<p>「OPTiM Frontend Meetup #1」は、株式会社オプティムのフロントエンドエンジニアが日々の開発で得た知見・工夫・取り組みをオープンに共有するイベントです。</p>\n<p>オプティムでは 2025年10月、チームや製品の枠を越えてフロントエンドを強化する全社横断組織「フロントエンド推進室」が発足しました。社内勉強会・技術共有・OSS 活動などを通じてフロントエンドを強化する取り組みを進めており、本イベントはその活動の一環として立ち上がった、初の社外向け Meetup です。</p>\n<p>登壇者・参加者同士が直接交流できるオフライン開催です。フロントエンドが好きな方、現場の取り組みに興味のある方のご参加をお待ちしております！</p>\n<h2>📋 開催概要</h2>\n<ul>\n<li>日時：2026年7月17日（金）19:00〜</li>\n<li>開催形式：オフライン開催</li>\n<li>会場：株式会社オプティム 東京本社</li>\n<li>住所：東京都港区海岸1丁目2番20号 汐留ビルディング 18F</li>\n</ul>\n<h2>👥 こんな方におすすめ</h2>\n<ul>\n<li>他社・他チームがフロントエンド開発でどんな工夫をしているか気になる方</li>\n<li>デザインと実装の乖離や、デザインシステムの運用に悩んでいる方</li>\n<li>ライブラリ移行や技術選定の判断に悩んでいる方</li>\n<li>フロントエンドのパフォーマンス改善に興味がある方</li>\n<li>テスト自動化に取り組んでいる・これから取り組みたい方</li>\n<li>最新のフロントエンド技術をキャッチアップしたい方</li>\n</ul>\n<h2>☑️ イベントのゴール</h2>\n<ul>\n<li>現場で実践されているフロントエンドの知見・工夫を持ち帰れる</li>\n<li>同じ課題意識を持つエンジニア・デザイナーとつながれる</li>\n<li>明日からの業務改善・プロダクトづくりに活かせるヒントを得られる</li>\n</ul>\n<h2>🕛 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>コンテンツ</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:20</td>\n<td>受付</td>\n<td></td>\n</tr>\n<tr>\n<td>19:20 - 19:30</td>\n<td>挨拶・タイムテーブル紹介</td>\n<td>高橋</td>\n</tr>\n<tr>\n<td>19:30 - 19:40</td>\n<td>Tanstack Startを触ってみての感想</td>\n<td>亀田</td>\n</tr>\n<tr>\n<td>19:40 - 19:50</td>\n<td>最近やってよかったデザインシステム運用改善3選</td>\n<td>宮越</td>\n</tr>\n<tr>\n<td>19:50 - 20:00</td>\n<td>&lt;install&gt; タグは何ができて、何を変えるのか</td>\n<td>菅原</td>\n</tr>\n<tr>\n<td>20:00 - 20:10</td>\n<td>Athenaが遅すぎるのでNext.js 16のCache Componentsで倒してみた</td>\n<td>榎本</td>\n</tr>\n<tr>\n<td>20:10 - 20:20</td>\n<td>ライブラリ移行のつらさは誰が引き受けるのか ── Vue と Next を比べて見えたこと</td>\n<td>白木</td>\n</tr>\n<tr>\n<td>20:20 - 20:30</td>\n<td>Playwrightを使って自動テスト</td>\n<td>遠藤</td>\n</tr>\n<tr>\n<td>20:30 - 21:30</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>🎤 登壇者</h2>\n<h3>亀田</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedbv2fd3s738vammg&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>リードエンジニア / フロントエンド推進室所属(勉強会・イベント推進担当)</strong></p>\n<p>フロントエンドエンジニアとして Next.js / TypeScript を中心に開発中。最近はフロントエンド周りの設計ついて考えるのが好きです。</p>\n<h3>宮越</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedbv2fd3s738vamlg&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>UIデザイナー</strong></p>\n<p>2020年に入社。エンジニアを経て2023年にデザイン組織へ異動。UIデザイナーとしてMDM・医療領域の事業やサービスプラットフォームのUI/UX改善に携わる。また、デザインシステム「nucleus」の構築・運用、AI活用推進、社内外のイベント運営などにも取り組んでいる。</p>\n<h3>菅原</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedcf2fd3s738vamog&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>エンジニア / フロントエンド推進室所属</strong></p>\n<p>フロントエンドの開発を中心に担当しつつ、デバイスなどIoT関連のプロダクトにも携わっています。</p>\n<h3>榎本</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedbo3792s739b8c00&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>エンジニア</strong></p>\n<p>2026年4月に新卒で入社し、現在は製品保守システムの機能改善や追加開発に携わっています。<br>Next.jsとAWSのサーバーレスアーキテクチャを用いた開発を主に行っています。</p>\n<h3>白木</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedbli4khc73e0isjg&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>エンジニア / フロントエンド推進室所属(OSS推進担当)</strong></p>\n<p>やらないといけないことをやってたら、フルスタックになりました。</p>\n<p>関心事</p>\n<ul>\n<li>テスト</li>\n<li>設計</li>\n<li>言語: Golang, TypeScript(Next.js)</li>\n<li>UI/UX</li>\n</ul>\n<h3>遠藤</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedc72fd3s738vamng&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>エンジニア / フロントエンド推進室所属(同時視聴会推進担当)</strong></p>\n<p>オプティムサスマネ、Biz Premiumのフロントエンド、エージェントアプリケーションの開発を主に担当しています。</p>\n<h2>🎙️ 司会者</h2>\n<h3>高橋</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedc83792s739b8c10&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>シニアエンジニア / フロントエンド推進室 室長</strong></p>\n<p>プロダクト開発、推進活動をしながらIndividual Contributorのような働き方をさせてもらってます。最近はデザインシステム関連の仕組みを作ったりしてます</p>\n<h1>🤝 主催企業</h1>\n<h2>株式会社オプティム</h2>\n<div style=\"text-align:left;\">\n<a href=\"https://www.optim.co.jp\" rel=\"nofollow\">\n<img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/3f65d4de-5872-4a37-a69b-161733665129/download?node_id=cvmtli59t3uc73e413g0&amp;is_browser_compliant=true\" width=\"300\"></a>\n</div>\n\n<p><strong>『世界の人々に大きく良い影響を与える企業になる』</strong><br>\nOPTiMは、「ネットを空気に変える」というミッションを掲げ、AI・IoT・Cloud・Mobile・Roboticsを使った新しい価値を創造し続け、あらゆる産業のAX/DXを推進し、あらゆる人々に、豊かでサステナブルな未来を実現する企業です。<br>\n代表菅谷が話す会社概要動画もぜひご覧ください<br></p>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=0EDpcFoho8A\" rel=\"nofollow\">会社概要動画</a></li>\n<li><a href=\"https://www.optim.co.jp/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://www.optim.co.jp/recruit/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech-blog.optim.co.jp/\" rel=\"nofollow\">テックブログ</a></li>\n<li><a href=\"https://x.com/optim_tech\" rel=\"nofollow\">X (旧 Twitter)</a></li>\n</ul>\n<h1>⚠️ その他・諸注意</h1>\n<ul>\n<li>営業目的でのイベントへのご参加はご遠慮ください</li>\n<li>参加目的が不適切と判断した場合は、運営側で参加をキャンセルさせていただきます</li>\n<li>会場内では、写真や動画撮影が行われる予定のため会場内の参加者の皆様が映り込む場合があります。 それらは、弊社媒体やSNSなどで掲載される場合がありますので、あらかじめご了承ください</li>\n<li>飲食や懇親会のみを目的とした参加はご遠慮いただいております</li>\n<li>お申し込みのない方や、イベント開始後20時を超えてからの参加はお断りをさせていただきます</li>\n<li>ご欠席される場合には、お手数ですがご自身でキャンセル処理をお願いいたします</li>\n<li>性別・年齢・技術スタックに関わらず、どなたでも気持ちよく参加できる場を目指しています。他の参加者への配慮をお願いいたします</li>\n</ul>",
-      "url": "https://optim.connpass.com/event/396222/",
-      "image_url": "https://media.connpass.com/thumbs/49/cd/49cd1796aef307a7b7309b002ebc3ae9.png",
-      "hash_tag": "optim_tech",
-      "started_at": "2026-07-17T19:00:00+09:00",
-      "ended_at": "2026-07-17T21:30:00+09:00",
-      "published_at": "2026-06-11T13:19:32+09:00",
-      "limit": 25,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 8992,
-        "subdomain": "optim",
-        "title": "株式会社オプティム",
-        "url": "https://optim.connpass.com/"
-      },
-      "address": "東京都港区海岸1丁目2番20号 (汐留ビルディング 18F)",
-      "place": "株式会社オプティム 東京本社",
-      "lat": "35.657293900000",
-      "lon": "139.759767600000",
-      "owner_id": 351724,
-      "owner_nickname": "OPTiM",
-      "owner_display_name": "株式会社オプティム",
-      "accepted": 16,
-      "waiting": 0,
-      "updated_at": "2026-07-15T16:37:02+09:00"
-    },
-    {
       "id": 397011,
       "title": "学生向けハンズオン～イケてるターミナルをつくろう！～",
       "catch": "",
@@ -366,6 +335,37 @@
       "updated_at": "2026-07-15T02:00:31+09:00"
     },
     {
+      "id": 396222,
+      "title": "OPTiM Frontend Meetup #1",
+      "catch": "",
+      "description": "<h2>✍️ イベント概要</h2>\n<p>フロントエンドは、ユーザー体験を直接形づくる重要な領域でありながら、チームや製品をまたいだ知見の共有が難しく、組織ごとに試行錯誤が続きがちです。</p>\n<p>「OPTiM Frontend Meetup #1」は、株式会社オプティムのフロントエンドエンジニアが日々の開発で得た知見・工夫・取り組みをオープンに共有するイベントです。</p>\n<p>オプティムでは 2025年10月、チームや製品の枠を越えてフロントエンドを強化する全社横断組織「フロントエンド推進室」が発足しました。社内勉強会・技術共有・OSS 活動などを通じてフロントエンドを強化する取り組みを進めており、本イベントはその活動の一環として立ち上がった、初の社外向け Meetup です。</p>\n<p>登壇者・参加者同士が直接交流できるオフライン開催です。フロントエンドが好きな方、現場の取り組みに興味のある方のご参加をお待ちしております！</p>\n<h2>📋 開催概要</h2>\n<ul>\n<li>日時：2026年7月17日（金）19:00〜</li>\n<li>開催形式：オフライン開催</li>\n<li>会場：株式会社オプティム 東京本社</li>\n<li>住所：東京都港区海岸1丁目2番20号 汐留ビルディング 18F</li>\n</ul>\n<h2>👥 こんな方におすすめ</h2>\n<ul>\n<li>他社・他チームがフロントエンド開発でどんな工夫をしているか気になる方</li>\n<li>デザインと実装の乖離や、デザインシステムの運用に悩んでいる方</li>\n<li>ライブラリ移行や技術選定の判断に悩んでいる方</li>\n<li>フロントエンドのパフォーマンス改善に興味がある方</li>\n<li>テスト自動化に取り組んでいる・これから取り組みたい方</li>\n<li>最新のフロントエンド技術をキャッチアップしたい方</li>\n</ul>\n<h2>☑️ イベントのゴール</h2>\n<ul>\n<li>現場で実践されているフロントエンドの知見・工夫を持ち帰れる</li>\n<li>同じ課題意識を持つエンジニア・デザイナーとつながれる</li>\n<li>明日からの業務改善・プロダクトづくりに活かせるヒントを得られる</li>\n</ul>\n<h2>🕛 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>コンテンツ</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:20</td>\n<td>受付</td>\n<td></td>\n</tr>\n<tr>\n<td>19:20 - 19:30</td>\n<td>挨拶・タイムテーブル紹介</td>\n<td>高橋</td>\n</tr>\n<tr>\n<td>19:30 - 19:40</td>\n<td>Tanstack Startを触ってみての感想</td>\n<td>亀田</td>\n</tr>\n<tr>\n<td>19:40 - 19:50</td>\n<td>最近やってよかったデザインシステム運用改善3選</td>\n<td>宮越</td>\n</tr>\n<tr>\n<td>19:50 - 20:00</td>\n<td>&lt;install&gt; タグは何ができて、何を変えるのか</td>\n<td>菅原</td>\n</tr>\n<tr>\n<td>20:00 - 20:10</td>\n<td>Athenaが遅すぎるのでNext.js 16のCache Componentsで倒してみた</td>\n<td>榎本</td>\n</tr>\n<tr>\n<td>20:10 - 20:20</td>\n<td>ライブラリ移行のつらさは誰が引き受けるのか ── Vue と Next を比べて見えたこと</td>\n<td>白木</td>\n</tr>\n<tr>\n<td>20:20 - 20:30</td>\n<td>Playwrightを使って自動テスト</td>\n<td>遠藤</td>\n</tr>\n<tr>\n<td>20:30 - 21:30</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>🎤 登壇者</h2>\n<h3>亀田</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedbv2fd3s738vammg&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>リードエンジニア / フロントエンド推進室所属(勉強会・イベント推進担当)</strong></p>\n<p>フロントエンドエンジニアとして Next.js / TypeScript を中心に開発中。最近はフロントエンド周りの設計ついて考えるのが好きです。</p>\n<h3>宮越</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedbv2fd3s738vamlg&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>UIデザイナー</strong></p>\n<p>2020年に入社。エンジニアを経て2023年にデザイン組織へ異動。UIデザイナーとしてMDM・医療領域の事業やサービスプラットフォームのUI/UX改善に携わる。また、デザインシステム「nucleus」の構築・運用、AI活用推進、社内外のイベント運営などにも取り組んでいる。</p>\n<h3>菅原</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedcf2fd3s738vamog&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>エンジニア / フロントエンド推進室所属</strong></p>\n<p>フロントエンドの開発を中心に担当しつつ、デバイスなどIoT関連のプロダクトにも携わっています。</p>\n<h3>榎本</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedbo3792s739b8c00&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>エンジニア</strong></p>\n<p>2026年4月に新卒で入社し、現在は製品保守システムの機能改善や追加開発に携わっています。<br>Next.jsとAWSのサーバーレスアーキテクチャを用いた開発を主に行っています。</p>\n<h3>白木</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedbli4khc73e0isjg&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>エンジニア / フロントエンド推進室所属(OSS推進担当)</strong></p>\n<p>やらないといけないことをやってたら、フルスタックになりました。</p>\n<p>関心事</p>\n<ul>\n<li>テスト</li>\n<li>設計</li>\n<li>言語: Golang, TypeScript(Next.js)</li>\n<li>UI/UX</li>\n</ul>\n<h3>遠藤</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedc72fd3s738vamng&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>エンジニア / フロントエンド推進室所属(同時視聴会推進担当)</strong></p>\n<p>オプティムサスマネ、Biz Premiumのフロントエンド、エージェントアプリケーションの開発を主に担当しています。</p>\n<h2>🎙️ 司会者</h2>\n<h3>高橋</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/b74a731f-ef2e-47a5-a035-6eb8ad1d9f13/download?node_id=d8kedc83792s739b8c10&amp;is_browser_compliant=true\" width=\"180\"></p>\n<p><strong>シニアエンジニア / フロントエンド推進室 室長</strong></p>\n<p>プロダクト開発、推進活動をしながらIndividual Contributorのような働き方をさせてもらってます。最近はデザインシステム関連の仕組みを作ったりしてます</p>\n<h1>🤝 主催企業</h1>\n<h2>株式会社オプティム</h2>\n<div style=\"text-align:left;\">\n<a href=\"https://www.optim.co.jp\" rel=\"nofollow\">\n<img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/3f65d4de-5872-4a37-a69b-161733665129/download?node_id=cvmtli59t3uc73e413g0&amp;is_browser_compliant=true\" width=\"300\"></a>\n</div>\n\n<p><strong>『世界の人々に大きく良い影響を与える企業になる』</strong><br>\nOPTiMは、「ネットを空気に変える」というミッションを掲げ、AI・IoT・Cloud・Mobile・Roboticsを使った新しい価値を創造し続け、あらゆる産業のAX/DXを推進し、あらゆる人々に、豊かでサステナブルな未来を実現する企業です。<br>\n代表菅谷が話す会社概要動画もぜひご覧ください<br></p>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=0EDpcFoho8A\" rel=\"nofollow\">会社概要動画</a></li>\n<li><a href=\"https://www.optim.co.jp/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://www.optim.co.jp/recruit/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech-blog.optim.co.jp/\" rel=\"nofollow\">テックブログ</a></li>\n<li><a href=\"https://x.com/optim_tech\" rel=\"nofollow\">X (旧 Twitter)</a></li>\n</ul>\n<h1>⚠️ その他・諸注意</h1>\n<ul>\n<li>営業目的でのイベントへのご参加はご遠慮ください</li>\n<li>参加目的が不適切と判断した場合は、運営側で参加をキャンセルさせていただきます</li>\n<li>会場内では、写真や動画撮影が行われる予定のため会場内の参加者の皆様が映り込む場合があります。 それらは、弊社媒体やSNSなどで掲載される場合がありますので、あらかじめご了承ください</li>\n<li>飲食や懇親会のみを目的とした参加はご遠慮いただいております</li>\n<li>お申し込みのない方や、イベント開始後20時を超えてからの参加はお断りをさせていただきます</li>\n<li>ご欠席される場合には、お手数ですがご自身でキャンセル処理をお願いいたします</li>\n<li>性別・年齢・技術スタックに関わらず、どなたでも気持ちよく参加できる場を目指しています。他の参加者への配慮をお願いいたします</li>\n</ul>",
+      "url": "https://optim.connpass.com/event/396222/",
+      "image_url": "https://media.connpass.com/thumbs/49/cd/49cd1796aef307a7b7309b002ebc3ae9.png",
+      "hash_tag": "optim_tech",
+      "started_at": "2026-07-17T19:00:00+09:00",
+      "ended_at": "2026-07-17T21:30:00+09:00",
+      "published_at": "2026-06-11T13:19:32+09:00",
+      "limit": 25,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 8992,
+        "subdomain": "optim",
+        "title": "株式会社オプティム",
+        "url": "https://optim.connpass.com/"
+      },
+      "address": "東京都港区海岸1丁目2番20号 (汐留ビルディング 18F)",
+      "place": "株式会社オプティム 東京本社",
+      "lat": "35.657293900000",
+      "lon": "139.759767600000",
+      "owner_id": 351724,
+      "owner_nickname": "OPTiM",
+      "owner_display_name": "株式会社オプティム",
+      "accepted": 15,
+      "waiting": 0,
+      "updated_at": "2026-07-15T16:37:02+09:00"
+    },
+    {
       "id": 397109,
       "title": "【次世代エンジニア交流会〜美味しい寿司とクラフトビールで未来を語る】",
       "catch": "",
@@ -387,7 +387,7 @@
       "owner_id": 987301,
       "owner_nickname": "yokoko12",
       "owner_display_name": "yokoko12",
-      "accepted": 23,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-06-12T10:50:00+09:00"
     },
@@ -449,7 +449,7 @@
       "owner_id": 968510,
       "owner_nickname": "rikuto_baba",
       "owner_display_name": "rikuto",
-      "accepted": 58,
+      "accepted": 59,
       "waiting": 0,
       "updated_at": "2026-07-16T19:11:01+09:00"
     },
