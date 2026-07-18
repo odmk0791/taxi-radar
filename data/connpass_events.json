@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-19T00:47:31.992481+09:00",
+  "fetched_at": "2026-07-19T01:47:26.770813+09:00",
   "date": "20260719",
-  "count": 15,
+  "count": 14,
   "events": [
     {
       "id": 397351,
@@ -154,37 +154,6 @@
       "updated_at": "2026-06-16T11:57:41+09:00"
     },
     {
-      "id": 395888,
-      "title": "2026年07月イベント：OpenSUSI-MPW TR10を使ってみた！報告会",
-      "catch": "7月末や8月のハンズオンで利用予定のOpenSUSI-MPW TR1の体験報告会です。",
-      "description": "<h1>ISHI会版OpenMPW OpenSUSI-TR10-1を使ってみた！報告会の開催</h1>\n<p>「<a href=\"https://ishi-kai.org/article/2026/03/20/artcle_techbookfust_20.html\" rel=\"nofollow\">Open Source Silicon Magazine vol.2 ーはじめの一歩のその先へー～電気系ものづくりYouTuber イチケン氏降臨！次世代電子工作の第一歩！マイコンチップを自作しよう（アナログ編）～</a>」の執筆陣が、先陣を切って「ISHI会版OpenMPW OpenSUSI-TR10-1（ベースサービス：<a href=\"https://www.opensusi.org/mpw-service\" rel=\"nofollow\">OpenSUSI-MPW</a>）」を使って各種回路を作ってくれましたので、その報告会です。<br>\nいろいろとトラブルも出ましたし、基本的には上記で解説した回路を進化させて、単体で機能する回路を作成してもらいましたので、実用チップを作ってみたいという方は必見です！  </p>\n<h2>製作物</h2>\n<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/AM_Radio/Yamada3\" rel=\"nofollow\">AMラジオチップ</a><ul>\n<li><a href=\"https://discord.com/channels/1087260891264856144/1484448242149359738\" rel=\"nofollow\">Discord内のチャット</a></li>\n</ul>\n</li>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/JJY_Receiver/Masahiro\" rel=\"nofollow\">耳で聞けるJJY（標準電波）受信機のIC</a><ul>\n<li><a href=\"https://discord.com/channels/1087260891264856144/1510237316629921812\" rel=\"nofollow\">Discord内のチャット</a></li>\n</ul>\n</li>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/blob/main/member_project/DCDC/ShuntaroOHNO\" rel=\"nofollow\">DCDCコンバータチップ</a><ul>\n<li><a href=\"https://discord.com/channels/1087260891264856144/1510237669949571182\" rel=\"nofollow\">Discord内のチャット</a></li>\n</ul>\n</li>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/BGR/Maehashi\" rel=\"nofollow\">BGR＋周辺回路</a><ul>\n<li><a href=\"https://discord.com/channels/1087260891264856144/1510237525514518629\" rel=\"nofollow\">Discord内のチャット</a></li>\n</ul>\n</li>\n</ul>\n<h2>ISHI会版OpenMPW OpenSUSI-TR10-1について</h2>\n<p>小規模ながらスポンサーのGoogle社＋コニュニティーサポートのeFables社＋製造ファブのSkywater社の構造であり、OpenMPWの構造ということとなります！<br>\n大風呂敷を広げれば、日本のOpenMPWはまだまだ続いています！<br>\nこれからもこの構造でもっとシャトルを増やしていこうと思いますので、皆様のご支援、よろしくお願いいたします！  </p>\n<h3>ISHI会版OpenMPW OpenSUSI-TR10-1の募集一覧</h3>\n<p>現在、募集中の枠の一覧です。</p>\n<ul>\n<li><a href=\"https://ishi-kai.org/openmpw/shuttle/opensusi-tr10/2026/04/10/shuttle_ISHI-Kai_OpenMPW-OpenSUSI-TR10-1_start.html\" rel=\"nofollow\">ISHI会版OpenMPW OpenSUSI-TR10-1開始！！！～2026年OpenSUSI-TR10-1（OpenSUSI-TR10シャトル）の相乗り募集：北海道編～</a></li>\n<li><a href=\"https://ishi-kai.org/openmpw/shuttle/opensusi-tr10/2026/05/05/shuttle_ISHI-Kai_OpenMPW-OpenSUSI-TR10-1_start.html\" rel=\"nofollow\">ISHI会版OpenMPW OpenSUSI-TR10-1開始！！！～2026年OpenSUSI-TR10（OpenSUSI-TR10シャトル）の相乗り募集：東京編～</a></li>\n<li><a href=\"https://ishi-kai.org/openmpw/shuttle/opensusi-tr10/2026/04/14/shuttle_ISHI-Kai_OpenMPW-OpenSUSI-TR10-1_AudioOPAMP.html\" rel=\"nofollow\">ISHI会版OpenMPW OpenSUSI-TR10-1　オーディオ用OPAMP半導体ハンズオンセミナー</a></li>\n<li><a href=\"https://ishi-kai.org/openmpw/shuttle/opensusi-tr10/2026/04/13/shuttle_ISHI-Kai_OpenMPW-OpenSUSI-TR10-1_OPAMP.html\" rel=\"nofollow\">ISHI会版OpenMPW OpenSUSI-TR10-1　OPAMPハンズオンセミナー</a></li>\n</ul>\n<p>※現在、「 <a href=\"https://ishi-kai.org/openmpw/shuttle/tr10/2026/06/08/shuttle_ISHI-Kai_OpenMPW-TR10-2_ichiken.html\" rel=\"nofollow\">ISHI会版OpenMPW TR10-2でICHIKENさんが体験された1bit-CPUの解説動画が公開されました。</a>」で紹介した1bit-CPUのスポンサーも交渉中で、うまくいけば近日中に募集がかけられると思います。  </p>\n<h3>相乗りとは？</h3>\n<p>下の図のように1つのチップのスペースをみんなで分け合って、チップを作ろうという企画です。<br>\nそのため、非常に安価にチップを製造することができます。  </p>\n<ul>\n<li><img alt=\"去年の相乗りレイアウト\" src=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_TR10-2/raw/main/images/all_members_layout.png\">  <ul>\n<li>こちらは去年のOpenMPW TR10-2の相乗りレイアウトです。  </li>\n</ul>\n</li>\n<li><img alt=\"去年の相乗りチップ\" src=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_TR10-2/raw/main/chip_photo/microscope_chip.jpg\">  <ul>\n<li>こちらは去年のOpenMPW TR10-2の相乗りチップです。  </li>\n</ul>\n</li>\n</ul>\n<h3>スポンサー&amp;共催</h3>\n<ul>\n<li><a href=\"https://mcc.do-johodai.ac.jp/\" rel=\"nofollow\">北海道情報大学 メディアクリエイティブセンター</a></li>\n<li><a href=\"https://www.atmark-techno.com/\" rel=\"nofollow\">(株)アットマークテクノ</a></li>\n<li><a href=\"https://www.zep.co.jp/\" rel=\"nofollow\">ZEPエンジニアリング（株）</a></li>\n<li><a href=\"https://www.sanken-ele.co.jp/\" rel=\"nofollow\">サンケン電気（株）</a></li>\n</ul>\n<h1>日程</h1>\n<h2>日時</h2>\n<ul>\n<li>2026年7月19日（日）  13：00〜17：00  </li>\n</ul>\n<h2>スケジュール</h2>\n<ul>\n<li>13:00 - 13:30<ul>\n<li><a href=\"https://www.opensusi.org/mpw-service\" rel=\"nofollow\">OpenSUSI-MPW</a>の紹介 by OpenSUSI</li>\n</ul>\n</li>\n<li>13:30 - 14:00<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/BGR/Maehashi\" rel=\"nofollow\">BGR＋周辺回路</a>チーム</li>\n</ul>\n</li>\n<li>14:00 - 15:00<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/blob/main/member_project/DCDC/ShuntaroOHNO\" rel=\"nofollow\">DCDCコンバータチップ</a>チーム</li>\n</ul>\n</li>\n<li>15:00 - 15:20<ul>\n<li>(休憩)</li>\n</ul>\n</li>\n<li>15:20 - 16:00<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/JJY_Receiver/Masahiro\" rel=\"nofollow\">耳で聞けるJJY（標準電波）受信機のIC</a>チーム</li>\n</ul>\n</li>\n<li>16:00 - 17:00<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/AM_Radio/Yamada3\" rel=\"nofollow\">AMラジオチップ</a>チーム</li>\n</ul>\n</li>\n<li>※スケジュールは概算です。当日、変動します。  </li>\n</ul>\n<h2>開催場所</h2>\n<h3>リアル会場</h3>\n<ul>\n<li>【施設名】WeWork 日比谷 FORT TOWER 9階 9R会議室</li>\n<li>【住所】　東京都港区西新橋1丁目1番地  </li>\n</ul>\n<h3>オンライン配信</h3>\n<ul>\n<li>YouTube</li>\n</ul>\n<h2>参加費</h2>\n<p>無料</p>\n<h2>ISHI会とは</h2>\n<ul>\n<li>本会は、ISHI会（Inter-linked Society on Homemade IC Kai）と命名されました。</li>\n<li>オープン化（民主化）されたISHI=石=Silicon=半導体（ASIC/LSI/IC）を扱い、いろいろな分野を繋げていくソサエティー・コミュニティー（会）から発想されたネーミングです。<br></li>\n</ul>\n<p>その先駆けとして登場したOpenMPW(Open Multi Project Wafer)は、Google社がEfabless社に出資して生まれたシャトルプログラムであり、半導体（ASIC/LSI/IC）を作るうえで必要なツール（EDA/PDK）からファブでのISHI製造まで含めて、すべてオープン＆無料で半導体（ASIC/LSI/IC）を製造することができるプログラムです。 これはまさにGNUから始まったオープンソースムーブメント（ソフトウェアの民主化）の「半導体（ASIC/LSI/IC）やEDA/PDKのオープン化」であります！<br></p>\n<p>そこで、本会は、これまでの半導体（ASIC/LSI/IC）の専門家だけではなく、これからの半導体（ASIC/LSI/IC）のオープンソースムーブメントに可能性を見出した人たちと新しく半導体（ASIC/LSI/IC）を作りたい人たちにスポットを当てたユーザソサエティー・コミュニティー（会）として立ち上がりました。<br></p>\n<p>専門家だけが利用可能だったOSやコンパイラ、ライブラリ、アプリ、電子基板、3D CADや3Dプリンターがオープンソースソフトウェア、オープンハードウェア、オープンモデリングなどとして誰もが利用できるようになったように、半導体（ASIC/LSI/IC）やEDA/PDKを誰もが利用できる世界を目指して活動していく所存です。<br></p>\n<p>今後の活動方針としては、他分野の人たちを巻き込んで半導体（ASIC/LSI/IC）分野に革命を起こすという方針で、他分野向けの超初心者向けハンズオンセミナーや専門家向けの濃い内容の勉強会などのイベントを開催したり、チームを作ってOpenMPWシャトルや世界のChipathonに挑戦したり、Maker Faireなどのイベントへの参加をしていきたいと思いますので、よろしくお願いいたします。<br></p>\n<h2>注意事項</h2>\n<p>イベントもオンライン化に伴って参加者を含め行動規範の精神に基づいた行動を要請します。困りごとがありましたら主催者にご連絡ください。荒らしなどのAbuse行為、悪意が無くともお願いに対し改善がないと判断される場合はケースバイケースで対応させていただくことがございます。 <a href=\"https://www.contributor-covenant.org/ja/version/2/0/code_of_conduct/\" rel=\"nofollow\">https://www.contributor-covenant.org/ja/version/2/0/code_of_conduct/</a></p>\n<h1>謝辞</h1>\n<ul>\n<li><a href=\"https://www.aist-solutions.co.jp/\" rel=\"nofollow\">AIST-Solutions 社</a> 様のご厚意によりリアル会場を提供していただきました。</li>\n</ul>",
-      "url": "https://ishikai.connpass.com/event/395888/",
-      "image_url": "https://media.connpass.com/thumbs/9d/f9/9df91c768c0de059e0f8adff19e6e324.png",
-      "hash_tag": "",
-      "started_at": "2026-07-19T13:00:00+09:00",
-      "ended_at": "2026-07-19T18:00:00+09:00",
-      "published_at": "2026-06-23T12:53:37+09:00",
-      "limit": 125,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13549,
-        "subdomain": "ishikai",
-        "title": "ISHI会",
-        "url": "https://ishikai.connpass.com/"
-      },
-      "address": "東京都港区西新橋1-1-1 10F",
-      "place": "WeWork 日比谷FORT TOWER",
-      "lat": "35.670153600000",
-      "lon": "139.752929000000",
-      "owner_id": 126917,
-      "owner_nickname": "noritsuna_i",
-      "owner_display_name": "Noritsuna Imamura",
-      "accepted": 19,
-      "waiting": 0,
-      "updated_at": "2026-06-24T12:11:51+09:00"
-    },
-    {
       "id": 397744,
       "title": "Observability & AIOps Immersion Day",
       "catch": "",
@@ -216,37 +185,6 @@
       "updated_at": "2026-07-18T19:22:51+09:00"
     },
     {
-      "id": 400322,
-      "title": "[秋葉原] AI駆動開発 / LLM もくもく会 (初参加・初心者大歓迎！)",
-      "catch": "",
-      "description": "<p>AI駆動開発や大規模言語モデル（LLM）についての理解を深めるためのもくもく会です。</p>\n<p>「LLMそのものを学びたい」「AI駆動開発を試したい」「生成AIを実務に取り入れたい」「普通にもくもく作業したい」など、目的は何でもOK。</p>\n<p>初心者から実践ユーザーまで、誰でも気軽に参加できます。</p>\n<p>キーワード: \nClaude Code / Codex / Gemini / OpenClaw / Cursor / Copilot / Kiro / MCP / ChatGPT / RAG / LangChain / LangGraph / Hugging Face / Prompt Engineering / LLMOps / Vector DB / 自然言語処理 / テスト自動化 / ドキュメント生成 / データパイプライン / DevOps自動化 / Databricks / MLflow / RPA  / ローカルLLM / gemma4 / Qwen3.6 / セキュリティAI / 画像生成AI </p>\n<p>AIコーディングアシスタントや自動化ツール、生成AI、ワークフロー自動化、最新のAI開発環境やAPI活用など、テーマは何でもOKです。</p>\n<h2>ちょこっとサポート</h2>\n<p>以下の内容について、わからないことや作業中に詰まった点があれば、空いている時間でできる限りサポートいたします。</p>\n<p>・Claude Code / Codex のインストール、基本的な使い方  <br>\n・ローカルLLMの導入/検証</p>\n<h2>もくもく会とは？</h2>\n<p><a href=\"https://weeyble.com/blog/2025/10/13/mokumoku-guide/\" rel=\"nofollow\">もくもく会とは</a></p>\n<p>一つの場所に集まって、各自がやりたいこと(勉強したり作業したり本を読んだり)をやる会です。<br>\n家ではどうも集中できない方、集まって作業をしたい方、知り合いを増やしたい方におすすめです。<br>\n是非お気軽にご参加ください。<br></p>\n<h2>Slack</h2>\n<p><a href=\"https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q\" rel=\"nofollow\">https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q</a></p>\n<p>情報共有にSlackを使用します。事前に登録をお願いします。</p>\n<p>(#llm というchannelを使用します。)</p>\n<h2>スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:40 -</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:10</td>\n<td style=\"text-align: left;\">簡単な挨拶＆自己紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10 - 16:30</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\">進捗 &amp; 成果発表</td>\n</tr>\n</tbody>\n</table>\n<p>※ 希望者がいればLTもできます。  <br>\n※ 12:40くらいから会場は開いています。時間内の入退室は自由です。 </p>\n<h2>持ち物</h2>\n<p>PC、作業等に必要なもの（書籍等）<br></p>\n<p>※ もくもく会ですが、雑談は自由です。騒がしいのが気になる方は耳栓、ヘッドホン、イヤホンなどを各自でご持参ください。<br></p>\n<p>※ 飲食OKですが、においが強いものはご遠慮ください。 </p>\n<h2>参加費</h2>\n<p>1000円 (コワーキングスペースの利用料)</p>\n<h1>会場</h1>\n<p align=\"center\">\n  <img src=\"https://weeyble.com/weeyble_banner.jpg\" alt=\"weeyble_banner\" width=\"90%\">\n</p>\n\n<p><a href=\"https://weeyble.com/\" rel=\"nofollow\">コワーキングスペース秋葉原 Weeyble</a>  (<a href=\"https://maps.app.goo.gl/qm9rqZAT1FtCvKmr5\" rel=\"nofollow\">地図</a>)</p>\n<p>一緒に勉強会を運営してくださる方募集してます → <a href=\"https://weeyble.com/study-policy\" rel=\"nofollow\">主催者募集</a></p>\n<p>AI駆動開発関連の書籍もおいてあります\n(AIエージェント開発運用入門、初めてのLangChain、Dify関連など)   <br>\n→ <a href=\"https://weeyble-books.pages.dev/\" rel=\"noopener noreferrer nofollow\">書籍リストはこちら</a></p>\n<blockquote>\n<p>最寄り駅：<br>\nJR 秋葉原 昭和通り口徒歩4分くらい<br>\n東京メトロ 日比谷線 秋葉原 4番出口 徒歩3分くらい</p>\n<p><strong>1Fは飲食店となっておりますので、立ち入らないようご注意ください。</strong><br>\n<strong>ビルの南西端側にエレベーターがありますので、そちらから3Fに上がってください。</strong></p>\n<p>迷った場合、遅れる場合等はSlackにてご連絡ください。<br>\n(Connpassからのお問い合わせではリアルタイムでの対応は致しかねます)</p>\n</blockquote>\n<h1>注意事項</h1>\n<blockquote>\n<p>本コミュニティでの勉強会は、技術の共有やエンジニア同士の交流を目的としております。以下の行為は禁止しております。</p>\n<ul>\n<li>ネットワークビジネス、プログラミングスクール、オンラインサロン、有料コミュニティ等への勧誘</li>\n<li>ダイレクトリクルーティング、過度な営業行為など、イベント運営や参加者への迷惑となる行為</li>\n</ul>\n<p>円滑なコミュニティ運営のため、無断欠席や上記に該当する行為が確認された場合は、運営判断により今後のイベントへのお申し込みをお断りする場合があります。</p>\n<p>ご提供いただいた個人情報は、<a href=\"https://weeybrid.co.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a>に基づき適切に管理いたします。</p>\n</blockquote>\n<h2>Q&amp;A</h2>\n<h3>Q. 初参加なのですが、大丈夫でしょうか？</h3>\n<p><strong>A. はい、大丈夫です。</strong><br>\n毎回3割前後は初参加の方です。親切な方がたくさんいらっしゃいます。<br>\nまったりした雰囲気の会なので、気負わずご参加ください。</p>\n<hr>\n<h3>Q. 遅れて参加したり、途中退出したりしても大丈夫ですか？</h3>\n<p><strong>A. はい、問題ありません。</strong><br>\nなお、13:00頃に自己紹介の時間を予定しているため、初参加の方やほかの参加者と交流したい方は、この時間に来ていただくのがおすすめです。スケジュールや会場案内、注意事項はSlackにも掲載していますので、ご不明な点があれば主催またはスタッフまでお気軽にお声がけください。</p>\n<hr>\n<h3>Q. 参加できなくなった場合、個別に連絡は必要ですか？</h3>\n<p><strong>A. 個別のご連絡は不要です。</strong><br>\nこのページ上でキャンセル手続きをしていただければ大丈夫です。</p>\n<hr>\n<h3>Q. 問い合わせはこのページのフィードに書けばよいですか？このページから問い合わせできますか？</h3>\n<p><strong>A. 個別返信が必要なお問い合わせには、このページ上では対応していません。</strong><br>\n営業・会場案内・忘れ物などのご連絡は、Slackでまとめて管理しています。<br>\n返信が必要な内容については、Slackからご連絡をお願いいたします。</p>\n<h2>主催について</h2>\n<p>M_M  <br>\nSIerで働きながら、フロントエンド・サーバーサイド・LLMを勉強中です。  <br>\n幅広く技術に触れつつ、日々スキルアップを目指しています。</p>",
-      "url": "https://weeyble-data.connpass.com/event/400322/",
-      "image_url": "https://media.connpass.com/thumbs/8b/56/8b568cc020488bb0b0d86f129478ef21.png",
-      "hash_tag": "",
-      "started_at": "2026-07-19T13:00:00+09:00",
-      "ended_at": "2026-07-19T17:00:00+09:00",
-      "published_at": "2026-07-11T16:57:04+09:00",
-      "limit": 10,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 3331,
-        "subdomain": "weeyble-data",
-        "title": "Weeyble データサイエンス",
-        "url": "https://weeyble-data.connpass.com/"
-      },
-      "address": "東京都千代田区神田佐久間町3丁目37-1 山茂登ビル3F Weeyble",
-      "place": "コワーキングスペース秋葉原 Weeyble",
-      "lat": "35.697592600000",
-      "lon": "139.777946800000",
-      "owner_id": 109434,
-      "owner_nickname": "weeyble",
-      "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 10,
-      "waiting": 0,
-      "updated_at": "2026-07-18T19:55:09+09:00"
-    },
-    {
       "id": 398117,
       "title": "宇宙サイバーセキュリティ講座　オフ会",
       "catch": "",
@@ -276,6 +214,68 @@
       "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-07-18T15:54:30+09:00"
+    },
+    {
+      "id": 395888,
+      "title": "2026年07月イベント：OpenSUSI-MPW TR10を使ってみた！報告会",
+      "catch": "7月末や8月のハンズオンで利用予定のOpenSUSI-MPW TR1の体験報告会です。",
+      "description": "<h1>ISHI会版OpenMPW OpenSUSI-TR10-1を使ってみた！報告会の開催</h1>\n<p>「<a href=\"https://ishi-kai.org/article/2026/03/20/artcle_techbookfust_20.html\" rel=\"nofollow\">Open Source Silicon Magazine vol.2 ーはじめの一歩のその先へー～電気系ものづくりYouTuber イチケン氏降臨！次世代電子工作の第一歩！マイコンチップを自作しよう（アナログ編）～</a>」の執筆陣が、先陣を切って「ISHI会版OpenMPW OpenSUSI-TR10-1（ベースサービス：<a href=\"https://www.opensusi.org/mpw-service\" rel=\"nofollow\">OpenSUSI-MPW</a>）」を使って各種回路を作ってくれましたので、その報告会です。<br>\nいろいろとトラブルも出ましたし、基本的には上記で解説した回路を進化させて、単体で機能する回路を作成してもらいましたので、実用チップを作ってみたいという方は必見です！  </p>\n<h2>製作物</h2>\n<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/AM_Radio/Yamada3\" rel=\"nofollow\">AMラジオチップ</a><ul>\n<li><a href=\"https://discord.com/channels/1087260891264856144/1484448242149359738\" rel=\"nofollow\">Discord内のチャット</a></li>\n</ul>\n</li>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/JJY_Receiver/Masahiro\" rel=\"nofollow\">耳で聞けるJJY（標準電波）受信機のIC</a><ul>\n<li><a href=\"https://discord.com/channels/1087260891264856144/1510237316629921812\" rel=\"nofollow\">Discord内のチャット</a></li>\n</ul>\n</li>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/blob/main/member_project/DCDC/ShuntaroOHNO\" rel=\"nofollow\">DCDCコンバータチップ</a><ul>\n<li><a href=\"https://discord.com/channels/1087260891264856144/1510237669949571182\" rel=\"nofollow\">Discord内のチャット</a></li>\n</ul>\n</li>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/BGR/Maehashi\" rel=\"nofollow\">BGR＋周辺回路</a><ul>\n<li><a href=\"https://discord.com/channels/1087260891264856144/1510237525514518629\" rel=\"nofollow\">Discord内のチャット</a></li>\n</ul>\n</li>\n</ul>\n<h2>ISHI会版OpenMPW OpenSUSI-TR10-1について</h2>\n<p>小規模ながらスポンサーのGoogle社＋コニュニティーサポートのeFables社＋製造ファブのSkywater社の構造であり、OpenMPWの構造ということとなります！<br>\n大風呂敷を広げれば、日本のOpenMPWはまだまだ続いています！<br>\nこれからもこの構造でもっとシャトルを増やしていこうと思いますので、皆様のご支援、よろしくお願いいたします！  </p>\n<h3>ISHI会版OpenMPW OpenSUSI-TR10-1の募集一覧</h3>\n<p>現在、募集中の枠の一覧です。</p>\n<ul>\n<li><a href=\"https://ishi-kai.org/openmpw/shuttle/opensusi-tr10/2026/04/10/shuttle_ISHI-Kai_OpenMPW-OpenSUSI-TR10-1_start.html\" rel=\"nofollow\">ISHI会版OpenMPW OpenSUSI-TR10-1開始！！！～2026年OpenSUSI-TR10-1（OpenSUSI-TR10シャトル）の相乗り募集：北海道編～</a></li>\n<li><a href=\"https://ishi-kai.org/openmpw/shuttle/opensusi-tr10/2026/05/05/shuttle_ISHI-Kai_OpenMPW-OpenSUSI-TR10-1_start.html\" rel=\"nofollow\">ISHI会版OpenMPW OpenSUSI-TR10-1開始！！！～2026年OpenSUSI-TR10（OpenSUSI-TR10シャトル）の相乗り募集：東京編～</a></li>\n<li><a href=\"https://ishi-kai.org/openmpw/shuttle/opensusi-tr10/2026/04/14/shuttle_ISHI-Kai_OpenMPW-OpenSUSI-TR10-1_AudioOPAMP.html\" rel=\"nofollow\">ISHI会版OpenMPW OpenSUSI-TR10-1　オーディオ用OPAMP半導体ハンズオンセミナー</a></li>\n<li><a href=\"https://ishi-kai.org/openmpw/shuttle/opensusi-tr10/2026/04/13/shuttle_ISHI-Kai_OpenMPW-OpenSUSI-TR10-1_OPAMP.html\" rel=\"nofollow\">ISHI会版OpenMPW OpenSUSI-TR10-1　OPAMPハンズオンセミナー</a></li>\n</ul>\n<p>※現在、「 <a href=\"https://ishi-kai.org/openmpw/shuttle/tr10/2026/06/08/shuttle_ISHI-Kai_OpenMPW-TR10-2_ichiken.html\" rel=\"nofollow\">ISHI会版OpenMPW TR10-2でICHIKENさんが体験された1bit-CPUの解説動画が公開されました。</a>」で紹介した1bit-CPUのスポンサーも交渉中で、うまくいけば近日中に募集がかけられると思います。  </p>\n<h3>相乗りとは？</h3>\n<p>下の図のように1つのチップのスペースをみんなで分け合って、チップを作ろうという企画です。<br>\nそのため、非常に安価にチップを製造することができます。  </p>\n<ul>\n<li><img alt=\"去年の相乗りレイアウト\" src=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_TR10-2/raw/main/images/all_members_layout.png\">  <ul>\n<li>こちらは去年のOpenMPW TR10-2の相乗りレイアウトです。  </li>\n</ul>\n</li>\n<li><img alt=\"去年の相乗りチップ\" src=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_TR10-2/raw/main/chip_photo/microscope_chip.jpg\">  <ul>\n<li>こちらは去年のOpenMPW TR10-2の相乗りチップです。  </li>\n</ul>\n</li>\n</ul>\n<h3>スポンサー&amp;共催</h3>\n<ul>\n<li><a href=\"https://mcc.do-johodai.ac.jp/\" rel=\"nofollow\">北海道情報大学 メディアクリエイティブセンター</a></li>\n<li><a href=\"https://www.atmark-techno.com/\" rel=\"nofollow\">(株)アットマークテクノ</a></li>\n<li><a href=\"https://www.zep.co.jp/\" rel=\"nofollow\">ZEPエンジニアリング（株）</a></li>\n<li><a href=\"https://www.sanken-ele.co.jp/\" rel=\"nofollow\">サンケン電気（株）</a></li>\n</ul>\n<h1>日程</h1>\n<h2>日時</h2>\n<ul>\n<li>2026年7月19日（日）  13：00〜17：00  </li>\n</ul>\n<h2>スケジュール</h2>\n<ul>\n<li>13:00 - 13:30<ul>\n<li><a href=\"https://www.opensusi.org/mpw-service\" rel=\"nofollow\">OpenSUSI-MPW</a>の紹介 by OpenSUSI</li>\n</ul>\n</li>\n<li>13:30 - 14:00<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/BGR/Maehashi\" rel=\"nofollow\">BGR＋周辺回路</a>チーム</li>\n</ul>\n</li>\n<li>14:00 - 15:00<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/blob/main/member_project/DCDC/ShuntaroOHNO\" rel=\"nofollow\">DCDCコンバータチップ</a>チーム</li>\n</ul>\n</li>\n<li>15:00 - 15:20<ul>\n<li>(休憩)</li>\n</ul>\n</li>\n<li>15:20 - 16:00<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/JJY_Receiver/Masahiro\" rel=\"nofollow\">耳で聞けるJJY（標準電波）受信機のIC</a>チーム</li>\n</ul>\n</li>\n<li>16:00 - 17:00<ul>\n<li><a href=\"https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1/tree/main/member_project/AM_Radio/Yamada3\" rel=\"nofollow\">AMラジオチップ</a>チーム</li>\n</ul>\n</li>\n<li>※スケジュールは概算です。当日、変動します。  </li>\n</ul>\n<h2>開催場所</h2>\n<h3>リアル会場</h3>\n<ul>\n<li>【施設名】WeWork 日比谷 FORT TOWER 9階 9R会議室</li>\n<li>【住所】　東京都港区西新橋1丁目1番地  </li>\n</ul>\n<h3>オンライン配信</h3>\n<ul>\n<li>YouTube</li>\n</ul>\n<h2>参加費</h2>\n<p>無料</p>\n<h2>ISHI会とは</h2>\n<ul>\n<li>本会は、ISHI会（Inter-linked Society on Homemade IC Kai）と命名されました。</li>\n<li>オープン化（民主化）されたISHI=石=Silicon=半導体（ASIC/LSI/IC）を扱い、いろいろな分野を繋げていくソサエティー・コミュニティー（会）から発想されたネーミングです。<br></li>\n</ul>\n<p>その先駆けとして登場したOpenMPW(Open Multi Project Wafer)は、Google社がEfabless社に出資して生まれたシャトルプログラムであり、半導体（ASIC/LSI/IC）を作るうえで必要なツール（EDA/PDK）からファブでのISHI製造まで含めて、すべてオープン＆無料で半導体（ASIC/LSI/IC）を製造することができるプログラムです。 これはまさにGNUから始まったオープンソースムーブメント（ソフトウェアの民主化）の「半導体（ASIC/LSI/IC）やEDA/PDKのオープン化」であります！<br></p>\n<p>そこで、本会は、これまでの半導体（ASIC/LSI/IC）の専門家だけではなく、これからの半導体（ASIC/LSI/IC）のオープンソースムーブメントに可能性を見出した人たちと新しく半導体（ASIC/LSI/IC）を作りたい人たちにスポットを当てたユーザソサエティー・コミュニティー（会）として立ち上がりました。<br></p>\n<p>専門家だけが利用可能だったOSやコンパイラ、ライブラリ、アプリ、電子基板、3D CADや3Dプリンターがオープンソースソフトウェア、オープンハードウェア、オープンモデリングなどとして誰もが利用できるようになったように、半導体（ASIC/LSI/IC）やEDA/PDKを誰もが利用できる世界を目指して活動していく所存です。<br></p>\n<p>今後の活動方針としては、他分野の人たちを巻き込んで半導体（ASIC/LSI/IC）分野に革命を起こすという方針で、他分野向けの超初心者向けハンズオンセミナーや専門家向けの濃い内容の勉強会などのイベントを開催したり、チームを作ってOpenMPWシャトルや世界のChipathonに挑戦したり、Maker Faireなどのイベントへの参加をしていきたいと思いますので、よろしくお願いいたします。<br></p>\n<h2>注意事項</h2>\n<p>イベントもオンライン化に伴って参加者を含め行動規範の精神に基づいた行動を要請します。困りごとがありましたら主催者にご連絡ください。荒らしなどのAbuse行為、悪意が無くともお願いに対し改善がないと判断される場合はケースバイケースで対応させていただくことがございます。 <a href=\"https://www.contributor-covenant.org/ja/version/2/0/code_of_conduct/\" rel=\"nofollow\">https://www.contributor-covenant.org/ja/version/2/0/code_of_conduct/</a></p>\n<h1>謝辞</h1>\n<ul>\n<li><a href=\"https://www.aist-solutions.co.jp/\" rel=\"nofollow\">AIST-Solutions 社</a> 様のご厚意によりリアル会場を提供していただきました。</li>\n</ul>",
+      "url": "https://ishikai.connpass.com/event/395888/",
+      "image_url": "https://media.connpass.com/thumbs/9d/f9/9df91c768c0de059e0f8adff19e6e324.png",
+      "hash_tag": "",
+      "started_at": "2026-07-19T13:00:00+09:00",
+      "ended_at": "2026-07-19T18:00:00+09:00",
+      "published_at": "2026-06-23T12:53:37+09:00",
+      "limit": 125,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13549,
+        "subdomain": "ishikai",
+        "title": "ISHI会",
+        "url": "https://ishikai.connpass.com/"
+      },
+      "address": "東京都港区西新橋1-1-1 10F",
+      "place": "WeWork 日比谷FORT TOWER",
+      "lat": "35.670153600000",
+      "lon": "139.752929000000",
+      "owner_id": 126917,
+      "owner_nickname": "noritsuna_i",
+      "owner_display_name": "Noritsuna Imamura",
+      "accepted": 19,
+      "waiting": 0,
+      "updated_at": "2026-06-24T12:11:51+09:00"
+    },
+    {
+      "id": 400322,
+      "title": "[秋葉原] AI駆動開発 / LLM もくもく会 (初参加・初心者大歓迎！)",
+      "catch": "",
+      "description": "<p>AI駆動開発や大規模言語モデル（LLM）についての理解を深めるためのもくもく会です。</p>\n<p>「LLMそのものを学びたい」「AI駆動開発を試したい」「生成AIを実務に取り入れたい」「普通にもくもく作業したい」など、目的は何でもOK。</p>\n<p>初心者から実践ユーザーまで、誰でも気軽に参加できます。</p>\n<p>キーワード: \nClaude Code / Codex / Gemini / OpenClaw / Cursor / Copilot / Kiro / MCP / ChatGPT / RAG / LangChain / LangGraph / Hugging Face / Prompt Engineering / LLMOps / Vector DB / 自然言語処理 / テスト自動化 / ドキュメント生成 / データパイプライン / DevOps自動化 / Databricks / MLflow / RPA  / ローカルLLM / gemma4 / Qwen3.6 / セキュリティAI / 画像生成AI </p>\n<p>AIコーディングアシスタントや自動化ツール、生成AI、ワークフロー自動化、最新のAI開発環境やAPI活用など、テーマは何でもOKです。</p>\n<h2>ちょこっとサポート</h2>\n<p>以下の内容について、わからないことや作業中に詰まった点があれば、空いている時間でできる限りサポートいたします。</p>\n<p>・Claude Code / Codex のインストール、基本的な使い方  <br>\n・ローカルLLMの導入/検証</p>\n<h2>もくもく会とは？</h2>\n<p><a href=\"https://weeyble.com/blog/2025/10/13/mokumoku-guide/\" rel=\"nofollow\">もくもく会とは</a></p>\n<p>一つの場所に集まって、各自がやりたいこと(勉強したり作業したり本を読んだり)をやる会です。<br>\n家ではどうも集中できない方、集まって作業をしたい方、知り合いを増やしたい方におすすめです。<br>\n是非お気軽にご参加ください。<br></p>\n<h2>Slack</h2>\n<p><a href=\"https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q\" rel=\"nofollow\">https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q</a></p>\n<p>情報共有にSlackを使用します。事前に登録をお願いします。</p>\n<p>(#llm というchannelを使用します。)</p>\n<h2>スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:40 -</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:10</td>\n<td style=\"text-align: left;\">簡単な挨拶＆自己紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10 - 16:30</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\">進捗 &amp; 成果発表</td>\n</tr>\n</tbody>\n</table>\n<p>※ 希望者がいればLTもできます。  <br>\n※ 12:40くらいから会場は開いています。時間内の入退室は自由です。 </p>\n<h2>持ち物</h2>\n<p>PC、作業等に必要なもの（書籍等）<br></p>\n<p>※ もくもく会ですが、雑談は自由です。騒がしいのが気になる方は耳栓、ヘッドホン、イヤホンなどを各自でご持参ください。<br></p>\n<p>※ 飲食OKですが、においが強いものはご遠慮ください。 </p>\n<h2>参加費</h2>\n<p>1000円 (コワーキングスペースの利用料)</p>\n<h1>会場</h1>\n<p align=\"center\">\n  <img src=\"https://weeyble.com/weeyble_banner.jpg\" alt=\"weeyble_banner\" width=\"90%\">\n</p>\n\n<p><a href=\"https://weeyble.com/\" rel=\"nofollow\">コワーキングスペース秋葉原 Weeyble</a>  (<a href=\"https://maps.app.goo.gl/qm9rqZAT1FtCvKmr5\" rel=\"nofollow\">地図</a>)</p>\n<p>一緒に勉強会を運営してくださる方募集してます → <a href=\"https://weeyble.com/study-policy\" rel=\"nofollow\">主催者募集</a></p>\n<p>AI駆動開発関連の書籍もおいてあります\n(AIエージェント開発運用入門、初めてのLangChain、Dify関連など)   <br>\n→ <a href=\"https://weeyble-books.pages.dev/\" rel=\"noopener noreferrer nofollow\">書籍リストはこちら</a></p>\n<blockquote>\n<p>最寄り駅：<br>\nJR 秋葉原 昭和通り口徒歩4分くらい<br>\n東京メトロ 日比谷線 秋葉原 4番出口 徒歩3分くらい</p>\n<p><strong>1Fは飲食店となっておりますので、立ち入らないようご注意ください。</strong><br>\n<strong>ビルの南西端側にエレベーターがありますので、そちらから3Fに上がってください。</strong></p>\n<p>迷った場合、遅れる場合等はSlackにてご連絡ください。<br>\n(Connpassからのお問い合わせではリアルタイムでの対応は致しかねます)</p>\n</blockquote>\n<h1>注意事項</h1>\n<blockquote>\n<p>本コミュニティでの勉強会は、技術の共有やエンジニア同士の交流を目的としております。以下の行為は禁止しております。</p>\n<ul>\n<li>ネットワークビジネス、プログラミングスクール、オンラインサロン、有料コミュニティ等への勧誘</li>\n<li>ダイレクトリクルーティング、過度な営業行為など、イベント運営や参加者への迷惑となる行為</li>\n</ul>\n<p>円滑なコミュニティ運営のため、無断欠席や上記に該当する行為が確認された場合は、運営判断により今後のイベントへのお申し込みをお断りする場合があります。</p>\n<p>ご提供いただいた個人情報は、<a href=\"https://weeybrid.co.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a>に基づき適切に管理いたします。</p>\n</blockquote>\n<h2>Q&amp;A</h2>\n<h3>Q. 初参加なのですが、大丈夫でしょうか？</h3>\n<p><strong>A. はい、大丈夫です。</strong><br>\n毎回3割前後は初参加の方です。親切な方がたくさんいらっしゃいます。<br>\nまったりした雰囲気の会なので、気負わずご参加ください。</p>\n<hr>\n<h3>Q. 遅れて参加したり、途中退出したりしても大丈夫ですか？</h3>\n<p><strong>A. はい、問題ありません。</strong><br>\nなお、13:00頃に自己紹介の時間を予定しているため、初参加の方やほかの参加者と交流したい方は、この時間に来ていただくのがおすすめです。スケジュールや会場案内、注意事項はSlackにも掲載していますので、ご不明な点があれば主催またはスタッフまでお気軽にお声がけください。</p>\n<hr>\n<h3>Q. 参加できなくなった場合、個別に連絡は必要ですか？</h3>\n<p><strong>A. 個別のご連絡は不要です。</strong><br>\nこのページ上でキャンセル手続きをしていただければ大丈夫です。</p>\n<hr>\n<h3>Q. 問い合わせはこのページのフィードに書けばよいですか？このページから問い合わせできますか？</h3>\n<p><strong>A. 個別返信が必要なお問い合わせには、このページ上では対応していません。</strong><br>\n営業・会場案内・忘れ物などのご連絡は、Slackでまとめて管理しています。<br>\n返信が必要な内容については、Slackからご連絡をお願いいたします。</p>\n<h2>主催について</h2>\n<p>M_M  <br>\nSIerで働きながら、フロントエンド・サーバーサイド・LLMを勉強中です。  <br>\n幅広く技術に触れつつ、日々スキルアップを目指しています。</p>",
+      "url": "https://weeyble-data.connpass.com/event/400322/",
+      "image_url": "https://media.connpass.com/thumbs/8b/56/8b568cc020488bb0b0d86f129478ef21.png",
+      "hash_tag": "",
+      "started_at": "2026-07-19T13:00:00+09:00",
+      "ended_at": "2026-07-19T17:00:00+09:00",
+      "published_at": "2026-07-11T16:57:04+09:00",
+      "limit": 10,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 3331,
+        "subdomain": "weeyble-data",
+        "title": "Weeyble データサイエンス",
+        "url": "https://weeyble-data.connpass.com/"
+      },
+      "address": "東京都千代田区神田佐久間町3丁目37-1 山茂登ビル3F Weeyble",
+      "place": "コワーキングスペース秋葉原 Weeyble",
+      "lat": "35.697592600000",
+      "lon": "139.777946800000",
+      "owner_id": 109434,
+      "owner_nickname": "weeyble",
+      "owner_display_name": "コワーキングスペース秋葉原Weeyble",
+      "accepted": 10,
+      "waiting": 0,
+      "updated_at": "2026-07-18T19:55:09+09:00"
     },
     {
       "id": 400337,
@@ -426,37 +426,6 @@
       "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-07-18T08:53:06+09:00"
-    },
-    {
-      "id": 398072,
-      "title": "第128回 (2026/7/19(日)) CoderDojo 柏の葉",
-      "catch": "",
-      "description": "<p>CoderDojo Kashowa no ha (柏の葉) を開催します。<br></p>\n<p>■受付について<br>\n以前から参加している人は、【参加したことがある人】を選んでください。<br>\nまた、CoderDojo Kashowa no ha (柏の葉)ではなく、近隣の 柏、南柏、沼南 に来た事がある人も【参加したことがある人】を選んでください。<br>\n今までにCoderDojo Kashowa no ha (柏の葉)や近隣の 柏、南柏、沼南にも来たことが無い人、または、Scratch を使ったことが無い人は、【初めて参加する人】を選んでください。<br>\n<br>\n■年齢について<br>\n7〜17歳を対象としています。<br>\n見学という事でしたら、それ以外の年齢の方も受け付けています。<br>\n事前に見学である事をお知らせいただけますと助かります。<br></p>\n<p>■当日について<br>\n【時間】10:00～ 12:00 時間に遅れないようにお願いします。<br>\n【場所】KOILスタジオ(ららぽーと柏の葉北館6F)<br>\n【最寄り駅】つくばエクスプレス線 柏の葉キャンパス駅<br></p>\n<p>KOIL の紹介<br>\n<a href=\"https://www.koil.jp/</br>\" rel=\"nofollow\">https://www.koil.jp/<br></a>\n<br>\n会場へのお問い合わせは、ご遠慮ください。<br>\n当日の欠席や遅刻の連絡も会場ではなく、「イベントへのお問い合わせ」にてお願いいたします。\n<br>\n<br>パソコンを持参できる方は会場に持ってきてください。<br>\nパソコンの貸し出しを希望される方は、「イベントへのお問い合わせ」からお知らせください。3台と限りがありますが、お貸しできます\n<br>\n<br>\nそれ以外にご不明な点等ございましたら、お問い合わせください。\n<br><br>\nそれでは当日お会いできることを楽しみにしています。<br>\n子どものためのプログラミング道場<br>\nCoderDojo Kashiwa <br>\n<br>\nCoderDojo については、以下の CoderDojo Japan のサイトを参考ください<br>\n<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">https://coderdojo.jp/</a></p>",
-      "url": "https://kashiwa-no-ha.connpass.com/event/398072/",
-      "image_url": null,
-      "hash_tag": "",
-      "started_at": "2026-07-19T10:00:00+09:00",
-      "ended_at": "2026-07-19T12:00:00+09:00",
-      "published_at": "2026-06-21T12:01:46+09:00",
-      "limit": 15,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 15705,
-        "subdomain": "kashiwa-no-ha",
-        "title": "CoderDojo柏の葉",
-        "url": "https://kashiwa-no-ha.connpass.com/"
-      },
-      "address": "千葉県柏市若柴178-4",
-      "place": "KOIL",
-      "lat": "35.895519200000",
-      "lon": "139.951149200000",
-      "owner_id": 116459,
-      "owner_nickname": "KenIcs",
-      "owner_display_name": "坂田 健一(CoderDojo 柏)",
-      "accepted": 2,
-      "waiting": 0,
-      "updated_at": "2026-06-21T12:01:46+09:00"
     }
   ]
 }
