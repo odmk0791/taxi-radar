@@ -1181,6 +1181,25 @@ async function loadRoute(dayInfo){
       flush();
       // 実車軌跡を前面に
       gpsLayers.filter(g=>g.type==='ride').forEach(g=>g.line.bringToFront());
+
+      // ── POIマーク(ロガーのボタン=GO受注地点など) ──────
+      if(gpsData.marks&&gpsData.marks.length){
+        gpsData.marks.forEach(mk=>{
+          const[sec,mlat,mlng]=mk;
+          const hh=Math.floor(sec/3600),mm=String(Math.floor(sec%3600/60)).padStart(2,'0');
+          // 直後のGO営業(30分以内)とマッチング
+          const cand=trips.filter(t=>t.ok&&t.startMin>=0&&t.startMin*60>=sec&&t.startMin*60<=sec+1800&&/GO|スマ配/.test(t.status)).sort((a,b)=>a.startMin-b.startMin)[0];
+          let pop=`<b>📍 マーク ${hh}:${mm}</b>`;
+          if(cand){
+            const lagMin=Math.round((cand.startMin*60-sec)/60);
+            const km=(distM(mlat,mlng,cand.pc.lat,cand.pc.lng)/1000).toFixed(1);
+            pop+=`<br>→ #${cand.n} ${cand.pickup} 乗車まで ${lagMin}分 / 直線${km}km`;
+          }
+          const mi=L.marker([mlat,mlng],{icon:L.divIcon({className:'',html:'<div style="font-size:20px;filter:drop-shadow(0 1px 2px #000);">📍</div>',iconSize:[20,20],iconAnchor:[10,20]})}).addTo(leafMap);
+          mi.bindPopup(pop);
+          gpsLayers.push({type:'mark',line:mi});
+        });
+      }
     }
 
     if(bounds.length)leafMap.fitBounds(bounds,{padding:[50,50]});
@@ -1192,6 +1211,7 @@ async function loadRoute(dayInfo){
     if(dayBreaks.length)stMsg+=` | 休憩: ${dayBreaks.length}件`;
     if(dayKuten.length)stMsg+=` | 空転: ${dayKuten.length}件`;
     if(gpsData)stMsg+=` | GPS実測: ${gpsData.n_points||gpsData.points.length}点`;
+    if(gpsData&&gpsData.marks&&gpsData.marks.length)stMsg+=` | 📍マーク: ${gpsData.marks.length}件`;
     const pinCnt=trips.filter(t=>t.pg||t.dg).length;
     if(pinCnt)stMsg+=` | ピン座標: ${pinCnt}件`;
     stBar.textContent=stMsg;
