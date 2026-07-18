@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-19T06:42:13.394672+09:00",
+  "fetched_at": "2026-07-19T07:41:04.670946+09:00",
   "date": "20260719",
   "count": 15,
   "events": [
@@ -428,35 +428,35 @@
       "updated_at": "2026-07-18T08:53:06+09:00"
     },
     {
-      "id": 398091,
-      "title": "第94回CoderDojoあざみ野",
-      "catch": "7〜17歳の子どもを対象にした無償のプログラミングクラブ",
-      "description": "<h2>CoderDojoとは</h2>\n<p>CoderDojoは7〜17歳の子どもを対象にしたプログラミング道場（クラブ）です。2011年にアイルランドで始まり、世界では117カ国・2,416のDojo（<a href=\"https://codeclub.org/en/coderdojo-community\" rel=\"nofollow\">CoderDojo</a>より、2022/3時点）、日本では全国に239以上のDojoがあります（<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">CoderDojo Japan</a>より、2022/3時点）。</p>\n<p>お申込みの前に<a href=\"https://coderdojo-azamino.connpass.com/\" rel=\"nofollow\">CoderDojoあざみ野グループページ</a>をご確認いただき、以下を含むCoderDojoの趣旨をご理解ください。</p>\n<ul>\n<li>Dojoは無償のボランティアにより運営されており参加費は無料です</li>\n<li>トレーナーが教える「教室」ではなく、子どもたちが自発的に活動する「クラブ」です（プログラミングを楽しみ、わからないことは他のニンジャやメンターに相談して一緒に考えてもらうことができます）</li>\n</ul>\n<h2>参加対象</h2>\n<h3>ニンジャ(参加する子ども)</h3>\n<ul>\n<li>小学生〜高校生<ul>\n<li>小学生には保護者の同伴をお願いします</li>\n</ul>\n</li>\n<li>保護者の方にサポートいただくことを前提に、未就学児も参加可能です</li>\n</ul>\n<p>募集開始時の定員はチャンピオン1人でも対応できる人数で設定していますが、ご応募・ご協力いただけるメンター数に応じて部屋の定員を上限に募集人数を調整することがあります。</p>\n<h3>メンター(指南役)／ボランティア</h3>\n<ul>\n<li>メンター: 主役であるニンジャたちのプログラミングをサポートいただける誰でも（トレーナーではありません）</li>\n<li>ボランティア: 会場設営や受付、写真撮影などのイベント運営をサポートいただける誰でも</li>\n</ul>\n<h2>持ちもの</h2>\n<ol>\n<li>\n<p>ノートPCやタブレット</p>\n<ul>\n<li>インターネット接続する場合、Wi-Fi接続可能なものをご用意ください</li>\n<li>プログラミングの自由度が高いノートPCがお勧めです（タブレットでも参加いただけます）</li>\n<li>会場に貸し出し用のノートPCやタブレットのご用意はありません</li>\n<li>複数のお子さんをお連れの場合、それぞれにご用意いただくことをお勧めします</li>\n</ul>\n</li>\n<li>\n<p>プログラミングの参考書籍（オプション）</p>\n<ul>\n<li>お手元に書籍等がありましたらお持ちください</li>\n</ul>\n</li>\n<li>\n<p>micro:bitなどの物理コンピューティングデバイスやロボットなど（オプション）</p>\n<ul>\n<li>ニンジャが当日取り組む内容に応じて、本体やUSBケーブル、電源などをお持ちください</li>\n</ul>\n</li>\n</ol>\n<h3>運営側で用意するもの</h3>\n<ol>\n<li>会場（場所、机、椅子）</li>\n<li>Wi-Fiによるインターネット接続（施設提供の<a href=\"https://www.women.city.yokohama.jp/a/23791/\" rel=\"nofollow\">利用案内</a>をご確認ください）</li>\n<li>プロジェクターとHDMIケーブル（ガイダンスや発表時に使用）</li>\n<li>ニンジャ用名札シールとペン</li>\n<li>初心者の導入用にScratchなどの参考資料（ネコ歩きやネコ逃げ、コーディングカード相当のものなど）</li>\n</ol>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">13:00-13:30</td>\n<td style=\"text-align: left;\">会場準備</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:30-13:45</td>\n<td style=\"text-align: left;\">メンター／ボランティア集合</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:45-14:00</td>\n<td style=\"text-align: left;\">ニンジャ集合・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:00-14:15</td>\n<td style=\"text-align: left;\">ガイダンス（CoderDojoについて、メンターネタなど）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:15-15:30</td>\n<td style=\"text-align: left;\">プログラミング！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:30-15:50</td>\n<td style=\"text-align: left;\">発表</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50-16:00</td>\n<td style=\"text-align: left;\">片付け</td>\n</tr>\n</tbody>\n</table>\n<h2>活動内容</h2>\n<p>今回のDojoでは主に以下のようなものに取り組むことを想定しています。Dojoの醍醐味は発表です。みんなの前に立って自分がやったことを自慢しましょう。完成していなくても大丈夫です。</p>\n<h3><a href=\"https://scratch.mit.edu/\" rel=\"nofollow\">Scratch</a></h3>\n<p>ゲームやアニメーションを作成したい方はScratch（スクラッチ）に取り組みましょう。初めての方はオンラインのアカウントを作成して、書籍などの教材を参考にして取り組んでいくことをおすすめします。既に作品を作っている方は、各自の作りたいモノをどんどん作っていきましょう。分からないことや知りたいことはメンターに相談できます。</p>\n<p>通常のオンライン版Scratchをお勧めしますが、一旦インストールしたらその後インターネット接続が不要な<a href=\"https://scratch.mit.edu/download\" rel=\"nofollow\">Scratchデスクトップ版</a>もあります。必要に応じて事前にインストールしておいてください。</p>\n<h3><a href=\"https://hourofcode.com/jp\" rel=\"nofollow\">Hour of Code</a></h3>\n<p>プログラミングが初めての方は、Hour of Code（アワーオブコード）から始めることをおすすめします。課題形式でプログラミングを学習するので、ブロックを組み合わせてプログラムすることに慣れることができます。学習履歴を残せるので、事前に自宅で<a href=\"https://studio.code.org/users/sign_up\" rel=\"nofollow\">アカウント作成</a>しておくことをおすすめします。</p>\n<h3><a href=\"https://microbit.org/\" rel=\"nofollow\">micro:bit</a></h3>\n<p>micro:bit（マイクロビット）はイギリスのBBCが主体となって作った教育向けのマイコンボードです。25個のLED、2個のボタンスイッチのほか、加速度センサーや磁力センサー、無線通信機能がついていて、ブロック型エディターやPythonでプログラムして操作できます。micro:bit本体やUSBケーブル（Type A - Micro-Bタイプ）、電源などは各自でお持ちください。</p>\n<h3>それ以外の何でもOK</h3>\n<p>その他にやりたいことがある方もご参加いただけます。自分の興味をもって取り組んでいることをみんなに聞いてもらったり、一緒に取り組む仲間を見つけましょう！</p>\n<p>最近はDojoで<a href=\"https://www.minecraft.net/ja-jp\" rel=\"nofollow\">Minecraft</a>（有料）に取り組むニンジャを多く見かけます。</p>\n<h2>その他の注意事項</h2>\n<h3>保護者のサポート</h3>\n<p>通常は子どもたちの自主性を尊重して何でもやらせてあげるようにしてください。ノートPCやタブレットの基本的な操作は子どもたちが大人になるまでにいつか身に着けるべき大事なスキルです。不慣れで手助けが必要な時には、代わりに操作してあげるのではなく、なるべく操作の仕方を教えて次から自分でできるようにするのがよいでしょう。子どもたちが自らやりたいと思うことは覚えが速いです。子どもたちが自立して楽しいプログラミング体験となるようご協力をお願いします。</p>\n<h3>撮影について</h3>\n<p>Dojoの主催者として、当日の雰囲気をFacebookやX(Twitter)などで紹介するため写真や動画の撮影を行います。あらかじめご了承ください。参加者による撮影は、他の方のプライバシーに十分配慮して、個人利用の範囲にとどめるようお願いします。</p>\n<h3>スリーストライクルール</h3>\n<p>参加を申し込んだのに当日参加しない方がいると、参加したいのに参加枠が埋まっていて参加できない方へご迷惑になります。参加申し込み後参加できなくなった場合には速やかにconnpass上でキャンセルしていただくようお願いします。また、connpassでキャンセルできない場合はご連絡をお願いします。連絡なしに当日参加しない方(No Show)の記録は残しております。3回までは静観しますが、それ以降のお申し込みは事前告知なくキャンセルさせて頂きますのでご注意ください。</p>\n<h3>メンター／ボランティア募集</h3>\n<p>メンターやボランティアのサポートにより、ニンジャにとってDojoに来て何かすることが魅力ある体験になります。</p>\n<p>サポートいただくのに必ずしもプログラミングのスキルが必要というわけではありません。子どもたちの相談に乗って一緒に考えていただける方にお手伝いいただければと思います。ニンジャに技術や創造性のひらめきを与えてくれるようなメンターや、女子のニンジャにロールモデルを見せてくれる女性メンター、ニンジャの付き添いのついでに他のニンジャもサポートしてくれる保護者の方を歓迎します。何か技術ネタやご自分のSTEMの知識や経験をニンジャと共有いただけるという方はお声がけください。</p>\n<p><a href=\"https://coderdojo.jp/kata\" rel=\"nofollow\">CoderDojo Japan Kata</a>の「運営者向け資料」以下にメンターの役割を説明したよい資料がいくつもありますので、いくつか目を通すとCoderDojoの雰囲気がつかめるかと思います。</p>",
-      "url": "https://coderdojo-azamino.connpass.com/event/398091/",
-      "image_url": "https://media.connpass.com/thumbs/38/9b/389ba2f3d2729aefda8ceaf8c25f1279.png",
-      "hash_tag": "CoderDojo",
-      "started_at": "2026-07-19T14:00:00+09:00",
-      "ended_at": "2026-07-19T16:00:00+09:00",
-      "published_at": "2026-06-21T17:02:56+09:00",
-      "limit": 7,
+      "id": 398072,
+      "title": "第128回 (2026/7/19(日)) CoderDojo 柏の葉",
+      "catch": "",
+      "description": "<p>CoderDojo Kashowa no ha (柏の葉) を開催します。<br></p>\n<p>■受付について<br>\n以前から参加している人は、【参加したことがある人】を選んでください。<br>\nまた、CoderDojo Kashowa no ha (柏の葉)ではなく、近隣の 柏、南柏、沼南 に来た事がある人も【参加したことがある人】を選んでください。<br>\n今までにCoderDojo Kashowa no ha (柏の葉)や近隣の 柏、南柏、沼南にも来たことが無い人、または、Scratch を使ったことが無い人は、【初めて参加する人】を選んでください。<br>\n<br>\n■年齢について<br>\n7〜17歳を対象としています。<br>\n見学という事でしたら、それ以外の年齢の方も受け付けています。<br>\n事前に見学である事をお知らせいただけますと助かります。<br></p>\n<p>■当日について<br>\n【時間】10:00～ 12:00 時間に遅れないようにお願いします。<br>\n【場所】KOILスタジオ(ららぽーと柏の葉北館6F)<br>\n【最寄り駅】つくばエクスプレス線 柏の葉キャンパス駅<br></p>\n<p>KOIL の紹介<br>\n<a href=\"https://www.koil.jp/</br>\" rel=\"nofollow\">https://www.koil.jp/<br></a>\n<br>\n会場へのお問い合わせは、ご遠慮ください。<br>\n当日の欠席や遅刻の連絡も会場ではなく、「イベントへのお問い合わせ」にてお願いいたします。\n<br>\n<br>パソコンを持参できる方は会場に持ってきてください。<br>\nパソコンの貸し出しを希望される方は、「イベントへのお問い合わせ」からお知らせください。3台と限りがありますが、お貸しできます\n<br>\n<br>\nそれ以外にご不明な点等ございましたら、お問い合わせください。\n<br><br>\nそれでは当日お会いできることを楽しみにしています。<br>\n子どものためのプログラミング道場<br>\nCoderDojo Kashiwa <br>\n<br>\nCoderDojo については、以下の CoderDojo Japan のサイトを参考ください<br>\n<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">https://coderdojo.jp/</a></p>",
+      "url": "https://kashiwa-no-ha.connpass.com/event/398072/",
+      "image_url": null,
+      "hash_tag": "",
+      "started_at": "2026-07-19T10:00:00+09:00",
+      "ended_at": "2026-07-19T12:00:00+09:00",
+      "published_at": "2026-06-21T12:01:46+09:00",
+      "limit": 15,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
-        "id": 6773,
-        "subdomain": "coderdojo-azamino",
-        "title": "CoderDojoあざみ野(横浜青葉)",
-        "url": "https://coderdojo-azamino.connpass.com/"
+        "id": 15705,
+        "subdomain": "kashiwa-no-ha",
+        "title": "CoderDojo柏の葉",
+        "url": "https://kashiwa-no-ha.connpass.com/"
       },
-      "address": "横浜市青葉区あざみ野南1-17-3",
-      "place": "アートフォーラムあざみ野 3F 会議室3",
-      "lat": "35.564956400000",
-      "lon": "139.553984800000",
-      "owner_id": 617094,
-      "owner_nickname": "kojimah",
-      "owner_display_name": "kojimah",
-      "accepted": 1,
+      "address": "千葉県柏市若柴178-4",
+      "place": "KOIL",
+      "lat": "35.895519200000",
+      "lon": "139.951149200000",
+      "owner_id": 116459,
+      "owner_nickname": "KenIcs",
+      "owner_display_name": "坂田 健一(CoderDojo 柏)",
+      "accepted": 2,
       "waiting": 0,
-      "updated_at": "2026-07-11T01:37:37+09:00"
+      "updated_at": "2026-06-21T12:01:46+09:00"
     }
   ]
 }
