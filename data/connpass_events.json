@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-18T21:56:46.206029+09:00",
+  "fetched_at": "2026-07-18T23:18:52.907834+09:00",
   "date": "20260718",
   "count": 34,
   "events": [
@@ -42,7 +42,7 @@
       "published_at": "2026-04-29T16:54:19+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17229,
         "subdomain": "nikinusu",
