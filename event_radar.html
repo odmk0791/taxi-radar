@@ -884,11 +884,13 @@ async function startScan(){
 
   // 2.5) サーバー側の手動イベント（data/manual_events.json）
   let serverEvents=[];
+  let manualErr='';
   try{
-    const r=await fetch(MANUAL_URL+'?t='+Date.now(),{signal:AbortSignal.timeout(8000)});
+    const r=await fetch(MANUAL_URL+'?t='+Date.now());
     if(r.ok){
       const data=await r.json();
-      serverEvents=(data.events||[])
+      const raw=(data.events||[]);
+      serverEvents=raw
         .filter(ev=>ev.ended_at)
         .map(ev=>({
           id: ev.id,
@@ -906,8 +908,14 @@ async function startScan(){
           _source:'manual'
         }))
         .filter(ev=>ev.date===today || !ev.date);
+      if(raw.length && !serverEvents.length){
+        manualErr='(手動'+raw.length+'件は別日: '+(raw[0].started_at||'').slice(0,10)+' / 今日='+today+')';
+      }
+    } else {
+      manualErr='(手動取得HTTP'+r.status+')';
     }
-  }catch(e){ /* 取得失敗時はスキップ */ }
+  }catch(e){ manualErr='(手動取得エラー:'+(e.name||e.message||'不明')+')'; }
+  window._manualErr=manualErr;
 
   // 会場マスタを読み込み（穴スコア計算用）
   await loadVenueMaster();
@@ -935,7 +943,7 @@ async function startScan(){
       +'<div class="empty-sub">「＋ イベント登録」タブから追加するか<br>Connpassの自動更新（毎時）をお待ちください</div></div>';
   } else {
     const mc=manualEvents.length+serverEvents.length, cc=connpassEvents.length;
-    setStatus('✅ '+allEvents.length+'件表示中（手動'+mc+' / Connpass'+cc+'）','ok');
+    setStatus('✅ '+allEvents.length+'件表示中（手動'+mc+' / Connpass'+cc+'）'+(window._manualErr||''),'ok');
     document.getElementById('filterBar').style.display='flex';
     document.getElementById('sortBar').style.display='flex';
     renderList();
