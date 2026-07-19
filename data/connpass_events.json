@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-20T06:43:05.375386+09:00",
+  "fetched_at": "2026-07-20T07:42:51.048946+09:00",
   "date": "20260720",
   "count": 8,
   "events": [
@@ -154,7 +154,7 @@
       "owner_id": 123017,
       "owner_nickname": "iwski",
       "owner_display_name": "岩崎",
-      "accepted": 18,
+      "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-07-08T13:04:19+09:00"
     },
