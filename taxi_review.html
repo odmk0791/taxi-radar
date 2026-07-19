@@ -150,7 +150,14 @@ const BUDGET={ // 青タク基準 2025〜 特殊日除外
  '金':{low:92500,budget:97400,high:107200,stretch:105000},
  '土':{low:88034,budget:91865,high:99526,stretch:100000},
  '日':{low:72916,budget:79120,high:91529,stretch:90000}};
-const BUDGET_P={'水':97160,'土':92750,'日':95240,'月':92570}; // プレタク参考値
+const BUDGET_P={ // プレタク専用ライン（2026/2〜運用開始。n=サンプル数）
+ '月':{low:88400,budget:92570,high:100900,stretch:105000,n:1},
+ '火':{low:87640,budget:91774,high:100030,stretch:100000,n:0},
+ '水':{low:93230,budget:97160,high:105020,stretch:105000,n:4},
+ '木':{low:93250,budget:97645,high:106430,stretch:110000,n:0},
+ '金':{low:97950,budget:102562,high:111790,stretch:115000,n:0},
+ '土':{low:87740,budget:92750,high:102770,stretch:105000,n:3},
+ '日':{low:93830,budget:95240,high:98050,stretch:105000,n:3}};
 const ALLOC={ // 同曜日 実車率% 空車min 休憩min
  '月':{occ:53.3,kusha:476,rest:161},'火':{occ:53.5,kusha:466,rest:164},
  '水':{occ:55.0,kusha:461,rest:160},'木':{occ:54.7,kusha:463,rest:158},
@@ -287,7 +294,8 @@ function renderDay(key){
   if(!day)return;
   document.getElementById('report').style.display='block';
   const dow=day.dow, vt=vtype(day), items=detailByDate[key]||[], rests=restByDate[key]||[];
-  const B=BUDGET[dow]||BUDGET['月'];
+  // 車種別の予算ライン（プレタクは専用ライン。黒は青と実質同等のため青ラインを使用）
+  const B=(vt==='プレタク')?(BUDGET_P[dow]||BUDGET[dow]):(BUDGET[dow]||BUDGET['月']);
   // ── お化け抜き地力 ──
   const obakeItems=items.filter(r=>r.fare>=OBAKE);
   const obakeSum=obakeItems.reduce((a,r)=>a+r.fare,0);
@@ -350,7 +358,10 @@ function renderRevenue(day,vt,B,jiriki,obakeItems,thxItems){
     <div class="kbox"><div class="kl">対 予算ライン</div><div class="kv ${rev>=B.budget?'up':'down'}">${rev>=B.budget?'+':''}${yen(rev-B.budget)}</div><div class="ks">予算 ${yen(B.budget)}</div></div>
     <div class="kbox"><div class="kl">お化け抜き地力</div><div class="kv ${jiriki>=B.low?'':'down'}">${yen(jiriki)}</div><div class="ks">${jiriki>=B.budget?'予算クリア':jiriki>=B.low?'最低ライン上':'最低ライン割れ'}</div></div>`;
   let note='';
-  if(vt==='プレタク'){const bp=BUDGET_P[day.dow];note+=`<div class="note warn">★今日はプレタク。${bp?day.dow+'曜のプレタク実績は約'+yen(bp)+'(参考値・サンプル薄)。':'この曜日のプレタク実績データは僅少。'}青基準の予算超過は車両要因の可能性。割り引いて評価。</div>`;}
+  if(vt==='プレタク'){const bp=BUDGET_P[day.dow];
+    const nn=bp?bp.n:0;
+    let src = nn>=3 ? `${day.dow}曜のプレタク実績${nn}日から算出` : (nn>=1 ? `${day.dow}曜の実績${nn}日のみの参考値` : `${day.dow}曜のプレタク実績が無く、青ライン×1.053で推定`);
+    note+=`<div class="note warn">★今日はプレタク。表示中の予算ラインは<b>プレタク専用</b>（${src}）。プレタクは日曜に青より約2割高く出るなど性質が異なるため、青基準では評価しません。${nn<3?'サンプルが薄いため参考程度に。':''}</div>`;}
   if(obakeItems.length)note+=`<div class="note ${jiriki>=B.low?'good':'bad'}">お化け${obakeItems.length}本が無い世界線：地力${yen(jiriki)}。最低ライン${yen(B.low)}を${jiriki>=B.low?'クリア（お化けに頼らず成立）':yen(B.low-jiriki)+'下回る（この差を空車ロス短縮で埋めたい）'}。</div>`;
   if(dispEv)note+=`<div class="note">参考：${day.dow}曜の配車期待値 約${yen(dispEv.ev)}（${dispEv.p}）。事前の心づもりライン。</div>`;
   document.getElementById('revnote').innerHTML=note;
