@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-19T10:57:16.975007+09:00",
+  "fetched_at": "2026-07-19T14:20:36.897045+09:00",
   "date": "20260719",
-  "count": 14,
+  "count": 15,
   "events": [
     {
       "id": 397351,
@@ -76,7 +76,7 @@
       "started_at": "2026-07-19T18:00:00+09:00",
       "ended_at": "2026-07-19T20:00:00+09:00",
       "published_at": "2026-07-11T20:07:50+09:00",
-      "limit": 8,
+      "limit": 10,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -92,9 +92,9 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 7,
+      "accepted": 8,
       "waiting": 0,
-      "updated_at": "2026-07-11T20:07:50+09:00"
+      "updated_at": "2026-07-19T13:31:05+09:00"
     },
     {
       "id": 397331,
@@ -109,7 +109,7 @@
       "published_at": "2026-06-14T19:03:03+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都中野区中野2-12(０３号室)",
       "place": "コミノバ中野駅前",
@@ -135,7 +135,7 @@
       "published_at": "2026-06-16T11:57:41+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16952,
         "subdomain": "white-hackers-lab",
@@ -154,37 +154,6 @@
       "updated_at": "2026-06-16T11:57:41+09:00"
     },
     {
-      "id": 397744,
-      "title": "Observability & AIOps Immersion Day",
-      "catch": "",
-      "description": "<h1>Observability &amp; AIOps Immersion Day - Tokyo 2026</h1>\n<blockquote>\n<p>📆 <strong>日期</strong>：2026 年7月19日（下午）\n📍 <strong>地点</strong>：东京（AWS Office / Partner Office）\n🎯 <strong>受众</strong>：在日华人开发者社区\n⏱️ <strong>时长</strong>：13:30 - 17:30，共 4 小时\n🏛️ <strong>场地</strong>：主会场 +分会场</p>\n</blockquote>\n<hr>\n<h2>主题</h2>\n<p><strong>CloudWatch — End-to-End Observability by AI and for AI</strong></p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>🤖 <strong>By AI</strong></td>\n<td>用 AI 构建和运营可观测性体系，包括 DevOps Agent 与 AIOps。</td>\n</tr>\n<tr>\n<td>🔭 <strong>For AI</strong></td>\n<td>为 GenAI / Agent 应用提供可观测性，包括 AgentCore Observability 与评估体系。</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>场地设置</h2>\n<table>\n<thead>\n<tr>\n<th>场地</th>\n<th>用途</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>主会场</strong></td>\n<td>开场、主题演讲、Partner Session、Closing；Workshop 时段继续安排并行内容</td>\n</tr>\n<tr>\n<td><strong>分会场 A</strong></td>\n<td>仅在 Workshop 时段开放，各承载 1 小时 Builder Session / Hands-on Workshop</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>议程总览</h2>\n<h3>主会场</h3>\n<table>\n<thead>\n<tr>\n<th>时间</th>\n<th>模块</th>\n<th>类型</th>\n<th>讲师</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:30 - 13:40</td>\n<td>开场 &amp; 活动介绍</td>\n<td>Opening</td>\n<td>Mc Xiaofei Li</td>\n</tr>\n<tr>\n<td>13:40 - 14:10</td>\n<td>What's New in CloudWatch</td>\n<td>演讲</td>\n<td>Betty Zheng （AWS）</td>\n</tr>\n<tr>\n<td>14:10 - 14:40</td>\n<td>AI Agent 与传统应用的统一可观测 — 从 Session、Trace 到 Anomaly</td>\n<td>演讲</td>\n<td>Shanna Chang （AWS）</td>\n</tr>\n<tr>\n<td>14:40 - 15:10</td>\n<td>GenAI Observability on AgentCore</td>\n<td>演讲 + Demo</td>\n<td>Miki Tsuwazaki （AWS）</td>\n</tr>\n<tr>\n<td>15:10 - 15:40</td>\n<td>Partner Talk: TrueWatch — AIOps 实践</td>\n<td>演讲</td>\n<td>TrueWatch SA</td>\n</tr>\n<tr>\n<td>15:40 - 15:50</td>\n<td>茶歇 &amp; 分会场入场</td>\n<td>Break</td>\n<td>All</td>\n</tr>\n<tr>\n<td>15:50 - 16:15</td>\n<td>Partner Talk: NebulaGraph — 从信号到认知：基于图与本体构建智能运维</td>\n<td>演讲</td>\n<td>NebulaGraph Speaker</td>\n</tr>\n<tr>\n<td>16:15 - 16:40</td>\n<td>DevOps Agent — AI 驱动的运维自动化</td>\n<td>演讲 + Demo</td>\n<td>Yagr Xu （AWS）</td>\n</tr>\n<tr>\n<td>16:40 - 17:05</td>\n<td>Litefuse - Agent 可观测与评估优化平台</td>\n<td>演讲</td>\n<td>VeloDB/Apache Doris Ambrose Niu</td>\n</tr>\n<tr>\n<td>17:05 - 17:30</td>\n<td>MC 圆桌问答 · 总结 &amp; Closing</td>\n<td>Closing</td>\n<td>MC</td>\n</tr>\n</tbody>\n</table>\n<h3>分会场 Workshop（与主会场后半段并行）</h3>\n<table>\n<thead>\n<tr>\n<th>时间</th>\n<th>分会场 A</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>15:40 - 15:50</td>\n<td>入场 &amp; 环境准备（与茶歇并行）</td>\n</tr>\n<tr>\n<td>15:50 - 16:50</td>\n<td>Builder Session: 观测云（TrueWatch）AIOps 实战</td>\n</tr>\n<tr>\n<td>16:50 - 17:20</td>\n<td>自由练习、问题排查 &amp; Q&amp;A</td>\n</tr>\n<tr>\n<td>17:20 - 17:30</td>\n<td>返回主会场或分会场收尾</td>\n</tr>\n</tbody>\n</table>\n<h2>🧡 欢迎谁来参加？</h2>\n<ul>\n<li>在日本工作的中文技术人员</li>\n<li>关注 AWS 技术生态的开发者</li>\n<li>想了解 AWS 开发者关系/布道师工作的你</li>\n<li>以及任何想聊聊 AI 与云计算的你！</li>\n</ul>\n<hr>\n<p>来吧，带上你的问题和热情，和 AWS 的老师们、布道师们、开发者朋友们一起，<strong>聊聊 AI，聊聊云，聊聊未来</strong>！🌥️🤖☕</p>\n<hr>\n<p>有任何问题，欢迎留言或私信我们。期待你的加入</p>",
-      "url": "https://cnug.connpass.com/event/397744/",
-      "image_url": "https://media.connpass.com/thumbs/3d/34/3d340d73324beed9db2056de08944989.png",
-      "hash_tag": "",
-      "started_at": "2026-07-19T13:00:00+09:00",
-      "ended_at": "2026-07-19T17:30:00+09:00",
-      "published_at": "2026-06-18T12:28:33+09:00",
-      "limit": 102,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16333,
-        "subdomain": "cnug",
-        "title": "亚马逊云科技UserGroup-Tokyo",
-        "url": "https://cnug.connpass.com/"
-      },
-      "address": "麻布台ヒルズ 森JPタワー",
-      "place": "AWS麻布台ヒルズ",
-      "lat": "35.661215500000",
-      "lon": "139.740616000000",
-      "owner_id": 858655,
-      "owner_nickname": "XiaofeiLi",
-      "owner_display_name": "Xiaofei Li",
-      "accepted": 102,
-      "waiting": 0,
-      "updated_at": "2026-07-18T19:22:51+09:00"
-    },
-    {
       "id": 398117,
       "title": "宇宙サイバーセキュリティ講座　オフ会",
       "catch": "",
@@ -197,7 +166,7 @@
       "published_at": "2026-06-21T22:40:18+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16921,
         "subdomain": "aerospace",
@@ -228,7 +197,7 @@
       "published_at": "2026-06-23T12:53:37+09:00",
       "limit": 125,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13549,
         "subdomain": "ishikai",
@@ -242,9 +211,40 @@
       "owner_id": 126917,
       "owner_nickname": "noritsuna_i",
       "owner_display_name": "Noritsuna Imamura",
-      "accepted": 21,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-07-19T05:35:10+09:00"
+    },
+    {
+      "id": 397744,
+      "title": "Observability & AIOps Immersion Day",
+      "catch": "",
+      "description": "<h1>Observability &amp; AIOps Immersion Day - Tokyo 2026</h1>\n<blockquote>\n<p>📆 <strong>日期</strong>：2026 年7月19日（下午）\n📍 <strong>地点</strong>：东京（AWS Office / Partner Office）\n🎯 <strong>受众</strong>：在日华人开发者社区\n⏱️ <strong>时长</strong>：13:30 - 17:30，共 4 小时\n🏛️ <strong>场地</strong>：主会场 +分会场</p>\n</blockquote>\n<hr>\n<h2>主题</h2>\n<p><strong>CloudWatch — End-to-End Observability by AI and for AI</strong></p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>🤖 <strong>By AI</strong></td>\n<td>用 AI 构建和运营可观测性体系，包括 DevOps Agent 与 AIOps。</td>\n</tr>\n<tr>\n<td>🔭 <strong>For AI</strong></td>\n<td>为 GenAI / Agent 应用提供可观测性，包括 AgentCore Observability 与评估体系。</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>场地设置</h2>\n<table>\n<thead>\n<tr>\n<th>场地</th>\n<th>用途</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>主会场</strong></td>\n<td>开场、主题演讲、Partner Session、Closing；Workshop 时段继续安排并行内容</td>\n</tr>\n<tr>\n<td><strong>分会场 A</strong></td>\n<td>仅在 Workshop 时段开放，各承载 1 小时 Builder Session / Hands-on Workshop</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>议程总览</h2>\n<h3>主会场</h3>\n<table>\n<thead>\n<tr>\n<th>时间</th>\n<th>模块</th>\n<th>类型</th>\n<th>讲师</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:30 - 13:40</td>\n<td>开场 &amp; 活动介绍</td>\n<td>Opening</td>\n<td>Mc Xiaofei Li</td>\n</tr>\n<tr>\n<td>13:40 - 14:10</td>\n<td>What's New in CloudWatch</td>\n<td>演讲</td>\n<td>Betty Zheng （AWS）</td>\n</tr>\n<tr>\n<td>14:10 - 14:40</td>\n<td>AI Agent 与传统应用的统一可观测 — 从 Session、Trace 到 Anomaly</td>\n<td>演讲</td>\n<td>Shanna Chang （AWS）</td>\n</tr>\n<tr>\n<td>14:40 - 15:10</td>\n<td>GenAI Observability on AgentCore</td>\n<td>演讲 + Demo</td>\n<td>Miki Tsuwazaki （AWS）</td>\n</tr>\n<tr>\n<td>15:10 - 15:40</td>\n<td>Partner Talk: TrueWatch — AIOps 实践</td>\n<td>演讲</td>\n<td>TrueWatch SA</td>\n</tr>\n<tr>\n<td>15:40 - 15:50</td>\n<td>茶歇 &amp; 分会场入场</td>\n<td>Break</td>\n<td>All</td>\n</tr>\n<tr>\n<td>15:50 - 16:15</td>\n<td>Partner Talk: NebulaGraph — 从信号到认知：基于图与本体构建智能运维</td>\n<td>演讲</td>\n<td>NebulaGraph Speaker</td>\n</tr>\n<tr>\n<td>16:15 - 16:40</td>\n<td>DevOps Agent — AI 驱动的运维自动化</td>\n<td>演讲 + Demo</td>\n<td>Yagr Xu （AWS）</td>\n</tr>\n<tr>\n<td>16:40 - 17:05</td>\n<td>Litefuse - Agent 可观测与评估优化平台</td>\n<td>演讲</td>\n<td>VeloDB/Apache Doris Ambrose Niu</td>\n</tr>\n<tr>\n<td>17:05 - 17:30</td>\n<td>MC 圆桌问答 · 总结 &amp; Closing</td>\n<td>Closing</td>\n<td>MC</td>\n</tr>\n</tbody>\n</table>\n<h3>分会场 Workshop（与主会场后半段并行）</h3>\n<table>\n<thead>\n<tr>\n<th>时间</th>\n<th>分会场 A</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>15:40 - 15:50</td>\n<td>入场 &amp; 环境准备（与茶歇并行）</td>\n</tr>\n<tr>\n<td>15:50 - 16:50</td>\n<td>Builder Session: 观测云（TrueWatch）AIOps 实战</td>\n</tr>\n<tr>\n<td>16:50 - 17:20</td>\n<td>自由练习、问题排查 &amp; Q&amp;A</td>\n</tr>\n<tr>\n<td>17:20 - 17:30</td>\n<td>返回主会场或分会场收尾</td>\n</tr>\n</tbody>\n</table>\n<h2>🧡 欢迎谁来参加？</h2>\n<ul>\n<li>在日本工作的中文技术人员</li>\n<li>关注 AWS 技术生态的开发者</li>\n<li>想了解 AWS 开发者关系/布道师工作的你</li>\n<li>以及任何想聊聊 AI 与云计算的你！</li>\n</ul>\n<hr>\n<p>来吧，带上你的问题和热情，和 AWS 的老师们、布道师们、开发者朋友们一起，<strong>聊聊 AI，聊聊云，聊聊未来</strong>！🌥️🤖☕</p>\n<hr>\n<p>有任何问题，欢迎留言或私信我们。期待你的加入</p>",
+      "url": "https://cnug.connpass.com/event/397744/",
+      "image_url": "https://media.connpass.com/thumbs/3d/34/3d340d73324beed9db2056de08944989.png",
+      "hash_tag": "",
+      "started_at": "2026-07-19T13:00:00+09:00",
+      "ended_at": "2026-07-19T17:30:00+09:00",
+      "published_at": "2026-06-18T12:28:33+09:00",
+      "limit": 102,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 16333,
+        "subdomain": "cnug",
+        "title": "亚马逊云科技UserGroup-Tokyo",
+        "url": "https://cnug.connpass.com/"
+      },
+      "address": "麻布台ヒルズ 森JPタワー",
+      "place": "AWS麻布台ヒルズ",
+      "lat": "35.661215500000",
+      "lon": "139.740616000000",
+      "owner_id": 858655,
+      "owner_nickname": "XiaofeiLi",
+      "owner_display_name": "Xiaofei Li",
+      "accepted": 100,
+      "waiting": 0,
+      "updated_at": "2026-07-18T19:22:51+09:00"
     },
     {
       "id": 400322,
@@ -257,9 +257,9 @@
       "started_at": "2026-07-19T13:00:00+09:00",
       "ended_at": "2026-07-19T17:00:00+09:00",
       "published_at": "2026-07-11T16:57:04+09:00",
-      "limit": 14,
+      "limit": 16,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -273,9 +273,9 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 12,
+      "accepted": 14,
       "waiting": 0,
-      "updated_at": "2026-07-19T08:36:28+09:00"
+      "updated_at": "2026-07-19T12:28:46+09:00"
     },
     {
       "id": 400337,
@@ -290,7 +290,7 @@
       "published_at": "2026-07-11T17:46:42+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "〒103-0013 東京都中央区日本橋人形町２丁目３２−４人形町ロータリービル3階",
       "place": "株式会社チオン",
@@ -347,7 +347,7 @@
       "published_at": "2026-06-29T17:05:09+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15409,
         "subdomain": "coderdojo-hino",
@@ -378,7 +378,7 @@
       "published_at": "2026-07-18T08:53:06+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 966,
         "subdomain": "devmorning",
@@ -409,7 +409,7 @@
       "published_at": "2026-07-07T10:18:53+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 6408,
         "subdomain": "geekfeed",
@@ -426,6 +426,37 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-07-07T10:18:53+09:00"
+    },
+    {
+      "id": 398091,
+      "title": "第94回CoderDojoあざみ野",
+      "catch": "7〜17歳の子どもを対象にした無償のプログラミングクラブ",
+      "description": "<h2>CoderDojoとは</h2>\n<p>CoderDojoは7〜17歳の子どもを対象にしたプログラミング道場（クラブ）です。2011年にアイルランドで始まり、世界では117カ国・2,416のDojo（<a href=\"https://codeclub.org/en/coderdojo-community\" rel=\"nofollow\">CoderDojo</a>より、2022/3時点）、日本では全国に239以上のDojoがあります（<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">CoderDojo Japan</a>より、2022/3時点）。</p>\n<p>お申込みの前に<a href=\"https://coderdojo-azamino.connpass.com/\" rel=\"nofollow\">CoderDojoあざみ野グループページ</a>をご確認いただき、以下を含むCoderDojoの趣旨をご理解ください。</p>\n<ul>\n<li>Dojoは無償のボランティアにより運営されており参加費は無料です</li>\n<li>トレーナーが教える「教室」ではなく、子どもたちが自発的に活動する「クラブ」です（プログラミングを楽しみ、わからないことは他のニンジャやメンターに相談して一緒に考えてもらうことができます）</li>\n</ul>\n<h2>参加対象</h2>\n<h3>ニンジャ(参加する子ども)</h3>\n<ul>\n<li>小学生〜高校生<ul>\n<li>小学生には保護者の同伴をお願いします</li>\n</ul>\n</li>\n<li>保護者の方にサポートいただくことを前提に、未就学児も参加可能です</li>\n</ul>\n<p>募集開始時の定員はチャンピオン1人でも対応できる人数で設定していますが、ご応募・ご協力いただけるメンター数に応じて部屋の定員を上限に募集人数を調整することがあります。</p>\n<h3>メンター(指南役)／ボランティア</h3>\n<ul>\n<li>メンター: 主役であるニンジャたちのプログラミングをサポートいただける誰でも（トレーナーではありません）</li>\n<li>ボランティア: 会場設営や受付、写真撮影などのイベント運営をサポートいただける誰でも</li>\n</ul>\n<h2>持ちもの</h2>\n<ol>\n<li>\n<p>ノートPCやタブレット</p>\n<ul>\n<li>インターネット接続する場合、Wi-Fi接続可能なものをご用意ください</li>\n<li>プログラミングの自由度が高いノートPCがお勧めです（タブレットでも参加いただけます）</li>\n<li>会場に貸し出し用のノートPCやタブレットのご用意はありません</li>\n<li>複数のお子さんをお連れの場合、それぞれにご用意いただくことをお勧めします</li>\n</ul>\n</li>\n<li>\n<p>プログラミングの参考書籍（オプション）</p>\n<ul>\n<li>お手元に書籍等がありましたらお持ちください</li>\n</ul>\n</li>\n<li>\n<p>micro:bitなどの物理コンピューティングデバイスやロボットなど（オプション）</p>\n<ul>\n<li>ニンジャが当日取り組む内容に応じて、本体やUSBケーブル、電源などをお持ちください</li>\n</ul>\n</li>\n</ol>\n<h3>運営側で用意するもの</h3>\n<ol>\n<li>会場（場所、机、椅子）</li>\n<li>Wi-Fiによるインターネット接続（施設提供の<a href=\"https://www.women.city.yokohama.jp/a/23791/\" rel=\"nofollow\">利用案内</a>をご確認ください）</li>\n<li>プロジェクターとHDMIケーブル（ガイダンスや発表時に使用）</li>\n<li>ニンジャ用名札シールとペン</li>\n<li>初心者の導入用にScratchなどの参考資料（ネコ歩きやネコ逃げ、コーディングカード相当のものなど）</li>\n</ol>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">13:00-13:30</td>\n<td style=\"text-align: left;\">会場準備</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:30-13:45</td>\n<td style=\"text-align: left;\">メンター／ボランティア集合</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:45-14:00</td>\n<td style=\"text-align: left;\">ニンジャ集合・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:00-14:15</td>\n<td style=\"text-align: left;\">ガイダンス（CoderDojoについて、メンターネタなど）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:15-15:30</td>\n<td style=\"text-align: left;\">プログラミング！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:30-15:50</td>\n<td style=\"text-align: left;\">発表</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50-16:00</td>\n<td style=\"text-align: left;\">片付け</td>\n</tr>\n</tbody>\n</table>\n<h2>活動内容</h2>\n<p>今回のDojoでは主に以下のようなものに取り組むことを想定しています。Dojoの醍醐味は発表です。みんなの前に立って自分がやったことを自慢しましょう。完成していなくても大丈夫です。</p>\n<h3><a href=\"https://scratch.mit.edu/\" rel=\"nofollow\">Scratch</a></h3>\n<p>ゲームやアニメーションを作成したい方はScratch（スクラッチ）に取り組みましょう。初めての方はオンラインのアカウントを作成して、書籍などの教材を参考にして取り組んでいくことをおすすめします。既に作品を作っている方は、各自の作りたいモノをどんどん作っていきましょう。分からないことや知りたいことはメンターに相談できます。</p>\n<p>通常のオンライン版Scratchをお勧めしますが、一旦インストールしたらその後インターネット接続が不要な<a href=\"https://scratch.mit.edu/download\" rel=\"nofollow\">Scratchデスクトップ版</a>もあります。必要に応じて事前にインストールしておいてください。</p>\n<h3><a href=\"https://hourofcode.com/jp\" rel=\"nofollow\">Hour of Code</a></h3>\n<p>プログラミングが初めての方は、Hour of Code（アワーオブコード）から始めることをおすすめします。課題形式でプログラミングを学習するので、ブロックを組み合わせてプログラムすることに慣れることができます。学習履歴を残せるので、事前に自宅で<a href=\"https://studio.code.org/users/sign_up\" rel=\"nofollow\">アカウント作成</a>しておくことをおすすめします。</p>\n<h3><a href=\"https://microbit.org/\" rel=\"nofollow\">micro:bit</a></h3>\n<p>micro:bit（マイクロビット）はイギリスのBBCが主体となって作った教育向けのマイコンボードです。25個のLED、2個のボタンスイッチのほか、加速度センサーや磁力センサー、無線通信機能がついていて、ブロック型エディターやPythonでプログラムして操作できます。micro:bit本体やUSBケーブル（Type A - Micro-Bタイプ）、電源などは各自でお持ちください。</p>\n<h3>それ以外の何でもOK</h3>\n<p>その他にやりたいことがある方もご参加いただけます。自分の興味をもって取り組んでいることをみんなに聞いてもらったり、一緒に取り組む仲間を見つけましょう！</p>\n<p>最近はDojoで<a href=\"https://www.minecraft.net/ja-jp\" rel=\"nofollow\">Minecraft</a>（有料）に取り組むニンジャを多く見かけます。</p>\n<h2>その他の注意事項</h2>\n<h3>保護者のサポート</h3>\n<p>通常は子どもたちの自主性を尊重して何でもやらせてあげるようにしてください。ノートPCやタブレットの基本的な操作は子どもたちが大人になるまでにいつか身に着けるべき大事なスキルです。不慣れで手助けが必要な時には、代わりに操作してあげるのではなく、なるべく操作の仕方を教えて次から自分でできるようにするのがよいでしょう。子どもたちが自らやりたいと思うことは覚えが速いです。子どもたちが自立して楽しいプログラミング体験となるようご協力をお願いします。</p>\n<h3>撮影について</h3>\n<p>Dojoの主催者として、当日の雰囲気をFacebookやX(Twitter)などで紹介するため写真や動画の撮影を行います。あらかじめご了承ください。参加者による撮影は、他の方のプライバシーに十分配慮して、個人利用の範囲にとどめるようお願いします。</p>\n<h3>スリーストライクルール</h3>\n<p>参加を申し込んだのに当日参加しない方がいると、参加したいのに参加枠が埋まっていて参加できない方へご迷惑になります。参加申し込み後参加できなくなった場合には速やかにconnpass上でキャンセルしていただくようお願いします。また、connpassでキャンセルできない場合はご連絡をお願いします。連絡なしに当日参加しない方(No Show)の記録は残しております。3回までは静観しますが、それ以降のお申し込みは事前告知なくキャンセルさせて頂きますのでご注意ください。</p>\n<h3>メンター／ボランティア募集</h3>\n<p>メンターやボランティアのサポートにより、ニンジャにとってDojoに来て何かすることが魅力ある体験になります。</p>\n<p>サポートいただくのに必ずしもプログラミングのスキルが必要というわけではありません。子どもたちの相談に乗って一緒に考えていただける方にお手伝いいただければと思います。ニンジャに技術や創造性のひらめきを与えてくれるようなメンターや、女子のニンジャにロールモデルを見せてくれる女性メンター、ニンジャの付き添いのついでに他のニンジャもサポートしてくれる保護者の方を歓迎します。何か技術ネタやご自分のSTEMの知識や経験をニンジャと共有いただけるという方はお声がけください。</p>\n<p><a href=\"https://coderdojo.jp/kata\" rel=\"nofollow\">CoderDojo Japan Kata</a>の「運営者向け資料」以下にメンターの役割を説明したよい資料がいくつもありますので、いくつか目を通すとCoderDojoの雰囲気がつかめるかと思います。</p>",
+      "url": "https://coderdojo-azamino.connpass.com/event/398091/",
+      "image_url": "https://media.connpass.com/thumbs/38/9b/389ba2f3d2729aefda8ceaf8c25f1279.png",
+      "hash_tag": "CoderDojo",
+      "started_at": "2026-07-19T14:00:00+09:00",
+      "ended_at": "2026-07-19T16:00:00+09:00",
+      "published_at": "2026-06-21T17:02:56+09:00",
+      "limit": 7,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 6773,
+        "subdomain": "coderdojo-azamino",
+        "title": "CoderDojoあざみ野(横浜青葉)",
+        "url": "https://coderdojo-azamino.connpass.com/"
+      },
+      "address": "横浜市青葉区あざみ野南1-17-3",
+      "place": "アートフォーラムあざみ野 3F 会議室3",
+      "lat": "35.564956400000",
+      "lon": "139.553984800000",
+      "owner_id": 617094,
+      "owner_nickname": "kojimah",
+      "owner_display_name": "kojimah",
+      "accepted": 1,
+      "waiting": 0,
+      "updated_at": "2026-07-11T01:37:37+09:00"
     }
   ]
 }
