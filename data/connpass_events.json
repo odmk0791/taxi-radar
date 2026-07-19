@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-20T00:50:19.849321+09:00",
+  "fetched_at": "2026-07-20T01:48:45.322674+09:00",
   "date": "20260720",
   "count": 8,
   "events": [
@@ -123,7 +123,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 12,
+      "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-06-24T01:51:25+09:00"
     },
@@ -154,7 +154,7 @@
       "owner_id": 123017,
       "owner_nickname": "iwski",
       "owner_display_name": "岩崎",
-      "accepted": 17,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-07-08T13:04:19+09:00"
     },
