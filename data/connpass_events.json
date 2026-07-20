@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-20T11:13:35.271994+09:00",
+  "fetched_at": "2026-07-20T15:08:39.282926+09:00",
   "date": "20260720",
   "count": 8,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-01T12:28:45+09:00",
       "limit": 36,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15267,
         "subdomain": "jawsug-cloudgirl",
@@ -32,7 +32,7 @@
       "owner_display_name": "Kanako Kodera",
       "accepted": 25,
       "waiting": 0,
-      "updated_at": "2026-07-17T18:15:41+09:00"
+      "updated_at": "2026-07-20T13:53:08+09:00"
     },
     {
       "id": 396593,
@@ -47,7 +47,7 @@
       "published_at": "2026-06-07T13:01:28+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6999,
         "subdomain": "coderdojo-machida",
@@ -78,7 +78,7 @@
       "published_at": "2026-07-17T21:05:43+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -109,7 +109,7 @@
       "published_at": "2026-06-24T01:51:25+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -154,7 +154,7 @@
       "owner_id": 123017,
       "owner_nickname": "iwski",
       "owner_display_name": "岩崎",
-      "accepted": 21,
+      "accepted": 22,
       "waiting": 0,
       "updated_at": "2026-07-08T13:04:19+09:00"
     },
@@ -171,7 +171,7 @@
       "published_at": "2026-06-27T09:30:00+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15319,
         "subdomain": "coderdojo-harumi",
