@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-20T08:50:45.982230+09:00",
+  "fetched_at": "2026-07-20T11:13:35.271994+09:00",
   "date": "20260720",
   "count": 8,
   "events": [
@@ -140,7 +140,7 @@
       "published_at": "2026-07-08T13:04:19+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -154,7 +154,7 @@
       "owner_id": 123017,
       "owner_nickname": "iwski",
       "owner_display_name": "岩崎",
-      "accepted": 20,
+      "accepted": 21,
       "waiting": 0,
       "updated_at": "2026-07-08T13:04:19+09:00"
     },
@@ -171,7 +171,7 @@
       "published_at": "2026-06-27T09:30:00+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15319,
         "subdomain": "coderdojo-harumi",
@@ -202,7 +202,7 @@
       "published_at": "2026-06-20T15:23:41+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16888,
         "subdomain": "se-koryu-kai",
@@ -233,7 +233,7 @@
       "published_at": "2026-07-13T21:02:06+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15927,
         "subdomain": "it-promort",
