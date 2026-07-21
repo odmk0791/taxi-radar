@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-21T10:56:17.057636+09:00",
+  "fetched_at": "2026-07-21T14:17:19.814793+09:00",
   "date": "20260721",
   "count": 16,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 351724,
       "owner_nickname": "OPTiM",
       "owner_display_name": "株式会社オプティム",
-      "accepted": 12,
+      "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-07-21T07:23:11+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 8,
       "owner_nickname": "haru860",
       "owner_display_name": "佐藤 治夫",
-      "accepted": 97,
+      "accepted": 100,
       "waiting": 0,
       "updated_at": "2026-06-30T16:54:06+09:00"
     },
@@ -216,37 +216,6 @@
       "updated_at": "2026-07-08T15:48:51+09:00"
     },
     {
-      "id": 397434,
-      "title": "「金融機能を組み込む」だけでは終わらない — AIエージェント時代の新規事業と業務自動化",
-      "catch": "Agentic APIが切り拓く事業会社の次の一手",
-      "description": "<h2>「金融機能を組み込む」だけでは終わらない  — AIエージェント時代の新規事業と業務自動化 Agentic APIが切り拓く事業会社の次の一手</h2>\n<p>GMOあおぞらネット銀行株式会社（以下、当社）は、AIエージェントが銀行機能に直接アクセスし、かつ安全に利用できる新たな金融API群「Agentic API」を、より多くの方に障壁なくご利用いただけるよう、2026年7月21日（火）19時より、事業会社さま向けに「Agentic API」に関するセミナー＆パネルディスカッション（リアルイベント）を開催いたします。当イベントは、より多くの方に金融機能を自社のサービスに組み込んだり、新規ビジネスの企画立案や自社システムの自動化につなげたりしていただくきっかけとして、また来場者の皆さまとの直接のコミュニケーションを通じてAgentic APIに対するご期待やご要望をヒアリングさせていただく場として開催いたします。</p>\n<h3>「Agentic API」とは</h3>\n<p>「Agentic API」は、AIエージェントが取引主体として金融サービスを利用することを想定して設計された、次世代の金融API群です。従来の人手による操作を前提としたAPIとは異なり、AIエージェントが自律的かつ安全に金融操作を実行できる環境の提供を目指します。</p>\n<h2>重要-参加方法について</h2>\n<p>本ページよりお申し込みいただき、下記、【受付フロー】のご確認をお願いします。<br>\n<strong>【受付フロー】</strong><br>\nイベント当日は渋谷フクラス8Fの受付にてconnpassの受付票のご提示をお願いいたします。<br>\n<strong><span style=\"color: red;\">受付時間　18：30開始　（最終受付　19：15）</span></strong><br>\n※セキュリティの都合上、19：15以降の入場は出来かねます。<br>\n※お時間に余裕を持ってお越しいただきますようお願いいたします。<br>\n会場：渋谷　GMO Yours・フクラス（JR渋谷駅南改札西口より徒歩約1分）<br>\nアクセス：<a href=\"https://www.gmo.jp/company-profile/access-map/fukuras/\" rel=\"nofollow\">https://www.gmo.jp/company-profile/access-map/fukuras/</a></p>\n<h2>イベント詳細</h2>\n<p>当イベントでは、BaaS（Banking as a Service）による金融機能の組み込みだけにとどまらない「Agentic API」で広がる金融の可能性について、Anthropic Japan（アンソロピック ジャパン）の田村 圭氏、株式会社SCIENの田端そら氏をお招きしパネルディスカッションを実施いたします。あわせて、7月3日（金）にリリースを予定している当社のサンドボックス環境「API実験場sunabar（スナバー）2.0」（以下、sunabar2.0）に実装されるMCP(*1)サーバを活用し、AIエージェントによる残高照会・入出金明細取得・振込等の金融取引をデモンストレーションでご覧いただけるコンテンツもご用意しています。</p>\n<p>また後半は登壇者と参加者の皆さまとの交流会も予定しております。</p>\n<p>(*1) Model Context Protocol（モデル・コンテキスト・プロトコル／略称：MCP）\nAIに「外部の情報源や道具」を安全につなぐための共通ルールで、AIと社内データ・業務システム・ファイル・各種サービスを同じ作法で接続できるようにする仕組みを指します。</p>\n<h2>対象</h2>\n<p>開発者さま、パートナー企業さまほか、AIエージェントの活用や金融APIにご関心のある皆さま</p>\n<p>※当社の口座をお持ちでない方もご参加いただけます。<br>\n※他金融機関の方はご遠慮頂いております。</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>コンテンツ・セッション</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>会場受付開始（最終受付19:15）</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00-20:00</td>\n<td>「金融機能を組み込む」だけでは終わらない  — AIエージェント時代の新規事業と業務自動化 Agentic APIが切り拓く事業会社の次の一手</td>\n<td>■第一部<br>田村 圭（Anthropic シニアアカウントエグゼクティブ）<br>宇津井 悠史（当社  組込型金融事業本部 本部長）<br>司会：小野沢 宏晋（当社 執行役員/一般社団法人Fintech協会 理事）<br>■第二部<br>田端 そら（株式会社SCIEN 代表取締役）<br>白岩 良（当社  テクノロジー・エンジニアリング本部 本部長）<br>司会：矢上 聡洋（当社 執行役員 CTO）</td>\n</tr>\n<tr>\n<td>20:00-21:00</td>\n<td>交流会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>クローズ</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇者紹介</h2>\n<h3>田村 圭（Anthropic シニアアカウントエグゼクティブ）<br></h3>\n<p><img alt=\"田村 圭\" src=\"https://i.imgur.com/jhuKzfE.jpeg\"></p>\n<blockquote>\n三菱商事にて約8年間、投資業務等に従事した後、アマゾン ウェブ サービス ジャパン（AWS）に入社。公共部門にてスタートアップ支援、大学・研究機関および政府AI開発支援プログラム「GENIAC」を担当する事業開発マネージャーを歴任し、その後AI/ML・生成AI領域のGo-To-Marketスペシャリストとして企業の生成AI活用を推進。2026年3月より現職。Anthropicにて日本の企業・組織へのClaude導入と生成AI活用支援を担当する。専門は生成AIの事業開発およびエンタープライズ導入支援。</blockquote>\n\n<h3>田端そら（株式会社SCIEN 代表取締役）<br></h3>\n<p><img alt=\"田端そら\" src=\"https://i.imgur.com/jDFIYol.jpeg\"></p>\n<blockquote>\n東京大学大学院修士卒。自動運転・AIの研究に従事し、松尾研究所では自動運転スタートアップ・TIER IVとの共同研究に参画。同課程在学中の2024年に株式会社SCIENを創業。学生時代にはNHKロボコンにて準優勝し、ものづくりとAIの両面に知見を持つ。現在は製造業をはじめとする幅広い業界に向けて、自動運転関連の最先端技術を用い、PoCにとどまらず現場への実装・運用まで見据えた「SCIENCE-Ready」なAIソリューションの開発・導入を牽引している。</blockquote>\n\n<h3>小野沢 宏晋（GMOあおぞらネット銀行株式会社 執行役員/一般社団法人Fintech協会 理事）<br></h3>\n<p><img alt=\"小野沢 宏晋\" src=\"https://us06file.zoom.us/public/file/cTcffWRPRPuAbFEJhCygzg/MS4yLsATGFswtep1q6_M1AYKfQft3wLT8R1iruY243FJSmeQ/cTcffWRPRPuAbFEJhCygzg?attachType=preview&amp;subType=100x100\"></p>\n<blockquote>\n外資系ITベンダーで金融機関様担当として、営業や、サービスのご提供に従事。 「ITを提供する立場」から、 「ITを使って事業を行う立場」へ転身 2019年夏より、“テクノロジーバンク”を謳う GMOあおぞらネット銀行にJoinして挑戦中。一般社団法人Fintech協会 理事</blockquote>\n<p><br></p>\n<h3>宇津井 悠史（GMOあおぞらネット銀行株式会社 組込型金融事業本部 本部長）<br></h3>\n<p><img alt=\"宇津井 悠史\" src=\"https://s3.techplay.jp/tp-images/event/1a471cc4da830646ee89ba163c472763d8b44d33.jpg\" title=\"宇津井 悠史\"></p>\n<blockquote>\n法科大学院卒業後、GMOグループにjoin。子会社にて営業マネジメント、新規事業・部署立ち上げなどを経験し、2018年よりインターネット銀行準備室に参画。現在は、組込型金融事業と内為を中心とした決済事業を統括。\n</blockquote>\n<p><br></p>\n<h3>矢上 聡洋（GMOあおぞらネット銀行株式会社 執行役員 CTO）<br></h3>\n<p><img alt=\"矢上 聡洋\" src=\"https://us06web.zoom.us/w_p/88068774692/1fbc71fb-bd9f-4a68-a140-8b330f15798c.png\"></p>\n<blockquote>\n日本アイ・ビー・エム（株）入社後、カード・信販系のお客様担当エンジニア、SE、アーキテクトとして従事。その後、金融系チーフアーキテクト部門責任者として、金融全般のお客様におけるエンタープライズアーキテクチャ、インフラアーキテクチャ設計を推進。2019年7月よりGMOあおぞらネット銀行にて現職、sunabar開発をリード。\n</blockquote>\n<p><br></p>\n<h3>白岩 良（GMOあおぞらネット銀行株式会社 テクノロジー・エンジニアリング本部 本部長）<br></h3>\n<p><img alt=\"白岩 良\" src=\"https://i.imgur.com/zEDuNww.jpeg\"></p>\n<blockquote>\n組込系エンジニアを経てSIerで約11年システム開発に従事し、2019年に同社へ入社。勘定系を含む全てのフロント領域(インターネットバンキングやアプリ、口座開設審査、顧客管理、社内システムなど)を管掌し、要件定義からアーキテクチャ設計、外部パートナーを含む開発マネジメントまで幅広く統括する。\n</blockquote>\n<p><br></p>\n<h2>注意事項</h2>\n<p>・お申込みは先着順となります。あらかじめご了承ください。<br>\n・当社の判断において申込をキャンセルさせて頂く場合がございます。ご了承ください。<br>\n・当日予告なく時間配分・内容が変更になる可能性がございます。あらかじめご了承ください。<br></p>\n<h2>禁煙のご協力について</h2>\n<p>会場内は全面禁煙となっております。 受付の際にお渡しする入館用カードはビル外に出るときに回収いたします。一度外に出ると再入場ができません。 つきましては、イベント中の喫煙はご遠慮くださいますようお願い申し上げます。</p>\n<h2>個人情報の取り扱いについて</h2>\n<p>当社（GMOあおぞらネット銀行株式会社）の個人情報保護ポリシーに基づき適切に取り扱います。<br>\n個人情報保護ポリシー：<a href=\"https://gmo-aozora.com/policy/privacy-policy.html\" rel=\"nofollow\">https://gmo-aozora.com/policy/privacy-policy.html</a></p>\n<h2>主催・協力</h2>\n<p>主催：GMOあおぞらネット銀行株式会社<br>\n協力：GMOインターネットグループ</p>",
-      "url": "https://gmo.connpass.com/event/397434/",
-      "image_url": "https://media.connpass.com/thumbs/c1/27/c12746ca697f1a1fdf7132dfdef1c6d4.png",
-      "hash_tag": "",
-      "started_at": "2026-07-21T19:00:00+09:00",
-      "ended_at": "2026-07-21T21:00:00+09:00",
-      "published_at": "2026-07-02T14:55:21+09:00",
-      "limit": 80,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 2748,
-        "subdomain": "gmo",
-        "title": "GMOインターネットグループ",
-        "url": "https://gmo.connpass.com/"
-      },
-      "address": "東京都渋谷区道玄坂1-2-3　渋谷フクラス",
-      "place": "GMOインターネットグループ　グループ第2本社　GMOYours・フクラス",
-      "lat": "35.657590400000",
-      "lon": "139.700151800000",
-      "owner_id": 377235,
-      "owner_nickname": "GMOAozoraNetBank",
-      "owner_display_name": "GMOAozoraNetBank",
-      "accepted": 50,
-      "waiting": 0,
-      "updated_at": "2026-07-10T17:00:35+09:00"
-    },
-    {
       "id": 395487,
       "title": "Browser and UI #4 Any",
       "catch": "フリーテーマ！",
@@ -273,9 +242,40 @@
       "owner_id": 337921,
       "owner_nickname": "ken7253_",
       "owner_display_name": "ken7253",
-      "accepted": 18,
+      "accepted": 16,
       "waiting": 0,
       "updated_at": "2026-07-16T14:42:32+09:00"
+    },
+    {
+      "id": 397434,
+      "title": "「金融機能を組み込む」だけでは終わらない — AIエージェント時代の新規事業と業務自動化",
+      "catch": "Agentic APIが切り拓く事業会社の次の一手",
+      "description": "<h2>「金融機能を組み込む」だけでは終わらない  — AIエージェント時代の新規事業と業務自動化 Agentic APIが切り拓く事業会社の次の一手</h2>\n<p>GMOあおぞらネット銀行株式会社（以下、当社）は、AIエージェントが銀行機能に直接アクセスし、かつ安全に利用できる新たな金融API群「Agentic API」を、より多くの方に障壁なくご利用いただけるよう、2026年7月21日（火）19時より、事業会社さま向けに「Agentic API」に関するセミナー＆パネルディスカッション（リアルイベント）を開催いたします。当イベントは、より多くの方に金融機能を自社のサービスに組み込んだり、新規ビジネスの企画立案や自社システムの自動化につなげたりしていただくきっかけとして、また来場者の皆さまとの直接のコミュニケーションを通じてAgentic APIに対するご期待やご要望をヒアリングさせていただく場として開催いたします。</p>\n<h3>「Agentic API」とは</h3>\n<p>「Agentic API」は、AIエージェントが取引主体として金融サービスを利用することを想定して設計された、次世代の金融API群です。従来の人手による操作を前提としたAPIとは異なり、AIエージェントが自律的かつ安全に金融操作を実行できる環境の提供を目指します。</p>\n<h2>重要-参加方法について</h2>\n<p>本ページよりお申し込みいただき、下記、【受付フロー】のご確認をお願いします。<br>\n<strong>【受付フロー】</strong><br>\nイベント当日は渋谷フクラス8Fの受付にてconnpassの受付票のご提示をお願いいたします。<br>\n<strong><span style=\"color: red;\">受付時間　18：30開始　（最終受付　19：15）</span></strong><br>\n※セキュリティの都合上、19：15以降の入場は出来かねます。<br>\n※お時間に余裕を持ってお越しいただきますようお願いいたします。<br>\n会場：渋谷　GMO Yours・フクラス（JR渋谷駅南改札西口より徒歩約1分）<br>\nアクセス：<a href=\"https://www.gmo.jp/company-profile/access-map/fukuras/\" rel=\"nofollow\">https://www.gmo.jp/company-profile/access-map/fukuras/</a></p>\n<h2>イベント詳細</h2>\n<p>当イベントでは、BaaS（Banking as a Service）による金融機能の組み込みだけにとどまらない「Agentic API」で広がる金融の可能性について、Anthropic Japan（アンソロピック ジャパン）の田村 圭氏、株式会社SCIENの田端そら氏をお招きしパネルディスカッションを実施いたします。あわせて、7月3日（金）にリリースを予定している当社のサンドボックス環境「API実験場sunabar（スナバー）2.0」（以下、sunabar2.0）に実装されるMCP(*1)サーバを活用し、AIエージェントによる残高照会・入出金明細取得・振込等の金融取引をデモンストレーションでご覧いただけるコンテンツもご用意しています。</p>\n<p>また後半は登壇者と参加者の皆さまとの交流会も予定しております。</p>\n<p>(*1) Model Context Protocol（モデル・コンテキスト・プロトコル／略称：MCP）\nAIに「外部の情報源や道具」を安全につなぐための共通ルールで、AIと社内データ・業務システム・ファイル・各種サービスを同じ作法で接続できるようにする仕組みを指します。</p>\n<h2>対象</h2>\n<p>開発者さま、パートナー企業さまほか、AIエージェントの活用や金融APIにご関心のある皆さま</p>\n<p>※当社の口座をお持ちでない方もご参加いただけます。<br>\n※他金融機関の方はご遠慮頂いております。</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>コンテンツ・セッション</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>会場受付開始（最終受付19:15）</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00-20:00</td>\n<td>「金融機能を組み込む」だけでは終わらない  — AIエージェント時代の新規事業と業務自動化 Agentic APIが切り拓く事業会社の次の一手</td>\n<td>■第一部<br>田村 圭（Anthropic シニアアカウントエグゼクティブ）<br>宇津井 悠史（当社  組込型金融事業本部 本部長）<br>司会：小野沢 宏晋（当社 執行役員/一般社団法人Fintech協会 理事）<br>■第二部<br>田端 そら（株式会社SCIEN 代表取締役）<br>白岩 良（当社  テクノロジー・エンジニアリング本部 本部長）<br>司会：矢上 聡洋（当社 執行役員 CTO）</td>\n</tr>\n<tr>\n<td>20:00-21:00</td>\n<td>交流会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>クローズ</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇者紹介</h2>\n<h3>田村 圭（Anthropic シニアアカウントエグゼクティブ）<br></h3>\n<p><img alt=\"田村 圭\" src=\"https://i.imgur.com/jhuKzfE.jpeg\"></p>\n<blockquote>\n三菱商事にて約8年間、投資業務等に従事した後、アマゾン ウェブ サービス ジャパン（AWS）に入社。公共部門にてスタートアップ支援、大学・研究機関および政府AI開発支援プログラム「GENIAC」を担当する事業開発マネージャーを歴任し、その後AI/ML・生成AI領域のGo-To-Marketスペシャリストとして企業の生成AI活用を推進。2026年3月より現職。Anthropicにて日本の企業・組織へのClaude導入と生成AI活用支援を担当する。専門は生成AIの事業開発およびエンタープライズ導入支援。</blockquote>\n\n<h3>田端そら（株式会社SCIEN 代表取締役）<br></h3>\n<p><img alt=\"田端そら\" src=\"https://i.imgur.com/jDFIYol.jpeg\"></p>\n<blockquote>\n東京大学大学院修士卒。自動運転・AIの研究に従事し、松尾研究所では自動運転スタートアップ・TIER IVとの共同研究に参画。同課程在学中の2024年に株式会社SCIENを創業。学生時代にはNHKロボコンにて準優勝し、ものづくりとAIの両面に知見を持つ。現在は製造業をはじめとする幅広い業界に向けて、自動運転関連の最先端技術を用い、PoCにとどまらず現場への実装・運用まで見据えた「SCIENCE-Ready」なAIソリューションの開発・導入を牽引している。</blockquote>\n\n<h3>小野沢 宏晋（GMOあおぞらネット銀行株式会社 執行役員/一般社団法人Fintech協会 理事）<br></h3>\n<p><img alt=\"小野沢 宏晋\" src=\"https://us06file.zoom.us/public/file/cTcffWRPRPuAbFEJhCygzg/MS4yLsATGFswtep1q6_M1AYKfQft3wLT8R1iruY243FJSmeQ/cTcffWRPRPuAbFEJhCygzg?attachType=preview&amp;subType=100x100\"></p>\n<blockquote>\n外資系ITベンダーで金融機関様担当として、営業や、サービスのご提供に従事。 「ITを提供する立場」から、 「ITを使って事業を行う立場」へ転身 2019年夏より、“テクノロジーバンク”を謳う GMOあおぞらネット銀行にJoinして挑戦中。一般社団法人Fintech協会 理事</blockquote>\n<p><br></p>\n<h3>宇津井 悠史（GMOあおぞらネット銀行株式会社 組込型金融事業本部 本部長）<br></h3>\n<p><img alt=\"宇津井 悠史\" src=\"https://s3.techplay.jp/tp-images/event/1a471cc4da830646ee89ba163c472763d8b44d33.jpg\" title=\"宇津井 悠史\"></p>\n<blockquote>\n法科大学院卒業後、GMOグループにjoin。子会社にて営業マネジメント、新規事業・部署立ち上げなどを経験し、2018年よりインターネット銀行準備室に参画。現在は、組込型金融事業と内為を中心とした決済事業を統括。\n</blockquote>\n<p><br></p>\n<h3>矢上 聡洋（GMOあおぞらネット銀行株式会社 執行役員 CTO）<br></h3>\n<p><img alt=\"矢上 聡洋\" src=\"https://us06web.zoom.us/w_p/88068774692/1fbc71fb-bd9f-4a68-a140-8b330f15798c.png\"></p>\n<blockquote>\n日本アイ・ビー・エム（株）入社後、カード・信販系のお客様担当エンジニア、SE、アーキテクトとして従事。その後、金融系チーフアーキテクト部門責任者として、金融全般のお客様におけるエンタープライズアーキテクチャ、インフラアーキテクチャ設計を推進。2019年7月よりGMOあおぞらネット銀行にて現職、sunabar開発をリード。\n</blockquote>\n<p><br></p>\n<h3>白岩 良（GMOあおぞらネット銀行株式会社 テクノロジー・エンジニアリング本部 本部長）<br></h3>\n<p><img alt=\"白岩 良\" src=\"https://i.imgur.com/zEDuNww.jpeg\"></p>\n<blockquote>\n組込系エンジニアを経てSIerで約11年システム開発に従事し、2019年に同社へ入社。勘定系を含む全てのフロント領域(インターネットバンキングやアプリ、口座開設審査、顧客管理、社内システムなど)を管掌し、要件定義からアーキテクチャ設計、外部パートナーを含む開発マネジメントまで幅広く統括する。\n</blockquote>\n<p><br></p>\n<h2>注意事項</h2>\n<p>・お申込みは先着順となります。あらかじめご了承ください。<br>\n・当社の判断において申込をキャンセルさせて頂く場合がございます。ご了承ください。<br>\n・当日予告なく時間配分・内容が変更になる可能性がございます。あらかじめご了承ください。<br></p>\n<h2>禁煙のご協力について</h2>\n<p>会場内は全面禁煙となっております。 受付の際にお渡しする入館用カードはビル外に出るときに回収いたします。一度外に出ると再入場ができません。 つきましては、イベント中の喫煙はご遠慮くださいますようお願い申し上げます。</p>\n<h2>個人情報の取り扱いについて</h2>\n<p>当社（GMOあおぞらネット銀行株式会社）の個人情報保護ポリシーに基づき適切に取り扱います。<br>\n個人情報保護ポリシー：<a href=\"https://gmo-aozora.com/policy/privacy-policy.html\" rel=\"nofollow\">https://gmo-aozora.com/policy/privacy-policy.html</a></p>\n<h2>主催・協力</h2>\n<p>主催：GMOあおぞらネット銀行株式会社<br>\n協力：GMOインターネットグループ</p>",
+      "url": "https://gmo.connpass.com/event/397434/",
+      "image_url": "https://media.connpass.com/thumbs/c1/27/c12746ca697f1a1fdf7132dfdef1c6d4.png",
+      "hash_tag": "",
+      "started_at": "2026-07-21T19:00:00+09:00",
+      "ended_at": "2026-07-21T21:00:00+09:00",
+      "published_at": "2026-07-02T14:55:21+09:00",
+      "limit": 80,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 2748,
+        "subdomain": "gmo",
+        "title": "GMOインターネットグループ",
+        "url": "https://gmo.connpass.com/"
+      },
+      "address": "東京都渋谷区道玄坂1-2-3　渋谷フクラス",
+      "place": "GMOインターネットグループ　グループ第2本社　GMOYours・フクラス",
+      "lat": "35.657590400000",
+      "lon": "139.700151800000",
+      "owner_id": 377235,
+      "owner_nickname": "GMOAozoraNetBank",
+      "owner_display_name": "GMOAozoraNetBank",
+      "accepted": 54,
+      "waiting": 0,
+      "updated_at": "2026-07-21T12:22:29+09:00"
     },
     {
       "id": 398258,
@@ -305,7 +305,7 @@
       "owner_nickname": "teppei_miki_3",
       "owner_display_name": "Teppei Miki",
       "accepted": 90,
-      "waiting": 8,
+      "waiting": 5,
       "updated_at": "2026-07-18T08:43:30+09:00"
     },
     {
@@ -335,40 +335,9 @@
       "owner_id": 614007,
       "owner_nickname": "HisayaUchida",
       "owner_display_name": "h-ucchi",
-      "accepted": 627,
+      "accepted": 647,
       "waiting": 0,
       "updated_at": "2026-07-21T10:13:33+09:00"
-    },
-    {
-      "id": 398279,
-      "title": "INTER-Mediator勉強会2026-07",
-      "catch": "オフ会＋オンライン 開催です",
-      "description": "<hr>\n<h3>少ない開発作業でやりたいことを実現できるWebアプリケーションフレームワーク、『INTER-Mediator』の定例勉強会です。</h3>\n<h4>INTER-Mediatorとは?</h4>\n<p>INTER-Mediatorで開発を行うと、スピーディにWebアプリケーションの開発を進めることができ、高いメンテナンス性を持ったシステムを構築できます。\nPHPとJavaScriptを使って開発されたWebアプリケーションフレームワークであり、MySQL、MariaDB、PostgreSQL、Microsoft SQL ServerやFileMaker Server等のデータベースに対応しています。</p>\n<ul>\n<li>INTER-Mediatorの概要を解説したムービーです。<a href=\"https://youtu.be/Dq7FK-FJOeU\" rel=\"nofollow\">https://youtu.be/Dq7FK-FJOeU</a></li>\n<li>INTER-Mediatorのさまざまな情報がつまったオフィシャルサイトです。 <a href=\"https://inter-mediator.com/\" rel=\"nofollow\">https://inter-mediator.com/</a></li>\n</ul>\n<h4>スケジュール</h4>\n<p>次のスケジュールで開催致します。プレゼンが決まりましたら、追って告知致します。</p>\n<ul>\n<li>18:10 ~ 開場・交流会</li>\n<li>18:30 ~ プレゼン （募集中）</li>\n<li>19:50 ~ クロージング</li>\n<li>20:30 ~ 有志による懇親会（有料-割り勘[4,000~5,000を目安]）</li>\n</ul>\n<h4>プレゼンタイトル一覧</h4>\n<ul>\n<li>募集中</li>\n</ul>\n<h4>備考</h4>\n<ul>\n<li>電源、Wi-Fiを用意する予定ですが、場合によっては急遽会場が変更になる可能性があります。その場合には、ネット環境についてはご自身でご用意をお願いします。</li>\n<li>ノートパソコンやタブレット端末の持参をお願いします。（会場が変更される場合には電源は取れないかもしれません）</li>\n<li>テーマに関する意見交換や交流を目的とした会であり、それ以外を主な目的とした参加は固くお断りいたします。</li>\n<li>懇親会は当日予約です。懇親会参加でエントリーされた方は、出席確認を再度行います。</li>\n<li>運営の判断で申込みをキャンセルさせて頂く場合がございます。</li>\n<li>参加者の皆さんやスピーカーが良い時間を過ごせるようにイベントを作っています。 SNSやブログ等で当イベントについて発信する際は、ハラスメントのないよう、皆さんのご協力をお願いいたします！</li>\n</ul>",
-      "url": "https://inter-mediator.connpass.com/event/398279/",
-      "image_url": "https://media.connpass.com/thumbs/e4/59/e459346334ae634604953822eeb43aee.png",
-      "hash_tag": "INTERMediator",
-      "started_at": "2026-07-21T18:30:00+09:00",
-      "ended_at": "2026-07-21T20:30:00+09:00",
-      "published_at": "2026-06-23T08:13:05+09:00",
-      "limit": 20,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 2289,
-        "subdomain": "inter-mediator",
-        "title": "INTER-Mediator",
-        "url": "https://inter-mediator.connpass.com/"
-      },
-      "address": "東京都中央区日本橋2-7-1 東京日本橋タワー 27階",
-      "place": "サイボウズ株式会社 東京オフィス",
-      "lat": "35.681861300000",
-      "lon": "139.774233700000",
-      "owner_id": 93163,
-      "owner_nickname": "INTER-Mediator",
-      "owner_display_name": "INTER-Mediator",
-      "accepted": 7,
-      "waiting": 0,
-      "updated_at": "2026-07-21T10:49:30+09:00"
     },
     {
       "id": 397051,
@@ -402,6 +371,37 @@
       "updated_at": "2026-07-20T18:40:37+09:00"
     },
     {
+      "id": 398279,
+      "title": "INTER-Mediator勉強会2026-07",
+      "catch": "オフ会＋オンライン 開催です",
+      "description": "<hr>\n<h3>少ない開発作業でやりたいことを実現できるWebアプリケーションフレームワーク、『INTER-Mediator』の定例勉強会です。</h3>\n<h4>INTER-Mediatorとは?</h4>\n<p>INTER-Mediatorで開発を行うと、スピーディにWebアプリケーションの開発を進めることができ、高いメンテナンス性を持ったシステムを構築できます。\nPHPとJavaScriptを使って開発されたWebアプリケーションフレームワークであり、MySQL、MariaDB、PostgreSQL、Microsoft SQL ServerやFileMaker Server等のデータベースに対応しています。</p>\n<ul>\n<li>INTER-Mediatorの概要を解説したムービーです。<a href=\"https://youtu.be/Dq7FK-FJOeU\" rel=\"nofollow\">https://youtu.be/Dq7FK-FJOeU</a></li>\n<li>INTER-Mediatorのさまざまな情報がつまったオフィシャルサイトです。 <a href=\"https://inter-mediator.com/\" rel=\"nofollow\">https://inter-mediator.com/</a></li>\n</ul>\n<h4>スケジュール</h4>\n<p>次のスケジュールで開催致します。プレゼンが決まりましたら、追って告知致します。</p>\n<ul>\n<li>18:10 ~ 開場・交流会</li>\n<li>18:30 ~ プレゼン （募集中）</li>\n<li>19:50 ~ クロージング</li>\n<li>20:30 ~ 有志による懇親会（有料-割り勘[4,000~5,000を目安]）</li>\n</ul>\n<h4>プレゼンタイトル一覧</h4>\n<ul>\n<li>募集中</li>\n</ul>\n<h4>備考</h4>\n<ul>\n<li>電源、Wi-Fiを用意する予定ですが、場合によっては急遽会場が変更になる可能性があります。その場合には、ネット環境についてはご自身でご用意をお願いします。</li>\n<li>ノートパソコンやタブレット端末の持参をお願いします。（会場が変更される場合には電源は取れないかもしれません）</li>\n<li>テーマに関する意見交換や交流を目的とした会であり、それ以外を主な目的とした参加は固くお断りいたします。</li>\n<li>懇親会は当日予約です。懇親会参加でエントリーされた方は、出席確認を再度行います。</li>\n<li>運営の判断で申込みをキャンセルさせて頂く場合がございます。</li>\n<li>参加者の皆さんやスピーカーが良い時間を過ごせるようにイベントを作っています。 SNSやブログ等で当イベントについて発信する際は、ハラスメントのないよう、皆さんのご協力をお願いいたします！</li>\n</ul>",
+      "url": "https://inter-mediator.connpass.com/event/398279/",
+      "image_url": "https://media.connpass.com/thumbs/e4/59/e459346334ae634604953822eeb43aee.png",
+      "hash_tag": "INTERMediator",
+      "started_at": "2026-07-21T18:30:00+09:00",
+      "ended_at": "2026-07-21T20:30:00+09:00",
+      "published_at": "2026-06-23T08:13:05+09:00",
+      "limit": 20,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 2289,
+        "subdomain": "inter-mediator",
+        "title": "INTER-Mediator",
+        "url": "https://inter-mediator.connpass.com/"
+      },
+      "address": "東京都中央区日本橋2-7-1 東京日本橋タワー 27階",
+      "place": "サイボウズ株式会社 東京オフィス",
+      "lat": "35.681861300000",
+      "lon": "139.774233700000",
+      "owner_id": 93163,
+      "owner_nickname": "INTER-Mediator",
+      "owner_display_name": "INTER-Mediator",
+      "accepted": 7,
+      "waiting": 0,
+      "updated_at": "2026-07-21T10:49:30+09:00"
+    },
+    {
       "id": 399659,
       "title": "Cyber Security Body of Knowledge: CyBOK",
       "catch": "セミナー: サイバーセキュリティ知識体系 CyBOK",
@@ -428,7 +428,7 @@
       "owner_id": 46947,
       "owner_nickname": "HironoriWashizaki",
       "owner_display_name": "HironoriWashizaki",
-      "accepted": 25,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-07-11T19:30:51+09:00"
     },
@@ -445,7 +445,7 @@
       "published_at": "2026-06-27T16:53:22+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "〒150-8510 東京都渋谷区渋谷２丁目２１−１ 渋谷ヒカリエ 11F(オンライン)",
       "place": "渋谷ヒカリエ会議室",
@@ -471,7 +471,7 @@
       "published_at": "2026-06-26T14:31:14+09:00",
       "limit": 100,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6636,
         "subdomain": "circleci",
@@ -485,7 +485,7 @@
       "owner_id": 600939,
       "owner_nickname": "SerikyakuN",
       "owner_display_name": "勢理客 那帆",
-      "accepted": 16,
+      "accepted": 17,
       "waiting": 0,
       "updated_at": "2026-06-26T14:31:14+09:00"
     }
