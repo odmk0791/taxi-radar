@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>月火水木 まとめ比較</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:50px}
+#hdr{background:linear-gradient(135deg,#1a0a2e,#2e1040);border-bottom:1px solid #a78bfa55;padding:18px 16px 14px}
+.sub{font-size:10px;color:#a78bfa;letter-spacing:3px;text-transform:uppercase}
+h1{font-size:18px;font-weight:800;margin-top:2px}
+.dscr{font-size:11px;color:#64748b;margin-top:3px}
+#msg{margin:16px;padding:13px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.8;word-break:break-all}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.wrap{padding:14px}
+.card{background:#161626;border:1px solid #1e2d40;border-radius:13px;padding:13px;margin-bottom:12px}
+.ct{font-size:12px;font-weight:800;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{color:#475569;font-size:9px;font-weight:600;padding:5px 3px;border-bottom:1px solid #1e2d40;text-align:right}
+th:first-child{text-align:left}
+td{padding:6px 3px;border-bottom:1px solid #0d1220;text-align:right}
+td:first-child{text-align:left;color:#94a3b8}
+.hi{font-weight:800}
+.dim{color:#475569}
+.bar{height:4px;border-radius:2px;margin-top:3px}
+.pl{display:inline-block;background:#0d1220;border:1px solid #253449;border-radius:5px;padding:2px 6px;margin:2px 3px 0 0;font-size:10px;color:#cbd5e1}
+.note{font-size:10px;color:#475569;line-height:1.7;margin-top:9px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:10px;color:#64748b;margin-bottom:10px;padding:0 2px}
+.lg{display:flex;align-items:center;gap:4px}
+.dot{width:9px;height:9px;border-radius:50%}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Mon–Thu Comparison</div>
+  <h1>📊 月火水木 まとめ比較</h1>
+  <div class="dscr">4曜日を一望。どの時間帯で差がつくか・どこで乗るか</div>
+</div>
+<div id="msg"><span class="spin">⏳</span> 集計中...</div>
+<div class="wrap" id="out" style="display:none"></div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+var DOWS=['月','火','水','木'],COL={'月':'#f87171','火':'#fb923c','水':'#60a5fa','木':'#4ade80'};
+var SLOTS=[[960,1140,'16-19'],[1140,1320,'19-22'],[1320,1440,'22-24'],[1440,1560,'24-26'],[1560,1680,'26-28'],[1680,1860,'28-31'],[1860,2040,'31-']];
+function csvArr(t){var L=t.trim().split(/\r?\n/).filter(function(l){return l.trim();});function sp(l){var c=[],cur='',q=false;for(var i=0;i<l.length;i++){var ch=l[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else cur+=ch;}c.push(cur.trim());return c;}return L.map(sp);}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function nd(s){s=String(s||'').trim();var m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function tm(t){var m=String(t||'').match(/^(\d{1,2}):(\d{2})/);if(!m)return null;var x=+m[1]*60+ +m[2];return x<960?x+1440:x;}
+function town(f){return String(f||'').replace(/[一二三四五六七八九十〇0-9]+丁目.*$/,'').replace(/[0-9]+(-[0-9]+)*$/,'').replace(/[0-9]+番.*$/,'').trim();}
+function med(a){var s=[].concat(a).sort(function(x,y){return x-y;});var m=Math.floor(s.length/2);return s.length%2?s[m]:(s[m-1]+s[m])/2;}
+(async function(){
+ try{
+  var t1=await(await fetch(U1)).text(),t2=await(await fetch(U2)).text();
+  var a1=csvArr(t1),h1=a1[0],a2=csvArr(t2),h2=a2[0];
+  function ix(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+  var i1d=ix(h1,'日付'),i1t=ix(h1,'TAXI'),i1e=ix(h1,'営収'),i1w=ix(h1,'曜'),i1s=ix(h1,'出番');
+  var meta={};
+  a1.slice(1).forEach(function(r){
+    if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
+    if(String(r[i1s]||'').trim()!=='J')return;
+    var d=nd(r[i1d]);if(!d||d.length<10)return;
+    var w=String(r[i1w]||'').trim();if(DOWS.indexOf(w)<0)return;
+    meta[d]={dow:w,eik:toN(r[i1e])};
+  });
+  var i2on=ix(h2,'乗車時間'),i2off=ix(h2,'降車時間'),i2ew=ix(h2,'乗車地:市区'),i2en=ix(h2,'乗車地:地名'),i2f=ix(h2,'料金'),i2st=ix(h2,'ステータス'),i2sk=ix(h2,'サンキュー');
+  var byD={};
+  a2.slice(1).forEach(function(r){
+    var sk=String(r[i2sk]||'').trim();if(sk==='プレタク'||sk==='プレタクP')return;
+    var d=nd(r[0]);if(!meta[d])return;
+    var on=tm(r[i2on]),off=tm(r[i2off]);if(on===null)return;
+    if(off!==null&&off<on)off+=1440;
+    var f=toN(r[i2f]);if(f<=0)return;
+    (byD[d]=byD[d]||[]).push({on:on,off:off,ew:String(r[i2ew]||'').trim(),en:String(r[i2en]||'').trim(),f:f,st:String(r[i2st]||'').trim()});
+  });
+  Object.keys(byD).forEach(function(d){byD[d].sort(function(a,b){return a.on-b.on;});});
+
+  var D={};
+  DOWS.forEach(function(w){
+    var days=Object.keys(byD).filter(function(d){return meta[d].dow===w&&meta[d].eik>0;});
+    days.sort(function(a,b){return meta[b].eik-meta[a].eik;});
+    var n=Math.max(3,Math.round(days.length*0.3));
+    D[w]={all:days,hi:days.slice(0,n),lo:days.slice(n)};
+  });
+  function slotAgg(days,lo,hi){
+    var c=0,f=0,gaps=[],pl={},go=0,all=0;
+    days.forEach(function(d){
+      var rr=byD[d];
+      rr.forEach(function(r,i){
+        if(r.on<lo||r.on>=hi)return;
+        c++;f+=r.f;all++;if(r.st==='GO')go++;
+        var t=town(r.ew+r.en)||r.ew;
+        if(!pl[t])pl[t]={c:0,f:0};pl[t].c++;pl[t].f+=r.f;
+        if(i>0){var pe=rr[i-1].off!==null?rr[i-1].off:rr[i-1].on;var g=r.on-pe;if(g>=0&&g<=180)gaps.push(g);}
+      });
+    });
+    return {c:c/days.length,f:f/days.length,gap:gaps.length?med(gaps):null,pl:pl,goPct:all?Math.round(go/all*100):0};
+  }
+  var h='';
+  h+='<div class="legend">';DOWS.forEach(function(w){h+='<div class="lg"><span class="dot" style="background:'+COL[w]+'"></span>'+w+'曜</div>';});h+='</div>';
+
+  /* 1) 曜日サマリー */
+  h+='<div class="card"><div class="ct">🎯 目標値（高営収日の平均）</div><table><thead><tr><th>曜日</th><th>目標営収</th><th>件数</th><th>平均日</th><th>差</th><th>母数</th></tr></thead><tbody>';
+  DOWS.forEach(function(w){
+    var hi=D[w].hi,lo=D[w].lo;
+    var ha=hi.reduce(function(s,d){return s+meta[d].eik;},0)/hi.length;
+    var la=lo.length?lo.reduce(function(s,d){return s+meta[d].eik;},0)/lo.length:0;
+    var hc=hi.reduce(function(s,d){return s+byD[d].length;},0)/hi.length;
+    h+='<tr><td style="color:'+COL[w]+';font-weight:800">'+w+'</td><td class="hi" style="color:'+COL[w]+'">¥'+Math.round(ha/1000)+'k</td><td>'+hc.toFixed(0)+'</td><td class="dim">¥'+Math.round(la/1000)+'k</td><td style="color:#facc15">+¥'+Math.round((ha-la)/1000)+'k</td><td class="dim">'+hi.length+'/'+D[w].all.length+'日</td></tr>';
+  });
+  h+='</tbody></table></div>';
+
+  /* 2) 時間帯×曜日 売上マトリクス */
+  h+='<div class="card"><div class="ct">⏰ 時間帯別 売上（高営収日・1日平均）</div><table><thead><tr><th>時間</th>';
+  DOWS.forEach(function(w){h+='<th style="color:'+COL[w]+'">'+w+'</th>';});
+  h+='</tr></thead><tbody>';
+  var mx=0,cache={};
+  SLOTS.forEach(function(s){DOWS.forEach(function(w){var a=slotAgg(D[w].hi,s[0],s[1]);cache[w+s[2]]=a;if(a.f>mx)mx=a.f;});});
+  SLOTS.forEach(function(s){
+    h+='<tr><td>'+s[2]+'時</td>';
+    DOWS.forEach(function(w){
+      var a=cache[w+s[2]];
+      h+='<td><span style="color:'+COL[w]+';font-weight:700">¥'+(a.f/1000).toFixed(1)+'k</span><div class="bar" style="width:'+(a.f/mx*100)+'%;background:'+COL[w]+'"></div></td>';
+    });
+    h+='</tr>';
+  });
+  h+='</tbody></table><p class="note">縦に読むとその曜日の一日の形、横に読むと同じ時間帯の曜日差。</p></div>';
+
+  /* 3) 勝負どころ: 高-平均の差 */
+  h+='<div class="card"><div class="ct">⚔️ 勝負どころ（高営収日 − 平均日の差）</div><table><thead><tr><th>時間</th>';
+  DOWS.forEach(function(w){h+='<th style="color:'+COL[w]+'">'+w+'</th>';});
+  h+='</tr></thead><tbody>';
+  SLOTS.forEach(function(s){
+    h+='<tr><td>'+s[2]+'時</td>';
+    DOWS.forEach(function(w){
+      var H=cache[w+s[2]],L=slotAgg(D[w].lo.length?D[w].lo:D[w].hi,s[0],s[1]);
+      var df=(H.f-L.f)/1000;
+      var c=df>=2?'#f87171':df>=1?'#facc15':'#475569';
+      h+='<td style="color:'+c+';font-weight:'+(df>=2?800:400)+'">'+(df>0?'+':'')+df.toFixed(1)+'k</td>';
+    });
+    h+='</tr>';
+  });
+  h+='</tbody></table><p class="note">赤（+2k以上）＝その曜日はこの時間帯で勝負が決まる。灰色＝良い日も平均日も大差ない＝差がつかない時間帯。</p></div>';
+
+  /* 4) 鳴り待ち */
+  h+='<div class="card"><div class="ct">⏱️ 鳴り待ち中央値（高営収日・分）</div><table><thead><tr><th>時間</th>';
+  DOWS.forEach(function(w){h+='<th style="color:'+COL[w]+'">'+w+'</th>';});
+  h+='</tr></thead><tbody>';
+  SLOTS.forEach(function(s){
+    h+='<tr><td>'+s[2]+'時</td>';
+    DOWS.forEach(function(w){var a=cache[w+s[2]];h+='<td>'+(a.gap!==null?a.gap.toFixed(0)+'分':'-')+'</td>';});
+    h+='</tr>';
+  });
+  h+='</tbody></table></div>';
+
+  /* 5) 時間帯別 主戦場 */
+  h+='<div class="card"><div class="ct">📍 時間帯別の主戦場（高営収日・売上上位3）</div>';
+  SLOTS.forEach(function(s){
+    h+='<div style="margin-bottom:11px"><div style="font-size:11px;font-weight:700;color:#94a3b8;margin-bottom:4px">'+s[2]+'時</div>';
+    DOWS.forEach(function(w){
+      var a=cache[w+s[2]];
+      var top=Object.entries(a.pl).map(function(e){return {t:e[0],c:e[1].c,f:e[1].f};}).sort(function(x,y){return y.f-x.f;}).slice(0,3);
+      if(!top.length)return;
+      h+='<div style="display:flex;align-items:center;gap:6px;margin-bottom:3px"><span style="width:16px;font-size:10px;font-weight:800;color:'+COL[w]+'">'+w+'</span><div style="flex:1">';
+      top.forEach(function(x){h+='<span class="pl">'+es(x.t)+'</span>';});
+      h+='</div></div>';
+    });
+    h+='</div>';
+  });
+  h+='</div>';
+
+  document.getElementById('out').innerHTML=h;
+  document.getElementById('out').style.display='';
+  document.getElementById('msg').style.display='none';
+ }catch(e){document.getElementById('msg').innerHTML='⚠️ '+String(e&&e.stack||e);document.getElementById('msg').style.borderColor='#f87171';}
+})();
+</script>
+</body></html>
