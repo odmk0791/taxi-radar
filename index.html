@@ -839,14 +839,11 @@ function renderRadar(){
   var gpsSpots=spots.filter(function(s){return s.gpsCount>0;});
   var gpsHtml='';
   if(gpsSpots.length){
-    gpsHtml+='<div class="sec" style="margin-top:0">📍 GPS実績あり（'+gpsSpots.length+'件・ランキング対象外）</div>';
+    gpsHtml+='<div class="sec" style="margin-top:0">📍 GPS実績あり（'+gpsSpots.length+'件・実績ランキングにも別途反映済み）</div>';
     gpsSpots.forEach(function(s){
       gpsHtml+='<div class="card" style="border:1px solid rgba(57,211,83,.3);background:rgba(57,211,83,.05)">'+
-        '<div class="cb"><div class="cn" style="display:flex;align-items:center;gap:6px">'+
-          '<span style="font-size:11px;background:rgba(57,211,83,.15);color:#39d353;padding:2px 8px;border-radius:8px;font-weight:700">📍 GPS実績</span>'+
-          '<span style="font-size:13px">'+s.w+' '+s.n+'</span>'+
-        '</div></div>'+
-        '<div class="tags"><span class="tag" style="background:rgba(57,211,83,.12);color:#39d353">実測GPS '+s.gpsCount+'件</span></div>'+
+        '<div class="cb"><div class="cn" style="font-size:14px;font-weight:700">'+s.w+' '+s.n+'</div></div>'+
+        '<div class="tags"><span class="tag" style="background:rgba(57,211,83,.12);color:#39d353">📍 実測GPS '+s.gpsCount+'件</span></div>'+
         '<button style="margin-top:6px;background:rgba(88,166,255,.12);color:#58a6ff;border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit" onclick="event.stopPropagation();showPreciseAddr(this,'+s.gpsLat+','+s.gpsLng+')">🔍 詳細住所を調べる</button>'+
       '</div>';
     });
