@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-22T03:11:45.585923+09:00",
+  "fetched_at": "2026-07-22T05:15:37.203543+09:00",
   "date": "20260722",
   "count": 19,
   "events": [
@@ -314,37 +314,6 @@
       "updated_at": "2026-07-15T13:56:03+09:00"
     },
     {
-      "id": 399224,
-      "title": "「機能を作るな。楽して作るな。」作れる時代に作らないを選択する等身大プロダクト開発Meetup",
-      "catch": "事前質問、絶賛受付中です！",
-      "description": "<h2>本イベントの参考スライド</h2>\n<p>バクラクCPOのmosaが社内向けに公開し、今回のイベント開催のきっかけとなった機能との向き合い方を問い直す資料です。</p>\n<p><img src=\"https://i.gyazo.com/b3470c713863351fe696b41f0ce52029.png\" width=\"450\" alt=\"tsukuruna\"></p>\n<p><strong><a href=\"https://speakerdeck.com/mosa_siru/don-t-build-features-dot-don-t-take-the-easy-way-out\" rel=\"nofollow\">機能を作るな。楽して作るな。 （LayerX社内資料） Don’t Build Features. Don’t Take the Easy Way Out.</a></strong></p>\n<h2>概要</h2>\n<p>AIの進化で実装スピードが劇的に向上した結果、使われない機能の量産や、要望の鵜呑みによる設定だらけの複雑なプロダクトが生まれやすくなっています。<strong>作れてしまう時代だからこそ、何を作らず、どう削るかの意思決定がこれまで以上に問われています。</strong></p>\n<p>LayerXのバクラク事業部では、社内資料『機能を作るな。楽して作るな。』を使ったCPOの警鐘をきっかけに、要望をそのまま実装するリスクや、設定追加で逃げずに業務自体をなくせないか等、仕様策定のあり方について議論を深めました。\n設定追加や一部顧客向けの機能追加という部分最適の誘惑にどう抗い、負債を回避するのか、など社内のディスカッションの空気のまま公開パネルトークでお話します。</p>\n<p>本Meetupでは、バクラクCPO mosaとPdM・エンジニアが登壇します。</p>\n<p>理想論は捨て、<strong>つい作る前提で進めたアンチパターン、仕様相談での議論、作らない決断の合意形成プロセスなど、等身大な経験をお話します。</strong></p>\n<p>みなさんからのQ&amp;Aや交流会を通じて、明日から自信を持って「作らない」を選択するためのヒントを得ていただける会を目指します。</p>\n<h2>交流会のある会場参加を中心としたイベント</h2>\n<p>トークセッション終了後、登壇者・参加者同士で交流いただける時間を予定しています。\n登壇者への直接のご質問・ご相談をはじめ、顧客要望の深掘りや仕様調整のリアル、負債を生まないための「作らない」決断、設定追加や個社対応との向き合い方などをテーマに、同じ悩みを持つPdMやエンジニア同士でカジュアルにお話しいただけます。</p>\n<h2>こういう方におすすめ</h2>\n<ul>\n<li>とりあえず設定を追加する解決策に限界と負債の懸念を感じている方</li>\n<li>顧客要望をそのまま作らず、裏にある本当の課題まで泥臭く掘り下げたい方</li>\n<li>ビルドトラップを避けたいPdM、プロダクトエンジニア、GTMエンジニア</li>\n<li>AIで開発速度が上がる中で、作らない判断の重要性を感じている方</li>\n<li>例外対応や個社対応による既存仕様との整合性・保守運用コストと日々格闘しているPdM・エンジニア</li>\n</ul>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>：2026年7月22日（水） 19:00〜21:30  ※18:45開場</li>\n<li><strong>開催形式</strong>：会場・オンライン配信のハイブリッド開催</li>\n<li><strong>会場</strong>：LayerXイベントスペース</li>\n<li><strong>配信</strong>：YouTube Live</li>\n</ul>\n<p>※会場参加枠には限りがあります。お申し込み多数の場合は抽選となる可能性があります。</p>\n<h2>当日扱う予定のテーマ</h2>\n<ul>\n<li>お客様から要望を受けたとき、要望と要求をどう整理するか</li>\n<li>その機能を作る前に、業務そのものをなくせないか</li>\n<li>要求から仕様に落とすとき、何を決めて何を削るか</li>\n<li>一部のお客様だけが欲しい機能や設定追加をどう扱うか</li>\n<li>既存プロダクトへの機能強化の際の向き合い方</li>\n<li>等身大の失敗談として、踏んでしまったアンチパターンは何か</li>\n<li>仕様相談会やレビュー会では、実際にどんな議論をしているのか</li>\n</ul>\n<p>※内容は予告なく変更となる可能性があります。</p>\n<h2>事前質問を募集します</h2>\n<p>本イベントでは、参加者の皆さまから事前に質問を募集します。\n会の中のQ&amp;Aと交流会の中で可能な限りご質問にお答えしていきます。</p>\n<p><strong>【ご質問例】</strong></p>\n<ul>\n<li>顧客要望をそのまま作らないために、最初に何を確認していますか？</li>\n<li>作らない判断を、お客様や社内にどう説明していますか？</li>\n<li>設定追加や個社対応をどこまで許容していますか？</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45</td>\n<td>開場・受付開始</td>\n</tr>\n<tr>\n<td>19:00-19:05</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:05-19:35</td>\n<td>mosaよりスライドの解説</td>\n</tr>\n<tr>\n<td>19:35-20:05</td>\n<td>パネルトーク</td>\n</tr>\n<tr>\n<td>20:05-20:20</td>\n<td>Q&amp;A</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>クロージング</td>\n</tr>\n<tr>\n<td>20:30-21:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<p>※内容・時間は予告なく変更となる可能性があります。<br></p>\n<h2>スピーカー</h2>\n<h3>mosa  <a href=\"https://x.com/mosa_siru\" rel=\"nofollow\">@mosa_siru</a></h3>\n<p><img src=\"https://i.gyazo.com/737537222804b0a7aafb34a84a9c8576.png\" width=\"130\" alt=\"mosa\"></p>\n<p><strong>バクラク事業部CPO</strong></p>\n<p>株式会社ディー・エヌ・エー、株式会社Gunosyにて新規事業立ち上げをアーキテクト、リードエンジニア、プロダクトマネージャーとして牽引。2018年にLayerXを共同創業し、現在はバクラク事業部 CPOとして新規プロダクト開発を主導。</p>\n<h3>たいしょー <a href=\"https://x.com/N_Taisho\" rel=\"nofollow\">@N_Taisho</a></h3>\n<p><img src=\"https://i.gyazo.com/626cd039db975bda129afec959f379d7.jpg\" width=\"130\" alt=\"taisho\"></p>\n<p><strong>バクラク事業部 ペイメント企画チーム PdM</strong></p>\n<p>総務省でキャリアをスタートし、地方財政、震災復興などの制度設計・運用や国際交渉に従事。その後2019年にLayerXに入社し、三井物産デジタル・アセットマネジメントの創業、個人向けデジタル証券サービス「ALTERNA」の立ち上げ・運用を担当。現在はバクラクビジネスカードのプロダクトマネージャーとして、金融・業務・プロダクトが交わる領域でAI時代のfintechについて考えています。</p>\n<h3>chan <a href=\"https://x.com/chan_san_jp\" rel=\"nofollow\">@chan_san_jp</a></h3>\n<p><img src=\"https://i.gyazo.com/d6950ede441e8ddc912052d459df5a5d.png\" width=\"130\" alt=\"chan\"></p>\n<p><strong>バクラク事業部 BSM開発グループ、Autopilot経費精算開発グループ EM</strong></p>\n<p>ソニーグループで組み込みエンジニアとしてキャリアをスタートし、複数社でのCTO経験を経て、現在はLayerX BSM開発グループのEM。バクラク申請・経費精算・債権管理・請求書受取という、多くのお客様を抱える既存プロダクト群の開発をリードし、「何を作り、何を作らないか」に日々向き合っています。</p>\n<h2>モデレーター</h2>\n<h3>serima <a href=\"https://x.com/serima\" rel=\"nofollow\">@serima</a></h3>\n<p><img src=\"https://i.gyazo.com/959d6d3dbe1d77d83a8974cd56301223.jpg\" width=\"130\" alt=\"serima\"></p>\n<p><strong>バクラク事業部 Dev Talent Acquisition</strong></p>\n<p>高専を卒業後、スタートアップを創業。<br>\n複数の事業会社にてソフトウェアエンジニアとして勤務した後、株式会社GameWithにてVPoEを経験。<br>\n2022年1月に株式会社LayerXへ入社し、エンジニア採用と組織人事を担当したのちに、Engineering Officeで技術広報をメインに担当しつつ、エンジニアの採用担当も兼務しています。</p>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<p><strong>行動規範</strong></p>\n<ul>\n<li><a href=\"https://layerx.co.jp/policy/event-code-of-conduct\" rel=\"nofollow\">LayerX イベント行動規範</a></li>\n</ul>\n<p><strong>プライバシーポリシー</strong></p>\n<ul>\n<li><a href=\"https://layerx.co.jp/policy/privacy\" rel=\"nofollow\">株式会社 LayerX プライバシーポリシー</a></li>\n<li><a href=\"https://layerx.co.jp/policy/privacy-recruit\" rel=\"nofollow\">株式会社 LayerX 採用プライバシーポリシー</a></li>\n</ul>\n<p>※ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善または新規企画のための分析、LayerXの採用情報等のご案内で利用いたします。</p>",
-      "url": "https://layerx.connpass.com/event/399224/",
-      "image_url": "https://media.connpass.com/thumbs/40/6b/406bcdaa0de4ac7ead03456a9ddb2dbb.png",
-      "hash_tag": "tsukuruna_meetup",
-      "started_at": "2026-07-22T19:00:00+09:00",
-      "ended_at": "2026-07-22T21:30:00+09:00",
-      "published_at": "2026-07-03T11:51:03+09:00",
-      "limit": 450,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 6108,
-        "subdomain": "layerx",
-        "title": "LayerX",
-        "url": "https://layerx.connpass.com/"
-      },
-      "address": "東京都中央区築地1-13-1 (銀座松竹スクエア)",
-      "place": "株式会社LayerX セミナールーム 5F",
-      "lat": "35.668418300000",
-      "lon": "139.769522500000",
-      "owner_id": 36347,
-      "owner_nickname": "serima",
-      "owner_display_name": "serima",
-      "accepted": 435,
-      "waiting": 0,
-      "updated_at": "2026-07-21T18:03:31+09:00"
-    },
-    {
       "id": 400932,
       "title": "オフレコだから話せる、AI導入の成功も失敗もリアルも全部ぶっちゃけます。",
       "catch": "経営者同士で、本音で話せるオフライン座談会",
@@ -436,6 +405,37 @@
       "accepted": 248,
       "waiting": 0,
       "updated_at": "2026-07-21T17:15:35+09:00"
+    },
+    {
+      "id": 399224,
+      "title": "「機能を作るな。楽して作るな。」作れる時代に作らないを選択する等身大プロダクト開発Meetup",
+      "catch": "事前質問、絶賛受付中です！",
+      "description": "<h2>本イベントの参考スライド</h2>\n<p>バクラクCPOのmosaが社内向けに公開し、今回のイベント開催のきっかけとなった機能との向き合い方を問い直す資料です。</p>\n<p><img src=\"https://i.gyazo.com/b3470c713863351fe696b41f0ce52029.png\" width=\"450\" alt=\"tsukuruna\"></p>\n<p><strong><a href=\"https://speakerdeck.com/mosa_siru/don-t-build-features-dot-don-t-take-the-easy-way-out\" rel=\"nofollow\">機能を作るな。楽して作るな。 （LayerX社内資料） Don’t Build Features. Don’t Take the Easy Way Out.</a></strong></p>\n<h2>概要</h2>\n<p>AIの進化で実装スピードが劇的に向上した結果、使われない機能の量産や、要望の鵜呑みによる設定だらけの複雑なプロダクトが生まれやすくなっています。<strong>作れてしまう時代だからこそ、何を作らず、どう削るかの意思決定がこれまで以上に問われています。</strong></p>\n<p>LayerXのバクラク事業部では、社内資料『機能を作るな。楽して作るな。』を使ったCPOの警鐘をきっかけに、要望をそのまま実装するリスクや、設定追加で逃げずに業務自体をなくせないか等、仕様策定のあり方について議論を深めました。\n設定追加や一部顧客向けの機能追加という部分最適の誘惑にどう抗い、負債を回避するのか、など社内のディスカッションの空気のまま公開パネルトークでお話します。</p>\n<p>本Meetupでは、バクラクCPO mosaとPdM・エンジニアが登壇します。</p>\n<p>理想論は捨て、<strong>つい作る前提で進めたアンチパターン、仕様相談での議論、作らない決断の合意形成プロセスなど、等身大な経験をお話します。</strong></p>\n<p>みなさんからのQ&amp;Aや交流会を通じて、明日から自信を持って「作らない」を選択するためのヒントを得ていただける会を目指します。</p>\n<h2>交流会のある会場参加を中心としたイベント</h2>\n<p>トークセッション終了後、登壇者・参加者同士で交流いただける時間を予定しています。\n登壇者への直接のご質問・ご相談をはじめ、顧客要望の深掘りや仕様調整のリアル、負債を生まないための「作らない」決断、設定追加や個社対応との向き合い方などをテーマに、同じ悩みを持つPdMやエンジニア同士でカジュアルにお話しいただけます。</p>\n<h2>こういう方におすすめ</h2>\n<ul>\n<li>とりあえず設定を追加する解決策に限界と負債の懸念を感じている方</li>\n<li>顧客要望をそのまま作らず、裏にある本当の課題まで泥臭く掘り下げたい方</li>\n<li>ビルドトラップを避けたいPdM、プロダクトエンジニア、GTMエンジニア</li>\n<li>AIで開発速度が上がる中で、作らない判断の重要性を感じている方</li>\n<li>例外対応や個社対応による既存仕様との整合性・保守運用コストと日々格闘しているPdM・エンジニア</li>\n</ul>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>：2026年7月22日（水） 19:00〜21:30  ※18:45開場</li>\n<li><strong>開催形式</strong>：会場・オンライン配信のハイブリッド開催</li>\n<li><strong>会場</strong>：LayerXイベントスペース</li>\n<li><strong>配信</strong>：YouTube Live</li>\n</ul>\n<p>※会場参加枠には限りがあります。お申し込み多数の場合は抽選となる可能性があります。</p>\n<h2>当日扱う予定のテーマ</h2>\n<ul>\n<li>お客様から要望を受けたとき、要望と要求をどう整理するか</li>\n<li>その機能を作る前に、業務そのものをなくせないか</li>\n<li>要求から仕様に落とすとき、何を決めて何を削るか</li>\n<li>一部のお客様だけが欲しい機能や設定追加をどう扱うか</li>\n<li>既存プロダクトへの機能強化の際の向き合い方</li>\n<li>等身大の失敗談として、踏んでしまったアンチパターンは何か</li>\n<li>仕様相談会やレビュー会では、実際にどんな議論をしているのか</li>\n</ul>\n<p>※内容は予告なく変更となる可能性があります。</p>\n<h2>事前質問を募集します</h2>\n<p>本イベントでは、参加者の皆さまから事前に質問を募集します。\n会の中のQ&amp;Aと交流会の中で可能な限りご質問にお答えしていきます。</p>\n<p><strong>【ご質問例】</strong></p>\n<ul>\n<li>顧客要望をそのまま作らないために、最初に何を確認していますか？</li>\n<li>作らない判断を、お客様や社内にどう説明していますか？</li>\n<li>設定追加や個社対応をどこまで許容していますか？</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45</td>\n<td>開場・受付開始</td>\n</tr>\n<tr>\n<td>19:00-19:05</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:05-19:35</td>\n<td>mosaよりスライドの解説</td>\n</tr>\n<tr>\n<td>19:35-20:05</td>\n<td>パネルトーク</td>\n</tr>\n<tr>\n<td>20:05-20:20</td>\n<td>Q&amp;A</td>\n</tr>\n<tr>\n<td>20:20-20:30</td>\n<td>クロージング</td>\n</tr>\n<tr>\n<td>20:30-21:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<p>※内容・時間は予告なく変更となる可能性があります。<br></p>\n<h2>スピーカー</h2>\n<h3>mosa  <a href=\"https://x.com/mosa_siru\" rel=\"nofollow\">@mosa_siru</a></h3>\n<p><img src=\"https://i.gyazo.com/737537222804b0a7aafb34a84a9c8576.png\" width=\"130\" alt=\"mosa\"></p>\n<p><strong>バクラク事業部CPO</strong></p>\n<p>株式会社ディー・エヌ・エー、株式会社Gunosyにて新規事業立ち上げをアーキテクト、リードエンジニア、プロダクトマネージャーとして牽引。2018年にLayerXを共同創業し、現在はバクラク事業部 CPOとして新規プロダクト開発を主導。</p>\n<h3>たいしょー <a href=\"https://x.com/N_Taisho\" rel=\"nofollow\">@N_Taisho</a></h3>\n<p><img src=\"https://i.gyazo.com/626cd039db975bda129afec959f379d7.jpg\" width=\"130\" alt=\"taisho\"></p>\n<p><strong>バクラク事業部 ペイメント企画チーム PdM</strong></p>\n<p>総務省でキャリアをスタートし、地方財政、震災復興などの制度設計・運用や国際交渉に従事。その後2019年にLayerXに入社し、三井物産デジタル・アセットマネジメントの創業、個人向けデジタル証券サービス「ALTERNA」の立ち上げ・運用を担当。現在はバクラクビジネスカードのプロダクトマネージャーとして、金融・業務・プロダクトが交わる領域でAI時代のfintechについて考えています。</p>\n<h3>chan <a href=\"https://x.com/chan_san_jp\" rel=\"nofollow\">@chan_san_jp</a></h3>\n<p><img src=\"https://i.gyazo.com/d6950ede441e8ddc912052d459df5a5d.png\" width=\"130\" alt=\"chan\"></p>\n<p><strong>バクラク事業部 BSM開発グループ、Autopilot経費精算開発グループ EM</strong></p>\n<p>ソニーグループで組み込みエンジニアとしてキャリアをスタートし、複数社でのCTO経験を経て、現在はLayerX BSM開発グループのEM。バクラク申請・経費精算・債権管理・請求書受取という、多くのお客様を抱える既存プロダクト群の開発をリードし、「何を作り、何を作らないか」に日々向き合っています。</p>\n<h2>モデレーター</h2>\n<h3>serima <a href=\"https://x.com/serima\" rel=\"nofollow\">@serima</a></h3>\n<p><img src=\"https://i.gyazo.com/959d6d3dbe1d77d83a8974cd56301223.jpg\" width=\"130\" alt=\"serima\"></p>\n<p><strong>バクラク事業部 Dev Talent Acquisition</strong></p>\n<p>高専を卒業後、スタートアップを創業。<br>\n複数の事業会社にてソフトウェアエンジニアとして勤務した後、株式会社GameWithにてVPoEを経験。<br>\n2022年1月に株式会社LayerXへ入社し、エンジニア採用と組織人事を担当したのちに、Engineering Officeで技術広報をメインに担当しつつ、エンジニアの採用担当も兼務しています。</p>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<p><strong>行動規範</strong></p>\n<ul>\n<li><a href=\"https://layerx.co.jp/policy/event-code-of-conduct\" rel=\"nofollow\">LayerX イベント行動規範</a></li>\n</ul>\n<p><strong>プライバシーポリシー</strong></p>\n<ul>\n<li><a href=\"https://layerx.co.jp/policy/privacy\" rel=\"nofollow\">株式会社 LayerX プライバシーポリシー</a></li>\n<li><a href=\"https://layerx.co.jp/policy/privacy-recruit\" rel=\"nofollow\">株式会社 LayerX 採用プライバシーポリシー</a></li>\n</ul>\n<p>※ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善または新規企画のための分析、LayerXの採用情報等のご案内で利用いたします。</p>",
+      "url": "https://layerx.connpass.com/event/399224/",
+      "image_url": "https://media.connpass.com/thumbs/40/6b/406bcdaa0de4ac7ead03456a9ddb2dbb.png",
+      "hash_tag": "tsukuruna_meetup",
+      "started_at": "2026-07-22T19:00:00+09:00",
+      "ended_at": "2026-07-22T21:30:00+09:00",
+      "published_at": "2026-07-03T11:51:03+09:00",
+      "limit": 450,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 6108,
+        "subdomain": "layerx",
+        "title": "LayerX",
+        "url": "https://layerx.connpass.com/"
+      },
+      "address": "東京都中央区築地1-13-1 (銀座松竹スクエア)",
+      "place": "株式会社LayerX セミナールーム 5F",
+      "lat": "35.668418300000",
+      "lon": "139.769522500000",
+      "owner_id": 36347,
+      "owner_nickname": "serima",
+      "owner_display_name": "serima",
+      "accepted": 437,
+      "waiting": 0,
+      "updated_at": "2026-07-21T18:03:31+09:00"
     },
     {
       "id": 398183,
@@ -583,7 +583,7 @@
       "owner_id": 686047,
       "owner_nickname": "Cocoda",
       "owner_display_name": "Cocoda",
-      "accepted": 56,
+      "accepted": 57,
       "waiting": 0,
       "updated_at": "2026-07-16T18:04:17+09:00"
     }
