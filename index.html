@@ -820,11 +820,6 @@ function renderRadar(){
     if((s.fixM||0)>0)badges+='<span class="badge" style="background:rgba(210,153,34,.15);color:#d29922">⭐M '+s.fixM+'</span>';
     if((s.fixS||0)>0)badges+='<span class="badge" style="background:rgba(88,166,255,.15);color:#58a6ff">⭐S '+s.fixS+'</span>';
     var hotBadge=s.hotTime?'<span class="badge-hot">⚡ '+s.hotTime+'の実績</span>':'';
-    var gpsRow=(s.gpsCount>0)?
-      '<div class="tags" style="margin-top:4px">'+
-        '<span class="tag" style="background:rgba(57,211,83,.12);color:#39d353">📍 GPS実績 '+s.gpsCount+'件</span>'+
-        '<button style="background:rgba(88,166,255,.12);color:#58a6ff;border:none;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit" onclick="event.stopPropagation();showPreciseAddr(this,'+s.gpsLat+','+s.gpsLng+')">🔍 詳細住所</button>'+
-      '</div>':'';
     var fbStats=getFbStats(s.w+s.n,tgt);
     var fbHtml='<div class="fb-row">'+
       '<button class="fb-btn fb-hit" onclick="event.stopPropagation();recordFb(\''+s.w+'\',\''+s.n+'\','+tgt+',1)">✅ 乗せた</button>'+
@@ -836,14 +831,31 @@ function renderRadar(){
       (badges?'<div class="badges">'+badges+'</div>':'')+
       (hotBadge?'<div class="hot-row">'+hotBadge+'</div>':'')+
       '<div class="tags"><span class="tag td">📍 '+d.toFixed(1)+'km</span><span class="tag tc">🏆 '+score+'件'+rl+'</span></div>'+
-      gpsRow+
       '<div class="bar"><div class="barf" style="width:'+Math.round(s.c*rainBoost/mx*100)+'%"></div></div>'+
       fbHtml+
       '</div><div class="carr">›</div><button class="excl-btn" onclick="event.stopPropagation();excludeSpot(\''+s.w+'\',\''+s.n+'\')">🚫</button></div>';
   }
+  // ランキングとは独立の「GPS実績あり」セクションを先頭に追加
+  var gpsSpots=spots.filter(function(s){return s.gpsCount>0;});
+  var gpsHtml='';
+  if(gpsSpots.length){
+    gpsHtml+='<div class="sec" style="margin-top:0">📍 GPS実績あり（'+gpsSpots.length+'件・ランキング対象外）</div>';
+    gpsSpots.forEach(function(s){
+      gpsHtml+='<div class="card" style="border:1px solid rgba(57,211,83,.3);background:rgba(57,211,83,.05)">'+
+        '<div class="cb"><div class="cn" style="display:flex;align-items:center;gap:6px">'+
+          '<span style="font-size:11px;background:rgba(57,211,83,.15);color:#39d353;padding:2px 8px;border-radius:8px;font-weight:700">📍 GPS実績</span>'+
+          '<span style="font-size:13px">'+s.w+' '+s.n+'</span>'+
+        '</div></div>'+
+        '<div class="tags"><span class="tag" style="background:rgba(57,211,83,.12);color:#39d353">実測GPS '+s.gpsCount+'件</span></div>'+
+        '<button style="margin-top:6px;background:rgba(88,166,255,.12);color:#58a6ff;border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit" onclick="event.stopPropagation();showPreciseAddr(this,'+s.gpsLat+','+s.gpsLng+')">🔍 詳細住所を調べる</button>'+
+      '</div>';
+    });
+    gpsHtml+='<div class="sec">🎯 近くのスポット（実績ランキング）</div>';
+  }
+  html=gpsHtml+html;
   list.innerHTML=html;
   window._spots=spots;
-  list.querySelectorAll('.card').forEach(function(card){
+  list.querySelectorAll('.card[data-idx]').forEach(function(card){
     card.addEventListener('click',function(){
       var idx=parseInt(this.getAttribute('data-idx'));
       var s=window._spots[idx];
