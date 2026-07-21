@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>月火水木 ロールモデル</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#090912;color:#e2e8f0;font-family:'Hiragino Sans',sans-serif;padding-bottom:50px}
+#hdr{background:linear-gradient(135deg,#1a0a2e,#2e1040);border-bottom:1px solid #a78bfa55;padding:18px 16px 14px}
+.sub{font-size:10px;color:#a78bfa;letter-spacing:3px;text-transform:uppercase}
+h1{font-size:18px;font-weight:800;margin-top:2px}
+.dscr{font-size:11px;color:#64748b;margin-top:3px}
+#msg{margin:16px;padding:13px;background:#161626;border:2px solid #60a5fa;border-radius:12px;font-size:13px;line-height:1.8;word-break:break-all}
+@keyframes sp{to{transform:rotate(360deg)}}
+.spin{display:inline-block;animation:sp 1s linear infinite}
+.tabs{display:flex;gap:6px;padding:12px 14px 10px;overflow-x:auto;scrollbar-width:none}
+.tab{padding:9px 18px;border-radius:20px;border:none;color:#fff;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit;flex-shrink:0;opacity:.45}
+.tab.on{opacity:1}
+.panel{padding:0 14px;display:none}
+.panel.on{display:block}
+.sumcard{border-radius:13px;padding:14px;margin-bottom:12px}
+.sumgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+.sumit{text-align:center}
+.sumit .v{font-size:17px;font-weight:800}
+.sumit .l{font-size:9px;color:#64748b;margin-top:2px}
+.tl{position:relative;padding-left:20px;margin-bottom:14px}
+.tl::before{content:'';position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:#1e2d40}
+.slot{position:relative;margin-bottom:14px}
+.slot::before{content:'';position:absolute;left:-17px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--sc);border:2px solid #090912}
+.slot-h{display:flex;align-items:baseline;gap:8px;margin-bottom:5px}
+.slot-t{font-size:13px;font-weight:800;color:var(--sc)}
+.slot-m{font-size:10px;color:#64748b}
+.slot-b{background:#161626;border:1px solid #1e2d40;border-radius:10px;padding:11px 12px;font-size:12px;line-height:1.75;color:#94a3b8}
+.slot-b strong{color:#e2e8f0}
+.pl{display:inline-block;background:#0d1220;border:1px solid #253449;border-radius:6px;padding:2px 7px;margin:3px 3px 0 0;font-size:11px;color:#cbd5e1}
+.pl .n{color:#64748b;font-size:9px;margin-left:3px}
+.warn{background:#f8717112;border:1px solid #f8717133;border-radius:9px;padding:9px 11px;margin-top:7px;font-size:11px;color:#fca5a5;line-height:1.6}
+.good{background:#4ade8012;border:1px solid #4ade8033;border-radius:9px;padding:9px 11px;margin-top:7px;font-size:11px;color:#86efac;line-height:1.6}
+.note{font-size:10px;color:#475569;line-height:1.7;margin-top:10px}
+</style>
+</head>
+<body>
+<div id="hdr">
+  <div class="sub">Role Model — Mon / Tue / Wed / Thu</div>
+  <h1>🎯 月火水木 ロールモデル</h1>
+  <div class="dscr">高営収日の実績から逆算した「その曜日の理想の一日」</div>
+</div>
+<div id="msg"><span class="spin">⏳</span> 集計中...</div>
+<div id="tabs" class="tabs" style="display:none"></div>
+<div id="panels"></div>
+<script>
+var U1='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv';
+var U2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
+var DOWS=['月','火','水','木'],COL={'月':'#f87171','火':'#fb923c','水':'#60a5fa','木':'#4ade80'};
+var SLOTS=[[960,1140,'16:30〜19:00','出庫〜宵の入口'],[1140,1320,'19:00〜22:00','宵'],[1320,1440,'22:00〜24:00','割増前半'],[1440,1560,'24:00〜26:00','深夜'],[1560,1680,'26:00〜28:00','未明'],[1680,1860,'28:00〜31:00','早朝'],[1860,2000,'31:00〜帰庫','通勤帯']];
+function csvArr(t){var L=t.trim().split(/\r?\n/).filter(function(l){return l.trim();});function sp(l){var c=[],cur='',q=false;for(var i=0;i<l.length;i++){var ch=l[i];if(ch==='"'){q=!q;}else if(ch===','&&!q){c.push(cur.trim());cur='';}else cur+=ch;}c.push(cur.trim());return c;}return L.map(sp);}
+function toN(v){return parseInt(String(v||'').replace(/[^\d]/g,''))||0;}
+function es(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function nd(s){s=String(s||'').trim();var m=s.match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{1,2})年(\d{1,2})月(\d{1,2})日/);if(m)return '20'+('0'+m[1]).slice(-2)+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);m=s.match(/(\d{2})[\/\-.](\d{1,2})[\/\-.](\d{1,2})/);if(m)return '20'+m[1]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[3]).slice(-2);return s;}
+function tm(t){var m=String(t||'').match(/^(\d{1,2}):(\d{2})/);if(!m)return null;var x=+m[1]*60+ +m[2];return x<960?x+1440:x;}
+function town(f){return String(f||'').replace(/[一二三四五六七八九十〇0-9]+丁目.*$/,'').replace(/[0-9]+(-[0-9]+)*$/,'').replace(/[0-9]+番.*$/,'').trim();}
+function med(a){var s=[].concat(a).sort(function(x,y){return x-y;});var m=Math.floor(s.length/2);return s.length%2?s[m]:(s[m-1]+s[m])/2;}
+var G={};
+(async function(){
+ try{
+  var t1=await(await fetch(U1)).text(),t2=await(await fetch(U2)).text();
+  var a1=csvArr(t1),h1=a1[0],a2=csvArr(t2),h2=a2[0];
+  function ix(hs,n){return hs.findIndex(function(c){return c.replace(/：/g,':').trim()===n.replace(/：/g,':');});}
+  var i1d=ix(h1,'日付'),i1t=ix(h1,'TAXI'),i1e=ix(h1,'営収'),i1w=ix(h1,'曜'),i1s=ix(h1,'出番');
+  var meta={};
+  a1.slice(1).forEach(function(r){
+    if(String(r[i1t]||'').toUpperCase().indexOf('PRE')>=0)return;
+    if(String(r[i1s]||'').trim()!=='J')return;
+    var d=nd(r[i1d]);if(!d||d.length<10)return;
+    var w=String(r[i1w]||'').trim();if(DOWS.indexOf(w)<0)return;
+    meta[d]={dow:w,eik:toN(r[i1e])};
+  });
+  var i2on=ix(h2,'乗車時間'),i2off=ix(h2,'降車時間'),i2ew=ix(h2,'乗車地:市区'),i2en=ix(h2,'乗車地:地名'),i2dw=ix(h2,'降車地:市区'),i2f=ix(h2,'料金'),i2st=ix(h2,'ステータス'),i2sk=ix(h2,'サンキュー');
+  var byD={};
+  a2.slice(1).forEach(function(r){
+    var sk=String(r[i2sk]||'').trim();if(sk==='プレタク'||sk==='プレタクP')return;
+    var d=nd(r[0]);if(!meta[d])return;
+    var on=tm(r[i2on]),off=tm(r[i2off]);if(on===null)return;
+    if(off!==null&&off<on)off+=1440;
+    var f=toN(r[i2f]);if(f<=0)return;
+    (byD[d]=byD[d]||[]).push({on:on,off:off,ew:String(r[i2ew]||'').trim(),en:String(r[i2en]||'').trim(),dw:String(r[i2dw]||'').trim(),f:f,st:String(r[i2st]||'').trim()});
+  });
+  Object.keys(byD).forEach(function(d){byD[d].sort(function(a,b){return a.on-b.on;});});
+  G.meta=meta;G.byD=byD;
+  var th='',ph='';
+  DOWS.forEach(function(w,i){
+    th+='<button class="tab'+(i===1?' on':'')+'" style="background:'+COL[w]+'" onclick="sw(\''+w+'\',this)">'+w+'曜</button>';
+    ph+='<div class="panel'+(i===1?' on':'')+'" id="p'+w+'"></div>';
+  });
+  document.getElementById('tabs').innerHTML=th;document.getElementById('tabs').style.display='';
+  document.getElementById('panels').innerHTML=ph;
+  DOWS.forEach(render);
+  document.getElementById('msg').style.display='none';
+ }catch(e){document.getElementById('msg').innerHTML='⚠️ '+String(e&&e.stack||e);document.getElementById('msg').style.borderColor='#f87171';}
+})();
+function render(w){
+  var col=COL[w];
+  var days=Object.keys(G.byD).filter(function(d){return G.meta[d].dow===w&&G.meta[d].eik>0;});
+  days.sort(function(a,b){return G.meta[b].eik-G.meta[a].eik;});
+  var n=Math.max(3,Math.round(days.length*0.3));
+  var hi=days.slice(0,n),lo=days.slice(n);
+  var hiAvg=hi.reduce(function(s,d){return s+G.meta[d].eik;},0)/hi.length;
+  var loAvg=lo.length?lo.reduce(function(s,d){return s+G.meta[d].eik;},0)/lo.length:0;
+  var hiCnt=hi.reduce(function(s,d){return s+G.byD[d].length;},0)/hi.length;
+  var h='<div class="sumcard" style="background:'+col+'0d;border:1px solid '+col+'44">';
+  h+='<div style="font-size:13px;font-weight:800;color:'+col+'">'+w+'曜のロールモデル</div>';
+  h+='<div style="font-size:11px;color:#94a3b8;margin-top:4px">高営収'+hi.length+'日（全'+days.length+'日中）の実績を平均した「理想の一日」</div>';
+  h+='<div class="sumgrid"><div class="sumit"><div class="v" style="color:'+col+'">¥'+Math.round(hiAvg/1000)+'k</div><div class="l">目標営収</div></div>';
+  h+='<div class="sumit"><div class="v">'+hiCnt.toFixed(0)+'</div><div class="l">目標件数</div></div>';
+  h+='<div class="sumit"><div class="v" style="color:#64748b">¥'+Math.round(loAvg/1000)+'k</div><div class="l">平均日</div></div>';
+  h+='<div class="sumit"><div class="v" style="color:#facc15">+¥'+Math.round((hiAvg-loAvg)/1000)+'k</div><div class="l">差</div></div></div></div>';
+  h+='<div class="tl">';
+  SLOTS.forEach(function(s){
+    var lo2=s[0],hi2=s[1];
+    function agg(ds){
+      var c=0,f=0,gaps=[],places={},go=0,all=0;
+      ds.forEach(function(d){
+        var rr=G.byD[d];
+        rr.forEach(function(r,i){
+          if(r.on<lo2||r.on>=hi2)return;
+          c++;f+=r.f;all++;if(r.st==='GO')go++;
+          var t=town(r.ew+r.en)||r.ew;
+          if(!places[t])places[t]={c:0,f:0};places[t].c++;places[t].f+=r.f;
+          if(i>0){var pe=rr[i-1].off!==null?rr[i-1].off:rr[i-1].on;var g=r.on-pe;if(g>=0&&g<=180)gaps.push(g);}
+        });
+      });
+      return {c:c/ds.length,f:f/ds.length,gap:gaps.length?med(gaps):null,places:places,goPct:all?Math.round(go/all*100):0};
+    }
+    var H=agg(hi),L=lo.length?agg(lo):null;
+    var top=Object.entries(H.places).map(function(e){return {t:e[0],c:e[1].c,f:e[1].f};}).sort(function(a,b){return b.f-a.f;}).slice(0,5);
+    h+='<div class="slot" style="--sc:'+col+'"><div class="slot-h"><span class="slot-t">'+s[2]+'</span><span class="slot-m">'+s[3]+'</span></div><div class="slot-b">';
+    h+='<strong>'+H.c.toFixed(1)+'件 / ¥'+Math.round(H.f/1000*10)/10+'k</strong>';
+    if(H.gap!==null)h+=' <span style="color:#64748b">・鳴り待ち中央値'+H.gap.toFixed(0)+'分</span>';
+    if(H.goPct)h+=' <span style="color:#64748b">・GO'+H.goPct+'%</span>';
+    if(L&&L.f>0){
+      var diff=(H.f-L.f)/1000;
+      if(Math.abs(diff)>=1.5)h+='<div class="'+(diff>0?'warn':'good')+'">'+(diff>0?'⚠️ 平均日との差 +¥'+diff.toFixed(1)+'k ＝ここが勝負どころ':'ここは平均日と大差なし')+'</div>';
+    }
+    if(top.length){h+='<div style="margin-top:6px">';top.forEach(function(x){h+='<span class="pl">'+es(x.t)+'<span class="n">'+x.c+'</span></span>';});h+='</div>';}
+    h+='</div></div>';
+  });
+  h+='</div><p class="note">※ プレタク日・PRE車両・I番は除外。件数と売上は高営収日の1日平均。場所は乗車地を売上順に上位5つ、数字は延べ件数。「鳴り待ち中央値」は直前の降車から次の乗車までの分数。</p>';
+  document.getElementById('p'+w).innerHTML=h;
+}
+function sw(w,b){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});document.getElementById('p'+w).classList.add('on');}
+</script>
+</body></html>
