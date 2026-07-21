@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-21T21:24:56.914997+09:00",
+  "fetched_at": "2026-07-21T23:58:20.406538+09:00",
   "date": "20260721",
   "count": 17,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-21T18:44:59+09:00",
       "limit": 21,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17273,
         "subdomain": "jouban-agile",
@@ -30,40 +30,9 @@
       "owner_id": 994116,
       "owner_nickname": "sekky_404",
       "owner_display_name": "sekky_404",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-07-21T18:44:59+09:00"
-    },
-    {
-      "id": 397915,
-      "title": "「生成AIとともに叶えた・叶えたい願い Vol.2」LT会 〜七夕エディション〜",
-      "catch": "OPTiM TECH NIGHT #26 エンジニアのためのエンジニアMeetUp！",
-      "description": "<h1>💭 イベント概要</h1>\n<p>昨今、生成AI（LLM）の進化は目覚ましく、プロダクト開発の現場でもその活用が急速に広がっています。\nフロントエンド、バックエンド、インフラ、プロジェクトマネジメント、プロダクトマネジメント、デザインなど、実際のプロダクト開発に関わる技術的な取り組みの中で、生成AIをどう活用しているか、または今後どう活用したいかをテーマに、LT（ライトニングトーク）を募集します。</p>\n<p>7月といえば七夕。\n今回のLT会では、<strong>「生成AIとともに叶えた・叶えたい願い」</strong>をテーマに、参加者の皆さんの技術的な挑戦や夢を共有していただきます。</p>\n<p>「生成AIでこんなことを実現したい」「こんな未来をつくりたい」——そんな想いを、技術とともに語り合いましょう。</p>\n<h3>🎤 LTテーマ例</h3>\n<ul>\n<li>生成AIで要件定義の工数削減という願いを叶えた話</li>\n<li>テストコードの自動生成を実現したくて、生成AIと試行錯誤している話</li>\n<li>議事録やタスク整理をAIに任せたい！PM業務の自動化の願いに向けた取り組み</li>\n<li>顧客にもっと寄り添った開発をしたい！という願いを生成AIを活用して叶えた話</li>\n<li>生成AIでコードレビューの負担を減らしたい！その願いに向けた取り組み</li>\n<li>“もっと早くプロトタイプを作りたい”という願いを、AIと一緒に叶えた話</li>\n</ul>\n<h3>🎋 短冊企画</h3>\n<p>会場には短冊もご用意する予定です。\n参加者の皆さんには「生成AIとともに叶えた・叶えたい願い」を短冊に書いていただき、会場に飾って懇親会での交流のきっかけにしていただければと思います。</p>\n<h2>📑 LT募集について</h2>\n<ul>\n<li>現在発表者を募集中です。「LT発表枠」でふるってご応募ください！</li>\n<li>LTのテーマは <strong>生成AIとともに叶えた・叶えたい願い</strong> です。テーマに合致する内容での登壇をお願いいたします。</li>\n<li>テーマに対する答えは短冊にも記載いただきたいと考えておりますのでご協力お願いいたします。</li>\n<li>LTは交代と準備、質疑応答の時間を含めて10分間です。10分を超えた場合は強制的に次の発表に移ります。</li>\n<li>当日はご自身のPCでスライドをご投影いただくことを予定しているため、Type-Cの端子のあるPC等をお持ちいただきますようお願いいたします。</li>\n</ul>\n<h2>📝 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00〜</td>\n<td>開場・受付</td>\n<td></td>\n</tr>\n<tr>\n<td>19:30〜</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:35〜</td>\n<td>製品の問い合わせ負荷をLLMで解消したい 〜RAGで作る「自社を知っている」チャットボット〜</td>\n<td>オプティム 小笠原</td>\n</tr>\n<tr>\n<td>19:45〜</td>\n<td>AIによる偏った\"痛み\"が和らぎますように</td>\n<td>TDD野郎 さん</td>\n</tr>\n<tr>\n<td>19:55〜</td>\n<td>Pepperと本当に会話したい — 応答速度という壁への挑戦</td>\n<td>いわもん さん</td>\n</tr>\n<tr>\n<td>20:05〜</td>\n<td>AI エージェントシステムの開発を AI で加速させたい！</td>\n<td>オプティム 葉山</td>\n</tr>\n<tr>\n<td>20:15〜</td>\n<td>クロージング</td>\n<td></td>\n</tr>\n<tr>\n<td>20:20〜</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>終了</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>🎤 登壇者情報</h2>\n<h3>小笠原</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/2a7aab92-3df4-4747-8e51-1481bceeef34/download?node_id=d97fmbcmj46c73cbq6e0&amp;is_browser_compliant=true\" width=\"100\"><br>\n技術統括本部DXビジネス開発部AI digital Transformationユニット<br>\n普段はPythonやGoによるバックエンド開発とAWSを用いたクラウド基盤の構築、そしてLLMを活用したドキュメント処理・RAGシステムの開発に取り組んでいます。日々「LLMで業務をどう楽にするか」を考えています。</p>\n<h4>製品の問い合わせ負荷をLLMで解消したい 〜RAGで作る「自社を知っている」チャットボット〜</h4>\n<p>「製品の使い方がわからない」「仕様はどうなっているのか」——こうした問い合わせ対応は、地味に大きな負荷になりがちです。かといって、素のLLMに聞いても自社製品のことは答えてくれません。学習していないからです。\nそこで登場するのがRAG（Retrieval-Augmented Generation）です。あらかじめ製品ドキュメントやFAQを検索可能な形で用意しておき、質問に関連する情報を取り出してLLMに渡すことで、「自社製品を知っている」チャットボットを実現できます。\n本LTでは、RAGの基本的な仕組み（Embedding・ベクトル検索・プロンプト構築）をかみ砕いて解説し、独自コンテキストを持ったチャットボットをどう作るのかを、実装イメージを交えてお話しします。RAGって何？という方も歓迎です。</p>\n<h3>葉山</h3>\n<p>社長室R&amp;Dユニット<br>\n3次元測量アプリの開発やAIチャットボットの開発を担当、兼務で技術広報としても活動中。</p>\n<h4>AI エージェントシステムの開発を AI で加速させたい！</h4>\n<p>AI エージェントシステムの開発は基礎となる手法の検討や、組み込むプロンプトの評価・改善、あるいはシステム全体のパラメータ最適化などの様々な要素によって成り立っています。これらの各要素において AI をどのように活用してきたか、また今後どのように活用していきたいかの展望についてお話しします。</p>\n<h3>TDD野郎</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/7418a562-78b0-4812-8953-b792608e476a/download?node_id=d97fme4mj46c73cbq6f0&amp;is_browser_compliant=true\" width=\"100\"><br>\nエンジニア。TDDが好き。フロントエンドも好き。痛いのは嫌い。</p>\n<h4>AIによる偏った\"痛み\"が和らぎますように</h4>\n<p>AIは増幅器とはよく言うもので、活用することで特定の作業は格段に楽になったのに対して、ある作業では\"痛み\"が増幅されたりもしている訳です。ここでの私のメッセージは、エンジニアであるなら痛みに向き合え、見て見ぬふりで放置せずにコントロールしろ、ということです。本発表では私が考える痛みに対してどうすべきか現時点の私の考え・仮説を話します。痛みから逃げるな。</p>\n<h3>いわもん</h3>\n<p>レバレジーズ株式会社の26卒エンジニアのいわもんです。象使いの資格を持っていて、家にpepperがいます。</p>\n<h4>Pepperと本当に会話したい — 応答速度という壁への挑戦</h4>\n<p>Pepperと生成AI（LLM）でリアルタイム会話に挑む話。会話も速度もまだギリギリですが、当日までの成長も含めて共有します</p>\n<h1>🤝 主催企業</h1>\n<h2>株式会社オプティム</h2>\n<div style=\"text-align:left;\">\n<a href=\"https://www.optim.co.jp\" rel=\"nofollow\">\n<img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/3f65d4de-5872-4a37-a69b-161733665129/download?node_id=cvmtli59t3uc73e413g0&amp;is_browser_compliant=true\" width=\"300\"></a>\n</div>\n\n<p><strong>『世界の人々に大きく良い影響を与える企業になる』</strong><br>\nOPTiMは、「ネットを空気に変える」というミッションを掲げ、AI・IoT・Cloud・Mobile・Roboticsを使った新しい価値を創造し続け、あらゆる産業のDXを推進し、あらゆる人々に、豊かでサステナブルな未来を実現する企業です。<br>\n代表菅谷が話す会社概要動画もぜひご覧ください<br></p>\n<ul>\n<li><a href=\"https://youtu.be/bPLo6LKDgrs\" rel=\"nofollow\">会社概要動画</a></li>\n<li><a href=\"https://www.optim.co.jp/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://www.optim.co.jp/recruit/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech-blog.optim.co.jp/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<h1>⚠️ その他・諸注意</h1>\n<ul>\n<li>営業目的でのイベントへのご参加はご遠慮ください</li>\n<li>参加目的が不適切と判断した場合は、運営側で参加をキャンセルさせていただきます</li>\n<li>会場内では、写真や動画撮影が行われる予定のため会場内の参加者の皆様が映り込む場合があります。 それらは、弊社媒体やSNSなどで掲載される場合がありますので、あらかじめご了承ください</li>\n<li>飲食や懇親会のみを目的とした参加はご遠慮いただいております</li>\n<li>お申し込みのない方や、イベント開始後20時を超えてからの参加はお断りをさせていただきます</li>\n<li>ご欠席される場合には、お手数ですがご自身でキャンセル処理をお願いいたします</li>\n</ul>",
-      "url": "https://optim.connpass.com/event/397915/",
-      "image_url": "https://media.connpass.com/thumbs/14/39/1439b1ae69a9a21ff53944e742259fae.png",
-      "hash_tag": "optim_tech",
-      "started_at": "2026-07-21T19:30:00+09:00",
-      "ended_at": "2026-07-21T21:30:00+09:00",
-      "published_at": "2026-06-26T10:44:40+09:00",
-      "limit": 29,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 8992,
-        "subdomain": "optim",
-        "title": "株式会社オプティム",
-        "url": "https://optim.connpass.com/"
-      },
-      "address": "東京都港区海岸1丁目2番20号 (汐留ビルディング 18F)",
-      "place": "株式会社オプティム 東京本社",
-      "lat": "35.657293900000",
-      "lon": "139.759767600000",
-      "owner_id": 351724,
-      "owner_nickname": "OPTiM",
-      "owner_display_name": "株式会社オプティム",
-      "accepted": 14,
-      "waiting": 0,
-      "updated_at": "2026-07-21T07:23:11+09:00"
     },
     {
       "id": 398431,
@@ -78,7 +47,7 @@
       "published_at": "2026-06-25T11:31:29+09:00",
       "limit": 121,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1,
         "subdomain": "bpstudy",
@@ -95,6 +64,37 @@
       "accepted": 112,
       "waiting": 0,
       "updated_at": "2026-06-30T16:54:06+09:00"
+    },
+    {
+      "id": 397915,
+      "title": "「生成AIとともに叶えた・叶えたい願い Vol.2」LT会 〜七夕エディション〜",
+      "catch": "OPTiM TECH NIGHT #26 エンジニアのためのエンジニアMeetUp！",
+      "description": "<h1>💭 イベント概要</h1>\n<p>昨今、生成AI（LLM）の進化は目覚ましく、プロダクト開発の現場でもその活用が急速に広がっています。\nフロントエンド、バックエンド、インフラ、プロジェクトマネジメント、プロダクトマネジメント、デザインなど、実際のプロダクト開発に関わる技術的な取り組みの中で、生成AIをどう活用しているか、または今後どう活用したいかをテーマに、LT（ライトニングトーク）を募集します。</p>\n<p>7月といえば七夕。\n今回のLT会では、<strong>「生成AIとともに叶えた・叶えたい願い」</strong>をテーマに、参加者の皆さんの技術的な挑戦や夢を共有していただきます。</p>\n<p>「生成AIでこんなことを実現したい」「こんな未来をつくりたい」——そんな想いを、技術とともに語り合いましょう。</p>\n<h3>🎤 LTテーマ例</h3>\n<ul>\n<li>生成AIで要件定義の工数削減という願いを叶えた話</li>\n<li>テストコードの自動生成を実現したくて、生成AIと試行錯誤している話</li>\n<li>議事録やタスク整理をAIに任せたい！PM業務の自動化の願いに向けた取り組み</li>\n<li>顧客にもっと寄り添った開発をしたい！という願いを生成AIを活用して叶えた話</li>\n<li>生成AIでコードレビューの負担を減らしたい！その願いに向けた取り組み</li>\n<li>“もっと早くプロトタイプを作りたい”という願いを、AIと一緒に叶えた話</li>\n</ul>\n<h3>🎋 短冊企画</h3>\n<p>会場には短冊もご用意する予定です。\n参加者の皆さんには「生成AIとともに叶えた・叶えたい願い」を短冊に書いていただき、会場に飾って懇親会での交流のきっかけにしていただければと思います。</p>\n<h2>📑 LT募集について</h2>\n<ul>\n<li>現在発表者を募集中です。「LT発表枠」でふるってご応募ください！</li>\n<li>LTのテーマは <strong>生成AIとともに叶えた・叶えたい願い</strong> です。テーマに合致する内容での登壇をお願いいたします。</li>\n<li>テーマに対する答えは短冊にも記載いただきたいと考えておりますのでご協力お願いいたします。</li>\n<li>LTは交代と準備、質疑応答の時間を含めて10分間です。10分を超えた場合は強制的に次の発表に移ります。</li>\n<li>当日はご自身のPCでスライドをご投影いただくことを予定しているため、Type-Cの端子のあるPC等をお持ちいただきますようお願いいたします。</li>\n</ul>\n<h2>📝 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00〜</td>\n<td>開場・受付</td>\n<td></td>\n</tr>\n<tr>\n<td>19:30〜</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:35〜</td>\n<td>製品の問い合わせ負荷をLLMで解消したい 〜RAGで作る「自社を知っている」チャットボット〜</td>\n<td>オプティム 小笠原</td>\n</tr>\n<tr>\n<td>19:45〜</td>\n<td>AIによる偏った\"痛み\"が和らぎますように</td>\n<td>TDD野郎 さん</td>\n</tr>\n<tr>\n<td>19:55〜</td>\n<td>Pepperと本当に会話したい — 応答速度という壁への挑戦</td>\n<td>いわもん さん</td>\n</tr>\n<tr>\n<td>20:05〜</td>\n<td>AI エージェントシステムの開発を AI で加速させたい！</td>\n<td>オプティム 葉山</td>\n</tr>\n<tr>\n<td>20:15〜</td>\n<td>クロージング</td>\n<td></td>\n</tr>\n<tr>\n<td>20:20〜</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>終了</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>🎤 登壇者情報</h2>\n<h3>小笠原</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/2a7aab92-3df4-4747-8e51-1481bceeef34/download?node_id=d97fmbcmj46c73cbq6e0&amp;is_browser_compliant=true\" width=\"100\"><br>\n技術統括本部DXビジネス開発部AI digital Transformationユニット<br>\n普段はPythonやGoによるバックエンド開発とAWSを用いたクラウド基盤の構築、そしてLLMを活用したドキュメント処理・RAGシステムの開発に取り組んでいます。日々「LLMで業務をどう楽にするか」を考えています。</p>\n<h4>製品の問い合わせ負荷をLLMで解消したい 〜RAGで作る「自社を知っている」チャットボット〜</h4>\n<p>「製品の使い方がわからない」「仕様はどうなっているのか」——こうした問い合わせ対応は、地味に大きな負荷になりがちです。かといって、素のLLMに聞いても自社製品のことは答えてくれません。学習していないからです。\nそこで登場するのがRAG（Retrieval-Augmented Generation）です。あらかじめ製品ドキュメントやFAQを検索可能な形で用意しておき、質問に関連する情報を取り出してLLMに渡すことで、「自社製品を知っている」チャットボットを実現できます。\n本LTでは、RAGの基本的な仕組み（Embedding・ベクトル検索・プロンプト構築）をかみ砕いて解説し、独自コンテキストを持ったチャットボットをどう作るのかを、実装イメージを交えてお話しします。RAGって何？という方も歓迎です。</p>\n<h3>葉山</h3>\n<p>社長室R&amp;Dユニット<br>\n3次元測量アプリの開発やAIチャットボットの開発を担当、兼務で技術広報としても活動中。</p>\n<h4>AI エージェントシステムの開発を AI で加速させたい！</h4>\n<p>AI エージェントシステムの開発は基礎となる手法の検討や、組み込むプロンプトの評価・改善、あるいはシステム全体のパラメータ最適化などの様々な要素によって成り立っています。これらの各要素において AI をどのように活用してきたか、また今後どのように活用していきたいかの展望についてお話しします。</p>\n<h3>TDD野郎</h3>\n<p><img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/7418a562-78b0-4812-8953-b792608e476a/download?node_id=d97fme4mj46c73cbq6f0&amp;is_browser_compliant=true\" width=\"100\"><br>\nエンジニア。TDDが好き。フロントエンドも好き。痛いのは嫌い。</p>\n<h4>AIによる偏った\"痛み\"が和らぎますように</h4>\n<p>AIは増幅器とはよく言うもので、活用することで特定の作業は格段に楽になったのに対して、ある作業では\"痛み\"が増幅されたりもしている訳です。ここでの私のメッセージは、エンジニアであるなら痛みに向き合え、見て見ぬふりで放置せずにコントロールしろ、ということです。本発表では私が考える痛みに対してどうすべきか現時点の私の考え・仮説を話します。痛みから逃げるな。</p>\n<h3>いわもん</h3>\n<p>レバレジーズ株式会社の26卒エンジニアのいわもんです。象使いの資格を持っていて、家にpepperがいます。</p>\n<h4>Pepperと本当に会話したい — 応答速度という壁への挑戦</h4>\n<p>Pepperと生成AI（LLM）でリアルタイム会話に挑む話。会話も速度もまだギリギリですが、当日までの成長も含めて共有します</p>\n<h1>🤝 主催企業</h1>\n<h2>株式会社オプティム</h2>\n<div style=\"text-align:left;\">\n<a href=\"https://www.optim.co.jp\" rel=\"nofollow\">\n<img src=\"https://file-explorer.optim.cloud/d/public/file_storage/node_sharing/3f65d4de-5872-4a37-a69b-161733665129/download?node_id=cvmtli59t3uc73e413g0&amp;is_browser_compliant=true\" width=\"300\"></a>\n</div>\n\n<p><strong>『世界の人々に大きく良い影響を与える企業になる』</strong><br>\nOPTiMは、「ネットを空気に変える」というミッションを掲げ、AI・IoT・Cloud・Mobile・Roboticsを使った新しい価値を創造し続け、あらゆる産業のDXを推進し、あらゆる人々に、豊かでサステナブルな未来を実現する企業です。<br>\n代表菅谷が話す会社概要動画もぜひご覧ください<br></p>\n<ul>\n<li><a href=\"https://youtu.be/bPLo6LKDgrs\" rel=\"nofollow\">会社概要動画</a></li>\n<li><a href=\"https://www.optim.co.jp/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://www.optim.co.jp/recruit/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech-blog.optim.co.jp/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<h1>⚠️ その他・諸注意</h1>\n<ul>\n<li>営業目的でのイベントへのご参加はご遠慮ください</li>\n<li>参加目的が不適切と判断した場合は、運営側で参加をキャンセルさせていただきます</li>\n<li>会場内では、写真や動画撮影が行われる予定のため会場内の参加者の皆様が映り込む場合があります。 それらは、弊社媒体やSNSなどで掲載される場合がありますので、あらかじめご了承ください</li>\n<li>飲食や懇親会のみを目的とした参加はご遠慮いただいております</li>\n<li>お申し込みのない方や、イベント開始後20時を超えてからの参加はお断りをさせていただきます</li>\n<li>ご欠席される場合には、お手数ですがご自身でキャンセル処理をお願いいたします</li>\n</ul>",
+      "url": "https://optim.connpass.com/event/397915/",
+      "image_url": "https://media.connpass.com/thumbs/14/39/1439b1ae69a9a21ff53944e742259fae.png",
+      "hash_tag": "optim_tech",
+      "started_at": "2026-07-21T19:30:00+09:00",
+      "ended_at": "2026-07-21T21:30:00+09:00",
+      "published_at": "2026-06-26T10:44:40+09:00",
+      "limit": 29,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 8992,
+        "subdomain": "optim",
+        "title": "株式会社オプティム",
+        "url": "https://optim.connpass.com/"
+      },
+      "address": "東京都港区海岸1丁目2番20号 (汐留ビルディング 18F)",
+      "place": "株式会社オプティム 東京本社",
+      "lat": "35.657293900000",
+      "lon": "139.759767600000",
+      "owner_id": 351724,
+      "owner_nickname": "OPTiM",
+      "owner_display_name": "株式会社オプティム",
+      "accepted": 14,
+      "waiting": 0,
+      "updated_at": "2026-07-21T07:23:11+09:00"
     },
     {
       "id": 398532,
@@ -166,7 +166,7 @@
       "published_at": "2026-06-30T07:01:24+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1717,
         "subdomain": "hfs",
@@ -197,7 +197,7 @@
       "published_at": "2026-07-08T15:38:45+09:00",
       "limit": 28,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 6708,
         "subdomain": "maplesystems1",
@@ -259,7 +259,7 @@
       "published_at": "2026-06-16T17:01:11+09:00",
       "limit": 45,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8329,
         "subdomain": "fullenergy-oci",
@@ -290,7 +290,7 @@
       "published_at": "2026-07-04T19:55:26+09:00",
       "limit": 90,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16308,
         "subdomain": "sumo-ai",
