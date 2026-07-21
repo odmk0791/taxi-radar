@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-21T08:50:22.055553+09:00",
+  "fetched_at": "2026-07-21T10:56:17.057636+09:00",
   "date": "20260721",
   "count": 16,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 8,
       "owner_nickname": "haru860",
       "owner_display_name": "佐藤 治夫",
-      "accepted": 92,
+      "accepted": 97,
       "waiting": 0,
       "updated_at": "2026-06-30T16:54:06+09:00"
     },
@@ -71,7 +71,7 @@
       "catch": "",
       "description": "<p>週が始まったばかりの火曜日。<br>\nやり残していた作業や、<br>\n気になっていたけど手がつけられていないこと<br>\n少し集中して作業する時間をつくりませんか？  </p>\n<p>それぞれがやりたい作業をする<br>\n75分間の「もくもく会」と \n60分のプチ懇親会（自由参加）です。 </p>\n<p>フリーお菓子を用意しているので、<br>\nつまみながら一緒に作業しましょう！  </p>\n<p>【やること】<br>\n・はじめに軽く自己紹介 <br>\n・今日やる作業について<br>\n・作業内容は自由<br>\n・途中参加／途中退出OK<br>\n・初参加・お一人での参加歓迎  </p>\n<p>（例） <br>\n・開発<br>\n・資格勉強<br>\n・技術調査<br>\n・資料作成 など  </p>\n<p>【対象】<br>\n主にエンジニアの方を想定していますが、<br>\nIT系の作業をされている方であればどなたでもご参加いただけます。  </p>\n<p>【特徴】<br>\n弊社はシステム開発会社のため <br>\n技術的や業界に関する質問にご回答することも可能です。 <br>\nお気軽にご質問ください。 <br>\n（後日のお返事となる可能性もあります。ご了承ください）   </p>\n<p>BGMのない空間で集中して作業ができます。<br>\n（イヤホンOK） </p>\n<p>■ 日時:7月21（火）<br>\n　19:15 〜 20:30（もくもくタイム） <br>\n　20:30 〜 21:30（懇親会：希望者のみ）<br>\n　（受付開始19:05〜） </p>\n<p>■ 会場<br>\n　もくもく会：<br>\n　株式会社エーエルジェイ<br>\n　（新宿野村ビル）<br>\n　懇親会：<br>\n　西新宿（お店未定）  </p>\n<p>■会費：<br>\n　もくもく会：無料<br>\n　懇親会：実費  </p>\n<p>■ 持ち物<br>\n　PC、作業に必要なもの ・楽しむ気持ち  </p>\n<p>集中して作業した後のビール（やソフトドリンク）は最高です。<br>\nぜひお気軽にご参加ください！</p>",
       "url": "https://connpass.com/event/398532/",
-      "image_url": "https://media.connpass.com/thumbs/7d/df/7ddf3f3abdfaa78a52fe72a9b0f6255b.png",
+      "image_url": "https://media.connpass.com/thumbs/ca/15/ca15c62851554ff8cee5d309314cd5da.png",
       "hash_tag": "",
       "started_at": "2026-07-21T19:15:00+09:00",
       "ended_at": "2026-07-21T21:15:00+09:00",
@@ -89,38 +89,7 @@
       "owner_display_name": "株式会社エーエルジェイ",
       "accepted": 0,
       "waiting": 0,
-      "updated_at": "2026-06-25T10:58:18+09:00"
-    },
-    {
-      "id": 395487,
-      "title": "Browser and UI #4 Any",
-      "catch": "フリーテーマ！",
-      "description": "<h1>Browser and UIとは</h1>\n<p>Browser and UI はWebフロントエンド領域の中でもブラウザやユーザーインターフェースに関連した話をする勉強会です。</p>\n<h2>今回のテーマについて</h2>\n<p>今回はテーマを設けず、Webフロントエンド及びブラウザに関する話題であれば何でもOKとさせていただきます！</p>\n<p>HTML/CSS/JS/Wasm等の言語の話でも、セキュリティやパフォーマンス・アクセシビリティなどそれぞれの関心領域に関する話題でも構わないので話したいことがあればご応募ください！</p>\n<h2>開催概要</h2>\n<h3>会場スポンサー：<a href=\"https://corp.timee.co.jp/\" rel=\"nofollow\">株式会社タイミー</a></h3>\n<p><a href=\"https://corp.timee.co.jp/\" rel=\"nofollow\"><img src=\"https://i.imgur.com/r7Icjm3.png\" width=\"350\"></a><br>\n「『はたらく』を通じて人生の可能性を広げるインフラをつくる」をミッションに、スキマバイトサービス「タイミー」を運営しています。<br>\nタイミーでは一緒にはたらく仲間を募集しています！事業やものづくり、組織にご興味がある方、ぜひお話ししましょう！<br>\n<a href=\"https://product-recruit.timee.co.jp/\" rel=\"nofollow\">プロダクト採用サイト</a><br>\n<a href=\"https://product-recruit.timee.co.jp/casual\" rel=\"nofollow\">カジュアル面談のお申し込みはこちら</a><br></p>\n<h3>日時</h3>\n<p>7月21日（火）19:00 - </p>\n<h3>タイムスケジュール</h3>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 -</td>\n<td>開場</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:10 -</td>\n<td>オープニングトーク</td>\n<td><a href=\"https://x.com/ken7253_\" rel=\"nofollow\">@ken7253</a></td>\n</tr>\n<tr>\n<td></td>\n<td>最近気になってるFile System Access APIについて</td>\n<td><a href=\"https://x.com/ken7253_\" rel=\"nofollow\">@ken7253</a></td>\n</tr>\n<tr>\n<td>19:30 -</td>\n<td>スポンサーLT CSS Houdiniとはなんだったのか</td>\n<td><a href=\"https://x.com/ryo__kts\" rel=\"nofollow\">@infixer</a></td>\n</tr>\n<tr>\n<td>19:45 -</td>\n<td>cubic-bezier() に速度を継承させてアニメーションを自然にする</td>\n<td><a href=\"https://x.com/ktsn\" rel=\"nofollow\">@Katashin</a></td>\n</tr>\n<tr>\n<td>20:00 -</td>\n<td>アクセシビリティの改善と確保 傾向と対策</td>\n<td><a href=\"https://x.com/chuff_chuff09\" rel=\"nofollow\">@山崎</a></td>\n</tr>\n<tr>\n<td>20:15 -</td>\n<td>V8のTorqueについて語りたい</td>\n<td><a href=\"https://x.com/Riya31377928\" rel=\"nofollow\">@Riya Amemiya</a></td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>終了</td>\n<td>-</td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>閉場</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<h2>登壇について</h2>\n<ul>\n<li>登壇枠10分+予備5分です。</li>\n<li>10分を過ぎても構いませんが、15分以内には収めてください。</li>\n<li>15分以上時間が欲しい場合などは調整するので事前にご相談ください。</li>\n<li>発表内容に対しての質問時間などは設けない予定です。</li>\n</ul>\n<h2>注意点</h2>\n<ul>\n<li>開催はオフラインのみで配信等は行いません。</li>\n<li>飲食物の持ち込み及び勉強会中の飲食は可能ですが、ゴミについては各自持ち帰りをお願いいたします。</li>\n<li>開催の様子を主催者が撮影し、SNSなどにアップロードする可能性がありますのでご了承ください。</li>\n<li>製品の宣伝のみを目的とした参加、採用・勧誘等を目的とした参加はお断りいたします。</li>\n</ul>\n<h3>行動規範・アンチハラスメントポリシー</h3>\n<p>この勉強会では<a href=\"https://2026.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigi 2026</a>の行動規範に準じ判断を行います。<br>\n連絡先に関してはイベント概要に記載の連絡先、もしくはスタッフまで直接お知らせください。</p>\n<h2>連絡先</h2>\n<ul>\n<li><a href=\"https://x.com/ken7253_\" rel=\"nofollow\">https://x.com/ken7253_</a></li>\n<li>ken7253@gmail.com</li>\n</ul>\n<h2>備考</h2>\n<ul>\n<li>応募状況を見て余裕があれば登壇枠と参加枠を増枠する可能性があります。</li>\n</ul>",
-      "url": "https://browser-and-ui.connpass.com/event/395487/",
-      "image_url": "https://media.connpass.com/thumbs/ec/7f/ec7fc5e9d5b0c5def1fe04bde614ce97.png",
-      "hash_tag": "browser_and_ui",
-      "started_at": "2026-07-21T19:00:00+09:00",
-      "ended_at": "2026-07-21T21:00:00+09:00",
-      "published_at": "2026-06-05T12:01:37+09:00",
-      "limit": 53,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 15655,
-        "subdomain": "browser-and-ui",
-        "title": "Browser and UI",
-        "url": "https://browser-and-ui.connpass.com/"
-      },
-      "address": "〒105-7108　東京都港区東新橋1-5-2 汐留シティセンター 35F",
-      "place": "タイミー東京本社",
-      "lat": "35.665497200000",
-      "lon": "139.760880600000",
-      "owner_id": 337921,
-      "owner_nickname": "ken7253_",
-      "owner_display_name": "ken7253",
-      "accepted": 19,
-      "waiting": 0,
-      "updated_at": "2026-07-16T14:42:32+09:00"
+      "updated_at": "2026-07-21T10:39:34+09:00"
     },
     {
       "id": 397165,
@@ -273,9 +242,40 @@
       "owner_id": 377235,
       "owner_nickname": "GMOAozoraNetBank",
       "owner_display_name": "GMOAozoraNetBank",
-      "accepted": 49,
+      "accepted": 50,
       "waiting": 0,
       "updated_at": "2026-07-10T17:00:35+09:00"
+    },
+    {
+      "id": 395487,
+      "title": "Browser and UI #4 Any",
+      "catch": "フリーテーマ！",
+      "description": "<h1>Browser and UIとは</h1>\n<p>Browser and UI はWebフロントエンド領域の中でもブラウザやユーザーインターフェースに関連した話をする勉強会です。</p>\n<h2>今回のテーマについて</h2>\n<p>今回はテーマを設けず、Webフロントエンド及びブラウザに関する話題であれば何でもOKとさせていただきます！</p>\n<p>HTML/CSS/JS/Wasm等の言語の話でも、セキュリティやパフォーマンス・アクセシビリティなどそれぞれの関心領域に関する話題でも構わないので話したいことがあればご応募ください！</p>\n<h2>開催概要</h2>\n<h3>会場スポンサー：<a href=\"https://corp.timee.co.jp/\" rel=\"nofollow\">株式会社タイミー</a></h3>\n<p><a href=\"https://corp.timee.co.jp/\" rel=\"nofollow\"><img src=\"https://i.imgur.com/r7Icjm3.png\" width=\"350\"></a><br>\n「『はたらく』を通じて人生の可能性を広げるインフラをつくる」をミッションに、スキマバイトサービス「タイミー」を運営しています。<br>\nタイミーでは一緒にはたらく仲間を募集しています！事業やものづくり、組織にご興味がある方、ぜひお話ししましょう！<br>\n<a href=\"https://product-recruit.timee.co.jp/\" rel=\"nofollow\">プロダクト採用サイト</a><br>\n<a href=\"https://product-recruit.timee.co.jp/casual\" rel=\"nofollow\">カジュアル面談のお申し込みはこちら</a><br></p>\n<h3>日時</h3>\n<p>7月21日（火）19:00 - </p>\n<h3>タイムスケジュール</h3>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 -</td>\n<td>開場</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:10 -</td>\n<td>オープニングトーク</td>\n<td><a href=\"https://x.com/ken7253_\" rel=\"nofollow\">@ken7253</a></td>\n</tr>\n<tr>\n<td></td>\n<td>最近気になってるFile System Access APIについて</td>\n<td><a href=\"https://x.com/ken7253_\" rel=\"nofollow\">@ken7253</a></td>\n</tr>\n<tr>\n<td>19:30 -</td>\n<td>スポンサーLT CSS Houdiniとはなんだったのか</td>\n<td><a href=\"https://x.com/ryo__kts\" rel=\"nofollow\">@infixer</a></td>\n</tr>\n<tr>\n<td>19:45 -</td>\n<td>cubic-bezier() に速度を継承させてアニメーションを自然にする</td>\n<td><a href=\"https://x.com/ktsn\" rel=\"nofollow\">@Katashin</a></td>\n</tr>\n<tr>\n<td>20:00 -</td>\n<td>アクセシビリティの改善と確保 傾向と対策</td>\n<td><a href=\"https://x.com/chuff_chuff09\" rel=\"nofollow\">@山崎</a></td>\n</tr>\n<tr>\n<td>20:15 -</td>\n<td>V8のTorqueについて語りたい</td>\n<td><a href=\"https://x.com/Riya31377928\" rel=\"nofollow\">@Riya Amemiya</a></td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>終了</td>\n<td>-</td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>閉場</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<h2>登壇について</h2>\n<ul>\n<li>登壇枠10分+予備5分です。</li>\n<li>10分を過ぎても構いませんが、15分以内には収めてください。</li>\n<li>15分以上時間が欲しい場合などは調整するので事前にご相談ください。</li>\n<li>発表内容に対しての質問時間などは設けない予定です。</li>\n</ul>\n<h2>注意点</h2>\n<ul>\n<li>開催はオフラインのみで配信等は行いません。</li>\n<li>飲食物の持ち込み及び勉強会中の飲食は可能ですが、ゴミについては各自持ち帰りをお願いいたします。</li>\n<li>開催の様子を主催者が撮影し、SNSなどにアップロードする可能性がありますのでご了承ください。</li>\n<li>製品の宣伝のみを目的とした参加、採用・勧誘等を目的とした参加はお断りいたします。</li>\n</ul>\n<h3>行動規範・アンチハラスメントポリシー</h3>\n<p>この勉強会では<a href=\"https://2026.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigi 2026</a>の行動規範に準じ判断を行います。<br>\n連絡先に関してはイベント概要に記載の連絡先、もしくはスタッフまで直接お知らせください。</p>\n<h2>連絡先</h2>\n<ul>\n<li><a href=\"https://x.com/ken7253_\" rel=\"nofollow\">https://x.com/ken7253_</a></li>\n<li>ken7253@gmail.com</li>\n</ul>\n<h2>備考</h2>\n<ul>\n<li>応募状況を見て余裕があれば登壇枠と参加枠を増枠する可能性があります。</li>\n</ul>",
+      "url": "https://browser-and-ui.connpass.com/event/395487/",
+      "image_url": "https://media.connpass.com/thumbs/ec/7f/ec7fc5e9d5b0c5def1fe04bde614ce97.png",
+      "hash_tag": "browser_and_ui",
+      "started_at": "2026-07-21T19:00:00+09:00",
+      "ended_at": "2026-07-21T21:00:00+09:00",
+      "published_at": "2026-06-05T12:01:37+09:00",
+      "limit": 53,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 15655,
+        "subdomain": "browser-and-ui",
+        "title": "Browser and UI",
+        "url": "https://browser-and-ui.connpass.com/"
+      },
+      "address": "〒105-7108　東京都港区東新橋1-5-2 汐留シティセンター 35F",
+      "place": "タイミー東京本社",
+      "lat": "35.665497200000",
+      "lon": "139.760880600000",
+      "owner_id": 337921,
+      "owner_nickname": "ken7253_",
+      "owner_display_name": "ken7253",
+      "accepted": 18,
+      "waiting": 0,
+      "updated_at": "2026-07-16T14:42:32+09:00"
     },
     {
       "id": 398258,
@@ -312,7 +312,7 @@
       "id": 399888,
       "title": "【AI駆動開発】AI自走環境整備・運用スペシャル #4 〜ハーネス・ループエンジニアリングへの入り口",
       "catch": "Issue自動生成からマルチエージェントによるPR作成まで、自走度向上に挑む！",
-      "description": "<h2><b>AI自走環境整備で組織のAI駆動開発を推進！<br>AGENTS&zwnj;.md/Skills/SubAgentsなどのAI自走環境整備・運用の実践テクニックを語り尽くす！</b></h2>\n<p>「AI自走環境整備・運用スペシャル」シリーズでは、これまでagent.&zwnj;.mdやSkills、トークン効率、AIレビューの責任分界といった、実装〜レビュー工程の自走環境を扱ってきました。</p>\n<p>今回は、レビュー中心の議論から軸を変え、Issue自動生成 → タスク分解 → 複数エージェントによるPR作成までを、どこまでAIに自走させられるか、今まさに試行錯誤されている内容を以下のようなテーマで登壇いただきます！<br></p>\n<ul>\n<li>AIによるIssue自律起票の仕組みと、Issue品質を担保するセルフ検証ループ</li>\n<li>1つのIssueを複数のサブタスクへ自動分解し、依存関係を踏まえて割り振るオーケストレーション設計</li>\n<li>複数コーディングエージェントを並列で走らせる際のhandoff・ブランチ戦略・衝突回避・エスカレーション設計</li>\n<li>Issue起票からPR作成まで自走させた際に、人間が介入すべき境界線の設計</li>\n</ul>\n<p>ぜひご参加ください！</p>\n<p></p>\n<h3>AI 駆動開発勉強会とは？</h3>\n<hr>\n<blockquote>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！<br>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！\n(<a href=\"https://aid.connpass.com/\" rel=\"nofollow\">https://aid.connpass.com/</a> より)</p>\n</blockquote>\n<h2><font color=\"red\">LT枠応募の方は抽選落ちの場合も現地参加可能です。<br>入館申請は不要です。当日は直接会場へお越しください。</font></h2>\n<hr>\n<h2>日時</h2>\n<p><strong>2026年7月21日(火) 19:00〜21:00（開場：18:40）</strong></p>\n<p><b>配信機材の調整等により開始が遅れる場合がございます。予めご了承ください。</b><br>\n<b><font color=\"red\">開始直前は受付が混み合うことが予想されるため、現地参加の方は余裕をもって会場にお越しください。</font></b><br></p>\n<p>※現地参加の方向けに<strong>21:00〜22:00 懇親会（ネットワーキング）</strong> を予定しています。<br>\n配信機材の調整等により開始が若干遅れる場合がございます。予めご了承ください。</p>\n<hr>\n<h2>開催形式</h2>\n<p><strong>オンサイト＋オンライン（ハイブリッド）</strong></p>\n<ul>\n<li>現地参加：ファインディ イベントスペース</li>\n<li>オンライン：YouTube Live配信</li>\n<li>申し込み：Connpass（本サイト）</li>\n<li>配信URLは参加者向けに後日掲載します</li>\n</ul>\n<p><b><font color=\"red\">※LT枠応募の方は抽選落ちの場合も現地参加可能です</font></b></p>\n<hr>\n<h2>会場</h2>\n<p>ファインディ株式会社 イベントスペース<br>\n〒141-0032 東京都品川区大崎1丁目2−2（アートヴィレッジ大崎セントラルタワー）5F</p>\n<p>Googleマップ：<a href=\"https://maps.app.goo.gl/PPTgX4SFLEAif3rz5&lt;br>\" rel=\"nofollow\">https://maps.app.goo.gl/PPTgX4SFLEAif3rz5<br></a>\n・JR「大崎駅」東口より徒歩約5分程度<br>\n・JR「五反田駅」東口より徒歩7分程度</p>\n<p>5Fに上がった後、案内標識に沿ってイベントスペースまでお越しください。</p>\n<hr>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (5分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:07 - 19:12</td>\n<td style=\"text-align: left;\">ファインディのAgenticWorkflowを支えるSkill達</td>\n<td style=\"text-align: left;\">戸田さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:14 - 19:19</td>\n<td style=\"text-align: left;\">もう“AI製の屍アプリ”は量産しない。マイクロエージェント×人間による検証ループ設計</td>\n<td style=\"text-align: left;\">Toruさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:21 - 19:26</td>\n<td style=\"text-align: left;\">Multicaで30個のミニプロジェクトをAIエージェント運用して見えてきたこと</td>\n<td style=\"text-align: left;\">eiei114さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:28 - 19:33</td>\n<td style=\"text-align: left;\">Issue の起票者に、聞いてはいけない質問がある タスク自走ハーネスの“質問の宛先”設計</td>\n<td style=\"text-align: left;\">satoh-y-0323 さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35 - 19:40</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">LT募集枠</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40 - 19:50</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50 - 20:00</td>\n<td style=\"text-align: left;\">休憩 (10分)</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00 - 20:05</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">nikkieさん <a href=\"https://x.com/ftnext\" rel=\"nofollow\">@ftnext</a></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:07 - 20:12</td>\n<td style=\"text-align: left;\">Platform Engineeringで「守り、加速する」AI駆動開発</td>\n<td style=\"text-align: left;\">Tempei Ono さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:14 - 20:19</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">調整中</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:21 - 20:26</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">調整中</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:28 - 20:33</td>\n<td style=\"text-align: left;\">AIに任せ切れるかは \"評価\" で決まる ― 重要なのは【理由・制約・成果物を、AI とともに言語化し続ける】こと ―</td>\n<td style=\"text-align: left;\">スナガクさん <a href=\"https://x.com/suna_gaku\" rel=\"nofollow\">@suna_gaku</a></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35 - 20:55</td>\n<td style=\"text-align: left;\">Q&amp;A（20分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55 - 21:00</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (5分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LT5分＋画面切り替え等を考慮し1人7分としています。</p>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング）\n<font color=\"red\"><br>※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h3>スポンサー</h3>\n<p>本イベントでは、ご協賛いただける企業・団体様ならびに、運営をサポートしていただける個人の方を募集しております。<br>\nご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。</p>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>\n<h2>カンファレンスのお知らせ</h2>\n<p><b>7/30(木), 7/31(金)に『AI駆動開発カンファレンス2026夏』を開催いたします！！<br>\nこちらもぜひご参加ください！！<br>\n参加登録サイト：<a href=\"https://aid.connpass.com/event/392229/\" rel=\"nofollow\">https://aid.connpass.com/event/392229/</a> </b></p>\n<p><img alt=\"イベント告知画像その1\" src=\"https://i.gyazo.com/1c4cdfd7b6910731e09f7234bff0e099.png\"></p>",
+      "description": "<h2><b>AI自走環境整備で組織のAI駆動開発を推進！<br>AGENTS&zwnj;.md/Skills/SubAgentsなどのAI自走環境整備・運用の実践テクニックを語り尽くす！</b></h2>\n<p>「AI自走環境整備・運用スペシャル」シリーズでは、これまでagent.&zwnj;.mdやSkills、トークン効率、AIレビューの責任分界といった、実装〜レビュー工程の自走環境を扱ってきました。</p>\n<p>今回は、レビュー中心の議論から軸を変え、Issue自動生成 → タスク分解 → 複数エージェントによるPR作成までを、どこまでAIに自走させられるか、今まさに試行錯誤されている内容を以下のようなテーマで登壇いただきます！<br></p>\n<ul>\n<li>AIによるIssue自律起票の仕組みと、Issue品質を担保するセルフ検証ループ</li>\n<li>1つのIssueを複数のサブタスクへ自動分解し、依存関係を踏まえて割り振るオーケストレーション設計</li>\n<li>複数コーディングエージェントを並列で走らせる際のhandoff・ブランチ戦略・衝突回避・エスカレーション設計</li>\n<li>Issue起票からPR作成まで自走させた際に、人間が介入すべき境界線の設計</li>\n</ul>\n<p>ぜひご参加ください！</p>\n<p></p>\n<h3>AI 駆動開発勉強会とは？</h3>\n<hr>\n<blockquote>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！<br>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！\n(<a href=\"https://aid.connpass.com/\" rel=\"nofollow\">https://aid.connpass.com/</a> より)</p>\n</blockquote>\n<h2><font color=\"red\">LT枠応募の方は抽選落ちの場合も現地参加可能です。<br>入館申請は不要です。当日は直接会場へお越しください。</font></h2>\n<hr>\n<h2>日時</h2>\n<p><strong>2026年7月21日(火) 19:00〜21:00（開場：18:40）</strong></p>\n<p><b>配信機材の調整等により開始が遅れる場合がございます。予めご了承ください。</b><br>\n<b><font color=\"red\">開始直前は受付が混み合うことが予想されるため、現地参加の方は余裕をもって会場にお越しください。</font></b><br></p>\n<p>※現地参加の方向けに<strong>21:00〜22:00 懇親会（ネットワーキング）</strong> を予定しています。<br>\n配信機材の調整等により開始が若干遅れる場合がございます。予めご了承ください。</p>\n<hr>\n<h2>開催形式</h2>\n<p><strong>オンサイト＋オンライン（ハイブリッド）</strong></p>\n<ul>\n<li>現地参加：ファインディ イベントスペース</li>\n<li>オンライン：YouTube Live配信</li>\n<li>申し込み：Connpass（本サイト）</li>\n<li>配信URLは参加者向けに後日掲載します</li>\n</ul>\n<p><b><font color=\"red\">※LT枠応募の方は抽選落ちの場合も現地参加可能です</font></b></p>\n<hr>\n<h2>会場</h2>\n<p>ファインディ株式会社 イベントスペース<br>\n〒141-0032 東京都品川区大崎1丁目2−2（アートヴィレッジ大崎セントラルタワー）5F</p>\n<p>Googleマップ：<a href=\"https://maps.app.goo.gl/PPTgX4SFLEAif3rz5&lt;br>\" rel=\"nofollow\">https://maps.app.goo.gl/PPTgX4SFLEAif3rz5<br></a>\n・JR「大崎駅」東口より徒歩約5分程度<br>\n・JR「五反田駅」東口より徒歩7分程度</p>\n<p>5Fに上がった後、案内標識に沿ってイベントスペースまでお越しください。</p>\n<hr>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (5分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:07 - 19:12</td>\n<td style=\"text-align: left;\">ファインディのAgenticWorkflowを支えるSkill達</td>\n<td style=\"text-align: left;\">戸田さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:14 - 19:19</td>\n<td style=\"text-align: left;\">もう“AI製の屍アプリ”は量産しない。マイクロエージェント×人間による検証ループ設計</td>\n<td style=\"text-align: left;\">Toruさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:21 - 19:26</td>\n<td style=\"text-align: left;\">Multicaで30個のミニプロジェクトをAIエージェント運用して見えてきたこと</td>\n<td style=\"text-align: left;\">eiei114さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:28 - 19:33</td>\n<td style=\"text-align: left;\">Issue の起票者に、聞いてはいけない質問がある タスク自走ハーネスの“質問の宛先”設計</td>\n<td style=\"text-align: left;\">satoh-y-0323 さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35 - 19:40</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">LT募集枠</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40 - 19:50</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50 - 20:00</td>\n<td style=\"text-align: left;\">休憩 (10分)</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00 - 20:05</td>\n<td style=\"text-align: left;\">「困難は分割せよ（仮）」</td>\n<td style=\"text-align: left;\">nikkieさん <a href=\"https://x.com/ftnext\" rel=\"nofollow\">@ftnext</a></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:07 - 20:12</td>\n<td style=\"text-align: left;\">Platform Engineeringで「守り、加速する」AI駆動開発</td>\n<td style=\"text-align: left;\">Tempei Ono さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:14 - 20:19</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">調整中</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:21 - 20:26</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">調整中</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:28 - 20:33</td>\n<td style=\"text-align: left;\">AIに任せ切れるかは \"評価\" で決まる ― 重要なのは【理由・制約・成果物を、AI とともに言語化し続ける】こと ―</td>\n<td style=\"text-align: left;\">スナガクさん <a href=\"https://x.com/suna_gaku\" rel=\"nofollow\">@suna_gaku</a></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35 - 20:55</td>\n<td style=\"text-align: left;\">Q&amp;A（20分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55 - 21:00</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (5分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LT5分＋画面切り替え等を考慮し1人7分としています。</p>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング）\n<font color=\"red\"><br>※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h3>スポンサー</h3>\n<p>本イベントでは、ご協賛いただける企業・団体様ならびに、運営をサポートしていただける個人の方を募集しております。<br>\nご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。</p>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>\n<h2>カンファレンスのお知らせ</h2>\n<p><b>7/30(木), 7/31(金)に『AI駆動開発カンファレンス2026夏』を開催いたします！！<br>\nこちらもぜひご参加ください！！<br>\n参加登録サイト：<a href=\"https://aid.connpass.com/event/392229/\" rel=\"nofollow\">https://aid.connpass.com/event/392229/</a> </b></p>\n<p><img alt=\"イベント告知画像その1\" src=\"https://i.gyazo.com/1c4cdfd7b6910731e09f7234bff0e099.png\"></p>",
       "url": "https://aid.connpass.com/event/399888/",
       "image_url": "https://media.connpass.com/thumbs/51/b3/51b3f2c6637417b935e626aaec3f815e.png",
       "hash_tag": "AI自走環境",
@@ -335,40 +335,9 @@
       "owner_id": 614007,
       "owner_nickname": "HisayaUchida",
       "owner_display_name": "h-ucchi",
-      "accepted": 614,
+      "accepted": 627,
       "waiting": 0,
-      "updated_at": "2026-07-20T19:47:40+09:00"
-    },
-    {
-      "id": 397051,
-      "title": "AIエージェント実践 Night in 東京 vol.2",
-      "catch": "エンジニア向けのAIエージェントの活用事例や情報交換の交流を東京で開催！",
-      "description": "<h1>💡コンセプト</h1>\n<p>本会では、 <strong>「AIエージェント」</strong> をテーマに運用や関連技術、devOpsなどの事例を持ち寄り、短時間の事例共有＋交流を行うエンジニア向け勉強会です。</p>\n<p>今回のトピックは テーマを広く設定し、各社の発表内容は自由（テーマ被りOK）。\n成功事例だけでなく、詰まったポイントや実運用での課題も含めて共有します。</p>\n<p>発表後の交流会では、軽食をご用意しています。\n「こんなことで困っている」「他社ではどうしている？」といった悩みやアイデアも気軽に共有しながら、参加者同士で交流できる時間です。\n登壇者への質問や情報交換も大歓迎ですので、ぜひ最後までご参加ください。</p>\n<h1>🧑‍💻対象者</h1>\n<ul>\n<li>AIエージェントの導入を検討しているエンジニア</li>\n<li>PoC（試験導入）を進めているが実運用に悩んでいる人</li>\n<li>実際に運用していて課題を感じている人</li>\n<li>他社のリアルな取り組みを知りたいPM / EM / データ・ML / 情シス</li>\n</ul>\n<h1>🗓️開催概要</h1>\n<ul>\n<li>開催日：2026年7月21日(火)</li>\n<li>開場&amp;受付：18:30〜</li>\n<li>時間：19:00 - 21:00</li>\n<li>主催：スパイスコード株式会社 / JBCC株式会社</li>\n<li>参加費：無料</li>\n<li>会場：JBCC株式会社＠八重洲</li>\n</ul>\n<h1>⏰ タイムテーブル</h1>\n<p>タイムテーブルは変更する場合がございます。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>タイトル</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30 - 19:00</td>\n<td>受付</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:00 - 19:05</td>\n<td>オープニング</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:05 - 19:20</td>\n<td><strong>3大クラウドのAIエージェント構築機能を使い比べてみよう</strong></td>\n<td>みのるん @minorun365 / <a href=\"https://kddi-agile.com/\" rel=\"nofollow\">KDDIアジャイル開発センター株式会社</a></td>\n</tr>\n<tr>\n<td>19:20 - 19:25</td>\n<td>質疑応答①（5分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:25 - 19:40</td>\n<td><strong>言語モデルの中のグローバル・ワークスペースとJ-lens</strong></td>\n<td>中河 宏文 / <a href=\"https://corp.spicescode.co.jp/\" rel=\"nofollow\">スパイスコード株式会社</a></td>\n</tr>\n<tr>\n<td>19:40 - 19:45</td>\n<td>質疑応答②（5分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:45 - 20:00</td>\n<td><strong>「生成AIを取り巻くOSSの最新動向」 - ジャンル別で勢いのある生成AI関連のOSSを紹介します。</strong></td>\n<td>山﨑 拓己 / <a href=\"https://www.jbcc.co.jp/\" rel=\"nofollow\">JBCC株式会社</a></td>\n</tr>\n<tr>\n<td>20:00 - 20:05</td>\n<td>質疑応答③（5分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:05 - 21:00</td>\n<td>懇親会（軽食あり）</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<h1>🎤 発表概要</h1>\n<h2>🧑‍🏫：3大クラウドのAIエージェント構築機能を使い比べてみよう</h2>\n<h3>みのるん @minorun365 / <a href=\"https://kddi-agile.com/\" rel=\"nofollow\">KDDIアジャイル開発センター株式会社</a></h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\"></p>\n<p>クラウドやAI分野を中心に、技術の楽しさを伝える活動をしています。<br>\nAWS AI Hero, AWS Samurai, Qiita 2025 Top Contributor / 著書「AIエージェント開発/運用入門」,「Amazon Bedrock AgentCore実践入門」ほか</p>\n<h2>🧑‍🏫：言語モデルの中のグローバル・ワークスペースとJ-lens</h2>\n<h3>中河 宏文 / <a href=\"https://corp.spicescode.co.jp/\" rel=\"nofollow\">スパイスコード株式会社</a></h3>\n<p><img src=\"https://ca.slack-edge.com/TFDLNUU7Q-UR946FEJX-fffc3c2d7dee-512\" width=\"300\"></p>\n<p>MIRACLE LINUXで通信キャリア向けLinux Kernelの研究開発を行い、Cerevoの製品開発に従事。ミクシィでLead Engineerを務め、渡米後Drivemodeを共同創業→本田技術研究所に売却。帰国後メルカリAIチームでTech Leadを務め、スパイスコードを創業</p>\n<h2>🧑‍🏫：「生成AIを取り巻くOSSの最新動向」 - ジャンル別で勢いのある生成AI関連のOSSを紹介します。</h2>\n<h3>山﨑 拓己 / <a href=\"https://www.jbcc.co.jp/\" rel=\"nofollow\">JBCC株式会社</a></h3>\n<p><img src=\"https://s3.ap-northeast-1.amazonaws.com/img.jawsug-yokohama.connpass.com.10/takumi_yamazaki.jpg\" width=\"300\"></p>\n<ul>\n<li>2017年4月 JBCC入社</li>\n<li>SI事業部イノーベース兼ソリューション事業部CIL</li>\n<li>主に生成AI・機械学習関連のプロジェクトを担当</li>\n<li>趣味：コーヒー、生成AI、kaggle</li>\n</ul>\n<h1>ご参加に際してのお願い</h1>\n<ul>\n<li>入館には参加者へ発行されたQRコードが必要になります。そのQRコードの発行のため、<strong>申込時に以下の情報を必ずご記入いただき、受付で申し込み時のお名前を確認させていただきます。</strong><ul>\n<li>会社名</li>\n<li>お名前</li>\n<li>メールアドレス</li>\n</ul>\n</li>\n</ul>\n<h1>アンチハラスメントポリシー</h1>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーカ、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。全ての利用者が快適に使っていただけるように、本イベントではこれらのハラスメント行為を許容しません。</p>\n<h1>注意事項</h1>\n<ul>\n<li>イベント中に録画や撮影をし、記録や情報発信のために活用させていただく場合がございます。</li>\n<li>技術交流が目的の勉強会ですので、知識の共有および、参加者同士の交流を目的としない参加はお断りしています。 </li>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者では一切責任を負いません</li>\n</ul>",
-      "url": "https://ai-agent-night-in-tokyo.connpass.com/event/397051/",
-      "image_url": "https://media.connpass.com/thumbs/0b/44/0b44f606e42d656a78943c69df68116e.png",
-      "hash_tag": "AIエージェント実践Night",
-      "started_at": "2026-07-21T18:30:00+09:00",
-      "ended_at": "2026-07-21T21:00:00+09:00",
-      "published_at": "2026-06-23T00:01:36+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17501,
-        "subdomain": "ai-agent-night-in-tokyo",
-        "title": "AIエージェント実践 Night in 東京",
-        "url": "https://ai-agent-night-in-tokyo.connpass.com/"
-      },
-      "address": "東京都中央区八重洲二丁目２番１号（東京ミッドタウン八重洲　八重洲セントラルタワー１３階）",
-      "place": "ＪＢＣＣ株式会社",
-      "lat": "35.679297500000",
-      "lon": "139.769091600000",
-      "owner_id": 1190,
-      "owner_nickname": "endout",
-      "owner_display_name": "endy",
-      "accepted": 29,
-      "waiting": 0,
-      "updated_at": "2026-07-20T18:40:37+09:00"
+      "updated_at": "2026-07-21T10:13:33+09:00"
     },
     {
       "id": 398279,
@@ -399,7 +368,38 @@
       "owner_display_name": "INTER-Mediator",
       "accepted": 7,
       "waiting": 0,
-      "updated_at": "2026-06-23T08:13:05+09:00"
+      "updated_at": "2026-07-21T10:49:30+09:00"
+    },
+    {
+      "id": 397051,
+      "title": "AIエージェント実践 Night in 東京 vol.2",
+      "catch": "エンジニア向けのAIエージェントの活用事例や情報交換の交流を東京で開催！",
+      "description": "<h1>💡コンセプト</h1>\n<p>本会では、 <strong>「AIエージェント」</strong> をテーマに運用や関連技術、devOpsなどの事例を持ち寄り、短時間の事例共有＋交流を行うエンジニア向け勉強会です。</p>\n<p>今回のトピックは テーマを広く設定し、各社の発表内容は自由（テーマ被りOK）。\n成功事例だけでなく、詰まったポイントや実運用での課題も含めて共有します。</p>\n<p>発表後の交流会では、軽食をご用意しています。\n「こんなことで困っている」「他社ではどうしている？」といった悩みやアイデアも気軽に共有しながら、参加者同士で交流できる時間です。\n登壇者への質問や情報交換も大歓迎ですので、ぜひ最後までご参加ください。</p>\n<h1>🧑‍💻対象者</h1>\n<ul>\n<li>AIエージェントの導入を検討しているエンジニア</li>\n<li>PoC（試験導入）を進めているが実運用に悩んでいる人</li>\n<li>実際に運用していて課題を感じている人</li>\n<li>他社のリアルな取り組みを知りたいPM / EM / データ・ML / 情シス</li>\n</ul>\n<h1>🗓️開催概要</h1>\n<ul>\n<li>開催日：2026年7月21日(火)</li>\n<li>開場&amp;受付：18:30〜</li>\n<li>時間：19:00 - 21:00</li>\n<li>主催：スパイスコード株式会社 / JBCC株式会社</li>\n<li>参加費：無料</li>\n<li>会場：JBCC株式会社＠八重洲</li>\n</ul>\n<h1>⏰ タイムテーブル</h1>\n<p>タイムテーブルは変更する場合がございます。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>タイトル</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30 - 19:00</td>\n<td>受付</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:00 - 19:05</td>\n<td>オープニング</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:05 - 19:20</td>\n<td><strong>3大クラウドのAIエージェント構築機能を使い比べてみよう</strong></td>\n<td>みのるん @minorun365 / <a href=\"https://kddi-agile.com/\" rel=\"nofollow\">KDDIアジャイル開発センター株式会社</a></td>\n</tr>\n<tr>\n<td>19:20 - 19:25</td>\n<td>質疑応答①（5分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:25 - 19:40</td>\n<td><strong>言語モデルの中のグローバル・ワークスペースとJ-lens</strong></td>\n<td>中河 宏文 / <a href=\"https://corp.spicescode.co.jp/\" rel=\"nofollow\">スパイスコード株式会社</a></td>\n</tr>\n<tr>\n<td>19:40 - 19:45</td>\n<td>質疑応答②（5分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:45 - 20:00</td>\n<td><strong>「生成AIを取り巻くOSSの最新動向」 - ジャンル別で勢いのある生成AI関連のOSSを紹介します。</strong></td>\n<td>山﨑 拓己 / <a href=\"https://www.jbcc.co.jp/\" rel=\"nofollow\">JBCC株式会社</a></td>\n</tr>\n<tr>\n<td>20:00 - 20:05</td>\n<td>質疑応答③（5分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:05 - 21:00</td>\n<td>懇親会（軽食あり）</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<h1>🎤 発表概要</h1>\n<h2>🧑‍🏫：3大クラウドのAIエージェント構築機能を使い比べてみよう</h2>\n<h3>みのるん @minorun365 / <a href=\"https://kddi-agile.com/\" rel=\"nofollow\">KDDIアジャイル開発センター株式会社</a></h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\"></p>\n<p>クラウドやAI分野を中心に、技術の楽しさを伝える活動をしています。<br>\nAWS AI Hero, AWS Samurai, Qiita 2025 Top Contributor / 著書「AIエージェント開発/運用入門」,「Amazon Bedrock AgentCore実践入門」ほか</p>\n<h2>🧑‍🏫：言語モデルの中のグローバル・ワークスペースとJ-lens</h2>\n<h3>中河 宏文 / <a href=\"https://corp.spicescode.co.jp/\" rel=\"nofollow\">スパイスコード株式会社</a></h3>\n<p><img src=\"https://ca.slack-edge.com/TFDLNUU7Q-UR946FEJX-fffc3c2d7dee-512\" width=\"300\"></p>\n<p>MIRACLE LINUXで通信キャリア向けLinux Kernelの研究開発を行い、Cerevoの製品開発に従事。ミクシィでLead Engineerを務め、渡米後Drivemodeを共同創業→本田技術研究所に売却。帰国後メルカリAIチームでTech Leadを務め、スパイスコードを創業</p>\n<h2>🧑‍🏫：「生成AIを取り巻くOSSの最新動向」 - ジャンル別で勢いのある生成AI関連のOSSを紹介します。</h2>\n<h3>山﨑 拓己 / <a href=\"https://www.jbcc.co.jp/\" rel=\"nofollow\">JBCC株式会社</a></h3>\n<p><img src=\"https://s3.ap-northeast-1.amazonaws.com/img.jawsug-yokohama.connpass.com.10/takumi_yamazaki.jpg\" width=\"300\"></p>\n<ul>\n<li>2017年4月 JBCC入社</li>\n<li>SI事業部イノーベース兼ソリューション事業部CIL</li>\n<li>主に生成AI・機械学習関連のプロジェクトを担当</li>\n<li>趣味：コーヒー、生成AI、kaggle</li>\n</ul>\n<h1>ご参加に際してのお願い</h1>\n<ul>\n<li>入館には参加者へ発行されたQRコードが必要になります。そのQRコードの発行のため、<strong>申込時に以下の情報を必ずご記入いただき、受付で申し込み時のお名前を確認させていただきます。</strong><ul>\n<li>会社名</li>\n<li>お名前</li>\n<li>メールアドレス</li>\n</ul>\n</li>\n</ul>\n<h1>アンチハラスメントポリシー</h1>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーカ、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。全ての利用者が快適に使っていただけるように、本イベントではこれらのハラスメント行為を許容しません。</p>\n<h1>注意事項</h1>\n<ul>\n<li>イベント中に録画や撮影をし、記録や情報発信のために活用させていただく場合がございます。</li>\n<li>技術交流が目的の勉強会ですので、知識の共有および、参加者同士の交流を目的としない参加はお断りしています。 </li>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</li>\n<li>貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者では一切責任を負いません</li>\n</ul>",
+      "url": "https://ai-agent-night-in-tokyo.connpass.com/event/397051/",
+      "image_url": "https://media.connpass.com/thumbs/0b/44/0b44f606e42d656a78943c69df68116e.png",
+      "hash_tag": "AIエージェント実践Night",
+      "started_at": "2026-07-21T18:30:00+09:00",
+      "ended_at": "2026-07-21T21:00:00+09:00",
+      "published_at": "2026-06-23T00:01:36+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17501,
+        "subdomain": "ai-agent-night-in-tokyo",
+        "title": "AIエージェント実践 Night in 東京",
+        "url": "https://ai-agent-night-in-tokyo.connpass.com/"
+      },
+      "address": "東京都中央区八重洲二丁目２番１号（東京ミッドタウン八重洲　八重洲セントラルタワー１３階）",
+      "place": "ＪＢＣＣ株式会社",
+      "lat": "35.679297500000",
+      "lon": "139.769091600000",
+      "owner_id": 1190,
+      "owner_nickname": "endout",
+      "owner_display_name": "endy",
+      "accepted": 27,
+      "waiting": 0,
+      "updated_at": "2026-07-20T18:40:37+09:00"
     },
     {
       "id": 399659,
@@ -428,7 +428,7 @@
       "owner_id": 46947,
       "owner_nickname": "HironoriWashizaki",
       "owner_display_name": "HironoriWashizaki",
-      "accepted": 26,
+      "accepted": 25,
       "waiting": 0,
       "updated_at": "2026-07-11T19:30:51+09:00"
     },
@@ -485,7 +485,7 @@
       "owner_id": 600939,
       "owner_nickname": "SerikyakuN",
       "owner_display_name": "勢理客 那帆",
-      "accepted": 14,
+      "accepted": 16,
       "waiting": 0,
       "updated_at": "2026-06-26T14:31:14+09:00"
     }
