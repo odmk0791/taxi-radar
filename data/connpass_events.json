@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-21T19:59:38.275238+09:00",
+  "fetched_at": "2026-07-21T21:24:56.914997+09:00",
   "date": "20260721",
   "count": 17,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 994116,
       "owner_nickname": "sekky_404",
       "owner_display_name": "sekky_404",
-      "accepted": 0,
+      "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-07-21T18:44:59+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-06-25T10:58:18+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "新宿区西新宿新宿野村ビル1-26-2 F28",
       "place": "株式会社エーエルジェイ",
@@ -135,7 +135,7 @@
       "published_at": "2026-06-26T01:51:00+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17486,
         "subdomain": "recerqa48",
@@ -228,7 +228,7 @@
       "published_at": "2026-06-05T12:01:37+09:00",
       "limit": 53,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15655,
         "subdomain": "browser-and-ui",
@@ -278,37 +278,6 @@
       "updated_at": "2026-07-21T17:49:51+09:00"
     },
     {
-      "id": 397434,
-      "title": "「金融機能を組み込む」だけでは終わらない — AIエージェント時代の新規事業と業務自動化",
-      "catch": "Agentic APIが切り拓く事業会社の次の一手",
-      "description": "<h2>「金融機能を組み込む」だけでは終わらない  — AIエージェント時代の新規事業と業務自動化 Agentic APIが切り拓く事業会社の次の一手</h2>\n<p>GMOあおぞらネット銀行株式会社（以下、当社）は、AIエージェントが銀行機能に直接アクセスし、かつ安全に利用できる新たな金融API群「Agentic API」を、より多くの方に障壁なくご利用いただけるよう、2026年7月21日（火）19時より、事業会社さま向けに「Agentic API」に関するセミナー＆パネルディスカッション（リアルイベント）を開催いたします。当イベントは、より多くの方に金融機能を自社のサービスに組み込んだり、新規ビジネスの企画立案や自社システムの自動化につなげたりしていただくきっかけとして、また来場者の皆さまとの直接のコミュニケーションを通じてAgentic APIに対するご期待やご要望をヒアリングさせていただく場として開催いたします。</p>\n<h3>「Agentic API」とは</h3>\n<p>「Agentic API」は、AIエージェントが取引主体として金融サービスを利用することを想定して設計された、次世代の金融API群です。従来の人手による操作を前提としたAPIとは異なり、AIエージェントが自律的かつ安全に金融操作を実行できる環境の提供を目指します。</p>\n<h2>重要-参加方法について</h2>\n<p>本ページよりお申し込みいただき、下記、【受付フロー】のご確認をお願いします。<br>\n<strong>【受付フロー】</strong><br>\nイベント当日は渋谷フクラス8Fの受付にてconnpassの受付票のご提示をお願いいたします。<br>\n<strong><span style=\"color: red;\">受付時間　18：30開始　（最終受付　19：15）</span></strong><br>\n※セキュリティの都合上、19：15以降の入場は出来かねます。<br>\n※お時間に余裕を持ってお越しいただきますようお願いいたします。<br>\n会場：渋谷　GMO Yours・フクラス（JR渋谷駅南改札西口より徒歩約1分）<br>\nアクセス：<a href=\"https://www.gmo.jp/company-profile/access-map/fukuras/\" rel=\"nofollow\">https://www.gmo.jp/company-profile/access-map/fukuras/</a></p>\n<h2>イベント詳細</h2>\n<p>当イベントでは、BaaS（Banking as a Service）による金融機能の組み込みだけにとどまらない「Agentic API」で広がる金融の可能性について、Anthropic Japan（アンソロピック ジャパン）の田村 圭氏、株式会社SCIENの田端そら氏をお招きしパネルディスカッションを実施いたします。あわせて、7月3日（金）にリリースを予定している当社のサンドボックス環境「API実験場sunabar（スナバー）2.0」（以下、sunabar2.0）に実装されるMCP(*1)サーバを活用し、AIエージェントによる残高照会・入出金明細取得・振込等の金融取引をデモンストレーションでご覧いただけるコンテンツもご用意しています。</p>\n<p>また後半は登壇者と参加者の皆さまとの交流会も予定しております。</p>\n<p>(*1) Model Context Protocol（モデル・コンテキスト・プロトコル／略称：MCP）\nAIに「外部の情報源や道具」を安全につなぐための共通ルールで、AIと社内データ・業務システム・ファイル・各種サービスを同じ作法で接続できるようにする仕組みを指します。</p>\n<h2>対象</h2>\n<p>開発者さま、パートナー企業さまほか、AIエージェントの活用や金融APIにご関心のある皆さま</p>\n<p>※当社の口座をお持ちでない方もご参加いただけます。<br>\n※他金融機関の方はご遠慮頂いております。</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>コンテンツ・セッション</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>会場受付開始（最終受付19:15）</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00-20:00</td>\n<td>「金融機能を組み込む」だけでは終わらない  — AIエージェント時代の新規事業と業務自動化 Agentic APIが切り拓く事業会社の次の一手</td>\n<td>■第一部<br>田村 圭（Anthropic シニアアカウントエグゼクティブ）<br>宇津井 悠史（当社  組込型金融事業本部 本部長）<br>司会：小野沢 宏晋（当社 執行役員/一般社団法人Fintech協会 理事）<br>■第二部<br>田端 そら（株式会社SCIEN 代表取締役）<br>白岩 良（当社  テクノロジー・エンジニアリング本部 本部長）<br>司会：矢上 聡洋（当社 執行役員 CTO）</td>\n</tr>\n<tr>\n<td>20:00-21:00</td>\n<td>交流会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>クローズ</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇者紹介</h2>\n<h3>田村 圭（Anthropic シニアアカウントエグゼクティブ）<br></h3>\n<p><img alt=\"田村 圭\" src=\"https://i.imgur.com/jhuKzfE.jpeg\"></p>\n<blockquote>\n三菱商事にて約8年間、投資業務等に従事した後、アマゾン ウェブ サービス ジャパン（AWS）に入社。公共部門にてスタートアップ支援、大学・研究機関および政府AI開発支援プログラム「GENIAC」を担当する事業開発マネージャーを歴任し、その後AI/ML・生成AI領域のGo-To-Marketスペシャリストとして企業の生成AI活用を推進。2026年3月より現職。Anthropicにて日本の企業・組織へのClaude導入と生成AI活用支援を担当する。専門は生成AIの事業開発およびエンタープライズ導入支援。</blockquote>\n\n<h3>田端そら（株式会社SCIEN 代表取締役）<br></h3>\n<p><img alt=\"田端そら\" src=\"https://i.imgur.com/jDFIYol.jpeg\"></p>\n<blockquote>\n東京大学大学院修士卒。自動運転・AIの研究に従事し、松尾研究所では自動運転スタートアップ・TIER IVとの共同研究に参画。同課程在学中の2024年に株式会社SCIENを創業。学生時代にはNHKロボコンにて準優勝し、ものづくりとAIの両面に知見を持つ。現在は製造業をはじめとする幅広い業界に向けて、自動運転関連の最先端技術を用い、PoCにとどまらず現場への実装・運用まで見据えた「SCIENCE-Ready」なAIソリューションの開発・導入を牽引している。</blockquote>\n\n<h3>小野沢 宏晋（GMOあおぞらネット銀行株式会社 執行役員/一般社団法人Fintech協会 理事）<br></h3>\n<p><img alt=\"小野沢 宏晋\" src=\"https://us06file.zoom.us/public/file/cTcffWRPRPuAbFEJhCygzg/MS4yLsATGFswtep1q6_M1AYKfQft3wLT8R1iruY243FJSmeQ/cTcffWRPRPuAbFEJhCygzg?attachType=preview&amp;subType=100x100\"></p>\n<blockquote>\n外資系ITベンダーで金融機関様担当として、営業や、サービスのご提供に従事。 「ITを提供する立場」から、 「ITを使って事業を行う立場」へ転身 2019年夏より、“テクノロジーバンク”を謳う GMOあおぞらネット銀行にJoinして挑戦中。一般社団法人Fintech協会 理事</blockquote>\n<p><br></p>\n<h3>宇津井 悠史（GMOあおぞらネット銀行株式会社 組込型金融事業本部 本部長）<br></h3>\n<p><img alt=\"宇津井 悠史\" src=\"https://s3.techplay.jp/tp-images/event/1a471cc4da830646ee89ba163c472763d8b44d33.jpg\" title=\"宇津井 悠史\"></p>\n<blockquote>\n法科大学院卒業後、GMOグループにjoin。子会社にて営業マネジメント、新規事業・部署立ち上げなどを経験し、2018年よりインターネット銀行準備室に参画。現在は、組込型金融事業と内為を中心とした決済事業を統括。\n</blockquote>\n<p><br></p>\n<h3>矢上 聡洋（GMOあおぞらネット銀行株式会社 執行役員 CTO）<br></h3>\n<p><img alt=\"矢上 聡洋\" src=\"https://us06web.zoom.us/w_p/88068774692/1fbc71fb-bd9f-4a68-a140-8b330f15798c.png\"></p>\n<blockquote>\n日本アイ・ビー・エム（株）入社後、カード・信販系のお客様担当エンジニア、SE、アーキテクトとして従事。その後、金融系チーフアーキテクト部門責任者として、金融全般のお客様におけるエンタープライズアーキテクチャ、インフラアーキテクチャ設計を推進。2019年7月よりGMOあおぞらネット銀行にて現職、sunabar開発をリード。\n</blockquote>\n<p><br></p>\n<h3>白岩 良（GMOあおぞらネット銀行株式会社 テクノロジー・エンジニアリング本部 本部長）<br></h3>\n<p><img alt=\"白岩 良\" src=\"https://i.imgur.com/zEDuNww.jpeg\"></p>\n<blockquote>\n組込系エンジニアを経てSIerで約11年システム開発に従事し、2019年に同社へ入社。勘定系を含む全てのフロント領域(インターネットバンキングやアプリ、口座開設審査、顧客管理、社内システムなど)を管掌し、要件定義からアーキテクチャ設計、外部パートナーを含む開発マネジメントまで幅広く統括する。\n</blockquote>\n<p><br></p>\n<h2>注意事項</h2>\n<p>・お申込みは先着順となります。あらかじめご了承ください。<br>\n・当社の判断において申込をキャンセルさせて頂く場合がございます。ご了承ください。<br>\n・当日予告なく時間配分・内容が変更になる可能性がございます。あらかじめご了承ください。<br></p>\n<h2>禁煙のご協力について</h2>\n<p>会場内は全面禁煙となっております。 受付の際にお渡しする入館用カードはビル外に出るときに回収いたします。一度外に出ると再入場ができません。 つきましては、イベント中の喫煙はご遠慮くださいますようお願い申し上げます。</p>\n<h2>個人情報の取り扱いについて</h2>\n<p>当社（GMOあおぞらネット銀行株式会社）の個人情報保護ポリシーに基づき適切に取り扱います。<br>\n個人情報保護ポリシー：<a href=\"https://gmo-aozora.com/policy/privacy-policy.html\" rel=\"nofollow\">https://gmo-aozora.com/policy/privacy-policy.html</a></p>\n<h2>主催・協力</h2>\n<p>主催：GMOあおぞらネット銀行株式会社<br>\n協力：GMOインターネットグループ</p>",
-      "url": "https://gmo.connpass.com/event/397434/",
-      "image_url": "https://media.connpass.com/thumbs/c1/27/c12746ca697f1a1fdf7132dfdef1c6d4.png",
-      "hash_tag": "",
-      "started_at": "2026-07-21T19:00:00+09:00",
-      "ended_at": "2026-07-21T21:00:00+09:00",
-      "published_at": "2026-07-02T14:55:21+09:00",
-      "limit": 80,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 2748,
-        "subdomain": "gmo",
-        "title": "GMOインターネットグループ",
-        "url": "https://gmo.connpass.com/"
-      },
-      "address": "東京都渋谷区道玄坂1-2-3　渋谷フクラス",
-      "place": "GMOインターネットグループ　グループ第2本社　GMOYours・フクラス",
-      "lat": "35.657590400000",
-      "lon": "139.700151800000",
-      "owner_id": 377235,
-      "owner_nickname": "GMOAozoraNetBank",
-      "owner_display_name": "GMOAozoraNetBank",
-      "accepted": 49,
-      "waiting": 0,
-      "updated_at": "2026-07-21T12:22:29+09:00"
-    },
-    {
       "id": 398258,
       "title": "【増枠】SUMO.ai #04 - マルチモーダルAI技術勉強会",
       "catch": "研究と実践が交差する、自然言語・音声・画像・機械学習の横断的AI技術の交流会です",
@@ -340,6 +309,37 @@
       "updated_at": "2026-07-18T08:43:30+09:00"
     },
     {
+      "id": 397434,
+      "title": "「金融機能を組み込む」だけでは終わらない — AIエージェント時代の新規事業と業務自動化",
+      "catch": "Agentic APIが切り拓く事業会社の次の一手",
+      "description": "<h2>「金融機能を組み込む」だけでは終わらない  — AIエージェント時代の新規事業と業務自動化 Agentic APIが切り拓く事業会社の次の一手</h2>\n<p>GMOあおぞらネット銀行株式会社（以下、当社）は、AIエージェントが銀行機能に直接アクセスし、かつ安全に利用できる新たな金融API群「Agentic API」を、より多くの方に障壁なくご利用いただけるよう、2026年7月21日（火）19時より、事業会社さま向けに「Agentic API」に関するセミナー＆パネルディスカッション（リアルイベント）を開催いたします。当イベントは、より多くの方に金融機能を自社のサービスに組み込んだり、新規ビジネスの企画立案や自社システムの自動化につなげたりしていただくきっかけとして、また来場者の皆さまとの直接のコミュニケーションを通じてAgentic APIに対するご期待やご要望をヒアリングさせていただく場として開催いたします。</p>\n<h3>「Agentic API」とは</h3>\n<p>「Agentic API」は、AIエージェントが取引主体として金融サービスを利用することを想定して設計された、次世代の金融API群です。従来の人手による操作を前提としたAPIとは異なり、AIエージェントが自律的かつ安全に金融操作を実行できる環境の提供を目指します。</p>\n<h2>重要-参加方法について</h2>\n<p>本ページよりお申し込みいただき、下記、【受付フロー】のご確認をお願いします。<br>\n<strong>【受付フロー】</strong><br>\nイベント当日は渋谷フクラス8Fの受付にてconnpassの受付票のご提示をお願いいたします。<br>\n<strong><span style=\"color: red;\">受付時間　18：30開始　（最終受付　19：15）</span></strong><br>\n※セキュリティの都合上、19：15以降の入場は出来かねます。<br>\n※お時間に余裕を持ってお越しいただきますようお願いいたします。<br>\n会場：渋谷　GMO Yours・フクラス（JR渋谷駅南改札西口より徒歩約1分）<br>\nアクセス：<a href=\"https://www.gmo.jp/company-profile/access-map/fukuras/\" rel=\"nofollow\">https://www.gmo.jp/company-profile/access-map/fukuras/</a></p>\n<h2>イベント詳細</h2>\n<p>当イベントでは、BaaS（Banking as a Service）による金融機能の組み込みだけにとどまらない「Agentic API」で広がる金融の可能性について、Anthropic Japan（アンソロピック ジャパン）の田村 圭氏、株式会社SCIENの田端そら氏をお招きしパネルディスカッションを実施いたします。あわせて、7月3日（金）にリリースを予定している当社のサンドボックス環境「API実験場sunabar（スナバー）2.0」（以下、sunabar2.0）に実装されるMCP(*1)サーバを活用し、AIエージェントによる残高照会・入出金明細取得・振込等の金融取引をデモンストレーションでご覧いただけるコンテンツもご用意しています。</p>\n<p>また後半は登壇者と参加者の皆さまとの交流会も予定しております。</p>\n<p>(*1) Model Context Protocol（モデル・コンテキスト・プロトコル／略称：MCP）\nAIに「外部の情報源や道具」を安全につなぐための共通ルールで、AIと社内データ・業務システム・ファイル・各種サービスを同じ作法で接続できるようにする仕組みを指します。</p>\n<h2>対象</h2>\n<p>開発者さま、パートナー企業さまほか、AIエージェントの活用や金融APIにご関心のある皆さま</p>\n<p>※当社の口座をお持ちでない方もご参加いただけます。<br>\n※他金融機関の方はご遠慮頂いております。</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>コンテンツ・セッション</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>会場受付開始（最終受付19:15）</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00-20:00</td>\n<td>「金融機能を組み込む」だけでは終わらない  — AIエージェント時代の新規事業と業務自動化 Agentic APIが切り拓く事業会社の次の一手</td>\n<td>■第一部<br>田村 圭（Anthropic シニアアカウントエグゼクティブ）<br>宇津井 悠史（当社  組込型金融事業本部 本部長）<br>司会：小野沢 宏晋（当社 執行役員/一般社団法人Fintech協会 理事）<br>■第二部<br>田端 そら（株式会社SCIEN 代表取締役）<br>白岩 良（当社  テクノロジー・エンジニアリング本部 本部長）<br>司会：矢上 聡洋（当社 執行役員 CTO）</td>\n</tr>\n<tr>\n<td>20:00-21:00</td>\n<td>交流会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>クローズ</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇者紹介</h2>\n<h3>田村 圭（Anthropic シニアアカウントエグゼクティブ）<br></h3>\n<p><img alt=\"田村 圭\" src=\"https://i.imgur.com/jhuKzfE.jpeg\"></p>\n<blockquote>\n三菱商事にて約8年間、投資業務等に従事した後、アマゾン ウェブ サービス ジャパン（AWS）に入社。公共部門にてスタートアップ支援、大学・研究機関および政府AI開発支援プログラム「GENIAC」を担当する事業開発マネージャーを歴任し、その後AI/ML・生成AI領域のGo-To-Marketスペシャリストとして企業の生成AI活用を推進。2026年3月より現職。Anthropicにて日本の企業・組織へのClaude導入と生成AI活用支援を担当する。専門は生成AIの事業開発およびエンタープライズ導入支援。</blockquote>\n\n<h3>田端そら（株式会社SCIEN 代表取締役）<br></h3>\n<p><img alt=\"田端そら\" src=\"https://i.imgur.com/jDFIYol.jpeg\"></p>\n<blockquote>\n東京大学大学院修士卒。自動運転・AIの研究に従事し、松尾研究所では自動運転スタートアップ・TIER IVとの共同研究に参画。同課程在学中の2024年に株式会社SCIENを創業。学生時代にはNHKロボコンにて準優勝し、ものづくりとAIの両面に知見を持つ。現在は製造業をはじめとする幅広い業界に向けて、自動運転関連の最先端技術を用い、PoCにとどまらず現場への実装・運用まで見据えた「SCIENCE-Ready」なAIソリューションの開発・導入を牽引している。</blockquote>\n\n<h3>小野沢 宏晋（GMOあおぞらネット銀行株式会社 執行役員/一般社団法人Fintech協会 理事）<br></h3>\n<p><img alt=\"小野沢 宏晋\" src=\"https://us06file.zoom.us/public/file/cTcffWRPRPuAbFEJhCygzg/MS4yLsATGFswtep1q6_M1AYKfQft3wLT8R1iruY243FJSmeQ/cTcffWRPRPuAbFEJhCygzg?attachType=preview&amp;subType=100x100\"></p>\n<blockquote>\n外資系ITベンダーで金融機関様担当として、営業や、サービスのご提供に従事。 「ITを提供する立場」から、 「ITを使って事業を行う立場」へ転身 2019年夏より、“テクノロジーバンク”を謳う GMOあおぞらネット銀行にJoinして挑戦中。一般社団法人Fintech協会 理事</blockquote>\n<p><br></p>\n<h3>宇津井 悠史（GMOあおぞらネット銀行株式会社 組込型金融事業本部 本部長）<br></h3>\n<p><img alt=\"宇津井 悠史\" src=\"https://s3.techplay.jp/tp-images/event/1a471cc4da830646ee89ba163c472763d8b44d33.jpg\" title=\"宇津井 悠史\"></p>\n<blockquote>\n法科大学院卒業後、GMOグループにjoin。子会社にて営業マネジメント、新規事業・部署立ち上げなどを経験し、2018年よりインターネット銀行準備室に参画。現在は、組込型金融事業と内為を中心とした決済事業を統括。\n</blockquote>\n<p><br></p>\n<h3>矢上 聡洋（GMOあおぞらネット銀行株式会社 執行役員 CTO）<br></h3>\n<p><img alt=\"矢上 聡洋\" src=\"https://us06web.zoom.us/w_p/88068774692/1fbc71fb-bd9f-4a68-a140-8b330f15798c.png\"></p>\n<blockquote>\n日本アイ・ビー・エム（株）入社後、カード・信販系のお客様担当エンジニア、SE、アーキテクトとして従事。その後、金融系チーフアーキテクト部門責任者として、金融全般のお客様におけるエンタープライズアーキテクチャ、インフラアーキテクチャ設計を推進。2019年7月よりGMOあおぞらネット銀行にて現職、sunabar開発をリード。\n</blockquote>\n<p><br></p>\n<h3>白岩 良（GMOあおぞらネット銀行株式会社 テクノロジー・エンジニアリング本部 本部長）<br></h3>\n<p><img alt=\"白岩 良\" src=\"https://i.imgur.com/zEDuNww.jpeg\"></p>\n<blockquote>\n組込系エンジニアを経てSIerで約11年システム開発に従事し、2019年に同社へ入社。勘定系を含む全てのフロント領域(インターネットバンキングやアプリ、口座開設審査、顧客管理、社内システムなど)を管掌し、要件定義からアーキテクチャ設計、外部パートナーを含む開発マネジメントまで幅広く統括する。\n</blockquote>\n<p><br></p>\n<h2>注意事項</h2>\n<p>・お申込みは先着順となります。あらかじめご了承ください。<br>\n・当社の判断において申込をキャンセルさせて頂く場合がございます。ご了承ください。<br>\n・当日予告なく時間配分・内容が変更になる可能性がございます。あらかじめご了承ください。<br></p>\n<h2>禁煙のご協力について</h2>\n<p>会場内は全面禁煙となっております。 受付の際にお渡しする入館用カードはビル外に出るときに回収いたします。一度外に出ると再入場ができません。 つきましては、イベント中の喫煙はご遠慮くださいますようお願い申し上げます。</p>\n<h2>個人情報の取り扱いについて</h2>\n<p>当社（GMOあおぞらネット銀行株式会社）の個人情報保護ポリシーに基づき適切に取り扱います。<br>\n個人情報保護ポリシー：<a href=\"https://gmo-aozora.com/policy/privacy-policy.html\" rel=\"nofollow\">https://gmo-aozora.com/policy/privacy-policy.html</a></p>\n<h2>主催・協力</h2>\n<p>主催：GMOあおぞらネット銀行株式会社<br>\n協力：GMOインターネットグループ</p>",
+      "url": "https://gmo.connpass.com/event/397434/",
+      "image_url": "https://media.connpass.com/thumbs/c1/27/c12746ca697f1a1fdf7132dfdef1c6d4.png",
+      "hash_tag": "",
+      "started_at": "2026-07-21T19:00:00+09:00",
+      "ended_at": "2026-07-21T21:00:00+09:00",
+      "published_at": "2026-07-02T14:55:21+09:00",
+      "limit": 80,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 2748,
+        "subdomain": "gmo",
+        "title": "GMOインターネットグループ",
+        "url": "https://gmo.connpass.com/"
+      },
+      "address": "東京都渋谷区道玄坂1-2-3　渋谷フクラス",
+      "place": "GMOインターネットグループ　グループ第2本社　GMOYours・フクラス",
+      "lat": "35.657590400000",
+      "lon": "139.700151800000",
+      "owner_id": 377235,
+      "owner_nickname": "GMOAozoraNetBank",
+      "owner_display_name": "GMOAozoraNetBank",
+      "accepted": 47,
+      "waiting": 0,
+      "updated_at": "2026-07-21T12:22:29+09:00"
+    },
+    {
       "id": 399888,
       "title": "【AI駆動開発】AI自走環境整備・運用スペシャル #4 〜ハーネス・ループエンジニアリングへの入り口",
       "catch": "Issue自動生成からマルチエージェントによるPR作成まで、自走度向上に挑む！",
@@ -352,7 +352,7 @@
       "published_at": "2026-07-08T18:01:23+09:00",
       "limit": 1114,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14543,
         "subdomain": "aid",
@@ -366,7 +366,7 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 672,
+      "accepted": 674,
       "waiting": 0,
       "updated_at": "2026-07-21T14:44:42+09:00"
     },
@@ -383,7 +383,7 @@
       "published_at": "2026-06-23T08:13:05+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2289,
         "subdomain": "inter-mediator",
@@ -414,7 +414,7 @@
       "published_at": "2026-06-23T00:01:36+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17501,
         "subdomain": "ai-agent-night-in-tokyo",
