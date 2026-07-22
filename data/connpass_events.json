@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-23T07:01:53.724702+09:00",
+  "fetched_at": "2026-07-23T08:55:40.994111+09:00",
   "date": "20260723",
   "count": 19,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 904254,
       "owner_nickname": "ROSCAM",
       "owner_display_name": "Kota_Takahashi",
-      "accepted": 13,
+      "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-07-22T11:02:09+09:00"
     },
@@ -304,7 +304,7 @@
       "owner_id": 211636,
       "owner_nickname": "suke083",
       "owner_display_name": "suke",
-      "accepted": 54,
+      "accepted": 55,
       "waiting": 0,
       "updated_at": "2026-07-22T20:41:32+09:00"
     },
@@ -335,7 +335,7 @@
       "owner_id": 1022533,
       "owner_nickname": "yohyoshi",
       "owner_display_name": "yohyoshi",
-      "accepted": 318,
+      "accepted": 319,
       "waiting": 0,
       "updated_at": "2026-07-22T00:12:37+09:00"
     },
@@ -368,7 +368,7 @@
       "owner_display_name": "tonionagauzzi",
       "accepted": 29,
       "waiting": 0,
-      "updated_at": "2026-07-23T06:58:59+09:00"
+      "updated_at": "2026-07-23T07:34:25+09:00"
     },
     {
       "id": 394914,
@@ -397,7 +397,7 @@
       "owner_id": 196214,
       "owner_nickname": "RyuuichiWatanabe",
       "owner_display_name": "ryuichi1208",
-      "accepted": 57,
+      "accepted": 56,
       "waiting": 0,
       "updated_at": "2026-07-22T15:28:58+09:00"
     },
@@ -428,7 +428,7 @@
       "owner_id": 80606,
       "owner_nickname": "shosuz",
       "owner_display_name": "Shotaro Suzuki",
-      "accepted": 460,
+      "accepted": 462,
       "waiting": 16,
       "updated_at": "2026-07-18T13:22:29+09:00"
     },
