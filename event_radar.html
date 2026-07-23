@@ -71,10 +71,21 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 }
 .sc-stat b { color:var(--accent); font-weight:700; }
 
+.sc-legend {
+  display:flex; gap:13px; padding:6px 13px 7px; background:var(--bg);
+  border-bottom:1px solid var(--border); font-size:10px; color:var(--muted);
+}
+.sc-legend span { display:flex; align-items:center; gap:4px; }
+.sc-legend .lg { width:9px; height:9px; border-radius:2px; display:inline-block; }
+.sc-legend .lg.s4 { background:var(--red); }
+.sc-legend .lg.s3 { background:var(--amber); }
+.sc-legend .lg.s2 { background:var(--accent); }
+.sc-legend .lg.s1 { background:var(--muted); }
+
 .sc-dhdr {
   display:flex; align-items:center; gap:8px; padding:11px 13px 6px;
   background:var(--bg); border-bottom:1px solid var(--border);
-  position:sticky; top:127px; z-index:170;
+  position:sticky; top:151px; z-index:170;
 }
 .sc-md {
   font-family:'Rajdhani',sans-serif; font-size:19px; font-weight:700;
@@ -548,6 +559,12 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
     </select>
   </div>
   <div class="sc-stat" id="scStat">読み込み中…</div>
+  <div class="sc-legend">
+    <span><i class="lg s4"></i>1万人〜</span>
+    <span><i class="lg s3"></i>5千人〜</span>
+    <span><i class="lg s2"></i>2千人〜</span>
+    <span><i class="lg s1"></i>〜2千人</span>
+  </div>
   <div id="scList"></div>
 </div>
 
@@ -1235,7 +1252,7 @@ function clearForm(){
 let schedData=null, schedLoading=false;
 const SC_WD=['日','月','火','水','木','金','土'];
 
-function scScale(c){ return c>10000?4 : c>5000?3 : c>2000?2 : 1; }
+function scScale(c){ return c>=10000?4 : c>=5000?3 : c>=2000?2 : 1; }
 function scCap(c){
   if(c>=10000) return (c/10000).toFixed(c%10000?1:0)+'万人';
   if(c>=1000)  return (c/1000).toFixed(c%1000?1:0)+'千人';
@@ -1345,8 +1362,8 @@ function renderSched(){
         +`</div></div>`;
     });
   });
-  h+='<div class="sc-note"><b>左の色帯</b>　赤=1万人超 / 橙=5千人超 / 青=2千人超 / 灰=それ以下<br>'
-    +'<b>推定</b>は連続公演の中日で、実際には公演がない場合があります。</div>';
+  h+='<div class="sc-note"><b>推定</b>バッジは連続公演の中日です。'
+    +'実際には公演がない場合があります。</div>';
   document.getElementById('scList').innerHTML=h;
 }
 
