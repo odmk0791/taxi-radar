@@ -55,6 +55,90 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 }
 .tab.active { color:var(--accent); border-color:var(--accent); }
 
+/* ── 予定表タブ ── */
+.sc-ctrl {
+  display:flex; gap:7px; padding:10px 12px; background:var(--surface);
+  border-bottom:1px solid var(--border); position:sticky; top:88px; z-index:180;
+}
+.sc-sel {
+  background:var(--surface2); color:var(--text); border:1px solid var(--border);
+  border-radius:7px; padding:7px 8px; font-size:11.5px; font-family:inherit;
+  flex:1; min-width:0;
+}
+.sc-stat {
+  padding:6px 13px; font-size:10.5px; color:var(--muted);
+  background:var(--bg); border-bottom:1px solid var(--border);
+}
+.sc-stat b { color:var(--accent); font-weight:700; }
+
+.sc-dhdr {
+  display:flex; align-items:center; gap:8px; padding:11px 13px 6px;
+  background:var(--bg); border-bottom:1px solid var(--border);
+  position:sticky; top:127px; z-index:170;
+}
+.sc-md {
+  font-family:'Rajdhani',sans-serif; font-size:19px; font-weight:700;
+  color:var(--accent); letter-spacing:1px; line-height:1;
+}
+.sc-wd {
+  font-size:11px; font-weight:700; padding:2px 7px; border-radius:5px;
+  background:var(--surface2); color:var(--muted);
+}
+.sc-wd.sat { color:#4a9eff; background:rgba(74,158,255,.12); }
+.sc-wd.sun { color:var(--red); background:rgba(240,48,64,.12); }
+.sc-cnt { margin-left:auto; font-size:10.5px; color:var(--muted); }
+.sc-dhdr.today { border-bottom-color:var(--accent); }
+.sc-dhdr.today .sc-md::after {
+  content:'TODAY'; font-size:8.5px; background:var(--accent); color:#000;
+  padding:1.5px 5px; border-radius:4px; margin-left:7px;
+  vertical-align:middle; letter-spacing:.5px;
+}
+.sc-dhdr.past { opacity:.4; }
+
+/* イベント行：イベント名＋会場が主役、時刻は従属 */
+.sc-row {
+  padding:11px 13px 11px 16px; border-bottom:1px solid rgba(28,45,66,.5);
+  position:relative;
+}
+.sc-row::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; }
+.sc-row.s4::before { background:var(--red); }
+.sc-row.s3::before { background:var(--amber); }
+.sc-row.s2::before { background:var(--accent); }
+.sc-row.s1::before { background:var(--muted); }
+.sc-row.past { opacity:.4; }
+.sc-nm {
+  font-size:14px; font-weight:700; line-height:1.45;
+  word-break:break-word; margin-bottom:4px; color:var(--text);
+}
+.sc-vn {
+  font-size:12.5px; font-weight:500; color:var(--accent);
+  line-height:1.4; margin-bottom:5px; word-break:break-word;
+}
+.sc-sub { display:flex; align-items:center; gap:7px; flex-wrap:wrap; }
+.sc-tm {
+  font-family:'Rajdhani',sans-serif; font-size:12px; font-weight:600;
+  color:var(--muted); letter-spacing:.5px;
+}
+.sc-cap {
+  font-family:'Rajdhani',sans-serif; font-size:11px; font-weight:600;
+  color:var(--muted);
+}
+.sc-gj {
+  font-size:9px; padding:1px 5px; border-radius:4px;
+  background:var(--surface2); color:var(--muted);
+}
+.sc-est {
+  font-size:9px; padding:1px 5px; border-radius:4px;
+  background:rgba(240,160,0,.12); color:var(--amber);
+  border:1px solid rgba(240,160,0,.3);
+}
+.sc-note {
+  margin:12px; padding:11px 13px; background:var(--surface);
+  border-left:3px solid var(--amber); border-radius:0 7px 7px 0;
+  font-size:11px; line-height:1.75; color:var(--muted);
+}
+.sc-note b { color:var(--amber); }
+
 /* ── MAP ── */
 #map { width:100%; height:240px; }
 .leaflet-container { background:#08111e; }
@@ -279,6 +363,7 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
   <div class="tab active" id="tabRadar" onclick="switchTab('radar')">📡 レーダー</div>
   <div class="tab" id="tabVenue" onclick="switchTab('venue')">🏛 会場</div>
   <div class="tab" id="tabReg"   onclick="switchTab('reg')">＋ 登録</div>
+  <div class="tab" id="tabSched" onclick="switchTab('sched')">📅 予定表</div>
 </div>
 
 <!-- ═══════════ RADAR TAB ═══════════ -->
@@ -444,6 +529,28 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
   </div>
 </div>
 
+<!-- ══ 予定表（大箱スケジュール） ══ -->
+<div id="viewSched" style="display:none">
+  <div class="sc-ctrl">
+    <select class="sc-sel" id="scMonth" onchange="renderSched()">
+      <option value="all">全期間</option>
+    </select>
+    <select class="sc-sel" id="scScale" onchange="renderSched()">
+      <option value="0">全規模</option>
+      <option value="10000">1万人以上</option>
+      <option value="5000">5千人以上</option>
+      <option value="2000">2千人以上</option>
+    </select>
+    <select class="sc-sel" id="scDay" onchange="renderSched()">
+      <option value="all">全曜日</option>
+      <option value="we">土日のみ</option>
+      <option value="wd">平日のみ</option>
+    </select>
+  </div>
+  <div class="sc-stat" id="scStat">読み込み中…</div>
+  <div id="scList"></div>
+</div>
+
 <script>
 // ═══ STATE ═══
 let userLat=null, userLng=null, map=null, userMarker=null;
@@ -490,10 +597,13 @@ function switchTab(t){
   document.getElementById('viewRadar').style.display = t==='radar'?'':'none';
   document.getElementById('viewVenue').style.display = t==='venue'?'':'none';
   document.getElementById('viewReg').style.display   = t==='reg'?'':'none';
+  document.getElementById('viewSched').style.display = t==='sched'?'':'none';
   document.getElementById('tabRadar').classList.toggle('active', t==='radar');
   document.getElementById('tabVenue').classList.toggle('active', t==='venue');
   document.getElementById('tabReg').classList.toggle('active',   t==='reg');
+  document.getElementById('tabSched').classList.toggle('active', t==='sched');
   if(t==='reg') renderRegList();
+  if(t==='sched') loadSched();
   if(t==='radar' && map) setTimeout(()=>map.invalidateSize(),50);
 }
 
@@ -1119,6 +1229,125 @@ function clearForm(){
   ['fName','fVenue','fAddr','fLat','fLng','fStart','fEnd'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('fDate').value=todayJST();
   setScale(1);
+}
+
+// ═══ 予定表（大箱スケジュール） ═══
+let schedData=null, schedLoading=false;
+const SC_WD=['日','月','火','水','木','金','土'];
+
+function scScale(c){ return c>10000?4 : c>5000?3 : c>2000?2 : 1; }
+function scCap(c){
+  if(c>=10000) return (c/10000).toFixed(c%10000?1:0)+'万人';
+  if(c>=1000)  return (c/1000).toFixed(c%1000?1:0)+'千人';
+  return c+'人';
+}
+function scEsc(s){
+  return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+
+function loadSched(){
+  if(schedData || schedLoading) return;
+  schedLoading = true;
+  document.getElementById('scStat').textContent='読み込み中…';
+  Papa.parse(BIGBOX_SHEET_URL+'&t='+Date.now(),{
+    download:true, header:true, skipEmptyLines:true,
+    transformHeader:h=>h.trim().replace(/^\uFEFF/,''),
+    complete:(res)=>{
+      schedLoading=false;
+      schedData=(res.data||[]).map(r=>{
+        const d=(r['日付']||'').trim();
+        if(!/^\d{4}-\d{2}-\d{2}$/.test(d)) return null;
+        const dt=new Date(d+'T00:00:00+09:00');
+        return {
+          date:d, dow:dt.getDay(),
+          mo:dt.getMonth()+1, da:dt.getDate(),
+          name:(r['イベント名']||'').trim(),
+          venue:(r['会場']||'').trim(),
+          genre:(r['ジャンル']||'').trim(),
+          cap:parseInt(r['収容'])||0,
+          start:(r['開演']||'').trim(),
+          end:(r['終演目安']||'').trim(),
+          conf:(r['確度']||'').trim()
+        };
+      }).filter(Boolean)
+        .sort((a,b)=> a.date<b.date?-1 : a.date>b.date?1 : (a.start<b.start?-1:1));
+
+      // 月セレクトを構築
+      const ms=[...new Set(schedData.map(e=>e.date.slice(0,7)))].sort();
+      const sel=document.getElementById('scMonth');
+      while(sel.options.length>1) sel.remove(1);
+      ms.forEach(m=>{
+        const o=document.createElement('option');
+        o.value=m; o.textContent=m.slice(0,4)+'年'+parseInt(m.slice(5),10)+'月';
+        sel.appendChild(o);
+      });
+      const nowM=todayJST().slice(0,7);
+      if(ms.includes(nowM)) sel.value=nowM;
+      renderSched();
+    },
+    error:()=>{
+      schedLoading=false;
+      document.getElementById('scStat').textContent='読み込み失敗';
+      document.getElementById('scList').innerHTML=
+        '<div class="empty"><div class="empty-ico">⚠️</div>'
+        +'<div class="empty-ttl">予定表を取得できません</div>'
+        +'<div class="empty-sub">スプレッドシートの公開設定を確認してください</div></div>';
+    }
+  });
+}
+
+function renderSched(){
+  if(!schedData) return;
+  const fm=document.getElementById('scMonth').value;
+  const fs=parseInt(document.getElementById('scScale').value,10);
+  const fd=document.getElementById('scDay').value;
+  const today=todayJST();
+
+  const rows=schedData.filter(e=>{
+    if(fm!=='all' && e.date.slice(0,7)!==fm) return false;
+    if(fs && e.cap<fs) return false;
+    if(fd==='we' && !(e.dow===0||e.dow===6)) return false;
+    if(fd==='wd' && (e.dow===0||e.dow===6)) return false;
+    return true;
+  });
+
+  const days=[...new Set(rows.map(e=>e.date))];
+  document.getElementById('scStat').innerHTML=
+    `<b>${rows.length}</b> 公演 / <b>${days.length}</b> 日`;
+
+  if(!rows.length){
+    document.getElementById('scList').innerHTML=
+      '<div class="empty"><div class="empty-ico">📋</div>'
+      +'<div class="empty-ttl">該当する公演なし</div>'
+      +'<div class="empty-sub">条件を変えてお試しください</div></div>';
+    return;
+  }
+
+  let h='';
+  days.forEach(d=>{
+    const es=rows.filter(e=>e.date===d);
+    const e0=es[0];
+    const past = d<today;
+    const cls = e0.dow===0?'sun' : e0.dow===6?'sat' : '';
+    h+=`<div class="sc-dhdr${d===today?' today':''}${past?' past':''}">`
+      +`<span class="sc-md">${e0.mo}/${e0.da}</span>`
+      +`<span class="sc-wd ${cls}">${SC_WD[e0.dow]}</span>`
+      +`<span class="sc-cnt">${es.length}件</span></div>`;
+    es.forEach(e=>{
+      h+=`<div class="sc-row s${scScale(e.cap)}${past?' past':''}">`
+        +`<div class="sc-nm">${scEsc(e.name)}</div>`
+        +`<div class="sc-vn">${scEsc(e.venue)}</div>`
+        +`<div class="sc-sub">`
+        +`<span class="sc-tm">${e.start||'--:--'}${e.end?' → '+e.end:''}</span>`
+        +`<span class="sc-cap">${scCap(e.cap)}</span>`
+        + (e.genre && e.genre!=='コンサート' ? `<span class="sc-gj">${scEsc(e.genre)}</span>`:'')
+        + (e.conf==='推定' ? `<span class="sc-est">推定</span>`:'')
+        +`</div></div>`;
+    });
+  });
+  h+='<div class="sc-note"><b>左の色帯</b>　赤=1万人超 / 橙=5千人超 / 青=2千人超 / 灰=それ以下<br>'
+    +'<b>推定</b>は連続公演の中日で、実際には公演がない場合があります。</div>';
+  document.getElementById('scList').innerHTML=h;
 }
 
 // ═══ INIT ═══
