@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-24T06:58:46.280427+09:00",
+  "fetched_at": "2026-07-24T07:57:59.725923+09:00",
   "date": "20260724",
   "count": 18,
   "events": [
@@ -196,7 +196,7 @@
       "owner_id": 244426,
       "owner_nickname": "voicy_jp",
       "owner_display_name": "voicy_jp",
-      "accepted": 26,
+      "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-07-16T18:05:47+09:00"
     },
@@ -532,8 +532,8 @@
       "owner_id": 3542,
       "owner_nickname": "yoshidashingo",
       "owner_display_name": "Shingo 吉田真吾",
-      "accepted": 932,
-      "waiting": 18,
+      "accepted": 931,
+      "waiting": 15,
       "updated_at": "2026-07-21T10:11:37+09:00"
     }
   ]
