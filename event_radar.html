@@ -725,17 +725,24 @@ async function loadVenueSheet(){
   return new Promise((resolve)=>{
     Papa.parse(VENUE_SHEET_URL+'&t='+Date.now(),{
       download:true, header:true, skipEmptyLines:true,
+      transformHeader:h=>h.trim().replace(/^\uFEFF/,''),
       complete:(res)=>{
-        venueSheet=(res.data||[]).filter(v=>v.name&&v.lat&&v.lng).map(v=>({
+        const raw=(res.data||[]);
+        venueSheet=raw.filter(v=>v.name&&v.lat&&v.lng).map(v=>({
           name:v.name, ward:v.ward||'', category:v.category||'',
           capacity:parseInt(v.capacity)||0,
           lat:parseFloat(v.lat), lng:parseFloat(v.lng),
           schedule_url:(v.schedule_url||'').trim(),
           guest_type:v.guest_type||''
         }));
+        if(!venueSheet.length){
+          window._venueErr = raw.length
+            ? '(受信'+raw.length+'行だが列名不一致: '+Object.keys(raw[0]||{}).slice(0,4).join(',')+')'
+            : '(受信0行)';
+        } else { window._venueErr=''; }
         resolve(venueSheet);
       },
-      error:()=>resolve([])
+      error:(e)=>{ window._venueErr='(読込エラー:'+(e&&e.message||'不明')+')'; resolve([]); }
     });
   });
 }
@@ -767,7 +774,14 @@ async function loadVenuesNearby(){
 }
 
 function renderVenues(){
-  if(!venueSheet.length) return;
+  const vs0=document.getElementById('venueStatus');
+  if(!venueSheet.length){
+    if(vs0){ vs0.textContent='⚠ 会場台帳を読めませんでした '+(window._venueErr||''); vs0.className='venue-status'; }
+    document.getElementById('venueList').innerHTML=
+      '<div class="empty"><div class="empty-ico">⚠</div><div class="empty-ttl">台帳0件</div>'
+      +'<div class="empty-sub">'+(window._venueErr||'スプレッドシートの公開設定をご確認ください')+'</div></div>';
+    return;
+  }
   const range=parseInt(document.getElementById('venueRange').value);
   const cat=document.getElementById('venueCat').value;
   const urlOnly=document.getElementById('venueUrlOnly').checked;
@@ -786,7 +800,7 @@ function renderVenues(){
   const el=document.getElementById('venueList');
   if(!list.length){
     el.innerHTML='<div class="empty"><div class="empty-ico">🔍</div><div class="empty-ttl">該当会場なし</div><div class="empty-sub">範囲やカテゴリを変えてお試しください</div></div>';
-    vs.textContent='0件'; vs.className='venue-status';
+    vs.textContent='0件 '+(window._venueErr||'(台帳'+venueSheet.length+'件読込済)'); vs.className='venue-status';
     return;
   }
   vs.textContent='✅ '+list.length+'会場（近い順）'; vs.className='venue-status ok';
