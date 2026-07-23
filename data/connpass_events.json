@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-24T05:53:27.129726+09:00",
+  "fetched_at": "2026-07-24T06:58:46.280427+09:00",
   "date": "20260724",
   "count": 18,
   "events": [
@@ -201,37 +201,6 @@
       "updated_at": "2026-07-16T18:05:47+09:00"
     },
     {
-      "id": 395501,
-      "title": "大吉祥寺.pm 2026 前夜祭",
-      "catch": "盛り上げていくぞ！！",
-      "description": "<h2>大吉祥寺.pmとは？</h2>\n<p>こちらを参照下さい！</p>\n<p><a href=\"https://kichijojipm.connpass.com/event/387499/\" rel=\"nofollow\">https://kichijojipm.connpass.com/event/387499/</a></p>\n<p>会場の諸注意も本編に準じます。\n（ただし、動画の撮影は有りません）</p>\n<h2>タイムテーブル</h2>\n<p>タイムテーブルは下記forteeページにて公開しております。</p>\n<p><a href=\"https://fortee.jp/dai-kichijojipm-2026/timetable\" rel=\"nofollow\">https://fortee.jp/dai-kichijojipm-2026/timetable</a></p>\n<h3>スポンサーの募集</h3>\n<p>スポンサーについては既に締め切っております。</p>\n<h3>運営について</h3>\n<p><a href=\"http://大吉祥寺.pm\" rel=\"nofollow\">大吉祥寺.pm</a> 2026は、吉祥寺.pmと、JPA(Japan Perl Association)との共同開催となります。</p>\n<h3>Code of Conductについて</h3>\n<p><a href=\"http://今回の大吉祥寺.pm\" rel=\"nofollow\">今回の大吉祥寺.pm</a> 2026では参加人数も多くなるため、Code of Conduct(行動規範)を用意しています。</p>\n<p>内容については、本編のconnpassをご参照下さい。</p>",
-      "url": "https://kichijojipm.connpass.com/event/395501/",
-      "image_url": "https://media.connpass.com/thumbs/58/bb/58bb8e2b0a99fe7a2e95c57a605b2b2d.png",
-      "hash_tag": "kichijojipm",
-      "started_at": "2026-07-24T19:00:00+09:00",
-      "ended_at": "2026-07-24T21:15:00+09:00",
-      "published_at": "2026-05-30T12:09:01+09:00",
-      "limit": 50,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 1614,
-        "subdomain": "kichijojipm",
-        "title": "吉祥寺.pm",
-        "url": "https://kichijojipm.connpass.com/"
-      },
-      "address": "〒140-0011 東京都品川区東大井５丁目１８−１",
-      "place": "大井町きゅりあん第2講習室",
-      "lat": "35.606178600000",
-      "lon": "139.735943300000",
-      "owner_id": 737113,
-      "owner_nickname": "canly_aki",
-      "owner_display_name": "sudoakiy",
-      "accepted": 48,
-      "waiting": 0,
-      "updated_at": "2026-07-02T21:31:43+09:00"
-    },
-    {
       "id": 397324,
       "title": "[再増枠] EM Meetup #21 〜トークンマキシングとトークンマネジメントのはざま〜",
       "catch": "エンジニアリングマネージャというキーワードを中心に色んなことを語るイベントです",
@@ -318,6 +287,37 @@
       "accepted": 0,
       "waiting": 0,
       "updated_at": "2026-07-23T22:55:51+09:00"
+    },
+    {
+      "id": 395501,
+      "title": "大吉祥寺.pm 2026 前夜祭",
+      "catch": "盛り上げていくぞ！！",
+      "description": "<h2>大吉祥寺.pmとは？</h2>\n<p>こちらを参照下さい！</p>\n<p><a href=\"https://kichijojipm.connpass.com/event/387499/\" rel=\"nofollow\">https://kichijojipm.connpass.com/event/387499/</a></p>\n<p>会場の諸注意も本編に準じます。\n（ただし、動画の撮影は有りません）</p>\n<h2>タイムテーブル</h2>\n<p>タイムテーブルは下記forteeページにて公開しております。</p>\n<p><a href=\"https://fortee.jp/dai-kichijojipm-2026/timetable\" rel=\"nofollow\">https://fortee.jp/dai-kichijojipm-2026/timetable</a></p>\n<h3>スポンサーの募集</h3>\n<p>スポンサーについては既に締め切っております。</p>\n<h3>運営について</h3>\n<p><a href=\"http://大吉祥寺.pm\" rel=\"nofollow\">大吉祥寺.pm</a> 2026は、吉祥寺.pmと、JPA(Japan Perl Association)との共同開催となります。</p>\n<h3>Code of Conductについて</h3>\n<p><a href=\"http://今回の大吉祥寺.pm\" rel=\"nofollow\">今回の大吉祥寺.pm</a> 2026では参加人数も多くなるため、Code of Conduct(行動規範)を用意しています。</p>\n<p>内容については、本編のconnpassをご参照下さい。</p>",
+      "url": "https://kichijojipm.connpass.com/event/395501/",
+      "image_url": "https://media.connpass.com/thumbs/58/bb/58bb8e2b0a99fe7a2e95c57a605b2b2d.png",
+      "hash_tag": "kichijojipm",
+      "started_at": "2026-07-24T19:00:00+09:00",
+      "ended_at": "2026-07-24T21:15:00+09:00",
+      "published_at": "2026-05-30T12:09:01+09:00",
+      "limit": 50,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 1614,
+        "subdomain": "kichijojipm",
+        "title": "吉祥寺.pm",
+        "url": "https://kichijojipm.connpass.com/"
+      },
+      "address": "〒140-0011 東京都品川区東大井５丁目１８−１",
+      "place": "大井町きゅりあん第2講習室",
+      "lat": "35.606178600000",
+      "lon": "139.735943300000",
+      "owner_id": 737113,
+      "owner_nickname": "canly_aki",
+      "owner_display_name": "sudoakiy",
+      "accepted": 48,
+      "waiting": 0,
+      "updated_at": "2026-07-02T21:31:43+09:00"
     },
     {
       "id": 393639,
@@ -533,7 +533,7 @@
       "owner_nickname": "yoshidashingo",
       "owner_display_name": "Shingo 吉田真吾",
       "accepted": 932,
-      "waiting": 17,
+      "waiting": 18,
       "updated_at": "2026-07-21T10:11:37+09:00"
     }
   ]
