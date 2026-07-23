@@ -134,6 +134,7 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 .hole-badge.hole-high { background:rgba(240,160,0,.22); color:#ffc850; border:1px solid var(--amber); }
 .hole-badge.hole-mid  { background:rgba(0,200,240,.15); color:var(--accent); border:1px solid var(--accent); }
 .hole-badge.hole-low  { background:var(--surface2); color:var(--muted); border:1px solid var(--border); }
+.hole-badge.bigbox-badge { background:rgba(240,80,120,.18); color:#ff7ba0; border:1px solid #ff7ba0; }
 
 .evt-meta { display:flex; flex-wrap:wrap; gap:6px 12px; font-size:11px; color:var(--muted); }
 .evt-meta .hi   { color:var(--text); }
@@ -455,6 +456,8 @@ const MANUAL_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/dat
 const VENUE_MASTER_URL='https://raw.githubusercontent.com/odmk0791/taxi-radar/main/data/venue_master.json';
 // 会場台帳スプレッドシート（HironoriさんがURL等を追記）
 const VENUE_SHEET_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vS7U-m7Q6G76MsSeIaJRZRmtnjwsJpWYeIo9MRJNhjv-OaDvYCRmJ-9dDHslnc1J6D5plIVEbxx5zZz/pub?gid=1016022732&single=true&output=csv';
+// 大箱予定表（東京ドーム・武道館・有明アリーナ等の先々の公演）
+const BIGBOX_SHEET_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vS7U-m7Q6G76MsSeIaJRZRmtnjwsJpWYeIo9MRJNhjv-OaDvYCRmJ-9dDHslnc1J6D5plIVEbxx5zZz/pub?gid=1070077435&single=true&output=csv';
 let venueSheet=[]; // スプレッドシートから読んだ会場台帳
 let venueMaster=[]; // 会場マスタ（穴スコア計算用）
 let sortMode='urgency'; // 'urgency'(終了が近い順) or 'hole'(穴スコア順)
@@ -684,7 +687,9 @@ function renderList(){
     const pips=Array(4).fill(0).map((_,j)=>'<div class="scale-pip'+(j<sc?' on':'')+'"></div>').join('');
     // 穴スコアバッジ（マスタにある会場のみ）
     let holeBadge='';
-    if(ev._hole!=null){
+    if(ev._source==='bigbox'){
+      holeBadge='<span class="hole-badge bigbox-badge">🏟 大箱</span>';
+    } else if(ev._hole!=null){
       const hcls = ev._hole>=4?'hole-high' : ev._hole>=2?'hole-mid' : 'hole-low';
       holeBadge='<span class="hole-badge '+hcls+'">穴 '+ev._hole+'</span>';
     }
@@ -931,11 +936,48 @@ async function startScan(){
   }catch(e){ manualErr='(手動取得エラー:'+(e.name||e.message||'不明')+')'; }
   window._manualErr=manualErr;
 
+  // 2.7) 大箱予定表（スプレッドシート）から今日の分
+  let bigboxEvents=[];
+  try{
+    bigboxEvents = await new Promise((resolve)=>{
+      Papa.parse(BIGBOX_SHEET_URL+'&t='+Date.now(),{
+        download:true, header:true, skipEmptyLines:true,
+        transformHeader:h=>h.trim().replace(/^\uFEFF/,''),
+        complete:(res)=>{
+          const out=(res.data||[]).filter(r=>{
+            const d=(r['日付']||'').trim();
+            return d===today;
+          }).map((r,i)=>{
+            const st=(r['開演']||'').trim(), en=(r['終演目安']||'').trim();
+            const cap=parseInt(r['収容'])||0;
+            return {
+              id:'bigbox_'+today+'_'+i,
+              name:(r['イベント名']||'').trim(),
+              venue:(r['会場']||'').trim(),
+              address:'',
+              lat:parseFloat(r['緯度'])||null,
+              lng:parseFloat(r['経度'])||null,
+              date:today,
+              start_iso: st?today+'T'+st+':00+09:00':null,
+              end_iso:   en?today+'T'+en+':00+09:00':null,
+              scale: cap>10000?4:cap>2000?3:cap>500?2:1,
+              accepted:cap,
+              url:'',
+              _source:'bigbox'
+            };
+          }).filter(e=>e.end_iso&&e.lat&&e.lng);
+          resolve(out);
+        },
+        error:()=>resolve([])
+      });
+    });
+  }catch(e){}
+
   // 会場マスタを読み込み（穴スコア計算用）
   await loadVenueMaster();
 
   // 3) マージ → 距離・緊急度・穴スコアを計算 → 絞り込み → ソート
-  allEvents = [...manualEvents, ...serverEvents, ...connpassEvents]
+  allEvents = [...bigboxEvents, ...manualEvents, ...serverEvents, ...connpassEvents]
     .map(ev=>{
       const e={
         ...ev,
@@ -957,7 +999,7 @@ async function startScan(){
       +'<div class="empty-sub">「＋ イベント登録」タブから追加するか<br>Connpassの自動更新（毎時）をお待ちください</div></div>';
   } else {
     const mc=manualEvents.length+serverEvents.length, cc=connpassEvents.length;
-    setStatus('✅ '+allEvents.length+'件表示中（手動'+mc+' / Connpass'+cc+'）'+(window._manualErr||''),'ok');
+    setStatus('✅ '+allEvents.length+'件表示中（🏟大箱'+bigboxEvents.length+' / 手動'+mc+' / Connpass'+cc+'）'+(window._manualErr||''),'ok');
     document.getElementById('filterBar').style.display='flex';
     document.getElementById('sortBar').style.display='flex';
     renderList();
