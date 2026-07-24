@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-24T16:26:20.073230+09:00",
+  "fetched_at": "2026-07-24T19:09:27.727602+09:00",
   "date": "20260724",
   "count": 18,
   "events": [
@@ -139,7 +139,7 @@
       "owner_id": 8542,
       "owner_nickname": "ken1flan",
       "owner_display_name": "ken1flan",
-      "accepted": 14,
+      "accepted": 16,
       "waiting": 0,
       "updated_at": "2026-07-23T11:42:33+09:00"
     },
@@ -165,7 +165,7 @@
       "owner_id": 642015,
       "owner_nickname": "works_another",
       "owner_display_name": "works_another",
-      "accepted": 9,
+      "accepted": 10,
       "waiting": 0,
       "updated_at": "2026-07-08T11:08:28+09:00"
     },
@@ -173,7 +173,7 @@
       "id": 395449,
       "title": "Startup Angular #12 私の最強のAI活用",
       "catch": "Angularを利用しているスタートアップが集まり、知見を持ち寄るコミュニティイベント",
-      "description": "<p>Angularでプロダクトを動かしているスタートアップが集まり、現場の開発知見を持ち寄るコミュニティイベント「Startup Angular」。12回目の今回は、「私の最強のAI活用」を軸に、LT会をします。Angularが好きな人も、これから触りたい人も、他社のエンジニアと横でつながりたい人も歓迎です。</p>\n<h1>Startup Angularとは？</h1>\n<ul>\n<li>Angularをプロダクトに使っているスタートアップが、現場で得た開発知見を持ち寄るイベントです。</li>\n<li>実際にプロダクトを運用するなかでのAngularの知見の共有や情報交換のきっかけ作りとしてイベントを始めました。</li>\n</ul>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>他社がAngularをどう活用しているか、リアルな事例を知りたい</li>\n<li>フロントエンドをこれから深めたい／Angularに興味がある</li>\n<li>Angularを使うエンジニア・スタートアップと横でつながりたい</li>\n<li>AIを開発フローにどう組み込んでいるか、他社の生の話を聞きたい</li>\n</ul>\n<h1>イベント概要</h1>\n<ul>\n<li>オフライン・オンライン同時開催。会場では登壇後の懇親会で、登壇者や他社エンジニアと直接話せます。</li>\n<li>オンライン参加でもLT本編を視聴できます（配信の都合上、会場映像が公開される場合があります）。</li>\n</ul>\n<h2>LT枠の募集</h2>\n<ul>\n<li>AngularまたはStartupに関わる内容なら何でもOK。発表は5分です。</li>\n<li>うまくまとまっていなくても大丈夫。現場の試行錯誤や失敗談こそ、一番盛り上がります。</li>\n<li>今回のテーマ例：</li>\n<li>開発環境、チームレビュー、開発フローでのAI活用やプロンプトの工夫</li>\n<li>AIによってプロダクト開発の変わった所、変わらない所</li>\n<li>Angular移行・パフォーマンス改善・設計判断 など</li>\n<li>登壇者の方は18:30にご来社いただけると準備がスムーズです。</li>\n</ul>\n<h2>懇親会（任意参加）</h2>\n<ul>\n<li>オフライン参加者向けに、任意で懇親会を行います。</li>\n<li>ここが一番の情報交換の場。LTで話しきれなかったことや、各社のリアルな悩みを気軽に交換できます。</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>イベント開場</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:20</td>\n<td>イベント開始</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:20 - 19:25</td>\n<td>オープニング</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:25 - 19:30</td>\n<td>スポンサーLT1</td>\n<td>MOSH株式会社</td>\n</tr>\n<tr>\n<td>19:30 - 19:35</td>\n<td>スポンサーLT2</td>\n<td>株式会社TwoGate</td>\n</tr>\n<tr>\n<td>19:35 - 19:40</td>\n<td>スポンサーLT3</td>\n<td>転職ドラフト</td>\n</tr>\n<tr>\n<td>19:40 - 19:45</td>\n<td>LT1</td>\n<td></td>\n</tr>\n<tr>\n<td>19:45 - 19:50</td>\n<td>LT2</td>\n<td></td>\n</tr>\n<tr>\n<td>19:50 - 19:55</td>\n<td>LT3</td>\n<td></td>\n</tr>\n<tr>\n<td>19:55 - 20:00</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00 - 20:05</td>\n<td>LT4</td>\n<td></td>\n</tr>\n<tr>\n<td>20:05 - 20:10</td>\n<td>LT5</td>\n<td></td>\n</tr>\n<tr>\n<td>20:10 - 20:15</td>\n<td>LT6</td>\n<td></td>\n</tr>\n<tr>\n<td>20:15</td>\n<td>懇親会</td>\n<td>--</td>\n</tr>\n<tr>\n<td>22:00</td>\n<td>完全撤収</td>\n<td>--</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブル、LT内容は変更になる可能性があります。</p>\n<h1>会場情報</h1>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>会場</td>\n<td>MOSH株式会社 (MOSH, Inc.)</td>\n</tr>\n<tr>\n<td>住所</td>\n<td>〒150-0031 東京都渋谷区桜丘町9番8号 KN渋谷3 4階</td>\n</tr>\n<tr>\n<td>アクセス</td>\n<td>渋谷駅徒歩6分</td>\n</tr>\n</tbody>\n</table>\n<h1>受付方法</h1>\n<ul>\n<li>開始時間までにご来社いただき、受付担当者に「受付番号」もしくは「connpassアカウント名」をお伝えください。</li>\n<li>21：00の受付終了後は、ビルセキュリティの問題でイベント参加はできませんのでお気をつけください。</li>\n</ul>\n<h1>注意事項</h1>\n<ul>\n<li>感染症対策に関しては任意としております。<br>\n　但し基礎疾患をお持ちの方や、ご高齢のご家族がいらっしゃる方の参加があるかもしれませんので、<br>\n　体調不良の場合は参加を控える、風邪の症状がある場合はマスクを着用するなどのご配慮をお願い申し上げます。<br>\n　発熱などによる体調不良が見受けられた際、ご来場いただけない場合もございますのでご了承ください。</li>\n</ul>\n<h1>イベント行動規範</h1>\n<p>本行動規範は、本イベントの参加者・運営者の安全で、敬意を払った、生産的な交流の場を提供するために定めるものです。本イベントへの参加・運営参加には、本行動規範への同意が必要となります。</p>\n<ol>\n<li>イベントの趣旨と反する行いをしない</li>\n<li>性別、性的指向、身体障害、外見、体型、人種や宗教などに対する、ハラスメントと思われる振る舞いをしない</li>\n<li>自分と対立する意見に対しても、攻撃することなく寛容に対応する</li>\n<li>個人への攻撃や侮蔑となる言葉や行動をしない</li>\n<li>器物の損壊をしない、危険物を持ち込まない</li>\n</ol>\n<p>嫌がらせを容認せず、この規範に違反すると思われる行動を見たり聞いたりしたらすぐにイベント運営スタッフに連絡してください。上記に違反した参加者は、イベント運営者の裁量により、イベントからの退出などを求めます。</p>\n<h4>参考</h4>\n<ul>\n<li><a href=\"https://railsgirls.jp/code-of-conduct\" rel=\"nofollow\">https://railsgirls.jp/code-of-conduct</a> (Creative Commons Attribution-Share Alike 3.0 License)</li>\n<li><a href=\"https://github.com/angular/code-of-conduct\" rel=\"nofollow\">https://github.com/angular/code-of-conduct</a> (MIT License)</li>\n</ul>\n<h1>個人情報の取扱いについて</h1>\n<p>個人情報の取扱い、および協賛企業への情報提供については、<a href=\"https://docs.google.com/document/d/1P7C3WyMxVkX8jW6QyIzbQXNnvKydXGYwyyMndpkMGp0/edit?usp=sharing\" rel=\"nofollow\">StartupAngular プライバシーポリシー</a> をご確認ください。</p>\n<p>協賛企業への情報提供は任意です。アンケートフォーム内でご同意いただいた場合に限り、選択された協賛企業へ情報を提供します。</p>\n<h1>スポンサー</h1>\n<h1>会場スポンサー</h1>\n<h2>MOSH株式会社</h2>\n<p><img src=\"https://lh3.googleusercontent.com/pw/AP1GczPEr_RMVz9eg_S5sU0Zl1vzWTafmfJSGDFrD-xhQhea76hOEAaoZ5E1LNbfGQqMYmTBlpjEuPhlAYTUSNSxcjZzAYqICXXS9AoxzFhfrb5X5E5vl0QN16pL3WaTOc-3t_3Tz7Xcq_x0j0vdeaQ_gDAaDA=w2047-h737-s-no-gm\" width=\"300\"></p>\n<p>私たちは「情熱がめぐる経済をつくる」というミッションを掲げ、クリエイター向けの事業拡大プラットフォーム「MOSH」を開発・運営しています。\nサイト作成、予約、決済、顧客管理、コンテンツ管理、海外対応など、幅広い機能を提供し、クリエイターが事業を成長させる中で直面するあらゆる課題に取り組んでいます。\n 創業時からのコアバリューである「Start With One」を大切にし、常に顧客の価値を最優先に考えたプロダクトづくりに取り組んできました。 \nこの価値観を軸に、事業の成長を加速させ、グローバルで利用されるプロダクトを目指して進化を続けていきます。  </p>\n<ul>\n<li>採用情報はこちら：<a href=\"https://careers.mosh.jp/Company\" rel=\"nofollow\">https://careers.mosh.jp/Company</a>  </li>\n<li>Deck：<a href=\"https://speakerdeck.com/mosh_inc/mosh-companydeck-202410\" rel=\"nofollow\">https://speakerdeck.com/mosh_inc/mosh-companydeck-202410</a>  </li>\n<li>サービスサイト：<a href=\"https://mosh.jp\" rel=\"nofollow\">https://mosh.jp</a></li>\n</ul>\n<h1>懇親会スポンサー</h1>\n<h2>株式会社TwoGate</h2>\n<p><img src=\"https://media.connpass.com/thumbs/61/a9/61a95aee9719d2739f94612037d9709f.png\" width=\"300\"></p>\n<p>「心地良いデジタル体験の創出と普及」をミッションに掲げ、ライブイベントやファンコミュニティなどエンターテインメント領域を盛り上げるプラットフォームを提供しています。\nまた、Angularを活用した独自のノーコード / ローコード基盤による効率化により、これまでに200を超えるアプリケーションを開発・運用してきました。</p>\n<ul>\n<li><a href=\"https://twogate.com/\" rel=\"nofollow\">会社情報</a></li>\n</ul>\n<h1>ビールスポンサー</h1>\n<h2>転職ドラフト</h2>\n<p><img src=\"https://media.connpass.com/thumbs/18/db/18dbba50ec1de106085a6b9e3dade295.png\" width=\"300\"></p>\n<p>転職ドラフトは、「年収も実力も磨ける仕事」に出会える、ITエンジニア向けの転職サービスです。\n年収付きのスカウトが企業から届く「転職ドラフトスカウト」、ITエンジニアキャリアのプロに相談できる「転職ドラフトエージェント」を運営しています。</p>\n<ul>\n<li><a href=\"https://job-draft.jp/?utm_source=connpass\" rel=\"nofollow\">サービスサイト</a></li>\n</ul>\n<h1>運営参加</h1>\n<h2>株式会社Voicy</h2>\n<p><img src=\"https://corp.voicy.jp/wp-content/themes/corp.voicy.jp/images/logo.svg\" width=\"200\"></p>\n<p>音声の魅力を最大化し、社会に新しい価値を生む。株式会社Voicyは、音声テクノロジーで新しい文化や未来の生活をつくる音声市場のリーディングカンパニーです。</p>\n<ul>\n<li><a href=\"https://voicy.jp/\" title=\"Voicy 音声プラットフォーム\" rel=\"nofollow\">Voicy 音声プラットフォーム</a> </li>\n<li><a href=\"https://corp.voicy.jp/\" title=\"会社情報\" rel=\"nofollow\">会社情報</a> </li>\n<li><a href=\"https://corp.voicy.jp/career/\" title=\"採用情報\" rel=\"nofollow\">採用情報</a> </li>\n<li><a href=\"https://tech-blog.voicy.jp/\" title=\"Tech Blog はてな\" rel=\"nofollow\">Tech Blog はてな</a></li>\n<li><a href=\"https://zenn.dev/p/voicy/\" title=\"Tech Blog Zenn\" rel=\"nofollow\">Tech Blog Zenn</a></li>\n</ul>\n<h2>株式会社キネカ</h2>\n<p><img src=\"https://res.cloudinary.com/dxzsk7kk4/image/upload/v1689337112/kineka_logo_nowtwf.jpg\" width=\"300\"></p>\n<p>株式会社キネカは、「新しい働き方で世界を変え、新しいエンタメで世界の喜びを最大化させる」をミッションに、エンターテイナー特化型マッチングプラットフォーム「<a href=\"https://pato.today/\" rel=\"nofollow\">pato</a>」の運営や新規事業開発に取り組んでおります。</p>\n<ul>\n<li><a href=\"https://kineca.jp/\" title=\"会社情報\" rel=\"nofollow\">会社情報</a></li>\n</ul>\n<h2>atama plus株式会社</h2>\n<p><img src=\"https://res.cloudinary.com/dxzsk7kk4/image/upload/v1689336916/atama_plus_logo_b4cf8u.png\" width=\"300\"></p>\n<p>「教育に、人に、社会に、次の可能性を。」をミッションに、テクノロジーを活用して「基礎学力」の習得にかかる時間を短くし、「社会でいきる力」を養う時間を増やすことを目指しています。教育を一人ひとりに最適化するAI教材「atama＋」を全国の塾・予備校4,000教室以上（2024年3月現在）に提供。2023年に「atama＋ オンライン塾」を開校、2024年6月からは「進学個別 atama＋塾」のフランチャイズ展開を開始しています。</p>\n<ul>\n<li><a href=\"http://corp.atama.plus/\" title=\"コーポレートサイト\" rel=\"nofollow\">コーポレートサイト</a></li>\n<li><a href=\"https://product.atama.plus/\" title=\"サービスサイト\" rel=\"nofollow\">サービスサイト</a></li>\n</ul>\n<h2>株式会社エモーションテック</h2>\n<p><img src=\"https://res.cloudinary.com/dxzsk7kk4/image/upload/v1689336913/Emotion_Tech_logo_yoko_ihqnky.jpg\" width=\"300\"></p>\n<p>株式会社エモーションテックは、顧客体験（CX）マネジメントサービス「EmotionTech CX」や従業員体験マネジメントサービス「EmotionTech EX」を用いた経営課題解決支援サービスを提供し、急成長しているベンチャー企業です。業種業界にかかわらずクライアントからの高い評価を受けており、約600社の会社に導入いただいています。</p>\n<ul>\n<li><a href=\"https://emotion-tech.co.jp/\" title=\"会社情報\" rel=\"nofollow\">会社情報</a> </li>\n<li><a href=\"https://careers.emotion-tech.co.jp/\" title=\"採用情報\" rel=\"nofollow\">採用情報</a> </li>\n</ul>\n<h2>株式会社Hubble</h2>\n<p><img src=\"https://hubble-docs.com/wp-content/themes/hubble/v2/assets/images/header_logo.svg\" width=\"280\"></p>\n<p>Hubbleは、人とAI、法務と事業部門の協業性を向上させ、契約業務基盤の構築と定着を支援するクラウドサービス。継続率は99％で、上場企業を中心に多くの企業に長くご利用いただいています。契約書の審査依頼から作成、検討過程や締結済契約書の管理まで、AIを活用しながら一気通貫でご利用いただけます。</p>\n<ul>\n<li><a href=\"https://hubble-docs.com/\" rel=\"nofollow\">サービスサイト</a></li>\n<li><a href=\"https://hubble-docs.com/about\" rel=\"nofollow\">会社概要</a></li>\n<li><a href=\"https://note.hubble-docs.com/\" rel=\"nofollow\">公式note</a></li>\n</ul>",
+      "description": "<p>Angularでプロダクトを動かしているスタートアップが集まり、現場の開発知見を持ち寄るコミュニティイベント「Startup Angular」。12回目の今回は、「私の最強のAI活用」を軸に、LT会をします。Angularが好きな人も、これから触りたい人も、他社のエンジニアと横でつながりたい人も歓迎です。</p>\n<h1>Startup Angularとは？</h1>\n<ul>\n<li>Angularをプロダクトに使っているスタートアップが、現場で得た開発知見を持ち寄るイベントです。</li>\n<li>実際にプロダクトを運用するなかでのAngularの知見の共有や情報交換のきっかけ作りとしてイベントを始めました。</li>\n</ul>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>他社がAngularをどう活用しているか、リアルな事例を知りたい</li>\n<li>フロントエンドをこれから深めたい／Angularに興味がある</li>\n<li>Angularを使うエンジニア・スタートアップと横でつながりたい</li>\n<li>AIを開発フローにどう組み込んでいるか、他社の生の話を聞きたい</li>\n</ul>\n<h1>イベント概要</h1>\n<ul>\n<li>オフライン・オンライン同時開催。会場では登壇後の懇親会で、登壇者や他社エンジニアと直接話せます。</li>\n<li>オンライン参加でもLT本編を視聴できます（配信の都合上、会場映像が公開される場合があります）。</li>\n</ul>\n<h2>LT枠の募集</h2>\n<ul>\n<li>AngularまたはStartupに関わる内容なら何でもOK。発表は5分です。</li>\n<li>うまくまとまっていなくても大丈夫。現場の試行錯誤や失敗談こそ、一番盛り上がります。</li>\n<li>今回のテーマ例：</li>\n<li>開発環境、チームレビュー、開発フローでのAI活用やプロンプトの工夫</li>\n<li>AIによってプロダクト開発の変わった所、変わらない所</li>\n<li>Angular移行・パフォーマンス改善・設計判断 など</li>\n<li>登壇者の方は18:30にご来社いただけると準備がスムーズです。</li>\n</ul>\n<h2>懇親会（任意参加）</h2>\n<ul>\n<li>オフライン参加者向けに、任意で懇親会を行います。</li>\n<li>ここが一番の情報交換の場。LTで話しきれなかったことや、各社のリアルな悩みを気軽に交換できます。</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>イベント開場</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:20</td>\n<td>イベント開始</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:20 - 19:25</td>\n<td>オープニング</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:25 - 19:30</td>\n<td>スポンサーLT1</td>\n<td>MOSH株式会社</td>\n</tr>\n<tr>\n<td>19:30 - 19:35</td>\n<td>スポンサーLT2</td>\n<td>株式会社TwoGate</td>\n</tr>\n<tr>\n<td>19:35 - 19:40</td>\n<td>スポンサーLT3</td>\n<td>転職ドラフト</td>\n</tr>\n<tr>\n<td>19:40 - 19:45</td>\n<td>LT1</td>\n<td>komura-c</td>\n</tr>\n<tr>\n<td>19:45 - 19:50</td>\n<td>LT2</td>\n<td>Akinko</td>\n</tr>\n<tr>\n<td>19:50 - 19:55</td>\n<td>LT3</td>\n<td>あかい</td>\n</tr>\n<tr>\n<td>19:55 - 20:00</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00 - 20:05</td>\n<td>LT4</td>\n<td>KOHETS</td>\n</tr>\n<tr>\n<td>20:05 - 20:10</td>\n<td>LT5</td>\n<td>scrpgil</td>\n</tr>\n<tr>\n<td>20:10</td>\n<td>懇親会</td>\n<td>--</td>\n</tr>\n<tr>\n<td>22:00</td>\n<td>完全撤収</td>\n<td>--</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブル、LT内容は変更になる可能性があります。</p>\n<h1>会場情報</h1>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>会場</td>\n<td>MOSH株式会社 (MOSH, Inc.)</td>\n</tr>\n<tr>\n<td>住所</td>\n<td>〒150-0031 東京都渋谷区桜丘町9番8号 KN渋谷3 4階</td>\n</tr>\n<tr>\n<td>アクセス</td>\n<td>渋谷駅徒歩6分</td>\n</tr>\n</tbody>\n</table>\n<h1>受付方法</h1>\n<ul>\n<li>開始時間までにご来社いただき、受付担当者に「受付番号」もしくは「connpassアカウント名」をお伝えください。</li>\n<li>21：00の受付終了後は、ビルセキュリティの問題でイベント参加はできませんのでお気をつけください。</li>\n</ul>\n<h1>注意事項</h1>\n<ul>\n<li>感染症対策に関しては任意としております。<br>\n　但し基礎疾患をお持ちの方や、ご高齢のご家族がいらっしゃる方の参加があるかもしれませんので、<br>\n　体調不良の場合は参加を控える、風邪の症状がある場合はマスクを着用するなどのご配慮をお願い申し上げます。<br>\n　発熱などによる体調不良が見受けられた際、ご来場いただけない場合もございますのでご了承ください。</li>\n</ul>\n<h1>イベント行動規範</h1>\n<p>本行動規範は、本イベントの参加者・運営者の安全で、敬意を払った、生産的な交流の場を提供するために定めるものです。本イベントへの参加・運営参加には、本行動規範への同意が必要となります。</p>\n<ol>\n<li>イベントの趣旨と反する行いをしない</li>\n<li>性別、性的指向、身体障害、外見、体型、人種や宗教などに対する、ハラスメントと思われる振る舞いをしない</li>\n<li>自分と対立する意見に対しても、攻撃することなく寛容に対応する</li>\n<li>個人への攻撃や侮蔑となる言葉や行動をしない</li>\n<li>器物の損壊をしない、危険物を持ち込まない</li>\n</ol>\n<p>嫌がらせを容認せず、この規範に違反すると思われる行動を見たり聞いたりしたらすぐにイベント運営スタッフに連絡してください。上記に違反した参加者は、イベント運営者の裁量により、イベントからの退出などを求めます。</p>\n<h4>参考</h4>\n<ul>\n<li><a href=\"https://railsgirls.jp/code-of-conduct\" rel=\"nofollow\">https://railsgirls.jp/code-of-conduct</a> (Creative Commons Attribution-Share Alike 3.0 License)</li>\n<li><a href=\"https://github.com/angular/code-of-conduct\" rel=\"nofollow\">https://github.com/angular/code-of-conduct</a> (MIT License)</li>\n</ul>\n<h1>個人情報の取扱いについて</h1>\n<p>個人情報の取扱い、および協賛企業への情報提供については、<a href=\"https://docs.google.com/document/d/1P7C3WyMxVkX8jW6QyIzbQXNnvKydXGYwyyMndpkMGp0/edit?usp=sharing\" rel=\"nofollow\">StartupAngular プライバシーポリシー</a> をご確認ください。</p>\n<p>協賛企業への情報提供は任意です。アンケートフォーム内でご同意いただいた場合に限り、選択された協賛企業へ情報を提供します。</p>\n<h1>スポンサー</h1>\n<h1>会場スポンサー</h1>\n<h2>MOSH株式会社</h2>\n<p><img src=\"https://lh3.googleusercontent.com/pw/AP1GczPEr_RMVz9eg_S5sU0Zl1vzWTafmfJSGDFrD-xhQhea76hOEAaoZ5E1LNbfGQqMYmTBlpjEuPhlAYTUSNSxcjZzAYqICXXS9AoxzFhfrb5X5E5vl0QN16pL3WaTOc-3t_3Tz7Xcq_x0j0vdeaQ_gDAaDA=w2047-h737-s-no-gm\" width=\"300\"></p>\n<p>私たちは「情熱がめぐる経済をつくる」というミッションを掲げ、クリエイター向けの事業拡大プラットフォーム「MOSH」を開発・運営しています。\nサイト作成、予約、決済、顧客管理、コンテンツ管理、海外対応など、幅広い機能を提供し、クリエイターが事業を成長させる中で直面するあらゆる課題に取り組んでいます。\n 創業時からのコアバリューである「Start With One」を大切にし、常に顧客の価値を最優先に考えたプロダクトづくりに取り組んできました。 \nこの価値観を軸に、事業の成長を加速させ、グローバルで利用されるプロダクトを目指して進化を続けていきます。  </p>\n<ul>\n<li>採用情報はこちら：<a href=\"https://careers.mosh.jp/Company\" rel=\"nofollow\">https://careers.mosh.jp/Company</a>  </li>\n<li>Deck：<a href=\"https://speakerdeck.com/mosh_inc/mosh-companydeck-202410\" rel=\"nofollow\">https://speakerdeck.com/mosh_inc/mosh-companydeck-202410</a>  </li>\n<li>サービスサイト：<a href=\"https://mosh.jp\" rel=\"nofollow\">https://mosh.jp</a></li>\n</ul>\n<h1>懇親会スポンサー</h1>\n<h2>株式会社TwoGate</h2>\n<p><img src=\"https://media.connpass.com/thumbs/61/a9/61a95aee9719d2739f94612037d9709f.png\" width=\"300\"></p>\n<p>「心地良いデジタル体験の創出と普及」をミッションに掲げ、ライブイベントやファンコミュニティなどエンターテインメント領域を盛り上げるプラットフォームを提供しています。\nまた、Angularを活用した独自のノーコード / ローコード基盤による効率化により、これまでに200を超えるアプリケーションを開発・運用してきました。</p>\n<ul>\n<li><a href=\"https://twogate.com/\" rel=\"nofollow\">会社情報</a></li>\n</ul>\n<h1>ビールスポンサー</h1>\n<h2>転職ドラフト</h2>\n<p><img src=\"https://media.connpass.com/thumbs/18/db/18dbba50ec1de106085a6b9e3dade295.png\" width=\"300\"></p>\n<p>転職ドラフトは、「年収も実力も磨ける仕事」に出会える、ITエンジニア向けの転職サービスです。\n年収付きのスカウトが企業から届く「転職ドラフトスカウト」、ITエンジニアキャリアのプロに相談できる「転職ドラフトエージェント」を運営しています。</p>\n<ul>\n<li><a href=\"https://job-draft.jp/?utm_source=connpass\" rel=\"nofollow\">サービスサイト</a></li>\n</ul>\n<h1>運営参加</h1>\n<h2>株式会社Voicy</h2>\n<p><img src=\"https://corp.voicy.jp/wp-content/themes/corp.voicy.jp/images/logo.svg\" width=\"200\"></p>\n<p>音声の魅力を最大化し、社会に新しい価値を生む。株式会社Voicyは、音声テクノロジーで新しい文化や未来の生活をつくる音声市場のリーディングカンパニーです。</p>\n<ul>\n<li><a href=\"https://voicy.jp/\" title=\"Voicy 音声プラットフォーム\" rel=\"nofollow\">Voicy 音声プラットフォーム</a> </li>\n<li><a href=\"https://corp.voicy.jp/\" title=\"会社情報\" rel=\"nofollow\">会社情報</a> </li>\n<li><a href=\"https://corp.voicy.jp/career/\" title=\"採用情報\" rel=\"nofollow\">採用情報</a> </li>\n<li><a href=\"https://tech-blog.voicy.jp/\" title=\"Tech Blog はてな\" rel=\"nofollow\">Tech Blog はてな</a></li>\n<li><a href=\"https://zenn.dev/p/voicy/\" title=\"Tech Blog Zenn\" rel=\"nofollow\">Tech Blog Zenn</a></li>\n</ul>\n<h2>株式会社キネカ</h2>\n<p><img src=\"https://res.cloudinary.com/dxzsk7kk4/image/upload/v1689337112/kineka_logo_nowtwf.jpg\" width=\"300\"></p>\n<p>株式会社キネカは、「新しい働き方で世界を変え、新しいエンタメで世界の喜びを最大化させる」をミッションに、エンターテイナー特化型マッチングプラットフォーム「<a href=\"https://pato.today/\" rel=\"nofollow\">pato</a>」の運営や新規事業開発に取り組んでおります。</p>\n<ul>\n<li><a href=\"https://kineca.jp/\" title=\"会社情報\" rel=\"nofollow\">会社情報</a></li>\n</ul>\n<h2>atama plus株式会社</h2>\n<p><img src=\"https://res.cloudinary.com/dxzsk7kk4/image/upload/v1689336916/atama_plus_logo_b4cf8u.png\" width=\"300\"></p>\n<p>「教育に、人に、社会に、次の可能性を。」をミッションに、テクノロジーを活用して「基礎学力」の習得にかかる時間を短くし、「社会でいきる力」を養う時間を増やすことを目指しています。教育を一人ひとりに最適化するAI教材「atama＋」を全国の塾・予備校4,000教室以上（2024年3月現在）に提供。2023年に「atama＋ オンライン塾」を開校、2024年6月からは「進学個別 atama＋塾」のフランチャイズ展開を開始しています。</p>\n<ul>\n<li><a href=\"http://corp.atama.plus/\" title=\"コーポレートサイト\" rel=\"nofollow\">コーポレートサイト</a></li>\n<li><a href=\"https://product.atama.plus/\" title=\"サービスサイト\" rel=\"nofollow\">サービスサイト</a></li>\n</ul>\n<h2>株式会社エモーションテック</h2>\n<p><img src=\"https://res.cloudinary.com/dxzsk7kk4/image/upload/v1689336913/Emotion_Tech_logo_yoko_ihqnky.jpg\" width=\"300\"></p>\n<p>株式会社エモーションテックは、顧客体験（CX）マネジメントサービス「EmotionTech CX」や従業員体験マネジメントサービス「EmotionTech EX」を用いた経営課題解決支援サービスを提供し、急成長しているベンチャー企業です。業種業界にかかわらずクライアントからの高い評価を受けており、約600社の会社に導入いただいています。</p>\n<ul>\n<li><a href=\"https://emotion-tech.co.jp/\" title=\"会社情報\" rel=\"nofollow\">会社情報</a> </li>\n<li><a href=\"https://careers.emotion-tech.co.jp/\" title=\"採用情報\" rel=\"nofollow\">採用情報</a> </li>\n</ul>\n<h2>株式会社Hubble</h2>\n<p><img src=\"https://hubble-docs.com/wp-content/themes/hubble/v2/assets/images/header_logo.svg\" width=\"280\"></p>\n<p>Hubbleは、人とAI、法務と事業部門の協業性を向上させ、契約業務基盤の構築と定着を支援するクラウドサービス。継続率は99％で、上場企業を中心に多くの企業に長くご利用いただいています。契約書の審査依頼から作成、検討過程や締結済契約書の管理まで、AIを活用しながら一気通貫でご利用いただけます。</p>\n<ul>\n<li><a href=\"https://hubble-docs.com/\" rel=\"nofollow\">サービスサイト</a></li>\n<li><a href=\"https://hubble-docs.com/about\" rel=\"nofollow\">会社概要</a></li>\n<li><a href=\"https://note.hubble-docs.com/\" rel=\"nofollow\">公式note</a></li>\n</ul>",
       "url": "https://voicy.connpass.com/event/395449/",
       "image_url": "https://media.connpass.com/thumbs/69/fa/69fae0ead9160abcef3227f80fecb7b2.png",
       "hash_tag": "ng_startup",
@@ -196,40 +196,9 @@
       "owner_id": 307419,
       "owner_nickname": "komura-c",
       "owner_display_name": "komura-c",
-      "accepted": 30,
+      "accepted": 36,
       "waiting": 0,
-      "updated_at": "2026-07-24T11:56:26+09:00"
-    },
-    {
-      "id": 399993,
-      "title": "秋葉原 もくもく会 & ごくごく会",
-      "catch": "すこしもくもく会したあとに飲みながら作業する会です",
-      "description": "<h2>概要</h2>\n<p>テーマ自由なオフラインもくもく会 &amp; ごくごく会です。\n秋葉原のコワーキングスペース FFFFF Cafe （ <a href=\"https://fffff-cafe.com/\" rel=\"nofollow\">https://fffff-cafe.com/</a> ） に集まり、各々やりたいことを作業する会です。<br>\n作業内容は勉強、読書、開発、雑談なんでもOK！<br>\nどなたでも参加可能です。 </p>\n<p>お酒が好きな人が集まり、勉強会をします。 \n１時間ほど集中（もくもく会）したあと、お酒飲みながら（ごくごく会）交流して作業します。</p>\n<p>気軽に参加してください。</p>\n<p>Vol. 9</p>\n<h4>こんな人におすすめ</h4>\n<ul>\n<li>同じ時間帯に作業する仲間がほしい</li>\n<li>ITやデザイン、ものづくりなど好きなことに没頭したい</li>\n<li>他の参加者とゆるく交流したい</li>\n<li>お酒が飲みたい</li>\n</ul>\n<h4>作業内容の例</h4>\n<ul>\n<li>プログラミングや勉強</li>\n<li>読書や執筆</li>\n<li>資格の勉強やポートフォリオ作成</li>\n<li>趣味の作業や副業</li>\n<li>学習コンテンツの視聴や課題</li>\n<li>持ち帰ってきた仕事</li>\n</ul>\n<p>集中したい時は静かに、話したい時は気軽に声をかけられる、ゆるやかな空間を目指しています。\n初心者・おひとり参加・初参加の方も大歓迎です！</p>\n<h2>ルール</h2>\n<ul>\n<li>費用 1000円</li>\n<li>自分の好きな作業をしてください！</li>\n<li>開始時に言える範囲で作業内容の説明と挨拶をお願いします</li>\n<li>途中参加OK</li>\n<li>ドリンクの持ち込みOK</li>\n<li>電源、Wi-Fi、モニター は自由に利用できます</li>\n<li>好きなお酒、飲み物をお持ちください！</li>\n</ul>\n<p>当日の参加表明もOK！</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\"></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00-19:15</td>\n<td style=\"text-align: left;\">挨拶・自己紹介・やること発表</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15-20:00</td>\n<td style=\"text-align: left;\">もくもく作業</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-23:00</td>\n<td style=\"text-align: left;\">乾杯、作業</td>\n</tr>\n</tbody>\n</table>\n<p>開始前からコワーキングスペースとして営業しています。</p>\n<h2>場所</h2>\n<p>東京都千代田区神田佐久間町3丁目37-1 山茂登ビル 3F<br>\n1Fに和食屋さん「さんほれ」さんの入ったビルの3Fです。ビルの南西端側にエレベーターがあります。さんほれさんに入らないようにお願いします。<br>\n分かりづらいのでこちらのGoogle mapを参考にしてください。<br>\n<a href=\"https://goo.gl/maps/MRmqBBKq9DpvUfhg8\" rel=\"nofollow\">https://goo.gl/maps/MRmqBBKq9DpvUfhg8</a>  </p>\n<h2>注意事項・お願い</h2>\n<ul>\n<li>勧誘・営業・宗教・MLM等の行為は禁止です</li>\n<li>参加者同士のトラブルに関して、主催側は責任を負いかねます。円滑なコミュニケーションを心がけてください。</li>\n<li>貴重品の管理はご自身でお願いします。</li>\n<li>飲食の際は周囲の方へのご配慮をお願いします。においの強い食べ物などは控えていただけると助かります。</li>\n<li>写真撮影を行う場合があります。写り込みNGの方はあらかじめお知らせください。</li>\n<li>体調がすぐれない場合は参加をご遠慮ください。</li>\n<li>参加者同士のやりとりは自由ですが、過度な詮索やプライバシーへの配慮を忘れずにお願いします。</li>\n</ul>\n<h2>主催について</h2>\n<p>会場のFFFFF Cafeを運営する株式会社リロードが主催しています。\n株式会社リロード: <a href=\"https://reload.co.jp\" rel=\"nofollow\">https://reload.co.jp</a><br>\nリロードはWeb系のソフトウェア開発を行っている会社ですが、ソフトウェアエンジニアに限らず、多様なバックグラウンドを持つ人たちの交流の場にしていきたいと思っています。<br>\nご参加お待ちしております！  </p>\n<h3>参加者交流用のSlack</h3>\n<p>当日の連絡等、こちらで行います。</p>\n<p><a href=\"https://join.slack.com/t/fffff-81d6773/shared_invite/zt-1d2ozux7o-F2O5pNC5vmXzt1Allox2xQ\" rel=\"nofollow\">https://join.slack.com/t/fffff-81d6773/shared_invite/zt-1d2ozux7o-F2O5pNC5vmXzt1Allox2xQ</a></p>",
-      "url": "https://fffff.connpass.com/event/399993/",
-      "image_url": "https://media.connpass.com/thumbs/c7/bb/c7bbea3d333b7c52929e3323b45bd1e3.png",
-      "hash_tag": "FFFFF",
-      "started_at": "2026-07-24T19:00:00+09:00",
-      "ended_at": "2026-07-24T22:00:00+09:00",
-      "published_at": "2026-07-08T20:41:01+09:00",
-      "limit": 15,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 12277,
-        "subdomain": "fffff",
-        "title": "FFFFF",
-        "url": "https://fffff.connpass.com/"
-      },
-      "address": "東京都千代田区神田佐久間町3-37-1 山茂登ビル 3階 FFFFF Cafe",
-      "place": "FFFFF Cafe",
-      "lat": "35.697598900000",
-      "lon": "139.778016300000",
-      "owner_id": 18310,
-      "owner_nickname": "kixixixixi",
-      "owner_display_name": "kixixixixi",
-      "accepted": 2,
-      "waiting": 0,
-      "updated_at": "2026-07-08T20:41:01+09:00"
+      "updated_at": "2026-07-24T18:53:18+09:00"
     },
     {
       "id": 400540,
@@ -270,7 +239,7 @@
       "published_at": "2026-05-30T12:09:01+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 1614,
         "subdomain": "kichijojipm",
@@ -284,7 +253,7 @@
       "owner_id": 26042,
       "owner_nickname": "magnolia_k_",
       "owner_display_name": "magnoliak",
-      "accepted": 44,
+      "accepted": 42,
       "waiting": 0,
       "updated_at": "2026-07-02T21:31:43+09:00"
     },
@@ -301,7 +270,7 @@
       "published_at": "2026-06-22T12:02:00+09:00",
       "limit": 67,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6798,
         "subdomain": "engineering-manager-meetup",
@@ -315,9 +284,40 @@
       "owner_id": 38834,
       "owner_nickname": "dskst9",
       "owner_display_name": "dskst9",
-      "accepted": 55,
+      "accepted": 49,
       "waiting": 0,
       "updated_at": "2026-07-23T01:01:00+09:00"
+    },
+    {
+      "id": 399993,
+      "title": "秋葉原 もくもく会 & ごくごく会",
+      "catch": "すこしもくもく会したあとに飲みながら作業する会です",
+      "description": "<h2>概要</h2>\n<p>テーマ自由なオフラインもくもく会 &amp; ごくごく会です。\n秋葉原のコワーキングスペース FFFFF Cafe （ <a href=\"https://fffff-cafe.com/\" rel=\"nofollow\">https://fffff-cafe.com/</a> ） に集まり、各々やりたいことを作業する会です。<br>\n作業内容は勉強、読書、開発、雑談なんでもOK！<br>\nどなたでも参加可能です。 </p>\n<p>お酒が好きな人が集まり、勉強会をします。 \n１時間ほど集中（もくもく会）したあと、お酒飲みながら（ごくごく会）交流して作業します。</p>\n<p>気軽に参加してください。</p>\n<p>Vol. 9</p>\n<h4>こんな人におすすめ</h4>\n<ul>\n<li>同じ時間帯に作業する仲間がほしい</li>\n<li>ITやデザイン、ものづくりなど好きなことに没頭したい</li>\n<li>他の参加者とゆるく交流したい</li>\n<li>お酒が飲みたい</li>\n</ul>\n<h4>作業内容の例</h4>\n<ul>\n<li>プログラミングや勉強</li>\n<li>読書や執筆</li>\n<li>資格の勉強やポートフォリオ作成</li>\n<li>趣味の作業や副業</li>\n<li>学習コンテンツの視聴や課題</li>\n<li>持ち帰ってきた仕事</li>\n</ul>\n<p>集中したい時は静かに、話したい時は気軽に声をかけられる、ゆるやかな空間を目指しています。\n初心者・おひとり参加・初参加の方も大歓迎です！</p>\n<h2>ルール</h2>\n<ul>\n<li>費用 1000円</li>\n<li>自分の好きな作業をしてください！</li>\n<li>開始時に言える範囲で作業内容の説明と挨拶をお願いします</li>\n<li>途中参加OK</li>\n<li>ドリンクの持ち込みOK</li>\n<li>電源、Wi-Fi、モニター は自由に利用できます</li>\n<li>好きなお酒、飲み物をお持ちください！</li>\n</ul>\n<p>当日の参加表明もOK！</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\"></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00-19:15</td>\n<td style=\"text-align: left;\">挨拶・自己紹介・やること発表</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15-20:00</td>\n<td style=\"text-align: left;\">もくもく作業</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-23:00</td>\n<td style=\"text-align: left;\">乾杯、作業</td>\n</tr>\n</tbody>\n</table>\n<p>開始前からコワーキングスペースとして営業しています。</p>\n<h2>場所</h2>\n<p>東京都千代田区神田佐久間町3丁目37-1 山茂登ビル 3F<br>\n1Fに和食屋さん「さんほれ」さんの入ったビルの3Fです。ビルの南西端側にエレベーターがあります。さんほれさんに入らないようにお願いします。<br>\n分かりづらいのでこちらのGoogle mapを参考にしてください。<br>\n<a href=\"https://goo.gl/maps/MRmqBBKq9DpvUfhg8\" rel=\"nofollow\">https://goo.gl/maps/MRmqBBKq9DpvUfhg8</a>  </p>\n<h2>注意事項・お願い</h2>\n<ul>\n<li>勧誘・営業・宗教・MLM等の行為は禁止です</li>\n<li>参加者同士のトラブルに関して、主催側は責任を負いかねます。円滑なコミュニケーションを心がけてください。</li>\n<li>貴重品の管理はご自身でお願いします。</li>\n<li>飲食の際は周囲の方へのご配慮をお願いします。においの強い食べ物などは控えていただけると助かります。</li>\n<li>写真撮影を行う場合があります。写り込みNGの方はあらかじめお知らせください。</li>\n<li>体調がすぐれない場合は参加をご遠慮ください。</li>\n<li>参加者同士のやりとりは自由ですが、過度な詮索やプライバシーへの配慮を忘れずにお願いします。</li>\n</ul>\n<h2>主催について</h2>\n<p>会場のFFFFF Cafeを運営する株式会社リロードが主催しています。\n株式会社リロード: <a href=\"https://reload.co.jp\" rel=\"nofollow\">https://reload.co.jp</a><br>\nリロードはWeb系のソフトウェア開発を行っている会社ですが、ソフトウェアエンジニアに限らず、多様なバックグラウンドを持つ人たちの交流の場にしていきたいと思っています。<br>\nご参加お待ちしております！  </p>\n<h3>参加者交流用のSlack</h3>\n<p>当日の連絡等、こちらで行います。</p>\n<p><a href=\"https://join.slack.com/t/fffff-81d6773/shared_invite/zt-1d2ozux7o-F2O5pNC5vmXzt1Allox2xQ\" rel=\"nofollow\">https://join.slack.com/t/fffff-81d6773/shared_invite/zt-1d2ozux7o-F2O5pNC5vmXzt1Allox2xQ</a></p>",
+      "url": "https://fffff.connpass.com/event/399993/",
+      "image_url": "https://media.connpass.com/thumbs/c7/bb/c7bbea3d333b7c52929e3323b45bd1e3.png",
+      "hash_tag": "FFFFF",
+      "started_at": "2026-07-24T19:00:00+09:00",
+      "ended_at": "2026-07-24T22:00:00+09:00",
+      "published_at": "2026-07-08T20:41:01+09:00",
+      "limit": 15,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 12277,
+        "subdomain": "fffff",
+        "title": "FFFFF",
+        "url": "https://fffff.connpass.com/"
+      },
+      "address": "東京都千代田区神田佐久間町3-37-1 山茂登ビル 3階 FFFFF Cafe",
+      "place": "FFFFF Cafe",
+      "lat": "35.697598900000",
+      "lon": "139.778016300000",
+      "owner_id": 18310,
+      "owner_nickname": "kixixixixi",
+      "owner_display_name": "kixixixixi",
+      "accepted": 3,
+      "waiting": 0,
+      "updated_at": "2026-07-08T20:41:01+09:00"
     },
     {
       "id": 393639,
@@ -332,7 +332,7 @@
       "published_at": "2026-06-15T11:08:26+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11259,
         "subdomain": "gri",
@@ -363,7 +363,7 @@
       "published_at": "2026-06-25T14:40:07+09:00",
       "limit": 80,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 1043,
         "subdomain": "freee",
@@ -377,7 +377,7 @@
       "owner_id": 299387,
       "owner_nickname": "a-terarara",
       "owner_display_name": "terara",
-      "accepted": 62,
+      "accepted": 63,
       "waiting": 0,
       "updated_at": "2026-07-10T13:26:06+09:00"
     },
@@ -394,7 +394,7 @@
       "published_at": "2026-06-30T16:15:06+09:00",
       "limit": 100,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17849,
         "subdomain": "ntqjapan",
@@ -425,7 +425,7 @@
       "published_at": "2026-07-12T11:07:22+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17840,
         "subdomain": "ldp",
@@ -456,7 +456,7 @@
       "published_at": "2026-06-15T15:22:43+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 5707,
         "subdomain": "apss",
@@ -487,7 +487,7 @@
       "published_at": "2026-02-17T17:49:26+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15900,
         "subdomain": "bmconf",
@@ -533,7 +533,7 @@
       "owner_nickname": "yoshidashingo",
       "owner_display_name": "Shingo 吉田真吾",
       "accepted": 935,
-      "waiting": 5,
+      "waiting": 2,
       "updated_at": "2026-07-21T10:11:37+09:00"
     }
   ]
