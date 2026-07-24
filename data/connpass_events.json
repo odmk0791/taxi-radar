@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-24T21:14:36.892833+09:00",
+  "fetched_at": "2026-07-24T23:47:07.552956+09:00",
   "date": "20260724",
   "count": 18,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-24T01:22:28+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 9339,
         "subdomain": "cokonpile",
@@ -47,7 +47,7 @@
       "published_at": "2026-06-12T18:48:35+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都渋谷区渋谷1丁目13番5号　大協渋谷ビル10階",
       "place": "Acrosstudioオフィス",
@@ -125,7 +125,7 @@
       "published_at": "2026-05-24T10:39:38+09:00",
       "limit": 17,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14911,
         "subdomain": "ginzarb",
@@ -182,7 +182,7 @@
       "published_at": "2026-06-29T19:20:52+09:00",
       "limit": 89,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 6142,
         "subdomain": "voicy",
@@ -239,7 +239,7 @@
       "published_at": "2026-05-30T12:09:01+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1614,
         "subdomain": "kichijojipm",
@@ -301,7 +301,7 @@
       "published_at": "2026-07-08T20:41:01+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12277,
         "subdomain": "fffff",
