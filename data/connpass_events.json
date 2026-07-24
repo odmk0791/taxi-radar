@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-24T13:08:58.517069+09:00",
+  "fetched_at": "2026-07-24T16:26:20.073230+09:00",
   "date": "20260724",
   "count": 18,
   "events": [
@@ -165,7 +165,7 @@
       "owner_id": 642015,
       "owner_nickname": "works_another",
       "owner_display_name": "works_another",
-      "accepted": 7,
+      "accepted": 9,
       "waiting": 0,
       "updated_at": "2026-07-08T11:08:28+09:00"
     },
@@ -196,7 +196,7 @@
       "owner_id": 307419,
       "owner_nickname": "komura-c",
       "owner_display_name": "komura-c",
-      "accepted": 29,
+      "accepted": 30,
       "waiting": 0,
       "updated_at": "2026-07-24T11:56:26+09:00"
     },
@@ -284,7 +284,7 @@
       "owner_id": 26042,
       "owner_nickname": "magnolia_k_",
       "owner_display_name": "magnoliak",
-      "accepted": 48,
+      "accepted": 44,
       "waiting": 0,
       "updated_at": "2026-07-02T21:31:43+09:00"
     },
@@ -377,7 +377,7 @@
       "owner_id": 299387,
       "owner_nickname": "a-terarara",
       "owner_display_name": "terara",
-      "accepted": 63,
+      "accepted": 62,
       "waiting": 0,
       "updated_at": "2026-07-10T13:26:06+09:00"
     },
@@ -470,7 +470,7 @@
       "owner_id": 225013,
       "owner_nickname": "aps",
       "owner_display_name": "APS",
-      "accepted": 25,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-06-15T15:22:43+09:00"
     },
@@ -532,8 +532,8 @@
       "owner_id": 3542,
       "owner_nickname": "yoshidashingo",
       "owner_display_name": "Shingo 吉田真吾",
-      "accepted": 932,
-      "waiting": 7,
+      "accepted": 935,
+      "waiting": 5,
       "updated_at": "2026-07-21T10:11:37+09:00"
     }
   ]
