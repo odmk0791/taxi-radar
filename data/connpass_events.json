@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-24T07:57:59.725923+09:00",
+  "fetched_at": "2026-07-24T09:00:17.086234+09:00",
   "date": "20260724",
   "count": 18,
   "events": [
@@ -136,9 +136,9 @@
       "place": "メドピア株式会社",
       "lat": "35.668418300000",
       "lon": "139.769522500000",
-      "owner_id": 2563,
-      "owner_nickname": "y_yagi",
-      "owner_display_name": "y_yagi",
+      "owner_id": 3811,
+      "owner_nickname": "willnet",
+      "owner_display_name": "willnet",
       "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-07-23T11:42:33+09:00"
@@ -193,9 +193,9 @@
       "place": "MOSH株式会社 (MOSH, Inc.)",
       "lat": "35.654904000000",
       "lon": "139.702525300000",
-      "owner_id": 244426,
-      "owner_nickname": "voicy_jp",
-      "owner_display_name": "voicy_jp",
+      "owner_id": 207313,
+      "owner_nickname": "scrpgil",
+      "owner_display_name": "scrpgil",
       "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-07-16T18:05:47+09:00"
@@ -224,10 +224,10 @@
       "place": "BASE株式会社",
       "lat": "35.664586900000",
       "lon": "139.737777600000",
-      "owner_id": 584005,
-      "owner_nickname": "pauli",
-      "owner_display_name": "パウリ",
-      "accepted": 59,
+      "owner_id": 88062,
+      "owner_nickname": "expajp",
+      "owner_display_name": "expajp",
+      "accepted": 57,
       "waiting": 0,
       "updated_at": "2026-07-23T01:01:00+09:00"
     },
@@ -255,9 +255,9 @@
       "place": "FFFFF Cafe",
       "lat": "35.697598900000",
       "lon": "139.778016300000",
-      "owner_id": 18310,
-      "owner_nickname": "kixixixixi",
-      "owner_display_name": "kixixixixi",
+      "owner_id": 1003750,
+      "owner_nickname": "fffff_cafe",
+      "owner_display_name": "FFFFF Cafe",
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-07-08T20:41:01+09:00"
@@ -312,9 +312,9 @@
       "place": "大井町きゅりあん第2講習室",
       "lat": "35.606178600000",
       "lon": "139.735943300000",
-      "owner_id": 737113,
-      "owner_nickname": "canly_aki",
-      "owner_display_name": "sudoakiy",
+      "owner_id": 26042,
+      "owner_nickname": "magnolia_k_",
+      "owner_display_name": "magnoliak",
       "accepted": 48,
       "waiting": 0,
       "updated_at": "2026-07-02T21:31:43+09:00"
@@ -374,10 +374,10 @@
       "place": "フリー株式会社",
       "lat": "35.622377100000",
       "lon": "139.727459400000",
-      "owner_id": 299387,
-      "owner_nickname": "a-terarara",
-      "owner_display_name": "terara",
-      "accepted": 63,
+      "owner_id": 141857,
+      "owner_nickname": "freee_event",
+      "owner_display_name": "freee",
+      "accepted": 62,
       "waiting": 0,
       "updated_at": "2026-07-10T13:26:06+09:00"
     },
@@ -533,7 +533,7 @@
       "owner_nickname": "yoshidashingo",
       "owner_display_name": "Shingo 吉田真吾",
       "accepted": 931,
-      "waiting": 15,
+      "waiting": 11,
       "updated_at": "2026-07-21T10:11:37+09:00"
     }
   ]
