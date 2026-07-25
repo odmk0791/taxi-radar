@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-25T22:06:04.107934+09:00",
+  "fetched_at": "2026-07-25T23:56:15.701454+09:00",
   "date": "20260725",
   "count": 38,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-25T21:23:44+09:00",
       "limit": 21,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17273,
         "subdomain": "jouban-agile",
@@ -128,37 +128,6 @@
       "updated_at": "2026-07-14T14:40:30+09:00"
     },
     {
-      "id": 401082,
-      "title": "[秋葉原] MLflowで実践するLLMOps 輪読&勉強会 プロンプト管理/本番運用と監視",
-      "catch": "",
-      "description": "<h1>この会について</h1>\n<p><a href=\"https://amzn.to/4e3Fw4v\" rel=\"nofollow\">MLflowで実践するLLMOps――生成AIアプリケーションの実験管理と品質保証</a>を読み進め理解を深める会です。<br></p>\n<p>今回は第6章〜第8章を扱います。\n第6章ではPrompt Registryを活用したプロンプト管理と改善手法、第7章では本番環境へのデプロイとサービング、第8章ではトレーシング・コスト・品質を含めた監視と運用について学びます。  <br>\nLLMアプリケーションを安全かつ継続的に運用するための実践的なLLMOpsを身につけます。</p>\n<p>「LLMOpsという言葉は聞くけれど、実際に何を運用・管理するのかわからない」  <br>\n「AIエージェントを本番環境で運用する方法を体系的に学びたい」</p>\n<p>という初心者の方から実務経験者の方まで大歓迎です。</p>\n<p>参加者が気軽に質問や意見交換ができる、フラットな場所を目指しています。</p>\n<h2>MLflowで実践するLLMOps――生成AIアプリケーションの実験管理と品質保証</h2>\n<blockquote>\n<p>本書は、LLMアプリケーションの開発・運用に必要な一連のプロセス――可観測性の確保、品質評価、プロンプト管理、本番展開――を、オープンソースプラットフォーム「MLflow」を使って体系的に実践する技術書です。</p>\n<p><b>こんな方にオススメ</b>  <br>\n  ・LLMアプリケーションの開発に興味がある人  <br>\n  ・LLMアプリケーションを運用しているが、課題を感じている人  <br>\n(サポートページより引用)</p>\n</blockquote>\n<h2>スケジュール</h2>\n<p>当日の進行や参加者の状況により変更になる場合があります。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">17:00 -</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00 - 18:10</td>\n<td style=\"text-align: left;\">簡単な挨拶＆会場説明など</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:10 - 20:00</td>\n<td style=\"text-align: left;\">第6章〜第8章</td>\n</tr>\n</tbody>\n</table>\n<h2><strong>■ 形式</strong></h2>\n<ul>\n<li><strong>書籍解説：</strong> 発表形式(各章の担当者が内容をサマリ)</li>\n<li><strong>追加情報：</strong> 書籍外の関連知識や実装のコツを補足</li>\n<li><strong>LTタイム：</strong> 有志による5分以内の発表（あれば）</li>\n</ul>\n<p>※ 発表+LTが終わり次第、質疑応答&amp;自習時間になります。    </p>\n<blockquote>\n<p><strong>📢 LT（ライトニングトーク）募集中！</strong> <br>\nベクトル検索や関連技術に関する事例・知見を共有したい方がいらっしゃいましたら、フィードや下記Slackなどで表明をお願いいたします！（5分以内）</p>\n</blockquote>\n<p>※ 17:00から会場に入れます。イベント開始まで同料金でコワーキングスペースを利用できますので、早めに来て予習やご自身の作業をして頂いても構いません。</p>\n<p>※ 終了後に希望者で懇親会を実施予定です(近くの居酒屋で費用は割り勘となります)  <br>\n※ 当日、同会場にて13:00-17:00に<a href=\"https://weeyble-creative.connpass.com/event/399564/\" rel=\"nofollow\">テーマ自由のもくもく会</a>を実施しています（<a href=\"https://weeyble.com/blog/2025/10/13/mokumoku-guide/\" rel=\"nofollow\">もくもく会とは？</a>）。</p>\n<p>※環境構築のサポートが必要な方は上記の「もくもく会」にご参加いただければ対応いたします。</p>\n<h2>Slack</h2>\n<p><a href=\"https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q\" rel=\"nofollow\">https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q</a></p>\n<p>情報共有にSlackを使用します。事前に登録をお願いします。</p>\n<p>(#llm というchannelを使用します。)</p>\n<h2>持ち物</h2>\n<p><a href=\"https://amzn.to/4e3Fw4v\" rel=\"nofollow\">MLflowで実践するLLMOps――生成AIアプリケーションの実験管理と品質保証</a></p>\n<p>・実装される方はPC  <br>\n Pythonの実行環境があると動かしながら確認できます。</p>\n<p>※ 飲食OKですが、においが強いものはご遠慮ください。 </p>\n<h1>会場</h1>\n<p align=\"center\">\n  <img src=\"https://weeyble.com/weeyble_banner.jpg\" alt=\"weeyble_banner\" width=\"90%\">\n</p>\n\n<p><a href=\"https://weeyble.com/\" rel=\"nofollow\">コワーキングスペース秋葉原 Weeyble</a>  (<a href=\"https://maps.app.goo.gl/qm9rqZAT1FtCvKmr5\" rel=\"nofollow\">地図</a>)</p>\n<p>一緒に勉強会を運営してくださる方募集してます → <a href=\"https://weeyble.com/study-policy\" rel=\"nofollow\">主催者募集</a></p>\n<p>AI駆動開発関連の書籍もおいてあります\n(AIエージェント開発運用入門、初めてのLangChain、Dify関連など)   <br>\n→ <a href=\"https://weeyble-books.pages.dev/\" rel=\"noopener noreferrer nofollow\">書籍リストはこちら</a></p>\n<blockquote>\n<p>最寄り駅：<br>\nJR 秋葉原 昭和通り口徒歩4分くらい<br>\n東京メトロ 日比谷線 秋葉原 4番出口 徒歩3分くらい</p>\n<p><strong>1Fは飲食店となっておりますので、立ち入らないようご注意ください。</strong><br>\n<strong>ビルの南西端側にエレベーターがありますので、そちらから3Fに上がってください。</strong></p>\n<p>迷った場合、遅れる場合等はSlackにてご連絡ください。<br>\n(Connpassからのお問い合わせではリアルタイムでの対応は致しかねます)</p>\n</blockquote>\n<h2>参加費</h2>\n<p>1000円 (コワーキングスペースの利用料)</p>\n<p><a href=\"https://weeyble-creative.connpass.com/event/399564/\" rel=\"nofollow\">テーマ自由もくもく会</a>から継続参加の方は500円となります。  <br>\n(「参加枠」で登録の上、当日受付にてスタッフへお申し出ください。)</p>\n<h1>注意事項</h1>\n<blockquote>\n<p>本コミュニティでの勉強会は技術の共有、エンジニア間の交流を目的としており以下のことを禁止しております。</p>\n<p>・ネットワークビジネス、プログラミングスクール、オンラインサロン、有料コミュニティへの勧誘</p>\n<p>・ダイレクトリクルーティング、その他また過度な営業行為など、イベント運営の妨げになるような行為</p>\n<p>ご提供いただいた個人情報は、<a href=\"https://weeybrid.co.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a>に基づき適切に管理いたします。</p>\n</blockquote>",
-      "url": "https://weeyble-data.connpass.com/event/401082/",
-      "image_url": "https://media.connpass.com/thumbs/e2/df/e2df1c8721f3af6c03757bf15344d7c1.png",
-      "hash_tag": "",
-      "started_at": "2026-07-25T18:00:00+09:00",
-      "ended_at": "2026-07-25T20:00:00+09:00",
-      "published_at": "2026-07-18T16:09:55+09:00",
-      "limit": 8,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 3331,
-        "subdomain": "weeyble-data",
-        "title": "Weeyble データサイエンス",
-        "url": "https://weeyble-data.connpass.com/"
-      },
-      "address": "東京都千代田区神田佐久間町3丁目37-1 山茂登ビル3F Weeyble",
-      "place": "コワーキングスペース秋葉原 Weeyble",
-      "lat": "35.697592600000",
-      "lon": "139.777946800000",
-      "owner_id": 109434,
-      "owner_nickname": "weeyble",
-      "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 6,
-      "waiting": 0,
-      "updated_at": "2026-07-18T16:09:55+09:00"
-    },
-    {
       "id": 396718,
       "title": "1周年記念コストコパーティー【エンジニアの放課後】",
       "catch": "【参加費無料】エンジニアの放課後1周年記念 生ハム原木×コストコパーティー in 中目黒",
@@ -219,6 +188,37 @@
       "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-07-22T10:42:56+09:00"
+    },
+    {
+      "id": 401082,
+      "title": "[秋葉原] MLflowで実践するLLMOps 輪読&勉強会 プロンプト管理/本番運用と監視",
+      "catch": "",
+      "description": "<h1>この会について</h1>\n<p><a href=\"https://amzn.to/4e3Fw4v\" rel=\"nofollow\">MLflowで実践するLLMOps――生成AIアプリケーションの実験管理と品質保証</a>を読み進め理解を深める会です。<br></p>\n<p>今回は第6章〜第8章を扱います。\n第6章ではPrompt Registryを活用したプロンプト管理と改善手法、第7章では本番環境へのデプロイとサービング、第8章ではトレーシング・コスト・品質を含めた監視と運用について学びます。  <br>\nLLMアプリケーションを安全かつ継続的に運用するための実践的なLLMOpsを身につけます。</p>\n<p>「LLMOpsという言葉は聞くけれど、実際に何を運用・管理するのかわからない」  <br>\n「AIエージェントを本番環境で運用する方法を体系的に学びたい」</p>\n<p>という初心者の方から実務経験者の方まで大歓迎です。</p>\n<p>参加者が気軽に質問や意見交換ができる、フラットな場所を目指しています。</p>\n<h2>MLflowで実践するLLMOps――生成AIアプリケーションの実験管理と品質保証</h2>\n<blockquote>\n<p>本書は、LLMアプリケーションの開発・運用に必要な一連のプロセス――可観測性の確保、品質評価、プロンプト管理、本番展開――を、オープンソースプラットフォーム「MLflow」を使って体系的に実践する技術書です。</p>\n<p><b>こんな方にオススメ</b>  <br>\n  ・LLMアプリケーションの開発に興味がある人  <br>\n  ・LLMアプリケーションを運用しているが、課題を感じている人  <br>\n(サポートページより引用)</p>\n</blockquote>\n<h2>スケジュール</h2>\n<p>当日の進行や参加者の状況により変更になる場合があります。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">17:00 -</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00 - 18:10</td>\n<td style=\"text-align: left;\">簡単な挨拶＆会場説明など</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:10 - 20:00</td>\n<td style=\"text-align: left;\">第6章〜第8章</td>\n</tr>\n</tbody>\n</table>\n<h2><strong>■ 形式</strong></h2>\n<ul>\n<li><strong>書籍解説：</strong> 発表形式(各章の担当者が内容をサマリ)</li>\n<li><strong>追加情報：</strong> 書籍外の関連知識や実装のコツを補足</li>\n<li><strong>LTタイム：</strong> 有志による5分以内の発表（あれば）</li>\n</ul>\n<p>※ 発表+LTが終わり次第、質疑応答&amp;自習時間になります。    </p>\n<blockquote>\n<p><strong>📢 LT（ライトニングトーク）募集中！</strong> <br>\nベクトル検索や関連技術に関する事例・知見を共有したい方がいらっしゃいましたら、フィードや下記Slackなどで表明をお願いいたします！（5分以内）</p>\n</blockquote>\n<p>※ 17:00から会場に入れます。イベント開始まで同料金でコワーキングスペースを利用できますので、早めに来て予習やご自身の作業をして頂いても構いません。</p>\n<p>※ 終了後に希望者で懇親会を実施予定です(近くの居酒屋で費用は割り勘となります)  <br>\n※ 当日、同会場にて13:00-17:00に<a href=\"https://weeyble-creative.connpass.com/event/399564/\" rel=\"nofollow\">テーマ自由のもくもく会</a>を実施しています（<a href=\"https://weeyble.com/blog/2025/10/13/mokumoku-guide/\" rel=\"nofollow\">もくもく会とは？</a>）。</p>\n<p>※環境構築のサポートが必要な方は上記の「もくもく会」にご参加いただければ対応いたします。</p>\n<h2>Slack</h2>\n<p><a href=\"https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q\" rel=\"nofollow\">https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q</a></p>\n<p>情報共有にSlackを使用します。事前に登録をお願いします。</p>\n<p>(#llm というchannelを使用します。)</p>\n<h2>持ち物</h2>\n<p><a href=\"https://amzn.to/4e3Fw4v\" rel=\"nofollow\">MLflowで実践するLLMOps――生成AIアプリケーションの実験管理と品質保証</a></p>\n<p>・実装される方はPC  <br>\n Pythonの実行環境があると動かしながら確認できます。</p>\n<p>※ 飲食OKですが、においが強いものはご遠慮ください。 </p>\n<h1>会場</h1>\n<p align=\"center\">\n  <img src=\"https://weeyble.com/weeyble_banner.jpg\" alt=\"weeyble_banner\" width=\"90%\">\n</p>\n\n<p><a href=\"https://weeyble.com/\" rel=\"nofollow\">コワーキングスペース秋葉原 Weeyble</a>  (<a href=\"https://maps.app.goo.gl/qm9rqZAT1FtCvKmr5\" rel=\"nofollow\">地図</a>)</p>\n<p>一緒に勉強会を運営してくださる方募集してます → <a href=\"https://weeyble.com/study-policy\" rel=\"nofollow\">主催者募集</a></p>\n<p>AI駆動開発関連の書籍もおいてあります\n(AIエージェント開発運用入門、初めてのLangChain、Dify関連など)   <br>\n→ <a href=\"https://weeyble-books.pages.dev/\" rel=\"noopener noreferrer nofollow\">書籍リストはこちら</a></p>\n<blockquote>\n<p>最寄り駅：<br>\nJR 秋葉原 昭和通り口徒歩4分くらい<br>\n東京メトロ 日比谷線 秋葉原 4番出口 徒歩3分くらい</p>\n<p><strong>1Fは飲食店となっておりますので、立ち入らないようご注意ください。</strong><br>\n<strong>ビルの南西端側にエレベーターがありますので、そちらから3Fに上がってください。</strong></p>\n<p>迷った場合、遅れる場合等はSlackにてご連絡ください。<br>\n(Connpassからのお問い合わせではリアルタイムでの対応は致しかねます)</p>\n</blockquote>\n<h2>参加費</h2>\n<p>1000円 (コワーキングスペースの利用料)</p>\n<p><a href=\"https://weeyble-creative.connpass.com/event/399564/\" rel=\"nofollow\">テーマ自由もくもく会</a>から継続参加の方は500円となります。  <br>\n(「参加枠」で登録の上、当日受付にてスタッフへお申し出ください。)</p>\n<h1>注意事項</h1>\n<blockquote>\n<p>本コミュニティでの勉強会は技術の共有、エンジニア間の交流を目的としており以下のことを禁止しております。</p>\n<p>・ネットワークビジネス、プログラミングスクール、オンラインサロン、有料コミュニティへの勧誘</p>\n<p>・ダイレクトリクルーティング、その他また過度な営業行為など、イベント運営の妨げになるような行為</p>\n<p>ご提供いただいた個人情報は、<a href=\"https://weeybrid.co.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a>に基づき適切に管理いたします。</p>\n</blockquote>",
+      "url": "https://weeyble-data.connpass.com/event/401082/",
+      "image_url": "https://media.connpass.com/thumbs/e2/df/e2df1c8721f3af6c03757bf15344d7c1.png",
+      "hash_tag": "",
+      "started_at": "2026-07-25T18:00:00+09:00",
+      "ended_at": "2026-07-25T20:00:00+09:00",
+      "published_at": "2026-07-18T16:09:55+09:00",
+      "limit": 8,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 3331,
+        "subdomain": "weeyble-data",
+        "title": "Weeyble データサイエンス",
+        "url": "https://weeyble-data.connpass.com/"
+      },
+      "address": "東京都千代田区神田佐久間町3丁目37-1 山茂登ビル3F Weeyble",
+      "place": "コワーキングスペース秋葉原 Weeyble",
+      "lat": "35.697592600000",
+      "lon": "139.777946800000",
+      "owner_id": 109434,
+      "owner_nickname": "weeyble",
+      "owner_display_name": "コワーキングスペース秋葉原Weeyble",
+      "accepted": 6,
+      "waiting": 0,
+      "updated_at": "2026-07-18T16:09:55+09:00"
     },
     {
       "id": 397350,
