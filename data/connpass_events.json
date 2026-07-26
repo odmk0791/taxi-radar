@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-27T05:13:55.463251+09:00",
+  "fetched_at": "2026-07-27T06:52:18.141819+09:00",
   "date": "20260727",
   "count": 13,
   "events": [
@@ -247,7 +247,7 @@
       "owner_id": 693366,
       "owner_nickname": "hokki",
       "owner_display_name": "ほき/Inoue Ibuki",
-      "accepted": 93,
+      "accepted": 92,
       "waiting": 0,
       "updated_at": "2026-07-26T14:50:21+09:00"
     },
@@ -280,7 +280,7 @@
       "owner_display_name": "KNR",
       "accepted": 60,
       "waiting": 0,
-      "updated_at": "2026-07-25T08:05:40+09:00"
+      "updated_at": "2026-07-27T06:46:31+09:00"
     },
     {
       "id": 394416,
@@ -388,7 +388,7 @@
       "published_at": "2026-07-23T15:16:29+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17883,
         "subdomain": "canuu",
