@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-26T11:02:22.789147+09:00",
+  "fetched_at": "2026-07-26T14:52:41.228022+09:00",
   "date": "20260726",
-  "count": 10,
+  "count": 11,
   "events": [
     {
       "id": 397180,
@@ -68,7 +68,7 @@
       "published_at": "2026-07-15T00:16:33+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "世田谷区成城6丁目2−１",
       "place": "世田谷区砧総合支所 4F 区民集会所",
@@ -94,7 +94,7 @@
       "published_at": "2026-06-30T21:50:29+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2728,
         "subdomain": "fm-mkmk",
@@ -108,7 +108,7 @@
       "owner_id": 19209,
       "owner_nickname": "MD5500",
       "owner_display_name": "MD5500",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-06-30T21:50:29+09:00"
     },
@@ -125,7 +125,7 @@
       "published_at": "2026-05-06T00:01:35+09:00",
       "limit": 123,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13549,
         "subdomain": "ishikai",
@@ -154,9 +154,9 @@
       "started_at": "2026-07-26T13:00:00+09:00",
       "ended_at": "2026-07-26T17:00:00+09:00",
       "published_at": "2026-07-18T16:41:24+09:00",
-      "limit": 10,
+      "limit": 9,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2959,
         "subdomain": "weeyble-creative",
@@ -170,9 +170,40 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 7,
+      "accepted": 6,
       "waiting": 0,
-      "updated_at": "2026-07-25T18:39:52+09:00"
+      "updated_at": "2026-07-26T11:54:57+09:00"
+    },
+    {
+      "id": 401780,
+      "title": "もくもく会＠ランドプレイス錦糸町　07/26 pm13～18　参加費￥700",
+      "catch": "残り1枠の募集です",
+      "description": "<p>※ご注意※※※※※※※※※※※※※※※※※※※※※</p>\n<p>1.イベント参加費＝会場使用費」です</p>\n<p>参加人数が増えて一人当たりの料金が浮いた場合は当日主催者からその分の返金をいたします</p>\n<p>2.最大5名の会場となります（会場変更の可能ありです）</p>\n<p>3.男女ともに参加予定です</p>\n<p>4.外部でも募集しているため、状況に合わせて募集枠調整していきます。</p>\n<p>※※※※※※※※※※※※※※※※※※※※※※※※※</p>\n<p>◆会の概要</p>\n<p>各々が何をやるかについては問いません、発せられる音、匂い、振動などが良識の範囲内ならなんでもござれです</p>\n<p>学校の勉強、資格の勉強、動画編集、作曲、執筆、編み物なんなら家計簿付けでもOK</p>\n<p>募集主はひたすらPCで物語の執筆など、文章作成を行います</p>\n<p>1年以上定期的な開催を続け、参加いただいた方の約半数がリピート参加してくれております</p>\n<p>参加人数が多いほど一人当たりの負担が減らせるため多くの方にご利用いただければと思っております</p>\n<p>会場は参加人数に応じて調整を行う場合がありますのでお問い合わせをいただいてからご連絡いたします</p>\n<p>◆タイムテーブル</p>\n<p>以前は1時間おき位に休憩を入れていましたが最近は参加者が集まったタイミングで軽く自己紹介を行う小休止を入れる程度です。</p>\n<p>その後は終了時刻まで参加者皆様のペースに任せて作業と休憩を取っていただいています。</p>\n<p>◆作業</p>\n<p>ただ黙々と作業するのみ</p>\n<p>集中力が切れたらストレッチしたり周辺を歩いてくるなど各自で対応してください</p>\n<p>無為な雑談は控えましょう</p>\n<p>※だらだらしなければよいので作業を継続しながら世間話くらいはOKです)</p>",
+      "url": "https://wegh.connpass.com/event/401780/",
+      "image_url": "https://media.connpass.com/thumbs/25/1c/251c4295eb5975b34b22da633d61d662.png",
+      "hash_tag": "",
+      "started_at": "2026-07-26T13:00:00+09:00",
+      "ended_at": "2026-07-26T18:00:00+09:00",
+      "published_at": "2026-07-26T13:00:00+09:00",
+      "limit": 1,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 16982,
+        "subdomain": "wegh",
+        "title": "週末勉強会",
+        "url": "https://wegh.connpass.com/"
+      },
+      "address": "東京都墨田区錦糸3-5-10（石川ビル 4階）",
+      "place": "ランドプレイス錦糸町",
+      "lat": "35.698322900000",
+      "lon": "139.814585200000",
+      "owner_id": 978758,
+      "owner_nickname": "hebimeta",
+      "owner_display_name": "hebimeta",
+      "accepted": 0,
+      "waiting": 0,
+      "updated_at": "2026-07-26T13:24:19+09:00"
     },
     {
       "id": 397020,
@@ -218,7 +249,7 @@
       "published_at": "2026-07-18T20:06:19+09:00",
       "limit": 9,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 5495,
         "subdomain": "ml-for-experts",
@@ -249,7 +280,7 @@
       "published_at": "2026-07-25T09:18:54+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 966,
         "subdomain": "devmorning",
@@ -280,7 +311,7 @@
       "published_at": "2026-07-01T12:57:31+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 5599,
         "subdomain": "coderdojo-akabane",
