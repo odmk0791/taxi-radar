@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-26T17:12:12.050757+09:00",
+  "fetched_at": "2026-07-26T19:37:41.345463+09:00",
   "date": "20260726",
   "count": 11,
   "events": [
@@ -156,7 +156,7 @@
       "published_at": "2026-05-06T00:01:35+09:00",
       "limit": 123,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13549,
         "subdomain": "ishikai",
@@ -187,7 +187,7 @@
       "published_at": "2026-07-26T13:00:00+09:00",
       "limit": 1,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16982,
         "subdomain": "wegh",
