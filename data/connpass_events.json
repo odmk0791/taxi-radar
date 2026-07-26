@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-26T14:52:41.228022+09:00",
+  "fetched_at": "2026-07-26T17:12:12.050757+09:00",
   "date": "20260726",
   "count": 11,
   "events": [
@@ -68,7 +68,7 @@
       "published_at": "2026-07-15T00:16:33+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "世田谷区成城6丁目2−１",
       "place": "世田谷区砧総合支所 4F 区民集会所",
@@ -94,7 +94,7 @@
       "published_at": "2026-06-30T21:50:29+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2728,
         "subdomain": "fm-mkmk",
@@ -111,6 +111,37 @@
       "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-06-30T21:50:29+09:00"
+    },
+    {
+      "id": 401086,
+      "title": "[秋葉原] テーマ自由もくもく会 (質問・雑談OK！)",
+      "catch": "",
+      "description": "<h1>この会について</h1>\n<p>休日にコワーキングスペースに集まり、各自で勉強や作業、読書などに取り組む「もくもく会」です。</p>\n<p>「自宅ではなかなか集中できない」「周りの刺激を受けながら作業したい」という方はもちろん、開発者同士で知り合いを増やしたい方も大歓迎！</p>\n<p>質問や雑談もOKの自由な雰囲気ですので、初参加の方や初心者の方もお気軽にご参加ください。</p>\n<h1>会場</h1>\n<p align=\"center\">\n  <img src=\"https://weeyble.com/weeyble_banner.jpg\" alt=\"weeyble_banner\" width=\"90%\">\n</p>\n\n<p><a href=\"https://weeyble.com/\" rel=\"nofollow\">コワーキングスペース秋葉原 Weeyble</a>  (<a href=\"https://maps.app.goo.gl/qm9rqZAT1FtCvKmr5\" rel=\"nofollow\">地図</a>)</p>\n<p>一緒に勉強会を運営してくださる方募集してます → <a href=\"https://weeyble.com/study-policy\" rel=\"nofollow\">主催者募集</a></p>\n<p>書籍棚の技術書もご覧いただけます → <a href=\"https://weeyble-books.pages.dev/\" rel=\"noopener noreferrer nofollow\">書籍リストはこちら</a></p>\n<blockquote>\n<p>最寄り駅：<br>\nJR 秋葉原 昭和通り口徒歩4分くらい<br>\n東京メトロ 日比谷線 秋葉原 4番出口 徒歩3分くらい</p>\n<p><strong>1Fは飲食店となっておりますので、立ち入らないようご注意ください。</strong><br>\n<strong>ビルの南西端側にエレベーターがありますので、そちらから3Fに上がってください。</strong></p>\n<p>迷った場合、遅れる場合等はSlackにてご連絡ください。<br>\n(Connpassからのお問い合わせではリアルタイムでの対応は致しかねます)</p>\n</blockquote>\n<h2>もくもく会とは？</h2>\n<p><a href=\"https://weeyble.com/blog/2025/10/13/mokumoku-guide/\" rel=\"nofollow\">もくもく会とは</a></p>\n<p>一つの場所に集まって、各自がやりたいこと(勉強したり作業したり本を読んだり)をやる会です。<br>\n家ではどうも集中できない方、集まって作業をしたい方、知り合いを増やしたい方におすすめです。<br>\n是非お気軽にご参加ください。<br></p>\n<h2>Slack</h2>\n<p><a href=\"https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q\" rel=\"nofollow\">https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q</a></p>\n<p>情報共有にSlackを使用します。事前に登録をお願いします。</p>\n<p>(#休日もくもく会というchannelを使用します。)</p>\n<h2>注意事項</h2>\n<blockquote>\n<p>本コミュニティでの勉強会は、技術の共有やエンジニア同士の交流を目的としております。以下の行為は禁止しております。</p>\n<ul>\n<li>ネットワークビジネス、プログラミングスクール、オンラインサロン、有料コミュニティ等への勧誘</li>\n<li>ダイレクトリクルーティング、過度な営業行為など、イベント運営や参加者への迷惑となる行為</li>\n</ul>\n<p>円滑なコミュニティ運営のため、無断欠席や上記に該当する行為が確認された場合は、運営判断により今後のイベントへのお申し込みをお断りする場合があります。</p>\n<p>ご提供いただいた個人情報は、<a href=\"https://weeybrid.co.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a>に基づき適切に管理いたします。</p>\n</blockquote>\n<h1>開催情報</h1>\n<h2>持ち物</h2>\n<p>・会場費(税込1000円)  <br>\n・各自もくもくに必要なもの(PC、書籍など）</p>\n<p>※ 騒がしいのが気になる方は耳栓、ヘッドホン、イヤホンなどを各自でご持参ください。    </p>\n<p>※ 飲食持ち込みOKですが、においが強いものはご遠慮ください。</p>\n<h2>タイムスケジュール</h2>\n<p>ざっくりと下記の流れになります。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:40 -</td>\n<td style=\"text-align: left;\">会場へ入場できます</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 ~</td>\n<td style=\"text-align: left;\">簡単な自己紹介と今日のやること発表 → もくもく</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 ~</td>\n<td style=\"text-align: left;\">軽い成果発表、進捗共有など</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00 ~</td>\n<td style=\"text-align: left;\">解散。お疲れ様でした🙇</td>\n</tr>\n</tbody>\n</table>\n<h2>Q&amp;A</h2>\n<h3>Q. 初参加なのですが、大丈夫でしょうか？</h3>\n<p><strong>A. はい、大丈夫です。</strong><br>\n毎回3割前後は初参加の方です。親切な方がたくさんいらっしゃいます。<br>\nまったりした雰囲気の会なので、気負わずご参加ください。</p>\n<hr>\n<h3>Q. 遅れて参加したり、途中退出したりしても大丈夫ですか？</h3>\n<p><strong>A. はい、問題ありません。</strong><br>\nなお、13:00頃に自己紹介の時間を予定しているため、初参加の方やほかの参加者と交流したい方は、この時間に来ていただくのがおすすめです。\nスケジュールや会場案内、注意事項はSlackにも掲載していますので、ご不明な点があれば主催またはスタッフまでお気軽にお声がけください。</p>\n<hr>\n<h3>Q. 参加できなくなった場合、個別に連絡は必要ですか？</h3>\n<p><strong>A. 個別のご連絡は不要です。</strong><br>\nこのページ上でキャンセル手続きをしていただければ大丈夫です。</p>\n<hr>\n<h3>Q. 問い合わせはこのページのフィードに書けばよいですか？このページから問い合わせできますか？</h3>\n<p><strong>A. 個別返信が必要なお問い合わせには、このページ上では対応していません。</strong><br>\n営業・会場案内・忘れ物などのご連絡は、Slackでまとめて管理しています。<br>\n返信が必要な内容については、Slackからご連絡をお願いいたします。</p>\n<h2>主催について</h2>\n<p>yasu_yuki  <br>\n組み込み・Web開発の現場を経て独立・法人化。  <br>\n現在はインフラ領域を中心に事業を展開してます。</p>",
+      "url": "https://weeyble-creative.connpass.com/event/401086/",
+      "image_url": "https://media.connpass.com/thumbs/ea/3a/ea3adbf1e213390ce161e2c9d9cdf957.png",
+      "hash_tag": "",
+      "started_at": "2026-07-26T13:00:00+09:00",
+      "ended_at": "2026-07-26T17:00:00+09:00",
+      "published_at": "2026-07-18T16:41:24+09:00",
+      "limit": 9,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 2959,
+        "subdomain": "weeyble-creative",
+        "title": "Weeyble Creative",
+        "url": "https://weeyble-creative.connpass.com/"
+      },
+      "address": "東京都千代田区神田佐久間町3丁目37-1 山茂登ビル3F Weeyble",
+      "place": "コワーキングスペース秋葉原 Weeyble",
+      "lat": "35.697592600000",
+      "lon": "139.777946800000",
+      "owner_id": 109434,
+      "owner_nickname": "weeyble",
+      "owner_display_name": "コワーキングスペース秋葉原Weeyble",
+      "accepted": 6,
+      "waiting": 0,
+      "updated_at": "2026-07-26T11:54:57+09:00"
     },
     {
       "id": 390287,
@@ -142,37 +173,6 @@
       "accepted": 21,
       "waiting": 0,
       "updated_at": "2026-07-26T08:36:31+09:00"
-    },
-    {
-      "id": 401086,
-      "title": "[秋葉原] テーマ自由もくもく会 (質問・雑談OK！)",
-      "catch": "",
-      "description": "<h1>この会について</h1>\n<p>休日にコワーキングスペースに集まり、各自で勉強や作業、読書などに取り組む「もくもく会」です。</p>\n<p>「自宅ではなかなか集中できない」「周りの刺激を受けながら作業したい」という方はもちろん、開発者同士で知り合いを増やしたい方も大歓迎！</p>\n<p>質問や雑談もOKの自由な雰囲気ですので、初参加の方や初心者の方もお気軽にご参加ください。</p>\n<h1>会場</h1>\n<p align=\"center\">\n  <img src=\"https://weeyble.com/weeyble_banner.jpg\" alt=\"weeyble_banner\" width=\"90%\">\n</p>\n\n<p><a href=\"https://weeyble.com/\" rel=\"nofollow\">コワーキングスペース秋葉原 Weeyble</a>  (<a href=\"https://maps.app.goo.gl/qm9rqZAT1FtCvKmr5\" rel=\"nofollow\">地図</a>)</p>\n<p>一緒に勉強会を運営してくださる方募集してます → <a href=\"https://weeyble.com/study-policy\" rel=\"nofollow\">主催者募集</a></p>\n<p>書籍棚の技術書もご覧いただけます → <a href=\"https://weeyble-books.pages.dev/\" rel=\"noopener noreferrer nofollow\">書籍リストはこちら</a></p>\n<blockquote>\n<p>最寄り駅：<br>\nJR 秋葉原 昭和通り口徒歩4分くらい<br>\n東京メトロ 日比谷線 秋葉原 4番出口 徒歩3分くらい</p>\n<p><strong>1Fは飲食店となっておりますので、立ち入らないようご注意ください。</strong><br>\n<strong>ビルの南西端側にエレベーターがありますので、そちらから3Fに上がってください。</strong></p>\n<p>迷った場合、遅れる場合等はSlackにてご連絡ください。<br>\n(Connpassからのお問い合わせではリアルタイムでの対応は致しかねます)</p>\n</blockquote>\n<h2>もくもく会とは？</h2>\n<p><a href=\"https://weeyble.com/blog/2025/10/13/mokumoku-guide/\" rel=\"nofollow\">もくもく会とは</a></p>\n<p>一つの場所に集まって、各自がやりたいこと(勉強したり作業したり本を読んだり)をやる会です。<br>\n家ではどうも集中できない方、集まって作業をしたい方、知り合いを増やしたい方におすすめです。<br>\n是非お気軽にご参加ください。<br></p>\n<h2>Slack</h2>\n<p><a href=\"https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q\" rel=\"nofollow\">https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q</a></p>\n<p>情報共有にSlackを使用します。事前に登録をお願いします。</p>\n<p>(#休日もくもく会というchannelを使用します。)</p>\n<h2>注意事項</h2>\n<blockquote>\n<p>本コミュニティでの勉強会は、技術の共有やエンジニア同士の交流を目的としております。以下の行為は禁止しております。</p>\n<ul>\n<li>ネットワークビジネス、プログラミングスクール、オンラインサロン、有料コミュニティ等への勧誘</li>\n<li>ダイレクトリクルーティング、過度な営業行為など、イベント運営や参加者への迷惑となる行為</li>\n</ul>\n<p>円滑なコミュニティ運営のため、無断欠席や上記に該当する行為が確認された場合は、運営判断により今後のイベントへのお申し込みをお断りする場合があります。</p>\n<p>ご提供いただいた個人情報は、<a href=\"https://weeybrid.co.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a>に基づき適切に管理いたします。</p>\n</blockquote>\n<h1>開催情報</h1>\n<h2>持ち物</h2>\n<p>・会場費(税込1000円)  <br>\n・各自もくもくに必要なもの(PC、書籍など）</p>\n<p>※ 騒がしいのが気になる方は耳栓、ヘッドホン、イヤホンなどを各自でご持参ください。    </p>\n<p>※ 飲食持ち込みOKですが、においが強いものはご遠慮ください。</p>\n<h2>タイムスケジュール</h2>\n<p>ざっくりと下記の流れになります。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:40 -</td>\n<td style=\"text-align: left;\">会場へ入場できます</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 ~</td>\n<td style=\"text-align: left;\">簡単な自己紹介と今日のやること発表 → もくもく</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 ~</td>\n<td style=\"text-align: left;\">軽い成果発表、進捗共有など</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00 ~</td>\n<td style=\"text-align: left;\">解散。お疲れ様でした🙇</td>\n</tr>\n</tbody>\n</table>\n<h2>Q&amp;A</h2>\n<h3>Q. 初参加なのですが、大丈夫でしょうか？</h3>\n<p><strong>A. はい、大丈夫です。</strong><br>\n毎回3割前後は初参加の方です。親切な方がたくさんいらっしゃいます。<br>\nまったりした雰囲気の会なので、気負わずご参加ください。</p>\n<hr>\n<h3>Q. 遅れて参加したり、途中退出したりしても大丈夫ですか？</h3>\n<p><strong>A. はい、問題ありません。</strong><br>\nなお、13:00頃に自己紹介の時間を予定しているため、初参加の方やほかの参加者と交流したい方は、この時間に来ていただくのがおすすめです。\nスケジュールや会場案内、注意事項はSlackにも掲載していますので、ご不明な点があれば主催またはスタッフまでお気軽にお声がけください。</p>\n<hr>\n<h3>Q. 参加できなくなった場合、個別に連絡は必要ですか？</h3>\n<p><strong>A. 個別のご連絡は不要です。</strong><br>\nこのページ上でキャンセル手続きをしていただければ大丈夫です。</p>\n<hr>\n<h3>Q. 問い合わせはこのページのフィードに書けばよいですか？このページから問い合わせできますか？</h3>\n<p><strong>A. 個別返信が必要なお問い合わせには、このページ上では対応していません。</strong><br>\n営業・会場案内・忘れ物などのご連絡は、Slackでまとめて管理しています。<br>\n返信が必要な内容については、Slackからご連絡をお願いいたします。</p>\n<h2>主催について</h2>\n<p>yasu_yuki  <br>\n組み込み・Web開発の現場を経て独立・法人化。  <br>\n現在はインフラ領域を中心に事業を展開してます。</p>",
-      "url": "https://weeyble-creative.connpass.com/event/401086/",
-      "image_url": "https://media.connpass.com/thumbs/ea/3a/ea3adbf1e213390ce161e2c9d9cdf957.png",
-      "hash_tag": "",
-      "started_at": "2026-07-26T13:00:00+09:00",
-      "ended_at": "2026-07-26T17:00:00+09:00",
-      "published_at": "2026-07-18T16:41:24+09:00",
-      "limit": 9,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 2959,
-        "subdomain": "weeyble-creative",
-        "title": "Weeyble Creative",
-        "url": "https://weeyble-creative.connpass.com/"
-      },
-      "address": "東京都千代田区神田佐久間町3丁目37-1 山茂登ビル3F Weeyble",
-      "place": "コワーキングスペース秋葉原 Weeyble",
-      "lat": "35.697592600000",
-      "lon": "139.777946800000",
-      "owner_id": 109434,
-      "owner_nickname": "weeyble",
-      "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 6,
-      "waiting": 0,
-      "updated_at": "2026-07-26T11:54:57+09:00"
     },
     {
       "id": 401780,
