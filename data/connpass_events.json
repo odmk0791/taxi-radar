@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-28T03:19:09.671829+09:00",
+  "fetched_at": "2026-07-28T05:15:15.996374+09:00",
   "date": "20260728",
   "count": 20,
   "events": [
@@ -397,37 +397,6 @@
       "updated_at": "2026-07-20T22:44:46+09:00"
     },
     {
-      "id": 393854,
-      "title": "LLM Opsの実践",
-      "catch": "SaaSに組み込んだAI機能の品質・コスト・改善サイクル",
-      "description": "<h1>📋 概要</h1>\n<p>SaaSに組み込まれたLLMは、従来のソフトウェアコンポーネントとは異なる運用課題を持っています。出力は確率的で、モデルは外部プロバイダに依存し、品質評価やコスト管理の方法もプロダクトごとに大きく変わります。LLM機能は「一度リリースしたら終わり」ではなく、継続的に観測・評価・改善しながら育てていく必要があります。</p>\n<p>一方で、LLMOpsの実践知はまだ各社の中に閉じていることが多く、具体的な設計や運用の判断軸は共有されにくいのが現状です。</p>\n<p>本イベントでは、SaaSのAI機能を本番運用するうえで重要になる<strong>オブザーバビリティ・評価駆動開発・AI Agentの設計/改善</strong>をテーマに、Sansan、フリー、ログラスの実践事例を共有します。AI機能を「動く」から「運用し続けられる」状態へ進めるための、現場の具体的な判断軸と改善サイクルを持ち帰れる場を目指します。</p>\n<h2>🕑 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション</th>\n<th style=\"text-align: left;\">企業</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">セルフホストLangfuseを安全に本番運用するために必要だった設計と、そこから生まれた成果</td>\n<td style=\"text-align: left;\">Sansan株式会社</td>\n<td style=\"text-align: left;\">小松 展久</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:25</td>\n<td style=\"text-align: left;\">freeeにおけるEvalsの実践例の紹介</td>\n<td style=\"text-align: left;\">フリー株式会社</td>\n<td style=\"text-align: left;\">Kengo Nakamura</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45</td>\n<td style=\"text-align: left;\">決定論と非決定論を組み合わせたAI Agentの構築と改善</td>\n<td style=\"text-align: left;\">株式会社ログラス</td>\n<td style=\"text-align: left;\">山崎 倫太郎</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:25</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<h3>👨‍💻 こんな方におすすめ</h3>\n<ul>\n<li>LLM/AI Agentを組み合わせたプロダクト開発に関心がある方</li>\n<li>LLMOps基盤を本番運用するうえでの設計・セキュリティ・運用体制に関心がある方</li>\n<li>AI機能の品質評価、コスト管理、LLM-as-a-Judge、改善サイクルの作り方に課題を感じている方</li>\n</ul>\n<h3>✅ イベントのゴール</h3>\n<ul>\n<li><strong>観測すべきポイントを知る</strong>：LLM固有の可観測性や、従来のアプリケーション監視との違いを理解し、自社でどこから取り組むべきかを整理する</li>\n<li><strong>ツール選定と品質評価の観点を学ぶ</strong>：技術スタック、チーム規模、データ主権要件を踏まえた選定軸や、LLM-as-a-Judge、出力バリデーション、評価データ管理を改善につなげる方法を知る</li>\n<li><strong>コスト管理と改善サイクルを考える</strong>：LLMのコストを可視化し、モデル選定や開発優先度に反映する方法、検知から改善までのループをチームに定着させる考え方を持ち帰る</li>\n</ul>\n<h1>🎤 登壇者</h1>\n<h3>セルフホストLangfuseを安全に本番運用するために必要だった設計と、そこから生まれた成果</h3>\n<p><img src=\"https://i.gyazo.com/3966ca6eae0d87dd39e15c26bce0ba98.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">小松 展久</span><br>\n<span style=\"font-size: 150%; color: black;\">Sansan株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">研究開発部Architectグループ ソフトウェアエンジニア</span><br></p>\n<p>金融系SIer、通信会社、SaaSベンチャーを経て2021年にSansanに入社。Contract Oneの開発・運用に携わり、その後は研究開発部で関連システムの開発・運用を担当。</p>\n<hr>\n<h3>freeeにおけるEvalsの実践例の紹介</h3>\n<p><img src=\"https://i.gyazo.com/82d773dc2aea4377f483621adb57eda2.png\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">Kengo Nakamura</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/shallow1729\" rel=\"nofollow\">(@shallow1729)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">フリー株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">AIラボ 基盤チーム テックリード</span><br></p>\n<p>freeeでは一度DBREのリーダーをした後転職、出戻りして基盤開発チームのテックリードを担当。現在はAIラボに所属。</p>\n<ul>\n<li>connpass: <a href=\"https://connpass.com/user/NaKengo/\" rel=\"nofollow\">NaKengo</a></li>\n</ul>\n<hr>\n<h3>決定論と非決定論を組み合わせたAI Agentの構築と改善</h3>\n<p><img src=\"https://i.gyazo.com/69d5ccbc1c8e849480e3a710a0ff857a.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">山崎 倫太郎</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/zakky_dimn\" rel=\"nofollow\">(@zakky_dimn)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">株式会社ログラス</span><br>\n<span style=\"font-size: 150%; color: black;\">AIソリューション事業本部 FDE</span><br></p>\n<p>新卒でtoB向けのコンサルティング・アナリティクス業務に従事した後、PdM兼エンジニアへとキャリアチェンジ。主にサーバーサイドやクラウドインフラの開発を経験。ITベンチャー数社にてWebアプリケーションを中心に開発のリードを担当後、DeNAグループ会社にてエンジニア組織の副部長として開発組織マネジメントに従事。2025年からログラスにてFDEとしてAI Agent新規事業を担当。</p>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>本イベントはオフライン開催です。会場情報・入館方法は参加確定者にconnpass経由でご案内します</li>\n<li>撮影・録音については、当日スタッフの案内に従ってください</li>\n<li>20時以降のご参加はお断りしております。</li>\n<li>エージェントの方や営業目的でのイベント参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>⚓ SaaS Harborについて</h1>\n<p>B2B SaaSに関わるすべての挑戦者のためのコミュニティです。立場や職種を超えてつながり、誰もが顧客への価値提供に熱中できる場を目指しています。</p>\n<ul>\n<li><strong>職種を超えたフラットな交流</strong>：エンジニア、PM、事業責任者、マネジメント層など、キャリアやフェーズを超えてつながれます。</li>\n<li><strong>現場の「リアルな知見」を共有</strong>：単なる成功体験だけでなく、泥臭い失敗談や意思決定の背景といった“血の通った知見”をオープンに扱い合います。</li>\n<li><strong>共に学び、共につくる</strong>：参加者同士が刺激を与え合い、日本のSaaSプロダクトの進化をカジュアルに加速させる場です。</li>\n</ul>\n<p>💬 <strong>常設コミュニケーション空間（Discord）はこちら</strong>：<a href=\"https://discord.gg/Jgqdd38gE2\" rel=\"nofollow\">https://discord.gg/Jgqdd38gE2</a></p>\n<h1>📣 主催・運営</h1>\n<h3>【主催】株式会社アンチパターン</h3>\n<p><img src=\"https://i.gyazo.com/fbc3b50a0785579c03c1ed172130edf2.png\" width=\"350\"></p>\n<p><a href=\"https://anti-pattern.co.jp/\" rel=\"nofollow\">株式会社アンチパターン</a></p>\n<h3>【共催】ファインディ株式会社</h3>\n<p><img src=\"https://i.gyazo.com/d6e26a77b900482b92fcc7a079b713c6.png\" width=\"250\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a></p>\n<ul>\n<li>お問い合わせ: event@findy.co.jp</li>\n</ul>",
-      "url": "https://saas-harbor.connpass.com/event/393854/",
-      "image_url": "https://media.connpass.com/thumbs/93/fa/93fab0144b89b15aa608a20a8c248d5a.png",
-      "hash_tag": "",
-      "started_at": "2026-07-28T19:00:00+09:00",
-      "ended_at": "2026-07-28T21:30:00+09:00",
-      "published_at": "2026-06-12T10:25:12+09:00",
-      "limit": 300,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17349,
-        "subdomain": "saas-harbor",
-        "title": "SaaS Harbor",
-        "url": "https://saas-harbor.connpass.com/"
-      },
-      "address": "東京都品川区大崎1丁目2番2号 アートヴィレッジ大崎セントラルタワー 19F freee 大崎本社 Asobiba",
-      "place": "フリー株式会社 大崎本社 19F アソビバ",
-      "lat": "35.622568800000",
-      "lon": "139.727612700000",
-      "owner_id": 52312,
-      "owner_nickname": "YukiOzasa",
-      "owner_display_name": "YukiOzasa",
-      "accepted": 111,
-      "waiting": 0,
-      "updated_at": "2026-07-23T20:51:41+09:00"
-    },
-    {
       "id": 395274,
       "title": "Toranomon Tech Hub 第8回 IT業界、本当にあった怖い話",
       "catch": "ヒヤッとする体験を共有しよう！",
@@ -488,6 +457,37 @@
       "accepted": 60,
       "waiting": 15,
       "updated_at": "2026-07-27T13:37:20+09:00"
+    },
+    {
+      "id": 393854,
+      "title": "LLM Opsの実践",
+      "catch": "SaaSに組み込んだAI機能の品質・コスト・改善サイクル",
+      "description": "<h1>📋 概要</h1>\n<p>SaaSに組み込まれたLLMは、従来のソフトウェアコンポーネントとは異なる運用課題を持っています。出力は確率的で、モデルは外部プロバイダに依存し、品質評価やコスト管理の方法もプロダクトごとに大きく変わります。LLM機能は「一度リリースしたら終わり」ではなく、継続的に観測・評価・改善しながら育てていく必要があります。</p>\n<p>一方で、LLMOpsの実践知はまだ各社の中に閉じていることが多く、具体的な設計や運用の判断軸は共有されにくいのが現状です。</p>\n<p>本イベントでは、SaaSのAI機能を本番運用するうえで重要になる<strong>オブザーバビリティ・評価駆動開発・AI Agentの設計/改善</strong>をテーマに、Sansan、フリー、ログラスの実践事例を共有します。AI機能を「動く」から「運用し続けられる」状態へ進めるための、現場の具体的な判断軸と改善サイクルを持ち帰れる場を目指します。</p>\n<h2>🕑 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション</th>\n<th style=\"text-align: left;\">企業</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">セルフホストLangfuseを安全に本番運用するために必要だった設計と、そこから生まれた成果</td>\n<td style=\"text-align: left;\">Sansan株式会社</td>\n<td style=\"text-align: left;\">小松 展久</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:25</td>\n<td style=\"text-align: left;\">freeeにおけるEvalsの実践例の紹介</td>\n<td style=\"text-align: left;\">フリー株式会社</td>\n<td style=\"text-align: left;\">Kengo Nakamura</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45</td>\n<td style=\"text-align: left;\">決定論と非決定論を組み合わせたAI Agentの構築と改善</td>\n<td style=\"text-align: left;\">株式会社ログラス</td>\n<td style=\"text-align: left;\">山崎 倫太郎</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:25</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<h3>👨‍💻 こんな方におすすめ</h3>\n<ul>\n<li>LLM/AI Agentを組み合わせたプロダクト開発に関心がある方</li>\n<li>LLMOps基盤を本番運用するうえでの設計・セキュリティ・運用体制に関心がある方</li>\n<li>AI機能の品質評価、コスト管理、LLM-as-a-Judge、改善サイクルの作り方に課題を感じている方</li>\n</ul>\n<h3>✅ イベントのゴール</h3>\n<ul>\n<li><strong>観測すべきポイントを知る</strong>：LLM固有の可観測性や、従来のアプリケーション監視との違いを理解し、自社でどこから取り組むべきかを整理する</li>\n<li><strong>ツール選定と品質評価の観点を学ぶ</strong>：技術スタック、チーム規模、データ主権要件を踏まえた選定軸や、LLM-as-a-Judge、出力バリデーション、評価データ管理を改善につなげる方法を知る</li>\n<li><strong>コスト管理と改善サイクルを考える</strong>：LLMのコストを可視化し、モデル選定や開発優先度に反映する方法、検知から改善までのループをチームに定着させる考え方を持ち帰る</li>\n</ul>\n<h1>🎤 登壇者</h1>\n<h3>セルフホストLangfuseを安全に本番運用するために必要だった設計と、そこから生まれた成果</h3>\n<p><img src=\"https://i.gyazo.com/3966ca6eae0d87dd39e15c26bce0ba98.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">小松 展久</span><br>\n<span style=\"font-size: 150%; color: black;\">Sansan株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">研究開発部Architectグループ ソフトウェアエンジニア</span><br></p>\n<p>金融系SIer、通信会社、SaaSベンチャーを経て2021年にSansanに入社。Contract Oneの開発・運用に携わり、その後は研究開発部で関連システムの開発・運用を担当。</p>\n<hr>\n<h3>freeeにおけるEvalsの実践例の紹介</h3>\n<p><img src=\"https://i.gyazo.com/82d773dc2aea4377f483621adb57eda2.png\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">Kengo Nakamura</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/shallow1729\" rel=\"nofollow\">(@shallow1729)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">フリー株式会社</span><br>\n<span style=\"font-size: 150%; color: black;\">AIラボ 基盤チーム テックリード</span><br></p>\n<p>freeeでは一度DBREのリーダーをした後転職、出戻りして基盤開発チームのテックリードを担当。現在はAIラボに所属。</p>\n<ul>\n<li>connpass: <a href=\"https://connpass.com/user/NaKengo/\" rel=\"nofollow\">NaKengo</a></li>\n</ul>\n<hr>\n<h3>決定論と非決定論を組み合わせたAI Agentの構築と改善</h3>\n<p><img src=\"https://i.gyazo.com/69d5ccbc1c8e849480e3a710a0ff857a.jpg\" width=\"150\"></p>\n<p><span style=\"font-size: 180%; color: black;\">山崎 倫太郎</span> <span style=\"font-size: 110%; color: black;\"><a href=\"https://x.com/zakky_dimn\" rel=\"nofollow\">(@zakky_dimn)</a></span><br>\n<span style=\"font-size: 150%; color: black;\">株式会社ログラス</span><br>\n<span style=\"font-size: 150%; color: black;\">AIソリューション事業本部 FDE</span><br></p>\n<p>新卒でtoB向けのコンサルティング・アナリティクス業務に従事した後、PdM兼エンジニアへとキャリアチェンジ。主にサーバーサイドやクラウドインフラの開発を経験。ITベンチャー数社にてWebアプリケーションを中心に開発のリードを担当後、DeNAグループ会社にてエンジニア組織の副部長として開発組織マネジメントに従事。2025年からログラスにてFDEとしてAI Agent新規事業を担当。</p>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>本イベントはオフライン開催です。会場情報・入館方法は参加確定者にconnpass経由でご案内します</li>\n<li>撮影・録音については、当日スタッフの案内に従ってください</li>\n<li>20時以降のご参加はお断りしております。</li>\n<li>エージェントの方や営業目的でのイベント参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>⚓ SaaS Harborについて</h1>\n<p>B2B SaaSに関わるすべての挑戦者のためのコミュニティです。立場や職種を超えてつながり、誰もが顧客への価値提供に熱中できる場を目指しています。</p>\n<ul>\n<li><strong>職種を超えたフラットな交流</strong>：エンジニア、PM、事業責任者、マネジメント層など、キャリアやフェーズを超えてつながれます。</li>\n<li><strong>現場の「リアルな知見」を共有</strong>：単なる成功体験だけでなく、泥臭い失敗談や意思決定の背景といった“血の通った知見”をオープンに扱い合います。</li>\n<li><strong>共に学び、共につくる</strong>：参加者同士が刺激を与え合い、日本のSaaSプロダクトの進化をカジュアルに加速させる場です。</li>\n</ul>\n<p>💬 <strong>常設コミュニケーション空間（Discord）はこちら</strong>：<a href=\"https://discord.gg/Jgqdd38gE2\" rel=\"nofollow\">https://discord.gg/Jgqdd38gE2</a></p>\n<h1>📣 主催・運営</h1>\n<h3>【主催】株式会社アンチパターン</h3>\n<p><img src=\"https://i.gyazo.com/fbc3b50a0785579c03c1ed172130edf2.png\" width=\"350\"></p>\n<p><a href=\"https://anti-pattern.co.jp/\" rel=\"nofollow\">株式会社アンチパターン</a></p>\n<h3>【共催】ファインディ株式会社</h3>\n<p><img src=\"https://i.gyazo.com/d6e26a77b900482b92fcc7a079b713c6.png\" width=\"250\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a></p>\n<ul>\n<li>お問い合わせ: event@findy.co.jp</li>\n</ul>",
+      "url": "https://saas-harbor.connpass.com/event/393854/",
+      "image_url": "https://media.connpass.com/thumbs/93/fa/93fab0144b89b15aa608a20a8c248d5a.png",
+      "hash_tag": "",
+      "started_at": "2026-07-28T19:00:00+09:00",
+      "ended_at": "2026-07-28T21:30:00+09:00",
+      "published_at": "2026-06-12T10:25:12+09:00",
+      "limit": 300,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17349,
+        "subdomain": "saas-harbor",
+        "title": "SaaS Harbor",
+        "url": "https://saas-harbor.connpass.com/"
+      },
+      "address": "東京都品川区大崎1丁目2番2号 アートヴィレッジ大崎セントラルタワー 19F freee 大崎本社 Asobiba",
+      "place": "フリー株式会社 大崎本社 19F アソビバ",
+      "lat": "35.622568800000",
+      "lon": "139.727612700000",
+      "owner_id": 52312,
+      "owner_nickname": "YukiOzasa",
+      "owner_display_name": "YukiOzasa",
+      "accepted": 112,
+      "waiting": 0,
+      "updated_at": "2026-07-23T20:51:41+09:00"
     },
     {
       "id": 398349,
