@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.0" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/0">
-  <time>2026-07-27T05:03:26.935Z</time>
+  <time>2026-07-27T05:25:02.853Z</time>
   <bounds minlat="35.537733035" minlon="139.440914448" maxlat="35.749002422" maxlon="139.907509587"/>
   <wpt lat="35.665072960" lon="139.753692427">
     <ele>102.550</ele>
@@ -457924,6 +457924,294 @@
         <time>2026-07-27T03:16:13Z</time>
         <speed>0.277778</speed>
         <name>TP76174</name>
+      </trkpt>
+      <trkpt lat="35.638018772" lon="139.512604571">
+        <ele>32.486</ele>
+        <time>2026-07-27T05:19:07Z</time>
+        <speed>0.833333</speed>
+        <name>TP76175</name>
+      </trkpt>
+      <trkpt lat="35.638177409" lon="139.512585522">
+        <ele>38.828</ele>
+        <time>2026-07-27T05:19:12Z</time>
+        <speed>1.666667</speed>
+        <name>TP76176</name>
+      </trkpt>
+      <trkpt lat="35.638258061" lon="139.512586751">
+        <ele>43.509</ele>
+        <time>2026-07-27T05:19:17Z</time>
+        <speed>1.666667</speed>
+        <name>TP76177</name>
+      </trkpt>
+      <trkpt lat="35.638298174" lon="139.512596376">
+        <ele>44.166</ele>
+        <time>2026-07-27T05:19:22Z</time>
+        <speed>0.833333</speed>
+        <name>TP76178</name>
+      </trkpt>
+      <trkpt lat="35.638235502" lon="139.512602316">
+        <ele>41.851</ele>
+        <time>2026-07-27T05:19:27Z</time>
+        <speed>0.000000</speed>
+        <name>TP76179</name>
+      </trkpt>
+      <trkpt lat="35.638216937" lon="139.512610713">
+        <ele>39.576</ele>
+        <time>2026-07-27T05:19:32Z</time>
+        <speed>0.000000</speed>
+        <name>TP76180</name>
+      </trkpt>
+      <trkpt lat="35.638209613" lon="139.512610713">
+        <ele>38.993</ele>
+        <time>2026-07-27T05:19:37Z</time>
+        <speed>0.000000</speed>
+        <name>TP76181</name>
+      </trkpt>
+      <trkpt lat="35.638209613" lon="139.512610713">
+        <ele>38.993</ele>
+        <time>2026-07-27T05:19:42Z</time>
+        <speed>0.000000</speed>
+        <name>TP76182</name>
+      </trkpt>
+      <trkpt lat="35.638224262" lon="139.512610713">
+        <ele>40.158</ele>
+        <time>2026-07-27T05:19:47Z</time>
+        <speed>0.000000</speed>
+        <name>TP76183</name>
+      </trkpt>
+      <trkpt lat="35.638212943" lon="139.512617882">
+        <ele>40.194</ele>
+        <time>2026-07-27T05:19:52Z</time>
+        <speed>0.000000</speed>
+        <name>TP76184</name>
+      </trkpt>
+      <trkpt lat="35.638205619" lon="139.512617882">
+        <ele>39.611</ele>
+        <time>2026-07-27T05:19:57Z</time>
+        <speed>0.000000</speed>
+        <name>TP76185</name>
+      </trkpt>
+      <trkpt lat="35.638190969" lon="139.512617882">
+        <ele>38.446</ele>
+        <time>2026-07-27T05:20:02Z</time>
+        <speed>0.000000</speed>
+        <name>TP76186</name>
+      </trkpt>
+      <trkpt lat="35.638183644" lon="139.512617882">
+        <ele>37.863</ele>
+        <time>2026-07-27T05:20:07Z</time>
+        <speed>0.000000</speed>
+        <name>TP76187</name>
+      </trkpt>
+      <trkpt lat="35.638183723" lon="139.512619110">
+        <ele>36.135</ele>
+        <time>2026-07-27T05:20:12Z</time>
+        <speed>0.000000</speed>
+        <name>TP76188</name>
+      </trkpt>
+      <trkpt lat="35.638169073" lon="139.512619110">
+        <ele>34.969</ele>
+        <time>2026-07-27T05:20:17Z</time>
+        <speed>0.000000</speed>
+        <name>TP76189</name>
+      </trkpt>
+      <trkpt lat="35.638154423" lon="139.512619110">
+        <ele>33.804</ele>
+        <time>2026-07-27T05:20:22Z</time>
+        <speed>0.000000</speed>
+        <name>TP76190</name>
+      </trkpt>
+      <trkpt lat="35.638125045" lon="139.512617882">
+        <ele>33.202</ele>
+        <time>2026-07-27T05:20:27Z</time>
+        <speed>0.000000</speed>
+        <name>TP76191</name>
+      </trkpt>
+      <trkpt lat="35.638102992" lon="139.512616653">
+        <ele>33.182</ele>
+        <time>2026-07-27T05:20:32Z</time>
+        <speed>0.277778</speed>
+        <name>TP76192</name>
+      </trkpt>
+      <trkpt lat="35.638080939" lon="139.512615425">
+        <ele>33.163</ele>
+        <time>2026-07-27T05:20:37Z</time>
+        <speed>0.000000</speed>
+        <name>TP76193</name>
+      </trkpt>
+      <trkpt lat="35.638069620" lon="139.512622593">
+        <ele>33.198</ele>
+        <time>2026-07-27T05:20:42Z</time>
+        <speed>0.000000</speed>
+        <name>TP76194</name>
+      </trkpt>
+      <trkpt lat="35.638062295" lon="139.512622593">
+        <ele>32.615</ele>
+        <time>2026-07-27T05:20:47Z</time>
+        <speed>0.000000</speed>
+        <name>TP76195</name>
+      </trkpt>
+      <trkpt lat="35.638050976" lon="139.512629762">
+        <ele>32.651</ele>
+        <time>2026-07-27T05:20:52Z</time>
+        <speed>0.277778</speed>
+        <name>TP76196</name>
+      </trkpt>
+      <trkpt lat="35.638047566" lon="139.512621365">
+        <ele>33.179</ele>
+        <time>2026-07-27T05:20:57Z</time>
+        <speed>0.000000</speed>
+        <name>TP76197</name>
+      </trkpt>
+      <trkpt lat="35.638047566" lon="139.512621365">
+        <ele>33.179</ele>
+        <time>2026-07-27T05:21:02Z</time>
+        <speed>0.000000</speed>
+        <name>TP76198</name>
+      </trkpt>
+      <trkpt lat="35.638032838" lon="139.512620136">
+        <ele>33.742</ele>
+        <time>2026-07-27T05:21:07Z</time>
+        <speed>0.000000</speed>
+        <name>TP76199</name>
+      </trkpt>
+      <trkpt lat="35.638021519" lon="139.512627305">
+        <ele>33.777</ele>
+        <time>2026-07-27T05:21:12Z</time>
+        <speed>0.000000</speed>
+        <name>TP76200</name>
+      </trkpt>
+      <trkpt lat="35.638010200" lon="139.512634473">
+        <ele>33.813</ele>
+        <time>2026-07-27T05:21:17Z</time>
+        <speed>0.000000</speed>
+        <name>TP76201</name>
+      </trkpt>
+      <trkpt lat="35.637984816" lon="139.512626076">
+        <ele>32.592</ele>
+        <time>2026-07-27T05:21:22Z</time>
+        <speed>0.000000</speed>
+        <name>TP76202</name>
+      </trkpt>
+      <trkpt lat="35.637977491" lon="139.512626076">
+        <ele>32.010</ele>
+        <time>2026-07-27T05:21:27Z</time>
+        <speed>0.000000</speed>
+        <name>TP76203</name>
+      </trkpt>
+      <trkpt lat="35.637962841" lon="139.512626076">
+        <ele>30.844</ele>
+        <time>2026-07-27T05:21:32Z</time>
+        <speed>0.000000</speed>
+        <name>TP76204</name>
+      </trkpt>
+      <trkpt lat="35.637933463" lon="139.512624848">
+        <ele>30.242</ele>
+        <time>2026-07-27T05:21:37Z</time>
+        <speed>0.000000</speed>
+        <name>TP76205</name>
+      </trkpt>
+      <trkpt lat="35.637918813" lon="139.512624848">
+        <ele>29.077</ele>
+        <time>2026-07-27T05:21:42Z</time>
+        <speed>0.000000</speed>
+        <name>TP76206</name>
+      </trkpt>
+      <trkpt lat="35.637911489" lon="139.512624848">
+        <ele>28.494</ele>
+        <time>2026-07-27T05:21:47Z</time>
+        <speed>0.000000</speed>
+        <name>TP76207</name>
+      </trkpt>
+      <trkpt lat="35.637904164" lon="139.512624848">
+        <ele>27.911</ele>
+        <time>2026-07-27T05:21:52Z</time>
+        <speed>0.000000</speed>
+        <name>TP76208</name>
+      </trkpt>
+      <trkpt lat="35.637900170" lon="139.512632016">
+        <ele>28.530</ele>
+        <time>2026-07-27T05:21:57Z</time>
+        <speed>0.000000</speed>
+        <name>TP76209</name>
+      </trkpt>
+      <trkpt lat="35.637892845" lon="139.512632016">
+        <ele>27.947</ele>
+        <time>2026-07-27T05:22:02Z</time>
+        <speed>0.000000</speed>
+        <name>TP76210</name>
+      </trkpt>
+      <trkpt lat="35.637892845" lon="139.512632016">
+        <ele>27.947</ele>
+        <time>2026-07-27T05:22:07Z</time>
+        <speed>0.000000</speed>
+        <name>TP76211</name>
+      </trkpt>
+      <trkpt lat="35.637889435" lon="139.512623619">
+        <ele>28.475</ele>
+        <time>2026-07-27T05:22:12Z</time>
+        <speed>0.000000</speed>
+        <name>TP76212</name>
+      </trkpt>
+      <trkpt lat="35.637885441" lon="139.512630788">
+        <ele>29.093</ele>
+        <time>2026-07-27T05:22:17Z</time>
+        <speed>0.000000</speed>
+        <name>TP76213</name>
+      </trkpt>
+      <trkpt lat="35.637878116" lon="139.512630788">
+        <ele>28.510</ele>
+        <time>2026-07-27T05:22:22Z</time>
+        <speed>0.000000</speed>
+        <name>TP76214</name>
+      </trkpt>
+      <trkpt lat="35.637878116" lon="139.512630788">
+        <ele>28.510</ele>
+        <time>2026-07-27T05:22:27Z</time>
+        <speed>0.000000</speed>
+        <name>TP76215</name>
+      </trkpt>
+      <trkpt lat="35.637870791" lon="139.512630788">
+        <ele>27.927</ele>
+        <time>2026-07-27T05:22:32Z</time>
+        <speed>0.000000</speed>
+        <name>TP76216</name>
+      </trkpt>
+      <trkpt lat="35.637863467" lon="139.512630788">
+        <ele>27.345</ele>
+        <time>2026-07-27T05:22:37Z</time>
+        <speed>0.000000</speed>
+        <name>TP76217</name>
+      </trkpt>
+      <trkpt lat="35.637863467" lon="139.512630788">
+        <ele>27.345</ele>
+        <time>2026-07-27T05:22:42Z</time>
+        <speed>0.000000</speed>
+        <name>TP76218</name>
+      </trkpt>
+      <trkpt lat="35.637863467" lon="139.512630788">
+        <ele>27.345</ele>
+        <time>2026-07-27T05:22:47Z</time>
+        <speed>0.000000</speed>
+        <name>TP76219</name>
+      </trkpt>
+      <trkpt lat="35.637863467" lon="139.512630788">
+        <ele>27.345</ele>
+        <time>2026-07-27T05:22:52Z</time>
+        <speed>0.000000</speed>
+        <name>TP76220</name>
+      </trkpt>
+      <trkpt lat="35.637863467" lon="139.512630788">
+        <ele>27.345</ele>
+        <time>2026-07-27T05:22:57Z</time>
+        <speed>0.000000</speed>
+        <name>TP76221</name>
+      </trkpt>
+      <trkpt lat="35.637870791" lon="139.512630788">
+        <ele>27.927</ele>
+        <time>2026-07-27T05:23:02Z</time>
+        <speed>0.000000</speed>
+        <name>TP76222</name>
       </trkpt>
     </trkseg>
   </trk>
