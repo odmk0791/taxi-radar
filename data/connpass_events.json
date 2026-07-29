@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-29T17:25:35.323771+09:00",
+  "fetched_at": "2026-07-29T20:16:02.432642+09:00",
   "date": "20260729",
   "count": 13,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-06-29T18:01:22+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14486,
         "subdomain": "gotalk",
@@ -61,7 +61,7 @@
       "owner_id": 46959,
       "owner_nickname": "chiroruxx",
       "owner_display_name": "ちひろ",
-      "accepted": 18,
+      "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-07-25T08:09:03+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-07-13T21:13:33+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 9740,
         "subdomain": "data-learning-guild",
@@ -109,7 +109,7 @@
       "published_at": "2026-05-12T14:47:48+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17678,
         "subdomain": "clear-code",
@@ -123,7 +123,7 @@
       "owner_id": 19719,
       "owner_nickname": "ktou",
       "owner_display_name": "Sutou Kouhei",
-      "accepted": 36,
+      "accepted": 37,
       "waiting": 0,
       "updated_at": "2026-07-22T20:10:23+09:00"
     },
@@ -140,7 +140,7 @@
       "published_at": "2026-07-02T18:09:26+09:00",
       "limit": 120,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11196,
         "subdomain": "kgdc",
@@ -154,7 +154,7 @@
       "owner_id": 512354,
       "owner_nickname": "mihosan74",
       "owner_display_name": "miho",
-      "accepted": 111,
+      "accepted": 110,
       "waiting": 0,
       "updated_at": "2026-07-29T11:55:21+09:00"
     },
@@ -171,7 +171,7 @@
       "published_at": "2026-07-08T10:08:52+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 5728,
         "subdomain": "redesigner",
@@ -185,7 +185,7 @@
       "owner_id": 970130,
       "owner_nickname": "takeshi_iijima",
       "owner_display_name": "takeshi_iijima",
-      "accepted": 34,
+      "accepted": 32,
       "waiting": 0,
       "updated_at": "2026-07-27T01:01:09+09:00"
     },
@@ -202,7 +202,7 @@
       "published_at": "2026-06-26T12:01:59+09:00",
       "limit": 70,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 1558,
         "subdomain": "teratail",
@@ -216,7 +216,7 @@
       "owner_id": 838475,
       "owner_nickname": "tatsuo-yamamoto-lvgs",
       "owner_display_name": "山本龍雄",
-      "accepted": 60,
+      "accepted": 62,
       "waiting": 0,
       "updated_at": "2026-07-29T16:42:07+09:00"
     },
@@ -224,7 +224,7 @@
       "id": 399168,
       "title": "集まれKotlin好き！Kotlin愛好会 vol. 65@株式会社TOKIUM",
       "catch": "みんなでわいわいKotlinについて語ろう！",
-      "description": "<p>今回は<strong>株式会社TOKIUM</strong>さんに場所をお借りし、<strong>オンライン・オフラインのハイブリット</strong>開催をします！</p>\n<p>配信機材の都合上、申し訳ないのですが登壇はオフライン登壇に限定させていただきます</p>\n<p>【オンライン参加の方】</p>\n<p>YouTube Liveでの配信も行う予定ですので、こちらでも参加お待ちしております！</p>\n<h2>イベント概要</h2>\n<p>Kotlin好きで集まって、飲み物片手にKotlinについて語り合い、愛でましょう！！！</p>\n<ul>\n<li>Kotlinからプログラミングを始めた方</li>\n<li>Java時代からやってきた方</li>\n<li>他の言語（JaveScript, Ruby, etc...）をやりながらKotlinを勉強されてる方</li>\n</ul>\n<p>Kotlin全般に関するお話や、AndroidやサーバーサイドにおいてKotlinを活用するお話をする \"Kotlin談義\"（絶賛登壇者募集中！資料ナシでもOK）、そしてKotlin仲間をつくる懇親会で楽しみましょう〜 ^^/</p>\n<h2>■登壇者</h2>\n<p>※登壇者でご応募の方はconnpassイベントページ下のフィードにタイトルのご記入をお願いします！未定となっている方も決まり次第、記入ください。</p>\n<h4>談義枠</h4>\n<table>\n<thead>\n<tr>\n<th>談義タイトル</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>AIには任せない</td>\n<td>そう</td>\n</tr>\n<tr>\n<td>ComposeでネイティブUIをホストするDAW + ネイティブアプリにCompose UIをホストさせるプラグイン</td>\n<td>Atsushi Eno</td>\n</tr>\n<tr>\n<td>TBD</td>\n<td>TBD</td>\n</tr>\n<tr>\n<td>TBD</td>\n<td>TBD</td>\n</tr>\n</tbody>\n</table>\n<h2>■当日のタイムスケジュール(予定)</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:50～19:00</td>\n<td>集合</td>\n</tr>\n<tr>\n<td>19:00～19:10</td>\n<td>オープニング / 乾杯！</td>\n</tr>\n<tr>\n<td>19:10～20:30</td>\n<td>談義 LTタイム</td>\n</tr>\n<tr>\n<td>20:30～21:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<h2>■運営</h2>\n<p>以下のゆかいな仲間たちで運営しています。よろしく！</p>\n<table>\n<thead>\n<tr>\n<th><a href=\"https://x.com/n_takehata\" rel=\"nofollow\">@takehata</a></th>\n<th><a href=\"https://x.com/tarumzu\" rel=\"nofollow\">@tarumzu</a></th>\n<th><a href=\"https://x.com/sya_ri_dayo\" rel=\"nofollow\">@奏(sya-ri)</a></th>\n<th><a href=\"https://x.com/nabeo\" rel=\"nofollow\">@nabeo</a></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img src=\"https://pbs.twimg.com/profile_images/1034463997704134656/e8I_LNuC_400x400.jpg\" alt=\"takehata\" width=\"100\"></td>\n<td><img src=\"https://pbs.twimg.com/profile_images/877053186896314368/Xi2-fLQA_400x400.jpg\" alt=\"tarumzu\" width=\"100\"></td>\n<td><img src=\"https://pbs.twimg.com/profile_images/1484499142491918340/d_308ieO_400x400.jpg\" alt=\"奏\" width=\"100\"></td>\n<td><img src=\"https://pbs.twimg.com/profile_images/1573936753/birth_400x400.jpg\" alt=\"nabeo\" width=\"100\"></td>\n</tr>\n</tbody>\n</table>\n<h2>■対象者</h2>\n<ul>\n<li>Kotlinが好きな人！</li>\n<li>Kotlinを好きになる予定の人</li>\n<li>むしろKotlinから好かれている人</li>\n</ul>\n<h2>■お食事、飲み物について</h2>\n<p>今回は会場をご提供いただいている<a href=\"https://corp.tokium.jp/\" rel=\"nofollow\">株式会社TOKIUM様</a>より、軽食・お飲み物の提供もあります！<br>\nご支援いただきありがとうございます。<br></p>\n<h2>■会場</h2>\n<p>【オフライン参加の方】\n<a href=\"https://corp.tokium.jp/\" rel=\"nofollow\">株式会社TOKIUM本社</a>に直接お越しください。</p>\n<ul>\n<li>ビルに到着されましたら、エレベーターより12Fまでお越しください。</li>\n<li>12Fエントランスにて社員が受付いたします。</li>\n</ul>\n<div class=\"codehilite\"><pre><span></span><code>〒104-0061 東京都中央区銀座6丁目18−2\n野村不動産銀座ビル 12F\n東銀座駅より徒歩3分\n</code></pre></div>\n\n<p>【オンライン参加の方】\nYouTube Live<br>\nTBD\n<br>\n<br></p>\n<h2>■支援企業</h2>\n<div align=\"center\">\n<br>\n<img src=\"https://github.com/love-swift-kotlin/love-swift-kotlin/blob/main/public-images/sponsor-logos/tokium.png?raw=true\" width=\"50%\" alt=\"TOKIUM\">\n</div>\n\n<h2>■注意事項</h2>\n<ul>\n<li>本勉強会は、技術交流が目的です。 知識の共有や参加者同士の交流を目的としない方の参加はお断りします。 <font color=\"#ff0000\">参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</font></li>\n<li>講演内容やタイムスケジュールは変更となる可能性がございます。<br></li>\n<li>当日のイベント内容は後日任意の媒体にて公開させていただくことがあります。<br></li>\n<li>イベントレポート作成のため、お写真を撮らせていただくことがございますので予めご了承ください。<br></li>\n<li>イベントは、止むを得ず中止させていただく場合がございます。<br>その際は、本サイトからのメッセージよりご連絡させていただきますのでご確認をお願いいたします。<br></li>\n</ul>",
+      "description": "<p>今回は<strong>株式会社TOKIUM</strong>さんに場所をお借りし、<strong>オンライン・オフラインのハイブリット</strong>開催をします！</p>\n<p>配信機材の都合上、申し訳ないのですが登壇はオフライン登壇に限定させていただきます</p>\n<p>【オンライン参加の方】</p>\n<p>YouTube Liveでの配信も行う予定ですので、こちらでも参加お待ちしております！</p>\n<h2>イベント概要</h2>\n<p>Kotlin好きで集まって、飲み物片手にKotlinについて語り合い、愛でましょう！！！</p>\n<ul>\n<li>Kotlinからプログラミングを始めた方</li>\n<li>Java時代からやってきた方</li>\n<li>他の言語（JaveScript, Ruby, etc...）をやりながらKotlinを勉強されてる方</li>\n</ul>\n<p>Kotlin全般に関するお話や、AndroidやサーバーサイドにおいてKotlinを活用するお話をする \"Kotlin談義\"（絶賛登壇者募集中！資料ナシでもOK）、そしてKotlin仲間をつくる懇親会で楽しみましょう〜 ^^/</p>\n<h2>■登壇者</h2>\n<p>※登壇者でご応募の方はconnpassイベントページ下のフィードにタイトルのご記入をお願いします！未定となっている方も決まり次第、記入ください。</p>\n<h4>談義枠</h4>\n<table>\n<thead>\n<tr>\n<th>談義タイトル</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>AIには任せない</td>\n<td>そう</td>\n</tr>\n<tr>\n<td>ComposeでネイティブUIをホストするDAW + ネイティブアプリにCompose UIをホストさせるプラグイン</td>\n<td>Atsushi Eno</td>\n</tr>\n<tr>\n<td>TBD</td>\n<td>TBD</td>\n</tr>\n<tr>\n<td>TBD</td>\n<td>TBD</td>\n</tr>\n</tbody>\n</table>\n<h2>■当日のタイムスケジュール(予定)</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:50～19:00</td>\n<td>集合</td>\n</tr>\n<tr>\n<td>19:00～19:10</td>\n<td>オープニング / 乾杯！</td>\n</tr>\n<tr>\n<td>19:10～20:30</td>\n<td>談義 LTタイム</td>\n</tr>\n<tr>\n<td>20:30～21:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<h2>■運営</h2>\n<p>以下のゆかいな仲間たちで運営しています。よろしく！</p>\n<table>\n<thead>\n<tr>\n<th><a href=\"https://x.com/n_takehata\" rel=\"nofollow\">@takehata</a></th>\n<th><a href=\"https://x.com/tarumzu\" rel=\"nofollow\">@tarumzu</a></th>\n<th><a href=\"https://x.com/sya_ri_dayo\" rel=\"nofollow\">@そう(sya-ri)</a></th>\n<th><a href=\"https://x.com/nabeo\" rel=\"nofollow\">@nabeo</a></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img src=\"https://pbs.twimg.com/profile_images/1034463997704134656/e8I_LNuC_400x400.jpg\" alt=\"takehata\" width=\"100\"></td>\n<td><img src=\"https://pbs.twimg.com/profile_images/877053186896314368/Xi2-fLQA_400x400.jpg\" alt=\"tarumzu\" width=\"100\"></td>\n<td><img src=\"https://pbs.twimg.com/profile_images/1484499142491918340/d_308ieO_400x400.jpg\" alt=\"奏\" width=\"100\"></td>\n<td><img src=\"https://pbs.twimg.com/profile_images/1573936753/birth_400x400.jpg\" alt=\"nabeo\" width=\"100\"></td>\n</tr>\n</tbody>\n</table>\n<h2>■対象者</h2>\n<ul>\n<li>Kotlinが好きな人！</li>\n<li>Kotlinを好きになる予定の人</li>\n<li>むしろKotlinから好かれている人</li>\n</ul>\n<h2>■お食事、飲み物について</h2>\n<p>今回は会場をご提供いただいている<a href=\"https://corp.tokium.jp/\" rel=\"nofollow\">株式会社TOKIUM様</a>より、軽食・お飲み物の提供もあります！<br>\nご支援いただきありがとうございます。<br></p>\n<h2>■会場</h2>\n<p>【オフライン参加の方】\n<a href=\"https://corp.tokium.jp/\" rel=\"nofollow\">株式会社TOKIUM本社</a>に直接お越しください。</p>\n<ul>\n<li>ビルに到着されましたら、エレベーターより12Fまでお越しください。</li>\n<li>12Fエントランスにて社員が受付いたします。</li>\n</ul>\n<div class=\"codehilite\"><pre><span></span><code>〒104-0061 東京都中央区銀座6丁目18−2\n野村不動産銀座ビル 12F\n東銀座駅より徒歩3分\n</code></pre></div>\n\n<p>【オンライン参加の方】\nYouTube Live<br>\nTBD\n<br>\n<br></p>\n<h2>■支援企業</h2>\n<div align=\"center\">\n<br>\n<img src=\"https://github.com/love-swift-kotlin/love-swift-kotlin/blob/main/public-images/sponsor-logos/tokium.png?raw=true\" width=\"50%\" alt=\"TOKIUM\">\n</div>\n\n<h2>■注意事項</h2>\n<ul>\n<li>本勉強会は、技術交流が目的です。 知識の共有や参加者同士の交流を目的としない方の参加はお断りします。 <font color=\"#ff0000\">参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</font></li>\n<li>講演内容やタイムスケジュールは変更となる可能性がございます。<br></li>\n<li>当日のイベント内容は後日任意の媒体にて公開させていただくことがあります。<br></li>\n<li>イベントレポート作成のため、お写真を撮らせていただくことがございますので予めご了承ください。<br></li>\n<li>イベントは、止むを得ず中止させていただく場合がございます。<br>その際は、本サイトからのメッセージよりご連絡させていただきますのでご確認をお願いいたします。<br></li>\n</ul>",
       "url": "https://love-kotlin.connpass.com/event/399168/",
       "image_url": "https://media.connpass.com/thumbs/0d/12/0d1206aa2cc9fdc6decdb3d3f006ab11.png",
       "hash_tag": "love_kotlin",
@@ -233,7 +233,7 @@
       "published_at": "2026-07-08T17:01:16+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 5547,
         "subdomain": "love-kotlin",
@@ -247,9 +247,9 @@
       "owner_id": 245561,
       "owner_nickname": "taru_mizu",
       "owner_display_name": "たる",
-      "accepted": 18,
+      "accepted": 21,
       "waiting": 0,
-      "updated_at": "2026-07-29T16:28:51+09:00"
+      "updated_at": "2026-07-29T19:36:11+09:00"
     },
     {
       "id": 399676,
@@ -264,7 +264,7 @@
       "published_at": "2026-07-10T15:58:38+09:00",
       "limit": 150,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都渋谷区桜丘町1-1 渋谷サクラステージ 28F",
       "place": "Sansan株式会社 本社",
@@ -273,7 +273,7 @@
       "owner_id": 1012021,
       "owner_nickname": "tribeau",
       "owner_display_name": "トリビュー",
-      "accepted": 50,
+      "accepted": 56,
       "waiting": 0,
       "updated_at": "2026-07-28T13:56:18+09:00"
     },
@@ -281,7 +281,7 @@
       "id": 397761,
       "title": "Mobility Night #6 - 「データ基盤から分析活用まで」",
       "catch": "",
-      "description": "<h1>📝 イベント概要</h1>\n<p>Mobility Nightは、モビリティ業界に関連した企業や団体などのソフトウェアに関連する技術や知見について共有し、業界を盛り上げていくための勉強会です🚀<br></p>\n<p>過去には、KINTOテクノロジーズ、チャリチャリ株式会社、GO株式会社、newmo株式会社、株式会社Luup、トヨタコネクティッド株式会社、株式会社キャリオット、LINEヤフー株式会社、akippa株式会社、Mapbox Japan、などのエンジニアやプロダクトマネージャー、デザイナーの方にご登壇いただいております。</p>\n<h3>コンセプト</h3>\n<p><strong>Mobilityプロダクト x  Softwareプロダクト</strong></p>\n<p>専門技能が様々ある業界がソフトウェア部分についてフォーカスする場へ</p>\n<p><strong>Nightの由来</strong></p>\n<p>大型カンファレンスや１企業主体の発信よりも、より草の根的に知見共有・収集ができる場へ</p>\n<h3>目的</h3>\n<p><strong>1. モビリティ関連ソフトウェアの実践的知見を共有・習得</strong></p>\n<p>モビリティ領域には、技術的課題に多くの共通点がある\n  これらは、「ソフトウェア産業全体」で見るとやや特殊\n  そうした課題への知見を共有していくことで、\n  モビリティ業界に関わるソフトウェア・プロダクト全体の品質向上を図る</p>\n<p><strong>2. 業界単位での人材の引き込みへ</strong></p>\n<p>モビリティ関連の事業は、リアルプロダクトが伴うものも多く、プロダクトの認知はしやすい\n他方、その「ソフトウェア開発」が支える「裏側のしくみ」や「各社の事業などにおけるソフトウェアプロダクトの重要性」が伝わりづらい\n技術課題の難しさや社会へ重要性を発信し、\nソフトウェア業界にいる優秀な人材をモビリティ業界に集める一助に</p>\n<h1>今回テーマは <strong>「データ基盤から分析活用まで」</strong> です！</h1>\n<p>モビリティサービスでは、車両・IoTデバイス・アプリから日々膨大なデータが生まれています。それらをどう集め、貯め、整え、そしてどう意思決定やプロダクト改善につなげているのか──「基盤づくり」から「分析・活用」まで、各社の実践知を一気通貫で共有する回にしたいと考えています。</p>\n<p>具体的には、以下のアジェンダを予定しています</p>\n<h3>Claude Codeによるデータ分析の民主化とそれを支えるデータ基盤 (株式会社ニーリー / 大城渉)</h3>\n<p>アジェンダ：Analyticsチームだけが分析できる状態から抜け出すため、ニーリーでは分析レポートの作り方をClaude Codeの型（Skill・用語集・ガイド）に落とし込み、事業側のメンバーが自走できる仕組みをつくっています。どう型化して他部署へ展開したか、大変だったこと・工夫したこと、今後の課題を事例ベースで紹介します。</p>\n<h3>タクシーアプリ『GO』での実践的データ活用 ( GO株式会社 / 渡部 徹太郎)</h3>\n<p>アジェンダ：GOでは、ユーザーのスマホアプリから取れる位置情報と、タクシーに搭載された車載器の位置状態情報を収集し、ユーザとタクシーの最適なマッチングを実現させるための仕組みを作っています。この発表では、どんなデータをどのように集めて使っているかの紹介と、データ処理やデータ可視化の工夫点を紹介します。また、一部ではありますが、データ分析で生成AIをどう活用しているかも話します。</p>\n<h3>Overture Mapsで始める道路分析基盤 ( 株式会社Luup / 谷本 晋一)</h3>\n<p>アジェンダ：「どの道路を何台が、どれくらいの速度で通過しているか」を分析したいとき、最初の壁になるのが道路ネットワークデータの調達です。社内の道路ネットワーク基盤としてOverture Mapsを採用した経験から、OSMや商用データではなくなぜOverture Mapsなのか、実際にやってみてハマったポイントと回避策をお話しします。</p>\n<h3>Mapboxの地図データとLLMを使ったPOI特定ツールの開発（マップボックスジャパン合同会社 / 金澤浩平）</h3>\n<p>最近よく、地図とAIを組みわせて何かできないかと思案しています。Mapboxは、デジタル地図開発基盤の会社として、様々な地理空間データを保有しています。それらのデータとLLMを活用して、周辺の地理的条件から、POIを特定するツールを開発してみました！今でもLLMに丸投げすればPOI特定までやってくれますが、本ツールの場合は、99%以上少ないトークン、10倍近い速度、且つ同じ質問に対して毎回（ほぼ）同じ回答を返すといった精度の安定性を実現しています。当日はライブで実機デモを行います。地図が好きな方、今探したいPOIがある方、ぜひご参加いただけますと幸いです！</p>\n<h2>---</h2>\n<p>モビリティ業界の技術に興味がある皆様のご参加をお待ちしております！\n🎟️ スポンサーセッションとして5分程度プロダクト紹介の枠も予定しております 🎟️</p>\n<h1>📍 会場</h1>\n<p>■ 会場：KINTOテクノロジーズ室町オフィス <br>\n東京メトロ 半蔵門線・銀座線「三越前駅」直結<br>\n詳しいアクセスは<a href=\"https://blog.kinto-technologies.com/posts/2024-12-24-office-access/\" rel=\"nofollow\">こちら</a>に記載しています。<br></p>\n<p>■ 注意点：\n入口にて受付後、ご入場ください</p>\n<h1>⏳ タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: center;\">内容</th>\n<th style=\"text-align: center;\">担当者（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:15~</td>\n<td style=\"text-align: center;\">開場・受付開始</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">18:30~</td>\n<td style=\"text-align: center;\">イベント開始 👏<br>開会・注意事項の説明</td>\n<td style=\"text-align: center;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">18:35~</td>\n<td style=\"text-align: center;\">Claude Codeによるデータ分析の民主化とそれを支えるデータ基盤</td>\n<td style=\"text-align: center;\">株式会社ニーリー<br></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">18:50~</td>\n<td style=\"text-align: center;\">タクシーアプリ『GO』の実践的データ活用</td>\n<td style=\"text-align: center;\">GO株式会社<br> 渡部 徹太郎</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05~</td>\n<td style=\"text-align: center;\">10分休憩</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:15 ~</td>\n<td style=\"text-align: center;\">Overture Mapsで始める道路分析基盤</td>\n<td style=\"text-align: center;\">株式会社Luup<br> 谷本 晋一</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30 ~</td>\n<td style=\"text-align: center;\">Mapboxの地図データとLLMを使ったPOI特定ツールの開発</td>\n<td style=\"text-align: center;\">Mapbox Japan<br> 金澤</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45 ~</td>\n<td style=\"text-align: center;\">スポンサーセッション</td>\n<td style=\"text-align: center;\">KINTOテクノロジーズ株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:50 ~</td>\n<td style=\"text-align: center;\">懇親会開始</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:00</td>\n<td style=\"text-align: center;\">懇親会終了</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<h1>📣 LT登壇者</h1>\n<h3>株式会社ニーリー / 大城渉</h3>\n<p><img src=\"https://storage.googleapis.com/mobility-night/oshiro.webp\" width=\"180\"></p>\n<p>SIerに新卒入社後、基幹システムデータ移行プロジェクトなどを経験したのち、コンサルティングファームにITコンサルタントとして転職。データ基盤構築支援などのプロジェクトを推進。2025年12月からニーリーにアナリティクスエンジニアとして参画し、Claude Codeを活用したデータ分析基盤の構築・データ起点での業務改善に従事。</p>\n<h3>GO株式会社 / 渡部 徹太郎（<a href=\"https://x.com/fetarodc\" rel=\"nofollow\">@fetarodc</a>）</h3>\n<p><img src=\"https://storage.googleapis.com/mobility-night/me_rectangle.png\" width=\"180\"></p>\n<p>タクシーアプリ『GO』のデータ活用部隊の組織長をしています。「実践的データ基盤への処方箋」の著者でもあります。趣味は麻雀、ギター、ストリートファイター６、自宅サーバ。</p>\n<h3>株式会社Luup ／ Software部 Data Science &amp; Engineering Team ／谷本　晋一 (<a href=\"https://x.com/maestro_L_jp\" rel=\"nofollow\">@maestro_L_jp</a>)</h3>\n<p><img src=\"https://storage.googleapis.com/mobility-night/tani.png\" width=\"180\"></p>\n<p>2026年1月に現職にジョインしました。位置情報および地図データを活用した分析・基盤構築を担当しています。 趣味でAtCoderのコンテストに出場してAIなしコーディングを楽しんでいます。 同社の開催している最適化コンペにも出ているんですが、成績が芳しくないのが悩みの種。</p>\n<h3>Mapbox Japan ／ 金澤</h3>\n<p><img src=\"https://storage.googleapis.com/mobility-night/profile.jpg\" width=\"180\"></p>\n<p>海外の大規模トマト農場向けのGISを使った営農予測システムのシステムエンジニア、AR（拡張現実）・屋内位置測位技術を使った国内外の観光産業向けのモバイルアプリの新規事業の立ち上げ兼プロダクトマネージャーを経験した後、2022年にマップボックスに入社。主にWEBメディア向けのテクニカルアカウントマネージャーを担当し、最近は気象 x 地図の新規サービスの立ち上げに取り組んでいる。</p>\n\n\n<h1>👩‍👧‍👦 参加費</h1>\n<p>無料</p>\n<h1>⚠️ 注意事項</h1>\n<ul>\n<li>交通費は自己負担です。</li>\n<li>当イベントの風景は撮影します。イベント風景、発言内容などは記事や投稿に使用する予定です。ご参加いただく方は写真撮影等に映り込む可能性がありますのでご了承ください。また、イベントにおいて記録された発言内容について、参加者は著作者人格権を行使しないものとします。</li>\n<li>事故・盗難・怪我・参加者間のトラブルに我々は責任を負いません。</li>\n<li>進行を妨げる方には退出いただく場合がございます。</li>\n<li>勧誘行為を禁止します。飲食や勧誘などを主目的とした参加は固くお断りします。</li>\n<li>会場では簡単なアンケートをお願いする予定です。ご協力をお願いします！</li>\n</ul>\n<h1>ℹ️ 個人情報の取り扱いについて</h1>\n<p>当イベントでは、参加者の氏名やメールアドレスなどの個人情報を収集する場合があります。 また、アンケートフォーム等にてご入力いただいた情報は、KINTOテクノロジーズ株式会社が取得及び管理します。 収集した個人情報について、KINTOテクノロジーズ株式会社は以下の利用目的の範囲内において利用いたします。</p>\n<ul>\n<li>セミナー、イベント等に関する情報提供のため</li>\n<li>採用に関する情報提供のため</li>\n</ul>\n<h4>飲食スポンサー：株式会社Luup</h4>\n<p><img src=\"https://storage.googleapis.com/mobility-night/luup-logo-25.png\" width=\"300\" alt=\"株式会社Luup\"></p>\n<p>Luupは、“街じゅうを「駅前化」するインフラをつくる”をミッションに掲げ、電動キックボードや電動アシスト自転車など、電動マイクロモビリティのシェアリングサービス「LUUP」を提供しています。\nLUUPは、利用者iOS/Androidのネイティブアプリ開発やスタッフ向けのさまざまなアプリケーション、IoTデバイスと連携したリアルタイム制御システム、そしてGoogleCloud・Firebaseを中心としたクラウドインフラの設計・運用まで、幅広いソフトウェア技術に取り組んでいます。\nIoT×クラウド×モバイルの融合で、「街じゅうを駅前化する」未来の移動インフラを技術で支えています</p>\n<h4>会場スポンサー：KINTOテクノロジーズ株式会社</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/c7b193ffa11340e8bbafc7acbbe3f5ea/black_horizontal%20(1).svg\" width=\"300\" alt=\"KINTOテクノロジーズ\"></p>\n<p>KINTOテクノロジーズは、トヨタグループ各社が展開するモビリティサービスやビジネスをテクノロジーで支援するために、2021年4月に創設されたテックカンパニーです。 トヨタグループ内でも唯一の「BtoC・DtoC領域に特化した内製開発組織」であり、世界30ヵ国で展開するグローバルモビリティブランド『KINTO』関連プロダクトや、マルチモーダルモビリティサービス『my route』など、クルマに乗る「人」に焦点を当てた新しいサービスの開発・運用を行っています。</p>",
+      "description": "<h1>📝 イベント概要</h1>\n<p>Mobility Nightは、モビリティ業界に関連した企業や団体などのソフトウェアに関連する技術や知見について共有し、業界を盛り上げていくための勉強会です🚀<br></p>\n<p>過去には、KINTOテクノロジーズ、チャリチャリ株式会社、GO株式会社、newmo株式会社、株式会社Luup、トヨタコネクティッド株式会社、株式会社キャリオット、LINEヤフー株式会社、akippa株式会社、Mapbox Japan、などのエンジニアやプロダクトマネージャー、デザイナーの方にご登壇いただいております。</p>\n<h3>コンセプト</h3>\n<p><strong>Mobilityプロダクト x  Softwareプロダクト</strong></p>\n<p>専門技能が様々ある業界がソフトウェア部分についてフォーカスする場へ</p>\n<p><strong>Nightの由来</strong></p>\n<p>大型カンファレンスや１企業主体の発信よりも、より草の根的に知見共有・収集ができる場へ</p>\n<h3>目的</h3>\n<p><strong>1. モビリティ関連ソフトウェアの実践的知見を共有・習得</strong></p>\n<p>モビリティ領域には、技術的課題に多くの共通点がある\n  これらは、「ソフトウェア産業全体」で見るとやや特殊\n  そうした課題への知見を共有していくことで、\n  モビリティ業界に関わるソフトウェア・プロダクト全体の品質向上を図る</p>\n<p><strong>2. 業界単位での人材の引き込みへ</strong></p>\n<p>モビリティ関連の事業は、リアルプロダクトが伴うものも多く、プロダクトの認知はしやすい\n他方、その「ソフトウェア開発」が支える「裏側のしくみ」や「各社の事業などにおけるソフトウェアプロダクトの重要性」が伝わりづらい\n技術課題の難しさや社会へ重要性を発信し、\nソフトウェア業界にいる優秀な人材をモビリティ業界に集める一助に</p>\n<h1>今回テーマは <strong>「データ基盤から分析活用まで」</strong> です！</h1>\n<p>モビリティサービスでは、車両・IoTデバイス・アプリから日々膨大なデータが生まれています。それらをどう集め、貯め、整え、そしてどう意思決定やプロダクト改善につなげているのか──「基盤づくり」から「分析・活用」まで、各社の実践知を一気通貫で共有する回にしたいと考えています。</p>\n<p>具体的には、以下のアジェンダを予定しています</p>\n<h3>Claude Codeによるデータ分析の民主化とそれを支えるデータ基盤 (株式会社ニーリー / 大城渉)</h3>\n<p>アジェンダ：Analyticsチームだけが分析できる状態から抜け出すため、ニーリーでは分析レポートの作り方をClaude Codeの型（Skill・用語集・ガイド）に落とし込み、事業側のメンバーが自走できる仕組みをつくっています。どう型化して他部署へ展開したか、大変だったこと・工夫したこと、今後の課題を事例ベースで紹介します。</p>\n<h3>タクシーアプリ『GO』での実践的データ活用 ( GO株式会社 / 渡部 徹太郎)</h3>\n<p>アジェンダ：GOでは、ユーザーのスマホアプリから取れる位置情報と、タクシーに搭載された車載器の位置状態情報を収集し、ユーザとタクシーの最適なマッチングを実現させるための仕組みを作っています。この発表では、どんなデータをどのように集めて使っているかの紹介と、データ処理やデータ可視化の工夫点を紹介します。また、一部ではありますが、データ分析で生成AIをどう活用しているかも話します。</p>\n<h3>Overture Mapsで始める道路分析基盤 ( 株式会社Luup / 谷本 晋一)</h3>\n<p>アジェンダ：「どの道路を何台が、どれくらいの速度で通過しているか」を分析したいとき、最初の壁になるのが道路ネットワークデータの調達です。社内の道路ネットワーク基盤としてOverture Mapsを採用した経験から、OSMや商用データではなくなぜOverture Mapsなのか、実際にやってみてハマったポイントと回避策をお話しします。</p>\n<h3>Mapboxの地図データとLLMを使ったPOI特定ツールの開発（マップボックスジャパン合同会社 / 金澤浩平）</h3>\n<p>最近よく、地図とAIを組みわせて何かできないかと思案しています。Mapboxは、デジタル地図開発基盤の会社として、様々な地理空間データを保有しています。それらのデータとLLMを活用して、周辺の地理的条件から、POIを特定するツールを開発してみました！今でもLLMに丸投げすればPOI特定までやってくれますが、本ツールの場合は、99%以上少ないトークン、10倍近い速度、且つ同じ質問に対して毎回（ほぼ）同じ回答を返すといった精度の安定性を実現しています。当日はライブで実機デモを行います。地図が好きな方、今探したいPOIがある方、ぜひご参加いただけますと幸いです！</p>\n<h2>---</h2>\n<p>モビリティ業界の技術に興味がある皆様のご参加をお待ちしております！\n🎟️ スポンサーセッションとして5分程度プロダクト紹介の枠も予定しております 🎟️</p>\n<h1>📍 会場</h1>\n<p>■ 会場：KINTOテクノロジーズ室町オフィス <br>\n東京メトロ 半蔵門線・銀座線「三越前駅」直結<br>\n詳しいアクセスは<a href=\"https://blog.kinto-technologies.com/posts/2024-12-24-office-access/\" rel=\"nofollow\">こちら</a>に記載しています。<br></p>\n<p>■ 注意点：\n入口にて受付後、ご入場ください</p>\n<h1>⏳ タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: center;\">内容</th>\n<th style=\"text-align: center;\">担当者（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:15~</td>\n<td style=\"text-align: center;\">開場・受付開始</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">18:30~</td>\n<td style=\"text-align: center;\">イベント開始 👏<br>開会・注意事項の説明</td>\n<td style=\"text-align: center;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">18:35~</td>\n<td style=\"text-align: center;\">Claude Codeによるデータ分析の民主化とそれを支えるデータ基盤</td>\n<td style=\"text-align: center;\">株式会社ニーリー<br></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">18:50~</td>\n<td style=\"text-align: center;\">タクシーアプリ『GO』の実践的データ活用</td>\n<td style=\"text-align: center;\">GO株式会社<br> 渡部 徹太郎</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05~</td>\n<td style=\"text-align: center;\">10分休憩</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:15 ~</td>\n<td style=\"text-align: center;\">Overture Mapsで始める道路分析基盤</td>\n<td style=\"text-align: center;\">株式会社Luup<br> 谷本 晋一</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30 ~</td>\n<td style=\"text-align: center;\">Mapboxの地図データとLLMを使ったPOI特定ツールの開発</td>\n<td style=\"text-align: center;\">Mapbox Japan<br> 金澤</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45 ~</td>\n<td style=\"text-align: center;\">スポンサーセッション</td>\n<td style=\"text-align: center;\">KINTOテクノロジーズ株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:50 ~</td>\n<td style=\"text-align: center;\">スポンサーセッション</td>\n<td style=\"text-align: center;\">株式会社Luup</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55 ~</td>\n<td style=\"text-align: center;\">懇親会開始</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:00</td>\n<td style=\"text-align: center;\">懇親会終了</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<h1>📣 LT登壇者</h1>\n<h3>株式会社ニーリー / 大城渉</h3>\n<p><img src=\"https://storage.googleapis.com/mobility-night/oshiro.webp\" width=\"180\"></p>\n<p>SIerに新卒入社後、基幹システムデータ移行プロジェクトなどを経験したのち、コンサルティングファームにITコンサルタントとして転職。データ基盤構築支援などのプロジェクトを推進。2025年12月からニーリーにアナリティクスエンジニアとして参画し、Claude Codeを活用したデータ分析基盤の構築・データ起点での業務改善に従事。</p>\n<h3>GO株式会社 / 渡部 徹太郎（<a href=\"https://x.com/fetarodc\" rel=\"nofollow\">@fetarodc</a>）</h3>\n<p><img src=\"https://storage.googleapis.com/mobility-night/me_rectangle.png\" width=\"180\"></p>\n<p>タクシーアプリ『GO』のデータ活用部隊の組織長をしています。「実践的データ基盤への処方箋」の著者でもあります。趣味は麻雀、ギター、ストリートファイター６、自宅サーバ。</p>\n<h3>株式会社Luup ／ Software部 Data Science &amp; Engineering Team ／谷本　晋一 (<a href=\"https://x.com/maestro_L_jp\" rel=\"nofollow\">@maestro_L_jp</a>)</h3>\n<p><img src=\"https://storage.googleapis.com/mobility-night/tani.png\" width=\"180\"></p>\n<p>2026年1月に現職にジョインしました。位置情報および地図データを活用した分析・基盤構築を担当しています。 趣味でAtCoderのコンテストに出場してAIなしコーディングを楽しんでいます。 同社の開催している最適化コンペにも出ているんですが、成績が芳しくないのが悩みの種。</p>\n<h3>Mapbox Japan ／ 金澤</h3>\n<p><img src=\"https://storage.googleapis.com/mobility-night/profile.jpg\" width=\"180\"></p>\n<p>海外の大規模トマト農場向けのGISを使った営農予測システムのシステムエンジニア、AR（拡張現実）・屋内位置測位技術を使った国内外の観光産業向けのモバイルアプリの新規事業の立ち上げ兼プロダクトマネージャーを経験した後、2022年にマップボックスに入社。主にWEBメディア向けのテクニカルアカウントマネージャーを担当し、最近は気象 x 地図の新規サービスの立ち上げに取り組んでいる。</p>\n\n\n<h1>👩‍👧‍👦 参加費</h1>\n<p>無料</p>\n<h1>⚠️ 注意事項</h1>\n<ul>\n<li>交通費は自己負担です。</li>\n<li>当イベントの風景は撮影します。イベント風景、発言内容などは記事や投稿に使用する予定です。ご参加いただく方は写真撮影等に映り込む可能性がありますのでご了承ください。また、イベントにおいて記録された発言内容について、参加者は著作者人格権を行使しないものとします。</li>\n<li>事故・盗難・怪我・参加者間のトラブルに我々は責任を負いません。</li>\n<li>進行を妨げる方には退出いただく場合がございます。</li>\n<li>勧誘行為を禁止します。飲食や勧誘などを主目的とした参加は固くお断りします。</li>\n<li>会場では簡単なアンケートをお願いする予定です。ご協力をお願いします！</li>\n</ul>\n<h1>ℹ️ 個人情報の取り扱いについて</h1>\n<p>当イベントでは、参加者の氏名やメールアドレスなどの個人情報を収集する場合があります。 また、アンケートフォーム等にてご入力いただいた情報は、KINTOテクノロジーズ株式会社が取得及び管理します。 収集した個人情報について、KINTOテクノロジーズ株式会社は以下の利用目的の範囲内において利用いたします。</p>\n<ul>\n<li>セミナー、イベント等に関する情報提供のため</li>\n<li>採用に関する情報提供のため</li>\n</ul>\n<h4>飲食スポンサー：株式会社Luup</h4>\n<p><img src=\"https://storage.googleapis.com/mobility-night/luup-logo-25.png\" width=\"300\" alt=\"株式会社Luup\"></p>\n<p>Luupは、“街じゅうを「駅前化」するインフラをつくる”をミッションに掲げ、電動キックボードや電動アシスト自転車など、電動マイクロモビリティのシェアリングサービス「LUUP」を提供しています。\nLUUPは、利用者iOS/Androidのネイティブアプリ開発やスタッフ向けのさまざまなアプリケーション、IoTデバイスと連携したリアルタイム制御システム、そしてGoogleCloud・Firebaseを中心としたクラウドインフラの設計・運用まで、幅広いソフトウェア技術に取り組んでいます。\nIoT×クラウド×モバイルの融合で、「街じゅうを駅前化する」未来の移動インフラを技術で支えています</p>\n<h4>会場スポンサー：KINTOテクノロジーズ株式会社</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/c7b193ffa11340e8bbafc7acbbe3f5ea/black_horizontal%20(1).svg\" width=\"300\" alt=\"KINTOテクノロジーズ\"></p>\n<p>KINTOテクノロジーズは、トヨタグループ各社が展開するモビリティサービスやビジネスをテクノロジーで支援するために、2021年4月に創設されたテックカンパニーです。 トヨタグループ内でも唯一の「BtoC・DtoC領域に特化した内製開発組織」であり、世界30ヵ国で展開するグローバルモビリティブランド『KINTO』関連プロダクトや、マルチモーダルモビリティサービス『my route』など、クルマに乗る「人」に焦点を当てた新しいサービスの開発・運用を行っています。</p>",
       "url": "https://mobility-night.connpass.com/event/397761/",
       "image_url": "https://media.connpass.com/thumbs/80/0e/800ebc567d236bb3fd623393dbcec9f3.png",
       "hash_tag": "mobility_night",
@@ -290,7 +290,7 @@
       "published_at": "2026-07-02T13:04:29+09:00",
       "limit": 39,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15355,
         "subdomain": "mobility-night",
@@ -306,7 +306,7 @@
       "owner_display_name": "KINTOテクノロジーズ",
       "accepted": 32,
       "waiting": 0,
-      "updated_at": "2026-07-29T13:21:16+09:00"
+      "updated_at": "2026-07-29T18:21:11+09:00"
     },
     {
       "id": 401887,
@@ -321,7 +321,7 @@
       "published_at": "2026-07-27T17:19:39+09:00",
       "limit": 7,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": null,
       "address": "東京都千代田区大手町1-5-1",
       "place": "大手町ファーストスクエア イーストタワー",
@@ -347,7 +347,7 @@
       "published_at": "2026-06-20T17:30:59+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
