@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-30T06:52:36.466669+09:00",
+  "fetched_at": "2026-07-30T07:53:39.223272+09:00",
   "date": "20260730",
-  "count": 16,
+  "count": 17,
   "events": [
     {
       "id": 399110,
@@ -392,7 +392,7 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 29,
+      "accepted": 28,
       "waiting": 0,
       "updated_at": "2026-07-29T17:46:15+09:00"
     },
@@ -483,6 +483,32 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-07-29T10:35:32+09:00"
+    },
+    {
+      "id": 401285,
+      "title": "千葉のオフィスでわくわく会",
+      "catch": "IT未経験・経験関係無し！わくわくするもくもく会をしませんか♪",
+      "description": "<p>千葉市にあるカフェのようなオフィスで、もくもく作業しませんか？\n立派な本棚にはIT関連の書籍もたくさんあります！\nエスプレッソマシンやウォーターサーバーもあるお洒落なオフィスで、のんびりとした時間を過ごせます。</p>\n<p>エンジニアや採用担当も常駐するオフィスなので、業界のお話を聞くことも◎</p>\n<p>【会社概要】\n<a href=\"https://gb-sol.com/\" rel=\"nofollow\">https://gb-sol.com/</a></p>\n<p>【場所】\n本八幡オフィス</p>",
+      "url": "https://connpass.com/event/401285/",
+      "image_url": "https://media.connpass.com/thumbs/cd/02/cd027d076e1b915bc24f6df05f9ae36d.png",
+      "hash_tag": "",
+      "started_at": "2026-07-30T10:00:00+09:00",
+      "ended_at": "2026-07-30T18:00:00+09:00",
+      "published_at": "2026-07-21T16:17:58+09:00",
+      "limit": 8,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": null,
+      "address": "千葉県市川市南八幡１－２４－８",
+      "place": "GBS本八幡オフィス",
+      "lat": "35.714559700000",
+      "lon": "139.929982200000",
+      "owner_id": 1038263,
+      "owner_nickname": "sa1yowww",
+      "owner_display_name": "sa1yowww",
+      "accepted": 1,
+      "waiting": 0,
+      "updated_at": "2026-07-21T16:17:58+09:00"
     }
   ]
 }
