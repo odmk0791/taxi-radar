@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-31T04:13:12.524958+09:00",
+  "fetched_at": "2026-07-31T05:58:45.190225+09:00",
   "date": "20260731",
   "count": 12,
   "events": [
@@ -216,37 +216,6 @@
       "updated_at": "2026-07-30T15:15:56+09:00"
     },
     {
-      "id": 397447,
-      "title": "TypeScript夜話 feat.おたのし味テック会",
-      "catch": "TypeScriptを肴に語り合うエンジニア交流会",
-      "description": "<h1>TypeScript夜話</h1>\r\n<p>TypeScriptを愛するエンジニアが集まる、一夜限りの技術交流イベントを開催します。\r\nフロントエンド・バックエンド問わずTypeScriptを活用している方、これから学びたい方、他社の開発事例に興味がある方はぜひご参加ください。</p>\r\n<h2>こんな方におすすめ</h2>\r\n<ul>\r\n<li>TypeScriptを利用しているエンジニア</li>\r\n<li>フロントエンド開発に携わっている方</li>\r\n<li>Node.jsやバックエンドでTypeScriptを活用している方</li>\r\n<li>他社の開発事例や技術選定の考え方を知りたい方</li>\r\n<li>エンジニア同士で交流したい方</li>\r\n<li>おたのし味テック会の雰囲気を体験してみたい方</li>\r\n</ul>\r\n<h1>おたのし味テック会</h1>\r\n<p>「おたのし味テック会」は、viviONと虎の穴ラボを中心に開催する技術イベントシリーズです。<br>\r\n技術や開発文化について気軽に語り合い、会社やコミュニティの垣根を越えて交流する場としてぜひご参加ください。</p>\r\n<p>今回は <strong>TypeScript</strong> をテーマに、各社の実践事例や開発現場での取り組み、ゲストトーク、LTなど盛りだくさんの内容でお届けします。</p>\r\n<h1>開催概要</h1>\r\n<ul>\r\n<li><strong>日時</strong>：2026年7月31日（金）19:00〜22:00</li>\r\n<li><strong>受付開始</strong>：18:30〜</li>\r\n<li><strong>会場</strong>：viviON オフィス イベントスペース</li>\r\n<li><strong>住所</strong>：東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階</li>\r\n<li><strong>参加費</strong>：無料</li>\r\n</ul>\r\n<h3>アクセス</h3>\r\n<ul>\r\n<li>つくばエクスプレス「秋葉原駅」A3出口 徒歩1分</li>\r\n<li>JR「秋葉原駅」中央改札口 徒歩2分</li>\r\n<li>東京メトロ日比谷線「秋葉原駅」徒歩2分</li>\r\n</ul>\r\n<h2>タイムテーブル</h2>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>時間</th>\r\n<th>内容</th>\r\n<th>講演者</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>18:30</td>\r\n<td>受付開始</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>19:00</td>\r\n<td>オープニングトーク</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>19:10</td>\r\n<td>2026年 Rails基盤の会社がReactを使うなら</td>\r\n<td>奥谷 一陽 / 虎の穴ラボ</td>\r\n</tr>\r\n<tr>\r\n<td>19:35</td>\r\n<td>月10時間以上かけていた型同期作業をゼロにした話</td>\r\n<td>岸本 涼佑 / viviON</td>\r\n</tr>\r\n<tr>\r\n<td>20:00</td>\r\n<td>Reactコンポーネントの再利用性について(仮)</td>\r\n<td>梶川 琢馬 / TechBowl</td>\r\n</tr>\r\n<tr>\r\n<td>20:25</td>\r\n<td>ドリンク・フード提供開始／乾杯</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>20:30</td>\r\n<td>パネルトーク</td>\r\n<td>各社登壇者参加</td>\r\n</tr>\r\n<tr>\r\n<td>21:00</td>\r\n<td>懇親会</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>21:30</td>\r\n<td>懇親会終了</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>22:00</td>\r\n<td>完全撤収</td>\r\n<td></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>※内容は変更となる場合があります。</p>\r\n<h2>セッション内容</h2>\r\n<p>TypeScriptをテーマに、以下のような内容を予定しています。</p>\r\n<ul>\r\n<li>TypeScript活用事例</li>\r\n<li>大規模開発における型設計</li>\r\n<li>フロントエンドアーキテクチャ</li>\r\n<li>Node.js × TypeScript</li>\r\n<li>AI時代のTypeScript開発</li>\r\n<li>開発組織における活用ノウハウ</li>\r\n</ul>\r\n<h2>登壇者情報</h2>\r\n<h3>2026年 Rails基盤の会社がReactを使うなら</h3>\r\n<p>虎の穴ラボには、基盤をRailsとしたサービスが多数あります。<br>\r\n2026年現在、Railsと組み合わせてReactを使う際に、どういう選択をしたかなどをお話しします。</p>\r\n<h4>奥谷 一陽 / <a href=\"https://x.com/okutann88\" rel=\"nofollow\">@okutann88</a> / 虎の穴ラボ株式会社</h4>\r\n<p><img src=\"https://media.connpass.com/thumbs/40/7d/407dfbd9d0fdb9f684e735d6caf625e2.png\" width=\"200\"></p>\r\n<blockquote>\r\n<p>虎の穴ラボ所属。toranoana.deno 運営のひとり。プロダクト開発チームのユニットのリーダー。</p>\r\n</blockquote>\r\n<h3>月10時間以上かけていた型同期作業をゼロにした話</h3>\r\n<p>APIが変わるたび、フロントは型を手で修正——新規案件立ち上げ期は月10時間以上をこの作業に溶かしていました。<br>\r\nそこでOrvalでOpenAPIから型・クライアント・モックを自動生成し、自動PR・auto-mergeまで連携。\r\nフロントの追従は人手ゼロに。浮いた月10時間は、本来注力すべき開発へ。<br>\r\nスキーマ駆動開発・DX・CI/CD自動化に関心がある方はもちろん、現場の無駄を減らしたい方にも、見直しのヒントを持ち帰っていただけます。</p>\r\n<h4>岸本 涼佑  / 株式会社viviON</h4>\r\n<p><img src=\"https://media.vivion.jp/public/uploads/20260731_kishimoto.jpg\" width=\"200\"></p>\r\n<blockquote>\r\n<p>株式会社viviONのフロントエンドチームに所属。最近は新規事業にAI駆動開発を取り入れて、0→1のプロダクト構築に取り組んでいる。</p>\r\n</blockquote>\r\n<h3>Reactコンポーネントの再利用性について(仮)</h3>\r\n<p>TypeScriptを使って、Reactコンポーネントをどう設計すれば再利用しやすく保守しやすくなるかを話します。状態を型でうまく表す方法や、画面表示とデータ処理を分ける考え方を、自社の実例を交えて紹介します。</p>\r\n<h4>梶川 琢馬 / <a href=\"https://x.com/kajitack\" rel=\"nofollow\">@kajitack</a> / 株式会社TechBowl VPoT</h4>\r\n<p><img src=\"https://pbs.twimg.com/profile_images/1768449148691660800/7uwVd6F9_400x400.jpg\" width=\"200\"></p>\r\n<blockquote>\r\n<p>ゲーム開発や EC 開発、SaaS 開発などを経て、2023 年に株式会社 TechBowl へ入社。スキル習得、キャリア相談を支援する学生向けサービス TechTrain の開発を担当。同サービスのメンターとしても活動中。</p>\r\n</blockquote>\r\n<h2>懇親会</h2>\r\n<p>イベント終了後は軽食とドリンクをご用意した懇親会を予定しています。</p>\r\n<p>登壇者や参加者同士で交流いただける貴重な機会ですので、ぜひ最後までご参加ください。</p>\r\n<h1>注意事項</h1>\r\n<ul>\r\n<li>イベント内容は予告なく変更となる場合があります。</li>\r\n<li>会場内では写真撮影を行う場合があります。</li>\r\n<li>撮影した写真はイベントレポートやSNS等で利用する場合があります。</li>\r\n<li>営業・採用のみを目的とした参加はご遠慮ください。</li>\r\n<li>ハラスメント行為や迷惑行為は禁止します。</li>\r\n</ul>\r\n<h3>個人情報のお取り扱いについて</h3>\r\n<p>事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いはプライバシーポリシーに従って取り扱います。各企業のプライバシーポリシーにご同意の上、ご参加ください。</p>\r\n<ul>\r\n<li>株式会社viviON <a href=\"https://vivion.jp/privacy_protection/\" rel=\"nofollow\">https://vivion.jp/privacy_protection/</a></li>\r\n<li>虎の穴ラボ株式会社 <a href=\"https://toranoana-lab.co.jp/privacy\" rel=\"nofollow\">https://toranoana-lab.co.jp/privacy</a></li>\r\n</ul>\r\n<h1>主催</h1>\r\n<ul>\r\n<li>株式会社viviON</li>\r\n<li>虎の穴ラボ株式会社</li>\r\n</ul>",
-      "url": "https://vivion.connpass.com/event/397447/",
-      "image_url": "https://media.connpass.com/thumbs/e2/6e/e26e77ae4f2b7e8fc8e504ca61b2972a.png",
-      "hash_tag": "otami",
-      "started_at": "2026-07-31T19:00:00+09:00",
-      "ended_at": "2026-07-31T22:00:00+09:00",
-      "published_at": "2026-06-25T17:57:13+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17140,
-        "subdomain": "vivion",
-        "title": "viviON",
-        "url": "https://vivion.connpass.com/"
-      },
-      "address": "東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階",
-      "place": "株式会社viviON",
-      "lat": "35.699923200000",
-      "lon": "139.774652600000",
-      "owner_id": 943451,
-      "owner_nickname": "viviON",
-      "owner_display_name": "株式会社viviON",
-      "accepted": 21,
-      "waiting": 0,
-      "updated_at": "2026-07-23T17:15:27+09:00"
-    },
-    {
       "id": 397535,
       "title": "デザインシステム勉強会",
       "catch": "",
@@ -307,6 +276,37 @@
       "accepted": 134,
       "waiting": 0,
       "updated_at": "2026-07-31T01:27:53+09:00"
+    },
+    {
+      "id": 397447,
+      "title": "TypeScript夜話 feat.おたのし味テック会",
+      "catch": "TypeScriptを肴に語り合うエンジニア交流会",
+      "description": "<h1>TypeScript夜話</h1>\r\n<p>TypeScriptを愛するエンジニアが集まる、一夜限りの技術交流イベントを開催します。\r\nフロントエンド・バックエンド問わずTypeScriptを活用している方、これから学びたい方、他社の開発事例に興味がある方はぜひご参加ください。</p>\r\n<h2>こんな方におすすめ</h2>\r\n<ul>\r\n<li>TypeScriptを利用しているエンジニア</li>\r\n<li>フロントエンド開発に携わっている方</li>\r\n<li>Node.jsやバックエンドでTypeScriptを活用している方</li>\r\n<li>他社の開発事例や技術選定の考え方を知りたい方</li>\r\n<li>エンジニア同士で交流したい方</li>\r\n<li>おたのし味テック会の雰囲気を体験してみたい方</li>\r\n</ul>\r\n<h1>おたのし味テック会</h1>\r\n<p>「おたのし味テック会」は、viviONと虎の穴ラボを中心に開催する技術イベントシリーズです。<br>\r\n技術や開発文化について気軽に語り合い、会社やコミュニティの垣根を越えて交流する場としてぜひご参加ください。</p>\r\n<p>今回は <strong>TypeScript</strong> をテーマに、各社の実践事例や開発現場での取り組み、ゲストトーク、LTなど盛りだくさんの内容でお届けします。</p>\r\n<h1>開催概要</h1>\r\n<ul>\r\n<li><strong>日時</strong>：2026年7月31日（金）19:00〜22:00</li>\r\n<li><strong>受付開始</strong>：18:30〜</li>\r\n<li><strong>会場</strong>：viviON オフィス イベントスペース</li>\r\n<li><strong>住所</strong>：東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階</li>\r\n<li><strong>参加費</strong>：無料</li>\r\n</ul>\r\n<h3>アクセス</h3>\r\n<ul>\r\n<li>つくばエクスプレス「秋葉原駅」A3出口 徒歩1分</li>\r\n<li>JR「秋葉原駅」中央改札口 徒歩2分</li>\r\n<li>東京メトロ日比谷線「秋葉原駅」徒歩2分</li>\r\n</ul>\r\n<h2>タイムテーブル</h2>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>時間</th>\r\n<th>内容</th>\r\n<th>講演者</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>18:30</td>\r\n<td>受付開始</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>19:00</td>\r\n<td>オープニングトーク</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>19:10</td>\r\n<td>2026年 Rails基盤の会社がReactを使うなら</td>\r\n<td>奥谷 一陽 / 虎の穴ラボ</td>\r\n</tr>\r\n<tr>\r\n<td>19:35</td>\r\n<td>月10時間以上かけていた型同期作業をゼロにした話</td>\r\n<td>岸本 涼佑 / viviON</td>\r\n</tr>\r\n<tr>\r\n<td>20:00</td>\r\n<td>Reactコンポーネントの再利用性について(仮)</td>\r\n<td>梶川 琢馬 / TechBowl</td>\r\n</tr>\r\n<tr>\r\n<td>20:25</td>\r\n<td>ドリンク・フード提供開始／乾杯</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>20:30</td>\r\n<td>パネルトーク</td>\r\n<td>各社登壇者参加</td>\r\n</tr>\r\n<tr>\r\n<td>21:00</td>\r\n<td>懇親会</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>21:30</td>\r\n<td>懇親会終了</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>22:00</td>\r\n<td>完全撤収</td>\r\n<td></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>※内容は変更となる場合があります。</p>\r\n<h2>セッション内容</h2>\r\n<p>TypeScriptをテーマに、以下のような内容を予定しています。</p>\r\n<ul>\r\n<li>TypeScript活用事例</li>\r\n<li>大規模開発における型設計</li>\r\n<li>フロントエンドアーキテクチャ</li>\r\n<li>Node.js × TypeScript</li>\r\n<li>AI時代のTypeScript開発</li>\r\n<li>開発組織における活用ノウハウ</li>\r\n</ul>\r\n<h2>登壇者情報</h2>\r\n<h3>2026年 Rails基盤の会社がReactを使うなら</h3>\r\n<p>虎の穴ラボには、基盤をRailsとしたサービスが多数あります。<br>\r\n2026年現在、Railsと組み合わせてReactを使う際に、どういう選択をしたかなどをお話しします。</p>\r\n<h4>奥谷 一陽 / <a href=\"https://x.com/okutann88\" rel=\"nofollow\">@okutann88</a> / 虎の穴ラボ株式会社</h4>\r\n<p><img src=\"https://media.connpass.com/thumbs/40/7d/407dfbd9d0fdb9f684e735d6caf625e2.png\" width=\"200\"></p>\r\n<blockquote>\r\n<p>虎の穴ラボ所属。toranoana.deno 運営のひとり。プロダクト開発チームのユニットのリーダー。</p>\r\n</blockquote>\r\n<h3>月10時間以上かけていた型同期作業をゼロにした話</h3>\r\n<p>APIが変わるたび、フロントは型を手で修正——新規案件立ち上げ期は月10時間以上をこの作業に溶かしていました。<br>\r\nそこでOrvalでOpenAPIから型・クライアント・モックを自動生成し、自動PR・auto-mergeまで連携。\r\nフロントの追従は人手ゼロに。浮いた月10時間は、本来注力すべき開発へ。<br>\r\nスキーマ駆動開発・DX・CI/CD自動化に関心がある方はもちろん、現場の無駄を減らしたい方にも、見直しのヒントを持ち帰っていただけます。</p>\r\n<h4>岸本 涼佑  / 株式会社viviON</h4>\r\n<p><img src=\"https://media.vivion.jp/public/uploads/20260731_kishimoto.jpg\" width=\"200\"></p>\r\n<blockquote>\r\n<p>株式会社viviONのフロントエンドチームに所属。最近は新規事業にAI駆動開発を取り入れて、0→1のプロダクト構築に取り組んでいる。</p>\r\n</blockquote>\r\n<h3>Reactコンポーネントの再利用性について(仮)</h3>\r\n<p>TypeScriptを使って、Reactコンポーネントをどう設計すれば再利用しやすく保守しやすくなるかを話します。状態を型でうまく表す方法や、画面表示とデータ処理を分ける考え方を、自社の実例を交えて紹介します。</p>\r\n<h4>梶川 琢馬 / <a href=\"https://x.com/kajitack\" rel=\"nofollow\">@kajitack</a> / 株式会社TechBowl VPoT</h4>\r\n<p><img src=\"https://pbs.twimg.com/profile_images/1768449148691660800/7uwVd6F9_400x400.jpg\" width=\"200\"></p>\r\n<blockquote>\r\n<p>ゲーム開発や EC 開発、SaaS 開発などを経て、2023 年に株式会社 TechBowl へ入社。スキル習得、キャリア相談を支援する学生向けサービス TechTrain の開発を担当。同サービスのメンターとしても活動中。</p>\r\n</blockquote>\r\n<h2>懇親会</h2>\r\n<p>イベント終了後は軽食とドリンクをご用意した懇親会を予定しています。</p>\r\n<p>登壇者や参加者同士で交流いただける貴重な機会ですので、ぜひ最後までご参加ください。</p>\r\n<h1>注意事項</h1>\r\n<ul>\r\n<li>イベント内容は予告なく変更となる場合があります。</li>\r\n<li>会場内では写真撮影を行う場合があります。</li>\r\n<li>撮影した写真はイベントレポートやSNS等で利用する場合があります。</li>\r\n<li>営業・採用のみを目的とした参加はご遠慮ください。</li>\r\n<li>ハラスメント行為や迷惑行為は禁止します。</li>\r\n</ul>\r\n<h3>個人情報のお取り扱いについて</h3>\r\n<p>事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いはプライバシーポリシーに従って取り扱います。各企業のプライバシーポリシーにご同意の上、ご参加ください。</p>\r\n<ul>\r\n<li>株式会社viviON <a href=\"https://vivion.jp/privacy_protection/\" rel=\"nofollow\">https://vivion.jp/privacy_protection/</a></li>\r\n<li>虎の穴ラボ株式会社 <a href=\"https://toranoana-lab.co.jp/privacy\" rel=\"nofollow\">https://toranoana-lab.co.jp/privacy</a></li>\r\n</ul>\r\n<h1>主催</h1>\r\n<ul>\r\n<li>株式会社viviON</li>\r\n<li>虎の穴ラボ株式会社</li>\r\n</ul>",
+      "url": "https://vivion.connpass.com/event/397447/",
+      "image_url": "https://media.connpass.com/thumbs/e2/6e/e26e77ae4f2b7e8fc8e504ca61b2972a.png",
+      "hash_tag": "otami",
+      "started_at": "2026-07-31T19:00:00+09:00",
+      "ended_at": "2026-07-31T22:00:00+09:00",
+      "published_at": "2026-06-25T17:57:13+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17140,
+        "subdomain": "vivion",
+        "title": "viviON",
+        "url": "https://vivion.connpass.com/"
+      },
+      "address": "東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階",
+      "place": "株式会社viviON",
+      "lat": "35.699923200000",
+      "lon": "139.774652600000",
+      "owner_id": 943451,
+      "owner_nickname": "viviON",
+      "owner_display_name": "株式会社viviON",
+      "accepted": 21,
+      "waiting": 0,
+      "updated_at": "2026-07-23T17:15:27+09:00"
     },
     {
       "id": 399959,
