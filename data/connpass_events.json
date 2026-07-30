@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-30T19:15:47.771812+09:00",
+  "fetched_at": "2026-07-30T21:25:01.077440+09:00",
   "date": "20260730",
   "count": 16,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-30T18:44:54+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -30,7 +30,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 25,
+      "accepted": 29,
       "waiting": 0,
       "updated_at": "2026-07-30T16:58:58+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-07-13T23:34:12+09:00",
       "limit": 11,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14352,
         "subdomain": "streamline",
@@ -78,7 +78,7 @@
       "published_at": "2026-06-12T13:20:10+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14571,
         "subdomain": "soda-inc",
@@ -109,7 +109,7 @@
       "published_at": "2026-06-29T19:58:23+09:00",
       "limit": 39,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13779,
         "subdomain": "mybest",
@@ -124,7 +124,7 @@
       "owner_nickname": "mybest",
       "owner_display_name": "mybest",
       "accepted": 39,
-      "waiting": 3,
+      "waiting": 2,
       "updated_at": "2026-07-30T16:55:38+09:00"
     },
     {
@@ -140,7 +140,7 @@
       "published_at": "2026-07-01T15:22:48+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16709,
         "subdomain": "wbccollege",
@@ -202,7 +202,7 @@
       "published_at": "2026-06-11T19:11:51+09:00",
       "limit": 90,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1374,
         "subdomain": "moneyforward",
@@ -290,7 +290,7 @@
       "published_at": "2026-07-06T18:11:32+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都品川区東五反田2-2-2 (松楽ビル 7F)",
       "place": "zen place yoga mix 五反田",
@@ -302,37 +302,6 @@
       "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-07-15T16:56:00+09:00"
-    },
-    {
-      "id": 400638,
-      "title": "AI効果検証 meet up！#3〜どんな指標を・どのように読み解き、改善に繋げるか〜",
-      "catch": "",
-      "description": "<h1>✍️概要</h1>\n<p>Claude Code・GitHub Copilot・Codexをはじめとした生成AIツールの性能が日々進化する一方、<br>\nサブスクリプションから従量課金型への移行や、rules・Skills・Subagentsといったハーネス／自走環境の整備が進むほど膨らむトークン消費など、「使えば使うほど」生成AIツールのコストが増える構造が生まれつつあります。</p>\n<p>こうした状況下で、「結局、このAI投資はどれくらいの効果を生んでいるのか？」という問いが、これまで以上に求められてきています。</p>\n<p>しかし、AIによって開発プロセスの前提そのものが変化する中で、どのようにAIの活用効果を計測・改善すると良いのについては以下をはじめとして手探りで取り組まれている組織が多いのではないでしょうか。</p>\n<ul>\n<li>AIで開発プロセスの前提自体が変化する中、業界デファクトの指標がまだ存在しない</li>\n<li>品質・コスト効率を可視化する有効な手法も定まっていない</li>\n<li>PR数などの作業生産性は伸びても、顧客価値・売上・リードタイム短縮といった事業アウトカムへの接続が見えづらい</li>\n</ul>\n<p>本イベントでは「組織におけるAI活用の効果検証」をテーマに、どんな指標を・どのように読み解き、改善・現場活用に繋げているかを、各社のショートトーク形式で深掘りします。</p>\n<p>それぞれ異なるアプローチでAI活用の効果検証に取り組む各社の事例を比較しながら、「自社で明日から見るべき指標とその読み解き方」のヒントを持ち帰っていただける場を目指します。ぜひご参加ください！</p>\n<hr>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:07</td>\n<td>オープニング / 会場案内（6分）</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>19:09 - 19:14</td>\n<td>アウトカムより先に\"AI活用定着\"を 量・質・コストで\"組織平均\"の定着を底上げする</td>\n<td>菅本さん</td>\n</tr>\n<tr>\n<td>19:16 - 19:21</td>\n<td>AI時代における開発生産性との向き合い方</td>\n<td>遠藤さん（キャリオット株式会社）</td>\n</tr>\n<tr>\n<td>19:23 - 19:33</td>\n<td>勉強会紹介＆スポンサー紹介（10分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:35 - 19:40</td>\n<td>あなたのリードタイムの変化はどこから?</td>\n<td>佐藤さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td>19:42 - 20:07</td>\n<td>Q&amp;A（25分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:09 - 20:15</td>\n<td>クロージング（6分）</td>\n<td>運営</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>※LT5分＋画面切り替え等を考慮し1人12分としています。</p>\n<blockquote>\n<p>※20:15〜21:30 懇親会（ネットワーキング）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります  </p>\n</blockquote>\n<hr>\n<h1>⚠️ <strong>諸注意</strong></h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>🤝会場スポンサー</h1>\n<p><img src=\"https://media.connpass.com/thumbs/9e/f6/9ef6fa5e43dd68600a718ba021188ebd.png\" width=\"300\"></p>\n<p><a href=\"https://unext-hd.co.jp/\" rel=\"nofollow\">株式会社U-NEXT HOLDINGS（USEN＆U-NEXT GROUP）</a><br></p>\n<p>本イベントは、会場スポンサーとして株式会社U-NEXT HOLDINGS様にご協力いただき開催しております。<br>\nU-NEXT HOLDINGS様の開発組織・採用についてご興味のある方は以下ページをぜひご覧ください！<br>\n<br></p>\n<ul>\n<li><a href=\"https://recruit.unext-hd.co.jp/\" rel=\"nofollow\">グループ採用サイト</a><br></li>\n<li><a href=\"https://hrmos.co/pages/u-nextholdings/jobs?jobType=FULL&amp;category=1600764878347055107\" rel=\"nofollow\">エンジニア求人一覧</a></li>\n</ul>\n<h1>📣<strong>主催・運営</strong></h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/\" rel=\"nofollow\">生成AI活用のボトルネックを可視化し、開発組織の変革を実現するAIツール「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a> <br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
-      "url": "https://findy-aiplus.connpass.com/event/400638/",
-      "image_url": "https://media.connpass.com/thumbs/90/f2/90f2917cfeb619a637d5fcb4ec48a13b.png",
-      "hash_tag": "AIkenshouMeetup",
-      "started_at": "2026-07-30T19:00:00+09:00",
-      "ended_at": "2026-07-30T20:30:00+09:00",
-      "published_at": "2026-07-15T19:11:17+09:00",
-      "limit": 52,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 17529,
-        "subdomain": "findy-aiplus",
-        "title": "Findy AI+",
-        "url": "https://findy-aiplus.connpass.com/"
-      },
-      "address": "〒141-0021 東京都品川区上大崎3丁目1−1",
-      "place": "株式会社U-NEXT HOLDINGS",
-      "lat": "35.632965000000",
-      "lon": "139.716635700000",
-      "owner_id": 986836,
-      "owner_nickname": "sugamotota",
-      "owner_display_name": "t.sugamoto",
-      "accepted": 22,
-      "waiting": 0,
-      "updated_at": "2026-07-30T16:02:06+09:00"
     },
     {
       "id": 400901,
@@ -347,7 +316,7 @@
       "published_at": "2026-07-16T20:47:54+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12277,
         "subdomain": "fffff",
@@ -366,6 +335,37 @@
       "updated_at": "2026-07-16T20:47:54+09:00"
     },
     {
+      "id": 400638,
+      "title": "AI効果検証 meet up！#3〜どんな指標を・どのように読み解き、改善に繋げるか〜",
+      "catch": "",
+      "description": "<h1>✍️概要</h1>\n<p>Claude Code・GitHub Copilot・Codexをはじめとした生成AIツールの性能が日々進化する一方、<br>\nサブスクリプションから従量課金型への移行や、rules・Skills・Subagentsといったハーネス／自走環境の整備が進むほど膨らむトークン消費など、「使えば使うほど」生成AIツールのコストが増える構造が生まれつつあります。</p>\n<p>こうした状況下で、「結局、このAI投資はどれくらいの効果を生んでいるのか？」という問いが、これまで以上に求められてきています。</p>\n<p>しかし、AIによって開発プロセスの前提そのものが変化する中で、どのようにAIの活用効果を計測・改善すると良いのについては以下をはじめとして手探りで取り組まれている組織が多いのではないでしょうか。</p>\n<ul>\n<li>AIで開発プロセスの前提自体が変化する中、業界デファクトの指標がまだ存在しない</li>\n<li>品質・コスト効率を可視化する有効な手法も定まっていない</li>\n<li>PR数などの作業生産性は伸びても、顧客価値・売上・リードタイム短縮といった事業アウトカムへの接続が見えづらい</li>\n</ul>\n<p>本イベントでは「組織におけるAI活用の効果検証」をテーマに、どんな指標を・どのように読み解き、改善・現場活用に繋げているかを、各社のショートトーク形式で深掘りします。</p>\n<p>それぞれ異なるアプローチでAI活用の効果検証に取り組む各社の事例を比較しながら、「自社で明日から見るべき指標とその読み解き方」のヒントを持ち帰っていただける場を目指します。ぜひご参加ください！</p>\n<hr>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:07</td>\n<td>オープニング / 会場案内（6分）</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>19:09 - 19:14</td>\n<td>アウトカムより先に\"AI活用定着\"を 量・質・コストで\"組織平均\"の定着を底上げする</td>\n<td>菅本さん</td>\n</tr>\n<tr>\n<td>19:16 - 19:21</td>\n<td>AI時代における開発生産性との向き合い方</td>\n<td>遠藤さん（キャリオット株式会社）</td>\n</tr>\n<tr>\n<td>19:23 - 19:33</td>\n<td>勉強会紹介＆スポンサー紹介（10分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:35 - 19:40</td>\n<td>あなたのリードタイムの変化はどこから?</td>\n<td>佐藤さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td>19:42 - 20:07</td>\n<td>Q&amp;A（25分）</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:09 - 20:15</td>\n<td>クロージング（6分）</td>\n<td>運営</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>※LT5分＋画面切り替え等を考慮し1人12分としています。</p>\n<blockquote>\n<p>※20:15〜21:30 懇親会（ネットワーキング）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります  </p>\n</blockquote>\n<hr>\n<h1>⚠️ <strong>諸注意</strong></h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>🤝会場スポンサー</h1>\n<p><img src=\"https://media.connpass.com/thumbs/9e/f6/9ef6fa5e43dd68600a718ba021188ebd.png\" width=\"300\"></p>\n<p><a href=\"https://unext-hd.co.jp/\" rel=\"nofollow\">株式会社U-NEXT HOLDINGS（USEN＆U-NEXT GROUP）</a><br></p>\n<p>本イベントは、会場スポンサーとして株式会社U-NEXT HOLDINGS様にご協力いただき開催しております。<br>\nU-NEXT HOLDINGS様の開発組織・採用についてご興味のある方は以下ページをぜひご覧ください！<br>\n<br></p>\n<ul>\n<li><a href=\"https://recruit.unext-hd.co.jp/\" rel=\"nofollow\">グループ採用サイト</a><br></li>\n<li><a href=\"https://hrmos.co/pages/u-nextholdings/jobs?jobType=FULL&amp;category=1600764878347055107\" rel=\"nofollow\">エンジニア求人一覧</a></li>\n</ul>\n<h1>📣<strong>主催・運営</strong></h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/\" rel=\"nofollow\">生成AI活用のボトルネックを可視化し、開発組織の変革を実現するAIツール「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a> <br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
+      "url": "https://findy-aiplus.connpass.com/event/400638/",
+      "image_url": "https://media.connpass.com/thumbs/90/f2/90f2917cfeb619a637d5fcb4ec48a13b.png",
+      "hash_tag": "AIkenshouMeetup",
+      "started_at": "2026-07-30T19:00:00+09:00",
+      "ended_at": "2026-07-30T20:30:00+09:00",
+      "published_at": "2026-07-15T19:11:17+09:00",
+      "limit": 52,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 17529,
+        "subdomain": "findy-aiplus",
+        "title": "Findy AI+",
+        "url": "https://findy-aiplus.connpass.com/"
+      },
+      "address": "〒141-0021 東京都品川区上大崎3丁目1−1",
+      "place": "株式会社U-NEXT HOLDINGS",
+      "lat": "35.632965000000",
+      "lon": "139.716635700000",
+      "owner_id": 986836,
+      "owner_nickname": "sugamotota",
+      "owner_display_name": "t.sugamoto",
+      "accepted": 22,
+      "waiting": 0,
+      "updated_at": "2026-07-30T16:02:06+09:00"
+    },
+    {
       "id": 401810,
       "title": "【第6回】【初心者/中級者歓迎】Claude Codeもくもく会 @渋谷",
       "catch": "",
@@ -378,7 +378,7 @@
       "published_at": "2026-07-26T19:47:11+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17553,
         "subdomain": "mokumoku-infra-ai",
@@ -392,7 +392,7 @@
       "owner_id": 1009800,
       "owner_nickname": "bonsmith_ceo",
       "owner_display_name": "ろとさん",
-      "accepted": 6,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-07-26T19:47:11+09:00"
     },
@@ -409,7 +409,7 @@
       "published_at": "2026-07-03T14:56:56+09:00",
       "limit": 185,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1690,
         "subdomain": "preferred-networks",
@@ -425,7 +425,7 @@
       "owner_display_name": "PreferredNetworks",
       "accepted": 138,
       "waiting": 0,
-      "updated_at": "2026-07-30T18:26:06+09:00"
+      "updated_at": "2026-07-30T19:25:01+09:00"
     },
     {
       "id": 391072,
@@ -440,7 +440,7 @@
       "published_at": "2026-04-16T18:44:10+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13050,
         "subdomain": "akamai-meetup",
@@ -454,7 +454,7 @@
       "owner_id": 932011,
       "owner_nickname": "aogawa55",
       "owner_display_name": "Ai Ogawa",
-      "accepted": 45,
+      "accepted": 44,
       "waiting": 0,
       "updated_at": "2026-07-08T09:20:31+09:00"
     },
@@ -471,7 +471,7 @@
       "published_at": "2026-07-29T10:35:32+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "1-16-2 Kaigan, Minato City, Tokyo 105-8576",
       "place": "InterContinental Tokyo Bay",
