@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-02T06:46:20.228439+09:00",
+  "fetched_at": "2026-08-02T07:46:06.089306+09:00",
   "date": "20260802",
-  "count": 10,
+  "count": 11,
   "events": [
     {
       "id": 401743,
@@ -283,35 +283,66 @@
       "updated_at": "2026-07-29T16:48:41+09:00"
     },
     {
-      "id": 396489,
-      "title": "AI駆動開発ゆるもく会@横浜",
-      "catch": "",
-      "description": "<h1>概要</h1>\n<p>AIを活用しながら個人開発を進めるエンジニア向けの、ゆるいもくもく作業会です。\nCursor / Claude Code / GitHub Copilot / ChatGPT / Gemini / Devin など、AI開発ツールを使っている方、これから試してみたい方、個人開発を進めたい方が集まって、それぞれ作業したり、詰まっていることを相談したり、便利だった使い方を共有したりする場です。</p>\n<h2>こんな人におすすめ</h2>\n<ul>\n<li>AIを使って個人開発を進めているエンジニア</li>\n<li>AI駆動開発に興味がある人</li>\n<li>作業時間を確保したい人</li>\n<li>他のエンジニアとゆるく交流したい人</li>\n</ul>\n<h2>当日やること</h2>\n<p>基本的には各自でもくもく作業します。</p>\n<p>作業内容は自由です。</p>\n<p>最後に、希望者ベースで軽く今日やったことを共有します。\n発表は必須ではありません。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>10:00 - 10:10</td>\n<td>受付</td>\n</tr>\n<tr>\n<td>10:10 - 10:20</td>\n<td>趣旨説明・自己紹介・今日やること共有</td>\n</tr>\n<tr>\n<td>10:20 - 11:40</td>\n<td>もくもく作業</td>\n</tr>\n<tr>\n<td>11:40 - 11:55</td>\n<td>今日やったことの共有・相談</td>\n</tr>\n<tr>\n<td>11:55 - 12:00</td>\n<td>クロージング</td>\n</tr>\n</tbody>\n</table>\n<p>※ 途中参加・途中退出OKです。</p>\n<h1>Discordについて</h1>\n<p>当日の連絡、作業中の軽い相談、便利だったAI開発ツールの使い方共有などはDiscordで行います。\n参加される方は、事前に以下のDiscordサーバーへの参加をお願いします。</p>\n<p><a href=\"https://discord.gg/RFHuX6szk\" rel=\"nofollow\">https://discord.gg/RFHuX6szk</a></p>\n<h2>参加にあたって</h2>\n<p>初参加歓迎です。</p>\n<p>AI駆動開発に詳しくなくても問題ありません。\nすでにAIツールを使い込んでいる方はもちろん、これから試してみたい方、個人開発を始めたい方も歓迎です。\n「まだ作りたいものが固まっていない」\n「何を相談すればいいかわからない」\n「とりあえず雰囲気を見たい」\nという方も気軽に参加してください。</p>\n<h2>注意事項</h2>\n<ul>\n<li>営業・採用・勧誘のみを目的とした参加はご遠慮ください。</li>\n<li>他の参加者が安心して作業・相談できるよう、過度な宣伝や一方的な勧誘はお控えください。</li>\n<li>会場や参加者への迷惑行為があった場合、退出をお願いすることがあります。</li>\n<li>イベント内容は変更になる場合があります。</li>\n</ul>\n<h2>主催者より</h2>\n<p>堅い勉強会ではなく、ゆるく作業しながら少し交流できる場にしたいです。\nAI駆動開発に興味がある方は、ぜひお気軽にご参加ください。</p>",
-      "url": "https://solo-dev-guild.connpass.com/event/396489/",
-      "image_url": "https://media.connpass.com/thumbs/60/d1/60d130c4a5e71cab3ea4aaab345ef3ab.png",
+      "id": 396514,
+      "title": "ストレッチ・瞑想つきの長時間集中もくもくDAY in 流山",
+      "catch": "途中参加・途中退出OK",
+      "description": "<h1>身体を整えながら集中する「もくもく会」</h1>\n<blockquote>\n<p>「長時間勉強したいけど、途中で集中が切れる」<br>\n「家だとダラけてしまう」<br>\n「もくもく会に興味はあるけど、ただ座るだけだと疲れる」</p>\n</blockquote>\n<p>そんな方向けに、</p>\n<p>\"身体を整えながら集中する\" をテーマにした、少人数のもくもく会を開催します！</p>\n<p>今回は普通のもくもく会とは少し違い、</p>\n<ul>\n<li>45分集中</li>\n<li>15分休憩</li>\n<li>軽いストレッチ・オフィスヨガ・瞑想</li>\n</ul>\n<p>を組み合わせながら、1日かけてじっくり作業します。</p>\n<p>勉強・読書・資格学習・PC作業など、内容は自由です◎</p>\n<hr>\n<h1>「集中が続く」もくもく会 タイムテーブル</h1>\n<h2>10:00 - 10:15｜集合・準備・今日やること共有</h2>\n<ul>\n<li>自己紹介</li>\n<li>今日やること共有</li>\n</ul>\n<hr>\n<h2>10:15 - 11:00｜1コマ目 もくもくタイム</h2>\n<h2>11:00 - 11:15｜休憩</h2>\n<hr>\n<h2>11:15 - 12:00｜2コマ目 もくもくタイム</h2>\n<h2>12:00 - 12:15｜休憩</h2>\n<hr>\n<h2>12:15 - 13:00｜3コマ目 もくもくタイム</h2>\n<hr>\n<h2>13:00 - 14:00｜昼休憩</h2>\n<hr>\n<h2>14:00 - 14:45｜4コマ目 もくもくタイム</h2>\n<h2>14:45 - 15:00｜休憩</h2>\n<hr>\n<h2>15:00 - 15:45｜5コマ目 もくもくタイム</h2>\n<h2>15:45 - 16:00｜休憩</h2>\n<hr>\n<h2>16:00 - 16:30｜6コマ目 もくもくタイム</h2>\n<hr>\n<h2>16:30 - 16:45｜クロージング</h2>\n<ul>\n<li>今日やれたこと共有</li>\n<li>感想共有</li>\n</ul>\n<hr>\n<h2>補足</h2>\n<ul>\n<li>途中参加・途中退出OK</li>\n<li>作業内容は自由（勉強・読書・PC作業など）</li>\n<li>基本は静かな作業環境を想定しています</li>\n<li>作業中は、もくもくと集中して過ごしましょう</li>\n</ul>\n<hr>\n<h2>補足</h2>\n<ul>\n<li>途中参加・途中退出OK</li>\n<li>作業内容は自由（勉強・読書・PC作業など）</li>\n<li>作業中は、もくもくと集中して過ごしましょう</li>\n</ul>\n<hr>\n<h2>ご留意事項</h2>\n<ul>\n<li>ストレッチ・瞑想・ヨガは、いずれも主催者が趣味として取り入れている内容です。医療・治療行為を目的としたものではありません。</li>\n<li>会場はパーテーションで区切られた会議室となります。\n　隣室で別イベントが開催されている場合がありますが、通常の会議室利用の範囲を想定しています。</li>\n<li>参加者同士が気持ちよく過ごせる場にしたいため、営業・勧誘・迷惑行為・会の趣旨にそぐわない行為はご遠慮ください。</li>\n<li>上記に該当すると判断した場合、ご退場をお願いすることがあります（返金不可）。</li>\n<li>他プラットフォームでも募集しているため、満席になり次第締め切ります。</li>\n</ul>",
+      "url": "https://mindfull-mokumoku.connpass.com/event/396514/",
+      "image_url": "https://media.connpass.com/thumbs/ae/5c/ae5c649dfbf3a58d5c2901167c0ca1c9.png",
       "hash_tag": "",
       "started_at": "2026-08-02T10:00:00+09:00",
-      "ended_at": "2026-08-02T12:00:00+09:00",
-      "published_at": "2026-06-06T10:59:45+09:00",
-      "limit": 6,
+      "ended_at": "2026-08-02T17:00:00+09:00",
+      "published_at": "2026-06-06T13:32:02+09:00",
+      "limit": 7,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
-        "id": 17495,
-        "subdomain": "solo-dev-guild",
-        "title": "個人開発ギルド",
-        "url": "https://solo-dev-guild.connpass.com/"
+        "id": 17751,
+        "subdomain": "mindfull-mokumoku",
+        "title": "MyFull もくもく会",
+        "url": "https://mindfull-mokumoku.connpass.com/"
       },
-      "address": "神奈川県横浜市西区高島2丁目11−2 スカイメナ横浜308号室",
-      "place": "Brenz横浜",
-      "lat": "35.462873000000",
-      "lon": "139.621979600000",
-      "owner_id": 879671,
-      "owner_nickname": "sakana1113",
-      "owner_display_name": "masa",
-      "accepted": 4,
+      "address": "千葉県流山市おおたかの森北１丁目２−１",
+      "place": "スターツおおたかの森ホール 会議室",
+      "lat": "35.872824000000",
+      "lon": "139.924998800000",
+      "owner_id": 1006799,
+      "owner_nickname": "sidetailmegane",
+      "owner_display_name": "Yuto",
+      "accepted": 0,
       "waiting": 0,
-      "updated_at": "2026-07-30T07:28:23+09:00"
+      "updated_at": "2026-06-06T13:32:02+09:00"
+    },
+    {
+      "id": 398073,
+      "title": "2026/08/02(日) CoderDojo 柏@HAL創造思考塾",
+      "catch": "会場開催です",
+      "description": "<p>CoderDojo Kashiwa(柏) を開催します。<br></p>\n<p>■受付について<br>\n以前から参加している人は、【参加したことがある人】を選んでください。<br>\nまた、CoderDojo Kashowa(柏)ではなく、近隣の 柏の葉、南柏、沼南 に来た事がある人も【参加したことがある人】を選んでください。<br>\n今までにCoderDojo Kashowa(柏)や近隣の 柏の葉、南柏、沼南にも来たことが無い人、または、Scratch を使ったことが無い人は、【初めて参加する人】を選んでください。<br>\n<br>\n■年齢について<br>\n7〜17歳を対象としています。<br>\n見学という事でしたら、それ以外の年齢の方も受け付けています。<br>\n事前に見学である事をお知らせいただけますと助かります。<br></p>\n<p>■当日について<br>\n【時間】10:00～ 11:30 時間に遅れないようにお願いします。<br>\n【場所】HAL創造思考塾(千葉県柏市柏3-8-10 AKビル 2階 柏郵便局本局の向かい)<br>\n【最寄り駅】JR柏駅 東口<br></p>\n<p>HAL創造思考塾 の紹介<br>\n<a href=\"https://halcreation.jp/</br>\" rel=\"nofollow\">https://halcreation.jp/<br></a>\n<br>\n会場へのお問い合わせは、ご遠慮ください。<br>\n当日の欠席や遅刻の連絡も会場ではなく、「イベントへのお問い合わせ」にてお願いいたします。\n<br>\n<br>パソコンを持参できる方は会場に持ってきてください。<br>\nパソコンの貸し出しを希望される方は、「イベントへのお問い合わせ」からお知らせください。3台と限りがありますが、お貸しできます\n<br>\n<br>\nそれ以外にご不明な点等ございましたら、お問い合わせください。\n<br><br>\nそれでは当日お会いできることを楽しみにしています。<br>\n子どものためのプログラミング道場<br>\nCoderDojo Kashiwa <br>\n<br>\nCoderDojo については、以下の CoderDojo Japan のサイトを参考ください<br>\n<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">https://coderdojo.jp/</a></p>",
+      "url": "https://kashiwa.connpass.com/event/398073/",
+      "image_url": null,
+      "hash_tag": "",
+      "started_at": "2026-08-02T10:00:00+09:00",
+      "ended_at": "2026-08-02T11:30:00+09:00",
+      "published_at": "2026-07-05T12:01:12+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 15707,
+        "subdomain": "kashiwa",
+        "title": "CoderDojo柏",
+        "url": "https://kashiwa.connpass.com/"
+      },
+      "address": "千葉県柏市柏3-8-10 AKビル 2階",
+      "place": "HAL創造思考塾",
+      "lat": "35.860316200000",
+      "lon": "139.976604100000",
+      "owner_id": 116459,
+      "owner_nickname": "KenIcs",
+      "owner_display_name": "坂田 健一(CoderDojo 柏)",
+      "accepted": 1,
+      "waiting": 0,
+      "updated_at": "2026-07-05T12:01:12+09:00"
     }
   ]
 }
