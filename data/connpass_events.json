@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-02T05:08:57.844098+09:00",
+  "fetched_at": "2026-08-02T06:46:20.228439+09:00",
   "date": "20260802",
   "count": 10,
   "events": [
@@ -123,7 +123,7 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 9,
+      "accepted": 10,
       "waiting": 0,
       "updated_at": "2026-08-01T19:14:58+09:00"
     },
@@ -154,7 +154,7 @@
       "owner_id": 901861,
       "owner_nickname": "tenhou-Ravenclaw",
       "owner_display_name": "tenhou-Ravenclaw",
-      "accepted": 319,
+      "accepted": 320,
       "waiting": 0,
       "updated_at": "2026-08-01T10:36:09+09:00"
     },
@@ -283,35 +283,35 @@
       "updated_at": "2026-07-29T16:48:41+09:00"
     },
     {
-      "id": 398025,
-      "title": "川口でもくもく会(初心者歓迎)",
+      "id": 396489,
+      "title": "AI駆動開発ゆるもく会@横浜",
       "catch": "",
-      "description": "<h1>概要</h1>\n<p>ITに興味のある方が集まり、それぞれ自由に作業や勉強を進める「もくもく会」です。\n集中して作業したい方も、たまには誰かと同じ空間で頑張りたい方も、お気軽にご参加ください。</p>\n<p>プログラミング、資格勉強、個人開発、生成AIの活用、読書など、取り組む内容は自由です。</p>\n<p>初心者・学生の方も大歓迎！\n今回は<b style=\"color:red; font-size: 18px;\">川口</b>でもくもく会を開催します！</p>\n<h1>こんな方におすすめ</h1>\n<p>✅一人だと集中できないので、誰かと一緒にもくもくしたい</p>\n<p>✅勉強や副業を進める時間を確保したい</p>\n<p>✅ 川口近辺でエンジニア仲間を作りたい</p>\n<p>✅プログラミングや生成AIに関心があり、情報交換がしたい</p>\n<p>職種や経験は問いません。 興味がある方ならどなたでも大歓迎です！</p>\n<h1>タイムスケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:45頃</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00〜13:15</td>\n<td style=\"text-align: left;\">自己紹介・今日やることの共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:15〜14:45</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45〜15:15</td>\n<td style=\"text-align: left;\">LTタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:15〜16:45</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:45〜16:55</td>\n<td style=\"text-align: left;\">今日やったことの共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00</td>\n<td style=\"text-align: left;\">完全撤収</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>LTは希望者がいれば行います。もくもく会の中休みも兼ねてゆるゆる行いますので、どんな話題でもOKです！</li>\n<li>LTが長引いた場合はその分後半のもくもくタイムを減らします。</li>\n<li>途中参加・途中退室OK！</li>\n<li>飲食・会話OK！（周囲の迷惑にならない程度で）</li>\n</ul>\n<h1>会場</h1>\n<p>スペース: みらいスペース川口 - 貸し会議室</p>\n<p>URL: <a href=\"https://www.instabase.jp/space/7951609668\" rel=\"nofollow\">https://www.instabase.jp/space/7951609668</a></p>\n<p>■当スペースの地図と建物外観（下記URLよりご確認下さい）</p>\n<p><a href=\"https://drive.google.com/file/d/15lI7fBtMgTXYgLsLXtzeXta9nT0zN1bp/view\" rel=\"nofollow\">https://drive.google.com/file/d/15lI7fBtMgTXYgLsLXtzeXta9nT0zN1bp/view</a></p>\n<p>306号室です。</p>\n<h1>参加費</h1>\n<p>400円を検討しています(現金 or PayPay)</p>\n<h1>おでかけテックについて</h1>\n<p>主催者：ほりい</p>\n<p>都内のイベントに行くのが大変…それなら北関東で楽しく学び・交流できる場を作ろう！ という思いから、「おでかけテック」を立ち上げました。</p>\n<p>気軽に参加できるLT会やもくもく会を開催し、技術交流はもちろん、ご当地グルメや季節のイベントも楽しめる場を作っていきます。</p>\n<p>【Discordあります】</p>\n<p>主にイベントの告知に使いますが、雑談や参加者みなさんのイベントの宣伝、技術的なお困りごとの相談などなど、自由に使っていただいてOKです！</p>\n<p><a href=\"https://discord.gg/qeMZADpDTC\" rel=\"nofollow\">https://discord.gg/qeMZADpDTC</a></p>\n<h1>注意事項</h1>\n<ul>\n<li>ネットワークビジネスや宗教などの勧誘行為は禁止とさせていただきます。</li>\n<li>参加者同士が安心して交流できるよう、迷惑行為はご遠慮ください。</li>\n</ul>\n<h1>二次会（あるかも？）</h1>\n<p>イベント終了後、希望者がいれば近くのお店で軽くご飯(ラーメン屋とか定食屋とか)に行こうと思っています！\n当日の雰囲気で決めますので、お時間がある方はぜひご一緒しましょう。</p>",
-      "url": "https://odekake-tech.connpass.com/event/398025/",
-      "image_url": "https://media.connpass.com/thumbs/6d/39/6d39139a083b59a4ac114b76aedb5c10.png",
-      "hash_tag": "おでかけテック",
-      "started_at": "2026-08-02T13:00:00+09:00",
-      "ended_at": "2026-08-02T17:00:00+09:00",
-      "published_at": "2026-06-20T20:02:20+09:00",
-      "limit": 10,
+      "description": "<h1>概要</h1>\n<p>AIを活用しながら個人開発を進めるエンジニア向けの、ゆるいもくもく作業会です。\nCursor / Claude Code / GitHub Copilot / ChatGPT / Gemini / Devin など、AI開発ツールを使っている方、これから試してみたい方、個人開発を進めたい方が集まって、それぞれ作業したり、詰まっていることを相談したり、便利だった使い方を共有したりする場です。</p>\n<h2>こんな人におすすめ</h2>\n<ul>\n<li>AIを使って個人開発を進めているエンジニア</li>\n<li>AI駆動開発に興味がある人</li>\n<li>作業時間を確保したい人</li>\n<li>他のエンジニアとゆるく交流したい人</li>\n</ul>\n<h2>当日やること</h2>\n<p>基本的には各自でもくもく作業します。</p>\n<p>作業内容は自由です。</p>\n<p>最後に、希望者ベースで軽く今日やったことを共有します。\n発表は必須ではありません。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>10:00 - 10:10</td>\n<td>受付</td>\n</tr>\n<tr>\n<td>10:10 - 10:20</td>\n<td>趣旨説明・自己紹介・今日やること共有</td>\n</tr>\n<tr>\n<td>10:20 - 11:40</td>\n<td>もくもく作業</td>\n</tr>\n<tr>\n<td>11:40 - 11:55</td>\n<td>今日やったことの共有・相談</td>\n</tr>\n<tr>\n<td>11:55 - 12:00</td>\n<td>クロージング</td>\n</tr>\n</tbody>\n</table>\n<p>※ 途中参加・途中退出OKです。</p>\n<h1>Discordについて</h1>\n<p>当日の連絡、作業中の軽い相談、便利だったAI開発ツールの使い方共有などはDiscordで行います。\n参加される方は、事前に以下のDiscordサーバーへの参加をお願いします。</p>\n<p><a href=\"https://discord.gg/RFHuX6szk\" rel=\"nofollow\">https://discord.gg/RFHuX6szk</a></p>\n<h2>参加にあたって</h2>\n<p>初参加歓迎です。</p>\n<p>AI駆動開発に詳しくなくても問題ありません。\nすでにAIツールを使い込んでいる方はもちろん、これから試してみたい方、個人開発を始めたい方も歓迎です。\n「まだ作りたいものが固まっていない」\n「何を相談すればいいかわからない」\n「とりあえず雰囲気を見たい」\nという方も気軽に参加してください。</p>\n<h2>注意事項</h2>\n<ul>\n<li>営業・採用・勧誘のみを目的とした参加はご遠慮ください。</li>\n<li>他の参加者が安心して作業・相談できるよう、過度な宣伝や一方的な勧誘はお控えください。</li>\n<li>会場や参加者への迷惑行為があった場合、退出をお願いすることがあります。</li>\n<li>イベント内容は変更になる場合があります。</li>\n</ul>\n<h2>主催者より</h2>\n<p>堅い勉強会ではなく、ゆるく作業しながら少し交流できる場にしたいです。\nAI駆動開発に興味がある方は、ぜひお気軽にご参加ください。</p>",
+      "url": "https://solo-dev-guild.connpass.com/event/396489/",
+      "image_url": "https://media.connpass.com/thumbs/60/d1/60d130c4a5e71cab3ea4aaab345ef3ab.png",
+      "hash_tag": "",
+      "started_at": "2026-08-02T10:00:00+09:00",
+      "ended_at": "2026-08-02T12:00:00+09:00",
+      "published_at": "2026-06-06T10:59:45+09:00",
+      "limit": 6,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
-        "id": 15952,
-        "subdomain": "odekake-tech",
-        "title": "おでかけテック",
-        "url": "https://odekake-tech.connpass.com/"
+        "id": 17495,
+        "subdomain": "solo-dev-guild",
+        "title": "個人開発ギルド",
+        "url": "https://solo-dev-guild.connpass.com/"
       },
-      "address": "埼玉県川口市栄町3-9-11",
-      "place": "みらいスペース川口",
-      "lat": "35.803302400000",
-      "lon": "139.719895600000",
-      "owner_id": 742138,
-      "owner_nickname": "momo3090",
-      "owner_display_name": "ほりい",
-      "accepted": 8,
+      "address": "神奈川県横浜市西区高島2丁目11−2 スカイメナ横浜308号室",
+      "place": "Brenz横浜",
+      "lat": "35.462873000000",
+      "lon": "139.621979600000",
+      "owner_id": 879671,
+      "owner_nickname": "sakana1113",
+      "owner_display_name": "masa",
+      "accepted": 4,
       "waiting": 0,
-      "updated_at": "2026-08-01T22:51:17+09:00"
+      "updated_at": "2026-07-30T07:28:23+09:00"
     }
   ]
 }
