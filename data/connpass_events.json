@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-03T05:11:06.165848+09:00",
+  "fetched_at": "2026-08-03T06:47:21.836763+09:00",
   "date": "20260803",
   "count": 6,
   "events": [
@@ -56,7 +56,7 @@
       "owner_id": 126669,
       "owner_nickname": "yuri_xxx8",
       "owner_display_name": "yuri",
-      "accepted": 103,
+      "accepted": 104,
       "waiting": 0,
       "updated_at": "2026-08-02T21:10:02+09:00"
     },
@@ -139,8 +139,8 @@
       "owner_id": 210366,
       "owner_nickname": "hayakawagomi",
       "owner_display_name": "hayakawagomi",
-      "accepted": 717,
-      "waiting": 7,
+      "accepted": 718,
+      "waiting": 9,
       "updated_at": "2026-08-01T08:46:01+09:00"
     },
     {
