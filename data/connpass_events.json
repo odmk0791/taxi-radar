@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-04T05:21:07.287030+09:00",
+  "fetched_at": "2026-08-04T07:00:08.495835+09:00",
   "date": "20260804",
   "count": 12,
   "events": [
@@ -273,37 +273,6 @@
       "updated_at": "2026-08-03T11:26:09+09:00"
     },
     {
-      "id": 399838,
-      "title": "DataOps Night 特別編～AI時代のデータエンジニアリング！Local LLM 活用法～",
-      "catch": "",
-      "description": "<h2>この勉強会について</h2>\n<p>株式会社ナウキャスト主催のDataOps Night は、運用も含めてデータを用いて価値を出すために奮闘するエンジニアを集めて知見を共有する勉強会です。</p>\n<p>\"garbage in garbage out\"という言葉があるように、データ品質が低くては、データ利活用は不可能です。KPIを管理するにしても、KPIの定義が部署ごとにズレていては意思決定には使えません。機械学習においても、「アルゴリズムの改善以上にデータ品質の向上が重要である」という見解(※)も出てきています。</p>\n<p>データ品質は、特定のツールを導入することで簡単に解決できるような問題ではなく、より広い視点からデータ品質を守り抜くための一貫した考え方、つまり「DataOps」が必要です。</p>\n<p>Local LLM の登場により、従来ではセキュリティやコストなどの課題でできなかったことも可能になってきてました。今回は「AI時代のデータエンジニアリング最前線」をテーマに、ナウキャストにおいて Local LLM を組み込んだパイプラインの事例、例えば効率的な名寄せや、大量データの構造化、等を紹介していきます。ぜひ奮ってご参加ください！</p>\n<p>※ <a href=\"https://www.youtube.com/watch?v=06-AZXmwHjo\" rel=\"nofollow\">A Chat with Andrew on MLOps: From Model-centric to Data-centric AI</a>\n<br>\n<br>\n<b>DataOps Night では登壇者を募集しています。ご興味ある方は以下からご連絡ください。</b></p>\n<p><a href=\"https://forms.gle/Yb5jVhQpxfzDihz39\" rel=\"nofollow\">DataOps Night 登壇申し込みフォーム</a></p>\n<p><br></p>\n<h2>日時・場所<br></h2>\n<p>日時：2026年8月4日（火）19:00〜21:30<br>\n場所：ハイブリッド開催<br>\n　オフライン会場：株式会社 ナウキャスト<br>\n　オンライン会場：YouTube Liveを想定しています<br></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">スケジュール</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:40</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング・登壇者自己紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">ナウキャストにおける Data AI Service 事業の紹介 <br> 株式会社ナウキャスト</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20</td>\n<td style=\"text-align: left;\">AI時代のデータエンジニアリング事例：Local LLMを用いた実践的な名寄せ <br>株式会社ナウキャスト</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45</td>\n<td style=\"text-align: left;\">パネルディスカッション・QA</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">懇親会（オフラインのみ）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">懇親会終了</td>\n</tr>\n</tbody>\n</table>\n<p><br></p>\n<h2>登壇者情報</h2>\n<p><img alt=\"\" src=\"https://lh3.googleusercontent.com/pw/AP1GczPhH9DTSwsBk4vR8kjGqyUeZ0s8CcsS5Ywi5DmMMjxKvZqQ9AludDJRx4U6Z8khEuNxlAQeo03-x0s55OlTw94bIBDS61_EcuYB3FfovIB54jRPA18=w200\">\n<br>\n<b>株式会社ナウキャスト セールス/BizDev　保田 駿介</b><br>\n明治大学卒業、学生時代にSler企業の立ち上げに参画し、主にエンタープライズ企業向けにSIサービスを提供。エンジニア、PM、プリセールスとして多数のプロジェクトの獲得からデリバリーまでの工程を経験。その後、SIer業務だけではなく、プロダクトや事業の立ち上げに関わっていきたいという思いからナウキャストに参画し、DataLincの事業立ち上げや、企業不動産の売買検知プロダクトのPdMを担当。<br></p>\n<p><img alt=\"\" src=\"https://lh3.googleusercontent.com/pw/AP1GczMLSGIxmv8kqZvIMCKEB4pt9UIIXYV91j_xUES5hmneDGKX2RJwmqzARnxb1boLxB_igvTvAD1ifNmhb5YfRbCr4iVqrWXVKwSsGv092AcRhCvJCsc=w200\">\n<br>\n<b>株式会社ナウキャスト データエンジニア 翁長 奨</b><br>\n高校卒業後、上京し俳優・ナレーション業を経験。その後一念発起でSIerにてクラウドエンジニアとして2年間勤務。AWS認定資格全冠を引っ提げ、さらなるドリームを掴むためナウキャストに入社し、マッピングアプリの開発・データ基盤の構築を担当。必要に迫られローカルLLMでコストダウンを図ったところ、なぜか社内でバズってしまい今に至る。<br></p>\n<p><img alt=\"\" src=\"https://lh3.googleusercontent.com/pw/AP1GczMtgEsfJF3jjCW4tNZyIG2H4C2JAN-z9tLQKKC6jaBFC-resglsx2WOg4uS1m3wokhJcZr2bTbXn4iWjD4qCzdw8V1-SDPuvzo3YYvp2pmQPdtDRto=w200\">\n<br>\n<b>株式会社ナウキャスト 取締役CTO  隅田敦　<a href=\"https://x.com/yummydum\" rel=\"nofollow\">@yummydum</a></b><br>\n東京大学経済学部、東京大学大学院情報理工学系研究科を修了した後、2021年にナウキャスト入社。統計学や機械学習を活用した様々な分析業務、そして分析の前提となるデータの信頼性を担保するデータエンジニアリングに取り組む。2024年から、不動産業界における業務効率化を支援するwebアプリケーション「DataLensHub」のリードエンジニアとして開発に取り組む。2026年7月より株式会社ナウキャストの取締役CTOに就任。<br></p>\n<h2>注意事項</h2>\n<p>・イベントの内容は予告なく変更になる可能性があります。<br>\n・イベントの様子は主催者の PR 目的でウェブサイトやソーシャルメディア等に掲載される可能性があります。<br>\n・人材紹介業、営業、ネットワークビジネス勧誘目的の参加はご遠慮ください。<br>\n・その他、主催者が不適切と判断した場合は、ご参加をお断りさせていただく場合がございます。<br>\n<br></p>\n<h2>個人情報の取り扱いについて</h2>\n<p>本イベントにて取得した皆様の個人情報の取扱いについては、以下をご確認ください。<br>\n<br>\n１．事業者の名称<br>\n　株式会社ナウキャスト<br>\n２．個人情報保護管理者の職名及び連絡先<br>\n　ナウキャスト情報管理リーダー<br>\n　連絡先：info@nowcast.co.jp<br>\n３．利用目的<br>\n　(1)本勉強会に関するご連絡<br>\n　(2)今後、弊社が主催する各種イベントに関するご案内<br>\n　(3)採用に関するご連絡<br>\n４．個人情報の第三者提供について<br>\n　法令等に基づく場合を除いて第三者へ個人情報を提供することはありません。<br>\n５．個人情報の共同利用について<br>\n　本イベントで取得した個人情報を以下に記載の範囲内で共同利用することがあります。<br>\n　(1)共同利用する個人情報の項目<br>\n　　社名、氏名、メールアドレス、その他本アンケートにおける回答内容<br>\n　(2)共同利用する者の範囲<br>\n　　株式会社ナウキャスト、株式会社Finatextホールディングス、株式会社Finatext、株式会社スマートプラス、株式会社スマートプラス少額短期保険、株式会社スマートプラスクレジット<br>\n　(3)利用目的<br>\n　　「３．利用目的」に記載のとおり<br>\n　(4)当該個人情報の管理責任者の氏名・名称<br>\n　　株式会社ナウキャスト<br>\n　　ナウキャスト情報管理リーダー<br>\n６．個人情報の委託について<br>\n　弊社では、「３．利用目的」に記載の利用目的の範囲内で委託する場合があります。<br>\n７．開示等の請求について<br>\n　当社が保有する保有個人データの利用目的の通知・開示・内容の訂正・追加または削除・利用の停止・消去及び第三者への提供の停止（「開示等」といいます。）に応じます。開示等の求めにつきましては、以下の窓口にて受け付けます。<br>\n　＜個人情報お問合せ窓口＞<br>\n　　株式会社ナウキャスト<br>\n　　連絡先：info@nowcast.co.jp<br>\n<br>\n<a href=\"https://hd.finatext.com/privacy/\" rel=\"nofollow\">株式会社Finatextホールディングス　プライバシーポリシー</a><br>\n<a href=\"https://nowcast.co.jp/privacy\" rel=\"nofollow\">株式会社ナウキャスト　プライバシーポリシー</a><br></p>",
-      "url": "https://finatext.connpass.com/event/399838/",
-      "image_url": "https://media.connpass.com/thumbs/50/34/5034abbe33ec59445781a564f8f80641.png",
-      "hash_tag": "dataopsnight",
-      "started_at": "2026-08-04T19:00:00+09:00",
-      "ended_at": "2026-08-04T21:30:00+09:00",
-      "published_at": "2026-07-07T18:36:52+09:00",
-      "limit": 250,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 10626,
-        "subdomain": "finatext",
-        "title": "Finatext Holdings Ltd.",
-        "url": "https://finatext.connpass.com/"
-      },
-      "address": "東京都千代田区九段北1丁目8番10号 (住友不動産九段ビル 9階)",
-      "place": "株式会社ナウキャスト",
-      "lat": "35.697650400000",
-      "lon": "139.751691000000",
-      "owner_id": 857525,
-      "owner_nickname": "now_yamanaka",
-      "owner_display_name": "now_yamanaka",
-      "accepted": 125,
-      "waiting": 0,
-      "updated_at": "2026-08-03T14:50:54+09:00"
-    },
-    {
       "id": 400194,
       "title": "【オンライン増枠】実践者に学ぶFDEへのキャリア",
       "catch": "～元Palantir FDEに聞く、その実態とスキルセット～　X Career Meetup",
@@ -333,6 +302,37 @@
       "accepted": 125,
       "waiting": 5,
       "updated_at": "2026-07-27T12:46:20+09:00"
+    },
+    {
+      "id": 399838,
+      "title": "DataOps Night 特別編～AI時代のデータエンジニアリング！Local LLM 活用法～",
+      "catch": "",
+      "description": "<h2>この勉強会について</h2>\n<p>株式会社ナウキャスト主催のDataOps Night は、運用も含めてデータを用いて価値を出すために奮闘するエンジニアを集めて知見を共有する勉強会です。</p>\n<p>\"garbage in garbage out\"という言葉があるように、データ品質が低くては、データ利活用は不可能です。KPIを管理するにしても、KPIの定義が部署ごとにズレていては意思決定には使えません。機械学習においても、「アルゴリズムの改善以上にデータ品質の向上が重要である」という見解(※)も出てきています。</p>\n<p>データ品質は、特定のツールを導入することで簡単に解決できるような問題ではなく、より広い視点からデータ品質を守り抜くための一貫した考え方、つまり「DataOps」が必要です。</p>\n<p>Local LLM の登場により、従来ではセキュリティやコストなどの課題でできなかったことも可能になってきてました。今回は「AI時代のデータエンジニアリング最前線」をテーマに、ナウキャストにおいて Local LLM を組み込んだパイプラインの事例、例えば効率的な名寄せや、大量データの構造化、等を紹介していきます。ぜひ奮ってご参加ください！</p>\n<p>※ <a href=\"https://www.youtube.com/watch?v=06-AZXmwHjo\" rel=\"nofollow\">A Chat with Andrew on MLOps: From Model-centric to Data-centric AI</a>\n<br>\n<br>\n<b>DataOps Night では登壇者を募集しています。ご興味ある方は以下からご連絡ください。</b></p>\n<p><a href=\"https://forms.gle/Yb5jVhQpxfzDihz39\" rel=\"nofollow\">DataOps Night 登壇申し込みフォーム</a></p>\n<p><br></p>\n<h2>日時・場所<br></h2>\n<p>日時：2026年8月4日（火）19:00〜21:30<br>\n場所：ハイブリッド開催<br>\n　オフライン会場：株式会社 ナウキャスト<br>\n　オンライン会場：YouTube Liveを想定しています<br></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">スケジュール</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:40</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング・登壇者自己紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">ナウキャストにおける Data AI Service 事業の紹介 <br> 株式会社ナウキャスト</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20</td>\n<td style=\"text-align: left;\">AI時代のデータエンジニアリング事例：Local LLMを用いた実践的な名寄せ <br>株式会社ナウキャスト</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45</td>\n<td style=\"text-align: left;\">パネルディスカッション・QA</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">懇親会（オフラインのみ）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">懇親会終了</td>\n</tr>\n</tbody>\n</table>\n<p><br></p>\n<h2>登壇者情報</h2>\n<p><img alt=\"\" src=\"https://lh3.googleusercontent.com/pw/AP1GczPhH9DTSwsBk4vR8kjGqyUeZ0s8CcsS5Ywi5DmMMjxKvZqQ9AludDJRx4U6Z8khEuNxlAQeo03-x0s55OlTw94bIBDS61_EcuYB3FfovIB54jRPA18=w200\">\n<br>\n<b>株式会社ナウキャスト セールス/BizDev　保田 駿介</b><br>\n明治大学卒業、学生時代にSler企業の立ち上げに参画し、主にエンタープライズ企業向けにSIサービスを提供。エンジニア、PM、プリセールスとして多数のプロジェクトの獲得からデリバリーまでの工程を経験。その後、SIer業務だけではなく、プロダクトや事業の立ち上げに関わっていきたいという思いからナウキャストに参画し、DataLincの事業立ち上げや、企業不動産の売買検知プロダクトのPdMを担当。<br></p>\n<p><img alt=\"\" src=\"https://lh3.googleusercontent.com/pw/AP1GczMLSGIxmv8kqZvIMCKEB4pt9UIIXYV91j_xUES5hmneDGKX2RJwmqzARnxb1boLxB_igvTvAD1ifNmhb5YfRbCr4iVqrWXVKwSsGv092AcRhCvJCsc=w200\">\n<br>\n<b>株式会社ナウキャスト データエンジニア 翁長 奨</b><br>\n高校卒業後、上京し俳優・ナレーション業を経験。その後一念発起でSIerにてクラウドエンジニアとして2年間勤務。AWS認定資格全冠を引っ提げ、さらなるドリームを掴むためナウキャストに入社し、マッピングアプリの開発・データ基盤の構築を担当。必要に迫られローカルLLMでコストダウンを図ったところ、なぜか社内でバズってしまい今に至る。<br></p>\n<p><img alt=\"\" src=\"https://lh3.googleusercontent.com/pw/AP1GczMtgEsfJF3jjCW4tNZyIG2H4C2JAN-z9tLQKKC6jaBFC-resglsx2WOg4uS1m3wokhJcZr2bTbXn4iWjD4qCzdw8V1-SDPuvzo3YYvp2pmQPdtDRto=w200\">\n<br>\n<b>株式会社ナウキャスト 取締役CTO  隅田敦　<a href=\"https://x.com/yummydum\" rel=\"nofollow\">@yummydum</a></b><br>\n東京大学経済学部、東京大学大学院情報理工学系研究科を修了した後、2021年にナウキャスト入社。統計学や機械学習を活用した様々な分析業務、そして分析の前提となるデータの信頼性を担保するデータエンジニアリングに取り組む。2024年から、不動産業界における業務効率化を支援するwebアプリケーション「DataLensHub」のリードエンジニアとして開発に取り組む。2026年7月より株式会社ナウキャストの取締役CTOに就任。<br></p>\n<h2>注意事項</h2>\n<p>・イベントの内容は予告なく変更になる可能性があります。<br>\n・イベントの様子は主催者の PR 目的でウェブサイトやソーシャルメディア等に掲載される可能性があります。<br>\n・人材紹介業、営業、ネットワークビジネス勧誘目的の参加はご遠慮ください。<br>\n・その他、主催者が不適切と判断した場合は、ご参加をお断りさせていただく場合がございます。<br>\n<br></p>\n<h2>個人情報の取り扱いについて</h2>\n<p>本イベントにて取得した皆様の個人情報の取扱いについては、以下をご確認ください。<br>\n<br>\n１．事業者の名称<br>\n　株式会社ナウキャスト<br>\n２．個人情報保護管理者の職名及び連絡先<br>\n　ナウキャスト情報管理リーダー<br>\n　連絡先：info@nowcast.co.jp<br>\n３．利用目的<br>\n　(1)本勉強会に関するご連絡<br>\n　(2)今後、弊社が主催する各種イベントに関するご案内<br>\n　(3)採用に関するご連絡<br>\n４．個人情報の第三者提供について<br>\n　法令等に基づく場合を除いて第三者へ個人情報を提供することはありません。<br>\n５．個人情報の共同利用について<br>\n　本イベントで取得した個人情報を以下に記載の範囲内で共同利用することがあります。<br>\n　(1)共同利用する個人情報の項目<br>\n　　社名、氏名、メールアドレス、その他本アンケートにおける回答内容<br>\n　(2)共同利用する者の範囲<br>\n　　株式会社ナウキャスト、株式会社Finatextホールディングス、株式会社Finatext、株式会社スマートプラス、株式会社スマートプラス少額短期保険、株式会社スマートプラスクレジット<br>\n　(3)利用目的<br>\n　　「３．利用目的」に記載のとおり<br>\n　(4)当該個人情報の管理責任者の氏名・名称<br>\n　　株式会社ナウキャスト<br>\n　　ナウキャスト情報管理リーダー<br>\n６．個人情報の委託について<br>\n　弊社では、「３．利用目的」に記載の利用目的の範囲内で委託する場合があります。<br>\n７．開示等の請求について<br>\n　当社が保有する保有個人データの利用目的の通知・開示・内容の訂正・追加または削除・利用の停止・消去及び第三者への提供の停止（「開示等」といいます。）に応じます。開示等の求めにつきましては、以下の窓口にて受け付けます。<br>\n　＜個人情報お問合せ窓口＞<br>\n　　株式会社ナウキャスト<br>\n　　連絡先：info@nowcast.co.jp<br>\n<br>\n<a href=\"https://hd.finatext.com/privacy/\" rel=\"nofollow\">株式会社Finatextホールディングス　プライバシーポリシー</a><br>\n<a href=\"https://nowcast.co.jp/privacy\" rel=\"nofollow\">株式会社ナウキャスト　プライバシーポリシー</a><br></p>",
+      "url": "https://finatext.connpass.com/event/399838/",
+      "image_url": "https://media.connpass.com/thumbs/50/34/5034abbe33ec59445781a564f8f80641.png",
+      "hash_tag": "dataopsnight",
+      "started_at": "2026-08-04T19:00:00+09:00",
+      "ended_at": "2026-08-04T21:30:00+09:00",
+      "published_at": "2026-07-07T18:36:52+09:00",
+      "limit": 250,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 10626,
+        "subdomain": "finatext",
+        "title": "Finatext Holdings Ltd.",
+        "url": "https://finatext.connpass.com/"
+      },
+      "address": "東京都千代田区九段北1丁目8番10号 (住友不動産九段ビル 9階)",
+      "place": "株式会社ナウキャスト",
+      "lat": "35.697650400000",
+      "lon": "139.751691000000",
+      "owner_id": 857525,
+      "owner_nickname": "now_yamanaka",
+      "owner_display_name": "now_yamanaka",
+      "accepted": 125,
+      "waiting": 0,
+      "updated_at": "2026-08-03T14:50:54+09:00"
     },
     {
       "id": 401302,
