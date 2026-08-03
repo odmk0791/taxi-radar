@@ -768,14 +768,26 @@ function renderRadar(){
     dtBadge.style.borderColor=(DAY_TYPE_COLOR[todayType]||'var(--bd)')+'66';
     dtBadge.style.background=(DAY_TYPE_COLOR[todayType]||'var(--bd)')+'18';
   }
+  var nowTotalMins=(now.getHours()+off)*60+now.getMinutes();
   for(var i=0;i<D.length;i++){
     var r=D[i];
     if(r.dayType!==todayType)continue;
-    var df=Math.abs(r.hour-tgt);
-    if(df>12)df=24-df;
     var weight=0;
-    if(df===0)weight=1.0;
-    else if(df===1&&isNight)weight=1.0;
+    if(!isNight){
+      var df=Math.abs(r.hour-tgt);
+      if(df>12)df=24-df;
+      if(df===0)weight=1.0;
+    } else {
+      // 夜間（22〜8時）は時間バケツではなく分単位で前後30分のみを対象にする
+      var qualCount=0;
+      (r.mins||[]).forEach(function(m){
+        var tm=r.hour*60+m;
+        var diff=Math.abs(tm-nowTotalMins);
+        if(diff>720)diff=Math.abs(1440-diff);
+        if(diff<=30)qualCount++;
+      });
+      if(r.count>0)weight=qualCount/r.count;
+    }
     if(weight===0)continue;
     if(km(uLat,uLng,r.lat,r.lng)>R)continue;
     var cnt=matchFilter(r)*weight;
@@ -793,7 +805,6 @@ function renderRadar(){
     .filter(function(a){return EXCL.indexOf(a.w+a.n)<0;})
     .sort(function(a,b){return b.c-a.c;}).slice(0,20);
   // ±5分チェック
-  var nowTotalMins=(now.getHours()+off)*60+now.getMinutes();
   spots.forEach(function(s){
     s.hotDiff=null;s.hotTime=null;
     (s.mins||[]).forEach(function(tm){
