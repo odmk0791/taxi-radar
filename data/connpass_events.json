@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-05T07:54:46.817549+09:00",
+  "fetched_at": "2026-08-05T08:57:01.817513+09:00",
   "date": "20260805",
   "count": 9,
   "events": [
@@ -66,37 +66,6 @@
       "updated_at": "2026-08-04T15:44:37+09:00"
     },
     {
-      "id": 396976,
-      "title": "Cloud Security Night #4",
-      "catch": "",
-      "description": "<h1><strong>Cloud Security Night</strong></h1>\n<p>KINTOテクノロジーズ株式会社が主催する「Cloud Security Night #4」を 1 年ぶりに開催します！！</p>\n<h2>🎉 イベント概要</h2>\n<p>クラウドセキュリティの最新トレンドやベストプラクティスについて学ぶ絶好の機会です。AWS、Google Cloud、Azureなどのマルチクラウド環境におけるクラウドセキュリティに関する話題を中心に、各社の取組を通じて、クラウドセキュリティの知識を深めましょう。<br>\nイベント後に、同会場にて懇親会を開催します。参加者同士のネットワーキングの場として、是非、ご参加ください！！</p>\n<h2>🔐 目的</h2>\n<p>クラウドセキュリティに関する最新の知識を共有し、参加者が実務に活かせる具体的な対策やベストプラクティスを学ぶことです。特に、マルチクラウド環境におけるセキュリティの課題とその解決策について深く掘り下げます。</p>\n<h2>✅こんな人におすすめ</h2>\n<ul>\n<li>クラウドセキュリティに関心があるエンジニアやITプロフェッショナル</li>\n<li>AWS、Google Cloud、Azureなどのクラウドサービスを利用している方</li>\n<li>マルチクラウド環境でのセキュリティ対策を学びたい方</li>\n<li>最新のクラウドセキュリティトレンドを知りたい</li>\n</ul>\n<h1><strong>🕑タイムテーブル</strong></h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30-19:00</td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\">－</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:20</td>\n<td style=\"text-align: left;\">ボトムアップ文化が強い組織でセキュリティをどう根付かせていくかの現在進行形の話</td>\n<td style=\"text-align: left;\">株式会社エス・エム・エス  山口　隆史さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:35</td>\n<td style=\"text-align: left;\">クラウド環境やシステムのリスク評価 - 脅威モデリングと机上評価、社内でのPTなどなど</td>\n<td style=\"text-align: left;\">株式会社ワンキャリア　齋藤　徳秀 (Azara) さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:50</td>\n<td style=\"text-align: left;\">アラート疲弊からの脱却へーSOC業務における AI エージェント活用の実践</td>\n<td style=\"text-align: left;\">KINTOテクノロジーズ  大高　一輝さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:00</td>\n<td style=\"text-align: left;\">クロージング＆休憩</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">会場内で懇親会を開催します</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">完全撤退</td>\n<td style=\"text-align: left;\">－</td>\n</tr>\n</tbody>\n</table>\n<h1><strong>💮 登壇者紹介</strong></h1>\n<h3>山口　隆史（株式会社エス・エム・エス）</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/76a5433c4329436f83f873bdf08fca52/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-07-03%2018.49.51.png\" width=\"100\"><br></p>\n<blockquote>\n<p>株式会社エス・エム・エス<br>\nシステム推進本部　技術推進グループ 所属。<br>\n2021 APN AWS Top Top Engineers<br>\nAWS Community Builder（Security &amp; Identity）<br>\n株式会社エス・エム・エス所属。フリーランスを含めて複数社を経て、2024年5月から現職。<br>\n自称Security Hub芸人。JAWSUG千葉支部BuilderCards公式審判員。現在は全社SREチームのリーダーとして複数のプロダクトにDevSecOpsを広めるべく活動中。<br>\n現在は主にクラウドを対象とした診断や社内CSPMの開発を担当。<br></p>\n</blockquote>\n<h3>齋藤　徳秀 (Azara)（株式会社ワンキャリア）</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/8f0ac761e1574f37ba81dab015e7a243/azara.png\" width=\"100\"><br></p>\n<blockquote>\n<p>株式会社ワンキャリア <br>\n情報セキュリティ室 所属 <br>\n事業会社でセキュリティエンジニアとして、プロダクトセキュリティを中心にセキュリティ施策の企画・立案・実行に従事。<br>\n2021年セキュリティベンダーに新卒入社。セキュリティエンジニアとして、脆弱性診断、コンサルティング、ペネトレーションテストなどの業務に従事。在職中に国内外のカンファレンスに10回超の登壇を実施。<br></p>\n</blockquote>\n<h3>大高 一輝 (KINTOテクノロジーズ株式会社)</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/aab55203e3c24b378c5bb34687b71ae7/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-07-03%2018.50.00.png\" width=\"100\"><br></p>\n<blockquote>\n<p>KINTOテクノロジーズ株式会社 <br>\nプラットフォーム開発部 クラウドセキュリティ グループ 所属<br>\n2026 Japan All AWS Certifications Engineers <br>\nユーザー系 SIer でオンプレミス環境を中心としたインフラ構築に従事。<br>\n2025年6月にKINTOテクノロジーズ にジョインし、マルチクラウド環境におけるクラウドセキュリティの標準化やカイゼンに従事<br></p>\n</blockquote>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>当イベントへの参加申し込みをもって、注意事項に同意したものとみなします。</li>\n<li>イベント会場へは応募した本人だけが入場できます。入館時に本人確認を実施させていただきます。</li>\n<li>交通費は自己負担です。</li>\n<li>当イベントの風景は撮影します。イベント風景、発言内容などは記事や投稿に使用する予定です。ご参加頂く方は写真撮影等に映り込む可能性がありますのでご了承ください。また、イベントにおいて記録された発言内容について、参加者は著作者人格権を行使しないものとします。</li>\n<li>事故・盗難・怪我・参加者間のトラブルに我々は責任を負いません。</li>\n<li>進行を妨げる方には退出いただく場合がございます。</li>\n<li>勧誘行為を禁止します。飲食や勧誘などを主目的とした参加は固くお断りします。</li>\n</ul>\n<h2>ℹ️ 個人情報の取り扱いについて</h2>\n<p>当イベントでは、参加者の氏名やメールアドレスなどの個人情報を収集する場合があります。 また、アンケートフォーム等にてご入力いただいた情報は、本共催イベントの各社が取得及び管理します。 収集した個人情報について、以下の利用目的の範囲内において利用いたします。</p>\n<ul>\n<li>勉強会の申し込み者の入館時のご本人確認</li>\n<li>セミナー、イベント等に関する情報提供のため</li>\n<li>採用に関する情報提供のため</li>\n</ul>",
-      "url": "https://kinto-technologies.connpass.com/event/396976/",
-      "image_url": "https://media.connpass.com/thumbs/94/e7/94e7f669b6e3e5de71577d4454d91af6.png",
-      "hash_tag": "cloudsecurity_night",
-      "started_at": "2026-08-05T19:00:00+09:00",
-      "ended_at": "2026-08-05T21:30:00+09:00",
-      "published_at": "2026-07-06T13:12:29+09:00",
-      "limit": 40,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13913,
-        "subdomain": "kinto-technologies",
-        "title": "KINTOテクノロジーズ株式会社",
-        "url": "https://kinto-technologies.connpass.com/"
-      },
-      "address": "東京都中央区日本橋室町2-3-1　室町古河三井ビルディング16階",
-      "place": "KINTOテクノロジーズ 室町オフィス",
-      "lat": "35.686843000000",
-      "lon": "139.774823700000",
-      "owner_id": 126374,
-      "owner_nickname": "TomoakiTada",
-      "owner_display_name": "TomoakiTada",
-      "accepted": 32,
-      "waiting": 0,
-      "updated_at": "2026-08-03T11:05:14+09:00"
-    },
-    {
       "id": 399324,
       "title": "AIの波に置いていかれた気がしている、忙しいPMへ",
       "catch": "焦りと違和感から考える、これからのPMの役割｜GENDA Growth Lounge #4",
@@ -159,6 +128,37 @@
       "updated_at": "2026-07-21T18:33:09+09:00"
     },
     {
+      "id": 396976,
+      "title": "Cloud Security Night #4",
+      "catch": "",
+      "description": "<h1><strong>Cloud Security Night</strong></h1>\n<p>KINTOテクノロジーズ株式会社が主催する「Cloud Security Night #4」を 1 年ぶりに開催します！！</p>\n<h2>🎉 イベント概要</h2>\n<p>クラウドセキュリティの最新トレンドやベストプラクティスについて学ぶ絶好の機会です。AWS、Google Cloud、Azureなどのマルチクラウド環境におけるクラウドセキュリティに関する話題を中心に、各社の取組を通じて、クラウドセキュリティの知識を深めましょう。<br>\nイベント後に、同会場にて懇親会を開催します。参加者同士のネットワーキングの場として、是非、ご参加ください！！</p>\n<h2>🔐 目的</h2>\n<p>クラウドセキュリティに関する最新の知識を共有し、参加者が実務に活かせる具体的な対策やベストプラクティスを学ぶことです。特に、マルチクラウド環境におけるセキュリティの課題とその解決策について深く掘り下げます。</p>\n<h2>✅こんな人におすすめ</h2>\n<ul>\n<li>クラウドセキュリティに関心があるエンジニアやITプロフェッショナル</li>\n<li>AWS、Google Cloud、Azureなどのクラウドサービスを利用している方</li>\n<li>マルチクラウド環境でのセキュリティ対策を学びたい方</li>\n<li>最新のクラウドセキュリティトレンドを知りたい</li>\n</ul>\n<h1><strong>🕑タイムテーブル</strong></h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30-19:00</td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\">－</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:20</td>\n<td style=\"text-align: left;\">ボトムアップ文化が強い組織でセキュリティをどう根付かせていくかの現在進行形の話</td>\n<td style=\"text-align: left;\">株式会社エス・エム・エス  山口　隆史さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:35</td>\n<td style=\"text-align: left;\">クラウド環境やシステムのリスク評価 - 脅威モデリングと机上評価、社内でのPTなどなど</td>\n<td style=\"text-align: left;\">株式会社ワンキャリア　齋藤　徳秀 (Azara) さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:50</td>\n<td style=\"text-align: left;\">アラート疲弊からの脱却へーSOC業務における AI エージェント活用の実践</td>\n<td style=\"text-align: left;\">KINTOテクノロジーズ  大高　一輝さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:00</td>\n<td style=\"text-align: left;\">クロージング＆休憩</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\">会場内で懇親会を開催します</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">完全撤退</td>\n<td style=\"text-align: left;\">－</td>\n</tr>\n</tbody>\n</table>\n<h1><strong>💮 登壇者紹介</strong></h1>\n<h3>山口　隆史（株式会社エス・エム・エス）</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/76a5433c4329436f83f873bdf08fca52/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-07-03%2018.49.51.png\" width=\"100\"><br></p>\n<blockquote>\n<p>株式会社エス・エム・エス<br>\nシステム推進本部　技術推進グループ 所属。<br>\n2021 APN AWS Top Top Engineers<br>\nAWS Community Builder（Security &amp; Identity）<br>\n株式会社エス・エム・エス所属。フリーランスを含めて複数社を経て、2024年5月から現職。<br>\n自称Security Hub芸人。JAWSUG千葉支部BuilderCards公式審判員。現在は全社SREチームのリーダーとして複数のプロダクトにDevSecOpsを広めるべく活動中。<br>\n現在は主にクラウドを対象とした診断や社内CSPMの開発を担当。<br></p>\n</blockquote>\n<h3>齋藤　徳秀 (Azara)（株式会社ワンキャリア）</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/8f0ac761e1574f37ba81dab015e7a243/azara.png\" width=\"100\"><br></p>\n<blockquote>\n<p>株式会社ワンキャリア <br>\n情報セキュリティ室 所属 <br>\n事業会社でセキュリティエンジニアとして、プロダクトセキュリティを中心にセキュリティ施策の企画・立案・実行に従事。<br>\n2021年セキュリティベンダーに新卒入社。セキュリティエンジニアとして、脆弱性診断、コンサルティング、ペネトレーションテストなどの業務に従事。在職中に国内外のカンファレンスに10回超の登壇を実施。<br></p>\n</blockquote>\n<h3>大高 一輝 (KINTOテクノロジーズ株式会社)</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/aab55203e3c24b378c5bb34687b71ae7/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-07-03%2018.50.00.png\" width=\"100\"><br></p>\n<blockquote>\n<p>KINTOテクノロジーズ株式会社 <br>\nプラットフォーム開発部 クラウドセキュリティ グループ 所属<br>\n2026 Japan All AWS Certifications Engineers <br>\nユーザー系 SIer でオンプレミス環境を中心としたインフラ構築に従事。<br>\n2025年6月にKINTOテクノロジーズ にジョインし、マルチクラウド環境におけるクラウドセキュリティの標準化やカイゼンに従事<br></p>\n</blockquote>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>当イベントへの参加申し込みをもって、注意事項に同意したものとみなします。</li>\n<li>イベント会場へは応募した本人だけが入場できます。入館時に本人確認を実施させていただきます。</li>\n<li>交通費は自己負担です。</li>\n<li>当イベントの風景は撮影します。イベント風景、発言内容などは記事や投稿に使用する予定です。ご参加頂く方は写真撮影等に映り込む可能性がありますのでご了承ください。また、イベントにおいて記録された発言内容について、参加者は著作者人格権を行使しないものとします。</li>\n<li>事故・盗難・怪我・参加者間のトラブルに我々は責任を負いません。</li>\n<li>進行を妨げる方には退出いただく場合がございます。</li>\n<li>勧誘行為を禁止します。飲食や勧誘などを主目的とした参加は固くお断りします。</li>\n</ul>\n<h2>ℹ️ 個人情報の取り扱いについて</h2>\n<p>当イベントでは、参加者の氏名やメールアドレスなどの個人情報を収集する場合があります。 また、アンケートフォーム等にてご入力いただいた情報は、本共催イベントの各社が取得及び管理します。 収集した個人情報について、以下の利用目的の範囲内において利用いたします。</p>\n<ul>\n<li>勉強会の申し込み者の入館時のご本人確認</li>\n<li>セミナー、イベント等に関する情報提供のため</li>\n<li>採用に関する情報提供のため</li>\n</ul>",
+      "url": "https://kinto-technologies.connpass.com/event/396976/",
+      "image_url": "https://media.connpass.com/thumbs/94/e7/94e7f669b6e3e5de71577d4454d91af6.png",
+      "hash_tag": "cloudsecurity_night",
+      "started_at": "2026-08-05T19:00:00+09:00",
+      "ended_at": "2026-08-05T21:30:00+09:00",
+      "published_at": "2026-07-06T13:12:29+09:00",
+      "limit": 40,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13913,
+        "subdomain": "kinto-technologies",
+        "title": "KINTOテクノロジーズ株式会社",
+        "url": "https://kinto-technologies.connpass.com/"
+      },
+      "address": "東京都中央区日本橋室町2-3-1　室町古河三井ビルディング16階",
+      "place": "KINTOテクノロジーズ 室町オフィス",
+      "lat": "35.686843000000",
+      "lon": "139.774823700000",
+      "owner_id": 126374,
+      "owner_nickname": "TomoakiTada",
+      "owner_display_name": "TomoakiTada",
+      "accepted": 32,
+      "waiting": 0,
+      "updated_at": "2026-08-03T11:05:14+09:00"
+    },
+    {
       "id": 401265,
       "title": "（増枠！）Claude Code Skills利用Skill Top5 誕生と運用の苦労も大公開！",
       "catch": "",
@@ -185,7 +185,7 @@
       "owner_id": 614007,
       "owner_nickname": "HisayaUchida",
       "owner_display_name": "h-ucchi",
-      "accepted": 275,
+      "accepted": 276,
       "waiting": 0,
       "updated_at": "2026-08-04T11:06:24+09:00"
     },
@@ -216,7 +216,7 @@
       "owner_id": 18020,
       "owner_nickname": "thirata",
       "owner_display_name": "tarappo",
-      "accepted": 114,
+      "accepted": 115,
       "waiting": 0,
       "updated_at": "2026-08-04T21:18:46+09:00"
     },
@@ -278,7 +278,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 18,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-07-29T16:13:12+09:00"
     }
