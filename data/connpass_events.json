@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-04T08:08:29.965740+09:00",
+  "fetched_at": "2026-08-04T10:48:56.731926+09:00",
   "date": "20260804",
   "count": 12,
   "events": [
@@ -63,7 +63,7 @@
       "owner_display_name": "Maaki_kawada",
       "accepted": 35,
       "waiting": 0,
-      "updated_at": "2026-08-03T15:02:41+09:00"
+      "updated_at": "2026-08-04T10:47:21+09:00"
     },
     {
       "id": 398204,
@@ -268,7 +268,7 @@
       "owner_id": 857525,
       "owner_nickname": "now_yamanaka",
       "owner_display_name": "now_yamanaka",
-      "accepted": 125,
+      "accepted": 130,
       "waiting": 0,
       "updated_at": "2026-08-03T14:50:54+09:00"
     },
@@ -299,8 +299,8 @@
       "owner_id": 785335,
       "owner_nickname": "WakoSato",
       "owner_display_name": "wako00sa",
-      "accepted": 126,
-      "waiting": 4,
+      "accepted": 131,
+      "waiting": 3,
       "updated_at": "2026-07-27T12:46:20+09:00"
     },
     {
@@ -330,7 +330,7 @@
       "owner_id": 943451,
       "owner_nickname": "viviON",
       "owner_display_name": "株式会社viviON",
-      "accepted": 38,
+      "accepted": 40,
       "waiting": 0,
       "updated_at": "2026-08-04T07:54:57+09:00"
     },
