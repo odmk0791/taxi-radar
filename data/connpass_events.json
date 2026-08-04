@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-05T06:03:35.294181+09:00",
+  "fetched_at": "2026-08-05T07:54:46.817549+09:00",
   "date": "20260805",
   "count": 9,
   "events": [
@@ -92,7 +92,7 @@
       "owner_id": 126374,
       "owner_nickname": "TomoakiTada",
       "owner_display_name": "TomoakiTada",
-      "accepted": 33,
+      "accepted": 32,
       "waiting": 0,
       "updated_at": "2026-08-03T11:05:14+09:00"
     },
@@ -216,7 +216,7 @@
       "owner_id": 18020,
       "owner_nickname": "thirata",
       "owner_display_name": "tarappo",
-      "accepted": 113,
+      "accepted": 114,
       "waiting": 0,
       "updated_at": "2026-08-04T21:18:46+09:00"
     },
