@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-05T04:20:33.234870+09:00",
+  "fetched_at": "2026-08-05T06:03:35.294181+09:00",
   "date": "20260805",
   "count": 9,
   "events": [
@@ -185,7 +185,7 @@
       "owner_id": 614007,
       "owner_nickname": "HisayaUchida",
       "owner_display_name": "h-ucchi",
-      "accepted": 274,
+      "accepted": 275,
       "waiting": 0,
       "updated_at": "2026-08-04T11:06:24+09:00"
     },
@@ -278,7 +278,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 17,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-07-29T16:13:12+09:00"
     }
