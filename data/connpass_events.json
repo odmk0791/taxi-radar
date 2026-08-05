@@ -1,39 +1,8 @@
 {
-  "fetched_at": "2026-08-05T08:57:01.817513+09:00",
+  "fetched_at": "2026-08-05T11:13:50.746385+09:00",
   "date": "20260805",
   "count": 9,
   "events": [
-    {
-      "id": 399472,
-      "title": "golang.tokyo #44",
-      "catch": "トーク募集中！ Go コミュニティで技術談義に花を咲かせませんか？ 祝 Go 1.27 rc2",
-      "description": "<p>golang.tokyo 、第 44 回を開催します！ 🎉 🎉 </p>\n<p>今回のイベントでは、登壇者を <u><span style=\"font-weight:bold;\">最大 5 名</span></u> 募集します。 リリースされた Go 1.27 rc2 をいち早くレポートするのもの良し、先日公開された Go Conference 2026 の採択結果を受け、プロポーザルをお披露目するのも良し、最近関心を持ったトピックや業務で得た知見を共有するも良し、 Go に関連するテーマなら何でも OK です！</p>\n<p>気軽に応募して、トークでイベント一を緒に盛り上がりましょう！  </p>\n<h2>📆 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表タイトル</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15 - 19:30</td>\n<td>開場・受付</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:30 - 19:35</td>\n<td>オープニング</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:35 - 19:45</td>\n<td>公募トーク 1</td>\n<td><strong>Otel collector から学ぶ Plugin システムの実装</strong></td>\n<td>竹田舜</td>\n</tr>\n<tr>\n<td>19:45 - 19:55</td>\n<td>公募トーク 2</td>\n<td><strong>Go でデータパイプラインを作ろう</strong></td>\n<td>uesm</td>\n</tr>\n<tr>\n<td>19:55 - 20:05</td>\n<td>公募トーク 3</td>\n<td><strong>Goの形式検証ツール Gobra に decimal を検証させてみた！</strong></td>\n<td>warashi</td>\n</tr>\n<tr>\n<td>20:05 - 20:15</td>\n<td>公募トーク 4</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20:15 - 20:25</td>\n<td>公募トーク 5</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20:25 - 20:35</td>\n<td>休憩</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20:35 - 20:45</td>\n<td>運営企業 アンドパッド トーク 1</td>\n<td><strong>Go 1.27 における memory allocation の高速化</strong></td>\n<td>unagam</td>\n</tr>\n<tr>\n<td>20:45 - 20:55</td>\n<td>運営企業 GROWTH VERSE トーク 2</td>\n<td><strong>進化を続けるGo toolsの現在地</strong></td>\n<td>hond</td>\n</tr>\n<tr>\n<td>20:55 - 21:00</td>\n<td>クロージング</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>21:00 - 21:30</td>\n<td>懇親会</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>トークの内容や登壇者情報は、当日までに順次公開される予定です。  </li>\n<li>変更が発生する可能性がありますのでご了承ください。</li>\n</ul>\n<h2>💎 トーク内容紹介</h2>\n<h3>【LT 1】Otel collector から学ぶ Plugin システムの実装</h3>\n<p><strong>竹田舜</strong></p>\n<h3>【LT 2】Go でデータパイプラインを作ろう</h3>\n<p><img src=\"https://media.connpass.com/thumbs/65/01/650119e3c94adb206a5676aab9ca5037.png\" alt=\"uesm icon\" width=\"150px\"></p>\n<p><strong>uesm</strong></p>\n<h3>【LT 3】Goの形式検証ツール Gobra に decimal を検証させてみた</h3>\n<p><img src=\"https://media.connpass.com/thumbs/4e/35/4e355896b863a227983ec593d8600b7c.png\" alt=\"uesm icon\" width=\"150px\"></p>\n<p><strong>warashi</strong></p>\n\n\n<h3>【運営企業 トーク 1】 Go 1.27 における memory allocation の高速化</h3>\n<p><img src=\"https://media.connpass.com/thumbs/da/61/da6195438e1293562c522f0991d3b48f.png\" alt=\"unagam icon\" width=\"150px\"></p>\n<p><strong>unagam</strong></p>\n<p>Go 1.27 では、80byte 未満の小さな memory allocation の最大 30% 高速化が行われる予定です。本発表ではなぜ高速化できたのか、焦点を当てて解説します。</p>\n<h3>【運営企業 トーク 2】 進化を続けるGo toolsの現在地</h3>\n<p><img src=\"https://imgur.com/7HFRMOb.jpeg\" alt=\"unagam icon\" width=\"150px\"></p>\n<p><strong>hond</strong></p>\n<p>Go 1.26でのgo vet・go fixをはじめとした時代に合わせて進化を続けるtoolsとpkg.go.dev APIを使った開発体験の向上について考えていきます。</p>\n<h2>📝 トーク申し込み方法</h2>\n<ul>\n<li>先着で決まります。時間は、一人最大 10 分です。</li>\n<li>質疑応答はマストではありませんが、実施していただいても問題ありません。その場合、質疑応答も含めて 10 分でお願いします。  </li>\n<li>発表はオフライン会場からとなりますので、ご注意ください。</li>\n<li>本イベント申込時に以下の項目を入力ください<ul>\n<li>イベントページに掲載してよいお名前</li>\n<li>現時点での発表タイトル (仮タイトルで問題ありません。変更可能です)</li>\n<li>連絡先メールアドレス (トーク内容の確認・調整のために使用します)</li>\n<li>Xアカウント (任意項目)</li>\n</ul>\n</li>\n</ul>\n<h2>📍 現地参加について</h2>\n<h3>◾会場</h3>\n<p>ANDPAD STADIUM<br>\n東京都港区三田3-5-19 住友不動産東京三田ガーデンタワー 37F <a href=\"https://maps.app.goo.gl/66LGd5gF5QNjVHFAA\" rel=\"nofollow\">Google map</a></p>\n<ul>\n<li>ビル入館にあたって QR コードが必要になるため、本イベント申込時に <strong>メールアドレス</strong> と <strong>お名前 (ハンドルネームや id でも可)</strong> を入力ください。 開催 3 日前ぐらいに QR コードをメールで配信します</li>\n<li>ビル入館用 QR コードは connpass のコードとは異なります</li>\n<li>受付開始は 19:15 です。開始の 19:30 に遅れないようにご来場ください。  </li>\n<li>受付にて connpass の参加票をご提示ください。</li>\n</ul>\n<h3>◾ 注意事項</h3>\n<ul>\n<li>会場内は禁煙です。喫煙スペースも設けておりませんので、喫煙はお控え下さい。</li>\n<li>途中参加・途中退場可能です。</li>\n<li>電源・ Wi-Fi は会場備え付けの物のものをご利用いただけます。</li>\n</ul>\n<h2>🌐 オンライン参加について</h2>\n<p>YouTube Live にて配信します。 参加登録後、表示される URL にアクセスしてご視聴ください。<br>\n前日もしくは当日にもメッセージにてご連絡いたします。</p>\n<h2>💖 行動指針</h2>\n<p>本イベントに参加するすべての人は下記の行動規範を守ることを求められます。<br>\n<a href=\"https://go.dev/conduct\" rel=\"nofollow\">https://go.dev/conduct</a></p>\n<h2>⚠️ キャンセルについて</h2>\n<p>本イベントは、 Go に関心を持ちナレッジを共有・学習したいすべての方にとって開かれた、健全なコミュニティとして運営していきたいと考えています。そのため、以下についてご理解とご協力をお願いします。</p>\n<p>1)<br>\n当日都合が悪くなって来れない方は、お手数ですが速やかにキャンセル処理をお願いします。参加の状態のまま当日お越しいただけなかった方は、次回以降の参加の優先順位を下げさせて頂く可能性があります。</p>\n<p>2)<br>\n目的外参加と思われる方（連日飲食可能な関連性の薄いイベントに参加しているなど）は、運営側の一定の基準で、事前のご連絡はせずキャンセルさせていただく場合がございます。参加が意図せずキャンセルされてしまった場合は、お手数ですが一度 connpass 上で運営にお問い合わせください。</p>\n<h2>🏢 #44 運営企業</h2>\n<div style=\"text-align: center; margin:3rem;\"><img src=\"https://engineer.andpad.co.jp/assets/images/share/Secondary%20Logo_UI_RGB@5x.png\" width=\"50%\"></div>\n\n<p><strong>株式会社アンドパッド</strong></p>\n<p>アンドパッドは、「幸せを築く人を、幸せに。」というミッションを掲げ、業界の人手不足解決、働き方改革を加速させる建設・建築業に特化したクラウド型建設プロジェクト管理サービス「 ANDPAD 」を提供しています。</p>\n<ul>\n<li><a href=\"https://andpad.co.jp/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://engineer.andpad.co.jp/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech.andpad.co.jp/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<div style=\"text-align: center; margin:3rem;\"><img src=\"https://imgur.com/1JdPDIK.jpg\" width=\"50%\"></div>\n\n<p><strong>株式会社GROWTH VERSE</strong></p>\n<p>「 BUILDING AI to maximize Business Growth 」をミッションとして掲げ、データ×AIで企業の成長力を最大化するためのAI Agentを提供しています。マーケティング領域では「AIMSTAR」、小売領域では「ミセシル」および「Zero」、音声領域では「電話放送局」各サービスの開発・販売をしています。</p>\n<ul>\n<li><a href=\"https://growth-verse.ai/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://growth-verse.ai/careers/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://note.com/growth_verse\" rel=\"nofollow\">note</a></li>\n</ul>",
-      "url": "https://golangtokyo.connpass.com/event/399472/",
-      "image_url": "https://media.connpass.com/thumbs/7f/ab/7fab58776852b502e94f3a7cf249c345.png",
-      "hash_tag": "golangtokyo",
-      "started_at": "2026-08-05T19:30:00+09:00",
-      "ended_at": "2026-08-05T21:30:00+09:00",
-      "published_at": "2026-07-08T17:57:34+09:00",
-      "limit": 105,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 2758,
-        "subdomain": "golangtokyo",
-        "title": "golang.tokyo",
-        "url": "https://golangtokyo.connpass.com/"
-      },
-      "address": "東京都港区三田3-5-19　住友不動産東京三田ガーデンタワー 37F",
-      "place": "ANDPAD STADIUM",
-      "lat": "35.644916500000",
-      "lon": "139.743343400000",
-      "owner_id": 6178,
-      "owner_nickname": "tenntenn",
-      "owner_display_name": "tenntenn",
-      "accepted": 75,
-      "waiting": 0,
-      "updated_at": "2026-08-04T10:54:24+09:00"
-    },
     {
       "id": 399453,
       "title": "20代限定！ 若手エンジニアのぶっちゃけLT会",
@@ -64,6 +33,37 @@
       "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-08-04T15:44:37+09:00"
+    },
+    {
+      "id": 399472,
+      "title": "golang.tokyo #44",
+      "catch": "トーク募集中！ Go コミュニティで技術談義に花を咲かせませんか？ 祝 Go 1.27 rc2",
+      "description": "<p>golang.tokyo 、第 44 回を開催します！ 🎉 🎉 </p>\n<p>今回のイベントでは、登壇者を <u><span style=\"font-weight:bold;\">最大 5 名</span></u> 募集します。 リリースされた Go 1.27 rc2 をいち早くレポートするのもの良し、先日公開された Go Conference 2026 の採択結果を受け、プロポーザルをお披露目するのも良し、最近関心を持ったトピックや業務で得た知見を共有するも良し、 Go に関連するテーマなら何でも OK です！</p>\n<p>気軽に応募して、トークでイベント一を緒に盛り上がりましょう！  </p>\n<h2>📆 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表タイトル</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15 - 19:30</td>\n<td>開場・受付</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:30 - 19:35</td>\n<td>オープニング</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>19:35 - 19:45</td>\n<td>公募トーク 1</td>\n<td><strong>Otel collector から学ぶ Plugin システムの実装</strong></td>\n<td>竹田舜</td>\n</tr>\n<tr>\n<td>19:45 - 19:55</td>\n<td>公募トーク 2</td>\n<td><strong>Go でデータパイプラインを作ろう</strong></td>\n<td>uesm</td>\n</tr>\n<tr>\n<td>19:55 - 20:05</td>\n<td>公募トーク 3</td>\n<td><strong>Goの形式検証ツール Gobra に decimal を検証させてみた！</strong></td>\n<td>warashi</td>\n</tr>\n<tr>\n<td>20:05 - 20:15</td>\n<td>運営企業 アンドパッド トーク 1</td>\n<td><strong>Go 1.27 における memory allocation の高速化</strong></td>\n<td>unagam</td>\n</tr>\n<tr>\n<td>20:15 - 20:25</td>\n<td>運営企業 GROWTH VERSE トーク 2</td>\n<td><strong>進化を続けるGo toolsの現在地</strong></td>\n<td>hond</td>\n</tr>\n<tr>\n<td>20:25 - 20:35</td>\n<td>クロージング</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20:35 - 21:30</td>\n<td>懇親会</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>トークの内容や登壇者情報は、当日までに順次公開される予定です。  </li>\n<li>変更が発生する可能性がありますのでご了承ください。</li>\n</ul>\n<h2>💎 トーク内容紹介</h2>\n<h3>【LT 1】Otel collector から学ぶ Plugin システムの実装</h3>\n<p><strong>竹田舜</strong></p>\n<h3>【LT 2】Go でデータパイプラインを作ろう</h3>\n<p><img src=\"https://media.connpass.com/thumbs/65/01/650119e3c94adb206a5676aab9ca5037.png\" alt=\"uesm icon\" width=\"150px\"></p>\n<p><strong>uesm</strong></p>\n<h3>【LT 3】Go の形式検証ツール Gobra に decimal を検証させてみた</h3>\n<p><img src=\"https://media.connpass.com/thumbs/4e/35/4e355896b863a227983ec593d8600b7c.png\" alt=\"uesm icon\" width=\"150px\"></p>\n<p><strong>warashi</strong></p>\n\n\n<h3>【運営企業 トーク 1】 Go 1.27 における memory allocation の高速化</h3>\n<p><img src=\"https://media.connpass.com/thumbs/da/61/da6195438e1293562c522f0991d3b48f.png\" alt=\"unagam icon\" width=\"150px\"></p>\n<p><strong>unagam</strong></p>\n<p>Go 1.27 では、80byte 未満の小さな memory allocation の最大 30% 高速化が行われる予定です。本発表ではなぜ高速化できたのか、焦点を当てて解説します。</p>\n<h3>【運営企業 トーク 2】 進化を続けるGo toolsの現在地</h3>\n<p><img src=\"https://imgur.com/7HFRMOb.jpeg\" alt=\"unagam icon\" width=\"150px\"></p>\n<p><strong>hond</strong></p>\n<p>Go 1.26でのgo vet・go fixをはじめとした時代に合わせて進化を続けるtoolsとpkg.go.dev APIを使った開発体験の向上について考えていきます。</p>\n<h2>📝 トーク申し込み方法</h2>\n<ul>\n<li>先着で決まります。時間は、一人最大 10 分です。</li>\n<li>質疑応答はマストではありませんが、実施していただいても問題ありません。その場合、質疑応答も含めて 10 分でお願いします。  </li>\n<li>発表はオフライン会場からとなりますので、ご注意ください。</li>\n<li>本イベント申込時に以下の項目を入力ください<ul>\n<li>イベントページに掲載してよいお名前</li>\n<li>現時点での発表タイトル (仮タイトルで問題ありません。変更可能です)</li>\n<li>連絡先メールアドレス (トーク内容の確認・調整のために使用します)</li>\n<li>Xアカウント (任意項目)</li>\n</ul>\n</li>\n</ul>\n<h2>📍 現地参加について</h2>\n<h3>◾会場</h3>\n<p>ANDPAD STADIUM<br>\n東京都港区三田3-5-19 住友不動産東京三田ガーデンタワー 37F <a href=\"https://maps.app.goo.gl/66LGd5gF5QNjVHFAA\" rel=\"nofollow\">Google map</a></p>\n<ul>\n<li>ビル入館にあたって QR コードが必要になるため、本イベント申込時に <strong>メールアドレス</strong> と <strong>お名前 (ハンドルネームや id でも可)</strong> を入力ください。 開催 3 日前ぐらいに QR コードをメールで配信します</li>\n<li>ビル入館用 QR コードは connpass のコードとは異なります</li>\n<li>受付開始は 19:15 です。開始の 19:30 に遅れないようにご来場ください。  </li>\n<li>受付にて connpass の参加票をご提示ください。</li>\n</ul>\n<h3>◾ 注意事項</h3>\n<ul>\n<li>会場内は禁煙です。喫煙スペースも設けておりませんので、喫煙はお控え下さい。</li>\n<li>途中参加・途中退場可能です。</li>\n<li>電源・ Wi-Fi は会場備え付けの物のものをご利用いただけます。</li>\n</ul>\n<h2>🌐 オンライン参加について</h2>\n<p>YouTube Live にて配信します。 参加登録後、表示される URL にアクセスしてご視聴ください。<br>\n前日もしくは当日にもメッセージにてご連絡いたします。</p>\n<h2>💖 行動指針</h2>\n<p>本イベントに参加するすべての人は下記の行動規範を守ることを求められます。<br>\n<a href=\"https://go.dev/conduct\" rel=\"nofollow\">https://go.dev/conduct</a></p>\n<h2>⚠️ キャンセルについて</h2>\n<p>本イベントは、 Go に関心を持ちナレッジを共有・学習したいすべての方にとって開かれた、健全なコミュニティとして運営していきたいと考えています。そのため、以下についてご理解とご協力をお願いします。</p>\n<p>1)<br>\n当日都合が悪くなって来れない方は、お手数ですが速やかにキャンセル処理をお願いします。参加の状態のまま当日お越しいただけなかった方は、次回以降の参加の優先順位を下げさせて頂く可能性があります。</p>\n<p>2)<br>\n目的外参加と思われる方（連日飲食可能な関連性の薄いイベントに参加しているなど）は、運営側の一定の基準で、事前のご連絡はせずキャンセルさせていただく場合がございます。参加が意図せずキャンセルされてしまった場合は、お手数ですが一度 connpass 上で運営にお問い合わせください。</p>\n<h2>🏢 #44 運営企業</h2>\n<div style=\"text-align: center; margin:3rem;\"><img src=\"https://engineer.andpad.co.jp/assets/images/share/Secondary%20Logo_UI_RGB@5x.png\" width=\"50%\"></div>\n\n<p><strong>株式会社アンドパッド</strong></p>\n<p>アンドパッドは、「幸せを築く人を、幸せに。」というミッションを掲げ、業界の人手不足解決、働き方改革を加速させる建設・建築業に特化したクラウド型建設プロジェクト管理サービス「 ANDPAD 」を提供しています。</p>\n<ul>\n<li><a href=\"https://andpad.co.jp/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://engineer.andpad.co.jp/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://tech.andpad.co.jp/\" rel=\"nofollow\">テックブログ</a></li>\n</ul>\n<div style=\"text-align: center; margin:3rem;\"><img src=\"https://imgur.com/1JdPDIK.jpg\" width=\"50%\"></div>\n\n<p><strong>株式会社GROWTH VERSE</strong></p>\n<p>「 BUILDING AI to maximize Business Growth 」をミッションとして掲げ、データ×AIで企業の成長力を最大化するためのAI Agentを提供しています。マーケティング領域では「AIMSTAR」、小売領域では「ミセシル」および「Zero」、音声領域では「電話放送局」各サービスの開発・販売をしています。</p>\n<ul>\n<li><a href=\"https://growth-verse.ai/\" rel=\"nofollow\">会社情報</a></li>\n<li><a href=\"https://growth-verse.ai/careers/\" rel=\"nofollow\">採用情報</a></li>\n<li><a href=\"https://note.com/growth_verse\" rel=\"nofollow\">note</a></li>\n</ul>",
+      "url": "https://golangtokyo.connpass.com/event/399472/",
+      "image_url": "https://media.connpass.com/thumbs/7f/ab/7fab58776852b502e94f3a7cf249c345.png",
+      "hash_tag": "golangtokyo",
+      "started_at": "2026-08-05T19:30:00+09:00",
+      "ended_at": "2026-08-05T21:30:00+09:00",
+      "published_at": "2026-07-08T17:57:34+09:00",
+      "limit": 105,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 2758,
+        "subdomain": "golangtokyo",
+        "title": "golang.tokyo",
+        "url": "https://golangtokyo.connpass.com/"
+      },
+      "address": "東京都港区三田3-5-19　住友不動産東京三田ガーデンタワー 37F",
+      "place": "ANDPAD STADIUM",
+      "lat": "35.644916500000",
+      "lon": "139.743343400000",
+      "owner_id": 6178,
+      "owner_nickname": "tenntenn",
+      "owner_display_name": "tenntenn",
+      "accepted": 75,
+      "waiting": 0,
+      "updated_at": "2026-08-05T10:38:25+09:00"
     },
     {
       "id": 399324,
@@ -185,7 +185,7 @@
       "owner_id": 614007,
       "owner_nickname": "HisayaUchida",
       "owner_display_name": "h-ucchi",
-      "accepted": 276,
+      "accepted": 279,
       "waiting": 0,
       "updated_at": "2026-08-04T11:06:24+09:00"
     },
@@ -200,7 +200,7 @@
       "started_at": "2026-08-05T18:15:00+09:00",
       "ended_at": "2026-08-05T21:00:00+09:00",
       "published_at": "2026-07-10T18:00:00+09:00",
-      "limit": 130,
+      "limit": 140,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -216,9 +216,9 @@
       "owner_id": 18020,
       "owner_nickname": "thirata",
       "owner_display_name": "tarappo",
-      "accepted": 115,
+      "accepted": 119,
       "waiting": 0,
-      "updated_at": "2026-08-04T21:18:46+09:00"
+      "updated_at": "2026-08-05T09:56:55+09:00"
     },
     {
       "id": 399841,
@@ -278,7 +278,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 19,
+      "accepted": 21,
       "waiting": 0,
       "updated_at": "2026-07-29T16:13:12+09:00"
     }
