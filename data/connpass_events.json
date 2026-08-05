@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-06T04:18:09.156967+09:00",
+  "fetched_at": "2026-08-06T05:59:25.723928+09:00",
   "date": "20260806",
   "count": 16,
   "events": [
@@ -212,7 +212,7 @@
       "owner_nickname": "KTC_saiyo",
       "owner_display_name": "KTC_saiyo",
       "accepted": 50,
-      "waiting": 2,
+      "waiting": 0,
       "updated_at": "2026-07-24T14:24:23+09:00"
     },
     {
@@ -366,7 +366,7 @@
       "owner_id": 1032236,
       "owner_nickname": "sato_pr_tai",
       "owner_display_name": "sato_pr_tai",
-      "accepted": 222,
+      "accepted": 224,
       "waiting": 0,
       "updated_at": "2026-08-04T14:57:16+09:00"
     },
