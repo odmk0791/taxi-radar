@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-06T07:14:17.749244+09:00",
+  "fetched_at": "2026-08-06T08:52:29.955694+09:00",
   "date": "20260806",
   "count": 16,
   "events": [
@@ -92,37 +92,6 @@
       "updated_at": "2026-08-06T00:47:55+09:00"
     },
     {
-      "id": 400169,
-      "title": "【ハイブリッド開催】Roppongi.rb #45",
-      "catch": "夏のLT大会！！",
-      "description": "<h1>内容</h1>\n<p>Roppongi.rbは六本木周辺のRubyistが中心となりRubyistのためのミートアップを企画するRubyコミュニティです。  </p>\n<p>今回は第２木曜日がお盆のため、Omotesando.rbとRoppongi.rbの合同開催です！</p>\n<h1>LT大会</h1>\n<p>LT枠は、Omotesando.rbとRoppongi.rbでそれぞれ用意しています。<br>\n**発表時間は5分 ~ 10分程度でお願いします。 **</p>\n<h1>タイムスケジュール</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>開催挨拶 &amp; スポンサーLT</td>\n</tr>\n<tr>\n<td>19:50</td>\n<td>自己紹介</td>\n</tr>\n<tr>\n<td>19:55</td>\n<td>Omotesando.rb 一人目LT</td>\n</tr>\n<tr>\n<td>20:02</td>\n<td>Roppongi.rb 一人目LT</td>\n</tr>\n<tr>\n<td>20:09</td>\n<td>Omotesando.rb 二人目LT</td>\n</tr>\n<tr>\n<td>20:16</td>\n<td>Roppongi.rb 二人目LT</td>\n</tr>\n<tr>\n<td>20:23</td>\n<td>Omotesando.rb 三人目LT</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>Roppongi.rb 三人目LT</td>\n</tr>\n<tr>\n<td>21:45</td>\n<td>終了</td>\n</tr>\n</tbody>\n</table>\n<h1>会場について</h1>\n<p>株式会社FUNDINNO様でのオフラインとオンラインの同時開催となります。  </p>\n<p>〒108-0014\n東京都港区芝５丁目２９ １１G-BASE田町 3F</p>\n<p>アクセス方法<br>\n<a href=\"https://note.com/fundinno_recruit/n/n43165c257f85\" rel=\"nofollow\">https://note.com/fundinno_recruit/n/n43165c257f85</a></p>\n<h1>オンライン配信</h1>\n<p>Omotesando.rbで配信します。</p>\n<h1>アンチハラスメントポリシー</h1>\n<p>全ての参加者の皆様が安心してRoppongi.rbに参加していただけますよう、Roppongi.rbでは<a href=\"https://rubykaigi.org/2024/policies/\" rel=\"nofollow\">RubyKaigiアンチハラスメントポリシー</a>に準ずるCode of Conductを設けます。Roppongi.rbに参加される方は、上記ポリシーに同意していただいているものとみなします。</p>\n<p>興味がある方はどなたでも参加可能です。</p>",
-      "url": "https://roppongirb.connpass.com/event/400169/",
-      "image_url": "https://media.connpass.com/thumbs/77/6f/776f4f7118a055944e70c193bff868de.png",
-      "hash_tag": "roppongirb",
-      "started_at": "2026-08-06T19:30:00+09:00",
-      "ended_at": "2026-08-06T22:00:00+09:00",
-      "published_at": "2026-07-17T10:20:05+09:00",
-      "limit": 32,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 1645,
-        "subdomain": "roppongirb",
-        "title": "Roppongi.rb",
-        "url": "https://roppongirb.connpass.com/"
-      },
-      "address": "〒108-0014 東京都港区芝５丁目２９ １１G-BASE田町 3F",
-      "place": "株式会社FUNDINNO",
-      "lat": "35.646566600000",
-      "lon": "139.744724100000",
-      "owner_id": 36484,
-      "owner_nickname": "totzyuta",
-      "owner_display_name": "totzyuta",
-      "accepted": 11,
-      "waiting": 0,
-      "updated_at": "2026-07-30T18:05:45+09:00"
-    },
-    {
       "id": 400569,
       "title": "【ハイブリッド開催】Omotesando.rb #124",
       "catch": "",
@@ -154,6 +123,37 @@
       "updated_at": "2026-07-31T00:22:24+09:00"
     },
     {
+      "id": 400169,
+      "title": "【ハイブリッド開催】Roppongi.rb #45",
+      "catch": "夏のLT大会！！",
+      "description": "<h1>内容</h1>\n<p>Roppongi.rbは六本木周辺のRubyistが中心となりRubyistのためのミートアップを企画するRubyコミュニティです。  </p>\n<p>今回は第２木曜日がお盆のため、Omotesando.rbとRoppongi.rbの合同開催です！</p>\n<h1>LT大会</h1>\n<p>LT枠は、Omotesando.rbとRoppongi.rbでそれぞれ用意しています。<br>\n**発表時間は5分 ~ 10分程度でお願いします。 **</p>\n<h1>タイムスケジュール</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>開催挨拶 &amp; スポンサーLT</td>\n</tr>\n<tr>\n<td>19:50</td>\n<td>自己紹介</td>\n</tr>\n<tr>\n<td>19:55</td>\n<td>Omotesando.rb 一人目LT</td>\n</tr>\n<tr>\n<td>20:02</td>\n<td>Roppongi.rb 一人目LT</td>\n</tr>\n<tr>\n<td>20:09</td>\n<td>Omotesando.rb 二人目LT</td>\n</tr>\n<tr>\n<td>20:16</td>\n<td>Roppongi.rb 二人目LT</td>\n</tr>\n<tr>\n<td>20:23</td>\n<td>Omotesando.rb 三人目LT</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>Roppongi.rb 三人目LT</td>\n</tr>\n<tr>\n<td>21:45</td>\n<td>終了</td>\n</tr>\n</tbody>\n</table>\n<h1>会場について</h1>\n<p>株式会社FUNDINNO様でのオフラインとオンラインの同時開催となります。  </p>\n<p>〒108-0014\n東京都港区芝５丁目２９ １１G-BASE田町 3F</p>\n<p>アクセス方法<br>\n<a href=\"https://note.com/fundinno_recruit/n/n43165c257f85\" rel=\"nofollow\">https://note.com/fundinno_recruit/n/n43165c257f85</a></p>\n<h1>オンライン配信</h1>\n<p>Omotesando.rbで配信します。</p>\n<h1>アンチハラスメントポリシー</h1>\n<p>全ての参加者の皆様が安心してRoppongi.rbに参加していただけますよう、Roppongi.rbでは<a href=\"https://rubykaigi.org/2024/policies/\" rel=\"nofollow\">RubyKaigiアンチハラスメントポリシー</a>に準ずるCode of Conductを設けます。Roppongi.rbに参加される方は、上記ポリシーに同意していただいているものとみなします。</p>\n<p>興味がある方はどなたでも参加可能です。</p>",
+      "url": "https://roppongirb.connpass.com/event/400169/",
+      "image_url": "https://media.connpass.com/thumbs/77/6f/776f4f7118a055944e70c193bff868de.png",
+      "hash_tag": "roppongirb",
+      "started_at": "2026-08-06T19:30:00+09:00",
+      "ended_at": "2026-08-06T22:00:00+09:00",
+      "published_at": "2026-07-17T10:20:05+09:00",
+      "limit": 32,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 1645,
+        "subdomain": "roppongirb",
+        "title": "Roppongi.rb",
+        "url": "https://roppongirb.connpass.com/"
+      },
+      "address": "〒108-0014 東京都港区芝５丁目２９ １１G-BASE田町 3F",
+      "place": "株式会社FUNDINNO",
+      "lat": "35.646566600000",
+      "lon": "139.744724100000",
+      "owner_id": 36484,
+      "owner_nickname": "totzyuta",
+      "owner_display_name": "totzyuta",
+      "accepted": 11,
+      "waiting": 0,
+      "updated_at": "2026-07-30T18:05:45+09:00"
+    },
+    {
       "id": 399536,
       "title": "新卒N年目の勉強会&交流会！「Tech Talk !!!!」",
       "catch": "新卒エンジニアの交流会！",
@@ -180,7 +180,7 @@
       "owner_id": 565222,
       "owner_nickname": "JinA293",
       "owner_display_name": "ジン",
-      "accepted": 58,
+      "accepted": 59,
       "waiting": 4,
       "updated_at": "2026-08-04T10:09:16+09:00"
     },
@@ -335,7 +335,7 @@
       "owner_id": 898621,
       "owner_nickname": "KTC_saiyo",
       "owner_display_name": "KTC_saiyo",
-      "accepted": 50,
+      "accepted": 49,
       "waiting": 0,
       "updated_at": "2026-07-24T14:24:23+09:00"
     },
@@ -366,7 +366,7 @@
       "owner_id": 1032236,
       "owner_nickname": "sato_pr_tai",
       "owner_display_name": "sato_pr_tai",
-      "accepted": 225,
+      "accepted": 227,
       "waiting": 0,
       "updated_at": "2026-08-04T14:57:16+09:00"
     },
@@ -428,7 +428,7 @@
       "owner_id": 23847,
       "owner_nickname": "ebyhr",
       "owner_display_name": "Yuya Ebihara",
-      "accepted": 124,
+      "accepted": 125,
       "waiting": 0,
       "updated_at": "2026-07-17T14:06:34+09:00"
     },
@@ -459,7 +459,7 @@
       "owner_id": 685981,
       "owner_nickname": "yamanekosanchi",
       "owner_display_name": "yamanekosanchi",
-      "accepted": 20,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-07-22T18:54:22+09:00"
     },
