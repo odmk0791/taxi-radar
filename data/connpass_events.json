@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-06T05:59:25.723928+09:00",
+  "fetched_at": "2026-08-06T07:14:17.749244+09:00",
   "date": "20260806",
   "count": 16,
   "events": [
@@ -118,7 +118,7 @@
       "owner_id": 36484,
       "owner_nickname": "totzyuta",
       "owner_display_name": "totzyuta",
-      "accepted": 10,
+      "accepted": 11,
       "waiting": 0,
       "updated_at": "2026-07-30T18:05:45+09:00"
     },
@@ -183,37 +183,6 @@
       "accepted": 58,
       "waiting": 4,
       "updated_at": "2026-08-04T10:09:16+09:00"
-    },
-    {
-      "id": 398365,
-      "title": "AI Native Dev Night Tokyo",
-      "catch": "〜AI駆動開発の理論と実践〜",
-      "description": "<h2><strong>【オンライン視聴枠も追加しました】</strong></h2>\n<p>おかげさまで会場（オフライン）枠へ多くのお申し込みをいただき、満員に近づいております。<br>\n「遠方で会場に行けない」「オンラインでも視聴したい」というお声にお応えし、【オンライン視聴枠】を新設しました。<br>\n会場にお越しになれない方は、こちらからご参加ください。<br></p>\n<p>▼オンライン視聴枠はこちら<br>\n<a href=\"https://kinto-technologies.connpass.com/event/400869/\" rel=\"nofollow\">https://kinto-technologies.connpass.com/event/400869/</a> <br>\n<font color=\"red\">※両イベントページへの重複応募不可</font></p>\n<hr>\n<h1><strong>AI Native Dev Night Tokyo 〜AI駆動開発の理論と実践〜</strong></h1>\n<p>生成AIによる開発支援は「コードを速く書く」段階を越え、要件定義・設計・テスト・運用までを含むソフトウェアライフサイクル全体をどう再構成するか、という問いに移りつつあります。</p>\n<p>一方で、エンタープライズ開発の現場では <strong>整合性・トレーサビリティ・大規模性</strong> といった、Webサービス開発とは異なる難しさがあります。</p>\n<p><strong>AI Native Dev Night Tokyo</strong> は、そうした <strong>「理論的な裏付けを持ったAI駆動開発」</strong> にフォーカスします。流行を追うだけのTipsではなく、なぜそのアプローチが有効なのか、どこに限界があるのかを、第一線の実務者・研究者と一緒に考える場です。</p>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>エンタープライズ／大規模システムでAI駆動開発の適用を検討しているエンジニア</li>\n<li>AIによる設計・実装の「精度」と「整合性」をどう担保するかに関心がある方</li>\n<li>バイブコーディングの先にある、設計論・アーキテクチャ論を深めたい方</li>\n<li>同じ課題感を持つエンジニアと議論・交流したい方</li>\n</ul>\n<hr>\n<h2>開催概要</h2>\n<p>・日時：2026年8月6日（木） 19:00〜21:00<br>\n・会場：KINTOテクノロジーズ　室町オフィス<br>\n　　　　（東京都中央区日本橋室町2-3-1室町古河三井ビルディング(COREDO室町2)<br>\n・参加費：無料（懇親会費込み）<br></p>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>受付開始</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>オープニング・会社紹介</td>\n</tr>\n<tr>\n<td>19:10</td>\n<td>Scalar CTO 山田 浩之 様 <br>（仮）マイクロサービスにおけるトランザクション管理再考― AI駆動開発が直面するデータ整合性の課題と解決策</td>\n</tr>\n<tr>\n<td>19:40</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>19:50</td>\n<td>KINTOテクノロジーズ 森田 和明様 <br>（仮）社内AI Native Dev活動の歩み - AIネイティブな組織を目指して</td>\n</tr>\n<tr>\n<td>20:10</td>\n<td>NTTテクノクロス 渡邉 洋平様 <br>（仮）仕様駆動開発の消費期限</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>懇親会（〜21:00）</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>登壇者</h2>\n<h3>山田 浩之(Scalar, Inc. CTO)(<a href=\"https://x.com/feeblefakie\" rel=\"nofollow\">@feeblefakie</a>)<br></h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/9a65ec2badd148dba94f38d0dc5d0222/profile.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>Scalar, Inc. 最高技術責任者。博士（情報理工学）。 ヤフー、IPA未踏事業、東京大学生産技術研究所（現任）等において一貫して分散データベースの研究開発に従事。 2017年にScalarを創業し、データ管理における信頼性の課題を解決するミドルウェア製品であるScalarDB（VLDB'23採録）とScalarDL（VLDB'22採録）の研究開発を開始。 2023年から米国における事業展開を開始。</p>\n</blockquote>\n<h3>森田 和明（KINTOテクノロジーズ株式会社 Principal Generative AI Engineer ）(<a href=\"https://x.com/moritalous\" rel=\"nofollow\">@moritalous</a>)</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/51eaf47539ca4d28b7cd58dd62f12367/Avator.png\" width=\"200\"><br></p>\n<blockquote>\n<p>社内の生成AI活用推進やグループ企業へのAI導入支援に従事。過去にAWS Ambassador、Japan AWS Top Engineerに選出。現在はAWS Community Builderとして活動中。<br>著書に、『Amazon Bedrock AgentCore 実践入門 Strands Agentsで構築するAIエージェント [AWS深掘りガイド]』（SBクリエイティブ）、『AWSではじめるMCP実践ガイド』（技術評論社）、『Amazon Bedrock 生成AIアプリ開発入門［AWS深掘りガイド］』（SBクリエイティブ）。</p>\n</blockquote>\n<h3>渡邉 洋平/watany（NTTテクノクロス株式会社）(<a href=\"https://x.com/_watany\" rel=\"nofollow\">@_watany</a>)</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/fe916482cb994fbbb77a06fe5786d743/D4D9D9BE-3F32-4D49-9A7C-596A029281C3.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>AWSを中心とするインフラ開発やアーキテクトとして活動する一方で、社内にてテクニカルサポートや研修講師を務める。<br>Coding Agentなど開発者向けツールに関する活動も精力的に行っている。著書に『Agentic Coding 生成AI時代のシステム開発入門』。<br>AWS Ambassador、AWS Community Builder、JAWS-UG Tokyo 運営。</p>\n</blockquote>\n<hr>\n<h2>主催</h2>\n<p><img alt=\"KINTOロゴ\" src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/86f09218f28a491ebd0b78f9b5fa27b9/black_horizontal_ns%20(3)22.png\"><br>\n<strong>KINTOテクノロジーズ株式会社</strong><br>\n<a href=\"https://www.kinto-technologies.com/\" rel=\"nofollow\">会社情報</a>　<a href=\"https://www.kinto-technologies.com/recruit/\" rel=\"nofollow\">採用情報</a><br>\nKINTOテクノロジーズは、トヨタグループ各社が展開するモビリティサービスやビジネスをテクノロジーで支援するために創設されたテックカンパニーです。 トヨタグループ内でも唯一の「BtoC・DtoC領域に特化した内製開発組織」であり、世界30ヵ国で展開する『KINTO』関連プロダクトや、『my route』など、クルマに乗る「人」に焦点を当てた新しいサービスの開発・運用を行っています。</p>\n<hr>\n<h2>注意事項</h2>\n<ul>\n<li>当イベントへの参加申し込みをもって、注意事項に同意したものとみなします。</li>\n<li>イベント会場へは応募した本人だけが入場できます。</li>\n<li>交通費は自己負担です。</li>\n<li>当イベントの風景は撮影します。イベント風景、発言内容などは記事や投稿に使用する予定です。ご参加頂く方は写真撮影等に映り込む可能性がありますのでご了承ください。また、イベントにおいて記録された発言内容について、参加者は著作者人格権を行使しないものとします。</li>\n<li>参加者による写真やビデオ撮影、録音は原則禁止です。</li>\n<li>事故・盗難・怪我・参加者間のトラブルに我々は責任を負いません。</li>\n<li>進行を妨げる方には退出いただく場合がございます。</li>\n<li>勧誘行為を禁止します。飲食や勧誘などを主目的とした参加は固くお断りします。</li>\n<li>営業、また営利活動などをお断りします。</li>\n<li>会場では簡単なアンケートをお願いする予定です。ご協力をお願いします！</li>\n</ul>\n<hr>\n<h2>個人情報の取り扱いについて</h2>\n<p>当イベントでは、参加者の氏名やメールアドレスなどの個人情報を収集する場合があります。また、アンケートフォーム等にてご入力いただいた情報は、KINTOテクノロジーズ株式会社が取得及び管理します。収集した個人情報について、KINTOテクノロジーズ株式会社は以下の利用目的の範囲内において利用いたします。</p>\n<ul>\n<li>KINTOテクノロジーズ主催もしくは共催イベントのコンテンツ企画やイベントの満足度向上の目的のみに利用します。</li>\n</ul>",
-      "url": "https://kinto-technologies.connpass.com/event/398365/",
-      "image_url": "https://media.connpass.com/thumbs/4e/fd/4efdf792c1fe7c9843c50194ea6c10a6.png",
-      "hash_tag": "AINativeTokyo",
-      "started_at": "2026-08-06T19:00:00+09:00",
-      "ended_at": "2026-08-06T21:00:00+09:00",
-      "published_at": "2026-06-25T21:20:32+09:00",
-      "limit": 50,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13913,
-        "subdomain": "kinto-technologies",
-        "title": "KINTOテクノロジーズ株式会社",
-        "url": "https://kinto-technologies.connpass.com/"
-      },
-      "address": "東京都中央区日本橋室町2-3-1室町古河三井ビルディング(COREDO室町2) 16F",
-      "place": "KINTOテクノロジーズ　室町オフィス",
-      "lat": "35.686843000000",
-      "lon": "139.774823700000",
-      "owner_id": 898621,
-      "owner_nickname": "KTC_saiyo",
-      "owner_display_name": "KTC_saiyo",
-      "accepted": 50,
-      "waiting": 0,
-      "updated_at": "2026-07-24T14:24:23+09:00"
     },
     {
       "id": 398611,
@@ -340,6 +309,37 @@
       "updated_at": "2026-07-24T16:16:04+09:00"
     },
     {
+      "id": 398365,
+      "title": "AI Native Dev Night Tokyo",
+      "catch": "〜AI駆動開発の理論と実践〜",
+      "description": "<h2><strong>【オンライン視聴枠も追加しました】</strong></h2>\n<p>おかげさまで会場（オフライン）枠へ多くのお申し込みをいただき、満員に近づいております。<br>\n「遠方で会場に行けない」「オンラインでも視聴したい」というお声にお応えし、【オンライン視聴枠】を新設しました。<br>\n会場にお越しになれない方は、こちらからご参加ください。<br></p>\n<p>▼オンライン視聴枠はこちら<br>\n<a href=\"https://kinto-technologies.connpass.com/event/400869/\" rel=\"nofollow\">https://kinto-technologies.connpass.com/event/400869/</a> <br>\n<font color=\"red\">※両イベントページへの重複応募不可</font></p>\n<hr>\n<h1><strong>AI Native Dev Night Tokyo 〜AI駆動開発の理論と実践〜</strong></h1>\n<p>生成AIによる開発支援は「コードを速く書く」段階を越え、要件定義・設計・テスト・運用までを含むソフトウェアライフサイクル全体をどう再構成するか、という問いに移りつつあります。</p>\n<p>一方で、エンタープライズ開発の現場では <strong>整合性・トレーサビリティ・大規模性</strong> といった、Webサービス開発とは異なる難しさがあります。</p>\n<p><strong>AI Native Dev Night Tokyo</strong> は、そうした <strong>「理論的な裏付けを持ったAI駆動開発」</strong> にフォーカスします。流行を追うだけのTipsではなく、なぜそのアプローチが有効なのか、どこに限界があるのかを、第一線の実務者・研究者と一緒に考える場です。</p>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>エンタープライズ／大規模システムでAI駆動開発の適用を検討しているエンジニア</li>\n<li>AIによる設計・実装の「精度」と「整合性」をどう担保するかに関心がある方</li>\n<li>バイブコーディングの先にある、設計論・アーキテクチャ論を深めたい方</li>\n<li>同じ課題感を持つエンジニアと議論・交流したい方</li>\n</ul>\n<hr>\n<h2>開催概要</h2>\n<p>・日時：2026年8月6日（木） 19:00〜21:00<br>\n・会場：KINTOテクノロジーズ　室町オフィス<br>\n　　　　（東京都中央区日本橋室町2-3-1室町古河三井ビルディング(COREDO室町2)<br>\n・参加費：無料（懇親会費込み）<br></p>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>受付開始</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>オープニング・会社紹介</td>\n</tr>\n<tr>\n<td>19:10</td>\n<td>Scalar CTO 山田 浩之 様 <br>（仮）マイクロサービスにおけるトランザクション管理再考― AI駆動開発が直面するデータ整合性の課題と解決策</td>\n</tr>\n<tr>\n<td>19:40</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>19:50</td>\n<td>KINTOテクノロジーズ 森田 和明様 <br>（仮）社内AI Native Dev活動の歩み - AIネイティブな組織を目指して</td>\n</tr>\n<tr>\n<td>20:10</td>\n<td>NTTテクノクロス 渡邉 洋平様 <br>（仮）仕様駆動開発の消費期限</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>懇親会（〜21:00）</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>登壇者</h2>\n<h3>山田 浩之(Scalar, Inc. CTO)(<a href=\"https://x.com/feeblefakie\" rel=\"nofollow\">@feeblefakie</a>)<br></h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/9a65ec2badd148dba94f38d0dc5d0222/profile.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>Scalar, Inc. 最高技術責任者。博士（情報理工学）。 ヤフー、IPA未踏事業、東京大学生産技術研究所（現任）等において一貫して分散データベースの研究開発に従事。 2017年にScalarを創業し、データ管理における信頼性の課題を解決するミドルウェア製品であるScalarDB（VLDB'23採録）とScalarDL（VLDB'22採録）の研究開発を開始。 2023年から米国における事業展開を開始。</p>\n</blockquote>\n<h3>森田 和明（KINTOテクノロジーズ株式会社 Principal Generative AI Engineer ）(<a href=\"https://x.com/moritalous\" rel=\"nofollow\">@moritalous</a>)</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/51eaf47539ca4d28b7cd58dd62f12367/Avator.png\" width=\"200\"><br></p>\n<blockquote>\n<p>社内の生成AI活用推進やグループ企業へのAI導入支援に従事。過去にAWS Ambassador、Japan AWS Top Engineerに選出。現在はAWS Community Builderとして活動中。<br>著書に、『Amazon Bedrock AgentCore 実践入門 Strands Agentsで構築するAIエージェント [AWS深掘りガイド]』（SBクリエイティブ）、『AWSではじめるMCP実践ガイド』（技術評論社）、『Amazon Bedrock 生成AIアプリ開発入門［AWS深掘りガイド］』（SBクリエイティブ）。</p>\n</blockquote>\n<h3>渡邉 洋平/watany（NTTテクノクロス株式会社）(<a href=\"https://x.com/_watany\" rel=\"nofollow\">@_watany</a>)</h3>\n<p><img src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/fe916482cb994fbbb77a06fe5786d743/D4D9D9BE-3F32-4D49-9A7C-596A029281C3.jpg\" width=\"200\"><br></p>\n<blockquote>\n<p>AWSを中心とするインフラ開発やアーキテクトとして活動する一方で、社内にてテクニカルサポートや研修講師を務める。<br>Coding Agentなど開発者向けツールに関する活動も精力的に行っている。著書に『Agentic Coding 生成AI時代のシステム開発入門』。<br>AWS Ambassador、AWS Community Builder、JAWS-UG Tokyo 運営。</p>\n</blockquote>\n<hr>\n<h2>主催</h2>\n<p><img alt=\"KINTOロゴ\" src=\"https://images.microcms-assets.io/assets/da7c0038a35e4eca89b8e56f040e91df/86f09218f28a491ebd0b78f9b5fa27b9/black_horizontal_ns%20(3)22.png\"><br>\n<strong>KINTOテクノロジーズ株式会社</strong><br>\n<a href=\"https://www.kinto-technologies.com/\" rel=\"nofollow\">会社情報</a>　<a href=\"https://www.kinto-technologies.com/recruit/\" rel=\"nofollow\">採用情報</a><br>\nKINTOテクノロジーズは、トヨタグループ各社が展開するモビリティサービスやビジネスをテクノロジーで支援するために創設されたテックカンパニーです。 トヨタグループ内でも唯一の「BtoC・DtoC領域に特化した内製開発組織」であり、世界30ヵ国で展開する『KINTO』関連プロダクトや、『my route』など、クルマに乗る「人」に焦点を当てた新しいサービスの開発・運用を行っています。</p>\n<hr>\n<h2>注意事項</h2>\n<ul>\n<li>当イベントへの参加申し込みをもって、注意事項に同意したものとみなします。</li>\n<li>イベント会場へは応募した本人だけが入場できます。</li>\n<li>交通費は自己負担です。</li>\n<li>当イベントの風景は撮影します。イベント風景、発言内容などは記事や投稿に使用する予定です。ご参加頂く方は写真撮影等に映り込む可能性がありますのでご了承ください。また、イベントにおいて記録された発言内容について、参加者は著作者人格権を行使しないものとします。</li>\n<li>参加者による写真やビデオ撮影、録音は原則禁止です。</li>\n<li>事故・盗難・怪我・参加者間のトラブルに我々は責任を負いません。</li>\n<li>進行を妨げる方には退出いただく場合がございます。</li>\n<li>勧誘行為を禁止します。飲食や勧誘などを主目的とした参加は固くお断りします。</li>\n<li>営業、また営利活動などをお断りします。</li>\n<li>会場では簡単なアンケートをお願いする予定です。ご協力をお願いします！</li>\n</ul>\n<hr>\n<h2>個人情報の取り扱いについて</h2>\n<p>当イベントでは、参加者の氏名やメールアドレスなどの個人情報を収集する場合があります。また、アンケートフォーム等にてご入力いただいた情報は、KINTOテクノロジーズ株式会社が取得及び管理します。収集した個人情報について、KINTOテクノロジーズ株式会社は以下の利用目的の範囲内において利用いたします。</p>\n<ul>\n<li>KINTOテクノロジーズ主催もしくは共催イベントのコンテンツ企画やイベントの満足度向上の目的のみに利用します。</li>\n</ul>",
+      "url": "https://kinto-technologies.connpass.com/event/398365/",
+      "image_url": "https://media.connpass.com/thumbs/4e/fd/4efdf792c1fe7c9843c50194ea6c10a6.png",
+      "hash_tag": "AINativeTokyo",
+      "started_at": "2026-08-06T19:00:00+09:00",
+      "ended_at": "2026-08-06T21:00:00+09:00",
+      "published_at": "2026-06-25T21:20:32+09:00",
+      "limit": 50,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13913,
+        "subdomain": "kinto-technologies",
+        "title": "KINTOテクノロジーズ株式会社",
+        "url": "https://kinto-technologies.connpass.com/"
+      },
+      "address": "東京都中央区日本橋室町2-3-1室町古河三井ビルディング(COREDO室町2) 16F",
+      "place": "KINTOテクノロジーズ　室町オフィス",
+      "lat": "35.686843000000",
+      "lon": "139.774823700000",
+      "owner_id": 898621,
+      "owner_nickname": "KTC_saiyo",
+      "owner_display_name": "KTC_saiyo",
+      "accepted": 50,
+      "waiting": 0,
+      "updated_at": "2026-07-24T14:24:23+09:00"
+    },
+    {
       "id": 399854,
       "title": "FPGAX #15  AIで変わるFPGA！1bit LLMから実機チップデモまで",
       "catch": "",
@@ -366,7 +366,7 @@
       "owner_id": 1032236,
       "owner_nickname": "sato_pr_tai",
       "owner_display_name": "sato_pr_tai",
-      "accepted": 224,
+      "accepted": 225,
       "waiting": 0,
       "updated_at": "2026-08-04T14:57:16+09:00"
     },
@@ -428,7 +428,7 @@
       "owner_id": 23847,
       "owner_nickname": "ebyhr",
       "owner_display_name": "Yuya Ebihara",
-      "accepted": 125,
+      "accepted": 124,
       "waiting": 0,
       "updated_at": "2026-07-17T14:06:34+09:00"
     },
