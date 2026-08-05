@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-05T20:13:04.508516+09:00",
+  "fetched_at": "2026-08-05T22:48:09.959153+09:00",
   "date": "20260805",
   "count": 9,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-08T17:57:34+09:00",
       "limit": 105,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2758,
         "subdomain": "golangtokyo",
@@ -47,7 +47,7 @@
       "published_at": "2026-07-06T08:01:05+09:00",
       "limit": 24,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16120,
         "subdomain": "replus",
@@ -66,6 +66,37 @@
       "updated_at": "2026-08-05T19:26:03+09:00"
     },
     {
+      "id": 399324,
+      "title": "AIの波に置いていかれた気がしている、忙しいPMへ",
+      "catch": "焦りと違和感から考える、これからのPMの役割｜GENDA Growth Lounge #4",
+      "description": "<h3>AIの波に置いていかれた気がしている、忙しいPMへ - 焦りと違和感から考える、これからのPMの役割</h3>\n<h4>開催概要</h4>\n<p>「GENDA Growth Lounge」は、株式会社GENDAが主催するプロダクトマネージャー向けのミートアップイベントです。</p>\n<p>「AIで誰でも作れる」と言われる時代になりました。一方でXや登壇イベントでは“強い人”の声ばかりが目立ち、「自分は追いつけていないのでは」という迷いを、口に出しづらくなっていないでしょうか。</p>\n<p>でも実際は、AIとの向き合い方は人それぞれです。使いこなすことに手応えを感じている人もいれば、あえて声高に語らず、プロダクトマネジメントの本質に軸足を置いている人もいます。抱えている問いも、立場によって違います。「作りたいものが分からなくなった」「興味を持てない自分は駄目なのか」「メンバーやジュニアに何を学ばせればいいのか」。</p>\n<p>今回は、AIを体系立てて実践する人、事業責任者としてAIで変わる組織に向き合う人、プロダクトマネジメントの本質に愚直に向き合う人、そして事業会社で組織を率いながら自らも手を動かす人。それぞれの現場から、きれいごとではない本音と葛藤を持ち寄ります。</p>\n<p>教科書通りにはいかない、ここでしか聞けない生の本音を、限定トークで深掘りします。賛否の分かれるお題は会場の投票で選び、登壇者と参加者が一緒に、最後は「結局、AI時代にPMの価値はどこに残るのか」を考えます。</p>\n<h4>こんな方におすすめ</h4>\n<ul>\n<li>AIの使い方以前に、AI時代に自分の価値がどこに残るのか迷っている方</li>\n<li>「PMはもう手を動かすべき」という風潮に、どこか追いつけなさを感じている方</li>\n<li>AIを使いこなす発信が目立つなか、自分のペースで向き合いたいと感じている方</li>\n<li>チームやジュニアの育成に、AIをどう組み込むべきか悩んでいる管理職・リードの方</li>\n<li>AIを実務に取り入れつつ、その先の価値の出し方を問い直したい方</li>\n<li>聞くだけでなく、登壇者に直接ぶつけてみたい問いがある方</li>\n</ul>\n<h2>登壇者（敬称略）</h2>\n<h3>大倉 悠輝</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/04/%E5%A4%A7%E5%80%89%E6%82%A0%E8%BC%9D.png\" width=\"160\"><br>\n<strong><font size=\"2\">株式会社GENDA Customer Experience部</font></strong> <br>\n<strong><font size=\"2\">モデレーター</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/eternalshining\" rel=\"nofollow\">@eternalshining</a></font></strong> <br></p>\n<p>2006年に大手メディアのグループ会社に入社し、システム開発・プロジェクトマネジメントの領域でキャリアをスタート。ECスタートアップでの事業経験を経て同社に再入社後は、「Hulu」日本版ローカライズなど大規模動画配信サービスのプロジェクトマネジメントを担当。2019年に株式会社カオナビへ入社し、プロダクトマネージャーにキャリアチェンジ。toB SaaSのプロダクトマネジメントに7年間従事し、労務領域プロダクトの立ち上げ・事業化をリードした。2026年5月にGENDAへ入社し、現在は「GENDA ID」をはじめとするtoC領域のプロダクトマネジメントに携わる。プロダクトマネージャーカンファレンス（pmconf）理事。</p>\n<h3>千葉 俊輝</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/01/千葉俊輝.png\" width=\"160\"><br>\n<strong><font size=\"2\">株式会社GENDA Customer Experience部 部長/映画.com株式会社 取締役 CPO</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/104kn\" rel=\"nofollow\">@104kn</a></font></strong> <br></p>\n<p>新卒でヤフー株式会社に入社し、『Yahoo! JAPAN』『乗換案内』など大規模サービスの開発を担当。株式会社リクルートでは『ホットペッパービューティー』のグループマネージャーを務め、事業成長に貢献。在籍中に株式会社SCOOOOPを設立し、代表取締役としてプロダクト企画・開発を牽引。仙台移住を機にGENDAへ入社し、1人目のプロダクトマネージャーとしてPM組織を立ち上げた。現在はGENDAのCX部 部長としてエンタメ領域のプロダクトを統括し、映画.com株式会社では、取締役CPOの立場から戦略と成長を推進している。</p>\n<h3>柳川 慶太</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/01/%E6%9F%B3%E5%B7%9D%E6%85%B6%E5%A4%AA.png\" width=\"160\"><br>\n<strong><font size=\"2\">BASE株式会社 執行役員</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/gimupop\" rel=\"nofollow\">@gimupop</a></font></strong> <br></p>\n<p>1991年生まれ、神奈川県出身。横浜市立大学国際総合科学部卒業後、TIS株式会社に入社。クレジットカード基幹システムの開発に従事。その後、株式会社マイクロアドでのDSPシステム開発を経て、2017年7月にBASE株式会社に入社。入社後はショップコインや「YELL BANK」の開発を経た後に、2019年よりプロダクトマネージャーへキャリアチェンジし「YELL BANK」のグロースに従事。並行して「BASEカード」や「<a href=\"http://PAY.JP\" rel=\"nofollow\">PAY.JP</a> YELL BANK」の開発を推進する。2025年よりBASE BANK Department Managerとして同事業を統括。2025年3月27日付で執行役員に就任。 </p>\n<h3>飯沼 亜紀</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/01/%E9%A3%AF%E6%B2%BC%E4%BA%9C%E7%B4%80.png\" width=\"160\"><br>\n<strong><font size=\"2\">無所属</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/LoveIdahoBurger\" rel=\"nofollow\">@LoveIdahoBurger</a></font></strong> <br></p>\n<p>大学で人間工学を学び、ソニーグループのソフトウェア企業に新卒入社。ユニクロおよびファーストリテイリングでは新規事業立ち上げ、EC・デジタルコマース領域で国内外のプロダクトマネジメントを推進した。日本マクドナルドではモバイルオーダー立ち上げをはじめとするデジタル施策全般を統括し、店舗オペレーションと融合した新しい体験を構築。キャディではプロダクトマネジメントに加え、プログラムマネジメントやプロダクトデザイン組織もリードし、事業と組織づくりの双方に取り組んだ。その後独立・起業を経て、現在はスタートアップから大企業まで幅広い企業のプロダクト開発や新規事業開発を支援している。著書に『Noを伝える技術』がある。</p>\n<h3>宮田 大督</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/04/%E5%AE%AE%E7%94%B0%E5%A4%A7%E7%9D%A3.png\" width=\"160\"><br>\n<strong><font size=\"2\">株式会社エクスプラザ CPO</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/miyatti\" rel=\"nofollow\">@miyatti</a></font></strong> <br></p>\n<p>慶應義塾大学大学院修了。NTTコミュニケーションズ、メルカリ、エクサウィザーズ、Gaudiyなど多様なサービスでのPdM経験を経て、2025年に株式会社エクスプラザにCPOとして入社。\n新規サービス立ち上げやプロダクト組織マネジメントなど、15年以上のPdM経験を持つ。生成AI×PdM領域に特化し、Explazaでは、生成AIワークフローサービス「Palma」の立ち上げや、新規プロダクト開発企業の業務フローのAI化支援および、社会全体への生成AIに関するエバンジェリスト活動として活用法などの発信や登壇を行っている。</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:30</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: left;\">Opening</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05</td>\n<td style=\"text-align: left;\">登壇者自己紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:15</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:15</td>\n<td style=\"text-align: left;\">Q&amp;A・Closing</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:25</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:30</td>\n<td style=\"text-align: left;\">終了</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>受付時間：18:30~19:00</li>\n<li>会場：Aivicスペース渋谷（〒150-0002 東京都渋谷区渋谷2-22-6 幸和ビル 10階）</li>\n</ul>\n<h2>注意事項</h2>\n<ul>\n<li>イベント内容やスケジュールは、予告なく変更となる場合があります。あらかじめご了承ください。 <br></li>\n<li>ブログやSNS等でイベントに関する発信を行う際は、参加者の方の写り込み等の配慮をお願いします。<br></li>\n<li>イベント内でのリクルーティング活動、営業・勧誘活動（保険、宗教、ネットワークビジネス等）は禁止致します。 <br></li>\n<li>運営にて不適切だと判断した場合は、イベント中でもご退席をお願いする場合がございます。<br></li>\n</ul>\n<h2>個人情報の取扱いについて</h2>\n<p>当イベントへの参加申し込みをもちまして、以下個人情報に関する注意事項に同意頂いたものとみなします。</p>\n<p>①個人情報の利用目的： <br>\n・自社や共催企業の製品、サービス、及びイベント等に関する案内のため <br>\n・自社の採用活動に関する情報提供のため <br>\n・お問合せへのご回答 <br>\n・その他上記に付随する業務 <br></p>\n<p>②個人情報の提供について： <br>\nお預かりした個人情報については、主催者である株式会社GENDAが管理致します。それ以外の第三者に提供することは、ご本人様の同意がある場合又は法令に基づく場合を除きありません。</p>\n<p>③その他：個人情報取扱い管理の詳細については、以下のリンクを参照してください。<br>\n<a href=\"https://genda.jp/privacy/\" rel=\"nofollow\">株式会社GENDA プライバシーポリシー</a> <br></p>",
+      "url": "https://genda.connpass.com/event/399324/",
+      "image_url": "https://media.connpass.com/thumbs/c5/d5/c5d559fe226dd3a56f5c2fc7379f0770.png",
+      "hash_tag": "グロラ",
+      "started_at": "2026-08-05T19:00:00+09:00",
+      "ended_at": "2026-08-05T21:30:00+09:00",
+      "published_at": "2026-07-14T18:34:49+09:00",
+      "limit": 40,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 16514,
+        "subdomain": "genda",
+        "title": "GENDA",
+        "url": "https://genda.connpass.com/"
+      },
+      "address": "東京都渋谷区渋谷2丁目22-6幸和ビル10階",
+      "place": "Aivicスペース渋谷",
+      "lat": "35.658466600000",
+      "lon": "139.703852700000",
+      "owner_id": 67747,
+      "owner_nickname": "TakumiFunasaka",
+      "owner_display_name": "funasaka",
+      "accepted": 40,
+      "waiting": 2,
+      "updated_at": "2026-08-04T14:35:54+09:00"
+    },
+    {
       "id": 401155,
       "title": "AIコーディングエージェント知見共有会",
       "catch": "AIコーディングエージェントの実践ノウハウを共有するゆるい勉強会",
@@ -78,7 +109,7 @@
       "published_at": "2026-07-21T18:30:42+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12277,
         "subdomain": "fffff",
@@ -109,7 +140,7 @@
       "published_at": "2026-07-06T13:12:29+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13913,
         "subdomain": "kinto-technologies",
@@ -128,37 +159,6 @@
       "updated_at": "2026-08-03T11:05:14+09:00"
     },
     {
-      "id": 399324,
-      "title": "AIの波に置いていかれた気がしている、忙しいPMへ",
-      "catch": "焦りと違和感から考える、これからのPMの役割｜GENDA Growth Lounge #4",
-      "description": "<h3>AIの波に置いていかれた気がしている、忙しいPMへ - 焦りと違和感から考える、これからのPMの役割</h3>\n<h4>開催概要</h4>\n<p>「GENDA Growth Lounge」は、株式会社GENDAが主催するプロダクトマネージャー向けのミートアップイベントです。</p>\n<p>「AIで誰でも作れる」と言われる時代になりました。一方でXや登壇イベントでは“強い人”の声ばかりが目立ち、「自分は追いつけていないのでは」という迷いを、口に出しづらくなっていないでしょうか。</p>\n<p>でも実際は、AIとの向き合い方は人それぞれです。使いこなすことに手応えを感じている人もいれば、あえて声高に語らず、プロダクトマネジメントの本質に軸足を置いている人もいます。抱えている問いも、立場によって違います。「作りたいものが分からなくなった」「興味を持てない自分は駄目なのか」「メンバーやジュニアに何を学ばせればいいのか」。</p>\n<p>今回は、AIを体系立てて実践する人、事業責任者としてAIで変わる組織に向き合う人、プロダクトマネジメントの本質に愚直に向き合う人、そして事業会社で組織を率いながら自らも手を動かす人。それぞれの現場から、きれいごとではない本音と葛藤を持ち寄ります。</p>\n<p>教科書通りにはいかない、ここでしか聞けない生の本音を、限定トークで深掘りします。賛否の分かれるお題は会場の投票で選び、登壇者と参加者が一緒に、最後は「結局、AI時代にPMの価値はどこに残るのか」を考えます。</p>\n<h4>こんな方におすすめ</h4>\n<ul>\n<li>AIの使い方以前に、AI時代に自分の価値がどこに残るのか迷っている方</li>\n<li>「PMはもう手を動かすべき」という風潮に、どこか追いつけなさを感じている方</li>\n<li>AIを使いこなす発信が目立つなか、自分のペースで向き合いたいと感じている方</li>\n<li>チームやジュニアの育成に、AIをどう組み込むべきか悩んでいる管理職・リードの方</li>\n<li>AIを実務に取り入れつつ、その先の価値の出し方を問い直したい方</li>\n<li>聞くだけでなく、登壇者に直接ぶつけてみたい問いがある方</li>\n</ul>\n<h2>登壇者（敬称略）</h2>\n<h3>大倉 悠輝</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/04/%E5%A4%A7%E5%80%89%E6%82%A0%E8%BC%9D.png\" width=\"160\"><br>\n<strong><font size=\"2\">株式会社GENDA Customer Experience部</font></strong> <br>\n<strong><font size=\"2\">モデレーター</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/eternalshining\" rel=\"nofollow\">@eternalshining</a></font></strong> <br></p>\n<p>2006年に大手メディアのグループ会社に入社し、システム開発・プロジェクトマネジメントの領域でキャリアをスタート。ECスタートアップでの事業経験を経て同社に再入社後は、「Hulu」日本版ローカライズなど大規模動画配信サービスのプロジェクトマネジメントを担当。2019年に株式会社カオナビへ入社し、プロダクトマネージャーにキャリアチェンジ。toB SaaSのプロダクトマネジメントに7年間従事し、労務領域プロダクトの立ち上げ・事業化をリードした。2026年5月にGENDAへ入社し、現在は「GENDA ID」をはじめとするtoC領域のプロダクトマネジメントに携わる。プロダクトマネージャーカンファレンス（pmconf）理事。</p>\n<h3>千葉 俊輝</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/01/千葉俊輝.png\" width=\"160\"><br>\n<strong><font size=\"2\">株式会社GENDA Customer Experience部 部長/映画.com株式会社 取締役 CPO</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/104kn\" rel=\"nofollow\">@104kn</a></font></strong> <br></p>\n<p>新卒でヤフー株式会社に入社し、『Yahoo! JAPAN』『乗換案内』など大規模サービスの開発を担当。株式会社リクルートでは『ホットペッパービューティー』のグループマネージャーを務め、事業成長に貢献。在籍中に株式会社SCOOOOPを設立し、代表取締役としてプロダクト企画・開発を牽引。仙台移住を機にGENDAへ入社し、1人目のプロダクトマネージャーとしてPM組織を立ち上げた。現在はGENDAのCX部 部長としてエンタメ領域のプロダクトを統括し、映画.com株式会社では、取締役CPOの立場から戦略と成長を推進している。</p>\n<h3>柳川 慶太</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/01/%E6%9F%B3%E5%B7%9D%E6%85%B6%E5%A4%AA.png\" width=\"160\"><br>\n<strong><font size=\"2\">BASE株式会社 執行役員</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/gimupop\" rel=\"nofollow\">@gimupop</a></font></strong> <br></p>\n<p>1991年生まれ、神奈川県出身。横浜市立大学国際総合科学部卒業後、TIS株式会社に入社。クレジットカード基幹システムの開発に従事。その後、株式会社マイクロアドでのDSPシステム開発を経て、2017年7月にBASE株式会社に入社。入社後はショップコインや「YELL BANK」の開発を経た後に、2019年よりプロダクトマネージャーへキャリアチェンジし「YELL BANK」のグロースに従事。並行して「BASEカード」や「<a href=\"http://PAY.JP\" rel=\"nofollow\">PAY.JP</a> YELL BANK」の開発を推進する。2025年よりBASE BANK Department Managerとして同事業を統括。2025年3月27日付で執行役員に就任。 </p>\n<h3>飯沼 亜紀</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/01/%E9%A3%AF%E6%B2%BC%E4%BA%9C%E7%B4%80.png\" width=\"160\"><br>\n<strong><font size=\"2\">無所属</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/LoveIdahoBurger\" rel=\"nofollow\">@LoveIdahoBurger</a></font></strong> <br></p>\n<p>大学で人間工学を学び、ソニーグループのソフトウェア企業に新卒入社。ユニクロおよびファーストリテイリングでは新規事業立ち上げ、EC・デジタルコマース領域で国内外のプロダクトマネジメントを推進した。日本マクドナルドではモバイルオーダー立ち上げをはじめとするデジタル施策全般を統括し、店舗オペレーションと融合した新しい体験を構築。キャディではプロダクトマネジメントに加え、プログラムマネジメントやプロダクトデザイン組織もリードし、事業と組織づくりの双方に取り組んだ。その後独立・起業を経て、現在はスタートアップから大企業まで幅広い企業のプロダクト開発や新規事業開発を支援している。著書に『Noを伝える技術』がある。</p>\n<h3>宮田 大督</h3>\n<p><img src=\"https://genda.jp/wp-content/themes/genda/assets/GENDA_Growth_Lounge/04/%E5%AE%AE%E7%94%B0%E5%A4%A7%E7%9D%A3.png\" width=\"160\"><br>\n<strong><font size=\"2\">株式会社エクスプラザ CPO</font></strong> <br>\n<strong><font size=\"2\"><a href=\"https://x.com/miyatti\" rel=\"nofollow\">@miyatti</a></font></strong> <br></p>\n<p>慶應義塾大学大学院修了。NTTコミュニケーションズ、メルカリ、エクサウィザーズ、Gaudiyなど多様なサービスでのPdM経験を経て、2025年に株式会社エクスプラザにCPOとして入社。\n新規サービス立ち上げやプロダクト組織マネジメントなど、15年以上のPdM経験を持つ。生成AI×PdM領域に特化し、Explazaでは、生成AIワークフローサービス「Palma」の立ち上げや、新規プロダクト開発企業の業務フローのAI化支援および、社会全体への生成AIに関するエバンジェリスト活動として活用法などの発信や登壇を行っている。</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:30</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: left;\">Opening</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05</td>\n<td style=\"text-align: left;\">登壇者自己紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:15</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:15</td>\n<td style=\"text-align: left;\">Q&amp;A・Closing</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:25</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:30</td>\n<td style=\"text-align: left;\">終了</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>受付時間：18:30~19:00</li>\n<li>会場：Aivicスペース渋谷（〒150-0002 東京都渋谷区渋谷2-22-6 幸和ビル 10階）</li>\n</ul>\n<h2>注意事項</h2>\n<ul>\n<li>イベント内容やスケジュールは、予告なく変更となる場合があります。あらかじめご了承ください。 <br></li>\n<li>ブログやSNS等でイベントに関する発信を行う際は、参加者の方の写り込み等の配慮をお願いします。<br></li>\n<li>イベント内でのリクルーティング活動、営業・勧誘活動（保険、宗教、ネットワークビジネス等）は禁止致します。 <br></li>\n<li>運営にて不適切だと判断した場合は、イベント中でもご退席をお願いする場合がございます。<br></li>\n</ul>\n<h2>個人情報の取扱いについて</h2>\n<p>当イベントへの参加申し込みをもちまして、以下個人情報に関する注意事項に同意頂いたものとみなします。</p>\n<p>①個人情報の利用目的： <br>\n・自社や共催企業の製品、サービス、及びイベント等に関する案内のため <br>\n・自社の採用活動に関する情報提供のため <br>\n・お問合せへのご回答 <br>\n・その他上記に付随する業務 <br></p>\n<p>②個人情報の提供について： <br>\nお預かりした個人情報については、主催者である株式会社GENDAが管理致します。それ以外の第三者に提供することは、ご本人様の同意がある場合又は法令に基づく場合を除きありません。</p>\n<p>③その他：個人情報取扱い管理の詳細については、以下のリンクを参照してください。<br>\n<a href=\"https://genda.jp/privacy/\" rel=\"nofollow\">株式会社GENDA プライバシーポリシー</a> <br></p>",
-      "url": "https://genda.connpass.com/event/399324/",
-      "image_url": "https://media.connpass.com/thumbs/c5/d5/c5d559fe226dd3a56f5c2fc7379f0770.png",
-      "hash_tag": "グロラ",
-      "started_at": "2026-08-05T19:00:00+09:00",
-      "ended_at": "2026-08-05T21:30:00+09:00",
-      "published_at": "2026-07-14T18:34:49+09:00",
-      "limit": 40,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 16514,
-        "subdomain": "genda",
-        "title": "GENDA",
-        "url": "https://genda.connpass.com/"
-      },
-      "address": "東京都渋谷区渋谷2丁目22-6幸和ビル10階",
-      "place": "Aivicスペース渋谷",
-      "lat": "35.658466600000",
-      "lon": "139.703852700000",
-      "owner_id": 67747,
-      "owner_nickname": "TakumiFunasaka",
-      "owner_display_name": "funasaka",
-      "accepted": 40,
-      "waiting": 2,
-      "updated_at": "2026-08-04T14:35:54+09:00"
-    },
-    {
       "id": 401265,
       "title": "（増枠！）Claude Code Skills利用Skill Top5 誕生と運用の苦労も大公開！",
       "catch": "",
@@ -171,7 +171,7 @@
       "published_at": "2026-07-24T08:31:23+09:00",
       "limit": 370,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17529,
         "subdomain": "findy-aiplus",
@@ -185,7 +185,7 @@
       "owner_id": 1030071,
       "owner_nickname": "daigos432_findy",
       "owner_display_name": "daigos432_findy",
-      "accepted": 306,
+      "accepted": 308,
       "waiting": 0,
       "updated_at": "2026-08-05T15:41:57+09:00"
     },
@@ -202,7 +202,7 @@
       "published_at": "2026-07-10T18:00:00+09:00",
       "limit": 160,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12394,
         "subdomain": "test-talk",
