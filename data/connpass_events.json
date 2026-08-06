@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-06T08:52:29.955694+09:00",
+  "fetched_at": "2026-08-06T10:51:19.901065+09:00",
   "date": "20260806",
   "count": 16,
   "events": [
@@ -87,7 +87,7 @@
       "owner_id": 34974,
       "owner_nickname": "hirokatsu_hayashi",
       "owner_display_name": "hirodragon",
-      "accepted": 39,
+      "accepted": 40,
       "waiting": 0,
       "updated_at": "2026-08-06T00:47:55+09:00"
     },
@@ -149,7 +149,7 @@
       "owner_id": 36484,
       "owner_nickname": "totzyuta",
       "owner_display_name": "totzyuta",
-      "accepted": 11,
+      "accepted": 10,
       "waiting": 0,
       "updated_at": "2026-07-30T18:05:45+09:00"
     },
@@ -247,37 +247,6 @@
       "updated_at": "2026-07-31T20:01:35+09:00"
     },
     {
-      "id": 400633,
-      "title": "PHPカンファレンス2026 リジェクトコン&アフターイベント",
-      "catch": "",
-      "description": "<h1>開催概要</h1>\n<h3>PHPカンファレンス2026 リジェクトコン&amp;アフターイベント</h3>\n<p>PHPカンファレンス2026に参加された皆さん、お疲れさまでした！</p>\n<p>学びや新たなつながりを与えてくれた珠玉のセッションの数々…その裏には「プロポーザル提出したものの、惜しくも採択に至らなかったトーク」も沢山ありました。そんな陽の目を見なかったトークや、カンファレンスの熱量を受け継ぎ「今こそ語りたい！」テーマを、PHPカンファレンス2026スポンサーでもあるコドモン・BASE・クイックの3社合同で語り尽くします！！</p>\n<p>PHPを中心とした開発現場の知見や実践例を3社のエンジニアがバラエティ豊かにお届けします。カンファレンスの余韻を肴に、エンジニア同士でわいわい交流できる場にできればと思っています。PHPカンファレンスに参加された方はもちろん、参加できなかった方も大歓迎です。ぜひお気軽にご参加ください！</p>\n<h3>こんな方におすすめ</h3>\n<p>・PHPをはじめ、Webサービス開発に携わっているエンジニア</p>\n<p>・PHPカンファレンス2026の余韻をまだまだ楽しみたい方</p>\n<p>・採択されなかったトークや各社のナレッジが気になる方</p>\n<p>・他社のエンジニアとざっくばらんに交流・情報交換したい方</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45 - 19:00</td>\n<td>開場</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00 - 19:10</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:10 - 19:20</td>\n<td>LT1</td>\n<td>村松 遼（コドモン）</td>\n</tr>\n<tr>\n<td>19:20 - 19:30</td>\n<td>LT2</td>\n<td>加賀野 祐（BASE）</td>\n</tr>\n<tr>\n<td>19:30 - 19:40</td>\n<td>LT3</td>\n<td>伊藤 滉暉（クイック）</td>\n</tr>\n<tr>\n<td>19:40 - 19:50</td>\n<td>LT4</td>\n<td>權田 直輝（コドモン）</td>\n</tr>\n<tr>\n<td>19:50 - 20:00</td>\n<td>LT5</td>\n<td>meihei（BASE）</td>\n</tr>\n<tr>\n<td>20:00 - 20:10</td>\n<td>LT6</td>\n<td>森野 刀磨（クイック）</td>\n</tr>\n<tr>\n<td>20:10 - 21:00</td>\n<td>懇親会🍻</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00 - 21:05</td>\n<td>クロージング</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h1>登壇者情報</h1>\n<h2>株式会社コドモン</h2>\n<h3>コネクションをピン留めさせずに、SELECTクエリのタイムアウトを設定した話<br>村松 遼 / プロダクト開発部 エンジニア</h3>\n<p>2023年に新卒でコドモンにジョインしました。 請求関連機能チームを経て、現在はDBの負荷対策に取り組んでいます。\n最近はりゅうじのバズレシピをもとに自炊にチャレンジしてます！</p>\n<p><img src=\"https://i.gyazo.com/355a79c6752697683790c0bf69970126.png\" width=\"200\"></p>\n<h3>AI時代のPHP開発にASTクエリツール でコードベースの地図を作る<br>權田 直輝 / プロダクト開発部 エンジニア</h3>\n<p>3児の父。子どもを取り巻く環境をテクノロジーの力でよりよいものにしたいに共感し、2025年12月にコドモンへジョインしました。日々、学童向けの機能開発を中心にプロダクト開発に関わっています。</p>\n<p><img src=\"https://i.gyazo.com/802745e23d62c10e3997352132f81646.jpg\" height=\"200px\" width=\"200px\"></p>\n<h2>BASE株式会社</h2>\n<h3>カートの信頼性を担保するWireMockを使ったe2eテスト<br>加賀野 祐 / BASE Department Product Division シニアエンジニア</h3>\n<p>15年以上にわたり、WebMoneyやPayPayなど数々の決済サービスの開発を経験した後、2024年8月にBASE株式会社に入社。ネットショップ作成サービス「BASE」のカートのCheckoutモジュールのバックエンド開発を担当しており、決済の信頼性向上に日々取り組んでいます。</p>\n<p><img src=\"https://i.gyazo.com/fd6340229df7c69086d3f600d9b54210.jpg\" width=\"200\"></p>\n<h3>エンジニアの地力の鍛え方：エラーチャンネルのボールを拾い続けること<br>meihei / BASE Department Product Division エンジニア</h3>\n<p>PHPを中心としたWebサービス開発を経験し、2024年6月にBASE株式会社へ入社。ネットショップ作成サービス「BASE」の商品領域におけるバックエンド開発を担当。現在はItem Scalability Groupに所属し、商品領域全般のサービスレベル改善、技術課題解決に取り組んでいる。</p>\n<p><img src=\"https://i.gyazo.com/47a4491674d5ae18a5bcdda3e2d132b0.png\" width=\"200\"></p>\n<h2>株式会社クイック</h2>\n<h3>社内輪読会の全面的なススメ<br>伊藤 滉暉 / ソフトウェアエンジニア</h3>\n<p>2024年 新卒入社。社内の人材紹介コンサルタントが使う業務システムの開発、保守運用を担当。加えて直近は新規プロダクトの立ち上げにも参加、技術選定などにも一部関わっている。有志での勉強会を企画し、主に輪読会を継続的に開催中。</p>\n<p><img src=\"https://i.gyazo.com/f30663055346c3afdf879eb104db20b0.png\" width=\"200\"></p>\n<h3>Laravelの検索ロジックをOpenSearchで高速にしてみた件。<br>森野 刀磨 / エンジニア</h3>\n<p>2024年 新卒入社。看護師向けのto Cサービスの開発、保守運用を担当。PJでのAI活用や、保守性向上に向けた指標可視化整備を直近で実施。</p>\n<p><img src=\"https://i.gyazo.com/39dee33203b4ead252c8a744d5479956.jpg\" width=\"200\"></p>\n<h1>会社紹介</h1>\n<h2>株式会社コドモン</h2>\n<p>コドモンは「子どもの育ちや学びを社会全体で支えられる世の中へ」というビジョンのもと「子どもを取り巻く環境をテクノロジーの力でよりよいものに」をミッションに掲げ、保育・教育施設向けICTサービス「CoDMON（コドモン）」を提供しています。登降園管理や保護者とのコミュニケーション機能など、保育・教育施設で働く先生が子どもたちと向き合う時間と心のゆとりを持ってもらうために、業務負担を大幅に省力化しながら保育の質を高める環境づくりの支援をしています。他にも保活支援サービス「ホイシル」、保育者向け研修サービス「コドモンカレッジ」、保育施設向けECサイト「コドモンストア」など様々なサービスを展開しています。<br>\n・<a href=\"https://www.codmon.co.jp/recruit/\" title=\"採用サイト\" rel=\"nofollow\">採用サイト</a><br>\n・<a href=\"https://tech.codmon.com/\" rel=\"nofollow\">プロダクトチームブログ</a><br>\n<br></p>\n<h2>BASE株式会社</h2>\n<p>BASE株式会社をはじめとする当グループは「Payment to the People, Power to the People.」をミッションに掲げ、世界中の個人やスモールチーム、スタートアップをエンパワーメントし、すべての人々が活躍するための社会基盤を作っています。 創業時より提供しているネットショップ作成サービス「BASE」をはじめ、購入者向けショッピングサービス「PAY ID」、資金調達サービス「YELL BANK」、また子会社のPAY株式会社が提供するオンライン決済サービス「<a href=\"http://PAY.JP\" rel=\"nofollow\">PAY.JP</a>」等を通じて、各サービス間のシナジーを生み出しながらグループ全体での提供価値最大化を目指しています。<br>\n・<a href=\"https://binc.jp/jobs/\" title=\"採用サイト\" rel=\"nofollow\">採用サイト</a><br>\n・<a href=\"https://devblog.thebase.in/\" title=\"テックブログ\" rel=\"nofollow\">テックブログ</a><br>\n<br></p>\n<h2>株式会社クイック</h2>\n<p>人材・情報ビジネスを軸に「はたらく」を取り巻く社会課題解決に取り組むグローバルHRカンパニー。業界特化型人材紹介サービスのプロダクト開発や全社のDX推進を担っており、看護領域の看護roo!等、各領域でトップクラスのシェアを誇るサービスを数多く展開しています。</p>\n<ul>\n<li><a href=\"https://quick-wpd.notion.site/Engineer-Entrance-Book-127a446abb6a803a9a39d7b722b42832\" rel=\"nofollow\">Engineer Entrance Book</a></li>\n<li><a href=\"https://qiita.com/organizations/quick-wpd\" rel=\"nofollow\">Qiita</a></li>\n</ul>\n<h1>イベント開催についての注意事項</h1>\n<ul>\n<li>参加枠が最小遂行人数に満たない場合や関係者の急病や天災などにより、開催を延期または中止する場合がございます。</li>\n<li>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願いします。</li>\n<li>ご参加者の方々が最大限楽しんでいただけるよう、運営サイドで参加にふさわしくないと判断させていただいた方についてはご退席をお願いすることがございます<ul>\n<li>宗教、ネットワークビジネスなどの勧誘が目的と見られる方</li>\n<li>その他運営サイドで参加が不適切だと判断した方</li>\n<li>他の参加者の方や運営への迷惑行為を行った方</li>\n</ul>\n</li>\n<li>本イベントに関するご質問は、株式会社コドモンまでお願いします。PHPカンファレンス事務局への直接のお問い合わせはご遠慮くださいますようお願いいたします。</li>\n</ul>\n<h1>個人情報取り扱いについてのご案内：</h1>\n<p>本イベントで取得する個人情報のお取り扱い方針は、各社が定める以下のポリシーを参照願います。<br></p>\n<ul>\n<li><a href=\"https://www.codmon.co.jp/privacypolicy/\" title=\"プライバシーポリシー｜株式会社コドモン\" rel=\"nofollow\">プライバシーポリシー｜株式会社コドモン</a><br></li>\n<li><a href=\"https://binc.jp/privacy/\" title=\"プライバシーポリシー｜BASE株式会社\" rel=\"nofollow\">プライバシーポリシー｜BASE株式会社</a> <br></li>\n<li><a href=\"https://919.jp/privacy/\" title=\"プライバシーポリシー｜株式会社クイック\" rel=\"nofollow\">プライバシーポリシー｜株式会社クイック</a> <br></li>\n</ul>",
-      "url": "https://codmon.connpass.com/event/400633/",
-      "image_url": "https://media.connpass.com/thumbs/9e/d9/9ed9abef16128d337b5288ac2be1c769.png",
-      "hash_tag": "PHP_After",
-      "started_at": "2026-08-06T19:00:00+09:00",
-      "ended_at": "2026-08-06T21:00:00+09:00",
-      "published_at": "2026-07-17T12:52:33+09:00",
-      "limit": 40,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 9459,
-        "subdomain": "codmon",
-        "title": "コドモン | CoDMON",
-        "url": "https://codmon.connpass.com/"
-      },
-      "address": "〒141-0031　東京都品川区西五反田八丁目4番13号(五反田JPビルディング10階コドモン)",
-      "place": "コドモンオフィス",
-      "lat": "35.622417900000",
-      "lon": "139.721921800000",
-      "owner_id": 1001605,
-      "owner_nickname": "codmon",
-      "owner_display_name": "codmon",
-      "accepted": 31,
-      "waiting": 0,
-      "updated_at": "2026-08-05T13:53:40+09:00"
-    },
-    {
       "id": 401640,
       "title": "【秋葉原】もくもく会",
       "catch": "内容自由のゆるい、もくもく会です",
@@ -335,7 +304,7 @@
       "owner_id": 898621,
       "owner_nickname": "KTC_saiyo",
       "owner_display_name": "KTC_saiyo",
-      "accepted": 49,
+      "accepted": 47,
       "waiting": 0,
       "updated_at": "2026-07-24T14:24:23+09:00"
     },
@@ -366,9 +335,40 @@
       "owner_id": 1032236,
       "owner_nickname": "sato_pr_tai",
       "owner_display_name": "sato_pr_tai",
-      "accepted": 227,
+      "accepted": 233,
       "waiting": 0,
       "updated_at": "2026-08-04T14:57:16+09:00"
+    },
+    {
+      "id": 400633,
+      "title": "PHPカンファレンス2026 リジェクトコン&アフターイベント",
+      "catch": "",
+      "description": "<h1>開催概要</h1>\n<h3>PHPカンファレンス2026 リジェクトコン&amp;アフターイベント</h3>\n<p>PHPカンファレンス2026に参加された皆さん、お疲れさまでした！</p>\n<p>学びや新たなつながりを与えてくれた珠玉のセッションの数々…その裏には「プロポーザル提出したものの、惜しくも採択に至らなかったトーク」も沢山ありました。そんな陽の目を見なかったトークや、カンファレンスの熱量を受け継ぎ「今こそ語りたい！」テーマを、PHPカンファレンス2026スポンサーでもあるコドモン・BASE・クイックの3社合同で語り尽くします！！</p>\n<p>PHPを中心とした開発現場の知見や実践例を3社のエンジニアがバラエティ豊かにお届けします。カンファレンスの余韻を肴に、エンジニア同士でわいわい交流できる場にできればと思っています。PHPカンファレンスに参加された方はもちろん、参加できなかった方も大歓迎です。ぜひお気軽にご参加ください！</p>\n<h3>こんな方におすすめ</h3>\n<p>・PHPをはじめ、Webサービス開発に携わっているエンジニア</p>\n<p>・PHPカンファレンス2026の余韻をまだまだ楽しみたい方</p>\n<p>・採択されなかったトークや各社のナレッジが気になる方</p>\n<p>・他社のエンジニアとざっくばらんに交流・情報交換したい方</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45 - 19:00</td>\n<td>開場</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00 - 19:10</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:10 - 19:20</td>\n<td>LT1</td>\n<td>村松 遼（コドモン）</td>\n</tr>\n<tr>\n<td>19:20 - 19:30</td>\n<td>LT2</td>\n<td>加賀野 祐（BASE）</td>\n</tr>\n<tr>\n<td>19:30 - 19:40</td>\n<td>LT3</td>\n<td>權田 直輝（コドモン）</td>\n</tr>\n<tr>\n<td>19:40 - 19:50</td>\n<td>LT4</td>\n<td>meihei（BASE）</td>\n</tr>\n<tr>\n<td>19:50 - 20:00</td>\n<td>LT5</td>\n<td>森野 刀磨（クイック）</td>\n</tr>\n<tr>\n<td>20:00 - 21:00</td>\n<td>懇親会🍻</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00 - 21:05</td>\n<td>クロージング</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h1>登壇者情報</h1>\n<h2>株式会社コドモン</h2>\n<h3>コネクションをピン留めさせずに、SELECTクエリのタイムアウトを設定した話<br>村松 遼 / プロダクト開発部 エンジニア</h3>\n<p>2023年に新卒でコドモンにジョインしました。 請求関連機能チームを経て、現在はDBの負荷対策に取り組んでいます。\n最近はりゅうじのバズレシピをもとに自炊にチャレンジしてます！</p>\n<p><img src=\"https://i.gyazo.com/355a79c6752697683790c0bf69970126.png\" width=\"200\"></p>\n<h3>AI時代のPHP開発にASTクエリツール でコードベースの地図を作る<br>權田 直輝 / プロダクト開発部 エンジニア</h3>\n<p>3児の父。子どもを取り巻く環境をテクノロジーの力でよりよいものにしたいに共感し、2025年12月にコドモンへジョインしました。日々、学童向けの機能開発を中心にプロダクト開発に関わっています。</p>\n<p><img src=\"https://i.gyazo.com/802745e23d62c10e3997352132f81646.jpg\" height=\"200px\" width=\"200px\"></p>\n<h2>BASE株式会社</h2>\n<h3>カートの信頼性を担保するWireMockを使ったe2eテスト<br>加賀野 祐 / BASE Department Product Division シニアエンジニア</h3>\n<p>15年以上にわたり、WebMoneyやPayPayなど数々の決済サービスの開発を経験した後、2024年8月にBASE株式会社に入社。ネットショップ作成サービス「BASE」のカートのCheckoutモジュールのバックエンド開発を担当しており、決済の信頼性向上に日々取り組んでいます。</p>\n<p><img src=\"https://i.gyazo.com/fd6340229df7c69086d3f600d9b54210.jpg\" width=\"200\"></p>\n<h3>エンジニアの地力の鍛え方：エラーチャンネルのボールを拾い続けること<br>meihei / BASE Department Product Division エンジニア</h3>\n<p>PHPを中心としたWebサービス開発を経験し、2024年6月にBASE株式会社へ入社。ネットショップ作成サービス「BASE」の商品領域におけるバックエンド開発を担当。現在はItem Scalability Groupに所属し、商品領域全般のサービスレベル改善、技術課題解決に取り組んでいる。</p>\n<p><img src=\"https://i.gyazo.com/47a4491674d5ae18a5bcdda3e2d132b0.png\" width=\"200\"></p>\n<h3>Laravelの検索ロジックをOpenSearchで高速にしてみた件。<br>森野 刀磨 / エンジニア</h3>\n<p>2024年 新卒入社。看護師向けのto Cサービスの開発、保守運用を担当。PJでのAI活用や、保守性向上に向けた指標可視化整備を直近で実施。</p>\n<p><img src=\"https://i.gyazo.com/39dee33203b4ead252c8a744d5479956.jpg\" width=\"200\"></p>\n<h1>会社紹介</h1>\n<h2>株式会社コドモン</h2>\n<p>コドモンは「子どもの育ちや学びを社会全体で支えられる世の中へ」というビジョンのもと「子どもを取り巻く環境をテクノロジーの力でよりよいものに」をミッションに掲げ、保育・教育施設向けICTサービス「CoDMON（コドモン）」を提供しています。登降園管理や保護者とのコミュニケーション機能など、保育・教育施設で働く先生が子どもたちと向き合う時間と心のゆとりを持ってもらうために、業務負担を大幅に省力化しながら保育の質を高める環境づくりの支援をしています。他にも保活支援サービス「ホイシル」、保育者向け研修サービス「コドモンカレッジ」、保育施設向けECサイト「コドモンストア」など様々なサービスを展開しています。<br>\n・<a href=\"https://www.codmon.co.jp/recruit/\" title=\"採用サイト\" rel=\"nofollow\">採用サイト</a><br>\n・<a href=\"https://tech.codmon.com/\" rel=\"nofollow\">プロダクトチームブログ</a><br>\n<br></p>\n<h2>BASE株式会社</h2>\n<p>BASE株式会社をはじめとする当グループは「Payment to the People, Power to the People.」をミッションに掲げ、世界中の個人やスモールチーム、スタートアップをエンパワーメントし、すべての人々が活躍するための社会基盤を作っています。 創業時より提供しているネットショップ作成サービス「BASE」をはじめ、購入者向けショッピングサービス「PAY ID」、資金調達サービス「YELL BANK」、また子会社のPAY株式会社が提供するオンライン決済サービス「<a href=\"http://PAY.JP\" rel=\"nofollow\">PAY.JP</a>」等を通じて、各サービス間のシナジーを生み出しながらグループ全体での提供価値最大化を目指しています。<br>\n・<a href=\"https://binc.jp/jobs/\" title=\"採用サイト\" rel=\"nofollow\">採用サイト</a><br>\n・<a href=\"https://devblog.thebase.in/\" title=\"テックブログ\" rel=\"nofollow\">テックブログ</a><br>\n<br></p>\n<h2>株式会社クイック</h2>\n<p>人材・情報ビジネスを軸に「はたらく」を取り巻く社会課題解決に取り組むグローバルHRカンパニー。業界特化型人材紹介サービスのプロダクト開発や全社のDX推進を担っており、看護領域の看護roo!等、各領域でトップクラスのシェアを誇るサービスを数多く展開しています。</p>\n<ul>\n<li><a href=\"https://quick-wpd.notion.site/Engineer-Entrance-Book-127a446abb6a803a9a39d7b722b42832\" rel=\"nofollow\">Engineer Entrance Book</a></li>\n<li><a href=\"https://qiita.com/organizations/quick-wpd\" rel=\"nofollow\">Qiita</a></li>\n</ul>\n<h1>イベント開催についての注意事項</h1>\n<ul>\n<li>参加枠が最小遂行人数に満たない場合や関係者の急病や天災などにより、開催を延期または中止する場合がございます。</li>\n<li>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願いします。</li>\n<li>ご参加者の方々が最大限楽しんでいただけるよう、運営サイドで参加にふさわしくないと判断させていただいた方についてはご退席をお願いすることがございます<ul>\n<li>宗教、ネットワークビジネスなどの勧誘が目的と見られる方</li>\n<li>その他運営サイドで参加が不適切だと判断した方</li>\n<li>他の参加者の方や運営への迷惑行為を行った方</li>\n</ul>\n</li>\n<li>本イベントに関するご質問は、株式会社コドモンまでお願いします。PHPカンファレンス事務局への直接のお問い合わせはご遠慮くださいますようお願いいたします。</li>\n</ul>\n<h1>個人情報取り扱いについてのご案内：</h1>\n<p>本イベントで取得する個人情報のお取り扱い方針は、各社が定める以下のポリシーを参照願います。<br></p>\n<ul>\n<li><a href=\"https://www.codmon.co.jp/privacypolicy/\" title=\"プライバシーポリシー｜株式会社コドモン\" rel=\"nofollow\">プライバシーポリシー｜株式会社コドモン</a><br></li>\n<li><a href=\"https://binc.jp/privacy/\" title=\"プライバシーポリシー｜BASE株式会社\" rel=\"nofollow\">プライバシーポリシー｜BASE株式会社</a> <br></li>\n<li><a href=\"https://919.jp/privacy/\" title=\"プライバシーポリシー｜株式会社クイック\" rel=\"nofollow\">プライバシーポリシー｜株式会社クイック</a> <br></li>\n</ul>",
+      "url": "https://codmon.connpass.com/event/400633/",
+      "image_url": "https://media.connpass.com/thumbs/9e/d9/9ed9abef16128d337b5288ac2be1c769.png",
+      "hash_tag": "PHP_After",
+      "started_at": "2026-08-06T19:00:00+09:00",
+      "ended_at": "2026-08-06T21:00:00+09:00",
+      "published_at": "2026-07-17T12:52:33+09:00",
+      "limit": 40,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 9459,
+        "subdomain": "codmon",
+        "title": "コドモン | CoDMON",
+        "url": "https://codmon.connpass.com/"
+      },
+      "address": "〒141-0031　東京都品川区西五反田八丁目4番13号(五反田JPビルディング10階コドモン)",
+      "place": "コドモンオフィス",
+      "lat": "35.622417900000",
+      "lon": "139.721921800000",
+      "owner_id": 1001605,
+      "owner_nickname": "codmon",
+      "owner_display_name": "codmon",
+      "accepted": 31,
+      "waiting": 0,
+      "updated_at": "2026-08-06T10:13:02+09:00"
     },
     {
       "id": 393141,
@@ -428,7 +428,7 @@
       "owner_id": 23847,
       "owner_nickname": "ebyhr",
       "owner_display_name": "Yuya Ebihara",
-      "accepted": 125,
+      "accepted": 128,
       "waiting": 0,
       "updated_at": "2026-07-17T14:06:34+09:00"
     },
