@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-07T08:51:58.864439+09:00",
+  "fetched_at": "2026-08-07T11:13:54.430665+09:00",
   "date": "20260807",
   "count": 10,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 372148,
       "owner_nickname": "CoKoNPILe",
       "owner_display_name": "CoKoNPILe",
-      "accepted": 0,
+      "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-06T21:48:26+09:00"
     },
@@ -97,6 +97,32 @@
       "updated_at": "2026-07-30T14:03:46+09:00"
     },
     {
+      "id": 399762,
+      "title": "HTML Night in Tokyo",
+      "catch": "HTML DAY 2026 PRE EVENT",
+      "description": "<h2>HTML Night in Tokyo開催にあたり</h2>\n<p>「ウェブ」が初めてインターネット上で公開されたのは1991年で、公開から今年で35年目を迎えます。そんなウェブを構成する基盤技術の1つとしてHTML（Hyper Text Markup Language）があります。HTML1.0から始まり、XMLの仕様に基づくXHTML、バズワードともなったHTML5、W3CとWHATWGによる仕様の分裂と統合を経て、現在のHTMLはLiving Standardとして日々更新され続けています。</p>\n<p>ウェブは現在、我々の生活を支えるインフラの一部として当たり前の存在になっています。一方で、ブログサイトやSNSの普及を経て、様々なプラットフォームで自己表現をする形が広がった結果、個人が自らウェブサイトを作る機会は徐々に少なくなってきました。かつて日本のインターネット黎明期を支えたInfoseekやYahoo!ジオシティーズの閉鎖により、当時の懐かしいサイトたちにアクセスできなくなっていきました。</p>\n<p>ですが、そのような歴史を経てもなお、「HTMLがあれば誰でも無料でウェブサイトを公開できる」ということは、未だに変わらないウェブの原点であり理念です。<a href=\"https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html\" rel=\"nofollow\">世界で最初に公開されたウェブページ</a>も、インターネットとブラウザさえあれば、今でも誰でも確認することができます。</p>\n<p>HTMLを自分で記述し、ウェブに人間性を取り戻す<a href=\"https://2026.html.energy/\" rel=\"nofollow\">HTMLエナジー（HTMLエネルギー）</a>という活動や、2023年より8月8日に世界各地でHTMLについて考える「HTML Day」といったイベントなど、HTMLのパワーや価値を信じる人たちの草の根活動は未だに続いています。</p>\n<p>あの頃のウェブを知る人、HTMLについてあまり知らない人、様々な人たちが「HTML」について今一度考えてみる――そんな会を開きたいと考えました。今回はHTML Dayの前夜祭として、HTMLのみを取り扱うオフラインイベントを都内にて開催いたします。ゲスト3名によるHTMLにまつわる発表、LTや懇親会を通じて、参加者全員でHTMLについて語り合ってみませんか？</p>\n<h2>ゲスト登壇者</h2>\n<p>「この人にHTMLについてを熱く語ってほしい！」という主催の独断で登壇いただくことになったゲストの皆さまです。</p>\n<h3>北千住デザイン</h3>\n<p><img src=\"https://i.gyazo.com/c1df16d5dcf90b4b1574e024250e1f57.png\" width=\"250\" alt=\"北千住デザインのアイコン\"></p>\n<p>Webデザイン愛好者。HTML DAY TOKYO主催。コンピュータやコードを用いて生み出される表現に関して実験と実装を行う。<br>\n<a href=\"https://kitasenjudesign.com/\" rel=\"nofollow\">https://kitasenjudesign.com/</a></p>\n<h3>shikakun</h3>\n<p><img src=\"https://shikakun.com/shikakun.png\" width=\"250\" alt=\"shikakunのアイコン\"></p>\n<p>ソフトウェアデザイナー、フロントエンドエンジニア。1989年生まれ。2003年頃よりHTMLを書き始める。現在はフリー株式会社でデザインシステムの開発に携わりながら、HTMLや詩を書く活動を行う。 <br>\n<a href=\"https://shikakun.com/link/\" rel=\"nofollow\">https://shikakun.com/link/</a></p>\n<h3>yuhei</h3>\n<p><img src=\"https://i.gyazo.com/9e20f16dbabaac4318e49d343e5d1655.png\" width=\"250\" alt=\"yuheiのアイコン\"></p>\n<p>全部入りHTML太郎（<a href=\"https://x.com/_yuheiy\" rel=\"nofollow\">@_yuheiy</a>）です。</p>\n<h2>LT 発表者</h2>\n<p>5分の発表枠で2名募集します（7/31抽選発表）</p>\n<h2>スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00〜19:30</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30〜19:35</td>\n<td>主催による挨拶・説明</td>\n</tr>\n<tr>\n<td>19:35〜19:50</td>\n<td>北千住デザイン さん（15分）</td>\n</tr>\n<tr>\n<td>19:50〜20:05</td>\n<td>shikakun さん（15分）</td>\n</tr>\n<tr>\n<td>20:05〜20:20</td>\n<td>yuhei さん（15分）</td>\n</tr>\n<tr>\n<td>20:20~20:25</td>\n<td>LT枠１（5分）</td>\n</tr>\n<tr>\n<td>20:25~20:30</td>\n<td>LT枠２（5分）</td>\n</tr>\n<tr>\n<td>20:30~21:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<h2>懇親会について</h2>\n<p>すべての発表が終了後1時間ほど懇親会を行います。 <strong>懇親会参加される方は以下をご確認の上、ご参加ください。</strong></p>\n<ul>\n<li>本イベントでは<strong>飲食物を用意しておりません</strong></li>\n<li>飲食物は必要に応じて各自で持ち込んでください（アルコール可）</li>\n<li>持ち込んだ飲食でイベント会場を汚さないようお気を付けください</li>\n<li>ゴミは持ち帰るか、会場のゴミ袋に捨てるようお願いします</li>\n</ul>\n<h2>イベント概要</h2>\n<ul>\n<li>開催日時：2026/08/07 (金) 19:00（開場）〜21:30（終了）</li>\n<li>開催場所：<a href=\"https://www.arara.com/\" rel=\"nofollow\">アララ株式会社</a>（東京都港区南青山2丁目24-15 青山タワービル 別館）</li>\n<li>開催形式：オフラインのみ・配信なし</li>\n<li>参加費：無料</li>\n</ul>",
+      "url": "https://connpass.com/event/399762/",
+      "image_url": "https://media.connpass.com/thumbs/e5/22/e52233e0e3f5171ba8f70a5f7a170ba4.png",
+      "hash_tag": "htmlnight",
+      "started_at": "2026-08-07T19:00:00+09:00",
+      "ended_at": "2026-08-07T21:30:00+09:00",
+      "published_at": "2026-07-15T13:42:00+09:00",
+      "limit": 42,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": null,
+      "address": "東京都港区南青山２丁目２４−１５ 青山タワービル 別館",
+      "place": "アララ株式会社",
+      "lat": "35.670227400000",
+      "lon": "139.718109400000",
+      "owner_id": 44378,
+      "owner_nickname": "yamanoku",
+      "owner_display_name": "yamanoku",
+      "accepted": 42,
+      "waiting": 1,
+      "updated_at": "2026-08-06T09:23:18+09:00"
+    },
+    {
       "id": 400019,
       "title": "JAWS-UG 情シス支部 第35回-EOL？パッチ当て？そんなの知るか！（上司）-",
       "catch": "パッチ当てとEOLの追従に皆さんはどう対処してますか？（本題）",
@@ -123,35 +149,9 @@
       "owner_id": 822950,
       "owner_nickname": "yuri_snowwhite",
       "owner_display_name": "白”雪姫”(yuri_snowwhite)",
-      "accepted": 11,
+      "accepted": 12,
       "waiting": 0,
       "updated_at": "2026-07-16T11:39:33+09:00"
-    },
-    {
-      "id": 399762,
-      "title": "HTML Night in Tokyo",
-      "catch": "HTML DAY 2026 PRE EVENT",
-      "description": "<h2>HTML Night in Tokyo開催にあたり</h2>\n<p>「ウェブ」が初めてインターネット上で公開されたのは1991年で、公開から今年で35年目を迎えます。そんなウェブを構成する基盤技術の1つとしてHTML（Hyper Text Markup Language）があります。HTML1.0から始まり、XMLの仕様に基づくXHTML、バズワードともなったHTML5、W3CとWHATWGによる仕様の分裂と統合を経て、現在のHTMLはLiving Standardとして日々更新され続けています。</p>\n<p>ウェブは現在、我々の生活を支えるインフラの一部として当たり前の存在になっています。一方で、ブログサイトやSNSの普及を経て、様々なプラットフォームで自己表現をする形が広がった結果、個人が自らウェブサイトを作る機会は徐々に少なくなってきました。かつて日本のインターネット黎明期を支えたInfoseekやYahoo!ジオシティーズの閉鎖により、当時の懐かしいサイトたちにアクセスできなくなっていきました。</p>\n<p>ですが、そのような歴史を経てもなお、「HTMLがあれば誰でも無料でウェブサイトを公開できる」ということは、未だに変わらないウェブの原点であり理念です。<a href=\"https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html\" rel=\"nofollow\">世界で最初に公開されたウェブページ</a>も、インターネットとブラウザさえあれば、今でも誰でも確認することができます。</p>\n<p>HTMLを自分で記述し、ウェブに人間性を取り戻す<a href=\"https://2026.html.energy/\" rel=\"nofollow\">HTMLエナジー（HTMLエネルギー）</a>という活動や、2023年より8月8日に世界各地でHTMLについて考える「HTML Day」といったイベントなど、HTMLのパワーや価値を信じる人たちの草の根活動は未だに続いています。</p>\n<p>あの頃のウェブを知る人、HTMLについてあまり知らない人、様々な人たちが「HTML」について今一度考えてみる――そんな会を開きたいと考えました。今回はHTML Dayの前夜祭として、HTMLのみを取り扱うオフラインイベントを都内にて開催いたします。ゲスト3名によるHTMLにまつわる発表、LTや懇親会を通じて、参加者全員でHTMLについて語り合ってみませんか？</p>\n<h2>ゲスト登壇者</h2>\n<p>「この人にHTMLについてを熱く語ってほしい！」という主催の独断で登壇いただくことになったゲストの皆さまです。</p>\n<h3>北千住デザイン</h3>\n<p><img src=\"https://i.gyazo.com/c1df16d5dcf90b4b1574e024250e1f57.png\" width=\"250\" alt=\"北千住デザインのアイコン\"></p>\n<p>Webデザイン愛好者。HTML DAY TOKYO主催。コンピュータやコードを用いて生み出される表現に関して実験と実装を行う。<br>\n<a href=\"https://kitasenjudesign.com/\" rel=\"nofollow\">https://kitasenjudesign.com/</a></p>\n<h3>shikakun</h3>\n<p><img src=\"https://shikakun.com/shikakun.png\" width=\"250\" alt=\"shikakunのアイコン\"></p>\n<p>ソフトウェアデザイナー、フロントエンドエンジニア。1989年生まれ。2003年頃よりHTMLを書き始める。現在はフリー株式会社でデザインシステムの開発に携わりながら、HTMLや詩を書く活動を行う。 <br>\n<a href=\"https://shikakun.com/link/\" rel=\"nofollow\">https://shikakun.com/link/</a></p>\n<h3>yuhei</h3>\n<p><img src=\"https://i.gyazo.com/9e20f16dbabaac4318e49d343e5d1655.png\" width=\"250\" alt=\"yuheiのアイコン\"></p>\n<p>全部入りHTML太郎（<a href=\"https://x.com/_yuheiy\" rel=\"nofollow\">@_yuheiy</a>）です。</p>\n<h2>LT 発表者</h2>\n<p>5分の発表枠で2名募集します（7/31抽選発表）</p>\n<h2>スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00〜19:30</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30〜19:35</td>\n<td>主催による挨拶・説明</td>\n</tr>\n<tr>\n<td>19:35〜19:50</td>\n<td>北千住デザイン さん（15分）</td>\n</tr>\n<tr>\n<td>19:50〜20:05</td>\n<td>shikakun さん（15分）</td>\n</tr>\n<tr>\n<td>20:05〜20:20</td>\n<td>yuhei さん（15分）</td>\n</tr>\n<tr>\n<td>20:20~20:25</td>\n<td>LT枠１（5分）</td>\n</tr>\n<tr>\n<td>20:25~20:30</td>\n<td>LT枠２（5分）</td>\n</tr>\n<tr>\n<td>20:30~21:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<h2>懇親会について</h2>\n<p>すべての発表が終了後1時間ほど懇親会を行います。 <strong>懇親会参加される方は以下をご確認の上、ご参加ください。</strong></p>\n<ul>\n<li>本イベントでは<strong>飲食物を用意しておりません</strong></li>\n<li>飲食物は必要に応じて各自で持ち込んでください（アルコール可）</li>\n<li>持ち込んだ飲食でイベント会場を汚さないようお気を付けください</li>\n<li>ゴミは持ち帰るか、会場のゴミ袋に捨てるようお願いします</li>\n</ul>\n<h2>イベント概要</h2>\n<ul>\n<li>開催日時：2026/08/07 (金) 19:00（開場）〜21:30（終了）</li>\n<li>開催場所：<a href=\"https://www.arara.com/\" rel=\"nofollow\">アララ株式会社</a>（東京都港区南青山2丁目24-15 青山タワービル 別館）</li>\n<li>開催形式：オフラインのみ・配信なし</li>\n<li>参加費：無料</li>\n</ul>",
-      "url": "https://connpass.com/event/399762/",
-      "image_url": "https://media.connpass.com/thumbs/e5/22/e52233e0e3f5171ba8f70a5f7a170ba4.png",
-      "hash_tag": "htmlnight",
-      "started_at": "2026-08-07T19:00:00+09:00",
-      "ended_at": "2026-08-07T21:30:00+09:00",
-      "published_at": "2026-07-15T13:42:00+09:00",
-      "limit": 42,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": null,
-      "address": "東京都港区南青山２丁目２４−１５ 青山タワービル 別館",
-      "place": "アララ株式会社",
-      "lat": "35.670227400000",
-      "lon": "139.718109400000",
-      "owner_id": 44378,
-      "owner_nickname": "yamanoku",
-      "owner_display_name": "yamanoku",
-      "accepted": 40,
-      "waiting": 0,
-      "updated_at": "2026-08-06T09:23:18+09:00"
     },
     {
       "id": 401361,
@@ -180,7 +180,7 @@
       "owner_id": 223091,
       "owner_nickname": "kifuminumata",
       "owner_display_name": "kifuminumata",
-      "accepted": 38,
+      "accepted": 39,
       "waiting": 0,
       "updated_at": "2026-07-23T22:23:11+09:00"
     },
@@ -211,7 +211,7 @@
       "owner_id": 968510,
       "owner_nickname": "rikuto_baba",
       "owner_display_name": "rikuto",
-      "accepted": 60,
+      "accepted": 66,
       "waiting": 0,
       "updated_at": "2026-08-07T00:16:18+09:00"
     },
@@ -273,7 +273,7 @@
       "owner_id": 231145,
       "owner_nickname": "ASCII",
       "owner_display_name": "ASCII",
-      "accepted": 69,
+      "accepted": 73,
       "waiting": 0,
       "updated_at": "2026-08-06T20:41:09+09:00"
     },
@@ -297,16 +297,16 @@
         "title": "関東Kaggler会",
         "url": "https://kanto-kaggler.connpass.com/"
       },
-      "address": "東京都千代田区霞が関1-3-1 (経済産業省別館7階)",
+      "address": "東京都千代田区霞が関１丁目３−１ 経済産業省 別館",
       "place": "経済産業省別館7階 共創空間ベツナナ",
-      "lat": "35.672167400000",
-      "lon": "139.750902200000",
+      "lat": "35.671381300000",
+      "lon": "139.751978800000",
       "owner_id": 108138,
       "owner_nickname": "rtoukei",
       "owner_display_name": "カレーちゃん",
-      "accepted": 225,
-      "waiting": 5,
-      "updated_at": "2026-08-07T00:19:29+09:00"
+      "accepted": 231,
+      "waiting": 4,
+      "updated_at": "2026-08-07T11:07:44+09:00"
     }
   ]
 }
