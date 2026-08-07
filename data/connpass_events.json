@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-07T19:43:45.164273+09:00",
+  "fetched_at": "2026-08-07T20:39:24.802636+09:00",
   "date": "20260807",
-  "count": 10,
+  "count": 12,
   "events": [
     {
       "id": 403091,
@@ -16,7 +16,7 @@
       "published_at": "2026-08-06T21:48:26+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 9339,
         "subdomain": "cokonpile",
@@ -61,7 +61,7 @@
       "owner_id": 8222,
       "owner_nickname": "uni_ishizaki",
       "owner_display_name": "uniq",
-      "accepted": 11,
+      "accepted": 12,
       "waiting": 0,
       "updated_at": "2026-07-01T11:01:57+09:00"
     },
@@ -154,6 +154,37 @@
       "updated_at": "2026-07-30T14:03:46+09:00"
     },
     {
+      "id": 401876,
+      "title": "なにがちがう？GPT Workハンズオン- Chatを超えたエージェントの活用へ",
+      "catch": "",
+      "description": "<h2>イベント概要</h2>\n<p>ChatGPTは日常的に使っている。</p>\n<p>でも、質問や文章作成の先で、実際の業務を任せるところまでは進めていない——。</p>\n<p>本イベントでは、GPT Workを使うとChatGPTの活用がどのように変わるのかを、基本解説・ハンズオンを通じて体験します。</p>\n<p>外部サービスや資料を参照する、繰り返し使う手順を残す、決まった業務を継続的に動かす。</p>\n<p>ChatGPTを「相談相手」として使うところから一歩進み、自分の仕事にどう組み込めるかを考えるための実践イベントです。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>ChatGPTを質問や文章作成に日常的に使っている方</li>\n<li>GPT Workに興味はあるものの、まだ使ったことがない方</li>\n<li>ChatGPTの活用を、自分の業務フローまで広げたい方</li>\n<li>会社の基盤としてChatGPTの導入を目指している方</li>\n<li>会社の基盤としてChatGPTを導入しており、社内活用や業務定着を進めている方</li>\n</ul>\n<h2>開催概要</h2>\n<h3>日時</h3>\n<p>2026年8月7日（金）18:30〜21:30（受付開始：18:00）</p>\n<h3>開催形式</h3>\n<p>オフライン・オンラインのハイブリッド開催です。</p>\n<h2>オフライン・オンラインの参加体験について</h2>\n<h3>オフライン</h3>\n<p>会場で実際に手を動かしながらハンズオンに参加できます。</p>\n<p>スタッフのフォローを受けながら進められるほか、終了後には登壇者や参加者との交流・個別相談の時間を予定しています。</p>\n<h3>オンライン</h3>\n<p>オンラインでは、会場参加者と同等の個別操作フォローが難しい場合があります。あらかじめご了承ください。ご自身で操作する場合は、配信を見ながら進めていただく形式となります。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30〜18:40</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>18:40〜19:00</td>\n<td>GPT Workとは</td>\n</tr>\n<tr>\n<td>19:00〜19:15</td>\n<td>会社紹介・休憩</td>\n</tr>\n<tr>\n<td>19:15〜20:15</td>\n<td>GPT Workハンズオン</td>\n</tr>\n<tr>\n<td>20:15〜20:25</td>\n<td>クロージング・アンケート</td>\n</tr>\n<tr>\n<td>20:25〜21:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<p>※内容・時間は変更となる場合があります。</p>\n<h2>コンテンツ詳細</h2>\n<h3>GPT Workの基本解説・実践デモ</h3>\n<p>GPT Workでは何ができるのか、通常のChatGPT活用とどのように違うのかを、実際の画面を使いながら紹介します。</p>\n<h3>GPT Workハンズオン</h3>\n<p>GPT Workを使った業務活用を、実際に操作しながら体験します。</p>\n<p>※具体的な題材、当日使用するデータ、完成物については現在調整中です。</p>\n<h2>登壇者</h2>\n<p><strong>まつにぃ @yugen_matuni</strong></p>\n<p><img alt=\"matsuni\" src=\"https://i.imgur.com/jCh5bU1.png\" width=\"200\"></p>\n<p>株式会社エクスプラザ／リードAIプロデューサー。物流企業のDX推進担当としてキャリアをスタート。基幹システム運用、ローコード開発、PM業務、RAGや生成AIの実装まで一貫してリード。現在はエクスプラザで、AIを活用した新規事業・サービス開発、AI活用支援、業務設計に取り組んでいる。</p>\n<h2>ハンズオン参加に必要な環境</h2>\n<p>オフライン会場では、ご自身のPCを使用したハンズオンを予定しています。</p>\n<ul>\n<li>ChatGPT Plus、Pro、Business、Enterprise、Eduのいずれか</li>\n<li>最新版のChatGPTデスクトップアプリ</li>\n<li>ChatGPTにログインできるPC</li>\n<li>当日使用する機能・外部サービスへの接続権限</li>\n</ul>\n<p>※Business・Enterprise・Eduをご利用の場合、組織の管理者設定によってGPT Work、Skills、Appsなどの機能が利用できないことがあります。事前に利用可否をご確認ください。\n※具体的に使用する機能や事前設定は、内容確定後に参加者へご案内します。</p>\n<h3>オフライン会場の設備</h3>\n<p>会場の電源コンセントとWi-Fiをご利用いただけます。Wi-Fiの接続方法は当日会場でご案内します。\nPC本体とあわせて、充電器も忘れずにご持参ください。</p>\n<h2>FAQ</h2>\n<h3>GPT Workを使ったことがなくても参加できますか？</h3>\n<p>はい。GPT Workをまだ使ったことがない方や、ChatGPTとの違いを知りたい方を主な対象としています。</p>\n<h3>オンラインでもハンズオンに参加できますか？</h3>\n<p>オンラインでは、会場参加者と同等の個別操作フォローが難しい場合があります。あらかじめご了承ください。ご自身で操作する場合は、配信を見ながら進めていただく形式となります。</p>\n<h2>行動規範</h2>\n<p>参加者全員が安心して参加できる場づくりにご協力ください。</p>\n<p>ハラスメント、差別的な言動、過度な営業・勧誘など、他の参加者が不快に感じる行為は禁止します。運営が不適切と判断した場合は、参加をご遠慮いただくことがあります。</p>\n<h2>その他・注意事項</h2>\n<ul>\n<li>営業活動、人材紹介、勧誘のみを目的とした参加はご遠慮ください</li>\n<li>プログラムや登壇内容は予告なく変更となる場合があります</li>\n<li>会場内で写真・動画を撮影し、SNSやイベントレポートで使用する場合があります</li>\n<li>写真への顔出しを希望されない方は、受付時にスタッフへお知らせください</li>\n<li>オフライン参加確定後に参加できなくなった場合は、早めのキャンセルをお願いします</li>\n<li>当日のハンズオン内容は、GPT Workの仕様変更などにより変更となる場合があります</li>\n</ul>\n<h2>主催</h2>\n<p><img alt=\"イベントバナー\" src=\"https://imagedelivery.net/cy7TDKEYKBNvnJ2QaiCKyw/2f2273ef-96d7-475d-7cbe-8ce20f767400/public\">\n<strong>株式会社エクスプラザ（Explaza, Inc.）</strong></p>\n<p><a href=\"https://explaza.jp/\" rel=\"nofollow\">https://explaza.jp/</a></p>\n<p>株式会社エクスプラザは、生成AIを活用したプロダクト開発・業務変革を支援しています。</p>\n<p>ChatGPTを「使う」から、自分の仕事を動かす一歩へ。</p>\n<p>GPT Workの可能性を一緒に体験したい方のご参加をお待ちしています。</p>\n<blockquote>\n<p><img alt=\"Explaza*OpenAI\" src=\"https://imagedelivery.net/cy7TDKEYKBNvnJ2QaiCKyw/ae13c9e7-b45c-4b13-e989-837808ea5500/public\">エクスプラザは OpenAI Partner Network の「OpenAI Select Partner」に認定されています。OpenAI パートナーとして、OpenAI のモデルを用いた生成AIソリューションの設計・実装・運用を、より広い業種・業務で進めます。</p>\n</blockquote>",
+      "url": "https://explaza.connpass.com/event/401876/",
+      "image_url": "https://media.connpass.com/thumbs/71/3c/713ccf3874bd0d324a601e599b9a305e.png",
+      "hash_tag": "gptwork-handson",
+      "started_at": "2026-08-07T18:30:00+09:00",
+      "ended_at": "2026-08-07T21:30:00+09:00",
+      "published_at": "2026-07-27T16:14:21+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 16087,
+        "subdomain": "explaza",
+        "title": "エクスプラザ",
+        "url": "https://explaza.connpass.com/"
+      },
+      "address": "東京都港区六本木4丁目8-5（和幸ビル 4F）",
+      "place": "エクスプラザオフィス",
+      "lat": "35.664016700000",
+      "lon": "139.733378700000",
+      "owner_id": 968510,
+      "owner_nickname": "rikuto_baba",
+      "owner_display_name": "rikuto",
+      "accepted": 69,
+      "waiting": 0,
+      "updated_at": "2026-08-07T00:16:18+09:00"
+    },
+    {
       "id": 401361,
       "title": "Qiskit Summer Dojo: Qiskit v2.X資格対策 #1 〜量子操作＆可視化編〜",
       "catch": "Qiskit Summer Dojo",
@@ -183,37 +214,6 @@
       "accepted": 42,
       "waiting": 0,
       "updated_at": "2026-07-23T22:23:11+09:00"
-    },
-    {
-      "id": 401876,
-      "title": "なにがちがう？GPT Workハンズオン- Chatを超えたエージェントの活用へ",
-      "catch": "",
-      "description": "<h2>イベント概要</h2>\n<p>ChatGPTは日常的に使っている。</p>\n<p>でも、質問や文章作成の先で、実際の業務を任せるところまでは進めていない——。</p>\n<p>本イベントでは、GPT Workを使うとChatGPTの活用がどのように変わるのかを、基本解説・ハンズオンを通じて体験します。</p>\n<p>外部サービスや資料を参照する、繰り返し使う手順を残す、決まった業務を継続的に動かす。</p>\n<p>ChatGPTを「相談相手」として使うところから一歩進み、自分の仕事にどう組み込めるかを考えるための実践イベントです。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>ChatGPTを質問や文章作成に日常的に使っている方</li>\n<li>GPT Workに興味はあるものの、まだ使ったことがない方</li>\n<li>ChatGPTの活用を、自分の業務フローまで広げたい方</li>\n<li>会社の基盤としてChatGPTの導入を目指している方</li>\n<li>会社の基盤としてChatGPTを導入しており、社内活用や業務定着を進めている方</li>\n</ul>\n<h2>開催概要</h2>\n<h3>日時</h3>\n<p>2026年8月7日（金）18:30〜21:30（受付開始：18:00）</p>\n<h3>開催形式</h3>\n<p>オフライン・オンラインのハイブリッド開催です。</p>\n<h2>オフライン・オンラインの参加体験について</h2>\n<h3>オフライン</h3>\n<p>会場で実際に手を動かしながらハンズオンに参加できます。</p>\n<p>スタッフのフォローを受けながら進められるほか、終了後には登壇者や参加者との交流・個別相談の時間を予定しています。</p>\n<h3>オンライン</h3>\n<p>オンラインでは、会場参加者と同等の個別操作フォローが難しい場合があります。あらかじめご了承ください。ご自身で操作する場合は、配信を見ながら進めていただく形式となります。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30〜18:40</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>18:40〜19:00</td>\n<td>GPT Workとは</td>\n</tr>\n<tr>\n<td>19:00〜19:15</td>\n<td>会社紹介・休憩</td>\n</tr>\n<tr>\n<td>19:15〜20:15</td>\n<td>GPT Workハンズオン</td>\n</tr>\n<tr>\n<td>20:15〜20:25</td>\n<td>クロージング・アンケート</td>\n</tr>\n<tr>\n<td>20:25〜21:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<p>※内容・時間は変更となる場合があります。</p>\n<h2>コンテンツ詳細</h2>\n<h3>GPT Workの基本解説・実践デモ</h3>\n<p>GPT Workでは何ができるのか、通常のChatGPT活用とどのように違うのかを、実際の画面を使いながら紹介します。</p>\n<h3>GPT Workハンズオン</h3>\n<p>GPT Workを使った業務活用を、実際に操作しながら体験します。</p>\n<p>※具体的な題材、当日使用するデータ、完成物については現在調整中です。</p>\n<h2>登壇者</h2>\n<p><strong>まつにぃ @yugen_matuni</strong></p>\n<p><img alt=\"matsuni\" src=\"https://i.imgur.com/jCh5bU1.png\" width=\"200\"></p>\n<p>株式会社エクスプラザ／リードAIプロデューサー。物流企業のDX推進担当としてキャリアをスタート。基幹システム運用、ローコード開発、PM業務、RAGや生成AIの実装まで一貫してリード。現在はエクスプラザで、AIを活用した新規事業・サービス開発、AI活用支援、業務設計に取り組んでいる。</p>\n<h2>ハンズオン参加に必要な環境</h2>\n<p>オフライン会場では、ご自身のPCを使用したハンズオンを予定しています。</p>\n<ul>\n<li>ChatGPT Plus、Pro、Business、Enterprise、Eduのいずれか</li>\n<li>最新版のChatGPTデスクトップアプリ</li>\n<li>ChatGPTにログインできるPC</li>\n<li>当日使用する機能・外部サービスへの接続権限</li>\n</ul>\n<p>※Business・Enterprise・Eduをご利用の場合、組織の管理者設定によってGPT Work、Skills、Appsなどの機能が利用できないことがあります。事前に利用可否をご確認ください。\n※具体的に使用する機能や事前設定は、内容確定後に参加者へご案内します。</p>\n<h3>オフライン会場の設備</h3>\n<p>会場の電源コンセントとWi-Fiをご利用いただけます。Wi-Fiの接続方法は当日会場でご案内します。\nPC本体とあわせて、充電器も忘れずにご持参ください。</p>\n<h2>FAQ</h2>\n<h3>GPT Workを使ったことがなくても参加できますか？</h3>\n<p>はい。GPT Workをまだ使ったことがない方や、ChatGPTとの違いを知りたい方を主な対象としています。</p>\n<h3>オンラインでもハンズオンに参加できますか？</h3>\n<p>オンラインでは、会場参加者と同等の個別操作フォローが難しい場合があります。あらかじめご了承ください。ご自身で操作する場合は、配信を見ながら進めていただく形式となります。</p>\n<h2>行動規範</h2>\n<p>参加者全員が安心して参加できる場づくりにご協力ください。</p>\n<p>ハラスメント、差別的な言動、過度な営業・勧誘など、他の参加者が不快に感じる行為は禁止します。運営が不適切と判断した場合は、参加をご遠慮いただくことがあります。</p>\n<h2>その他・注意事項</h2>\n<ul>\n<li>営業活動、人材紹介、勧誘のみを目的とした参加はご遠慮ください</li>\n<li>プログラムや登壇内容は予告なく変更となる場合があります</li>\n<li>会場内で写真・動画を撮影し、SNSやイベントレポートで使用する場合があります</li>\n<li>写真への顔出しを希望されない方は、受付時にスタッフへお知らせください</li>\n<li>オフライン参加確定後に参加できなくなった場合は、早めのキャンセルをお願いします</li>\n<li>当日のハンズオン内容は、GPT Workの仕様変更などにより変更となる場合があります</li>\n</ul>\n<h2>主催</h2>\n<p><img alt=\"イベントバナー\" src=\"https://imagedelivery.net/cy7TDKEYKBNvnJ2QaiCKyw/2f2273ef-96d7-475d-7cbe-8ce20f767400/public\">\n<strong>株式会社エクスプラザ（Explaza, Inc.）</strong></p>\n<p><a href=\"https://explaza.jp/\" rel=\"nofollow\">https://explaza.jp/</a></p>\n<p>株式会社エクスプラザは、生成AIを活用したプロダクト開発・業務変革を支援しています。</p>\n<p>ChatGPTを「使う」から、自分の仕事を動かす一歩へ。</p>\n<p>GPT Workの可能性を一緒に体験したい方のご参加をお待ちしています。</p>\n<blockquote>\n<p><img alt=\"Explaza*OpenAI\" src=\"https://imagedelivery.net/cy7TDKEYKBNvnJ2QaiCKyw/ae13c9e7-b45c-4b13-e989-837808ea5500/public\">エクスプラザは OpenAI Partner Network の「OpenAI Select Partner」に認定されています。OpenAI パートナーとして、OpenAI のモデルを用いた生成AIソリューションの設計・実装・運用を、より広い業種・業務で進めます。</p>\n</blockquote>",
-      "url": "https://explaza.connpass.com/event/401876/",
-      "image_url": "https://media.connpass.com/thumbs/71/3c/713ccf3874bd0d324a601e599b9a305e.png",
-      "hash_tag": "gptwork-handson",
-      "started_at": "2026-08-07T18:30:00+09:00",
-      "ended_at": "2026-08-07T21:30:00+09:00",
-      "published_at": "2026-07-27T16:14:21+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 16087,
-        "subdomain": "explaza",
-        "title": "エクスプラザ",
-        "url": "https://explaza.connpass.com/"
-      },
-      "address": "東京都港区六本木4丁目8-5（和幸ビル 4F）",
-      "place": "エクスプラザオフィス",
-      "lat": "35.664016700000",
-      "lon": "139.733378700000",
-      "owner_id": 968510,
-      "owner_nickname": "rikuto_baba",
-      "owner_display_name": "rikuto",
-      "accepted": 70,
-      "waiting": 0,
-      "updated_at": "2026-08-07T00:16:18+09:00"
     },
     {
       "id": 401798,
@@ -259,7 +259,7 @@
       "published_at": "2026-07-23T11:11:29+09:00",
       "limit": 130,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 5876,
         "subdomain": "asciistartup",
@@ -290,7 +290,7 @@
       "published_at": "2026-06-30T19:01:28+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15886,
         "subdomain": "kanto-kaggler",
@@ -307,6 +307,68 @@
       "accepted": 250,
       "waiting": 2,
       "updated_at": "2026-08-07T12:42:23+09:00"
+    },
+    {
+      "id": 398857,
+      "title": "盆栽.dev 2026/08/07 懇親会",
+      "catch": "",
+      "description": "<ul>\n<li>参加申し込みは、参加人数を把握し予約を遂行するために利用します</li>\n<li><span style=\"color:red;\">当日の飛び入り参加については、お店の状況によってはお受けできない場合があります</span></li>\n<li>募集終了後に参加をご希望の場合は、運営までご相談ください</li>\n<li>参加費用は目安です。当日の実費に応じて、参加者の皆さまで割り勘とさせていただきます</li>\n<li>キャンセルされる場合は、事前に運営まで直接ご連絡ください</li>\n<li><span style=\"color:red;\">募集終了後に事前のご連絡なくキャンセルされた場合は、発生した実費をご請求させていただきます</span></li>\n</ul>",
+      "url": "https://bonsai-dev.connpass.com/event/398857/",
+      "image_url": "https://media.connpass.com/thumbs/33/03/33031109368c6303f1dfcbdc23f1bf59.png",
+      "hash_tag": "",
+      "started_at": "2026-08-07T21:20:00+09:00",
+      "ended_at": "2026-08-07T23:20:00+09:00",
+      "published_at": "2026-06-29T02:37:59+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17667,
+        "subdomain": "bonsai-dev",
+        "title": "盆栽.dev（さいたま技術者コミュニティ）",
+        "url": "https://bonsai-dev.connpass.com/"
+      },
+      "address": "大宮駅",
+      "place": "大宮駅周辺",
+      "lat": "35.906448500000",
+      "lon": "139.623854800000",
+      "owner_id": 874577,
+      "owner_nickname": "yuzneri",
+      "owner_display_name": "ゆずねり",
+      "accepted": 6,
+      "waiting": 0,
+      "updated_at": "2026-08-06T23:23:32+09:00"
+    },
+    {
+      "id": 396203,
+      "title": "盆栽.dev 2026年葉月 夏木立 Tech Talk",
+      "catch": "Share What You Simply Cannot Stop Doing",
+      "description": "<p>盆栽.dev は、埼玉を拠点に、エンジニア同士が学び、つながり、盆栽のように技術をじっくり育てていくコミュニティです。派手さより継続、消費より積み重ねを大切にしながら、地域に根ざした交流と実践知の共有を目指します。</p>\n<h1>夏木立Tech Talk</h1>\n<p><strong>夏木立Tech Talk</strong> は、気軽に発表できる場を目指したイベントです。<br>\n技術イベントではありますが、発表テーマは技術に限りません。</p>\n<p>夏木立Tech Talkでは、「いま一番熱中していること、本気で取り組んでいるものを中心」に、最近触ってみた技術の話、仕事で学んだこと、開発のふりかえり、勉強中の内容、個人開発、失敗談、工夫したこと、コミュニティ運営、キャリアのこと、日々の仕事の中で考えたこと、ゲーム、アニメ、本、趣味、酒など幅広いテーマを歓迎します。</p>\n<h2>こんな方を歓迎します</h2>\n<p>特に、<strong>はじめて発表してみたい方</strong> や <strong>発表にまだ慣れていない方</strong> を歓迎しています。</p>\n<ul>\n<li>LTや登壇は少しハードルが高いと感じている方</li>\n<li>技術の深い話ではないけれど、誰かに共有してみたいことがある方</li>\n<li>完成された内容ではなくても、今考えていることや学んだことを話してみたい方</li>\n</ul>\n<p>はじめての一歩を踏み出しやすい場にしたいと考えています。</p>\n<h2>参加枠について</h2>\n<p>盆栽.dev らしく少しだけ言い換えています。</p>\n<ul>\n<li><strong>芽吹き手</strong>：発表する人</li>\n<li><strong>水やり手</strong>：発表を聞き、応援する人</li>\n</ul>\n<p>発表する人も、聞く人も、どちらもコミュニティを育てる大切な参加者であり、お互いの小さな一歩を育て合う場にしたいと考えています。</p>\n<h2>発表について</h2>\n<ul>\n<li>発表時間はショートは最大7分、ロングは最大20分</li>\n<li>スライドを使っても、使わずに話してもOK</li>\n</ul>\n<p>話したいことを、自分のやりやすい形で持ち寄っていただければ大丈夫です。</p>\n<h2>大切にしたいこと</h2>\n<p>完成された知見や強い専門性がなくても問題ありません。<br>\nうまく話すことよりも、<strong>自分の言葉で話してみること</strong>、<strong>誰かに共有してみること</strong> を大切にしています。</p>\n<p>聞くだけ参加ではなく、少しずつ話してみることを大切にする会です。</p>\n<h2>参加を考えている方へ</h2>\n<p>はじめての登壇も、ひさしぶりの発表も、発表に慣れている方の参加も歓迎です。<br>\n気負わずに話せる、小さな最初の一歩として、ぜひご参加ください。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30～19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:00～19:10</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:10～19:20</td>\n<td>自己紹介</td>\n</tr>\n<tr>\n<td>19:20～19:30</td>\n<td>発表順抽せん</td>\n</tr>\n<tr>\n<td>19:30～19:40</td>\n<td>1人目</td>\n</tr>\n<tr>\n<td>19:40～19:50</td>\n<td>2人目</td>\n</tr>\n<tr>\n<td>19:50～20:00</td>\n<td>3人目</td>\n</tr>\n<tr>\n<td>20:00～20:10</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>20:10～20:20</td>\n<td>4人目</td>\n</tr>\n<tr>\n<td>20:20～20:30</td>\n<td>5人目</td>\n</tr>\n<tr>\n<td>20:30～20:40</td>\n<td>6人目</td>\n</tr>\n<tr>\n<td>20:40～21:00</td>\n<td>ロング</td>\n</tr>\n<tr>\n<td>21:00～21:30</td>\n<td>クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>会場設備</h2>\n<h3>インターネット</h3>\n<p><a href=\"https://saitama-culture.jp/wifi/\" rel=\"nofollow\">フリーWi-Fiが利用できます。</a></p>\n<h3>接続方式</h3>\n<p>プロジェクターとの接続はHDMIです。\nHDMI以外の端子を利用する場合は、必要に応じて変換アダプタをご持参ください。</p>\n<h3>電源</h3>\n<p>電源のご利用は、原則として承っておりません。\nただし、やむを得ない事情等により利用を希望される場合は、事前にご相談ください。</p>\n<p>なお、利用を認めた場合は、17時45分に管理事務室へお越しいただき、<strong><a href=\"https://saitama-culture.jp/sculwp/wp-content/uploads/amenity.meetingroom_omiya-civichall_price_bihin01.pdf\" rel=\"nofollow\">消費電力1kWごとに100円を実費としてご精算いただきます</a></strong>。</p>\n<h1>会場費寄付のお願い</h1>\n<p>誰もが自由に参加できる盆栽.devを、今後も継続して活動を行っていくためあなたへのお願いです。</p>\n<p>もしあなたが300円、あるいは土曜日のおやつ代を寄付してくだされば、盆栽.devは発展し続けられます。</p>\n<p>無理のない範囲で構いませんので、皆さまのご理解とご協力をよろしくお願いいたします。</p>\n<h1>おやくそく</h1>\n<p>本イベントは、参加者同士が安心して交流できる場を目指しています。故に、すべての参加者は、互いに敬意を持って行動してください。</p>\n<p>コミュニティ内での立場や、イベントの内外を問わず、次に掲げる行為は容認されません。</p>\n<ul>\n<li>営業・勧誘・採用・宗教・政治活動など、イベントの趣旨に反する行為</li>\n<li>迷惑行為・脅迫、暴力・差別・ハラスメント・ストーキングなど、不適切な言動</li>\n</ul>\n<h1>注意事項</h1>\n<ul>\n<li>枠が空いている場合、事前の予告無しに調整することがあります</li>\n</ul>",
+      "url": "https://bonsai-dev.connpass.com/event/396203/",
+      "image_url": "https://media.connpass.com/thumbs/22/6c/226c97b8f85af98dfe499bde6eb02574.png",
+      "hash_tag": "bonsaidev",
+      "started_at": "2026-08-07T19:00:00+09:00",
+      "ended_at": "2026-08-07T21:00:00+09:00",
+      "published_at": "2026-06-26T19:01:32+09:00",
+      "limit": 19,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 17667,
+        "subdomain": "bonsai-dev",
+        "title": "盆栽.dev（さいたま技術者コミュニティ）",
+        "url": "https://bonsai-dev.connpass.com/"
+      },
+      "address": "埼玉県さいたま市大宮区大門町2丁目118",
+      "place": "RaiBoC Hall 市民会館おおみや 6F 集会室10",
+      "lat": "35.907340200000",
+      "lon": "139.627170100000",
+      "owner_id": 874577,
+      "owner_nickname": "yuzneri",
+      "owner_display_name": "ゆずねり",
+      "accepted": 14,
+      "waiting": 0,
+      "updated_at": "2026-07-12T18:26:15+09:00"
     }
   ]
 }
