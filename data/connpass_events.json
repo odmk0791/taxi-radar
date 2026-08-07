@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-08T07:26:33.559939+09:00",
+  "fetched_at": "2026-08-08T08:26:21.665008+09:00",
   "date": "20260808",
   "count": 15,
   "events": [
@@ -273,7 +273,7 @@
       "owner_id": 51,
       "owner_nickname": "takanori",
       "owner_display_name": "Takanori Suzuki",
-      "accepted": 12,
+      "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-07-28T14:25:24+09:00"
     },
@@ -366,40 +366,9 @@
       "owner_id": 559493,
       "owner_nickname": "KM020",
       "owner_display_name": "前原和典",
-      "accepted": 2,
+      "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-01T13:00:50+09:00"
-    },
-    {
-      "id": 400806,
-      "title": "【コネクトキット配布】1日で完成するAIアバター開発ハッカソン",
-      "catch": "クリエイティビティを発揮し、見たことのないAIアバターのプロダクトを作ってみよう！",
-      "description": "<p>日本語の募集内容は下にあります。</p>\n<h1>Tokyo | Build Your Own AI Avatar Hackathon by Perxona</h1>\n<p><strong>Build. Launch. Demo. All in one day.</strong></p>\n<p>Join developers, creators, VTubers, and AI builders in Tokyo to build and launch a real AI Avatar using Perxona.</p>\n<p>Whether you're an experienced developer or completely new to AI avatars, we'll help you bring your idea to life.</p>\n<p>The event will be conducted primarily in English, with partially Japanese support available throughout the day.</p>\n<hr>\n<h2>Build Your Own AI Avatar. Ship It the Same Day.</h2>\n<p>You built the brain. Now give it a face.</p>\n<p>This is a one-day hackathon where you'll build an AI Avatar that actually works—not just a prototype, not just a concept, but something you can launch and demo before the day ends.</p>\n<hr>\n<h2>Who Should Join</h2>\n<p>This hackathon is for:</p>\n<ul>\n<li>AI-assisted builders (no coding experience required)</li>\n<li>Developers interested in the Perxona AI Avatar Connect Kit</li>\n<li>VTubers and streamers exploring AI-powered personas</li>\n<li>Creators and brands building 3D AI representatives</li>\n<li>Students, indie hackers, and startup builders</li>\n</ul>\n<hr>\n<h2>Event Details</h2>\n<p>🗓️ <strong>Date:</strong> August 8, 2026 (Sat)</p>\n<p>🕤 <strong>Time:</strong> 09:00–20:00</p>\n<p>📍 <strong>Location:</strong> Ginza Uni-Ku 7-chome</p>\n<hr>\n<h2>Schedule</h2>\n<table>\n<thead>\n<tr>\n<th>Time</th>\n<th>Activity</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>09:00</td>\n<td>Check-in &amp; Networking</td>\n</tr>\n<tr>\n<td>10:00</td>\n<td>Opening &amp; Team Formation</td>\n</tr>\n<tr>\n<td>12:00</td>\n<td>Lunch Break &amp; Networking</td>\n</tr>\n<tr>\n<td>13:00</td>\n<td>Hacking Session</td>\n</tr>\n<tr>\n<td>18:00</td>\n<td>Project Submission Deadline</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>Live Demo &amp; Awards</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>Capacity</h2>\n<p><strong>100 participants</strong></p>\n<p>Spots are limited. Apply early.</p>\n<hr>\n<h2>What to Bring</h2>\n<ul>\n<li>Laptop</li>\n<li>Laptop charger</li>\n<li>GitHub account (please register before attending the hackathon)</li>\n<li>HDMI / USB-C adapter (optional)</li>\n</ul>\n<p>Light refreshments and Wi-Fi will be provided.</p>\n<hr>\n<h2>Rewards</h2>\n<p>🎁 Perxona Core Plan — 1 Year</p>\n<p>🎁 Claude Pro — 3 Months</p>\n<p>🎁 Claude Max 5x — 3 Months</p>\n<p>🎁 Claude Max 20x — 3 Months</p>\n<p>🏆 <strong>Grand Prize:</strong> MacBook Neo</p>\n<p>Reward details, eligibility, judging criteria, and the prize distribution process will be announced during the event. Perxona reserves the right to verify submissions, determine participant eligibility, and make the final decisions regarding prizes and rewards.</p>\n<hr>\n<h2>Rules</h2>\n<ul>\n<li>Projects should be built with Perxona's Connect Kit</li>\n<li>Join solo or in a team of up to 3 people</li>\n<li>Projects should be primarily built during the hackathon</li>\n<li>Any AI development tools are welcome (Claude, Cursor, ChatGPT, Gemini, Copilot, etc.)</li>\n<li>Existing ideas are welcome, but judging will focus on work completed during the event</li>\n</ul>\n<hr>\n<h2>Important Notes</h2>\n<ul>\n<li>Registration is required</li>\n<li>Laptop required</li>\n<li>Limited seats</li>\n<li>English is the primary event language, with Japanese support available</li>\n<li>Photos and videos may be taken for event documentation and promotional purposes</li>\n<li>Perxona reserves the right to modify the event schedule, judging process, rewards, and participation rules if necessary</li>\n<li>Selected projects may be invited for future pilot programs or collaboration opportunities with Perxona</li>\n<li>Participation does not guarantee future commercial partnerships or implementation</li>\n<li>By registering for this event, participants agree to these event rules and acknowledge that all organizer decisions are final</li>\n</ul>\n<hr>\n<h2>What You'll Leave With</h2>\n<p>✅ Your own working AI Avatar\n✅ A live product demo\n✅ New builder connections\n✅ Hands-on experience building with Perxona\n✅ The opportunity to continue building after the event</p>\n<h1>Tokyo | Build Your Own AI Avatar Hackathon by Perxona（日本語）</h1>\n<p><strong>一日で完成するAIアバターのプロダクト制作</strong></p>\n<p>東京に集まる開発者・クリエイター・VTuber・AIビルダーとともに、Perxona コネクトキットを使って実際に動くAIアバターを開発・プロダクト化します。開発経験の有無は問いません。AIアバターのアイデアを形にしましょう。</p>\n<p>※進行や資料などは基本英語で行います（一部のみ日本語サポートあり）</p>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>AI駆動開発のビルダー（コーディング未経験者でも大歓迎）</li>\n<li>Perxona コネクトキットに興味のある開発者</li>\n<li>ペルソナを持ったAIキャラを創作したいVTuber・配信者</li>\n<li>3D AIエージェントを作りたいクリエイター・個人開発者</li>\n<li>学生、インディーハッカー、スタートアップビルダー</li>\n</ul>\n<hr>\n<h2>開催概要</h2>\n<p>🗓️ <strong>日時：</strong> 2026年8月8日(土)</p>\n<p>🕤 <strong>時間：</strong> 9:00〜20:00</p>\n<p>📍 <strong>会場：</strong> 銀座ユニーク貸会議室7丁目店</p>\n<p>🌐 <strong>言語：</strong> 英語（一部のみ日本語サポートあり）</p>\n<p>👤 <strong>定員：</strong> 100名（先着順、早めのお申し込みを推奨）</p>\n<hr>\n<h2>当日スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>09:00</td>\n<td>受付・交流</td>\n</tr>\n<tr>\n<td>10:00</td>\n<td>オープニング・チーム編成</td>\n</tr>\n<tr>\n<td>12:00</td>\n<td>昼休憩・ネットワーキング</td>\n</tr>\n<tr>\n<td>13:00</td>\n<td>ハッキングセッション</td>\n</tr>\n<tr>\n<td>18:00</td>\n<td>プロジェクト提出締切</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>デモ発表・表彰</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>当日の持ち物</h2>\n<ul>\n<li>ノートPC、充電器</li>\n<li>GitHubアカウント（事前登録必須）</li>\n<li>HDMI/USB-C変換アダプタ（任意）</li>\n</ul>\n<p>軽食・Wi-Fiを会場でご用意しております。</p>\n<hr>\n<h2>賞品</h2>\n<p>🎁 Perxona Core Plan 1年分</p>\n<p>🎁 Claude Pro 3ヶ月分</p>\n<p>🎁 Claude Max 5x 3ヶ月分</p>\n<p>🎁 Claude Max 20x 3ヶ月分</p>\n<p>🏆 <strong>グランプリ賞：</strong> MacBook Neo</p>\n<p>※賞品詳細、審査基準、授与プロセスは当日発表予定。提出物の確認、参加資格および賞品に関する最終判断は弊社が行います。</p>\n<hr>\n<h2>参加ルール</h2>\n<ul>\n<li>Perxona コネクトキットを使用して開発すること</li>\n<li>1〜3名までのチーム参加が可能</li>\n<li>当日中に制作したプロジェクトであること</li>\n<li>AI開発ツールの使用は自由（Claude、Cursor、ChatGPT、Gemini、Copilotなど）</li>\n<li>イベント開始前に開発されたプログラム、デザイン、その他半完成品の使用および継続開発は固く禁じます。審査対象は、イベント期間中にゼロから制作された成果物に限定されます。</li>\n</ul>\n<hr>\n<h2>参加にあたっての注意事項</h2>\n<ul>\n<li>参加は事前登録制</li>\n<li>パソコンの持参は必須</li>\n<li>進行や資料などは英語で行います（一部のみ日本語サポートあり）</li>\n<li>会場での撮影・録画あり（記録・広報目的で使用）</li>\n<li>スケジュール・審査プロセス・賞品・参加ルールは、運営の判断により変更される場合があります</li>\n<li>選出プロジェクトは、今後Perxonaとのパイロットプログラム・協業機会の対象になる場合があります</li>\n<li>本プログラムへの参加は、将来的な業務提携や実装を保証するものではありません</li>\n<li>本イベントへの申し込みをもって、上記ルールへの同意、および運営の決定が最終であることへの同意とみなします</li>\n</ul>",
-      "url": "https://perxona-ai.connpass.com/event/400806/",
-      "image_url": "https://media.connpass.com/thumbs/bd/d5/bdd50a47ff02c94efc20b330411aafb2.png",
-      "hash_tag": "AI駆動開発",
-      "started_at": "2026-08-08T09:00:00+09:00",
-      "ended_at": "2026-08-08T20:00:00+09:00",
-      "published_at": "2026-07-15T23:06:38+09:00",
-      "limit": 75,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17888,
-        "subdomain": "perxona-ai",
-        "title": "Perxona Builder Community",
-        "url": "https://perxona-ai.connpass.com/"
-      },
-      "address": "東京都中央区銀座7-13-15 銀座菊地ビル　ユニーク７丁目店",
-      "place": "銀座ユニーク貸会議室7丁目店",
-      "lat": "35.667496700000",
-      "lon": "139.763727800000",
-      "owner_id": 1034218,
-      "owner_nickname": "perxona_lina",
-      "owner_display_name": "Perxona AIアバター",
-      "accepted": 12,
-      "waiting": 0,
-      "updated_at": "2026-08-06T18:11:50+09:00"
     },
     {
       "id": 402427,
@@ -462,6 +431,37 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-08-07T23:38:54+09:00"
+    },
+    {
+      "id": 400806,
+      "title": "【コネクトキット配布】1日で完成するAIアバター開発ハッカソン",
+      "catch": "クリエイティビティを発揮し、見たことのないAIアバターのプロダクトを作ってみよう！",
+      "description": "<p>日本語の募集内容は下にあります。</p>\n<h1>Tokyo | Build Your Own AI Avatar Hackathon by Perxona</h1>\n<p><strong>Build. Launch. Demo. All in one day.</strong></p>\n<p>Join developers, creators, VTubers, and AI builders in Tokyo to build and launch a real AI Avatar using Perxona.</p>\n<p>Whether you're an experienced developer or completely new to AI avatars, we'll help you bring your idea to life.</p>\n<p>The event will be conducted primarily in English, with partially Japanese support available throughout the day.</p>\n<hr>\n<h2>Build Your Own AI Avatar. Ship It the Same Day.</h2>\n<p>You built the brain. Now give it a face.</p>\n<p>This is a one-day hackathon where you'll build an AI Avatar that actually works—not just a prototype, not just a concept, but something you can launch and demo before the day ends.</p>\n<hr>\n<h2>Who Should Join</h2>\n<p>This hackathon is for:</p>\n<ul>\n<li>AI-assisted builders (no coding experience required)</li>\n<li>Developers interested in the Perxona AI Avatar Connect Kit</li>\n<li>VTubers and streamers exploring AI-powered personas</li>\n<li>Creators and brands building 3D AI representatives</li>\n<li>Students, indie hackers, and startup builders</li>\n</ul>\n<hr>\n<h2>Event Details</h2>\n<p>🗓️ <strong>Date:</strong> August 8, 2026 (Sat)</p>\n<p>🕤 <strong>Time:</strong> 09:00–20:00</p>\n<p>📍 <strong>Location:</strong> Ginza Uni-Ku 7-chome</p>\n<hr>\n<h2>Schedule</h2>\n<table>\n<thead>\n<tr>\n<th>Time</th>\n<th>Activity</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>09:00</td>\n<td>Check-in &amp; Networking</td>\n</tr>\n<tr>\n<td>10:00</td>\n<td>Opening &amp; Team Formation</td>\n</tr>\n<tr>\n<td>12:00</td>\n<td>Lunch Break &amp; Networking</td>\n</tr>\n<tr>\n<td>13:00</td>\n<td>Hacking Session</td>\n</tr>\n<tr>\n<td>18:00</td>\n<td>Project Submission Deadline</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>Live Demo &amp; Awards</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>Capacity</h2>\n<p><strong>100 participants</strong></p>\n<p>Spots are limited. Apply early.</p>\n<hr>\n<h2>What to Bring</h2>\n<ul>\n<li>Laptop</li>\n<li>Laptop charger</li>\n<li>GitHub account (please register before attending the hackathon)</li>\n<li>HDMI / USB-C adapter (optional)</li>\n</ul>\n<p>Light refreshments and Wi-Fi will be provided.</p>\n<hr>\n<h2>Rewards</h2>\n<p>🎁 Perxona Core Plan — 1 Year</p>\n<p>🎁 Claude Pro — 3 Months</p>\n<p>🎁 Claude Max 5x — 3 Months</p>\n<p>🎁 Claude Max 20x — 3 Months</p>\n<p>🏆 <strong>Grand Prize:</strong> MacBook Neo</p>\n<p>Reward details, eligibility, judging criteria, and the prize distribution process will be announced during the event. Perxona reserves the right to verify submissions, determine participant eligibility, and make the final decisions regarding prizes and rewards.</p>\n<hr>\n<h2>Rules</h2>\n<ul>\n<li>Projects should be built with Perxona's Connect Kit</li>\n<li>Join solo or in a team of up to 3 people</li>\n<li>Projects should be primarily built during the hackathon</li>\n<li>Any AI development tools are welcome (Claude, Cursor, ChatGPT, Gemini, Copilot, etc.)</li>\n<li>Existing ideas are welcome, but judging will focus on work completed during the event</li>\n</ul>\n<hr>\n<h2>Important Notes</h2>\n<ul>\n<li>Registration is required</li>\n<li>Laptop required</li>\n<li>Limited seats</li>\n<li>English is the primary event language, with Japanese support available</li>\n<li>Photos and videos may be taken for event documentation and promotional purposes</li>\n<li>Perxona reserves the right to modify the event schedule, judging process, rewards, and participation rules if necessary</li>\n<li>Selected projects may be invited for future pilot programs or collaboration opportunities with Perxona</li>\n<li>Participation does not guarantee future commercial partnerships or implementation</li>\n<li>By registering for this event, participants agree to these event rules and acknowledge that all organizer decisions are final</li>\n</ul>\n<hr>\n<h2>What You'll Leave With</h2>\n<p>✅ Your own working AI Avatar\n✅ A live product demo\n✅ New builder connections\n✅ Hands-on experience building with Perxona\n✅ The opportunity to continue building after the event</p>\n<h1>Tokyo | Build Your Own AI Avatar Hackathon by Perxona（日本語）</h1>\n<p><strong>一日で完成するAIアバターのプロダクト制作</strong></p>\n<p>東京に集まる開発者・クリエイター・VTuber・AIビルダーとともに、Perxona コネクトキットを使って実際に動くAIアバターを開発・プロダクト化します。開発経験の有無は問いません。AIアバターのアイデアを形にしましょう。</p>\n<p>※進行や資料などは基本英語で行います（一部のみ日本語サポートあり）</p>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>AI駆動開発のビルダー（コーディング未経験者でも大歓迎）</li>\n<li>Perxona コネクトキットに興味のある開発者</li>\n<li>ペルソナを持ったAIキャラを創作したいVTuber・配信者</li>\n<li>3D AIエージェントを作りたいクリエイター・個人開発者</li>\n<li>学生、インディーハッカー、スタートアップビルダー</li>\n</ul>\n<hr>\n<h2>開催概要</h2>\n<p>🗓️ <strong>日時：</strong> 2026年8月8日(土)</p>\n<p>🕤 <strong>時間：</strong> 9:00〜20:00</p>\n<p>📍 <strong>会場：</strong> 銀座ユニーク貸会議室7丁目店</p>\n<p>🌐 <strong>言語：</strong> 英語（一部のみ日本語サポートあり）</p>\n<p>👤 <strong>定員：</strong> 100名（先着順、早めのお申し込みを推奨）</p>\n<hr>\n<h2>当日スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>09:00</td>\n<td>受付・交流</td>\n</tr>\n<tr>\n<td>10:00</td>\n<td>オープニング・チーム編成</td>\n</tr>\n<tr>\n<td>12:00</td>\n<td>昼休憩・ネットワーキング</td>\n</tr>\n<tr>\n<td>13:00</td>\n<td>ハッキングセッション</td>\n</tr>\n<tr>\n<td>18:00</td>\n<td>プロジェクト提出締切</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>デモ発表・表彰</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>当日の持ち物</h2>\n<ul>\n<li>ノートPC、充電器</li>\n<li>GitHubアカウント（事前登録必須）</li>\n<li>HDMI/USB-C変換アダプタ（任意）</li>\n</ul>\n<p>軽食・Wi-Fiを会場でご用意しております。</p>\n<hr>\n<h2>賞品</h2>\n<p>🎁 Perxona Core Plan 1年分</p>\n<p>🎁 Claude Pro 3ヶ月分</p>\n<p>🎁 Claude Max 5x 3ヶ月分</p>\n<p>🎁 Claude Max 20x 3ヶ月分</p>\n<p>🏆 <strong>グランプリ賞：</strong> MacBook Neo</p>\n<p>※賞品詳細、審査基準、授与プロセスは当日発表予定。提出物の確認、参加資格および賞品に関する最終判断は弊社が行います。</p>\n<hr>\n<h2>参加ルール</h2>\n<ul>\n<li>Perxona コネクトキットを使用して開発すること</li>\n<li>1〜3名までのチーム参加が可能</li>\n<li>当日中に制作したプロジェクトであること</li>\n<li>AI開発ツールの使用は自由（Claude、Cursor、ChatGPT、Gemini、Copilotなど）</li>\n<li>イベント開始前に開発されたプログラム、デザイン、その他半完成品の使用および継続開発は固く禁じます。審査対象は、イベント期間中にゼロから制作された成果物に限定されます。</li>\n</ul>\n<hr>\n<h2>参加にあたっての注意事項</h2>\n<ul>\n<li>参加は事前登録制</li>\n<li>パソコンの持参は必須</li>\n<li>進行や資料などは英語で行います（一部のみ日本語サポートあり）</li>\n<li>会場での撮影・録画あり（記録・広報目的で使用）</li>\n<li>スケジュール・審査プロセス・賞品・参加ルールは、運営の判断により変更される場合があります</li>\n<li>選出プロジェクトは、今後Perxonaとのパイロットプログラム・協業機会の対象になる場合があります</li>\n<li>本プログラムへの参加は、将来的な業務提携や実装を保証するものではありません</li>\n<li>本イベントへの申し込みをもって、上記ルールへの同意、および運営の決定が最終であることへの同意とみなします</li>\n</ul>",
+      "url": "https://perxona-ai.connpass.com/event/400806/",
+      "image_url": "https://media.connpass.com/thumbs/bd/d5/bdd50a47ff02c94efc20b330411aafb2.png",
+      "hash_tag": "AI駆動開発",
+      "started_at": "2026-08-08T09:00:00+09:00",
+      "ended_at": "2026-08-08T20:00:00+09:00",
+      "published_at": "2026-07-15T23:06:38+09:00",
+      "limit": 75,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17888,
+        "subdomain": "perxona-ai",
+        "title": "Perxona Builder Community",
+        "url": "https://perxona-ai.connpass.com/"
+      },
+      "address": "東京都中央区銀座7-13-15 銀座菊地ビル　ユニーク７丁目店",
+      "place": "銀座ユニーク貸会議室7丁目店",
+      "lat": "35.667496700000",
+      "lon": "139.763727800000",
+      "owner_id": 1034218,
+      "owner_nickname": "perxona_lina",
+      "owner_display_name": "Perxona AIアバター",
+      "accepted": 11,
+      "waiting": 0,
+      "updated_at": "2026-08-06T18:11:50+09:00"
     }
   ]
 }
