@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-08T15:37:38.053702+09:00",
+  "fetched_at": "2026-08-08T16:41:56.338949+09:00",
   "date": "20260808",
   "count": 15,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-20T11:45:19+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 10265,
         "subdomain": "glass-sun",
@@ -47,7 +47,7 @@
       "published_at": "2026-07-10T15:11:10+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都港区海岸1-7-1",
       "place": "東京ポートシティ竹芝 3F まちづくりプラザ",
@@ -104,7 +104,7 @@
       "published_at": "2026-07-13T12:01:16+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16152,
         "subdomain": "atsumaru-mokumoku",
