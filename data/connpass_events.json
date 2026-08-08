@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-08T12:17:37.370169+09:00",
+  "fetched_at": "2026-08-08T13:47:51.232567+09:00",
   "date": "20260808",
   "count": 15,
   "events": [
@@ -73,7 +73,7 @@
       "published_at": "2026-07-16T22:00:14+09:00",
       "limit": 45,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17892,
         "subdomain": "tohoku-agile",
@@ -104,7 +104,7 @@
       "published_at": "2026-07-13T12:01:16+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16152,
         "subdomain": "atsumaru-mokumoku",
@@ -135,7 +135,7 @@
       "published_at": "2026-07-11T13:11:19+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17422,
         "subdomain": "techbooklibrary",
@@ -197,7 +197,7 @@
       "published_at": "2026-07-25T13:33:44+09:00",
       "limit": 7,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10492,
         "subdomain": "zeki-chan-lab",
@@ -211,7 +211,7 @@
       "owner_id": 508254,
       "owner_nickname": "zeki0714",
       "owner_display_name": "えむ",
-      "accepted": 3,
+      "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-07-25T13:33:44+09:00"
     },
@@ -228,7 +228,7 @@
       "published_at": "2026-04-15T00:52:45+09:00",
       "limit": 25,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13549,
         "subdomain": "ishikai",
@@ -242,7 +242,7 @@
       "owner_id": 33070,
       "owner_nickname": "okamura_junichi",
       "owner_display_name": "jun1okamura",
-      "accepted": 18,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-08-01T01:00:48+09:00"
     },
