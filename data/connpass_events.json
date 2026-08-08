@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-08T08:26:21.665008+09:00",
+  "fetched_at": "2026-08-08T10:02:16.612088+09:00",
   "date": "20260808",
   "count": 15,
   "events": [
@@ -273,7 +273,7 @@
       "owner_id": 51,
       "owner_nickname": "takanori",
       "owner_display_name": "Takanori Suzuki",
-      "accepted": 13,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-07-28T14:25:24+09:00"
     },
@@ -290,7 +290,7 @@
       "published_at": "2026-07-15T07:50:00+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 12918,
         "subdomain": "ras-duino",
@@ -321,7 +321,7 @@
       "published_at": "2026-07-25T13:23:50+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10492,
         "subdomain": "zeki-chan-lab",
@@ -352,7 +352,7 @@
       "published_at": "2026-08-01T13:00:50+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11642,
         "subdomain": "techmokmok",
@@ -383,7 +383,7 @@
       "published_at": "2026-08-01T14:57:03+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13830,
         "subdomain": "networktraining",
@@ -445,7 +445,7 @@
       "published_at": "2026-07-15T23:06:38+09:00",
       "limit": 75,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17888,
         "subdomain": "perxona-ai",
