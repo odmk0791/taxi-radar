@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-08T18:29:27.126313+09:00",
+  "fetched_at": "2026-08-08T19:23:06.780544+09:00",
   "date": "20260808",
   "count": 15,
   "events": [
@@ -259,7 +259,7 @@
       "published_at": "2026-07-28T14:25:24+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14,
         "subdomain": "pyhack",
