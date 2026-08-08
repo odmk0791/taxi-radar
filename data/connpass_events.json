@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-08T13:47:51.232567+09:00",
+  "fetched_at": "2026-08-08T14:36:16.592603+09:00",
   "date": "20260808",
   "count": 15,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-07-10T15:11:10+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都港区海岸1-7-1",
       "place": "東京ポートシティ竹芝 3F まちづくりプラザ",
@@ -149,7 +149,7 @@
       "owner_id": 176,
       "owner_nickname": "hiro_y",
       "owner_display_name": "hiro_y",
-      "accepted": 5,
+      "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-08-07T20:23:15+09:00"
     },
@@ -185,37 +185,6 @@
       "updated_at": "2026-07-29T18:20:15+09:00"
     },
     {
-      "id": 401728,
-      "title": "ALBで学ぶ“落ちない”Webサーバ！EC2冗長化＆ロードバランサー入門ハンズオン",
-      "catch": "",
-      "description": "<h2>ハンズオンへようこそ！</h2>\n<p>EC2でWebサーバを立てたことはあるけど、</p>\n<ul>\n<li>「サーバが1台だと落ちたら終わり…現場で\"冗長構成にしといて\"って言われたけど何それ？」</li>\n<li>「ロードバランサー（ALB）って聞くけど、実際どう動いてるの？」</li>\n<li>「マルチAZって言葉は知ってるけど、体感したことがない」</li>\n</ul>\n<p>そんな\"次のステップ\"でつまずきがちなポイントを、<strong>手を動かしながら体系的に解決します。</strong></p>\n<p>このハンズオンでは、<strong>2台のEC2 ＋ ALB（Application Load Balancer）</strong> を使って、<strong>「1台のサーバが落ちてもサービスが止まらない」冗長構成</strong> を0から構築し、実際に片方のサーバを止めて <strong>\"落ちないこと\"を自分の目で確認</strong> します。</p>\n<p>環境は <strong>CloudFormationで一括自動構築</strong>。インフラをコードで立ち上げる（IaC）体験もできます。</p>\n<h2>得られるモノ（3つ）</h2>\n<ol>\n<li><strong>冗長化（高可用性）の概念</strong> — 単一障害点（SPOF）をなくす考え方を、現場の言葉で理解できる</li>\n<li><strong>ALB / ターゲットグループ / ヘルスチェックの仕組み</strong> — リクエストがどう振り分けられ、異常をどう検知するかを体感</li>\n<li><strong>マルチAZ構成の構築体験</strong> — 2つのアベイラビリティゾーンにまたがる構成を、CloudFormationで一気に作る</li>\n</ol>\n<h2>こんな感じで進めます</h2>\n<p>合計 <strong>45分</strong> を予定しています。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5分</td>\n<td>事前準備（CloudFormationでスタック作成開始）</td>\n</tr>\n<tr>\n<td>10分</td>\n<td>座学（冗長化とは／ALBとは／マルチAZとは）</td>\n</tr>\n<tr>\n<td>3分</td>\n<td>環境確認</td>\n</tr>\n<tr>\n<td>10分</td>\n<td>実践1：ALBの動作確認（リクエストがA/B 2台に振り分けられるのを確認）</td>\n</tr>\n<tr>\n<td>10分</td>\n<td>実践2：障害シミュレーション（1台止めても止まらないことを体感）</td>\n</tr>\n<tr>\n<td>7分</td>\n<td>まとめ・片付け</td>\n</tr>\n</tbody>\n</table>\n<p>※開始から5分以上遅れる方は不参加として進行しますので、参加時間をお守りください。</p>\n<h2>当日ご準備いただくもの（2つ）</h2>\n<ol>\n<li><strong>PC</strong>（Webブラウザが使えるもの）</li>\n<li><strong>リソース作成が可能なAWSアカウント</strong>（事前登録が必要）</li>\n</ol>\n<p>※お持ちでない方は事前に作成をお願いします → <a href=\"https://aws.amazon.com/jp/register-flow/\" rel=\"nofollow\">https://aws.amazon.com/jp/register-flow/</a>\n　アカウント作成時の電話番号認証に失敗してその場で作れない場合があるため、<strong>必ず事前にご準備ください。</strong></p>\n<h2>対象 ─ こんな人におすすめ</h2>\n<ul>\n<li>EC2でWebサーバを立てた経験があり、<strong>次のステップ</strong>に進みたい方</li>\n<li>運用監視・オペレーター業務をしていて、<strong>冗長構成を現場で求められる</strong>方</li>\n<li>AWSの可用性設計（ALB・マルチAZ）を<strong>手を動かして理解したい</strong>方</li>\n<li>IT経験1〜3年目で、インフラの実践スキルを伸ばしたい方</li>\n</ul>\n<p>※EC2・VPC/サブネットの基礎に初めて触れる方は、入門回（EC2でWEBサーバを作るハンズオン）からの参加をおすすめします。</p>\n<h2>参加者特典</h2>\n<p>参加者全員に、ハンズオンで使用する以下の資料を差し上げます。</p>\n<ol>\n<li><strong>ハンズオン全体像のスライド</strong>（PowerPoint）</li>\n<li><strong>構築手順書</strong>（VPC立ち上げ〜ALB構築〜リソース削除まで）</li>\n<li><strong>アーキテクチャ構成図</strong></li>\n</ol>\n<p>ハンズオン後も、何度でも自分で復習・再構築できます。</p>\n<h2>主催者</h2>\n<h2>👨‍🏫 メンター紹介</h2>\n<p><strong>ワタル</strong>（フリーランス インフラエンジニア / 業界10年目）  </p>\n<ul>\n<li><strong>経歴:</strong> 監視オペレーター時代、膨大な手作業をExcelとマクロで自動化した経験を持つ。現在はAWSアーキテクトとして活動中。</li>\n</ul>\n<h2>補足</h2>\n<ul>\n<li>中級ステップアップ向けのハンズオンです（EC2・VPCの基礎に触れたことがある前提で進めます）。</li>\n<li>余った時間に懇親会がございますので、同じ目標を持った仲間も探せます。</li>\n</ul>\n<h2>運営メンバー募集中</h2>\n<p>今後、会場を借りてのイベント企画を打つため、関東近辺でコミュニケーションが取れる運営メンバーを募集中です。詳しくはお声がけください。</p>\n<h2>禁止事項</h2>\n<ul>\n<li>マウント発言等、人を見下す言動</li>\n<li>誹謗中傷や荒らし行為、威圧的な言動等</li>\n<li>営業活動、マルチ勧誘、プログラミングスクールの勧誘等</li>\n<li>当日の無断キャンセル（他の参加希望の方にご迷惑が掛かるため、2回以上行った場合は次回以降の参加をお断りする場合がございます）</li>\n</ul>\n<p>相手を不快にさせる行為は厳禁です。受け身ではなく、積極的に関わる姿勢でご参加いただければと思っております。</p>",
-      "url": "https://zeki-chan-lab.connpass.com/event/401728/",
-      "image_url": "https://media.connpass.com/thumbs/3a/ee/3aeecf8e2bdfe7c5367572f11383e8af.png",
-      "hash_tag": "AWS,ALB,EC2,冗長化,東京",
-      "started_at": "2026-08-08T13:00:00+09:00",
-      "ended_at": "2026-08-08T13:50:00+09:00",
-      "published_at": "2026-07-25T13:33:44+09:00",
-      "limit": 7,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 10492,
-        "subdomain": "zeki-chan-lab",
-        "title": "HandsonLab",
-        "url": "https://zeki-chan-lab.connpass.com/"
-      },
-      "address": "東京都港区赤坂５丁目２−３３",
-      "place": "IsaI AkasakA",
-      "lat": "35.672286300000",
-      "lon": "139.732379700000",
-      "owner_id": 508254,
-      "owner_nickname": "zeki0714",
-      "owner_display_name": "えむ",
-      "accepted": 4,
-      "waiting": 0,
-      "updated_at": "2026-07-25T13:33:44+09:00"
-    },
-    {
       "id": 390873,
       "title": "2026年08月イベント：オーディオ用OPAMP半導体ハンズオン",
       "catch": "オーディオ用OPAMP半導体を作ってみようという企画です。",
@@ -245,6 +214,37 @@
       "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-08-01T01:00:48+09:00"
+    },
+    {
+      "id": 401728,
+      "title": "ALBで学ぶ“落ちない”Webサーバ！EC2冗長化＆ロードバランサー入門ハンズオン",
+      "catch": "",
+      "description": "<h2>ハンズオンへようこそ！</h2>\n<p>EC2でWebサーバを立てたことはあるけど、</p>\n<ul>\n<li>「サーバが1台だと落ちたら終わり…現場で\"冗長構成にしといて\"って言われたけど何それ？」</li>\n<li>「ロードバランサー（ALB）って聞くけど、実際どう動いてるの？」</li>\n<li>「マルチAZって言葉は知ってるけど、体感したことがない」</li>\n</ul>\n<p>そんな\"次のステップ\"でつまずきがちなポイントを、<strong>手を動かしながら体系的に解決します。</strong></p>\n<p>このハンズオンでは、<strong>2台のEC2 ＋ ALB（Application Load Balancer）</strong> を使って、<strong>「1台のサーバが落ちてもサービスが止まらない」冗長構成</strong> を0から構築し、実際に片方のサーバを止めて <strong>\"落ちないこと\"を自分の目で確認</strong> します。</p>\n<p>環境は <strong>CloudFormationで一括自動構築</strong>。インフラをコードで立ち上げる（IaC）体験もできます。</p>\n<h2>得られるモノ（3つ）</h2>\n<ol>\n<li><strong>冗長化（高可用性）の概念</strong> — 単一障害点（SPOF）をなくす考え方を、現場の言葉で理解できる</li>\n<li><strong>ALB / ターゲットグループ / ヘルスチェックの仕組み</strong> — リクエストがどう振り分けられ、異常をどう検知するかを体感</li>\n<li><strong>マルチAZ構成の構築体験</strong> — 2つのアベイラビリティゾーンにまたがる構成を、CloudFormationで一気に作る</li>\n</ol>\n<h2>こんな感じで進めます</h2>\n<p>合計 <strong>45分</strong> を予定しています。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5分</td>\n<td>事前準備（CloudFormationでスタック作成開始）</td>\n</tr>\n<tr>\n<td>10分</td>\n<td>座学（冗長化とは／ALBとは／マルチAZとは）</td>\n</tr>\n<tr>\n<td>3分</td>\n<td>環境確認</td>\n</tr>\n<tr>\n<td>10分</td>\n<td>実践1：ALBの動作確認（リクエストがA/B 2台に振り分けられるのを確認）</td>\n</tr>\n<tr>\n<td>10分</td>\n<td>実践2：障害シミュレーション（1台止めても止まらないことを体感）</td>\n</tr>\n<tr>\n<td>7分</td>\n<td>まとめ・片付け</td>\n</tr>\n</tbody>\n</table>\n<p>※開始から5分以上遅れる方は不参加として進行しますので、参加時間をお守りください。</p>\n<h2>当日ご準備いただくもの（2つ）</h2>\n<ol>\n<li><strong>PC</strong>（Webブラウザが使えるもの）</li>\n<li><strong>リソース作成が可能なAWSアカウント</strong>（事前登録が必要）</li>\n</ol>\n<p>※お持ちでない方は事前に作成をお願いします → <a href=\"https://aws.amazon.com/jp/register-flow/\" rel=\"nofollow\">https://aws.amazon.com/jp/register-flow/</a>\n　アカウント作成時の電話番号認証に失敗してその場で作れない場合があるため、<strong>必ず事前にご準備ください。</strong></p>\n<h2>対象 ─ こんな人におすすめ</h2>\n<ul>\n<li>EC2でWebサーバを立てた経験があり、<strong>次のステップ</strong>に進みたい方</li>\n<li>運用監視・オペレーター業務をしていて、<strong>冗長構成を現場で求められる</strong>方</li>\n<li>AWSの可用性設計（ALB・マルチAZ）を<strong>手を動かして理解したい</strong>方</li>\n<li>IT経験1〜3年目で、インフラの実践スキルを伸ばしたい方</li>\n</ul>\n<p>※EC2・VPC/サブネットの基礎に初めて触れる方は、入門回（EC2でWEBサーバを作るハンズオン）からの参加をおすすめします。</p>\n<h2>参加者特典</h2>\n<p>参加者全員に、ハンズオンで使用する以下の資料を差し上げます。</p>\n<ol>\n<li><strong>ハンズオン全体像のスライド</strong>（PowerPoint）</li>\n<li><strong>構築手順書</strong>（VPC立ち上げ〜ALB構築〜リソース削除まで）</li>\n<li><strong>アーキテクチャ構成図</strong></li>\n</ol>\n<p>ハンズオン後も、何度でも自分で復習・再構築できます。</p>\n<h2>主催者</h2>\n<h2>👨‍🏫 メンター紹介</h2>\n<p><strong>ワタル</strong>（フリーランス インフラエンジニア / 業界10年目）  </p>\n<ul>\n<li><strong>経歴:</strong> 監視オペレーター時代、膨大な手作業をExcelとマクロで自動化した経験を持つ。現在はAWSアーキテクトとして活動中。</li>\n</ul>\n<h2>補足</h2>\n<ul>\n<li>中級ステップアップ向けのハンズオンです（EC2・VPCの基礎に触れたことがある前提で進めます）。</li>\n<li>余った時間に懇親会がございますので、同じ目標を持った仲間も探せます。</li>\n</ul>\n<h2>運営メンバー募集中</h2>\n<p>今後、会場を借りてのイベント企画を打つため、関東近辺でコミュニケーションが取れる運営メンバーを募集中です。詳しくはお声がけください。</p>\n<h2>禁止事項</h2>\n<ul>\n<li>マウント発言等、人を見下す言動</li>\n<li>誹謗中傷や荒らし行為、威圧的な言動等</li>\n<li>営業活動、マルチ勧誘、プログラミングスクールの勧誘等</li>\n<li>当日の無断キャンセル（他の参加希望の方にご迷惑が掛かるため、2回以上行った場合は次回以降の参加をお断りする場合がございます）</li>\n</ul>\n<p>相手を不快にさせる行為は厳禁です。受け身ではなく、積極的に関わる姿勢でご参加いただければと思っております。</p>",
+      "url": "https://zeki-chan-lab.connpass.com/event/401728/",
+      "image_url": "https://media.connpass.com/thumbs/3a/ee/3aeecf8e2bdfe7c5367572f11383e8af.png",
+      "hash_tag": "AWS,ALB,EC2,冗長化,東京",
+      "started_at": "2026-08-08T13:00:00+09:00",
+      "ended_at": "2026-08-08T13:50:00+09:00",
+      "published_at": "2026-07-25T13:33:44+09:00",
+      "limit": 7,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 10492,
+        "subdomain": "zeki-chan-lab",
+        "title": "HandsonLab",
+        "url": "https://zeki-chan-lab.connpass.com/"
+      },
+      "address": "東京都港区赤坂５丁目２−３３",
+      "place": "IsaI AkasakA",
+      "lat": "35.672286300000",
+      "lon": "139.732379700000",
+      "owner_id": 508254,
+      "owner_nickname": "zeki0714",
+      "owner_display_name": "えむ",
+      "accepted": 4,
+      "waiting": 0,
+      "updated_at": "2026-07-25T13:33:44+09:00"
     },
     {
       "id": 401996,
