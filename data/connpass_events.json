@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-09T10:06:14.734260+09:00",
+  "fetched_at": "2026-08-09T12:26:09.709560+09:00",
   "date": "20260809",
   "count": 8,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 14,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-08-08T23:49:58+09:00"
     },
@@ -92,7 +92,7 @@
       "owner_id": 374233,
       "owner_nickname": "eltociear",
       "owner_display_name": "Ikko Eltociear Ashimine",
-      "accepted": 66,
+      "accepted": 61,
       "waiting": 0,
       "updated_at": "2026-08-09T08:55:58+09:00"
     },
@@ -140,7 +140,7 @@
       "published_at": "2026-07-22T11:06:27+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14718,
         "subdomain": "coderdojo-komae",
@@ -202,7 +202,7 @@
       "published_at": "2026-07-12T10:17:12+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15704,
         "subdomain": "minami-kashiwa",
@@ -233,7 +233,7 @@
       "published_at": "2026-07-12T10:28:47+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 5131,
         "subdomain": "codefornagareyama",
