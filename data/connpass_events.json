@@ -1,39 +1,8 @@
 {
-  "fetched_at": "2026-08-10T03:28:06.461170+09:00",
+  "fetched_at": "2026-08-10T04:25:59.892002+09:00",
   "date": "20260810",
   "count": 2,
   "events": [
-    {
-      "id": 401732,
-      "title": "Python ボルダリング部 #217",
-      "catch": "Urban Base Camp 新宿",
-      "description": "<h2>このイベントの概要</h2>\n<ul>\n<li><a href=\"https://b-camp.jp/shinjuku/\" rel=\"nofollow\">Urban Base Camp 新宿</a>で登ります</li>\n<li>基本的にみんな <strong>適当な時間</strong> に来て、適当に登って、適当な時間に帰ってます。 <strong>集まったりはしません</strong> 。</li>\n<li>参加者には部員の証として<a href=\"https://connpass-tokyo.s3.amazonaws.com/thumbs/cc/8d/cc8d7f545ea3c6536e091e0a594a7d02.png\" title=\"#kabepy ステッカー\" rel=\"nofollow\">#kabepy ステッカー</a>をあげます。\n  部長の<a href=\"https://twitter.com/takanory\" rel=\"nofollow\">@takanory</a>か副部長の <a href=\"https://twitter.com/kiris\" rel=\"nofollow\">@kiris</a>、<a href=\"https://twitter.com/nyamairi\" rel=\"nofollow\">@nyamairi</a>に声をかけてください。</li>\n<li>ボルダリング初めての人の参加も大丈夫です。登り方とかは聞いてください、部員の誰かが教えます。</li>\n</ul>\n<h4>部員との合流について</h4>\n<ul>\n<li>写真の #kabepy Tシャツ(色は人による)を着ている人がどこかで登っているので、 <strong>「#kabepy で来ました」とか声をかけてください</strong>。</li>\n<li>ジムには他のクライマーが沢山いるので声をかけてくれないとこちらからは参加者を見つけられないためです。</li>\n</ul>\n<h2>料金</h2>\n<ul>\n<li>初回登録料 1,100円(Base Camp全店舗共通)</li>\n<li>平日利用料 1,760円(21時以降 1,320円)、女性は1,430円</li>\n<li>シューズレンタル 330円(初回無料)</li>\n<li>チョークレンタル 110円(初回無料)</li>\n</ul>\n<h2>感染対策</h2>\n<ul>\n<li>感染対策についてはジムのルールに従ってください</li>\n</ul>\n<h2>持ってくるもの</h2>\n<ul>\n<li>動きやすい服装(更衣室あります)</li>\n<li>(薄手の)靴下(シューズレンタルの場合)</li>\n<li>水とか(汗かくので、中に自動販売機あり)</li>\n<li>タオル(汗かくので)</li>\n</ul>\n<h2>二段クライマー takabow センパイからのお言葉</h2>\n<ul>\n<li>ボルダリングジムを使うにはジムでの登録が必要です。初回登録料（1500円程度）と身分証明書（免許証など）が必要なので忘れずに。</li>\n<li>格好は 動きやすい服装ならなんでも大丈夫です。登るために必要なクライミングシューズはレンタルできます。ただしレンタルシューズなので 靴下の持参が必須 です。</li>\n<li>参加前に 手足の爪を切っておくことをおすすめします。クライミングシューズはきついので、足の爪を切り忘れると、爪が隣の指に刺さることがあります。</li>\n<li>ジムによっては鍵のかかるロッカーが小さい為、仕事の鞄やPCなど大きなものが入りません。更衣室の棚に置いて行く事になります。部活動でよく使っている「B-PUMP Tokyo 秋葉原」には、財布など小物が入る貴重品ロッカーや更衣室内にもロッカーがあります。</li>\n</ul>\n<h2>その他</h2>\n<ul>\n<li>Python 関係ない人の参加も是非どうぞ。</li>\n<li>(これを機に python をはじめていただいても構いません)</li>\n<li>Facebook の <a href=\"http://www.facebook.com/groups/285160701551922/\" title=\"Python ボルダリング部\" rel=\"nofollow\">Python ボルダリング部</a> にも参加どうぞ。</li>\n<li>Slack(チャット)あります。参加はこちらからどうぞ→<a href=\"https://join.slack.com/t/kabepy/shared_invite/zt-6zwf5zaf-IdwFY3aOG6M9~lx1vUcP0A\" rel=\"nofollow\">join.slack.com</a></li>\n</ul>",
-      "url": "https://kabepy.connpass.com/event/401732/",
-      "image_url": "https://media.connpass.com/thumbs/bd/28/bd28546d38c06c932222563ff8c0c59d.png",
-      "hash_tag": "kabepy",
-      "started_at": "2026-08-10T19:00:00+09:00",
-      "ended_at": "2026-08-10T22:00:00+09:00",
-      "published_at": "2026-07-25T14:39:12+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 64,
-        "subdomain": "kabepy",
-        "title": "Python ボルダリング部",
-        "url": "https://kabepy.connpass.com/"
-      },
-      "address": "東京都新宿区西新宿7-3-1 三光パークビル B1F",
-      "place": "Urban Base Camp 新宿",
-      "lat": "35.695847100000",
-      "lon": "139.698915300000",
-      "owner_id": 51,
-      "owner_nickname": "takanori",
-      "owner_display_name": "Takanori Suzuki",
-      "accepted": 6,
-      "waiting": 0,
-      "updated_at": "2026-07-25T14:39:12+09:00"
-    },
     {
       "id": 401524,
       "title": "第7回　OpenArm勉強会",
@@ -61,9 +30,40 @@
       "owner_id": 4584,
       "owner_nickname": "tasukuchan",
       "owner_display_name": "tasukuchan",
-      "accepted": 106,
+      "accepted": 107,
       "waiting": 20,
       "updated_at": "2026-07-27T17:56:43+09:00"
+    },
+    {
+      "id": 401732,
+      "title": "Python ボルダリング部 #217",
+      "catch": "Urban Base Camp 新宿",
+      "description": "<h2>このイベントの概要</h2>\n<ul>\n<li><a href=\"https://b-camp.jp/shinjuku/\" rel=\"nofollow\">Urban Base Camp 新宿</a>で登ります</li>\n<li>基本的にみんな <strong>適当な時間</strong> に来て、適当に登って、適当な時間に帰ってます。 <strong>集まったりはしません</strong> 。</li>\n<li>参加者には部員の証として<a href=\"https://connpass-tokyo.s3.amazonaws.com/thumbs/cc/8d/cc8d7f545ea3c6536e091e0a594a7d02.png\" title=\"#kabepy ステッカー\" rel=\"nofollow\">#kabepy ステッカー</a>をあげます。\n  部長の<a href=\"https://twitter.com/takanory\" rel=\"nofollow\">@takanory</a>か副部長の <a href=\"https://twitter.com/kiris\" rel=\"nofollow\">@kiris</a>、<a href=\"https://twitter.com/nyamairi\" rel=\"nofollow\">@nyamairi</a>に声をかけてください。</li>\n<li>ボルダリング初めての人の参加も大丈夫です。登り方とかは聞いてください、部員の誰かが教えます。</li>\n</ul>\n<h4>部員との合流について</h4>\n<ul>\n<li>写真の #kabepy Tシャツ(色は人による)を着ている人がどこかで登っているので、 <strong>「#kabepy で来ました」とか声をかけてください</strong>。</li>\n<li>ジムには他のクライマーが沢山いるので声をかけてくれないとこちらからは参加者を見つけられないためです。</li>\n</ul>\n<h2>料金</h2>\n<ul>\n<li>初回登録料 1,100円(Base Camp全店舗共通)</li>\n<li>平日利用料 1,760円(21時以降 1,320円)、女性は1,430円</li>\n<li>シューズレンタル 330円(初回無料)</li>\n<li>チョークレンタル 110円(初回無料)</li>\n</ul>\n<h2>感染対策</h2>\n<ul>\n<li>感染対策についてはジムのルールに従ってください</li>\n</ul>\n<h2>持ってくるもの</h2>\n<ul>\n<li>動きやすい服装(更衣室あります)</li>\n<li>(薄手の)靴下(シューズレンタルの場合)</li>\n<li>水とか(汗かくので、中に自動販売機あり)</li>\n<li>タオル(汗かくので)</li>\n</ul>\n<h2>二段クライマー takabow センパイからのお言葉</h2>\n<ul>\n<li>ボルダリングジムを使うにはジムでの登録が必要です。初回登録料（1500円程度）と身分証明書（免許証など）が必要なので忘れずに。</li>\n<li>格好は 動きやすい服装ならなんでも大丈夫です。登るために必要なクライミングシューズはレンタルできます。ただしレンタルシューズなので 靴下の持参が必須 です。</li>\n<li>参加前に 手足の爪を切っておくことをおすすめします。クライミングシューズはきついので、足の爪を切り忘れると、爪が隣の指に刺さることがあります。</li>\n<li>ジムによっては鍵のかかるロッカーが小さい為、仕事の鞄やPCなど大きなものが入りません。更衣室の棚に置いて行く事になります。部活動でよく使っている「B-PUMP Tokyo 秋葉原」には、財布など小物が入る貴重品ロッカーや更衣室内にもロッカーがあります。</li>\n</ul>\n<h2>その他</h2>\n<ul>\n<li>Python 関係ない人の参加も是非どうぞ。</li>\n<li>(これを機に python をはじめていただいても構いません)</li>\n<li>Facebook の <a href=\"http://www.facebook.com/groups/285160701551922/\" title=\"Python ボルダリング部\" rel=\"nofollow\">Python ボルダリング部</a> にも参加どうぞ。</li>\n<li>Slack(チャット)あります。参加はこちらからどうぞ→<a href=\"https://join.slack.com/t/kabepy/shared_invite/zt-6zwf5zaf-IdwFY3aOG6M9~lx1vUcP0A\" rel=\"nofollow\">join.slack.com</a></li>\n</ul>",
+      "url": "https://kabepy.connpass.com/event/401732/",
+      "image_url": "https://media.connpass.com/thumbs/bd/28/bd28546d38c06c932222563ff8c0c59d.png",
+      "hash_tag": "kabepy",
+      "started_at": "2026-08-10T19:00:00+09:00",
+      "ended_at": "2026-08-10T22:00:00+09:00",
+      "published_at": "2026-07-25T14:39:12+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 64,
+        "subdomain": "kabepy",
+        "title": "Python ボルダリング部",
+        "url": "https://kabepy.connpass.com/"
+      },
+      "address": "東京都新宿区西新宿7-3-1 三光パークビル B1F",
+      "place": "Urban Base Camp 新宿",
+      "lat": "35.695847100000",
+      "lon": "139.698915300000",
+      "owner_id": 51,
+      "owner_nickname": "takanori",
+      "owner_display_name": "Takanori Suzuki",
+      "accepted": 5,
+      "waiting": 0,
+      "updated_at": "2026-07-25T14:39:12+09:00"
     }
   ]
 }
