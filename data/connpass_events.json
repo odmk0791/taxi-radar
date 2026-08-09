@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-09T16:46:50.342821+09:00",
+  "fetched_at": "2026-08-09T17:32:34.142241+09:00",
   "date": "20260809",
   "count": 8,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-08-01T16:26:33+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2959,
         "subdomain": "weeyble-creative",
@@ -78,7 +78,7 @@
       "published_at": "2026-07-05T16:56:01+09:00",
       "limit": 67,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14543,
         "subdomain": "aid",
