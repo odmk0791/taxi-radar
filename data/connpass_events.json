@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-09T18:31:46.557643+09:00",
+  "fetched_at": "2026-08-09T19:24:32.455649+09:00",
   "date": "20260809",
   "count": 6,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-31T13:01:05+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
