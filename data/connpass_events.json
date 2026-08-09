@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-09T19:24:32.455649+09:00",
+  "fetched_at": "2026-08-09T20:21:55.716249+09:00",
   "date": "20260809",
   "count": 6,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-31T13:01:05+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -30,7 +30,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 25,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-07-31T13:01:05+09:00"
     },
