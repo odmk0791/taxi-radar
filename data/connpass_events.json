@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-10T21:51:16.373382+09:00",
+  "fetched_at": "2026-08-10T23:15:52.574127+09:00",
   "date": "20260810",
   "count": 2,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-25T14:39:12+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 64,
         "subdomain": "kabepy",
