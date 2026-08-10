@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-10T08:22:48.354455+09:00",
+  "fetched_at": "2026-08-10T10:07:47.619644+09:00",
   "date": "20260810",
   "count": 2,
   "events": [
@@ -61,8 +61,8 @@
       "owner_id": 4584,
       "owner_nickname": "tasukuchan",
       "owner_display_name": "tasukuchan",
-      "accepted": 108,
-      "waiting": 20,
+      "accepted": 109,
+      "waiting": 19,
       "updated_at": "2026-07-27T17:56:43+09:00"
     }
   ]
