@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-10T20:00:17.729466+09:00",
+  "fetched_at": "2026-08-10T21:51:16.373382+09:00",
   "date": "20260810",
   "count": 2,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-07-24T18:05:58+09:00",
       "limit": 135,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15470,
         "subdomain": "open-arm",
