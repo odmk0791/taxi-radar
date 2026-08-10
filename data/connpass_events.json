@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-11T00:52:31.166999+09:00",
+  "fetched_at": "2026-08-11T01:44:44.246879+09:00",
   "date": "20260811",
   "count": 8,
   "events": [
@@ -92,7 +92,7 @@
       "owner_id": 50752,
       "owner_nickname": "AkiraIkeda",
       "owner_display_name": "Akira Ikeda",
-      "accepted": 9,
+      "accepted": 10,
       "waiting": 0,
       "updated_at": "2026-07-30T19:11:29+09:00"
     },
