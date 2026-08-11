@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-11T10:07:04.637431+09:00",
+  "fetched_at": "2026-08-11T12:27:56.253184+09:00",
   "date": "20260811",
   "count": 8,
   "events": [
@@ -140,7 +140,7 @@
       "published_at": "2026-07-10T15:27:05+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15625,
         "subdomain": "tougebu",
@@ -171,7 +171,7 @@
       "published_at": "2026-05-19T12:00:06+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 10465,
         "subdomain": "rumicar",
@@ -233,7 +233,7 @@
       "published_at": "2026-07-26T19:56:13+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16888,
         "subdomain": "se-koryu-kai",
