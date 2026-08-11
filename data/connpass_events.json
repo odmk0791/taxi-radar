@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-11T08:26:42.243752+09:00",
+  "fetched_at": "2026-08-11T10:07:04.637431+09:00",
   "date": "20260811",
-  "count": 9,
+  "count": 8,
   "events": [
     {
       "id": 398205,
@@ -69,7 +69,7 @@
       "id": 402144,
       "title": "NaITE#38　AIにおけるみんなの論点を議論しよう",
       "catch": "",
-      "description": "<h1>参加者の皆さんへのお知らせ</h1>\n<p><strong><font color=\"red\">開場は「13:45」</font></strong>です。</p>\n<p>それまではNaITEスタッフの打ち合わせを実施中です。開場までお待ちいただきますようお願いいたします。</p>\n<h1>開催概要</h1>\n<p>長い長い沈黙を破り，久しぶりに勉強会を開催します！\n最近は企業主催のミートアップや勉強会が多数開かれていますが，NaITEの勉強会は古式ゆかしく参加者主体かつ受益者公平負担での開催となります．</p>\n<p>今回は，<a href=\"https://nagasaki-it-engineers.connpass.com/event/402144/\" rel=\"nofollow\">JaSST'26 Hokkaido</a>の特別講演「AIとひとりで働く　〜今後に向けた，わたしの現在地とみんなの論点〜（池田 暁 氏，クオリティアーツ）」の後半部分について，参加者全員で議論するという構成を検討中です．</p>\n<p>プログラム構成が固まり次第本ページを更新いたします．</p>\n<h1>開催情報</h1>\n<h2>日時・場所</h2>\n<p>日時：2026年8月11日（火） 14:00 ～16:15<br>\n場所：入新井集会室（東京大森・JR京浜東北線大森駅近く）<br>\n主催：<a href=\"https://www.facebook.com/NagasakiITEngineers/\" rel=\"nofollow\">NaITE（長崎ＩＴ技術者会）</a><br>\n企画者:池田 暁，水野 昇幸<br></p>\n\n<h2>参加資格</h2>\n<ul>\n<li>”長崎”とついていますが，勉強会内容にご興味ある方であればどなたでもご参加いただけます。</li>\n</ul>\n<h2>参加費について</h2>\n<ul>\n<li>有償の会場・設備を利用しているため，参加される場合は<strong>受益者負担で参加費用をご負担願います</strong></li>\n<li>参加費は<strong>公平分担の観点から 発表者・参加者・NaITEスタッフ全員を対象</strong>とします</li>\n<li>参加費は当日の会場費・付帯設備費などに充当します</li>\n<li>もし余剰が生じた場合は次回以降のイベント等、NaITEの活動へ繰り越しいたします</li>\n</ul>\n<h1>◆注意事項</h1>\n<ul>\n<li>会の内容は講演者や主催者の都合により<strong>予告なく変更する場合があります</strong></li>\n<li><strong>参加者による撮影や録音は禁止</strong>いたします</li>\n<li>開催記録として<strong>会の様子を写真撮影いたします</strong>。撮影した写真などは会レポート等に掲載することがあります。</li>\n<li>公共の施設を利用しますので，<strong>他の利用者にご迷惑にならないようにご注意下さい</strong></li>\n<li><strong>理由がありキャンセルする場合はお早めに処理をお願いします（補欠者含む。※当日キャンセルが多いと勉強会の開催維持も困難になります）</strong></li>\n<li><strong>参加される方は，参加申込み完了時点で本注意事項にご了承いただいたものといたします。</strong></li>\n</ul>\n<h2>事前準備</h2>\n<ul>\n<li>特にありません。</li>\n</ul>\n<h1>プログラム（予定）</h1>\n<table border=\"1\">\n<tbody><tr>\n<th><font size=\"-1\" color=\"#000000\">時間</font></th>\n<th><font size=\"-1\" color=\"#000000\">タイトル，アブストラクト</font></th>\n<th><font size=\"-1\" color=\"#000000\">講演者</font></th>\n</tr>\n<tr>\n\n<td align=\"left\"><font size=\"-1\" color=\"#000000\">14:00～14:10</font></td>\n<td><font size=\"-1\" color=\"#000000\">■オープニング<br>\n「開会のご挨拶」<hr><font size=\"-2\">開催のご挨拶</font></font></td>\n<td><font size=\"-2\" color=\"#000000\">長崎ＩＴ技術者会</font></td>\n</tr>\n\n<tr>\n<td align=\"left\"><font size=\"-1\" color=\"#000000\">14:10～14:40</font></td>\n<td><font size=\"-1\" color=\"#000000\">■セッション１<br>\n「JaSST'26 Hokkaido 特別講演上映：AIとひとりで働く　〜今後に向けた，わたしの現在地とみんなの論点〜」</font><hr>\n<font size=\"-2\">　私は個人事業主として，IT企業に対し経営や開発改善，育成など多岐にわたる協創・伴走支援を行っています．クライアントは大企業からスタートアップ，地方の中小企業まで，相手も経営者から開発現場までと多様です．この活動をひとりで成立させるうえで，AIはすでに欠かせない道具となっています．<br>　本講演は二部構成です．<br>　前半では，「わたしの実践」の現在地を報告します．道具立てに特別なものはありません．伴走者・コンサルタントとして一番大切な“考えること”に集中するために何をAIに任せ，何を任せないかについて，その線引きを中心に述べます．<br>　後半では，多様なクライアントとの対話から見えてきた「みんなの論点」を紹介します．対話の関心は，AIをどう使うかという技術的な話題から，文化・人間・組織へと移りつつあるように見えます．<br>　本講演は事例発表でも技術解説でもなく，答えを提示するものでもありません．そのかわり，本イベントの各セッションで議論を広げるための「観点」をいくつか持ち帰れるよう構成しています．<br>　あえて抽象的な話を主としますが，一日の議論の入口として思考を広げることに役立てば幸いです．<br>※本セッションは，JaSST'26 Hokkaidoでの講演を録画したものを上映するセッションとなります．アブストラクトはJaSST'26 Hokkaidoでの講演のものです．</font>\n</td>\n<td><font size=\"-2\" color=\"#000000\">\n池田 暁 氏<br>（クオリティアーツ）</font></td>\n</tr>\n\n<tr>\n<td align=\"left\"><font size=\"-1\" color=\"#000000\">14:40～16:10</font></td>\n<td><font size=\"-1\" color=\"#000000\">■ディスカッション<br>\n「AIにおけるみんなの論点を議論しよう」</font><hr>\n<font size=\"-2\">　特別講演の後半で示される「みんなの論点」を出発点に，AIそのものだけでなく，AIの外側に広がる様々な論点を参加者全員で議論します．<br>\n<br>\n講演でも述べるように，経営層やCxOといった層の関心は，AIをどう使うかという技術的な話題から，それをとりまく文化・人間・組織へと移りつつあるように見えます．もちろん技術と真正面から向き合うことも大切です．しかし，そのサービス\nやプロダクトがどこにリリースされ，どこで生きるのかと考えると，そこには社会があります．私たちは社会とも向き合う必要が出てきます．また開発組織においても，AIの活用が組織文化に与える影響など，早めに議論しておくべき論点があります．<br>\n<br>\n議論項目の例として下記スライドの項目を挙げていますが，これ以外の論点の持ち込みも大歓迎です．このディスカッションから新たな論点を見いだせることを期待しています．<br><img src=\"https://quality-arts.com/temp/2026724_JaSST26Hokkaido_r5.png\"><br>※講演スライドより引用</font>\n</td>\n<td><font size=\"-2\" color=\"#000000\">モデレータ<br>水野 昇幸 氏<br>（システムエンジニアリング）</font></td>\n</tr>\n\n<tr>\n<td align=\"left\"><font size=\"-1\" color=\"#000000\">16:10～16:20</font></td>\n<td><font size=\"-1\" color=\"#000000\">■クロージング<br>「閉会の挨拶」＆片付け<hr><font size=\"-2\">閉会のご挨拶を申し上げます。</font></font></td>\n<td><font size=\"-2\" color=\"#000000\">長崎ＩＴ技術者会</font></td>\n</tr>\n</tbody></table>\n\n<h1>担当者</h1>\n<h3>池田 暁（いけだ あきら）</h3>\n<p>個人事業主「<a href=\"https://quality-arts.com/\" rel=\"nofollow\">クオリティアーツ（Quality Arts）</a>」代表。ソフトウェアやシステム開発の伴走支援を主とし、スタートアップから大手メーカー、公共まで幅広く活動。組織・チーム・個人を対象に、技術導入、エンジニア教育、プロセス改善、経営層やCxOへの壁打ち、近年はDX/AI文脈の組織整備やリスキリングまで、立場や課題に応じて支援する。</p>\n<p>品質畑ながらCQOとCTOの2つを経験している珍しいキャリアの持ち主。</p>\n<p>社外ではNPO法人ASTERや技術コミュニティに所属し、ソフトウェアエンジニアリングに関する技術の普及活動に取り組んでいる。ASTER 理事、NaITE 代表、日本品質管理学会 代議員、ACM 会員等。</p>\n<p>著書：『【改訂新版】マインドマップから始めるソフトウェアテスト（共著）』、『SQuBOKガイド V3（共著）』、『実践ソフトウェアエンジニアリング 第9版（共訳）』等。</p>\n<p>関連リンク：<a href=\"https://note.com/ikedon0505\" rel=\"nofollow\">note</a>　<a href=\"https://mypage.syosetu.com/3075284/\" rel=\"nofollow\">なろう小説</a></p>\n<h3>水野 昇幸（みずの のりゆき）</h3>\n<p>ソフトウェアの要件定義からテスト、運用までなんでも支援する流しのソフトウェア/システムエンジニア。過去は宇宙防衛システムのシステム設計・テスト・プロジェクトマネジメント、現在は企業内スタートアップとなるSaaSプロダクト開発を支援中。テスト関連の海外論文を書くのが趣味。</p>\n<p>監訳：『実践ソフトウェアエンジニアリング 第9版（共訳）』</p>\n<h1>◆ハッシュタグ</h1>\n<ul>\n<li>「＃NaITE」をご利用ください。</li>\n</ul>\n<h1>◆懇親会について</h1>\n<ul>\n<li>懇親会は未定ですが，当日の希望者・有志で近隣の居酒屋に飛び込みます．なお懇親会は割り勘となります．あらかじめご了承ください．</li>\n</ul>\n<h1>◆NaITEとは</h1>\n<p>NaITE（長崎ＩＴ技術者会）は，長崎出身者や在住，興味がある等，なんらかの関わりがあるメンバーで活動しているボランティアベースの非営利の技術コミュニティです。年に一度長崎市内でフラグシップイベントである長崎QDGを開催，メンバーによる全国各地で勉強会活動，SIG活動など実施しています。</p>\n<p>活動内容等については以下公式サイトからご参照下さい。</p>\n<ul>\n<li><a href=\"http://naite.swquality.jp/\" rel=\"nofollow\">NaITE（長崎ＩＴ技術者会公式）</a></li>\n</ul>",
+      "description": "<h1>参加者の皆さんへのお知らせ</h1>\n<h2>台風の影響について</h2>\n<ul>\n<li>本日の<strong><font color=\"red\">勉強会は開催します</font></strong>が，各参加者の判断にて安全を優先し行動をお願いいたします．</li>\n<li><a href=\"https://weathernews.jp/onebox/tenki/tokyo/13111/\" rel=\"nofollow\">ウェザーニュース社の予報</a></li>\n</ul>\n<h2>開場について</h2>\n<ul>\n<li><strong><font color=\"red\">開場は「13:45」</font></strong>を予定しておりますが，13:30には入っていただけると思います．会場の準備が済み次第，入場いただけるようにいたします．</li>\n</ul>\n<h1>開催概要</h1>\n<p>長い長い沈黙を破り，久しぶりに勉強会を開催します！\n最近は企業主催のミートアップや勉強会が多数開かれていますが，NaITEの勉強会は古式ゆかしく参加者主体かつ受益者公平負担での開催となります．</p>\n<p>今回は，<a href=\"https://nagasaki-it-engineers.connpass.com/event/402144/\" rel=\"nofollow\">JaSST'26 Hokkaido</a>の特別講演「AIとひとりで働く　〜今後に向けた，わたしの現在地とみんなの論点〜（池田 暁 氏，クオリティアーツ）」の後半部分について，参加者全員で議論するという構成を検討中です．</p>\n<p>プログラム構成が固まり次第本ページを更新いたします．</p>\n<h1>開催情報</h1>\n<h2>日時・場所</h2>\n<p>日時：2026年8月11日（火） 14:00 ～16:15<br>\n場所：入新井集会室（東京大森・JR京浜東北線大森駅近く）<br>\n主催：<a href=\"https://www.facebook.com/NagasakiITEngineers/\" rel=\"nofollow\">NaITE（長崎ＩＴ技術者会）</a><br>\n企画者:池田 暁，水野 昇幸<br></p>\n\n<h2>参加資格</h2>\n<ul>\n<li>”長崎”とついていますが，勉強会内容にご興味ある方であればどなたでもご参加いただけます。</li>\n</ul>\n<h2>参加費について</h2>\n<ul>\n<li>有償の会場・設備を利用しているため，参加される場合は<strong>受益者負担で参加費用をご負担願います</strong></li>\n<li>参加費は<strong>公平分担の観点から 発表者・参加者・NaITEスタッフ全員を対象</strong>とします</li>\n<li>参加費は当日の会場費・付帯設備費などに充当します</li>\n<li>もし余剰が生じた場合は次回以降のイベント等、NaITEの活動へ繰り越しいたします</li>\n</ul>\n<h1>◆注意事項</h1>\n<ul>\n<li>会の内容は講演者や主催者の都合により<strong>予告なく変更する場合があります</strong></li>\n<li><strong>参加者による撮影や録音は禁止</strong>いたします</li>\n<li>開催記録として<strong>会の様子を写真撮影いたします</strong>。撮影した写真などは会レポート等に掲載することがあります。</li>\n<li>公共の施設を利用しますので，<strong>他の利用者にご迷惑にならないようにご注意下さい</strong></li>\n<li><strong>理由がありキャンセルする場合はお早めに処理をお願いします（補欠者含む。※当日キャンセルが多いと勉強会の開催維持も困難になります）</strong></li>\n<li><strong>参加される方は，参加申込み完了時点で本注意事項にご了承いただいたものといたします。</strong></li>\n</ul>\n<h2>事前準備</h2>\n<ul>\n<li>特にありません。</li>\n</ul>\n<h1>プログラム（予定）</h1>\n<table border=\"1\">\n<tbody><tr>\n<th><font size=\"-1\" color=\"#000000\">時間</font></th>\n<th><font size=\"-1\" color=\"#000000\">タイトル，アブストラクト</font></th>\n<th><font size=\"-1\" color=\"#000000\">講演者</font></th>\n</tr>\n<tr>\n\n<td align=\"left\"><font size=\"-1\" color=\"#000000\">14:00～14:10</font></td>\n<td><font size=\"-1\" color=\"#000000\">■オープニング<br>\n「開会のご挨拶」<hr><font size=\"-2\">開催のご挨拶</font></font></td>\n<td><font size=\"-2\" color=\"#000000\">長崎ＩＴ技術者会</font></td>\n</tr>\n\n<tr>\n<td align=\"left\"><font size=\"-1\" color=\"#000000\">14:10～14:40</font></td>\n<td><font size=\"-1\" color=\"#000000\">■セッション１<br>\n「JaSST'26 Hokkaido 特別講演上映：AIとひとりで働く　〜今後に向けた，わたしの現在地とみんなの論点〜」</font><hr>\n<font size=\"-2\">　私は個人事業主として，IT企業に対し経営や開発改善，育成など多岐にわたる協創・伴走支援を行っています．クライアントは大企業からスタートアップ，地方の中小企業まで，相手も経営者から開発現場までと多様です．この活動をひとりで成立させるうえで，AIはすでに欠かせない道具となっています．<br>　本講演は二部構成です．<br>　前半では，「わたしの実践」の現在地を報告します．道具立てに特別なものはありません．伴走者・コンサルタントとして一番大切な“考えること”に集中するために何をAIに任せ，何を任せないかについて，その線引きを中心に述べます．<br>　後半では，多様なクライアントとの対話から見えてきた「みんなの論点」を紹介します．対話の関心は，AIをどう使うかという技術的な話題から，文化・人間・組織へと移りつつあるように見えます．<br>　本講演は事例発表でも技術解説でもなく，答えを提示するものでもありません．そのかわり，本イベントの各セッションで議論を広げるための「観点」をいくつか持ち帰れるよう構成しています．<br>　あえて抽象的な話を主としますが，一日の議論の入口として思考を広げることに役立てば幸いです．<br>※本セッションは，JaSST'26 Hokkaidoでの講演を録画したものを上映するセッションとなります．アブストラクトはJaSST'26 Hokkaidoでの講演のものです．</font>\n</td>\n<td><font size=\"-2\" color=\"#000000\">\n池田 暁 氏<br>（クオリティアーツ）</font></td>\n</tr>\n\n<tr>\n<td align=\"left\"><font size=\"-1\" color=\"#000000\">14:40～16:10</font></td>\n<td><font size=\"-1\" color=\"#000000\">■ディスカッション<br>\n「AIにおけるみんなの論点を議論しよう」</font><hr>\n<font size=\"-2\">　特別講演の後半で示される「みんなの論点」を出発点に，AIそのものだけでなく，AIの外側に広がる様々な論点を参加者全員で議論します．<br>\n<br>\n講演でも述べるように，経営層やCxOといった層の関心は，AIをどう使うかという技術的な話題から，それをとりまく文化・人間・組織へと移りつつあるように見えます．もちろん技術と真正面から向き合うことも大切です．しかし，そのサービス\nやプロダクトがどこにリリースされ，どこで生きるのかと考えると，そこには社会があります．私たちは社会とも向き合う必要が出てきます．また開発組織においても，AIの活用が組織文化に与える影響など，早めに議論しておくべき論点があります．<br>\n<br>\n議論項目の例として下記スライドの項目を挙げていますが，これ以外の論点の持ち込みも大歓迎です．このディスカッションから新たな論点を見いだせることを期待しています．<br><img src=\"https://quality-arts.com/temp/2026724_JaSST26Hokkaido_r5.png\"><br>※講演スライドより引用</font>\n</td>\n<td><font size=\"-2\" color=\"#000000\">モデレータ<br>水野 昇幸 氏<br>（システムエンジニアリング）</font></td>\n</tr>\n\n<tr>\n<td align=\"left\"><font size=\"-1\" color=\"#000000\">16:10～16:20</font></td>\n<td><font size=\"-1\" color=\"#000000\">■クロージング<br>「閉会の挨拶」＆片付け<hr><font size=\"-2\">閉会のご挨拶を申し上げます。</font></font></td>\n<td><font size=\"-2\" color=\"#000000\">長崎ＩＴ技術者会</font></td>\n</tr>\n</tbody></table>\n\n<h1>担当者</h1>\n<h3>池田 暁（いけだ あきら）</h3>\n<p>個人事業主「<a href=\"https://quality-arts.com/\" rel=\"nofollow\">クオリティアーツ（Quality Arts）</a>」代表。ソフトウェアやシステム開発の伴走支援を主とし、スタートアップから大手メーカー、公共まで幅広く活動。組織・チーム・個人を対象に、技術導入、エンジニア教育、プロセス改善、経営層やCxOへの壁打ち、近年はDX/AI文脈の組織整備やリスキリングまで、立場や課題に応じて支援する。</p>\n<p>品質畑ながらCQOとCTOの2つを経験している珍しいキャリアの持ち主。</p>\n<p>社外ではNPO法人ASTERや技術コミュニティに所属し、ソフトウェアエンジニアリングに関する技術の普及活動に取り組んでいる。ASTER 理事、NaITE 代表、日本品質管理学会 代議員、ACM 会員等。</p>\n<p>著書：『【改訂新版】マインドマップから始めるソフトウェアテスト（共著）』、『SQuBOKガイド V3（共著）』、『実践ソフトウェアエンジニアリング 第9版（共訳）』等。</p>\n<p>関連リンク：<a href=\"https://note.com/ikedon0505\" rel=\"nofollow\">note</a>　<a href=\"https://mypage.syosetu.com/3075284/\" rel=\"nofollow\">なろう小説</a></p>\n<h3>水野 昇幸（みずの のりゆき）</h3>\n<p>ソフトウェアの要件定義からテスト、運用までなんでも支援する流しのソフトウェア/システムエンジニア。過去は宇宙防衛システムのシステム設計・テスト・プロジェクトマネジメント、現在は企業内スタートアップとなるSaaSプロダクト開発を支援中。テスト関連の海外論文を書くのが趣味。</p>\n<p>監訳：『実践ソフトウェアエンジニアリング 第9版（共訳）』</p>\n<h1>◆ハッシュタグ</h1>\n<ul>\n<li>「＃NaITE」をご利用ください。</li>\n</ul>\n<h1>◆懇親会について</h1>\n<ul>\n<li>懇親会は未定ですが，当日の希望者・有志で近隣の居酒屋に飛び込みます．なお懇親会は割り勘となります．あらかじめご了承ください．</li>\n</ul>\n<h1>◆NaITEとは</h1>\n<p>NaITE（長崎ＩＴ技術者会）は，長崎出身者や在住，興味がある等，なんらかの関わりがあるメンバーで活動しているボランティアベースの非営利の技術コミュニティです。年に一度長崎市内でフラグシップイベントである長崎QDGを開催，メンバーによる全国各地で勉強会活動，SIG活動など実施しています。</p>\n<p>活動内容等については以下公式サイトからご参照下さい。</p>\n<ul>\n<li><a href=\"http://naite.swquality.jp/\" rel=\"nofollow\">NaITE（長崎ＩＴ技術者会公式）</a></li>\n</ul>",
       "url": "https://nagasaki-it-engineers.connpass.com/event/402144/",
       "image_url": "https://media.connpass.com/thumbs/4c/03/4c0377aefdbb66b76b88094c7e20157e.png",
       "hash_tag": "",
@@ -94,7 +94,7 @@
       "owner_display_name": "Akira Ikeda",
       "accepted": 9,
       "waiting": 0,
-      "updated_at": "2026-07-30T19:11:29+09:00"
+      "updated_at": "2026-08-11T09:39:32+09:00"
     },
     {
       "id": 397741,
@@ -123,7 +123,7 @@
       "owner_id": 279537,
       "owner_nickname": "CoderDojo_Machida",
       "owner_display_name": "CoderDojoまちだ",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-07-22T07:29:35+09:00"
     },
@@ -155,7 +155,7 @@
       "owner_nickname": "5mingame2",
       "owner_display_name": "Nishiyama Nobuyuki",
       "accepted": 10,
-      "waiting": 2,
+      "waiting": 1,
       "updated_at": "2026-07-10T15:27:05+09:00"
     },
     {
@@ -171,7 +171,7 @@
       "published_at": "2026-05-19T12:00:06+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10465,
         "subdomain": "rumicar",
@@ -202,7 +202,7 @@
       "published_at": "2026-07-09T12:37:44+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 7852,
         "subdomain": "pgcafe",
@@ -233,7 +233,7 @@
       "published_at": "2026-07-26T19:56:13+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16888,
         "subdomain": "se-koryu-kai",
@@ -250,37 +250,6 @@
       "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-07-26T19:56:13+09:00"
-    },
-    {
-      "id": 403359,
-      "title": "川口インディーゲーム製作もくもく会 44.5回目",
-      "catch": "",
-      "description": "<h1>概要</h1>\n<h5>\nUnityやUnreal Engineなどを使った開発もくもく会です。<br>\n各自持ち寄ったマシンでもくもく作業をしましょう。<br>\n最終的に自主制作の開発物に落とし込む開発物であれば、特にジャンルは問いません。<br>\n※「インディーゲーム」と銘打ってますが、特にフリゲでも、同人ゲームでも最終的なプロダクトの定義は厳密ではないです<br>\n\nまた、Unity/Unreal Engineで開発しているアプリ/プロダクトに付随する作業をする場としていただくのも全く問題ないです。<br>\n<br>\n(例)　<br> \n        ・ blenderで3Dモデルキャラ作成 <br>\n        ・ Photoshopで2Dアセット作成 <br>\n        ・ Aruduinoなどの電子工作 (はんだ付けなどの匂いが出るものは禁止)<br>\netc. 　<br>\n<br>\nその他、『これを使った作業はいいですか？』的な質問あれば、事前に連絡してもらえれば基本的にOKの判断すると思いますので、主催のTwitterまでどうぞ<br>\n<a href=\"https://twitter.com/umisaka0315\" rel=\"nofollow\">https://twitter.com/umisaka0315</a>\n<br>\n\n初学者のご参加も勿論歓迎です！<br>\n\nまた、途中参加もOKです。<br>\n⇒ ただし、途中参加の方は<strong> 13:00には会場着</strong>でお願いします。<br>\n\n\n※マシンや機材の貸し出しなどは行っておりませんので、<strong>必ず各自でご用意</strong>ください。<br>\n※Unity/Unreal Engine他ソフトがインストール済みのマシンの事前のご用意を必須とします。<br>\n※加えて、PCの基本操作レベルの初心者の方に関しては参加対象ではないです(所謂パソコン教室の講師のような参加者はおりません)<br>\n</h5>\n\n<h1>参加費 / 参加枠</h1>\n<p><strong>社会人は500円、学生の方は無料です。</strong><br>\n<br>\n参加費は施設利用費としてお支払いいただきます。<br></p>\n<p>※募集期間の途中で、枠を調整する可能性があります。(いずれかの枠が定員になった場合など)<br>\n※学生さんを対象とした宣伝・採用活動に関する話・勧誘などは特にありません。<br></p>\n<h1>スケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Time</th>\n<th style=\"text-align: left;\">Contents</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">9:30</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">10:00</td>\n<td style=\"text-align: left;\">簡単な自己紹介・やること共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">12:30-13:30</td>\n<td style=\"text-align: left;\">各自昼食</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:30</td>\n<td style=\"text-align: left;\">・簡単な自己紹介・やること共有(途中参加の方) <br>・希望者によるLT</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00</td>\n<td style=\"text-align: left;\">成果発表</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:40-18:00</td>\n<td style=\"text-align: left;\">会場片付け(ご協力お願いします)</td>\n</tr>\n</tbody>\n</table>\n<h1>場所</h1>\n<p>京浜東北線 川口駅から徒歩2分の市の施設で行います。</p>\n<p><strong>住所 : 埼玉県川口市川口1丁目1−1 キュポ・ラ７階　会議室A</strong></p>\n<p><strong>＜会場までの行き方＞<br></strong>\n<strong>(1) 川口駅 改札 (改札は一つです)を出て駅の東側に出ます。<br>\n(2) 下記の建物が右手(南側)に見えます。赤枠を目指して進んでください。<br>\n<a href=\"https://ibb.co/HLyPpBk\" rel=\"nofollow\"><img src=\"https://i.ibb.co/hxNd1Lt/P-20201126-123821.jpg\" alt=\"P-20201126-123821\"></a><br>\n(3) こちらの建物に入り\n<a href=\"https://ibb.co/C1hkSJ9\" rel=\"nofollow\"><img src=\"https://i.ibb.co/GxcKrsM/P-20201126-123732.jpg\" alt=\"P-20201126-123732\"></a>\n<br></strong></p><strong>\n<p>(4) エレベータで7Fまでお越しください\n<a href=\"https://ibb.co/V3kZFt3\" rel=\"nofollow\"><img src=\"https://i.ibb.co/M9J4zs9/P-20201126-123714.jpg\" alt=\"P-20201126-123714\"></a>\n<br></p>\n</strong><p><strong>(5) 受付があるので、『会議室A』の場所を聞いていただければ、会場にたどりつけます。\n※もし、わからなければ、<a href=\"https://twitter.com/umisaka0315\" rel=\"nofollow\">主催のX</a>までDMください。\n<br>\n</strong></p>\n<h1>その他</h1>\n<p>・周囲への迷惑行為などが認められた場合は当日の参加をお断りさせていただく場合があります。<br>\n・宗教の勧誘や営業活動などでの参加は禁止とさせていただきます。<br>\n・個人事業主の方のペーパーワーク(税務書類の作成など)はご遠慮願います。</p>",
-      "url": "https://kawaguchimokumoku.connpass.com/event/403359/",
-      "image_url": "https://media.connpass.com/thumbs/7e/a1/7ea1219c30666b8a968c3cc11599ee6c.png",
-      "hash_tag": "unity",
-      "started_at": "2026-08-11T09:30:00+09:00",
-      "ended_at": "2026-08-11T18:00:00+09:00",
-      "published_at": "2026-08-09T15:58:05+09:00",
-      "limit": 8,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 10996,
-        "subdomain": "kawaguchimokumoku",
-        "title": "川口もくもく会",
-        "url": "https://kawaguchimokumoku.connpass.com/"
-      },
-      "address": "埼玉県川口市川口1丁目1−1",
-      "place": "キュポ・ラ７階",
-      "lat": "35.801860200000",
-      "lon": "139.717988000000",
-      "owner_id": 2362,
-      "owner_nickname": "umisaka0315",
-      "owner_display_name": "umisaka0315",
-      "accepted": 5,
-      "waiting": 0,
-      "updated_at": "2026-08-09T15:58:05+09:00"
     }
   ]
 }
