@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-12T19:53:40.195066+09:00",
+  "fetched_at": "2026-08-12T20:40:41.069518+09:00",
   "date": "20260812",
   "count": 3,
   "events": [
@@ -61,8 +61,8 @@
       "owner_id": 681275,
       "owner_nickname": "camei19",
       "owner_display_name": "camay119",
-      "accepted": 70,
-      "waiting": 1,
+      "accepted": 71,
+      "waiting": 0,
       "updated_at": "2026-08-10T19:16:55+09:00"
     },
     {
@@ -78,7 +78,7 @@
       "published_at": "2026-07-26T07:40:27+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2289,
         "subdomain": "inter-mediator",
