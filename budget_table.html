@@ -43,7 +43,7 @@ tr.today{background:rgba(121,192,255,.08)}
   <div class="card">
     <h2><span class="n">1</span>曜日別 予算ライン</h2>
     <div class="tabs">
-      <div class="tab on" id="tabBlue" onclick="setVeh('青')">青（ジャパタク）</div>
+      <div class="tab on" id="tabBlue" onclick="setVeh('青')">ジャパタク</div>
       <div class="tab" id="tabPre" onclick="setVeh('プレタク')">プレタク</div>
     </div>
     <table id="budgetTable"></table>
@@ -54,7 +54,7 @@ tr.today{background:rgba(121,192,255,.08)}
     <h2><span class="n">2</span>時間帯別ペース（曜日別）</h2>
     <div class="dowsel" id="dowSel"></div>
     <table id="benchTable"></table>
-    <div class="note">標準＝その曜日の中央値ペース／背伸び＝上位25%の日の水準（1000万ペースに近い目標）。青タク・2025年〜の実績から算出。</div>
+    <div class="note">標準＝その曜日の中央値ペース／背伸び＝上位25%の日の水準（1000万ペースに近い目標）。ジャパタク・2025年〜の実績から算出。</div>
   </div>
 
 </div>
@@ -93,8 +93,8 @@ function renderBudget(){
     h+=`<tr${t}><td class="dow">${w}${w===todayDow?' ●':''}${nn}</td><td class="v low">${yen(b.low)}</td><td class="v bud">${yen(b.budget)}</td><td class="v high">${yen(b.high)}</td><td class="v str">${yen(b.stretch)}</td></tr>`;});
   document.getElementById('budgetTable').innerHTML=h;
   document.getElementById('budgetNote').innerHTML=veh==='青'
-    ?'青タク基準（2025年〜・特殊日除外）。●は今日の曜日。最低=中央値−0.5σ／予算=中央値／上出来=中央値+1σ／ストレッチ=5千円丸め。'
-    :'プレタク専用ライン（2026年2月〜運用）。日曜は過去実績の下限を最低ラインに設定。実績の薄い曜日(n<3)は参考値、火木金は青×1.053で推定。';
+    ?'ジャパタク基準（2025年〜・特殊日除外）。黒タクもこのラインで評価（実績がジャパタクとほぼ同等のため）。●は今日の曜日。最低=中央値−0.5σ／予算=中央値／上出来=中央値+1σ／ストレッチ=5千円丸め。'
+    :'プレタク専用ライン（2026年2月〜運用）。日曜は過去実績の下限を最低ラインに設定。実績の薄い曜日(n<3)は参考値、火木金はジャパタク×1.053で推定。';
 }
 
 let selDow=todayDow;
