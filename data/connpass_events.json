@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-13T18:55:13.287208+09:00",
+  "fetched_at": "2026-08-13T19:55:23.844524+09:00",
   "date": "20260813",
   "count": 3,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-10T15:33:50+09:00",
       "limit": 34,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17015,
         "subdomain": "megu-meet02",
@@ -31,7 +31,7 @@
       "owner_nickname": "cyber_security_cloud",
       "owner_display_name": "株式会社サイバーセキュリティクラウド",
       "accepted": 34,
-      "waiting": 4,
+      "waiting": 3,
       "updated_at": "2026-08-04T13:30:05+09:00"
     },
     {
@@ -47,7 +47,7 @@
       "published_at": "2026-07-15T11:13:40+09:00",
       "limit": 1100,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 3084,
         "subdomain": "cyberagent",
@@ -61,7 +61,7 @@
       "owner_id": 883914,
       "owner_nickname": "ishikawa-sena",
       "owner_display_name": "ishikawa-sena",
-      "accepted": 148,
+      "accepted": 150,
       "waiting": 0,
       "updated_at": "2026-08-13T18:42:52+09:00"
     },
