@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-13T15:10:35.505742+09:00",
+  "fetched_at": "2026-08-13T17:13:01.388956+09:00",
   "date": "20260813",
   "count": 3,
   "events": [
@@ -31,7 +31,7 @@
       "owner_nickname": "cyber_security_cloud",
       "owner_display_name": "株式会社サイバーセキュリティクラウド",
       "accepted": 34,
-      "waiting": 7,
+      "waiting": 5,
       "updated_at": "2026-08-04T13:30:05+09:00"
     },
     {
@@ -61,7 +61,7 @@
       "owner_id": 883914,
       "owner_nickname": "ishikawa-sena",
       "owner_display_name": "ishikawa-sena",
-      "accepted": 140,
+      "accepted": 143,
       "waiting": 0,
       "updated_at": "2026-08-06T19:16:25+09:00"
     },
