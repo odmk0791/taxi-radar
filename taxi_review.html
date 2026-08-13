@@ -37,6 +37,11 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
 #verdict .vmeta{flex:1}
 #verdict .vtitle{font-size:13px;color:var(--muted);margin-bottom:4px}
 #verdict .vcomment{font-size:14px;line-height:1.5}
+#verdict .vstats{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+#verdict .vstats .sc{background:var(--surface2);border:1px solid var(--border);border-radius:6px;
+  padding:4px 8px;font-size:11px;color:var(--muted)}
+#verdict .vstats .sc b{color:var(--text);font-size:12px;margin-left:3px}
+#verdict .vstats .sc.hit b{color:var(--green)}
 .gA{color:var(--green)}.gB{color:var(--blue)}.gC{color:var(--yellow)}
 .gD{color:var(--orange)}.gE{color:var(--red)}
 
@@ -103,7 +108,7 @@ table.loss td{padding:7px 4px;border-bottom:1px solid var(--surface2)}
 <div class="wrap" id="report" style="display:none">
   <div id="verdict">
     <div id="grade">–</div>
-    <div class="vmeta"><div class="vtitle" id="vtitle"></div><div class="vcomment" id="vcomment"></div></div>
+    <div class="vmeta"><div class="vtitle" id="vtitle"></div><div class="vcomment" id="vcomment"></div><div class="vstats" id="vstats"></div></div>
   </div>
 
   <div class="card">
@@ -328,6 +333,12 @@ function renderVerdict(day,vt,B,jiriki,obakeItems){
   let extra='';
   if(obakeItems.length){extra=` お化け${obakeItems.length}本(${yen(obakeItems.reduce((a,r)=>a+r.fare,0))})を除いた地力は ${yen(jiriki)}。`;}
   c.textContent=msg+extra;
+  // 回数＋その日の曜日の4ライン数値（営収が到達済みなら緑）
+  const s=document.getElementById('vstats');
+  const line=(label,val)=>`<span class="sc${rev>=val?' hit':''}">${label}<b>${yen(val)}</b></span>`;
+  s.innerHTML=`<span class="sc">回数<b>${day.cnt}回</b></span>`
+    +`<span class="sc">単価<b>${yen(day.cnt?Math.round(rev/day.cnt):0)}</b></span>`
+    +line('最低',B.low)+line('予算',B.budget)+line('上出来',B.high)+line('ｽﾄﾚｯﾁ',B.stretch);
 }
 
 // ② 売上スコア
