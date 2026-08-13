@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>予算ライン & 時間帯ペース</title>
+<style>
+:root{--bg:#0d1117;--surface:#161b22;--surface2:#21262d;--border:#30363d;
+  --text:#e6edf3;--muted:#8b949e;--blue:#79c0ff;--green:#3fb950;--orange:#f0883e;--purple:#d2a8ff;--yellow:#e3b341}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',Meiryo,sans-serif;padding-bottom:40px}
+#header{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+#header h1{font-size:15px;font-weight:800}
+#header a{font-size:11px;color:var(--blue);text-decoration:none;border:1px solid var(--border);padding:4px 10px;border-radius:4px}
+.wrap{max-width:760px;margin:0 auto;padding:0 12px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;margin:14px 0}
+.card h2{font-size:13px;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card h2 .n{background:var(--surface2);border:1px solid var(--border);border-radius:6px;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px}
+.tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.tab{background:var(--surface2);border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer}
+.tab.on{background:var(--blue);color:#0d1117;border-color:var(--blue)}
+.tab.on.pre{background:var(--purple);border-color:var(--purple)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:right;color:var(--muted);font-size:10px;font-weight:600;padding:8px 6px;border-bottom:1px solid var(--border);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+td{padding:9px 6px;border-bottom:1px solid var(--surface2);text-align:right;white-space:nowrap}
+td.dow{font-weight:800;font-size:14px}
+tr.today{background:rgba(121,192,255,.08)}
+.v{font-weight:700}
+.low{color:var(--muted)}.bud{color:var(--blue)}.high{color:var(--green)}.str{color:var(--yellow)}
+.sub{font-size:10px;color:var(--muted);margin-top:2px}
+.note{font-size:11px;color:var(--muted);line-height:1.5;margin-top:10px;padding:8px 10px;background:var(--surface2);border-radius:6px}
+.std{color:var(--muted)}.hi{color:var(--green);font-weight:700}
+.dowsel{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:12px}
+.dowsel .d{background:var(--surface2);border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:6px 0;font-size:14px;font-weight:800;cursor:pointer;flex:1;text-align:center;min-width:38px}
+.dowsel .d.on{background:var(--orange);color:#0d1117;border-color:var(--orange)}
+</style>
+</head>
+<body>
+<div id="header"><h1>📊 予算ライン & 時間帯ペース</h1><a href="https://odmk0791.github.io/taxi-radar/hub.html">← Hub</a></div>
+<div class="wrap">
+
+  <div class="card">
+    <h2><span class="n">1</span>曜日別 予算ライン</h2>
+    <div class="tabs">
+      <div class="tab on" id="tabBlue" onclick="setVeh('青')">青（ジャパタク）</div>
+      <div class="tab" id="tabPre" onclick="setVeh('プレタク')">プレタク</div>
+    </div>
+    <table id="budgetTable"></table>
+    <div class="note" id="budgetNote"></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">2</span>時間帯別ペース（曜日別）</h2>
+    <div class="dowsel" id="dowSel"></div>
+    <table id="benchTable"></table>
+    <div class="note">標準＝その曜日の中央値ペース／背伸び＝上位25%の日の水準（1000万ペースに近い目標）。青タク・2025年〜の実績から算出。</div>
+  </div>
+
+</div>
+<script>
+const BUDGET={
+ '月':{low:81821,budget:86150,high:94808,stretch:95000},
+ '火':{low:81758,budget:87155,high:97949,stretch:100000},
+ '水':{low:89363,budget:93025,high:100349,stretch:105000},
+ '木':{low:88169,budget:92730,high:101852,stretch:105000},
+ '金':{low:92500,budget:97400,high:107200,stretch:105000},
+ '土':{low:88034,budget:91865,high:99526,stretch:100000},
+ '日':{low:72916,budget:79120,high:91529,stretch:90000}};
+const BUDGET_P={
+ '月':{low:88400,budget:92570,high:100900,stretch:105000,n:1},
+ '火':{low:87640,budget:91774,high:100030,stretch:100000,n:0},
+ '水':{low:93230,budget:97160,high:105020,stretch:105000,n:4},
+ '木':{low:93250,budget:97645,high:106430,stretch:110000,n:0},
+ '金':{low:97950,budget:102562,high:111790,stretch:115000,n:0},
+ '土':{low:87740,budget:92750,high:102770,stretch:105000,n:3},
+ '日':{low:93610,budget:95095,high:99960,stretch:105000,n:4}};
+const BENCH={"月": {"n": 26, "rows": [{"h": 20, "std_rev": 19400, "std_cnt": 7, "hi_rev": 21400, "hi_cnt": 8}, {"h": 22, "std_rev": 30800, "std_cnt": 12, "hi_rev": 34200, "hi_cnt": 13}, {"h": 24, "std_rev": 42200, "std_cnt": 15, "hi_rev": 47800, "hi_cnt": 16}, {"h": 28, "std_rev": 67900, "std_cnt": 20, "hi_rev": 72100, "hi_cnt": 22}, {"h": 30, "std_rev": 74500, "std_cnt": 22, "hi_rev": 83300, "hi_cnt": 24}, {"h": 33, "std_rev": 86700, "std_cnt": 26, "hi_rev": 91600, "hi_cnt": 27}]}, "火": {"n": 22, "rows": [{"h": 20, "std_rev": 21300, "std_cnt": 8, "hi_rev": 23600, "hi_cnt": 9}, {"h": 22, "std_rev": 30700, "std_cnt": 12, "hi_rev": 35300, "hi_cnt": 14}, {"h": 24, "std_rev": 43000, "std_cnt": 16, "hi_rev": 54100, "hi_cnt": 17}, {"h": 28, "std_rev": 66300, "std_cnt": 22, "hi_rev": 72800, "hi_cnt": 24}, {"h": 30, "std_rev": 74000, "std_cnt": 22, "hi_rev": 81000, "hi_cnt": 27}, {"h": 33, "std_rev": 90000, "std_cnt": 28, "hi_rev": 92800, "hi_cnt": 30}]}, "水": {"n": 26, "rows": [{"h": 20, "std_rev": 19600, "std_cnt": 7, "hi_rev": 22800, "hi_cnt": 9}, {"h": 22, "std_rev": 33000, "std_cnt": 12, "hi_rev": 36100, "hi_cnt": 14}, {"h": 24, "std_rev": 42800, "std_cnt": 14, "hi_rev": 50400, "hi_cnt": 17}, {"h": 28, "std_rev": 70700, "std_cnt": 20, "hi_rev": 79900, "hi_cnt": 22}, {"h": 30, "std_rev": 84300, "std_cnt": 22, "hi_rev": 89600, "hi_cnt": 24}, {"h": 33, "std_rev": 96600, "std_cnt": 26, "hi_rev": 102100, "hi_cnt": 29}]}, "木": {"n": 19, "rows": [{"h": 20, "std_rev": 18900, "std_cnt": 8, "hi_rev": 23200, "hi_cnt": 9}, {"h": 22, "std_rev": 32400, "std_cnt": 12, "hi_rev": 34600, "hi_cnt": 13}, {"h": 24, "std_rev": 44200, "std_cnt": 15, "hi_rev": 48400, "hi_cnt": 16}, {"h": 28, "std_rev": 69600, "std_cnt": 20, "hi_rev": 77700, "hi_cnt": 21}, {"h": 30, "std_rev": 82600, "std_cnt": 22, "hi_rev": 90000, "hi_cnt": 24}, {"h": 33, "std_rev": 94600, "std_cnt": 25, "hi_rev": 98600, "hi_cnt": 28}]}, "金": {"n": 39, "rows": [{"h": 20, "std_rev": 19500, "std_cnt": 7, "hi_rev": 21400, "hi_cnt": 8}, {"h": 22, "std_rev": 30500, "std_cnt": 12, "hi_rev": 31900, "hi_cnt": 12}, {"h": 24, "std_rev": 40400, "std_cnt": 15, "hi_rev": 47900, "hi_cnt": 16}, {"h": 28, "std_rev": 72300, "std_cnt": 22, "hi_rev": 81200, "hi_cnt": 24}, {"h": 30, "std_rev": 88700, "std_cnt": 25, "hi_rev": 98400, "hi_cnt": 28}, {"h": 33, "std_rev": 98800, "std_cnt": 28, "hi_rev": 109100, "hi_cnt": 31}]}, "土": {"n": 14, "rows": [{"h": 20, "std_rev": 18600, "std_cnt": 8, "hi_rev": 24100, "hi_cnt": 9}, {"h": 22, "std_rev": 32900, "std_cnt": 12, "hi_rev": 36000, "hi_cnt": 13}, {"h": 24, "std_rev": 42000, "std_cnt": 14, "hi_rev": 45900, "hi_cnt": 16}, {"h": 28, "std_rev": 66700, "std_cnt": 21, "hi_rev": 70400, "hi_cnt": 23}, {"h": 30, "std_rev": 80600, "std_cnt": 24, "hi_rev": 89900, "hi_cnt": 28}, {"h": 33, "std_rev": 92200, "std_cnt": 28, "hi_rev": 96900, "hi_cnt": 30}]}, "日": {"n": 23, "rows": [{"h": 20, "std_rev": 18600, "std_cnt": 8, "hi_rev": 23600, "hi_cnt": 9}, {"h": 22, "std_rev": 30400, "std_cnt": 13, "hi_rev": 34000, "hi_cnt": 15}, {"h": 24, "std_rev": 38000, "std_cnt": 17, "hi_rev": 40600, "hi_cnt": 18}, {"h": 28, "std_rev": 57700, "std_cnt": 21, "hi_rev": 62900, "hi_cnt": 22}, {"h": 30, "std_rev": 63200, "std_cnt": 23, "hi_rev": 71500, "hi_cnt": 24}, {"h": 33, "std_rev": 78600, "std_cnt": 26, "hi_rev": 84600, "hi_cnt": 30}]}};
+const DOW=['月','火','水','木','金','土','日'];
+const yen=n=>'¥'+Math.round(n).toLocaleString();
+const todayDow=DOW[(new Date().getDay()+6)%7];
+
+let veh='青';
+function setVeh(v){veh=v;
+  document.getElementById('tabBlue').className='tab'+(v==='青'?' on':'');
+  document.getElementById('tabPre').className='tab'+(v==='プレタク'?' on pre':'');
+  renderBudget();}
+function renderBudget(){
+  const B=veh==='青'?BUDGET:BUDGET_P;
+  let h='<tr><th>曜日</th><th>最低</th><th>予算</th><th>上出来</th><th>ｽﾄﾚｯﾁ</th></tr>';
+  DOW.forEach(w=>{const b=B[w];const t=w===todayDow?' class="today"':'';
+    const nn=(veh==='プレタク'&&b.n!==undefined)?`<div class="sub">n=${b.n}${b.n<3?' 参考':''}</div>`:'';
+    h+=`<tr${t}><td class="dow">${w}${w===todayDow?' ●':''}${nn}</td><td class="v low">${yen(b.low)}</td><td class="v bud">${yen(b.budget)}</td><td class="v high">${yen(b.high)}</td><td class="v str">${yen(b.stretch)}</td></tr>`;});
+  document.getElementById('budgetTable').innerHTML=h;
+  document.getElementById('budgetNote').innerHTML=veh==='青'
+    ?'青タク基準（2025年〜・特殊日除外）。●は今日の曜日。最低=中央値−0.5σ／予算=中央値／上出来=中央値+1σ／ストレッチ=5千円丸め。'
+    :'プレタク専用ライン（2026年2月〜運用）。日曜は過去実績の下限を最低ラインに設定。実績の薄い曜日(n<3)は参考値、火木金は青×1.053で推定。';
+}
+
+let selDow=todayDow;
+function renderDowSel(){
+  document.getElementById('dowSel').innerHTML=DOW.map(w=>
+    `<div class="d${w===selDow?' on':''}" onclick="setDow('${w}')">${w}</div>`).join('');
+}
+function setDow(w){selDow=w;renderDowSel();renderBench();}
+function renderBench(){
+  const b=BENCH[selDow];if(!b){document.getElementById('benchTable').innerHTML='';return;}
+  const hl=h=>'〜'+(h<24?h:h-24)+'時'+(h>=24?'<span class="sub" style="display:inline">翌</span>':'');
+  let html='<tr><th>時刻</th><th>標準 売上/件数</th><th>背伸び 売上/件数</th></tr>';
+  b.rows.forEach(r=>{
+    html+=`<tr><td>${hl(r.h)}</td>`
+      +`<td><span class="std">${yen(r.std_rev)}</span><div class="sub">${r.std_cnt}件</div></td>`
+      +`<td><span class="hi">${yen(r.hi_rev)}</span><div class="sub">${r.hi_cnt}件</div></td></tr>`;});
+  document.getElementById('benchTable').innerHTML=html;
+}
+setVeh('青');renderDowSel();renderBench();
+</script>
+</body>
+</html>
