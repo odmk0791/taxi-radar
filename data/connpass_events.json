@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-13T21:52:15.772408+09:00",
+  "fetched_at": "2026-08-13T23:17:49.171635+09:00",
   "date": "20260813",
   "count": 3,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-07-15T11:13:40+09:00",
       "limit": 1100,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3084,
         "subdomain": "cyberagent",
