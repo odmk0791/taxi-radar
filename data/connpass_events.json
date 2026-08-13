@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-13T20:41:09.062973+09:00",
+  "fetched_at": "2026-08-13T21:52:15.772408+09:00",
   "date": "20260813",
   "count": 3,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-10T15:33:50+09:00",
       "limit": 34,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17015,
         "subdomain": "megu-meet02",
