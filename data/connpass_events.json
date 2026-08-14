@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-15T06:17:46.806040+09:00",
+  "fetched_at": "2026-08-15T07:14:18.919218+09:00",
   "date": "20260815",
   "count": 13,
   "events": [
@@ -97,37 +97,6 @@
       "updated_at": "2026-08-06T22:03:33+09:00"
     },
     {
-      "id": 401992,
-      "title": "もくもく＆LT会＠中野 #10",
-      "catch": "",
-      "description": "<h1>主催者からのメッセージ</h1>\n<p>主にWebエンジニア（BtoB / バックエンド多め）の技術スキルを持つエンジニアを中心とした、もくもく&amp;LT会を開催します。\n以下のような言語 / プラットフォームに詳しいエンジニアが参加しますが、特に言語やプラットフォームは限定いたしません。</p>\n<ul>\n<li>Azure</li>\n<li>AWS</li>\n<li>GitHub</li>\n<li>JavaScript</li>\n<li>C#</li>\n<li><a href=\"http://ASP.NET\" rel=\"nofollow\">ASP.NET</a></li>\n<li>Python</li>\n<li>PowerShell</li>\n<li>PostgreSQL</li>\n<li>SQL Server</li>\n<li>Windows Server</li>\n</ul>\n<p>最近は生成AIを利用した開発に関するトピック・LTが多めです。個人でプロダクト開発を行っているエンジニアも多数参加しています。</p>\n<h1>開催概要</h1>\n<ul>\n<li>日時：2026/8/15(土) 13:00～18:00（12:45受け付け開始）</li>\n<li>場所：東京都中野区中野2丁目30-5 中野アーバンビル Pleasanter Lounge 7F（JR中野駅 南口 徒歩2分）</li>\n<li>主催：Nakano Tech Lounge</li>\n</ul>\n<h1>参加費</h1>\n<p>無料</p>\n<h1>スケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">所要時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">担当者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:45</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">5分</td>\n<td style=\"text-align: left;\">会の説明</td>\n<td style=\"text-align: left;\">主催者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:05</td>\n<td style=\"text-align: left;\">15分</td>\n<td style=\"text-align: left;\">自己紹介&amp;今日やること</td>\n<td style=\"text-align: left;\">参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:20</td>\n<td style=\"text-align: left;\">200分</td>\n<td style=\"text-align: left;\">もくもく会</td>\n<td style=\"text-align: left;\">参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:40</td>\n<td style=\"text-align: left;\">40分</td>\n<td style=\"text-align: left;\">LT（やったこと等）</td>\n<td style=\"text-align: left;\">LT枠参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:20</td>\n<td style=\"text-align: left;\">40分</td>\n<td style=\"text-align: left;\">ネットワーキング</td>\n<td style=\"text-align: left;\">参加者（希望者のみ）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">閉会</td>\n<td style=\"text-align: left;\">主催者</td>\n</tr>\n</tbody>\n</table>\n<p>※LTではLT枠にお申し込みいただいた方に5分程度の発表をお願いしておりますので、ご準備の程よろしくお願いいたします。発表いただく内容は当日やった以外でも何でも構いません！  </p>\n<h1>対象者</h1>\n<ul>\n<li>Webエンジニアまたは志望者（経験問いません）</li>\n<li>個人でプロダクト開発を行っている方、または興味のある方</li>\n</ul>\n<h1>持ち物</h1>\n<ul>\n<li>作業用PC</li>\n<li>お名前が確認できるもの(名刺、学生証等)</li>\n</ul>\n<h1>飲食</h1>\n<p>可能です。ニオイの強いものは避けてください。</p>\n<h1>LINE オープンチャット</h1>\n<p>「Nakano Tech Lounge」のオープンチャットを作りました！\n下記URLより登録をお願いします。</p>\n<p><a href=\"https://line.me/ti/g2/Sjzh9WidzCp0GMpCNwFRtbvZxy5Oat2bSSQ7OQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default\" rel=\"nofollow\">https://line.me/ti/g2/Sjzh9WidzCp0GMpCNwFRtbvZxy5Oat2bSSQ7OQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default</a></p>\n<h1>アンチハラスメントポリシー</h1>\n<p>このグループではアンチハラスメントポリシーを定めています。誰もが安心して参加できるよう下記に抵触する可能性のある行為を行った場合には、会場からの退場およびグループへの出入り禁止とします。</p>\n<ul>\n<li>攻撃的なコメント(ジェンダー・性自認やジェンダー表現・性的指向・障碍・容貌・体型・人種・民族・年齢・宗教あるいは無宗教についてなど)</li>\n<li>脅迫、ストーキング、つきまとい</li>\n<li>いやがらせ目的の撮影や録音</li>\n<li>発表や他のイベントの継続的妨害</li>\n<li>不適切な身体的接触</li>\n<li>性的な画像の掲示などを含む不適切な情報の開示</li>\n<li>上記行為の推奨や擁護</li>\n<li>上記に限らず、当社がハラスメントとして判断する行為</li>\n</ul>\n<h1>ご参加いただく皆様へのお願い</h1>\n<p>当日の参加が出来なくなった場合、下記の「フィード」へ参加できない旨のコメントをしていただきますようお願いいたします。無断での不参加の場合、こちらから参加のキャンセルをさせていただく場合がございますので、予めご了承ください。</p>",
-      "url": "https://nakano-tech-lounge.connpass.com/event/401992/",
-      "image_url": "https://media.connpass.com/thumbs/67/d0/67d0a269ca76afe8d0ec0838bb89965f.png",
-      "hash_tag": "",
-      "started_at": "2026-08-15T13:00:00+09:00",
-      "ended_at": "2026-08-15T18:00:00+09:00",
-      "published_at": "2026-07-28T13:24:23+09:00",
-      "limit": 24,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16813,
-        "subdomain": "nakano-tech-lounge",
-        "title": "Nakano Tech Lounge",
-        "url": "https://nakano-tech-lounge.connpass.com/"
-      },
-      "address": "東京都中野区中野2-30-5 中野アーバンビル7F",
-      "place": "Pleasanter Lounge",
-      "lat": "35.704475200000",
-      "lon": "139.665657200000",
-      "owner_id": 796990,
-      "owner_nickname": "t-ue",
-      "owner_display_name": "moca",
-      "accepted": 19,
-      "waiting": 1,
-      "updated_at": "2026-08-11T21:52:55+09:00"
-    },
-    {
       "id": 397722,
       "title": "小中学生向けプログラミング道場 CoderDojo新代田第34回（無料）",
       "catch": "小中学生がプログラミングを無料で楽しむ場を提供しています",
@@ -157,6 +126,37 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-08-14T20:34:08+09:00"
+    },
+    {
+      "id": 401992,
+      "title": "もくもく＆LT会＠中野 #10",
+      "catch": "",
+      "description": "<h1>主催者からのメッセージ</h1>\n<p>主にWebエンジニア（BtoB / バックエンド多め）の技術スキルを持つエンジニアを中心とした、もくもく&amp;LT会を開催します。\n以下のような言語 / プラットフォームに詳しいエンジニアが参加しますが、特に言語やプラットフォームは限定いたしません。</p>\n<ul>\n<li>Azure</li>\n<li>AWS</li>\n<li>GitHub</li>\n<li>JavaScript</li>\n<li>C#</li>\n<li><a href=\"http://ASP.NET\" rel=\"nofollow\">ASP.NET</a></li>\n<li>Python</li>\n<li>PowerShell</li>\n<li>PostgreSQL</li>\n<li>SQL Server</li>\n<li>Windows Server</li>\n</ul>\n<p>最近は生成AIを利用した開発に関するトピック・LTが多めです。個人でプロダクト開発を行っているエンジニアも多数参加しています。</p>\n<h1>開催概要</h1>\n<ul>\n<li>日時：2026/8/15(土) 13:00～18:00（12:45受け付け開始）</li>\n<li>場所：東京都中野区中野2丁目30-5 中野アーバンビル Pleasanter Lounge 7F（JR中野駅 南口 徒歩2分）</li>\n<li>主催：Nakano Tech Lounge</li>\n</ul>\n<h1>参加費</h1>\n<p>無料</p>\n<h1>スケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">所要時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">担当者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:45</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">5分</td>\n<td style=\"text-align: left;\">会の説明</td>\n<td style=\"text-align: left;\">主催者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:05</td>\n<td style=\"text-align: left;\">15分</td>\n<td style=\"text-align: left;\">自己紹介&amp;今日やること</td>\n<td style=\"text-align: left;\">参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:20</td>\n<td style=\"text-align: left;\">200分</td>\n<td style=\"text-align: left;\">もくもく会</td>\n<td style=\"text-align: left;\">参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:40</td>\n<td style=\"text-align: left;\">40分</td>\n<td style=\"text-align: left;\">LT（やったこと等）</td>\n<td style=\"text-align: left;\">LT枠参加者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:20</td>\n<td style=\"text-align: left;\">40分</td>\n<td style=\"text-align: left;\">ネットワーキング</td>\n<td style=\"text-align: left;\">参加者（希望者のみ）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">-</td>\n<td style=\"text-align: left;\">閉会</td>\n<td style=\"text-align: left;\">主催者</td>\n</tr>\n</tbody>\n</table>\n<p>※LTではLT枠にお申し込みいただいた方に5分程度の発表をお願いしておりますので、ご準備の程よろしくお願いいたします。発表いただく内容は当日やった以外でも何でも構いません！  </p>\n<h1>対象者</h1>\n<ul>\n<li>Webエンジニアまたは志望者（経験問いません）</li>\n<li>個人でプロダクト開発を行っている方、または興味のある方</li>\n</ul>\n<h1>持ち物</h1>\n<ul>\n<li>作業用PC</li>\n<li>お名前が確認できるもの(名刺、学生証等)</li>\n</ul>\n<h1>飲食</h1>\n<p>可能です。ニオイの強いものは避けてください。</p>\n<h1>LINE オープンチャット</h1>\n<p>「Nakano Tech Lounge」のオープンチャットを作りました！\n下記URLより登録をお願いします。</p>\n<p><a href=\"https://line.me/ti/g2/Sjzh9WidzCp0GMpCNwFRtbvZxy5Oat2bSSQ7OQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default\" rel=\"nofollow\">https://line.me/ti/g2/Sjzh9WidzCp0GMpCNwFRtbvZxy5Oat2bSSQ7OQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default</a></p>\n<h1>アンチハラスメントポリシー</h1>\n<p>このグループではアンチハラスメントポリシーを定めています。誰もが安心して参加できるよう下記に抵触する可能性のある行為を行った場合には、会場からの退場およびグループへの出入り禁止とします。</p>\n<ul>\n<li>攻撃的なコメント(ジェンダー・性自認やジェンダー表現・性的指向・障碍・容貌・体型・人種・民族・年齢・宗教あるいは無宗教についてなど)</li>\n<li>脅迫、ストーキング、つきまとい</li>\n<li>いやがらせ目的の撮影や録音</li>\n<li>発表や他のイベントの継続的妨害</li>\n<li>不適切な身体的接触</li>\n<li>性的な画像の掲示などを含む不適切な情報の開示</li>\n<li>上記行為の推奨や擁護</li>\n<li>上記に限らず、当社がハラスメントとして判断する行為</li>\n</ul>\n<h1>ご参加いただく皆様へのお願い</h1>\n<p>当日の参加が出来なくなった場合、下記の「フィード」へ参加できない旨のコメントをしていただきますようお願いいたします。無断での不参加の場合、こちらから参加のキャンセルをさせていただく場合がございますので、予めご了承ください。</p>",
+      "url": "https://nakano-tech-lounge.connpass.com/event/401992/",
+      "image_url": "https://media.connpass.com/thumbs/67/d0/67d0a269ca76afe8d0ec0838bb89965f.png",
+      "hash_tag": "",
+      "started_at": "2026-08-15T13:00:00+09:00",
+      "ended_at": "2026-08-15T18:00:00+09:00",
+      "published_at": "2026-07-28T13:24:23+09:00",
+      "limit": 24,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 16813,
+        "subdomain": "nakano-tech-lounge",
+        "title": "Nakano Tech Lounge",
+        "url": "https://nakano-tech-lounge.connpass.com/"
+      },
+      "address": "東京都中野区中野2-30-5 中野アーバンビル7F",
+      "place": "Pleasanter Lounge",
+      "lat": "35.704475200000",
+      "lon": "139.665657200000",
+      "owner_id": 796990,
+      "owner_nickname": "t-ue",
+      "owner_display_name": "moca",
+      "accepted": 19,
+      "waiting": 0,
+      "updated_at": "2026-08-11T21:52:55+09:00"
     },
     {
       "id": 401119,
@@ -273,7 +273,7 @@
       "owner_id": 33070,
       "owner_nickname": "okamura_junichi",
       "owner_display_name": "jun1okamura",
-      "accepted": 27,
+      "accepted": 28,
       "waiting": 0,
       "updated_at": "2026-08-15T02:06:57+09:00"
     },
