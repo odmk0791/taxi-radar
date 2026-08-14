@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-14T16:13:00.135721+09:00",
+  "fetched_at": "2026-08-14T18:00:33.254812+09:00",
   "date": "20260814",
   "count": 4,
   "events": [
@@ -73,7 +73,7 @@
       "published_at": "2026-06-12T15:35:41+09:00",
       "limit": 13,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16464,
         "subdomain": "tlug",
@@ -104,7 +104,7 @@
       "published_at": "2026-08-13T19:39:26+09:00",
       "limit": 17,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 9942,
         "subdomain": "openforce",
