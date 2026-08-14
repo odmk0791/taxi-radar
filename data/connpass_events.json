@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-14T19:50:52.322507+09:00",
+  "fetched_at": "2026-08-14T20:37:53.435528+09:00",
   "date": "20260814",
   "count": 4,
   "events": [
@@ -56,7 +56,7 @@
       "owner_id": 40964,
       "owner_nickname": "Kuxumarin",
       "owner_display_name": "Kuu / Sushi",
-      "accepted": 74,
+      "accepted": 73,
       "waiting": 0,
       "updated_at": "2026-08-14T18:41:58+09:00"
     },
@@ -73,7 +73,7 @@
       "published_at": "2026-06-12T15:35:41+09:00",
       "limit": 13,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16464,
         "subdomain": "tlug",
@@ -104,7 +104,7 @@
       "published_at": "2026-08-13T19:39:26+09:00",
       "limit": 17,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 9942,
         "subdomain": "openforce",
