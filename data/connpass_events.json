@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-14T12:58:32.471163+09:00",
+  "fetched_at": "2026-08-14T14:38:05.541028+09:00",
   "date": "20260814",
   "count": 4,
   "events": [
@@ -71,7 +71,7 @@
       "started_at": "2026-08-14T18:00:00+09:00",
       "ended_at": "2026-08-14T20:00:00+09:00",
       "published_at": "2026-06-12T15:35:41+09:00",
-      "limit": 12,
+      "limit": 13,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -87,9 +87,9 @@
       "owner_id": 326832,
       "owner_nickname": "bc",
       "owner_display_name": "Brian",
-      "accepted": 11,
-      "waiting": 2,
-      "updated_at": "2026-08-13T17:18:21+09:00"
+      "accepted": 12,
+      "waiting": 0,
+      "updated_at": "2026-08-14T14:29:48+09:00"
     },
     {
       "id": 403728,
@@ -118,7 +118,7 @@
       "owner_id": 10191,
       "owner_nickname": "nanbuwks",
       "owner_display_name": "nanbuwks",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-08-13T19:39:26+09:00"
     }
