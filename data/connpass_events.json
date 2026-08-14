@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-14T14:38:05.541028+09:00",
+  "fetched_at": "2026-08-14T16:13:00.135721+09:00",
   "date": "20260814",
   "count": 4,
   "events": [
@@ -87,7 +87,7 @@
       "owner_id": 326832,
       "owner_nickname": "bc",
       "owner_display_name": "Brian",
-      "accepted": 12,
+      "accepted": 11,
       "waiting": 0,
       "updated_at": "2026-08-14T14:29:48+09:00"
     },
@@ -118,7 +118,7 @@
       "owner_id": 10191,
       "owner_nickname": "nanbuwks",
       "owner_display_name": "nanbuwks",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-08-13T19:39:26+09:00"
     }
