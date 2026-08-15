@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-15T14:17:42.048067+09:00",
+  "fetched_at": "2026-08-15T15:23:37.789094+09:00",
   "date": "20260815",
   "count": 12,
   "events": [
@@ -32,7 +32,7 @@
       "owner_display_name": "treastrain / Tanaka Ryoga",
       "accepted": 11,
       "waiting": 0,
-      "updated_at": "2026-08-09T20:57:02+09:00"
+      "updated_at": "2026-08-15T14:26:50+09:00"
     },
     {
       "id": 401668,
@@ -97,37 +97,6 @@
       "updated_at": "2026-08-06T22:03:33+09:00"
     },
     {
-      "id": 397722,
-      "title": "小中学生向けプログラミング道場 CoderDojo新代田第34回（無料）",
-      "catch": "小中学生がプログラミングを無料で楽しむ場を提供しています",
-      "description": "<p>CoderDojo新代田（しんだいた）を開催します。小中学生を対象にした自習型の「プログラミング道場」です。 自主的に学習したり作品づくりをして、疑問点や質問があればメンターがアドバイスをしてくれます。</p>\n<h2>概要</h2>\n<p>参加対象：小学生〜中学生<br>\n定員：6名 + 保護者　※保護者同伴の元でご参加ください。<br>\n場所：代田区民センター　2階　和室（第5会議室）（住所：東京都世田谷区代田6丁目34番13号）<br>\n日程：2026年8月18日（土）13：00〜14：00（受付開始12：45）　<br>\n参加費用：無料<br>\nアクセス：<br>\n【電車】京王井の頭線「新代田駅」徒歩1分<br>\n【バス】東急バス（森91 「大森駅」～「新代田駅」）「新代田駅前」徒歩2分<br>\n　　　　都営バス（宿91 「新宿駅西口」～「駒沢陸橋」）「新代田駅前」徒歩1分<br>\n【自転車】地下1階に駐輪場があります。<br>\n【車】施設併設の駐車場はありません。公共交通機関または自転車での来場を推奨します。<br>\n▼参考：代田区民センター<br>\n<a href=\"https://www.city.setagaya.lg.jp/mokuji/kusei/012/002/002/d00004102.html\" rel=\"nofollow\">https://www.city.setagaya.lg.jp/mokuji/kusei/012/002/002/d00004102.html</a></p>\n<h2>注意</h2>\n<ul>\n<li>小中学生のみでの参加はできません。</li>\n<li>Wi-Fiが使えるノートパソコンやタブレットなどをご持参ください。</li>\n<li>初回参加でやることが決まっていない方はcode.orgの動作確認とユーザー登録を済ませてお越しください。</li>\n<li>開催の様子を撮影または録画し、広報資料に利用させていただくことがあります。撮影参加が難しい場合は受付時にお知らせください。</li>\n</ul>\n\n<h2>参加方法</h2>\n<ul>\n<li>参加登録は当イベントの「このイベントに参加する」ボタンを押してください。（メール／電話／メッセージ不可）</li>\n<li>申し込みフォームに参加者の学年（必須）とやりたいことや作りたいものがあれば書き込んでください。</li>\n</ul>\n<p>※ 登録せずに来場した場合は席が確保できない場合があります。</p>\n<h2>持ち物</h2>\n<ul>\n<li>必ず持ってきてください：Wi-Fiが使えるノートパソコンまたはタブレット、電源、保護者</li>\n<li>あると良いもの：マウス（普段からマウスを使わずノートパソコンを使用している方は不要）、飲みもの（水筒やペットボトルなどふたの閉まるもの）、電源タップ</li>\n</ul>\n\n<h2>CoderDojoとは</h2>\n<p>CoderDojoは、7〜17歳を対象とした非営利のプログラミング道場です。2011年にアイルランドで始まり、世界では100カ国・2,000の道場、日本には192以上の道場があります。CoderDojo で学べる内容は道場ごとに様々で、例えば次のような内容です。</p>\n<ul>\n<li>Scratch, micro:bit, Webサイト\n</li><li>Raspberry Pi, Minecraft\n</li><li>Python, Ruby, JavaScript\n</li><li>Viscuit, PHP, 電子工作など</li>\n</ul>\n\n<p>内容も規模もそれぞれ異なりますが、どの道場でも主体的に学ぶ姿勢が大切です。<br>\n<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">https://coderdojo.jp/</a></p>\n<h2>タイムテーブル<br></h2>\n<p>12:45 開場<br>\n13:00 道場スタート<br>\n14:00 道場おわり。写真撮影、解散!<br></p>\n<p>前回の様子\n<a href=\"https://note.com/coderdojo_daita/n/na8a25e3dfd2b\" rel=\"nofollow\">https://note.com/coderdojo_daita/n/na8a25e3dfd2b</a></p>\n<h2>作りたいものが決まっていない場合は<br></h2>\n<p>まずはこれ<br>\n最初は Hour of Code（<a href=\"http://Code.org\" rel=\"nofollow\">Code.org</a>）を薦めています。<a href=\"http://bit.ly/dojo-level1\" rel=\"nofollow\">http://bit.ly/dojo-level1</a>\n作りたいものが見つかったら<br>\n作りたいものに合わせてScratchやWEB技術を紹介しています。<br>\n<a href=\"https://scratch.mit.edu/\" rel=\"nofollow\">https://scratch.mit.edu/</a> <br>\n<a href=\"http://dotinstall.com/\" rel=\"nofollow\">http://dotinstall.com/</a> <br>\n作りたいものが見つからない場合<br>\nオンラインコース（<a href=\"http://Code.org\" rel=\"nofollow\">Code.org</a>）を薦めています。<a href=\"https://studio.code.org/s/course1\" rel=\"nofollow\">https://studio.code.org/s/course1</a></p>\n<h2>メンターたちはどんな人?<br></h2>\n<p>メンターは小中学生の活動をサポートするボランティアです。<br>\nプログラマやデザイナー、エンジニアなど、ソフトやハードを作ることを専門にしている人たちです。<br></p>\n<h2>よくある質問</h2>\n<ul>\n<li>キャンセルする場合　→　「キャンセルする」ボタンを押してキャンセルしてください</li>\n<li>イベントの内容について質問する場合　→　「イベントへのお問い合わせ」をクリックして、お問い合わせください。5日程度以内を目処に返信します</li> \n<li>参加したい小中学生が2人いる場合　→　参加者枠を人数分お申し込みください</li>\n<li>見学したい場合(参加前、大学の研究、Dojo開設予定の方など)　→　見学者枠を人数分お申し込みください</li>\n</ul>",
-      "url": "https://coder-dojo-shindaita.connpass.com/event/397722/",
-      "image_url": "https://media.connpass.com/thumbs/04/7f/047fcd2767daca60897c904ac229615b.png",
-      "hash_tag": "coderdojo",
-      "started_at": "2026-08-15T13:00:00+09:00",
-      "ended_at": "2026-08-15T14:00:00+09:00",
-      "published_at": "2026-06-17T23:27:31+09:00",
-      "limit": 14,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 14103,
-        "subdomain": "coder-dojo-shindaita",
-        "title": "CoderDojo新代田",
-        "url": "https://coder-dojo-shindaita.connpass.com/"
-      },
-      "address": "東京都世田谷区代田6丁目34番13号",
-      "place": "代田区民センター 2階 和室",
-      "lat": "35.662821100000",
-      "lon": "139.660634200000",
-      "owner_id": 809015,
-      "owner_nickname": "CoderDojoShindaita",
-      "owner_display_name": "CoderDojoShindaita",
-      "accepted": 5,
-      "waiting": 0,
-      "updated_at": "2026-08-14T20:34:08+09:00"
-    },
-    {
       "id": 401992,
       "title": "もくもく＆LT会＠中野 #10",
       "catch": "",
@@ -157,6 +126,37 @@
       "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-08-11T21:52:55+09:00"
+    },
+    {
+      "id": 397722,
+      "title": "小中学生向けプログラミング道場 CoderDojo新代田第34回（無料）",
+      "catch": "小中学生がプログラミングを無料で楽しむ場を提供しています",
+      "description": "<p>CoderDojo新代田（しんだいた）を開催します。小中学生を対象にした自習型の「プログラミング道場」です。 自主的に学習したり作品づくりをして、疑問点や質問があればメンターがアドバイスをしてくれます。</p>\n<h2>概要</h2>\n<p>参加対象：小学生〜中学生<br>\n定員：6名 + 保護者　※保護者同伴の元でご参加ください。<br>\n場所：代田区民センター　2階　和室（第5会議室）（住所：東京都世田谷区代田6丁目34番13号）<br>\n日程：2026年8月18日（土）13：00〜14：00（受付開始12：45）　<br>\n参加費用：無料<br>\nアクセス：<br>\n【電車】京王井の頭線「新代田駅」徒歩1分<br>\n【バス】東急バス（森91 「大森駅」～「新代田駅」）「新代田駅前」徒歩2分<br>\n　　　　都営バス（宿91 「新宿駅西口」～「駒沢陸橋」）「新代田駅前」徒歩1分<br>\n【自転車】地下1階に駐輪場があります。<br>\n【車】施設併設の駐車場はありません。公共交通機関または自転車での来場を推奨します。<br>\n▼参考：代田区民センター<br>\n<a href=\"https://www.city.setagaya.lg.jp/mokuji/kusei/012/002/002/d00004102.html\" rel=\"nofollow\">https://www.city.setagaya.lg.jp/mokuji/kusei/012/002/002/d00004102.html</a></p>\n<h2>注意</h2>\n<ul>\n<li>小中学生のみでの参加はできません。</li>\n<li>Wi-Fiが使えるノートパソコンやタブレットなどをご持参ください。</li>\n<li>初回参加でやることが決まっていない方はcode.orgの動作確認とユーザー登録を済ませてお越しください。</li>\n<li>開催の様子を撮影または録画し、広報資料に利用させていただくことがあります。撮影参加が難しい場合は受付時にお知らせください。</li>\n</ul>\n\n<h2>参加方法</h2>\n<ul>\n<li>参加登録は当イベントの「このイベントに参加する」ボタンを押してください。（メール／電話／メッセージ不可）</li>\n<li>申し込みフォームに参加者の学年（必須）とやりたいことや作りたいものがあれば書き込んでください。</li>\n</ul>\n<p>※ 登録せずに来場した場合は席が確保できない場合があります。</p>\n<h2>持ち物</h2>\n<ul>\n<li>必ず持ってきてください：Wi-Fiが使えるノートパソコンまたはタブレット、電源、保護者</li>\n<li>あると良いもの：マウス（普段からマウスを使わずノートパソコンを使用している方は不要）、飲みもの（水筒やペットボトルなどふたの閉まるもの）、電源タップ</li>\n</ul>\n\n<h2>CoderDojoとは</h2>\n<p>CoderDojoは、7〜17歳を対象とした非営利のプログラミング道場です。2011年にアイルランドで始まり、世界では100カ国・2,000の道場、日本には192以上の道場があります。CoderDojo で学べる内容は道場ごとに様々で、例えば次のような内容です。</p>\n<ul>\n<li>Scratch, micro:bit, Webサイト\n</li><li>Raspberry Pi, Minecraft\n</li><li>Python, Ruby, JavaScript\n</li><li>Viscuit, PHP, 電子工作など</li>\n</ul>\n\n<p>内容も規模もそれぞれ異なりますが、どの道場でも主体的に学ぶ姿勢が大切です。<br>\n<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">https://coderdojo.jp/</a></p>\n<h2>タイムテーブル<br></h2>\n<p>12:45 開場<br>\n13:00 道場スタート<br>\n14:00 道場おわり。写真撮影、解散!<br></p>\n<p>前回の様子\n<a href=\"https://note.com/coderdojo_daita/n/na8a25e3dfd2b\" rel=\"nofollow\">https://note.com/coderdojo_daita/n/na8a25e3dfd2b</a></p>\n<h2>作りたいものが決まっていない場合は<br></h2>\n<p>まずはこれ<br>\n最初は Hour of Code（<a href=\"http://Code.org\" rel=\"nofollow\">Code.org</a>）を薦めています。<a href=\"http://bit.ly/dojo-level1\" rel=\"nofollow\">http://bit.ly/dojo-level1</a>\n作りたいものが見つかったら<br>\n作りたいものに合わせてScratchやWEB技術を紹介しています。<br>\n<a href=\"https://scratch.mit.edu/\" rel=\"nofollow\">https://scratch.mit.edu/</a> <br>\n<a href=\"http://dotinstall.com/\" rel=\"nofollow\">http://dotinstall.com/</a> <br>\n作りたいものが見つからない場合<br>\nオンラインコース（<a href=\"http://Code.org\" rel=\"nofollow\">Code.org</a>）を薦めています。<a href=\"https://studio.code.org/s/course1\" rel=\"nofollow\">https://studio.code.org/s/course1</a></p>\n<h2>メンターたちはどんな人?<br></h2>\n<p>メンターは小中学生の活動をサポートするボランティアです。<br>\nプログラマやデザイナー、エンジニアなど、ソフトやハードを作ることを専門にしている人たちです。<br></p>\n<h2>よくある質問</h2>\n<ul>\n<li>キャンセルする場合　→　「キャンセルする」ボタンを押してキャンセルしてください</li>\n<li>イベントの内容について質問する場合　→　「イベントへのお問い合わせ」をクリックして、お問い合わせください。5日程度以内を目処に返信します</li> \n<li>参加したい小中学生が2人いる場合　→　参加者枠を人数分お申し込みください</li>\n<li>見学したい場合(参加前、大学の研究、Dojo開設予定の方など)　→　見学者枠を人数分お申し込みください</li>\n</ul>",
+      "url": "https://coder-dojo-shindaita.connpass.com/event/397722/",
+      "image_url": "https://media.connpass.com/thumbs/04/7f/047fcd2767daca60897c904ac229615b.png",
+      "hash_tag": "coderdojo",
+      "started_at": "2026-08-15T13:00:00+09:00",
+      "ended_at": "2026-08-15T14:00:00+09:00",
+      "published_at": "2026-06-17T23:27:31+09:00",
+      "limit": 14,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 14103,
+        "subdomain": "coder-dojo-shindaita",
+        "title": "CoderDojo新代田",
+        "url": "https://coder-dojo-shindaita.connpass.com/"
+      },
+      "address": "東京都世田谷区代田6丁目34番13号",
+      "place": "代田区民センター 2階 和室",
+      "lat": "35.662821100000",
+      "lon": "139.660634200000",
+      "owner_id": 809015,
+      "owner_nickname": "CoderDojoShindaita",
+      "owner_display_name": "CoderDojoShindaita",
+      "accepted": 5,
+      "waiting": 0,
+      "updated_at": "2026-08-14T20:34:08+09:00"
     },
     {
       "id": 401119,
