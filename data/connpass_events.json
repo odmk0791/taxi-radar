@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-15T12:32:00.190224+09:00",
+  "fetched_at": "2026-08-15T13:21:27.057477+09:00",
   "date": "20260815",
   "count": 12,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 665679,
       "owner_nickname": "Xu_dev",
       "owner_display_name": "Justin Xu",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-08-14T21:49:46+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-06-17T23:27:31+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14103,
         "subdomain": "coder-dojo-shindaita",
@@ -140,7 +140,7 @@
       "published_at": "2026-07-28T13:24:23+09:00",
       "limit": 24,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16813,
         "subdomain": "nakano-tech-lounge",
