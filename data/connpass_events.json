@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-15T11:09:29.050707+09:00",
+  "fetched_at": "2026-08-15T12:32:00.190224+09:00",
   "date": "20260815",
-  "count": 13,
+  "count": 12,
   "events": [
     {
       "id": 394189,
@@ -92,7 +92,7 @@
       "owner_id": 858655,
       "owner_nickname": "XiaofeiLi",
       "owner_display_name": "Xiaofei Li",
-      "accepted": 23,
+      "accepted": 22,
       "waiting": 0,
       "updated_at": "2026-08-06T22:03:33+09:00"
     },
@@ -154,7 +154,7 @@
       "owner_id": 796990,
       "owner_nickname": "t-ue",
       "owner_display_name": "moca",
-      "accepted": 19,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-08-11T21:52:55+09:00"
     },
@@ -228,7 +228,7 @@
       "published_at": "2026-08-08T13:01:42+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 11642,
         "subdomain": "techmokmok",
@@ -290,7 +290,7 @@
       "published_at": "2026-07-21T23:31:58+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都新宿区新宿三丁目12-4",
       "place": "新宿永谷タウンプラザビル 507号室",
@@ -316,7 +316,7 @@
       "published_at": "2026-08-08T15:09:19+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13830,
         "subdomain": "networktraining",
@@ -347,7 +347,7 @@
       "published_at": "2026-08-12T00:24:27+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17647,
         "subdomain": "shibuya-yurumoku",
@@ -364,37 +364,6 @@
       "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-08-12T00:24:55+09:00"
-    },
-    {
-      "id": 402300,
-      "title": "60GHzミリ波とアクセスポイントでBBQ広場を完全制圧",
-      "catch": "我々は電波の弱い場所で干渉を受けずに人権(インターネットの恩恵)を手に入れられるか",
-      "description": "<h2>プロローグ：</h2>\n<p>ちょっと出来心で、家庭用にはちょっと豪華かもしれない、社内備品をオフィスから持ち出してしまいました。</p>\n<p>・・・果たして、バッテリー駆動でこれらを快適に動作させ、我々はインターネットに接続しつつBBQを楽しめるのか！？</p>\n<h2>主催：</h2>\n<p>創意ラボ株式会社 受託/SES営業チーム</p>\n<h2>目的：</h2>\n<p>弊社社員(平均27歳)と同世代で仲良くしてくれそうな、インフラエンジニアのリアル交流</p>\n<p>創意ラボ株式会社の空気感を体感</p>\n<p>代表の木下とお気軽におしゃべりしたい人集合</p>\n<p>初心者〜自宅ラック勢大歓迎</p>\n<p>社長も参加しているので、転職勢な方はカジュアル面談歓迎(<a href=\"https://en-gage.net/soilab/work_17302698\" rel=\"nofollow\">https://en-gage.net/soilab/work_17302698</a>)</p>\n<h2>主役の備品：（社長が入谷オフィスから持ち出した重罪級アイテム）</h2>\n<p>Starlink</p>\n<p>Ubiquiti UDM-Pro</p>\n<p>Ubiquiti USW-Pro-XG-10-PoE ×2台</p>\n<p>Ubiquiti E7</p>\n<p>Ubiquiti UBB-XG ×2台　← 今日の本命！60GHzミリ波無線LANブリッジ！</p>\n<p>Fujitsu TX1310M3 x2台</p>\n<p>SFP+各種 + モバイルバッテリー大量</p>\n<h2>やること：</h2>\n<p>BBQ広場の隅から隅まで60GHzで完全ワイヤレス結線</p>\n<p>サーバー2台並べて iPerf3で本気スループット測定</p>\n<p>「本当に数Gbps出るの？」を実験しながら肉を焼くという、最高に贅沢で無駄な挑戦</p>\n<h2>持ち物：</h2>\n<p>各自PCなどのデバイスは持ち寄ってください</p>\n<p>お菓子、飲み物 自由に持ち込み可能です(アルコール飲む方は運転厳禁です)</p>\n<p>車参加の方は、ぜひキャンプ椅子を持ってきていただけますと大変ありがたいです</p>\n<h2>シナリオ：</h2>\n<p>07:00　場所取り・タープ設営開始(主催側)</p>\n<p>08:30〜10:30　Starlink展開、バッテリー電源接続、初期ネットワーク構築</p>\n<p>10:30〜11:30　Wi-Fi Mesh検証／UBB XG検証（距離テスト、安定性確認、スループット測定など）</p>\n<p>11:30〜15:00　バーベキュー本番（肉・ご飯中心）</p>\n<p>15:00〜16:30　片付け開始</p>\n<p>17:00　完全撤収・解散</p>\n<p>※天候不良時は中止。当日の朝6時までに本イベントのタイトルで告知</p>\n<h2>アクセス方法：</h2>\n<p>（公共交通機関の場合）最寄り駅・バスJR埼京線 武蔵浦和駅（東口）下車</p>\n<p>駅前ロータリーより 国際興業バス 武浦01系統（美女木経由 下笹目行き） に乗車（約10分）</p>\n<p>「彩湖・道満グリーンパーク入口」 下車 → 徒歩約10分</p>\n<p>（自動車の場合）</p>\n<p>駐車場は有料で、すぐ埋まってしまう可能性があるため、朝8時くらいまでにお越しいただくのを推奨します</p>\n<p>（自転車の場合）</p>\n<p>乗り入れできます</p>\n<h2>注意事項・ルール公園ルール遵守：</h2>\n<p>指定エリア以外での火気使用禁止、直火禁止、ゴミ持ち帰り、音響機器使用制限など</p>",
-      "url": "https://soilab.connpass.com/event/402300/",
-      "image_url": "https://media.connpass.com/thumbs/0a/7e/0a7e6bed4dfe3048588a272e5828ed60.png",
-      "hash_tag": "soilab",
-      "started_at": "2026-08-15T10:00:00+09:00",
-      "ended_at": "2026-08-15T17:00:00+09:00",
-      "published_at": "2026-07-31T10:55:48+09:00",
-      "limit": 5,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 9347,
-        "subdomain": "soilab",
-        "title": "創意ラボの失敗できる勉強会",
-        "url": "https://soilab.connpass.com/"
-      },
-      "address": "〒335-0000 埼玉県戸田市内谷",
-      "place": "彩湖・道満グリーンパーク バーベキュー広場",
-      "lat": "35.821879800000",
-      "lon": "139.633732700000",
-      "owner_id": 1834,
-      "owner_nickname": "tadkinos",
-      "owner_display_name": "Kinoshita@創意ラボ株式会社",
-      "accepted": 1,
-      "waiting": 0,
-      "updated_at": "2026-07-31T10:55:48+09:00"
     }
   ]
 }
