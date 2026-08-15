@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-15T21:21:02.996876+09:00",
+  "fetched_at": "2026-08-15T22:23:56.058229+09:00",
   "date": "20260815",
   "count": 13,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-18T15:16:34+09:00",
       "limit": 13,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15575,
         "subdomain": "japan-region-swift",
