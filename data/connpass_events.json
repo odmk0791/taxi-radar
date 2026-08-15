@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-15T13:21:27.057477+09:00",
+  "fetched_at": "2026-08-15T14:17:42.048067+09:00",
   "date": "20260815",
   "count": 12,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-07-25T10:04:02+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16046,
         "subdomain": "kitasenju-verystrong",
@@ -78,7 +78,7 @@
       "published_at": "2026-08-04T12:26:07+09:00",
       "limit": 24,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16333,
         "subdomain": "cnug",
@@ -109,7 +109,7 @@
       "published_at": "2026-06-17T23:27:31+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14103,
         "subdomain": "coder-dojo-shindaita",
@@ -123,7 +123,7 @@
       "owner_id": 809015,
       "owner_nickname": "CoderDojoShindaita",
       "owner_display_name": "CoderDojoShindaita",
-      "accepted": 4,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-08-14T20:34:08+09:00"
     },
