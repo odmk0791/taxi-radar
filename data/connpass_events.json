@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-16T16:23:57.619450+09:00",
+  "fetched_at": "2026-08-16T17:18:42.221793+09:00",
   "date": "20260816",
   "count": 5,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-08-06T12:03:10+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16671,
         "subdomain": "coderdojokinuta",
@@ -78,7 +78,7 @@
       "published_at": "2026-08-09T13:37:12+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2959,
         "subdomain": "weeyble-creative",
