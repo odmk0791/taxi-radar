@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-17T05:12:51.895296+09:00",
+  "fetched_at": "2026-08-17T06:12:19.542436+09:00",
   "date": "20260817",
-  "count": 3,
+  "count": 2,
   "events": [
     {
       "id": 398379,
@@ -30,7 +30,7 @@
       "owner_id": 99616,
       "owner_nickname": "jumtech",
       "owner_display_name": "jumpei_ikegami",
-      "accepted": 94,
+      "accepted": 93,
       "waiting": 3,
       "updated_at": "2026-08-04T13:07:19+09:00"
     },
@@ -64,37 +64,6 @@
       "accepted": 46,
       "waiting": 0,
       "updated_at": "2026-08-06T15:07:14+09:00"
-    },
-    {
-      "id": 399285,
-      "title": "OWASP Saitama MTG #33",
-      "catch": "サイバーセキュリティに関する勉強会です。",
-      "description": "<h2>OWASP Saitama MTGとは</h2>\n<p>セキュリティ向上に貢献しようという地元有志がさいたま市あるいは春日部市に集まって開く、 OWASP Saitama チャプターの定例勉強会です。セキュリティに携わる幅広い分野の方をスピーカーとしてお呼びして開催します。職種・経験・年齢・性別・国籍などは一切問いません。どなたでもご参加ください。</p>\n<ul>\n<li>参加費は無料です。Skytalksについても無料です。</li>\n<li>懇親会について: 3000円（※学生半額、スピーカー無料）となります。</li>\n<li>お仕事のご都合等にあわせて自由に参加できるよう入退室自由です</li>\n<li>お飲み物は忘れずにお持ちください（オンライン参加の方）</li>\n</ul>\n<p>※注1: 当チャプターではスピーカーが明示的に許可した場合を除き、トークセッションの録音・録画・内容公開は原則禁止とさせていただいております（チャタムハウスルールを適用しています）。ご参加の際にはご注意のほどどうぞよろしくお願いいたします。<br>\n※注2: 2026年から <strong>偶数月第3月曜日</strong> 開催となっています。日程にご注意ください。</p>\n<h2>ハイブリッド開催 (オフライン＋オンライン) です</h2>\n<p>当面の間ハイブリッド開催といたします。<br>\n※1 終了後、現地組のみ完全オフレコのSkytalksおよび懇親会へと移行します。<br>\n※2 オフラインで参加された方にはチャプターステッカーをお配りしています。</p>\n<p>今回はさいたま開催回です; 現地会場としてRaiBoC Hall (市民会館おおみや) の <strong>集会室2</strong> を使用します。 (各線大宮駅下車、東口徒歩5分ほどです)</p>\n<p>※会議室内での飲食は可能なようですがゴミは各自でお持ち帰りください。</p>\n<h2>懇親会参加予定の方へ</h2>\n<p>懇親会参加/不参加で枠が分かれております。イベント参加登録の際には枠にご注意のほどよろしくお願いいたします。</p>\n<h2>スケジュール (予定)</h2>\n<ul>\n<li>19:00 開始 / トーク #1: Beyond 'Never in JS' by @alterakey</li>\n<li>19:30: LT (あれば)</li>\n<li>19:45 チャプター紹介 / 次回告知</li>\n<li>20:00 終了</li>\n</ul>\n<h2>チャプター協賛</h2>\n<p><a href=\"https://monolithworks.co.jp/\" rel=\"nofollow\"><img alt=\"Monolith Works Inc.\" src=\"https://owasp.org/www-chapter-saitama/assets/images/monolithworks.png\" height=\"100\"></a></p>\n<h2>OWASP Saitama チャプターについて</h2>\n<p>サイバーセキュリティの向上を目指す非営利組織であるOWASP (The Open Worldwide Application Security Project) のさいたま支部です。</p>\n<p>イベント開催等のアナウンスはチャプターページで行ないます。\nまたSNSへも配信しますのでアカウントのフォローをいただけますと幸いです。</p>\n<ul>\n<li>チャプターページ: <a href=\"https://owasp.org/www-chapter-saitama/\" rel=\"nofollow\">https://owasp.org/www-chapter-saitama/</a></li>\n<li>Bluesky: https://bsky.app/profile/owaspsaitama.bsky.social</li>\n<li>X: <a href=\"https://x.com/OWASP_Saitama\" rel=\"nofollow\">https://x.com/OWASP_Saitama</a></li>\n</ul>",
-      "url": "https://owaspsaitama.connpass.com/event/399285/",
-      "image_url": "https://media.connpass.com/thumbs/e8/98/e898c9f25f73202501e4525ca7571006.png",
-      "hash_tag": "OWASP_Saitama",
-      "started_at": "2026-08-17T19:00:00+09:00",
-      "ended_at": "2026-08-17T20:00:00+09:00",
-      "published_at": "2026-07-01T23:23:52+09:00",
-      "limit": 1045,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 11369,
-        "subdomain": "owaspsaitama",
-        "title": "OWASP Saitama",
-        "url": "https://owaspsaitama.connpass.com/"
-      },
-      "address": "さいたま市大宮区大門町2-118 (大宮門街6F)",
-      "place": "RaiBoC Hall (市民会館おおみや) 集会室2",
-      "lat": "35.907340200000",
-      "lon": "139.627170100000",
-      "owner_id": 546946,
-      "owner_nickname": "OWASP_Saitama",
-      "owner_display_name": "OWASP Saitama",
-      "accepted": 23,
-      "waiting": 0,
-      "updated_at": "2026-08-13T02:03:19+09:00"
     }
   ]
 }
