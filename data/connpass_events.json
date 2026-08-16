@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-16T17:18:42.221793+09:00",
+  "fetched_at": "2026-08-16T18:19:24.552028+09:00",
   "date": "20260816",
   "count": 5,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-08-09T15:31:04+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
