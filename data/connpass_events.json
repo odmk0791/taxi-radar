@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-16T09:51:09.722997+09:00",
+  "fetched_at": "2026-08-16T11:17:11.861335+09:00",
   "date": "20260816",
   "count": 5,
   "events": [
@@ -92,7 +92,7 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 14,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-08-16T09:36:48+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-08-09T17:06:40+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -140,7 +140,7 @@
       "published_at": "2026-08-10T22:31:26+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15927,
         "subdomain": "it-promort",
