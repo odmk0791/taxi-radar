@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-16T13:27:56.401109+09:00",
+  "fetched_at": "2026-08-16T14:20:03.294439+09:00",
   "date": "20260816",
   "count": 6,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-08-06T12:03:10+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16671,
         "subdomain": "coderdojokinuta",
