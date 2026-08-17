@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-18T00:18:14.299714+09:00",
+  "fetched_at": "2026-08-18T01:18:12.664576+09:00",
   "date": "20260818",
   "count": 10,
   "events": [
@@ -25,7 +25,7 @@
       "owner_id": 1037524,
       "owner_nickname": "ITES",
       "owner_display_name": "一般社団法人ITエンジニアリングサービス協会",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-08-16T13:22:50+09:00"
     },
@@ -180,7 +180,7 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 47,
+      "accepted": 48,
       "waiting": 0,
       "updated_at": "2026-08-17T18:58:09+09:00"
     },
@@ -304,8 +304,8 @@
       "owner_id": 363958,
       "owner_nickname": "ktakita1011",
       "owner_display_name": "ktakita",
-      "accepted": 318,
-      "waiting": 34,
+      "accepted": 319,
+      "waiting": 35,
       "updated_at": "2026-08-17T11:36:22+09:00"
     }
   ]
