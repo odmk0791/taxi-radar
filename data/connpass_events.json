@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-17T14:28:10.461427+09:00",
+  "fetched_at": "2026-08-17T15:37:22.118934+09:00",
   "date": "20260817",
-  "count": 3,
+  "count": 2,
   "events": [
     {
       "id": 398379,
@@ -30,7 +30,7 @@
       "owner_id": 99616,
       "owner_nickname": "jumtech",
       "owner_display_name": "jumpei_ikegami",
-      "accepted": 86,
+      "accepted": 84,
       "waiting": 4,
       "updated_at": "2026-08-17T12:13:30+09:00"
     },
@@ -61,40 +61,9 @@
       "owner_id": 304508,
       "owner_nickname": "suzukahorie",
       "owner_display_name": "Suzuka",
-      "accepted": 55,
+      "accepted": 56,
       "waiting": 0,
       "updated_at": "2026-08-06T15:07:14+09:00"
-    },
-    {
-      "id": 403813,
-      "title": "Lifenet InsurTech Meetup #03 ～AI x マーケティング～",
-      "catch": "AIエージェントがもたらすデジタルマーケティング",
-      "description": "<h1>【イベント概要】</h1>\n<p>本イベントは、ライフネット生命保険株式会社における技術的挑戦や業務知見を共有し、技術・マーケティング交流を促進するためのミートアップです。</p>\n<p>第3回となる今回は「ライフネット生命 × AI × マーケティング」をメインテーマとし、AIエージェントを活用した広告分析や業務効率化の取り組みを共有します。</p>\n<p>開発者視点での技術実装だけでなく、広告運用やマーケティング実務におけるAIエージェントの具体的な実用事例を扱うため、非エンジニアのマーケティング実務者から技術者まで、幅広く知見を共有できる場を想定しています。</p>\n<p>セッション終了後は、参加者間の交流を目的とした懇親会も実施します。軽食および飲料の提供を予定しておりますので、職種や会社の枠を超えた情報交換の場としてご活用ください。</p>\n<h1>【このような方におすすめ】</h1>\n<p>以下に少しでも当てはまる方のご参加をお待ちしています！</p>\n<ul>\n<li><strong>マーケティング・ビジネス職</strong>  </li>\n<li>金融・保険業界または規制産業におけるデジタルマーケティング、広告運用に従事している方  </li>\n<li>組織内でのAI活用推進、DX推進をミッションとする担当者  </li>\n<li>広告分析や運用業務の内製化、効率化にAIエージェントの適用を検討している方  </li>\n<li><strong>技術・開発職</strong>  </li>\n<li>AIエージェントの実装、システム連携、セキュリティ設計に関心のあるエンジニア  </li>\n<li>LLMの業務応用や、関連OSSの検証・活用に興味がある開発者</li>\n</ul>\n<hr>\n<h1>【開催日時】</h1>\n<p>2026年9月14日 （月） 18:30〜20:30（18:00 受付開始）</p>\n<h1>【会場】</h1>\n<p>会場名：ライフネット生命保険株式会社 本社オフィス</p>\n<p>住所　：東京都千代田区二番町5番地25 二番町センタービル 8階</p>\n<p>東京メトロ有楽町線 麹町駅 徒歩2分</p>\n<p>JR 中央線・総武線 四ツ谷駅 徒歩7分</p>\n<p>東京メトロ丸ノ内線・南北線 四ツ谷駅 徒歩9分</p>\n<p>東京メトロ半蔵門線 半蔵門駅 徒歩8分</p>\n<h1>【参加にあたって】</h1>\n<ul>\n<li>\n<p>参加費： 無料</p>\n</li>\n<li>\n<p>持ち物：名刺1枚。受付時の本人確認および名札用として使用します。</p>\n</li>\n<li>\n<p>受付方法：当日はビル8階の受付にて、connpassの受付票を提示してください。</p>\n</li>\n</ul>\n<h1>【タイムテーブル】</h1>\n<h2>全体スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">備考</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00 - 18:30</td>\n<td style=\"text-align: left;\"><strong>開場・受付</strong></td>\n<td style=\"text-align: left;\"><strong>8階受付にて</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:30 - 18:35</td>\n<td style=\"text-align: left;\"><strong>オープニング・挨拶</strong></td>\n<td style=\"text-align: left;\"><strong>イベント趣旨説明</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:35 - 19:35</td>\n<td style=\"text-align: left;\"><strong>セッション</strong></td>\n<td style=\"text-align: left;\"><strong>LTセッション各15分、特別対談30分</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35 - 20:30</td>\n<td style=\"text-align: left;\"><strong>交流会</strong></td>\n<td style=\"text-align: left;\"><strong>軽食および飲料の提供あり</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30</td>\n<td style=\"text-align: left;\"><strong>閉会</strong></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>LTセッション</h2>\n<p>進行：各セッション 15分（発表10分 ＋ 質疑応答/転換5分）</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:35 - 18:50</td>\n<td style=\"text-align: left;\"><strong>LT1：システム企画とAIエージェント推進による業務プロセス効率化</strong></td>\n<td style=\"text-align: left;\"><strong>寺師 崇史</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:50 - 19:05</td>\n<td style=\"text-align: left;\"><strong>LT2：AIエージェントを活用した広告分析内製化とセキュリティガバナンス</strong></td>\n<td style=\"text-align: left;\"><strong>橋詰 青弥、原山 陸</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05 - 19:35</td>\n<td style=\"text-align: left;\"><strong>特別対談セッション：AIエージェントがもたらす開発とマーケティングの融合</strong></td>\n<td style=\"text-align: left;\"><strong>後藤 優孝、楠 勇真（ゲスト）</strong></td>\n</tr>\n</tbody>\n</table>\n<h2><strong>登壇者紹介</strong></h2>\n<h3><strong>寺師 崇史（てらし たかふみ）</strong></h3>\n<p><strong>ライフネット生命保険株式会社 システム企画部</strong></p>\n<p>ソーシャルゲーム開発から業務用アプリケーション開発まで、多様なドメインにおけるシステム開発を経験。現在はシステム企画部にて、社内開発プロセスの効率化およびAIエージェントの導入・活用推進を担う。</p>\n<h3><strong>橋詰 青弥（はしづめ せいや）</strong></h3>\n<p><strong>ライフネット生命保険株式会社 データ・AI推進部</strong></p>\n<p>大学にて機械学習とデータ分析を専攻。現在はデータ・AI推進部にて、マーケティング戦略策定から契約成立データの解析など分析業務に従事。セキュリティー管理チーム・広告運用内製化チームを兼任し、安全なAI導入のリードから、広告運用・分析実務まで幅広く担当している。</p>\n<h3><strong>原山 陸（はらやま りく）</strong></h3>\n<p><strong>ライフネット生命保険株式会社 マーケティング部</strong></p>\n<p>入社後わずか8ヶ月で広告運用内製化を牽引。運用業務の可視化や、膨大なデータから「真実」を抽出する精密運用への転換により、コスト改善と業績貢献。その圧倒的な推進力やリーダーシップが評価され、社内表彰制度において2025年度通期MVPを受賞。   </p>\n<h3><strong>後藤 優孝（ごとう まさたか）</strong></h3>\n<p><strong>ライフネット生命保険株式会社 マーケティング部　戦略補佐</strong></p>\n<p>マーケティング戦略の策定から広告運用やSEO等の実務まで一気通貫で担当。生成AIの導入や広告運用の内製化プロジェクトを牽引し、プロセスの効率化と高い成果創出を実現させる。</p>\n<h3><strong>楠 勇真（くすのき ゆうま） | ゲスト登壇者</strong></h3>\n<p><strong>株式会社ノバセル</strong><br>\n<strong>株式会社FUSION 取締役CRO</strong></p>\n<p>2020年4月にラクスル株式会社に新卒で入社。広告領域の新規事業「ノバセル（現ノバセル株式会社）」に配属され、入社当初からストラテジックプランナーとして約40社のお客様のテレビCMを通じたマーケティング戦略をサポート。並行して、メディア業務や効果分析業務も行い、ワンストップでお客様の事業成長をサポートする。2年目にはラクスル史上最年少マネージャーとしてSaaSの事業開発を担当し、3年目からは営業部長として事業全体を統括。現在はFUSION取締役CROとしてダイレクト広告事業を統括。  </p>\n<hr>\n<h1><strong>【主催】</strong></h1>\n<h1><strong>ライフネット生命保険株式会社</strong></h1>\n<p>・<a href=\"https://www.lifenet-seimei.co.jp/\" rel=\"nofollow\">ライフネット生命保険</a></p>\n<p>・<a href=\"https://www.lifenet-seimei.co.jp/recruit/\" rel=\"nofollow\">ライフネット生命保険 採用ページ</a></p>\n<h1><strong>【注意事項】</strong></h1>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更される場合があります。あらかじめご了承ください。  </li>\n<li>他の参加者の方の妨げになるような行為はお控えください。運営側の判断でご退出をお願いする場合があります。  </li>\n<li>ブログやSNSなどで当イベントに関する発信を行う際には、公序良俗に反することのないよう、ご協力をお願いします。  </li>\n<li>当日のイベント風景を写真撮影させていただく場合があります。撮影した内容は後日レポート記事やSNSなどへ掲載される可能性がありますのでご了承ください。</li>\n</ul>\n<h1><strong>【プライバシーポリシー】</strong></h1>\n<p>ご提供いただいた個人情報は、イベントの運営・管理、ならびに改善または新規企画のための分析、およびライフネット生命保険株式会社からの情報提供（採用情報など）のために利用いたします。</p>\n<p>その他の個人情報の取り扱いについては、下記のプライバシーポリシーをご参照ください。 ・<a href=\"https://www.lifenet-seimei.co.jp/policy/privacy/\" rel=\"nofollow\">ライフネット生命保険株式会社 プライバシーポリシー</a></p>",
-      "url": "https://lifenet-seimei.connpass.com/event/403813/",
-      "image_url": "https://media.connpass.com/thumbs/49/22/4922ac909b37afb4ea2018f290a6ccb5.png",
-      "hash_tag": "ライフネット生命insurtech",
-      "started_at": "2026-09-14T18:30:00+09:00",
-      "ended_at": "2026-09-14T22:30:00+09:00",
-      "published_at": "2026-08-17T10:00:00+09:00",
-      "limit": 20,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17061,
-        "subdomain": "lifenet-seimei",
-        "title": "ライフネット生命保険株式会社",
-        "url": "https://lifenet-seimei.connpass.com/"
-      },
-      "address": "東京都千代田区二番町5番地25 二番町センタービル 8階",
-      "place": "ライフネット生命保険株式会社 本社オフィス",
-      "lat": "35.685652300000",
-      "lon": "139.736157100000",
-      "owner_id": 968964,
-      "owner_nickname": "kotasono",
-      "owner_display_name": "kotasono",
-      "accepted": 0,
-      "waiting": 0,
-      "updated_at": "2026-08-17T14:07:33+09:00"
     }
   ]
 }
