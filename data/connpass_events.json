@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-17T17:33:46.631154+09:00",
+  "fetched_at": "2026-08-17T18:32:46.473948+09:00",
   "date": "20260817",
   "count": 2,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 99616,
       "owner_nickname": "jumtech",
       "owner_display_name": "jumpei_ikegami",
-      "accepted": 87,
+      "accepted": 81,
       "waiting": 4,
       "updated_at": "2026-08-17T12:13:30+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-08-06T15:07:14+09:00",
       "limit": 144,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 6904,
         "subdomain": "ricos",
