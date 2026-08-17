@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-17T13:33:25.762415+09:00",
+  "fetched_at": "2026-08-17T14:28:10.461427+09:00",
   "date": "20260817",
   "count": 3,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 99616,
       "owner_nickname": "jumtech",
       "owner_display_name": "jumpei_ikegami",
-      "accepted": 88,
+      "accepted": 86,
       "waiting": 4,
       "updated_at": "2026-08-17T12:13:30+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-08-06T15:07:14+09:00",
       "limit": 144,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6904,
         "subdomain": "ricos",
@@ -61,7 +61,7 @@
       "owner_id": 304508,
       "owner_nickname": "suzukahorie",
       "owner_display_name": "Suzuka",
-      "accepted": 54,
+      "accepted": 55,
       "waiting": 0,
       "updated_at": "2026-08-06T15:07:14+09:00"
     },
@@ -73,12 +73,12 @@
       "url": "https://lifenet-seimei.connpass.com/event/403813/",
       "image_url": "https://media.connpass.com/thumbs/49/22/4922ac909b37afb4ea2018f290a6ccb5.png",
       "hash_tag": "ライフネット生命insurtech",
-      "started_at": "2026-08-17T10:00:00+09:00",
-      "ended_at": "2026-09-14T22:00:00+09:00",
+      "started_at": "2026-09-14T18:30:00+09:00",
+      "ended_at": "2026-09-14T22:30:00+09:00",
       "published_at": "2026-08-17T10:00:00+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "preopen",
       "group": {
         "id": 17061,
         "subdomain": "lifenet-seimei",
@@ -94,7 +94,7 @@
       "owner_display_name": "kotasono",
       "accepted": 0,
       "waiting": 0,
-      "updated_at": "2026-08-17T13:01:36+09:00"
+      "updated_at": "2026-08-17T14:07:33+09:00"
     }
   ]
 }
