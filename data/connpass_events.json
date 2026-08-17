@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-17T11:15:11.530356+09:00",
+  "fetched_at": "2026-08-17T12:42:01.480093+09:00",
   "date": "20260817",
-  "count": 3,
+  "count": 4,
   "events": [
     {
       "id": 398379,
@@ -9,7 +9,7 @@
       "catch": "",
       "description": "<p>Ginza.jsは、ミニマルで楽しいJavaScript勉強会です。</p>\n<h2>Ginza.jsについて</h2>\n<p>Ginza.jsは、「主にJavaScript関連技術についての発表や議論を通じた交流を楽しむこと」を目的とした勉強会コミュニティです。</p>\n<h3>目指す価値</h3>\n<ul>\n<li>主にJavaScript関連技術について、様々な人から多様なトピックに関する発表や議論が生まれるようにする</li>\n<li>そのために、開催頻度を高く維持し、なるべく多くの人に発表機会を提供する</li>\n<li>そのために、なるべくイベント形式をシンプルにして、開催コストを最小限にする</li>\n</ul>\n<h3>シンプルさを保つために、なるべくやらないこと</h3>\n<ul>\n<li>参加費を取ったり、お金を管理したりすること</li>\n<li>飲食物をまとめて発注し提供すること</li>\n<li>会場提供以外のスポンサーを募ること</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>受付開始</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>説明</td>\n</tr>\n<tr>\n<td>19:40</td>\n<td>ショートセッション</td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>座談会</td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>自由時間</td>\n</tr>\n<tr>\n<td>22:00</td>\n<td>撤収</td>\n</tr>\n</tbody>\n</table>\n<p>※セッションのタイトルは、このページ最下部のフィードに投稿されます。</p>\n<h2>登壇枠の方へ</h2>\n<ul>\n<li>登壇枠は抽選です</li>\n<li>時間は1人当たり5-10分でお願いします</li>\n<li>テーマは、JavaScriptにまつわることであれば自由です</li>\n<li>連絡のために、申込時のアンケートでXのアカウントをお教えください</li>\n<li>セッションのタイトルが決まった段階で、このページ最下部のフィードに投稿をお願いします</li>\n<li>登壇順は、特に問題なければセッションのタイトルの投稿がされた順とします</li>\n<li>登壇枠で落選した場合も、一般枠での参加は可能です</li>\n</ul>\n<h2>座談会について</h2>\n<ul>\n<li>登壇者を囲んで、主にセッションの内容に関して座談会の時間を設けます</li>\n<li>質問があれば、この時間に登壇者にぶつけてみましょう</li>\n<li>食事やドリンクの提供はありません</li>\n</ul>\n<h2>会場</h2>\n<p>会場提供スポンサーとして、<a href=\"https://plaid.co.jp/\" rel=\"nofollow\">株式会社プレイド</a>にご協力いただいています。</p>\n<h3>入館方法</h3>\n<p>〒104-0061 東京都中央区銀座6-10-1 GINZA SIX 10F ルートガイド</p>\n<ul>\n<li><a href=\"https://plaid.co.jp/office_guide.html\" rel=\"nofollow\">こちらのアクセスガイド</a>をご覧ください</li>\n<li><strong>※商業エントランスからオフィスには上がれないので、注意してください</strong></li>\n</ul>\n<p>受付開始は19:00頃を予定しています。</p>\n<ul>\n<li>当日はGINZA SIX 7Fのオフィス受付フロアまでエレベーターで上がっていただき、7Fに設ける本イベント用の受付にお越しください。プレイドオフィス（10F）に上がるための入館カードをお渡しします。</li>\n<li>受付は20:00頃まで設置します。受付終了後20:30までは、ハッシュタグ（#ginzajs）をXに投稿いただけると、担当者が確認でき次第順次対応を行います。</li>\n</ul>\n<h2>注意</h2>\n<h3>イベントについて</h3>\n<ul>\n<li>飲食物の提供はありません。ただし、飲食物の持参および会場での飲食は自由です</li>\n<li>登壇枠で落選した場合も、一般枠での参加は可能です</li>\n<li>イベント申込が無い方のイベント参加はできません。ただし、当日申込も可能です</li>\n<li>営業活動や採用のみを目的とした方のご参加はご遠慮ください</li>\n</ul>\n<h3>会場について</h3>\n<ul>\n<li>ソフトドリンクの自動販売機は利用可能です</li>\n<li>喫煙所の用意はありません</li>\n</ul>\n<h3>イベント行動規範</h3>\n<p>Ginza.jsでは、イベント行動規範を定めています。\nなるべく多くの人が楽しめる場を作るために、イベント参加者全員が以下のURLに記載の行動規範に同意していただく必要があります。\nもちろん、イベント管理者は、行動規範に則った態度や言動を徹底します。</p>\n<p><a href=\"https://ginzajs.github.io/event-code-of-conduct/\" rel=\"nofollow\">https://ginzajs.github.io/event-code-of-conduct/</a></p>\n<p>イベント会場内だけではなく、SNSやブログなどを通じた交流や発信についても、ハラスメント行為がないようにご留意ください。\n行動規範に則らない行為を見聞きした方は、お手数ですがイベント管理者の誰かに直接、またはXのDMなどでご連絡ください。\nご協力をお願いします。</p>",
       "url": "https://ginzajs.connpass.com/event/398379/",
-      "image_url": "https://media.connpass.com/thumbs/bf/56/bf564c19f300d229ef4d280a9a2cd2f5.png",
+      "image_url": "https://media.connpass.com/thumbs/d1/cc/d1cc1f40a9696afc0b09357fc68f4404.png",
       "hash_tag": "ginzajs",
       "started_at": "2026-08-17T19:30:00+09:00",
       "ended_at": "2026-08-17T22:00:00+09:00",
@@ -31,8 +31,8 @@
       "owner_nickname": "jumtech",
       "owner_display_name": "jumpei_ikegami",
       "accepted": 89,
-      "waiting": 3,
-      "updated_at": "2026-08-04T13:07:19+09:00"
+      "waiting": 4,
+      "updated_at": "2026-08-17T12:13:30+09:00"
     },
     {
       "id": 403044,
@@ -61,13 +61,13 @@
       "owner_id": 304508,
       "owner_nickname": "suzukahorie",
       "owner_display_name": "Suzuka",
-      "accepted": 49,
+      "accepted": 51,
       "waiting": 0,
       "updated_at": "2026-08-06T15:07:14+09:00"
     },
     {
       "id": 403813,
-      "title": "Lifenet InsurTech Meetup #03",
+      "title": "Lifenet InsurTech Meetup #03 ～AI x マーケティング～",
       "catch": "AIエージェントがもたらすデジタルマーケティング",
       "description": "<h1>【イベント概要】</h1>\n<p>本イベントは、ライフネット生命保険株式会社における技術的挑戦や業務知見を共有し、技術・マーケティング交流を促進するためのミートアップです。</p>\n<p>第3回となる今回は「ライフネット生命 × AI × マーケティング」をメインテーマとし、AIエージェントを活用した広告分析や業務効率化の取り組みを共有します。</p>\n<p>開発者視点での技術実装だけでなく、広告運用やマーケティング実務におけるAIエージェントの具体的な実用事例を扱うため、非エンジニアのマーケティング実務者から技術者まで、幅広く知見を共有できる場を想定しています。</p>\n<p>セッション終了後は、参加者間の交流を目的とした懇親会も実施します。軽食および飲料の提供を予定しておりますので、職種や会社の枠を超えた情報交換の場としてご活用ください。</p>\n<h1>【このような方におすすめ】</h1>\n<p>以下に少しでも当てはまる方のご参加をお待ちしています！</p>\n<ul>\n<li><strong>マーケティング・ビジネス職</strong>  </li>\n<li>金融・保険業界または規制産業におけるデジタルマーケティング、広告運用に従事している方  </li>\n<li>組織内でのAI活用推進、DX推進をミッションとする担当者  </li>\n<li>広告分析や運用業務の内製化、効率化にAIエージェントの適用を検討している方  </li>\n<li><strong>技術・開発職</strong>  </li>\n<li>AIエージェントの実装、システム連携、セキュリティ設計に関心のあるエンジニア  </li>\n<li>LLMの業務応用や、関連OSSの検証・活用に興味がある開発者</li>\n</ul>\n<hr>\n<h1>【開催日時】</h1>\n<p>2026年9月14日 （月） 18:30〜20:30（18:00 受付開始）</p>\n<h1>【会場】</h1>\n<p>会場名：ライフネット生命保険株式会社 本社オフィス</p>\n<p>住所　：東京都千代田区二番町5番地25 二番町センタービル 8階</p>\n<p>東京メトロ有楽町線 麹町駅 徒歩2分</p>\n<p>JR 中央線・総武線 四ツ谷駅 徒歩7分</p>\n<p>東京メトロ丸ノ内線・南北線 四ツ谷駅 徒歩9分</p>\n<p>東京メトロ半蔵門線 半蔵門駅 徒歩8分</p>\n<h1>【参加にあたって】</h1>\n<ul>\n<li>\n<p>参加費： 無料</p>\n</li>\n<li>\n<p>持ち物：名刺1枚。受付時の本人確認および名札用として使用します。</p>\n</li>\n<li>\n<p>受付方法：当日はビル8階の受付にて、connpassの受付票を提示してください。</p>\n</li>\n</ul>\n<h1>【タイムテーブル】</h1>\n<h2>全体スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">備考</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00 - 18:30</td>\n<td style=\"text-align: left;\"><strong>開場・受付</strong></td>\n<td style=\"text-align: left;\"><strong>8階受付にて</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:35 - 18:35</td>\n<td style=\"text-align: left;\"><strong>オープニング・挨拶</strong></td>\n<td style=\"text-align: left;\"><strong>イベント趣旨説明</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:35 - 19:35</td>\n<td style=\"text-align: left;\"><strong>セッション</strong></td>\n<td style=\"text-align: left;\"><strong>LTセッション各15分、特別対談30分</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35 - 20:30</td>\n<td style=\"text-align: left;\"><strong>交流会</strong></td>\n<td style=\"text-align: left;\"><strong>軽食および飲料の提供あり</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30</td>\n<td style=\"text-align: left;\"><strong>閉会</strong></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>LTセッション</h2>\n<p>進行：各セッション 15分（発表10分 ＋ 質疑応答/転換5分）</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:35 - 18:50</td>\n<td style=\"text-align: left;\"><strong>LT1：システム企画とAIエージェント推進による業務プロセス効率化</strong></td>\n<td style=\"text-align: left;\"><strong>寺師 崇史</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:50 - 19:05</td>\n<td style=\"text-align: left;\"><strong>LT2：AIエージェントを活用した広告分析内製化とセキュリティガバナンス</strong></td>\n<td style=\"text-align: left;\"><strong>橋詰 青弥、原山 陸</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05 - 19:35</td>\n<td style=\"text-align: left;\"><strong>特別対談セッション：AIエージェントがもたらす開発とマーケティングの融合</strong></td>\n<td style=\"text-align: left;\"><strong>後藤 優孝、楠 勇真（ゲスト）</strong></td>\n</tr>\n</tbody>\n</table>\n<h2><strong>登壇者紹介</strong></h2>\n<h3><strong>寺師 崇史（てらし たかふみ）</strong></h3>\n<p><strong>ライフネット生命保険株式会社 システム企画部</strong></p>\n<p>ソーシャルゲーム開発から業務用アプリケーション開発まで、多様なドメインにおけるシステム開発を経験。現在はシステム企画部にて、社内開発プロセスの効率化およびAIエージェントの導入・活用推進を担う。</p>\n<h3><strong>橋詰 青弥（はしづめ せいや）</strong></h3>\n<p><strong>ライフネット生命保険株式会社 データ・AI推進部</strong></p>\n<p>大学にて機械学習とデータ分析を専攻。現在はデータ・AI推進部にて、マーケティング戦略策定から契約成立データの解析など分析業務に従事。セキュリティー管理チーム・広告運用内製化チームを兼任し、安全なAI導入のリードから、広告運用・分析実務まで幅広く担当している。</p>\n<h3><strong>原山 陸（はらやま りく）</strong></h3>\n<p><strong>ライフネット生命保険株式会社 マーケティング部</strong></p>\n<p>入社後わずか8ヶ月で広告運用内製化を牽引。運用業務の可視化や、膨大なデータから「真実」を抽出する精密運用への転換により、コスト改善と業績貢献。その圧倒的な推進力やリーダーシップが評価され、社内表彰制度において2025年度通期MVPを受賞。   </p>\n<h3><strong>後藤 優孝（ごとう まさたか）</strong></h3>\n<p><strong>ライフネット生命保険株式会社 マーケティング部　戦略補佐</strong></p>\n<p>マーケティング戦略の策定から広告運用やSEO等の実務まで一気通貫で担当。生成AIの導入や広告運用の内製化プロジェクトを牽引し、プロセスの効率化と高い成果創出を実現させる。</p>\n<h3><strong>楠 勇真（くすのき ゆうま） | ゲスト登壇者</strong></h3>\n<p><strong>株式会社ノバセル</strong><br>\n<strong>株式会社FUSION 取締役CRO</strong></p>\n<p>2020年4月にラクスル株式会社に新卒で入社。広告領域の新規事業「ノバセル（現ノバセル株式会社）」に配属され、入社当初からストラテジックプランナーとして約40社のお客様のテレビCMを通じたマーケティング戦略をサポート。並行して、メディア業務や効果分析業務も行い、ワンストップでお客様の事業成長をサポートする。2年目にはラクスル史上最年少マネージャーとしてSaaSの事業開発を担当し、3年目からは営業部長として事業全体を統括。現在はFUSION取締役CROとしてダイレクト広告事業を統括。  </p>\n<hr>\n<h1><strong>【主催】</strong></h1>\n<h1><strong>ライフネット生命保険株式会社</strong></h1>\n<p>・<a href=\"https://www.lifenet-seimei.co.jp/\" rel=\"nofollow\">ライフネット生命保険</a></p>\n<p>・<a href=\"https://www.lifenet-seimei.co.jp/recruit/\" rel=\"nofollow\">ライフネット生命保険 採用ページ</a></p>\n<h1><strong>【注意事項】</strong></h1>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更される場合があります。あらかじめご了承ください。  </li>\n<li>他の参加者の方の妨げになるような行為はお控えください。運営側の判断でご退出をお願いする場合があります。  </li>\n<li>ブログやSNSなどで当イベントに関する発信を行う際には、公序良俗に反することのないよう、ご協力をお願いします。  </li>\n<li>当日のイベント風景を写真撮影させていただく場合があります。撮影した内容は後日レポート記事やSNSなどへ掲載される可能性がありますのでご了承ください。</li>\n</ul>\n<h1><strong>【プライバシーポリシー】</strong></h1>\n<p>ご提供いただいた個人情報は、イベントの運営・管理、ならびに改善または新規企画のための分析、およびライフネット生命保険株式会社からの情報提供（採用情報など）のために利用いたします。</p>\n<p>その他の個人情報の取り扱いについては、下記のプライバシーポリシーをご参照ください。 ・<a href=\"https://www.lifenet-seimei.co.jp/policy/privacy/\" rel=\"nofollow\">ライフネット生命保険株式会社 プライバシーポリシー</a></p>",
       "url": "https://lifenet-seimei.connpass.com/event/403813/",
@@ -94,7 +94,38 @@
       "owner_display_name": "kotasono",
       "accepted": 0,
       "waiting": 0,
-      "updated_at": "2026-08-17T11:05:17+09:00"
+      "updated_at": "2026-08-17T11:20:10+09:00"
+    },
+    {
+      "id": 399285,
+      "title": "OWASP Saitama MTG #33",
+      "catch": "サイバーセキュリティに関する勉強会です。",
+      "description": "<h2>OWASP Saitama MTGとは</h2>\n<p>セキュリティ向上に貢献しようという地元有志がさいたま市あるいは春日部市に集まって開く、 OWASP Saitama チャプターの定例勉強会です。セキュリティに携わる幅広い分野の方をスピーカーとしてお呼びして開催します。職種・経験・年齢・性別・国籍などは一切問いません。どなたでもご参加ください。</p>\n<ul>\n<li>参加費は無料です。Skytalksについても無料です。</li>\n<li>懇親会について: 3000円（※学生半額、スピーカー無料）となります。</li>\n<li>お仕事のご都合等にあわせて自由に参加できるよう入退室自由です</li>\n<li>お飲み物は忘れずにお持ちください（オンライン参加の方）</li>\n</ul>\n<p>※注1: 当チャプターではスピーカーが明示的に許可した場合を除き、トークセッションの録音・録画・内容公開は原則禁止とさせていただいております（チャタムハウスルールを適用しています）。ご参加の際にはご注意のほどどうぞよろしくお願いいたします。<br>\n※注2: 2026年から <strong>偶数月第3月曜日</strong> 開催となっています。日程にご注意ください。</p>\n<h2>ハイブリッド開催 (オフライン＋オンライン) です</h2>\n<p>当面の間ハイブリッド開催といたします。<br>\n※1 終了後、現地組のみ完全オフレコのSkytalksおよび懇親会へと移行します。<br>\n※2 オフラインで参加された方にはチャプターステッカーをお配りしています。</p>\n<p>今回はさいたま開催回です; 現地会場としてRaiBoC Hall (市民会館おおみや) の <strong>集会室2</strong> を使用します。 (各線大宮駅下車、東口徒歩5分ほどです)</p>\n<p>※会議室内での飲食は可能なようですがゴミは各自でお持ち帰りください。</p>\n<h2>懇親会参加予定の方へ</h2>\n<p>懇親会参加/不参加で枠が分かれております。イベント参加登録の際には枠にご注意のほどよろしくお願いいたします。</p>\n<h2>スケジュール (予定)</h2>\n<ul>\n<li>19:00 開始 / トーク #1: Beyond 'Never in JS' by @alterakey</li>\n<li>19:30: LT (あれば)</li>\n<li>19:45 チャプター紹介 / 次回告知</li>\n<li>20:00 終了</li>\n</ul>\n<h2>チャプター協賛</h2>\n<p><a href=\"https://monolithworks.co.jp/\" rel=\"nofollow\"><img alt=\"Monolith Works Inc.\" src=\"https://owasp.org/www-chapter-saitama/assets/images/monolithworks.png\" height=\"100\"></a></p>\n<h2>OWASP Saitama チャプターについて</h2>\n<p>サイバーセキュリティの向上を目指す非営利組織であるOWASP (The Open Worldwide Application Security Project) のさいたま支部です。</p>\n<p>イベント開催等のアナウンスはチャプターページで行ないます。\nまたSNSへも配信しますのでアカウントのフォローをいただけますと幸いです。</p>\n<ul>\n<li>チャプターページ: <a href=\"https://owasp.org/www-chapter-saitama/\" rel=\"nofollow\">https://owasp.org/www-chapter-saitama/</a></li>\n<li>Bluesky: https://bsky.app/profile/owaspsaitama.bsky.social</li>\n<li>X: <a href=\"https://x.com/OWASP_Saitama\" rel=\"nofollow\">https://x.com/OWASP_Saitama</a></li>\n</ul>",
+      "url": "https://owaspsaitama.connpass.com/event/399285/",
+      "image_url": "https://media.connpass.com/thumbs/e8/98/e898c9f25f73202501e4525ca7571006.png",
+      "hash_tag": "OWASP_Saitama",
+      "started_at": "2026-08-17T19:00:00+09:00",
+      "ended_at": "2026-08-17T20:00:00+09:00",
+      "published_at": "2026-07-01T23:23:52+09:00",
+      "limit": 1045,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 11369,
+        "subdomain": "owaspsaitama",
+        "title": "OWASP Saitama",
+        "url": "https://owaspsaitama.connpass.com/"
+      },
+      "address": "さいたま市大宮区大門町2-118 (大宮門街6F)",
+      "place": "RaiBoC Hall (市民会館おおみや) 集会室2",
+      "lat": "35.907340200000",
+      "lon": "139.627170100000",
+      "owner_id": 546946,
+      "owner_nickname": "OWASP_Saitama",
+      "owner_display_name": "OWASP Saitama",
+      "accepted": 26,
+      "waiting": 0,
+      "updated_at": "2026-08-13T02:03:19+09:00"
     }
   ]
 }
