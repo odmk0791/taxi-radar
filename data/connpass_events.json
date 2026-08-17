@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-17T21:27:14.027639+09:00",
+  "fetched_at": "2026-08-17T22:33:22.147903+09:00",
   "date": "20260817",
   "count": 2,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-29T18:03:09+09:00",
       "limit": 107,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 7805,
         "subdomain": "ginzajs",
