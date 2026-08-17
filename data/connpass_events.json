@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-17T19:24:13.623950+09:00",
+  "fetched_at": "2026-08-17T20:18:05.659879+09:00",
   "date": "20260817",
   "count": 2,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-29T18:03:09+09:00",
       "limit": 107,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 7805,
         "subdomain": "ginzajs",
@@ -30,7 +30,7 @@
       "owner_id": 99616,
       "owner_nickname": "jumtech",
       "owner_display_name": "jumpei_ikegami",
-      "accepted": 78,
+      "accepted": 76,
       "waiting": 4,
       "updated_at": "2026-08-17T12:13:30+09:00"
     },
