@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-18T18:24:17.585035+09:00",
+  "fetched_at": "2026-08-18T19:19:46.243722+09:00",
   "date": "20260818",
-  "count": 10,
+  "count": 11,
   "events": [
     {
       "id": 401600,
@@ -87,40 +87,9 @@
       "owner_id": 1037524,
       "owner_nickname": "ITES",
       "owner_display_name": "一般社団法人ITエンジニアリングサービス協会",
-      "accepted": 7,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-08-18T10:39:20+09:00"
-    },
-    {
-      "id": 401289,
-      "title": "第2回「人間中心設計×AI」～AI時代に挑むデザイナーたちのLT会～",
-      "catch": "",
-      "description": "<h2>💡 イベント概要</h2>\n<blockquote>\n<p><strong>「新規プロダクト開発で、ユーザー視点の設計をしたいけれど何から始めよう……」</strong><br>\n<strong>「生成AIを導入してみたものの、作業効率化で終わってしまい、本質的なUX品質の向上に繋がっていない……」</strong></p>\n</blockquote>\n<p>今まさにプロダクトの「1人目デザイナー」として奮闘されている方や、「AIの使いこなし方」「UXプロセスの実践」に頭を悩ませている企業の設計担当者の方は多いのではないでしょうか？</p>\n<p>本イベントは、「人間中心設計（HCD）×AI」をテーマに、「明日から現場で本当に使える実践と運用のリアル」を深掘りしていくライトニングトークイベントの第2回です！</p>\n<hr>\n<h2>🎤 今回の登壇者のご紹介</h2>\n<p>今回は、人間中心設計を軸にさまざまなプロダクト開発に携わってきた方や、AIを活用したUI改修を実践するデザイナー、デザインマネジメントの講師、高校生・高専生のプロトタイピング×AIに取り組んできた方にもご登壇いただきます！<br>\nAIによって「つくる」と「デザインする」はどう変わっていくのか。さまざまな現場から語られる、AI時代のリアルにご期待ください。</p>\n<h3><strong>藤崎 光</strong></h3>\n<blockquote>\n<p>大学ではUXデザインを専攻、人間工学と人間中心設計を学ぶ。<br>\nWebデザイナーとしてアピリッツに入社後、UXデザインを中心軸としてWebコンサルタント、SI営業、PMのチームを経験。<br>\n新規事業や既存サービス改善において、クライアントとユーザー理解と事業要件、開発を繋げることを得意とする。</p>\n</blockquote>\n<h3><strong>森 真悠子</strong></h3>\n<blockquote>\n<p><strong>株式会社まつりば 代表取締役 ～StartupBaseU18 創立者～</strong>  </p>\n<p>NTTドコモ入社。週末に音楽や演劇の子どもワークショップを運営。2007年ベネッセコーポレーション入社。高校生の進路支援事業開発に従事。2014年7月、株式会社まつりば設立し、高校生向けの起業体験プログラム\"StartupBaseU18\"を創立。<br>\n現在は、企業向けの若手社員向けアントレプレナーシップカリキュラムの開発・実行支援やミレニアル世代向けの顧客体験のプランニングを行っている。</p>\n</blockquote>\n<h3><strong>日竎 和夏</strong></h3>\n<blockquote>\n<p><strong>リトルヘルプ・エージェンシー合同会社 プロダクトデザイナー</strong>  </p>\n<p>九州大学大学院 芸術工学府を卒業後、2025年にリトルヘルプ・エージェンシー合同会社へ新卒入社。1人目のデザイナーとして、UI/UXデザインを中心に、バナーやフライヤー、ノベルティ、動画制作など幅広いデザイン制作に取り組んでいる。</p>\n</blockquote>\n<h3><strong>飯塚 洋平</strong></h3>\n<blockquote>\n<p><strong>AJS株式会社 エキスパート／RossoAcademy 代表</strong>  </p>\n<p>SIerのプロジェクトマネージャーとしてキャリアを積んだのち、kintoneを軸としたDX支援と組織変革のファシリテーションへ。サイボウズ公認 kintoneエバンジェリスト／オフィシャルパートナー。<br>\n文化学園大学 非常勤講師としてデザインマネジメント論を担当、着ぐるみ協会 理事も務める。</p>\n</blockquote>\n<hr>\n<h2>👥 参加対象</h2>\n<ul>\n<li>HCD-netの資格に興味がある方</li>\n<li>人間中心設計/UXデザインの手法は理解しているがうまく実践できていない方</li>\n<li>AI活用が業務効率化に留まっている方</li>\n<li>UX品質を向上させたい方</li>\n</ul>\n<hr>\n<h2>📆 開催概要</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">項目</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>日時</strong></td>\n<td style=\"text-align: left;\"><strong>2026年8月18日 (火) 19:00 ~ 21:00</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>会場</strong></td>\n<td style=\"text-align: left;\"><strong>株式会社アピリッツ</strong><br>東京都渋谷区桜丘町1番1号 渋谷サクラステージSHIBUYAタワー 24階</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>参加費</strong></td>\n<td style=\"text-align: left;\">無料</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>🏢 会場・入館方法のご案内</h2>\n<p><strong>【株式会社アピリッツ（渋谷サクラステージ）への入館手順】</strong></p>\n<ol>\n<li>渋谷サクラステージ <strong>SHIBUYAタワー 5Fオフィスロビー総合受付</strong> へお越しください。</li>\n<li>近くに「イベント会場」の看板を持つ、アピリッツのスタッフへお声かけください。セキュリティゲートをお進み頂く際に必要な<strong>【QRコードの紙】</strong>をお渡しいたします。</li>\n<li>通路に沿って奥にあるセキュリティゲートまで進み、右側のゲートにてQRコードをスキャンして通過してください。</li>\n<li>そのままエレベーターで <strong>24階</strong>（株式会社アピリッツ）までお上がりください。</li>\n</ol>\n<p>※当日遅れてのご参加、その他入館に関するご不明点がありましたら、代表電話（<code>03-6684-5111</code>）までご連絡ください。</p>\n<hr>\n<h2>💡 WBCカレッジとは？</h2>\n<p>株式会社アピリッツが開催する、筋肉質を目指す勉強会「WebBootCampCollege」の総称です。<br>\n「学園化」をテーマに掲げるアピリッツでは、WBCカレッジを課外活動として開催し、受託開発のプロフェッショナルとしてのベストプラクティスを公開します！</p>\n<hr>\n<h2>💡 今後のWBCカレッジ</h2>\n<p>■8月20日<br>\n<a href=\"https://wbccollege.connpass.com/event/399782/\" rel=\"nofollow\">\nゾーホージャパンとアピリッツがお送りする「グローバルワークスタイル発表会」<br>\n日本の常識、海外では非常識？インド×ベトナム 現地リアルレポート<br>\n<img src=\"https://media.connpass.com/thumbs/e0/87/e08773a0b6df820683fe3924ef5f6e6f.png\" width=\"200\"><br>\n</a><a href=\"https://wbccollege.connpass.com/event/399782/\" rel=\"nofollow\">https://wbccollege.connpass.com/event/399782/</a>\n</p>\n<p><br></p>\n<p>■8月20日<br>\n<a href=\"https://wbccollege.connpass.com/event/401388/\" rel=\"nofollow\">\n渋谷数学LTナイト<br>\n〜「数学が好き。」それだけを必要十分条件にしました。〜<br>\n<img src=\"https://media.connpass.com/thumbs/54/55/5455034d3c78b7f93c30c3a1da7b78ac.png\" width=\"200\"><br>\n</a><a href=\"https://wbccollege.connpass.com/event/401388/\" rel=\"nofollow\">https://wbccollege.connpass.com/event/401388/</a>\n</p>\n<p><br></p>\n<p>■8月27日<br>\n<a href=\"https://wbccollege.connpass.com/event/401290/\" rel=\"nofollow\">\nユーザーの声を、施策につながる発見へ変える <br>〜良いUXリサーチの設計を学ぶ〜\n<br>\n</a><a href=\"https://wbccollege.connpass.com/event/401290/\" rel=\"nofollow\">https://wbccollege.connpass.com/event/401290/</a>\n</p>",
-      "url": "https://wbccollege.connpass.com/event/401289/",
-      "image_url": "https://media.connpass.com/thumbs/91/27/91279fdc41017830c559dab9a4f50cf2.png",
-      "hash_tag": "WBCカレッジ",
-      "started_at": "2026-08-18T19:00:00+09:00",
-      "ended_at": "2026-08-18T21:00:00+09:00",
-      "published_at": "2026-07-21T19:03:46+09:00",
-      "limit": 23,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16709,
-        "subdomain": "wbccollege",
-        "title": "WBCカレッジ",
-        "url": "https://wbccollege.connpass.com/"
-      },
-      "address": "東京都渋谷区桜丘町1-1渋谷サクラステージ SHIBUYAタワー 24階",
-      "place": "株式会社アピリッツ",
-      "lat": "35.657378500000",
-      "lon": "139.701809900000",
-      "owner_id": 952301,
-      "owner_nickname": "MinoriUeda",
-      "owner_display_name": "MinoriUeda",
-      "accepted": 14,
-      "waiting": 0,
-      "updated_at": "2026-08-17T19:36:23+09:00"
     },
     {
       "id": 402848,
@@ -135,7 +104,7 @@
       "published_at": "2026-08-05T00:01:36+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17311,
         "subdomain": "xxi-music-it",
@@ -166,7 +135,7 @@
       "published_at": "2026-06-19T07:57:29+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14739,
         "subdomain": "opsjaws",
@@ -197,7 +166,7 @@
       "published_at": "2026-07-28T07:01:35+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 1717,
         "subdomain": "hfs",
@@ -208,12 +177,43 @@
       "place": "Co-Creation LABO",
       "lat": "35.682793000000",
       "lon": "139.739039500000",
-      "owner_id": 14295,
-      "owner_nickname": "medellinjp",
-      "owner_display_name": "冨元 雅仁",
+      "owner_id": 70778,
+      "owner_nickname": "eLV",
+      "owner_display_name": "eLV勉強会",
       "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-07-28T07:01:35+09:00"
+    },
+    {
+      "id": 401289,
+      "title": "第2回「人間中心設計×AI」～AI時代に挑むデザイナーたちのLT会～",
+      "catch": "",
+      "description": "<h2>💡 イベント概要</h2>\n<blockquote>\n<p><strong>「新規プロダクト開発で、ユーザー視点の設計をしたいけれど何から始めよう……」</strong><br>\n<strong>「生成AIを導入してみたものの、作業効率化で終わってしまい、本質的なUX品質の向上に繋がっていない……」</strong></p>\n</blockquote>\n<p>今まさにプロダクトの「1人目デザイナー」として奮闘されている方や、「AIの使いこなし方」「UXプロセスの実践」に頭を悩ませている企業の設計担当者の方は多いのではないでしょうか？</p>\n<p>本イベントは、「人間中心設計（HCD）×AI」をテーマに、「明日から現場で本当に使える実践と運用のリアル」を深掘りしていくライトニングトークイベントの第2回です！</p>\n<hr>\n<h2>🎤 今回の登壇者のご紹介</h2>\n<p>今回は、人間中心設計を軸にさまざまなプロダクト開発に携わってきた方や、AIを活用したUI改修を実践するデザイナー、デザインマネジメントの講師、高校生・高専生のプロトタイピング×AIに取り組んできた方にもご登壇いただきます！<br>\nAIによって「つくる」と「デザインする」はどう変わっていくのか。さまざまな現場から語られる、AI時代のリアルにご期待ください。</p>\n<h3><strong>藤崎 光</strong></h3>\n<blockquote>\n<p>大学ではUXデザインを専攻、人間工学と人間中心設計を学ぶ。<br>\nWebデザイナーとしてアピリッツに入社後、UXデザインを中心軸としてWebコンサルタント、SI営業、PMのチームを経験。<br>\n新規事業や既存サービス改善において、クライアントとユーザー理解と事業要件、開発を繋げることを得意とする。</p>\n</blockquote>\n<h3><strong>森 真悠子</strong></h3>\n<blockquote>\n<p><strong>株式会社まつりば 代表取締役 ～StartupBaseU18 創立者～</strong>  </p>\n<p>NTTドコモ入社。週末に音楽や演劇の子どもワークショップを運営。2007年ベネッセコーポレーション入社。高校生の進路支援事業開発に従事。2014年7月、株式会社まつりば設立し、高校生向けの起業体験プログラム\"StartupBaseU18\"を創立。<br>\n現在は、企業向けの若手社員向けアントレプレナーシップカリキュラムの開発・実行支援やミレニアル世代向けの顧客体験のプランニングを行っている。</p>\n</blockquote>\n<h3><strong>日竎 和夏</strong></h3>\n<blockquote>\n<p><strong>リトルヘルプ・エージェンシー合同会社 プロダクトデザイナー</strong>  </p>\n<p>九州大学大学院 芸術工学府を卒業後、2025年にリトルヘルプ・エージェンシー合同会社へ新卒入社。1人目のデザイナーとして、UI/UXデザインを中心に、バナーやフライヤー、ノベルティ、動画制作など幅広いデザイン制作に取り組んでいる。</p>\n</blockquote>\n<h3><strong>飯塚 洋平</strong></h3>\n<blockquote>\n<p><strong>AJS株式会社 エキスパート／RossoAcademy 代表</strong>  </p>\n<p>SIerのプロジェクトマネージャーとしてキャリアを積んだのち、kintoneを軸としたDX支援と組織変革のファシリテーションへ。サイボウズ公認 kintoneエバンジェリスト／オフィシャルパートナー。<br>\n文化学園大学 非常勤講師としてデザインマネジメント論を担当、着ぐるみ協会 理事も務める。</p>\n</blockquote>\n<hr>\n<h2>👥 参加対象</h2>\n<ul>\n<li>HCD-netの資格に興味がある方</li>\n<li>人間中心設計/UXデザインの手法は理解しているがうまく実践できていない方</li>\n<li>AI活用が業務効率化に留まっている方</li>\n<li>UX品質を向上させたい方</li>\n</ul>\n<hr>\n<h2>📆 開催概要</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">項目</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>日時</strong></td>\n<td style=\"text-align: left;\"><strong>2026年8月18日 (火) 19:00 ~ 21:00</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>会場</strong></td>\n<td style=\"text-align: left;\"><strong>株式会社アピリッツ</strong><br>東京都渋谷区桜丘町1番1号 渋谷サクラステージSHIBUYAタワー 24階</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>参加費</strong></td>\n<td style=\"text-align: left;\">無料</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>🏢 会場・入館方法のご案内</h2>\n<p><strong>【株式会社アピリッツ（渋谷サクラステージ）への入館手順】</strong></p>\n<ol>\n<li>渋谷サクラステージ <strong>SHIBUYAタワー 5Fオフィスロビー総合受付</strong> へお越しください。</li>\n<li>近くに「イベント会場」の看板を持つ、アピリッツのスタッフへお声かけください。セキュリティゲートをお進み頂く際に必要な<strong>【QRコードの紙】</strong>をお渡しいたします。</li>\n<li>通路に沿って奥にあるセキュリティゲートまで進み、右側のゲートにてQRコードをスキャンして通過してください。</li>\n<li>そのままエレベーターで <strong>24階</strong>（株式会社アピリッツ）までお上がりください。</li>\n</ol>\n<p>※当日遅れてのご参加、その他入館に関するご不明点がありましたら、代表電話（<code>03-6684-5111</code>）までご連絡ください。</p>\n<hr>\n<h2>💡 WBCカレッジとは？</h2>\n<p>株式会社アピリッツが開催する、筋肉質を目指す勉強会「WebBootCampCollege」の総称です。<br>\n「学園化」をテーマに掲げるアピリッツでは、WBCカレッジを課外活動として開催し、受託開発のプロフェッショナルとしてのベストプラクティスを公開します！</p>\n<hr>\n<h2>💡 今後のWBCカレッジ</h2>\n<p>■8月20日<br>\n<a href=\"https://wbccollege.connpass.com/event/399782/\" rel=\"nofollow\">\nゾーホージャパンとアピリッツがお送りする「グローバルワークスタイル発表会」<br>\n日本の常識、海外では非常識？インド×ベトナム 現地リアルレポート<br>\n<img src=\"https://media.connpass.com/thumbs/e0/87/e08773a0b6df820683fe3924ef5f6e6f.png\" width=\"200\"><br>\n</a><a href=\"https://wbccollege.connpass.com/event/399782/\" rel=\"nofollow\">https://wbccollege.connpass.com/event/399782/</a>\n</p>\n<p><br></p>\n<p>■8月20日<br>\n<a href=\"https://wbccollege.connpass.com/event/401388/\" rel=\"nofollow\">\n渋谷数学LTナイト<br>\n〜「数学が好き。」それだけを必要十分条件にしました。〜<br>\n<img src=\"https://media.connpass.com/thumbs/54/55/5455034d3c78b7f93c30c3a1da7b78ac.png\" width=\"200\"><br>\n</a><a href=\"https://wbccollege.connpass.com/event/401388/\" rel=\"nofollow\">https://wbccollege.connpass.com/event/401388/</a>\n</p>\n<p><br></p>\n<p>■8月27日<br>\n<a href=\"https://wbccollege.connpass.com/event/401290/\" rel=\"nofollow\">\nユーザーの声を、施策につながる発見へ変える <br>〜良いUXリサーチの設計を学ぶ〜\n<br>\n</a><a href=\"https://wbccollege.connpass.com/event/401290/\" rel=\"nofollow\">https://wbccollege.connpass.com/event/401290/</a>\n</p>",
+      "url": "https://wbccollege.connpass.com/event/401289/",
+      "image_url": "https://media.connpass.com/thumbs/91/27/91279fdc41017830c559dab9a4f50cf2.png",
+      "hash_tag": "WBCカレッジ",
+      "started_at": "2026-08-18T19:00:00+09:00",
+      "ended_at": "2026-08-18T21:00:00+09:00",
+      "published_at": "2026-07-21T19:03:46+09:00",
+      "limit": 23,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 16709,
+        "subdomain": "wbccollege",
+        "title": "WBCカレッジ",
+        "url": "https://wbccollege.connpass.com/"
+      },
+      "address": "東京都渋谷区桜丘町1-1渋谷サクラステージ SHIBUYAタワー 24階",
+      "place": "株式会社アピリッツ",
+      "lat": "35.657378500000",
+      "lon": "139.701809900000",
+      "owner_id": 952301,
+      "owner_nickname": "MinoriUeda",
+      "owner_display_name": "MinoriUeda",
+      "accepted": 13,
+      "waiting": 0,
+      "updated_at": "2026-08-17T19:36:23+09:00"
     },
     {
       "id": 401603,
@@ -228,7 +228,7 @@
       "published_at": "2026-07-27T09:01:41+09:00",
       "limit": 55,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 312,
         "subdomain": "gocon",
@@ -259,7 +259,7 @@
       "published_at": "2026-07-28T18:00:58+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17529,
         "subdomain": "findy-aiplus",
@@ -273,9 +273,40 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 55,
+      "accepted": 61,
       "waiting": 0,
       "updated_at": "2026-08-18T15:42:53+09:00"
+    },
+    {
+      "id": 404200,
+      "title": "(コピー)第3回「人間中心設計×AI」～AI時代に挑むデザイナーたちのLT会～",
+      "catch": "",
+      "description": "<h2>≪イベント概要≫</h2>\n<p>「新規プロダクト開発で、ユーザー視点の設計をしたいけれど何から始めよう……」<br>\n「生成AIを導入してみたものの、作業効率化で終わってしまい、本質的なUX品質の向上に繋がっていない……」  </p>\n<p>今まさにプロダクトの「1人目デザイナー」として奮闘されている方や、「AIの使いこなし方」「UXプロセスの実践」に頭を悩ませている企業の設計担当者の方は多いのではないでしょうか？</p>\n<p>本イベントでは、<strong>「人間中心設計（HCD）×AI」</strong>をテーマに、「明日から現場で本当に使える実践と運用のリアル」を深掘りしていくライトニングトークイベントの第3回です！</p>\n<hr>\n<h2>≪LT登壇者大募集！≫</h2>\n<p>自分の取り組みや現場での知見を発表してみませんか？<br>\n本イベントでは、登壇していただけるスピーカーを募集しています！</p>\n<ul>\n<li><strong>テーマ：</strong> AIやデザインについての、実務での工夫、失敗談、ナレッジ共有など自由です。</li>\n<li><strong>発表時間：</strong> 1人あたり 5〜10分程度（※目安）</li>\n<li><strong>こんな方におすすめ：</strong></li>\n<li>現場での知見をアウトプットして整理したい方</li>\n<li>社外のエンジニア・デザイナーと情報交換したい方</li>\n<li>登壇経験を積んでみたい方（初登壇も大歓迎です！）</li>\n</ul>\n<blockquote>\n<p>「ちょっと話してみたいかも」という軽い気持ちでOKです。参加者同士で学びを深め合いましょう！ご応募をお待ちしております。</p>\n</blockquote>\n<hr>\n<h2>≪参加対象≫</h2>\n<ul>\n<li>HCD-netの資格に興味がある方</li>\n<li>人間中心設計/UXデザインの手法は理解しているがうまく実践できていない方</li>\n<li>AI活用が業務効率化に留まっている方</li>\n<li>UX品質を向上させたい方</li>\n</ul>\n<hr>\n<h2>≪開催概要≫</h2>\n<h3>□ 日時</h3>\n<p><strong>2026年9月17日 (木) 19:00 ~ 21:00</strong>（18:45 開場）</p>\n<h3>□ 会場</h3>\n<p><strong>株式会社アピリッツ</strong><br>\n東京都渋谷区桜丘町1番1号 渋谷サクラステージSHIBUYAタワー 24階</p>\n<hr>\n<h2>≪タイムスケジュール≫</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>18:45 - 19:00</strong></td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:00 - 19:10</strong></td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:10 - 19:25</strong></td>\n<td style=\"text-align: left;\">登壇者①</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:30 - 19:40</strong></td>\n<td style=\"text-align: left;\">登壇者②</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:45 - 19:55</strong></td>\n<td style=\"text-align: left;\">登壇者③</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:00 - 20:20</strong></td>\n<td style=\"text-align: left;\">登壇者④</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:25 - 20:30</strong></td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:30 - 21:00</strong></td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>≪会場・入館について（渋谷サクラステージ）≫</h2>\n<ol>\n<li>渋谷サクラステージSHIBUYAタワー<strong>5Fオフィスロビー総合受付</strong>へお越しください。</li>\n<li>近くに「イベント会場」の看板を持つ、アピリッツのスタッフへお声かけください。セキュリティゲートをお進み頂く際に必要な<strong>【QRコードの紙】</strong>をお渡しいたします。</li>\n<li>通路に沿って、奥にあるセキュリティゲートまで進んでください。先ほどお渡ししたQRコードの紙を右側のセキュリティゲートにてスキャンして通過してください。</li>\n<li>そのまま、エレベーターで<strong>24階（株式会社アピリッツ）</strong>までお上がりください。</li>\n</ol>\n<p>※当日遅れてのご参加/その他入館に関するご不明点がありましたら、代表電話「<strong>03-6684-5111</strong>」までご連絡ください。</p>\n<hr>\n<h2>≪今後のWBCカレッジ≫</h2>\n<p><strong>□ 8月20日（木）渋谷サクラステージ</strong><br>\nゾーホージャパンとアピリッツがお送りする「グローバルワークスタイル発表会」<br>\n日本の常識、海外では非常識？インド×ベトナム 現地リアルレポート<br>\n👉 <a href=\"https://wbccollege20260820.peatix.com/?utm_source=ptx\" rel=\"nofollow\">詳細・お申し込みはこちら</a></p>\n<p><strong>□ 8月25日（火）渋谷サクラステージ</strong><br>\n渋谷数学LTナイト<br>\n「数学が好き。」それだけを必要十分条件にしました。<br>\n👉 <a href=\"https://wbccollege20260825.peatix.com/?utm_source=ptx\" rel=\"nofollow\">詳細・お申し込みはこちら</a></p>\n<p><strong>□ 8月27日（木）渋谷サクラステージ</strong><br>\nユーザーの声を施策につながる発見へ変えるには？<br>\n〜何を聞けば良いUXリサーチなのか〜<br>\n👉 <a href=\"https://wbccollege20260827.peatix.com/?utm_source=ptx\" rel=\"nofollow\">詳細・お申し込みはこちら</a></p>\n<p><strong>□ 水曜19時 渋谷サクラステージ</strong><br>\nサービスデザイン談話室<br>\n👉 <a href=\"https://peatix.com/event/4990839/?utm_source=ptx\" rel=\"nofollow\">詳細・お申し込みはこちら</a></p>\n<hr>\n<h2>≪WBCカレッジとは≫</h2>\n<p>株式会社アピリッツが開催する、筋肉質を目指す勉強会「WebBootCampCollege」の総称です。<br>\n「学園化」をテーマに掲げるアピリッツでは、WBCカレッジを課外活動として開催し、受託開発のプロフェッショナルとしてのベストプラクティスを公開します！</p>",
+      "url": "https://wbccollege.connpass.com/event/404200/",
+      "image_url": "https://media.connpass.com/thumbs/c9/4f/c94f7919c52714485578fd98f079dfd7.png",
+      "hash_tag": "WBCカレッジ",
+      "started_at": "2026-08-18T19:00:00+09:00",
+      "ended_at": "2026-08-18T21:00:00+09:00",
+      "published_at": "2026-08-18T18:40:34+09:00",
+      "limit": 23,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 16709,
+        "subdomain": "wbccollege",
+        "title": "WBCカレッジ",
+        "url": "https://wbccollege.connpass.com/"
+      },
+      "address": "東京都渋谷区桜丘町1-1渋谷サクラステージ SHIBUYAタワー 24階",
+      "place": "株式会社アピリッツ",
+      "lat": "35.657378500000",
+      "lon": "139.701809900000",
+      "owner_id": 952301,
+      "owner_nickname": "MinoriUeda",
+      "owner_display_name": "MinoriUeda",
+      "accepted": 0,
+      "waiting": 0,
+      "updated_at": "2026-08-18T18:50:47+09:00"
     },
     {
       "id": 399848,
@@ -304,8 +335,8 @@
       "owner_id": 363958,
       "owner_nickname": "ktakita1011",
       "owner_display_name": "ktakita",
-      "accepted": 369,
-      "waiting": 30,
+      "accepted": 378,
+      "waiting": 28,
       "updated_at": "2026-08-17T11:36:22+09:00"
     }
   ]
