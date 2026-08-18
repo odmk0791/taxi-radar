@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-18T14:21:09.961575+09:00",
+  "fetched_at": "2026-08-18T15:29:03.166398+09:00",
   "date": "20260818",
   "count": 10,
   "events": [
@@ -118,7 +118,7 @@
       "owner_id": 70778,
       "owner_nickname": "eLV",
       "owner_display_name": "eLV勉強会",
-      "accepted": 5,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-07-28T07:01:35+09:00"
     },
@@ -185,37 +185,6 @@
       "updated_at": "2026-08-17T19:36:23+09:00"
     },
     {
-      "id": 401603,
-      "title": "Go 1.27 リリースパーティ",
-      "catch": "Go 1.27のリリースをお祝いしよう",
-      "description": "<p>2026年8月にリリースされた<a href=\"https://go.dev/doc/go1.27\" rel=\"nofollow\">Go 1.27</a>のリリースをお祝いしましょう！！</p>\n<pre>$ go install golang.org/dl/go1.27.0@latest\n$ go1.27.0 download\n</pre>\n\n<h2>参加枠</h2>\n<h3>オフライン参加枠</h3>\n<p>オフラインで参加する枠です。</p>\n<h3>登壇者の皆様へ</h3>\n<ul>\n<li>18:45までに、会場へ入場していただき、事前に投影の調整をしていただきますようお願いいたします</li>\n<li>発表者のPCをプロジェクターに繋いで発表（HDMI or USB-C）</li>\n<li>発表者名はハンドルネームでOK</li>\n<li>所属などの紹介は任意</li>\n<li>質疑応答なし</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:30 - 19:00</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05 - 19:25</td>\n<td style=\"text-align: left;\"><strong>What's new in Go1.27?</strong> by CIARANA</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:25 - 19:40</td>\n<td style=\"text-align: left;\"><strong>スポンサーセッション goroutineとの安全な付き合い方</strong> by yudppp</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:40 - 19:55</td>\n<td style=\"text-align: left;\"><strong>UUIDについて</strong> by convto</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55 - 20:00</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:00 - 20:15</td>\n<td style=\"text-align: left;\"><strong>Generic Methodについて</strong> by macopy</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:15 - 20:30</td>\n<td style=\"text-align: left;\"><strong>GODEBUGフラグについて</strong> by mazrean</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:30 - 20:35</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:35 - 21:30</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:30 - 21:40</td>\n<td style=\"text-align: left;\">完全撤収</td>\n</tr>\n</tbody>\n</table>\n<p><strong>※ プログラムに変更があった場合は随時更新いたします。</strong></p>\n<h2>登壇者（順次更新）</h2>\n<h3>CIARANA</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1179044542860840960/2HWZacpp_400x400.jpg\" width=\"100px\"></p>\n<p>株式会社カプコンでバックエンドエンジニアをしています。</p>\n<h3>convto</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/23229795\" width=\"100px\"></p>\n<p>株式会社LayerX所属。好きな uuid バージョンは v7 です。</p>\n<h3>macopy</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/1021371\" width=\"100px\"></p>\n<p>面白法人カヤック所属。fujiwara組の組員としてISUCON11優勝・ISUCON12予選出題担当。好きなASTはast.BinaryExpr</p>\n<h3>mazrean</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/50093633\" width=\"100px\"></p>\n<p>株式会社ディー・エヌ・エー所属。FormStream（multipart parser）やGenORM（型安全SQLビルダー）、Kessoku（並列DI）等のGo言語に関連したOSSを開発。業務ではSREとして活動する。</p>\n<h3>yudppp</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/4619802?v=4\" width=\"100px\"></p>\n<p>2018年に、株式会社HRBrainへ入社し、同年CTOに就任。現在は専任執行役員 CTOとして、プロダクト開発を牽引。\n2015年から10年以上、Go言語でプロダクト開発をしている。</p>\n<h2>会場・懇親会提供</h2>\n<p><a href=\"https://www.hrbrain.co.jp/\" rel=\"nofollow\"><img src=\"https://pub-8dcbd92f56254d5e9b478e5055059a50.r2.dev/sponsors/HRBrain.png\" width=\"300px\"></a></p>\n<p>株式会社HRBrain 東京オフィス<br>\n〒108-0073 東京都港区三田3-5-19 住友不動産東京三田ガーデンタワー5F<br></p>\n<p>▼アクセス方法<br>\nJR 山手線/京浜東北線 「田町駅」三田口（西口） 徒歩5分<br>\n都営三田線・都営浅草線 「三田駅」A3出口 徒歩4分</p>\n<h2>注意事項</h2>\n<ul>\n<li>会場内で電源とWi-Fiを使用可能ですが、ベストエフォートでの提供となります。</li>\n<li>会場内と会場周辺は禁煙となっております。</li>\n<li>イベントの様子を撮影し、後日公開させていただく場合がございます。</li>\n<li>体調不良の方は無理せず参加をお控えください。</li>\n<li>参加できない場合は、速やかにキャンセル処理をお願いいたします。</li>\n<li>飲食目的や勧誘などイベントの目的外の方を見かけましたら、退出いただき、今後のイベントへの参加をご遠慮いただく場合がございます</li>\n<li>他のイベントにて目的外参加と思われる行為を常習的に行っている方の参加もご遠慮頂いております。</li>\n</ul>\n<div style=\"margin: 2em 0;\n    padding: 0.5em 1em;\n    border: solid 3px #FB2E01;\">\n<span style=\"font-size: 1.5em;\n    color: #FB2E01;\n    font-weight: bold;\">\n⚠️ 目的外（飲食目的）参加者への取り組み\n</span>\n<p style=\"padding: 0; margin: 0; font-weight: bold;\">\n飲食目的など、悪質な目的外参加者が増えているため、連日飲食可能な関連性の薄いイベントに参加しているなど、他イベントの参加状況により一定の基準で事前のご連絡はせず一度キャンセルさせていただきます。\nお手数ですが、運営によって参加がキャンセルされてしまった場合は、一度connpass上でイベントの運営にお問いを合わせいただいた上で、再登録をお願いします。\n再登録後にキャンセル待ちになってしまった場合は、当初の参加状況を考慮させていただきますのでご安心ください。\n安心して参加できる勉強会を運営するため、目的外参加者を減らしていきたいと考えておりますので、ご理解・ご協力のほどよろしくお願いします。\n</p><p>\n</p></div>\n\n<h2>画像について</h2>\n<ul>\n<li>GoのマスコットのGopherの原作者は<a href=\"http://reneefrench.blogspot.com/\" rel=\"nofollow\">Renee French</a>さんです</li>\n<li>Gopherのイラストは<a href=\"https://twitter.com/tenntenn\" rel=\"nofollow\">tenntenn</a>さんによるものです</li>\n</ul>\n<h2>行動指針</h2>\n<p>運営者、登壇者、その他すべての参加者は<a href=\"https://go.dev/conduct\" rel=\"nofollow\">Go Community Code of Conduct</a>に従う必要があります。</p>",
-      "url": "https://gocon.connpass.com/event/401603/",
-      "image_url": "https://media.connpass.com/thumbs/8a/0e/8a0ed2c831d5d1e86cd74c77091e8c08.png",
-      "hash_tag": "go127party",
-      "started_at": "2026-08-18T19:00:00+09:00",
-      "ended_at": "2026-08-18T21:30:00+09:00",
-      "published_at": "2026-07-27T09:01:41+09:00",
-      "limit": 55,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 312,
-        "subdomain": "gocon",
-        "title": "Gophers Japan",
-        "url": "https://gocon.connpass.com/"
-      },
-      "address": "東京都港区三田3-5-19 住友不動産東京三田ガーデンタワー5F",
-      "place": "株式会社HRBrain",
-      "lat": "35.644916500000",
-      "lon": "139.743343400000",
-      "owner_id": 6178,
-      "owner_nickname": "tenntenn",
-      "owner_display_name": "tenntenn",
-      "accepted": 44,
-      "waiting": 0,
-      "updated_at": "2026-08-17T14:37:41+09:00"
-    },
-    {
       "id": 401639,
       "title": "【オンライン配信追加！】コスト最適化で品質は変わるのか？meetup #1",
       "catch": "ハーネスの組み方やモデル設定の工夫でコスト最適化と品質を両立する事例を学ぶ！",
@@ -278,6 +247,37 @@
       "updated_at": "2026-08-05T00:01:36+09:00"
     },
     {
+      "id": 401603,
+      "title": "Go 1.27 リリースパーティ",
+      "catch": "Go 1.27のリリースをお祝いしよう",
+      "description": "<p>2026年8月にリリースされた<a href=\"https://go.dev/doc/go1.27\" rel=\"nofollow\">Go 1.27</a>のリリースをお祝いしましょう！！</p>\n<pre>$ go install golang.org/dl/go1.27.0@latest\n$ go1.27.0 download\n</pre>\n\n<h2>参加枠</h2>\n<h3>オフライン参加枠</h3>\n<p>オフラインで参加する枠です。</p>\n<h3>登壇者の皆様へ</h3>\n<ul>\n<li>18:45までに、会場へ入場していただき、事前に投影の調整をしていただきますようお願いいたします</li>\n<li>発表者のPCをプロジェクターに繋いで発表（HDMI or USB-C）</li>\n<li>発表者名はハンドルネームでOK</li>\n<li>所属などの紹介は任意</li>\n<li>質疑応答なし</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:30 - 19:00</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05 - 19:25</td>\n<td style=\"text-align: left;\"><strong>What's new in Go1.27?</strong> by CIARANA</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:25 - 19:40</td>\n<td style=\"text-align: left;\"><strong>スポンサーセッション goroutineとの安全な付き合い方</strong> by yudppp</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:40 - 19:55</td>\n<td style=\"text-align: left;\"><strong>UUIDについて</strong> by convto</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55 - 20:00</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:00 - 20:15</td>\n<td style=\"text-align: left;\"><strong>Generic Methodについて</strong> by macopy</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:15 - 20:30</td>\n<td style=\"text-align: left;\"><strong>GODEBUGフラグについて</strong> by mazrean</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:30 - 20:35</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:35 - 21:30</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:30 - 21:40</td>\n<td style=\"text-align: left;\">完全撤収</td>\n</tr>\n</tbody>\n</table>\n<p><strong>※ プログラムに変更があった場合は随時更新いたします。</strong></p>\n<h2>登壇者（順次更新）</h2>\n<h3>CIARANA</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1179044542860840960/2HWZacpp_400x400.jpg\" width=\"100px\"></p>\n<p>株式会社カプコンでバックエンドエンジニアをしています。</p>\n<h3>convto</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/23229795\" width=\"100px\"></p>\n<p>株式会社LayerX所属。好きな uuid バージョンは v7 です。</p>\n<h3>macopy</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/1021371\" width=\"100px\"></p>\n<p>面白法人カヤック所属。fujiwara組の組員としてISUCON11優勝・ISUCON12予選出題担当。好きなASTはast.BinaryExpr</p>\n<h3>mazrean</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/50093633\" width=\"100px\"></p>\n<p>株式会社ディー・エヌ・エー所属。FormStream（multipart parser）やGenORM（型安全SQLビルダー）、Kessoku（並列DI）等のGo言語に関連したOSSを開発。業務ではSREとして活動する。</p>\n<h3>yudppp</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/4619802?v=4\" width=\"100px\"></p>\n<p>2018年に、株式会社HRBrainへ入社し、同年CTOに就任。現在は専任執行役員 CTOとして、プロダクト開発を牽引。\n2015年から10年以上、Go言語でプロダクト開発をしている。</p>\n<h2>会場・懇親会提供</h2>\n<p><a href=\"https://www.hrbrain.co.jp/\" rel=\"nofollow\"><img src=\"https://pub-8dcbd92f56254d5e9b478e5055059a50.r2.dev/sponsors/HRBrain.png\" width=\"300px\"></a></p>\n<p>株式会社HRBrain 東京オフィス<br>\n〒108-0073 東京都港区三田3-5-19 住友不動産東京三田ガーデンタワー5F<br></p>\n<p>▼アクセス方法<br>\nJR 山手線/京浜東北線 「田町駅」三田口（西口） 徒歩5分<br>\n都営三田線・都営浅草線 「三田駅」A3出口 徒歩4分</p>\n<h2>注意事項</h2>\n<ul>\n<li>会場内で電源とWi-Fiを使用可能ですが、ベストエフォートでの提供となります。</li>\n<li>会場内と会場周辺は禁煙となっております。</li>\n<li>イベントの様子を撮影し、後日公開させていただく場合がございます。</li>\n<li>体調不良の方は無理せず参加をお控えください。</li>\n<li>参加できない場合は、速やかにキャンセル処理をお願いいたします。</li>\n<li>飲食目的や勧誘などイベントの目的外の方を見かけましたら、退出いただき、今後のイベントへの参加をご遠慮いただく場合がございます</li>\n<li>他のイベントにて目的外参加と思われる行為を常習的に行っている方の参加もご遠慮頂いております。</li>\n</ul>\n<div style=\"margin: 2em 0;\n    padding: 0.5em 1em;\n    border: solid 3px #FB2E01;\">\n<span style=\"font-size: 1.5em;\n    color: #FB2E01;\n    font-weight: bold;\">\n⚠️ 目的外（飲食目的）参加者への取り組み\n</span>\n<p style=\"padding: 0; margin: 0; font-weight: bold;\">\n飲食目的など、悪質な目的外参加者が増えているため、連日飲食可能な関連性の薄いイベントに参加しているなど、他イベントの参加状況により一定の基準で事前のご連絡はせず一度キャンセルさせていただきます。\nお手数ですが、運営によって参加がキャンセルされてしまった場合は、一度connpass上でイベントの運営にお問いを合わせいただいた上で、再登録をお願いします。\n再登録後にキャンセル待ちになってしまった場合は、当初の参加状況を考慮させていただきますのでご安心ください。\n安心して参加できる勉強会を運営するため、目的外参加者を減らしていきたいと考えておりますので、ご理解・ご協力のほどよろしくお願いします。\n</p><p>\n</p></div>\n\n<h2>画像について</h2>\n<ul>\n<li>GoのマスコットのGopherの原作者は<a href=\"http://reneefrench.blogspot.com/\" rel=\"nofollow\">Renee French</a>さんです</li>\n<li>Gopherのイラストは<a href=\"https://twitter.com/tenntenn\" rel=\"nofollow\">tenntenn</a>さんによるものです</li>\n</ul>\n<h2>行動指針</h2>\n<p>運営者、登壇者、その他すべての参加者は<a href=\"https://go.dev/conduct\" rel=\"nofollow\">Go Community Code of Conduct</a>に従う必要があります。</p>",
+      "url": "https://gocon.connpass.com/event/401603/",
+      "image_url": "https://media.connpass.com/thumbs/8a/0e/8a0ed2c831d5d1e86cd74c77091e8c08.png",
+      "hash_tag": "go127party",
+      "started_at": "2026-08-18T19:00:00+09:00",
+      "ended_at": "2026-08-18T21:30:00+09:00",
+      "published_at": "2026-07-27T09:01:41+09:00",
+      "limit": 55,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 312,
+        "subdomain": "gocon",
+        "title": "Gophers Japan",
+        "url": "https://gocon.connpass.com/"
+      },
+      "address": "東京都港区三田3-5-19 住友不動産東京三田ガーデンタワー5F",
+      "place": "株式会社HRBrain",
+      "lat": "35.644916500000",
+      "lon": "139.743343400000",
+      "owner_id": 6178,
+      "owner_nickname": "tenntenn",
+      "owner_display_name": "tenntenn",
+      "accepted": 44,
+      "waiting": 0,
+      "updated_at": "2026-08-17T14:37:41+09:00"
+    },
+    {
       "id": 399848,
       "title": "【増枠】【ABEJA × 川崎重工 × 松尾研究所】Physical AI 実践勉強会",
       "catch": "",
@@ -304,7 +304,7 @@
       "owner_id": 363958,
       "owner_nickname": "ktakita1011",
       "owner_display_name": "ktakita",
-      "accepted": 345,
+      "accepted": 351,
       "waiting": 33,
       "updated_at": "2026-08-17T11:36:22+09:00"
     }
