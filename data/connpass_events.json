@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-18T13:27:21.612521+09:00",
+  "fetched_at": "2026-08-18T14:21:09.961575+09:00",
   "date": "20260818",
   "count": 10,
   "events": [
@@ -211,7 +211,7 @@
       "owner_id": 6178,
       "owner_nickname": "tenntenn",
       "owner_display_name": "tenntenn",
-      "accepted": 45,
+      "accepted": 44,
       "waiting": 0,
       "updated_at": "2026-08-17T14:37:41+09:00"
     },
@@ -304,7 +304,7 @@
       "owner_id": 363958,
       "owner_nickname": "ktakita1011",
       "owner_display_name": "ktakita",
-      "accepted": 341,
+      "accepted": 345,
       "waiting": 33,
       "updated_at": "2026-08-17T11:36:22+09:00"
     }
