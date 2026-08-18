@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-18T11:11:00.367099+09:00",
+  "fetched_at": "2026-08-18T12:37:46.000082+09:00",
   "date": "20260818",
   "count": 10,
   "events": [
@@ -149,7 +149,7 @@
       "owner_id": 631051,
       "owner_nickname": "Shuji_Henmi",
       "owner_display_name": "ヘンミー",
-      "accepted": 4,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-08-05T00:01:36+09:00"
     },
@@ -273,7 +273,7 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 50,
+      "accepted": 52,
       "waiting": 0,
       "updated_at": "2026-08-18T09:28:58+09:00"
     },
@@ -304,7 +304,7 @@
       "owner_id": 363958,
       "owner_nickname": "ktakita1011",
       "owner_display_name": "ktakita",
-      "accepted": 331,
+      "accepted": 335,
       "waiting": 34,
       "updated_at": "2026-08-17T11:36:22+09:00"
     }
