@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-18T12:37:46.000082+09:00",
+  "fetched_at": "2026-08-18T13:27:21.612521+09:00",
   "date": "20260818",
   "count": 10,
   "events": [
@@ -121,37 +121,6 @@
       "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-07-28T07:01:35+09:00"
-    },
-    {
-      "id": 402848,
-      "title": "AI×IT勉強会",
-      "catch": "",
-      "description": "<h1>AI × IT × 音楽が渋谷に大集合！</h1>\n<p>最新のAI・ITトレンドをシェアしながら、音楽を聴いてリラックスした雰囲気で交流・勉強できる夜です。</p>\n<h2>イベントの魅力</h2>\n<hr>\n<h3>🔗 つながる</h3>\n<p>AI・IT・音楽が好きな仲間と出会える！</p>\n<h3>💡 学べる</h3>\n<p>最新のAI・ITトレンドや、音楽の新たな可能性をシェア！</p>\n<h3>🎵 楽しめる</h3>\n<p>音楽を聴きながら、リラックスした雰囲気で交流！</p>\n<p>エンジニア、クリエイター、AIが好きな方など、どなたでも大歓迎です！</p>\n<p><strong>音楽 × AI × ITで、未来をつなぐ夜にしよう！</strong></p>\n<h2>開催概要</h2>\n<hr>\n<p><strong>【日時】</strong>\n2026年8月18日（火）19:00〜22:00</p>\n<p><strong>【会場】</strong>\n渋谷XXI\n<a href=\"https://shibuya-xxi.jp/\" rel=\"nofollow\">https://shibuya-xxi.jp/</a></p>\n<p>東京都渋谷区宇田川町12-7\n渋谷エメラルドビル1F</p>\n<p><strong>【参加費】</strong>\n入場無料</p>\n<p>※ドリンクはキャッシュオン制となります。</p>",
-      "url": "https://xxi-music-it.connpass.com/event/402848/",
-      "image_url": "https://media.connpass.com/thumbs/11/4d/114df714ac57cb0a4940eacf30e501c5.png",
-      "hash_tag": "",
-      "started_at": "2026-08-18T19:00:00+09:00",
-      "ended_at": "2026-08-18T22:00:00+09:00",
-      "published_at": "2026-08-05T00:01:36+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17311,
-        "subdomain": "xxi-music-it",
-        "title": "音楽ｘITコミュニティ＠渋谷XXI",
-        "url": "https://xxi-music-it.connpass.com/"
-      },
-      "address": "東京都渋谷区宇田川町12-7 渋谷エメラルドビル 1F",
-      "place": "XXI",
-      "lat": "35.661560400000",
-      "lon": "139.697953100000",
-      "owner_id": 631051,
-      "owner_nickname": "Shuji_Henmi",
-      "owner_display_name": "ヘンミー",
-      "accepted": 2,
-      "waiting": 0,
-      "updated_at": "2026-08-05T00:01:36+09:00"
     },
     {
       "id": 397688,
@@ -278,6 +247,37 @@
       "updated_at": "2026-08-18T09:28:58+09:00"
     },
     {
+      "id": 402848,
+      "title": "AI×IT勉強会",
+      "catch": "",
+      "description": "<h1>AI × IT × 音楽が渋谷に大集合！</h1>\n<p>最新のAI・ITトレンドをシェアしながら、音楽を聴いてリラックスした雰囲気で交流・勉強できる夜です。</p>\n<h2>イベントの魅力</h2>\n<hr>\n<h3>🔗 つながる</h3>\n<p>AI・IT・音楽が好きな仲間と出会える！</p>\n<h3>💡 学べる</h3>\n<p>最新のAI・ITトレンドや、音楽の新たな可能性をシェア！</p>\n<h3>🎵 楽しめる</h3>\n<p>音楽を聴きながら、リラックスした雰囲気で交流！</p>\n<p>エンジニア、クリエイター、AIが好きな方など、どなたでも大歓迎です！</p>\n<p><strong>音楽 × AI × ITで、未来をつなぐ夜にしよう！</strong></p>\n<h2>開催概要</h2>\n<hr>\n<p><strong>【日時】</strong>\n2026年8月18日（火）19:00〜22:00</p>\n<p><strong>【会場】</strong>\n渋谷XXI\n<a href=\"https://shibuya-xxi.jp/\" rel=\"nofollow\">https://shibuya-xxi.jp/</a></p>\n<p>東京都渋谷区宇田川町12-7\n渋谷エメラルドビル1F</p>\n<p><strong>【参加費】</strong>\n入場無料</p>\n<p>※ドリンクはキャッシュオン制となります。</p>",
+      "url": "https://xxi-music-it.connpass.com/event/402848/",
+      "image_url": "https://media.connpass.com/thumbs/11/4d/114df714ac57cb0a4940eacf30e501c5.png",
+      "hash_tag": "",
+      "started_at": "2026-08-18T19:00:00+09:00",
+      "ended_at": "2026-08-18T22:00:00+09:00",
+      "published_at": "2026-08-05T00:01:36+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17311,
+        "subdomain": "xxi-music-it",
+        "title": "音楽ｘITコミュニティ＠渋谷XXI",
+        "url": "https://xxi-music-it.connpass.com/"
+      },
+      "address": "東京都渋谷区宇田川町12-7 渋谷エメラルドビル 1F",
+      "place": "XXI",
+      "lat": "35.661560400000",
+      "lon": "139.697953100000",
+      "owner_id": 631051,
+      "owner_nickname": "Shuji_Henmi",
+      "owner_display_name": "ヘンミー",
+      "accepted": 2,
+      "waiting": 0,
+      "updated_at": "2026-08-05T00:01:36+09:00"
+    },
+    {
       "id": 399848,
       "title": "【増枠】【ABEJA × 川崎重工 × 松尾研究所】Physical AI 実践勉強会",
       "catch": "",
@@ -304,8 +304,8 @@
       "owner_id": 363958,
       "owner_nickname": "ktakita1011",
       "owner_display_name": "ktakita",
-      "accepted": 335,
-      "waiting": 34,
+      "accepted": 341,
+      "waiting": 33,
       "updated_at": "2026-08-17T11:36:22+09:00"
     }
   ]
