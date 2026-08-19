@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-19T16:31:24.298234+09:00",
+  "fetched_at": "2026-08-19T17:26:44.322035+09:00",
   "date": "20260819",
   "count": 14,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 24917,
       "owner_nickname": "yancya",
       "owner_display_name": "yancya",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-08-05T15:12:52+09:00"
     },
@@ -154,7 +154,7 @@
       "owner_id": 638511,
       "owner_nickname": "33tech",
       "owner_display_name": "SansanTech",
-      "accepted": 68,
+      "accepted": 64,
       "waiting": 0,
       "updated_at": "2026-08-19T15:24:31+09:00"
     },
@@ -216,7 +216,7 @@
       "owner_id": 648275,
       "owner_nickname": "TimeeDev",
       "owner_display_name": "TimeeDev",
-      "accepted": 25,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-08-19T09:10:38+09:00"
     },
@@ -283,37 +283,6 @@
       "updated_at": "2026-07-14T12:09:01+09:00"
     },
     {
-      "id": 397623,
-      "title": "【オフライン】田町.ai #2 LT大会 当日参加申し込み歓迎！",
-      "catch": "",
-      "description": "<h2>内容</h2>\n<p><a href=\"https://tamachiai.connpass.com/\" rel=\"nofollow\">Tamachi.ai</a> は生成AIやその周辺技術・ノウハウに関する共有やエンジニアの交流を行う地域コミュニティです！\nオフラインで開催します！</p>\n<p>LTの内容は厳格に考えずに、アウトプットする自分の成長に繋がるから！くらいでもOKです！\n初心者・学生大歓迎！ワイワイやりましょう！</p>\n<p>「AIが少しでも絡んでいればOK」 です!</p>\n<ul>\n<li>業務でのAI導入して、成功した・失敗した話！</li>\n<li>AIでの圧倒的負債解消！</li>\n<li>最近触っている 生成AI / AIエージェント の話！</li>\n<li>AI時代の組織の悩み！</li>\n<li>鬼の Vibe Coding！</li>\n<li>ハーネスエンジニアリングやってみた話！</li>\n</ul>\n<p>などなど、幅広く募集します！</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>開催挨拶・会場説明等</td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>自己紹介</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>LT 1：生成AIを自社サービスに組み込む際の勘所・ハマりどころについて by 株式会社バックテック nyagato_00</td>\n</tr>\n<tr>\n<td>20:06</td>\n<td>LT 2</td>\n</tr>\n<tr>\n<td>20:12</td>\n<td>LT 3</td>\n</tr>\n<tr>\n<td>20:18</td>\n<td>LT 4</td>\n</tr>\n<tr>\n<td>20:24</td>\n<td>LT 5</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>歓談</td>\n</tr>\n</tbody>\n</table>\n<h2>会場について</h2>\n<p>東京都 港区 西新橋 3-23-5</p>\n<p>東京都港区西新橋三丁目23番5号\n都営地下鉄三田線 御成門駅 徒歩2分(A5出口)\n東京メトロ日比谷線 神谷町駅 徒歩10分(3出口)\n都営浅草線/都営大江戸線 大門駅 徒歩10分(A6出口)\nJR各線 新橋駅 徒歩12分(鳥森口)</p>\n<p><a href=\"https://www.google.com/maps/place/ANYZ/@35.6621322,139.7509485,192m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b1b4cad0425:0x20c61c8a06a303bc!8m2!3d35.6621311!4d139.7515922!16s%2Fg%2F11xml91bdj?entry=tts&amp;g_ep=EgoyMDI1MDcxNi4wIPu8ASoASAFQAw%3D%3D&amp;skid=7a982348-8bbf-410a-85f7-13dab1babc33\" rel=\"nofollow\">https://www.google.com/maps/place/ANYZ/@35.6621322,139.7509485,192m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b1b4cad0425:0x20c61c8a06a303bc!8m2!3d35.6621311!4d139.7515922!16s%2Fg%2F11xml91bdj?entry=tts&amp;g_ep=EgoyMDI1MDcxNi4wIPu8ASoASAFQAw%3D%3D&amp;skid=7a982348-8bbf-410a-85f7-13dab1babc33</a></p>\n<h2>入館方法</h2>\n<p>1階エントランスよりエレベーターにて2階までお越しください。\nエレベーターを出て右手の奥までお進みください。途中扉がありますが、こちらも開けていただき奥までお進みください。\nセミナールームBが会場になります。</p>\n<h2>アンチハラスメントポリシー</h2>\n<p>全ての参加者の皆様が安心して <a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> に参加していただけますよう、<a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> では<a href=\"https://2025.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigiアンチハラスメントポリシー</a>に準ずるCode of Conductを設けます。<a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> に参加される方は、上記ポリシーに同意していただいているものとみなします</p>",
-      "url": "https://tamachiai.connpass.com/event/397623/",
-      "image_url": "https://media.connpass.com/thumbs/0a/5a/0a5abfac4c57a46bbd5bb8a8d42111e2.png",
-      "hash_tag": "",
-      "started_at": "2026-08-19T19:00:00+09:00",
-      "ended_at": "2026-08-19T21:00:00+09:00",
-      "published_at": "2026-07-09T11:26:19+09:00",
-      "limit": 15,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17485,
-        "subdomain": "tamachiai",
-        "title": "田町.ai",
-        "url": "https://tamachiai.connpass.com/"
-      },
-      "address": "東京都 港区 西新橋 3-23-5",
-      "place": "anyz御成門",
-      "lat": "35.662131000000",
-      "lon": "139.751592200000",
-      "owner_id": 249638,
-      "owner_nickname": "nyagato_00",
-      "owner_display_name": "nyagato_00",
-      "accepted": 7,
-      "waiting": 0,
-      "updated_at": "2026-08-19T09:41:36+09:00"
-    },
-    {
       "id": 401177,
       "title": "第39回オープンエッジデバイス研究会",
       "catch": "",
@@ -345,10 +314,41 @@
       "updated_at": "2026-08-19T14:13:46+09:00"
     },
     {
+      "id": 397623,
+      "title": "【オフライン】田町.ai #2 LT大会 当日参加申し込み歓迎！",
+      "catch": "",
+      "description": "<h2>内容</h2>\n<p><a href=\"https://tamachiai.connpass.com/\" rel=\"nofollow\">Tamachi.ai</a> は生成AIやその周辺技術・ノウハウに関する共有やエンジニアの交流を行う地域コミュニティです！\nオフラインで開催します！</p>\n<p>LTの内容は厳格に考えずに、アウトプットする自分の成長に繋がるから！くらいでもOKです！\n初心者・学生大歓迎！ワイワイやりましょう！</p>\n<p>「AIが少しでも絡んでいればOK」 です!</p>\n<ul>\n<li>業務でのAI導入して、成功した・失敗した話！</li>\n<li>AIでの圧倒的負債解消！</li>\n<li>最近触っている 生成AI / AIエージェント の話！</li>\n<li>AI時代の組織の悩み！</li>\n<li>鬼の Vibe Coding！</li>\n<li>ハーネスエンジニアリングやってみた話！</li>\n</ul>\n<p>などなど、幅広く募集します！</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>開催挨拶・会場説明等</td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>自己紹介</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>LT 1：生成AIを自社サービスに組み込む際の勘所・ハマりどころについて by 株式会社バックテック nyagato_00</td>\n</tr>\n<tr>\n<td>20:06</td>\n<td>LT 2</td>\n</tr>\n<tr>\n<td>20:12</td>\n<td>LT 3</td>\n</tr>\n<tr>\n<td>20:18</td>\n<td>LT 4</td>\n</tr>\n<tr>\n<td>20:24</td>\n<td>LT 5</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>歓談</td>\n</tr>\n</tbody>\n</table>\n<h2>会場について</h2>\n<p>東京都 港区 西新橋 3-23-5</p>\n<p>東京都港区西新橋三丁目23番5号\n都営地下鉄三田線 御成門駅 徒歩2分(A5出口)\n東京メトロ日比谷線 神谷町駅 徒歩10分(3出口)\n都営浅草線/都営大江戸線 大門駅 徒歩10分(A6出口)\nJR各線 新橋駅 徒歩12分(鳥森口)</p>\n<p><a href=\"https://www.google.com/maps/place/ANYZ/@35.6621322,139.7509485,192m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b1b4cad0425:0x20c61c8a06a303bc!8m2!3d35.6621311!4d139.7515922!16s%2Fg%2F11xml91bdj?entry=tts&amp;g_ep=EgoyMDI1MDcxNi4wIPu8ASoASAFQAw%3D%3D&amp;skid=7a982348-8bbf-410a-85f7-13dab1babc33\" rel=\"nofollow\">https://www.google.com/maps/place/ANYZ/@35.6621322,139.7509485,192m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b1b4cad0425:0x20c61c8a06a303bc!8m2!3d35.6621311!4d139.7515922!16s%2Fg%2F11xml91bdj?entry=tts&amp;g_ep=EgoyMDI1MDcxNi4wIPu8ASoASAFQAw%3D%3D&amp;skid=7a982348-8bbf-410a-85f7-13dab1babc33</a></p>\n<h2>入館方法</h2>\n<p>1階エントランスよりエレベーターにて2階までお越しください。\nエレベーターを出て右手の奥までお進みください。途中扉がありますが、こちらも開けていただき奥までお進みください。\nセミナールームBが会場になります。</p>\n<h2>アンチハラスメントポリシー</h2>\n<p>全ての参加者の皆様が安心して <a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> に参加していただけますよう、<a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> では<a href=\"https://2025.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigiアンチハラスメントポリシー</a>に準ずるCode of Conductを設けます。<a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> に参加される方は、上記ポリシーに同意していただいているものとみなします</p>",
+      "url": "https://tamachiai.connpass.com/event/397623/",
+      "image_url": "https://media.connpass.com/thumbs/0a/5a/0a5abfac4c57a46bbd5bb8a8d42111e2.png",
+      "hash_tag": "",
+      "started_at": "2026-08-19T19:00:00+09:00",
+      "ended_at": "2026-08-19T21:00:00+09:00",
+      "published_at": "2026-07-09T11:26:19+09:00",
+      "limit": 15,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17485,
+        "subdomain": "tamachiai",
+        "title": "田町.ai",
+        "url": "https://tamachiai.connpass.com/"
+      },
+      "address": "東京都 港区 西新橋 3-23-5",
+      "place": "anyz御成門",
+      "lat": "35.662131000000",
+      "lon": "139.751592200000",
+      "owner_id": 249638,
+      "owner_nickname": "nyagato_00",
+      "owner_display_name": "nyagato_00",
+      "accepted": 7,
+      "waiting": 0,
+      "updated_at": "2026-08-19T09:41:36+09:00"
+    },
+    {
       "id": 401663,
       "title": "（※開催日変更）Claude Code Fable 5 meetup！ #1",
       "catch": "〜Fableの性能を最大限活かす使い方・しくじりを語り合おう！〜",
-      "description": "<h1><span style=\"font-size: 120%; color: red;\"> <strong>日程変更のご連絡</strong></span></h1>\n<p><span style=\"font-size: 110%; color: red;\"> <strong>本イベントは運営準備の都合で日程変更となりました。\n変更前：8/4（火）→変更後：8/19（水）</strong></span></p>\n<p>イベントを楽しみにしてくださっていた皆さまには、ご迷惑をおかけすることとなり大変申し訳ございません。\n何卒ご理解のほどよろしくお願いいたします。</p>\n<h1>✍️概要</h1>\n<p>6月にAnthropicが公開した最上位モデル「Claude Fable 5」。\nこれまで限定提供だったMythos級の能力を一般向けに開放したモデルで、数日にわたる自律的なタスク遂行や大規模マイグレーションまでこなすモデルとして提供され話題を呼んでいます。</p>\n<p>一方で、その自律性の高さゆえに「任せ方」次第による成果のブレを感じられている方も多いのではないでしょうか。\nClaude Codeで実際に使い込むほど、こんな悩みに直面していないでしょうか。</p>\n<ul>\n<li>想定以上に自律的に/多数のエージェントを動かし、指示していない範囲まで踏み込んでしまう</li>\n<li>長時間の自走セッション/多数のエージェント並列でトークン消費・コストが膨らむ</li>\n<li>従来モデル向けのrules・Skills・ハーネスが、Fable 5では最適とは限らない</li>\n</ul>\n<p>このmeet upでは、Claude Code × Fable 5を実際に使い込んで見えてきた成功事例も、しくじり話も、一人5分のショートトークで持ち寄って語り尽くします。</p>\n<p>明日から自分の現場で活かせるFable活用のヒントを、ぜひ持ち帰ってください。お待ちしています！</p>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (5分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:07 - 19:12</td>\n<td style=\"text-align: left;\">GPTが登山道を絞り、Fableで登り切る。エージェントの組み合わせで挑むLEAN形式化</td>\n<td style=\"text-align: left;\">中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:14 - 19:24</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:26 - 19:31</td>\n<td style=\"text-align: left;\">まずはプロンプトガイドを読もう、話はそれからだ</td>\n<td style=\"text-align: left;\">あきらきさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:33 - 19:38</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">MOSH株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40 - 20:05</td>\n<td style=\"text-align: left;\">Q&amp;A（25分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:07 - 20:15</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (8分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LTは1人5分（本編のみ）です<br>\n※各セッション間には、画面投影・登壇者切り替えのために2分ずつ転換時間を確保しています<br>\n※登壇順は変更となる場合があります<br></p>\n<blockquote>\n<p>※20:30〜21:30 懇親会<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります</p>\n</blockquote>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<hr>\n<p><img src=\"https://pub-6c0fa25e87514278832a60f88b3d183c.r2.dev/connpass/MOSH.png\" width=\"300\"></p>\n<p>MOSH株式会社について<br>\n私たちは「情熱がめぐる経済をつくる」というミッションを掲げ、クリエイター向けの事業拡大プラットフォーム「<a href=\"https://mosh.jp/\" rel=\"nofollow\">MOSH</a>」を開発・運営しています。<br>サイト作成、予約、決済、顧客管理、コンテンツ管理、海外対応など、幅広い機能を提供し、クリエイターが事業を成長させる中で直面するあらゆる課題に取り組んでいます。 創業時からのコアバリューである「Start With One」を大切にし、常に顧客の価値を最優先に考えたプロダクトづくりに取り組んできました。<br>\n2025年2月にシリーズC資金調達を実施。事業の成長をさらに加速させ、グローバルで利用されるプロダクトを目指して進化を続けていきます。</p>\n<ul>\n<li>テックブログ：<a href=\"https://zenn.dev/p/moshjp\" rel=\"nofollow\">MOSH テックブログ</a></li>\n<li>Podcast：<a href=\"https://open.spotify.com/playlist/7c9ftQuIDaL5p1ObVZ0Ku7?go=1&amp;sp_cid=9405354811d76411bc9fa39e59d4e22a&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=9ef0f0a4828f4eb4\" rel=\"nofollow\">MOSH Tech Radio</a></li>\n<li>公式X：<a href=\"https://x.com/MOSHinc_jp\" rel=\"nofollow\">MOSH株式会社</a></li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/?utm_source=ai-plus&amp;utm_medium=event&amp;utm_campaign=connpass_FindyAI+サービス紹介&amp;utm_content=&amp;utm_term=\" rel=\"nofollow\">AI活用の成果最大化とコスト最適化を両立する。「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
+      "description": "<h1><span style=\"font-size: 120%; color: red;\"> <strong>日程変更のご連絡</strong></span></h1>\n<p><span style=\"font-size: 110%; color: red;\"> <strong>本イベントは運営準備の都合で日程変更となりました。\n変更前：8/4（火）→変更後：8/19（水）</strong></span></p>\n<p>イベントを楽しみにしてくださっていた皆さまには、ご迷惑をおかけすることとなり大変申し訳ございません。\n何卒ご理解のほどよろしくお願いいたします。</p>\n<h1>✍️概要</h1>\n<p>6月にAnthropicが公開した最上位モデル「Claude Fable 5」。\nこれまで限定提供だったMythos級の能力を一般向けに開放したモデルで、数日にわたる自律的なタスク遂行や大規模マイグレーションまでこなすモデルとして提供され話題を呼んでいます。</p>\n<p>一方で、その自律性の高さゆえに「任せ方」次第による成果のブレを感じられている方も多いのではないでしょうか。\nClaude Codeで実際に使い込むほど、こんな悩みに直面していないでしょうか。</p>\n<ul>\n<li>想定以上に自律的に/多数のエージェントを動かし、指示していない範囲まで踏み込んでしまう</li>\n<li>長時間の自走セッション/多数のエージェント並列でトークン消費・コストが膨らむ</li>\n<li>従来モデル向けのrules・Skills・ハーネスが、Fable 5では最適とは限らない</li>\n</ul>\n<p>このmeet upでは、Claude Code × Fable 5を実際に使い込んで見えてきた成功事例も、しくじり話も、一人5分のショートトークで持ち寄って語り尽くします。</p>\n<p>明日から自分の現場で活かせるFable活用のヒントを、ぜひ持ち帰ってください。お待ちしています！</p>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (5分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:07 - 19:12</td>\n<td style=\"text-align: left;\">GPTが登山道を絞り、Fableで登り切る。エージェントの組み合わせで挑むLEAN形式化</td>\n<td style=\"text-align: left;\">中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:14 - 19:24</td>\n<td style=\"text-align: left;\">まずはプロンプトガイドを読もう、話はそれからだ</td>\n<td style=\"text-align: left;\">あきらきさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:26 - 19:31</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:33 - 19:38</td>\n<td style=\"text-align: left;\">MOSHエンジニア10名に聞いた！実務におけるFable 5の利用状況</td>\n<td style=\"text-align: left;\">山本 一将さん（MOSH株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40 - 20:05</td>\n<td style=\"text-align: left;\">Q&amp;A（25分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:07 - 20:15</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (8分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LTは1人5分（本編のみ）です<br>\n※各セッション間には、画面投影・登壇者切り替えのために2分ずつ転換時間を確保しています<br>\n※登壇順は変更となる場合があります<br></p>\n<blockquote>\n<p>※20:30〜21:30 懇親会<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります</p>\n</blockquote>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<hr>\n<p><img src=\"https://pub-6c0fa25e87514278832a60f88b3d183c.r2.dev/connpass/MOSH.png\" width=\"300\"></p>\n<p>MOSH株式会社について<br>\n私たちは「情熱がめぐる経済をつくる」というミッションを掲げ、クリエイター向けの事業拡大プラットフォーム「<a href=\"https://mosh.jp/\" rel=\"nofollow\">MOSH</a>」を開発・運営しています。<br>サイト作成、予約、決済、顧客管理、コンテンツ管理、海外対応など、幅広い機能を提供し、クリエイターが事業を成長させる中で直面するあらゆる課題に取り組んでいます。 創業時からのコアバリューである「Start With One」を大切にし、常に顧客の価値を最優先に考えたプロダクトづくりに取り組んできました。<br>\n2025年2月にシリーズC資金調達を実施。事業の成長をさらに加速させ、グローバルで利用されるプロダクトを目指して進化を続けていきます。</p>\n<ul>\n<li>テックブログ：<a href=\"https://zenn.dev/p/moshjp\" rel=\"nofollow\">MOSH テックブログ</a></li>\n<li>Podcast：<a href=\"https://open.spotify.com/playlist/7c9ftQuIDaL5p1ObVZ0Ku7?go=1&amp;sp_cid=9405354811d76411bc9fa39e59d4e22a&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=9ef0f0a4828f4eb4\" rel=\"nofollow\">MOSH Tech Radio</a></li>\n<li>公式X：<a href=\"https://x.com/MOSHinc_jp\" rel=\"nofollow\">MOSH株式会社</a></li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/?utm_source=ai-plus&amp;utm_medium=event&amp;utm_campaign=connpass_FindyAI+サービス紹介&amp;utm_content=&amp;utm_term=\" rel=\"nofollow\">AI活用の成果最大化とコスト最適化を両立する。「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
       "url": "https://findy-aiplus.connpass.com/event/401663/",
       "image_url": "https://media.connpass.com/thumbs/f2/84/f284395394a59b81539e3bebcc329466.png",
       "hash_tag": "fablemeetup",
@@ -371,9 +371,9 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 22,
+      "accepted": 21,
       "waiting": 0,
-      "updated_at": "2026-08-19T12:16:52+09:00"
+      "updated_at": "2026-08-19T17:13:20+09:00"
     },
     {
       "id": 400047,
@@ -402,7 +402,7 @@
       "owner_id": 929443,
       "owner_nickname": "GDEPsolutions",
       "owner_display_name": "GPU UNITE 事務局",
-      "accepted": 82,
+      "accepted": 81,
       "waiting": 0,
       "updated_at": "2026-08-18T11:09:03+09:00"
     },
@@ -433,7 +433,7 @@
       "owner_id": 629050,
       "owner_nickname": "kano_tty",
       "owner_display_name": "かのってぃ",
-      "accepted": 20,
+      "accepted": 21,
       "waiting": 0,
       "updated_at": "2026-08-05T21:13:50+09:00"
     }
