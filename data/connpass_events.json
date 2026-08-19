@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-20T05:17:56.066518+09:00",
+  "fetched_at": "2026-08-20T06:18:05.731795+09:00",
   "date": "20260820",
-  "count": 19,
+  "count": 20,
   "events": [
     {
       "id": 400310,
@@ -340,6 +340,37 @@
       "updated_at": "2026-08-06T18:03:20+09:00"
     },
     {
+      "id": 402230,
+      "title": "【増枠！】AI自走環境整備・運用スペシャル #5 〜ハーネス・ループ・グラフエンジニアリング〜",
+      "catch": "開発組織はどこまでAI自走度を品質を保って促進できるのか？実践知見を語り尽くす！",
+      "description": "<h2><b>AI自走環境整備で組織のAI駆動開発を推進！<br>AGENTS&zwnj;.md/Skills/SubAgentsなどのAI自走環境整備・運用の実践テクニックを語り尽くす！</b></h2>\n<p>本イベントは、<br>\nこれまでIssue自動生成 → タスク分解 → 複数エージェントによるPR作成から、レビュー周りまで多岐にわたるAI自走度を高める実践知見をご登壇いただきました！</p>\n<p>今回は、新たに界隈を賑わしているループ・グラフエンジニアリングを、ハーネス整備と合わせてどのように推進しているのか、以下のようなテーマで登壇いただきます！<br></p>\n<ul>\n<li>AIが安全に走り続けるためのハーネス設計 ―― AGENTS&zwnj;.md/Skills/評価基準・テスト・CIをどう整備し、「任せて良い状態」を環境側で担保するか</li>\n<li>Issue自律起票とセルフ検証ループ ―― AIによるIssue起票の仕組みと、起票品質を担保する評価→修正の自己検証ループの回し方</li>\n<li>依存グラフに基づくタスクオーケストレーション設計 ―― 1つのIssueをサブタスクへ自動分解し、依存関係を踏まえて複数エージェントに割り振る設計</li>\n<li>品質を落とさず自走度を上げる\"人間の介入境界\" ―― Issue起票からPR作成・レビューまで自走させたとき、どの品質ゲートに人間を残すか／レビュー速度をどう追いつかせるか</li>\n</ul>\n<p>ぜひご参加ください！</p>\n<p></p>\n<h3>AI 駆動開発勉強会とは？</h3>\n<hr>\n<blockquote>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！<br>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！\n(<a href=\"https://aid.connpass.com/\" rel=\"nofollow\">https://aid.connpass.com/</a> より)</p>\n</blockquote>\n<h2><font color=\"red\">LT枠応募の方は抽選落ちの場合も現地参加可能です。<br>入館申請は不要です。当日は直接会場へお越しください。</font></h2>\n<hr>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">iOS開発に「動作確認」という概念を作った ― AIに任せる前に、自分が説明できるか</td>\n<td style=\"text-align: left;\">谷口恭一さん（エブリー株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">AIの判断にくせをつける — 複数プロジェクトを自走させる長期記憶</td>\n<td style=\"text-align: left;\">Eisukeさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:28</td>\n<td style=\"text-align: left;\">Microsoft Agent Frameworkでのハーネス・ループエンジニアリング</td>\n<td style=\"text-align: left;\">motoJinC25さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:35</td>\n<td style=\"text-align: left;\">『失敗を設計する: AIエージェントを長時間自走させるための航海術』</td>\n<td style=\"text-align: left;\">中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:37 - 19:42</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:44 - 19:56</td>\n<td style=\"text-align: left;\">休憩（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:58 - 20:03</td>\n<td style=\"text-align: left;\">AIエージェントにQAをやらせて分かったこと</td>\n<td style=\"text-align: left;\">浅野 耀介さん（Sansan株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05 - 20:10</td>\n<td style=\"text-align: left;\">(仮) AI駆動プロジェクトマネジメント実践</td>\n<td style=\"text-align: left;\">mackeeeさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:12 - 20:22</td>\n<td style=\"text-align: left;\">オブジェクト思考プログラミングとAI環境整備</td>\n<td style=\"text-align: left;\">丸尾さん（燈株式会社 DX Solution事業本部 VPoE）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:24 - 20:29</td>\n<td style=\"text-align: left;\">AI のコードレビュー負荷を減らせるかは 環境整備 と仕組みで決まる ― 重要なのは【レビュー観点を洗い出し、AI とともに負荷を減らす】こと ―</td>\n<td style=\"text-align: left;\">スナガクさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:31 - 20:51</td>\n<td style=\"text-align: left;\">Q&amp;A（20分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:53 - 21:00</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LT5分＋画面切り替え等を考慮し1人7分としています。</p>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング）\n<font color=\"red\"><br>※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h3>スポンサー</h3>\n<p>本イベントでは、ご協賛いただける企業・団体様ならびに、運営をサポートしていただける個人の方を募集しております。<br>\nご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。</p>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>",
+      "url": "https://aid.connpass.com/event/402230/",
+      "image_url": "https://media.connpass.com/thumbs/02/91/0291a8a50110f2763c3131ddf36146d5.png",
+      "hash_tag": "AI自走環境",
+      "started_at": "2026-08-20T19:00:00+09:00",
+      "ended_at": "2026-08-20T21:00:00+09:00",
+      "published_at": "2026-07-31T08:30:55+09:00",
+      "limit": 893,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14543,
+        "subdomain": "aid",
+        "title": "AI駆動開発(AI-Driven Development)",
+        "url": "https://aid.connpass.com/"
+      },
+      "address": "〒101-0062 東京都千代田区神田駿河台4丁目6 御茶ノ水ソラシティ 21階",
+      "place": "燈株式会社",
+      "lat": "35.698783900000",
+      "lon": "139.766785300000",
+      "owner_id": 1030071,
+      "owner_nickname": "daigos432_findy",
+      "owner_display_name": "daigos432_findy",
+      "accepted": 880,
+      "waiting": 6,
+      "updated_at": "2026-08-19T11:25:51+09:00"
+    },
+    {
       "id": 397239,
       "title": "エンジニア英語キャリア Meetup #3",
       "catch": "〜英語キャリア はじめの一歩、次の一歩〜",
@@ -369,37 +400,6 @@
       "accepted": 95,
       "waiting": 0,
       "updated_at": "2026-08-13T18:47:40+09:00"
-    },
-    {
-      "id": 402230,
-      "title": "【増枠！】AI自走環境整備・運用スペシャル #5 〜ハーネス・ループ・グラフエンジニアリング〜",
-      "catch": "開発組織はどこまでAI自走度を品質を保って促進できるのか？実践知見を語り尽くす！",
-      "description": "<h2><b>AI自走環境整備で組織のAI駆動開発を推進！<br>AGENTS&zwnj;.md/Skills/SubAgentsなどのAI自走環境整備・運用の実践テクニックを語り尽くす！</b></h2>\n<p>本イベントは、<br>\nこれまでIssue自動生成 → タスク分解 → 複数エージェントによるPR作成から、レビュー周りまで多岐にわたるAI自走度を高める実践知見をご登壇いただきました！</p>\n<p>今回は、新たに界隈を賑わしているループ・グラフエンジニアリングを、ハーネス整備と合わせてどのように推進しているのか、以下のようなテーマで登壇いただきます！<br></p>\n<ul>\n<li>AIが安全に走り続けるためのハーネス設計 ―― AGENTS&zwnj;.md/Skills/評価基準・テスト・CIをどう整備し、「任せて良い状態」を環境側で担保するか</li>\n<li>Issue自律起票とセルフ検証ループ ―― AIによるIssue起票の仕組みと、起票品質を担保する評価→修正の自己検証ループの回し方</li>\n<li>依存グラフに基づくタスクオーケストレーション設計 ―― 1つのIssueをサブタスクへ自動分解し、依存関係を踏まえて複数エージェントに割り振る設計</li>\n<li>品質を落とさず自走度を上げる\"人間の介入境界\" ―― Issue起票からPR作成・レビューまで自走させたとき、どの品質ゲートに人間を残すか／レビュー速度をどう追いつかせるか</li>\n</ul>\n<p>ぜひご参加ください！</p>\n<p></p>\n<h3>AI 駆動開発勉強会とは？</h3>\n<hr>\n<blockquote>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！<br>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！\n(<a href=\"https://aid.connpass.com/\" rel=\"nofollow\">https://aid.connpass.com/</a> より)</p>\n</blockquote>\n<h2><font color=\"red\">LT枠応募の方は抽選落ちの場合も現地参加可能です。<br>入館申請は不要です。当日は直接会場へお越しください。</font></h2>\n<hr>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">iOS開発に「動作確認」という概念を作った ― AIに任せる前に、自分が説明できるか</td>\n<td style=\"text-align: left;\">谷口恭一さん（エブリー株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">AIの判断にくせをつける — 複数プロジェクトを自走させる長期記憶</td>\n<td style=\"text-align: left;\">Eisukeさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:28</td>\n<td style=\"text-align: left;\">Microsoft Agent Frameworkでのハーネス・ループエンジニアリング</td>\n<td style=\"text-align: left;\">motoJinC25さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:35</td>\n<td style=\"text-align: left;\">『失敗を設計する: AIエージェントを長時間自走させるための航海術』</td>\n<td style=\"text-align: left;\">中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:37 - 19:42</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:44 - 19:56</td>\n<td style=\"text-align: left;\">休憩（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:58 - 20:03</td>\n<td style=\"text-align: left;\">AIエージェントにQAをやらせて分かったこと</td>\n<td style=\"text-align: left;\">浅野 耀介さん（Sansan株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05 - 20:10</td>\n<td style=\"text-align: left;\">(仮) AI駆動プロジェクトマネジメント実践</td>\n<td style=\"text-align: left;\">mackeeeさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:12 - 20:22</td>\n<td style=\"text-align: left;\">オブジェクト思考プログラミングとAI環境整備</td>\n<td style=\"text-align: left;\">丸尾さん（燈株式会社 DX Solution事業本部 VPoE）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:24 - 20:29</td>\n<td style=\"text-align: left;\">AI のコードレビュー負荷を減らせるかは 環境整備 と仕組みで決まる ― 重要なのは【レビュー観点を洗い出し、AI とともに負荷を減らす】こと ―</td>\n<td style=\"text-align: left;\">スナガクさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:31 - 20:51</td>\n<td style=\"text-align: left;\">Q&amp;A（20分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:53 - 21:00</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LT5分＋画面切り替え等を考慮し1人7分としています。</p>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング）\n<font color=\"red\"><br>※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h3>スポンサー</h3>\n<p>本イベントでは、ご協賛いただける企業・団体様ならびに、運営をサポートしていただける個人の方を募集しております。<br>\nご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。</p>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>",
-      "url": "https://aid.connpass.com/event/402230/",
-      "image_url": "https://media.connpass.com/thumbs/02/91/0291a8a50110f2763c3131ddf36146d5.png",
-      "hash_tag": "AI自走環境",
-      "started_at": "2026-08-20T19:00:00+09:00",
-      "ended_at": "2026-08-20T21:00:00+09:00",
-      "published_at": "2026-07-31T08:30:55+09:00",
-      "limit": 893,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14543,
-        "subdomain": "aid",
-        "title": "AI駆動開発(AI-Driven Development)",
-        "url": "https://aid.connpass.com/"
-      },
-      "address": "〒101-0062 東京都千代田区神田駿河台4丁目6 御茶ノ水ソラシティ 21階",
-      "place": "燈株式会社",
-      "lat": "35.698783900000",
-      "lon": "139.766785300000",
-      "owner_id": 1030071,
-      "owner_nickname": "daigos432_findy",
-      "owner_display_name": "daigos432_findy",
-      "accepted": 879,
-      "waiting": 6,
-      "updated_at": "2026-08-19T11:25:51+09:00"
     },
     {
       "id": 396886,
@@ -586,6 +586,37 @@
       "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-08-13T15:04:52+09:00"
+    },
+    {
+      "id": 401345,
+      "title": "Google Antigravity（中心の）もくもく会 in 茅ヶ崎",
+      "catch": "",
+      "description": "<h2>概要</h2>\n<h3>🚀 Google Antigravity もくもく会：AIエージェントで作業を「無重力」に</h3>\n<p>最近話題の <strong>Google Antigravity</strong>、皆さんは使いこなせていますか？\nAI Agentによる爆速の開発体験から、MCPサーバー連携による拡張性まで、その可能性はアイデア次第で無限に広がります。</p>\n<p>「一人で設定するのは大変だけど、誰かと一緒なら新しい発見があるかも」\nそんな想いで、みんなで手を動かしながら情報交換する場を作りました！</p>\n<p>別途開催していた「FGStudyもくもく会 feat.なんでも in 茅ヶ崎」と統合してみました。<br>\nAntigravityを使わない方でもお気軽に参加いただければと思います。</p>\n<h3>💡 こんなことをやります</h3>\n<ul>\n<li><strong>もくもく作業：</strong> Antigravityを使って(使わなくても）自分のプロジェクトを進める。</li>\n<li><strong>知見シェア：</strong> MCPサーバーの導入、<code>Google Workspace CLI</code> との連携など、一歩踏み込んだ活用術の共有。</li>\n<li><strong>雑談・相談：</strong> 「Workspaceアカウントでどう使ってる？」「有料プランの元は取れてる？」など、ざっくばらんな意見交換。</li>\n</ul>\n<p>基本的に、もくもく会なので、主催者側で用意しているものはありませんが、もくもくする時間よりも参加者同士で話をする時間を多めにしたいと考えています。</p>\n<h3>🛠️ 技術トピック（例）</h3>\n<ul>\n<li><strong>AI Agentとしての活用：</strong> IDEとの連携で開発効率をどこまで上げられるか？</li>\n<li><strong>エコシステムの拡張：</strong> MCP（Model Context Protocol）サーバー導入による外部データ連携。</li>\n<li><strong>CLI連携：</strong> <code>Google Workspace CLI (</code>gws<code>)</code> 等を駆使した高度な自動化設定。</li>\n<li><strong>Workspace活用：</strong> 仕事のワークフローにどう組み込むか？</li>\n</ul>\n<h3>👤 主催者（ぬきぽん）より</h3>\n<p>最近Google WorkspaceアカウントでもAntigravityが利用可能になり、僕自身もガッツリ使い倒し始めました。一人で黙々とやるのも良いですが、皆さんのユニークなアイデアを聞くことで、より面白い使い方に気づけるといいなと思っています！</p>\n<h2>📆 タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">オープニング・自己紹介・今日やること</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45</td>\n<td style=\"text-align: left;\">やったこと共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>FGStudyについて</h2>\n<p>茅ヶ崎を中心に活動している、フリーグーフォ合同会社 （FreeGufo G.K.）が運営するWeb系の勉強会です。</p>\n<h2>会場について</h2>\n<p>会場は、イベント等が入っていなければコワーキングスペースとして利用が可能です。</p>\n<p>店舗前に、自転車、バイクの駐輪が可能です。</p>\n<p>駐車場はありません。近くのコインパーキングをご利用下さい。</p>\n<h2>宣伝</h2>\n<p>FreeGufoは、Google Workspace のリセールも行っています。1アカウントからでも対応致しますので、仕事でGoogle Workspaceを使いたい、Antigravity を安全に使いたい。などご要望がありましたら、ぜひご相談下さい。</p>",
+      "url": "https://fgstudy.connpass.com/event/401345/",
+      "image_url": "https://media.connpass.com/thumbs/3a/80/3a8012e2f91d1bcceea08f003168c51c.png",
+      "hash_tag": "FGStudy",
+      "started_at": "2026-08-20T19:30:00+09:00",
+      "ended_at": "2026-08-20T21:00:00+09:00",
+      "published_at": "2026-07-22T03:10:03+09:00",
+      "limit": 5,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 4422,
+        "subdomain": "fgstudy",
+        "title": "FGStudy",
+        "url": "https://fgstudy.connpass.com/"
+      },
+      "address": "神奈川県茅ヶ崎市十間坂 1-4-2",
+      "place": "FG-Space",
+      "lat": "35.330723600000",
+      "lon": "139.401633300000",
+      "owner_id": 8108,
+      "owner_nickname": "nuki_pon",
+      "owner_display_name": "ぬきぽん",
+      "accepted": 3,
+      "waiting": 0,
+      "updated_at": "2026-07-22T03:11:11+09:00"
     }
   ]
 }
