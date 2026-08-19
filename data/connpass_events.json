@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-19T20:17:48.313184+09:00",
+  "fetched_at": "2026-08-19T21:29:07.421641+09:00",
   "date": "20260819",
   "count": 14,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-08-05T15:12:52+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 11169,
         "subdomain": "senju",
@@ -140,7 +140,7 @@
       "published_at": "2026-08-05T18:22:33+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12183,
         "subdomain": "timeedev",
@@ -233,7 +233,7 @@
       "published_at": "2026-07-15T20:59:16+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16283,
         "subdomain": "picopicoruby",
@@ -326,7 +326,7 @@
       "published_at": "2026-07-09T11:26:19+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17485,
         "subdomain": "tamachiai",
@@ -388,7 +388,7 @@
       "published_at": "2026-07-09T12:16:44+09:00",
       "limit": 88,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15936,
         "subdomain": "gpu-unite",
