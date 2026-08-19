@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-19T21:29:07.421641+09:00",
+  "fetched_at": "2026-08-19T22:37:32.255810+09:00",
   "date": "20260819",
   "count": 14,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-31T20:49:54+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16888,
         "subdomain": "se-koryu-kai",
@@ -78,7 +78,7 @@
       "published_at": "2026-08-14T12:14:12+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14352,
         "subdomain": "streamline",
@@ -109,7 +109,7 @@
       "published_at": "2026-07-23T13:23:04+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3084,
         "subdomain": "cyberagent",
@@ -171,7 +171,7 @@
       "published_at": "2026-07-14T10:01:14+09:00",
       "limit": 70,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3328,
         "subdomain": "sansan",
@@ -202,7 +202,7 @@
       "published_at": "2026-07-23T10:53:21+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13733,
         "subdomain": "phpstudy",
@@ -295,7 +295,7 @@
       "published_at": "2026-07-20T12:06:35+09:00",
       "limit": 48,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13535,
         "subdomain": "openedgedevice",
@@ -357,7 +357,7 @@
       "published_at": "2026-07-14T12:09:01+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 6903,
         "subdomain": "dena",
