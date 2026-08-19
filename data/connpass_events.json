@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-19T14:21:30.655922+09:00",
+  "fetched_at": "2026-08-19T15:29:47.710341+09:00",
   "date": "20260819",
   "count": 14,
   "events": [
@@ -66,6 +66,37 @@
       "updated_at": "2026-08-05T15:12:52+09:00"
     },
     {
+      "id": 401438,
+      "title": "第190回 PHP勉強会＠東京",
+      "catch": "",
+      "description": "<h2>PHP勉強会について</h2>\n<p>PHP勉強会@東京を 08/19(水) に開催します。<br>\nPHP勉強会@東京はPHPで開発を行うエンジニアを対象とした勉強会です。<br>\n勉強会開始時に乾杯し、LT形式での発表を行います。<br>\n飲食をしながら楽しむ形式の勉強会です！<br></p>\n<h2>入館方法</h2>\n<p>ビルに入館して直接16階にお越しください。<br></p>\n<p>20時以降は正面玄関が施錠されます。<br>\nその時間以降に到着された方は、下記リンクからXに投稿してお知らせください。<br>\nお迎えに行きます。<br></p>\n<p><a href=\"https://twitter.com/intent/tweet?text=%40phpstudy%20%20%E4%BC%9A%E5%A0%B4%E3%81%AB%E3%81%A4%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F%E3%80%81%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%8A%E9%A1%98%E3%81%84%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%23phpstudy\" rel=\"nofollow\">お迎えをお願いする投稿はこちら</a></p>\n<h2>開催内容</h2>\n<p>日時: 2026年08月19日(水) 19:30～22:00<br></p>\n<p>会場: 東京都新宿区北新宿2-21-1 新宿フロントタワー16階 株式会社キュービック<br></p>\n<p>費用: 1,000円<br>\n現金またはPayPayでお支払いください。<br>\n会場での飲食費に充てられます。<br>\n※お釣りの準備は十分ではありません、できるだけお釣りの要らないようご協力ください。</p>\n<p>発表者・発表内容によって時間の調整が発生する可能性があります。<br>\nご了承ください。</p>\n<h2>オンライン配信</h2>\n<p>申し込み枠はありませんが、YouTube Liveでの配信を行う予定です。</p>\n<p>本イベントはオフライン参加がメインのため、オンライン配信はベストエフォートとなりますのでご了承ください。</p>\n<p>配信用URL: TBD</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>Time</th>\n<th>title</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場・名刺交換</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>オープニング・自己紹介タイム</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>セッション1部開始</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>懇親会前半</td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>セッション2部開始</td>\n</tr>\n<tr>\n<td>21:40</td>\n<td>懇親会後半</td>\n</tr>\n<tr>\n<td>22:00</td>\n<td>終了</td>\n</tr>\n</tbody>\n</table>\n<h2>メイン発表枠 2 枠（20分）</h2>\n<ul>\n<li>「やるのか」<a href=\"https://x.com/chatii\" rel=\"nofollow\">@chatii</a>ちゃちいさん</li>\n<li>「phpで何か作ってみた話をします（今のところtarballの予定）」<a href=\"https://x.com/higaki_program\" rel=\"nofollow\">@higaki_program</a> higakiさん</li>\n</ul>\n<h2>LT枠 3 枠（5分）</h2>\n<ul>\n<li>「会場スポンサー宣伝」<a href=\"https://x.com/dero1to\" rel=\"nofollow\">@dero1to</a> デロさん</li>\n<li>TBD <a href=\"https://x.com/o0h_\" rel=\"nofollow\">@o0h_</a> hideki kinjyoさん</li>\n<li>「PHPの型チェッカーっていくつあるの？」<a href=\"https://x.com/tadsan\" rel=\"nofollow\">@tadsan</a> tadsanさん</li>\n</ul>\n<h2>発表テーマの参考例</h2>\n<p>参考例ですが、以下のような発表を募集しております。<br>\n（あくまで参考例です。他のテーマの発表も募集しております！）</p>\n<ul>\n<li>今風の開発環境（開発スタイル）</li>\n<li>メジャーなフレームワーク、CakePHP と Laravel （と Symfony）の違い</li>\n<li>PSR を理解する</li>\n<li>単体テストの書き方</li>\n<li>便利なモジュールのあれこれ</li>\n<li>オープンソースに関わってみる</li>\n<li>PHP8</li>\n<li>初心者向けPHP講座</li>\n</ul>\n<h2>自己紹介について</h2>\n<p>勉強会開始後、参加者全員で一人ずつ自己紹介をしていただきます。<br>\n（名前や普段の業務内容等、30秒〜60秒程度の簡単なもので結構です）</p>\n<h2>注意事項</h2>\n<ul>\n<li>メイン発表・LTともに、営利的な告知・宣伝がメインとなる発表はご遠慮下さい。</li>\n<li>発表者用のスクリーンへの接続は HDMI のみです。(USB C 変換アダプターは会場にてご用意しています。)</li>\n<li>もし、HDMI以外をご希望でしたら、事前に発表資料をお送りいただく事でご対応します。その場合はコメントにてご連絡下さい。</li>\n</ul>\n<h2>会場提供：株式会社キュービック</h2>\n<p><img alt=\"株式会社キュービック\" src=\"https://cuebic.co.jp/wp-content/themes/corporate_site_wp_theme/img/image/image-mission-logo.svg\"></p>\n<p>URL：<a href=\"https://cuebic.co.jp/\" rel=\"nofollow\">https://cuebic.co.jp/</a></p>\n<h2>配信協力：EMTEC</h2>\n<p><img alt=\"EMTEC\" src=\"https://emtec.tv/images/emtec/emtec_logo.png\"></p>\n<blockquote>\n<p>EMTEC(エムテック)は、IT系カンファレンスやミートアップのライブ配信に特化したチームです。\n私たちは、現地の臨場感をオンラインで伝えることに情熱を注いでいます。最新のテクノロジーを駆使して高品質な映像と音声を提供し、参加者の皆様に会場にいるかのような没入感のある体験をお届けします。\nIT勉強会は、大都市圏だけでなく全国のエンジニアが場所や時間の制約なく参加できるものであるべきです。EMTECは、ライブ配信を通じて、単なる視聴にとどまらない、学びと成長、そしてコミュニティとのつながりを生み出す体験を提供します。</p>\n</blockquote>\n<p>URL：<a href=\"https://emtec.tv/\" rel=\"nofollow\">https://emtec.tv/</a></p>\n<h2>会場からの注意事項</h2>\n<ul>\n<li>イベント時の写真撮影・録画・録音・携帯電話のご使用はご遠慮ください。ただし、当社又は主催者が許可した場合を除きます。 </li>\n<li>イベント会場内にて発生した盗難、ならびにご本人または第三者の不注意等による事故、その他の物的および人的事故等については、理由の如何を問わず、当社は一切の責を負いません。 </li>\n<li>イベント会場内でのお客様による物品販売や勧誘、金品の授受・貸し借り等は固くお断りします。トラブル等があっても当社は一切の責を負いません。 </li>\n<li>イベント会場内にて、イベントに支障をきたす行為、他のお客様に迷惑をかけるような行為、または違法行為と当社が判断した場合は、イベントへのご参加をお断りする場合がございますので、予めご了承ください。</li>\n</ul>",
+      "url": "https://phpstudy.connpass.com/event/401438/",
+      "image_url": "https://media.connpass.com/thumbs/66/64/6664856edeb7ccd3f82c11432e396b1e.png",
+      "hash_tag": "phpstudy",
+      "started_at": "2026-08-19T19:30:00+09:00",
+      "ended_at": "2026-08-19T22:00:00+09:00",
+      "published_at": "2026-07-23T10:53:21+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13733,
+        "subdomain": "phpstudy",
+        "title": "PHP勉強会@東京",
+        "url": "https://phpstudy.connpass.com/"
+      },
+      "address": "東京都新宿区北新宿2-21-1 新宿フロントタワー16階",
+      "place": "株式会社キュービック",
+      "lat": "35.696156200000",
+      "lon": "139.689417300000",
+      "owner_id": 688175,
+      "owner_nickname": "kaas59",
+      "owner_display_name": "デロ",
+      "accepted": 14,
+      "waiting": 0,
+      "updated_at": "2026-08-19T08:35:14+09:00"
+    },
+    {
       "id": 398213,
       "title": "Data Engineering Night",
       "catch": "〜Sansan ×MEDLEY が語るデータエンジニアのリアル〜",
@@ -92,9 +123,9 @@
       "owner_id": 638511,
       "owner_nickname": "33tech",
       "owner_display_name": "SansanTech",
-      "accepted": 69,
+      "accepted": 70,
       "waiting": 0,
-      "updated_at": "2026-08-13T11:06:57+09:00"
+      "updated_at": "2026-08-19T15:24:31+09:00"
     },
     {
       "id": 400977,
@@ -128,37 +159,6 @@
       "updated_at": "2026-08-14T14:25:55+09:00"
     },
     {
-      "id": 401438,
-      "title": "第190回 PHP勉強会＠東京",
-      "catch": "",
-      "description": "<h2>PHP勉強会について</h2>\n<p>PHP勉強会@東京を 08/19(水) に開催します。<br>\nPHP勉強会@東京はPHPで開発を行うエンジニアを対象とした勉強会です。<br>\n勉強会開始時に乾杯し、LT形式での発表を行います。<br>\n飲食をしながら楽しむ形式の勉強会です！<br></p>\n<h2>入館方法</h2>\n<p>ビルに入館して直接16階にお越しください。<br></p>\n<p>20時以降は正面玄関が施錠されます。<br>\nその時間以降に到着された方は、下記リンクからXに投稿してお知らせください。<br>\nお迎えに行きます。<br></p>\n<p><a href=\"https://twitter.com/intent/tweet?text=%40phpstudy%20%20%E4%BC%9A%E5%A0%B4%E3%81%AB%E3%81%A4%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F%E3%80%81%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%8A%E9%A1%98%E3%81%84%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%23phpstudy\" rel=\"nofollow\">お迎えをお願いする投稿はこちら</a></p>\n<h2>開催内容</h2>\n<p>日時: 2026年08月19日(水) 19:30～22:00<br></p>\n<p>会場: 東京都新宿区北新宿2-21-1 新宿フロントタワー16階 株式会社キュービック<br></p>\n<p>費用: 1,000円<br>\n現金またはPayPayでお支払いください。<br>\n会場での飲食費に充てられます。<br>\n※お釣りの準備は十分ではありません、できるだけお釣りの要らないようご協力ください。</p>\n<p>発表者・発表内容によって時間の調整が発生する可能性があります。<br>\nご了承ください。</p>\n<h2>オンライン配信</h2>\n<p>申し込み枠はありませんが、YouTube Liveでの配信を行う予定です。</p>\n<p>本イベントはオフライン参加がメインのため、オンライン配信はベストエフォートとなりますのでご了承ください。</p>\n<p>配信用URL: TBD</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>Time</th>\n<th>title</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場・名刺交換</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>オープニング・自己紹介タイム</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>セッション1部開始</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>懇親会前半</td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>セッション2部開始</td>\n</tr>\n<tr>\n<td>21:40</td>\n<td>懇親会後半</td>\n</tr>\n<tr>\n<td>22:00</td>\n<td>終了</td>\n</tr>\n</tbody>\n</table>\n<h2>メイン発表枠 2 枠（20分）</h2>\n<ul>\n<li>「やるのか」<a href=\"https://x.com/chatii\" rel=\"nofollow\">@chatii</a>ちゃちいさん</li>\n<li>「phpで何か作ってみた話をします（今のところtarballの予定）」<a href=\"https://x.com/higaki_program\" rel=\"nofollow\">@higaki_program</a> higakiさん</li>\n</ul>\n<h2>LT枠 3 枠（5分）</h2>\n<ul>\n<li>「会場スポンサー宣伝」<a href=\"https://x.com/dero1to\" rel=\"nofollow\">@dero1to</a> デロさん</li>\n<li>TBD <a href=\"https://x.com/o0h_\" rel=\"nofollow\">@o0h_</a> hideki kinjyoさん</li>\n<li>「PHPの型チェッカーっていくつあるの？」<a href=\"https://x.com/tadsan\" rel=\"nofollow\">@tadsan</a> tadsanさん</li>\n</ul>\n<h2>発表テーマの参考例</h2>\n<p>参考例ですが、以下のような発表を募集しております。<br>\n（あくまで参考例です。他のテーマの発表も募集しております！）</p>\n<ul>\n<li>今風の開発環境（開発スタイル）</li>\n<li>メジャーなフレームワーク、CakePHP と Laravel （と Symfony）の違い</li>\n<li>PSR を理解する</li>\n<li>単体テストの書き方</li>\n<li>便利なモジュールのあれこれ</li>\n<li>オープンソースに関わってみる</li>\n<li>PHP8</li>\n<li>初心者向けPHP講座</li>\n</ul>\n<h2>自己紹介について</h2>\n<p>勉強会開始後、参加者全員で一人ずつ自己紹介をしていただきます。<br>\n（名前や普段の業務内容等、30秒〜60秒程度の簡単なもので結構です）</p>\n<h2>注意事項</h2>\n<ul>\n<li>メイン発表・LTともに、営利的な告知・宣伝がメインとなる発表はご遠慮下さい。</li>\n<li>発表者用のスクリーンへの接続は HDMI のみです。(USB C 変換アダプターは会場にてご用意しています。)</li>\n<li>もし、HDMI以外をご希望でしたら、事前に発表資料をお送りいただく事でご対応します。その場合はコメントにてご連絡下さい。</li>\n</ul>\n<h2>会場提供：株式会社キュービック</h2>\n<p><img alt=\"株式会社キュービック\" src=\"https://cuebic.co.jp/wp-content/themes/corporate_site_wp_theme/img/image/image-mission-logo.svg\"></p>\n<p>URL：<a href=\"https://cuebic.co.jp/\" rel=\"nofollow\">https://cuebic.co.jp/</a></p>\n<h2>配信協力：EMTEC</h2>\n<p><img alt=\"EMTEC\" src=\"https://emtec.tv/images/emtec/emtec_logo.png\"></p>\n<blockquote>\n<p>EMTEC(エムテック)は、IT系カンファレンスやミートアップのライブ配信に特化したチームです。\n私たちは、現地の臨場感をオンラインで伝えることに情熱を注いでいます。最新のテクノロジーを駆使して高品質な映像と音声を提供し、参加者の皆様に会場にいるかのような没入感のある体験をお届けします。\nIT勉強会は、大都市圏だけでなく全国のエンジニアが場所や時間の制約なく参加できるものであるべきです。EMTECは、ライブ配信を通じて、単なる視聴にとどまらない、学びと成長、そしてコミュニティとのつながりを生み出す体験を提供します。</p>\n</blockquote>\n<p>URL：<a href=\"https://emtec.tv/\" rel=\"nofollow\">https://emtec.tv/</a></p>\n<h2>会場からの注意事項</h2>\n<ul>\n<li>イベント時の写真撮影・録画・録音・携帯電話のご使用はご遠慮ください。ただし、当社又は主催者が許可した場合を除きます。 </li>\n<li>イベント会場内にて発生した盗難、ならびにご本人または第三者の不注意等による事故、その他の物的および人的事故等については、理由の如何を問わず、当社は一切の責を負いません。 </li>\n<li>イベント会場内でのお客様による物品販売や勧誘、金品の授受・貸し借り等は固くお断りします。トラブル等があっても当社は一切の責を負いません。 </li>\n<li>イベント会場内にて、イベントに支障をきたす行為、他のお客様に迷惑をかけるような行為、または違法行為と当社が判断した場合は、イベントへのご参加をお断りする場合がございますので、予めご了承ください。</li>\n</ul>",
-      "url": "https://phpstudy.connpass.com/event/401438/",
-      "image_url": "https://media.connpass.com/thumbs/66/64/6664856edeb7ccd3f82c11432e396b1e.png",
-      "hash_tag": "phpstudy",
-      "started_at": "2026-08-19T19:30:00+09:00",
-      "ended_at": "2026-08-19T22:00:00+09:00",
-      "published_at": "2026-07-23T10:53:21+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13733,
-        "subdomain": "phpstudy",
-        "title": "PHP勉強会@東京",
-        "url": "https://phpstudy.connpass.com/"
-      },
-      "address": "東京都新宿区北新宿2-21-1 新宿フロントタワー16階",
-      "place": "株式会社キュービック",
-      "lat": "35.696156200000",
-      "lon": "139.689417300000",
-      "owner_id": 688175,
-      "owner_nickname": "kaas59",
-      "owner_display_name": "デロ",
-      "accepted": 14,
-      "waiting": 0,
-      "updated_at": "2026-08-19T08:35:14+09:00"
-    },
-    {
       "id": 401659,
       "title": "【増枠】デザインスキマNight#01〜AI時代の、デザイナーの協業と連携〜",
       "catch": "",
@@ -185,7 +185,7 @@
       "owner_id": 648275,
       "owner_nickname": "TimeeDev",
       "owner_display_name": "TimeeDev",
-      "accepted": 27,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-08-19T09:10:38+09:00"
     },
@@ -219,37 +219,6 @@
       "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-08-14T19:43:21+09:00"
-    },
-    {
-      "id": 401177,
-      "title": "第39回オープンエッジデバイス研究会",
-      "catch": "",
-      "description": "<h1>【第39回オープンエッジデバイス研究会】開催のお知らせ</h1>\n<h4>2023年度より、オープンエッジデバイス研究会として、<br>定期的な情報共有の会を小さく始め、<br>おかげさまで4年目を迎えることができました。皆様に感謝致します。</h4>\n<h2>アジェンダ<br></h2>\n<p>山中様（東京電機大学）「居合切り用VRコントローラー作ってみた！」<br>\nさくたま「OEDC×Iwaken Lab. XR開発者向けマイコン入門ハンズオン開催報告」 <br></p>\n<h2>開催場所<br></h2>\n<p>現地: ソニークリエイティブラウンジ (ソニーグループ品川本社1F)<br>\nオンライン: 参加者のみにconnpass上でMicrosoft Teamsリンクを共有します<br></p>\n<h2>タイムテーブル<br></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">会場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">山中様（東京電機大学）「居合切り用VRコントローラー作ってみた！」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">さくたま「OEDC×Iwaken Lab. XR開発者向けマイコン入門ハンズオン開催報告」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">関連イベント紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">解散</td>\n</tr>\n</tbody>\n</table>\n<p><strong>懇親会参加の場合は、参加費・飲食代として現金で500円をご用意ください 。</strong></p>\n<h3>その他<br></h3>\n<p>開催情報は随時更新していきますのでご了承下さい。<br></p>\n<p>オープンエッジデバイスについて思うことやご相談なんでも結構です。<br>\nこの会で共有したい事があれば是非エントリーをお願いします。<br></p>\n<p>ご質問等ありましたら次のメールアドレスまでお問い合わせください。\nopenedgedevice@gmail.com</p>",
-      "url": "https://openedgedevice.connpass.com/event/401177/",
-      "image_url": null,
-      "hash_tag": "OEDC",
-      "started_at": "2026-08-19T19:00:00+09:00",
-      "ended_at": "2026-08-19T21:30:00+09:00",
-      "published_at": "2026-07-20T12:06:35+09:00",
-      "limit": 48,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13535,
-        "subdomain": "openedgedevice",
-        "title": "オープンエッジデバイス研究コミュニティ",
-        "url": "https://openedgedevice.connpass.com/"
-      },
-      "address": "東京都港区港南1-7-1",
-      "place": "ソニークリエイティブラウンジ",
-      "lat": "35.631211900000",
-      "lon": "139.743647700000",
-      "owner_id": 849423,
-      "owner_nickname": "openedgedevice",
-      "owner_display_name": "openedgedevice",
-      "accepted": 23,
-      "waiting": 0,
-      "updated_at": "2026-08-19T14:13:46+09:00"
     },
     {
       "id": 400783,
@@ -345,6 +314,37 @@
       "updated_at": "2026-07-14T12:09:01+09:00"
     },
     {
+      "id": 401177,
+      "title": "第39回オープンエッジデバイス研究会",
+      "catch": "",
+      "description": "<h1>【第39回オープンエッジデバイス研究会】開催のお知らせ</h1>\n<h4>2023年度より、オープンエッジデバイス研究会として、<br>定期的な情報共有の会を小さく始め、<br>おかげさまで4年目を迎えることができました。皆様に感謝致します。</h4>\n<h2>アジェンダ<br></h2>\n<p>山中様（東京電機大学）「居合切り用VRコントローラー作ってみた！」<br>\nさくたま「OEDC×Iwaken Lab. XR開発者向けマイコン入門ハンズオン開催報告」 <br></p>\n<h2>開催場所<br></h2>\n<p>現地: ソニークリエイティブラウンジ (ソニーグループ品川本社1F)<br>\nオンライン: 参加者のみにconnpass上でMicrosoft Teamsリンクを共有します<br></p>\n<h2>タイムテーブル<br></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">会場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">山中様（東京電機大学）「居合切り用VRコントローラー作ってみた！」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">さくたま「OEDC×Iwaken Lab. XR開発者向けマイコン入門ハンズオン開催報告」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">関連イベント紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">解散</td>\n</tr>\n</tbody>\n</table>\n<p><strong>懇親会参加の場合は、参加費・飲食代として現金で500円をご用意ください 。</strong></p>\n<h3>その他<br></h3>\n<p>開催情報は随時更新していきますのでご了承下さい。<br></p>\n<p>オープンエッジデバイスについて思うことやご相談なんでも結構です。<br>\nこの会で共有したい事があれば是非エントリーをお願いします。<br></p>\n<p>ご質問等ありましたら次のメールアドレスまでお問い合わせください。\nopenedgedevice@gmail.com</p>",
+      "url": "https://openedgedevice.connpass.com/event/401177/",
+      "image_url": null,
+      "hash_tag": "OEDC",
+      "started_at": "2026-08-19T19:00:00+09:00",
+      "ended_at": "2026-08-19T21:30:00+09:00",
+      "published_at": "2026-07-20T12:06:35+09:00",
+      "limit": 48,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13535,
+        "subdomain": "openedgedevice",
+        "title": "オープンエッジデバイス研究コミュニティ",
+        "url": "https://openedgedevice.connpass.com/"
+      },
+      "address": "東京都港区港南1-7-1",
+      "place": "ソニークリエイティブラウンジ",
+      "lat": "35.631211900000",
+      "lon": "139.743647700000",
+      "owner_id": 849423,
+      "owner_nickname": "openedgedevice",
+      "owner_display_name": "openedgedevice",
+      "accepted": 23,
+      "waiting": 0,
+      "updated_at": "2026-08-19T14:13:46+09:00"
+    },
+    {
       "id": 401663,
       "title": "（※開催日変更）Claude Code Fable 5 meetup！ #1",
       "catch": "〜Fableの性能を最大限活かす使い方・しくじりを語り合おう！〜",
@@ -371,7 +371,7 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 21,
+      "accepted": 22,
       "waiting": 0,
       "updated_at": "2026-08-19T12:16:52+09:00"
     },
@@ -402,7 +402,7 @@
       "owner_id": 929443,
       "owner_nickname": "GDEPsolutions",
       "owner_display_name": "GPU UNITE 事務局",
-      "accepted": 84,
+      "accepted": 83,
       "waiting": 0,
       "updated_at": "2026-08-18T11:09:03+09:00"
     },
