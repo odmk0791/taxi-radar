@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-19T08:14:39.859683+09:00",
+  "fetched_at": "2026-08-19T09:46:41.608999+09:00",
   "date": "20260819",
   "count": 14,
   "events": [
@@ -30,40 +30,9 @@
       "owner_id": 968564,
       "owner_nickname": "engineer_meeting",
       "owner_display_name": "SE集まれ企画部",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-08-18T19:21:43+09:00"
-    },
-    {
-      "id": 398213,
-      "title": "Data Engineering Night",
-      "catch": "〜Sansan ×MEDLEY が語るデータエンジニアのリアル〜",
-      "description": "<h1>🔍イベントについて</h1>\n<p>〜組織を動かすデータ基盤のリアルと、これからのエンジニア像〜</p>\n<p>データエンジニアリングの役割は、単なる「データの収集と加工」から「事業成長をダイレクトに牽引するコア機能」へと急速に進化しています。近年ではLLMやAIエージェントの台頭によるデータ基盤のあり方の変化、ビジネスの文脈（コンテキスト）を汲み取ったモデリング、そしてデータポータルを通じた社内への民主化など、データエンジニアが向き合うべき領域は広がり続けています。</p>\n<p>本イベントは、Sansan株式会社と株式会社メドレーの合同開催でお送りします！\n両社の精鋭エンジニア4名が、様々な切り口で現場の実践知を余すことなくお届けします。\n「これからのデータエンジニアはどう動くべきか？」のヒントが詰まった一夜です。ぜひご参加ください！</p>\n<h1>🤝こんな方におすすめ！</h1>\n<ul>\n<li>データエンジニア / アナリティクスエンジニアとして実務に携わっており、他社のモダンな設計思想や取り組みを知りたい方</li>\n<li>LLMやAIエージェントを組み込んだ、次世代のデータ基盤設計（MCP等）に興味がある方</li>\n<li>単なる集計やパイプライン構築に留まらず、「データプロダクト」として事業に価値を還元したいと考えている方</li>\n<li>複雑なビジネスロジックやドメイン知識をデータモデルにどう落とし込むか悩んでいる方</li>\n<li>データポータルの構築や、社内のデータ民主化・利活用を推進するミッションをお持ちの方</li>\n<li>データエンジニアとしての今後のキャリアパスや、事業に深くコミットする「FDE（Forward Deployed Engineer）」的な動き方に興味がある方</li>\n</ul>\n<h1>📆開催概要</h1>\n<p>■日時<br>\n2026年8月19日（水）19:30〜（受付開始19:15〜）<br></p>\n<p>■場所<br>\n〒150-6228<br>\n東京都渋谷区桜丘町1-1 渋谷サクラステージ 28F<br>\nSansan株式会社本社<br></p>\n<p>■アクセス\n<strong>（各渋谷駅より5分～15分ほどかかります。お時間に余裕を持ってお越しください）</strong><br>\n・JRをご利用の場合：渋谷駅 <strong>新南改札</strong>をご利用ください<br>\n・東横線／田園都市線／半蔵門線／副都心線をご利用の場合：渋谷駅 <strong>渋谷ヒカリエ1改札または渋谷ヒカリエ2改札</strong>をご利用ください<br>\n・銀座線をご利用の場合：渋谷駅 <strong>スクランブルスクエア方面改札</strong>をご利用ください<br>\n・井の頭線をご利用の場合：渋谷駅 <strong>中央改札</strong>をご利用ください<br></p>\n<p>▼渋谷駅各線からのサクラステージまでのアクセス方法<br>\n<a href=\"https://jp.corp-sansan.com/assets/pdf/accessandreception.pdf\" rel=\"nofollow\">https://jp.corp-sansan.com/assets/pdf/accessandreception.pdf</a> <br></p>\n<p>■持ち物<br>\n・名刺（当日名札として使用しますので、1名につき1枚ご用意ください）</p>\n<h1>⏰タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>コンテンツ</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15-19:30</td>\n<td>開場（受付開始）</td>\n<td></td>\n</tr>\n<tr>\n<td>19:30-19:35</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:35-19:45</td>\n<td>データ分析屋としてプロダクト開発に踏み込む</td>\n<td>Sansan 金髙</td>\n</tr>\n<tr>\n<td>19:45-19:55</td>\n<td>仮）MCPの整備、社内データへのエージェントアクセス設計、非エンジニア向けデータ提供の工夫</td>\n<td>Sansan 齊藤</td>\n</tr>\n<tr>\n<td>19:55-20:05</td>\n<td>仮）見えない文脈を扱えるデータへ 〜ビジネスコンテキストを構造化するための第一歩〜</td>\n<td>メドレー 武永</td>\n</tr>\n<tr>\n<td>20:05-20:15</td>\n<td>仮）現場回帰したデータエンジニアが考える AI 時代のキャリアパス</td>\n<td>メドレー 山邉</td>\n</tr>\n<tr>\n<td>20:15-21:30</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>閉会予定</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※当日予告なく内容が変更になる可能性がございます。<br></p>\n<h1>🎤登壇者</h1>\n<h2>金髙 右京 / Sansan株式会社</h2>\n<p><img src=\"https://static.corp-sansan.com/connpass/tokyo/2026-08-19/Ukyo_Kanetaka.jpg\" width=\"150\"></p>\n<p>早稲田大学政治学研究科修士課程を修了後、2024年にSansan株式会社へ新卒入社。データ基盤の整備から分析・効果検証まで、データ利活用の一連のプロセスに携わる。現在は新規プロダクト「Sansan Data Intelligence」にデータサイエンティストとして参画し、分析からプロダクトの開発までを一貫して担う。</p>\n<h2>齊藤 拓己 / Sansan株式会社</h2>\n<p><img src=\"https://static.corp-sansan.com/connpass/tokyo/2026-08-19/Takumi_Saito.jpg\" width=\"150\"></p>\n<p>筑波大学大学院博士課程修了。2025年、Sansan株式会社に新卒入社。社内データ分析基盤の運用・整備、データ利活用支援を起点として、SansanプロダクトにおけるAIエージェントの技術検証・開発に従事。現在の主な関心は、経験を通じて形成・更新される業務知識の概念構造を、AIエージェントが継続的に構築・再編成する知識基盤の設計。</p>\n<h2>武永 拓 / 株式会社メドレー</h2>\n<p><img src=\"https://static.corp-sansan.com/connpass/tokyo/2026-08-19/takenaga.jpg\" width=\"150\"></p>\n<p>新卒で人材サービス会社に入社し、データ基盤の立ち上げを経験。その後、ゲーム会社にてソーシャルゲームやストリーミングサービスなど複数プロダクトのデータエンジニアリングを担当。2025年にメドレーへJOIN。現在はプラットフォーム組織に所属し、各プロダクトを横断したデータ基盤の構築・整備に取り組んでいます。</p>\n<h2>山邉 哲生 <a href=\"https://x.com/beniyama\" rel=\"nofollow\">@beniyama</a> / 株式会社メドレー</h2>\n<p><img src=\"https://static.corp-sansan.com/connpass/tokyo/2026-08-19/yamabe.jpg\" width=\"150\"></p>\n<p>株式会社メドレー データエンジニア。 データ基盤の開発運用やデータ組織の立ち上げ、事業でのデータ責任者などを経験後、2025/04 よりメドレーに参画。現在は人材プラットフォーム領域で AI/ML を活用したプロダクト機能や、社内のデータ利活用水準を上げるためのデータ基盤・分析機能・データポータルの開発・運用などに取り組んでいる。</p>\n<h1>会社紹介</h1>\n<h3><a href=\"https://jp.sansan.com/\" rel=\"nofollow\">Sansan株式会社</a> <br></h3>\n<p>Sansan株式会社は「出会いからイノベーションを生み出す」をミッションとして掲げ、働き方を変えるAXサービスを提供しています。主なサービスとして、ビジネスデータベース「Sansan」や名刺アプリ「Eight」、経理AXサービス「Bill One」、取引管理サービス「Contract One」、データクオリティマネジメント「Sansan Data Intelligence」を国内外で提供しています。</p>\n<h3><a href=\"https://www.medley.jp\" rel=\"nofollow\">株式会社メドレー</a> <br></h3>\n<p>株式会社メドレーは、「医療ヘルスケアの未来をつくる」というミッションのもと、テクノロジーを活用した事業やプロジェクトを通じて、質の高い医療を必要な人々に提供し続ける「持続可能な医療」の実現と、患者・生活者とその家族にとって「納得できる医療」の実現を目指しています。</p>\n<h1>⚠️注意事項</h1>\n<ul>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。<br></li>\n<li>当日会場にて申込を確認させていただく場合がございます。</li>\n<li>参加確定後に無断欠席をされた場合、次回以降のご参加をお断りすることがございます。ご迷惑をおかけしますが、あらかじめご了承ください。</li>\n<li>参加枠が最小遂行人数に満たない場合や関係者の急病や天災などにより、開催を延期または中止する場合がございます。</li>\n<li>イベントの様子・内容をまとめ、後日公開させていただく場合がございます。</li>\n<li>本イベントで取得する個人情報のお取り扱い方針は以下の通りです。ご同意の上でお申し込み・ご参加ください。<br>\n<a href=\"https://jp.corp-sansan.com/privacy\" rel=\"nofollow\">Sansan株式会社の個人情報のお取り扱い方針</a> <br>\n<br></li>\n</ul>\n<h1>アンチハラスメントポリシー</h1>\n<p>本イベントはアンチハラスメントポリシーを定めております。参加者は内容をご確認、ご同意の上でご参加をお願いします。</p>\n<p>本イベントでは、特定の社会的属性――ジェンダー・性自認・性的指向、障がい、外見・身体的特徴、エスニシティ・国籍、年齢、宗教、特定のツールやプログラミング言語、専門とする学問領域、教育的バックグラウンドなど――に基づく差別的言動を、一切許容しません。\n加えて、参加者による以下のような行為を、SNS、イベント会場等問わず禁止します。</p>\n<p>・攻撃的な発言<br>\n・脅迫行為<br>\n・ストーキング行為<br>\n・つきまとい<br>\n・不適切な接触<br>\n・性的な画像の掲示などを含む不適切な情報の開示<br>\n・その他、事務局が不適切と判断した行為<br>\n参加者がこれらの行為に加担した場合、事務局側は当該参加者に対し必要な処分を行うことができます。この処分には、当該参加者への勧告、今後のイベントに聴講者・登壇者として関わることの禁止などを含みます。また、今後のよりよい運営のために、事態の詳細をレポートとして公開する場合があります。\n本サービスの中で、「これはハラスメントではないか？」と感じたり、他の誰かがハラスメントを受けていることに気が付いた場合、または事務局側の体制がこれらのポリシーを満たさないと感じることがあった場合には、以下までご連絡ください。</p>\n<p>mail：33tech@sansan.com</p>",
-      "url": "https://sansan.connpass.com/event/398213/",
-      "image_url": "https://media.connpass.com/thumbs/24/a7/24a7b8582e7619b0fb6e495ba6a0a449.png",
-      "hash_tag": "DataEngineeringNight",
-      "started_at": "2026-08-19T19:30:00+09:00",
-      "ended_at": "2026-08-19T21:30:00+09:00",
-      "published_at": "2026-07-14T10:01:14+09:00",
-      "limit": 70,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 3328,
-        "subdomain": "sansan",
-        "title": "Sansan株式会社",
-        "url": "https://sansan.connpass.com/"
-      },
-      "address": "東京都渋谷区桜丘町1-1 渋谷サクラステージ 28F",
-      "place": "Sansan株式会社 本社",
-      "lat": "35.657234700000",
-      "lon": "139.701471900000",
-      "owner_id": 638511,
-      "owner_nickname": "33tech",
-      "owner_display_name": "SansanTech",
-      "accepted": 70,
-      "waiting": 1,
-      "updated_at": "2026-08-13T11:06:57+09:00"
     },
     {
       "id": 400977,
@@ -92,7 +61,7 @@
       "owner_id": 391232,
       "owner_nickname": "koheihei_0905",
       "owner_display_name": "koheihei_0905",
-      "accepted": 30,
+      "accepted": 29,
       "waiting": 0,
       "updated_at": "2026-08-14T14:25:55+09:00"
     },
@@ -128,10 +97,41 @@
       "updated_at": "2026-08-14T19:43:21+09:00"
     },
     {
+      "id": 398213,
+      "title": "Data Engineering Night",
+      "catch": "〜Sansan ×MEDLEY が語るデータエンジニアのリアル〜",
+      "description": "<h1>🔍イベントについて</h1>\n<p>〜組織を動かすデータ基盤のリアルと、これからのエンジニア像〜</p>\n<p>データエンジニアリングの役割は、単なる「データの収集と加工」から「事業成長をダイレクトに牽引するコア機能」へと急速に進化しています。近年ではLLMやAIエージェントの台頭によるデータ基盤のあり方の変化、ビジネスの文脈（コンテキスト）を汲み取ったモデリング、そしてデータポータルを通じた社内への民主化など、データエンジニアが向き合うべき領域は広がり続けています。</p>\n<p>本イベントは、Sansan株式会社と株式会社メドレーの合同開催でお送りします！\n両社の精鋭エンジニア4名が、様々な切り口で現場の実践知を余すことなくお届けします。\n「これからのデータエンジニアはどう動くべきか？」のヒントが詰まった一夜です。ぜひご参加ください！</p>\n<h1>🤝こんな方におすすめ！</h1>\n<ul>\n<li>データエンジニア / アナリティクスエンジニアとして実務に携わっており、他社のモダンな設計思想や取り組みを知りたい方</li>\n<li>LLMやAIエージェントを組み込んだ、次世代のデータ基盤設計（MCP等）に興味がある方</li>\n<li>単なる集計やパイプライン構築に留まらず、「データプロダクト」として事業に価値を還元したいと考えている方</li>\n<li>複雑なビジネスロジックやドメイン知識をデータモデルにどう落とし込むか悩んでいる方</li>\n<li>データポータルの構築や、社内のデータ民主化・利活用を推進するミッションをお持ちの方</li>\n<li>データエンジニアとしての今後のキャリアパスや、事業に深くコミットする「FDE（Forward Deployed Engineer）」的な動き方に興味がある方</li>\n</ul>\n<h1>📆開催概要</h1>\n<p>■日時<br>\n2026年8月19日（水）19:30〜（受付開始19:15〜）<br></p>\n<p>■場所<br>\n〒150-6228<br>\n東京都渋谷区桜丘町1-1 渋谷サクラステージ 28F<br>\nSansan株式会社本社<br></p>\n<p>■アクセス\n<strong>（各渋谷駅より5分～15分ほどかかります。お時間に余裕を持ってお越しください）</strong><br>\n・JRをご利用の場合：渋谷駅 <strong>新南改札</strong>をご利用ください<br>\n・東横線／田園都市線／半蔵門線／副都心線をご利用の場合：渋谷駅 <strong>渋谷ヒカリエ1改札または渋谷ヒカリエ2改札</strong>をご利用ください<br>\n・銀座線をご利用の場合：渋谷駅 <strong>スクランブルスクエア方面改札</strong>をご利用ください<br>\n・井の頭線をご利用の場合：渋谷駅 <strong>中央改札</strong>をご利用ください<br></p>\n<p>▼渋谷駅各線からのサクラステージまでのアクセス方法<br>\n<a href=\"https://jp.corp-sansan.com/assets/pdf/accessandreception.pdf\" rel=\"nofollow\">https://jp.corp-sansan.com/assets/pdf/accessandreception.pdf</a> <br></p>\n<p>■持ち物<br>\n・名刺（当日名札として使用しますので、1名につき1枚ご用意ください）</p>\n<h1>⏰タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>コンテンツ</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:15-19:30</td>\n<td>開場（受付開始）</td>\n<td></td>\n</tr>\n<tr>\n<td>19:30-19:35</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:35-19:45</td>\n<td>データ分析屋としてプロダクト開発に踏み込む</td>\n<td>Sansan 金髙</td>\n</tr>\n<tr>\n<td>19:45-19:55</td>\n<td>仮）MCPの整備、社内データへのエージェントアクセス設計、非エンジニア向けデータ提供の工夫</td>\n<td>Sansan 齊藤</td>\n</tr>\n<tr>\n<td>19:55-20:05</td>\n<td>仮）見えない文脈を扱えるデータへ 〜ビジネスコンテキストを構造化するための第一歩〜</td>\n<td>メドレー 武永</td>\n</tr>\n<tr>\n<td>20:05-20:15</td>\n<td>仮）現場回帰したデータエンジニアが考える AI 時代のキャリアパス</td>\n<td>メドレー 山邉</td>\n</tr>\n<tr>\n<td>20:15-21:30</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>閉会予定</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※当日予告なく内容が変更になる可能性がございます。<br></p>\n<h1>🎤登壇者</h1>\n<h2>金髙 右京 / Sansan株式会社</h2>\n<p><img src=\"https://static.corp-sansan.com/connpass/tokyo/2026-08-19/Ukyo_Kanetaka.jpg\" width=\"150\"></p>\n<p>早稲田大学政治学研究科修士課程を修了後、2024年にSansan株式会社へ新卒入社。データ基盤の整備から分析・効果検証まで、データ利活用の一連のプロセスに携わる。現在は新規プロダクト「Sansan Data Intelligence」にデータサイエンティストとして参画し、分析からプロダクトの開発までを一貫して担う。</p>\n<h2>齊藤 拓己 / Sansan株式会社</h2>\n<p><img src=\"https://static.corp-sansan.com/connpass/tokyo/2026-08-19/Takumi_Saito.jpg\" width=\"150\"></p>\n<p>筑波大学大学院博士課程修了。2025年、Sansan株式会社に新卒入社。社内データ分析基盤の運用・整備、データ利活用支援を起点として、SansanプロダクトにおけるAIエージェントの技術検証・開発に従事。現在の主な関心は、経験を通じて形成・更新される業務知識の概念構造を、AIエージェントが継続的に構築・再編成する知識基盤の設計。</p>\n<h2>武永 拓 / 株式会社メドレー</h2>\n<p><img src=\"https://static.corp-sansan.com/connpass/tokyo/2026-08-19/takenaga.jpg\" width=\"150\"></p>\n<p>新卒で人材サービス会社に入社し、データ基盤の立ち上げを経験。その後、ゲーム会社にてソーシャルゲームやストリーミングサービスなど複数プロダクトのデータエンジニアリングを担当。2025年にメドレーへJOIN。現在はプラットフォーム組織に所属し、各プロダクトを横断したデータ基盤の構築・整備に取り組んでいます。</p>\n<h2>山邉 哲生 <a href=\"https://x.com/beniyama\" rel=\"nofollow\">@beniyama</a> / 株式会社メドレー</h2>\n<p><img src=\"https://static.corp-sansan.com/connpass/tokyo/2026-08-19/yamabe.jpg\" width=\"150\"></p>\n<p>株式会社メドレー データエンジニア。 データ基盤の開発運用やデータ組織の立ち上げ、事業でのデータ責任者などを経験後、2025/04 よりメドレーに参画。現在は人材プラットフォーム領域で AI/ML を活用したプロダクト機能や、社内のデータ利活用水準を上げるためのデータ基盤・分析機能・データポータルの開発・運用などに取り組んでいる。</p>\n<h1>会社紹介</h1>\n<h3><a href=\"https://jp.sansan.com/\" rel=\"nofollow\">Sansan株式会社</a> <br></h3>\n<p>Sansan株式会社は「出会いからイノベーションを生み出す」をミッションとして掲げ、働き方を変えるAXサービスを提供しています。主なサービスとして、ビジネスデータベース「Sansan」や名刺アプリ「Eight」、経理AXサービス「Bill One」、取引管理サービス「Contract One」、データクオリティマネジメント「Sansan Data Intelligence」を国内外で提供しています。</p>\n<h3><a href=\"https://www.medley.jp\" rel=\"nofollow\">株式会社メドレー</a> <br></h3>\n<p>株式会社メドレーは、「医療ヘルスケアの未来をつくる」というミッションのもと、テクノロジーを活用した事業やプロジェクトを通じて、質の高い医療を必要な人々に提供し続ける「持続可能な医療」の実現と、患者・生活者とその家族にとって「納得できる医療」の実現を目指しています。</p>\n<h1>⚠️注意事項</h1>\n<ul>\n<li>参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。<br></li>\n<li>当日会場にて申込を確認させていただく場合がございます。</li>\n<li>参加確定後に無断欠席をされた場合、次回以降のご参加をお断りすることがございます。ご迷惑をおかけしますが、あらかじめご了承ください。</li>\n<li>参加枠が最小遂行人数に満たない場合や関係者の急病や天災などにより、開催を延期または中止する場合がございます。</li>\n<li>イベントの様子・内容をまとめ、後日公開させていただく場合がございます。</li>\n<li>本イベントで取得する個人情報のお取り扱い方針は以下の通りです。ご同意の上でお申し込み・ご参加ください。<br>\n<a href=\"https://jp.corp-sansan.com/privacy\" rel=\"nofollow\">Sansan株式会社の個人情報のお取り扱い方針</a> <br>\n<br></li>\n</ul>\n<h1>アンチハラスメントポリシー</h1>\n<p>本イベントはアンチハラスメントポリシーを定めております。参加者は内容をご確認、ご同意の上でご参加をお願いします。</p>\n<p>本イベントでは、特定の社会的属性――ジェンダー・性自認・性的指向、障がい、外見・身体的特徴、エスニシティ・国籍、年齢、宗教、特定のツールやプログラミング言語、専門とする学問領域、教育的バックグラウンドなど――に基づく差別的言動を、一切許容しません。\n加えて、参加者による以下のような行為を、SNS、イベント会場等問わず禁止します。</p>\n<p>・攻撃的な発言<br>\n・脅迫行為<br>\n・ストーキング行為<br>\n・つきまとい<br>\n・不適切な接触<br>\n・性的な画像の掲示などを含む不適切な情報の開示<br>\n・その他、事務局が不適切と判断した行為<br>\n参加者がこれらの行為に加担した場合、事務局側は当該参加者に対し必要な処分を行うことができます。この処分には、当該参加者への勧告、今後のイベントに聴講者・登壇者として関わることの禁止などを含みます。また、今後のよりよい運営のために、事態の詳細をレポートとして公開する場合があります。\n本サービスの中で、「これはハラスメントではないか？」と感じたり、他の誰かがハラスメントを受けていることに気が付いた場合、または事務局側の体制がこれらのポリシーを満たさないと感じることがあった場合には、以下までご連絡ください。</p>\n<p>mail：33tech@sansan.com</p>",
+      "url": "https://sansan.connpass.com/event/398213/",
+      "image_url": "https://media.connpass.com/thumbs/24/a7/24a7b8582e7619b0fb6e495ba6a0a449.png",
+      "hash_tag": "DataEngineeringNight",
+      "started_at": "2026-08-19T19:30:00+09:00",
+      "ended_at": "2026-08-19T21:30:00+09:00",
+      "published_at": "2026-07-14T10:01:14+09:00",
+      "limit": 70,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 3328,
+        "subdomain": "sansan",
+        "title": "Sansan株式会社",
+        "url": "https://sansan.connpass.com/"
+      },
+      "address": "東京都渋谷区桜丘町1-1 渋谷サクラステージ 28F",
+      "place": "Sansan株式会社 本社",
+      "lat": "35.657234700000",
+      "lon": "139.701471900000",
+      "owner_id": 638511,
+      "owner_nickname": "33tech",
+      "owner_display_name": "SansanTech",
+      "accepted": 70,
+      "waiting": 0,
+      "updated_at": "2026-08-13T11:06:57+09:00"
+    },
+    {
       "id": 401438,
       "title": "第190回 PHP勉強会＠東京",
       "catch": "",
-      "description": "<h2>PHP勉強会について</h2>\n<p>PHP勉強会@東京を 08/19(水) に開催します。<br>\nPHP勉強会@東京はPHPで開発を行うエンジニアを対象とした勉強会です。<br>\n勉強会開始時に乾杯し、LT形式での発表を行います。<br>\n飲食をしながら楽しむ形式の勉強会です！<br></p>\n<h2>入館方法</h2>\n<p>ビルに入館して直接16階にお越しください。<br></p>\n<p>20時以降は正面玄関が施錠されます。<br>\nその時間以降に到着された方は、下記リンクからXに投稿してお知らせください。<br>\nお迎えに行きます。<br></p>\n<p><a href=\"https://twitter.com/intent/tweet?text=%40phpstudy%20%20%E4%BC%9A%E5%A0%B4%E3%81%AB%E3%81%A4%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F%E3%80%81%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%8A%E9%A1%98%E3%81%84%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%23phpstudy\" rel=\"nofollow\">お迎えをお願いする投稿はこちら</a></p>\n<h2>開催内容</h2>\n<p>日時: 2026年08月19日(水) 19:30～22:00<br></p>\n<p>会場: 東京都新宿区北新宿2-21-1 新宿フロントタワー16階 株式会社キュービック<br></p>\n<p>費用: 1,000円<br>\n現金またはPayPayでお支払いください。<br>\n会場での飲食費に充てられます。<br>\n※お釣りの準備は十分ではありません、できるだけお釣りの要らないようご協力ください。</p>\n<p>発表者・発表内容によって時間の調整が発生する可能性があります。<br>\nご了承ください。</p>\n<h2>オンライン配信</h2>\n<p>申し込み枠はありませんが、YouTube Liveでの配信を行う予定です。</p>\n<p>本イベントはオフライン参加がメインのため、オンライン配信はベストエフォートとなりますのでご了承ください。</p>\n<p>配信用URL: TBD</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>Time</th>\n<th>title</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場・名刺交換</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>オープニング・自己紹介タイム</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>セッション1部開始</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>懇親会前半</td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>セッション2部開始</td>\n</tr>\n<tr>\n<td>21:40</td>\n<td>懇親会後半</td>\n</tr>\n<tr>\n<td>22:00</td>\n<td>終了</td>\n</tr>\n</tbody>\n</table>\n<h2>メイン発表枠 2 枠（20分）</h2>\n<ul>\n<li>「やるのか」<a href=\"https://x.com/chatii\" rel=\"nofollow\">@chatii</a>ちゃちいさん</li>\n<li>「phpで何か作ってみた話をします（今のところtarballの予定）」<a href=\"https://x.com/higaki_program\" rel=\"nofollow\">@higaki_program</a> higakiさん</li>\n</ul>\n<h2>LT枠 3 枠（5分）</h2>\n<ul>\n<li>「会場スポンサー宣伝」<a href=\"https://x.com/dero1to\" rel=\"nofollow\">@dero1to</a> デロさん</li>\n<li>TBD <a href=\"https://x.com/o0h_\" rel=\"nofollow\">@o0h_</a> hideki kinjyoさん</li>\n<li>TBD</li>\n</ul>\n<h2>発表テーマの参考例</h2>\n<p>参考例ですが、以下のような発表を募集しております。<br>\n（あくまで参考例です。他のテーマの発表も募集しております！）</p>\n<ul>\n<li>今風の開発環境（開発スタイル）</li>\n<li>メジャーなフレームワーク、CakePHP と Laravel （と Symfony）の違い</li>\n<li>PSR を理解する</li>\n<li>単体テストの書き方</li>\n<li>便利なモジュールのあれこれ</li>\n<li>オープンソースに関わってみる</li>\n<li>PHP8</li>\n<li>初心者向けPHP講座</li>\n</ul>\n<h2>自己紹介について</h2>\n<p>勉強会開始後、参加者全員で一人ずつ自己紹介をしていただきます。<br>\n（名前や普段の業務内容等、30秒〜60秒程度の簡単なもので結構です）</p>\n<h2>注意事項</h2>\n<ul>\n<li>メイン発表・LTともに、営利的な告知・宣伝がメインとなる発表はご遠慮下さい。</li>\n<li>発表者用のスクリーンへの接続は HDMI のみです。(USB C 変換アダプターは会場にてご用意しています。)</li>\n<li>もし、HDMI以外をご希望でしたら、事前に発表資料をお送りいただく事でご対応します。その場合はコメントにてご連絡下さい。</li>\n</ul>\n<h2>会場提供：株式会社キュービック</h2>\n<p><img alt=\"株式会社キュービック\" src=\"https://cuebic.co.jp/wp-content/themes/corporate_site_wp_theme/img/image/image-mission-logo.svg\"></p>\n<p>URL：<a href=\"https://cuebic.co.jp/\" rel=\"nofollow\">https://cuebic.co.jp/</a></p>\n<h2>配信協力：EMTEC</h2>\n<p><img alt=\"EMTEC\" src=\"https://emtec.tv/images/emtec/emtec_logo.png\"></p>\n<blockquote>\n<p>EMTEC(エムテック)は、IT系カンファレンスやミートアップのライブ配信に特化したチームです。\n私たちは、現地の臨場感をオンラインで伝えることに情熱を注いでいます。最新のテクノロジーを駆使して高品質な映像と音声を提供し、参加者の皆様に会場にいるかのような没入感のある体験をお届けします。\nIT勉強会は、大都市圏だけでなく全国のエンジニアが場所や時間の制約なく参加できるものであるべきです。EMTECは、ライブ配信を通じて、単なる視聴にとどまらない、学びと成長、そしてコミュニティとのつながりを生み出す体験を提供します。</p>\n</blockquote>\n<p>URL：<a href=\"https://emtec.tv/\" rel=\"nofollow\">https://emtec.tv/</a></p>\n<h2>会場からの注意事項</h2>\n<ul>\n<li>イベント時の写真撮影・録画・録音・携帯電話のご使用はご遠慮ください。ただし、当社又は主催者が許可した場合を除きます。 </li>\n<li>イベント会場内にて発生した盗難、ならびにご本人または第三者の不注意等による事故、その他の物的および人的事故等については、理由の如何を問わず、当社は一切の責を負いません。 </li>\n<li>イベント会場内でのお客様による物品販売や勧誘、金品の授受・貸し借り等は固くお断りします。トラブル等があっても当社は一切の責を負いません。 </li>\n<li>イベント会場内にて、イベントに支障をきたす行為、他のお客様に迷惑をかけるような行為、または違法行為と当社が判断した場合は、イベントへのご参加をお断りする場合がございますので、予めご了承ください。</li>\n</ul>",
+      "description": "<h2>PHP勉強会について</h2>\n<p>PHP勉強会@東京を 08/19(水) に開催します。<br>\nPHP勉強会@東京はPHPで開発を行うエンジニアを対象とした勉強会です。<br>\n勉強会開始時に乾杯し、LT形式での発表を行います。<br>\n飲食をしながら楽しむ形式の勉強会です！<br></p>\n<h2>入館方法</h2>\n<p>ビルに入館して直接16階にお越しください。<br></p>\n<p>20時以降は正面玄関が施錠されます。<br>\nその時間以降に到着された方は、下記リンクからXに投稿してお知らせください。<br>\nお迎えに行きます。<br></p>\n<p><a href=\"https://twitter.com/intent/tweet?text=%40phpstudy%20%20%E4%BC%9A%E5%A0%B4%E3%81%AB%E3%81%A4%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F%E3%80%81%E3%81%8A%E8%BF%8E%E3%81%88%E3%81%8A%E9%A1%98%E3%81%84%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%23phpstudy\" rel=\"nofollow\">お迎えをお願いする投稿はこちら</a></p>\n<h2>開催内容</h2>\n<p>日時: 2026年08月19日(水) 19:30～22:00<br></p>\n<p>会場: 東京都新宿区北新宿2-21-1 新宿フロントタワー16階 株式会社キュービック<br></p>\n<p>費用: 1,000円<br>\n現金またはPayPayでお支払いください。<br>\n会場での飲食費に充てられます。<br>\n※お釣りの準備は十分ではありません、できるだけお釣りの要らないようご協力ください。</p>\n<p>発表者・発表内容によって時間の調整が発生する可能性があります。<br>\nご了承ください。</p>\n<h2>オンライン配信</h2>\n<p>申し込み枠はありませんが、YouTube Liveでの配信を行う予定です。</p>\n<p>本イベントはオフライン参加がメインのため、オンライン配信はベストエフォートとなりますのでご了承ください。</p>\n<p>配信用URL: TBD</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>Time</th>\n<th>title</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場・名刺交換</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>オープニング・自己紹介タイム</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>セッション1部開始</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>懇親会前半</td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>セッション2部開始</td>\n</tr>\n<tr>\n<td>21:40</td>\n<td>懇親会後半</td>\n</tr>\n<tr>\n<td>22:00</td>\n<td>終了</td>\n</tr>\n</tbody>\n</table>\n<h2>メイン発表枠 2 枠（20分）</h2>\n<ul>\n<li>「やるのか」<a href=\"https://x.com/chatii\" rel=\"nofollow\">@chatii</a>ちゃちいさん</li>\n<li>「phpで何か作ってみた話をします（今のところtarballの予定）」<a href=\"https://x.com/higaki_program\" rel=\"nofollow\">@higaki_program</a> higakiさん</li>\n</ul>\n<h2>LT枠 3 枠（5分）</h2>\n<ul>\n<li>「会場スポンサー宣伝」<a href=\"https://x.com/dero1to\" rel=\"nofollow\">@dero1to</a> デロさん</li>\n<li>TBD <a href=\"https://x.com/o0h_\" rel=\"nofollow\">@o0h_</a> hideki kinjyoさん</li>\n<li>「PHPの型チェッカーっていくつあるの？」<a href=\"https://x.com/tadsan\" rel=\"nofollow\">@tadsan</a> tadsanさん</li>\n</ul>\n<h2>発表テーマの参考例</h2>\n<p>参考例ですが、以下のような発表を募集しております。<br>\n（あくまで参考例です。他のテーマの発表も募集しております！）</p>\n<ul>\n<li>今風の開発環境（開発スタイル）</li>\n<li>メジャーなフレームワーク、CakePHP と Laravel （と Symfony）の違い</li>\n<li>PSR を理解する</li>\n<li>単体テストの書き方</li>\n<li>便利なモジュールのあれこれ</li>\n<li>オープンソースに関わってみる</li>\n<li>PHP8</li>\n<li>初心者向けPHP講座</li>\n</ul>\n<h2>自己紹介について</h2>\n<p>勉強会開始後、参加者全員で一人ずつ自己紹介をしていただきます。<br>\n（名前や普段の業務内容等、30秒〜60秒程度の簡単なもので結構です）</p>\n<h2>注意事項</h2>\n<ul>\n<li>メイン発表・LTともに、営利的な告知・宣伝がメインとなる発表はご遠慮下さい。</li>\n<li>発表者用のスクリーンへの接続は HDMI のみです。(USB C 変換アダプターは会場にてご用意しています。)</li>\n<li>もし、HDMI以外をご希望でしたら、事前に発表資料をお送りいただく事でご対応します。その場合はコメントにてご連絡下さい。</li>\n</ul>\n<h2>会場提供：株式会社キュービック</h2>\n<p><img alt=\"株式会社キュービック\" src=\"https://cuebic.co.jp/wp-content/themes/corporate_site_wp_theme/img/image/image-mission-logo.svg\"></p>\n<p>URL：<a href=\"https://cuebic.co.jp/\" rel=\"nofollow\">https://cuebic.co.jp/</a></p>\n<h2>配信協力：EMTEC</h2>\n<p><img alt=\"EMTEC\" src=\"https://emtec.tv/images/emtec/emtec_logo.png\"></p>\n<blockquote>\n<p>EMTEC(エムテック)は、IT系カンファレンスやミートアップのライブ配信に特化したチームです。\n私たちは、現地の臨場感をオンラインで伝えることに情熱を注いでいます。最新のテクノロジーを駆使して高品質な映像と音声を提供し、参加者の皆様に会場にいるかのような没入感のある体験をお届けします。\nIT勉強会は、大都市圏だけでなく全国のエンジニアが場所や時間の制約なく参加できるものであるべきです。EMTECは、ライブ配信を通じて、単なる視聴にとどまらない、学びと成長、そしてコミュニティとのつながりを生み出す体験を提供します。</p>\n</blockquote>\n<p>URL：<a href=\"https://emtec.tv/\" rel=\"nofollow\">https://emtec.tv/</a></p>\n<h2>会場からの注意事項</h2>\n<ul>\n<li>イベント時の写真撮影・録画・録音・携帯電話のご使用はご遠慮ください。ただし、当社又は主催者が許可した場合を除きます。 </li>\n<li>イベント会場内にて発生した盗難、ならびにご本人または第三者の不注意等による事故、その他の物的および人的事故等については、理由の如何を問わず、当社は一切の責を負いません。 </li>\n<li>イベント会場内でのお客様による物品販売や勧誘、金品の授受・貸し借り等は固くお断りします。トラブル等があっても当社は一切の責を負いません。 </li>\n<li>イベント会場内にて、イベントに支障をきたす行為、他のお客様に迷惑をかけるような行為、または違法行為と当社が判断した場合は、イベントへのご参加をお断りする場合がございますので、予めご了承ください。</li>\n</ul>",
       "url": "https://phpstudy.connpass.com/event/401438/",
       "image_url": "https://media.connpass.com/thumbs/66/64/6664856edeb7ccd3f82c11432e396b1e.png",
       "hash_tag": "phpstudy",
@@ -154,13 +154,13 @@
       "owner_id": 688175,
       "owner_nickname": "kaas59",
       "owner_display_name": "デロ",
-      "accepted": 11,
+      "accepted": 12,
       "waiting": 0,
-      "updated_at": "2026-08-05T15:59:31+09:00"
+      "updated_at": "2026-08-19T08:35:14+09:00"
     },
     {
       "id": 401659,
-      "title": "デザインスキマNight#01〜AI時代の、デザイナーの協業と連携〜",
+      "title": "【増枠】デザインスキマNight#01〜AI時代の、デザイナーの協業と連携〜",
       "catch": "",
       "description": "<h2>🎯 #1のテーマ：AI時代の、デザイナーの協業と連携</h2>\n<p>「デザインスキマNight」は、タイミーのデザイン組織が主催する「仕事おわりのスキマ時間にデザイナーがふらっと集まり、デザインの話をゆるく交わす夜の会」です。</p>\n<p>第1回のテーマは<strong>「AI時代でも、デザイナー同士の協業や連携ってどうしてる？」</strong><br>\nAIで1人でできることが増えたからこそ、レビューや目線合わせなど「一緒にはたらく」部分の設計が、デザインの質を左右するようになっています。</p>\n<p>前半はタイミーのデザイナー2名がデザインレビューの仕組みや、AIを活用したガイドライン策定の取り組みなど、現在進行形の工夫をトーク。<br>\n後半はテーブルごとに、お題を肴に各社のリアルを持ち寄るディスカッションタイムです。</p>\n<h2>📝 参考記事</h2>\n<p><a href=\"https://note.com/_yyyyy/n/na480ef47a5cc\" rel=\"nofollow\">AI時代になぜプロダクトデザイナーを大幅に増員するのか</a></p>\n<h2>🎨 こんな方におすすめ</h2>\n<ul>\n<li>AI時代のチームでのデザインの進め方を模索している方</li>\n<li>他社のデザイナーの連携のリアルを聞いてみたい方</li>\n<li>準備なしでふらっとデザインの話をしに行ける場を探している方</li>\n<li>タイミーのデザイン組織やオフィスの雰囲気をのぞいてみたい方</li>\n</ul>\n<h2>☑️ イベントのゴール</h2>\n<ul>\n<li>明日から自分のチームで試せる連携のヒントを持ち帰る</li>\n<li>AI時代のデザイナーの働き方について、他社の現在地を知る</li>\n</ul>\n<h2>👥 登壇者情報</h2>\n<p><img src=\"https://lh3.googleusercontent.com/d/1E048bskuSTL18Xp3F27Rq49Nb4H_oFl4\" width=\"120\">　<strong><font size=\"5\">Akito Imase</font></strong> <font size=\"3\">（<a href=\"https://x.com/akitoimase\" rel=\"nofollow\">@akitoimase</a>）</font><br><strong><font size=\"3\">株式会社タイミー<br>プロダクトデザイナー</font></strong><br><font size=\"2\">スタートアップ企業に新卒入社し、UX,UIデザイン・フロントエンド開発・プロダクトマネジメントに関するロールを幅広く経験。デザインチームのリーダーとして、チームマネジメントにも従事する。前職は株式会社電通デジタルにて、UXデザイナーとして多種多様なプロダクトデザインやエクスペリエンスデザインに携わり、ユーザーの広範囲な体験設計に取り組む。2024年にタイミーへ入社し、プロダクトデザイナー/エクスペリエンスデザイナーとして活動中。</font><br></p>\n<hr>\n<p><img src=\"https://lh3.googleusercontent.com/d/15A1PgDYO7P3wHU_vSqMAOL_2ym1-daZF\" width=\"120\">　<strong><font size=\"5\">Mika Inoue</font></strong><br>\n<strong><font size=\"3\">株式会社タイミー<br>プロダクトデザイナー</font></strong><br><font size=\"2\">大学時代にアルバイトでWebデザインの世界に入り、EC専門Web制作会社で一通りの経験を積む。その後カナダへ5年移住し、予約管理システムをつくっているソフトウェア会社で、UIデザイナー兼フロントエンドディベロッパーに。帰国後、WAmazing株式会社にデザイナーとして入社、インバウンド向けサービスのウェブ・アプリデザインを担当。2024年11月、タイミーにプロダクトデザイナーとしてジョイン、複雑な事業課題とユーザーのコアな体験設計に向き合っています。</font><br></p>\n<h2>☝️ 補足</h2>\n<ul>\n<li>オフライン開催のみ（オンライン配信なし）</li>\n<li>定員 20 名 → 25名に増員しました（8/12）</li>\n</ul>\n<h2>⌛ タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00〜19:30</td>\n<td style=\"text-align: left;\">会場受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30〜19:40</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40〜20:05</td>\n<td style=\"text-align: left;\">トークセッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05〜20:30</td>\n<td style=\"text-align: left;\">テーブルセッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30〜21:00</td>\n<td style=\"text-align: left;\">懇親会（フリータイム）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00〜21:05</td>\n<td style=\"text-align: left;\">アンケート回答</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:05〜21:30</td>\n<td style=\"text-align: left;\">終了予定（21:30会場終了）</td>\n</tr>\n</tbody>\n</table>\n<h2>🤝 主催</h2>\n<h2><strong><a href=\"https://timee.notion.site/timee/Timee-Engineering-Entrance-Book-b7380eb4f6954e29b2664fe6f5e775f9\" rel=\"nofollow\">株式会社タイミー</a></strong><br></h2>\n<div style=\"text-align:center;\">\n<a href=\"https://timee.notion.site/timee/Timee-Engineering-Entrance-Book-b7380eb4f6954e29b2664fe6f5e775f9\" rel=\"nofollow\"><img src=\"https://i.imgur.com/r7Icjm3.png\" width=\"350\"></a>\n</div>\n\n<p>タイミーは「この時間なら働ける」人と「この時間だけ働いてほしい」企業をつなぐマッチングプラットフォームです。\n「『はたらく』を通じて人生の可能性広げるインフラをつくる」というミッションを実現するため、サービスの持続可能性の探究と実現を目指し開発・運用に勤しんでいます。\n未来のことを考えて漸進的に改善がなされる自律的で小さなチームを実現し、サービス開発を推進していきたい<a href=\"https://product-recruit.timee.co.jp/designer\" rel=\"nofollow\">プロダクトデザイナーを募集中</a>です！<br></p>\n<h5></h5>\n<table style=\"border: solid 2px #1f81ad;\"><tbody><tr><td>\n\n<div style=\"font-size: 150%; font-weight: bold; color: #1f81ad;\"> ⚠️注意事項</div>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n\n <li>オフライン会場ではイベントレポート用などに写真撮影を行う場合があります、写真NG等ございましたら担当者にお申し付けください</li>\n<li>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>オンライン配信がある際は時として配信トラブルなどが発生する可能性があります。ご了承ください</li>\n<li>配信トラブル時のアナウンスは<a href=\"https://twitter.com/TimeeDev\" rel=\"nofollow\">TimeeDevのTwitter</a>よりイベントハッシュタグをつけて行います。</li>\n    <li>イベント参加時にご入力いただいた情報は、以下に基づき適切に扱います。\n     <ul><li><a href=\"https://timee.co.jp/policy/\" rel=\"nofollow\">株式会社タイミー プライバシーポリシー</a></li>\n</ul>\n        </li></ul>\nまた、ご参加者の方々が最大限楽しんで頂けるよう、運営サイドで参加にふさわしくないと判断させて頂いた方については、イベント中であろうとご退席をお願いすることがございます。\n<ul>\n<li>保険、宗教、ネットワークビジネスの勧誘が目的と見られる方</li>\n<li>その他運営サイドで参加が不適切だと判断した方</li>\n</ul>\n誠に恐れ入りますが、あらかじめご了承くださいませ。\n</td></tr></tbody></table>",
       "url": "https://timeedev.connpass.com/event/401659/",
@@ -169,7 +169,7 @@
       "started_at": "2026-08-19T19:30:00+09:00",
       "ended_at": "2026-08-19T21:05:00+09:00",
       "published_at": "2026-08-05T18:22:33+09:00",
-      "limit": 25,
+      "limit": 30,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -187,7 +187,7 @@
       "owner_display_name": "TimeeDev",
       "accepted": 25,
       "waiting": 0,
-      "updated_at": "2026-08-12T22:29:56+09:00"
+      "updated_at": "2026-08-19T09:10:38+09:00"
     },
     {
       "id": 402939,
@@ -283,37 +283,6 @@
       "updated_at": "2026-07-15T20:59:16+09:00"
     },
     {
-      "id": 401177,
-      "title": "第39回オープンエッジデバイス研究会",
-      "catch": "",
-      "description": "<h1>【第39回オープンエッジデバイス研究会】開催のお知らせ</h1>\n<h4>2023年度より、オープンエッジデバイス研究会として、<br>定期的な情報共有の会を小さく始め、<br>おかげさまで4年目を迎えることができました。皆様に感謝致します。</h4>\n<h2>アジェンダ<br></h2>\n<p>山中様（東京電機大学）「VR居合切りゲーム開発（仮）」<br>\nOEDC運営メンバ「Micro Maker Faire 浜松 出展報告」<br>\nさくたま「OEDC×Iwaken Lab. XR開発者向けマイコン入門ハンズオン開催報告」 <br></p>\n<h2>開催場所<br></h2>\n<p>現地: ソニークリエイティブラウンジ (ソニーグループ品川本社1F)<br>\nオンライン: 参加者のみにconnpass上でMicrosoft Teamsリンクを共有します<br></p>\n<h2>タイムテーブル<br></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">会場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">山中様（東京電機大学）「VR居合切りゲーム開発（仮）」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">OEDC運営メンバ「Micro Maker Faire 浜松 出展報告」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">さくたま「OEDC×Iwaken Lab. XR開発者向けマイコン入門ハンズオン開催報告」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">関連イベント紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">解散</td>\n</tr>\n</tbody>\n</table>\n<p><strong>懇親会参加の場合は、参加費・飲食代として現金で500円をご用意ください 。</strong></p>\n<h3>その他<br></h3>\n<p>開催情報は随時更新していきますのでご了承下さい。<br></p>\n<p>オープンエッジデバイスについて思うことやご相談なんでも結構です。<br>\nこの会で共有したい事があれば是非エントリーをお願いします。<br></p>\n<p>ご質問等ありましたら次のメールアドレスまでお問い合わせください。\nopenedgedevice@gmail.com</p>",
-      "url": "https://openedgedevice.connpass.com/event/401177/",
-      "image_url": null,
-      "hash_tag": "OEDC",
-      "started_at": "2026-08-19T19:00:00+09:00",
-      "ended_at": "2026-08-19T21:30:00+09:00",
-      "published_at": "2026-07-20T12:06:35+09:00",
-      "limit": 48,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13535,
-        "subdomain": "openedgedevice",
-        "title": "オープンエッジデバイス研究コミュニティ",
-        "url": "https://openedgedevice.connpass.com/"
-      },
-      "address": "東京都港区港南1-7-1",
-      "place": "ソニークリエイティブラウンジ",
-      "lat": "35.631211900000",
-      "lon": "139.743647700000",
-      "owner_id": 849423,
-      "owner_nickname": "openedgedevice",
-      "owner_display_name": "openedgedevice",
-      "accepted": 24,
-      "waiting": 0,
-      "updated_at": "2026-08-17T12:09:39+09:00"
-    },
-    {
       "id": 401663,
       "title": "（※開催日変更）Claude Code Fable 5 meetup！ #1",
       "catch": "〜Fableの性能を最大限活かす使い方・しくじりを語り合おう！〜",
@@ -348,7 +317,7 @@
       "id": 397623,
       "title": "【オフライン】田町.ai #2 LT大会 当日参加申し込み歓迎！",
       "catch": "",
-      "description": "<h2>内容</h2>\n<p><a href=\"https://tamachiai.connpass.com/\" rel=\"nofollow\">Tamachi.ai</a> は生成AIやその周辺技術・ノウハウに関する共有やエンジニアの交流を行う地域コミュニティです！\nオフラインで開催します！</p>\n<p>LTの内容は厳格に考えずに、アウトプットする自分の成長に繋がるから！くらいでもOKです！\n初心者・学生大歓迎！ワイワイやりましょう！</p>\n<p>「AIが少しでも絡んでいればOK」 です!</p>\n<ul>\n<li>業務でのAI導入して、成功した・失敗した話！</li>\n<li>AIでの圧倒的負債解消！</li>\n<li>最近触っている 生成AI / AIエージェント の話！</li>\n<li>AI時代の組織の悩み！</li>\n<li>鬼の Vibe Coding！</li>\n<li>ハーネスエンジニアリングやってみた話！</li>\n</ul>\n<p>などなど、幅広く募集します！</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>開催挨拶・会場説明等</td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>自己紹介</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>LT 1：生成AIを自社サービスに組み込む際の勘所・ハマりどころについて by 株式会社バックテック nyagato_00</td>\n</tr>\n<tr>\n<td>20:06</td>\n<td>LT 2</td>\n</tr>\n<tr>\n<td>20:12</td>\n<td>LT 3</td>\n</tr>\n<tr>\n<td>20:18</td>\n<td>LT 4</td>\n</tr>\n<tr>\n<td>20:24</td>\n<td>LT 5</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>歓談</td>\n</tr>\n</tbody>\n</table>\n<h2>会場について</h2>\n<p>東京都 港区 西新橋 3-23-5</p>\n<p>東京都港区西新橋三丁目23番5号\n都営地下鉄三田線 御成門駅 徒歩2分(A5出口)\n東京メトロ日比谷線 神谷町駅 徒歩10分(3出口)\n都営浅草線/都営大江戸線 大門駅 徒歩10分(A6出口)\nJR各線 新橋駅 徒歩12分(鳥森口)</p>\n<p><a href=\"https://www.google.com/maps/place/ANYZ/@35.6621322,139.7509485,192m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b1b4cad0425:0x20c61c8a06a303bc!8m2!3d35.6621311!4d139.7515922!16s%2Fg%2F11xml91bdj?entry=tts&amp;g_ep=EgoyMDI1MDcxNi4wIPu8ASoASAFQAw%3D%3D&amp;skid=7a982348-8bbf-410a-85f7-13dab1babc33\" rel=\"nofollow\">https://www.google.com/maps/place/ANYZ/@35.6621322,139.7509485,192m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b1b4cad0425:0x20c61c8a06a303bc!8m2!3d35.6621311!4d139.7515922!16s%2Fg%2F11xml91bdj?entry=tts&amp;g_ep=EgoyMDI1MDcxNi4wIPu8ASoASAFQAw%3D%3D&amp;skid=7a982348-8bbf-410a-85f7-13dab1babc33</a></p>\n<h2>入館方法</h2>\n<p>1階 エントランスでお待ちしております。</p>\n<h2>アンチハラスメントポリシー</h2>\n<p>全ての参加者の皆様が安心して <a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> に参加していただけますよう、<a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> では<a href=\"https://2025.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigiアンチハラスメントポリシー</a>に準ずるCode of Conductを設けます。<a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> に参加される方は、上記ポリシーに同意していただいているものとみなします</p>",
+      "description": "<h2>内容</h2>\n<p><a href=\"https://tamachiai.connpass.com/\" rel=\"nofollow\">Tamachi.ai</a> は生成AIやその周辺技術・ノウハウに関する共有やエンジニアの交流を行う地域コミュニティです！\nオフラインで開催します！</p>\n<p>LTの内容は厳格に考えずに、アウトプットする自分の成長に繋がるから！くらいでもOKです！\n初心者・学生大歓迎！ワイワイやりましょう！</p>\n<p>「AIが少しでも絡んでいればOK」 です!</p>\n<ul>\n<li>業務でのAI導入して、成功した・失敗した話！</li>\n<li>AIでの圧倒的負債解消！</li>\n<li>最近触っている 生成AI / AIエージェント の話！</li>\n<li>AI時代の組織の悩み！</li>\n<li>鬼の Vibe Coding！</li>\n<li>ハーネスエンジニアリングやってみた話！</li>\n</ul>\n<p>などなど、幅広く募集します！</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>開催挨拶・会場説明等</td>\n</tr>\n<tr>\n<td>19:35</td>\n<td>自己紹介</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>LT 1：生成AIを自社サービスに組み込む際の勘所・ハマりどころについて by 株式会社バックテック nyagato_00</td>\n</tr>\n<tr>\n<td>20:06</td>\n<td>LT 2</td>\n</tr>\n<tr>\n<td>20:12</td>\n<td>LT 3</td>\n</tr>\n<tr>\n<td>20:18</td>\n<td>LT 4</td>\n</tr>\n<tr>\n<td>20:24</td>\n<td>LT 5</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>歓談</td>\n</tr>\n</tbody>\n</table>\n<h2>会場について</h2>\n<p>東京都 港区 西新橋 3-23-5</p>\n<p>東京都港区西新橋三丁目23番5号\n都営地下鉄三田線 御成門駅 徒歩2分(A5出口)\n東京メトロ日比谷線 神谷町駅 徒歩10分(3出口)\n都営浅草線/都営大江戸線 大門駅 徒歩10分(A6出口)\nJR各線 新橋駅 徒歩12分(鳥森口)</p>\n<p><a href=\"https://www.google.com/maps/place/ANYZ/@35.6621322,139.7509485,192m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b1b4cad0425:0x20c61c8a06a303bc!8m2!3d35.6621311!4d139.7515922!16s%2Fg%2F11xml91bdj?entry=tts&amp;g_ep=EgoyMDI1MDcxNi4wIPu8ASoASAFQAw%3D%3D&amp;skid=7a982348-8bbf-410a-85f7-13dab1babc33\" rel=\"nofollow\">https://www.google.com/maps/place/ANYZ/@35.6621322,139.7509485,192m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b1b4cad0425:0x20c61c8a06a303bc!8m2!3d35.6621311!4d139.7515922!16s%2Fg%2F11xml91bdj?entry=tts&amp;g_ep=EgoyMDI1MDcxNi4wIPu8ASoASAFQAw%3D%3D&amp;skid=7a982348-8bbf-410a-85f7-13dab1babc33</a></p>\n<h2>入館方法</h2>\n<p>1階エントランスよりエレベーターにて2階までお越しください。\nエレベーターを出て右手の奥までお進みください。途中扉がありますが、こちらも開けていただき奥までお進みください。\nセミナールームBが会場になります。</p>\n<h2>アンチハラスメントポリシー</h2>\n<p>全ての参加者の皆様が安心して <a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> に参加していただけますよう、<a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> では<a href=\"https://2025.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigiアンチハラスメントポリシー</a>に準ずるCode of Conductを設けます。<a href=\"http://Tamachi.ai\" rel=\"nofollow\">Tamachi.ai</a> に参加される方は、上記ポリシーに同意していただいているものとみなします</p>",
       "url": "https://tamachiai.connpass.com/event/397623/",
       "image_url": "https://media.connpass.com/thumbs/0a/5a/0a5abfac4c57a46bbd5bb8a8d42111e2.png",
       "hash_tag": "",
@@ -373,7 +342,38 @@
       "owner_display_name": "nyagato_00",
       "accepted": 7,
       "waiting": 0,
-      "updated_at": "2026-08-12T17:46:08+09:00"
+      "updated_at": "2026-08-19T09:41:36+09:00"
+    },
+    {
+      "id": 401177,
+      "title": "第39回オープンエッジデバイス研究会",
+      "catch": "",
+      "description": "<h1>【第39回オープンエッジデバイス研究会】開催のお知らせ</h1>\n<h4>2023年度より、オープンエッジデバイス研究会として、<br>定期的な情報共有の会を小さく始め、<br>おかげさまで4年目を迎えることができました。皆様に感謝致します。</h4>\n<h2>アジェンダ<br></h2>\n<p>山中様（東京電機大学）「VR居合切りゲーム開発（仮）」<br>\nOEDC運営メンバ「Micro Maker Faire 浜松 出展報告」<br>\nさくたま「OEDC×Iwaken Lab. XR開発者向けマイコン入門ハンズオン開催報告」 <br></p>\n<h2>開催場所<br></h2>\n<p>現地: ソニークリエイティブラウンジ (ソニーグループ品川本社1F)<br>\nオンライン: 参加者のみにconnpass上でMicrosoft Teamsリンクを共有します<br></p>\n<h2>タイムテーブル<br></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">会場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">山中様（東京電機大学）「VR居合切りゲーム開発（仮）」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">OEDC運営メンバ「Micro Maker Faire 浜松 出展報告」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">さくたま「OEDC×Iwaken Lab. XR開発者向けマイコン入門ハンズオン開催報告」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">関連イベント紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30</td>\n<td style=\"text-align: left;\">解散</td>\n</tr>\n</tbody>\n</table>\n<p><strong>懇親会参加の場合は、参加費・飲食代として現金で500円をご用意ください 。</strong></p>\n<h3>その他<br></h3>\n<p>開催情報は随時更新していきますのでご了承下さい。<br></p>\n<p>オープンエッジデバイスについて思うことやご相談なんでも結構です。<br>\nこの会で共有したい事があれば是非エントリーをお願いします。<br></p>\n<p>ご質問等ありましたら次のメールアドレスまでお問い合わせください。\nopenedgedevice@gmail.com</p>",
+      "url": "https://openedgedevice.connpass.com/event/401177/",
+      "image_url": null,
+      "hash_tag": "OEDC",
+      "started_at": "2026-08-19T19:00:00+09:00",
+      "ended_at": "2026-08-19T21:30:00+09:00",
+      "published_at": "2026-07-20T12:06:35+09:00",
+      "limit": 48,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13535,
+        "subdomain": "openedgedevice",
+        "title": "オープンエッジデバイス研究コミュニティ",
+        "url": "https://openedgedevice.connpass.com/"
+      },
+      "address": "東京都港区港南1-7-1",
+      "place": "ソニークリエイティブラウンジ",
+      "lat": "35.631211900000",
+      "lon": "139.743647700000",
+      "owner_id": 849423,
+      "owner_nickname": "openedgedevice",
+      "owner_display_name": "openedgedevice",
+      "accepted": 23,
+      "waiting": 0,
+      "updated_at": "2026-08-17T12:09:39+09:00"
     },
     {
       "id": 400047,
@@ -402,7 +402,7 @@
       "owner_id": 929443,
       "owner_nickname": "GDEPsolutions",
       "owner_display_name": "GPU UNITE 事務局",
-      "accepted": 86,
+      "accepted": 85,
       "waiting": 0,
       "updated_at": "2026-08-18T11:09:03+09:00"
     },
