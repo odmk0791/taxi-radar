@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-20T19:21:24.780064+09:00",
+  "fetched_at": "2026-08-20T20:19:01.695675+09:00",
   "date": "20260820",
   "count": 20,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-21T00:01:32+09:00",
       "limit": 23,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17811,
         "subdomain": "tamachi-go",
@@ -47,7 +47,7 @@
       "published_at": "2026-08-10T11:02:01+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 12631,
         "subdomain": "kauche",
@@ -185,7 +185,7 @@
       "owner_id": 370165,
       "owner_nickname": "primeNumber",
       "owner_display_name": "primeNumber",
-      "accepted": 98,
+      "accepted": 99,
       "waiting": 0,
       "updated_at": "2026-08-20T17:47:08+09:00"
     },
@@ -366,7 +366,7 @@
       "owner_id": 1030071,
       "owner_nickname": "daigos432_findy",
       "owner_display_name": "daigos432_findy",
-      "accepted": 945,
+      "accepted": 949,
       "waiting": 5,
       "updated_at": "2026-08-20T19:14:21+09:00"
     },
@@ -459,7 +459,7 @@
       "owner_id": 933519,
       "owner_nickname": "Acompany",
       "owner_display_name": "Acompany",
-      "accepted": 80,
+      "accepted": 79,
       "waiting": 0,
       "updated_at": "2026-08-20T09:49:19+09:00"
     },
@@ -507,7 +507,7 @@
       "published_at": "2026-07-16T18:01:27+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 11156,
         "subdomain": "re-shine",
@@ -600,7 +600,7 @@
       "published_at": "2026-07-22T03:10:03+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4422,
         "subdomain": "fgstudy",
