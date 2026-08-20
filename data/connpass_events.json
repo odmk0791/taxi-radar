@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-21T04:24:36.426427+09:00",
+  "fetched_at": "2026-08-21T05:19:23.643724+09:00",
   "date": "20260821",
   "count": 18,
   "events": [
@@ -247,7 +247,7 @@
       "owner_id": 1034164,
       "owner_nickname": "Simplex_seike",
       "owner_display_name": "Simplex_seike",
-      "accepted": 28,
+      "accepted": 30,
       "waiting": 0,
       "updated_at": "2026-08-20T19:37:29+09:00"
     },
@@ -459,7 +459,7 @@
       "owner_id": 1013,
       "owner_nickname": "N_A",
       "owner_display_name": "moriyuya",
-      "accepted": 33,
+      "accepted": 34,
       "waiting": 0,
       "updated_at": "2026-08-20T18:48:45+09:00"
     },
