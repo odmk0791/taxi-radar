@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-20T15:31:44.424008+09:00",
+  "fetched_at": "2026-08-20T16:34:13.074759+09:00",
   "date": "20260820",
   "count": 19,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 696241,
       "owner_nickname": "naoharada___",
       "owner_display_name": "Nao Harada",
-      "accepted": 3,
+      "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-17T01:01:37+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 255614,
       "owner_nickname": "rymiyamoto",
       "owner_display_name": "パンダム",
-      "accepted": 8,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-08-20T14:05:33+09:00"
     },
@@ -159,37 +159,6 @@
       "updated_at": "2026-08-19T15:52:14+09:00"
     },
     {
-      "id": 397239,
-      "title": "エンジニア英語キャリア Meetup #3",
-      "catch": "〜英語キャリア はじめの一歩、次の一歩〜",
-      "description": "<h2>この会の趣旨</h2>\n<p>「英語ができれば、キャリアはもっと自由になる」\n 分かってはいても、最初の一歩は重いものです。</p>\n<p>今回のmeetupは、実際にその一歩を踏み出したエンジニアたちのを生々しいエピソードをお話しいただきます。</p>\n<p>primeNumberの鈴木健太からは、AIを使いながら取り組んだ英語学習の1年間と現在地について。</p>\n<p>UPSIDERの赤沼寛明さんからは、多国籍チームを率いてきた立場から、「会話が苦手でも、会話の土台はつくれる」という、シャイなエンジニアが英語環境で生き抜いたエピソードを。</p>\n<p>3人目は、<strong>「登壇者非公開」「配信なし」「SNS共有NG」</strong>で、ベイエリアの外資企業にリモート勤務するエンジニアからお話しいただきます！</p>\n<p>会場でしか聞けない生々しい話を、ぜひお楽しみに。</p>\n<p>後半の懇親会では、英語話者（日本語OK）をゲストに招き、リラックスした雰囲気で英語に触れる機会を提供します 。</p>\n<ul>\n<li><strong>ドリンクのみご用意します。</strong>お食事は各自ご持参いただくか、事前にお済ませください。</li>\n<li><strong>Only drinks will be provided.</strong> Please bring your own food or eat before you arrive.</li>\n</ul>\n<p>このイベントでは、英語話者も日本語話者も「お互いの歩み寄り」でコミュニケーションを取ることを重視しています。\n<a href=\"https://speakerdeck.com/kekekenta/aishi-dai-nioiteying-yu-xue-xi-haben-dang-nibi-yao-wei-jing-yan-karanobairingarukiyarianoshi-mefang-wojiao-emasu\" rel=\"nofollow\">https://speakerdeck.com/kekekenta/aishi-dai-nioiteying-yu-xue-xi-haben-dang-nibi-yao-wei-jing-yan-karanobairingarukiyarianoshi-mefang-wojiao-emasu</a></p>\n<h3>前回の様子</h3>\n<p><a href=\"https://zenn.dev/primenumber/articles/9b42fe0edec403\" rel=\"nofollow\">https://zenn.dev/primenumber/articles/9b42fe0edec403</a></p>\n<p>※ 動画付き</p>\n<h3>参加対象者</h3>\n<p>エンジニア、EM、SRE、QA、インフラエンジニア、PdMなど、 <strong>技術に携わる方</strong> ならどなたでも大歓迎です！</p>\n<p><em>We welcome everyone in tech, including Software Engineers, EMs, SREs, QAs, Infrastructure Engineers, and more!</em></p>\n<h4>英語キャリアに興味のある日本人エンジニア</h4>\n<ul>\n<li>英語を使ったキャリアに興味はあるが、一歩を踏み出せずにいる方</li>\n<li>過去に英語学習で挫折した経験があり、リベンジしたい方</li>\n<li><strong>「英語は苦手だけど、いつかはグローバルな環境で働いてみたい」</strong> という熱意のある方</li>\n</ul>\n<h4>英語話者・グローバルエンジニアの方 (English-Speaking / Global Engineers)</h4>\n<p>英語話者として、参加者が自然に英語に触れられる環境作りをサポートいただける方を募集しています。</p>\n<p>We are looking for English-speaking guests to help create a natural environment where participants can feel comfortable practicing and interacting in English.</p>\n<ul>\n<li>属性 (Background)： 英語が流暢で、IT・エンジニアリング分野に関心のある方 / <em>Fluent in English and interested in IT/Engineering.</em></li>\n<li>[必須 (Required)] 日本語スキル(Japanese Skills)： 日常会話レベルの日本語ができる方（日本語学習中の方も大歓迎です！） / <em>Conversational Japanese (Japanese learners are more than welcome!).</em></li>\n<li>こんな方に(Ideal for)： 異文化理解のある日本のエンジニアと出会いたい方や、日本のテックコミュニティに貢献したい方 / <em>Those who want to connect with Japanese engineers interested in global cultures or wish to contribute to the Japanese tech community.</em></li>\n</ul>\n<p>日本人参加者には英語に触れるきっかけを、英語話者の方には日本語での交流や新たなネットワークを。お互いにフォローし合える安心感のある場を目指しています。</p>\n<p><em>We aim to create a supportive environment where Japanese participants can practice English, and English speakers can enjoy Japanese conversation and networking.</em></p>\n<h2>タイムテーブル(予定)</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>18:30 - 19:00</strong></td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:00</strong></td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:05</strong></td>\n<td style=\"text-align: left;\">(session 1) AIを使った英語学習 1年間の成果(仮)</td>\n<td style=\"text-align: left;\">鈴木 健太（Kenta Suzuki） / 株式会社primeNumber</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:15</strong></td>\n<td style=\"text-align: left;\">(session 2) English for Shy Engineers: Making a Base for Conversation Alone</td>\n<td style=\"text-align: left;\">赤沼 寛明（Hiroaki Akanuma） / 株式会社UPSIDER</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:30</strong></td>\n<td style=\"text-align: left;\">イベントスポンサー紹介（5分）</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:35</strong></td>\n<td style=\"text-align: left;\">==== オンライン配信終了 ====</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:35</strong></td>\n<td style=\"text-align: left;\">(session 3) Full remote, fully alone?</td>\n<td style=\"text-align: left;\"><strong>登壇者非公開</strong>/<strong>オンライン配信なし</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:05 - 20:55</strong></td>\n<td style=\"text-align: left;\">懇親タイム <br> <strong>Only drinks will be provided.</strong><br>Please bring your own food or eat before you arrive.</td>\n<td style=\"text-align: left;\">全員</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>21:00</strong></td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<h2>発表</h2>\n<h3>(session 1) AIを使った英語学習 1年間の成果(仮)</h3>\n<p>鈴木 健太（Kenta Suzuki） / 株式会社primeNumber CTO</p>\n<p>AIを色々使って1年間英語学習を続けた泥臭い話をします</p>\n<ul>\n<li><a href=\"https://x.com/kekekenta\" rel=\"nofollow\">https://x.com/kekekenta</a></li>\n</ul>\n<h3>(session 2) English for Shy Engineers: Making a Base for Conversation Alone</h3>\n<p><img src=\"https://i.imgur.com/1nw9GBz.jpeg\" width=\"120\">\n <strong>赤沼 寛明（Hiroaki Akanuma） / 株式会社UPSIDER</strong></p>\n<p>エムスリーやNubee Tokyoでの開発を経て、2015年にユニファ東京オフィスの立ち上げ時に参画。取締役CTOとしてプロダクトデベロップメント本部を統括し、外国籍メンバーを含む多国籍チームを率いて複数の新規プロダクトを立ち上げ。2025年4月よりUPSIDER「<a href=\"http://支払い.com\" rel=\"nofollow\">支払い.com</a>」事業部CTO。\nLooking forward to seeing you all at the meetup!<br></p>\n<ul>\n<li><a href=\"https://x.com/akanuma?s=21&amp;t=2kGC5oQwsN7goJYzDoplFA\" rel=\"nofollow\">https://x.com/akanuma?s=21&amp;t=2kGC5oQwsN7goJYzDoplFA</a></li>\n</ul>\n<h3>(session 3) Full remote, fully alone?</h3>\n<p><strong>※オンライン配信はありません</strong></p>\n<p>登壇者非公開</p>\n<p>色々あって、西海岸とロンドンに挟まれながら極東で孤独な窓際社員をやっています。</p>\n<h2>運営</h2>\n<h3>Kenta Suzuki</h3>\n<p>株式会社primeNumber / CTO</p>\n<ul>\n<li><a href=\"https://x.com/kekekenta\" rel=\"nofollow\">https://x.com/kekekenta</a></li>\n</ul>\n<h2>主催</h2>\n<h3>株式会社primeNumber</h3>\n<p>primeNumberはデータとAIを企業の成長エンジンへと進化させる、データテクノロジーカンパニーです。\nAI-Readyなデータ基盤を実現するデータテクノロジーを軸に、ソリューションサービスを通じてAI-Nativeな事業成長をご支援します。</p>\n<p>提供サービス: 「TROCCO」「COMETA」「primeBusinessAgent」「Professional Services」<br>\n会社HP：<a href=\"https://primenumber.com/\" rel=\"nofollow\">https://primenumber.com/</a></p>\n<div style=\"text-align:center;\">\n<a href=\"https://primenumber.co.jp/\" rel=\"nofollow\"><img src=\"https://images.microcms-assets.io/assets/e18950a5e88445ea8e7acc156bf5a941/dcfce21ed99942fe8e0310f0212bfbe3/primeNumber_logo.png\" width=\"500\"></a>\n</div>\n\n<h2>スポンサー</h2>\n<h3>TokyoDev株式会社</h3>\n<p>TokyoDevは、英語で働ける日本のIT企業とエンジニアをつなぐ求人サイト・コミュニティです。</p>\n<p>会社HP：<a href=\"https://www.tokyodev.com\" rel=\"nofollow\">https://www.tokyodev.com</a></p>\n<div style=\"text-align:center;\">\n<a href=\"https://www.tokyodev.com/ja/about\" rel=\"nofollow\"><img src=\"https://i.imgur.com/oWoWCTH.png\" width=\"500\"></a>\n</div>\n\n<h2>行動規範（イベントに参加される全ての方へのお願い）</h2>\n<p>イベント行動規範は、下記のような事柄に関わらずすべての人にとって安心・安全なイベント体験を提供するためのものです。この規範は、主催・運営する全てのイベントに適用され、イベントに参加される全ての方に対象とします。\nイベント参加者は、次の規範に従う必要があります。</p>\n<h3>1. イベントの趣旨と反することはしない</h3>\n<p>イベントの目的を理解し、目的にそぐわない行動はしないよう努めてください。</p>\n<h3>2. ハラスメントはしない</h3>\n<p>ハラスメントには、ジェンダー・アイデンティティーと性表現、性的指向、障がい、ニューロ・ダイバーシティ、外見、身体の大きさ、民族、国籍、人種、年齢、宗教、その他の保護対象事項、また公共の場での不適切画像、意図的な脅迫、ストーカー、追い掛け行為、写真や動画撮影による嫌がらせ行為、及び、講演やイベントの断続的な妨害、侮辱的な言動、不適切な身体的接触、不愉快な視線などによってマイノリティなどの社会的弱者の支配を促す言動が含まれますが、これに限定されるものではありません。<br>\nハラスメント行為を止めるように言われた参加者は、直ちに従ってください。</p>\n<h3>3. 全ての参加者の安全を脅かさない</h3>\n<p>イベント会場の内装や付属の調度品などを故意に壊したり、各会場で使用が禁止されている物を使用したりしないでください。<br>\n法令で所持・携帯が禁止されている物、または人に危害を与え、もしくは他の物を損傷するおそれのある物などを持ち込まないでください。</p>\n<h3>4. 行動規範の運用</h3>\n<p>あなたを不快にさせている相手は、そのことに気がついていないかもしれません。あなたが何か不快に思ったり、嫌がらせを受けたり、その他何か懸念に思うことがあったらすぐにイベントスタッフに教えてください。<br>\nまた、誰かが誰かを不快にさせたり、嫌がらせを行っているのを見聞きした場合も、すぐにイベントスタッフに教えてください。\nこの規範に違反している行為を発見した場合、スタッフが即座に中止するよう求めます。場合によっては、イベントからの退席や今後のイベント参加への禁止等を求めることがあります。この場合、既に受領した会費等は返金致しません。<br>\n質問や疑問があれば、イベントスタッフまでご連絡ください。</p>",
-      "url": "https://pn-developer-lounge.connpass.com/event/397239/",
-      "image_url": "https://media.connpass.com/thumbs/b0/5d/b05d74ea1fdd5fb2bf1ed87e10274a7e.png",
-      "hash_tag": "DevEnglishJP",
-      "started_at": "2026-08-20T19:00:00+09:00",
-      "ended_at": "2026-08-20T21:00:00+09:00",
-      "published_at": "2026-06-18T12:02:01+09:00",
-      "limit": 170,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16151,
-        "subdomain": "pn-developer-lounge",
-        "title": "pN Developer Lounge",
-        "url": "https://pn-developer-lounge.connpass.com/"
-      },
-      "address": "〒141-0021 東京都品川区上大崎３丁目１−１ JR東急目黒ビル 5F",
-      "place": "primeNumber本社",
-      "lat": "35.632686400000",
-      "lon": "139.715750800000",
-      "owner_id": 370165,
-      "owner_nickname": "primeNumber",
-      "owner_display_name": "primeNumber",
-      "accepted": 98,
-      "waiting": 0,
-      "updated_at": "2026-08-13T18:47:40+09:00"
-    },
-    {
       "id": 385009,
       "title": "【秋葉原開催】会社の中で使えるファシリテーションスキルを向上するための研究会 -実践編 #4-",
       "catch": "",
@@ -221,6 +190,68 @@
       "updated_at": "2026-08-03T10:02:32+09:00"
     },
     {
+      "id": 401421,
+      "title": "成功事例だけでは見えない、AI駆動開発のリアル",
+      "catch": "〜AI駆動開発で、現場・自分は、どう変わっていくのか〜",
+      "description": "<h2>🚀 成功事例だけでは見えない、AI駆動開発のリアル</h2>\n<p>〜AI駆動開発で、現場は・自分は、どう変わっていくのか〜</p>\n<hr>\n<p>生成AIやAIエージェントの登場により、コーディング、設計、レビュー、テストといった開発プロセスは、大きく変わりつつあります。しかし、その変化の実態は、成功事例やニュースだけではなかなか見えてきません。実際の現場では何が便利になり、何がまだ人の手を必要としているのでしょうか。</p>\n<p>今回は、株式会社YuBASE 代表取締役CEOの坂尻愛明氏をお招きし、AI駆動開発のリアルな現在地と、これからのエンジニアに求められる力についてお話しいただきます。講演のあとは、経営者・エンジニアを交えたトークセッション、参加者同士のディスカッション、そして懇親会まで。今日出会った人たちと、対話を大切にした会にしたいと思っています！</p>\n<hr>\n<h2>🙋 こんな方におすすめ</h2>\n<ul>\n<li>アプリ開発に関わっている方（業務や個人開発など）</li>\n<li>一人で調べるより、人と話しながらキャッチアップしたい方</li>\n<li>記事や公式ドキュメントだけでは分からない、生の話を聞きたい方</li>\n<li>AI駆動開発という言葉は聞くけれど、自分の現場でどう活かせるか知りたい方、など</li>\n</ul>\n<p>もちろん、上記に当てはまらない方のご参加も大歓迎です。少しでもピンときたら、お気軽にお越しください。</p>\n<hr>\n<h2>🗓️ イベント構成</h2>\n<p><strong>オープニング（19:00〜19:05／5分）</strong>\n趣旨説明・コミュニティ紹介・登壇者紹介。</p>\n<p><strong>①坂尻愛明氏 講演（19:05〜19:35／30分・15分×2部構成）</strong></p>\n<p>第1部：開発現場はどこまで変わっているのか（15分）\n生成AI・AIエージェントによって、コーディング・設計・レビュー・テストがどう変わってきているかを整理します。便利になった部分と、まだ人の判断が要る部分の両方に触れていきます。</p>\n<p>第2部：エンジニアは何を試し、どう学び続けるべきか（15分）\nAIを使いながらどう開発力を高め、キャリアに活かすか。試したこと・迷ったことも含めた、実装のリアルな話をいただきます。</p>\n<p><strong>②トークセッション（19:35〜19:50／15分）</strong>\n坂尻愛明氏に、天野大輔・石川達也・伊藤光志朗が加わり、対談形式で講演内容を深掘り。</p>\n<p><strong>③参加者交流セッション（19:50〜20:05／15分）</strong>\n少人数のグループに分かれ、参加者同士でテーマについて話し合う。</p>\n<p><strong>④懇親会（20:05〜20:30／25分）</strong>\n会場のカフェエリアにて、自由に交流・歓談。</p>\n<hr>\n<h2>⏰ タイムライン一覧</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00〜19:05</td>\n<td>オープニング（趣旨説明・コミュニティ紹介・登壇者紹介）</td>\n</tr>\n<tr>\n<td>19:05〜19:20</td>\n<td>坂尻愛明氏 講演①</td>\n</tr>\n<tr>\n<td>19:20〜19:35</td>\n<td>坂尻愛明氏 講演②</td>\n</tr>\n<tr>\n<td>19:35〜19:50</td>\n<td>トークセッション（坂尻愛明×天野大輔×石川達也×伊藤光志朗）</td>\n</tr>\n<tr>\n<td>19:50〜20:05</td>\n<td>参加者交流セッション</td>\n</tr>\n<tr>\n<td>20:05〜20:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>🎤 登壇者</h2>\n<p><strong>坂尻愛明 氏｜株式会社YuBASE 代表取締役CEO</strong></p>\n<p>楽天株式会社でECコンサルタント、株式会社BluePlanet-works・フリーランスでシステムエンジニアを経験した後、株式会社YuBASEを創業。BtoB向けSaaSや業務改善ツール開発、新規事業開発支援など、複数サービスの要件定義・開発に携わる。\nまた、教育事業として社内エンジニアのAI活用カリキュラムを提供する他、起業家エンジニア養成学校 G's AI教育主任講師、障害福祉特化AI研修のWelvieAI教材監修も務める。</p>\n<p><strong>天野 大輔｜株式会社レガシィ 代表取締役CEO</strong></p>\n<p>大手情報システム会社でシステムエンジニアとしての経験を経た後、公認会計士・税理士としてのキャリアを経て、現在は税理士法人レガシィの代表を務める。経営者としての顔を持ちながら、個人でもアプリ開発に挑戦し続けている。</p>\n<p><strong>石川 達也｜株式会社モバリー 代表取締役CEO</strong></p>\n<p>Flutterを中心に、バックエンドやWebフロントエンドの開発にも携わっているエンジニア。Flutterでの開発経験は6年になる。これまで、サービスの新規立ち上げやフルリプレイス、実証実験アプリなどのプロジェクトに多く参加。\n現在は主に自身のアプリ開発と受託開発を行っている。</p>\n<p><strong>伊藤 光志朗｜株式会社レガシィ エンジニア</strong></p>\n<p>文系出身ながらWeb技術への興味が高じてプログラマーの道へ。SESとしてWebシステムや業務システムの開発を経験したのち、2025年に株式会社レガシィへ入社。\n現在はエンジニアとして\"AIユイゴン Well-B\"の開発に携わっている。</p>\n<hr>\n<h2>🎙️ 司会・進行</h2>\n<p><strong>宮川 隼｜株式会社レガシィ デジタル推進部</strong></p>\n<p>士業向けBtoB営業を経て、現在は新規事業の立ち上げを担当。企画・推進・営業を通じて、サービスの事業化に取り組んでいる。Liviuum Techでは運営メンバーとして、イベントの企画・運営を行っている。</p>\n<p><strong>萩原 実咲｜株式会社レガシィ デジタル推進部</strong></p>\n<p>株式会社レガシィのデジタル推進部にて、士業向けのAI・デジタル活用支援や、新規サービスの企画・改善に携わっている。Liviuum Techでは運営メンバーとして、イベントの企画・運営を行っている。</p>\n<hr>\n<h2>⚠️ ご参加にあたって</h2>\n<ul>\n<li>質問だけでなく、経験・知見・失敗の共有を歓迎します</li>\n<li>技術レベルや所属にかかわらず、相手を尊重し、学び合う姿勢を大切にします</li>\n<li>一方的な営業や勧誘を目的とした参加はご遠慮ください</li>\n<li>相手の技術レベルや意見を否定、優劣をつけるような言動はお控えください</li>\n</ul>\n<p>※当日の様子を撮影させていただく場合がございます。<br>\n※今後のイベントについてご案内をお送りする場合がございます。<br>\n※進行状況により、時間が前後する場合がございます。<br>\n※ご提供いただいた個人情報は、イベントの運営・管理、および今後の企画検討のために利用いたします</p>",
+      "url": "https://liviuumtech.connpass.com/event/401421/",
+      "image_url": "https://media.connpass.com/thumbs/b9/7d/b97d1ba7c7204a87da451228a85a1cb3.png",
+      "hash_tag": "",
+      "started_at": "2026-08-20T19:00:00+09:00",
+      "ended_at": "2026-08-20T20:30:00+09:00",
+      "published_at": "2026-07-30T17:03:55+09:00",
+      "limit": 35,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17957,
+        "subdomain": "liviuumtech",
+        "title": "リビウムテック (Liviuum Tech)",
+        "url": "https://liviuumtech.connpass.com/"
+      },
+      "address": "〒104-0028 東京都中央区八重洲２丁目２−１ 東京ミッドタウン八重洲 八重洲セントラルタワ 12F",
+      "place": "株式会社レガシィ",
+      "lat": "35.679651200000",
+      "lon": "139.769277200000",
+      "owner_id": 1038575,
+      "owner_nickname": "iiilllii_cmp",
+      "owner_display_name": "Hayato Miyakawa",
+      "accepted": 18,
+      "waiting": 0,
+      "updated_at": "2026-08-20T16:26:30+09:00"
+    },
+    {
+      "id": 397239,
+      "title": "エンジニア英語キャリア Meetup #3",
+      "catch": "〜英語キャリア はじめの一歩、次の一歩〜",
+      "description": "<h2>この会の趣旨</h2>\n<p>「英語ができれば、キャリアはもっと自由になる」\n 分かってはいても、最初の一歩は重いものです。</p>\n<p>今回のmeetupは、実際にその一歩を踏み出したエンジニアたちのを生々しいエピソードをお話しいただきます。</p>\n<p>primeNumberの鈴木健太からは、AIを使いながら取り組んだ英語学習の1年間と現在地について。</p>\n<p>UPSIDERの赤沼寛明さんからは、多国籍チームを率いてきた立場から、「会話が苦手でも、会話の土台はつくれる」という、シャイなエンジニアが英語環境で生き抜いたエピソードを。</p>\n<p>3人目は、<strong>「登壇者非公開」「配信なし」「SNS共有NG」</strong>で、ベイエリアの外資企業にリモート勤務するエンジニアからお話しいただきます！</p>\n<p>会場でしか聞けない生々しい話を、ぜひお楽しみに。</p>\n<p>後半の懇親会では、英語話者（日本語OK）をゲストに招き、リラックスした雰囲気で英語に触れる機会を提供します 。</p>\n<ul>\n<li><strong>ドリンクのみご用意します。</strong>お食事は各自ご持参いただくか、事前にお済ませください。</li>\n<li><strong>Only drinks will be provided.</strong> Please bring your own food or eat before you arrive.</li>\n</ul>\n<p>このイベントでは、英語話者も日本語話者も「お互いの歩み寄り」でコミュニケーションを取ることを重視しています。\n<a href=\"https://speakerdeck.com/kekekenta/aishi-dai-nioiteying-yu-xue-xi-haben-dang-nibi-yao-wei-jing-yan-karanobairingarukiyarianoshi-mefang-wojiao-emasu\" rel=\"nofollow\">https://speakerdeck.com/kekekenta/aishi-dai-nioiteying-yu-xue-xi-haben-dang-nibi-yao-wei-jing-yan-karanobairingarukiyarianoshi-mefang-wojiao-emasu</a></p>\n<h3>前回の様子</h3>\n<p><a href=\"https://zenn.dev/primenumber/articles/9b42fe0edec403\" rel=\"nofollow\">https://zenn.dev/primenumber/articles/9b42fe0edec403</a></p>\n<p>※ 動画付き</p>\n<h3>参加対象者</h3>\n<p>エンジニア、EM、SRE、QA、インフラエンジニア、PdMなど、 <strong>技術に携わる方</strong> ならどなたでも大歓迎です！</p>\n<p><em>We welcome everyone in tech, including Software Engineers, EMs, SREs, QAs, Infrastructure Engineers, and more!</em></p>\n<h4>英語キャリアに興味のある日本人エンジニア</h4>\n<ul>\n<li>英語を使ったキャリアに興味はあるが、一歩を踏み出せずにいる方</li>\n<li>過去に英語学習で挫折した経験があり、リベンジしたい方</li>\n<li><strong>「英語は苦手だけど、いつかはグローバルな環境で働いてみたい」</strong> という熱意のある方</li>\n</ul>\n<h4>英語話者・グローバルエンジニアの方 (English-Speaking / Global Engineers)</h4>\n<p>英語話者として、参加者が自然に英語に触れられる環境作りをサポートいただける方を募集しています。</p>\n<p>We are looking for English-speaking guests to help create a natural environment where participants can feel comfortable practicing and interacting in English.</p>\n<ul>\n<li>属性 (Background)： 英語が流暢で、IT・エンジニアリング分野に関心のある方 / <em>Fluent in English and interested in IT/Engineering.</em></li>\n<li>[必須 (Required)] 日本語スキル(Japanese Skills)： 日常会話レベルの日本語ができる方（日本語学習中の方も大歓迎です！） / <em>Conversational Japanese (Japanese learners are more than welcome!).</em></li>\n<li>こんな方に(Ideal for)： 異文化理解のある日本のエンジニアと出会いたい方や、日本のテックコミュニティに貢献したい方 / <em>Those who want to connect with Japanese engineers interested in global cultures or wish to contribute to the Japanese tech community.</em></li>\n</ul>\n<p>日本人参加者には英語に触れるきっかけを、英語話者の方には日本語での交流や新たなネットワークを。お互いにフォローし合える安心感のある場を目指しています。</p>\n<p><em>We aim to create a supportive environment where Japanese participants can practice English, and English speakers can enjoy Japanese conversation and networking.</em></p>\n<h2>タイムテーブル(予定)</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>18:30 - 19:00</strong></td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:00</strong></td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:05</strong></td>\n<td style=\"text-align: left;\">(session 1) AIを使った英語学習 1年間の成果(仮)</td>\n<td style=\"text-align: left;\">鈴木 健太（Kenta Suzuki） / 株式会社primeNumber</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:15</strong></td>\n<td style=\"text-align: left;\">(session 2) English for Shy Engineers: Making a Base for Conversation Alone</td>\n<td style=\"text-align: left;\">赤沼 寛明（Hiroaki Akanuma） / 株式会社UPSIDER</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:30</strong></td>\n<td style=\"text-align: left;\">イベントスポンサー紹介（5分）</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:35</strong></td>\n<td style=\"text-align: left;\">==== オンライン配信終了 ====</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:35</strong></td>\n<td style=\"text-align: left;\">(session 3) Full remote, fully alone?</td>\n<td style=\"text-align: left;\"><strong>登壇者非公開</strong>/<strong>オンライン配信なし</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:05 - 20:55</strong></td>\n<td style=\"text-align: left;\">懇親タイム <br> <strong>Only drinks will be provided.</strong><br>Please bring your own food or eat before you arrive.</td>\n<td style=\"text-align: left;\">全員</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>21:00</strong></td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<h2>発表</h2>\n<h3>(session 1) AIを使った英語学習 1年間の成果(仮)</h3>\n<p>鈴木 健太（Kenta Suzuki） / 株式会社primeNumber CTO</p>\n<p>AIを色々使って1年間英語学習を続けた泥臭い話をします</p>\n<ul>\n<li><a href=\"https://x.com/kekekenta\" rel=\"nofollow\">https://x.com/kekekenta</a></li>\n</ul>\n<h3>(session 2) English for Shy Engineers: Making a Base for Conversation Alone</h3>\n<p><img src=\"https://i.imgur.com/1nw9GBz.jpeg\" width=\"120\">\n <strong>赤沼 寛明（Hiroaki Akanuma） / 株式会社UPSIDER</strong></p>\n<p>エムスリーやNubee Tokyoでの開発を経て、2015年にユニファ東京オフィスの立ち上げ時に参画。取締役CTOとしてプロダクトデベロップメント本部を統括し、外国籍メンバーを含む多国籍チームを率いて複数の新規プロダクトを立ち上げ。2025年4月よりUPSIDER「<a href=\"http://支払い.com\" rel=\"nofollow\">支払い.com</a>」事業部CTO。\nLooking forward to seeing you all at the meetup!<br></p>\n<ul>\n<li><a href=\"https://x.com/akanuma?s=21&amp;t=2kGC5oQwsN7goJYzDoplFA\" rel=\"nofollow\">https://x.com/akanuma?s=21&amp;t=2kGC5oQwsN7goJYzDoplFA</a></li>\n</ul>\n<h3>(session 3) Full remote, fully alone?</h3>\n<p><strong>※オンライン配信はありません</strong></p>\n<p>登壇者非公開</p>\n<p>色々あって、西海岸とロンドンに挟まれながら極東で孤独な窓際社員をやっています。</p>\n<h2>運営</h2>\n<h3>Kenta Suzuki</h3>\n<p>株式会社primeNumber / CTO</p>\n<ul>\n<li><a href=\"https://x.com/kekekenta\" rel=\"nofollow\">https://x.com/kekekenta</a></li>\n</ul>\n<h2>主催</h2>\n<h3>株式会社primeNumber</h3>\n<p>primeNumberはデータとAIを企業の成長エンジンへと進化させる、データテクノロジーカンパニーです。\nAI-Readyなデータ基盤を実現するデータテクノロジーを軸に、ソリューションサービスを通じてAI-Nativeな事業成長をご支援します。</p>\n<p>提供サービス: 「TROCCO」「COMETA」「primeBusinessAgent」「Professional Services」<br>\n会社HP：<a href=\"https://primenumber.com/\" rel=\"nofollow\">https://primenumber.com/</a></p>\n<div style=\"text-align:center;\">\n<a href=\"https://primenumber.co.jp/\" rel=\"nofollow\"><img src=\"https://images.microcms-assets.io/assets/e18950a5e88445ea8e7acc156bf5a941/dcfce21ed99942fe8e0310f0212bfbe3/primeNumber_logo.png\" width=\"500\"></a>\n</div>\n\n<h2>スポンサー</h2>\n<h3>TokyoDev株式会社</h3>\n<p>TokyoDevは、英語で働ける日本のIT企業とエンジニアをつなぐ求人サイト・コミュニティです。</p>\n<p>会社HP：<a href=\"https://www.tokyodev.com\" rel=\"nofollow\">https://www.tokyodev.com</a></p>\n<div style=\"text-align:center;\">\n<a href=\"https://www.tokyodev.com/ja/about\" rel=\"nofollow\"><img src=\"https://i.imgur.com/oWoWCTH.png\" width=\"500\"></a>\n</div>\n\n<h2>行動規範（イベントに参加される全ての方へのお願い）</h2>\n<p>イベント行動規範は、下記のような事柄に関わらずすべての人にとって安心・安全なイベント体験を提供するためのものです。この規範は、主催・運営する全てのイベントに適用され、イベントに参加される全ての方に対象とします。\nイベント参加者は、次の規範に従う必要があります。</p>\n<h3>1. イベントの趣旨と反することはしない</h3>\n<p>イベントの目的を理解し、目的にそぐわない行動はしないよう努めてください。</p>\n<h3>2. ハラスメントはしない</h3>\n<p>ハラスメントには、ジェンダー・アイデンティティーと性表現、性的指向、障がい、ニューロ・ダイバーシティ、外見、身体の大きさ、民族、国籍、人種、年齢、宗教、その他の保護対象事項、また公共の場での不適切画像、意図的な脅迫、ストーカー、追い掛け行為、写真や動画撮影による嫌がらせ行為、及び、講演やイベントの断続的な妨害、侮辱的な言動、不適切な身体的接触、不愉快な視線などによってマイノリティなどの社会的弱者の支配を促す言動が含まれますが、これに限定されるものではありません。<br>\nハラスメント行為を止めるように言われた参加者は、直ちに従ってください。</p>\n<h3>3. 全ての参加者の安全を脅かさない</h3>\n<p>イベント会場の内装や付属の調度品などを故意に壊したり、各会場で使用が禁止されている物を使用したりしないでください。<br>\n法令で所持・携帯が禁止されている物、または人に危害を与え、もしくは他の物を損傷するおそれのある物などを持ち込まないでください。</p>\n<h3>4. 行動規範の運用</h3>\n<p>あなたを不快にさせている相手は、そのことに気がついていないかもしれません。あなたが何か不快に思ったり、嫌がらせを受けたり、その他何か懸念に思うことがあったらすぐにイベントスタッフに教えてください。<br>\nまた、誰かが誰かを不快にさせたり、嫌がらせを行っているのを見聞きした場合も、すぐにイベントスタッフに教えてください。\nこの規範に違反している行為を発見した場合、スタッフが即座に中止するよう求めます。場合によっては、イベントからの退席や今後のイベント参加への禁止等を求めることがあります。この場合、既に受領した会費等は返金致しません。<br>\n質問や疑問があれば、イベントスタッフまでご連絡ください。</p>",
+      "url": "https://pn-developer-lounge.connpass.com/event/397239/",
+      "image_url": "https://media.connpass.com/thumbs/b0/5d/b05d74ea1fdd5fb2bf1ed87e10274a7e.png",
+      "hash_tag": "DevEnglishJP",
+      "started_at": "2026-08-20T19:00:00+09:00",
+      "ended_at": "2026-08-20T21:00:00+09:00",
+      "published_at": "2026-06-18T12:02:01+09:00",
+      "limit": 170,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 16151,
+        "subdomain": "pn-developer-lounge",
+        "title": "pN Developer Lounge",
+        "url": "https://pn-developer-lounge.connpass.com/"
+      },
+      "address": "〒141-0021 東京都品川区上大崎３丁目１−１ JR東急目黒ビル 5F",
+      "place": "primeNumber本社",
+      "lat": "35.632686400000",
+      "lon": "139.715750800000",
+      "owner_id": 370165,
+      "owner_nickname": "primeNumber",
+      "owner_display_name": "primeNumber",
+      "accepted": 97,
+      "waiting": 0,
+      "updated_at": "2026-08-13T18:47:40+09:00"
+    },
+    {
       "id": 400003,
       "title": "potatotips #96 iOS/Android開発Tips共有会",
       "catch": "",
@@ -247,7 +278,7 @@
       "owner_id": 16371,
       "owner_nickname": "tokorom",
       "owner_display_name": "tokorom",
-      "accepted": 48,
+      "accepted": 49,
       "waiting": 0,
       "updated_at": "2026-08-19T14:23:08+09:00"
     },
@@ -278,40 +309,9 @@
       "owner_id": 814332,
       "owner_nickname": "lycorptech_jp",
       "owner_display_name": "LINEヤフー Tech",
-      "accepted": 69,
+      "accepted": 66,
       "waiting": 0,
       "updated_at": "2026-08-20T14:03:54+09:00"
-    },
-    {
-      "id": 401421,
-      "title": "成功事例だけでは見えない、AI駆動開発のリアル",
-      "catch": "〜AI駆動開発で、現場・自分は、どう変わっていくのか〜",
-      "description": "<h2>🚀 成功事例だけでは見えない、AI駆動開発のリアル</h2>\n<p>〜AI駆動開発で、現場は・自分は、どう変わっていくのか〜</p>\n<hr>\n<p>生成AIやAIエージェントの登場により、コーディング、設計、レビュー、テストといった開発プロセスは、大きく変わりつつあります。しかし、その変化の実態は、成功事例やニュースだけではなかなか見えてきません。実際の現場では何が便利になり、何がまだ人の手を必要としているのでしょうか。</p>\n<p>今回は、株式会社YuBASE 代表取締役CEOの坂尻愛明氏をお招きし、AI駆動開発のリアルな現在地と、これからのエンジニアに求められる力についてお話しいただきます。講演のあとは、経営者・エンジニアを交えたトークセッション、参加者同士のディスカッション、そして懇親会まで。今日出会った人たちと、対話を大切にした会にしたいと思っています！</p>\n<hr>\n<h2>🙋 こんな方におすすめ</h2>\n<ul>\n<li>アプリ開発に関わっている方（業務や個人開発など）</li>\n<li>一人で調べるより、人と話しながらキャッチアップしたい方</li>\n<li>記事や公式ドキュメントだけでは分からない、生の話を聞きたい方</li>\n<li>AI駆動開発という言葉は聞くけれど、自分の現場でどう活かせるか知りたい方、など</li>\n</ul>\n<p>もちろん、上記に当てはまらない方のご参加も大歓迎です。少しでもピンときたら、お気軽にお越しください。</p>\n<hr>\n<h2>🗓️ イベント構成</h2>\n<p><strong>オープニング（19:00〜19:05／5分）</strong>\n趣旨説明・コミュニティ紹介・登壇者紹介。</p>\n<p><strong>①坂尻愛明氏 講演（19:05〜19:35／30分・15分×2部構成）</strong></p>\n<p>第1部：開発現場はどこまで変わっているのか（15分）\n生成AI・AIエージェントによって、コーディング・設計・レビュー・テストがどう変わってきているかを整理します。便利になった部分と、まだ人の判断が要る部分の両方に触れていきます。</p>\n<p>第2部：エンジニアは何を試し、どう学び続けるべきか（15分）\nAIを使いながらどう開発力を高め、キャリアに活かすか。試したこと・迷ったことも含めた、実装のリアルな話をいただきます。</p>\n<p><strong>②トークセッション（19:35〜19:50／15分）</strong>\n坂尻愛明氏に、天野大輔・石川達也・伊藤光志朗が加わり、対談形式で講演内容を深掘り。</p>\n<p><strong>③参加者交流セッション（19:50〜20:05／15分）</strong>\n少人数のグループに分かれ、参加者同士でテーマについて話し合う。</p>\n<p><strong>④懇親会（20:05〜20:30／25分）</strong>\n会場のカフェエリアにて、自由に交流・歓談。</p>\n<hr>\n<h2>⏰ タイムライン一覧</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00〜19:05</td>\n<td>オープニング（趣旨説明・コミュニティ紹介・登壇者紹介）</td>\n</tr>\n<tr>\n<td>19:05〜19:20</td>\n<td>坂尻愛明氏 講演①</td>\n</tr>\n<tr>\n<td>19:20〜19:35</td>\n<td>坂尻愛明氏 講演②</td>\n</tr>\n<tr>\n<td>19:35〜19:50</td>\n<td>トークセッション（坂尻愛明×天野大輔×石川達也×伊藤光志朗）</td>\n</tr>\n<tr>\n<td>19:50〜20:05</td>\n<td>参加者交流セッション</td>\n</tr>\n<tr>\n<td>20:05〜20:30</td>\n<td>懇親会</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>🎤 登壇者</h2>\n<p><strong>坂尻愛明 氏｜株式会社YuBASE 代表取締役CEO</strong></p>\n<p>楽天株式会社でECコンサルタント、株式会社BluePlanet-works・フリーランスでシステムエンジニアを経験した後、株式会社YuBASEを創業。BtoB向けSaaSや業務改善ツール開発、新規事業開発支援など、複数サービスの要件定義・開発に携わる。\nまた、教育事業として社内エンジニアのAI活用カリキュラムを提供する他、起業家エンジニア養成学校 G's AI教育主任講師、障害福祉特化AI研修のWelvieAI教材監修も務める。</p>\n<p><strong>天野 大輔｜株式会社レガシィ 代表取締役CEO</strong></p>\n<p>大手情報システム会社でシステムエンジニアとしての経験を経た後、公認会計士・税理士としてのキャリアを経て、現在は税理士法人レガシィの代表を務める。経営者としての顔を持ちながら、個人でもアプリ開発に挑戦し続けている。</p>\n<p><strong>石川 達也｜株式会社モバリー 代表取締役CEO</strong></p>\n<p>Flutterを中心に、バックエンドやWebフロントエンドの開発にも携わっているエンジニア。Flutterでの開発経験は6年になる。これまで、サービスの新規立ち上げやフルリプレイス、実証実験アプリなどのプロジェクトに多く参加。\n現在は主に自身のアプリ開発と受託開発を行っている。</p>\n<p><strong>伊藤 光志朗｜株式会社レガシィ エンジニア</strong></p>\n<p>文系出身ながらWeb技術への興味が高じてプログラマーの道へ。SESとしてWebシステムや業務システムの開発を経験したのち、2025年に株式会社レガシィへ入社。\n現在はエンジニアとして\"AIユイゴン Well-B\"の開発に携わっている。</p>\n<hr>\n<h2>🎙️ 司会・進行</h2>\n<p><strong>宮川 隼｜株式会社レガシィ デジタル推進部</strong></p>\n<p>士業向けBtoB営業を経て、現在は新規事業の立ち上げを担当。企画・推進・営業を通じて、サービスの事業化に取り組んでいる。Liviuum Techでは運営メンバーとして、イベントの企画・運営を行っている。</p>\n<p><strong>萩原 実咲｜株式会社レガシィ デジタル推進部</strong></p>\n<p>株式会社レガシィのデジタル推進部にて、士業向けのAI・デジタル活用支援や、新規サービスの企画・改善に携わっている。Liviuum Techでは運営メンバーとして、イベントの企画・運営を行っている。</p>\n<hr>\n<h2>⚠️ ご参加にあたって</h2>\n<ul>\n<li>質問だけでなく、経験・知見・失敗の共有を歓迎します</li>\n<li>技術レベルや所属にかかわらず、相手を尊重し、学び合う姿勢を大切にします</li>\n<li>一方的な営業や勧誘を目的とした参加はご遠慮ください</li>\n<li>相手の技術レベルや意見を否定、優劣をつけるような言動はお控えください</li>\n</ul>\n<p>※当日の様子を撮影させていただく場合がございます。<br>\n※今後のイベントについてご案内をお送りする場合がございます。<br>\n※進行状況により、時間が前後する場合がございます。<br>\n※ご提供いただいた個人情報は、イベントの運営・管理、および今後の企画検討のために利用いたします</p>",
-      "url": "https://liviuumtech.connpass.com/event/401421/",
-      "image_url": "https://media.connpass.com/thumbs/b9/7d/b97d1ba7c7204a87da451228a85a1cb3.png",
-      "hash_tag": "",
-      "started_at": "2026-08-20T19:00:00+09:00",
-      "ended_at": "2026-08-20T20:30:00+09:00",
-      "published_at": "2026-07-30T17:03:55+09:00",
-      "limit": 35,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17957,
-        "subdomain": "liviuumtech",
-        "title": "リビウムテック (Liviuum Tech)",
-        "url": "https://liviuumtech.connpass.com/"
-      },
-      "address": "〒104-0028 東京都中央区八重洲２丁目２−１ 東京ミッドタウン八重洲 八重洲セントラルタワ 12F",
-      "place": "株式会社レガシィ",
-      "lat": "35.679651200000",
-      "lon": "139.769277200000",
-      "owner_id": 1038575,
-      "owner_nickname": "iiilllii_cmp",
-      "owner_display_name": "Hayato Miyakawa",
-      "accepted": 18,
-      "waiting": 0,
-      "updated_at": "2026-08-17T17:13:06+09:00"
     },
     {
       "id": 402131,
@@ -366,8 +366,8 @@
       "owner_id": 1030071,
       "owner_nickname": "daigos432_findy",
       "owner_display_name": "daigos432_findy",
-      "accepted": 929,
-      "waiting": 5,
+      "accepted": 931,
+      "waiting": 7,
       "updated_at": "2026-08-20T08:29:49+09:00"
     },
     {
@@ -397,7 +397,7 @@
       "owner_id": 141857,
       "owner_nickname": "freee_event",
       "owner_display_name": "freee",
-      "accepted": 82,
+      "accepted": 84,
       "waiting": 0,
       "updated_at": "2026-08-06T18:03:20+09:00"
     },
@@ -428,7 +428,7 @@
       "owner_id": 839351,
       "owner_nickname": "Macccoto",
       "owner_display_name": "まこと（まことのこと研究所）",
-      "accepted": 23,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-08-20T15:22:13+09:00"
     },
@@ -490,7 +490,7 @@
       "owner_id": 12908,
       "owner_nickname": "ume0524",
       "owner_display_name": "ume0524",
-      "accepted": 29,
+      "accepted": 30,
       "waiting": 0,
       "updated_at": "2026-08-07T18:48:43+09:00"
     },
@@ -538,7 +538,7 @@
       "published_at": "2026-07-07T15:34:47+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17869,
         "subdomain": "devrev-japan",
@@ -569,7 +569,7 @@
       "published_at": "2026-08-05T14:49:36+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 9236,
         "subdomain": "legalforce",
@@ -583,7 +583,7 @@
       "owner_id": 77244,
       "owner_nickname": "KDE",
       "owner_display_name": "KDE",
-      "accepted": 5,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-08-13T15:04:52+09:00"
     }
