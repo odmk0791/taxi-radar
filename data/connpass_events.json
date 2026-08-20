@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-20T17:28:12.072025+09:00",
+  "fetched_at": "2026-08-20T18:25:30.699038+09:00",
   "date": "20260820",
   "count": 20,
   "events": [
@@ -92,7 +92,7 @@
       "owner_id": 106210,
       "owner_nickname": "guylocke",
       "owner_display_name": "guylocke",
-      "accepted": 9,
+      "accepted": 10,
       "waiting": 0,
       "updated_at": "2026-07-13T13:16:52+09:00"
     },
@@ -123,7 +123,7 @@
       "owner_id": 1003750,
       "owner_nickname": "fffff_cafe",
       "owner_display_name": "FFFFF Cafe",
-      "accepted": 5,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-07-28T16:12:46+09:00"
     },
@@ -159,32 +159,6 @@
       "updated_at": "2026-08-19T15:52:14+09:00"
     },
     {
-      "id": 402131,
-      "title": "[非公式] キチピーふりかえり会",
-      "catch": "",
-      "description": "<p>大吉祥寺.pmで語りそびれたこと、学んだこと、聞いた登壇内容を実践した経験談等をLTする会です!\n大吉祥寺.pmに来た方も来れなかった方も共に語り合いましょう!</p>\n<p>もし発表者が集まらない場合は、私がLT枠を埋めてLTで工夫したところを語ります</p>\n<p>※本イベントは非公式イベントです。</p>\n<h2>タイムテーブル</h2>\n<p>会場内の人の集まりや個々の希望により、時間や順序は前後する可能性がございます。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">開始</th>\n<th style=\"text-align: center;\">終了</th>\n<th style=\"text-align: center;\">内容</th>\n<th style=\"text-align: center;\">発表者(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:30</td>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">開場/受付</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">会場説明</td>\n<td style=\"text-align: center;\">BEENOS株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">19:15</td>\n<td style=\"text-align: center;\">あちこちのカンファレンスで当日スタッフやってみたまとめ</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/takter\" rel=\"nofollow\">てらうちたかし</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:17</td>\n<td style=\"text-align: center;\">19:22</td>\n<td style=\"text-align: center;\">技術コミュニティと、スタッフ業と、私 ―<a href=\"http://大吉祥寺.pm\" rel=\"nofollow\">大吉祥寺.pm</a> 2026を振り返って―</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/mgo0814\" rel=\"nofollow\">おーはし</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:24</td>\n<td style=\"text-align: center;\">19:29</td>\n<td style=\"text-align: center;\">チェキに関する軽い話</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/sapi_kawahara\" rel=\"nofollow\">さっぴー川原</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:31</td>\n<td style=\"text-align: center;\">19:36</td>\n<td style=\"text-align: center;\">コミュニティを滅ぼすもの</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/ykkn0113\" rel=\"nofollow\">ゆきお</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:38</td>\n<td style=\"text-align: center;\">19:43</td>\n<td style=\"text-align: center;\">人間の目はかわらない、でも、発表の届き方はかわる</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/yuzneri\" rel=\"nofollow\">ゆずねり</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:43</td>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">休憩/時間調整</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">20:00</td>\n<td style=\"text-align: center;\">LT枠 (6)</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/ShuzoN__\" rel=\"nofollow\">ShuzoN</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:02</td>\n<td style=\"text-align: center;\">20:07</td>\n<td style=\"text-align: center;\">大吉祥寺.pmで登壇する技術</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/magnolia_k_\" rel=\"nofollow\">Magonolia.K</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:09</td>\n<td style=\"text-align: center;\">20:14</td>\n<td style=\"text-align: center;\">生成AI時代におけるLTの在り方</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">ogadra</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:15</td>\n<td style=\"text-align: center;\">20:20</td>\n<td style=\"text-align: center;\">実録!コストとアクセスログ結果発表!</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">ogadra</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:22</td>\n<td style=\"text-align: center;\">20:27</td>\n<td style=\"text-align: center;\">会場スポンサーLT</td>\n<td style=\"text-align: center;\">BEENOS株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:27</td>\n<td style=\"text-align: center;\">20:40</td>\n<td style=\"text-align: center;\">撤収</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇する場合</h2>\n<p>connpassのページに掲載するため、タイトルが決まり次第<a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">主催者のTwitter</a>までご連絡ください。(変更されても構いません。)</p>\n<h2>禁止・注意事項</h2>\n<p>下記の行動を禁止いたします。</p>\n<ul>\n<li>体調不良時の無理な参加<ul>\n<li>主催者が体調不良の場合、会自体を中止することがあります。ご了承ください。</li>\n</ul>\n</li>\n<li>違法行為全般</li>\n<li>主催者の許可を得ない下記の行為<ul>\n<li>写真・動画撮影、録音またはそれらを伴う行為</li>\n<li>例: オンラインMTG、BeRealへの投稿</li>\n</ul>\n</li>\n<li>営業・勧誘等<ul>\n<li>消費者センターや国民生活センターに相談される可能性のある勧誘等はお控えください。</li>\n<li>例: マルチ・霊感商法、宗教勧誘、金融・情報商材販売</li>\n</ul>\n</li>\n<li>誹謗中傷、ハラスメント行為<ul>\n<li>他者に不快感を与える言動や行動はお控えください。</li>\n</ul>\n</li>\n<li>過度な独り言</li>\n<li>会場内の備品を故意に破損すること</li>\n<li>他の参加者や主催者に迷惑をかける行為全般</li>\n</ul>",
-      "url": "https://connpass.com/event/402131/",
-      "image_url": "https://media.connpass.com/thumbs/b6/32/b632e14966c4db6d1c6c3b061362b04d.png",
-      "hash_tag": "",
-      "started_at": "2026-08-20T19:00:00+09:00",
-      "ended_at": "2026-08-20T20:40:00+09:00",
-      "published_at": "2026-07-30T11:27:41+09:00",
-      "limit": 27,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": null,
-      "address": "東京都品川区西五反田8丁目4-13 (五反田JPビルディング 7F)",
-      "place": "BEENOS株式会社",
-      "lat": "35.622417900000",
-      "lon": "139.721921800000",
-      "owner_id": 492732,
-      "owner_nickname": "ogadra",
-      "owner_display_name": "おがどら",
-      "accepted": 21,
-      "waiting": 0,
-      "updated_at": "2026-08-20T11:33:10+09:00"
-    },
-    {
       "id": 385009,
       "title": "【秋葉原開催】会社の中で使えるファシリテーションスキルを向上するための研究会 -実践編 #4-",
       "catch": "",
@@ -213,7 +187,7 @@
       "owner_display_name": "gaoryu",
       "accepted": 10,
       "waiting": 0,
-      "updated_at": "2026-08-03T10:02:32+09:00"
+      "updated_at": "2026-08-20T18:19:34+09:00"
     },
     {
       "id": 397239,
@@ -242,9 +216,9 @@
       "owner_id": 370165,
       "owner_nickname": "primeNumber",
       "owner_display_name": "primeNumber",
-      "accepted": 96,
+      "accepted": 97,
       "waiting": 0,
-      "updated_at": "2026-08-20T17:28:09+09:00"
+      "updated_at": "2026-08-20T17:47:08+09:00"
     },
     {
       "id": 400003,
@@ -273,7 +247,7 @@
       "owner_id": 16371,
       "owner_nickname": "tokorom",
       "owner_display_name": "tokorom",
-      "accepted": 49,
+      "accepted": 47,
       "waiting": 0,
       "updated_at": "2026-08-19T14:23:08+09:00"
     },
@@ -304,7 +278,7 @@
       "owner_id": 814332,
       "owner_nickname": "lycorptech_jp",
       "owner_display_name": "LINEヤフー Tech",
-      "accepted": 66,
+      "accepted": 63,
       "waiting": 0,
       "updated_at": "2026-08-20T14:03:54+09:00"
     },
@@ -340,6 +314,32 @@
       "updated_at": "2026-08-20T16:26:30+09:00"
     },
     {
+      "id": 402131,
+      "title": "[非公式] キチピーふりかえり会",
+      "catch": "",
+      "description": "<p>大吉祥寺.pmで語りそびれたこと、学んだこと、聞いた登壇内容を実践した経験談等をLTする会です!\n大吉祥寺.pmに来た方も来れなかった方も共に語り合いましょう!</p>\n<p>もし発表者が集まらない場合は、私がLT枠を埋めてLTで工夫したところを語ります</p>\n<p>※本イベントは非公式イベントです。</p>\n<h2>タイムテーブル</h2>\n<p>会場内の人の集まりや個々の希望により、時間や順序は前後する可能性がございます。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">開始</th>\n<th style=\"text-align: center;\">終了</th>\n<th style=\"text-align: center;\">内容</th>\n<th style=\"text-align: center;\">発表者(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:30</td>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">開場/受付</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">会場説明</td>\n<td style=\"text-align: center;\">BEENOS株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">19:15</td>\n<td style=\"text-align: center;\">あちこちのカンファレンスで当日スタッフやってみたまとめ</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/takter\" rel=\"nofollow\">てらうちたかし</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:17</td>\n<td style=\"text-align: center;\">19:22</td>\n<td style=\"text-align: center;\">技術コミュニティと、スタッフ業と、私 ―<a href=\"http://大吉祥寺.pm\" rel=\"nofollow\">大吉祥寺.pm</a> 2026を振り返って―</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/mgo0814\" rel=\"nofollow\">おーはし</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:24</td>\n<td style=\"text-align: center;\">19:29</td>\n<td style=\"text-align: center;\">チェキに関する軽い話</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/sapi_kawahara\" rel=\"nofollow\">さっぴー川原</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:31</td>\n<td style=\"text-align: center;\">19:36</td>\n<td style=\"text-align: center;\">コミュニティを滅ぼすもの</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/ykkn0113\" rel=\"nofollow\">ゆきお</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:38</td>\n<td style=\"text-align: center;\">19:43</td>\n<td style=\"text-align: center;\">人間の目はかわらない、でも、発表の届き方はかわる</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/yuzneri\" rel=\"nofollow\">ゆずねり</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:43</td>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">休憩/時間調整</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">20:00</td>\n<td style=\"text-align: center;\">なぜ「<a href=\"http://大吉祥寺.pm\" rel=\"nofollow\">大吉祥寺.pm</a>」が成立しているか分からない</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/ShuzoN__\" rel=\"nofollow\">ShuzoN</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:02</td>\n<td style=\"text-align: center;\">20:07</td>\n<td style=\"text-align: center;\">大吉祥寺.pmで登壇する技術</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/magnolia_k_\" rel=\"nofollow\">Magonolia.K</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:09</td>\n<td style=\"text-align: center;\">20:14</td>\n<td style=\"text-align: center;\">生成AI時代におけるLTの在り方</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">ogadra</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:15</td>\n<td style=\"text-align: center;\">20:20</td>\n<td style=\"text-align: center;\">実録!コストとアクセスログ結果発表!</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">ogadra</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:22</td>\n<td style=\"text-align: center;\">20:27</td>\n<td style=\"text-align: center;\">会場スポンサーLT</td>\n<td style=\"text-align: center;\">BEENOS株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:27</td>\n<td style=\"text-align: center;\">20:40</td>\n<td style=\"text-align: center;\">撤収</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇する場合</h2>\n<p>connpassのページに掲載するため、タイトルが決まり次第<a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">主催者のTwitter</a>までご連絡ください。(変更されても構いません。)</p>\n<h2>禁止・注意事項</h2>\n<p>下記の行動を禁止いたします。</p>\n<ul>\n<li>体調不良時の無理な参加<ul>\n<li>主催者が体調不良の場合、会自体を中止することがあります。ご了承ください。</li>\n</ul>\n</li>\n<li>違法行為全般</li>\n<li>主催者の許可を得ない下記の行為<ul>\n<li>写真・動画撮影、録音またはそれらを伴う行為</li>\n<li>例: オンラインMTG、BeRealへの投稿</li>\n</ul>\n</li>\n<li>営業・勧誘等<ul>\n<li>消費者センターや国民生活センターに相談される可能性のある勧誘等はお控えください。</li>\n<li>例: マルチ・霊感商法、宗教勧誘、金融・情報商材販売</li>\n</ul>\n</li>\n<li>誹謗中傷、ハラスメント行為<ul>\n<li>他者に不快感を与える言動や行動はお控えください。</li>\n</ul>\n</li>\n<li>過度な独り言</li>\n<li>会場内の備品を故意に破損すること</li>\n<li>他の参加者や主催者に迷惑をかける行為全般</li>\n</ul>",
+      "url": "https://connpass.com/event/402131/",
+      "image_url": "https://media.connpass.com/thumbs/b6/32/b632e14966c4db6d1c6c3b061362b04d.png",
+      "hash_tag": "",
+      "started_at": "2026-08-20T19:00:00+09:00",
+      "ended_at": "2026-08-20T20:40:00+09:00",
+      "published_at": "2026-07-30T11:27:41+09:00",
+      "limit": 27,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": null,
+      "address": "東京都品川区西五反田8丁目4-13 (五反田JPビルディング 7F)",
+      "place": "BEENOS株式会社",
+      "lat": "35.622417900000",
+      "lon": "139.721921800000",
+      "owner_id": 492732,
+      "owner_nickname": "ogadra",
+      "owner_display_name": "おがどら",
+      "accepted": 21,
+      "waiting": 0,
+      "updated_at": "2026-08-20T17:58:03+09:00"
+    },
+    {
       "id": 402230,
       "title": "【増枠！】AI自走環境整備・運用スペシャル #5 〜ハーネス・ループ・グラフエンジニアリング〜",
       "catch": "開発組織はどこまでAI自走度を品質を保って促進できるのか？実践知見を語り尽くす！",
@@ -366,15 +366,15 @@
       "owner_id": 1030071,
       "owner_nickname": "daigos432_findy",
       "owner_display_name": "daigos432_findy",
-      "accepted": 932,
-      "waiting": 13,
+      "accepted": 931,
+      "waiting": 14,
       "updated_at": "2026-08-20T16:48:24+09:00"
     },
     {
       "id": 402662,
       "title": "freee Tech Night「freeeづくりのすべてを学べる新卒開発研修」",
       "catch": "",
-      "description": "<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　今回のfreee Tech Nightは……？</h2>\n\n<p>今回は freee の新卒開発研修をテーマにお届けします！</p>\n<p>freeeの開発研修は、ただ技術を学んでコードを書くだけではありません。実際のfreee社内での開発サイクルに則り、「課題理解」「ユーザーヒアリング」「設計」「開発・実装」「テスト」「リリース」に至るまで、プロダクト開発におけるすべてのステップを新卒エンジニア自身が経験する場となっています。</p>\n<p>本イベントでは、2026年に入社したばかりの新卒エンジニアたちが登壇し、研修を通じて実際にやったこと、直面した壁、そして学んだことについて赤裸々に語ります！\nfreeeのリアルな開発文化や、新卒エンジニアたちの熱量を感じられる内容となっておりますので、ぜひお気軽にご参加ください。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　配信 URL</h2>\n\n<ul>\n<li>YouTube: <a href=\"https://www.youtube.com/live/x-zdBTU5iSg\" rel=\"nofollow\">https://www.youtube.com/live/x-zdBTU5iSg</a></li>\n<li><a href=\"http://Sli.do\" rel=\"nofollow\">Sli.do</a>: TBD</li>\n</ul>\n<p>※オフライン会場はフリー株式会社本社（東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 19F / Asobiba）です。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　日時・タイムテーブル</h2>\n\n<p>2026/8/20（木）19:00〜21:00</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">開会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">イントロダクション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05 - 19:30</td>\n<td style=\"text-align: left;\">トークタイム（新卒開発研修でやったこと・学んだこと）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:40</td>\n<td style=\"text-align: left;\">質疑応答</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40 -</td>\n<td style=\"text-align: left;\">クロージング ＆ 懇親会 (オフライン参加のみ)</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>懇親会は 21:00 頃終了予定です</li>\n<li>希望者はオフィスツアーが可能です</li>\n</ul>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　内容・出演者</h2>\n\n<h2>ゲスト : choku（エンジニア）</h2>\n<p><img src=\"https://ca.slack-edge.com/E05GX4NV694-U08RNMDNWHZ-8da6c9f4b2ad-512\" width=\"120\"></p>\n<p>26卒エンジニアです。コーヒーが好きです。</p>\n<h2>ゲスト : mikan（エンジニア）</h2>\n<p><img src=\"https://github.com/Al-Mikan.png\" width=\"120\"></p>\n<p>26卒エンジニアです。ゲームが大好きです！</p>\n<h2>ゲスト : yosh（エンジニア）</h2>\n<p><img src=\"https://github.com/dyoshyy.png\" width=\"120\"></p>\n<p>2026年新卒入社</p>\n<h2>ゲスト : taro137（新卒エンジニア）</h2>\n<p><img src=\"https://github.com/inomata137.png\" width=\"120\"></p>\n<p>Rustはいいぞ</p>\n<h2>ラジオパーソナリティ: なのら</h2>\n<p>freee歴の半分をインボイスに費やしている。今は小規模法人を対象にしたエンジニア。最近は中学 ~ 高校の時にハマっていたアーティストのLPレコードを集めて青春の追体験をしている</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　freee Tech Night って何？</h2>\n\n<p>フリー株式会社のエンジニアによる、エンジニアのためのイベントです！ freeeで利用している技術、組織、エンジニアの生態の紹介を皆様に知っていただけるような内容を定期的に配信します。 freeeでの自由度と裁量権の高い独自の開発文化を支えるエンジニア達がどういう想いや熱意でfreeeを開発しているのかに興味を持っていただければ幸いです。</p>\n<p>ちょっと短めの時間で、参加しやすい・聞きやすい内容を目指します。 普段はなかなか参加できない…という方も、ラジオを聴く感覚で、ぜひご参加ください！</p>\n<p>freeeはクラウド会計・人事労務ソフトを5年以上開発を続けており、技術的な成果や経験を広く公開させていただきます。会計や人事労務などのセキュアなドメインならではの技術的工夫や苦労を、世の中にシェアし役に立てたいという想いから定期的にイベントを開催しています。</p>\n<p>多くの方にご参加頂き、経験やノウハウの共有や交換のネットワークを広げるきっかけになれれば幸いです。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　キーワード</h2>\n\n<p>freee / 新卒研修 / 開発サイクル / ユーザーヒアリング / プロダクト開発 / エンジニア</p>\n<table style=\"border: 2px solid red;\">\n<tbody><tr>\n<td>\n<h2 style=\"border: 0;\">🔔 注意事項</h2>\n<ul>\n<li>本イベントの参加には<a href=\"https://www.freee.co.jp/events/promise/\" rel=\"nofollow\">イベント参加時のfreeeとの約束</a>を守る必要があります。</li>\n<li>当社の判断において申し込みをキャンセルさせていただく場合がございますので、予めご了承ください。</li>\n</ul>\n\n<h4 style=\"border: 0;\">現地参加向け</h4>\n\n<ul>\n<li>本イベントは技術に関わる情報発信や交流を行う場として行っています。過度な営業行為や飲食のみを目的とした入場などを含め、イベントの目的にそぐわない行動はお控えください。</li>\n<li>来場者・登壇者・スタッフなど全ての参加者に対して、意識的・無意識的を問わず、相手が不快・不安に感じるようなハラスメント行為を行わないよう努めてください。</li>\n<li>イベント会場の内装・備品などを故意に壊したり、危険物を持ち込むことは行わないでください。</li>\n<li>イベントレポート用に写真や動画の撮影を行い SNS 等に投稿する可能性があります。参加者が映り込む可能性がありますので予めご了承ください。</li>\n</ul>\n\n<h4 style=\"border: 0;\">オンライン (YouTube Live) 参加向け</h4>\n<ul>\n<li>YouTube の視聴環境をご用意のうえご参加ください。</li>\n<li>通信状況や機材トラブルにより配信が滞る可能性があります。</li>\n<li>YouTube Live による配信後はアーカイブを残す予定です。</li>\n</ul>\n\n</td>\n</tr>\n</tbody></table>\n\n<table style=\"border: 2px solid #2864f0;\">\n<tbody><tr>\n<td>\n<h2 style=\"border: 0;\">🔒 プライバシーポリシー</h2>\n<p>お申し込みフォームやアンケートなどで収集した個人情報に関しては、フリー株式会社のプライバシーポリシーに則ってお取り扱いいたします。</p>\n<ul>\n<li><a href=\"https://jobs.freee.co.jp/privacy-policy/\" rel=\"nofollow\">フリー株式会社 プライバシーポリシー</a></li>\n</ul>\n</td>\n</tr>\n</tbody></table>",
+      "description": "<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　今回のfreee Tech Nightは……？</h2>\n\n<p>今回は freee の新卒開発研修をテーマにお届けします！</p>\n<p>freeeの開発研修は、ただ技術を学んでコードを書くだけではありません。実際のfreee社内での開発サイクルに則り、「課題理解」「ユーザーヒアリング」「設計」「開発・実装」「テスト」「リリース」に至るまで、プロダクト開発におけるすべてのステップを新卒エンジニア自身が経験する場となっています。</p>\n<p>本イベントでは、2026年に入社したばかりの新卒エンジニアたちが登壇し、研修を通じて実際にやったこと、直面した壁、そして学んだことについて赤裸々に語ります！\nfreeeのリアルな開発文化や、新卒エンジニアたちの熱量を感じられる内容となっておりますので、ぜひお気軽にご参加ください。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　配信 URL</h2>\n\n<ul>\n<li>YouTube: <a href=\"https://www.youtube.com/live/x-zdBTU5iSg\" rel=\"nofollow\">https://www.youtube.com/live/x-zdBTU5iSg</a></li>\n<li><a href=\"http://Sli.do\" rel=\"nofollow\">Sli.do</a>: <a href=\"https://app.sli.do/event/1j1yrYwtdhTTWhyCBV1e1m\" rel=\"nofollow\">https://app.sli.do/event/1j1yrYwtdhTTWhyCBV1e1m</a></li>\n</ul>\n<p>※オフライン会場はフリー株式会社本社（東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 19F / Asobiba）です。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　日時・タイムテーブル</h2>\n\n<p>2026/8/20（木）19:00〜21:00</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">開会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:05</td>\n<td style=\"text-align: left;\">イントロダクション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05 - 19:30</td>\n<td style=\"text-align: left;\">トークタイム（新卒開発研修でやったこと・学んだこと）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:40</td>\n<td style=\"text-align: left;\">質疑応答</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40 -</td>\n<td style=\"text-align: left;\">クロージング ＆ 懇親会 (オフライン参加のみ)</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>懇親会は 21:00 頃終了予定です</li>\n<li>希望者はオフィスツアーが可能です</li>\n</ul>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　内容・出演者</h2>\n\n<h2>ゲスト : choku（エンジニア）</h2>\n<p><img src=\"https://ca.slack-edge.com/E05GX4NV694-U08RNMDNWHZ-8da6c9f4b2ad-512\" width=\"120\"></p>\n<p>26卒エンジニアです。コーヒーが好きです。</p>\n<h2>ゲスト : mikan（エンジニア）</h2>\n<p><img src=\"https://github.com/Al-Mikan.png\" width=\"120\"></p>\n<p>26卒エンジニアです。ゲームが大好きです！</p>\n<h2>ゲスト : yosh（エンジニア）</h2>\n<p><img src=\"https://github.com/dyoshyy.png\" width=\"120\"></p>\n<p>2026年新卒入社</p>\n<h2>ゲスト : taro137（新卒エンジニア）</h2>\n<p><img src=\"https://github.com/inomata137.png\" width=\"120\"></p>\n<p>Rustはいいぞ</p>\n<h2>ラジオパーソナリティ: なのら</h2>\n<p>freee歴の半分をインボイスに費やしている。今は小規模法人を対象にしたエンジニア。最近は中学 ~ 高校の時にハマっていたアーティストのLPレコードを集めて青春の追体験をしている</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　freee Tech Night って何？</h2>\n\n<p>フリー株式会社のエンジニアによる、エンジニアのためのイベントです！ freeeで利用している技術、組織、エンジニアの生態の紹介を皆様に知っていただけるような内容を定期的に配信します。 freeeでの自由度と裁量権の高い独自の開発文化を支えるエンジニア達がどういう想いや熱意でfreeeを開発しているのかに興味を持っていただければ幸いです。</p>\n<p>ちょっと短めの時間で、参加しやすい・聞きやすい内容を目指します。 普段はなかなか参加できない…という方も、ラジオを聴く感覚で、ぜひご参加ください！</p>\n<p>freeeはクラウド会計・人事労務ソフトを5年以上開発を続けており、技術的な成果や経験を広く公開させていただきます。会計や人事労務などのセキュアなドメインならではの技術的工夫や苦労を、世の中にシェアし役に立てたいという想いから定期的にイベントを開催しています。</p>\n<p>多くの方にご参加頂き、経験やノウハウの共有や交換のネットワークを広げるきっかけになれれば幸いです。</p>\n<h2 style=\"border-left: 5px solid #2864f0; border-bottom: 2px solid #2864f0;\">　キーワード</h2>\n\n<p>freee / 新卒研修 / 開発サイクル / ユーザーヒアリング / プロダクト開発 / エンジニア</p>\n<table style=\"border: 2px solid red;\">\n<tbody><tr>\n<td>\n<h2 style=\"border: 0;\">🔔 注意事項</h2>\n<ul>\n<li>本イベントの参加には<a href=\"https://www.freee.co.jp/events/promise/\" rel=\"nofollow\">イベント参加時のfreeeとの約束</a>を守る必要があります。</li>\n<li>当社の判断において申し込みをキャンセルさせていただく場合がございますので、予めご了承ください。</li>\n</ul>\n\n<h4 style=\"border: 0;\">現地参加向け</h4>\n\n<ul>\n<li>本イベントは技術に関わる情報発信や交流を行う場として行っています。過度な営業行為や飲食のみを目的とした入場などを含め、イベントの目的にそぐわない行動はお控えください。</li>\n<li>来場者・登壇者・スタッフなど全ての参加者に対して、意識的・無意識的を問わず、相手が不快・不安に感じるようなハラスメント行為を行わないよう努めてください。</li>\n<li>イベント会場の内装・備品などを故意に壊したり、危険物を持ち込むことは行わないでください。</li>\n<li>イベントレポート用に写真や動画の撮影を行い SNS 等に投稿する可能性があります。参加者が映り込む可能性がありますので予めご了承ください。</li>\n</ul>\n\n<h4 style=\"border: 0;\">オンライン (YouTube Live) 参加向け</h4>\n<ul>\n<li>YouTube の視聴環境をご用意のうえご参加ください。</li>\n<li>通信状況や機材トラブルにより配信が滞る可能性があります。</li>\n<li>YouTube Live による配信後はアーカイブを残す予定です。</li>\n</ul>\n\n</td>\n</tr>\n</tbody></table>\n\n<table style=\"border: 2px solid #2864f0;\">\n<tbody><tr>\n<td>\n<h2 style=\"border: 0;\">🔒 プライバシーポリシー</h2>\n<p>お申し込みフォームやアンケートなどで収集した個人情報に関しては、フリー株式会社のプライバシーポリシーに則ってお取り扱いいたします。</p>\n<ul>\n<li><a href=\"https://jobs.freee.co.jp/privacy-policy/\" rel=\"nofollow\">フリー株式会社 プライバシーポリシー</a></li>\n</ul>\n</td>\n</tr>\n</tbody></table>",
       "url": "https://freee-tech-night.connpass.com/event/402662/",
       "image_url": "https://media.connpass.com/thumbs/5c/80/5c8045185704ee2c3e0a57726f06c222.png",
       "hash_tag": "freeeTechNight",
@@ -397,9 +397,9 @@
       "owner_id": 141857,
       "owner_nickname": "freee_event",
       "owner_display_name": "freee",
-      "accepted": 84,
+      "accepted": 86,
       "waiting": 0,
-      "updated_at": "2026-08-06T18:03:20+09:00"
+      "updated_at": "2026-08-20T18:14:06+09:00"
     },
     {
       "id": 401607,
@@ -428,7 +428,7 @@
       "owner_id": 933519,
       "owner_nickname": "Acompany",
       "owner_display_name": "Acompany",
-      "accepted": 81,
+      "accepted": 80,
       "waiting": 0,
       "updated_at": "2026-08-20T09:49:19+09:00"
     },
@@ -507,7 +507,7 @@
       "published_at": "2026-07-16T18:01:27+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11156,
         "subdomain": "re-shine",
@@ -588,35 +588,35 @@
       "updated_at": "2026-08-13T15:04:52+09:00"
     },
     {
-      "id": 401345,
-      "title": "Google Antigravity（中心の）もくもく会 in 茅ヶ崎",
+      "id": 402700,
+      "title": "Kashiwa.rb #26 勉強会",
       "catch": "",
-      "description": "<h2>概要</h2>\n<h3>🚀 Google Antigravity もくもく会：AIエージェントで作業を「無重力」に</h3>\n<p>最近話題の <strong>Google Antigravity</strong>、皆さんは使いこなせていますか？\nAI Agentによる爆速の開発体験から、MCPサーバー連携による拡張性まで、その可能性はアイデア次第で無限に広がります。</p>\n<p>「一人で設定するのは大変だけど、誰かと一緒なら新しい発見があるかも」\nそんな想いで、みんなで手を動かしながら情報交換する場を作りました！</p>\n<p>別途開催していた「FGStudyもくもく会 feat.なんでも in 茅ヶ崎」と統合してみました。<br>\nAntigravityを使わない方でもお気軽に参加いただければと思います。</p>\n<h3>💡 こんなことをやります</h3>\n<ul>\n<li><strong>もくもく作業：</strong> Antigravityを使って(使わなくても）自分のプロジェクトを進める。</li>\n<li><strong>知見シェア：</strong> MCPサーバーの導入、<code>Google Workspace CLI</code> との連携など、一歩踏み込んだ活用術の共有。</li>\n<li><strong>雑談・相談：</strong> 「Workspaceアカウントでどう使ってる？」「有料プランの元は取れてる？」など、ざっくばらんな意見交換。</li>\n</ul>\n<p>基本的に、もくもく会なので、主催者側で用意しているものはありませんが、もくもくする時間よりも参加者同士で話をする時間を多めにしたいと考えています。</p>\n<h3>🛠️ 技術トピック（例）</h3>\n<ul>\n<li><strong>AI Agentとしての活用：</strong> IDEとの連携で開発効率をどこまで上げられるか？</li>\n<li><strong>エコシステムの拡張：</strong> MCP（Model Context Protocol）サーバー導入による外部データ連携。</li>\n<li><strong>CLI連携：</strong> <code>Google Workspace CLI (</code>gws<code>)</code> 等を駆使した高度な自動化設定。</li>\n<li><strong>Workspace活用：</strong> 仕事のワークフローにどう組み込むか？</li>\n</ul>\n<h3>👤 主催者（ぬきぽん）より</h3>\n<p>最近Google WorkspaceアカウントでもAntigravityが利用可能になり、僕自身もガッツリ使い倒し始めました。一人で黙々とやるのも良いですが、皆さんのユニークなアイデアを聞くことで、より面白い使い方に気づけるといいなと思っています！</p>\n<h2>📆 タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">オープニング・自己紹介・今日やること</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45</td>\n<td style=\"text-align: left;\">やったこと共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>FGStudyについて</h2>\n<p>茅ヶ崎を中心に活動している、フリーグーフォ合同会社 （FreeGufo G.K.）が運営するWeb系の勉強会です。</p>\n<h2>会場について</h2>\n<p>会場は、イベント等が入っていなければコワーキングスペースとして利用が可能です。</p>\n<p>店舗前に、自転車、バイクの駐輪が可能です。</p>\n<p>駐車場はありません。近くのコインパーキングをご利用下さい。</p>\n<h2>宣伝</h2>\n<p>FreeGufoは、Google Workspace のリセールも行っています。1アカウントからでも対応致しますので、仕事でGoogle Workspaceを使いたい、Antigravity を安全に使いたい。などご要望がありましたら、ぜひご相談下さい。</p>",
-      "url": "https://fgstudy.connpass.com/event/401345/",
-      "image_url": "https://media.connpass.com/thumbs/3a/80/3a8012e2f91d1bcceea08f003168c51c.png",
-      "hash_tag": "FGStudy",
-      "started_at": "2026-08-20T19:30:00+09:00",
+      "description": "<h1>Kashiwa.rb とは</h1>\n<p>柏界隈でRuby技術者たちが気軽に集まれるコミュニティです。</p>\n<p>月に1度程度のペースでJR柏駅東口（南口）徒歩3分にあるパレット柏の会議室に集まります。</p>\n<p>プログラミング初学者からベテランRuby技術者まで一緒にわいわい勉強しましょう！</p>\n<p>運営に関することは ruby-jp Slack の #kashiwarb チャンネルで会話しています。興味があればそちらにもご参加ください。大歓迎です。</p>\n<h1>（本編前）雑談＆わいがやタイム</h1>\n<p>18:10 頃に開場します。本編が始まる 19:00 までは雑談＆わいがやタイムです。</p>\n<h1>（本編）勉強会</h1>\n<p>今回は 発表 × 3 の形式での勉強会です。</p>\n<p>1人持ち時間20分を好きに使ってください。余った時間は感想戦orフィードバックタイムで1枠30分です。</p>\n<ul>\n<li>最近取り組んでいることやRuby関連の最新ニュースをプレゼン形式で発表</li>\n<li>ライブコーディング</li>\n<li>最近作ったソフトウェアのデモ</li>\n<li>Kaigi on Rails に提出した CfP の供養</li>\n<li>最近気になっている話題について議題だけを提示してみんなでディスカッション</li>\n<li>Lightning Talk + 感想戦</li>\n<li>etc...</li>\n</ul>\n<p>どんな内容でも構いません。発表する機会・場数を踏みたい！という方、大歓迎です。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:10</td>\n<td>開場</td>\n<td>-</td>\n</tr>\n<tr>\n<td>18:10〜</td>\n<td>もくもくタイム</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:00〜</td>\n<td>自己紹介・チェックイン</td>\n<td>みんな</td>\n</tr>\n<tr>\n<td>19:10〜</td>\n<td>発表枠1 - TBA</td>\n<td></td>\n</tr>\n<tr>\n<td>19:40〜</td>\n<td>発表枠2 - TBA</td>\n<td></td>\n</tr>\n<tr>\n<td>20:10〜</td>\n<td>小休憩</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:15〜</td>\n<td>発表枠3 - TBA</td>\n<td></td>\n</tr>\n<tr>\n<td>20:45</td>\n<td>撤収</td>\n<td>-</td>\n</tr>\n<tr>\n<td>21:00〜</td>\n<td>希望者で懇親会</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<h1>会場</h1>\n<p>パレット柏 ミーティングルームB</p>\n<p>アクセス方法: <a href=\"https://www.palettekashiwa.jp/access/\" rel=\"nofollow\">https://www.palettekashiwa.jp/access/</a></p>\n<p>会場 Wi-Fi あり</p>\n<h1>参加費</h1>\n<p>柏市の施設を利用させてもらいます。会場＆設備費として100円いただきます。当日、現金またはPayPayでお支払いをお願いします。</p>\n<h1>飲食について</h1>\n<p>会議室内での飲食は可能です。</p>\n<p>主催者側では特に何も準備しません。周辺にスーパーやコンビニ、ファストフード店がありますのでご自身で準備して持ち込んでもらえればOKです。ゴミは各自で持ち帰ってください。</p>\n<p>アルコールを飲まれる方は以下を必ず守ってください。</p>\n<ol>\n<li>飲酒運転をしない</li>\n<li>他の利用者に著しい迷惑をかけない</li>\n</ol>\n<h1>過去開催の様子</h1>\n<p><a href=\"https://github.com/kashiwarb-meetup/monthly-meetup/tree/main/reports\" rel=\"nofollow\">https://github.com/kashiwarb-meetup/monthly-meetup/tree/main/reports</a></p>\n<h1>アンチハラスメントポリシー</h1>\n<p>Ruby25周年イベントのアンチハラスメントポリシーに従います。事前にお目通しください。 <a href=\"https://25.ruby.or.jp/coc.ja.html\" rel=\"nofollow\">https://25.ruby.or.jp/coc.ja.html</a></p>\n<h1>当日の連絡先</h1>\n<p>Kashiwa.rb 管理者( <a href=\"https://kashiwarb.connpass.com/participation/\" rel=\"nofollow\">https://kashiwarb.connpass.com/participation/</a> )にDMをお願いします。</p>\n<h1>留意事項</h1>\n<ul>\n<li>どなたでもブログ/SNSにあげられるよう写真撮影を許可していますので、その点ご了承ください。</li>\n<li>質問・疑問などは管理者 ( <a href=\"https://kashiwarb.connpass.com/participation/\" rel=\"nofollow\">https://kashiwarb.connpass.com/participation/</a> )へのDM、もしくは <a href=\"https://x.com/search?q=%23kashiwarb\" rel=\"nofollow\">#kashiwarb</a> 付きのtweetでご連絡ください。</li>\n<li>Kashiwa.rbはRubyや技術を軸にしたコミュニティです。知識の共有および、参加者同士の交流を目的としない参加はお断りしています。 参加目的が不適切だと判断される場合には、運営側で参加をキャンセルする場合があります。</li>\n</ul>",
+      "url": "https://kashiwarb.connpass.com/event/402700/",
+      "image_url": "https://media.connpass.com/thumbs/cc/b8/ccb8fd32bec7b06e498ad8226790cd17.png",
+      "hash_tag": "kashiwarb",
+      "started_at": "2026-08-20T18:00:00+09:00",
       "ended_at": "2026-08-20T21:00:00+09:00",
-      "published_at": "2026-07-22T03:10:03+09:00",
-      "limit": 5,
+      "published_at": "2026-08-03T18:28:57+09:00",
+      "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
-        "id": 4422,
-        "subdomain": "fgstudy",
-        "title": "FGStudy",
-        "url": "https://fgstudy.connpass.com/"
+        "id": 15086,
+        "subdomain": "kashiwarb",
+        "title": "Kashiwa.rb",
+        "url": "https://kashiwarb.connpass.com/"
       },
-      "address": "神奈川県茅ヶ崎市十間坂 1-4-2",
-      "place": "FG-Space",
-      "lat": "35.330723600000",
-      "lon": "139.401633300000",
-      "owner_id": 8108,
-      "owner_nickname": "nuki_pon",
-      "owner_display_name": "ぬきぽん",
-      "accepted": 4,
+      "address": "柏市柏1丁目7番1-301号",
+      "place": "パレット柏 ミーティングルーム",
+      "lat": "35.860465600000",
+      "lon": "139.972050100000",
+      "owner_id": 366130,
+      "owner_nickname": "tonyfactory210",
+      "owner_display_name": "tonyfactory210",
+      "accepted": 10,
       "waiting": 0,
-      "updated_at": "2026-07-22T03:11:11+09:00"
+      "updated_at": "2026-08-03T18:30:27+09:00"
     }
   ]
 }
