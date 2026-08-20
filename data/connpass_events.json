@@ -1,39 +1,8 @@
 {
-  "fetched_at": "2026-08-20T13:29:19.418617+09:00",
+  "fetched_at": "2026-08-20T14:22:42.887990+09:00",
   "date": "20260820",
-  "count": 19,
+  "count": 20,
   "events": [
-    {
-      "id": 400310,
-      "title": "tamachi.go #1",
-      "catch": "",
-      "description": "<h1>tamachi.goの概要</h1>\n<p>tamachi.goは田町駅から半径20060102150405nm (約20km) にお住まい・お勤め・ゆかりのあるエンジニアを対象としたgolangの勉強を目的としたコミュニティとなります。golangに関わらずGopherのためになる内容であれば、golangに限らず何でも歓迎です。(例: GopherのためのVim活用術など) 普段の業務でやったことや、新しい発見、初めての登壇の機会など、気軽に発表できる場所として、ぜひみんなで育てていければと思っています。</p>\n<h1>登壇内容</h1>\n<h2>登壇者募集中</h2>\n\n<p>5~10分程度のGolangに関する話題であればなんでも問題ありませんので、気軽に登壇者枠でお申し込みください。</p>\n<h3>【登壇枠 1 】承認済みなのに差戻しできてしまうバグ、型で潰せます</h3>\n\n<p>SHINCHI Takahiro (<a href=\"https://x.com/shintakapi\" rel=\"nofollow\">@shintakapi</a>) さん</p>\n<p><img alt=\"shintakapi icon\" src=\"https://pbs.twimg.com/profile_images/1873935026431356928/cxzXr7AF_400x400.jpg\" width=\"120\">  </p>\n<h3>【登壇枠 2 】tamachi.go 誕生の裏側</h3>\n\n<p>パンダム (<a href=\"https://x.com/rymiyamoto129\" rel=\"nofollow\">@rymiyamoto129</a>)</p>\n<p><img alt=\"パンダム icon\" src=\"https://pbs.twimg.com/profile_images/1768125639117484032/2EBU8FlI_400x400.jpg\" width=\"120\">  </p>\n<h1>タイムスケジュール（予定）</h1>\n<table>\n<thead>\n<tr>\n<th><img width=\"60/\">Time<img width=\"60\"></th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30 -</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:30 - 19:45</td>\n<td>スタッフトーク 　</td>\n</tr>\n<tr>\n<td>19:45 - 19:55</td>\n<td>登壇枠1<br><b>「承認済みなのに差戻しできてしまうバグ、型で潰せます」</b><br>SHINCHI, Takahiro (<a href=\"https://x.com/shintakapi\" rel=\"nofollow\">@shintakapi</a>) さん</td>\n</tr>\n<tr>\n<td>19:55 - 20:05</td>\n<td>登壇枠2<br><b>tamachi.go 誕生の裏側</b><br>パンダム (<a href=\"https://x.com/rymiyamoto129\" rel=\"nofollow\">@rymiyamoto129</a>)</td>\n</tr>\n<tr>\n<td>20:05 - 20:15</td>\n<td>登壇枠3<br><b>未定</b></td>\n</tr>\n<tr>\n<td>20:15 - 20:30</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>20:30 - 22:00</td>\n<td>懇親会</td>\n</tr>\n<tr>\n<td>22:00 -</td>\n<td>撤収（原状復帰にご協力下さい）</td>\n</tr>\n</tbody>\n</table>\n<h1>開催場所</h1>\n<p>株式会社オプティム: 105-0022 東京都港区海岸1丁目2番20号 汐留ビルディング18F</p>\n<p><a href=\"https://www.optim.co.jp/media/cat-event/corp-tokyo-access\" rel=\"nofollow\">会場への行き方（JR浜松町駅より）</a></p>\n<h1>イベントに関する問い合わせ・当日連絡先</h1>\n<p>イベント当日ないし、その他本イベントに関する連絡は以下の運営のいずれかにXのDM等でご連絡ください。</p>\n<ul>\n<li><a href=\"https://x.com/kenchi8n\" rel=\"nofollow\">@kenchi8n</a></li>\n<li><a href=\"https://x.com/rymiyamoto129\" rel=\"nofollow\">@rymiyamoto129</a></li>\n</ul>\n<h1>参加費用に関して</h1>\n<p>当日会場にて頂戴いたします。現金またはPayPayにてお支払いください。\nこの参加費用は懇親会の際のドリンクや食事代などイベント運営に必要な費用として充てさせていただきます。</p>\n<h1>行動規範・アンチハラスメントポリシー</h1>\n<p>tamachi.goは、すべての参加者が安心して学び、交流できる場を目指しています。性別、国籍、年齢、経験や技術レベルなどにかかわらず、互いを尊重してご参加ください。参加者の皆さまに <a href=\"https://go.dev/conduct\" rel=\"nofollow\">Go Community Code of Conduct</a> の厳守をお願いしております。</p>\n<p>差別的・攻撃的な言動、性的な表現、無断での撮影・SNS投稿、執拗な勧誘、技術レベルを見下す言動などのハラスメント行為を禁止します。これは会場だけでなく、懇親会やオンラインでのやり取りにも適用されます。\nハラスメントを受けた・目撃した場合は、運営スタッフまでご相談ください。プライバシーは厳守します。違反があった場合、運営の判断で注意・退場等の対応を行うことがあります。</p>",
-      "url": "https://tamachi-go.connpass.com/event/400310/",
-      "image_url": "https://media.connpass.com/thumbs/a6/e8/a6e8217926aa4e5847eac634fc208ae2.png",
-      "hash_tag": "tamachigo",
-      "started_at": "2026-08-20T19:30:00+09:00",
-      "ended_at": "2026-08-20T22:00:00+09:00",
-      "published_at": "2026-07-21T00:01:32+09:00",
-      "limit": 23,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17811,
-        "subdomain": "tamachi-go",
-        "title": "tamachi.go",
-        "url": "https://tamachi-go.connpass.com/"
-      },
-      "address": "105-0022 東京都港区海岸1丁目2番20号 汐留ビルディング18F",
-      "place": "株式会社オプティム",
-      "lat": "35.656690600000",
-      "lon": "139.759386700000",
-      "owner_id": 255614,
-      "owner_nickname": "rymiyamoto",
-      "owner_display_name": "パンダム",
-      "accepted": 7,
-      "waiting": 0,
-      "updated_at": "2026-08-19T10:29:49+09:00"
-    },
     {
       "id": 403225,
       "title": "KAUCHE MeetUp!",
@@ -64,6 +33,37 @@
       "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-08-17T01:01:37+09:00"
+    },
+    {
+      "id": 400310,
+      "title": "tamachi.go #1",
+      "catch": "",
+      "description": "<h1>tamachi.goの概要</h1>\n<p>tamachi.goは田町駅から半径20060102150405nm (約20km) にお住まい・お勤め・ゆかりのあるエンジニアを対象としたgolangの勉強を目的としたコミュニティとなります。golangに関わらずGopherのためになる内容であれば、golangに限らず何でも歓迎です。(例: GopherのためのVim活用術など) 普段の業務でやったことや、新しい発見、初めての登壇の機会など、気軽に発表できる場所として、ぜひみんなで育てていければと思っています。</p>\n<h1>登壇内容</h1>\n<p><del>5~10分程度のGolangに関する話題であればなんでも問題ありませんので、気軽に登壇者枠でお申し込みください。</del></p>\n<p>→満枠になったので締め切りました</p>\n<h3>【登壇枠 1 】承認済みなのに差戻しできてしまうバグ、型で潰せます</h3>\n\n<p>SHINCHI Takahiro (<a href=\"https://x.com/shintakapi\" rel=\"nofollow\">@shintakapi</a>) さん</p>\n<p><img alt=\"shintakapi icon\" src=\"https://pbs.twimg.com/profile_images/1873935026431356928/cxzXr7AF_400x400.jpg\" width=\"120\">  </p>\n<h3>【登壇枠 2 】tamachi.go 誕生の裏側</h3>\n\n<p>パンダム (<a href=\"https://x.com/rymiyamoto129\" rel=\"nofollow\">@rymiyamoto129</a>)</p>\n<p><img alt=\"パンダム icon\" src=\"https://pbs.twimg.com/profile_images/1768125639117484032/2EBU8FlI_400x400.jpg\" width=\"120\">  </p>\n<h3>【登壇枠 3 】Go を使い始めて 2 ヶ月の学び</h3>\n\n<p>gara さん</p>\n<h1>タイムスケジュール（予定）</h1>\n<table>\n<thead>\n<tr>\n<th><img width=\"60/\">Time<img width=\"60\"></th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30 -</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:30 - 19:45</td>\n<td>スタッフトーク 　</td>\n</tr>\n<tr>\n<td>19:45 - 19:55</td>\n<td>登壇枠1<br><b>「承認済みなのに差戻しできてしまうバグ、型で潰せます」</b><br>SHINCHI, Takahiro (<a href=\"https://x.com/shintakapi\" rel=\"nofollow\">@shintakapi</a>) さん</td>\n</tr>\n<tr>\n<td>19:55 - 20:05</td>\n<td>登壇枠2<br><b>tamachi.go 誕生の裏側</b><br>パンダム (<a href=\"https://x.com/rymiyamoto129\" rel=\"nofollow\">@rymiyamoto129</a>)</td>\n</tr>\n<tr>\n<td>20:05 - 20:15</td>\n<td>登壇枠3<br><b>「Go を使い始めて 2 ヶ月の学び」</b><br> gara さん</td>\n</tr>\n<tr>\n<td>20:15 - 20:30</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>20:30 - 22:00</td>\n<td>懇親会</td>\n</tr>\n<tr>\n<td>22:00 -</td>\n<td>撤収（原状復帰にご協力下さい）</td>\n</tr>\n</tbody>\n</table>\n<h1>開催場所</h1>\n<p>株式会社オプティム: 105-0022 東京都港区海岸1丁目2番20号 汐留ビルディング18F</p>\n<p><a href=\"https://www.optim.co.jp/media/cat-event/corp-tokyo-access\" rel=\"nofollow\">会場への行き方（JR浜松町駅より）</a></p>\n<h1>イベントに関する問い合わせ・当日連絡先</h1>\n<p>イベント当日ないし、その他本イベントに関する連絡は以下の運営のいずれかにXのDM等でご連絡ください。</p>\n<ul>\n<li><a href=\"https://x.com/kenchi8n\" rel=\"nofollow\">@kenchi8n</a></li>\n<li><a href=\"https://x.com/rymiyamoto129\" rel=\"nofollow\">@rymiyamoto129</a></li>\n</ul>\n<h1>参加費用に関して</h1>\n<p>当日会場にて頂戴いたします。現金またはPayPayにてお支払いください。\nこの参加費用は懇親会の際のドリンクや食事代などイベント運営に必要な費用として充てさせていただきます。</p>\n<h1>行動規範・アンチハラスメントポリシー</h1>\n<p>tamachi.goは、すべての参加者が安心して学び、交流できる場を目指しています。性別、国籍、年齢、経験や技術レベルなどにかかわらず、互いを尊重してご参加ください。参加者の皆さまに <a href=\"https://go.dev/conduct\" rel=\"nofollow\">Go Community Code of Conduct</a> の厳守をお願いしております。</p>\n<p>差別的・攻撃的な言動、性的な表現、無断での撮影・SNS投稿、執拗な勧誘、技術レベルを見下す言動などのハラスメント行為を禁止します。これは会場だけでなく、懇親会やオンラインでのやり取りにも適用されます。\nハラスメントを受けた・目撃した場合は、運営スタッフまでご相談ください。プライバシーは厳守します。違反があった場合、運営の判断で注意・退場等の対応を行うことがあります。</p>",
+      "url": "https://tamachi-go.connpass.com/event/400310/",
+      "image_url": "https://media.connpass.com/thumbs/a6/e8/a6e8217926aa4e5847eac634fc208ae2.png",
+      "hash_tag": "tamachigo",
+      "started_at": "2026-08-20T19:30:00+09:00",
+      "ended_at": "2026-08-20T22:00:00+09:00",
+      "published_at": "2026-07-21T00:01:32+09:00",
+      "limit": 23,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17811,
+        "subdomain": "tamachi-go",
+        "title": "tamachi.go",
+        "url": "https://tamachi-go.connpass.com/"
+      },
+      "address": "105-0022 東京都港区海岸1丁目2番20号 汐留ビルディング18F",
+      "place": "株式会社オプティム",
+      "lat": "35.656690600000",
+      "lon": "139.759386700000",
+      "owner_id": 255614,
+      "owner_nickname": "rymiyamoto",
+      "owner_display_name": "パンダム",
+      "accepted": 8,
+      "waiting": 0,
+      "updated_at": "2026-08-20T14:05:33+09:00"
     },
     {
       "id": 400484,
@@ -154,9 +154,9 @@
       "owner_id": 814332,
       "owner_nickname": "lycorptech_jp",
       "owner_display_name": "LINEヤフー Tech",
-      "accepted": 70,
+      "accepted": 69,
       "waiting": 0,
-      "updated_at": "2026-08-19T19:51:20+09:00"
+      "updated_at": "2026-08-20T14:03:54+09:00"
     },
     {
       "id": 399782,
@@ -188,6 +188,37 @@
       "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-08-19T15:52:14+09:00"
+    },
+    {
+      "id": 400003,
+      "title": "potatotips #96 iOS/Android開発Tips共有会",
+      "catch": "",
+      "description": "<h1>開催概要</h1>\n<p>今回は <strong>RIZAP テクノロジーズ 株式会社</strong> さん主催での開催となります。\nオフライン・オンラインの <strong>ハイブリッド開催</strong> です。</p>\n<hr>\n<p><strong>potatotips</strong> は 参加者全員がTipsを発表する というコンセプトで発足されたiOS/Androidアプリ開発者向けの勉強会です。\n長年の運営の経緯で現在はオーディエンス枠も追加されました。</p>\n<p>これまでpotatotipsには、若手からベテランまで総勢500名以上に登壇いただき、2000名以上にご参加をいただきました。\n経験の大小によらず、日々の開発の中で見つけたTipsやみんなに周知したいネタなど、ぜひお気軽にご登壇ください！</p>\n<p>引き続き主催をいただける会社さんを募集中です。</p>\n<p>（potatotipsの管理ページは <a href=\"https://github.com/potatotips/potatotips\" rel=\"nofollow\">コチラ</a> です）</p>\n<h1>内容</h1>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30-19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:00-19:05</td>\n<td>はじめに</td>\n</tr>\n<tr>\n<td>19:05-19:40</td>\n<td>LT 前半</td>\n</tr>\n<tr>\n<td>19:40-19:50</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>19:50-20:25</td>\n<td>LT 後半</td>\n</tr>\n<tr>\n<td>20:25-20:30</td>\n<td>おわりに</td>\n</tr>\n<tr>\n<td>20:30-21:30</td>\n<td>現地参加者向け懇親会</td>\n</tr>\n<tr>\n<td>21:30-22:00</td>\n<td>片付け、完全撤収</td>\n</tr>\n</tbody>\n</table>\n<h2>懇親会</h2>\n<p><strong>オフラインにて開催します。</strong></p>\n<p>是非とも参加いただき、発表では語れなかったお話や、参加者同士でのノウハウの共有や意見交換の場としてご活用ください。</p>\n<p>ささやかではありますが、夏らしくビールなど、お飲み物や軽食をご用意しております！🍺</p>\n<h1>参加枠の種別</h1>\n<h2>iOS/Android Tips発表枠</h2>\n<p><strong>LTの発表は現地にてお願いします。</strong></p>\n<ul>\n<li>iOS/AndroidそれぞれのTips（LT）を5分で発表いただく参加者の枠です。</li>\n<li>LT発表者はお手数ですが開始時間までに現地にお越しください。</li>\n<li>iOS/Androidとなっていますが、iOS/Androidアプリ開発者が興味を持ちそうな内容であれば、visonOSやFlutter、AIエディタなど他のOSやツールについてのLTも歓迎です。</li>\n<li>開催当日の数日前など直前にキャンセルが出て繰り上がり当選され、LTの準備が間に合わないかたはLTなしでご参加ください。</li>\n</ul>\n<h2>オーディエンス枠</h2>\n<ul>\n<li>Tipsの発表なしでご参加いただける枠です。</li>\n<li>オフライン・オンラインどちらでも可能です。</li>\n<li>当日、X(Twitter)などで参加してます！の一言で良いですので #potatotips のハッシュタグを付けてツイートをお願いします。<ul>\n<li>もちろんブログなどで参加報告いただくことも大歓迎です！</li>\n</ul>\n</li>\n</ul>\n<h1>申し込み条件</h1>\n<p>connpassのアカウントに対して、X(Twitter)/GitHubのいずれか <strong>iOS/Androidに関わる活動が確認できるアカウント</strong> の連携をお願いします。\nアカウントの連携がない、もしくは連携されていてもiOS/Androidに関わる活動が確認できない場合、事前告知なく申し込みをキャンセルさせていただくことをご了承願います。</p>\n<h1>発表内容</h1>\n<h2>登壇者とLTの内容</h2>\n<p>登壇者とLTの内容につきましては <a href=\"https://github.com/potatotips/potatotips/wiki/potatotips-96\" rel=\"nofollow\">https://github.com/potatotips/potatotips/wiki/potatotips-96</a> を随時更新していきます。</p>\n<p>発表者のかたは上記に直接記載をお願いします。</p>\n<h2>発表の形式</h2>\n<ul>\n<li>LTのタイムリミットは５分とし、質疑応答はなし。５分経過したら無条件に発表を終了とさせていただきます。</li>\n</ul>\n<h1>当日の受付について</h1>\n<h2>オンライン参加の方</h2>\n<ul>\n<li>当日までに本イベントページの「参加者への情報」にオンライン参加用のURLが記載されますので、そちらからご入室ください。</li>\n<li>18時50分より入室可能です。</li>\n</ul>\n<h2>オフライン（現地）参加の方</h2>\n<h3>入館方法</h3>\n<p>本社ビルに着きましたら、ビル中央にある30階直通のエレベータにお乗りください。<br>\n30階を降りて右手に進むと高層階行きのエレベータがあるので、36階にお上がりください。<br></p>\n<p><a href=\"https://www.rizap-tech.co.jp/company/profile\" rel=\"nofollow\">RIZAP テクノロジーズ 株式会社 本社</a>\n〒160-0023 東京都新宿区西新宿8-17-1 住友不動産新宿グランドタワー36F</p>\n<p><strong>＜ご用意いただくもの＞</strong><br>\nconnpassの受付番号もしくはアカウントのご提示をお願いいたします。</p>\n<p><strong>＜入館可能時間＞</strong><br>\n入館受付は18:30〜19:30頃を予定しております。<br>\nそれ以降の入館になる場合は以下の問い合わせ先にご連絡ください。</p>\n<p><strong>＜入館に関する問い合わせ先＞</strong><br>\nXで担当者（<a href=\"https://x.com/p0dee\" rel=\"nofollow\">@p0dee</a>） 宛にDMをお送り下さい。</p>\n<h1>参加について</h1>\n<h2>キャンセル</h2>\n<ul>\n<li>参加できないことがわかった時点で、速やかにconnpass上でのキャンセル処理をお願いいたします。</li>\n</ul>\n<h1>アンチハラスメントポリシー</h1>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人種、宗教、公共な場での性的な画像や類する表現、脅迫、ストーカー、望まない写真撮影や録音・録画、不適切な接触、およびそれらに関連した不快な言動が含まれます。</p>\n<p>potatotipsでは全ての参加者がiOS/AndroidのTips共有に集中できるよう、これらのハラスメント行為を許容しません。</p>\n<p>potatotips会場内だけでなく、Tipsの内容や状況についてブログやSNSなどで公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。</p>\n<p>万が一、ハラスメント行為を見聞きした参加者は、お手数ですがpotatotips窓口の所（tokorom@gmail.com）までご一報ください。</p>\n<p>以下、potatotipsにて過去に実際にご指摘をいただいた内容になります。</p>\n<ul>\n<li>司会のかたを美人、カワイイといった発言が頻発し、LTの内容とは無関係かつ性差に関する発言がクローズアップされてしまった</li>\n<li>LTの内容に特定コミュティにて問題となった（いわゆる炎上した）スライドを模倣するものが含まれ、関係者に不快感を与えてしまった</li>\n</ul>",
+      "url": "https://potatotips.connpass.com/event/400003/",
+      "image_url": "https://media.connpass.com/thumbs/f3/73/f37376330bf2af875736a53010eb5b8a.png",
+      "hash_tag": "potatotips",
+      "started_at": "2026-08-20T19:00:00+09:00",
+      "ended_at": "2026-08-20T21:30:00+09:00",
+      "published_at": "2026-07-17T09:31:56+09:00",
+      "limit": 78,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 652,
+        "subdomain": "potatotips",
+        "title": "potatotips",
+        "url": "https://potatotips.connpass.com/"
+      },
+      "address": "東京都新宿区西新宿8-17-1 (住友不動産新宿グランドタワー36F)",
+      "place": "RIZAP テクノロジーズ 株式会社 本社",
+      "lat": "35.696044800000",
+      "lon": "139.690370200000",
+      "owner_id": 16371,
+      "owner_nickname": "tokorom",
+      "owner_display_name": "tokorom",
+      "accepted": 47,
+      "waiting": 0,
+      "updated_at": "2026-08-19T14:23:08+09:00"
     },
     {
       "id": 385009,
@@ -252,37 +283,6 @@
       "updated_at": "2026-08-13T18:47:40+09:00"
     },
     {
-      "id": 400003,
-      "title": "potatotips #96 iOS/Android開発Tips共有会",
-      "catch": "",
-      "description": "<h1>開催概要</h1>\n<p>今回は <strong>RIZAP テクノロジーズ 株式会社</strong> さん主催での開催となります。\nオフライン・オンラインの <strong>ハイブリッド開催</strong> です。</p>\n<hr>\n<p><strong>potatotips</strong> は 参加者全員がTipsを発表する というコンセプトで発足されたiOS/Androidアプリ開発者向けの勉強会です。\n長年の運営の経緯で現在はオーディエンス枠も追加されました。</p>\n<p>これまでpotatotipsには、若手からベテランまで総勢500名以上に登壇いただき、2000名以上にご参加をいただきました。\n経験の大小によらず、日々の開発の中で見つけたTipsやみんなに周知したいネタなど、ぜひお気軽にご登壇ください！</p>\n<p>引き続き主催をいただける会社さんを募集中です。</p>\n<p>（potatotipsの管理ページは <a href=\"https://github.com/potatotips/potatotips\" rel=\"nofollow\">コチラ</a> です）</p>\n<h1>内容</h1>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30-19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:00-19:05</td>\n<td>はじめに</td>\n</tr>\n<tr>\n<td>19:05-19:40</td>\n<td>LT 前半</td>\n</tr>\n<tr>\n<td>19:40-19:50</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>19:50-20:25</td>\n<td>LT 後半</td>\n</tr>\n<tr>\n<td>20:25-20:30</td>\n<td>おわりに</td>\n</tr>\n<tr>\n<td>20:30-21:30</td>\n<td>現地参加者向け懇親会</td>\n</tr>\n<tr>\n<td>21:30-22:00</td>\n<td>片付け、完全撤収</td>\n</tr>\n</tbody>\n</table>\n<h2>懇親会</h2>\n<p><strong>オフラインにて開催します。</strong></p>\n<p>是非とも参加いただき、発表では語れなかったお話や、参加者同士でのノウハウの共有や意見交換の場としてご活用ください。</p>\n<p>ささやかではありますが、夏らしくビールなど、お飲み物や軽食をご用意しております！🍺</p>\n<h1>参加枠の種別</h1>\n<h2>iOS/Android Tips発表枠</h2>\n<p><strong>LTの発表は現地にてお願いします。</strong></p>\n<ul>\n<li>iOS/AndroidそれぞれのTips（LT）を5分で発表いただく参加者の枠です。</li>\n<li>LT発表者はお手数ですが開始時間までに現地にお越しください。</li>\n<li>iOS/Androidとなっていますが、iOS/Androidアプリ開発者が興味を持ちそうな内容であれば、visonOSやFlutter、AIエディタなど他のOSやツールについてのLTも歓迎です。</li>\n<li>開催当日の数日前など直前にキャンセルが出て繰り上がり当選され、LTの準備が間に合わないかたはLTなしでご参加ください。</li>\n</ul>\n<h2>オーディエンス枠</h2>\n<ul>\n<li>Tipsの発表なしでご参加いただける枠です。</li>\n<li>オフライン・オンラインどちらでも可能です。</li>\n<li>当日、X(Twitter)などで参加してます！の一言で良いですので #potatotips のハッシュタグを付けてツイートをお願いします。<ul>\n<li>もちろんブログなどで参加報告いただくことも大歓迎です！</li>\n</ul>\n</li>\n</ul>\n<h1>申し込み条件</h1>\n<p>connpassのアカウントに対して、X(Twitter)/GitHubのいずれか <strong>iOS/Androidに関わる活動が確認できるアカウント</strong> の連携をお願いします。\nアカウントの連携がない、もしくは連携されていてもiOS/Androidに関わる活動が確認できない場合、事前告知なく申し込みをキャンセルさせていただくことをご了承願います。</p>\n<h1>発表内容</h1>\n<h2>登壇者とLTの内容</h2>\n<p>登壇者とLTの内容につきましては <a href=\"https://github.com/potatotips/potatotips/wiki/potatotips-96\" rel=\"nofollow\">https://github.com/potatotips/potatotips/wiki/potatotips-96</a> を随時更新していきます。</p>\n<p>発表者のかたは上記に直接記載をお願いします。</p>\n<h2>発表の形式</h2>\n<ul>\n<li>LTのタイムリミットは５分とし、質疑応答はなし。５分経過したら無条件に発表を終了とさせていただきます。</li>\n</ul>\n<h1>当日の受付について</h1>\n<h2>オンライン参加の方</h2>\n<ul>\n<li>当日までに本イベントページの「参加者への情報」にオンライン参加用のURLが記載されますので、そちらからご入室ください。</li>\n<li>18時50分より入室可能です。</li>\n</ul>\n<h2>オフライン（現地）参加の方</h2>\n<h3>入館方法</h3>\n<p>本社ビルに着きましたら、ビル中央にある30階直通のエレベータにお乗りください。<br>\n30階を降りて右手に進むと高層階行きのエレベータがあるので、36階にお上がりください。<br></p>\n<p><a href=\"https://www.rizap-tech.co.jp/company/profile\" rel=\"nofollow\">RIZAP テクノロジーズ 株式会社 本社</a>\n〒160-0023 東京都新宿区西新宿8-17-1 住友不動産新宿グランドタワー36F</p>\n<p><strong>＜ご用意いただくもの＞</strong><br>\nconnpassの受付番号もしくはアカウントのご提示をお願いいたします。</p>\n<p><strong>＜入館可能時間＞</strong><br>\n入館受付は18:30〜19:30頃を予定しております。<br>\nそれ以降の入館になる場合は以下の問い合わせ先にご連絡ください。</p>\n<p><strong>＜入館に関する問い合わせ先＞</strong><br>\nXで担当者（<a href=\"https://x.com/p0dee\" rel=\"nofollow\">@p0dee</a>） 宛にDMをお送り下さい。</p>\n<h1>参加について</h1>\n<h2>キャンセル</h2>\n<ul>\n<li>参加できないことがわかった時点で、速やかにconnpass上でのキャンセル処理をお願いいたします。</li>\n</ul>\n<h1>アンチハラスメントポリシー</h1>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人種、宗教、公共な場での性的な画像や類する表現、脅迫、ストーカー、望まない写真撮影や録音・録画、不適切な接触、およびそれらに関連した不快な言動が含まれます。</p>\n<p>potatotipsでは全ての参加者がiOS/AndroidのTips共有に集中できるよう、これらのハラスメント行為を許容しません。</p>\n<p>potatotips会場内だけでなく、Tipsの内容や状況についてブログやSNSなどで公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。</p>\n<p>万が一、ハラスメント行為を見聞きした参加者は、お手数ですがpotatotips窓口の所（tokorom@gmail.com）までご一報ください。</p>\n<p>以下、potatotipsにて過去に実際にご指摘をいただいた内容になります。</p>\n<ul>\n<li>司会のかたを美人、カワイイといった発言が頻発し、LTの内容とは無関係かつ性差に関する発言がクローズアップされてしまった</li>\n<li>LTの内容に特定コミュティにて問題となった（いわゆる炎上した）スライドを模倣するものが含まれ、関係者に不快感を与えてしまった</li>\n</ul>",
-      "url": "https://potatotips.connpass.com/event/400003/",
-      "image_url": "https://media.connpass.com/thumbs/f3/73/f37376330bf2af875736a53010eb5b8a.png",
-      "hash_tag": "potatotips",
-      "started_at": "2026-08-20T19:00:00+09:00",
-      "ended_at": "2026-08-20T21:30:00+09:00",
-      "published_at": "2026-07-17T09:31:56+09:00",
-      "limit": 78,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 652,
-        "subdomain": "potatotips",
-        "title": "potatotips",
-        "url": "https://potatotips.connpass.com/"
-      },
-      "address": "東京都新宿区西新宿8-17-1 (住友不動産新宿グランドタワー36F)",
-      "place": "RIZAP テクノロジーズ 株式会社 本社",
-      "lat": "35.696044800000",
-      "lon": "139.690370200000",
-      "owner_id": 16371,
-      "owner_nickname": "tokorom",
-      "owner_display_name": "tokorom",
-      "accepted": 48,
-      "waiting": 0,
-      "updated_at": "2026-08-19T14:23:08+09:00"
-    },
-    {
       "id": 401421,
       "title": "成功事例だけでは見えない、AI駆動開発のリアル",
       "catch": "〜AI駆動開発で、現場・自分は、どう変わっていくのか〜",
@@ -309,7 +309,7 @@
       "owner_id": 1038575,
       "owner_nickname": "iiilllii_cmp",
       "owner_display_name": "Hayato Miyakawa",
-      "accepted": 17,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-08-17T17:13:06+09:00"
     },
@@ -366,7 +366,7 @@
       "owner_id": 1030071,
       "owner_nickname": "daigos432_findy",
       "owner_display_name": "daigos432_findy",
-      "accepted": 917,
+      "accepted": 919,
       "waiting": 5,
       "updated_at": "2026-08-20T08:29:49+09:00"
     },
@@ -397,7 +397,7 @@
       "owner_id": 141857,
       "owner_nickname": "freee_event",
       "owner_display_name": "freee",
-      "accepted": 82,
+      "accepted": 83,
       "waiting": 0,
       "updated_at": "2026-08-06T18:03:20+09:00"
     },
@@ -428,7 +428,7 @@
       "owner_id": 933519,
       "owner_nickname": "Acompany",
       "owner_display_name": "Acompany",
-      "accepted": 82,
+      "accepted": 81,
       "waiting": 0,
       "updated_at": "2026-08-20T09:49:19+09:00"
     },
@@ -586,6 +586,37 @@
       "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-08-13T15:04:52+09:00"
+    },
+    {
+      "id": 402700,
+      "title": "Kashiwa.rb #26 勉強会",
+      "catch": "",
+      "description": "<h1>Kashiwa.rb とは</h1>\n<p>柏界隈でRuby技術者たちが気軽に集まれるコミュニティです。</p>\n<p>月に1度程度のペースでJR柏駅東口（南口）徒歩3分にあるパレット柏の会議室に集まります。</p>\n<p>プログラミング初学者からベテランRuby技術者まで一緒にわいわい勉強しましょう！</p>\n<p>運営に関することは ruby-jp Slack の #kashiwarb チャンネルで会話しています。興味があればそちらにもご参加ください。大歓迎です。</p>\n<h1>（本編前）雑談＆わいがやタイム</h1>\n<p>18:10 頃に開場します。本編が始まる 19:00 までは雑談＆わいがやタイムです。</p>\n<h1>（本編）勉強会</h1>\n<p>今回は 発表 × 3 の形式での勉強会です。</p>\n<p>1人持ち時間20分を好きに使ってください。余った時間は感想戦orフィードバックタイムで1枠30分です。</p>\n<ul>\n<li>最近取り組んでいることやRuby関連の最新ニュースをプレゼン形式で発表</li>\n<li>ライブコーディング</li>\n<li>最近作ったソフトウェアのデモ</li>\n<li>Kaigi on Rails に提出した CfP の供養</li>\n<li>最近気になっている話題について議題だけを提示してみんなでディスカッション</li>\n<li>Lightning Talk + 感想戦</li>\n<li>etc...</li>\n</ul>\n<p>どんな内容でも構いません。発表する機会・場数を踏みたい！という方、大歓迎です。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:10</td>\n<td>開場</td>\n<td>-</td>\n</tr>\n<tr>\n<td>18:10〜</td>\n<td>もくもくタイム</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:00〜</td>\n<td>自己紹介・チェックイン</td>\n<td>みんな</td>\n</tr>\n<tr>\n<td>19:10〜</td>\n<td>発表枠1 - TBA</td>\n<td></td>\n</tr>\n<tr>\n<td>19:40〜</td>\n<td>発表枠2 - TBA</td>\n<td></td>\n</tr>\n<tr>\n<td>20:10〜</td>\n<td>小休憩</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:15〜</td>\n<td>発表枠3 - TBA</td>\n<td></td>\n</tr>\n<tr>\n<td>20:45</td>\n<td>撤収</td>\n<td>-</td>\n</tr>\n<tr>\n<td>21:00〜</td>\n<td>希望者で懇親会</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<h1>会場</h1>\n<p>パレット柏 ミーティングルームB</p>\n<p>アクセス方法: <a href=\"https://www.palettekashiwa.jp/access/\" rel=\"nofollow\">https://www.palettekashiwa.jp/access/</a></p>\n<p>会場 Wi-Fi あり</p>\n<h1>参加費</h1>\n<p>柏市の施設を利用させてもらいます。会場＆設備費として100円いただきます。当日、現金またはPayPayでお支払いをお願いします。</p>\n<h1>飲食について</h1>\n<p>会議室内での飲食は可能です。</p>\n<p>主催者側では特に何も準備しません。周辺にスーパーやコンビニ、ファストフード店がありますのでご自身で準備して持ち込んでもらえればOKです。ゴミは各自で持ち帰ってください。</p>\n<p>アルコールを飲まれる方は以下を必ず守ってください。</p>\n<ol>\n<li>飲酒運転をしない</li>\n<li>他の利用者に著しい迷惑をかけない</li>\n</ol>\n<h1>過去開催の様子</h1>\n<p><a href=\"https://github.com/kashiwarb-meetup/monthly-meetup/tree/main/reports\" rel=\"nofollow\">https://github.com/kashiwarb-meetup/monthly-meetup/tree/main/reports</a></p>\n<h1>アンチハラスメントポリシー</h1>\n<p>Ruby25周年イベントのアンチハラスメントポリシーに従います。事前にお目通しください。 <a href=\"https://25.ruby.or.jp/coc.ja.html\" rel=\"nofollow\">https://25.ruby.or.jp/coc.ja.html</a></p>\n<h1>当日の連絡先</h1>\n<p>Kashiwa.rb 管理者( <a href=\"https://kashiwarb.connpass.com/participation/\" rel=\"nofollow\">https://kashiwarb.connpass.com/participation/</a> )にDMをお願いします。</p>\n<h1>留意事項</h1>\n<ul>\n<li>どなたでもブログ/SNSにあげられるよう写真撮影を許可していますので、その点ご了承ください。</li>\n<li>質問・疑問などは管理者 ( <a href=\"https://kashiwarb.connpass.com/participation/\" rel=\"nofollow\">https://kashiwarb.connpass.com/participation/</a> )へのDM、もしくは <a href=\"https://x.com/search?q=%23kashiwarb\" rel=\"nofollow\">#kashiwarb</a> 付きのtweetでご連絡ください。</li>\n<li>Kashiwa.rbはRubyや技術を軸にしたコミュニティです。知識の共有および、参加者同士の交流を目的としない参加はお断りしています。 参加目的が不適切だと判断される場合には、運営側で参加をキャンセルする場合があります。</li>\n</ul>",
+      "url": "https://kashiwarb.connpass.com/event/402700/",
+      "image_url": "https://media.connpass.com/thumbs/cc/b8/ccb8fd32bec7b06e498ad8226790cd17.png",
+      "hash_tag": "kashiwarb",
+      "started_at": "2026-08-20T18:00:00+09:00",
+      "ended_at": "2026-08-20T21:00:00+09:00",
+      "published_at": "2026-08-03T18:28:57+09:00",
+      "limit": 15,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 15086,
+        "subdomain": "kashiwarb",
+        "title": "Kashiwa.rb",
+        "url": "https://kashiwarb.connpass.com/"
+      },
+      "address": "柏市柏1丁目7番1-301号",
+      "place": "パレット柏 ミーティングルーム",
+      "lat": "35.860465600000",
+      "lon": "139.972050100000",
+      "owner_id": 366130,
+      "owner_nickname": "tonyfactory210",
+      "owner_display_name": "tonyfactory210",
+      "accepted": 7,
+      "waiting": 0,
+      "updated_at": "2026-08-03T18:30:27+09:00"
     }
   ]
 }
