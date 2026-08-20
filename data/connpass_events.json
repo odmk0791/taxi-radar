@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-20T11:12:39.244055+09:00",
+  "fetched_at": "2026-08-20T12:39:33.348767+09:00",
   "date": "20260820",
   "count": 19,
   "events": [
@@ -128,37 +128,6 @@
       "updated_at": "2026-07-28T16:12:46+09:00"
     },
     {
-      "id": 397239,
-      "title": "エンジニア英語キャリア Meetup #3",
-      "catch": "〜英語キャリア はじめの一歩、次の一歩〜",
-      "description": "<h2>この会の趣旨</h2>\n<p>「英語ができれば、キャリアはもっと自由になる」\n 分かってはいても、最初の一歩は重いものです。</p>\n<p>今回のmeetupは、実際にその一歩を踏み出したエンジニアたちのを生々しいエピソードをお話しいただきます。</p>\n<p>primeNumberの鈴木健太からは、AIを使いながら取り組んだ英語学習の1年間と現在地について。</p>\n<p>UPSIDERの赤沼寛明さんからは、多国籍チームを率いてきた立場から、「会話が苦手でも、会話の土台はつくれる」という、シャイなエンジニアが英語環境で生き抜いたエピソードを。</p>\n<p>3人目は、<strong>「登壇者非公開」「配信なし」「SNS共有NG」</strong>で、ベイエリアの外資企業にリモート勤務するエンジニアからお話しいただきます！</p>\n<p>会場でしか聞けない生々しい話を、ぜひお楽しみに。</p>\n<p>後半の懇親会では、英語話者（日本語OK）をゲストに招き、リラックスした雰囲気で英語に触れる機会を提供します 。</p>\n<ul>\n<li><strong>ドリンクのみご用意します。</strong>お食事は各自ご持参いただくか、事前にお済ませください。</li>\n<li><strong>Only drinks will be provided.</strong> Please bring your own food or eat before you arrive.</li>\n</ul>\n<p>このイベントでは、英語話者も日本語話者も「お互いの歩み寄り」でコミュニケーションを取ることを重視しています。\n<a href=\"https://speakerdeck.com/kekekenta/aishi-dai-nioiteying-yu-xue-xi-haben-dang-nibi-yao-wei-jing-yan-karanobairingarukiyarianoshi-mefang-wojiao-emasu\" rel=\"nofollow\">https://speakerdeck.com/kekekenta/aishi-dai-nioiteying-yu-xue-xi-haben-dang-nibi-yao-wei-jing-yan-karanobairingarukiyarianoshi-mefang-wojiao-emasu</a></p>\n<h3>前回の様子</h3>\n<p><a href=\"https://zenn.dev/primenumber/articles/9b42fe0edec403\" rel=\"nofollow\">https://zenn.dev/primenumber/articles/9b42fe0edec403</a></p>\n<p>※ 動画付き</p>\n<h3>参加対象者</h3>\n<p>エンジニア、EM、SRE、QA、インフラエンジニア、PdMなど、 <strong>技術に携わる方</strong> ならどなたでも大歓迎です！</p>\n<p><em>We welcome everyone in tech, including Software Engineers, EMs, SREs, QAs, Infrastructure Engineers, and more!</em></p>\n<h4>英語キャリアに興味のある日本人エンジニア</h4>\n<ul>\n<li>英語を使ったキャリアに興味はあるが、一歩を踏み出せずにいる方</li>\n<li>過去に英語学習で挫折した経験があり、リベンジしたい方</li>\n<li><strong>「英語は苦手だけど、いつかはグローバルな環境で働いてみたい」</strong> という熱意のある方</li>\n</ul>\n<h4>英語話者・グローバルエンジニアの方 (English-Speaking / Global Engineers)</h4>\n<p>英語話者として、参加者が自然に英語に触れられる環境作りをサポートいただける方を募集しています。</p>\n<p>We are looking for English-speaking guests to help create a natural environment where participants can feel comfortable practicing and interacting in English.</p>\n<ul>\n<li>属性 (Background)： 英語が流暢で、IT・エンジニアリング分野に関心のある方 / <em>Fluent in English and interested in IT/Engineering.</em></li>\n<li>[必須 (Required)] 日本語スキル(Japanese Skills)： 日常会話レベルの日本語ができる方（日本語学習中の方も大歓迎です！） / <em>Conversational Japanese (Japanese learners are more than welcome!).</em></li>\n<li>こんな方に(Ideal for)： 異文化理解のある日本のエンジニアと出会いたい方や、日本のテックコミュニティに貢献したい方 / <em>Those who want to connect with Japanese engineers interested in global cultures or wish to contribute to the Japanese tech community.</em></li>\n</ul>\n<p>日本人参加者には英語に触れるきっかけを、英語話者の方には日本語での交流や新たなネットワークを。お互いにフォローし合える安心感のある場を目指しています。</p>\n<p><em>We aim to create a supportive environment where Japanese participants can practice English, and English speakers can enjoy Japanese conversation and networking.</em></p>\n<h2>タイムテーブル(予定)</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>18:30 - 19:00</strong></td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:00</strong></td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:05</strong></td>\n<td style=\"text-align: left;\">(session 1) AIを使った英語学習 1年間の成果(仮)</td>\n<td style=\"text-align: left;\">鈴木 健太（Kenta Suzuki） / 株式会社primeNumber</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:15</strong></td>\n<td style=\"text-align: left;\">(session 2) English for Shy Engineers: Making a Base for Conversation Alone</td>\n<td style=\"text-align: left;\">赤沼 寛明（Hiroaki Akanuma） / 株式会社UPSIDER</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:30</strong></td>\n<td style=\"text-align: left;\">イベントスポンサー紹介（5分）</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:35</strong></td>\n<td style=\"text-align: left;\">==== オンライン配信終了 ====</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:35</strong></td>\n<td style=\"text-align: left;\">(session 3) Full remote, fully alone?</td>\n<td style=\"text-align: left;\"><strong>登壇者非公開</strong>/<strong>オンライン配信なし</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:05 - 20:55</strong></td>\n<td style=\"text-align: left;\">懇親タイム <br> <strong>Only drinks will be provided.</strong><br>Please bring your own food or eat before you arrive.</td>\n<td style=\"text-align: left;\">全員</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>21:00</strong></td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<h2>発表</h2>\n<h3>(session 1) AIを使った英語学習 1年間の成果(仮)</h3>\n<p>鈴木 健太（Kenta Suzuki） / 株式会社primeNumber CTO</p>\n<p>AIを色々使って1年間英語学習を続けた泥臭い話をします</p>\n<ul>\n<li><a href=\"https://x.com/kekekenta\" rel=\"nofollow\">https://x.com/kekekenta</a></li>\n</ul>\n<h3>(session 2) English for Shy Engineers: Making a Base for Conversation Alone</h3>\n<p><img src=\"https://i.imgur.com/1nw9GBz.jpeg\" width=\"120\">\n <strong>赤沼 寛明（Hiroaki Akanuma） / 株式会社UPSIDER</strong></p>\n<p>エムスリーやNubee Tokyoでの開発を経て、2015年にユニファ東京オフィスの立ち上げ時に参画。取締役CTOとしてプロダクトデベロップメント本部を統括し、外国籍メンバーを含む多国籍チームを率いて複数の新規プロダクトを立ち上げ。2025年4月よりUPSIDER「<a href=\"http://支払い.com\" rel=\"nofollow\">支払い.com</a>」事業部CTO。\nLooking forward to seeing you all at the meetup!<br></p>\n<ul>\n<li><a href=\"https://x.com/akanuma?s=21&amp;t=2kGC5oQwsN7goJYzDoplFA\" rel=\"nofollow\">https://x.com/akanuma?s=21&amp;t=2kGC5oQwsN7goJYzDoplFA</a></li>\n</ul>\n<h3>(session 3) Full remote, fully alone?</h3>\n<p><strong>※オンライン配信はありません</strong></p>\n<p>登壇者非公開</p>\n<p>色々あって、西海岸とロンドンに挟まれながら極東で孤独な窓際社員をやっています。</p>\n<h2>運営</h2>\n<h3>Kenta Suzuki</h3>\n<p>株式会社primeNumber / CTO</p>\n<ul>\n<li><a href=\"https://x.com/kekekenta\" rel=\"nofollow\">https://x.com/kekekenta</a></li>\n</ul>\n<h2>主催</h2>\n<h3>株式会社primeNumber</h3>\n<p>primeNumberはデータとAIを企業の成長エンジンへと進化させる、データテクノロジーカンパニーです。\nAI-Readyなデータ基盤を実現するデータテクノロジーを軸に、ソリューションサービスを通じてAI-Nativeな事業成長をご支援します。</p>\n<p>提供サービス: 「TROCCO」「COMETA」「primeBusinessAgent」「Professional Services」<br>\n会社HP：<a href=\"https://primenumber.com/\" rel=\"nofollow\">https://primenumber.com/</a></p>\n<div style=\"text-align:center;\">\n<a href=\"https://primenumber.co.jp/\" rel=\"nofollow\"><img src=\"https://images.microcms-assets.io/assets/e18950a5e88445ea8e7acc156bf5a941/dcfce21ed99942fe8e0310f0212bfbe3/primeNumber_logo.png\" width=\"500\"></a>\n</div>\n\n<h2>スポンサー</h2>\n<h3>TokyoDev株式会社</h3>\n<p>TokyoDevは、英語で働ける日本のIT企業とエンジニアをつなぐ求人サイト・コミュニティです。</p>\n<p>会社HP：<a href=\"https://www.tokyodev.com\" rel=\"nofollow\">https://www.tokyodev.com</a></p>\n<div style=\"text-align:center;\">\n<a href=\"https://www.tokyodev.com/ja/about\" rel=\"nofollow\"><img src=\"https://i.imgur.com/oWoWCTH.png\" width=\"500\"></a>\n</div>\n\n<h2>行動規範（イベントに参加される全ての方へのお願い）</h2>\n<p>イベント行動規範は、下記のような事柄に関わらずすべての人にとって安心・安全なイベント体験を提供するためのものです。この規範は、主催・運営する全てのイベントに適用され、イベントに参加される全ての方に対象とします。\nイベント参加者は、次の規範に従う必要があります。</p>\n<h3>1. イベントの趣旨と反することはしない</h3>\n<p>イベントの目的を理解し、目的にそぐわない行動はしないよう努めてください。</p>\n<h3>2. ハラスメントはしない</h3>\n<p>ハラスメントには、ジェンダー・アイデンティティーと性表現、性的指向、障がい、ニューロ・ダイバーシティ、外見、身体の大きさ、民族、国籍、人種、年齢、宗教、その他の保護対象事項、また公共の場での不適切画像、意図的な脅迫、ストーカー、追い掛け行為、写真や動画撮影による嫌がらせ行為、及び、講演やイベントの断続的な妨害、侮辱的な言動、不適切な身体的接触、不愉快な視線などによってマイノリティなどの社会的弱者の支配を促す言動が含まれますが、これに限定されるものではありません。<br>\nハラスメント行為を止めるように言われた参加者は、直ちに従ってください。</p>\n<h3>3. 全ての参加者の安全を脅かさない</h3>\n<p>イベント会場の内装や付属の調度品などを故意に壊したり、各会場で使用が禁止されている物を使用したりしないでください。<br>\n法令で所持・携帯が禁止されている物、または人に危害を与え、もしくは他の物を損傷するおそれのある物などを持ち込まないでください。</p>\n<h3>4. 行動規範の運用</h3>\n<p>あなたを不快にさせている相手は、そのことに気がついていないかもしれません。あなたが何か不快に思ったり、嫌がらせを受けたり、その他何か懸念に思うことがあったらすぐにイベントスタッフに教えてください。<br>\nまた、誰かが誰かを不快にさせたり、嫌がらせを行っているのを見聞きした場合も、すぐにイベントスタッフに教えてください。\nこの規範に違反している行為を発見した場合、スタッフが即座に中止するよう求めます。場合によっては、イベントからの退席や今後のイベント参加への禁止等を求めることがあります。この場合、既に受領した会費等は返金致しません。<br>\n質問や疑問があれば、イベントスタッフまでご連絡ください。</p>",
-      "url": "https://pn-developer-lounge.connpass.com/event/397239/",
-      "image_url": "https://media.connpass.com/thumbs/b0/5d/b05d74ea1fdd5fb2bf1ed87e10274a7e.png",
-      "hash_tag": "DevEnglishJP",
-      "started_at": "2026-08-20T19:00:00+09:00",
-      "ended_at": "2026-08-20T21:00:00+09:00",
-      "published_at": "2026-06-18T12:02:01+09:00",
-      "limit": 170,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16151,
-        "subdomain": "pn-developer-lounge",
-        "title": "pN Developer Lounge",
-        "url": "https://pn-developer-lounge.connpass.com/"
-      },
-      "address": "〒141-0021 東京都品川区上大崎３丁目１−１ JR東急目黒ビル 5F",
-      "place": "primeNumber本社",
-      "lat": "35.632686400000",
-      "lon": "139.715750800000",
-      "owner_id": 370165,
-      "owner_nickname": "primeNumber",
-      "owner_display_name": "primeNumber",
-      "accepted": 97,
-      "waiting": 0,
-      "updated_at": "2026-08-13T18:47:40+09:00"
-    },
-    {
       "id": 400921,
       "title": "LINEヤフー Data Science Share #2",
       "catch": "",
@@ -252,6 +221,37 @@
       "updated_at": "2026-08-03T10:02:32+09:00"
     },
     {
+      "id": 397239,
+      "title": "エンジニア英語キャリア Meetup #3",
+      "catch": "〜英語キャリア はじめの一歩、次の一歩〜",
+      "description": "<h2>この会の趣旨</h2>\n<p>「英語ができれば、キャリアはもっと自由になる」\n 分かってはいても、最初の一歩は重いものです。</p>\n<p>今回のmeetupは、実際にその一歩を踏み出したエンジニアたちのを生々しいエピソードをお話しいただきます。</p>\n<p>primeNumberの鈴木健太からは、AIを使いながら取り組んだ英語学習の1年間と現在地について。</p>\n<p>UPSIDERの赤沼寛明さんからは、多国籍チームを率いてきた立場から、「会話が苦手でも、会話の土台はつくれる」という、シャイなエンジニアが英語環境で生き抜いたエピソードを。</p>\n<p>3人目は、<strong>「登壇者非公開」「配信なし」「SNS共有NG」</strong>で、ベイエリアの外資企業にリモート勤務するエンジニアからお話しいただきます！</p>\n<p>会場でしか聞けない生々しい話を、ぜひお楽しみに。</p>\n<p>後半の懇親会では、英語話者（日本語OK）をゲストに招き、リラックスした雰囲気で英語に触れる機会を提供します 。</p>\n<ul>\n<li><strong>ドリンクのみご用意します。</strong>お食事は各自ご持参いただくか、事前にお済ませください。</li>\n<li><strong>Only drinks will be provided.</strong> Please bring your own food or eat before you arrive.</li>\n</ul>\n<p>このイベントでは、英語話者も日本語話者も「お互いの歩み寄り」でコミュニケーションを取ることを重視しています。\n<a href=\"https://speakerdeck.com/kekekenta/aishi-dai-nioiteying-yu-xue-xi-haben-dang-nibi-yao-wei-jing-yan-karanobairingarukiyarianoshi-mefang-wojiao-emasu\" rel=\"nofollow\">https://speakerdeck.com/kekekenta/aishi-dai-nioiteying-yu-xue-xi-haben-dang-nibi-yao-wei-jing-yan-karanobairingarukiyarianoshi-mefang-wojiao-emasu</a></p>\n<h3>前回の様子</h3>\n<p><a href=\"https://zenn.dev/primenumber/articles/9b42fe0edec403\" rel=\"nofollow\">https://zenn.dev/primenumber/articles/9b42fe0edec403</a></p>\n<p>※ 動画付き</p>\n<h3>参加対象者</h3>\n<p>エンジニア、EM、SRE、QA、インフラエンジニア、PdMなど、 <strong>技術に携わる方</strong> ならどなたでも大歓迎です！</p>\n<p><em>We welcome everyone in tech, including Software Engineers, EMs, SREs, QAs, Infrastructure Engineers, and more!</em></p>\n<h4>英語キャリアに興味のある日本人エンジニア</h4>\n<ul>\n<li>英語を使ったキャリアに興味はあるが、一歩を踏み出せずにいる方</li>\n<li>過去に英語学習で挫折した経験があり、リベンジしたい方</li>\n<li><strong>「英語は苦手だけど、いつかはグローバルな環境で働いてみたい」</strong> という熱意のある方</li>\n</ul>\n<h4>英語話者・グローバルエンジニアの方 (English-Speaking / Global Engineers)</h4>\n<p>英語話者として、参加者が自然に英語に触れられる環境作りをサポートいただける方を募集しています。</p>\n<p>We are looking for English-speaking guests to help create a natural environment where participants can feel comfortable practicing and interacting in English.</p>\n<ul>\n<li>属性 (Background)： 英語が流暢で、IT・エンジニアリング分野に関心のある方 / <em>Fluent in English and interested in IT/Engineering.</em></li>\n<li>[必須 (Required)] 日本語スキル(Japanese Skills)： 日常会話レベルの日本語ができる方（日本語学習中の方も大歓迎です！） / <em>Conversational Japanese (Japanese learners are more than welcome!).</em></li>\n<li>こんな方に(Ideal for)： 異文化理解のある日本のエンジニアと出会いたい方や、日本のテックコミュニティに貢献したい方 / <em>Those who want to connect with Japanese engineers interested in global cultures or wish to contribute to the Japanese tech community.</em></li>\n</ul>\n<p>日本人参加者には英語に触れるきっかけを、英語話者の方には日本語での交流や新たなネットワークを。お互いにフォローし合える安心感のある場を目指しています。</p>\n<p><em>We aim to create a supportive environment where Japanese participants can practice English, and English speakers can enjoy Japanese conversation and networking.</em></p>\n<h2>タイムテーブル(予定)</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>18:30 - 19:00</strong></td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:00</strong></td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:05</strong></td>\n<td style=\"text-align: left;\">(session 1) AIを使った英語学習 1年間の成果(仮)</td>\n<td style=\"text-align: left;\">鈴木 健太（Kenta Suzuki） / 株式会社primeNumber</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:15</strong></td>\n<td style=\"text-align: left;\">(session 2) English for Shy Engineers: Making a Base for Conversation Alone</td>\n<td style=\"text-align: left;\">赤沼 寛明（Hiroaki Akanuma） / 株式会社UPSIDER</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:30</strong></td>\n<td style=\"text-align: left;\">イベントスポンサー紹介（5分）</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:35</strong></td>\n<td style=\"text-align: left;\">==== オンライン配信終了 ====</td>\n<td style=\"text-align: left;\">TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:35</strong></td>\n<td style=\"text-align: left;\">(session 3) Full remote, fully alone?</td>\n<td style=\"text-align: left;\"><strong>登壇者非公開</strong>/<strong>オンライン配信なし</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:05 - 20:55</strong></td>\n<td style=\"text-align: left;\">懇親タイム <br> <strong>Only drinks will be provided.</strong><br>Please bring your own food or eat before you arrive.</td>\n<td style=\"text-align: left;\">全員</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>21:00</strong></td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<h2>発表</h2>\n<h3>(session 1) AIを使った英語学習 1年間の成果(仮)</h3>\n<p>鈴木 健太（Kenta Suzuki） / 株式会社primeNumber CTO</p>\n<p>AIを色々使って1年間英語学習を続けた泥臭い話をします</p>\n<ul>\n<li><a href=\"https://x.com/kekekenta\" rel=\"nofollow\">https://x.com/kekekenta</a></li>\n</ul>\n<h3>(session 2) English for Shy Engineers: Making a Base for Conversation Alone</h3>\n<p><img src=\"https://i.imgur.com/1nw9GBz.jpeg\" width=\"120\">\n <strong>赤沼 寛明（Hiroaki Akanuma） / 株式会社UPSIDER</strong></p>\n<p>エムスリーやNubee Tokyoでの開発を経て、2015年にユニファ東京オフィスの立ち上げ時に参画。取締役CTOとしてプロダクトデベロップメント本部を統括し、外国籍メンバーを含む多国籍チームを率いて複数の新規プロダクトを立ち上げ。2025年4月よりUPSIDER「<a href=\"http://支払い.com\" rel=\"nofollow\">支払い.com</a>」事業部CTO。\nLooking forward to seeing you all at the meetup!<br></p>\n<ul>\n<li><a href=\"https://x.com/akanuma?s=21&amp;t=2kGC5oQwsN7goJYzDoplFA\" rel=\"nofollow\">https://x.com/akanuma?s=21&amp;t=2kGC5oQwsN7goJYzDoplFA</a></li>\n</ul>\n<h3>(session 3) Full remote, fully alone?</h3>\n<p><strong>※オンライン配信はありません</strong></p>\n<p>登壇者非公開</p>\n<p>色々あって、西海岸とロンドンに挟まれながら極東で孤独な窓際社員をやっています。</p>\n<h2>運営</h2>\n<h3>Kenta Suzuki</h3>\n<p>株式会社primeNumber / CTO</p>\n<ul>\n<li><a href=\"https://x.com/kekekenta\" rel=\"nofollow\">https://x.com/kekekenta</a></li>\n</ul>\n<h2>主催</h2>\n<h3>株式会社primeNumber</h3>\n<p>primeNumberはデータとAIを企業の成長エンジンへと進化させる、データテクノロジーカンパニーです。\nAI-Readyなデータ基盤を実現するデータテクノロジーを軸に、ソリューションサービスを通じてAI-Nativeな事業成長をご支援します。</p>\n<p>提供サービス: 「TROCCO」「COMETA」「primeBusinessAgent」「Professional Services」<br>\n会社HP：<a href=\"https://primenumber.com/\" rel=\"nofollow\">https://primenumber.com/</a></p>\n<div style=\"text-align:center;\">\n<a href=\"https://primenumber.co.jp/\" rel=\"nofollow\"><img src=\"https://images.microcms-assets.io/assets/e18950a5e88445ea8e7acc156bf5a941/dcfce21ed99942fe8e0310f0212bfbe3/primeNumber_logo.png\" width=\"500\"></a>\n</div>\n\n<h2>スポンサー</h2>\n<h3>TokyoDev株式会社</h3>\n<p>TokyoDevは、英語で働ける日本のIT企業とエンジニアをつなぐ求人サイト・コミュニティです。</p>\n<p>会社HP：<a href=\"https://www.tokyodev.com\" rel=\"nofollow\">https://www.tokyodev.com</a></p>\n<div style=\"text-align:center;\">\n<a href=\"https://www.tokyodev.com/ja/about\" rel=\"nofollow\"><img src=\"https://i.imgur.com/oWoWCTH.png\" width=\"500\"></a>\n</div>\n\n<h2>行動規範（イベントに参加される全ての方へのお願い）</h2>\n<p>イベント行動規範は、下記のような事柄に関わらずすべての人にとって安心・安全なイベント体験を提供するためのものです。この規範は、主催・運営する全てのイベントに適用され、イベントに参加される全ての方に対象とします。\nイベント参加者は、次の規範に従う必要があります。</p>\n<h3>1. イベントの趣旨と反することはしない</h3>\n<p>イベントの目的を理解し、目的にそぐわない行動はしないよう努めてください。</p>\n<h3>2. ハラスメントはしない</h3>\n<p>ハラスメントには、ジェンダー・アイデンティティーと性表現、性的指向、障がい、ニューロ・ダイバーシティ、外見、身体の大きさ、民族、国籍、人種、年齢、宗教、その他の保護対象事項、また公共の場での不適切画像、意図的な脅迫、ストーカー、追い掛け行為、写真や動画撮影による嫌がらせ行為、及び、講演やイベントの断続的な妨害、侮辱的な言動、不適切な身体的接触、不愉快な視線などによってマイノリティなどの社会的弱者の支配を促す言動が含まれますが、これに限定されるものではありません。<br>\nハラスメント行為を止めるように言われた参加者は、直ちに従ってください。</p>\n<h3>3. 全ての参加者の安全を脅かさない</h3>\n<p>イベント会場の内装や付属の調度品などを故意に壊したり、各会場で使用が禁止されている物を使用したりしないでください。<br>\n法令で所持・携帯が禁止されている物、または人に危害を与え、もしくは他の物を損傷するおそれのある物などを持ち込まないでください。</p>\n<h3>4. 行動規範の運用</h3>\n<p>あなたを不快にさせている相手は、そのことに気がついていないかもしれません。あなたが何か不快に思ったり、嫌がらせを受けたり、その他何か懸念に思うことがあったらすぐにイベントスタッフに教えてください。<br>\nまた、誰かが誰かを不快にさせたり、嫌がらせを行っているのを見聞きした場合も、すぐにイベントスタッフに教えてください。\nこの規範に違反している行為を発見した場合、スタッフが即座に中止するよう求めます。場合によっては、イベントからの退席や今後のイベント参加への禁止等を求めることがあります。この場合、既に受領した会費等は返金致しません。<br>\n質問や疑問があれば、イベントスタッフまでご連絡ください。</p>",
+      "url": "https://pn-developer-lounge.connpass.com/event/397239/",
+      "image_url": "https://media.connpass.com/thumbs/b0/5d/b05d74ea1fdd5fb2bf1ed87e10274a7e.png",
+      "hash_tag": "DevEnglishJP",
+      "started_at": "2026-08-20T19:00:00+09:00",
+      "ended_at": "2026-08-20T21:00:00+09:00",
+      "published_at": "2026-06-18T12:02:01+09:00",
+      "limit": 170,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 16151,
+        "subdomain": "pn-developer-lounge",
+        "title": "pN Developer Lounge",
+        "url": "https://pn-developer-lounge.connpass.com/"
+      },
+      "address": "〒141-0021 東京都品川区上大崎３丁目１−１ JR東急目黒ビル 5F",
+      "place": "primeNumber本社",
+      "lat": "35.632686400000",
+      "lon": "139.715750800000",
+      "owner_id": 370165,
+      "owner_nickname": "primeNumber",
+      "owner_display_name": "primeNumber",
+      "accepted": 100,
+      "waiting": 0,
+      "updated_at": "2026-08-13T18:47:40+09:00"
+    },
+    {
       "id": 400003,
       "title": "potatotips #96 iOS/Android開発Tips共有会",
       "catch": "",
@@ -278,7 +278,7 @@
       "owner_id": 16371,
       "owner_nickname": "tokorom",
       "owner_display_name": "tokorom",
-      "accepted": 47,
+      "accepted": 48,
       "waiting": 0,
       "updated_at": "2026-08-19T14:23:08+09:00"
     },
@@ -309,7 +309,7 @@
       "owner_id": 1038575,
       "owner_nickname": "iiilllii_cmp",
       "owner_display_name": "Hayato Miyakawa",
-      "accepted": 14,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-08-17T17:13:06+09:00"
     },
@@ -317,7 +317,7 @@
       "id": 402131,
       "title": "[非公式] キチピーふりかえり会",
       "catch": "",
-      "description": "<p>大吉祥寺.pmで語りそびれたこと、学んだこと、聞いた登壇内容を実践した経験談等をLTする会です!\n大吉祥寺.pmに来た方も来れなかった方も共に語り合いましょう!</p>\n<p>もし発表者が集まらない場合は、私がLT枠を埋めてLTで工夫したところを語ります</p>\n<p>※本イベントは非公式イベントです。</p>\n<h2>タイムテーブル</h2>\n<p>会場内の人の集まりや個々の希望により、時間や順序は前後する可能性がございます。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">開始</th>\n<th style=\"text-align: center;\">終了</th>\n<th style=\"text-align: center;\">内容</th>\n<th style=\"text-align: center;\">発表者(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:30</td>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">開場/受付</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">会場説明</td>\n<td style=\"text-align: center;\">BEENOS株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">19:15</td>\n<td style=\"text-align: center;\">あちこちのカンファレンスで当日スタッフやってみたまとめ</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/takter\" rel=\"nofollow\">てらうちたかし</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:17</td>\n<td style=\"text-align: center;\">19:22</td>\n<td style=\"text-align: center;\">技術コミュニティと、スタッフ業と、私 ―<a href=\"http://大吉祥寺.pm\" rel=\"nofollow\">大吉祥寺.pm</a> 2026を振り返って―</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/mgo0814\" rel=\"nofollow\">おーはし</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:24</td>\n<td style=\"text-align: center;\">19:29</td>\n<td style=\"text-align: center;\">チェキに関する軽い話</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/sapi_kawahara\" rel=\"nofollow\">さっぴー川原</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:31</td>\n<td style=\"text-align: center;\">19:36</td>\n<td style=\"text-align: center;\">コミュニティを滅ぼすもの</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/ykkn0113\" rel=\"nofollow\">ゆきお</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:38</td>\n<td style=\"text-align: center;\">19:43</td>\n<td style=\"text-align: center;\">LT枠 (5)</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/yuzneri\" rel=\"nofollow\">ゆずねり</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:43</td>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">休憩/時間調整</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">20:00</td>\n<td style=\"text-align: center;\">LT枠 (6)</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/ShuzoN__\" rel=\"nofollow\">ShuzoN</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:02</td>\n<td style=\"text-align: center;\">20:07</td>\n<td style=\"text-align: center;\">大吉祥寺.pmで登壇する技術</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/magnolia_k_\" rel=\"nofollow\">Magonolia.K</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:09</td>\n<td style=\"text-align: center;\">20:14</td>\n<td style=\"text-align: center;\">生成AI時代におけるLTの在り方</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">ogadra</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:15</td>\n<td style=\"text-align: center;\">20:20</td>\n<td style=\"text-align: center;\">実録!コストとアクセスログ結果発表!</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">ogadra</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:22</td>\n<td style=\"text-align: center;\">20:27</td>\n<td style=\"text-align: center;\">会場スポンサーLT</td>\n<td style=\"text-align: center;\">BEENOS株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:27</td>\n<td style=\"text-align: center;\">20:40</td>\n<td style=\"text-align: center;\">撤収</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇する場合</h2>\n<p>connpassのページに掲載するため、タイトルが決まり次第<a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">主催者のTwitter</a>までご連絡ください。(変更されても構いません。)</p>\n<h2>禁止・注意事項</h2>\n<p>下記の行動を禁止いたします。</p>\n<ul>\n<li>体調不良時の無理な参加<ul>\n<li>主催者が体調不良の場合、会自体を中止することがあります。ご了承ください。</li>\n</ul>\n</li>\n<li>違法行為全般</li>\n<li>主催者の許可を得ない下記の行為<ul>\n<li>写真・動画撮影、録音またはそれらを伴う行為</li>\n<li>例: オンラインMTG、BeRealへの投稿</li>\n</ul>\n</li>\n<li>営業・勧誘等<ul>\n<li>消費者センターや国民生活センターに相談される可能性のある勧誘等はお控えください。</li>\n<li>例: マルチ・霊感商法、宗教勧誘、金融・情報商材販売</li>\n</ul>\n</li>\n<li>誹謗中傷、ハラスメント行為<ul>\n<li>他者に不快感を与える言動や行動はお控えください。</li>\n</ul>\n</li>\n<li>過度な独り言</li>\n<li>会場内の備品を故意に破損すること</li>\n<li>他の参加者や主催者に迷惑をかける行為全般</li>\n</ul>",
+      "description": "<p>大吉祥寺.pmで語りそびれたこと、学んだこと、聞いた登壇内容を実践した経験談等をLTする会です!\n大吉祥寺.pmに来た方も来れなかった方も共に語り合いましょう!</p>\n<p>もし発表者が集まらない場合は、私がLT枠を埋めてLTで工夫したところを語ります</p>\n<p>※本イベントは非公式イベントです。</p>\n<h2>タイムテーブル</h2>\n<p>会場内の人の集まりや個々の希望により、時間や順序は前後する可能性がございます。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">開始</th>\n<th style=\"text-align: center;\">終了</th>\n<th style=\"text-align: center;\">内容</th>\n<th style=\"text-align: center;\">発表者(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:30</td>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">開場/受付</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">会場説明</td>\n<td style=\"text-align: center;\">BEENOS株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">19:15</td>\n<td style=\"text-align: center;\">あちこちのカンファレンスで当日スタッフやってみたまとめ</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/takter\" rel=\"nofollow\">てらうちたかし</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:17</td>\n<td style=\"text-align: center;\">19:22</td>\n<td style=\"text-align: center;\">技術コミュニティと、スタッフ業と、私 ―<a href=\"http://大吉祥寺.pm\" rel=\"nofollow\">大吉祥寺.pm</a> 2026を振り返って―</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/mgo0814\" rel=\"nofollow\">おーはし</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:24</td>\n<td style=\"text-align: center;\">19:29</td>\n<td style=\"text-align: center;\">チェキに関する軽い話</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/sapi_kawahara\" rel=\"nofollow\">さっぴー川原</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:31</td>\n<td style=\"text-align: center;\">19:36</td>\n<td style=\"text-align: center;\">コミュニティを滅ぼすもの</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/ykkn0113\" rel=\"nofollow\">ゆきお</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:38</td>\n<td style=\"text-align: center;\">19:43</td>\n<td style=\"text-align: center;\">人間の目はかわらない、でも、発表の届き方はかわる</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/yuzneri\" rel=\"nofollow\">ゆずねり</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:43</td>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">休憩/時間調整</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: center;\">20:00</td>\n<td style=\"text-align: center;\">LT枠 (6)</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/ShuzoN__\" rel=\"nofollow\">ShuzoN</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:02</td>\n<td style=\"text-align: center;\">20:07</td>\n<td style=\"text-align: center;\">大吉祥寺.pmで登壇する技術</td>\n<td style=\"text-align: center;\"><a href=\"https://x.com/magnolia_k_\" rel=\"nofollow\">Magonolia.K</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:09</td>\n<td style=\"text-align: center;\">20:14</td>\n<td style=\"text-align: center;\">生成AI時代におけるLTの在り方</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">ogadra</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:15</td>\n<td style=\"text-align: center;\">20:20</td>\n<td style=\"text-align: center;\">実録!コストとアクセスログ結果発表!</td>\n<td style=\"text-align: center;\"><a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">ogadra</a></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:22</td>\n<td style=\"text-align: center;\">20:27</td>\n<td style=\"text-align: center;\">会場スポンサーLT</td>\n<td style=\"text-align: center;\">BEENOS株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:27</td>\n<td style=\"text-align: center;\">20:40</td>\n<td style=\"text-align: center;\">撤収</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇する場合</h2>\n<p>connpassのページに掲載するため、タイトルが決まり次第<a href=\"https://twitter.com/const_myself\" rel=\"nofollow\">主催者のTwitter</a>までご連絡ください。(変更されても構いません。)</p>\n<h2>禁止・注意事項</h2>\n<p>下記の行動を禁止いたします。</p>\n<ul>\n<li>体調不良時の無理な参加<ul>\n<li>主催者が体調不良の場合、会自体を中止することがあります。ご了承ください。</li>\n</ul>\n</li>\n<li>違法行為全般</li>\n<li>主催者の許可を得ない下記の行為<ul>\n<li>写真・動画撮影、録音またはそれらを伴う行為</li>\n<li>例: オンラインMTG、BeRealへの投稿</li>\n</ul>\n</li>\n<li>営業・勧誘等<ul>\n<li>消費者センターや国民生活センターに相談される可能性のある勧誘等はお控えください。</li>\n<li>例: マルチ・霊感商法、宗教勧誘、金融・情報商材販売</li>\n</ul>\n</li>\n<li>誹謗中傷、ハラスメント行為<ul>\n<li>他者に不快感を与える言動や行動はお控えください。</li>\n</ul>\n</li>\n<li>過度な独り言</li>\n<li>会場内の備品を故意に破損すること</li>\n<li>他の参加者や主催者に迷惑をかける行為全般</li>\n</ul>",
       "url": "https://connpass.com/event/402131/",
       "image_url": "https://media.connpass.com/thumbs/b6/32/b632e14966c4db6d1c6c3b061362b04d.png",
       "hash_tag": "",
@@ -335,9 +335,9 @@
       "owner_id": 492732,
       "owner_nickname": "ogadra",
       "owner_display_name": "おがどら",
-      "accepted": 22,
+      "accepted": 21,
       "waiting": 0,
-      "updated_at": "2026-08-20T06:39:00+09:00"
+      "updated_at": "2026-08-20T11:33:10+09:00"
     },
     {
       "id": 402230,
@@ -366,7 +366,7 @@
       "owner_id": 1030071,
       "owner_nickname": "daigos432_findy",
       "owner_display_name": "daigos432_findy",
-      "accepted": 902,
+      "accepted": 912,
       "waiting": 5,
       "updated_at": "2026-08-20T08:29:49+09:00"
     },
@@ -397,9 +397,40 @@
       "owner_id": 141857,
       "owner_nickname": "freee_event",
       "owner_display_name": "freee",
-      "accepted": 73,
+      "accepted": 81,
       "waiting": 0,
       "updated_at": "2026-08-06T18:03:20+09:00"
+    },
+    {
+      "id": 401607,
+      "title": "Confidential AI Night #1",
+      "catch": "機密コンピューティングとAIセキュリティ勉強会",
+      "description": "<h2><strong>Confidential AI Nightとは</strong></h2>\n<p>Confidential AIに関する技術や知見を共有し、この領域をともに育てていく技術イベントです。\nAIやデータを安全かつ信頼できる形で活用するための技術、最新動向、各社の取り組み、そこから得られた知見や課題を共有します。\nConfidential AIのユースケースや実践だけでなく、その実現を支えるConfidential Computing、さらにその基盤となるTEEなどの専門的な技術テーマまで幅広く取り上げます。\n企業や組織の垣根を越えて、研究者・エンジニア・実務者が継続的に知見を共有できるネットワークを形成し、この領域を担う人材の育成や新たな協働につなげることを目指します。さらに、こうした活動を通じて、Confidential AIとそれを支える技術の発展、社会実装、市場形成を後押ししていきます。</p>\n<h2><strong>#1について</strong></h2>\n<p><a href=\"https://conf.ai-gakkai.or.jp/jsai2026/\" rel=\"nofollow\">2026年度 人工知能学会全国大会</a>で実施した企画セッション「機密コンピューティングが切り拓く信頼できるAIの社会基盤」をもとに、その内容をより広く共有するために再構成したイベントです。\nNVIDIA、LINEヤフー、Acompanyのメンバーによるセッションとパネルディスカッションを通じて、Confidential ComputingやConfidential AIの最新動向、各社の取り組み、社会実装に向けた可能性と課題を共有します。\n本イベントを通じて、これらの技術への理解を広げるとともに、企業や組織を越えた新たなつながりを生み出し、今後の継続的な議論や交流につなげることを目指します。</p>\n<h3><strong>こんな人におすすめ</strong></h3>\n<ul>\n<li>Confidential Computing、Confidential AI、TEE、AIセキュリティなどの技術に携わっている、または関心のある研究者・エンジニア</li>\n<li>これらの領域を研究・学習している学生、大学院生、ポスドク、研究機関に所属する方</li>\n<li>AIやデータを安全に活用するための技術や、その可能性・課題に関心のある方</li>\n<li>技術や知見を学び合い、企業・組織・研究領域を越えたネットワークを築きたい方</li>\n</ul>\n<h2><strong>参加方法（参加費無料）</strong></h2>\n<p><strong>会場</strong><br>\nTokyo Innovation Base 1F SQUARE-2<br>\n〒100-0005 東京都千代田区丸の内3丁目8-3<br>\n<a href=\"https://maps.app.goo.gl/dL9ebVbHEKcnZ95o6\" rel=\"nofollow\">https://maps.app.goo.gl/dL9ebVbHEKcnZ95o6</a></p>\n<p><strong>アクセス</strong><br>\n- JR山手線・京浜東北線「有楽町駅」京橋口 徒歩1分<br>\n- 東京メトロ有楽町線「有楽町駅」D9出口すぐ<br>\n- 東京メトロ有楽町線「銀座一丁目駅」1出口 徒歩3分<br></p>\n<p><strong>入館方法 ※当日のスムーズな手続きのため、事前の登録にご協力ください</strong> <br>\n- 参加者は全員「connpassの参加票」に加えて「TIBの会員登録が必要」となります<br>\n- イベント当日、入退館時に「会員QRコード」をゲートにかざして通過いただきます<br>\n- TIBの会員登録は、下記TIBアプリから事前登録が可能です<br></p>\n<p>＜iPhoneをご利用の方＞<br>\n<a href=\"https://apps.apple.com/jp/app/tokyo-innovation-base/id6479402728&lt;BR>\" rel=\"nofollow\">https://apps.apple.com/jp/app/tokyo-innovation-base/id6479402728<br></a>\nもしくはApp Storeで「Tokyo Innovation Base」を検索し、ダウンロード<br></p>\n<p>＜Androidをご利用の方＞<br>\n<a href=\"https://play.google.com/store/search?q=TIB&amp;c=apps&amp;hl=ja&lt;BR>\" rel=\"nofollow\">https://play.google.com/store/search?q=TIB&amp;c=apps&amp;hl=ja<br></a>\nもしくはGoogle Playストアで「Tokyo Innovation Base」を検索し、インストール<br></p>\n<p>※スマートフォンを所持していない、または事情によりアプリをダウンロードできない場合は、TIB受付にて専用端末で1DAY PASSの登録を行っていただきます</p>\n<h2>登壇者紹介※敬称略</h2>\n<h4>田仲 顕至（NVIDIA・Developer Relations Senior Manager - Gen AI）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/3d1e6852f9c4480ba59ad03486867b02/%E9%A1%94%E7%94%BB%E5%83%8F.png\" width=\"150\"><br>\nNVIDIAにて、Software Vendor様やModel Builder様とのNVIDIA Software Stackの技術理解形成、Developer Insightの収集と社内共有を担う。特に、Open LLM、NeMo / NIM / Nemotron、Agent Tools、FDEのようなEnterprise AI / Agentic AI 領域を専門とする。</p>\n<h4>松本 知優（LINEヤフー株式会社・Research Engineer）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/a78b3563e4424b1686358bef9c9068b3/profile_tomoymat_v2.JPG\" width=\"150\"><br>\n2025年LINEヤフー入社。以来、Privacy-enhancing technologies (PETs)の研究開発に従事。修士（情報科学）。</p>\n<h4>竹之内 隆夫（株式会社Acompany / プライバシーテック協会）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/557cbe16c7434758b5cdea41dfab4b2c/takenouchi.png\" width=\"150\"><br>\nNEC、デジタルガレージ、LINE株式会社（現 LINEヤフー株式会社）で、匿名化や秘密計算、差分プライバシー、連合学習などの研究開発・事業開発に従事。プライバシーテック協会の設立支援に携わり、現在はアドバイザーを務める。2024年にAcompanyへ入社。デジタル庁データセキュリティワーキンググループ委員。博士（工学）、経営学修士。</p>\n<h4>髙橋 翼（株式会社Acompany・Chief Scientist 兼 VP of R&amp;D）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/e258262840424b538a98644f4d1e9e80/tsubasa_takahashi.png\" width=\"150\"><br>\n15年以上に渡り、AI Security &amp; Privacyの研究開発に従事。トップカンファレンス採択と事業貢献を両立する研究開発組織の立ち上げ・運営を各社で担ってきた。著書に「機械学習のためのプライバシー保護」（監訳）がある。2026年よりAcompanyにジョイン。博士（工学）</p>\n<h4>椎名 峻平（株式会社Acompany）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/b4b69d60e11d44f5aef203a879d7be6a/profile_img.jpg\" width=\"150\"><br>\n高性能計算（HPC）や機密・プライバシー保護を支えるシステムソフトウェアの研究開発に従事。大規模タスク並列処理系「Itoyori」や差分プライバシーを強制するPythonライブラリ「PrivJail」などを開発し、OSSとして公開。2026年よりAcompanyにジョイン。博士（情報理工学）。</p>\n<h2>セッション紹介</h2>\n<ul>\n<li>【機密コンピューティングとは】竹之内 隆夫（株式会社Acompany / プライバシーテック協会）</li>\n<li>【AIの「実行中」をどう守るか― 機密データとモデルを保護する NVIDIA Confidential Computing】田仲 顕至（NVIDIA Japan）</li>\n<li>【連合学習と機密コンピューティング】松本 知優（LINEヤフー株式会社）</li>\n<li>【Confidential AIが「秘密を守れる」ことを検証するには？】椎名 峻平（株式会社Acompany）\n<br></li>\n</ul>\n<h2>パネルディスカッション</h2>\n<h4>パネリスト</h4>\n<ul>\n<li>髙橋 翼（株式会社Acompany）：モデレーター</li>\n<li>竹之内 隆夫（株式会社Acompany / プライバシーテック協会）</li>\n<li>田仲 顕至（NVIDIA Japan）</li>\n</ul>\n<h2><strong>タイムテーブル</strong></h2>\n<table>\n<thead>\n<tr>\n<th><strong>時間</strong></th>\n<th><strong>内容</strong></th>\n<th><strong>登壇者</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:00 - 18:35</td>\n<td>受付開始</td>\n<td></td>\n</tr>\n<tr>\n<td>18:30 - 18:35</td>\n<td>Opening</td>\n<td></td>\n</tr>\n<tr>\n<td>18:35 - 19:25</td>\n<td>セッション</td>\n<td>竹之内 隆夫 （株式会社Acompany / プライバシーテック協会）<br>田仲 顕至（NVIDIA Japan）<br>松本 知優（LINEヤフー株式会社）<br>椎名 峻平（株式会社Acompany）</td>\n</tr>\n<tr>\n<td>19:25 - 19:55</td>\n<td>パネルディスカッション</td>\n<td>髙橋 翼（株式会社Acompany）：モデレーター<br>田仲 顕至（NVIDIA Japan）<br>竹之内 隆夫 （株式会社Acompany / プライバシーテック協会）</td>\n</tr>\n<tr>\n<td>19:55 - 20:00</td>\n<td>Closing</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00 - 20:55</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Acompanyについて</h3>\n<p>「Trust.Data.AI.あらゆるデータとAI活用に、信頼を。」をミッションに、Confidential Computing（機密コンピューティング）に関連した製品・技術と機密データコンサルティングサービスを提供しています。<br>\n<a href=\"https://www.acompany.tech/\" rel=\"nofollow\">https://www.acompany.tech/</a></p>\n<h3>行動規範</h3>\n<p>本イベントは、Confidential AI に関する情報交換や交流を行うための場所です。 そのため、参加者に対して以下のようなハラスメント行為は許容しません。</p>\n<ul>\n<li>言葉による性別、性的指向、障害の有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント</li>\n<li>公的空間での性的な映像表現</li>\n<li>意図的な威力行為、ストーキング、つきまとい</li>\n<li>写真撮影や録音によるいやがらせ</li>\n<li>トークやその他の会議イベントに対して繰り返して中断しようとする行為</li>\n<li>望まれない性的な注意を引きつける行為</li>\n<li>ハラスメント行為に遭った、目撃した場合には、スタッフの誰かに連絡していただくようお願いします。 ハラスメント行為を止めるように言われた参加者は、直ちに従ってください。</li>\n</ul>\n<p>なお、懇親会は、イベント内容や技術情報に関する交流を目的としております。そのため、知識の共有や参加者同士の交流を主な目的としないご参加はご遠慮ください。飲食を主目的としたご参加や、自社採用・人材紹介などの営業目的でのご参加はお控えいただきますようお願いします。事前の予告なくキャンセル処理させていただく場合がございますのであらかじめご了承ください。</p>",
+      "url": "https://acompany.connpass.com/event/401607/",
+      "image_url": "https://media.connpass.com/thumbs/e8/91/e891e0497376131a82b139a21b2b44b0.png",
+      "hash_tag": "CAI_Night",
+      "started_at": "2026-08-20T18:30:00+09:00",
+      "ended_at": "2026-08-20T20:50:00+09:00",
+      "published_at": "2026-07-24T18:02:42+09:00",
+      "limit": 90,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 12009,
+        "subdomain": "acompany",
+        "title": "株式会社Acompany",
+        "url": "https://acompany.connpass.com/"
+      },
+      "address": "〒100-0005 東京都千代田区丸の内３丁目８−３",
+      "place": "Tokyo Innovation Base 1F SQUARE-2",
+      "lat": "35.675655600000",
+      "lon": "139.764622700000",
+      "owner_id": 933519,
+      "owner_nickname": "Acompany",
+      "owner_display_name": "Acompany",
+      "accepted": 82,
+      "waiting": 0,
+      "updated_at": "2026-08-20T09:49:19+09:00"
     },
     {
       "id": 396886,
@@ -428,7 +459,7 @@
       "owner_id": 839351,
       "owner_nickname": "Macccoto",
       "owner_display_name": "まこと（まことのこと研究所）",
-      "accepted": 24,
+      "accepted": 23,
       "waiting": 0,
       "updated_at": "2026-08-17T18:11:58+09:00"
     },
@@ -464,37 +495,6 @@
       "updated_at": "2026-08-07T18:48:43+09:00"
     },
     {
-      "id": 401607,
-      "title": "Confidential AI Night #1",
-      "catch": "機密コンピューティングとAIセキュリティ勉強会",
-      "description": "<h2><strong>Confidential AI Nightとは</strong></h2>\n<p>Confidential AIに関する技術や知見を共有し、この領域をともに育てていく技術イベントです。\nAIやデータを安全かつ信頼できる形で活用するための技術、最新動向、各社の取り組み、そこから得られた知見や課題を共有します。\nConfidential AIのユースケースや実践だけでなく、その実現を支えるConfidential Computing、さらにその基盤となるTEEなどの専門的な技術テーマまで幅広く取り上げます。\n企業や組織の垣根を越えて、研究者・エンジニア・実務者が継続的に知見を共有できるネットワークを形成し、この領域を担う人材の育成や新たな協働につなげることを目指します。さらに、こうした活動を通じて、Confidential AIとそれを支える技術の発展、社会実装、市場形成を後押ししていきます。</p>\n<h2><strong>#1について</strong></h2>\n<p><a href=\"https://conf.ai-gakkai.or.jp/jsai2026/\" rel=\"nofollow\">2026年度 人工知能学会全国大会</a>で実施した企画セッション「機密コンピューティングが切り拓く信頼できるAIの社会基盤」をもとに、その内容をより広く共有するために再構成したイベントです。\nNVIDIA、LINEヤフー、Acompanyのメンバーによるセッションとパネルディスカッションを通じて、Confidential ComputingやConfidential AIの最新動向、各社の取り組み、社会実装に向けた可能性と課題を共有します。\n本イベントを通じて、これらの技術への理解を広げるとともに、企業や組織を越えた新たなつながりを生み出し、今後の継続的な議論や交流につなげることを目指します。</p>\n<h3><strong>こんな人におすすめ</strong></h3>\n<ul>\n<li>Confidential Computing、Confidential AI、TEE、AIセキュリティなどの技術に携わっている、または関心のある研究者・エンジニア</li>\n<li>これらの領域を研究・学習している学生、大学院生、ポスドク、研究機関に所属する方</li>\n<li>AIやデータを安全に活用するための技術や、その可能性・課題に関心のある方</li>\n<li>技術や知見を学び合い、企業・組織・研究領域を越えたネットワークを築きたい方</li>\n</ul>\n<h2><strong>参加方法（参加費無料）</strong></h2>\n<p><strong>会場</strong><br>\nTokyo Innovation Base 1F SQUARE-2<br>\n〒100-0005 東京都千代田区丸の内3丁目8-3<br>\n<a href=\"https://maps.app.goo.gl/dL9ebVbHEKcnZ95o6\" rel=\"nofollow\">https://maps.app.goo.gl/dL9ebVbHEKcnZ95o6</a></p>\n<p><strong>アクセス</strong><br>\n- JR山手線・京浜東北線「有楽町駅」京橋口 徒歩1分<br>\n- 東京メトロ有楽町線「有楽町駅」D9出口すぐ<br>\n- 東京メトロ有楽町線「銀座一丁目駅」1出口 徒歩3分<br></p>\n<p><strong>入館方法 ※当日のスムーズな手続きのため、事前の登録にご協力ください</strong> <br>\n- 参加者は全員「connpassの参加票」に加えて「TIBの会員登録が必要」となります<br>\n- イベント当日、入退館時に「会員QRコード」をゲートにかざして通過いただきます<br>\n- TIBの会員登録は、下記TIBアプリから事前登録が可能です<br></p>\n<p>＜iPhoneをご利用の方＞<br>\n<a href=\"https://apps.apple.com/jp/app/tokyo-innovation-base/id6479402728&lt;BR>\" rel=\"nofollow\">https://apps.apple.com/jp/app/tokyo-innovation-base/id6479402728<br></a>\nもしくはApp Storeで「Tokyo Innovation Base」を検索し、ダウンロード<br></p>\n<p>＜Androidをご利用の方＞<br>\n<a href=\"https://play.google.com/store/search?q=TIB&amp;c=apps&amp;hl=ja&lt;BR>\" rel=\"nofollow\">https://play.google.com/store/search?q=TIB&amp;c=apps&amp;hl=ja<br></a>\nもしくはGoogle Playストアで「Tokyo Innovation Base」を検索し、インストール<br></p>\n<p>※スマートフォンを所持していない、または事情によりアプリをダウンロードできない場合は、TIB受付にて専用端末で1DAY PASSの登録を行っていただきます</p>\n<h2>登壇者紹介※敬称略</h2>\n<h4>田仲 顕至（NVIDIA・Developer Relations Senior Manager - Gen AI）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/3d1e6852f9c4480ba59ad03486867b02/%E9%A1%94%E7%94%BB%E5%83%8F.png\" width=\"150\"><br>\nNVIDIAにて、Software Vendor様やModel Builder様とのNVIDIA Software Stackの技術理解形成、Developer Insightの収集と社内共有を担う。特に、Open LLM、NeMo / NIM / Nemotron、Agent Tools、FDEのようなEnterprise AI / Agentic AI 領域を専門とする。</p>\n<h4>松本 知優（LINEヤフー株式会社・Research Engineer）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/a78b3563e4424b1686358bef9c9068b3/profile_tomoymat_v2.JPG\" width=\"150\"><br>\n2025年LINEヤフー入社。以来、Privacy-enhancing technologies (PETs)の研究開発に従事。修士（情報科学）。</p>\n<h4>竹之内 隆夫（株式会社Acompany / プライバシーテック協会）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/557cbe16c7434758b5cdea41dfab4b2c/takenouchi.png\" width=\"150\"><br>\nNEC、デジタルガレージ、LINE株式会社（現 LINEヤフー株式会社）で、匿名化や秘密計算、差分プライバシー、連合学習などの研究開発・事業開発に従事。プライバシーテック協会の設立支援に携わり、現在はアドバイザーを務める。2024年にAcompanyへ入社。デジタル庁データセキュリティワーキンググループ委員。博士（工学）、経営学修士。</p>\n<h4>髙橋 翼（株式会社Acompany・Chief Scientist 兼 VP of R&amp;D）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/e258262840424b538a98644f4d1e9e80/tsubasa_takahashi.png\" width=\"150\"><br>\n15年以上に渡り、AI Security &amp; Privacyの研究開発に従事。トップカンファレンス採択と事業貢献を両立する研究開発組織の立ち上げ・運営を各社で担ってきた。著書に「機械学習のためのプライバシー保護」（監訳）がある。2026年よりAcompanyにジョイン。博士（工学）</p>\n<h4>椎名 峻平（株式会社Acompany）</h4>\n<p><img src=\"https://images.microcms-assets.io/assets/073d1a4c80bd41c093e9c2ac174f1736/b4b69d60e11d44f5aef203a879d7be6a/profile_img.jpg\" width=\"150\"><br>\n高性能計算（HPC）や機密・プライバシー保護を支えるシステムソフトウェアの研究開発に従事。大規模タスク並列処理系「Itoyori」や差分プライバシーを強制するPythonライブラリ「PrivJail」などを開発し、OSSとして公開。2026年よりAcompanyにジョイン。博士（情報理工学）。</p>\n<h2>セッション紹介</h2>\n<ul>\n<li>【機密コンピューティングとは】竹之内 隆夫（株式会社Acompany / プライバシーテック協会）</li>\n<li>【AIの「実行中」をどう守るか― 機密データとモデルを保護する NVIDIA Confidential Computing】田仲 顕至（NVIDIA Japan）</li>\n<li>【連合学習と機密コンピューティング】松本 知優（LINEヤフー株式会社）</li>\n<li>【Confidential AIが「秘密を守れる」ことを検証するには？】椎名 峻平（株式会社Acompany）\n<br></li>\n</ul>\n<h2>パネルディスカッション</h2>\n<h4>パネリスト</h4>\n<ul>\n<li>髙橋 翼（株式会社Acompany）：モデレーター</li>\n<li>竹之内 隆夫（株式会社Acompany / プライバシーテック協会）</li>\n<li>田仲 顕至（NVIDIA Japan）</li>\n</ul>\n<h2><strong>タイムテーブル</strong></h2>\n<table>\n<thead>\n<tr>\n<th><strong>時間</strong></th>\n<th><strong>内容</strong></th>\n<th><strong>登壇者</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:00 - 18:35</td>\n<td>受付開始</td>\n<td></td>\n</tr>\n<tr>\n<td>18:30 - 18:35</td>\n<td>Opening</td>\n<td></td>\n</tr>\n<tr>\n<td>18:35 - 19:25</td>\n<td>セッション</td>\n<td>竹之内 隆夫 （株式会社Acompany / プライバシーテック協会）<br>田仲 顕至（NVIDIA Japan）<br>松本 知優（LINEヤフー株式会社）<br>椎名 峻平（株式会社Acompany）</td>\n</tr>\n<tr>\n<td>19:25 - 19:55</td>\n<td>パネルディスカッション</td>\n<td>髙橋 翼（株式会社Acompany）：モデレーター<br>田仲 顕至（NVIDIA Japan）<br>竹之内 隆夫 （株式会社Acompany / プライバシーテック協会）</td>\n</tr>\n<tr>\n<td>19:55 - 20:00</td>\n<td>Closing</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00 - 20:55</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Acompanyについて</h3>\n<p>「Trust.Data.AI.あらゆるデータとAI活用に、信頼を。」をミッションに、Confidential Computing（機密コンピューティング）に関連した製品・技術と機密データコンサルティングサービスを提供しています。<br>\n<a href=\"https://www.acompany.tech/\" rel=\"nofollow\">https://www.acompany.tech/</a></p>\n<h3>行動規範</h3>\n<p>本イベントは、Confidential AI に関する情報交換や交流を行うための場所です。 そのため、参加者に対して以下のようなハラスメント行為は許容しません。</p>\n<ul>\n<li>言葉による性別、性的指向、障害の有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント</li>\n<li>公的空間での性的な映像表現</li>\n<li>意図的な威力行為、ストーキング、つきまとい</li>\n<li>写真撮影や録音によるいやがらせ</li>\n<li>トークやその他の会議イベントに対して繰り返して中断しようとする行為</li>\n<li>望まれない性的な注意を引きつける行為</li>\n<li>ハラスメント行為に遭った、目撃した場合には、スタッフの誰かに連絡していただくようお願いします。 ハラスメント行為を止めるように言われた参加者は、直ちに従ってください。</li>\n</ul>\n<p>なお、懇親会は、イベント内容や技術情報に関する交流を目的としております。そのため、知識の共有や参加者同士の交流を主な目的としないご参加はご遠慮ください。飲食を主目的としたご参加や、自社採用・人材紹介などの営業目的でのご参加はお控えいただきますようお願いします。事前の予告なくキャンセル処理させていただく場合がございますのであらかじめご了承ください。</p>",
-      "url": "https://acompany.connpass.com/event/401607/",
-      "image_url": "https://media.connpass.com/thumbs/e8/91/e891e0497376131a82b139a21b2b44b0.png",
-      "hash_tag": "CAI_Night",
-      "started_at": "2026-08-20T18:30:00+09:00",
-      "ended_at": "2026-08-20T20:50:00+09:00",
-      "published_at": "2026-07-24T18:02:42+09:00",
-      "limit": 90,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 12009,
-        "subdomain": "acompany",
-        "title": "株式会社Acompany",
-        "url": "https://acompany.connpass.com/"
-      },
-      "address": "〒100-0005 東京都千代田区丸の内３丁目８−３",
-      "place": "Tokyo Innovation Base 1F SQUARE-2",
-      "lat": "35.675655600000",
-      "lon": "139.764622700000",
-      "owner_id": 933519,
-      "owner_nickname": "Acompany",
-      "owner_display_name": "Acompany",
-      "accepted": 82,
-      "waiting": 0,
-      "updated_at": "2026-08-20T09:49:19+09:00"
-    },
-    {
       "id": 399957,
       "title": "渋谷でビール片手にLT会！",
       "catch": "第3木曜LT会 #32",
@@ -522,7 +522,7 @@
       "owner_nickname": "Ayumu_usuda",
       "owner_display_name": "Ayumu@micornity",
       "accepted": 27,
-      "waiting": 1,
+      "waiting": 0,
       "updated_at": "2026-08-20T10:16:56+09:00"
     },
     {
