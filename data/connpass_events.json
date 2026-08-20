@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-20T21:31:36.612535+09:00",
+  "fetched_at": "2026-08-20T22:39:42.182653+09:00",
   "date": "20260820",
-  "count": 19,
+  "count": 20,
   "events": [
     {
       "id": 400310,
@@ -16,7 +16,7 @@
       "published_at": "2026-07-21T00:01:32+09:00",
       "limit": 23,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17811,
         "subdomain": "tamachi-go",
@@ -140,7 +140,7 @@
       "published_at": "2026-06-24T16:46:30+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16600,
         "subdomain": "faci-ken",
@@ -283,37 +283,6 @@
       "updated_at": "2026-08-20T17:47:08+09:00"
     },
     {
-      "id": 400921,
-      "title": "LINEヤフー Data Science Share #2",
-      "catch": "",
-      "description": "<h1>LINEヤフー Data Science Share 〜3社の実践から学ぶ　データサイエンスの現場〜</h1>\n<h2>イベント概要</h2>\n<p>「LINEヤフー Data Science Share」は、LINEヤフーが主催する、データサイエンスに関する知見や実践事例を共有するイベントです。</p>\n<p>今回はゲストとして、株式会社ZOZOの佐々木さん、ブレインパッドの久野さんをお招きし、LINEヤフーの登壇者を含む3名から、それぞれの現場での取り組みや事例についてお話しいただきます。</p>\n<p>企業や組織の垣根を越えて、多様なデータサイエンスの実践に触れられる機会です。データ分析や機械学習に携わる方はもちろん、データ活用に関心のあるみなさまのご参加をお待ちしています。</p>\n<p>データサイエンスに興味のある方であればどなたでもご参加いただけますので、ぜひお気軽にご登録ください！</p>\n<h2>要項</h2>\n<ul>\n<li>📆 日時：8/20(木) 19:20〜21:55</li>\n<li>📍 場所：LINEヤフー株式会社 紀尾井町オフィス 17F 会議室</li>\n<li>💰 参加費：無料</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00-19:20</td>\n<td style=\"text-align: left;\">受付</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:30</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">柳 智也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30-19:55</td>\n<td style=\"text-align: left;\">やはり俺のベイジアンA/Bテストはまちがっている。</td>\n<td style=\"text-align: left;\">佐野 和幸</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55-20:20</td>\n<td style=\"text-align: left;\">AI時代にZOZOのデータアナリストが大事にしていること</td>\n<td style=\"text-align: left;\">佐々木 健太</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20-20:30</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30-20:55</td>\n<td style=\"text-align: left;\">アウトカムが二値のデータに対するCausal Impact</td>\n<td style=\"text-align: left;\">久野 元</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55-21:00</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">柳 智也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00-21:55</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>スピーカー&amp;登壇者紹介</h2>\n<h3>柳智也</h3>\n<p><img src=\"https://i.imgur.com/U6Yk0nK.jpeg\" width=\"150\"></p>\n<p><strong>プロフィール</strong></p>\n<p>LINEヤフー株式会社所属。2025年にLINEヤフー株式会社へ新卒入社し、LINE公式アカウントの分析に従事。\nKaggle Competitions Master。</p>\n<h3>佐野和幸</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/27876663?v=4\" width=\"150\"></p>\n<p><strong>プロフィール</strong></p>\n<p>LINEヤフー株式会社所属。2023年にデータサイエンティストとして新卒入社。2026年4月からLINE公式アカウント領域のデータサイエンスチームのマネージャーを担当。ねことコーヒーと効果検証がすき。</p>\n<h4>発表内容：やはり俺のベイジアンA/Bテストはまちがっている。</h4>\n<blockquote>\n<p>ベイジアンA/Bテストでは、Beta-Binomialモデルを用いて「BがAより良い確率」を計算する例がよく紹介されます。これは直感的で分かりやすい一方、CTRのような指標にそのまま適用してよいかは慎重に考える必要があります。本発表では、CTRをユーザー単位のratio metricとして捉え直し、なぜ単純なBeta-Binomialだけでは不十分になりうるのかを整理します。</p>\n</blockquote>\n<h3>佐々木 健太</h3>\n<p><strong>プロフィール</strong></p>\n<p>株式会社ZOZOのデータサイエンティスト。因果推論を用いたマーケティング施策の効果検証や、データ分析を通じた事業意思決定の支援に従事。</p>\n<h4>発表内容：AI時代にZOZOのデータアナリストが大事にしていること</h4>\n<blockquote>\n<p>AIの進化によって、分析やコーディングの多くをAIが支援できるようになりました。その中で、データアナリストはどのような価値を発揮すべきなのでしょうか。本発表では、ZOZOでの分析実務をもとに、「AIに任せること」と「人が担うべきこと」を整理し、事業に貢献するデータアナリストに求められる考え方についてお話しします。</p>\n</blockquote>\n<h3>久野 元</h3>\n<p><img src=\"https://media.connpass.com/thumbs/79/82/7982230cd2aa29dec3b2ff1682ab86d6.png\" width=\"150\"></p>\n<p><strong>プロフィール</strong></p>\n<p>ITコンサルタントとして外資SIerで勤務後、2022年にブレインパッドに入社。 マーケティングやCRM、異常検知などの案件に従事。 総合研究大学院大学統計科学コースに社会人博士として在籍中。 大学院での専門はベイズ統計や統計モデリング、時空間統計など。 技術評論社にてベイズ統計の書籍を執筆中。</p>\n<h4>発表内容：アウトカムが二値のデータに対するCausal Impact</h4>\n<blockquote>\n<p>「店舗に広告を設置することで商品の売上がどのように変化したかを分析したい」という依頼に対し、Causal Impactをアプローチとして選定しましたが、ある商品の一日の売上がほぼ0~1個のため、通常のCausal Impactが適用できないという問題が発生しました。そこで、アウトカムが二値の時系列モデルをPyMCで実装することで、通常のCausal Impactを拡張した手法を適用しました。本手法のモデリングや推定プロセス、得られた知見、更なる拡張可能性などについて説明します。</p>\n</blockquote>\n<h1>各会場へのアクセス</h1>\n<h2>LINEヤフー株式会社 紀尾井町オフィスへのアクセス</h2>\n<p>LINEヤフー株式会社　紀尾井町オフィス\n（東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー）</p>\n<p>→ 受付は紀尾井タワー2階カウンターに設置しております。</p>\n<p>東京メトロ南北線　「永田町駅」9a出口直結 東京メトロ半蔵門線　「永田町駅」7番出口より徒歩2分 東京メトロ丸の内線/銀座線　「赤坂見附駅」D出口より徒歩1分</p>\n<p>※駅からオフィス入口まで少し距離が離れておりますので、お時間に余裕をもってお越しください。</p>\n<p>※遅れた場合は個別に対応しますので、参加者にご案内する遅刻連絡用の電話番号までご連絡をお願いします。</p>\n<h1>注意事項</h1>\n<p>本イベントの内容は、後日主催団体のブログやYouTube等の媒体にて紹介する可能性があります。</p>\n<p>その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。技術交流が目的の勉強会ですので、知識の共有および、参加者同士の交流を目的としない参加はお断りしています。</p>\n<p>事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いは、各社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想についてお聞きする予定です。</p>\n<p>LINEヤフー株式会社 プライバシーポリシー：<a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">https://www.lycorp.co.jp/ja/company/privacypolicy/</a></p>\n<h1>アンチハラスメントポリシー</h1>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーカ、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。</p>\n<p>Tipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。 そのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h1>キャンセルポリシー</h1>\n<p>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。\n参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</p>",
-      "url": "https://lycorptech-jp.connpass.com/event/400921/",
-      "image_url": "https://media.connpass.com/thumbs/9b/95/9b9570fa2a0e6a77c5db0050797a6e47.png",
-      "hash_tag": "LINEヤフーDSS",
-      "started_at": "2026-08-20T19:00:00+09:00",
-      "ended_at": "2026-08-20T22:00:00+09:00",
-      "published_at": "2026-08-03T14:33:08+09:00",
-      "limit": 70,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 14178,
-        "subdomain": "lycorptech-jp",
-        "title": "LINEヤフー Tech",
-        "url": "https://lycorptech-jp.connpass.com/"
-      },
-      "address": "東京都千代田区紀尾井町１−２ 東京ガーデンテラス 17F",
-      "place": "LINEヤフー株式会社 紀尾井町オフィス",
-      "lat": "35.679992600000",
-      "lon": "139.737936300000",
-      "owner_id": 814332,
-      "owner_nickname": "lycorptech_jp",
-      "owner_display_name": "LINEヤフー Tech",
-      "accepted": 61,
-      "waiting": 0,
-      "updated_at": "2026-08-20T20:30:06+09:00"
-    },
-    {
       "id": 402131,
       "title": "[非公式] キチピーふりかえり会",
       "catch": "",
@@ -338,37 +307,6 @@
       "accepted": 21,
       "waiting": 0,
       "updated_at": "2026-08-20T19:08:23+09:00"
-    },
-    {
-      "id": 402230,
-      "title": "【増枠！】AI自走環境整備・運用スペシャル #5 〜ハーネス・ループ・グラフエンジニアリング〜",
-      "catch": "開発組織はどこまでAI自走度を品質を保って促進できるのか？実践知見を語り尽くす！",
-      "description": "<h2><b>AI自走環境整備で組織のAI駆動開発を推進！<br>AGENTS&zwnj;.md/Skills/SubAgentsなどのAI自走環境整備・運用の実践テクニックを語り尽くす！</b></h2>\n<p>本イベントは、<br>\nこれまでIssue自動生成 → タスク分解 → 複数エージェントによるPR作成から、レビュー周りまで多岐にわたるAI自走度を高める実践知見をご登壇いただきました！</p>\n<p>今回は、新たに界隈を賑わしているループ・グラフエンジニアリングを、ハーネス整備と合わせてどのように推進しているのか、以下のようなテーマで登壇いただきます！<br></p>\n<ul>\n<li>AIが安全に走り続けるためのハーネス設計 ―― AGENTS&zwnj;.md/Skills/評価基準・テスト・CIをどう整備し、「任せて良い状態」を環境側で担保するか</li>\n<li>Issue自律起票とセルフ検証ループ ―― AIによるIssue起票の仕組みと、起票品質を担保する評価→修正の自己検証ループの回し方</li>\n<li>依存グラフに基づくタスクオーケストレーション設計 ―― 1つのIssueをサブタスクへ自動分解し、依存関係を踏まえて複数エージェントに割り振る設計</li>\n<li>品質を落とさず自走度を上げる\"人間の介入境界\" ―― Issue起票からPR作成・レビューまで自走させたとき、どの品質ゲートに人間を残すか／レビュー速度をどう追いつかせるか</li>\n</ul>\n<p>ぜひご参加ください！</p>\n<p></p>\n<h3>AI 駆動開発勉強会とは？</h3>\n<hr>\n<blockquote>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！<br>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！\n(<a href=\"https://aid.connpass.com/\" rel=\"nofollow\">https://aid.connpass.com/</a> より)</p>\n</blockquote>\n<h2><font color=\"red\">LT枠応募の方は抽選落ちの場合も現地参加可能です。<br>入館申請は不要です。当日は直接会場へお越しください。</font></h2>\n<hr>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">iOS開発に「動作確認」という概念を作った ― AIに任せる前に、自分が説明できるか</td>\n<td style=\"text-align: left;\">谷口恭一さん（株式会社エブリー）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">AIの判断にくせをつける — 複数プロジェクトを自走させる長期記憶</td>\n<td style=\"text-align: left;\">Eisukeさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:28</td>\n<td style=\"text-align: left;\">Microsoft Agent Frameworkでのハーネス・ループエンジニアリング</td>\n<td style=\"text-align: left;\">motoJinC25さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:35</td>\n<td style=\"text-align: left;\">『失敗を設計する: AIエージェントを長時間自走させるための航海術』</td>\n<td style=\"text-align: left;\">中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:37 - 19:42</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:44 - 19:56</td>\n<td style=\"text-align: left;\">休憩（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:58 - 20:03</td>\n<td style=\"text-align: left;\">AIエージェントにQAをやらせて分かったこと</td>\n<td style=\"text-align: left;\">浅野 耀介さん（Sansan株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05 - 20:10</td>\n<td style=\"text-align: left;\">(仮) AI駆動プロジェクトマネジメント実践</td>\n<td style=\"text-align: left;\">mackeeeさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:12 - 20:22</td>\n<td style=\"text-align: left;\">オブジェクト思考プログラミングとAI環境整備</td>\n<td style=\"text-align: left;\">丸尾さん（燈株式会社 DX Solution事業本部 VPoE）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:24 - 20:29</td>\n<td style=\"text-align: left;\">AI のコードレビュー負荷を減らせるかは 環境整備 と仕組みで決まる ― 重要なのは【レビュー観点を洗い出し、AI とともに負荷を減らす】こと ―</td>\n<td style=\"text-align: left;\">スナガクさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:31 - 20:51</td>\n<td style=\"text-align: left;\">Q&amp;A（20分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:53 - 21:00</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LT5分＋画面切り替え等を考慮し1人7分としています。</p>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング）\n<font color=\"red\"><br>※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h3>スポンサー</h3>\n<p>本イベントでは、ご協賛いただける企業・団体様ならびに、運営をサポートしていただける個人の方を募集しております。<br>\nご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。</p>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>",
-      "url": "https://aid.connpass.com/event/402230/",
-      "image_url": "https://media.connpass.com/thumbs/02/91/0291a8a50110f2763c3131ddf36146d5.png",
-      "hash_tag": "AI自走環境",
-      "started_at": "2026-08-20T19:00:00+09:00",
-      "ended_at": "2026-08-20T21:00:00+09:00",
-      "published_at": "2026-07-31T08:30:55+09:00",
-      "limit": 1043,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 14543,
-        "subdomain": "aid",
-        "title": "AI駆動開発(AI-Driven Development)",
-        "url": "https://aid.connpass.com/"
-      },
-      "address": "〒101-0062 東京都千代田区神田駿河台4丁目6 御茶ノ水ソラシティ 21階",
-      "place": "燈株式会社",
-      "lat": "35.698783900000",
-      "lon": "139.766785300000",
-      "owner_id": 1030071,
-      "owner_nickname": "daigos432_findy",
-      "owner_display_name": "daigos432_findy",
-      "accepted": 949,
-      "waiting": 5,
-      "updated_at": "2026-08-20T19:14:21+09:00"
     },
     {
       "id": 402662,
@@ -400,6 +338,68 @@
       "accepted": 89,
       "waiting": 0,
       "updated_at": "2026-08-20T18:14:06+09:00"
+    },
+    {
+      "id": 400921,
+      "title": "LINEヤフー Data Science Share #2",
+      "catch": "",
+      "description": "<h1>LINEヤフー Data Science Share 〜3社の実践から学ぶ　データサイエンスの現場〜</h1>\n<h2>イベント概要</h2>\n<p>「LINEヤフー Data Science Share」は、LINEヤフーが主催する、データサイエンスに関する知見や実践事例を共有するイベントです。</p>\n<p>今回はゲストとして、株式会社ZOZOの佐々木さん、ブレインパッドの久野さんをお招きし、LINEヤフーの登壇者を含む3名から、それぞれの現場での取り組みや事例についてお話しいただきます。</p>\n<p>企業や組織の垣根を越えて、多様なデータサイエンスの実践に触れられる機会です。データ分析や機械学習に携わる方はもちろん、データ活用に関心のあるみなさまのご参加をお待ちしています。</p>\n<p>データサイエンスに興味のある方であればどなたでもご参加いただけますので、ぜひお気軽にご登録ください！</p>\n<h2>要項</h2>\n<ul>\n<li>📆 日時：8/20(木) 19:20〜21:55</li>\n<li>📍 場所：LINEヤフー株式会社 紀尾井町オフィス 17F 会議室</li>\n<li>💰 参加費：無料</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00-19:20</td>\n<td style=\"text-align: left;\">受付</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:30</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">柳 智也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30-19:55</td>\n<td style=\"text-align: left;\">やはり俺のベイジアンA/Bテストはまちがっている。</td>\n<td style=\"text-align: left;\">佐野 和幸</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55-20:20</td>\n<td style=\"text-align: left;\">AI時代にZOZOのデータアナリストが大事にしていること</td>\n<td style=\"text-align: left;\">佐々木 健太</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20-20:30</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30-20:55</td>\n<td style=\"text-align: left;\">アウトカムが二値のデータに対するCausal Impact</td>\n<td style=\"text-align: left;\">久野 元</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55-21:00</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">柳 智也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00-21:55</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>スピーカー&amp;登壇者紹介</h2>\n<h3>柳智也</h3>\n<p><img src=\"https://i.imgur.com/U6Yk0nK.jpeg\" width=\"150\"></p>\n<p><strong>プロフィール</strong></p>\n<p>LINEヤフー株式会社所属。2025年にLINEヤフー株式会社へ新卒入社し、LINE公式アカウントの分析に従事。\nKaggle Competitions Master。</p>\n<h3>佐野和幸</h3>\n<p><img src=\"https://avatars.githubusercontent.com/u/27876663?v=4\" width=\"150\"></p>\n<p><strong>プロフィール</strong></p>\n<p>LINEヤフー株式会社所属。2023年にデータサイエンティストとして新卒入社。2026年4月からLINE公式アカウント領域のデータサイエンスチームのマネージャーを担当。ねことコーヒーと効果検証がすき。</p>\n<h4>発表内容：やはり俺のベイジアンA/Bテストはまちがっている。</h4>\n<blockquote>\n<p>ベイジアンA/Bテストでは、Beta-Binomialモデルを用いて「BがAより良い確率」を計算する例がよく紹介されます。これは直感的で分かりやすい一方、CTRのような指標にそのまま適用してよいかは慎重に考える必要があります。本発表では、CTRをユーザー単位のratio metricとして捉え直し、なぜ単純なBeta-Binomialだけでは不十分になりうるのかを整理します。</p>\n</blockquote>\n<h3>佐々木 健太</h3>\n<p><strong>プロフィール</strong></p>\n<p>株式会社ZOZOのデータサイエンティスト。因果推論を用いたマーケティング施策の効果検証や、データ分析を通じた事業意思決定の支援に従事。</p>\n<h4>発表内容：AI時代にZOZOのデータアナリストが大事にしていること</h4>\n<blockquote>\n<p>AIの進化によって、分析やコーディングの多くをAIが支援できるようになりました。その中で、データアナリストはどのような価値を発揮すべきなのでしょうか。本発表では、ZOZOでの分析実務をもとに、「AIに任せること」と「人が担うべきこと」を整理し、事業に貢献するデータアナリストに求められる考え方についてお話しします。</p>\n</blockquote>\n<h3>久野 元</h3>\n<p><img src=\"https://media.connpass.com/thumbs/79/82/7982230cd2aa29dec3b2ff1682ab86d6.png\" width=\"150\"></p>\n<p><strong>プロフィール</strong></p>\n<p>ITコンサルタントとして外資SIerで勤務後、2022年にブレインパッドに入社。 マーケティングやCRM、異常検知などの案件に従事。 総合研究大学院大学統計科学コースに社会人博士として在籍中。 大学院での専門はベイズ統計や統計モデリング、時空間統計など。 技術評論社にてベイズ統計の書籍を執筆中。</p>\n<h4>発表内容：アウトカムが二値のデータに対するCausal Impact</h4>\n<blockquote>\n<p>「店舗に広告を設置することで商品の売上がどのように変化したかを分析したい」という依頼に対し、Causal Impactをアプローチとして選定しましたが、ある商品の一日の売上がほぼ0~1個のため、通常のCausal Impactが適用できないという問題が発生しました。そこで、アウトカムが二値の時系列モデルをPyMCで実装することで、通常のCausal Impactを拡張した手法を適用しました。本手法のモデリングや推定プロセス、得られた知見、更なる拡張可能性などについて説明します。</p>\n</blockquote>\n<h1>各会場へのアクセス</h1>\n<h2>LINEヤフー株式会社 紀尾井町オフィスへのアクセス</h2>\n<p>LINEヤフー株式会社　紀尾井町オフィス\n（東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー）</p>\n<p>→ 受付は紀尾井タワー2階カウンターに設置しております。</p>\n<p>東京メトロ南北線　「永田町駅」9a出口直結 東京メトロ半蔵門線　「永田町駅」7番出口より徒歩2分 東京メトロ丸の内線/銀座線　「赤坂見附駅」D出口より徒歩1分</p>\n<p>※駅からオフィス入口まで少し距離が離れておりますので、お時間に余裕をもってお越しください。</p>\n<p>※遅れた場合は個別に対応しますので、参加者にご案内する遅刻連絡用の電話番号までご連絡をお願いします。</p>\n<h1>注意事項</h1>\n<p>本イベントの内容は、後日主催団体のブログやYouTube等の媒体にて紹介する可能性があります。</p>\n<p>その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。技術交流が目的の勉強会ですので、知識の共有および、参加者同士の交流を目的としない参加はお断りしています。</p>\n<p>事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いは、各社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想についてお聞きする予定です。</p>\n<p>LINEヤフー株式会社 プライバシーポリシー：<a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">https://www.lycorp.co.jp/ja/company/privacypolicy/</a></p>\n<h1>アンチハラスメントポリシー</h1>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーカ、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。</p>\n<p>Tipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。 そのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h1>キャンセルポリシー</h1>\n<p>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。\n参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</p>",
+      "url": "https://lycorptech-jp.connpass.com/event/400921/",
+      "image_url": "https://media.connpass.com/thumbs/9b/95/9b9570fa2a0e6a77c5db0050797a6e47.png",
+      "hash_tag": "LINEヤフーDSS",
+      "started_at": "2026-08-20T19:00:00+09:00",
+      "ended_at": "2026-08-20T22:00:00+09:00",
+      "published_at": "2026-08-03T14:33:08+09:00",
+      "limit": 70,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 14178,
+        "subdomain": "lycorptech-jp",
+        "title": "LINEヤフー Tech",
+        "url": "https://lycorptech-jp.connpass.com/"
+      },
+      "address": "東京都千代田区紀尾井町１−２ 東京ガーデンテラス 17F",
+      "place": "LINEヤフー株式会社 紀尾井町オフィス",
+      "lat": "35.679992600000",
+      "lon": "139.737936300000",
+      "owner_id": 814332,
+      "owner_nickname": "lycorptech_jp",
+      "owner_display_name": "LINEヤフー Tech",
+      "accepted": 61,
+      "waiting": 0,
+      "updated_at": "2026-08-20T20:30:06+09:00"
+    },
+    {
+      "id": 402230,
+      "title": "【増枠！】AI自走環境整備・運用スペシャル #5 〜ハーネス・ループ・グラフエンジニアリング〜",
+      "catch": "開発組織はどこまでAI自走度を品質を保って促進できるのか？実践知見を語り尽くす！",
+      "description": "<h2><b>AI自走環境整備で組織のAI駆動開発を推進！<br>AGENTS&zwnj;.md/Skills/SubAgentsなどのAI自走環境整備・運用の実践テクニックを語り尽くす！</b></h2>\n<p>本イベントは、<br>\nこれまでIssue自動生成 → タスク分解 → 複数エージェントによるPR作成から、レビュー周りまで多岐にわたるAI自走度を高める実践知見をご登壇いただきました！</p>\n<p>今回は、新たに界隈を賑わしているループ・グラフエンジニアリングを、ハーネス整備と合わせてどのように推進しているのか、以下のようなテーマで登壇いただきます！<br></p>\n<ul>\n<li>AIが安全に走り続けるためのハーネス設計 ―― AGENTS&zwnj;.md/Skills/評価基準・テスト・CIをどう整備し、「任せて良い状態」を環境側で担保するか</li>\n<li>Issue自律起票とセルフ検証ループ ―― AIによるIssue起票の仕組みと、起票品質を担保する評価→修正の自己検証ループの回し方</li>\n<li>依存グラフに基づくタスクオーケストレーション設計 ―― 1つのIssueをサブタスクへ自動分解し、依存関係を踏まえて複数エージェントに割り振る設計</li>\n<li>品質を落とさず自走度を上げる\"人間の介入境界\" ―― Issue起票からPR作成・レビューまで自走させたとき、どの品質ゲートに人間を残すか／レビュー速度をどう追いつかせるか</li>\n</ul>\n<p>ぜひご参加ください！</p>\n<p></p>\n<h3>AI 駆動開発勉強会とは？</h3>\n<hr>\n<blockquote>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！<br>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！\n(<a href=\"https://aid.connpass.com/\" rel=\"nofollow\">https://aid.connpass.com/</a> より)</p>\n</blockquote>\n<h2><font color=\"red\">LT枠応募の方は抽選落ちの場合も現地参加可能です。<br>入館申請は不要です。当日は直接会場へお越しください。</font></h2>\n<hr>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">iOS開発に「動作確認」という概念を作った ― AIに任せる前に、自分が説明できるか</td>\n<td style=\"text-align: left;\">谷口恭一さん（株式会社エブリー）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">AIの判断にくせをつける — 複数プロジェクトを自走させる長期記憶</td>\n<td style=\"text-align: left;\">Eisukeさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:28</td>\n<td style=\"text-align: left;\">Microsoft Agent Frameworkでのハーネス・ループエンジニアリング</td>\n<td style=\"text-align: left;\">motoJinC25さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:35</td>\n<td style=\"text-align: left;\">『失敗を設計する: AIエージェントを長時間自走させるための航海術』</td>\n<td style=\"text-align: left;\">中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:37 - 19:42</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:44 - 19:56</td>\n<td style=\"text-align: left;\">休憩（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:58 - 20:03</td>\n<td style=\"text-align: left;\">AIエージェントにQAをやらせて分かったこと</td>\n<td style=\"text-align: left;\">浅野 耀介さん（Sansan株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05 - 20:10</td>\n<td style=\"text-align: left;\">(仮) AI駆動プロジェクトマネジメント実践</td>\n<td style=\"text-align: left;\">mackeeeさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:12 - 20:22</td>\n<td style=\"text-align: left;\">オブジェクト思考プログラミングとAI環境整備</td>\n<td style=\"text-align: left;\">丸尾さん（燈株式会社 DX Solution事業本部 VPoE）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:24 - 20:29</td>\n<td style=\"text-align: left;\">AI のコードレビュー負荷を減らせるかは 環境整備 と仕組みで決まる ― 重要なのは【レビュー観点を洗い出し、AI とともに負荷を減らす】こと ―</td>\n<td style=\"text-align: left;\">スナガクさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:31 - 20:51</td>\n<td style=\"text-align: left;\">Q&amp;A（20分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:53 - 21:00</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LT5分＋画面切り替え等を考慮し1人7分としています。</p>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング）\n<font color=\"red\"><br>※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります<br>\n※一部セッションはリモート登壇となる可能性があります</p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h3>スポンサー</h3>\n<p>本イベントでは、ご協賛いただける企業・団体様ならびに、運営をサポートしていただける個人の方を募集しております。<br>\nご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。</p>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：募集中<br>\n懇親会協力：募集中<br></p>",
+      "url": "https://aid.connpass.com/event/402230/",
+      "image_url": "https://media.connpass.com/thumbs/02/91/0291a8a50110f2763c3131ddf36146d5.png",
+      "hash_tag": "AI自走環境",
+      "started_at": "2026-08-20T19:00:00+09:00",
+      "ended_at": "2026-08-20T21:00:00+09:00",
+      "published_at": "2026-07-31T08:30:55+09:00",
+      "limit": 1043,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 14543,
+        "subdomain": "aid",
+        "title": "AI駆動開発(AI-Driven Development)",
+        "url": "https://aid.connpass.com/"
+      },
+      "address": "〒101-0062 東京都千代田区神田駿河台4丁目6 御茶ノ水ソラシティ 21階",
+      "place": "燈株式会社",
+      "lat": "35.698783900000",
+      "lon": "139.766785300000",
+      "owner_id": 1030071,
+      "owner_nickname": "daigos432_findy",
+      "owner_display_name": "daigos432_findy",
+      "accepted": 949,
+      "waiting": 5,
+      "updated_at": "2026-08-20T19:14:21+09:00"
     },
     {
       "id": 396886,
@@ -586,6 +586,37 @@
       "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-08-13T15:04:52+09:00"
+    },
+    {
+      "id": 401345,
+      "title": "Google Antigravity（中心の）もくもく会 in 茅ヶ崎",
+      "catch": "",
+      "description": "<h2>概要</h2>\n<h3>🚀 Google Antigravity もくもく会：AIエージェントで作業を「無重力」に</h3>\n<p>最近話題の <strong>Google Antigravity</strong>、皆さんは使いこなせていますか？\nAI Agentによる爆速の開発体験から、MCPサーバー連携による拡張性まで、その可能性はアイデア次第で無限に広がります。</p>\n<p>「一人で設定するのは大変だけど、誰かと一緒なら新しい発見があるかも」\nそんな想いで、みんなで手を動かしながら情報交換する場を作りました！</p>\n<p>別途開催していた「FGStudyもくもく会 feat.なんでも in 茅ヶ崎」と統合してみました。<br>\nAntigravityを使わない方でもお気軽に参加いただければと思います。</p>\n<h3>💡 こんなことをやります</h3>\n<ul>\n<li><strong>もくもく作業：</strong> Antigravityを使って(使わなくても）自分のプロジェクトを進める。</li>\n<li><strong>知見シェア：</strong> MCPサーバーの導入、<code>Google Workspace CLI</code> との連携など、一歩踏み込んだ活用術の共有。</li>\n<li><strong>雑談・相談：</strong> 「Workspaceアカウントでどう使ってる？」「有料プランの元は取れてる？」など、ざっくばらんな意見交換。</li>\n</ul>\n<p>基本的に、もくもく会なので、主催者側で用意しているものはありませんが、もくもくする時間よりも参加者同士で話をする時間を多めにしたいと考えています。</p>\n<h3>🛠️ 技術トピック（例）</h3>\n<ul>\n<li><strong>AI Agentとしての活用：</strong> IDEとの連携で開発効率をどこまで上げられるか？</li>\n<li><strong>エコシステムの拡張：</strong> MCP（Model Context Protocol）サーバー導入による外部データ連携。</li>\n<li><strong>CLI連携：</strong> <code>Google Workspace CLI (</code>gws<code>)</code> 等を駆使した高度な自動化設定。</li>\n<li><strong>Workspace活用：</strong> 仕事のワークフローにどう組み込むか？</li>\n</ul>\n<h3>👤 主催者（ぬきぽん）より</h3>\n<p>最近Google WorkspaceアカウントでもAntigravityが利用可能になり、僕自身もガッツリ使い倒し始めました。一人で黙々とやるのも良いですが、皆さんのユニークなアイデアを聞くことで、より面白い使い方に気づけるといいなと思っています！</p>\n<h2>📆 タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">オープニング・自己紹介・今日やること</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45</td>\n<td style=\"text-align: left;\">やったこと共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>FGStudyについて</h2>\n<p>茅ヶ崎を中心に活動している、フリーグーフォ合同会社 （FreeGufo G.K.）が運営するWeb系の勉強会です。</p>\n<h2>会場について</h2>\n<p>会場は、イベント等が入っていなければコワーキングスペースとして利用が可能です。</p>\n<p>店舗前に、自転車、バイクの駐輪が可能です。</p>\n<p>駐車場はありません。近くのコインパーキングをご利用下さい。</p>\n<h2>宣伝</h2>\n<p>FreeGufoは、Google Workspace のリセールも行っています。1アカウントからでも対応致しますので、仕事でGoogle Workspaceを使いたい、Antigravity を安全に使いたい。などご要望がありましたら、ぜひご相談下さい。</p>",
+      "url": "https://fgstudy.connpass.com/event/401345/",
+      "image_url": "https://media.connpass.com/thumbs/3a/80/3a8012e2f91d1bcceea08f003168c51c.png",
+      "hash_tag": "FGStudy",
+      "started_at": "2026-08-20T19:30:00+09:00",
+      "ended_at": "2026-08-20T21:00:00+09:00",
+      "published_at": "2026-07-22T03:10:03+09:00",
+      "limit": 5,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 4422,
+        "subdomain": "fgstudy",
+        "title": "FGStudy",
+        "url": "https://fgstudy.connpass.com/"
+      },
+      "address": "神奈川県茅ヶ崎市十間坂 1-4-2",
+      "place": "FG-Space",
+      "lat": "35.330723600000",
+      "lon": "139.401633300000",
+      "owner_id": 8108,
+      "owner_nickname": "nuki_pon",
+      "owner_display_name": "ぬきぽん",
+      "accepted": 4,
+      "waiting": 0,
+      "updated_at": "2026-07-22T03:11:11+09:00"
     }
   ]
 }
