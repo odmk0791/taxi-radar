@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-20T12:39:33.348767+09:00",
+  "fetched_at": "2026-08-20T13:29:19.418617+09:00",
   "date": "20260820",
   "count": 19,
   "events": [
@@ -216,7 +216,7 @@
       "owner_id": 4627,
       "owner_nickname": "gaoryu",
       "owner_display_name": "gaoryu",
-      "accepted": 10,
+      "accepted": 11,
       "waiting": 0,
       "updated_at": "2026-08-03T10:02:32+09:00"
     },
@@ -247,7 +247,7 @@
       "owner_id": 370165,
       "owner_nickname": "primeNumber",
       "owner_display_name": "primeNumber",
-      "accepted": 100,
+      "accepted": 99,
       "waiting": 0,
       "updated_at": "2026-08-13T18:47:40+09:00"
     },
@@ -309,7 +309,7 @@
       "owner_id": 1038575,
       "owner_nickname": "iiilllii_cmp",
       "owner_display_name": "Hayato Miyakawa",
-      "accepted": 15,
+      "accepted": 17,
       "waiting": 0,
       "updated_at": "2026-08-17T17:13:06+09:00"
     },
@@ -366,7 +366,7 @@
       "owner_id": 1030071,
       "owner_nickname": "daigos432_findy",
       "owner_display_name": "daigos432_findy",
-      "accepted": 912,
+      "accepted": 917,
       "waiting": 5,
       "updated_at": "2026-08-20T08:29:49+09:00"
     },
@@ -397,7 +397,7 @@
       "owner_id": 141857,
       "owner_nickname": "freee_event",
       "owner_display_name": "freee",
-      "accepted": 81,
+      "accepted": 82,
       "waiting": 0,
       "updated_at": "2026-08-06T18:03:20+09:00"
     },
