@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-21T11:19:01.069373+09:00",
+  "fetched_at": "2026-08-21T12:43:01.736578+09:00",
   "date": "20260821",
   "count": 18,
   "events": [
@@ -92,7 +92,7 @@
       "owner_id": 32937,
       "owner_nickname": "Shumpei",
       "owner_display_name": "Shumpei",
-      "accepted": 62,
+      "accepted": 63,
       "waiting": 0,
       "updated_at": "2026-08-21T10:34:09+09:00"
     },
@@ -123,8 +123,8 @@
       "owner_id": 14580,
       "owner_nickname": "shota_inoue_9212",
       "owner_display_name": "syossan27",
-      "accepted": 100,
-      "waiting": 13,
+      "accepted": 101,
+      "waiting": 14,
       "updated_at": "2026-08-20T15:16:06+09:00"
     },
     {
@@ -304,7 +304,7 @@
       "owner_id": 121244,
       "owner_nickname": "AyumiMiyakawa",
       "owner_display_name": "ayumiya",
-      "accepted": 154,
+      "accepted": 155,
       "waiting": 0,
       "updated_at": "2026-08-20T11:31:24+09:00"
     },
@@ -397,7 +397,7 @@
       "owner_id": 775518,
       "owner_nickname": "barus_qa",
       "owner_display_name": "barus_qa",
-      "accepted": 99,
+      "accepted": 100,
       "waiting": 0,
       "updated_at": "2026-07-30T17:19:26+09:00"
     },
