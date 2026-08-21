@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-21T18:28:06.059891+09:00",
+  "fetched_at": "2026-08-21T19:21:34.783624+09:00",
   "date": "20260821",
   "count": 18,
   "events": [
@@ -92,7 +92,7 @@
       "owner_id": 32937,
       "owner_nickname": "Shumpei",
       "owner_display_name": "Shumpei",
-      "accepted": 63,
+      "accepted": 62,
       "waiting": 0,
       "updated_at": "2026-08-21T17:57:15+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-07-02T12:02:06+09:00",
       "limit": 134,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13985,
         "subdomain": "yuru-sre",
@@ -123,9 +123,9 @@
       "owner_id": 14580,
       "owner_nickname": "shota_inoue_9212",
       "owner_display_name": "syossan27",
-      "accepted": 115,
+      "accepted": 122,
       "waiting": 3,
-      "updated_at": "2026-08-21T14:27:30+09:00"
+      "updated_at": "2026-08-21T19:14:52+09:00"
     },
     {
       "id": 401480,
@@ -140,7 +140,7 @@
       "published_at": "2026-07-23T17:51:16+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14623,
         "subdomain": "tech4u",
@@ -171,7 +171,7 @@
       "published_at": "2026-08-03T14:50:12+09:00",
       "limit": 1,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都新宿区新宿1-28-11 小杉ビル5F",
       "place": "株式会社ハートビーツ",
@@ -197,7 +197,7 @@
       "published_at": "2026-06-20T15:28:21+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17422,
         "subdomain": "techbooklibrary",
@@ -228,7 +228,7 @@
       "published_at": "2026-05-20T10:04:56+09:00",
       "limit": 260,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10626,
         "subdomain": "finatext",
@@ -242,7 +242,7 @@
       "owner_id": 121244,
       "owner_nickname": "AyumiMiyakawa",
       "owner_display_name": "ayumiya",
-      "accepted": 163,
+      "accepted": 167,
       "waiting": 0,
       "updated_at": "2026-08-20T11:31:24+09:00"
     },
@@ -259,7 +259,7 @@
       "published_at": "2026-07-19T12:01:21+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 5808,
         "subdomain": "react-tokyo",
@@ -273,7 +273,7 @@
       "owner_id": 57386,
       "owner_nickname": "Teymmt",
       "owner_display_name": "t6adev",
-      "accepted": 31,
+      "accepted": 32,
       "waiting": 0,
       "updated_at": "2026-07-19T12:01:21+09:00"
     },
@@ -290,7 +290,7 @@
       "published_at": "2026-07-21T19:05:11+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17038,
         "subdomain": "simplexinc",
@@ -304,7 +304,7 @@
       "owner_id": 1034164,
       "owner_nickname": "Simplex_seike",
       "owner_display_name": "Simplex_seike",
-      "accepted": 27,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-08-21T10:07:24+09:00"
     },
@@ -321,7 +321,7 @@
       "published_at": "2026-07-30T17:19:26+09:00",
       "limit": 180,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 9251,
         "subdomain": "wingarc1st-spqi",
@@ -335,7 +335,7 @@
       "owner_id": 775518,
       "owner_nickname": "barus_qa",
       "owner_display_name": "barus_qa",
-      "accepted": 113,
+      "accepted": 116,
       "waiting": 0,
       "updated_at": "2026-07-30T17:19:26+09:00"
     },
@@ -352,7 +352,7 @@
       "published_at": "2026-07-31T07:49:22+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 1332,
         "subdomain": "jawsug-iot",
@@ -383,7 +383,7 @@
       "published_at": "2026-08-03T23:29:42+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17716,
         "subdomain": "komae-it",
@@ -414,7 +414,7 @@
       "published_at": "2026-08-10T19:14:59+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 12277,
         "subdomain": "fffff",
@@ -428,7 +428,7 @@
       "owner_id": 18310,
       "owner_nickname": "kixixixixi",
       "owner_display_name": "kixixixixi",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-08-10T19:14:59+09:00"
     },
@@ -445,7 +445,7 @@
       "published_at": "2026-08-04T23:43:28+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2209,
         "subdomain": "smalltalk",
@@ -476,7 +476,7 @@
       "published_at": "2026-07-07T18:01:07+09:00",
       "limit": 42,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10431,
         "subdomain": "pdm",
@@ -490,7 +490,7 @@
       "owner_id": 1013,
       "owner_nickname": "N_A",
       "owner_display_name": "moriyuya",
-      "accepted": 28,
+      "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-08-20T18:48:45+09:00"
     },
