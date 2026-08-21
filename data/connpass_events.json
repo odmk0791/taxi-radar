@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-22T03:25:02.175362+09:00",
+  "fetched_at": "2026-08-22T04:19:50.271255+09:00",
   "date": "20260822",
   "count": 38,
   "events": [
@@ -1059,7 +1059,7 @@
       "owner_id": 18276,
       "owner_nickname": "fadis_",
       "owner_display_name": "fadis_",
-      "accepted": 278,
+      "accepted": 276,
       "waiting": 0,
       "updated_at": "2026-08-21T22:06:57+09:00"
     },
@@ -1152,7 +1152,7 @@
       "owner_id": 34655,
       "owner_nickname": "Yutako0217kawa",
       "owner_display_name": "yutako",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-08-10T11:02:01+09:00"
     }
