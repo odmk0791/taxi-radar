@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-23T03:17:29.517658+09:00",
+  "fetched_at": "2026-08-23T04:16:53.599565+09:00",
   "date": "20260823",
-  "count": 18,
+  "count": 19,
   "events": [
     {
       "id": 398748,
@@ -128,37 +128,6 @@
       "updated_at": "2026-08-22T12:30:04+09:00"
     },
     {
-      "id": 400394,
-      "title": "第2回 よわよわセキュリティ勉強会（初心者歓迎・ゆるくもくもく＋LT）",
-      "catch": "こわくないセキュリティ勉強会",
-      "description": "<h1>概要</h1>\n<p>「セキュリティに興味はあるけど、ガチガチの勉強会はちょっとこわい…」\nそんな方向けの、ゆるい勉強会です。</p>\n<p>初心者の方も大歓迎です！\nゆるく一緒に学べる場にできればと思っています。</p>\n<p>今回は第2回目です！</p>\n<p>LTのテーマは<strong>「AIとセキュリティ」</strong>です。\nもくもくタイムの内容は自由となります。</p>\n<h2>対象者</h2>\n<ul>\n<li>セキュリティに興味はあるけど、何から始めればいいかわからない方</li>\n<li>一人で勉強していて仲間がほしい方</li>\n<li>初心者でも安心して参加できる場を探している方</li>\n<li>LTで知識・技術を共有したい中上級者の方も歓迎です！</li>\n</ul>\n<h2>開催情報</h2>\n<ul>\n<li>日時：8/23（日）13:00〜16:00（12:30受付開始）</li>\n<li>会場：株式会社セキュアスカイ・テクノロジー 東京本社（都営新宿線「岩本町」駅　徒歩3分 / JR総武線快速「新日本橋」駅　徒歩7分 / JR・銀座線「神田」駅　徒歩7分 / 東京メトロ日比谷線「小伝馬町」駅　徒歩7分）</li>\n<li>定員：20名（LT枠3名・一般参加17名）</li>\n<li>参加費：無料</li>\n<li>飲食：持ち込みOK（匂いの強いものはご遠慮ください）</li>\n<li>設備：書籍、Wi-Fi、電源、プロジェクタあり（HDMI / Type-C対応）</li>\n</ul>\n<h2>タイムテーブル（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">開始・自己紹介 ＋ やること宣言</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10</td>\n<td style=\"text-align: left;\">もくもくタイム（勉強・読書など）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:40</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45</td>\n<td style=\"text-align: left;\">スポンサー紹介タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:50</td>\n<td style=\"text-align: left;\">LT（1人5分程度）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:20</td>\n<td style=\"text-align: left;\">もくもくタイムでやったこと発表（口頭）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:30</td>\n<td style=\"text-align: left;\">交流タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50</td>\n<td style=\"text-align: left;\">片付け</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00</td>\n<td style=\"text-align: left;\">終了</td>\n</tr>\n</tbody>\n</table>\n<h2>もくもくタイムについて</h2>\n<p>セキュリティに少しでも関係あればOKです！\n（例：読書 / 資格勉強 / 技術記事執筆 / 常設CTFをやる / 環境構築をやる など）</p>\n<p>何をやればいいかわからない場合は、その場で相談もOKです！</p>\n<h2>LTについて</h2>\n<p>「AIとセキュリティ」をテーマに、学習法や事例・こんなことやってみたなどシェアいただけると嬉しいです！</p>\n<p>スライドなし・軽い共有でも大歓迎です！</p>\n<h2>Q&amp;A</h2>\n<ul>\n<li>Q. セキュリティが全くわからない非エンジニアでも参加していいですか？</li>\n<li>A. 大歓迎です！基礎からゆるく学べる場を目指しています</li>\n<li>Q. よわよわ（初心者）じゃない中上級者でも参加していい？</li>\n<li>A. ぜひどうぞ！LTや質問対応などで、場を一緒に盛り上げていただけると嬉しいです！</li>\n</ul>\n<h2>会場スポンサー</h2>\n<p><a href=\"https://www.securesky-tech.com/\" rel=\"nofollow\">株式会社セキュアスカイ・テクノロジー さま</a></p>\n<h2>注意事項</h2>\n<p>ハラスメント行為は禁止です。\n技術レベルでのマウントなどはご遠慮ください。</p>\n<p>違反があった場合は運営が対応します。</p>\n<h2>お願い</h2>\n<p>少人数開催のため、満席の場合はご了承ください。</p>\n<p>また、参加できなくなった場合はお早めにキャンセルをお願いします。</p>\n<p><strong>ゆるく、楽しく、一緒に学びましょう〜🐣</strong></p>",
-      "url": "https://yowayowasec.connpass.com/event/400394/",
-      "image_url": null,
-      "hash_tag": "yowasec",
-      "started_at": "2026-08-23T13:00:00+09:00",
-      "ended_at": "2026-08-23T16:00:00+09:00",
-      "published_at": "2026-07-16T19:52:28+09:00",
-      "limit": 21,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17633,
-        "subdomain": "yowayowasec",
-        "title": "よわよわセキュリティ勉強会",
-        "url": "https://yowayowasec.connpass.com/"
-      },
-      "address": "東京都千代田区岩本町2-2-4 (PMO神田岩本町II 10F)",
-      "place": "株式会社セキュアスカイ・テクノロジー 東京本社",
-      "lat": "35.692967500000",
-      "lon": "139.775314900000",
-      "owner_id": 224259,
-      "owner_nickname": "akihanari",
-      "owner_display_name": "choco_py3",
-      "accepted": 20,
-      "waiting": 4,
-      "updated_at": "2026-07-31T11:57:33+09:00"
-    },
-    {
       "id": 400884,
       "title": "Cocoa/Swift勉強会2026/08/23",
       "catch": "",
@@ -283,6 +252,37 @@
       "updated_at": "2026-08-22T19:50:55+09:00"
     },
     {
+      "id": 400394,
+      "title": "第2回 よわよわセキュリティ勉強会（初心者歓迎・ゆるくもくもく＋LT）",
+      "catch": "こわくないセキュリティ勉強会",
+      "description": "<h1>概要</h1>\n<p>「セキュリティに興味はあるけど、ガチガチの勉強会はちょっとこわい…」\nそんな方向けの、ゆるい勉強会です。</p>\n<p>初心者の方も大歓迎です！\nゆるく一緒に学べる場にできればと思っています。</p>\n<p>今回は第2回目です！</p>\n<p>LTのテーマは<strong>「AIとセキュリティ」</strong>です。\nもくもくタイムの内容は自由となります。</p>\n<h2>対象者</h2>\n<ul>\n<li>セキュリティに興味はあるけど、何から始めればいいかわからない方</li>\n<li>一人で勉強していて仲間がほしい方</li>\n<li>初心者でも安心して参加できる場を探している方</li>\n<li>LTで知識・技術を共有したい中上級者の方も歓迎です！</li>\n</ul>\n<h2>開催情報</h2>\n<ul>\n<li>日時：8/23（日）13:00〜16:00（12:30受付開始）</li>\n<li>会場：株式会社セキュアスカイ・テクノロジー 東京本社（都営新宿線「岩本町」駅　徒歩3分 / JR総武線快速「新日本橋」駅　徒歩7分 / JR・銀座線「神田」駅　徒歩7分 / 東京メトロ日比谷線「小伝馬町」駅　徒歩7分）</li>\n<li>定員：20名（LT枠3名・一般参加17名）</li>\n<li>参加費：無料</li>\n<li>飲食：持ち込みOK（匂いの強いものはご遠慮ください）</li>\n<li>設備：書籍、Wi-Fi、電源、プロジェクタあり（HDMI / Type-C対応）</li>\n</ul>\n<h2>タイムテーブル（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">開始・自己紹介 ＋ やること宣言</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10</td>\n<td style=\"text-align: left;\">もくもくタイム（勉強・読書など）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:40</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45</td>\n<td style=\"text-align: left;\">スポンサー紹介タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:50</td>\n<td style=\"text-align: left;\">LT（1人5分程度）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:20</td>\n<td style=\"text-align: left;\">もくもくタイムでやったこと発表（口頭）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:30</td>\n<td style=\"text-align: left;\">交流タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50</td>\n<td style=\"text-align: left;\">片付け</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00</td>\n<td style=\"text-align: left;\">終了</td>\n</tr>\n</tbody>\n</table>\n<h2>もくもくタイムについて</h2>\n<p>セキュリティに少しでも関係あればOKです！\n（例：読書 / 資格勉強 / 技術記事執筆 / 常設CTFをやる / 環境構築をやる など）</p>\n<p>何をやればいいかわからない場合は、その場で相談もOKです！</p>\n<h2>LTについて</h2>\n<p>「AIとセキュリティ」をテーマに、学習法や事例・こんなことやってみたなどシェアいただけると嬉しいです！</p>\n<p>スライドなし・軽い共有でも大歓迎です！</p>\n<h2>Q&amp;A</h2>\n<ul>\n<li>Q. セキュリティが全くわからない非エンジニアでも参加していいですか？</li>\n<li>A. 大歓迎です！基礎からゆるく学べる場を目指しています</li>\n<li>Q. よわよわ（初心者）じゃない中上級者でも参加していい？</li>\n<li>A. ぜひどうぞ！LTや質問対応などで、場を一緒に盛り上げていただけると嬉しいです！</li>\n</ul>\n<h2>会場スポンサー</h2>\n<p><a href=\"https://www.securesky-tech.com/\" rel=\"nofollow\">株式会社セキュアスカイ・テクノロジー さま</a></p>\n<h2>注意事項</h2>\n<p>ハラスメント行為は禁止です。\n技術レベルでのマウントなどはご遠慮ください。</p>\n<p>違反があった場合は運営が対応します。</p>\n<h2>お願い</h2>\n<p>少人数開催のため、満席の場合はご了承ください。</p>\n<p>また、参加できなくなった場合はお早めにキャンセルをお願いします。</p>\n<p><strong>ゆるく、楽しく、一緒に学びましょう〜🐣</strong></p>",
+      "url": "https://yowayowasec.connpass.com/event/400394/",
+      "image_url": null,
+      "hash_tag": "yowasec",
+      "started_at": "2026-08-23T13:00:00+09:00",
+      "ended_at": "2026-08-23T16:00:00+09:00",
+      "published_at": "2026-07-16T19:52:28+09:00",
+      "limit": 21,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17633,
+        "subdomain": "yowayowasec",
+        "title": "よわよわセキュリティ勉強会",
+        "url": "https://yowayowasec.connpass.com/"
+      },
+      "address": "東京都千代田区岩本町2-2-4 (PMO神田岩本町II 10F)",
+      "place": "株式会社セキュアスカイ・テクノロジー 東京本社",
+      "lat": "35.692967500000",
+      "lon": "139.775314900000",
+      "owner_id": 224259,
+      "owner_nickname": "akihanari",
+      "owner_display_name": "choco_py3",
+      "accepted": 20,
+      "waiting": 3,
+      "updated_at": "2026-07-31T11:57:33+09:00"
+    },
+    {
       "id": 400417,
       "title": "ディストリビューション開発もくもく会 2026年8月",
       "catch": "",
@@ -341,7 +341,7 @@
       "owner_nickname": "mumimumi2000",
       "owner_display_name": "mumimumi",
       "accepted": 40,
-      "waiting": 1,
+      "waiting": 0,
       "updated_at": "2026-08-09T20:48:36+09:00"
     },
     {
@@ -560,6 +560,37 @@
       "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-08-21T15:57:46+09:00"
+    },
+    {
+      "id": 401058,
+      "title": "第114回CoderDojoさいたま",
+      "catch": "小学生・中学生向けプログラミングクラブです。さいたま市の周辺からも参加もお待ちしてます。",
+      "description": "<h1>第114回CoderDojoさいたまのイベント詳細情報</h1>\n<p>CoderDojo さいたまは主に埼玉県さいたま市地域及び隣接する地域の小学生・中学生を対象としたプログラミングクラブです。<br>\nこちらをお読みになり、CoderDojoの理念にご理解ください。<br>\n小学生・中学生向けプログラミングクラブ「CoderDojoさいたま」について<br>\n<a href=\"http://coderdojo-saitama.com/about/&lt;br>\" rel=\"nofollow\">http://coderdojo-saitama.com/about/<br></a></p>\n<h2>開催日時</h2>\n<p>2026年8月23日（日）14:00～16:00<br>\n（13:45　受付開始）<br></p>\n<h2>定員</h2>\n<p>16名(プログラミング初心者、初参加者、リピーター含む)</p>\n<h2>参加方法</h2>\n<p>こちらのイベント管理ツール<a href=\"https://coderdojo-saitama.connpass.com/\" rel=\"nofollow\">connpass</a>よりお申込みください。<br></p>\n<ul>\n<li>申し込み時、事前アンケートにお答えください。このアンケートで取得した個人情報はDojo開催時のメンター調整など運営にのみ使用します。Dojo終了後は破棄します。</li>\n<li>事前アンケートの「メールアドレス」は保護者の方の情報をご記入ください。</li>\n<li>「住所」は市町村までで結構です。</li>\n</ul>\n<h2>参加資格</h2>\n<p>対象：パソコンへの文字入力とマウス操作が可能な小学生と中学生<br>\niPadなどのタブレットを使用する場合はタップやスワイプ、フリック操作ができること。<br></p>\n<ul>\n<li>小学生以下のお子さんは、保護者の送迎が必要です（中学生以上はお一人でもご参加できます）</li>\n<li>iPadではScratch3.0、ScratchJr などがご利用できます。</li>\n<li>Scratchでプログラミング希望の場合はパソコンをお持ちください。CoderDojoさいたまではパソコンの貸し出しは行っておりません。</li>\n</ul>\n<h2>参加料について</h2>\n<p>無料</p>\n<h2>会場について</h2>\n<p>JR大宮駅東口徒歩１分<br>\n貸会議室6F<br>\n<a href=\"https://office6f.com/\" rel=\"nofollow\">https://office6f.com/</a></p>\n<h2>持ち物について</h2>\n<ul>\n<li>無線LAN接続可能なノートパソコン、電源ケーブル、マウスが必要です。</li>\n<li>タブレットでプログラミングしたいという場合（ScratchJrなど）やRaspbery-Piで動かしたい、LEGO Mindstormでロボットプログラミングをしたい場合など必要な機材を各自お持ちください。</li>\n<li>CoderDojo さいたまではmicro:bit、IchigoJamの貸し出し可能です。ご希望の方は当日お申し出ください。</li>\n<li>CoderDojo さいたまではパソコンの貸出は行っておりません。</li>\n</ul>\n<h2>当日のスケジュール</h2>\n<p>13:00～13:45<br>\nメンター集合ののち自己紹介、連絡事項、情報共有<br>\n13:45<br>\nニンジャ（参加者）受付開始<br>\n14:00～16:00<br>\n・Dojoの説明<br>\n・自己紹介<br>\n・ワークショップ<br>\n16:00<br>\n現状回復、メンター振り返り<br></p>\n<h2>寄付のお願いについて</h2>\n<p><strong>当面、寄付はいただきません。</strong><br>\nこれまで保護者の皆様からの寄付を募ってまいりましたが、これまでの寄付金から当面の運営費を賄えることから頂かないこととしました。再びお願いする必要があるときに、あらためてお知らせします。</p>\n<h2>メンターってどんな人？</h2>\n<p>メンターは、疑問点を一緒に解決したり、プログラミングによるものづくりの進め方などをアドバイスしてくれるボランティアの人たちです。<br>\nプログラマやデザイナー、エンジニアなど、ソフトやハードを作ることを専門にしている人達、子どものコンピュータ教育に携わる人達などで構成されています。<br>\nメンターをやってみたいという方（参加されるお子さんの保護者でもOKです！）は、こちらからお気軽にお問い合わせください！<br></p>\n<h2>免責事項</h2>\n<p>CoderDojoさいたまの活動参加中、行き帰りなどで発生したトラブルや損失、損害、傷病、事故に対して、CoderDojoさいたまは一切責任を負いません。これらに対して自己責任においてご参加くださるようお願いいたします。</p>",
+      "url": "https://coderdojo-saitama.connpass.com/event/401058/",
+      "image_url": "https://media.connpass.com/thumbs/0c/97/0c978c0b6b6d43b12ffc6f4b09154499.png",
+      "hash_tag": "CoderDojo",
+      "started_at": "2026-08-23T14:00:00+09:00",
+      "ended_at": "2026-08-23T16:00:00+09:00",
+      "published_at": "2026-07-18T11:24:56+09:00",
+      "limit": 16,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13974,
+        "subdomain": "coderdojo-saitama",
+        "title": "CoderDojo さいたま",
+        "url": "https://coderdojo-saitama.connpass.com/"
+      },
+      "address": "埼玉県さいたま市大宮区宮町1-5 銀座ビル6階",
+      "place": "貸会議室６F",
+      "lat": "35.907929500000",
+      "lon": "139.624792000000",
+      "owner_id": 10900,
+      "owner_nickname": "okajima_kazuhiro",
+      "owner_display_name": "okajima_kazuhiro",
+      "accepted": 5,
+      "waiting": 0,
+      "updated_at": "2026-07-18T11:24:56+09:00"
     }
   ]
 }
