@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-22T15:25:38.397493+09:00",
+  "fetched_at": "2026-08-22T16:24:50.563420+09:00",
   "date": "20260822",
   "count": 38,
   "events": [
@@ -26,7 +26,7 @@
       "owner_nickname": "t-kouchi",
       "owner_display_name": "t-kouchi",
       "accepted": 70,
-      "waiting": 2,
+      "waiting": 1,
       "updated_at": "2026-08-22T15:14:51+09:00"
     },
     {
@@ -321,7 +321,7 @@
       "published_at": "2026-07-24T11:15:44+09:00",
       "limit": 23,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16286,
         "subdomain": "engineers-afterwork",
@@ -440,7 +440,7 @@
       "published_at": "2026-07-21T12:01:39+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16152,
         "subdomain": "atsumaru-mokumoku",
@@ -1146,7 +1146,7 @@
         "url": "https://ocbyokohama.connpass.com/"
       },
       "address": "神奈川県横浜市中区寿町1-4",
-      "place": "神奈川県立かながわ労働プラザ（エルプラザ）4F第11会議室",
+      "place": "神奈川県立かながわ労働プラザ（エルプラザ）4F第4会議室",
       "lat": "35.440004600000",
       "lon": "139.640508800000",
       "owner_id": 17474,
