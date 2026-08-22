@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-22T18:19:21.550027+09:00",
+  "fetched_at": "2026-08-22T19:14:54.517133+09:00",
   "date": "20260822",
   "count": 38,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-11T21:55:51+09:00",
       "limit": 70,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都新宿区揚場町１-１１ 飯田橋中央ビル Ｂ１Ｆ",
       "place": "PRONTO　飯田橋店",
@@ -104,7 +104,7 @@
       "published_at": "2026-08-08T18:04:01+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13612,
         "subdomain": "akiba",
@@ -714,7 +714,7 @@
       "published_at": "2026-06-08T10:56:45+09:00",
       "limit": 20050,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2205,
         "subdomain": "dotnetlab",
@@ -864,7 +864,7 @@
       "published_at": "2026-07-29T15:06:14+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都千代田区神田和泉町１-６-１６ヤマトビル4階",
       "place": "イールドマーケティング本社",
