@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-23T18:20:01.362673+09:00",
+  "fetched_at": "2026-08-23T19:15:33.479743+09:00",
   "date": "20260823",
-  "count": 18,
+  "count": 19,
   "events": [
     {
       "id": 401958,
@@ -233,7 +233,7 @@
       "published_at": "2026-07-21T16:59:33+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17208,
         "subdomain": "yanagawa",
@@ -560,6 +560,37 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-08-21T15:57:46+09:00"
+    },
+    {
+      "id": 401058,
+      "title": "第114回CoderDojoさいたま",
+      "catch": "小学生・中学生向けプログラミングクラブです。さいたま市の周辺からも参加もお待ちしてます。",
+      "description": "<h1>第114回CoderDojoさいたまのイベント詳細情報</h1>\n<p>CoderDojo さいたまは主に埼玉県さいたま市地域及び隣接する地域の小学生・中学生を対象としたプログラミングクラブです。<br>\nこちらをお読みになり、CoderDojoの理念にご理解ください。<br>\n小学生・中学生向けプログラミングクラブ「CoderDojoさいたま」について<br>\n<a href=\"http://coderdojo-saitama.com/about/&lt;br>\" rel=\"nofollow\">http://coderdojo-saitama.com/about/<br></a></p>\n<h2>開催日時</h2>\n<p>2026年8月23日（日）14:00～16:00<br>\n（13:45　受付開始）<br></p>\n<h2>定員</h2>\n<p>16名(プログラミング初心者、初参加者、リピーター含む)</p>\n<h2>参加方法</h2>\n<p>こちらのイベント管理ツール<a href=\"https://coderdojo-saitama.connpass.com/\" rel=\"nofollow\">connpass</a>よりお申込みください。<br></p>\n<ul>\n<li>申し込み時、事前アンケートにお答えください。このアンケートで取得した個人情報はDojo開催時のメンター調整など運営にのみ使用します。Dojo終了後は破棄します。</li>\n<li>事前アンケートの「メールアドレス」は保護者の方の情報をご記入ください。</li>\n<li>「住所」は市町村までで結構です。</li>\n</ul>\n<h2>参加資格</h2>\n<p>対象：パソコンへの文字入力とマウス操作が可能な小学生と中学生<br>\niPadなどのタブレットを使用する場合はタップやスワイプ、フリック操作ができること。<br></p>\n<ul>\n<li>小学生以下のお子さんは、保護者の送迎が必要です（中学生以上はお一人でもご参加できます）</li>\n<li>iPadではScratch3.0、ScratchJr などがご利用できます。</li>\n<li>Scratchでプログラミング希望の場合はパソコンをお持ちください。CoderDojoさいたまではパソコンの貸し出しは行っておりません。</li>\n</ul>\n<h2>参加料について</h2>\n<p>無料</p>\n<h2>会場について</h2>\n<p>JR大宮駅東口徒歩１分<br>\n貸会議室6F<br>\n<a href=\"https://office6f.com/\" rel=\"nofollow\">https://office6f.com/</a></p>\n<h2>持ち物について</h2>\n<ul>\n<li>無線LAN接続可能なノートパソコン、電源ケーブル、マウスが必要です。</li>\n<li>タブレットでプログラミングしたいという場合（ScratchJrなど）やRaspbery-Piで動かしたい、LEGO Mindstormでロボットプログラミングをしたい場合など必要な機材を各自お持ちください。</li>\n<li>CoderDojo さいたまではmicro:bit、IchigoJamの貸し出し可能です。ご希望の方は当日お申し出ください。</li>\n<li>CoderDojo さいたまではパソコンの貸出は行っておりません。</li>\n</ul>\n<h2>当日のスケジュール</h2>\n<p>13:00～13:45<br>\nメンター集合ののち自己紹介、連絡事項、情報共有<br>\n13:45<br>\nニンジャ（参加者）受付開始<br>\n14:00～16:00<br>\n・Dojoの説明<br>\n・自己紹介<br>\n・ワークショップ<br>\n16:00<br>\n現状回復、メンター振り返り<br></p>\n<h2>寄付のお願いについて</h2>\n<p><strong>当面、寄付はいただきません。</strong><br>\nこれまで保護者の皆様からの寄付を募ってまいりましたが、これまでの寄付金から当面の運営費を賄えることから頂かないこととしました。再びお願いする必要があるときに、あらためてお知らせします。</p>\n<h2>メンターってどんな人？</h2>\n<p>メンターは、疑問点を一緒に解決したり、プログラミングによるものづくりの進め方などをアドバイスしてくれるボランティアの人たちです。<br>\nプログラマやデザイナー、エンジニアなど、ソフトやハードを作ることを専門にしている人達、子どものコンピュータ教育に携わる人達などで構成されています。<br>\nメンターをやってみたいという方（参加されるお子さんの保護者でもOKです！）は、こちらからお気軽にお問い合わせください！<br></p>\n<h2>免責事項</h2>\n<p>CoderDojoさいたまの活動参加中、行き帰りなどで発生したトラブルや損失、損害、傷病、事故に対して、CoderDojoさいたまは一切責任を負いません。これらに対して自己責任においてご参加くださるようお願いいたします。</p>",
+      "url": "https://coderdojo-saitama.connpass.com/event/401058/",
+      "image_url": "https://media.connpass.com/thumbs/0c/97/0c978c0b6b6d43b12ffc6f4b09154499.png",
+      "hash_tag": "CoderDojo",
+      "started_at": "2026-08-23T14:00:00+09:00",
+      "ended_at": "2026-08-23T16:00:00+09:00",
+      "published_at": "2026-07-18T11:24:56+09:00",
+      "limit": 16,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 13974,
+        "subdomain": "coderdojo-saitama",
+        "title": "CoderDojo さいたま",
+        "url": "https://coderdojo-saitama.connpass.com/"
+      },
+      "address": "埼玉県さいたま市大宮区宮町1-5 銀座ビル6階",
+      "place": "貸会議室６F",
+      "lat": "35.907929500000",
+      "lon": "139.624792000000",
+      "owner_id": 10900,
+      "owner_nickname": "okajima_kazuhiro",
+      "owner_display_name": "okajima_kazuhiro",
+      "accepted": 4,
+      "waiting": 0,
+      "updated_at": "2026-07-18T11:24:56+09:00"
     }
   ]
 }
