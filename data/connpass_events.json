@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-23T21:22:41.026245+09:00",
+  "fetched_at": "2026-08-23T22:26:03.109655+09:00",
   "date": "20260823",
-  "count": 19,
+  "count": 18,
   "events": [
     {
       "id": 401958,
@@ -126,37 +126,6 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-07-19T01:36:21+09:00"
-    },
-    {
-      "id": 401484,
-      "title": "はじめてのプリント基板作成ワークショップ",
-      "catch": "初心者向けのPCB基板作成ワークショップです",
-      "description": "<h2>はじめに</h2>\n<p>「基板って作れるって聞いたけど、何にもわからない」「とりあえずKiCadインストールしてみたけど、何していいかわからない」 「そもそも電子回路の描き方がわからない」こんな声をよく聞きます。</p>\n<p>こちらのワークショップでは、初心者の方でも電子回路図の作成から基板の設計、そして発注までを一通り体験していただけます。ハンズオンではまずKiCadをPCにインストールし、初期セットアップを行ってから電子オルゴールをテーマとして電子回路を描き、片面基板を設計します。</p>\n<p>さらに、電子サイコロをテーマとして表面実装用フルカラーLEDの電子回路を描き、両面基板を設計します。最後には基板作成サービスでの基板注文までをカバーします。</p>\n<p>ご希望の方には、電子オルゴール基板をプレゼントいたします。また、その基板に部品のはんだ付けと、動作チェックまで行っていただけます。</p>\n<p>PCはお貸し出ししますので、お持ちいただくものは不要です。</p>\n<p><img alt=\"完成版画像\" src=\"https://imgur.com/P1qiiNX.png\"></p>\n<p><img alt=\"完成版画像\" src=\"https://imgur.com/XeukKRR.png\"></p>\n<ul>\n<li>ご希望の方には、電子オルゴール基板をプレゼントいたします！　\n<br><br></li>\n</ul>\n<h2>対象となる方</h2>\n<ul>\n<li>基板（PCB）設計に興味のある方</li>\n<li>KiCadに興味があり、使ってみたい方</li>\n<li>IoTの迅速プロトタイピングに興味のある方\n<br><br></li>\n</ul>\n<h2>イベント内容</h2>\n<p>レクチャーとハンズオンの2部構成です。</p>\n<h3>レクチャー</h3>\n<ul>\n<li>電子パーツ、電子回路図、基板設計、KiCad、基板作成サービスの理解を深めます。</li>\n<li>KiCadを使った基板作成の手順を理解します。</li>\n</ul>\n<p><img alt=\"レクチャー会場画像\" src=\"https://imgur.com/tGfTaTo.png\"></p>\n<h3>ハンズオン</h3>\n<ul>\n<li>前半は、電子オルゴールを題材に、電子回路図をKiCadで設計します。</li>\n<li>できた電子回路図からプリント基板を設計します。</li>\n<li>後半では、電子サイコロを題材に、電子回路図をKiCadで設計します。</li>\n<li>できた電子回路図からプリント基板を設計します。</li>\n<li>最後に、ご希望の方は基板の発注を行います（別途1,000円ほどかかります）。</li>\n</ul>\n<p><img alt=\"ハンズオン画像\" src=\"https://imgur.com/31szEY4.png\"></p>\n<p><br><br></p>\n<h2>獲得できるスキル</h2>\n<ol>\n<li>電子回路の知識</li>\n<li>KiCadによる電子回路図の作図とプリント基板の設計</li>\n<li>プリント基板の発注方法\n<img alt=\"完成版画像\" src=\"https://imgur.com/iHf6mcy.png\">\n<br><br></li>\n</ol>\n<h2>持ち物</h2>\n<ul>\n<li>ノートPC（PCはお貸し出し可能ですが、ご自身のPCを使用されたい場合、Kicad8をインストール済みのものをお持ちください。）</li>\n</ul>\n<p><br><br></p>\n<h2>オフライン開催場所</h2>\n<p><a href=\"https://hackerspace.me/\" rel=\"nofollow\">秋葉原ハッカースペース</a><br>\n詳細はお申し込み確定後ご連絡いたしますが、JR秋葉原駅から徒歩5分の工作教室です。</p>\n<p><img alt=\"Akihabaraハッカースペース画像\" src=\"https://imgur.com/f2jAGpy.png\"></p>\n<p><br><br></p>\n<h2>タイムスケジュール</h2>\n<p>順番と内容は変わる可能性があります。</p>\n<table>\n <thead>\n  <tr>\n   <th>時間</th>\n   <th>内容</th>\n   <th>備考</th>\n  </tr>\n </thead>\n <tbody>\n  <tr>\n   <td>13:00</td>\n   <td>開場</td>\n   <td></td>\n  </tr>\n  <tr>\n   <td>13:10 - 13:15</td>\n   <td>オープニング（完成版の紹介）</td>\n   <td></td>\n  </tr>\n  <tr>\n   <td>13:15 - 13:20</td>\n   <td>自己紹介</td>\n   <td></td>\n  </tr>\n  <tr>\n   <td>13:20 - 13:50</td>\n   <td>レクチャー</td>\n   <td></td>\n  </tr>\n  <tr>\n   <td>13:50 - 14:00</td>\n   <td>休憩</td>\n   <td></td>\n  </tr>\n  <tr>\n   <td>14:00 - 17:30</td>\n   <td>ハンズオン</td>\n   <td></td>\n  </tr>\n </tbody>\n</table>\n<p><br><br></p>\n<h2>主催</h2>\n<h3>IoTラボ</h3>\n<p>「IoTを始めたいけど何からやればいいの？」「電子工作、プログラミング、クラウド、全部分からないとIoTできない！」そんな声にお答えしてレクチャー・ハンズオンの2部形式で、誰でもIoTを始められるようイベントを行っています。</p>\n<p>ご要望に応じて法人様への出張レクチャー・ハンズオンも可能です。</p>\n<h2>IoTラボのワークショップ一覧</h2>\n<p>ワークショップにはジャンルと番号（やさしい順に100番台から）がついています。<br>\nリクエスト開催も可能です。ぜひお問い合わせ下さい。</p>\n<p><img alt=\"画像\" src=\"https://iotlab.me/img/iotlab-course-map.png\">\n<a href=\"https://iotlab.me/img/iotlab-course-map.png\" rel=\"nofollow\">拡大画像</a>\n<br><br></p>\n<h3>ジャンル</h3>\n<p>IoT（電子工作、クラウド、プログラミングすべて含む）<br>\nCS（クラウドとプログラミング）<br>\nEECS（電子工作とプログラミング）<br>\nME（工作）<br>\nAI（機械学習）<br>\n<br></p>\n<h3>ワークショップ</h3>\n<p><strong>電子工作系</strong><br>\n<a href=\"https://courses.iotlab.me/courses/electronics\" rel=\"nofollow\"><strong>EECS 101</strong>　はじめての電子工作ワークショップ（パーツショップでは聞けない基礎の基礎）</a><br>\n<a href=\"https://courses.iotlab.me/courses/rpi-pico\" rel=\"nofollow\"><strong>EECS 103</strong>　電子工作ワークショップ(Raspberry Pi Pico編）</a><br>\n<a href=\"https://courses.iotlab.me/courses/arduino\" rel=\"nofollow\"><strong>EECS 104</strong>　電子工作ワークショップ(Arduino編）</a><br></p>\n<p><strong>ラズパイ</strong><br>\n<a href=\"https://courses.iotlab.me/courses/rpi\" rel=\"nofollow\"><strong>EECS 102</strong>　はじめてのラズパイ入門ワークショップ</a><br>\n<a href=\"https://courses.iotlab.me/courses/rpi-pico-w\" rel=\"nofollow\"><strong>IoT 102</strong>　はじめてのラズパイPico W入門ワークショップ</a><br>\n<a href=\"https://courses.iotlab.me/courses/rpi-pico\" rel=\"nofollow\"><strong>EECS 103</strong>　電子工作ワークショップ(Raspberry Pi Pico編）</a><br>\n<a href=\"https://courses.iotlab.me/courses/rpi-awsiot\" rel=\"nofollow\"><strong>IoT 202</strong>　AWS IoT入門ワークショップ（ラズパイとAWS IoTでデータの送受信をしよう）</a><br>\n<a href=\"https://courses.iotlab.me/courses/bake-raspberry-pie\" rel=\"nofollow\"><strong>EECS 301</strong> 　ラズパイ(Raspberry Pi)で ラズベリーパイ(Raspberry Pie)を焼こう）</a><br></p>\n<p><strong>IoT</strong><br>\n<a href=\"https://courses.iotlab.me/courses/iot-lecture-1\" rel=\"nofollow\"><strong>IoT 101</strong>　IoT初級レクチャー</a><br>\n<a href=\"https://courses.iotlab.me/courses/rpi-pico-w\" rel=\"nofollow\"><strong>IoT 102</strong>　はじめてのラズパイPico W入門ワークショップ</a><br>\n<a href=\"https://courses.iotlab.me/courses/esp32-awsiot\" rel=\"nofollow\"><strong>IoT 201</strong>　AWS IoT入門ワークショップ（センサーデータをAWSに送信しよう）</a><br>\n<a href=\"https://courses.iotlab.me/courses/rpi-awsiot\" rel=\"nofollow\"><strong>IoT 202</strong>　AWS IoT入門ワークショップ（ラズパイとAWS IoTでデータの送受信をしよう）</a><br>\n<a href=\"https://courses.iotlab.me/courses/iot-security\" rel=\"nofollow\"><strong>IoT 302</strong>　スマートホームワークショップ（IoT防犯システムを作ろう）</a><br>\n<a href=\"https://courses.iotlab.me/courses/onair\" rel=\"nofollow\"><strong>IoT 307</strong>　スマート機器ワークショップ（Web会議向けON AIRサインを作ろう)</a><br>\n<a href=\"https://courses.iotlab.me/courses/aws-iot-notification\" rel=\"nofollow\"><strong>IoT 501</strong>　AWS IoT中級ワークショップ（AWSで通知システムを構築しよう）</a><br>\n<a href=\"https://courses.iotlab.me/courses/awsiot-watchdog\" rel=\"nofollow\"><strong>IoT 502</strong>　AWS IoT中級ワークショップ （AWSで死活監視システムを構築しよう）</a><br>\n<a href=\"https://courses.iotlab.me/courses/alexa-remote\" rel=\"nofollow\"><strong>IoT 601</strong>　スマートホームワークショップ(Alexa対応赤外線リモコンを作ろう)</a><br></p>\n<p><strong>3Dプリンター</strong><br>\n<a href=\"https://courses.iotlab.me/courses/3d-printer\" rel=\"nofollow\"><strong>ME 101</strong>　はじめての3Dプリンターワークショップ（3D CADソフトで3Dモデリングしてその場で3Dプリントしよう）</a><br></p>\n<p><strong>AI</strong><br>\n<a href=\"https://courses.iotlab.me/courses/tinyml\" rel=\"nofollow\"><strong>AI 101</strong>　AIワークショップ（ねこ検出器をtinyMLで作ろう）</a><br></p>\n<p><strong>家電改造</strong><br>\n<a href=\"https://courses.iotlab.me/courses/bake-raspberry-pie\" rel=\"nofollow\"><strong>EECS 301</strong> 　ラズパイ(Raspberry Pi)で ラズベリーパイ(Raspberry Pie)を焼こう）</a><br>\n<a href=\"https://courses.iotlab.me/courses/alexa-fan\" rel=\"nofollow\"><strong>IoT 701</strong> 　家電改造IoTハンズオン（Alexa対応扇風機を自作しよう）</a><br></p>\n<p>過去のワークショップ<br>\n<strong>CS 201</strong>　Alexaスキルハンズオン(Amazon Echo実機を使ったスキル開発）<br>\n<strong>IoT 203</strong>　みんなのIoTハンズオン（クラウド扇風機を作ろう）<br>\n<strong>IoT 301</strong>　スマートホームワークショップ（WiFiスマートプラグを作ろう）<br>\n<strong>IoT 303</strong>　スマートホームワークショップ（IoT火災検知システムを作ろう）<br>\n<strong>IoT 304</strong>　スマートホームワークショップ（AWS対応赤外線リモコンを作ろう）<br>\n<strong>IoT 305</strong>　スマートホームワークショップ（ESP32とAWSでスマートロックを自作しよう）<br>\n<strong>IoT 306</strong>　スマート機器ハンズオン（冷蔵庫プラグ抜けアラームを作ろう）<br>\n<strong>IoT 401</strong>　Alexaスキルハンズオン（Echo実機からマイコンESP32を操作しよう）<br>\n<strong>IoT 402</strong>　Alexaスキルハンズオン（Alexa対応ハロウィーンランタンを作ろう）<br>\n<strong>IoT 403</strong>　Alexaスキルハンズオン（Alexa対応大気チェッカーを作ろう）<br>\n<strong>EECS 501</strong>　みんなのArduinoハンズオン（Arduinoで低温調理器を作ろう）<br>\n<strong>CS 501</strong>　M5Stack Core2 x AWS IoT EduKitもくもく会<br>\n<strong>IoT 602</strong>　AWS Amplifyハンズオン（認証付きWebアプリからMQTTでESP32を操作しよう）<br>\n<strong>IoT 901</strong>　Alexa対応電子レンジを作る会【ハッカソン】<br>\n<strong>CS 902</strong>　DeepRacerハンズオン＆走行会<br>\n<br><br></p>\n<h2>お問い合わせ先</h2>\n<p>IoTラボ（株式会社アカデミクス）<br>\nsupport@iotlab.me<br>\n050-7128-6590</p>",
-      "url": "https://iotlab.connpass.com/event/401484/",
-      "image_url": "https://media.connpass.com/thumbs/41/f5/41f5d5381599e7501aa976c2dda72d1f.png",
-      "hash_tag": "IoTラボ",
-      "started_at": "2026-08-23T13:00:00+09:00",
-      "ended_at": "2026-08-23T17:30:00+09:00",
-      "published_at": "2026-07-22T13:00:00+09:00",
-      "limit": 3,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 4032,
-        "subdomain": "iotlab",
-        "title": "IoTラボ",
-        "url": "https://iotlab.connpass.com/"
-      },
-      "address": "秋葉原駅(昭和通り口)徒歩5分(住所は別途ご送付）",
-      "place": "秋葉原ハッカースペース",
-      "lat": "35.698383000000",
-      "lon": "139.773071700000",
-      "owner_id": 468635,
-      "owner_nickname": "iotlab",
-      "owner_display_name": "IoTラボ",
-      "accepted": 0,
-      "waiting": 0,
-      "updated_at": "2026-08-07T18:58:43+09:00"
     },
     {
       "id": 401781,
@@ -543,7 +512,7 @@
       "published_at": "2026-08-21T15:57:46+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16988,
         "subdomain": "mokumokuios",
