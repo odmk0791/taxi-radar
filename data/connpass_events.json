@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-23T19:15:33.479743+09:00",
+  "fetched_at": "2026-08-23T20:13:50.588044+09:00",
   "date": "20260823",
   "count": 19,
   "events": [
@@ -326,7 +326,7 @@
       "published_at": "2026-08-09T12:01:47+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
