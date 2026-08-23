@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-23T13:28:50.296871+09:00",
+  "fetched_at": "2026-08-23T14:21:34.637751+09:00",
   "date": "20260823",
   "count": 19,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-29T12:00:58+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15409,
         "subdomain": "coderdojo-hino",
@@ -47,7 +47,7 @@
       "published_at": "2026-06-27T18:54:46+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16222,
         "subdomain": "mokumoku-daredemo",
@@ -574,7 +574,7 @@
       "published_at": "2026-07-18T11:24:56+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13974,
         "subdomain": "coderdojo-saitama",
@@ -588,7 +588,7 @@
       "owner_id": 10900,
       "owner_nickname": "okajima_kazuhiro",
       "owner_display_name": "okajima_kazuhiro",
-      "accepted": 5,
+      "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-07-18T11:24:56+09:00"
     }
