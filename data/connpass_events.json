@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-23T16:26:31.451417+09:00",
+  "fetched_at": "2026-08-23T17:20:25.509221+09:00",
   "date": "20260823",
   "count": 19,
   "events": [
@@ -78,7 +78,7 @@
       "published_at": "2026-08-15T17:42:08+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 18026,
         "subdomain": "shenicest",
@@ -109,7 +109,7 @@
       "published_at": "2026-07-16T17:41:43+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 499,
         "subdomain": "cocoa-kanto",
@@ -233,7 +233,7 @@
       "published_at": "2026-08-15T17:02:35+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
