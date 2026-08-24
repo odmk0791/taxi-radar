@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-24T09:49:36.486969+09:00",
+  "fetched_at": "2026-08-24T11:18:28.152538+09:00",
   "date": "20260824",
   "count": 5,
   "events": [
@@ -33,37 +33,6 @@
       "accepted": 25,
       "waiting": 0,
       "updated_at": "2026-08-21T14:38:50+09:00"
-    },
-    {
-      "id": 403483,
-      "title": "#color_study",
-      "catch": "Web における「色」について真剣に議論する",
-      "description": "<h1>#color_study</h1>\n<p>Web における「色」について真剣に議論する。</p>\n<h2>Time Table</h2>\n<ul>\n<li>@araya: 「光・受容・境界」</li>\n<li>@jxck: 「色に関する仕様、なんか気づいたら色々増えてね？」</li>\n</ul>\n<h2>Other</h2>\n<ul>\n<li>懇親会なし</li>\n<li>LT なし</li>\n<li>配信なし</li>\n</ul>",
-      "url": "https://web-study.connpass.com/event/403483/",
-      "image_url": "https://media.connpass.com/thumbs/68/63/68634d07f71f40e74c1a9725a96cbdf4.png",
-      "hash_tag": "color_study",
-      "started_at": "2026-08-24T19:00:00+09:00",
-      "ended_at": "2026-08-24T21:00:00+09:00",
-      "published_at": "2026-08-11T00:27:38+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 4365,
-        "subdomain": "web-study",
-        "title": "web-study",
-        "url": "https://web-study.connpass.com/"
-      },
-      "address": "東京都中央区日本橋2-7-1 東京日本橋タワー 27階",
-      "place": "サイボウズ",
-      "lat": "35.681861300000",
-      "lon": "139.774233700000",
-      "owner_id": 1118,
-      "owner_nickname": "Jxck",
-      "owner_display_name": "Jxck",
-      "accepted": 22,
-      "waiting": 0,
-      "updated_at": "2026-08-15T01:01:48+09:00"
     },
     {
       "id": 402006,
@@ -100,7 +69,7 @@
       "id": 402171,
       "title": "Cross Data Platforms Meetup #3",
       "catch": "dbtと愉快な仲間たち",
-      "description": "<h1>Cross Data Platforms Meetup</h1>\n<p>Cross Data Platforms Meetupは様々なサービスが日々生まれているデータ分析プラットフォームにおいて、特定のサービスによらない事例の共有や議論の場を提供する会です。</p>\n<h1>会のコンセプト</h1>\n<p>上記の事情から、会のコンセプトは「みんなやさしく」です。\n特定のサービスを過度に持ち上げたり貶めたりする議論はこのグループにはふさわしくありません。</p>\n<h1>第3回のテーマはdbtとの併用</h1>\n<p>現代のデータ活用においては大量に収集したデータを人間やAIが使う前に中間集計をするのが当たり前になっており、dbtはその用途で非常に広く使われているオープンソースのツールです。データ基盤構築においてdbtをどのように組み込むかは多くの人々の関心があることでしょう。</p>\n<p>Cross Data Platforms Meetupの第3回となる今回は、dbtをテーマとし、他のサービスと組み合わせたデータプラットフォーム構築やデータ活用について大いに議論していきましょう。</p>\n<h1>こんな方にオススメ</h1>\n<ul>\n<li>導入検討者: データ活用において中間集計を検討しており、そのためのツールを検討されている方</li>\n<li>現状改善志向者: 既存のデータ基盤におけるdbtの活用をより洗練していきたい方</li>\n<li>設計・改善担当者: データの前処理等のプリパレーション領域についてディスカッションしたい方</li>\n</ul>\n<h1>勉強会の主な目的</h1>\n<p>連携・統合のベストプラクティス共有: 複数サービス間の連携や統合に関する事例や成功例の共有\n運用課題のディスカッション題材提供: データガバナンス、セキュリティ、コスト最適化などの実運用面の課題について意見交換\nネットワーキング促進: 参加者同士の情報交換や連携を深め、継続的な支援体制を構築する</p>\n<h1>非推奨行為</h1>\n<ul>\n<li>優劣比較の強調: 各サービスの優劣をあえて比較し、対立を煽ること（ただし、優劣をつけないように同じ機能をさわってみた系はOK）</li>\n<li>宣伝行為: 特定製品やベンダーのマーケティング活動の場とすること</li>\n<li>否定的な議論: 既存プラットフォームの短所のみを強調し、建設的な意見交換を阻害すること</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: center;\">タイトル</th>\n<th style=\"text-align: right;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: center;\">開場</td>\n<td style=\"text-align: right;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: center;\">オープニング</td>\n<td style=\"text-align: right;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10-19:25</td>\n<td style=\"text-align: center;\">Open data infrastructureの何か（仮）</td>\n<td style=\"text-align: right;\">みしゅめ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:25-19:40</td>\n<td style=\"text-align: center;\">Fabric × dbt（仮）</td>\n<td style=\"text-align: right;\">永田 亮磨</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40-19:55</td>\n<td style=\"text-align: center;\">スポンサー様より宣伝</td>\n<td style=\"text-align: right;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55-20:10</td>\n<td style=\"text-align: center;\">社内でのdbtのCI/CDとdatabricksでの定期実行（仮）　</td>\n<td style=\"text-align: right;\">ちか</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10-20:25</td>\n<td style=\"text-align: center;\">dbt と Snowflake と tag</td>\n<td style=\"text-align: right;\">けびん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:25-20:55</td>\n<td style=\"text-align: center;\">懇親会・ディスカッション</td>\n<td style=\"text-align: right;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00</td>\n<td style=\"text-align: center;\">撤収</td>\n<td style=\"text-align: right;\"></td>\n</tr>\n</tbody>\n</table>\n<h1>スピーカー</h1>\n<h2>けびん</h2>\n<div align=\"center\">\n<img src=\"https://pbs.twimg.com/profile_images/1700751330275713024/tkG3r_hM_400x400.jpg\" width=\"300\">\n</div>\n\n<p>タイトル： dbt と Snowflake と tag \n所属：株式会社Finatextホールディングス VP of Data &amp; AI  </p>\n<h2>永田 亮磨</h2>\n<div align=\"center\">\n<img src=\"https://pbs.twimg.com/profile_images/1114534508093526016/321M8QtM_400x400.jpg\" width=\"300\">\n</div>\n\n<p>タイトル： Comming Soon<br>\n所属：株式会社ジール データ &amp; AI CoE本部 テクノロジーエキスパート部 フェロー | Microsoft MVP for Data Platform  </p>\n<h2>ちか</h2>\n<div align=\"center\">\n<img src=\"https://media.connpass.com/thumbs/ad/f7/adf7d1a59515188e55e0ca6ba09204e2.png \" width=\"300\">\n</div>\n\n<p>タイトル： Comming Soon<br>\n所属：株式会社GENDA データマネジメント部  </p>\n<h2>myshmeh / みしゅめ</h2>\n<div align=\"center\">\n<img src=\"https://pbs.twimg.com/profile_images/1305154094093402114/hHidBRVj_400x400.jpg\" width=\"300\">\n</div>\n\n<p>タイトル： Comming Soon<br>\n所属：dbt Labs, Partner Solutions Architect  </p>\n<h1>会場の住所</h1>\n<p>Findy株式会社オフィス <br>\n〒141-0032<br>\n東京都品川区大崎１丁目２−２ アートヴィレッジ大崎セントラルタワー5階  </p>\n<h1>会場の諸注意</h1>\n<p>懇親会では軽食をご用意しております。</p>\n<h1>食事など</h1>\n<p>Comming Soon  </p>\n<h1>主催者 / 管理者</h1>\n<p><strong>こみぃ</strong></p>\n<p><img alt=\"こみぃ画像\" src=\"https://media.connpass.com/thumbs/87/a6/87a657625698d2b049dad5b43d7a56f5.png\"></p>\n<p>SNS：<a href=\"https://x.com/kommy_jp\" rel=\"nofollow\">@kommy_jp</a></p>\n<p><strong>manabian</strong></p>\n<p><img alt=\"manabian画像\" src=\"https://media.connpass.com/thumbs/ce/9e/ce9e55e55d552f025afea3df2e7cf818.png\"></p>\n<p>SNS：<a href=\"https://x.com/manabian\" rel=\"nofollow\">@manabian</a></p>\n<p><strong>すずき</strong></p>\n<p><img alt=\"すずき画像\" src=\"https://media.connpass.com/thumbs/d1/46/d1462282b936afc963c222b0eb33f9ef.png\"></p>\n<p>SNS：<a href=\"https://x.com/suzupappa\" rel=\"nofollow\">@suzupappa</a></p>\n<p><strong>Yuya Matsubara</strong></p>\n<p><img alt=\"Yuya Matsubara画像\" src=\"https://media.connpass.com/thumbs/de/5d/de5dc25c6c7918ae284f645d57286cca.png\"></p>\n<h1>スポンサー様</h1>\n<p>Clickhouse様</p>\n<div align=\"center\">\n<img src=\"https://i.imgur.com/5aWQojn.png\" width='400\"'>\n</div>",
+      "description": "<h1>Cross Data Platforms Meetup</h1>\n<p>Cross Data Platforms Meetupは様々なサービスが日々生まれているデータ分析プラットフォームにおいて、特定のサービスによらない事例の共有や議論の場を提供する会です。</p>\n<h1>会のコンセプト</h1>\n<p>上記の事情から、会のコンセプトは「みんなやさしく」です。\n特定のサービスを過度に持ち上げたり貶めたりする議論はこのグループにはふさわしくありません。</p>\n<h1>第3回のテーマはdbtとの併用</h1>\n<p>現代のデータ活用においては大量に収集したデータを人間やAIが使う前に中間集計をするのが当たり前になっており、dbtはその用途で非常に広く使われているオープンソースのツールです。データ基盤構築においてdbtをどのように組み込むかは多くの人々の関心があることでしょう。</p>\n<p>Cross Data Platforms Meetupの第3回となる今回は、dbtをテーマとし、他のサービスと組み合わせたデータプラットフォーム構築やデータ活用について大いに議論していきましょう。</p>\n<h1>こんな方にオススメ</h1>\n<ul>\n<li>導入検討者: データ活用において中間集計を検討しており、そのためのツールを検討されている方</li>\n<li>現状改善志向者: 既存のデータ基盤におけるdbtの活用をより洗練していきたい方</li>\n<li>設計・改善担当者: データの前処理等のプリパレーション領域についてディスカッションしたい方</li>\n</ul>\n<h1>勉強会の主な目的</h1>\n<p>連携・統合のベストプラクティス共有: 複数サービス間の連携や統合に関する事例や成功例の共有\n運用課題のディスカッション題材提供: データガバナンス、セキュリティ、コスト最適化などの実運用面の課題について意見交換\nネットワーキング促進: 参加者同士の情報交換や連携を深め、継続的な支援体制を構築する</p>\n<h1>非推奨行為</h1>\n<ul>\n<li>優劣比較の強調: 各サービスの優劣をあえて比較し、対立を煽ること（ただし、優劣をつけないように同じ機能をさわってみた系はOK）</li>\n<li>宣伝行為: 特定製品やベンダーのマーケティング活動の場とすること</li>\n<li>否定的な議論: 既存プラットフォームの短所のみを強調し、建設的な意見交換を阻害すること</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: center;\">タイトル</th>\n<th style=\"text-align: center;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">18:30</td>\n<td style=\"text-align: center;\">開場</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">オープニング</td>\n<td style=\"text-align: center;\">こみぃ</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:10-19:25</td>\n<td style=\"text-align: center;\">なぜdbtで中間集計するのか</td>\n<td style=\"text-align: center;\">みしゅめ</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:25-19:40</td>\n<td style=\"text-align: center;\">dbt in Microsoft Fabric</td>\n<td style=\"text-align: center;\">永田 亮磨</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:40-19:55</td>\n<td style=\"text-align: center;\">スポンサー様より宣伝</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55-20:10</td>\n<td style=\"text-align: center;\">GENDAにおけるdbtとLakeflow Jobsの管理</td>\n<td style=\"text-align: center;\">ちか</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:10-20:25</td>\n<td style=\"text-align: center;\">dbt と Snowflake と tag</td>\n<td style=\"text-align: center;\">けびん</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:25-20:55</td>\n<td style=\"text-align: center;\">懇親会・ディスカッション</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">21:00</td>\n<td style=\"text-align: center;\">撤収</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<h1>スピーカー</h1>\n<h2>myshmeh / みしゅめ</h2>\n<div align=\"center\">\n<img src=\"https://pbs.twimg.com/profile_images/1305154094093402114/hHidBRVj_400x400.jpg\" width=\"300\">\n</div>\n\n<p>タイトル： なぜdbtで中間集計するのか<br>\n所属：dbt Labs, Partner Solutions Architect  </p>\n<h2>永田 亮磨</h2>\n<div align=\"center\">\n<img src=\"https://pbs.twimg.com/profile_images/1114534508093526016/321M8QtM_400x400.jpg\" width=\"300\">\n</div>\n\n<p>タイトル： dbt in Microsoft Fabric<br>\n所属：株式会社ジール データ &amp; AI CoE本部 テクノロジーエキスパート部 フェロー | Microsoft MVP for Data Platform  </p>\n<h2>ちか</h2>\n<div align=\"center\">\n<img src=\"https://media.connpass.com/thumbs/ad/f7/adf7d1a59515188e55e0ca6ba09204e2.png \" width=\"300\">\n</div>\n\n<p>タイトル： GENDAにおけるdbtとLakeflow Jobsの管理<br>\n所属：株式会社GENDA データマネジメント部  </p>\n<h2>けびん</h2>\n<div align=\"center\">\n<img src=\"https://pbs.twimg.com/profile_images/1700751330275713024/tkG3r_hM_400x400.jpg\" width=\"300\">\n</div>\n\n<p>タイトル： dbt と Snowflake と tag<br>\n所属：株式会社Finatextホールディングス VP of Data &amp; AI  </p>\n<h1>会場の住所</h1>\n<p>Findy株式会社オフィス <br>\n〒141-0032<br>\n東京都品川区大崎１丁目２−２ アートヴィレッジ大崎セントラルタワー5階  </p>\n<h1>会場の諸注意</h1>\n<p>懇親会では軽食をご用意しております。</p>\n<h1>食事など</h1>\n<p>Comming Soon  </p>\n<h1>主催者 / 管理者</h1>\n<p><strong>こみぃ</strong></p>\n<p><img alt=\"こみぃ画像\" src=\"https://media.connpass.com/thumbs/87/a6/87a657625698d2b049dad5b43d7a56f5.png\"></p>\n<p>SNS：<a href=\"https://x.com/kommy_jp\" rel=\"nofollow\">@kommy_jp</a></p>\n<p><strong>manabian</strong></p>\n<p><img alt=\"manabian画像\" src=\"https://media.connpass.com/thumbs/ce/9e/ce9e55e55d552f025afea3df2e7cf818.png\"></p>\n<p>SNS：<a href=\"https://x.com/manabian\" rel=\"nofollow\">@manabian</a></p>\n<p><strong>すずき</strong></p>\n<p><img alt=\"すずき画像\" src=\"https://media.connpass.com/thumbs/d1/46/d1462282b936afc963c222b0eb33f9ef.png\"></p>\n<p>SNS：<a href=\"https://x.com/suzupappa\" rel=\"nofollow\">@suzupappa</a></p>\n<p><strong>Yuya Matsubara</strong></p>\n<p><img alt=\"Yuya Matsubara画像\" src=\"https://media.connpass.com/thumbs/de/5d/de5dc25c6c7918ae284f645d57286cca.png\"></p>\n<h1>スポンサー様</h1>\n<p>Clickhouse様</p>\n<div align=\"center\">\n<img src=\"https://i.imgur.com/5aWQojn.png\" width='400\"'>\n</div>",
       "url": "https://cdpm.connpass.com/event/402171/",
       "image_url": "https://media.connpass.com/thumbs/90/b9/90b953d76a23e9f23d5fa64e1e9e357c.png",
       "hash_tag": "CDPM",
@@ -124,8 +93,39 @@
       "owner_nickname": "manabian",
       "owner_display_name": "manabian",
       "accepted": 79,
-      "waiting": 10,
-      "updated_at": "2026-08-23T22:34:10+09:00"
+      "waiting": 11,
+      "updated_at": "2026-08-24T10:00:27+09:00"
+    },
+    {
+      "id": 403483,
+      "title": "#color_study",
+      "catch": "Web における「色」について真剣に議論する",
+      "description": "<h1>#color_study</h1>\n<p>Web における「色」について真剣に議論する。</p>\n<h2>Time Table</h2>\n<ul>\n<li>@araya: 「光・受容・境界」</li>\n<li>@jxck: 「色に関する仕様、なんか気づいたら色々増えてね？」</li>\n</ul>\n<h2>Other</h2>\n<ul>\n<li>懇親会なし</li>\n<li>LT なし</li>\n<li>配信なし</li>\n</ul>",
+      "url": "https://web-study.connpass.com/event/403483/",
+      "image_url": "https://media.connpass.com/thumbs/68/63/68634d07f71f40e74c1a9725a96cbdf4.png",
+      "hash_tag": "color_study",
+      "started_at": "2026-08-24T19:00:00+09:00",
+      "ended_at": "2026-08-24T21:00:00+09:00",
+      "published_at": "2026-08-11T00:27:38+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 4365,
+        "subdomain": "web-study",
+        "title": "web-study",
+        "url": "https://web-study.connpass.com/"
+      },
+      "address": "東京都中央区日本橋2-7-1 東京日本橋タワー 27階",
+      "place": "サイボウズ",
+      "lat": "35.681861300000",
+      "lon": "139.774233700000",
+      "owner_id": 1118,
+      "owner_nickname": "Jxck",
+      "owner_display_name": "Jxck",
+      "accepted": 20,
+      "waiting": 0,
+      "updated_at": "2026-08-15T01:01:48+09:00"
     },
     {
       "id": 402990,
@@ -154,7 +154,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 23,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-08-06T11:55:34+09:00"
     }
