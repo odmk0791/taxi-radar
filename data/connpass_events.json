@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-25T05:20:39.154485+09:00",
+  "fetched_at": "2026-08-25T06:20:39.109240+09:00",
   "date": "20260825",
   "count": 16,
   "events": [
@@ -188,37 +188,6 @@
       "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-08-24T11:13:29+09:00"
-    },
-    {
-      "id": 399416,
-      "title": "EMゆるミートアップ vol.13 〜EMの役割で変わったこと・変わらなかったこと〜",
-      "catch": "",
-      "description": "<h1>ステートメント</h1>\n<p>「EMゆるミートアップ」は、エンジニアリングマネジメントの実践者同士で、「雰囲気はゆるく、内容はガチ」をモットーにディスカッションや交流を行う勉強会です。</p>\n<p>多様なフェーズ・文化をバックグラウンドに持つEM間での交流を通じ、マネージャーに必須の「自己開示と傾聴、相互理解」の実践の場、ひいては「EM像のアンラーニング・リフレーミング」のきっかけを作り合う場となることを目指します。</p>\n<h1>イベント概要</h1>\n<p>約1年ぶりのLT回です！テーマは 「EMの役割で変わったこと・変わらなかったこと」 。</p>\n<p>社内外、環境の変化とともに、EMの役割は変化していきます。しかし昨今はそれがより顕著になってきているのではないでしょうか。チームサイズが小さくなった、よりPdE的な役割を求められるようになった、などなど、皆さんに起きた「変化」や「変わらなかったこと・残ったこと」についての現在地のお話を聞かせてください。</p>\n<p>たくさんのご応募、お待ちしています！</p>\n<h2>日時</h2>\n<p>2026/8/25(火) 18:45 受付開始</p>\n<h2>場所</h2>\n<p>株式会社LayerX （銀座松竹スクエア 5F）</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45~19:00</td>\n<td style=\"text-align: left;\">集合</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00~19:15</td>\n<td style=\"text-align: left;\">オープニング・スポンサーのご紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15~19:45</td>\n<td style=\"text-align: left;\">LT x 4</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45~20:15</td>\n<td style=\"text-align: left;\">グループに分かれてディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15~20:30</td>\n<td style=\"text-align: left;\">ディスカッション内容のシェア</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35~21:30</td>\n<td style=\"text-align: left;\">クロージング〜懇親会（任意参加）</td>\n</tr>\n</tbody>\n</table>\n<h2>LT</h2>\n<h3>AI時代のメンバーへの向き合い方</h3>\n<h4>どや（Hiromu Miyazaki）@hilinker</h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1325239765684289536/bRFM-B14_400x400.jpg\" width=\"180\" alt=\"hilinker\"></p>\n<p>2023年11月にHERPに入社し、2人目のエンジニアとして『ジョブミル』開発チームにジョイン、その後ジョブミルのEMを務める。現在はプロダクト領域のエンジニア統括として、全体の事業優先度や開発プロセス設計、組織設計などを担う。</p>\n<h3>EMの役割で変わったこと・変わらなかったこと 〜 世の中とSansanの現在地</h3>\n<h4>多賀谷 洋一（Yoichi Tagaya）@yoichitgy</h4>\n<p><img src=\"https://static.corp-sansan.com/connpass/online/2026-03-31/Tagaya.jpg\" width=\"400\" alt=\"Yoichi Tagaya\"></p>\n<p>2017年からメルカリやスマートニュースでEngineering Manager/Directorおよび社長室として技術・組織・事業のマネジメントに従事。2025年12月にSansan株式会社に入社。技術本部Data Intelligence Engineering Unitの部長として、既存と新規プロダクトの両面で開発を推進。趣味はピックルボール。Sansanピックルボールコート池袋に出没する。</p>\n<h3>隣の席から見た「EMの変化」</h3>\n<h4>ヤマモトヒロキ｜カイテク  @Ymmt169</h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1752945582216450048/A2hAKJGD_400x400.jpg\" width=\"180\" alt=\"yamamoto\"></p>\n<p>2017年レバレジーズ株式会社に新卒入社。ITエンジニア向け人材プラットフォーム「レバテック」にてマーケティング・プロダクト・事業企画の責任者を歴任し、事業グロース。\n人類未踏の超高齢社会における介護人材不足の解決を志し、2025年3月カイテク株式会社に入社。介護/医療のスポットワーク「カイテク」のプロダクト・マーケティング領域を管掌。</p>\n<h2>スポンサー</h2>\n<h3>株式会社LayerX様</h3>\n<p><a href=\"https://layerx.co.jp/\" rel=\"nofollow\"><img src=\"https://i.ibb.co/70pr3Hk/Layer-X-Logo-Horizontal-RGB-Color.png\" width=\"250\"></a></p>\n<p>LayerXは、「すべての経済活動を、デジタル化する。」をミッションに掲げるAIカンパニーです。\"AIが仕事を完了させる\"エージェントサービス「バクラク」事業、資産運用サービス「ALTERNA（オルタナ）」を提供するFintech事業、エンタープライズ向けAIプラットフォーム「Ai Workforce」事業などの複合的な事業を通して日本の社会課題を解決し、AIの力で人々の創造力がより発揮される未来をつくります。</p>\n<ul>\n<li><a href=\"https://jobs.layerx.co.jp/\" rel=\"nofollow\">株式会社LayerX 採用ページ</a></li>\n<li><a href=\"https://x.com/layerx_tech\" rel=\"nofollow\">株式会社LayerX 公式X Tech アカウント</a></li>\n</ul>\n<h3>株式会社Gaji-Labo様</h3>\n<p><img src=\"https://www.gaji.jp/icons/logo.svg\" alt=\"Gaji-Labo（ガジラボ）\" width=\"214\" height=\"40\" style=\"padding: 24px;\"></p>\n<p>株式会社Gaji-Laboは、スタートアップや事業会社のプロダクトチーム支援を専門にしています。UIデザイン、フロントエンド開発、プロダクトマネジメントの専門性を持ったメンバーが、チームの一員としてプロダクトの成長を支援します。<br>\n急成長期や混乱期は、人手を増やすだけでは乗り越えることができません。専門家としてのスキルを持ち、改善に向けてチームワークを高められるメンバーが必要になったときにご相談ください。</p>\n<ul>\n<li>Web: <a href=\"https://www.gaji.jp/\" rel=\"nofollow\">https://www.gaji.jp/</a></li>\n<li>Gaji-Labo blog: <a href=\"https://www.gaji.jp/blog/\" rel=\"nofollow\">https://www.gaji.jp/blog/</a></li>\n<li>Culture Deck: <a href=\"https://speakerdeck.com/gaji/gaji-labo-culture-deck\" rel=\"nofollow\">https://speakerdeck.com/gaji/gaji-labo-culture-deck</a></li>\n<li>X: <a href=\"https://x.com/gaji_labo\" rel=\"nofollow\">https://x.com/gaji_labo</a></li>\n</ul>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>エンジニアリングマネジメントを実践されている方</li>\n<li>エンジニアおよびエンジニアリングマネージャーと協働している方</li>\n</ul>\n<p>※ マネジメント実務にご興味を持たれている方のみを対象としています<br>\n今回は、エンジニアリングマネジメントの実践者により焦点を当てた回となります。</p>\n<h1>行動規範・お願い</h1>\n<p>マネージャー向けの集いという性質上、センシティブなトピックを扱うことが想定されます。そのため以下のような行為はご遠慮ください。場合によってはご退出をいただく可能性もございます。</p>\n<ul>\n<li>ミートアップの進行を妨げる行為</li>\n<li>ハラスメント行為</li>\n<li>個人を特定できるような情報の拡散</li>\n<li>執拗な営業・勧誘行為</li>\n</ul>\n<p>加えて、EMゆるミートアップは、<a href=\"https://speakerdeck.com/naco/antiharasumentohorisi\" rel=\"nofollow\">スクラムフェス神奈川のアンチハラスメントポリシー</a>、<a href=\"https://2026.emconf.jp/de-and-i/\" rel=\"nofollow\">EMConf JPのDE&amp;Iポリシー</a>に準じた規範を適用します。</p>",
-      "url": "https://em-yuru-meetup.connpass.com/event/399416/",
-      "image_url": "https://media.connpass.com/thumbs/45/4a/454a727cea37541839da8c8a78ea9fef.png",
-      "hash_tag": "EMゆるミートアップ",
-      "started_at": "2026-08-25T19:00:00+09:00",
-      "ended_at": "2026-08-25T21:30:00+09:00",
-      "published_at": "2026-07-03T10:39:20+09:00",
-      "limit": 54,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14296,
-        "subdomain": "em-yuru-meetup",
-        "title": "EMゆるミートアップ",
-        "url": "https://em-yuru-meetup.connpass.com/"
-      },
-      "address": "東京都中央区築地1-13-1 銀座松竹スクエア5階",
-      "place": "株式会社LayerX",
-      "lat": "35.668390500000",
-      "lon": "139.769413700000",
-      "owner_id": 737113,
-      "owner_nickname": "canly_aki",
-      "owner_display_name": "sudoakiy",
-      "accepted": 36,
-      "waiting": 0,
-      "updated_at": "2026-08-24T20:11:05+09:00"
     },
     {
       "id": 401388,
@@ -433,6 +402,37 @@
       "updated_at": "2026-08-25T01:01:44+09:00"
     },
     {
+      "id": 399416,
+      "title": "EMゆるミートアップ vol.13 〜EMの役割で変わったこと・変わらなかったこと〜",
+      "catch": "",
+      "description": "<h1>ステートメント</h1>\n<p>「EMゆるミートアップ」は、エンジニアリングマネジメントの実践者同士で、「雰囲気はゆるく、内容はガチ」をモットーにディスカッションや交流を行う勉強会です。</p>\n<p>多様なフェーズ・文化をバックグラウンドに持つEM間での交流を通じ、マネージャーに必須の「自己開示と傾聴、相互理解」の実践の場、ひいては「EM像のアンラーニング・リフレーミング」のきっかけを作り合う場となることを目指します。</p>\n<h1>イベント概要</h1>\n<p>約1年ぶりのLT回です！テーマは 「EMの役割で変わったこと・変わらなかったこと」 。</p>\n<p>社内外、環境の変化とともに、EMの役割は変化していきます。しかし昨今はそれがより顕著になってきているのではないでしょうか。チームサイズが小さくなった、よりPdE的な役割を求められるようになった、などなど、皆さんに起きた「変化」や「変わらなかったこと・残ったこと」についての現在地のお話を聞かせてください。</p>\n<p>たくさんのご応募、お待ちしています！</p>\n<h2>日時</h2>\n<p>2026/8/25(火) 18:45 受付開始</p>\n<h2>場所</h2>\n<p>株式会社LayerX （銀座松竹スクエア 5F）</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45~19:00</td>\n<td style=\"text-align: left;\">集合</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00~19:15</td>\n<td style=\"text-align: left;\">オープニング・スポンサーのご紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15~19:45</td>\n<td style=\"text-align: left;\">LT x 4</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45~20:15</td>\n<td style=\"text-align: left;\">グループに分かれてディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15~20:30</td>\n<td style=\"text-align: left;\">ディスカッション内容のシェア</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:35~21:30</td>\n<td style=\"text-align: left;\">クロージング〜懇親会（任意参加）</td>\n</tr>\n</tbody>\n</table>\n<h2>LT</h2>\n<h3>AI時代のメンバーへの向き合い方</h3>\n<h4>どや（Hiromu Miyazaki）@hilinker</h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1325239765684289536/bRFM-B14_400x400.jpg\" width=\"180\" alt=\"hilinker\"></p>\n<p>2023年11月にHERPに入社し、2人目のエンジニアとして『ジョブミル』開発チームにジョイン、その後ジョブミルのEMを務める。現在はプロダクト領域のエンジニア統括として、全体の事業優先度や開発プロセス設計、組織設計などを担う。</p>\n<h3>EMの役割で変わったこと・変わらなかったこと 〜 世の中とSansanの現在地</h3>\n<h4>多賀谷 洋一（Yoichi Tagaya）@yoichitgy</h4>\n<p><img src=\"https://static.corp-sansan.com/connpass/online/2026-03-31/Tagaya.jpg\" width=\"400\" alt=\"Yoichi Tagaya\"></p>\n<p>2017年からメルカリやスマートニュースでEngineering Manager/Directorおよび社長室として技術・組織・事業のマネジメントに従事。2025年12月にSansan株式会社に入社。技術本部Data Intelligence Engineering Unitの部長として、既存と新規プロダクトの両面で開発を推進。趣味はピックルボール。Sansanピックルボールコート池袋に出没する。</p>\n<h3>隣の席から見た「EMの変化」</h3>\n<h4>ヤマモトヒロキ｜カイテク  @Ymmt169</h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1752945582216450048/A2hAKJGD_400x400.jpg\" width=\"180\" alt=\"yamamoto\"></p>\n<p>2017年レバレジーズ株式会社に新卒入社。ITエンジニア向け人材プラットフォーム「レバテック」にてマーケティング・プロダクト・事業企画の責任者を歴任し、事業グロース。\n人類未踏の超高齢社会における介護人材不足の解決を志し、2025年3月カイテク株式会社に入社。介護/医療のスポットワーク「カイテク」のプロダクト・マーケティング領域を管掌。</p>\n<h2>スポンサー</h2>\n<h3>株式会社LayerX様</h3>\n<p><a href=\"https://layerx.co.jp/\" rel=\"nofollow\"><img src=\"https://i.ibb.co/70pr3Hk/Layer-X-Logo-Horizontal-RGB-Color.png\" width=\"250\"></a></p>\n<p>LayerXは、「すべての経済活動を、デジタル化する。」をミッションに掲げるAIカンパニーです。\"AIが仕事を完了させる\"エージェントサービス「バクラク」事業、資産運用サービス「ALTERNA（オルタナ）」を提供するFintech事業、エンタープライズ向けAIプラットフォーム「Ai Workforce」事業などの複合的な事業を通して日本の社会課題を解決し、AIの力で人々の創造力がより発揮される未来をつくります。</p>\n<ul>\n<li><a href=\"https://jobs.layerx.co.jp/\" rel=\"nofollow\">株式会社LayerX 採用ページ</a></li>\n<li><a href=\"https://x.com/layerx_tech\" rel=\"nofollow\">株式会社LayerX 公式X Tech アカウント</a></li>\n</ul>\n<h3>株式会社Gaji-Labo様</h3>\n<p><img src=\"https://www.gaji.jp/icons/logo.svg\" alt=\"Gaji-Labo（ガジラボ）\" width=\"214\" height=\"40\" style=\"padding: 24px;\"></p>\n<p>株式会社Gaji-Laboは、スタートアップや事業会社のプロダクトチーム支援を専門にしています。UIデザイン、フロントエンド開発、プロダクトマネジメントの専門性を持ったメンバーが、チームの一員としてプロダクトの成長を支援します。<br>\n急成長期や混乱期は、人手を増やすだけでは乗り越えることができません。専門家としてのスキルを持ち、改善に向けてチームワークを高められるメンバーが必要になったときにご相談ください。</p>\n<ul>\n<li>Web: <a href=\"https://www.gaji.jp/\" rel=\"nofollow\">https://www.gaji.jp/</a></li>\n<li>Gaji-Labo blog: <a href=\"https://www.gaji.jp/blog/\" rel=\"nofollow\">https://www.gaji.jp/blog/</a></li>\n<li>Culture Deck: <a href=\"https://speakerdeck.com/gaji/gaji-labo-culture-deck\" rel=\"nofollow\">https://speakerdeck.com/gaji/gaji-labo-culture-deck</a></li>\n<li>X: <a href=\"https://x.com/gaji_labo\" rel=\"nofollow\">https://x.com/gaji_labo</a></li>\n</ul>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>エンジニアリングマネジメントを実践されている方</li>\n<li>エンジニアおよびエンジニアリングマネージャーと協働している方</li>\n</ul>\n<p>※ マネジメント実務にご興味を持たれている方のみを対象としています<br>\n今回は、エンジニアリングマネジメントの実践者により焦点を当てた回となります。</p>\n<h1>行動規範・お願い</h1>\n<p>マネージャー向けの集いという性質上、センシティブなトピックを扱うことが想定されます。そのため以下のような行為はご遠慮ください。場合によってはご退出をいただく可能性もございます。</p>\n<ul>\n<li>ミートアップの進行を妨げる行為</li>\n<li>ハラスメント行為</li>\n<li>個人を特定できるような情報の拡散</li>\n<li>執拗な営業・勧誘行為</li>\n</ul>\n<p>加えて、EMゆるミートアップは、<a href=\"https://speakerdeck.com/naco/antiharasumentohorisi\" rel=\"nofollow\">スクラムフェス神奈川のアンチハラスメントポリシー</a>、<a href=\"https://2026.emconf.jp/de-and-i/\" rel=\"nofollow\">EMConf JPのDE&amp;Iポリシー</a>に準じた規範を適用します。</p>",
+      "url": "https://em-yuru-meetup.connpass.com/event/399416/",
+      "image_url": "https://media.connpass.com/thumbs/45/4a/454a727cea37541839da8c8a78ea9fef.png",
+      "hash_tag": "EMゆるミートアップ",
+      "started_at": "2026-08-25T19:00:00+09:00",
+      "ended_at": "2026-08-25T21:30:00+09:00",
+      "published_at": "2026-07-03T10:39:20+09:00",
+      "limit": 54,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14296,
+        "subdomain": "em-yuru-meetup",
+        "title": "EMゆるミートアップ",
+        "url": "https://em-yuru-meetup.connpass.com/"
+      },
+      "address": "東京都中央区築地1-13-1 銀座松竹スクエア5階",
+      "place": "株式会社LayerX",
+      "lat": "35.668390500000",
+      "lon": "139.769413700000",
+      "owner_id": 737113,
+      "owner_nickname": "canly_aki",
+      "owner_display_name": "sudoakiy",
+      "accepted": 35,
+      "waiting": 0,
+      "updated_at": "2026-08-24T20:11:05+09:00"
+    },
+    {
       "id": 402694,
       "title": "AIオブザーバビリティ スペシャル#3",
       "catch": "AI活用が進むほど膨らむコストの可視化〜消費効率改善に向き合う実践知に迫る！",
@@ -459,7 +459,7 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 292,
+      "accepted": 294,
       "waiting": 0,
       "updated_at": "2026-08-24T14:41:22+09:00"
     },
