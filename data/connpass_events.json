@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-25T00:31:03.080617+09:00",
+  "fetched_at": "2026-08-25T01:26:14.979039+09:00",
   "date": "20260825",
   "count": 16,
   "events": [
@@ -397,9 +397,9 @@
       "owner_id": 202983,
       "owner_nickname": "TRAINOCATE",
       "owner_display_name": "TRAINOCATE",
-      "accepted": 34,
+      "accepted": 39,
       "waiting": 0,
-      "updated_at": "2026-08-24T16:25:51+09:00"
+      "updated_at": "2026-08-25T01:01:44+09:00"
     },
     {
       "id": 402234,
