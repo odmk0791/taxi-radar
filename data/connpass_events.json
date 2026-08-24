@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-24T12:46:32.806274+09:00",
+  "fetched_at": "2026-08-24T13:36:45.341498+09:00",
   "date": "20260824",
   "count": 5,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 20414,
       "owner_nickname": "tomzoh",
       "owner_display_name": "tomzoh",
-      "accepted": 25,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-08-21T14:38:50+09:00"
     },
@@ -61,8 +61,8 @@
       "owner_id": 160788,
       "owner_nickname": "yuya0206",
       "owner_display_name": "convto",
-      "accepted": 115,
-      "waiting": 0,
+      "accepted": 116,
+      "waiting": 1,
       "updated_at": "2026-08-24T09:00:40+09:00"
     },
     {
