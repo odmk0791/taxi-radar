@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-24T11:18:28.152538+09:00",
+  "fetched_at": "2026-08-24T12:46:32.806274+09:00",
   "date": "20260824",
   "count": 5,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 160788,
       "owner_nickname": "yuya0206",
       "owner_display_name": "convto",
-      "accepted": 113,
+      "accepted": 115,
       "waiting": 0,
       "updated_at": "2026-08-24T09:00:40+09:00"
     },
@@ -93,7 +93,7 @@
       "owner_nickname": "manabian",
       "owner_display_name": "manabian",
       "accepted": 79,
-      "waiting": 11,
+      "waiting": 13,
       "updated_at": "2026-08-24T10:00:27+09:00"
     },
     {
@@ -123,7 +123,7 @@
       "owner_id": 1118,
       "owner_nickname": "Jxck",
       "owner_display_name": "Jxck",
-      "accepted": 20,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-08-15T01:01:48+09:00"
     },
@@ -140,7 +140,7 @@
       "published_at": "2026-08-05T22:23:20+09:00",
       "limit": 100,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -154,7 +154,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 24,
+      "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-08-06T11:55:34+09:00"
     }
