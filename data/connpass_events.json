@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-25T07:17:15.896188+09:00",
+  "fetched_at": "2026-08-25T08:15:46.055052+09:00",
   "date": "20260825",
   "count": 17,
   "events": [
@@ -154,7 +154,7 @@
       "owner_id": 70778,
       "owner_nickname": "eLV",
       "owner_display_name": "eLV勉強会",
-      "accepted": 5,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-07-28T07:01:35+09:00"
     },
@@ -219,37 +219,6 @@
       "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-08-24T10:08:21+09:00"
-    },
-    {
-      "id": 402028,
-      "title": "【AI推進のリアル】AIオフレコトーク＃7",
-      "catch": "2名の実践者が語る、大企業とスタートアップの最適解はどう違うのか",
-      "description": "<p>AI推進のミッションを任されたものの、誰を専任にするか・どこに組織を置くか・どう全社に広げるか、相談相手がいない中で手探りで進めているAI推進責任者も少なくないのではないでしょうか。</p>\n\n<p>また、AIの全社推進の最適解は、大企業とスタートアップでは大きく異なります。</p>\n\n<p>そこで今回は、大企業のグループ横断で3万人規模に生成AIを浸透させてきた髙橋氏と、ストックマーク株式会社で自社のAX推進を牽引しながら大手多社のAI活用も支援してきた田中氏をお招きします。\nAI推進におけるつまずきポイント・社内政治のリアルまで、オフレコならではのコンテンツをお届けします。</p>\n\n<p>少人数開催なので、登壇者と直接話せる距離も感もオフレコの魅力。同じ悩みを持つ他社の推進責任者とつながる場としても活用いただけます。 ぜひお気軽にご参加ください！</p>\n<p></p>\n<h2>🕒タイムテーブル</h2>\n<table border=\"\">\n<tbody><tr>\n<th>18:30〜19:00</th>\n<td>受付</td>\n</tr>\n\n<tr>\n<th>19:00〜19:05</th>\n<td>オープニング</td>\n</tr>\n\n<tr>\n<th>19:05〜20:30</th>\n<td>パネルディスカッション・Q&amp;Aセッション</td>\n</tr>\n\n<tr>\n<th>20:30〜21:30</th>\n<td>交流会</td>\n</tr>\n\n</tbody>\n</table>\n\n<h2>✨こんな方へおすすめ</h2>\n<ul>\n<li>AI推進を任されたが、誰に任せ・どんな体制で始めればいいか悩んでいる方</li>\n<li>グループ全体・全社に広げたいが、一部の熱心な人しか動かず「定着の壁」にぶつかっている方</li>\n<li>自社の規模（大企業・スタートアップ等）に合う推進の型が分からず、他社のリアルな進め方を本音で聞きたい方</li>\n</ul>\n\n<h1>登壇者</h1>\n\n<h2>田中 和生 氏｜ストックマーク株式会社 CMO/CPO \n<a href=\"https://x.com/t_kazuo1984\" rel=\"nofollow\">@t_kazuo1984</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/07/90cc89f510de6bf7f417221c1c997cef.jpg\" width=\"200\"></p>\n<p>大学在学中に起業し、宇宙開発の裾野を広げる事業を推進。卒業後、株式会社日本能率協会コンサルティングにて、国内企業の新規事業創造及びビジネスモデル設計、R&amp;D戦略立案に参画。その後VALUENEXにて事業開発責任者を務めた後、2020年からストックマークのPMMとして参画し、製造業向けのAIエージェント『Aconnect』のグロースを推進。CMO、CPO、事業責任者を歴任し、現職。</p>\n\n<h2>髙橋 和馬 氏｜IKIGAI lab.オーナー/某大手メーカー AIスペシャリスト<a href=\"https://x.com/books_kazuma\" rel=\"nofollow\">@books_kazuma</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/07/8790e03bfe7bcf29d9fc15209cee40f9.jpeg\" width=\"200\"></p>\n<p>大手メーカーのグループ横断で生成AI教育を実施。営業職や製造業、自治体業務など30,000人を超える組織にて、教育コンテンツを作成し社内の生成AI人材育成に携わる。社外では生成AIコミュニティ「IKIGAI lab.」のオーナーを務め、NewsPicksやインプレス、ビジネス+ITなど7社にて記事を執筆および監修。企業登壇も多数。YouTube「ジェネトピ」でもゆるっと生成AI活用を発信中。</p>\n\n<h2>砂塚 紀彦氏｜株式会社PKSHA Associates 執行役員CTO兼CPO <a href=\"https://x.com/sunazukan\" rel=\"nofollow\">@sunazukan</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2025/11/8ee39bd41f8d436f97892536e607d2da.jpg\" width=\"200\"></p>\n<p>新卒でERP開発を行うベンチャー企業に入社し、不動産管理・購買管理システムの開発に従事。その後、BPO領域でスタートアップを創業し、定型業務の自動化技術の開発に取り組む。2019年よりPKSHA Associatesに参画し、現在はCTO兼CPOとして業務自動化AIプロダクトの開発をリード。また、2025年よりPKSHA Technology内に新設されたAI NativeカンパニーのCTOを兼任し、最先端のAIプロダクト開発に挑戦中。</p>\n\n<h2>会場</h2>\n<ul>\n<li>会場名：株式会社サーキュレーション</li>\n<li>住所　：東京都渋谷区神宮前3丁目21−5 サーキュレーションビル ForPro</li>\n　　　・東京メトロ明治神宮前駅 出口5より徒歩5分<br>\n　　　・JR原宿駅 表参道口より徒歩13分<br>\n　　　・東京メトロ表参道駅 A2出口より徒歩10分<br>\n<img src=\"https://flxy.jp/media/wp-content/uploads/2026/03/9fb57b6f410328f6bd50846578988bab.jpeg\" width=\"338\">\n</ul>\n\n<h2>ご参加にあたって</h2>\n<ul>参加費： 無料</ul>\n<ul>持ち物： 名刺を1枚お持ちください</ul>\n<ul>SNSハッシュタグ：#flexymeetup #AIオフレコ</ul>\n\n<h1>その他</h1>\n\n<h2>AIオフレコトークとは</h2>\n<p>AIをテーマに、録音・録画・SNS投稿完全NGのクローズドなトークイベントを毎月開催しています！</p>\n\n<p>ここでしか聞けない「ぶっちゃけ話」や本音トークが盛りだくさん。Q&amp;Aの時間もたっぷり取っているので、あなたの気になる質問にもどんどんお答えします！</p>\n\n<p>もし本編で聞ききれなくてもその後の懇親会で、登壇者に直接じっくり質問もできちゃいます。</p>\n\n<p>ネットには絶対に出てこない「ここだけの話」を、毎月一緒に楽しみませんか？\n</p>\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/01/38678dabc628daba0d77c334bfb9fd9b.jpg\" width=\"438\"></p>\n<h2>主催者</h2>\n<p><a href=\"http://www.circu.co.jp/\" rel=\"nofollow\">株式会社サーキュレーション</a>/FLEXY（フレキシー）本部<br>\n「世界中の経験・知見が循環する社会の創造」をビジョンに掲げ個人/法人のオープンイノベーションを支援しています。</p>\n<p><a href=\"http://flxy.jp/\" rel=\"nofollow\">FLEXY</a><br>\n独立エンジニア/デザイナー・技術顧問向けの案件紹介サービス</p>\n\n<h2>FLEXY meetupとは</h2>\n<p><strong>有識者の経験や知見を循環させ、エンジニアのみなさんのスキルアップを後押しする学びの場。</strong></p>\n<p>各技術の普及から技術環境の改善、組織づくりまで、毎回様々なテーマに対して各分野の第一線で活躍をされているCTO/エンジニア等をお招きし、トークセッションを行います。</p>\n\n<h2>個人情報の取扱について</h2>\n<p>イベントの主催者である株式会社サーキュレーション並びに、株式会社PKSHA Technology・株式会社PKSHA Associatesがそれぞれの個人情報取扱い規定にもとづき管理させていただきます。<br></p>\n<ul>\n<li><a href=\"https://www.circu.co.jp/privacy/\" rel=\"nofollow\">株式会社サーキュレーション プライバシーポリシー</a></li>\n<li><a href=\"https://www.pkshatech.com/privacy/\" rel=\"nofollow\">株式会社PKSHA Technology プライバシーポリシー</a></li>\n<li><a href=\"https://asc.pkshatech.com/policy/\" rel=\"nofollow\">株式会社PKSHA Associates プライバシーポリシー</a></li>\n</ul>\n\n<h2>行動規範</h2>\n<p>本イベントは技術の発展やその他開発トピックスに関する情報交換・交流を行うための場所です。<br>\nそのため、参加者に対して以下のようなハラスメント行為は許容しません。</p>\n\n<ul>\n<li>言葉による性別、性的指向、障がいの有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント</li>\n<li>公的空間での性的な映像表現</li>\n<li>意図的な威力行為、ストーキング、つきまとい</li>\n<li>写真撮影や録音によるいやがらせ</li>\n<li>トークやその他の会議イベントに対して繰り返して中断しようとする行為</li>\n<li>望まれない性的な注意を引きつける行為</li>\n</ul>\n<p>ハラスメント行為に遭った、目撃した場合には、スタッフの誰かに連絡していただくようお願いします。</p>",
-      "url": "https://flexy.connpass.com/event/402028/",
-      "image_url": "https://media.connpass.com/thumbs/c2/b1/c2b1654d19683532e1002a8b1c7fbaf2.png",
-      "hash_tag": "flexymeetup",
-      "started_at": "2026-08-25T19:00:00+09:00",
-      "ended_at": "2026-08-25T21:30:00+09:00",
-      "published_at": "2026-08-03T17:01:00+09:00",
-      "limit": 25,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 2005,
-        "subdomain": "flexy",
-        "title": "FLEXY by PKSHA",
-        "url": "https://flexy.connpass.com/"
-      },
-      "address": "東京都渋⾕区神宮前3-21-5 サーキュレーションビル ForPro",
-      "place": "株式会社サーキュレーション",
-      "lat": "35.670494400000",
-      "lon": "139.707951600000",
-      "owner_id": 710815,
-      "owner_nickname": "flexy_circu",
-      "owner_display_name": "flexy_circu",
-      "accepted": 19,
-      "waiting": 0,
-      "updated_at": "2026-08-18T01:01:41+09:00"
     },
     {
       "id": 402234,
@@ -462,6 +431,37 @@
       "accepted": 294,
       "waiting": 0,
       "updated_at": "2026-08-24T14:41:22+09:00"
+    },
+    {
+      "id": 402028,
+      "title": "【AI推進のリアル】AIオフレコトーク＃7",
+      "catch": "2名の実践者が語る、大企業とスタートアップの最適解はどう違うのか",
+      "description": "<p>AI推進のミッションを任されたものの、誰を専任にするか・どこに組織を置くか・どう全社に広げるか、相談相手がいない中で手探りで進めているAI推進責任者も少なくないのではないでしょうか。</p>\n\n<p>また、AIの全社推進の最適解は、大企業とスタートアップでは大きく異なります。</p>\n\n<p>そこで今回は、大企業のグループ横断で3万人規模に生成AIを浸透させてきた髙橋氏と、ストックマーク株式会社で自社のAX推進を牽引しながら大手多社のAI活用も支援してきた田中氏をお招きします。\nAI推進におけるつまずきポイント・社内政治のリアルまで、オフレコならではのコンテンツをお届けします。</p>\n\n<p>少人数開催なので、登壇者と直接話せる距離も感もオフレコの魅力。同じ悩みを持つ他社の推進責任者とつながる場としても活用いただけます。 ぜひお気軽にご参加ください！</p>\n<p></p>\n<h2>🕒タイムテーブル</h2>\n<table border=\"\">\n<tbody><tr>\n<th>18:30〜19:00</th>\n<td>受付</td>\n</tr>\n\n<tr>\n<th>19:00〜19:05</th>\n<td>オープニング</td>\n</tr>\n\n<tr>\n<th>19:05〜20:30</th>\n<td>パネルディスカッション・Q&amp;Aセッション</td>\n</tr>\n\n<tr>\n<th>20:30〜21:30</th>\n<td>交流会</td>\n</tr>\n\n</tbody>\n</table>\n\n<h2>✨こんな方へおすすめ</h2>\n<ul>\n<li>AI推進を任されたが、誰に任せ・どんな体制で始めればいいか悩んでいる方</li>\n<li>グループ全体・全社に広げたいが、一部の熱心な人しか動かず「定着の壁」にぶつかっている方</li>\n<li>自社の規模（大企業・スタートアップ等）に合う推進の型が分からず、他社のリアルな進め方を本音で聞きたい方</li>\n</ul>\n\n<h1>登壇者</h1>\n\n<h2>田中 和生 氏｜ストックマーク株式会社 CMO/CPO \n<a href=\"https://x.com/t_kazuo1984\" rel=\"nofollow\">@t_kazuo1984</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/07/90cc89f510de6bf7f417221c1c997cef.jpg\" width=\"200\"></p>\n<p>大学在学中に起業し、宇宙開発の裾野を広げる事業を推進。卒業後、株式会社日本能率協会コンサルティングにて、国内企業の新規事業創造及びビジネスモデル設計、R&amp;D戦略立案に参画。その後VALUENEXにて事業開発責任者を務めた後、2020年からストックマークのPMMとして参画し、製造業向けのAIエージェント『Aconnect』のグロースを推進。CMO、CPO、事業責任者を歴任し、現職。</p>\n\n<h2>髙橋 和馬 氏｜IKIGAI lab.オーナー/某大手メーカー AIスペシャリスト<a href=\"https://x.com/books_kazuma\" rel=\"nofollow\">@books_kazuma</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/07/8790e03bfe7bcf29d9fc15209cee40f9.jpeg\" width=\"200\"></p>\n<p>大手メーカーのグループ横断で生成AI教育を実施。営業職や製造業、自治体業務など30,000人を超える組織にて、教育コンテンツを作成し社内の生成AI人材育成に携わる。社外では生成AIコミュニティ「IKIGAI lab.」のオーナーを務め、NewsPicksやインプレス、ビジネス+ITなど7社にて記事を執筆および監修。企業登壇も多数。YouTube「ジェネトピ」でもゆるっと生成AI活用を発信中。</p>\n\n<h2>砂塚 紀彦氏｜株式会社PKSHA Associates 執行役員CTO兼CPO <a href=\"https://x.com/sunazukan\" rel=\"nofollow\">@sunazukan</a></h2>\n\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2025/11/8ee39bd41f8d436f97892536e607d2da.jpg\" width=\"200\"></p>\n<p>新卒でERP開発を行うベンチャー企業に入社し、不動産管理・購買管理システムの開発に従事。その後、BPO領域でスタートアップを創業し、定型業務の自動化技術の開発に取り組む。2019年よりPKSHA Associatesに参画し、現在はCTO兼CPOとして業務自動化AIプロダクトの開発をリード。また、2025年よりPKSHA Technology内に新設されたAI NativeカンパニーのCTOを兼任し、最先端のAIプロダクト開発に挑戦中。</p>\n\n<h2>会場</h2>\n<ul>\n<li>会場名：株式会社サーキュレーション</li>\n<li>住所　：東京都渋谷区神宮前3丁目21−5 サーキュレーションビル ForPro</li>\n　　　・東京メトロ明治神宮前駅 出口5より徒歩5分<br>\n　　　・JR原宿駅 表参道口より徒歩13分<br>\n　　　・東京メトロ表参道駅 A2出口より徒歩10分<br>\n<img src=\"https://flxy.jp/media/wp-content/uploads/2026/03/9fb57b6f410328f6bd50846578988bab.jpeg\" width=\"338\">\n</ul>\n\n<h2>ご参加にあたって</h2>\n<ul>参加費： 無料</ul>\n<ul>持ち物： 名刺を1枚お持ちください</ul>\n<ul>SNSハッシュタグ：#flexymeetup #AIオフレコ</ul>\n\n<h1>その他</h1>\n\n<h2>AIオフレコトークとは</h2>\n<p>AIをテーマに、録音・録画・SNS投稿完全NGのクローズドなトークイベントを毎月開催しています！</p>\n\n<p>ここでしか聞けない「ぶっちゃけ話」や本音トークが盛りだくさん。Q&amp;Aの時間もたっぷり取っているので、あなたの気になる質問にもどんどんお答えします！</p>\n\n<p>もし本編で聞ききれなくてもその後の懇親会で、登壇者に直接じっくり質問もできちゃいます。</p>\n\n<p>ネットには絶対に出てこない「ここだけの話」を、毎月一緒に楽しみませんか？\n</p>\n<p><img src=\"https://flxy.jp/media/wp-content/uploads/2026/01/38678dabc628daba0d77c334bfb9fd9b.jpg\" width=\"438\"></p>\n<h2>主催者</h2>\n<p><a href=\"http://www.circu.co.jp/\" rel=\"nofollow\">株式会社サーキュレーション</a>/FLEXY（フレキシー）本部<br>\n「世界中の経験・知見が循環する社会の創造」をビジョンに掲げ個人/法人のオープンイノベーションを支援しています。</p>\n<p><a href=\"http://flxy.jp/\" rel=\"nofollow\">FLEXY</a><br>\n独立エンジニア/デザイナー・技術顧問向けの案件紹介サービス</p>\n\n<h2>FLEXY meetupとは</h2>\n<p><strong>有識者の経験や知見を循環させ、エンジニアのみなさんのスキルアップを後押しする学びの場。</strong></p>\n<p>各技術の普及から技術環境の改善、組織づくりまで、毎回様々なテーマに対して各分野の第一線で活躍をされているCTO/エンジニア等をお招きし、トークセッションを行います。</p>\n\n<h2>個人情報の取扱について</h2>\n<p>イベントの主催者である株式会社サーキュレーション並びに、株式会社PKSHA Technology・株式会社PKSHA Associatesがそれぞれの個人情報取扱い規定にもとづき管理させていただきます。<br></p>\n<ul>\n<li><a href=\"https://www.circu.co.jp/privacy/\" rel=\"nofollow\">株式会社サーキュレーション プライバシーポリシー</a></li>\n<li><a href=\"https://www.pkshatech.com/privacy/\" rel=\"nofollow\">株式会社PKSHA Technology プライバシーポリシー</a></li>\n<li><a href=\"https://asc.pkshatech.com/policy/\" rel=\"nofollow\">株式会社PKSHA Associates プライバシーポリシー</a></li>\n</ul>\n\n<h2>行動規範</h2>\n<p>本イベントは技術の発展やその他開発トピックスに関する情報交換・交流を行うための場所です。<br>\nそのため、参加者に対して以下のようなハラスメント行為は許容しません。</p>\n\n<ul>\n<li>言葉による性別、性的指向、障がいの有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント</li>\n<li>公的空間での性的な映像表現</li>\n<li>意図的な威力行為、ストーキング、つきまとい</li>\n<li>写真撮影や録音によるいやがらせ</li>\n<li>トークやその他の会議イベントに対して繰り返して中断しようとする行為</li>\n<li>望まれない性的な注意を引きつける行為</li>\n</ul>\n<p>ハラスメント行為に遭った、目撃した場合には、スタッフの誰かに連絡していただくようお願いします。</p>",
+      "url": "https://flexy.connpass.com/event/402028/",
+      "image_url": "https://media.connpass.com/thumbs/c2/b1/c2b1654d19683532e1002a8b1c7fbaf2.png",
+      "hash_tag": "flexymeetup",
+      "started_at": "2026-08-25T19:00:00+09:00",
+      "ended_at": "2026-08-25T21:30:00+09:00",
+      "published_at": "2026-08-03T17:01:00+09:00",
+      "limit": 25,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 2005,
+        "subdomain": "flexy",
+        "title": "FLEXY by PKSHA",
+        "url": "https://flexy.connpass.com/"
+      },
+      "address": "東京都渋⾕区神宮前3-21-5 サーキュレーションビル ForPro",
+      "place": "株式会社サーキュレーション",
+      "lat": "35.670494400000",
+      "lon": "139.707951600000",
+      "owner_id": 710815,
+      "owner_nickname": "flexy_circu",
+      "owner_display_name": "flexy_circu",
+      "accepted": 19,
+      "waiting": 0,
+      "updated_at": "2026-08-18T01:01:41+09:00"
     },
     {
       "id": 402973,
