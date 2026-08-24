@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-24T18:38:08.358721+09:00",
+  "fetched_at": "2026-08-24T19:29:49.181455+09:00",
   "date": "20260824",
   "count": 5,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 20414,
       "owner_nickname": "tomzoh",
       "owner_display_name": "tomzoh",
-      "accepted": 27,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-08-24T17:18:58+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-07-28T16:59:43+09:00",
       "limit": 152,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6108,
         "subdomain": "layerx",
@@ -61,7 +61,7 @@
       "owner_id": 160788,
       "owner_nickname": "yuya0206",
       "owner_display_name": "convto",
-      "accepted": 123,
+      "accepted": 129,
       "waiting": 0,
       "updated_at": "2026-08-24T17:39:15+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-08-03T14:46:23+09:00",
       "limit": 150,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15959,
         "subdomain": "cdpm",
@@ -92,7 +92,7 @@
       "owner_id": 726393,
       "owner_nickname": "kommy_jp",
       "owner_display_name": "こみぃ",
-      "accepted": 102,
+      "accepted": 109,
       "waiting": 0,
       "updated_at": "2026-08-24T18:25:55+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-08-11T00:27:38+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4365,
         "subdomain": "web-study",
