@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-26T00:34:47.615370+09:00",
+  "fetched_at": "2026-08-26T01:26:51.691464+09:00",
   "date": "20260826",
-  "count": 22,
+  "count": 23,
   "events": [
     {
       "id": 400051,
@@ -252,37 +252,6 @@
       "updated_at": "2026-08-25T19:42:02+09:00"
     },
     {
-      "id": 402775,
-      "title": "社内データをAIにどう活かすのか？Ubie & メルカリ流・データ基盤の整備とその活用事例",
-      "catch": "「データ整備」×「データ活用」の両輪で語る、生成AI時代の実践知。成功談も失敗談もぶっちゃけトーク！",
-      "description": "<h1>概要</h1>\n<p>「AIに渡すデータを、誰がどう整えるのか？」「整えたデータを、現場でどう成果につなげるのか？」</p>\n<p>生成AIの成果を最大化するには、データを <strong>「整備する」力</strong> とデータを <strong>「活用する」力</strong> の両輪が欠かせません。本イベントでは、Ubieとメルカリの実践者が、この2つの軸からリアルな経験をお話しします。</p>\n<ul>\n<li><strong>整備の軸</strong>：社内データをみんな（全社・チーム）が使えるように整備してきたエンジニアの経験</li>\n<li><strong>活用の軸</strong>：整備されたデータを業務改善・効率化につなげた非エンジニアチームの実例</li>\n</ul>\n<p>うまくいった話だけでなく失敗談も交えながら、前半は各社からのプレゼンテーション、後半はパネルディスカッション形式でお届けします。\nまた、最後に登壇者と参加者の交流会も実施予定です。参加者のみなさまも一緒にデータ周りのことをお話しましょう。\n　</p>\n<h1>🚀 このような方にオススメです！</h1>\n<ul>\n<li>生成AIを業務で利活用している方</li>\n<li>データアナリスト、データエンジニアの方</li>\n<li>社内外向けのデータマネジメントに携わっている方</li>\n<li>社内データの整備・データ基盤づくりに課題を感じている方</li>\n<li>整備されたデータを業務改善・効率化につなげた実例を知りたい方</li>\n<li>UbieやメルカリのAI・データ活用のリアルな事例に興味のある方</li>\n</ul>\n<h1>🏢 会場</h1>\n<ul>\n<li>メルカリ イベントスペース（オフライン開催）</li>\n<li>入館方法は参加者の方へ別途ご案内いたします</li>\n</ul>\n<h1>📝 タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00〜</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10〜</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20〜</td>\n<td style=\"text-align: left;\">プレゼンテーション①</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30〜</td>\n<td style=\"text-align: left;\">プレゼンテーション②</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40〜</td>\n<td style=\"text-align: left;\">プレゼンテーション③</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜</td>\n<td style=\"text-align: left;\">プレゼンテーション④</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00〜</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30〜</td>\n<td style=\"text-align: left;\">交流会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55〜</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<p>※内容は当日変更する可能性がございます。予めご了承ください。</p>\n<h1>🎤 登壇者</h1>\n<h2>Ubie株式会社 | 生成AI推進室 テックリード | syucream</h2>\n<p>ヤフー、メルカリにおいてプロダクト開発・社内基盤経験を経て Ubie に 2021 年入社。入社後はプロダクト開発やエンジニア採用、組織制度刷新などを経験し、現在はプロダクト開発基盤とAI社内推進を行うチームのリーダーに就任。最近のテーマは、AI で社内全員の能力をリバレッジして少人数だとしても大きなアウトカムを創出することを可能にすること。</p>\n<ul>\n<li><a href=\"https://x.com/syu_cream\" rel=\"nofollow\">X（@syu_cream）</a></li>\n</ul>\n<h2>Ubie株式会社 | 生成AI推進室 AI Operation Manager | Yoshiki</h2>\n<p>アドテクノロジー領域にて約6年間、SSPやアドネットワークのメディア担当として従事した後、2023年Ubie入社。入社後はAI Opsとして、事業部門の業務プロセス改善やAI活用の推進に従事。現在は病院向け事業にて、営業が成果を出すための「舞台装置」づくりに取り組む。CRM・データ基盤・生成AI基盤を横断で設計し、営業ナレッジの集約・活用、活動ログの自動収集、AIエージェントによる業務支援などを通じて、成果を構造的に伸ばす仕組みづくりに注力している。</p>\n<ul>\n<li><a href=\"https://x.com/yoshiki_aiops\" rel=\"nofollow\">X（@yoshiki_aiops） </a></li>\n</ul>\n<h2>株式会社メルカリ | JB(Japan Business) Data Team / Director | Wei Gong</h2>\n<p>ソニーでエンジニアとしてキャリアを開始し、慶應MBAを経て、マッキンゼーで経営コンサルティング、AIGでデータサイエンス、OYOでBI・グロース・プロダクト、Wolt/DoorDashでパートナー戦略を担当。2023年12月メルカリ入社。メルカリ ハロのBIチーム立ち上げと事業計画・営業戦略を経て、現在はHead of Data of Japan Businessとして日本事業のデータ組織を統括。AIによるデータ活用の仕組みづくりに取り組んでいる。</p>\n<h2>株式会社メルカリ | Corporate Risk Management Team | takashio</h2>\n<p>クレジットカード会社、Fintech企業でのリスクマネジメント業務を経てメルカリへ参画。現在はグループ全体のリスクマネジメントを担当。攻めと守りを両立し、ミッション達成の確実性を高めるため、AIを活用したERM（全社的リスクマネジメント）の実現に取り組んでいる。</p>\n<h1>モデレーター</h1>\n<h2>Ubie株式会社｜アクセラレーター本部 生成AI推進室｜盛田崇弘 tamosan</h2>\n<p>2021/09よりコーポレートエンジニアとして従事。現在は生成AIや社内業務において生成AIソリューションの利活用を検証・整備し、業務QCD向上を弊社従業員とともに推進しています。</p>\n<ul>\n<li><a href=\"https://x.com/tamosan_01\" rel=\"nofollow\">X（@tamosan_01） </a></li>\n<li><a href=\"https://note.com/tamosan_01/n/nfab36ff0f5f3\" rel=\"nofollow\">生成AIを「組織のOS」にするために。Ubieが実践するイネーブリングの全体像と\"3つの浸透カテゴリ\"</a></li>\n</ul>\n<h1>【注意事項】</h1>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止です。運営側の判断でご退出をお願いする場合があります。</li>\n<li>当日のイベント風景を写真撮影させていただく場合があります。</li>\n</ul>\n<h1>【共催企業】</h1>\n<h2>Ubie株式会社</h2>\n<ul>\n<li><a href=\"https://recruit.ubie.life/\" rel=\"nofollow\">Ubie株式会社 採用ページ</a></li>\n<li><a href=\"https://blog.ubie.tech/\" rel=\"nofollow\">Ubie株式会社 Tech blog</a></li>\n</ul>\n<h2>株式会社メルカリ</h2>\n<ul>\n<li><a href=\"https://engineering.mercari.com/blog/\" rel=\"nofollow\">エンジニアリングブログ</a></li>\n<li><a href=\"https://twitter.com/mercaridevjp\" rel=\"nofollow\">エンジニア向けTwitterアカウント</a></li>\n<li><a href=\"https://www.youtube.com/c/mercaridevjp/featured\" rel=\"nofollow\">エンジニア向けYouTube</a></li>\n<li><a href=\"https://jp.merpay.com/careers/\" rel=\"nofollow\">採用ページ</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/624F89F225/\" rel=\"nofollow\">Senior Analytics Engineer - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/0CFBF11B9E\" rel=\"nofollow\">Manager, Analytics Engineer - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/E9EEC9F115/\" rel=\"nofollow\">シニアデータマネジメントスペシャリスト / Senior Data Management Specialist - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/A29021CC47/\" rel=\"nofollow\">Engineering Manager, Data Ingestion - Mercari</a></li>\n<li>9/4に<a href=\"https://mercari.connpass.com/event/403633/\" rel=\"nofollow\">Mercari Data Engineering &amp; Career Talk〜メルカリのデータ組織・キャリアについてお話ししましょう！〜</a>を開催予定！</li>\n</ul>\n<h2>行動規範について</h2>\n<p>当イベントは、参加者と情報を共有するための場です。そのため、主催者を含む全ての参加者は下記ページに記載される行動規範に同意していただく必要があります。ご理解ご協力をお願いいたします。</p>\n<p><a href=\"https://about.mercari.com/event-code-of-conduct/&lt;br>\" rel=\"nofollow\">https://about.mercari.com/event-code-of-conduct/<br></a>\n<a href=\"https://ubie.life/event-code-of-conduct\" rel=\"nofollow\">https://ubie.life/event-code-of-conduct</a></p>\n<p>何か困ったことなどありましたら、当イベントページの「イベントへのお問い合わせ」からご連絡ください。</p>",
-      "url": "https://mercari.connpass.com/event/402775/",
-      "image_url": "https://media.connpass.com/thumbs/ea/1a/ea1a1e7901aa306b63ef3203cd92c446.png",
-      "hash_tag": "ubie_mercari_aitalk",
-      "started_at": "2026-08-26T19:00:00+09:00",
-      "ended_at": "2026-08-26T21:00:00+09:00",
-      "published_at": "2026-08-10T10:36:48+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 1215,
-        "subdomain": "mercari",
-        "title": "メルカリ／Mercari",
-        "url": "https://mercari.connpass.com/"
-      },
-      "address": "港区六本木6丁目10番1号 六本木ヒルズ森タワー",
-      "place": "株式会社メルカリ　東京オフィス",
-      "lat": "35.660462100000",
-      "lon": "139.729278600000",
-      "owner_id": 122777,
-      "owner_nickname": "mercari_event",
-      "owner_display_name": "mercari_event",
-      "accepted": 48,
-      "waiting": 0,
-      "updated_at": "2026-08-25T19:45:36+09:00"
-    },
-    {
       "id": 400749,
       "title": "ご飯を食べながらアプリ開発もくもく会＆LT会",
       "catch": "平日業務後にご飯でも食べながら、ゆる～くもくもくする勉強会です！",
@@ -343,6 +312,37 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-08-13T16:28:26+09:00"
+    },
+    {
+      "id": 402770,
+      "title": "LayerX QA Night #2 〜バクラクQA・PdM・エンジニアの協働から考える品質づくり〜",
+      "catch": "",
+      "description": "<h2>概要</h2>\n<p><strong>エンジニアやプロダクトマネージャーと近い距離で、QAエンジニアはどう価値を出すのか？</strong><br></p>\n<p>バクラクは、経費精算・法人カード・請求書・勤怠管理など、企業で働くさまざまな人の業務を支えるプロダクトを展開しています。</p>\n<p>複数のプロダクトチームが並行して開発を進め、2週間のサイクルで機能開発とリリースを行う中、QAエンジニアには「最後にテストをする」だけではない役割が求められます。</p>\n<p>バクラクQAでは、各プロダクトの開発チームに入り、要望や仕様の整理、リスクの洗い出し、テスト設計、リリース判断、リリース後の品質改善、プロセス改善まで、開発のさまざまな段階でチームと協働しています。<br>\n開発の初期段階から品質について考える、このような関わり方を <strong>インプロセスQA</strong> と呼んでいます。</p>\n<p>一方で、事業やプロダクトが成長するほど、品質文化の浸透、テスト資産のメンテナンス、判断基準の標準化など、新たな課題も生まれます。<br>\nQAが開発スピードのブレーキにならず、プロダクトやユーザー体験をより良くするためには、どのような役割や仕組みが必要なのでしょうか。</p>\n<p>本イベントでは、バクラクQAの現在地や組織、採用背景、目指すQA像をご紹介したうえで、QA・プロダクトマネージャー・エンジニアによるパネルディスカッションを行います。</p>\n<p>プロダクト開発・リリースサイクルの中で、QAはどのタイミングで開発に入り、誰とどのような会話をし、品質についての意思決定にどう関わっているのか？<br>\n品質と開発スピードをどう両立しようとしているのか？QA・PdM・EMそれぞれの立場から、実際の開発現場に基づいてお話しします。</p>\n<p>イベント後には懇親会も予定しています。<br>\nLayerX / バクラクQAの働き方やキャリアに興味がある方はもちろん、テスト実行にとどまらず、仕様やプロダクト品質に踏み込みたいQAエンジニアの方にも、ぜひご参加いただきたいイベントです。</p>\n<h2>日時・場所</h2>\n<ul>\n<li>日時：2026年8月26日（水）19:00〜21:20</li>\n<li>開催場所：株式会社LayerX 銀座松竹スクエア セミナールーム</li>\n<li>開催形式：オフライン</li>\n<li>参加費：無料</li>\n</ul>\n<h2>こういう方におすすめ！</h2>\n<ul>\n<li>QA・テストの経験を活かして、仕様検討やリスク整理など開発の上流から関わりたい方</li>\n<li>インプロセスQAが、実際の開発チームでどのように動いているのか知りたい方</li>\n<li>QAがプロダクトエンジニアやPdMと協働する際の、具体的な事例や難しさを知りたい方</li>\n<li>品質と開発スピードの両立に課題を感じているQA・PdM・エンジニアの方</li>\n<li>QAの役割を広げたい方、QA組織づくりやキャリアに関心がある方</li>\n<li>LayerX / バクラクQAのメンバーと直接話してみたい方</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45〜19:00</td>\n<td>開場・受付</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00〜19:05</td>\n<td>オープニング</td>\n<td>QA部長 中野</td>\n</tr>\n<tr>\n<td>19:05〜19:20</td>\n<td>Session 1：バクラクQAの現在地、組織、採用背景、目指すQA像</td>\n<td>QA部長 中野</td>\n</tr>\n<tr>\n<td>19:20〜20:05</td>\n<td>Panel：プロダクト開発の中でQAがどう価値を出しているか</td>\n<td>QAマネージャー 松山<br>HCM部長 エンジニアリングマネージャー 菊池<br>プロダクトマネージャー 日髙</td>\n</tr>\n<tr>\n<td>20:05〜20:15</td>\n<td>Closing / Career：バクラクQAで広がるキャリア 募集ポジションの案内など</td>\n<td>QAマネージャー 松山</td>\n</tr>\n<tr>\n<td>20:15〜20:20</td>\n<td>クロージング・アンケート案内</td>\n<td></td>\n</tr>\n<tr>\n<td>20:20〜21:30</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※登壇者名・登壇タイトル・タイムテーブルは変更になる可能性があります。</p>\n<h2>パネルディスカッションで扱うテーマ</h2>\n<ul>\n<li>QAが早い段階から関わることで、仕様・リスク・開発の進め方はどう変わるのか</li>\n<li>QA・PdM・エンジニアが協働する中で、実際にどのような嬉しさや難しさがあるのか</li>\n<li>「テストしてくれる人」ではなく「品質についての問いを立てる人」として、QAはどのような価値を出せるのか</li>\n<li>バクラクQAで広がるキャリアと、これから挑戦できること</li>\n</ul>\n<p>当日は、登壇者それぞれの実体験をもとに、開発者からQAへの期待や、うまくいかなかった事例も含めてざっくばらんにお話しします。</p>\n<h2>登壇者</h2>\n<h3>中野 直樹 <a href=\"https://x.com/TestingGolem\" rel=\"nofollow\">@TestingGolem</a></h3>\n<p><img src=\"https://cdn-ak.f.st-hatena.com/images/fotolife/k/koyatest/20251128/20251128141556.png\" alt=\"nao_icon\" width=\"120\"></p>\n<p><strong>株式会社LayerX<br>バクラク事業部 QA部</strong></p>\n<p>エンタープライズシステムの開発・PMを経てQAエンジニアへ転向。ネット証券におけるテスト自動化・テストリードを経験後、不動産テック企業にてQAマネージャーとして品質改善の仕組み作りに従事。2023年4月よりLayerXに入社し、事業成長を支えるQA組織の構築を主導するとともに、プロダクト全体の品質戦略・テスト戦略の策定に従事。<br>社外では、ソフトウェアテスト技術者資格認定（JSTQB）技術委員、NPO法人ASTER理事、JaSST Tokyo実行委員を務めるなど、ソフトウェアテスト・品質保証に関する活動にも携わっている。</p>\n<h3>松山 晃大 <a href=\"https://x.com/matsu_qa\" rel=\"nofollow\">@matsu_qa</a></h3>\n<p><img src=\"https://ca.slack-edge.com/TBQ48385T-U05SMM10JDD-800367d23059-512\" alt=\"\" width=\"120\"></p>\n<p><strong>株式会社LayerX<br>バクラク事業部 QA部</strong></p>\n<p>2017年にメルカリへ入社し、USアプリ開発やカスタマーサポートツール、メルペイのキャッシュレス決済基盤、ソウゾウの法人向けECサイトなどでQAエンジニア・QAマネージャーとして品質保証に従事。2023年よりLayerXバクラク事業部に参画し、法人カード・勤怠管理などの開発でQAをリード。現在はHCM領域のQAマネージャーを務める。</p>\n<h3>日髙 雄介 <a href=\"https://x.com/onomimono\" rel=\"nofollow\">@onomimono</a></h3>\n<p><img src=\"https://res.cloudinary.com/deijphh6b/image/upload/v1766991288/IMG_1209_cre3s2.jpg\" width=\"120\" alt=\"hidac\"></p>\n<p><strong>株式会社LayerX<br>HCMプロダクト企画部 プロダクトマネージャー</strong></p>\n<p>2018年4月、新卒で株式会社リクルートに入社。<br>\n『Airレジ』のプロダクトマネージャーとして2年間従事し、SaaS領域にて新規事業の立ち上げを行う。<br>\n2025年11月、株式会社LayerXに入社。\n「バクラク勤怠」のプロダクトマネージャー及びHCM領域のPdMマネージャーを担当。</p>\n<h3>菊池 翔 <a href=\"https://x.com/kichion\" rel=\"nofollow\">@kichion</a></h3>\n<p><img src=\"https://gyazo.com/2e052fdec08972b13dd4703955bf39a1.jpeg\" width=\"120\" alt=\"kichion\"></p>\n<p><strong>株式会社LayerX<br>バクラク事業部 HCM開発部 部長／エンジニアリングマネージャー</strong><br>\n現在は、バクラク事業部 HCM開発部長・エンジニアリングマネージャーを務め、バックエンドからフロントエンドまで幅広く活動。<br>\n日本をいい形で子どもに引き継ぐために仕事をまっとうする。<br>\n最近の趣味は子ども、TVゲーム、3Dプリンタ、カフェ開業に向けての勉強など。</p>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<h3>行動規範</h3>\n<ul>\n<li><a href=\"https://jobs.layerx.co.jp/code-of-conduct\" rel=\"nofollow\">LayerX イベント行動規範</a></li>\n</ul>\n<p>※困ったことなどありましたら、当イベントページの「イベントへのお問い合わせ」までご連絡ください。</p>\n<h3>プライバシーポリシー</h3>\n<ul>\n<li><a href=\"https://layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX プライバシーポリシー</a></li>\n<li><a href=\"https://www.notion.so/e664016aaa4a46fabff2c231e875cd03?pvs=21\" rel=\"nofollow\">株式会社LayerX 採用プライバシーポリシー</a></li>\n</ul>\n<p>※ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善または新規企画のための分析、登壇参加者への採用情報などのご案内に利用いたします。</p>",
+      "url": "https://layerx.connpass.com/event/402770/",
+      "image_url": "https://media.connpass.com/thumbs/cf/1f/cf1fcdba54aff50b3151b84da02b89d4.png",
+      "hash_tag": "bakuraku_qa_study",
+      "started_at": "2026-08-26T19:00:00+09:00",
+      "ended_at": "2026-08-26T21:30:00+09:00",
+      "published_at": "2026-08-06T09:15:00+09:00",
+      "limit": 60,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 6108,
+        "subdomain": "layerx",
+        "title": "LayerX",
+        "url": "https://layerx.connpass.com/"
+      },
+      "address": "東京都中央区築地1-13-1 銀座松竹スクエア 5F イベントスペース",
+      "place": "株式会社LayerX",
+      "lat": "35.668390500000",
+      "lon": "139.769413700000",
+      "owner_id": 28439,
+      "owner_nickname": "naoki-nakano",
+      "owner_display_name": "NaokiNakano",
+      "accepted": 55,
+      "waiting": 0,
+      "updated_at": "2026-08-24T18:22:46+09:00"
     },
     {
       "id": 401209,
@@ -407,35 +407,35 @@
       "updated_at": "2026-08-24T09:36:21+09:00"
     },
     {
-      "id": 402770,
-      "title": "LayerX QA Night #2 〜バクラクQA・PdM・エンジニアの協働から考える品質づくり〜",
-      "catch": "",
-      "description": "<h2>概要</h2>\n<p><strong>エンジニアやプロダクトマネージャーと近い距離で、QAエンジニアはどう価値を出すのか？</strong><br></p>\n<p>バクラクは、経費精算・法人カード・請求書・勤怠管理など、企業で働くさまざまな人の業務を支えるプロダクトを展開しています。</p>\n<p>複数のプロダクトチームが並行して開発を進め、2週間のサイクルで機能開発とリリースを行う中、QAエンジニアには「最後にテストをする」だけではない役割が求められます。</p>\n<p>バクラクQAでは、各プロダクトの開発チームに入り、要望や仕様の整理、リスクの洗い出し、テスト設計、リリース判断、リリース後の品質改善、プロセス改善まで、開発のさまざまな段階でチームと協働しています。<br>\n開発の初期段階から品質について考える、このような関わり方を <strong>インプロセスQA</strong> と呼んでいます。</p>\n<p>一方で、事業やプロダクトが成長するほど、品質文化の浸透、テスト資産のメンテナンス、判断基準の標準化など、新たな課題も生まれます。<br>\nQAが開発スピードのブレーキにならず、プロダクトやユーザー体験をより良くするためには、どのような役割や仕組みが必要なのでしょうか。</p>\n<p>本イベントでは、バクラクQAの現在地や組織、採用背景、目指すQA像をご紹介したうえで、QA・プロダクトマネージャー・エンジニアによるパネルディスカッションを行います。</p>\n<p>プロダクト開発・リリースサイクルの中で、QAはどのタイミングで開発に入り、誰とどのような会話をし、品質についての意思決定にどう関わっているのか？<br>\n品質と開発スピードをどう両立しようとしているのか？QA・PdM・EMそれぞれの立場から、実際の開発現場に基づいてお話しします。</p>\n<p>イベント後には懇親会も予定しています。<br>\nLayerX / バクラクQAの働き方やキャリアに興味がある方はもちろん、テスト実行にとどまらず、仕様やプロダクト品質に踏み込みたいQAエンジニアの方にも、ぜひご参加いただきたいイベントです。</p>\n<h2>日時・場所</h2>\n<ul>\n<li>日時：2026年8月26日（水）19:00〜21:20</li>\n<li>開催場所：株式会社LayerX 銀座松竹スクエア セミナールーム</li>\n<li>開催形式：オフライン</li>\n<li>参加費：無料</li>\n</ul>\n<h2>こういう方におすすめ！</h2>\n<ul>\n<li>QA・テストの経験を活かして、仕様検討やリスク整理など開発の上流から関わりたい方</li>\n<li>インプロセスQAが、実際の開発チームでどのように動いているのか知りたい方</li>\n<li>QAがプロダクトエンジニアやPdMと協働する際の、具体的な事例や難しさを知りたい方</li>\n<li>品質と開発スピードの両立に課題を感じているQA・PdM・エンジニアの方</li>\n<li>QAの役割を広げたい方、QA組織づくりやキャリアに関心がある方</li>\n<li>LayerX / バクラクQAのメンバーと直接話してみたい方</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45〜19:00</td>\n<td>開場・受付</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00〜19:05</td>\n<td>オープニング</td>\n<td>QA部長 中野</td>\n</tr>\n<tr>\n<td>19:05〜19:20</td>\n<td>Session 1：バクラクQAの現在地、組織、採用背景、目指すQA像</td>\n<td>QA部長 中野</td>\n</tr>\n<tr>\n<td>19:20〜20:05</td>\n<td>Panel：プロダクト開発の中でQAがどう価値を出しているか</td>\n<td>QAマネージャー 松山<br>HCM部長 エンジニアリングマネージャー 菊池<br>プロダクトマネージャー 日髙</td>\n</tr>\n<tr>\n<td>20:05〜20:15</td>\n<td>Closing / Career：バクラクQAで広がるキャリア 募集ポジションの案内など</td>\n<td>QAマネージャー 松山</td>\n</tr>\n<tr>\n<td>20:15〜20:20</td>\n<td>クロージング・アンケート案内</td>\n<td></td>\n</tr>\n<tr>\n<td>20:20〜21:30</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※登壇者名・登壇タイトル・タイムテーブルは変更になる可能性があります。</p>\n<h2>パネルディスカッションで扱うテーマ</h2>\n<ul>\n<li>QAが早い段階から関わることで、仕様・リスク・開発の進め方はどう変わるのか</li>\n<li>QA・PdM・エンジニアが協働する中で、実際にどのような嬉しさや難しさがあるのか</li>\n<li>「テストしてくれる人」ではなく「品質についての問いを立てる人」として、QAはどのような価値を出せるのか</li>\n<li>バクラクQAで広がるキャリアと、これから挑戦できること</li>\n</ul>\n<p>当日は、登壇者それぞれの実体験をもとに、開発者からQAへの期待や、うまくいかなかった事例も含めてざっくばらんにお話しします。</p>\n<h2>登壇者</h2>\n<h3>中野 直樹 <a href=\"https://x.com/TestingGolem\" rel=\"nofollow\">@TestingGolem</a></h3>\n<p><img src=\"https://cdn-ak.f.st-hatena.com/images/fotolife/k/koyatest/20251128/20251128141556.png\" alt=\"nao_icon\" width=\"120\"></p>\n<p><strong>株式会社LayerX<br>バクラク事業部 QA部</strong></p>\n<p>エンタープライズシステムの開発・PMを経てQAエンジニアへ転向。ネット証券におけるテスト自動化・テストリードを経験後、不動産テック企業にてQAマネージャーとして品質改善の仕組み作りに従事。2023年4月よりLayerXに入社し、事業成長を支えるQA組織の構築を主導するとともに、プロダクト全体の品質戦略・テスト戦略の策定に従事。<br>社外では、ソフトウェアテスト技術者資格認定（JSTQB）技術委員、NPO法人ASTER理事、JaSST Tokyo実行委員を務めるなど、ソフトウェアテスト・品質保証に関する活動にも携わっている。</p>\n<h3>松山 晃大 <a href=\"https://x.com/matsu_qa\" rel=\"nofollow\">@matsu_qa</a></h3>\n<p><img src=\"https://ca.slack-edge.com/TBQ48385T-U05SMM10JDD-800367d23059-512\" alt=\"\" width=\"120\"></p>\n<p><strong>株式会社LayerX<br>バクラク事業部 QA部</strong></p>\n<p>2017年にメルカリへ入社し、USアプリ開発やカスタマーサポートツール、メルペイのキャッシュレス決済基盤、ソウゾウの法人向けECサイトなどでQAエンジニア・QAマネージャーとして品質保証に従事。2023年よりLayerXバクラク事業部に参画し、法人カード・勤怠管理などの開発でQAをリード。現在はHCM領域のQAマネージャーを務める。</p>\n<h3>日髙 雄介 <a href=\"https://x.com/onomimono\" rel=\"nofollow\">@onomimono</a></h3>\n<p><img src=\"https://res.cloudinary.com/deijphh6b/image/upload/v1766991288/IMG_1209_cre3s2.jpg\" width=\"120\" alt=\"hidac\"></p>\n<p><strong>株式会社LayerX<br>HCMプロダクト企画部 プロダクトマネージャー</strong></p>\n<p>2018年4月、新卒で株式会社リクルートに入社。<br>\n『Airレジ』のプロダクトマネージャーとして2年間従事し、SaaS領域にて新規事業の立ち上げを行う。<br>\n2025年11月、株式会社LayerXに入社。\n「バクラク勤怠」のプロダクトマネージャー及びHCM領域のPdMマネージャーを担当。</p>\n<h3>菊池 翔 <a href=\"https://x.com/kichion\" rel=\"nofollow\">@kichion</a></h3>\n<p><img src=\"https://gyazo.com/2e052fdec08972b13dd4703955bf39a1.jpeg\" width=\"120\" alt=\"kichion\"></p>\n<p><strong>株式会社LayerX<br>バクラク事業部 HCM開発部 部長／エンジニアリングマネージャー</strong><br>\n現在は、バクラク事業部 HCM開発部長・エンジニアリングマネージャーを務め、バックエンドからフロントエンドまで幅広く活動。<br>\n日本をいい形で子どもに引き継ぐために仕事をまっとうする。<br>\n最近の趣味は子ども、TVゲーム、3Dプリンタ、カフェ開業に向けての勉強など。</p>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<h3>行動規範</h3>\n<ul>\n<li><a href=\"https://jobs.layerx.co.jp/code-of-conduct\" rel=\"nofollow\">LayerX イベント行動規範</a></li>\n</ul>\n<p>※困ったことなどありましたら、当イベントページの「イベントへのお問い合わせ」までご連絡ください。</p>\n<h3>プライバシーポリシー</h3>\n<ul>\n<li><a href=\"https://layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX プライバシーポリシー</a></li>\n<li><a href=\"https://www.notion.so/e664016aaa4a46fabff2c231e875cd03?pvs=21\" rel=\"nofollow\">株式会社LayerX 採用プライバシーポリシー</a></li>\n</ul>\n<p>※ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善または新規企画のための分析、登壇参加者への採用情報などのご案内に利用いたします。</p>",
-      "url": "https://layerx.connpass.com/event/402770/",
-      "image_url": "https://media.connpass.com/thumbs/cf/1f/cf1fcdba54aff50b3151b84da02b89d4.png",
-      "hash_tag": "bakuraku_qa_study",
+      "id": 402775,
+      "title": "社内データをAIにどう活かすのか？Ubie & メルカリ流・データ基盤の整備とその活用事例",
+      "catch": "「データ整備」×「データ活用」の両輪で語る、生成AI時代の実践知。成功談も失敗談もぶっちゃけトーク！",
+      "description": "<h1>概要</h1>\n<p>「AIに渡すデータを、誰がどう整えるのか？」「整えたデータを、現場でどう成果につなげるのか？」</p>\n<p>生成AIの成果を最大化するには、データを <strong>「整備する」力</strong> とデータを <strong>「活用する」力</strong> の両輪が欠かせません。本イベントでは、Ubieとメルカリの実践者が、この2つの軸からリアルな経験をお話しします。</p>\n<ul>\n<li><strong>整備の軸</strong>：社内データをみんな（全社・チーム）が使えるように整備してきたエンジニアの経験</li>\n<li><strong>活用の軸</strong>：整備されたデータを業務改善・効率化につなげた非エンジニアチームの実例</li>\n</ul>\n<p>うまくいった話だけでなく失敗談も交えながら、前半は各社からのプレゼンテーション、後半はパネルディスカッション形式でお届けします。\nまた、最後に登壇者と参加者の交流会も実施予定です。参加者のみなさまも一緒にデータ周りのことをお話しましょう。\n　</p>\n<h1>🚀 このような方にオススメです！</h1>\n<ul>\n<li>生成AIを業務で利活用している方</li>\n<li>データアナリスト、データエンジニアの方</li>\n<li>社内外向けのデータマネジメントに携わっている方</li>\n<li>社内データの整備・データ基盤づくりに課題を感じている方</li>\n<li>整備されたデータを業務改善・効率化につなげた実例を知りたい方</li>\n<li>UbieやメルカリのAI・データ活用のリアルな事例に興味のある方</li>\n</ul>\n<h1>🏢 会場</h1>\n<ul>\n<li>メルカリ イベントスペース（オフライン開催）</li>\n<li>入館方法は参加者の方へ別途ご案内いたします</li>\n</ul>\n<h1>📝 タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00〜</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10〜</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20〜</td>\n<td style=\"text-align: left;\">プレゼンテーション①</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30〜</td>\n<td style=\"text-align: left;\">プレゼンテーション②</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40〜</td>\n<td style=\"text-align: left;\">プレゼンテーション③</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜</td>\n<td style=\"text-align: left;\">プレゼンテーション④</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00〜</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30〜</td>\n<td style=\"text-align: left;\">交流会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55〜</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<p>※内容は当日変更する可能性がございます。予めご了承ください。</p>\n<h1>🎤 登壇者</h1>\n<h2>Ubie株式会社 | 生成AI推進室 テックリード | syucream</h2>\n<p>ヤフー、メルカリにおいてプロダクト開発・社内基盤経験を経て Ubie に 2021 年入社。入社後はプロダクト開発やエンジニア採用、組織制度刷新などを経験し、現在はプロダクト開発基盤とAI社内推進を行うチームのリーダーに就任。最近のテーマは、AI で社内全員の能力をリバレッジして少人数だとしても大きなアウトカムを創出することを可能にすること。</p>\n<ul>\n<li><a href=\"https://x.com/syu_cream\" rel=\"nofollow\">X（@syu_cream）</a></li>\n</ul>\n<h2>Ubie株式会社 | 生成AI推進室 AI Operation Manager | Yoshiki</h2>\n<p>アドテクノロジー領域にて約6年間、SSPやアドネットワークのメディア担当として従事した後、2023年Ubie入社。入社後はAI Opsとして、事業部門の業務プロセス改善やAI活用の推進に従事。現在は病院向け事業にて、営業が成果を出すための「舞台装置」づくりに取り組む。CRM・データ基盤・生成AI基盤を横断で設計し、営業ナレッジの集約・活用、活動ログの自動収集、AIエージェントによる業務支援などを通じて、成果を構造的に伸ばす仕組みづくりに注力している。</p>\n<ul>\n<li><a href=\"https://x.com/yoshiki_aiops\" rel=\"nofollow\">X（@yoshiki_aiops） </a></li>\n</ul>\n<h2>株式会社メルカリ | JB(Japan Business) Data Team / Director | Wei Gong</h2>\n<p>ソニーでエンジニアとしてキャリアを開始し、慶應MBAを経て、マッキンゼーで経営コンサルティング、AIGでデータサイエンス、OYOでBI・グロース・プロダクト、Wolt/DoorDashでパートナー戦略を担当。2023年12月メルカリ入社。メルカリ ハロのBIチーム立ち上げと事業計画・営業戦略を経て、現在はHead of Data of Japan Businessとして日本事業のデータ組織を統括。AIによるデータ活用の仕組みづくりに取り組んでいる。</p>\n<h2>株式会社メルカリ | Corporate Risk Management Team | takashio</h2>\n<p>クレジットカード会社、Fintech企業でのリスクマネジメント業務を経てメルカリへ参画。現在はグループ全体のリスクマネジメントを担当。攻めと守りを両立し、ミッション達成の確実性を高めるため、AIを活用したERM（全社的リスクマネジメント）の実現に取り組んでいる。</p>\n<h1>モデレーター</h1>\n<h2>Ubie株式会社｜アクセラレーター本部 生成AI推進室｜盛田崇弘 tamosan</h2>\n<p>2021/09よりコーポレートエンジニアとして従事。現在は生成AIや社内業務において生成AIソリューションの利活用を検証・整備し、業務QCD向上を弊社従業員とともに推進しています。</p>\n<ul>\n<li><a href=\"https://x.com/tamosan_01\" rel=\"nofollow\">X（@tamosan_01） </a></li>\n<li><a href=\"https://note.com/tamosan_01/n/nfab36ff0f5f3\" rel=\"nofollow\">生成AIを「組織のOS」にするために。Ubieが実践するイネーブリングの全体像と\"3つの浸透カテゴリ\"</a></li>\n</ul>\n<h1>【注意事項】</h1>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止です。運営側の判断でご退出をお願いする場合があります。</li>\n<li>当日のイベント風景を写真撮影させていただく場合があります。</li>\n</ul>\n<h1>【共催企業】</h1>\n<h2>Ubie株式会社</h2>\n<ul>\n<li><a href=\"https://recruit.ubie.life/\" rel=\"nofollow\">Ubie株式会社 採用ページ</a></li>\n<li><a href=\"https://blog.ubie.tech/\" rel=\"nofollow\">Ubie株式会社 Tech blog</a></li>\n</ul>\n<h2>株式会社メルカリ</h2>\n<ul>\n<li><a href=\"https://engineering.mercari.com/blog/\" rel=\"nofollow\">エンジニアリングブログ</a></li>\n<li><a href=\"https://twitter.com/mercaridevjp\" rel=\"nofollow\">エンジニア向けTwitterアカウント</a></li>\n<li><a href=\"https://www.youtube.com/c/mercaridevjp/featured\" rel=\"nofollow\">エンジニア向けYouTube</a></li>\n<li><a href=\"https://jp.merpay.com/careers/\" rel=\"nofollow\">採用ページ</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/624F89F225/\" rel=\"nofollow\">Senior Analytics Engineer - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/0CFBF11B9E\" rel=\"nofollow\">Manager, Analytics Engineer - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/E9EEC9F115/\" rel=\"nofollow\">シニアデータマネジメントスペシャリスト / Senior Data Management Specialist - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/A29021CC47/\" rel=\"nofollow\">Engineering Manager, Data Ingestion - Mercari</a></li>\n<li>9/4に<a href=\"https://mercari.connpass.com/event/403633/\" rel=\"nofollow\">Mercari Data Engineering &amp; Career Talk〜メルカリのデータ組織・キャリアについてお話ししましょう！〜</a>を開催予定！</li>\n</ul>\n<h2>行動規範について</h2>\n<p>当イベントは、参加者と情報を共有するための場です。そのため、主催者を含む全ての参加者は下記ページに記載される行動規範に同意していただく必要があります。ご理解ご協力をお願いいたします。</p>\n<p><a href=\"https://about.mercari.com/event-code-of-conduct/&lt;br>\" rel=\"nofollow\">https://about.mercari.com/event-code-of-conduct/<br></a>\n<a href=\"https://ubie.life/event-code-of-conduct\" rel=\"nofollow\">https://ubie.life/event-code-of-conduct</a></p>\n<p>何か困ったことなどありましたら、当イベントページの「イベントへのお問い合わせ」からご連絡ください。</p>",
+      "url": "https://mercari.connpass.com/event/402775/",
+      "image_url": "https://media.connpass.com/thumbs/ea/1a/ea1a1e7901aa306b63ef3203cd92c446.png",
+      "hash_tag": "ubie_mercari_aitalk",
       "started_at": "2026-08-26T19:00:00+09:00",
-      "ended_at": "2026-08-26T21:30:00+09:00",
-      "published_at": "2026-08-06T09:15:00+09:00",
-      "limit": 60,
+      "ended_at": "2026-08-26T21:00:00+09:00",
+      "published_at": "2026-08-10T10:36:48+09:00",
+      "limit": null,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
-        "id": 6108,
-        "subdomain": "layerx",
-        "title": "LayerX",
-        "url": "https://layerx.connpass.com/"
+        "id": 1215,
+        "subdomain": "mercari",
+        "title": "メルカリ／Mercari",
+        "url": "https://mercari.connpass.com/"
       },
-      "address": "東京都中央区築地1-13-1 銀座松竹スクエア 5F イベントスペース",
-      "place": "株式会社LayerX",
-      "lat": "35.668390500000",
-      "lon": "139.769413700000",
-      "owner_id": 28439,
-      "owner_nickname": "naoki-nakano",
-      "owner_display_name": "NaokiNakano",
-      "accepted": 55,
+      "address": "港区六本木6丁目10番1号 六本木ヒルズ森タワー",
+      "place": "株式会社メルカリ　東京オフィス",
+      "lat": "35.660462100000",
+      "lon": "139.729278600000",
+      "owner_id": 122777,
+      "owner_nickname": "mercari_event",
+      "owner_display_name": "mercari_event",
+      "accepted": 48,
       "waiting": 0,
-      "updated_at": "2026-08-24T18:22:46+09:00"
+      "updated_at": "2026-08-25T19:45:36+09:00"
     },
     {
       "id": 403003,
@@ -464,9 +464,9 @@
       "owner_id": 1359,
       "owner_nickname": "kimotuki",
       "owner_display_name": "Yasuhiro Arai",
-      "accepted": 98,
+      "accepted": 117,
       "waiting": 0,
-      "updated_at": "2026-08-23T23:48:36+09:00"
+      "updated_at": "2026-08-26T01:01:35+09:00"
     },
     {
       "id": 403720,
@@ -674,6 +674,32 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-24T01:01:41+09:00"
+    },
+    {
+      "id": 382287,
+      "title": "【第二回】ケモインフォマティクス×ハッカソン合宿 in 横浜",
+      "catch": "",
+      "description": "<p>参加者への詳細情報は、招待メールにてご案内いたします。</p>\n<p>参加費は事前振り込み制となっております。お申込み後に、振込先情報をメールにてご案内いたしますので、期日までにお支払いをお願いいたします。 ※会場での現金支払いは受け付けておりません。</p>\n<p>HP: <a href=\"https://cheminformatics-hackathon.github.io/homepage/\" rel=\"nofollow\">https://cheminformatics-hackathon.github.io/homepage/</a><br>\n開催予告記事: https://zenn.dev/poclab_techblog/articles/b16997ac0336ff<br>\nX: <a href=\"https://x.com/chemoinfo_camp\" rel=\"nofollow\">https://x.com/chemoinfo_camp</a><br>\ninstagram: <a href=\"https://www.instagram.com/chemoinfomatics_camp/\" rel=\"nofollow\">https://www.instagram.com/chemoinfomatics_camp/</a></p>",
+      "url": "https://connpass.com/event/382287/",
+      "image_url": null,
+      "hash_tag": "",
+      "started_at": "2026-08-26T13:00:00+09:00",
+      "ended_at": "2026-08-27T12:00:00+09:00",
+      "published_at": "2026-06-11T17:27:14+09:00",
+      "limit": 50,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": null,
+      "address": "横浜市栄区上郷町1499-1",
+      "place": "横浜市上郷・森の家",
+      "lat": "35.344103700000",
+      "lon": "139.583390400000",
+      "owner_id": 936079,
+      "owner_nickname": "rikuo00o",
+      "owner_display_name": "rikuo00o",
+      "accepted": 20,
+      "waiting": 0,
+      "updated_at": "2026-06-11T17:27:14+09:00"
     }
   ]
 }
