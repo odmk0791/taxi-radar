@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-26T21:35:13.052261+09:00",
+  "fetched_at": "2026-08-26T22:47:06.695230+09:00",
   "date": "20260826",
   "count": 22,
   "events": [
@@ -140,7 +140,7 @@
       "published_at": "2026-07-28T17:41:50+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1558,
         "subdomain": "teratail",
@@ -219,37 +219,6 @@
       "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-08-26T18:51:57+09:00"
-    },
-    {
-      "id": 399013,
-      "title": "JAWS-UG NW-JAWS × コンテナ支部 　コンテナネットワークを学ぼう！！",
-      "catch": "コンテナネットワークわっしょーい！",
-      "description": "<h1>JAWS-UG コンテナ支部 第30回 <br></h1>\n<p>「<strong>コンテナネットワークを学ぼう会</strong>」です。<br></p>\n<p>※ 本イベントは、NW-JAWSとのコラボイベントとなります。</p>\n<h1>参加にあたって</h1>\n<ul>\n<li>ハンズオン形式のワークショップがございます。ご自身のPCをご持参ください。</li>\n</ul>\n<h1>本編ハンズオンについて</h1>\n<ul>\n<li>コンテナネットワークに関するハンズオン形式のワークショップを体験いただきます。</li>\n<li>Service ConnectやVPC Latticeを使って、ECSネットワークを学びます。機能の特徴や使い方をハンズオンで体験できるワークショップです。</li>\n<li>少し難易度の高いサービスのハンズオン(Level250程度)になるため、以下のような、ある程度NWもしくはコンテナ領域に詳しい方を対象としています。初心者の方もご参加いただいても全く問題はございませんが、時間の都合上解説がしきれない可能性がある点あらかじめご了承ください。<ul>\n<li>ECSでアプリを作ったことがある人</li>\n<li>VPC間接続経験がある(TransitGW/CloudWANなど)</li>\n</ul>\n</li>\n</ul>\n<h2>ハンズオンにあたって</h2>\n<ul>\n<li>今回のハンズオンではAWSアカウントは用意する必要はありませんが、ハンズオン環境を利用するために別途事前準備が必要となります。</li>\n<li>未作成の方はお手数ですが当日までに、下記を参考にBuilder IDの作成をお願いいたします。<ul>\n<li><a href=\"https://docs.aws.amazon.com/ja_jp/signin/latest/userguide/create-aws_builder_id.html\" rel=\"nofollow\">本ページに記載されている手順</a>にしたがって、Builder IDを作成してください。</li>\n<li>参考：<a href=\"https://note.com/s_numaguchi/n/nd5126833389b\" rel=\"nofollow\">AWS沼口さんによるBuilders id登録の紹介</a></li>\n</ul>\n</li>\n</ul>\n<p>※運営への登録メールアドレスなどの共有は不要です。</p>\n<h1>アジェンダ</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">開始</th>\n<th style=\"text-align: center;\">終了</th>\n<th>タイトル</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">19:05</td>\n<td>オープニング</td>\n<td>運営</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05</td>\n<td style=\"text-align: center;\">19:10</td>\n<td>会場スポンサーセッション</td>\n<td>スポンサー様より</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">19:30</td>\n<td>コンテナネットワーク入門</td>\n<td>TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30</td>\n<td style=\"text-align: center;\">20:50</td>\n<td>コンテナネットワークワークショップ</td>\n<td>TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:50</td>\n<td style=\"text-align: center;\">21:00</td>\n<td>クロージング</td>\n<td>運営</td>\n</tr>\n</tbody>\n</table>\n<p>※各セッションの時間・内容は変更される可能性がございますので、予めご容赦願います。</p>\n<h2>ご注意</h2>\n<ul>\n<li>写真、ソーシャル拡散はWelcomeです。但しNGの箇所については発表者に従ってください。</li>\n<li>JAWS-UGイベントへの参加者は必ず以下のルール、マナーをご確認ください。<br>\n<a href=\"https://jaws-ug.jp/for-participant/\" rel=\"nofollow\">JAWS-UGに参加するルールとマナー</a></li>\n<li>その他、お気付きの点がございましたら、コンテナ支部もしくはNW-JAWS 運営メンバーへお知らせください。</li>\n</ul>",
-      "url": "https://jawsug-container.connpass.com/event/399013/",
-      "image_url": "https://media.connpass.com/thumbs/54/e8/54e8524d02a046e793a0161737676c8a.png",
-      "hash_tag": "jawsug_ct",
-      "started_at": "2026-08-26T19:00:00+09:00",
-      "ended_at": "2026-08-26T21:00:00+09:00",
-      "published_at": "2026-08-01T18:01:00+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 1408,
-        "subdomain": "jawsug-container",
-        "title": "JAWS-UG コンテナ支部",
-        "url": "https://jawsug-container.connpass.com/"
-      },
-      "address": "東京都港区虎ノ門1-17-1(虎ノ門ヒルズビジネスタワー29F)",
-      "place": "KDDI iret株式会社様",
-      "lat": "35.667781900000",
-      "lon": "139.750068200000",
-      "owner_id": 661958,
-      "owner_nickname": "yuuu-uuuu_9998",
-      "owner_display_name": "Yuuuuuuu",
-      "accepted": 45,
-      "waiting": 0,
-      "updated_at": "2026-08-26T19:27:54+09:00"
     },
     {
       "id": 400850,
@@ -407,6 +376,37 @@
       "updated_at": "2026-08-26T13:36:09+09:00"
     },
     {
+      "id": 399013,
+      "title": "JAWS-UG NW-JAWS × コンテナ支部 　コンテナネットワークを学ぼう！！",
+      "catch": "コンテナネットワークわっしょーい！",
+      "description": "<h1>JAWS-UG コンテナ支部 第30回 <br></h1>\n<p>「<strong>コンテナネットワークを学ぼう会</strong>」です。<br></p>\n<p>※ 本イベントは、NW-JAWSとのコラボイベントとなります。</p>\n<h1>参加にあたって</h1>\n<ul>\n<li>ハンズオン形式のワークショップがございます。ご自身のPCをご持参ください。</li>\n</ul>\n<h1>本編ハンズオンについて</h1>\n<ul>\n<li>コンテナネットワークに関するハンズオン形式のワークショップを体験いただきます。</li>\n<li>Service ConnectやVPC Latticeを使って、ECSネットワークを学びます。機能の特徴や使い方をハンズオンで体験できるワークショップです。</li>\n<li>少し難易度の高いサービスのハンズオン(Level250程度)になるため、以下のような、ある程度NWもしくはコンテナ領域に詳しい方を対象としています。初心者の方もご参加いただいても全く問題はございませんが、時間の都合上解説がしきれない可能性がある点あらかじめご了承ください。<ul>\n<li>ECSでアプリを作ったことがある人</li>\n<li>VPC間接続経験がある(TransitGW/CloudWANなど)</li>\n</ul>\n</li>\n</ul>\n<h2>ハンズオンにあたって</h2>\n<ul>\n<li>今回のハンズオンではAWSアカウントは用意する必要はありませんが、ハンズオン環境を利用するために別途事前準備が必要となります。</li>\n<li>未作成の方はお手数ですが当日までに、下記を参考にBuilder IDの作成をお願いいたします。<ul>\n<li><a href=\"https://docs.aws.amazon.com/ja_jp/signin/latest/userguide/create-aws_builder_id.html\" rel=\"nofollow\">本ページに記載されている手順</a>にしたがって、Builder IDを作成してください。</li>\n<li>参考：<a href=\"https://note.com/s_numaguchi/n/nd5126833389b\" rel=\"nofollow\">AWS沼口さんによるBuilders id登録の紹介</a></li>\n</ul>\n</li>\n</ul>\n<p>※運営への登録メールアドレスなどの共有は不要です。</p>\n<h1>アジェンダ</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">開始</th>\n<th style=\"text-align: center;\">終了</th>\n<th>タイトル</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">19:00</td>\n<td style=\"text-align: center;\">19:05</td>\n<td>オープニング</td>\n<td>運営</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05</td>\n<td style=\"text-align: center;\">19:10</td>\n<td>会場スポンサーセッション</td>\n<td>スポンサー様より</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:10</td>\n<td style=\"text-align: center;\">19:30</td>\n<td>コンテナネットワーク入門</td>\n<td>TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:30</td>\n<td style=\"text-align: center;\">20:50</td>\n<td>コンテナネットワークワークショップ</td>\n<td>TBD</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20:50</td>\n<td style=\"text-align: center;\">21:00</td>\n<td>クロージング</td>\n<td>運営</td>\n</tr>\n</tbody>\n</table>\n<p>※各セッションの時間・内容は変更される可能性がございますので、予めご容赦願います。</p>\n<h2>ご注意</h2>\n<ul>\n<li>写真、ソーシャル拡散はWelcomeです。但しNGの箇所については発表者に従ってください。</li>\n<li>JAWS-UGイベントへの参加者は必ず以下のルール、マナーをご確認ください。<br>\n<a href=\"https://jaws-ug.jp/for-participant/\" rel=\"nofollow\">JAWS-UGに参加するルールとマナー</a></li>\n<li>その他、お気付きの点がございましたら、コンテナ支部もしくはNW-JAWS 運営メンバーへお知らせください。</li>\n</ul>",
+      "url": "https://jawsug-container.connpass.com/event/399013/",
+      "image_url": "https://media.connpass.com/thumbs/54/e8/54e8524d02a046e793a0161737676c8a.png",
+      "hash_tag": "jawsug_ct",
+      "started_at": "2026-08-26T19:00:00+09:00",
+      "ended_at": "2026-08-26T21:00:00+09:00",
+      "published_at": "2026-08-01T18:01:00+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 1408,
+        "subdomain": "jawsug-container",
+        "title": "JAWS-UG コンテナ支部",
+        "url": "https://jawsug-container.connpass.com/"
+      },
+      "address": "東京都港区虎ノ門1-17-1(虎ノ門ヒルズビジネスタワー29F)",
+      "place": "KDDI iret株式会社様",
+      "lat": "35.667781900000",
+      "lon": "139.750068200000",
+      "owner_id": 661958,
+      "owner_nickname": "yuuu-uuuu_9998",
+      "owner_display_name": "Yuuuuuuu",
+      "accepted": 45,
+      "waiting": 0,
+      "updated_at": "2026-08-26T19:27:54+09:00"
+    },
+    {
       "id": 403003,
       "title": "【AI駆動開発（番外編）】現場変革スペシャル #1",
       "catch": "顧客の「現場」に潜り込み、その手で価値を出し切る——AI時代の価値創出のあり方を徹底追求、第1回！！",
@@ -512,7 +512,7 @@
       "published_at": "2026-07-20T17:49:21+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都港区赤坂2-12-33 永楽ビル B1F",
       "place": "TRANSAM（赤坂・貸切）",
