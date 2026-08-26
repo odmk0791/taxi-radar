@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-26T22:47:06.695230+09:00",
+  "fetched_at": "2026-08-26T23:36:11.777661+09:00",
   "date": "20260826",
-  "count": 22,
+  "count": 23,
   "events": [
     {
       "id": 400051,
@@ -674,6 +674,32 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-24T01:01:41+09:00"
+    },
+    {
+      "id": 382287,
+      "title": "【第二回】ケモインフォマティクス×ハッカソン合宿 in 横浜",
+      "catch": "",
+      "description": "<p>参加者への詳細情報は、招待メールにてご案内いたします。</p>\n<p>参加費は事前振り込み制となっております。お申込み後に、振込先情報をメールにてご案内いたしますので、期日までにお支払いをお願いいたします。 ※会場での現金支払いは受け付けておりません。</p>\n<p>HP: <a href=\"https://cheminformatics-hackathon.github.io/homepage/\" rel=\"nofollow\">https://cheminformatics-hackathon.github.io/homepage/</a><br>\n開催予告記事: https://zenn.dev/poclab_techblog/articles/b16997ac0336ff<br>\nX: <a href=\"https://x.com/chemoinfo_camp\" rel=\"nofollow\">https://x.com/chemoinfo_camp</a><br>\ninstagram: <a href=\"https://www.instagram.com/chemoinfomatics_camp/\" rel=\"nofollow\">https://www.instagram.com/chemoinfomatics_camp/</a></p>",
+      "url": "https://connpass.com/event/382287/",
+      "image_url": null,
+      "hash_tag": "",
+      "started_at": "2026-08-26T13:00:00+09:00",
+      "ended_at": "2026-08-27T12:00:00+09:00",
+      "published_at": "2026-06-11T17:27:14+09:00",
+      "limit": 50,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": null,
+      "address": "横浜市栄区上郷町1499-1",
+      "place": "横浜市上郷・森の家",
+      "lat": "35.344103700000",
+      "lon": "139.583390400000",
+      "owner_id": 936079,
+      "owner_nickname": "rikuo00o",
+      "owner_display_name": "rikuo00o",
+      "accepted": 20,
+      "waiting": 0,
+      "updated_at": "2026-06-11T17:27:14+09:00"
     }
   ]
 }
