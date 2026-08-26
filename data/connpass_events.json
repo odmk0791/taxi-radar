@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-26T13:32:02.133436+09:00",
+  "fetched_at": "2026-08-26T14:26:15.277404+09:00",
   "date": "20260826",
-  "count": 23,
+  "count": 22,
   "events": [
     {
       "id": 400051,
@@ -92,7 +92,7 @@
       "owner_id": 222164,
       "owner_nickname": "negi-douf",
       "owner_display_name": "ひらったー",
-      "accepted": 20,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-08-25T09:38:54+09:00"
     },
@@ -126,37 +126,6 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-08-13T16:28:26+09:00"
-    },
-    {
-      "id": 402012,
-      "title": "人員ゼロから事業を立て直し、3500人に使われる新規サービスを2人で2ヶ月半でリリースできた理由",
-      "catch": "agile effect meetup #8",
-      "description": "<h1>【現地限定・オフレコ】全員解散。人員ゼロから事業を立て直し、2ヶ月半で日々3,500人に使われる新規サービスをゼロから２人で作れた理由</h1>\n<hr>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>: 2026年8月26日（水）19:00から22:00（受付 18:45から）</li>\n<li><strong>会場</strong>: レバレジーズ株式会社 渋谷金王タワー10F（〒150-0043 東京都渋谷区渋谷3丁目6-7）</li>\n<li><strong>形式</strong>: 現地のみ／オンライン配信なし／録画・録音なし</li>\n<li><strong>定員</strong>: 50名（応募多数の場合は主催側で選考させていただきます）</li>\n<li><strong>参加費</strong>: 1,000円</li>\n<li><strong>懇親会</strong>: 希望者のみ</li>\n<li><strong>申込締切</strong>: 2026年8月21日（金）23:59</li>\n<li><strong>参加可否のご連絡</strong>: 2026年8月24日（月）までにメールでお知らせします</li>\n</ul>\n<hr>\n<h2>このイベントについて</h2>\n<p><strong>チーム解散と再起を、経営・事業・現場の3つの目線で語り直す夜。</strong></p>\n<p>とある新規事業チームが解散してから、再起するまで。</p>\n<p>立ち上げた事業は思うように成長せず、その焦りからチームメンバーのエンゲージメントも下がっていく。\n経営判断でチームは解体。残ったのは、プロダクトマネージャー1名とアジャイルコーチ1名。</p>\n<p>人員ゼロからの、事業・組織の抜本的な見直し。そんな最大のピンチの中で、最大のチャンスが訪れました。\nその最初の勝負が、100万行を超える大規模サービスをプロダクトマネージャと、新たに参画したエンジニア計2人で全くゼロの状態から作ること。</p>\n<p>加えて、日々その3500名が既存サービスで使っているという、いわばリプレイスを伴うプロジェクトであるということ。\nそして、企画から3,500名の移行完了までに与えられた時間は、2ヶ月半。</p>\n<p>AI時代だから可能だった部分は、確かにあります。ただ、それだけではありません。\n事業を立て直す局面の緊張感、少人数で走り切るための徹底的なリーン思考、仕組みの構築、移管に伴うステークホルダーマネジメント、そして絶対に諦めないマインドセット。AI時代における人間の存在価値を肌で感じました。</p>\n<p>成功した後に整理された綺麗な話をするつもりはありません。\nこの会では、事業の目線、経営の目線、チームの目線。複数の視座から同じ出来事がどう見えていたかを、機密にあたる詳細は削ぎ落としたうえで、生々しいまま現地限定でお話します。</p>\n<hr>\n<h2>この会で得られるもの</h2>\n<ul>\n<li>経営層は何を見てどう判断するのか。そしてその判断をどう受け止め、どう動いたのかの実例</li>\n<li>チームが再起するまでに「何を、どの順番で決めたか」という意思決定の型</li>\n<li>少人数×AI前提で、現実的に達成できないスケジュールをやり切るチームの動かし方</li>\n<li>経営・事業・チームの3つの目線で同じ出来事を見る複眼の視点。自分の組織の見え方が変わります</li>\n<li>自分のチームの立て直しに使える考え方とチェックポイント</li>\n<li>同じ立場で悩むマネジメント層との、本音ベースのつながり</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table style=\"font-size: 14px;\">\n  <thead>\n    <tr style=\"background-color: #f5f5f5; text-align: left;\">\n      <th style=\"border: 1px solid #ccc; padding: 5px 10px;\">時刻</th>\n      <th style=\"border: 1px solid #ccc; padding: 5px 10px;\">タイトル</th>\n      <th style=\"border: 1px solid #ccc; padding: 5px 10px;\">備考</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">18:45 〜 19:00</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">受付・開場</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\"></td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">19:00 〜 19:10</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">オープニング</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">本日のイベントの趣旨やタイムテーブルについてご案内します。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">19:10 〜 19:50</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">対談</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">「全員解散から、3,500人に使われる新規サービスを作るまで」（西 × 森）をテーマに、これまでの歩みと裏側の物語をお話しします。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">19:50 〜 20:30</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">対話セッション</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">西の話を踏まえ、皆様が抱える組織の課題を参加者同士で共有し合い、ディスカッションを通して深掘りする時間です。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">20:30 〜 20:45</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">プロダクトと想い</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">対談でお話しした「物語の続き」として、新サービスの外販開始についてご案内いたします。また、今後のアジャイルエフェクト事業としての構想や想いについても共有させてください。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">20:45 〜 21:00</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">クロージング</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">本日のまとめと、アンケートのご記入、優先案内のご登録についてご案内いたします。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">21:00 〜 22:00</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">懇親会</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">登壇者や参加者同士の交流の場です。お飲み物をご用意しておりますので、リラックスした雰囲気でお気軽にご歓談ください。</td></tr>\n  </tbody>\n</table>\n\n<h2>話すこと</h2>\n<ul>\n<li>現場と経営の間で何が起きていたか</li>\n<li>経営判断と、当事者としての受け止め</li>\n<li>3,500人に使われる新規サービスを、２人・2ヶ月半でゼロから作り切った仕組み</li>\n<li>AI時代だから可能だったことと、AIに関係なく効いた緊張感・マインドセット・アプローチ</li>\n<li>いま外販に向けて開発中のプロダクトが見ている景色（コンセプトレベルでご紹介）</li>\n</ul>\n<h2>話さないこと</h2>\n<ul>\n<li>個別の社員名、機密にあたる数値、内部資料</li>\n<li>経営判断の詳細</li>\n</ul>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>チーム・組織を率いる立場の方（PM / EM / PO / 部門リーダー）</li>\n<li>チームの立て直し・再構築に、いままさに向き合っている方</li>\n<li>少人数×AI前提の開発体制への移行を考えているマネジメント層</li>\n<li>自チームの問題解決のヒントを得たい方</li>\n</ul>\n<p>※本イベントは、チーム・組織を率いるマネジメント層の方々をメインの対象としています。\n開発実務を担うエンジニアの方をメインの対象とする会に関しても、別途実施を検討しています。\n※大変恐れ入りますが、以下に該当する場合はお申込みをご遠慮いただけると幸いでございます。</p>\n<h2>対象としない方</h2>\n<p>恐れ入りますが、以下に該当する方のお申し込みはお断りさせていただきます。</p>\n<ul>\n<li>転職活動を目的とされる方</li>\n<li>他社製品の営業を目的とされる方</li>\n<li>内容を録画・録音・SNS投稿することを前提とされる方</li>\n</ul>\n<hr>\n<h2>懇親会について</h2>\n<p>登壇者とモデレーターも最後まで参加します。本編で話し切れなかった細部は、ここで直接聞いてください。</p>\n<p><img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/IMG_9151_masked.jpg\" width=\"220\" alt=\"懇親会\">\n<img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/ChatGPT%20Image%202026%E5%B9%B47%E6%9C%8827%E6%97%A5%2016_16_09-1.png\" width=\"220\" alt=\"懇親会\">\n<img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/IMG_9153_masked.jpg\" width=\"220\" alt=\"懇親会\"></p>\n<p>※懇親会は希望者のみのご参加です。軽食とドリンクをご用意いたします。申込フォームで参加の有無をお選びください</p>\n<h2>お申し込みにあたってのお願い</h2>\n<p>このイベントは、現地でしか話せない粒度の内容を扱うため、参加者の方々を以下の方針で絞らせていただきます。あらかじめご了承ください。</p>\n<ul>\n<li><strong>会社のメールアドレスでのお申し込みをお願いします</strong>（Gmail、Yahoo!メール等のフリーメールでのお申し込みはお受けできません）</li>\n<li>申込多数の場合、<strong>主催側で選考</strong> させていただきます</li>\n</ul>\n<p>申込フォームでは、<strong>懇親会への参加有無</strong>をお選びください。また、任意項目として「現在のチーム状況・直近の組織課題」を記入する欄を設けています。当日のディスカッションをより有意義にするための情報として活用しますので、可能な範囲でお書きいただけると嬉しいです。</p>\n<hr>\n<h2>登壇者</h2>\n<div style=\"text-align: center;\">\n<img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-07-27%2017.49.49.png\" width=\"150\" alt=\"懇親会\">\n</div>\n\n<p><strong>西 慎一郎（にし しんいちろう）</strong><br>\nレバレジーズ株式会社 / プロダクトマネージャー<br>\nagile effect事業を企画・立ち上げを経て、チーム解散後の再起と、3,500人に使われる新規サービスの立ち上げを主導・統括。現在は、新規サービスの外販に向けた営業・開発・マーケティングについても主導・統括している。</p>\n<p><br></p>\n<div style=\"text-align: center;\">\n  <img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-07-24%2017.44.48.png\" width=\"150\" alt=\"森\">\n</div>\n<p><strong>モデレーター: 森 一樹（もり かずき）</strong><br>\nagile effect事業でレバレジーズと長く協業。アジャイルコーチとして事業に参画。</p>\n<hr>\n<h2>主催</h2>\n<p>レバレジーズ株式会社 agile effect</p>\n<p>お問い合わせ: agile-effect-admin@leverages.jp</p>",
-      "url": "https://teratail.connpass.com/event/402012/",
-      "image_url": "https://media.connpass.com/thumbs/46/00/460079eeec11359e2d0ddd5f1e457985.png",
-      "hash_tag": "アジャイル",
-      "started_at": "2026-08-26T19:00:00+09:00",
-      "ended_at": "2026-08-26T22:00:00+09:00",
-      "published_at": "2026-07-28T17:41:50+09:00",
-      "limit": 50,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 1558,
-        "subdomain": "teratail",
-        "title": "Tech Leverages",
-        "url": "https://teratail.connpass.com/"
-      },
-      "address": "〒150-0043 東京都渋谷区渋谷３丁目６−７ 渋谷金王タワー",
-      "place": "渋谷",
-      "lat": "35.657959400000",
-      "lon": "139.705890100000",
-      "owner_id": 1012108,
-      "owner_nickname": "konatsu-maekawa",
-      "owner_display_name": "konatsu-maekawa",
-      "accepted": 46,
-      "waiting": 0,
-      "updated_at": "2026-08-21T01:01:44+09:00"
     },
     {
       "id": 403720,
@@ -216,7 +185,7 @@
       "owner_id": 661958,
       "owner_nickname": "yuuu-uuuu_9998",
       "owner_display_name": "Yuuuuuuu",
-      "accepted": 57,
+      "accepted": 56,
       "waiting": 0,
       "updated_at": "2026-08-23T19:25:01+09:00"
     },
@@ -286,7 +255,7 @@
       "id": 401209,
       "title": "Japan Datadog User Group Meetup#21@東京",
       "catch": "Datadog を利用しているユーザーのためのユーザーによるコミュニティです",
-      "description": "<h1>概要</h1>\n<p>日本で Datadog を利用しているユーザーによるユーザのためのコミュニティのイベントです。</p>\n<ul>\n<li>ユーザー会は <a href=\"https://jdd-ug.github.io/\" rel=\"nofollow\">Japan Datadog User Group</a> です。</li>\n<li>誰でも参加可能なコミュニティ <a href=\"https://t.co/dpBETMaosn\" rel=\"nofollow\">Slack Workspace</a> も是非。</li>\n</ul>\n<h1>オンライン配信</h1>\n<p>今回も運営メンバーによるオンライン配信を行います。<br>\n画面共有に手間取ったり、映像/音声の不具合サポートができなかったりするかもしれません。  </p>\n<p>参加者によるボランタリーも期待します。\nサービスレベルはベストエフォートです！</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>登壇タイトル</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:40 - 19:00</td>\n<td>受付開始 / 開始前の懇談タイム</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:00 - 19:05</td>\n<td>オープニング / 司会</td>\n<td><a href=\"https://connpass.com/user/yokoyama_tatsuo/\" rel=\"nofollow\">tatsuo48</a></td>\n</tr>\n<tr>\n<td>19:05 - 19:15</td>\n<td>発表1. ALB ログから Trace を気合で繋げる技術</td>\n<td>Fohte / ウォンテッドリー株式会社（会場スポンサー）</td>\n</tr>\n<tr>\n<td>19:15 - 19:25</td>\n<td>発表2. AI × Datadog MCP でコスト削減まで実現したMetric Streams の導入</td>\n<td>三口 宗武</td>\n</tr>\n<tr>\n<td>19:25 - 19:35</td>\n<td>発表3. Datadog で始める FinOps</td>\n<td>山本 哲也</td>\n</tr>\n<tr>\n<td>19:35 - 19:40</td>\n<td>休憩・時間調整</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:40 - 19:45</td>\n<td>LT1. AIにデバッグさせて気づいた、「正しい計装」がAIの精度を決めるという話</td>\n<td>出町 陽平</td>\n</tr>\n<tr>\n<td>19:45 - 19:50</td>\n<td>LT2. LWA+ EchoのGoサーバーにDatadog APMを導入した事例紹介</td>\n<td>國分 虎海太</td>\n</tr>\n<tr>\n<td>19:50 - 19:55</td>\n<td>LT3. トレースが送信されない不具合のデバッグ話 or パフォチュー時 Datadog を使っているかの話</td>\n<td>市川 裕也</td>\n</tr>\n<tr>\n<td>19:55 - 20:00</td>\n<td>LT4. チーム内でのDatadog布教活動</td>\n<td>棚井龍之介（たないりゅうのすけ）</td>\n</tr>\n<tr>\n<td>20:00 - 21:00</td>\n<td>懇親会(自由解散)</td>\n<td>ウォンテッドリー株式会社にて</td>\n</tr>\n</tbody>\n</table>\n<h1>登壇一覧</h1>\n<h2>📜 発表1. ALB ログから Trace を気合で繋げる技術</h2>\n<p>内容<br>\nAWS ALB は、リクエストに AWS の X-Ray 形式の Trace ID しか残しません。一方 Datadog の tracer はこの形式を解釈せず、ALB も W3C や Datadog 形式の trace context を生成しません。結果として ALB のログと Datadog APM の trace は共通の Trace ID を持たず、接続されません。<br>\nこの難題に、Envoy の HTTP early header mutation を使い力技でトレースを繋げた方法を紹介します。</p>\n<ul>\n<li>Fohte　<a href=\"https://x.com/fohte\" rel=\"nofollow\">@fohte</a> / ウォンテッドリー株式会社</li>\n</ul>\n<h2>📜 発表2. AI × Datadog MCP でコスト削減まで実現した Metric Streams の導入</h2>\n<p>内容<br>\nClaude Code と Datadog MCP を活用して AWS メトリクスの連携方式を移行したら、遅延解消と思わぬコスト削減まで実現できたという話です!</p>\n<ul>\n<li>三口宗武　<a href=\"https://x.com/three_mouth_ago\" rel=\"nofollow\">@three_mouth_ago</a> / 株式会社ソーシャルPLUS</li>\n</ul>\n<h2>📜 発表3. Datadog で始める FinOps</h2>\n<p>内容\nサービス運用と切っても切り離せない FinOps 。<br>\n一方でなかなか整備まで手が回らない領域でもあります。<br>\n今回は Datadog の FinOps の機能について触れながらどのように活用しているのかを紹介します。  </p>\n<ul>\n<li>山本 哲也 <a href=\"https://x.com/_tetsuya28\" rel=\"nofollow\">@_tetsuya28</a> / 株式会社AbemaTV</li>\n</ul>\n<h2>📜 LT1. AIにデバッグさせて気づいた、「正しい計装」がAIの精度を決めるという話</h2>\n<p>内容\nDevin に調査を投げる運用を回していたとき、AIが自分で「このサービスのログにtrace_idが無いので、トレースからログへ辿れない」と音を上げました。AIの限界ではなく、こちらの計装の穴が原因でした。</p>\n<p>APM・ログ・RUM が最初から1箇所に揃っている。それがDatadogの強みで、だからこそこちらが線さえ通せば、AIは「ここだけ」見れば足りる状態になります。逆に言えば、その1本の線が切れているところで、AIの調査は止まります。</p>\n<p>検知（monitor）→ 識別（span タグ）→ 連結（ctx 伝播 / trace 相関）\nという順序があり、下から積まないと上は効かない、という3段の型を5分で持ち帰っていただければと思います。</p>\n<ul>\n<li><a href=\"https://www.linkedin.com/in/yohei-demachi-8265731a7/\" rel=\"nofollow\">出町 陽平</a> / フリーランス</li>\n</ul>\n<h2>📜 LT2. LWA+ EchoのGoサーバーにDatadog APMを導入した事例紹介</h2>\n<p>内容 \nLambda Web Adapterで動くWeb APIにDatadog APMを導入した事例紹介です。Orchestrionを使用した場合につまづいた点と今回行った対処法を紹介します。</p>\n<ul>\n<li>氏名　<a href=\"https://www.linkedin.com/in/kota-kokubun-9897a61ab/\" rel=\"nofollow\">國分 虎海太 (KOKUBUN Kota)</a> / 株式会社ウェザーニューズ</li>\n</ul>\n<h2>📜 LT3. トレースが送信されない不具合のデバッグ話 or パフォチュー時 Datadog を使っているかの話</h2>\n<p>内容\n全リクエストのレイテンシをどこに保存するか — Datadog APM と Flex Logs の比較</p>\n<ul>\n<li>市川 裕也　フューチャー株式会社</li>\n</ul>\n<h2>📜 LT4. チーム内でのDatadog布教活動</h2>\n<p>内容\nCSチームでのDatadog活用事例</p>\n<ul>\n<li>棚井龍之介（たないりゅうのすけ） フューチャー株式会社</li>\n</ul>\n<h1>運営スタッフ</h1>\n<ul>\n<li><a href=\"https://connpass.com/user/shiroi/\" rel=\"nofollow\">shiroi</a></li>\n<li>告知 <a href=\"https://connpass.com/user/mopp/\" rel=\"nofollow\">mopp</a></li>\n<li>企画 <a href=\"https://connpass.com/user/ichirokano/\" rel=\"nofollow\">1kano</a></li>\n<li>受付 <a href=\"https://connpass.com/user/vicugna/\" rel=\"nofollow\">vicugna</a></li>\n<li>司会 <a href=\"https://connpass.com/user/yokoyama_tatsuo/\" rel=\"nofollow\">tatsuo48</a></li>\n<li>懇親会 [imamura-ko-0314](<a href=\"https://connpass.com/user/imamura-ko-0314/\" rel=\"nofollow\">https://connpass.com/user/imamura-ko-0314/</a></li>\n</ul>",
+      "description": "<h1>概要</h1>\n<p>日本で Datadog を利用しているユーザーによるユーザのためのコミュニティのイベントです。</p>\n<ul>\n<li>ユーザー会は <a href=\"https://jdd-ug.github.io/\" rel=\"nofollow\">Japan Datadog User Group</a> です。</li>\n<li>誰でも参加可能なコミュニティ <a href=\"https://t.co/dpBETMaosn\" rel=\"nofollow\">Slack Workspace</a> も是非。</li>\n</ul>\n<h1>オンライン配信</h1>\n<p>今回も運営メンバーによるオンライン配信を行います。<br>\n画面共有に手間取ったり、映像/音声の不具合サポートができなかったりするかもしれません。  </p>\n<p>参加者によるボランタリーも期待します。\nサービスレベルはベストエフォートです！</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>登壇タイトル</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:40 - 19:00</td>\n<td>受付開始 / 開始前の懇談タイム</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:00 - 19:05</td>\n<td>オープニング / 司会</td>\n<td><a href=\"https://connpass.com/user/yokoyama_tatsuo/\" rel=\"nofollow\">tatsuo48</a></td>\n</tr>\n<tr>\n<td>19:05 - 19:15</td>\n<td>発表1. ALB ログから Trace を気合で繋げる技術</td>\n<td>Fohte / ウォンテッドリー株式会社（会場スポンサー）</td>\n</tr>\n<tr>\n<td>19:15 - 19:25</td>\n<td>発表2. AI × Datadog MCP でコスト削減まで実現したMetric Streams の導入</td>\n<td>三口 宗武</td>\n</tr>\n<tr>\n<td>19:25 - 19:35</td>\n<td>発表3. Datadog で始める FinOps</td>\n<td>山本 哲也</td>\n</tr>\n<tr>\n<td>19:35 - 19:40</td>\n<td>休憩・時間調整</td>\n<td>--</td>\n</tr>\n<tr>\n<td>19:40 - 19:45</td>\n<td>LT1. AIにデバッグさせて気づいた、「正しい計装」がAIの精度を決めるという話</td>\n<td>出町 陽平</td>\n</tr>\n<tr>\n<td>19:45 - 19:50</td>\n<td>LT2. LWA+ EchoのGoサーバーにDatadog APMを導入した事例紹介</td>\n<td>國分 虎海太</td>\n</tr>\n<tr>\n<td>19:50 - 19:55</td>\n<td>LT3. トレースが送信されない不具合のデバッグ話 or パフォチュー時 Datadog を使っているかの話</td>\n<td>市川 裕也</td>\n</tr>\n<tr>\n<td>19:55 - 20:00</td>\n<td>LT4. チーム内でのDatadog布教活動</td>\n<td>棚井龍之介（たないりゅうのすけ）</td>\n</tr>\n<tr>\n<td>20:00 - 21:00</td>\n<td>懇親会(自由解散)</td>\n<td>ウォンテッドリー株式会社にて</td>\n</tr>\n</tbody>\n</table>\n<h1>登壇一覧</h1>\n<h2>📜 発表1. ALB ログから Trace を気合で繋げる技術</h2>\n<p>内容<br>\nAWS ALB は、リクエストに AWS の X-Ray 形式の Trace ID しか残しません。一方 Datadog の tracer はこの形式を解釈せず、ALB も W3C や Datadog 形式の trace context を生成しません。結果として ALB のログと Datadog APM の trace は共通の Trace ID を持たず、接続されません。<br>\nこの難題に、Envoy の HTTP early header mutation を使い力技でトレースを繋げた方法を紹介します。</p>\n<ul>\n<li>Fohte　<a href=\"https://x.com/fohte\" rel=\"nofollow\">@fohte</a> / ウォンテッドリー株式会社</li>\n</ul>\n<h2>📜 発表2. AI × Datadog MCP でコスト削減まで実現した Metric Streams の導入</h2>\n<p>内容<br>\nClaude Code と Datadog MCP を活用して AWS メトリクスの連携方式を移行したら、遅延解消と思わぬコスト削減まで実現できたという話です!</p>\n<ul>\n<li>三口宗武　<a href=\"https://x.com/three_mouth_ago\" rel=\"nofollow\">@three_mouth_ago</a> / 株式会社ソーシャルPLUS</li>\n</ul>\n<h2>📜 発表3. Datadog で始める FinOps</h2>\n<p>内容\nサービス運用と切っても切り離せない FinOps 。<br>\n一方でなかなか整備まで手が回らない領域でもあります。<br>\n今回は Datadog の FinOps の機能について触れながらどのように活用しているのかを紹介します。  </p>\n<ul>\n<li>山本 哲也 <a href=\"https://x.com/_tetsuya28\" rel=\"nofollow\">@_tetsuya28</a> / 株式会社AbemaTV</li>\n</ul>\n<h2>📜 LT1. AIにデバッグさせて気づいた、「正しい計装」がAIの精度を決めるという話</h2>\n<p>内容\nDevin に調査を投げる運用を回していたとき、AIが自分で「このサービスのログにtrace_idが無いので、トレースからログへ辿れない」と音を上げました。AIの限界ではなく、こちらの計装の穴が原因でした。</p>\n<p>APM・ログ・RUM が最初から1箇所に揃っている。それがDatadogの強みで、だからこそこちらが線さえ通せば、AIは「ここだけ」見れば足りる状態になります。逆に言えば、その1本の線が切れているところで、AIの調査は止まります。</p>\n<p>検知（monitor）→ 識別（span タグ）→ 連結（ctx 伝播 / trace 相関）\nという順序があり、下から積まないと上は効かない、という3段の型を5分で持ち帰っていただければと思います。</p>\n<ul>\n<li><a href=\"https://www.linkedin.com/in/yohei-demachi-8265731a7/\" rel=\"nofollow\">出町 陽平</a> / フリーランス</li>\n</ul>\n<h2>📜 LT2. LWA+ EchoのGoサーバーにDatadog APMを導入した事例紹介</h2>\n<p>内容 \nLambda Web Adapterで動くWeb APIにDatadog APMを導入した事例紹介です。Orchestrionを使用した場合につまづいた点と今回行った対処法を紹介します。</p>\n<ul>\n<li>氏名　<a href=\"https://www.linkedin.com/in/kota-kokubun-9897a61ab/\" rel=\"nofollow\">國分 虎海太 (KOKUBUN Kota)</a> / 株式会社ウェザーニューズ</li>\n</ul>\n<h2>📜 LT3. トレースが送信されない不具合のデバッグ話 or パフォチュー時 Datadog を使っているかの話</h2>\n<p>内容\n全リクエストのレイテンシをどこに保存するか — Datadog APM と Flex Logs の比較</p>\n<ul>\n<li>市川 裕也　フューチャー株式会社</li>\n</ul>\n<h2>📜 LT4. チーム内でのDatadog布教活動</h2>\n<p>内容\nDatadog活用促進のために「MCP」を導入したところ、AIエージェント経由での活用は進む一方で、メンバーがDatadogを理解する機会が減少していました。MCP時代には、「意識しなくても使える環境」と「あえて意識して理解する機会」の両方が必要というお話をします。</p>\n<ul>\n<li>棚井龍之介（たないりゅうのすけ） フューチャー株式会社</li>\n</ul>\n<h1>運営スタッフ</h1>\n<ul>\n<li><a href=\"https://connpass.com/user/shiroi/\" rel=\"nofollow\">shiroi</a></li>\n<li>告知 <a href=\"https://connpass.com/user/mopp/\" rel=\"nofollow\">mopp</a></li>\n<li>企画 <a href=\"https://connpass.com/user/ichirokano/\" rel=\"nofollow\">1kano</a></li>\n<li>受付 <a href=\"https://connpass.com/user/vicugna/\" rel=\"nofollow\">vicugna</a></li>\n<li>司会 <a href=\"https://connpass.com/user/yokoyama_tatsuo/\" rel=\"nofollow\">tatsuo48</a></li>\n<li>懇親会 [imamura-ko-0314](<a href=\"https://connpass.com/user/imamura-ko-0314/\" rel=\"nofollow\">https://connpass.com/user/imamura-ko-0314/</a></li>\n</ul>",
       "url": "https://datadog-jp.connpass.com/event/401209/",
       "image_url": "https://media.connpass.com/thumbs/05/f8/05f8d258e567cf3509d0dc3aa289e174.png",
       "hash_tag": "JDDUG",
@@ -311,7 +280,7 @@
       "owner_display_name": "1Kano",
       "accepted": 60,
       "waiting": 0,
-      "updated_at": "2026-08-26T12:39:31+09:00"
+      "updated_at": "2026-08-26T14:24:28+09:00"
     },
     {
       "id": 401434,
@@ -343,6 +312,37 @@
       "accepted": 29,
       "waiting": 0,
       "updated_at": "2026-08-26T13:06:25+09:00"
+    },
+    {
+      "id": 402012,
+      "title": "人員ゼロから事業を立て直し、3500人に使われる新規サービスを2人で2ヶ月半でリリースできた理由",
+      "catch": "agile effect meetup #8",
+      "description": "<h1>【現地限定・オフレコ】全員解散。人員ゼロから事業を立て直し、2ヶ月半で日々3,500人に使われる新規サービスをゼロから２人で作れた理由</h1>\n<hr>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>: 2026年8月26日（水）19:00から22:00（受付 18:45から）</li>\n<li><strong>会場</strong>: レバレジーズ株式会社 渋谷金王タワー10F（〒150-0043 東京都渋谷区渋谷3丁目6-7）</li>\n<li><strong>形式</strong>: 現地のみ／オンライン配信なし／録画・録音なし</li>\n<li><strong>定員</strong>: 50名（応募多数の場合は主催側で選考させていただきます）</li>\n<li><strong>参加費</strong>: 1,000円</li>\n<li><strong>懇親会</strong>: 希望者のみ</li>\n<li><strong>申込締切</strong>: 2026年8月21日（金）23:59</li>\n<li><strong>参加可否のご連絡</strong>: 2026年8月24日（月）までにメールでお知らせします</li>\n</ul>\n<hr>\n<h2>このイベントについて</h2>\n<p><strong>チーム解散と再起を、経営・事業・現場の3つの目線で語り直す夜。</strong></p>\n<p>とある新規事業チームが解散してから、再起するまで。</p>\n<p>立ち上げた事業は思うように成長せず、その焦りからチームメンバーのエンゲージメントも下がっていく。\n経営判断でチームは解体。残ったのは、プロダクトマネージャー1名とアジャイルコーチ1名。</p>\n<p>人員ゼロからの、事業・組織の抜本的な見直し。そんな最大のピンチの中で、最大のチャンスが訪れました。\nその最初の勝負が、100万行を超える大規模サービスをプロダクトマネージャと、新たに参画したエンジニア計2人で全くゼロの状態から作ること。</p>\n<p>加えて、日々その3500名が既存サービスで使っているという、いわばリプレイスを伴うプロジェクトであるということ。\nそして、企画から3,500名の移行完了までに与えられた時間は、2ヶ月半。</p>\n<p>AI時代だから可能だった部分は、確かにあります。ただ、それだけではありません。\n事業を立て直す局面の緊張感、少人数で走り切るための徹底的なリーン思考、仕組みの構築、移管に伴うステークホルダーマネジメント、そして絶対に諦めないマインドセット。AI時代における人間の存在価値を肌で感じました。</p>\n<p>成功した後に整理された綺麗な話をするつもりはありません。\nこの会では、事業の目線、経営の目線、チームの目線。複数の視座から同じ出来事がどう見えていたかを、機密にあたる詳細は削ぎ落としたうえで、生々しいまま現地限定でお話します。</p>\n<hr>\n<h2>この会で得られるもの</h2>\n<ul>\n<li>経営層は何を見てどう判断するのか。そしてその判断をどう受け止め、どう動いたのかの実例</li>\n<li>チームが再起するまでに「何を、どの順番で決めたか」という意思決定の型</li>\n<li>少人数×AI前提で、現実的に達成できないスケジュールをやり切るチームの動かし方</li>\n<li>経営・事業・チームの3つの目線で同じ出来事を見る複眼の視点。自分の組織の見え方が変わります</li>\n<li>自分のチームの立て直しに使える考え方とチェックポイント</li>\n<li>同じ立場で悩むマネジメント層との、本音ベースのつながり</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table style=\"font-size: 14px;\">\n  <thead>\n    <tr style=\"background-color: #f5f5f5; text-align: left;\">\n      <th style=\"border: 1px solid #ccc; padding: 5px 10px;\">時刻</th>\n      <th style=\"border: 1px solid #ccc; padding: 5px 10px;\">タイトル</th>\n      <th style=\"border: 1px solid #ccc; padding: 5px 10px;\">備考</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">18:45 〜 19:00</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">受付・開場</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\"></td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">19:00 〜 19:10</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">オープニング</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">本日のイベントの趣旨やタイムテーブルについてご案内します。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">19:10 〜 19:50</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">対談</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">「全員解散から、3,500人に使われる新規サービスを作るまで」（西 × 森）をテーマに、これまでの歩みと裏側の物語をお話しします。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">19:50 〜 20:30</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">対話セッション</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">西の話を踏まえ、皆様が抱える組織の課題を参加者同士で共有し合い、ディスカッションを通して深掘りする時間です。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">20:30 〜 20:45</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">プロダクトと想い</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">対談でお話しした「物語の続き」として、新サービスの外販開始についてご案内いたします。また、今後のアジャイルエフェクト事業としての構想や想いについても共有させてください。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">20:45 〜 21:00</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">クロージング</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">本日のまとめと、アンケートのご記入、優先案内のご登録についてご案内いたします。</td></tr>\n    <tr><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">21:00 〜 22:00</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">懇親会</td><td style=\"border: 1px solid #ccc; padding: 5px 10px;\">登壇者や参加者同士の交流の場です。お飲み物をご用意しておりますので、リラックスした雰囲気でお気軽にご歓談ください。</td></tr>\n  </tbody>\n</table>\n\n<h2>話すこと</h2>\n<ul>\n<li>現場と経営の間で何が起きていたか</li>\n<li>経営判断と、当事者としての受け止め</li>\n<li>3,500人に使われる新規サービスを、２人・2ヶ月半でゼロから作り切った仕組み</li>\n<li>AI時代だから可能だったことと、AIに関係なく効いた緊張感・マインドセット・アプローチ</li>\n<li>いま外販に向けて開発中のプロダクトが見ている景色（コンセプトレベルでご紹介）</li>\n</ul>\n<h2>話さないこと</h2>\n<ul>\n<li>個別の社員名、機密にあたる数値、内部資料</li>\n<li>経営判断の詳細</li>\n</ul>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>チーム・組織を率いる立場の方（PM / EM / PO / 部門リーダー）</li>\n<li>チームの立て直し・再構築に、いままさに向き合っている方</li>\n<li>少人数×AI前提の開発体制への移行を考えているマネジメント層</li>\n<li>自チームの問題解決のヒントを得たい方</li>\n</ul>\n<p>※本イベントは、チーム・組織を率いるマネジメント層の方々をメインの対象としています。\n開発実務を担うエンジニアの方をメインの対象とする会に関しても、別途実施を検討しています。\n※大変恐れ入りますが、以下に該当する場合はお申込みをご遠慮いただけると幸いでございます。</p>\n<h2>対象としない方</h2>\n<p>恐れ入りますが、以下に該当する方のお申し込みはお断りさせていただきます。</p>\n<ul>\n<li>転職活動を目的とされる方</li>\n<li>他社製品の営業を目的とされる方</li>\n<li>内容を録画・録音・SNS投稿することを前提とされる方</li>\n</ul>\n<hr>\n<h2>懇親会について</h2>\n<p>登壇者とモデレーターも最後まで参加します。本編で話し切れなかった細部は、ここで直接聞いてください。</p>\n<p><img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/IMG_9151_masked.jpg\" width=\"220\" alt=\"懇親会\">\n<img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/ChatGPT%20Image%202026%E5%B9%B47%E6%9C%8827%E6%97%A5%2016_16_09-1.png\" width=\"220\" alt=\"懇親会\">\n<img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/IMG_9153_masked.jpg\" width=\"220\" alt=\"懇親会\"></p>\n<p>※懇親会は希望者のみのご参加です。軽食とドリンクをご用意いたします。申込フォームで参加の有無をお選びください</p>\n<h2>お申し込みにあたってのお願い</h2>\n<p>このイベントは、現地でしか話せない粒度の内容を扱うため、参加者の方々を以下の方針で絞らせていただきます。あらかじめご了承ください。</p>\n<ul>\n<li><strong>会社のメールアドレスでのお申し込みをお願いします</strong>（Gmail、Yahoo!メール等のフリーメールでのお申し込みはお受けできません）</li>\n<li>申込多数の場合、<strong>主催側で選考</strong> させていただきます</li>\n</ul>\n<p>申込フォームでは、<strong>懇親会への参加有無</strong>をお選びください。また、任意項目として「現在のチーム状況・直近の組織課題」を記入する欄を設けています。当日のディスカッションをより有意義にするための情報として活用しますので、可能な範囲でお書きいただけると嬉しいです。</p>\n<hr>\n<h2>登壇者</h2>\n<div style=\"text-align: center;\">\n<img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-07-27%2017.49.49.png\" width=\"150\" alt=\"懇親会\">\n</div>\n\n<p><strong>西 慎一郎（にし しんいちろう）</strong><br>\nレバレジーズ株式会社 / プロダクトマネージャー<br>\nagile effect事業を企画・立ち上げを経て、チーム解散後の再起と、3,500人に使われる新規サービスの立ち上げを主導・統括。現在は、新規サービスの外販に向けた営業・開発・マーケティングについても主導・統括している。</p>\n<p><br></p>\n<div style=\"text-align: center;\">\n  <img src=\"https://47038590.fs1.hubspotusercontent-na2.net/hubfs/47038590/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-07-24%2017.44.48.png\" width=\"150\" alt=\"森\">\n</div>\n<p><strong>モデレーター: 森 一樹（もり かずき）</strong><br>\nagile effect事業でレバレジーズと長く協業。アジャイルコーチとして事業に参画。</p>\n<hr>\n<h2>主催</h2>\n<p>レバレジーズ株式会社 agile effect</p>\n<p>お問い合わせ: agile-effect-admin@leverages.jp</p>",
+      "url": "https://teratail.connpass.com/event/402012/",
+      "image_url": "https://media.connpass.com/thumbs/46/00/460079eeec11359e2d0ddd5f1e457985.png",
+      "hash_tag": "アジャイル",
+      "started_at": "2026-08-26T19:00:00+09:00",
+      "ended_at": "2026-08-26T22:00:00+09:00",
+      "published_at": "2026-07-28T17:41:50+09:00",
+      "limit": 50,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 1558,
+        "subdomain": "teratail",
+        "title": "Tech Leverages",
+        "url": "https://teratail.connpass.com/"
+      },
+      "address": "〒150-0043 東京都渋谷区渋谷３丁目６−７ 渋谷金王タワー",
+      "place": "渋谷",
+      "lat": "35.657959400000",
+      "lon": "139.705890100000",
+      "owner_id": 1012108,
+      "owner_nickname": "konatsu-maekawa",
+      "owner_display_name": "konatsu-maekawa",
+      "accepted": 45,
+      "waiting": 0,
+      "updated_at": "2026-08-21T01:01:44+09:00"
     },
     {
       "id": 402141,
@@ -402,7 +402,7 @@
       "owner_id": 28439,
       "owner_nickname": "naoki-nakano",
       "owner_display_name": "NaokiNakano",
-      "accepted": 55,
+      "accepted": 56,
       "waiting": 0,
       "updated_at": "2026-08-24T18:22:46+09:00"
     },
@@ -435,7 +435,7 @@
       "owner_display_name": "mercari_event",
       "accepted": 46,
       "waiting": 0,
-      "updated_at": "2026-08-26T12:29:07+09:00"
+      "updated_at": "2026-08-26T13:36:09+09:00"
     },
     {
       "id": 403003,
@@ -464,7 +464,7 @@
       "owner_id": 1359,
       "owner_nickname": "kimotuki",
       "owner_display_name": "Yasuhiro Arai",
-      "accepted": 124,
+      "accepted": 126,
       "waiting": 0,
       "updated_at": "2026-08-26T10:28:20+09:00"
     },
@@ -641,7 +641,7 @@
       "owner_nickname": "UnrealEngineJP",
       "owner_display_name": "Unreal Engine JP",
       "accepted": 170,
-      "waiting": 7,
+      "waiting": 8,
       "updated_at": "2026-08-26T11:46:20+09:00"
     },
     {
@@ -674,32 +674,6 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-24T01:01:41+09:00"
-    },
-    {
-      "id": 382287,
-      "title": "【第二回】ケモインフォマティクス×ハッカソン合宿 in 横浜",
-      "catch": "",
-      "description": "<p>参加者への詳細情報は、招待メールにてご案内いたします。</p>\n<p>参加費は事前振り込み制となっております。お申込み後に、振込先情報をメールにてご案内いたしますので、期日までにお支払いをお願いいたします。 ※会場での現金支払いは受け付けておりません。</p>\n<p>HP: <a href=\"https://cheminformatics-hackathon.github.io/homepage/\" rel=\"nofollow\">https://cheminformatics-hackathon.github.io/homepage/</a><br>\n開催予告記事: https://zenn.dev/poclab_techblog/articles/b16997ac0336ff<br>\nX: <a href=\"https://x.com/chemoinfo_camp\" rel=\"nofollow\">https://x.com/chemoinfo_camp</a><br>\ninstagram: <a href=\"https://www.instagram.com/chemoinfomatics_camp/\" rel=\"nofollow\">https://www.instagram.com/chemoinfomatics_camp/</a></p>",
-      "url": "https://connpass.com/event/382287/",
-      "image_url": null,
-      "hash_tag": "",
-      "started_at": "2026-08-26T13:00:00+09:00",
-      "ended_at": "2026-08-27T12:00:00+09:00",
-      "published_at": "2026-06-11T17:27:14+09:00",
-      "limit": 50,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": null,
-      "address": "横浜市栄区上郷町1499-1",
-      "place": "横浜市上郷・森の家",
-      "lat": "35.344103700000",
-      "lon": "139.583390400000",
-      "owner_id": 936079,
-      "owner_nickname": "rikuo00o",
-      "owner_display_name": "rikuo00o",
-      "accepted": 20,
-      "waiting": 0,
-      "updated_at": "2026-06-11T17:27:14+09:00"
     }
   ]
 }
