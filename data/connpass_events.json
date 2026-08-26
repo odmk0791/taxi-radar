@@ -1,39 +1,8 @@
 {
-  "fetched_at": "2026-08-26T08:18:09.781726+09:00",
+  "fetched_at": "2026-08-26T09:51:01.934327+09:00",
   "date": "20260826",
-  "count": 22,
+  "count": 23,
   "events": [
-    {
-      "id": 400051,
-      "title": "AI時代にどう決める？スピードと質を両立する意思決定【D-Plus Tokyo #26】",
-      "catch": "",
-      "description": "<h2>📝イベント概要</h2>\n<p>AIツールの普及により、エンジニアリングの「実装スピード」は飛躍的に向上しましたが、開発における成果最大化のボトルネックは「意思決定のスピード」と「その質」に移り変わってきています。<br></p>\n<p>・AIの提案をどこまで信用して採用すべきか？ <br>\n・スピードと安定性を高い次元で両立させ、爆速かつ安全にデプロイし続けるための判断基準をどこに置くべきか？<br>\n・企画・設計などの上流工程から意思決定のスピードと質を同時に引き上げるために、AI-DLCのような新しい開発スタイルをどのように取り入れるべきか？<br></p>\n<p>当日は、AI時代における開発チームや組織の「どう決めていくか」をテーマにお話しいただきます。<br>\nLT後は恒例の懇親会も開催します。スピードと品質を同時に最大化するための具体的なプロセス、判断基準、失敗談から得たリアルなナレッジなども語り合いましょう。<br>\nD-Plusおなじみの「ありのままの失敗も成功も共感できる場」として、明日からのチーム開発にすぐ活かせるヒントをぜひ持ち帰ってください。<br>\n<br></p>\n<h3>🧑‍💻こんな方におすすめ</h3>\n<ul>\n<li>AIの台頭によって激変する開発環境の中で、チームの舵取りや判断基準に悩んでいる方<br></li>\n<li>スピードを落とさずに、開発の品質やアーキテクチャの健全性を保つ意思決定の仕組みを作りたい方<br></li>\n<li>「スピードと安定性の両立」に向けて、他社がどのようなプロセスや評価基準を取り入れているか知りたい方<br></li>\n<li>社外のエンジニアと「意思決定」にまつわる悩みや工夫をカジュアルに情報交換・議論したい方<br></li>\n<li>日々のコーディングや設計において、AIの提案とどう向き合い、どう最終決定を下すべきか迷っている方<br>\n<br></li>\n</ul>\n<h2>開催概要</h2>\n<p><font size=\"3\">📆 開催日時：2026年8月26日（水）19:30-21:30</font>\n<br>\n<font size=\"3\">📍 開催場所：株式会社ビットエー オフィス</font>\n<br>\n<font size=\"3\">　　 　 住所：〒141-0031 東京都品川区西五反田1丁目1-8　NMF五反田駅前ビル7階</font>\n<br>\n　　　　　　　　　（山の手線 五反田駅 徒歩1分）\n<br>\n<font size=\"3\">💰 参加費：無料</font></p>\n<h2>📝当日のコンテンツ</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間　　　　</th>\n<th style=\"text-align: center;\">セッションタイトル</th>\n<th style=\"text-align: center;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00〜19:30    　</td>\n<td style=\"text-align: center;\">開場・受付</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30〜19:45    　</td>\n<td style=\"text-align: center;\">ご挨拶・30秒自己紹介・会場紹介LT</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45〜19:55    　</td>\n<td style=\"text-align: center;\">　速く決めるか、正しく決めるか - スピード ⇄ 質 の両立に挑む　</td>\n<td style=\"text-align: center;\">株式会社ADWAYS DEEE / tomoda_naoto</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55〜20:05  　</td>\n<td style=\"text-align: center;\">　エンジニアがPdMに要求していい「3つの成果物」— AI時代の目線合わせ　</td>\n<td style=\"text-align: center;\">　カイテク株式会社 / ヤマモトヒロキ　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05〜20:10   　</td>\n<td style=\"text-align: center;\">休憩（バッファ込）</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10〜20:20   　</td>\n<td style=\"text-align: center;\">　以前失敗したリーンUX駆動開発をAI時代の今だからこそ薦めたい　</td>\n<td style=\"text-align: center;\">techvan株式会社 / 平間 良成</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20〜20:30   　</td>\n<td style=\"text-align: center;\">　AIレビュー時代に必要なのは、SLOで引く撤退ライン　</td>\n<td style=\"text-align: center;\">株式会社ビットエー ourlyカンパニー / 土橋 展之</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30〜21:30   　</td>\n<td style=\"text-align: center;\">懇親会</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<p><br>※22:00完全撤収、21:30以降は片付けながらお話できると嬉しいです！</p>\n<h2>スピーカー</h2>\n<h3>スピーカー①</h3>\n<p><img src=\"https://i.gyazo.com/aa4ef728798af5f689d460d73247421a.png\" width=\"40%\">\n<br>\n<font size=\"3\">tomoda_naoto</font>\n<br>\n<font size=\"3\">株式会社ADWAYS DEEE</font><br>\n<font size=\"3\">技術改善ディビジョン バイスゼネラルマネージャー</font>\n<br>\n2012年にエンジニアとして株式会社アドウェイズに入社。プロダクト開発や自社システムの開発を経て、プロジェクトリーダーやスクラムマスターを経験。現在は、複数チームのエンジニアリングマネージャーを務めながら、組織の開発生産性向上やAI活用にも注力しています。モットーは「仕事も楽しく」。チームの垣根を超え、メンバーと切磋琢磨する日々を送っています。\n<br></p>\n<h3>スピーカー②</h3>\n<p><img src=\"https://i.gyazo.com/27daa5bd3edfc5b2cf50bf63eea1e07a.jpg\" width=\"40%\">\n<br>\n<font size=\"3\">ヤマモトヒロキ <a href=\"https://x.com/Ymmt169\" rel=\"nofollow\">@Ymmt169</a> </font>\n<br>\n<font size=\"3\">カイテク株式会社</font><br>\n<font size=\"3\">PdM</font>\n<br>\n2017年レバレジーズ株式会社に新卒入社。<br>\nITエンジニア向け人材プラットフォーム「レバテック」にてマーケティング・プロダクト・事業企画の責任者を歴任し、事業グロース。<br>\n人類未踏の超高齢社会における課題解決を志し、2025年3月カイテク株式会社に入社。<br>\n介護/医療のスポットワーク「カイテク」のプロダクト・マーケティング領域を管掌。<br></p>\n<h3>スピーカー③</h3>\n<p><img src=\"https://i.gyazo.com/8e57c5d69ae3f0ea0dfa9bedec30b4d7.jpg\" width=\"40%\">\n<br>\n<font size=\"3\"> 平間 良成 </font>\n<br>\n<font size=\"3\">techvan株式会社</font>\n<br>\n<font size=\"3\">品質サービス事業本部 品質サービス3部 2課 課長代理</font>\n<br>\n開発上がりの品質コンサルタント<br>\nエンタメ業界でのQA経験を活かし、エンタープライズにもUXを広めようとしている</p>\n<h3>スピーカー④</h3>\n<p><img src=\"https://i.gyazo.com/47d6cc4d897ebe9e25754ddc5f7697d5.webp\" width=\"40%\">\n<br>\n<font size=\"3\">NobuyukiTsuchihashi / 土橋 展之<a href=\"https://x.com/ourly_nobuo\" rel=\"nofollow\">@nobuo_ourly</a> </font>\n<br>\n<font size=\"3\">株式会社ビットエー ourlyカンパニー </font>\n<br>\n<font size=\"3\">バックエンドエンジニア</font>\n<br>\nインターン時代から関わっていたスタートアップのourly株式会社に、2023年に新卒で入社。インターン時代はデジタル広告の運用を担当していたが、自分で作ったものを通じて人々の課題を解決できるエンジニアという仕事に魅力を感じ、エンジニアに転向。<br>\n現在はAI駆動開発を中心に、開発の生産性を高めながら、より速く価値をユーザーに届けることに取り組んでいる。最近の主な関心事は、AI時代におけるBDDと品質管理。<br>\n<br></p>\n<h1>⚠️諸注意</h1>\n<ul>\n<li>お申し込みいただいた人数が多い場合は、抽選とさせていただきます。</li>\n<li>万一抽選となった場合、ConnpassもしくはX（旧Twitter）等で、8/19（水）までに抽選結果を通知いたします。<br>（※抽選でない場合は通知いたしません）</li>\n<li>開催人数は30-50名程度を予定しています。</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください。</li>\n<li>飲食や勧誘などを目的とした参加は固くお断りします。運営側で当イベントの対象や目的に反すると判断した場合、キャンセル・退席していただくことがございます。</li>\n<li>会場内では、写真や動画撮影が行われる予定のため会場内の参加者の皆様が映り込む場合があります。 それらは、SNSなどで掲載される場合がありますので、あらかじめご了承ください。</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>悪天候等により、運営事務局の判断にてイベントを中止する場合があります。</li>\n<li>運営の状況によりスケジュール、内容は変更となる場合があります。</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、 誰もが気持ちよく参加できるようにご協力ください。</li>\n<li><strong>当日の緊急連絡先は、お申込後に公開される「参加者への情報」をご確認ください。</strong></li>\n</ul>\n<h1>🤝会場スポンサー</h1>\n<p><img src=\"https://i.gyazo.com/652e78fe3e40139aac5fe5c33dffbcfc.png\" width=\"70%\"><br>\n<font size=\"3\"><a href=\"https://bita.jp/\" rel=\"nofollow\">株式会社ビットエー</a></font>\n<br>ビットエーは、クリエイティブ・テクノロジー・マーケティングを専門領域とし、企業の成長を支援するITのプロフェッショナル集団です。\n主に『伴走型デジタルグロース』と『クリエイティブソリューション』の２つのサービスを展開。\n我々は深い事業理解のもと、ビジネスをグロースさせるための、データ解析・施策立案・UI/UX設計・実装・AI導入といった専門領域を持ち合わせ、幅広い提案を得意としています。<br>- <a href=\"https://bita.jp/\" rel=\"nofollow\">コーポレートサイト</a><br>- <a href=\"https://herp.careers/v1/bita\" rel=\"nofollow\">採用情報</a><br>- <a href=\"https://www.wantedly.com/companies/bita/stories\" rel=\"nofollow\">社員インタビュー</a></p>",
-      "url": "https://d-plus.connpass.com/event/400051/",
-      "image_url": "https://media.connpass.com/thumbs/5e/b5/5eb553822cadedd0a62e5bfdf6221614.png",
-      "hash_tag": "でぃーぷらすトウキョウ",
-      "started_at": "2026-08-26T19:30:00+09:00",
-      "ended_at": "2026-08-26T21:30:00+09:00",
-      "published_at": "2026-08-04T09:33:46+09:00",
-      "limit": 33,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14809,
-        "subdomain": "d-plus",
-        "title": "D-Plus｜開発生産性コミュニティ",
-        "url": "https://d-plus.connpass.com/"
-      },
-      "address": "〒141-0031 東京都品川区西五反田１丁目１−８　NMF五反田駅前ビル7階",
-      "place": "株式会社ビットエー",
-      "lat": "35.625873000000",
-      "lon": "139.723116600000",
-      "owner_id": 852824,
-      "owner_nickname": "d-plus",
-      "owner_display_name": "D-Plus運営事務局",
-      "accepted": 18,
-      "waiting": 0,
-      "updated_at": "2026-08-25T09:33:38+09:00"
-    },
     {
       "id": 401436,
       "title": "ClaudeCodeやCodexなどのAI tipsの共有会 Next AI Synergy #13",
@@ -61,9 +30,40 @@
       "owner_id": 719681,
       "owner_nickname": "ragnarock",
       "owner_display_name": "ragnarock",
-      "accepted": 14,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-07-22T19:14:36+09:00"
+    },
+    {
+      "id": 400051,
+      "title": "AI時代にどう決める？スピードと質を両立する意思決定【D-Plus Tokyo #26】",
+      "catch": "",
+      "description": "<h2>📝イベント概要</h2>\n<p>AIツールの普及により、エンジニアリングの「実装スピード」は飛躍的に向上しましたが、開発における成果最大化のボトルネックは「意思決定のスピード」と「その質」に移り変わってきています。<br></p>\n<p>・AIの提案をどこまで信用して採用すべきか？ <br>\n・スピードと安定性を高い次元で両立させ、爆速かつ安全にデプロイし続けるための判断基準をどこに置くべきか？<br>\n・企画・設計などの上流工程から意思決定のスピードと質を同時に引き上げるために、AI-DLCのような新しい開発スタイルをどのように取り入れるべきか？<br></p>\n<p>当日は、AI時代における開発チームや組織の「どう決めていくか」をテーマにお話しいただきます。<br>\nLT後は恒例の懇親会も開催します。スピードと品質を同時に最大化するための具体的なプロセス、判断基準、失敗談から得たリアルなナレッジなども語り合いましょう。<br>\nD-Plusおなじみの「ありのままの失敗も成功も共感できる場」として、明日からのチーム開発にすぐ活かせるヒントをぜひ持ち帰ってください。<br>\n<br></p>\n<h3>🧑‍💻こんな方におすすめ</h3>\n<ul>\n<li>AIの台頭によって激変する開発環境の中で、チームの舵取りや判断基準に悩んでいる方<br></li>\n<li>スピードを落とさずに、開発の品質やアーキテクチャの健全性を保つ意思決定の仕組みを作りたい方<br></li>\n<li>「スピードと安定性の両立」に向けて、他社がどのようなプロセスや評価基準を取り入れているか知りたい方<br></li>\n<li>社外のエンジニアと「意思決定」にまつわる悩みや工夫をカジュアルに情報交換・議論したい方<br></li>\n<li>日々のコーディングや設計において、AIの提案とどう向き合い、どう最終決定を下すべきか迷っている方<br>\n<br></li>\n</ul>\n<h2>開催概要</h2>\n<p><font size=\"3\">📆 開催日時：2026年8月26日（水）19:30-21:30</font>\n<br>\n<font size=\"3\">📍 開催場所：株式会社ビットエー オフィス</font>\n<br>\n<font size=\"3\">　　 　 住所：〒141-0031 東京都品川区西五反田1丁目1-8　NMF五反田駅前ビル7階</font>\n<br>\n　　　　　　　　　（山の手線 五反田駅 徒歩1分）\n<br>\n<font size=\"3\">💰 参加費：無料</font></p>\n<h2>📝当日のコンテンツ</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間　　　　</th>\n<th style=\"text-align: center;\">セッションタイトル</th>\n<th style=\"text-align: center;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00〜19:30    　</td>\n<td style=\"text-align: center;\">開場・受付</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30〜19:45    　</td>\n<td style=\"text-align: center;\">ご挨拶・30秒自己紹介・会場紹介LT</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45〜19:55    　</td>\n<td style=\"text-align: center;\">　速く決めるか、正しく決めるか - スピード ⇄ 質 の両立に挑む　</td>\n<td style=\"text-align: center;\">株式会社ADWAYS DEEE / tomoda_naoto</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55〜20:05  　</td>\n<td style=\"text-align: center;\">　エンジニアがPdMに要求していい「3つの成果物」— AI時代の目線合わせ　</td>\n<td style=\"text-align: center;\">　カイテク株式会社 / ヤマモトヒロキ　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05〜20:10   　</td>\n<td style=\"text-align: center;\">休憩（バッファ込）</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10〜20:20   　</td>\n<td style=\"text-align: center;\">　以前失敗したリーンUX駆動開発をAI時代の今だからこそ薦めたい　</td>\n<td style=\"text-align: center;\">techvan株式会社 / 平間 良成</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20〜20:30   　</td>\n<td style=\"text-align: center;\">　AIレビュー時代に必要なのは、SLOで引く撤退ライン　</td>\n<td style=\"text-align: center;\">株式会社ビットエー ourlyカンパニー / 土橋 展之</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30〜21:30   　</td>\n<td style=\"text-align: center;\">懇親会</td>\n<td style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<p><br>※22:00完全撤収、21:30以降は片付けながらお話できると嬉しいです！</p>\n<h2>スピーカー</h2>\n<h3>スピーカー①</h3>\n<p><img src=\"https://i.gyazo.com/aa4ef728798af5f689d460d73247421a.png\" width=\"40%\">\n<br>\n<font size=\"3\">tomoda_naoto</font>\n<br>\n<font size=\"3\">株式会社ADWAYS DEEE</font><br>\n<font size=\"3\">技術改善ディビジョン バイスゼネラルマネージャー</font>\n<br>\n2012年にエンジニアとして株式会社アドウェイズに入社。プロダクト開発や自社システムの開発を経て、プロジェクトリーダーやスクラムマスターを経験。現在は、複数チームのエンジニアリングマネージャーを務めながら、組織の開発生産性向上やAI活用にも注力しています。モットーは「仕事も楽しく」。チームの垣根を超え、メンバーと切磋琢磨する日々を送っています。\n<br></p>\n<h3>スピーカー②</h3>\n<p><img src=\"https://i.gyazo.com/27daa5bd3edfc5b2cf50bf63eea1e07a.jpg\" width=\"40%\">\n<br>\n<font size=\"3\">ヤマモトヒロキ <a href=\"https://x.com/Ymmt169\" rel=\"nofollow\">@Ymmt169</a> </font>\n<br>\n<font size=\"3\">カイテク株式会社</font><br>\n<font size=\"3\">PdM</font>\n<br>\n2017年レバレジーズ株式会社に新卒入社。<br>\nITエンジニア向け人材プラットフォーム「レバテック」にてマーケティング・プロダクト・事業企画の責任者を歴任し、事業グロース。<br>\n人類未踏の超高齢社会における課題解決を志し、2025年3月カイテク株式会社に入社。<br>\n介護/医療のスポットワーク「カイテク」のプロダクト・マーケティング領域を管掌。<br></p>\n<h3>スピーカー③</h3>\n<p><img src=\"https://i.gyazo.com/8e57c5d69ae3f0ea0dfa9bedec30b4d7.jpg\" width=\"40%\">\n<br>\n<font size=\"3\"> 平間 良成 </font>\n<br>\n<font size=\"3\">techvan株式会社</font>\n<br>\n<font size=\"3\">品質サービス事業本部 品質サービス3部 2課 課長代理</font>\n<br>\n開発上がりの品質コンサルタント<br>\nエンタメ業界でのQA経験を活かし、エンタープライズにもUXを広めようとしている</p>\n<h3>スピーカー④</h3>\n<p><img src=\"https://i.gyazo.com/47d6cc4d897ebe9e25754ddc5f7697d5.webp\" width=\"40%\">\n<br>\n<font size=\"3\">NobuyukiTsuchihashi / 土橋 展之<a href=\"https://x.com/ourly_nobuo\" rel=\"nofollow\">@nobuo_ourly</a> </font>\n<br>\n<font size=\"3\">株式会社ビットエー ourlyカンパニー </font>\n<br>\n<font size=\"3\">バックエンドエンジニア</font>\n<br>\nインターン時代から関わっていたスタートアップのourly株式会社に、2023年に新卒で入社。インターン時代はデジタル広告の運用を担当していたが、自分で作ったものを通じて人々の課題を解決できるエンジニアという仕事に魅力を感じ、エンジニアに転向。<br>\n現在はAI駆動開発を中心に、開発の生産性を高めながら、より速く価値をユーザーに届けることに取り組んでいる。最近の主な関心事は、AI時代におけるBDDと品質管理。<br>\n<br></p>\n<h1>⚠️諸注意</h1>\n<ul>\n<li>お申し込みいただいた人数が多い場合は、抽選とさせていただきます。</li>\n<li>万一抽選となった場合、ConnpassもしくはX（旧Twitter）等で、8/19（水）までに抽選結果を通知いたします。<br>（※抽選でない場合は通知いたしません）</li>\n<li>開催人数は30-50名程度を予定しています。</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください。</li>\n<li>飲食や勧誘などを目的とした参加は固くお断りします。運営側で当イベントの対象や目的に反すると判断した場合、キャンセル・退席していただくことがございます。</li>\n<li>会場内では、写真や動画撮影が行われる予定のため会場内の参加者の皆様が映り込む場合があります。 それらは、SNSなどで掲載される場合がありますので、あらかじめご了承ください。</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>悪天候等により、運営事務局の判断にてイベントを中止する場合があります。</li>\n<li>運営の状況によりスケジュール、内容は変更となる場合があります。</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、 誰もが気持ちよく参加できるようにご協力ください。</li>\n<li><strong>当日の緊急連絡先は、お申込後に公開される「参加者への情報」をご確認ください。</strong></li>\n</ul>\n<h1>🤝会場スポンサー</h1>\n<p><img src=\"https://i.gyazo.com/652e78fe3e40139aac5fe5c33dffbcfc.png\" width=\"70%\"><br>\n<font size=\"3\"><a href=\"https://bita.jp/\" rel=\"nofollow\">株式会社ビットエー</a></font>\n<br>ビットエーは、クリエイティブ・テクノロジー・マーケティングを専門領域とし、企業の成長を支援するITのプロフェッショナル集団です。\n主に『伴走型デジタルグロース』と『クリエイティブソリューション』の２つのサービスを展開。\n我々は深い事業理解のもと、ビジネスをグロースさせるための、データ解析・施策立案・UI/UX設計・実装・AI導入といった専門領域を持ち合わせ、幅広い提案を得意としています。<br>- <a href=\"https://bita.jp/\" rel=\"nofollow\">コーポレートサイト</a><br>- <a href=\"https://herp.careers/v1/bita\" rel=\"nofollow\">採用情報</a><br>- <a href=\"https://www.wantedly.com/companies/bita/stories\" rel=\"nofollow\">社員インタビュー</a></p>",
+      "url": "https://d-plus.connpass.com/event/400051/",
+      "image_url": "https://media.connpass.com/thumbs/5e/b5/5eb553822cadedd0a62e5bfdf6221614.png",
+      "hash_tag": "でぃーぷらすトウキョウ",
+      "started_at": "2026-08-26T19:30:00+09:00",
+      "ended_at": "2026-08-26T21:30:00+09:00",
+      "published_at": "2026-08-04T09:33:46+09:00",
+      "limit": 33,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14809,
+        "subdomain": "d-plus",
+        "title": "D-Plus｜開発生産性コミュニティ",
+        "url": "https://d-plus.connpass.com/"
+      },
+      "address": "〒141-0031 東京都品川区西五反田１丁目１−８　NMF五反田駅前ビル7階",
+      "place": "株式会社ビットエー",
+      "lat": "35.625873000000",
+      "lon": "139.723116600000",
+      "owner_id": 852824,
+      "owner_nickname": "d-plus",
+      "owner_display_name": "D-Plus運営事務局",
+      "accepted": 17,
+      "waiting": 0,
+      "updated_at": "2026-08-25T09:33:38+09:00"
     },
     {
       "id": 400743,
@@ -92,7 +92,7 @@
       "owner_id": 222164,
       "owner_nickname": "negi-douf",
       "owner_display_name": "ひらったー",
-      "accepted": 22,
+      "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-08-25T09:38:54+09:00"
     },
@@ -107,7 +107,7 @@
       "started_at": "2026-08-26T19:00:00+09:00",
       "ended_at": "2026-08-26T21:00:00+09:00",
       "published_at": "2026-08-01T12:01:06+09:00",
-      "limit": 8,
+      "limit": 10,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -125,7 +125,7 @@
       "owner_display_name": "miracleave",
       "accepted": 8,
       "waiting": 0,
-      "updated_at": "2026-08-01T12:01:06+09:00"
+      "updated_at": "2026-08-26T09:12:34+09:00"
     },
     {
       "id": 400850,
@@ -216,7 +216,7 @@
       "owner_id": 822255,
       "owner_nickname": "fujimoto_mako",
       "owner_display_name": "makofuji",
-      "accepted": 45,
+      "accepted": 44,
       "waiting": 0,
       "updated_at": "2026-08-24T09:36:21+09:00"
     },
@@ -340,7 +340,7 @@
       "owner_id": 661958,
       "owner_nickname": "yuuu-uuuu_9998",
       "owner_display_name": "Yuuuuuuu",
-      "accepted": 58,
+      "accepted": 57,
       "waiting": 0,
       "updated_at": "2026-08-23T19:25:01+09:00"
     },
@@ -464,7 +464,7 @@
       "owner_id": 122777,
       "owner_nickname": "mercari_event",
       "owner_display_name": "mercari_event",
-      "accepted": 47,
+      "accepted": 48,
       "waiting": 0,
       "updated_at": "2026-08-25T19:45:36+09:00"
     },
@@ -495,7 +495,7 @@
       "owner_id": 1359,
       "owner_nickname": "kimotuki",
       "owner_display_name": "Yasuhiro Arai",
-      "accepted": 120,
+      "accepted": 122,
       "waiting": 0,
       "updated_at": "2026-08-26T01:01:35+09:00"
     },
@@ -641,7 +641,7 @@
       "owner_nickname": "UnrealEngineJP",
       "owner_display_name": "Unreal Engine JP",
       "accepted": 170,
-      "waiting": 15,
+      "waiting": 14,
       "updated_at": "2026-08-13T17:52:46+09:00"
     },
     {
@@ -657,7 +657,7 @@
       "published_at": "2026-08-12T18:01:26+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 18017,
         "subdomain": "bashaka-events",
@@ -674,6 +674,32 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-24T01:01:41+09:00"
+    },
+    {
+      "id": 382287,
+      "title": "【第二回】ケモインフォマティクス×ハッカソン合宿 in 横浜",
+      "catch": "",
+      "description": "<p>参加者への詳細情報は、招待メールにてご案内いたします。</p>\n<p>参加費は事前振り込み制となっております。お申込み後に、振込先情報をメールにてご案内いたしますので、期日までにお支払いをお願いいたします。 ※会場での現金支払いは受け付けておりません。</p>\n<p>HP: <a href=\"https://cheminformatics-hackathon.github.io/homepage/\" rel=\"nofollow\">https://cheminformatics-hackathon.github.io/homepage/</a><br>\n開催予告記事: https://zenn.dev/poclab_techblog/articles/b16997ac0336ff<br>\nX: <a href=\"https://x.com/chemoinfo_camp\" rel=\"nofollow\">https://x.com/chemoinfo_camp</a><br>\ninstagram: <a href=\"https://www.instagram.com/chemoinfomatics_camp/\" rel=\"nofollow\">https://www.instagram.com/chemoinfomatics_camp/</a></p>",
+      "url": "https://connpass.com/event/382287/",
+      "image_url": null,
+      "hash_tag": "",
+      "started_at": "2026-08-26T13:00:00+09:00",
+      "ended_at": "2026-08-27T12:00:00+09:00",
+      "published_at": "2026-06-11T17:27:14+09:00",
+      "limit": 50,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": null,
+      "address": "横浜市栄区上郷町1499-1",
+      "place": "横浜市上郷・森の家",
+      "lat": "35.344103700000",
+      "lon": "139.583390400000",
+      "owner_id": 936079,
+      "owner_nickname": "rikuo00o",
+      "owner_display_name": "rikuo00o",
+      "accepted": 20,
+      "waiting": 0,
+      "updated_at": "2026-06-11T17:27:14+09:00"
     }
   ]
 }
