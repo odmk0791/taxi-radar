@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-26T12:46:24.279716+09:00",
+  "fetched_at": "2026-08-26T13:32:02.133436+09:00",
   "date": "20260826",
   "count": 23,
   "events": [
@@ -95,37 +95,6 @@
       "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-08-25T09:38:54+09:00"
-    },
-    {
-      "id": 401434,
-      "title": "Tachikawa.any #2",
-      "catch": "",
-      "description": "<h1>Tachikawa.any #2</h1>\n<h2>⭐ イベント概要</h2>\n<p>立川、国立、国分寺、八王子、東大和……多摩モノレール、中央線沿いに住む・働くテックな人たちが気軽に集まれるコミュニティ「<strong>Tachikawa.any</strong>」の第2回目イベントです！</p>\n<p>今回の会場は、 <strong>国分寺</strong>です :party-popper: </p>\n<p>技術スタック、職種、経験年数、企業規模……ぜんぶ <strong>any（なんでもあり）！</strong></p>\n<p>テーマは <strong>フリー</strong> ですが、今回は 5分枠と別に、<strong>10分枠</strong>を設けました！\nまた、各トークの後に質問タイムを設けているので、参加者の方との交流の時間とできればと思っています。</p>\n<p>最近ハマっている技術、仕事で得た知見、趣味の開発、キャリアの話……なんでもOKです。</p>\n<p>初参加・初登壇、大歓迎です。肩の力を抜いて、気軽にお越しください。</p>\n<h2>🎯 こんな方におすすめ</h2>\n<ul>\n<li>中央線沿いや多摩モノレール沿いに住んでいる・働いているエンジニア / デザイナー / PdM / EM の方</li>\n<li>近隣のテック仲間と横のつながりを作りたい方</li>\n<li>最近学んだこと・ハマっていることをカジュアルに発表してみたい方</li>\n<li>LT初挑戦してみたい方</li>\n<li>立川全然関係ないけど、立川や中央線沿いがなんか好きだ！という方</li>\n</ul>\n<p>※ 立川近隣にお住まいでなくても、もちろん歓迎です！(今回の会場は<strong>国分寺</strong>です)</p>\n<h2>⌛ タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45</td>\n<td>開場・受付</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00〜19:10</td>\n<td>オープニングトーク</td>\n<td>主催</td>\n</tr>\n<tr>\n<td>19:10〜19:25</td>\n<td>10分枠①「依頼する技術」</td>\n<td><a href=\"https://x.com/77web\" rel=\"nofollow\">77web</a></td>\n</tr>\n<tr>\n<td>19:25〜19:40</td>\n<td>10分枠②「」</td>\n<td>TBD</td>\n</tr>\n<tr>\n<td>19:40〜19:50</td>\n<td>LT枠①「AIオーケストレータを自作してみた所感」</td>\n<td><a href=\"https://x.com/kazto_dev\" rel=\"nofollow\">kazto</a></td>\n</tr>\n<tr>\n<td>19:50〜20:00</td>\n<td>休憩タイム</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:00〜20:10</td>\n<td>LT枠②「　『回復法は人それぞれ。まず自分の型を知る』〜しんどい・落ち込んだ時のリフレッシュ法〜」</td>\n<td><a href=\"https://x.com/beppu01\" rel=\"nofollow\">西から来た馬づらの男</a></td>\n</tr>\n<tr>\n<td>20:10〜20:20</td>\n<td>LT枠③「UX 試験(基礎)に合格しました」</td>\n<td><a href=\"https://x.com/offichy\" rel=\"nofollow\">offich</a></td>\n</tr>\n<tr>\n<td>20:20〜20:30</td>\n<td>LT枠④「同人誌をつくる(物理)」</td>\n<td><a href=\"https://x.com/3l4I5\" rel=\"nofollow\">おーくら</a></td>\n</tr>\n<tr>\n<td>20:30〜20:40</td>\n<td>LT枠⑤「Podcast を始めて2年半。取り上げた本を時間の限り紹介する！」</td>\n<td><a href=\"https://x.com/gennei\" rel=\"nofollow\">げんえい</a></td>\n</tr>\n<tr>\n<td>20:40〜21:00</td>\n<td>交流タイム(バッファ込)</td>\n<td>主催</td>\n</tr>\n<tr>\n<td>21:00〜21:05</td>\n<td>クロージング</td>\n<td>主催</td>\n</tr>\n<tr>\n<td>21:05〜21:15</td>\n<td>参加者完全撤収＋会場片付け</td>\n<td></td>\n</tr>\n<tr>\n<td>21:15</td>\n<td>会場完全撤収</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルはLT登壇者の人数によって変更になる場合があります。</p>\n<h2>🗣️ トークについて</h2>\n<ul>\n<li>発表時間は <strong>5分 or 10分</strong> 目安ですが、オーバーしても大丈夫です。質疑タイムと休憩時間で調整します。</li>\n<li>テーマは <strong>フリー</strong> です。技術、キャリア、マネジメント、趣味の開発……なんでもOK！</li>\n<li>資料投影用のPCは各自ご用意ください。</li>\n</ul>\n<h3>発表内容の一例</h3>\n<ul>\n<li>最近学んだ技術・ハマっていること</li>\n<li>仕事で得た知見や失敗談</li>\n<li>個人開発の紹介</li>\n<li>キャリアや働き方について</li>\n<li>チーム開発・マネジメントの工夫</li>\n<li>推し技術のプレゼン</li>\n<li>etc...</li>\n</ul>\n<p>初登壇・登壇練習も大歓迎です！再演や他イベントでの事前練習でもOKです。</p>\n<h2>🍻 懇親会</h2>\n<p>イベント終了後、国分寺駅周辺のお店で希望者による懇親会を予定しています（任意参加）。\n詳細はDiscordにてご案内します。</p>\n<h2>🗺️ 会場</h2>\n<ul>\n<li>会場：オープンイノベーションフィールド多摩 国分寺館</li>\n<li>住所：東京都国分寺市南町3-22-10</li>\n<li>アクセス：ＪＲ中央線・西武線「国分寺」駅 南口より徒歩5分</li>\n</ul>\n<p>※ 電源は限りがございますので、PCなどあらかじめ充電の上お越しください。</p>\n<h3>参加費</h3>\n<p><strong>無料</strong> です。\n会場費等の維持のため、お気持ち（100円〜500円程度）カンパいただけると、継続開催の大きな助けになります 🙏</p>\n<h3>キャンセルについて</h3>\n<p>キャンセルはイベント開催日の <strong>前日まで</strong> にお願いいたします。\n当日キャンセルの場合は、Discordの参加者向けチャンネルからご連絡ください。</p>\n<h2>💬 Discord</h2>\n<p>Tachikawa.any では、イベントの案内や当日の運営連絡を <strong>Discord</strong> にて行います。\nイベントに参加予定の方、ご興味をお持ちの方はぜひご参加ください。\n<a href=\"https://discord.gg/csmGM9h7kd\" rel=\"nofollow\">https://discord.gg/csmGM9h7kd</a></p>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。あらかじめご了承ください。</li>\n<li>写真撮影はOKですが、ブログやSNS等で発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>当日撮影した画像は、SNS等でイベントの紹介に利用させていただく可能性があります。撮影NGの方は、事前にconnpassのメッセージやDiscordで運営までお知らせください。最大限配慮いたします。</li>\n<li>イベント会場の施設と本イベントの運営は無関係です。会場へのお問い合わせはお控えください。</li>\n<li>保険、宗教、ネットワークビジネス等の勧誘目的の参加はお断りします。</li>\n<li>運営が参加にふさわしくないと判断した場合、イベント中であってもご退席をお願いすることがございます。</li>\n</ul>\n<h2>📜 行動規範</h2>\n<ul>\n<li>すべての参加者がお互いを尊重し、思いやりを持って接することを大切にします。</li>\n<li>多様な価値観や背景を尊重し、性別・年齢・属性・職種・スキルレベルなどによる差別的な発言や、相手を不快にさせる言動は控え、配慮のある言動を心がけましょう。</li>\n<li>本コミュニティ内での商業的な勧誘や営業活動は原則として禁止します。</li>\n<li>イベントやDiscordで共有された他者の個人情報は、本人の許可なく第三者に共有・転載・公開致しません。</li>\n<li>この行動規範に関する報告は、Discord または運営主催者までご連絡ください。緊急時には、お近くのスタッフまで直接お声がけください。</li>\n</ul>",
-      "url": "https://tachikawaany.connpass.com/event/401434/",
-      "image_url": "https://media.connpass.com/thumbs/8e/90/8e90f27ae5ef1e90fa968aba601854d9.png",
-      "hash_tag": "tachikawaany",
-      "started_at": "2026-08-26T19:00:00+09:00",
-      "ended_at": "2026-08-26T21:15:00+09:00",
-      "published_at": "2026-07-22T19:19:15+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16940,
-        "subdomain": "tachikawaany",
-        "title": "tachikawa.any",
-        "url": "https://tachikawaany.connpass.com/"
-      },
-      "address": "東京都国分寺市南町3-22-10",
-      "place": "オープンイノベーションフィールド多摩 国分寺館",
-      "lat": "35.698659300000",
-      "lon": "139.478212200000",
-      "owner_id": 173698,
-      "owner_nickname": "DaisukeFFF",
-      "owner_display_name": "daitasu",
-      "accepted": 29,
-      "waiting": 0,
-      "updated_at": "2026-08-25T19:42:02+09:00"
     },
     {
       "id": 403706,
@@ -283,37 +252,6 @@
       "updated_at": "2026-08-26T09:12:34+09:00"
     },
     {
-      "id": 402775,
-      "title": "社内データをAIにどう活かすのか？Ubie & メルカリ流・データ基盤の整備とその活用事例",
-      "catch": "「データ整備」×「データ活用」の両輪で語る、生成AI時代の実践知。成功談も失敗談もぶっちゃけトーク！",
-      "description": "<h1>概要</h1>\n<p>「AIに渡すデータを、誰がどう整えるのか？」「整えたデータを、現場でどう成果につなげるのか？」</p>\n<p>生成AIの成果を最大化するには、データを <strong>「整備する」力</strong> とデータを <strong>「活用する」力</strong> の両輪が欠かせません。本イベントでは、Ubieとメルカリの実践者が、この2つの軸からリアルな経験をお話しします。</p>\n<ul>\n<li><strong>整備の軸</strong>：社内データをみんな（全社・チーム）が使えるように整備してきたエンジニアの経験</li>\n<li><strong>活用の軸</strong>：整備されたデータを業務改善・効率化につなげた非エンジニアチームの実例</li>\n</ul>\n<p>うまくいった話だけでなく失敗談も交えながら、前半は各社からのプレゼンテーション、後半はパネルディスカッション形式でお届けします。\nまた、最後に登壇者と参加者の交流会も実施予定です。参加者のみなさまも一緒にデータ周りのことをお話しましょう。\n　</p>\n<h1>🚀 このような方にオススメです！</h1>\n<ul>\n<li>生成AIを業務で利活用している方</li>\n<li>データアナリスト、データエンジニアの方</li>\n<li>社内外向けのデータマネジメントに携わっている方</li>\n<li>社内データの整備・データ基盤づくりに課題を感じている方</li>\n<li>整備されたデータを業務改善・効率化につなげた実例を知りたい方</li>\n<li>UbieやメルカリのAI・データ活用のリアルな事例に興味のある方</li>\n</ul>\n<h1>🏢 会場</h1>\n<ul>\n<li>メルカリ イベントスペース（オフライン開催）</li>\n<li>入館方法は参加者の方へ別途ご案内いたします</li>\n</ul>\n<h1>📝 タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00〜</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10〜</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20〜</td>\n<td style=\"text-align: left;\">プレゼンテーション①</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30〜</td>\n<td style=\"text-align: left;\">プレゼンテーション②</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40〜</td>\n<td style=\"text-align: left;\">プレゼンテーション③</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜</td>\n<td style=\"text-align: left;\">プレゼンテーション④</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00〜</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30〜</td>\n<td style=\"text-align: left;\">交流会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55〜</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<p>※内容は当日変更する可能性がございます。予めご了承ください。</p>\n<h1>プレゼンリスト</h1>\n<ul>\n<li>人とAIが同じ数字を見る — メルカリのデータ基盤</li>\n<li>社内データをAIにどう活かすのか？メルカリ流データ基盤の活用事例 📊</li>\n<li></li>\n</ul>\n<h1>🎤 登壇者</h1>\n<h2>Ubie株式会社 | 生成AI推進室 テックリード | syucream</h2>\n<p>ヤフー、メルカリにおいてプロダクト開発・社内基盤経験を経て Ubie に 2021 年入社。入社後はプロダクト開発やエンジニア採用、組織制度刷新などを経験し、現在はプロダクト開発基盤とAI社内推進を行うチームのリーダーに就任。最近のテーマは、AI で社内全員の能力をリバレッジして少人数だとしても大きなアウトカムを創出することを可能にすること。</p>\n<ul>\n<li><a href=\"https://x.com/syu_cream\" rel=\"nofollow\">X（@syu_cream）</a></li>\n</ul>\n<h2>Ubie株式会社 | 生成AI推進室 AI Operation Manager | Yoshiki</h2>\n<p>アドテクノロジー領域にて約6年間、SSPやアドネットワークのメディア担当として従事した後、2023年Ubie入社。入社後はAI Opsとして、事業部門の業務プロセス改善やAI活用の推進に従事。現在は病院向け事業にて、営業が成果を出すための「舞台装置」づくりに取り組む。CRM・データ基盤・生成AI基盤を横断で設計し、営業ナレッジの集約・活用、活動ログの自動収集、AIエージェントによる業務支援などを通じて、成果を構造的に伸ばす仕組みづくりに注力している。</p>\n<ul>\n<li><a href=\"https://x.com/yoshiki_aiops\" rel=\"nofollow\">X（@yoshiki_aiops） </a></li>\n</ul>\n<h2>株式会社メルカリ | JB(Japan Business) Data Team / Director | Wei Gong</h2>\n<p>ソニーでエンジニアとしてキャリアを開始し、慶應MBAを経て、マッキンゼーで経営コンサルティング、AIGでデータサイエンス、OYOでBI・グロース・プロダクト、Wolt/DoorDashでパートナー戦略を担当。2023年12月メルカリ入社。メルカリ ハロのBIチーム立ち上げと事業計画・営業戦略を経て、現在はHead of Data of Japan Businessとして日本事業のデータ組織を統括。AIによるデータ活用の仕組みづくりに取り組んでいる。</p>\n<h2>株式会社メルカリ | Corporate Risk Management Team | takashio</h2>\n<p>クレジットカード会社、Fintech企業でのリスクマネジメント業務を経てメルカリへ参画。現在はグループ全体のリスクマネジメントを担当。攻めと守りを両立し、ミッション達成の確実性を高めるため、AIを活用したERM（全社的リスクマネジメント）の実現に取り組んでいる。</p>\n<h1>モデレーター</h1>\n<h2>Ubie株式会社｜アクセラレーター本部 生成AI推進室｜盛田崇弘 tamosan</h2>\n<p>2021/09よりコーポレートエンジニアとして従事。現在は生成AIや社内業務において生成AIソリューションの利活用を検証・整備し、業務QCD向上を弊社従業員とともに推進しています。</p>\n<ul>\n<li><a href=\"https://x.com/tamosan_01\" rel=\"nofollow\">X（@tamosan_01） </a></li>\n<li><a href=\"https://note.com/tamosan_01/n/nfab36ff0f5f3\" rel=\"nofollow\">生成AIを「組織のOS」にするために。Ubieが実践するイネーブリングの全体像と\"3つの浸透カテゴリ\"</a></li>\n</ul>\n<h1>【注意事項】</h1>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止です。運営側の判断でご退出をお願いする場合があります。</li>\n<li>当日のイベント風景を写真撮影させていただく場合があります。</li>\n</ul>\n<h1>【共催企業】</h1>\n<h2>Ubie株式会社</h2>\n<ul>\n<li><a href=\"https://recruit.ubie.life/\" rel=\"nofollow\">Ubie株式会社 採用ページ</a></li>\n<li><a href=\"https://blog.ubie.tech/\" rel=\"nofollow\">Ubie株式会社 Tech blog</a></li>\n</ul>\n<h2>株式会社メルカリ</h2>\n<ul>\n<li><a href=\"https://engineering.mercari.com/blog/\" rel=\"nofollow\">エンジニアリングブログ</a></li>\n<li><a href=\"https://twitter.com/mercaridevjp\" rel=\"nofollow\">エンジニア向けTwitterアカウント</a></li>\n<li><a href=\"https://www.youtube.com/c/mercaridevjp/featured\" rel=\"nofollow\">エンジニア向けYouTube</a></li>\n<li><a href=\"https://jp.merpay.com/careers/\" rel=\"nofollow\">採用ページ</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/624F89F225/\" rel=\"nofollow\">Senior Analytics Engineer - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/0CFBF11B9E\" rel=\"nofollow\">Manager, Analytics Engineer - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/E9EEC9F115/\" rel=\"nofollow\">シニアデータマネジメントスペシャリスト / Senior Data Management Specialist - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/A29021CC47/\" rel=\"nofollow\">Engineering Manager, Data Ingestion - Mercari</a></li>\n<li>9/4に<a href=\"https://mercari.connpass.com/event/403633/\" rel=\"nofollow\">Mercari Data Engineering &amp; Career Talk〜メルカリのデータ組織・キャリアについてお話ししましょう！〜</a>を開催予定！</li>\n</ul>\n<h2>行動規範について</h2>\n<p>当イベントは、参加者と情報を共有するための場です。そのため、主催者を含む全ての参加者は下記ページに記載される行動規範に同意していただく必要があります。ご理解ご協力をお願いいたします。</p>\n<p><a href=\"https://about.mercari.com/event-code-of-conduct/&lt;br>\" rel=\"nofollow\">https://about.mercari.com/event-code-of-conduct/<br></a>\n<a href=\"https://ubie.life/event-code-of-conduct\" rel=\"nofollow\">https://ubie.life/event-code-of-conduct</a></p>\n<p>何か困ったことなどありましたら、当イベントページの「イベントへのお問い合わせ」からご連絡ください。</p>",
-      "url": "https://mercari.connpass.com/event/402775/",
-      "image_url": "https://media.connpass.com/thumbs/ea/1a/ea1a1e7901aa306b63ef3203cd92c446.png",
-      "hash_tag": "ubie_mercari_aitalk",
-      "started_at": "2026-08-26T19:00:00+09:00",
-      "ended_at": "2026-08-26T21:00:00+09:00",
-      "published_at": "2026-08-10T10:36:48+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 1215,
-        "subdomain": "mercari",
-        "title": "メルカリ／Mercari",
-        "url": "https://mercari.connpass.com/"
-      },
-      "address": "港区六本木6丁目10番1号 六本木ヒルズ森タワー",
-      "place": "株式会社メルカリ　東京オフィス",
-      "lat": "35.660462100000",
-      "lon": "139.729278600000",
-      "owner_id": 122777,
-      "owner_nickname": "mercari_event",
-      "owner_display_name": "mercari_event",
-      "accepted": 45,
-      "waiting": 0,
-      "updated_at": "2026-08-26T12:29:07+09:00"
-    },
-    {
       "id": 400850,
       "title": "Gotanda.rb#69 オフライン開催",
       "catch": "",
@@ -340,7 +278,7 @@
       "owner_id": 47620,
       "owner_nickname": "amireco",
       "owner_display_name": "amireco",
-      "accepted": 13,
+      "accepted": 12,
       "waiting": 0,
       "updated_at": "2026-08-26T10:59:00+09:00"
     },
@@ -371,9 +309,40 @@
       "owner_id": 55114,
       "owner_nickname": "ichirokano",
       "owner_display_name": "1Kano",
-      "accepted": 58,
+      "accepted": 60,
       "waiting": 0,
       "updated_at": "2026-08-26T12:39:31+09:00"
+    },
+    {
+      "id": 401434,
+      "title": "Tachikawa.any #2",
+      "catch": "",
+      "description": "<h1>Tachikawa.any #2</h1>\n<h2>⭐ イベント概要</h2>\n<p>立川、国立、国分寺、八王子、東大和……多摩モノレール、中央線沿いに住む・働くテックな人たちが気軽に集まれるコミュニティ「<strong>Tachikawa.any</strong>」の第2回目イベントです！</p>\n<p>今回の会場は、 <strong>国分寺</strong>です :party-popper: </p>\n<p>技術スタック、職種、経験年数、企業規模……ぜんぶ <strong>any（なんでもあり）！</strong></p>\n<p>テーマは <strong>フリー</strong> ですが、今回は 5分枠と別に、<strong>10分枠</strong>を設けました！\nまた、各トークの後に質問タイムを設けているので、参加者の方との交流の時間とできればと思っています。</p>\n<p>最近ハマっている技術、仕事で得た知見、趣味の開発、キャリアの話……なんでもOKです。</p>\n<p>初参加・初登壇、大歓迎です。肩の力を抜いて、気軽にお越しください。</p>\n<h2>🎯 こんな方におすすめ</h2>\n<ul>\n<li>中央線沿いや多摩モノレール沿いに住んでいる・働いているエンジニア / デザイナー / PdM / EM の方</li>\n<li>近隣のテック仲間と横のつながりを作りたい方</li>\n<li>最近学んだこと・ハマっていることをカジュアルに発表してみたい方</li>\n<li>LT初挑戦してみたい方</li>\n<li>立川全然関係ないけど、立川や中央線沿いがなんか好きだ！という方</li>\n</ul>\n<p>※ 立川近隣にお住まいでなくても、もちろん歓迎です！(今回の会場は<strong>国分寺</strong>です)</p>\n<h2>⌛ タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:45</td>\n<td>開場・受付</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00〜19:10</td>\n<td>オープニングトーク</td>\n<td>主催</td>\n</tr>\n<tr>\n<td>19:10〜19:25</td>\n<td>10分枠①「依頼する技術」</td>\n<td><a href=\"https://x.com/77web\" rel=\"nofollow\">77web</a></td>\n</tr>\n<tr>\n<td>19:25〜19:40</td>\n<td>10分枠②「」</td>\n<td>TBD</td>\n</tr>\n<tr>\n<td>19:40〜19:50</td>\n<td>LT枠①「AIオーケストレータを自作してみた所感」</td>\n<td><a href=\"https://x.com/kazto_dev\" rel=\"nofollow\">kazto</a></td>\n</tr>\n<tr>\n<td>19:50〜20:00</td>\n<td>休憩タイム</td>\n<td>-</td>\n</tr>\n<tr>\n<td>20:00〜20:10</td>\n<td>LT枠②「　『回復法は人それぞれ。まず自分の型を知る』〜しんどい・落ち込んだ時のリフレッシュ法〜」</td>\n<td><a href=\"https://x.com/beppu01\" rel=\"nofollow\">西から来た馬づらの男</a></td>\n</tr>\n<tr>\n<td>20:10〜20:20</td>\n<td>LT枠③「UX 試験(基礎)に合格しました」</td>\n<td><a href=\"https://x.com/offichy\" rel=\"nofollow\">offich</a></td>\n</tr>\n<tr>\n<td>20:20〜20:30</td>\n<td>LT枠④「同人誌をつくる(物理)」</td>\n<td><a href=\"https://x.com/3l4I5\" rel=\"nofollow\">おーくら</a></td>\n</tr>\n<tr>\n<td>20:30〜20:40</td>\n<td>LT枠⑤「Podcast を始めて2年半。取り上げた本を時間の限り紹介する！」</td>\n<td><a href=\"https://x.com/gennei\" rel=\"nofollow\">げんえい</a></td>\n</tr>\n<tr>\n<td>20:40〜21:00</td>\n<td>交流タイム(バッファ込)</td>\n<td>主催</td>\n</tr>\n<tr>\n<td>21:00〜21:05</td>\n<td>クロージング</td>\n<td>主催</td>\n</tr>\n<tr>\n<td>21:05〜21:15</td>\n<td>参加者完全撤収＋会場片付け</td>\n<td></td>\n</tr>\n<tr>\n<td>21:15</td>\n<td>会場完全撤収</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルはLT登壇者の人数によって変更になる場合があります。</p>\n<h2>🗣️ トークについて</h2>\n<ul>\n<li>発表時間は <strong>5分 or 10分</strong> 目安ですが、オーバーしても大丈夫です。質疑タイムと休憩時間で調整します。</li>\n<li>テーマは <strong>フリー</strong> です。技術、キャリア、マネジメント、趣味の開発……なんでもOK！</li>\n<li>資料投影用のPCは各自ご用意ください。</li>\n</ul>\n<h3>発表内容の一例</h3>\n<ul>\n<li>最近学んだ技術・ハマっていること</li>\n<li>仕事で得た知見や失敗談</li>\n<li>個人開発の紹介</li>\n<li>キャリアや働き方について</li>\n<li>チーム開発・マネジメントの工夫</li>\n<li>推し技術のプレゼン</li>\n<li>etc...</li>\n</ul>\n<p>初登壇・登壇練習も大歓迎です！再演や他イベントでの事前練習でもOKです。</p>\n<h2>🍻 懇親会</h2>\n<p>イベント終了後、国分寺駅周辺のお店で希望者による懇親会を予定しています（任意参加）。\n詳細はDiscordにてご案内します。</p>\n<h2>🗺️ 会場</h2>\n<ul>\n<li>会場：オープンイノベーションフィールド多摩 国分寺館</li>\n<li>住所：東京都国分寺市南町3-22-10</li>\n<li>アクセス：ＪＲ中央線・西武線「国分寺」駅 南口より徒歩5分</li>\n</ul>\n<p>※ 電源は限りがございますので、PCなどあらかじめ充電の上お越しください。</p>\n<h3>参加費</h3>\n<p><strong>無料</strong> です。\n会場費等の維持のため、お気持ち（100円〜500円程度）カンパいただけると、継続開催の大きな助けになります 🙏</p>\n<h3>キャンセルについて</h3>\n<p>キャンセルはイベント開催日の <strong>前日まで</strong> にお願いいたします。\n当日キャンセルの場合は、Discordの参加者向けチャンネルからご連絡ください。</p>\n<h2>💬 Discord</h2>\n<p>Tachikawa.any では、イベントの案内や当日の運営連絡を <strong>Discord</strong> にて行います。\nイベントに参加予定の方、ご興味をお持ちの方はぜひご参加ください。\n<a href=\"https://discord.gg/csmGM9h7kd\" rel=\"nofollow\">https://discord.gg/csmGM9h7kd</a></p>\n<h2>⚠️ 注意事項</h2>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。あらかじめご了承ください。</li>\n<li>写真撮影はOKですが、ブログやSNS等で発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>当日撮影した画像は、SNS等でイベントの紹介に利用させていただく可能性があります。撮影NGの方は、事前にconnpassのメッセージやDiscordで運営までお知らせください。最大限配慮いたします。</li>\n<li>イベント会場の施設と本イベントの運営は無関係です。会場へのお問い合わせはお控えください。</li>\n<li>保険、宗教、ネットワークビジネス等の勧誘目的の参加はお断りします。</li>\n<li>運営が参加にふさわしくないと判断した場合、イベント中であってもご退席をお願いすることがございます。</li>\n</ul>\n<h2>📜 行動規範</h2>\n<ul>\n<li>すべての参加者がお互いを尊重し、思いやりを持って接することを大切にします。</li>\n<li>多様な価値観や背景を尊重し、性別・年齢・属性・職種・スキルレベルなどによる差別的な発言や、相手を不快にさせる言動は控え、配慮のある言動を心がけましょう。</li>\n<li>本コミュニティ内での商業的な勧誘や営業活動は原則として禁止します。</li>\n<li>イベントやDiscordで共有された他者の個人情報は、本人の許可なく第三者に共有・転載・公開致しません。</li>\n<li>この行動規範に関する報告は、Discord または運営主催者までご連絡ください。緊急時には、お近くのスタッフまで直接お声がけください。</li>\n</ul>",
+      "url": "https://tachikawaany.connpass.com/event/401434/",
+      "image_url": "https://media.connpass.com/thumbs/8e/90/8e90f27ae5ef1e90fa968aba601854d9.png",
+      "hash_tag": "tachikawaany",
+      "started_at": "2026-08-26T19:00:00+09:00",
+      "ended_at": "2026-08-26T21:15:00+09:00",
+      "published_at": "2026-07-22T19:19:15+09:00",
+      "limit": 35,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 16940,
+        "subdomain": "tachikawaany",
+        "title": "tachikawa.any",
+        "url": "https://tachikawaany.connpass.com/"
+      },
+      "address": "東京都国分寺市南町3-22-10",
+      "place": "オープンイノベーションフィールド多摩 国分寺館",
+      "lat": "35.698659300000",
+      "lon": "139.478212200000",
+      "owner_id": 173698,
+      "owner_nickname": "DaisukeFFF",
+      "owner_display_name": "daitasu",
+      "accepted": 29,
+      "waiting": 0,
+      "updated_at": "2026-08-26T13:06:25+09:00"
     },
     {
       "id": 402141,
@@ -402,7 +371,7 @@
       "owner_id": 822255,
       "owner_nickname": "fujimoto_mako",
       "owner_display_name": "makofuji",
-      "accepted": 46,
+      "accepted": 45,
       "waiting": 0,
       "updated_at": "2026-08-24T09:36:21+09:00"
     },
@@ -436,6 +405,37 @@
       "accepted": 55,
       "waiting": 0,
       "updated_at": "2026-08-24T18:22:46+09:00"
+    },
+    {
+      "id": 402775,
+      "title": "社内データをAIにどう活かすのか？Ubie & メルカリ流・データ基盤の整備とその活用事例",
+      "catch": "「データ整備」×「データ活用」の両輪で語る、生成AI時代の実践知。成功談も失敗談もぶっちゃけトーク！",
+      "description": "<h1>概要</h1>\n<p>「AIに渡すデータを、誰がどう整えるのか？」「整えたデータを、現場でどう成果につなげるのか？」</p>\n<p>生成AIの成果を最大化するには、データを <strong>「整備する」力</strong> とデータを <strong>「活用する」力</strong> の両輪が欠かせません。本イベントでは、Ubieとメルカリの実践者が、この2つの軸からリアルな経験をお話しします。</p>\n<ul>\n<li><strong>整備の軸</strong>：社内データをみんな（全社・チーム）が使えるように整備してきたエンジニアの経験</li>\n<li><strong>活用の軸</strong>：整備されたデータを業務改善・効率化につなげた非エンジニアチームの実例</li>\n</ul>\n<p>うまくいった話だけでなく失敗談も交えながら、前半は各社からのプレゼンテーション、後半はパネルディスカッション形式でお届けします。\nまた、最後に登壇者と参加者の交流会も実施予定です。参加者のみなさまも一緒にデータ周りのことをお話しましょう。\n　</p>\n<h1>🚀 このような方にオススメです！</h1>\n<ul>\n<li>生成AIを業務で利活用している方</li>\n<li>データアナリスト、データエンジニアの方</li>\n<li>社内外向けのデータマネジメントに携わっている方</li>\n<li>社内データの整備・データ基盤づくりに課題を感じている方</li>\n<li>整備されたデータを業務改善・効率化につなげた実例を知りたい方</li>\n<li>UbieやメルカリのAI・データ活用のリアルな事例に興味のある方</li>\n</ul>\n<h1>🏢 会場</h1>\n<ul>\n<li>メルカリ イベントスペース（オフライン開催）</li>\n<li>入館方法は参加者の方へ別途ご案内いたします</li>\n</ul>\n<h1>📝 タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00〜</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10〜</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20〜</td>\n<td style=\"text-align: left;\">プレゼンテーション①</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30〜</td>\n<td style=\"text-align: left;\">プレゼンテーション②</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40〜</td>\n<td style=\"text-align: left;\">プレゼンテーション③</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜</td>\n<td style=\"text-align: left;\">プレゼンテーション④</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00〜</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30〜</td>\n<td style=\"text-align: left;\">交流会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55〜</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<p>※内容は当日変更する可能性がございます。予めご了承ください。</p>\n<h1>プレゼンリスト</h1>\n<ul>\n<li>人とAIが同じ数字を見る — メルカリのデータ基盤</li>\n<li>社内データをAIにどう活かすのか？メルカリ流データ基盤の活用事例 📊</li>\n<li></li>\n</ul>\n<h1>🎤 登壇者</h1>\n<h2>Ubie株式会社 | 生成AI推進室 テックリード | syucream</h2>\n<p>ヤフー、メルカリにおいてプロダクト開発・社内基盤経験を経て Ubie に 2021 年入社。入社後はプロダクト開発やエンジニア採用、組織制度刷新などを経験し、現在はプロダクト開発基盤とAI社内推進を行うチームのリーダーに就任。最近のテーマは、AI で社内全員の能力をリバレッジして少人数だとしても大きなアウトカムを創出することを可能にすること。</p>\n<ul>\n<li><a href=\"https://x.com/syu_cream\" rel=\"nofollow\">X（@syu_cream）</a></li>\n</ul>\n<h2>Ubie株式会社 | 生成AI推進室 AI Operation Manager | Yoshiki</h2>\n<p>アドテクノロジー領域にて約6年間、SSPやアドネットワークのメディア担当として従事した後、2023年Ubie入社。入社後はAI Opsとして、事業部門の業務プロセス改善やAI活用の推進に従事。現在は病院向け事業にて、営業が成果を出すための「舞台装置」づくりに取り組む。CRM・データ基盤・生成AI基盤を横断で設計し、営業ナレッジの集約・活用、活動ログの自動収集、AIエージェントによる業務支援などを通じて、成果を構造的に伸ばす仕組みづくりに注力している。</p>\n<ul>\n<li><a href=\"https://x.com/yoshiki_aiops\" rel=\"nofollow\">X（@yoshiki_aiops） </a></li>\n</ul>\n<h2>株式会社メルカリ | JB(Japan Business) Data Team / Director | Wei Gong</h2>\n<p>ソニーでエンジニアとしてキャリアを開始し、慶應MBAを経て、マッキンゼーで経営コンサルティング、AIGでデータサイエンス、OYOでBI・グロース・プロダクト、Wolt/DoorDashでパートナー戦略を担当。2023年12月メルカリ入社。メルカリ ハロのBIチーム立ち上げと事業計画・営業戦略を経て、現在はHead of Data of Japan Businessとして日本事業のデータ組織を統括。AIによるデータ活用の仕組みづくりに取り組んでいる。</p>\n<h2>株式会社メルカリ | Corporate Risk Management Team | takashio</h2>\n<p>クレジットカード会社、Fintech企業でのリスクマネジメント業務を経てメルカリへ参画。現在はグループ全体のリスクマネジメントを担当。攻めと守りを両立し、ミッション達成の確実性を高めるため、AIを活用したERM（全社的リスクマネジメント）の実現に取り組んでいる。</p>\n<h1>モデレーター</h1>\n<h2>Ubie株式会社｜アクセラレーター本部 生成AI推進室｜盛田崇弘 tamosan</h2>\n<p>2021/09よりコーポレートエンジニアとして従事。現在は生成AIや社内業務において生成AIソリューションの利活用を検証・整備し、業務QCD向上を弊社従業員とともに推進しています。</p>\n<ul>\n<li><a href=\"https://x.com/tamosan_01\" rel=\"nofollow\">X（@tamosan_01） </a></li>\n<li><a href=\"https://note.com/tamosan_01/n/nfab36ff0f5f3\" rel=\"nofollow\">生成AIを「組織のOS」にするために。Ubieが実践するイネーブリングの全体像と\"3つの浸透カテゴリ\"</a></li>\n</ul>\n<h1>【注意事項】</h1>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止です。運営側の判断でご退出をお願いする場合があります。</li>\n<li>当日のイベント風景を写真撮影させていただく場合があります。</li>\n</ul>\n<h1>【共催企業】</h1>\n<h2>Ubie株式会社</h2>\n<ul>\n<li><a href=\"https://recruit.ubie.life/\" rel=\"nofollow\">Ubie株式会社 採用ページ</a></li>\n<li><a href=\"https://blog.ubie.tech/\" rel=\"nofollow\">Ubie株式会社 Tech blog</a></li>\n</ul>\n<h2>株式会社メルカリ</h2>\n<ul>\n<li><a href=\"https://engineering.mercari.com/blog/\" rel=\"nofollow\">エンジニアリングブログ</a></li>\n<li><a href=\"https://twitter.com/mercaridevjp\" rel=\"nofollow\">エンジニア向けTwitterアカウント</a></li>\n<li><a href=\"https://www.youtube.com/c/mercaridevjp/featured\" rel=\"nofollow\">エンジニア向けYouTube</a></li>\n<li><a href=\"https://jp.merpay.com/careers/\" rel=\"nofollow\">採用ページ</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/624F89F225/\" rel=\"nofollow\">Senior Analytics Engineer - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/0CFBF11B9E\" rel=\"nofollow\">Manager, Analytics Engineer - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/E9EEC9F115/\" rel=\"nofollow\">シニアデータマネジメントスペシャリスト / Senior Data Management Specialist - Mercari</a></li>\n<li><a href=\"https://apply.workable.com/mercari/j/A29021CC47/\" rel=\"nofollow\">Engineering Manager, Data Ingestion - Mercari</a></li>\n<li>9/4に<a href=\"https://mercari.connpass.com/event/403633/\" rel=\"nofollow\">Mercari Data Engineering &amp; Career Talk〜メルカリのデータ組織・キャリアについてお話ししましょう！〜</a>を開催予定！</li>\n</ul>\n<h2>行動規範について</h2>\n<p>当イベントは、参加者と情報を共有するための場です。そのため、主催者を含む全ての参加者は下記ページに記載される行動規範に同意していただく必要があります。ご理解ご協力をお願いいたします。</p>\n<p><a href=\"https://about.mercari.com/event-code-of-conduct/&lt;br>\" rel=\"nofollow\">https://about.mercari.com/event-code-of-conduct/<br></a>\n<a href=\"https://ubie.life/event-code-of-conduct\" rel=\"nofollow\">https://ubie.life/event-code-of-conduct</a></p>\n<p>何か困ったことなどありましたら、当イベントページの「イベントへのお問い合わせ」からご連絡ください。</p>",
+      "url": "https://mercari.connpass.com/event/402775/",
+      "image_url": "https://media.connpass.com/thumbs/ea/1a/ea1a1e7901aa306b63ef3203cd92c446.png",
+      "hash_tag": "ubie_mercari_aitalk",
+      "started_at": "2026-08-26T19:00:00+09:00",
+      "ended_at": "2026-08-26T21:00:00+09:00",
+      "published_at": "2026-08-10T10:36:48+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 1215,
+        "subdomain": "mercari",
+        "title": "メルカリ／Mercari",
+        "url": "https://mercari.connpass.com/"
+      },
+      "address": "港区六本木6丁目10番1号 六本木ヒルズ森タワー",
+      "place": "株式会社メルカリ　東京オフィス",
+      "lat": "35.660462100000",
+      "lon": "139.729278600000",
+      "owner_id": 122777,
+      "owner_nickname": "mercari_event",
+      "owner_display_name": "mercari_event",
+      "accepted": 46,
+      "waiting": 0,
+      "updated_at": "2026-08-26T12:29:07+09:00"
     },
     {
       "id": 403003,
@@ -567,7 +567,7 @@
       "started_at": "2026-08-26T18:00:00+09:00",
       "ended_at": "2026-08-26T20:00:00+09:00",
       "published_at": "2026-07-14T14:37:26+09:00",
-      "limit": 42,
+      "limit": 41,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -585,7 +585,7 @@
       "owner_display_name": "Technologic Arts Inc.",
       "accepted": 41,
       "waiting": 0,
-      "updated_at": "2026-08-26T10:28:03+09:00"
+      "updated_at": "2026-08-26T13:29:38+09:00"
     },
     {
       "id": 401731,
@@ -600,7 +600,7 @@
       "published_at": "2026-07-27T09:01:41+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16708,
         "subdomain": "jahrbp",
@@ -641,7 +641,7 @@
       "owner_nickname": "UnrealEngineJP",
       "owner_display_name": "Unreal Engine JP",
       "accepted": 170,
-      "waiting": 8,
+      "waiting": 7,
       "updated_at": "2026-08-26T11:46:20+09:00"
     },
     {
@@ -688,7 +688,7 @@
       "published_at": "2026-06-11T17:27:14+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "横浜市栄区上郷町1499-1",
       "place": "横浜市上郷・森の家",
