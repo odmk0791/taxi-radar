@@ -502,8 +502,8 @@ function renderList(){
 
 function initMap(){
   leafMap = L.map('map', {zoomControl:true}).setView([35.68,139.70], 12);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution:'&copy; OpenStreetMap &copy; CARTO', subdomains:'abcd', maxZoom:19
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution:'&copy; OpenStreetMap contributors', maxZoom:19
   }).addTo(leafMap);
 }
 
