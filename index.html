@@ -195,6 +195,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
     <div class="hs"><div class="st" id="st">読み込み中...</div></div>
     <div class="ck"><div id="ck">--:--</div><div class="cd" id="cd">---</div></div>
     <button class="notify-btn" id="notify-btn">🔕 通知OFF</button>
+    <button class="notify-btn" id="wake-btn" style="display:none">💡 点灯</button>
     <button class="hbtn" id="open-excl" onclick="openExclSettings()" title="除外エリア">🚫</button>
     <button class="hbtn" id="open-setup">⚙️</button>
   </div>
@@ -932,7 +933,7 @@ function _buildMap(){
   if(!_mapInited){
     var cx=uLat||spots[0].la,cy=uLng||spots[0].ln;
     _leafMap=L.map('spot-map',{zoomControl:true}).setView([cx,cy],14);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
       attribution:'© OpenStreetMap © CARTO',maxZoom:19
     }).addTo(_leafMap);
     _mapInited=true;
@@ -1378,6 +1379,43 @@ function getFbStats(wardName,hour){
 }
 document.getElementById('open-setup').addEventListener('click',openSetup);
 document.getElementById('notify-btn').addEventListener('click',toggleNotify);
+
+/* ── 画面スリープ防止（Wake Lock API）── HTTPS必須／iOS16.4以降対応 */
+var wakeLock=null;
+var wakeOn=(localStorage.getItem('taxiradar_wake')==='1');
+var wakeSupported=typeof navigator!=='undefined'&&'wakeLock' in navigator;
+function updateWakeBtn(){
+  var btn=document.getElementById('wake-btn');
+  if(!btn)return;
+  if(wakeOn){btn.textContent='💡 点灯';btn.style.background='var(--gd)';btn.style.color='var(--g)';btn.style.borderColor='rgba(57,211,83,.4)';}
+  else{btn.textContent='🌙 消灯';btn.style.background='var(--s2)';btn.style.color='var(--mu)';btn.style.borderColor='var(--bd)';}
+}
+function acquireWakeLock(){
+  if(!wakeSupported)return;
+  navigator.wakeLock.request('screen').then(function(s){
+    wakeLock=s;
+    s.addEventListener('release',function(){wakeLock=null;});
+  }).catch(function(){wakeOn=false;localStorage.setItem('taxiradar_wake','0');updateWakeBtn();});
+}
+function releaseWakeLock(){
+  if(wakeLock){try{wakeLock.release();}catch(e){}wakeLock=null;}
+}
+function toggleWake(){
+  wakeOn=!wakeOn;
+  localStorage.setItem('taxiradar_wake',wakeOn?'1':'0');
+  if(wakeOn)acquireWakeLock(); else releaseWakeLock();
+  updateWakeBtn();
+}
+document.addEventListener('visibilitychange',function(){
+  if(wakeOn&&document.visibilityState==='visible'&&!wakeLock)acquireWakeLock();
+});
+if(wakeSupported){
+  document.getElementById('wake-btn').style.display='';
+  document.getElementById('wake-btn').addEventListener('click',toggleWake);
+  updateWakeBtn();
+  if(wakeOn)acquireWakeLock();
+}
+
 document.getElementById('tab-r').addEventListener('click',function(){swTab('r');});
 document.getElementById('tab-h').addEventListener('click',function(){swTab('h');});
 document.getElementById('errcls').addEventListener('click',closeErr);
