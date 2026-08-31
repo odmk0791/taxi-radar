@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-31T15:29:31.870574+09:00",
+  "fetched_at": "2026-08-31T23:40:42.840162+09:00",
   "date": "20260831",
   "count": 6,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-08-26T05:55:23+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": null,
       "address": "東京都港区麻布十番1丁目10番10号(ジュールA 8F)",
       "place": "株式会社アトラエ",
@@ -42,7 +42,7 @@
       "published_at": "2026-08-18T09:59:05+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17254,
         "subdomain": "devtechguild",
@@ -73,7 +73,7 @@
       "published_at": "2026-08-17T17:45:30+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 6708,
         "subdomain": "maplesystems1",
@@ -104,7 +104,7 @@
       "published_at": "2026-08-11T17:06:19+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": null,
       "address": "東京都港区虎ノ門1-1-3 (磯村ビル3階)",
       "place": "官民共創HUB",
@@ -113,7 +113,7 @@
       "owner_id": 979581,
       "owner_nickname": "polipoli",
       "owner_display_name": "株式会社PoliPoli",
-      "accepted": 43,
+      "accepted": 41,
       "waiting": 0,
       "updated_at": "2026-08-29T19:49:01+09:00"
     },
@@ -121,7 +121,7 @@
       "id": 401925,
       "title": "（増枠！）Human in the loop? Human on the loop? meetup",
       "catch": "〜「全部見る」をやめ、on the loopで出力監視〜改善するための準備と判断基準〜",
-      "description": "<h1>✍️概要</h1>\n<p>AIコーディングツールの浸透により、実装からテスト、レビュー、リリース作業まで、開発の各工程でAIに任せられる範囲が急速に広がっています。</p>\n<p>一方で、AIの成果物をすべて人が確認するHuman in the loop の体制のままでは、人の確認作業がボトルネックとなり、せっかくのAI活用効果が頭打ちになってしまいます。そこで「全部見る」ことをやめ、人は要所の判断と監督に回るHuman on the loop への移行の模索が始まっています。</p>\n<p>量と質を両立しながら任せる範囲を広げるために、以下のような論点と向き合いながら試行錯誤している組織も多いのではないでしょうか。</p>\n<ul>\n<li>人の確認がボトルネックになり、AI活用の量的な効果を最大化しきれていない</li>\n<li>どの作業・どの成果物なら「全部見る」をやめられるのか、判断基準が定まらない</li>\n<li>人が確認から外れた後の品質をどう担保・観測するのか、仕組みのイメージが持てない</li>\n</ul>\n<p>本イベントでは「『全部見る』をやめるための準備と判断基準」をテーマに、各社がどこまで人の介入を残し、どこからAIに任せようとしているのか、そのための準備や検討の過程を5分LT形式で持ち寄ります。</p>\n<p>登壇テーマ例：</p>\n<ul>\n<li>人の介入を減らすために整備したルール・ガードレール・テスト戦略</li>\n<li>in the loop / on the loop を切り分ける自社なりの判断基準（検討中のものも歓迎）</li>\n<li>一部のPRで人がレビューに入らない運用への挑戦と学び</li>\n<li>AIに任せた後の評価・振り返り・観測基盤の整備</li>\n<li>「全部見る」をやめてみて起きた失敗と、境界線の引き直し</li>\n</ul>\n<p>現在進行形の試行錯誤も含めて、量と質を両立する「任せ方」を設計するヒントを持ち帰っていただける場を目指します。<br>\nぜひご参加ください！</p>\n<h2>🧑‍💻 こんな方におすすめ</h2>\n<ul>\n<li>AI活用でアウトプットの量は増えたが、人の確認・レビューがボトルネックになっている方</li>\n<li>AIに任せる範囲を広げたいが、品質担保との両立に悩んでいるエンジニア・EMの方</li>\n<li>「任せる」と「見守る」の判断基準を自組織でどう置くか模索している方</li>\n<li>AIに任せた後の評価・観測・振り返りの仕組みづくりに関心がある方</li>\n</ul>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">（仮）AI出力の品質を観測しながら進める、リスク別レビュートリアージ</td>\n<td style=\"text-align: left;\">山田さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">MutationTest×AI駆動開発やってみた</td>\n<td style=\"text-align: left;\">もっくまさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:33</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35 - 19:40</td>\n<td style=\"text-align: left;\">【試作】 IoT × AIエージェント　― 必要なときだけ人が動く（Human-in-the-loop /Human-on-the-loop） ―</td>\n<td style=\"text-align: left;\">コロッケそばさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:42 - 19:47</td>\n<td style=\"text-align: left;\">MOSHにおける決定論的Linter/Skills整備の実践と「見ない範囲」の広げ方</td>\n<td style=\"text-align: left;\">大櫛佑貴さん（MOSH株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:49 - 20:14</td>\n<td style=\"text-align: left;\">Q&amp;A（25分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:16 - 20:23</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LTは1人5分（本編のみ）です<br>\n※各セッション間には、画面投影・登壇者切り替えのために2分ずつ転換時間を確保しています<br>\n※登壇順は変更となる場合があります</p>\n<blockquote>\n<p>※20:23〜21:30 懇親会（ネットワーキング・オフライン参加者限定）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります</p>\n</blockquote>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<hr>\n<p><img src=\"https://pub-6c0fa25e87514278832a60f88b3d183c.r2.dev/connpass/MOSH.png\" width=\"300\"></p>\n<p>MOSH株式会社について<br>\n私たちは「情熱がめぐる経済をつくる」というミッションを掲げ、クリエイター向けの事業拡大プラットフォーム「<a href=\"https://mosh.jp/\" rel=\"nofollow\">MOSH</a>」を開発・運営しています。<br>サイト作成、予約、決済、顧客管理、コンテンツ管理、海外対応など、幅広い機能を提供し、クリエイターが事業を成長させる中で直面するあらゆる課題に取り組んでいます。 創業時からのコアバリューである「Start With One」を大切にし、常に顧客の価値を最優先に考えたプロダクトづくりに取り組んできました。<br>\n2025年2月にシリーズC資金調達を実施。事業の成長をさらに加速させ、グローバルで利用されるプロダクトを目指して進化を続けていきます。</p>\n<ul>\n<li>テックブログ：<a href=\"https://zenn.dev/p/moshjp\" rel=\"nofollow\">MOSH テックブログ</a></li>\n<li>Podcast：<a href=\"https://open.spotify.com/playlist/7c9ftQuIDaL5p1ObVZ0Ku7?go=1&amp;sp_cid=9405354811d76411bc9fa39e59d4e22a&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=9ef0f0a4828f4eb4\" rel=\"nofollow\">MOSH Tech Radio</a></li>\n<li>公式X：<a href=\"https://x.com/MOSHinc_jp\" rel=\"nofollow\">MOSH株式会社</a></li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/?utm_source=ai-plus&amp;utm_medium=event&amp;utm_campaign=connpass_FindyAI+サービス紹介&amp;utm_content=&amp;utm_term=\" rel=\"nofollow\">AI活用の成果最大化とコスト最適化を両立する。「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
+      "description": "<h1>✍️概要</h1>\n<p>AIコーディングツールの浸透により、実装からテスト、レビュー、リリース作業まで、開発の各工程でAIに任せられる範囲が急速に広がっています。</p>\n<p>一方で、AIの成果物をすべて人が確認するHuman in the loop の体制のままでは、人の確認作業がボトルネックとなり、せっかくのAI活用効果が頭打ちになってしまいます。そこで「全部見る」ことをやめ、人は要所の判断と監督に回るHuman on the loop への移行の模索が始まっています。</p>\n<p>量と質を両立しながら任せる範囲を広げるために、以下のような論点と向き合いながら試行錯誤している組織も多いのではないでしょうか。</p>\n<ul>\n<li>人の確認がボトルネックになり、AI活用の量的な効果を最大化しきれていない</li>\n<li>どの作業・どの成果物なら「全部見る」をやめられるのか、判断基準が定まらない</li>\n<li>人が確認から外れた後の品質をどう担保・観測するのか、仕組みのイメージが持てない</li>\n</ul>\n<p>本イベントでは「『全部見る』をやめるための準備と判断基準」をテーマに、各社がどこまで人の介入を残し、どこからAIに任せようとしているのか、そのための準備や検討の過程を5分LT形式で持ち寄ります。</p>\n<p>登壇テーマ例：</p>\n<ul>\n<li>人の介入を減らすために整備したルール・ガードレール・テスト戦略</li>\n<li>in the loop / on the loop を切り分ける自社なりの判断基準（検討中のものも歓迎）</li>\n<li>一部のPRで人がレビューに入らない運用への挑戦と学び</li>\n<li>AIに任せた後の評価・振り返り・観測基盤の整備</li>\n<li>「全部見る」をやめてみて起きた失敗と、境界線の引き直し</li>\n</ul>\n<p>現在進行形の試行錯誤も含めて、量と質を両立する「任せ方」を設計するヒントを持ち帰っていただける場を目指します。<br>\nぜひご参加ください！</p>\n<h2>🧑‍💻 こんな方におすすめ</h2>\n<ul>\n<li>AI活用でアウトプットの量は増えたが、人の確認・レビューがボトルネックになっている方</li>\n<li>AIに任せる範囲を広げたいが、品質担保との両立に悩んでいるエンジニア・EMの方</li>\n<li>「任せる」と「見守る」の判断基準を自組織でどう置くか模索している方</li>\n<li>AIに任せた後の評価・観測・振り返りの仕組みづくりに関心がある方</li>\n</ul>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">成果物の確認は手放さない in the loop でも楽はしたい on the loop</td>\n<td style=\"text-align: left;\">山田さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">MutationTest×AI駆動開発やってみた</td>\n<td style=\"text-align: left;\">もっくまさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:33</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35 - 19:40</td>\n<td style=\"text-align: left;\">【試作】 IoT × AIエージェント　― 必要なときだけ人が動く（Human-in-the-loop /Human-on-the-loop） ―</td>\n<td style=\"text-align: left;\">コロッケそばさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:42 - 19:47</td>\n<td style=\"text-align: left;\">MOSHにおける決定論的Linter/Skills整備の実践と「見ない範囲」の広げ方</td>\n<td style=\"text-align: left;\">大櫛佑貴さん（MOSH株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:49 - 20:14</td>\n<td style=\"text-align: left;\">Q&amp;A（25分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:16 - 20:23</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LTは1人5分（本編のみ）です<br>\n※各セッション間には、画面投影・登壇者切り替えのために2分ずつ転換時間を確保しています<br>\n※登壇順は変更となる場合があります</p>\n<blockquote>\n<p>※20:23〜21:30 懇親会（ネットワーキング・オフライン参加者限定）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります</p>\n</blockquote>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<hr>\n<p><img src=\"https://pub-6c0fa25e87514278832a60f88b3d183c.r2.dev/connpass/MOSH.png\" width=\"300\"></p>\n<p>MOSH株式会社について<br>\n私たちは「情熱がめぐる経済をつくる」というミッションを掲げ、クリエイター向けの事業拡大プラットフォーム「<a href=\"https://mosh.jp/\" rel=\"nofollow\">MOSH</a>」を開発・運営しています。<br>サイト作成、予約、決済、顧客管理、コンテンツ管理、海外対応など、幅広い機能を提供し、クリエイターが事業を成長させる中で直面するあらゆる課題に取り組んでいます。 創業時からのコアバリューである「Start With One」を大切にし、常に顧客の価値を最優先に考えたプロダクトづくりに取り組んできました。<br>\n2025年2月にシリーズC資金調達を実施。事業の成長をさらに加速させ、グローバルで利用されるプロダクトを目指して進化を続けていきます。</p>\n<ul>\n<li>テックブログ：<a href=\"https://zenn.dev/p/moshjp\" rel=\"nofollow\">MOSH テックブログ</a></li>\n<li>Podcast：<a href=\"https://open.spotify.com/playlist/7c9ftQuIDaL5p1ObVZ0Ku7?go=1&amp;sp_cid=9405354811d76411bc9fa39e59d4e22a&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=9ef0f0a4828f4eb4\" rel=\"nofollow\">MOSH Tech Radio</a></li>\n<li>公式X：<a href=\"https://x.com/MOSHinc_jp\" rel=\"nofollow\">MOSH株式会社</a></li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/?utm_source=ai-plus&amp;utm_medium=event&amp;utm_campaign=connpass_FindyAI+サービス紹介&amp;utm_content=&amp;utm_term=\" rel=\"nofollow\">AI活用の成果最大化とコスト最適化を両立する。「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
       "url": "https://findy-aiplus.connpass.com/event/401925/",
       "image_url": "https://media.connpass.com/thumbs/80/1c/801ce6eed22ac8f19f351f870e232b6c.png",
       "hash_tag": "humanontheloop",
@@ -130,7 +130,7 @@
       "published_at": "2026-08-13T18:00:46+09:00",
       "limit": 47,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17529,
         "subdomain": "findy-aiplus",
@@ -144,9 +144,9 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 37,
+      "accepted": 38,
       "waiting": 0,
-      "updated_at": "2026-08-31T14:30:28+09:00"
+      "updated_at": "2026-08-31T16:52:43+09:00"
     },
     {
       "id": 401967,
@@ -161,7 +161,7 @@
       "published_at": "2026-07-31T07:06:52+09:00",
       "limit": 130,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 13493,
         "subdomain": "loglass-tech",
@@ -175,7 +175,7 @@
       "owner_id": 837024,
       "owner_nickname": "dev-loglass",
       "owner_display_name": "ログラス管理者",
-      "accepted": 125,
+      "accepted": 112,
       "waiting": 0,
       "updated_at": "2026-08-20T01:01:34+09:00"
     }
