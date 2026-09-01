@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-02T00:20:40.412700+09:00",
+  "fetched_at": "2026-09-02T04:04:29.993045+09:00",
   "date": "20260902",
   "count": 8,
   "events": [
@@ -66,6 +66,37 @@
       "updated_at": "2026-09-02T00:19:39+09:00"
     },
     {
+      "id": 402836,
+      "title": "コーディングのためのローカルLLM勉強会 in 東京",
+      "catch": "",
+      "description": "<h2>イベント概要</h2>\n<p>Kimi K3やDeepSeek V4などウェイト公開モデルもどんどん実用的になってきたので、コーディングをターゲットとしたローカルLLM勉強会を開催します。</p>\n<p>サムネイル画像のプロンプト(by Kimi K3 on cloud)</p>\n<blockquote>\n<p>Design and create a very creative, elaborate, and detailed voxel art scene of a pagoda in a beautiful garden with trees, including some cherry blossoms. Make the scene impressive and varied and use colorful voxels. Use whatever libraries to get this done but make sure I can paste it all into a single HTML file and open it in Chrome. <br>\nvia <a href=\"https://x.com/loktar00/status/2082336275177119771\" rel=\"nofollow\">https://x.com/loktar00/status/2082336275177119771</a></p>\n</blockquote>\n<h2>要項</h2>\n<ul>\n<li>📆 日時：9/2(水) 19:00〜21:00</li>\n<li>📍 場所：LINEヤフー株式会社 紀尾井町オフィス 17F </li>\n<li>💰 参加費：無料</li>\n</ul>\n<p>※ サテライト会場は、同一空間ですが障害物のためメインスクリーンや登壇者の直接視認が難しく、別途用意のディスプレイで資料のみの投影を見ていただくことになります。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\">　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05〜19:45</td>\n<td style=\"text-align: left;\">コーディングのためのローカルLLM基礎知識　</td>\n<td style=\"text-align: left;\">きしだ(LINEヤフー)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜20:00</td>\n<td style=\"text-align: left;\">DGX Sparkを2台つかっていろいろ動かす話</td>\n<td style=\"text-align: left;\">苑田 朝彰(レバレジーズ)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05〜20:15</td>\n<td style=\"text-align: left;\">マルチテナントLLMサーバー運用のつらいところ、それでもやるべき理由</td>\n<td style=\"text-align: left;\">Yiyang Zhan(LINEヤフー)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15〜21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※登壇者や登壇内容は変更される可能性があります</p>\n<h2>会場へのアクセス</h2>\n<p>LINEヤフー株式会社　紀尾井町オフィス<br>\n（東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー）</p>\n<p>→ 受付は紀尾井タワー2階カウンターに設置しております。</p>\n<p>東京メトロ南北線　「永田町駅」9a出口直結 東京メトロ半蔵門線　「永田町駅」7番出口より徒歩2分 東京メトロ丸の内線/銀座線　「赤坂見附駅」D出口より徒歩1分</p>\n<p>※駅からオフィス入口まで少し距離が離れておりますので、お時間に余裕をもってお越しください。</p>\n<h2>注意事項</h2>\n<p>本イベントの内容は、後日主催団体のブログ等の媒体にて紹介する可能性があります。その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。</p>\n<p>技術交流が目的の勉強会ですので、知識の共有および参加者同士の交流を目的としない参加はお断りしています。</p>\n<p>事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いは、各社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想等についてお聞きする予定です。</p>\n<ul>\n<li><a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">LINEヤフー株式会社 プライバシーポリシー</a></li>\n</ul>\n<h2>アンチハラスメントポリシー</h2>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーキング、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。</p>\n<p>Tipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。 そのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h2>キャンセルポリシー</h2>\n<p>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。<br>\n参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</p>",
+      "url": "https://lycorptech-jp.connpass.com/event/402836/",
+      "image_url": "https://media.connpass.com/thumbs/02/9c/029c1835f9eeae73368d5788a605f3b9.png",
+      "hash_tag": "",
+      "started_at": "2026-09-02T19:00:00+09:00",
+      "ended_at": "2026-09-02T21:00:00+09:00",
+      "published_at": "2026-08-06T17:03:39+09:00",
+      "limit": 110,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14178,
+        "subdomain": "lycorptech-jp",
+        "title": "LINEヤフー Tech",
+        "url": "https://lycorptech-jp.connpass.com/"
+      },
+      "address": "〒102-8282　東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー",
+      "place": "LINEヤフー株式会社 紀尾井町オフィス",
+      "lat": "35.679992600000",
+      "lon": "139.737936300000",
+      "owner_id": 992252,
+      "owner_nickname": "myamate_ly",
+      "owner_display_name": "myamate_ly",
+      "accepted": 110,
+      "waiting": 12,
+      "updated_at": "2026-08-07T22:07:58+09:00"
+    },
+    {
       "id": 402634,
       "title": "DMM 二次元コンテンツ Tech Meetup #2",
       "catch": "〜 急成長する大規模ECサイトを支える技術 〜",
@@ -92,7 +123,7 @@
       "owner_id": 1040350,
       "owner_nickname": "ozaki-kota",
       "owner_display_name": "Kouta Ozaki",
-      "accepted": 51,
+      "accepted": 52,
       "waiting": 0,
       "updated_at": "2026-08-31T11:31:15+09:00"
     },
@@ -123,40 +154,9 @@
       "owner_id": 233546,
       "owner_nickname": "kameneko",
       "owner_display_name": "かめねこ / 仲亀 拓馬",
-      "accepted": 199,
+      "accepted": 203,
       "waiting": 0,
       "updated_at": "2026-08-25T01:40:59+09:00"
-    },
-    {
-      "id": 402836,
-      "title": "コーディングのためのローカルLLM勉強会 in 東京",
-      "catch": "",
-      "description": "<h2>イベント概要</h2>\n<p>Kimi K3やDeepSeek V4などウェイト公開モデルもどんどん実用的になってきたので、コーディングをターゲットとしたローカルLLM勉強会を開催します。</p>\n<p>サムネイル画像のプロンプト(by Kimi K3 on cloud)</p>\n<blockquote>\n<p>Design and create a very creative, elaborate, and detailed voxel art scene of a pagoda in a beautiful garden with trees, including some cherry blossoms. Make the scene impressive and varied and use colorful voxels. Use whatever libraries to get this done but make sure I can paste it all into a single HTML file and open it in Chrome. <br>\nvia <a href=\"https://x.com/loktar00/status/2082336275177119771\" rel=\"nofollow\">https://x.com/loktar00/status/2082336275177119771</a></p>\n</blockquote>\n<h2>要項</h2>\n<ul>\n<li>📆 日時：9/2(水) 19:00〜21:00</li>\n<li>📍 場所：LINEヤフー株式会社 紀尾井町オフィス 17F </li>\n<li>💰 参加費：無料</li>\n</ul>\n<p>※ サテライト会場は、同一空間ですが障害物のためメインスクリーンや登壇者の直接視認が難しく、別途用意のディスプレイで資料のみの投影を見ていただくことになります。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\">　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05〜19:45</td>\n<td style=\"text-align: left;\">コーディングのためのローカルLLM基礎知識　</td>\n<td style=\"text-align: left;\">きしだ(LINEヤフー)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜20:00</td>\n<td style=\"text-align: left;\">DGX Sparkを2台つかっていろいろ動かす話</td>\n<td style=\"text-align: left;\">苑田 朝彰(レバレジーズ)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05〜20:15</td>\n<td style=\"text-align: left;\">マルチテナントLLMサーバー運用のつらいところ、それでもやるべき理由</td>\n<td style=\"text-align: left;\">Yiyang Zhan(LINEヤフー)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15〜21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※登壇者や登壇内容は変更される可能性があります</p>\n<h2>会場へのアクセス</h2>\n<p>LINEヤフー株式会社　紀尾井町オフィス<br>\n（東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー）</p>\n<p>→ 受付は紀尾井タワー2階カウンターに設置しております。</p>\n<p>東京メトロ南北線　「永田町駅」9a出口直結 東京メトロ半蔵門線　「永田町駅」7番出口より徒歩2分 東京メトロ丸の内線/銀座線　「赤坂見附駅」D出口より徒歩1分</p>\n<p>※駅からオフィス入口まで少し距離が離れておりますので、お時間に余裕をもってお越しください。</p>\n<h2>注意事項</h2>\n<p>本イベントの内容は、後日主催団体のブログ等の媒体にて紹介する可能性があります。その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。</p>\n<p>技術交流が目的の勉強会ですので、知識の共有および参加者同士の交流を目的としない参加はお断りしています。</p>\n<p>事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いは、各社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想等についてお聞きする予定です。</p>\n<ul>\n<li><a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">LINEヤフー株式会社 プライバシーポリシー</a></li>\n</ul>\n<h2>アンチハラスメントポリシー</h2>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーキング、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。</p>\n<p>Tipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。 そのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h2>キャンセルポリシー</h2>\n<p>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。<br>\n参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</p>",
-      "url": "https://lycorptech-jp.connpass.com/event/402836/",
-      "image_url": "https://media.connpass.com/thumbs/02/9c/029c1835f9eeae73368d5788a605f3b9.png",
-      "hash_tag": "",
-      "started_at": "2026-09-02T19:00:00+09:00",
-      "ended_at": "2026-09-02T21:00:00+09:00",
-      "published_at": "2026-08-06T17:03:39+09:00",
-      "limit": 110,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14178,
-        "subdomain": "lycorptech-jp",
-        "title": "LINEヤフー Tech",
-        "url": "https://lycorptech-jp.connpass.com/"
-      },
-      "address": "〒102-8282　東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー",
-      "place": "LINEヤフー株式会社 紀尾井町オフィス",
-      "lat": "35.679992600000",
-      "lon": "139.737936300000",
-      "owner_id": 992252,
-      "owner_nickname": "myamate_ly",
-      "owner_display_name": "myamate_ly",
-      "accepted": 110,
-      "waiting": 12,
-      "updated_at": "2026-08-07T22:07:58+09:00"
     },
     {
       "id": 404782,
