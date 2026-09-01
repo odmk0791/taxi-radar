@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-01T05:32:22.495400+09:00",
+  "fetched_at": "2026-09-01T09:15:51.599532+09:00",
   "date": "20260901",
   "count": 9,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 78055,
       "owner_nickname": "YukiIzumoto",
       "owner_display_name": "mitsuba yu",
-      "accepted": 24,
+      "accepted": 25,
       "waiting": 0,
       "updated_at": "2026-08-31T18:46:07+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 555936,
       "owner_nickname": "ANDPAD_TechLive",
       "owner_display_name": "ANDPAD_TechLive",
-      "accepted": 60,
+      "accepted": 61,
       "waiting": 0,
       "updated_at": "2026-08-28T16:39:57+09:00"
     },
@@ -97,37 +97,6 @@
       "updated_at": "2026-08-12T20:29:43+09:00"
     },
     {
-      "id": 400887,
-      "title": "【残3枠】最新の生成AI活用&AI駆動開発勉強会 18:55受付開始",
-      "catch": "大組織における最新の生成AI活用戦略を学べる",
-      "description": "<h1>エンプラ事業会社必見 生成AI活用＆AI駆動開発 勉強会・交流会</h1>\n<h2>事業会社の有識者が語る！大規模組織のAI導入・AI駆動開発のリアルを1日でキャッチアップ</h2>\n<p>生成AIの活用が「個人のスキル」から「組織の競争力」へと移り変わった今、エンタープライズ事業会社が直面しているのは、PoC止まりを脱して<strong>いかに全社展開するか</strong>、そして<strong>ガバナンスや既存システムとの連携をクリアしながらAI駆動開発を組織に根付かせるか</strong>という、より実践的で本質的な問いです。</p>\n<p>Claude CodeやCursorといったツールを個人で使いこなす段階は過ぎ、大規模組織では<strong>「AI導入の壁をどう越えるか」「セキュリティ・ガバナンスと生産性をどう両立するか」「AI駆動時代に適した組織・人材をどうつくるか」</strong>が経営アジェンダになりつつあります。</p>\n<p>本イベントでは、単なるツール紹介に留まらず、エンプラ事業会社の現場で蓄積された<strong>生々しい試行錯誤と、2026年以降の組織・エンジニアリングの生存戦略</strong>を深く掘り下げます。</p>\n<hr>\n<h2>過去ご参加いただいたエンプラ企業様（一部）</h2>\n<ul>\n<li>Google</li>\n<li>Microsoft</li>\n<li>NEC</li>\n<li>NTTデータ</li>\n<li>富士通</li>\n<li>docomo</li>\n<li>ソフトバンク</li>\n<li>大和証券\n他多数..</li>\n</ul>\n<hr>\n<h3>📝 学べる内容とセッション構成（予定）</h3>\n<ul>\n<li>\n<p><strong>【セッション例：大規模組織におけるAI導入の壁と、全社展開へのロードマップ】</strong></p>\n<ul>\n<li>PoC止まり・一部部署止まりを脱却するための、段階的な全社展開の進め方。</li>\n<li>経営層・現場・情シスの三者を巻き込む推進体制の設計。</li>\n<li>導入効果の可視化とROIの示し方、社内浸透を加速させる実践ノウハウ。</li>\n</ul>\n</li>\n<li>\n<p><strong>【セッション例：ガバナンスと既存連携をクリアするエンプラ向けFDE戦略】</strong></p>\n<ul>\n<li>セキュリティ・情報管理・著作権など、エンプラ特有の制約下でのAI活用設計。</li>\n<li>既存システム・レガシー資産との連携を前提にした、AI駆動開発の現実解。</li>\n<li>FDE（AIを活用するエンジニア、AI駆動開発を前提としたエンジニアリングのあり方）としての働き方と役割分担。</li>\n</ul>\n</li>\n<li>\n<p><strong>【セッション例：AI駆動時代に求められる組織づくり】</strong></p>\n<ul>\n<li>実装の多くが自動化される中で、価値を出し続ける組織・チームの条件を言語化。</li>\n<li>AIリテラシーの底上げから専門人材の育成まで、リスキリングの実践アプローチ。</li>\n<li>AI駆動開発時代のエンジニア・マネジメントの役割を再定義し、組織戦略を議論する。</li>\n</ul>\n</li>\n</ul>\n<hr>\n<h3>🚀 イベントのポイント</h3>\n<ul>\n<li>エンプラ事業会社のAI導入・AI駆動開発の最前線で活躍する有識者からの直接的なフィードバック。</li>\n<li>大規模組織における全社展開のロードマップを、具体的なイメージを持って描ける。</li>\n<li>ガバナンス・既存連携をクリアするエンプラ向けFDE戦略を学べる。</li>\n<li>AI駆動時代に求められる組織づくりのヒントを持ち帰れる。</li>\n</ul>\n<h2>💻 ゲスト</h2>\n<h3><a href=\"https://x.com/MacopeninSUTABA\" rel=\"nofollow\">かずなり</a>（Xフォロワー: 11万人）</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1871687946988060673/xDsh_ngS_400x400.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<ul>\n<li>株式会社サードスコープ 取締役 COO</li>\n<li>生成AI系インフルエンサーでフォロワー数は11万人</li>\n<li>PwCの社長、LINEヤフー会長といったエンプラの社長・役員が参加するクローズドな会を多数主催</li>\n<li>国会で自民党大臣と「生成AIの社会実装」についてディスカッション</li>\n<li>エンジニア技術発信サービス「Qiita」にて年間1位を獲得（2023年, 2024年）</li>\n</ul>\n<hr>\n<h2>登壇者（一部）</h2>\n<h3>木村 信幸（ソフトバンク カスタマーサクセス本部 デジタルワーカー推進部 担当部長）</h3>\n<p><img src=\"https://cdncf.stand.fm/images/01FTVPM4JHPTVNR4G3G4NF8QMJ.jpg?fit=scale-down&amp;width=500&amp;height=\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>ソフトバンク公式 ビジネスチャンネルにも多数出演: <a href=\"https://www.youtube.com/@SoftBankBiz\" rel=\"nofollow\">https://www.youtube.com/@SoftBankBiz</a></p>\n<p>大学卒業後、債権回収まっしぐらの25年を経て、現在はソフトバンクのDX・AI講師として、公式YouTubeでの解説をはじめ、企業のお客さまに向けて、テクノロジーや人材育成、DX時代の心の在り方を紹介している。会社公認の副業では、お坊さんとして儒学仏法に精を出す。生きとし生けるもの、とりわけペットをこよなく愛する。人呼んで「てらリーマン 慈永」。</p>\n<h3>本村 健登（株式会社マクニカ AI＆デジタル事業開発部長）</h3>\n<p><img src=\"https://d1l8kv4srnu6v2.cloudfront.net/users/profile_images/000/463/152/original/%E6%9C%AC%E6%9D%91%E3%81%95%E3%82%93.png?f=webp\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>12年以上AIと新規事業に従事し、300件超のAI・DXプロジェクトを牽引。</p>\n<p>現在はAIプロダクト開発とAIプロフェッショナルサービス、グローバルエコシステムを統括。一方、AIクリエイター「MOTOKEN」として、音楽映像作品の制作や、「こちらAIにて実験中(2026/8/1より配信)」などエンタメ×AI領域でAIメディアを推進。出演番組に、NewsPicks「1on1 Deep」、TOKYO MX「正直サミット」、TV朝日「8秒グランプリ」など。信念は「AIは人の\"やりがい\"と\"強み\"を最大化する」。まずは自分がその一番の実験台です。</p>\n<h3>渡會 拓馬（株式会社ウリドキ 取締役CTO）</h3>\n<p><img src=\"https://uridoki.co.jp/wp-content/uploads/2025/02/togo2025.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>慶應義塾大学卒。2006年に株式会社カカクコムでインフラエンジニアとして入社。</p>\n<p>2008年に日本マイクロソフト株式会社に移り、官公庁やメガバンクを中心としたミッションクリティカル領域においてWindowsNetworkスタックの技術サポートに従事。その後、株式会社DeNAや法律事務所Authense、株式会社デジタルハーツのIT部門責任者として、パブリッククラウドへの基盤移行やCRM基盤の構築などのプロジェクトを手がける。2018年に独立し複数の事業会社にて社外CIOとしてDX戦略の立案推進に関与。2024年当社CTOに就任。2025年当社取締役に就任。</p>\n<h3>小林 正英（グリーエックス株式会社 / DXコンサルティング本部 / AXストラテジー部 / 部長）</h3>\n<p><img src=\"https://i.ibb.co/mFSw8bMS/5e3caf85-7676-4f61-ac91-7b0733e15b0a.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>2014年にグリーホールディングス株式会社にビジネス職として入社。\nポケラボ(グリー100%子会社)で、事業企画、マーケティング、ゲームプロデューサーと幅広く経験。\n2025年7月にグリーエックス株式会社に異動後、社内AI活用およびAX化推進に奮闘中。</p>\n<h3>黒山結音（NEXT INNOVAITION株式会社 代表取締役）</h3>\n<p><img src=\"https://i.ibb.co/m5L66fNh/291936fd-79be-466c-a7c8-29d10a5fe218.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>・「あなたのAI顧問」として40社以上を伴走支援\n・登録者1万人のYouTubeでもAI活用について発信\n　<a href=\"https://youtube.com/@ai-advisor-channel\" rel=\"nofollow\">https://youtube.com/@ai-advisor-channel</a>\n・中小企業向けのOpenClawの導入は200件超えと日本No.1</p>\n<hr>\n<h3>🚀 本イベントで学べること（一例）</h3>\n<ul>\n<li><strong>大規模組織のAI導入ロードマップ：</strong> PoC止まりを脱し、全社展開へつなげる段階設計  </li>\n<li><strong>エンプラ向けFDE戦略：</strong> ガバナンス・セキュリティ・既存システム連携をクリアするAI駆動開発の現実解  </li>\n<li><strong>次世代ワークフロー：</strong> AIエージェントと協働する「要件定義〜実装〜運用」の自動化設計  </li>\n<li><strong>守りのAI活用：</strong> エンプラが直面する<strong>AIセキュリティ・ガバナンス・著作権</strong>の最新知識  </li>\n<li><strong>組織・人材戦略：</strong> AI駆動時代に価値を出し続ける組織づくりとリスキリングの実践  </li>\n</ul>\n<hr>\n<h3>🌱 こんな方におすすめ</h3>\n<ul>\n<li><strong>自社（エンプラ事業会社）でAI導入・全社展開を推進したい経営者・DX推進担当者</strong>  </li>\n<li><strong>AI駆動開発を実務で導入したいエンジニア・開発リーダー</strong>  </li>\n<li><strong>ガバナンスと生産性の両立に悩む情シス・マネージャー層</strong>  </li>\n<li><strong>AI駆動時代の組織づくり・人材育成を考えたい方</strong></li>\n<li><strong>エンプラにおけるAI活用の最前線を体系的に学びたい方</strong></li>\n</ul>\n<h3>🤝 交流会も開催！</h3>\n<p>勉強会の後にはネットワーキングを実施。<br>\n経営者、エンジニア、PM、マーケター、人事など多様な参加者と交流し、<strong>新しいアイデアやコラボ</strong>のきっかけを生み出します。</p>\n<p>生成AI活用とAI駆動開発の「今」をまとめて学び、自社でどう活かすかを考える場として、<br>\nぜひご参加ください！</p>\n<h2>📷 前回のイベントの様子（雰囲気の参考）</h2>\n<h3>2025年11月開催「生成AI最新トレンド勉強会」</h3>\n<p><img src=\"https://pbs.twimg.com/media/GpoRaqvb0AA91mA?format=jpg&amp;name=4096x4096\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h3>2025年12月開催 GMOコラボ「春の生成AI大感謝祭」</h3>\n<p><img src=\"https://i.imgur.com/VvAPVqv.jpeg\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h3>2025年8月開催 「AIエージェント2025年勉強会&amp;交流会」</h3>\n<p><img src=\"https://pbs.twimg.com/media/GpoRc-0aMAA90uC?format=jpg&amp;name=4096x4096\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h2>📆 開催概要</h2>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>日時</td>\n<td>2026年9月1日（火）19:00〜21:30</td>\n</tr>\n<tr>\n<td>会場</td>\n<td>ニューロハブ（渋谷駅徒歩30秒）</td>\n</tr>\n</tbody>\n</table>\n<h2>🕰️ タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:50~19:10</td>\n<td>開場+受付</td>\n</tr>\n<tr>\n<td>19:10~19:50</td>\n<td>勉強会</td>\n</tr>\n<tr>\n<td>19:50~20:00</td>\n<td>集合写真</td>\n</tr>\n<tr>\n<td>20:00~21:30</td>\n<td>交流会</td>\n</tr>\n<tr>\n<td>---</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3><a href=\"https://dxhr.inc/\" rel=\"nofollow\">AHR社</a>（会場提供）</h3>\n<p><img src=\"https://prcdn.freetls.fastly.net/release_image/73863/71/73863-71-51c5eec8c2a20e9f4a4674f24a453c0a-2148x1348.jpg?width=1950&amp;height=1350&amp;quality=85%2C65&amp;format=jpeg&amp;auto=webp&amp;fit=bounds&amp;bg-color=fff\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h4>AIトランスフォーメーション（AX）サービス：</h4>\n<p>企業の経営課題や目的に合わせ、AX戦略（AI活用戦略）の立案から最適なソリューションの導入、専門人材の育成・リソース提供（AXエンジニアやコンサルタントの提供）までを総合的に支援します。</p>\n<h4>業種別・職種別 AI・DX研修（リスキリング）：</h4>\n<p>日本初の「生成AI専門教室（デジタルトレーニングセンター）」としてのノウハウを活かし、大企業から中小企業まで、各業界や職種に特化した実践的なAI・DX研修を提供しています。これにより、社員全体のAIリテラシーの底上げを図ります。</p>\n<h2>⚠️ 連絡事項・諸注意</h2>\n<ul>\n<li>connpass 上でお申し込みの上、ご参加をお願いします。</li>\n<li>当日/直前の不参加の場合でも、必ず connpass 上でキャンセルをお願いします。</li>\n<li>開始時刻までに間に合わない場合は運営までご連絡をお願いします。</li>\n<li>個人情報・機密情報の取り扱いにはご注意ください。こちらでは一切責任を負いません。</li>\n</ul>\n<h2>🈲 禁止事項</h2>\n<p>下記ルールをお守りいただけない方は、参加をお断りさせていただきます。(当日でも途中退出をしていただきます。)</p>\n<ul>\n<li>営業目的での参加</li>\n<li>技術マウント</li>\n<li>高額商材などの販売や営業</li>\n<li>宗教やマルチへの勧誘</li>\n<li>誹謗中傷やハラスメント行為</li>\n<li>他者への迷惑行為</li>\n<li>当日キャンセル (くり上がりを除く)</li>\n<li>無断キャンセル</li>\n</ul>",
-      "url": "https://creator-square.connpass.com/event/400887/",
-      "image_url": "https://media.connpass.com/thumbs/35/f1/35f1ce7533124238c481319cb9ea8a19.png",
-      "hash_tag": "生成AI",
-      "started_at": "2026-09-01T19:00:00+09:00",
-      "ended_at": "2026-09-01T21:30:00+09:00",
-      "published_at": "2026-07-16T20:54:46+09:00",
-      "limit": 62,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13827,
-        "subdomain": "creator-square",
-        "title": "クリエイター広場",
-        "url": "https://creator-square.connpass.com/"
-      },
-      "address": "東京都渋谷区渋谷２丁目２０−１１ 渋谷協和ビル 10階",
-      "place": "ニューロハブ",
-      "lat": "35.659257700000",
-      "lon": "139.702850700000",
-      "owner_id": 790801,
-      "owner_nickname": "MacopeninSUTABA",
-      "owner_display_name": "かずなり",
-      "accepted": 60,
-      "waiting": 0,
-      "updated_at": "2026-08-31T22:27:40+09:00"
-    },
-    {
       "id": 401534,
       "title": "毎週火曜にやってる！プログラミング&ITなんでも勉強部屋（9月第1週）",
       "catch": "毎週火曜にやってる、もくもく勉強部屋！！",
@@ -159,6 +128,37 @@
       "updated_at": "2026-08-12T07:01:39+09:00"
     },
     {
+      "id": 400887,
+      "title": "【残3枠】最新の生成AI活用&AI駆動開発勉強会 18:55受付開始",
+      "catch": "大組織における最新の生成AI活用戦略を学べる",
+      "description": "<h1>エンプラ事業会社必見 生成AI活用＆AI駆動開発 勉強会・交流会</h1>\n<h2>事業会社の有識者が語る！大規模組織のAI導入・AI駆動開発のリアルを1日でキャッチアップ</h2>\n<p>生成AIの活用が「個人のスキル」から「組織の競争力」へと移り変わった今、エンタープライズ事業会社が直面しているのは、PoC止まりを脱して<strong>いかに全社展開するか</strong>、そして<strong>ガバナンスや既存システムとの連携をクリアしながらAI駆動開発を組織に根付かせるか</strong>という、より実践的で本質的な問いです。</p>\n<p>Claude CodeやCursorといったツールを個人で使いこなす段階は過ぎ、大規模組織では<strong>「AI導入の壁をどう越えるか」「セキュリティ・ガバナンスと生産性をどう両立するか」「AI駆動時代に適した組織・人材をどうつくるか」</strong>が経営アジェンダになりつつあります。</p>\n<p>本イベントでは、単なるツール紹介に留まらず、エンプラ事業会社の現場で蓄積された<strong>生々しい試行錯誤と、2026年以降の組織・エンジニアリングの生存戦略</strong>を深く掘り下げます。</p>\n<hr>\n<h2>過去ご参加いただいたエンプラ企業様（一部）</h2>\n<ul>\n<li>Google</li>\n<li>Microsoft</li>\n<li>NEC</li>\n<li>NTTデータ</li>\n<li>富士通</li>\n<li>docomo</li>\n<li>ソフトバンク</li>\n<li>大和証券\n他多数..</li>\n</ul>\n<hr>\n<h3>📝 学べる内容とセッション構成（予定）</h3>\n<ul>\n<li>\n<p><strong>【セッション例：大規模組織におけるAI導入の壁と、全社展開へのロードマップ】</strong></p>\n<ul>\n<li>PoC止まり・一部部署止まりを脱却するための、段階的な全社展開の進め方。</li>\n<li>経営層・現場・情シスの三者を巻き込む推進体制の設計。</li>\n<li>導入効果の可視化とROIの示し方、社内浸透を加速させる実践ノウハウ。</li>\n</ul>\n</li>\n<li>\n<p><strong>【セッション例：ガバナンスと既存連携をクリアするエンプラ向けFDE戦略】</strong></p>\n<ul>\n<li>セキュリティ・情報管理・著作権など、エンプラ特有の制約下でのAI活用設計。</li>\n<li>既存システム・レガシー資産との連携を前提にした、AI駆動開発の現実解。</li>\n<li>FDE（AIを活用するエンジニア、AI駆動開発を前提としたエンジニアリングのあり方）としての働き方と役割分担。</li>\n</ul>\n</li>\n<li>\n<p><strong>【セッション例：AI駆動時代に求められる組織づくり】</strong></p>\n<ul>\n<li>実装の多くが自動化される中で、価値を出し続ける組織・チームの条件を言語化。</li>\n<li>AIリテラシーの底上げから専門人材の育成まで、リスキリングの実践アプローチ。</li>\n<li>AI駆動開発時代のエンジニア・マネジメントの役割を再定義し、組織戦略を議論する。</li>\n</ul>\n</li>\n</ul>\n<hr>\n<h3>🚀 イベントのポイント</h3>\n<ul>\n<li>エンプラ事業会社のAI導入・AI駆動開発の最前線で活躍する有識者からの直接的なフィードバック。</li>\n<li>大規模組織における全社展開のロードマップを、具体的なイメージを持って描ける。</li>\n<li>ガバナンス・既存連携をクリアするエンプラ向けFDE戦略を学べる。</li>\n<li>AI駆動時代に求められる組織づくりのヒントを持ち帰れる。</li>\n</ul>\n<h2>💻 ゲスト</h2>\n<h3><a href=\"https://x.com/MacopeninSUTABA\" rel=\"nofollow\">かずなり</a>（Xフォロワー: 11万人）</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1871687946988060673/xDsh_ngS_400x400.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<ul>\n<li>株式会社サードスコープ 取締役 COO</li>\n<li>生成AI系インフルエンサーでフォロワー数は11万人</li>\n<li>PwCの社長、LINEヤフー会長といったエンプラの社長・役員が参加するクローズドな会を多数主催</li>\n<li>国会で自民党大臣と「生成AIの社会実装」についてディスカッション</li>\n<li>エンジニア技術発信サービス「Qiita」にて年間1位を獲得（2023年, 2024年）</li>\n</ul>\n<hr>\n<h2>登壇者（一部）</h2>\n<h3>木村 信幸（ソフトバンク カスタマーサクセス本部 デジタルワーカー推進部 担当部長）</h3>\n<p><img src=\"https://cdncf.stand.fm/images/01FTVPM4JHPTVNR4G3G4NF8QMJ.jpg?fit=scale-down&amp;width=500&amp;height=\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>ソフトバンク公式 ビジネスチャンネルにも多数出演: <a href=\"https://www.youtube.com/@SoftBankBiz\" rel=\"nofollow\">https://www.youtube.com/@SoftBankBiz</a></p>\n<p>大学卒業後、債権回収まっしぐらの25年を経て、現在はソフトバンクのDX・AI講師として、公式YouTubeでの解説をはじめ、企業のお客さまに向けて、テクノロジーや人材育成、DX時代の心の在り方を紹介している。会社公認の副業では、お坊さんとして儒学仏法に精を出す。生きとし生けるもの、とりわけペットをこよなく愛する。人呼んで「てらリーマン 慈永」。</p>\n<h3>本村 健登（株式会社マクニカ AI＆デジタル事業開発部長）</h3>\n<p><img src=\"https://d1l8kv4srnu6v2.cloudfront.net/users/profile_images/000/463/152/original/%E6%9C%AC%E6%9D%91%E3%81%95%E3%82%93.png?f=webp\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>12年以上AIと新規事業に従事し、300件超のAI・DXプロジェクトを牽引。</p>\n<p>現在はAIプロダクト開発とAIプロフェッショナルサービス、グローバルエコシステムを統括。一方、AIクリエイター「MOTOKEN」として、音楽映像作品の制作や、「こちらAIにて実験中(2026/8/1より配信)」などエンタメ×AI領域でAIメディアを推進。出演番組に、NewsPicks「1on1 Deep」、TOKYO MX「正直サミット」、TV朝日「8秒グランプリ」など。信念は「AIは人の\"やりがい\"と\"強み\"を最大化する」。まずは自分がその一番の実験台です。</p>\n<h3>渡會 拓馬（株式会社ウリドキ 取締役CTO）</h3>\n<p><img src=\"https://uridoki.co.jp/wp-content/uploads/2025/02/togo2025.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>慶應義塾大学卒。2006年に株式会社カカクコムでインフラエンジニアとして入社。</p>\n<p>2008年に日本マイクロソフト株式会社に移り、官公庁やメガバンクを中心としたミッションクリティカル領域においてWindowsNetworkスタックの技術サポートに従事。その後、株式会社DeNAや法律事務所Authense、株式会社デジタルハーツのIT部門責任者として、パブリッククラウドへの基盤移行やCRM基盤の構築などのプロジェクトを手がける。2018年に独立し複数の事業会社にて社外CIOとしてDX戦略の立案推進に関与。2024年当社CTOに就任。2025年当社取締役に就任。</p>\n<h3>小林 正英（グリーエックス株式会社 / DXコンサルティング本部 / AXストラテジー部 / 部長）</h3>\n<p><img src=\"https://i.ibb.co/mFSw8bMS/5e3caf85-7676-4f61-ac91-7b0733e15b0a.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>2014年にグリーホールディングス株式会社にビジネス職として入社。\nポケラボ(グリー100%子会社)で、事業企画、マーケティング、ゲームプロデューサーと幅広く経験。\n2025年7月にグリーエックス株式会社に異動後、社内AI活用およびAX化推進に奮闘中。</p>\n<h3>黒山結音（NEXT INNOVAITION株式会社 代表取締役）</h3>\n<p><img src=\"https://i.ibb.co/m5L66fNh/291936fd-79be-466c-a7c8-29d10a5fe218.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<p>・「あなたのAI顧問」として40社以上を伴走支援\n・登録者1万人のYouTubeでもAI活用について発信\n　<a href=\"https://youtube.com/@ai-advisor-channel\" rel=\"nofollow\">https://youtube.com/@ai-advisor-channel</a>\n・中小企業向けのOpenClawの導入は200件超えと日本No.1</p>\n<hr>\n<h3>🚀 本イベントで学べること（一例）</h3>\n<ul>\n<li><strong>大規模組織のAI導入ロードマップ：</strong> PoC止まりを脱し、全社展開へつなげる段階設計  </li>\n<li><strong>エンプラ向けFDE戦略：</strong> ガバナンス・セキュリティ・既存システム連携をクリアするAI駆動開発の現実解  </li>\n<li><strong>次世代ワークフロー：</strong> AIエージェントと協働する「要件定義〜実装〜運用」の自動化設計  </li>\n<li><strong>守りのAI活用：</strong> エンプラが直面する<strong>AIセキュリティ・ガバナンス・著作権</strong>の最新知識  </li>\n<li><strong>組織・人材戦略：</strong> AI駆動時代に価値を出し続ける組織づくりとリスキリングの実践  </li>\n</ul>\n<hr>\n<h3>🌱 こんな方におすすめ</h3>\n<ul>\n<li><strong>自社（エンプラ事業会社）でAI導入・全社展開を推進したい経営者・DX推進担当者</strong>  </li>\n<li><strong>AI駆動開発を実務で導入したいエンジニア・開発リーダー</strong>  </li>\n<li><strong>ガバナンスと生産性の両立に悩む情シス・マネージャー層</strong>  </li>\n<li><strong>AI駆動時代の組織づくり・人材育成を考えたい方</strong></li>\n<li><strong>エンプラにおけるAI活用の最前線を体系的に学びたい方</strong></li>\n</ul>\n<h3>🤝 交流会も開催！</h3>\n<p>勉強会の後にはネットワーキングを実施。<br>\n経営者、エンジニア、PM、マーケター、人事など多様な参加者と交流し、<strong>新しいアイデアやコラボ</strong>のきっかけを生み出します。</p>\n<p>生成AI活用とAI駆動開発の「今」をまとめて学び、自社でどう活かすかを考える場として、<br>\nぜひご参加ください！</p>\n<h2>📷 前回のイベントの様子（雰囲気の参考）</h2>\n<h3>2025年11月開催「生成AI最新トレンド勉強会」</h3>\n<p><img src=\"https://pbs.twimg.com/media/GpoRaqvb0AA91mA?format=jpg&amp;name=4096x4096\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h3>2025年12月開催 GMOコラボ「春の生成AI大感謝祭」</h3>\n<p><img src=\"https://i.imgur.com/VvAPVqv.jpeg\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h3>2025年8月開催 「AIエージェント2025年勉強会&amp;交流会」</h3>\n<p><img src=\"https://pbs.twimg.com/media/GpoRc-0aMAA90uC?format=jpg&amp;name=4096x4096\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h2>📆 開催概要</h2>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>日時</td>\n<td>2026年9月1日（火）19:00〜21:30</td>\n</tr>\n<tr>\n<td>会場</td>\n<td>ニューロハブ（渋谷駅徒歩30秒）</td>\n</tr>\n</tbody>\n</table>\n<h2>🕰️ タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:50~19:10</td>\n<td>開場+受付</td>\n</tr>\n<tr>\n<td>19:10~19:50</td>\n<td>勉強会</td>\n</tr>\n<tr>\n<td>19:50~20:00</td>\n<td>集合写真</td>\n</tr>\n<tr>\n<td>20:00~21:30</td>\n<td>交流会</td>\n</tr>\n<tr>\n<td>---</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3><a href=\"https://dxhr.inc/\" rel=\"nofollow\">AHR社</a>（会場提供）</h3>\n<p><img src=\"https://prcdn.freetls.fastly.net/release_image/73863/71/73863-71-51c5eec8c2a20e9f4a4674f24a453c0a-2148x1348.jpg?width=1950&amp;height=1350&amp;quality=85%2C65&amp;format=jpeg&amp;auto=webp&amp;fit=bounds&amp;bg-color=fff\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h4>AIトランスフォーメーション（AX）サービス：</h4>\n<p>企業の経営課題や目的に合わせ、AX戦略（AI活用戦略）の立案から最適なソリューションの導入、専門人材の育成・リソース提供（AXエンジニアやコンサルタントの提供）までを総合的に支援します。</p>\n<h4>業種別・職種別 AI・DX研修（リスキリング）：</h4>\n<p>日本初の「生成AI専門教室（デジタルトレーニングセンター）」としてのノウハウを活かし、大企業から中小企業まで、各業界や職種に特化した実践的なAI・DX研修を提供しています。これにより、社員全体のAIリテラシーの底上げを図ります。</p>\n<h2>⚠️ 連絡事項・諸注意</h2>\n<ul>\n<li>connpass 上でお申し込みの上、ご参加をお願いします。</li>\n<li>当日/直前の不参加の場合でも、必ず connpass 上でキャンセルをお願いします。</li>\n<li>開始時刻までに間に合わない場合は運営までご連絡をお願いします。</li>\n<li>個人情報・機密情報の取り扱いにはご注意ください。こちらでは一切責任を負いません。</li>\n</ul>\n<h2>🈲 禁止事項</h2>\n<p>下記ルールをお守りいただけない方は、参加をお断りさせていただきます。(当日でも途中退出をしていただきます。)</p>\n<ul>\n<li>営業目的での参加</li>\n<li>技術マウント</li>\n<li>高額商材などの販売や営業</li>\n<li>宗教やマルチへの勧誘</li>\n<li>誹謗中傷やハラスメント行為</li>\n<li>他者への迷惑行為</li>\n<li>当日キャンセル (くり上がりを除く)</li>\n<li>無断キャンセル</li>\n</ul>",
+      "url": "https://creator-square.connpass.com/event/400887/",
+      "image_url": "https://media.connpass.com/thumbs/35/f1/35f1ce7533124238c481319cb9ea8a19.png",
+      "hash_tag": "生成AI",
+      "started_at": "2026-09-01T19:00:00+09:00",
+      "ended_at": "2026-09-01T21:30:00+09:00",
+      "published_at": "2026-07-16T20:54:46+09:00",
+      "limit": 62,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13827,
+        "subdomain": "creator-square",
+        "title": "クリエイター広場",
+        "url": "https://creator-square.connpass.com/"
+      },
+      "address": "東京都渋谷区渋谷２丁目２０−１１ 渋谷協和ビル 10階",
+      "place": "ニューロハブ",
+      "lat": "35.659257700000",
+      "lon": "139.702850700000",
+      "owner_id": 790801,
+      "owner_nickname": "MacopeninSUTABA",
+      "owner_display_name": "かずなり",
+      "accepted": 59,
+      "waiting": 0,
+      "updated_at": "2026-08-31T22:27:40+09:00"
+    },
+    {
       "id": 401977,
       "title": "現場で効いたAI駆動開発の実践知: 越境を支える体制と仕組みづくり",
       "catch": "",
@@ -185,8 +185,8 @@
       "owner_id": 1036946,
       "owner_nickname": "lee_algomatic",
       "owner_display_name": "lee_algomatic",
-      "accepted": 35,
-      "waiting": 0,
+      "accepted": 40,
+      "waiting": 1,
       "updated_at": "2026-08-31T16:33:27+09:00"
     },
     {
@@ -216,8 +216,8 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 121,
-      "waiting": 0,
+      "accepted": 119,
+      "waiting": 2,
       "updated_at": "2026-09-01T01:01:38+09:00"
     },
     {
@@ -247,8 +247,8 @@
       "owner_id": 802879,
       "owner_nickname": "YukiteruKoide",
       "owner_display_name": "Yukiteru Koide",
-      "accepted": 288,
-      "waiting": 0,
+      "accepted": 291,
+      "waiting": 1,
       "updated_at": "2026-08-31T19:31:53+09:00"
     },
     {
