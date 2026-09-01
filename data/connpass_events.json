@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-02T04:04:29.993045+09:00",
+  "fetched_at": "2026-09-02T07:14:57.223305+09:00",
   "date": "20260902",
   "count": 8,
   "events": [
@@ -123,7 +123,7 @@
       "owner_id": 1040350,
       "owner_nickname": "ozaki-kota",
       "owner_display_name": "Kouta Ozaki",
-      "accepted": 52,
+      "accepted": 53,
       "waiting": 0,
       "updated_at": "2026-08-31T11:31:15+09:00"
     },
@@ -154,7 +154,7 @@
       "owner_id": 233546,
       "owner_nickname": "kameneko",
       "owner_display_name": "かめねこ / 仲亀 拓馬",
-      "accepted": 203,
+      "accepted": 205,
       "waiting": 0,
       "updated_at": "2026-08-25T01:40:59+09:00"
     },
@@ -185,7 +185,7 @@
       "owner_id": 1888,
       "owner_nickname": "kaorun55",
       "owner_display_name": "中村 薫",
-      "accepted": 5,
+      "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-09-01T15:50:27+09:00"
     },
