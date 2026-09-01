@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-01T14:55:13.436318+09:00",
+  "fetched_at": "2026-09-01T19:53:32.033662+09:00",
   "date": "20260901",
   "count": 9,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-08-03T12:59:20+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17961,
         "subdomain": "shaketech",
@@ -30,7 +30,7 @@
       "owner_id": 78055,
       "owner_nickname": "YukiIzumoto",
       "owner_display_name": "mitsuba yu",
-      "accepted": 25,
+      "accepted": 28,
       "waiting": 0,
       "updated_at": "2026-08-31T18:46:07+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-08-05T19:34:57+09:00",
       "limit": 102,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2221,
         "subdomain": "andpad",
@@ -61,46 +61,15 @@
       "owner_id": 555936,
       "owner_nickname": "ANDPAD_TechLive",
       "owner_display_name": "ANDPAD_TechLive",
-      "accepted": 69,
+      "accepted": 81,
       "waiting": 0,
       "updated_at": "2026-09-01T11:00:24+09:00"
-    },
-    {
-      "id": 401534,
-      "title": "毎週火曜にやってる！プログラミング&ITなんでも勉強部屋（9月第1週）",
-      "catch": "毎週火曜にやってる、もくもく勉強部屋！！",
-      "description": "<p><a href=\"https://twitter.com/search?q=%23%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%8B%89%E5%BC%B7%E9%83%A8%E5%B1%8B%20%20%23eLV%E5%8B%89%E5%BC%B7%E4%BC%9A&amp;src=typed_query\" rel=\"nofollow\">#プログラミング勉強部屋 #eLV勉強会</a> </p>\n<h2>毎週火曜やってます!!</h2>\n<p>※その他の火曜も参加希望の場合は<a href=\"https://hfs.connpass.com/\" rel=\"nofollow\">このリンク</a> からお願いします！<br><br></p>\n<h2>どんなイベント？<br></h2>\n<p>一人だと、自宅だと、だらけちゃって自分に負けちゃう！やる気はあるのに進まない......心配ありません、人間そんなものです（笑）そこで、以下の環境を用意しております！！<br></p>\n<ul>\n<li>\n<h5>なんとなく学習モードに切り替わることのできる「場」</h5>\n</li>\n<li>\n<h5>一人ではなく同じような学習テーマをもった「仲間」</h5>\n</li>\n<li>\n<h5>毎週火曜日開催！</h5>\n</li>\n</ul>\n<p>無言、途中参加、途中退出、ちょっと抜けてまた戻ってくる、などなど自由です。<br>\nゆる〜くやっているので、お気軽にご参加ください。<br>\n<img alt=\"ロゴ画像\" src=\"https://cdn-ak.f.st-hatena.com/images/fotolife/m/medellinjp/20240118/20240118120528.jpg\"></p>\n<h2>参加者ってどんなことやっているの？<br></h2>\n<p>・プログラミングの勉強<br>\n・ネットワークやCloudの勉強<br>\n・書籍を読む<br>\n・会社の仕事を仕上げる<br>\n・各種資料を作成する<br>\n・ブログなどの記事を書く<br>\n・統計や数学など基礎的な勉強<br>\n・その他なんでも！<br></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Time</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">備考</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">勉強部屋OPEN！</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00~20:00</td>\n<td style=\"text-align: left;\">自習タイム</td>\n<td style=\"text-align: left;\">途中入場OK！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00~20:30頃</td>\n<td style=\"text-align: left;\">自己紹介＆交流タイム</td>\n<td style=\"text-align: left;\">最近の「気付き・学び」「興味」などその日の人数や雰囲気でお話しいただきますのでご準備を！<br> スライドを使ってのショートプレゼンもOK<br>※できるだけ皆が分かるような＆利するような内容でお願いしまーす！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30~22:00</td>\n<td style=\"text-align: left;\">自習タイム</td>\n<td style=\"text-align: left;\">途中退場OK！</td>\n</tr>\n</tbody>\n</table>\n<h2>■参加資格</h2>\n<ul>\n<li>無断欠席しない人</li>\n<li>\n<p>ITエンジニアまたはITエンジニアを目指す人（学生さんも歓迎）</p>\n</li>\n<li>\n<h5>eLVオフィシャルサイト、またイベント告知サイトなどへの掲載目的として勉強会、交流会風景の撮影を行わせて頂いております。掲載へ不都合が御座います方は、恐れ入りますが運営スタッフまでお申し出下さい。</h5>\n</li>\n</ul>\n<h2>■ITエンジニアコミュニティeLVとは？</h2>\n<p><img alt=\"ロゴ画像\" src=\"https://assets.st-note.com/img/1705545691300-zhq3UaWO4g.png\"></p>\n<p>eLVはスキルアップに資する誰でも参加可能なコミュニティです。</p>\n<p>※他のイベントはこちらからチェック下さい。<br>\n<a href=\"https://elv.connpass.com/\" rel=\"nofollow\">https://elv.connpass.com/</a></p>\n<p>※Co-Creation BAR（ICT関係者の集うBAR）のイベントはこちらからチェック下さい。<br>\n<a href=\"https://elv-ccb.connpass.com/\" rel=\"nofollow\">https://elv-ccb.connpass.com/</a></p>\n<p><br>\n<br></p>\n<h1>運営母体とお問合せ先について</h1>\n<hr>\n<p>ITエンジニアコミュニティeLV（engineer's Learning･Vesper）powered by <a href=\"https://note.com/cre_co_es\" rel=\"nofollow\">CRE-CO</a>\n<br>〒102-0093 東京都千代田区平河町1-4-3 平河町伏見ビル 2F Co-CreationLABO\n<br>e-MAIL：co-Creation@elv.tokyo</p>",
-      "url": "https://hfs.connpass.com/event/401534/",
-      "image_url": "https://media.connpass.com/thumbs/ac/08/ac08caf5d6f6fbad2c98f7119e04f98a.png",
-      "hash_tag": "プログラミング勉強部屋",
-      "started_at": "2026-09-01T19:00:00+09:00",
-      "ended_at": "2026-09-01T22:00:00+09:00",
-      "published_at": "2026-08-12T07:01:39+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 1717,
-        "subdomain": "hfs",
-        "title": "Hacker’s Free Space",
-        "url": "https://hfs.connpass.com/"
-      },
-      "address": "〒102-0093 東京都千代田区平河町1-4-3 平河町伏見ビル 2F",
-      "place": "Co-Creation LABO",
-      "lat": "35.682793000000",
-      "lon": "139.739039500000",
-      "owner_id": 136264,
-      "owner_nickname": "sunfuj",
-      "owner_display_name": "SunFuji",
-      "accepted": 4,
-      "waiting": 0,
-      "updated_at": "2026-08-12T07:01:39+09:00"
     },
     {
       "id": 400854,
       "title": "DIST.54 「アニメーションの良さは何で決まるのか？」",
       "catch": "職種や技術の垣根を越えてWebに関わるすべての人を結ぶクリエイティブコミュニティ",
-      "description": "<h1>概要</h1>\n<p>画面の中のアニメーションには、それぞれ役割があります。要素のつながりを示すもの、状態の変化を伝えるもの、操作に手応えを返すもの。Webでもアプリでも、動きは体験の一部としてすっかり定着しました。Figma MotionやLottie Creatorのように、Web制作の文脈で使えるアニメーションツールも少しずつ姿を見せはじめています。</p>\n<p>しかし、道具が増えたからといって、良いアニメーションが作れるようになるわけではありません。イージングは何を選ぶのか。何秒が「ちょうどいい」のか。そもそも、ここは動かすべきなのか。こうした判断の多くは、いまも個人の感覚や経験則に委ねられているように思います。</p>\n<p>今回のDIST.54では、Webやプロダクト、映像と、それぞれ異なる場所でアニメーションに向き合ってきたスピーカーをお招きします。ツールの使い方の手前にある、アニメーションの良さを決めているものは何なのか。動かし方はわかるけれど、良し悪しの基準がわからない。そんなモヤモヤを抱える方に、ぜひ持ち帰ってほしい内容です。その答えを、一緒に探しにきませんか？</p>\n<h1>セッション紹介</h1>\n<h2><strong>Figma MotionとAI機能で作るアニメーション</strong>（20分）</h2>\n<p><strong>DeNA、<a href=\"https://ie3.jp/\" rel=\"nofollow\">IE3</a> デザインマネージャー、デザイナー <a href=\"https://x.com/motomiya333\" rel=\"nofollow\">宮本 昌典</a></strong>（MIYAMOTO Masanori）</p>\n<p>Figmaの新機能であるFigma MotionとAI Agentを活用した、アニメーション制作における試行錯誤のプロセスを紹介します。</p>\n<h2><strong>道具を手入れすること</strong>（20分）</h2>\n<p><strong>昭和機電、THE GUILD インタラクションデザイナー、プログラマー <a href=\"https://x.com/alumican_net\" rel=\"nofollow\">奥田 透也</a></strong>（OKUDA Yukiya）</p>\n<p>プログラム制御のアニメーションを構築しながら日々考えている「自分の中に何を残すのか」というテーマについてお話しします。</p>\n<h2><strong>デザインの中にあるモーションを考える</strong>（20分）</h2>\n<p><strong>映像講師 <a href=\"https://x.com/ymrun_jp\" rel=\"nofollow\">ヤマダイ</a></strong>（Yamadai）</p>\n<p>モーショングラフィックスにはデザインは欠かせません。デザインの中にある動きに時間軸を与えること。受け手が感じる動きとは？デザインの延長上で考えるモーションとは？幾つかのヒントを考えてみましょう。</p>\n<h1>LT紹介（各5分）</h1>\n<h2><strong>アニメーション実装の小技5選</strong></h2>\n<p><strong>kinew CTO <a href=\"https://x.com/ktsn\" rel=\"nofollow\">Katashin</a></strong>（Katashin）</p>\n<p>私がよく使うアニメーションの実装をするうえで役に立つかもしれないちょっとしたテクニックを共有します。</p>\n<h1>参加費</h1>\n<h2>勉強会のみ</h2>\n<p><strong>無料</strong></p>\n<ul>\n<li>当日会場にお越しください。</li>\n</ul>\n<h2>勉強会＋懇親会</h2>\n<p><strong>4,000円</strong></p>\n<ul>\n<li>勉強会に加え、着席しての懇親会（コース料理＋飲み放題）にご参加いただけます。<ul>\n<li>参加者同士の交流を深める有意義な機会を大切にするため、居酒屋での実施となります。</li>\n<li>費用や手間を抑え、より多くの方にご参加いただけることを重視しています。</li>\n</ul>\n</li>\n<li>PayPalによる事前決済のみとなります。</li>\n<li>懇親会の申し込みは開催1週間前までとなります（予約の関係上、申し込みが定員未満でも締め切ります）。</li>\n<li>懇親会のみの参加は受け付けていません。</li>\n<li>懇親会にはアルコールが提供されるため、20歳未満の方はご参加いただけません。</li>\n<li>懇親会は<strong>完全禁煙</strong>です。<ul>\n<li>喫煙時は近隣の喫煙スペースをご利用ください。</li>\n</ul>\n</li>\n</ul>\n<h2>事前決済についての注意事項</h2>\n<ul>\n<li>具体的な流れは、<a href=\"https://esa-pages.io/p/sharing/2767/posts/60/2140a3c68d9779ea2780.html\" rel=\"nofollow\">PayPalによる事前決済について</a>をご参考ください。</li>\n<li>領収書を発行可能です。詳しくは<a href=\"http://help.connpass.com/participants/show-event-receipt\" rel=\"nofollow\">connpassご利用ガイド</a>をご覧ください。</li>\n<li>キャンセル・払い戻しについては、<a href=\"https://esa-pages.io/p/sharing/2767/posts/67/c754be5f87e6131b3087.html\" rel=\"nofollow\">キャンセルポリシー</a>に従って対応します。</li>\n</ul>\n<hr>\n<ul>\n<li>スタッフ枠は、通常参加の方はお使いいただけません。スタッフとして参加希望の方は、<a href=\"https://dist.tokyo/\" rel=\"nofollow\">公式サイト</a>のお問い合わせフォームよりお問い合わせください。</li>\n</ul>\n<h1>会場</h1>\n<p>中野セントラルパーク カンファレンス 1F ルーム3B</p>\n<ul>\n<li>JR中野駅 北口改札から徒歩4分</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時刻</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30～19:00</td>\n<td style=\"text-align: left;\">開場／受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00～19:05</td>\n<td style=\"text-align: left;\">はじめに</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05～19:10</td>\n<td style=\"text-align: left;\">LT1</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15～19:20</td>\n<td style=\"text-align: left;\">LT2</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:25～19:45</td>\n<td style=\"text-align: left;\">セッション1</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45～19:55</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55〜20:15</td>\n<td style=\"text-align: left;\">セッション2</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20～20:40</td>\n<td style=\"text-align: left;\">セッション3</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:40～20:45</td>\n<td style=\"text-align: left;\">おわりに</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45～20:50</td>\n<td style=\"text-align: left;\">みんなでお片付け／閉場</td>\n</tr>\n</tbody>\n</table>\n<p>※タイムテーブルや実際の進行は、予告なく変更になる可能性があります。</p>\n<h1>更新履歴</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">更新日時</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">8/12 20:30</td>\n<td style=\"text-align: left;\">好評につき、一部参加枠を増席しました。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">8/5 9:45</td>\n<td style=\"text-align: left;\">LT紹介を追加しました。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">7/21 17:30</td>\n<td style=\"text-align: left;\">イベントページを公開しました。</td>\n</tr>\n</tbody>\n</table>\n<h1>スポンサー</h1>\n<p>DISTは、以下の<a href=\"https://esa-pages.io/p/sharing/2767/posts/86/73671e79fd847f58454b.html\" rel=\"nofollow\">スポンサーにご協賛</a>いただいております。</p>\n<h2>スペシャルスポンサー</h2>\n<p><a href=\"https://dotinstall.com/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__dotinstall_wide.svg\" width=\"100%\" alt=\"ドットインストール\">\n</a></p>\n<p><a href=\"https://256times.com/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__256-times.svg\" width=\"100%\" alt=\"256times\">\n</a></p>\n<p><a href=\"https://www.kddi-webcommunications.co.jp/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__kddi-webcommunications.svg\" width=\"100%\" alt=\"KDDIウェブコミュニケーションズ\">\n</a></p>\n<h2>ゴールドスポンサー</h2>\n<p><a href=\"https://www.codegrid.net/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__codegrid.svg\" width=\"80%\" alt=\"CodeGrid\">\n</a></p>\n<p><a href=\"https://generosity.co.jp/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__generosity.svg\" width=\"80%\" alt=\"GENEROSITY\">\n</a></p>\n<h2>シルバースポンサー</h2>\n<p><a href=\"https://wd-flat.com/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__flat.png\" width=\"60%\" alt=\"FLAT\">\n</a></p>\n<p><a href=\"https://pleasanter.org/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__pleasanter.png\" width=\"60%\" alt=\"OSSのノーコードローコード開発ツール”プリザンター”\">\n</a></p>\n<h2>ブロンズスポンサー</h2>\n<p><a href=\"https://tomosta.jp/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__tomosta.svg\" width=\"40%\" alt=\"ともすた\">\n</a></p>\n<p><a href=\"https://www.image-make.co.jp/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__imake.jpg\" width=\"40%\" alt=\"IMAKE\">\n</a></p>\n<h2>ツールスポンサー</h2>\n<p><a href=\"https://esa.io/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__esa.svg\" width=\"30%\" alt=\"esa.io\">\n</a></p>\n<h1>YouTube配信</h1>\n<p>当日の様子は、開催2ヶ月後を目安に<a href=\"https://www.youtube.com/c/distjp\" rel=\"nofollow\">DISTのYouTubeチャンネル</a>で公開予定です。公開不可の箇所やセッションはカットされますので、内容をすべてをご覧になりたい方は、ぜひ当日ご覧ください。</p>\n<h1>DISTについて</h1>\n<p>DISTは、職種や技術の垣根を越えてWebに関わるすべての人を結ぶクリエイティブコミュニティです。有志が非営利で運営しています。</p>\n<p>主な活動として、以下の3つをコンセプトとした勉強会を定期開催しています。</p>\n<ul>\n<li>職種の垣根を越える</li>\n<li>特定の技術に依存しない</li>\n<li>今日から現場で使える</li>\n</ul>\n<h1>注意事項</h1>\n<ul>\n<li>会場のWi-Fi一般開放はありません。</li>\n<li>動画、写真の撮影を予定しています。撮影NGの方は事前にお申し出ください。</li>\n<li>主催者、参加者みんなで作り上げる勉強会です。準備や片付けにご協力をお願いします。</li>\n</ul>",
+      "description": "<h1>概要</h1>\n<p>画面の中のアニメーションには、それぞれ役割があります。要素のつながりを示すもの、状態の変化を伝えるもの、操作に手応えを返すもの。Webでもアプリでも、動きは体験の一部としてすっかり定着しました。Figma MotionやLottie Creatorのように、Web制作の文脈で使えるアニメーションツールも少しずつ姿を見せはじめています。</p>\n<p>しかし、道具が増えたからといって、良いアニメーションが作れるようになるわけではありません。イージングは何を選ぶのか。何秒が「ちょうどいい」のか。そもそも、ここは動かすべきなのか。こうした判断の多くは、いまも個人の感覚や経験則に委ねられているように思います。</p>\n<p>今回のDIST.54では、Webやプロダクト、映像と、それぞれ異なる場所でアニメーションに向き合ってきたスピーカーをお招きします。ツールの使い方の手前にある、アニメーションの良さを決めているものは何なのか。動かし方はわかるけれど、良し悪しの基準がわからない。そんなモヤモヤを抱える方に、ぜひ持ち帰ってほしい内容です。その答えを、一緒に探しにきませんか？</p>\n<h1>セッション紹介</h1>\n<h2><strong>Figma MotionとAI機能で作るアニメーション</strong>（20分）</h2>\n<p><strong>DeNA、<a href=\"https://ie3.jp/\" rel=\"nofollow\">IE3</a> デザインマネージャー、デザイナー <a href=\"https://x.com/motomiya333\" rel=\"nofollow\">宮本 昌典</a></strong>（MIYAMOTO Masanori）</p>\n<p>Figmaの新機能であるFigma MotionとAI Agentを活用した、アニメーション制作における試行錯誤のプロセスを紹介します。</p>\n<h2><strong>デザインの中にあるモーションを考える</strong>（20分）</h2>\n<p><strong>映像講師 <a href=\"https://x.com/ymrun_jp\" rel=\"nofollow\">ヤマダイ</a></strong>（Yamadai）</p>\n<p>モーショングラフィックスにはデザインは欠かせません。デザインの中にある動きに時間軸を与えること。受け手が感じる動きとは？デザインの延長上で考えるモーションとは？幾つかのヒントを考えてみましょう。</p>\n<h2><strong>動きの外側と内側について探索する</strong>（20分）</h2>\n<p><strong>昭和機電、THE GUILD インタラクションデザイナー、プログラマー <a href=\"https://x.com/alumican_net\" rel=\"nofollow\">奥田 透也</a></strong>（OKUDA Yukiya）</p>\n<p>そつのないアニメーションはAIが作ってくれるので、人間は変な場所をおもしろがるのがいいんじゃないかと思ってます。</p>\n<h1>LT紹介（各5分）</h1>\n<h2><strong>アニメーション実装の小技5選</strong></h2>\n<p><strong>kinew CTO <a href=\"https://x.com/ktsn\" rel=\"nofollow\">Katashin</a></strong>（Katashin）</p>\n<p>私がよく使うアニメーションの実装をするうえで役に立つかもしれないちょっとしたテクニックを共有します。</p>\n<h1>参加費</h1>\n<h2>勉強会のみ</h2>\n<p><strong>無料</strong></p>\n<ul>\n<li>当日会場にお越しください。</li>\n</ul>\n<h2>勉強会＋懇親会</h2>\n<p><strong>4,000円</strong></p>\n<ul>\n<li>勉強会に加え、着席しての懇親会（コース料理＋飲み放題）にご参加いただけます。<ul>\n<li>参加者同士の交流を深める有意義な機会を大切にするため、居酒屋での実施となります。</li>\n<li>費用や手間を抑え、より多くの方にご参加いただけることを重視しています。</li>\n</ul>\n</li>\n<li>PayPalによる事前決済のみとなります。</li>\n<li>懇親会の申し込みは開催1週間前までとなります（予約の関係上、申し込みが定員未満でも締め切ります）。</li>\n<li>懇親会のみの参加は受け付けていません。</li>\n<li>懇親会にはアルコールが提供されるため、20歳未満の方はご参加いただけません。</li>\n<li>懇親会は<strong>完全禁煙</strong>です。<ul>\n<li>喫煙時は近隣の喫煙スペースをご利用ください。</li>\n</ul>\n</li>\n</ul>\n<h2>事前決済についての注意事項</h2>\n<ul>\n<li>具体的な流れは、<a href=\"https://esa-pages.io/p/sharing/2767/posts/60/2140a3c68d9779ea2780.html\" rel=\"nofollow\">PayPalによる事前決済について</a>をご参考ください。</li>\n<li>領収書を発行可能です。詳しくは<a href=\"http://help.connpass.com/participants/show-event-receipt\" rel=\"nofollow\">connpassご利用ガイド</a>をご覧ください。</li>\n<li>キャンセル・払い戻しについては、<a href=\"https://esa-pages.io/p/sharing/2767/posts/67/c754be5f87e6131b3087.html\" rel=\"nofollow\">キャンセルポリシー</a>に従って対応します。</li>\n</ul>\n<hr>\n<ul>\n<li>スタッフ枠は、通常参加の方はお使いいただけません。スタッフとして参加希望の方は、<a href=\"https://dist.tokyo/\" rel=\"nofollow\">公式サイト</a>のお問い合わせフォームよりお問い合わせください。</li>\n</ul>\n<h1>会場</h1>\n<p>中野セントラルパーク カンファレンス 1F ルーム3B</p>\n<ul>\n<li>JR中野駅 北口改札から徒歩4分</li>\n</ul>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時刻</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30～19:00</td>\n<td style=\"text-align: left;\">開場／受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00～19:05</td>\n<td style=\"text-align: left;\">はじめに</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05～19:10</td>\n<td style=\"text-align: left;\">LT1</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15～19:20</td>\n<td style=\"text-align: left;\">LT2</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:25～19:45</td>\n<td style=\"text-align: left;\">セッション1</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45～19:55</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55〜20:15</td>\n<td style=\"text-align: left;\">セッション2</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20～20:40</td>\n<td style=\"text-align: left;\">セッション3</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:40～20:45</td>\n<td style=\"text-align: left;\">おわりに</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45～20:50</td>\n<td style=\"text-align: left;\">みんなでお片付け／閉場</td>\n</tr>\n</tbody>\n</table>\n<p>※タイムテーブルや実際の進行は、予告なく変更になる可能性があります。</p>\n<h1>更新履歴</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">更新日時</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">8/12 20:30</td>\n<td style=\"text-align: left;\">好評につき、一部参加枠を増席しました。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">8/5 9:45</td>\n<td style=\"text-align: left;\">LT紹介を追加しました。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">7/21 17:30</td>\n<td style=\"text-align: left;\">イベントページを公開しました。</td>\n</tr>\n</tbody>\n</table>\n<h1>スポンサー</h1>\n<p>DISTは、以下の<a href=\"https://esa-pages.io/p/sharing/2767/posts/86/73671e79fd847f58454b.html\" rel=\"nofollow\">スポンサーにご協賛</a>いただいております。</p>\n<h2>スペシャルスポンサー</h2>\n<p><a href=\"https://dotinstall.com/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__dotinstall_wide.svg\" width=\"100%\" alt=\"ドットインストール\">\n</a></p>\n<p><a href=\"https://256times.com/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__256-times.svg\" width=\"100%\" alt=\"256times\">\n</a></p>\n<p><a href=\"https://www.kddi-webcommunications.co.jp/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__kddi-webcommunications.svg\" width=\"100%\" alt=\"KDDIウェブコミュニケーションズ\">\n</a></p>\n<h2>ゴールドスポンサー</h2>\n<p><a href=\"https://www.codegrid.net/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__codegrid.svg\" width=\"80%\" alt=\"CodeGrid\">\n</a></p>\n<p><a href=\"https://generosity.co.jp/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__generosity.svg\" width=\"80%\" alt=\"GENEROSITY\">\n</a></p>\n<h2>シルバースポンサー</h2>\n<p><a href=\"https://wd-flat.com/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__flat.png\" width=\"60%\" alt=\"FLAT\">\n</a></p>\n<p><a href=\"https://pleasanter.org/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__pleasanter.png\" width=\"60%\" alt=\"OSSのノーコードローコード開発ツール”プリザンター”\">\n</a></p>\n<h2>ブロンズスポンサー</h2>\n<p><a href=\"https://tomosta.jp/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__tomosta.svg\" width=\"40%\" alt=\"ともすた\">\n</a></p>\n<p><a href=\"https://www.image-make.co.jp/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__imake.jpg\" width=\"40%\" alt=\"IMAKE\">\n</a></p>\n<h2>ツールスポンサー</h2>\n<p><a href=\"https://esa.io/\" rel=\"nofollow\">\n<img src=\"//dist.tokyo/images/base/sponsor__esa.svg\" width=\"30%\" alt=\"esa.io\">\n</a></p>\n<h1>YouTube配信</h1>\n<p>当日の様子は、開催2ヶ月後を目安に<a href=\"https://www.youtube.com/c/distjp\" rel=\"nofollow\">DISTのYouTubeチャンネル</a>で公開予定です。公開不可の箇所やセッションはカットされますので、内容をすべてをご覧になりたい方は、ぜひ当日ご覧ください。</p>\n<h1>DISTについて</h1>\n<p>DISTは、職種や技術の垣根を越えてWebに関わるすべての人を結ぶクリエイティブコミュニティです。有志が非営利で運営しています。</p>\n<p>主な活動として、以下の3つをコンセプトとした勉強会を定期開催しています。</p>\n<ul>\n<li>職種の垣根を越える</li>\n<li>特定の技術に依存しない</li>\n<li>今日から現場で使える</li>\n</ul>\n<h1>注意事項</h1>\n<ul>\n<li>会場のWi-Fi一般開放はありません。</li>\n<li>動画、写真の撮影を予定しています。撮影NGの方は事前にお申し出ください。</li>\n<li>主催者、参加者みんなで作り上げる勉強会です。準備や片付けにご協力をお願いします。</li>\n</ul>",
       "url": "https://dist.connpass.com/event/400854/",
       "image_url": "https://media.connpass.com/thumbs/3a/aa/3aaa2436124b459d76e484cbe953f824.png",
       "hash_tag": "dist54",
@@ -109,7 +78,7 @@
       "published_at": "2026-07-21T17:23:30+09:00",
       "limit": 57,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 639,
         "subdomain": "dist",
@@ -125,7 +94,7 @@
       "owner_display_name": "Yuko",
       "accepted": 48,
       "waiting": 0,
-      "updated_at": "2026-08-12T20:29:43+09:00"
+      "updated_at": "2026-09-01T16:04:20+09:00"
     },
     {
       "id": 400887,
@@ -138,9 +107,9 @@
       "started_at": "2026-09-01T19:00:00+09:00",
       "ended_at": "2026-09-01T21:30:00+09:00",
       "published_at": "2026-07-16T20:54:46+09:00",
-      "limit": 65,
+      "limit": 70,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13827,
         "subdomain": "creator-square",
@@ -154,9 +123,40 @@
       "owner_id": 790801,
       "owner_nickname": "MacopeninSUTABA",
       "owner_display_name": "かずなり",
-      "accepted": 61,
+      "accepted": 68,
       "waiting": 0,
-      "updated_at": "2026-09-01T13:29:03+09:00"
+      "updated_at": "2026-09-01T17:33:03+09:00"
+    },
+    {
+      "id": 401534,
+      "title": "毎週火曜にやってる！プログラミング&ITなんでも勉強部屋（9月第1週）",
+      "catch": "毎週火曜にやってる、もくもく勉強部屋！！",
+      "description": "<p><a href=\"https://twitter.com/search?q=%23%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%8B%89%E5%BC%B7%E9%83%A8%E5%B1%8B%20%20%23eLV%E5%8B%89%E5%BC%B7%E4%BC%9A&amp;src=typed_query\" rel=\"nofollow\">#プログラミング勉強部屋 #eLV勉強会</a> </p>\n<h2>毎週火曜やってます!!</h2>\n<p>※その他の火曜も参加希望の場合は<a href=\"https://hfs.connpass.com/\" rel=\"nofollow\">このリンク</a> からお願いします！<br><br></p>\n<h2>どんなイベント？<br></h2>\n<p>一人だと、自宅だと、だらけちゃって自分に負けちゃう！やる気はあるのに進まない......心配ありません、人間そんなものです（笑）そこで、以下の環境を用意しております！！<br></p>\n<ul>\n<li>\n<h5>なんとなく学習モードに切り替わることのできる「場」</h5>\n</li>\n<li>\n<h5>一人ではなく同じような学習テーマをもった「仲間」</h5>\n</li>\n<li>\n<h5>毎週火曜日開催！</h5>\n</li>\n</ul>\n<p>無言、途中参加、途中退出、ちょっと抜けてまた戻ってくる、などなど自由です。<br>\nゆる〜くやっているので、お気軽にご参加ください。<br>\n<img alt=\"ロゴ画像\" src=\"https://cdn-ak.f.st-hatena.com/images/fotolife/m/medellinjp/20240118/20240118120528.jpg\"></p>\n<h2>参加者ってどんなことやっているの？<br></h2>\n<p>・プログラミングの勉強<br>\n・ネットワークやCloudの勉強<br>\n・書籍を読む<br>\n・会社の仕事を仕上げる<br>\n・各種資料を作成する<br>\n・ブログなどの記事を書く<br>\n・統計や数学など基礎的な勉強<br>\n・その他なんでも！<br></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Time</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">備考</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">勉強部屋OPEN！</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00~20:00</td>\n<td style=\"text-align: left;\">自習タイム</td>\n<td style=\"text-align: left;\">途中入場OK！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00~20:30頃</td>\n<td style=\"text-align: left;\">自己紹介＆交流タイム</td>\n<td style=\"text-align: left;\">最近の「気付き・学び」「興味」などその日の人数や雰囲気でお話しいただきますのでご準備を！<br> スライドを使ってのショートプレゼンもOK<br>※できるだけ皆が分かるような＆利するような内容でお願いしまーす！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30~22:00</td>\n<td style=\"text-align: left;\">自習タイム</td>\n<td style=\"text-align: left;\">途中退場OK！</td>\n</tr>\n</tbody>\n</table>\n<h2>■参加資格</h2>\n<ul>\n<li>無断欠席しない人</li>\n<li>\n<p>ITエンジニアまたはITエンジニアを目指す人（学生さんも歓迎）</p>\n</li>\n<li>\n<h5>eLVオフィシャルサイト、またイベント告知サイトなどへの掲載目的として勉強会、交流会風景の撮影を行わせて頂いております。掲載へ不都合が御座います方は、恐れ入りますが運営スタッフまでお申し出下さい。</h5>\n</li>\n</ul>\n<h2>■ITエンジニアコミュニティeLVとは？</h2>\n<p><img alt=\"ロゴ画像\" src=\"https://assets.st-note.com/img/1705545691300-zhq3UaWO4g.png\"></p>\n<p>eLVはスキルアップに資する誰でも参加可能なコミュニティです。</p>\n<p>※他のイベントはこちらからチェック下さい。<br>\n<a href=\"https://elv.connpass.com/\" rel=\"nofollow\">https://elv.connpass.com/</a></p>\n<p>※Co-Creation BAR（ICT関係者の集うBAR）のイベントはこちらからチェック下さい。<br>\n<a href=\"https://elv-ccb.connpass.com/\" rel=\"nofollow\">https://elv-ccb.connpass.com/</a></p>\n<p><br>\n<br></p>\n<h1>運営母体とお問合せ先について</h1>\n<hr>\n<p>ITエンジニアコミュニティeLV（engineer's Learning･Vesper）powered by <a href=\"https://note.com/cre_co_es\" rel=\"nofollow\">CRE-CO</a>\n<br>〒102-0093 東京都千代田区平河町1-4-3 平河町伏見ビル 2F Co-CreationLABO\n<br>e-MAIL：co-Creation@elv.tokyo</p>",
+      "url": "https://hfs.connpass.com/event/401534/",
+      "image_url": "https://media.connpass.com/thumbs/ac/08/ac08caf5d6f6fbad2c98f7119e04f98a.png",
+      "hash_tag": "プログラミング勉強部屋",
+      "started_at": "2026-09-01T19:00:00+09:00",
+      "ended_at": "2026-09-01T22:00:00+09:00",
+      "published_at": "2026-08-12T07:01:39+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 1717,
+        "subdomain": "hfs",
+        "title": "Hacker’s Free Space",
+        "url": "https://hfs.connpass.com/"
+      },
+      "address": "〒102-0093 東京都千代田区平河町1-4-3 平河町伏見ビル 2F",
+      "place": "Co-Creation LABO",
+      "lat": "35.682793000000",
+      "lon": "139.739039500000",
+      "owner_id": 136264,
+      "owner_nickname": "sunfuj",
+      "owner_display_name": "SunFuji",
+      "accepted": 6,
+      "waiting": 0,
+      "updated_at": "2026-08-12T07:01:39+09:00"
     },
     {
       "id": 401977,
@@ -169,9 +169,9 @@
       "started_at": "2026-09-01T19:00:00+09:00",
       "ended_at": "2026-09-01T21:30:00+09:00",
       "published_at": "2026-08-04T16:36:21+09:00",
-      "limit": 40,
+      "limit": 45,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13891,
         "subdomain": "algomatic",
@@ -185,15 +185,15 @@
       "owner_id": 1036946,
       "owner_nickname": "lee_algomatic",
       "owner_display_name": "lee_algomatic",
-      "accepted": 40,
-      "waiting": 1,
-      "updated_at": "2026-08-31T16:33:27+09:00"
+      "accepted": 41,
+      "waiting": 0,
+      "updated_at": "2026-09-01T18:45:11+09:00"
     },
     {
       "id": 403678,
       "title": "Graph？Eval？〜AI開発の最新事例LT祭りnight！〜",
       "catch": "Graph/Eval Engineeringの活用事例を語り尽くす！",
-      "description": "<h1>✍️概要</h1>\n<p>「Graph Engineering」「Eval Engineering」<br>海外では、スキルや処理をグラフで構造化してAIの動き方を設計する、AIの出力を評価（Eval）して改善に回すといったハーネスやループエンジニアリングに続く新しいAI活用が日々公開されています。</p>\n<p>このイベントは、そんな最先端の事例をみんなで学び合うLT大会です。<br></p>\n<p>本編のあとは懇親会もあります！お祭り気分でお越しください！</p>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">調整中</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">「検索」をAgentに繋ぐ3つの接ぎ方 ー ノードか、ツールか、サブエージェントか</td>\n<td style=\"text-align: left;\">sphereSkyさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:28</td>\n<td style=\"text-align: left;\">Graph Engineering、失敗と改善の記録</td>\n<td style=\"text-align: left;\">菅本（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:40</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:42 - 19:47</td>\n<td style=\"text-align: left;\">調整中</td>\n<td style=\"text-align: left;\">LT募集枠</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:49 - 19:54</td>\n<td style=\"text-align: left;\">(仮)「Claude Codeを組織的に動かした話」</td>\n<td style=\"text-align: left;\">happy_ryoさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:56 - 20:21</td>\n<td style=\"text-align: left;\">Q&amp;A（25分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:23 - 20:30</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LTは1人5分です<br>\n※各セッション間には、画面投影・登壇者切り替えのために2分ずつ転換時間を確保しています<br>\n※登壇順は変更となる場合があります</p>\n<blockquote>\n<p>※20:30〜21:30 懇親会（ネットワーキング・オフライン参加者限定）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります</p>\n</blockquote>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/?utm_source=ai-plus&amp;utm_medium=event&amp;utm_campaign=connpass_FindyAI+サービス紹介&amp;utm_content=&amp;utm_term=\" rel=\"nofollow\">AI活用の成果最大化とコスト最適化を両立する。「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
+      "description": "<h1>✍️概要</h1>\n<p>「Graph Engineering」「Eval Engineering」<br>海外では、スキルや処理をグラフで構造化してAIの動き方を設計する、AIの出力を評価（Eval）して改善に回すといったハーネスやループエンジニアリングに続く新しいAI活用が日々公開されています。</p>\n<p>このイベントは、そんな最先端の事例をみんなで学び合うLT大会です。<br></p>\n<p>本編のあとは懇親会もあります！お祭り気分でお越しください！</p>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">「検索」をAgentに繋ぐ3つの接ぎ方 ー ノードか、ツールか、サブエージェントか</td>\n<td style=\"text-align: left;\">sphereSkyさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">(仮)「Claude Codeを組織的に動かした話」</td>\n<td style=\"text-align: left;\">happy_ryoさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:33</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35 - 19:51</td>\n<td style=\"text-align: left;\">Q&amp;A（16分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:53 - 20:00</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LTは1人5分です<br>\n※各セッション間には、画面投影・登壇者切り替えのために2分ずつ転換時間を確保しています<br>\n※登壇順は変更となる場合があります</p>\n<blockquote>\n<p>※20:00〜21:00 懇親会（ネットワーキング・オフライン参加者限定）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります</p>\n</blockquote>\n<h1>⚠️ 諸注意</h1>\n<ul>\n<li>参加用リンクは開催当日、参加確定者にconnpass経由で通知します</li>\n<li>エージェントの方や営業目的でのイベントの参加はご遠慮ください</li>\n<li>性別/性的指向/障碍の有無/人種/宗教/年齢/容姿/体格/技術の選択に関わりなく、誰もが気持ちよく参加できるようにご協力ください</li>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>イベント参加時に入力いただいた情報は、以下に基づき扱います。<br><a href=\"https://findy.co.jp/privacy/\" rel=\"nofollow\">ファインディ株式会社 プライバシーポリシー</a></li>\n</ul>\n<h1>📣 主催・運営</h1>\n<p><img src=\"https://media.connpass.com/thumbs/23/45/23455a7b19761843e000348ee17094e1.png\" width=\"300\"></p>\n<p><a href=\"https://findy.co.jp/\" rel=\"nofollow\">ファインディ株式会社</a><br>\n<a href=\"https://lp.ai-plus.findy.io/?utm_source=ai-plus&amp;utm_medium=event&amp;utm_campaign=connpass_FindyAI+サービス紹介&amp;utm_content=&amp;utm_term=\" rel=\"nofollow\">AI活用の成果最大化とコスト最適化を両立する。「Findy AI+」</a><br>\nMCPを活用し、個人/チーム単位双方のAI活用状況を定性×定量両面で可視化。\n様々な切り口での分析を通じてAI活用のボトルネックを特定し、解決に向けた示唆出しまで実施することで、個人/チーム双方でのAIを活用した開発生産性を最大化することをサポートします。</p>\n<p><a href=\"https://jp.findy-team.io/\" rel=\"nofollow\">経営と現場をつなぐAI戦略支援SaaS「Findy Team+」</a><br>\n開発生産性、AI活用状況、プロジェクト進捗などを可視化。<br>\nデータに基づく改善で、AI駆動開発を成果につなげる伴走支援を行います。<br>\n2021年10月の正式リリース以降、約1,100社（トライアル含む）に導入いただいております。</p>",
       "url": "https://findy-aiplus.connpass.com/event/403678/",
       "image_url": "https://media.connpass.com/thumbs/95/80/95803a9153f58a2dd64a2c2b36fb1e5c.png",
       "hash_tag": "Graph_Eval_FIndyAIPlus",
@@ -202,7 +202,7 @@
       "published_at": "2026-08-17T18:00:55+09:00",
       "limit": 183,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17529,
         "subdomain": "findy-aiplus",
@@ -216,9 +216,9 @@
       "owner_id": 986836,
       "owner_nickname": "sugamotota",
       "owner_display_name": "t.sugamoto",
-      "accepted": 126,
+      "accepted": 132,
       "waiting": 0,
-      "updated_at": "2026-09-01T09:50:29+09:00"
+      "updated_at": "2026-09-01T15:21:17+09:00"
     },
     {
       "id": 399443,
@@ -233,7 +233,7 @@
       "published_at": "2026-07-09T16:57:16+09:00",
       "limit": 470,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11319,
         "subdomain": "jedai",
@@ -247,8 +247,8 @@
       "owner_id": 802879,
       "owner_nickname": "YukiteruKoide",
       "owner_display_name": "Yukiteru Koide",
-      "accepted": 308,
-      "waiting": 3,
+      "accepted": 329,
+      "waiting": 2,
       "updated_at": "2026-09-01T14:48:30+09:00"
     },
     {
@@ -262,9 +262,9 @@
       "started_at": "2026-09-01T18:00:00+09:00",
       "ended_at": "2026-09-01T21:00:00+09:00",
       "published_at": "2026-08-06T17:50:08+09:00",
-      "limit": 34,
+      "limit": 33,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15192,
         "subdomain": "raycast",
@@ -278,9 +278,9 @@
       "owner_id": 871271,
       "owner_nickname": "z63d",
       "owner_display_name": "kaita",
-      "accepted": 34,
+      "accepted": 33,
       "waiting": 0,
-      "updated_at": "2026-09-01T12:40:03+09:00"
+      "updated_at": "2026-09-01T16:25:35+09:00"
     }
   ]
 }
