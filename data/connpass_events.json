@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-02T19:18:13.158723+09:00",
+  "fetched_at": "2026-09-02T23:50:48.275356+09:00",
   "date": "20260902",
   "count": 8,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-08-18T20:11:02+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -30,7 +30,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 24,
+      "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-09-02T16:59:36+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-07-24T11:52:30+09:00",
       "limit": 77,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15426,
         "subdomain": "techbull",
@@ -78,7 +78,7 @@
       "published_at": "2026-08-14T14:24:51+09:00",
       "limit": 60,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3866,
         "subdomain": "dmm",
@@ -92,7 +92,7 @@
       "owner_id": 1040350,
       "owner_nickname": "ozaki-kota",
       "owner_display_name": "Kouta Ozaki",
-      "accepted": 55,
+      "accepted": 56,
       "waiting": 0,
       "updated_at": "2026-08-31T11:31:15+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-08-06T17:03:39+09:00",
       "limit": 113,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14178,
         "subdomain": "lycorptech-jp",
@@ -123,7 +123,7 @@
       "owner_id": 979703,
       "owner_nickname": "tokuni",
       "owner_display_name": "tokuni_ly",
-      "accepted": 110,
+      "accepted": 108,
       "waiting": 0,
       "updated_at": "2026-09-02T18:52:09+09:00"
     },
@@ -140,7 +140,7 @@
       "published_at": "2026-08-12T08:14:02+09:00",
       "limit": 550,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13424,
         "subdomain": "platformengineering",
@@ -154,7 +154,7 @@
       "owner_id": 98309,
       "owner_nickname": "Ishiawawa_pro",
       "owner_display_name": "ishikawa akira",
-      "accepted": 256,
+      "accepted": 264,
       "waiting": 0,
       "updated_at": "2026-09-02T18:24:21+09:00"
     },
@@ -171,7 +171,7 @@
       "published_at": "2026-08-26T15:55:04+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 4212,
         "subdomain": "hololab",
@@ -202,7 +202,7 @@
       "published_at": "2026-06-04T19:41:32+09:00",
       "limit": 140,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 11598,
         "subdomain": "flatt",
@@ -216,7 +216,7 @@
       "owner_id": 757828,
       "owner_nickname": "kana223",
       "owner_display_name": "kana223",
-      "accepted": 126,
+      "accepted": 125,
       "waiting": 0,
       "updated_at": "2026-08-24T11:00:50+09:00"
     },
