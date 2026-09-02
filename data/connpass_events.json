@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-02T07:14:57.223305+09:00",
+  "fetched_at": "2026-09-02T09:43:02.557274+09:00",
   "date": "20260902",
   "count": 8,
   "events": [
@@ -66,6 +66,37 @@
       "updated_at": "2026-09-02T00:19:39+09:00"
     },
     {
+      "id": 402634,
+      "title": "DMM 二次元コンテンツ Tech Meetup #2",
+      "catch": "〜 急成長する大規模ECサイトを支える技術 〜",
+      "description": "<h2><strong>DMM 二次元コンテンツ Tech Meetup #2 〜 急成長する大規模ECサイトを支える技術 〜</strong></h2>\n<p><strong>DMM 二次元コンテンツ Tech Meetup #2 〜 急成長する大規模ECサイトを支える技術 〜</strong>は、\n二次元コンテンツサービスを支える技術と開発部の文化をより多くの方に知っていただくため、エンジニアや開発チームが登壇するイベントです。</p>\n<h2><strong>開催概要</strong></h2>\n<ul>\n<li>開催日時：2026年09月02日(水) 19:00-21:00（開場 18:30）</li>\n<li>開催場所：DMM六本木オフィス</li>\n<li>参加費：無料</li>\n</ul>\n<h2><strong>こんな方におすすめ！</strong></h2>\n<ul>\n<li>DMMという企業に興味がある </li>\n<li>二次元コンテンツカルチャーに関心がある </li>\n<li>二次元コンテンツサービスを支える技術を知りたい </li>\n</ul>\n\n<h2><strong>タイムスケジュール</strong></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッションタイトル</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30~</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00~19:10</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10~19:15</td>\n<td style=\"text-align: left;\">LT①『コードを真にする ― 15年モノのプロダクトに秩序をもたらすまで』</td>\n<td>yachiy</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15~19:20</td>\n<td style=\"text-align: left;\">LT②『〜クリエイター向けシステムの品質向上の取り組みについて〜』</td>\n<td>小杉紘一</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20~19:25</td>\n<td style=\"text-align: left;\">LT③『保守運用チームで工夫していること』</td>\n<td>小澤孝幸</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:25~19:30</td>\n<td style=\"text-align: left;\">質疑・休憩</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30~19:35</td>\n<td style=\"text-align: left;\">LT④『二次元コンテンツ開発のManagerって、あなた何をされてる方なの？』</td>\n<td>芦田圭輔</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35~19:40</td>\n<td style=\"text-align: left;\">LT⑤『リリース高速化検討会は何故成果を出せたのか？』</td>\n<td>山本佑也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40~19:45</td>\n<td style=\"text-align: left;\">LT⑥『カバレッジの定点観測はいいぞ』</td>\n<td>桑原大輔</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45~19:50</td>\n<td style=\"text-align: left;\">質疑・休憩</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50~19:55</td>\n<td style=\"text-align: left;\">LT⑦『Axiosをfetchに置き換えての気づき』</td>\n<td>西野修史</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55~20:00</td>\n<td style=\"text-align: left;\">LT⑧『厚くなるコンテンツデータ デカ過ぎんだろ...』</td>\n<td>中野智彦</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00~20:05</td>\n<td style=\"text-align: left;\">LT⑨『キャンペーン期間中、SREは何を見ているか？』</td>\n<td>唐崎蓉子</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05~20:10</td>\n<td style=\"text-align: left;\">質疑・休憩</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10~20:55</td>\n<td style=\"text-align: left;\">懇親会 　軽食とお飲み物をご準備しております（途中退室可）</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55~21:00</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2><strong>会場アクセス</strong></h2>\n<p>DMM六本木オフィス　24階イベントスペース （東京都港区六本木三丁目2番1号 住友不動産六本木グランドタワー24階）</p>\n<p>【最寄り駅】</p>\n<ul>\n<li>南北線「六本木一丁目駅」西口改札直結</li>\n<li>日比谷線・大江戸線「六本木駅」より徒歩5分</li>\n<li>銀座線・南北線・丸ノ内線「溜池山王駅（国会議事堂前駅）」より徒歩8分</li>\n</ul>\n<p>入館に関する案内は、開催までにconnpassを通じてご連絡させていただきます。</p><p></p>\n<p><a href=\"https://inside.dmm.com/articles/dmm-office/\" rel=\"nofollow\">DMM本社オフィスへの行き方</a> </p><p></p>\n<h2><strong>カジュアル面談のお知らせ</strong></h2>\n<p>▼イベント開催部署 部長 鷹羽さんのカジュアル面談はこちら▼\n<a href=\"https://pitta.me/matches/QbXoDwORqszC\" rel=\"nofollow\"><img alt=\"\" src=\"https://res.cloudinary.com/meety-inc/image/upload/v1707362160/meety/prod/ogp_images/mvmedxxjqgspkldwv0yq.png\"></a>\n<a href=\"https://pitta.me/matches/QbXoDwORqszC\" rel=\"nofollow\">https://pitta.me/matches/QbXoDwORqszC</a></p>\n<h2><strong>注意事項</strong></h2>\n<ul>\n<li>営業・採用・勧誘活動を目的とする参加はご遠慮ください</li>\n<li>急遽参加が難しくなった場合、早めにキャンセルのご連絡をくださいますようお願い申し上げます</li>\n<li>イベントは止むを得ず中止させていただく場合がございます。その場合、別途connpassを通じてご連絡させていただきます</li>\n<li>当日の様子の写真をウェブサイトやSNSで公開する可能性があります。</li>\n</ul>",
+      "url": "https://dmm.connpass.com/event/402634/",
+      "image_url": "https://media.connpass.com/thumbs/af/b9/afb99e323b2450a4bb1ff39d18eb27d8.png",
+      "hash_tag": "dmm_niji",
+      "started_at": "2026-09-02T19:00:00+09:00",
+      "ended_at": "2026-09-02T21:00:00+09:00",
+      "published_at": "2026-08-14T14:24:51+09:00",
+      "limit": 60,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 3866,
+        "subdomain": "dmm",
+        "title": "DMM.com",
+        "url": "https://dmm.connpass.com/"
+      },
+      "address": "東京都港区六本木3-2-1 住友不動産六本木グランドタワー24階",
+      "place": "DMM.com",
+      "lat": "35.664586900000",
+      "lon": "139.737777600000",
+      "owner_id": 1040350,
+      "owner_nickname": "ozaki-kota",
+      "owner_display_name": "Kouta Ozaki",
+      "accepted": 52,
+      "waiting": 0,
+      "updated_at": "2026-08-31T11:31:15+09:00"
+    },
+    {
       "id": 402836,
       "title": "コーディングのためのローカルLLM勉強会 in 東京",
       "catch": "",
@@ -97,37 +128,6 @@
       "updated_at": "2026-08-07T22:07:58+09:00"
     },
     {
-      "id": 402634,
-      "title": "DMM 二次元コンテンツ Tech Meetup #2",
-      "catch": "〜 急成長する大規模ECサイトを支える技術 〜",
-      "description": "<h2><strong>DMM 二次元コンテンツ Tech Meetup #2 〜 急成長する大規模ECサイトを支える技術 〜</strong></h2>\n<p><strong>DMM 二次元コンテンツ Tech Meetup #2 〜 急成長する大規模ECサイトを支える技術 〜</strong>は、\n二次元コンテンツサービスを支える技術と開発部の文化をより多くの方に知っていただくため、エンジニアや開発チームが登壇するイベントです。</p>\n<h2><strong>開催概要</strong></h2>\n<ul>\n<li>開催日時：2026年09月02日(水) 19:00-21:00（開場 18:30）</li>\n<li>開催場所：DMM六本木オフィス</li>\n<li>参加費：無料</li>\n</ul>\n<h2><strong>こんな方におすすめ！</strong></h2>\n<ul>\n<li>DMMという企業に興味がある </li>\n<li>二次元コンテンツカルチャーに関心がある </li>\n<li>二次元コンテンツサービスを支える技術を知りたい </li>\n</ul>\n\n<h2><strong>タイムスケジュール</strong></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッションタイトル</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30~</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00~19:10</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10~19:15</td>\n<td style=\"text-align: left;\">LT①『コードを真にする ― 15年モノのプロダクトに秩序をもたらすまで』</td>\n<td>yachiy</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15~19:20</td>\n<td style=\"text-align: left;\">LT②『〜クリエイター向けシステムの品質向上の取り組みについて〜』</td>\n<td>小杉紘一</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20~19:25</td>\n<td style=\"text-align: left;\">LT③『保守運用チームで工夫していること』</td>\n<td>小澤孝幸</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:25~19:30</td>\n<td style=\"text-align: left;\">質疑・休憩</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30~19:35</td>\n<td style=\"text-align: left;\">LT④『二次元コンテンツ開発のManagerって、あなた何をされてる方なの？』</td>\n<td>芦田圭輔</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35~19:40</td>\n<td style=\"text-align: left;\">LT⑤『リリース高速化検討会は何故成果を出せたのか？』</td>\n<td>山本佑也</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40~19:45</td>\n<td style=\"text-align: left;\">LT⑥『カバレッジの定点観測はいいぞ』</td>\n<td>桑原大輔</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45~19:50</td>\n<td style=\"text-align: left;\">質疑・休憩</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50~19:55</td>\n<td style=\"text-align: left;\">LT⑦『Axiosをfetchに置き換えての気づき』</td>\n<td>西野修史</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55~20:00</td>\n<td style=\"text-align: left;\">LT⑧『厚くなるコンテンツデータ デカ過ぎんだろ...』</td>\n<td>中野智彦</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00~20:05</td>\n<td style=\"text-align: left;\">LT⑨『キャンペーン期間中、SREは何を見ているか？』</td>\n<td>唐崎蓉子</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05~20:10</td>\n<td style=\"text-align: left;\">質疑・休憩</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10~20:55</td>\n<td style=\"text-align: left;\">懇親会 　軽食とお飲み物をご準備しております（途中退室可）</td>\n<td></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55~21:00</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2><strong>会場アクセス</strong></h2>\n<p>DMM六本木オフィス　24階イベントスペース （東京都港区六本木三丁目2番1号 住友不動産六本木グランドタワー24階）</p>\n<p>【最寄り駅】</p>\n<ul>\n<li>南北線「六本木一丁目駅」西口改札直結</li>\n<li>日比谷線・大江戸線「六本木駅」より徒歩5分</li>\n<li>銀座線・南北線・丸ノ内線「溜池山王駅（国会議事堂前駅）」より徒歩8分</li>\n</ul>\n<p>入館に関する案内は、開催までにconnpassを通じてご連絡させていただきます。</p><p></p>\n<p><a href=\"https://inside.dmm.com/articles/dmm-office/\" rel=\"nofollow\">DMM本社オフィスへの行き方</a> </p><p></p>\n<h2><strong>カジュアル面談のお知らせ</strong></h2>\n<p>▼イベント開催部署 部長 鷹羽さんのカジュアル面談はこちら▼\n<a href=\"https://pitta.me/matches/QbXoDwORqszC\" rel=\"nofollow\"><img alt=\"\" src=\"https://res.cloudinary.com/meety-inc/image/upload/v1707362160/meety/prod/ogp_images/mvmedxxjqgspkldwv0yq.png\"></a>\n<a href=\"https://pitta.me/matches/QbXoDwORqszC\" rel=\"nofollow\">https://pitta.me/matches/QbXoDwORqszC</a></p>\n<h2><strong>注意事項</strong></h2>\n<ul>\n<li>営業・採用・勧誘活動を目的とする参加はご遠慮ください</li>\n<li>急遽参加が難しくなった場合、早めにキャンセルのご連絡をくださいますようお願い申し上げます</li>\n<li>イベントは止むを得ず中止させていただく場合がございます。その場合、別途connpassを通じてご連絡させていただきます</li>\n<li>当日の様子の写真をウェブサイトやSNSで公開する可能性があります。</li>\n</ul>",
-      "url": "https://dmm.connpass.com/event/402634/",
-      "image_url": "https://media.connpass.com/thumbs/af/b9/afb99e323b2450a4bb1ff39d18eb27d8.png",
-      "hash_tag": "dmm_niji",
-      "started_at": "2026-09-02T19:00:00+09:00",
-      "ended_at": "2026-09-02T21:00:00+09:00",
-      "published_at": "2026-08-14T14:24:51+09:00",
-      "limit": 60,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 3866,
-        "subdomain": "dmm",
-        "title": "DMM.com",
-        "url": "https://dmm.connpass.com/"
-      },
-      "address": "東京都港区六本木3-2-1 住友不動産六本木グランドタワー24階",
-      "place": "DMM.com",
-      "lat": "35.664586900000",
-      "lon": "139.737777600000",
-      "owner_id": 1040350,
-      "owner_nickname": "ozaki-kota",
-      "owner_display_name": "Kouta Ozaki",
-      "accepted": 53,
-      "waiting": 0,
-      "updated_at": "2026-08-31T11:31:15+09:00"
-    },
-    {
       "id": 403384,
       "title": "Platform Engineering Meetup #16",
       "catch": "Backstageで広げる、AI時代の開発者プラットフォーム",
@@ -154,7 +154,7 @@
       "owner_id": 233546,
       "owner_nickname": "kameneko",
       "owner_display_name": "かめねこ / 仲亀 拓馬",
-      "accepted": 205,
+      "accepted": 209,
       "waiting": 0,
       "updated_at": "2026-08-25T01:40:59+09:00"
     },
@@ -216,7 +216,7 @@
       "owner_id": 757828,
       "owner_nickname": "kana223",
       "owner_display_name": "kana223",
-      "accepted": 137,
+      "accepted": 138,
       "waiting": 0,
       "updated_at": "2026-08-24T11:00:50+09:00"
     },
