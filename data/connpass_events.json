@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-02T09:43:02.557274+09:00",
+  "fetched_at": "2026-09-02T14:18:20.280981+09:00",
   "date": "20260902",
   "count": 8,
   "events": [
@@ -7,7 +7,7 @@
       "id": 404216,
       "title": "[4] OneLake Deep Dive [2026-09]",
       "catch": "MDPJP Deep Dive Series",
-      "description": "<h1><strong>Japan Microsoft Data Platform User Group</strong></h1>\n<hr>\n<p><a href=\"https://sqlserver.connpass.com/\" rel=\"nofollow\">Japan Microsoft Data Platform User Group</a>は、SQL Server、Microsoft Fabric、Azure Data Platformに関する技術情報をテーマにした勉強会を開催しているコミュニティです。</p>\n<h1><strong>Japan Microsoft Data Platform User Group Slack</strong></h1>\n<hr>\n<p><br><a href=\"https://join.slack.com/t/jssug-sqlserver/shared_invite/zt-n5r5n88h-JZgmtyYEaPErE1PxX5xxhQ\" rel=\"nofollow\">Join Japan Microsoft Data Platform User Group Slack</a><br></p>\n<h1><strong>Survey</strong></h1>\n<hr>\n<p>参加者の方は必ずアンケートの記入をお願い致します。\n<br><a href=\"https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=kvggwT3oLU22Y816du_E6qe2JTn0_rRHkn-NpHOUjLNURTZMUktNNzI2VEFDNE1QTVJSVFBQMkRaWS4u\" rel=\"nofollow\">アンケート記入用のURL</a><br></p>\n<h1><strong>Twitter</strong></h1>\n<hr>\n<p>Twitterに、必ず#MDPJPを付けて、投稿をお願い致します。\n<br><a href=\"https://twitter.com/intent/tweet?hashtags=MDPJP\" rel=\"nofollow\">ワンクリックで投稿</a><br></p>\n<h1><strong>OneLake Deep Dive</strong></h1>\n<hr>\n<p>こちらのDeep Dive Seriesでは、OneLake に関する情報共有および学びの目的で、1か月か2か月ペースで開催します。</p>\n<p><br><a href=\"https://learn.microsoft.com/en-us/fabric/onelake/\" rel=\"nofollow\">OneLake in Microsoft Fabric documentation</a><br></p>\n<h1><strong>内容(タイムテーブル)</strong></h1>\n<hr>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>時間(分)</th>\n<th>セッション</th>\n<th>録音録画</th>\n<th>スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:30～</td>\n<td>60</td>\n<td>OneLake セキュリティの基礎からData Agentとの組み合わせまで（仮） </td>\n<td>録画未定</td>\n<td><a href=\"https://connpass.com/user/r-otake/\" rel=\"nofollow\">Reiji Otake</a></td>\n</tr>\n</tbody>\n</table>\n<p>※都合による変更する場合はあります。あらかじめにご了承ください。</p>\n<h1><strong>会場</strong></h1>\n<hr>\n<p>Microsoft Teams Online</p>\n<h1><strong>Deep Dive Series Leader 募集</strong></h1>\n<hr>\n<p>Deep Dive Seriesを担当する Leaderを募集しております。ご興味がある方は、Slack で、Yang までにご連絡ください。</p>\n<h1><strong>Youtubeチャンネル</strong></h1>\n<hr>\n<p><a href=\"https://www.youtube.com/@msfabricreijiotake/videos\" rel=\"nofollow\">Microsoft Fabric 学習チャンネル 大竹礼二 Reiji Otake</a><br>\n<a href=\"https://www.youtube.com/@DataAnalyticsArchive\" rel=\"nofollow\">Data Analytics Archive</a> </p>\n<h1><strong>Qiita記事</strong></h1>\n<hr>\n<p><a href=\"https://qiita.com/ReijiOtake\" rel=\"nofollow\">Reiji Otake</a><br>\n<a href=\"https://qiita.com/satoshi_enomoto\" rel=\"nofollow\">Satoshi ENOMOTO</a></p>",
+      "description": "<h1><strong>Japan Microsoft Data Platform User Group</strong></h1>\n<hr>\n<p><a href=\"https://sqlserver.connpass.com/\" rel=\"nofollow\">Japan Microsoft Data Platform User Group</a>は、SQL Server、Microsoft Fabric、Azure Data Platformに関する技術情報をテーマにした勉強会を開催しているコミュニティです。</p>\n<h1><strong>Japan Microsoft Data Platform User Group Slack</strong></h1>\n<hr>\n<p><br><a href=\"https://join.slack.com/t/jssug-sqlserver/shared_invite/zt-n5r5n88h-JZgmtyYEaPErE1PxX5xxhQ\" rel=\"nofollow\">Join Japan Microsoft Data Platform User Group Slack</a><br></p>\n<h1><strong>Survey</strong></h1>\n<hr>\n<p>参加者の方は必ずアンケートの記入をお願い致します。\n<br><a href=\"https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=kvggwT3oLU22Y816du_E6qe2JTn0_rRHkn-NpHOUjLNURTZMUktNNzI2VEFDNE1QTVJSVFBQMkRaWS4u\" rel=\"nofollow\">アンケート記入用のURL</a><br></p>\n<h1><strong>Twitter</strong></h1>\n<hr>\n<p>Twitterに、必ず#MDPJPを付けて、投稿をお願い致します。\n<br><a href=\"https://twitter.com/intent/tweet?hashtags=MDPJP\" rel=\"nofollow\">ワンクリックで投稿</a><br></p>\n<h1><strong>OneLake Deep Dive</strong></h1>\n<hr>\n<p>こちらのDeep Dive Seriesでは、OneLake に関する情報共有および学びの目的で、1か月か2か月ペースで開催します。</p>\n<p><br><a href=\"https://learn.microsoft.com/en-us/fabric/onelake/\" rel=\"nofollow\">OneLake in Microsoft Fabric documentation</a><br></p>\n<h1><strong>内容(タイムテーブル)</strong></h1>\n<hr>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>時間(分)</th>\n<th>セッション</th>\n<th>録音録画</th>\n<th>スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:30～</td>\n<td>60</td>\n<td>OneLake Security × Data Agent -AI時代だからこそ考えたい、データアクセスと権限制御-</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td>録画未定</td>\n<td><a href=\"https://connpass.com/user/r-otake/\" rel=\"nofollow\">Reiji Otake</a></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※都合による変更する場合はあります。あらかじめにご了承ください。</p>\n<h1><strong>会場</strong></h1>\n<hr>\n<p>Microsoft Teams Online</p>\n<h1><strong>Deep Dive Series Leader 募集</strong></h1>\n<hr>\n<p>Deep Dive Seriesを担当する Leaderを募集しております。ご興味がある方は、Slack で、Yang までにご連絡ください。</p>\n<h1><strong>Youtubeチャンネル</strong></h1>\n<hr>\n<p><a href=\"https://www.youtube.com/@msfabricreijiotake/videos\" rel=\"nofollow\">Microsoft Fabric 学習チャンネル 大竹礼二 Reiji Otake</a><br>\n<a href=\"https://www.youtube.com/@DataAnalyticsArchive\" rel=\"nofollow\">Data Analytics Archive</a> </p>\n<h1><strong>Qiita記事</strong></h1>\n<hr>\n<p><a href=\"https://qiita.com/ReijiOtake\" rel=\"nofollow\">Reiji Otake</a><br>\n<a href=\"https://qiita.com/satoshi_enomoto\" rel=\"nofollow\">Satoshi ENOMOTO</a></p>",
       "url": "https://sqlserver.connpass.com/event/404216/",
       "image_url": "https://media.connpass.com/thumbs/2c/13/2c13528bde2de6aafc790acc02e7ebcc.png",
       "hash_tag": "MDPJP",
@@ -30,9 +30,9 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 23,
+      "accepted": 24,
       "waiting": 0,
-      "updated_at": "2026-08-18T20:11:02+09:00"
+      "updated_at": "2026-09-02T10:50:51+09:00"
     },
     {
       "id": 401339,
@@ -61,8 +61,8 @@
       "owner_id": 8681,
       "owner_nickname": "ryo_adachi_18",
       "owner_display_name": "adachin0817",
-      "accepted": 60,
-      "waiting": 3,
+      "accepted": 62,
+      "waiting": 1,
       "updated_at": "2026-09-02T00:19:39+09:00"
     },
     {
@@ -92,7 +92,7 @@
       "owner_id": 1040350,
       "owner_nickname": "ozaki-kota",
       "owner_display_name": "Kouta Ozaki",
-      "accepted": 52,
+      "accepted": 54,
       "waiting": 0,
       "updated_at": "2026-08-31T11:31:15+09:00"
     },
@@ -123,8 +123,8 @@
       "owner_id": 992252,
       "owner_nickname": "myamate_ly",
       "owner_display_name": "myamate_ly",
-      "accepted": 110,
-      "waiting": 12,
+      "accepted": 109,
+      "waiting": 7,
       "updated_at": "2026-08-07T22:07:58+09:00"
     },
     {
@@ -154,7 +154,7 @@
       "owner_id": 233546,
       "owner_nickname": "kameneko",
       "owner_display_name": "かめねこ / 仲亀 拓馬",
-      "accepted": 209,
+      "accepted": 224,
       "waiting": 0,
       "updated_at": "2026-08-25T01:40:59+09:00"
     },
@@ -185,7 +185,7 @@
       "owner_id": 1888,
       "owner_nickname": "kaorun55",
       "owner_display_name": "中村 薫",
-      "accepted": 4,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-09-01T15:50:27+09:00"
     },
@@ -216,7 +216,7 @@
       "owner_id": 757828,
       "owner_nickname": "kana223",
       "owner_display_name": "kana223",
-      "accepted": 138,
+      "accepted": 132,
       "waiting": 0,
       "updated_at": "2026-08-24T11:00:50+09:00"
     },
