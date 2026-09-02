@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-02T14:18:20.280981+09:00",
+  "fetched_at": "2026-09-02T19:18:13.158723+09:00",
   "date": "20260902",
   "count": 8,
   "events": [
@@ -7,7 +7,7 @@
       "id": 404216,
       "title": "[4] OneLake Deep Dive [2026-09]",
       "catch": "MDPJP Deep Dive Series",
-      "description": "<h1><strong>Japan Microsoft Data Platform User Group</strong></h1>\n<hr>\n<p><a href=\"https://sqlserver.connpass.com/\" rel=\"nofollow\">Japan Microsoft Data Platform User Group</a>は、SQL Server、Microsoft Fabric、Azure Data Platformに関する技術情報をテーマにした勉強会を開催しているコミュニティです。</p>\n<h1><strong>Japan Microsoft Data Platform User Group Slack</strong></h1>\n<hr>\n<p><br><a href=\"https://join.slack.com/t/jssug-sqlserver/shared_invite/zt-n5r5n88h-JZgmtyYEaPErE1PxX5xxhQ\" rel=\"nofollow\">Join Japan Microsoft Data Platform User Group Slack</a><br></p>\n<h1><strong>Survey</strong></h1>\n<hr>\n<p>参加者の方は必ずアンケートの記入をお願い致します。\n<br><a href=\"https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=kvggwT3oLU22Y816du_E6qe2JTn0_rRHkn-NpHOUjLNURTZMUktNNzI2VEFDNE1QTVJSVFBQMkRaWS4u\" rel=\"nofollow\">アンケート記入用のURL</a><br></p>\n<h1><strong>Twitter</strong></h1>\n<hr>\n<p>Twitterに、必ず#MDPJPを付けて、投稿をお願い致します。\n<br><a href=\"https://twitter.com/intent/tweet?hashtags=MDPJP\" rel=\"nofollow\">ワンクリックで投稿</a><br></p>\n<h1><strong>OneLake Deep Dive</strong></h1>\n<hr>\n<p>こちらのDeep Dive Seriesでは、OneLake に関する情報共有および学びの目的で、1か月か2か月ペースで開催します。</p>\n<p><br><a href=\"https://learn.microsoft.com/en-us/fabric/onelake/\" rel=\"nofollow\">OneLake in Microsoft Fabric documentation</a><br></p>\n<h1><strong>内容(タイムテーブル)</strong></h1>\n<hr>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>時間(分)</th>\n<th>セッション</th>\n<th>録音録画</th>\n<th>スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:30～</td>\n<td>60</td>\n<td>OneLake Security × Data Agent -AI時代だからこそ考えたい、データアクセスと権限制御-</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td>録画未定</td>\n<td><a href=\"https://connpass.com/user/r-otake/\" rel=\"nofollow\">Reiji Otake</a></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※都合による変更する場合はあります。あらかじめにご了承ください。</p>\n<h1><strong>会場</strong></h1>\n<hr>\n<p>Microsoft Teams Online</p>\n<h1><strong>Deep Dive Series Leader 募集</strong></h1>\n<hr>\n<p>Deep Dive Seriesを担当する Leaderを募集しております。ご興味がある方は、Slack で、Yang までにご連絡ください。</p>\n<h1><strong>Youtubeチャンネル</strong></h1>\n<hr>\n<p><a href=\"https://www.youtube.com/@msfabricreijiotake/videos\" rel=\"nofollow\">Microsoft Fabric 学習チャンネル 大竹礼二 Reiji Otake</a><br>\n<a href=\"https://www.youtube.com/@DataAnalyticsArchive\" rel=\"nofollow\">Data Analytics Archive</a> </p>\n<h1><strong>Qiita記事</strong></h1>\n<hr>\n<p><a href=\"https://qiita.com/ReijiOtake\" rel=\"nofollow\">Reiji Otake</a><br>\n<a href=\"https://qiita.com/satoshi_enomoto\" rel=\"nofollow\">Satoshi ENOMOTO</a></p>",
+      "description": "<h1><strong>Japan Microsoft Data Platform User Group</strong></h1>\n<hr>\n<p><a href=\"https://sqlserver.connpass.com/\" rel=\"nofollow\">Japan Microsoft Data Platform User Group</a>は、SQL Server、Microsoft Fabric、Azure Data Platformに関する技術情報をテーマにした勉強会を開催しているコミュニティです。</p>\n<h1><strong>Japan Microsoft Data Platform User Group Slack</strong></h1>\n<hr>\n<p><br><a href=\"https://join.slack.com/t/jssug-sqlserver/shared_invite/zt-n5r5n88h-JZgmtyYEaPErE1PxX5xxhQ\" rel=\"nofollow\">Join Japan Microsoft Data Platform User Group Slack</a><br></p>\n<h1><strong>Survey</strong></h1>\n<hr>\n<p>参加者の方は必ずアンケートの記入をお願い致します。\n<br><a href=\"https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=kvggwT3oLU22Y816du_E6qe2JTn0_rRHkn-NpHOUjLNURTZMUktNNzI2VEFDNE1QTVJSVFBQMkRaWS4u\" rel=\"nofollow\">アンケート記入用のURL</a><br></p>\n<h1><strong>Twitter</strong></h1>\n<hr>\n<p>Twitterに、必ず#MDPJPを付けて、投稿をお願い致します。\n<br><a href=\"https://twitter.com/intent/tweet?hashtags=MDPJP\" rel=\"nofollow\">ワンクリックで投稿</a><br></p>\n<h1><strong>OneLake Deep Dive</strong></h1>\n<hr>\n<p>こちらのDeep Dive Seriesでは、OneLake に関する情報共有および学びの目的で、1か月か2か月ペースで開催します。</p>\n<p><br><a href=\"https://learn.microsoft.com/en-us/fabric/onelake/\" rel=\"nofollow\">OneLake in Microsoft Fabric documentation</a><br></p>\n<h1><strong>内容(タイムテーブル)</strong></h1>\n<hr>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>時間(分)</th>\n<th>セッション</th>\n<th>録音録画</th>\n<th>スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>20:00～</td>\n<td>60</td>\n<td>OneLake Security × Data Agent -AI時代だからこそ考えたい、データアクセスと権限制御- </td>\n<td>録画未定</td>\n<td><a href=\"https://connpass.com/user/r-otake/\" rel=\"nofollow\">Reiji Otake</a></td>\n</tr>\n</tbody>\n</table>\n<p>※都合による変更する場合はあります。あらかじめにご了承ください。</p>\n<h1><strong>会場</strong></h1>\n<hr>\n<p>Microsoft Teams Online</p>\n<h1><strong>Deep Dive Series Leader 募集</strong></h1>\n<hr>\n<p>Deep Dive Seriesを担当する Leaderを募集しております。ご興味がある方は、Slack で、Yang までにご連絡ください。</p>\n<h1><strong>Youtubeチャンネル</strong></h1>\n<hr>\n<p><a href=\"https://www.youtube.com/@msfabricreijiotake/videos\" rel=\"nofollow\">Microsoft Fabric 学習チャンネル 大竹礼二 Reiji Otake</a><br>\n<a href=\"https://www.youtube.com/@DataAnalyticsArchive\" rel=\"nofollow\">Data Analytics Archive</a> </p>\n<h1><strong>Qiita記事</strong></h1>\n<hr>\n<p><a href=\"https://qiita.com/ReijiOtake\" rel=\"nofollow\">Reiji Otake</a><br>\n<a href=\"https://qiita.com/satoshi_enomoto\" rel=\"nofollow\">Satoshi ENOMOTO</a></p>",
       "url": "https://sqlserver.connpass.com/event/404216/",
       "image_url": "https://media.connpass.com/thumbs/2c/13/2c13528bde2de6aafc790acc02e7ebcc.png",
       "hash_tag": "MDPJP",
@@ -32,7 +32,7 @@
       "owner_display_name": "Jiayi Yang",
       "accepted": 24,
       "waiting": 0,
-      "updated_at": "2026-09-02T10:50:51+09:00"
+      "updated_at": "2026-09-02T16:59:36+09:00"
     },
     {
       "id": 401339,
@@ -45,7 +45,7 @@
       "started_at": "2026-09-02T19:30:00+09:00",
       "ended_at": "2026-09-02T22:00:00+09:00",
       "published_at": "2026-07-24T11:52:30+09:00",
-      "limit": 67,
+      "limit": 77,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -58,12 +58,12 @@
       "place": "株式会社ハートビーツ",
       "lat": "35.690976000000",
       "lon": "139.712868500000",
-      "owner_id": 8681,
-      "owner_nickname": "ryo_adachi_18",
-      "owner_display_name": "adachin0817",
-      "accepted": 62,
-      "waiting": 1,
-      "updated_at": "2026-09-02T00:19:39+09:00"
+      "owner_id": 798186,
+      "owner_nickname": "mozumasu",
+      "owner_display_name": "もずます",
+      "accepted": 67,
+      "waiting": 0,
+      "updated_at": "2026-09-02T18:43:37+09:00"
     },
     {
       "id": 402634,
@@ -78,7 +78,7 @@
       "published_at": "2026-08-14T14:24:51+09:00",
       "limit": 60,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 3866,
         "subdomain": "dmm",
@@ -92,7 +92,7 @@
       "owner_id": 1040350,
       "owner_nickname": "ozaki-kota",
       "owner_display_name": "Kouta Ozaki",
-      "accepted": 54,
+      "accepted": 55,
       "waiting": 0,
       "updated_at": "2026-08-31T11:31:15+09:00"
     },
@@ -100,16 +100,16 @@
       "id": 402836,
       "title": "コーディングのためのローカルLLM勉強会 in 東京",
       "catch": "",
-      "description": "<h2>イベント概要</h2>\n<p>Kimi K3やDeepSeek V4などウェイト公開モデルもどんどん実用的になってきたので、コーディングをターゲットとしたローカルLLM勉強会を開催します。</p>\n<p>サムネイル画像のプロンプト(by Kimi K3 on cloud)</p>\n<blockquote>\n<p>Design and create a very creative, elaborate, and detailed voxel art scene of a pagoda in a beautiful garden with trees, including some cherry blossoms. Make the scene impressive and varied and use colorful voxels. Use whatever libraries to get this done but make sure I can paste it all into a single HTML file and open it in Chrome. <br>\nvia <a href=\"https://x.com/loktar00/status/2082336275177119771\" rel=\"nofollow\">https://x.com/loktar00/status/2082336275177119771</a></p>\n</blockquote>\n<h2>要項</h2>\n<ul>\n<li>📆 日時：9/2(水) 19:00〜21:00</li>\n<li>📍 場所：LINEヤフー株式会社 紀尾井町オフィス 17F </li>\n<li>💰 参加費：無料</li>\n</ul>\n<p>※ サテライト会場は、同一空間ですが障害物のためメインスクリーンや登壇者の直接視認が難しく、別途用意のディスプレイで資料のみの投影を見ていただくことになります。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\">　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05〜19:45</td>\n<td style=\"text-align: left;\">コーディングのためのローカルLLM基礎知識　</td>\n<td style=\"text-align: left;\">きしだ(LINEヤフー)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜20:00</td>\n<td style=\"text-align: left;\">DGX Sparkを2台つかっていろいろ動かす話</td>\n<td style=\"text-align: left;\">苑田 朝彰(レバレジーズ)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05〜20:15</td>\n<td style=\"text-align: left;\">マルチテナントLLMサーバー運用のつらいところ、それでもやるべき理由</td>\n<td style=\"text-align: left;\">Yiyang Zhan(LINEヤフー)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15〜21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※登壇者や登壇内容は変更される可能性があります</p>\n<h2>会場へのアクセス</h2>\n<p>LINEヤフー株式会社　紀尾井町オフィス<br>\n（東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー）</p>\n<p>→ 受付は紀尾井タワー2階カウンターに設置しております。</p>\n<p>東京メトロ南北線　「永田町駅」9a出口直結 東京メトロ半蔵門線　「永田町駅」7番出口より徒歩2分 東京メトロ丸の内線/銀座線　「赤坂見附駅」D出口より徒歩1分</p>\n<p>※駅からオフィス入口まで少し距離が離れておりますので、お時間に余裕をもってお越しください。</p>\n<h2>注意事項</h2>\n<p>本イベントの内容は、後日主催団体のブログ等の媒体にて紹介する可能性があります。その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。</p>\n<p>技術交流が目的の勉強会ですので、知識の共有および参加者同士の交流を目的としない参加はお断りしています。</p>\n<p>事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いは、各社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想等についてお聞きする予定です。</p>\n<ul>\n<li><a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">LINEヤフー株式会社 プライバシーポリシー</a></li>\n</ul>\n<h2>アンチハラスメントポリシー</h2>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーキング、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。</p>\n<p>Tipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。 そのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h2>キャンセルポリシー</h2>\n<p>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。<br>\n参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</p>",
+      "description": "<h2>イベント概要</h2>\n<p>Kimi K3やDeepSeek V4などウェイト公開モデルもどんどん実用的になってきたので、コーディングをターゲットとしたローカルLLM勉強会を開催します。</p>\n<p>サムネイル画像のプロンプト(by Kimi K3 on cloud)</p>\n<blockquote>\n<p>Design and create a very creative, elaborate, and detailed voxel art scene of a pagoda in a beautiful garden with trees, including some cherry blossoms. Make the scene impressive and varied and use colorful voxels. Use whatever libraries to get this done but make sure I can paste it all into a single HTML file and open it in Chrome. <br>\nvia <a href=\"https://x.com/loktar00/status/2082336275177119771\" rel=\"nofollow\">https://x.com/loktar00/status/2082336275177119771</a></p>\n</blockquote>\n<h2>要項</h2>\n<ul>\n<li>📆 日時：9/2(水) 19:00〜21:00</li>\n<li>📍 場所：LINEヤフー株式会社 紀尾井町オフィス 17F </li>\n<li>💰 参加費：無料</li>\n</ul>\n<p>※ 当初サテライト会場として参加登録された方も、メイン会場のほうにお入りください。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n<td style=\"text-align: left;\">　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">　　</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05〜19:45</td>\n<td style=\"text-align: left;\">コーディングのためのローカルLLM基礎知識　</td>\n<td style=\"text-align: left;\">きしだ(LINEヤフー)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50〜20:00</td>\n<td style=\"text-align: left;\">DGX Sparkを2台つかっていろいろ動かす話</td>\n<td style=\"text-align: left;\">苑田 朝彰(レバレジーズ)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05〜20:15</td>\n<td style=\"text-align: left;\">マルチテナントLLMサーバー運用のつらいところ、それでもやるべき理由</td>\n<td style=\"text-align: left;\">Yiyang Zhan(LINEヤフー)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15〜21:00</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<p>※登壇者や登壇内容は変更される可能性があります</p>\n<h2>会場へのアクセス</h2>\n<p>LINEヤフー株式会社　紀尾井町オフィス<br>\n（東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー）</p>\n<p>→ 受付は紀尾井タワー2階カウンターに設置しております。</p>\n<p>東京メトロ南北線　「永田町駅」9a出口直結 東京メトロ半蔵門線　「永田町駅」7番出口より徒歩2分 東京メトロ丸の内線/銀座線　「赤坂見附駅」D出口より徒歩1分</p>\n<p>※駅からオフィス入口まで少し距離が離れておりますので、お時間に余裕をもってお越しください。</p>\n<h2>注意事項</h2>\n<p>本イベントの内容は、後日主催団体のブログ等の媒体にて紹介する可能性があります。その際、ご参加者名が写った画像（キャプチャなど）も紹介されることがあります。予めご了承ください。</p>\n<p>技術交流が目的の勉強会ですので、知識の共有および参加者同士の交流を目的としない参加はお断りしています。</p>\n<p>事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いは、各社のプライバシーポリシーに従って取り扱います。ご同意の上、ご参加ください。事後アンケートでは、匿名でイベント全体、各セッションの感想等についてお聞きする予定です。</p>\n<ul>\n<li><a href=\"https://www.lycorp.co.jp/ja/company/privacypolicy/\" rel=\"nofollow\">LINEヤフー株式会社 プライバシーポリシー</a></li>\n</ul>\n<h2>アンチハラスメントポリシー</h2>\n<p>ハラスメントとは、性差、性同一性と表現、性的指向、障害、外見や身体的特徴、人権、宗教、公共な場での性的な画像や類する表現、 脅迫、ストーキング、望まない撮影や録音、不適切な接触、およびそれらに関連した不快な言動が含まれます。 本イベントスタッフは、このイベントに関わる全員が気持ちよくご参加いただけるように、これらのハラスメント行為を許容しません。</p>\n<p>Tipsの内容やブログやSNSなどでの公開、コメントなどいただく際にも、これらハラスメント行為がないようご留意ください。 そのような行動を目にした方は、connpassの「イベントへのお問い合わせ」フォームからお知らせください。</p>\n<h2>キャンセルポリシー</h2>\n<p>予定が変更になり都合がつかなくなった場合には、速やかに参加のキャンセルをお願い致します。<br>\n参加目的が不適切だと判断される場合には、運営側で参加をキャンセルさせていただく場合がございます。</p>",
       "url": "https://lycorptech-jp.connpass.com/event/402836/",
       "image_url": "https://media.connpass.com/thumbs/02/9c/029c1835f9eeae73368d5788a605f3b9.png",
-      "hash_tag": "",
+      "hash_tag": "地元のLLM会",
       "started_at": "2026-09-02T19:00:00+09:00",
       "ended_at": "2026-09-02T21:00:00+09:00",
       "published_at": "2026-08-06T17:03:39+09:00",
-      "limit": 110,
+      "limit": 113,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14178,
         "subdomain": "lycorptech-jp",
@@ -120,12 +120,12 @@
       "place": "LINEヤフー株式会社 紀尾井町オフィス",
       "lat": "35.679992600000",
       "lon": "139.737936300000",
-      "owner_id": 992252,
-      "owner_nickname": "myamate_ly",
-      "owner_display_name": "myamate_ly",
-      "accepted": 109,
-      "waiting": 7,
-      "updated_at": "2026-08-07T22:07:58+09:00"
+      "owner_id": 979703,
+      "owner_nickname": "tokuni",
+      "owner_display_name": "tokuni_ly",
+      "accepted": 110,
+      "waiting": 0,
+      "updated_at": "2026-09-02T18:52:09+09:00"
     },
     {
       "id": 403384,
@@ -140,7 +140,7 @@
       "published_at": "2026-08-12T08:14:02+09:00",
       "limit": 550,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13424,
         "subdomain": "platformengineering",
@@ -151,12 +151,12 @@
       "place": "株式会社エーピーコミュニケーションズ",
       "lat": "35.693058300000",
       "lon": "139.772498900000",
-      "owner_id": 233546,
-      "owner_nickname": "kameneko",
-      "owner_display_name": "かめねこ / 仲亀 拓馬",
-      "accepted": 224,
+      "owner_id": 98309,
+      "owner_nickname": "Ishiawawa_pro",
+      "owner_display_name": "ishikawa akira",
+      "accepted": 256,
       "waiting": 0,
-      "updated_at": "2026-08-25T01:40:59+09:00"
+      "updated_at": "2026-09-02T18:24:21+09:00"
     },
     {
       "id": 404782,
@@ -171,7 +171,7 @@
       "published_at": "2026-08-26T15:55:04+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4212,
         "subdomain": "hololab",
@@ -202,7 +202,7 @@
       "published_at": "2026-06-04T19:41:32+09:00",
       "limit": 140,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11598,
         "subdomain": "flatt",
@@ -216,7 +216,7 @@
       "owner_id": 757828,
       "owner_nickname": "kana223",
       "owner_display_name": "kana223",
-      "accepted": 132,
+      "accepted": 126,
       "waiting": 0,
       "updated_at": "2026-08-24T11:00:50+09:00"
     },
@@ -233,7 +233,7 @@
       "published_at": "2026-08-08T10:11:34+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16393,
         "subdomain": "mat3ra",
