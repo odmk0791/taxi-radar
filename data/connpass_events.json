@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-04T19:16:04.351964+09:00",
+  "fetched_at": "2026-09-04T23:39:29.512880+09:00",
   "date": "20260904",
   "count": 11,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-09-04T00:40:58+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 9339,
         "subdomain": "cokonpile",
@@ -30,7 +30,7 @@
       "owner_id": 372148,
       "owner_nickname": "CoKoNPILe",
       "owner_display_name": "CoKoNPILe",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-09-04T00:40:58+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-08-06T20:36:00+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17440,
         "subdomain": "fresh-engineers",
@@ -78,7 +78,7 @@
       "published_at": "2026-07-27T23:22:05+09:00",
       "limit": 47,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15467,
         "subdomain": "mokumokutamagawa",
@@ -109,7 +109,7 @@
       "published_at": "2026-08-13T14:27:49+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 4071,
         "subdomain": "elv",
@@ -140,7 +140,7 @@
       "published_at": "2026-08-07T12:31:12+09:00",
       "limit": 27,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16523,
         "subdomain": "wakate-aws",
@@ -171,7 +171,7 @@
       "published_at": "2026-07-29T18:02:49+09:00",
       "limit": 36,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17931,
         "subdomain": "dosanko-dev",
@@ -202,7 +202,7 @@
       "published_at": "2026-08-24T16:03:35+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 11361,
         "subdomain": "3-shake",
@@ -233,7 +233,7 @@
       "published_at": "2026-08-04T21:45:55+09:00",
       "limit": 160,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17896,
         "subdomain": "w3c-japan",
@@ -249,7 +249,7 @@
       "owner_display_name": "Maki",
       "accepted": 146,
       "waiting": 0,
-      "updated_at": "2026-09-04T15:18:02+09:00"
+      "updated_at": "2026-09-04T19:26:00+09:00"
     },
     {
       "id": 404334,
@@ -264,7 +264,7 @@
       "published_at": "2026-08-20T18:20:59+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "新宿区早稲田鶴巻町513",
       "place": "早稲田大学 研究開発センター",
@@ -290,7 +290,7 @@
       "published_at": "2026-08-10T09:31:41+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 11028,
         "subdomain": "toragi",
