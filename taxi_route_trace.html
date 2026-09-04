@@ -380,6 +380,9 @@ td.cnt-cell,td.avg-cell{text-align:right;}
       <div class="leg-btn active" id="lb-ktn" onclick="toggleLeg('ktn',this)">
         <span style="width:10px;height:10px;border-radius:50%;background:#ee4455;flex-shrink:0;"></span>空転
       </div>
+      <div class="leg-btn active" id="lb-gps" onclick="toggleLeg('gps',this)">
+        <span style="width:16px;height:0;border-top:2px solid #aa66ff;flex-shrink:0;opacity:.7;"></span>GPS
+      </div>
     </div>
     <div id="trip-list"></div>
     <div id="status-bar">—</div>
@@ -400,11 +403,13 @@ const URL_DAILY='https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7
 const URL_BD='https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odntM8GhM4xHZwR3h1a4WKeWpt-4eLDczrGTTAVz8Bl49SI_c0jGEVrp0t_8iRMTN77A/pub?gid=0&single=true&output=csv';
 const URL_BREAK='https://docs.google.com/spreadsheets/d/e/2PACX-1vRQ2FcXX3nBh2gGAge5wNY-UFP76jXbHHyQl485_2aGSikdsNs8xHznpnM0Pwhxj82sxSWCJ-6tnXJs/pub?gid=0&single=true&output=csv';
 const URL_KUTEN='https://docs.google.com/spreadsheets/d/e/2PACX-1vTTYCG_9IrMI-g9yXrshVt6Jy6EXRVOlDSrelt_BgBI5qi5U9m240OrY7APtcEQyNFd3CXrvbqswE2_/pub?gid=0&single=true&output=csv';
+const GPS_BASE='https://odmk0791.github.io/taxi-radar/data/gps';
 const C_PW='乗車地：市区',C_PT='乗車地：地名',C_DW='降車地：市区',C_DT='降車地：地名';
 const C_TIME='乗車時間',C_FARE_B='料金',C_STATUS='ステータス',C_THX='サンキュー';
 
 let leafMap,coordMap=new Map(),bdCache=null,dailyCache=null,breakCache=null,kutenCache=null;
 let tripLayers=[],deadLayers=[],breakLayers=[],kutenLayers=[],activeN=null,showTrip=true,showDead=true;
+let gpsPolyline=null,showGps=true;
 let allDays=[];
 // 武三23区外アドレスのジオコーディングキャッシュ（セッション持続）
 const apiGeoCache=new Map();
@@ -659,6 +664,7 @@ function clearMap(){
   deadLayers.forEach(l=>l.remove());
   breakLayers.forEach(l=>l.remove());
   kutenLayers.forEach(l=>l.remove());
+  if(gpsPolyline){gpsPolyline.remove();gpsPolyline=null;}
   tripLayers=[];deadLayers=[];breakLayers=[];kutenLayers=[];activeN=null;
   document.getElementById('trip-list').innerHTML='';
 }
@@ -681,6 +687,9 @@ function toggleLeg(type,btn){
   } else if(type==='ktn'){
     showKtn=btn.classList.contains('active');
     kutenLayers.forEach(l=>l.setOpacity(showKtn ? 0.85 : 0));
+  } else if(type==='gps'){
+    showGps=btn.classList.contains('active');
+    if(gpsPolyline)gpsPolyline.setStyle({opacity:showGps ? 0.5 : 0});
   }
 }
 
@@ -1082,11 +1091,32 @@ async function loadRoute(dayInfo){
     if(bounds.length)leafMap.fitBounds(bounds,{padding:[50,50]});
 
     const unm=trips.filter(t=>!t.ok);
+    const gpsPins=trips.filter(t=>t.pcGPS||t.dcGPS).length;
     const stBar=document.getElementById('status-bar');
     let stMsg=`プロット: ${matched}/${trips.length}件`;
     if(unm.length)stMsg+=` | 未取得: `+unm.slice(0,2).map(t=>sl(t.pickup,9)).join(',');
     if(dayBreaks.length)stMsg+=` | 休憩: ${dayBreaks.length}件`;
     if(dayKuten.length)stMsg+=` | 空転: ${dayKuten.length}件`;
+
+    // ── GPS ロガーデータ読み込み・表示 ──────────────────
+    const gpsDate=`${y}-${String(mo).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    try{
+      const gpsRes=await fetch(`${GPS_BASE}/${gpsDate}.json`);
+      if(gpsRes.ok){
+        const gpsData=await gpsRes.json();
+        if(gpsData.points&&gpsData.points.length>0){
+          const latlngs=gpsData.points.map(p=>[p[1],p[2]]);
+          gpsPolyline=L.polyline(latlngs,{
+            color:'#aa66ff',weight:1.5,opacity:showGps?0.5:0,
+            smoothFactor:2
+          }).addTo(leafMap);
+          gpsPolyline.bringToBack();
+          stMsg+=` | GPS実測: ${gpsData.n_points}点`;
+        }
+      }
+    }catch(e){ /* GPS未取得は無視 */ }
+    if(gpsPins>0)stMsg+=` | ピン座標: ${gpsPins}件`;
+
     stBar.textContent=stMsg;
     stBar.className=matched>0?'ok':'ng';
     document.getElementById('map-loading').style.display='none';
