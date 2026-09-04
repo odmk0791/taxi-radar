@@ -86,6 +86,8 @@ td.cnt-cell,td.avg-cell{text-align:right;}
 .t-row.active{background:#1a1a40;border-left-color:#f5a000;}
 .t-row.no-map{opacity:.32;cursor:default;}
 .t-row.no-map:hover{background:transparent;border-left-color:transparent;}
+.t-row.partial{opacity:.75;} /* 乗車地のみ：やや薄いが操作可能 */
+.t-row.partial .t-num{background:#aa6600;}
 .t-num{width:22px;height:22px;min-width:22px;background:#f5a000;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   font-size:9px;font-weight:900;color:#000;margin-top:1px;flex-shrink:0;}
@@ -915,6 +917,7 @@ async function loadRoute(dayInfo){
       t.pc=t.pcGPS||getCoords(t.pickup);
       t.dc=t.dcGPS||getCoords(t.dropoff);
       t.ok=!!(t.pc&&t.dc);
+      t.partial=!!(t.pc&&!t.dc); // 乗車地のみ座標あり
     });
 
     // CSVにない住所（武三23区外・「その他」）をNominatim APIで補完
@@ -930,6 +933,7 @@ async function loadRoute(dayInfo){
         if(!t.pc&&apiGeoCache.get(t.pickup))t.pc=apiGeoCache.get(t.pickup);
         if(!t.dc&&apiGeoCache.get(t.dropoff))t.dc=apiGeoCache.get(t.dropoff);
         t.ok=!!(t.pc&&t.dc);
+        t.partial=!!(t.pc&&!t.dc);
       });
     }
 
@@ -1001,12 +1005,17 @@ async function loadRoute(dayInfo){
       const div=document.createElement('div');
       if(item.type==='trip'){
         const t=item.data;
-        div.className='t-row'+(t.ok?'':' no-map');div.id='tr-'+t.n;
+        // ok=両方あり, partial=乗車地のみ, no-map=どちらもなし
+        const cls=t.ok?'':t.partial?'partial':'no-map';
+        div.className='t-row'+(cls?' '+cls:'');div.id='tr-'+t.n;
+        const noMapLabel=t.partial
+          ?'<span style="font-size:8px;color:#aa6600;">降車地未取得</span>'
+          :'<span style="font-size:8px;color:#303050;">未取得</span>';
         div.innerHTML=`<div class="t-num">${t.n}</div><div class="t-body">
           <div class="t-loc"><span class="t-from">${sl(t.pickup)}</span><span class="t-arr">↓</span><span class="t-to">${sl(t.dropoff)}</span></div>
-          <div class="t-meta"><div class="t-fare">${pf(t.fare)}</div>${t.time?`<span class="t-time">${t.time}</span>`:''}${mkBadge(t.status,t.thx)}${!t.ok?'<span style="font-size:8px;color:#303050;">未取得</span>':''}</div>
+          <div class="t-meta"><div class="t-fare">${pf(t.fare)}</div>${t.time?`<span class="t-time">${t.time}</span>`:''}${mkBadge(t.status,t.thx)}${(!t.ok)?noMapLabel:''}</div>
         </div>`;
-        if(t.ok)div.addEventListener('click',()=>setActive(t.n));
+        if(t.ok||t.partial)div.addEventListener('click',()=>setActive(t.n));
       } else if(item.type==='brk'){
         const b=item.data;
         const hasLoc=!isNaN(b.lat)&&!isNaN(b.lng);
@@ -1040,7 +1049,7 @@ async function loadRoute(dayInfo){
         {color:'#00ccee',weight:1.5,opacity:showDead ? 0.65 : 0,dashArray:'6 9'}).addTo(leafMap);
       deadLayers.push(dl);
     }
-    // ── 地図：実車ライン＋マーカー ────────────────────────
+    // ── 地図：実車ライン＋マーカー（完全プロット） ────────
     const bounds=[];
     valid.forEach(t=>{
       const line=L.polyline([[t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]],
@@ -1052,6 +1061,14 @@ async function loadRoute(dayInfo){
       [line,pm,dm].forEach(e=>e.on('click',()=>setActive(t.n)));
       tripLayers.push({n:t.n,line,pm,dm});
       bounds.push([t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]);
+    });
+    // ── 地図：半プロット（乗車地のみ、橙色の◎マーカー） ──
+    trips.filter(t=>t.partial).forEach(t=>{
+      const pm=L.marker([t.pc.lat,t.pc.lng],{icon:iconP(t.n,false),opacity:showTrip?0.8:0}).addTo(leafMap)
+        .bindTooltip(`#${t.n} 乗：${t.pickup}（降車地未取得）`,{direction:'top'});
+      pm.on('click',()=>setActive(t.n));
+      tripLayers.push({n:t.n,line:null,pm,dm:null});
+      bounds.push([t.pc.lat,t.pc.lng]);
     });
 
     // ── 地図：休憩マーカー＋ライン（緯度経度がある場合のみ） ──
@@ -1090,10 +1107,12 @@ async function loadRoute(dayInfo){
 
     if(bounds.length)leafMap.fitBounds(bounds,{padding:[50,50]});
 
-    const unm=trips.filter(t=>!t.ok);
+    const unm=trips.filter(t=>!t.ok&&!t.partial);
+    const partial=trips.filter(t=>t.partial);
     const gpsPins=trips.filter(t=>t.pcGPS||t.dcGPS).length;
     const stBar=document.getElementById('status-bar');
-    let stMsg=`プロット: ${matched}/${trips.length}件`;
+    let stMsg=`プロット: ${matched+(partial.length)}/${trips.length}件`;
+    if(partial.length)stMsg+=`（乗車地のみ: ${partial.length}件）`;
     if(unm.length)stMsg+=` | 未取得: `+unm.slice(0,2).map(t=>sl(t.pickup,9)).join(',');
     if(dayBreaks.length)stMsg+=` | 休憩: ${dayBreaks.length}件`;
     if(dayKuten.length)stMsg+=` | 空転: ${dayKuten.length}件`;
