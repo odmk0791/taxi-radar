@@ -380,9 +380,6 @@ td.cnt-cell,td.avg-cell{text-align:right;}
       <div class="leg-btn active" id="lb-ktn" onclick="toggleLeg('ktn',this)">
         <span style="width:10px;height:10px;border-radius:50%;background:#ee4455;flex-shrink:0;"></span>空転
       </div>
-      <div class="leg-btn active" id="gps-mode-btn" onclick="toggleGpsMode()" style="display:none;margin-left:auto;color:#c0a040;border-color:#5a4a20;">
-        GPS: フル
-      </div>
     </div>
     <div id="trip-list"></div>
     <div id="status-bar">—</div>
@@ -408,17 +405,6 @@ const C_TIME='乗車時間',C_FARE_B='料金',C_STATUS='ステータス',C_THX='
 
 let leafMap,coordMap=new Map(),bdCache=null,dailyCache=null,breakCache=null,kutenCache=null;
 let tripLayers=[],deadLayers=[],breakLayers=[],kutenLayers=[],activeN=null,showTrip=true,showDead=true;
-let gpsLayers=[],gpsActive=false; // GPS実測軌跡(data/gps/YYYY-MM-DD.json がある日のみ)
-let gpsMode='full'; // 'full'=実車もGPS軌跡 / 'idle'=実車は従来の直線、空車のみGPS
-let currentDay=null;
-function toggleGpsMode(){
-  gpsMode=(gpsMode==='full')?'idle':'full';
-  const b=document.getElementById('gps-mode-btn');
-  if(b)b.textContent='GPS: '+(gpsMode==='full'?'フル':'空車のみ');
-  if(currentDay)loadRoute(currentDay);
-}
-// GPS日の実車OD直線の透明度(フルGPS時は薄く、空車のみモードでは従来通り主役)
-function odOpacity(){return showTrip?((gpsActive&&gpsMode==='full')?0.2:0.75):0;}
 let allDays=[];
 // 武三23区外アドレスのジオコーディングキャッシュ（セッション持続）
 const apiGeoCache=new Map();
@@ -640,7 +626,7 @@ function setActive(n){
     document.getElementById('tr-'+activeN)?.classList.remove('active');
     const p=tripLayers.find(l=>l.n===activeN);
     if(p){
-      if(p.line)p.line.setStyle({color:'#f5a000',weight:3,opacity:odOpacity()});
+      if(p.line)p.line.setStyle({color:'#f5a000',weight:3,opacity:showTrip ? 0.75 : 0});
       if(p.pm)p.pm.setIcon(iconP(activeN,false));
       if(p.dm)p.dm.setIcon(iconD(false));
     }
@@ -673,8 +659,7 @@ function clearMap(){
   deadLayers.forEach(l=>l.remove());
   breakLayers.forEach(l=>l.remove());
   kutenLayers.forEach(l=>l.remove());
-  gpsLayers.forEach(g=>g.line.remove());
-  tripLayers=[];deadLayers=[];breakLayers=[];kutenLayers=[];gpsLayers=[];gpsActive=false;activeN=null;
+  tripLayers=[];deadLayers=[];breakLayers=[];kutenLayers=[];activeN=null;
   document.getElementById('trip-list').innerHTML='';
 }
 let showBrk=true,showKtn=true;
@@ -683,22 +668,16 @@ function toggleLeg(type,btn){
   if(type==='trip'){
     showTrip=btn.classList.contains('active');
     tripLayers.forEach(l=>{
-      if(l.line)l.line.setStyle({opacity:odOpacity()});
+      if(l.line)l.line.setOpacity(showTrip ? 0.6 : 0);
       if(l.pm)l.pm.setOpacity(showTrip ? 1 : 0);
       if(l.dm)l.dm.setOpacity(showTrip ? 1 : 0);
     });
-    gpsLayers.filter(g=>g.type==='ride').forEach(g=>g.line.setStyle({opacity:showTrip?0.85:0}));
   } else if(type==='dead'){
     showDead=btn.classList.contains('active');
-    deadLayers.forEach(l=>l.setStyle({opacity:showDead ? 0.65 : 0}));
-    gpsLayers.filter(g=>g.type==='idle').forEach(g=>g.line.setStyle({opacity:showDead?0.7:0}));
+    deadLayers.forEach(l=>l.setOpacity(showDead ? 0.4 : 0));
   } else if(type==='brk'){
     showBrk=btn.classList.contains('active');
-    breakLayers.forEach(l=>{
-      if(l.setStyle&&l instanceof L.Polyline)l.setStyle({opacity:showBrk?0.65:0});
-      else if(l.setOpacity)l.setOpacity(showBrk?1:0);
-    });
-    gpsLayers.filter(g=>g.type==='brk').forEach(g=>g.line.setStyle({opacity:showBrk?0.65:0}));
+    breakLayers.forEach(l=>l.setOpacity(showBrk ? 0.65 : 0));
   } else if(type==='ktn'){
     showKtn=btn.classList.contains('active');
     kutenLayers.forEach(l=>l.setOpacity(showKtn ? 0.85 : 0));
@@ -709,45 +688,6 @@ function toggleLeg(type,btn){
 function timeToMin(s){
   const m=String(s||'').match(/(\d+):(\d+)/);
   return m?+m[1]*60+ +m[2]:-1;
-}
-// 2点間距離(m)
-function distM(lat1,lng1,lat2,lng2){
-  const r=Math.PI/180,dLat=(lat2-lat1)*r,dLng=(lng2-lng1)*r;
-  const a=Math.sin(dLat/2)**2+Math.cos(lat1*r)*Math.cos(lat2*r)*Math.sin(dLng/2)**2;
-  return 6371000*2*Math.asin(Math.sqrt(a));
-}
-// GPS点列を 実車(ride)/休憩(brk)/空車(idle) に分類
-// pts: [[出番日0時からの秒,lat,lng],...]  時刻昇順
-function classifyGps(pts,trips,breaks){
-  const cls=new Array(pts.length).fill('idle');
-  const tripN=new Array(pts.length).fill(0);
-  // 休憩ウィンドウ
-  breaks.forEach(b=>{
-    const s=b.startMin*60;
-    let e=timeToMin(b.end)*60;
-    if(e<=s&&b.mins>0)e=s+b.mins*60;
-    if(e<=s)return;
-    for(let i=0;i<pts.length;i++){
-      if(pts[i][0]>e)break;
-      if(pts[i][0]>=s)cls[i]='brk';
-    }
-  });
-  // 実車: 乗車時間〜降車時間の窓で確定。降車時間が無い行のみ降車地到達で推定
-  const seq=trips.filter(t=>t.ok&&t.startMin>=0).sort((a,b)=>a.startMin-b.startMin);
-  seq.forEach((t,ti)=>{
-    const s=t.startMin*60;
-    const next=seq[ti+1];
-    const hardEnd=(t.endMin>t.startMin)?t.endMin*60:null;
-    const limit=hardEnd!==null?Math.min(hardEnd,next?next.startMin*60:hardEnd)
-                              :(next?next.startMin*60:s+3*3600);
-    for(let i=0;i<pts.length;i++){
-      if(pts[i][0]<s)continue;
-      if(pts[i][0]>limit)break;
-      cls[i]='ride';tripN[i]=t.n;
-      if(hardEnd===null&&pts[i][0]>s+120&&distM(pts[i][1],pts[i][2],t.dc.lat,t.dc.lng)<(t.dg?150:250))break;
-    }
-  });
-  return{cls,tripN};
 }
 // 休憩マーカーアイコン
 function iconBreak(){
@@ -908,7 +848,6 @@ function getMobBottomPad(){
 
 // ── VIEW 2 ────────────────────────────────────────────
 async function loadRoute(dayInfo){
-  currentDay=dayInfo;
   document.getElementById('view-dates').className='';
   document.getElementById('view-route').className='active';
   setTimeout(()=>leafMap.invalidateSize(),150);
@@ -928,37 +867,46 @@ async function loadRoute(dayInfo){
     const cpw=resolveCol(bk,C_PW),cpt=resolveCol(bk,C_PT);
     const cdw=resolveCol(bk,C_DW),cdt=resolveCol(bk,C_DT);
     const ctm=resolveCol(bk,C_TIME);
-    const ctmEnd=bk.find(k=>k==='降車時間')||bk.find(k=>k.includes('降車時間'));
     const cfb=resolveCol(bk,C_FARE_B)||bk.find(k=>k.includes('料金'));
     const cst=resolveCol(bk,C_STATUS)||bk.find(k=>k.includes('ステータス'));
     const cth=resolveCol(bk,C_THX)||bk.find(k=>k==='サンキュー')||bk.find(k=>k.includes('サンキュー'));
-    // 営業メモが記録したピンポイントGPS列（あれば最優先で使う）
-    const cplat=bk.find(k=>/乗車地[：:]\s*緯度/.test(k)),cplng=bk.find(k=>/乗車地[：:]\s*経度/.test(k));
-    const cdlat=bk.find(k=>/降車地[：:]\s*緯度/.test(k)),cdlng=bk.find(k=>/降車地[：:]\s*経度/.test(k));
-    const validGeo=(lat,lng)=>!isNaN(lat)&&!isNaN(lng)&&lat>20&&lat<46&&lng>122&&lng<154;
 
     const dayRows=bdCache.filter(r=>matchDate(r,y,mo,d));
     if(!dayRows.length)throw new Error(`${y}/${mo}/${d} のデータが見つかりません`);
+
+    // 緯度・経度列を検出（日報詳細CSVにGPSが直接記録されている場合）
+    const cplat=bk.find(k=>k.includes('乗車地')&&k.includes('緯度'));
+    const cplng=bk.find(k=>k.includes('乗車地')&&k.includes('経度'));
+    const cdlat=bk.find(k=>k.includes('降車地')&&k.includes('緯度'));
+    const cdlng=bk.find(k=>k.includes('降車地')&&k.includes('経度'));
 
     const trips=dayRows.map((row,i)=>{
       const pw=cpw?String(row[cpw]||'').trim():'';
       const pt=cpt?String(row[cpt]||'').trim():'';
       const dw=cdw?String(row[cdw]||'').trim():'';
       const dt=cdt?String(row[cdt]||'').trim():'';
-      const pgLat=cplat?parseFloat(row[cplat]):NaN,pgLng=cplng?parseFloat(row[cplng]):NaN;
-      const dgLat=cdlat?parseFloat(row[cdlat]):NaN,dgLng=cdlng?parseFloat(row[cdlng]):NaN;
+      // 日報詳細のGPS座標を優先使用
+      const pLat=cplat?parseFloat(row[cplat]):NaN;
+      const pLng=cplng?parseFloat(row[cplng]):NaN;
+      const dLat=cdlat?parseFloat(row[cdlat]):NaN;
+      const dLng=cdlng?parseFloat(row[cdlng]):NaN;
+      const pcGPS=(!isNaN(pLat)&&!isNaN(pLng)&&pLat!==0)?{lat:pLat,lng:pLng}:null;
+      const dcGPS=(!isNaN(dLat)&&!isNaN(dLng)&&dLat!==0)?{lat:dLat,lng:dLng}:null;
       return{n:i+1,
         pickup:(pw+pt).trim(),dropoff:(dw+dt).trim(),
         fare:parseFare(cfb?row[cfb]:''),
         time:ctm?String(row[ctm]||''):'',
-        timeEnd:ctmEnd?String(row[ctmEnd]||''):'',
         status:cst?String(row[cst]||''):'',
         thx:cth?row[cth]:null,
-        pg:validGeo(pgLat,pgLng)?{lat:pgLat,lng:pgLng}:null,
-        dg:validGeo(dgLat,dgLng)?{lat:dgLat,lng:dgLng}:null,
+        pcGPS,dcGPS,
         pc:null,dc:null,ok:false};
     });
-    trips.forEach(t=>{t.pc=t.pg||getCoords(t.pickup);t.dc=t.dg||getCoords(t.dropoff);t.ok=!!(t.pc&&t.dc);});
+    // 座標の優先順位: ①日報詳細GPS → ②座標CSV → ③Nominatimフォールバック
+    trips.forEach(t=>{
+      t.pc=t.pcGPS||getCoords(t.pickup);
+      t.dc=t.dcGPS||getCoords(t.dropoff);
+      t.ok=!!(t.pc&&t.dc);
+    });
 
     // CSVにない住所（武三23区外・「その他」）をNominatim APIで補完
     const unmatchedAddrs=[...new Set(
@@ -1017,20 +965,6 @@ async function loadRoute(dayInfo){
       startMin: timeToMin(String(r['時刻']||'')),
     })).filter(k=>k.startMin>=0);
 
-    // ── GPS実測ログを取得(data/gps/YYYY-MM-DD.json、ある日のみ) ──
-    let gpsData=null;
-    try{
-      const gjPath=`data/gps/${y}-${String(mo).padStart(2,'0')}-${String(d).padStart(2,'0')}.json`;
-      const gr=await fetch(gjPath,{cache:'no-cache'});
-      if(gr.ok){
-        gpsData=await gr.json();
-        if(!gpsData.points||gpsData.points.length<2)gpsData=null;
-      }
-    }catch(e){gpsData=null;}
-    gpsActive=!!gpsData;
-    const gmb=document.getElementById('gps-mode-btn');
-    if(gmb){gmb.style.display=gpsActive?'flex':'none';gmb.textContent='GPS: '+(gpsMode==='full'?'フル':'空車のみ');}
-
     const matched=trips.filter(t=>t.ok).length;
     const fareDisp=dailyFare||trips.reduce((s,t)=>s+t.fare,0);
     const cntDisp=dailyCnt||trips.length;
@@ -1044,7 +978,7 @@ async function loadRoute(dayInfo){
     // ── サイドバー：営業と休憩を時刻順に混合表示 ──────────
     const list=document.getElementById('trip-list');
     // trips に time を分数で付加（ソート用）
-    trips.forEach(t=>{ t.startMin=timeToMin(t.time); t.endMin=timeToMin(t.timeEnd); });
+    trips.forEach(t=>{ t.startMin=timeToMin(t.time); });
     // 全アイテムを時刻順に並べる（休憩・空転含む）
     const allItems=[
       ...trips.map(t=>({type:'trip',data:t,min:t.startMin})),
@@ -1089,21 +1023,19 @@ async function loadRoute(dayInfo){
       prevDiv=div;
     });
 
-    // ── 地図：Dead-runライン（GPS実測がある日は省略） ──────
+    // ── 地図：Dead-runライン ──────────────────────────────
     const valid=trips.filter(t=>t.ok);
-    if(!gpsData){
-      for(let i=0;i<valid.length-1;i++){
-        const a=valid[i],b=valid[i+1];
-        const dl=L.polyline([[a.dc.lat,a.dc.lng],[b.pc.lat,b.pc.lng]],
-          {color:'#00ccee',weight:1.5,opacity:showDead ? 0.65 : 0,dashArray:'6 9'}).addTo(leafMap);
-        deadLayers.push(dl);
-      }
+    for(let i=0;i<valid.length-1;i++){
+      const a=valid[i],b=valid[i+1];
+      const dl=L.polyline([[a.dc.lat,a.dc.lng],[b.pc.lat,b.pc.lng]],
+        {color:'#00ccee',weight:1.5,opacity:showDead ? 0.65 : 0,dashArray:'6 9'}).addTo(leafMap);
+      deadLayers.push(dl);
     }
-    // ── 地図：実車ライン＋マーカー（GPS日は直線を薄く=OD確認用） ──
+    // ── 地図：実車ライン＋マーカー ────────────────────────
     const bounds=[];
     valid.forEach(t=>{
       const line=L.polyline([[t.pc.lat,t.pc.lng],[t.dc.lat,t.dc.lng]],
-        {color:'#f5a000',weight:3,opacity:(gpsData?odOpacity():(showTrip?0.75:0))}).addTo(leafMap);
+        {color:'#f5a000',weight:3,opacity:showTrip ? 0.75 : 0}).addTo(leafMap);
       const pm=L.marker([t.pc.lat,t.pc.lng],{icon:iconP(t.n,false)}).addTo(leafMap)
         .bindTooltip(`#${t.n} 乗：${t.pickup}`,{direction:'top'});
       const dm=L.marker([t.dc.lat,t.dc.lng],{icon:iconD(false)}).addTo(leafMap)
@@ -1117,21 +1049,19 @@ async function loadRoute(dayInfo){
     dayBreaks.filter(b=>!isNaN(b.lat)&&!isNaN(b.lng)).forEach(b=>{
       const brkLabel=b.mins>0?`${b.mins}分`:
         (b.start&&b.end&&b.start!==b.end)?`${b.start}〜${b.end}`:b.start;
-      // 前の営業の降車地→休憩地（緑点線）※GPS実測がある日は省略
-      if(!gpsData){
-        const prevTrip=valid.filter(t=>t.startMin<b.startMin).slice(-1)[0];
-        if(prevTrip){
-          const l=L.polyline([[prevTrip.dc.lat,prevTrip.dc.lng],[b.lat,b.lng]],
-            {color:'#33cc66',weight:1.5,opacity:showBrk?0.65:0,dashArray:'5 8'}).addTo(leafMap);
-          breakLayers.push(l);
-        }
-        // 休憩地→次の営業の乗車地（緑点線）
-        const nextTrip=valid.filter(t=>t.startMin>b.startMin)[0];
-        if(nextTrip){
-          const l=L.polyline([[b.lat,b.lng],[nextTrip.pc.lat,nextTrip.pc.lng]],
-            {color:'#33cc66',weight:1.5,opacity:showBrk?0.65:0,dashArray:'5 8'}).addTo(leafMap);
-          breakLayers.push(l);
-        }
+      // 前の営業の降車地→休憩地（緑点線）
+      const prevTrip=valid.filter(t=>t.startMin<b.startMin).slice(-1)[0];
+      if(prevTrip){
+        const l=L.polyline([[prevTrip.dc.lat,prevTrip.dc.lng],[b.lat,b.lng]],
+          {color:'#33cc66',weight:1.5,opacity:showBrk?0.65:0,dashArray:'5 8'}).addTo(leafMap);
+        breakLayers.push(l);
+      }
+      // 休憩地→次の営業の乗車地（緑点線）
+      const nextTrip=valid.filter(t=>t.startMin>b.startMin)[0];
+      if(nextTrip){
+        const l=L.polyline([[b.lat,b.lng],[nextTrip.pc.lat,nextTrip.pc.lng]],
+          {color:'#33cc66',weight:1.5,opacity:showBrk?0.65:0,dashArray:'5 8'}).addTo(leafMap);
+        breakLayers.push(l);
       }
       // 休憩マーカー
       const bm=L.marker([b.lat,b.lng],{icon:iconBreak()}).addTo(leafMap)
@@ -1149,59 +1079,6 @@ async function loadRoute(dayInfo){
       bounds.push([k.lat,k.lng]);
     });
 
-    // ── 地図：GPS実測軌跡（実車=橙 / 空車=水色実線 / 休憩=緑） ──
-    if(gpsData){
-      const P=gpsData.points;
-      const{cls,tripN}=classifyGps(P,trips,dayBreaks);
-      const drawRide=(gpsMode==='full'); // 空車のみモードでは実車GPS軌跡を描かない(OD直線が主役)
-      const styleOf=t=>t==='ride'?{color:'#f5a000',weight:3,opacity:showTrip?0.85:0}
-        :t==='brk'?{color:'#33cc66',weight:2,opacity:showBrk?0.65:0}
-        :{color:'#00ccee',weight:2,opacity:showDead?0.7:0};
-      let run=[P[0]],runCls=cls[0],runN=tripN[0];
-      const flush=()=>{
-        if(run.length>1&&(drawRide||runCls!=='ride')){
-          const line=L.polyline(run.map(p=>[p[1],p[2]]),styleOf(runCls)).addTo(leafMap);
-          const cn=runN;
-          if(runCls==='ride'&&cn)line.on('click',()=>setActive(cn));
-          gpsLayers.push({type:runCls,line});
-        }
-      };
-      for(let i=1;i<P.length;i++){
-        const gap=P[i][0]-P[i-1][0]>180; // 3分超は欠測
-        // 同一実車内の欠測(トンネル等)はフルGPSモードでは橙実線で直結する
-        const bridge=gap&&drawRide&&cls[i]==='ride'&&runCls==='ride'&&tripN[i]===runN;
-        if((gap&&!bridge)||cls[i]!==runCls||tripN[i]!==runN){
-          if(!gap)run.push(P[i]); // 区分変化点は繋いで隙間を作らない
-          flush();
-          run=[P[i]];runCls=cls[i];runN=tripN[i];
-        }else{
-          run.push(P[i]);
-        }
-      }
-      flush();
-      // 実車軌跡を前面に
-      gpsLayers.filter(g=>g.type==='ride').forEach(g=>g.line.bringToFront());
-
-      // ── POIマーク(ロガーのボタン=GO受注地点など) ──────
-      if(gpsData.marks&&gpsData.marks.length){
-        gpsData.marks.forEach(mk=>{
-          const[sec,mlat,mlng]=mk;
-          const hh=Math.floor(sec/3600),mm=String(Math.floor(sec%3600/60)).padStart(2,'0');
-          // 直後のGO営業(30分以内)とマッチング
-          const cand=trips.filter(t=>t.ok&&t.startMin>=0&&t.startMin*60>=sec&&t.startMin*60<=sec+1800&&/GO|スマ配/.test(t.status)).sort((a,b)=>a.startMin-b.startMin)[0];
-          let pop=`<b>📍 マーク ${hh}:${mm}</b>`;
-          if(cand){
-            const lagMin=Math.round((cand.startMin*60-sec)/60);
-            const km=(distM(mlat,mlng,cand.pc.lat,cand.pc.lng)/1000).toFixed(1);
-            pop+=`<br>→ #${cand.n} ${cand.pickup} 乗車まで ${lagMin}分 / 直線${km}km`;
-          }
-          const mi=L.marker([mlat,mlng],{icon:L.divIcon({className:'',html:'<div style="font-size:20px;filter:drop-shadow(0 1px 2px #000);">📍</div>',iconSize:[20,20],iconAnchor:[10,20]})}).addTo(leafMap);
-          mi.bindPopup(pop);
-          gpsLayers.push({type:'mark',line:mi});
-        });
-      }
-    }
-
     if(bounds.length)leafMap.fitBounds(bounds,{padding:[50,50]});
 
     const unm=trips.filter(t=>!t.ok);
@@ -1210,10 +1087,6 @@ async function loadRoute(dayInfo){
     if(unm.length)stMsg+=` | 未取得: `+unm.slice(0,2).map(t=>sl(t.pickup,9)).join(',');
     if(dayBreaks.length)stMsg+=` | 休憩: ${dayBreaks.length}件`;
     if(dayKuten.length)stMsg+=` | 空転: ${dayKuten.length}件`;
-    if(gpsData)stMsg+=` | GPS実測: ${gpsData.n_points||gpsData.points.length}点`;
-    if(gpsData&&gpsData.marks&&gpsData.marks.length)stMsg+=` | 📍マーク: ${gpsData.marks.length}件`;
-    const pinCnt=trips.filter(t=>t.pg||t.dg).length;
-    if(pinCnt)stMsg+=` | ピン座標: ${pinCnt}件`;
     stBar.textContent=stMsg;
     stBar.className=matched>0?'ok':'ng';
     document.getElementById('map-loading').style.display='none';
