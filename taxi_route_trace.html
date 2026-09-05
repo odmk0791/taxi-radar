@@ -919,7 +919,6 @@ async function loadRoute(dayInfo){
       t.startMin=timeToMin(t.time);
       t.dropTimeMin=timeToMin(t.dropTime);
     });
-    });
     // 座標の優先順位: ①日報詳細GPS → ②座標CSV → ③Nominatimフォールバック
     trips.forEach(t=>{
       t.pc=t.pcGPS||getCoords(t.pickup);
