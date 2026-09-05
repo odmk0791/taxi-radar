@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-05T07:40:49.614079+09:00",
+  "fetched_at": "2026-09-05T09:30:38.395079+09:00",
   "date": "20260905",
-  "count": 22,
+  "count": 20,
   "events": [
     {
       "id": 401191,
@@ -89,9 +89,9 @@
       "place": "IsaI AkasakA",
       "lat": "35.672286300000",
       "lon": "139.732379700000",
-      "owner_id": 508254,
-      "owner_nickname": "zeki0714",
-      "owner_display_name": "えむ",
+      "owner_id": 688870,
+      "owner_nickname": "handsonlab",
+      "owner_display_name": "ハンズオンラボ",
       "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-08-27T11:50:12+09:00"
@@ -244,9 +244,9 @@
       "place": "IsaI AkasakA",
       "lat": "35.672344000000",
       "lon": "139.732399700000",
-      "owner_id": 508254,
-      "owner_nickname": "zeki0714",
-      "owner_display_name": "えむ",
+      "owner_id": 688870,
+      "owner_nickname": "handsonlab",
+      "owner_display_name": "ハンズオンラボ",
       "accepted": 6,
       "waiting": 1,
       "updated_at": "2026-08-27T11:49:55+09:00"
@@ -283,6 +283,37 @@
       "updated_at": "2026-08-28T18:23:25+09:00"
     },
     {
+      "id": 392503,
+      "title": "RubyKaigi 2026 follow up",
+      "catch": "例のあれ、どうなりました？",
+      "description": "<p><a href=\"https://rhc.connpass.com/event/356128/\" rel=\"nofollow\">RubyKaigi 2025 follow up</a> の2026年版です。</p>\n<h1>概要</h1>\n<p>RubyKaigi 2026 で「今後はこうしていこうと思っています」と言っていた人にその「今後」を伺うイベントです。</p>\n<ul>\n<li>日時: 9月5日（土）</li>\n<li>午後: 本会（発表）<ul>\n<li>オフラインメイン</li>\n<li>オンライン配信はベストエフォートで行います<ul>\n<li>発表</li>\n<li>聴講</li>\n</ul>\n</li>\n<li>会場：株式会社IVRy</li>\n</ul>\n</li>\n<li>夜: 懇親会<ul>\n<li>会場：同会場</li>\n<li>参加費：1000円。受付時に会場で現金を頂く予定です。発表者および学生、スポンサー（若干名）は自己申告にて無料。</li>\n</ul>\n</li>\n</ul>\n<h1>タイムテーブル</h1>\n<ul>\n<li>12:30 会場オープン</li>\n<li>12:50 オープニング</li>\n<li>13:00 セッション1<ul>\n<li>（5分）PicoRubyなOS - Family mrubyのその後 by Katsuhiko Kageyama / <a href=\"https://x.com/kishima\" rel=\"nofollow\">@kishima</a></li>\n<li>（5分）What's new on the mruby VM on Zilog Z80 by Yuji Yokoo</li>\n<li>（15分）harucom.wasm by Shunsuke Michii (<a href=\"https://harukasan.dev/\" rel=\"nofollow\">@harukasan</a>)</li>\n<li>（15分）Ruby's blanket進捗報告 by 中島滋（株式会社ラグザイア）</li>\n<li>（15分）module Synths; end by asonas</li>\n<li>（5分）TypeProfはRailsアプリで動くのか？ 2026-09 by sinsoku</li>\n<li>（5分）type-guessr の検証機構レポート by shia</li>\n<li>（15分）TypeProf 進捗 by 遠藤侑介（STORES 株式会社）</li>\n<li>（15分）なぜ新しい型チェッカーを書きはじめたのか by うさみけんた（ピクシブ株式会社）</li>\n</ul>\n</li>\n<li>14:35 休憩</li>\n<li>14:55 セッション2<ul>\n<li>（5分）登壇その後 - ZJIT の型システムに関心を持つの巻 - by dak2</li>\n<li>（15分）Invariants in my own Ruby by monochrome</li>\n<li>（15分）PSLR by ydah</li>\n<li>（15分）ASTインタプリタは本当に実用になるのか？ by 笹田耕一（STORES 株式会社）</li>\n</ul>\n</li>\n<li>15:45 休憩</li>\n<li>16:05 セッション3<ul>\n<li>（5分）そういえばkompoはどうなったの？ by ahogappa</li>\n<li>（15分）QUIC、HTTP/3について by うなすけ</li>\n<li>（15分）net/http and friends by osyoyu</li>\n<li>（15分）Digits!の続き by tompng</li>\n</ul>\n</li>\n<li>16:55 休憩</li>\n<li>17:15 セッション4<ul>\n<li>（5分）Reforming the Japanese Ruby reference manual by 西山和広 (znz)</li>\n<li>（15分）date が終わったその後に by 齋藤甚六</li>\n<li>（15分）Naraku progress report by Hiroya Fujinami</li>\n<li>（15分）Box on Rails by 田籠聡 (tagomoris)</li>\n<li>（20分）matz Q&amp;A</li>\n</ul>\n</li>\n<li>18:25 休憩</li>\n<li>18:30 スポンサー企業LT(各社5分)<ul>\n<li>株式会社オプティム</li>\n<li>株式会社SmartHR</li>\n<li>株式会社スマートバンク</li>\n<li>株式会社リブセンス</li>\n<li>BizteX株式会社</li>\n<li>株式会社IVRy</li>\n</ul>\n</li>\n<li>19:00 懇親会</li>\n</ul>\n<h1>協賛</h1>\n<h2>金三萬圓也</h2>\n<p><a href=\"https://www.luxiar.com/\" rel=\"nofollow\">株式会社ラグザイア</a></p>\n<div align=\"center\"><img src=\"https://www.luxiar.com/img/common/logo.svg\" width=\"400\"></div>\n\n<p><a href=\"https://smartbank.co.jp/\" rel=\"nofollow\">株式会社スマートバンク</a></p>\n<div align=\"center\"><img src=\"https://smartbankinc.notion.site/image/attachment%3A24a72b66-b71e-4c99-b607-aaf7dd1f6e0f%3Asb-logo-black.jpg?table=block&amp;id=215ff598-775f-80cb-97dc-fa70296d2df5&amp;spaceId=d60d88eb-9e65-4a2c-899a-58cba8e27a52&amp;width=1070&amp;userId=&amp;cache=v2\" width=\"400\"></div>\n\n<p><a href=\"https://hello-world.smarthr.co.jp/\" rel=\"nofollow\">株式会社SmartHR</a></p>\n<div align=\"center\"><img src=\"https://i.imgur.com/vVSzbbN.png\" width=\"400\"></div>\n\n<h2>ビールスポンサー</h2>\n<p><a href=\"https://job-draft.jp/\" rel=\"nofollow\">株式会社リブセンス</a></p>\n<div align=\"center\"><img src=\"https://jd-production-app.s3-ap-northeast-1.amazonaws.com/blog/4e6746bb-5766-4994-b128-2567aebd4eb9.png\" width=\"400\"></div>\n\n<h2>Coffeeスポンサー</h2>\n<p><a href=\"https://engineer.andpad.co.jp/\" rel=\"nofollow\">株式会社アンドパッド</a></p>\n<div align=\"center\"><img src=\"https://i.imgur.com/2Uu3QBN.png\" width=\"400\"></div>\n\n<h2>スマート米スポンサー</h2>\n<p><a href=\"https://www.optim.co.jp/\" rel=\"nofollow\">株式会社オプティム</a></p>\n<div align=\"center\"><img src=\"https://www.optim.co.jp/wp-content/themes/renewal/images/icon/logo_corp.svg\" width=\"400\"></div>\n\n<h2>交通費スポンサー</h2>\n<p><a href=\"https://www.biztex.co.jp/\" rel=\"nofollow\">BizteX株式会社</a></p>\n<div align=\"center\"><img src=\"https://www.biztex.co.jp/assets/images/logo.svg\" width=\"400\"></div>\n\n<h2>会場スポンサー</h2>\n<p><a href=\"https://ivry.jp/company/\" rel=\"nofollow\">株式会社IVRy</a></p>\n<div align=\"center\"><img src=\"https://imgur.com/BxULljK.png\" width=\"400\"></div>\n\n<h2>受付スポンサー</h2>\n<p><a href=\"https://bs.atdot.net/\" rel=\"nofollow\">@. bookstore</a></p>\n<h1>運営</h1>\n<p><a href=\"https://ruby-jp.github.io/\" rel=\"nofollow\">ruby-jp Slack</a>の#rubykaigi_followup_運営チャンネルで行っています。</p>\n<h1>会場入退館方法</h1>\n<h2>入館方法:</h2>\n<p>ビル入館にあたって、 QR コードが必要になるので、以下を注意ください。</p>\n<ol>\n<li>イベント当日のお昼までに入館用 QR コードを申込アンケートで入力されたメールアドレスにお知らせします (\"【住友不動産　東京三田ガーデンタワー】ご来訪のご案内\" というタイトルでメールが配信されます)</li>\n<li>connpass の QR コードでは入館できません ので、ご注意ください</li>\n<li>当日は 1F からエレベータで 10F まで移動</li>\n<li>エレベーター降りてからは案内看板に従ってご入場ください</li>\n</ol>\n<h2>退館方法:</h2>\n<ul>\n<li>入館許可証のQRコードを 1 階の入館ゲートにかざして退館してください。</li>\n</ul>\n<h1>注意事項:</h1>\n<ul>\n<li>入館許可証は退館時に必要ですので、大切に保管してください。</li>\n<li>入館許可証を紛失された場合、再発行はできませんのでご注意ください。</li>\n<li>会場設備の関係上、イベント終了後は速やかに撤収となります。</li>\n<li>会場および入退館管理に関わる個人情報の取り扱いについては、<a href=\"https://ivry.jp/privacy/\" rel=\"nofollow\">IVRyのプライバシーポリシー</a>に従い取り扱います。</li>\n</ul>",
+      "url": "https://rhc.connpass.com/event/392503/",
+      "image_url": null,
+      "hash_tag": "rubykaigi_followup",
+      "started_at": "2026-09-05T12:30:00+09:00",
+      "ended_at": "2026-09-05T21:00:00+09:00",
+      "published_at": "2026-05-27T21:03:36+09:00",
+      "limit": 1095,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 7682,
+        "subdomain": "rhc",
+        "title": "Ruby Hack Challenge",
+        "url": "https://rhc.connpass.com/"
+      },
+      "address": "東京都港区 三田三丁目5-19 住友不動産東京三田ガーデンタワー10F",
+      "place": "株式会社IVRy",
+      "lat": "35.644916500000",
+      "lon": "139.743343400000",
+      "owner_id": 2069,
+      "owner_nickname": "bash0C7",
+      "owner_display_name": "bash",
+      "accepted": 95,
+      "waiting": 0,
+      "updated_at": "2026-09-05T08:10:37+09:00"
+    },
+    {
       "id": 403430,
       "title": "【本編】IIJmio meeting 37",
       "catch": "",
@@ -312,37 +343,6 @@
       "accepted": 209,
       "waiting": 0,
       "updated_at": "2026-09-03T19:47:24+09:00"
-    },
-    {
-      "id": 392503,
-      "title": "RubyKaigi 2026 follow up",
-      "catch": "例のあれ、どうなりました？",
-      "description": "<p><a href=\"https://rhc.connpass.com/event/356128/\" rel=\"nofollow\">RubyKaigi 2025 follow up</a> の2026年版です。</p>\n<h1>概要</h1>\n<p>RubyKaigi 2026 で「今後はこうしていこうと思っています」と言っていた人にその「今後」を伺うイベントです。</p>\n<ul>\n<li>日時: 9月5日（土）</li>\n<li>午後: 本会（発表）<ul>\n<li>オフラインメイン</li>\n<li>オンライン配信はベストエフォートで行います<ul>\n<li>発表</li>\n<li>聴講</li>\n</ul>\n</li>\n<li>会場：株式会社IVRy</li>\n</ul>\n</li>\n<li>夜: 懇親会<ul>\n<li>会場：同会場</li>\n<li>参加費：1000円。受付時に会場で現金を頂く予定です。発表者および学生、スポンサー（若干名）は自己申告にて無料。</li>\n</ul>\n</li>\n</ul>\n<h1>タイムテーブル</h1>\n<ul>\n<li>12:30 会場オープン</li>\n<li>12:50 オープニング</li>\n<li>13:00 セッション1<ul>\n<li>（5分）PicoRubyなOS - Family mrubyのその後 by Katsuhiko Kageyama / <a href=\"https://x.com/kishima\" rel=\"nofollow\">@kishima</a></li>\n<li>（5分）What's new on the mruby VM on Zilog Z80 by Yuji Yokoo</li>\n<li>（15分）harucom.wasm by Shunsuke Michii (<a href=\"https://harukasan.dev/\" rel=\"nofollow\">@harukasan</a>)</li>\n<li>（15分）Ruby's blanket進捗報告 by 中島滋（株式会社ラグザイア）</li>\n<li>（15分）module Synths; end by asonas</li>\n<li>（5分）TypeProfはRailsアプリで動くのか？ 2026-09 by sinsoku</li>\n<li>（5分）type-guessr の検証機構レポート by shia</li>\n<li>（15分）TypeProf 進捗 by 遠藤侑介（STORES 株式会社）</li>\n<li>（15分）なぜ新しい型チェッカーを書きはじめたのか by うさみけんた（ピクシブ株式会社）</li>\n</ul>\n</li>\n<li>14:35 休憩</li>\n<li>14:55 セッション2<ul>\n<li>（5分）登壇その後 - ZJIT の型システムに関心を持つの巻 - by dak2</li>\n<li>（15分）Invariants in my own Ruby by monochrome</li>\n<li>（15分）PSLR by ydah</li>\n<li>（15分）ASTインタプリタは本当に実用になるのか？ by 笹田耕一（STORES 株式会社）</li>\n</ul>\n</li>\n<li>15:45 休憩</li>\n<li>16:05 セッション3<ul>\n<li>（5分）そういえばkompoはどうなったの？ by ahogappa</li>\n<li>（15分）QUIC、HTTP/3について by うなすけ</li>\n<li>（15分）net/http and friends by osyoyu</li>\n<li>（15分）Digits!の続き by tompng</li>\n</ul>\n</li>\n<li>16:55 休憩</li>\n<li>17:15 セッション4<ul>\n<li>（5分）Reforming the Japanese Ruby reference manual by 西山和広 (znz)</li>\n<li>（15分）date が終わったその後に by 齋藤甚六</li>\n<li>（15分）Naraku progress report by Hiroya Fujinami</li>\n<li>（15分）Box on Rails by 田籠聡 (tagomoris)</li>\n<li>（20分）matz Q&amp;A</li>\n</ul>\n</li>\n<li>18:25 休憩</li>\n<li>18:30 スポンサー企業LT(各社5分)<ul>\n<li>株式会社オプティム</li>\n<li>株式会社SmartHR</li>\n<li>株式会社スマートバンク</li>\n<li>株式会社リブセンス</li>\n<li>BizteX株式会社</li>\n<li>株式会社IVRy</li>\n</ul>\n</li>\n<li>19:00 懇親会</li>\n</ul>\n<h1>協賛</h1>\n<h2>金三萬圓也</h2>\n<p><a href=\"https://www.luxiar.com/\" rel=\"nofollow\">株式会社ラグザイア</a></p>\n<div align=\"center\"><img src=\"https://www.luxiar.com/img/common/logo.svg\" width=\"400\"></div>\n\n<p><a href=\"https://smartbank.co.jp/\" rel=\"nofollow\">株式会社スマートバンク</a></p>\n<div align=\"center\"><img src=\"https://smartbankinc.notion.site/image/attachment%3A24a72b66-b71e-4c99-b607-aaf7dd1f6e0f%3Asb-logo-black.jpg?table=block&amp;id=215ff598-775f-80cb-97dc-fa70296d2df5&amp;spaceId=d60d88eb-9e65-4a2c-899a-58cba8e27a52&amp;width=1070&amp;userId=&amp;cache=v2\" width=\"400\"></div>\n\n<p><a href=\"https://hello-world.smarthr.co.jp/\" rel=\"nofollow\">株式会社SmartHR</a></p>\n<div align=\"center\"><img src=\"https://i.imgur.com/vVSzbbN.png\" width=\"400\"></div>\n\n<h2>ビールスポンサー</h2>\n<p><a href=\"https://job-draft.jp/\" rel=\"nofollow\">株式会社リブセンス</a></p>\n<div align=\"center\"><img src=\"https://jd-production-app.s3-ap-northeast-1.amazonaws.com/blog/4e6746bb-5766-4994-b128-2567aebd4eb9.png\" width=\"400\"></div>\n\n<h2>Coffeeスポンサー</h2>\n<p><a href=\"https://engineer.andpad.co.jp/\" rel=\"nofollow\">株式会社アンドパッド</a></p>\n<div align=\"center\"><img src=\"https://i.imgur.com/2Uu3QBN.png\" width=\"400\"></div>\n\n<h2>スマート米スポンサー</h2>\n<p><a href=\"https://www.optim.co.jp/\" rel=\"nofollow\">株式会社オプティム</a></p>\n<div align=\"center\"><img src=\"https://www.optim.co.jp/wp-content/themes/renewal/images/icon/logo_corp.svg\" width=\"400\"></div>\n\n<h2>交通費スポンサー</h2>\n<p><a href=\"https://www.biztex.co.jp/\" rel=\"nofollow\">BizteX株式会社</a></p>\n<div align=\"center\"><img src=\"https://www.biztex.co.jp/assets/images/logo.svg\" width=\"400\"></div>\n\n<h2>会場スポンサー</h2>\n<p><a href=\"https://ivry.jp/company/\" rel=\"nofollow\">株式会社IVRy</a></p>\n<div align=\"center\"><img src=\"https://imgur.com/BxULljK.png\" width=\"400\"></div>\n\n<h2>受付スポンサー</h2>\n<p><a href=\"https://bs.atdot.net/\" rel=\"nofollow\">@. bookstore</a></p>\n<h1>運営</h1>\n<p><a href=\"https://ruby-jp.github.io/\" rel=\"nofollow\">ruby-jp Slack</a>の#rubykaigi_followup_運営チャンネルで行っています。</p>\n<h1>会場入退館方法</h1>\n<h2>入館方法:</h2>\n<p>ビル入館にあたって、 QR コードが必要になるので、以下を注意ください。</p>\n<ol>\n<li>イベント当日のお昼までに入館用 QR コードを申込アンケートで入力されたメールアドレスにお知らせします (\"【住友不動産　東京三田ガーデンタワー】ご来訪のご案内\" というタイトルでメールが配信されます)</li>\n<li>connpass の QR コードでは入館できません ので、ご注意ください</li>\n<li>当日は 1F からエレベータで 10F まで移動</li>\n<li>エレベーター降りてからは案内看板に従ってご入場ください</li>\n</ol>\n<h2>退館方法:</h2>\n<ul>\n<li>入館許可証のQRコードを 1 階の入館ゲートにかざして退館してください。</li>\n</ul>\n<h1>注意事項:</h1>\n<ul>\n<li>入館許可証は退館時に必要ですので、大切に保管してください。</li>\n<li>入館許可証を紛失された場合、再発行はできませんのでご注意ください。</li>\n<li>会場設備の関係上、イベント終了後は速やかに撤収となります。</li>\n<li>会場および入退館管理に関わる個人情報の取り扱いについては、<a href=\"https://ivry.jp/privacy/\" rel=\"nofollow\">IVRyのプライバシーポリシー</a>に従い取り扱います。</li>\n</ul>",
-      "url": "https://rhc.connpass.com/event/392503/",
-      "image_url": null,
-      "hash_tag": "rubykaigi_followup",
-      "started_at": "2026-09-05T12:30:00+09:00",
-      "ended_at": "2026-09-05T21:00:00+09:00",
-      "published_at": "2026-05-27T21:03:36+09:00",
-      "limit": 1095,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 7682,
-        "subdomain": "rhc",
-        "title": "Ruby Hack Challenge",
-        "url": "https://rhc.connpass.com/"
-      },
-      "address": "東京都港区 三田三丁目5-19 住友不動産東京三田ガーデンタワー10F",
-      "place": "株式会社IVRy",
-      "lat": "35.644916500000",
-      "lon": "139.743343400000",
-      "owner_id": 2069,
-      "owner_nickname": "bash0C7",
-      "owner_display_name": "bash",
-      "accepted": 95,
-      "waiting": 0,
-      "updated_at": "2026-08-28T18:25:05+09:00"
     },
     {
       "id": 404645,
@@ -428,7 +428,7 @@
       "owner_id": 123017,
       "owner_nickname": "iwski",
       "owner_display_name": "岩崎",
-      "accepted": 19,
+      "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-09-02T14:15:38+09:00"
     },
@@ -552,7 +552,7 @@
       "owner_id": 14553,
       "owner_nickname": "classmethod",
       "owner_display_name": "クラスメソッド株式会社",
-      "accepted": 210,
+      "accepted": 205,
       "waiting": 0,
       "updated_at": "2026-09-04T01:01:30+09:00"
     },
@@ -569,7 +569,7 @@
       "published_at": "2026-08-29T13:02:15+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11642,
         "subdomain": "techmokmok",
@@ -600,7 +600,7 @@
       "published_at": "2026-08-29T09:00:00+09:00",
       "limit": 4,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4032,
         "subdomain": "iotlab",
@@ -617,68 +617,6 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-30T22:01:11+09:00"
-    },
-    {
-      "id": 405436,
-      "title": "【番外編：コーダー道場まつど】はじめてのScratchプログラミング開催案内 2026年9月度",
-      "catch": "",
-      "description": "<p>プログラミングも初めて見ようとかやってみたいけどできるかどうか？迷っていたら是非！一度参加してみてください。1時間ぐらいですがゆっくりと参加者に合わせて進めて行きます。わからないところなど個別に相談したいなどもOK!です。参加してくれる子供たちをお待ちしています。<br>\nコーダー道場まつどではプログラミング未経験のお子さん向けにScratchを使用して初心者向けの道場を開催しています。まったくプログラミングをしたことがないというお子さんでも大丈夫です。１時間ほど使い方を含めて一緒にプログラミングしながらゲーム作品を作っていきます。開催日によってカリキュラムが違うので何回参加してもOK!です。<br>\n<span style=\"color:red;\">同月内でワークショップに複数回参加を希望される方は、初回参加の際に次回参加の有無をお知らせください！！<br><u>システムでの都合上、同月内同ワークショップへの参加設定ができないため個別に確認させて頂いております。</u></span><br>Scratch未経験のお子さんは奮ってご参加ください。<br>\n<br>\n<span style=\"color:red;\">ご兄弟やお友達と一緒に参加申し込みをしたいという方は、<u>予約の際、アンケートに二人目の参加者の情報もご記載ください。</u>\n<strong>１回のワークショップで２名まで参加可能です。</strong></span><br></p>\n<blockquote>\n<strong>運営チームからのお願い</strong>\n<ul>\n<li><strong style=\"color:red;\">感染症防止のため、個人情報として住所・氏名・連絡先を参加の際に控えさせて頂きます。</strong></li>\n<li>家を出る前に検温してください。熱のある方は参加は見合わせてください。</li>\n</ul>\n</blockquote>\n<blockquote>\n<strong>いつもの開催場所ではありません</strong><br>\n<ul><strong style=\"color:red;\">松戸文化ホール 4階（KITE MITE MATSUDOのとなりのビルの４階です。<br>\nプログラミングカフェの場所をお借りして行います。</strong></ul>\n</blockquote>\n<table>\n<tbody>\n<tr>\n<th>会場</th>\n<td>〒271-0092 松戸市松戸1307-1<br>\n松戸ビルヂング 4階　エレベーターホールからまっすぐ行った突き当り</td>\n</tr>\n<tr>\n<th>教材</th>\n<td>Scratch（スクラッチ）<br>\n<span style=\"font-size: 14px; font-weight: bold;\">※パソコンはこちらで準備します。</span></td>\n</tr>\n<tr>\n<th>内容</th>\n<td>開催日によって担当とプログラミングの内容が異なります。<br>\n・ジャンピングゲームをつくろう！ : 09/27 : はむさん(CoderDojo Matsudo)<br>\n・シンプルめいろゲームをつくろう！ : 09/05,19 : ほしけんさん(CoderDojo Matsudo)<br>\n・りんごキャッチゲームをつくろう！ : 09/06,12,20,26 : ヒロジィさん(CoderDojo Matsudo)<br>\n※それぞれに1回づつご参加いただくことができます。<br>\n※ご兄弟で申し込みたい方はアンケートなどでその旨をお伝えください。個別に対応させて頂きます。<br>\n※システムの都合で同じ月に2回申込みできません。<br>\n <span style=\"color:red;\">※月が替わってからお申込みいただくか、初回参加時に確認させてください。</span>\n</td>\n</tr>\n<tr>\n<th>対象</th>\n<td>小学生</td>\n</tr>\n<tr>\n<th>募集人数</th>\n<td>scratch未経験者　各開催日2名（申込は1名で兄妹友人の同伴は可）<br>\n先着順にて受け付けます。</td>\n</tr>\n<tr>\n<th>費用</th>\n<td>無料</td>\n</tr>\n<tr>\n<th>参加要件</th>\n<td>1.保護者の離席可<br>\n※保護者の方は会場内での待機いただくことをお勧めしますが、途中離席も可能です。終了時間近くにお迎いに来てください。<br>\n2.ノートPCは持ち込み不要<br>\n※パソコンはコーダー道場で準備しますが、ご自分のバソコンが使いやすいという方は持ち込んでいただいてもOK！です。<br>\n3.マウス操作ができること。</td>\n</tr>\n<tr>\n</tr><tr>\n</tr>\n</tbody>\n</table>\n<p>また、 <a href=\"https://calendar.google.com/calendar/embed?src=3hcpgo5hrf1ltg5s9h6q7u3g18%40group.calendar.google.com&amp;ctz=Asia%2FTokyo\" rel=\"nofollow\">プログラミングカフェの担当カレンダー</a>はこちらになります。<br></p>\n<p>【協力】PopcornMatsudo（中高生の居場所松戸地区）、プログラミングカフェまつど（株式会社 Cygames）</p>",
-      "url": "https://coderdojomatsudo-procafe.connpass.com/event/405436/",
-      "image_url": "https://media.connpass.com/thumbs/23/7a/237a84425d8fe240d336b02651c75e3a.png",
-      "hash_tag": "",
-      "started_at": "2026-09-05T13:00:00+09:00",
-      "ended_at": "2026-09-27T14:00:00+09:00",
-      "published_at": "2026-08-31T11:06:47+09:00",
-      "limit": 7,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13492,
-        "subdomain": "coderdojomatsudo-procafe",
-        "title": "CoderDojo Matsudo（番外編カフェ道場）",
-        "url": "https://coderdojomatsudo-procafe.connpass.com/"
-      },
-      "address": "千葉県松戸市松戸1307-1",
-      "place": "プログラミングカフェ松戸",
-      "lat": "35.782245200000",
-      "lon": "139.898962100000",
-      "owner_id": 215792,
-      "owner_nickname": "CoderDojo",
-      "owner_display_name": "CoderDojo",
-      "accepted": 1,
-      "waiting": 0,
-      "updated_at": "2026-08-31T11:06:47+09:00"
-    },
-    {
-      "id": 389386,
-      "title": "アクセシビリティカンファレンスCHIBA2026",
-      "catch": "開催テーマ「変わるものと変わらないもの」",
-      "description": "<h2>開催概要</h2>\n<p>【日程】2026年9月5日(土曜日)<br>\n【開場・受付】11:00～<br>\n【ブース体験】11:00～18:30（体験ブース・スポンサーブース）<br>\n【セッションステージ】13:20～17:00<br>\n【交流会】17:00〜18:30<br>\n【場所】幕張メッセ　国際会議場　2階　国際会議室（千葉県千葉市美浜区中瀬2丁目1-1）<br>\n【最寄駅】JR海浜幕張駅<br>\n<br>\nライブ配信: YouTubeライブ配信<br>\n<br>\n<br>\n※お知らせ：会場一般参加枠の定員変更について（2026年6月30日追記）<br>\n本カンファレンスでは、合理的配慮の一環として、オンライン窓口（connpass）でのお申し込みが難しい方やご家族、付き添いの方を対象に、個別にオフライン申込みを受け付けております。<br>\n上記に伴う座席の確保および会場レイアウトの調整のため、会場一般参加枠の定員を150名から【120名】に変更いたしました。<br><br></p>\n<h2>受付</h2>\n<p>セッション本編開始時刻の直前は受付の混雑が予想されますので、お早めに受付をお済ませいただけますと幸いです。<br>\nイベントページ内の「受付票をみる」リンクから受付票をご用意ください。<br>\n受付にて、QRコードの読み取りを行いますので、印刷した受付票または画面キャプチャのご提示をお願いしております。<br></p>\n<h2>タイムテーブル</h2>\n<table border=\"1px\">\n<tbody><tr>\n<th>時刻</th>\n<th>内容</th>\n</tr>\n<tr>\n<td>11:00～18:30</td>\n<td>ブース体験</td>\n</tr>\n<tr>\n<td>13:00-13:15</td>\n<td>セッションステージオープニング</td>\n</tr>\n<tr>\n<td>13:20-14:00</td>\n<td>メインセッション1<br>Parabra株式会社　山上庄子さん<br>「文化芸術をひらかれたものに」\n</td>\n</tr>\n<tr>\n<td>14:05-14:25</td>\n<td>ライトニングトーク1<br>かのんさん<br>「わたしの一歩一歩」\n</td>\n</tr>\n<tr>\n<td>14:25-14:45</td>\n<td>休憩\n</td>\n</tr>\n<tr>\n<td>14:45-15:00</td>\n<td>スポンサーセッション1<br>株式会社ノベルティ　徳山申太郎さん<br>「アクセシビリティから見つけた、エンジニアとしての軸〜変わる技術、変わらない目的〜」\n</td>\n</tr>\n<tr>\n<td>15:05-15:20</td>\n<td>スポンサーセッション2<br>株式会社Gaji-Labo　高橋利明さん<br>「Issue駆動でスペシャリストの意図を届けるAIコーディングエージェントによるアクセシビリティ向上」\n</td>\n</tr>\n<tr>\n<td>15:20-15:40</td>\n<td>休憩　\n</td>\n</tr>\n<tr>\n<td>15:40-16:00</td>\n<td>ライトニングトーク2<br>株式会社コンセント　堀口真人さん<br>「営業がウェブアクセシビリティを話せると、プロジェクトが変わる　〜提案から組織浸透まで〜」\n</td>\n</tr>\n<tr>\n<td>16:05-16:45</td>\n<td>メインセッション2<br>日本航空株式会社　堀川 さくらさん<br>北 彩乃さん　池内 風香さん「JAL独自のアクセシビリティ施策　～社内資格制度を通じた人財育成～」\n</td>\n</tr>\n<tr>\n<td>16:45-17:00</td>\n<td>セッションステージクロージング</td>\n</tr>\n<tr>\n<td>17:00−18:30</td>\n<td>会場交流会</td>\n</tr>\n<tr>\n<td>17:10−17:40</td>\n<td>アッカンRadio</td>\n</tr>\n<tr>\n<td>18:30</td>\n<td>終了、退場</td>\n</tr>\n</tbody></table>\n<p>上記タイムテーブルは変更になる可能性がございます。最新のタイムテーブル、登壇情報などは順次公開して参りますので、<a href=\"https://a11y-chiba.com/2026/\" rel=\"nofollow\">公式ウェブサイト</a>をご確認ください。<br></p>\n<h2>参加枠について</h2>\n<h3>会場一般参加枠</h3>\n<p>現地にて参加いただけます。<br>\n会場懇親会(交流会)への参加を希望される場合、アンケートにてご回答お願いします。<br></p>\n<h3>会場ボランティア枠</h3>\n<p>現地にて運営ボランティアをしていただきながら、ご参加いただく枠です。<br>\n当日の受付補助、会場案内、設営や撤収作業等をお手伝いしていただきます。<br>\n事前にSlackでの連絡やお打ち合わせもご参加をお願いいたします。<br></p>\n<h3>UDトークボランティア枠</h3>\n<p>配信にてUDトークの編集ボランティアをしていただきながら、ご参加いただく枠です。<br>\n当日のUDトークのスクリプト編集をお手伝いしていただきます。<br>\n会場参加でUDトークボランテイアに参加いただける方は、専用席をご用意いたします。<br>\n事前にSlackでの連絡やツールの練習会もご参加をお願いいたします。<br></p>\n<h3>オンライン参加枠</h3>\n<p>YouTubeにて通常版・情報保障版同時配信を配信いたします。<br>\n現地参加が厳しい方は、ぜひオンライン参加枠でご参加ください。<br></p>\n<h2>情報保障版について</h2>\n<p>UDトークによる字幕（オープンキャプション）と手話による映像を配信いたします。</p>\n<h2>スポンサー情報</h2>\n<p><a href=\"https://a11y-chiba.com/2026/\" rel=\"nofollow\">公式ウェブサイト</a>をご確認ください。<br></p>\n<h2>最新情報</h2>\n<p><a href=\"https://a11y-chiba.com/2026/\" rel=\"nofollow\">公式ウェブサイト</a>、<a href=\"https://x.com/a11y_chiba\" rel=\"nofollow\">X(旧ツイッター)</a>をご確認ください。<br></p>\n<h2>会場内のバリアフリー状況</h2>\n<ul>\n<li>出入り口の幅は120cm以上ございます<br></li>\n<li>通路の幅は120cm以上を確保いたします<br></li>\n<li>会場内には車椅子が回転可能なスペース150cmを確保いたします<br></li>\n<li>会場内に段差はございません<br></li>\n<li>多目的トイレは会場の各フロアにございます<br></li>\n</ul>\n<h2>会場までの補助案内</h2>\n<p>最寄りの海浜幕張駅から会場までは点字ブロック（視覚障害者誘導用ブロック）がございます。<br>\nお手伝いが必要な方は大変お手数ですが、アンケートにてご希望内容をご記載ください。<br>\n当日は施設入り口周辺に誘導員を配置する予定です。<br></p>\n<h2>行動規範</h2>\n<p>本イベント参加に際しては<a href=\"https://a11y-chiba.com/2026/coc\" rel=\"nofollow\">行動規範</a>の遵守をお願い致します。<br></p>\n<h2>ハラスメントなどの禁止事項への対応</h2>\n<p>本イベントでは行動規範にて禁止事項を定めています。<br>\n行動規範の禁止事項に該当する行為を受けたり、目撃したりした場合、次のいずれかの手段でご連絡ください。<br></p>\n<ul>\n<li>近くの運営スタッフもしくはボランティアスタッフに声をかける（スタッフパス、スタッフTシャツを身につけています）<br></li>\n<li>問い合わせフォームから連絡をする<br></li>\n</ul>\n<p>後から気づいたり、思い出したりした場合にもご連絡ください。<br>\n登壇者、会場、スポンサーを含むイベントに関係したすべての方を守るためにも、トラブルを放置したままにせず適切な対応を行います。閉会後も1週間はご連絡を受け付けます。<br></p>\n<h2>感染症拡大に伴う対応</h2>\n<p>当日発熱(37.5度以上)がある方は参加をお断りしています。<br>\nYouTube配信からご参加ください。<br></p>\n<h2>注意事項</h2>\n<p>天災や政府による行動制限等が発生した場合は、オンライン開催のみに切り替える可能性がございます。<br>\nYouTubeのオンライン配信はネットワークなどのトラブルにより途中の映像が乱れたり一時的にストップする可能性がございます。<br>\nその際は改めてアーカイブ配信をご覧ください。ただし、全ての配信を保障できるものではありませんので予めご了承ください。<br></p>",
-      "url": "https://a11y-chiba.connpass.com/event/389386/",
-      "image_url": "https://media.connpass.com/thumbs/f8/7a/f87aaf74fb82f6458de3ec5e587101e2.png",
-      "hash_tag": "a11ychiba",
-      "started_at": "2026-09-05T11:00:00+09:00",
-      "ended_at": "2026-09-05T18:30:00+09:00",
-      "published_at": "2026-04-02T12:01:05+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16459,
-        "subdomain": "a11y-chiba",
-        "title": "アクセシビリティカンファレンスCHIBA",
-        "url": "https://a11y-chiba.connpass.com/"
-      },
-      "address": "千葉県千葉市美浜区中瀬2丁目1-1",
-      "place": "幕張メッセ 国際会議場 2階 国際会議室",
-      "lat": "35.646731300000",
-      "lon": "140.036697900000",
-      "owner_id": 864973,
-      "owner_nickname": "sakai_novelty",
-      "owner_display_name": "sakai_novelty",
-      "accepted": 277,
-      "waiting": 3,
-      "updated_at": "2026-09-04T09:53:28+09:00"
     }
   ]
 }
