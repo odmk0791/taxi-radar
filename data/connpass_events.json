@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-05T14:07:14.043217+09:00",
+  "fetched_at": "2026-09-05T18:44:25.925962+09:00",
   "date": "20260905",
-  "count": 20,
+  "count": 22,
   "events": [
     {
       "id": 401191,
@@ -16,7 +16,7 @@
       "published_at": "2026-08-02T10:01:04+09:00",
       "limit": 70,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15297,
         "subdomain": "cyber-hiyokomame",
@@ -47,7 +47,7 @@
       "published_at": "2026-08-04T21:01:55+09:00",
       "limit": 36,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8192,
         "subdomain": "musclelearning",
@@ -78,7 +78,7 @@
       "published_at": "2026-08-28T19:29:50+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14462,
         "subdomain": "azure-waigaya",
@@ -109,7 +109,7 @@
       "published_at": "2026-09-02T21:03:04+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -140,7 +140,7 @@
       "published_at": "2026-08-24T14:00:29+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 10492,
         "subdomain": "zeki-chan-lab",
@@ -190,37 +190,6 @@
       "updated_at": "2026-08-27T11:49:55+09:00"
     },
     {
-      "id": 398409,
-      "title": "TLUG Technical Meeting - September 2026",
-      "catch": "",
-      "description": "<h2>Call for Presenters:</h2>\n<p>We are currently recruiting presenters. <strong>Please contact brian@tiuxo.com if you would like to present at this meeting.</strong></p>\n<h3>Topics:</h3>\n<p>Any technology / computer / *nix / maker related topic is OK! Of course, Linux-related presentations will be prioritized.</p>\n<h3>Formats:</h3>\n<p>Any format, including short \"lightning\" talks are OK! Please indicate how much time you would like. If it cannot fit in this meeting, it will be prioritized for the next technical meeting.</p>\n<h3>Language:</h3>\n<p>TLUG presentations are in English, but please don't feel intimidated! You do not have to be a native-level English speaker to present at TLUG.</p>\n<h3>Resources:</h3>\n<p>This meeting location has a presentation screen using HDMI and available power outlets. Please indicate if there are other resource you require for your presentation.</p>\n<h2>Schedule:</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Time</th>\n<th style=\"text-align: left;\">Name</th>\n<th style=\"text-align: left;\">Presenter</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">Opening</td>\n<td style=\"text-align: left;\">TLUG</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"><strong>The Vesuvius Challenge (Scroll Prize)</strong></td>\n<td style=\"text-align: left;\"><strong>Cam</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"><strong><a href=\"http://Circled.me\" rel=\"nofollow\">Circled.me</a> - A FOSS Photo / Video Backup Solution</strong></td>\n<td style=\"text-align: left;\"><strong>Nikolay Dimitrov</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"><strong>FOSS VMWare ESXi Alternatives</strong></td>\n<td style=\"text-align: left;\"><strong>Inaba Kazuhiko</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">Konshinkai</td>\n<td style=\"text-align: left;\">Provided by Axsh</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">Auction</td>\n<td style=\"text-align: left;\">Donated items are auctioned to fund TLUG</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00</td>\n<td style=\"text-align: left;\">Closing</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30</td>\n<td style=\"text-align: left;\">Afterparty</td>\n<td style=\"text-align: left;\">Baird Beer Harajuku Taproom</td>\n</tr>\n</tbody>\n</table>\n<p>Presentations will be recorded and available on the TLUG YouTube channel at <a href=\"https://www.youtube.com/@TokyoLinuxUsersGroup\" rel=\"nofollow\">https://www.youtube.com/@TokyoLinuxUsersGroup</a> following the meeting.</p>\n<h2>TLUG Auction</h2>\n<p>You may bring (preferably Linus / FOSS / tech related) items to be auctioned at the meeting to help fund TLUG. Funds are used to purchase event supplies, offer student discounts, etc. Please be prepared to take unsold items back home with you, we cannot leave them at the venue.</p>\n<h2>Thanks</h2>\n<p>This meeting's venue is provided by\n<strong>Axsh:</strong>\nLighting the Future of Networks with SDN Technology\n<a href=\"https://axsh.jp\" rel=\"nofollow\">https://axsh.jp</a></p>\n<h2>Links</h2>\n<ul>\n<li><strong>TLUG:</strong> <a href=\"https://tlug.jp\" rel=\"nofollow\">https://tlug.jp</a></li>\n<li><strong>Venue:</strong> <a href=\"https://soiree-wine.com\" rel=\"nofollow\">https://soiree-wine.com</a></li>\n<li><strong>Apple Maps:</strong> <a href=\"https://maps.apple.com/place?place-id=IC6CC040218BCC856\" rel=\"nofollow\">https://maps.apple.com/place?place-id=IC6CC040218BCC856</a></li>\n<li><strong>Google Maps:</strong> <a href=\"https://maps.app.goo.gl/x7GUcvs2JWYnf8TK7\" rel=\"nofollow\">https://maps.app.goo.gl/x7GUcvs2JWYnf8TK7</a></li>\n</ul>",
-      "url": "https://tlug.connpass.com/event/398409/",
-      "image_url": "https://media.connpass.com/thumbs/ac/ea/aceac5bba9e488f1473b32f41f1c1784.png",
-      "hash_tag": "tlug",
-      "started_at": "2026-09-05T13:00:00+09:00",
-      "ended_at": "2026-09-05T16:00:00+09:00",
-      "published_at": "2026-06-24T00:37:34+09:00",
-      "limit": 25,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 16464,
-        "subdomain": "tlug",
-        "title": "Tokyo Linux Users Group",
-        "url": "https://tlug.connpass.com/"
-      },
-      "address": "〒151-0051 Tokyo, Shibuya, Sendagaya, 3 Chome−24−8 北参道Ｒ 1F",
-      "place": "Axsh / Japanese Wine Soirée",
-      "lat": "35.676507500000",
-      "lon": "139.707870500000",
-      "owner_id": 326832,
-      "owner_nickname": "bc",
-      "owner_display_name": "Brian",
-      "accepted": 21,
-      "waiting": 0,
-      "updated_at": "2026-09-05T10:08:42+09:00"
-    },
-    {
       "id": 400896,
       "title": "気ままに勉強会 スペシャル編",
       "catch": "今回のお題：～Power Platform イタリアMVP来日ミートアップ～",
@@ -233,7 +202,7 @@
       "published_at": "2026-08-11T09:02:05+09:00",
       "limit": 34,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12133,
         "subdomain": "kimamani",
@@ -264,7 +233,7 @@
       "published_at": "2026-08-28T18:23:25+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2959,
         "subdomain": "weeyble-creative",
@@ -281,6 +250,37 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-08-28T18:23:25+09:00"
+    },
+    {
+      "id": 398409,
+      "title": "TLUG Technical Meeting - September 2026",
+      "catch": "",
+      "description": "<h2>Call for Presenters:</h2>\n<p>We are currently recruiting presenters. <strong>Please contact brian@tiuxo.com if you would like to present at this meeting.</strong></p>\n<h3>Topics:</h3>\n<p>Any technology / computer / *nix / maker related topic is OK! Of course, Linux-related presentations will be prioritized.</p>\n<h3>Formats:</h3>\n<p>Any format, including short \"lightning\" talks are OK! Please indicate how much time you would like. If it cannot fit in this meeting, it will be prioritized for the next technical meeting.</p>\n<h3>Language:</h3>\n<p>TLUG presentations are in English, but please don't feel intimidated! You do not have to be a native-level English speaker to present at TLUG.</p>\n<h3>Resources:</h3>\n<p>This meeting location has a presentation screen using HDMI and available power outlets. Please indicate if there are other resource you require for your presentation.</p>\n<h2>Schedule:</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Time</th>\n<th style=\"text-align: left;\">Name</th>\n<th style=\"text-align: left;\">Presenter</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">Opening</td>\n<td style=\"text-align: left;\">TLUG</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"><strong>The Vesuvius Challenge (Scroll Prize)</strong></td>\n<td style=\"text-align: left;\"><strong>Cam</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"><strong><a href=\"http://Circled.me\" rel=\"nofollow\">Circled.me</a> - A FOSS Photo / Video Backup Solution</strong></td>\n<td style=\"text-align: left;\"><strong>Nikolay Dimitrov</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"><strong>FOSS VMWare ESXi Alternatives</strong></td>\n<td style=\"text-align: left;\"><strong>Inaba Kazuhiko</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">Konshinkai</td>\n<td style=\"text-align: left;\">Provided by Axsh</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">Auction</td>\n<td style=\"text-align: left;\">Donated items are auctioned to fund TLUG</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00</td>\n<td style=\"text-align: left;\">Closing</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30</td>\n<td style=\"text-align: left;\">Afterparty</td>\n<td style=\"text-align: left;\">Baird Beer Harajuku Taproom</td>\n</tr>\n</tbody>\n</table>\n<p>Presentations will be recorded and available on the TLUG YouTube channel at <a href=\"https://www.youtube.com/@TokyoLinuxUsersGroup\" rel=\"nofollow\">https://www.youtube.com/@TokyoLinuxUsersGroup</a> following the meeting.</p>\n<h2>TLUG Auction</h2>\n<p>You may bring (preferably Linus / FOSS / tech related) items to be auctioned at the meeting to help fund TLUG. Funds are used to purchase event supplies, offer student discounts, etc. Please be prepared to take unsold items back home with you, we cannot leave them at the venue.</p>\n<h2>Thanks</h2>\n<p>This meeting's venue is provided by\n<strong>Axsh:</strong>\nLighting the Future of Networks with SDN Technology\n<a href=\"https://axsh.jp\" rel=\"nofollow\">https://axsh.jp</a></p>\n<h2>Links</h2>\n<ul>\n<li><strong>TLUG:</strong> <a href=\"https://tlug.jp\" rel=\"nofollow\">https://tlug.jp</a></li>\n<li><strong>Venue:</strong> <a href=\"https://soiree-wine.com\" rel=\"nofollow\">https://soiree-wine.com</a></li>\n<li><strong>Apple Maps:</strong> <a href=\"https://maps.apple.com/place?place-id=IC6CC040218BCC856\" rel=\"nofollow\">https://maps.apple.com/place?place-id=IC6CC040218BCC856</a></li>\n<li><strong>Google Maps:</strong> <a href=\"https://maps.app.goo.gl/x7GUcvs2JWYnf8TK7\" rel=\"nofollow\">https://maps.app.goo.gl/x7GUcvs2JWYnf8TK7</a></li>\n</ul>",
+      "url": "https://tlug.connpass.com/event/398409/",
+      "image_url": "https://media.connpass.com/thumbs/dd/99/dd99eb94a53508313459821803e5537c.png",
+      "hash_tag": "tlug",
+      "started_at": "2026-09-05T13:00:00+09:00",
+      "ended_at": "2026-09-05T16:00:00+09:00",
+      "published_at": "2026-06-24T00:37:34+09:00",
+      "limit": 25,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 16464,
+        "subdomain": "tlug",
+        "title": "Tokyo Linux Users Group",
+        "url": "https://tlug.connpass.com/"
+      },
+      "address": "〒151-0051 Tokyo, Shibuya, Sendagaya, 3 Chome−24−8 北参道Ｒ 1F",
+      "place": "Axsh / Japanese Wine Soirée",
+      "lat": "35.676507500000",
+      "lon": "139.707870500000",
+      "owner_id": 326832,
+      "owner_nickname": "bc",
+      "owner_display_name": "Brian",
+      "accepted": 22,
+      "waiting": 0,
+      "updated_at": "2026-09-05T16:29:38+09:00"
     },
     {
       "id": 392503,
@@ -309,7 +309,7 @@
       "owner_id": 2069,
       "owner_nickname": "bash0C7",
       "owner_display_name": "bash",
-      "accepted": 101,
+      "accepted": 103,
       "waiting": 0,
       "updated_at": "2026-09-05T13:38:50+09:00"
     },
@@ -326,7 +326,7 @@
       "published_at": "2026-08-14T15:00:58+09:00",
       "limit": 250,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 6422,
         "subdomain": "iijmio",
@@ -357,7 +357,7 @@
       "published_at": "2026-08-22T17:26:00+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "〒103-0013 東京都中央区日本橋人形町２丁目３２−４人形町ロータリービル3階",
       "place": "株式会社チオン",
@@ -464,37 +464,6 @@
       "updated_at": "2026-08-31T21:55:01+09:00"
     },
     {
-      "id": 402403,
-      "title": "[6] SQL Server 2025 Deep Dive [2026-09]",
-      "catch": "MDPJP Deep Dive Series",
-      "description": "<h1><strong>Japan Microsoft Data Platform User Group</strong></h1>\n<hr>\n<p><a href=\"https://sqlserver.connpass.com/\" rel=\"nofollow\">Japan Microsoft Data Platform User Group</a>は、SQL Server、Microsoft Fabric、Azure Data Platformに関する技術情報をテーマにした勉強会を開催しているコミュニティです。</p>\n<h1><strong>Japan Microsoft Data Platform User Group Slack</strong></h1>\n<hr>\n<p><br><a href=\"https://join.slack.com/t/jssug-sqlserver/shared_invite/zt-n5r5n88h-JZgmtyYEaPErE1PxX5xxhQ\" rel=\"nofollow\">Join Japan Microsoft Data Platform User Group Slack</a><br></p>\n<h1><strong>Survey</strong></h1>\n<hr>\n<p>参加者の方は必ずアンケートの記入をお願い致します。\n<br><a href=\"https://forms.office.com/r/k5v3EBNBJf\" rel=\"nofollow\">アンケート記入用のURL</a><br></p>\n<h1><strong>Twitter</strong></h1>\n<hr>\n<p>Twitterに、必ず <a href=\"https://twitter.com/intent/tweet?hashtags=MDPJP\" rel=\"nofollow\">#MDPJP</a> を付けて、投稿をお願い致します。\n<br><a href=\"https://twitter.com/intent/tweet?hashtags=MDPJP\" rel=\"nofollow\">ワンクリックで投稿</a><br></p>\n<h1><strong>SQL Server 2025 Deep Dive</strong></h1>\n<hr>\n<p>こちらのDeep Dive Seriesでは、SQL Server 2025 に関する情報共有および学びの目的で、1か月か2か月ペースで開催します。</p>\n<p><br><a href=\"https://learn.microsoft.com/ja-jp/sql/sql-server/what-s-new-in-sql-server-2025?view=sql-server-ver17\" rel=\"nofollow\">SQL Server 2025</a><br></p>\n<h1><strong>内容(タイムテーブル)</strong></h1>\n<hr>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>時間(分)</th>\n<th>セッション</th>\n<th>録音録画</th>\n<th>スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>10:00～11:00</td>\n<td>60</td>\n<td><font color=\"red\">SQL Server 2025 Deep Dive - <a href=\"https://learn.microsoft.com/en-us/training/paths/explore-sql-server-capabilities/\" rel=\"nofollow\">Explore SQL Server 2025 capabilities</a> - SQL Server 2025上のハイブリッドデータプラットフォームを理解する(<a href=\"https://learn.microsoft.com/en-us/training/modules/understand-hybrid-data-platform-sql-server/5-azure-active-directory-azure-ad-authentication\" rel=\"nofollow\">モジュール5 Microsoft Entra認証で安全</a> ～) </font></td>\n<td>録画なし</td>\n<td><a href=\"https://connpass.com/user/yangjiayi/\" rel=\"nofollow\">Jiayi Yang</a></td>\n</tr>\n</tbody>\n</table>\n<p>※都合による変更する場合はあります。あらかじめにご了承ください。</p>\n<h1><strong>会場</strong></h1>\n<hr>\n<p>Microsoft Teams (Online)</p>\n<h1><strong>Deep Dive Series Leader 募集</strong></h1>\n<hr>\n<p>Deep Dive Seriesを担当する Leaderを募集しております。ご興味がある方は、Slack で、Yang までにご連絡ください。</p>",
-      "url": "https://sqlserver.connpass.com/event/402403/",
-      "image_url": "https://media.connpass.com/thumbs/2c/a5/2ca5a0c1ab4ca88e17dd939a139af9c9.png",
-      "hash_tag": "MDPJP",
-      "started_at": "2026-09-05T10:00:00+09:00",
-      "ended_at": "2026-09-05T11:00:00+09:00",
-      "published_at": "2026-08-01T11:10:57+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 4845,
-        "subdomain": "sqlserver",
-        "title": "MDPJP (Japan Microsoft Data Platform User Group)",
-        "url": "https://sqlserver.connpass.com/"
-      },
-      "address": "",
-      "place": "Teams Online Meeting",
-      "lat": "35.626610400000",
-      "lon": "139.740987400000",
-      "owner_id": 132797,
-      "owner_nickname": "yangjiayi",
-      "owner_display_name": "Jiayi Yang",
-      "accepted": 15,
-      "waiting": 0,
-      "updated_at": "2026-08-01T11:10:57+09:00"
-    },
-    {
       "id": 404792,
       "title": "【AWSハンズオン】CloudWatch監視入門",
       "catch": "AWS×EC2×CloudWatch",
@@ -526,6 +495,37 @@
       "updated_at": "2026-08-27T11:49:16+09:00"
     },
     {
+      "id": 402403,
+      "title": "[6] SQL Server 2025 Deep Dive [2026-09]",
+      "catch": "MDPJP Deep Dive Series",
+      "description": "<h1><strong>Japan Microsoft Data Platform User Group</strong></h1>\n<hr>\n<p><a href=\"https://sqlserver.connpass.com/\" rel=\"nofollow\">Japan Microsoft Data Platform User Group</a>は、SQL Server、Microsoft Fabric、Azure Data Platformに関する技術情報をテーマにした勉強会を開催しているコミュニティです。</p>\n<h1><strong>Japan Microsoft Data Platform User Group Slack</strong></h1>\n<hr>\n<p><br><a href=\"https://join.slack.com/t/jssug-sqlserver/shared_invite/zt-n5r5n88h-JZgmtyYEaPErE1PxX5xxhQ\" rel=\"nofollow\">Join Japan Microsoft Data Platform User Group Slack</a><br></p>\n<h1><strong>Survey</strong></h1>\n<hr>\n<p>参加者の方は必ずアンケートの記入をお願い致します。\n<br><a href=\"https://forms.office.com/r/k5v3EBNBJf\" rel=\"nofollow\">アンケート記入用のURL</a><br></p>\n<h1><strong>Twitter</strong></h1>\n<hr>\n<p>Twitterに、必ず <a href=\"https://twitter.com/intent/tweet?hashtags=MDPJP\" rel=\"nofollow\">#MDPJP</a> を付けて、投稿をお願い致します。\n<br><a href=\"https://twitter.com/intent/tweet?hashtags=MDPJP\" rel=\"nofollow\">ワンクリックで投稿</a><br></p>\n<h1><strong>SQL Server 2025 Deep Dive</strong></h1>\n<hr>\n<p>こちらのDeep Dive Seriesでは、SQL Server 2025 に関する情報共有および学びの目的で、1か月か2か月ペースで開催します。</p>\n<p><br><a href=\"https://learn.microsoft.com/ja-jp/sql/sql-server/what-s-new-in-sql-server-2025?view=sql-server-ver17\" rel=\"nofollow\">SQL Server 2025</a><br></p>\n<h1><strong>内容(タイムテーブル)</strong></h1>\n<hr>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>時間(分)</th>\n<th>セッション</th>\n<th>録音録画</th>\n<th>スピーカー(敬称略)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>10:00～11:00</td>\n<td>60</td>\n<td><font color=\"red\">SQL Server 2025 Deep Dive - <a href=\"https://learn.microsoft.com/en-us/training/paths/explore-sql-server-capabilities/\" rel=\"nofollow\">Explore SQL Server 2025 capabilities</a> - SQL Server 2025上のハイブリッドデータプラットフォームを理解する(<a href=\"https://learn.microsoft.com/en-us/training/modules/understand-hybrid-data-platform-sql-server/5-azure-active-directory-azure-ad-authentication\" rel=\"nofollow\">モジュール5 Microsoft Entra認証で安全</a> ～) </font></td>\n<td>録画なし</td>\n<td><a href=\"https://connpass.com/user/yangjiayi/\" rel=\"nofollow\">Jiayi Yang</a></td>\n</tr>\n</tbody>\n</table>\n<p>※都合による変更する場合はあります。あらかじめにご了承ください。</p>\n<h1><strong>会場</strong></h1>\n<hr>\n<p>Microsoft Teams (Online)</p>\n<h1><strong>Deep Dive Series Leader 募集</strong></h1>\n<hr>\n<p>Deep Dive Seriesを担当する Leaderを募集しております。ご興味がある方は、Slack で、Yang までにご連絡ください。</p>",
+      "url": "https://sqlserver.connpass.com/event/402403/",
+      "image_url": "https://media.connpass.com/thumbs/2c/a5/2ca5a0c1ab4ca88e17dd939a139af9c9.png",
+      "hash_tag": "MDPJP",
+      "started_at": "2026-09-05T10:00:00+09:00",
+      "ended_at": "2026-09-05T11:00:00+09:00",
+      "published_at": "2026-08-01T11:10:57+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 4845,
+        "subdomain": "sqlserver",
+        "title": "MDPJP (Japan Microsoft Data Platform User Group)",
+        "url": "https://sqlserver.connpass.com/"
+      },
+      "address": "",
+      "place": "Teams Online Meeting",
+      "lat": "35.626610400000",
+      "lon": "139.740987400000",
+      "owner_id": 132797,
+      "owner_nickname": "yangjiayi",
+      "owner_display_name": "Jiayi Yang",
+      "accepted": 15,
+      "waiting": 0,
+      "updated_at": "2026-08-01T11:10:57+09:00"
+    },
+    {
       "id": 398578,
       "title": "【渋谷】Zenn Agentic AI ミニハッカソン with Google Cloud",
       "catch": "第５回 Agentic AI Hackathonのスピンオフイベントです",
@@ -538,7 +538,7 @@
       "published_at": "2026-07-06T16:48:26+09:00",
       "limit": 270,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1001,
         "subdomain": "classmethod",
@@ -552,7 +552,7 @@
       "owner_id": 14553,
       "owner_nickname": "classmethod",
       "owner_display_name": "クラスメソッド株式会社",
-      "accepted": 200,
+      "accepted": 199,
       "waiting": 0,
       "updated_at": "2026-09-04T01:01:30+09:00"
     },
@@ -617,6 +617,68 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-30T22:01:11+09:00"
+    },
+    {
+      "id": 405436,
+      "title": "【番外編：コーダー道場まつど】はじめてのScratchプログラミング開催案内 2026年9月度",
+      "catch": "",
+      "description": "<p>プログラミングも初めて見ようとかやってみたいけどできるかどうか？迷っていたら是非！一度参加してみてください。1時間ぐらいですがゆっくりと参加者に合わせて進めて行きます。わからないところなど個別に相談したいなどもOK!です。参加してくれる子供たちをお待ちしています。<br>\nコーダー道場まつどではプログラミング未経験のお子さん向けにScratchを使用して初心者向けの道場を開催しています。まったくプログラミングをしたことがないというお子さんでも大丈夫です。１時間ほど使い方を含めて一緒にプログラミングしながらゲーム作品を作っていきます。開催日によってカリキュラムが違うので何回参加してもOK!です。<br>\n<span style=\"color:red;\">同月内でワークショップに複数回参加を希望される方は、初回参加の際に次回参加の有無をお知らせください！！<br><u>システムでの都合上、同月内同ワークショップへの参加設定ができないため個別に確認させて頂いております。</u></span><br>Scratch未経験のお子さんは奮ってご参加ください。<br>\n<br>\n<span style=\"color:red;\">ご兄弟やお友達と一緒に参加申し込みをしたいという方は、<u>予約の際、アンケートに二人目の参加者の情報もご記載ください。</u>\n<strong>１回のワークショップで２名まで参加可能です。</strong></span><br></p>\n<blockquote>\n<strong>運営チームからのお願い</strong>\n<ul>\n<li><strong style=\"color:red;\">感染症防止のため、個人情報として住所・氏名・連絡先を参加の際に控えさせて頂きます。</strong></li>\n<li>家を出る前に検温してください。熱のある方は参加は見合わせてください。</li>\n</ul>\n</blockquote>\n<blockquote>\n<strong>いつもの開催場所ではありません</strong><br>\n<ul><strong style=\"color:red;\">松戸文化ホール 4階（KITE MITE MATSUDOのとなりのビルの４階です。<br>\nプログラミングカフェの場所をお借りして行います。</strong></ul>\n</blockquote>\n<table>\n<tbody>\n<tr>\n<th>会場</th>\n<td>〒271-0092 松戸市松戸1307-1<br>\n松戸ビルヂング 4階　エレベーターホールからまっすぐ行った突き当り</td>\n</tr>\n<tr>\n<th>教材</th>\n<td>Scratch（スクラッチ）<br>\n<span style=\"font-size: 14px; font-weight: bold;\">※パソコンはこちらで準備します。</span></td>\n</tr>\n<tr>\n<th>内容</th>\n<td>開催日によって担当とプログラミングの内容が異なります。<br>\n・ジャンピングゲームをつくろう！ : 09/27 : はむさん(CoderDojo Matsudo)<br>\n・シンプルめいろゲームをつくろう！ : 09/05,19 : ほしけんさん(CoderDojo Matsudo)<br>\n・りんごキャッチゲームをつくろう！ : 09/06,12,20,26 : ヒロジィさん(CoderDojo Matsudo)<br>\n※それぞれに1回づつご参加いただくことができます。<br>\n※ご兄弟で申し込みたい方はアンケートなどでその旨をお伝えください。個別に対応させて頂きます。<br>\n※システムの都合で同じ月に2回申込みできません。<br>\n <span style=\"color:red;\">※月が替わってからお申込みいただくか、初回参加時に確認させてください。</span>\n</td>\n</tr>\n<tr>\n<th>対象</th>\n<td>小学生</td>\n</tr>\n<tr>\n<th>募集人数</th>\n<td>scratch未経験者　各開催日2名（申込は1名で兄妹友人の同伴は可）<br>\n先着順にて受け付けます。</td>\n</tr>\n<tr>\n<th>費用</th>\n<td>無料</td>\n</tr>\n<tr>\n<th>参加要件</th>\n<td>1.保護者の離席可<br>\n※保護者の方は会場内での待機いただくことをお勧めしますが、途中離席も可能です。終了時間近くにお迎いに来てください。<br>\n2.ノートPCは持ち込み不要<br>\n※パソコンはコーダー道場で準備しますが、ご自分のバソコンが使いやすいという方は持ち込んでいただいてもOK！です。<br>\n3.マウス操作ができること。</td>\n</tr>\n<tr>\n</tr><tr>\n</tr>\n</tbody>\n</table>\n<p>また、 <a href=\"https://calendar.google.com/calendar/embed?src=3hcpgo5hrf1ltg5s9h6q7u3g18%40group.calendar.google.com&amp;ctz=Asia%2FTokyo\" rel=\"nofollow\">プログラミングカフェの担当カレンダー</a>はこちらになります。<br></p>\n<p>【協力】PopcornMatsudo（中高生の居場所松戸地区）、プログラミングカフェまつど（株式会社 Cygames）</p>",
+      "url": "https://coderdojomatsudo-procafe.connpass.com/event/405436/",
+      "image_url": "https://media.connpass.com/thumbs/23/7a/237a84425d8fe240d336b02651c75e3a.png",
+      "hash_tag": "",
+      "started_at": "2026-09-05T13:00:00+09:00",
+      "ended_at": "2026-09-27T14:00:00+09:00",
+      "published_at": "2026-08-31T11:06:47+09:00",
+      "limit": 7,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 13492,
+        "subdomain": "coderdojomatsudo-procafe",
+        "title": "CoderDojo Matsudo（番外編カフェ道場）",
+        "url": "https://coderdojomatsudo-procafe.connpass.com/"
+      },
+      "address": "千葉県松戸市松戸1307-1",
+      "place": "プログラミングカフェ松戸",
+      "lat": "35.782245200000",
+      "lon": "139.898962100000",
+      "owner_id": 215792,
+      "owner_nickname": "CoderDojo",
+      "owner_display_name": "CoderDojo",
+      "accepted": 3,
+      "waiting": 0,
+      "updated_at": "2026-08-31T11:06:47+09:00"
+    },
+    {
+      "id": 389386,
+      "title": "アクセシビリティカンファレンスCHIBA2026",
+      "catch": "開催テーマ「変わるものと変わらないもの」",
+      "description": "<h2>開催概要</h2>\n<p>【日程】2026年9月5日(土曜日)<br>\n【開場・受付】11:00～<br>\n【ブース体験】11:00～18:30（体験ブース・スポンサーブース）<br>\n【セッションステージ】13:20～17:00<br>\n【交流会】17:00〜18:30<br>\n【場所】幕張メッセ　国際会議場　2階　国際会議室（千葉県千葉市美浜区中瀬2丁目1-1）<br>\n【最寄駅】JR海浜幕張駅<br>\n<br>\nライブ配信: YouTubeライブ配信<br>\n<br>\n<br>\n※お知らせ：会場一般参加枠の定員変更について（2026年6月30日追記）<br>\n本カンファレンスでは、合理的配慮の一環として、オンライン窓口（connpass）でのお申し込みが難しい方やご家族、付き添いの方を対象に、個別にオフライン申込みを受け付けております。<br>\n上記に伴う座席の確保および会場レイアウトの調整のため、会場一般参加枠の定員を150名から【120名】に変更いたしました。<br><br></p>\n<h2>受付</h2>\n<p>セッション本編開始時刻の直前は受付の混雑が予想されますので、お早めに受付をお済ませいただけますと幸いです。<br>\nイベントページ内の「受付票をみる」リンクから受付票をご用意ください。<br>\n受付にて、QRコードの読み取りを行いますので、印刷した受付票または画面キャプチャのご提示をお願いしております。<br></p>\n<h2>タイムテーブル</h2>\n<table border=\"1px\">\n<tbody><tr>\n<th>時刻</th>\n<th>内容</th>\n</tr>\n<tr>\n<td>11:00～18:30</td>\n<td>ブース体験</td>\n</tr>\n<tr>\n<td>13:00-13:15</td>\n<td>セッションステージオープニング</td>\n</tr>\n<tr>\n<td>13:20-14:00</td>\n<td>メインセッション1<br>Parabra株式会社　山上庄子さん<br>「文化芸術をひらかれたものに」\n</td>\n</tr>\n<tr>\n<td>14:05-14:25</td>\n<td>ライトニングトーク1<br>かのんさん<br>「わたしの一歩一歩」\n</td>\n</tr>\n<tr>\n<td>14:25-14:45</td>\n<td>休憩\n</td>\n</tr>\n<tr>\n<td>14:45-15:00</td>\n<td>スポンサーセッション1<br>株式会社ノベルティ　徳山申太郎さん<br>「アクセシビリティから見つけた、エンジニアとしての軸〜変わる技術、変わらない目的〜」\n</td>\n</tr>\n<tr>\n<td>15:05-15:20</td>\n<td>スポンサーセッション2<br>株式会社Gaji-Labo　高橋利明さん<br>「Issue駆動でスペシャリストの意図を届けるAIコーディングエージェントによるアクセシビリティ向上」\n</td>\n</tr>\n<tr>\n<td>15:20-15:40</td>\n<td>休憩　\n</td>\n</tr>\n<tr>\n<td>15:40-16:00</td>\n<td>ライトニングトーク2<br>株式会社コンセント　堀口真人さん<br>「営業がウェブアクセシビリティを話せると、プロジェクトが変わる　〜提案から組織浸透まで〜」\n</td>\n</tr>\n<tr>\n<td>16:05-16:45</td>\n<td>メインセッション2<br>日本航空株式会社　堀川 さくらさん<br>北 彩乃さん　池内 風香さん「JAL独自のアクセシビリティ施策　～社内資格制度を通じた人財育成～」\n</td>\n</tr>\n<tr>\n<td>16:45-17:00</td>\n<td>セッションステージクロージング</td>\n</tr>\n<tr>\n<td>17:00−18:30</td>\n<td>会場交流会</td>\n</tr>\n<tr>\n<td>17:10−17:40</td>\n<td>アッカンRadio</td>\n</tr>\n<tr>\n<td>18:30</td>\n<td>終了、退場</td>\n</tr>\n</tbody></table>\n<p>上記タイムテーブルは変更になる可能性がございます。最新のタイムテーブル、登壇情報などは順次公開して参りますので、<a href=\"https://a11y-chiba.com/2026/\" rel=\"nofollow\">公式ウェブサイト</a>をご確認ください。<br></p>\n<h2>参加枠について</h2>\n<h3>会場一般参加枠</h3>\n<p>現地にて参加いただけます。<br>\n会場懇親会(交流会)への参加を希望される場合、アンケートにてご回答お願いします。<br></p>\n<h3>会場ボランティア枠</h3>\n<p>現地にて運営ボランティアをしていただきながら、ご参加いただく枠です。<br>\n当日の受付補助、会場案内、設営や撤収作業等をお手伝いしていただきます。<br>\n事前にSlackでの連絡やお打ち合わせもご参加をお願いいたします。<br></p>\n<h3>UDトークボランティア枠</h3>\n<p>配信にてUDトークの編集ボランティアをしていただきながら、ご参加いただく枠です。<br>\n当日のUDトークのスクリプト編集をお手伝いしていただきます。<br>\n会場参加でUDトークボランテイアに参加いただける方は、専用席をご用意いたします。<br>\n事前にSlackでの連絡やツールの練習会もご参加をお願いいたします。<br></p>\n<h3>オンライン参加枠</h3>\n<p>YouTubeにて通常版・情報保障版同時配信を配信いたします。<br>\n現地参加が厳しい方は、ぜひオンライン参加枠でご参加ください。<br></p>\n<h2>情報保障版について</h2>\n<p>UDトークによる字幕（オープンキャプション）と手話による映像を配信いたします。</p>\n<h2>スポンサー情報</h2>\n<p><a href=\"https://a11y-chiba.com/2026/\" rel=\"nofollow\">公式ウェブサイト</a>をご確認ください。<br></p>\n<h2>最新情報</h2>\n<p><a href=\"https://a11y-chiba.com/2026/\" rel=\"nofollow\">公式ウェブサイト</a>、<a href=\"https://x.com/a11y_chiba\" rel=\"nofollow\">X(旧ツイッター)</a>をご確認ください。<br></p>\n<h2>会場内のバリアフリー状況</h2>\n<ul>\n<li>出入り口の幅は120cm以上ございます<br></li>\n<li>通路の幅は120cm以上を確保いたします<br></li>\n<li>会場内には車椅子が回転可能なスペース150cmを確保いたします<br></li>\n<li>会場内に段差はございません<br></li>\n<li>多目的トイレは会場の各フロアにございます<br></li>\n</ul>\n<h2>会場までの補助案内</h2>\n<p>最寄りの海浜幕張駅から会場までは点字ブロック（視覚障害者誘導用ブロック）がございます。<br>\nお手伝いが必要な方は大変お手数ですが、アンケートにてご希望内容をご記載ください。<br>\n当日は施設入り口周辺に誘導員を配置する予定です。<br></p>\n<h2>行動規範</h2>\n<p>本イベント参加に際しては<a href=\"https://a11y-chiba.com/2026/coc\" rel=\"nofollow\">行動規範</a>の遵守をお願い致します。<br></p>\n<h2>ハラスメントなどの禁止事項への対応</h2>\n<p>本イベントでは行動規範にて禁止事項を定めています。<br>\n行動規範の禁止事項に該当する行為を受けたり、目撃したりした場合、次のいずれかの手段でご連絡ください。<br></p>\n<ul>\n<li>近くの運営スタッフもしくはボランティアスタッフに声をかける（スタッフパス、スタッフTシャツを身につけています）<br></li>\n<li>問い合わせフォームから連絡をする<br></li>\n</ul>\n<p>後から気づいたり、思い出したりした場合にもご連絡ください。<br>\n登壇者、会場、スポンサーを含むイベントに関係したすべての方を守るためにも、トラブルを放置したままにせず適切な対応を行います。閉会後も1週間はご連絡を受け付けます。<br></p>\n<h2>感染症拡大に伴う対応</h2>\n<p>当日発熱(37.5度以上)がある方は参加をお断りしています。<br>\nYouTube配信からご参加ください。<br></p>\n<h2>注意事項</h2>\n<p>天災や政府による行動制限等が発生した場合は、オンライン開催のみに切り替える可能性がございます。<br>\nYouTubeのオンライン配信はネットワークなどのトラブルにより途中の映像が乱れたり一時的にストップする可能性がございます。<br>\nその際は改めてアーカイブ配信をご覧ください。ただし、全ての配信を保障できるものではありませんので予めご了承ください。<br></p>",
+      "url": "https://a11y-chiba.connpass.com/event/389386/",
+      "image_url": "https://media.connpass.com/thumbs/f8/7a/f87aaf74fb82f6458de3ec5e587101e2.png",
+      "hash_tag": "a11ychiba",
+      "started_at": "2026-09-05T11:00:00+09:00",
+      "ended_at": "2026-09-05T18:30:00+09:00",
+      "published_at": "2026-04-02T12:01:05+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 16459,
+        "subdomain": "a11y-chiba",
+        "title": "アクセシビリティカンファレンスCHIBA",
+        "url": "https://a11y-chiba.connpass.com/"
+      },
+      "address": "千葉県千葉市美浜区中瀬2丁目1-1",
+      "place": "幕張メッセ 国際会議場 2階 国際会議室",
+      "lat": "35.646731300000",
+      "lon": "140.036697900000",
+      "owner_id": 864973,
+      "owner_nickname": "sakai_novelty",
+      "owner_display_name": "sakai_novelty",
+      "accepted": 311,
+      "waiting": 2,
+      "updated_at": "2026-09-05T15:27:52+09:00"
     }
   ]
 }
