@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-07T01:36:39.418593+09:00",
+  "fetched_at": "2026-09-07T03:46:07.247837+09:00",
   "date": "20260907",
   "count": 4,
   "events": [
@@ -66,37 +66,6 @@
       "updated_at": "2026-09-05T15:59:44+09:00"
     },
     {
-      "id": 398560,
-      "title": "AI時代のソフトウェアエンジニアリングを再定義する夜",
-      "catch": "Loglass AI TALK vol.8",
-      "description": "<h2><font color=\"red\"><strong>（9/6 16:40更新）大雨の影響を踏まえた開催方法の判断タイミングにつきまして</strong></font></h2>\n<p>大雨の影響を踏まえた開催方法の変更（オンラインのみでの実施への変更）の有無につきましては、<strong> 9/7（月）朝8:00頃に最終判断をする予定</strong> でおります。<br>\n開催方法が確定次第、本イベントページにてお知らせさせていただきます。</p>\n<h2>【開催概要】</h2>\n<p>プログラミングのあり方が激変した2025年を経て、2026年の今、私たちは「ただ動くものを高速に作る」段階を超え、ソフトウェアエンジニアリングそのものの再定義を迫られています。</p>\n<p>「人間が設計し、人間が実装する」という長年の暗黙の前提が崩れるなかで、AIエージェントとどう協働し、どう品質を守り、どうチームを設計するのか。</p>\n<p><strong>本イベントでは、TDD・テスト設計の第一人者 t-wada（和田卓人）氏、AIエージェント時代の知識創造企業論を発信する広木大地氏、そしてAI駆動開発で品質と速度の統合を推進するログラス 伊藤の3名がパネルディスカッション形式で語り合います。</strong></p>\n<p>「エンジニアリングの本質」と「これからのエンジニアの生きる道」をテーマに、参加者が明日の開発に持ち帰れる「次の一手」を探る夜にします。</p>\n<p><strong>＜パネルディスカッションテーマ（予定）＞</strong><br>\n-  AI時代だからこそ、顧客への本質的な価値定義にどう向き合うか<br>\n-  AIが生成するコードの品質を、人間はどう制御するか<br>\n-  AIオーケストレーションと組織設計<br>\n-  AIとの共創時代に求められるエンジニアのスキルセットとキャリア論<br>\n※テーマは変更する可能性がございます。</p>\n<h2>【このような方にオススメ】</h2>\n<ul>\n<li>AIによって開発スピードが上がった今だからこそ、顧客への本質的な価値定義のあり方に課題を感じている方</li>\n<li>AIコーディングツールの導入だけでなく、テスト設計・仕様管理・品質プロセスへのAI統合を考えているエンジニア</li>\n<li>テックリード・EM・シニアエンジニアとして、AI前提の組織設計やチームの働き方を模索している方</li>\n<li>「Vibe Coding」から一歩進み、エンタープライズ品質とAI開発スピードの両立に向き合っている方</li>\n<li>AI時代に「変わらない原則」と「手放すべき古い常識」を問い直したいエンジニア</li>\n</ul>\n<h2>【参考資料】</h2>\n<p>AI DevEX Conference2026でのパネラーの皆さんの登壇資料もぜひご覧ください。</p>\n<p>和田様 登壇資料：<a href=\"https://speakerdeck.com/twada/agentic-software-engineering-2026-07-findy-edition\" rel=\"nofollow\">2026年のソフトウェア開発を考える（2026/07版）</a></p>\n<p>広木様 登壇資料：<a href=\"https://slide.rector.co.jp/rp/aidevex2026\" rel=\"nofollow\">AIエージェントと協働する知識創造の一年間</a></p>\n<p>伊藤 登壇資料：<a href=\"https://speakerdeck.com/itohiro73/beyond-just-vibe-coding-combining-classic-principles-with-ai-driven-development\" rel=\"nofollow\">『動くだけ』のその先へ — AI駆動開発で品質と速度を両取りする温故知新な新手法</a></p>\n<h2>【開催日時】</h2>\n<p><font size=\"4\">2026年9月7日（月）19:00〜21:30（18:45受付開始）</font></p>\n<h2>【会場】</h2>\n<p>現地参加・オンラインのハイブリッド開催です。</p>\n<h3>現地参加</h3>\n<p>・会場名：株式会社ログラス オフィス\n<br>・住所　：<a href=\"https://maps.app.goo.gl/iehWxmixeb5HwtJB8\" rel=\"nofollow\">東京都港区三田3-11-24 国際興業三田第2ビル 9階</a>\n<br>　　　　　　都営地下鉄浅草線・京浜急行電鉄「泉岳寺駅」徒歩1分\n<br>　　　　　　JR山手線・京浜東北線「高輪ゲートウェイ駅」徒歩7分\n<br>　　　　　　<img src=\"https://cdn.prod.website-files.com/634e10ec52ffb62078e9da01/66015050f9357069c53a5f9c_IMG_2018.JPG\" width=\"300\"></p>\n<h3>オンライン</h3>\n<p>イベント日開始時までに参加者限定情報欄に配信URLを記載します。</p>\n<h2>【持ち物】</h2>\n<p>お持ちの方はお名刺を1枚お持ちください（ネームホルダーに入れていただきます）</p>\n<h2>【タイムテーブル】</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45-19:00</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-20:05</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05-20:15</td>\n<td style=\"text-align: left;\">会場転換・写真撮影</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15-21:15</td>\n<td style=\"text-align: left;\">懇親会（現地参加限定）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">〜21:30</td>\n<td style=\"text-align: left;\">完全終了</td>\n</tr>\n</tbody>\n</table>\n<h1>🎤 パネラー</h1>\n<h3>和田 卓人 | <font size=\"2\"> プログラマ、テスト駆動開発者</font></h3>\n<p><img src=\"https://i.ibb.co/Q3tpjx1D/2026-06-26-15-22-30.png\" width=\"150\">\n<br>学生時代にソフトウェア工学を学び、オブジェクト指向分析/設計に傾倒。執筆活動や講演、ハンズオンイベントなどを通じてテスト駆動開発を広めようと努力している。<br>\n『プログラマが知るべき97のこと』（オライリージャパン、2010）監修。『テスト駆動開発』（オーム社、2017）翻訳。『事業をエンジニアリングする技術者たち』（ラムダノート、2022）編者。『SQLアンチパターン第2版』（オライリージャパン、2025）監訳。テストライブラリ power-assert-js 作者。\n<br>X：<a href=\"https://x.com/t_wada\" rel=\"nofollow\">@t_wada</a></p>\n<h3>広木 大地 | <font size=\"2\">株式会社レクター  代表取締役</font></h3>\n<p><img src=\"https://i.ibb.co/MyqLpBJ1/portrait.jpg\" width=\"150\">\n<br>2008年に株式会社ミクシィに入社。同社メディア開発部長、開発部部長、サービス本部長執行役員を務めた後、2015年退社。株式会社レクターを創業。技術経営アドバイザリー。著書『エンジニアリング組織論への招待』がブクログ・ビジネス書大賞、翔泳社技術書大賞受賞。一般社団法人日本CTO協会理事。朝日新聞社社外CTO。\n<br>X：<a href=\"https://x.com/hiroki_daichi\" rel=\"nofollow\">@hiroki_daichi</a></p>\n<h3>伊藤 博志 | <font size=\"2\">株式会社ログラス プロダクト開発責任者</font></h3>\n<p><img src=\"https://i.ibb.co/5WHd9j5s/itohiro-1-2.jpg\" width=\"150\"><br>\n<br>ゴールドマン・サックスのテクノロジー部に新卒入社後、基幹システム開発に従事。VP/Senior Engineerとして開発に携わり、同社発のJavaのOSSであるEclipse Collectionsのコミッター兼プロジェクトリードやOpenJDKへのコントリビュートなどOSS戦略を牽引。その後スタートアップ2社を経てREADYFORの執行役員VPoEに就任し、組織拡大や決済基盤刷新を牽引。2022年10月にログラスへ参画。現在はプロダクト開発責任者を務める。\n<br>X：<a href=\"https://x.com/itohiro73\" rel=\"nofollow\">@itohiro73</a></p>\n<h1>🎤 モデレーター</h1>\n<h3>松岡 幸一郎 | <font size=\"2\">株式会社ログラス AI基盤開発チーム</font></h3>\n<p><img src=\"https://i.ibb.co/Vp5pCH6V/2026-06-25-15-24-09.png\" width=\"150\"><br>\n<br>2020年9月にログラスに入社。開発者・アジャイルコーチとして、BtoB SaaSの複雑な領域でDDD/スクラム/XP・システムコーチングを活用し、組織としての高品質/高生産性な開発を探求。2025年よりAI基盤開発チームを立ち上げ、開発におけるAI活用を推進中。AIを活用した生産性・品質向上に取り組みながら、社内で複数チームを巻き込んだプロジェクトを展開。\n<br>X：<a href=\"https://x.com/little_hand_s\" rel=\"nofollow\">@little_hand_s</a></p>\n<h2>【主催】</h2>\n<h3>株式会社ログラス</h3>\n<p><img src=\"https://i.ibb.co/RkH3NX4K/2025-04-29-0-19-31.png\" width=\"300\">\n<br><a href=\"https://www.loglass.co.jp/recruit\" rel=\"nofollow\">ログラス採用ページ</a></p>\n<h2>【注意事項】</h2>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止、運営側の判断でご退出をお願いする場合があります。</li>\n<li>ブログやSNSなどで当イベントに関する発信を行う際には、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>当日のイベント風景を写真撮影させていただいております。内容は後日レポート記事やSNSへ掲載される場合がありますのでご了承ください。</li>\n</ul>\n<h2>【プライバシーポリシー】</h2>\n<ul>\n<li><a href=\"https://www.loglass.jp/term-and-policy/privacy-policy\" rel=\"nofollow\">株式会社ログラス プライバシーポリシー</a></li>\n<li>ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善又は新規企画のための分析、採用情報等のご案内で利用いたします。</li>\n</ul>",
-      "url": "https://loglass-tech.connpass.com/event/398560/",
-      "image_url": "https://media.connpass.com/thumbs/45/cc/45cc34e0f797b6cfae24b90d189092f0.png",
-      "hash_tag": "loglass_ai_talk",
-      "started_at": "2026-09-07T19:00:00+09:00",
-      "ended_at": "2026-09-07T21:30:00+09:00",
-      "published_at": "2026-07-14T12:00:22+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13493,
-        "subdomain": "loglass-tech",
-        "title": "株式会社ログラス",
-        "url": "https://loglass-tech.connpass.com/"
-      },
-      "address": "〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階",
-      "place": "株式会社ログラス本社",
-      "lat": "35.640438500000",
-      "lon": "139.741414800000",
-      "owner_id": 837024,
-      "owner_nickname": "dev-loglass",
-      "owner_display_name": "ログラス管理者",
-      "accepted": 561,
-      "waiting": 14,
-      "updated_at": "2026-09-06T16:55:48+09:00"
-    },
-    {
       "id": 403601,
       "title": "Grafana Meetup #10 | 民間ロケット開発を支えるGrafana",
       "catch": "Grafana Labs VPoE × OpenTelemetry共同創設者が登壇",
@@ -126,6 +95,37 @@
       "accepted": 58,
       "waiting": 1,
       "updated_at": "2026-08-26T13:40:22+09:00"
+    },
+    {
+      "id": 398560,
+      "title": "AI時代のソフトウェアエンジニアリングを再定義する夜",
+      "catch": "Loglass AI TALK vol.8",
+      "description": "<h2><font color=\"red\"><strong>（9/6 16:40更新）大雨の影響を踏まえた開催方法の判断タイミングにつきまして</strong></font></h2>\n<p>大雨の影響を踏まえた開催方法の変更（オンラインのみでの実施への変更）の有無につきましては、<strong> 9/7（月）朝8:00頃に最終判断をする予定</strong> でおります。<br>\n開催方法が確定次第、本イベントページにてお知らせさせていただきます。</p>\n<h2>【開催概要】</h2>\n<p>プログラミングのあり方が激変した2025年を経て、2026年の今、私たちは「ただ動くものを高速に作る」段階を超え、ソフトウェアエンジニアリングそのものの再定義を迫られています。</p>\n<p>「人間が設計し、人間が実装する」という長年の暗黙の前提が崩れるなかで、AIエージェントとどう協働し、どう品質を守り、どうチームを設計するのか。</p>\n<p><strong>本イベントでは、TDD・テスト設計の第一人者 t-wada（和田卓人）氏、AIエージェント時代の知識創造企業論を発信する広木大地氏、そしてAI駆動開発で品質と速度の統合を推進するログラス 伊藤の3名がパネルディスカッション形式で語り合います。</strong></p>\n<p>「エンジニアリングの本質」と「これからのエンジニアの生きる道」をテーマに、参加者が明日の開発に持ち帰れる「次の一手」を探る夜にします。</p>\n<p><strong>＜パネルディスカッションテーマ（予定）＞</strong><br>\n-  AI時代だからこそ、顧客への本質的な価値定義にどう向き合うか<br>\n-  AIが生成するコードの品質を、人間はどう制御するか<br>\n-  AIオーケストレーションと組織設計<br>\n-  AIとの共創時代に求められるエンジニアのスキルセットとキャリア論<br>\n※テーマは変更する可能性がございます。</p>\n<h2>【このような方にオススメ】</h2>\n<ul>\n<li>AIによって開発スピードが上がった今だからこそ、顧客への本質的な価値定義のあり方に課題を感じている方</li>\n<li>AIコーディングツールの導入だけでなく、テスト設計・仕様管理・品質プロセスへのAI統合を考えているエンジニア</li>\n<li>テックリード・EM・シニアエンジニアとして、AI前提の組織設計やチームの働き方を模索している方</li>\n<li>「Vibe Coding」から一歩進み、エンタープライズ品質とAI開発スピードの両立に向き合っている方</li>\n<li>AI時代に「変わらない原則」と「手放すべき古い常識」を問い直したいエンジニア</li>\n</ul>\n<h2>【参考資料】</h2>\n<p>AI DevEX Conference2026でのパネラーの皆さんの登壇資料もぜひご覧ください。</p>\n<p>和田様 登壇資料：<a href=\"https://speakerdeck.com/twada/agentic-software-engineering-2026-07-findy-edition\" rel=\"nofollow\">2026年のソフトウェア開発を考える（2026/07版）</a></p>\n<p>広木様 登壇資料：<a href=\"https://slide.rector.co.jp/rp/aidevex2026\" rel=\"nofollow\">AIエージェントと協働する知識創造の一年間</a></p>\n<p>伊藤 登壇資料：<a href=\"https://speakerdeck.com/itohiro73/beyond-just-vibe-coding-combining-classic-principles-with-ai-driven-development\" rel=\"nofollow\">『動くだけ』のその先へ — AI駆動開発で品質と速度を両取りする温故知新な新手法</a></p>\n<h2>【開催日時】</h2>\n<p><font size=\"4\">2026年9月7日（月）19:00〜21:30（18:45受付開始）</font></p>\n<h2>【会場】</h2>\n<p>現地参加・オンラインのハイブリッド開催です。</p>\n<h3>現地参加</h3>\n<p>・会場名：株式会社ログラス オフィス\n<br>・住所　：<a href=\"https://maps.app.goo.gl/iehWxmixeb5HwtJB8\" rel=\"nofollow\">東京都港区三田3-11-24 国際興業三田第2ビル 9階</a>\n<br>　　　　　　都営地下鉄浅草線・京浜急行電鉄「泉岳寺駅」徒歩1分\n<br>　　　　　　JR山手線・京浜東北線「高輪ゲートウェイ駅」徒歩7分\n<br>　　　　　　<img src=\"https://cdn.prod.website-files.com/634e10ec52ffb62078e9da01/66015050f9357069c53a5f9c_IMG_2018.JPG\" width=\"300\"></p>\n<h3>オンライン</h3>\n<p>イベント日開始時までに参加者限定情報欄に配信URLを記載します。</p>\n<h2>【持ち物】</h2>\n<p>お持ちの方はお名刺を1枚お持ちください（ネームホルダーに入れていただきます）</p>\n<h2>【タイムテーブル】</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:45-19:00</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-20:05</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05-20:15</td>\n<td style=\"text-align: left;\">会場転換・写真撮影</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15-21:15</td>\n<td style=\"text-align: left;\">懇親会（現地参加限定）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">〜21:30</td>\n<td style=\"text-align: left;\">完全終了</td>\n</tr>\n</tbody>\n</table>\n<h1>🎤 パネラー</h1>\n<h3>和田 卓人 | <font size=\"2\"> プログラマ、テスト駆動開発者</font></h3>\n<p><img src=\"https://i.ibb.co/Q3tpjx1D/2026-06-26-15-22-30.png\" width=\"150\">\n<br>学生時代にソフトウェア工学を学び、オブジェクト指向分析/設計に傾倒。執筆活動や講演、ハンズオンイベントなどを通じてテスト駆動開発を広めようと努力している。<br>\n『プログラマが知るべき97のこと』（オライリージャパン、2010）監修。『テスト駆動開発』（オーム社、2017）翻訳。『事業をエンジニアリングする技術者たち』（ラムダノート、2022）編者。『SQLアンチパターン第2版』（オライリージャパン、2025）監訳。テストライブラリ power-assert-js 作者。\n<br>X：<a href=\"https://x.com/t_wada\" rel=\"nofollow\">@t_wada</a></p>\n<h3>広木 大地 | <font size=\"2\">株式会社レクター  代表取締役</font></h3>\n<p><img src=\"https://i.ibb.co/MyqLpBJ1/portrait.jpg\" width=\"150\">\n<br>2008年に株式会社ミクシィに入社。同社メディア開発部長、開発部部長、サービス本部長執行役員を務めた後、2015年退社。株式会社レクターを創業。技術経営アドバイザリー。著書『エンジニアリング組織論への招待』がブクログ・ビジネス書大賞、翔泳社技術書大賞受賞。一般社団法人日本CTO協会理事。朝日新聞社社外CTO。\n<br>X：<a href=\"https://x.com/hiroki_daichi\" rel=\"nofollow\">@hiroki_daichi</a></p>\n<h3>伊藤 博志 | <font size=\"2\">株式会社ログラス プロダクト開発責任者</font></h3>\n<p><img src=\"https://i.ibb.co/5WHd9j5s/itohiro-1-2.jpg\" width=\"150\"><br>\n<br>ゴールドマン・サックスのテクノロジー部に新卒入社後、基幹システム開発に従事。VP/Senior Engineerとして開発に携わり、同社発のJavaのOSSであるEclipse Collectionsのコミッター兼プロジェクトリードやOpenJDKへのコントリビュートなどOSS戦略を牽引。その後スタートアップ2社を経てREADYFORの執行役員VPoEに就任し、組織拡大や決済基盤刷新を牽引。2022年10月にログラスへ参画。現在はプロダクト開発責任者を務める。\n<br>X：<a href=\"https://x.com/itohiro73\" rel=\"nofollow\">@itohiro73</a></p>\n<h1>🎤 モデレーター</h1>\n<h3>松岡 幸一郎 | <font size=\"2\">株式会社ログラス AI基盤開発チーム</font></h3>\n<p><img src=\"https://i.ibb.co/Vp5pCH6V/2026-06-25-15-24-09.png\" width=\"150\"><br>\n<br>2020年9月にログラスに入社。開発者・アジャイルコーチとして、BtoB SaaSの複雑な領域でDDD/スクラム/XP・システムコーチングを活用し、組織としての高品質/高生産性な開発を探求。2025年よりAI基盤開発チームを立ち上げ、開発におけるAI活用を推進中。AIを活用した生産性・品質向上に取り組みながら、社内で複数チームを巻き込んだプロジェクトを展開。\n<br>X：<a href=\"https://x.com/little_hand_s\" rel=\"nofollow\">@little_hand_s</a></p>\n<h2>【主催】</h2>\n<h3>株式会社ログラス</h3>\n<p><img src=\"https://i.ibb.co/RkH3NX4K/2025-04-29-0-19-31.png\" width=\"300\">\n<br><a href=\"https://www.loglass.co.jp/recruit\" rel=\"nofollow\">ログラス採用ページ</a></p>\n<h2>【注意事項】</h2>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止、運営側の判断でご退出をお願いする場合があります。</li>\n<li>ブログやSNSなどで当イベントに関する発信を行う際には、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>当日のイベント風景を写真撮影させていただいております。内容は後日レポート記事やSNSへ掲載される場合がありますのでご了承ください。</li>\n</ul>\n<h2>【プライバシーポリシー】</h2>\n<ul>\n<li><a href=\"https://www.loglass.jp/term-and-policy/privacy-policy\" rel=\"nofollow\">株式会社ログラス プライバシーポリシー</a></li>\n<li>ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善又は新規企画のための分析、採用情報等のご案内で利用いたします。</li>\n</ul>",
+      "url": "https://loglass-tech.connpass.com/event/398560/",
+      "image_url": "https://media.connpass.com/thumbs/45/cc/45cc34e0f797b6cfae24b90d189092f0.png",
+      "hash_tag": "loglass_ai_talk",
+      "started_at": "2026-09-07T19:00:00+09:00",
+      "ended_at": "2026-09-07T21:30:00+09:00",
+      "published_at": "2026-07-14T12:00:22+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13493,
+        "subdomain": "loglass-tech",
+        "title": "株式会社ログラス",
+        "url": "https://loglass-tech.connpass.com/"
+      },
+      "address": "〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階",
+      "place": "株式会社ログラス本社",
+      "lat": "35.640438500000",
+      "lon": "139.741414800000",
+      "owner_id": 837024,
+      "owner_nickname": "dev-loglass",
+      "owner_display_name": "ログラス管理者",
+      "accepted": 563,
+      "waiting": 14,
+      "updated_at": "2026-09-06T16:55:48+09:00"
     }
   ]
 }
