@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-07T05:58:27.928216+09:00",
+  "fetched_at": "2026-09-07T07:44:34.587494+09:00",
   "date": "20260907",
   "count": 4,
   "events": [
@@ -92,7 +92,7 @@
       "owner_id": 596542,
       "owner_nickname": "hiroshihori",
       "owner_display_name": "ほりひろし",
-      "accepted": 58,
+      "accepted": 56,
       "waiting": 1,
       "updated_at": "2026-08-26T13:40:22+09:00"
     },
@@ -123,7 +123,7 @@
       "owner_id": 837024,
       "owner_nickname": "dev-loglass",
       "owner_display_name": "ログラス管理者",
-      "accepted": 563,
+      "accepted": 564,
       "waiting": 14,
       "updated_at": "2026-09-06T16:55:48+09:00"
     }
