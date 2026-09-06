@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-06T09:26:26.060831+09:00",
+  "fetched_at": "2026-09-06T14:21:31.951602+09:00",
   "date": "20260906",
   "count": 11,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-07-10T22:37:00+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17757,
         "subdomain": "sugamo-nanka",
@@ -30,9 +30,9 @@
       "owner_id": 699630,
       "owner_nickname": "momoka_kamijo",
       "owner_display_name": "mk-0A0",
-      "accepted": 8,
+      "accepted": 9,
       "waiting": 0,
-      "updated_at": "2026-08-31T11:20:14+09:00"
+      "updated_at": "2026-09-06T13:49:07+09:00"
     },
     {
       "id": 402513,
@@ -47,7 +47,7 @@
       "published_at": "2026-08-08T08:31:53+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10914,
         "subdomain": "pg-beginner-mtg",
@@ -63,7 +63,7 @@
       "owner_display_name": "TAKE",
       "accepted": 10,
       "waiting": 0,
-      "updated_at": "2026-08-08T08:32:37+09:00"
+      "updated_at": "2026-09-06T14:13:59+09:00"
     },
     {
       "id": 405406,
@@ -78,7 +78,7 @@
       "published_at": "2026-08-29T13:00:00+09:00",
       "limit": 4,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4032,
         "subdomain": "iotlab",
@@ -107,9 +107,9 @@
       "started_at": "2026-09-06T13:00:00+09:00",
       "ended_at": "2026-09-06T17:00:00+09:00",
       "published_at": "2026-08-28T19:18:57+09:00",
-      "limit": 10,
+      "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2959,
         "subdomain": "weeyble-creative",
@@ -123,9 +123,9 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 7,
+      "accepted": 6,
       "waiting": 0,
-      "updated_at": "2026-09-03T13:18:01+09:00"
+      "updated_at": "2026-09-06T11:45:05+09:00"
     },
     {
       "id": 403809,
@@ -140,7 +140,7 @@
       "published_at": "2026-08-17T17:36:12+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6499,
         "subdomain": "singularitysociety",
@@ -154,9 +154,9 @@
       "owner_id": 282951,
       "owner_nickname": "Mie035",
       "owner_display_name": "Michitoshi Yano",
-      "accepted": 39,
+      "accepted": 40,
       "waiting": 0,
-      "updated_at": "2026-09-06T00:16:08+09:00"
+      "updated_at": "2026-09-06T13:18:48+09:00"
     },
     {
       "id": 404982,
@@ -171,7 +171,7 @@
       "published_at": "2026-08-26T10:46:02+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都新宿区四谷3-9",
       "place": "第一光明堂ビル 8F",
@@ -197,7 +197,7 @@
       "published_at": "2026-08-17T20:44:48+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15625,
         "subdomain": "tougebu",
@@ -228,7 +228,7 @@
       "published_at": "2026-08-30T18:13:18+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -243,7 +243,7 @@
       "owner_nickname": "iwski",
       "owner_display_name": "岩崎",
       "accepted": 35,
-      "waiting": 1,
+      "waiting": 0,
       "updated_at": "2026-08-30T18:13:18+09:00"
     },
     {
@@ -259,7 +259,7 @@
       "published_at": "2026-09-05T14:35:17+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 966,
         "subdomain": "devmorning",
@@ -290,7 +290,7 @@
       "published_at": "2026-08-09T11:35:21+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15319,
         "subdomain": "coderdojo-harumi",
@@ -321,7 +321,7 @@
       "published_at": "2026-08-29T23:56:41+09:00",
       "limit": 22,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14498,
         "subdomain": "kawagoemokumoku",
