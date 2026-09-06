@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-06T07:31:48.728426+09:00",
+  "fetched_at": "2026-09-06T09:26:26.060831+09:00",
   "date": "20260906",
-  "count": 10,
+  "count": 11,
   "events": [
     {
       "id": 400265,
@@ -66,37 +66,6 @@
       "updated_at": "2026-08-08T08:32:37+09:00"
     },
     {
-      "id": 403809,
-      "title": "The Agentic AI Day",
-      "catch": "AIを前提とした新世界の幕開け",
-      "description": "<h1>The Agentic AI Day</h1>\n<h2>はじめに</h2>\n<p>「つくる人が、増えていく。」</p>\n<p>AIを前提とする世界では、これまで一部の専門家にしか扱えなかった知識や技術を、誰もが自ら扱えるようになります。</p>\n<p>自分の現場の課題を、自分で理解し、自分でツールをつくり、自分で変えていく。</p>\n<p>「つくること」は、特別な人の仕事ではなくなろうとしています。</p>\n<p>そして、その逆も起こります。</p>\n<p>つくってきた人たちが、これまで踏み込めなかった領域へ越境していく。</p>\n<p>AIによって専門分野の境界が低くなることで、人はひとつの職能に閉じるのではなく、複数の分野を横断しながら新しい価値を生み出せるようになります。</p>\n<p>かつてルネサンス期に、レオナルド・ダ・ヴィンチが芸術、工学、科学、建築といった領域を横断したように──AIによって「万能人」と呼べる生き方が、より多くの人に開かれようとしています。</p>\n<p>一方で、これまで「つくること」を担ってきたエンジニアの役割も変わります。</p>\n<p>単にコードを書く人ではなく、人々が安全にAIを使うための基盤を作る人となり、複雑なシステムを支える守護神となり、まだ誰も到達していない領域を切り拓く開拓者となる。</p>\n<p>AIによって仕事が置き換わるという単純な話ではなく、</p>\n<p>人間の専門性そのものが、再構成されようとしている。</p>\n<p>それが、The Agentic AI Dayが考える「AIを前提とした世界」です。</p>\n<p>いま、世界では何が起きているのか</p>\n<p>「エンジニアはいらなくなる」という人がいる。</p>\n<p>一方で、「これまで以上に優秀なエンジニアが必要になる」という人もいる。</p>\n<p>さらに、「変わるのはむしろエンジニア以外の仕事だ」という議論もあります。</p>\n<p>AIエージェントがコードを書き、調査し、資料を作り、顧客と対話し、業務を遂行するようになったことで、人間とソフトウェアの関係そのものが急速に変わり始めています。</p>\n<p>コードを書く時間は減り、代わりに、何をつくるべきか・どう安全に動かすか・誰のための仕組みかを考える時間が増えていく。</p>\n<p>同時に、これまでソフトウェアを「使う側」だった人たちが、自分自身の専門知識とAIを組み合わせ、新しいプロダクトや仕事の仕組みを生み出し始めています。</p>\n<p>分業によって成立していた社会の境界が、少しずつ溶け始めています。</p>\n<p>だから、対話する</p>\n<p>The Agentic AI Dayには、すでに新しい世界をつくり始めている人たちが集まります。</p>\n<p>AI時代のプロダクトをつくる人、研究する人、AIそのものを提供する人、そしてテクノロジーの外側からAIと出会い、自分の現場を変え始めた人。</p>\n<p>AIによって何が変わるのか。</p>\n<p>人間はどんな仕事をするようになるのか。</p>\n<p>私たちは、どんな人生を生きられるようになるのか。</p>\n<p>肩書きや専門にかかわらず、これから踏み出そうとするすべての人と、分野を越えて語り合う一日。</p>\n<p>それが The Agentic AI Day です。</p>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>Timeline</th>\n<th>Title</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>12:30～</td>\n<td>開場受付</td>\n<td>-</td>\n</tr>\n<tr>\n<td>13:00～</td>\n<td>はじめに</td>\n<td>小安さん &amp; 矢野</td>\n</tr>\n<tr>\n<td>13:10～</td>\n<td>会場スポンサーLT</td>\n<td>山本さん / Findy</td>\n</tr>\n<tr>\n<td>13:20～</td>\n<td>講演(45分)</td>\n<td>中島聡さん</td>\n</tr>\n<tr>\n<td>14:05～</td>\n<td>休憩(10分)</td>\n<td>-</td>\n</tr>\n<tr>\n<td>14:15～</td>\n<td>講演(30分)</td>\n<td>有本さん</td>\n</tr>\n<tr>\n<td>14:45～</td>\n<td>休憩(10分)</td>\n<td>-</td>\n</tr>\n<tr>\n<td>14:55～</td>\n<td>講演(15分)</td>\n<td>森本さん</td>\n</tr>\n<tr>\n<td>15:10～</td>\n<td>講演(15分)</td>\n<td>藤井さん</td>\n</tr>\n<tr>\n<td>15:25～</td>\n<td>講演(15分)</td>\n<td>クリエイター上杉さん</td>\n</tr>\n<tr>\n<td>15:40～</td>\n<td>休憩(10分)</td>\n<td>-</td>\n</tr>\n<tr>\n<td>15:50～</td>\n<td>講演(15分)</td>\n<td>小安さん</td>\n</tr>\n<tr>\n<td>16:05～</td>\n<td>講演(15分)</td>\n<td>安宅さん</td>\n</tr>\n<tr>\n<td>16:20～</td>\n<td>講演(15分)</td>\n<td>高橋さん</td>\n</tr>\n<tr>\n<td>16:35～</td>\n<td>講演(15分)</td>\n<td>吉永さん</td>\n</tr>\n<tr>\n<td>16:50～</td>\n<td>ネットワーキング</td>\n<td>全員</td>\n</tr>\n<tr>\n<td>18:30</td>\n<td>クロージング</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>完全撤収</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは予告なく変更になることがあります。</p>\n<hr>\n<h2>登壇者</h2>\n<h3>中島 聡(エンジニア、起業家、エンジェル投資家)</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/nakajima 01.jpeg?chiikawa=love\" alt=\"Satoshi Nakajima\" width=\"70%\">\n<br>\n工学修士（早稲田大学）、MBA（ワシントン大学）。\n1989年に渡米し、ソフトウェアアーキテクトとしてMicrosoft本社で Windows 95、Internet Explorer 3.0/4.0 を開発。\n2000年に UIEvolution を起業、04年にスクウェア・エニックスに売却（$56 million）。07年に MBO で買い戻したのち、車載機向けのソフトウェア会社Xevo Inc.として成功させ 19年に Lear に売却（ $320 million）。\n主な著書に「なぜ、あなたの仕事は終わらないのか」（15万部）。\nメルマガ「週刊 Life is Beautiful」を発行。\n現在は、GraphAI、MulmoCastの開発に従事。\n一般社団法人シンギュラリティ・ソサエティ代表理事</p>\n<h3>有本 勇</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/ssia.png\n?chiikawa=love\" alt=\"arimoto\" width=\"40%\">\n<br>\nフルスタックエンジニアとして、複数のスタートアップの立ち上げ・技術戦略を支援。\n2019年頃からはTypeScriptを軸にFirebase × Vue.jsを中心としたプロダクト開発を推進。</p>\n<p>オープンソース活動として、2020年 <a href=\"http://おもちかえり.com\" rel=\"nofollow\">おもちかえり.com</a>,  2022年にSolidityを用いたWeb3ツール、2023年にSlashGPT、2024年にGraphAI、2025年はMulmoCast、2026年はMulmoClaude/MulmoTerminal の設計・実装に注力するなど、毎年異なる領域でプロトタイプと実装を重ねている。</p>\n<p>一般社団法人シンギュラリティ・ソサエティ アドバイザー / <a href=\"http://TNE.ai\" rel=\"nofollow\">TNE.ai</a> Senior Principal Architect</p>\n<h3>森本</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/morimoto.png\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>明治大学卒。2023年から3年間、AI電話エージェント「<a href=\"http://nocall.ai\" rel=\"nofollow\">nocall.ai</a>」の共同創業者・CTOとして、リアルタイム音声基盤とLLMオーケストレーションを設計し、月間数万件のコールを処理する本番システムを構築・運用した。株式会社未来予知を創業し、現在はワールドモデルの研究・開発に取り組んでいる。</p>\n<h3>吉永 和貴</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/kazutaka_yoshinaga.png\n?chiikawa=love\" alt=\"kazutaka_yoshinaga\" width=\"40%\"></p>\n<p>医師•起業家•エンジニア。病院向けのWEB問診「メルプ」を創業し、JMDCに売却。現在1600病院に導入。ネコ型おしゃべりロボット「ミーア」を開発中（<a href=\"https://mia-cat.com\" rel=\"nofollow\">https://mia-cat.com</a>）です。</p>\n<h3>藤井迪生</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/fujii_pic.webp\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>船舶の運航ノウハウを研究する独立研究者。自身の実務経験に基づいて、船上のヒヤリハット・事故分析ツールを開発、2026年9月より110隻のタンカーで実証実験予定。並行して、現場で使う対話型Botも開発中。MulmoClaude/MulmoTerminalの熱心な愛用者。博士（工学）・一級海技士（航海）・合同会社ふねがく海事科学研究所(<a href=\"https://corp.fune-gaku.com\" rel=\"nofollow\">https://corp.fune-gaku.com</a>) 代表</p>\n<h3>クリエイター上杉</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/Creator_Uesugi.jpg\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>「こんなのあったら面白い」を形にするクリエイター。名刺トレカ、農業支援、日本酒、思い出を未来に残すサービスなど、ジャンルを飛び越えながら、毎日が少しワクワクする仕組みを作って楽しんでいます♪</p>\n<h3>髙橋 祐樹</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/yuki_takahashi.png\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>20年以上、会社に属さず、個人で仕事をしてきました。「いつでもサーフィンできる働き方」を大切に、現在は法人を経営しながらも、基本は一人で仕事を進めています。以前は外注や業務委託で人に頼んでいた仕事も、今ではAIエージェントに任せることが増え、一人でできる仕事の範囲が大きく広がっています。</p>\n<p>企業のAI活用支援・AI機能開発、エンジニア向け研修に携わるほか、シンギュラリティ・ソサエティで「生成AI実践勉強会」を隔週開催。地域ではAIを活用した「若葉台コミュニティラジオ」と住民向けAI活用講座を、趣味ではAIエージェントの使い方と実践を伝えるサーファー向け勉強会「SurfLab」を運営。仕事・地域・趣味の現場で、AIを使いこなす人を増やしています。</p>\n<p>静岡のサーフィン施設・サーフスタジアム静波に、たぶん日本一通うサーファー。株式会社FeeMail（<a href=\"https://www.feemail.co.jp/）\" rel=\"nofollow\">https://www.feemail.co.jp/）</a> 代表</p>\n<h3>安宅 滉貴</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/rcj_adake.jpg\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>業界特化型の求人サービスで営業を担当。あわせて、導入後のお客様の運用支援と、集客からの問い合わせ獲得にも携わる。BigQuery／SQLでのデータ加工と、HubSpotの運用設計にも携わる。</p>\n<p>日々使う業務画面には、ブラウザ上で動く自作のスクリプトを足して手作業を減らしている。Raycastの設定やキーボード周りなど、手元の作業環境も常にいじっている。</p>\n<h3>小安 宗徳/司会(<a href=\"https://x.com/ux_kys\" rel=\"nofollow\">@ux_kys</a>)</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/munenorikoyasu.jpg?chiikawa=love\" alt=\"koyasu\" width=\"40%\">\n<br>\n東京都文京区を拠点に活動。ソフトウェアや、Webサイトのデザインを行なっている。\n東京電機大学社会人博士課程、情報通信メディア工学に在籍し、UXについての知見を深めている。</p>\n<hr>\n<h2>会場スポンサー</h2>\n<h3>ファインディ株式会社</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/findy_logo_RGB-color-yoko.png?chiikawa=love\" alt=\"ファインディ株式会社\" width=\"60%\"></p>\n<p>「挑戦するエンジニアのプラットフォームをつくる。」をビジョンに掲げ、開発ツールのレビューサイト「Findy Tools」や、テックカンファレンスに特化したイベントプラットフォーム「Findy Conference」などを提供しています。</p>\n<p>また、エンジニアコミュニティや技術勉強会への会場提供・共催・スポンサー活動にも取り組んでいます。</p>\n<hr>\n<h2>主催について</h2>\n<h3>一般社団法人シンギュラリティ・ソサエティ</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/singularity-society.png?chiikawa=love\" alt=\"Singularity Society\" width=\"70%\"></p>\n<p>シンギュラリティ・ソサエティは、中島聡x夏野剛の呼びかけにより設立された、人工知能を活用したアプリケーションやサービスを通じて、内発的動機に基づき行動するエンジニア、起業家、社会起業家をサポートするコミュニティーです。テクノロジーを中心とした新たな経済の波に適応し、それをリードするための人材育成とネットワークのプラットフォームを提供しています。我々の活動は、最先端技術の活用に留まらず、社会課題の解決、企業のイノベーション促進、そして個人の創造性と能力の発展を目指しています。\nソサエティ内の各種プロジェクトへの参加や、半年間の長期ハッカソンブートキャンプを通じて、参加者は実用的なアプリケーションやサービスの開発だけでなく、社会の変化に対応するための深い理解と、それを実現するための技術的スキルを身につけます。このプロセスでは、急速な技術進化に対応するために必要な知識とツールを提供し、明るい未来を創造するためのビジネスチャンスの発見も重要な要素です。\n特に、デジタルネイティブ世代にとっては、テクノロジーを駆使しながら新たな時代の起業家として世界をリードする力を養う場を提供しています。勉強、議論、情報発信、ネットワーク作り、そして起業支援を通じて、テクノロジーの可能性を最大限に活かし、社会に貢献することを目指しています。この使命のもと、シンギュラリティ・ソサエティは、未来を担う人材の育成と、テクノロジーを用いた社会の革新に貢献していきます。</p>\n<hr>\n<h2>後援について</h2>\n<h3>DevX/Raycast Community Japan</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/devx.png?chiikawa=love\" alt=\"Singularity Society\" width=\"20%\"></p>\n<p>DevXは、Developer eXperienceに関心があるエンジニアやデザイナーやビジネス職で構成されるチームです。\n特にGlobalで人気のあるDevX toolsなどを取り上げ感度の高い人々のネットワークを形成し日本の生産性向上への貢献を目指しております！\n熱量の高いボランティアで構成されています。\n私たちは、Raycast Community Japan(ユーザーコミュニティ)を企画運営しています。\n世界最高峰の製品と作る人たちの居場所となるという目標を掲げ当イベントの企画や運営を支援しています。</p>\n<hr>\n<h2>お問い合わせ</h2>\n<p>疑問点などは\n矢野までお問い合わせください。\n<br><a href=\"https://x.com/nagauta_jp\" rel=\"nofollow\">https://x.com/nagauta_jp</a></p>\n<hr>\n<h2>行動規範</h2>\n<hr>\n<h2>個人情報保護について</h2>\n<p>勉強会の会場へ入館申請を行うため、参加者の本名やメールアドレスの情報を頂く場合があります。</p>\n<p>そのため、connpassの事前アンケートで頂いた個人情報を以下に定める内容にて取り扱います。</p>\n<h2>個人情報の利用目的について</h2>\n<p>ご提供いただいた個人情報は、以下に定める目的にのみ利用いたします。</p>\n<ul>\n<li>コミュニティ開催会場の入館申請手続き</li>\n<li>勉強会の申し込み者の入館時のご本人確認</li>\n</ul>\n<h2>個人情報の取扱</h2>\n<p>取得した個人情報は、connpassでの入力により取得を行います。</p>\n<p>当サイト上での個人情報の取得にあたっては、提供時における確認などのクリックによって本人の同意を得たものとします。</p>\n<p>当コミュニティでは、次のいずれかに該当する場合を除き、個人情報を第三者に開示・提供いたしません。</p>\n<ul>\n<li>会場入館の目的に沿って会場提供者（社）に入館申請を行う場合</li>\n<li>本人の同意がある場合</li>\n<li>本人の生命の保護などのために必要な場合であって、緊急を要するなど、ご本人の同意を得ることが困難である場合</li>\n</ul>",
-      "url": "https://singularitysociety.connpass.com/event/403809/",
-      "image_url": "https://media.connpass.com/thumbs/76/05/760594af705cb3a26019b17777f60b9c.png",
-      "hash_tag": "",
-      "started_at": "2026-09-06T13:00:00+09:00",
-      "ended_at": "2026-09-06T19:00:00+09:00",
-      "published_at": "2026-08-17T17:36:12+09:00",
-      "limit": 50,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 6499,
-        "subdomain": "singularitysociety",
-        "title": "Singularity Society",
-        "url": "https://singularitysociety.connpass.com/"
-      },
-      "address": "東京都品川区大崎１丁目２−２ アートヴィレッジ大崎セントラルタワー",
-      "place": "ファインディ株式会社",
-      "lat": "35.622377100000",
-      "lon": "139.727459400000",
-      "owner_id": 282951,
-      "owner_nickname": "Mie035",
-      "owner_display_name": "Michitoshi Yano",
-      "accepted": 37,
-      "waiting": 0,
-      "updated_at": "2026-09-06T00:16:08+09:00"
-    },
-    {
       "id": 405406,
       "title": "電子工作ワークショップ（ラズパイ編）",
       "catch": "Raspberry Piお貸し出しのハンズオンワークショップです",
@@ -157,6 +126,37 @@
       "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-09-03T13:18:01+09:00"
+    },
+    {
+      "id": 403809,
+      "title": "The Agentic AI Day",
+      "catch": "AIを前提とした新世界の幕開け",
+      "description": "<h1>The Agentic AI Day</h1>\n<h2>はじめに</h2>\n<p>「つくる人が、増えていく。」</p>\n<p>AIを前提とする世界では、これまで一部の専門家にしか扱えなかった知識や技術を、誰もが自ら扱えるようになります。</p>\n<p>自分の現場の課題を、自分で理解し、自分でツールをつくり、自分で変えていく。</p>\n<p>「つくること」は、特別な人の仕事ではなくなろうとしています。</p>\n<p>そして、その逆も起こります。</p>\n<p>つくってきた人たちが、これまで踏み込めなかった領域へ越境していく。</p>\n<p>AIによって専門分野の境界が低くなることで、人はひとつの職能に閉じるのではなく、複数の分野を横断しながら新しい価値を生み出せるようになります。</p>\n<p>かつてルネサンス期に、レオナルド・ダ・ヴィンチが芸術、工学、科学、建築といった領域を横断したように──AIによって「万能人」と呼べる生き方が、より多くの人に開かれようとしています。</p>\n<p>一方で、これまで「つくること」を担ってきたエンジニアの役割も変わります。</p>\n<p>単にコードを書く人ではなく、人々が安全にAIを使うための基盤を作る人となり、複雑なシステムを支える守護神となり、まだ誰も到達していない領域を切り拓く開拓者となる。</p>\n<p>AIによって仕事が置き換わるという単純な話ではなく、</p>\n<p>人間の専門性そのものが、再構成されようとしている。</p>\n<p>それが、The Agentic AI Dayが考える「AIを前提とした世界」です。</p>\n<p>いま、世界では何が起きているのか</p>\n<p>「エンジニアはいらなくなる」という人がいる。</p>\n<p>一方で、「これまで以上に優秀なエンジニアが必要になる」という人もいる。</p>\n<p>さらに、「変わるのはむしろエンジニア以外の仕事だ」という議論もあります。</p>\n<p>AIエージェントがコードを書き、調査し、資料を作り、顧客と対話し、業務を遂行するようになったことで、人間とソフトウェアの関係そのものが急速に変わり始めています。</p>\n<p>コードを書く時間は減り、代わりに、何をつくるべきか・どう安全に動かすか・誰のための仕組みかを考える時間が増えていく。</p>\n<p>同時に、これまでソフトウェアを「使う側」だった人たちが、自分自身の専門知識とAIを組み合わせ、新しいプロダクトや仕事の仕組みを生み出し始めています。</p>\n<p>分業によって成立していた社会の境界が、少しずつ溶け始めています。</p>\n<p>だから、対話する</p>\n<p>The Agentic AI Dayには、すでに新しい世界をつくり始めている人たちが集まります。</p>\n<p>AI時代のプロダクトをつくる人、研究する人、AIそのものを提供する人、そしてテクノロジーの外側からAIと出会い、自分の現場を変え始めた人。</p>\n<p>AIによって何が変わるのか。</p>\n<p>人間はどんな仕事をするようになるのか。</p>\n<p>私たちは、どんな人生を生きられるようになるのか。</p>\n<p>肩書きや専門にかかわらず、これから踏み出そうとするすべての人と、分野を越えて語り合う一日。</p>\n<p>それが The Agentic AI Day です。</p>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>Timeline</th>\n<th>Title</th>\n<th>発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>12:30～</td>\n<td>開場受付</td>\n<td>-</td>\n</tr>\n<tr>\n<td>13:00～</td>\n<td>はじめに</td>\n<td>小安さん &amp; 矢野</td>\n</tr>\n<tr>\n<td>13:10～</td>\n<td>会場スポンサーLT</td>\n<td>山本さん / Findy</td>\n</tr>\n<tr>\n<td>13:20～</td>\n<td>講演(45分)</td>\n<td>中島聡さん</td>\n</tr>\n<tr>\n<td>14:05～</td>\n<td>休憩(10分)</td>\n<td>-</td>\n</tr>\n<tr>\n<td>14:15～</td>\n<td>講演(30分)</td>\n<td>有本さん</td>\n</tr>\n<tr>\n<td>14:45～</td>\n<td>休憩(10分)</td>\n<td>-</td>\n</tr>\n<tr>\n<td>14:55～</td>\n<td>講演(15分)</td>\n<td>森本さん</td>\n</tr>\n<tr>\n<td>15:10～</td>\n<td>講演(15分)</td>\n<td>藤井さん</td>\n</tr>\n<tr>\n<td>15:25～</td>\n<td>講演(15分)</td>\n<td>クリエイター上杉さん</td>\n</tr>\n<tr>\n<td>15:40～</td>\n<td>休憩(10分)</td>\n<td>-</td>\n</tr>\n<tr>\n<td>15:50～</td>\n<td>講演(15分)</td>\n<td>小安さん</td>\n</tr>\n<tr>\n<td>16:05～</td>\n<td>講演(15分)</td>\n<td>安宅さん</td>\n</tr>\n<tr>\n<td>16:20～</td>\n<td>講演(15分)</td>\n<td>高橋さん</td>\n</tr>\n<tr>\n<td>16:35～</td>\n<td>講演(15分)</td>\n<td>吉永さん</td>\n</tr>\n<tr>\n<td>16:50～</td>\n<td>ネットワーキング</td>\n<td>全員</td>\n</tr>\n<tr>\n<td>18:30</td>\n<td>クロージング</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>完全撤収</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは予告なく変更になることがあります。</p>\n<hr>\n<h2>登壇者</h2>\n<h3>中島 聡(エンジニア、起業家、エンジェル投資家)</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/nakajima 01.jpeg?chiikawa=love\" alt=\"Satoshi Nakajima\" width=\"70%\">\n<br>\n工学修士（早稲田大学）、MBA（ワシントン大学）。\n1989年に渡米し、ソフトウェアアーキテクトとしてMicrosoft本社で Windows 95、Internet Explorer 3.0/4.0 を開発。\n2000年に UIEvolution を起業、04年にスクウェア・エニックスに売却（$56 million）。07年に MBO で買い戻したのち、車載機向けのソフトウェア会社Xevo Inc.として成功させ 19年に Lear に売却（ $320 million）。\n主な著書に「なぜ、あなたの仕事は終わらないのか」（15万部）。\nメルマガ「週刊 Life is Beautiful」を発行。\n現在は、GraphAI、MulmoCastの開発に従事。\n一般社団法人シンギュラリティ・ソサエティ代表理事</p>\n<h3>有本 勇</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/ssia.png\n?chiikawa=love\" alt=\"arimoto\" width=\"40%\">\n<br>\nフルスタックエンジニアとして、複数のスタートアップの立ち上げ・技術戦略を支援。\n2019年頃からはTypeScriptを軸にFirebase × Vue.jsを中心としたプロダクト開発を推進。</p>\n<p>オープンソース活動として、2020年 <a href=\"http://おもちかえり.com\" rel=\"nofollow\">おもちかえり.com</a>,  2022年にSolidityを用いたWeb3ツール、2023年にSlashGPT、2024年にGraphAI、2025年はMulmoCast、2026年はMulmoClaude/MulmoTerminal の設計・実装に注力するなど、毎年異なる領域でプロトタイプと実装を重ねている。</p>\n<p>一般社団法人シンギュラリティ・ソサエティ アドバイザー / <a href=\"http://TNE.ai\" rel=\"nofollow\">TNE.ai</a> Senior Principal Architect</p>\n<h3>森本</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/morimoto.png\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>明治大学卒。2023年から3年間、AI電話エージェント「<a href=\"http://nocall.ai\" rel=\"nofollow\">nocall.ai</a>」の共同創業者・CTOとして、リアルタイム音声基盤とLLMオーケストレーションを設計し、月間数万件のコールを処理する本番システムを構築・運用した。株式会社未来予知を創業し、現在はワールドモデルの研究・開発に取り組んでいる。</p>\n<h3>吉永 和貴</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/kazutaka_yoshinaga.png\n?chiikawa=love\" alt=\"kazutaka_yoshinaga\" width=\"40%\"></p>\n<p>医師•起業家•エンジニア。病院向けのWEB問診「メルプ」を創業し、JMDCに売却。現在1600病院に導入。ネコ型おしゃべりロボット「ミーア」を開発中（<a href=\"https://mia-cat.com\" rel=\"nofollow\">https://mia-cat.com</a>）です。</p>\n<h3>藤井迪生</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/fujii_pic.webp\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>船舶の運航ノウハウを研究する独立研究者。自身の実務経験に基づいて、船上のヒヤリハット・事故分析ツールを開発、2026年9月より110隻のタンカーで実証実験予定。並行して、現場で使う対話型Botも開発中。MulmoClaude/MulmoTerminalの熱心な愛用者。博士（工学）・一級海技士（航海）・合同会社ふねがく海事科学研究所(<a href=\"https://corp.fune-gaku.com\" rel=\"nofollow\">https://corp.fune-gaku.com</a>) 代表</p>\n<h3>クリエイター上杉</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/Creator_Uesugi.jpg\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>「こんなのあったら面白い」を形にするクリエイター。名刺トレカ、農業支援、日本酒、思い出を未来に残すサービスなど、ジャンルを飛び越えながら、毎日が少しワクワクする仕組みを作って楽しんでいます♪</p>\n<h3>髙橋 祐樹</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/yuki_takahashi.png\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>20年以上、会社に属さず、個人で仕事をしてきました。「いつでもサーフィンできる働き方」を大切に、現在は法人を経営しながらも、基本は一人で仕事を進めています。以前は外注や業務委託で人に頼んでいた仕事も、今ではAIエージェントに任せることが増え、一人でできる仕事の範囲が大きく広がっています。</p>\n<p>企業のAI活用支援・AI機能開発、エンジニア向け研修に携わるほか、シンギュラリティ・ソサエティで「生成AI実践勉強会」を隔週開催。地域ではAIを活用した「若葉台コミュニティラジオ」と住民向けAI活用講座を、趣味ではAIエージェントの使い方と実践を伝えるサーファー向け勉強会「SurfLab」を運営。仕事・地域・趣味の現場で、AIを使いこなす人を増やしています。</p>\n<p>静岡のサーフィン施設・サーフスタジアム静波に、たぶん日本一通うサーファー。株式会社FeeMail（<a href=\"https://www.feemail.co.jp/）\" rel=\"nofollow\">https://www.feemail.co.jp/）</a> 代表</p>\n<h3>安宅 滉貴</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/rcj_adake.jpg\n?chiikawa=love\" alt=\"morimoto\" width=\"40%\"></p>\n<p>業界特化型の求人サービスで営業を担当。あわせて、導入後のお客様の運用支援と、集客からの問い合わせ獲得にも携わる。BigQuery／SQLでのデータ加工と、HubSpotの運用設計にも携わる。</p>\n<p>日々使う業務画面には、ブラウザ上で動く自作のスクリプトを足して手作業を減らしている。Raycastの設定やキーボード周りなど、手元の作業環境も常にいじっている。</p>\n<h3>小安 宗徳/司会(<a href=\"https://x.com/ux_kys\" rel=\"nofollow\">@ux_kys</a>)</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/munenorikoyasu.jpg?chiikawa=love\" alt=\"koyasu\" width=\"40%\">\n<br>\n東京都文京区を拠点に活動。ソフトウェアや、Webサイトのデザインを行なっている。\n東京電機大学社会人博士課程、情報通信メディア工学に在籍し、UXについての知見を深めている。</p>\n<hr>\n<h2>会場スポンサー</h2>\n<h3>ファインディ株式会社</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/findy_logo_RGB-color-yoko.png?chiikawa=love\" alt=\"ファインディ株式会社\" width=\"60%\"></p>\n<p>「挑戦するエンジニアのプラットフォームをつくる。」をビジョンに掲げ、開発ツールのレビューサイト「Findy Tools」や、テックカンファレンスに特化したイベントプラットフォーム「Findy Conference」などを提供しています。</p>\n<p>また、エンジニアコミュニティや技術勉強会への会場提供・共催・スポンサー活動にも取り組んでいます。</p>\n<hr>\n<h2>主催について</h2>\n<h3>一般社団法人シンギュラリティ・ソサエティ</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/singularity-society.png?chiikawa=love\" alt=\"Singularity Society\" width=\"70%\"></p>\n<p>シンギュラリティ・ソサエティは、中島聡x夏野剛の呼びかけにより設立された、人工知能を活用したアプリケーションやサービスを通じて、内発的動機に基づき行動するエンジニア、起業家、社会起業家をサポートするコミュニティーです。テクノロジーを中心とした新たな経済の波に適応し、それをリードするための人材育成とネットワークのプラットフォームを提供しています。我々の活動は、最先端技術の活用に留まらず、社会課題の解決、企業のイノベーション促進、そして個人の創造性と能力の発展を目指しています。\nソサエティ内の各種プロジェクトへの参加や、半年間の長期ハッカソンブートキャンプを通じて、参加者は実用的なアプリケーションやサービスの開発だけでなく、社会の変化に対応するための深い理解と、それを実現するための技術的スキルを身につけます。このプロセスでは、急速な技術進化に対応するために必要な知識とツールを提供し、明るい未来を創造するためのビジネスチャンスの発見も重要な要素です。\n特に、デジタルネイティブ世代にとっては、テクノロジーを駆使しながら新たな時代の起業家として世界をリードする力を養う場を提供しています。勉強、議論、情報発信、ネットワーク作り、そして起業支援を通じて、テクノロジーの可能性を最大限に活かし、社会に貢献することを目指しています。この使命のもと、シンギュラリティ・ソサエティは、未来を担う人材の育成と、テクノロジーを用いた社会の革新に貢献していきます。</p>\n<hr>\n<h2>後援について</h2>\n<h3>DevX/Raycast Community Japan</h3>\n<p><img src=\"https://pub-2cbc59aff1294950a3511943522ff510.r2.dev/devx.png?chiikawa=love\" alt=\"Singularity Society\" width=\"20%\"></p>\n<p>DevXは、Developer eXperienceに関心があるエンジニアやデザイナーやビジネス職で構成されるチームです。\n特にGlobalで人気のあるDevX toolsなどを取り上げ感度の高い人々のネットワークを形成し日本の生産性向上への貢献を目指しております！\n熱量の高いボランティアで構成されています。\n私たちは、Raycast Community Japan(ユーザーコミュニティ)を企画運営しています。\n世界最高峰の製品と作る人たちの居場所となるという目標を掲げ当イベントの企画や運営を支援しています。</p>\n<hr>\n<h2>お問い合わせ</h2>\n<p>疑問点などは\n矢野までお問い合わせください。\n<br><a href=\"https://x.com/nagauta_jp\" rel=\"nofollow\">https://x.com/nagauta_jp</a></p>\n<hr>\n<h2>行動規範</h2>\n<hr>\n<h2>個人情報保護について</h2>\n<p>勉強会の会場へ入館申請を行うため、参加者の本名やメールアドレスの情報を頂く場合があります。</p>\n<p>そのため、connpassの事前アンケートで頂いた個人情報を以下に定める内容にて取り扱います。</p>\n<h2>個人情報の利用目的について</h2>\n<p>ご提供いただいた個人情報は、以下に定める目的にのみ利用いたします。</p>\n<ul>\n<li>コミュニティ開催会場の入館申請手続き</li>\n<li>勉強会の申し込み者の入館時のご本人確認</li>\n</ul>\n<h2>個人情報の取扱</h2>\n<p>取得した個人情報は、connpassでの入力により取得を行います。</p>\n<p>当サイト上での個人情報の取得にあたっては、提供時における確認などのクリックによって本人の同意を得たものとします。</p>\n<p>当コミュニティでは、次のいずれかに該当する場合を除き、個人情報を第三者に開示・提供いたしません。</p>\n<ul>\n<li>会場入館の目的に沿って会場提供者（社）に入館申請を行う場合</li>\n<li>本人の同意がある場合</li>\n<li>本人の生命の保護などのために必要な場合であって、緊急を要するなど、ご本人の同意を得ることが困難である場合</li>\n</ul>",
+      "url": "https://singularitysociety.connpass.com/event/403809/",
+      "image_url": "https://media.connpass.com/thumbs/76/05/760594af705cb3a26019b17777f60b9c.png",
+      "hash_tag": "",
+      "started_at": "2026-09-06T13:00:00+09:00",
+      "ended_at": "2026-09-06T19:00:00+09:00",
+      "published_at": "2026-08-17T17:36:12+09:00",
+      "limit": 50,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 6499,
+        "subdomain": "singularitysociety",
+        "title": "Singularity Society",
+        "url": "https://singularitysociety.connpass.com/"
+      },
+      "address": "東京都品川区大崎１丁目２−２ アートヴィレッジ大崎セントラルタワー",
+      "place": "ファインディ株式会社",
+      "lat": "35.622377100000",
+      "lon": "139.727459400000",
+      "owner_id": 282951,
+      "owner_nickname": "Mie035",
+      "owner_display_name": "Michitoshi Yano",
+      "accepted": 39,
+      "waiting": 0,
+      "updated_at": "2026-09-06T00:16:08+09:00"
     },
     {
       "id": 404982,
@@ -273,7 +273,7 @@
       "owner_id": 27530,
       "owner_nickname": "tejitak",
       "owner_display_name": "tejitak",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-09-05T14:35:17+09:00"
     },
@@ -307,6 +307,37 @@
       "accepted": 9,
       "waiting": 0,
       "updated_at": "2026-08-09T11:35:21+09:00"
+    },
+    {
+      "id": 405338,
+      "title": "川越インディーゲーム + イラスト・まんが もくもく会　第31回",
+      "catch": "第31回",
+      "description": "<h1>川越インディーゲーム + イラスト・まんが もくもく会</h1>\n<h2>会場</h2>\n<p>ウエスタ川越　活動室５</p>\n<h2>会の内容</h2>\n<p>インディーゲームを作っている人で集まってもくもく作業をする会です。</p>\n<p>インディーゲームと銘打っていますが、ゲーム制作に関係することであればなんでもOKです</p>\n<p>各自で作業環境を持参して頂いてもくもく作業をします。</p>\n<p>会の最初に自己紹介と今日やることを共有、最後に成果発表をします！</p>\n<p>自宅で作業してもなかなか捗らないですよね…ぜひこの会で進捗しちゃいましょう！</p>\n<p>※この会の特徴としてイラスト・漫画の作業される方も参加可能です。（イラスト・漫画の製作をしていてゲーム制作に興味のある方にお勧めします）</p>\n<h2>今日のやったこと共有について</h2>\n<p><strong>川越もくもく会のDiscord</strong>を使って共有しますので、\n事前に以下のアドレスから参加してメンバーになっておくと当日スムースに発表できます。</p>\n<p><a href=\"https://discord.gg/Y4vA9WSrbV\" rel=\"nofollow\">https://discord.gg/Y4vA9WSrbV</a></p>\n<h2>時間割</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">9:30</td>\n<td style=\"text-align: left;\">開会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">11:00</td>\n<td style=\"text-align: left;\">自己紹介、今日やることを共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">11:15</td>\n<td style=\"text-align: left;\">もくもく</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">12:30-13:30</td>\n<td style=\"text-align: left;\">各自昼食</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00</td>\n<td style=\"text-align: left;\">希望者によるLT</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">今日やったことを共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:50</td>\n<td style=\"text-align: left;\">会場の清掃、退室準備</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">閉会</td>\n</tr>\n</tbody>\n</table>\n<h2>飲み会</h2>\n<p>イベント終了後に「川越もくもく会 飲み会」を\n希望者で川越駅周辺で開催します。\n希望者は <strong>もくもく会＋飲み会</strong>　枠で申し込みお願いします\n※飲み会だけの参加はNGです\n4000円～5000円 前後のお店を予約予定です</p>\n<h2>参加者数上限について</h2>\n<p>会場は２２名まで入れますが、\nCommpassのシステムの都合上２つの参加枠の合算ができないため\n２２名を超えた場合は開催者のほうでキャンセル処理をする場合があります</p>\n<h2>施設利用料</h2>\n<p>施設利用料を参加者で実費負担をお願いしています\n当日の参加人数で変動しますが、800~1000円程度になります</p>\n<p>※当もくもく会は非営利として運営しています</p>\n<p>無料Wifiあります。ssidとPassは当日会場のホワイトボードに掲示します</p>\n<p>会場の詳細はこちらをご覧ください\n<a href=\"https://www.westa-kawagoe.jp/access/\" rel=\"nofollow\">https://www.westa-kawagoe.jp/access/</a></p>\n<p>埼玉県川越市新宿町1-17-17</p>\n<h2>注意事項</h2>\n<ul>\n<li>マスクの着用は各自の判断でお願いします。</li>\n<li>本会での営業活動、ネットワークビジネスや宗教等の勧誘行為はお断りします。</li>\n<li>雑談もOKですが、もくもくがメインの会ですので出来る限り作業をする心構えでお願いします。</li>\n<li>なるべく自己紹介の時間までに来てください。遅刻する場合はDiscordに報告お願いします</li>\n</ul>",
+      "url": "https://kawagoemokumoku.connpass.com/event/405338/",
+      "image_url": "https://media.connpass.com/thumbs/f5/dd/f5dd5d7dde54a66d0bfeb85b9e9d5a68.png",
+      "hash_tag": "川越もくもく会",
+      "started_at": "2026-09-06T09:30:00+09:00",
+      "ended_at": "2026-09-06T19:00:00+09:00",
+      "published_at": "2026-08-29T23:56:41+09:00",
+      "limit": 22,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14498,
+        "subdomain": "kawagoemokumoku",
+        "title": "川越インディーゲーム + イラスト・まんが もくもく会",
+        "url": "https://kawagoemokumoku.connpass.com/"
+      },
+      "address": "埼玉県川越市新宿町1-17-17",
+      "place": "ウエスタ川越",
+      "lat": "35.904089500000",
+      "lon": "139.479178300000",
+      "owner_id": 18182,
+      "owner_nickname": "kamipallet",
+      "owner_display_name": "紙パレット",
+      "accepted": 9,
+      "waiting": 0,
+      "updated_at": "2026-08-29T23:56:41+09:00"
     }
   ]
 }
