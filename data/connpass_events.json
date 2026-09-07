@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-07T14:31:07.347424+09:00",
+  "fetched_at": "2026-09-07T20:11:29.381680+09:00",
   "date": "20260907",
   "count": 4,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-08-04T19:15:18+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17130,
         "subdomain": "gotanda--ts",
@@ -30,7 +30,7 @@
       "owner_id": 827386,
       "owner_nickname": "kkun22",
       "owner_display_name": "kkun_22",
-      "accepted": 17,
+      "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-09-07T13:00:15+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-07-14T12:00:22+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13493,
         "subdomain": "loglass-tech",
@@ -61,8 +61,8 @@
       "owner_id": 837024,
       "owner_nickname": "dev-loglass",
       "owner_display_name": "ログラス管理者",
-      "accepted": 591,
-      "waiting": 8,
+      "accepted": 656,
+      "waiting": 0,
       "updated_at": "2026-09-07T08:02:34+09:00"
     },
     {
@@ -78,7 +78,7 @@
       "published_at": "2026-08-05T09:32:38+09:00",
       "limit": 25,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 8961,
         "subdomain": "softwaredesign",
@@ -92,7 +92,7 @@
       "owner_id": 30439,
       "owner_nickname": "kitazaki",
       "owner_display_name": "kitazaki",
-      "accepted": 13,
+      "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-09-05T15:59:44+09:00"
     },
@@ -107,9 +107,9 @@
       "started_at": "2026-09-07T19:00:00+09:00",
       "ended_at": "2026-09-07T21:30:00+09:00",
       "published_at": "2026-08-17T21:12:47+09:00",
-      "limit": 60,
+      "limit": 65,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14764,
         "subdomain": "grafana-meetup-japan",
@@ -123,9 +123,9 @@
       "owner_id": 596542,
       "owner_nickname": "hiroshihori",
       "owner_display_name": "ほりひろし",
-      "accepted": 54,
-      "waiting": 1,
-      "updated_at": "2026-08-26T13:40:22+09:00"
+      "accepted": 50,
+      "waiting": 0,
+      "updated_at": "2026-09-07T15:22:02+09:00"
     }
   ]
 }
