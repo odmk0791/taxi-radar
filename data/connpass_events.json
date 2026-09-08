@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-09T04:44:02.960331+09:00",
+  "fetched_at": "2026-09-09T07:13:30.803995+09:00",
   "date": "20260909",
   "count": 13,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 578301,
       "owner_nickname": "mixi_engineers",
       "owner_display_name": "株式会社MIXI",
-      "accepted": 142,
+      "accepted": 144,
       "waiting": 0,
       "updated_at": "2026-09-08T18:24:14+09:00"
     },
@@ -159,37 +159,6 @@
       "updated_at": "2026-08-31T17:54:14+09:00"
     },
     {
-      "id": 403423,
-      "title": "みんなで学ぶAIエージェント時代のMicrosoftセキュリティ@Avanade Japan",
-      "catch": "",
-      "description": "<h1>このイベントについて</h1>\n<p>Microsoft技術を専門に取り扱うAvanadeのエンジニアが、セキュリティの「今」をリアルな現場視点でお届けするコミュニティイベントです！</p>\n<p>「ID設計や多層防御ってどう考えればいいの？」「パスキーやPurviewって実務でどう使えるの？」といった疑問にフォーカスし、\nAvanadeの現場で活躍するエンジニアや社外ゲストが、最新のセキュリティトレンドと実践知を紹介します。</p>\n<p>学び・つながり・ネットワーキングを気軽に楽しめるイベントです！</p>\n<h1>開催概要</h1>\n<ul>\n<li>日時：2026/9/9(水) 19:00 - 21:00</li>\n<li>場所：泉ガーデンタワー9F　アバナードオフィス「カフェスペース」</li>\n<li>形式：オフライン開催</li>\n</ul>\n<h1>タイムテーブル</h1>\n<p>※内容は調整中のため変更の可能性があります</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:10</td>\n<td>オープニング</td>\n<td>Community運営</td>\n</tr>\n<tr>\n<td>19:10 - 19:30</td>\n<td>AIエージェントの最新動向 ～Agent365 リキャップ～</td>\n<td>アバナード<br>- Gaku Yamamoto</td>\n</tr>\n<tr>\n<td>19:30 - 19:50</td>\n<td>パスキーって結局どう実装するの？～Microsoft Entra ID実践ガイド～</td>\n<td>アバナード<br>- Tatsuya Kanehira</td>\n</tr>\n<tr>\n<td>19:50 - 20:20</td>\n<td>AIエージェント時代のDevSecOps<br>～OSSサプライチェーン攻撃との攻防から考えるPlatform Protection～</td>\n<td>日本マイクロソフト<br>- Yurie Mori</td>\n</tr>\n<tr>\n<td>20:30 - 20:50</td>\n<td>当日飛び入りライトニングトーク</td>\n<td>LT希望者<br>※LT登壇者募集中！</td>\n</tr>\n<tr>\n<td>20:50 - 21:00</td>\n<td>クロージング</td>\n<td>All</td>\n</tr>\n</tbody>\n</table>\n<h1>参加にあたっての注意事項</h1>\n<ul>\n<li>本イベントはAvanade Japanでのオフライン開催です。現地で入館の際、<strong>本人確認のため名刺を2枚ご提示いただきます。</strong></li>\n<li>発表内容は個人の見解を含む場合があります。</li>\n<li>撮影・録画を行う場合があります。あらかじめご了承ください。</li>\n<li>内容およびスケジュールは予告なく変更される可能性があります。</li>\n</ul>",
-      "url": "https://avanadejapantech.connpass.com/event/403423/",
-      "image_url": "https://media.connpass.com/thumbs/b2/4a/b24a27afda45e736225cae9c89fc64ea.png",
-      "hash_tag": "",
-      "started_at": "2026-09-09T19:00:00+09:00",
-      "ended_at": "2026-09-09T21:00:00+09:00",
-      "published_at": "2026-08-14T12:00:56+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17736,
-        "subdomain": "avanadejapantech",
-        "title": "Avanade Japan Tech",
-        "url": "https://avanadejapantech.connpass.com/"
-      },
-      "address": "東京都港区六本木１丁目６−１ 泉ガーデンタワー 9F",
-      "place": "アバナードオフィス：カフェスペース",
-      "lat": "35.664561600000",
-      "lon": "139.739496300000",
-      "owner_id": 133012,
-      "owner_nickname": "HitoshiHamano",
-      "owner_display_name": "HitoshiHamano",
-      "accepted": 85,
-      "waiting": 0,
-      "updated_at": "2026-09-07T13:01:33+09:00"
-    },
-    {
       "id": 405471,
       "title": "meet CTOs vol.14｜生成AI時代のキャリアをどう描くか？",
       "catch": "AI Ready への道程 第3回・キャリア編｜亀田彗様・佐藤寛容様登壇",
@@ -221,37 +190,6 @@
       "updated_at": "2026-09-02T14:51:13+09:00"
     },
     {
-      "id": 401510,
-      "title": "Agentic Tokyo #2",
-      "catch": "AIエージェントのエコシステム知見を楽しく学ぼう！",
-      "description": "<h1>AIエージェントのエコシステムを知り、オープンソースへの貢献を始めよう！</h1>\n<p>AIエージェントを取り巻く技術は、モデルやアプリケーションだけでなく、プロトコル、ツール、ランタイム、評価、可観測性、セキュリティなど、幅広い領域へと急速に広がっています。</p>\n<p>こうした技術の多くは、世界中のオープンソースコミュニティによって開発されており、利用するだけでなく、Issueの報告、ドキュメントの改善、機能提案、コードの提供など、さまざまな形でプロジェクトに参加できます。</p>\n<p>今回のAgentic Tokyoでは、<strong>AIエージェント関連エコシステムの知見共有</strong>と、<strong>実際にOSSプロジェクトへのコントリビューションするための知見/経験</strong>をテーマに、コミュニティミートアップを開催します。</p>\n<p>Agentic AI Foundation（AAIF）をはじめとするグローバルコミュニティの動向や、AIエージェント関連OSSの開発・活用事例、コントリビューターとして活動する登壇者の経験などを共有します。</p>\n<p>「気になるOSSはあるけれど、どこから参加すればよいか分からない」\n「海外のコミュニティやプロジェクトに参加してみたい」\n「AIエージェント関連技術の最新動向をキャッチアップしたい」</p>\n<p>そんな方も大歓迎です。</p>\n<p>製品や企業の枠を越えて、AIエージェントの未来を支えるエコシステムについて、みんなで学び、語り合いましょう！</p>\n<h1>今回のテーマ</h1>\n<ul>\n<li>AIエージェントを取り巻くオープンソースエコシステムの最新動向</li>\n<li>Agentic AI Foundation（AAIF）および関連コミュニティの活動</li>\n<li>AIエージェント関連OSSの開発・活用事例</li>\n<li>OSSプロジェクトへのコントリビューションの始め方</li>\n<li>国内からグローバルコミュニティへ参加するための知見</li>\n<li>コントリビューターが語る、実際の活動や試行錯誤</li>\n</ul>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>AIエージェントやAgentic AIに関心がある方</li>\n<li>MCP、A2Aなどの関連技術やプロトコルに関心がある方</li>\n<li>AI関連OSSの最新動向を知りたい方</li>\n<li>OSSへのコントリビューションを始めてみたい方</li>\n<li>Issue、ドキュメント、翻訳、コードなどを通じてOSSに関わりたい方</li>\n<li>国内外のAIエージェントコミュニティとつながりたい方</li>\n<li>すでにOSS活動をしており、経験や知見を共有したい方</li>\n</ul>\n<p>OSSへのコントリビューション経験は問いません。\nこれから始めてみたい方も、すでに活動している方も、ぜひご参加ください。</p>\n<h1>LT登壇者募集</h1>\n<p>Agentic Tokyoでは、10分間のLT登壇者を3名募集します。</p>\n<p>テーマの例：</p>\n<ul>\n<li>MCPを使ったツールやサーバーの開発・活用</li>\n<li>AGENTS.mdを書いて分かったことや運用の工夫</li>\n<li>AAIF、A2A、gooseなどを調べたり試したりした話</li>\n<li>AIエージェント関連OSSへのIssue、ドキュメント、PRなどの貢献</li>\n<li>OSSコミュニティやWorking Groupに参加した体験</li>\n<li>開発やコントリビューションでつまずいたこと</li>\n</ul>\n<p>初登壇の方や、OSSへのコントリビューション経験がない方も歓迎します。仮タイトルでの応募も可能です。</p>\n<h1>アジェンダ</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇・担当</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>開場・受付開始</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:10</td>\n<td>会場提供企業セッション</td>\n<td>レバレジーズ株式会社</td>\n</tr>\n<tr>\n<td>19:20</td>\n<td>招待セッション</td>\n<td>AAIF Demetrios Brinkmannさん</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>Cloud Native Community Japan AI Infra SIG 紹介セッション</td>\n<td>大村さん</td>\n</tr>\n<tr>\n<td>19:40</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>19:50</td>\n<td>2026-07-28版Model Context Protocolの認可仕様とKeycloakの準拠状況</td>\n<td>岡井さん</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>MCP経由の画像アップロードをやめた話</td>\n<td>レバレジーズ 山本さん</td>\n</tr>\n<tr>\n<td>20:05</td>\n<td>AAIFアンバサダー：技術的な視点</td>\n<td>Marcoさん</td>\n</tr>\n<tr>\n<td>20:20</td>\n<td>LT 1: Foundry IQのACL制御でユーザーごとのドキュメントアクセスを制限するMCPを作ってみた</td>\n<td>風の時代のエンジニニャさん</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>LT 2: AIオーケストレーションを活用した開発ワークフローの設計と実践</td>\n<td>bqnq -ばな-さん</td>\n</tr>\n<tr>\n<td>20:40</td>\n<td>LT 3: WebMCP Challange に星空観察アプリで参加した話</td>\n<td>オカザキさん</td>\n</tr>\n<tr>\n<td>20:50</td>\n<td>交流・懇親会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>クロージング</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※アジェンダは調整中です。セッション数や時間は変更になる場合があります。</p>\n<h1>Agentic Tokyoについて</h1>\n<p>Agentic Tokyoは、Agentic AIおよびAgentic AI Foundation（AAIF）に関する知見を共有し、日本とグローバルのコミュニティやオープンソースプロジェクトをつなぐことを目的としたコミュニティです。</p>\n<p>企業や製品の枠を越えて、AIエージェントに関わる技術者、研究者、OSSコントリビューター、コミュニティメンバーが集まり、技術や活動についてオープンに議論できる場を目指しています。</p>\n<h1>会場</h1>\n<p>レバレジーズ㈱ 本社\n〒150-6190 Tokyo, Shibuya, 2 Chome−24−12 スクランブルスクエア 25F</p>\n<h1>運営メンバー</h1>\n<h3>みのるん <a href=\"https://twitter.com/minorun365\" rel=\"nofollow\">@minorun365</a></h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\" width=\"200\"></p>\n<blockquote>\n<p>KDDIアジャイル開発センター株式会社 テックエバンジェリスト。クラウドやAI分野を中心に、技術の楽しさを伝える活動をしています。\nAWS AI Hero, AWS Samurai, Qiita 2025 Top Contributor / 著書「Amazon Bedrock 生成AIアプリ開発入門」,「やさしいMCP入門」,「AIエージェント開発運用入門」</p>\n</blockquote>\n<h3>そのだ <a href=\"https://x.com/sonoda_mj\" rel=\"nofollow\">@sonoda_mj</a></h3>\n<p><img src=\"https://i.gyazo.com/e40cab069c0369787eb87738c251a5f8.jpg\" width=\"200\"></p>\n<blockquote>\n<p>レバレジーズ株式会社所属。Agentの開発・運用・評価を一貫して担当し、AI駆動開発の推進を業務としています。\nAWS Community Builder(ML &amp; GenAI) / 2024 AWS Top Engineers / 2023 AWS Jr.Champions / 甲賀流忍者検定中級</p>\n</blockquote>\n<h3>中村 雄一 <a href=\"https://www.linkedin.com/in/yuichi-nakamura-b8b953154/\" rel=\"nofollow\">linkedin</a></h3>\n<p><img src=\"https://d378chrfhu4gz.cloudfront.net/2026-06-agentoc-tokyo/nakamura-yuichi.png\" width=\"200\"></p>\n<blockquote>\n<p>Linux Foundation Japan Evangelist。Linux FoundationのボードやCNCFのGoverning Boardとして、日本のコミュニティとアップストリームコミュニティを繋いでいます。</p>\n</blockquote>\n<h3>塚田 真規 <a href=\"https://x.com/ma_tsukada\" rel=\"nofollow\">@ma_tsukada</a></h3>\n<p><img src=\"https://d378chrfhu4gz.cloudfront.net/2026-06-agentoc-tokyo/tsukada.png\" width=\"200\"></p>\n<blockquote>\n<p>三菱電機株式会社所属。AIエージェント開発や生成AI利活用推進の業務に従事。AWS Community Builder(AI Engineering)、JAWS AI/ML支部運営。著書として「AIエージェント開発運用入門」「AWSではじめるMCP実践ガイド」。</p>\n</blockquote>\n<h3>Takuma Matsuo <a href=\"https://www.linkedin.com/in/m-takuma\" rel=\"nofollow\">LinkedIn</a></h3>\n<p><img src=\"https://d378chrfhu4gz.cloudfront.net/2026-06-agentoc-tokyo/matsuo-takuma.jpg\" width=\"200\"></p>\n<blockquote>\n<p>KDDI株式会社所属。主にiOSアプリの開発やAI駆動開発の取組みを業務としています。</p>\n</blockquote>\n<h3>佐藤 竜也 <a href=\"https://www.linkedin.com/in/tatsuya-sato-21aa2b1a0/\" rel=\"nofollow\">LinkedIn</a></h3>\n<p><img src=\"https://d378chrfhu4gz.cloudfront.net/2026-06-agentoc-tokyo/tatsuya-sato.jpg\" width=\"200\"></p>\n<blockquote>\n<p>株式会社日立製作所所属。Agentic AIおよびブロックチェーンを中心に、システム基盤技術やオープンソースソフトウェアに関する研究開発に従事しています。ブロックチェーン分野ではLF Decentralized Trust (LFDT)コミュニティに貢献し、Hyperledger Fabricメンテナとしても活動しています。</p>\n</blockquote>\n<h3>伊藤哲 <a href=\"https://www.linkedin.com/in/satoshi-ito\" rel=\"nofollow\">LinkedIn</a></h3>\n<p><img src=\"https://github.com/pugsatoshi/pugsatoshi/blob/main/assets/SatoshiIto.jpg?raw=true\" width=\"200\"></p>\n<blockquote>\n<p>株式会社日立製作所所属。ブロックチェーンおよび生成AI領域の研究開発に従事。Hyperledger FabricやMCP関連プロジェクトへのアップストリーム活動も行い、ブロックチェーンやAIエージェント、LLMアプリケーション開発を支える技術基盤への貢献にも注力しています。</p>\n</blockquote>\n<h3>ゴンザレス　マルコ <a href=\"https://www.linkedin.com/in/mgonzalezortiz/\" rel=\"nofollow\">LinkedIn</a></h3>\n<p><img src=\"https://github.com/mgonzalezo/mgonzalezo/blob/main/profile_pic.png?raw=true\" width=\"200\"></p>\n<blockquote>\n<p>レッドハット株式会社所属。AAIF Ambassador、AAIF Meetup Organizer Tokyo、CNCF Committee Member、AWS Community Builder (AI Engineering)として、AIエージェントとクラウドネイティブ技術を組み合わせたTelco Blueprint自動検証基盤の開発や、MCPサーバーの開発に取り組んでいます。</p>\n</blockquote>\n<h1>おことわり</h1>\n<p>本イベントは、AIエージェントおよびオープンソース技術に関する知見共有と、参加者同士の交流を目的とした技術コミュニティイベントです。</p>\n<p>技術に興味のない方（営業、勧誘、飲食目的）の参加は固くお断りします。見つけたら厳正に対処します。bqnq -ばな-</p>",
-      "url": "https://aibuilders.connpass.com/event/401510/",
-      "image_url": "https://media.connpass.com/thumbs/83/52/8352243890bfb06aa5d79330f738a496.png",
-      "hash_tag": "AgenticTokyo",
-      "started_at": "2026-09-09T19:00:00+09:00",
-      "ended_at": "2026-09-09T21:00:00+09:00",
-      "published_at": "2026-08-21T12:44:34+09:00",
-      "limit": 132,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17382,
-        "subdomain": "aibuilders",
-        "title": "AI Agent Builders Meetup",
-        "url": "https://aibuilders.connpass.com/"
-      },
-      "address": "〒150-6190 Tokyo, Shibuya, 2 Chome−24−12 スクランブルスクエア 24F・25F",
-      "place": "レバレジーズ㈱ 本社",
-      "lat": "35.658463800000",
-      "lon": "139.702262100000",
-      "owner_id": 1023138,
-      "owner_nickname": "satoshi110",
-      "owner_display_name": "Satoshi Ito",
-      "accepted": 113,
-      "waiting": 2,
-      "updated_at": "2026-09-08T18:01:28+09:00"
-    },
-    {
       "id": 404312,
       "title": "kaonavi Tech Talk #23 〜 AIを組織に浸透させるリアル 〜",
       "catch": "",
@@ -281,6 +219,68 @@
       "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-08-31T14:20:48+09:00"
+    },
+    {
+      "id": 403423,
+      "title": "みんなで学ぶAIエージェント時代のMicrosoftセキュリティ@Avanade Japan",
+      "catch": "",
+      "description": "<h1>このイベントについて</h1>\n<p>Microsoft技術を専門に取り扱うAvanadeのエンジニアが、セキュリティの「今」をリアルな現場視点でお届けするコミュニティイベントです！</p>\n<p>「ID設計や多層防御ってどう考えればいいの？」「パスキーやPurviewって実務でどう使えるの？」といった疑問にフォーカスし、\nAvanadeの現場で活躍するエンジニアや社外ゲストが、最新のセキュリティトレンドと実践知を紹介します。</p>\n<p>学び・つながり・ネットワーキングを気軽に楽しめるイベントです！</p>\n<h1>開催概要</h1>\n<ul>\n<li>日時：2026/9/9(水) 19:00 - 21:00</li>\n<li>場所：泉ガーデンタワー9F　アバナードオフィス「カフェスペース」</li>\n<li>形式：オフライン開催</li>\n</ul>\n<h1>タイムテーブル</h1>\n<p>※内容は調整中のため変更の可能性があります</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:10</td>\n<td>オープニング</td>\n<td>Community運営</td>\n</tr>\n<tr>\n<td>19:10 - 19:30</td>\n<td>AIエージェントの最新動向 ～Agent365 リキャップ～</td>\n<td>アバナード<br>- Gaku Yamamoto</td>\n</tr>\n<tr>\n<td>19:30 - 19:50</td>\n<td>パスキーって結局どう実装するの？～Microsoft Entra ID実践ガイド～</td>\n<td>アバナード<br>- Tatsuya Kanehira</td>\n</tr>\n<tr>\n<td>19:50 - 20:20</td>\n<td>AIエージェント時代のDevSecOps<br>～OSSサプライチェーン攻撃との攻防から考えるPlatform Protection～</td>\n<td>日本マイクロソフト<br>- Yurie Mori</td>\n</tr>\n<tr>\n<td>20:30 - 20:50</td>\n<td>当日飛び入りライトニングトーク</td>\n<td>LT希望者<br>※LT登壇者募集中！</td>\n</tr>\n<tr>\n<td>20:50 - 21:00</td>\n<td>クロージング</td>\n<td>All</td>\n</tr>\n</tbody>\n</table>\n<h1>参加にあたっての注意事項</h1>\n<ul>\n<li>本イベントはAvanade Japanでのオフライン開催です。現地で入館の際、<strong>本人確認のため名刺を2枚ご提示いただきます。</strong></li>\n<li>発表内容は個人の見解を含む場合があります。</li>\n<li>撮影・録画を行う場合があります。あらかじめご了承ください。</li>\n<li>内容およびスケジュールは予告なく変更される可能性があります。</li>\n</ul>",
+      "url": "https://avanadejapantech.connpass.com/event/403423/",
+      "image_url": "https://media.connpass.com/thumbs/b2/4a/b24a27afda45e736225cae9c89fc64ea.png",
+      "hash_tag": "",
+      "started_at": "2026-09-09T19:00:00+09:00",
+      "ended_at": "2026-09-09T21:00:00+09:00",
+      "published_at": "2026-08-14T12:00:56+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17736,
+        "subdomain": "avanadejapantech",
+        "title": "Avanade Japan Tech",
+        "url": "https://avanadejapantech.connpass.com/"
+      },
+      "address": "東京都港区六本木１丁目６−１ 泉ガーデンタワー 9F",
+      "place": "アバナードオフィス：カフェスペース",
+      "lat": "35.664561600000",
+      "lon": "139.739496300000",
+      "owner_id": 133012,
+      "owner_nickname": "HitoshiHamano",
+      "owner_display_name": "HitoshiHamano",
+      "accepted": 85,
+      "waiting": 0,
+      "updated_at": "2026-09-07T13:01:33+09:00"
+    },
+    {
+      "id": 401510,
+      "title": "Agentic Tokyo #2",
+      "catch": "AIエージェントのエコシステム知見を楽しく学ぼう！",
+      "description": "<h1>AIエージェントのエコシステムを知り、オープンソースへの貢献を始めよう！</h1>\n<p>AIエージェントを取り巻く技術は、モデルやアプリケーションだけでなく、プロトコル、ツール、ランタイム、評価、可観測性、セキュリティなど、幅広い領域へと急速に広がっています。</p>\n<p>こうした技術の多くは、世界中のオープンソースコミュニティによって開発されており、利用するだけでなく、Issueの報告、ドキュメントの改善、機能提案、コードの提供など、さまざまな形でプロジェクトに参加できます。</p>\n<p>今回のAgentic Tokyoでは、<strong>AIエージェント関連エコシステムの知見共有</strong>と、<strong>実際にOSSプロジェクトへのコントリビューションするための知見/経験</strong>をテーマに、コミュニティミートアップを開催します。</p>\n<p>Agentic AI Foundation（AAIF）をはじめとするグローバルコミュニティの動向や、AIエージェント関連OSSの開発・活用事例、コントリビューターとして活動する登壇者の経験などを共有します。</p>\n<p>「気になるOSSはあるけれど、どこから参加すればよいか分からない」\n「海外のコミュニティやプロジェクトに参加してみたい」\n「AIエージェント関連技術の最新動向をキャッチアップしたい」</p>\n<p>そんな方も大歓迎です。</p>\n<p>製品や企業の枠を越えて、AIエージェントの未来を支えるエコシステムについて、みんなで学び、語り合いましょう！</p>\n<h1>今回のテーマ</h1>\n<ul>\n<li>AIエージェントを取り巻くオープンソースエコシステムの最新動向</li>\n<li>Agentic AI Foundation（AAIF）および関連コミュニティの活動</li>\n<li>AIエージェント関連OSSの開発・活用事例</li>\n<li>OSSプロジェクトへのコントリビューションの始め方</li>\n<li>国内からグローバルコミュニティへ参加するための知見</li>\n<li>コントリビューターが語る、実際の活動や試行錯誤</li>\n</ul>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>AIエージェントやAgentic AIに関心がある方</li>\n<li>MCP、A2Aなどの関連技術やプロトコルに関心がある方</li>\n<li>AI関連OSSの最新動向を知りたい方</li>\n<li>OSSへのコントリビューションを始めてみたい方</li>\n<li>Issue、ドキュメント、翻訳、コードなどを通じてOSSに関わりたい方</li>\n<li>国内外のAIエージェントコミュニティとつながりたい方</li>\n<li>すでにOSS活動をしており、経験や知見を共有したい方</li>\n</ul>\n<p>OSSへのコントリビューション経験は問いません。\nこれから始めてみたい方も、すでに活動している方も、ぜひご参加ください。</p>\n<h1>LT登壇者募集</h1>\n<p>Agentic Tokyoでは、10分間のLT登壇者を3名募集します。</p>\n<p>テーマの例：</p>\n<ul>\n<li>MCPを使ったツールやサーバーの開発・活用</li>\n<li>AGENTS.mdを書いて分かったことや運用の工夫</li>\n<li>AAIF、A2A、gooseなどを調べたり試したりした話</li>\n<li>AIエージェント関連OSSへのIssue、ドキュメント、PRなどの貢献</li>\n<li>OSSコミュニティやWorking Groupに参加した体験</li>\n<li>開発やコントリビューションでつまずいたこと</li>\n</ul>\n<p>初登壇の方や、OSSへのコントリビューション経験がない方も歓迎します。仮タイトルでの応募も可能です。</p>\n<h1>アジェンダ</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇・担当</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>開場・受付開始</td>\n<td></td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>オープニング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:10</td>\n<td>会場提供企業セッション</td>\n<td>レバレジーズ株式会社</td>\n</tr>\n<tr>\n<td>19:20</td>\n<td>招待セッション</td>\n<td>AAIF Demetrios Brinkmannさん</td>\n</tr>\n<tr>\n<td>19:30</td>\n<td>Cloud Native Community Japan AI Infra SIG 紹介セッション</td>\n<td>大村さん</td>\n</tr>\n<tr>\n<td>19:40</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>19:50</td>\n<td>2026-07-28版Model Context Protocolの認可仕様とKeycloakの準拠状況</td>\n<td>岡井さん</td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>MCP経由の画像アップロードをやめた話</td>\n<td>レバレジーズ 山本さん</td>\n</tr>\n<tr>\n<td>20:05</td>\n<td>AAIFアンバサダー：技術的な視点</td>\n<td>Marcoさん</td>\n</tr>\n<tr>\n<td>20:20</td>\n<td>LT 1: AIオーケストレーションを活用した開発ワークフローの設計と実践</td>\n<td>bqnq -ばな-さん</td>\n</tr>\n<tr>\n<td>20:30</td>\n<td>LT 2: WebMCP Challange に星空観察アプリで参加した話</td>\n<td>オカザキさん</td>\n</tr>\n<tr>\n<td>20:40</td>\n<td>交流・懇親会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>クロージング</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※アジェンダは調整中です。セッション数や時間は変更になる場合があります。</p>\n<h1>Agentic Tokyoについて</h1>\n<p>Agentic Tokyoは、Agentic AIおよびAgentic AI Foundation（AAIF）に関する知見を共有し、日本とグローバルのコミュニティやオープンソースプロジェクトをつなぐことを目的としたコミュニティです。</p>\n<p>企業や製品の枠を越えて、AIエージェントに関わる技術者、研究者、OSSコントリビューター、コミュニティメンバーが集まり、技術や活動についてオープンに議論できる場を目指しています。</p>\n<h1>会場</h1>\n<p>レバレジーズ㈱ 本社\n〒150-6190 Tokyo, Shibuya, 2 Chome−24−12 スクランブルスクエア 25F</p>\n<h1>運営メンバー</h1>\n<h3>みのるん <a href=\"https://twitter.com/minorun365\" rel=\"nofollow\">@minorun365</a></h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\" width=\"200\"></p>\n<blockquote>\n<p>KDDIアジャイル開発センター株式会社 テックエバンジェリスト。クラウドやAI分野を中心に、技術の楽しさを伝える活動をしています。\nAWS AI Hero, AWS Samurai, Qiita 2025 Top Contributor / 著書「Amazon Bedrock 生成AIアプリ開発入門」,「やさしいMCP入門」,「AIエージェント開発運用入門」</p>\n</blockquote>\n<h3>そのだ <a href=\"https://x.com/sonoda_mj\" rel=\"nofollow\">@sonoda_mj</a></h3>\n<p><img src=\"https://i.gyazo.com/e40cab069c0369787eb87738c251a5f8.jpg\" width=\"200\"></p>\n<blockquote>\n<p>レバレジーズ株式会社所属。Agentの開発・運用・評価を一貫して担当し、AI駆動開発の推進を業務としています。\nAWS Community Builder(ML &amp; GenAI) / 2024 AWS Top Engineers / 2023 AWS Jr.Champions / 甲賀流忍者検定中級</p>\n</blockquote>\n<h3>中村 雄一 <a href=\"https://www.linkedin.com/in/yuichi-nakamura-b8b953154/\" rel=\"nofollow\">linkedin</a></h3>\n<p><img src=\"https://d378chrfhu4gz.cloudfront.net/2026-06-agentoc-tokyo/nakamura-yuichi.png\" width=\"200\"></p>\n<blockquote>\n<p>Linux Foundation Japan Evangelist。Linux FoundationのボードやCNCFのGoverning Boardとして、日本のコミュニティとアップストリームコミュニティを繋いでいます。</p>\n</blockquote>\n<h3>塚田 真規 <a href=\"https://x.com/ma_tsukada\" rel=\"nofollow\">@ma_tsukada</a></h3>\n<p><img src=\"https://d378chrfhu4gz.cloudfront.net/2026-06-agentoc-tokyo/tsukada.png\" width=\"200\"></p>\n<blockquote>\n<p>三菱電機株式会社所属。AIエージェント開発や生成AI利活用推進の業務に従事。AWS Community Builder(AI Engineering)、JAWS AI/ML支部運営。著書として「AIエージェント開発運用入門」「AWSではじめるMCP実践ガイド」。</p>\n</blockquote>\n<h3>Takuma Matsuo <a href=\"https://www.linkedin.com/in/m-takuma\" rel=\"nofollow\">LinkedIn</a></h3>\n<p><img src=\"https://d378chrfhu4gz.cloudfront.net/2026-06-agentoc-tokyo/matsuo-takuma.jpg\" width=\"200\"></p>\n<blockquote>\n<p>KDDI株式会社所属。主にiOSアプリの開発やAI駆動開発の取組みを業務としています。</p>\n</blockquote>\n<h3>佐藤 竜也 <a href=\"https://www.linkedin.com/in/tatsuya-sato-21aa2b1a0/\" rel=\"nofollow\">LinkedIn</a></h3>\n<p><img src=\"https://d378chrfhu4gz.cloudfront.net/2026-06-agentoc-tokyo/tatsuya-sato.jpg\" width=\"200\"></p>\n<blockquote>\n<p>株式会社日立製作所所属。Agentic AIおよびブロックチェーンを中心に、システム基盤技術やオープンソースソフトウェアに関する研究開発に従事しています。ブロックチェーン分野ではLF Decentralized Trust (LFDT)コミュニティに貢献し、Hyperledger Fabricメンテナとしても活動しています。</p>\n</blockquote>\n<h3>伊藤哲 <a href=\"https://www.linkedin.com/in/satoshi-ito\" rel=\"nofollow\">LinkedIn</a></h3>\n<p><img src=\"https://github.com/pugsatoshi/pugsatoshi/blob/main/assets/SatoshiIto.jpg?raw=true\" width=\"200\"></p>\n<blockquote>\n<p>株式会社日立製作所所属。ブロックチェーンおよび生成AI領域の研究開発に従事。Hyperledger FabricやMCP関連プロジェクトへのアップストリーム活動も行い、ブロックチェーンやAIエージェント、LLMアプリケーション開発を支える技術基盤への貢献にも注力しています。</p>\n</blockquote>\n<h3>ゴンザレス　マルコ <a href=\"https://www.linkedin.com/in/mgonzalezortiz/\" rel=\"nofollow\">LinkedIn</a></h3>\n<p><img src=\"https://github.com/mgonzalezo/mgonzalezo/blob/main/profile_pic.png?raw=true\" width=\"200\"></p>\n<blockquote>\n<p>レッドハット株式会社所属。AAIF Ambassador、AAIF Meetup Organizer Tokyo、CNCF Committee Member、AWS Community Builder (AI Engineering)として、AIエージェントとクラウドネイティブ技術を組み合わせたTelco Blueprint自動検証基盤の開発や、MCPサーバーの開発に取り組んでいます。</p>\n</blockquote>\n<h1>おことわり</h1>\n<p>本イベントは、AIエージェントおよびオープンソース技術に関する知見共有と、参加者同士の交流を目的とした技術コミュニティイベントです。</p>\n<p>技術に興味のない方（営業、勧誘、飲食目的）の参加は固くお断りします。見つけたら厳正に対処します。bqnq -ばな-</p>",
+      "url": "https://aibuilders.connpass.com/event/401510/",
+      "image_url": "https://media.connpass.com/thumbs/83/52/8352243890bfb06aa5d79330f738a496.png",
+      "hash_tag": "AgenticTokyo",
+      "started_at": "2026-09-09T19:00:00+09:00",
+      "ended_at": "2026-09-09T21:00:00+09:00",
+      "published_at": "2026-08-21T12:44:34+09:00",
+      "limit": 132,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17382,
+        "subdomain": "aibuilders",
+        "title": "AI Agent Builders Meetup",
+        "url": "https://aibuilders.connpass.com/"
+      },
+      "address": "〒150-6190 Tokyo, Shibuya, 2 Chome−24−12 スクランブルスクエア 24F・25F",
+      "place": "レバレジーズ㈱ 本社",
+      "lat": "35.658463800000",
+      "lon": "139.702262100000",
+      "owner_id": 1023138,
+      "owner_nickname": "satoshi110",
+      "owner_display_name": "Satoshi Ito",
+      "accepted": 111,
+      "waiting": 2,
+      "updated_at": "2026-09-09T05:35:23+09:00"
     },
     {
       "id": 404654,
@@ -371,7 +371,7 @@
       "owner_id": 975845,
       "owner_nickname": "mai_fujikura",
       "owner_display_name": "mai_fujikura",
-      "accepted": 43,
+      "accepted": 42,
       "waiting": 0,
       "updated_at": "2026-09-02T17:09:20+09:00"
     },
@@ -397,7 +397,7 @@
       "owner_id": 801690,
       "owner_nickname": "Nature_Architects",
       "owner_display_name": "Nature_Architects",
-      "accepted": 24,
+      "accepted": 25,
       "waiting": 0,
       "updated_at": "2026-09-04T10:09:31+09:00"
     }
