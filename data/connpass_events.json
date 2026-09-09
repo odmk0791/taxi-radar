@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-09T09:55:35.994193+09:00",
+  "fetched_at": "2026-09-09T14:38:38.611282+09:00",
   "date": "20260909",
-  "count": 13,
+  "count": 14,
   "events": [
     {
       "id": 400858,
@@ -38,7 +38,7 @@
       "id": 403987,
       "title": "[SRE AI活用事例] 減らせ！TOIL削減大作戦！",
       "catch": "",
-      "description": "<h1>📝 開催概要</h1>\n<p>本イベントは、「ビズリーチ」を運営する株式会社ビズリーチと、「家族アルバム みてね」や「モンスターストライク」などを運営する株式会社MIXIの2社による合同SRE勉強会です。<br>\nSREの現場では、繰り返し発生する手作業や定型業務など、さまざまなTOILが日々の運用負荷となっています。<br>\n・アラートやログの調査に時間がかかる<br>\n・定型的な問い合わせや作業が増え続ける<br>\n・手順書やドキュメントの更新が追いつかない<br>\n・自動化したくても、実装や運用コストが壁になる<br>\nこうした課題を抱えている方も多いのではないでしょうか。<br>\n本イベントでは、両社のSREがAIをどのように業務へ取り入れ、TOIL削減に取り組んでいるのか、具体的な活用事例や試行錯誤を共有します。<br></p>\n<p>◎こんな方におすすめ◎<br>\n・SREやインフラ運用におけるAI活用に興味がある方<br>\n・繰り返し作業や定型業務を減らしたいSRE／インフラエンジニア<br>\n・AIを活用した具体的なTOIL削減事例を知りたい方<br>\n・AI活用をチームや組織へ広げるヒントを得たい方<br>\nAIを活用して、日々の運用をより効率的で持続可能なものにするための知見を持ち帰れる場になればと思います。ぜひご参加ください。<br></p>\n<h1>🕖 タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">司会：<br>株式会社MIXI 井上 翔太</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20</td>\n<td style=\"text-align: left;\">AWS DevOps Agentでインシデント対応をAIに任せたい</td>\n<td style=\"text-align: left;\">株式会社MIXI 本間 匡晃</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35</td>\n<td style=\"text-align: left;\">SRE の判断観点を AI に“効かせる”：WAF運用改善の承認サイクル(仮)</td>\n<td style=\"text-align: left;\">株式会社ビズリーチ 佐々木 康徳</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">AIに丸投げしないトイル削減</td>\n<td style=\"text-align: left;\">株式会社MIXI 杉本 浩平</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05</td>\n<td style=\"text-align: left;\">AI駆動におけるTerraform開発(仮)</td>\n<td style=\"text-align: left;\">株式会社ビズリーチ 大島拓人</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">オンライン終了・休憩</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:15</td>\n<td style=\"text-align: left;\">終了</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>👤 登壇者</h2>\n<h5>本間匡晃 / HonMarkHunt / X: <a href=\"https://x.com/HonMarkHunt\" rel=\"nofollow\">@HonMarkHunt</a></h5>\n<p><img src=\"https://pbs.twimg.com/profile_images/828628406543659008/Mo37sd46_400x400.jpg\" alt=\"\" width=\"120\" height=\"\"><br>\n株式会社MIXI みてね事業本部 みてねプラットフォーム部 SREグループ マネージャー<br>\ntoB向けのSaaS開発にバックエンドエンジニアやSREとして関わった後、2022年5月にミクシィ（現 MIXI）に入社。現在は「家族アルバム みてね」のSREグループのマネージャーとして従事。飼ってるハムスターが家族で唯一自分の指だけ噛んでくることが悩み。<br></p>\n<h5>佐々木康徳 / やっくる</h5>\n<p><img src=\"https://careers.bizreach.co.jp/wp-content/uploads/2025/11/ph2_int_main_1.jpg.webp?w=960\" width=\"180\" height=\"\"><br>\n株式会社ビズリーチ プロダクトセキュリティグループ<br>\n前職ではSIerとしてさまざまなプロジェクトの開発を経験し、2024年に株式会社ビズリーチに入社。<br>\nSRE Developerとして、プロダクトの信頼性向上や、チームが自律的に改善できる環境づくりに取り組む。<br>\n現在はプロダクトセキュリティグループに所属し、引き続き信頼性向上に取り組みながら、<br>\nプロダクトの安全性向上にも力を入れている。<br>\n<br>\n趣味はeスポーツで、競技プレイヤーとして活動している。<br>\n最近はオンラインカードゲームにも本腰を入れており、仕事ではTOILを削り、趣味では睡眠バジェットを削っている。<br>\n睡眠バジェットを守るガードレールは未実装。<br></p>\n<h5>杉本浩平 / X: <a href=\"https://x.com/kohbis\" rel=\"nofollow\">@kohbis</a></h5>\n<p><img src=\"https://fushagoya.com/img/profile.png\" alt=\"\" width=\"120\" height=\"\"><br>\n株式会社MIXI みてね事業本部 みてねプラットフォーム部 SREグループ<br>\nSIer、保育スタートアップを経て、2022年4月株式会社ミクシィ（現 MIXI）に入社。『家族アルバム みてね』にてSRE、PFE領域、そのほか諸々の改善に取り組む。<br></p>\n<h5>大島 拓人 / X: <a href=\"https://x.com/moneyshark7777\" rel=\"nofollow\">@moneyshark7777</a></h5>\n<p><img src=\"https://media.connpass.com/thumbs/98/16/98166bcdbfaa6c12fc13bccd02ada8e9.png\" alt=\"\" width=\"120\" height=\"\"><br>\n株式会社ビズリーチ SREグループ<br>\n金融営業 → SIer → 株式会社ビズリーチ。SIer 時代に Azure, AWS インフラをメインに仕事に従事。<br>\n運用監視・アプリケーション開発の知見を深めたく、株式会社ビズリーチにて、SREとして働く。<br>\n趣味はバスケ・スノーボード・お笑い・飲み会。AI のレビューのせいでタバコの本数が一向に減らない。<br></p>\n<h5>司会：井上 翔太 / しょっさん / X: <a href=\"https://x.com/syossan27\" rel=\"nofollow\">syossan27</a></h5>\n<p><img src=\"https://pbs.twimg.com/profile_images/996787326326980612/YwnsohkC_400x400.jpg\" alt=\"\" width=\"120\" height=\"\"><br>\n株式会社MIXI ライブエクスペリエンス事業本部 企画推進部 エンジニアリング支援グループ<br>\n2019年に株式会社ミクシィ（現 MIXI）に入社。サーバーサイドを中心に開発を行い、 XFLAG STOREアプリのサーバーサイド開発・TIPSTARの初期開発、FanstaでのSREを中心とした遊撃部隊活動などを経て、現在はスポーツ系サービスの開発を中心に活動。<br>\nコミュニティ活動としては、SRE Kaigi 主催者、ゆるSRE勉強会 共同運営、SRE Magazine編集長、クラウドネイティブ会議 共同主催、一般社団法人SREコネクト 代表理事など。<br></p>\n<h1>会社紹介</h1>\n<h3>株式会社ビズリーチ</h3>\n<p>「キャリアに、選択肢と可能性を」をミッションとし、2009年4月より、働き方の未来を支えるさまざまなインターネットサービスを運営。即戦力人材と企業をつなぐ転職サイト「ビズリーチ」、社内スカウトで人材流出を防ぐ「社内版ビズリーチ by HRMOS」、人財活用プラットフォーム「HRMOS（ハーモス）」シリーズ、OB/OG訪問ネットワークサービス「ビズリーチ・キャンパス」などを展開。産業のデジタルトランスフォーメーション（DX）を推進するさまざまな事業を展開するVisionalグループにおいて、主にHR TechのプラットフォームやSaaS事業を担う。\n<br><br></p>\n<p>採用サイト：<a href=\"https://careers.bizreach.co.jp/work/product/&lt;br>\" rel=\"nofollow\">https://careers.bizreach.co.jp/work/product/<br></a>\nEngineering Blog：<a href=\"https://engineering.visional.inc/blog/\" rel=\"noopener noreferrer nofollow\">https://engineering.visional.inc/blog/</a><br>\nX（旧Twitter）：<a href=\"https://x.com/VISIONAL_ENG&lt;br>\" rel=\"nofollow\">https://x.com/VISIONAL_ENG<br></a></p>\n<h3>株式会社MIXI</h3>\n<p>MIXIは「豊かなコミュニケーションを広げ、世界を幸せな驚きで包む。」というパーパスのもと、主にスポーツ、ライフスタイル、デジタルエンターテインメントの領域で事業を推進し、友人や家族と一緒に楽しむコミュニケーションサービスを提供しています。<br>\n<br>\nコーポレートサイト：<a href=\"https://mixi.co.jp/\" rel=\"nofollow\">https://mixi.co.jp/</a>\n<br>\nX（旧Twitter）：<a href=\"https://x.com/mixi_engineers\" rel=\"nofollow\">https://x.com/mixi_engineers</a> \n<br>\n採用サイト：<a href=\"https://mixigroup-recruit.mixi.co.jp/\" rel=\"nofollow\">https://mixigroup-recruit.mixi.co.jp/</a>\n<br>\nみてね採用サイト：<a href=\"https://team.mitene.us/\" rel=\"nofollow\">https://team.mitene.us/</a>\n<br></p>\n<h1>ご参加方法</h1>\n<p>・こちらのconnpassページより事前にご参加登録をおねがいします。<br>\n・本イベントはハイブリッド開催となります。<br></p>\n<h3>オンライン参加（YouTube Live)</h3>\n<p>・オンライン配信はYouTubeチャンネル「MIXI TECH TALK」にてLIVE配信いたします。<br>\n・事前にconnpassからお申し込みの皆様へは、配信URL等をお送りいたします。<br></p>\n<h3>オフライン参加（対面）</h3>\n<p>入館方法の詳細は、ご参加申込後、参加者向け情報欄をご覧ください。<br>\n<br>\n<b>会場：</b><br>\n株式会社MIXI 渋谷オフィス コラボスペース<br>\n〒150-6136 東京都渋谷区渋谷２－２４－１２ 渋谷スクランブルスクエア 36F<br>\n※渋谷駅直結<br>\n<br>\n<b>⚠️ 会場について ⚠️</b><br>\n・20時を過ぎるとイベント会場へ入場できませんのでご注意ください。<br>\n・会場は禁煙です。<br>\n・無線LAN・電源のご用意があります。<br>\n・LIVE配信の他、イベントの様子を撮影し、ブログや SNS などで公開することがあります。ご承知おきください。</p>\n<h1>諸注意等</h1>\n<h3>注意事項</h3>\n<p>・タイムテーブルや内容は都合により変更することがございます。予めご了承ください。<br>\n・天災、不慮の事故等のやむを得ない事情や運営側の都合などにより、当日の内容の変更または中止とする場合があります。<br>\n・本イベントは、技術交流が目的です。知識の共有、及び、参加者同士の交流を目的としないご参加はご遠慮ください。<br>\n・参加目的が不適切と判断される場合には、運営側で参加キャンセルとさせていただく場合がございます。<br></p>\n<h3>禁止事項</h3>\n<p>・宗教団体、人材会社等による勧誘行為、宣伝行為、ヘッドハンティングまたはこれに類似する行為。<br>\n・過度な大声、騒音、振動、暴力等、他の参加者の迷惑になる行為。<br>\n・法令に違反する、またはそのおそれのある行為。<br>\n<br></p>\n<h3>アンチハラスメントポリシー</h3>\n<p>全ての参加者が技術共有/交流に集中できる様、以下のようなハラスメント行為はご遠慮ください。<br>\n該当する行為が発覚した場合、NGユーザーの登録などを行う可能性があります。<br>\n・性差、性同一性の表現、性的指向、障害、外見や身体的特徴、人種、宗教、公共な場での性的な画像や類する表現、<br>\n・脅迫、つきまとい、望まない写真撮影や録音・録画、不適切な接触、およびそれらに関連した不快な言動<br>\n万が一、ハラスメント行為を見聞きした場合は、connpass上から「イベントへのお問い合わせ」でご連絡いただけますと幸いです。<br></p>",
+      "description": "<h2>🔴 LIVE配信はこちら</h2>\n<p><a href=\"https://www.youtube.com/live/Gbm10LXhBaI?si=M_Kz2QLCEyby6O68\" rel=\"nofollow\">https://www.youtube.com/live/Gbm10LXhBaI?si=M_Kz2QLCEyby6O68</a></p>\n<h1>📝 開催概要</h1>\n<p>本イベントは、「ビズリーチ」を運営する株式会社ビズリーチと、「家族アルバム みてね」や「モンスターストライク」などを運営する株式会社MIXIの2社による合同SRE勉強会です。<br>\nSREの現場では、繰り返し発生する手作業や定型業務など、さまざまなTOILが日々の運用負荷となっています。<br>\n・アラートやログの調査に時間がかかる<br>\n・定型的な問い合わせや作業が増え続ける<br>\n・手順書やドキュメントの更新が追いつかない<br>\n・自動化したくても、実装や運用コストが壁になる<br>\nこうした課題を抱えている方も多いのではないでしょうか。<br>\n本イベントでは、両社のSREがAIをどのように業務へ取り入れ、TOIL削減に取り組んでいるのか、具体的な活用事例や試行錯誤を共有します。<br></p>\n<p>◎こんな方におすすめ◎<br>\n・SREやインフラ運用におけるAI活用に興味がある方<br>\n・繰り返し作業や定型業務を減らしたいSRE／インフラエンジニア<br>\n・AIを活用した具体的なTOIL削減事例を知りたい方<br>\n・AI活用をチームや組織へ広げるヒントを得たい方<br>\nAIを活用して、日々の運用をより効率的で持続可能なものにするための知見を持ち帰れる場になればと思います。ぜひご参加ください。<br></p>\n<h1>🕖 タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">開場・受付</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">司会：<br>株式会社MIXI 井上 翔太</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20</td>\n<td style=\"text-align: left;\">AWS DevOps Agentでインシデント対応をAIに任せたい</td>\n<td style=\"text-align: left;\">株式会社MIXI 本間 匡晃</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35</td>\n<td style=\"text-align: left;\">SRE の判断観点を AI に“効かせる”：WAF運用改善の承認サイクル(仮)</td>\n<td style=\"text-align: left;\">株式会社ビズリーチ 佐々木 康徳</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50</td>\n<td style=\"text-align: left;\">AIに丸投げしないトイル削減</td>\n<td style=\"text-align: left;\">株式会社MIXI 杉本 浩平</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05</td>\n<td style=\"text-align: left;\">AI駆動におけるTerraform開発(仮)</td>\n<td style=\"text-align: left;\">株式会社ビズリーチ 大島拓人</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">オンライン終了・休憩</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:15</td>\n<td style=\"text-align: left;\">終了</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>👤 登壇者</h2>\n<h5>本間匡晃 / HonMarkHunt / X: <a href=\"https://x.com/HonMarkHunt\" rel=\"nofollow\">@HonMarkHunt</a></h5>\n<p><img src=\"https://pbs.twimg.com/profile_images/828628406543659008/Mo37sd46_400x400.jpg\" alt=\"\" width=\"120\" height=\"\"><br>\n株式会社MIXI みてね事業本部 みてねプラットフォーム部 SREグループ マネージャー<br>\ntoB向けのSaaS開発にバックエンドエンジニアやSREとして関わった後、2022年5月にミクシィ（現 MIXI）に入社。現在は「家族アルバム みてね」のSREグループのマネージャーとして従事。飼ってるハムスターが家族で唯一自分の指だけ噛んでくることが悩み。<br></p>\n<h5>佐々木康徳 / やっくる</h5>\n<p><img src=\"https://careers.bizreach.co.jp/wp-content/uploads/2025/11/ph2_int_main_1.jpg.webp?w=960\" width=\"180\" height=\"\"><br>\n株式会社ビズリーチ プロダクトセキュリティグループ<br>\n前職ではSIerとしてさまざまなプロジェクトの開発を経験し、2024年に株式会社ビズリーチに入社。<br>\nSRE Developerとして、プロダクトの信頼性向上や、チームが自律的に改善できる環境づくりに取り組む。<br>\n現在はプロダクトセキュリティグループに所属し、引き続き信頼性向上に取り組みながら、<br>\nプロダクトの安全性向上にも力を入れている。<br>\n<br>\n趣味はeスポーツで、競技プレイヤーとして活動している。<br>\n最近はオンラインカードゲームにも本腰を入れており、仕事ではTOILを削り、趣味では睡眠バジェットを削っている。<br>\n睡眠バジェットを守るガードレールは未実装。<br></p>\n<h5>杉本浩平 / X: <a href=\"https://x.com/kohbis\" rel=\"nofollow\">@kohbis</a></h5>\n<p><img src=\"https://fushagoya.com/img/profile.png\" alt=\"\" width=\"120\" height=\"\"><br>\n株式会社MIXI みてね事業本部 みてねプラットフォーム部 SREグループ<br>\nSIer、保育スタートアップを経て、2022年4月株式会社ミクシィ（現 MIXI）に入社。『家族アルバム みてね』にてSRE、PFE領域、そのほか諸々の改善に取り組む。<br></p>\n<h5>大島 拓人 / X: <a href=\"https://x.com/moneyshark7777\" rel=\"nofollow\">@moneyshark7777</a></h5>\n<p><img src=\"https://media.connpass.com/thumbs/98/16/98166bcdbfaa6c12fc13bccd02ada8e9.png\" alt=\"\" width=\"120\" height=\"\"><br>\n株式会社ビズリーチ SREグループ<br>\n金融営業 → SIer → 株式会社ビズリーチ。SIer 時代に Azure, AWS インフラをメインに仕事に従事。<br>\n運用監視・アプリケーション開発の知見を深めたく、株式会社ビズリーチにて、SREとして働く。<br>\n趣味はバスケ・スノーボード・お笑い・飲み会。AI のレビューのせいでタバコの本数が一向に減らない。<br></p>\n<h5>司会：井上 翔太 / しょっさん / X: <a href=\"https://x.com/syossan27\" rel=\"nofollow\">syossan27</a></h5>\n<p><img src=\"https://pbs.twimg.com/profile_images/996787326326980612/YwnsohkC_400x400.jpg\" alt=\"\" width=\"120\" height=\"\"><br>\n株式会社MIXI ライブエクスペリエンス事業本部 企画推進部 エンジニアリング支援グループ<br>\n2019年に株式会社ミクシィ（現 MIXI）に入社。サーバーサイドを中心に開発を行い、 XFLAG STOREアプリのサーバーサイド開発・TIPSTARの初期開発、FanstaでのSREを中心とした遊撃部隊活動などを経て、現在はスポーツ系サービスの開発を中心に活動。<br>\nコミュニティ活動としては、SRE Kaigi 主催者、ゆるSRE勉強会 共同運営、SRE Magazine編集長、クラウドネイティブ会議 共同主催、一般社団法人SREコネクト 代表理事など。<br></p>\n<h1>会社紹介</h1>\n<h3>株式会社ビズリーチ</h3>\n<p>「キャリアに、選択肢と可能性を」をミッションとし、2009年4月より、働き方の未来を支えるさまざまなインターネットサービスを運営。即戦力人材と企業をつなぐ転職サイト「ビズリーチ」、社内スカウトで人材流出を防ぐ「社内版ビズリーチ by HRMOS」、人財活用プラットフォーム「HRMOS（ハーモス）」シリーズ、OB/OG訪問ネットワークサービス「ビズリーチ・キャンパス」などを展開。産業のデジタルトランスフォーメーション（DX）を推進するさまざまな事業を展開するVisionalグループにおいて、主にHR TechのプラットフォームやSaaS事業を担う。\n<br><br></p>\n<p>採用サイト：<a href=\"https://careers.bizreach.co.jp/work/product/&lt;br>\" rel=\"nofollow\">https://careers.bizreach.co.jp/work/product/<br></a>\nEngineering Blog：<a href=\"https://engineering.visional.inc/blog/\" rel=\"noopener noreferrer nofollow\">https://engineering.visional.inc/blog/</a><br>\nX（旧Twitter）：<a href=\"https://x.com/VISIONAL_ENG&lt;br>\" rel=\"nofollow\">https://x.com/VISIONAL_ENG<br></a></p>\n<h3>株式会社MIXI</h3>\n<p>MIXIは「豊かなコミュニケーションを広げ、世界を幸せな驚きで包む。」というパーパスのもと、主にスポーツ、ライフスタイル、デジタルエンターテインメントの領域で事業を推進し、友人や家族と一緒に楽しむコミュニケーションサービスを提供しています。<br>\n<br>\nコーポレートサイト：<a href=\"https://mixi.co.jp/\" rel=\"nofollow\">https://mixi.co.jp/</a>\n<br>\nX（旧Twitter）：<a href=\"https://x.com/mixi_engineers\" rel=\"nofollow\">https://x.com/mixi_engineers</a> \n<br>\n採用サイト：<a href=\"https://mixigroup-recruit.mixi.co.jp/\" rel=\"nofollow\">https://mixigroup-recruit.mixi.co.jp/</a>\n<br>\nみてね採用サイト：<a href=\"https://team.mitene.us/\" rel=\"nofollow\">https://team.mitene.us/</a>\n<br></p>\n<h1>ご参加方法</h1>\n<p>・こちらのconnpassページより事前にご参加登録をおねがいします。<br>\n・本イベントはハイブリッド開催となります。<br></p>\n<h3>オンライン参加（YouTube Live)</h3>\n<p>・オンライン配信はYouTubeチャンネル「MIXI TECH TALK」にてLIVE配信いたします。<br>\n・事前にconnpassからお申し込みの皆様へは、配信URL等をお送りいたします。<br></p>\n<h3>オフライン参加（対面）</h3>\n<p>入館方法の詳細は、ご参加申込後、参加者向け情報欄をご覧ください。<br>\n<br>\n<b>会場：</b><br>\n株式会社MIXI 渋谷オフィス コラボスペース<br>\n〒150-6136 東京都渋谷区渋谷２－２４－１２ 渋谷スクランブルスクエア 36F<br>\n※渋谷駅直結<br>\n<br>\n<b>⚠️ 会場について ⚠️</b><br>\n・20時を過ぎるとイベント会場へ入場できませんのでご注意ください。<br>\n・会場は禁煙です。<br>\n・無線LAN・電源のご用意があります。<br>\n・LIVE配信の他、イベントの様子を撮影し、ブログや SNS などで公開することがあります。ご承知おきください。</p>\n<h1>諸注意等</h1>\n<h3>注意事項</h3>\n<p>・タイムテーブルや内容は都合により変更することがございます。予めご了承ください。<br>\n・天災、不慮の事故等のやむを得ない事情や運営側の都合などにより、当日の内容の変更または中止とする場合があります。<br>\n・本イベントは、技術交流が目的です。知識の共有、及び、参加者同士の交流を目的としないご参加はご遠慮ください。<br>\n・参加目的が不適切と判断される場合には、運営側で参加キャンセルとさせていただく場合がございます。<br></p>\n<h3>禁止事項</h3>\n<p>・宗教団体、人材会社等による勧誘行為、宣伝行為、ヘッドハンティングまたはこれに類似する行為。<br>\n・過度な大声、騒音、振動、暴力等、他の参加者の迷惑になる行為。<br>\n・法令に違反する、またはそのおそれのある行為。<br>\n<br></p>\n<h3>アンチハラスメントポリシー</h3>\n<p>全ての参加者が技術共有/交流に集中できる様、以下のようなハラスメント行為はご遠慮ください。<br>\n該当する行為が発覚した場合、NGユーザーの登録などを行う可能性があります。<br>\n・性差、性同一性の表現、性的指向、障害、外見や身体的特徴、人種、宗教、公共な場での性的な画像や類する表現、<br>\n・脅迫、つきまとい、望まない写真撮影や録音・録画、不適切な接触、およびそれらに関連した不快な言動<br>\n万が一、ハラスメント行為を見聞きした場合は、connpass上から「イベントへのお問い合わせ」でご連絡いただけますと幸いです。<br></p>",
       "url": "https://mixi.connpass.com/event/403987/",
       "image_url": "https://media.connpass.com/thumbs/59/3c/593c7e156d1e5bdc3dd4748423eee33e.png",
       "hash_tag": "BIZREACH_MIXI",
@@ -61,9 +61,9 @@
       "owner_id": 578301,
       "owner_nickname": "mixi_engineers",
       "owner_display_name": "株式会社MIXI",
-      "accepted": 146,
+      "accepted": 154,
       "waiting": 0,
-      "updated_at": "2026-09-08T18:24:14+09:00"
+      "updated_at": "2026-09-09T14:25:46+09:00"
     },
     {
       "id": 399429,
@@ -97,37 +97,6 @@
       "updated_at": "2026-08-27T13:14:17+09:00"
     },
     {
-      "id": 400084,
-      "title": "【KKG主催】AI × 建設図面ミートアップ 第1回",
-      "catch": "〜【CTO登壇】汎用AIを超えるKKGの図面認識AI・BIM生成AIの秘密大公開〜",
-      "description": "<h1>【KKG主催】AI×建設図面ミートアップ #1 〜【CTO登壇】汎用AIを超えるKKGの図面認識AI・BIM生成AIの秘密大公開〜</h1>\n<h2>📝 イベント概要</h2>\n<p>マルチモーダルLLMの進化で「図面をAIに読ませる」ことは現実味を帯びました。しかし実プロダクトにするには、部材検出、符号・寸法の読み取り、図面間の整合チェックなど、汎用AI単体では越えられない壁があります。</p>\n<p>KK Generation（KKG）は、建築図面からBIM（IFC）を自動生成するAIの精度を測るベンチマーク <strong>「IFC再現性スコア」</strong>（存在性 / 形状・寸法 / 配置 / 属性 / 関係性の5軸100点）を公開しました。RC造庁舎・計画通知図16枚での実測では、<strong>KKG 92.6点 vs 汎用AI 30.2点</strong>でした。</p>\n<p>本イベントでは、このベンチマークの設計と実測を題材に、汎用AIが日本の建築図面をどこまで読めるのかの現在地と、図面認識を実プロダクトとして成立させるアーキテクチャを、開発メンバーが技術寄りにお話しします。</p>\n<h2>👨‍💻 こんな方におすすめ</h2>\n<ul>\n<li>マルチモーダルLLMの実応用とその限界に関心があるML/CVエンジニア(※ 建設図面・BIMに関する事前知識は不要です。)</li>\n<li>ドメイン特化AI・ベンチマーク設計に取り組むエンジニア</li>\n<li>建設DX／図面×AI／BIM・3D空間データに携わる方</li>\n</ul>\n<p>※　競合し得る企業の方の参加はご遠慮頂いています</p>\n<h2>☑️ 持ち帰れること</h2>\n<ul>\n<li>汎用AIが日本の建築図面を「どこまで読めて、何が読めないか」の定量的な現在地</li>\n<li>図面認識AIをプロダクト化するアーキテクチャの実践知</li>\n<li>建設×AIに取り組む仲間とのつながり</li>\n</ul>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30〜19:00</td>\n<td>開場・受付</td>\n<td>ー</td>\n</tr>\n<tr>\n<td>19:00〜19:05</td>\n<td>オープニング（KKG紹介・イベントの狙い）</td>\n<td>KK Generation</td>\n</tr>\n<tr>\n<td>19:05〜19:20</td>\n<td>図面認識AIのアーキテクチャ解説 〜汎用AI単体では解けない理由〜</td>\n<td>KK Generation FDE 瀬尾 政隆</td>\n</tr>\n<tr>\n<td>19:20〜19:40</td>\n<td>2D図面→BIM生成ベンチマーク「IFC再現性スコア」を作って公開した話</td>\n<td>KK Generation CTO 市川 航平</td>\n</tr>\n<tr>\n<td>19:40〜19:45</td>\n<td>クロージング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:45〜20:40</td>\n<td>懇親会</td>\n<td>ー</td>\n</tr>\n</tbody>\n</table>\n<p>※セッション内容は変更の可能性があります。</p>\n<h2>💰 参加費・会場</h2>\n<ul>\n<li>参加費：無料 ／ 懇親会：あり（予定）</li>\n<li>会場：ワークショップスペース（詳細は参加者にご案内します）</li>\n</ul>\n<p>📰 当日題材にするベンチマークのリリース：<a href=\"https://prtimes.jp/main/html/rd/p/000000024.000143310.html\" rel=\"nofollow\">https://prtimes.jp/main/html/rd/p/000000024.000143310.html</a></p>\n<p>🎥 ベンチマーク紹介動画 : <a href=\"https://www.youtube.com/watch?v=ox1mqP7HrHM\" rel=\"nofollow\">https://www.youtube.com/watch?v=ox1mqP7HrHM</a></p>\n<h2>⚠️  【重要】オンライン配信中止のお知らせ（2026/08/26 追記）</h2>\n<p>当初オンライン参加枠を設けておりましたが、運営方針の見直しにより、\n 本イベントは現地開催のみとさせていただくこととなりました。\n オンライン参加枠にお申し込みいただいた皆さまには、個別にご連絡を差し上げます。\n ご迷惑をおかけし、誠に申し訳ございません。\n 現地会場（東京・高輪）にお越しいただける場合は、\n 現地参加枠へのお申し込みを歓迎いたします。</p>\n<hr>",
-      "url": "https://kk-generation.connpass.com/event/400084/",
-      "image_url": "https://media.connpass.com/thumbs/f3/07/f3078315d32d6fa5c136f8efa5ffb02d.png",
-      "hash_tag": "生成AI",
-      "started_at": "2026-09-09T19:00:00+09:00",
-      "ended_at": "2026-09-09T21:00:00+09:00",
-      "published_at": "2026-08-07T11:40:37+09:00",
-      "limit": 41,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17865,
-        "subdomain": "kk-generation",
-        "title": "KK Generation",
-        "url": "https://kk-generation.connpass.com/"
-      },
-      "address": "〒108-0074 東京都港区高輪２丁目２１−２",
-      "place": "THE LINKPILLAR 1（ザ・リンクピラー・ワン）SOUTH 9F Studio1ワークショップルーム1",
-      "lat": "35.634730900000",
-      "lon": "139.739384900000",
-      "owner_id": 762861,
-      "owner_nickname": "MasatakaSeo",
-      "owner_display_name": "MasatakaSeo",
-      "accepted": 24,
-      "waiting": 1,
-      "updated_at": "2026-08-28T08:34:18+09:00"
-    },
-    {
       "id": 405471,
       "title": "meet CTOs vol.14｜生成AI時代のキャリアをどう描くか？",
       "catch": "AI Ready への道程 第3回・キャリア編｜亀田彗様・佐藤寛容様登壇",
@@ -159,35 +128,35 @@
       "updated_at": "2026-09-02T14:51:13+09:00"
     },
     {
-      "id": 404312,
-      "title": "kaonavi Tech Talk #23 〜 AIを組織に浸透させるリアル 〜",
-      "catch": "",
-      "description": "<h2>🎪 イベント概要</h2>\n<p>個人ではAIを使いこなせていても、チームや組織への浸透はまだこれから、という壁に直面していませんか。  </p>\n<p>今回のkaonavi Tech Talkでは「AIを組織にどう根付かせるか」を正面から取り上げます。<br>\nAI DevEx Conference 2026での登壇内容の再演に加え、カオナビの現場チーム・個人によるAI活用の実例を交えてお届けします。  </p>\n<p>組織単位でのAI活用に悩むエンジニア・マネジメント層の方はぜひご参加ください。  </p>\n<h2>👀　kaonavi Tech Talkとは？</h2>\n<p>「“はたらく”にテクノロジーを実装し、個の力から社会の仕様を変える」というパーパスを掲げるカオナビによるオンラインイベントです！   </p>\n<p>HRTechのリーディングカンパニーであるカオナビの開発組織は、学習する組織として絶え間なく変化を続けてきました。<br>\n組織・チーム・プロセス・エンジニアリングなど多くの領域に対してTry&amp;Errorを繰り返すことで学びを重ね、開発組織もサービスもカイゼンを行ってきました。 </p>\n<p>そうした学びは社内の勉強会や交流会で共有されてきましたが</p>\n<ul>\n<li>カオナビの開発組織の文化・人を多くの方に知っていただきたい</li>\n<li>社内外で学びを循環させ、コラボレーションを実現する場を創出したい</li>\n</ul>\n<p>といった想いから、kaonavi Tech Talkは生まれました。</p>\n<p>カオナビの開発最前線で活躍するメンバーがスピーカーを務め、日々の開発で得た学びを発信して参ります！<br>\nぜひカジュアルにご参加いただければと思います。  </p>\n<h2>📝　参加方法のご案内</h2>\n<p>当日はYouTube Liveにて配信予定です。<br>\n配信URLは後日こちらのページにて参加者の方のみ閲覧できます。</p>\n<h2>📆　タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: left;\">カテゴリ</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">19:00-19:05</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05-19:35</td>\n<td style=\"text-align: left;\">発表</td>\n<td style=\"text-align: left;\">AIツール導入しても生産性はあがらない？ カオナビが直面した3つの壁と乗り越え方 (宇谷) <br>(AI DevEx Conference 2026再演)</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:35-19:45</td>\n<td style=\"text-align: left;\">発表</td>\n<td style=\"text-align: left;\">形式にとらわれないフレキシブルなAI利活用勉強会のすすめ(西)</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45-19:55</td>\n<td style=\"text-align: left;\">発表</td>\n<td style=\"text-align: left;\">カオナビ労務におけるAI活用の裏側〜開発フローへの組み込みと、非エンジニアへの推進プロセス〜(渡邊)</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>🎤　スピーカー紹介</h2>\n<h3>宇谷 有史</h3>\n<p>株式会社ブクログでサービスの企画開発運用などを経験後、2022年にカオナビ入社。現在は履歴機能の開発や分析機能の開発を担当。趣味はコーヒーと積読とサンフレッチェ広島。<br>\nX: <a href=\"https://x.com/gennei\" rel=\"nofollow\">@gennei</a>  </p>\n<h3>西 陽也</h3>\n<p>2025年に株式会社カオナビに新卒入社。現在はフロントエンドエンジニアとしてポジション管理機能の開発を担当。好きな食べ物は家系ラーメン。</p>\n<h3>渡邊 大介</h3>\n<p>2019年にISP企業へエンジニアとして入社し、複数のWEBサービスを担当。新規開発や運用保守を通じて、フロントエンドからバックエンド、インフラまで幅広い領域の開発を経験。その後2025年7月に株式会社カオナビへ入社。現在はカオナビ労務の開発に従事している。</p>\n<h2>🙌　ご興味ある方はこちらもどうぞ</h2>\n<p><a href=\"https://www.kaonavi.jp/\" rel=\"nofollow\">サービスのご案内</a><br>\n<a href=\"http://recruit.kaonavi.jp/engineer/\" rel=\"nofollow\">エンジニア採用ページ</a><br>\n<a href=\"https://vivivi.kaonavi.jp/tags/engineer/\" rel=\"nofollow\">エンジニアインタビュー</a></p>\n<h2>💡　注意事項</h2>\n<ul>\n<li>当日の内容およびスケジュールは予告なく変更される場合があります。</li>\n<li>他の参加者の方の妨げになるような行為は禁止、運営側の判断でご退出をお願いする場合があります。</li>\n<li>当イベントはオンライン開催につき、通信状況によって音声や映像の乱れがある場合がございます。</li>\n<li>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします</li>\n</ul>",
-      "url": "https://kaonavi.connpass.com/event/404312/",
-      "image_url": "https://media.connpass.com/thumbs/8d/94/8d94fc915a1813eaa4e9405820db31aa.png",
-      "hash_tag": "kaonaviTechTalk",
+      "id": 400084,
+      "title": "【KKG主催】AI × 建設図面ミートアップ 第1回",
+      "catch": "〜【CTO登壇】汎用AIを超えるKKGの図面認識AI・BIM生成AIの秘密大公開〜",
+      "description": "<h1>【KKG主催】AI×建設図面ミートアップ #1 〜【CTO登壇】汎用AIを超えるKKGの図面認識AI・BIM生成AIの秘密大公開〜</h1>\n<h2>📝 イベント概要</h2>\n<p>マルチモーダルLLMの進化で「図面をAIに読ませる」ことは現実味を帯びました。しかし実プロダクトにするには、部材検出、符号・寸法の読み取り、図面間の整合チェックなど、汎用AI単体では越えられない壁があります。</p>\n<p>KK Generation（KKG）は、建築図面からBIM（IFC）を自動生成するAIの精度を測るベンチマーク <strong>「IFC再現性スコア」</strong>（存在性 / 形状・寸法 / 配置 / 属性 / 関係性の5軸100点）を公開しました。RC造庁舎・計画通知図16枚での実測では、<strong>KKG 92.6点 vs 汎用AI 30.2点</strong>でした。</p>\n<p>本イベントでは、このベンチマークの設計と実測を題材に、汎用AIが日本の建築図面をどこまで読めるのかの現在地と、図面認識を実プロダクトとして成立させるアーキテクチャを、開発メンバーが技術寄りにお話しします。</p>\n<h2>👨‍💻 こんな方におすすめ</h2>\n<ul>\n<li>マルチモーダルLLMの実応用とその限界に関心があるML/CVエンジニア(※ 建設図面・BIMに関する事前知識は不要です。)</li>\n<li>ドメイン特化AI・ベンチマーク設計に取り組むエンジニア</li>\n<li>建設DX／図面×AI／BIM・3D空間データに携わる方</li>\n</ul>\n<p>※　競合し得る企業の方の参加はご遠慮頂いています</p>\n<h2>☑️ 持ち帰れること</h2>\n<ul>\n<li>汎用AIが日本の建築図面を「どこまで読めて、何が読めないか」の定量的な現在地</li>\n<li>図面認識AIをプロダクト化するアーキテクチャの実践知</li>\n<li>建設×AIに取り組む仲間とのつながり</li>\n</ul>\n<h2>🕐 タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>セッション</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30〜19:00</td>\n<td>開場・受付</td>\n<td>ー</td>\n</tr>\n<tr>\n<td>19:00〜19:05</td>\n<td>オープニング（KKG紹介・イベントの狙い）</td>\n<td>KK Generation</td>\n</tr>\n<tr>\n<td>19:05〜19:20</td>\n<td>図面認識AIのアーキテクチャ解説 〜汎用AI単体では解けない理由〜</td>\n<td>KK Generation FDE 瀬尾 政隆</td>\n</tr>\n<tr>\n<td>19:20〜19:40</td>\n<td>2D図面→BIM生成ベンチマーク「IFC再現性スコア」を作って公開した話</td>\n<td>KK Generation CTO 市川 航平</td>\n</tr>\n<tr>\n<td>19:40〜19:45</td>\n<td>クロージング</td>\n<td></td>\n</tr>\n<tr>\n<td>19:45〜20:40</td>\n<td>懇親会</td>\n<td>ー</td>\n</tr>\n</tbody>\n</table>\n<p>※セッション内容は変更の可能性があります。</p>\n<h2>💰 参加費・会場</h2>\n<ul>\n<li>参加費：無料 ／ 懇親会：あり（予定）</li>\n<li>会場：ワークショップスペース（詳細は参加者にご案内します）</li>\n</ul>\n<p>📰 当日題材にするベンチマークのリリース：<a href=\"https://prtimes.jp/main/html/rd/p/000000024.000143310.html\" rel=\"nofollow\">https://prtimes.jp/main/html/rd/p/000000024.000143310.html</a></p>\n<p>🎥 ベンチマーク紹介動画 : <a href=\"https://www.youtube.com/watch?v=ox1mqP7HrHM\" rel=\"nofollow\">https://www.youtube.com/watch?v=ox1mqP7HrHM</a></p>\n<h2>⚠️  【重要】オンライン配信中止のお知らせ（2026/08/26 追記）</h2>\n<p>当初オンライン参加枠を設けておりましたが、運営方針の見直しにより、\n 本イベントは現地開催のみとさせていただくこととなりました。\n オンライン参加枠にお申し込みいただいた皆さまには、個別にご連絡を差し上げます。\n ご迷惑をおかけし、誠に申し訳ございません。\n 現地会場（東京・高輪）にお越しいただける場合は、\n 現地参加枠へのお申し込みを歓迎いたします。</p>\n<hr>",
+      "url": "https://kk-generation.connpass.com/event/400084/",
+      "image_url": "https://media.connpass.com/thumbs/f3/07/f3078315d32d6fa5c136f8efa5ffb02d.png",
+      "hash_tag": "生成AI",
       "started_at": "2026-09-09T19:00:00+09:00",
-      "ended_at": "2026-09-09T20:00:00+09:00",
-      "published_at": "2026-08-25T16:24:35+09:00",
-      "limit": null,
+      "ended_at": "2026-09-09T21:00:00+09:00",
+      "published_at": "2026-08-07T11:40:37+09:00",
+      "limit": 41,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
-        "id": 12201,
-        "subdomain": "kaonavi",
-        "title": "カオナビ",
-        "url": "https://kaonavi.connpass.com/"
+        "id": 17865,
+        "subdomain": "kk-generation",
+        "title": "KK Generation",
+        "url": "https://kk-generation.connpass.com/"
       },
-      "address": "",
-      "place": "YouTube Live",
-      "lat": "35.670090400000",
-      "lon": "139.749488300000",
-      "owner_id": 648513,
-      "owner_nickname": "kaonavi",
-      "owner_display_name": "kaonavi",
-      "accepted": 21,
-      "waiting": 0,
-      "updated_at": "2026-08-31T14:20:48+09:00"
+      "address": "〒108-0074 東京都港区高輪２丁目２１−２",
+      "place": "THE LINKPILLAR 1（ザ・リンクピラー・ワン）SOUTH 9F Studio1ワークショップルーム1",
+      "lat": "35.634730900000",
+      "lon": "139.739384900000",
+      "owner_id": 762861,
+      "owner_nickname": "MasatakaSeo",
+      "owner_display_name": "MasatakaSeo",
+      "accepted": 27,
+      "waiting": 1,
+      "updated_at": "2026-08-28T08:34:18+09:00"
     },
     {
       "id": 401510,
@@ -216,7 +185,7 @@
       "owner_id": 1023138,
       "owner_nickname": "satoshi110",
       "owner_display_name": "Satoshi Ito",
-      "accepted": 111,
+      "accepted": 112,
       "waiting": 2,
       "updated_at": "2026-09-09T05:35:23+09:00"
     },
@@ -247,8 +216,8 @@
       "owner_id": 25767,
       "owner_nickname": "sugimomoto",
       "owner_display_name": "杉本 和也",
-      "accepted": 122,
-      "waiting": 9,
+      "accepted": 128,
+      "waiting": 8,
       "updated_at": "2026-08-31T17:54:14+09:00"
     },
     {
@@ -278,9 +247,40 @@
       "owner_id": 133012,
       "owner_nickname": "HitoshiHamano",
       "owner_display_name": "HitoshiHamano",
-      "accepted": 89,
+      "accepted": 88,
       "waiting": 0,
       "updated_at": "2026-09-09T09:13:22+09:00"
+    },
+    {
+      "id": 404312,
+      "title": "kaonavi Tech Talk #23 〜 AIを組織に浸透させるリアル 〜",
+      "catch": "",
+      "description": "<h2>🎪 イベント概要</h2>\n<p>個人ではAIを使いこなせていても、チームや組織への浸透はまだこれから、という壁に直面していませんか。  </p>\n<p>今回のkaonavi Tech Talkでは「AIを組織にどう根付かせるか」を正面から取り上げます。<br>\nAI DevEx Conference 2026での登壇内容の再演に加え、カオナビの現場チーム・個人によるAI活用の実例を交えてお届けします。  </p>\n<p>組織単位でのAI活用に悩むエンジニア・マネジメント層の方はぜひご参加ください。  </p>\n<h2>👀　kaonavi Tech Talkとは？</h2>\n<p>「“はたらく”にテクノロジーを実装し、個の力から社会の仕様を変える」というパーパスを掲げるカオナビによるオンラインイベントです！   </p>\n<p>HRTechのリーディングカンパニーであるカオナビの開発組織は、学習する組織として絶え間なく変化を続けてきました。<br>\n組織・チーム・プロセス・エンジニアリングなど多くの領域に対してTry&amp;Errorを繰り返すことで学びを重ね、開発組織もサービスもカイゼンを行ってきました。 </p>\n<p>そうした学びは社内の勉強会や交流会で共有されてきましたが</p>\n<ul>\n<li>カオナビの開発組織の文化・人を多くの方に知っていただきたい</li>\n<li>社内外で学びを循環させ、コラボレーションを実現する場を創出したい</li>\n</ul>\n<p>といった想いから、kaonavi Tech Talkは生まれました。</p>\n<p>カオナビの開発最前線で活躍するメンバーがスピーカーを務め、日々の開発で得た学びを発信して参ります！<br>\nぜひカジュアルにご参加いただければと思います。  </p>\n<h2>📝　参加方法のご案内</h2>\n<p>当日はYouTube Liveにて配信予定です。<br>\n配信URLは後日こちらのページにて参加者の方のみ閲覧できます。</p>\n<h2>📆　タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">時間</th>\n<th style=\"text-align: left;\">カテゴリ</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">19:00-19:05</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:05-19:35</td>\n<td style=\"text-align: left;\">発表</td>\n<td style=\"text-align: left;\">AIツール導入しても生産性はあがらない？ カオナビが直面した3つの壁と乗り越え方 (宇谷) <br>(AI DevEx Conference 2026再演)</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:35-19:45</td>\n<td style=\"text-align: left;\">発表</td>\n<td style=\"text-align: left;\">形式にとらわれないフレキシブルなAI利活用勉強会のすすめ(西)</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:45-19:55</td>\n<td style=\"text-align: left;\">発表</td>\n<td style=\"text-align: left;\">カオナビ労務におけるAI活用の裏側〜開発フローへの組み込みと、非エンジニアへの推進プロセス〜(渡邊)</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19:55</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<h2>🎤　スピーカー紹介</h2>\n<h3>宇谷 有史</h3>\n<p>株式会社ブクログでサービスの企画開発運用などを経験後、2022年にカオナビ入社。現在は履歴機能の開発や分析機能の開発を担当。趣味はコーヒーと積読とサンフレッチェ広島。<br>\nX: <a href=\"https://x.com/gennei\" rel=\"nofollow\">@gennei</a>  </p>\n<h3>西 陽也</h3>\n<p>2025年に株式会社カオナビに新卒入社。現在はフロントエンドエンジニアとしてポジション管理機能の開発を担当。好きな食べ物は家系ラーメン。</p>\n<h3>渡邊 大介</h3>\n<p>2019年にISP企業へエンジニアとして入社し、複数のWEBサービスを担当。新規開発や運用保守を通じて、フロントエンドからバックエンド、インフラまで幅広い領域の開発を経験。その後2025年7月に株式会社カオナビへ入社。現在はカオナビ労務の開発に従事している。</p>\n<h2>🙌　ご興味ある方はこちらもどうぞ</h2>\n<p><a href=\"https://www.kaonavi.jp/\" rel=\"nofollow\">サービスのご案内</a><br>\n<a href=\"http://recruit.kaonavi.jp/engineer/\" rel=\"nofollow\">エンジニア採用ページ</a><br>\n<a href=\"https://vivivi.kaonavi.jp/tags/engineer/\" rel=\"nofollow\">エンジニアインタビュー</a></p>\n<h2>💡　注意事項</h2>\n<ul>\n<li>当日の内容およびスケジュールは予告なく変更される場合があります。</li>\n<li>他の参加者の方の妨げになるような行為は禁止、運営側の判断でご退出をお願いする場合があります。</li>\n<li>当イベントはオンライン開催につき、通信状況によって音声や映像の乱れがある場合がございます。</li>\n<li>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします</li>\n</ul>",
+      "url": "https://kaonavi.connpass.com/event/404312/",
+      "image_url": "https://media.connpass.com/thumbs/8d/94/8d94fc915a1813eaa4e9405820db31aa.png",
+      "hash_tag": "kaonaviTechTalk",
+      "started_at": "2026-09-09T19:00:00+09:00",
+      "ended_at": "2026-09-09T20:00:00+09:00",
+      "published_at": "2026-08-25T16:24:35+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 12201,
+        "subdomain": "kaonavi",
+        "title": "カオナビ",
+        "url": "https://kaonavi.connpass.com/"
+      },
+      "address": "",
+      "place": "YouTube Live",
+      "lat": "35.670090400000",
+      "lon": "139.749488300000",
+      "owner_id": 648513,
+      "owner_nickname": "kaonavi",
+      "owner_display_name": "kaonavi",
+      "accepted": 26,
+      "waiting": 0,
+      "updated_at": "2026-08-31T14:20:48+09:00"
     },
     {
       "id": 404654,
@@ -309,7 +309,7 @@
       "owner_id": 36999,
       "owner_nickname": "civitaspo",
       "owner_display_name": "civitaspo",
-      "accepted": 28,
+      "accepted": 30,
       "waiting": 0,
       "updated_at": "2026-09-07T10:30:25+09:00"
     },
@@ -371,7 +371,7 @@
       "owner_id": 975845,
       "owner_nickname": "mai_fujikura",
       "owner_display_name": "mai_fujikura",
-      "accepted": 42,
+      "accepted": 41,
       "waiting": 0,
       "updated_at": "2026-09-02T17:09:20+09:00"
     },
@@ -397,9 +397,40 @@
       "owner_id": 801690,
       "owner_nickname": "Nature_Architects",
       "owner_display_name": "Nature_Architects",
-      "accepted": 26,
+      "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-09-09T09:47:12+09:00"
+    },
+    {
+      "id": 406417,
+      "title": "OpenLab Hybrid #100 at #JLCPCB",
+      "catch": "ロボット電源回路",
+      "description": "<p>JLCPCB のツールを使い、オープンソースハードウェアを作りましょう。</p>\n<p>あるいはそれ以外のツールを使って JLCPCB に発注データを作りましょう。</p>\n<h1>開催日程</h1>\n<p>今回は JLCPCB オフィスで開催！ 担当者と話したり遊びながら、ハードウェア開発をしましょう。\n行っている内容のうち、 14:30〜16:30頃には YouTube で作業内容を配信記録します →  <a href=\"https://www.youtube.com/@open4th\" rel=\"nofollow\">https://www.youtube.com/@open4th</a></p>\n<h1>開催場所</h1>\n<p>オンラインとオフラインのハイブリッド開催です。\n詳細はエントリーすると詳細が表示されます。</p>\n<h1>やること</h1>\n<p>オープンソースハードウェアを以下のようにして開発します。</p>\n<ul>\n<li>GitHub でレポジトリ作成</li>\n<li>基板CADを使ったPCB設計</li>\n<li>JLCPCB で PCBA</li>\n<li>3D CADでモデリング、3Dプリント/CNC発注</li>\n<li>OSHWC Lab に登録</li>\n</ul>\n<p>作業している画面を解説を交え、配信を行います。</p>\n<p>参加者も、できれば自分の画面を共有しながら作業していきましょう。</p>\n<h1>参加にあたって</h1>\n<ul>\n<li>もくもく( ? )と作ります。</li>\n<li>オープンソースハードウェアでなくてもOKです。オープンソースハードウェアの場合はぜひとも成果をPRしてください。</li>\n<li>画面共有Welcome です。</li>\n<li>質問歓迎です。質問するだけの目的でのご参加もOKです。</li>\n<li>成果の見せびらかしもしてみましょう。</li>\n</ul>\n<h1>クーポン</h1>\n<p>イベントで作成した基板などの JLCPCB の注文に使えるクーポンを配布します。\nこちらから、入力してください。</p>\n<p><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeS0TQZEyNyvOOHV1Uo2hvMkCpppYtlgolDXPxUEVTGaXgbXQ/viewform?usp=dialog\" rel=\"nofollow\">https://docs.google.com/forms/d/e/1FAIpQLSeS0TQZEyNyvOOHV1Uo2hvMkCpppYtlgolDXPxUEVTGaXgbXQ/viewform?usp=dialog</a></p>\n<p>入力 すると人力でクーポンが発行されます。入力したことを、主催者などにお伝えください。</p>\n<h1>インターネット配信</h1>\n<p>作業画面を YouTube でストリーミングします。\n活動時間のうち、14時30分頃〜17時前ぐらいを配信します。\nあとから見返しもできます。</p>\n<p><a href=\"https://www.youtube.com/@open4th/streams\" rel=\"nofollow\">https://www.youtube.com/@open4th/streams</a></p>\n<h1>秘密結社オープンフォース</h1>\n<p>Discord 「オープンハードテラス」サーバーでディスカッションしています。</p>\n<ul>\n<li>各種オープンソースハードウェア開発</li>\n<li>オープンソースハードウェアもくもく会</li>\n<li>イベント開催・イベント出展</li>\n<li>読書会</li>\n<li>災害支援作戦</li>\n</ul>\n<p>よろしければご参加下さい。\n<a href=\"https://discord.gg/9UTNdtSrdX\" rel=\"nofollow\">https://discord.gg/9UTNdtSrdX</a></p>",
+      "url": "https://openforce.connpass.com/event/406417/",
+      "image_url": "https://media.connpass.com/thumbs/91/fa/91fa0f8fe99b7138cfe05a34feb438a9.png",
+      "hash_tag": "",
+      "started_at": "2026-09-09T14:30:00+09:00",
+      "ended_at": "2026-09-09T16:00:00+09:00",
+      "published_at": "2026-09-09T12:26:27+09:00",
+      "limit": 15,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 9942,
+        "subdomain": "openforce",
+        "title": "秘密結社オープンフォース",
+        "url": "https://openforce.connpass.com/"
+      },
+      "address": "東京都千代田区岩本町三丁目2番1号ビリーフ岩本町201号室",
+      "place": "ハイブリッド開催(リモート開催およびJLCPCBオフィス)",
+      "lat": "35.694802100000",
+      "lon": "139.775610200000",
+      "owner_id": 10191,
+      "owner_nickname": "nanbuwks",
+      "owner_display_name": "nanbuwks",
+      "accepted": 1,
+      "waiting": 0,
+      "updated_at": "2026-09-09T12:26:27+09:00"
     }
   ]
 }
