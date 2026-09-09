@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-09T07:13:30.803995+09:00",
+  "fetched_at": "2026-09-09T09:55:35.994193+09:00",
   "date": "20260909",
   "count": 13,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 93475,
       "owner_nickname": "SuguruOki",
       "owner_display_name": "Suguru Oki(スー)",
-      "accepted": 24,
+      "accepted": 25,
       "waiting": 0,
       "updated_at": "2026-09-07T23:03:46+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 578301,
       "owner_nickname": "mixi_engineers",
       "owner_display_name": "株式会社MIXI",
-      "accepted": 144,
+      "accepted": 146,
       "waiting": 0,
       "updated_at": "2026-09-08T18:24:14+09:00"
     },
@@ -128,37 +128,6 @@
       "updated_at": "2026-08-28T08:34:18+09:00"
     },
     {
-      "id": 402603,
-      "title": "kintone・SalesforceのMCPって業務でどう活用できるの？ SaaS × AI の今",
-      "catch": "第1回 Japan MCP Business Community（JMBC）",
-      "description": "<h2>MCPが、ビジネスの現場を変えようとしている。でも、業務でどう活用できるの？</h2>\n<p>「AIに Salesforce のデータを読み書きさせる」「Slack からAI を通じて外部システムに指示を出す」「kintone × Garoon の情報を AI エージェントがまとめる」</p>\n<p>Model Context Protocol（MCP）の登場により、業務 SaaS や基幹システムと AI エージェントをつなぐ仕組みが急速に整いつつあります。</p>\n<p><strong>Japan MCP Business Community（JMBC）</strong> は、MCP を業務に活かしたいビジネスパーソンのためのコミュニティです。開発・コードの話だけでなく、「実際の業務でどう使うか」「自社にどう導入するか」「セキュリティやガバナンスをどう整えるか」までを含めた、ビジネス視点での MCP 活用を共有・議論する場を目指しています。</p>\n<p>記念すべき第1回は、すでに MCP を提供している大手 SaaS ベンダー2社（サイボウズ・Salesforce）から登壇いただき、「MCP って結局どう使えるの？」という疑問に、実際に提供している側から答えてもらいます。</p>\n<h2>こんな方に来てほしい</h2>\n<ul>\n<li>「MCPって聞いたことあるけど、自分の仕事に使えるの？」と気になっている方</li>\n<li>営業・マーケティング・人事・CS など、非エンジニア職でも AI 活用を推進したい方</li>\n<li>社内の DX 推進・AI 導入を担当している方（情報システム部門・経営企画など）</li>\n<li>MCP / AI エージェントの自社導入を検討・推進している方</li>\n<li>セキュリティ・ガバナンス面での対応方針を知りたい方</li>\n</ul>\n<h2>タイムライン</h2>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>開場・受付</td>\n<td>—</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>オープニング・JMBC の紹介</td>\n<td>杉本 和也（5分）</td>\n</tr>\n<tr>\n<td>19:05</td>\n<td>MCP とは何か、業務活用の全体像</td>\n<td>杉本 和也（20分）</td>\n</tr>\n<tr>\n<td>19:25</td>\n<td>セッション①：ブラウザを開かずに Salesforce を動かす 〜 AI エージェント × MCP で変わるビジネスデータ活用 〜</td>\n<td>Salesforce（20分）</td>\n</tr>\n<tr>\n<td>19:45</td>\n<td>セッション②：Slack に MCP で繋ぐ &amp; Slack から MCP で繋ぐ</td>\n<td>Salesforce（20分）</td>\n</tr>\n<tr>\n<td>20:05</td>\n<td>セッション③：担当者の「個人の頑張り」から卒業する、kintone×AI活用のはじめの一歩</td>\n<td>サイボウズ（30分）</td>\n</tr>\n<tr>\n<td>20:35</td>\n<td>懇親会・交流タイム</td>\n<td>—（〜21:30）</td>\n</tr>\n</tbody>\n</table>\n<h2>登壇者</h2>\n<h3>セッション①：ブラウザを開かずに Salesforce を動かす 〜 AI エージェント × MCP で変わるビジネスデータ活用 〜</h3>\n<p>Claude や ChatGPT などの AI エージェントが、MCP を通じてログイン不要で Salesforce のデータを直接読み書きできる時代になりました。Salesforce Hosted MCP Server の仕組みと、実際にビジネスデータへ自然言語でアクセスする様子をデモを交えてご紹介します。</p>\n<p><strong>おだしょー（Salesforce Japan）</strong><br>\nDeveloper Advocate</p>\n<p>国内 SIer にてインフラから PaaS App 開発まで幅広く経験した後、コミュニティ活動を通じて Microsoft へ。現在は Developer Advocate として、開発者や管理者へセールスフォース技術の啓蒙や認知拡大に取り組む。DevRel/Tokyo を中心に複数のコミュニティを運営・支援。名城大学情報工学部非常勤講師。TechFeed Expert for DevRel、iPhone 絶対並んで買う <del>おじさん</del> お兄さん（2011–2025）として現在7連覇中！</p>\n<h3>セッション②：Slack に MCP で繋ぐ &amp; Slack から MCP で繋ぐ</h3>\n<p>みなさん、ご存知でしたか？ AI エージェントアプリから MCP で Slack に繋ぐことはもちろんできますが、Slack（正確には Slackbot）から、外部の仕組みの MCP に繋いで利用することもできます。このセッションではその両方をライブデモでお届けします。</p>\n<p><strong>稲葉 裕之（Salesforce Japan）</strong><br>\nテクニカルオーディエンスリレーション</p>\n<p>テクニカルオーディエンスリレーションとして、セールスフォースの管理者・開発者の認知拡大や啓蒙活動に従事。技術セミナーやハンズオンの実施、技術ブログやソーシャルメディアでのコンテンツ提供など活動中。ITインフラベンダー、コンサルティングファームを経てセールスフォースに入社。中央省庁担当のソリューションエンジニアや、製品担当のソリューションエンジニア・プロダクトマネージャーの役割の後、2025年9月より現職。</p>\n<h3>セッション③：担当者の「個人の頑張り」から卒業する、kintone×AI活用のはじめの一歩</h3>\n<p>kintoneや様々なSaaSに蓄積したデータを組み合わせる作業は、「担当者の個人の頑張り」に頼るか、諦めて活用しないままになっていませんか？MCPを使えば、AIが複数SaaSのデータをシュシュッと組み合わせ、私たちのデータ活用を後押ししてくれます。「自分が説明できる業務をAIに任せる」ことから始める、AI活用のはじめの一歩をデモも交えてご紹介します。</p>\n<p><strong>山本 大貴（サイボウズ株式会社）</strong><br>\nDeveloper Relations</p>\n<p>国内SIerにてプログラマー・システムエンジニアとして基幹システム導入の経験を積み、2020年にサイボウズへキャリア入社。セールスエンジニアとして顧客やパートナー企業に向けた営業・提案支援を実施。現在は、cybozu developer networkでの情報発信などを担う。</p>\n<p><strong>曽我部 明加（サイボウズ株式会社）</strong>\nDeveloper Relations</p>\n<p>2023年にサイボウズへ新卒入社。現在は、開発者コミュニティの支援や、開発者向けコンテンツの制作・発信を担当。「サイボウズ製品を使いたい・提案したい」「ソリューションを作りたい」「連携したい」と多くの開発者に思っていただき、実際に行動してもらうことをミッションに活動している。</p>\n<h2>主催者</h2>\n<p><strong>杉本 和也（CData Software Japan）</strong><br>\nリードエンジニア・エバンジェリスト</p>\n<p>Microsoft 製品関連の SIer でエンジニア・プリセールスを経験後、CData Software Japan にジョインしリードエンジニアとして活動。\n現在はエバンジェリストとして技術発信・ウェビナー登壇・パートナー支援を担当。\n各種クラウドサービスが公開している API および MCP をメインの技術領域とし、累計200種類以上の API の検証・調査を行っており、MCP サーバーの検証・普及にも取り組んでいる。\nAPI・MCP に関する記事の執筆やイベント・コミュニティでの登壇も多数。</p>\n<h2>会場</h2>\n<p><strong>サイボウズ株式会社 東京オフィス（27階）</strong><br>\n東京都中央区日本橋2-7-1 東京日本橋タワー 27階（受付）</p>\n<p>最寄り駅：東京メトロ銀座線・東西線、都営地下鉄浅草線：「日本橋駅」B6出口直通\n東京メトロ半蔵門線・銀座線：「三越前駅」B6出口より徒歩3分\nJR：「東京駅」八重洲北口より徒歩10分</p>\n<h2>オンライン参加を追加</h2>\n<p>オンライン参加枠を追加しました。当日はZoom で開催します。</p>\n<h2>注意事項</h2>\n<ul>\n<li>受付では connpass の参加申込画面をご提示ください。</li>\n<li>会場ビルへの入館は 18:30 以降にお越しください（それ以前は入場できません）。</li>\n<li>途中参加・途中退場は大歓迎です。お気軽にお越しください。</li>\n<li>飲食物（ドリンク・軽食）を用意する予定です。</li>\n<li>名刺をお持ちの方はぜひご持参ください。</li>\n<li>撮影・録画・SNS 投稿は原則 OK ですが、登壇者の許可が必要な場合はその旨アナウンスします。</li>\n<li>ハッシュタグ：<strong>#JMBC #MCP</strong></li>\n</ul>\n<hr>",
-      "url": "https://jmbc.connpass.com/event/402603/",
-      "image_url": "https://media.connpass.com/thumbs/36/2f/362fb658ea542f8937696efff54638ca.png",
-      "hash_tag": "JMBC",
-      "started_at": "2026-09-09T19:00:00+09:00",
-      "ended_at": "2026-09-09T21:30:00+09:00",
-      "published_at": "2026-08-05T18:07:14+09:00",
-      "limit": 550,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17986,
-        "subdomain": "jmbc",
-        "title": "Japan MCP Business Community（JMBC）",
-        "url": "https://jmbc.connpass.com/"
-      },
-      "address": "東京都中央区日本橋2-7-1 (東京日本橋タワー)",
-      "place": "サイボウズ株式会社 東京オフィス（27階）",
-      "lat": "35.682146900000",
-      "lon": "139.774151600000",
-      "owner_id": 25767,
-      "owner_nickname": "sugimomoto",
-      "owner_display_name": "杉本 和也",
-      "accepted": 121,
-      "waiting": 9,
-      "updated_at": "2026-08-31T17:54:14+09:00"
-    },
-    {
       "id": 405471,
       "title": "meet CTOs vol.14｜生成AI時代のキャリアをどう描くか？",
       "catch": "AI Ready への道程 第3回・キャリア編｜亀田彗様・佐藤寛容様登壇",
@@ -216,40 +185,9 @@
       "owner_id": 648513,
       "owner_nickname": "kaonavi",
       "owner_display_name": "kaonavi",
-      "accepted": 20,
+      "accepted": 21,
       "waiting": 0,
       "updated_at": "2026-08-31T14:20:48+09:00"
-    },
-    {
-      "id": 403423,
-      "title": "みんなで学ぶAIエージェント時代のMicrosoftセキュリティ@Avanade Japan",
-      "catch": "",
-      "description": "<h1>このイベントについて</h1>\n<p>Microsoft技術を専門に取り扱うAvanadeのエンジニアが、セキュリティの「今」をリアルな現場視点でお届けするコミュニティイベントです！</p>\n<p>「ID設計や多層防御ってどう考えればいいの？」「パスキーやPurviewって実務でどう使えるの？」といった疑問にフォーカスし、\nAvanadeの現場で活躍するエンジニアや社外ゲストが、最新のセキュリティトレンドと実践知を紹介します。</p>\n<p>学び・つながり・ネットワーキングを気軽に楽しめるイベントです！</p>\n<h1>開催概要</h1>\n<ul>\n<li>日時：2026/9/9(水) 19:00 - 21:00</li>\n<li>場所：泉ガーデンタワー9F　アバナードオフィス「カフェスペース」</li>\n<li>形式：オフライン開催</li>\n</ul>\n<h1>タイムテーブル</h1>\n<p>※内容は調整中のため変更の可能性があります</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:10</td>\n<td>オープニング</td>\n<td>Community運営</td>\n</tr>\n<tr>\n<td>19:10 - 19:30</td>\n<td>AIエージェントの最新動向 ～Agent365 リキャップ～</td>\n<td>アバナード<br>- Gaku Yamamoto</td>\n</tr>\n<tr>\n<td>19:30 - 19:50</td>\n<td>パスキーって結局どう実装するの？～Microsoft Entra ID実践ガイド～</td>\n<td>アバナード<br>- Tatsuya Kanehira</td>\n</tr>\n<tr>\n<td>19:50 - 20:20</td>\n<td>AIエージェント時代のDevSecOps<br>～OSSサプライチェーン攻撃との攻防から考えるPlatform Protection～</td>\n<td>日本マイクロソフト<br>- Yurie Mori</td>\n</tr>\n<tr>\n<td>20:30 - 20:50</td>\n<td>当日飛び入りライトニングトーク</td>\n<td>LT希望者<br>※LT登壇者募集中！</td>\n</tr>\n<tr>\n<td>20:50 - 21:00</td>\n<td>クロージング</td>\n<td>All</td>\n</tr>\n</tbody>\n</table>\n<h1>参加にあたっての注意事項</h1>\n<ul>\n<li>本イベントはAvanade Japanでのオフライン開催です。現地で入館の際、<strong>本人確認のため名刺を2枚ご提示いただきます。</strong></li>\n<li>発表内容は個人の見解を含む場合があります。</li>\n<li>撮影・録画を行う場合があります。あらかじめご了承ください。</li>\n<li>内容およびスケジュールは予告なく変更される可能性があります。</li>\n</ul>",
-      "url": "https://avanadejapantech.connpass.com/event/403423/",
-      "image_url": "https://media.connpass.com/thumbs/b2/4a/b24a27afda45e736225cae9c89fc64ea.png",
-      "hash_tag": "",
-      "started_at": "2026-09-09T19:00:00+09:00",
-      "ended_at": "2026-09-09T21:00:00+09:00",
-      "published_at": "2026-08-14T12:00:56+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17736,
-        "subdomain": "avanadejapantech",
-        "title": "Avanade Japan Tech",
-        "url": "https://avanadejapantech.connpass.com/"
-      },
-      "address": "東京都港区六本木１丁目６−１ 泉ガーデンタワー 9F",
-      "place": "アバナードオフィス：カフェスペース",
-      "lat": "35.664561600000",
-      "lon": "139.739496300000",
-      "owner_id": 133012,
-      "owner_nickname": "HitoshiHamano",
-      "owner_display_name": "HitoshiHamano",
-      "accepted": 85,
-      "waiting": 0,
-      "updated_at": "2026-09-07T13:01:33+09:00"
     },
     {
       "id": 401510,
@@ -283,6 +221,68 @@
       "updated_at": "2026-09-09T05:35:23+09:00"
     },
     {
+      "id": 402603,
+      "title": "kintone・SalesforceのMCPって業務でどう活用できるの？ SaaS × AI の今",
+      "catch": "第1回 Japan MCP Business Community（JMBC）",
+      "description": "<h2>MCPが、ビジネスの現場を変えようとしている。でも、業務でどう活用できるの？</h2>\n<p>「AIに Salesforce のデータを読み書きさせる」「Slack からAI を通じて外部システムに指示を出す」「kintone × Garoon の情報を AI エージェントがまとめる」</p>\n<p>Model Context Protocol（MCP）の登場により、業務 SaaS や基幹システムと AI エージェントをつなぐ仕組みが急速に整いつつあります。</p>\n<p><strong>Japan MCP Business Community（JMBC）</strong> は、MCP を業務に活かしたいビジネスパーソンのためのコミュニティです。開発・コードの話だけでなく、「実際の業務でどう使うか」「自社にどう導入するか」「セキュリティやガバナンスをどう整えるか」までを含めた、ビジネス視点での MCP 活用を共有・議論する場を目指しています。</p>\n<p>記念すべき第1回は、すでに MCP を提供している大手 SaaS ベンダー2社（サイボウズ・Salesforce）から登壇いただき、「MCP って結局どう使えるの？」という疑問に、実際に提供している側から答えてもらいます。</p>\n<h2>こんな方に来てほしい</h2>\n<ul>\n<li>「MCPって聞いたことあるけど、自分の仕事に使えるの？」と気になっている方</li>\n<li>営業・マーケティング・人事・CS など、非エンジニア職でも AI 活用を推進したい方</li>\n<li>社内の DX 推進・AI 導入を担当している方（情報システム部門・経営企画など）</li>\n<li>MCP / AI エージェントの自社導入を検討・推進している方</li>\n<li>セキュリティ・ガバナンス面での対応方針を知りたい方</li>\n</ul>\n<h2>タイムライン</h2>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30</td>\n<td>開場・受付</td>\n<td>—</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>オープニング・JMBC の紹介</td>\n<td>杉本 和也（5分）</td>\n</tr>\n<tr>\n<td>19:05</td>\n<td>MCP とは何か、業務活用の全体像</td>\n<td>杉本 和也（20分）</td>\n</tr>\n<tr>\n<td>19:25</td>\n<td>セッション①：ブラウザを開かずに Salesforce を動かす 〜 AI エージェント × MCP で変わるビジネスデータ活用 〜</td>\n<td>Salesforce（20分）</td>\n</tr>\n<tr>\n<td>19:45</td>\n<td>セッション②：Slack に MCP で繋ぐ &amp; Slack から MCP で繋ぐ</td>\n<td>Salesforce（20分）</td>\n</tr>\n<tr>\n<td>20:05</td>\n<td>セッション③：担当者の「個人の頑張り」から卒業する、kintone×AI活用のはじめの一歩</td>\n<td>サイボウズ（30分）</td>\n</tr>\n<tr>\n<td>20:35</td>\n<td>懇親会・交流タイム</td>\n<td>—（〜21:30）</td>\n</tr>\n</tbody>\n</table>\n<h2>登壇者</h2>\n<h3>セッション①：ブラウザを開かずに Salesforce を動かす 〜 AI エージェント × MCP で変わるビジネスデータ活用 〜</h3>\n<p>Claude や ChatGPT などの AI エージェントが、MCP を通じてログイン不要で Salesforce のデータを直接読み書きできる時代になりました。Salesforce Hosted MCP Server の仕組みと、実際にビジネスデータへ自然言語でアクセスする様子をデモを交えてご紹介します。</p>\n<p><strong>おだしょー（Salesforce Japan）</strong><br>\nDeveloper Advocate</p>\n<p>国内 SIer にてインフラから PaaS App 開発まで幅広く経験した後、コミュニティ活動を通じて Microsoft へ。現在は Developer Advocate として、開発者や管理者へセールスフォース技術の啓蒙や認知拡大に取り組む。DevRel/Tokyo を中心に複数のコミュニティを運営・支援。名城大学情報工学部非常勤講師。TechFeed Expert for DevRel、iPhone 絶対並んで買う <del>おじさん</del> お兄さん（2011–2025）として現在7連覇中！</p>\n<h3>セッション②：Slack に MCP で繋ぐ &amp; Slack から MCP で繋ぐ</h3>\n<p>みなさん、ご存知でしたか？ AI エージェントアプリから MCP で Slack に繋ぐことはもちろんできますが、Slack（正確には Slackbot）から、外部の仕組みの MCP に繋いで利用することもできます。このセッションではその両方をライブデモでお届けします。</p>\n<p><strong>稲葉 裕之（Salesforce Japan）</strong><br>\nテクニカルオーディエンスリレーション</p>\n<p>テクニカルオーディエンスリレーションとして、セールスフォースの管理者・開発者の認知拡大や啓蒙活動に従事。技術セミナーやハンズオンの実施、技術ブログやソーシャルメディアでのコンテンツ提供など活動中。ITインフラベンダー、コンサルティングファームを経てセールスフォースに入社。中央省庁担当のソリューションエンジニアや、製品担当のソリューションエンジニア・プロダクトマネージャーの役割の後、2025年9月より現職。</p>\n<h3>セッション③：担当者の「個人の頑張り」から卒業する、kintone×AI活用のはじめの一歩</h3>\n<p>kintoneや様々なSaaSに蓄積したデータを組み合わせる作業は、「担当者の個人の頑張り」に頼るか、諦めて活用しないままになっていませんか？MCPを使えば、AIが複数SaaSのデータをシュシュッと組み合わせ、私たちのデータ活用を後押ししてくれます。「自分が説明できる業務をAIに任せる」ことから始める、AI活用のはじめの一歩をデモも交えてご紹介します。</p>\n<p><strong>山本 大貴（サイボウズ株式会社）</strong><br>\nDeveloper Relations</p>\n<p>国内SIerにてプログラマー・システムエンジニアとして基幹システム導入の経験を積み、2020年にサイボウズへキャリア入社。セールスエンジニアとして顧客やパートナー企業に向けた営業・提案支援を実施。現在は、cybozu developer networkでの情報発信などを担う。</p>\n<p><strong>曽我部 明加（サイボウズ株式会社）</strong>\nDeveloper Relations</p>\n<p>2023年にサイボウズへ新卒入社。現在は、開発者コミュニティの支援や、開発者向けコンテンツの制作・発信を担当。「サイボウズ製品を使いたい・提案したい」「ソリューションを作りたい」「連携したい」と多くの開発者に思っていただき、実際に行動してもらうことをミッションに活動している。</p>\n<h2>主催者</h2>\n<p><strong>杉本 和也（CData Software Japan）</strong><br>\nリードエンジニア・エバンジェリスト</p>\n<p>Microsoft 製品関連の SIer でエンジニア・プリセールスを経験後、CData Software Japan にジョインしリードエンジニアとして活動。\n現在はエバンジェリストとして技術発信・ウェビナー登壇・パートナー支援を担当。\n各種クラウドサービスが公開している API および MCP をメインの技術領域とし、累計200種類以上の API の検証・調査を行っており、MCP サーバーの検証・普及にも取り組んでいる。\nAPI・MCP に関する記事の執筆やイベント・コミュニティでの登壇も多数。</p>\n<h2>会場</h2>\n<p><strong>サイボウズ株式会社 東京オフィス（27階）</strong><br>\n東京都中央区日本橋2-7-1 東京日本橋タワー 27階（受付）</p>\n<p>最寄り駅：東京メトロ銀座線・東西線、都営地下鉄浅草線：「日本橋駅」B6出口直通\n東京メトロ半蔵門線・銀座線：「三越前駅」B6出口より徒歩3分\nJR：「東京駅」八重洲北口より徒歩10分</p>\n<h2>オンライン参加を追加</h2>\n<p>オンライン参加枠を追加しました。当日はZoom で開催します。</p>\n<h2>注意事項</h2>\n<ul>\n<li>受付では connpass の参加申込画面をご提示ください。</li>\n<li>会場ビルへの入館は 18:30 以降にお越しください（それ以前は入場できません）。</li>\n<li>途中参加・途中退場は大歓迎です。お気軽にお越しください。</li>\n<li>飲食物（ドリンク・軽食）を用意する予定です。</li>\n<li>名刺をお持ちの方はぜひご持参ください。</li>\n<li>撮影・録画・SNS 投稿は原則 OK ですが、登壇者の許可が必要な場合はその旨アナウンスします。</li>\n<li>ハッシュタグ：<strong>#JMBC #MCP</strong></li>\n</ul>\n<hr>",
+      "url": "https://jmbc.connpass.com/event/402603/",
+      "image_url": "https://media.connpass.com/thumbs/36/2f/362fb658ea542f8937696efff54638ca.png",
+      "hash_tag": "JMBC",
+      "started_at": "2026-09-09T19:00:00+09:00",
+      "ended_at": "2026-09-09T21:30:00+09:00",
+      "published_at": "2026-08-05T18:07:14+09:00",
+      "limit": 550,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17986,
+        "subdomain": "jmbc",
+        "title": "Japan MCP Business Community（JMBC）",
+        "url": "https://jmbc.connpass.com/"
+      },
+      "address": "東京都中央区日本橋2-7-1 (東京日本橋タワー)",
+      "place": "サイボウズ株式会社 東京オフィス（27階）",
+      "lat": "35.682146900000",
+      "lon": "139.774151600000",
+      "owner_id": 25767,
+      "owner_nickname": "sugimomoto",
+      "owner_display_name": "杉本 和也",
+      "accepted": 122,
+      "waiting": 9,
+      "updated_at": "2026-08-31T17:54:14+09:00"
+    },
+    {
+      "id": 403423,
+      "title": "みんなで学ぶAIエージェント時代のMicrosoftセキュリティ@Avanade Japan",
+      "catch": "",
+      "description": "<h1>このイベントについて</h1>\n<p>Microsoft技術を専門に取り扱うAvanadeのエンジニアが、セキュリティの「今」をリアルな現場視点でお届けするコミュニティイベントです！</p>\n<p>「ID設計や多層防御ってどう考えればいいの？」「パスキーやPurviewって実務でどう使えるの？」といった疑問にフォーカスし、\nAvanadeの現場で活躍するエンジニアや社外ゲストが、最新のセキュリティトレンドと実践知を紹介します。</p>\n<p>学び・つながり・ネットワーキングを気軽に楽しめるイベントです！</p>\n<h1>開催概要</h1>\n<ul>\n<li>日時：2026/9/9(水) 19:00 - 21:00</li>\n<li>場所：泉ガーデンタワー9F　アバナードオフィス「カフェスペース」</li>\n<li>形式：オフライン開催</li>\n</ul>\n<h1>タイムテーブル</h1>\n<p>※内容は調整中のため変更の可能性があります</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00 - 19:10</td>\n<td>オープニング</td>\n<td>Community運営</td>\n</tr>\n<tr>\n<td>19:10 - 19:30</td>\n<td>AIエージェントの最新動向 ～Agent365 リキャップ～</td>\n<td>アバナード<br>- Gaku Yamamoto</td>\n</tr>\n<tr>\n<td>19:30 - 19:50</td>\n<td>パスキーって結局どう実装するの？～Microsoft Entra ID実践ガイド～</td>\n<td>アバナード<br>- Tatsuya Kanehira</td>\n</tr>\n<tr>\n<td>19:50 - 20:20</td>\n<td>AIエージェント時代のDevSecOps<br>～OSSサプライチェーン攻撃との攻防から考えるPlatform Protection～</td>\n<td>日本マイクロソフト<br>- Yurie Mori</td>\n</tr>\n<tr>\n<td>20:30 - 20:50</td>\n<td>当日飛び入りライトニングトーク</td>\n<td>LT希望者<br>※LT登壇者募集中！</td>\n</tr>\n<tr>\n<td>20:50 - 21:00</td>\n<td>クロージング</td>\n<td>All</td>\n</tr>\n</tbody>\n</table>\n<h1>参加にあたっての注意事項</h1>\n<ul>\n<li>本イベントはAvanade Japanでのオフライン開催です。現地で入館の際、<strong>本人確認のため名刺を2枚ご提示いただきます。</strong></li>\n<li>発表内容は個人の見解を含む場合があります。</li>\n<li>撮影・録画を行う場合があります。あらかじめご了承ください。</li>\n<li>内容およびスケジュールは予告なく変更される可能性があります。</li>\n</ul>",
+      "url": "https://avanadejapantech.connpass.com/event/403423/",
+      "image_url": "https://media.connpass.com/thumbs/b2/4a/b24a27afda45e736225cae9c89fc64ea.png",
+      "hash_tag": "",
+      "started_at": "2026-09-09T19:00:00+09:00",
+      "ended_at": "2026-09-09T21:00:00+09:00",
+      "published_at": "2026-08-14T12:00:56+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17736,
+        "subdomain": "avanadejapantech",
+        "title": "Avanade Japan Tech",
+        "url": "https://avanadejapantech.connpass.com/"
+      },
+      "address": "東京都港区六本木１丁目６−１ 泉ガーデンタワー 9F",
+      "place": "アバナードオフィス：カフェスペース",
+      "lat": "35.664561600000",
+      "lon": "139.739496300000",
+      "owner_id": 133012,
+      "owner_nickname": "HitoshiHamano",
+      "owner_display_name": "HitoshiHamano",
+      "accepted": 89,
+      "waiting": 0,
+      "updated_at": "2026-09-09T09:13:22+09:00"
+    },
+    {
       "id": 404654,
       "title": "Sigma って何？ハンズオンで理解しちゃおう！ && 日本の Sigma ユーザーによるLT大会！",
       "catch": "Sigma User Community Japan 第1回イベント！懇親会（希望者のみ）もあるよ！",
@@ -309,7 +309,7 @@
       "owner_id": 36999,
       "owner_nickname": "civitaspo",
       "owner_display_name": "civitaspo",
-      "accepted": 27,
+      "accepted": 28,
       "waiting": 0,
       "updated_at": "2026-09-07T10:30:25+09:00"
     },
@@ -379,7 +379,7 @@
       "id": 403130,
       "title": "9/9開催 OpenNA【ゲスト：竹澤晃弘氏】",
       "catch": "",
-      "description": "<h2>イベント概要 / Event Overview</h2>\n<p>Nature Architects株式会社で行っているオープンな勉強会「OpenNA」では 毎回ゲストに講演をいただき、当社技術やゲストの専門領域のディスカッションを行っています。</p>\n<p>今回は、早稲田大学 基幹理工学部 機械科学・航空宇宙学科 教授　竹澤 晃弘 氏をお迎えします。</p>\n<h2>開催概要 / Event Details</h2>\n<p>日時：<br>\n2026年9月9日（水）18:00〜19:45<br>\n※開場は17:30となります。</p>\n<p>スケジュール：<br>\n18:00-18:15 Nature Architects 近況報告<br>\n18:15-19:00 竹澤明弘氏による講演<br>\n「3Dプリンタはものづくりをどう変えるか―従来製造との比較から考える設計の未来」<br>\n19:00-19:30 ディスカッション<br>\n19:30-19:45 質疑応答<br>\n<br>\n※講演終了後には登壇者・参加者の懇談の場も予定しております。<br>\n<br></p>\n<p>開催場所：<br>\nYANMAR TOKYO 14階<br>\n東京都中央区八重洲2-1-1<br>\n<br>\n東京駅八重洲口から地下で直結<br></p>\n<p>定員：<br>\nオフライン参加／40名<br>\nオンライン参加／制限なし<br>\n<br>\n参加費：<br>\n無料（事前予約制）<br></p>\n<h2>登壇者プロフィール / Speaker Profiles</h2>\n<h3>竹澤晃弘　Akihiro Takezawa</h3>\n<p><img src=\"https://nature-architects.com/wp-content/uploads/2026/08/picture_akihirotakezawa.jpg\" width=\"250\"></p>\n<p>早稲田大学 基幹理工学部 機械科学・航空宇宙学科 教授</p>\n<p>竹澤晃弘氏は、2003年に京都大学工学部物理工学科を卒業し、2005年に同大学大学院工学研究科修士課程を修了した。同年、ファナック株式会社に入社し、2007年まで産業用ロボットの機構設計業務に従事した。2007年に広島大学へ着任し、教育・研究活動に携わるとともに、2009年に京都大学より博士（工学）を取得した。2020年に早稲田大学理工学術院へ着任し、現在は同大学教授を務める。研究テーマはDesign for Additive Manufacturing（DfAM）である。</p>\n<p>Professor, Department of Applied Mechanics and Aerospace Engineering, School of Fundamental Science and Engineering, Waseda University</p>\n<p>Akihiro Takezawa received his B.Eng. degree from the Department of Engineering Physics, Kyoto University, in 2003, and his M.Eng. degree from the Graduate School of Engineering at the same university in 2005. In the same year, he joined FANUC Corporation, where he worked on the mechanical design of industrial robots until 2007. He joined Hiroshima University in 2007, where he engaged in education and research, and received his Ph.D. in Engineering from Kyoto University in 2009. In 2020, he joined the Faculty of Science and Engineering at Waseda University, where he is currently a professor. His research focuses on Design for Additive Manufacturing (DfAM).</p>\n<h3>須藤 海　Kai Suto</h3>\n<p><img src=\"https://nature-architects.com/wp-content/uploads/2025/08/image1.png\" width=\"250\"></p>\n<p>Nature Architects 代表取締役 CEO</p>\n<p>山形県生まれ。東北大学理学部卒業後、東京大学大学院総合文化研究科にて、折紙工学の研究により修士号取得。\n2018年、折紙技術を用いたプロダクト設計支援ツール「Crane」を谷道と共に未踏事業にて開発。\n修士課程修了後、Nature Architectsに取締役Chief Research Officerとして参画。Nature Architectsの研究開発をリードすると共に、顧客の前面に立ちプロジェクトの推進から新規案件の獲得まで幅広く貢献。2024年度ソフトウェアジャパンアワード受賞。</p>\n<p>Chief Executive Officer, Nature Architects Inc.</p>\n<p>Born in Yamagata Prefecture, Kai Sudo graduated from the Faculty of Science, Tohoku University, and obtained his Master’s degree at the Graduate School of Arts and Sciences, the University of Tokyo, where he conducted research in origami engineering.</p>\n<p>In 2018, together with Tanido, he developed Crane, a product design support tool based on origami technology, under the MITOU Program. After completing his Master’s, he joined Nature Architects as Director and Chief Research Officer, leading the company’s R&amp;D while also playing a central role in project management and new business development.</p>\n<p>Since then, he has contributed to both the research and business fronts of the company, and in 2024, he was honored with the Software Japan Award.</p>\n<h2>Nature Architects株式会社について</h2>\n<p><img src=\"https://prtimes.jp/api/file.php?t=origin&amp;f=d46306-17-e13cc9c22c52b3be20ef-5.png&amp;s3=46306-17-bf19dfef4342ba7f3a51ba4d1797fe23-800x423.png\" width=\"250\"></p>\n<p>Nature Architects株式会社は、原理から設計を導き出す設計力・ソフトウェア開発技術・数値解析技術をコアテクノロジーとし、形状生成/数値解析/最適化/AIを統合的に活用し高速・広域な設計探索を実現する設計ソリューションであるGenerative Engineering™️を提供しています。</p>\n<p>Nature Architects, Inc. offers Generative Engineering™️, a design solution built on core technologies of design capability that derives designs from first principles, software development, and numerical analysis. By integrating shape generation, numerical analysis, optimization, and AI, it enables fast, wide-ranging design exploration.</p>",
+      "description": "<h2>イベント概要 / Event Overview</h2>\n<p>Nature Architects株式会社で行っているオープンな勉強会「OpenNA」では 毎回ゲストに講演をいただき、当社技術やゲストの専門領域のディスカッションを行っています。</p>\n<p>今回は、早稲田大学 基幹理工学部 機械科学・航空宇宙学科 教授　竹澤 晃弘 氏をお迎えします。</p>\n<h2>開催概要 / Event Details</h2>\n<p>日時：<br>\n2026年9月9日（水）18:00〜19:45<br>\n※開場は17:30となります。</p>\n<p>スケジュール：<br>\n18:00-18:15 Nature Architects 近況報告<br>\n18:15-19:00 竹澤晃弘氏による講演<br>\n「3Dプリンタはものづくりをどう変えるか―従来製造との比較から考える設計の未来」<br>\n19:00-19:30 ディスカッション<br>\n19:30-19:45 質疑応答<br>\n<br>\n※講演終了後には登壇者・参加者の懇談の場も予定しております。<br>\n<br></p>\n<p>開催場所：<br>\nYANMAR TOKYO 14階<br>\n東京都中央区八重洲2-1-1<br>\n<br>\n東京駅八重洲口から地下で直結<br></p>\n<p>定員：<br>\nオフライン参加／40名<br>\nオンライン参加／制限なし<br>\n<br>\n参加費：<br>\n無料（事前予約制）<br></p>\n<h2>登壇者プロフィール / Speaker Profiles</h2>\n<h3>竹澤晃弘　Akihiro Takezawa</h3>\n<p><img src=\"https://nature-architects.com/wp-content/uploads/2026/08/picture_akihirotakezawa.jpg\" width=\"250\"></p>\n<p>早稲田大学 基幹理工学部 機械科学・航空宇宙学科 教授</p>\n<p>竹澤晃弘氏は、2003年に京都大学工学部物理工学科を卒業し、2005年に同大学大学院工学研究科修士課程を修了した。同年、ファナック株式会社に入社し、2007年まで産業用ロボットの機構設計業務に従事した。2007年に広島大学へ着任し、教育・研究活動に携わるとともに、2009年に京都大学より博士（工学）を取得した。2020年に早稲田大学理工学術院へ着任し、現在は同大学教授を務める。研究テーマはDesign for Additive Manufacturing（DfAM）である。</p>\n<p>Professor, Department of Applied Mechanics and Aerospace Engineering, School of Fundamental Science and Engineering, Waseda University</p>\n<p>Akihiro Takezawa received his B.Eng. degree from the Department of Engineering Physics, Kyoto University, in 2003, and his M.Eng. degree from the Graduate School of Engineering at the same university in 2005. In the same year, he joined FANUC Corporation, where he worked on the mechanical design of industrial robots until 2007. He joined Hiroshima University in 2007, where he engaged in education and research, and received his Ph.D. in Engineering from Kyoto University in 2009. In 2020, he joined the Faculty of Science and Engineering at Waseda University, where he is currently a professor. His research focuses on Design for Additive Manufacturing (DfAM).</p>\n<h3>須藤 海　Kai Suto</h3>\n<p><img src=\"https://nature-architects.com/wp-content/uploads/2025/08/image1.png\" width=\"250\"></p>\n<p>Nature Architects 代表取締役 CEO</p>\n<p>山形県生まれ。東北大学理学部卒業後、東京大学大学院総合文化研究科にて、折紙工学の研究により修士号取得。\n2018年、折紙技術を用いたプロダクト設計支援ツール「Crane」を谷道と共に未踏事業にて開発。\n修士課程修了後、Nature Architectsに取締役Chief Research Officerとして参画。Nature Architectsの研究開発をリードすると共に、顧客の前面に立ちプロジェクトの推進から新規案件の獲得まで幅広く貢献。2024年度ソフトウェアジャパンアワード受賞。</p>\n<p>Chief Executive Officer, Nature Architects Inc.</p>\n<p>Born in Yamagata Prefecture, Kai Sudo graduated from the Faculty of Science, Tohoku University, and obtained his Master’s degree at the Graduate School of Arts and Sciences, the University of Tokyo, where he conducted research in origami engineering.</p>\n<p>In 2018, together with Tanido, he developed Crane, a product design support tool based on origami technology, under the MITOU Program. After completing his Master’s, he joined Nature Architects as Director and Chief Research Officer, leading the company’s R&amp;D while also playing a central role in project management and new business development.</p>\n<p>Since then, he has contributed to both the research and business fronts of the company, and in 2024, he was honored with the Software Japan Award.</p>\n<h2>Nature Architects株式会社について</h2>\n<p><img src=\"https://prtimes.jp/api/file.php?t=origin&amp;f=d46306-17-e13cc9c22c52b3be20ef-5.png&amp;s3=46306-17-bf19dfef4342ba7f3a51ba4d1797fe23-800x423.png\" width=\"250\"></p>\n<p>Nature Architects株式会社は、原理から設計を導き出す設計力・ソフトウェア開発技術・数値解析技術をコアテクノロジーとし、形状生成/数値解析/最適化/AIを統合的に活用し高速・広域な設計探索を実現する設計ソリューションであるGenerative Engineering™️を提供しています。</p>\n<p>Nature Architects, Inc. offers Generative Engineering™️, a design solution built on core technologies of design capability that derives designs from first principles, software development, and numerical analysis. By integrating shape generation, numerical analysis, optimization, and AI, it enables fast, wide-ranging design exploration.</p>",
       "url": "https://connpass.com/event/403130/",
       "image_url": "https://media.connpass.com/thumbs/c0/6d/c06dbee1be86b9ac81454447507038b2.png",
       "hash_tag": "",
@@ -397,9 +397,9 @@
       "owner_id": 801690,
       "owner_nickname": "Nature_Architects",
       "owner_display_name": "Nature_Architects",
-      "accepted": 25,
+      "accepted": 26,
       "waiting": 0,
-      "updated_at": "2026-09-04T10:09:31+09:00"
+      "updated_at": "2026-09-09T09:47:12+09:00"
     }
   ]
 }
