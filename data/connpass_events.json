@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-10T03:16:43.691810+09:00",
+  "fetched_at": "2026-09-10T06:25:12.494230+09:00",
   "date": "20260910",
   "count": 16,
   "events": [
@@ -283,37 +283,6 @@
       "updated_at": "2026-09-10T00:46:33+09:00"
     },
     {
-      "id": 403777,
-      "title": "『NewSQL間移行』の“泥臭いリアル”とOceanBaseが描くAI時代のデータ基盤",
-      "catch": "",
-      "description": "<blockquote>\n<p>「脱シャーディングのためにNewSQLを入れたけど、運用コストやパフォーマンスで新たな壁にぶつかっている…」<br>\n「AI AgentやRAGを組み込もうとしたら、OLTP、DWH、ベクトルDBの継ぎ接ぎでアーキテクチャがカオスになってきた…」</p>\n</blockquote>\n<p>データ規模の爆発、非構造化データの急増、そしてAI Agentという新たなデータ利用者の登場——。AI時代のビジネス環境において、データベースには<strong>「ミッションクリティカルな安定性」「弾力性」「圧倒的なシンプルさ」「低コスト」</strong>がこれまで以上に求められています。</p>\n<p>本イベントでは、日本初の事例として<strong>株式会社f4samurai様</strong>をお迎えし、「他社NewSQLからOceanBaseへの移行」という超激レアな移行プロジェクトの泥臭い裏側を大公開！「で、実際の処理速度やコストはどう変わった？」「移行のハマりポイントは？」というエンジニアが本当に知りたい現場のリアルをお届けします。</p>\n<p>さらに、「従来型DBの使いやすさ × 分散DBの拡張性 × AIデータの一元化」を掲げ、OLTP・OLAP・AIワークロードを単一エンジンで支えるOceanBaseの最新AIデータ基盤「Lakebase」の狙いと具体的なユースケースを徹底解説します！</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>18:30 - 19:00</strong></td>\n<td style=\"text-align: left;\">開場・開式準備</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:00 - 19:05</strong></td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">OceanBase Japan 邱</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:05 - 19:45</strong></td>\n<td style=\"text-align: left;\">【Keynote】AI時代に「バラバラのDB」はもういらない。OceanBase Lakebaseが目指す単一データ基盤</td>\n<td style=\"text-align: left;\">OceanBase Japan ソリューション アーキテクト 吉田</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:55 - 20:25</strong></td>\n<td style=\"text-align: left;\">【ゲスト登壇】日本初！「NewSQLからNewSQLへ」移行のリアル</td>\n<td style=\"text-align: left;\">株式会社f4samurai クラウドインフラエンジニア 酒井様</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:30 - 21:00</strong></td>\n<td style=\"text-align: left;\">【会場限定】ネットワーキング<br>※特製軽食をご用意！</td>\n<td style=\"text-align: left;\">全員</td>\n</tr>\n</tbody>\n</table>\n<h2>セッション構成</h2>\n<h3>1. 【Techセッション】AI時代に「バラバラのDB」はもういらない。OceanBase Lakebaseが目指す単一データ基盤</h3>\n<ul>\n<li><strong>登壇者</strong>：OceanBase ソリューションアーキテクト 吉田</li>\n<li><strong>内容</strong>：</li>\n<li>OLTP（取引データ）＋ OLAP（分析）＋ Vector/Full-text（AI）を1つのストレージ・1つのエンジンに統合する狙い</li>\n<li>自動運転（モビリティ）におけるOceanBase Lakebaseの利用シーン：テスト車両から毎日届く映像・画像・センサー・GPSデータなど膨大な構造化データと非構造化データ。モデル学習に真に価値あるサンプルを瞬時に一括抽出</li>\n</ul>\n<h3>2. 【事例セッション】日本初！「NewSQLからNewSQLへ」移行のリアル</h3>\n<ul>\n<li><strong>登壇者</strong>：株式会社f4samurai クラウドインフラエンジニア 酒井 幹士 氏</li>\n<li><strong>内容</strong>：</li>\n<li>「脱シャーディング」の恩恵はそのままに、なぜ別のNewSQL（OceanBase）への乗り換えを決断したのか？</li>\n<li>実運用のリアル：性能・処理速度・コストはどう変化したか？</li>\n<li>移行作業で直面した「互換性・運用の壁」と、それをどう回避・克服したか</li>\n</ul>\n<hr>\n<h2>こんなエンジニア・テックリードにおすすめ！</h2>\n<ul>\n<li>分散DB / NewSQL の運用や移行を検討している DBA / SRE / インフラエンジニア</li>\n<li>サービス成長に伴い、DBのスケールアウトやインフラ・運用コスト増に悩んでいる方</li>\n<li>ベクトルDBやDWHの継ぎ接ぎをやめ、AIアプリのバックエンドをシンプルに保ちたい開発者</li>\n<li>「他の現場がどうやってDB切り替えのトラブルを乗り越えたか」のナレッジが大好物な方</li>\n</ul>\n<p>［イベント主催企業株式会社Cloud Navi］は、以下の申込情報を、本イベントの運営、関連する問い合わせ対応、ならびにartience株式会社における製品・サービス情報、イベント・キャンペーン情報等のご案内のため、artience株式会社に提供します。artience株式会社の個人情報取扱いの詳細については、同社プライバシーポリシーをご参照ください。【提供情報の項目】氏名、メールアドレス、勤務先【artience株式会社での利用目的】お申込みの本イベントの運営・問合せ対応のため。artience株式会社および同グループ会社の製品・サービス、イベント等に関する情報提供、メルマガの配信ならびにマーケティング活動のため。</p>",
-      "url": "https://oceanbase.connpass.com/event/403777/",
-      "image_url": "https://media.connpass.com/thumbs/5b/93/5b93abecad544f85fb7c51d657020350.png",
-      "hash_tag": "",
-      "started_at": "2026-09-10T19:00:00+09:00",
-      "ended_at": "2026-09-10T21:00:00+09:00",
-      "published_at": "2026-08-18T12:37:58+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17048,
-        "subdomain": "oceanbase",
-        "title": "OceanBase",
-        "url": "https://oceanbase.connpass.com/"
-      },
-      "address": "東京都中央区京橋2丁目2-1 京橋エドグラン 29F インキュベーションセンター",
-      "place": "京橋エドグラン",
-      "lat": "35.677368600000",
-      "lon": "139.769490800000",
-      "owner_id": 981855,
-      "owner_nickname": "pnz100",
-      "owner_display_name": "Jacky Li",
-      "accepted": 21,
-      "waiting": 0,
-      "updated_at": "2026-09-07T14:41:24+09:00"
-    },
-    {
       "id": 404687,
       "title": "のの会(notes knows community JP -Nonokai-) 第90回",
       "catch": "ドミノに興味ある人集まれー！ビギナーさんも大歓迎。",
@@ -340,7 +309,7 @@
       "owner_id": 171485,
       "owner_nickname": "ToshihiroOkamoto",
       "owner_display_name": "Toshi Okamoto",
-      "accepted": 9,
+      "accepted": 10,
       "waiting": 0,
       "updated_at": "2026-08-23T21:28:14+09:00"
     },
@@ -405,6 +374,37 @@
       "accepted": 54,
       "waiting": 17,
       "updated_at": "2026-09-08T11:09:30+09:00"
+    },
+    {
+      "id": 403777,
+      "title": "『NewSQL間移行』の“泥臭いリアル”とOceanBaseが描くAI時代のデータ基盤",
+      "catch": "",
+      "description": "<blockquote>\n<p>「脱シャーディングのためにNewSQLを入れたけど、運用コストやパフォーマンスで新たな壁にぶつかっている…」<br>\n「AI AgentやRAGを組み込もうとしたら、OLTP、DWH、ベクトルDBの継ぎ接ぎでアーキテクチャがカオスになってきた…」</p>\n</blockquote>\n<p>データ規模の爆発、非構造化データの急増、そしてAI Agentという新たなデータ利用者の登場——。AI時代のビジネス環境において、データベースには<strong>「ミッションクリティカルな安定性」「弾力性」「圧倒的なシンプルさ」「低コスト」</strong>がこれまで以上に求められています。</p>\n<p>本イベントでは、日本初の事例として<strong>株式会社f4samurai様</strong>をお迎えし、「他社NewSQLからOceanBaseへの移行」という超激レアな移行プロジェクトの泥臭い裏側を大公開！「で、実際の処理速度やコストはどう変わった？」「移行のハマりポイントは？」というエンジニアが本当に知りたい現場のリアルをお届けします。</p>\n<p>さらに、「従来型DBの使いやすさ × 分散DBの拡張性 × AIデータの一元化」を掲げ、OLTP・OLAP・AIワークロードを単一エンジンで支えるOceanBaseの最新AIデータ基盤「Lakebase」の狙いと具体的なユースケースを徹底解説します！</p>\n<h2>タイムスケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>18:30 - 19:00</strong></td>\n<td style=\"text-align: left;\">開場・開式準備</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:00 - 19:05</strong></td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">OceanBase Japan 邱</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:05 - 19:45</strong></td>\n<td style=\"text-align: left;\">【Keynote】AI時代に「バラバラのDB」はもういらない。OceanBase Lakebaseが目指す単一データ基盤</td>\n<td style=\"text-align: left;\">OceanBase Japan ソリューション アーキテクト 吉田</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>19:55 - 20:25</strong></td>\n<td style=\"text-align: left;\">【ゲスト登壇】日本初！「NewSQLからNewSQLへ」移行のリアル</td>\n<td style=\"text-align: left;\">株式会社f4samurai クラウドインフラエンジニア 酒井様</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>20:30 - 21:00</strong></td>\n<td style=\"text-align: left;\">【会場限定】ネットワーキング<br>※特製軽食をご用意！</td>\n<td style=\"text-align: left;\">全員</td>\n</tr>\n</tbody>\n</table>\n<h2>セッション構成</h2>\n<h3>1. 【Techセッション】AI時代に「バラバラのDB」はもういらない。OceanBase Lakebaseが目指す単一データ基盤</h3>\n<ul>\n<li><strong>登壇者</strong>：OceanBase ソリューションアーキテクト 吉田</li>\n<li><strong>内容</strong>：</li>\n<li>OLTP（取引データ）＋ OLAP（分析）＋ Vector/Full-text（AI）を1つのストレージ・1つのエンジンに統合する狙い</li>\n<li>自動運転（モビリティ）におけるOceanBase Lakebaseの利用シーン：テスト車両から毎日届く映像・画像・センサー・GPSデータなど膨大な構造化データと非構造化データ。モデル学習に真に価値あるサンプルを瞬時に一括抽出</li>\n</ul>\n<h3>2. 【事例セッション】日本初！「NewSQLからNewSQLへ」移行のリアル</h3>\n<ul>\n<li><strong>登壇者</strong>：株式会社f4samurai クラウドインフラエンジニア 酒井 幹士 氏</li>\n<li><strong>内容</strong>：</li>\n<li>「脱シャーディング」の恩恵はそのままに、なぜ別のNewSQL（OceanBase）への乗り換えを決断したのか？</li>\n<li>実運用のリアル：性能・処理速度・コストはどう変化したか？</li>\n<li>移行作業で直面した「互換性・運用の壁」と、それをどう回避・克服したか</li>\n</ul>\n<hr>\n<h2>こんなエンジニア・テックリードにおすすめ！</h2>\n<ul>\n<li>分散DB / NewSQL の運用や移行を検討している DBA / SRE / インフラエンジニア</li>\n<li>サービス成長に伴い、DBのスケールアウトやインフラ・運用コスト増に悩んでいる方</li>\n<li>ベクトルDBやDWHの継ぎ接ぎをやめ、AIアプリのバックエンドをシンプルに保ちたい開発者</li>\n<li>「他の現場がどうやってDB切り替えのトラブルを乗り越えたか」のナレッジが大好物な方</li>\n</ul>\n<p>［イベント主催企業株式会社Cloud Navi］は、以下の申込情報を、本イベントの運営、関連する問い合わせ対応、ならびにartience株式会社における製品・サービス情報、イベント・キャンペーン情報等のご案内のため、artience株式会社に提供します。artience株式会社の個人情報取扱いの詳細については、同社プライバシーポリシーをご参照ください。【提供情報の項目】氏名、メールアドレス、勤務先【artience株式会社での利用目的】お申込みの本イベントの運営・問合せ対応のため。artience株式会社および同グループ会社の製品・サービス、イベント等に関する情報提供、メルマガの配信ならびにマーケティング活動のため。</p>",
+      "url": "https://oceanbase.connpass.com/event/403777/",
+      "image_url": "https://media.connpass.com/thumbs/5b/93/5b93abecad544f85fb7c51d657020350.png",
+      "hash_tag": "",
+      "started_at": "2026-09-10T19:00:00+09:00",
+      "ended_at": "2026-09-10T21:00:00+09:00",
+      "published_at": "2026-08-18T12:37:58+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17048,
+        "subdomain": "oceanbase",
+        "title": "OceanBase",
+        "url": "https://oceanbase.connpass.com/"
+      },
+      "address": "東京都中央区京橋2丁目2-1 京橋エドグラン 29F インキュベーションセンター",
+      "place": "京橋エドグラン",
+      "lat": "35.677368600000",
+      "lon": "139.769490800000",
+      "owner_id": 981855,
+      "owner_nickname": "pnz100",
+      "owner_display_name": "Jacky Li",
+      "accepted": 22,
+      "waiting": 0,
+      "updated_at": "2026-09-07T14:41:24+09:00"
     },
     {
       "id": 404413,
