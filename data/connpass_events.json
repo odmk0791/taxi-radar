@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-12T06:28:35.596664+09:00",
+  "fetched_at": "2026-09-12T08:44:16.394742+09:00",
   "date": "20260912",
   "count": 17,
   "events": [
@@ -118,7 +118,7 @@
       "owner_id": 231145,
       "owner_nickname": "ASCII",
       "owner_display_name": "ASCII",
-      "accepted": 58,
+      "accepted": 61,
       "waiting": 0,
       "updated_at": "2026-09-10T19:09:55+09:00"
     },
@@ -242,7 +242,7 @@
       "owner_id": 503249,
       "owner_nickname": "higaki_program",
       "owner_display_name": "higaki",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-08-29T23:00:34+09:00"
     },
@@ -366,7 +366,7 @@
       "owner_id": 1034218,
       "owner_nickname": "perxona_lina",
       "owner_display_name": "Perxona AIアバター",
-      "accepted": 25,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-09-11T17:36:32+09:00"
     },
@@ -428,7 +428,7 @@
       "owner_id": 968564,
       "owner_nickname": "engineer_meeting",
       "owner_display_name": "SE集まれ企画部",
-      "accepted": 7,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-07-26T20:10:41+09:00"
     },
