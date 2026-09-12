@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-13T02:34:25.884540+09:00",
+  "fetched_at": "2026-09-13T04:56:40.630815+09:00",
   "date": "20260913",
   "count": 22,
   "events": [
@@ -247,37 +247,6 @@
       "updated_at": "2026-08-18T18:39:21+09:00"
     },
     {
-      "id": 405459,
-      "title": "Gleam meetup/tokyo #1",
-      "catch": "",
-      "description": "<p>関数型プログラミング言語Gleamのmeetupです。\nGleamのユーザー同士でGleamのコンパイラから構文、エコシステムまでGleamに関する話題を共有する場です。</p>\n<p>始めにGleamの最近のリリースについておさらいした後、TODOアプリを題材にハンズオンを行う予定です。\nハンズオンの後は各自Gleamコードを書きつつ疑問点などを共有する時間とする予定です。</p>",
-      "url": "https://gleam-jp.connpass.com/event/405459/",
-      "image_url": "https://media.connpass.com/thumbs/ef/0a/ef0a5532963b47526fee45fabe3cee7f.png",
-      "hash_tag": "",
-      "started_at": "2026-09-13T13:00:00+09:00",
-      "ended_at": "2026-09-13T17:00:00+09:00",
-      "published_at": "2026-09-06T23:56:59+09:00",
-      "limit": 10,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16403,
-        "subdomain": "gleam-jp",
-        "title": "gleam-jp",
-        "url": "https://gleam-jp.connpass.com/"
-      },
-      "address": "東京都渋谷区千駄ヶ谷4-23-5 JPR千駄ヶ谷ビル 6F",
-      "place": "ピクシブ株式会社 東京オフィス",
-      "lat": "35.680962500000",
-      "lon": "139.706798800000",
-      "owner_id": 723425,
-      "owner_nickname": "Comamoca",
-      "owner_display_name": "Comamoca",
-      "accepted": 7,
-      "waiting": 0,
-      "updated_at": "2026-09-06T23:56:59+09:00"
-    },
-    {
       "id": 403298,
       "title": "【満席】クリエイター作業交流会@高円寺",
       "catch": "クリエイティブな仲間に出会えるもくもく会",
@@ -307,6 +276,37 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-09-12T23:18:11+09:00"
+    },
+    {
+      "id": 405459,
+      "title": "Gleam meetup/tokyo #1",
+      "catch": "",
+      "description": "<p>関数型プログラミング言語Gleamのmeetupです。\nGleamのユーザー同士でGleamのコンパイラから構文、エコシステムまでGleamに関する話題を共有する場です。</p>\n<p>始めにGleamの最近のリリースについておさらいした後、TODOアプリを題材にハンズオンを行う予定です。\nハンズオンの後は各自Gleamコードを書きつつ疑問点などを共有する時間とする予定です。</p>",
+      "url": "https://gleam-jp.connpass.com/event/405459/",
+      "image_url": "https://media.connpass.com/thumbs/ef/0a/ef0a5532963b47526fee45fabe3cee7f.png",
+      "hash_tag": "",
+      "started_at": "2026-09-13T13:00:00+09:00",
+      "ended_at": "2026-09-13T17:00:00+09:00",
+      "published_at": "2026-09-06T23:56:59+09:00",
+      "limit": 10,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 16403,
+        "subdomain": "gleam-jp",
+        "title": "gleam-jp",
+        "url": "https://gleam-jp.connpass.com/"
+      },
+      "address": "東京都渋谷区千駄ヶ谷4-23-5 JPR千駄ヶ谷ビル 6F",
+      "place": "ピクシブ株式会社 東京オフィス",
+      "lat": "35.680962500000",
+      "lon": "139.706798800000",
+      "owner_id": 723425,
+      "owner_nickname": "Comamoca",
+      "owner_display_name": "Comamoca",
+      "accepted": 7,
+      "waiting": 0,
+      "updated_at": "2026-09-06T23:56:59+09:00"
     },
     {
       "id": 406009,
@@ -428,7 +428,7 @@
       "owner_id": 118890,
       "owner_nickname": "nano2_aloerina",
       "owner_display_name": "BannoTakuya",
-      "accepted": 276,
+      "accepted": 280,
       "waiting": 0,
       "updated_at": "2026-07-23T22:00:50+09:00"
     },
@@ -588,37 +588,6 @@
       "updated_at": "2026-09-09T17:29:25+09:00"
     },
     {
-      "id": 406544,
-      "title": "Shipaton 優勝するためのもくもく会 ファイナルラスト @中野 非公式 を公開しました！",
-      "catch": "",
-      "description": "<p>🚢 Shipaton 優勝するためのもくもく会 ファイナルラスト @中野 非公式 — iOSエンジニア&amp;デザイナー ガチもく</p>\n<p>9/13(日) 9:00–21:30\n※途中参加・途中退室OK\n※席確保のため、当日朝に参加のご連絡をいただけると助かります！\n👉 <a href=\"https://x.com/Perk_sh\" rel=\"nofollow\">https://x.com/Perk_sh</a></p>\n<p>■ 会場\nNAKANO HAKO\n東京都中野区中野2丁目24番9号 ナカノサウステラ レジデンス棟2階\n中野駅から徒歩すぐ。会場に着いたら下記までご連絡ください 📞 080-8122-8563</p>\n<p>■ 参加費\nイベント参加費：無料\n施設利用料：2,500円</p>\n<p>■ 概要\nShipaton 2026 は、RevenueCat が主催する「実際にストアへ出す」ことを競う世界最大級のモバイルハッカソン。8〜9月の2ヶ月間、世界中の開発者が本気でアプリをリリースしにいきます。賞金総額は $700k 超、グランプリにはタイムズスクエアの巨大ビルボード掲載も。</p>\n<p>前日 8/1 は渋谷でキックオフ、この日は中野で 2 日目。\n朝9時から夜9:30まで。初日で決めたスコープを、そのまま形にしにいく日です。もちろん 8/2 だけの参加も大歓迎。</p>\n<p>■ この日にやること（例）</p>\n<p>🎯 提出するアプリのアイデア出し・スコープ決め\n🎨 デザイナー：UI設計、アイコン・ストア用スクショ制作（Design Award を狙う人はここが勝負）\n📱 iOSエンジニア：実装、RevenueCat SDK の組み込み、リファクタ\n📢 #BuildInPublic 用のポストを書いて投稿する\n📝 Devpost の登録を済ませる（まだの人はこの場でどうぞ）\n☕ そして黙々と手を動かす</p>\n<p>■ こんな方に</p>\n<p>Shipaton に出す気満々の iOSエンジニア／デザイナー\n出るか迷っているけど、とりあえず手を動かしたい方\n個人開発を進めたい学生・社会人\n初心者の方も大歓迎！イラレ・フォトショの使い方、主催者がお教えします</p>\n<p>■ 持ち物\nPC（必須）、充電器など各自必要なもの</p>",
-      "url": "https://mokumokuios.connpass.com/event/406544/",
-      "image_url": "https://media.connpass.com/thumbs/a2/ac/a2acbad7a9d25a1e42b05efbd65a71b9.png",
-      "hash_tag": "ガチもく会",
-      "started_at": "2026-09-13T09:00:00+09:00",
-      "ended_at": "2026-09-13T21:30:00+09:00",
-      "published_at": "2026-09-10T16:40:11+09:00",
-      "limit": 6,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16988,
-        "subdomain": "mokumokuios",
-        "title": "iOSエンジニア & デザイナー ガチもく会(初心者歓迎)",
-        "url": "https://mokumokuios.connpass.com/"
-      },
-      "address": "東京都中野区中野2丁目24番9号 ナカノサウステラ レジデンス棟2階",
-      "place": "NAKANO HAKO",
-      "lat": "35.705015800000",
-      "lon": "139.666733600000",
-      "owner_id": 205866,
-      "owner_nickname": "shou_glass",
-      "owner_display_name": "ショウヘイ ユカワ",
-      "accepted": 2,
-      "waiting": 0,
-      "updated_at": "2026-09-10T16:40:11+09:00"
-    },
-    {
       "id": 404684,
       "title": "もくもく会@池袋_板橋_練馬",
       "catch": "エンジニアもこれからの人も。勉強・資格・副業など、もくもくしたいこと何でもOK。一人参加歓迎！",
@@ -648,6 +617,37 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-08-30T08:12:51+09:00"
+    },
+    {
+      "id": 406544,
+      "title": "Shipaton 優勝するためのもくもく会 ファイナルラスト @中野 非公式 を公開しました！",
+      "catch": "",
+      "description": "<p>🚢 Shipaton 優勝するためのもくもく会 ファイナルラスト @中野 非公式 — iOSエンジニア&amp;デザイナー ガチもく</p>\n<p>9/13(日) 9:00–21:30\n※途中参加・途中退室OK\n※席確保のため、当日朝に参加のご連絡をいただけると助かります！\n👉 <a href=\"https://x.com/Perk_sh\" rel=\"nofollow\">https://x.com/Perk_sh</a></p>\n<p>■ 会場\nNAKANO HAKO\n東京都中野区中野2丁目24番9号 ナカノサウステラ レジデンス棟2階\n中野駅から徒歩すぐ。会場に着いたら下記までご連絡ください 📞 080-8122-8563</p>\n<p>■ 参加費\nイベント参加費：無料\n施設利用料：2,500円</p>\n<p>■ 概要\nShipaton 2026 は、RevenueCat が主催する「実際にストアへ出す」ことを競う世界最大級のモバイルハッカソン。8〜9月の2ヶ月間、世界中の開発者が本気でアプリをリリースしにいきます。賞金総額は $700k 超、グランプリにはタイムズスクエアの巨大ビルボード掲載も。</p>\n<p>前日 8/1 は渋谷でキックオフ、この日は中野で 2 日目。\n朝9時から夜9:30まで。初日で決めたスコープを、そのまま形にしにいく日です。もちろん 8/2 だけの参加も大歓迎。</p>\n<p>■ この日にやること（例）</p>\n<p>🎯 提出するアプリのアイデア出し・スコープ決め\n🎨 デザイナー：UI設計、アイコン・ストア用スクショ制作（Design Award を狙う人はここが勝負）\n📱 iOSエンジニア：実装、RevenueCat SDK の組み込み、リファクタ\n📢 #BuildInPublic 用のポストを書いて投稿する\n📝 Devpost の登録を済ませる（まだの人はこの場でどうぞ）\n☕ そして黙々と手を動かす</p>\n<p>■ こんな方に</p>\n<p>Shipaton に出す気満々の iOSエンジニア／デザイナー\n出るか迷っているけど、とりあえず手を動かしたい方\n個人開発を進めたい学生・社会人\n初心者の方も大歓迎！イラレ・フォトショの使い方、主催者がお教えします</p>\n<p>■ 持ち物\nPC（必須）、充電器など各自必要なもの</p>",
+      "url": "https://mokumokuios.connpass.com/event/406544/",
+      "image_url": "https://media.connpass.com/thumbs/a2/ac/a2acbad7a9d25a1e42b05efbd65a71b9.png",
+      "hash_tag": "ガチもく会",
+      "started_at": "2026-09-13T09:00:00+09:00",
+      "ended_at": "2026-09-13T21:30:00+09:00",
+      "published_at": "2026-09-10T16:40:11+09:00",
+      "limit": 6,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 16988,
+        "subdomain": "mokumokuios",
+        "title": "iOSエンジニア & デザイナー ガチもく会(初心者歓迎)",
+        "url": "https://mokumokuios.connpass.com/"
+      },
+      "address": "東京都中野区中野2丁目24番9号 ナカノサウステラ レジデンス棟2階",
+      "place": "NAKANO HAKO",
+      "lat": "35.705015800000",
+      "lon": "139.666733600000",
+      "owner_id": 205866,
+      "owner_nickname": "shou_glass",
+      "owner_display_name": "ショウヘイ ユカワ",
+      "accepted": 2,
+      "waiting": 0,
+      "updated_at": "2026-09-10T16:40:11+09:00"
     },
     {
       "id": 405082,
