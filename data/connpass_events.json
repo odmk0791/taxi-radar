@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-13T06:55:24.997435+09:00",
+  "fetched_at": "2026-09-13T08:38:05.820027+09:00",
   "date": "20260913",
-  "count": 22,
+  "count": 23,
   "events": [
     {
       "id": 406297,
@@ -26,8 +26,8 @@
       "owner_nickname": "freddi_kit",
       "owner_display_name": "フレディ",
       "accepted": 71,
-      "waiting": 6,
-      "updated_at": "2026-09-13T01:01:41+09:00"
+      "waiting": 5,
+      "updated_at": "2026-09-13T07:27:54+09:00"
     },
     {
       "id": 403499,
@@ -211,7 +211,7 @@
       "owner_id": 821413,
       "owner_nickname": "har1101",
       "owner_display_name": "Haruki Fukuchi",
-      "accepted": 64,
+      "accepted": 62,
       "waiting": 0,
       "updated_at": "2026-09-12T18:39:57+09:00"
     },
@@ -428,7 +428,7 @@
       "owner_id": 118890,
       "owner_nickname": "nano2_aloerina",
       "owner_display_name": "BannoTakuya",
-      "accepted": 284,
+      "accepted": 288,
       "waiting": 0,
       "updated_at": "2026-07-23T22:00:50+09:00"
     },
@@ -650,35 +650,66 @@
       "updated_at": "2026-09-10T16:40:11+09:00"
     },
     {
-      "id": 405082,
-      "title": "第115回CoderDojoさいたま",
-      "catch": "小学生・中学生向けプログラミングクラブです。さいたま市の周辺からも参加もお待ちしてます。",
-      "description": "<h1>第115回CoderDojoさいたまのイベント詳細情報</h1>\n<p>CoderDojo さいたまは主に埼玉県さいたま市地域及び隣接する地域の小学生・中学生を対象としたプログラミングクラブです。<br>\nこちらをお読みになり、CoderDojoの理念にご理解ください。<br>\n小学生・中学生向けプログラミングクラブ「CoderDojoさいたま」について<br>\n<a href=\"http://coderdojo-saitama.com/about/&lt;br>\" rel=\"nofollow\">http://coderdojo-saitama.com/about/<br></a></p>\n<h2>開催日時</h2>\n<p>2026年9月13日（日）14:00～16:00<br>\n（13:45　受付開始）<br></p>\n<h2>定員</h2>\n<p>16名(プログラミング初心者、初参加者、リピーター含む)</p>\n<h2>参加方法</h2>\n<p>こちらのイベント管理ツール<a href=\"https://coderdojo-saitama.connpass.com/\" rel=\"nofollow\">connpass</a>よりお申込みください。<br></p>\n<ul>\n<li>申し込み時、事前アンケートにお答えください。このアンケートで取得した個人情報はDojo開催時のメンター調整など運営にのみ使用します。Dojo終了後は破棄します。</li>\n<li>事前アンケートの「メールアドレス」は保護者の方の情報をご記入ください。</li>\n<li>「住所」は市町村までで結構です。</li>\n</ul>\n<h2>参加資格</h2>\n<p>対象：パソコンへの文字入力とマウス操作が可能な小学生と中学生<br>\niPadなどのタブレットを使用する場合はタップやスワイプ、フリック操作ができること。<br></p>\n<ul>\n<li>小学生以下のお子さんは、保護者の送迎が必要です（中学生以上はお一人でもご参加できます）</li>\n<li>iPadではScratch3.0、ScratchJr などがご利用できます。</li>\n<li>Scratchでプログラミング希望の場合はパソコンをお持ちください。CoderDojoさいたまではパソコンの貸し出しは行っておりません。</li>\n</ul>\n<h2>参加料について</h2>\n<p>無料</p>\n<h2>会場について</h2>\n<p>JR大宮駅東口徒歩１分<br>\n貸会議室6F<br>\n<a href=\"https://office6f.com/\" rel=\"nofollow\">https://office6f.com/</a></p>\n<h2>持ち物について</h2>\n<ul>\n<li>無線LAN接続可能なノートパソコン、電源ケーブル、マウスが必要です。</li>\n<li>タブレットでプログラミングしたいという場合（ScratchJrなど）やRaspbery-Piで動かしたい、LEGO Mindstormでロボットプログラミングをしたい場合など必要な機材を各自お持ちください。</li>\n<li>CoderDojo さいたまではmicro:bit、IchigoJamの貸し出し可能です。ご希望の方は当日お申し出ください。</li>\n<li>CoderDojo さいたまではパソコンの貸出は行っておりません。</li>\n</ul>\n<h2>当日のスケジュール</h2>\n<p>13:00～13:45<br>\nメンター集合ののち自己紹介、連絡事項、情報共有<br>\n13:45<br>\nニンジャ（参加者）受付開始<br>\n14:00～16:00<br>\n・Dojoの説明<br>\n・自己紹介<br>\n・ワークショップ<br>\n16:00<br>\n現状回復、メンター振り返り<br></p>\n<h2>寄付のお願いについて</h2>\n<p><strong>当面、寄付はいただきません。</strong><br>\nこれまで保護者の皆様からの寄付を募ってまいりましたが、これまでの寄付金から当面の運営費を賄えることから頂かないこととしました。再びお願いする必要があるときに、あらためてお知らせします。</p>\n<h2>メンターってどんな人？</h2>\n<p>メンターは、疑問点を一緒に解決したり、プログラミングによるものづくりの進め方などをアドバイスしてくれるボランティアの人たちです。<br>\nプログラマやデザイナー、エンジニアなど、ソフトやハードを作ることを専門にしている人達、子どものコンピュータ教育に携わる人達などで構成されています。<br>\nメンターをやってみたいという方（参加されるお子さんの保護者でもOKです！）は、こちらからお気軽にお問い合わせください！<br></p>\n<h2>免責事項</h2>\n<p>CoderDojoさいたまの活動参加中、行き帰りなどで発生したトラブルや損失、損害、傷病、事故に対して、CoderDojoさいたまは一切責任を負いません。これらに対して自己責任においてご参加くださるようお願いいたします。</p>",
-      "url": "https://coderdojo-saitama.connpass.com/event/405082/",
-      "image_url": "https://media.connpass.com/thumbs/0c/97/0c978c0b6b6d43b12ffc6f4b09154499.png",
-      "hash_tag": "CoderDojo",
-      "started_at": "2026-09-13T14:00:00+09:00",
-      "ended_at": "2026-09-13T16:00:00+09:00",
-      "published_at": "2026-08-27T12:32:30+09:00",
-      "limit": 16,
+      "id": 404707,
+      "title": "新横浜インディゲームもくもく会 第41回（協賛：学校法人岩崎学園 横浜デジタルアーツ専門学校",
+      "catch": "参加費無料！みんなでもくもくゲーム開発しよう！",
+      "description": "<h1>会の内容</h1>\n<h2>インディゲームを作っている人のための会</h2>\n<p>ゲームエンジンの縛りなし！Unity、Unreal Engine、Godot Engine、その他なんでもOK！</p>\n<p>本会では各々が目標に向かってもくもく作業します。</p>\n<p>詰まったら質問やテストプレイなどで協力しあいましょう。</p>\n<p>週末・祝日にゲーム制作を進めるきっかけになれば嬉しいです。</p>\n<p>一人だとできなくてもみんなで集まればできるはず！</p>\n<p>参加の前に、以下の【注意事項】を必ずご確認ください。</p>\n<p>協賛： <a href=\"https://yda.iwasaki.ac.jp/\" title=\"学校法人岩崎学園 横浜デジタルアーツ専門学校\" rel=\"nofollow\">学校法人岩崎学園 横浜デジタルアーツ専門学校</a></p>\n<h1>注意事項</h1>\n<p>・マスクの着用は各自のご判断でお願いします。</p>\n<p>・本会での営業活動、ネットワークビジネスや宗教等の勧誘行為は堅くお断りします。</p>\n<p>・当日ご連絡なく不参加の方、キャンセルを繰り返される方は以後参加をお断りする場合があります。</p>\n<p>・別の教室などで他イベントや試験などを行っている場合もあります。移動の際は大きな音をたてないなど、配慮をお願いします。</p>\n<p>・主催側で不適切と判断された方はご退場いただき、以後参加をお断りする場合があります。</p>\n<h1>こんな人におすすめ</h1>\n<ul>\n<li>\n<p>週末・祝日はゲーム開発に没頭したい</p>\n</li>\n<li>\n<p>作品の完成までモチベーションが続かない</p>\n</li>\n<li>\n<p>Amazonで買ったゲーム開発本は積ん読してる</p>\n</li>\n<li>\n<p>もはや自分のゲームが面白いのか分からない</p>\n</li>\n</ul>\n<h1>時間割</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">11:00</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">11:30</td>\n<td style=\"text-align: left;\">会の説明、自己紹介、今日やることを共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">12:00</td>\n<td style=\"text-align: left;\">もくもく、各自でお昼</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00</td>\n<td style=\"text-align: left;\">希望者による作業発表／LTタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">今日やったことを共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:50</td>\n<td style=\"text-align: left;\">退室準備</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">閉会</td>\n</tr>\n</tbody>\n</table>\n<h1>参加費・持ち物・場所</h1>\n<h2>参加費</h2>\n<p>無料</p>\n<h2>持ち物</h2>\n<ul>\n<li>ゲーム開発環境が入ったPC</li>\n</ul>\n<p>※PCの貸し出しなどは行っておりません</p>\n<h2>場所</h2>\n<p>横浜デジタルアーツ専門学校</p>\n<p>神奈川県横浜市港北区新横浜3-22-17</p>\n<p>2号館 5階 503教室 </p>\n<p><img alt=\"会場ビルの写真\" src=\"https://www.iwasaki.ac.jp/img/facilities/yda_big_03.jpg\" title=\"会場ビルの写真\"></p>\n<p><img alt=\"会場内の写真\" src=\"https://yda.iwasaki.ac.jp/wp-content/uploads/2023/03/d0e9d7acf41423628085b7de09767ba1.jpg\" title=\"会場内の写真\"></p>\n<h3>会場へのアクセス</h3>\n<p>新幹線・JR・相鉄新横浜線・東急新横浜線・横浜市営地下鉄線</p>\n<p>「新横浜駅」より徒歩7分</p>\n<p><img alt=\"駅からのアクセス\" src=\"https://yda.iwasaki.ac.jp/wp-content/uploads/2023/04/ACCESS_1124x764.jpg\" title=\"駅から会場へのアクセス\"></p>\n<p><a href=\"https://www.youtube.com/watch?v=diW3-cli_zU\" title=\"駅から会場へのアクセス\" rel=\"nofollow\"><img alt=\"駅からのアクセス\" src=\"https://img.youtube.com/vi/diW3-cli_zU/0.jpg\"></a></p>\n<p>最後までお読みいただきありがとうございました！</p>",
+      "url": "https://indiegame.connpass.com/event/404707/",
+      "image_url": "https://media.connpass.com/thumbs/d1/52/d152da5c9af36da472865d72751f72b1.png",
+      "hash_tag": "インディゲームもくもく会",
+      "started_at": "2026-09-13T11:00:00+09:00",
+      "ended_at": "2026-09-13T19:00:00+09:00",
+      "published_at": "2026-08-23T16:04:22+09:00",
+      "limit": 20,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
-        "id": 13974,
-        "subdomain": "coderdojo-saitama",
-        "title": "CoderDojo さいたま",
-        "url": "https://coderdojo-saitama.connpass.com/"
+        "id": 13436,
+        "subdomain": "indiegame",
+        "title": "インディゲームもくもく会",
+        "url": "https://indiegame.connpass.com/"
       },
-      "address": "埼玉県さいたま市大宮区宮町1-5 銀座ビル6階",
-      "place": "貸会議室６F",
-      "lat": "35.907929500000",
-      "lon": "139.624792000000",
-      "owner_id": 10900,
-      "owner_nickname": "okajima_kazuhiro",
-      "owner_display_name": "okajima_kazuhiro",
-      "accepted": 1,
+      "address": "神奈川県横浜市港北区新横浜3-22-17",
+      "place": "横浜デジタルアーツ専門学校",
+      "lat": "35.512562500000",
+      "lon": "139.618583300000",
+      "owner_id": 97492,
+      "owner_nickname": "okahiro_p",
+      "owner_display_name": "おかひろ",
+      "accepted": 15,
       "waiting": 0,
-      "updated_at": "2026-08-27T12:32:30+09:00"
+      "updated_at": "2026-08-23T16:04:22+09:00"
+    },
+    {
+      "id": 405526,
+      "title": "新横浜Blenderがやがや会(第39回)",
+      "catch": "",
+      "description": "<h1>この会について</h1>\n<p>横浜デジタルアーツ専門学校の教室を借りて、みんなでBlenderモデリング等を勉強する会です。<br>\n毎月、ほぼ第二日曜日に開催しています。<br>\n<br>\n「もくもく会」と同じく、自習を基本としつつも、分からないことを質問したり一緒に考えたりして、<br>\nちょっとにぎやかに過ごせればいいな、と思っています。<br>\n主催のまついは、BlenderとMetasequoiaでキャラクターモデルを作っていますので、<br>\nモデリングに関するご質問には、少しお答えできると思います。<br>\n　※Mayaはちょっとしかさわったことがありませんが、モデリングでは共通する部分も多いと思います。<br>\nPythonスクリプトやアドオン製作も、少しなら助言できます。<br>\n<br>\n協賛： <a href=\"https://yda.iwasaki.ac.jp/\" title=\"学校法人岩崎学園 横浜デジタルアーツ専門学校\" rel=\"nofollow\">学校法人岩崎学園 横浜デジタルアーツ専門学校</a><br></p>\n<h1>こんな方にオススメ</h1>\n<p>・VRoidで作ったキャラクターに小物を持たせたい<br>\n・VRでBlenderデータをいじってみたい<br>\n・ゼロからガチでキャラクターモデルを作りたい<br>\n・Unityアセットを改造して自分好みにしたい<br>\n・他形式のデータをBlenderで加工したい<br>\n・Blenderの見た目をカスタマイズしてカッコよくしたい<br>\n・Pythonスクリプトを極めて、モデリングやリギングを効率化したい<br>\n・ChatGPTを活用して、簡単なアドオンを作りたい<br>\n・NomadSculptの強力なUV編集機能をBlenderと連携させたい<br>\n・Mayaを使っているけどBlenderも使ってみたい<br></p>\n<h1>タイムスケジュール</h1>\n<p>ざっくりと下記の流れになります。<br>\n途中参加や帰宅もできますので、お気軽にご参加ください。<br></p>\n<p>時間  予定<br>\n10:30 ~ この時間から入場できます<br>\n11:00 ~ 簡単な自己紹介と今日のやること発表 → 各自作業<br>\n11:30 ~ 初心者向けのBlender基本操作説明（初心者がいる場合のみ）<br>\n12:30 ~ 各自昼食（匂いが出ないものなら持ち込み可）　今のところはコンビニ買い出しが多い感じ<br>\n17:30 ~ 本日の成果発表、感想<br>\n18:00 ~ 解散。お疲れ様でした<br></p>\n<h1>持ち物</h1>\n<p>・BlenderのインストールされたPC、ACアダプター<br>\n　　USB-C給電ならギリギリ貸せますが、専用ACアダプターは無理です<br>\n　　　PCをお持ちでない方は、「PC貸出利用」枠（初回無料）にてお申し込みください。<br>\n　　　Blenderインストール済みのPCを使用できます。<br>\n　　　　※到着してからBlenderをインストールした方も何名かおられますので、焦らずにどうぞ<br>\n　　　　　ここのネット接続はけっこう高速なので、自己紹介しているうちに準備完了しますよ<br>\n・質問とか相談のメモ<br>\n・各自作業に必要なもの(書籍など）<br>\n・マスク（必要な方）<br></p>\n<h1>会場アクセス</h1>\n<p>横浜デジタルアーツ専門学校<br>\n神奈川県横浜市港北区新横浜3-22-17<br>\n<br>\n新幹線・JR・相鉄新横浜線・東急新横浜線・横浜市営地下鉄線<br>\n「新横浜駅」より徒歩7分<br>\n<img alt=\"駅からのアクセス\" src=\"https://yda.iwasaki.ac.jp/wp-content/uploads/2023/04/ACCESS_1124x764.jpg\" title=\"駅から会場へのアクセス\"><br>\n<a href=\"https://www.youtube.com/watch?v=diW3-cli_zU\" rel=\"nofollow\" title=\"駅から会場へのアクセス\"><img alt=\"駅からのアクセス\" src=\"https://img.youtube.com/vi/diW3-cli_zU/0.jpg\"></a><br></p>\n<p><img alt=\"会場ビルの写真\" src=\"https://www.iwasaki.ac.jp/img/facilities/yda_big_03.jpg\" title=\"会場ビルの写真\"><br>\n<font size=\"4\" color=\"#ff0000\">\n<b>2号館　5階504教室</b></font><b><br>\n<img alt=\"会場内の写真\" src=\"https://yda.iwasaki.ac.jp/wp-content/uploads/2023/03/d0e9d7acf41423628085b7de09767ba1.jpg\" title=\"会場内の写真\"><br></b></p><b>\n<h1>当日の他の催しについて</h1>\n<p>当日、同じ5階の別教室で「インディゲームもくもく会」が開催されております。<br>\n見学なさる分には問題ありません。（参加者のお邪魔にならない程度に）<br>\n<br></p>\n<h1>その他</h1>\n<p>・宗教の勧誘や周りの方が不快と感じるような勧誘行為は禁止です。<br>\n・キャンセルされる場合は、当サイトのキャンセル処理を行なってください。<br>\n・当日ご連絡なく不参加の方や、直前のキャンセルを繰り返す方は、参加をご遠慮いただく場合がございます。<br></p></b>",
+      "url": "https://manabino.connpass.com/event/405526/",
+      "image_url": "https://media.connpass.com/thumbs/d0/80/d08023247ac27be8abbcce64182296dd.png",
+      "hash_tag": "",
+      "started_at": "2026-09-13T11:00:00+09:00",
+      "ended_at": "2026-09-13T18:00:00+09:00",
+      "published_at": "2026-09-01T01:45:28+09:00",
+      "limit": 15,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13771,
+        "subdomain": "manabino",
+        "title": "マナビノススメ",
+        "url": "https://manabino.connpass.com/"
+      },
+      "address": "〒222-0033 神奈川県横浜市港北区新横浜3-22-17",
+      "place": "YDA横浜デジタルアーツ専門学校",
+      "lat": "35.512562500000",
+      "lon": "139.618583300000",
+      "owner_id": 161248,
+      "owner_nickname": "Daisuke3Test02",
+      "owner_display_name": "まつい",
+      "accepted": 2,
+      "waiting": 0,
+      "updated_at": "2026-09-01T01:45:28+09:00"
     }
   ]
 }
