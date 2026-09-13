@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-14T06:59:08.323593+09:00",
+  "fetched_at": "2026-09-14T08:56:26.312108+09:00",
   "date": "20260914",
   "count": 7,
   "events": [
@@ -66,37 +66,6 @@
       "updated_at": "2026-08-31T11:00:33+09:00"
     },
     {
-      "id": 404597,
-      "title": "【増枠！】AIを\"使う\"から\"組み込む\"へ",
-      "catch": "新規事業の立ち上げから、コードレビュー・全社基盤の運用まで",
-      "description": "<h1>💭 イベント概要</h1>\n<p>「AIで生産性は上がった」の、その次の話をします。\n個人の道具としてAIを使う段階は、多くの現場で終わりました。次に問われているのは、それをチームや組織の仕組みにどう組み込むかです。\n新規事業をAIネイティブに立ち上げる、増え続けるPRのレビューと合意形成を運用ルールで捌く、開発フローにAIエージェントを組み込む、全社の活用基盤とガバナンスを敷く。アプローチは違っても、向かっている先は同じです。</p>\n<p>本イベントでは、4人の実践者がそれぞれの現場で「AIを回す仕組み」をどうつくってきたかをLTで話します。後半は登壇者によるセッションで、うまくいったことだけでなく、詰まったところや今も答えが出ていないところまで踏み込みます。</p>\n<p>ツールの紹介ではなく、運用の話です。他社が何をどう決めて回しているのか、生々しいところをお話します！\nオンライン・オフラインのハイブリッド開催です。会場参加の方は、LT後の懇親会もぜひ 🍻</p>\n<h1>🙋 こんな方におすすめ！</h1>\n<ul>\n<li>AIを個人で使うところまでは来たが、チーム全体の生産性に繋がっていないと感じている方</li>\n<li>AIでコードは増えたのに、レビューと合意形成が追いつかず詰まっている方</li>\n<li>全社のAI活用基盤やガバナンス、ツール選定の進め方を他社の実例から学びたい方</li>\n<li>新規事業や新規プロダクトを、AIネイティブな進め方で立ち上げようとしている方</li>\n</ul>\n<h1>登壇者</h1>\n<h3><strong>株式会社kickflow 取締役CTO/共同創業者　小林 佳祐</strong></h3>\n<p><img src=\"https://lh3.googleusercontent.com/d/1YRyRLMCVqk5m7tqug0Zv7jAyYQL7PMsb\" width=\"100\"><br>\nX：<a href=\"https://x.com/kobakei122\" rel=\"nofollow\">https://x.com/kobakei122</a><br>\nプロフィール：ソフトウェアエンジニア・エンジニアリングマネージャーとして複数のメガベンチャーやスタートアップを経て、2020年2月に株式会社kickflowを共同創業。プロダクト開発全般を担当。</p>\n<h3><strong>株式会社kickflow エンジニアリングマネージャー　森本 勝哉</strong></h3>\n<p><img src=\"https://lh3.googleusercontent.com/d/1GIJ2sf2-hCXemeiSz3Z6x6ZoeoV0B9Yr\" width=\"100\"><br>\nX：<a href=\"https://x.com/kmorimoto68\" rel=\"nofollow\">https://x.com/kmorimoto68</a><br>\nプロフィール：一人目の正社員エンジニアとしてkickflow入社。その後、エンジニアリングマネージャーに就任しプレイングマネージャーとして日々開発している。プロダクトを成長させることが好き。</p>\n<h3><strong>株式会社HERP ソフトウェアエンジニア　岩下 侑冬</strong></h3>\n<p><img src=\"https://lh3.googleusercontent.com/d/18GrDjvdYZwzzI7PqTmE5iaINryIQ1X14\" width=\"100\"><br>\nX：<a href=\"https://x.com/y120sb\" rel=\"nofollow\">https://x.com/y120sb</a><br>\nプロフィール：スタートアップやメガベンチャーを経て2024年4月にHERP入社。人材紹介エージェント向け事業「ジョブミル」の開発に従事。</p>\n<h3><strong>株式会社HERP EM / SRE　有薗 拓也</strong></h3>\n<p><img src=\"https://lh3.googleusercontent.com/d/1x-V2s4RjoNxKHkneGoifPqwuQZAUG8my\" width=\"100\"><br>\nX：<a href=\"https://x.com/takuya_arizono\" rel=\"nofollow\">https://x.com/takuya_arizono</a><br>\nプロフィール：新卒で HERP に入社。忠誠を誓い過ぎて SRE に幽閉。</p>\n<h2>📝 タイムテーブル</h2>\n<p>※ 当日までに変わる場合があります</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">やること</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング・会の説明</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">LT ✕ 4</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">セッション<br>- AIで増えた変更を、どう合意形成する？<br>- 現場の自由と全社ガバナンスの折り合いは？<br>- 仕組み化がうまくいかなかったのはどこ？<br>などなど</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n</tbody>\n</table>",
-      "url": "https://herp-inc.connpass.com/event/404597/",
-      "image_url": "https://media.connpass.com/thumbs/8a/c2/8ac230c107f8f0e3eb0489c478c781ff.png",
-      "hash_tag": "",
-      "started_at": "2026-09-14T19:00:00+09:00",
-      "ended_at": "2026-09-14T20:45:00+09:00",
-      "published_at": "2026-08-28T11:47:44+09:00",
-      "limit": 55,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 7433,
-        "subdomain": "herp-inc",
-        "title": "株式会社HERP",
-        "url": "https://herp-inc.connpass.com/"
-      },
-      "address": "東京都品川区西五反田1-2-10 CIRCLES五反田 3階",
-      "place": "株式会社HERP",
-      "lat": "35.625823200000",
-      "lon": "139.722767800000",
-      "owner_id": 463456,
-      "owner_nickname": "Ono-Yuta",
-      "owner_display_name": "Ono-Yuta",
-      "accepted": 39,
-      "waiting": 2,
-      "updated_at": "2026-09-09T20:27:12+09:00"
-    },
-    {
       "id": 405867,
       "title": "Python ボルダリング部 #218",
       "catch": "ロッキー新宿曙橋店",
@@ -154,9 +123,40 @@
       "owner_id": 19742,
       "owner_nickname": "ohtaman",
       "owner_display_name": "おおたまん",
-      "accepted": 61,
+      "accepted": 63,
       "waiting": 0,
       "updated_at": "2026-09-13T07:32:27+09:00"
+    },
+    {
+      "id": 404597,
+      "title": "【増枠！】AIを\"使う\"から\"組み込む\"へ",
+      "catch": "新規事業の立ち上げから、コードレビュー・全社基盤の運用まで",
+      "description": "<h1>💭 イベント概要</h1>\n<p>「AIで生産性は上がった」の、その次の話をします。\n個人の道具としてAIを使う段階は、多くの現場で終わりました。次に問われているのは、それをチームや組織の仕組みにどう組み込むかです。\n新規事業をAIネイティブに立ち上げる、増え続けるPRのレビューと合意形成を運用ルールで捌く、開発フローにAIエージェントを組み込む、全社の活用基盤とガバナンスを敷く。アプローチは違っても、向かっている先は同じです。</p>\n<p>本イベントでは、4人の実践者がそれぞれの現場で「AIを回す仕組み」をどうつくってきたかをLTで話します。後半は登壇者によるセッションで、うまくいったことだけでなく、詰まったところや今も答えが出ていないところまで踏み込みます。</p>\n<p>ツールの紹介ではなく、運用の話です。他社が何をどう決めて回しているのか、生々しいところをお話します！\nオンライン・オフラインのハイブリッド開催です。会場参加の方は、LT後の懇親会もぜひ 🍻</p>\n<h1>🙋 こんな方におすすめ！</h1>\n<ul>\n<li>AIを個人で使うところまでは来たが、チーム全体の生産性に繋がっていないと感じている方</li>\n<li>AIでコードは増えたのに、レビューと合意形成が追いつかず詰まっている方</li>\n<li>全社のAI活用基盤やガバナンス、ツール選定の進め方を他社の実例から学びたい方</li>\n<li>新規事業や新規プロダクトを、AIネイティブな進め方で立ち上げようとしている方</li>\n</ul>\n<h1>登壇者</h1>\n<h3><strong>株式会社kickflow 取締役CTO/共同創業者　小林 佳祐</strong></h3>\n<p><img src=\"https://lh3.googleusercontent.com/d/1YRyRLMCVqk5m7tqug0Zv7jAyYQL7PMsb\" width=\"100\"><br>\nX：<a href=\"https://x.com/kobakei122\" rel=\"nofollow\">https://x.com/kobakei122</a><br>\nプロフィール：ソフトウェアエンジニア・エンジニアリングマネージャーとして複数のメガベンチャーやスタートアップを経て、2020年2月に株式会社kickflowを共同創業。プロダクト開発全般を担当。</p>\n<h3><strong>株式会社kickflow エンジニアリングマネージャー　森本 勝哉</strong></h3>\n<p><img src=\"https://lh3.googleusercontent.com/d/1GIJ2sf2-hCXemeiSz3Z6x6ZoeoV0B9Yr\" width=\"100\"><br>\nX：<a href=\"https://x.com/kmorimoto68\" rel=\"nofollow\">https://x.com/kmorimoto68</a><br>\nプロフィール：一人目の正社員エンジニアとしてkickflow入社。その後、エンジニアリングマネージャーに就任しプレイングマネージャーとして日々開発している。プロダクトを成長させることが好き。</p>\n<h3><strong>株式会社HERP ソフトウェアエンジニア　岩下 侑冬</strong></h3>\n<p><img src=\"https://lh3.googleusercontent.com/d/18GrDjvdYZwzzI7PqTmE5iaINryIQ1X14\" width=\"100\"><br>\nX：<a href=\"https://x.com/y120sb\" rel=\"nofollow\">https://x.com/y120sb</a><br>\nプロフィール：スタートアップやメガベンチャーを経て2024年4月にHERP入社。人材紹介エージェント向け事業「ジョブミル」の開発に従事。</p>\n<h3><strong>株式会社HERP EM / SRE　有薗 拓也</strong></h3>\n<p><img src=\"https://lh3.googleusercontent.com/d/1x-V2s4RjoNxKHkneGoifPqwuQZAUG8my\" width=\"100\"><br>\nX：<a href=\"https://x.com/takuya_arizono\" rel=\"nofollow\">https://x.com/takuya_arizono</a><br>\nプロフィール：新卒で HERP に入社。忠誠を誓い過ぎて SRE に幽閉。</p>\n<h2>📝 タイムテーブル</h2>\n<p>※ 当日までに変わる場合があります</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">やること</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング・会の説明</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">LT ✕ 4</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:55</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">セッション<br>- AIで増えた変更を、どう合意形成する？<br>- 現場の自由と全社ガバナンスの折り合いは？<br>- 仕組み化がうまくいかなかったのはどこ？<br>などなど</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45</td>\n<td style=\"text-align: left;\">懇親会</td>\n</tr>\n</tbody>\n</table>",
+      "url": "https://herp-inc.connpass.com/event/404597/",
+      "image_url": "https://media.connpass.com/thumbs/8a/c2/8ac230c107f8f0e3eb0489c478c781ff.png",
+      "hash_tag": "",
+      "started_at": "2026-09-14T19:00:00+09:00",
+      "ended_at": "2026-09-14T20:45:00+09:00",
+      "published_at": "2026-08-28T11:47:44+09:00",
+      "limit": 55,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 7433,
+        "subdomain": "herp-inc",
+        "title": "株式会社HERP",
+        "url": "https://herp-inc.connpass.com/"
+      },
+      "address": "東京都品川区西五反田1-2-10 CIRCLES五反田 3階",
+      "place": "株式会社HERP",
+      "lat": "35.625823200000",
+      "lon": "139.722767800000",
+      "owner_id": 463456,
+      "owner_nickname": "Ono-Yuta",
+      "owner_display_name": "Ono-Yuta",
+      "accepted": 39,
+      "waiting": 3,
+      "updated_at": "2026-09-09T20:27:12+09:00"
     },
     {
       "id": 403813,
@@ -169,7 +169,7 @@
       "started_at": "2026-09-14T18:30:00+09:00",
       "ended_at": "2026-09-14T20:30:00+09:00",
       "published_at": "2026-08-17T10:00:00+09:00",
-      "limit": 35,
+      "limit": 40,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -185,9 +185,9 @@
       "owner_id": 968964,
       "owner_nickname": "kotasono",
       "owner_display_name": "kotasono",
-      "accepted": 34,
+      "accepted": 35,
       "waiting": 0,
-      "updated_at": "2026-09-11T22:34:41+09:00"
+      "updated_at": "2026-09-14T07:49:23+09:00"
     },
     {
       "id": 404155,
@@ -216,7 +216,7 @@
       "owner_id": 127224,
       "owner_nickname": "kuwae_ool",
       "owner_display_name": "kuwae_ool",
-      "accepted": 41,
+      "accepted": 39,
       "waiting": 0,
       "updated_at": "2026-09-10T15:02:43+09:00"
     }
