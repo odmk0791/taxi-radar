@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-13T11:24:39.265846+09:00",
+  "fetched_at": "2026-09-13T16:51:37.880799+09:00",
   "date": "20260913",
-  "count": 21,
+  "count": 22,
   "events": [
     {
       "id": 406297,
@@ -26,7 +26,7 @@
       "owner_nickname": "freddi_kit",
       "owner_display_name": "フレディ",
       "accepted": 71,
-      "waiting": 4,
+      "waiting": 2,
       "updated_at": "2026-09-13T07:27:54+09:00"
     },
     {
@@ -56,40 +56,9 @@
       "owner_id": 375384,
       "owner_nickname": "Masatoshi_Ohata",
       "owner_display_name": "Masatoshi_Ohata",
-      "accepted": 17,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-08-12T13:01:25+09:00"
-    },
-    {
-      "id": 393883,
-      "title": "第十四回技術所同人誌博覧会 懇親会（一般参加者向け）",
-      "catch": "",
-      "description": "<p style=\"text-align: center; padding-top: 30px; font-size: 20px;\">技書博のあとは懇親会に参加しよう！</p>\n<p style=\"text-align: center; padding-bottom: 30px; font-size: 20px;\">著者・スタッフ・参加者同士で交流しよう！</p>\n\n<p style=\"text-align: center; padding-bottom: 30px;\"><img src=\"https://tblg.k-img.com/restaurant/images/Rvw/243841/320x320_square_c608b0c485fb38869dfe50b6a79d2144.jpg\"></p>\n\n<p>このイベントは「<a href=\"https://gishohaku.connpass.com/event/393530/\" rel=\"nofollow\">第十四回技術書同人誌博覧会</a>」本編に参加される方に向けて、本編終了後に交流できるよう準備しました。懇親会に参加される方は、必ず本編にもご参加ください。</p>\n<p><a href=\"https://gishohaku.connpass.com/event/393530/\" rel=\"nofollow\">⇒本編への参加はこちらから</a></p>\n<h1>会場と料理</h1>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>会場</td>\n<td>そのまま「大田区産業プラザPiO」で開催！</td>\n</tr>\n<tr>\n<td>住所</td>\n<td>〒144-0035 東京都大田区南蒲田１丁目２０−２０</td>\n</tr>\n<tr>\n<td>MAP</td>\n<td><a href=\"https://www.pio-ota.net/access/\" rel=\"nofollow\">https://www.pio-ota.net/access/</a></td>\n</tr>\n</tbody>\n</table>\n<h1>行動規範</h1>\n<p>皆さんが安心してイベントに参加できるよう、技書博では行動規範を定めています。<br>\nすべての参加者は、この行動規約に同意し遵守することをご了承ください。<br></p>\n<ul>\n<li><a href=\"https://gishohaku.dev/code-of-conduct\" rel=\"nofollow\">行動規範</a></li>\n<li><a href=\"https://gishohaku.dev/harassment-case-study\" rel=\"nofollow\">補足資料：ハラスメント事例を学ぼう</a></li>\n</ul>\n<h1>注意事項</h1>\n<ul>\n<li>当日のイベント内容は後日任意の媒体にて公開させて頂くことがあります</li>\n<li>イベントレポート作成のため、写真撮影する場合がありますので予めご了承ください</li>\n<li>イベントは止むを得ず中止する場合があり、その際には全体メッセージで通知します</li>\n<li>多くの方が来場されますので、お荷物や貴重品はご自身で管理してください</li>\n<li>当日、いかなる理由においても、事故又は損害が生じた場合、運営事務局は一切の責任を負いかねます</li>\n</ul>\n<h2>お問い合わせ先</h2>\n<p>技術書同人誌博覧会 運営事務局\ninfo@gishohaku.dev</p>",
-      "url": "https://gishohaku.connpass.com/event/393883/",
-      "image_url": "https://media.connpass.com/thumbs/32/c7/32c779aadbeb2cd9842d4c9fab1500e0.png",
-      "hash_tag": "技書博",
-      "started_at": "2026-09-13T17:30:00+09:00",
-      "ended_at": "2026-09-13T20:00:00+09:00",
-      "published_at": "2026-05-16T17:12:12+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 8261,
-        "subdomain": "gishohaku",
-        "title": "技術書同人誌博覧会",
-        "url": "https://gishohaku.connpass.com/"
-      },
-      "address": "東京都大田区南蒲田1丁目20-20",
-      "place": "大田区産業プラザ（1F大展示ホール）",
-      "lat": "35.558818500000",
-      "lon": "139.724097400000",
-      "owner_id": 770987,
-      "owner_nickname": "nicozetsche",
-      "owner_display_name": "nicozetsche",
-      "accepted": 6,
-      "waiting": 0,
-      "updated_at": "2026-05-16T17:39:22+09:00"
     },
     {
       "id": 389493,
@@ -118,9 +87,40 @@
       "owner_id": 459807,
       "owner_nickname": "ohmoriyusuke",
       "owner_display_name": "うーたん",
-      "accepted": 30,
+      "accepted": 29,
       "waiting": 0,
       "updated_at": "2026-08-25T23:05:09+09:00"
+    },
+    {
+      "id": 393883,
+      "title": "第十四回技術所同人誌博覧会 懇親会（一般参加者向け）",
+      "catch": "",
+      "description": "<p style=\"text-align: center; padding-top: 30px; font-size: 20px;\">技書博のあとは懇親会に参加しよう！</p>\n<p style=\"text-align: center; padding-bottom: 30px; font-size: 20px;\">著者・スタッフ・参加者同士で交流しよう！</p>\n\n<p style=\"text-align: center; padding-bottom: 30px;\"><img src=\"https://tblg.k-img.com/restaurant/images/Rvw/243841/320x320_square_c608b0c485fb38869dfe50b6a79d2144.jpg\"></p>\n\n<p>このイベントは「<a href=\"https://gishohaku.connpass.com/event/393530/\" rel=\"nofollow\">第十四回技術書同人誌博覧会</a>」本編に参加される方に向けて、本編終了後に交流できるよう準備しました。懇親会に参加される方は、必ず本編にもご参加ください。</p>\n<p><a href=\"https://gishohaku.connpass.com/event/393530/\" rel=\"nofollow\">⇒本編への参加はこちらから</a></p>\n<h1>会場と料理</h1>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>会場</td>\n<td>そのまま「大田区産業プラザPiO」で開催！</td>\n</tr>\n<tr>\n<td>住所</td>\n<td>〒144-0035 東京都大田区南蒲田１丁目２０−２０</td>\n</tr>\n<tr>\n<td>MAP</td>\n<td><a href=\"https://www.pio-ota.net/access/\" rel=\"nofollow\">https://www.pio-ota.net/access/</a></td>\n</tr>\n</tbody>\n</table>\n<h1>行動規範</h1>\n<p>皆さんが安心してイベントに参加できるよう、技書博では行動規範を定めています。<br>\nすべての参加者は、この行動規約に同意し遵守することをご了承ください。<br></p>\n<ul>\n<li><a href=\"https://gishohaku.dev/code-of-conduct\" rel=\"nofollow\">行動規範</a></li>\n<li><a href=\"https://gishohaku.dev/harassment-case-study\" rel=\"nofollow\">補足資料：ハラスメント事例を学ぼう</a></li>\n</ul>\n<h1>注意事項</h1>\n<ul>\n<li>当日のイベント内容は後日任意の媒体にて公開させて頂くことがあります</li>\n<li>イベントレポート作成のため、写真撮影する場合がありますので予めご了承ください</li>\n<li>イベントは止むを得ず中止する場合があり、その際には全体メッセージで通知します</li>\n<li>多くの方が来場されますので、お荷物や貴重品はご自身で管理してください</li>\n<li>当日、いかなる理由においても、事故又は損害が生じた場合、運営事務局は一切の責任を負いかねます</li>\n</ul>\n<h2>お問い合わせ先</h2>\n<p>技術書同人誌博覧会 運営事務局\ninfo@gishohaku.dev</p>",
+      "url": "https://gishohaku.connpass.com/event/393883/",
+      "image_url": "https://media.connpass.com/thumbs/32/c7/32c779aadbeb2cd9842d4c9fab1500e0.png",
+      "hash_tag": "技書博",
+      "started_at": "2026-09-13T17:30:00+09:00",
+      "ended_at": "2026-09-13T20:00:00+09:00",
+      "published_at": "2026-05-16T17:12:12+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 8261,
+        "subdomain": "gishohaku",
+        "title": "技術書同人誌博覧会",
+        "url": "https://gishohaku.connpass.com/"
+      },
+      "address": "東京都大田区南蒲田1丁目20-20",
+      "place": "大田区産業プラザ（1F大展示ホール）",
+      "lat": "35.558818500000",
+      "lon": "139.724097400000",
+      "owner_id": 770987,
+      "owner_nickname": "nicozetsche",
+      "owner_display_name": "nicozetsche",
+      "accepted": 11,
+      "waiting": 0,
+      "updated_at": "2026-05-16T17:39:22+09:00"
     },
     {
       "id": 401573,
@@ -135,7 +135,7 @@
       "published_at": "2026-07-24T00:32:43+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10914,
         "subdomain": "pg-beginner-mtg",
@@ -149,7 +149,7 @@
       "owner_id": 260743,
       "owner_nickname": "Tak5553",
       "owner_display_name": "TAKE",
-      "accepted": 6,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-07-30T00:37:03+09:00"
     },
@@ -157,7 +157,7 @@
       "id": 404018,
       "title": "【運動不足も解消】もくもく会",
       "catch": "集中時間・運動・交流、すべて叶う！",
-      "description": "<h1>🧠 もくもく勉強会 × リフレッシュ運動</h1>\n<h3>運動 → 集中 → 運動 → 集中</h3>\n<p><strong>体を動かしてから勉強する、3.5時間の実験的勉強会</strong></p>\n<hr>\n<h2>💡 こんな人におすすめ</h2>\n<ul>\n<li>勉強や作業をしたいけど、家だと集中できない  </li>\n<li>運動もしたいけど、一人だと続かない  </li>\n<li>休日を有効に使いたい  </li>\n<li>新しい習慣を作りたい  </li>\n<li>気軽に人と交流もしたい  </li>\n</ul>\n<hr>\n<h2>✨ このイベントの特徴</h2>\n<p>このイベントでは  </p>\n<p><strong>運動 → 集中 → 運動 → 集中</strong></p>\n<p>というサイクルを作ります。</p>\n<p>体を動かすことで血流が上がり、<br>\nその後の集中力アップが期待できます。</p>\n<p>今回はさらに、</p>\n<blockquote>\n<p>「やったほうがいいけど、1人だとやらないこと」</p>\n</blockquote>\n<p>をみんなで実行します。</p>\n<ul>\n<li>軽い運動  </li>\n<li>ストレッチ  </li>\n<li>集中作業  </li>\n</ul>\n<p>を、環境の力で習慣化していきます。</p>\n<hr>\n<h1>📆 イベント概要</h1>\n<p><strong>時間</strong><br>\n14:00〜18:30</p>\n<p><strong>場所</strong><br>\nTHE CAMPUS FLATS TOGOSHI  </p>\n<hr>\n<h1>📆 タイムテーブル</h1>\n<ul>\n<li>\n<p><strong>14:00〜14:10</strong><br>\n  受付（遅刻・早退自由です！）</p>\n</li>\n<li>\n<p><strong>14:10〜15:00</strong><br>\n  もくもく勉強タイム①（50分）</p>\n</li>\n<li>\n<p><strong>15:00〜15:15</strong><br>\n  運動①（ピラティス / 体幹トレーニング）</p>\n</li>\n<li>\n<p><strong>15:15〜16:05</strong><br>\n  もくもく勉強タイム②（50分）</p>\n</li>\n<li>\n<p><strong>16:05〜16:20</strong><br>\n  運動②（ピラティス / 体幹トレーニング）</p>\n</li>\n<li>\n<p><strong>16:20〜17:10</strong><br>\n  もくもく勉強タイム③（50分）</p>\n</li>\n<li>\n<p><strong>17:10〜17:25</strong><br>\n  運動③（ピラティス / 体幹トレーニング）</p>\n</li>\n<li>\n<p><strong>17:25〜18:00</strong><br>\n  もくもく勉強タイム④（35分）</p>\n</li>\n<li>\n<p><strong>18:00〜18:30</strong><br>\n  ランジ交流会・自由時間</p>\n</li>\n</ul>\n<hr>\n<h2>✨ ルール</h2>\n<ul>\n<li>運動中 → <strong>雑談OK</strong>  </li>\n<li>勉強タイム → <strong>雑談なし（作業に関する会話はOK）</strong></li>\n</ul>\n<p>そして今回の特徴：</p>\n<h3>🦵 ランジ交流会ルール</h3>\n<p><strong>話を聞くときはランジをしなければならない</strong></p>\n<ul>\n<li>発言のタイミングが自然に分散される  </li>\n<li>聞く姿勢が強制され、会話の質が上がる  </li>\n<li>受け身になりがちな人も自然と参加できる  </li>\n</ul>\n<p>ちょっと変わっていますが、かなり合理的です。</p>\n<hr>\n<h1>💪 運動のメリット</h1>\n<ul>\n<li>腰痛予防・改善  </li>\n<li>姿勢改善  </li>\n<li>集中力アップ  </li>\n</ul>\n<p>軽い運動を挟むことで<br>\n作業効率の最大化を狙います。</p>\n<p>参考動画<br>\n<a href=\"https://m.youtube.com/watch?v=qgItkNeohoM\" rel=\"nofollow\">https://m.youtube.com/watch?v=qgItkNeohoM</a></p>\n<hr>\n<h1>✨ このイベントで得られること</h1>\n<h3>運動でリフレッシュ</h3>\n<p>合計 <strong>約30分の運動 + ランジ交流60分</strong></p>\n<p>座りっぱなしを防ぎ、<br>\n体も頭もリセットされます。</p>\n<hr>\n<h3>集中できる作業時間</h3>\n<p>合計 <strong>約120分の集中作業</strong></p>\n<p>周囲も作業している環境なので<br>\n自然と集中できます。</p>\n<hr>\n<h3>偏らない交流</h3>\n<p>ランジという制約により<br>\n<strong>聞く側が動くことで生まれる新しい会話設計</strong>が体験できます。</p>\n<hr>\n<h3>休日の質が上がる</h3>\n<p>運動・集中・交流を一度に。<br>\n終わるころにはしっかり満足感が残ります。</p>\n<hr>\n<h1>⚖️ コンセプト</h1>\n<p><strong>「ゆるいコミュニティ」と「ガチ勉強会」の中間</strong></p>\n<ul>\n<li>成果を競わない  </li>\n<li>運動はリフレッシュ目的  </li>\n<li>でもちゃんと集中できる  </li>\n</ul>\n<p>ちょうどいいバランスのイベントです。</p>\n<p>途中参加・途中退出OK。</p>\n<hr>\n<h1>✏️ 会場設備</h1>\n<ul>\n<li>Wi-Fiあり  </li>\n<li>電源あり  </li>\n<li>モニター4台あり（制限の可能性あり）  </li>\n<li>コクヨの文房具利用可能  </li>\n<li>コーヒーのペーパードリップ</li>\n</ul>\n<hr>\n<h1>🌱 主催者メモ</h1>\n<p>幼稚園から社会人まで皆勤。<br>\n体重は長年 <strong>±2kg以内</strong>をキープ。</p>\n<p>「運動 × 習慣化 × 集中」の組み合わせを<br>\n実験的にイベント化しています。</p>",
+      "description": "<h1>🧠 もくもく勉強会 × リフレッシュ運動</h1>\n<h3>運動 → 集中 → 運動 → 集中</h3>\n<p><strong>体を動かしてから勉強する、3.5時間の実験的勉強会</strong></p>\n<hr>\n<h2>💡 こんな人におすすめ</h2>\n<ul>\n<li>勉強や作業をしたいけど、家だと集中できない  </li>\n<li>運動もしたいけど、一人だと続かない  </li>\n<li>休日を有効に使いたい  </li>\n<li>新しい習慣を作りたい  </li>\n<li>気軽に人と交流もしたい  </li>\n</ul>\n<hr>\n<h2>✨ このイベントの特徴</h2>\n<p>このイベントでは  </p>\n<p><strong>運動 → 集中 → 運動 → 集中</strong></p>\n<p>というサイクルを作ります。</p>\n<p>体を動かすことで血流が上がり、<br>\nその後の集中力アップが期待できます。</p>\n<p>今回はさらに、</p>\n<blockquote>\n<p>「やったほうがいいけど、1人だとやらないこと」</p>\n</blockquote>\n<p>をみんなで実行します。</p>\n<ul>\n<li>軽い運動  </li>\n<li>ストレッチ  </li>\n<li>集中作業  </li>\n</ul>\n<p>を、環境の力で習慣化していきます。</p>\n<hr>\n<h1>📆 イベント概要</h1>\n<p><strong>時間</strong><br>\n14:00〜18:30</p>\n<p><strong>場所</strong><br>\nTHE CAMPUS FLATS TOGOSHI  </p>\n<hr>\n<h1>📆 タイムテーブル</h1>\n<ul>\n<li>\n<p><strong>14:00〜14:10</strong><br>\n  受付（遅刻・早退自由です！）</p>\n</li>\n<li>\n<p><strong>14:10〜15:00</strong><br>\n  もくもく勉強タイム①（50分）</p>\n</li>\n<li>\n<p><strong>15:00〜15:15</strong><br>\n  運動①（ピラティス / 体幹トレーニング）</p>\n</li>\n<li>\n<p><strong>15:15〜16:05</strong><br>\n  もくもく勉強タイム②（50分）</p>\n</li>\n<li>\n<p><strong>16:05〜16:20</strong><br>\n  運動②（ピラティス / 体幹トレーニング）</p>\n</li>\n<li>\n<p><strong>16:20〜17:10</strong><br>\n  もくもく勉強タイム③（50分）</p>\n</li>\n<li>\n<p><strong>17:10〜17:25</strong><br>\n  運動③（ピラティス / 体幹トレーニング）</p>\n</li>\n<li>\n<p><strong>17:25〜18:00</strong><br>\n  もくもく勉強タイム④（35分）</p>\n</li>\n<li>\n<p><strong>18:00〜18:30</strong><br>\n  ランジ交流会・自由時間</p>\n</li>\n</ul>\n<hr>\n<h2>✨ ルール</h2>\n<ul>\n<li>運動中 → <strong>雑談OK</strong>  </li>\n<li>勉強タイム → <strong>雑談なし（作業に関する会話はOK）</strong></li>\n</ul>\n<p>そして今回の特徴：</p>\n<h3>🦵 ランジ交流会ルール</h3>\n<p><strong>話を聞くときはランジをしなければならない</strong></p>\n<ul>\n<li>発言のタイミングが自然に分散される  </li>\n<li>聞く姿勢が強制され、会話の質が上がる  </li>\n<li>受け身になりがちな人も自然と参加できる  </li>\n</ul>\n<p>ちょっと変わっていますが、かなり合理的です。</p>\n<hr>\n<h1>💪 運動のメリット</h1>\n<ul>\n<li>腰痛予防・改善  </li>\n<li>姿勢改善  </li>\n<li>集中力アップ  </li>\n</ul>\n<p>軽い運動を挟むことで<br>\n作業効率の最大化を狙います。</p>\n<p>参考動画<br>\n<a href=\"https://m.youtube.com/watch?v=qgItkNeohoM\" rel=\"nofollow\">https://m.youtube.com/watch?v=qgItkNeohoM</a></p>\n<hr>\n<h1>✨ このイベントで得られること</h1>\n<h3>運動でリフレッシュ</h3>\n<p>合計 <strong>約30分の運動 + ランジ交流60分</strong></p>\n<p>座りっぱなしを防ぎ、<br>\n体も頭もリセットされます。</p>\n<hr>\n<h3>集中できる作業時間</h3>\n<p>合計 <strong>約120分の集中作業</strong></p>\n<p>周囲も作業している環境なので<br>\n自然と集中できます。</p>\n<hr>\n<h3>偏らない交流</h3>\n<p>ランジという制約により<br>\n<strong>聞く側が動くことで生まれる新しい会話設計</strong>が体験できます。</p>\n<hr>\n<h3>休日の質が上がる</h3>\n<p>運動・集中・交流を一度に。<br>\n終わるころにはしっかり満足感が残ります。</p>\n<hr>\n<h1>⚖️ コンセプト</h1>\n<p><strong>「ゆるいコミュニティ」と「ガチ勉強会」の中間</strong></p>\n<ul>\n<li>成果を競わない  </li>\n<li>運動はリフレッシュ目的  </li>\n<li>でもちゃんと集中できる  </li>\n</ul>\n<p>ちょうどいいバランスのイベントです。</p>\n<p>途中参加・途中退出OK。</p>\n<hr>\n<h1>✏️ 会場設備</h1>\n<ul>\n<li>Wi-Fiあり  </li>\n<li>電源あり  </li>\n<li>モニター4台あり（制限の可能性あり）  </li>\n<li>コクヨの文房具利用可能  </li>\n<li>コーヒーのペーパードリップ</li>\n</ul>\n<hr>\n<h1>🌱 主催者メモ</h1>\n<p>幼稚園から社会人まで皆勤。<br>\n体重は長年 <strong>±2kg以内</strong>をキープ。</p>\n<p>「運動 × 習慣化 × 集中」の組み合わせを<br>\n実験的にイベント化しています。</p>\n<hr>\n<h1>🎁 参加費について</h1>\n<p>参加費は無料です！</p>\n<p>もし「応援してもいいよ」という方がいれば、募金感覚で下記のリンクをご利用いただけると嬉しいです 🙏</p>\n<ul>\n<li><a href=\"https://www.amazon.co.jp?&amp;linkCode=ll2&amp;tag=pumpkin041-22&amp;linkId=18f56295483f42cb79c528745a2250fb&amp;ref_=as_li_ss_tl\" rel=\"nofollow\">Amazonはこちら</a></li>\n<li><a href=\"https://item.rakuten.co.jp/rakutenoriginal-daily/ro-b-001/\" rel=\"nofollow\">楽天市場はこちら</a></li>\n</ul>\n<p>※リンク経由でAmazonや楽天の商品を購入すると、購入額の一部が運営費として還元されます。<br>\n※皆さまからいただいた支援は、水やお茶などの無料提供やイベント運営費に活用させていただきます。</p>\n<p>ご協力いただける方は、ぜひよろしくお願いします！🙌</p>",
       "url": "https://kintech.connpass.com/event/404018/",
       "image_url": "https://media.connpass.com/thumbs/f6/8a/f68a34704136ad1dbbbb08685b9b30ce.png",
       "hash_tag": "",
@@ -166,7 +166,7 @@
       "published_at": "2026-08-17T16:40:12+09:00",
       "limit": 18,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16634,
         "subdomain": "kintech",
@@ -182,13 +182,13 @@
       "owner_display_name": "ともち",
       "accepted": 1,
       "waiting": 0,
-      "updated_at": "2026-08-18T12:09:37+09:00"
+      "updated_at": "2026-09-13T14:02:28+09:00"
     },
     {
       "id": 404331,
       "title": "AgentCoreハンズオン 〜マルチエージェントでフットボールー対決！〜",
       "catch": "",
-      "description": "<h1>イベント概要</h1>\n<p>JAWS-UG東京支部とAWS Japan（AWSJ）が共同開催する、Amazon Bedrock AgentCore体験ハンズオンイベントです。</p>\n<p>参加者は5体のAIエージェント（ゴールキーパーやフォワードなど役割を持つ）からなるチームを構築し、マルチエージェントが協調して動くサッカーの試合「AWS Agentic Football Cup」で対戦します。<br>\nハンズオンでオリジナルのフットボールチームを作り、後半は他のチームと1試合は約2分のリアルタイムでトーナメントでの対戦を予定しています！</p>\n<p>使用する技術スタックはAmazon Bedrock AgentCore、Strands Agents SDKを想定しています。開発に使用するコーディングエージェントはKiroを前提としてワークショップコンテンツを用意しています。<br>\n<em>※ 他のコーディングエージェント（Claude Code、Cursor等）をご利用いただくことも可能ですが、手順の読み替えや環境設定は参加者ご自身でのご対応が必要です。</em></p>\n<p>事前に公式ワークショップに目を通しておくと、当日の理解がスムーズです。<br>\n<a href=\"https://catalog.workshops.aws/agentic-football/ja-JP\" rel=\"nofollow\">AWS Agentic Football Cup</a></p>\n<p>AWS Agentic Football Cupの詳細はこちらです。<br>\n<a href=\"https://agenticfootballcup.com/\" rel=\"nofollow\">Agentic Football Cup — Build AI Agents that Compete</a></p>\n<h3>こんな方におすすめ</h3>\n<ul>\n<li>Amazon Bedrock AgentCoreやマルチエージェントに興味があるエンジニア</li>\n<li>座学だけでなく手を動かしながら学びたい方</li>\n</ul>\n<h2>持ち物</h2>\n<ul>\n<li>PCをご持参ください（必須）</li>\n<li>電源タップが足りない可能性があるため、充電をしたい方はご持参ください（任意）</li>\n</ul>\n<p>ワークショップはご自身のPCを使用していただきます。<br>\nAWSアカウントはワークショップ用の一時的なアカウントを払い出していただけます。  </p>\n<p>また、PCにKiroやClaude Code, Codexなど普段使いをしているコーディングエージェントツールの使用も可能です。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>タイトル</th>\n<th>登壇者（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>14:00-14:05</td>\n<td>オープニング</td>\n<td>東京支部運営</td>\n</tr>\n<tr>\n<td>14:05-14:35</td>\n<td>AWS Agentic Football Cupとは / AgentCore概要</td>\n<td>川路さん / AWS Japan</td>\n</tr>\n<tr>\n<td>14:35-17:15</td>\n<td>エージェントサッカーチーム作成ハンズオン</td>\n<td>みんな</td>\n</tr>\n<tr>\n<td>17:20-17:50</td>\n<td>トーナメント戦！</td>\n<td>みんな</td>\n</tr>\n<tr>\n<td>17:50-18:00</td>\n<td>クロージング</td>\n<td>東京支部運営</td>\n</tr>\n</tbody>\n</table>\n<p>※内容は予告なく変更することがあります。</p>\n<hr>\n<h1>アクセス</h1>\n<ul>\n<li><strong>六本木一丁目駅 or 神谷町</strong>で降りれば地下道直結<br>(麻布十番は坂を登るので非推奨)</li>\n<li>\n<p>六本木一丁目駅の南口から地下街で直通です。</p>\n</li>\n<li>\n<p>麻布台ヒルズではなく<strong>森JPタワーを目指す</strong></p>\n</li>\n</ul>\n<p><strong>本日会場は 35F です</strong></p>\n<ul>\n<li>\n<p>ルート1: 地下街から（S1ホール経由）<br>\n①地下街からエスカレーターを上がる → 1階（= 森JPタワーの地下1階）<br>\n②S1エレベーターホールに向かう（「Hills House」の看板が目印）<br>\n③S1エレベーターで 33階（オフィス連絡階）へ<br>\n④33階でエレベーターを乗り換え → 35階 AWS受付へ</p>\n</li>\n<li>\n<p>ルート2: 地上から（S2ホール経由）<br>\n①森JPタワーの1階から入る or 地下街からエスカレーターを2階分上がる <br>\n②S2エレベーターホールに向かう（「Hills House」の看板が目印）<br>\n③S2エレベーターで 34階（オフィス連絡階）へ<br>\n④34階でエレベーターを乗り換え → 35階 AWS受付へ<br></p>\n</li>\n<li>\n<p>エレベーターホール<br>\n<img src=\"https://gyazo.com/5b516e49a25b68b2da04a4cbb667dbb6.jpg\" width=\"500\"></p>\n</li>\n<li>\n<p>オフィス入口<br>\n<img src=\"https://gyazo.com/d6ffe068abe510fabd9d586295d6a849.jpg\" width=\"500\"></p>\n</li>\n</ul>\n<h1>運営メンバー紹介</h1>\n<h3>みのるん <a href=\"https://twitter.com/minorun365\" rel=\"nofollow\">@minorun365</a>（KDDIアジャイル開発センター株式会社）</h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\" width=\"200\"></p>\n<blockquote>\n<p>KDDIアジャイル開発センター テックエバンジェリスト。クラウドや生成AIで内製開発を行いながら、技術の楽しさを伝える活動をしています。AWS Community Hero, AWS Samurai 2023, 2024 Japan AWS Top Engineer &amp; All Certs, Qiita 2024 Top Contributor / 著書「Amazon Bedrock 生成AIアプリ開発入門」（SBクリエイティブ刊）</p>\n</blockquote>\n<h3>watany <a href=\"https://twitter.com/_watany\" rel=\"nofollow\">@_watany</a>（NTTテクノクロス株式会社）</h3>\n<p><img src=\"https://i.gyazo.com/bfe7931d64dbed0c0d09c60fcd46ef8e.jpg\" width=\"200\"></p>\n<blockquote>\n<p>2015年からAWSを用いた開発に携わり、アーキテクト・運用設計支援として活動する一方で、社内にてテクニカルサポートや研修講師を務めています。また、AWS Community BuilderとしてAWS CDKのContributeや技術ブログの執筆を行っています。2024 AWS Ambassadorを受賞。</p>\n</blockquote>\n<h3>y-ohgi <a href=\"https://twitter.com/_y_ohgi\" rel=\"nofollow\">@_y_ohgi</a>（株式会社Topotal）</h3>\n<p><img src=\"https://i.gyazo.com/1625e49e58810ac2fed169ae399516a5.jpg\" width=\"200\"></p>\n<blockquote>\n<p>株式会社TopotalでSREをやっております。</p>\n</blockquote>\n<h3>ムリギッテ <a href=\"https://twitter.com/momitanJP\" rel=\"nofollow\">@momitanJP</a></h3>\n<p><img src=\"https://i.gyazo.com/7d1bf04f5dfd29ce36dddc338d8afda7.jpg\" width=\"200\"></p>\n<blockquote>\n<p>パブリックセクターから金融機関、製造業まで様々な業界のお客様に向けたシステム提案・導入をしています。最近はCDK、コンテナ、データ基盤がメイン。趣味はBlackbeltを聞きながら筋トレです。</p>\n</blockquote>\n<h3>ふくち <a href=\"https://x.com/har1101mony\" rel=\"nofollow\">@har1101mony</a></h3>\n<p><img src=\"https://gyazo.com/c42dd465aa74c4407ae8ab89afb2e428.jpg\" width=\"200\"></p>\n<blockquote>\n<p>LLMを触って遊んだり、LLMを組み込んだシステムの開発をしています。AWS Community Builder(AI Engineering) / 2025 Japan AWS Jr.Champion</p>\n</blockquote>\n<h3>くらっち<a href=\"https://x.com/kuracchi_enj\" rel=\"nofollow\">@kuracchi_enj</a></h3>\n<p><img src=\"https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-image-store%2F0%2F2711491%2Fb479cddc71fc153f6c011695a19ac02e3565c6da%2Flarge.png%3F1696581508?ixlib=rb-4.1.1&amp;auto=compress%2Cformat&amp;lossless=0&amp;w=128&amp;s=00f43f0d4f18dcc8223bafd298a013dd\" width=\"200\"></p>\n<blockquote>\n<p>普段はRuby on Railsを用いたWebアプリケーション開発をメイン業務としています。好きなAWSサービスは、Bedrock AgentCoreです。私が何者なのかわからなくなってきている今日この頃...</p>\n</blockquote>\n<h1>参加のルール/マナー</h1>\n<p>勉強会に参加される方は、JAWS-UGの定める以下のルール/マナーに則って行動することをお願いしております。</p>\n<h2>ルール</h2>\n<ul>\n<li>関係者の人種、性別、性的指向、身体的特徴、見た目、政治、宗教（または無宗教）などに係る表現は、いかなる場合も適切ではありません。  </li>\n<li>JAWS-UG は No sell, No Job です。イベントの趣旨と関係のない宣伝行為・採用活動・ネットワーキングのみを目的としたご参加はご遠慮ください。  </li>\n</ul>\n<p>ルールに違反する方は参加をお断りする場合がございます。</p>\n<h2>マナー</h2>\n<ul>\n<li>あなたのクリエイティブで前向きな発言がイベントをより楽しくします。発表者や質問者に対して疑問や意見がある場合は批判や罵り・嘲りではなく提案と課題解決の態度でポジティブな発言を心がけましょう。  </li>\n<li>全てのイベントは有志のボランティアにより非営利目的にて運営され、いつでもあなたの手助けを必要としています。お気付きの点があればぜひご協力をお願いいたします。  </li>\n<li>私たちはコミュニティへの貢献を通じて社会からの信頼を得ることがより良いビジネスに繋がり、より自分らしい働き方を見つける手段になると信じています。  </li>\n<li>AWSのユーザーグループは日本中、世界中に存在し、あなたの参加を待っています。是非コミュニティを通じて世界中の仲間と繋がりましょう。  </li>\n</ul>\n<p><a href=\"https://jaws-ug.jp/for-participant/\" rel=\"nofollow\">https://jaws-ug.jp/for-participant/</a></p>",
+      "description": "<h1>イベント概要</h1>\n<p>JAWS-UG東京支部とAWS Japan（AWSJ）が共同開催する、Amazon Bedrock AgentCore体験ハンズオンイベントです。</p>\n<p>参加者は5体のAIエージェント（ゴールキーパーやフォワードなど役割を持つ）からなるチームを構築し、マルチエージェントが協調して動くサッカーの試合「AWS Agentic Football Cup」で対戦します。<br>\nハンズオンでオリジナルのフットボールチームを作り、後半は他のチームと1試合は約2分のリアルタイムでトーナメントでの対戦を予定しています！</p>\n<p>使用する技術スタックはAmazon Bedrock AgentCore、Strands Agents SDKを想定しています。開発に使用するコーディングエージェントはKiroを前提としてワークショップコンテンツを用意しています。<br>\n<em>※ 他のコーディングエージェント（Claude Code、Cursor等）をご利用いただくことも可能ですが、手順の読み替えや環境設定は参加者ご自身でのご対応が必要です。</em></p>\n<p>事前に公式ワークショップに目を通しておくと、当日の理解がスムーズです。<br>\n<a href=\"https://catalog.workshops.aws/agentic-football/ja-JP\" rel=\"nofollow\">AWS Agentic Football Cup</a></p>\n<p>AWS Agentic Football Cupの詳細はこちらです。<br>\n<a href=\"https://agenticfootballcup.com/\" rel=\"nofollow\">Agentic Football Cup — Build AI Agents that Compete</a></p>\n<h3>こんな方におすすめ</h3>\n<ul>\n<li>Amazon Bedrock AgentCoreやマルチエージェントに興味があるエンジニア</li>\n<li>座学だけでなく手を動かしながら学びたい方</li>\n</ul>\n<h2>持ち物</h2>\n<ul>\n<li>PCをご持参ください（必須）</li>\n<li>電源タップが足りない可能性があるため、充電をしたい方はご持参ください（任意）</li>\n</ul>\n<p>ワークショップはご自身のPCを使用していただきます。<br>\nAWSアカウントはワークショップ用の一時的なアカウントを払い出していただけます。  </p>\n<p>また、PCにKiroやClaude Code, Codexなど普段使いをしているコーディングエージェントツールの使用も可能です。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>タイトル</th>\n<th>登壇者（敬称略）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>14:00-14:05</td>\n<td>オープニング</td>\n<td>y-ohgi</td>\n</tr>\n<tr>\n<td>14:05-14:35</td>\n<td>AWS Agentic Football Cupとは / AgentCore概要</td>\n<td>川路さん / AWS Japan</td>\n</tr>\n<tr>\n<td>14:35-17:15</td>\n<td>エージェントサッカーチーム作成ハンズオン</td>\n<td>みんな</td>\n</tr>\n<tr>\n<td>17:20-17:50</td>\n<td>トーナメント戦！</td>\n<td>みんな・実況解説ふくち&amp;くらっち</td>\n</tr>\n<tr>\n<td>17:50-18:00</td>\n<td>クロージング</td>\n<td>y-ohgi</td>\n</tr>\n</tbody>\n</table>\n<p>※内容は予告なく変更することがあります。</p>\n<hr>\n<h1>アクセス</h1>\n<ul>\n<li><strong>六本木一丁目駅 or 神谷町</strong>で降りれば地下道直結<br>(麻布十番は坂を登るので非推奨)</li>\n<li>\n<p>六本木一丁目駅の南口から地下街で直通です。</p>\n</li>\n<li>\n<p>麻布台ヒルズではなく<strong>森JPタワーを目指す</strong></p>\n</li>\n<li>\n<p>ルート1: 地下街から（S1ホール経由）<br>\n①地下街からエスカレーターを上がる → 1階（= 森JPタワーの地下1階）<br>\n②S1エレベーターホールに向かう（「Hills House」の看板が目印）<br>\n③S1エレベーターで 33階（オフィス連絡階）へ<br>\n④3階でエレベーターを乗り換え → 36階 AWS受付へ</p>\n</li>\n<li>\n<p>ルート2: 地上から（S2ホール経由）<br>\n①森JPタワーの1階から入る or 地下街からエスカレーターを2階分上がる <br>\n②S2エレベーターホールに向かう（「Hills House」の看板が目印）<br>\n③S2エレベーターで 34階（オフィス連絡階）へ<br>\n④34階でエレベーターを乗り換え → 36階 AWS受付へ<br></p>\n</li>\n<li>\n<p>エレベーターホール<br>\n<img src=\"https://gyazo.com/5b516e49a25b68b2da04a4cbb667dbb6.jpg\" width=\"500\"></p>\n</li>\n<li>\n<p>オフィス入口<br>\n<img src=\"https://gyazo.com/d6ffe068abe510fabd9d586295d6a849.jpg\" width=\"500\"></p>\n</li>\n</ul>\n<h1>運営メンバー紹介</h1>\n<h3>みのるん <a href=\"https://twitter.com/minorun365\" rel=\"nofollow\">@minorun365</a>（KDDIアジャイル開発センター株式会社）</h3>\n<p><img src=\"https://i.gyazo.com/559fcb52d48f4249ad178f94eb7dd82f.png\" width=\"200\"></p>\n<blockquote>\n<p>KDDIアジャイル開発センター テックエバンジェリスト。クラウドや生成AIで内製開発を行いながら、技術の楽しさを伝える活動をしています。AWS Community Hero, AWS Samurai 2023, 2024 Japan AWS Top Engineer &amp; All Certs, Qiita 2024 Top Contributor / 著書「Amazon Bedrock 生成AIアプリ開発入門」（SBクリエイティブ刊）</p>\n</blockquote>\n<h3>watany <a href=\"https://twitter.com/_watany\" rel=\"nofollow\">@_watany</a>（NTTテクノクロス株式会社）</h3>\n<p><img src=\"https://i.gyazo.com/bfe7931d64dbed0c0d09c60fcd46ef8e.jpg\" width=\"200\"></p>\n<blockquote>\n<p>2015年からAWSを用いた開発に携わり、アーキテクト・運用設計支援として活動する一方で、社内にてテクニカルサポートや研修講師を務めています。また、AWS Community BuilderとしてAWS CDKのContributeや技術ブログの執筆を行っています。2024 AWS Ambassadorを受賞。</p>\n</blockquote>\n<h3>y-ohgi <a href=\"https://twitter.com/_y_ohgi\" rel=\"nofollow\">@_y_ohgi</a>（株式会社Topotal）</h3>\n<p><img src=\"https://i.gyazo.com/1625e49e58810ac2fed169ae399516a5.jpg\" width=\"200\"></p>\n<blockquote>\n<p>株式会社TopotalでSREをやっております。</p>\n</blockquote>\n<h3>ムリギッテ <a href=\"https://twitter.com/momitanJP\" rel=\"nofollow\">@momitanJP</a></h3>\n<p><img src=\"https://i.gyazo.com/7d1bf04f5dfd29ce36dddc338d8afda7.jpg\" width=\"200\"></p>\n<blockquote>\n<p>パブリックセクターから金融機関、製造業まで様々な業界のお客様に向けたシステム提案・導入をしています。最近はCDK、コンテナ、データ基盤がメイン。趣味はBlackbeltを聞きながら筋トレです。</p>\n</blockquote>\n<h3>ふくち <a href=\"https://x.com/har1101mony\" rel=\"nofollow\">@har1101mony</a></h3>\n<p><img src=\"https://gyazo.com/c42dd465aa74c4407ae8ab89afb2e428.jpg\" width=\"200\"></p>\n<blockquote>\n<p>LLMを触って遊んだり、LLMを組み込んだシステムの開発をしています。AWS Community Builder(AI Engineering) / 2025 Japan AWS Jr.Champion</p>\n</blockquote>\n<h3>くらっち<a href=\"https://x.com/kuracchi_enj\" rel=\"nofollow\">@kuracchi_enj</a></h3>\n<p><img src=\"https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-image-store%2F0%2F2711491%2Fb479cddc71fc153f6c011695a19ac02e3565c6da%2Flarge.png%3F1696581508?ixlib=rb-4.1.1&amp;auto=compress%2Cformat&amp;lossless=0&amp;w=128&amp;s=00f43f0d4f18dcc8223bafd298a013dd\" width=\"200\"></p>\n<blockquote>\n<p>普段はRuby on Railsを用いたWebアプリケーション開発をメイン業務としています。好きなAWSサービスは、Bedrock AgentCoreです。私が何者なのかわからなくなってきている今日この頃...</p>\n</blockquote>\n<h1>参加のルール/マナー</h1>\n<p>勉強会に参加される方は、JAWS-UGの定める以下のルール/マナーに則って行動することをお願いしております。</p>\n<h2>ルール</h2>\n<ul>\n<li>関係者の人種、性別、性的指向、身体的特徴、見た目、政治、宗教（または無宗教）などに係る表現は、いかなる場合も適切ではありません。  </li>\n<li>JAWS-UG は No sell, No Job です。イベントの趣旨と関係のない宣伝行為・採用活動・ネットワーキングのみを目的としたご参加はご遠慮ください。  </li>\n</ul>\n<p>ルールに違反する方は参加をお断りする場合がございます。</p>\n<h2>マナー</h2>\n<ul>\n<li>あなたのクリエイティブで前向きな発言がイベントをより楽しくします。発表者や質問者に対して疑問や意見がある場合は批判や罵り・嘲りではなく提案と課題解決の態度でポジティブな発言を心がけましょう。  </li>\n<li>全てのイベントは有志のボランティアにより非営利目的にて運営され、いつでもあなたの手助けを必要としています。お気付きの点があればぜひご協力をお願いいたします。  </li>\n<li>私たちはコミュニティへの貢献を通じて社会からの信頼を得ることがより良いビジネスに繋がり、より自分らしい働き方を見つける手段になると信じています。  </li>\n<li>AWSのユーザーグループは日本中、世界中に存在し、あなたの参加を待っています。是非コミュニティを通じて世界中の仲間と繋がりましょう。  </li>\n</ul>\n<p><a href=\"https://jaws-ug.jp/for-participant/\" rel=\"nofollow\">https://jaws-ug.jp/for-participant/</a></p>",
       "url": "https://jawsug.connpass.com/event/404331/",
       "image_url": "https://media.connpass.com/thumbs/74/0a/740af5cf2a1ccf43f1fe24f7e8d3ed3b.png",
       "hash_tag": "jawsug_tokyo",
@@ -197,7 +197,7 @@
       "published_at": "2026-08-21T19:04:33+09:00",
       "limit": 70,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 8206,
         "subdomain": "jawsug",
@@ -211,9 +211,9 @@
       "owner_id": 424690,
       "owner_nickname": "watany_twi",
       "owner_display_name": "watany",
-      "accepted": 61,
+      "accepted": 55,
       "waiting": 0,
-      "updated_at": "2026-09-13T09:45:21+09:00"
+      "updated_at": "2026-09-13T15:52:24+09:00"
     },
     {
       "id": 404032,
@@ -228,7 +228,7 @@
       "published_at": "2026-08-18T18:39:21+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16152,
         "subdomain": "atsumaru-mokumoku",
@@ -259,7 +259,7 @@
       "published_at": "2026-08-08T22:12:56+09:00",
       "limit": 4,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16803,
         "subdomain": "creatorscafe",
@@ -290,7 +290,7 @@
       "published_at": "2026-09-06T23:56:59+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16403,
         "subdomain": "gleam-jp",
@@ -321,7 +321,7 @@
       "published_at": "2026-09-05T12:55:33+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -352,7 +352,7 @@
       "published_at": "2026-05-10T07:30:09+09:00",
       "limit": 101,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8261,
         "subdomain": "gishohaku",
@@ -383,7 +383,7 @@
       "published_at": "2026-08-26T11:24:05+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15927,
         "subdomain": "it-promort",
@@ -414,7 +414,7 @@
       "published_at": "2026-05-16T17:11:38+09:00",
       "limit": 1130,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8261,
         "subdomain": "gishohaku",
@@ -428,7 +428,7 @@
       "owner_id": 118890,
       "owner_nickname": "nano2_aloerina",
       "owner_display_name": "BannoTakuya",
-      "accepted": 329,
+      "accepted": 410,
       "waiting": 0,
       "updated_at": "2026-07-23T22:00:50+09:00"
     },
@@ -445,7 +445,7 @@
       "published_at": "2026-09-12T13:37:57+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 966,
         "subdomain": "devmorning",
@@ -476,7 +476,7 @@
       "published_at": "2026-08-30T10:00:00+09:00",
       "limit": 9,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 5495,
         "subdomain": "ml-for-experts",
@@ -507,7 +507,7 @@
       "published_at": "2026-08-27T13:10:59+09:00",
       "limit": 52,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 10837,
         "subdomain": "coderdojo-ome",
@@ -538,7 +538,7 @@
       "published_at": "2026-08-13T11:38:31+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14718,
         "subdomain": "coderdojo-komae",
@@ -569,7 +569,7 @@
       "published_at": "2026-09-09T17:29:25+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 18108,
         "subdomain": "nishikasai",
@@ -600,7 +600,7 @@
       "published_at": "2026-08-30T08:12:51+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17847,
         "subdomain": "yuru-commit-lab",
@@ -648,6 +648,37 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-09-10T16:40:11+09:00"
+    },
+    {
+      "id": 405082,
+      "title": "第115回CoderDojoさいたま",
+      "catch": "小学生・中学生向けプログラミングクラブです。さいたま市の周辺からも参加もお待ちしてます。",
+      "description": "<h1>第115回CoderDojoさいたまのイベント詳細情報</h1>\n<p>CoderDojo さいたまは主に埼玉県さいたま市地域及び隣接する地域の小学生・中学生を対象としたプログラミングクラブです。<br>\nこちらをお読みになり、CoderDojoの理念にご理解ください。<br>\n小学生・中学生向けプログラミングクラブ「CoderDojoさいたま」について<br>\n<a href=\"http://coderdojo-saitama.com/about/&lt;br>\" rel=\"nofollow\">http://coderdojo-saitama.com/about/<br></a></p>\n<h2>開催日時</h2>\n<p>2026年9月13日（日）14:00～16:00<br>\n（13:45　受付開始）<br></p>\n<h2>定員</h2>\n<p>16名(プログラミング初心者、初参加者、リピーター含む)</p>\n<h2>参加方法</h2>\n<p>こちらのイベント管理ツール<a href=\"https://coderdojo-saitama.connpass.com/\" rel=\"nofollow\">connpass</a>よりお申込みください。<br></p>\n<ul>\n<li>申し込み時、事前アンケートにお答えください。このアンケートで取得した個人情報はDojo開催時のメンター調整など運営にのみ使用します。Dojo終了後は破棄します。</li>\n<li>事前アンケートの「メールアドレス」は保護者の方の情報をご記入ください。</li>\n<li>「住所」は市町村までで結構です。</li>\n</ul>\n<h2>参加資格</h2>\n<p>対象：パソコンへの文字入力とマウス操作が可能な小学生と中学生<br>\niPadなどのタブレットを使用する場合はタップやスワイプ、フリック操作ができること。<br></p>\n<ul>\n<li>小学生以下のお子さんは、保護者の送迎が必要です（中学生以上はお一人でもご参加できます）</li>\n<li>iPadではScratch3.0、ScratchJr などがご利用できます。</li>\n<li>Scratchでプログラミング希望の場合はパソコンをお持ちください。CoderDojoさいたまではパソコンの貸し出しは行っておりません。</li>\n</ul>\n<h2>参加料について</h2>\n<p>無料</p>\n<h2>会場について</h2>\n<p>JR大宮駅東口徒歩１分<br>\n貸会議室6F<br>\n<a href=\"https://office6f.com/\" rel=\"nofollow\">https://office6f.com/</a></p>\n<h2>持ち物について</h2>\n<ul>\n<li>無線LAN接続可能なノートパソコン、電源ケーブル、マウスが必要です。</li>\n<li>タブレットでプログラミングしたいという場合（ScratchJrなど）やRaspbery-Piで動かしたい、LEGO Mindstormでロボットプログラミングをしたい場合など必要な機材を各自お持ちください。</li>\n<li>CoderDojo さいたまではmicro:bit、IchigoJamの貸し出し可能です。ご希望の方は当日お申し出ください。</li>\n<li>CoderDojo さいたまではパソコンの貸出は行っておりません。</li>\n</ul>\n<h2>当日のスケジュール</h2>\n<p>13:00～13:45<br>\nメンター集合ののち自己紹介、連絡事項、情報共有<br>\n13:45<br>\nニンジャ（参加者）受付開始<br>\n14:00～16:00<br>\n・Dojoの説明<br>\n・自己紹介<br>\n・ワークショップ<br>\n16:00<br>\n現状回復、メンター振り返り<br></p>\n<h2>寄付のお願いについて</h2>\n<p><strong>当面、寄付はいただきません。</strong><br>\nこれまで保護者の皆様からの寄付を募ってまいりましたが、これまでの寄付金から当面の運営費を賄えることから頂かないこととしました。再びお願いする必要があるときに、あらためてお知らせします。</p>\n<h2>メンターってどんな人？</h2>\n<p>メンターは、疑問点を一緒に解決したり、プログラミングによるものづくりの進め方などをアドバイスしてくれるボランティアの人たちです。<br>\nプログラマやデザイナー、エンジニアなど、ソフトやハードを作ることを専門にしている人達、子どものコンピュータ教育に携わる人達などで構成されています。<br>\nメンターをやってみたいという方（参加されるお子さんの保護者でもOKです！）は、こちらからお気軽にお問い合わせください！<br></p>\n<h2>免責事項</h2>\n<p>CoderDojoさいたまの活動参加中、行き帰りなどで発生したトラブルや損失、損害、傷病、事故に対して、CoderDojoさいたまは一切責任を負いません。これらに対して自己責任においてご参加くださるようお願いいたします。</p>",
+      "url": "https://coderdojo-saitama.connpass.com/event/405082/",
+      "image_url": "https://media.connpass.com/thumbs/0c/97/0c978c0b6b6d43b12ffc6f4b09154499.png",
+      "hash_tag": "CoderDojo",
+      "started_at": "2026-09-13T14:00:00+09:00",
+      "ended_at": "2026-09-13T16:00:00+09:00",
+      "published_at": "2026-08-27T12:32:30+09:00",
+      "limit": 16,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 13974,
+        "subdomain": "coderdojo-saitama",
+        "title": "CoderDojo さいたま",
+        "url": "https://coderdojo-saitama.connpass.com/"
+      },
+      "address": "埼玉県さいたま市大宮区宮町1-5 銀座ビル6階",
+      "place": "貸会議室６F",
+      "lat": "35.907929500000",
+      "lon": "139.624792000000",
+      "owner_id": 10900,
+      "owner_nickname": "okajima_kazuhiro",
+      "owner_display_name": "okajima_kazuhiro",
+      "accepted": 1,
+      "waiting": 0,
+      "updated_at": "2026-08-27T12:32:30+09:00"
     }
   ]
 }
