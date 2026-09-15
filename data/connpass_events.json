@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-15T11:44:50.917250+09:00",
+  "fetched_at": "2026-09-15T17:14:48.917403+09:00",
   "date": "20260915",
   "count": 13,
   "events": [
@@ -14,7 +14,7 @@
       "started_at": "2026-09-15T19:30:00+09:00",
       "ended_at": "2026-09-15T21:30:00+09:00",
       "published_at": "2026-08-31T01:32:14+09:00",
-      "limit": 25,
+      "limit": 30,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -27,12 +27,12 @@
       "place": "MOSH株式会社",
       "lat": "35.654901200000",
       "lon": "139.702519400000",
-      "owner_id": 779673,
-      "owner_nickname": "mamamasu_3",
-      "owner_display_name": "ます",
-      "accepted": 24,
+      "owner_id": 826026,
+      "owner_nickname": "stream_line",
+      "owner_display_name": "streamline",
+      "accepted": 27,
       "waiting": 0,
-      "updated_at": "2026-09-14T17:33:26+09:00"
+      "updated_at": "2026-09-15T16:53:14+09:00"
     },
     {
       "id": 398631,
@@ -61,9 +61,9 @@
       "owner_id": 555936,
       "owner_nickname": "ANDPAD_TechLive",
       "owner_display_name": "ANDPAD_TechLive",
-      "accepted": 53,
+      "accepted": 57,
       "waiting": 0,
-      "updated_at": "2026-09-15T10:17:15+09:00"
+      "updated_at": "2026-09-15T17:06:31+09:00"
     },
     {
       "id": 403454,
@@ -154,7 +154,7 @@
       "owner_id": 434421,
       "owner_nickname": "usuikotomi",
       "owner_display_name": "データ横丁",
-      "accepted": 401,
+      "accepted": 410,
       "waiting": 0,
       "updated_at": "2026-09-13T13:23:44+09:00"
     },
@@ -185,7 +185,7 @@
       "owner_id": 299511,
       "owner_nickname": "shin-otsukA",
       "owner_display_name": "しんいちろー",
-      "accepted": 55,
+      "accepted": 63,
       "waiting": 0,
       "updated_at": "2026-09-10T10:19:32+09:00"
     },
@@ -216,7 +216,7 @@
       "owner_id": 940170,
       "owner_nickname": "nao_iwasaki",
       "owner_display_name": "na_findy",
-      "accepted": 19,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-09-01T01:01:37+09:00"
     },
@@ -247,7 +247,7 @@
       "owner_id": 20232,
       "owner_nickname": "dayjournal_nori",
       "owner_display_name": "Yasunori Kirimoto",
-      "accepted": 61,
+      "accepted": 55,
       "waiting": 0,
       "updated_at": "2026-09-14T14:36:27+09:00"
     },
@@ -255,7 +255,7 @@
       "id": 404532,
       "title": "【増枠！】AI自走環境整備・運用スペシャル #6 〜ハーネス・ループ・グラフエンジニアリング〜",
       "catch": "開発組織はどこまでAI自走度を品質を保って促進できるのか？実践知見を語り尽くす！",
-      "description": "<h2><b>AI自走環境整備で組織のAI駆動開発を推進！<br>AGENTS&zwnj;.md/Skills/SubAgentsなどのAI自走環境整備・運用の実践テクニックを語り尽くす！</b></h2>\n<p>本イベントは、<br>\nこれまでIssue自動生成 → タスク分解 → 複数エージェントによるPR作成から、レビュー周りまで多岐にわたるAI自走度を高める実践知見をご登壇いただきました！</p>\n<p>今回は、新たに界隈を賑わしているループ・グラフエンジニアリングを、ハーネス整備と合わせてどのように推進しているのか、以下のようなテーマで登壇いただきます！<br></p>\n<ul>\n<li>AIが安全に走り続けるためのハーネス設計 ―― AGENTS&zwnj;.md/Skills/評価基準・テスト・CIをどう整備し、「任せて良い状態」を環境側で担保するか</li>\n<li>Issue自律起票とセルフ検証ループ ―― AIによるIssue起票の仕組みと、起票品質を担保する評価→修正の自己検証ループの回し方</li>\n<li>依存グラフに基づくタスクオーケストレーション設計 ―― 1つのIssueをサブタスクへ自動分解し、依存関係を踏まえて複数エージェントに割り振る設計</li>\n<li>品質を落とさず自走度を上げる\"人間の介入境界\" ―― Issue起票からPR作成・レビューまで自走させたとき、どの品質ゲートに人間を残すか／レビュー速度をどう追いつかせるか</li>\n</ul>\n<p>ぜひご参加ください！</p>\n<p></p>\n<h3>AI 駆動開発勉強会とは？</h3>\n<hr>\n<blockquote>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！<br>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！\n(<a href=\"https://aid.connpass.com/\" rel=\"nofollow\">https://aid.connpass.com/</a> より)</p>\n</blockquote>\n<h2><font color=\"red\">LT枠応募の方は抽選落ちの場合も現地参加可能です。<br>入館申請は不要です。当日は直接会場へお越しください。</font></h2>\n<hr>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">AIオーケストレーションを活用した開発フローの効率化</td>\n<td style=\"text-align: left;\">bqnqさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">「正本」と「契約」によるドキュメント管理</td>\n<td style=\"text-align: left;\">中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:28</td>\n<td style=\"text-align: left;\">ソフトウェアDNAとクラウドエージェントのススメ</td>\n<td style=\"text-align: left;\">akaneさん（クラウドエース株式会社 CTO室）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:35</td>\n<td style=\"text-align: left;\">オーケストレータ 俺 (仮)</td>\n<td style=\"text-align: left;\">nikkieさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:37 - 19:47</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:49 - 19:59</td>\n<td style=\"text-align: left;\">休憩（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:01 - 20:06</td>\n<td style=\"text-align: left;\">エンタープライズ開発におけるAI駆動開発をデザインする</td>\n<td style=\"text-align: left;\">生地 真規さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:08 - 20:13</td>\n<td style=\"text-align: left;\">ローカル/CI 2段のレビューハーネスで品質を落とさず自走度を上げる実運用</td>\n<td style=\"text-align: left;\">Shinoda Yukihiroさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15 - 20:20</td>\n<td style=\"text-align: left;\">AI の Token 消費を減らせるかは タスクの解像度 で決まる ― 重要なのは【手順を書き出し、AI とともにタスクの解像度を上げ続ける】こと ―</td>\n<td style=\"text-align: left;\">スナガクさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:22 - 20:27</td>\n<td style=\"text-align: left;\">人間の脳の限界を引き出しAI時代に適用するイテレーション開発</td>\n<td style=\"text-align: left;\">町田凌さん（燈株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:29 - 20:51</td>\n<td style=\"text-align: left;\">Q&amp;A（22分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:53 - 21:00</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LTは1人5分（本編のみ）です<br>\n※各セッション間には、画面投影・登壇者切り替えのために2分ずつ転換時間を確保しています<br>\n※登壇順は変更となる場合があります</p>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング・オフライン参加者限定）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります</p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：<a href=\"https://www.creationline.com/\" rel=\"nofollow\">クリーションライン株式会社</a><br>\n懇親会協力：<a href=\"https://www.chainguard.dev/\" rel=\"nofollow\">Chainguard, Inc.</a><br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h3>スポンサー</h3>\n<p>本イベントでは、ご協賛いただける企業・団体様ならびに、運営をサポートしていただける個人の方を募集しております。<br>\nご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。</p>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：<a href=\"https://www.creationline.com/\" rel=\"nofollow\">クリーションライン株式会社</a><br>\n懇親会協力：<a href=\"https://www.chainguard.dev/\" rel=\"nofollow\">Chainguard, Inc.</a><br>\n（※懇親会スポンサーの方には、LT枠のご用意とスポンサー紹介のお時間をご用意させていただきます。<br>\n予算は現地参加人数×500円ほどを想定しております。ご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。）</p>\n<p>皆様のご参加を心よりお待ちしております！</p>",
+      "description": "<h2><b>AI自走環境整備で組織のAI駆動開発を推進！<br>AGENTS&zwnj;.md/Skills/SubAgentsなどのAI自走環境整備・運用の実践テクニックを語り尽くす！</b></h2>\n<p>本イベントは、<br>\nこれまでIssue自動生成 → タスク分解 → 複数エージェントによるPR作成から、レビュー周りまで多岐にわたるAI自走度を高める実践知見をご登壇いただきました！</p>\n<p>今回は、新たに界隈を賑わしているループ・グラフエンジニアリングを、ハーネス整備と合わせてどのように推進しているのか、以下のようなテーマで登壇いただきます！<br></p>\n<ul>\n<li>AIが安全に走り続けるためのハーネス設計 ―― AGENTS&zwnj;.md/Skills/評価基準・テスト・CIをどう整備し、「任せて良い状態」を環境側で担保するか</li>\n<li>Issue自律起票とセルフ検証ループ ―― AIによるIssue起票の仕組みと、起票品質を担保する評価→修正の自己検証ループの回し方</li>\n<li>依存グラフに基づくタスクオーケストレーション設計 ―― 1つのIssueをサブタスクへ自動分解し、依存関係を踏まえて複数エージェントに割り振る設計</li>\n<li>品質を落とさず自走度を上げる\"人間の介入境界\" ―― Issue起票からPR作成・レビューまで自走させたとき、どの品質ゲートに人間を残すか／レビュー速度をどう追いつかせるか</li>\n</ul>\n<p>ぜひご参加ください！</p>\n<p></p>\n<h3>AI 駆動開発勉強会とは？</h3>\n<hr>\n<blockquote>\n<p>AI駆動開発(AI-Driven Development) 勉強会では、AI技術を使った開発に興味を持つ方々向けに、GitHub CopilotやCursor, Claude Code, WindsurfなどのAIツールを使った開発のノウハウや、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発方法・開発スタイルやテクニック、今後の新しい開発パラダイムについて共有・議論していきます！<br>AI駆動開発を実践と、更なる開発生産性の向上に一緒に取り組みましょう！ 皆さまのご参加をぜひお待ちしております！\n(<a href=\"https://aid.connpass.com/\" rel=\"nofollow\">https://aid.connpass.com/</a> より)</p>\n</blockquote>\n<h2><font color=\"red\">LT枠応募の方は抽選落ちの場合も現地参加可能です。<br>入館申請は不要です。当日は直接会場へお越しください。</font></h2>\n<hr>\n<h2>プログラム（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">セッション内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00 - 19:07</td>\n<td style=\"text-align: left;\">オープニング / 会場案内 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:09 - 19:14</td>\n<td style=\"text-align: left;\">AIオーケストレーションを活用した開発フローの効率化</td>\n<td style=\"text-align: left;\">bqnqさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:16 - 19:21</td>\n<td style=\"text-align: left;\">「正本」と「契約」によるドキュメント管理</td>\n<td style=\"text-align: left;\">中畠さん（ファインディ株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:23 - 19:28</td>\n<td style=\"text-align: left;\">ソフトウェアDNAとクラウドエージェントのススメ</td>\n<td style=\"text-align: left;\">akaneさん（クラウドエース株式会社 CTO室 @ak_ten6）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30 - 19:35</td>\n<td style=\"text-align: left;\">オーケストレータ 俺 (仮)</td>\n<td style=\"text-align: left;\">nikkieさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:37 - 19:47</td>\n<td style=\"text-align: left;\">（お知らせ）勉強会紹介＆スポンサー紹介（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:49 - 19:59</td>\n<td style=\"text-align: left;\">休憩（10分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:01 - 20:06</td>\n<td style=\"text-align: left;\">エンタープライズ開発におけるAI駆動開発をデザインする</td>\n<td style=\"text-align: left;\">生地 真規さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:08 - 20:13</td>\n<td style=\"text-align: left;\">ローカル/CI 2段のレビューハーネスで品質を落とさず自走度を上げる実運用</td>\n<td style=\"text-align: left;\">Shinoda Yukihiroさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15 - 20:20</td>\n<td style=\"text-align: left;\">AI の Token 消費を減らせるかは タスクの解像度 で決まる ― 重要なのは【手順を書き出し、AI とともにタスクの解像度を上げ続ける】こと ―</td>\n<td style=\"text-align: left;\">スナガクさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:22 - 20:27</td>\n<td style=\"text-align: left;\">人間の脳の限界を引き出しAI時代に適用するイテレーション開発</td>\n<td style=\"text-align: left;\">町田凌さん（燈株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:29 - 20:51</td>\n<td style=\"text-align: left;\">Q&amp;A（22分）</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:53 - 21:00</td>\n<td style=\"text-align: left;\">クロージング+アンケート回答 (7分)</td>\n<td style=\"text-align: left;\">運営</td>\n</tr>\n</tbody>\n</table>\n<p>※LTは1人5分（本編のみ）です<br>\n※各セッション間には、画面投影・登壇者切り替えのために2分ずつ転換時間を確保しています<br>\n※登壇順は変更となる場合があります</p>\n<blockquote>\n<p>※21:00〜22:00 懇親会（ネットワーキング・オフライン参加者限定）<br>\n<font color=\"red\">※懇親会は勉強会の一環としてご用意しております。懇親会の飲食のみを目的としたご参加はご遠慮ください。</font><br>\n※登壇者・内容は調整中のため変更となる場合があります</p>\n</blockquote>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：<a href=\"https://www.creationline.com/\" rel=\"nofollow\">クリーションライン株式会社</a><br>\n懇親会協力：<a href=\"https://www.chainguard.dev/\" rel=\"nofollow\">Chainguard, Inc.</a><br></p>\n<p>※AI駆動開発(AI-Driven Development) 勉強会は、AI技術を使った開発に興味を持つ方々向けに、様々なAIツールを使った開発のノウハウ、AIによる開発プロセスの最適化、生成AI・LLMを最大限に活用した新たな開発手法やテクニック、そして今後の開発パラダイムについて共有・議論する勉強会です。</p>\n<p>AI駆動開発勉強会は、全ての参加者が安心して学び、交流できるコミュニティの実現を目指しています。<br>\n参加者の方が安心して参加できるように以下のアンチハラスメントポリシーを一読いただき、承諾のもとご参加をお願いいたします。<br>\n<a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h3>スポンサー</h3>\n<p>本イベントでは、ご協賛いただける企業・団体様ならびに、運営をサポートしていただける個人の方を募集しております。<br>\nご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。</p>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n配信協力：<a href=\"https://www.creationline.com/\" rel=\"nofollow\">クリーションライン株式会社</a><br>\n懇親会協力：<a href=\"https://www.chainguard.dev/\" rel=\"nofollow\">Chainguard, Inc.</a><br>\n（※懇親会スポンサーの方には、LT枠のご用意とスポンサー紹介のお時間をご用意させていただきます。<br>\n予算は現地参加人数×500円ほどを想定しております。ご興味のある方は、運営担当（takafumi.sugamoto@findy.co.jp）までお気軽にご連絡ください。）</p>\n<p>皆様のご参加を心よりお待ちしております！</p>",
       "url": "https://aid.connpass.com/event/404532/",
       "image_url": "https://media.connpass.com/thumbs/4f/d2/4fd2d2900d29c900d1075407307e8a78.png",
       "hash_tag": "AI自走環境",
@@ -275,12 +275,12 @@
       "place": "燈株式会社",
       "lat": "35.698783900000",
       "lon": "139.766785300000",
-      "owner_id": 374233,
-      "owner_nickname": "eltociear",
-      "owner_display_name": "Ikko Eltociear Ashimine",
-      "accepted": 787,
+      "owner_id": 792292,
+      "owner_nickname": "taisei23",
+      "owner_display_name": "ta17eee",
+      "accepted": 813,
       "waiting": 2,
-      "updated_at": "2026-09-14T15:15:37+09:00"
+      "updated_at": "2026-09-15T16:09:49+09:00"
     },
     {
       "id": 405165,
@@ -310,7 +310,7 @@
       "owner_nickname": "ipod_nana7",
       "owner_display_name": "Nana Ota",
       "accepted": 50,
-      "waiting": 28,
+      "waiting": 25,
       "updated_at": "2026-09-14T18:34:34+09:00"
     },
     {
@@ -337,9 +337,9 @@
       "place": "Zabbix Japan",
       "lat": "35.662635900000",
       "lon": "139.758220000000",
-      "owner_id": 43975,
-      "owner_nickname": "atanaka7",
-      "owner_display_name": "atanaka7",
+      "owner_id": 17348,
+      "owner_nickname": "_BSmile_",
+      "owner_display_name": "_BSmile_",
       "accepted": 49,
       "waiting": 0,
       "updated_at": "2026-09-11T17:51:29+09:00"
@@ -357,7 +357,7 @@
       "published_at": "2026-08-28T09:45:13+09:00",
       "limit": 1000,
       "event_type": "advertisement",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2748,
         "subdomain": "gmo",
@@ -388,7 +388,7 @@
       "published_at": "2026-08-31T16:56:36+09:00",
       "limit": 100,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 6636,
         "subdomain": "circleci",
