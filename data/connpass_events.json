@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-16T06:51:50.564021+09:00",
+  "fetched_at": "2026-09-16T08:51:57.769308+09:00",
   "date": "20260916",
   "count": 14,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 69148,
       "owner_nickname": "ktsn",
       "owner_display_name": "Katashin",
-      "accepted": 20,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-09-15T20:26:20+09:00"
     },
@@ -154,7 +154,7 @@
       "owner_id": 492185,
       "owner_nickname": "__asumikan",
       "owner_display_name": "asumikam",
-      "accepted": 85,
+      "accepted": 82,
       "waiting": 0,
       "updated_at": "2026-09-16T01:01:45+09:00"
     },
@@ -273,7 +273,7 @@
       "owner_id": 770224,
       "owner_nickname": "mikami_hiroshi",
       "owner_display_name": "mikami_hiroshi",
-      "accepted": 20,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-09-09T12:19:02+09:00"
     },
@@ -366,7 +366,7 @@
       "owner_id": 108401,
       "owner_nickname": "apstndb",
       "owner_display_name": "apstndb",
-      "accepted": 23,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-09-15T01:01:29+09:00"
     },
@@ -397,7 +397,7 @@
       "owner_id": 572649,
       "owner_nickname": "hayama17",
       "owner_display_name": "hayama17",
-      "accepted": 159,
+      "accepted": 160,
       "waiting": 0,
       "updated_at": "2026-09-15T19:39:41+09:00"
     },
