@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-16T17:08:39.280405+09:00",
+  "fetched_at": "2026-09-16T22:56:50.049261+09:00",
   "date": "20260916",
   "count": 14,
   "events": [
@@ -27,9 +27,9 @@
       "place": "株式会社スリーシェイク",
       "lat": "35.664221300000",
       "lon": "139.763991700000",
-      "owner_id": 911981,
-      "owner_nickname": "mm-shi",
-      "owner_display_name": "Shiho Matsuda",
+      "owner_id": 928269,
+      "owner_nickname": "Relance",
+      "owner_display_name": "Relance",
       "accepted": 0,
       "waiting": 0,
       "updated_at": "2026-09-07T10:05:21+09:00"
@@ -47,7 +47,7 @@
       "published_at": "2026-09-02T14:23:11+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 11169,
         "subdomain": "senju",
@@ -78,7 +78,7 @@
       "published_at": "2026-08-16T13:05:12+09:00",
       "limit": 34,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16576,
         "subdomain": "ui-devs",
@@ -92,7 +92,7 @@
       "owner_id": 69148,
       "owner_nickname": "ktsn",
       "owner_display_name": "Katashin",
-      "accepted": 18,
+      "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-09-15T20:26:20+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-06-29T19:27:05+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 14486,
         "subdomain": "gotalk",
@@ -140,7 +140,7 @@
       "published_at": "2026-07-10T15:14:48+09:00",
       "limit": 103,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16652,
         "subdomain": "healthtech-meetup",
@@ -154,9 +154,9 @@
       "owner_id": 492185,
       "owner_nickname": "__asumikan",
       "owner_display_name": "asumikam",
-      "accepted": 78,
+      "accepted": 71,
       "waiting": 0,
-      "updated_at": "2026-09-16T01:01:45+09:00"
+      "updated_at": "2026-09-16T19:40:35+09:00"
     },
     {
       "id": 405487,
@@ -171,7 +171,7 @@
       "published_at": "2026-08-31T18:07:04+09:00",
       "limit": 24,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": null,
       "address": "東京都新宿区新宿4-2-21 相模ビル No75",
       "place": "ふれあい貸し会議室",
@@ -197,7 +197,7 @@
       "published_at": "2026-08-10T11:26:59+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17166,
         "subdomain": "crug",
@@ -211,7 +211,7 @@
       "owner_id": 14874,
       "owner_nickname": "moongift",
       "owner_display_name": "アツシ@CodeRabbit",
-      "accepted": 13,
+      "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-09-16T15:11:35+09:00"
     },
@@ -228,7 +228,7 @@
       "published_at": "2026-08-17T12:00:53+09:00",
       "limit": 48,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 13535,
         "subdomain": "openedgedevice",
@@ -239,43 +239,12 @@
       "place": "ソニークリエイティブラウンジ",
       "lat": "35.631211900000",
       "lon": "139.743647700000",
-      "owner_id": 770224,
-      "owner_nickname": "mikami_hiroshi",
-      "owner_display_name": "mikami_hiroshi",
+      "owner_id": 849423,
+      "owner_nickname": "openedgedevice",
+      "owner_display_name": "openedgedevice",
       "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-09-09T12:19:02+09:00"
-    },
-    {
-      "id": 406384,
-      "title": "ID レイクタウン Vol.1",
-      "catch": "OpenID Summit Tokyo 2026 Special Edition を振り返ろう",
-      "description": "<h1>ID レイクタウン Vol.1 〜 OpenID Summit Tokyo 2026 Special Edition を振り返ろう</h1>\n<p>先日の「<a href=\"https://www.openid.or.jp/summit/2026/\" rel=\"nofollow\">OpenID Summit Tokyo 2026 Special Edition</a>」では、幅広い領域での発表がありました。ディープで先進的な内容であったため、まだ ID 業界に入門したての方には、少し難しい内容だったのではないでしょうか。</p>\n<p>今回は、OpenID Summit Tokyo 2026 Special Edition の内容を振り返って、内容を理解・腹落ちするための議論の場を作ってみたいと思います。ID 沼に飛び込みたいけど、その一歩を踏み出すことに戸惑っている方、ぜひご参加ください。</p>\n<p>本イベントは、発表を聴講するものではなく、アンカンファレンス型で行われる全員参加型のイベントです。参加される方には、セッション内でご発言いただくことを期待しています。<br>\nまた、申し込み時のアンケート内にて、取り上げたいテーマの記入をお願いしています。Summit で分からなかったところや、深ぼって意見を交わしたい内容などをご記載ください。</p>\n<h1>こんな方に参加いただきたい</h1>\n<ul>\n<li>OpenID Summit Tokyo 2026 Special Edition に参加した、若手の自認初心者の方  </li>\n<li>同イベントの内容の深掘り、理解を深めたい人</li>\n</ul>\n<h1>Speakers &amp; Agenda</h1>\n<table>\n<thead>\n<tr>\n<th>Time</th>\n<th>Agenda</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:15</td>\n<td>OpenID Summit を振り返って: 簡単な wrap-up</td>\n</tr>\n<tr>\n<td>19:15-20:30</td>\n<td>ディスカッション</td>\n</tr>\n</tbody>\n</table>\n<p>※ 発表時間は目安です。適宜質問時間等を交えて調整します。</p>\n<h1>開催概要</h1>\n<ul>\n<li>開催日時：2026年9月16日（水） 19:00 - 20:30（受付開始 18:45 〜）  </li>\n<li>主催：一般社団法人OpenIDファウンデーション・ジャパン トップガン40ワーキンググループ  </li>\n<li>会場：株式会社オプティム OPTiM TOKYO（東京本社） 会議室<ul>\n<li>東京都港区海岸1丁目2番20号 (汐留ビルディング18F)</li>\n</ul>\n</li>\n<li>実施形式：オンサイト（現地参加）   30 人上限  </li>\n<li>参加条件：無料 / 事前登録制</li>\n</ul>\n<h1>最後にご確認ください</h1>\n<ul>\n<li>本イベントの交流会の開催はございません。  </li>\n<li>ドリンクや軽食等はご自身でご用意ください。  </li>\n<li>本イベントは営業目的やご自身のビジネスへの勧誘目的の方のご参加は固くお断りいたします</li>\n</ul>",
-      "url": "https://openid.connpass.com/event/406384/",
-      "image_url": "https://media.connpass.com/thumbs/e3/86/e38647e800694ed447315aa7231a36db.png",
-      "hash_tag": "",
-      "started_at": "2026-09-16T19:00:00+09:00",
-      "ended_at": "2026-09-16T20:30:00+09:00",
-      "published_at": "2026-09-09T19:01:18+09:00",
-      "limit": 30,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 6823,
-        "subdomain": "openid",
-        "title": "OpenID Foundation Japan",
-        "url": "https://openid.connpass.com/"
-      },
-      "address": "東京都港区海岸1丁目2番20号 (汐留ビルディング18F)",
-      "place": "株式会社オプティム OPTiM TOKYO（東京本社） 会議室",
-      "lat": "35.656727700000",
-      "lon": "139.759374300000",
-      "owner_id": 42269,
-      "owner_nickname": "ayokura",
-      "owner_display_name": "あよくら",
-      "accepted": 13,
-      "waiting": 0,
-      "updated_at": "2026-09-15T19:10:58+09:00"
     },
     {
       "id": 404333,
@@ -290,7 +259,7 @@
       "published_at": "2026-08-19T19:11:09+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16283,
         "subdomain": "picopicoruby",
@@ -321,7 +290,7 @@
       "published_at": "2026-08-13T18:33:30+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 3864,
         "subdomain": "giftee",
@@ -340,6 +309,37 @@
       "updated_at": "2026-09-09T17:00:29+09:00"
     },
     {
+      "id": 406384,
+      "title": "ID レイクタウン Vol.1",
+      "catch": "OpenID Summit Tokyo 2026 Special Edition を振り返ろう",
+      "description": "<h1>ID レイクタウン Vol.1 〜 OpenID Summit Tokyo 2026 Special Edition を振り返ろう</h1>\n<p>先日の「<a href=\"https://www.openid.or.jp/summit/2026/\" rel=\"nofollow\">OpenID Summit Tokyo 2026 Special Edition</a>」では、幅広い領域での発表がありました。ディープで先進的な内容であったため、まだ ID 業界に入門したての方には、少し難しい内容だったのではないでしょうか。</p>\n<p>今回は、OpenID Summit Tokyo 2026 Special Edition の内容を振り返って、内容を理解・腹落ちするための議論の場を作ってみたいと思います。ID 沼に飛び込みたいけど、その一歩を踏み出すことに戸惑っている方、ぜひご参加ください。</p>\n<p>本イベントは、発表を聴講するものではなく、アンカンファレンス型で行われる全員参加型のイベントです。参加される方には、セッション内でご発言いただくことを期待しています。<br>\nまた、申し込み時のアンケート内にて、取り上げたいテーマの記入をお願いしています。Summit で分からなかったところや、深ぼって意見を交わしたい内容などをご記載ください。</p>\n<h1>こんな方に参加いただきたい</h1>\n<ul>\n<li>OpenID Summit Tokyo 2026 Special Edition に参加した、若手の自認初心者の方  </li>\n<li>同イベントの内容の深掘り、理解を深めたい人</li>\n</ul>\n<h1>Speakers &amp; Agenda</h1>\n<table>\n<thead>\n<tr>\n<th>Time</th>\n<th>Agenda</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:15</td>\n<td>OpenID Summit を振り返って: 簡単な wrap-up</td>\n</tr>\n<tr>\n<td>19:15-20:30</td>\n<td>ディスカッション</td>\n</tr>\n</tbody>\n</table>\n<p>※ 発表時間は目安です。適宜質問時間等を交えて調整します。</p>\n<h1>開催概要</h1>\n<ul>\n<li>開催日時：2026年9月16日（水） 19:00 - 20:30（受付開始 18:45 〜）  </li>\n<li>主催：一般社団法人OpenIDファウンデーション・ジャパン トップガン40ワーキンググループ  </li>\n<li>会場：株式会社オプティム OPTiM TOKYO（東京本社） 会議室<ul>\n<li>東京都港区海岸1丁目2番20号 (汐留ビルディング18F)</li>\n</ul>\n</li>\n<li>実施形式：オンサイト（現地参加）   30 人上限  </li>\n<li>参加条件：無料 / 事前登録制</li>\n</ul>\n<h1>最後にご確認ください</h1>\n<ul>\n<li>本イベントの交流会の開催はございません。  </li>\n<li>ドリンクや軽食等はご自身でご用意ください。  </li>\n<li>本イベントは営業目的やご自身のビジネスへの勧誘目的の方のご参加は固くお断りいたします</li>\n</ul>",
+      "url": "https://openid.connpass.com/event/406384/",
+      "image_url": "https://media.connpass.com/thumbs/e3/86/e38647e800694ed447315aa7231a36db.png",
+      "hash_tag": "",
+      "started_at": "2026-09-16T19:00:00+09:00",
+      "ended_at": "2026-09-16T20:30:00+09:00",
+      "published_at": "2026-09-09T19:01:18+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 6823,
+        "subdomain": "openid",
+        "title": "OpenID Foundation Japan",
+        "url": "https://openid.connpass.com/"
+      },
+      "address": "東京都港区海岸1丁目2番20号 (汐留ビルディング18F)",
+      "place": "株式会社オプティム OPTiM TOKYO（東京本社） 会議室",
+      "lat": "35.656727700000",
+      "lon": "139.759374300000",
+      "owner_id": 42269,
+      "owner_nickname": "ayokura",
+      "owner_display_name": "あよくら",
+      "accepted": 13,
+      "waiting": 0,
+      "updated_at": "2026-09-15T19:10:58+09:00"
+    },
+    {
       "id": 402122,
       "title": "GCPUG Tokyo Spanner Day September 2026",
       "catch": "",
@@ -352,7 +352,7 @@
       "published_at": "2026-08-02T09:13:00+09:00",
       "limit": 48,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 1898,
         "subdomain": "gcpug-tokyo",
@@ -366,7 +366,7 @@
       "owner_id": 108401,
       "owner_nickname": "apstndb",
       "owner_display_name": "apstndb",
-      "accepted": 26,
+      "accepted": 21,
       "waiting": 0,
       "updated_at": "2026-09-16T16:30:49+09:00"
     },
@@ -374,7 +374,7 @@
       "id": 403684,
       "title": "Kubernetes祭り #2",
       "catch": "",
-      "description": "<h1>イベント概要</h1>\n<p>本イベントは、Kubernetesを始めとしたインフラ・SRE/DevOps支援サービス「Sreake」を提供するスリーシェイクが主催する、Kubernetesのためのイベントです。\nKubernetesを中心としたクラウドネイテイブ技術に関する情報を、これらをどう活用してるのかを発信していきます！</p>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>Kubernetesに関する情報や事例に興味のある方</li>\n<li>Kubernetesなどのクラウドネイテイブ技術を活用したSRE/Platform Engineeringに興味のある方</li>\n<li>SRE やインフラエンジニアの技術情報をキャッチアップしたい方</li>\n</ul>\n<h1>配信</h1>\n<p>当日は YouTube Live で配信を行います。URLは参加申し込み後の「参加者への情報」に記載予定です。</p>\n<h1>会場案内</h1>\n<p>株式会社プレイド (東京都中央区銀座6-10-1 GINZA SIX 10F)</p>\n<p>こちらの<a href=\"https://plaid.co.jp/company/access/\" rel=\"nofollow\">アクセスガイド</a>を、来場前に必ずご確認ください。<br>\n(商業エントランスからオフィスには上がれないので、注意してください。)  </p>\n<h2>受付</h2>\n<p>当日はGINZA SIXのオフィス受付フロア（7F） までエレベーターで上がっていただき、\n7Fに設ける本イベント用の受付にて、参加用 QR コードまたは Connpass ID をご提示ください。</p>\n<p>プレイドオフィス（10F）に上がるための入館カードをお渡しします。  </p>\n<p>受付は18:30頃より開始し、19:00頃まで設置します。受付終了後19:30までは、ハッシュタグ（#k8smatsuri）をXに投稿いただけると、担当者が確認でき次第順次対応を行います。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:05</td>\n<td>オープニング</td>\n<td>株式会社スリーシェイク <a href=\"https://x.com/bells17_\" rel=\"nofollow\">@bells17</a></td>\n</tr>\n<tr>\n<td>19:05-19:25</td>\n<td>セッション1 youkiのメンテナーになるまで</td>\n<td>株式会社スリーシェイク <a href=\"\" rel=\"nofollow\">桜井佑介</a></td>\n</tr>\n<tr>\n<td>19:25-19:45</td>\n<td>セッション2 Falco PremptiでつくるクラウドネイティブなAI Agent Guardrail</td>\n<td>株式会社サイバーエージェント <a href=\"https://x.com/ishikawa_kumo\" rel=\"nofollow\">Kumo Ishikawa</a></td>\n</tr>\n<tr>\n<td>19:45-19:50</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>19:50-20:10</td>\n<td>セッション3 絵で解説するKubernetesセキュリティ</td>\n<td><a href=\"https://x.com/_a0i\" rel=\"nofollow\">あおい</a></td>\n</tr>\n<tr>\n<td>20:10-20:30</td>\n<td>セッション4 1つのPodを移行しようとしたら、別のPodが止まった</td>\n<td>株式会社プレイド <a href=\"https://x.com/taisuke_bigbaby\" rel=\"nofollow\">岡本泰典 (a.k.a BigBaBy)</a></td>\n</tr>\n<tr>\n<td>20:30-20:50</td>\n<td>セッション5  Deploymentの先にあるAI Agent基盤 ― kagent vNext、Agent Substrate、Hermesから読み解くAgent Runtimeの現在地</td>\n<td>株式会社サイバーエージェント <a href=\"https://x.com/amsy810\" rel=\"nofollow\">青山真也</a></td>\n</tr>\n<tr>\n<td>20:50-20:55</td>\n<td>会場スポンサー様LT</td>\n<td>株式会社プレイド様</td>\n</tr>\n<tr>\n<td>20:55-21:00</td>\n<td>エンディング</td>\n<td>株式会社スリーシェイク <a href=\"https://x.com/bells17_\" rel=\"nofollow\">@bells17</a></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇内容</h2>\n<h3>セッション1: youkiのメンテナーになるまで (株式会社スリーシェイク <a href=\"xxx\" rel=\"nofollow\">桜井佑介</a>)</h3>\n<p><img src=\"https://sreake.com/wp-content/uploads/2026/06/20241004_193716-1.jpg\" width=\"170\"><br>\nyoukiはRustで実装された低レベルコンテナランタイムで、現在はCNCFプロジェクトの一つです。私は会社の技術検証活動をきっかけにyoukiに触れ、バグ修正や機能追加、レビューを継続的に進めることでメンテナにまでなりました。本セッションでは、youkiのメンテナになるまでに何を考え、どのような活動をしてきたかを話します。これからOSS活動を考えている方へきっかけになる話をします。</p>\n<h3>セッション2: Falco PremptiでつくるクラウドネイティブなAI Agent Guardrail (株式会社サイバーエージェント <a href=\"https://x.com/ishikawa_kumo\" rel=\"nofollow\">Kumo Ishikawa</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1929834993695838208/FDG-g-Yh_400x400.jpg\" width=\"170\"><br></p>\n<p>AI AgentのHooksに、禁止コマンドを書き続けることに疲れていませんか？ Falco Premptiは、その悩みを解決する選択肢の一つです。ツール呼び出しをFalcoのイベントとして評価し、禁止条件を共通ルールとして管理できます。本セッションでは、PremptiをKubernetes上のKAgentへ接続したPoCを紹介。危険操作の遮断、誤検知、ガードレールが届かない実行経路など、検証結果と制約を共有します。</p>\n<h3>セッション3: 絵で解説するKubernetesセキュリティ (<a href=\"https://x.com/_a0i\" rel=\"nofollow\">あおい</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1735269105408860160/Ys964NRV_400x400.jpg\" width=\"170\"><br>\nKubernetesセキュリティ、なんとなく知っているけれどなんとなく知らなかったりしませんか？今年CKSをとったので、CKSの試験要項をもとにKubernetesセキュリティの基礎を広く浅く絵で解説します！※本セッションはCKSの受験を勧める内容ではありません</p>\n<h3>セッション4: 1つのPodを移行しようとしたら、別のPodが止まった (株式会社プレイド <a href=\"https://x.com/taisuke_bigbaby\" rel=\"nofollow\">岡本泰典 (a.k.a BigBaBy)</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/2010286354199117824/bh1BvoUb_400x400.jpg\" width=\"170\"><br></p>\n<p>本番環境で1つのPodを移行しようとしたところ、対象外のPodまで再作成され、起動できなくなりました。原因はStatefulSetの自動更新と、特定Nodeに紐づくPVの配置制約の衝突です。\n本セッションでは、変更が別のPodへ波及した理由と復旧方法、残りのPodを安全に移行した手順を紹介します。Kubernetesの本番運用で、変更の影響範囲を見極めるための考え方を共有します。</p>\n<h3>セッション5: Deploymentの先にあるAI Agent基盤 ― kagent vNext、Agent Substrate、Hermesから読み解くAgent Runtimeの現在地 (株式会社サイバーエージェント <a href=\"https://x.com/amsy810\" rel=\"nofollow\">青山真也</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/941103128815984641/UjUsSgAM_400x400.jpg\" width=\"170\"><br>\nKubernetes上でAI Agentを動かすだけなら、Deploymentでも可能です。しかし、長時間稼働するAgentには、状態保持、隔離、高速な起動・休止、通信や認証といった固有の課題があります。本セッションでは、Agent SubstrateによるActor実行と、Hermesを支えるAgentHarness、agentgatewayなどのアークテクチャを紹介します。KubernetesがAgent基盤へ進化する現在地と、kagent vNextのAgent Runtime再設計や残された実装課題を解説します</p>\n<h1>注意事項（来場者向け）</h1>\n<ul>\n<li>本イベントではSNSや記事の投稿を目的として写真や動画撮影、音声録音をする予定です。ご懸念のある方は、写りづらい席にご案内も可能ですが、保証は致しかねます。当日、写真の確認や削除は対応できませんのでご了承ください。</li>\n</ul>\n<h1>行動規範 (Code of Conduct) について</h1>\n<p>本イベントは、Kubernetes に関連する技術について参加者と知見を共有するための場です。\nそのため、主催者を含む全ての参加者は下記ページに記載される行動規範に同意していただく必要があります。\nご理解・ご協力をお願いいたします。</p>\n<p><a href=\"https://3-shake.com/event-code-of-conduct/\" rel=\"nofollow\">https://3-shake.com/event-code-of-conduct/</a></p>\n<h1>お問い合わせ</h1>\n<p>イベントに関するお問い合わせはこちらからお願いします:\nmeetup@3-shake.com</p>",
+      "description": "<h1>イベント概要</h1>\n<p>本イベントは、Kubernetesを始めとしたインフラ・SRE/DevOps支援サービス「Sreake」を提供するスリーシェイクが主催する、Kubernetesのためのイベントです。\nKubernetesを中心としたクラウドネイテイブ技術に関する情報を、これらをどう活用してるのかを発信していきます！</p>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>Kubernetesに関する情報や事例に興味のある方</li>\n<li>Kubernetesなどのクラウドネイテイブ技術を活用したSRE/Platform Engineeringに興味のある方</li>\n<li>SRE やインフラエンジニアの技術情報をキャッチアップしたい方</li>\n</ul>\n<h1>配信</h1>\n<p>当日は YouTube Live で配信を行います。URLは参加申し込み後の「参加者への情報」に記載予定です。</p>\n<h1>会場案内</h1>\n<p>株式会社プレイド (東京都中央区銀座6-10-1 GINZA SIX 10F)</p>\n<p>こちらの<a href=\"https://plaid.co.jp/company/access/\" rel=\"nofollow\">アクセスガイド</a>を、来場前に必ずご確認ください。<br>\n(商業エントランスからオフィスには上がれないので、注意してください。)  </p>\n<h2>受付</h2>\n<p>当日はGINZA SIXのオフィス受付フロア（7F） までエレベーターで上がっていただき、\n7Fに設ける本イベント用の受付にて、参加用 QR コードまたは Connpass ID をご提示ください。</p>\n<p>プレイドオフィス（10F）に上がるための入館カードをお渡しします。  </p>\n<p>受付は18:30頃より開始し、19:00頃まで設置します。受付終了後19:30までは、ハッシュタグ（#k8smatsuri）をXに投稿いただけると、担当者が確認でき次第順次対応を行います。</p>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00-19:05</td>\n<td>オープニング</td>\n<td>株式会社スリーシェイク <a href=\"https://x.com/bells17_\" rel=\"nofollow\">@bells17</a></td>\n</tr>\n<tr>\n<td>19:05-19:25</td>\n<td>セッション1 youkiのメンテナーになるまで</td>\n<td>株式会社スリーシェイク <a href=\"\" rel=\"nofollow\">桜井佑介</a></td>\n</tr>\n<tr>\n<td>19:25-19:45</td>\n<td>セッション2 Falco PremptiでつくるクラウドネイティブなAI Agent Guardrail</td>\n<td>株式会社サイバーエージェント <a href=\"https://x.com/ishikawa_kumo\" rel=\"nofollow\">Kumo Ishikawa</a></td>\n</tr>\n<tr>\n<td>19:45-19:50</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>19:50-20:10</td>\n<td>セッション3 絵で解説するKubernetesセキュリティ</td>\n<td><a href=\"https://x.com/_a0i\" rel=\"nofollow\">あおい</a></td>\n</tr>\n<tr>\n<td>20:10-20:30</td>\n<td>セッション4 1つのPodを移行しようとしたら、別のPodが止まった</td>\n<td>株式会社プレイド <a href=\"https://x.com/taisuke_bigbaby\" rel=\"nofollow\">岡本泰典 (a.k.a BigBaBy)</a></td>\n</tr>\n<tr>\n<td>20:30-20:50</td>\n<td>セッション5  Deploymentの先にあるAI Agent基盤 ― kagent vNext、Agent Substrate、Hermesから読み解くAgent Runtimeの現在地</td>\n<td>株式会社サイバーエージェント <a href=\"https://x.com/amsy810\" rel=\"nofollow\">青山真也</a></td>\n</tr>\n<tr>\n<td>20:50-20:55</td>\n<td>会場スポンサー様LT</td>\n<td>株式会社プレイド様</td>\n</tr>\n<tr>\n<td>20:55-21:00</td>\n<td>エンディング</td>\n<td>株式会社スリーシェイク <a href=\"https://x.com/bells17_\" rel=\"nofollow\">@bells17</a></td>\n</tr>\n</tbody>\n</table>\n<h2>登壇内容</h2>\n<h3>セッション1: youkiのメンテナーになるまで (株式会社スリーシェイク <a href=\"xxx\" rel=\"nofollow\">桜井佑介</a>)</h3>\n<p><img src=\"https://sreake.com/wp-content/uploads/2026/06/20241004_193716-1.jpg\" width=\"170\"><br>\nyoukiはRustで実装された低レベルコンテナランタイムで、現在はCNCFプロジェクトの一つです。私は会社の技術検証活動をきっかけにyoukiに触れ、バグ修正や機能追加、レビューを継続的に進めることでメンテナにまでなりました。本セッションでは、youkiのメンテナになるまでに何を考え、どのような活動をしてきたかを話します。これからOSS活動を考えている方へきっかけになる話をします。</p>\n<h3>セッション2: Falco PremptiでつくるクラウドネイティブなAI Agent Guardrail (株式会社サイバーエージェント <a href=\"https://x.com/ishikawa_kumo\" rel=\"nofollow\">Kumo Ishikawa</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1929834993695838208/FDG-g-Yh_400x400.jpg\" width=\"170\"><br></p>\n<p>AI AgentのHooksに、禁止コマンドを書き続けることに疲れていませんか？ Falco Premptiは、その悩みを解決する選択肢の一つです。ツール呼び出しをFalcoのイベントとして評価し、禁止条件を共通ルールとして管理できます。本セッションでは、PremptiをKubernetes上のKAgentへ接続したPoCを紹介。危険操作の遮断、誤検知、ガードレールが届かない実行経路など、検証結果と制約を共有します。</p>\n<h3>セッション3: 絵で解説するKubernetesセキュリティ (<a href=\"https://x.com/_a0i\" rel=\"nofollow\">あおい</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1735269105408860160/Ys964NRV_400x400.jpg\" width=\"170\"><br>\nKubernetesセキュリティ、なんとなく知っているけれどなんとなく知らなかったりしませんか？今年CKSをとったので、CKSの試験要項をもとにKubernetesセキュリティの基礎を広く浅く絵で解説します！※本セッションはCKSの受験を勧める内容ではありません</p>\n<h3>セッション4: 1つのPodを移行しようとしたら、別のPodが止まった (株式会社プレイド <a href=\"https://x.com/taisuke_bigbaby\" rel=\"nofollow\">岡本泰典 (a.k.a BigBaBy)</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/2010286354199117824/bh1BvoUb_400x400.jpg\" width=\"170\"><br></p>\n<p>1つのPodを移行しようとしたところ、対象外のPodまで再作成され、起動できなくなりました。原因はStatefulSetの自動更新と、特定Nodeに紐づくPVの配置制約の衝突です。\n本セッションでは、変更が別のPodへ波及した理由と復旧方法、残りのPodを安全に移行した手順を紹介します。Kubernetesの本番運用で、変更の影響範囲を見極めるための考え方を共有します。</p>\n<h3>セッション5: Deploymentの先にあるAI Agent基盤 ― kagent vNext、Agent Substrate、Hermesから読み解くAgent Runtimeの現在地 (株式会社サイバーエージェント <a href=\"https://x.com/amsy810\" rel=\"nofollow\">青山真也</a>)</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/941103128815984641/UjUsSgAM_400x400.jpg\" width=\"170\"><br>\nKubernetes上でAI Agentを動かすだけなら、Deploymentでも可能です。しかし、長時間稼働するAgentには、状態保持、隔離、高速な起動・休止、通信や認証といった固有の課題があります。本セッションでは、Agent SubstrateによるActor実行と、Hermesを支えるAgentHarness、agentgatewayなどのアークテクチャを紹介します。KubernetesがAgent基盤へ進化する現在地と、kagent vNextのAgent Runtime再設計や残された実装課題を解説します</p>\n<h1>注意事項（来場者向け）</h1>\n<ul>\n<li>本イベントではSNSや記事の投稿を目的として写真や動画撮影、音声録音をする予定です。ご懸念のある方は、写りづらい席にご案内も可能ですが、保証は致しかねます。当日、写真の確認や削除は対応できませんのでご了承ください。</li>\n</ul>\n<h1>行動規範 (Code of Conduct) について</h1>\n<p>本イベントは、Kubernetes に関連する技術について参加者と知見を共有するための場です。\nそのため、主催者を含む全ての参加者は下記ページに記載される行動規範に同意していただく必要があります。\nご理解・ご協力をお願いいたします。</p>\n<p><a href=\"https://3-shake.com/event-code-of-conduct/\" rel=\"nofollow\">https://3-shake.com/event-code-of-conduct/</a></p>\n<h1>お問い合わせ</h1>\n<p>イベントに関するお問い合わせはこちらからお願いします:\nmeetup@3-shake.com</p>",
       "url": "https://3-shake.connpass.com/event/403684/",
       "image_url": "https://media.connpass.com/thumbs/bc/fd/bcfd51e1fbf99b9ddd79464755655862.png",
       "hash_tag": "k8smatsuri",
@@ -383,7 +383,7 @@
       "published_at": "2026-08-19T11:53:33+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 11361,
         "subdomain": "3-shake",
@@ -397,9 +397,9 @@
       "owner_id": 572649,
       "owner_nickname": "hayama17",
       "owner_display_name": "hayama17",
-      "accepted": 168,
+      "accepted": 180,
       "waiting": 0,
-      "updated_at": "2026-09-16T10:40:31+09:00"
+      "updated_at": "2026-09-16T20:36:53+09:00"
     },
     {
       "id": 406195,
@@ -414,7 +414,7 @@
       "published_at": "2026-09-07T18:30:59+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": null,
       "address": "東京都港区海岸1-7-1 10F",
       "place": "WeWork 竹芝",
@@ -423,7 +423,7 @@
       "owner_id": 1017500,
       "owner_nickname": "leapai",
       "owner_display_name": "LeapAI",
-      "accepted": 3,
+      "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-09-07T18:30:59+09:00"
     }
