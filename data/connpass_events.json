@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-19T04:21:03.538849+09:00",
+  "fetched_at": "2026-09-19T07:07:31.694509+09:00",
   "date": "20260919",
-  "count": 34,
+  "count": 35,
   "events": [
     {
       "id": 405297,
@@ -1043,9 +1043,40 @@
       "owner_id": 3542,
       "owner_nickname": "yoshidashingo",
       "owner_display_name": "Shingo 吉田真吾",
-      "accepted": 342,
+      "accepted": 343,
       "waiting": 0,
       "updated_at": "2026-09-15T00:12:02+09:00"
+    },
+    {
+      "id": 405570,
+      "title": "Saitama.rb #49",
+      "catch": "もくもく会",
+      "description": "<p>**Saitama.rbは埼玉県さいたま市を拠点に活動している地域Rubyコミュニティです。 ** 大宮駅東口徒歩1分の貸会議室6Fで毎月第3土曜日にゆるく集まってRubyとその周辺技術について情報交換をしたり、もくもく会をしたりしています。</p>\n<p>Ruby使っている人も、これから勉強したい人も、みんなで集まってがんばりましょう。\nはじめてのかたもどうぞお気軽にご参加ください！</p>\n<p>※もくもく会とは\nみんなで集まって、各自黙々と仕事や勉強、読書などをする会です。\n一人だと集中できない、飽きちゃう人にはもってこいです。\nSaitama.rbはRubyに詳しい人たちもいるので、質問や情報交換、Ruby仲間をつくる助けにもなります。</p>\n<p>作業中、画面にSlackを表示して気軽に質問できるよう工夫しているので、「ちょっと教えてほしい･･･けど話しかけづらい･･･」など気兼ねすることはありません！</p>\n<p>コミュニティ Slackはこちらにあります  =&gt; \n<a href=\"https://join.slack.com/t/saitamarb/shared_invite/zt-2gt2xgpsy-uHQ6MV9jUHkw9dhS8ft_~A\" rel=\"nofollow\">招待リンク</a></p>\n<p>過去のイベントの内容・様子 =&gt; <a href=\"https://github.com/saitamarb/reports/\" rel=\"nofollow\">https://github.com/saitamarb/reports/</a></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>12:45</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>13:00 ～</td>\n<td>アイスブレイク＆自己紹介＆今日やること発表</td>\n</tr>\n<tr>\n<td>13:10 ～</td>\n<td>情報交換、最近興味のあること、勉強したことなど発表会</td>\n</tr>\n<tr>\n<td>13:40 ～</td>\n<td>もくもく</td>\n</tr>\n<tr>\n<td>14:40 ～</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>14:50 ～</td>\n<td>もくもく</td>\n</tr>\n<tr>\n<td>16:00 ～</td>\n<td>成果発表・会のまとめ</td>\n</tr>\n<tr>\n<td>16:20 ～</td>\n<td>片付け</td>\n</tr>\n<tr>\n<td>16:30</td>\n<td>退室</td>\n</tr>\n</tbody>\n</table>\n<h2>もくもく会について</h2>\n<ul>\n<li>各々が自由に何か作業をしたり調べごとしたりします。</li>\n<li>「Rubyはじめてみたいから勉強する！」とか「仕事します」とか、なんでもOKです。</li>\n<li>一緒にやりたいことがある人は声を掛け合っても構いません。</li>\n<li>相談や質問などみんなでワイワイするのもよし。質問すると誰か詳しい人が教えてくれるかも知れません。</li>\n</ul>\n<p><img alt=\"Saitama.rbの様子\" src=\"https://pbs.twimg.com/media/DsLcl8EWwAAOecz.jpg\"></p>\n<h2>会場について</h2>\n<ul>\n<li>貸会議室6F（銀座ビル8F）です。会場へのアクセスは<a href=\"https://office6f.com/map/\" rel=\"nofollow\">こちらのページ</a>が写真付きでくわしいです。</li>\n<li>エレベーターで7Fに上がり、正面右手の階段を上がってください。7Fでの受付は不要です。</li>\n<li>会場大型ディスプレイがあるので発表したい人がいれば使えます。備え付けHDMIまたはD-Subケーブルはあります。</li>\n<li>会場WiFiあります。</li>\n<li>フリードリンクあります。またビルを出て正面にコンビニ、ドトールなどあります。</li>\n<li>当日自己紹介の後、会場費として500円いただきます。</li>\n</ul>\n<h2>提供</h2>\n<ul>\n<li>発起人 <a href=\"https://takeyuweb.co.jp\" rel=\"nofollow\">タケユー・ウェブ株式会社</a></li>\n<li>会場提供 貸会議室6F様</li>\n</ul>",
+      "url": "https://saitamarb.connpass.com/event/405570/",
+      "image_url": null,
+      "hash_tag": "saitamarb",
+      "started_at": "2026-09-19T13:00:00+09:00",
+      "ended_at": "2026-09-19T16:30:00+09:00",
+      "published_at": "2026-09-01T13:54:22+09:00",
+      "limit": 6,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 4682,
+        "subdomain": "saitamarb",
+        "title": "Saitama.rb",
+        "url": "https://saitamarb.connpass.com/"
+      },
+      "address": "さいたま市大宮区宮町1-5 銀座ビル6F",
+      "place": "貸会議室6F (銀座ビル8F)",
+      "lat": "35.907694100000",
+      "lon": "139.624788200000",
+      "owner_id": 40795,
+      "owner_nickname": "takeyuweb",
+      "owner_display_name": "takeyuweb",
+      "accepted": 3,
+      "waiting": 0,
+      "updated_at": "2026-09-01T13:55:31+09:00"
     }
   ]
 }
