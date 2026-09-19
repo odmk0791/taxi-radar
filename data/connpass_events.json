@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-19T19:02:54.346328+09:00",
+  "fetched_at": "2026-09-19T23:04:27.183807+09:00",
   "date": "20260919",
   "count": 35,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-08-29T12:26:25+09:00",
       "limit": 21,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 10720,
         "subdomain": "mecha-mote-se",
@@ -47,7 +47,7 @@
       "published_at": "2026-08-23T00:00:00+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8740,
         "subdomain": "jista-kanto",
@@ -693,7 +693,7 @@
       "published_at": "2026-05-20T21:23:36+09:00",
       "limit": 116,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17658,
         "subdomain": "csharpkaigi",
@@ -1029,7 +1029,7 @@
       "published_at": "2026-07-14T21:48:25+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2346,
         "subdomain": "serverless",
