@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-20T06:59:04.306774+09:00",
+  "fetched_at": "2026-09-20T08:57:09.016006+09:00",
   "date": "20260920",
   "count": 12,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 30439,
       "owner_nickname": "kitazaki",
       "owner_display_name": "kitazaki",
-      "accepted": 17,
+      "accepted": 18,
       "waiting": 1,
       "updated_at": "2026-09-08T14:40:24+09:00"
     },
@@ -175,7 +175,7 @@
       "owner_id": 1050069,
       "owner_nickname": "wokashi_jbi",
       "owner_display_name": "wokashi_jbi",
-      "accepted": 12,
+      "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-09-14T14:01:56+09:00"
     },
