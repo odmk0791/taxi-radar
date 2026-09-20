@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-20T17:56:33.900083+09:00",
+  "fetched_at": "2026-09-20T22:25:29.086971+09:00",
   "date": "20260920",
-  "count": 12,
+  "count": 11,
   "events": [
     {
       "id": 406840,
@@ -109,7 +109,7 @@
       "published_at": "2026-09-14T14:00:13+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都新宿区四谷本塩町2-8",
       "place": "Tokyo Bitcoin Base",
@@ -121,6 +121,37 @@
       "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-09-14T14:01:56+09:00"
+    },
+    {
+      "id": 405649,
+      "title": "LeRobot(0.6.x)ハンズオン 第12回-SO-ARM or OMX-AI  組立",
+      "catch": "LeRobotで動作するSO-ARMを組み立てよう！動く人は模倣学習だ！",
+      "description": "<h1>LeRobot-SO-ARM10xハンズオン第10回-組み立て編&amp;模倣学習編同時開催-</h1>\n<h2>内容</h2>\n<p>本ハンズオンではSO-ARM10xまたはRobotis OMX-AIの組み立てとLeRobotを使って模倣学習(Action Chunking with Transformer)の両方に挑戦します。参加者が実際に手を動かしながら進めていきますが、経験豊富なチューターが完全サポートしますので、詰まることなく、組み立てと模倣学習のいずれかを爆速で試すことができるイベントです。</p>\n<p>毎回、専門の方から、Pythonなどを触ったことない方まで、ご参加いただき、組み立て完了、模倣学習完了100%の達成率です。</p>\n<p><span style=\"color:red;\">\n<strong>今回参加者の方にはLeRobot v0.4.0対応 模倣学習の完全ノウハウテキストを配布いたします！</strong>\n<strong>これまでハンズオンで利用していたテキストから大幅にバージョンアップしており、模倣学習を実施するための完全にノウハウを1冊にまとめた決定版です。</strong>\n</span></p>\n<h3>1. 組み立てコース</h3>\n<p>SO-ARM10xまたはRobotis OMX-AIの組み立てとテレオペレーションまでをゴールとします。効率的な組み立て方のレクチャーや注意点、組み立て時のさまざまなトラブルシュートを受けることが可能です。</p>\n<h3>2. 模倣学習orVLA学習コース</h3>\n<p>組み立てずみのSO-ARM10xまたはRobotis OMX-AIを持ち込んでいただき、模倣学習にチャレンジします。こちらも公式ドキュメントだけではわかりづらい模倣学習の準備やデータ収集方法やコツについてサポートが受けられます。トラブル時のトラブルシュートも可能です。\n<strong>アドバンスな取り組みとしてSmolVLAやPi0.5の学習についても対応いたします。</strong></p>\n<p><strong>ロボット貸し出し模倣学習枠</strong></p>\n<ul>\n<li>ロボットおよび付属品一式の貸し出しを行うコースです。</li>\n<li>PCは持参が必要です。</li>\n<li>本枠は概ね開催１週間前までに通常枠で規定人数が集まらない場合に解放いたします。\n    (本枠での申し込みが必要です。)</li>\n</ul>\n<h3>3. オンライン</h3>\n<p>Discordから会場の様子を見ていただきます。基本はテキストに沿って自習となります。\n音声 or chatにて講師へオンラインでのサポートを求めることが可能です。\n但しオンラインであるためサポートレベルはその他コースより落ちます。</p>\n<h3>想定スケジュール</h3>\n<p>13時から5時間ほどの予定です。</p>\n<p>▼組み立てコースの場合(進行の例)</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00-13:20</td>\n<td style=\"text-align: left;\">オリエンテーション</td>\n</tr>\n<tr>\n<td>13:20-13:50</td>\n<td style=\"text-align: left;\">モーターの初期設定</td>\n</tr>\n<tr>\n<td>14:00-15:30</td>\n<td style=\"text-align: left;\">フォロワーの組み立て</td>\n</tr>\n<tr>\n<td>15:30-16:30</td>\n<td style=\"text-align: left;\">リーダーの組み立て</td>\n</tr>\n<tr>\n<td>16:30-17:30</td>\n<td style=\"text-align: left;\">テレオペレーションの実施</td>\n</tr>\n<tr>\n<td>17:30-18:10</td>\n<td style=\"text-align: left;\">ラップアップ+片付け解散</td>\n</tr>\n</tbody>\n</table>\n<p>▼模倣学習コースの場合(進行の例)</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00-13:20</td>\n<td style=\"text-align: left;\">オリエンテーション</td>\n</tr>\n<tr>\n<td>13:20-13:50</td>\n<td style=\"text-align: left;\">環境セットアップ</td>\n</tr>\n<tr>\n<td>14:00-15:30</td>\n<td style=\"text-align: left;\">データ収集実践</td>\n</tr>\n<tr>\n<td>15:30-16:00</td>\n<td style=\"text-align: left;\">学習コマンドの実行</td>\n</tr>\n<tr>\n<td>16:00-17:30</td>\n<td style=\"text-align: left;\">模倣学習の概要の説明(学習を待ちながら)</td>\n</tr>\n<tr>\n<td>17:30-17:50</td>\n<td style=\"text-align: left;\">実機での動作確認</td>\n</tr>\n<tr>\n<td>17:50-18:10</td>\n<td style=\"text-align: left;\">ラップアップ+片付け解散</td>\n</tr>\n</tbody>\n</table>\n<h2>参加者の想定スキル</h2>\n<ol>\n<li>Linuxの基本的操作、Pythonがある程度理解できる。</li>\n<li>Google Colaboratoryなどを利用できる。</li>\n<li>自力でSO-ARM10xのテレオペレーションができる(模倣学習コースの場合)</li>\n</ol>\n<h2>参加者でご用意いただく環境</h2>\n<ul>\n<li>SO-ARM10x一式</li>\n</ul>\n<p>▼ 模倣学習コースの場合</p>\n<ul>\n<li>Google Colaboraotry Proプラン</li>\n<li>PC(GPU付きのノートPC or AppleSilicon mac) ※実施動作ではローカルPCにパワーが必要なため</li>\n<li>USBカメラ(最低1台) 720P以上(2MPixel以上)　※ノートパソコンについているカメラでもなんとかなります。</li>\n<li>カメラをつけられる台座 ※100均で売っているスタンドになる自撮り棒など</li>\n</ul>\n<h2><span style=\"color:red;\">LeRobotのハンズオンイベント始めました！</span></h2>\n<p>HugginFaceが主導するロボットプロジェクト <strong>LeRobot</strong>のハンズオンプロジェクトが始まります。\nこのハンズオン全てに参加するとLeRobot対応ロボットSO-ARMの組み立てから、模倣学習の基本、VLA、自分オリジナルの模倣学習モデルの作成が行えます。</p>\n<p>これからSO-ARMを組み立てようとされている方は参加マストなイベントとなっています。\nまたSO-ARMをすでに持っている方も見学枠としてご参加いただけます。\n必要であれば模倣学習やLeRobotに関する相談なども受け付けます。</p>\n<p>会場と講師は2024年から長らくLeRobotの日本での普及に力を注いでいるメンバーです。</p>\n<ul>\n<li><strong>ロボスタディオンは第一回LeRobot World Wide HackathonでHuggingFace公式の日本リアル会場となりました。</strong></li>\n</ul>\n<p><img src=\"https://secure-res.craft.do/v2/2Z7zq6xLG8k84pKaNr33XaUy8txWLoeJBY9BiUjw4KZaZsU1PqDdALKMjEih4SUsJW1N8kTnstVPDHcSn4GmHYZWmej9JPVSWDqiiPBC5DxEuVmHndUpZ9tsLqbHL6d1z1qoxWrENoDjYq14iGCwKefarXUX13eD8MWfj9VmgpRQGXa62qrtCM2HwmuJpFfNvz5Pp2QyNZtyddEqWu56fD2tR7tCb1AKJBgrcMnXnxNMFypQM5BqXEPV3AD9NCxa3Be51vpWF4r9iQi4SeeLW69sq16xpvr57tJfc6ibBWKrAEL8byREpJcR1BwwV7V7p2wYdFaxUJikAZJFNUwERmm3U9TAGpddhatnmxpdbV3gXBVFTsoHuLSszhdC8GJ2EBqD9aaYagJs4eTJUoMrEKotHqN1Kxz5/AP1GczPdlLw7gXObgbRBuTKqpJVkeUMQSNCEyZu2120afF6U6NJvfRLbwvWecww1458-h1031-s-no-gm.jpg\" width=\"300\"></p>\n<ul>\n<li><strong>講師はLeRobot World Wide Hackathonの入賞者</strong></li>\n</ul>\n<p><img src=\"https://secure-res.craft.do/v2/AbcZoueyif62wrCzXSFVfQE9jfmXoDCfztN9hPxJ3A76iBrMQEFKjemWeaDkEYpnFRXqvZ9nzWMYBCaoJXV9Hr8AHsdNWHM6WYbkeZZSSHeeWdeiViMf56ZkDHMeE1AQcXs9LxExNYaQ21yYvDELh8djmncJAJRzYrqAbWpbiQrnmwygvAUmeC2tjLCvFoDZm6skq6Fqy8C5xakuT4QDLxPQdAfW7yN2TZSvrURyR9Z6yzpCy1VgSx4eWAtuA9eNM1eitFmABgMVWckZX6FvarACjLHATY16f1oGZ6QMhd6GvaEYg99962kqWLpWE9w9VqAQgQQVJTm3ThKiniHWfxaeKSVg4p/Masato%20Kawamura_certificate%201.jpg\" width=\"300\"></p>\n<p><span style=\"color:red;\"><strong>今始まろうとしている日本のLeRobotコミュニティにいち早く参加するチャンスとなっています。</strong></span></p>\n<p>この講座は以下のような方に向けております。<br></p>\n<p>・AI等を業務で扱っておりロボット制御に興味がある方<br>\n・これからロボットアームを自作したい方<br>\n・ロボットアーム向け模倣学習を学びたい方<br>\n・オープンソースロボットアームに興味のある方<br></p>\n<h2>ロボットアームのイメージ</h2>\n<p><img src=\"https://github.com/TheRobotStudio/SO-ARM100/blob/main/media/cam_mount2.jpg?raw=true\" width=\"300\">\n<img src=\"https://github.com/TheRobotStudio/SO-ARM100/blob/main/media/UVC_cam_mount.jpeg?raw=true\" width=\"300\"><br>\n<img src=\"https://github.com/TheRobotStudio/SO-ARM100/blob/main/media/UVC_cam_mount_plugin.jpg?raw=true\" width=\"300\"><br>\n<img src=\"https://github.com/TheRobotStudio/SO-ARM100/blob/main/media/d405_mount.jpg?raw=true\" width=\"300\"><br></p>",
+      "url": "https://robostadion.connpass.com/event/405649/",
+      "image_url": "https://media.connpass.com/thumbs/6f/88/6f882de74cdcd460f3989e1acbb4d870.png",
+      "hash_tag": "robostadion",
+      "started_at": "2026-09-20T13:00:00+09:00",
+      "ended_at": "2026-09-20T18:00:00+09:00",
+      "published_at": "2026-09-02T09:33:36+09:00",
+      "limit": 13,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 15574,
+        "subdomain": "robostadion",
+        "title": "ロボスタディオン",
+        "url": "https://robostadion.connpass.com/"
+      },
+      "address": "東京都千代田区外神田6-11-16(GMビル1階)",
+      "place": "ロボ☆スタディオン",
+      "lat": "35.703893800000",
+      "lon": "139.771148400000",
+      "owner_id": 911672,
+      "owner_nickname": "robostadion",
+      "owner_display_name": "robostadion",
+      "accepted": 9,
+      "waiting": 0,
+      "updated_at": "2026-09-20T13:04:52+09:00"
     },
     {
       "id": 404418,
@@ -147,37 +178,6 @@
       "accepted": 72,
       "waiting": 0,
       "updated_at": "2026-09-11T14:58:51+09:00"
-    },
-    {
-      "id": 405649,
-      "title": "LeRobot(0.6.x)ハンズオン 第12回-SO-ARM or OMX-AI  組立",
-      "catch": "LeRobotで動作するSO-ARMを組み立てよう！動く人は模倣学習だ！",
-      "description": "<h1>LeRobot-SO-ARM10xハンズオン第10回-組み立て編&amp;模倣学習編同時開催-</h1>\n<h2>内容</h2>\n<p>本ハンズオンではSO-ARM10xまたはRobotis OMX-AIの組み立てとLeRobotを使って模倣学習(Action Chunking with Transformer)の両方に挑戦します。参加者が実際に手を動かしながら進めていきますが、経験豊富なチューターが完全サポートしますので、詰まることなく、組み立てと模倣学習のいずれかを爆速で試すことができるイベントです。</p>\n<p>毎回、専門の方から、Pythonなどを触ったことない方まで、ご参加いただき、組み立て完了、模倣学習完了100%の達成率です。</p>\n<p><span style=\"color:red;\">\n<strong>今回参加者の方にはLeRobot v0.4.0対応 模倣学習の完全ノウハウテキストを配布いたします！</strong>\n<strong>これまでハンズオンで利用していたテキストから大幅にバージョンアップしており、模倣学習を実施するための完全にノウハウを1冊にまとめた決定版です。</strong>\n</span></p>\n<h3>1. 組み立てコース</h3>\n<p>SO-ARM10xまたはRobotis OMX-AIの組み立てとテレオペレーションまでをゴールとします。効率的な組み立て方のレクチャーや注意点、組み立て時のさまざまなトラブルシュートを受けることが可能です。</p>\n<h3>2. 模倣学習orVLA学習コース</h3>\n<p>組み立てずみのSO-ARM10xまたはRobotis OMX-AIを持ち込んでいただき、模倣学習にチャレンジします。こちらも公式ドキュメントだけではわかりづらい模倣学習の準備やデータ収集方法やコツについてサポートが受けられます。トラブル時のトラブルシュートも可能です。\n<strong>アドバンスな取り組みとしてSmolVLAやPi0.5の学習についても対応いたします。</strong></p>\n<p><strong>ロボット貸し出し模倣学習枠</strong></p>\n<ul>\n<li>ロボットおよび付属品一式の貸し出しを行うコースです。</li>\n<li>PCは持参が必要です。</li>\n<li>本枠は概ね開催１週間前までに通常枠で規定人数が集まらない場合に解放いたします。\n    (本枠での申し込みが必要です。)</li>\n</ul>\n<h3>3. オンライン</h3>\n<p>Discordから会場の様子を見ていただきます。基本はテキストに沿って自習となります。\n音声 or chatにて講師へオンラインでのサポートを求めることが可能です。\n但しオンラインであるためサポートレベルはその他コースより落ちます。</p>\n<h3>想定スケジュール</h3>\n<p>13時から5時間ほどの予定です。</p>\n<p>▼組み立てコースの場合(進行の例)</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00-13:20</td>\n<td style=\"text-align: left;\">オリエンテーション</td>\n</tr>\n<tr>\n<td>13:20-13:50</td>\n<td style=\"text-align: left;\">モーターの初期設定</td>\n</tr>\n<tr>\n<td>14:00-15:30</td>\n<td style=\"text-align: left;\">フォロワーの組み立て</td>\n</tr>\n<tr>\n<td>15:30-16:30</td>\n<td style=\"text-align: left;\">リーダーの組み立て</td>\n</tr>\n<tr>\n<td>16:30-17:30</td>\n<td style=\"text-align: left;\">テレオペレーションの実施</td>\n</tr>\n<tr>\n<td>17:30-18:10</td>\n<td style=\"text-align: left;\">ラップアップ+片付け解散</td>\n</tr>\n</tbody>\n</table>\n<p>▼模倣学習コースの場合(進行の例)</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00-13:20</td>\n<td style=\"text-align: left;\">オリエンテーション</td>\n</tr>\n<tr>\n<td>13:20-13:50</td>\n<td style=\"text-align: left;\">環境セットアップ</td>\n</tr>\n<tr>\n<td>14:00-15:30</td>\n<td style=\"text-align: left;\">データ収集実践</td>\n</tr>\n<tr>\n<td>15:30-16:00</td>\n<td style=\"text-align: left;\">学習コマンドの実行</td>\n</tr>\n<tr>\n<td>16:00-17:30</td>\n<td style=\"text-align: left;\">模倣学習の概要の説明(学習を待ちながら)</td>\n</tr>\n<tr>\n<td>17:30-17:50</td>\n<td style=\"text-align: left;\">実機での動作確認</td>\n</tr>\n<tr>\n<td>17:50-18:10</td>\n<td style=\"text-align: left;\">ラップアップ+片付け解散</td>\n</tr>\n</tbody>\n</table>\n<h2>参加者の想定スキル</h2>\n<ol>\n<li>Linuxの基本的操作、Pythonがある程度理解できる。</li>\n<li>Google Colaboratoryなどを利用できる。</li>\n<li>自力でSO-ARM10xのテレオペレーションができる(模倣学習コースの場合)</li>\n</ol>\n<h2>参加者でご用意いただく環境</h2>\n<ul>\n<li>SO-ARM10x一式</li>\n</ul>\n<p>▼ 模倣学習コースの場合</p>\n<ul>\n<li>Google Colaboraotry Proプラン</li>\n<li>PC(GPU付きのノートPC or AppleSilicon mac) ※実施動作ではローカルPCにパワーが必要なため</li>\n<li>USBカメラ(最低1台) 720P以上(2MPixel以上)　※ノートパソコンについているカメラでもなんとかなります。</li>\n<li>カメラをつけられる台座 ※100均で売っているスタンドになる自撮り棒など</li>\n</ul>\n<h2><span style=\"color:red;\">LeRobotのハンズオンイベント始めました！</span></h2>\n<p>HugginFaceが主導するロボットプロジェクト <strong>LeRobot</strong>のハンズオンプロジェクトが始まります。\nこのハンズオン全てに参加するとLeRobot対応ロボットSO-ARMの組み立てから、模倣学習の基本、VLA、自分オリジナルの模倣学習モデルの作成が行えます。</p>\n<p>これからSO-ARMを組み立てようとされている方は参加マストなイベントとなっています。\nまたSO-ARMをすでに持っている方も見学枠としてご参加いただけます。\n必要であれば模倣学習やLeRobotに関する相談なども受け付けます。</p>\n<p>会場と講師は2024年から長らくLeRobotの日本での普及に力を注いでいるメンバーです。</p>\n<ul>\n<li><strong>ロボスタディオンは第一回LeRobot World Wide HackathonでHuggingFace公式の日本リアル会場となりました。</strong></li>\n</ul>\n<p><img src=\"https://secure-res.craft.do/v2/2Z7zq6xLG8k84pKaNr33XaUy8txWLoeJBY9BiUjw4KZaZsU1PqDdALKMjEih4SUsJW1N8kTnstVPDHcSn4GmHYZWmej9JPVSWDqiiPBC5DxEuVmHndUpZ9tsLqbHL6d1z1qoxWrENoDjYq14iGCwKefarXUX13eD8MWfj9VmgpRQGXa62qrtCM2HwmuJpFfNvz5Pp2QyNZtyddEqWu56fD2tR7tCb1AKJBgrcMnXnxNMFypQM5BqXEPV3AD9NCxa3Be51vpWF4r9iQi4SeeLW69sq16xpvr57tJfc6ibBWKrAEL8byREpJcR1BwwV7V7p2wYdFaxUJikAZJFNUwERmm3U9TAGpddhatnmxpdbV3gXBVFTsoHuLSszhdC8GJ2EBqD9aaYagJs4eTJUoMrEKotHqN1Kxz5/AP1GczPdlLw7gXObgbRBuTKqpJVkeUMQSNCEyZu2120afF6U6NJvfRLbwvWecww1458-h1031-s-no-gm.jpg\" width=\"300\"></p>\n<ul>\n<li><strong>講師はLeRobot World Wide Hackathonの入賞者</strong></li>\n</ul>\n<p><img src=\"https://secure-res.craft.do/v2/AbcZoueyif62wrCzXSFVfQE9jfmXoDCfztN9hPxJ3A76iBrMQEFKjemWeaDkEYpnFRXqvZ9nzWMYBCaoJXV9Hr8AHsdNWHM6WYbkeZZSSHeeWdeiViMf56ZkDHMeE1AQcXs9LxExNYaQ21yYvDELh8djmncJAJRzYrqAbWpbiQrnmwygvAUmeC2tjLCvFoDZm6skq6Fqy8C5xakuT4QDLxPQdAfW7yN2TZSvrURyR9Z6yzpCy1VgSx4eWAtuA9eNM1eitFmABgMVWckZX6FvarACjLHATY16f1oGZ6QMhd6GvaEYg99962kqWLpWE9w9VqAQgQQVJTm3ThKiniHWfxaeKSVg4p/Masato%20Kawamura_certificate%201.jpg\" width=\"300\"></p>\n<p><span style=\"color:red;\"><strong>今始まろうとしている日本のLeRobotコミュニティにいち早く参加するチャンスとなっています。</strong></span></p>\n<p>この講座は以下のような方に向けております。<br></p>\n<p>・AI等を業務で扱っておりロボット制御に興味がある方<br>\n・これからロボットアームを自作したい方<br>\n・ロボットアーム向け模倣学習を学びたい方<br>\n・オープンソースロボットアームに興味のある方<br></p>\n<h2>ロボットアームのイメージ</h2>\n<p><img src=\"https://github.com/TheRobotStudio/SO-ARM100/blob/main/media/cam_mount2.jpg?raw=true\" width=\"300\">\n<img src=\"https://github.com/TheRobotStudio/SO-ARM100/blob/main/media/UVC_cam_mount.jpeg?raw=true\" width=\"300\"><br>\n<img src=\"https://github.com/TheRobotStudio/SO-ARM100/blob/main/media/UVC_cam_mount_plugin.jpg?raw=true\" width=\"300\"><br>\n<img src=\"https://github.com/TheRobotStudio/SO-ARM100/blob/main/media/d405_mount.jpg?raw=true\" width=\"300\"><br></p>",
-      "url": "https://robostadion.connpass.com/event/405649/",
-      "image_url": "https://media.connpass.com/thumbs/6f/88/6f882de74cdcd460f3989e1acbb4d870.png",
-      "hash_tag": "robostadion",
-      "started_at": "2026-09-20T13:00:00+09:00",
-      "ended_at": "2026-09-20T18:00:00+09:00",
-      "published_at": "2026-09-02T09:33:36+09:00",
-      "limit": 13,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 15574,
-        "subdomain": "robostadion",
-        "title": "ロボスタディオン",
-        "url": "https://robostadion.connpass.com/"
-      },
-      "address": "東京都千代田区外神田6-11-16(GMビル1階)",
-      "place": "ロボ☆スタディオン",
-      "lat": "35.703893800000",
-      "lon": "139.771148400000",
-      "owner_id": 911672,
-      "owner_nickname": "robostadion",
-      "owner_display_name": "robostadion",
-      "accepted": 9,
-      "waiting": 0,
-      "updated_at": "2026-09-20T13:04:52+09:00"
     },
     {
       "id": 404562,
@@ -333,37 +333,6 @@
       "accepted": 0,
       "waiting": 0,
       "updated_at": "2026-09-09T06:57:26+09:00"
-    },
-    {
-      "id": 404442,
-      "title": "第130回 (2026/9/20(日)) CoderDojo 柏の葉",
-      "catch": "",
-      "description": "<p>CoderDojo Kashowa no ha (柏の葉) を開催します。<br></p>\n<p>■受付について<br>\n以前から参加している人は、【参加したことがある人】を選んでください。<br>\nまた、CoderDojo Kashowa no ha (柏の葉)ではなく、近隣の 柏、南柏、沼南 に来た事がある人も【参加したことがある人】を選んでください。<br>\n今までにCoderDojo Kashowa no ha (柏の葉)や近隣の 柏、南柏、沼南にも来たことが無い人、または、Scratch を使ったことが無い人は、【初めて参加する人】を選んでください。<br>\n<br>\n■年齢について<br>\n7〜17歳を対象としています。<br>\n見学という事でしたら、それ以外の年齢の方も受け付けています。<br>\n事前に見学である事をお知らせいただけますと助かります。<br></p>\n<p>■当日について<br>\n【時間】10:00～ 12:00 時間に遅れないようにお願いします。<br>\n【場所】KOILスタジオ(ららぽーと柏の葉北館6F)<br>\n【最寄り駅】つくばエクスプレス線 柏の葉キャンパス駅<br></p>\n<p>KOIL の紹介<br>\n<a href=\"https://www.koil.jp/&lt;/br>\" rel=\"nofollow\">https://www.koil.jp/<br></a>\n<br>\n会場へのお問い合わせは、ご遠慮ください。<br>\n当日の欠席や遅刻の連絡も会場ではなく、「イベントへのお問い合わせ」にてお願いいたします。\n<br>\n<br>パソコンを持参できる方は会場に持ってきてください。<br>\nパソコンの貸し出しを希望される方は、「イベントへのお問い合わせ」からお知らせください。3台と限りがありますが、お貸しできます\n<br>\n<br>\nそれ以外にご不明な点等ございましたら、お問い合わせください。\n<br><br>\nそれでは当日お会いできることを楽しみにしています。<br>\n子どものためのプログラミング道場<br>\nCoderDojo Kashiwa <br>\n<br>\nCoderDojo については、以下の CoderDojo Japan のサイトを参考ください<br>\n<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">https://coderdojo.jp/</a></p>",
-      "url": "https://kashiwa-no-ha.connpass.com/event/404442/",
-      "image_url": null,
-      "hash_tag": "",
-      "started_at": "2026-09-20T10:00:00+09:00",
-      "ended_at": "2026-09-20T12:00:00+09:00",
-      "published_at": "2026-08-20T17:23:47+09:00",
-      "limit": 15,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 15705,
-        "subdomain": "kashiwa-no-ha",
-        "title": "CoderDojo柏の葉",
-        "url": "https://kashiwa-no-ha.connpass.com/"
-      },
-      "address": "千葉県柏市若柴178-4",
-      "place": "KOIL",
-      "lat": "35.895519200000",
-      "lon": "139.951149200000",
-      "owner_id": 116459,
-      "owner_nickname": "KenIcs",
-      "owner_display_name": "坂田 健一(CoderDojo 柏)",
-      "accepted": 1,
-      "waiting": 0,
-      "updated_at": "2026-08-20T17:23:47+09:00"
     }
   ]
 }
