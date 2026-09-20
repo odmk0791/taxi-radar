@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-20T12:24:23.402705+09:00",
+  "fetched_at": "2026-09-20T17:56:33.900083+09:00",
   "date": "20260920",
   "count": 12,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-09-13T20:41:53+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -47,7 +47,7 @@
       "published_at": "2026-09-08T14:23:41+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 1121,
         "subdomain": "iotlt",
@@ -61,9 +61,9 @@
       "owner_id": 30439,
       "owner_nickname": "kitazaki",
       "owner_display_name": "kitazaki",
-      "accepted": 19,
-      "waiting": 1,
-      "updated_at": "2026-09-08T14:40:24+09:00"
+      "accepted": 22,
+      "waiting": 2,
+      "updated_at": "2026-09-20T13:37:19+09:00"
     },
     {
       "id": 405550,
@@ -78,7 +78,7 @@
       "published_at": "2026-09-01T11:26:09+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 2728,
         "subdomain": "fm-mkmk",
@@ -109,7 +109,7 @@
       "published_at": "2026-09-14T14:00:13+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都新宿区四谷本塩町2-8",
       "place": "Tokyo Bitcoin Base",
@@ -135,7 +135,7 @@
       "published_at": "2026-08-31T21:45:50+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": null,
       "address": "東京都港区台場２丁目３−２ 台場フロンティアビル 12F",
       "place": "docomo R&D OPEN LAB ODAIBA",
@@ -144,7 +144,7 @@
       "owner_id": 441324,
       "owner_nickname": "misakiotb",
       "owner_display_name": "おとべ",
-      "accepted": 76,
+      "accepted": 72,
       "waiting": 0,
       "updated_at": "2026-09-11T14:58:51+09:00"
     },
@@ -161,7 +161,7 @@
       "published_at": "2026-09-02T09:33:36+09:00",
       "limit": 13,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15574,
         "subdomain": "robostadion",
@@ -177,7 +177,7 @@
       "owner_display_name": "robostadion",
       "accepted": 9,
       "waiting": 0,
-      "updated_at": "2026-09-02T09:33:36+09:00"
+      "updated_at": "2026-09-20T13:04:52+09:00"
     },
     {
       "id": 404562,
@@ -192,7 +192,7 @@
       "published_at": "2026-09-02T19:46:30+09:00",
       "limit": 33,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1332,
         "subdomain": "jawsug-iot",
@@ -206,7 +206,7 @@
       "owner_id": 38710,
       "owner_nickname": "tomotomobile",
       "owner_display_name": "Tomoyuki Sugita",
-      "accepted": 11,
+      "accepted": 12,
       "waiting": 0,
       "updated_at": "2026-09-19T12:12:07+09:00"
     },
@@ -254,7 +254,7 @@
       "published_at": "2026-09-19T18:28:33+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 966,
         "subdomain": "devmorning",
@@ -285,7 +285,7 @@
       "published_at": "2026-09-09T18:21:13+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 18108,
         "subdomain": "nishikasai",
