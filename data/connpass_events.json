@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-22T09:26:50.349122+09:00",
+  "fetched_at": "2026-09-22T14:41:06.282018+09:00",
   "date": "20260922",
   "count": 3,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-09-21T17:41:16+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -61,7 +61,7 @@
       "owner_id": 197714,
       "owner_nickname": "clear_",
       "owner_display_name": "clear_",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-09-21T17:41:16+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-06-04T09:00:00+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4032,
         "subdomain": "iotlab",
