@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-23T04:26:12.200948+09:00",
+  "fetched_at": "2026-09-23T07:34:52.765357+09:00",
   "date": "20260923",
-  "count": 10,
+  "count": 9,
   "events": [
     {
       "id": 396361,
@@ -281,37 +281,6 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-09-20T00:18:10+09:00"
-    },
-    {
-      "id": 401818,
-      "title": "武蔵野線.dev クロスコミュニティ交流会 vol.1 in 朝霞",
-      "catch": "集え！武蔵野線沿線エンジニア！",
-      "description": "<h2>イベント概要</h2>\n<p>埼京.dev、多摩.dev、東葛.devの武蔵野線沿線（？）3コミュニティの合同イベント！<br>\n各コミュニティに参加したことがある人もない人も、垣根を超えて都心をぐるっと囲んだ縁で繋がりましょう！！<br>\n皆さんが学んだ体験したことなどについてトークしたり聴いたり、ゆる〜く交流できる場にしたいと思っています。  </p>\n<p>フロントエンド、バックエンド、クラウド、インフラ、DX、AI、IoTなど、、、<br>\n<strong>IT に関わることなんでも！</strong></p>\n<h2>開催概要</h2>\n<p>日時：2026/09/23(水)：秋分の日 13:00〜<br>\n場所：朝霞市産業文化センター 2F　研修室 兼 集会室 第2、第3  </p>\n<h2>対象者</h2>\n<ul>\n<li>武蔵野線沿線、あるいはその近辺在住、在勤の IT エンジニア</li>\n<li>外部のエンジニアとコミュニケーションを取りたい人</li>\n<li>ゆるくエンジニアと交流したい人</li>\n<li>各コミュニティの特色を知りたい人</li>\n<li>対話を通してエンジニアリングについて考えたい人</li>\n</ul>\n<h2>当日の流れ（予定）</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00 ~</td>\n<td>（会場設営、準備）</td>\n</tr>\n<tr>\n<td>13:10 ~</td>\n<td>受付</td>\n</tr>\n<tr>\n<td>13:15 ~</td>\n<td>あいさつ</td>\n</tr>\n<tr>\n<td>13:20 ~</td>\n<td>テーブル分け、移動</td>\n</tr>\n<tr>\n<td>13:30 ~</td>\n<td>自己紹介 &amp; OST</td>\n</tr>\n<tr>\n<td>16:15 ~</td>\n<td>片付け、撤収</td>\n</tr>\n</tbody>\n</table>\n<p>会場の電源は限りがございますので、PC などあらかじめ充電の上お越しください。</p>\n<h3>OSTとは</h3>\n<p>オープン・スペース・テクノロジーの略です。<br>\nあらかじめアジェンダ（議題）やスピーカーを決めず、参加者の自主性と関心に基づいて進行するミーティング／カンファレンス手法です。</p>\n<h4>OSTの4つの原則</h4>\n<ul>\n<li>ここにやってきた人は誰でも適切な人である（Who comes is the right people）：役職や知名度に関係なく、関心を持って集まった人こそが最良の参加者です。</li>\n<li>何が起きようと、起きたことが起きたことである（Whatever happens is the only thing that could have）：予期せぬ脱線やアイデアの発生を肯定し、その場の流れを受け入れます。</li>\n<li>いつ始まろうと、始まったときが適切なときである（Whenever it starts is the right time）：創造的な議論は厳密な時計の針ではなく、エネルギーが高まった瞬間に始まります。</li>\n<li>それが終わったときが、終わりのときである（When it is over, it is over）：予定時間より早く結論が出れば終了し、無理に時間を引き延ばしません。</li>\n</ul>\n<h4>OSTのたった1つの法則：「移動の法則」（The Law of Two Feet）</h4>\n<p>「自分が学んでもおらず、貢献もしていないと感じたら、自分の足を使って別の場所に移動しなければならない」</p>\n<p>退屈な場所に留まることは参加者全員にとって非生産的です。主体的に自分が価値を生める・学べる場所へ移動することが推奨されます。</p>\n<h4>大まかな流れ</h4>\n<ol>\n<li>全体ルール説明</li>\n<li>アジェンダ・セッティング</li>\n<li>参加したいセッションを選ぶ</li>\n<li>分科会セッション</li>\n<li>クロージング（全体へ話し合いの内容の報告）</li>\n</ol>\n<p>アジェンダは主催者側でもいくつか用意しますが、参加者にその場で募りますので、積極的に声を出してもらえると嬉しいです。</p>\n<h2>参加費</h2>\n<p>無料 </p>\n<h2>飲食について</h2>\n<p>会議室内での飲食は可能ですが、主催側で飲食物は特に用意しません。<br>\n各自持ち寄りをお願いします。\nゴミの持ち帰りにもご協力ください。</p>\n<p>アルコールはNGです。</p>\n<h2>当日の連絡先</h2>\n<p>主催者に DM をお願いします。   </p>\n<p><a href=\"https://x.com/hk_it7\" rel=\"nofollow\">https://x.com/hk_it7</a></p>\n<h2>留意事項</h2>\n<p>質問・疑問などは主催者( <a href=\"https://x.com/hk_it7\" rel=\"nofollow\">https://x.com/hk_it7</a> )への DM でご連絡ください。<br>\n知識の共有および、参加者同士の交流を目的としない参加はお断りしています。<br>\n参加目的が不適切だと判断される場合、運営側で参加をキャンセルする場合があります。<br>\n詳細は行動規範をご確認ください。  </p>\n<h2>行動規範</h2>\n<p><a href=\"https://scrapbox.io/toukatsu-dev/%E8%A1%8C%E5%8B%95%E8%A6%8F%E7%AF%84\" rel=\"nofollow\">https://scrapbox.io/toukatsu-dev/%E8%A1%8C%E5%8B%95%E8%A6%8F%E7%AF%84</a></p>",
-      "url": "https://musashino-line.connpass.com/event/401818/",
-      "image_url": "https://media.connpass.com/thumbs/eb/af/ebaf79d9c7750e267d9fac903ffcf8d4.png",
-      "hash_tag": "musashino_line_dev",
-      "started_at": "2026-09-23T13:00:00+09:00",
-      "ended_at": "2026-09-23T16:30:00+09:00",
-      "published_at": "2026-08-13T09:16:13+09:00",
-      "limit": 36,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17799,
-        "subdomain": "musashino-line",
-        "title": "武蔵野線.dev",
-        "url": "https://musashino-line.connpass.com/"
-      },
-      "address": "埼玉県朝霞市浜崎６６９−１",
-      "place": "朝霞市産業文化センター",
-      "lat": "35.813313800000",
-      "lon": "139.590402000000",
-      "owner_id": 211905,
-      "owner_nickname": "hiro199207",
-      "owner_display_name": "h.kono",
-      "accepted": 17,
-      "waiting": 0,
-      "updated_at": "2026-08-13T22:16:19+09:00"
     }
   ]
 }
