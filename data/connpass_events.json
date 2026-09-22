@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-22T14:41:06.282018+09:00",
+  "fetched_at": "2026-09-22T19:41:27.232033+09:00",
   "date": "20260922",
   "count": 3,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-09-21T01:48:19+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 12277,
         "subdomain": "fffff",
@@ -47,7 +47,7 @@
       "published_at": "2026-09-21T17:41:16+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -78,7 +78,7 @@
       "published_at": "2026-06-04T09:00:00+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 4032,
         "subdomain": "iotlab",
