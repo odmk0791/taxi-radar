@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-23T10:06:38.357881+09:00",
+  "fetched_at": "2026-09-23T16:04:26.077104+09:00",
   "date": "20260923",
   "count": 10,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-06-05T08:57:06+09:00",
       "limit": 21,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10465,
         "subdomain": "rumicar",
@@ -78,7 +78,7 @@
       "published_at": "2026-05-19T15:13:29+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10465,
         "subdomain": "rumicar",
@@ -109,7 +109,7 @@
       "published_at": "2026-09-17T13:26:54+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10465,
         "subdomain": "rumicar",
@@ -140,7 +140,7 @@
       "published_at": "2026-06-24T20:24:25+09:00",
       "limit": 230,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17336,
         "subdomain": "tunacamp",
@@ -154,7 +154,7 @@
       "owner_id": 998457,
       "owner_nickname": "tunacamp",
       "owner_display_name": "TUNA Camp",
-      "accepted": 117,
+      "accepted": 119,
       "waiting": 0,
       "updated_at": "2026-09-21T19:47:36+09:00"
     },
@@ -171,7 +171,7 @@
       "published_at": "2026-09-17T13:11:59+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 10465,
         "subdomain": "rumicar",
@@ -233,7 +233,7 @@
       "published_at": "2026-09-02T20:28:18+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16057,
         "subdomain": "coderdojokagurazaka",
@@ -264,7 +264,7 @@
       "published_at": "2026-09-20T00:18:10+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15927,
         "subdomain": "it-promort",
@@ -295,7 +295,7 @@
       "published_at": "2026-08-13T09:16:13+09:00",
       "limit": 36,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17799,
         "subdomain": "musashino-line",
@@ -309,7 +309,7 @@
       "owner_id": 211905,
       "owner_nickname": "hiro199207",
       "owner_display_name": "h.kono",
-      "accepted": 17,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-08-13T22:16:19+09:00"
     }
