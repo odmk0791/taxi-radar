@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-24T09:09:13.068770+09:00",
+  "fetched_at": "2026-09-24T14:42:13.979348+09:00",
   "date": "20260924",
   "count": 10,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 18,
+      "accepted": 25,
       "waiting": 0,
       "updated_at": "2026-09-18T17:22:19+09:00"
     },
@@ -61,40 +61,9 @@
       "owner_id": 684738,
       "owner_nickname": "RPACommunity",
       "owner_display_name": "RPACommunity",
-      "accepted": 48,
+      "accepted": 58,
       "waiting": 0,
       "updated_at": "2026-09-11T16:40:19+09:00"
-    },
-    {
-      "id": 404449,
-      "title": "タスクと目標を、ツールに任せる。タスク管理・目標管理ツールまるごと体験",
-      "catch": "〜スタッフ・奥野がタスク管理、店長・冨上が目標管理を紹介〜",
-      "description": "<p>タスク管理も目標管理も、続けようとして途中で止まってしまった。そんな覚えのある方は多いはずです。ノートや手帳を新調しても更新が止まる。ツールを入れてみたけれど開かなくなる。</p>\n<p>この勉強会では、Tatami Worksスタッフ・奥野と店長・冨上が、いま使われている主なタスク管理ツールと目標管理ツールを、実際に画面を出して次々に紹介します。使うと何がどう変わるのか、カレンダーとの連携やAI機能で何ができるのかも取り上げます。</p>\n<p>タスク管理ツールとして扱うのは、Google Tasks、Asana、Todoistの3つです。話題の新顔ではなく、長く使われていて今後も残りそうなものを選びました。毎日開くツールなので、続くかどうかを基準にしています。</p>\n<p>いずれも無料プランがあります。その場で立ち上げて見せますので、参加者のみなさんも自分のアカウントを作って動かしてみてください。奥野のタスク管理パートから始まり、冨上の目標管理事例で締める2部構成です。</p>\n<h2>開催概要</h2>\n<ul>\n<li>日時：2026年9月24日(木)19時〜21時</li>\n<li>会場：Tatami Worksイベントスペース(〒156-0055 東京都世田谷区船橋1丁目10−8 植松ビル 3F)</li>\n<li>参加費：無料</li>\n<li>定員：8人</li>\n<li>持ち物：パソコン(Wi-Fi、電源あります)</li>\n<li>登壇：Tatami Worksスタッフ・奥野／店長・冨上</li>\n</ul>\n<h2>進め方</h2>\n<p>奥野と冨上が、それぞれの担当パートで「このツールは何ができるのか」を短く解説します。そのあとで、みなさんに同じツールを開いてもらい、その場で触ってみる時間を挟みます。これを何本か繰り返す形です。事前準備やアカウントの事前作成は不要です。当日その場で登録して触っていきます。</p>\n<h2>取り上げる内容の例</h2>\n<ul>\n<li>タスク管理ツールを使うことで、何がどう変わるか</li>\n<li>今どきのツールの使い方(カレンダー連携、AI連携ふくむ)</li>\n<li>Google Tasks・Asana・Todoistを無料プランでその場で立ち上げて触ってみる</li>\n<li>冨上の目標管理ツール事例</li>\n</ul>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>タスク管理・目標管理を始めたいけれど、どのツールを選ぶかで迷っている方</li>\n<li>紙のノートや手帳でやりくりしていて、そろそろツールに移したい方</li>\n<li>一度導入したツールがあるけれど、使いこなせているか自信がない方</li>\n<li>カレンダーやAIとの連携で何ができるのかを一度整理したい方</li>\n<li>座学だけでなく、その場で自分の手で触ってみたい方</li>\n</ul>\n<p>特別な知識や事前準備は必要ありません。参加をご希望の方は、このページの参加ボタンからお申し込みください。</p>",
-      "url": "https://tatamiworks.connpass.com/event/404449/",
-      "image_url": "https://media.connpass.com/thumbs/54/1b/541b53678dda1138aed0a88947ef5c62.png",
-      "hash_tag": "",
-      "started_at": "2026-09-24T19:00:00+09:00",
-      "ended_at": "2026-09-24T21:00:00+09:00",
-      "published_at": "2026-08-20T19:40:20+09:00",
-      "limit": 8,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17595,
-        "subdomain": "tatamiworks",
-        "title": "Tatami Works",
-        "url": "https://tatamiworks.connpass.com/"
-      },
-      "address": "東京都世田谷区船橋1-10-8植松ビル301",
-      "place": "Tatami Works イベントスペース",
-      "lat": "35.647334100000",
-      "lon": "139.622931900000",
-      "owner_id": 774654,
-      "owner_nickname": "tatami_works",
-      "owner_display_name": "tatami_works",
-      "accepted": 1,
-      "waiting": 0,
-      "updated_at": "2026-08-20T19:40:20+09:00"
     },
     {
       "id": 405674,
@@ -159,10 +128,41 @@
       "updated_at": "2026-09-03T18:51:50+09:00"
     },
     {
+      "id": 404449,
+      "title": "タスクと目標を、ツールに任せる。タスク管理・目標管理ツールまるごと体験",
+      "catch": "〜スタッフ・奥野がタスク管理、店長・冨上が目標管理を紹介〜",
+      "description": "<p>タスク管理も目標管理も、続けようとして途中で止まってしまった。そんな覚えのある方は多いはずです。ノートや手帳を新調しても更新が止まる。ツールを入れてみたけれど開かなくなる。</p>\n<p>この勉強会では、Tatami Worksスタッフ・奥野と店長・冨上が、いま使われている主なタスク管理ツールと目標管理ツールを、実際に画面を出して次々に紹介します。使うと何がどう変わるのか、カレンダーとの連携やAI機能で何ができるのかも取り上げます。</p>\n<p>タスク管理ツールとして扱うのは、Google Tasks、Asana、Todoistの3つです。話題の新顔ではなく、長く使われていて今後も残りそうなものを選びました。毎日開くツールなので、続くかどうかを基準にしています。</p>\n<p>いずれも無料プランがあります。その場で立ち上げて見せますので、参加者のみなさんも自分のアカウントを作って動かしてみてください。奥野のタスク管理パートから始まり、冨上の目標管理事例で締める2部構成です。</p>\n<h2>開催概要</h2>\n<ul>\n<li>日時：2026年9月24日(木)19時〜21時</li>\n<li>会場：Tatami Worksイベントスペース(〒156-0055 東京都世田谷区船橋1丁目10−8 植松ビル 3F)</li>\n<li>参加費：無料</li>\n<li>定員：8人</li>\n<li>持ち物：パソコン(Wi-Fi、電源あります)</li>\n<li>登壇：Tatami Worksスタッフ・奥野／店長・冨上</li>\n</ul>\n<h2>進め方</h2>\n<p>奥野と冨上が、それぞれの担当パートで「このツールは何ができるのか」を短く解説します。そのあとで、みなさんに同じツールを開いてもらい、その場で触ってみる時間を挟みます。これを何本か繰り返す形です。事前準備やアカウントの事前作成は不要です。当日その場で登録して触っていきます。</p>\n<h2>取り上げる内容の例</h2>\n<ul>\n<li>タスク管理ツールを使うことで、何がどう変わるか</li>\n<li>今どきのツールの使い方(カレンダー連携、AI連携ふくむ)</li>\n<li>Google Tasks・Asana・Todoistを無料プランでその場で立ち上げて触ってみる</li>\n<li>冨上の目標管理ツール事例</li>\n</ul>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>タスク管理・目標管理を始めたいけれど、どのツールを選ぶかで迷っている方</li>\n<li>紙のノートや手帳でやりくりしていて、そろそろツールに移したい方</li>\n<li>一度導入したツールがあるけれど、使いこなせているか自信がない方</li>\n<li>カレンダーやAIとの連携で何ができるのかを一度整理したい方</li>\n<li>座学だけでなく、その場で自分の手で触ってみたい方</li>\n</ul>\n<p>特別な知識や事前準備は必要ありません。参加をご希望の方は、このページの参加ボタンからお申し込みください。</p>",
+      "url": "https://tatamiworks.connpass.com/event/404449/",
+      "image_url": "https://media.connpass.com/thumbs/54/1b/541b53678dda1138aed0a88947ef5c62.png",
+      "hash_tag": "",
+      "started_at": "2026-09-24T19:00:00+09:00",
+      "ended_at": "2026-09-24T21:00:00+09:00",
+      "published_at": "2026-08-20T19:40:20+09:00",
+      "limit": 8,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17595,
+        "subdomain": "tatamiworks",
+        "title": "Tatami Works",
+        "url": "https://tatamiworks.connpass.com/"
+      },
+      "address": "東京都世田谷区船橋1-10-8植松ビル301",
+      "place": "Tatami Works イベントスペース",
+      "lat": "35.647334100000",
+      "lon": "139.622931900000",
+      "owner_id": 774654,
+      "owner_nickname": "tatami_works",
+      "owner_display_name": "tatami_works",
+      "accepted": 2,
+      "waiting": 0,
+      "updated_at": "2026-08-20T19:40:20+09:00"
+    },
+    {
       "id": 406499,
       "title": "ロボットのことをもっと知ろう！  〜ロボット × 日本アニメ　過去・現在・未来〜",
       "catch": "",
-      "description": "<h2>ロボットって、いま実際どこまで来てるの？</h2>\n<p>人型ロボットが工場で働きはじめ、四脚ロボットが街を歩く。\nニュースでは見かけるけれど、実際のところ、ロボットはいまどこまで来ているのでしょうか。</p>\n<p>ロボット業界で人材・情報プラットフォーム「RobotMateHub」を運営する山本力弥さんをお迎えして、その「現在地」を聞く夜です。\n山本さんは、youtubeをにぎわす中国をはじめとする最先端のロボット事情に精通されており、生のロボット最新情報をキャッチアップできる貴重な機会です。</p>\n<ul>\n<li><strong>ロボットの現在地</strong> ── いま実際に何ができて、何ができないのか</li>\n<li><strong>社会で活躍するロボットって、なんなんだろう</strong></li>\n</ul>\n<p>一方的にお話を聞く勉強会ではありません。\n参加者のみなさんから山本さんに質問を投げていただく、対話形式で進めます。\nずっと気になっていたけれど誰に聞けばいいかわからなかったこと、ぜひ持ってきてください。</p>\n<p>軽食とドリンクをご用意して、乾杯からはじめます。\n飲んだり食べたりしながら、リラックスして話せる場にしたいと思っています。</p>\n<h3>ロボットカーニバル AIフィルムコンテスト について</h3>\n<p>主催は、AIフィルムコンテスト「ロボットカーニバル」の運営チームです。\nロボットをテーマにした作品を募集していて、技術的に実現できるかどうかは問いません。どんなに突飛でも、どんなに遠い未来の話でも自由です。</p>\n<p>コンテストページ▷<a href=\"https://www.creators-wonderland.com/ja/contests/robot-carnival\" rel=\"nofollow\">https://www.creators-wonderland.com/ja/contests/robot-carnival</a></p>\n<p>ただ、いま現実のロボットがどこまで来ているのかを知っておくと、そこから先へ飛ぶための足場になります。応募を考えている方にも参考になるはずです。</p>\n<p>※ コンテストへの応募は参加条件ではありません。ロボットに興味のある方ならどなたでも歓迎です。</p>\n<h3>こんな方におすすめ</h3>\n<ul>\n<li>ロボットに興味がある</li>\n<li>ロボットについて、気になっていることを直接聞いてみたい</li>\n<li>生成AIで動画を作ってみたい</li>\n<li>アニメや映画が好き</li>\n<li>ロボットカーニバルに応募したい／応募を迷っている</li>\n<li>作りたい作品のアイデアを誰かに話してみたい</li>\n<li>同じコンテストに出す仲間と知り合いたい</li>\n</ul>\n<h3>登壇</h3>\n<p><strong>山本 力弥（ヤマリキ）さん</strong>\nRobotMateHub 代表 ／ 一般社団法人ビジネスAI推進機構 代表理事</p>\n<p>アクセンチュアで製造業向けコンサルを経て、ロボット業界へ。人型・四脚ロボットの法人／個人向け導入を推進。現在はロボット業界特化の人材・情報プラットフォーム「RobotMateHub」を創業・運営。ロボットで笑顔になっている人を見るのが好き。心を感じるロボットってめっちゃ素敵だな、と思っている。好きなロボ（っぽいやつ）はエヴァ。好きなアニメはSAOと最終兵器彼女。</p>\n<h3>MC</h3>\n<p><strong>くりえみ</strong>\nAiHUB株式会社 執行役員CMO ／ タレント・起業家</p>\n<p>起業家・会社経営者として活動する一方で、モデル・タレントとしても幅広く活躍。2023年12月には、日本初のバーチャルヒューマン芸能事務所を設立し、新たなエンターテイメントの形を生み出している。</p>\n<h3>タイムテーブル</h3>\n<p>-18:30　開場・受付（ドリンクをお渡しします）<br>\n-19:00　乾杯 ＆ オープニング<br>\n-19:05　山本力弥さん トークセッション<br>\n　　　　　・ロボットの現在地<br>\n　　　　　・社会で活躍するロボットって、なんなんだろう<br>\n-19:55　「ロボットカーニバル」のご紹介（応募要項・締切・賞について）<br>\n-20:00　交流会<br>\n-21:00　クロージング・解散<br>\n<br>\n※ 内容・時間は当日変更になる場合があります。</p>\n<h3>開催概要</h3>\n<ul>\n<li><strong>日時</strong>：2026年9月24日（木）19:00〜21:00（開場 18:30）</li>\n<li><strong>会場</strong>：AiHUBオフィス\n　東京都千代田区神田須田町2-1-1 MA SQUARE AKIHABARA 4F</li>\n<li><strong>定員</strong>：20名</li>\n<li><strong>参加費</strong>：1,500円（当日現金払い）</li>\n</ul>\n<h3>お願い</h3>\n<ul>\n<li>席数に限りがあります。ご参加が難しくなった場合は、お手数ですがキャンセル操作をお願いします。</li>\n<li>お酒を飲まれない方には、ノンアルコールドリンクをご用意します。</li>\n<li>参加登録はConnpassかLumaのいずれか１つでお願いします。（Luma：<a href=\"https://luma.com/event/manage/evt-JGuPTvJGIbrWZiO）\" rel=\"nofollow\">https://luma.com/event/manage/evt-JGuPTvJGIbrWZiO）</a></li>\n</ul>\n<h3>主催</h3>\n<p>AiHUB株式会社 ／ Creators' Wonderland\n「ロボットカーニバル」AIフィルムコンテスト\nコンテストページ▷<a href=\"https://www.creators-wonderland.com/ja/contests/robot-carnival\" rel=\"nofollow\">https://www.creators-wonderland.com/ja/contests/robot-carnival</a></p>",
+      "description": "<h2>ロボットって、いま実際どこまで来てるの？</h2>\n<p>人型ロボットが工場で働きはじめ、四脚ロボットが街を歩く。\nニュースでは見かけるけれど、実際のところ、ロボットはいまどこまで来ているのでしょうか。</p>\n<p>ロボット業界で人材・情報プラットフォーム「RobotMateHub」を運営する山本力弥さんをお迎えして、その「現在地」を聞く夜です。\n山本さんは、youtubeをにぎわす中国をはじめとする最先端のロボット事情に精通されており、生のロボット最新情報をキャッチアップできる貴重な機会です。</p>\n<ul>\n<li><strong>ロボットの現在地</strong> ── いま実際に何ができて、何ができないのか</li>\n<li><strong>社会で活躍するロボットって、なんなんだろう</strong></li>\n</ul>\n<p>一方的にお話を聞く勉強会ではありません。\n参加者のみなさんから山本さんに質問を投げていただく、対話形式で進めます。\nずっと気になっていたけれど誰に聞けばいいかわからなかったこと、ぜひ持ってきてください。</p>\n<p>軽食とドリンクをご用意して、乾杯からはじめます。\n飲んだり食べたりしながら、リラックスして話せる場にしたいと思っています。</p>\n<h3>ロボットカーニバル AIフィルムコンテスト について</h3>\n<p>主催は、AIフィルムコンテスト「ロボットカーニバル」の運営チームです。\nロボットをテーマにした作品を募集していて、技術的に実現できるかどうかは問いません。どんなに突飛でも、どんなに遠い未来の話でも自由です。</p>\n<p>コンテストページ▷<a href=\"https://www.creators-wonderland.com/ja/contests/robot-carnival\" rel=\"nofollow\">https://www.creators-wonderland.com/ja/contests/robot-carnival</a></p>\n<p>ただ、いま現実のロボットがどこまで来ているのかを知っておくと、そこから先へ飛ぶための足場になります。応募を考えている方にも参考になるはずです。</p>\n<p>※ コンテストへの応募は参加条件ではありません。ロボットに興味のある方ならどなたでも歓迎です。</p>\n<h3>こんな方におすすめ</h3>\n<ul>\n<li>ロボットに興味がある</li>\n<li>ロボットについて、気になっていることを直接聞いてみたい</li>\n<li>生成AIで動画を作ってみたい</li>\n<li>アニメや映画が好き</li>\n<li>ロボットカーニバルに応募したい／応募を迷っている</li>\n<li>作りたい作品のアイデアを誰かに話してみたい</li>\n<li>同じコンテストに出す仲間と知り合いたい</li>\n</ul>\n<h3>登壇</h3>\n<p><strong>山本 力弥（ヤマリキ）さん</strong>\nRobotMateHub 代表 ／ 一般社団法人ビジネスAI推進機構 代表理事</p>\n<p>アクセンチュアで製造業向けコンサルを経て、ロボット業界へ。人型・四脚ロボットの法人／個人向け導入を推進。現在はロボット業界特化の人材・情報プラットフォーム「RobotMateHub」を創業・運営。ロボットで笑顔になっている人を見るのが好き。心を感じるロボットってめっちゃ素敵だな、と思っている。好きなロボ（っぽいやつ）はエヴァ。好きなアニメはSAOと最終兵器彼女。</p>\n<h3>MC</h3>\n<p><strong>くりえみ</strong>\nAiHUB株式会社 執行役員CMO ／ タレント・起業家</p>\n<p>起業家・会社経営者として活動する一方で、モデル・タレントとしても幅広く活躍。2023年12月には、日本初のバーチャルヒューマン芸能事務所を設立し、新たなエンターテイメントの形を生み出している。</p>\n<h3>タイムテーブル</h3>\n<p>-18:30　開場・受付（ドリンクをお渡しします）<br>\n-19:00　乾杯 ＆ オープニング<br>\n-19:05　山本力弥さん トークセッション<br>\n　　　　　・ロボットの現在地<br>\n　　　　　・社会で活躍するロボットって、なんなんだろう<br>\n-19:55　「ロボットカーニバル」のご紹介（応募要項・締切・賞について）<br>\n-20:00　交流会<br>\n-21:00　クロージング・解散<br>\n<br>\n※ 内容・時間は当日変更になる場合があります。</p>\n<h3>開催概要</h3>\n<ul>\n<li><strong>日時</strong>：2026年9月24日（木）19:00〜21:00（開場 18:30）</li>\n<li><strong>会場</strong>：AiHUBオフィス\n　東京都千代田区神田須田町2-1-1 MA SQUARE AKIHABARA 4F</li>\n<li><strong>定員</strong>：20名</li>\n<li><strong>参加費</strong>：1,500円（当日現金払い）</li>\n</ul>\n<h3>お願い</h3>\n<ul>\n<li>席数に限りがあります。ご参加が難しくなった場合は、お手数ですがキャンセル操作をお願いします。</li>\n<li>お酒を飲まれない方には、ノンアルコールドリンクをご用意します。</li>\n<li>参加登録はConnpassかLumaのいずれか１つでお願いします。（Luma：<a href=\"https://luma.com/ebanleaz\" rel=\"nofollow\">https://luma.com/ebanleaz</a> ）</li>\n</ul>\n<h3>主催</h3>\n<p>AiHUB株式会社 ／ Creators' Wonderland\n「ロボットカーニバル」AIフィルムコンテスト\nコンテストページ▷<a href=\"https://www.creators-wonderland.com/ja/contests/robot-carnival\" rel=\"nofollow\">https://www.creators-wonderland.com/ja/contests/robot-carnival</a></p>",
       "url": "https://connpass.com/event/406499/",
       "image_url": "https://media.connpass.com/thumbs/8f/94/8f9497f3e2dd6af96cc81bcd14e3d930.png",
       "hash_tag": "",
@@ -180,9 +180,9 @@
       "owner_id": 263868,
       "owner_nickname": "ArisaUki",
       "owner_display_name": "ArisaUki",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
-      "updated_at": "2026-09-18T21:13:00+09:00"
+      "updated_at": "2026-09-24T10:18:55+09:00"
     },
     {
       "id": 406287,
@@ -237,7 +237,7 @@
       "owner_id": 957907,
       "owner_nickname": "mariko_horitsugi",
       "owner_display_name": "mariko_horitsugi",
-      "accepted": 2,
+      "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-09-02T15:31:48+09:00"
     },
@@ -245,7 +245,7 @@
       "id": 395730,
       "title": "第03回勉強会",
       "catch": "",
-      "description": "<h1>概要</h1>\n<p>音声処理分野と Human Computer Interaction (HCI) 分野の接点を探し，新たな技術や研究を創発することを目的としています．研究者，学生，エンジニアの方を想定しておりますが，誰でもご参加いただけます．</p>\n<h1>発表者について</h1>\n<ul>\n<li>管理者が推薦いたしました．</li>\n<li>開催時期は未定ですが，次回以降の勉強会での発表を希望される方は，管理者までご連絡ください．</li>\n</ul>\n<h1>現地会場案内</h1>\n<ul>\n<li>docomo R&amp;D OPEN LAB ODAIBA Bridgeステージ</li>\n<li>〒135-0091 東京都港区台場2-3-2 台場フロンティアビル 12F</li>\n<li><a href=\"https://docomo-openlab.jp/\" rel=\"nofollow\">https://docomo-openlab.jp/</a></li>\n<li><strong>受付は12:00~13:00</strong>の対応となります。  </li>\n</ul>\n<h3>会場へのアクセス</h3>\n<p>アクセス方法は<a href=\"xxx\" rel=\"nofollow\">こちらのページ</a>からも確認いただけます。</p>\n<h3>入館から退館まで</h3>\n<p>ビルの1階, 2階に4箇所のQRコードゲートがあり、アプリで発行いただいたQRコードでゲートを通ることができます。\n下記のURLからWebアプリより会員登録を行い、来館予約を行ってください。\n※退館時もQRコードが必要です。\n<a href=\"https://docomo-openlab.jp/about/\" rel=\"nofollow\">https://docomo-openlab.jp/about/</a></p>\n<h1>キャンセル</h1>\n<ul>\n<li>参加は先着順になりますが，より多くの方へご参加いただきたいと考えています．</li>\n<li>大まかな参加人数を把握するために，当日都合が悪くなって参加できないことが判明した方は，お手数ですが速やかにキャンセル処理をお願いします．</li>\n</ul>\n<h1>その他</h1>\n<ul>\n<li>本勉強会は，技術交流が目的です．知識の共有や参加者同士の交流を目的としない方の参加はお断りします．</li>\n<li>参加目的が不適切だと判断される場合には，運営側で参加をキャンセルさせていただく場合がございます．</li>\n<li>イベントは記録のため録画される予定です。</li>\n<li>勉強会終了後，現地会場で懇親会（軽食・ドリンクあり）を開催します．懇親会への参加を希望する方は参加申し込み時のアンケートでその旨をお伝えください．</li>\n</ul>\n<h1>スケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時刻</th>\n<th style=\"text-align: left;\">講演者 (所属)</th>\n<th style=\"text-align: left;\">タイトル</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">13:00-13:10</td>\n<td style=\"text-align: left;\">高道 慎之介 (慶大)</td>\n<td style=\"text-align: left;\">開会挨拶 &amp; 諸注意</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10-14:00</td>\n<td style=\"text-align: left;\">橘 亮輔 (産総研)</td>\n<td style=\"text-align: left;\">講演タイトル</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:00-14:10</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">break time</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:10-15:00</td>\n<td style=\"text-align: left;\">中川 誠司 (千葉大)</td>\n<td style=\"text-align: left;\">講演タイトル</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00-15:10</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">break time</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:10-15:25</td>\n<td style=\"text-align: left;\">明渡隼人(株式会社Pictoria)</td>\n<td style=\"text-align: left;\">LT講演タイトル</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:25-15:40</td>\n<td style=\"text-align: left;\">柳田 耀 (NTT)</td>\n<td style=\"text-align: left;\">朗読音声の自分らしさと聞き手の没入感の関連性の検討</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:40-15:55</td>\n<td style=\"text-align: left;\">福田 航希 (慶大)</td>\n<td style=\"text-align: left;\">「自分の声，こんなに変だった？」――自己音声の再生・想像ギャップと個人特性・音声特徴の影響に関する大規模実験</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:55-16:05</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">break time</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:05-16:20</td>\n<td style=\"text-align: left;\">Kye Shimizu</td>\n<td style=\"text-align: left;\">LT講演タイトル</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:20-16:35</td>\n<td style=\"text-align: left;\">関 健太郎</td>\n<td style=\"text-align: left;\">Spatial Voice Conversion</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:35-16:50</td>\n<td style=\"text-align: left;\">阿部 雄斗</td>\n<td style=\"text-align: left;\">Japanese full-duplex model</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:50-17:00</td>\n<td style=\"text-align: left;\">國見 友亮 (産総研)</td>\n<td style=\"text-align: left;\">閉会挨拶</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:10-18:30</td>\n<td style=\"text-align: left;\">懇親会(デモ展示及び交流会)</td>\n<td style=\"text-align: left;\">Voice Feedforward(産総研 國見)、Change Deafness(筑波大学 岡野)、AItuber(株式会社Pictoria 明渡)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:30-19:00</td>\n<td style=\"text-align: left;\">片付け (19:00完全撤収)</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>",
+      "description": "<h1>概要</h1>\n<p>音声処理分野と Human Computer Interaction (HCI) 分野の接点を探し，新たな技術や研究を創発することを目的としています．研究者，学生，エンジニアの方を想定しておりますが，誰でもご参加いただけます．</p>\n<h1>発表者について</h1>\n<ul>\n<li>管理者が推薦いたしました．</li>\n<li>開催時期は未定ですが，次回以降の勉強会での発表を希望される方は，管理者までご連絡ください．</li>\n</ul>\n<h1>現地会場案内</h1>\n<ul>\n<li>docomo R&amp;D OPEN LAB ODAIBA Bridgeステージ</li>\n<li>〒135-0091 東京都港区台場2-3-2 台場フロンティアビル 12F</li>\n<li><a href=\"https://docomo-openlab.jp/\" rel=\"nofollow\">https://docomo-openlab.jp/</a></li>\n<li><strong>受付は12:00~13:00</strong>の対応となります。  </li>\n</ul>\n<h3>会場へのアクセス</h3>\n<p>アクセス方法は<a href=\"https://docomo-openlab.jp/about/\" rel=\"nofollow\">こちらのページ</a>からも確認いただけます。</p>\n<h3>入館から退館まで</h3>\n<p>ビルの1階, 2階に4箇所のQRコードゲートがあり、アプリで発行いただいたQRコードでゲートを通ることができます。\n下記のURLからWebアプリより会員登録を行い、来館予約を行ってください。\n※退館時もQRコードが必要です。\n<a href=\"https://docomo-openlab.jp/about/\" rel=\"nofollow\">https://docomo-openlab.jp/about/</a></p>\n<h1>キャンセル</h1>\n<ul>\n<li>参加は先着順になりますが，より多くの方へご参加いただきたいと考えています．</li>\n<li>大まかな参加人数を把握するために，当日都合が悪くなって参加できないことが判明した方は，お手数ですが速やかにキャンセル処理をお願いします．</li>\n</ul>\n<h1>その他</h1>\n<ul>\n<li>本勉強会は，技術交流が目的です．知識の共有や参加者同士の交流を目的としない方の参加はお断りします．</li>\n<li>参加目的が不適切だと判断される場合には，運営側で参加をキャンセルさせていただく場合がございます．</li>\n<li>イベントは記録のため録画される予定です。</li>\n<li>勉強会終了後，現地会場で懇親会（軽食・ドリンクあり）を開催します．懇親会への参加を希望する方は参加申し込み時のアンケートでその旨をお伝えください．</li>\n</ul>\n<h1>スケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時刻</th>\n<th style=\"text-align: left;\">講演者 (所属)</th>\n<th style=\"text-align: left;\">タイトル</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">13:00-13:10</td>\n<td style=\"text-align: left;\">高道 慎之介 (慶大)</td>\n<td style=\"text-align: left;\">開会挨拶 &amp; 諸注意</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10-14:00</td>\n<td style=\"text-align: left;\">橘 亮輔 (産総研)</td>\n<td style=\"text-align: left;\">発声における感覚運動統合とその神経メカニズム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:00-14:10</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">break time</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:10-15:00</td>\n<td style=\"text-align: left;\">中川 誠司 (千葉大)</td>\n<td style=\"text-align: left;\">骨伝導知覚のメカニズム解明に基づくコミュニケーション・デバイスの開発</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00-15:10</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">break time</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:10-15:25</td>\n<td style=\"text-align: left;\">明渡隼人(株式会社Pictoria)</td>\n<td style=\"text-align: left;\">「また話したくなる」AIキャラクターをつくる― AITuberの実践から考える魅力的な音声 ―</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:25-15:40</td>\n<td style=\"text-align: left;\">関 健太郎</td>\n<td style=\"text-align: left;\">Spatial Voice Conversion</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:40-15:55</td>\n<td style=\"text-align: left;\">福田 航希 (慶大)</td>\n<td style=\"text-align: left;\">「自分の声，こんなに変だった？」――自己音声の再生・想像ギャップと個人特性・音声特徴の影響に関する大規模実験</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:55-16:05</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">break time</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:05-16:20</td>\n<td style=\"text-align: left;\">Kye Shimizu</td>\n<td style=\"text-align: left;\">LT講演タイトル</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:20-16:35</td>\n<td style=\"text-align: left;\">柳田 耀 (NTT)</td>\n<td style=\"text-align: left;\">朗読音声の自分らしさと聞き手の没入感の関連性の検討</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:35-16:50</td>\n<td style=\"text-align: left;\">阿部 雄斗</td>\n<td style=\"text-align: left;\">Japanese full-duplex model</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:50-17:00</td>\n<td style=\"text-align: left;\">國見 友亮 (産総研)</td>\n<td style=\"text-align: left;\">閉会挨拶</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n<td style=\"text-align: left;\">--</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:10-18:30</td>\n<td style=\"text-align: left;\">懇親会(デモ展示及び交流会)</td>\n<td style=\"text-align: left;\">Voice Feedforward(産総研 國見)、Change Deafness(筑波大学 岡野)、AItuber(株式会社Pictoria 明渡)、リアルタイムのピッチシフトの体験(産総研 橘さん)、雑音耐性が高いマイク(SB Int,Hiraki)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:30-19:00</td>\n<td style=\"text-align: left;\">片付け (19:00完全撤収)</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>",
       "url": "https://speech-hci.connpass.com/event/395730/",
       "image_url": "https://media.connpass.com/thumbs/3c/7c/3c7cda99ae6da2b4db6eea1f61441b03.png",
       "hash_tag": "",
@@ -254,7 +254,7 @@
       "published_at": "2026-06-04T22:34:18+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16700,
         "subdomain": "speech-hci",
@@ -268,9 +268,9 @@
       "owner_id": 150781,
       "owner_nickname": "forthshinji",
       "owner_display_name": "forthshinji",
-      "accepted": 31,
+      "accepted": 30,
       "waiting": 0,
-      "updated_at": "2026-09-17T22:11:51+09:00"
+      "updated_at": "2026-09-24T13:15:27+09:00"
     },
     {
       "id": 406284,
@@ -285,7 +285,7 @@
       "published_at": "2026-09-08T12:25:07+09:00",
       "limit": 100,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -299,7 +299,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 14,
+      "accepted": 17,
       "waiting": 0,
       "updated_at": "2026-09-08T12:25:07+09:00"
     }
