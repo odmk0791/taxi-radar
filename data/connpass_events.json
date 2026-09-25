@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-26T05:56:13.302090+09:00",
+  "fetched_at": "2026-09-26T08:45:21.466012+09:00",
   "date": "20260926",
-  "count": 32,
+  "count": 29,
   "events": [
     {
       "id": 405044,
@@ -216,7 +216,7 @@
       "owner_id": 46423,
       "owner_nickname": "KazumaKadomae",
       "owner_display_name": "門前 一馬",
-      "accepted": 128,
+      "accepted": 129,
       "waiting": 7,
       "updated_at": "2026-09-24T12:49:37+09:00"
     },
@@ -434,7 +434,7 @@
       "owner_nickname": "jishiha",
       "owner_display_name": "jishiha",
       "accepted": 7,
-      "waiting": 3,
+      "waiting": 2,
       "updated_at": "2026-09-21T01:01:34+09:00"
     },
     {
@@ -901,99 +901,6 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-09-21T15:22:31+09:00"
-    },
-    {
-      "id": 404475,
-      "title": "三浦半島.rb #10 近況報告LT & 秋のもくもく自由研究会",
-      "catch": "三浦半島にみんなあつまれ〜",
-      "description": "<h1>三浦半島.rb とは</h1>\n<p>三浦半島もとい、神奈川県の南側を中心とした界隈で Ruby技術者たちが気軽に集まれる場を作りたいという思いで始動した神奈川のRubyコミュニティです。<br>\n神奈川県にお住まいの Rubyist の方、県外在住の三浦半島に遊びに行ってみたいRubyistの方も大歓迎です!<br></p>\n<p>活動レポートを Cosense の方でも取り上げています。<a href=\"https://scrapbox.io/miurahantorb/\" rel=\"nofollow\">https://scrapbox.io/miurahantorb/</a> <br>\n運営に関することは ruby-jp Slack の #miurahantorb チャンネルで会話しています。興味があればそちらにもご参加ください！</p>\n<h1>近況報告LT &amp; 秋のもくもく自由研究会</h1>\n<p>前半タイムは近況報告と題して情報交換、近況などをわいわい話す会をやる予定です。<br>\n前に立って話していただくLT形式・もしくは資料なしでゆるく話してもらうのも大歓迎です！開発相談やプロポーザルの壁打ちなどもぜひ持ち込みください！</p>\n<p>参考リンク: <a href=\"https://scrapbox.io/miurahantorb/2025%2F5%2F10_%E7%AC%AC2%E5%9B%9E_%E5%A5%BD%E3%81%8D%E3%81%AA%E3%82%82%E3%81%AELT%E5%A4%A7%E4%BC%9A%EF%BC%81_RubyKaigi%E5%9C%9F%E7%94%A3%E8%A9%B1%E3%82%82%E3%81%9C%E3%81%B2\" rel=\"nofollow\">第2回</a>、<a href=\"https://scrapbox.io/miurahantorb/2025%2F7%2F26_%E7%AC%AC3%E5%9B%9E_%E3%82%8F%E3%81%84%E3%82%8F%E3%81%84%E3%83%A2%E3%83%96%E3%83%97%E3%83%AD%E4%BC%9A%EF%BC%81%E3%80%9C%E3%81%AA%E3%82%93%E3%81%A7%E3%82%82%E7%9B%B8%E8%AB%87%E6%8C%81%E3%81%A1%E8%BE%BC%E3%81%BF%E5%A4%A7%E6%AD%93%E8%BF%8E%E3%80%9C\" rel=\"nofollow\">第3回</a>, <a href=\"https://scrapbox.io/miurahantorb/2025%2F9%2F20_%E8%BF%91%E6%B3%81%E7%99%BA%E8%A1%A8%E4%BC%9A!_&amp;_KoR2025%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%82%92%E7%9C%BA%E3%82%81%E3%82%8B%E4%BC%9A\" rel=\"nofollow\">第4回</a>, <a href=\"https://scrapbox.io/miurahantorb/2026%2F01%2F24_%E4%B8%89%E6%B5%A6%E5%8D%8A%E5%B3%B6.rb_%235_%E6%96%B0%E5%B9%B4%E4%BC%9ALT_&amp;_Ruby4.0%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88%E3%82%92%E8%AA%AD%E3%82%80%E4%BC%9A\" rel=\"nofollow\">第5回</a>, <a href=\"https://scrapbox.io/miurahantorb/2026%2F03%2F14_%E4%B8%89%E6%B5%A6%E5%8D%8A%E5%B3%B6.rb_%236_%E8%BF%91%E6%B3%81%E5%A0%B1%E5%91%8ALT_&amp;_%E6%8A%80%E8%A1%93%E8%A8%98%E4%BA%8B%E3%82%92%E3%81%BF%E3%82%93%E3%81%AA%E3%81%A7%E8%AA%AD%E3%82%80%E4%BC%9A\" rel=\"nofollow\">第6回</a>, <a href=\"https://scrapbox.io/miurahantorb/%E4%B8%89%E6%B5%A6%E5%8D%8A%E5%B3%B6.rb_%238_%E8%BF%91%E6%B3%81%E5%A0%B1%E5%91%8ALT_&amp;_%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E6%8A%80%E8%A1%93%E6%9B%B8%E6%8C%81%E3%81%A1%E5%AF%84%E3%82%8A%E4%BC%9A%EF%BC%882026%2F06%2F13%EF%BC%89\" rel=\"nofollow\">第8回</a>のCosenseログ</p>\n<p>後半タイムでは、「秋のもくもく自由研究会」と題して、参加者の方が連休中にやりたい自由研究を持ち寄ってもくもく会 + 成果発表する企画を実施予定です。<br></p>\n<p>会の中で「アイデアの壁打ち相手になってほしい / 成果物を見てもらいたい」といったご相談も大歓迎です!<br>\n主催者は M5Stack ATOM Matrix を持ち込んで自作万歩計の制作を進める予定です。<br> 秋休みの自由研究の進捗を出す場としてぜひご活用いただけると幸いです！</p>\n<h1>当日の流れ（予定）</h1>\n<ul>\n<li>14:15 開場</li>\n<li>14:30 自己紹介・アイスブレイク</li>\n<li>14:45 近況報告LT </li>\n<li>15:30(LTが終わり次第開始) もくもく自由研究会</li>\n<li>16:30 成果共有タイム </li>\n<li>16:45 撤収準備開始  </li>\n<li>17:00 完全撤収</li>\n<li>(自由参加) 本編終了後、会場近くのお店で懇親会を行う予定です。<ul>\n<li><strong>サブイベント形式での参加方式としています！懇親会に参加予定の方は 本イベント内のサブイベント(ページ下部)にご登録ください！</strong></li>\n</ul>\n</li>\n</ul>\n<h1>会場</h1>\n<ul>\n<li><a href=\"https://www.yokosuka-sanpla.jp/\" rel=\"nofollow\">横須賀市産業交流プラザ</a><ul>\n<li><a href=\"https://www.yokosuka-sanpla.jp/facility/\" rel=\"nofollow\">第二会議室</a></li>\n<li>〒238-0041 横須賀市本町3-27 ベイスクエアよこすか一番館3階</li>\n<li>アクセス: 京急汐入駅すぐそば、JR横須賀駅から徒歩圏内</li>\n</ul>\n</li>\n</ul>\n<h1>参加費</h1>\n<ul>\n<li>公共の施設を利用する予定のため、会場&amp;設備費として200円いただく予定です。</li>\n<li>当日、現金または PayPay でお支払いをお願いします。</li>\n</ul>\n<h2>連絡手段</h2>\n<p>Rubyコミュニティの Slackグループ ruby-jp((<a href=\"https://ruby-jp.github.io/\" rel=\"nofollow\">https://ruby-jp.github.io/</a>) の <code>#miurahantorb</code> チャンネル、もしくは kiryuanzu の Xアカウント(<a href=\"https://x.com/anzu_mmm/\" rel=\"nofollow\">https://x.com/anzu_mmm/</a>) にご連絡お願いします!</p>\n<h2>アンチハラスメントポリシー</h2>\n<p>Ruby25周年イベントのアンチハラスメントポリシーに従います。事前にお目通しください。<br>\n<a href=\"https://25.ruby.or.jp/coc.ja.html\" rel=\"nofollow\">https://25.ruby.or.jp/coc.ja.html</a></p>\n<h2>留意事項</h2>\n<ul>\n<li>質問・疑問などは主催者へのDM、もしくは ハッシュタグ #miurahantorb を付けて tweetでご連絡ください。</li>\n<li>三浦半島.rbはRubyや技術を軸にしたコミュニティです。知識の共有および、参加者同士の交流を目的としない参加はお断りしています。 参加目的が不適切だと判断される場合には、運営側で参加をキャンセルする場合があります。</li>\n</ul>",
-      "url": "https://miurahantorb.connpass.com/event/404475/",
-      "image_url": "https://media.connpass.com/thumbs/f9/43/f9435400fddddc32f6f834148fc87de6.png",
-      "hash_tag": "miurahantorb",
-      "started_at": "2026-09-26T14:30:00+09:00",
-      "ended_at": "2026-09-26T17:00:00+09:00",
-      "published_at": "2026-08-21T09:30:52+09:00",
-      "limit": 16,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 15836,
-        "subdomain": "miurahantorb",
-        "title": "三浦半島.rb",
-        "url": "https://miurahantorb.connpass.com/"
-      },
-      "address": "〒238-0041 横須賀市本町3-27 ベイスクエアよこすか一番館3階",
-      "place": "横須賀市産業交流プラザ",
-      "lat": "35.280973800000",
-      "lon": "139.663044800000",
-      "owner_id": 143645,
-      "owner_nickname": "kiryuanzu",
-      "owner_display_name": "kiryuanzu",
-      "accepted": 9,
-      "waiting": 0,
-      "updated_at": "2026-08-21T09:30:52+09:00"
-    },
-    {
-      "id": 395508,
-      "title": "kintone Café 神奈川 Vol.22 in 横須賀市",
-      "catch": "",
-      "description": "<h1>kintone Café 神奈川 Vol.22（リアル）<br></h1>\n<h1>◎開催概要<br></h1>\n<div style=\"margin-left:20px;\">\n日時：2026-9-26（土）14:00 - 17:00<br>\n場所： 横須賀市総合福祉会館 視聴覚室<br>\n<a href=\"https://www.city.yokosuka.kanagawa.jp/2605/sisetu/fc00000079.html\" rel=\"nofollow\">https://www.city.yokosuka.kanagawa.jp/2605/sisetu/fc00000079.html</a><br>\n住所：神奈川県横須賀市本町2丁目1<br>\n（京浜急行汐入駅下車徒歩6分・JR横須賀駅下車徒歩8分・京急バス「本町一丁目」下車徒歩2分）<br>\n<br>\n費用：参加費は無料です。　　　\n<br>\n</div>\n<h1>◎「kintone Café」とは？（理念）<br></h1>\n<p><br></p><div style=\"margin-left:20px;\">kintone Caféは、まだkintoneに触れたことの無い方から、より高度なカスタマイズを行いたいと考えているプロフェッショナルの方まで幅広い層を対象に、楽しく学び・教え合うことで、kintoneの魅力や活用法をみんなで共有するための勉強会コミュニティです。<br>\n<a href=\"https://www.kintonecafe.com/\" rel=\"nofollow\">kintone Caféサイト</a>\n</div>\n<p></p>\n<h1>◎対象<br></h1>\n<div style=\"margin-left:20px;\">・kintoneに興味を持っている方<br>\n・kintone使ってシステムの提案をしたい方<br>\n・kintoneを使って組織やチームを効率化したい方<br>\n・kintoneをいっしょに広めたい方<br>\n<br></div>\n\n<h1>◎テーマ<br></h1>\n<h2>神奈川がアツい！ 地域を支えるDX</h2>\n<p><br>\nNPOの組織運営や学童保育、自治体DXなど、「地域を支える仕組みづくり」がテーマ。<br>\nkintone hive tokyoで地区代表に選ばれた茅ヶ崎市役所の松原さんと、MCをされた蒲原さんにも参加いただける予定です！<br>\nなんとお二人とも神奈川！<br>\n<br>\n会場は、より多くの方に参加していただくために大きなお部屋のある横須賀市総合福祉会館に変更させていただきました。<br>\n元信用金庫を活用した学童保育施設を楽しみにされていた方、ごめんなさい。<br>\nたくさんのみなさまのご参加をお待ちしています。<br>\n</p>\n<h1>◎注意事項について<br></h1>\n<p>・会場の都合上、定員50名(スタッフも含む)とさせていただきます。先着順に漏れた方は申し訳ありませんが、次回にお願いいたします。<br>\n・会場にお越し下さる方は末尾のタイムラインを御確認いただき、時間内にお越しください。<br>\n・懇親会の人数把握のため、懇親会参加希望者の募集を一旦9月19日(土)までとします。 <br>\n・懇親会お申込後のキャンセルは、9月24日(木)18:00までとさせていただきます。</p>\n<h1>◎主催<br></h1>\n<div style=\"margin-left:20px;\">kintone Café 神奈川支部<br></div>\n\n<h1>◎ハッシュタグ<br></h1>\n<p><strong>#kintonecafe</strong></p>\n<h1>◎登壇者<br></h1>\n<div style=\"margin-left:20px;\">\n・kintone hive tokyo 2026 代表：松原 大さん（茅ヶ崎市役所）<br>\n・kintone hive tokyo 2026 MC：蒲原 大輔さん（サイボウズ株式会社）\n</div>\n\n<h1>◎全体タイムテーブル（※内容は変更となる可能性があります。ご了承ください）<br></h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: right;\">　</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">登壇</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">13:00～13:45</td>\n<td style=\"text-align: right;\">　</td>\n<td style=\"text-align: left;\">準備</td>\n<td style=\"text-align: left;\">運営スタッフ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:00～</td>\n<td style=\"text-align: right;\"></td>\n<td style=\"text-align: left;\">kintone Café 神奈川 Vol.22スタート！</td>\n<td style=\"text-align: left;\">みなさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:00〜14:05</td>\n<td style=\"text-align: right;\">　  5分</td>\n<td style=\"text-align: left;\">「開会のご挨拶」</td>\n<td style=\"text-align: left;\">司会・長井さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:05〜14:10</td>\n<td style=\"text-align: right;\">　  5分</td>\n<td style=\"text-align: left;\">「kintone Caféについて」</td>\n<td style=\"text-align: left;\">長井さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:10〜14:35</td>\n<td style=\"text-align: right;\">　 25分</td>\n<td style=\"text-align: left;\">自己紹介</td>\n<td style=\"text-align: left;\">みなさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:35〜14:50</td>\n<td style=\"text-align: right;\">　15分</td>\n<td style=\"text-align: left;\">ご挨拶と学童クラブ紹介</td>\n<td style=\"text-align: left;\">特定非営利活動法人よこすか学童保育の会<br>代表理事 山岡晶さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:50〜15:05</td>\n<td style=\"text-align: right;\">　15分</td>\n<td style=\"text-align: left;\">お話と質問<br>「サイボウズが取り組む『チームワークあふれるまちづくり』の活動紹介」</td>\n<td style=\"text-align: left;\">サイボウズ株式会社<br>蒲原大輔さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:05〜15:20</td>\n<td style=\"text-align: right;\">　15分</td>\n<td style=\"text-align: left;\">お話と質問</td>\n<td style=\"text-align: left;\">茅ヶ崎市役所<br>松原大さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:20〜15:40</td>\n<td style=\"text-align: right;\">　20分</td>\n<td style=\"text-align: left;\">休憩と交流</td>\n<td style=\"text-align: left;\">みなさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:40〜15:50</td>\n<td style=\"text-align: right;\">　10分</td>\n<td style=\"text-align: left;\">LT1</td>\n<td style=\"text-align: left;\">片岡さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50〜16:00</td>\n<td style=\"text-align: right;\">　10分</td>\n<td style=\"text-align: left;\">LT2</td>\n<td style=\"text-align: left;\">二河さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00〜16:10</td>\n<td style=\"text-align: right;\">　10分</td>\n<td style=\"text-align: left;\">LT3<br>「地域を支える人を電話から解放する！ 〜kintone × 音声DXでつくる現場の仕組み〜」</td>\n<td style=\"text-align: left;\">高橋さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:10〜16:30</td>\n<td style=\"text-align: right;\">　20分</td>\n<td style=\"text-align: left;\">グループで話そう</td>\n<td style=\"text-align: left;\">みなさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30～16:40</td>\n<td style=\"text-align: right;\">　10分</td>\n<td style=\"text-align: left;\">写真撮影するよ</td>\n<td style=\"text-align: left;\">みなさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">～17:00</td>\n<td style=\"text-align: right;\">　</td>\n<td style=\"text-align: left;\">撤収するよ</td>\n<td style=\"text-align: left;\">みなさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:30～19:30頃</td>\n<td style=\"text-align: right;\">　120分</td>\n<td style=\"text-align: left;\">懇親会（予定）</td>\n<td style=\"text-align: left;\">希望者</td>\n</tr>\n</tbody>\n</table>\n<h1>◎オプショナルツアー</h1>\n<p>当日、開催地である横須賀市をより楽しんでいただくためのオプショナルツアー「ぶらかな」を企画しています。<br>\nこのイベントの「サブイベント」にありますので、ぜひご参加ください。<br>\n※サブイベントだけの参加はご遠慮ください。<br></p>\n<p>サブイベント「ぶらかな 横須賀編」<br>\n<a href=\"https://kintonecafe-kanagawa.connpass.com/event/395611/\" rel=\"nofollow\">https://kintonecafe-kanagawa.connpass.com/event/395611/</a></p>",
-      "url": "https://kintonecafe-kanagawa.connpass.com/event/395508/",
-      "image_url": "https://media.connpass.com/thumbs/3d/a2/3da2d7f3e255d818448823d657c8a40e.png",
-      "hash_tag": "kintonecafe",
-      "started_at": "2026-09-26T14:00:00+09:00",
-      "ended_at": "2026-09-26T17:00:00+09:00",
-      "published_at": "2026-05-30T17:42:36+09:00",
-      "limit": 48,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 2762,
-        "subdomain": "kintonecafe-kanagawa",
-        "title": "kintone Café 神奈川",
-        "url": "https://kintonecafe-kanagawa.connpass.com/"
-      },
-      "address": "神奈川県横須賀市本町2丁目1",
-      "place": "横須賀市総合福祉会館 視聴覚室",
-      "lat": "35.282021700000",
-      "lon": "139.666031300000",
-      "owner_id": 297311,
-      "owner_nickname": "RyoHarada",
-      "owner_display_name": "RyoHarada",
-      "accepted": 30,
-      "waiting": 0,
-      "updated_at": "2026-09-24T13:46:10+09:00"
-    },
-    {
-      "id": 395611,
-      "title": "ぶらかな 横須賀編",
-      "catch": "YOKOSUKA軍港めぐり",
-      "description": "<h2>ぶらかな</h2>\n<p>kintone Café 神奈川は、神奈川県全市区町村開催を目指しています。<br>\n神奈川県民も、そうでない方も、<br>\nみなさんに神奈川県のいいところを知ってもらいたい、<br>\nそして開催地の方にはkintoneを使っていなくても参加してもらいたい、<br>\nそんなコンテンツになるように企画を考えています。<br></p>\n<p><span style=\"color: red;\">ぶらかな</span>は、<br>\nCafé開催前に、開催地をより楽しんでいただくための<br>\nkintone Café 神奈川のオプショナルツアーです。</p>\n<h2>ぶらかな 横須賀編</h2>\n<p>9月26日（土）のVol.22の開催地は横須賀！<br>\n横須賀といえば、<br>\n<strong>海軍</strong><br>\nですね。<br></p>\n<p>今回は、<br>\n★★★★★★★★★★<br>\n<span style=\"color: red;\"><strong>YOKOSUKA軍港めぐりツアー</strong></span><br>\n★★★★★★★★★★<br>\nを企画しました。<br></p>\n<p><strong>日時：2026年9月26日（土）10:30 </strong><br>\n<strong>集合場所：汐入ターミナル（YOKOSUKA軍港めぐりチケット販売所集合）</strong><br>\n京急線「汐入駅」から徒歩約5分<br>\n<strong>料金：2,200円</strong>（横須賀市在住の方は1,100円）<br>\n※料金はYOKOSUKA軍港めぐりの金額です。ランチや会場までの交通費は含まれません。<br></p>\n<h3>YOKOSUKA軍港めぐりについて</h3>\n<p>以下のサイトをご覧ください。<br>\n<a href=\"https://yokosuka-gunko.jp/\" rel=\"nofollow\">https://yokosuka-gunko.jp/</a></p>\n<h2>タイムテーブル（予定）</h2>\n<p>10:30 汐入ターミナル集合<br>\n11:00〜11:45 YOKOSUKA軍港めぐり<br>\n11:45〜13:00 みんなでランチ<br>\n13:00〜13:30 kintone Café 神奈川の会場に移動</p>\n<h2>お申込後のキャンセルについて</h2>\n<p>キャンセル料はかかりませんが、<br>\nキャンセルの場合はなるべく2日前までにご連絡ください。</p>",
-      "url": "https://kintonecafe-kanagawa.connpass.com/event/395611/",
-      "image_url": "https://media.connpass.com/thumbs/f2/b1/f2b1a1fa71658e7d35ad0170effef73d.png",
-      "hash_tag": "",
-      "started_at": "2026-09-26T10:30:00+09:00",
-      "ended_at": "2026-09-26T13:30:00+09:00",
-      "published_at": "2026-05-30T17:42:45+09:00",
-      "limit": 15,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 2762,
-        "subdomain": "kintonecafe-kanagawa",
-        "title": "kintone Café 神奈川",
-        "url": "https://kintonecafe-kanagawa.connpass.com/"
-      },
-      "address": "横須賀市本町2-1-12",
-      "place": "YOKOSUKA軍港めぐり",
-      "lat": "35.283074600000",
-      "lon": "139.661335700000",
-      "owner_id": 297311,
-      "owner_nickname": "RyoHarada",
-      "owner_display_name": "RyoHarada",
-      "accepted": 15,
-      "waiting": 0,
-      "updated_at": "2026-09-24T13:45:12+09:00"
     }
   ]
 }
