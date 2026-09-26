@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<title>名店ロックオン</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+:root{
+  --bg:#080c18; --surface:#0f1623; --surface2:#162030; --border:#1c2d42;
+  --accent:#00c8f0; --amber:#f0a000; --red:#f03040; --green:#20c870;
+  --text:#dde6f0; --muted:#6a7c90; --dim:#3a4a5c;
+  /* 大分類カラー（リストの帯と地図のピンで共通） */
+  --c-dinner:#f0a000; --c-izakaya:#f06a3a; --c-bar:#a070f0;
+  --c-noodle:#20c870; --c-cafe:#f070b0; --c-other:#6a7c90;
+  color-scheme:dark;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{background:var(--bg);color:var(--text);font-family:'Noto Sans JP',-apple-system,'Hiragino Sans',sans-serif;
+  display:flex;flex-direction:column;overflow:hidden}
+button,select{font-family:inherit}
+
+/* ── ヘッダー ── */
+.hdr{display:flex;align-items:center;gap:10px;padding:10px 14px;padding-top:calc(10px + env(safe-area-inset-top,0px));
+  background:var(--surface);border-bottom:1px solid var(--border);flex-shrink:0}
+.logo{font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;letter-spacing:3px;color:var(--accent);line-height:1}
+.logo em{color:var(--amber);font-style:normal}
+.sub{font-size:10px;color:var(--muted);letter-spacing:.5px}
+.gps{margin-left:auto;display:flex;align-items:center;gap:6px;background:var(--surface2);border:1px solid var(--border);
+  color:var(--text);border-radius:8px;padding:6px 10px;font-size:11px;cursor:pointer}
+.gps .dot{width:8px;height:8px;border-radius:50%;background:var(--dim)}
+.gps.ok .dot{background:var(--green);box-shadow:0 0 6px var(--green)}
+.gps.wait .dot{background:var(--amber);animation:blink 1s infinite}
+.gps.ng .dot{background:var(--red)}
+@keyframes blink{50%{opacity:.3}}
+
+/* ── タブ ── */
+.tabs{display:flex;background:var(--surface);border-bottom:1px solid var(--border);flex-shrink:0}
+.tab{flex:1;padding:11px 0;text-align:center;font-size:13px;font-weight:700;color:var(--muted);background:none;border:none;
+  border-bottom:2px solid transparent;cursor:pointer;letter-spacing:.5px}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* ── 絞り込み ── */
+.ctrl{display:flex;gap:8px;align-items:center;padding:9px 12px;background:var(--surface);border-bottom:1px solid var(--border);flex-shrink:0}
+.sel{background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:7px 8px;font-size:12px}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex-shrink:0;background:var(--surface2);color:var(--muted);border:1px solid var(--border);border-radius:14px;
+  padding:5px 11px;font-size:11.5px;font-weight:500;cursor:pointer;white-space:nowrap}
+.chip.on{color:#000;background:var(--accent);border-color:var(--accent);font-weight:700}
+.stat{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 13px;font-size:11px;color:var(--muted);
+  background:var(--bg);border-bottom:1px solid var(--border);flex-shrink:0}
+.stat b{color:var(--accent);font-family:'Rajdhani',sans-serif;font-size:14px}
+.stat .base{display:flex;align-items:center;gap:5px}
+.stat .sel{padding:3px 5px;font-size:11px}
+.sample{font-size:9.5px;padding:1px 6px;border-radius:4px;color:var(--amber);border:1px solid rgba(240,160,0,.4)}
+
+/* ── リスト ── */
+.view{flex:1;min-height:0;position:relative}
+#listView{overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:calc(20px + env(safe-area-inset-bottom,0px))}
+.card{position:relative;border-bottom:1px solid rgba(28,45,66,.6)}
+.card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--cc,var(--c-other))}
+.row{display:flex;align-items:center;gap:10px;padding:12px 12px 12px 16px;cursor:pointer;width:100%;background:none;border:none;color:inherit;text-align:left}
+.row:active{background:var(--surface)}
+.dist{flex-shrink:0;width:54px;text-align:center}
+.dist .v{font-family:'Rajdhani',sans-serif;font-size:21px;font-weight:700;line-height:1;color:var(--text);font-variant-numeric:tabular-nums}
+.dist .u{font-size:10px;color:var(--muted);margin-left:1px}
+.info{flex:1;min-width:0}
+.nm{font-size:15px;font-weight:700;line-height:1.35;word-break:break-word}
+.meta{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin-top:4px}
+.cat{font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;color:#000;background:var(--cc,var(--c-other))}
+.gj,.area{font-size:11px;color:var(--muted)}
+.area::before{content:'· '}
+.close{flex-shrink:0;text-align:right;min-width:62px}
+.close .lb{font-size:9.5px;color:var(--muted);letter-spacing:.5px}
+.close .t{font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--amber);line-height:1.05;font-variant-numeric:tabular-nums}
+.close .t.none{font-family:inherit;font-size:11px;font-weight:500;color:var(--dim)}
+.close .hol{font-size:10px;color:var(--muted);margin-top:2px;max-width:92px;line-height:1.3}
+.close .hol b{color:var(--red);font-weight:500}
+
+.more{padding:0 14px 14px 16px}
+.dl{display:grid;grid-template-columns:66px 1fr;gap:6px 10px;font-size:12px;line-height:1.55;background:var(--surface);
+  border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.dl dt{color:var(--muted);font-size:11px}
+.dl dd{word-break:break-word}
+.dl dd.memo{color:var(--amber)}
+.acts{display:flex;gap:8px;margin-top:10px}
+.btn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 8px;border-radius:9px;font-size:14px;font-weight:700;
+  text-decoration:none;border:1px solid var(--border);background:var(--surface2);color:var(--text);cursor:pointer}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:#000}
+.src{display:block;margin-top:8px;font-size:10.5px;color:var(--muted);text-decoration:none}
+
+.empty{padding:60px 20px;text-align:center;color:var(--muted);font-size:13px;line-height:1.8}
+
+/* ── 地図 ── */
+#mapView{display:none}
+#map{position:absolute;inset:0;background:#0b1220}
+.leaflet-popup-content-wrapper{background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:10px}
+.leaflet-popup-tip{background:var(--surface)}
+.leaflet-popup-content{margin:10px 12px;font-family:'Noto Sans JP',sans-serif}
+.pp .n{font-size:14px;font-weight:700;margin-bottom:3px}
+.pp .s{font-size:11.5px;color:var(--muted);margin-bottom:8px}
+.pp .s b{color:var(--amber);font-family:'Rajdhani',sans-serif;font-size:15px}
+.pp a{display:block;text-align:center;background:var(--accent);color:#000;font-weight:700;padding:8px;border-radius:7px;text-decoration:none;font-size:13px}
+.me{width:16px;height:16px;border-radius:50%;background:#2a8cff;border:3px solid #fff;box-shadow:0 0 0 6px rgba(42,140,255,.25)}
+.legend{position:absolute;left:10px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:500;background:rgba(15,22,35,.92);
+  border:1px solid var(--border);border-radius:8px;padding:7px 9px;display:flex;flex-wrap:wrap;gap:4px 10px;font-size:10.5px;max-width:230px}
+.legend span{display:flex;align-items:center;gap:4px}
+.legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div>
+    <div class="logo">LOCK<em>ON</em></div>
+    <div class="sub">名店ロックオン</div>
+  </div>
+  <button class="gps wait" id="gpsBtn" type="button" aria-label="現在地を取り直す"><span class="dot"></span><span id="gpsTxt">位置取得中</span></button>
+</header>
+
+<nav class="tabs">
+  <button class="tab active" id="tabList" type="button">リスト</button>
+  <button class="tab" id="tabMap" type="button">地図</button>
+</nav>
+
+<div class="ctrl">
+  <select class="sel" id="fRadius" aria-label="半径">
+    <option value="1">1km</option>
+    <option value="3">3km</option>
+    <option value="5">5km</option>
+    <option value="0" selected>全件</option>
+  </select>
+  <div class="chips" id="fCat"></div>
+</div>
+
+<div class="stat">
+  <span id="count">読み込み中…</span>
+  <span class="base">
+    <span id="sampleTag" class="sample" hidden>サンプル</span>
+    <select class="sel" id="fBase" aria-label="基準地点">
+      <option value="gps">現在地</option>
+      <option value="35.6580,139.7016">渋谷駅</option>
+      <option value="35.6664,139.7580">新橋駅</option>
+      <option value="35.6880,139.7205">四谷三丁目駅</option>
+      <option value="35.7126,139.7036">高田馬場駅</option>
+      <option value="35.6443,139.6688">三軒茶屋駅</option>
+      <option value="35.6812,139.7671">東京駅</option>
+    </select>
+  </span>
+</div>
+
+<main class="view" id="listView"></main>
+<div class="view" id="mapView"><div id="map"></div><div class="legend" id="legend"></div></div>
+
+<script>
+/* ==== 設定 ==== */
+// シートを「ウェブに公開(CSV)」したらURLを入れる。空ならサンプルデータで動く
+const SHEET_CSV = '';
+const SAMPLE = [{"店舗ID": "S0001", "店名": "グリル佐久良", "大分類": "ディナー", "ジャンル": "洋食", "住所": "東京都台東区浅草3-32-4", "区市": "台東区", "最寄駅": "浅草駅 徒歩8分", "緯度": "35.7172969", "経度": "139.7971249", "夜終了": "20:30", "営業時間": "月・木・金・土・日 11:30-14:00 / 17:30-20:30", "定休日": "火・水", "予算（夜）": "2,000〜2,999円", "席数": "", "取得元": "meiten_gourmet", "投稿ID": "DS16MlDkXCU", "取得日": "2026-09-26", "状態": "", "メモ": ""}, {"店舗ID": "S0002", "店名": "さばめしの鯖匠", "大分類": "麺・定食", "ジャンル": "定食", "住所": "東京都千代田区神田三崎町2-21-11 ゑびすビル1F", "区市": "千代田区", "最寄駅": "水道橋駅 徒歩3分", "緯度": "35.7015443", "経度": "139.7536921", "夜終了": "21:00", "営業時間": "月〜土 11:30-14:30 / 17:00-21:00、日・祝 11:30-14:30", "定休日": "", "予算（夜）": "〜999円", "席数": "15席", "取得元": "meiten_gourmet", "投稿ID": "DNacORCPleW", "取得日": "2026-09-26", "状態": "", "メモ": ""}, {"店舗ID": "S0003", "店名": "香川一福ART", "大分類": "麺・定食", "ジャンル": "うどん", "住所": "東京都渋谷区渋谷3-17-4 アクシーズ7号館ビル1F", "区市": "渋谷区", "最寄駅": "渋谷駅 徒歩5分", "緯度": "35.6565152", "経度": "139.7046079", "夜終了": "22:00", "営業時間": "毎日 11:00-22:00", "定休日": "", "予算（夜）": "1,000〜1,999円", "席数": "", "取得元": "meiten_gourmet", "投稿ID": "DOViAmBE6-r", "取得日": "2026-09-26", "状態": "", "メモ": ""}, {"店舗ID": "S0004", "店名": "パザパ", "大分類": "ディナー", "ジャンル": "コース料理", "住所": "東京都新宿区舟町5 1F", "区市": "新宿区", "最寄駅": "四谷三丁目駅 徒歩5分", "緯度": "35.689607", "経度": "139.721251", "夜終了": "22:30", "営業時間": "月〜土 18:00-22:30", "定休日": "日曜、祝日", "予算（夜）": "3,000〜3,999円", "席数": "20席", "取得元": "meiten_gourmet", "投稿ID": "Ddm9p1lRIy9", "取得日": "2026-09-26", "状態": "", "メモ": ""}, {"店舗ID": "S0005", "店名": "インド宮廷料理 Mashal", "大分類": "ディナー", "ジャンル": "インド料理", "住所": "東京都大田区大森北1-10-14 LUZ大森3F", "区市": "大田区", "最寄駅": "大森駅東口 徒歩2分", "緯度": "35.5864891", "経度": "139.7282409", "夜終了": "22:00", "営業時間": "月〜金 11:00-15:00 / 17:00-22:00、土日祝 11:00-16:00 / 17:00-22:00", "定休日": "なし", "予算（夜）": "3,000〜3,999円", "席数": "52席", "取得元": "meiten_gourmet", "投稿ID": "DddMWFNx8KJ", "取得日": "2026-09-26", "状態": "", "メモ": ""}, {"店舗ID": "S0006", "店名": "本格焼鳥 高田馬場ふじ屋", "大分類": "居酒屋", "ジャンル": "焼鳥", "住所": "東京都新宿区高田馬場3-2-14 丸曽ビル1F・2F", "区市": "新宿区", "最寄駅": "高田馬場駅早稲田口 徒歩3分", "緯度": "35.7142513", "経度": "139.7034433", "夜終了": "24:00", "営業時間": "月〜金・祝前日・祝後日 16:00-24:00、土日祝 14:00-24:00", "定休日": "なし", "予算（夜）": "3,000〜3,999円", "席数": "90席", "取得元": "meiten_gourmet", "投稿ID": "DdYxdS6h4hw", "取得日": "2026-09-26", "状態": "", "メモ": ""}, {"店舗ID": "S0007", "店名": "土鍋ご飯 然々", "大分類": "麺・定食", "ジャンル": "定食", "住所": "東京都立川市柴崎町3-1-1 エキュート立川2F", "区市": "立川市", "最寄駅": "立川駅改札内 徒歩1分", "緯度": "35.6974421", "経度": "139.4121022", "夜終了": "22:00", "営業時間": "月〜土 10:00-22:00、日・祝 10:00-21:00", "定休日": "なし", "予算（夜）": "2,000〜2,999円", "席数": "16席", "取得元": "meiten_gourmet", "投稿ID": "DdTZ524xmSW", "取得日": "2026-09-26", "状態": "", "メモ": ""}, {"店舗ID": "S0008", "店名": "かね田", "大分類": "麺・定食", "ジャンル": "つけ麺", "住所": "東京都千代田区丸の内2-7-2 JPタワーB1F", "区市": "千代田区", "最寄駅": "東京駅 徒歩3分", "緯度": "35.679228", "経度": "139.7653758", "夜終了": "22:00", "営業時間": "月〜金 11:00-22:00、土日祝 11:00-21:00", "定休日": "KITTEの休館日に準ずる", "予算（夜）": "1,000〜1,999円", "席数": "16席", "取得元": "meiten_gourmet", "投稿ID": "DdQwvGCRvWM", "取得日": "2026-09-26", "状態": "", "メモ": ""}, {"店舗ID": "S0009", "店名": "タカマル鮮魚店 新橋店", "大分類": "ディナー", "ジャンル": "寿司・海鮮", "住所": "東京都港区新橋2-12-16 明和ビル1F", "区市": "港区", "最寄駅": "内幸町駅 徒歩2分／新橋駅 徒歩5分", "緯度": "35.6674325", "経度": "139.754745", "夜終了": "22:00", "営業時間": "月〜木・土日祝 11:00-22:00、金・祝前日 11:00-23:00", "定休日": "なし", "予算（夜）": "2,000〜3,000円", "席数": "56席", "取得元": "meiten_gourmet", "投稿ID": "DdNVyy3RdnO", "取得日": "2026-09-26", "状態": "", "メモ": ""}];
+
+const CATS = [
+  {k:'ディナー',  v:'--c-dinner'},
+  {k:'居酒屋',    v:'--c-izakaya'},
+  {k:'バー',      v:'--c-bar'},
+  {k:'麺・定食',  v:'--c-noodle'},
+  {k:'カフェ・甘味',v:'--c-cafe'},
+  {k:'その他',    v:'--c-other'},
+];
+const HIDE_STATES = ['非表示','閉店'];
+
+/* ==== 状態 ==== */
+let STORES = [];
+let base = null;          // {lat,lng,src:'gps'|'test'}
+let gpsPos = null;
+let catSel = '全て';
+let openId = null;
+let map = null, layer = null, meMarker = null, focusId = null;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const catVar = k => (CATS.find(c => c.k === k) || CATS[CATS.length-1]).v;
+
+function normTime(t){
+  t = String(t||'').trim();
+  const m = t.match(/^(\d{1,2}):(\d{2})/);
+  return m ? m[1] + ':' + m[2] : t;
+}
+
+function toStore(r){
+  const lat = parseFloat(r['緯度']), lng = parseFloat(r['経度']);
+  return {
+    id: (r['店舗ID']||'').trim(), name:(r['店名']||'').trim(), cat:(r['大分類']||'その他').trim() || 'その他',
+    genre:(r['ジャンル']||'').trim(), addr:(r['住所']||'').trim(), area:(r['区市']||'').trim(),
+    station:(r['最寄駅']||'').trim(), lat, lng, hasPos: isFinite(lat) && isFinite(lng),
+    close: normTime(r['夜終了']), hours:(r['営業時間']||'').trim(), holiday:(r['定休日']||'').trim(),
+    budget:(r['予算（夜）']||r['予算(夜)']||'').trim(), seats:(r['席数']||'').trim(),
+    source:(r['取得元']||'').trim(), post:(r['投稿ID']||'').trim(),
+    state:(r['状態']||'').trim(), memo:(r['メモ']||'').trim(),
+  };
+}
+
+/* ==== 距離 ==== */
+function km(a, b){
+  const R = 6371, rad = x => x * Math.PI / 180;
+  const dLat = rad(b.lat - a.lat), dLng = rad(b.lng - a.lng);
+  const h = Math.sin(dLat/2)**2 + Math.cos(rad(a.lat))*Math.cos(rad(b.lat))*Math.sin(dLng/2)**2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+}
+function fmtDist(d){
+  if (d == null) return {v:'—', u:''};
+  if (d < 1) return {v: String(Math.round(d*1000/10)*10), u:'m'};
+  return {v: d < 10 ? d.toFixed(1) : String(Math.round(d)), u:'km'};
+}
+
+/* ==== 絞り込み ==== */
+function visible(){
+  const r = parseFloat($('fRadius').value);
+  const list = STORES
+    .filter(s => !HIDE_STATES.includes(s.state))
+    .filter(s => catSel === '全て' || s.cat === catSel)
+    .map(s => ({...s, d: (base && s.hasPos) ? km(base, s) : null}));
+  const inR = list.filter(s => !r || !base || (s.d != null && s.d <= r));
+  inR.sort((a, b) => (a.d ?? 1e9) - (b.d ?? 1e9));
+  return {all: list.length, rows: inR};
+}
+
+/* ==== リスト描画 ==== */
+function holidayHtml(h){
+  if (!h) return '';
+  if (/^(なし|無し|無休)$/.test(h)) return '<div class="hol">定休なし</div>';
+  return '<div class="hol">定休 <b>' + esc(h) + '</b></div>';
+}
+function naviUrl(s){
+  return 'https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=' + (s.hasPos ? s.lat + ',' + s.lng : encodeURIComponent(s.addr));
+}
+
+function renderList(){
+  const {all, rows} = visible();
+  const r = $('fRadius').value;
+  $('count').innerHTML = r === '0'
+    ? '<b>' + rows.length + '</b> 件'
+    : '半径' + r + 'km以内 <b>' + rows.length + '</b> 件 / ' + all + '件';
+
+  if (!rows.length){
+    $('listView').innerHTML = '<div class="empty">この範囲にお店はありません<br>半径を広げるか、基準地点を変えてください</div>';
+    return;
+  }
+  $('listView').innerHTML = rows.map(s => {
+    const d = fmtDist(s.d), open = s.id === openId;
+    const dl = [
+      ['営業時間', s.hours], ['定休日', s.holiday], ['予算（夜）', s.budget], ['席数', s.seats],
+      ['最寄駅', s.station], ['住所', s.addr],
+    ].filter(x => x[1]).map(x => '<dt>' + x[0] + '</dt><dd>' + esc(x[1]) + '</dd>').join('')
+      + (s.memo ? '<dt>メモ</dt><dd class="memo">' + esc(s.memo) + '</dd>' : '');
+    return '<div class="card" style="--cc:var(' + catVar(s.cat) + ')">' +
+      '<button class="row" type="button" data-id="' + esc(s.id) + '" aria-expanded="' + open + '">' +
+        '<div class="dist"><span class="v">' + d.v + '</span><span class="u">' + d.u + '</span></div>' +
+        '<div class="info"><div class="nm">' + esc(s.name) + '</div>' +
+          '<div class="meta"><span class="cat">' + esc(s.cat) + '</span>' +
+          (s.genre ? '<span class="gj">' + esc(s.genre) + '</span>' : '') +
+          (s.area ? '<span class="area">' + esc(s.area) + '</span>' : '') + '</div></div>' +
+        '<div class="close"><div class="lb">閉店</div>' +
+          (s.close ? '<div class="t">' + esc(s.close) + '</div>' : '<div class="t none">記載なし</div>') +
+          holidayHtml(s.holiday) + '</div>' +
+      '</button>' +
+      (open ? '<div class="more"><dl class="dl">' + dl + '</dl>' +
+        '<div class="acts"><a class="btn pri" href="' + naviUrl(s) + '" target="_blank" rel="noopener">ナビ開始</a>' +
+        (s.hasPos ? '<button class="btn" type="button" data-map="' + esc(s.id) + '">地図で見る</button>' : '') + '</div>' +
+        (s.post ? '<a class="src" href="https://www.instagram.com/p/' + encodeURIComponent(s.post) + '/" target="_blank" rel="noopener">出典：@' + esc(s.source) + ' の投稿 ›</a>' : '') +
+        '</div>' : '') +
+    '</div>';
+  }).join('');
+}
+
+$('listView').addEventListener('click', e => {
+  const m = e.target.closest('[data-map]');
+  if (m){ focusId = m.dataset.map; showTab('map'); return; }
+  const row = e.target.closest('.row');
+  if (!row) return;
+  openId = openId === row.dataset.id ? null : row.dataset.id;
+  renderList();
+});
+
+/* ==== 地図 ==== */
+function ensureMap(){
+  if (map) return;
+  map = L.map('map', {zoomControl:false, attributionControl:true}).setView([35.6812, 139.7671], 13);
+  L.control.zoom({position:'topright'}).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom:19, attribution:'&copy; OpenStreetMap'
+  }).addTo(map);
+  layer = L.layerGroup().addTo(map);
+}
+function renderMap(){
+  if (!map) return;
+  layer.clearLayers();
+  const {rows} = visible();
+  const pts = [];
+  rows.filter(s => s.hasPos).forEach(s => {
+    const c = css(catVar(s.cat));
+    const mk = L.circleMarker([s.lat, s.lng], {radius:9, color:'#0b1220', weight:2, fillColor:c, fillOpacity:.95})
+      .bindPopup('<div class="pp"><div class="n">' + esc(s.name) + '</div>' +
+        '<div class="s">閉店 <b>' + esc(s.close || '—') + '</b>' + (s.holiday && !/^(なし|無し|無休)$/.test(s.holiday) ? '　定休 ' + esc(s.holiday) : '') +
+        (s.d != null ? '　' + fmtDist(s.d).v + fmtDist(s.d).u : '') + '</div>' +
+        '<a href="' + naviUrl(s) + '" target="_blank" rel="noopener">ナビ開始</a></div>');
+    mk.addTo(layer);
+    s._mk = mk;
+    pts.push([s.lat, s.lng]);
+    if (s.id === focusId) setTimeout(() => { map.setView([s.lat, s.lng], 17); mk.openPopup(); }, 50);
+  });
+  if (meMarker){ meMarker.remove(); meMarker = null; }
+  if (base){
+    meMarker = L.marker([base.lat, base.lng], {icon: L.divIcon({className:'', html:'<div class="me"></div>', iconSize:[16,16], iconAnchor:[8,8]}), interactive:false}).addTo(map);
+    pts.push([base.lat, base.lng]);
+  }
+  if (!focusId && pts.length) map.fitBounds(pts, {padding:[40,40], maxZoom:16});
+  focusId = null;
+}
+$('legend').innerHTML = CATS.map(c => '<span><i style="background:var(' + c.v + ')"></i>' + c.k + '</span>').join('');
+
+/* ==== タブ ==== */
+function showTab(t){
+  const isMap = t === 'map';
+  $('tabList').classList.toggle('active', !isMap);
+  $('tabMap').classList.toggle('active', isMap);
+  $('listView').style.display = isMap ? 'none' : 'block';
+  $('mapView').style.display = isMap ? 'block' : 'none';
+  if (isMap){ ensureMap(); setTimeout(() => { map.invalidateSize(); renderMap(); }, 30); }
+  else renderList();
+}
+$('tabList').onclick = () => showTab('list');
+$('tabMap').onclick = () => showTab('map');
+
+/* ==== 絞り込みUI ==== */
+function renderChips(){
+  const keys = ['全て', ...CATS.map(c => c.k).filter(k => STORES.some(s => s.cat === k))];
+  $('fCat').innerHTML = keys.map(k => '<button class="chip' + (k === catSel ? ' on' : '') + '" type="button" data-k="' + esc(k) + '">' + esc(k) + '</button>').join('');
+}
+$('fCat').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  catSel = b.dataset.k; renderChips(); refresh();
+});
+$('fRadius').onchange = refresh;
+$('fBase').onchange = () => { applyBase(); refresh(); };
+
+function refresh(){
+  if ($('mapView').style.display === 'block') renderMap(); else renderList();
+}
+
+/* ==== 位置 ==== */
+function setGps(cls, txt){ const b = $('gpsBtn'); b.className = 'gps ' + cls; $('gpsTxt').textContent = txt; }
+function applyBase(){
+  const v = $('fBase').value;
+  if (v === 'gps'){
+    base = gpsPos ? {lat:gpsPos.lat, lng:gpsPos.lng} : null;
+  } else {
+    const [la, ln] = v.split(',').map(Number);
+    base = {lat:la, lng:ln};
+  }
+}
+let lastRender = null;
+function startGps(){
+  if (!navigator.geolocation){ setGps('ng', '位置情報なし'); return; }
+  setGps('wait', '位置取得中');
+  navigator.geolocation.watchPosition(p => {
+    gpsPos = {lat:p.coords.latitude, lng:p.coords.longitude, acc:p.coords.accuracy};
+    setGps('ok', '±' + Math.round(gpsPos.acc) + 'm');
+    if ($('fBase').value !== 'gps') return;
+    // 50m以上動いたときだけ並べ直す
+    if (!lastRender || km(lastRender, gpsPos) > 0.05){
+      lastRender = {...gpsPos}; applyBase(); refresh();
+    }
+  }, err => {
+    setGps('ng', err.code === 1 ? '位置の許可なし' : '位置が取れません');
+  }, {enableHighAccuracy:true, maximumAge:15000, timeout:20000});
+}
+$('gpsBtn').onclick = () => { $('fBase').value = 'gps'; lastRender = null; startGps(); applyBase(); refresh(); };
+
+/* ==== 画面スリープ防止 ==== */
+let wl = null;
+async function wake(){ try{ if ('wakeLock' in navigator && document.visibilityState === 'visible') wl = await navigator.wakeLock.request('screen'); }catch(e){} }
+document.addEventListener('visibilitychange', wake);
+
+/* ==== 読み込み ==== */
+function boot(rows, isSample){
+  STORES = rows.map(toStore).filter(s => s.name);
+  $('sampleTag').hidden = !isSample;
+  renderChips(); applyBase(); renderList();
+}
+if (SHEET_CSV){
+  Papa.parse(SHEET_CSV + '&t=' + Date.now(), {
+    download:true, header:true, skipEmptyLines:true,
+    transformHeader: h => h.trim().replace(/^﻿/, ''),
+    complete: res => boot(res.data || [], false),
+    error: () => { boot(SAMPLE, true); $('count').textContent = 'シートを読めませんでした（サンプル表示）'; }
+  });
+} else {
+  boot(SAMPLE, true);
+}
+startGps();
+wake();
+</script>
+</body>
+</html>
