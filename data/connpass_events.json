@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-27T02:31:44.894000+09:00",
+  "fetched_at": "2026-09-27T05:27:11.487792+09:00",
   "date": "20260927",
-  "count": 9,
+  "count": 10,
   "events": [
     {
       "id": 407760,
@@ -66,37 +66,6 @@
       "updated_at": "2026-08-12T18:55:58+09:00"
     },
     {
-      "id": 405764,
-      "title": "かわいいロボを組み立てるワークショップ",
-      "catch": "女性限定イベント、サムネイルのものとは違うものになります。",
-      "description": "<p>10/3-4のNT東京にて頒布予定のロボット/電子工作キットのテスト組み立てを兼ねたワークショップです。\n参加者は女性限定とさせていただいております。</p>\n<p>制作物の詳細は未定ですが、ロボットの三要素であるセンサー（感覚）、知能・制御系（脳）、駆動系（手足）を備えたものを想定しています。\n参加者の皆様にはテスト組み立てにご協力いただくことになるため、会場費や一部材料費は主催のハヤカワ五味持ちとさせていただきます。</p>\n<p>初心者歓迎で、むしろSO-101などロボット組み立て経験のある方からすると簡単すぎる可能性があるのでご了承ください。</p>",
-      "url": "https://kawaii-robot.connpass.com/event/405764/",
-      "image_url": "https://media.connpass.com/thumbs/f0/9a/f09a3df01fe6fb6a017e684575bbc3b2.png",
-      "hash_tag": "robokko",
-      "started_at": "2026-09-27T13:00:00+09:00",
-      "ended_at": "2026-09-27T16:00:00+09:00",
-      "published_at": "2026-09-03T09:54:04+09:00",
-      "limit": 10,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 18084,
-        "subdomain": "kawaii-robot",
-        "title": "かわいいロボ組み立てよう",
-        "url": "https://kawaii-robot.connpass.com/"
-      },
-      "address": "東京都千代田区外神田６丁目１１−１６ ＧＭビル １階",
-      "place": "ロボ☆スタディオン",
-      "lat": "35.703893800000",
-      "lon": "139.771148400000",
-      "owner_id": 210366,
-      "owner_nickname": "hayakawagomi",
-      "owner_display_name": "hayakawagomi",
-      "accepted": 10,
-      "waiting": 17,
-      "updated_at": "2026-09-25T10:58:15+09:00"
-    },
-    {
       "id": 404929,
       "title": "【未経験者にオススメ!】月一ハッキング体験会 #2026/9",
       "catch": "仮想環境上のショッピングサイトにSQLインジェクション攻撃をやってみよう",
@@ -126,6 +95,37 @@
       "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-08-25T18:53:28+09:00"
+    },
+    {
+      "id": 405764,
+      "title": "かわいいロボを組み立てるワークショップ",
+      "catch": "女性限定イベント、サムネイルのものとは違うものになります。",
+      "description": "<p>10/3-4のNT東京にて頒布予定のロボット/電子工作キットのテスト組み立てを兼ねたワークショップです。\n参加者は女性限定とさせていただいております。</p>\n<p>制作物の詳細は未定ですが、ロボットの三要素であるセンサー（感覚）、知能・制御系（脳）、駆動系（手足）を備えたものを想定しています。\n参加者の皆様にはテスト組み立てにご協力いただくことになるため、会場費や一部材料費は主催のハヤカワ五味持ちとさせていただきます。</p>\n<p>初心者歓迎で、むしろSO-101などロボット組み立て経験のある方からすると簡単すぎる可能性があるのでご了承ください。</p>",
+      "url": "https://kawaii-robot.connpass.com/event/405764/",
+      "image_url": "https://media.connpass.com/thumbs/f0/9a/f09a3df01fe6fb6a017e684575bbc3b2.png",
+      "hash_tag": "robokko",
+      "started_at": "2026-09-27T13:00:00+09:00",
+      "ended_at": "2026-09-27T16:00:00+09:00",
+      "published_at": "2026-09-03T09:54:04+09:00",
+      "limit": 10,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 18084,
+        "subdomain": "kawaii-robot",
+        "title": "かわいいロボ組み立てよう",
+        "url": "https://kawaii-robot.connpass.com/"
+      },
+      "address": "東京都千代田区外神田６丁目１１−１６ ＧＭビル １階",
+      "place": "ロボ☆スタディオン",
+      "lat": "35.703893800000",
+      "lon": "139.771148400000",
+      "owner_id": 210366,
+      "owner_nickname": "hayakawagomi",
+      "owner_display_name": "hayakawagomi",
+      "accepted": 10,
+      "waiting": 17,
+      "updated_at": "2026-09-25T10:58:15+09:00"
     },
     {
       "id": 406822,
@@ -281,6 +281,37 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-09-26T21:13:04+09:00"
+    },
+    {
+      "id": 391952,
+      "title": "AIか、直感か。当たるのはどっちだ！？  エンジニアの放課後｜スプリンターズステークス予想会",
+      "catch": "〜気軽に楽しむ、競馬予想会〜",
+      "description": "<h2 style=\"font-size:28px; margin-bottom:6px;\">エンジニアの放課後</h2>\n<h3 style=\"font-size:22px; margin-top:0;\">🏇スプリンターズステークス観戦！</h3>\n<p style=\"font-size:18px; margin-top:0;\">〜気軽に楽しむ、競馬観戦会〜</p>\n\n<p>\nエンジニアの放課後、今回はかなり趣向を変えて<br>\n<strong>スプリンターズステークス観戦</strong>を通して交流を楽しむイベントを開催します！\n</p>\n<p>競馬が初めての方や、知識がない方でも大歓迎✨<br>\nAIでレースの予想などを行うので、\nまずは「ちょっと楽しそう」くらいの気持ちでご参加ください！</p>\n<hr>\n<p><img src=\"https://media.connpass.com/thumbs/e6/f7/e6f762a3834ad2ad96c3a3ce9f634e15.png\" width=\"400\"></p>\n<h3 style=\"font-size:22px;\">📆 開催概要</h3>\n\n<ul>\n  <li><strong>日時：</strong>2026年9月27日（日）12:00~16:00</li>\n  <li><strong>場所：</strong>場所：中山競馬場 住所： 千葉県船橋市古作１丁目１−１</li>\n  <li><strong>参加費：</strong>無料（現地での飲食・入場料等は各自負担）</li>\n  <li><strong>参加方法：</strong>Connpassよりお申し込みください👇<br>\n  </li>\n</ul>\n\n<h3 style=\"font-size:22px;\">📍集合場所</h3>\n\n<p><strong>ファミリーマート船橋法典駅前店</strong></p>\n<p>※12:00に待ち合わせを予定しております\n※遅れる方は下記までご連絡ください</p>\n<p>（木綿：090-6021-6715）</p>\n<hr>\n\n<h3 style=\"font-size:22px;\">👥 こんな方におすすめ</h3>\n\n<ul>\n  <li>競馬に興味がある・ちょっと体験してみたい方</li>\n  <li>初対面でも自然に会話できるイベントに参加したい方</li>\n  <li>新しいコミュニティに参加してみたい</li>\n  <li>仕事以外のつながりを作りたい</li>\n</ul>\n\n<h3 style=\"font-size:22px;\"> 🤝いつもとは少し違う、エンジニアの放課後</h3>\n\n<p>\nいつものエンジニアの放課後とは少し違った、競馬場で楽しむ特別なイベントです。🌿\n</p>\n\n<p>\n<strong>レース観戦をきっかけ</strong>に、\n自然と会話が生まれる交流の場です。\n</p>\n\n<p>\n少し特別な“放課後”を一緒に楽しみましょう。✨\n</p>\n\n<hr>\n\n<p><img src=\"https://media.connpass.com/thumbs/cc/2d/cc2daa220686b01f116c63cef7de7679.png\" width=\"450\"></p>\n<h3 style=\"font-size:22px;\">⚠️ 注意事項</h3>\n\n<ul>\n  <li>勧誘・営業目的での参加はご遠慮ください</li>\n  <li>参加者同士が気持ちよく過ごせるようご配慮をお願いいたします</li>\n  <li>本イベントは競馬の知識や馬券購入を目的としたものではなく、観戦と交流を楽しむイベントです</li>\n</ul>\n\n<hr>\n\n<h3 style=\"font-size:22px;\">📸 食事・交流会の雰囲気はこちら</h3>\n\n<p>\n過去の交流会の様子は下記SNSからご覧いただけます👇<br>\n👉 <strong>X（Twitter）：@houkago_eng</strong>\n</p>",
+      "url": "https://engineers-afterwork.connpass.com/event/391952/",
+      "image_url": "https://media.connpass.com/thumbs/4b/ca/4bcad7bfbd6123ee48346bd40113de14.png",
+      "hash_tag": "",
+      "started_at": "2026-09-27T14:30:00+09:00",
+      "ended_at": "2026-09-27T18:00:00+09:00",
+      "published_at": "2026-04-27T17:25:44+09:00",
+      "limit": 10,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 16286,
+        "subdomain": "engineers-afterwork",
+        "title": "エンジニアの放課後byK2T",
+        "url": "https://engineers-afterwork.connpass.com/"
+      },
+      "address": "〒273-0037 千葉県船橋市古作１丁目１−１",
+      "place": "中山競馬場",
+      "lat": "35.727423700000",
+      "lon": "139.959431300000",
+      "owner_id": 952943,
+      "owner_nickname": "mikotoyotsugi",
+      "owner_display_name": "mikoto",
+      "accepted": 4,
+      "waiting": 0,
+      "updated_at": "2026-09-04T11:24:39+09:00"
     }
   ]
 }
