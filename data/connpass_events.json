@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-27T08:17:20.150895+09:00",
+  "fetched_at": "2026-09-27T11:51:26.801184+09:00",
   "date": "20260927",
-  "count": 10,
+  "count": 9,
   "events": [
     {
       "id": 407760,
@@ -138,7 +138,7 @@
       "started_at": "2026-09-27T13:00:00+09:00",
       "ended_at": "2026-09-27T17:00:00+09:00",
       "published_at": "2026-09-13T16:39:39+09:00",
-      "limit": 12,
+      "limit": 10,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -154,40 +154,9 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 9,
+      "accepted": 8,
       "waiting": 0,
-      "updated_at": "2026-09-26T16:36:23+09:00"
-    },
-    {
-      "id": 408015,
-      "title": "589th Dev Morning",
-      "catch": "週末の朝に趣味で集まって、もくもく手を動かします",
-      "description": "<h2>589回 Dev Morning</h2>\n<p>日曜の朝に、もくもくプログラムを書いたり、アプリやサービスを作るゆるめのイベントです。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\"></th>\n<th style=\"text-align: left;\"></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">日時</td>\n<td style=\"text-align: left;\">2026/09/27 10:00〜13:00</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">場所</td>\n<td style=\"text-align: left;\">モクシー東京 錦糸町 ラウンジ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">参加費</td>\n<td style=\"text-align: left;\">無料（飲み物代は各自が払います）</td>\n</tr>\n</tbody>\n</table>\n<p>初めて参加される方は当日不明な点があれば、<a href=\"https://twitter.com/kitak\" rel=\"nofollow\">@kitak</a> までメッセージをお願いします。</p>",
-      "url": "https://devmorning.connpass.com/event/408015/",
-      "image_url": "https://media.connpass.com/thumbs/fc/da/fcda51e656abb8171e7cb2f758f4639a.png",
-      "hash_tag": "",
-      "started_at": "2026-09-27T10:00:00+09:00",
-      "ended_at": "2026-09-27T12:30:00+09:00",
-      "published_at": "2026-09-26T15:12:16+09:00",
-      "limit": 8,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 966,
-        "subdomain": "devmorning",
-        "title": "趣味で開発朝活＠東東京(錦糸町)",
-        "url": "https://devmorning.connpass.com/"
-      },
-      "address": "東京都墨田区江東橋3-4-2",
-      "place": "モクシー東京 錦糸町",
-      "lat": "35.693524000000",
-      "lon": "139.813387500000",
-      "owner_id": 27530,
-      "owner_nickname": "tejitak",
-      "owner_display_name": "tejitak",
-      "accepted": 2,
-      "waiting": 0,
-      "updated_at": "2026-09-26T15:12:16+09:00"
+      "updated_at": "2026-09-27T10:38:46+09:00"
     },
     {
       "id": 404689,
@@ -202,7 +171,7 @@
       "published_at": "2026-09-11T10:01:20+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6408,
         "subdomain": "geekfeed",
@@ -221,6 +190,37 @@
       "updated_at": "2026-09-11T10:01:20+09:00"
     },
     {
+      "id": 408015,
+      "title": "589th Dev Morning",
+      "catch": "週末の朝に趣味で集まって、もくもく手を動かします",
+      "description": "<h2>589回 Dev Morning</h2>\n<p>日曜の朝に、もくもくプログラムを書いたり、アプリやサービスを作るゆるめのイベントです。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\"></th>\n<th style=\"text-align: left;\"></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">日時</td>\n<td style=\"text-align: left;\">2026/09/27 10:00〜13:00</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">場所</td>\n<td style=\"text-align: left;\">モクシー東京 錦糸町 ラウンジ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">参加費</td>\n<td style=\"text-align: left;\">無料（飲み物代は各自が払います）</td>\n</tr>\n</tbody>\n</table>\n<p>初めて参加される方は当日不明な点があれば、<a href=\"https://twitter.com/kitak\" rel=\"nofollow\">@kitak</a> までメッセージをお願いします。</p>",
+      "url": "https://devmorning.connpass.com/event/408015/",
+      "image_url": "https://media.connpass.com/thumbs/fc/da/fcda51e656abb8171e7cb2f758f4639a.png",
+      "hash_tag": "",
+      "started_at": "2026-09-27T10:00:00+09:00",
+      "ended_at": "2026-09-27T12:30:00+09:00",
+      "published_at": "2026-09-26T15:12:16+09:00",
+      "limit": 8,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 966,
+        "subdomain": "devmorning",
+        "title": "趣味で開発朝活＠東東京(錦糸町)",
+        "url": "https://devmorning.connpass.com/"
+      },
+      "address": "東京都墨田区江東橋3-4-2",
+      "place": "モクシー東京 錦糸町",
+      "lat": "35.693524000000",
+      "lon": "139.813387500000",
+      "owner_id": 27530,
+      "owner_nickname": "tejitak",
+      "owner_display_name": "tejitak",
+      "accepted": 3,
+      "waiting": 0,
+      "updated_at": "2026-09-26T15:12:16+09:00"
+    },
+    {
       "id": 405074,
       "title": "CoderDojo赤羽 #75",
       "catch": "メンターとして参加の方・ご見学も大歓迎です！お気軽に覗きに来てください",
@@ -233,7 +233,7 @@
       "published_at": "2026-08-27T17:33:42+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 5599,
         "subdomain": "coderdojo-akabane",
@@ -247,7 +247,7 @@
       "owner_id": 203326,
       "owner_nickname": "coderdojo-akabane",
       "owner_display_name": "CoderDojo赤羽",
-      "accepted": 7,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-08-27T17:33:42+09:00"
     },
@@ -264,7 +264,7 @@
       "published_at": "2026-09-21T15:26:24+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16988,
         "subdomain": "mokumokuios",
@@ -281,37 +281,6 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-09-26T21:13:04+09:00"
-    },
-    {
-      "id": 391952,
-      "title": "AIか、直感か。当たるのはどっちだ！？  エンジニアの放課後｜スプリンターズステークス予想会",
-      "catch": "〜気軽に楽しむ、競馬予想会〜",
-      "description": "<h2 style=\"font-size:28px; margin-bottom:6px;\">エンジニアの放課後</h2>\n<h3 style=\"font-size:22px; margin-top:0;\">🏇スプリンターズステークス観戦！</h3>\n<p style=\"font-size:18px; margin-top:0;\">〜気軽に楽しむ、競馬観戦会〜</p>\n\n<p>\nエンジニアの放課後、今回はかなり趣向を変えて<br>\n<strong>スプリンターズステークス観戦</strong>を通して交流を楽しむイベントを開催します！\n</p>\n<p>競馬が初めての方や、知識がない方でも大歓迎✨<br>\nAIでレースの予想などを行うので、\nまずは「ちょっと楽しそう」くらいの気持ちでご参加ください！</p>\n<hr>\n<p><img src=\"https://media.connpass.com/thumbs/e6/f7/e6f762a3834ad2ad96c3a3ce9f634e15.png\" width=\"400\"></p>\n<h3 style=\"font-size:22px;\">📆 開催概要</h3>\n\n<ul>\n  <li><strong>日時：</strong>2026年9月27日（日）12:00~16:00</li>\n  <li><strong>場所：</strong>場所：中山競馬場 住所： 千葉県船橋市古作１丁目１−１</li>\n  <li><strong>参加費：</strong>無料（現地での飲食・入場料等は各自負担）</li>\n  <li><strong>参加方法：</strong>Connpassよりお申し込みください👇<br>\n  </li>\n</ul>\n\n<h3 style=\"font-size:22px;\">📍集合場所</h3>\n\n<p><strong>ファミリーマート船橋法典駅前店</strong></p>\n<p>※12:00に待ち合わせを予定しております\n※遅れる方は下記までご連絡ください</p>\n<p>（木綿：090-6021-6715）</p>\n<hr>\n\n<h3 style=\"font-size:22px;\">👥 こんな方におすすめ</h3>\n\n<ul>\n  <li>競馬に興味がある・ちょっと体験してみたい方</li>\n  <li>初対面でも自然に会話できるイベントに参加したい方</li>\n  <li>新しいコミュニティに参加してみたい</li>\n  <li>仕事以外のつながりを作りたい</li>\n</ul>\n\n<h3 style=\"font-size:22px;\"> 🤝いつもとは少し違う、エンジニアの放課後</h3>\n\n<p>\nいつものエンジニアの放課後とは少し違った、競馬場で楽しむ特別なイベントです。🌿\n</p>\n\n<p>\n<strong>レース観戦をきっかけ</strong>に、\n自然と会話が生まれる交流の場です。\n</p>\n\n<p>\n少し特別な“放課後”を一緒に楽しみましょう。✨\n</p>\n\n<hr>\n\n<p><img src=\"https://media.connpass.com/thumbs/cc/2d/cc2daa220686b01f116c63cef7de7679.png\" width=\"450\"></p>\n<h3 style=\"font-size:22px;\">⚠️ 注意事項</h3>\n\n<ul>\n  <li>勧誘・営業目的での参加はご遠慮ください</li>\n  <li>参加者同士が気持ちよく過ごせるようご配慮をお願いいたします</li>\n  <li>本イベントは競馬の知識や馬券購入を目的としたものではなく、観戦と交流を楽しむイベントです</li>\n</ul>\n\n<hr>\n\n<h3 style=\"font-size:22px;\">📸 食事・交流会の雰囲気はこちら</h3>\n\n<p>\n過去の交流会の様子は下記SNSからご覧いただけます👇<br>\n👉 <strong>X（Twitter）：@houkago_eng</strong>\n</p>",
-      "url": "https://engineers-afterwork.connpass.com/event/391952/",
-      "image_url": "https://media.connpass.com/thumbs/4b/ca/4bcad7bfbd6123ee48346bd40113de14.png",
-      "hash_tag": "",
-      "started_at": "2026-09-27T14:30:00+09:00",
-      "ended_at": "2026-09-27T18:00:00+09:00",
-      "published_at": "2026-04-27T17:25:44+09:00",
-      "limit": 10,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 16286,
-        "subdomain": "engineers-afterwork",
-        "title": "エンジニアの放課後byK2T",
-        "url": "https://engineers-afterwork.connpass.com/"
-      },
-      "address": "〒273-0037 千葉県船橋市古作１丁目１−１",
-      "place": "中山競馬場",
-      "lat": "35.727423700000",
-      "lon": "139.959431300000",
-      "owner_id": 952943,
-      "owner_nickname": "mikotoyotsugi",
-      "owner_display_name": "mikoto",
-      "accepted": 5,
-      "waiting": 0,
-      "updated_at": "2026-09-04T11:24:39+09:00"
     }
   ]
 }
