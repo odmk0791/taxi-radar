@@ -295,7 +295,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
       <div class="filter-label">決済</div>
       <div class="frow" id="fc-pay">
         <button class="fbtn on-all" data-ft="pay" data-v="all">すべて</button>
-        <button class="fbtn" data-ft="pay" data-v="go_only">🚕 プレタクモード（GO Payのみ）</button>
+        <button class="fbtn" data-ft="pay" data-v="go_only">🚕 プレタクモード（GO配車×GO Pay）</button>
       </div>
     </div>
     <div class="sec">近くのスポット</div>
@@ -649,7 +649,7 @@ function buildData(parsed){
     if(sk==='通常'||sk==='')e.normalCount++;
     if(sk==='プレタク')e.ptCount++;
     if(sk==='プレタクP')e.ptPCount++;
-    if(pay==='GO Pay')e.payGoCount++;
+    if(status==='GO'&&pay==='GO Pay')e.payGoCount++;
   }
   return Object.values(agg);
 }
