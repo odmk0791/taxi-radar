@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-28T09:11:09.461926+09:00",
+  "fetched_at": "2026-09-28T15:10:14.093034+09:00",
   "date": "20260928",
   "count": 11,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 39621,
       "owner_nickname": "dcubeio",
       "owner_display_name": "Visional Engineering",
-      "accepted": 19,
+      "accepted": 18,
       "waiting": 0,
       "updated_at": "2026-09-01T12:14:01+09:00"
     },
@@ -61,7 +61,7 @@
       "owner_id": 959224,
       "owner_nickname": "nktz_kk",
       "owner_display_name": "Natsuki@ROSCA",
-      "accepted": 19,
+      "accepted": 21,
       "waiting": 0,
       "updated_at": "2026-09-14T17:18:10+09:00"
     },
@@ -92,7 +92,7 @@
       "owner_id": 555936,
       "owner_nickname": "ANDPAD_TechLive",
       "owner_display_name": "ANDPAD_TechLive",
-      "accepted": 14,
+      "accepted": 13,
       "waiting": 0,
       "updated_at": "2026-09-10T13:12:42+09:00"
     },
@@ -128,6 +128,37 @@
       "updated_at": "2026-09-03T11:33:03+09:00"
     },
     {
+      "id": 406411,
+      "title": "あつまろ！CDLE in 東京#2〜みんなのAIタレント〜",
+      "catch": "",
+      "description": "<p>※本イベントはCDLEコミュニティが企画・運営するものであり、イベント内で発信される内容はJDLAの公式見解ではありません。</p>\n<h1>概要</h1>\n<p>2026年7月に開催した、「あつまろ！CDLE」の第2回開催です。 <br>\n本イベントは、AIに関する知見や経験を共有し、参加者同士が学び合い・交流することを目的としたイベントです。 <br>\n <br>\n当日は、企業によるAI活用事例等の紹介と、自分が現在持っているAIに関するスキルや、今後伸ばしたいスキルを共有するグループワーク「みんなのAIタレント」を実施します。   <br>\n「みんなのAIタレント」では、 </p>\n<ul>\n<li>今あるAIタレント</li>\n<li>今後強化したいAIタレント</li>\n<li>興味のあるキーワード</li>\n</ul>\n<p>を共有し、参加者同士の知見交換や新たなつながりの創出を目指します。 <br>\n企業のみなさんも、同じタレントカードを書いた一参加者として輪に加わっていただきます。 <br>\nフリー交流の時間はその場にいる方と軽食をとりながらカジュアルに交流いただけます。 <br>\n <br>\n皆さんとお会いできるのを楽しみにしております。 <br></p>\n<h1>日時</h1>\n<p>2026年9月28日（月） 19:00 - 21:00（開場 18:30）</p>\n<h1>開催場所</h1>\n<p>株式会社USEN ICT Solutions（U-NEXT.HD） <br>\n東京都品川区上大崎三丁目1番1号　目黒セントラルスクエア13F</p>\n<h1>タイムスケジュール</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30 〜 19:00</td>\n<td>開場・受付（タレントカード配布、未記入の方はその場で記入）</td>\n</tr>\n<tr>\n<td>19:00 〜 19:10</td>\n<td>オープニング（企画趣旨説明・JDLA紹介）</td>\n</tr>\n<tr>\n<td>19:10 〜 19:30</td>\n<td>会場提供：USEN様 ご登壇（企業紹介）</td>\n</tr>\n<tr>\n<td>19:30 〜 19:45</td>\n<td>企業トーク（5分×2〜3社）テーマ：「自社のAI活用のリアルと、一緒に働きたいAI人材像」</td>\n</tr>\n<tr>\n<td>19:45 〜 20:00</td>\n<td>タレントシェアタイム①</td>\n</tr>\n<tr>\n<td>20:00 〜 20:15</td>\n<td>タレントシェアタイム②</td>\n</tr>\n<tr>\n<td>20:15 〜 20:55</td>\n<td>フリー交流</td>\n</tr>\n<tr>\n<td>20:55 〜 21:00</td>\n<td>クロージング</td>\n</tr>\n</tbody>\n</table>\n<h1>参加費</h1>\n<p>無料</p>\n<h1>LT参加法人枠について</h1>\n<p>当日、登壇してお話しいただける企業の方を募集させていただきます。 <br>\nトークテーマは「自社のAI活用のリアルと、一緒に働きたいAI人材像」となります。 <br>\n上記テーマ内で自由にお話しいただいて大丈夫ので、ぜひこちらへもご参加いただけると嬉しいです。 <br>\n※直接的なリクルートや自社商品の営業はご遠慮ください。</p>\n<h1>申し込み締め切り</h1>\n<p>2026年9月28日（月） 21:00まで</p>\n<h1>注意事項</h1>\n<ul>\n<li>本イベントは現地開催です。</li>\n<li>本イベントは、CDLEメンバー（G検定またはE資格の合格者本人）およびCDLEメンバーから紹介を受けた方のみご参加いただけます。参加資格確認のため、合格者ご本人であることを確認させていただく場合があります。確認できない場合は、本イベントへの参加をご遠慮いただく場合があります。</li>\n<li>お問い合わせはJDLA Community（CDLE）チャネルの Slack名 @Akari Miyazakiまでお願いします。</li>\n<li>参加が決まった方には、事前にオンラインアンケートで「AIタレントカード」（①今あるAIタレント／②強化したいAIタレント／③興味のあるキーワード、各3つまで）をご記入いただきます。当日会場でもご記入いただけますので、事前記入は必須ではありません。</li>\n</ul>",
+      "url": "https://jdla.connpass.com/event/406411/",
+      "image_url": "https://media.connpass.com/thumbs/d8/10/d81099e6c188c1b971701482cdbbb823.png",
+      "hash_tag": "",
+      "started_at": "2026-09-28T19:00:00+09:00",
+      "ended_at": "2026-09-28T21:00:00+09:00",
+      "published_at": "2026-09-17T18:07:15+09:00",
+      "limit": 44,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 3974,
+        "subdomain": "jdla",
+        "title": "日本ディープラーニング協会",
+        "url": "https://jdla.connpass.com/"
+      },
+      "address": "東京都品川区上大崎三丁目1番1号　目黒セントラルスクエア13F",
+      "place": "株式会社USEN ICT Solutions",
+      "lat": "35.633460500000",
+      "lon": "139.716832300000",
+      "owner_id": 1011095,
+      "owner_nickname": "KotaMiyano",
+      "owner_display_name": "KotaMiyano",
+      "accepted": 19,
+      "waiting": 0,
+      "updated_at": "2026-09-17T18:07:15+09:00"
+    },
+    {
       "id": 403127,
       "title": "Encraft #26 オントロジー解体新書",
       "catch": "意味をどう設計し、どう使うか？現場のオントロジー実践に迫る一夜",
@@ -154,7 +185,7 @@
       "owner_id": 756788,
       "owner_nickname": "knowledgework",
       "owner_display_name": "株式会社ナレッジワーク",
-      "accepted": 203,
+      "accepted": 215,
       "waiting": 0,
       "updated_at": "2026-09-26T13:24:21+09:00"
     },
@@ -185,40 +216,9 @@
       "owner_id": 71049,
       "owner_nickname": "ManamiNanseki",
       "owner_display_name": "nanseki",
-      "accepted": 72,
+      "accepted": 75,
       "waiting": 0,
       "updated_at": "2026-09-25T22:08:30+09:00"
-    },
-    {
-      "id": 406411,
-      "title": "あつまろ！CDLE in 東京#2〜みんなのAIタレント〜",
-      "catch": "",
-      "description": "<p>※本イベントはCDLEコミュニティが企画・運営するものであり、イベント内で発信される内容はJDLAの公式見解ではありません。</p>\n<h1>概要</h1>\n<p>2026年7月に開催した、「あつまろ！CDLE」の第2回開催です。 <br>\n本イベントは、AIに関する知見や経験を共有し、参加者同士が学び合い・交流することを目的としたイベントです。 <br>\n <br>\n当日は、企業によるAI活用事例等の紹介と、自分が現在持っているAIに関するスキルや、今後伸ばしたいスキルを共有するグループワーク「みんなのAIタレント」を実施します。   <br>\n「みんなのAIタレント」では、 </p>\n<ul>\n<li>今あるAIタレント</li>\n<li>今後強化したいAIタレント</li>\n<li>興味のあるキーワード</li>\n</ul>\n<p>を共有し、参加者同士の知見交換や新たなつながりの創出を目指します。 <br>\n企業のみなさんも、同じタレントカードを書いた一参加者として輪に加わっていただきます。 <br>\nフリー交流の時間はその場にいる方と軽食をとりながらカジュアルに交流いただけます。 <br>\n <br>\n皆さんとお会いできるのを楽しみにしております。 <br></p>\n<h1>日時</h1>\n<p>2026年9月28日（月） 19:00 - 21:00（開場 18:30）</p>\n<h1>開催場所</h1>\n<p>株式会社USEN ICT Solutions（U-NEXT.HD） <br>\n東京都品川区上大崎三丁目1番1号　目黒セントラルスクエア13F</p>\n<h1>タイムスケジュール</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30 〜 19:00</td>\n<td>開場・受付（タレントカード配布、未記入の方はその場で記入）</td>\n</tr>\n<tr>\n<td>19:00 〜 19:10</td>\n<td>オープニング（企画趣旨説明・JDLA紹介）</td>\n</tr>\n<tr>\n<td>19:10 〜 19:30</td>\n<td>会場提供：USEN様 ご登壇（企業紹介）</td>\n</tr>\n<tr>\n<td>19:30 〜 19:45</td>\n<td>企業トーク（5分×2〜3社）テーマ：「自社のAI活用のリアルと、一緒に働きたいAI人材像」</td>\n</tr>\n<tr>\n<td>19:45 〜 20:00</td>\n<td>タレントシェアタイム①</td>\n</tr>\n<tr>\n<td>20:00 〜 20:15</td>\n<td>タレントシェアタイム②</td>\n</tr>\n<tr>\n<td>20:15 〜 20:55</td>\n<td>フリー交流</td>\n</tr>\n<tr>\n<td>20:55 〜 21:00</td>\n<td>クロージング</td>\n</tr>\n</tbody>\n</table>\n<h1>参加費</h1>\n<p>無料</p>\n<h1>LT参加法人枠について</h1>\n<p>当日、登壇してお話しいただける企業の方を募集させていただきます。 <br>\nトークテーマは「自社のAI活用のリアルと、一緒に働きたいAI人材像」となります。 <br>\n上記テーマ内で自由にお話しいただいて大丈夫ので、ぜひこちらへもご参加いただけると嬉しいです。 <br>\n※直接的なリクルートや自社商品の営業はご遠慮ください。</p>\n<h1>申し込み締め切り</h1>\n<p>2026年9月28日（月） 21:00まで</p>\n<h1>注意事項</h1>\n<ul>\n<li>本イベントは現地開催です。</li>\n<li>本イベントは、CDLEメンバー（G検定またはE資格の合格者本人）およびCDLEメンバーから紹介を受けた方のみご参加いただけます。参加資格確認のため、合格者ご本人であることを確認させていただく場合があります。確認できない場合は、本イベントへの参加をご遠慮いただく場合があります。</li>\n<li>お問い合わせはJDLA Community（CDLE）チャネルの Slack名 @Akari Miyazakiまでお願いします。</li>\n<li>参加が決まった方には、事前にオンラインアンケートで「AIタレントカード」（①今あるAIタレント／②強化したいAIタレント／③興味のあるキーワード、各3つまで）をご記入いただきます。当日会場でもご記入いただけますので、事前記入は必須ではありません。</li>\n</ul>",
-      "url": "https://jdla.connpass.com/event/406411/",
-      "image_url": "https://media.connpass.com/thumbs/d8/10/d81099e6c188c1b971701482cdbbb823.png",
-      "hash_tag": "",
-      "started_at": "2026-09-28T19:00:00+09:00",
-      "ended_at": "2026-09-28T21:00:00+09:00",
-      "published_at": "2026-09-17T18:07:15+09:00",
-      "limit": 44,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 3974,
-        "subdomain": "jdla",
-        "title": "日本ディープラーニング協会",
-        "url": "https://jdla.connpass.com/"
-      },
-      "address": "東京都品川区上大崎三丁目1番1号　目黒セントラルスクエア13F",
-      "place": "株式会社USEN ICT Solutions",
-      "lat": "35.633460500000",
-      "lon": "139.716832300000",
-      "owner_id": 1011095,
-      "owner_nickname": "KotaMiyano",
-      "owner_display_name": "KotaMiyano",
-      "accepted": 20,
-      "waiting": 0,
-      "updated_at": "2026-09-17T18:07:15+09:00"
     },
     {
       "id": 406484,
@@ -247,7 +247,7 @@
       "owner_id": 1013,
       "owner_nickname": "N_A",
       "owner_display_name": "moriyuya",
-      "accepted": 16,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-09-10T20:07:23+09:00"
     },
@@ -278,7 +278,7 @@
       "owner_id": 1165,
       "owner_nickname": "yosuke_furukawa",
       "owner_display_name": "yosuke_furukawa",
-      "accepted": 67,
+      "accepted": 68,
       "waiting": 0,
       "updated_at": "2026-09-28T08:31:44+09:00"
     },
@@ -295,7 +295,7 @@
       "published_at": "2026-07-14T12:31:00+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "〒150-8510 東京都渋谷区渋谷２丁目２１−１ 渋谷ヒカリエ 11F(オンライン)",
       "place": "渋谷ヒカリエ会議室",
@@ -321,7 +321,7 @@
       "published_at": "2026-09-03T20:58:23+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8206,
         "subdomain": "jawsug",
