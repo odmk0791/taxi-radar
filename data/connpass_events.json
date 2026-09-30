@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-30T08:18:27.866274+09:00",
+  "fetched_at": "2026-09-30T12:17:43.254016+09:00",
   "date": "20260930",
   "count": 16,
   "events": [
@@ -87,7 +87,7 @@
       "owner_id": 74624,
       "owner_nickname": "noah0x00",
       "owner_display_name": "KojiKa",
-      "accepted": 18,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-09-24T08:24:24+09:00"
     },
@@ -180,7 +180,7 @@
       "owner_id": 952301,
       "owner_nickname": "MinoriUeda",
       "owner_display_name": "MinoriUeda",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-09-24T15:11:23+09:00"
     },
@@ -211,40 +211,9 @@
       "owner_id": 503903,
       "owner_nickname": "miracleave_inc",
       "owner_display_name": "miracleave",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-09-24T13:55:01+09:00"
-    },
-    {
-      "id": 405125,
-      "title": "AI時代のPdM アウトカムを語るしかNight",
-      "catch": "",
-      "description": "<h2>イベント概要</h2>\n<p><strong>「PdMの意思決定、アウトカムに繋がっていますか？」</strong></p>\n<p>AIによって開発のコストは下がり、これまでより速く多くのものを作れるようになりました。しかし、機能をいくら出しても顧客の課題が解決され、事業が成長しなければ価値にはつながりません。 作ること自体が目的になるビルドトラップにこれまで以上に陥りやすい時代です。</p>\n<p>本イベントでは、PdMの成果・価値について「何を、どれだけ作ったか（アウトプット）」ではなく、「顧客・事業にどのような変化を生み出したか（アウトカム）」 の観点から問い直します。</p>\n<p>事業構造もフェーズも異なるプロダクトのPdMが、<strong>「何をアウトカムと捉え、いかにして成果へ繋げたか」をリアルな実体験から語り合います。</strong></p>\n<p>AI時代だからこそ、改めて自身や担当プロダクトのアウトカムとは何か、どのようにアウトカムを創出するかを一緒に考えてみませんか？</p>\n<h2>📌こんな方におすすめ！</h2>\n<ul>\n<li><strong>アウトカムの定義や計測に悩んでいる方</strong><ul>\n<li>成果をうまく説明できないと感じている方、何を先行指標に置くべきか迷っているPdM</li>\n</ul>\n</li>\n<li><strong>アウトカムに対する意思決定や打ち手に課題を感じている方</strong><ul>\n<li>顧客・プロダクト・事業の成果に対して日々の意思決定に悩んでいるPdM</li>\n</ul>\n</li>\n<li><strong>PdMとしての価値や役割の広げ方を考えたい方</strong><ul>\n<li>AI時代にPdMの価値はどこに残るのかに関心がある。または、将来的に事業責任者などにも興味がある方</li>\n</ul>\n</li>\n</ul>\n<h2>登壇者</h2>\n<h3>原山裕喜 <a href=\"https://x.com/Jlck07shr\" rel=\"nofollow\">@Jlck07shr</a></h3>\n<p><img src=\"https://res.cloudinary.com/y8wnqlao/image/upload/v1788169036/image_2.png\" width=\"120\"></p>\n<p><strong>株式会社LayerX バクラク事業部<br>プロダクトマネージャー</strong></p>\n<p>新卒で企画職としてLINE株式会社（現：LINEヤフー株式会社）に入社。グループ会社である株式会社出前館に出向・転籍し、飲食店向けサイトの立ち上げや、注文アプリのプロダクトマネージャーに従事。<br>その後、2022年10月にLayerXに入社し、以来バクラクビジネスカードやFintech領域の新規事業のプロダクトマネージャーを担当。</p>\n<h3>相坂肇</h3>\n<p><img src=\"https://res.cloudinary.com/y8wnqlao/image/upload/v1788144068/iOS_%E3%81%AE%E7%94%BB%E5%83%8F_1.jpg\" width=\"120\"></p>\n<p><strong>ディグル株式会社 PRODUCT<br>プロダクトマネージャー</strong></p>\n<p>BtoCやBtoBで複数社経験したのち、現職へ入社。<br>\n現職では、プロダクトチームのPdM兼チームマネージャーとして従事。おもに、エンタープライズ領域を主軸とした新規商談における受注率やARPAの改善に向けた企画開発を担当。</p>\n<h3>池谷翔太 <a href=\"http://x.com/ikeyatsu\" rel=\"nofollow\">@ikeyatsu</a></h3>\n<p><img src=\"https://res.cloudinary.com/y8wnqlao/image/upload/v1788144068/ikeyatsu-202606.png\" width=\"120\"></p>\n<p><strong>株式会社aibient 代表取締役</strong></p>\n<p>早稲田大学卒業後、新卒で株式会社リクルートに入社。エンジニアを経て、10年以上プロダクトマネージャーとして従事。<br>その後、株式会社Algomaticに入社。CPOとしてAIエージェント開発を牽引。2026年株式会社aibientを創業し、企業のDX/AI活用を支援。</p>\n<h3>稲葉将一 <a href=\"https://x.com/bachio178\" rel=\"nofollow\">@bachio178</a></h3>\n<p><img src=\"https://res.cloudinary.com/y8wnqlao/image/upload/v1788144068/IMG_1680.jpg\" width=\"120\"></p>\n<p><strong>ファインディ株式会社 執行役員CPO</strong></p>\n<p>早稲田大学卒業後、新卒でリクルートに入社。 国内転職事業・海外HR事業（アジア8カ国）にて、プロダクトマネジメントや事業企画等を経験した後、ファインディにジョイン。 <br>\n2024年より、プロダクトマネジメント室を立ち上げ、CPOとしてファインディのプロダクトを横断して管掌。</p>\n<h2>タイムテーブル</h2>\n<ul>\n<li>日時: 2026年9月30日(水) 19:00-21:00</li>\n<li>開催場所: 株式会社LayerX イベントスペース &amp; オンライン</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:40</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:20</td>\n<td style=\"text-align: left;\">事業のボトルネックを解き続ける、AI時代の染み出し方</td>\n<td style=\"text-align: left;\">原山裕喜 / 株式会社LayerX</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:35</td>\n<td style=\"text-align: left;\">「経営課題なら高く売れる」と考えたPdMの仮説検証</td>\n<td style=\"text-align: left;\">相坂肇 / ディグル株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:45</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45-20:00</td>\n<td style=\"text-align: left;\">使われないものを作った話 ― AI時代のビルドトラップ、早期実績解除のすすめ</td>\n<td style=\"text-align: left;\">池谷翔太 / 株式会社aibient</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-20:15</td>\n<td style=\"text-align: left;\">100件商談して見えた、AI時代の顧客価値再定義アプローチ</td>\n<td style=\"text-align: left;\">稲葉将一 / ファインディ株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15-20:20</td>\n<td style=\"text-align: left;\">本編クロージング・アンケートご回答のお願い</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20-21:00</td>\n<td style=\"text-align: left;\">懇親会：軽食・アルコールあり</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<p>※一部変更の可能性がございます。</p>\n<h2>参考：前回開催したイベント</h2>\n<ul>\n<li>2026/05/22に同社で開催した「コードで事業を動かすGTMエンジニアが語るしかNight」のURLです。</li>\n<li><a href=\"https://layerx.connpass.com/event/389829/\" rel=\"nofollow\">https://layerx.connpass.com/event/389829/</a></li>\n</ul>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<h3>行動規範</h3>\n<ul>\n<li><a href=\"https://layerx.co.jp/code-of-conduct/\" rel=\"nofollow\">LayerX イベント行動規範</a></li>\n</ul>\n<h3>プライバシーポリシー</h3>\n<ul>\n<li><a href=\"https://layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX プライバシーポリシー</a></li>\n<li><a href=\"https://www.notion.so/layerx/e664016aaa4a46fabff2c231e875cd03\" rel=\"nofollow\">株式会社LayerX 採用プライバシーポリシー</a></li>\n</ul>\n<p>※ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善又は新規企画のための分析、登壇企業の採用情報等のご案内で利用いたします。</p>",
-      "url": "https://layerx.connpass.com/event/405125/",
-      "image_url": "https://media.connpass.com/thumbs/ff/d1/ffd12a223e1aa97adf2b5c79c327b435.png",
-      "hash_tag": "PMやるしかNight",
-      "started_at": "2026-09-30T19:00:00+09:00",
-      "ended_at": "2026-09-30T21:00:00+09:00",
-      "published_at": "2026-09-02T09:26:57+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 6108,
-        "subdomain": "layerx",
-        "title": "LayerX",
-        "url": "https://layerx.connpass.com/"
-      },
-      "address": "東京都中央区築地1-13-1 (銀座松竹スクエア 5F)",
-      "place": "LayerX イベントスペース",
-      "lat": "35.668427500000",
-      "lon": "139.769484600000",
-      "owner_id": 241237,
-      "owner_nickname": "edamametsubu318",
-      "owner_display_name": "ずんだまる（仮）",
-      "accepted": 261,
-      "waiting": 0,
-      "updated_at": "2026-09-29T11:40:55+09:00"
     },
     {
       "id": 406160,
@@ -276,6 +245,37 @@
       "accepted": 40,
       "waiting": 0,
       "updated_at": "2026-09-29T14:45:03+09:00"
+    },
+    {
+      "id": 405125,
+      "title": "AI時代のPdM アウトカムを語るしかNight",
+      "catch": "",
+      "description": "<h2>イベント概要</h2>\n<p><strong>「PdMの意思決定、アウトカムに繋がっていますか？」</strong></p>\n<p>AIによって開発のコストは下がり、これまでより速く多くのものを作れるようになりました。しかし、機能をいくら出しても顧客の課題が解決され、事業が成長しなければ価値にはつながりません。 作ること自体が目的になるビルドトラップにこれまで以上に陥りやすい時代です。</p>\n<p>本イベントでは、PdMの成果・価値について「何を、どれだけ作ったか（アウトプット）」ではなく、「顧客・事業にどのような変化を生み出したか（アウトカム）」 の観点から問い直します。</p>\n<p>事業構造もフェーズも異なるプロダクトのPdMが、<strong>「何をアウトカムと捉え、いかにして成果へ繋げたか」をリアルな実体験から語り合います。</strong></p>\n<p>AI時代だからこそ、改めて自身や担当プロダクトのアウトカムとは何か、どのようにアウトカムを創出するかを一緒に考えてみませんか？</p>\n<h2>📌こんな方におすすめ！</h2>\n<ul>\n<li><strong>アウトカムの定義や計測に悩んでいる方</strong><ul>\n<li>成果をうまく説明できないと感じている方、何を先行指標に置くべきか迷っているPdM</li>\n</ul>\n</li>\n<li><strong>アウトカムに対する意思決定や打ち手に課題を感じている方</strong><ul>\n<li>顧客・プロダクト・事業の成果に対して日々の意思決定に悩んでいるPdM</li>\n</ul>\n</li>\n<li><strong>PdMとしての価値や役割の広げ方を考えたい方</strong><ul>\n<li>AI時代にPdMの価値はどこに残るのかに関心がある。または、将来的に事業責任者などにも興味がある方</li>\n</ul>\n</li>\n</ul>\n<h2>登壇者</h2>\n<h3>原山裕喜 <a href=\"https://x.com/Jlck07shr\" rel=\"nofollow\">@Jlck07shr</a></h3>\n<p><img src=\"https://res.cloudinary.com/y8wnqlao/image/upload/v1788169036/image_2.png\" width=\"120\"></p>\n<p><strong>株式会社LayerX バクラク事業部<br>プロダクトマネージャー</strong></p>\n<p>新卒で企画職としてLINE株式会社（現：LINEヤフー株式会社）に入社。グループ会社である株式会社出前館に出向・転籍し、飲食店向けサイトの立ち上げや、注文アプリのプロダクトマネージャーに従事。<br>その後、2022年10月にLayerXに入社し、以来バクラクビジネスカードやFintech領域の新規事業のプロダクトマネージャーを担当。</p>\n<h3>相坂肇</h3>\n<p><img src=\"https://res.cloudinary.com/y8wnqlao/image/upload/v1788144068/iOS_%E3%81%AE%E7%94%BB%E5%83%8F_1.jpg\" width=\"120\"></p>\n<p><strong>ディグル株式会社 PRODUCT<br>プロダクトマネージャー</strong></p>\n<p>BtoCやBtoBで複数社経験したのち、現職へ入社。<br>\n現職では、プロダクトチームのPdM兼チームマネージャーとして従事。おもに、エンタープライズ領域を主軸とした新規商談における受注率やARPAの改善に向けた企画開発を担当。</p>\n<h3>池谷翔太 <a href=\"http://x.com/ikeyatsu\" rel=\"nofollow\">@ikeyatsu</a></h3>\n<p><img src=\"https://res.cloudinary.com/y8wnqlao/image/upload/v1788144068/ikeyatsu-202606.png\" width=\"120\"></p>\n<p><strong>株式会社aibient 代表取締役</strong></p>\n<p>早稲田大学卒業後、新卒で株式会社リクルートに入社。エンジニアを経て、10年以上プロダクトマネージャーとして従事。<br>その後、株式会社Algomaticに入社。CPOとしてAIエージェント開発を牽引。2026年株式会社aibientを創業し、企業のDX/AI活用を支援。</p>\n<h3>稲葉将一 <a href=\"https://x.com/bachio178\" rel=\"nofollow\">@bachio178</a></h3>\n<p><img src=\"https://res.cloudinary.com/y8wnqlao/image/upload/v1788144068/IMG_1680.jpg\" width=\"120\"></p>\n<p><strong>ファインディ株式会社 執行役員CPO</strong></p>\n<p>早稲田大学卒業後、新卒でリクルートに入社。 国内転職事業・海外HR事業（アジア8カ国）にて、プロダクトマネジメントや事業企画等を経験した後、ファインディにジョイン。 <br>\n2024年より、プロダクトマネジメント室を立ち上げ、CPOとしてファインディのプロダクトを横断して管掌。</p>\n<h2>タイムテーブル</h2>\n<ul>\n<li>日時: 2026年9月30日(水) 19:00-21:00</li>\n<li>開催場所: 株式会社LayerX イベントスペース &amp; オンライン</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:40</td>\n<td style=\"text-align: left;\">開場</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:20</td>\n<td style=\"text-align: left;\">プロダクトについて考え抜くことがアウトカムに繋がる</td>\n<td style=\"text-align: left;\">原山裕喜 / 株式会社LayerX</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:35</td>\n<td style=\"text-align: left;\">「経営課題なら高く売れる」と考えたPdMの仮説検証</td>\n<td style=\"text-align: left;\">相坂肇 / ディグル株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:45</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45-20:00</td>\n<td style=\"text-align: left;\">使われないものを作った話 ― AI時代のビルドトラップ、早期実績解除のすすめ</td>\n<td style=\"text-align: left;\">池谷翔太 / 株式会社aibient</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-20:15</td>\n<td style=\"text-align: left;\">100件商談して見えた、AI時代の顧客価値再定義アプローチ</td>\n<td style=\"text-align: left;\">稲葉将一 / ファインディ株式会社</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15-20:20</td>\n<td style=\"text-align: left;\">本編クロージング・アンケートご回答のお願い</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20-21:00</td>\n<td style=\"text-align: left;\">懇親会：軽食・アルコールあり</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n</tbody>\n</table>\n<p>※一部変更の可能性がございます。</p>\n<h2>参考：前回開催したイベント</h2>\n<ul>\n<li>2026/05/22に同社で開催した「コードで事業を動かすGTMエンジニアが語るしかNight」のURLです。</li>\n<li><a href=\"https://layerx.connpass.com/event/389829/\" rel=\"nofollow\">https://layerx.connpass.com/event/389829/</a></li>\n</ul>\n<h2>行動規範・プライバシーポリシー</h2>\n<p>本イベントへのお申し込みをもって、行動規範・プライバシーポリシーへ同意いただいたものとみなします。あらかじめご了承のうえ、お申し込みください。</p>\n<h3>行動規範</h3>\n<ul>\n<li><a href=\"https://layerx.co.jp/code-of-conduct/\" rel=\"nofollow\">LayerX イベント行動規範</a></li>\n</ul>\n<h3>プライバシーポリシー</h3>\n<ul>\n<li><a href=\"https://layerx.co.jp/privacy\" rel=\"nofollow\">株式会社LayerX プライバシーポリシー</a></li>\n<li><a href=\"https://www.notion.so/layerx/e664016aaa4a46fabff2c231e875cd03\" rel=\"nofollow\">株式会社LayerX 採用プライバシーポリシー</a></li>\n</ul>\n<p>※ご提供いただいた個人情報は、イベントの運営・管理、イベントの改善又は新規企画のための分析、登壇企業の採用情報等のご案内で利用いたします。</p>",
+      "url": "https://layerx.connpass.com/event/405125/",
+      "image_url": "https://media.connpass.com/thumbs/ff/d1/ffd12a223e1aa97adf2b5c79c327b435.png",
+      "hash_tag": "PMやるしかNight",
+      "started_at": "2026-09-30T19:00:00+09:00",
+      "ended_at": "2026-09-30T21:00:00+09:00",
+      "published_at": "2026-09-02T09:26:57+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 6108,
+        "subdomain": "layerx",
+        "title": "LayerX",
+        "url": "https://layerx.connpass.com/"
+      },
+      "address": "東京都中央区築地1-13-1 (銀座松竹スクエア 5F)",
+      "place": "LayerX イベントスペース",
+      "lat": "35.668427500000",
+      "lon": "139.769484600000",
+      "owner_id": 241237,
+      "owner_nickname": "edamametsubu318",
+      "owner_display_name": "ずんだまる（仮）",
+      "accepted": 261,
+      "waiting": 0,
+      "updated_at": "2026-09-30T09:16:22+09:00"
     },
     {
       "id": 405685,
@@ -459,7 +459,7 @@
       "owner_id": 370324,
       "owner_nickname": "LASA_Official",
       "owner_display_name": "LASA Official",
-      "accepted": 189,
+      "accepted": 208,
       "waiting": 0,
       "updated_at": "2026-09-23T12:12:21+09:00"
     },
@@ -476,7 +476,7 @@
       "published_at": "2026-09-02T13:21:55+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -490,7 +490,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 22,
+      "accepted": 23,
       "waiting": 0,
       "updated_at": "2026-09-02T13:21:55+09:00"
     }
