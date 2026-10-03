@@ -1,34 +1,8 @@
 {
-  "fetched_at": "2026-10-03T07:42:50.815480+09:00",
+  "fetched_at": "2026-10-03T10:35:39.560298+09:00",
   "date": "20261003",
-  "count": 16,
+  "count": 17,
   "events": [
-    {
-      "id": 407665,
-      "title": "失敗と成功から学ぶ「少人数のAI活用交流会」 in 高田馬場ファミレス",
-      "catch": "一緒に勉強＆おしゃべりする会です",
-      "description": "<p><br>\n失敗こそ、最強の教科書。だから失敗談を語り合いたい！\n \n</p><h1>失敗と成功から学ぶ<br>\n「少人数のAI活用交流会」in 高田馬場ファミレス</h1>\n<p></p>\n<p>画像生成、動画生成、音楽生成、AIエージェント<br>\n<b>「幅広くAIについて話せる仲間が欲しい！」</b><br>\nという想いから立ち上げました。<br>\n<br>\nエンジニア、経営者、会社員、フリーランス、<br>\nいろいろな職種の人と、幅広く情報交換できるから面白い！<br>\n<br>\n<br>\nAIツールの進化は目覚ましく、「一体どこまで何ができるのか？」<br>\n大人数の薄い話ではなく、少人数だからこそ、深く質問できるから面白い。<br>\nネットで拾えない実践的なAI活用を共有したくて勉強会を企画しました。<br>\n<br>\n主催者は、様々な経営者と一緒に事業を営んでいます。<br>\n７年前からAIに興味を惹かれて、試行錯誤の日々を過ごしています。<br>\n日課として、毎朝１～２時間をAIとの対話に費やしています。<br>\n主に、Codexを中心に、経営戦略、画像生成、HP制作＆集客など、<br>\n日常的に利用しています。<br>\n<br>\n詳しい勉強会の内容や趣旨は、HPをご用意しています。<br>\n<a href=\"https://digital-study.com/\" rel=\"nofollow\">https://digital-study.com/</a>\n<br>\n<br></p>\n<hr>\n<p>今回の場所は、新宿のファミレスです。<br>\n食事やお茶しながら、おしゃべりする会です。<br>\n途中参加・途中退出も自由です<br>\n勧誘行為等はありませんので、お気軽に参加して下さい。<br>\n<br></p>\n<hr>\n<h2>過去のテーマは・・・</h2>\n<p>・各社AIモデルの違いと進化の方向性<br>\n・動画生成サービスを使い比べた結果報告<br>\n・AIエージェント機能を使ってみた感想<br>\n・画像生成する時のコツと困ったこと<br>\n・ChatGPTを、何に、どう使っているのか？<br>\n・皆さん、どんなAIサービス使ってる？<br>\n<br>\n<br>\n<strong>「そのやり方、前に自分も失敗したよ」</strong><br>\n<strong>「そこは気をつけた方がいい」</strong><br></p>\n<p>成功事例はメディアに溢れていますが・・・、</p>\n<p>こうした話は、ほとんど表に出てきませんが、<br>\n実際は<strong>一番役に立つ情報</strong>です。</p>\n<p>\n「こんなこと聞いていいのかな？」<br>\nそんな空気は一切ありません。</p>\n<p><br></p>\n<h3>人と出会うと、自然とモチベーションがあがる。</h3>\n<p>そんな仲間と出逢える勉強会を開催していきます。</p>\n<p><br>\n開始時刻前から主催者がいますので、<br>\n着いたらお電話ください。<br>\n📞 090-2301-1246<br>\n着席しているテーブル席をご案内します。<br>\n<br>\n<strong>\n※注意：参加人数が集まらない場合は、日程を変更する場合があります。<br>\n</strong>\n予め、ご了承下さい<br>\n<br>\n問い合わせ、参加の有無、ドタキャンなど、<br>\n携帯電話宛にショートメールで<br>\n連絡していただけるとスムーズです。<br>\n<br></p>",
-      "url": "https://connpass.com/event/407665/",
-      "image_url": "https://media.connpass.com/thumbs/7c/b6/7cb6a10fdcda1a0034a184b0b551a705.png",
-      "hash_tag": "",
-      "started_at": "2026-10-03T13:30:00+09:00",
-      "ended_at": "2026-10-03T15:00:00+09:00",
-      "published_at": "2026-09-22T20:56:37+09:00",
-      "limit": 4,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": null,
-      "address": "東京都新宿区高田馬場１丁目-２６-７ 名店ビル２Ｆ",
-      "place": "ガスト 高田馬場駅前店",
-      "lat": "35.713087800000",
-      "lon": "139.705087500000",
-      "owner_id": 48432,
-      "owner_nickname": "digital24s",
-      "owner_display_name": "デジサポ",
-      "accepted": 2,
-      "waiting": 0,
-      "updated_at": "2026-10-03T07:27:49+09:00"
-    },
     {
       "id": 407857,
       "title": "【AI×勉強会 】〜エンジニアのためのAI実践仕事術〜",
@@ -90,6 +64,32 @@
       "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-09-27T23:12:56+09:00"
+    },
+    {
+      "id": 407665,
+      "title": "失敗と成功から学ぶ「少人数のAI活用交流会」 in 高田馬場ファミレス",
+      "catch": "一緒に勉強＆おしゃべりする会です",
+      "description": "<p><br>\n失敗こそ、最強の教科書。だから失敗談を語り合いたい！\n \n</p><h1>失敗と成功から学ぶ<br>\n「少人数のAI活用交流会」in 高田馬場ファミレス</h1>\n<p></p>\n<p>画像生成、動画生成、音楽生成、AIエージェント<br>\n<b>「幅広くAIについて話せる仲間が欲しい！」</b><br>\nという想いから立ち上げました。<br>\n<br>\nエンジニア、経営者、会社員、フリーランス、<br>\nいろいろな職種の人と、幅広く情報交換できるから面白い！<br>\n<br>\n<br>\nAIツールの進化は目覚ましく、「一体どこまで何ができるのか？」<br>\n大人数の薄い話ではなく、少人数だからこそ、深く質問できるから面白い。<br>\nネットで拾えない実践的なAI活用を共有したくて勉強会を企画しました。<br>\n<br>\n主催者は、様々な経営者と一緒に事業を営んでいます。<br>\n７年前からAIに興味を惹かれて、試行錯誤の日々を過ごしています。<br>\n日課として、毎朝１～２時間をAIとの対話に費やしています。<br>\n主に、Codexを中心に、経営戦略、画像生成、HP制作＆集客など、<br>\n日常的に利用しています。<br>\n<br>\n詳しい勉強会の内容や趣旨は、HPをご用意しています。<br>\n<a href=\"https://digital-study.com/\" rel=\"nofollow\">https://digital-study.com/</a>\n<br>\n<br></p>\n<hr>\n<p>今回の場所は、新宿のファミレスです。<br>\n食事やお茶しながら、おしゃべりする会です。<br>\n途中参加・途中退出も自由です<br>\n勧誘行為等はありませんので、お気軽に参加して下さい。<br>\n<br></p>\n<hr>\n<h2>過去のテーマは・・・</h2>\n<p>・各社AIモデルの違いと進化の方向性<br>\n・動画生成サービスを使い比べた結果報告<br>\n・AIエージェント機能を使ってみた感想<br>\n・画像生成する時のコツと困ったこと<br>\n・ChatGPTを、何に、どう使っているのか？<br>\n・皆さん、どんなAIサービス使ってる？<br>\n<br>\n<br>\n<strong>「そのやり方、前に自分も失敗したよ」</strong><br>\n<strong>「そこは気をつけた方がいい」</strong><br></p>\n<p>成功事例はメディアに溢れていますが・・・、</p>\n<p>こうした話は、ほとんど表に出てきませんが、<br>\n実際は<strong>一番役に立つ情報</strong>です。</p>\n<p>\n「こんなこと聞いていいのかな？」<br>\nそんな空気は一切ありません。</p>\n<p><br></p>\n<h3>人と出会うと、自然とモチベーションがあがる。</h3>\n<p>そんな仲間と出逢える勉強会を開催していきます。</p>\n<p><br>\n開始時刻前から主催者がいますので、<br>\n着いたらお電話ください。<br>\n📞 090-2301-1246<br>\n着席しているテーブル席をご案内します。<br>\n<br>\n<strong>\n※注意：参加人数が集まらない場合は、日程を変更する場合があります。<br>\n</strong>\n予め、ご了承下さい<br>\n<br>\n問い合わせ、参加の有無、ドタキャンなど、<br>\n携帯電話宛にショートメールで<br>\n連絡していただけるとスムーズです。<br>\n<br></p>",
+      "url": "https://connpass.com/event/407665/",
+      "image_url": "https://media.connpass.com/thumbs/7c/b6/7cb6a10fdcda1a0034a184b0b551a705.png",
+      "hash_tag": "",
+      "started_at": "2026-10-03T13:30:00+09:00",
+      "ended_at": "2026-10-03T15:00:00+09:00",
+      "published_at": "2026-09-22T20:56:37+09:00",
+      "limit": 4,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": null,
+      "address": "東京都新宿区高田馬場１丁目-２６-７ 名店ビル２Ｆ",
+      "place": "ガスト 高田馬場駅前店",
+      "lat": "35.713087800000",
+      "lon": "139.705087500000",
+      "owner_id": 48432,
+      "owner_nickname": "digital24s",
+      "owner_display_name": "デジサポ",
+      "accepted": 3,
+      "waiting": 0,
+      "updated_at": "2026-10-03T07:27:49+09:00"
     },
     {
       "id": 397843,
@@ -154,37 +154,6 @@
       "updated_at": "2026-09-28T21:37:11+09:00"
     },
     {
-      "id": 404770,
-      "title": "Japan Azure User Group 16周年イベント",
-      "catch": "",
-      "description": "<h1>今年もやります！ JAZUG 16周年総会 🎉</h1>\n<p><span style=\"font-size: 150%;\">\n2010年8月26日に結成されたJapan Azure User Group (JAZUG) も今年でついに16周年！！<br><br>\n今年も毎年恒例のJAZUG総会を開催します！！\n</span></p>\n<h2>※周年イベントはコミュニティのお祭り！お祭りではみんなの顔がみたい！！ということで、\n本イベントはLIVEでのオンライン配信は無しとさせていただきます(後日アーカイブ配信します) </h2>\n\n<h1>タイムテーブル📌</h1>\n<p><img src=\"https://jaz.blob.core.windows.net/jazug16th/timetable.png\" width=\"800\"></p>\n<h1>セッション概要🔊</h1>\n<h2>新卒2年目がAzureとCopilot Studioで社内AIエージェントを作った話(仮)</h2>\n<p><strong>🗣️魚津 歓多さん</strong>  <br></p>\n<blockquote>\n<p>新卒2年目のエンジニアが、AzureとCopilot Studioを活用した社内AIエージェント開発に挑戦しました。<br>\n初めて触るAzureやCopilot Studioに試行錯誤しながら向き合い、サービスの構築から社内展開までの過程で得られた学びをお話しします。</p>\n</blockquote>\n<h2>Container Apps Dynamic Sessions で実現するワークフロー実行基盤の隔離設計（仮）</h2>\n<p><strong>🗣️内田 就也さん</strong>  <br></p>\n<blockquote>\n<p>顧客が作成した自動化コードを Azure 上で安全に実行するため、ワークフロー実行基盤に Azure Container Apps Dynamic Sessions を採用しました。<br>\n任意コード実行で直面した隔離設計の課題と、ワークフロー実行基盤としての Dynamic Sessions の使いどころを紹介します。</p>\n</blockquote>\n<h2>AI 時代の Azure エンジニアリング ― 私たちは何を磨き、何を任せるのか</h2>\n<p><strong>🗣️日本マイクロソフト株式会社 Microsoft Innovation Hub Chief Architect, <br>\nEvangelist 井上 章 @chack411 さん</strong>  <br></p>\n<blockquote>\n<p>設計から運用まで AI エージェントが関わるようになった今、Azure エンジニアは何を AI に任せ、何を自分で磨くべきか。Microsoft 社内の実例と AI の失敗パターンをもとに、「判断する力」を軸にしたこれからの Azure エンジニアリングを考えます。</p>\n</blockquote>\n<h2>全部無料枠でやってやる！ Azure と Salesforce の双方向 MCP 連携 (仮)</h2>\n<p><strong>🗣️Salesforce Developer Advocate odasho さん</strong>  <br>\n国内 SIer にてインフラから PaaS App 開発まで幅広く経験した後、コミュニティ活動を通じて Microsoft へ。<br>\n現在は Salesforce の Developer Advocate として、開発者や管理者へ AI エージェントなどの技術啓蒙や Headless の認知拡大に取り組む。<br>\nDevRel/Tokyo を中心に複数のコミュニティを運営・支援。英検 3 級。\n名城大学情報工学部非常勤講師。iPhone 絶対並んで買うお兄さん (2011–2025) として現在 7 連覇中！(2026/9/3 現在)\n<br>\n<br></p>\n<blockquote>\n<p>無料の Salesforce の Developer Edition に含まれる Hosted MCP Server を使って Azure 上のエージェントから業務データを読み書きし、逆に Salesforce 側のエージェントから Microsoft の MCP サーバーへつなぐ流れを、要所をデモしながら解説します。環境はすべて無料枠で用意し、認証や権限の設計で考えるべき点もお話します。</p>\n</blockquote>\n<h2>学生インターンがSentinel × Microsoft Foundryで「アラート疲れ」に挑んだSOCトリアージ自動化</h2>\n<p><strong>🗣️ロホマン シャヒンさん（Microsoft Student Ambassador,Gh-CUG運営)</strong> <br></p>\n<blockquote>\n<p>情報学部2年、Microsoftパートナー企業でインターン中の学生です。\nSOCの「アラート過多で優先度付けだけで一日が終わる」という課題に対し、Microsoft Sentinel と Microsoft Foundry Hosted Agent を組み合わせた二次トリアージ自動化基盤を設計・実装しました。\n本セッションでは、SoRとしてのSentinel、RAGを使った根拠付き判定、Human-in-the-loop設計を解説しつつ、GitHub Copilotで要件整理から実装・デプロイ・検証までを爆速化した実践フローとTipsを共有します。Agent Identityの落とし穴やカナリア非対応など、現場で詰まりやすいポイントもあわせて紹介します。</p>\n</blockquote>\n<h2>Group Policy? Intune? Azure VM の構成管理に使えるその他の手段</h2>\n<p><strong>🗣️あいぼーいさん</strong> <br></p>\n<blockquote>\n<p>AIと並んで、セキュリティが重要視される今、AzureでちょっとVM立てるだけでも、OS上で「アレしないといけない」「これも設定しないといけない」と言うルールがあると思います。そのルールちゃんと守られてますか？AzureのVMのガバナンス管理の方法をご紹介します</p>\n</blockquote>\n<h2>AI時代のAzureコスト最適化を考える～ トークンから価値へ: コスト、価値、そしてROI ～</h2>\n<p><strong>🗣️御成門プログラマー（Tomotaka Suzuki）さん</strong> <br></p>\n<blockquote>\n<p>生成AIの普及により、Azureにおけるコスト管理も新たな時代に入りました。AIの利用が進む一方で、「いくらかかるのか」だけでなく、「そのコストはどんな価値を生み出しているのか」が問われるようになっています。近年は、AIコストを単なる利用料金ではなく、価値創出まで含めて捉える考え方として AI FinOps や Tokenomics にも注目が集まっています。</p>\n<p>本セッションでは、Azure AI Foundry などAzure AIリソースを題材に、AI時代ならではのコスト構造を技術的な視点で解説できればと考えています。</p>\n<p>単なるコスト削減ではなく、「価値あたりのコストを最適化する」という視点から、コスト・価値・ROIの関係を整理し、AI時代に求められるAzureコスト最適化の考え方を考えてみたいと思います。</p>\n</blockquote>\n<h2>Azure Blob StorageとAzure Front Doorでスケールするデータベースを紹介してみる（仮）</h2>\n<p><strong>🗣️Kentaro Aoki（@kekekekenta）</strong> <br></p>\n<blockquote>\n<p>いまさら Azure Blob Storage？このセッションでは、16年たって話すことが少なくなった（というか全く話されなくなった）Azure Blob Storage に加えて、Azure Front Door を使用したデータベースのお話をしたいと思います。</p>\n</blockquote>\n<h2>Azure お悩み1000本ノック</h2>\n<p><strong>🗣️JAZUGコアメンバー、会場にいるあなた</strong> <br></p>\n<blockquote>\n<p>Azureのお悩みをエキスパートがその場で解決(できるかも?)！！\n事前準備は必要ありません。コミュニティメンバーと今悩んでいること議論してみませんか？</p>\n</blockquote>\n<h1>ショートセッションタイムテーブル📌</h1>\n<p><img src=\"https://jaz.blob.core.windows.net/jazug16th/shortsession.png\" width=\"500\"></p>\n<h2></h2>\n<h1>懇親会を開催！！！🍽️</h1>\n<p><span style=\"font-size: 150%;\">\n品川参加の方向けに懇親会を予定しています。懇親会参加希望の方は申込時のアンケートで「参加する」を選んでください。<br>\n参加費は2000円（アルコール類はあります！）を予定しています。お釣りのないよう1000円札をにご用意いただけると助かります。</span></p>\n<p>LT大会(飛び入りも歓迎)も予定しているので、皆さんネタの準備を！！\n</p>\n<h1>参加いただくすべての方へのお願い ⚠️</h1>\n<p>私たちは、勉強会に参加する全員をコミュニティメンバーと考えています。すべてのコミュニティメンバーが悲しむことがないよう、以下のような迷惑行為は禁止させていただきます。迷惑行為を取られた方は、即刻退場いただくとともに、次回以降の勉強会への参加をお断りします。</p>\n<ul>\n<li>参加者、スピーカー、スタッフ、各種スポンサーを含むすべてのコミュニティメンバーに対する、ハラスメント行為</li>\n<li>人材紹介、転職、宗教、マルチ商法など、本勉強会とは関係のない勧誘や営業活動</li>\n</ul>\n<p>もしこれらの行為を受けた・目撃した場合は <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdhyQvNtPaRp1BaiB13OKkZrmcY4AEf3q3Yx9HQk-tf50Eg0w/viewform\" rel=\"nofollow\">JAZUG 報告フォーム</a> にてご連絡ください。</p>\n<p>また、セッション中の写真撮影は、シャッター音など周りの方へのご配慮をお願いいたします。 次回以降の勉強会のリクエストは大歓迎です。『こんなことを知りたい！』というご希望がありましたら、是非スタッフまでお知らせください。\nまた、当日はいつもの飲み物は飲めませんので、各自飲み物持参でお願いします🙇</p>",
-      "url": "https://jazug.connpass.com/event/404770/",
-      "image_url": "https://media.connpass.com/thumbs/f4/ee/f4ee797579285bb0a280a85d29e7e7cc.png",
-      "hash_tag": "jazug",
-      "started_at": "2026-10-03T13:00:00+09:00",
-      "ended_at": "2026-10-03T19:00:00+09:00",
-      "published_at": "2026-09-03T20:55:49+09:00",
-      "limit": 104,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 2451,
-        "subdomain": "jazug",
-        "title": "JAZUG (Japan Azure User Group)",
-        "url": "https://jazug.connpass.com/"
-      },
-      "address": "東京都港区港南 2-16-3 品川グランドセントラルタワー",
-      "place": "日本マイクロソフト株式会社 品川本社オフィス 31F セミナールーム B",
-      "lat": "35.626614700000",
-      "lon": "139.740773600000",
-      "owner_id": 399059,
-      "owner_nickname": "ussvgr",
-      "owner_display_name": "ussvgr",
-      "accepted": 88,
-      "waiting": 0,
-      "updated_at": "2026-09-29T20:24:09+09:00"
-    },
-    {
       "id": 408025,
       "title": "[秋葉原] テーマ自由もくもく会 (質問・雑談OK！)",
       "catch": "",
@@ -243,8 +212,39 @@
       "owner_nickname": "asupara21203186",
       "owner_display_name": "asu_para",
       "accepted": 40,
-      "waiting": 13,
+      "waiting": 12,
       "updated_at": "2026-10-02T09:17:34+09:00"
+    },
+    {
+      "id": 404770,
+      "title": "Japan Azure User Group 16周年イベント",
+      "catch": "",
+      "description": "<h1>今年もやります！ JAZUG 16周年総会 🎉</h1>\n<p><span style=\"font-size: 150%;\">\n2010年8月26日に結成されたJapan Azure User Group (JAZUG) も今年でついに16周年！！<br><br>\n今年も毎年恒例のJAZUG総会を開催します！！\n</span></p>\n<h2>※周年イベントはコミュニティのお祭り！お祭りではみんなの顔がみたい！！ということで、\n本イベントはLIVEでのオンライン配信は無しとさせていただきます(後日アーカイブ配信します) </h2>\n\n<h1>タイムテーブル📌</h1>\n<p><img src=\"https://jaz.blob.core.windows.net/jazug16th/timetable.png\" width=\"800\"></p>\n<h1>セッション概要🔊</h1>\n<h2>新卒2年目がAzureとCopilot Studioで社内AIエージェントを作った話(仮)</h2>\n<p><strong>🗣️魚津 歓多さん</strong>  <br></p>\n<blockquote>\n<p>新卒2年目のエンジニアが、AzureとCopilot Studioを活用した社内AIエージェント開発に挑戦しました。<br>\n初めて触るAzureやCopilot Studioに試行錯誤しながら向き合い、サービスの構築から社内展開までの過程で得られた学びをお話しします。</p>\n</blockquote>\n<h2>Container Apps Dynamic Sessions で実現するワークフロー実行基盤の隔離設計（仮）</h2>\n<p><strong>🗣️内田 就也さん</strong>  <br></p>\n<blockquote>\n<p>顧客が作成した自動化コードを Azure 上で安全に実行するため、ワークフロー実行基盤に Azure Container Apps Dynamic Sessions を採用しました。<br>\n任意コード実行で直面した隔離設計の課題と、ワークフロー実行基盤としての Dynamic Sessions の使いどころを紹介します。</p>\n</blockquote>\n<h2>AI 時代の Azure エンジニアリング ― 私たちは何を磨き、何を任せるのか</h2>\n<p><strong>🗣️日本マイクロソフト株式会社 Microsoft Innovation Hub Chief Architect, <br>\nEvangelist 井上 章 @chack411 さん</strong>  <br></p>\n<blockquote>\n<p>設計から運用まで AI エージェントが関わるようになった今、Azure エンジニアは何を AI に任せ、何を自分で磨くべきか。Microsoft 社内の実例と AI の失敗パターンをもとに、「判断する力」を軸にしたこれからの Azure エンジニアリングを考えます。</p>\n</blockquote>\n<h2>全部無料枠でやってやる！ Azure と Salesforce の双方向 MCP 連携 (仮)</h2>\n<p><strong>🗣️Salesforce Developer Advocate odasho さん</strong>  <br>\n国内 SIer にてインフラから PaaS App 開発まで幅広く経験した後、コミュニティ活動を通じて Microsoft へ。<br>\n現在は Salesforce の Developer Advocate として、開発者や管理者へ AI エージェントなどの技術啓蒙や Headless の認知拡大に取り組む。<br>\nDevRel/Tokyo を中心に複数のコミュニティを運営・支援。英検 3 級。\n名城大学情報工学部非常勤講師。iPhone 絶対並んで買うお兄さん (2011–2025) として現在 7 連覇中！(2026/9/3 現在)\n<br>\n<br></p>\n<blockquote>\n<p>無料の Salesforce の Developer Edition に含まれる Hosted MCP Server を使って Azure 上のエージェントから業務データを読み書きし、逆に Salesforce 側のエージェントから Microsoft の MCP サーバーへつなぐ流れを、要所をデモしながら解説します。環境はすべて無料枠で用意し、認証や権限の設計で考えるべき点もお話します。</p>\n</blockquote>\n<h2>学生インターンがSentinel × Microsoft Foundryで「アラート疲れ」に挑んだSOCトリアージ自動化</h2>\n<p><strong>🗣️ロホマン シャヒンさん（Microsoft Student Ambassador,Gh-CUG運営)</strong> <br></p>\n<blockquote>\n<p>情報学部2年、Microsoftパートナー企業でインターン中の学生です。\nSOCの「アラート過多で優先度付けだけで一日が終わる」という課題に対し、Microsoft Sentinel と Microsoft Foundry Hosted Agent を組み合わせた二次トリアージ自動化基盤を設計・実装しました。\n本セッションでは、SoRとしてのSentinel、RAGを使った根拠付き判定、Human-in-the-loop設計を解説しつつ、GitHub Copilotで要件整理から実装・デプロイ・検証までを爆速化した実践フローとTipsを共有します。Agent Identityの落とし穴やカナリア非対応など、現場で詰まりやすいポイントもあわせて紹介します。</p>\n</blockquote>\n<h2>Group Policy? Intune? Azure VM の構成管理に使えるその他の手段</h2>\n<p><strong>🗣️あいぼーいさん</strong> <br></p>\n<blockquote>\n<p>AIと並んで、セキュリティが重要視される今、AzureでちょっとVM立てるだけでも、OS上で「アレしないといけない」「これも設定しないといけない」と言うルールがあると思います。そのルールちゃんと守られてますか？AzureのVMのガバナンス管理の方法をご紹介します</p>\n</blockquote>\n<h2>AI時代のAzureコスト最適化を考える～ トークンから価値へ: コスト、価値、そしてROI ～</h2>\n<p><strong>🗣️御成門プログラマー（Tomotaka Suzuki）さん</strong> <br></p>\n<blockquote>\n<p>生成AIの普及により、Azureにおけるコスト管理も新たな時代に入りました。AIの利用が進む一方で、「いくらかかるのか」だけでなく、「そのコストはどんな価値を生み出しているのか」が問われるようになっています。近年は、AIコストを単なる利用料金ではなく、価値創出まで含めて捉える考え方として AI FinOps や Tokenomics にも注目が集まっています。</p>\n<p>本セッションでは、Azure AI Foundry などAzure AIリソースを題材に、AI時代ならではのコスト構造を技術的な視点で解説できればと考えています。</p>\n<p>単なるコスト削減ではなく、「価値あたりのコストを最適化する」という視点から、コスト・価値・ROIの関係を整理し、AI時代に求められるAzureコスト最適化の考え方を考えてみたいと思います。</p>\n</blockquote>\n<h2>Azure Blob StorageとAzure Front Doorでスケールするデータベースを紹介してみる（仮）</h2>\n<p><strong>🗣️Kentaro Aoki（@kekekekenta）</strong> <br></p>\n<blockquote>\n<p>いまさら Azure Blob Storage？このセッションでは、16年たって話すことが少なくなった（というか全く話されなくなった）Azure Blob Storage に加えて、Azure Front Door を使用したデータベースのお話をしたいと思います。</p>\n</blockquote>\n<h2>Azure お悩み1000本ノック</h2>\n<p><strong>🗣️JAZUGコアメンバー、会場にいるあなた</strong> <br></p>\n<blockquote>\n<p>Azureのお悩みをエキスパートがその場で解決(できるかも?)！！\n事前準備は必要ありません。コミュニティメンバーと今悩んでいること議論してみませんか？</p>\n</blockquote>\n<h1>ショートセッションタイムテーブル📌</h1>\n<p><img src=\"https://jaz.blob.core.windows.net/jazug16th/shortsession.png\" width=\"500\"></p>\n<h2></h2>\n<h1>懇親会を開催！！！🍽️</h1>\n<p><span style=\"font-size: 150%;\">\n品川参加の方向けに懇親会を予定しています。懇親会参加希望の方は申込時のアンケートで「参加する」を選んでください。<br>\n参加費は2000円（アルコール類はあります！）を予定しています。お釣りのないよう1000円札をにご用意いただけると助かります。</span></p>\n<p>LT大会(飛び入りも歓迎)も予定しているので、皆さんネタの準備を！！\n</p>\n<h1>参加いただくすべての方へのお願い ⚠️</h1>\n<p>私たちは、勉強会に参加する全員をコミュニティメンバーと考えています。すべてのコミュニティメンバーが悲しむことがないよう、以下のような迷惑行為は禁止させていただきます。迷惑行為を取られた方は、即刻退場いただくとともに、次回以降の勉強会への参加をお断りします。</p>\n<ul>\n<li>参加者、スピーカー、スタッフ、各種スポンサーを含むすべてのコミュニティメンバーに対する、ハラスメント行為</li>\n<li>人材紹介、転職、宗教、マルチ商法など、本勉強会とは関係のない勧誘や営業活動</li>\n</ul>\n<p>もしこれらの行為を受けた・目撃した場合は <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdhyQvNtPaRp1BaiB13OKkZrmcY4AEf3q3Yx9HQk-tf50Eg0w/viewform\" rel=\"nofollow\">JAZUG 報告フォーム</a> にてご連絡ください。</p>\n<p>また、セッション中の写真撮影は、シャッター音など周りの方へのご配慮をお願いいたします。 次回以降の勉強会のリクエストは大歓迎です。『こんなことを知りたい！』というご希望がありましたら、是非スタッフまでお知らせください。\nまた、当日はいつもの飲み物は飲めませんので、各自飲み物持参でお願いします🙇</p>",
+      "url": "https://jazug.connpass.com/event/404770/",
+      "image_url": "https://media.connpass.com/thumbs/f4/ee/f4ee797579285bb0a280a85d29e7e7cc.png",
+      "hash_tag": "jazug",
+      "started_at": "2026-10-03T13:00:00+09:00",
+      "ended_at": "2026-10-03T19:00:00+09:00",
+      "published_at": "2026-09-03T20:55:49+09:00",
+      "limit": 104,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 2451,
+        "subdomain": "jazug",
+        "title": "JAZUG (Japan Azure User Group)",
+        "url": "https://jazug.connpass.com/"
+      },
+      "address": "東京都港区港南 2-16-3 品川グランドセントラルタワー",
+      "place": "日本マイクロソフト株式会社 品川本社オフィス 31F セミナールーム B",
+      "lat": "35.626614700000",
+      "lon": "139.740773600000",
+      "owner_id": 399059,
+      "owner_nickname": "ussvgr",
+      "owner_display_name": "ussvgr",
+      "accepted": 89,
+      "waiting": 0,
+      "updated_at": "2026-09-29T20:24:09+09:00"
     },
     {
       "id": 403447,
@@ -273,7 +273,7 @@
       "owner_id": 802363,
       "owner_nickname": "freee-matsui",
       "owner_display_name": "freee-matsui",
-      "accepted": 678,
+      "accepted": 693,
       "waiting": 0,
       "updated_at": "2026-09-30T21:53:35+09:00"
     },
@@ -347,7 +347,7 @@
       "published_at": "2026-09-26T18:01:28+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -362,7 +362,7 @@
       "owner_nickname": "mumimumi2000",
       "owner_display_name": "mumimumi",
       "accepted": 35,
-      "waiting": 1,
+      "waiting": 0,
       "updated_at": "2026-09-26T18:01:28+09:00"
     },
     {
@@ -378,7 +378,7 @@
       "published_at": "2026-09-05T11:00:22+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -392,7 +392,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 10,
+      "accepted": 11,
       "waiting": 0,
       "updated_at": "2026-09-05T11:00:22+09:00"
     },
@@ -409,7 +409,7 @@
       "published_at": "2026-09-26T13:01:16+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11642,
         "subdomain": "techmokmok",
@@ -440,7 +440,7 @@
       "published_at": "2026-08-23T10:19:17+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15319,
         "subdomain": "coderdojo-harumi",
@@ -471,7 +471,7 @@
       "published_at": "2026-09-18T08:36:49+09:00",
       "limit": 2,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13830,
         "subdomain": "networktraining",
@@ -488,6 +488,37 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-09-20T17:04:51+09:00"
+    },
+    {
+      "id": 401188,
+      "title": "胡田昌彦のITと音楽の文化祭 2026 — 勉強会・セッション・バンドライブ",
+      "catch": "ITの話をして、食べて、演奏する。少人数で楽しむ秋の一日",
+      "description": "<p>ITの話をじっくりして、夕方にご飯を食べて、夜は鍵盤演奏、全員参加のセッション、バンドライブ。</p>\n<p>千葉県南柏のライブバー「ケサラ」で、YouTubeチャンネルのメンバー交流会と音楽イベントを一日で開催します。</p>\n<p>10月1日が主催者の誕生日なので、少しだけお祝いムードもあります（笑）。ただし、誕生日会というよりは、ITと音楽をきっかけに人がつながる少人数の交流イベントです。</p>\n<p>イベントは、前半の「YouTubeメンバー限定 IT勉強会・交流会」と、後半の「ミニ演奏・全員セッション・バンドライブ」の二部制です。</p>\n<h2>第1部：YouTubeメンバー限定 IT勉強会・交流会</h2>\n<p>主催者の胡田昌彦が作って日々回している、AIをからめた自動化の仕組みと、それによって得られた「成果」や、それに伴って発生した「失敗談」をあれこれとお伝えする予定です！</p>\n<p>前回イベントでは、質問が何個出たか数えきれないくらいインタラクティブな回になりました。今回も一方的な講演ではなく、参加者からの質問や相談、その場で生まれた話題を取り上げながら、ゆっくりと進めます。</p>\n<p>途中からは、各自持参した食事を取りながら、質問、相談、雑談を楽しみます。</p>\n<p>第1部は、胡田昌彦のYouTubeチャンネルでメンバーシップに加入している方が対象です。お申し込み時に、YouTubeで使用している表示名をご記入ください...とはなっていますが、気になる方は入力なしでも大丈夫です。厳密なチェックは行いません。</p>\n<p><strong>※YouTubeメンバーシップはイベント当日にのみ参加していればOKです。その後の解約も自由です。月額290円の「応援メンバー」以上の方が対象です。</strong></p>\n<p>ITパートのみの参加も大丈夫です。気が向いたら、音楽パートにも参加することにその場で変更してもらって構いません。</p>\n<h2>第2部：ミニ演奏・全員セッション・バンドライブ</h2>\n<p>第2部は、YouTubeのメンバーやチャンネル登録者でなくても、どなたでも参加できます。</p>\n<p>ゲストによる鍵盤ミニ演奏から始まり、続いて参加者も一緒になったセッションを行います。</p>\n<p>楽器経験のある方はもちろん、初心者、歌だけ、手拍子だけ、見ているだけでも歓迎です。参加しやすい曲、知っている曲を中心に、できる人が支えながら、みんなでワイワイ演奏します。</p>\n<p>最後は、20:00頃から東京事変(と椎名林檎)のコピーバンドが演奏します。胡田もメンバーです。</p>\n<ul>\n<li>ゲストによる演奏（約10分）</li>\n<li>参加者も加わるセッション</li>\n<li>東京事変コピーバンドのライブ</li>\n<li>記念撮影・クロージング</li>\n</ul>\n<p>音楽パートだけ参加する方は、18:45以降にお越しください。</p>\n<p>ケサラの常連の皆さんは、申し込みをしていなくても全然かまいません。ミュージックチャージもありませんので、ぜひ遊びに来てください……！</p>\n<p>公式イベントは20:40頃に終了し、それ以降は残りたい人だけで、引き続き音楽や雑談を楽しみます。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時刻</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>15:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>15:30</td>\n<td>第1部 IT勉強会・交流会スタート</td>\n</tr>\n<tr>\n<td>15:45頃</td>\n<td>AI自動化の成果と失敗談 ― 毎日回している仕組みを全部見せます</td>\n</tr>\n<tr>\n<td>17:30頃</td>\n<td>食事をしながら質問・相談・雑談・記念撮影</td>\n</tr>\n<tr>\n<td>18:45頃</td>\n<td>第2部 一般受付</td>\n</tr>\n<tr>\n<td>19:00頃</td>\n<td>ゲストによる演奏（約10分）</td>\n</tr>\n<tr>\n<td>19:15頃</td>\n<td>みんなでセッション</td>\n</tr>\n<tr>\n<td>20:00頃</td>\n<td>東京事変コピーバンド ライブ</td>\n</tr>\n<tr>\n<td>20:40頃</td>\n<td>記念撮影・クロージング・イベント終了</td>\n</tr>\n<tr>\n<td>21:00〜</td>\n<td>残りたい人は残って遊ぶ</td>\n</tr>\n</tbody>\n</table>\n<p>※進行により、時刻は多少前後する場合があります。</p>\n<h2>夕食について</h2>\n<p>会場で夕食の提供はありません。食べ物の持ち込みは可能です。</p>\n<ul>\n<li>全体参加の方：17:30頃から、質問や雑談をしながら食事を取ります。自分の分の食べ物を持参するか、近隣のお店で購入してください</li>\n<li>音楽パートのみ参加の方：なるべく夕食を済ませてから、18:45以降にお越しください</li>\n<li>飲み物はケサラで各自注文してください</li>\n</ul>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>胡田昌彦のYouTubeを見ていて、直接ゆっくり話してみたい</li>\n<li>生成AIやITについて質問・相談したい</li>\n<li>IT好き・音楽好きの人と少人数で交流したい</li>\n<li>バンド演奏を気軽に楽しみたい</li>\n<li>楽器や歌でセッションに参加してみたい</li>\n<li>演奏はしないけれど、ライブやセッションを見て楽しみたい</li>\n</ul>\n<h2>会場について</h2>\n<p>席によってステージの見え方が異なるため、着席してライブを鑑賞する公演というより、出演者と参加者が近い距離で一緒に楽しむ会としてご参加ください。</p>\n<p>店内には、ギター、ベース、ドラム、パーカッションなどがあります。自分の楽器の持ち込みも、もちろんOKです。</p>\n<h2>撮影について</h2>\n<p>当日は、記録のため写真や動画を撮影する可能性があります。顔が映ることを希望しない方は、受付時に主催者へお知らせください。</p>\n<h2>主催</h2>\n<p>胡田昌彦（Microsoft MVP）</p>\n<ul>\n<li>ITチャンネル：<a href=\"https://www.youtube.com/@ebibibi\" rel=\"nofollow\">https://www.youtube.com/@ebibibi</a></li>\n<li>音楽チャンネル：<a href=\"https://www.youtube.com/channel/UCgKek_Bu1t_gJ83ABfLBwBQ\" rel=\"nofollow\">https://www.youtube.com/channel/UCgKek_Bu1t_gJ83ABfLBwBQ</a></li>\n<li>Web：<a href=\"https://ebisuda.net\" rel=\"nofollow\">https://ebisuda.net</a></li>\n</ul>\n<h2>注意事項</h2>\n<ul>\n<li>お互いを尊重し、営業・勧誘だけを目的とした参加や、他の参加者が不快になる行為はご遠慮ください</li>\n<li>飲酒される方は、公共交通機関でお越しください</li>\n<li>体調が優れない場合は、参加をお控えください</li>\n</ul>",
+      "url": "https://ebisuda.connpass.com/event/401188/",
+      "image_url": "https://media.connpass.com/thumbs/af/fa/affa9c4f8e8ec58f8dadf387d3b7b2be.png",
+      "hash_tag": "ebibibi",
+      "started_at": "2026-10-03T15:30:00+09:00",
+      "ended_at": "2026-10-03T21:00:00+09:00",
+      "published_at": "2026-07-20T17:45:04+09:00",
+      "limit": 30,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17298,
+        "subdomain": "ebisuda",
+        "title": "胡田昌彦 / Windows, Azure, M365, 生成AI などの勉強会",
+        "url": "https://ebisuda.connpass.com/"
+      },
+      "address": "〒277-0855 千葉県柏市南柏１丁目８−１０ TSビル B1F",
+      "place": "Live Bar CheSara（ライブバー ケサラ）",
+      "lat": "35.846484700000",
+      "lon": "139.953361800000",
+      "owner_id": 92752,
+      "owner_nickname": "MasahikoEbisuda",
+      "owner_display_name": "MasahikoEbisuda",
+      "accepted": 7,
+      "waiting": 0,
+      "updated_at": "2026-09-09T22:07:02+09:00"
     }
   ]
 }
