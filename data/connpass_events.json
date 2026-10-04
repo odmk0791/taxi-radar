@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-10-04T11:17:17.408756+09:00",
+  "fetched_at": "2026-10-04T18:10:29.614927+09:00",
   "date": "20261004",
-  "count": 10,
+  "count": 8,
   "events": [
     {
       "id": 408486,
@@ -16,7 +16,7 @@
       "published_at": "2026-09-30T20:25:25+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -47,7 +47,7 @@
       "published_at": "2026-10-01T00:51:32+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -61,7 +61,7 @@
       "owner_id": 197714,
       "owner_nickname": "clear_",
       "owner_display_name": "clear_",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-10-01T00:51:32+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-08-06T21:01:50+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16222,
         "subdomain": "mokumoku-daredemo",
@@ -123,40 +123,9 @@
       "owner_id": 1018850,
       "owner_nickname": "NaokiKometani",
       "owner_display_name": "NaokiKometani",
-      "accepted": 7,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-08-23T14:20:48+09:00"
-    },
-    {
-      "id": 403530,
-      "title": "【AI駆動開発】AIDDもくもく会（東京） #7 〜AI駆動開発で作業・相談・知見共有〜",
-      "catch": "AI駆動ツールで作業・相談・知見共有（オフライン）",
-      "description": "<blockquote>\n<p><strong>【日程変更のお知らせ】</strong> #7 は当初 9/27(日) の開催を予定していましたが、会場の都合により 10/4(日) へ変更しました。9/27 のページでご登録済みの方も、お手数ですがこちらのページから改めてご登録をお願いします。</p>\n</blockquote>\n<h3><strong>会場アクセスが迷いやすいという声をいただいているので、お時間に余裕を持ってお越しください</strong></h3>\n<p><strong>最寄駅</strong></p>\n<ul>\n<li>永田町駅（東京メトロ有楽町線・半蔵門線・南北線）9a出口より徒歩1分</li>\n<li>麹町駅（東京メトロ有楽町線）1番出口より徒歩5分</li>\n<li>赤坂見附駅（東京メトロ銀座線・丸ノ内線）D出口より徒歩7分</li>\n</ul>\n<h3>駅からの行き方詳細</h3>\n<p><a href=\"https://workers-hub.box.com/s/mf6r2lhmouxn84zegwraqtm87e9l6urc\" rel=\"nofollow\">https://workers-hub.box.com/s/mf6r2lhmouxn84zegwraqtm87e9l6urc</a></p>\n<h3><span style=\"color:red;\">入館後は運営への断り無しに指示のあるエリア以外へ立ち入ることはおやめください</span></h3>\n<h2>イベント概要</h2>\n<p>📢 「知る」から「やる」へ。AI駆動開発のもくもく実践コミュニティ</p>\n<p>生成AI/LLM関連のイベントは「入門セミナー」か「専門家向けカンファレンス」に寄りがちで、\nその中間にいる <strong>\"実際に手を動かして試行錯誤している実践者\"</strong> が継続的に集まれる場が少ないと感じています。</p>\n<p>そこで本イベントでは、理論より実践、形式より成果、そして何より <strong>「継続」</strong> を大切に、\nAI駆動開発（AIDD）をテーマにしたオフラインのもくもく会を企画しました。</p>\n<p>AIが「コードを補完するツール」から、設計を支援し、実装を肩代わりし、開発体験そのものを変革するパートナーへ。</p>\n<p>生成AI・LLMの進化により、開発現場ではすでに<strong>AI駆動コーディング / AI駆動デバッグ / AI駆動ドキュメンテーション</strong>が現実のものとなりつつあります。</p>\n<p>その中で今、私たちエンジニアに突きつけられている問いがあります。</p>\n<ul>\n<li>プロンプトひとつで、生産性はどこまで変わるのか？</li>\n<li>AIに「伝わる」設計とは何か？</li>\n<li>人間の創造性は、どこに注力すべきなのか？</li>\n</ul>\n<p>本イベントでは「<strong>AI駆動開発（AIDD）</strong>」をテーマに、</p>\n<ul>\n<li>各々が持ち寄った課題をAIと共に解決する「もくもく会」</li>\n<li>実践の中で得られた知見やプロンプトを<strong>対面で</strong>共有</li>\n<li>AIネイティブな開発スタイルの模索</li>\n</ul>\n<p>について、<strong>手を動かしながら実践・共有・議論</strong>します。</p>\n<p>ただタスクを消化するだけでなく、<strong>「AIツールを試してみた感想」「うまくいったプロンプト」「困ったこと」</strong>など、気軽に共有し合いながら学びを深めましょう。</p>\n<p><strong>オフライン開催だからこそできる、その場での質問・相談・ディスカッションを通じて、AI駆動開発の\"次の標準\"を一緒に探しに行きませんか。</strong></p>\n<hr>\n<h2>🎯 このイベントの特徴</h2>\n<ul>\n<li><strong>実践ベースの情報共有</strong>: 「実際にやってみた」リアルな工夫・プロンプト・成果物にフォーカス</li>\n<li><strong>ちょうどいい距離感</strong>: 一人では続かない、でも窮屈すぎない\"もくもく + 相談\"の場</li>\n<li><strong>多様なレベル感</strong>: 初心者〜上級者まで、自分のペースでOK（ツール/経験は不問）</li>\n<li><strong>繋がりの創出</strong>: 参加者同士で気軽に相談・コラボのきっかけ作り</li>\n</ul>\n<hr>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>: 2026年10月4日（日） 13:00 - 17:30</li>\n<li><strong>場所</strong>: LINEヤフー紀尾井町オフィス LODGE</li>\n<li>〒102-0094 東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー</li>\n<li><strong>参加費</strong>: 無料</li>\n<li><strong>定員</strong>: 90名程度（先着順）</li>\n<li><strong>参加資格</strong>: 開発にAIツールを活用したいという意欲（ツールの種類・習熟度は問いません）</li>\n<li><strong>持ち物</strong>: AI開発ができるPC環境、電源アダプタ</li>\n</ul>\n<hr>\n<h2>オフライン開催の特徴</h2>\n<ul>\n<li><strong>対面での相談</strong>: 困ったときにその場で隣の人や運営に相談できます</li>\n<li><strong>リアルタイム共有</strong>: 画面を見せ合いながらのディスカッションが可能</li>\n<li><strong>ネットワーキング</strong>: 他社・他部署のエンジニアとの交流機会</li>\n<li><strong>集中環境</strong>: もくもく作業に集中できる専用スペース</li>\n</ul>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:45 - 13:00</td>\n<td style=\"text-align: left;\"><strong>受付</strong></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:15</td>\n<td style=\"text-align: left;\"><strong>オープニング &amp; 自己紹介</strong></td>\n<td style=\"text-align: left;\">趣旨説明、参加者同士の自己紹介。<br>「今日やること &amp; 使うAIツール」を共有。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:15 - 14:45</td>\n<td style=\"text-align: left;\"><strong>もくもくタイム①</strong></td>\n<td style=\"text-align: left;\">集中作業時間（90分）<br>各自の課題に取り組みます。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45 - 15:15</td>\n<td style=\"text-align: left;\"><strong>ディスカッション・休憩</strong></td>\n<td style=\"text-align: left;\">お悩み相談・知見共有（30分）<br>作業で詰まっている点や、他の人に聞いてみたいことを相談。<br>フリートーク。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:15 - 16:30</td>\n<td style=\"text-align: left;\"><strong>もくもくタイム②</strong></td>\n<td style=\"text-align: left;\">集中作業時間（75分）<br>前半の相談を踏まえて作業再開、または追い込み。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\"><strong>AIDD LT会 &amp; クロージング</strong></td>\n<td style=\"text-align: left;\">気づき・学びのシェア<br>希望者による3分LT（Lightning Talk）や、試してみたこと・困ったことの共有。<br>気軽に話せる雰囲気で進めます。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00 - 17:30</td>\n<td style=\"text-align: left;\"><strong>（任意）懇親タイム</strong></td>\n<td style=\"text-align: left;\">会場撤収後、希望者で軽く交流</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>ChatGPT / Claude / Gemini などのAIツールを使った開発に興味がある方</li>\n<li>GitHub Copilot / Cursor などのコーディング支援ツールを試してみたい方</li>\n<li>AIツールを使っているけど、もっと活用したい方</li>\n<li>AI時代の開発スタイルについて対面で議論したい方</li>\n<li>もくもくと作業しながら、他の参加者との交流も楽しみたい方</li>\n<li>他社・他部署のエンジニアとネットワーキングしたい方</li>\n</ul>\n<hr>\n<h2>推奨ツール（例）</h2>\n<p>以下のようなツールを使用した開発を想定していますが、これ以外のツールでも問題ありません。</p>\n<ul>\n<li><strong>対話型AI</strong>: ChatGPT / Claude / Gemini など</li>\n<li><strong>コーディング支援</strong>: GitHub Copilot / Cursor / Claude Code / Codex など</li>\n<li><strong>コード生成</strong>: v0.dev / Bolt.new / Replit Agent など</li>\n<li><strong>その他</strong>: 画像生成AI、ドキュメント作成AI など</li>\n</ul>\n<hr>\n<h2>参加ルール</h2>\n<ul>\n<li><strong>必ずAIツールを使用すること</strong>（種類は問いません）</li>\n<li>作業内容は自由。自分のペースで進めてOK</li>\n<li>困ったことがあれば気軽に周りの人や運営に相談しましょう</li>\n<li>完成度よりも「試してみること」を大切に。失敗も学びです</li>\n<li>他の参加者の集中を妨げないよう配慮をお願いします</li>\n<li>「今ごろそれやってるの？」などのネガティブな言葉はNG。共感と前向きな提案でフィードバックしましょう</li>\n</ul>\n<hr>\n<h2>参加にあたって</h2>\n<p>参加者の方には、事前に簡単なアンケートにご協力いただく予定です。</p>\n<ul>\n<li>SNSアカウント（任意）</li>\n<li>当日やりたいこと・意気込み</li>\n<li>使用予定のAIツール</li>\n</ul>\n<p>これにより、参加者同士の相互理解を深め、より有意義な交流の場にしたいと考えています。</p>\n<hr>\n<h2>会場アクセス</h2>\n<p><strong>LINEヤフー紀尾井町オフィス LODGE</strong></p>\n<p>〒102-0094 東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー</p>\n<p><strong>最寄駅</strong>\n- 永田町駅（東京メトロ有楽町線・半蔵門線・南北線）9a出口より徒歩1分\n- 麹町駅（東京メトロ有楽町線）1番出口より徒歩5分\n- 赤坂見附駅（東京メトロ銀座線・丸ノ内線）D出口より徒歩7分</p>\n<h3>駅からの行き方詳細</h3>\n<p><a href=\"https://workers-hub.box.com/s/mf6r2lhmouxn84zegwraqtm87e9l6urc\" rel=\"nofollow\">https://workers-hub.box.com/s/mf6r2lhmouxn84zegwraqtm87e9l6urc</a></p>\n<p><strong>入館方法</strong>\n- 詳細は参加者の方に別途ご案内いたします</p>\n<hr>\n<h2>注意事項</h2>\n<ul>\n<li>会場の電源・Wi-Fiは利用可能です</li>\n<li>作業中の画面共有・写真撮影は任意です（見せたい方のみ）</li>\n<li>イベント中の写真撮影・SNS投稿については、参加者のプライバシーに配慮してください</li>\n<li>体調不良時は参加をお控えください</li>\n<li>定員に達し次第、申込を締め切らせていただきます</li>\n</ul>\n<hr>\n<h2>お問い合わせ</h2>\n<p>ご不明点がございましたら、お気軽にお問い合わせください。</p>\n<ul>\n<li>connpassのメッセージ機能、またはイベントページのコメント欄よりご連絡ください</li>\n</ul>\n<p>皆様のご参加をお待ちしております！</p>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：LINEヤフー株式会社<br>\n協力：<a href=\"https://www.ai-driven.dev/ai%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0/\" rel=\"nofollow\">AI駆動開発コンソーシアム</a>、<a href=\"https://gais.jp/\" rel=\"nofollow\">一般社団法人 生成ＡＩ協会（GAIS）</a>、ULSコンサルティング株式会社、株式会社ログラス、クラスメソッド株式会社、KDDIアジャイル開発センター株式会社<br>\n後援：さくらインターネット株式会社、株式会社ラック、Autify, Inc.、</p>",
-      "url": "https://aid.connpass.com/event/403530/",
-      "image_url": "https://media.connpass.com/thumbs/7d/20/7d20effc7c5aa294eb5a778522cf6b4a.png",
-      "hash_tag": "aidd_mokumoku",
-      "started_at": "2026-10-04T13:00:00+09:00",
-      "ended_at": "2026-10-04T17:30:00+09:00",
-      "published_at": "2026-08-12T18:51:37+09:00",
-      "limit": 100,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14543,
-        "subdomain": "aid",
-        "title": "AI駆動開発(AI-Driven Development)",
-        "url": "https://aid.connpass.com/"
-      },
-      "address": "東京都千代田区紀尾井町１−２ 東京ガーデンテラス 17F",
-      "place": "LINEヤフー株式会社 LODGE",
-      "lat": "35.679936400000",
-      "lon": "139.737944200000",
-      "owner_id": 28038,
-      "owner_nickname": "koji_yamaoka_7",
-      "owner_display_name": "kozzy",
-      "accepted": 89,
-      "waiting": 0,
-      "updated_at": "2026-09-29T12:41:41+09:00"
     },
     {
       "id": 408088,
@@ -169,9 +138,9 @@
       "started_at": "2026-10-04T13:00:00+09:00",
       "ended_at": "2026-10-04T17:00:00+09:00",
       "published_at": "2026-09-27T13:38:36+09:00",
-      "limit": 19,
+      "limit": 18,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -187,7 +156,38 @@
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
       "accepted": 17,
       "waiting": 0,
-      "updated_at": "2026-10-04T11:10:17+09:00"
+      "updated_at": "2026-10-04T11:51:07+09:00"
+    },
+    {
+      "id": 403530,
+      "title": "【AI駆動開発】AIDDもくもく会（東京） #7 〜AI駆動開発で作業・相談・知見共有〜",
+      "catch": "AI駆動ツールで作業・相談・知見共有（オフライン）",
+      "description": "<blockquote>\n<p><strong>【日程変更のお知らせ】</strong> #7 は当初 9/27(日) の開催を予定していましたが、会場の都合により 10/4(日) へ変更しました。9/27 のページでご登録済みの方も、お手数ですがこちらのページから改めてご登録をお願いします。</p>\n</blockquote>\n<h3><strong>会場アクセスが迷いやすいという声をいただいているので、お時間に余裕を持ってお越しください</strong></h3>\n<p><strong>最寄駅</strong></p>\n<ul>\n<li>永田町駅（東京メトロ有楽町線・半蔵門線・南北線）9a出口より徒歩1分</li>\n<li>麹町駅（東京メトロ有楽町線）1番出口より徒歩5分</li>\n<li>赤坂見附駅（東京メトロ銀座線・丸ノ内線）D出口より徒歩7分</li>\n</ul>\n<h3>駅からの行き方詳細</h3>\n<p><a href=\"https://workers-hub.box.com/s/mf6r2lhmouxn84zegwraqtm87e9l6urc\" rel=\"nofollow\">https://workers-hub.box.com/s/mf6r2lhmouxn84zegwraqtm87e9l6urc</a></p>\n<h3><span style=\"color:red;\">入館後は運営への断り無しに指示のあるエリア以外へ立ち入ることはおやめください</span></h3>\n<h2>イベント概要</h2>\n<p>📢 「知る」から「やる」へ。AI駆動開発のもくもく実践コミュニティ</p>\n<p>生成AI/LLM関連のイベントは「入門セミナー」か「専門家向けカンファレンス」に寄りがちで、\nその中間にいる <strong>\"実際に手を動かして試行錯誤している実践者\"</strong> が継続的に集まれる場が少ないと感じています。</p>\n<p>そこで本イベントでは、理論より実践、形式より成果、そして何より <strong>「継続」</strong> を大切に、\nAI駆動開発（AIDD）をテーマにしたオフラインのもくもく会を企画しました。</p>\n<p>AIが「コードを補完するツール」から、設計を支援し、実装を肩代わりし、開発体験そのものを変革するパートナーへ。</p>\n<p>生成AI・LLMの進化により、開発現場ではすでに<strong>AI駆動コーディング / AI駆動デバッグ / AI駆動ドキュメンテーション</strong>が現実のものとなりつつあります。</p>\n<p>その中で今、私たちエンジニアに突きつけられている問いがあります。</p>\n<ul>\n<li>プロンプトひとつで、生産性はどこまで変わるのか？</li>\n<li>AIに「伝わる」設計とは何か？</li>\n<li>人間の創造性は、どこに注力すべきなのか？</li>\n</ul>\n<p>本イベントでは「<strong>AI駆動開発（AIDD）</strong>」をテーマに、</p>\n<ul>\n<li>各々が持ち寄った課題をAIと共に解決する「もくもく会」</li>\n<li>実践の中で得られた知見やプロンプトを<strong>対面で</strong>共有</li>\n<li>AIネイティブな開発スタイルの模索</li>\n</ul>\n<p>について、<strong>手を動かしながら実践・共有・議論</strong>します。</p>\n<p>ただタスクを消化するだけでなく、<strong>「AIツールを試してみた感想」「うまくいったプロンプト」「困ったこと」</strong>など、気軽に共有し合いながら学びを深めましょう。</p>\n<p><strong>オフライン開催だからこそできる、その場での質問・相談・ディスカッションを通じて、AI駆動開発の\"次の標準\"を一緒に探しに行きませんか。</strong></p>\n<hr>\n<h2>🎯 このイベントの特徴</h2>\n<ul>\n<li><strong>実践ベースの情報共有</strong>: 「実際にやってみた」リアルな工夫・プロンプト・成果物にフォーカス</li>\n<li><strong>ちょうどいい距離感</strong>: 一人では続かない、でも窮屈すぎない\"もくもく + 相談\"の場</li>\n<li><strong>多様なレベル感</strong>: 初心者〜上級者まで、自分のペースでOK（ツール/経験は不問）</li>\n<li><strong>繋がりの創出</strong>: 参加者同士で気軽に相談・コラボのきっかけ作り</li>\n</ul>\n<hr>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>: 2026年10月4日（日） 13:00 - 17:30</li>\n<li><strong>場所</strong>: LINEヤフー紀尾井町オフィス LODGE</li>\n<li>〒102-0094 東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー</li>\n<li><strong>参加費</strong>: 無料</li>\n<li><strong>定員</strong>: 90名程度（先着順）</li>\n<li><strong>参加資格</strong>: 開発にAIツールを活用したいという意欲（ツールの種類・習熟度は問いません）</li>\n<li><strong>持ち物</strong>: AI開発ができるPC環境、電源アダプタ</li>\n</ul>\n<hr>\n<h2>オフライン開催の特徴</h2>\n<ul>\n<li><strong>対面での相談</strong>: 困ったときにその場で隣の人や運営に相談できます</li>\n<li><strong>リアルタイム共有</strong>: 画面を見せ合いながらのディスカッションが可能</li>\n<li><strong>ネットワーキング</strong>: 他社・他部署のエンジニアとの交流機会</li>\n<li><strong>集中環境</strong>: もくもく作業に集中できる専用スペース</li>\n</ul>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:45 - 13:00</td>\n<td style=\"text-align: left;\"><strong>受付</strong></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:15</td>\n<td style=\"text-align: left;\"><strong>オープニング &amp; 自己紹介</strong></td>\n<td style=\"text-align: left;\">趣旨説明、参加者同士の自己紹介。<br>「今日やること &amp; 使うAIツール」を共有。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:15 - 14:45</td>\n<td style=\"text-align: left;\"><strong>もくもくタイム①</strong></td>\n<td style=\"text-align: left;\">集中作業時間（90分）<br>各自の課題に取り組みます。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45 - 15:15</td>\n<td style=\"text-align: left;\"><strong>ディスカッション・休憩</strong></td>\n<td style=\"text-align: left;\">お悩み相談・知見共有（30分）<br>作業で詰まっている点や、他の人に聞いてみたいことを相談。<br>フリートーク。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:15 - 16:30</td>\n<td style=\"text-align: left;\"><strong>もくもくタイム②</strong></td>\n<td style=\"text-align: left;\">集中作業時間（75分）<br>前半の相談を踏まえて作業再開、または追い込み。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\"><strong>AIDD LT会 &amp; クロージング</strong></td>\n<td style=\"text-align: left;\">気づき・学びのシェア<br>希望者による3分LT（Lightning Talk）や、試してみたこと・困ったことの共有。<br>気軽に話せる雰囲気で進めます。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00 - 17:30</td>\n<td style=\"text-align: left;\"><strong>（任意）懇親タイム</strong></td>\n<td style=\"text-align: left;\">会場撤収後、希望者で軽く交流</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>ChatGPT / Claude / Gemini などのAIツールを使った開発に興味がある方</li>\n<li>GitHub Copilot / Cursor などのコーディング支援ツールを試してみたい方</li>\n<li>AIツールを使っているけど、もっと活用したい方</li>\n<li>AI時代の開発スタイルについて対面で議論したい方</li>\n<li>もくもくと作業しながら、他の参加者との交流も楽しみたい方</li>\n<li>他社・他部署のエンジニアとネットワーキングしたい方</li>\n</ul>\n<hr>\n<h2>推奨ツール（例）</h2>\n<p>以下のようなツールを使用した開発を想定していますが、これ以外のツールでも問題ありません。</p>\n<ul>\n<li><strong>対話型AI</strong>: ChatGPT / Claude / Gemini など</li>\n<li><strong>コーディング支援</strong>: GitHub Copilot / Cursor / Claude Code / Codex など</li>\n<li><strong>コード生成</strong>: v0.dev / Bolt.new / Replit Agent など</li>\n<li><strong>その他</strong>: 画像生成AI、ドキュメント作成AI など</li>\n</ul>\n<hr>\n<h2>参加ルール</h2>\n<ul>\n<li><strong>必ずAIツールを使用すること</strong>（種類は問いません）</li>\n<li>作業内容は自由。自分のペースで進めてOK</li>\n<li>困ったことがあれば気軽に周りの人や運営に相談しましょう</li>\n<li>完成度よりも「試してみること」を大切に。失敗も学びです</li>\n<li>他の参加者の集中を妨げないよう配慮をお願いします</li>\n<li>「今ごろそれやってるの？」などのネガティブな言葉はNG。共感と前向きな提案でフィードバックしましょう</li>\n</ul>\n<hr>\n<h2>参加にあたって</h2>\n<p>参加者の方には、事前に簡単なアンケートにご協力いただく予定です。</p>\n<ul>\n<li>SNSアカウント（任意）</li>\n<li>当日やりたいこと・意気込み</li>\n<li>使用予定のAIツール</li>\n</ul>\n<p>これにより、参加者同士の相互理解を深め、より有意義な交流の場にしたいと考えています。</p>\n<hr>\n<h2>会場アクセス</h2>\n<p><strong>LINEヤフー紀尾井町オフィス LODGE</strong></p>\n<p>〒102-0094 東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 紀尾井タワー</p>\n<p><strong>最寄駅</strong>\n- 永田町駅（東京メトロ有楽町線・半蔵門線・南北線）9a出口より徒歩1分\n- 麹町駅（東京メトロ有楽町線）1番出口より徒歩5分\n- 赤坂見附駅（東京メトロ銀座線・丸ノ内線）D出口より徒歩7分</p>\n<h3>駅からの行き方詳細</h3>\n<p><a href=\"https://workers-hub.box.com/s/mf6r2lhmouxn84zegwraqtm87e9l6urc\" rel=\"nofollow\">https://workers-hub.box.com/s/mf6r2lhmouxn84zegwraqtm87e9l6urc</a></p>\n<p><strong>入館方法</strong>\n- 詳細は参加者の方に別途ご案内いたします</p>\n<hr>\n<h2>注意事項</h2>\n<ul>\n<li>会場の電源・Wi-Fiは利用可能です</li>\n<li>作業中の画面共有・写真撮影は任意です（見せたい方のみ）</li>\n<li>イベント中の写真撮影・SNS投稿については、参加者のプライバシーに配慮してください</li>\n<li>体調不良時は参加をお控えください</li>\n<li>定員に達し次第、申込を締め切らせていただきます</li>\n</ul>\n<hr>\n<h2>お問い合わせ</h2>\n<p>ご不明点がございましたら、お気軽にお問い合わせください。</p>\n<ul>\n<li>connpassのメッセージ機能、またはイベントページのコメント欄よりご連絡ください</li>\n</ul>\n<p>皆様のご参加をお待ちしております！</p>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：LINEヤフー株式会社<br>\n協力：<a href=\"https://www.ai-driven.dev/ai%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0/\" rel=\"nofollow\">AI駆動開発コンソーシアム</a>、<a href=\"https://gais.jp/\" rel=\"nofollow\">一般社団法人 生成ＡＩ協会（GAIS）</a>、ULSコンサルティング株式会社、株式会社ログラス、クラスメソッド株式会社、KDDIアジャイル開発センター株式会社<br>\n後援：さくらインターネット株式会社、株式会社ラック、Autify, Inc.、</p>",
+      "url": "https://aid.connpass.com/event/403530/",
+      "image_url": "https://media.connpass.com/thumbs/7d/20/7d20effc7c5aa294eb5a778522cf6b4a.png",
+      "hash_tag": "aidd_mokumoku",
+      "started_at": "2026-10-04T13:00:00+09:00",
+      "ended_at": "2026-10-04T17:30:00+09:00",
+      "published_at": "2026-08-12T18:51:37+09:00",
+      "limit": 100,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 14543,
+        "subdomain": "aid",
+        "title": "AI駆動開発(AI-Driven Development)",
+        "url": "https://aid.connpass.com/"
+      },
+      "address": "東京都千代田区紀尾井町１−２ 東京ガーデンテラス 17F",
+      "place": "LINEヤフー株式会社 LODGE",
+      "lat": "35.679936400000",
+      "lon": "139.737944200000",
+      "owner_id": 28038,
+      "owner_nickname": "koji_yamaoka_7",
+      "owner_display_name": "kozzy",
+      "accepted": 83,
+      "waiting": 0,
+      "updated_at": "2026-10-04T13:30:45+09:00"
     },
     {
       "id": 407588,
@@ -202,7 +202,7 @@
       "published_at": "2026-09-22T00:15:55+09:00",
       "limit": 9,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 5495,
         "subdomain": "ml-for-experts",
@@ -233,7 +233,7 @@
       "published_at": "2026-10-03T12:12:34+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 966,
         "subdomain": "devmorning",
@@ -250,68 +250,6 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-10-03T12:12:34+09:00"
-    },
-    {
-      "id": 408408,
-      "title": "【番外編：コーダー道場まつど】はじめてのScratchプログラミング開催案内 2026年10月度",
-      "catch": "",
-      "description": "<p>プログラミングも初めて見ようとかやってみたいけどできるかどうか？迷っていたら是非！一度参加してみてください。1時間ぐらいですがゆっくりと参加者に合わせて進めて行きます。わからないところなど個別に相談したいなどもOK!です。参加してくれる子供たちをお待ちしています。<br>\nコーダー道場まつどではプログラミング未経験のお子さん向けにScratchを使用して初心者向けの道場を開催しています。まったくプログラミングをしたことがないというお子さんでも大丈夫です。１時間ほど使い方を含めて一緒にプログラミングしながらゲーム作品を作っていきます。開催日によってカリキュラムが違うので何回参加してもOK!です。<br>\n<span style=\"color:red;\">同月内でワークショップに複数回参加を希望される方は、初回参加の際に次回参加の有無をお知らせください！！<br><u>システムでの都合上、同月内同ワークショップへの参加設定ができないため個別に確認させて頂いております。</u></span><br>Scratch未経験のお子さんは奮ってご参加ください。<br>\n<br>\n<span style=\"color:red;\">ご兄弟やお友達と一緒に参加申し込みをしたいという方は、<u>予約の際、アンケートに二人目の参加者の情報もご記載ください。</u>\n<strong>１回のワークショップで２名まで参加可能です。</strong></span><br></p>\n<blockquote>\n<strong>運営チームからのお願い</strong>\n<ul>\n<li><strong style=\"color:red;\">感染症防止のため、個人情報として住所・氏名・連絡先を参加の際に控えさせて頂きます。</strong></li>\n<li>家を出る前に検温してください。熱のある方は参加は見合わせてください。</li>\n</ul>\n</blockquote>\n<blockquote>\n<strong>いつもの開催場所ではありません</strong><br>\n<ul><strong style=\"color:red;\">松戸文化ホール 4階（KITE MITE MATSUDOのとなりのビルの４階です。<br>\nプログラミングカフェの場所をお借りして行います。</strong></ul>\n</blockquote>\n<table>\n<tbody>\n<tr>\n<th>会場</th>\n<td>〒271-0092 松戸市松戸1307-1<br>\n松戸ビルヂング 4階　エレベーターホールからまっすぐ行った突き当り</td>\n</tr>\n<tr>\n<th>教材</th>\n<td>Scratch（スクラッチ）<br>\n<span style=\"font-size: 14px; font-weight: bold;\">※パソコンはこちらで準備します。</span></td>\n</tr>\n<tr>\n<th>内容</th>\n<td>開催日によって担当とプログラミングの内容が異なります。<br>\n・ジャンピングゲームをつくろう！ : 10/18 : はむさん(CoderDojo Matsudo)<br>\n・シンプルめいろゲームをつくろう！ : 10/04,17,25,31 : ほしけんさん(CoderDojo Matsudo)<br>\n・りんごキャッチゲームをつくろう！ : 10/10,24 : ヒロジィさん(CoderDojo Matsudo)<br>\n※それぞれに1回づつご参加いただくことができます。<br>\n※ご兄弟で申し込みたい方はアンケートなどでその旨をお伝えください。個別に対応させて頂きます。<br>\n※システムの都合で同じ月に2回申込みできません。<br>\n <span style=\"color:red;\">※月が替わってからお申込みいただくか、初回参加時に確認させてください。</span>\n</td>\n</tr>\n<tr>\n<th>対象</th>\n<td>小学生</td>\n</tr>\n<tr>\n<th>募集人数</th>\n<td>scratch未経験者　各開催日2名（申込は1名で兄妹友人の同伴は可）<br>\n先着順にて受け付けます。</td>\n</tr>\n<tr>\n<th>費用</th>\n<td>無料</td>\n</tr>\n<tr>\n<th>参加要件</th>\n<td>1.保護者の離席可<br>\n※保護者の方は会場内での待機いただくことをお勧めしますが、途中離席も可能です。終了時間近くにお迎いに来てください。<br>\n2.ノートPCは持ち込み不要<br>\n※パソコンはコーダー道場で準備しますが、ご自分のバソコンが使いやすいという方は持ち込んでいただいてもOK！です。<br>\n3.マウス操作ができること。</td>\n</tr>\n<tr>\n</tr><tr>\n</tr>\n</tbody>\n</table>\n<p>また、 <a href=\"https://calendar.google.com/calendar/embed?src=3hcpgo5hrf1ltg5s9h6q7u3g18%40group.calendar.google.com&amp;ctz=Asia%2FTokyo\" rel=\"nofollow\">プログラミングカフェの担当カレンダー</a>はこちらになります。<br></p>\n<p>【協力】PopcornMatsudo（中高生の居場所松戸地区）、プログラミングカフェまつど（株式会社 Cygames）</p>",
-      "url": "https://coderdojomatsudo-procafe.connpass.com/event/408408/",
-      "image_url": "https://media.connpass.com/thumbs/23/7a/237a84425d8fe240d336b02651c75e3a.png",
-      "hash_tag": "",
-      "started_at": "2026-10-04T13:00:00+09:00",
-      "ended_at": "2026-10-31T14:00:00+09:00",
-      "published_at": "2026-10-01T20:01:35+09:00",
-      "limit": 7,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13492,
-        "subdomain": "coderdojomatsudo-procafe",
-        "title": "CoderDojo Matsudo（番外編カフェ道場）",
-        "url": "https://coderdojomatsudo-procafe.connpass.com/"
-      },
-      "address": "千葉県松戸市松戸1307-1",
-      "place": "プログラミングカフェ松戸",
-      "lat": "35.782245200000",
-      "lon": "139.898962100000",
-      "owner_id": 215792,
-      "owner_nickname": "CoderDojo",
-      "owner_display_name": "CoderDojo",
-      "accepted": 4,
-      "waiting": 0,
-      "updated_at": "2026-10-01T20:01:35+09:00"
-    },
-    {
-      "id": 406052,
-      "title": "2026/10/04(日) CoderDojo 柏@HAL創造思考塾",
-      "catch": "会場開催です",
-      "description": "<p>CoderDojo Kashiwa(柏) を開催します。<br></p>\n<p>■受付について<br>\n以前から参加している人は、【参加したことがある人】を選んでください。<br>\nまた、CoderDojo Kashowa(柏)ではなく、近隣の 柏の葉、南柏、沼南 に来た事がある人も【参加したことがある人】を選んでください。<br>\n今までにCoderDojo Kashowa(柏)や近隣の 柏の葉、南柏、沼南にも来たことが無い人、または、Scratch を使ったことが無い人は、【初めて参加する人】を選んでください。<br>\n<br>\n■年齢について<br>\n7〜17歳を対象としています。<br>\n見学という事でしたら、それ以外の年齢の方も受け付けています。<br>\n事前に見学である事をお知らせいただけますと助かります。<br></p>\n<p>■当日について<br>\n【時間】10:00～ 11:30 時間に遅れないようにお願いします。<br>\n【場所】HAL創造思考塾(千葉県柏市柏3-8-10 AKビル 2階 柏郵便局本局の向かい)<br>\n【最寄り駅】JR柏駅 東口<br></p>\n<p>HAL創造思考塾 の紹介<br>\n<a href=\"https://halcreation.jp/&lt;/br>\" rel=\"nofollow\">https://halcreation.jp/<br></a>\n<br>\n会場へのお問い合わせは、ご遠慮ください。<br>\n当日の欠席や遅刻の連絡も会場ではなく、「イベントへのお問い合わせ」にてお願いいたします。\n<br>\n<br>パソコンを持参できる方は会場に持ってきてください。<br>\nパソコンの貸し出しを希望される方は、「イベントへのお問い合わせ」からお知らせください。3台と限りがありますが、お貸しできます\n<br>\n<br>\nそれ以外にご不明な点等ございましたら、お問い合わせください。\n<br><br>\nそれでは当日お会いできることを楽しみにしています。<br>\n子どものためのプログラミング道場<br>\nCoderDojo Kashiwa <br>\n<br>\nCoderDojo については、以下の CoderDojo Japan のサイトを参考ください<br>\n<a href=\"https://coderdojo.jp/\" rel=\"nofollow\">https://coderdojo.jp/</a></p>",
-      "url": "https://kashiwa.connpass.com/event/406052/",
-      "image_url": null,
-      "hash_tag": "",
-      "started_at": "2026-10-04T10:00:00+09:00",
-      "ended_at": "2026-10-04T11:30:00+09:00",
-      "published_at": "2026-09-06T06:35:29+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 15707,
-        "subdomain": "kashiwa",
-        "title": "CoderDojo柏",
-        "url": "https://kashiwa.connpass.com/"
-      },
-      "address": "千葉県柏市柏3-8-10 AKビル 2階",
-      "place": "HAL創造思考塾",
-      "lat": "35.860316200000",
-      "lon": "139.976604100000",
-      "owner_id": 116459,
-      "owner_nickname": "KenIcs",
-      "owner_display_name": "坂田 健一(CoderDojo 柏)",
-      "accepted": 1,
-      "waiting": 0,
-      "updated_at": "2026-09-06T06:35:29+09:00"
     }
   ]
 }
