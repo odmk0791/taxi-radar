@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-06T02:38:14.363675+09:00",
+  "fetched_at": "2026-10-06T08:31:37.960192+09:00",
   "date": "20261006",
   "count": 9,
   "events": [
@@ -64,37 +64,6 @@
       "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-09-08T20:52:51+09:00"
-    },
-    {
-      "id": 404538,
-      "title": "【増々々枠】CTO/CPOが現場に戻る時代。",
-      "catch": "AI時代、プロダクトリーダーの役割はどう変わるのか",
-      "description": "<h2>【イベント概要】</h2>\n<p>AIによって、プロダクトづくりの前提が大きく変わり始めています。\n<br>\n<br>エンジニアがプロトタイプをつくり、PdMが自ら実装し、事業責任者が顧客とプロダクトの間を行き来する。\n<br>\n<br>そして、CTOやCPO、VP、事業責任者といった組織を率いるリーダー自身が、\n<br>これまで以上にプロダクトや顧客の現場へ深く入るケースも増えています。\n<br>\n<br>これは単なる「プレイヤー回帰」なのでしょうか。\n<br>\n<br>それともAIによって、マネジメントとプレイヤー、事業とプロダクト、技術と顧客といった境界そのものが変わり、\n<br>プロダクトリーダーの役割が再定義され始めているのでしょうか。\n<br>\n<br>本イベントでは、CTO/CPOをはじめ、VP、事業責任者、プロダクト責任者など、\n<br>異なる立場でプロダクトづくりをリードするメンバーが集結。\n<br>\n<br>全編パネルディスカッション形式で、\n<br>\n<br>・「なぜ、いまリーダーが現場に入るのか」\n<br>・「AIによって“手を動かす”の意味はどう変わるのか」\n<br>・「CTO/CPO・VP・事業責任者の境界はどう変わるのか」\n<br>・「これから強いプロダクトリーダーとはどんな人なのか」\n<br>\n<br>などを、それぞれの実践をもとに議論します。\n<br>\n<br>肩書きや職種の話に閉じず、AI時代のプロダクトづくりとリーダーシップの現在地を考えるイベントです。</p>\n<h2>【このような方にオススメ】</h2>\n<p>以下に少しでも当てはまる方のご参加をお待ちしています！</p>\n<ul>\n<li>AI時代にエンジニアやPdMの役割がどう変わるのか考えたい方</li>\n<li>テックリード、EM、PdMなど、プロダクトをリードする立場の方</li>\n<li>CTO / CPO / VPoE / VPoPなどを目指している方</li>\n<li>マネジメントをしながら、自分自身も現場に入り続けたい方</li>\n<li>事業、プロダクト、エンジニアリングの境界を越えて仕事をしている方</li>\n<li>AI時代のプロダクト組織やキャリアについて考えたい方</li>\n</ul>\n<h2>【開催日時】</h2>\n<p><font size=\"4\">2026年10月6日（火）19:00〜21:30（18:30受付開始）</font></p>\n<h2>【会場】</h2>\n<p>・会場名：株式会社ログラス オフィス\n<br>・住所　：<a href=\"https://maps.app.goo.gl/iehWxmixeb5HwtJB8\" rel=\"nofollow\">東京都港区三田3-11-24 国際興業三田第2ビル 9階</a>\n<br>　　　　　　都営地下鉄浅草線・京浜急行電鉄「泉岳寺駅」徒歩1分\n<br>　　　　　　JR山手線・京浜東北線「高輪ゲートウェイ駅」徒歩7分\n<br>　　　　　　<img src=\"https://cdn.prod.website-files.com/634e10ec52ffb62078e9da01/66015050f9357069c53a5f9c_IMG_2018.JPG\" width=\"300\"></p>\n<h2>【持ち物】</h2>\n<p>お持ちの方はお名刺を1枚お持ちください（ネームホルダーに入れていただきます）</p>\n<h2>【タイムテーブル】</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30〜　　　</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00〜19:10</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10〜20:20</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20〜21:30</td>\n<td style=\"text-align: left;\">交流会（軽食・ドリンクあり）</td>\n</tr>\n</tbody>\n</table>\n<h2>【登壇者・パネラー】※五十音順</h2>\n<h3>榎本 悠介 | <font size=\"2\">株式会社LayerX バクラク事業部CPO</font></h3>\n<p><img src=\"https://i.ibb.co/Z7nsFpG/2026-08-24-20-54-41.png\" height=\"150\">\n<br>東京大学工学部計数工学科卒。株式会社ディー・エヌ・エーに新卒入社後、株式会社Gunosyに入社し、両社にて複数の新規事業立ち上げをアーキテクトやリードエンジニア、プロダクトマネージャーとして牽引。2018年にLayerXを取締役CTOとして立ち上げ。現在はバクラク事業部CPOとして、バクラクシリーズ全ての新規プロダクトの開発を主導。\n<br>X：<a href=\"https://x.com/mosa_siru\" rel=\"nofollow\">@mosa_siru</a>\n<br>note：<a href=\"https://note.layerx.co.jp/n/nc028a297fc30\" rel=\"nofollow\">「点として速い」だけでは意味がない。AI時代のプロダクト開発で本当に大事なこと【Bet X】</a></p>\n<h3>坂本 龍太 | <font size=\"2\">株式会社ログラス AIソリューション本部 AIソリューション開発部長（FDE）</font></h3>\n<p><img src=\"https://i.ibb.co/DgY8zjGx/q-Gn-Qhn4.webp\" height=\"150\">\n<br>鳥取県境港市出身。会計士を志して会計を学んだのちビズリーチに初代新卒としてエンジニア職で入社。サイバーエージェントのAI事業を経て、2019年にログラスを共同創業しCTOに就任。その後、自らCTOを退き、パートナーセールス部門、新卒採用を立ち上げ、現在はFDEとしてAIソリューション部門の開発部長として事業立ち上げに注力している。\n<br>X：<a href=\"https://x.com/http204\" rel=\"nofollow\">@http204</a>\n<br>note：<a href=\"https://note.com/loglass_sakamoto/n/n0d23ec53683c\" rel=\"nofollow\">初代CTOからFDEへ。「知能のコストが限りなくゼロに近づく」時代、フロンティアは企業の“非公開データ”に</a></p>\n<h3>佐々木 紀和 | <font size=\"2\">株式会社Resilire・PdM</font></h3>\n<p><img src=\"https://i.ibb.co/XkFJSFhS/783616414-1370242295175335-2033112364736391955-n.jpg\" height=\"150\">\n<br>東京大学大学院修了。2013年に株式会社ディー・エヌ・エーに入社。EC事業本部において新規事業の開発に携わりました。2016年より子会社である株式会社ペロリに出向。2018年より株式会社MERYの開発部部長。2021年7月に株式会社YOUTRUSTにジョインし、CTOとして技術領域を管掌。2024年株式会社Resilireにプロダクトマネージャーとして入社。\n<br>note：<a href=\"https://note.com/zoopon1986/n/n5b2e8a1f4be1\" rel=\"nofollow\">ITスタートアップの元CTOがResilireを選択した理由</a>\n<br>note：<a href=\"https://note.com/resilre/n/n9d7313f4e528\" rel=\"nofollow\">CTO経験者3名が在籍するResilireの開発チーム　―深い知識と高いスキルを駆使してエンジニアが存分に力を発揮できる環境を実現</a></p>\n<h3>久松 佑輝 | <font size=\"2\">NOT A HOTEL株式会社 CPO部 プロダクトマネージャー</font></h3>\n<p><img src=\"https://i.ibb.co/5gfX595t/k-KNw9nq-J.jpg\" height=\"150\">\n<br>Speeeに新卒で入社し、データサイエンティストとして広告配信アルゴリズムの開発に携わる。その後Datachainに出向し、プロダクトマネージャーとしてナショナルクライアントとブロックチェーンを活用したPoCを複数成功に導く。\n<br>2021年5月にコミューン入社、2024年8月執行役員CPOに就任。\n<br>2026年4月にNOT A HOTEL入社、現在オーナーアプリ、スマートホーム、カスタマーサポートを一気通貫したAIコンシェルジュ(Kevin)の開発をリード。\n<br>X：<a href=\"https://x.com/hisao_00\" rel=\"nofollow\">@hisao_00</a></p>\n<h2>【モデレーター】</h2>\n<h3>広瀬 丈| <font size=\"2\">株式会社ログラス Product Chief of Staff/HRBP</font></h3>\n<p><img src=\"https://i.ibb.co/JW7xhF5H/2025-05-25-16-15-18.png\" width=\"100\">\n<br>新卒で大手通信企業に入社し、17年間在籍。エンタープライズ営業（営業企画・人事・事業企画含む）を10年、BtoB SaaSプロダクト等の企画・開発を7年担当。特にビジネスチャットSaaSの立ち上げでは、PdM／事業責任者として0→100万ID規模へのスケールに貢献し、SaaS事業の運営基盤を社内初で構築。2022年よりマネーフォワードにて、CPO室 室長として60名超のPdM組織を統括。プロダクト組織の設計・採用・育成・カルチャー浸透まで一貫して推進し、国内トップレベルのPdM組織ブランドを確立。2025年よりログラスに参画し、現在はCoS/HRBPとして主にプロダクト組織全体の戦略参謀を担う。\n<br>X：<a href=\"https://x.com/JoE_HiRose\" rel=\"nofollow\">@JoE_HiRose</a>\n<br>ProductZine記事：<a href=\"https://codezine.jp/article/detail/28701\" rel=\"nofollow\">AI時代、誰がプロダクトの成果を引き受けるのか？ ログラス広瀬丈氏が提唱する「責任」起点の組織論</a></p>\n<h2>【共催企業一覧】</h2>\n<ul>\n<li>株式会社ログラス：<a href=\"https://loglass.co.jp/recruit\" rel=\"nofollow\">https://loglass.co.jp/recruit</a></li>\n<li>株式会社LayerX：<a href=\"https://jobs.layerx.co.jp/\" rel=\"nofollow\">https://jobs.layerx.co.jp/</a></li>\n<li>株式会社Resilire：<a href=\"https://careers.resilire.jp/\" rel=\"nofollow\">https://careers.resilire.jp/</a></li>\n<li>NOT A HOTEL株式会社：<a href=\"https://notahotel.com/careers\" rel=\"nofollow\">https://notahotel.com/careers</a></li>\n</ul>\n<h2>【注意事項】</h2>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止、運営側の判断でご退出をお願いする場合があります。</li>\n<li>ブログやSNSなどで当イベントに関する発信を行う際には、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>当日のイベント風景を写真撮影させていただいております。内容は後日レポート記事やSNSへ掲載される場合がありますのでご了承ください。</li>\n</ul>\n<h2>【プライバシーポリシー】</h2>\n<p>事前・事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いはプライバシーポリシーに従って取り扱います。各企業のプライバシーポリシーにご同意の上、ご参加ください。\n参加者の皆様にご要望いただいた情報や、各社製品・サービス・イベント等のご案内を送信することがあります。これらの情報提供をいつでも停止することができます。</p>\n<ul>\n<li>株式会社ログラス：<a href=\"https://www.loglass.jp/term-and-policy/privacy-policy\" rel=\"nofollow\">https://www.loglass.jp/term-and-policy/privacy-policy</a></li>\n<li>株式会社LayerX：<a href=\"https://layerx.co.jp/privacy/\" rel=\"nofollow\">https://layerx.co.jp/privacy/</a></li>\n<li>株式会社Resilire：<a href=\"https://www.resilire.jp/privacypolicy\" rel=\"nofollow\">https://www.resilire.jp/privacypolicy</a></li>\n<li>NOT A HOTEL株式会社：<a href=\"https://notahotel.com/privacy-policy\" rel=\"nofollow\">https://notahotel.com/privacy-policy</a></li>\n</ul>",
-      "url": "https://loglass-tech.connpass.com/event/404538/",
-      "image_url": "https://media.connpass.com/thumbs/85/8e/858ee92cf5e5b13205c04a6c80e1e5fa.png",
-      "hash_tag": "現場に戻る時代",
-      "started_at": "2026-10-06T19:00:00+09:00",
-      "ended_at": "2026-10-06T21:30:00+09:00",
-      "published_at": "2026-08-26T12:37:28+09:00",
-      "limit": 130,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13493,
-        "subdomain": "loglass-tech",
-        "title": "株式会社ログラス",
-        "url": "https://loglass-tech.connpass.com/"
-      },
-      "address": "〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階",
-      "place": "株式会社ログラス本社",
-      "lat": "35.640438500000",
-      "lon": "139.741414800000",
-      "owner_id": 837024,
-      "owner_nickname": "dev-loglass",
-      "owner_display_name": "ログラス管理者",
-      "accepted": 130,
-      "waiting": 7,
-      "updated_at": "2026-09-25T01:01:35+09:00"
     },
     {
       "id": 404960,
@@ -190,6 +159,37 @@
       "updated_at": "2026-10-02T12:46:13+09:00"
     },
     {
+      "id": 404538,
+      "title": "【増々々枠】CTO/CPOが現場に戻る時代。",
+      "catch": "AI時代、プロダクトリーダーの役割はどう変わるのか",
+      "description": "<h2>【イベント概要】</h2>\n<p>AIによって、プロダクトづくりの前提が大きく変わり始めています。\n<br>\n<br>エンジニアがプロトタイプをつくり、PdMが自ら実装し、事業責任者が顧客とプロダクトの間を行き来する。\n<br>\n<br>そして、CTOやCPO、VP、事業責任者といった組織を率いるリーダー自身が、\n<br>これまで以上にプロダクトや顧客の現場へ深く入るケースも増えています。\n<br>\n<br>これは単なる「プレイヤー回帰」なのでしょうか。\n<br>\n<br>それともAIによって、マネジメントとプレイヤー、事業とプロダクト、技術と顧客といった境界そのものが変わり、\n<br>プロダクトリーダーの役割が再定義され始めているのでしょうか。\n<br>\n<br>本イベントでは、CTO/CPOをはじめ、VP、事業責任者、プロダクト責任者など、\n<br>異なる立場でプロダクトづくりをリードするメンバーが集結。\n<br>\n<br>全編パネルディスカッション形式で、\n<br>\n<br>・「なぜ、いまリーダーが現場に入るのか」\n<br>・「AIによって“手を動かす”の意味はどう変わるのか」\n<br>・「CTO/CPO・VP・事業責任者の境界はどう変わるのか」\n<br>・「これから強いプロダクトリーダーとはどんな人なのか」\n<br>\n<br>などを、それぞれの実践をもとに議論します。\n<br>\n<br>肩書きや職種の話に閉じず、AI時代のプロダクトづくりとリーダーシップの現在地を考えるイベントです。</p>\n<h2>【このような方にオススメ】</h2>\n<p>以下に少しでも当てはまる方のご参加をお待ちしています！</p>\n<ul>\n<li>AI時代にエンジニアやPdMの役割がどう変わるのか考えたい方</li>\n<li>テックリード、EM、PdMなど、プロダクトをリードする立場の方</li>\n<li>CTO / CPO / VPoE / VPoPなどを目指している方</li>\n<li>マネジメントをしながら、自分自身も現場に入り続けたい方</li>\n<li>事業、プロダクト、エンジニアリングの境界を越えて仕事をしている方</li>\n<li>AI時代のプロダクト組織やキャリアについて考えたい方</li>\n</ul>\n<h2>【開催日時】</h2>\n<p><font size=\"4\">2026年10月6日（火）19:00〜21:30（18:30受付開始）</font></p>\n<h2>【会場】</h2>\n<p>・会場名：株式会社ログラス オフィス\n<br>・住所　：<a href=\"https://maps.app.goo.gl/iehWxmixeb5HwtJB8\" rel=\"nofollow\">東京都港区三田3-11-24 国際興業三田第2ビル 9階</a>\n<br>　　　　　　都営地下鉄浅草線・京浜急行電鉄「泉岳寺駅」徒歩1分\n<br>　　　　　　JR山手線・京浜東北線「高輪ゲートウェイ駅」徒歩7分\n<br>　　　　　　<img src=\"https://cdn.prod.website-files.com/634e10ec52ffb62078e9da01/66015050f9357069c53a5f9c_IMG_2018.JPG\" width=\"300\"></p>\n<h2>【持ち物】</h2>\n<p>お持ちの方はお名刺を1枚お持ちください（ネームホルダーに入れていただきます）</p>\n<h2>【タイムテーブル】</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30〜　　　</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00〜19:10</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10〜20:20</td>\n<td style=\"text-align: left;\">パネルディスカッション</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20〜21:30</td>\n<td style=\"text-align: left;\">交流会（軽食・ドリンクあり）</td>\n</tr>\n</tbody>\n</table>\n<h2>【登壇者・パネラー】※五十音順</h2>\n<h3>榎本 悠介 | <font size=\"2\">株式会社LayerX バクラク事業部CPO</font></h3>\n<p><img src=\"https://i.ibb.co/Z7nsFpG/2026-08-24-20-54-41.png\" height=\"150\">\n<br>東京大学工学部計数工学科卒。株式会社ディー・エヌ・エーに新卒入社後、株式会社Gunosyに入社し、両社にて複数の新規事業立ち上げをアーキテクトやリードエンジニア、プロダクトマネージャーとして牽引。2018年にLayerXを取締役CTOとして立ち上げ。現在はバクラク事業部CPOとして、バクラクシリーズ全ての新規プロダクトの開発を主導。\n<br>X：<a href=\"https://x.com/mosa_siru\" rel=\"nofollow\">@mosa_siru</a>\n<br>note：<a href=\"https://note.layerx.co.jp/n/nc028a297fc30\" rel=\"nofollow\">「点として速い」だけでは意味がない。AI時代のプロダクト開発で本当に大事なこと【Bet X】</a></p>\n<h3>坂本 龍太 | <font size=\"2\">株式会社ログラス AIソリューション本部 AIソリューション開発部長（FDE）</font></h3>\n<p><img src=\"https://i.ibb.co/DgY8zjGx/q-Gn-Qhn4.webp\" height=\"150\">\n<br>鳥取県境港市出身。会計士を志して会計を学んだのちビズリーチに初代新卒としてエンジニア職で入社。サイバーエージェントのAI事業を経て、2019年にログラスを共同創業しCTOに就任。その後、自らCTOを退き、パートナーセールス部門、新卒採用を立ち上げ、現在はFDEとしてAIソリューション部門の開発部長として事業立ち上げに注力している。\n<br>X：<a href=\"https://x.com/http204\" rel=\"nofollow\">@http204</a>\n<br>note：<a href=\"https://note.com/loglass_sakamoto/n/n0d23ec53683c\" rel=\"nofollow\">初代CTOからFDEへ。「知能のコストが限りなくゼロに近づく」時代、フロンティアは企業の“非公開データ”に</a></p>\n<h3>佐々木 紀和 | <font size=\"2\">株式会社Resilire・PdM</font></h3>\n<p><img src=\"https://i.ibb.co/XkFJSFhS/783616414-1370242295175335-2033112364736391955-n.jpg\" height=\"150\">\n<br>東京大学大学院修了。2013年に株式会社ディー・エヌ・エーに入社。EC事業本部において新規事業の開発に携わりました。2016年より子会社である株式会社ペロリに出向。2018年より株式会社MERYの開発部部長。2021年7月に株式会社YOUTRUSTにジョインし、CTOとして技術領域を管掌。2024年株式会社Resilireにプロダクトマネージャーとして入社。\n<br>note：<a href=\"https://note.com/zoopon1986/n/n5b2e8a1f4be1\" rel=\"nofollow\">ITスタートアップの元CTOがResilireを選択した理由</a>\n<br>note：<a href=\"https://note.com/resilre/n/n9d7313f4e528\" rel=\"nofollow\">CTO経験者3名が在籍するResilireの開発チーム　―深い知識と高いスキルを駆使してエンジニアが存分に力を発揮できる環境を実現</a></p>\n<h3>久松 佑輝 | <font size=\"2\">NOTA株式会社 CPO部 プロダクトマネージャー</font></h3>\n<p><img src=\"https://i.ibb.co/5gfX595t/k-KNw9nq-J.jpg\" height=\"150\">\n<br>Speeeに新卒で入社し、データサイエンティストとして広告配信アルゴリズムの開発に携わる。その後Datachainに出向し、プロダクトマネージャーとしてナショナルクライアントとブロックチェーンを活用したPoCを複数成功に導く。\n<br>2021年5月にコミューン入社、2024年8月執行役員CPOに就任。\n<br>2026年4月にNOT A HOTEL入社、現在オーナーアプリ、スマートホーム、カスタマーサポートを一気通貫したAIコンシェルジュ(Kevin)の開発をリード。\n<br>X：<a href=\"https://x.com/hisao_00\" rel=\"nofollow\">@hisao_00</a></p>\n<h2>【モデレーター】</h2>\n<h3>広瀬 丈| <font size=\"2\">株式会社ログラス Product Chief of Staff/HRBP</font></h3>\n<p><img src=\"https://i.ibb.co/JW7xhF5H/2025-05-25-16-15-18.png\" width=\"100\">\n<br>新卒で大手通信企業に入社し、17年間在籍。エンタープライズ営業（営業企画・人事・事業企画含む）を10年、BtoB SaaSプロダクト等の企画・開発を7年担当。特にビジネスチャットSaaSの立ち上げでは、PdM／事業責任者として0→100万ID規模へのスケールに貢献し、SaaS事業の運営基盤を社内初で構築。2022年よりマネーフォワードにて、CPO室 室長として60名超のPdM組織を統括。プロダクト組織の設計・採用・育成・カルチャー浸透まで一貫して推進し、国内トップレベルのPdM組織ブランドを確立。2025年よりログラスに参画し、現在はCoS/HRBPとして主にプロダクト組織全体の戦略参謀を担う。\n<br>X：<a href=\"https://x.com/JoE_HiRose\" rel=\"nofollow\">@JoE_HiRose</a>\n<br>ProductZine記事：<a href=\"https://codezine.jp/article/detail/28701\" rel=\"nofollow\">AI時代、誰がプロダクトの成果を引き受けるのか？ ログラス広瀬丈氏が提唱する「責任」起点の組織論</a></p>\n<h2>【共催企業一覧】</h2>\n<ul>\n<li>株式会社ログラス：<a href=\"https://loglass.co.jp/recruit\" rel=\"nofollow\">https://loglass.co.jp/recruit</a></li>\n<li>株式会社LayerX：<a href=\"https://jobs.layerx.co.jp/\" rel=\"nofollow\">https://jobs.layerx.co.jp/</a></li>\n<li>株式会社Resilire：<a href=\"https://careers.resilire.jp/\" rel=\"nofollow\">https://careers.resilire.jp/</a></li>\n<li>NOT A HOTEL株式会社：<a href=\"https://notahotel.com/careers\" rel=\"nofollow\">https://notahotel.com/careers</a></li>\n</ul>\n<h2>【注意事項】</h2>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>他の参加者の方の妨げになるような行為は禁止、運営側の判断でご退出をお願いする場合があります。</li>\n<li>ブログやSNSなどで当イベントに関する発信を行う際には、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>当日のイベント風景を写真撮影させていただいております。内容は後日レポート記事やSNSへ掲載される場合がありますのでご了承ください。</li>\n</ul>\n<h2>【プライバシーポリシー】</h2>\n<p>事前・事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いはプライバシーポリシーに従って取り扱います。各企業のプライバシーポリシーにご同意の上、ご参加ください。\n参加者の皆様にご要望いただいた情報や、各社製品・サービス・イベント等のご案内を送信することがあります。これらの情報提供をいつでも停止することができます。</p>\n<ul>\n<li>株式会社ログラス：<a href=\"https://www.loglass.jp/term-and-policy/privacy-policy\" rel=\"nofollow\">https://www.loglass.jp/term-and-policy/privacy-policy</a></li>\n<li>株式会社LayerX：<a href=\"https://layerx.co.jp/privacy/\" rel=\"nofollow\">https://layerx.co.jp/privacy/</a></li>\n<li>株式会社Resilire：<a href=\"https://www.resilire.jp/privacypolicy\" rel=\"nofollow\">https://www.resilire.jp/privacypolicy</a></li>\n<li>NOT A HOTEL株式会社：<a href=\"https://notahotel.com/privacy-policy\" rel=\"nofollow\">https://notahotel.com/privacy-policy</a></li>\n</ul>",
+      "url": "https://loglass-tech.connpass.com/event/404538/",
+      "image_url": "https://media.connpass.com/thumbs/85/8e/858ee92cf5e5b13205c04a6c80e1e5fa.png",
+      "hash_tag": "現場に戻る時代",
+      "started_at": "2026-10-06T19:00:00+09:00",
+      "ended_at": "2026-10-06T21:30:00+09:00",
+      "published_at": "2026-08-26T12:37:28+09:00",
+      "limit": 130,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13493,
+        "subdomain": "loglass-tech",
+        "title": "株式会社ログラス",
+        "url": "https://loglass-tech.connpass.com/"
+      },
+      "address": "〒108-0073 東京都港区三田３丁目１１−２４ 国際興業三田第2ビル 9階",
+      "place": "株式会社ログラス本社",
+      "lat": "35.640438500000",
+      "lon": "139.741414800000",
+      "owner_id": 837024,
+      "owner_nickname": "dev-loglass",
+      "owner_display_name": "ログラス管理者",
+      "accepted": 130,
+      "waiting": 10,
+      "updated_at": "2026-10-06T03:41:22+09:00"
+    },
+    {
       "id": 402785,
       "title": "DroidKaigi × iOSDC After Night",
       "catch": "",
@@ -278,7 +278,7 @@
       "owner_id": 164604,
       "owner_nickname": "mashcafe",
       "owner_display_name": "伊藤真之",
-      "accepted": 16,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-09-24T14:32:29+09:00"
     }
