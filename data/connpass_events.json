@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-06T13:07:39.632480+09:00",
+  "fetched_at": "2026-10-06T20:37:25.856624+09:00",
   "date": "20261006",
   "count": 9,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-08-26T16:01:58+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 9919,
         "subdomain": "estie",
@@ -30,7 +30,7 @@
       "owner_id": 454337,
       "owner_nickname": "estie",
       "owner_display_name": "estie",
-      "accepted": 33,
+      "accepted": 32,
       "waiting": 0,
       "updated_at": "2026-09-28T01:01:32+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-09-08T19:31:34+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17735,
         "subdomain": "ht-kaiwai",
@@ -66,35 +66,35 @@
       "updated_at": "2026-09-08T20:52:51+09:00"
     },
     {
-      "id": 405007,
-      "title": "毎週火曜にやってる！プログラミング&ITなんでも勉強部屋（10月第1週）",
-      "catch": "毎週火曜にやってる、もくもく勉強部屋！！",
-      "description": "<p><a href=\"https://twitter.com/search?q=%23%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%8B%89%E5%BC%B7%E9%83%A8%E5%B1%8B%20%20%23eLV%E5%8B%89%E5%BC%B7%E4%BC%9A&amp;src=typed_query\" rel=\"nofollow\">#プログラミング勉強部屋 #eLV勉強会</a> </p>\n<h2>毎週火曜やってます!!</h2>\n<p>※その他の火曜も参加希望の場合は<a href=\"https://hfs.connpass.com/\" rel=\"nofollow\">このリンク</a> からお願いします！<br><br></p>\n<h2>どんなイベント？<br></h2>\n<p>一人だと、自宅だと、だらけちゃって自分に負けちゃう！やる気はあるのに進まない......心配ありません、人間そんなものです（笑）そこで、以下の環境を用意しております！！<br></p>\n<ul>\n<li>\n<h5>なんとなく学習モードに切り替わることのできる「場」</h5>\n</li>\n<li>\n<h5>一人ではなく同じような学習テーマをもった「仲間」</h5>\n</li>\n<li>\n<h5>毎週火曜日開催！</h5>\n</li>\n</ul>\n<p>無言、途中参加、途中退出、ちょっと抜けてまた戻ってくる、などなど自由です。<br>\nゆる〜くやっているので、お気軽にご参加ください。<br>\n<img alt=\"ロゴ画像\" src=\"https://cdn-ak.f.st-hatena.com/images/fotolife/m/medellinjp/20240118/20240118120528.jpg\"></p>\n<h2>参加者ってどんなことやっているの？<br></h2>\n<p>・プログラミングの勉強<br>\n・ネットワークやCloudの勉強<br>\n・書籍を読む<br>\n・会社の仕事を仕上げる<br>\n・各種資料を作成する<br>\n・ブログなどの記事を書く<br>\n・統計や数学など基礎的な勉強<br>\n・その他なんでも！<br></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Time</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">備考</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">勉強部屋OPEN！</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00~20:00</td>\n<td style=\"text-align: left;\">自習タイム</td>\n<td style=\"text-align: left;\">途中入場OK！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00~20:30頃</td>\n<td style=\"text-align: left;\">自己紹介＆交流タイム</td>\n<td style=\"text-align: left;\">最近の「気付き・学び」「興味」などその日の人数や雰囲気でお話しいただきますのでご準備を！<br> スライドを使ってのショートプレゼンもOK<br>※できるだけ皆が分かるような＆利するような内容でお願いしまーす！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30~22:00</td>\n<td style=\"text-align: left;\">自習タイム</td>\n<td style=\"text-align: left;\">途中退場OK！</td>\n</tr>\n</tbody>\n</table>\n<h2>■参加資格</h2>\n<ul>\n<li>無断欠席しない人</li>\n<li>\n<p>ITエンジニアまたはITエンジニアを目指す人（学生さんも歓迎）</p>\n</li>\n<li>\n<h5>eLVオフィシャルサイト、またイベント告知サイトなどへの掲載目的として勉強会、交流会風景の撮影を行わせて頂いております。掲載へ不都合が御座います方は、恐れ入りますが運営スタッフまでお申し出下さい。</h5>\n</li>\n</ul>\n<h2>■ITエンジニアコミュニティeLVとは？</h2>\n<p><img alt=\"ロゴ画像\" src=\"https://assets.st-note.com/img/1705545691300-zhq3UaWO4g.png\"></p>\n<p>eLVはスキルアップに資する誰でも参加可能なコミュニティです。</p>\n<p>※他のイベントはこちらからチェック下さい。<br>\n<a href=\"https://elv.connpass.com/\" rel=\"nofollow\">https://elv.connpass.com/</a></p>\n<p>※Co-Creation BAR（ICT関係者の集うBAR）のイベントはこちらからチェック下さい。<br>\n<a href=\"https://elv-ccb.connpass.com/\" rel=\"nofollow\">https://elv-ccb.connpass.com/</a></p>\n<p><br>\n<br></p>\n<h1>運営母体とお問合せ先について</h1>\n<hr>\n<p>ITエンジニアコミュニティeLV（engineer's Learning･Vesper）powered by <a href=\"https://note.com/cre_co_es\" rel=\"nofollow\">CRE-CO</a>\n<br>〒102-0093 東京都千代田区平河町1-4-3 平河町伏見ビル 2F Co-CreationLABO\n<br>e-MAIL：co-Creation@elv.tokyo</p>",
-      "url": "https://hfs.connpass.com/event/405007/",
-      "image_url": "https://media.connpass.com/thumbs/ac/08/ac08caf5d6f6fbad2c98f7119e04f98a.png",
-      "hash_tag": "プログラミング勉強部屋",
+      "id": 404960,
+      "title": "AIと深めた！活用共有LT会",
+      "catch": "",
+      "description": "<h1>📍開催概要</h1>\n<h3>AIの活用で深めた〇〇！の知見を共有✨</h3>\n<p>職業関係なく、多くの人が活用しているAI。そんなみんなのAI活用体験を共有しあい知見を深めましょう！<br>\nAIを使い続けたことで、こんなこともできるようになった！ こんな活用方法もあった！知見が深まった！<br>\n使い方に正解がないからこそ、自由に気軽に楽しくシェアしましょう！  </p>\n<h1>👤こんな人におすすめ</h1>\n<ul>\n<li>他の人のAIの活用方法を知りたい方</li>\n<li>おすすめのAIの活用方法を共有したい方</li>\n<li>LT（ライトニングトーク）に挑戦してみたい方</li>\n<li>同世代のエンジニアと話したい方</li>\n</ul>\n<h1>⏳タイムスケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00-19:15</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15-19:20</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:30</td>\n<td style=\"text-align: left;\">LT①</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30-19:40</td>\n<td style=\"text-align: left;\">LT②</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40-19:50</td>\n<td style=\"text-align: left;\">LT③</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:00</td>\n<td style=\"text-align: left;\">LT④</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-20:10</td>\n<td style=\"text-align: left;\">LT⑤</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15-20:45</td>\n<td style=\"text-align: left;\">交流会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45-20:50</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<h1>🎙️LT発表者</h1>\n<p>持ち時間10分でAIの活用体験について共有＋質疑応答！<br>\nLT発表は5分~8分でお願いいたします！<br>\nLTやってみたいけどやったことない方大歓迎です！<br>\n気軽にアウトプットの場として活用してください！  </p>\n<h4>✨こんなお話、待ってます！</h4>\n<p>「凄い技術の解説」ではなく、あなたの<strong>「ポジティブな変化」</strong>を教えてください。  </p>\n<ul>\n<li>Claude CodeやGitHub Copilotなど、AIを「相棒」にして開発がどう楽しくなったか？  </li>\n<li>AIと一緒に、これまで「無理だ…」と思っていた技術の壁を飛び越えた活用体験！  </li>\n<li>AIのおかげで、これからどんな面白いことができそうか？  </li>\n</ul>\n<h1>🏢会場</h1>\n<p>株式会社テックビズ オフィス<br>\n東京都渋谷区恵比寿１丁目１９−１９ 恵比寿ビジネスタワー 3F  </p>\n<p><a href=\"https://maps.app.goo.gl/rqSmnfPFEsRsvXA58\" rel=\"nofollow\">Google Maps</a></p>\n<h1>🤝スポンサー</h1>\n<h3>株式会社テックビズ</h3>\n<p>株式会社テックビズは、「共に挑み、共に道を創る」をプロミスに掲げ、仕事や人の仲介ではなく、<br>\nフリーランスの皆様一人ひとりの個性と可能性に向き合い、一緒に挑戦し共に成長するより良い<br>\n環境づくりをサポートしています。</p>\n<h1>📣主催</h1>\n<h3>Hollo,Output</h3>\n<p>若手エンジニアの「最初の一歩」を応援。完璧な技術解説ではなく、あなたの<br>\n「学んだこと」「やってみたこと」を気軽に発信する場を提供します。<br>\n失敗を恐れず、アウトプットの楽しさをここから始めよう！</p>\n<h1>⚠️注意事項</h1>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>発熱や咳・咽頭痛等の症状のある方、その他体調のすぐれない方は参加をお控えください。</li>\n<li>営業、勧誘、その他本イベントの趣旨にそぐわない目的での参加はお断りします。</li>\n<li>チームビルディングを目的とした会へのご参加はご遠慮いただいております。</li>\n<li>貴重品は常に携帯してください。万が一、紛失・盗難等が発生しましても、主催者は責任を負いかねます。</li>\n<li>参加者同士のLINE等のSNSの交換は双方同意のもとお願いします。</li>\n</ul>",
+      "url": "https://hello-output.connpass.com/event/404960/",
+      "image_url": "https://media.connpass.com/thumbs/e3/4a/e34a73516744ce85863a2336f301a1ac.png",
+      "hash_tag": "HelloOutput",
       "started_at": "2026-10-06T19:00:00+09:00",
-      "ended_at": "2026-10-06T22:00:00+09:00",
-      "published_at": "2026-09-15T07:01:17+09:00",
-      "limit": null,
+      "ended_at": "2026-10-06T21:00:00+09:00",
+      "published_at": "2026-08-26T08:01:08+09:00",
+      "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
-        "id": 1717,
-        "subdomain": "hfs",
-        "title": "Hacker’s Free Space",
-        "url": "https://hfs.connpass.com/"
+        "id": 17330,
+        "subdomain": "hello-output",
+        "title": "Hello,Output",
+        "url": "https://hello-output.connpass.com/"
       },
-      "address": "〒102-0093 東京都千代田区平河町1-4-3 平河町伏見ビル 2F",
-      "place": "Co-Creation LABO",
-      "lat": "35.682793000000",
-      "lon": "139.739039500000",
-      "owner_id": 14295,
-      "owner_nickname": "medellinjp",
-      "owner_display_name": "冨元 雅仁",
-      "accepted": 6,
-      "waiting": 0,
-      "updated_at": "2026-09-15T07:01:17+09:00"
+      "address": "東京都渋谷区恵比寿１丁目１９−１９ 恵比寿ビジネスタワー 3F",
+      "place": "株式会社テックビズ",
+      "lat": "35.647676300000",
+      "lon": "139.712660000000",
+      "owner_id": 828572,
+      "owner_nickname": "kakecyan",
+      "owner_display_name": "kakecyan",
+      "accepted": 18,
+      "waiting": 3,
+      "updated_at": "2026-09-16T22:54:13+09:00"
     },
     {
       "id": 404538,
@@ -109,7 +109,7 @@
       "published_at": "2026-08-26T12:37:28+09:00",
       "limit": 130,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13493,
         "subdomain": "loglass-tech",
@@ -123,40 +123,40 @@
       "owner_id": 837024,
       "owner_nickname": "dev-loglass",
       "owner_display_name": "ログラス管理者",
-      "accepted": 130,
-      "waiting": 1,
+      "accepted": 113,
+      "waiting": 0,
       "updated_at": "2026-10-06T11:02:42+09:00"
     },
     {
-      "id": 404960,
-      "title": "AIと深めた！活用共有LT会",
-      "catch": "",
-      "description": "<h1>📍開催概要</h1>\n<h3>AIの活用で深めた〇〇！の知見を共有✨</h3>\n<p>職業関係なく、多くの人が活用しているAI。そんなみんなのAI活用体験を共有しあい知見を深めましょう！<br>\nAIを使い続けたことで、こんなこともできるようになった！ こんな活用方法もあった！知見が深まった！<br>\n使い方に正解がないからこそ、自由に気軽に楽しくシェアしましょう！  </p>\n<h1>👤こんな人におすすめ</h1>\n<ul>\n<li>他の人のAIの活用方法を知りたい方</li>\n<li>おすすめのAIの活用方法を共有したい方</li>\n<li>LT（ライトニングトーク）に挑戦してみたい方</li>\n<li>同世代のエンジニアと話したい方</li>\n</ul>\n<h1>⏳タイムスケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">19:00-19:15</td>\n<td style=\"text-align: left;\">開場・受付</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15-19:20</td>\n<td style=\"text-align: left;\">オープニング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:20-19:30</td>\n<td style=\"text-align: left;\">LT①</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30-19:40</td>\n<td style=\"text-align: left;\">LT②</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40-19:50</td>\n<td style=\"text-align: left;\">LT③</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:00</td>\n<td style=\"text-align: left;\">LT④</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00-20:10</td>\n<td style=\"text-align: left;\">LT⑤</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15-20:45</td>\n<td style=\"text-align: left;\">交流会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45-20:50</td>\n<td style=\"text-align: left;\">クロージング</td>\n</tr>\n</tbody>\n</table>\n<h1>🎙️LT発表者</h1>\n<p>持ち時間10分でAIの活用体験について共有＋質疑応答！<br>\nLT発表は5分~8分でお願いいたします！<br>\nLTやってみたいけどやったことない方大歓迎です！<br>\n気軽にアウトプットの場として活用してください！  </p>\n<h4>✨こんなお話、待ってます！</h4>\n<p>「凄い技術の解説」ではなく、あなたの<strong>「ポジティブな変化」</strong>を教えてください。  </p>\n<ul>\n<li>Claude CodeやGitHub Copilotなど、AIを「相棒」にして開発がどう楽しくなったか？  </li>\n<li>AIと一緒に、これまで「無理だ…」と思っていた技術の壁を飛び越えた活用体験！  </li>\n<li>AIのおかげで、これからどんな面白いことができそうか？  </li>\n</ul>\n<h1>🏢会場</h1>\n<p>株式会社テックビズ オフィス<br>\n東京都渋谷区恵比寿１丁目１９−１９ 恵比寿ビジネスタワー 3F  </p>\n<p><a href=\"https://maps.app.goo.gl/rqSmnfPFEsRsvXA58\" rel=\"nofollow\">Google Maps</a></p>\n<h1>🤝スポンサー</h1>\n<h3>株式会社テックビズ</h3>\n<p>株式会社テックビズは、「共に挑み、共に道を創る」をプロミスに掲げ、仕事や人の仲介ではなく、<br>\nフリーランスの皆様一人ひとりの個性と可能性に向き合い、一緒に挑戦し共に成長するより良い<br>\n環境づくりをサポートしています。</p>\n<h1>📣主催</h1>\n<h3>Hollo,Output</h3>\n<p>若手エンジニアの「最初の一歩」を応援。完璧な技術解説ではなく、あなたの<br>\n「学んだこと」「やってみたこと」を気軽に発信する場を提供します。<br>\n失敗を恐れず、アウトプットの楽しさをここから始めよう！</p>\n<h1>⚠️注意事項</h1>\n<ul>\n<li>当イベントの内容およびスケジュールは、予告なく変更となる場合があります。予めご了承ください。</li>\n<li>ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。</li>\n<li>発熱や咳・咽頭痛等の症状のある方、その他体調のすぐれない方は参加をお控えください。</li>\n<li>営業、勧誘、その他本イベントの趣旨にそぐわない目的での参加はお断りします。</li>\n<li>チームビルディングを目的とした会へのご参加はご遠慮いただいております。</li>\n<li>貴重品は常に携帯してください。万が一、紛失・盗難等が発生しましても、主催者は責任を負いかねます。</li>\n<li>参加者同士のLINE等のSNSの交換は双方同意のもとお願いします。</li>\n</ul>",
-      "url": "https://hello-output.connpass.com/event/404960/",
-      "image_url": "https://media.connpass.com/thumbs/e3/4a/e34a73516744ce85863a2336f301a1ac.png",
-      "hash_tag": "HelloOutput",
+      "id": 405007,
+      "title": "毎週火曜にやってる！プログラミング&ITなんでも勉強部屋（10月第1週）",
+      "catch": "毎週火曜にやってる、もくもく勉強部屋！！",
+      "description": "<p><a href=\"https://twitter.com/search?q=%23%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%8B%89%E5%BC%B7%E9%83%A8%E5%B1%8B%20%20%23eLV%E5%8B%89%E5%BC%B7%E4%BC%9A&amp;src=typed_query\" rel=\"nofollow\">#プログラミング勉強部屋 #eLV勉強会</a> </p>\n<h2>毎週火曜やってます!!</h2>\n<p>※その他の火曜も参加希望の場合は<a href=\"https://hfs.connpass.com/\" rel=\"nofollow\">このリンク</a> からお願いします！<br><br></p>\n<h2>どんなイベント？<br></h2>\n<p>一人だと、自宅だと、だらけちゃって自分に負けちゃう！やる気はあるのに進まない......心配ありません、人間そんなものです（笑）そこで、以下の環境を用意しております！！<br></p>\n<ul>\n<li>\n<h5>なんとなく学習モードに切り替わることのできる「場」</h5>\n</li>\n<li>\n<h5>一人ではなく同じような学習テーマをもった「仲間」</h5>\n</li>\n<li>\n<h5>毎週火曜日開催！</h5>\n</li>\n</ul>\n<p>無言、途中参加、途中退出、ちょっと抜けてまた戻ってくる、などなど自由です。<br>\nゆる〜くやっているので、お気軽にご参加ください。<br>\n<img alt=\"ロゴ画像\" src=\"https://cdn-ak.f.st-hatena.com/images/fotolife/m/medellinjp/20240118/20240118120528.jpg\"></p>\n<h2>参加者ってどんなことやっているの？<br></h2>\n<p>・プログラミングの勉強<br>\n・ネットワークやCloudの勉強<br>\n・書籍を読む<br>\n・会社の仕事を仕上げる<br>\n・各種資料を作成する<br>\n・ブログなどの記事を書く<br>\n・統計や数学など基礎的な勉強<br>\n・その他なんでも！<br></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Time</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">備考</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">勉強部屋OPEN！</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00~20:00</td>\n<td style=\"text-align: left;\">自習タイム</td>\n<td style=\"text-align: left;\">途中入場OK！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00~20:30頃</td>\n<td style=\"text-align: left;\">自己紹介＆交流タイム</td>\n<td style=\"text-align: left;\">最近の「気付き・学び」「興味」などその日の人数や雰囲気でお話しいただきますのでご準備を！<br> スライドを使ってのショートプレゼンもOK<br>※できるだけ皆が分かるような＆利するような内容でお願いしまーす！</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30~22:00</td>\n<td style=\"text-align: left;\">自習タイム</td>\n<td style=\"text-align: left;\">途中退場OK！</td>\n</tr>\n</tbody>\n</table>\n<h2>■参加資格</h2>\n<ul>\n<li>無断欠席しない人</li>\n<li>\n<p>ITエンジニアまたはITエンジニアを目指す人（学生さんも歓迎）</p>\n</li>\n<li>\n<h5>eLVオフィシャルサイト、またイベント告知サイトなどへの掲載目的として勉強会、交流会風景の撮影を行わせて頂いております。掲載へ不都合が御座います方は、恐れ入りますが運営スタッフまでお申し出下さい。</h5>\n</li>\n</ul>\n<h2>■ITエンジニアコミュニティeLVとは？</h2>\n<p><img alt=\"ロゴ画像\" src=\"https://assets.st-note.com/img/1705545691300-zhq3UaWO4g.png\"></p>\n<p>eLVはスキルアップに資する誰でも参加可能なコミュニティです。</p>\n<p>※他のイベントはこちらからチェック下さい。<br>\n<a href=\"https://elv.connpass.com/\" rel=\"nofollow\">https://elv.connpass.com/</a></p>\n<p>※Co-Creation BAR（ICT関係者の集うBAR）のイベントはこちらからチェック下さい。<br>\n<a href=\"https://elv-ccb.connpass.com/\" rel=\"nofollow\">https://elv-ccb.connpass.com/</a></p>\n<p><br>\n<br></p>\n<h1>運営母体とお問合せ先について</h1>\n<hr>\n<p>ITエンジニアコミュニティeLV（engineer's Learning･Vesper）powered by <a href=\"https://note.com/cre_co_es\" rel=\"nofollow\">CRE-CO</a>\n<br>〒102-0093 東京都千代田区平河町1-4-3 平河町伏見ビル 2F Co-CreationLABO\n<br>e-MAIL：co-Creation@elv.tokyo</p>",
+      "url": "https://hfs.connpass.com/event/405007/",
+      "image_url": "https://media.connpass.com/thumbs/ac/08/ac08caf5d6f6fbad2c98f7119e04f98a.png",
+      "hash_tag": "プログラミング勉強部屋",
       "started_at": "2026-10-06T19:00:00+09:00",
-      "ended_at": "2026-10-06T21:00:00+09:00",
-      "published_at": "2026-08-26T08:01:08+09:00",
-      "limit": 20,
+      "ended_at": "2026-10-06T22:00:00+09:00",
+      "published_at": "2026-09-15T07:01:17+09:00",
+      "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
-        "id": 17330,
-        "subdomain": "hello-output",
-        "title": "Hello,Output",
-        "url": "https://hello-output.connpass.com/"
+        "id": 1717,
+        "subdomain": "hfs",
+        "title": "Hacker’s Free Space",
+        "url": "https://hfs.connpass.com/"
       },
-      "address": "東京都渋谷区恵比寿１丁目１９−１９ 恵比寿ビジネスタワー 3F",
-      "place": "株式会社テックビズ",
-      "lat": "35.647676300000",
-      "lon": "139.712660000000",
-      "owner_id": 828572,
-      "owner_nickname": "kakecyan",
-      "owner_display_name": "kakecyan",
-      "accepted": 19,
-      "waiting": 2,
-      "updated_at": "2026-09-16T22:54:13+09:00"
+      "address": "〒102-0093 東京都千代田区平河町1-4-3 平河町伏見ビル 2F",
+      "place": "Co-Creation LABO",
+      "lat": "35.682793000000",
+      "lon": "139.739039500000",
+      "owner_id": 14295,
+      "owner_nickname": "medellinjp",
+      "owner_display_name": "冨元 雅仁",
+      "accepted": 5,
+      "waiting": 0,
+      "updated_at": "2026-09-15T07:01:17+09:00"
     },
     {
       "id": 406877,
@@ -171,7 +171,7 @@
       "published_at": "2026-09-14T10:13:04+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16709,
         "subdomain": "wbccollege",
@@ -185,7 +185,7 @@
       "owner_id": 952301,
       "owner_nickname": "MinoriUeda",
       "owner_display_name": "MinoriUeda",
-      "accepted": 12,
+      "accepted": 14,
       "waiting": 0,
       "updated_at": "2026-10-02T12:46:13+09:00"
     },
@@ -193,7 +193,7 @@
       "id": 402785,
       "title": "DroidKaigi × iOSDC After Night",
       "catch": "",
-      "description": "<p><strong>本イベントは DroidKaigi 2026 および iOSDC Japan 2026 に協賛している サイボウズ 株式会社 および STORES 株式会社 主催のイベントです。DroidKaigi 2026 および iOSDC Japan 2026 による公式イベントではありません。</strong></p>\n<hr>\n<h1>DroidKaigi × iOSDC After Night</h1>\n<p>DroidKaigi 2026 と iOSDC Japan 2026 の両方の熱気をそのままに語り合いませんか？</p>\n<p>「カンファレンスで聞いたあのセッション、他の人はどう感じたんだろう？」\n「せっかくなら Android の人とも iOS の人とも話してみたい！」</p>\n<p>そんな思いから、サイボウズと STORES 合同でアフターイベントを開催します。</p>\n<p>当日は、両カンファレンスの感想はもちろん、普段の開発の悩みや最近話題の AI 活用など、気になっていることをおいしいごはんとお酒を片手に気軽に話しましょう。LT・Talk セッションもご用意しているので、聞くだけの参加も大歓迎です。</p>\n<p>Android / iOS の垣根を越えて交流してみたい方、ぜひお気軽にご参加ください！</p>\n<h2>📆 開催情報</h2>\n<p>日時 : 2026年10月6日 (火) 18:30 〜 21:00（18:00 開場）</p>\n<p>開催場所 : サイボウズ 東京オフィス 東京都中央区日本橋2-7-1 東京日本橋タワー27階 (オフライン・配信なし)</p>\n<p>参加費用 : 無料</p>\n<h2>⏱️ タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>開始</th>\n<th>終了</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:00</td>\n<td>18:30</td>\n<td>開場 <strong>＊この時間内にお越しください＊</strong></td>\n<td></td>\n</tr>\n<tr>\n<td>18:30</td>\n<td>18:40</td>\n<td>オープニング &amp; 乾杯🍺</td>\n<td></td>\n</tr>\n<tr>\n<td>18:40</td>\n<td>18:45</td>\n<td>LT #1</td>\n<td>Kyome</td>\n</tr>\n<tr>\n<td>18:45</td>\n<td>18:50</td>\n<td>iOS アプリのアーキテクチャ刷新を AI と進めるためのデバッグツール Tokiwatari</td>\n<td><a href=\"https://x.com/miichan_ocha\" rel=\"nofollow\">Yuki Miida (mii-chan)</a></td>\n</tr>\n<tr>\n<td>18:50</td>\n<td>18:55</td>\n<td>しくじりデベロッパー 〜Apple ContainerでAOSPをビルドして自宅サーバーで運用したかった〜</td>\n<td><a href=\"https://x.com/_subnaganaga\" rel=\"nofollow\">naga</a></td>\n</tr>\n<tr>\n<td>18:55</td>\n<td>19:00</td>\n<td>LT #4</td>\n<td>TMoriya</td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>19:15</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>19:15</td>\n<td>19:28</td>\n<td>STORES レジに InjectionNext を導入してみた</td>\n<td><a href=\"https://x.com/megabits_mzq_jp\" rel=\"nofollow\">Megabits_mzq</a></td>\n</tr>\n<tr>\n<td>19:28</td>\n<td>19:40</td>\n<td>Talk #2</td>\n<td>mikan</td>\n</tr>\n<tr>\n<td>19:40</td>\n<td>19:55</td>\n<td>クロージング・写真撮影</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>21:00</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>21:30</td>\n<td>片付け、完全撤収</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>サイボウズ について</h2>\n<div style=\"text-align:left;\">\n<a href=\"https://cybozu.co.jp/recruit/\" rel=\"nofollow\">\n<img src=\"https://media.connpass.com/thumbs/d6/48/d648f7bae3b257a727ec9626f6d0aaf8.png\">\n</a>\n</div>\n\n<p>サイボウズは、「チームワークあふれる社会を創る」という理念のもと、チームの情報共有と業務効率化を支えるクラウドサービスを開発・提供する企業です。  <br>\nkintone、Garoon、サイボウズ Office、メールワイズの4製品を中心に、190,000社、1,550万ユーザーにご利用いただいています。 また、これらのサービスを支えるため、アプリケーションレイヤーからインフラまでを自社で開発・運用しています。 \n <br>\n世界中のあらゆるチームに向けて、業務改善を支えるサービスを提供し、「チームワークあふれる社会」の実現を目指します。</p>\n<p><strong>採用情報</strong></p>\n<ul>\n<li><a href=\"https://cybozu.co.jp/recruit/\" rel=\"nofollow\">採用サイト</a></li>\n<li><a href=\"https://blog.cybozu.io/\" rel=\"nofollow\">Cybozu Inside Out サイボウズエンジニアのブログ</a></li>\n<li><a href=\"https://cybozu.co.jp/recruit/privacy-policy/\" rel=\"nofollow\">個人情報の取り扱いについて</a></li>\n</ul>\n<h2>STORES について</h2>\n<p>STORES 株式会社は、「Just for Fun」のミッションのもと、こだわりや情熱に駆動される経済を目指しています。小売、飲食、サービス業を中心とする中小事業者の店舗運営を支える幅広いプロダクトを提供しています。顧客データを基盤とした「STORES」のプロダクトを通じて、事業者の持続的な売上成長をサポートし、個性豊かで多様な商いがあふれる社会を実現します。</p>\n<p><strong>採用情報</strong></p>\n<ul>\n<li><a href=\"https://jobs.st.inc/\" rel=\"nofollow\">採用サイト</a></li>\n<li><a href=\"https://product.st.inc/\" rel=\"nofollow\">STORES Product Blog</a></li>\n</ul>\n<h2>⚠️ 諸注意</h2>\n<ul>\n<li>電源・Wi-Fi環境はこちらでご用意しております</li>\n<li>当日の内容およびスケジュールは予告なく変更される場合があります</li>\n<li>テーマに関する意見交換や交流を目的とした会であり、それ以外を主な目的とした参加は固くお断りいたします</li>\n<li>運営の判断で申込みをキャンセルさせて頂く場合がございます</li>\n<li>参加者の皆さんやスピーカーが良い時間を過ごせるようにイベントを作っています。 SNSやブログ等で当イベントについて発信する際は、ハラスメントのないよう、皆さんのご協力をお願いいたします！</li>\n</ul>\n<h2>個人情報の取り扱いについて</h2>\n<h3>サイボウズ株式会社</h3>\n<p>サイボウズ株式会社、サイボウズ・ラボ株式会社およびサイボウズ・コネクトシー株式会社（以下総称して「当社」といいます。）は、製品・サービスの提供、イベントの実施その他事業活動の実施に当たって取得する個人情報について、以下に記載するポリシーに基づいて適正に取り扱います。</p>\n<ul>\n<li><a href=\"https://cybozu.co.jp/privacy/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a></li>\n</ul>\n<h3>STORES 株式会社</h3>\n<p>ご入力いただいた個人情報は、STORES 株式会社が取得し、プライバシーポリシーに基づいて取り扱います。</p>\n<ul>\n<li><a href=\"https://jobs.st.inc/privacy-policy\" rel=\"nofollow\">プライバシーポリシー</a></li>\n</ul>",
+      "description": "<p><strong>本イベントは DroidKaigi 2026 および iOSDC Japan 2026 に協賛している サイボウズ 株式会社 および STORES 株式会社 主催のイベントです。DroidKaigi 2026 および iOSDC Japan 2026 による公式イベントではありません。</strong></p>\n<hr>\n<h1>DroidKaigi × iOSDC After Night</h1>\n<p>DroidKaigi 2026 と iOSDC Japan 2026 の両方の熱気をそのままに語り合いませんか？</p>\n<p>「カンファレンスで聞いたあのセッション、他の人はどう感じたんだろう？」\n「せっかくなら Android の人とも iOS の人とも話してみたい！」</p>\n<p>そんな思いから、サイボウズと STORES 合同でアフターイベントを開催します。</p>\n<p>当日は、両カンファレンスの感想はもちろん、普段の開発の悩みや最近話題の AI 活用など、気になっていることをおいしいごはんとお酒を片手に気軽に話しましょう。LT・Talk セッションもご用意しているので、聞くだけの参加も大歓迎です。</p>\n<p>Android / iOS の垣根を越えて交流してみたい方、ぜひお気軽にご参加ください！</p>\n<h2>📆 開催情報</h2>\n<p>日時 : 2026年10月6日 (火) 18:30 〜 21:00（18:00 開場）</p>\n<p>開催場所 : サイボウズ 東京オフィス 東京都中央区日本橋2-7-1 東京日本橋タワー27階 (オフライン・配信なし)</p>\n<p>参加費用 : 無料</p>\n<h2>⏱️ タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>開始</th>\n<th>終了</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:00</td>\n<td>18:30</td>\n<td>開場 <strong>＊この時間内にお越しください＊</strong></td>\n<td></td>\n</tr>\n<tr>\n<td>18:30</td>\n<td>18:40</td>\n<td>オープニング &amp; 乾杯🍺</td>\n<td></td>\n</tr>\n<tr>\n<td>18:40</td>\n<td>18:45</td>\n<td>LT #1</td>\n<td>Kyome</td>\n</tr>\n<tr>\n<td>18:45</td>\n<td>18:50</td>\n<td>iOS アプリのアーキテクチャ刷新を AI と進めるためのデバッグツール Tokiwatari</td>\n<td><a href=\"https://x.com/miichan_ocha\" rel=\"nofollow\">Yuki Miida (mii-chan)</a></td>\n</tr>\n<tr>\n<td>18:50</td>\n<td>18:55</td>\n<td>しくじりデベロッパー 〜Apple ContainerでAOSPをビルドして自宅サーバーで運用したかった〜</td>\n<td><a href=\"https://x.com/_subnaganaga\" rel=\"nofollow\">naga</a></td>\n</tr>\n<tr>\n<td>18:55</td>\n<td>19:00</td>\n<td>Instrumentsに触れよう</td>\n<td><a href=\"https://x.com/excode013\" rel=\"nofollow\">TMoriya</a></td>\n</tr>\n<tr>\n<td>19:00</td>\n<td>19:15</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>19:15</td>\n<td>19:28</td>\n<td>STORES レジに InjectionNext を導入してみた</td>\n<td><a href=\"https://x.com/megabits_mzq_jp\" rel=\"nofollow\">Megabits_mzq</a></td>\n</tr>\n<tr>\n<td>19:28</td>\n<td>19:40</td>\n<td>ループエンジニアリングこんくらいでいい</td>\n<td><a href=\"https://x.com/mikanIchinose\" rel=\"nofollow\">mikan</a></td>\n</tr>\n<tr>\n<td>19:40</td>\n<td>19:55</td>\n<td>クロージング・写真撮影</td>\n<td></td>\n</tr>\n<tr>\n<td>20:00</td>\n<td>21:00</td>\n<td>懇親会</td>\n<td></td>\n</tr>\n<tr>\n<td>21:00</td>\n<td>21:30</td>\n<td>片付け、完全撤収</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>サイボウズ について</h2>\n<div style=\"text-align:left;\">\n<a href=\"https://cybozu.co.jp/recruit/\" rel=\"nofollow\">\n<img src=\"https://media.connpass.com/thumbs/d6/48/d648f7bae3b257a727ec9626f6d0aaf8.png\">\n</a>\n</div>\n\n<p>サイボウズは、「チームワークあふれる社会を創る」という理念のもと、チームの情報共有と業務効率化を支えるクラウドサービスを開発・提供する企業です。  <br>\nkintone、Garoon、サイボウズ Office、メールワイズの4製品を中心に、190,000社、1,550万ユーザーにご利用いただいています。 また、これらのサービスを支えるため、アプリケーションレイヤーからインフラまでを自社で開発・運用しています。 \n <br>\n世界中のあらゆるチームに向けて、業務改善を支えるサービスを提供し、「チームワークあふれる社会」の実現を目指します。</p>\n<p><strong>採用情報</strong></p>\n<ul>\n<li><a href=\"https://cybozu.co.jp/recruit/\" rel=\"nofollow\">採用サイト</a></li>\n<li><a href=\"https://blog.cybozu.io/\" rel=\"nofollow\">Cybozu Inside Out サイボウズエンジニアのブログ</a></li>\n<li><a href=\"https://cybozu.co.jp/recruit/privacy-policy/\" rel=\"nofollow\">個人情報の取り扱いについて</a></li>\n</ul>\n<h2>STORES について</h2>\n<p>STORES 株式会社は、「Just for Fun」のミッションのもと、こだわりや情熱に駆動される経済を目指しています。小売、飲食、サービス業を中心とする中小事業者の店舗運営を支える幅広いプロダクトを提供しています。顧客データを基盤とした「STORES」のプロダクトを通じて、事業者の持続的な売上成長をサポートし、個性豊かで多様な商いがあふれる社会を実現します。</p>\n<p><strong>採用情報</strong></p>\n<ul>\n<li><a href=\"https://jobs.st.inc/\" rel=\"nofollow\">採用サイト</a></li>\n<li><a href=\"https://product.st.inc/\" rel=\"nofollow\">STORES Product Blog</a></li>\n</ul>\n<h2>⚠️ 諸注意</h2>\n<ul>\n<li>電源・Wi-Fi環境はこちらでご用意しております</li>\n<li>当日の内容およびスケジュールは予告なく変更される場合があります</li>\n<li>テーマに関する意見交換や交流を目的とした会であり、それ以外を主な目的とした参加は固くお断りいたします</li>\n<li>運営の判断で申込みをキャンセルさせて頂く場合がございます</li>\n<li>参加者の皆さんやスピーカーが良い時間を過ごせるようにイベントを作っています。 SNSやブログ等で当イベントについて発信する際は、ハラスメントのないよう、皆さんのご協力をお願いいたします！</li>\n</ul>\n<h2>個人情報の取り扱いについて</h2>\n<h3>サイボウズ株式会社</h3>\n<p>サイボウズ株式会社、サイボウズ・ラボ株式会社およびサイボウズ・コネクトシー株式会社（以下総称して「当社」といいます。）は、製品・サービスの提供、イベントの実施その他事業活動の実施に当たって取得する個人情報について、以下に記載するポリシーに基づいて適正に取り扱います。</p>\n<ul>\n<li><a href=\"https://cybozu.co.jp/privacy/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a></li>\n</ul>\n<h3>STORES 株式会社</h3>\n<p>ご入力いただいた個人情報は、STORES 株式会社が取得し、プライバシーポリシーに基づいて取り扱います。</p>\n<ul>\n<li><a href=\"https://jobs.st.inc/privacy-policy\" rel=\"nofollow\">プライバシーポリシー</a></li>\n</ul>",
       "url": "https://cybozu.connpass.com/event/402785/",
       "image_url": "https://media.connpass.com/thumbs/41/c5/41c5d5bef748cde85181c90cbeefbd9f.png",
       "hash_tag": "MobileAfterNight",
@@ -202,7 +202,7 @@
       "published_at": "2026-08-24T16:10:04+09:00",
       "limit": 48,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 3079,
         "subdomain": "cybozu",
@@ -216,9 +216,9 @@
       "owner_id": 194873,
       "owner_nickname": "CybozuInsideOut",
       "owner_display_name": "Cybozu InsideOut",
-      "accepted": 36,
+      "accepted": 34,
       "waiting": 0,
-      "updated_at": "2026-10-06T10:17:47+09:00"
+      "updated_at": "2026-10-06T18:57:46+09:00"
     },
     {
       "id": 407073,
@@ -233,7 +233,7 @@
       "published_at": "2026-09-16T10:10:54+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 1220,
         "subdomain": "iijlab-seminars",
@@ -264,7 +264,7 @@
       "published_at": "2026-09-24T14:32:29+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 14877,
         "subdomain": "lion",
@@ -278,9 +278,9 @@
       "owner_id": 164604,
       "owner_nickname": "mashcafe",
       "owner_display_name": "伊藤真之",
-      "accepted": 16,
+      "accepted": 17,
       "waiting": 0,
-      "updated_at": "2026-09-24T14:32:29+09:00"
+      "updated_at": "2026-10-06T14:55:03+09:00"
     }
   ]
 }
