@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-10T04:56:50.908825+09:00",
+  "fetched_at": "2026-10-10T08:47:27.518477+09:00",
   "date": "20261010",
   "count": 23,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 411307,
       "owner_nickname": "sakamoto-se",
       "owner_display_name": "sakamoto-se",
-      "accepted": 15,
+      "accepted": 16,
       "waiting": 0,
       "updated_at": "2026-10-07T13:55:42+09:00"
     },
@@ -397,7 +397,7 @@
       "owner_id": 572361,
       "owner_nickname": "matsuoka_t213483m",
       "owner_display_name": "M_M",
-      "accepted": 8,
+      "accepted": 9,
       "waiting": 0,
       "updated_at": "2026-10-08T10:49:39+09:00"
     },
@@ -491,7 +491,7 @@
       "owner_nickname": "ysaito",
       "owner_display_name": "ysaito",
       "accepted": 18,
-      "waiting": 19,
+      "waiting": 18,
       "updated_at": "2026-10-06T22:01:45+09:00"
     },
     {
@@ -583,7 +583,7 @@
       "owner_id": 55619,
       "owner_nickname": "naoki-takahashi",
       "owner_display_name": "naoki-takahashi",
-      "accepted": 18,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-10-06T12:13:00+09:00"
     },
