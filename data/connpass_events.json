@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-10T12:39:08.832896+09:00",
+  "fetched_at": "2026-10-10T19:19:24.276954+09:00",
   "date": "20261010",
   "count": 22,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-09-25T16:31:35+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10317,
         "subdomain": "sebook",
@@ -30,7 +30,7 @@
       "owner_id": 320458,
       "owner_nickname": "shimushimu",
       "owner_display_name": "koshima",
-      "accepted": 17,
+      "accepted": 15,
       "waiting": 0,
       "updated_at": "2026-10-07T13:55:42+09:00"
     },
@@ -38,7 +38,7 @@
       "id": 405844,
       "title": "新卒N年目の勉強会&交流会！#6",
       "catch": "新卒エンジニアの交流会！",
-      "description": "<h1 style=\"text-align:center; color:#B74A14; border-bottom:2px solid #B74A14; border-top:2px solid #B74A14; border-left: 0px; background-color: #faf6f0; font-weight: bold;\">新卒N年目の勉強会&amp;交流会！<br>#6</h1>\n\n<p>新卒エンジニア同士で、技術に関して自由に話すセッション &amp; 交流イベントです！（新卒1~5年目くらいを想定していますが、それ以外でもOKです！Nに負数を代入して学生でもOK！）</p>\n<p>前半はカジュアルなセッション、後半は懇親会を予定しています。\n普段は関わることの少ない、会社を超えた横のつながりを作りましょう！<br>\n<strong>初登壇はもちろん、初めてのイベント参加の方もウェルカムです！</strong></p>\n<p>9/28追記： <strong>登壇枠もまだまだ募集中です！</strong></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">セッション</h2>\n\n<p>今回は拡大版ということで、以下の3つのテーマでセッションを募集します！</p>\n<p>いずれのテーマも時間は7分ご用意しています！</p>\n<h3>1. <strong>〇〇への誘い</strong></h3>\n<p>あなたの興味のあることや得意な領域の、魅力・入門・はじめて見た体験談などを、他分野・初学者の人に紹介してください！\nあなたや周囲の人にとっては当たり前のことでも、他の分野の人から見れば貴重な話になるかもしれません！</p>\n<p>初学者向けにある程度噛み砕いて説明していただければ、必ずしも題材が易しい内容である必要はありません！</p>\n<h3>2. <strong>最近の自分の取り組み・チームの取り組み</strong></h3>\n<p>個人開発・情報収集のやり方・AIとの付き合い方など、自分の取り組みでも、チームや社内で実践している取り組みでも何でもOKです！</p>\n<h3>3. <strong>最近沼っていること</strong></h3>\n<p>皆さんが今ハマっていること、楽しいことを語ってください！技術に関する話であれば、趣味でも仕事でもなんでもOKです！</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">タイムテーブル</h2>\n\n<table>\n  <thead>\n    <tr>\n      <th style=\"background-color:#faf6f0;color:#B74A14;font-weight:bold;\" colspan=\"2\">\n        タイムテーブル\n      </th>\n    </tr>\n    <tr>\n      <th style=\"background-color:#faf6f0;color:#B74A14;font-weight:bold;padding:0px 200px;\" colspan=\"2\">\n      </th>\n    </tr>\n  </thead>\n\n  <tbody>\n\n    <tr>\n      <td style=\"background-color:#faf6f0;\">15:30~</td>\n      <td>開場</td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"2\" style=\"background-color:#faf6f0;\">16:00~</td>\n      <td>\n        <img src=\"https://yuta-ike.github.io/yuta-ike/x-icon.jpg\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"yuta-ikeのアイコン\">\n        <span style=\"font-weight:bold;\">オープニング</span>\n        /\n        <a href=\"https://x.com/Selria1\" rel=\"nofollow\">yuta-ike</a>\n      </td>\n    </tr>\n\n    <tr>\n      <td>\n        <img src=\"https://yuta-ike.github.io/yuta-ike/white.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"\">\n        <span style=\"font-weight:bold;\">会場説明・スポンサー紹介</span>\n      </td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"5\" style=\"background-color:#faf6f0;\">16:20~</td>\n      <td>\n        セッション（15分）\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/f4/a3/f4a330e815f9b2b725ba054e5c931d85.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"Hol1kgmgのアイコン\">\n        <span style=\"font-weight:bold;\">次のPJの（キーボード）技術選定についてレビューしてください</span>\n        /\n        <a href=\"https://x.com/Hol1kgmg\" rel=\"nofollow\">Hol1kgmg</a>\n      </td>\n    </tr>\n\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/a8/b8/a8b8f0ea2a883ac2cc330cc28395d80a.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"akahoshi1421のアイコン\">\n        <span style=\"font-weight:bold;\">AI時代に新しい技術をどう学ぶか Type Challengesから着想を得た新しいアプローチ</span>\n        /\n        <a href=\"https://x.com/akahoshi_1421\" rel=\"nofollow\">akahoshi1421</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/97/60/9760cbf2ea581193913cb0eca5235ba1.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"ryota1582のアイコン\">\n        <span style=\"font-weight:bold;\">「可愛い」が求められる世界でGPUの世界とドット絵の親和性を想像してみよう！</span>\n        /\n        <a href=\"https://x.com/ryota1582\" rel=\"nofollow\">ryota1582</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/71/81/7181823e85c6832d1ddf8cdf275da972.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"hukuのアイコン\">\n        <span style=\"font-weight:bold;\">OpenAI DevDayへの誘い</span>\n        /\n        <a href=\"https://x.com/huku_developer\" rel=\"nofollow\">huku</a>\n      </td>\n    </tr>\n\n\n    <tr>\n      <td rowspan=\"7\" style=\"background-color:#faf6f0;\">17:20~</td>\n      <td>\n        ショートセッション（7分）\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/09/67/096714ebfb309a7f68e6d094051f3b0e.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"na2keraのアイコン\">\n        <span style=\"font-weight:bold;\">はじめての電子工作にはM5Stackがいいぞ！</span>\n        /\n        <a href=\"https://x.com/na2kera_0510\" rel=\"nofollow\"> na2kera </a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/cc/7c/cc7caf1192db188b2c5e1ca673f437af.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"ウタカタのアイコン\">\n        <span style=\"font-weight:bold;\">色んな意味で導入が難しいFinOpsの誘い</span>\n        /\n        <a href=\"https://x.com/awanoju_nin\" rel=\"nofollow\">ウタカタ</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/b5/93/b59351cd8af432c5edc52940fab61dcd.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"Arishowのアイコン\">\n        <span style=\"font-weight:bold;\">鶏が先か、卵が先かの話</span>\n        /\n        <a href=\"https://x.com/arishow14\" rel=\"nofollow\"> Arishow </a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/74/d1/74d150e6be04a220596fc522d8c40976.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"monokemonokeのアイコン\">\n        <span style=\"font-weight:bold;\">小さい将棋の神AIを打ち負かしてみた</span>\n        /\n        <a href=\"https://x.com/monokemonoke\" rel=\"nofollow\"> monokemonoke </a>\n      </td>\n    </tr>\n\n\n    \n    <tr>\n      <td>\n        <img src=\"https://connpass.com/static/img/common/user_no_image_180.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"monokemonokeのアイコン\">\n        <span style=\"font-weight:bold;\">soft_skill\\.md</span>\n        /\n        <a href=\"https://connpass.com/user/yozure_12/\" rel=\"nofollow\"> yozure_12 </a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/53/f0/53f0afd0898b783d26ab34a89e204f46.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"itojumのアイコン\">\n        <span style=\"font-weight:bold;\">メタプログラミング、調べてみた！</span>\n        /\n        <a href=\"https://x.com/itojum1230\" rel=\"nofollow\"> itojum </a>\n      </td>\n    </tr>\n\n\n    <tr>\n      <td style=\"background-color:#faf6f0;\">18:00~</td>\n      <td style=\"font-weight:bold;font-size:16px;\">懇親会</td>\n    </tr>\n\n    <tr>\n      <td style=\"background-color:#faf6f0;\">19:00</td>\n      <td>イベント終了</td>\n    </tr>\n\n  </tbody>\n</table>\n\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">会場提供</h2>\n\n<p><a href=\"https://hello-world.smarthr.co.jp/\" rel=\"nofollow\">株式会社SmartHR</a> 様に会場をお借りします。</p>\n<p><img width=\"250\" style=\"padding: 40px;\" src=\"https://cdn-ak.f.st-hatena.com/images/fotolife/s/smarthr/20250827/20250827111546.png\" alt=\"SmartHR ロゴ\"></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">イベント行動規範</h2>\n\n<p>このイベントは <a href=\"https://docs.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigi の行動規範</a> に則り運営いたします。参加者の皆さまも行動規範の遵守をお願いいたします。</p>\n<p>上記に加え、営業や勧誘を目的とした参加や懇親会のみを目的とした参加はお断りいたします。</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">問い合わせ先</h2>\n\n<p>メール: <a href=\"mailto:n-study-info@googlegroups.com\">n-study-info@googlegroups.com</a>（運営メーリス）</p>\n<p>X: <a href=\"https://x.com/Selria1\" rel=\"nofollow\">https://x.com/Selria1</a> （ff関係外の場合は、DMが高確率でフィルタリングされますのでメールにてお願いします）</p>",
+      "description": "<h1 style=\"text-align:center; color:#B74A14; border-bottom:2px solid #B74A14; border-top:2px solid #B74A14; border-left: 0px; background-color: #faf6f0; font-weight: bold;\">新卒N年目の勉強会&amp;交流会！<br>#6</h1>\n\n<p>新卒エンジニア同士で、技術に関して自由に話すセッション &amp; 交流イベントです！（新卒1~5年目くらいを想定していますが、それ以外でもOKです！Nに負数を代入して学生でもOK！）</p>\n<p>前半はカジュアルなセッション、後半は懇親会を予定しています。\n普段は関わることの少ない、会社を超えた横のつながりを作りましょう！<br>\n<strong>初登壇はもちろん、初めてのイベント参加の方もウェルカムです！</strong></p>\n<p>9/28追記： <strong>登壇枠もまだまだ募集中です！</strong></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">セッション</h2>\n\n<p>今回は拡大版ということで、以下の3つのテーマでセッションを募集します！</p>\n<p>いずれのテーマも時間は7分ご用意しています！</p>\n<h3>1. <strong>〇〇への誘い</strong></h3>\n<p>あなたの興味のあることや得意な領域の、魅力・入門・はじめて見た体験談などを、他分野・初学者の人に紹介してください！\nあなたや周囲の人にとっては当たり前のことでも、他の分野の人から見れば貴重な話になるかもしれません！</p>\n<p>初学者向けにある程度噛み砕いて説明していただければ、必ずしも題材が易しい内容である必要はありません！</p>\n<h3>2. <strong>最近の自分の取り組み・チームの取り組み</strong></h3>\n<p>個人開発・情報収集のやり方・AIとの付き合い方など、自分の取り組みでも、チームや社内で実践している取り組みでも何でもOKです！</p>\n<h3>3. <strong>最近沼っていること</strong></h3>\n<p>皆さんが今ハマっていること、楽しいことを語ってください！技術に関する話であれば、趣味でも仕事でもなんでもOKです！</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px; margin: 20px 0px 10px 0px;\">タイムテーブル</h2>\n\n<table>\n  <thead>\n    <tr>\n      <th style=\"background-color:#faf6f0;color:#B74A14;font-weight:bold;\" colspan=\"2\">\n        タイムテーブル\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    \n    <tr>\n      <td style=\"background-color:#faf6f0;\">15:30~</td>\n      <td>開場</td>\n    </tr>\n\n    \n    <tr>\n      <td rowspan=\"2\" style=\"background-color:#faf6f0;\">16:00~</td>\n      <td>\n        <img src=\"https://yuta-ike.github.io/yuta-ike/x-icon.jpg\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"yuta-ikeのアイコン\">\n        <span style=\"font-weight:bold;\">オープニング</span>\n        /\n        <a href=\"https://x.com/Selria1\" rel=\"nofollow\">yuta-ike</a>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <img src=\"https://yuta-ike.github.io/yuta-ike/white.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"\">\n        <span style=\"font-weight:bold;\">会場説明・スポンサー紹介</span>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td rowspan=\"5\" style=\"background-color:#faf6f0;\">16:20~</td>\n      <td style=\"font-weight:bold; background-color:#fcfcfc;\">\n        セッション（15分）\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/f4/a3/f4a330e815f9b2b725ba054e5c931d85.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"Hol1kgmgのアイコン\">\n        <span style=\"font-weight:bold;\">次のPJの（キーボード）技術選定についてレビューしてください</span>\n        /\n        <a href=\"https://x.com/Hol1kgmg\" rel=\"nofollow\">Hol1kgmg</a>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/97/60/9760cbf2ea581193913cb0eca5235ba1.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"ryota1582のアイコン\">\n        <span style=\"font-weight:bold;\">「可愛い」が求められる世界でGPUの世界とドット絵の親和性を想像してみよう！</span>\n        /\n        <a href=\"https://x.com/ryota1582\" rel=\"nofollow\">ryota1582</a>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/71/81/7181823e85c6832d1ddf8cdf275da972.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"hukuのアイコン\">\n        <span style=\"font-weight:bold;\">OpenAI DevDayへの誘い</span>\n        /\n        <a href=\"https://x.com/huku_developer\" rel=\"nofollow\">huku</a>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/a8/b8/a8b8f0ea2a883ac2cc330cc28395d80a.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"akahoshi1421のアイコン\">\n        <span style=\"font-weight:bold;\">AI時代に新しい技術をどう学ぶか Type Challengesから着想を得た新しいアプローチ</span>\n        /\n        <a href=\"https://x.com/akahoshi_1421\" rel=\"nofollow\">akahoshi1421</a>\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td rowspan=\"5\" style=\"background-color:#faf6f0;\">17:30~</td>\n      <td style=\"font-weight:bold; background-color:#fcfcfc;\">\n        ショートセッション（7分）\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/09/67/096714ebfb309a7f68e6d094051f3b0e.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"na2keraのアイコン\">\n        <span style=\"font-weight:bold;\">はじめての電子工作にはM5Stackがいいぞ！</span>\n        /\n        <a href=\"https://x.com/na2kera_0510\" rel=\"nofollow\"> na2kera </a>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/cc/7c/cc7caf1192db188b2c5e1ca673f437af.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"ウタカタのアイコン\">\n        <span style=\"font-weight:bold;\">色んな意味で導入が難しいFinOpsの誘い</span>\n        /\n        <a href=\"https://x.com/awanoju_nin\" rel=\"nofollow\">ウタカタ</a>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <img src=\"https://media.connpass.com/thumbs/74/d1/74d150e6be04a220596fc522d8c40976.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"monokemonokeのアイコン\">\n        <span style=\"font-weight:bold;\">小さい将棋の神AIを打ち負かしてみた</span>\n        /\n        <a href=\"https://x.com/monokemonoke\" rel=\"nofollow\"> monokemonoke </a>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <img src=\"https://connpass.com/static/img/common/user_no_image_180.png\" width=\"48\" height=\"48\" style=\"margin-right:4px;\" alt=\"\">\n        <span style=\"font-weight:bold;\">資格試験取得への誘い</span>\n        /\n        kogac\n      </td>\n    </tr>\n\n    \n    <tr>\n      <td style=\"background-color:#faf6f0;\">18:00~</td>\n      <td style=\"font-weight:bold;font-size:16px;\">懇親会</td>\n    </tr>\n\n    \n    <tr>\n      <td style=\"background-color:#faf6f0;\">19:00</td>\n      <td>イベント終了</td>\n    </tr>\n  </tbody>\n</table>\n\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">会場提供</h2>\n\n<p><a href=\"https://hello-world.smarthr.co.jp/\" rel=\"nofollow\">株式会社SmartHR</a> 様に会場をお借りします。</p>\n<p><img width=\"250\" style=\"padding: 40px;\" src=\"https://cdn-ak.f.st-hatena.com/images/fotolife/s/smarthr/20250827/20250827111546.png\" alt=\"SmartHR ロゴ\"></p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">イベント行動規範</h2>\n\n<p>このイベントは <a href=\"https://docs.tskaigi.org/code-of-conduct\" rel=\"nofollow\">TSKaigi の行動規範</a> に則り運営いたします。参加者の皆さまも行動規範の遵守をお願いいたします。</p>\n<p>上記に加え、営業や勧誘を目的とした参加や懇親会のみを目的とした参加はお断りいたします。</p>\n<h2 style=\"color:#B74A14;border-bottom:2px solid #B74A14; font-weight: bold; padding-left: 10px;  margin: 20px 0px 10px 0px;\">問い合わせ先</h2>\n\n<p>メール: <a href=\"mailto:n-study-info@googlegroups.com\">n-study-info@googlegroups.com</a>（運営メーリス）</p>\n<p>X: <a href=\"https://x.com/Selria1\" rel=\"nofollow\">https://x.com/Selria1</a> （ff関係外の場合は、DMが高確率でフィルタリングされますのでメールにてお願いします）</p>",
       "url": "https://fresh-engineers.connpass.com/event/405844/",
       "image_url": "https://media.connpass.com/thumbs/25/fa/25fabfd7add4d56219b4f7edbb8d00b9.png",
       "hash_tag": "n_study",
@@ -47,7 +47,7 @@
       "published_at": "2026-09-04T20:51:26+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17440,
         "subdomain": "fresh-engineers",
@@ -61,40 +61,9 @@
       "owner_id": 566009,
       "owner_nickname": "Eri-0910",
       "owner_display_name": "Erina Yamakawa",
-      "accepted": 41,
+      "accepted": 40,
       "waiting": 0,
-      "updated_at": "2026-10-06T18:28:20+09:00"
-    },
-    {
-      "id": 399018,
-      "title": "Ramble vol.4",
-      "catch": "学生による学生のためのイベント！関東の学生エンジニア集まれ！",
-      "description": "<h1>🚦 Ramble とは？</h1>\n<h2>関東の学生が自分たちの手で運営する技術交流イベント！</h2>\n<p>関東には企業や社会人主催のコミュニティは多くありましたが、学生が学生のために主催するものはありませんでした。\nそうした背景をもとにスタートしたのが\"Ramble\"です。</p>\n<p>Rambleは 「気軽にのんびりと語り合う」 という意味の\"Ramble\"と、みんなが交わる場所という意味での\"スクランブル\"から名付けました。\n技術の真面目な話から雑談まで、肩肘張らずに共有できる場を目指しています。</p>\n<p>同世代の仲間との出会いや技術的な知見の共有を通じて、個人の成長と、関東のエンジニアコミュニティ活性化の第一歩となることを目指します。\n初めての方も大歓迎！皆さんのご参加をお待ちしています！✨</p>\n<hr>\n<h2>📸 前回（vol.3）の様子</h2>\n<p>2026年6月13日に開催したvol.3では、ライトニングトークに加え、新コンテンツとして「プロダクト供養会」を実施しました。 参加者はグループに分かれ、開発したものの完成に至らなかったプロダクトや更新を停止したプロダクトについて、工夫した点や直面した課題を語り合い、感想や改善案、技術的なアドバイスを交換しました。 成功談だけでなく、失敗談まで包み隠さず持ち寄れた、学びと発見の多い時間となりました。</p>\n<p>▶️ vol.3 エンドレポートはこちら\n<a href=\"https://www.nxtend.or.jp/news/press/20260830/777/\" rel=\"nofollow\">https://www.nxtend.or.jp/news/press/20260830/777/</a></p>\n<hr>\n<h1>開催概要</h1>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>開催日程</td>\n<td>2026年10月10日（土）</td>\n</tr>\n<tr>\n<td>開催場所</td>\n<td><strong>株式会社ギフティ/五反田</strong></td>\n</tr>\n<tr>\n<td>参加費</td>\n<td><strong>無料</strong></td>\n</tr>\n<tr>\n<td>主催</td>\n<td><a href=\"https://www.nxtend.or.jp/\" rel=\"nofollow\">特定非営利活動法人 NxTEND</a></td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h1>コンテンツ</h1>\n<p>イベントでは、参加者同士の交流を主軸に、以下のコンテンツを予定しています。</p>\n<h3>⚡ ライトニングトーク（LT）大会</h3>\n<p>参加者や運営メンバーが、開発したプロダクトや学んでいる技術、コミュニティ活動などについて5分程度の短い発表を行います。\nLT経験者はもちろん、「LTに登壇したことがない」「人前で発表するのは初めて」という方も大歓迎です！\n発表を通じて、互いの興味関心を広げましょう！ ※登壇者も募集中です！詳細は下記をご覧ください。</p>\n<h3>💬 テーブルディスカッション</h3>\n<p>テーマごとに分かれたテーブルで、少人数で交流する時間です！\n就活のことや開発環境、最近勉強していることなど、技術経験に関係なく気軽に参加できるテーマを用意しています。\n気になるテーマのテーブルに参加して、みんなでwaiwaiしましょう！</p>\n<h3>🍕 交流会</h3>\n<p>軽食やドリンクを片手に、自由に歓談する時間を設けます！\n技術トークのみではなく、関東の学生エンジニア仲間と広く交流しましょう！</p>\n<h3>🏢 スポンサーセッション</h3>\n<p>ご協賛企業様より、事業内容・技術・インターンシップ情報などをご紹介いただきます（各社5分程度）。</p>\n<hr>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:30 - 14:00</td>\n<td>開場・受付</td>\n</tr>\n<tr>\n<td>14:00 - 14:10</td>\n<td>開催挨拶・スポンサーセッション</td>\n</tr>\n<tr>\n<td>14:10 - 14:20</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>14:20 - 14:50</td>\n<td>LT会（5min × 5枠）</td>\n</tr>\n<tr>\n<td>14:50 - 15:00</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>15:00 - 16:00</td>\n<td>テーブルディスカッション</td>\n</tr>\n<tr>\n<td>16:00 - 17:30</td>\n<td>懇親会</td>\n</tr>\n<tr>\n<td>17:30 - 18:00</td>\n<td>クロージング</td>\n</tr>\n</tbody>\n</table>\n<p>※進行状況によっては時間が前後する場合がございます</p>\n<hr>\n<h2>🎤 ライトニングトーク（LT）登壇者募集！</h2>\n<ul>\n<li>発表時間：5min</li>\n<li>内容：エンジニアリングに関わる内容なら、なんでもOK！</li>\n</ul>\n<h1>イベントの特徴</h1>\n<h2>🤝 大学の垣根を越えた交流の機会</h2>\n<p>大学・大学院・高専・専門学校と、所属に関わらず関東の学生エンジニアが一堂に会する交流イベントです！\n同じ志を持つ仲間と繋がり、新たなコミュニティをここから創りましょう。</p>\n<h2>🚀 LTで広がる新たな世界</h2>\n<p>参加者によるライトニングトーク（LT）で、さまざまな成長方法や経験談を聞くことができます！\n他の学生の活動から刺激を受け、自身の学習モチベーションを高める絶好の機会です。</p>\n<hr>\n<h1>参加資格</h1>\n<ul>\n<li>技術に興味を持つ学生であること</li>\n</ul>\n<h2>📜 参加にあたってのポリシー</h2>\n<p><a href=\"https://www.nxtend.or.jp/code-of-conduct/\" rel=\"nofollow\">特定非営利活動法人 NxTEND 行動規範</a>に準拠します。</p>\n<h2>📞 お問い合わせ</h2>\n<p>ご質問・ご連絡はメールアドレス（information@nxtend.or.jp）\nまたは <a href=\"https://x.com/nxtend_npo\" rel=\"nofollow\">公式X（旧Twitter）</a> アカウントまでお願いいたします。</p>",
-      "url": "https://nxtend.connpass.com/event/399018/",
-      "image_url": "https://media.connpass.com/thumbs/02/76/027690856e19963459143c407d901553.png",
-      "hash_tag": "ramble_dev",
-      "started_at": "2026-10-10T14:00:00+09:00",
-      "ended_at": "2026-10-10T18:00:00+09:00",
-      "published_at": "2026-09-03T12:01:07+09:00",
-      "limit": 35,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14170,
-        "subdomain": "nxtend",
-        "title": "NxTEND",
-        "url": "https://nxtend.connpass.com/"
-      },
-      "address": "東京都品川区東五反田2-10-2 東五反田スクエア13F",
-      "place": "ギフティ本社イベントスペース",
-      "lat": "35.624759100000",
-      "lon": "139.727349300000",
-      "owner_id": 230015,
-      "owner_nickname": "chateau_vaeu",
-      "owner_display_name": "Horikoshi",
-      "accepted": 18,
-      "waiting": 0,
-      "updated_at": "2026-09-29T10:18:29+09:00"
+      "updated_at": "2026-10-10T15:23:40+09:00"
     },
     {
       "id": 407925,
@@ -109,7 +78,7 @@
       "published_at": "2026-09-25T14:40:42+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10492,
         "subdomain": "zeki-chan-lab",
@@ -128,6 +97,37 @@
       "updated_at": "2026-09-30T17:51:28+09:00"
     },
     {
+      "id": 399018,
+      "title": "Ramble vol.4",
+      "catch": "学生による学生のためのイベント！関東の学生エンジニア集まれ！",
+      "description": "<h1>🚦 Ramble とは？</h1>\n<h2>関東の学生が自分たちの手で運営する技術交流イベント！</h2>\n<p>関東には企業や社会人主催のコミュニティは多くありましたが、学生が学生のために主催するものはありませんでした。\nそうした背景をもとにスタートしたのが\"Ramble\"です。</p>\n<p>Rambleは 「気軽にのんびりと語り合う」 という意味の\"Ramble\"と、みんなが交わる場所という意味での\"スクランブル\"から名付けました。\n技術の真面目な話から雑談まで、肩肘張らずに共有できる場を目指しています。</p>\n<p>同世代の仲間との出会いや技術的な知見の共有を通じて、個人の成長と、関東のエンジニアコミュニティ活性化の第一歩となることを目指します。\n初めての方も大歓迎！皆さんのご参加をお待ちしています！✨</p>\n<hr>\n<h2>📸 前回（vol.3）の様子</h2>\n<p>2026年6月13日に開催したvol.3では、ライトニングトークに加え、新コンテンツとして「プロダクト供養会」を実施しました。 参加者はグループに分かれ、開発したものの完成に至らなかったプロダクトや更新を停止したプロダクトについて、工夫した点や直面した課題を語り合い、感想や改善案、技術的なアドバイスを交換しました。 成功談だけでなく、失敗談まで包み隠さず持ち寄れた、学びと発見の多い時間となりました。</p>\n<p>▶️ vol.3 エンドレポートはこちら\n<a href=\"https://www.nxtend.or.jp/news/press/20260830/777/\" rel=\"nofollow\">https://www.nxtend.or.jp/news/press/20260830/777/</a></p>\n<hr>\n<h1>開催概要</h1>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>開催日程</td>\n<td>2026年10月10日（土）</td>\n</tr>\n<tr>\n<td>開催場所</td>\n<td><strong>株式会社ギフティ/五反田</strong></td>\n</tr>\n<tr>\n<td>参加費</td>\n<td><strong>無料</strong></td>\n</tr>\n<tr>\n<td>主催</td>\n<td><a href=\"https://www.nxtend.or.jp/\" rel=\"nofollow\">特定非営利活動法人 NxTEND</a></td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h1>コンテンツ</h1>\n<p>イベントでは、参加者同士の交流を主軸に、以下のコンテンツを予定しています。</p>\n<h3>⚡ ライトニングトーク（LT）大会</h3>\n<p>参加者や運営メンバーが、開発したプロダクトや学んでいる技術、コミュニティ活動などについて5分程度の短い発表を行います。\nLT経験者はもちろん、「LTに登壇したことがない」「人前で発表するのは初めて」という方も大歓迎です！\n発表を通じて、互いの興味関心を広げましょう！ ※登壇者も募集中です！詳細は下記をご覧ください。</p>\n<h3>💬 テーブルディスカッション</h3>\n<p>テーマごとに分かれたテーブルで、少人数で交流する時間です！\n就活のことや開発環境、最近勉強していることなど、技術経験に関係なく気軽に参加できるテーマを用意しています。\n気になるテーマのテーブルに参加して、みんなでwaiwaiしましょう！</p>\n<h3>🍕 交流会</h3>\n<p>軽食やドリンクを片手に、自由に歓談する時間を設けます！\n技術トークのみではなく、関東の学生エンジニア仲間と広く交流しましょう！</p>\n<h3>🏢 スポンサーセッション</h3>\n<p>ご協賛企業様より、事業内容・技術・インターンシップ情報などをご紹介いただきます（各社5分程度）。</p>\n<hr>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:30 - 14:00</td>\n<td>開場・受付</td>\n</tr>\n<tr>\n<td>14:00 - 14:10</td>\n<td>開催挨拶・スポンサーセッション</td>\n</tr>\n<tr>\n<td>14:10 - 14:20</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>14:20 - 14:50</td>\n<td>LT会（5min × 5枠）</td>\n</tr>\n<tr>\n<td>14:50 - 15:00</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>15:00 - 16:00</td>\n<td>テーブルディスカッション</td>\n</tr>\n<tr>\n<td>16:00 - 17:30</td>\n<td>懇親会</td>\n</tr>\n<tr>\n<td>17:30 - 18:00</td>\n<td>クロージング</td>\n</tr>\n</tbody>\n</table>\n<p>※進行状況によっては時間が前後する場合がございます</p>\n<hr>\n<h2>🎤 ライトニングトーク（LT）登壇者募集！</h2>\n<ul>\n<li>発表時間：5min</li>\n<li>内容：エンジニアリングに関わる内容なら、なんでもOK！</li>\n</ul>\n<h1>イベントの特徴</h1>\n<h2>🤝 大学の垣根を越えた交流の機会</h2>\n<p>大学・大学院・高専・専門学校と、所属に関わらず関東の学生エンジニアが一堂に会する交流イベントです！\n同じ志を持つ仲間と繋がり、新たなコミュニティをここから創りましょう。</p>\n<h2>🚀 LTで広がる新たな世界</h2>\n<p>参加者によるライトニングトーク（LT）で、さまざまな成長方法や経験談を聞くことができます！\n他の学生の活動から刺激を受け、自身の学習モチベーションを高める絶好の機会です。</p>\n<hr>\n<h1>参加資格</h1>\n<ul>\n<li>技術に興味を持つ学生であること</li>\n</ul>\n<h2>📜 参加にあたってのポリシー</h2>\n<p><a href=\"https://www.nxtend.or.jp/code-of-conduct/\" rel=\"nofollow\">特定非営利活動法人 NxTEND 行動規範</a>に準拠します。</p>\n<h2>📞 お問い合わせ</h2>\n<p>ご質問・ご連絡はメールアドレス（information@nxtend.or.jp）\nまたは <a href=\"https://x.com/nxtend_npo\" rel=\"nofollow\">公式X（旧Twitter）</a> アカウントまでお願いいたします。</p>",
+      "url": "https://nxtend.connpass.com/event/399018/",
+      "image_url": "https://media.connpass.com/thumbs/02/76/027690856e19963459143c407d901553.png",
+      "hash_tag": "ramble_dev",
+      "started_at": "2026-10-10T14:00:00+09:00",
+      "ended_at": "2026-10-10T18:00:00+09:00",
+      "published_at": "2026-09-03T12:01:07+09:00",
+      "limit": 35,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 14170,
+        "subdomain": "nxtend",
+        "title": "NxTEND",
+        "url": "https://nxtend.connpass.com/"
+      },
+      "address": "東京都品川区東五反田2-10-2 東五反田スクエア13F",
+      "place": "ギフティ本社イベントスペース",
+      "lat": "35.624759100000",
+      "lon": "139.727349300000",
+      "owner_id": 230015,
+      "owner_nickname": "chateau_vaeu",
+      "owner_display_name": "Horikoshi",
+      "accepted": 17,
+      "waiting": 0,
+      "updated_at": "2026-09-29T10:18:29+09:00"
+    },
+    {
       "id": 403282,
       "title": "Sugamo.なんか 10月",
       "catch": "",
@@ -140,7 +140,7 @@
       "published_at": "2026-08-08T17:18:34+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17757,
         "subdomain": "sugamo-nanka",
@@ -156,7 +156,7 @@
       "owner_display_name": "mk-0A0",
       "accepted": 8,
       "waiting": 0,
-      "updated_at": "2026-10-04T21:23:54+09:00"
+      "updated_at": "2026-10-10T13:55:57+09:00"
     },
     {
       "id": 400589,
@@ -202,7 +202,7 @@
       "published_at": "2026-09-23T16:12:34+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17422,
         "subdomain": "techbooklibrary",
@@ -233,7 +233,7 @@
       "published_at": "2026-07-15T22:19:16+09:00",
       "limit": 84,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 876,
         "subdomain": "openfem-kanto",
@@ -264,7 +264,7 @@
       "published_at": "2026-08-07T15:15:39+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 13898,
         "subdomain": "programmersguild",
@@ -295,7 +295,7 @@
       "published_at": "2026-09-19T17:05:03+09:00",
       "limit": 11,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10492,
         "subdomain": "zeki-chan-lab",
@@ -326,7 +326,7 @@
       "published_at": "2026-09-20T17:18:46+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": null,
       "address": "東京都新宿区四谷本塩町2-8",
       "place": "Tokyo Bitcoin Base",
@@ -352,7 +352,7 @@
       "published_at": "2026-09-27T23:02:48+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -381,9 +381,9 @@
       "started_at": "2026-10-10T13:00:00+09:00",
       "ended_at": "2026-10-10T17:00:00+09:00",
       "published_at": "2026-10-03T13:26:55+09:00",
-      "limit": 10,
+      "limit": 11,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -397,15 +397,15 @@
       "owner_id": 572361,
       "owner_nickname": "matsuoka_t213483m",
       "owner_display_name": "M_M",
-      "accepted": 8,
+      "accepted": 10,
       "waiting": 0,
-      "updated_at": "2026-10-08T10:49:39+09:00"
+      "updated_at": "2026-10-10T12:56:14+09:00"
     },
     {
       "id": 407165,
       "title": "AI時代、エンジニアは終わるのか？【現在30名参加予定】",
       "catch": "単価が上がる人の条件と、これから求められる役割",
-      "description": "<h1>AI時代、エンジニアは終わるのか？</h1>\n<h2>〜単価が上がる人の条件と、これから求められる役割〜</h2>\n<p>生成AI、Claude Code、Codex、AIエージェント——。</p>\n<p>エンジニアを取り巻く環境は、ここ数年で急速に変わっています。</p>\n<p>コードを書く。\n設計書を作る。\nテストをする。\n技術について調べる。</p>\n<p>これまでエンジニアが時間をかけていた仕事の多くを、\nAIができるようになり始めました。</p>\n<p>では、これからエンジニアの価値は下がっていくのでしょうか？</p>\n<p>今回のイベントでは、</p>\n<ul>\n<li>企業はこれから、どんなエンジニアにお金を払うのか</li>\n<li>単価が上がる人と、上がりにくい人は何が違うのか</li>\n<li>AI時代に「コードを書く」以外に何が求められるのか</li>\n<li>AIによって開発現場は実際にどう変わっているのか</li>\n<li>これからのキャリアで何を身につけるべきなのか</li>\n</ul>\n<p>を、</p>\n<p><strong>「エンジニアに仕事を依頼する経営者」と\n「実際にAIを活用して開発する経営者」</strong></p>\n<p>それぞれの視点からお話しします。</p>\n<p>「AIに仕事を奪われるのでは？」という漠然とした話ではなく、</p>\n<p><strong>これからエンジニアとして市場価値を上げるために、何をすればいいのか。</strong></p>\n<p>を考える2時間です。</p>\n<h1>🎯 こんな方におすすめ</h1>\n<ul>\n<li>AIは使っているが、キャリアにどう活かせばいいか分からない</li>\n<li>ChatGPTやClaude Codeを使っているが、評価や単価につながっている実感がない</li>\n<li>AIに仕事を奪われるのでは、と少し不安を感じている</li>\n<li>今の現場の先にどんなキャリアがあるのか見えていない</li>\n<li>技術力以外に何を伸ばせばいいのか知りたい</li>\n<li>SES・フリーランスとして、もっと単価を上げたい</li>\n<li>PL・PM・上流工程など、次のキャリアを考えている</li>\n<li>AI時代の開発現場で実際に何が起きているのか知りたい</li>\n</ul>\n<h1>💡 このイベントで分かること</h1>\n<h2>1. AIによってエンジニアの仕事はどう変わるのか</h2>\n<p>生成AIやAIエージェントの普及によって、\n開発現場で何が変わり始めているのか。</p>\n<p>今後減っていく可能性のある仕事と、\n逆に重要性が高まる仕事についてお話しします。</p>\n<h2>2. 「単価が上がるエンジニア」は何が違うのか</h2>\n<p>発注する企業は、エンジニアの何を評価しているのか。</p>\n<p>技術力だけではなく、</p>\n<ul>\n<li>設計力</li>\n<li>課題解決力</li>\n<li>AI活用</li>\n<li>コミュニケーション</li>\n<li>上流工程への関与</li>\n</ul>\n<p>など、仕事を依頼する側から見た\n「評価される人」の条件を掘り下げます。</p>\n<h2>3. AI駆動開発の現場では何が起きているのか</h2>\n<p>AIは、単なるコード補完ツールではなくなっています。</p>\n<p>要件整理、設計、実装、テスト、ドキュメント作成など、\n開発プロセスそのものが変化しています。</p>\n<p>実際のAI活用事例を交えながら、\nこれからエンジニアに求められる役割についてお話しします。</p>\n<h2>4. これから何を身につけるべきなのか</h2>\n<p>「とりあえずAIを勉強する」ではなく、</p>\n<p><strong>自分の市場価値を高めるために、\n次に何を経験し、何を身につけるべきなのか。</strong></p>\n<p>今後のキャリアを考えるための判断材料を持ち帰っていただきます。</p>\n<h1>🗣️ 登壇者</h1>\n<h2>呉竹 惇</h2>\n<p><strong>UooD株式会社 代表取締役</strong></p>\n<p>SES・受託開発企業の経営者。</p>\n<p>プロダクトオーナー、開発PM、\nマーケティング・海外進出コンサルティングなどを経て現職。</p>\n<p>自身はエンジニア出身ではない一方、\nAI駆動開発を活用し、\n商用SaaS「Skillsheet-Port」を1人で開発・運用。</p>\n<p><strong>「発注する側」「雇う側」「AIを使って自分で作る側」</strong>\nの3つの視点から、\nAI時代のエンジニア市場についてお話しします。</p>\n<h2>菊地 航輔</h2>\n<p><strong>EastCloud株式会社 代表取締役 / ゲストスピーカー</strong></p>\n<p>大手SIer・大手総合電機メーカーを経て、\nスーパーコンピュータを用いたBCP関連事業の立ち上げに携わり、\n複数の表彰を受賞。</p>\n<p>その後フリーランスとして、\n海外ゲーム開発会社やタクシー配車アプリの開発・運営に参画。</p>\n<p>2024年にEastCloud株式会社を設立。</p>\n<p>現在は自社サービス開発・受託開発を手がけながら、\nAIを活用した開発にも取り組んでいます。</p>\n<p>AI時代の開発手法、超上流工程、\n実際の開発現場で起きている変化についてお話しします。</p>\n<h1>⏰ タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>12:30</td>\n<td>開場・受付</td>\n</tr>\n<tr>\n<td>13:00</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>13:10</td>\n<td>Session 1：発注する側から見た「これから評価されるエンジニア」</td>\n</tr>\n<tr>\n<td>13:45</td>\n<td>Session 2：AI駆動開発の現場から見る「エンジニアに残る価値」</td>\n</tr>\n<tr>\n<td>14:20</td>\n<td>クロストーク：AI時代、単価が上がる人は何が違うのか？</td>\n</tr>\n<tr>\n<td>14:40</td>\n<td>Q&amp;A</td>\n</tr>\n<tr>\n<td>15:00</td>\n<td>セミナー終了 / 交流会開始</td>\n</tr>\n<tr>\n<td>17:00</td>\n<td>交流会終了</td>\n</tr>\n</tbody>\n</table>\n<p>※当日の進行により変更となる場合があります。</p>\n<h1>🍻 交流会</h1>\n<p>セミナー終了後、登壇者・参加者同士の交流会を開催します。</p>\n<p>AI活用、エンジニアキャリア、SES・フリーランス、\n開発現場などについて気軽に情報交換いただけます。</p>\n<p>交流会への参加は任意です。</p>\n<h1>📆 開催概要</h1>\n<p><strong>日時</strong></p>\n<p>2026年10月10日（土）</p>\n<ul>\n<li>セミナー：13:00〜15:00</li>\n<li>交流会：15:00〜17:00</li>\n</ul>\n<p><strong>会場</strong></p>\n<p>〒101-0025 東京都千代田区神田佐久間町２丁目１５ 6F 内No53\n<a href=\"https://maps.app.goo.gl/RxtQ4bCjcWsMYhNK7\" rel=\"nofollow\">https://maps.app.goo.gl/RxtQ4bCjcWsMYhNK7</a></p>\n<p><strong>参加費</strong></p>\n<ul>\n<li>セミナー：無料</li>\n<li>交流会：3,000円（軽食・ドリンク付き）</li>\n</ul>\n<p>※交流会への参加は任意です。</p>\n<p><strong>主催</strong></p>\n<p>SKV × UooD</p>\n<h1>⚠️ 注意事項</h1>\n<ul>\n<li>イベント内容・タイムテーブルは変更となる場合があります</li>\n<li>営業・勧誘のみを目的とした参加はご遠慮ください</li>\n<li>宗教・ネットワークビジネス等への勧誘は禁止します</li>\n<li>当日の様子を撮影し、イベントレポート等に使用する場合があります</li>\n<li>キャンセルされる場合はconnpass上でキャンセルをお願いしま</li>\n</ul>",
+      "description": "<h1>AI時代、エンジニアは終わるのか？</h1>\n<h2>〜単価が上がる人の条件と、これから求められる役割〜</h2>\n<p>生成AI、Claude Code、Codex、AIエージェント——。</p>\n<p>エンジニアを取り巻く環境は、ここ数年で急速に変わっています。</p>\n<p>コードを書く。\n設計書を作る。\nテストをする。\n技術について調べる。</p>\n<p>これまでエンジニアが時間をかけていた仕事の多くを、\nAIができるようになり始めました。</p>\n<p>では、これからエンジニアの価値は下がっていくのでしょうか？</p>\n<p>今回のイベントでは、</p>\n<ul>\n<li>企業はこれから、どんなエンジニアにお金を払うのか</li>\n<li>単価が上がる人と、上がりにくい人は何が違うのか</li>\n<li>AI時代に「コードを書く」以外に何が求められるのか</li>\n<li>AIによって開発現場は実際にどう変わっているのか</li>\n<li>これからのキャリアで何を身につけるべきなのか</li>\n</ul>\n<p>を、</p>\n<p><strong>「エンジニアに仕事を依頼する経営者」と\n「実際にAIを活用して開発する経営者」</strong></p>\n<p>それぞれの視点からお話しします。</p>\n<p>「AIに仕事を奪われるのでは？」という漠然とした話ではなく、</p>\n<p><strong>これからエンジニアとして市場価値を上げるために、何をすればいいのか。</strong></p>\n<p>を考える2時間です。</p>\n<h1>🎯 こんな方におすすめ</h1>\n<ul>\n<li>AIは使っているが、キャリアにどう活かせばいいか分からない</li>\n<li>ChatGPTやClaude Codeを使っているが、評価や単価につながっている実感がない</li>\n<li>AIに仕事を奪われるのでは、と少し不安を感じている</li>\n<li>今の現場の先にどんなキャリアがあるのか見えていない</li>\n<li>技術力以外に何を伸ばせばいいのか知りたい</li>\n<li>SES・フリーランスとして、もっと単価を上げたい</li>\n<li>PL・PM・上流工程など、次のキャリアを考えている</li>\n<li>AI時代の開発現場で実際に何が起きているのか知りたい</li>\n</ul>\n<h1>💡 このイベントで分かること</h1>\n<h2>1. AIによってエンジニアの仕事はどう変わるのか</h2>\n<p>生成AIやAIエージェントの普及によって、\n開発現場で何が変わり始めているのか。</p>\n<p>今後減っていく可能性のある仕事と、\n逆に重要性が高まる仕事についてお話しします。</p>\n<h2>2. 「単価が上がるエンジニア」は何が違うのか</h2>\n<p>発注する企業は、エンジニアの何を評価しているのか。</p>\n<p>技術力だけではなく、</p>\n<ul>\n<li>設計力</li>\n<li>課題解決力</li>\n<li>AI活用</li>\n<li>コミュニケーション</li>\n<li>上流工程への関与</li>\n</ul>\n<p>など、仕事を依頼する側から見た\n「評価される人」の条件を掘り下げます。</p>\n<h2>3. AI駆動開発の現場では何が起きているのか</h2>\n<p>AIは、単なるコード補完ツールではなくなっています。</p>\n<p>要件整理、設計、実装、テスト、ドキュメント作成など、\n開発プロセスそのものが変化しています。</p>\n<p>実際のAI活用事例を交えながら、\nこれからエンジニアに求められる役割についてお話しします。</p>\n<h2>4. これから何を身につけるべきなのか</h2>\n<p>「とりあえずAIを勉強する」ではなく、</p>\n<p><strong>自分の市場価値を高めるために、\n次に何を経験し、何を身につけるべきなのか。</strong></p>\n<p>今後のキャリアを考えるための判断材料を持ち帰っていただきます。</p>\n<h1>🗣️ 登壇者</h1>\n<h2>呉竹 惇</h2>\n<p><strong>UooD株式会社 代表取締役</strong></p>\n<p>SES・受託開発企業の経営者。</p>\n<p>プロダクトオーナー、開発PM、\nマーケティング・海外進出コンサルティングなどを経て現職。</p>\n<p>自身はエンジニア出身ではない一方、\nAI駆動開発を活用し、\n商用SaaS「Skillsheet-Port」を1人で開発・運用。</p>\n<p><strong>「発注する側」「雇う側」「AIを使って自分で作る側」</strong>\nの3つの視点から、\nAI時代のエンジニア市場についてお話しします。</p>\n<h2>菊地 航輔</h2>\n<p><strong>EastCloud株式会社 代表取締役 / ゲストスピーカー</strong></p>\n<p>大手SIer・大手総合電機メーカーを経て、\nスーパーコンピュータを用いたBCP関連事業の立ち上げに携わり、\n複数の表彰を受賞。</p>\n<p>その後フリーランスとして、\n海外ゲーム開発会社やタクシー配車アプリの開発・運営に参画。</p>\n<p>2024年にEastCloud株式会社を設立。</p>\n<p>現在は自社サービス開発・受託開発を手がけながら、\nAIを活用した開発にも取り組んでいます。</p>\n<p>AI時代の開発手法、超上流工程、\n実際の開発現場で起きている変化についてお話しします。</p>\n<h1>⏰ タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>12:30</td>\n<td>開場・受付</td>\n</tr>\n<tr>\n<td>13:00</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>13:10</td>\n<td>Session 1：発注する側から見た「これから評価されるエンジニア」</td>\n</tr>\n<tr>\n<td>13:45</td>\n<td>Session 2：AI駆動開発の現場から見る「エンジニアに残る価値」</td>\n</tr>\n<tr>\n<td>14:20</td>\n<td>クロストーク：AI時代、単価が上がる人は何が違うのか？</td>\n</tr>\n<tr>\n<td>14:40</td>\n<td>Q&amp;A</td>\n</tr>\n<tr>\n<td>15:00</td>\n<td>セミナー終了 / 交流会開始</td>\n</tr>\n<tr>\n<td>17:00</td>\n<td>交流会終了</td>\n</tr>\n</tbody>\n</table>\n<p>※当日の進行により変更となる場合があります。</p>\n<h1>🍻 交流会</h1>\n<p>セミナー終了後、登壇者・参加者同士の交流会を開催します。</p>\n<p>AI活用、エンジニアキャリア、SES・フリーランス、\n開発現場などについて気軽に情報交換いただけます。</p>\n<p>交流会への参加は任意です。</p>\n<h1>📆 開催概要</h1>\n<p><strong>日時</strong></p>\n<p>2026年10月10日（土）</p>\n<ul>\n<li>セミナー：13:00〜15:00</li>\n<li>交流会：15:00〜17:00</li>\n</ul>\n<p><strong>会場</strong></p>\n<p>〒101-0025 東京都千代田区神田佐久間町２丁目１５ー３ 6F 内No53\n<a href=\"https://maps.app.goo.gl/RxtQ4bCjcWsMYhNK7\" rel=\"nofollow\">https://maps.app.goo.gl/RxtQ4bCjcWsMYhNK7</a></p>\n<p><strong>参加費</strong></p>\n<ul>\n<li>セミナー：無料</li>\n<li>交流会：3,000円（軽食・ドリンク付き）</li>\n</ul>\n<p>※交流会への参加は任意です。</p>\n<p><strong>主催</strong></p>\n<p>SKV × UooD</p>\n<h1>⚠️ 注意事項</h1>\n<ul>\n<li>イベント内容・タイムテーブルは変更となる場合があります</li>\n<li>営業・勧誘のみを目的とした参加はご遠慮ください</li>\n<li>宗教・ネットワークビジネス等への勧誘は禁止します</li>\n<li>当日の様子を撮影し、イベントレポート等に使用する場合があります</li>\n<li>キャンセルされる場合はconnpass上でキャンセルをお願いしま</li>\n</ul>",
       "url": "https://engineer-shift.connpass.com/event/407165/",
       "image_url": "https://media.connpass.com/thumbs/fa/92/fa92c20c41ac4ca59ca9bdc8f6cb38a3.png",
       "hash_tag": "AI",
@@ -414,23 +414,23 @@
       "published_at": "2026-09-16T18:56:48+09:00",
       "limit": 100,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 18140,
         "subdomain": "engineer-shift",
         "title": "ENGINEER SHIFT",
         "url": "https://engineer-shift.connpass.com/"
       },
-      "address": "東京都千代田区神田佐久間町2-15",
+      "address": "東京都千代田区神田佐久間町2-15-3",
       "place": "ふれあい貸し会議室　秋葉原No53",
-      "lat": "35.698229100000",
-      "lon": "139.776230700000",
+      "lat": "35.697428300000",
+      "lon": "139.776008600000",
       "owner_id": 1050768,
       "owner_nickname": "Nakamura777___",
       "owner_display_name": "Yuta_Nakamura",
-      "accepted": 27,
+      "accepted": 26,
       "waiting": 0,
-      "updated_at": "2026-10-09T14:29:34+09:00"
+      "updated_at": "2026-10-10T13:13:22+09:00"
     },
     {
       "id": 406239,
@@ -476,7 +476,7 @@
       "published_at": "2026-09-21T22:54:31+09:00",
       "limit": 18,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15149,
         "subdomain": "tinygo-keeb",
@@ -491,7 +491,7 @@
       "owner_nickname": "ysaito",
       "owner_display_name": "ysaito",
       "accepted": 18,
-      "waiting": 18,
+      "waiting": 16,
       "updated_at": "2026-10-10T11:34:19+09:00"
     },
     {
@@ -557,6 +557,37 @@
       "updated_at": "2026-09-30T17:52:09+09:00"
     },
     {
+      "id": 401931,
+      "title": "TinyGo Conference 2026 in JAPAN",
+      "catch": "共催 Gophers Japan",
+      "description": "<h2>お知らせ</h2>\n<p>2026/10/05<br>\nCode of Conduct とアンチハラスメントポリシーを追記しました。  </p>\n<p>2026/10/03<br>\n「飲食・ゴミ等に関するルールとお願い」を記載しました。</p>\n<p>2026/09/28<br>\n参加枠を増枠しました。</p>\n<p>2026/09/22<br>\nワークショップの情報を追加しました。</p>\n<p>2026/08/31<br>\n出展者枠は運営側で指定する枠です。  </p>\n<hr>\n<p>昨年の TinyGo Conference 2025 in JAPAN に続き、今年も開催します。<br>\n日本で開催されるTinyGo Conference 2026にぜひご参加ください！<br>\nこのイベントでは、魅力的な講演、ワークショップ、そしてネットワーキングの機会を通して、TinyGoの世界への刺激的な洞察をご提供いたします。  </p>\n<p>日時：<font color=\"red\">2026年10月10日</font><br>\n開催地：<a href=\"https://goo.gl/maps/8PoisM8qGuurhVpz5\" rel=\"nofollow\">AP 秋葉原 (東京都台東区秋葉原1-1)</a>   4F Room-I・J・K・L</p>\n<p>フロアマップなどの諸情報は以下を参照してください。</p>\n<p><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">https://conf.tinygo-keeb.org/2026/</a></p>\n<h2>主な特徴</h2>\n\n\n<ul>\n<li>ハンズオンワークショップ：あらゆるスキルレベルに対応</li>\n<li>ネットワーキングの機会：他の開発者との交流とコラボレーション</li>\n</ul>\n\n\n<h2>タイムテーブル</h2>\n<p>最新の情報は以下を参照してください。</p>\n<p><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">https://conf.tinygo-keeb.org/2026/</a></p>\n<table>\n<thead>\n<tr>\n<th>開始</th>\n<th>終了</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>10:00</td>\n<td>10:30</td>\n<td>開場、受付</td>\n</tr>\n<tr>\n<td>10:30</td>\n<td>10:35</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>10:35</td>\n<td>10:50</td>\n<td>オープニングセッション</td>\n</tr>\n<tr>\n<td>11:30</td>\n<td>16:35</td>\n<td>セッション、 LT、ワークショップ、展示、ブース</td>\n</tr>\n<tr>\n<td>11:30</td>\n<td>11:50</td>\n<td>マルチコア時代の組み込み開発。mutexが破綻するとき。 / あーるどん(rdon-key)</td>\n</tr>\n<tr>\n<td>12:00</td>\n<td>12:20</td>\n<td>TinyGoで時計を作ったら、DNSからTLSまで調べることになった / hnw</td>\n</tr>\n<tr>\n<td>14:30</td>\n<td>14:40</td>\n<td>TinyGoから理解するHID / Rinrin</td>\n</tr>\n<tr>\n<td>14:40</td>\n<td>14:50</td>\n<td>TinyGoとGoをつなぐRPC / NoboNobo</td>\n</tr>\n<tr>\n<td>15:00</td>\n<td>15:20</td>\n<td>Big/Tiny GOTOOLCHAIN / sivchari</td>\n</tr>\n<tr>\n<td>15:30</td>\n<td>15:50</td>\n<td>TinyGoでオブザーバビリティ？OpenTelemetryはTinyGoで使えるのか / 山口能迪</td>\n</tr>\n<tr>\n<td>16:10</td>\n<td>16:15</td>\n<td>LT) ワークショップで作ったzero-kb02をCodexの物理UIにしてみた / Ibuki</td>\n</tr>\n<tr>\n<td>16:15</td>\n<td>16:20</td>\n<td>LT) zero-micro：Codex Microがzero-kb02にそっくりだったので作ったった / MakKi</td>\n</tr>\n<tr>\n<td>16:20</td>\n<td>16:25</td>\n<td>LT) なんか小さくてかわいいGoなやつ / Yasutaka Kato</td>\n</tr>\n<tr>\n<td>16:25</td>\n<td>16:30</td>\n<td>LT) Learning Go by Building Things / CONEJO / コネホ</td>\n</tr>\n<tr>\n<td>16:30</td>\n<td>16:35</td>\n<td>LT) 5分でチョットわかるTinyGoでGBA開発 / ixxxy</td>\n</tr>\n<tr>\n<td>16:45</td>\n<td>17:00</td>\n<td>クロージング</td>\n</tr>\n<tr>\n<td>17:00</td>\n<td>18:00</td>\n<td>撤収</td>\n</tr>\n</tbody>\n</table>\n<h2>ワークショップ</h2>\n<p>以下で申込を開始しました。\n本編とは別に参加申し込みが必要です。\n抽選日は 9/28 です。</p>\n<p>はんだ付けを伴うワークショップ x 2<br>\n<a href=\"https://tinygo-keeb.connpass.com/event/407479/\" rel=\"nofollow\">https://tinygo-keeb.connpass.com/event/407479/</a></p>\n<p>すいラボさんのマイゲーミングタグワークショップ<br>\n<a href=\"https://peatix.com/event/5177841\" rel=\"nofollow\">https://peatix.com/event/5177841</a></p>\n<h2>飲食・ゴミ等に関するルールとお願い</h2>\n<ul>\n<li><strong>会場内での食事は禁止です</strong><ul>\n<li>弁当・軽食・お菓子などの飲食はご遠慮ください（昼食は会場外をご利用ください）</li>\n</ul>\n</li>\n<li><strong>飲み物は「完全密閉できる蓋付き」のみOK</strong><ul>\n<li>ペットボトルや水筒など、密閉できるものに限ります</li>\n<li>カフェのテイクアウトカップ、缶、紙コップ等の持ち込み・使用はご遠慮ください</li>\n<li>各フロアに自販機があります</li>\n</ul>\n</li>\n<li><strong>ゴミは各自必ずお持ち帰りください</strong><ul>\n<li>会場内・フロアのゴミ箱には捨てず、お持ち帰りにご協力をお願いします</li>\n</ul>\n</li>\n<li><strong>廊下・共有部での会話はお控えください</strong><ul>\n<li>他の施設利用者へのご配慮をお願いいたします</li>\n</ul>\n</li>\n</ul>\n<p>※フリーWi-Fiの案内はドアに掲示しています</p>\n<h2>More Information</h2>\n<p>イベントの詳細は以下に記載していく予定です。\n今後も増えていく予定なので <a href=\"https://x.com/tinygo_keeb\" rel=\"nofollow\">X:tinygo_keeb</a> をフォローして確認お願いします。</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">TinyGo Conference 2026 in JAPAN オフィシャルページ &gt; ブログ</a></li>\n</ul>\n<p>去年の様子は以下から確認することができます。</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2025/\" rel=\"nofollow\">TinyGo Conference 2025 in JAPAN オフィシャルページ &gt; ブログ</a></li>\n<li><a href=\"https://tinygo-keeb.org/blog/?p=102\" rel=\"nofollow\">TinyGo Conference 2025 in JAPAN を開催しました</a></li>\n<li><a href=\"https://tinygo-keeb.org/blog/?cat=4\" rel=\"nofollow\">TinyGo Conference 2025 in JAPAN の記事一覧</a></li>\n</ul>\n<p>すべての参加者が安心して交流できるよう、私たちは Go コミュニティの行動規範を遵守しています。</p>\n<ul>\n<li><a href=\"https://go.dev/conduct\" rel=\"nofollow\">行動規範（Code of Conduct)</a></li>\n</ul>\n<p>ハラスメント行為は一切容認しません。</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2026/policy/anti-harassment.html\" rel=\"nofollow\">アンチハラスメントポリシー </a></li>\n</ul>\n<hr>\n<p>Following last year's TinyGo Conference 2025 in JAPAN, we are excited to hold the event again this year.\nCome join us at TinyGo Conference 2026, held in Japan!\nThis event offers exciting insights into the world of TinyGo through engaging talks, hands-on workshops, and networking opportunities.</p>\n<p><strong>Date:</strong> <font color=\"red\">October 10, 2026</font><br>\n<strong>Venue:</strong> <a href=\"https://goo.gl/maps/8PoisM8qGuurhVpz5\" rel=\"nofollow\">AP Akihabara (1-1 Akihabara, Taito-ku, Tokyo)</a>   4F Room-I・J・K・L</p>\n<p>Please refer to the following link for floor maps and other information.</p>\n<p><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">https://conf.tinygo-keeb.org/2026/</a></p>\n<h2>Highlights</h2>\n\n<ul>\n<li><strong>Hands-on workshops:</strong> Suitable for all skill levels</li>\n<li><strong>Networking opportunities:</strong> Meet and collaborate with fellow developers</li>\n</ul>\n\n\n<h2>Tentative Schedule</h2>\n<p>Please refer to the following for the latest information.</p>\n<p><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">https://conf.tinygo-keeb.org/2026/</a></p>\n<table>\n<thead>\n<tr>\n<th>Start</th>\n<th>End</th>\n<th>Content</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>10:00</td>\n<td>10:30</td>\n<td>Doors Open &amp; Reception</td>\n</tr>\n<tr>\n<td>10:30</td>\n<td>10:35</td>\n<td>Opening Remarks</td>\n</tr>\n<tr>\n<td>10:35</td>\n<td>11:15</td>\n<td>Opening Session</td>\n</tr>\n<tr>\n<td>11:30</td>\n<td>16:35</td>\n<td>Sessions, Lightning Talks, Workshops, Exhibitions &amp; Booths</td>\n</tr>\n<tr>\n<td>11:30</td>\n<td>11:50</td>\n<td>Embedded Development in the Multi-Core Era: When Mutex Breaks Down / rdon-key</td>\n</tr>\n<tr>\n<td>12:00</td>\n<td>12:20</td>\n<td>Building a Clock with TinyGo Led Me Down the Rabbit Hole from DNS to TLS / hnw</td>\n</tr>\n<tr>\n<td>14:30</td>\n<td>14:40</td>\n<td>Understanding HID through TinyGo / Rinrin</td>\n</tr>\n<tr>\n<td>14:40</td>\n<td>14:50</td>\n<td>Connecting TinyGo and Go with RPC / NoboNobo</td>\n</tr>\n<tr>\n<td>15:00</td>\n<td>15:20</td>\n<td>Big/Tiny GOTOOLCHAIN / sivchari</td>\n</tr>\n<tr>\n<td>15:30</td>\n<td>15:50</td>\n<td>Observability with TinyGo? Can We Use OpenTelemetry with TinyGo? / Yoshiki Yamaguchi</td>\n</tr>\n<tr>\n<td>16:10</td>\n<td>16:15</td>\n<td>[LT] Turning the zero-kb02 from the Workshop into a Physical UI for Codex / Ibuki</td>\n</tr>\n<tr>\n<td>16:15</td>\n<td>16:20</td>\n<td>[LT] zero-micro: Built It Because Codex Micro Looked Just Like zero-kb02 / MakKi</td>\n</tr>\n<tr>\n<td>16:20</td>\n<td>16:25</td>\n<td>[LT] Something Small, Cute, and Go / Yasutaka Kato</td>\n</tr>\n<tr>\n<td>16:25</td>\n<td>16:30</td>\n<td>[LT] Learning Go by Building Things / CONEJO</td>\n</tr>\n<tr>\n<td>16:30</td>\n<td>16:35</td>\n<td>[LT] GBA Development with TinyGo in 5 Minutes / ixxxy</td>\n</tr>\n<tr>\n<td>16:35</td>\n<td>16:45</td>\n<td>Closing Remarks</td>\n</tr>\n<tr>\n<td>16:30</td>\n<td>18:00</td>\n<td>Cleanup &amp; Teardown</td>\n</tr>\n</tbody>\n</table>\n<h2>Workshops</h2>\n<p>Registration is now open for the following workshops.\nPlease note that these require a separate application from the main event registration.\nThe lottery will be held on September 28th.</p>\n<p>Soldering Workshop x 2<br>\n<a href=\"https://tinygo-keeb.connpass.com/event/407479/\" rel=\"nofollow\">https://tinygo-keeb.connpass.com/event/407479/</a></p>\n<p>Sui-Labo's \"My Gaming Tag\" Workshop<br>\n<a href=\"https://peatix.com/event/5177841\" rel=\"nofollow\">https://peatix.com/event/5177841</a></p>\n<h2>Guidelines on Food, Drinks &amp; Trash</h2>\n<ul>\n<li><strong>No eating inside the venue</strong><ul>\n<li>Please refrain from eating box lunches (bento), snacks, or light meals. (Please have lunch outside the venue.)</li>\n</ul>\n</li>\n<li><strong>Only drinks in resealable, spill-proof containers are permitted</strong><ul>\n<li>Only containers with a tight, spill-proof lid (e.g., plastic bottles, thermal flasks, water bottles) are allowed.</li>\n<li>Please do not bring or drink from cafe takeout cups, aluminum cans, or open paper cups.</li>\n<li>Vending machines are available on each floor.</li>\n</ul>\n</li>\n<li><strong>Take all trash home with you</strong><ul>\n<li>Please do not use the trash bins at the venue or on the floor; take all of your trash with you when you leave.</li>\n</ul>\n</li>\n<li><strong>Keep hallways and common areas quiet</strong><ul>\n<li>Please be considerate of other building occupants and avoid chatting in the corridors.</li>\n</ul>\n</li>\n</ul>\n<p>Free Wi-Fi information is posted on the doors.</p>\n<h2>More Information</h2>\n<p>Event details will be posted at the link below.\nMore content will be added over time, so please follow <a href=\"https://x.com/tinygo_keeb\" rel=\"nofollow\">X: tinygo_keeb</a> for updates.</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">TinyGo Conference 2026 in JAPAN Official Page &gt; Blog</a></li>\n</ul>\n<p>You can see what last year's event was like here:</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2025/\" rel=\"nofollow\">TinyGo Conference 2025 in JAPAN Official Page &gt; Blog</a></li>\n<li><a href=\"https://tinygo-keeb.org/blog/?p=102\" rel=\"nofollow\">We held TinyGo Conference 2025 in JAPAN (event report)</a></li>\n<li><a href=\"https://tinygo-keeb.org/blog/?cat=4\" rel=\"nofollow\">All articles about TinyGo Conference 2025 in JAPAN</a></li>\n</ul>\n<p>To ensure a welcoming and inclusive environment for everyone, we follow the Go Community Code of Conduct.</p>\n<ul>\n<li><a href=\"https://go.dev/conduct\" rel=\"nofollow\">Go Community Code of Conduct</a></li>\n</ul>\n<p>Harassment of any kind will not be tolerated.</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2026/policy/anti-harassment.html\" rel=\"nofollow\">TinyGo-Keeb 2026 Anti-Harassment Policy</a></li>\n</ul>",
+      "url": "https://tinygo-keeb.connpass.com/event/401931/",
+      "image_url": "https://media.connpass.com/thumbs/98/70/98708577fd1e67cd3e06506828a5f5c1.png",
+      "hash_tag": "tinygo_conf",
+      "started_at": "2026-10-10T10:00:00+09:00",
+      "ended_at": "2026-10-10T17:30:00+09:00",
+      "published_at": "2026-09-01T12:50:35+09:00",
+      "limit": 96,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 15149,
+        "subdomain": "tinygo-keeb",
+        "title": "TinyGo Keeb",
+        "url": "https://tinygo-keeb.connpass.com/"
+      },
+      "address": "〒110-0006 東京都台東区秋葉原1-1",
+      "place": "AP秋葉原",
+      "lat": "35.701770300000",
+      "lon": "139.775312000000",
+      "owner_id": 78018,
+      "owner_nickname": "mi-shirakawa",
+      "owner_display_name": "micchie (Michiru Shirakawa)",
+      "accepted": 94,
+      "waiting": 0,
+      "updated_at": "2026-10-10T12:03:59+09:00"
+    },
+    {
       "id": 403600,
       "title": "子育てエンジニアリングMeetup #1",
       "catch": "子育て中のエンジニアが、家族に気兼ねなく学び、交流できる場",
@@ -586,37 +617,6 @@
       "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-10-06T12:13:00+09:00"
-    },
-    {
-      "id": 401931,
-      "title": "TinyGo Conference 2026 in JAPAN",
-      "catch": "共催 Gophers Japan",
-      "description": "<h2>お知らせ</h2>\n<p>2026/10/05<br>\nCode of Conduct とアンチハラスメントポリシーを追記しました。  </p>\n<p>2026/10/03<br>\n「飲食・ゴミ等に関するルールとお願い」を記載しました。</p>\n<p>2026/09/28<br>\n参加枠を増枠しました。</p>\n<p>2026/09/22<br>\nワークショップの情報を追加しました。</p>\n<p>2026/08/31<br>\n出展者枠は運営側で指定する枠です。  </p>\n<hr>\n<p>昨年の TinyGo Conference 2025 in JAPAN に続き、今年も開催します。<br>\n日本で開催されるTinyGo Conference 2026にぜひご参加ください！<br>\nこのイベントでは、魅力的な講演、ワークショップ、そしてネットワーキングの機会を通して、TinyGoの世界への刺激的な洞察をご提供いたします。  </p>\n<p>日時：<font color=\"red\">2026年10月10日</font><br>\n開催地：<a href=\"https://goo.gl/maps/8PoisM8qGuurhVpz5\" rel=\"nofollow\">AP 秋葉原 (東京都台東区秋葉原1-1)</a>   4F Room-I・J・K・L</p>\n<p>フロアマップなどの諸情報は以下を参照してください。</p>\n<p><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">https://conf.tinygo-keeb.org/2026/</a></p>\n<h2>主な特徴</h2>\n\n\n<ul>\n<li>ハンズオンワークショップ：あらゆるスキルレベルに対応</li>\n<li>ネットワーキングの機会：他の開発者との交流とコラボレーション</li>\n</ul>\n\n\n<h2>タイムテーブル</h2>\n<p>最新の情報は以下を参照してください。</p>\n<p><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">https://conf.tinygo-keeb.org/2026/</a></p>\n<table>\n<thead>\n<tr>\n<th>開始</th>\n<th>終了</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>10:00</td>\n<td>10:30</td>\n<td>開場、受付</td>\n</tr>\n<tr>\n<td>10:30</td>\n<td>10:35</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>10:35</td>\n<td>10:50</td>\n<td>オープニングセッション</td>\n</tr>\n<tr>\n<td>11:30</td>\n<td>16:35</td>\n<td>セッション、 LT、ワークショップ、展示、ブース</td>\n</tr>\n<tr>\n<td>11:30</td>\n<td>11:50</td>\n<td>マルチコア時代の組み込み開発。mutexが破綻するとき。 / あーるどん(rdon-key)</td>\n</tr>\n<tr>\n<td>12:00</td>\n<td>12:20</td>\n<td>TinyGoで時計を作ったら、DNSからTLSまで調べることになった / hnw</td>\n</tr>\n<tr>\n<td>14:30</td>\n<td>14:40</td>\n<td>TinyGoから理解するHID / Rinrin</td>\n</tr>\n<tr>\n<td>14:40</td>\n<td>14:50</td>\n<td>TinyGoとGoをつなぐRPC / NoboNobo</td>\n</tr>\n<tr>\n<td>15:00</td>\n<td>15:20</td>\n<td>Big/Tiny GOTOOLCHAIN / sivchari</td>\n</tr>\n<tr>\n<td>15:30</td>\n<td>15:50</td>\n<td>TinyGoでオブザーバビリティ？OpenTelemetryはTinyGoで使えるのか / 山口能迪</td>\n</tr>\n<tr>\n<td>16:10</td>\n<td>16:15</td>\n<td>LT) ワークショップで作ったzero-kb02をCodexの物理UIにしてみた / Ibuki</td>\n</tr>\n<tr>\n<td>16:15</td>\n<td>16:20</td>\n<td>LT) zero-micro：Codex Microがzero-kb02にそっくりだったので作ったった / MakKi</td>\n</tr>\n<tr>\n<td>16:20</td>\n<td>16:25</td>\n<td>LT) なんか小さくてかわいいGoなやつ / Yasutaka Kato</td>\n</tr>\n<tr>\n<td>16:25</td>\n<td>16:30</td>\n<td>LT) Learning Go by Building Things / CONEJO / コネホ</td>\n</tr>\n<tr>\n<td>16:30</td>\n<td>16:35</td>\n<td>LT) 5分でチョットわかるTinyGoでGBA開発 / ixxxy</td>\n</tr>\n<tr>\n<td>16:45</td>\n<td>17:00</td>\n<td>クロージング</td>\n</tr>\n<tr>\n<td>17:00</td>\n<td>18:00</td>\n<td>撤収</td>\n</tr>\n</tbody>\n</table>\n<h2>ワークショップ</h2>\n<p>以下で申込を開始しました。\n本編とは別に参加申し込みが必要です。\n抽選日は 9/28 です。</p>\n<p>はんだ付けを伴うワークショップ x 2<br>\n<a href=\"https://tinygo-keeb.connpass.com/event/407479/\" rel=\"nofollow\">https://tinygo-keeb.connpass.com/event/407479/</a></p>\n<p>すいラボさんのマイゲーミングタグワークショップ<br>\n<a href=\"https://peatix.com/event/5177841\" rel=\"nofollow\">https://peatix.com/event/5177841</a></p>\n<h2>飲食・ゴミ等に関するルールとお願い</h2>\n<ul>\n<li><strong>会場内での食事は禁止です</strong><ul>\n<li>弁当・軽食・お菓子などの飲食はご遠慮ください（昼食は会場外をご利用ください）</li>\n</ul>\n</li>\n<li><strong>飲み物は「完全密閉できる蓋付き」のみOK</strong><ul>\n<li>ペットボトルや水筒など、密閉できるものに限ります</li>\n<li>カフェのテイクアウトカップ、缶、紙コップ等の持ち込み・使用はご遠慮ください</li>\n<li>各フロアに自販機があります</li>\n</ul>\n</li>\n<li><strong>ゴミは各自必ずお持ち帰りください</strong><ul>\n<li>会場内・フロアのゴミ箱には捨てず、お持ち帰りにご協力をお願いします</li>\n</ul>\n</li>\n<li><strong>廊下・共有部での会話はお控えください</strong><ul>\n<li>他の施設利用者へのご配慮をお願いいたします</li>\n</ul>\n</li>\n</ul>\n<p>※フリーWi-Fiの案内はドアに掲示しています</p>\n<h2>More Information</h2>\n<p>イベントの詳細は以下に記載していく予定です。\n今後も増えていく予定なので <a href=\"https://x.com/tinygo_keeb\" rel=\"nofollow\">X:tinygo_keeb</a> をフォローして確認お願いします。</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">TinyGo Conference 2026 in JAPAN オフィシャルページ &gt; ブログ</a></li>\n</ul>\n<p>去年の様子は以下から確認することができます。</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2025/\" rel=\"nofollow\">TinyGo Conference 2025 in JAPAN オフィシャルページ &gt; ブログ</a></li>\n<li><a href=\"https://tinygo-keeb.org/blog/?p=102\" rel=\"nofollow\">TinyGo Conference 2025 in JAPAN を開催しました</a></li>\n<li><a href=\"https://tinygo-keeb.org/blog/?cat=4\" rel=\"nofollow\">TinyGo Conference 2025 in JAPAN の記事一覧</a></li>\n</ul>\n<p>すべての参加者が安心して交流できるよう、私たちは Go コミュニティの行動規範を遵守しています。</p>\n<ul>\n<li><a href=\"https://go.dev/conduct\" rel=\"nofollow\">行動規範（Code of Conduct)</a></li>\n</ul>\n<p>ハラスメント行為は一切容認しません。</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2026/policy/anti-harassment.html\" rel=\"nofollow\">アンチハラスメントポリシー </a></li>\n</ul>\n<hr>\n<p>Following last year's TinyGo Conference 2025 in JAPAN, we are excited to hold the event again this year.\nCome join us at TinyGo Conference 2026, held in Japan!\nThis event offers exciting insights into the world of TinyGo through engaging talks, hands-on workshops, and networking opportunities.</p>\n<p><strong>Date:</strong> <font color=\"red\">October 10, 2026</font><br>\n<strong>Venue:</strong> <a href=\"https://goo.gl/maps/8PoisM8qGuurhVpz5\" rel=\"nofollow\">AP Akihabara (1-1 Akihabara, Taito-ku, Tokyo)</a>   4F Room-I・J・K・L</p>\n<p>Please refer to the following link for floor maps and other information.</p>\n<p><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">https://conf.tinygo-keeb.org/2026/</a></p>\n<h2>Highlights</h2>\n\n<ul>\n<li><strong>Hands-on workshops:</strong> Suitable for all skill levels</li>\n<li><strong>Networking opportunities:</strong> Meet and collaborate with fellow developers</li>\n</ul>\n\n\n<h2>Tentative Schedule</h2>\n<p>Please refer to the following for the latest information.</p>\n<p><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">https://conf.tinygo-keeb.org/2026/</a></p>\n<table>\n<thead>\n<tr>\n<th>Start</th>\n<th>End</th>\n<th>Content</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>10:00</td>\n<td>10:30</td>\n<td>Doors Open &amp; Reception</td>\n</tr>\n<tr>\n<td>10:30</td>\n<td>10:35</td>\n<td>Opening Remarks</td>\n</tr>\n<tr>\n<td>10:35</td>\n<td>11:15</td>\n<td>Opening Session</td>\n</tr>\n<tr>\n<td>11:30</td>\n<td>16:35</td>\n<td>Sessions, Lightning Talks, Workshops, Exhibitions &amp; Booths</td>\n</tr>\n<tr>\n<td>11:30</td>\n<td>11:50</td>\n<td>Embedded Development in the Multi-Core Era: When Mutex Breaks Down / rdon-key</td>\n</tr>\n<tr>\n<td>12:00</td>\n<td>12:20</td>\n<td>Building a Clock with TinyGo Led Me Down the Rabbit Hole from DNS to TLS / hnw</td>\n</tr>\n<tr>\n<td>14:30</td>\n<td>14:40</td>\n<td>Understanding HID through TinyGo / Rinrin</td>\n</tr>\n<tr>\n<td>14:40</td>\n<td>14:50</td>\n<td>Connecting TinyGo and Go with RPC / NoboNobo</td>\n</tr>\n<tr>\n<td>15:00</td>\n<td>15:20</td>\n<td>Big/Tiny GOTOOLCHAIN / sivchari</td>\n</tr>\n<tr>\n<td>15:30</td>\n<td>15:50</td>\n<td>Observability with TinyGo? Can We Use OpenTelemetry with TinyGo? / Yoshiki Yamaguchi</td>\n</tr>\n<tr>\n<td>16:10</td>\n<td>16:15</td>\n<td>[LT] Turning the zero-kb02 from the Workshop into a Physical UI for Codex / Ibuki</td>\n</tr>\n<tr>\n<td>16:15</td>\n<td>16:20</td>\n<td>[LT] zero-micro: Built It Because Codex Micro Looked Just Like zero-kb02 / MakKi</td>\n</tr>\n<tr>\n<td>16:20</td>\n<td>16:25</td>\n<td>[LT] Something Small, Cute, and Go / Yasutaka Kato</td>\n</tr>\n<tr>\n<td>16:25</td>\n<td>16:30</td>\n<td>[LT] Learning Go by Building Things / CONEJO</td>\n</tr>\n<tr>\n<td>16:30</td>\n<td>16:35</td>\n<td>[LT] GBA Development with TinyGo in 5 Minutes / ixxxy</td>\n</tr>\n<tr>\n<td>16:35</td>\n<td>16:45</td>\n<td>Closing Remarks</td>\n</tr>\n<tr>\n<td>16:30</td>\n<td>18:00</td>\n<td>Cleanup &amp; Teardown</td>\n</tr>\n</tbody>\n</table>\n<h2>Workshops</h2>\n<p>Registration is now open for the following workshops.\nPlease note that these require a separate application from the main event registration.\nThe lottery will be held on September 28th.</p>\n<p>Soldering Workshop x 2<br>\n<a href=\"https://tinygo-keeb.connpass.com/event/407479/\" rel=\"nofollow\">https://tinygo-keeb.connpass.com/event/407479/</a></p>\n<p>Sui-Labo's \"My Gaming Tag\" Workshop<br>\n<a href=\"https://peatix.com/event/5177841\" rel=\"nofollow\">https://peatix.com/event/5177841</a></p>\n<h2>Guidelines on Food, Drinks &amp; Trash</h2>\n<ul>\n<li><strong>No eating inside the venue</strong><ul>\n<li>Please refrain from eating box lunches (bento), snacks, or light meals. (Please have lunch outside the venue.)</li>\n</ul>\n</li>\n<li><strong>Only drinks in resealable, spill-proof containers are permitted</strong><ul>\n<li>Only containers with a tight, spill-proof lid (e.g., plastic bottles, thermal flasks, water bottles) are allowed.</li>\n<li>Please do not bring or drink from cafe takeout cups, aluminum cans, or open paper cups.</li>\n<li>Vending machines are available on each floor.</li>\n</ul>\n</li>\n<li><strong>Take all trash home with you</strong><ul>\n<li>Please do not use the trash bins at the venue or on the floor; take all of your trash with you when you leave.</li>\n</ul>\n</li>\n<li><strong>Keep hallways and common areas quiet</strong><ul>\n<li>Please be considerate of other building occupants and avoid chatting in the corridors.</li>\n</ul>\n</li>\n</ul>\n<p>Free Wi-Fi information is posted on the doors.</p>\n<h2>More Information</h2>\n<p>Event details will be posted at the link below.\nMore content will be added over time, so please follow <a href=\"https://x.com/tinygo_keeb\" rel=\"nofollow\">X: tinygo_keeb</a> for updates.</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2026/\" rel=\"nofollow\">TinyGo Conference 2026 in JAPAN Official Page &gt; Blog</a></li>\n</ul>\n<p>You can see what last year's event was like here:</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2025/\" rel=\"nofollow\">TinyGo Conference 2025 in JAPAN Official Page &gt; Blog</a></li>\n<li><a href=\"https://tinygo-keeb.org/blog/?p=102\" rel=\"nofollow\">We held TinyGo Conference 2025 in JAPAN (event report)</a></li>\n<li><a href=\"https://tinygo-keeb.org/blog/?cat=4\" rel=\"nofollow\">All articles about TinyGo Conference 2025 in JAPAN</a></li>\n</ul>\n<p>To ensure a welcoming and inclusive environment for everyone, we follow the Go Community Code of Conduct.</p>\n<ul>\n<li><a href=\"https://go.dev/conduct\" rel=\"nofollow\">Go Community Code of Conduct</a></li>\n</ul>\n<p>Harassment of any kind will not be tolerated.</p>\n<ul>\n<li><a href=\"https://conf.tinygo-keeb.org/2026/policy/anti-harassment.html\" rel=\"nofollow\">TinyGo-Keeb 2026 Anti-Harassment Policy</a></li>\n</ul>",
-      "url": "https://tinygo-keeb.connpass.com/event/401931/",
-      "image_url": "https://media.connpass.com/thumbs/98/70/98708577fd1e67cd3e06506828a5f5c1.png",
-      "hash_tag": "tinygo_conf",
-      "started_at": "2026-10-10T10:00:00+09:00",
-      "ended_at": "2026-10-10T17:30:00+09:00",
-      "published_at": "2026-09-01T12:50:35+09:00",
-      "limit": 96,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 15149,
-        "subdomain": "tinygo-keeb",
-        "title": "TinyGo Keeb",
-        "url": "https://tinygo-keeb.connpass.com/"
-      },
-      "address": "〒110-0006 東京都台東区秋葉原1-1",
-      "place": "AP秋葉原",
-      "lat": "35.701770300000",
-      "lon": "139.775312000000",
-      "owner_id": 78018,
-      "owner_nickname": "mi-shirakawa",
-      "owner_display_name": "micchie (Michiru Shirakawa)",
-      "accepted": 95,
-      "waiting": 0,
-      "updated_at": "2026-10-10T12:03:59+09:00"
     },
     {
       "id": 408779,
