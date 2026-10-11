@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-11T15:40:59.326950+09:00",
+  "fetched_at": "2026-10-11T22:40:53.954403+09:00",
   "date": "20261011",
   "count": 11,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-09-18T13:01:21+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -30,7 +30,7 @@
       "owner_id": 132797,
       "owner_nickname": "yangjiayi",
       "owner_display_name": "Jiayi Yang",
-      "accepted": 14,
+      "accepted": 16,
       "waiting": 0,
       "updated_at": "2026-09-18T13:01:21+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-09-25T15:52:32+09:00",
       "limit": 18,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16634,
         "subdomain": "kintech",
@@ -78,7 +78,7 @@
       "published_at": "2026-09-19T12:01:16+09:00",
       "limit": 25,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 18124,
         "subdomain": "melt",
@@ -109,7 +109,7 @@
       "published_at": "2026-10-09T15:36:04+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -171,7 +171,7 @@
       "published_at": "2026-10-03T16:01:36+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2959,
         "subdomain": "weeyble-creative",
@@ -202,7 +202,7 @@
       "published_at": "2026-07-25T20:01:05+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14958,
         "subdomain": "hono",
@@ -216,9 +216,9 @@
       "owner_id": 741170,
       "owner_nickname": "honchang",
       "owner_display_name": "honchang",
-      "accepted": 301,
+      "accepted": 302,
       "waiting": 0,
-      "updated_at": "2026-10-11T12:29:02+09:00"
+      "updated_at": "2026-10-11T16:16:47+09:00"
     },
     {
       "id": 386901,
@@ -233,7 +233,7 @@
       "published_at": "2026-03-07T00:01:30+09:00",
       "limit": 190,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3202,
         "subdomain": "mi68",
