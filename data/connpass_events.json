@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-12T07:36:43.511839+09:00",
+  "fetched_at": "2026-10-12T10:57:03.408689+09:00",
   "date": "20261012",
   "count": 3,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-08-22T12:00:56+09:00",
       "limit": 42,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -61,7 +61,7 @@
       "owner_id": 123017,
       "owner_nickname": "iwski",
       "owner_display_name": "岩崎",
-      "accepted": 31,
+      "accepted": 30,
       "waiting": 0,
       "updated_at": "2026-08-22T12:00:56+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-09-09T18:07:14+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17595,
         "subdomain": "tatamiworks",
@@ -92,7 +92,7 @@
       "owner_id": 774654,
       "owner_nickname": "tatami_works",
       "owner_display_name": "tatami_works",
-      "accepted": 8,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-09-09T18:07:14+09:00"
     }
