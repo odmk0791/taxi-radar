@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-17T16:22:43.509894+09:00",
+  "fetched_at": "2026-10-17T20:53:42.242267+09:00",
   "date": "20261017",
   "count": 22,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-10-16T19:42:09+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15467,
         "subdomain": "mokumokutamagawa",
@@ -30,7 +30,7 @@
       "owner_id": 377114,
       "owner_nickname": "iWonder118",
       "owner_display_name": "iWonder118",
-      "accepted": 1,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-10-16T19:42:09+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-08-20T13:12:06+09:00",
       "limit": 83,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 2186,
         "subdomain": "ospn",
@@ -109,7 +109,7 @@
       "published_at": "2026-08-28T00:01:13+09:00",
       "limit": 42,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13865,
         "subdomain": "kintone-cafe-tokyo",
@@ -140,7 +140,7 @@
       "published_at": "2026-09-05T22:09:17+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16879,
         "subdomain": "toshindai",
@@ -202,7 +202,7 @@
       "published_at": "2026-10-11T21:36:25+09:00",
       "limit": 150,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都渋谷区代々木神園町3-1",
       "place": "国立オリンピック記念青少年総合センター (センター棟)",
@@ -290,7 +290,7 @@
       "published_at": "2026-10-09T15:43:23+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2492,
         "subdomain": "qt-users",
@@ -309,37 +309,6 @@
       "updated_at": "2026-10-09T15:43:23+09:00"
     },
     {
-      "id": 408140,
-      "title": "AIで作って遊ぶLT交流会",
-      "catch": "みんなでワイワイAIを使って何が出来るか探っていく交流会です！",
-      "description": "<h1>AIで作って遊ぶLT交流会</h1>\n<p><strong>素人も玄人も一緒に作りましょう！</strong></p>\n<p>こんにちは！エンジニアサードプレイス【ORION】では、技術に関するイベントや勉強会を東京や大阪で開催しています。  </p>\n<p><a href=\"https://orionsalon.net/\" rel=\"nofollow\">https://orionsalon.net/</a>  </p>\n<p>今回は「AIで作って遊ぶ」をテーマに、LT交流会を開催します！🎉  </p>\n<p>AIを使えば、アプリやWebサイトはもちろん、画像、音楽、動画、資料など、さまざまなものを作って楽しめるようになりました。  </p>\n<p>このイベントでは、AIを使った制作が初めての方から、日頃からAIを使いこなしている方まで、参加者同士でアイデアを出し合いながら一緒に手を動かします。  </p>\n<p>グループワークで実際に作って遊び、その後のLTでは、作ったものや普段の取り組み、工夫、失敗談などを共有します。経験を問わず、AIでものづくりを楽しみたい方が一緒に試し、学び、交流できる会です。  </p>\n<p><strong>こんな方におすすめ</strong><br>\n・AIを使って何かを作ってみたい方<br>\n・AIを使ったものづくりを参加者と一緒に楽しみたい方<br>\n・自分の制作物やAI活用の工夫をLTで共有したい方<br>\n・ほかの人のAI活用事例や失敗談を聞いてみたい方  </p>\n<p><strong>【下記の条件を必ずお読みの上、ご参加ください🙇‍♀️】<br>\n※営業を目的とした方の参加はご遠慮ください<br>\n※飲食だけを目的とせずLT会や参加者との親睦も深める目的でのご参加をお願いします</strong>  </p>\n<h1>イベント概要</h1>\n<h3>日程</h3>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>開催日</td>\n<td>2026/10/17(土) 13:00-17:00</td>\n</tr>\n<tr>\n<td>開場・受付</td>\n<td>13:00〜13:30</td>\n</tr>\n<tr>\n<td>開催場所</td>\n<td>レバテック株式会社</td>\n</tr>\n<tr>\n<td>住所</td>\n<td>東京都渋谷区渋谷3丁目6-7 渋谷金王タワー17F</td>\n</tr>\n<tr>\n<td>参加費</td>\n<td>無料</td>\n</tr>\n<tr>\n<td>持ち物</td>\n<td>PCがあると捗ります。スマホのみでもOK！</td>\n</tr>\n<tr>\n<td>会場にあるもの</td>\n<td>懇親会で軽食(お食事・飲み物)をご提供します</td>\n</tr>\n</tbody>\n</table>\n<h3>タイムテーブル</h3>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00〜13:30</td>\n<td>受付時間</td>\n<td>-</td>\n</tr>\n<tr>\n<td>13:30〜13:40</td>\n<td>開催の挨拶、諸連絡</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>13:40〜14:40</td>\n<td>グループワーク</td>\n<td>-</td>\n</tr>\n<tr>\n<td>14:40〜14:50</td>\n<td>手順書から抜け落ちる“常識”を拾う技法について、AIと一緒に考えてみた</td>\n<td>Asadaさん</td>\n</tr>\n<tr>\n<td>14:50〜15:00</td>\n<td>AIでゲームを作った話</td>\n<td>てらじさん</td>\n</tr>\n<tr>\n<td>15:00〜15:10</td>\n<td>AIアバターで『デジタル孫』を作ってみた話</td>\n<td>クリスさん</td>\n</tr>\n<tr>\n<td>15:10〜15:30</td>\n<td>グループワーク簡易発表</td>\n<td>-</td>\n</tr>\n<tr>\n<td>15:30〜16:50</td>\n<td>交流会</td>\n<td>-</td>\n</tr>\n<tr>\n<td>16:50〜17:00</td>\n<td>写真撮影・締め</td>\n<td>-</td>\n</tr>\n<tr>\n<td>17:00〜</td>\n<td>解散</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルの内容は、当日までに変更となる可能性があります。  </p>\n<h1>グループワーク</h1>\n<p>AIの利用経験に合わせて、3つのテーブルに分かれて制作します。</p>\n<ul>\n<li><strong>はじめてテーブル</strong>：AIほとんど使ったことが無い人向け。運営がサポートして一緒に作業をしてみましょう。AIの有料プランを利用していない方も参加できます。</li>\n<li><strong>ちょっと経験者テーブル</strong>：運営の案内も参考にしながら、比較的自由に制作します。</li>\n<li><strong>ベテランテーブル</strong>：自由に制作し、作ったものや制作方法をほかの参加者にも共有します。</li>\n</ul>\n<p>制作中のアウトプットはDiscordで共有しながら、皆のアイデアや制作物を見ながら盛り上がりましょう。会場のモニターを使って突発紹介も可能ならやりたいです。</p>\n<h1>LT登壇者募集</h1>\n<p>今回のテーマは「AIで作って遊ぶ」です。  </p>\n<p>AIを使って作ったものや、作る過程で試したこと、工夫したことを10分間で共有してくださる方を募集します。  </p>\n<p><strong>LTテーマ例</strong><br>\n・AIを使ってアプリ、Webサイト、画像、音楽、動画、資料などを作ってみた話<br>\n・AIでものづくりをするときに使っているツールや工夫<br>\n・AIを使って遊んでみて、うまくいったこと・うまくいかなかったこと<br>\n・初心者として初めてAIでものづくりに挑戦した話  </p>\n<p>完成した制作物の紹介だけでなく、途中経過や試行錯誤、アイデア段階の内容も歓迎します。AIを使い始めたばかりの方も、普段から活用している方も、ぜひご応募ください。  </p>\n<p>登壇希望の方は、申込時に登壇枠でのご応募と、連絡先の入力をお願いします。 運営からご連絡させていただきますので、その後テーマのご連絡と、前日までに資料の共有をお願いいたします。</p>\n<h1>Discordコミュニティ</h1>\n<p>ORIONでは、Discordでも情報共有＆ディスカッションを行っています！<br>\nイベント情報の共有や技術雑談など、いつでも気軽に参加OK。  </p>\n<p><strong>Discordの招待リンクは<a href=\"https://discord.gg/GDtup2kPy8\" rel=\"nofollow\">こちら</a></strong>  </p>\n<h1>会場提供</h1>\n<p><a href=\"https://levtech.co.jp/aboutus/company/\" rel=\"nofollow\"><img src=\"https://orionsalon.net/wp-content/uploads/2026/08/levtech_freelance_cl.png\" alt=\"レバテック株式会社\" height=\"78\"></a>  </p>\n<p>本イベントの会場をご提供いただいています。  </p>\n<h1>コミュニティスポンサー</h1>\n<p>より良いイベントにするために、参加者の皆様に提供する飲食など、イベント運営をサポートしてくださっている企業の方々です。  </p>\n<p><a href=\"https://librus.co.jp/\" rel=\"nofollow\"><img src=\"https://orionsalon.net/wp-content/uploads/2026/01/42484-237-ef91b14ff2384e4bdbf468d858718efe-1330x346-1.webp\" alt=\"Librus\" height=\"78\"></a>  </p>\n<p><a href=\"https://axr.inc/\" rel=\"nofollow\">\n<img src=\"https://orionsalon.net/wp-content/uploads/2026/07/267213_0.jpg\" alt=\"AXR\" height=\"78\"><br>\n</a></p>\n<h1>過去のイベントの様子</h1>\n<p><img alt=\"過去のイベントの様子\" src=\"https://orionsalon.net/wp-content/uploads/2026/08/Codex-画像-2026年8月30日-04_01_04-scaled.png\"></p>\n<p>過去のイベントの様子は<a href=\"https://orionsalon.net/category/event/\" rel=\"nofollow\">こちら</a>。</p>\n<h1>主催者</h1>\n<h4><a href=\"https://x.com/polaristone_ceo\" rel=\"nofollow\">石井</a></h4>\n<p><img src=\"https://i.gyazo.com/e14609566275433f5f113bb5e833bbc6.png\" alt=\"Image from Gyazo\" width=\"180\"></p>\n<blockquote>\n<p>エンジニアサードプレイス 『ORION』 オーガナイザー<br>\n株式会社PolariStone 代表<br>\nコンサルファーム出身の元AIエンジニア  </p>\n</blockquote>\n<h1>運営メンバー</h1>\n<h4><a href=\"https://x.com/saitoo_3\" rel=\"nofollow\">さいとぅー</a></h4>\n<p><img src=\"https://i.gyazo.com/745b01cd0c5328b237e76e66fdc70a3e.png\" alt=\"Image from Gyazo\" width=\"180\"></p>\n<blockquote>\n<p>エンジニアコミュニティ『ORION』のコミュニティマネージャー<br>\n主に東京開催のイベント運営責任者をやっています。<br>\nオンラインコミュニティ『キャリア迷子』の運営も行っているので、<br>\nキャリアに悩んだ方は気軽に声を掛けてくださいね。  </p>\n</blockquote>\n<h4><a href=\"https://x.com/beconjuror\" rel=\"nofollow\">うめめ</a></h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1871940054635220992/RIDSJ8C4_200x200.jpg\" width=\"180\"></p>\n<blockquote>\n<p>ゆるふわプロダクトマネージャ  </p>\n</blockquote>\n<h4><a href=\"https://x.com/5fun_nekasete\" rel=\"nofollow\">須丸@うまうま</a></h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1952039850649251840/J12n-Dz6_200x200.jpg\" width=\"180\"></p>\n<blockquote>\n<p>うまいものがすきです</p>\n</blockquote>\n<h4><a href=\"https://x.com/bono_0329\" rel=\"nofollow\">ぼのぼの</a></h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1898362121467068416/Nwi_pWdO_200x200.jpg\" width=\"180\"></p>\n<blockquote>\n<p>独立系SIer▶️音楽系事業会社のクラウドエンジニア▶️データ分析・AIプロダクト事業会社のSRE。</p>\n</blockquote>\n<h1>キャンセルポリシー (必ずご確認ください)</h1>\n<p>・必ず<strong>ご自身の予定を確認してから</strong>お申込みください。<br>\n・体調不良以外での<strong>直前3日前〜当日</strong>のキャンセルはおやめください。<br>\n・何度もキャンセルされる方、一度でも無断欠席された方は<strong>今後の参加をお断りする</strong>場合があります。</p>\n<h1>注意事項（必ずご確認ください）</h1>\n<p>・上記のORIONの活動を妨げることや、他の参加者が不快に感じる行為を禁止します。<br>\n・ハラスメント行為や強引な勧誘行為（スポンサー企業以外の勧誘行為を含む）など、気になることがございましたらイベント主催までお知らせください。<br>\n・主催者の判断により、該当者には退室勧告や次回以降の参加拒否などの対応を取らせていただきます。<br>\n・会場内では、運営が写真や動画を撮影する場合がございます。撮影した画像や映像は技術ブログやSNS等の社外発信で利用させていただく場合がございます。<br>\n・イベントスタッフは、このイベントに関わる全員が気持ちよく過ごせるように考えています。参加者の皆さまも、ほかの方を不快にさせるような発言・行動は謹んでいただくようご了承のほどお願いいたします。またそのような行動を目にした方は、お近くのスタッフに声をかけていただくか、connpassの「イベントへのお問い合わせ」フォームからお知らせください。<br>\n・講演の録画および録音は禁止しております。録画した動画、音声などを無断で公開した場合、著作権の侵害となる恐れがあります。<br>\n・ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。<br>\n・当勉強会は<strong>「ITエンジニアの皆様にとって学びとなるような」</strong>セッション内容に興味のある方の参加をお願いしております。飲食のみ、勧誘、営業(製品や会社説明)などを目的とした参加はご遠慮ください。なお、運営者が該当すると判断した方が見受けられた場合は、お帰りいただく場合がございますのでご了承ください。<br>\n・悪天候等により、運営事務局の判断にてイベントを中止する場合があります。<br>\n・運営の状況によりスケジュール、内容は変更となる場合があります。<br>\n・性別や年齢、職業、宗教、社会的出自、人種、民族、国籍、身体的特徴、<br>\n　セクシュアリティなどの属性、あるいは広く人格に関する言動などによって、<br>\n　相手に不快感や不利益を与え、その尊厳を傷つけることや政治活動などを禁止します。  </p>\n<h1>免責事項</h1>\n<p>・本イベントにおいて発生した一切の事故や怪我・病気などの責任を負いかねますことをあらかじめご了承ください。<br>\n・貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。<br>\n・本イベントから得られた情報により、何らかの損害を負った場合であっても、発表者並びに主催者は一切の責任を負いません。予めご了承ください。  </p>\n<h1>個人情報のお取り扱いについて</h1>\n<p><strong>主催：株式会社PolariStone</strong>  </p>\n<p>事前・事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いはプライバシーポリシーに従って取り扱います。 またイベント受付管理や各種ご案内（サービス・イベント・採用等）に利用させていただく場合があります。 ご同意の上、ご参加ください。  </p>\n<p>株式会社PolariStone プライバシーポリシー：<a href=\"https://polaristone.net/contact/\" rel=\"nofollow\">https://polaristone.net/contact/</a></p>",
-      "url": "https://orion.connpass.com/event/408140/",
-      "image_url": "https://media.connpass.com/thumbs/3d/a8/3da87f2537fb160125e28bbb8f31d67c.png",
-      "hash_tag": "ORION東京",
-      "started_at": "2026-10-17T13:00:00+09:00",
-      "ended_at": "2026-10-17T17:00:00+09:00",
-      "published_at": "2026-09-29T07:46:43+09:00",
-      "limit": 33,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 16028,
-        "subdomain": "orion",
-        "title": "エンジニアコミュニティ【ORION】",
-        "url": "https://orion.connpass.com/"
-      },
-      "address": "東京都渋谷区渋谷3丁目6-7(渋谷金王タワー17F)",
-      "place": "レバテック株式会社",
-      "lat": "35.657959400000",
-      "lon": "139.705890100000",
-      "owner_id": 934068,
-      "owner_nickname": "saitoo_penguin",
-      "owner_display_name": "saitoo_penguin",
-      "accepted": 27,
-      "waiting": 0,
-      "updated_at": "2026-10-17T05:46:55+09:00"
-    },
-    {
       "id": 408754,
       "title": "jus共催 第77回たぶんデバイスシェル芸勉強会",
       "catch": "準備できなかったら地獄のパズル系シェル芸勉強会で",
@@ -352,7 +321,7 @@
       "published_at": "2026-10-03T06:53:02+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14667,
         "subdomain": "shellgei",
@@ -371,6 +340,37 @@
       "updated_at": "2026-10-03T06:53:02+09:00"
     },
     {
+      "id": 408140,
+      "title": "AIで作って遊ぶLT交流会",
+      "catch": "みんなでワイワイAIを使って何が出来るか探っていく交流会です！",
+      "description": "<h1>AIで作って遊ぶLT交流会</h1>\n<p><strong>素人も玄人も一緒に作りましょう！</strong></p>\n<p>こんにちは！エンジニアサードプレイス【ORION】では、技術に関するイベントや勉強会を東京や大阪で開催しています。  </p>\n<p><a href=\"https://orionsalon.net/\" rel=\"nofollow\">https://orionsalon.net/</a>  </p>\n<p>今回は「AIで作って遊ぶ」をテーマに、LT交流会を開催します！🎉  </p>\n<p>AIを使えば、アプリやWebサイトはもちろん、画像、音楽、動画、資料など、さまざまなものを作って楽しめるようになりました。  </p>\n<p>このイベントでは、AIを使った制作が初めての方から、日頃からAIを使いこなしている方まで、参加者同士でアイデアを出し合いながら一緒に手を動かします。  </p>\n<p>グループワークで実際に作って遊び、その後のLTでは、作ったものや普段の取り組み、工夫、失敗談などを共有します。経験を問わず、AIでものづくりを楽しみたい方が一緒に試し、学び、交流できる会です。  </p>\n<p><strong>こんな方におすすめ</strong><br>\n・AIを使って何かを作ってみたい方<br>\n・AIを使ったものづくりを参加者と一緒に楽しみたい方<br>\n・自分の制作物やAI活用の工夫をLTで共有したい方<br>\n・ほかの人のAI活用事例や失敗談を聞いてみたい方  </p>\n<p><strong>【下記の条件を必ずお読みの上、ご参加ください🙇‍♀️】<br>\n※営業を目的とした方の参加はご遠慮ください<br>\n※飲食だけを目的とせずLT会や参加者との親睦も深める目的でのご参加をお願いします</strong>  </p>\n<h1>イベント概要</h1>\n<h3>日程</h3>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>開催日</td>\n<td>2026/10/17(土) 13:00-17:00</td>\n</tr>\n<tr>\n<td>開場・受付</td>\n<td>13:00〜13:30</td>\n</tr>\n<tr>\n<td>開催場所</td>\n<td>レバテック株式会社</td>\n</tr>\n<tr>\n<td>住所</td>\n<td>東京都渋谷区渋谷3丁目6-7 渋谷金王タワー17F</td>\n</tr>\n<tr>\n<td>参加費</td>\n<td>無料</td>\n</tr>\n<tr>\n<td>持ち物</td>\n<td>PCがあると捗ります。スマホのみでもOK！</td>\n</tr>\n<tr>\n<td>会場にあるもの</td>\n<td>懇親会で軽食(お食事・飲み物)をご提供します</td>\n</tr>\n</tbody>\n</table>\n<h3>タイムテーブル</h3>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00〜13:30</td>\n<td>受付時間</td>\n<td>-</td>\n</tr>\n<tr>\n<td>13:30〜13:40</td>\n<td>開催の挨拶、諸連絡</td>\n<td>運営</td>\n</tr>\n<tr>\n<td>13:40〜14:40</td>\n<td>グループワーク</td>\n<td>-</td>\n</tr>\n<tr>\n<td>14:40〜14:50</td>\n<td>手順書から抜け落ちる“常識”を拾う技法について、AIと一緒に考えてみた</td>\n<td>Asadaさん</td>\n</tr>\n<tr>\n<td>14:50〜15:00</td>\n<td>AIでゲームを作った話</td>\n<td>てらじさん</td>\n</tr>\n<tr>\n<td>15:00〜15:10</td>\n<td>AIアバターで『デジタル孫』を作ってみた話</td>\n<td>クリスさん</td>\n</tr>\n<tr>\n<td>15:10〜15:30</td>\n<td>グループワーク簡易発表</td>\n<td>-</td>\n</tr>\n<tr>\n<td>15:30〜16:50</td>\n<td>交流会</td>\n<td>-</td>\n</tr>\n<tr>\n<td>16:50〜17:00</td>\n<td>写真撮影・締め</td>\n<td>-</td>\n</tr>\n<tr>\n<td>17:00〜</td>\n<td>解散</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルの内容は、当日までに変更となる可能性があります。  </p>\n<h1>グループワーク</h1>\n<p>AIの利用経験に合わせて、3つのテーブルに分かれて制作します。</p>\n<ul>\n<li><strong>はじめてテーブル</strong>：AIほとんど使ったことが無い人向け。運営がサポートして一緒に作業をしてみましょう。AIの有料プランを利用していない方も参加できます。</li>\n<li><strong>ちょっと経験者テーブル</strong>：運営の案内も参考にしながら、比較的自由に制作します。</li>\n<li><strong>ベテランテーブル</strong>：自由に制作し、作ったものや制作方法をほかの参加者にも共有します。</li>\n</ul>\n<p>制作中のアウトプットはDiscordで共有しながら、皆のアイデアや制作物を見ながら盛り上がりましょう。会場のモニターを使って突発紹介も可能ならやりたいです。</p>\n<h1>LT登壇者募集</h1>\n<p>今回のテーマは「AIで作って遊ぶ」です。  </p>\n<p>AIを使って作ったものや、作る過程で試したこと、工夫したことを10分間で共有してくださる方を募集します。  </p>\n<p><strong>LTテーマ例</strong><br>\n・AIを使ってアプリ、Webサイト、画像、音楽、動画、資料などを作ってみた話<br>\n・AIでものづくりをするときに使っているツールや工夫<br>\n・AIを使って遊んでみて、うまくいったこと・うまくいかなかったこと<br>\n・初心者として初めてAIでものづくりに挑戦した話  </p>\n<p>完成した制作物の紹介だけでなく、途中経過や試行錯誤、アイデア段階の内容も歓迎します。AIを使い始めたばかりの方も、普段から活用している方も、ぜひご応募ください。  </p>\n<p>登壇希望の方は、申込時に登壇枠でのご応募と、連絡先の入力をお願いします。 運営からご連絡させていただきますので、その後テーマのご連絡と、前日までに資料の共有をお願いいたします。</p>\n<h1>Discordコミュニティ</h1>\n<p>ORIONでは、Discordでも情報共有＆ディスカッションを行っています！<br>\nイベント情報の共有や技術雑談など、いつでも気軽に参加OK。  </p>\n<p><strong>Discordの招待リンクは<a href=\"https://discord.gg/GDtup2kPy8\" rel=\"nofollow\">こちら</a></strong>  </p>\n<h1>会場提供</h1>\n<p><a href=\"https://levtech.co.jp/aboutus/company/\" rel=\"nofollow\"><img src=\"https://orionsalon.net/wp-content/uploads/2026/08/levtech_freelance_cl.png\" alt=\"レバテック株式会社\" height=\"78\"></a>  </p>\n<p>本イベントの会場をご提供いただいています。  </p>\n<h1>コミュニティスポンサー</h1>\n<p>より良いイベントにするために、参加者の皆様に提供する飲食など、イベント運営をサポートしてくださっている企業の方々です。  </p>\n<p><a href=\"https://librus.co.jp/\" rel=\"nofollow\"><img src=\"https://orionsalon.net/wp-content/uploads/2026/01/42484-237-ef91b14ff2384e4bdbf468d858718efe-1330x346-1.webp\" alt=\"Librus\" height=\"78\"></a>  </p>\n<p><a href=\"https://axr.inc/\" rel=\"nofollow\">\n<img src=\"https://orionsalon.net/wp-content/uploads/2026/07/267213_0.jpg\" alt=\"AXR\" height=\"78\"><br>\n</a></p>\n<h1>過去のイベントの様子</h1>\n<p><img alt=\"過去のイベントの様子\" src=\"https://orionsalon.net/wp-content/uploads/2026/08/Codex-画像-2026年8月30日-04_01_04-scaled.png\"></p>\n<p>過去のイベントの様子は<a href=\"https://orionsalon.net/category/event/\" rel=\"nofollow\">こちら</a>。</p>\n<h1>主催者</h1>\n<h4><a href=\"https://x.com/polaristone_ceo\" rel=\"nofollow\">石井</a></h4>\n<p><img src=\"https://i.gyazo.com/e14609566275433f5f113bb5e833bbc6.png\" alt=\"Image from Gyazo\" width=\"180\"></p>\n<blockquote>\n<p>エンジニアサードプレイス 『ORION』 オーガナイザー<br>\n株式会社PolariStone 代表<br>\nコンサルファーム出身の元AIエンジニア  </p>\n</blockquote>\n<h1>運営メンバー</h1>\n<h4><a href=\"https://x.com/saitoo_3\" rel=\"nofollow\">さいとぅー</a></h4>\n<p><img src=\"https://i.gyazo.com/745b01cd0c5328b237e76e66fdc70a3e.png\" alt=\"Image from Gyazo\" width=\"180\"></p>\n<blockquote>\n<p>エンジニアコミュニティ『ORION』のコミュニティマネージャー<br>\n主に東京開催のイベント運営責任者をやっています。<br>\nオンラインコミュニティ『キャリア迷子』の運営も行っているので、<br>\nキャリアに悩んだ方は気軽に声を掛けてくださいね。  </p>\n</blockquote>\n<h4><a href=\"https://x.com/beconjuror\" rel=\"nofollow\">うめめ</a></h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1871940054635220992/RIDSJ8C4_200x200.jpg\" width=\"180\"></p>\n<blockquote>\n<p>ゆるふわプロダクトマネージャ  </p>\n</blockquote>\n<h4><a href=\"https://x.com/5fun_nekasete\" rel=\"nofollow\">須丸@うまうま</a></h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1952039850649251840/J12n-Dz6_200x200.jpg\" width=\"180\"></p>\n<blockquote>\n<p>うまいものがすきです</p>\n</blockquote>\n<h4><a href=\"https://x.com/bono_0329\" rel=\"nofollow\">ぼのぼの</a></h4>\n<p><img src=\"https://pbs.twimg.com/profile_images/1898362121467068416/Nwi_pWdO_200x200.jpg\" width=\"180\"></p>\n<blockquote>\n<p>独立系SIer▶️音楽系事業会社のクラウドエンジニア▶️データ分析・AIプロダクト事業会社のSRE。</p>\n</blockquote>\n<h1>キャンセルポリシー (必ずご確認ください)</h1>\n<p>・必ず<strong>ご自身の予定を確認してから</strong>お申込みください。<br>\n・体調不良以外での<strong>直前3日前〜当日</strong>のキャンセルはおやめください。<br>\n・何度もキャンセルされる方、一度でも無断欠席された方は<strong>今後の参加をお断りする</strong>場合があります。</p>\n<h1>注意事項（必ずご確認ください）</h1>\n<p>・上記のORIONの活動を妨げることや、他の参加者が不快に感じる行為を禁止します。<br>\n・ハラスメント行為や強引な勧誘行為（スポンサー企業以外の勧誘行為を含む）など、気になることがございましたらイベント主催までお知らせください。<br>\n・主催者の判断により、該当者には退室勧告や次回以降の参加拒否などの対応を取らせていただきます。<br>\n・会場内では、運営が写真や動画を撮影する場合がございます。撮影した画像や映像は技術ブログやSNS等の社外発信で利用させていただく場合がございます。<br>\n・イベントスタッフは、このイベントに関わる全員が気持ちよく過ごせるように考えています。参加者の皆さまも、ほかの方を不快にさせるような発言・行動は謹んでいただくようご了承のほどお願いいたします。またそのような行動を目にした方は、お近くのスタッフに声をかけていただくか、connpassの「イベントへのお問い合わせ」フォームからお知らせください。<br>\n・講演の録画および録音は禁止しております。録画した動画、音声などを無断で公開した場合、著作権の侵害となる恐れがあります。<br>\n・ブログやSNS等で当イベントに関する発信を行う際は、公序良俗に反する内容のないよう、ご協力をお願いします。<br>\n・当勉強会は<strong>「ITエンジニアの皆様にとって学びとなるような」</strong>セッション内容に興味のある方の参加をお願いしております。飲食のみ、勧誘、営業(製品や会社説明)などを目的とした参加はご遠慮ください。なお、運営者が該当すると判断した方が見受けられた場合は、お帰りいただく場合がございますのでご了承ください。<br>\n・悪天候等により、運営事務局の判断にてイベントを中止する場合があります。<br>\n・運営の状況によりスケジュール、内容は変更となる場合があります。<br>\n・性別や年齢、職業、宗教、社会的出自、人種、民族、国籍、身体的特徴、<br>\n　セクシュアリティなどの属性、あるいは広く人格に関する言動などによって、<br>\n　相手に不快感や不利益を与え、その尊厳を傷つけることや政治活動などを禁止します。  </p>\n<h1>免責事項</h1>\n<p>・本イベントにおいて発生した一切の事故や怪我・病気などの責任を負いかねますことをあらかじめご了承ください。<br>\n・貴重品の管理は各自でお願いいたします。万一盗難・紛失等の事故が発生しても、主催者は一切責任を負えません。<br>\n・本イベントから得られた情報により、何らかの損害を負った場合であっても、発表者並びに主催者は一切の責任を負いません。予めご了承ください。  </p>\n<h1>個人情報のお取り扱いについて</h1>\n<p><strong>主催：株式会社PolariStone</strong>  </p>\n<p>事前・事後アンケート、その他、当イベントを通じて取得した個人情報等の取扱いはプライバシーポリシーに従って取り扱います。 またイベント受付管理や各種ご案内（サービス・イベント・採用等）に利用させていただく場合があります。 ご同意の上、ご参加ください。  </p>\n<p>株式会社PolariStone プライバシーポリシー：<a href=\"https://polaristone.net/contact/\" rel=\"nofollow\">https://polaristone.net/contact/</a></p>",
+      "url": "https://orion.connpass.com/event/408140/",
+      "image_url": "https://media.connpass.com/thumbs/3d/a8/3da87f2537fb160125e28bbb8f31d67c.png",
+      "hash_tag": "ORION東京",
+      "started_at": "2026-10-17T13:00:00+09:00",
+      "ended_at": "2026-10-17T17:00:00+09:00",
+      "published_at": "2026-09-29T07:46:43+09:00",
+      "limit": 33,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 16028,
+        "subdomain": "orion",
+        "title": "エンジニアコミュニティ【ORION】",
+        "url": "https://orion.connpass.com/"
+      },
+      "address": "東京都渋谷区渋谷3丁目6-7(渋谷金王タワー17F)",
+      "place": "レバテック株式会社",
+      "lat": "35.657959400000",
+      "lon": "139.705890100000",
+      "owner_id": 934068,
+      "owner_nickname": "saitoo_penguin",
+      "owner_display_name": "saitoo_penguin",
+      "accepted": 27,
+      "waiting": 0,
+      "updated_at": "2026-10-17T05:46:55+09:00"
+    },
+    {
       "id": 409507,
       "title": "[秋葉原] AI駆動開発 / LLM もくもく会 (初参加・初心者大歓迎！)",
       "catch": "",
@@ -383,7 +383,7 @@
       "published_at": "2026-10-10T13:45:40+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -414,7 +414,7 @@
       "published_at": "2026-09-13T18:37:26+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15767,
         "subdomain": "idobata-dev",
@@ -445,7 +445,7 @@
       "published_at": "2026-10-01T09:47:21+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16556,
         "subdomain": "stack-chan-mokumoku",
@@ -476,7 +476,7 @@
       "published_at": "2026-10-03T12:01:46+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -493,37 +493,6 @@
       "accepted": 33,
       "waiting": 0,
       "updated_at": "2026-10-03T19:27:00+09:00"
-    },
-    {
-      "id": 399105,
-      "title": "10/17 【展示/ステージ】オープンソースカンファレンス2026 Tokyo/Fall",
-      "catch": "浅草でオープンソースの文化祭！",
-      "description": "<h2>来場者アンケート</h2>\n<p>OSC東京ご参加のご感想やメッセージをお寄せください！<br>\n<a href=\"https://forms.gle/tsFZyfT8KNhgqDVU8\" rel=\"nofollow\">→アンケートの回答はこちらから←</a></p>\n<h1>ステージ企画（ライブ配信あり）</h1>\n<p>会場内特設ステージでは、以下のプレゼンテーションプログラムを開催します。（内容は変更になる可能性があります）<br>\nどうぞお立ち寄りください。\nステージ企画をYouTube Liveで配信します。会場の雰囲気もお届けする予定です。<br>\n<b>配信URL</b><br>\n<a href=\"https://www.youtube.com/live/LD9rUmkCoRU\" rel=\"nofollow\">https://www.youtube.com/live/LD9rUmkCoRU</a></p>\n<p><b>YouTubeチャンネルはこちら</b><br>\n<a href=\"https://www.youtube.com/c/OSPNjp\" rel=\"nofollow\">https://www.youtube.com/c/OSPNjp</a></p>\n<p>プログラム(変更になる可能性があります)<br></p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>テーマ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>11:00-12:00</td>\n<td>アウトプット大事だよね</td>\n</tr>\n<tr>\n<td>12:00-12:45</td>\n<td>\"世界で闘う エンジニア・アウトプット力を鍛える本\" 出版裏話 <a href=\"https://book.mynavi.jp/ec/products/detail/id=152427\" rel=\"nofollow\">https://book.mynavi.jp/ec/products/detail/id=152427</a></td>\n</tr>\n<tr>\n<td>13:00-13:45</td>\n<td>学生ライトニングトーク</td>\n</tr>\n<tr>\n<td>14:00-14:45</td>\n<td>「OSS鳥瞰図から読み取るOSSの現在地点と未来」（日本OSS推進フォーラム鳥瞰図WG/佐々木寛太）</td>\n</tr>\n<tr>\n<td>15:00-16:00</td>\n<td>ライトニングトーク</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>アウトプット大事だよね エントリー（発表順不同）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>エンジニアのセルフブランディングと技術情報発信の重要性（株式会社びぎねっと/宮原 徹）</td>\n</tr>\n<tr>\n<td>タイトル調整中（モウフカブール/ニャゴロウ陛下（小笠原種高））</td>\n</tr>\n<tr>\n<td>タイトル調整中（技術書同人誌博覧会/酒井 文也）</td>\n</tr>\n<tr>\n<td>タイトル調整中（小江戸らぐ）</td>\n</tr>\n<tr>\n<td>タイトル調整中（日本openSUSEユーザ会）</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>学生ライトニングトーク エントリー（発表順不同）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>OSC沖縄出展レポート（プリザンター Users Community/もちゃ）</td>\n</tr>\n<tr>\n<td>オープンソースのことをもっと知りたい！（静岡大学/大川 貴久）</td>\n</tr>\n<tr>\n<td>LinuxでアニメとBlu-rayを観たい（こーいち）</td>\n</tr>\n<tr>\n<td>CLI生活（shurto11）</td>\n</tr>\n<tr>\n<td>「作って学ぶTLS 1.3」を書いた（石田優希）</td>\n</tr>\n<tr>\n<td>リアル完全爆弾解除マニュアル（宋陽）</td>\n</tr>\n<tr>\n<td>独自OS「Shizuku」を強くした（石垣有逢）</td>\n</tr>\n<tr>\n<td>Scratchで猫改造！（なな）</td>\n</tr>\n<tr>\n<td>shumokuのご紹介（電気通信大学MMA/佐伯明俊）</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>ライトニングトーク エントリー（発表順不同）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>GitLab CI/CD本書いたんだけど大変だった話（スタイルズ/矢野）</td>\n</tr>\n<tr>\n<td>ゲームだけじゃない！ Unity・Godot製ツールの自動化を支えるGua（GuaProject/佐藤）</td>\n</tr>\n<tr>\n<td>Japan Wikimedia Conference 2026のご案内（Wikimedians of Japan User Group/村上）</td>\n</tr>\n<tr>\n<td>首都圏のマッパーを増やしたい！（OSM Japan/坂ノ下）</td>\n</tr>\n<tr>\n<td>ruby.wasmを23分の1にした話（5xRuby/竜堂）</td>\n</tr>\n<tr>\n<td>Proxmox本書いたんだけど大変だった話（みやはら とおる）</td>\n</tr>\n</tbody>\n</table>\n<h1>OSC2026 Tokyo/Fall (展示とステージ企画）開催のご案内</h1>\n<p>オープンソースカンファレンス2026 Tokyo/Fallは、現地開催でブース展示とステージ企画の開催です。<br>\n会場は、 浅草の東京都立産業貿易センター 台東館です。<br></p>\n<p>※セミナーは10/2-3開催の【<a href=\"https://event.ospn.jp/osc2026-online-fall/\" rel=\"nofollow\">OSCオンラインFall</a>】で行います。</p>\n<h2>開催概要</h2>\n<p><b>日時</b><br>\n10月17日(土) 10:00-16:00<br></p>\n<p><b>会場</b><br>\n 東京都立産業貿易センター 台東館 6F<br>\n<a href=\"https://www.sanbo.metro.tokyo.lg.jp/taito/access/\" rel=\"nofollow\">https://www.sanbo.metro.tokyo.lg.jp/taito/access/</a></p>\n<p><b>OSC2026 Tokyo/Fall 公式サイト</b><br>\n<a href=\"https://event.ospn.jp/osc2026-fall/\" rel=\"nofollow\">https://event.ospn.jp/osc2026-fall/</a></p>\n<p><b>開催形式</b><br>\nリアル会場での展示ブース、デモ、体験コーナー、ステージ企画</p>\n<h1>展示ブース一覧（各ブースの展示内容）</h1>\n<p><a href=\"https://event.ospn.jp/osc2026-fall/exhibit\" rel=\"nofollow\">https://event.ospn.jp/osc2026-fall/exhibit</a></p>\n<h1>展示ブースマップ (PDF)</h1>\n<p><a href=\"https://event.ospn.jp/files/booth_layout/26fall.pdf\" rel=\"nofollow\">https://event.ospn.jp/files/booth_layout/26fall.pdf</a></p>\n<h1>懇親会のご案内</h1>\n<p>当日イベント終了後に、懇親会を企画しました。<br>\nご参加は、以下のconnpassページからお申し込みが必要です。<br>\n（定員がありますのでお早めにお申し込みください）<br>\n<a href=\"https://ospn.connpass.com/event/403624/\" rel=\"nofollow\">https://ospn.connpass.com/event/403624/</a></p>\n<h1>属性アンケートご協力のお願い</h1>\n<p>connpassご登録時に、年代、職種、お住まいの地域、OSC参加歴、参加目的、参加コメントなど簡単なアンケートへのご入力をお願いしています。集計結果はイベント開催後にスポンサー、出展者にし提供するとともに、イベントの運営に役立てています。</p>\n<h1>スポンサーのオンラインちらしページ</h1>\n<p><a href=\"https://event.ospn.jp/osc2026-fall/article/flyers\" rel=\"nofollow\">https://event.ospn.jp/osc2026-fall/article/flyers</a></p>\n<h1>10/2(金)-3(土)はオンラインセミナー「OSC2026 オンライン/Fall」にご参加ください</h1>\n<p>セミナー聴講はZoomとYouTube Liveからご参加いただけます。お楽しみに！<br>\n<b>OSC2026 オンライン/Fall ウェブサイト</b><br>\n<a href=\"https://event.ospn.jp/osc2026-online-fall/\" rel=\"nofollow\">https://event.ospn.jp/osc2026-online-fall/</a></p>\n<p><b>参加登録(connpass)</b><br>\n<a href=\"https://ospn.connpass.com/event/399103/\" rel=\"nofollow\">https://ospn.connpass.com/event/399103/</a></p>\n<h1>感染予防対策について</h1>\n<ul>\n<li>マスク着用は任意です。（スタッフ、出展者のマスク着用も任意となっています）<br></li>\n<li>当日の体調がすぐれない方のご参加はご遠慮ください<br></li>\n</ul>",
-      "url": "https://ospn.connpass.com/event/399105/",
-      "image_url": "https://media.connpass.com/thumbs/6a/df/6adf677e3ccae1e30f64bde90ef2f8c5.png",
-      "hash_tag": "osc26tk",
-      "started_at": "2026-10-17T10:00:00+09:00",
-      "ended_at": "2026-10-17T16:00:00+09:00",
-      "published_at": "2026-08-12T17:24:03+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 2186,
-        "subdomain": "ospn",
-        "title": "OSPN(Open Source People Network)",
-        "url": "https://ospn.connpass.com/"
-      },
-      "address": "東京都台東区花川戸2-6-5(東京都立産業貿易センター)",
-      "place": "東京都立産業貿易センター台東館 6F",
-      "lat": "35.714399500000",
-      "lon": "139.798803400000",
-      "owner_id": 8653,
-      "owner_nickname": "tmiyahar",
-      "owner_display_name": "みやはらとおる",
-      "accepted": 280,
-      "waiting": 0,
-      "updated_at": "2026-10-17T12:18:07+09:00"
     },
     {
       "id": 405486,
@@ -555,6 +524,37 @@
       "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-10-17T14:18:02+09:00"
+    },
+    {
+      "id": 399105,
+      "title": "10/17 【展示/ステージ】オープンソースカンファレンス2026 Tokyo/Fall",
+      "catch": "浅草でオープンソースの文化祭！",
+      "description": "<h2>来場者アンケート</h2>\n<p>OSC東京ご参加のご感想やメッセージをお寄せください！<br>\n<a href=\"https://forms.gle/tsFZyfT8KNhgqDVU8\" rel=\"nofollow\">→アンケートの回答はこちらから←</a></p>\n<h1>ステージ企画（ライブ配信あり）</h1>\n<p>会場内特設ステージでは、以下のプレゼンテーションプログラムを開催します。（内容は変更になる可能性があります）<br>\nどうぞお立ち寄りください。\nステージ企画をYouTube Liveで配信します。会場の雰囲気もお届けする予定です。<br>\n<b>配信URL</b><br>\n<a href=\"https://www.youtube.com/live/LD9rUmkCoRU\" rel=\"nofollow\">https://www.youtube.com/live/LD9rUmkCoRU</a></p>\n<p><b>YouTubeチャンネルはこちら</b><br>\n<a href=\"https://www.youtube.com/c/OSPNjp\" rel=\"nofollow\">https://www.youtube.com/c/OSPNjp</a></p>\n<p>プログラム(変更になる可能性があります)<br></p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>テーマ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>11:00-12:00</td>\n<td>アウトプット大事だよね</td>\n</tr>\n<tr>\n<td>12:00-12:45</td>\n<td>\"世界で闘う エンジニア・アウトプット力を鍛える本\" 出版裏話 <a href=\"https://book.mynavi.jp/ec/products/detail/id=152427\" rel=\"nofollow\">https://book.mynavi.jp/ec/products/detail/id=152427</a></td>\n</tr>\n<tr>\n<td>13:00-13:45</td>\n<td>学生ライトニングトーク</td>\n</tr>\n<tr>\n<td>14:00-14:45</td>\n<td>「OSS鳥瞰図から読み取るOSSの現在地点と未来」（日本OSS推進フォーラム鳥瞰図WG/佐々木寛太）</td>\n</tr>\n<tr>\n<td>15:00-16:00</td>\n<td>ライトニングトーク</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>アウトプット大事だよね エントリー（発表順不同）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>エンジニアのセルフブランディングと技術情報発信の重要性（株式会社びぎねっと/宮原 徹）</td>\n</tr>\n<tr>\n<td>タイトル調整中（モウフカブール/ニャゴロウ陛下（小笠原種高））</td>\n</tr>\n<tr>\n<td>タイトル調整中（技術書同人誌博覧会/酒井 文也）</td>\n</tr>\n<tr>\n<td>タイトル調整中（小江戸らぐ）</td>\n</tr>\n<tr>\n<td>タイトル調整中（日本openSUSEユーザ会）</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>学生ライトニングトーク エントリー（発表順不同）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>OSC沖縄出展レポート（プリザンター Users Community/もちゃ）</td>\n</tr>\n<tr>\n<td>オープンソースのことをもっと知りたい！（静岡大学/大川 貴久）</td>\n</tr>\n<tr>\n<td>LinuxでアニメとBlu-rayを観たい（こーいち）</td>\n</tr>\n<tr>\n<td>CLI生活（shurto11）</td>\n</tr>\n<tr>\n<td>「作って学ぶTLS 1.3」を書いた（石田優希）</td>\n</tr>\n<tr>\n<td>リアル完全爆弾解除マニュアル（宋陽）</td>\n</tr>\n<tr>\n<td>独自OS「Shizuku」を強くした（石垣有逢）</td>\n</tr>\n<tr>\n<td>Scratchで猫改造！（なな）</td>\n</tr>\n<tr>\n<td>shumokuのご紹介（電気通信大学MMA/佐伯明俊）</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>ライトニングトーク エントリー（発表順不同）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>GitLab CI/CD本書いたんだけど大変だった話（スタイルズ/矢野）</td>\n</tr>\n<tr>\n<td>ゲームだけじゃない！ Unity・Godot製ツールの自動化を支えるGua（GuaProject/佐藤）</td>\n</tr>\n<tr>\n<td>Japan Wikimedia Conference 2026のご案内（Wikimedians of Japan User Group/村上）</td>\n</tr>\n<tr>\n<td>首都圏のマッパーを増やしたい！（OSM Japan/坂ノ下）</td>\n</tr>\n<tr>\n<td>ruby.wasmを23分の1にした話（5xRuby/竜堂）</td>\n</tr>\n<tr>\n<td>Proxmox本書いたんだけど大変だった話（みやはら とおる）</td>\n</tr>\n</tbody>\n</table>\n<h1>OSC2026 Tokyo/Fall (展示とステージ企画）開催のご案内</h1>\n<p>オープンソースカンファレンス2026 Tokyo/Fallは、現地開催でブース展示とステージ企画の開催です。<br>\n会場は、 浅草の東京都立産業貿易センター 台東館です。<br></p>\n<p>※セミナーは10/2-3開催の【<a href=\"https://event.ospn.jp/osc2026-online-fall/\" rel=\"nofollow\">OSCオンラインFall</a>】で行います。</p>\n<h2>開催概要</h2>\n<p><b>日時</b><br>\n10月17日(土) 10:00-16:00<br></p>\n<p><b>会場</b><br>\n 東京都立産業貿易センター 台東館 6F<br>\n<a href=\"https://www.sanbo.metro.tokyo.lg.jp/taito/access/\" rel=\"nofollow\">https://www.sanbo.metro.tokyo.lg.jp/taito/access/</a></p>\n<p><b>OSC2026 Tokyo/Fall 公式サイト</b><br>\n<a href=\"https://event.ospn.jp/osc2026-fall/\" rel=\"nofollow\">https://event.ospn.jp/osc2026-fall/</a></p>\n<p><b>開催形式</b><br>\nリアル会場での展示ブース、デモ、体験コーナー、ステージ企画</p>\n<h1>展示ブース一覧（各ブースの展示内容）</h1>\n<p><a href=\"https://event.ospn.jp/osc2026-fall/exhibit\" rel=\"nofollow\">https://event.ospn.jp/osc2026-fall/exhibit</a></p>\n<h1>展示ブースマップ (PDF)</h1>\n<p><a href=\"https://event.ospn.jp/files/booth_layout/26fall.pdf\" rel=\"nofollow\">https://event.ospn.jp/files/booth_layout/26fall.pdf</a></p>\n<h1>懇親会のご案内</h1>\n<p>当日イベント終了後に、懇親会を企画しました。<br>\nご参加は、以下のconnpassページからお申し込みが必要です。<br>\n（定員がありますのでお早めにお申し込みください）<br>\n<a href=\"https://ospn.connpass.com/event/403624/\" rel=\"nofollow\">https://ospn.connpass.com/event/403624/</a></p>\n<h1>属性アンケートご協力のお願い</h1>\n<p>connpassご登録時に、年代、職種、お住まいの地域、OSC参加歴、参加目的、参加コメントなど簡単なアンケートへのご入力をお願いしています。集計結果はイベント開催後にスポンサー、出展者にし提供するとともに、イベントの運営に役立てています。</p>\n<h1>スポンサーのオンラインちらしページ</h1>\n<p><a href=\"https://event.ospn.jp/osc2026-fall/article/flyers\" rel=\"nofollow\">https://event.ospn.jp/osc2026-fall/article/flyers</a></p>\n<h1>10/2(金)-3(土)はオンラインセミナー「OSC2026 オンライン/Fall」にご参加ください</h1>\n<p>セミナー聴講はZoomとYouTube Liveからご参加いただけます。お楽しみに！<br>\n<b>OSC2026 オンライン/Fall ウェブサイト</b><br>\n<a href=\"https://event.ospn.jp/osc2026-online-fall/\" rel=\"nofollow\">https://event.ospn.jp/osc2026-online-fall/</a></p>\n<p><b>参加登録(connpass)</b><br>\n<a href=\"https://ospn.connpass.com/event/399103/\" rel=\"nofollow\">https://ospn.connpass.com/event/399103/</a></p>\n<h1>感染予防対策について</h1>\n<ul>\n<li>マスク着用は任意です。（スタッフ、出展者のマスク着用も任意となっています）<br></li>\n<li>当日の体調がすぐれない方のご参加はご遠慮ください<br></li>\n</ul>",
+      "url": "https://ospn.connpass.com/event/399105/",
+      "image_url": "https://media.connpass.com/thumbs/6a/df/6adf677e3ccae1e30f64bde90ef2f8c5.png",
+      "hash_tag": "osc26tk",
+      "started_at": "2026-10-17T10:00:00+09:00",
+      "ended_at": "2026-10-17T16:00:00+09:00",
+      "published_at": "2026-08-12T17:24:03+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 2186,
+        "subdomain": "ospn",
+        "title": "OSPN(Open Source People Network)",
+        "url": "https://ospn.connpass.com/"
+      },
+      "address": "東京都台東区花川戸2-6-5(東京都立産業貿易センター)",
+      "place": "東京都立産業貿易センター台東館 6F",
+      "lat": "35.714399500000",
+      "lon": "139.798803400000",
+      "owner_id": 8653,
+      "owner_nickname": "tmiyahar",
+      "owner_display_name": "みやはらとおる",
+      "accepted": 280,
+      "waiting": 0,
+      "updated_at": "2026-10-17T12:18:07+09:00"
     },
     {
       "id": 409490,
