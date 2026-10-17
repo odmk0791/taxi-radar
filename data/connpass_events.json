@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-17T20:53:42.242267+09:00",
+  "fetched_at": "2026-10-17T23:44:36.799424+09:00",
   "date": "20261017",
   "count": 22,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-10-16T19:42:09+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15467,
         "subdomain": "mokumokutamagawa",
