@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-20T03:03:36.808278+09:00",
+  "fetched_at": "2026-10-20T07:42:36.542325+09:00",
   "date": "20261020",
   "count": 7,
   "events": [
@@ -104,8 +104,8 @@
       "url": "https://connpass.com/event/409480/",
       "image_url": "https://media.connpass.com/thumbs/c9/81/c9814ed7600ecc97b3235e80e4a778d9.png",
       "hash_tag": "",
-      "started_at": "2026-10-20T19:00:00+09:00",
-      "ended_at": "2026-10-20T21:30:00+09:00",
+      "started_at": "2026-11-16T19:00:00+09:00",
+      "ended_at": "2026-11-16T21:30:00+09:00",
       "published_at": "2026-10-10T09:45:25+09:00",
       "limit": null,
       "event_type": "participation",
@@ -120,7 +120,7 @@
       "owner_display_name": "AI Business Lab",
       "accepted": 0,
       "waiting": 0,
-      "updated_at": "2026-10-10T09:45:25+09:00"
+      "updated_at": "2026-10-20T07:10:14+09:00"
     },
     {
       "id": 408967,
@@ -182,7 +182,7 @@
       "owner_display_name": "Tomoya_Kitaura",
       "accepted": 137,
       "waiting": 0,
-      "updated_at": "2026-10-19T09:05:28+09:00"
+      "updated_at": "2026-10-20T07:09:48+09:00"
     },
     {
       "id": 404997,
