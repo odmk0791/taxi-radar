@@ -1,39 +1,8 @@
 {
-  "fetched_at": "2026-10-20T07:42:36.542325+09:00",
+  "fetched_at": "2026-10-20T10:24:09.340145+09:00",
   "date": "20261020",
-  "count": 7,
+  "count": 6,
   "events": [
-    {
-      "id": 406969,
-      "title": "tamachi.go #2",
-      "catch": "",
-      "description": "<h1>tamachi.goの概要</h1>\n<p>tamachi.goは田町駅から半径20060102150405nm (約20km) にお住まい・お勤め・ゆかりのあるエンジニアを対象としたgolangの勉強を目的としたコミュニティとなります。golangに関わらずGopherのためになる内容であれば、golangに限らず何でも歓迎です。(例: GopherのためのVim活用術など) 普段の業務でやったことや、新しい発見、初めての登壇の機会など、気軽に発表できる場所として、ぜひみんなで育てていければと思っています。</p>\n<h1>登壇内容</h1>\n<h2>登壇者募集中</h2>\n\n<p><del>5~10分程度のGolangに関する話題であればなんでも問題ありませんので、気軽に登壇者枠でお申し込みください。</del></p>\n<p>→満枠になったので締め切りました</p>\n<h3>【登壇枠 1 】tinygo.vimとgopls-lazy が噛み合わなかった話</h3>\n\n<p>Rinrin (<a href=\"https://x.com/rin2yh\" rel=\"nofollow\">@rin2yh</a>) さん</p>\n<p><img alt=\"rin2yh icon\" src=\"https://pbs.twimg.com/profile_images/1987812706838249472/y-9XRUaj_400x400.jpg\" width=\"120\"></p>\n<h3>【登壇枠 2 】「大丈夫、届けました！」ESP32-S3のI2Cバグを直した話</h3>\n\n<p>0hJonny (<a href=\"https://x.com/0hJonny\" rel=\"nofollow\">@0hJonny</a>) さん</p>\n<p><img alt=\"0hJonny icon\" src=\"https://pbs.twimg.com/profile_images/2080739460665516032/d5-0ptJM_400x400.jpg\" width=\"120\"></p>\n<h3>【登壇枠 3 】「TinyGo Conf 2026 Recap」</h3>\n\n<p>satoken (<a href=\"https://x.com/ken5owata\" rel=\"nofollow\">@ken5owata</a>) さん</p>\n<p><img alt=\"ken5owata icon\" src=\"https://pbs.twimg.com/profile_images/1120935948173234176/_BsyuTAi_400x400.png\" width=\"120\"></p>\n<h1>タイムスケジュール（予定）</h1>\n<table>\n<thead>\n<tr>\n<th><img width=\"60/\">Time<img width=\"60\"></th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30 -</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:30 - 19:45</td>\n<td>スタッフトーク 　</td>\n</tr>\n<tr>\n<td>19:45 - 19:55</td>\n<td>登壇枠1<br><b>tinygo.vimとgopls-lazy が噛み合わなかった話</b><br>Rinrin (<a href=\"https://x.com/rin2yh\" rel=\"nofollow\">@rin2yh</a>) さん</td>\n</tr>\n<tr>\n<td>19:55 - 20:05</td>\n<td>登壇枠2<br><b>「大丈夫、届けました！」ESP32-S3のI2Cバグを直した話</b><br>0hJonny (<a href=\"https://x.com/0hJonny\" rel=\"nofollow\">@0hJonny</a>) さん</td>\n</tr>\n<tr>\n<td>20:05 - 20:15</td>\n<td>登壇枠3<br><b>「TinyGo Conf 2026 Recap」</b><br>satoken (<a href=\"https://x.com/ken5owata\" rel=\"nofollow\">@ken5owata</a>) さん</td>\n</tr>\n<tr>\n<td>20:15 - 20:30</td>\n<td>休憩&amp;会場転換</td>\n</tr>\n<tr>\n<td>20:30 - 22:00</td>\n<td>懇親会</td>\n</tr>\n<tr>\n<td>22:00 -</td>\n<td>撤収（原状復帰にご協力下さい）</td>\n</tr>\n</tbody>\n</table>\n<h1>開催場所</h1>\n<p>株式会社オプティム: 105-0022 東京都港区海岸1丁目2番20号 汐留ビルディング18F</p>\n<p><a href=\"https://www.optim.co.jp/media/cat-event/corp-tokyo-access\" rel=\"nofollow\">会場への行き方（JR浜松町駅より）</a></p>\n<h1>イベントに関する問い合わせ・当日連絡先</h1>\n<p>イベント当日ないし、その他本イベントに関する連絡は以下の運営のいずれかにXのDM等でご連絡ください。</p>\n<ul>\n<li><a href=\"https://x.com/kenchi8n\" rel=\"nofollow\">@kenchi8n</a></li>\n<li><a href=\"https://x.com/rymiyamoto129\" rel=\"nofollow\">@rymiyamoto129</a></li>\n</ul>\n<h1>参加費用に関して</h1>\n<p>当日会場にて頂戴いたします。現金またはPayPayにてお支払いください。\nこの参加費用は懇親会の際のドリンクや食事代などイベント運営に必要な費用として充てさせていただきます。</p>\n<p>25歳未満の方の参加費を無料にしています。当日、現地受付で年齢のわかる身分証明書を提示してください。（学生証可）</p>\n<h1>行動規範・アンチハラスメントポリシー</h1>\n<p>tamachi.goは、すべての参加者が安心して学び、交流できる場を目指しています。性別、国籍、年齢、経験や技術レベルなどにかかわらず、互いを尊重してご参加ください。参加者の皆さまに <a href=\"https://go.dev/conduct\" rel=\"nofollow\">Go Community Code of Conduct</a> の厳守をお願いしております。</p>\n<p>差別的・攻撃的な言動、性的な表現、無断での撮影・SNS投稿、執拗な勧誘、技術レベルを見下す言動などのハラスメント行為を禁止します。これは会場だけでなく、懇親会やオンラインでのやり取りにも適用されます。\nハラスメントを受けた・目撃した場合は、運営スタッフまでご相談ください。プライバシーは厳守します。違反があった場合、運営の判断で注意・退場等の対応を行うことがあります。</p>",
-      "url": "https://tamachi-go.connpass.com/event/406969/",
-      "image_url": "https://media.connpass.com/thumbs/04/43/0443c2f398507c02dbebe3fe98fb7a12.png",
-      "hash_tag": "tamachigo",
-      "started_at": "2026-10-20T19:30:00+09:00",
-      "ended_at": "2026-10-20T22:00:00+09:00",
-      "published_at": "2026-09-14T23:13:01+09:00",
-      "limit": 23,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17811,
-        "subdomain": "tamachi-go",
-        "title": "tamachi.go",
-        "url": "https://tamachi-go.connpass.com/"
-      },
-      "address": "東京都港区海岸1丁目2番20号 汐留ビルディング18F",
-      "place": "株式会社オプティム",
-      "lat": "35.656690600000",
-      "lon": "139.759386700000",
-      "owner_id": 255614,
-      "owner_nickname": "rymiyamoto",
-      "owner_display_name": "パンダム",
-      "accepted": 13,
-      "waiting": 0,
-      "updated_at": "2026-10-19T14:55:06+09:00"
-    },
     {
       "id": 407680,
       "title": "AIHACK 後夜祭",
@@ -64,6 +33,37 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-10-19T12:25:12+09:00"
+    },
+    {
+      "id": 406969,
+      "title": "tamachi.go #2",
+      "catch": "",
+      "description": "<h1>tamachi.goの概要</h1>\n<p>tamachi.goは田町駅から半径20060102150405nm (約20km) にお住まい・お勤め・ゆかりのあるエンジニアを対象としたgolangの勉強を目的としたコミュニティとなります。golangに関わらずGopherのためになる内容であれば、golangに限らず何でも歓迎です。(例: GopherのためのVim活用術など) 普段の業務でやったことや、新しい発見、初めての登壇の機会など、気軽に発表できる場所として、ぜひみんなで育てていければと思っています。</p>\n<h1>登壇内容</h1>\n<h2>登壇者募集中</h2>\n\n<p><del>5~10分程度のGolangに関する話題であればなんでも問題ありませんので、気軽に登壇者枠でお申し込みください。</del></p>\n<p>→満枠になったので締め切りました</p>\n<h3>【登壇枠 1 】tinygo.vimとgopls-lazy が噛み合わなかった話</h3>\n\n<p>Rinrin (<a href=\"https://x.com/rin2yh\" rel=\"nofollow\">@rin2yh</a>) さん</p>\n<p><img alt=\"rin2yh icon\" src=\"https://pbs.twimg.com/profile_images/1987812706838249472/y-9XRUaj_400x400.jpg\" width=\"120\"></p>\n<h3>【登壇枠 2 】「大丈夫、届けました！」ESP32-S3のI2Cバグを直した話</h3>\n\n<p>0hJonny (<a href=\"https://x.com/0hJonny\" rel=\"nofollow\">@0hJonny</a>) さん</p>\n<p><img alt=\"0hJonny icon\" src=\"https://pbs.twimg.com/profile_images/2080739460665516032/d5-0ptJM_400x400.jpg\" width=\"120\"></p>\n<h3>【登壇枠 3 】「TinyGo Conf 2026 Recap」</h3>\n\n<p>satoken (<a href=\"https://x.com/ken5owata\" rel=\"nofollow\">@ken5owata</a>) さん</p>\n<p><img alt=\"ken5owata icon\" src=\"https://pbs.twimg.com/profile_images/1120935948173234176/_BsyuTAi_400x400.png\" width=\"120\"></p>\n<h1>タイムスケジュール（予定）</h1>\n<table>\n<thead>\n<tr>\n<th><img width=\"60/\">Time<img width=\"60\"></th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:30 -</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:30 - 19:45</td>\n<td>スタッフトーク 　</td>\n</tr>\n<tr>\n<td>19:45 - 19:55</td>\n<td>登壇枠1<br><b>tinygo.vimとgopls-lazy が噛み合わなかった話</b><br>Rinrin (<a href=\"https://x.com/rin2yh\" rel=\"nofollow\">@rin2yh</a>) さん</td>\n</tr>\n<tr>\n<td>19:55 - 20:05</td>\n<td>登壇枠2<br><b>「大丈夫、届けました！」ESP32-S3のI2Cバグを直した話</b><br>0hJonny (<a href=\"https://x.com/0hJonny\" rel=\"nofollow\">@0hJonny</a>) さん</td>\n</tr>\n<tr>\n<td>20:05 - 20:15</td>\n<td>登壇枠3<br><b>「TinyGo Conf 2026 Recap」</b><br>satoken (<a href=\"https://x.com/ken5owata\" rel=\"nofollow\">@ken5owata</a>) さん</td>\n</tr>\n<tr>\n<td>20:15 - 20:30</td>\n<td>休憩&amp;会場転換</td>\n</tr>\n<tr>\n<td>20:30 - 22:00</td>\n<td>懇親会</td>\n</tr>\n<tr>\n<td>22:00 -</td>\n<td>撤収（原状復帰にご協力下さい）</td>\n</tr>\n</tbody>\n</table>\n<h1>開催場所</h1>\n<p>株式会社オプティム: 105-0022 東京都港区海岸1丁目2番20号 汐留ビルディング18F</p>\n<p><a href=\"https://www.optim.co.jp/media/cat-event/corp-tokyo-access\" rel=\"nofollow\">会場への行き方（JR浜松町駅より）</a></p>\n<h1>イベントに関する問い合わせ・当日連絡先</h1>\n<p>イベント当日ないし、その他本イベントに関する連絡は以下の運営のいずれかにXのDM等でご連絡ください。</p>\n<ul>\n<li><a href=\"https://x.com/kenchi8n\" rel=\"nofollow\">@kenchi8n</a></li>\n<li><a href=\"https://x.com/rymiyamoto129\" rel=\"nofollow\">@rymiyamoto129</a></li>\n</ul>\n<h1>参加費用に関して</h1>\n<p>当日会場にて頂戴いたします。現金またはPayPayにてお支払いください。\nこの参加費用は懇親会の際のドリンクや食事代などイベント運営に必要な費用として充てさせていただきます。</p>\n<p>25歳未満の方の参加費を無料にしています。当日、現地受付で年齢のわかる身分証明書を提示してください。（学生証可）</p>\n<h1>行動規範・アンチハラスメントポリシー</h1>\n<p>tamachi.goは、すべての参加者が安心して学び、交流できる場を目指しています。性別、国籍、年齢、経験や技術レベルなどにかかわらず、互いを尊重してご参加ください。参加者の皆さまに <a href=\"https://go.dev/conduct\" rel=\"nofollow\">Go Community Code of Conduct</a> の厳守をお願いしております。</p>\n<p>差別的・攻撃的な言動、性的な表現、無断での撮影・SNS投稿、執拗な勧誘、技術レベルを見下す言動などのハラスメント行為を禁止します。これは会場だけでなく、懇親会やオンラインでのやり取りにも適用されます。\nハラスメントを受けた・目撃した場合は、運営スタッフまでご相談ください。プライバシーは厳守します。違反があった場合、運営の判断で注意・退場等の対応を行うことがあります。</p>",
+      "url": "https://tamachi-go.connpass.com/event/406969/",
+      "image_url": "https://media.connpass.com/thumbs/04/43/0443c2f398507c02dbebe3fe98fb7a12.png",
+      "hash_tag": "tamachigo",
+      "started_at": "2026-10-20T19:30:00+09:00",
+      "ended_at": "2026-10-20T22:00:00+09:00",
+      "published_at": "2026-09-14T23:13:01+09:00",
+      "limit": 23,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17811,
+        "subdomain": "tamachi-go",
+        "title": "tamachi.go",
+        "url": "https://tamachi-go.connpass.com/"
+      },
+      "address": "東京都港区海岸1丁目2番20号 汐留ビルディング18F",
+      "place": "株式会社オプティム",
+      "lat": "35.656690600000",
+      "lon": "139.759386700000",
+      "owner_id": 957271,
+      "owner_nickname": "kenchi8n",
+      "owner_display_name": "nakamura",
+      "accepted": 13,
+      "waiting": 0,
+      "updated_at": "2026-10-19T14:55:06+09:00"
     },
     {
       "id": 405009,
@@ -97,32 +97,6 @@
       "updated_at": "2026-09-29T07:01:06+09:00"
     },
     {
-      "id": 409480,
-      "title": "生成AIエージェント実践会(Claude Code,Codex etc)",
-      "catch": "生成AIエージェントの実務活用をテーマにした実践型ミートアップです。",
-      "description": "<h1>生成AIエージェント実践会（Claude Code, Codex etc.）</h1>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>：10月20日（火）19:00〜21:30</li>\n<li><strong>会場</strong>：ジャスミーラボ株式会社 オフィス内</li>\n<li><strong>住所</strong>：東京都港区北青山1-2-3 青山ビル11F</li>\n<li><strong>主催</strong>：AI Business Lab（AIBL）</li>\n<li><strong>協力</strong>：<a href=\"https://jasmylab.com/contact\" rel=\"nofollow\">ジャスミーラボ株式会社</a>（会場提供）</li>\n<li><strong>参加方法</strong>：事前登録・承認制。参加にはホストの承認が必要です。</li>\n<li><strong>お問い合わせ</strong>：<a href=\"mailto:info@guild.support\">info@guild.support</a></li>\n</ul>\n<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=東京都港区北青山1-2-3+青山ビル\" rel=\"nofollow\">会場をGoogleマップで確認する</a></p>\n<h2>イベントについて</h2>\n<p>AIビジネス実践コミュニティ「AI Business Lab（AIBL）」が主催する、生成AIエージェントの実務活用をテーマにした実践型ミートアップです。</p>\n<p>今回は、開発・業務自動化の現場で注目を集める <strong>Claude Code</strong> と <strong>Codex</strong> を中心に、生成AIエージェントをどのように業務フローへ組み込み、実際の成果につなげていくかを深掘りします。</p>\n<p>単なるツール紹介にとどまらず、実案件での活用事例、AI駆動開発の進め方、既存業務への導入ポイント、チームで活用する際の工夫など、明日から使える実践知を共有します。</p>\n<p>エンジニアはもちろん、AIを活用して業務効率化や新規事業開発を進めたいビジネス職・企画職の方にもおすすめのイベントです。</p>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>Claude Code / Codex を業務で活用したい方</li>\n<li>生成AIエージェントによる開発・業務自動化に関心がある方</li>\n<li>AI駆動開発の実践事例を知りたいエンジニア・PdM・事業開発担当の方</li>\n<li>生成AIを「試す」段階から「現場で使う」段階へ進めたい方</li>\n<li>AI活用を推進する仲間とつながりたい方</li>\n</ul>\n<h2>タイムテーブル（予定）</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>19:00〜19:30</td>\n<td>開場・受付</td>\n</tr>\n<tr>\n<td>19:30〜19:40</td>\n<td>オープニング</td>\n</tr>\n<tr>\n<td>19:40〜20:40</td>\n<td>ライトニングトーク</td>\n</tr>\n<tr>\n<td>20:40〜21:30</td>\n<td>ネットワーキング</td>\n</tr>\n</tbody>\n</table>\n<h2>登壇者</h2>\n<h3>Haruki</h3>\n<p><img alt=\"Haruki\" src=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,quality=75,width=800,height=800/uploads/zb/2e332e2e-6f90-4432-a885-48e25f49b838.jpg\"></p>\n<p>エンジニア。AWS Community Builder、Web3エンジニアコミュニティ「UNCHAIN」の運営、Midnight Aliit Builderとして活動中。</p>\n<p>ハッカソンへの出場・受賞歴が多数あり、AWS Summit Japan 2026 AI-DLC ハッカソンで3位。</p>\n<p><strong>X</strong>：<a href=\"https://x.com/haruki_web3\" rel=\"nofollow\">@haruki_web3</a></p>",
-      "url": "https://connpass.com/event/409480/",
-      "image_url": "https://media.connpass.com/thumbs/c9/81/c9814ed7600ecc97b3235e80e4a778d9.png",
-      "hash_tag": "",
-      "started_at": "2026-11-16T19:00:00+09:00",
-      "ended_at": "2026-11-16T21:30:00+09:00",
-      "published_at": "2026-10-10T09:45:25+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": null,
-      "address": "東京都港区北青山1-2-3 青山ビル 11F",
-      "place": "サロン・ド・ヴェール青山",
-      "lat": "35.673163800000",
-      "lon": "139.723394500000",
-      "owner_id": 1002611,
-      "owner_nickname": "AI_Business_Lab",
-      "owner_display_name": "AI Business Lab",
-      "accepted": 0,
-      "waiting": 0,
-      "updated_at": "2026-10-20T07:10:14+09:00"
-    },
-    {
       "id": 408967,
       "title": "トークン化預金の現在地と未来",
       "catch": "フィンテック養成勉強会#68",
@@ -133,7 +107,7 @@
       "started_at": "2026-10-20T19:00:00+09:00",
       "ended_at": "2026-10-20T20:40:00+09:00",
       "published_at": "2026-10-05T15:15:31+09:00",
-      "limit": 80,
+      "limit": 85,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -149,9 +123,9 @@
       "owner_id": 5763,
       "owner_nickname": "abenben",
       "owner_display_name": "あべんべん（abenben.eth）",
-      "accepted": 73,
-      "waiting": 2,
-      "updated_at": "2026-10-17T23:59:10+09:00"
+      "accepted": 78,
+      "waiting": 0,
+      "updated_at": "2026-10-20T09:19:03+09:00"
     },
     {
       "id": 407064,
@@ -164,7 +138,7 @@
       "started_at": "2026-10-20T18:30:00+09:00",
       "ended_at": "2026-10-20T21:00:00+09:00",
       "published_at": "2026-09-18T17:48:31+09:00",
-      "limit": 526,
+      "limit": 523,
       "event_type": "participation",
       "open_status": "preopen",
       "group": {
@@ -180,9 +154,9 @@
       "owner_id": 282297,
       "owner_nickname": "Tomoya_Kitaura",
       "owner_display_name": "Tomoya_Kitaura",
-      "accepted": 137,
+      "accepted": 138,
       "waiting": 0,
-      "updated_at": "2026-10-20T07:09:48+09:00"
+      "updated_at": "2026-10-20T09:02:42+09:00"
     },
     {
       "id": 404997,
@@ -211,7 +185,7 @@
       "owner_id": 311062,
       "owner_nickname": "KentaroTachiba",
       "owner_display_name": "KentaroTachiba",
-      "accepted": 112,
+      "accepted": 111,
       "waiting": 0,
       "updated_at": "2026-10-19T23:39:32+09:00"
     }
