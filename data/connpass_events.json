@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-20T15:56:30.385060+09:00",
+  "fetched_at": "2026-10-20T21:29:54.190987+09:00",
   "date": "20261020",
   "count": 6,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-09-14T23:13:01+09:00",
       "limit": 23,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17811,
         "subdomain": "tamachi-go",
@@ -78,7 +78,7 @@
       "published_at": "2026-09-29T07:01:06+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 1717,
         "subdomain": "hfs",
@@ -92,7 +92,7 @@
       "owner_id": 14295,
       "owner_nickname": "medellinjp",
       "owner_display_name": "冨元 雅仁",
-      "accepted": 3,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-09-29T07:01:06+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-10-05T15:15:31+09:00",
       "limit": 85,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 8792,
         "subdomain": "fintech-engineer",
@@ -124,7 +124,7 @@
       "owner_nickname": "abenben",
       "owner_display_name": "あべんべん（abenben.eth）",
       "accepted": 78,
-      "waiting": 2,
+      "waiting": 0,
       "updated_at": "2026-10-20T09:19:03+09:00"
     },
     {
@@ -140,7 +140,7 @@
       "published_at": "2026-09-18T17:48:31+09:00",
       "limit": 523,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 11908,
         "subdomain": "jawsug-sre",
@@ -154,7 +154,7 @@
       "owner_id": 282297,
       "owner_nickname": "Tomoya_Kitaura",
       "owner_display_name": "Tomoya_Kitaura",
-      "accepted": 143,
+      "accepted": 154,
       "waiting": 0,
       "updated_at": "2026-10-20T13:47:14+09:00"
     },
@@ -162,7 +162,7 @@
       "id": 404997,
       "title": "INTERSPEECH2026論文読み会(東京&オンライン)",
       "catch": "",
-      "description": "<h1>概要</h1>\n<p>2026年9月開催の国際学術会議 <a href=\"https://www.interspeech2026.org\" rel=\"nofollow\">INTERSPEECH2026</a> に関する論文読み会です．機械学習に関する論文を普段読んでいる研究者、学生、エンジニアの方を想定しておりますが、誰でもご参加いただけます．</p>\n<h1>発表者について</h1>\n<ul>\n<li>先着で募集いたします．ご自身がINTERSPEECH2026で発表された論文の紹介も可能です．</li>\n<li>論文は，音声合成，認識，知覚，パラ言語，対話，音源分離，音声強調などに関するものとします．ジャンルの配分は調整する場合がございます．</li>\n<li>INTERSPEECH2026 main conference だけでなく，関連ワークショップやコンペティションの論文でも可です．</li>\n</ul>\n<h1>現地会場案内</h1>\n<ul>\n<li>現地（株式会社IVRyオフィス）とオンライン(Zoom)の<strong>ハイブリッド開催</strong>となります．</li>\n<li>現状の現地参加枠は暫定的に70名としていますが，希望者が多い場合は様子をみつつ枠を増やすかもしれません．</li>\n<li>会場や受付開始時間の詳細は後日追記いたします．</li>\n</ul>\n<h3>会場へのアクセス</h3>\n<ul>\n<li><a href=\"https://ivry-jp.notion.site/5b6350b48f8741e59f631a8ad18b8412\" rel=\"nofollow\">会場までの行き方</a></li>\n</ul>\n<h1>オンライン会場案内</h1>\n<ul>\n<li>ZOOMを使用します．各自インストールをお願いします．</li>\n<li>17:30 open <strong><a href=\"https://u-tokyo-ac-jp.zoom.us/j/99683051311?pwd=iVBKxy6rRheNiXnRRvPlkHx0oDbzCj.1\" rel=\"nofollow\">Zoom URL</a></strong></li>\n<li>10/20 追記：「参加者（オンライン）」での登録が無い方も，Zoom から参加いただけます．当日体調不良などの理由で現地参加が不可能となってしまった方は，「キャンセル」を押していただいた上で Zoom からご参加ください．</li>\n<li>質問は Slido にご記入下さい． <strong>（<a href=\"https://app.sli.do/event/oQwzmp3Xhk5dQUdnshUi35\" rel=\"nofollow\">Slido URL</a>）</strong></li>\n<li>発表資料は <strong><a href=\"https://docs.google.com/presentation/d/1mej8U5JiarIYyAFxq8yorGvuA2hN-pg4bK5JQ0bGns4/edit?usp=sharing\" rel=\"nofollow\">Google slide</a></strong> を編集する形でお願いします．</li>\n<li>発表時に音声ファイル等の共有をご検討されている方は，事前にGoogle Drive でのファイル共有設定のご確認もお願いいたします．</li>\n</ul>\n<h1>発表形式</h1>\n<ul>\n<li>Lighting talk形式で5分とし，質問時間は合間でまとめて取る予定です．</li>\n<li>セッション後にディスカッション・質疑応答の時間を取っておりますので，そちらでも議論頂けます．</li>\n<li>講演者は，お手数ですが各セッション終了後までは待機頂く様，よろしくお願いします．</li>\n<li>質問事項は<a href=\"https://www.slido.com/jp\" rel=\"nofollow\">Slido</a>に記載して頂き，答えて行く形式とします．</li>\n<li>現地参加の方は，会場のマイクで直接ご質問いただいても構いません．</li>\n<li>スライドは1枚目に <strong>自己紹介スライド</strong> をご用意頂き，論文紹介の内容は2-3枚程度に納めてください．</li>\n</ul>\n<h1>キャンセル</h1>\n<ul>\n<li>参加は先着順になりますが，より多くの方へご参加いただきたいと考えています．</li>\n<li>大まかな参加人数を把握するために，当日都合が悪くなって参加できないことが判明した方は，お手数ですが速やかにキャンセル処理をお願いします．</li>\n</ul>\n<h1>その他</h1>\n<ul>\n<li>本勉強会は，技術交流が目的です．知識の共有や参加者同士の交流を目的としない方の参加はお断りします．</li>\n<li>参加目的が不適切だと判断される場合には，運営側で参加をキャンセルさせていただく場合がございます．</li>\n<li>読み会終了後，現地会場で懇親会（軽食・ドリンクあり）を開催します．</li>\n</ul>\n<h1>スケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時刻</th>\n<th style=\"text-align: left;\">講演者 (所属)</th>\n<th style=\"text-align: left;\">タイトル</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">17:30</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">入場開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00-18:05</td>\n<td style=\"text-align: left;\">齋藤 佑樹 (東大)</td>\n<td style=\"text-align: left;\">開会挨拶 &amp; 諸注意</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:05-18:15</td>\n<td style=\"text-align: left;\">町田 雄一郎 (IVRy)</td>\n<td style=\"text-align: left;\">株式会社IVRy 企業紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:15-18:20</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:20-18:25</td>\n<td style=\"text-align: left;\">仁泉 大輔 (Noetra)</td>\n<td style=\"text-align: left;\">The Interspeech 2026 Audio Encoder Capability Challenge for Large Audio Language Models</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:25-18:30</td>\n<td style=\"text-align: left;\">高城 巽成 (豊橋技科大)</td>\n<td style=\"text-align: left;\">Reducing the Offline-Streaming Gap for Unified ASR Transducer with Consistency Regularization</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:30-18:35</td>\n<td style=\"text-align: left;\">澤村 雄介 (Kizuna Intelligence)</td>\n<td style=\"text-align: left;\">Evaluating LLM Abilities for Addressee, Turn-change, and Next Speaker Prediction</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:35-18:40</td>\n<td style=\"text-align: left;\">野﨑 雄斗 (慶応大)</td>\n<td style=\"text-align: left;\">Semi-Supervised Joint Separation and Diarization for Multichannel Noisy Speech Mixtures</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:40-18:55</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">質疑応答&amp;休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:55-19:00</td>\n<td style=\"text-align: left;\">楢木 悠士 (シェルパ・アンド・カンパニー)</td>\n<td style=\"text-align: left;\">DeSRPA: Decoupled Speech Role-Playing Agent via Inference-Time Intervention</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">神藤 駿介 (東大)</td>\n<td style=\"text-align: left;\">Deriving Benchmarking Datasets from Long-Form Recordings: Challenges and Opportunities</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:10</td>\n<td style=\"text-align: left;\">朴 浚鎔 (東大)</td>\n<td style=\"text-align: left;\">Is Natural Always Appropriate? Investigating Naturalness and Appropriateness Across Different Domains for TTS Evaluation</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10-19:15</td>\n<td style=\"text-align: left;\">佐藤 なな子 (慶応大)</td>\n<td style=\"text-align: left;\">Not Flat, But Dissociated: Prosodic and Segmental Divergence in Neural TTS</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15-19:30</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">質疑応答&amp;休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30-19:35</td>\n<td style=\"text-align: left;\">福田 航希 (慶応大)</td>\n<td style=\"text-align: left;\">What Makes Us Hate Our Own Voice? Large-scale experiments on Playback–Imagery Gaps and Individual--Speech Feature Effects</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:40</td>\n<td style=\"text-align: left;\">松島 竜成 (Third Intelligence)</td>\n<td style=\"text-align: left;\">Transcription Policy as a Latent Variable: Activating Controllable Verbatim ASR with Word-Level Timing</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40-19:45</td>\n<td style=\"text-align: left;\">國見 友亮 (産総研)</td>\n<td style=\"text-align: left;\">Zero-VC: Zero-Lookahead Streaming Voice Conversion via Speaker Anonymization</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45-19:50</td>\n<td style=\"text-align: left;\">後藤 啓太 (LY)</td>\n<td style=\"text-align: left;\">MDM-ASR: Bridging Accuracy and Efficiency in ASR with Diffusion-Based Non-Autoregressive Decoding</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:00</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">質疑応答</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">高道 慎之介 (慶応大）</td>\n<td style=\"text-align: left;\">閉会挨拶</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00 - 21:30</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30 - 22:00</td>\n<td style=\"text-align: left;\">片付け</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">22:00</td>\n<td style=\"text-align: left;\">撤収</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>",
+      "description": "<h1>概要</h1>\n<p>2026年9月開催の国際学術会議 <a href=\"https://www.interspeech2026.org\" rel=\"nofollow\">INTERSPEECH2026</a> に関する論文読み会です．機械学習に関する論文を普段読んでいる研究者、学生、エンジニアの方を想定しておりますが、誰でもご参加いただけます．</p>\n<h1>発表者について</h1>\n<ul>\n<li>先着で募集いたします．ご自身がINTERSPEECH2026で発表された論文の紹介も可能です．</li>\n<li>論文は，音声合成，認識，知覚，パラ言語，対話，音源分離，音声強調などに関するものとします．ジャンルの配分は調整する場合がございます．</li>\n<li>INTERSPEECH2026 main conference だけでなく，関連ワークショップやコンペティションの論文でも可です．</li>\n</ul>\n<h1>現地会場案内</h1>\n<ul>\n<li>現地（株式会社IVRyオフィス）とオンライン(Zoom)の<strong>ハイブリッド開催</strong>となります．</li>\n<li>現状の現地参加枠は暫定的に70名としていますが，希望者が多い場合は様子をみつつ枠を増やすかもしれません．</li>\n<li>会場や受付開始時間の詳細は後日追記いたします．</li>\n</ul>\n<h3>会場へのアクセス</h3>\n<ul>\n<li><a href=\"https://ivry-jp.notion.site/5b6350b48f8741e59f631a8ad18b8412\" rel=\"nofollow\">会場までの行き方</a></li>\n</ul>\n<h1>オンライン会場案内</h1>\n<ul>\n<li>ZOOMを使用します．各自インストールをお願いします．</li>\n<li>17:30 open <strong><a href=\"https://u-tokyo-ac-jp.zoom.us/j/99683051311?pwd=iVBKxy6rRheNiXnRRvPlkHx0oDbzCj.1\" rel=\"nofollow\">Zoom URL</a></strong></li>\n<li>10/20 追記：「参加者（オンライン）」での登録が無い方も，Zoom から参加いただけます．当日体調不良などの理由で現地参加が不可能となってしまった方は，「キャンセル」を押していただいた上で Zoom からご参加ください．</li>\n<li>質問は Slido にご記入下さい． <strong>（<a href=\"https://app.sli.do/event/oQwzmp3Xhk5dQUdnshUi35\" rel=\"nofollow\">Slido URL</a>）</strong></li>\n<li>発表資料は <strong><a href=\"https://docs.google.com/presentation/d/1mej8U5JiarIYyAFxq8yorGvuA2hN-pg4bK5JQ0bGns4/edit?usp=sharing\" rel=\"nofollow\">Google slide</a></strong> を編集する形でお願いします．</li>\n<li>発表時に音声ファイル等の共有をご検討されている方は，事前にGoogle Drive でのファイル共有設定のご確認もお願いいたします．</li>\n</ul>\n<h1>発表形式</h1>\n<ul>\n<li>Lighting talk形式で5分とし，質問時間は合間でまとめて取る予定です．</li>\n<li>セッション後にディスカッション・質疑応答の時間を取っておりますので，そちらでも議論頂けます．</li>\n<li>講演者は，お手数ですが各セッション終了後までは待機頂く様，よろしくお願いします．</li>\n<li>質問事項は<a href=\"https://www.slido.com/jp\" rel=\"nofollow\">Slido</a>に記載して頂き，答えて行く形式とします．</li>\n<li>現地参加の方は，会場のマイクで直接ご質問いただいても構いません．</li>\n<li>スライドは1枚目に <strong>自己紹介スライド</strong> をご用意頂き，論文紹介の内容は2-3枚程度に納めてください．</li>\n</ul>\n<h1>キャンセル</h1>\n<ul>\n<li>参加は先着順になりますが，より多くの方へご参加いただきたいと考えています．</li>\n<li>大まかな参加人数を把握するために，当日都合が悪くなって参加できないことが判明した方は，お手数ですが速やかにキャンセル処理をお願いします．</li>\n</ul>\n<h1>その他</h1>\n<ul>\n<li>本勉強会は，技術交流が目的です．知識の共有や参加者同士の交流を目的としない方の参加はお断りします．</li>\n<li>参加目的が不適切だと判断される場合には，運営側で参加をキャンセルさせていただく場合がございます．</li>\n<li>読み会終了後，現地会場で懇親会（軽食・ドリンクあり）を開催します．</li>\n</ul>\n<h1>スケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時刻</th>\n<th style=\"text-align: left;\">講演者 (所属)</th>\n<th style=\"text-align: left;\">タイトル</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">17:30</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">入場開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:00-18:05</td>\n<td style=\"text-align: left;\">齋藤 佑樹 (東大)</td>\n<td style=\"text-align: left;\">開会挨拶 &amp; 諸注意</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:05-18:15</td>\n<td style=\"text-align: left;\">吉田 快 (IVRy)</td>\n<td style=\"text-align: left;\">株式会社IVRy 企業紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:15-18:20</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:20-18:25</td>\n<td style=\"text-align: left;\">仁泉 大輔 (Noetra)</td>\n<td style=\"text-align: left;\">The Interspeech 2026 Audio Encoder Capability Challenge for Large Audio Language Models</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:25-18:30</td>\n<td style=\"text-align: left;\">高城 巽成 (豊橋技科大)</td>\n<td style=\"text-align: left;\">Reducing the Offline-Streaming Gap for Unified ASR Transducer with Consistency Regularization</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:30-18:35</td>\n<td style=\"text-align: left;\">澤村 雄介 (Kizuna Intelligence)</td>\n<td style=\"text-align: left;\">Evaluating LLM Abilities for Addressee, Turn-change, and Next Speaker Prediction</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:35-18:40</td>\n<td style=\"text-align: left;\">野﨑 雄斗 (慶応大)</td>\n<td style=\"text-align: left;\">Semi-Supervised Joint Separation and Diarization for Multichannel Noisy Speech Mixtures</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:40-18:55</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">質疑応答&amp;休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:55-19:00</td>\n<td style=\"text-align: left;\">楢木 悠士 (シェルパ・アンド・カンパニー)</td>\n<td style=\"text-align: left;\">DeSRPA: Decoupled Speech Role-Playing Agent via Inference-Time Intervention</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:05</td>\n<td style=\"text-align: left;\">神藤 駿介 (東大)</td>\n<td style=\"text-align: left;\">Deriving Benchmarking Datasets from Long-Form Recordings: Challenges and Opportunities</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05-19:10</td>\n<td style=\"text-align: left;\">朴 浚鎔 (東大)</td>\n<td style=\"text-align: left;\">Is Natural Always Appropriate? Investigating Naturalness and Appropriateness Across Different Domains for TTS Evaluation</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10-19:15</td>\n<td style=\"text-align: left;\">佐藤 なな子 (慶応大)</td>\n<td style=\"text-align: left;\">Not Flat, But Dissociated: Prosodic and Segmental Divergence in Neural TTS</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15-19:30</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">質疑応答&amp;休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30-19:35</td>\n<td style=\"text-align: left;\">福田 航希 (慶応大)</td>\n<td style=\"text-align: left;\">What Makes Us Hate Our Own Voice? Large-scale experiments on Playback–Imagery Gaps and Individual--Speech Feature Effects</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:40</td>\n<td style=\"text-align: left;\">松島 竜成 (Third Intelligence)</td>\n<td style=\"text-align: left;\">Transcription Policy as a Latent Variable: Activating Controllable Verbatim ASR with Word-Level Timing</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:40-19:45</td>\n<td style=\"text-align: left;\">國見 友亮 (産総研)</td>\n<td style=\"text-align: left;\">Zero-VC: Zero-Lookahead Streaming Voice Conversion via Speaker Anonymization</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:45-19:50</td>\n<td style=\"text-align: left;\">後藤 啓太 (LY)</td>\n<td style=\"text-align: left;\">MDM-ASR: Bridging Accuracy and Efficiency in ASR with Diffusion-Based Non-Autoregressive Decoding</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:00</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">質疑応答</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">高道 慎之介 (慶応大）</td>\n<td style=\"text-align: left;\">閉会挨拶</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00 - 21:30</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:30 - 22:00</td>\n<td style=\"text-align: left;\">片付け</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">22:00</td>\n<td style=\"text-align: left;\">撤収</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>",
       "url": "https://icasspeech.connpass.com/event/404997/",
       "image_url": "https://media.connpass.com/thumbs/3d/67/3d6769683daf03be1135d84c3fa56b53.png",
       "hash_tag": "interspeech2026jp",
@@ -171,7 +171,7 @@
       "published_at": "2026-08-26T20:48:17+09:00",
       "limit": 282,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 12806,
         "subdomain": "icasspeech",
@@ -185,9 +185,9 @@
       "owner_id": 311062,
       "owner_nickname": "KentaroTachiba",
       "owner_display_name": "KentaroTachiba",
-      "accepted": 109,
+      "accepted": 104,
       "waiting": 0,
-      "updated_at": "2026-10-20T14:54:15+09:00"
+      "updated_at": "2026-10-20T18:12:29+09:00"
     }
   ]
 }
