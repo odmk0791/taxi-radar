@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-23T02:46:38.017056+09:00",
+  "fetched_at": "2026-10-23T06:02:19.254800+09:00",
   "date": "20261023",
   "count": 12,
   "events": [
@@ -190,37 +190,6 @@
       "updated_at": "2026-10-18T15:50:35+09:00"
     },
     {
-      "id": 401424,
-      "title": "DMM App Night #2 ~iOS/Android合同勉強会~",
-      "catch": "",
-      "description": "<h2><strong>DMM App Night</strong></h2>\n<p><strong>DMM App Night</strong> は、DMMでiOS/Androidアプリ開発を担う複数エンジニアが集まり、所属する事業に関するiOS/Android開発の「これまで」と「これから」について実務を通じて得たナレッジを共有しながら、「iOS/Android開発」のベストプラクティスについても考えていくイベントです。 \nDMMでは、現在60以上の事業（2026年9月時点）を展開している中で日々現場の課題・改善と向き合う「熱きエンジニアたち」とともにiOS/Androidに関心を持つ参加者の皆さまとともにモバイルアプリの技術トークで盛り上がる会を目指しています！\nぜひ、お気軽にご参加ください！</p>\n<h2><strong>開催概要</strong></h2>\n<ul>\n<li>開催日時：2026年10月23日(金) 19:00-21:30（開場 18:30）</li>\n<li>開催場所：DMM六本木オフィス</li>\n<li>参加費：無料  </li>\n</ul>\n<h2><strong>こんな方におすすめ！</strong></h2>\n<ul>\n<li>iOS/Androidアプリを開発しているエンジニアや学生</li>\n<li>iOS/Android, Swift/Kotlinの技術やアーキテクチャに興味関心のある方</li>\n</ul>\n\n<h2><strong>タイムスケジュール</strong></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場・受付開始</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00～19:03</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:03～19:15</td>\n<td style=\"text-align: left;\">計測からはじめるスクロール性能改善</td>\n<td style=\"text-align: left;\">仲 純平</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15～19:27</td>\n<td style=\"text-align: left;\">ドラッグ&amp;ドロップできるLazyリストって難しい！</td>\n<td style=\"text-align: left;\">細井 颯太</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:27～19:35</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35～19:46</td>\n<td style=\"text-align: left;\">Instrumentsを利用した処理の時間計測と改善</td>\n<td style=\"text-align: left;\">鈴木 直人</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:46～19:58</td>\n<td style=\"text-align: left;\">Zero-Tap Sign-In対応、結局何をすればいいの？</td>\n<td style=\"text-align: left;\">宮里 颯斗</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:58～20:05</td>\n<td style=\"text-align: left;\">未定</td>\n<td style=\"text-align: left;\">外部登壇枠</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10～21:20</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:20</td>\n<td style=\"text-align: left;\">クロージング・写真撮影・撤収案内</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2><strong>司会者</strong></h2>\n<h3>青木 大樹（動画配信開発部）</h3>\n<p><img src=\"https://i.imgur.com/dSsPqN1.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"青木 大樹\"><br></p>\n<p>2024年に中途入社。Flutterで一生懸命アプリ開発しています。</p>\n<h2><strong>登壇者・セッション</strong></h2>\n<h3>宮里 颯斗（アプリ開発室）</h3>\n<p><img src=\"https://imgur.com/uzhltWD.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"宮里 颯斗\"><br>\n2020年にDMM.comへ新卒入社。横断的にアプリ開発を支援している他、社内向けSDKの開発、コミュニティ活動にも従事。</p>\n<p><strong>【セッション】 Zero-Tap Sign-In対応、結局何をすればいいの？</strong>\n<br></p>\n<h3>細井 颯太（電子書籍開発部 ネイティブアプリ開発運用グループ）</h3>\n<p><img src=\"https://imgur.com/0rs0ERs.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"細井 颯太\"><br>\n2024年にDMM.comへ新卒入社。Android版DMMブックスの開発・運用をしています。</p>\n<p><strong>【セッション】ドラッグ&amp;ドロップできるLazyリストって難しい！</strong>\n<br></p>\n<h3>仲 純平（オンラインサロン開発部 プロダクト開発グループ）</h3>\n<p><img src=\"https://imgur.com/71YsEIw.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"仲 純平\"><br>\n2025年にDMM.comへ新卒入社。DMMオンラインサロンのiOS版とWEB版を開発・運用しています。</p>\n<p><strong>【セッション】 計測からはじめるスクロール性能改善</strong>\n<br></p>\n<h3>鈴木 直人（電子書籍開発部 ネイティブアプリ開発運用グループ）</h3>\n<p><img src=\"https://imgur.com/fW9A4TL.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"鈴木 直人\"><br>\n2023年中途入社、電子書籍のiOSアプリ開発してました。最近はWeb API開発を主にやってます。</p>\n<p><strong>【セッション】 Instrumentsを利用した処理の時間計測と改善</strong>\n<br></p>\n<h2><strong>会場アクセス</strong></h2>\n<p>DMM六本木オフィス　24階イベントスペース （東京都港区六本木三丁目2番1号 住友不動産六本木グランドタワー24階）<br>\n【最寄り駅】</p>\n<ul>\n<li>南北線「六本木一丁目駅」西口改札直結</li>\n<li>日比谷線・大江戸線「六本木駅」より徒歩5分</li>\n<li>銀座線・南北線・丸ノ内線「溜池山王駅（国会議事堂前駅）」より徒歩8分</li>\n</ul>\n<p>入館に関する案内は、開催までにconnpassを通じてご連絡させていただきます。</p>\n<p><a href=\"https://inside.dmm.com/articles/dmm-office/\" rel=\"nofollow\">DMM本社オフィスへの行き方</a> \n <br> </p>\n<h2><strong>注意事項</strong></h2>\n<ul>\n<li>名刺をご持参ください</li>\n<li>営業・採用・勧誘活動を目的とする参加はご遠慮ください</li>\n<li>急遽参加が難しくなった場合、早めにキャンセルのご連絡をくださいますようお願い申し上げます</li>\n<li>イベントは止むを得ず中止させていただく場合がございます。その場合、別途connpassを通じてご連絡させていただきます</li>\n</ul>\n<p><br> </p>\n<h2><strong>採用情報</strong></h2>\n<p><strong>毎日、採用中。応募職種は<a href=\"https://dmm-corp.com/recruit/\" rel=\"nofollow\">こちら</a>からご確認いただけます。</strong></p>\n<p><strong><em><a href=\"https://dmm-corp.com/privacy/\" rel=\"nofollow\">合同会社 DMM.com プライバシーポリシー</a></em></strong></p>\n<p><strong>＼DMM テックブログやってます！🖱️／</strong></p>\n<p><a href=\"https://developersblog.dmm.com/?utm_source=connpass&amp;utm_medium=x&amp;utm_campaign=connpass402090\" rel=\"nofollow\"><img src=\"https://lh3.googleusercontent.com/d/1sCW-Agtkvq4iLpaLbfGpXbmdRHW47DeF\" width=\"200\"></a></p>",
-      "url": "https://dmm.connpass.com/event/401424/",
-      "image_url": "https://media.connpass.com/thumbs/3e/f0/3ef034c28e03d9c2d49ec586731c3b1a.png",
-      "hash_tag": "dmm_app_night",
-      "started_at": "2026-10-23T18:30:00+09:00",
-      "ended_at": "2026-10-23T21:00:00+09:00",
-      "published_at": "2026-09-07T12:42:37+09:00",
-      "limit": 31,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 3866,
-        "subdomain": "dmm",
-        "title": "DMM.com",
-        "url": "https://dmm.connpass.com/"
-      },
-      "address": "東京都港区六本木3-2-1 住友不動産六本木グランドタワー24階",
-      "place": "DMM.com",
-      "lat": "35.664586900000",
-      "lon": "139.737777600000",
-      "owner_id": 350053,
-      "owner_nickname": "ynoseda",
-      "owner_display_name": "野瀬田（@ynoseda）",
-      "accepted": 22,
-      "waiting": 0,
-      "updated_at": "2026-10-16T12:52:40+09:00"
-    },
-    {
       "id": 408609,
       "title": "SB Intuitions 採用MeetUp #4",
       "catch": "Sarashina リリース記念 ― 国産LLMプロダクト開発の舞台裏",
@@ -252,6 +221,37 @@
       "updated_at": "2026-10-19T10:56:49+09:00"
     },
     {
+      "id": 401424,
+      "title": "DMM App Night #2 ~iOS/Android合同勉強会~",
+      "catch": "",
+      "description": "<h2><strong>DMM App Night</strong></h2>\n<p><strong>DMM App Night</strong> は、DMMでiOS/Androidアプリ開発を担う複数エンジニアが集まり、所属する事業に関するiOS/Android開発の「これまで」と「これから」について実務を通じて得たナレッジを共有しながら、「iOS/Android開発」のベストプラクティスについても考えていくイベントです。 \nDMMでは、現在60以上の事業（2026年9月時点）を展開している中で日々現場の課題・改善と向き合う「熱きエンジニアたち」とともにiOS/Androidに関心を持つ参加者の皆さまとともにモバイルアプリの技術トークで盛り上がる会を目指しています！\nぜひ、お気軽にご参加ください！</p>\n<h2><strong>開催概要</strong></h2>\n<ul>\n<li>開催日時：2026年10月23日(金) 19:00-21:30（開場 18:30）</li>\n<li>開催場所：DMM六本木オフィス</li>\n<li>参加費：無料  </li>\n</ul>\n<h2><strong>こんな方におすすめ！</strong></h2>\n<ul>\n<li>iOS/Androidアプリを開発しているエンジニアや学生</li>\n<li>iOS/Android, Swift/Kotlinの技術やアーキテクチャに興味関心のある方</li>\n</ul>\n\n<h2><strong>タイムスケジュール</strong></h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場・受付開始</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00～19:03</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:03～19:15</td>\n<td style=\"text-align: left;\">計測からはじめるスクロール性能改善</td>\n<td style=\"text-align: left;\">仲 純平</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15～19:27</td>\n<td style=\"text-align: left;\">ドラッグ&amp;ドロップできるLazyリストって難しい！</td>\n<td style=\"text-align: left;\">細井 颯太</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:27～19:35</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35～19:46</td>\n<td style=\"text-align: left;\">Instrumentsを利用した処理の時間計測と改善</td>\n<td style=\"text-align: left;\">鈴木 直人</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:46～19:58</td>\n<td style=\"text-align: left;\">Zero-Tap Sign-In対応、結局何をすればいいの？</td>\n<td style=\"text-align: left;\">宮里 颯斗</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:58～20:05</td>\n<td style=\"text-align: left;\">未定</td>\n<td style=\"text-align: left;\">外部登壇枠</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10～21:20</td>\n<td style=\"text-align: left;\">懇親会</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:20</td>\n<td style=\"text-align: left;\">クロージング・写真撮影・撤収案内</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2><strong>司会者</strong></h2>\n<h3>青木 大樹（動画配信開発部）</h3>\n<p><img src=\"https://i.imgur.com/dSsPqN1.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"青木 大樹\"><br></p>\n<p>2024年に中途入社。Flutterで一生懸命アプリ開発しています。</p>\n<h2><strong>登壇者・セッション</strong></h2>\n<h3>宮里 颯斗（アプリ開発室）</h3>\n<p><img src=\"https://imgur.com/uzhltWD.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"宮里 颯斗\"><br>\n2020年にDMM.comへ新卒入社。横断的にアプリ開発を支援している他、社内向けSDKの開発、コミュニティ活動にも従事。</p>\n<p><strong>【セッション】 Zero-Tap Sign-In対応、結局何をすればいいの？</strong>\n<br></p>\n<h3>細井 颯太（電子書籍開発部 ネイティブアプリ開発運用グループ）</h3>\n<p><img src=\"https://imgur.com/0rs0ERs.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"細井 颯太\"><br>\n2024年にDMM.comへ新卒入社。Android版DMMブックスの開発・運用をしています。</p>\n<p><strong>【セッション】ドラッグ&amp;ドロップできるLazyリストって難しい！</strong>\n<br></p>\n<h3>仲 純平（オンラインサロン開発部 プロダクト開発グループ）</h3>\n<p><img src=\"https://imgur.com/71YsEIw.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"仲 純平\"><br>\n2025年にDMM.comへ新卒入社。DMMオンラインサロンのiOS版とWEB版を開発・運用しています。</p>\n<p><strong>【セッション】 計測からはじめるスクロール性能改善</strong>\n<br></p>\n<h3>鈴木 直人（電子書籍開発部 ネイティブアプリ開発運用グループ）</h3>\n<p><img src=\"https://imgur.com/fW9A4TL.jpeg\" width=\"100\" style=\"margin-right: 15px; margin-bottom: 10px;\" alt=\"鈴木 直人\"><br>\n2023年中途入社、電子書籍のiOSアプリ開発してました。最近はWeb API開発を主にやってます。</p>\n<p><strong>【セッション】 Instrumentsを利用した処理の時間計測と改善</strong>\n<br></p>\n<h2><strong>会場アクセス</strong></h2>\n<p>DMM六本木オフィス　24階イベントスペース （東京都港区六本木三丁目2番1号 住友不動産六本木グランドタワー24階）<br>\n【最寄り駅】</p>\n<ul>\n<li>南北線「六本木一丁目駅」西口改札直結</li>\n<li>日比谷線・大江戸線「六本木駅」より徒歩5分</li>\n<li>銀座線・南北線・丸ノ内線「溜池山王駅（国会議事堂前駅）」より徒歩8分</li>\n</ul>\n<p>入館に関する案内は、開催までにconnpassを通じてご連絡させていただきます。</p>\n<p><a href=\"https://inside.dmm.com/articles/dmm-office/\" rel=\"nofollow\">DMM本社オフィスへの行き方</a> \n <br> </p>\n<h2><strong>注意事項</strong></h2>\n<ul>\n<li>名刺をご持参ください</li>\n<li>営業・採用・勧誘活動を目的とする参加はご遠慮ください</li>\n<li>急遽参加が難しくなった場合、早めにキャンセルのご連絡をくださいますようお願い申し上げます</li>\n<li>イベントは止むを得ず中止させていただく場合がございます。その場合、別途connpassを通じてご連絡させていただきます</li>\n</ul>\n<p><br> </p>\n<h2><strong>採用情報</strong></h2>\n<p><strong>毎日、採用中。応募職種は<a href=\"https://dmm-corp.com/recruit/\" rel=\"nofollow\">こちら</a>からご確認いただけます。</strong></p>\n<p><strong><em><a href=\"https://dmm-corp.com/privacy/\" rel=\"nofollow\">合同会社 DMM.com プライバシーポリシー</a></em></strong></p>\n<p><strong>＼DMM テックブログやってます！🖱️／</strong></p>\n<p><a href=\"https://developersblog.dmm.com/?utm_source=connpass&amp;utm_medium=x&amp;utm_campaign=connpass402090\" rel=\"nofollow\"><img src=\"https://lh3.googleusercontent.com/d/1sCW-Agtkvq4iLpaLbfGpXbmdRHW47DeF\" width=\"200\"></a></p>",
+      "url": "https://dmm.connpass.com/event/401424/",
+      "image_url": "https://media.connpass.com/thumbs/3e/f0/3ef034c28e03d9c2d49ec586731c3b1a.png",
+      "hash_tag": "dmm_app_night",
+      "started_at": "2026-10-23T18:30:00+09:00",
+      "ended_at": "2026-10-23T21:00:00+09:00",
+      "published_at": "2026-09-07T12:42:37+09:00",
+      "limit": 31,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 3866,
+        "subdomain": "dmm",
+        "title": "DMM.com",
+        "url": "https://dmm.connpass.com/"
+      },
+      "address": "東京都港区六本木3-2-1 住友不動産六本木グランドタワー24階",
+      "place": "DMM.com",
+      "lat": "35.664586900000",
+      "lon": "139.737777600000",
+      "owner_id": 350053,
+      "owner_nickname": "ynoseda",
+      "owner_display_name": "野瀬田（@ynoseda）",
+      "accepted": 22,
+      "waiting": 0,
+      "updated_at": "2026-10-16T12:52:40+09:00"
+    },
+    {
       "id": 407131,
       "title": "【オフラインイベント】交流会を開催！～AI・業務効率化・問い合わせ対応、他社はどうしてる？～",
       "catch": "気軽に情報交換しませんか？",
@@ -276,37 +276,6 @@
       "accepted": 1,
       "waiting": 0,
       "updated_at": "2026-10-15T13:05:08+09:00"
-    },
-    {
-      "id": 407197,
-      "title": "AI駆動クリエイティブスペシャル #1",
-      "catch": "つくって楽しむワークショップ編",
-      "description": "<h1><b>AI駆動クリエイティブ #1</b></h1>\n<h2><b>つくって試すワークショップ</b></h2>\n<h2><b>AIを使った制作の工夫を知り、<br>自分の意思を持った演出と作品づくりを実践する。</b></h2>\n<p>生成AIによって、映像・画像・キャラクター・デザイン・ゲームなど、さまざまな表現を短時間で生み出せるようになりました。</p>\n<p>一方で、AIに「つくらせる」だけではなく、</p>\n<p><strong>何を表現したいのか。</strong><br>\n<strong>どんな演出にしたいのか。</strong><br>\n<strong>どこに自分の意図を込めるのか。</strong></p>\n<p>といった、クリエイター自身の意思や工夫がこれまで以上に重要になっています。</p>\n<p><strong>AI駆動クリエイティブ</strong>は、AIを使った制作の工夫や技術的なアプローチを共有しながら、参加者自身も実際に手を動かして作品づくりに取り組むイベントです。</p>\n<p>日本から生まれてきた創作文化や、長い時間をかけて磨かれてきた職人の技術・表現を、AI時代の新しい創作へどうつなげていくのか。</p>\n<p>AIを単なる生成ツールとして使うだけではなく、制作を支える技術やワークフローを考え、試し、共有することで、<strong>これからの創作文化の可能性を一緒に探ります。</strong></p>\n<p><strong>AI駆動で、クリエイティブを加速させよう。</strong><br>\n<strong>技術を試し、自分の意図を作品に込めてみよう。</strong></p>\n<hr>\n<h1>開催概要</h1>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>日時</td>\n<td><strong>2026年10月23日（金）18:00〜21:30</strong></td>\n</tr>\n<tr>\n<td>現地定員</td>\n<td><strong>20名程度</strong></td>\n</tr>\n<tr>\n<td>主催</td>\n<td><a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会（AIDD）</a></td>\n</tr>\n<tr>\n<td>共催</td>\n<td><a href=\"https://aihub.co.jp/\" rel=\"nofollow\">AiHUB株式会社</a> / <a href=\"https://www.creators-wonderland.com/ja\" rel=\"nofollow\">Creators’ Wonderland</a></td>\n</tr>\n<tr>\n<td>対象</td>\n<td>AIによる創作に関心のあるエンジニア・クリエイターなど</td>\n</tr>\n<tr>\n<td>持ち物</td>\n<td>ノートPC・充電器</td>\n</tr>\n</tbody>\n</table>\n<p>※詳細な会場住所・入館方法については、参加者向けに別途ご案内予定です。</p>\n<hr>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>AIを活用した創作・コンテンツ制作に興味がある方</li>\n<li>AIを使いながら、自分の意図を作品に反映させたい方</li>\n<li>AIクリエイターがどのように作品をつくっているのか知りたい方</li>\n<li>生成AIのワークフローや制作技術に興味がある方</li>\n<li>AIエージェントやMCP、Skillなどをクリエイティブ制作に応用してみたい方</li>\n<li>エンジニアリングとクリエイティブの両方に興味がある方</li>\n<li>AI時代の新しい創作文化について考えたい方</li>\n<li>Creators’ Wonderlandやロボットカーニバルに興味がある方</li>\n</ul>\n<hr>\n<h1>当日の内容</h1>\n<h2>Creators’ Wonderland / ロボットカーニバル紹介</h2>\n<p><a href=\"https://www.creators-wonderland.com/ja\" rel=\"nofollow\">Creators’ Wonderland</a>は、AiHUB株式会社が運営するAIクリエイターのための創作プラットフォームです。</p>\n<p>作品制作・投稿・企画への挑戦などを通じて、AI時代のクリエイターが活動できる場を展開しています。</p>\n<p>当日は、Creators’ Wonderlandの構想や活動とともに、開催されている<strong>「ロボットカーニバル」</strong>についても紹介します。</p>\n<p>▶️ <a href=\"https://www.creators-wonderland.com/ja/contests/robot-carnival\" rel=\"nofollow\">ロボットカーニバル 詳細ページ</a></p>\n<hr>\n<h2>クリエイターによるLT</h2>\n<p>AIを活用して作品制作を行っているクリエイターから、実際の制作事例を紹介します。</p>\n<p>完成した作品だけではなく、</p>\n<ul>\n<li>作品にどんな意図を込めたのか</li>\n<li>制作中にどこでつまずいたのか</li>\n<li>AIの出力をどうコントロールしたのか</li>\n<li>どのような演出や技術的工夫を行ったのか</li>\n<li>どのようなワークフローで作品を完成させたのか</li>\n</ul>\n<p>といった、<strong>制作の裏側や試行錯誤</strong>も実例とともに共有します。</p>\n<p>登壇者・LTタイトルについては決定次第お知らせします。</p>\n<hr>\n<h1>制作ワークショップ</h1>\n<h2><b>AIを使いながら、自分の意図を作品に反映させてみよう</b></h2>\n<p>ワークショップでは、実際にAIを使った制作に取り組みます。</p>\n<p>予定している内容の一例：</p>\n<ul>\n<li>ハーネスだけでは扱いきれない課題に対する<strong>Skillの設計・運用</strong></li>\n<li>Skillを使った演出・制作フローへの適用</li>\n<li><strong>CodexなどからMCP経由でツールを利用する制作</strong></li>\n<li>複数のAIツールを組み合わせたクリエイティブワークフロー</li>\n</ul>\n<p>単にAIにプロンプトを入力して作品を生成するだけではなく、</p>\n<p><strong>「どのようにAIを使えば、自分が意図した表現に近づけられるのか」</strong></p>\n<p>を実際に試していきます。</p>\n<p>使用するツールや詳細な手順については、内容確定後にご案内します。</p>\n<hr>\n<h2>ワークショップの流れ</h2>\n<h3>1. インプット</h3>\n<p>LTやデモを通して、AIを使った制作方法や工夫を知ります。</p>\n<p>↓</p>\n<h3>2. アイデア・演出を考える</h3>\n<p>何をつくるかだけではなく、</p>\n<p><strong>「何を伝えたいのか」<br>\n「どんな見せ方にしたいのか」</strong></p>\n<p>を考えます。</p>\n<p>↓</p>\n<h3>3. 制作・実験</h3>\n<p>AIツールやSkill、MCPなどを活用しながら、実際に作品を制作します。</p>\n<p>↓</p>\n<h3>4. 作品・工夫を共有</h3>\n<p>完成した作品だけでなく、</p>\n<ul>\n<li>表現の狙い</li>\n<li>試した手法</li>\n<li>上手くいかなかったこと</li>\n<li>技術的な工夫</li>\n<li>制作を通して得られた発見</li>\n</ul>\n<p>なども参加者同士で共有します。</p>\n<p><strong>完成度の高さだけを競うワークショップではありません。</strong></p>\n<p>新しい表現方法やワークフローを試すこと、その過程で得られた知見を共有することも、このイベントの大切な目的です。</p>\n<hr>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:00〜18:20</td>\n<td>開場・受付</td>\n</tr>\n<tr>\n<td>18:20〜18:30</td>\n<td>オープニング・イベント趣旨説明・スポンサー紹介</td>\n</tr>\n<tr>\n<td>18:30〜18:50</td>\n<td>クリエイターLT / 制作ワークフロー紹介</td>\n</tr>\n<tr>\n<td>18:50〜18:55</td>\n<td>Creators’ Wonderland / ロボットカーニバル紹介</td>\n</tr>\n<tr>\n<td>18:55〜19:00</td>\n<td>休憩・交流・ワークショップ準備</td>\n</tr>\n<tr>\n<td>19:00〜19:05</td>\n<td>ワークショップ・利用ツール説明</td>\n</tr>\n<tr>\n<td>19:05〜20:00</td>\n<td>制作ワークショップ</td>\n</tr>\n<tr>\n<td>20:00〜20:50</td>\n<td>作品・制作上の工夫を共有</td>\n</tr>\n<tr>\n<td>20:50〜21:30</td>\n<td>交流・ネットワーキング</td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>閉会</td>\n</tr>\n<tr>\n<td>21:45</td>\n<td>完全撤収</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>※登壇者数や当日の制作状況によってタイムテーブルを調整する場合があります。<br>\n※内容は今後変更となる可能性があります。</p>\n</blockquote>\n<hr>\n<h1>持ち物</h1>\n<ul>\n<li><strong>ノートPC</strong></li>\n<li><strong>PCの充電器</strong></li>\n</ul>\n<p><b><font color=\"red\">\n本イベントではPCを利用した制作ワークショップを行います。<br>\n現地参加される方はノートPC・充電器を忘れずにご持参ください。\n</font></b></p>\n<p>必要なアカウントや事前準備については、開催前にご案内します。</p>\n<hr>\n<h1>配信・作品公開</h1>\n<p>当日のワークショップは、<strong>AI駆動開発勉強会（AIDD）のYouTubeチャンネルで配信予定</strong>です。</p>\n<p>また、ワークショップで完成した作品については、<strong>Creators’ Wonderlandで公開予定</strong>です。</p>\n<p>イベント当日の体験だけで終わらず、作品や制作上の工夫を公開・共有することで、AIを活用した創作文化や新しいワークフローが広がっていくことを目指します。</p>\n<p>※配信範囲・配信URL等の詳細については決定次第ご案内します。<br>\n※作品公開については、制作内容や参加者本人の意向等を確認したうえで実施する予定です。</p>\n<hr>\n<h1>参加にあたって</h1>\n<ul>\n<li>現地参加枠は20名程度を予定しています。</li>\n<li>イベントの一部または全部をYouTubeで配信する予定です。</li>\n<li>会場内で写真・動画撮影を行う可能性があります。</li>\n<li>配信やイベントレポート等に参加者が映り込む場合があります。</li>\n<li>詳細な会場住所・入館方法については参加者向けにご案内します。</li>\n<li>登壇者、ワークショップ内容、使用ツール等は変更となる場合があります。</li>\n<li>ワークショップで使用する素材は、ご自身で利用・公開可能なものをご使用ください。</li>\n<li>制作物を公開する場合は、使用したAIサービス・素材等の利用規約をご確認ください。</li>\n<li>他の参加者の作品やアイデアを、本人の許可なく転載・二次利用することはお控えください。</li>\n</ul>\n<hr>\n<h1>主催・共催</h1>\n<h3>主催</h3>\n<p><a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会（AIDD）</a></p>\n<h3>共催</h3>\n<h2><a href=\"https://aihub.co.jp/\" rel=\"nofollow\">AiHUB株式会社</a> / <a href=\"https://www.creators-wonderland.com/ja\" rel=\"nofollow\">Creators’ Wonderland</a></h2>\n<h1>D-Labについて</h1>\n<p>『D-Lab』はメンタリストDaiGo氏が手掛ける学習プラットフォーム </p>\n<p>心理学をはじめ、さまざまな分野を学べるサービスです。中でも今、AIコンテンツや機能が非常に充実しています。 \n画面を見ながら学べるハンズオン講座が300本以上あり、ChatGPTだけでなく、話題のClaude Codeや画像・動画生成AIまで幅広くカバーしています。 </p>\n<p>プロンプトの組み立て方や業務自動化など、すぐに実務へ活かせるのが魅力です。 さらに、最新AIモデルが使い放題になる専用プランも用意されています。 </p>\n<p>AIを使った作業効率化や、独学でのキャッチアップを加速させたい方にとてもおすすめです。 </p>\n<hr>\n<h1>Alibaba Cloudについて</h1>\n<p>Alibaba Cloudは、強力な言語モデル「Qwen」やクラウド基盤の提供にとどまらず、テキスト・画像・動画・音声に至るまで、あらゆる表現を可能にする最先端の生成AIエコシステムを展開しています。\n現在、これらの技術はシステム開発の枠を超え、高精度な動画生成（HappyHorse、Wan）、画像生成（Qwen-Image）、さらに最新の音声認識や音声合成・変換（FunASR、Qwen-TTS/VC）など、クリエイティブ制作やビジネス企画の現場でも次々と新しいユースケースを生み出しています。</p>\n<p>本イベントではAlibaba Cloudが提供するAI映像制作プラットフォームである「WonderClip」を紹介させていただきます。\n生成AIを活用しながら、企画・脚本、絵コンテ、画像・動画生成、編集など、映像制作の複数の工程をつなぎながら制作を進めることができます。</p>\n<hr>\n<h1>AI駆動開発勉強会（AIDD）について</h1>\n<p>AI駆動開発勉強会（AI-Driven Development / AIDD）は、AI技術を活用した開発に興味を持つ方々に向けて、AIツールを使った開発ノウハウ、開発プロセスの最適化、生成AI・LLMを活用した新たな開発手法やテクニックについて共有・議論するコミュニティです。</p>\n<p>開発だけにとどまらず、AIによって変化する「つくる」という行為そのものについても、さまざまな分野の実践者とともに探求していきます。</p>\n<p>AI駆動開発勉強会は、すべての参加者が安心して学び、交流できるコミュニティの実現を目指しています。</p>\n<p>ご参加にあたっては、以下のアンチハラスメントポリシーをご確認ください。</p>\n<p><a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h2>スポンサー（Special Thanks）</h2>\n<p>本勉強会は以下の企業様のご協力により開催されます。</p>\n<ul>\n<li>会場提供：<a href=\"https://aihub.co.jp/\" rel=\"nofollow\">AiHUB株式会社</a></li>\n<li>配信協力：クリエーションライン株式会社</li>\n<li>クレジット協力・懇親会協力：<a href=\"https://www.alibabacloud.com/\" rel=\"nofollow\">Alibaba Cloud</a></li>\n</ul>",
-      "url": "https://aid.connpass.com/event/407197/",
-      "image_url": "https://media.connpass.com/thumbs/2c/7d/2c7dc6bc7d73388c93dd529c36e80de1.png",
-      "hash_tag": "",
-      "started_at": "2026-10-23T18:00:00+09:00",
-      "ended_at": "2026-10-23T22:00:00+09:00",
-      "published_at": "2026-10-11T13:59:19+09:00",
-      "limit": 170,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14543,
-        "subdomain": "aid",
-        "title": "AI駆動開発(AI-Driven Development)",
-        "url": "https://aid.connpass.com/"
-      },
-      "address": "東京都千代田区神田須田町2丁目1番地1 MA SQUARE 4F",
-      "place": "AiHUB株式会社",
-      "lat": "35.695955000000",
-      "lon": "139.771518200000",
-      "owner_id": 1359,
-      "owner_nickname": "kimotuki",
-      "owner_display_name": "Yasuhiro Arai",
-      "accepted": 155,
-      "waiting": 0,
-      "updated_at": "2026-10-22T03:06:37+09:00"
     },
     {
       "id": 407888,
@@ -338,6 +307,37 @@
       "accepted": 76,
       "waiting": 0,
       "updated_at": "2026-10-22T19:58:47+09:00"
+    },
+    {
+      "id": 407197,
+      "title": "AI駆動クリエイティブスペシャル #1",
+      "catch": "つくって楽しむワークショップ編",
+      "description": "<h1><b>AI駆動クリエイティブ #1</b></h1>\n<h2><b>つくって試すワークショップ</b></h2>\n<h2><b>AIを使った制作の工夫を知り、<br>自分の意思を持った演出と作品づくりを実践する。</b></h2>\n<p>生成AIによって、映像・画像・キャラクター・デザイン・ゲームなど、さまざまな表現を短時間で生み出せるようになりました。</p>\n<p>一方で、AIに「つくらせる」だけではなく、</p>\n<p><strong>何を表現したいのか。</strong><br>\n<strong>どんな演出にしたいのか。</strong><br>\n<strong>どこに自分の意図を込めるのか。</strong></p>\n<p>といった、クリエイター自身の意思や工夫がこれまで以上に重要になっています。</p>\n<p><strong>AI駆動クリエイティブ</strong>は、AIを使った制作の工夫や技術的なアプローチを共有しながら、参加者自身も実際に手を動かして作品づくりに取り組むイベントです。</p>\n<p>日本から生まれてきた創作文化や、長い時間をかけて磨かれてきた職人の技術・表現を、AI時代の新しい創作へどうつなげていくのか。</p>\n<p>AIを単なる生成ツールとして使うだけではなく、制作を支える技術やワークフローを考え、試し、共有することで、<strong>これからの創作文化の可能性を一緒に探ります。</strong></p>\n<p><strong>AI駆動で、クリエイティブを加速させよう。</strong><br>\n<strong>技術を試し、自分の意図を作品に込めてみよう。</strong></p>\n<hr>\n<h1>開催概要</h1>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>日時</td>\n<td><strong>2026年10月23日（金）18:00〜21:30</strong></td>\n</tr>\n<tr>\n<td>現地定員</td>\n<td><strong>20名程度</strong></td>\n</tr>\n<tr>\n<td>主催</td>\n<td><a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会（AIDD）</a></td>\n</tr>\n<tr>\n<td>共催</td>\n<td><a href=\"https://aihub.co.jp/\" rel=\"nofollow\">AiHUB株式会社</a> / <a href=\"https://www.creators-wonderland.com/ja\" rel=\"nofollow\">Creators’ Wonderland</a></td>\n</tr>\n<tr>\n<td>対象</td>\n<td>AIによる創作に関心のあるエンジニア・クリエイターなど</td>\n</tr>\n<tr>\n<td>持ち物</td>\n<td>ノートPC・充電器</td>\n</tr>\n</tbody>\n</table>\n<p>※詳細な会場住所・入館方法については、参加者向けに別途ご案内予定です。</p>\n<hr>\n<h1>こんな方におすすめ</h1>\n<ul>\n<li>AIを活用した創作・コンテンツ制作に興味がある方</li>\n<li>AIを使いながら、自分の意図を作品に反映させたい方</li>\n<li>AIクリエイターがどのように作品をつくっているのか知りたい方</li>\n<li>生成AIのワークフローや制作技術に興味がある方</li>\n<li>AIエージェントやMCP、Skillなどをクリエイティブ制作に応用してみたい方</li>\n<li>エンジニアリングとクリエイティブの両方に興味がある方</li>\n<li>AI時代の新しい創作文化について考えたい方</li>\n<li>Creators’ Wonderlandやロボットカーニバルに興味がある方</li>\n</ul>\n<hr>\n<h1>当日の内容</h1>\n<h2>Creators’ Wonderland / ロボットカーニバル紹介</h2>\n<p><a href=\"https://www.creators-wonderland.com/ja\" rel=\"nofollow\">Creators’ Wonderland</a>は、AiHUB株式会社が運営するAIクリエイターのための創作プラットフォームです。</p>\n<p>作品制作・投稿・企画への挑戦などを通じて、AI時代のクリエイターが活動できる場を展開しています。</p>\n<p>当日は、Creators’ Wonderlandの構想や活動とともに、開催されている<strong>「ロボットカーニバル」</strong>についても紹介します。</p>\n<p>▶️ <a href=\"https://www.creators-wonderland.com/ja/contests/robot-carnival\" rel=\"nofollow\">ロボットカーニバル 詳細ページ</a></p>\n<hr>\n<h2>クリエイターによるLT</h2>\n<p>AIを活用して作品制作を行っているクリエイターから、実際の制作事例を紹介します。</p>\n<p>完成した作品だけではなく、</p>\n<ul>\n<li>作品にどんな意図を込めたのか</li>\n<li>制作中にどこでつまずいたのか</li>\n<li>AIの出力をどうコントロールしたのか</li>\n<li>どのような演出や技術的工夫を行ったのか</li>\n<li>どのようなワークフローで作品を完成させたのか</li>\n</ul>\n<p>といった、<strong>制作の裏側や試行錯誤</strong>も実例とともに共有します。</p>\n<p>登壇者・LTタイトルについては決定次第お知らせします。</p>\n<hr>\n<h1>制作ワークショップ</h1>\n<h2><b>AIを使いながら、自分の意図を作品に反映させてみよう</b></h2>\n<p>ワークショップでは、実際にAIを使った制作に取り組みます。</p>\n<p>予定している内容の一例：</p>\n<ul>\n<li>ハーネスだけでは扱いきれない課題に対する<strong>Skillの設計・運用</strong></li>\n<li>Skillを使った演出・制作フローへの適用</li>\n<li><strong>CodexなどからMCP経由でツールを利用する制作</strong></li>\n<li>複数のAIツールを組み合わせたクリエイティブワークフロー</li>\n</ul>\n<p>単にAIにプロンプトを入力して作品を生成するだけではなく、</p>\n<p><strong>「どのようにAIを使えば、自分が意図した表現に近づけられるのか」</strong></p>\n<p>を実際に試していきます。</p>\n<p>使用するツールや詳細な手順については、内容確定後にご案内します。</p>\n<hr>\n<h2>ワークショップの流れ</h2>\n<h3>1. インプット</h3>\n<p>LTやデモを通して、AIを使った制作方法や工夫を知ります。</p>\n<p>↓</p>\n<h3>2. アイデア・演出を考える</h3>\n<p>何をつくるかだけではなく、</p>\n<p><strong>「何を伝えたいのか」<br>\n「どんな見せ方にしたいのか」</strong></p>\n<p>を考えます。</p>\n<p>↓</p>\n<h3>3. 制作・実験</h3>\n<p>AIツールやSkill、MCPなどを活用しながら、実際に作品を制作します。</p>\n<p>↓</p>\n<h3>4. 作品・工夫を共有</h3>\n<p>完成した作品だけでなく、</p>\n<ul>\n<li>表現の狙い</li>\n<li>試した手法</li>\n<li>上手くいかなかったこと</li>\n<li>技術的な工夫</li>\n<li>制作を通して得られた発見</li>\n</ul>\n<p>なども参加者同士で共有します。</p>\n<p><strong>完成度の高さだけを競うワークショップではありません。</strong></p>\n<p>新しい表現方法やワークフローを試すこと、その過程で得られた知見を共有することも、このイベントの大切な目的です。</p>\n<hr>\n<h1>タイムテーブル</h1>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:00〜18:20</td>\n<td>開場・受付</td>\n</tr>\n<tr>\n<td>18:20〜18:30</td>\n<td>オープニング・イベント趣旨説明・スポンサー紹介</td>\n</tr>\n<tr>\n<td>18:30〜18:50</td>\n<td>クリエイターLT / 制作ワークフロー紹介</td>\n</tr>\n<tr>\n<td>18:50〜18:55</td>\n<td>Creators’ Wonderland / ロボットカーニバル紹介</td>\n</tr>\n<tr>\n<td>18:55〜19:00</td>\n<td>休憩・交流・ワークショップ準備</td>\n</tr>\n<tr>\n<td>19:00〜19:05</td>\n<td>ワークショップ・利用ツール説明</td>\n</tr>\n<tr>\n<td>19:05〜20:00</td>\n<td>制作ワークショップ</td>\n</tr>\n<tr>\n<td>20:00〜20:50</td>\n<td>作品・制作上の工夫を共有</td>\n</tr>\n<tr>\n<td>20:50〜21:30</td>\n<td>交流・ネットワーキング</td>\n</tr>\n<tr>\n<td>21:30</td>\n<td>閉会</td>\n</tr>\n<tr>\n<td>21:45</td>\n<td>完全撤収</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>※登壇者数や当日の制作状況によってタイムテーブルを調整する場合があります。<br>\n※内容は今後変更となる可能性があります。</p>\n</blockquote>\n<hr>\n<h1>持ち物</h1>\n<ul>\n<li><strong>ノートPC</strong></li>\n<li><strong>PCの充電器</strong></li>\n</ul>\n<p><b><font color=\"red\">\n本イベントではPCを利用した制作ワークショップを行います。<br>\n現地参加される方はノートPC・充電器を忘れずにご持参ください。\n</font></b></p>\n<p>必要なアカウントや事前準備については、開催前にご案内します。</p>\n<hr>\n<h1>配信・作品公開</h1>\n<p>当日のワークショップは、<strong>AI駆動開発勉強会（AIDD）のYouTubeチャンネルで配信予定</strong>です。</p>\n<p>また、ワークショップで完成した作品については、<strong>Creators’ Wonderlandで公開予定</strong>です。</p>\n<p>イベント当日の体験だけで終わらず、作品や制作上の工夫を公開・共有することで、AIを活用した創作文化や新しいワークフローが広がっていくことを目指します。</p>\n<p>※配信範囲・配信URL等の詳細については決定次第ご案内します。<br>\n※作品公開については、制作内容や参加者本人の意向等を確認したうえで実施する予定です。</p>\n<hr>\n<h1>参加にあたって</h1>\n<ul>\n<li>現地参加枠は20名程度を予定しています。</li>\n<li>イベントの一部または全部をYouTubeで配信する予定です。</li>\n<li>会場内で写真・動画撮影を行う可能性があります。</li>\n<li>配信やイベントレポート等に参加者が映り込む場合があります。</li>\n<li>詳細な会場住所・入館方法については参加者向けにご案内します。</li>\n<li>登壇者、ワークショップ内容、使用ツール等は変更となる場合があります。</li>\n<li>ワークショップで使用する素材は、ご自身で利用・公開可能なものをご使用ください。</li>\n<li>制作物を公開する場合は、使用したAIサービス・素材等の利用規約をご確認ください。</li>\n<li>他の参加者の作品やアイデアを、本人の許可なく転載・二次利用することはお控えください。</li>\n</ul>\n<hr>\n<h1>主催・共催</h1>\n<h3>主催</h3>\n<p><a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会（AIDD）</a></p>\n<h3>共催</h3>\n<h2><a href=\"https://aihub.co.jp/\" rel=\"nofollow\">AiHUB株式会社</a> / <a href=\"https://www.creators-wonderland.com/ja\" rel=\"nofollow\">Creators’ Wonderland</a></h2>\n<h1>D-Labについて</h1>\n<p>『D-Lab』はメンタリストDaiGo氏が手掛ける学習プラットフォーム </p>\n<p>心理学をはじめ、さまざまな分野を学べるサービスです。中でも今、AIコンテンツや機能が非常に充実しています。 \n画面を見ながら学べるハンズオン講座が300本以上あり、ChatGPTだけでなく、話題のClaude Codeや画像・動画生成AIまで幅広くカバーしています。 </p>\n<p>プロンプトの組み立て方や業務自動化など、すぐに実務へ活かせるのが魅力です。 さらに、最新AIモデルが使い放題になる専用プランも用意されています。 </p>\n<p>AIを使った作業効率化や、独学でのキャッチアップを加速させたい方にとてもおすすめです。 </p>\n<hr>\n<h1>Alibaba Cloudについて</h1>\n<p>Alibaba Cloudは、強力な言語モデル「Qwen」やクラウド基盤の提供にとどまらず、テキスト・画像・動画・音声に至るまで、あらゆる表現を可能にする最先端の生成AIエコシステムを展開しています。\n現在、これらの技術はシステム開発の枠を超え、高精度な動画生成（HappyHorse、Wan）、画像生成（Qwen-Image）、さらに最新の音声認識や音声合成・変換（FunASR、Qwen-TTS/VC）など、クリエイティブ制作やビジネス企画の現場でも次々と新しいユースケースを生み出しています。</p>\n<p>本イベントではAlibaba Cloudが提供するAI映像制作プラットフォームである「WonderClip」を紹介させていただきます。\n生成AIを活用しながら、企画・脚本、絵コンテ、画像・動画生成、編集など、映像制作の複数の工程をつなぎながら制作を進めることができます。</p>\n<hr>\n<h1>AI駆動開発勉強会（AIDD）について</h1>\n<p>AI駆動開発勉強会（AI-Driven Development / AIDD）は、AI技術を活用した開発に興味を持つ方々に向けて、AIツールを使った開発ノウハウ、開発プロセスの最適化、生成AI・LLMを活用した新たな開発手法やテクニックについて共有・議論するコミュニティです。</p>\n<p>開発だけにとどまらず、AIによって変化する「つくる」という行為そのものについても、さまざまな分野の実践者とともに探求していきます。</p>\n<p>AI駆動開発勉強会は、すべての参加者が安心して学び、交流できるコミュニティの実現を目指しています。</p>\n<p>ご参加にあたっては、以下のアンチハラスメントポリシーをご確認ください。</p>\n<p><a href=\"https://www.ai-driven.dev/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%8F%E3%83%A9%E3%82%B9%E3%83%A1%E3%83%B3%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/\" rel=\"nofollow\">AI駆動開発勉強会 アンチハラスメントポリシー</a></p>\n<hr>\n<h2>スポンサー（Special Thanks）</h2>\n<p>本勉強会は以下の企業様のご協力により開催されます。</p>\n<ul>\n<li>会場提供：<a href=\"https://aihub.co.jp/\" rel=\"nofollow\">AiHUB株式会社</a></li>\n<li>配信協力：クリエーションライン株式会社</li>\n<li>クレジット協力・懇親会協力：<a href=\"https://www.alibabacloud.com/\" rel=\"nofollow\">Alibaba Cloud</a></li>\n</ul>",
+      "url": "https://aid.connpass.com/event/407197/",
+      "image_url": "https://media.connpass.com/thumbs/2c/7d/2c7dc6bc7d73388c93dd529c36e80de1.png",
+      "hash_tag": "",
+      "started_at": "2026-10-23T18:00:00+09:00",
+      "ended_at": "2026-10-23T22:00:00+09:00",
+      "published_at": "2026-10-11T13:59:19+09:00",
+      "limit": 170,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14543,
+        "subdomain": "aid",
+        "title": "AI駆動開発(AI-Driven Development)",
+        "url": "https://aid.connpass.com/"
+      },
+      "address": "東京都千代田区神田須田町2丁目1番地1 MA SQUARE 4F",
+      "place": "AiHUB株式会社",
+      "lat": "35.695955000000",
+      "lon": "139.771518200000",
+      "owner_id": 1359,
+      "owner_nickname": "kimotuki",
+      "owner_display_name": "Yasuhiro Arai",
+      "accepted": 158,
+      "waiting": 0,
+      "updated_at": "2026-10-22T03:06:37+09:00"
     },
     {
       "id": 407385,
