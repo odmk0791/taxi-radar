@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-24T04:40:26.392704+09:00",
+  "fetched_at": "2026-10-24T07:47:05.435344+09:00",
   "date": "20261024",
   "count": 34,
   "events": [
@@ -185,7 +185,7 @@
       "owner_id": 176,
       "owner_nickname": "hiro_y",
       "owner_display_name": "hiro_y",
-      "accepted": 4,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-10-08T15:17:11+09:00"
     },
@@ -526,7 +526,7 @@
       "owner_id": 168450,
       "owner_nickname": "TakashiToyosaki",
       "owner_display_name": "TakashiToyosaki",
-      "accepted": 715,
+      "accepted": 717,
       "waiting": 0,
       "updated_at": "2026-10-23T16:40:44+09:00"
     },
@@ -759,7 +759,7 @@
       "owner_id": 154325,
       "owner_nickname": "warppy251",
       "owner_display_name": "fukasawa",
-      "accepted": 26,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-10-05T14:13:03+09:00"
     },
@@ -790,7 +790,7 @@
       "owner_id": 8947,
       "owner_nickname": "kawaguti",
       "owner_display_name": "kawaguti",
-      "accepted": 27,
+      "accepted": 26,
       "waiting": 0,
       "updated_at": "2026-10-20T16:11:00+09:00"
     },
