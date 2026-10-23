@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-23T06:02:19.254800+09:00",
+  "fetched_at": "2026-10-23T09:17:43.139030+09:00",
   "date": "20261023",
   "count": 12,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 20941,
       "owner_nickname": "eterao",
       "owner_display_name": "eterao",
-      "accepted": 40,
+      "accepted": 39,
       "waiting": 0,
       "updated_at": "2026-10-01T15:51:11+09:00"
     },
@@ -154,7 +154,7 @@
       "owner_id": 5230,
       "owner_nickname": "tomio2480",
       "owner_display_name": "tomio",
-      "accepted": 4,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-10-22T19:54:19+09:00"
     },
@@ -185,7 +185,7 @@
       "owner_id": 1003750,
       "owner_nickname": "fffff_cafe",
       "owner_display_name": "FFFFF Cafe",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-10-18T15:50:35+09:00"
     },
@@ -278,37 +278,6 @@
       "updated_at": "2026-10-15T13:05:08+09:00"
     },
     {
-      "id": 407888,
-      "title": "Japan FinOps Community Gathering#2",
-      "catch": "FinOpsに興味がある方ならどなたでもOK！",
-      "description": "<h2>Japan FinOps Community Gathering とは？</h2>\n<p>Japan FinOps Community Gatheringは、立場や組織の垣根を越えて、FinOpsを実践する方々のネットワーキングを最大化し、現場の生きた知見を持ち寄り議論することを目的としたイベントです。堅苦しいルールを抜きにして、日本のFinOpsを一緒に面白くしていきたい、という想いのもと、ユーザー企業、SIer、ベンダー、クラウド事業者などの立場に関係なく、知見を共有できる主役になれる場所を目指しています。</p>\n<p>※本コミュニティイベントは、FinOps Foundation Japan Chapterの有志によって運営されていますが、FinOps Foundation公認の活動とは独立した、日本独自のコミュニティ活動です。</p>\n<h2>今回のイベント概要</h2>\n<p>第2回は、NTTデータ様のオフィスをお借りして開催します。各社でのFinOpsの取り組み事例の紹介などJFCならではの「誰もが主人公になれる」ラインナップでお届けします。</p>\n<ul>\n<li><strong>日時:</strong> 2026年10月23日(金) 18:00～21:30（受付開始は17:30）</li>\n<li><strong>会場:</strong> 株式会社NTTデータ（東京都江東区豊洲3-3-3 豊洲センタービル 36階）</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>17:30～18:00</td>\n<td>受付</td>\n<td></td>\n</tr>\n<tr>\n<td>18:00～18:10</td>\n<td>開会挨拶・連絡事項</td>\n<td>運営事務局</td>\n</tr>\n<tr>\n<td>18:10～18:25</td>\n<td><strong>FinOpsが企業文化として定着するまでの道程　～しまいには同人誌も書いた～</strong></td>\n<td>堀越 裕樹（株式会社マイネット）</td>\n</tr>\n<tr>\n<td>18:25～18:40</td>\n<td><strong>公共領域におけるFinOpsの取り組みについて</strong></td>\n<td>ソ・チャンギョ（株式会社マイクロニティ srest）</td>\n</tr>\n<tr>\n<td>18:40～18:55</td>\n<td><strong>グリーが挑戦を続ける大型ゲームインフラのFinOps</strong></td>\n<td>黒木 誠士（株式会社グリー）</td>\n</tr>\n<tr>\n<td>18:55～19:05</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>19:05～19:20</td>\n<td><strong>クラウドコスト診断200社超の我々が挑むLLMコスト削減</strong></td>\n<td>丹 哲郎（株式会社DELTA）</td>\n</tr>\n<tr>\n<td>19:20～19:35</td>\n<td><strong>ハードウェアベンダーから見る、ハイブリッドクラウド × AI時代のFinOps / Tokenomics</strong></td>\n<td>安江 啓人 （日本ヒューレット・パッカード合同会社）</td>\n</tr>\n<tr>\n<td>19:35～19:45</td>\n<td><strong>私たちが始めたTokenomics実践</strong></td>\n<td>株式会社NTTデータグループ まかせいのう</td>\n</tr>\n<tr>\n<td>19:45～19:55</td>\n<td>閉会挨拶、懇親会案内</td>\n<td>運営事務局</td>\n</tr>\n<tr>\n<td>19:55～20:10</td>\n<td>懇親会会場へ移動（同ビル別フロア）</td>\n<td></td>\n</tr>\n<tr>\n<td>20:10～21:30</td>\n<td>歓談・ネットワーキング</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※当日までに変更になる可能性もございます。</p>\n<h2>参加条件</h2>\n<p><strong>FinOpsに興味がある方ならどなたでもOK！</strong> エンジニア、経理、企画、マネージャーなど、立場を問わず大歓迎です。</p>\n<h2>行動規範</h2>\n<p>JFCは、参加者全員が互いに敬意を払い、安心して交流できる場であることを大切にします。</p>\n<ul>\n<li>建設的な議論と知見の共有を心がけ、他者の経験を尊重しましょう。</li>\n<li>特定の個人や企業への攻撃、ハラスメント行為は一切禁止します。</li>\n<li>営利目的の過度な営業活動は控え、まずは「FinOpsを推進する仲間」としての交流を楽しみましょう。</li>\n</ul>\n<h2>その他・注意事項</h2>\n<ul>\n<li><strong>記録と発信：</strong> イベントの様子を写真撮影し、SNSや公式ウェブサイト等で使用する場合があります。お顔出しがNGの方は、当日受付にて運営事務局スタッフまでお申し出ください。</li>\n<li><strong>飲食について：</strong> 懇親会では飲料と菓子類を用意する予定ですが、あくまで「交流」が目的です。飲食のみを目的とした参加はご遠慮ください。</li>\n<li><strong>キャンセルの場合：</strong> 一人でも多くの方が参加できるよう、欠席される場合はお早めのキャンセル処理をいただけると幸いです。</li>\n</ul>",
-      "url": "https://finops.connpass.com/event/407888/",
-      "image_url": "https://media.connpass.com/thumbs/e3/f4/e3f4bc9b073e70d5926fe41efe132e26.png",
-      "hash_tag": "",
-      "started_at": "2026-10-23T18:00:00+09:00",
-      "ended_at": "2026-10-23T21:30:00+09:00",
-      "published_at": "2026-09-25T15:21:08+09:00",
-      "limit": 100,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 15768,
-        "subdomain": "finops",
-        "title": "Japan FinOps Community",
-        "url": "https://finops.connpass.com/"
-      },
-      "address": "東京都江東区豊洲3-3-3 豊洲センタービル　36階",
-      "place": "豊洲センタービル",
-      "lat": "35.655862700000",
-      "lon": "139.796344600000",
-      "owner_id": 998991,
-      "owner_nickname": "WataruHirano",
-      "owner_display_name": "Wataru Hirano",
-      "accepted": 76,
-      "waiting": 0,
-      "updated_at": "2026-10-22T19:58:47+09:00"
-    },
-    {
       "id": 407197,
       "title": "AI駆動クリエイティブスペシャル #1",
       "catch": "つくって楽しむワークショップ編",
@@ -335,9 +304,40 @@
       "owner_id": 1359,
       "owner_nickname": "kimotuki",
       "owner_display_name": "Yasuhiro Arai",
-      "accepted": 158,
+      "accepted": 162,
       "waiting": 0,
       "updated_at": "2026-10-22T03:06:37+09:00"
+    },
+    {
+      "id": 407888,
+      "title": "Japan FinOps Community Gathering#2",
+      "catch": "FinOpsに興味がある方ならどなたでもOK！",
+      "description": "<h2>Japan FinOps Community Gathering とは？</h2>\n<p>Japan FinOps Community Gatheringは、立場や組織の垣根を越えて、FinOpsを実践する方々のネットワーキングを最大化し、現場の生きた知見を持ち寄り議論することを目的としたイベントです。堅苦しいルールを抜きにして、日本のFinOpsを一緒に面白くしていきたい、という想いのもと、ユーザー企業、SIer、ベンダー、クラウド事業者などの立場に関係なく、知見を共有できる主役になれる場所を目指しています。</p>\n<p>※本コミュニティイベントは、FinOps Foundation Japan Chapterの有志によって運営されていますが、FinOps Foundation公認の活動とは独立した、日本独自のコミュニティ活動です。</p>\n<h2>今回のイベント概要</h2>\n<p>第2回は、NTTデータ様のオフィスをお借りして開催します。各社でのFinOpsの取り組み事例の紹介などJFCならではの「誰もが主人公になれる」ラインナップでお届けします。</p>\n<ul>\n<li><strong>日時:</strong> 2026年10月23日(金) 18:00～21:30（受付開始は17:30）</li>\n<li><strong>会場:</strong> 株式会社NTTデータ（東京都江東区豊洲3-3-3 豊洲センタービル 36階）</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n<th>登壇者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>17:30～18:00</td>\n<td>受付</td>\n<td></td>\n</tr>\n<tr>\n<td>18:00～18:10</td>\n<td>開会挨拶・連絡事項</td>\n<td>運営事務局</td>\n</tr>\n<tr>\n<td>18:10～18:25</td>\n<td><strong>FinOpsが企業文化として定着するまでの道程　～しまいには同人誌も書いた～</strong></td>\n<td>堀越 裕樹（株式会社マイネット）</td>\n</tr>\n<tr>\n<td>18:25～18:40</td>\n<td><strong>公共領域におけるFinOpsの取り組みについて</strong></td>\n<td>ソ・チャンギョ（株式会社マイクロニティ srest）</td>\n</tr>\n<tr>\n<td>18:40～18:55</td>\n<td><strong>グリーが挑戦を続ける大型ゲームインフラのFinOps</strong></td>\n<td>黒木 誠士（株式会社グリー）</td>\n</tr>\n<tr>\n<td>18:55～19:05</td>\n<td>休憩</td>\n<td></td>\n</tr>\n<tr>\n<td>19:05～19:20</td>\n<td><strong>クラウドコスト診断200社超の我々が挑むLLMコスト削減</strong></td>\n<td>丹 哲郎（株式会社DELTA）</td>\n</tr>\n<tr>\n<td>19:20～19:35</td>\n<td><strong>ハードウェアベンダーから見る、ハイブリッドクラウド × AI時代のFinOps / Tokenomics</strong></td>\n<td>安江 啓人 （日本ヒューレット・パッカード合同会社）</td>\n</tr>\n<tr>\n<td>19:35～19:45</td>\n<td><strong>私たちが始めたTokenomics実践</strong></td>\n<td>株式会社NTTデータグループ まかせいのう</td>\n</tr>\n<tr>\n<td>19:45～19:55</td>\n<td>閉会挨拶、懇親会案内</td>\n<td>運営事務局</td>\n</tr>\n<tr>\n<td>19:55～20:10</td>\n<td>懇親会会場へ移動（同ビル別フロア）</td>\n<td></td>\n</tr>\n<tr>\n<td>20:10～21:30</td>\n<td>歓談・ネットワーキング</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>※当日までに変更になる可能性もございます。</p>\n<h2>参加条件</h2>\n<p><strong>FinOpsに興味がある方ならどなたでもOK！</strong> エンジニア、経理、企画、マネージャーなど、立場を問わず大歓迎です。</p>\n<h2>行動規範</h2>\n<p>JFCは、参加者全員が互いに敬意を払い、安心して交流できる場であることを大切にします。</p>\n<ul>\n<li>建設的な議論と知見の共有を心がけ、他者の経験を尊重しましょう。</li>\n<li>特定の個人や企業への攻撃、ハラスメント行為は一切禁止します。</li>\n<li>営利目的の過度な営業活動は控え、まずは「FinOpsを推進する仲間」としての交流を楽しみましょう。</li>\n</ul>\n<h2>その他・注意事項</h2>\n<ul>\n<li><strong>記録と発信：</strong> イベントの様子を写真撮影し、SNSや公式ウェブサイト等で使用する場合があります。お顔出しがNGの方は、当日受付にて運営事務局スタッフまでお申し出ください。</li>\n<li><strong>飲食について：</strong> 懇親会では飲料と菓子類を用意する予定ですが、あくまで「交流」が目的です。飲食のみを目的とした参加はご遠慮ください。</li>\n<li><strong>キャンセルの場合：</strong> 一人でも多くの方が参加できるよう、欠席される場合はお早めのキャンセル処理をいただけると幸いです。</li>\n</ul>",
+      "url": "https://finops.connpass.com/event/407888/",
+      "image_url": "https://media.connpass.com/thumbs/e3/f4/e3f4bc9b073e70d5926fe41efe132e26.png",
+      "hash_tag": "",
+      "started_at": "2026-10-23T18:00:00+09:00",
+      "ended_at": "2026-10-23T21:30:00+09:00",
+      "published_at": "2026-09-25T15:21:08+09:00",
+      "limit": 100,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 15768,
+        "subdomain": "finops",
+        "title": "Japan FinOps Community",
+        "url": "https://finops.connpass.com/"
+      },
+      "address": "東京都江東区豊洲3-3-3 豊洲センタービル　36階",
+      "place": "豊洲センタービル",
+      "lat": "35.655862700000",
+      "lon": "139.796344600000",
+      "owner_id": 998991,
+      "owner_nickname": "WataruHirano",
+      "owner_display_name": "Wataru Hirano",
+      "accepted": 79,
+      "waiting": 0,
+      "updated_at": "2026-10-22T19:58:47+09:00"
     },
     {
       "id": 407385,
