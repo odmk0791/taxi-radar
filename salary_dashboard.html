@@ -52,6 +52,7 @@
   .ban{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 6px;border-radius:6px;font-family:var(--mono);}
   .ban-J{background:rgba(88,166,255,.16);color:var(--accent2);}
   .ban-I{background:rgba(227,179,65,.22);color:var(--gold);}
+  .ban-A{background:rgba(63,185,80,.20);color:var(--accent);}
   .badge.done{background:rgba(63,185,80,.18);color:var(--accent);}
   .badge.future{background:rgba(88,166,255,.16);color:var(--accent2);}
   .badge.dai{background:rgba(227,179,65,.18);color:var(--gold);}
@@ -234,7 +235,7 @@ function isFormShift(iso){
   const[y,mo,d]=iso.split('/').map(Number); const key=cycleOf(y,mo,d);
   return (FORM_SHIFTS[key]||[]).includes(iso);
 }
-function recsOf(key){ return RECORDS.filter(r=>r.key===key && (r.deban==='J'||r.deban==='I')).sort((a,b)=>a.iso<b.iso?-1:1); }
+function recsOf(key){ return RECORDS.filter(r=>r.key===key && (r.deban==='J'||r.deban==='I'||r.deban==='A')).sort((a,b)=>a.iso<b.iso?-1:1); }
 function shiftRowsOf(key){
   const done=recsOf(key);
   const doneIso=new Set(done.map(r=>r.iso));
@@ -286,7 +287,7 @@ function renderOtTable(key){
   document.querySelector('#otTable tfoot').innerHTML=
     `<tr><td>合計</td><td>${doneN+futureN}</td><td></td><td>${fmtYen(revSum)}</td><td>${min2hm(kSum)}</td><td>消化${doneN}/予定${futureN}</td></tr>`;
   document.getElementById('otLegend').innerHTML=
-    rows.length? `消化 ${doneN}出番・これから ${futureN}出番。⚠は1出番20:59超（始末書ライン）。番：<span class="ban ban-J">J</span>16時点呼／<span class="ban ban-I">I</span>13〜15時半。`
+    rows.length? `消化 ${doneN}出番・これから ${futureN}出番。⚠は1出番20:59超（始末書ライン）。番：<span class="ban ban-J">J</span>16時点呼／<span class="ban ban-I">I</span>13〜15時半／<span class="ban ban-A">A</span>8時点呼。`
     : 'この周期の出番が未登録です。下のカレンダーで出番日をタップしてください。';
 }
 function renderTime(key){
