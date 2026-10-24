@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-10-25T06:21:04.196598+09:00",
+  "fetched_at": "2026-10-25T08:53:26.874050+09:00",
   "date": "20261025",
-  "count": 14,
+  "count": 15,
   "events": [
     {
       "id": 407850,
@@ -414,7 +414,7 @@
       "published_at": "2026-09-13T21:42:47+09:00",
       "limit": 1,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14409,
         "subdomain": "coderdojo-nihonbashi",
@@ -431,6 +431,37 @@
       "accepted": 0,
       "waiting": 0,
       "updated_at": "2026-09-13T21:42:47+09:00"
+    },
+    {
+      "id": 404636,
+      "title": "第二回　川口でもくもく会(初心者歓迎)",
+      "catch": "",
+      "description": "<h1>概要</h1>\n<p>ITに興味のある方が集まり、それぞれ自由に作業や勉強を進める「もくもく会」です。\n集中して作業したい方も、たまには誰かと同じ空間で頑張りたい方も、お気軽にご参加ください。</p>\n<p>プログラミング、資格勉強、個人開発、生成AIの活用、読書など、取り組む内容は自由です。</p>\n<p>初心者・学生の方も大歓迎！\n今回は<b style=\"color:red; font-size: 18px;\">川口</b>でもくもく会を開催します！</p>\n<h1>こんな方におすすめ</h1>\n<p>✅一人だと集中できないので、誰かと一緒にもくもくしたい</p>\n<p>✅勉強や副業を進める時間を確保したい</p>\n<p>✅ 川口近辺でエンジニア仲間を作りたい</p>\n<p>✅プログラミングや生成AIに関心があり、情報交換がしたい</p>\n<p>職種や経験は問いません。 興味がある方ならどなたでも大歓迎です！</p>\n<h1>タイムスケジュール</h1>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:50頃</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00〜13:15</td>\n<td style=\"text-align: left;\">自己紹介・今日やることの共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:15〜14:45</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45〜15:15</td>\n<td style=\"text-align: left;\">LTタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:15〜16:45</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:45〜16:55</td>\n<td style=\"text-align: left;\">今日やったことの共有</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">17:00</td>\n<td style=\"text-align: left;\">完全撤収</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>LTは希望者がいれば行います。もくもく会の中休みも兼ねてゆるゆる行いますので、どんな話題でもOKです！</li>\n<li>LTが長引いた場合はその分後半のもくもくタイムを減らします。</li>\n<li>途中参加・途中退室OK！</li>\n<li>飲食・会話OK！（周囲の迷惑にならない程度で）</li>\n</ul>\n<h1>会場</h1>\n<p>スペース: みらいスペース川口 - 貸し会議室</p>\n<p>URL: <a href=\"https://www.instabase.jp/space/7951609668\" rel=\"nofollow\">https://www.instabase.jp/space/7951609668</a></p>\n<p>■当スペースの地図と建物外観（下記URLよりご確認下さい）</p>\n<p><a href=\"https://drive.google.com/file/d/15lI7fBtMgTXYgLsLXtzeXta9nT0zN1bp/view\" rel=\"nofollow\">https://drive.google.com/file/d/15lI7fBtMgTXYgLsLXtzeXta9nT0zN1bp/view</a></p>\n<p>306号室です。</p>\n<h1>参加費</h1>\n<p>400円を検討しています(現金 or PayPay)</p>\n<h1>おでかけテックについて</h1>\n<p>主催者：ほりい</p>\n<p>都内のイベントに行くのが大変…それなら北関東で楽しく学び・交流できる場を作ろう！ という思いから、「おでかけテック」を立ち上げました。</p>\n<p>気軽に参加できるLT会やもくもく会を開催し、技術交流はもちろん、ご当地グルメや季節のイベントも楽しめる場を作っていきます。</p>\n<p>【Discordあります】</p>\n<p>主にイベントの告知に使いますが、雑談や参加者みなさんのイベントの宣伝、技術的なお困りごとの相談などなど、自由に使っていただいてOKです！</p>\n<p><a href=\"https://discord.gg/qeMZADpDTC\" rel=\"nofollow\">https://discord.gg/qeMZADpDTC</a></p>\n<h1>注意事項</h1>\n<ul>\n<li>ネットワークビジネスや宗教などの勧誘行為は禁止とさせていただきます。</li>\n<li>参加者同士が安心して交流できるよう、迷惑行為はご遠慮ください。</li>\n</ul>\n<h1>二次会（あるかも？）</h1>\n<p>イベント終了後、希望者がいれば近くのお店で軽くご飯(ラーメン屋とか定食屋とか)に行こうと思っています！\n当日の雰囲気で決めますので、お時間がある方はぜひご一緒しましょう。</p>",
+      "url": "https://odekake-tech.connpass.com/event/404636/",
+      "image_url": "https://media.connpass.com/thumbs/6d/39/6d39139a083b59a4ac114b76aedb5c10.png",
+      "hash_tag": "おでかけテック",
+      "started_at": "2026-10-25T13:00:00+09:00",
+      "ended_at": "2026-10-25T15:00:00+09:00",
+      "published_at": "2026-08-22T16:11:21+09:00",
+      "limit": 9,
+      "event_type": "participation",
+      "open_status": "cancelled",
+      "group": {
+        "id": 15952,
+        "subdomain": "odekake-tech",
+        "title": "おでかけテック",
+        "url": "https://odekake-tech.connpass.com/"
+      },
+      "address": "埼玉県川口市栄町3-9-11",
+      "place": "みらいスペース川口",
+      "lat": "35.803302400000",
+      "lon": "139.719895600000",
+      "owner_id": 742138,
+      "owner_nickname": "momo3090",
+      "owner_display_name": "ほりい",
+      "accepted": 1,
+      "waiting": 0,
+      "updated_at": "2026-09-16T22:18:05+09:00"
     }
   ]
 }
