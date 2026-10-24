@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-25T03:28:42.272211+09:00",
+  "fetched_at": "2026-10-25T06:21:04.196598+09:00",
   "date": "20261025",
   "count": 14,
   "events": [
@@ -159,37 +159,6 @@
       "updated_at": "2026-10-24T14:18:51+09:00"
     },
     {
-      "id": 408087,
-      "title": "第4回 よわよわセキュリティ勉強会（初心者歓迎・ゆるくもくもく＋LT）",
-      "catch": "こわくないセキュリティ勉強会",
-      "description": "<h1>概要</h1>\n<p>「セキュリティに興味はあるけど、ガチガチの勉強会はちょっとこわい…」\nそんな方向けの、ゆるい勉強会です。</p>\n<p>初心者の方も大歓迎です！\nゆるく一緒に学べる場にできればと思っています。</p>\n<p>今回は第3回目です！</p>\n<p>LTのテーマは<strong>自由（またはハロウィン🎃）</strong>です。</p>\n<h2>対象者</h2>\n<ul>\n<li>セキュリティに興味はあるけど、何から始めればいいかわからない方</li>\n<li>一人で勉強していて仲間がほしい方</li>\n<li>初心者でも安心して参加できる場を探している方</li>\n<li>LTで知識・技術を共有したい中上級者の方も歓迎です！</li>\n</ul>\n<h2>開催情報</h2>\n<ul>\n<li>日時：9/27（日）13:00〜16:00（12:30受付開始）</li>\n<li>会場：株式会社セキュアスカイ・テクノロジー 東京本社（都営新宿線「岩本町」駅　徒歩3分 / JR総武線快速「新日本橋」駅　徒歩7分 / JR・銀座線「神田」駅　徒歩7分 / 東京メトロ日比谷線「小伝馬町」駅　徒歩7分）</li>\n<li>定員：20名（LT枠3名・一般参加17名）</li>\n<li>参加費：無料</li>\n<li>飲食：持ち込みOK（匂いの強いものはご遠慮ください）</li>\n<li>設備：書籍、Wi-Fi、電源、プロジェクタあり（HDMI / Type-C対応）</li>\n</ul>\n<h2>タイムテーブル（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">開始・自己紹介 ＋ やること宣言</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10</td>\n<td style=\"text-align: left;\">もくもくタイム（勉強・読書など）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:40</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45</td>\n<td style=\"text-align: left;\">スポンサー紹介タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:50</td>\n<td style=\"text-align: left;\">LT（1人5分程度）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:20</td>\n<td style=\"text-align: left;\">もくもくタイムでやったこと発表（口頭）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:30</td>\n<td style=\"text-align: left;\">交流タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50</td>\n<td style=\"text-align: left;\">片付け</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00</td>\n<td style=\"text-align: left;\">終了</td>\n</tr>\n</tbody>\n</table>\n<h2>もくもくタイムについて</h2>\n<p>セキュリティに少しでも関係あればOKです！\n（例：読書 / 資格勉強 / 技術記事執筆 / 常設CTFをやる / 環境構築をやる など）</p>\n<p>何をやればいいかわからない場合は、その場で相談もOKです！</p>\n<h2>LTについて</h2>\n<p>フリーテーマで、学習法や事例・こんなことやってみたなどシェアいただけると嬉しいです！\nハロウィンに絡めてもOKです（JSON, 仮想技術など）👻</p>\n<p>スライドなし・軽い共有・初めてのLT大歓迎です！</p>\n<h2>Q&amp;A</h2>\n<ul>\n<li>Q. セキュリティが全くわからない非エンジニアでも参加していいですか？</li>\n<li>A. 大歓迎です！基礎からゆるく学べる場を目指しています</li>\n<li>Q. よわよわ（初心者）じゃない中上級者でも参加していい？</li>\n<li>A. ぜひどうぞ！LTや質問対応などで、場を一緒に盛り上げていただけると嬉しいです！</li>\n</ul>\n<h2>会場スポンサー</h2>\n<p><a href=\"https://www.securesky-tech.com/\" rel=\"nofollow\">株式会社セキュアスカイ・テクノロジー さま</a></p>\n<h2>注意事項</h2>\n<p>ハラスメント行為は禁止です。\n技術レベルでのマウントなどはご遠慮ください。</p>\n<p>違反があった場合は運営が対応します。</p>\n<h2>お願い</h2>\n<p>少人数開催のため、満席の場合はご了承ください。</p>\n<p>また、参加できなくなった場合はお早めにキャンセルをお願いします。</p>\n<p><strong>ゆるく、楽しく、一緒に学びましょう〜🐣</strong></p>",
-      "url": "https://yowayowasec.connpass.com/event/408087/",
-      "image_url": null,
-      "hash_tag": "yowasec",
-      "started_at": "2026-10-25T13:00:00+09:00",
-      "ended_at": "2026-10-25T16:00:00+09:00",
-      "published_at": "2026-09-27T13:57:09+09:00",
-      "limit": 26,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17633,
-        "subdomain": "yowayowasec",
-        "title": "よわよわセキュリティ勉強会",
-        "url": "https://yowayowasec.connpass.com/"
-      },
-      "address": "東京都千代田区岩本町2-2-4 (PMO神田岩本町II 10F)",
-      "place": "株式会社セキュアスカイ・テクノロジー 東京本社",
-      "lat": "35.692967500000",
-      "lon": "139.775314900000",
-      "owner_id": 224259,
-      "owner_nickname": "akihanari",
-      "owner_display_name": "choco_py3",
-      "accepted": 26,
-      "waiting": 1,
-      "updated_at": "2026-10-05T01:01:18+09:00"
-    },
-    {
       "id": 408135,
       "title": "FileMakerもくもく会#130",
       "catch": "",
@@ -278,6 +247,37 @@
       "updated_at": "2026-10-19T15:31:21+09:00"
     },
     {
+      "id": 408087,
+      "title": "第4回 よわよわセキュリティ勉強会（初心者歓迎・ゆるくもくもく＋LT）",
+      "catch": "こわくないセキュリティ勉強会",
+      "description": "<h1>概要</h1>\n<p>「セキュリティに興味はあるけど、ガチガチの勉強会はちょっとこわい…」\nそんな方向けの、ゆるい勉強会です。</p>\n<p>初心者の方も大歓迎です！\nゆるく一緒に学べる場にできればと思っています。</p>\n<p>今回は第3回目です！</p>\n<p>LTのテーマは<strong>自由（またはハロウィン🎃）</strong>です。</p>\n<h2>対象者</h2>\n<ul>\n<li>セキュリティに興味はあるけど、何から始めればいいかわからない方</li>\n<li>一人で勉強していて仲間がほしい方</li>\n<li>初心者でも安心して参加できる場を探している方</li>\n<li>LTで知識・技術を共有したい中上級者の方も歓迎です！</li>\n</ul>\n<h2>開催情報</h2>\n<ul>\n<li>日時：9/27（日）13:00〜16:00（12:30受付開始）</li>\n<li>会場：株式会社セキュアスカイ・テクノロジー 東京本社（都営新宿線「岩本町」駅　徒歩3分 / JR総武線快速「新日本橋」駅　徒歩7分 / JR・銀座線「神田」駅　徒歩7分 / 東京メトロ日比谷線「小伝馬町」駅　徒歩7分）</li>\n<li>定員：20名（LT枠3名・一般参加17名）</li>\n<li>参加費：無料</li>\n<li>飲食：持ち込みOK（匂いの強いものはご遠慮ください）</li>\n<li>設備：書籍、Wi-Fi、電源、プロジェクタあり（HDMI / Type-C対応）</li>\n</ul>\n<h2>タイムテーブル（予定）</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30</td>\n<td style=\"text-align: left;\">受付開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00</td>\n<td style=\"text-align: left;\">開始・自己紹介 ＋ やること宣言</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10</td>\n<td style=\"text-align: left;\">もくもくタイム（勉強・読書など）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:40</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45</td>\n<td style=\"text-align: left;\">スポンサー紹介タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:50</td>\n<td style=\"text-align: left;\">LT（1人5分程度）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:20</td>\n<td style=\"text-align: left;\">もくもくタイムでやったこと発表（口頭）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:30</td>\n<td style=\"text-align: left;\">交流タイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:50</td>\n<td style=\"text-align: left;\">片付け</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:00</td>\n<td style=\"text-align: left;\">終了</td>\n</tr>\n</tbody>\n</table>\n<h2>もくもくタイムについて</h2>\n<p>セキュリティに少しでも関係あればOKです！\n（例：読書 / 資格勉強 / 技術記事執筆 / 常設CTFをやる / 環境構築をやる など）</p>\n<p>何をやればいいかわからない場合は、その場で相談もOKです！</p>\n<h2>LTについて</h2>\n<p>フリーテーマで、学習法や事例・こんなことやってみたなどシェアいただけると嬉しいです！\nハロウィンに絡めてもOKです（JSON, 仮想技術など）👻</p>\n<p>スライドなし・軽い共有・初めてのLT大歓迎です！</p>\n<h2>Q&amp;A</h2>\n<ul>\n<li>Q. セキュリティが全くわからない非エンジニアでも参加していいですか？</li>\n<li>A. 大歓迎です！基礎からゆるく学べる場を目指しています</li>\n<li>Q. よわよわ（初心者）じゃない中上級者でも参加していい？</li>\n<li>A. ぜひどうぞ！LTや質問対応などで、場を一緒に盛り上げていただけると嬉しいです！</li>\n</ul>\n<h2>会場スポンサー</h2>\n<p><a href=\"https://www.securesky-tech.com/\" rel=\"nofollow\">株式会社セキュアスカイ・テクノロジー さま</a></p>\n<h2>注意事項</h2>\n<p>ハラスメント行為は禁止です。\n技術レベルでのマウントなどはご遠慮ください。</p>\n<p>違反があった場合は運営が対応します。</p>\n<h2>お願い</h2>\n<p>少人数開催のため、満席の場合はご了承ください。</p>\n<p>また、参加できなくなった場合はお早めにキャンセルをお願いします。</p>\n<p><strong>ゆるく、楽しく、一緒に学びましょう〜🐣</strong></p>",
+      "url": "https://yowayowasec.connpass.com/event/408087/",
+      "image_url": null,
+      "hash_tag": "yowasec",
+      "started_at": "2026-10-25T13:00:00+09:00",
+      "ended_at": "2026-10-25T16:00:00+09:00",
+      "published_at": "2026-09-27T13:57:09+09:00",
+      "limit": 26,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 17633,
+        "subdomain": "yowayowasec",
+        "title": "よわよわセキュリティ勉強会",
+        "url": "https://yowayowasec.connpass.com/"
+      },
+      "address": "東京都千代田区岩本町2-2-4 (PMO神田岩本町II 10F)",
+      "place": "株式会社セキュアスカイ・テクノロジー 東京本社",
+      "lat": "35.692967500000",
+      "lon": "139.775314900000",
+      "owner_id": 224259,
+      "owner_nickname": "akihanari",
+      "owner_display_name": "choco_py3",
+      "accepted": 25,
+      "waiting": 1,
+      "updated_at": "2026-10-05T01:01:18+09:00"
+    },
+    {
       "id": 408807,
       "title": "ディストリビューション開発もくもく会 2026年10月",
       "catch": "",
@@ -340,37 +340,6 @@
       "updated_at": "2026-10-14T12:01:01+09:00"
     },
     {
-      "id": 409553,
-      "title": "『統計的仮説検定の方法論』勉強会第6回",
-      "catch": "統計学の中で最重要な検定論を勉強する会です",
-      "description": "<h3>内容</h3>\n<p>『統計的仮説検定の方法論』星野匡郎著の勉強会です。<br>\n今回は第6章　コンフォーマル予測 より再開となります<br>\n統計学の中で非常に重要ですが、難易度の高い検定論を集中して学ぶ勉強会です。<br>\n以下、進め方です。<br>\n1. チェックポイントを決めて、そこまで各自で黙読<br>\n2. 黙読して疑問がある箇所を参加者が自由に挙げる<br>\n3. 疑問点や関連話題を議論<br>\n4. 1-3 を何回か回す<br></p>\n<p>演習問題に取り組んだり、各自で読み進めていただくパートを設ける場合もありますが、聞くだけの参加も歓迎です！<br></p>\n<h3>場所</h3>\n<p>通常、神保町・水道橋周辺の貸し会議室とします<br></p>\n<h3>対象</h3>\n<p>ご興味のある方はどなたでも構いません。<br>\n学生時代の専攻も問いません。<br></p>\n<h3>当日の準備</h3>\n<p>本書，筆記用具，ノート<br>\n貸し出しはございません。<br></p>\n<h3>学割について</h3>\n<p>社会人学生の方は対象外です。<br>\n価格を見直すことがございます。</p>",
-      "url": "https://ml-for-experts.connpass.com/event/409553/",
-      "image_url": "https://media.connpass.com/thumbs/3e/2e/3e2ea6621f2a6027078c1ca1caffc0a2.png",
-      "hash_tag": "",
-      "started_at": "2026-10-25T10:00:00+09:00",
-      "ended_at": "2026-10-25T12:00:00+09:00",
-      "published_at": "2026-10-11T11:31:10+09:00",
-      "limit": 9,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 5495,
-        "subdomain": "ml-for-experts",
-        "title": "AI・機械学習 for Experts",
-        "url": "https://ml-for-experts.connpass.com/"
-      },
-      "address": "東京都千代田区神田神保町2-20-6 恒倉ビル1階",
-      "place": "神保町Expression会議室",
-      "lat": "35.697371200000",
-      "lon": "139.756257100000",
-      "owner_id": 228599,
-      "owner_nickname": "lib-arts-adm",
-      "owner_display_name": "lib-arts-adm",
-      "accepted": 4,
-      "waiting": 0,
-      "updated_at": "2026-10-11T11:41:13+09:00"
-    },
-    {
       "id": 410872,
       "title": "593rd Dev Morning",
       "catch": "週末の朝に趣味で集まって、もくもく手を動かします",
@@ -400,6 +369,37 @@
       "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-10-24T07:04:23+09:00"
+    },
+    {
+      "id": 409553,
+      "title": "『統計的仮説検定の方法論』勉強会第6回",
+      "catch": "統計学の中で最重要な検定論を勉強する会です",
+      "description": "<h3>内容</h3>\n<p>『統計的仮説検定の方法論』星野匡郎著の勉強会です。<br>\n今回は第6章　コンフォーマル予測 より再開となります<br>\n統計学の中で非常に重要ですが、難易度の高い検定論を集中して学ぶ勉強会です。<br>\n以下、進め方です。<br>\n1. チェックポイントを決めて、そこまで各自で黙読<br>\n2. 黙読して疑問がある箇所を参加者が自由に挙げる<br>\n3. 疑問点や関連話題を議論<br>\n4. 1-3 を何回か回す<br></p>\n<p>演習問題に取り組んだり、各自で読み進めていただくパートを設ける場合もありますが、聞くだけの参加も歓迎です！<br>\n最初の10分で入室・準備とします。</p>\n<h3>場所</h3>\n<p>通常、神保町・水道橋周辺の貸し会議室とします<br></p>\n<h3>対象</h3>\n<p>ご興味のある方はどなたでも構いません。<br>\n学生時代の専攻も問いません。<br></p>\n<h3>当日の準備</h3>\n<p>本書，筆記用具，ノート<br>\n貸し出しはございません。<br></p>\n<h3>学割について</h3>\n<p>社会人学生の方は対象外です。<br>\n価格を見直すことがございます。</p>",
+      "url": "https://ml-for-experts.connpass.com/event/409553/",
+      "image_url": "https://media.connpass.com/thumbs/3e/2e/3e2ea6621f2a6027078c1ca1caffc0a2.png",
+      "hash_tag": "",
+      "started_at": "2026-10-25T10:00:00+09:00",
+      "ended_at": "2026-10-25T12:00:00+09:00",
+      "published_at": "2026-10-11T11:31:10+09:00",
+      "limit": 9,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 5495,
+        "subdomain": "ml-for-experts",
+        "title": "AI・機械学習 for Experts",
+        "url": "https://ml-for-experts.connpass.com/"
+      },
+      "address": "東京都千代田区神田神保町2-20-6 恒倉ビル1階",
+      "place": "神保町Expression会議室",
+      "lat": "35.697371200000",
+      "lon": "139.756257100000",
+      "owner_id": 228599,
+      "owner_nickname": "lib-arts-adm",
+      "owner_display_name": "lib-arts-adm",
+      "accepted": 4,
+      "waiting": 0,
+      "updated_at": "2026-10-25T04:45:18+09:00"
     },
     {
       "id": 406841,
