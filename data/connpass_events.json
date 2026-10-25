@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-10-26T01:59:36.864570+09:00",
+  "fetched_at": "2026-10-26T04:28:49.076805+09:00",
   "date": "20261026",
-  "count": 10,
+  "count": 9,
   "events": [
     {
       "id": 399629,
@@ -64,6 +64,37 @@
       "accepted": 22,
       "waiting": 0,
       "updated_at": "2026-10-16T10:13:04+09:00"
+    },
+    {
+      "id": 408396,
+      "title": "JP_Stripes Tokyo vol.27",
+      "catch": "エージェンティックコマースの現在地を知る",
+      "description": "<p><a href=\"https://www.facebook.com/groups/jpstripes\" rel=\"nofollow\">JP_Stripes</a> は全国10都市以上で開催されている、決済プラットフォーム：Stripeのユーザーコミュニティです。</p>\n<p>今回のテーマは、<strong>「エージェンティックコマース」</strong>。</p>\n<p>AIが商品を探して比較するだけでなく、ユーザーに代わって購入・決済まで行う世界が現実になりつつあります。9/30に開催された Stripe Tour Tokyo 2026 でも大きく取り上げられたこのテーマについて、Stripeの最新動向とともに掘り下げます。</p>\n<p>当日は、Stripe Tour Tokyo 2026の振り返りに加え、Stripe 石川さんかIエージェンティックコマースの最新潮流をご紹介いただく予定です。さらに、参加者によるライトニングトークも実施します。</p>\n<p>AIによって「買い方」「売り方」「決済」がどう変わっていくのか。その変化に、どのように対応していくのか？</p>\n<p>EC・サブスクなどのオンラインビジネスに携わる方はもちろん、AI時代の新しいマネタイズに興味のある方も、ぜひご参加ください！</p>\n<p>&lt;Stripe Tour Tokyo の模様＞\n<img alt=\"Stripe Tour Tokyo 2026の模様\" src=\"https://pbs.twimg.com/media/HTbm-tJagAAT8XX?format=jpg&amp;name=small\"></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Time</th>\n<th style=\"text-align: left;\">コンテンツ</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:40</td>\n<td style=\"text-align: left;\">Open</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">JP_Stripes Tokyo 運営チーム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">会場スポンサーセッション</td>\n<td style=\"text-align: left;\">コラボスタイル</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">Stripe Tour Tokyo2026 振り返り</td>\n<td style=\"text-align: left;\">Stripe 小島さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">AIエージェンティックコマース最新潮流</td>\n<td style=\"text-align: left;\">Stripe 石川さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10</td>\n<td style=\"text-align: left;\">ライトニングトーク①  パートナー視点でみたStripe Tour Tokyoトピックとエージェンティックコマースの現在</td>\n<td style=\"text-align: left;\">富士ソフト　貴田さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15</td>\n<td style=\"text-align: left;\">ライトニングトーク②  Stripe Tour Tokyoで気になったMPP — AIが支払うための仕組みを追ってみた</td>\n<td style=\"text-align: left;\">Postman　川崎さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">ライトニングトーク③</td>\n<td style=\"text-align: left;\">募集中</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:25</td>\n<td style=\"text-align: left;\">Q＆A～クロージング</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30</td>\n<td style=\"text-align: left;\">会場内でミニ懇親会（30分程度）</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>【重要】19時以降にご来場される方へ</h2>\n<p>場である「八重洲ダイビル」はセキュリティの都合上、<strong>19:00に自動ドアが施錠されます。</strong></p>\n<p>19:00 以降に到着された場合、「地下1階の入り口」へお回りください。\n19:10 頃までイベントスタッフが入り口で待機しております。案内しますのでお声がけください。 それ以降に到着される方は connpass メッセージでご連絡ください。</p>\n<p>詳細については<a href=\"https://www.daibiru.co.jp/_assets/pdf/properties/pamphlet_yaesu.pdf#page=6\" rel=\"nofollow\">「八重洲ダイビルパンフレット 2025 改定」の6枚目（9-10P）</a>を参照ください</p>",
+      "url": "https://jpstripes.connpass.com/event/408396/",
+      "image_url": "https://media.connpass.com/thumbs/7e/25/7e25ef2cf46754b367d708083d15bf87.png",
+      "hash_tag": "",
+      "started_at": "2026-10-26T19:00:00+09:00",
+      "ended_at": "2026-10-26T20:30:00+09:00",
+      "published_at": "2026-09-30T09:01:16+09:00",
+      "limit": 28,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 12610,
+        "subdomain": "jpstripes",
+        "title": "JP_Stripes",
+        "url": "https://jpstripes.connpass.com/"
+      },
+      "address": "〒104-0031 東京都中央区京橋1-1-1 （八重洲ダイビル 7階）",
+      "place": "コラボベースTOKYO（株式会社コラボスタイル）",
+      "lat": "35.679384300000",
+      "lon": "139.770559300000",
+      "owner_id": 287011,
+      "owner_nickname": "tomodian",
+      "owner_display_name": "tomodian",
+      "accepted": 12,
+      "waiting": 0,
+      "updated_at": "2026-10-21T15:57:22+09:00"
     },
     {
       "id": 409504,
@@ -159,37 +190,6 @@
       "updated_at": "2026-10-26T00:08:25+09:00"
     },
     {
-      "id": 408396,
-      "title": "JP_Stripes Tokyo vol.27",
-      "catch": "エージェンティックコマースの現在地を知る",
-      "description": "<p><a href=\"https://www.facebook.com/groups/jpstripes\" rel=\"nofollow\">JP_Stripes</a> は全国10都市以上で開催されている、決済プラットフォーム：Stripeのユーザーコミュニティです。</p>\n<p>今回のテーマは、<strong>「エージェンティックコマース」</strong>。</p>\n<p>AIが商品を探して比較するだけでなく、ユーザーに代わって購入・決済まで行う世界が現実になりつつあります。9/30に開催された Stripe Tour Tokyo 2026 でも大きく取り上げられたこのテーマについて、Stripeの最新動向とともに掘り下げます。</p>\n<p>当日は、Stripe Tour Tokyo 2026の振り返りに加え、Stripe 石川さんかIエージェンティックコマースの最新潮流をご紹介いただく予定です。さらに、参加者によるライトニングトークも実施します。</p>\n<p>AIによって「買い方」「売り方」「決済」がどう変わっていくのか。その変化に、どのように対応していくのか？</p>\n<p>EC・サブスクなどのオンラインビジネスに携わる方はもちろん、AI時代の新しいマネタイズに興味のある方も、ぜひご参加ください！</p>\n<p>&lt;Stripe Tour Tokyo の模様＞\n<img alt=\"Stripe Tour Tokyo 2026の模様\" src=\"https://pbs.twimg.com/media/HTbm-tJagAAT8XX?format=jpg&amp;name=small\"></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Time</th>\n<th style=\"text-align: left;\">コンテンツ</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:40</td>\n<td style=\"text-align: left;\">Open</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">JP_Stripes Tokyo 運営チーム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:05</td>\n<td style=\"text-align: left;\">会場スポンサーセッション</td>\n<td style=\"text-align: left;\">コラボスタイル</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10</td>\n<td style=\"text-align: left;\">Stripe Tour Tokyo2026 振り返り</td>\n<td style=\"text-align: left;\">Stripe 小島さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:30</td>\n<td style=\"text-align: left;\">AIエージェンティックコマース最新潮流</td>\n<td style=\"text-align: left;\">Stripe 石川さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:00</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:10</td>\n<td style=\"text-align: left;\">ライトニングトーク①  パートナー視点でみたStripe Tour Tokyoトピックとエージェンティックコマースの現在</td>\n<td style=\"text-align: left;\">富士ソフト　貴田さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15</td>\n<td style=\"text-align: left;\">ライトニングトーク②  Stripe Tour Tokyoで気になったMPP — AIが支払うための仕組みを追ってみた</td>\n<td style=\"text-align: left;\">Postman　川崎さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:20</td>\n<td style=\"text-align: left;\">ライトニングトーク③</td>\n<td style=\"text-align: left;\">募集中</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:25</td>\n<td style=\"text-align: left;\">Q＆A～クロージング</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:30</td>\n<td style=\"text-align: left;\">会場内でミニ懇親会（30分程度）</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<h2>【重要】19時以降にご来場される方へ</h2>\n<p>場である「八重洲ダイビル」はセキュリティの都合上、<strong>19:00に自動ドアが施錠されます。</strong></p>\n<p>19:00 以降に到着された場合、「地下1階の入り口」へお回りください。\n19:10 頃までイベントスタッフが入り口で待機しております。案内しますのでお声がけください。 それ以降に到着される方は connpass メッセージでご連絡ください。</p>\n<p>詳細については<a href=\"https://www.daibiru.co.jp/_assets/pdf/properties/pamphlet_yaesu.pdf#page=6\" rel=\"nofollow\">「八重洲ダイビルパンフレット 2025 改定」の6枚目（9-10P）</a>を参照ください</p>",
-      "url": "https://jpstripes.connpass.com/event/408396/",
-      "image_url": "https://media.connpass.com/thumbs/7e/25/7e25ef2cf46754b367d708083d15bf87.png",
-      "hash_tag": "",
-      "started_at": "2026-10-26T19:00:00+09:00",
-      "ended_at": "2026-10-26T20:30:00+09:00",
-      "published_at": "2026-09-30T09:01:16+09:00",
-      "limit": 28,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 12610,
-        "subdomain": "jpstripes",
-        "title": "JP_Stripes",
-        "url": "https://jpstripes.connpass.com/"
-      },
-      "address": "〒104-0031 東京都中央区京橋1-1-1 （八重洲ダイビル 7階）",
-      "place": "コラボベースTOKYO（株式会社コラボスタイル）",
-      "lat": "35.679384300000",
-      "lon": "139.770559300000",
-      "owner_id": 287011,
-      "owner_nickname": "tomodian",
-      "owner_display_name": "tomodian",
-      "accepted": 12,
-      "waiting": 0,
-      "updated_at": "2026-10-21T15:57:22+09:00"
-    },
-    {
       "id": 406280,
       "title": "企業合同プログラミングコンテスト 2026秋",
       "catch": "",
@@ -276,37 +276,6 @@
       "accepted": 4,
       "waiting": 0,
       "updated_at": "2026-10-19T14:43:51+09:00"
-    },
-    {
-      "id": 408735,
-      "title": "InnerSource Commons Japan Meetup – October 2026",
-      "catch": "「InnerSource Commons Japan のビジョン・方針策定」",
-      "description": "<h2>InnerSource Commons Japan Meetup – October 2026</h2>\n<p>「InnerSource Commons Japan のビジョン・方針策定」</p>\n<h3>🌟 開催概要</h3>\n<p>今回のMeetupでは参加者の皆さんと「InnerSource Commons Japan のビジョン・方針策定」について議論します。\n運営チームで作成したビジョン・方針の草案をもとに、皆さんとのディスカッションを通じてブラッシュアップしていきたいと考えています。\n また、軽い飲食を交えながら、いつも通りの柔らかな雰囲気でネットワーキングやさまざまなトピックの情報交換も楽しめればと思います。</p>\n<h3>📍 開催情報</h3>\n<p>日程: 2026年 10/26(月) 19:00-21:00  (※18:00より開場)<br>\n開催形式: 対面 途中参加・途中退出OK<br>\n開催場所:〒220-0012 神奈川県 横浜市西区 みなとみらい4-4-5 横浜アイマークプレイス10F\n<br>\n三菱電機株式会社 共創空間 Serendie Street Yokohama<br>\n新高島駅（みなとみらい線） 徒歩7分<br>\nみなとみらい駅（みなとみらい線） 徒歩9分</p>\n<h3>🎫 参加申し込み方法</h3>\n<p>参加申し込みは<strong>本ページ右上「<a href=\"https://innersourcecommons.connpass.com/event/408735/join/\" rel=\"nofollow\">このイベントの申し込む</a>」ボタン</strong>よりお願いいたします。<br>\n(申込期限 :<strong> 10/20(火) 12:00まで</strong>)<br>\n※締切後も調整可能です。運営チームまでご相談ください。</p>\n<h2>InnerSource Commons</h2>\n<p>InnerSource Commons のミッションは「<strong>エンジニア組織のサイロを解消し、組織横断のコラボレーションを実現すること</strong>」 です。 インナーソースとは<strong>オープンソースの開発スタイルを企業内で実践する</strong>ことですが、インナーソース戦略の採用で、<strong>組織における車輪の再発明を防止するとともに価値創造を加速することができます</strong>。</p>\n<p>InnerSource Commonsは、インナーソースの世界最大のコミュニティです。2015年に設立され、現在は世界中で <strong>2000人</strong>以上の個人と、<strong>750</strong>以上の組織が参画しています。 インナーソースのコミュニティは世界に広がっています。InnerSourceの旅における素敵な仲間を味方につけましょう！</p>\n<p>InnerSource Commons Japan では InnerSource に関する書籍の日本語訳や、過去の Meetup の録画を公開しています！ すべて無料で公開していますので、一緒に InnerSource について理解を深めていきましょう！</p>\n<p><a href=\"https://innersourcecommons.org/ja/learn/books/\" rel=\"nofollow\">Books🇯🇵</a> / <a href=\"https://www.youtube.com/@InnerSourceCommonsJapan\" rel=\"nofollow\">Youtube🇯🇵</a></p>\n<p><a href=\"https://innersourcecommons.org/slack\" rel=\"nofollow\"><img src=\"https://yukihattori.blob.core.windows.net/contents/join-slack.png\" width=\"200\" alt=\"Slackに参加！\"></a><br></p>\n<p>🇯🇵 日本語チャネルもあります!!: <a href=\"https://app.slack.com/client/T04PXKRM0/C03M546NR16\" rel=\"nofollow\">#chapter-Japan</a></p>\n<h2>Code of Conduct / 行動規範</h2>\n<p>すべての参加者が居心地よく安全に過ごせる環境を保てるようご協力をお願いします。</p>\n<p>性別、人種、国籍、性的指向、または身体の障碍などいかなる理由においても、相手の尊厳を傷つけるような行為は許されません。</p>\n<p>もし、そのようなご懸念、ハラスメント行為、疑わしい行動または破壊的な行動について気になることがございましたら、イベント主催までお知らせください。主催の判断により、該当者の退室、参加の拒否など対応を求め実行します。</p>",
-      "url": "https://innersourcecommons.connpass.com/event/408735/",
-      "image_url": "https://media.connpass.com/thumbs/2b/5e/2b5ec73e87e30a1c34f762e7e65351ba.png",
-      "hash_tag": "",
-      "started_at": "2026-10-26T19:00:00+09:00",
-      "ended_at": "2026-10-26T21:00:00+09:00",
-      "published_at": "2026-10-05T14:40:42+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 12757,
-        "subdomain": "innersourcecommons",
-        "title": "InnerSource Commons: エンジニアの組織内コラボレーションを加速する",
-        "url": "https://innersourcecommons.connpass.com/"
-      },
-      "address": "〒220-0012 神奈川県 横浜市西区 みなとみらい4-4-5 横浜アイマークプレイス10F",
-      "place": "三菱電機株式会社 共創空間 Serendie Street Yokohama",
-      "lat": "35.460222300000",
-      "lon": "139.628153800000",
-      "owner_id": 1044822,
-      "owner_nickname": "MiyakoKano",
-      "owner_display_name": "Miyako Kano",
-      "accepted": 14,
-      "waiting": 0,
-      "updated_at": "2026-10-08T17:06:40+09:00"
     }
   ]
 }
