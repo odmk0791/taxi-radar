@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-26T04:28:49.076805+09:00",
+  "fetched_at": "2026-10-26T07:12:12.656884+09:00",
   "date": "20261026",
   "count": 9,
   "events": [
@@ -185,7 +185,7 @@
       "owner_id": 8295,
       "owner_nickname": "toshihide_atsumi",
       "owner_display_name": "atsumi",
-      "accepted": 55,
+      "accepted": 56,
       "waiting": 0,
       "updated_at": "2026-10-26T00:08:25+09:00"
     },
