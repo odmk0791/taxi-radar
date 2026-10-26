@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-26T14:39:31.520159+09:00",
+  "fetched_at": "2026-10-26T20:59:11.495040+09:00",
   "date": "20261026",
   "count": 9,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-08-29T10:19:56+09:00",
       "limit": 37,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15875,
         "subdomain": "jawsug-sales",
@@ -30,7 +30,7 @@
       "owner_id": 242113,
       "owner_nickname": "NariyukiI-ito",
       "owner_display_name": "NariyukiI-ito",
-      "accepted": 27,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-10-26T11:28:54+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-10-02T17:53:24+09:00",
       "limit": 32,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 10114,
         "subdomain": "rosca",
@@ -78,7 +78,7 @@
       "published_at": "2026-10-15T20:43:48+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 12277,
         "subdomain": "fffff",
@@ -97,37 +97,6 @@
       "updated_at": "2026-10-15T20:43:48+09:00"
     },
     {
-      "id": 395483,
-      "title": "Fin-JAWS 第44回 オペレーショナル・レジリエンス",
-      "catch": "～規制×AWSで考える「重要な業務」の守り方～",
-      "description": "<p>第44回Fin-JAWSのテーマは「<strong>オペレーショナル・レジリエンス</strong>」です！<br>\n<br>\n<strong>■ オペレーショナル・レジリエンスとは？</strong><br>\n金融庁は「システム障害、テロやサイバー攻撃、感染症、自然災害等の事象が発生しても、金融機関が重要な業務を、最低限維持すべき水準（耐性度）において、提供し続ける能力」と定義しています。<br>\n（出典：金融庁「オペレーショナル・レジリエンス確保に向けた基本的な考え方」2023年4月）<br>\nざっくり言えば、「障害は必ず起きる」ことを前提に、\"止めてはいけない業務\"を\"許容できる水準\"で提供し続ける力です。<br>\n<br>\n<strong>■ なぜ今このテーマ？</strong><br>\n・EUでは2025年1月にDORA（デジタル・オペレーショナル・レジリエンス法）が適用開始、英国でもPRA/FCAの移行期限（2025年3月末）を過ぎ、「準備」から「運用と証明」のフェーズへ<br>\n・国内では金融庁が2026年7月の「金融分野におけるITレジリエンスに関する分析レポート」で、金融機関・クラウド事業者との机上演習をもとにした「クラウド演習の進め方」を公表<br>\n・2026事務年度金融行政方針でも、クラウド等サードパーティへの依存の高まりを踏まえ、重要な業務の継続性確保とオペレーショナル・レジリエンス強化が掲げられています<br>\n規制の\"考え方\"を、クラウド上の\"実装\"と\"訓練\"にどう落とし込むか――まさにエンジニアが語れるテーマになってきました。<br>\n<br>\n<strong>■ 当日扱いたい観点（例）</strong><br>\n【規制・ガイドライン編】重要な業務の特定／耐性度の設定／相互連関性のマッピング／サードパーティ（クラウド）リスク管理・出口戦略<br>\n【AWS実装編】マルチAZ・マルチリージョン設計／Well-Architected 信頼性の柱／AWS Resilience Hub／AWS Fault Injection Service（FIS）／Amazon Application Recovery Controller（ARC）／金融リファレンスアーキテクチャ日本版 など<br>\n【現場編】障害訓練のリアル／RTO・RPOと耐性度の関係／訓練結果や復旧の「証跡」の残し方<br>\n<br>\n<strong>■ こんな方におすすめ</strong><br>\n・金融機関・FinTech企業のエンジニア、インフラ／SRE、アーキテクト<br>\n・リスク管理、システムリスク、BCP、IT監査のご担当者<br>\n・「オペレジって結局なにをすればいいの？」とモヤモヤしている方<br>\n<br>\n規制に詳しい方も、AWSの実装に詳しい方も、「うちはこうしている」「ここで悩んでいる」をぜひ持ち寄ってください。<br>\n異なる立場の知見を持ち寄ってワイワイ語り合いましょう！<br>\n多くの皆様のご参加をお待ち申し上げております！</p>\n<p><span style=\"color: red;\">会場は兜町 QUICK様オフィスです。</span>\n<span style=\"color: red;\">目黒ではありませんのでお気をつけください</span></p>\n<p><span style=\"color: red;\">本イベントは、AWSに関心を持つエンジニアとビジネスパースン向けに、相互の学習を目的にしたものです。明らかに本目的に沿わないと運営メンバが判断した方は参加できません。</span></p>\n<h2>Fin-JAWSの概要</h2>\n<p>Fin-JAWSは、金融事業者の方、金融事業に関わる方、金融事業者向けの業務に関わる方など向けのAWSユーザーグループです。AWSに関連する各種事例、業界動向、技術的な実装方式まで幅広く一緒に学び、共有するコミュニティを目指しています。</p>\n<h2>アジェンダ</h2>\n<p>※各セッションの時間・内容は変更される可能性がございますので、予めご容赦願います。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30-19:00</td>\n<td style=\"text-align: left;\">受付</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:10</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">Fin-JAWS運営 <b>粟ケ窪 康平</b>さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10-19:35</td>\n<td style=\"text-align: left;\">基調講演：AWSとオペレーショナル・レジリエンス</td>\n<td style=\"text-align: left;\"><b>高野 敦史さん</b>（AWSJ）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:50</td>\n<td style=\"text-align: left;\">タイトルTBD</td>\n<td style=\"text-align: left;\"><b> 小林 天慈 </b>さん （株式会社日本総合研究所）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:05</td>\n<td style=\"text-align: left;\">誰のためのレジリエンス？ v2</td>\n<td style=\"text-align: left;\"><b> 米澤 拓也 </b>さん （Japan Digital Design株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05-20:15</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15-20:55</td>\n<td style=\"text-align: left;\">JAWS SONIC 延長戦</td>\n<td style=\"text-align: left;\">ファシリテート：<b> 粟ケ窪 康平</b>さん （Fin-JAWS運営） <br> パネル：<b>大久保 光伸</b>さん（デジタル庁）<br>パネル：<b>小出 淳二</b>さん（株式会社QUICK）<br>パネル：<b>渥美 俊英</b>さん（Fin-JAWS運営）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55-21:00</td>\n<td style=\"text-align: left;\">クロージング</td>\n<td style=\"text-align: left;\">Fin-JAWS運営 <b>粟ケ窪 康平</b>さん</td>\n</tr>\n</tbody>\n</table>\n<h2>会場提供・飲物/軽食スポンサー</h2>\n<p><a href=\"https://corporate.quick.co.jp/index.html\" rel=\"nofollow\">株式会社QUICK</a> 様にご支援いただきます。ありがとうございます！<br></p>\n<p><a href=\"https://corporate.quick.co.jp/index.html\" rel=\"nofollow\">\n<img src=\"https://corporate.quick.co.jp/assets/img/about/quick_logo01.png\" height=\"50\"></a></p>\n<h2>オープニング、クロージング</h2>\n<h3>Fin-JAWS運営 粟ケ窪 康平さん</h3>\n<p><img src=\"https://drive.google.com/thumbnail?id=1XlzI44Mvx28Ity4uOPrxcAiESSU_1IKa\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>社会人7年目の金融系エンジニア。\n<br></p>\n</blockquote>\n<h2>登壇者紹介</h2>\n<h3>アマゾン ウェブ サービス ジャパン合同会社  金融事業開発本部<br> プリンシパル コンプライアンス スペシャリスト<br>高野 敦史さん</h3>\n<p><img src=\"https://drive.google.com/thumbnail?id=1DytoH10zU4Y2Mg50d6_twQ66s-CileE-\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>メガバンクにてシステム企画・導入、米系大手監査法人で金融機関の財務諸表やシステム監査、内部統制評価、SOCレポート発行業務等に従事。米系大手コンサルティングファームでサイバーセキュリティとシステムリスク支援領域のジャパン統括を経てAWS入社。AWS利用にかかる　クラウド関連規制やクラウドリスクへの対応支援を担当。</p>\n</blockquote>\n<p><br></p>\n<h3>株式会社日本総合研究所 小林 天慈さん</h3>\n<h4>プロフィール</h4>\n<blockquote>\n<p>略歴・自己紹介\n<br></p>\n</blockquote>\n<h2>Japan Digital Design株式会社 米澤 拓也さん</h2>\n<p><img src=\"https://serverlessmeetup.s3.ap-northeast-1.amazonaws.com/profile+-+Takuya+Yonezawa.png\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>フロントエンド開発からインフラ構築・セキュリティまでアプリケーション構築に必要なことは何でもやるSWE\n<br></p>\n</blockquote>\n<h2>デジタル庁 ソリューションアーキテクト 兼 財務省 デジタル統括責任者補佐官<br> 大久保 光伸さん</h2>\n<p><img src=\"https://drive.google.com/thumbnail?id=1v0oeEDYBRi5tQ4AEzb4yNthqzFeko8Yj\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>ASEAN+3 公務協力会議 専門家派遣制度 日本代表、金融データ活用推進協会 顧問。自治体CIOやMBA客員教授を担うクロスセクタープレイヤー。学生時代に米国で起業後、電通総研でネットバンクのアーキテクトを担う。みずほFG/BlueLab CTO、東京都外国企業誘致事業メンター、金融庁参与等歴任。プロボノ活動ではスタートアップのメンターや海外業界団体との連携等により金融イノベーションのエコシステム形成に携わる。\n<br></p>\n</blockquote>\n<h2>株式会社 QUICK 小出 淳二さん</h2>\n<p><img src=\"https://drive.google.com/thumbnail?id=1JF4r2FFQEYz9IqnazcKD8OVkJnKJQHMC\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>株式会社QUICK/株式会社QUICK E-Solutions 所属\n現在は、AI＆DX戦略担当としてClaude Codeの社内活用を推進するとともに、MCPやLangfuse基盤を作ってます。<br>\n今年もラスベガス行きます！（9回目）<br>\n2024/2025/2026 All Certification Engineer、JAWS DAYS 2024/2025 実行委員\n<br></p>\n</blockquote>\n<h3>Fin-JAWS運営 渥美 俊英 さん</h3>\n<p><img src=\"https://drive.google.com/thumbnail?id=1qeLL1j6YZpJwZOqtvfylR0_sIRxymUAk\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>黎明期からクラウドが日本を変革すると確信し、今も変わらずクラウド推進に注力。2015年ISID定年退職後AWSJに入社、エンタープライズエバンジェリストを担う。現在はクラウドに注力する数社の顧問を兼務。自分の時間の半分は学びの input にあて、半分は顧問役、講演、業界活動など output の日々。<br>\nAWS re:Invent は2012年第1回目からすべて参加。</p>\n</blockquote>\n<h2>リモート参加 について</h2>\n<p>Zoomでの配信予定です。\n参加 URL は、準備が整い次第、当該イベントページの \"参加者への情報\" へ追記いたします。\n    ※\"参加者への情報\" は申し込んだ方だけが確認可能です。</p>\n<h2>ご注意</h2>\n<ul>\n<li>写真、ソーシャル拡散はWelcomeです。但しNGの箇所については発表者に従ってください。</li>\n<li>JAWS-UGイベントへの参加者は必ず以下のルール、マナーをご確認ください。<br>\n<a href=\"https://jaws-ug.jp/for-participant/\" rel=\"nofollow\">JAWS-UGに参加するルールとマナー</a></li>\n<li>その他、お気付きの点がございましたら、Fin-JAWS 運営メンバーへお知らせください。</li>\n</ul>\n<h2>Fin-JAWS 運営メンバー (50音順)</h2>\n<p>渥美俊英、あべんべん（阿部 一也）、粟ケ窪康平、石倉 幸、大久保光伸、木美 雄太、小出淳二、小林天慈、南治虎太郎、早川愛、福田康治、南達也、米澤 拓也</p>",
-      "url": "https://fin-jaws.connpass.com/event/395483/",
-      "image_url": "https://media.connpass.com/thumbs/8d/aa/8daab393dac11b141745acd46e02333a.png",
-      "hash_tag": "",
-      "started_at": "2026-10-26T19:00:00+09:00",
-      "ended_at": "2026-10-26T21:00:00+09:00",
-      "published_at": "2026-10-16T13:05:16+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 10080,
-        "subdomain": "fin-jaws",
-        "title": "Fin-JAWS",
-        "url": "https://fin-jaws.connpass.com/"
-      },
-      "address": "東京都中央区兜町7-1 KABUTO ONE 2F",
-      "place": "株式会社QUICK",
-      "lat": "35.681116200000",
-      "lon": "139.778200800000",
-      "owner_id": 8295,
-      "owner_nickname": "toshihide_atsumi",
-      "owner_display_name": "atsumi",
-      "accepted": 62,
-      "waiting": 0,
-      "updated_at": "2026-10-26T11:48:52+09:00"
-    },
-    {
       "id": 408396,
       "title": "JP_Stripes Tokyo vol.27",
       "catch": "エージェンティックコマースの現在地を知る",
@@ -140,7 +109,7 @@
       "published_at": "2026-09-30T09:01:16+09:00",
       "limit": 28,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 12610,
         "subdomain": "jpstripes",
@@ -159,6 +128,37 @@
       "updated_at": "2026-10-21T15:57:22+09:00"
     },
     {
+      "id": 395483,
+      "title": "Fin-JAWS 第44回 オペレーショナル・レジリエンス",
+      "catch": "～規制×AWSで考える「重要な業務」の守り方～",
+      "description": "<p>第44回Fin-JAWSのテーマは、豪華2本立て！<br>\nメインテーマは、「<strong>オペレーショナル・レジリエンス</strong>」<br>\n2ndテーマは、「<strong>JAWS SONIC 延長深堀戦～金融クラウド黎明期から今へ</strong>」<br></p>\n<p><br></p>\n<h2><strong>★ メインテーマ：オペレーショナル・レジリエンス</strong><br></h2>\n<p><strong>■ オペレーショナル・レジリエンスとは？</strong><br>\n金融庁は「システム障害、テロやサイバー攻撃、感染症、自然災害等の事象が発生しても、金融機関が重要な業務を、最低限維持すべき水準（耐性度）において、提供し続ける能力」と定義しています。<br>\n（出典：金融庁「オペレーショナル・レジリエンス確保に向けた基本的な考え方」2023年4月）<br>\nざっくり言えば、「障害は必ず起きる」ことを前提に、\"止めてはいけない業務\"を\"許容できる水準\"で提供し続ける力です。<br>\n<br>\n<strong>■ なぜ今このテーマ？</strong><br>\n・EUでは2025年1月にDORA（デジタル・オペレーショナル・レジリエンス法）が適用開始、英国でもPRA/FCAの移行期限（2025年3月末）を過ぎ、「準備」から「運用と証明」のフェーズへ<br>\n・国内では金融庁が2026年7月の「金融分野におけるITレジリエンスに関する分析レポート」で、金融機関・クラウド事業者との机上演習をもとにした「クラウド演習の進め方」を公表<br>\n・2026事務年度金融行政方針でも、クラウド等サードパーティへの依存の高まりを踏まえ、重要な業務の継続性確保とオペレーショナル・レジリエンス強化が掲げられています<br>\n規制の\"考え方\"を、クラウド上の\"実装\"と\"訓練\"にどう落とし込むか――まさにエンジニアが語れるテーマになってきました。<br>\n<strong>■ 当日扱いたい観点（例）</strong><br>\n【規制・ガイドライン編】重要な業務の特定／耐性度の設定／相互連関性のマッピング／サードパーティ（クラウド）リスク管理・出口戦略<br>\n【AWS実装編】マルチAZ・マルチリージョン設計／Well-Architected 信頼性の柱／AWS Resilience Hub／AWS Fault Injection Service（FIS）／Amazon Application Recovery Controller（ARC）／金融リファレンスアーキテクチャ日本版 など<br>\n【現場編】障害訓練のリアル／RTO・RPOと耐性度の関係／訓練結果や復旧の「証跡」の残し方<br>\n<br>\n<strong>■ こんな方におすすめ</strong><br>\n・金融機関・FinTech企業のエンジニア、インフラ／SRE、アーキテクト<br>\n・リスク管理、システムリスク、BCP、IT監査のご担当者<br>\n・「オペレジって結局なにをすればいいの？」とモヤモヤしている方<br>\n<br>\n規制に詳しい方も、AWSの実装に詳しい方も、「うちはこうしている」「ここで悩んでいる」をぜひ持ち寄ってください。<br>\n<br></p>\n<h2><strong>★ 2ndテーマ：「JAWS SONIC 延長深堀戦 ～金融クラウド黎明期から今へ」</strong><br></h2>\n<p>9月5日(土)に24時間ぶっ通しで開催された JAWS SONIC 2026 において、Fin-JAWS支部は12分間枠で以下のテーマでクラウド黎明期の金融＋AWSのパネルトークをしました。<br>\n<strong>「先人に聞く！ なぜあの金融機関はAWSに移行したのか？」</strong><br></p>\n<p><strong>■ なぜ今この延長戦を？</strong><br>\nSonicでは12分枠ではとても語り切れず、今回延長戦として、深堀＋QAを40分枠でご提供します！<br>\n<strong>更に会場では終了後その場で懇親会ありますので、ここだけの話を存分にできます！</strong><br></p>\n<p><strong>■ パネル話題</strong><br>\n・語りきれなかった話、「決断」「壁」「組織」<br>\n　　じっくり深掘りします。<br>\n・新テーマ「次の壁」<br>\n　　生成AIで、歴史は繰り返すのか？<br>\n・会場Q&amp;Aをたっぷり10分<br>\n　　皆さんの質問に、3名がお答えします。<br>\n・渥美 俊英氏が新たに参加<br>\n　　道を「整えた」立場からの視点も加わります。<br></p>\n<p><br>\n<br>\n異なる立場の知見を持ち寄ってワイワイ語り合いましょう！<br>\n多くの皆様のご参加をお待ち申し上げております！</p>\n<p><span style=\"color: red;\">会場は兜町 QUICK様オフィスです。</span>\n<span style=\"color: red;\">目黒ではありませんのでお気をつけください</span></p>\n<p><span style=\"color: red;\">本イベントは、AWSに関心を持つエンジニアとビジネスパースン向けに、相互の学習を目的にしたものです。明らかに本目的に沿わないと運営メンバが判断した方は参加できません。</span></p>\n<h2>Fin-JAWSの概要</h2>\n<p>Fin-JAWSは、金融事業者の方、金融事業に関わる方、金融事業者向けの業務に関わる方など向けのAWSユーザーグループです。AWSに関連する各種事例、業界動向、技術的な実装方式まで幅広く一緒に学び、共有するコミュニティを目指しています。</p>\n<h2>アジェンダ</h2>\n<p>※各セッションの時間・内容は変更される可能性がございますので、予めご容赦願います。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">タイトル</th>\n<th style=\"text-align: left;\">スピーカー</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:30-19:00</td>\n<td style=\"text-align: left;\">受付</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:10</td>\n<td style=\"text-align: left;\">オープニング</td>\n<td style=\"text-align: left;\">Fin-JAWS運営 <b>粟ケ窪 康平</b>さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:10-19:35</td>\n<td style=\"text-align: left;\">基調講演：AWSとオペレーショナル・レジリエンス</td>\n<td style=\"text-align: left;\"><b>高野 敦史さん</b>（AWSJ）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:35-19:50</td>\n<td style=\"text-align: left;\">タイトルTBD</td>\n<td style=\"text-align: left;\"><b> 小林 天慈 </b>さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:50-20:05</td>\n<td style=\"text-align: left;\">誰のためのレジリエンス？ v2</td>\n<td style=\"text-align: left;\"><b> 米澤 拓也 </b>さん （Japan Digital Design株式会社）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:05-20:15</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\">-</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:15-20:55</td>\n<td style=\"text-align: left;\">JAWS SONIC 延長深堀戦 ～金融クラウド黎明期から今へ</td>\n<td style=\"text-align: left;\">ファシリテート：<b> 粟ケ窪 康平</b>さん （Fin-JAWS運営） <br> パネル：<b>大久保 光伸</b>さん（デジタル庁）<br>パネル：<b>小出 淳二</b>さん（株式会社QUICK）<br>パネル：<b>渥美 俊英</b>さん（Fin-JAWS運営）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:55-21:00</td>\n<td style=\"text-align: left;\">クロージング、集合写真</td>\n<td style=\"text-align: left;\">Fin-JAWS運営 <b>粟ケ窪 康平</b>さん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:00～</td>\n<td style=\"text-align: left;\">会場にて懇親会</td>\n<td style=\"text-align: left;\">ここだけの話、QAで満載</td>\n</tr>\n</tbody>\n</table>\n<h2>会場提供・飲物/軽食スポンサー</h2>\n<p><a href=\"https://corporate.quick.co.jp/index.html\" rel=\"nofollow\">株式会社QUICK</a> 様にご支援いただきます。ありがとうございます！<br></p>\n<p><a href=\"https://corporate.quick.co.jp/index.html\" rel=\"nofollow\">\n<img src=\"https://corporate.quick.co.jp/assets/img/about/quick_logo01.png\" height=\"50\"></a></p>\n<h2>オープニング、クロージング</h2>\n<h3>Fin-JAWS運営 粟ケ窪 康平さん</h3>\n<p><img src=\"https://drive.google.com/thumbnail?id=1XlzI44Mvx28Ity4uOPrxcAiESSU_1IKa\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>社会人7年目の金融系エンジニア。\n<br></p>\n</blockquote>\n<h2>登壇者紹介</h2>\n<h3>アマゾン ウェブ サービス ジャパン合同会社  金融事業開発本部<br> プリンシパル コンプライアンス スペシャリスト<br>高野 敦史さん</h3>\n<p><img src=\"https://drive.google.com/thumbnail?id=1DytoH10zU4Y2Mg50d6_twQ66s-CileE-\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>メガバンクにてシステム企画・導入、米系大手監査法人で金融機関の財務諸表やシステム監査、内部統制評価、SOCレポート発行業務等に従事。米系大手コンサルティングファームでサイバーセキュリティとシステムリスク支援領域のジャパン統括を経てAWS入社。AWS利用にかかる　クラウド関連規制やクラウドリスクへの対応支援を担当。</p>\n</blockquote>\n<p><br></p>\n<h3>小林 天慈さん</h3>\n<h4>プロフィール</h4>\n<blockquote>\n<p>とある金融系の企業でAWSのインフラを面倒見ています。\n<br></p>\n</blockquote>\n<h2>Japan Digital Design株式会社 米澤 拓也さん</h2>\n<p><img src=\"https://serverlessmeetup.s3.ap-northeast-1.amazonaws.com/profile+-+Takuya+Yonezawa.png\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>フロントエンド開発からインフラ構築・セキュリティまでアプリケーション構築に必要なことは何でもやるSWE\n<br></p>\n</blockquote>\n<h2>デジタル庁 ソリューションアーキテクト 兼 財務省 デジタル統括責任者補佐官<br> 大久保 光伸さん</h2>\n<p><img src=\"https://drive.google.com/thumbnail?id=1v0oeEDYBRi5tQ4AEzb4yNthqzFeko8Yj\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>ASEAN+3 公務協力会議 専門家派遣制度 日本代表、金融データ活用推進協会 顧問。自治体CIOやMBA客員教授を担うクロスセクタープレイヤー。学生時代に米国で起業後、電通総研でネットバンクのアーキテクトを担う。みずほFG/BlueLab CTO、東京都外国企業誘致事業メンター、金融庁参与等歴任。プロボノ活動ではスタートアップのメンターや海外業界団体との連携等により金融イノベーションのエコシステム形成に携わる。\n<br></p>\n</blockquote>\n<h2>株式会社 QUICK 小出 淳二さん</h2>\n<p><img src=\"https://drive.google.com/thumbnail?id=1JF4r2FFQEYz9IqnazcKD8OVkJnKJQHMC\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>株式会社QUICK/株式会社QUICK E-Solutions 所属\n現在は、AI＆DX戦略担当としてClaude Codeの社内活用を推進するとともに、MCPやLangfuse基盤を作ってます。<br>\n今年もラスベガス行きます！（9回目）<br>\n2024/2025/2026 All Certification Engineer、JAWS DAYS 2024/2025 実行委員\n<br></p>\n</blockquote>\n<h3>Fin-JAWS運営 渥美 俊英 さん</h3>\n<p><img src=\"https://drive.google.com/thumbnail?id=1qeLL1j6YZpJwZOqtvfylR0_sIRxymUAk\" height=\"170\"></p>\n<h4>プロフィール</h4>\n<blockquote>\n<p>黎明期からクラウドが日本を変革すると確信し、今も変わらずクラウド推進に注力。2015年ISID（現電通総研）定年退職後AWSJに60歳で入社、エンタープライズエバンジェリストを担う。現在はクラウドに注力する数社の顧問を兼務。自分の時間の半分は学びの input にあて、半分は顧問役、講演、業界活動など output の日々。AWS re:Invent は2012年第1回目からほぼすべて参加。<br>\n2012年 第1回AWSサミットにおいて、NRI 野上氏、SCSK 瀧澤氏、ISID 渥美の3名で、AWSパートナ3社がボランティアで共同作成した「AWS FISC対応セキュリティリファレンス」を公開、無償提供することを発表。<br>\n <a href=\"https://enterprisezine.jp/article/detail/4234\" rel=\"nofollow\">記事: AWSは金融機関で安心して使えます(キリッ ―クラウドの安全性はどのように担保されるべきなのか</a></p>\n</blockquote>\n<h2>リモート参加 について</h2>\n<p>Zoomでの配信予定です。\n参加 URL は、準備が整い次第、当該イベントページの \"参加者への情報\" へ追記いたします。\n    ※\"参加者への情報\" は申し込んだ方だけが確認可能です。</p>\n<h2>ご注意</h2>\n<ul>\n<li>写真、ソーシャル拡散はWelcomeです。但しNGの箇所については発表者に従ってください。</li>\n<li>JAWS-UGイベントへの参加者は必ず以下のルール、マナーをご確認ください。<br>\n<a href=\"https://jaws-ug.jp/for-participant/\" rel=\"nofollow\">JAWS-UGに参加するルールとマナー</a></li>\n<li>その他、お気付きの点がございましたら、Fin-JAWS 運営メンバーへお知らせください。</li>\n</ul>\n<h2>Fin-JAWS 運営メンバー (50音順)</h2>\n<p>渥美俊英、あべんべん（阿部 一也）、粟ケ窪康平、石倉 幸、大久保光伸、木美 雄太、小出淳二、小林天慈、南治虎太郎、早川愛、福田康治、南達也、米澤 拓也</p>",
+      "url": "https://fin-jaws.connpass.com/event/395483/",
+      "image_url": "https://media.connpass.com/thumbs/8d/aa/8daab393dac11b141745acd46e02333a.png",
+      "hash_tag": "finjaws",
+      "started_at": "2026-10-26T19:00:00+09:00",
+      "ended_at": "2026-10-26T21:00:00+09:00",
+      "published_at": "2026-10-16T13:05:16+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 10080,
+        "subdomain": "fin-jaws",
+        "title": "Fin-JAWS",
+        "url": "https://fin-jaws.connpass.com/"
+      },
+      "address": "東京都中央区兜町7-1 KABUTO ONE 2F",
+      "place": "株式会社QUICK",
+      "lat": "35.681116200000",
+      "lon": "139.778200800000",
+      "owner_id": 8295,
+      "owner_nickname": "toshihide_atsumi",
+      "owner_display_name": "atsumi",
+      "accepted": 82,
+      "waiting": 0,
+      "updated_at": "2026-10-26T19:02:39+09:00"
+    },
+    {
       "id": 409504,
       "title": "寿司LT - 鮮度抜群のAI駆動開発ネタ、入ってます",
       "catch": "AI駆動開発の現在地のリアル",
@@ -171,7 +171,7 @@
       "published_at": "2026-10-11T11:36:50+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11910,
         "subdomain": "youtrust",
@@ -185,7 +185,7 @@
       "owner_id": 959721,
       "owner_nickname": "NAOWEB5",
       "owner_display_name": "naoto.imai",
-      "accepted": 24,
+      "accepted": 20,
       "waiting": 0,
       "updated_at": "2026-10-26T12:24:44+09:00"
     },
@@ -202,7 +202,7 @@
       "published_at": "2026-09-17T11:17:09+09:00",
       "limit": 33,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都港区赤坂９丁目７−２ (東京ミッドタウン・イースト 4F)",
       "place": "株式会社estie",
@@ -213,13 +213,13 @@
       "owner_display_name": "blue_jam",
       "accepted": 32,
       "waiting": 0,
-      "updated_at": "2026-10-15T19:43:29+09:00"
+      "updated_at": "2026-10-26T16:02:40+09:00"
     },
     {
       "id": 409094,
       "title": "ほぼHR Bar ～HR版ルイーダの酒場～",
       "catch": "",
-      "description": "<h2>📖 イベント概要</h2>\n<p><strong>話題は\"ほぼ\"HR。グラス片手に本音を語り合うBar</strong><br>\nHRBPは、事業に深く入り込むほど「社内に同じ目線で語れる相手がいない」という孤独を抱えがちな職種です。<br>\n評価制度の運用、現場と経営の板挟み、人と組織のあいだでの意思決定…etc.<br>\n日々向き合う論点は重いのに、それを気軽に話せる\"ヨコのつながり\"は意外と少ない。<br></p>\n<p>ほぼHR Barは、ビジネスとHRを繋げる同志たちが、グラスを片手にざっくばらんに語り合う場です。<br>\n話題は\"ほぼ\"HR。現場で抱えているモヤモヤや日々の実践をアツく語り合うこともあれば、仕事とはまったく関係のない、どうでもいい話で盛り上がることもあります。<br>\n肩書きや会社の看板はいったん置いて、「この人とまた飲みたい」と思える仲間に出会える、ゆるやかな場を目指しています🍻<br></p>\n<h2>📆 開催情報</h2>\n<ul>\n<li>日時：2026年10月26日（月）18:00～20:00</li>\n<li>会場：ニッセイ虎ノ門ビル 2F</li>\n<li>参加費：無料（お酒の用意はありますが適宜お好きなお酒を持ち込みください✨）</li>\n<li>参加者：基本的に事業部人事/HRBPをされている方を優先させていただきます</li>\n</ul>\n<h2>🎤 参加者</h2>\n<ul>\n<li>代表理事 山中 裕貴（リデザインワーク株式会社 取締役副社長 兼 COO）<br></li>\n</ul>\n<h2>主催・企画</h2>\n<p><img src=\"https://jahrbp.or.jp/wp-content/themes/hrbp/assets/images/logo-hrbp-black.png\" width=\"250\"></p>\n<h4>当協会HP：<a href=\"https://jahrbp.or.jp/\" rel=\"nofollow\">https://jahrbp.or.jp/</a></h4>\n<h4>プライバシーポリシー：<a href=\"https://jahrbp.or.jp/privacy-policy/\" rel=\"nofollow\">https://jahrbp.or.jp/privacy-policy/</a></h4>",
+      "description": "<h2>📖 イベント概要</h2>\n<p><strong>話題は\"ほぼ\"HR。グラス片手に本音を語り合うBar</strong><br>\nHRBPは、事業に深く入り込むほど「社内に同じ目線で語れる相手がいない」という孤独を抱えがちな職種です。<br>\n評価制度の運用、現場と経営の板挟み、人と組織のあいだでの意思決定…etc.<br>\n日々向き合う論点は重いのに、それを気軽に話せる\"ヨコのつながり\"は意外と少ない。<br></p>\n<p>ほぼHR Barは、ビジネスとHRを繋げる同志たちが、グラスを片手にざっくばらんに語り合う場です。<br>\n話題は\"ほぼ\"HR。現場で抱えているモヤモヤや日々の実践をアツく語り合うこともあれば、仕事とはまったく関係のない、どうでもいい話で盛り上がることもあります。<br>\n肩書きや会社の看板はいったん置いて、「この人とまた飲みたい」と思える仲間に出会える、ゆるやかな場を目指しています🍻<br></p>\n<h2>📆 開催情報</h2>\n<ul>\n<li>日時：2026年10月26日（月）18:00～21:00</li>\n<li>会場：ニッセイ虎ノ門ビル 2F</li>\n<li>参加費：無料（お酒の用意はありますが適宜お好きなお酒を持ち込みください✨）</li>\n<li>参加者：基本的に事業部人事/HRBPをされている方を優先させていただきます</li>\n</ul>\n<h2>🎤 参加者</h2>\n<ul>\n<li>代表理事 山中 裕貴（リデザインワーク株式会社 取締役副社長 兼 COO）<br></li>\n</ul>\n<h2>主催・企画</h2>\n<p><img src=\"https://jahrbp.or.jp/wp-content/themes/hrbp/assets/images/logo-hrbp-black.png\" width=\"250\"></p>\n<h4>当協会HP：<a href=\"https://jahrbp.or.jp/\" rel=\"nofollow\">https://jahrbp.or.jp/</a></h4>\n<h4>プライバシーポリシー：<a href=\"https://jahrbp.or.jp/privacy-policy/\" rel=\"nofollow\">https://jahrbp.or.jp/privacy-policy/</a></h4>",
       "url": "https://jahrbp.connpass.com/event/409094/",
       "image_url": "https://media.connpass.com/thumbs/41/5a/415a5d2eadd2f0e249502b36fc1b739c.png",
       "hash_tag": "日本HRBP協会",
@@ -228,7 +228,7 @@
       "published_at": "2026-10-06T16:27:43+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16708,
         "subdomain": "jahrbp",
@@ -242,9 +242,9 @@
       "owner_id": 963913,
       "owner_nickname": "JA-HRBP",
       "owner_display_name": "日本HRBP協会グループ",
-      "accepted": 20,
+      "accepted": 19,
       "waiting": 0,
-      "updated_at": "2026-10-23T07:33:13+09:00"
+      "updated_at": "2026-10-26T18:15:02+09:00"
     },
     {
       "id": 409568,
@@ -259,7 +259,7 @@
       "published_at": "2026-10-13T09:52:47+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 6636,
         "subdomain": "circleci",
