@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-31T16:49:12.219159+09:00",
+  "fetched_at": "2026-10-31T23:07:25.040855+09:00",
   "date": "20261031",
   "count": 29,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2024-12-08T19:00:00+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2840,
         "subdomain": "soudai1025",
@@ -47,7 +47,7 @@
       "published_at": "2026-09-23T20:31:25+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 2287,
         "subdomain": "mosa",
@@ -78,7 +78,7 @@
       "published_at": "2026-09-28T18:01:10+09:00",
       "limit": 45,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 1211,
         "subdomain": "redmine-tokyo",
@@ -97,37 +97,6 @@
       "updated_at": "2026-09-28T18:01:10+09:00"
     },
     {
-      "id": 409448,
-      "title": "第10回 HackSick LT会",
-      "catch": "テーマ未定～フリーテーマにて募集中～",
-      "description": "<h1>すべての技術を楽しむ！HackSickの第8回LT会</h1>\n<ul>\n<li>場所：ロボスタディオン様</li>\n<li>日時：10/31 Sat. 18:00〜19:00  </li>\n<li>内容：<strong>技術</strong> に関連する内容ならなんでもOK！</li>\n</ul>\n<p>※本会は録画なしの予定です．</p>\n<h2>登壇者紹介</h2>\n<ul>\n<li>電気女子 様  <ul>\n<li>テーマ : Scratchが動くゲーム機、ScratchAct<br>\n  Scratchが動くゲーム機を設計したので、その工夫話等々。</li>\n</ul>\n</li>\n<li>電脳ゴリラ 様  <ul>\n<li>テーマ : 自己紹介と最近取り組んでいること<br>\n  初参加なので自己紹介と最近の取り組みついて話せればと思います</li>\n</ul>\n</li>\n<li>六花牡丹 様  <ul>\n<li>テーマ : 独自の注意機構　GSXA:Gated Scalable Exclusive Self Attentionの開発と評価<br>\n  近年、性能改善と事前学習安定化、スーパーウェイトの発生抑制を目的としてさまざまな手法が提案されています。<br>\n  これらの先行研究を元にして、GSXAという注意機構を開発しました。<br>\n  このモジュールの開発意図、数学的原理などをお話しします。  </li>\n</ul>\n</li>\n<li>霧峰 雫（<a href=\"https://x.com/kirimine170\" rel=\"nofollow\">@kirimine170</a>）<ul>\n<li>テーマ：HackSick活動報告兼イベント告知</li>\n</ul>\n</li>\n</ul>\n<h2>発表募集</h2>\n<ul>\n<li>募集枠：3枠程度</li>\n<li>募集締切：10/29 Thu. 23:59</li>\n<li>メインテーマ：テーマ未定～フリーテーマにて募集中～</li>\n<li>募集内容：<ul>\n<li>タイトル（仮でもOK！）</li>\n<li>内容（ギリギリまで悩んでもOK！「悩み中…」と記入ください！</li>\n<li>希望持ち時間（10〜20分）</li>\n</ul>\n</li>\n</ul>\n<p>入力フォーム：<a href=\"https://forms.gle/2ockrMRX4cVpzvB57\" rel=\"nofollow\">発表募集フォームはこちら</a></p>\n<p>ちゃんとした成果やスライドがないとダメ〜！ってことはありません！<br>\n最近の開発で悩んでることとか，作ってみたアプリとかハードウェアを共有する時間でもOKです！<br>\n画面共有でも，プレゼン資料でも，カメラでの発表でも！</p>\n<p>メインテーマから逸れてしまう内容でも，どうしても見てほしい！聞いてほしい！場合は応募OKです！</p>",
-      "url": "https://hacksick.connpass.com/event/409448/",
-      "image_url": "https://media.connpass.com/thumbs/16/f4/16f45eea23e5733417826857bc168c11.png",
-      "hash_tag": "HackSick",
-      "started_at": "2026-10-31T18:00:00+09:00",
-      "ended_at": "2026-10-31T19:00:00+09:00",
-      "published_at": "2026-10-11T13:21:50+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17320,
-        "subdomain": "hacksick",
-        "title": "HackSick",
-        "url": "https://hacksick.connpass.com/"
-      },
-      "address": "東京都千代田区外神田6丁目11-16(ＧＭビル 1階)",
-      "place": "ロボスタディオン",
-      "lat": "35.703893800000",
-      "lon": "139.771148400000",
-      "owner_id": 775273,
-      "owner_nickname": "kirimine170",
-      "owner_display_name": "霧峰 雫/Shizuku Kirimine",
-      "accepted": 11,
-      "waiting": 0,
-      "updated_at": "2026-10-31T02:32:19+09:00"
-    },
-    {
       "id": 404675,
       "title": "PicoRubyKaigi 2026 Assemble Official Party",
       "catch": "",
@@ -140,7 +109,7 @@
       "published_at": "2026-09-09T14:20:16+09:00",
       "limit": 50,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16283,
         "subdomain": "picopicoruby",
@@ -157,6 +126,37 @@
       "accepted": 44,
       "waiting": 0,
       "updated_at": "2026-10-31T14:58:45+09:00"
+    },
+    {
+      "id": 409448,
+      "title": "第10回 HackSick LT会",
+      "catch": "テーマ未定～フリーテーマにて募集中～",
+      "description": "<h1>すべての技術を楽しむ！HackSickの第8回LT会</h1>\n<ul>\n<li>場所：ロボスタディオン様</li>\n<li>日時：10/31 Sat. 18:00〜19:00  </li>\n<li>内容：<strong>技術</strong> に関連する内容ならなんでもOK！</li>\n</ul>\n<p>※本会は録画なしの予定です．</p>\n<h2>登壇者紹介</h2>\n<ul>\n<li>電気女子 様  <ul>\n<li>テーマ : Scratchが動くゲーム機、ScratchAct<br>\n  Scratchが動くゲーム機を設計したので、その工夫話等々。</li>\n</ul>\n</li>\n<li>電脳ゴリラ 様  <ul>\n<li>テーマ : 自己紹介と最近取り組んでいること<br>\n  初参加なので自己紹介と最近の取り組みついて話せればと思います</li>\n</ul>\n</li>\n<li>六花牡丹 様  <ul>\n<li>テーマ : 独自の注意機構　GSXA:Gated Scalable Exclusive Self Attentionの開発と評価<br>\n  近年、性能改善と事前学習安定化、スーパーウェイトの発生抑制を目的としてさまざまな手法が提案されています。<br>\n  これらの先行研究を元にして、GSXAという注意機構を開発しました。<br>\n  このモジュールの開発意図、数学的原理などをお話しします。  </li>\n</ul>\n</li>\n<li>霧峰 雫（<a href=\"https://x.com/kirimine170\" rel=\"nofollow\">@kirimine170</a>）<ul>\n<li>テーマ：HackSick活動報告兼イベント告知</li>\n</ul>\n</li>\n</ul>\n<h2>発表募集</h2>\n<ul>\n<li>募集枠：3枠程度</li>\n<li>募集締切：10/29 Thu. 23:59</li>\n<li>メインテーマ：テーマ未定～フリーテーマにて募集中～</li>\n<li>募集内容：<ul>\n<li>タイトル（仮でもOK！）</li>\n<li>内容（ギリギリまで悩んでもOK！「悩み中…」と記入ください！</li>\n<li>希望持ち時間（10〜20分）</li>\n</ul>\n</li>\n</ul>\n<p>入力フォーム：<a href=\"https://forms.gle/2ockrMRX4cVpzvB57\" rel=\"nofollow\">発表募集フォームはこちら</a></p>\n<p>ちゃんとした成果やスライドがないとダメ〜！ってことはありません！<br>\n最近の開発で悩んでることとか，作ってみたアプリとかハードウェアを共有する時間でもOKです！<br>\n画面共有でも，プレゼン資料でも，カメラでの発表でも！</p>\n<p>メインテーマから逸れてしまう内容でも，どうしても見てほしい！聞いてほしい！場合は応募OKです！</p>",
+      "url": "https://hacksick.connpass.com/event/409448/",
+      "image_url": "https://media.connpass.com/thumbs/16/f4/16f45eea23e5733417826857bc168c11.png",
+      "hash_tag": "HackSick",
+      "started_at": "2026-10-31T18:00:00+09:00",
+      "ended_at": "2026-10-31T19:00:00+09:00",
+      "published_at": "2026-10-11T13:21:50+09:00",
+      "limit": null,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 17320,
+        "subdomain": "hacksick",
+        "title": "HackSick",
+        "url": "https://hacksick.connpass.com/"
+      },
+      "address": "東京都千代田区外神田6丁目11-16(ＧＭビル 1階)",
+      "place": "ロボスタディオン",
+      "lat": "35.703893800000",
+      "lon": "139.771148400000",
+      "owner_id": 775273,
+      "owner_nickname": "kirimine170",
+      "owner_display_name": "霧峰 雫/Shizuku Kirimine",
+      "accepted": 15,
+      "waiting": 0,
+      "updated_at": "2026-10-31T02:32:19+09:00"
     },
     {
       "id": 411006,
@@ -190,37 +190,6 @@
       "updated_at": "2026-10-29T00:56:02+09:00"
     },
     {
-      "id": 407531,
-      "title": "【北区・赤羽】ゆるもく会 #10｜初心者歓迎・作業/勉強/読書OK",
-      "catch": "赤羽・北区周辺で開催するゆるいもくもく会です。 初心者歓迎・入退室自由。",
-      "description": "<h2>赤羽ゆるもく会 #10｜初心者歓迎・作業/勉強/読書OK</h2>\n<p>赤羽・北区周辺で「近所でふらっと来れる作業場所」があったらいいなと思い、毎回10人前後で、落ち着いた雰囲気で開催しています。</p>\n<p>土日の昼に集まり、それぞれがやりたい作業や勉強をするシンプルな会です。<br>\nエンジニアに限らず、学習・制作・読書など何でもOKです。</p>\n<p>「家だと集中できない」<br>\n「近所で作業仲間がほしい」<br>\n「ゆるく人と繋がれる場所がほしい」</p>\n<p>そんな方はぜひ気軽に参加してください。</p>\n<p>気軽に参加できるゆるい作業会です☕</p>\n<hr>\n<h3>💴 参加費</h3>\n<p>1000円（会場費・お菓子代込み）</p>\n<hr>\n<h3>🧑‍💻 この会について</h3>\n<ul>\n<li>作業ジャンル自由（プログラミング・資格勉強・個人開発・読書など）</li>\n<li>初心者歓迎</li>\n<li>入退室自由</li>\n<li>会話OK（作業優先・静かめな雰囲気）</li>\n<li>主催者も一参加者として作業しています</li>\n<li>Wi-Fiあり</li>\n<li>電源あり</li>\n<li>簡単なお菓子あり</li>\n</ul>\n<p>簡単な自己紹介はありますが、無理な交流はありません。</p>\n<h2>話したい人は話す、集中したい人は集中する、そんなゆるい場です。</h2>\n<h3>⏰ 当日の流れ（目安）</h3>\n<p>今回から、作業に没頭しやすいよう <strong>14:00〜18:00の4時間</strong> で開催します。\n途中参加・途中退出OKです。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:30</td>\n<td>開場（準備でき次第入室可能）</td>\n</tr>\n<tr>\n<td>14:00</td>\n<td>開始</td>\n</tr>\n<tr>\n<td>14:10</td>\n<td>簡単な説明・軽い自己紹介 → 作業開始</td>\n</tr>\n<tr>\n<td>15:00</td>\n<td>休憩・雑談（任意）</td>\n</tr>\n<tr>\n<td>15:30</td>\n<td>作業再開</td>\n</tr>\n<tr>\n<td>17:00</td>\n<td>今日やったことの共有・交流（任意）</td>\n</tr>\n<tr>\n<td>18:00</td>\n<td>完全撤収</td>\n</tr>\n</tbody>\n</table>\n<p>※途中参加・途中退出OKです。</p>\n<hr>\n<h3>👥 こんな人におすすめ</h3>\n<ul>\n<li>赤羽・北区周辺に住んでいる方</li>\n<li>休日に集中できる場所がほしい方</li>\n<li>ゆるく人と繋がりたい方</li>\n<li>もくもく会が初めての方</li>\n<li>作業習慣を作りたい方</li>\n</ul>\n<p>北区以外の方の参加も歓迎です！</p>\n<hr>\n<h3>ℹ️ 参加方法について（重要）</h3>\n<p>会場が無人運営のため、入室方法を事前にご案内します。</p>\n<p>参加登録後、Connpassの参加者向け情報にて<br>\n<strong>Discordサーバーの招待リンク</strong>をお送りします。</p>\n<p>当日の入室案内はDiscord内で行います。<br>\n参加登録後、開催前までにDiscordへの参加をお願いします。</p>\n<hr>\n<h3>⚠️ 注意事項</h3>\n<ul>\n<li>営業・勧誘・ナンパ目的での参加はご遠慮ください</li>\n<li>他の参加者の作業を妨げる行為はお控えください</li>\n<li>大きな音や通話を行う場合はイヤホンをご利用ください</li>\n<li>静かな作業環境づくりにご協力ください</li>\n<li>写真撮影を行う場合は、必ず本人の許可をお願いします</li>\n<li>貴重品の管理は各自でお願いいたします</li>\n<li>主催者の判断で参加をお断りする場合があります</li>\n</ul>\n<hr>\n<h3>👤 主催者について</h3>\n<p>赤羽在住のフロントエンドエンジニアです。</p>\n<p>普段はフロントエンド開発をしながら個人開発や技術学習をしています。</p>\n<p>「近所で気軽に作業できる場所があったらいいな」と思い、このもくもく会を始めました。</p>\n<p>主催者自身も参加者として作業していますので、初めての方も気軽にどうぞ。</p>\n<p>GitHub：<a href=\"https://github.com/illionillion\" rel=\"nofollow\">https://github.com/illionillion</a><br>\nX：<a href=\"https://x.com/Sei_engineer\" rel=\"nofollow\">https://x.com/Sei_engineer</a></p>\n<hr>\n<p>前回の様子</p>\n<p>前回は過去最多の11人が参加し、技術や個人開発、AI、読書など幅広い話題で交流しながら、それぞれ作業も進めました🙌</p>\n<p><img alt=\"画像\" src=\"https://pbs.twimg.com/media/HOFXYbiacAEYKgW?format=jpg&amp;name=4096x4096\"></p>\n<p><a href=\"https://x.com/Sei_engineer/status/2081040587864821799\" rel=\"nofollow\">https://x.com/Sei_engineer/status/2081040587864821799</a></p>\n<hr>\n<p>まずは気軽に試しに来てもらえると嬉しいです ☕</p>",
-      "url": "https://akabane-yurumoku.connpass.com/event/407531/",
-      "image_url": "https://media.connpass.com/thumbs/34/fa/34fa441b8ad50acaa6303dc3cd37fe1d.png",
-      "hash_tag": "",
-      "started_at": "2026-10-31T14:00:00+09:00",
-      "ended_at": "2026-10-31T18:00:00+09:00",
-      "published_at": "2026-09-22T18:32:56+09:00",
-      "limit": 16,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 17436,
-        "subdomain": "akabane-yurumoku",
-        "title": "赤羽ゆるもく会",
-        "url": "https://akabane-yurumoku.connpass.com/"
-      },
-      "address": "東京都北区赤羽2-45-8",
-      "place": "ファーストビル赤羽 2０1号室 ルームA",
-      "lat": "35.781451600000",
-      "lon": "139.723336900000",
-      "owner_id": 648156,
-      "owner_nickname": "dimyasvariant",
-      "owner_display_name": "Sei",
-      "accepted": 15,
-      "waiting": 0,
-      "updated_at": "2026-09-22T18:32:56+09:00"
-    },
-    {
       "id": 404784,
       "title": "第117回 Machine Learning 15minutes! Hybrid",
       "catch": "機械学習(AI・人工知能)に関するカジュアルトークイベント",
@@ -233,7 +202,7 @@
       "published_at": "2026-08-24T12:03:02+09:00",
       "limit": 220,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2242,
         "subdomain": "machine-learning15minutes",
@@ -250,6 +219,37 @@
       "accepted": 122,
       "waiting": 0,
       "updated_at": "2026-10-25T23:31:54+09:00"
+    },
+    {
+      "id": 407531,
+      "title": "【北区・赤羽】ゆるもく会 #10｜初心者歓迎・作業/勉強/読書OK",
+      "catch": "赤羽・北区周辺で開催するゆるいもくもく会です。 初心者歓迎・入退室自由。",
+      "description": "<h2>赤羽ゆるもく会 #10｜初心者歓迎・作業/勉強/読書OK</h2>\n<p>赤羽・北区周辺で「近所でふらっと来れる作業場所」があったらいいなと思い、毎回10人前後で、落ち着いた雰囲気で開催しています。</p>\n<p>土日の昼に集まり、それぞれがやりたい作業や勉強をするシンプルな会です。<br>\nエンジニアに限らず、学習・制作・読書など何でもOKです。</p>\n<p>「家だと集中できない」<br>\n「近所で作業仲間がほしい」<br>\n「ゆるく人と繋がれる場所がほしい」</p>\n<p>そんな方はぜひ気軽に参加してください。</p>\n<p>気軽に参加できるゆるい作業会です☕</p>\n<hr>\n<h3>💴 参加費</h3>\n<p>1000円（会場費・お菓子代込み）</p>\n<hr>\n<h3>🧑‍💻 この会について</h3>\n<ul>\n<li>作業ジャンル自由（プログラミング・資格勉強・個人開発・読書など）</li>\n<li>初心者歓迎</li>\n<li>入退室自由</li>\n<li>会話OK（作業優先・静かめな雰囲気）</li>\n<li>主催者も一参加者として作業しています</li>\n<li>Wi-Fiあり</li>\n<li>電源あり</li>\n<li>簡単なお菓子あり</li>\n</ul>\n<p>簡単な自己紹介はありますが、無理な交流はありません。</p>\n<h2>話したい人は話す、集中したい人は集中する、そんなゆるい場です。</h2>\n<h3>⏰ 当日の流れ（目安）</h3>\n<p>今回から、作業に没頭しやすいよう <strong>14:00〜18:00の4時間</strong> で開催します。\n途中参加・途中退出OKです。</p>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:30</td>\n<td>開場（準備でき次第入室可能）</td>\n</tr>\n<tr>\n<td>14:00</td>\n<td>開始</td>\n</tr>\n<tr>\n<td>14:10</td>\n<td>簡単な説明・軽い自己紹介 → 作業開始</td>\n</tr>\n<tr>\n<td>15:00</td>\n<td>休憩・雑談（任意）</td>\n</tr>\n<tr>\n<td>15:30</td>\n<td>作業再開</td>\n</tr>\n<tr>\n<td>17:00</td>\n<td>今日やったことの共有・交流（任意）</td>\n</tr>\n<tr>\n<td>18:00</td>\n<td>完全撤収</td>\n</tr>\n</tbody>\n</table>\n<p>※途中参加・途中退出OKです。</p>\n<hr>\n<h3>👥 こんな人におすすめ</h3>\n<ul>\n<li>赤羽・北区周辺に住んでいる方</li>\n<li>休日に集中できる場所がほしい方</li>\n<li>ゆるく人と繋がりたい方</li>\n<li>もくもく会が初めての方</li>\n<li>作業習慣を作りたい方</li>\n</ul>\n<p>北区以外の方の参加も歓迎です！</p>\n<hr>\n<h3>ℹ️ 参加方法について（重要）</h3>\n<p>会場が無人運営のため、入室方法を事前にご案内します。</p>\n<p>参加登録後、Connpassの参加者向け情報にて<br>\n<strong>Discordサーバーの招待リンク</strong>をお送りします。</p>\n<p>当日の入室案内はDiscord内で行います。<br>\n参加登録後、開催前までにDiscordへの参加をお願いします。</p>\n<hr>\n<h3>⚠️ 注意事項</h3>\n<ul>\n<li>営業・勧誘・ナンパ目的での参加はご遠慮ください</li>\n<li>他の参加者の作業を妨げる行為はお控えください</li>\n<li>大きな音や通話を行う場合はイヤホンをご利用ください</li>\n<li>静かな作業環境づくりにご協力ください</li>\n<li>写真撮影を行う場合は、必ず本人の許可をお願いします</li>\n<li>貴重品の管理は各自でお願いいたします</li>\n<li>主催者の判断で参加をお断りする場合があります</li>\n</ul>\n<hr>\n<h3>👤 主催者について</h3>\n<p>赤羽在住のフロントエンドエンジニアです。</p>\n<p>普段はフロントエンド開発をしながら個人開発や技術学習をしています。</p>\n<p>「近所で気軽に作業できる場所があったらいいな」と思い、このもくもく会を始めました。</p>\n<p>主催者自身も参加者として作業していますので、初めての方も気軽にどうぞ。</p>\n<p>GitHub：<a href=\"https://github.com/illionillion\" rel=\"nofollow\">https://github.com/illionillion</a><br>\nX：<a href=\"https://x.com/Sei_engineer\" rel=\"nofollow\">https://x.com/Sei_engineer</a></p>\n<hr>\n<p>前回の様子</p>\n<p>前回は過去最多の11人が参加し、技術や個人開発、AI、読書など幅広い話題で交流しながら、それぞれ作業も進めました🙌</p>\n<p><img alt=\"画像\" src=\"https://pbs.twimg.com/media/HOFXYbiacAEYKgW?format=jpg&amp;name=4096x4096\"></p>\n<p><a href=\"https://x.com/Sei_engineer/status/2081040587864821799\" rel=\"nofollow\">https://x.com/Sei_engineer/status/2081040587864821799</a></p>\n<hr>\n<p>まずは気軽に試しに来てもらえると嬉しいです ☕</p>",
+      "url": "https://akabane-yurumoku.connpass.com/event/407531/",
+      "image_url": "https://media.connpass.com/thumbs/34/fa/34fa441b8ad50acaa6303dc3cd37fe1d.png",
+      "hash_tag": "",
+      "started_at": "2026-10-31T14:00:00+09:00",
+      "ended_at": "2026-10-31T18:00:00+09:00",
+      "published_at": "2026-09-22T18:32:56+09:00",
+      "limit": 16,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 17436,
+        "subdomain": "akabane-yurumoku",
+        "title": "赤羽ゆるもく会",
+        "url": "https://akabane-yurumoku.connpass.com/"
+      },
+      "address": "東京都北区赤羽2-45-8",
+      "place": "ファーストビル赤羽 2０1号室 ルームA",
+      "lat": "35.781451600000",
+      "lon": "139.723336900000",
+      "owner_id": 648156,
+      "owner_nickname": "dimyasvariant",
+      "owner_display_name": "Sei",
+      "accepted": 15,
+      "waiting": 0,
+      "updated_at": "2026-09-22T18:32:56+09:00"
     },
     {
       "id": 408861,
@@ -352,7 +352,7 @@
       "published_at": "2026-10-14T09:46:27+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12952,
         "subdomain": "aisaac",
@@ -371,37 +371,6 @@
       "updated_at": "2026-10-30T01:01:34+09:00"
     },
     {
-      "id": 406958,
-      "title": "（東京会場）SORACOM UG Explorer 2026  〜まだ見ぬ「できる」を探しに。",
-      "catch": "今年もやります！ SORACOM UG Explorer",
-      "description": "<h1>概要</h1>\n<p><strong>SORACOM Explorer 2026 〜まだ見ぬ「できる」を探しに。</strong></p>\n<p>本イベントは全国10会場で開催します。<br>\n<strong>このページは、東京会場についての参加者募集ページです。</strong></p>\n<p>各会場の詳細やタイムテーブルについては以下のページを参照ください。<br>\n<a href=\"https://soracom-ug.jp/soracom-ug-explorer-2026/\" rel=\"nofollow\">https://soracom-ug.jp/soracom-ug-explorer-2026/</a></p>\n<p>※時間・発表内容は変更になる可能性があります。</p>\n<h1>東京会場</h1>\n<p>開催場所は以下の通りです。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">項目</th>\n<th style=\"text-align: left;\">摘要</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">場所</td>\n<td style=\"text-align: left;\">株式会社ソラコム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">住所</td>\n<td style=\"text-align: left;\">〒107-0051 東京都港区元赤坂１丁目５−１２ 住友不動産元赤坂ビル</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">詳細URL</td>\n<td style=\"text-align: left;\"><a href=\"https://soracom.com/ja/company/overview\" rel=\"nofollow\">https://soracom.com/ja/company/overview</a></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">注意事項</td>\n<td style=\"text-align: left;\">入館方法は、参加者への情報をご確認ください。</td>\n</tr>\n</tbody>\n</table>\n<h1>イベント内容</h1>\n<p>IoTと生成AIの融合した最新テクノロジーを体験できるハンズオンを中心にイベントを実施します。ほかのイベントにはないユニークなIoTの体験をしていただけます。<br>\nあわせてSORACOMの講師によるセッションや LT、最後に全員参加のワークショップでアウトプットしていただきます。</p>\n<h2>ハンズオンについて</h2>\n<p>SORACOM UG Explorer2026では、SORACOMから提供されているIoT技術と生成AIが融合したユニークなハンズオンをご用意しています。当日はテキストに沿ってハンズオンを行います。経験豊富なチューター・SORACOM技術担当が各会場でお手伝いしますので、初めての方でも安心してご参加いただけます。</p>\n<p>なお、所定の要件を満たしたノートPC等をご持参いただきますようお願い申し上げます。</p>\n<h1>参加対象者</h1>\n<p>IoTやSORACOMに興味がある方なら誰でも大歓迎です。</p>\n<p>業種、職種、ハードウェア、ソフトウェア、クラウドなど担当分野は問いません。SORACOMをまだ使っていなくても問題ありませんので、初参加大歓迎です。お気軽にご参加ください。</p>\n<h1>特記事項</h1>\n<ol>\n<li>個人情報の取扱いについて  </li>\n<li>配信と写真撮影について  </li>\n<li>SORACOM UG行動規範  </li>\n</ol>\n<h3>個人情報の取扱いについて</h3>\n<p>会場への入館に必要なため、以下の情報をお伺いしております。\n本情報は開催後には破棄致します。</p>\n<ul>\n<li>お名前</li>\n<li>会社名</li>\n<li>メールアドレス</li>\n</ul>\n<h3>配信と写真撮影について</h3>\n<p>本イベントはZOOM での配信を予定しており、開催中の映像については収録して公開させていただく予定です。<br>\nまた、開催中の写真撮影をさせていただき、後日SORACOM UGあるいはソラコムのWebサイトにて公開する場合があります。<br>\nあらかじめご了承ください。</p>\n<h3>SORACOM User Group行動規範 – Code of Conduct –</h3>\n<p>オフラインイベント開催ガイドラインと併せて、行動規範についてもご一読ください。</p>\n<p><a href=\"https://soracom-ug.jp/about/code-of-contact/\" rel=\"nofollow\">SORACOM User Group行動規範 – Code of Conduct –</a></p>\n<h1>タイムテーブル</h1>\n<p><strong>SORACOM Explorer 2026 〜まだ見ぬ「できる」を探しに。</strong><br>\nタイムテーブルについては以下のページを参照ください。<br>\n<a href=\"https://soracom-ug.jp/soracom-ug-explorer-2026/\" rel=\"nofollow\">https://soracom-ug.jp/soracom-ug-explorer-2026/</a></p>\n<h1>懇親会について</h1>\n<p>別途調整します。</p>",
-      "url": "https://soracomug-tokyo.connpass.com/event/406958/",
-      "image_url": "https://media.connpass.com/thumbs/8e/25/8e251e25eaf6efe0cdbe27a10a56d142.png",
-      "hash_tag": "soracomug",
-      "started_at": "2026-10-31T13:00:00+09:00",
-      "ended_at": "2026-10-31T18:00:00+09:00",
-      "published_at": "2026-09-18T11:31:21+09:00",
-      "limit": 16,
-      "event_type": "participation",
-      "open_status": "open",
-      "group": {
-        "id": 1941,
-        "subdomain": "soracomug-tokyo",
-        "title": "SORACOM UG",
-        "url": "https://soracomug-tokyo.connpass.com/"
-      },
-      "address": "〒107-0051 東京都港区元赤坂１丁目５−１２ 住友不動産元赤坂ビル",
-      "place": "株式会社ソラコム",
-      "lat": "35.677241900000",
-      "lon": "139.733059200000",
-      "owner_id": 45417,
-      "owner_nickname": "ykm77",
-      "owner_display_name": "yukima77",
-      "accepted": 12,
-      "waiting": 0,
-      "updated_at": "2026-10-29T22:27:19+09:00"
-    },
-    {
       "id": 410253,
       "title": "[秋葉原] テーマ自由もくもく会 (質問・雑談OK！)",
       "catch": "",
@@ -414,7 +383,7 @@
       "published_at": "2026-10-18T12:51:45+09:00",
       "limit": 11,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2959,
         "subdomain": "weeyble-creative",
@@ -433,6 +402,37 @@
       "updated_at": "2026-10-31T16:15:11+09:00"
     },
     {
+      "id": 406958,
+      "title": "（東京会場）SORACOM UG Explorer 2026  〜まだ見ぬ「できる」を探しに。",
+      "catch": "今年もやります！ SORACOM UG Explorer",
+      "description": "<h1>概要</h1>\n<p><strong>SORACOM Explorer 2026 〜まだ見ぬ「できる」を探しに。</strong></p>\n<p>本イベントは全国10会場で開催します。<br>\n<strong>このページは、東京会場についての参加者募集ページです。</strong></p>\n<p>各会場の詳細やタイムテーブルについては以下のページを参照ください。<br>\n<a href=\"https://soracom-ug.jp/soracom-ug-explorer-2026/\" rel=\"nofollow\">https://soracom-ug.jp/soracom-ug-explorer-2026/</a></p>\n<p>※時間・発表内容は変更になる可能性があります。</p>\n<h1>東京会場</h1>\n<p>開催場所は以下の通りです。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">項目</th>\n<th style=\"text-align: left;\">摘要</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">場所</td>\n<td style=\"text-align: left;\">株式会社ソラコム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">住所</td>\n<td style=\"text-align: left;\">〒107-0051 東京都港区元赤坂１丁目５−１２ 住友不動産元赤坂ビル</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">詳細URL</td>\n<td style=\"text-align: left;\"><a href=\"https://soracom.com/ja/company/overview\" rel=\"nofollow\">https://soracom.com/ja/company/overview</a></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">注意事項</td>\n<td style=\"text-align: left;\">入館方法は、参加者への情報をご確認ください。</td>\n</tr>\n</tbody>\n</table>\n<h1>イベント内容</h1>\n<p>IoTと生成AIの融合した最新テクノロジーを体験できるハンズオンを中心にイベントを実施します。ほかのイベントにはないユニークなIoTの体験をしていただけます。<br>\nあわせてSORACOMの講師によるセッションや LT、最後に全員参加のワークショップでアウトプットしていただきます。</p>\n<h2>ハンズオンについて</h2>\n<p>SORACOM UG Explorer2026では、SORACOMから提供されているIoT技術と生成AIが融合したユニークなハンズオンをご用意しています。当日はテキストに沿ってハンズオンを行います。経験豊富なチューター・SORACOM技術担当が各会場でお手伝いしますので、初めての方でも安心してご参加いただけます。</p>\n<p>なお、所定の要件を満たしたノートPC等をご持参いただきますようお願い申し上げます。</p>\n<h1>参加対象者</h1>\n<p>IoTやSORACOMに興味がある方なら誰でも大歓迎です。</p>\n<p>業種、職種、ハードウェア、ソフトウェア、クラウドなど担当分野は問いません。SORACOMをまだ使っていなくても問題ありませんので、初参加大歓迎です。お気軽にご参加ください。</p>\n<h1>特記事項</h1>\n<ol>\n<li>個人情報の取扱いについて  </li>\n<li>配信と写真撮影について  </li>\n<li>SORACOM UG行動規範  </li>\n</ol>\n<h3>個人情報の取扱いについて</h3>\n<p>会場への入館に必要なため、以下の情報をお伺いしております。\n本情報は開催後には破棄致します。</p>\n<ul>\n<li>お名前</li>\n<li>会社名</li>\n<li>メールアドレス</li>\n</ul>\n<h3>配信と写真撮影について</h3>\n<p>本イベントはZOOM での配信を予定しており、開催中の映像については収録して公開させていただく予定です。<br>\nまた、開催中の写真撮影をさせていただき、後日SORACOM UGあるいはソラコムのWebサイトにて公開する場合があります。<br>\nあらかじめご了承ください。</p>\n<h3>SORACOM User Group行動規範 – Code of Conduct –</h3>\n<p>オフラインイベント開催ガイドラインと併せて、行動規範についてもご一読ください。</p>\n<p><a href=\"https://soracom-ug.jp/about/code-of-contact/\" rel=\"nofollow\">SORACOM User Group行動規範 – Code of Conduct –</a></p>\n<h1>タイムテーブル</h1>\n<p><strong>SORACOM Explorer 2026 〜まだ見ぬ「できる」を探しに。</strong><br>\nタイムテーブルについては以下のページを参照ください。<br>\n<a href=\"https://soracom-ug.jp/soracom-ug-explorer-2026/\" rel=\"nofollow\">https://soracom-ug.jp/soracom-ug-explorer-2026/</a></p>\n<h1>懇親会について</h1>\n<p>別途調整します。</p>",
+      "url": "https://soracomug-tokyo.connpass.com/event/406958/",
+      "image_url": "https://media.connpass.com/thumbs/8e/25/8e251e25eaf6efe0cdbe27a10a56d142.png",
+      "hash_tag": "soracomug",
+      "started_at": "2026-10-31T13:00:00+09:00",
+      "ended_at": "2026-10-31T18:00:00+09:00",
+      "published_at": "2026-09-18T11:31:21+09:00",
+      "limit": 16,
+      "event_type": "participation",
+      "open_status": "close",
+      "group": {
+        "id": 1941,
+        "subdomain": "soracomug-tokyo",
+        "title": "SORACOM UG",
+        "url": "https://soracomug-tokyo.connpass.com/"
+      },
+      "address": "〒107-0051 東京都港区元赤坂１丁目５−１２ 住友不動産元赤坂ビル",
+      "place": "株式会社ソラコム",
+      "lat": "35.677241900000",
+      "lon": "139.733059200000",
+      "owner_id": 45417,
+      "owner_nickname": "ykm77",
+      "owner_display_name": "yukima77",
+      "accepted": 12,
+      "waiting": 0,
+      "updated_at": "2026-10-29T22:27:19+09:00"
+    },
+    {
       "id": 408110,
       "title": "【ハイブリッド開催】第31回redmine.tokyo勉強会",
       "catch": "",
@@ -445,7 +445,7 @@
       "published_at": "2026-09-28T09:01:18+09:00",
       "limit": 90,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 1211,
         "subdomain": "redmine-tokyo",
@@ -476,7 +476,7 @@
       "published_at": "2026-09-19T09:22:37+09:00",
       "limit": 24,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2287,
         "subdomain": "mosa",
@@ -507,7 +507,7 @@
       "published_at": "2026-09-27T19:47:19+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 14,
         "subdomain": "pyhack",
@@ -662,7 +662,7 @@
       "published_at": "2026-10-03T11:40:18+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12918,
         "subdomain": "ras-duino",
@@ -693,7 +693,7 @@
       "published_at": "2026-08-21T05:53:03+09:00",
       "limit": 24,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 8048,
         "subdomain": "nespe",
@@ -724,7 +724,7 @@
       "published_at": "2026-07-10T10:01:33+09:00",
       "limit": 100,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 16283,
         "subdomain": "picopicoruby",
@@ -817,7 +817,7 @@
       "published_at": "2026-10-06T17:37:20+09:00",
       "limit": 25,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 12509,
         "subdomain": "isucon",
