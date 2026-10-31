@@ -310,6 +310,13 @@
    "n_points": 4331
   },
   {
+   "date": "2026-10-28",
+   "path": "data/gps/2026-10-28.json",
+   "start": "8:27",
+   "end": "27:49",
+   "n_points": 4593
+  },
+  {
    "date": "2026-10-29",
    "path": "data/gps/2026-10-29.json",
    "start": "20:36",
