@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-02T00:38:14.429472+09:00",
+  "fetched_at": "2026-11-02T05:00:09.712766+09:00",
   "date": "20261102",
   "count": 4,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 14580,
       "owner_nickname": "shota_inoue_9212",
       "owner_display_name": "syossan27",
-      "accepted": 18,
+      "accepted": 17,
       "waiting": 0,
       "updated_at": "2026-11-01T18:19:46+09:00"
     },
@@ -123,7 +123,7 @@
       "owner_id": 8295,
       "owner_nickname": "toshihide_atsumi",
       "owner_display_name": "atsumi",
-      "accepted": 37,
+      "accepted": 38,
       "waiting": 0,
       "updated_at": "2026-11-01T21:26:33+09:00"
     }
