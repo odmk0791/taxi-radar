@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-01T10:43:37.022328+09:00",
+  "fetched_at": "2026-11-01T17:29:34.659043+09:00",
   "date": "20261101",
   "count": 7,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 1482,
       "owner_nickname": "youchan",
       "owner_display_name": "youchan",
-      "accepted": 46,
+      "accepted": 47,
       "waiting": 0,
       "updated_at": "2026-10-30T22:46:22+09:00"
     },
@@ -47,7 +47,7 @@
       "published_at": "2026-10-25T22:10:12+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -61,7 +61,7 @@
       "owner_id": 197714,
       "owner_nickname": "clear_",
       "owner_display_name": "clear_",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-10-25T22:10:12+09:00"
     },
@@ -74,11 +74,11 @@
       "image_url": "https://media.connpass.com/thumbs/8f/c9/8fc99474c436e481e97850255442ce1f.png",
       "hash_tag": "picorubykaigi",
       "started_at": "2026-11-01T14:00:00+09:00",
-      "ended_at": "2026-11-01T17:45:00+09:00",
+      "ended_at": "2026-11-01T17:15:00+09:00",
       "published_at": "2026-09-09T14:17:27+09:00",
       "limit": 35,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16283,
         "subdomain": "picopicoruby",
@@ -92,13 +92,13 @@
       "owner_id": 155603,
       "owner_nickname": "unright",
       "owner_display_name": "makicamel",
-      "accepted": 26,
+      "accepted": 27,
       "waiting": 0,
-      "updated_at": "2026-10-24T16:07:17+09:00"
+      "updated_at": "2026-11-01T16:31:15+09:00"
     },
     {
       "id": 408131,
-      "title": "【現19名】クリエイター作業交流会@高円寺",
+      "title": "【現20名】クリエイター作業交流会@高円寺",
       "catch": "クリエイティブな仲間に出会えるもくもく会",
       "description": "<p>クリエイター作業交流会では、イラスト、漫画、小説等の執筆、作曲、動画編集、ゲームやアプリ開発、手芸、アクセサリー制作など、ジャンルを問わずクリエイター同士が同じ場所で作業しながら、ゆるく交流できる会です。<br><br></p>\n<p>作業の合間に情報交換したり、雑談したり、進捗をシェアしたり。ひとりではなかなか進まない制作も、仲間と一緒なら捗るかも。<br><br></p>\n<p>【開催日時】<br>\n・2026年11月1日(日)　13:00〜18:00<br>\n※途中参加、途中退室は可能ですが会費は変わりません<br><br></p>\n<p>【会費】<br>\n1,000円（税込）<br>\n決済方法：現金、PayPay(いずれも当日受付にて)<br><br></p>\n<p>【開催場所】<br>\n東京都杉並区高円寺南2丁目40番24号<br>\nコミュニティふらっと高円寺南 第2集会室<br><br></p>\n<p>【定員】24名<br></p>\n<p>【持ち物】<br>\n作業に必要なもの（油絵は不可）<br><br></p>\n<p>【当日の流れ】<br>\n13:00 開場<br>\n14:00 簡単な自己紹介、今日やることを共有<br>\n17:50 会場の清掃、退室準備<br>\n18:00 閉会<br></p>\n<p>【注意事項】<br>\n・会場内での飲食は可能ですが、臭いや音にはご配慮ください。<br>\n・本会は創作の場となりますので資格試験の勉強等、直接創作と関係のない作業はご遠慮ください。<br>\n・他の参加者の作業の妨げになる作業(大きな音や臭いなど)はご遠慮ください。<br>\n・他の参加者のご迷惑になる勧誘行為等はお控えください。場合によっては途中退出して頂きます。その際返金は致しませんのでご了承ください。<br>\n・キャンセルの場合は必ず前日までにご連絡お願いします。無断キャンセルにつきましては、今後参加をお断りさせて頂きますのでご了承ください。5</p>",
       "url": "https://creatorscafe.connpass.com/event/408131/",
@@ -109,7 +109,7 @@
       "published_at": "2026-09-27T23:33:15+09:00",
       "limit": 4,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16803,
         "subdomain": "creatorscafe",
@@ -125,7 +125,7 @@
       "owner_display_name": "Takumi",
       "accepted": 2,
       "waiting": 0,
-      "updated_at": "2026-10-31T21:34:56+09:00"
+      "updated_at": "2026-11-01T11:45:51+09:00"
     },
     {
       "id": 410254,
@@ -138,9 +138,9 @@
       "started_at": "2026-11-01T13:00:00+09:00",
       "ended_at": "2026-11-01T17:00:00+09:00",
       "published_at": "2026-10-18T13:03:52+09:00",
-      "limit": 21,
+      "limit": 17,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 3331,
         "subdomain": "weeyble-data",
@@ -154,9 +154,9 @@
       "owner_id": 109434,
       "owner_nickname": "weeyble",
       "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 18,
+      "accepted": 15,
       "waiting": 0,
-      "updated_at": "2026-11-01T08:09:03+09:00"
+      "updated_at": "2026-11-01T12:19:11+09:00"
     },
     {
       "id": 411687,
@@ -171,7 +171,7 @@
       "published_at": "2026-10-31T20:36:44+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 966,
         "subdomain": "devmorning",
@@ -202,7 +202,7 @@
       "published_at": "2026-09-30T18:25:26+09:00",
       "limit": 16,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 5599,
         "subdomain": "coderdojo-akabane",
