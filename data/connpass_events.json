@@ -1,39 +1,8 @@
 {
-  "fetched_at": "2026-11-02T12:42:50.799198+09:00",
+  "fetched_at": "2026-11-02T20:53:50.296383+09:00",
   "date": "20261102",
   "count": 4,
   "events": [
-    {
-      "id": 409649,
-      "title": "ゆるAI勉強会 #2",
-      "catch": "",
-      "description": "<h2>イベント概要</h2>\n<p>ゆるAI勉強会は、ゆるくAIを学ぶをテーマに開催される初心者大歓迎の勉強会です。</p>\n<p>ChatGPTとか、Claudeとか、Geminiとか、画像生成とか、便利そうなAIツールとか色々あるけども、\n「これ使ってみたら面白かった」「なんか仕事で使えそうだった」「よくわからないけどすごかった」\nみたいにゆる〜く話を、共有できればと思っています！</p>\n<p>第2回のテーマは <strong>『ノンテーマ』</strong> です 🤖</p>\n<p>AIがどんどん身近になってきている今日この頃。<br>\nCodex、Claude、Gemini、画像生成、AIエージェント、dots,\n業務活用、個人開発、プロンプトの工夫など、AIにまつわる話題をテーマにこだわらずゆるく持ち寄って話す回です！</p>\n<p>「最近こんなAIツールを使ってみた」\n「仕事でこういうふうに使ってみた」\n「よくわからないけど、これ面白かった」\n「AIで遊んでいたらこんなことができた」</p>\n<p>みたいな話をワイワイ共有しましょう。</p>\n<p>AIにめちゃくちゃ詳しい方も、最近ちょっと触り始めた方も、これから触ってみたい方も、ぜひお気軽にご参加ください！</p>\n<p>Xハッシュタグ: <code>#yuruai</code></p>\n<h2>発表枠について</h2>\n<p>今回は以下の発表枠を予定しています。</p>\n<ul>\n<li>10分発表枠：6名</li>\n</ul>\n<p>テーマはAIに関する内容であれば幅広く歓迎です。</p>\n<p>たとえば、以下のような内容を想定しています。</p>\n<ul>\n<li>ChatGPT / Claude / Gemini などを使ってみた話</li>\n<li>AIを仕事で使ってみた話</li>\n<li>AIを日常で使ってみた話</li>\n<li>便利だったAIツール紹介</li>\n<li>プロンプトの工夫</li>\n<li>AIエージェントを試してみた話</li>\n<li>画像生成・動画生成・音声生成で遊んでみた話</li>\n<li>AIで個人開発してみた話</li>\n<li>AI活用で失敗した話</li>\n<li>最近気になっているAIニュース</li>\n<li>完全には理解してないけど面白かったAIの話</li>\n</ul>\n<p>発表の完成度は高くなくても大丈夫です。<br>\n「試してみたらこんな感じでした」くらいのゆるい共有も大歓迎です。</p>\n<h2>日時</h2>\n<p>2026/11/2(火) 19:00 ~ 21:00（開場 18:30）</p>\n<h2>場所</h2>\n<p>株式会社セキュアスカイテクノロジー 本社\n〒101-0032 東京都千代田区岩本町2-2-4 PMO神田岩本町II 10F</p>\n<ul>\n<li>都営新宿線「岩本町」駅　徒歩3分</li>\n<li>JR総武線快速「新日本橋」駅　徒歩7分</li>\n<li>JR・銀座線「神田」駅　徒歩7分</li>\n<li>東京メトロ日比谷線「小伝馬町」駅　徒歩7分</li>\n</ul>\n<p>※入館方法などは追ってご案内します。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>アジェンダ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30-19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:00-19:05</td>\n<td>挨拶&amp;イベント説明</td>\n</tr>\n<tr>\n<td>19:05-19:15</td>\n<td>会場スポンサーセッション</td>\n</tr>\n<tr>\n<td>19:15-19:25</td>\n<td>10分発表枠①：つかまん さん</td>\n</tr>\n<tr>\n<td>19:25-19:35</td>\n<td>10分発表枠②：kota2and3kan さん</td>\n</tr>\n<tr>\n<td>19:35-19:45</td>\n<td>10分発表枠③：henteko さん</td>\n</tr>\n<tr>\n<td>19:45-19:55</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>19:55-20:05</td>\n<td>10分発表枠④：katomeganeb83 さん</td>\n</tr>\n<tr>\n<td>20:05-20:15</td>\n<td>10分発表枠⑤：hayama17 さん</td>\n</tr>\n<tr>\n<td>20:15-20:25</td>\n<td>10分発表枠⑥：マギア さん</td>\n</tr>\n<tr>\n<td>20:25-20:30</td>\n<td>アンケート回答・お知らせ</td>\n</tr>\n<tr>\n<td>20:30-21:00</td>\n<td>交流タイム</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは変更になる可能性があります。</p>\n<h3>ご注意</h3>\n<p><strong>交流タイムでは食事のご提供はございません。</strong></p>\n<p>飲み物などの提供有無については、決まり次第追記します。</p>\n<h2>会場スポンサー：株式会社セキュアスカイテクノロジー 様</h2>\n<p>セキュアスカイ・テクノロジーは、「インターネットを安全にする」をミッションに掲げ、Webサービスの安全な構築・運用を支えるWebセキュリティの専門企業です。</p>\n<p>クラウド型WAF「Scutum（スキュータム）」やEASMサービス「Dredger（ドレッジャー）」の提供をはじめ、脆弱性診断・ペネトレーションテスト、さらには開発者・サイト運営者向けのセミナーやセキュリティアドバイザリーなどを通じて、企業の安全なWebサイト運営を包括的にサポートしています。</p>\n<p><a href=\"https://www.securesky-tech.com/\" rel=\"nofollow\">https://www.securesky-tech.com/</a></p>\n<h2>参加に関するご注意</h2>\n<p>現地参加の際には、お名前、所属、メールアドレスの情報が入館申請のために必要となります。参加登録時アンケートに正確にご入力くださいますようご協力をお願い致します。全ての方にアンケートは表示されますが、オンライン参加の方においては、任意の内容にてご回答頂ければ結構です。</p>\n<p>また、本ベント内容に関係せず、飲食や勧誘などを主目的とした参加は固くお断りします。また、公序良俗に反する行動や、ほかの参加者への迷惑となる行為などは一切容認致しません。発見次第、その場でご退場いただきます。退場の指示に従えない場合は、然るべき対応を取らせて頂きますので予めご了承ください。</p>\n<h2>行動規範</h2>\n<p>私たちは勉強会に参加されるみなさんが、ジェンダー、性的指向、障碍、身体的外観、身体の大きさ、人種、宗教その他のいかなる属性に関わらず、安心して参加できる場であることを大切にしています。</p>\n<p>参加者間でのいかなる形のハラスメントも容認しません。<br>\n性的な表現や画像、参加者を不快にさせる発言・行動は、本勉強会におけるいずれの発表・会話においても許容いたしません。</p>\n<p>当規則に違反する参加者は、主催者の裁量により退出をお願いする可能性があります。</p>\n<p>We are dedicated to providing a harassment-free event experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery are not appropriate for any presentations or conversations. Participants violating these rules may be sanctioned or expelled from the event at the discretion of the organizers.</p>\n<h2>迷惑行為について</h2>\n<p>他の方への迷惑行為を運営が確認した場合には、行動を改めるよう警告をさせていただきます。<br>\nそれでも改善が見られない場合は、退出していただく場合があります。</p>\n<p>また、他の参加者や運営への迷惑行為を目撃した、または受けたと感じた場合には、会場内の運営スタッフまでご連絡ください。</p>\n<p>ボットやスパム、他イベントでのキャンセル率が高いアカウント、運営が不適切と判断したアカウントによる登録があった場合、運営の判断によって強制的にキャンセルする場合があります。</p>",
-      "url": "https://yuru-ai.connpass.com/event/409649/",
-      "image_url": "https://media.connpass.com/thumbs/ab/f4/abf43ce9b2d184d3f83d95a991e2cc3e.png",
-      "hash_tag": "yuruai",
-      "started_at": "2026-11-02T19:00:00+09:00",
-      "ended_at": "2026-11-02T21:00:00+09:00",
-      "published_at": "2026-10-15T10:01:16+09:00",
-      "limit": 26,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 17644,
-        "subdomain": "yuru-ai",
-        "title": "ゆるAI勉強会",
-        "url": "https://yuru-ai.connpass.com/"
-      },
-      "address": "東京都千代田区岩本町2-2-4 PMO神田岩本町II 10F",
-      "place": "株式会社セキュアスカイテクノロジー本社",
-      "lat": "35.693012700000",
-      "lon": "139.775267200000",
-      "owner_id": 14580,
-      "owner_nickname": "shota_inoue_9212",
-      "owner_display_name": "syossan27",
-      "accepted": 18,
-      "waiting": 0,
-      "updated_at": "2026-11-01T18:19:46+09:00"
-    },
     {
       "id": 408790,
       "title": "第21回知財若手の会（11月2日）",
@@ -47,7 +16,7 @@
       "published_at": "2026-10-03T12:37:05+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 12158,
         "subdomain": "chizawaka",
@@ -61,9 +30,40 @@
       "owner_id": 821830,
       "owner_nickname": "sei-test",
       "owner_display_name": "藤原",
-      "accepted": 15,
+      "accepted": 16,
       "waiting": 0,
       "updated_at": "2026-10-31T19:31:56+09:00"
+    },
+    {
+      "id": 409649,
+      "title": "ゆるAI勉強会 #2",
+      "catch": "",
+      "description": "<h2>イベント概要</h2>\n<p>ゆるAI勉強会は、ゆるくAIを学ぶをテーマに開催される初心者大歓迎の勉強会です。</p>\n<p>ChatGPTとか、Claudeとか、Geminiとか、画像生成とか、便利そうなAIツールとか色々あるけども、\n「これ使ってみたら面白かった」「なんか仕事で使えそうだった」「よくわからないけどすごかった」\nみたいにゆる〜く話を、共有できればと思っています！</p>\n<p>第2回のテーマは <strong>『ノンテーマ』</strong> です 🤖</p>\n<p>AIがどんどん身近になってきている今日この頃。<br>\nCodex、Claude、Gemini、画像生成、AIエージェント、dots,\n業務活用、個人開発、プロンプトの工夫など、AIにまつわる話題をテーマにこだわらずゆるく持ち寄って話す回です！</p>\n<p>「最近こんなAIツールを使ってみた」\n「仕事でこういうふうに使ってみた」\n「よくわからないけど、これ面白かった」\n「AIで遊んでいたらこんなことができた」</p>\n<p>みたいな話をワイワイ共有しましょう。</p>\n<p>AIにめちゃくちゃ詳しい方も、最近ちょっと触り始めた方も、これから触ってみたい方も、ぜひお気軽にご参加ください！</p>\n<p>Xハッシュタグ: <code>#yuruai</code></p>\n<h2>発表枠について</h2>\n<p>今回は以下の発表枠を予定しています。</p>\n<ul>\n<li>10分発表枠：6名</li>\n</ul>\n<p>テーマはAIに関する内容であれば幅広く歓迎です。</p>\n<p>たとえば、以下のような内容を想定しています。</p>\n<ul>\n<li>ChatGPT / Claude / Gemini などを使ってみた話</li>\n<li>AIを仕事で使ってみた話</li>\n<li>AIを日常で使ってみた話</li>\n<li>便利だったAIツール紹介</li>\n<li>プロンプトの工夫</li>\n<li>AIエージェントを試してみた話</li>\n<li>画像生成・動画生成・音声生成で遊んでみた話</li>\n<li>AIで個人開発してみた話</li>\n<li>AI活用で失敗した話</li>\n<li>最近気になっているAIニュース</li>\n<li>完全には理解してないけど面白かったAIの話</li>\n</ul>\n<p>発表の完成度は高くなくても大丈夫です。<br>\n「試してみたらこんな感じでした」くらいのゆるい共有も大歓迎です。</p>\n<h2>日時</h2>\n<p>2026/11/2(火) 19:00 ~ 21:00（開場 18:30）</p>\n<h2>場所</h2>\n<p>株式会社セキュアスカイテクノロジー 本社\n〒101-0032 東京都千代田区岩本町2-2-4 PMO神田岩本町II 10F</p>\n<ul>\n<li>都営新宿線「岩本町」駅　徒歩3分</li>\n<li>JR総武線快速「新日本橋」駅　徒歩7分</li>\n<li>JR・銀座線「神田」駅　徒歩7分</li>\n<li>東京メトロ日比谷線「小伝馬町」駅　徒歩7分</li>\n</ul>\n<p>※入館方法などは追ってご案内します。</p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>アジェンダ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:30-19:00</td>\n<td>開場</td>\n</tr>\n<tr>\n<td>19:00-19:05</td>\n<td>挨拶&amp;イベント説明</td>\n</tr>\n<tr>\n<td>19:05-19:15</td>\n<td>会場スポンサーセッション</td>\n</tr>\n<tr>\n<td>19:15-19:25</td>\n<td>10分発表枠①：つかまん さん</td>\n</tr>\n<tr>\n<td>19:25-19:35</td>\n<td>10分発表枠②：kota2and3kan さん</td>\n</tr>\n<tr>\n<td>19:35-19:45</td>\n<td>10分発表枠③：henteko さん</td>\n</tr>\n<tr>\n<td>19:45-19:55</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td>19:55-20:05</td>\n<td>10分発表枠④：Kato83 さん</td>\n</tr>\n<tr>\n<td>20:05-20:15</td>\n<td>10分発表枠⑤：hayama17 さん</td>\n</tr>\n<tr>\n<td>20:15-20:25</td>\n<td>10分発表枠⑥：マギア さん</td>\n</tr>\n<tr>\n<td>20:25-20:30</td>\n<td>アンケート回答・お知らせ</td>\n</tr>\n<tr>\n<td>20:30-21:00</td>\n<td>交流タイム</td>\n</tr>\n</tbody>\n</table>\n<p>※ タイムテーブルは変更になる可能性があります。</p>\n<h3>ご注意</h3>\n<p><strong>交流タイムでは食事のご提供はございません。</strong></p>\n<p>飲み物などの提供有無については、決まり次第追記します。</p>\n<h2>会場スポンサー：株式会社セキュアスカイテクノロジー 様</h2>\n<p>セキュアスカイ・テクノロジーは、「インターネットを安全にする」をミッションに掲げ、Webサービスの安全な構築・運用を支えるWebセキュリティの専門企業です。</p>\n<p>クラウド型WAF「Scutum（スキュータム）」やEASMサービス「Dredger（ドレッジャー）」の提供をはじめ、脆弱性診断・ペネトレーションテスト、さらには開発者・サイト運営者向けのセミナーやセキュリティアドバイザリーなどを通じて、企業の安全なWebサイト運営を包括的にサポートしています。</p>\n<p><a href=\"https://www.securesky-tech.com/\" rel=\"nofollow\">https://www.securesky-tech.com/</a></p>\n<h2>参加に関するご注意</h2>\n<p>現地参加の際には、お名前、所属、メールアドレスの情報が入館申請のために必要となります。参加登録時アンケートに正確にご入力くださいますようご協力をお願い致します。全ての方にアンケートは表示されますが、オンライン参加の方においては、任意の内容にてご回答頂ければ結構です。</p>\n<p>また、本ベント内容に関係せず、飲食や勧誘などを主目的とした参加は固くお断りします。また、公序良俗に反する行動や、ほかの参加者への迷惑となる行為などは一切容認致しません。発見次第、その場でご退場いただきます。退場の指示に従えない場合は、然るべき対応を取らせて頂きますので予めご了承ください。</p>\n<h2>行動規範</h2>\n<p>私たちは勉強会に参加されるみなさんが、ジェンダー、性的指向、障碍、身体的外観、身体の大きさ、人種、宗教その他のいかなる属性に関わらず、安心して参加できる場であることを大切にしています。</p>\n<p>参加者間でのいかなる形のハラスメントも容認しません。<br>\n性的な表現や画像、参加者を不快にさせる発言・行動は、本勉強会におけるいずれの発表・会話においても許容いたしません。</p>\n<p>当規則に違反する参加者は、主催者の裁量により退出をお願いする可能性があります。</p>\n<p>We are dedicated to providing a harassment-free event experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery are not appropriate for any presentations or conversations. Participants violating these rules may be sanctioned or expelled from the event at the discretion of the organizers.</p>\n<h2>迷惑行為について</h2>\n<p>他の方への迷惑行為を運営が確認した場合には、行動を改めるよう警告をさせていただきます。<br>\nそれでも改善が見られない場合は、退出していただく場合があります。</p>\n<p>また、他の参加者や運営への迷惑行為を目撃した、または受けたと感じた場合には、会場内の運営スタッフまでご連絡ください。</p>\n<p>ボットやスパム、他イベントでのキャンセル率が高いアカウント、運営が不適切と判断したアカウントによる登録があった場合、運営の判断によって強制的にキャンセルする場合があります。</p>",
+      "url": "https://yuru-ai.connpass.com/event/409649/",
+      "image_url": "https://media.connpass.com/thumbs/ab/f4/abf43ce9b2d184d3f83d95a991e2cc3e.png",
+      "hash_tag": "yuruai",
+      "started_at": "2026-11-02T19:00:00+09:00",
+      "ended_at": "2026-11-02T21:00:00+09:00",
+      "published_at": "2026-10-15T10:01:16+09:00",
+      "limit": 26,
+      "event_type": "participation",
+      "open_status": "open",
+      "group": {
+        "id": 17644,
+        "subdomain": "yuru-ai",
+        "title": "ゆるAI勉強会",
+        "url": "https://yuru-ai.connpass.com/"
+      },
+      "address": "東京都千代田区岩本町2-2-4 PMO神田岩本町II 10F",
+      "place": "株式会社セキュアスカイテクノロジー本社",
+      "lat": "35.693012700000",
+      "lon": "139.775267200000",
+      "owner_id": 14580,
+      "owner_nickname": "shota_inoue_9212",
+      "owner_display_name": "syossan27",
+      "accepted": 19,
+      "waiting": 0,
+      "updated_at": "2026-11-02T19:16:45+09:00"
     },
     {
       "id": 410756,
@@ -78,7 +78,7 @@
       "published_at": "2026-10-22T23:26:38+09:00",
       "limit": 8,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 18084,
         "subdomain": "kawaii-robot",
@@ -94,22 +94,22 @@
       "owner_display_name": "hayakawagomi",
       "accepted": 8,
       "waiting": 7,
-      "updated_at": "2026-10-22T23:26:38+09:00"
+      "updated_at": "2026-11-02T18:26:48+09:00"
     },
     {
       "id": 411309,
       "title": "「re:Invent 2026を愉しむ徹底解説」～AWSとラスベガスへ愛をこめて",
       "catch": "re:Invent 2026 を渥美さんが熱く語ります！ 楽しみましょう。",
-      "description": "<h2>概要</h2>\n<p>いよいよ AWS re:Invent 2026 まで1か月を切りました！　第1回 re:Invent 2012 からほとんど参加している渥美さんが、re:Inventの歴史と人生を変えた思い出、感動の場面、より深く知る知識、愉しみ方、ラスベガス観光を熱く解説します。re:Invent に行く人も行かない人も、いずれ行きたい人も、リモート/リアル会場＋交流会で大いに楽しみましょう。\n勉強会冒頭から乾杯で始めます。会場参加の方は飲み物食べ物をお持ち込みください。</p>\n<h2>日時</h2>\n<p>2026年11月2日（月）18:30開場、19:00～20:40 本編、20:50～21:30 会場にて交流会、多分2次会あり<br></p>\n<h2>リモート参加</h2>\n<p>zoom (当日参加登録者に共有)<br></p>\n<h2>リアル会場参加 先着24名</h2>\n<p>株式会社SHIFT 新宿オフィス<br>\n新宿文化クイントビル9F カフェエリア<br>\nGoogle Map：<br>\n<a href=\"https://maps.app.goo.gl/wdsb7Ma8p1qSKqpL7&lt;br>\" rel=\"nofollow\">https://maps.app.goo.gl/wdsb7Ma8p1qSKqpL7<br></a>\n参加費： 1000円実費（講演冒頭から乾杯、飲み物とおつまみ程度をご用意します）<br>\n多くはありませんので、加えてお好きなもの、みんなで食べたいものなどの持込、差し入れを大歓迎いたします。<br>\n規則により会場での調理、加温、取り分けはできません。<br></p>\n<h2>参加対象者</h2>\n<p>・re:Invent は人生変える体験、と聞いて関心がある人、ほんとかよ？と思う人<br>\n・26/10/28 開催 re:Invent2026 Standby 事前勉強会＠サイオスに参加してもっと聞きたい人<br>\n・特に re:Invent に初めて行く人向け＋来年こそは行きたい人<br>\n・re:Invent に行ったことあるけどもっと知りたい人<br>\n・あちこちの AWS re:Invent 事前勉強会に参加してもっと知りたい人<br>\n・re:Invent に関係なくAWS大好き、なんでも知りたい人<br></p>\n<h2>当日運営お手伝い枠、絶賛募集！</h2>\n<p>現地参加イベントの当日運営のボランティア枠を募集します。\n会場開場の前に集合、飲食買出し、会場設営、受付、片付けなど<br></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\"><strong>時間</strong></th>\n<th style=\"text-align: left;\"><strong>タイトル/登壇者</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">当日運営ボランティア会場集合、コンビニ買出し等</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場、受付開始、～名刺交換等、参加者ネットワーキング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:50</td>\n<td style=\"text-align: left;\">配信開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:55</td>\n<td style=\"text-align: left;\">会場説明、注意など</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:15</td>\n<td style=\"text-align: left;\">趣旨説明、会場スポンサー株式会社SHIFT様からプレゼン</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15-20:45</td>\n<td style=\"text-align: left;\">乾杯で講演開始 渥美さん「re:Invent を楽しんで人生を変える体験に！」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45-</td>\n<td style=\"text-align: left;\">交流会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:45</td>\n<td style=\"text-align: left;\">閉会　～会場片付け（ご参加者もヘルプお願いいたします。）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">22:00</td>\n<td style=\"text-align: left;\">会場完全撤収</td>\n</tr>\n</tbody>\n</table>\n<h2>アジェンダ</h2>\n<p>テーマ「re:Invent を愉しむ徹底解説」～AWSとラスベガスへ愛をこめて！<br>\n・2012年第1回から14年間の歴史<br>\n・AWS 変わらないもの、変わったもの<br>\n・思い出深い感動の場面<br>\n　～Lambda、Aurora、Snowmobileなどの発表<br>\n・黎明期、日本からのre:Invent 登壇者<br>\n・キーノートを楽しむ過去の深淵を徹底解説<br>\n・Dr. Werner 昨年の最後のキーノートで我々に残した「宿題」解説<br>\n・Dr. Werner を継ぐ講演はあるか？　個人的希望と推測<br> \n・AWSの安全保障、National Security話題<br>\n・re:Invent で人生変えた人々譚<br>\n・ラスベガスガイド、ホテル、レストラン<br>\n・映画で知るラスベガスの歴史、奥深さ<br>\n・グランドキャニオンツアー徹底解説<br>\n・コンピュータ歴史博物館にも行こう<br></p>",
+      "description": "<h2>概要</h2>\n<p>いよいよ AWS re:Invent 2026 まで1か月を切りました！　第1回 re:Invent 2012 からほとんど参加している渥美さんが、re:Inventの歴史と人生を変えた思い出、感動の場面、より深く知る知識、愉しみ方、ラスベガス観光を熱く解説します。re:Invent に行く人も行かない人も、いずれ行きたい人も、リモート/リアル会場＋交流会で大いに楽しみましょう。\n勉強会冒頭から乾杯で始めます。会場参加の方は飲み物食べ物をお持ち込みください。</p>\n<h2>日時</h2>\n<p>2026年11月2日（月）18:30開場、19:00～20:40 本編、20:50～21:30 会場にて交流会、多分2次会あり<br></p>\n<h2>リモート参加</h2>\n<p>zoom (当日参加登録者に共有)<br></p>\n<h2>リアル会場参加 先着24名<br>【当日開演近くの会場参加は、「イベントへのお問合せ」からイベント管理者あてにご連絡ください】</h2>\n<p>株式会社SHIFT 新宿オフィス<br>\n新宿文化クイントビル9F カフェエリア<br>\nGoogle Map：<br>\n<a href=\"https://maps.app.goo.gl/wdsb7Ma8p1qSKqpL7&lt;br>\" rel=\"nofollow\">https://maps.app.goo.gl/wdsb7Ma8p1qSKqpL7<br></a>\n参加費： 1000円実費（講演冒頭から乾杯、飲み物とおつまみ程度をご用意します）<br>\n多くはありませんので、加えてお好きなもの、みんなで食べたいものなどの持込、差し入れを大歓迎いたします。<br>\n規則により会場での調理、加温、取り分けはできません。<br></p>\n<h2>参加対象者</h2>\n<p>・re:Invent は人生変える体験、と聞いて関心がある人、ほんとかよ？と思う人<br>\n・26/10/28 開催 re:Invent2026 Standby 事前勉強会＠サイオスに参加してもっと聞きたい人<br>\n・特に re:Invent に初めて行く人向け＋来年こそは行きたい人<br>\n・re:Invent に行ったことあるけどもっと知りたい人<br>\n・あちこちの AWS re:Invent 事前勉強会に参加してもっと知りたい人<br>\n・re:Invent に関係なくAWS大好き、なんでも知りたい人<br></p>\n<h2>当日運営お手伝い枠、絶賛募集！</h2>\n<p>現地参加イベントの当日運営のボランティア枠を募集します。\n会場開場の前に集合、飲食買出し、会場設営、受付、片付けなど<br></p>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\"><strong>時間</strong></th>\n<th style=\"text-align: left;\"><strong>タイトル/登壇者</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">18:00</td>\n<td style=\"text-align: left;\">当日運営ボランティア会場集合、コンビニ買出し等</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:30</td>\n<td style=\"text-align: left;\">開場、受付開始、～名刺交換等、参加者ネットワーキング</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:50</td>\n<td style=\"text-align: left;\">配信開始</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">18:55</td>\n<td style=\"text-align: left;\">会場説明、注意など</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:00-19:15</td>\n<td style=\"text-align: left;\">趣旨説明、会場スポンサー株式会社SHIFT様からプレゼン</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">19:15-20:45</td>\n<td style=\"text-align: left;\">乾杯で講演開始 渥美さん「re:Invent を楽しんで人生を変える体験に！」</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">20:45-</td>\n<td style=\"text-align: left;\">交流会</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">21:45</td>\n<td style=\"text-align: left;\">閉会　～会場片付け（ご参加者もヘルプお願いいたします。）</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">22:00</td>\n<td style=\"text-align: left;\">会場完全撤収</td>\n</tr>\n</tbody>\n</table>\n<h2>アジェンダ</h2>\n<p>テーマ「re:Invent を愉しむ徹底解説」～AWSとラスベガスへ愛をこめて！<br>\n・2012年第1回から14年間の歴史<br>\n・AWS 変わらないもの、変わったもの<br>\n・思い出深い感動の場面<br>\n　～Lambda、Aurora、Snowmobileなどの発表<br>\n・黎明期、日本からのre:Invent 登壇者<br>\n・キーノートを楽しむ過去の深淵を徹底解説<br>\n・Dr. Werner 昨年の最後のキーノートで我々に残した「宿題」解説<br>\n・Dr. Werner を継ぐ講演はあるか？　個人的希望と推測<br> \n・AWSの安全保障、National Security話題<br>\n・re:Invent で人生変えた人々譚<br>\n・ラスベガスガイド、ホテル、レストラン<br>\n・映画で知るラスベガスの歴史、奥深さ<br>\n・グランドキャニオンツアー徹底解説<br>\n・コンピュータ歴史博物館にも行こう<br></p>",
       "url": "https://salon-atsumi.connpass.com/event/411309/",
       "image_url": "https://media.connpass.com/thumbs/f7/73/f773dde1856d26463023ab795f3a6ce3.png",
       "hash_tag": "reinvent2026",
       "started_at": "2026-11-02T18:30:00+09:00",
       "ended_at": "2026-11-02T22:00:00+09:00",
       "published_at": "2026-10-28T20:39:40+09:00",
-      "limit": 80,
+      "limit": 64,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14300,
         "subdomain": "salon-atsumi",
@@ -123,9 +123,9 @@
       "owner_id": 8295,
       "owner_nickname": "toshihide_atsumi",
       "owner_display_name": "atsumi",
-      "accepted": 43,
+      "accepted": 55,
       "waiting": 0,
-      "updated_at": "2026-11-01T21:26:33+09:00"
+      "updated_at": "2026-11-02T15:07:28+09:00"
     }
   ]
 }
