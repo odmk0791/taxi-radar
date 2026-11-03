@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-03T12:13:51.302132+09:00",
+  "fetched_at": "2026-11-03T20:31:01.110992+09:00",
   "date": "20261103",
   "count": 3,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-09-17T08:22:22+09:00",
       "limit": 25,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 6746,
         "subdomain": "iisd",
@@ -47,7 +47,7 @@
       "published_at": "2026-10-26T14:59:06+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -61,7 +61,7 @@
       "owner_id": 197714,
       "owner_nickname": "clear_",
       "owner_display_name": "clear_",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-10-26T14:59:06+09:00"
     },
