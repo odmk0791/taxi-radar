@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-03T06:12:01.782458+09:00",
+  "fetched_at": "2026-11-03T12:13:51.302132+09:00",
   "date": "20261103",
   "count": 3,
   "events": [
@@ -30,7 +30,7 @@
       "owner_id": 82264,
       "owner_nickname": "snmr_s",
       "owner_display_name": "snmr_s",
-      "accepted": 20,
+      "accepted": 19,
       "waiting": 0,
       "updated_at": "2026-11-02T19:00:24+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-11-02T09:27:07+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 9942,
         "subdomain": "openforce",
@@ -92,7 +92,7 @@
       "owner_id": 10191,
       "owner_nickname": "nanbuwks",
       "owner_display_name": "nanbuwks",
-      "accepted": 4,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-11-02T09:27:07+09:00"
     }
