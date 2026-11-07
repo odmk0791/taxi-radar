@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T11:29:19.597684+09:00",
+  "fetched_at": "2026-11-07T18:28:32.472357+09:00",
   "date": "20261107",
   "count": 15,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-10-30T19:10:24+09:00",
       "limit": 13,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 14352,
         "subdomain": "streamline",
@@ -38,7 +38,7 @@
       "id": 410350,
       "title": "[第二回] 関数型ドメインモデリングハンズオン with TypeScript",
       "catch": "",
-      "description": "<h1>関数型ドメインモデリング with TypeScript</h1>\n<h2>概要</h2>\n<p>最近よく聞く「関数型ドメインモデリング」ですが、それを実際の業務アプリケーションへどのように落とし込めば良いか、ご存知の方はまだまだ少ないのではないでしょうか。</p>\n<p>このイベントは、実際にコードを動かしながら、TypeScript における関数型ドメインモデリングを学ぶハンズオンイベントです。</p>\n<p>題材として、動物病院の予約・カルテ管理システムを扱います。最初はちょっとした変更がインシデントにつながるような辛く険しい実装から始め、要件変更や不具合をきっかけに少しずつ設計を改善していきます。</p>\n<p>抽象的な設計論だけでなく、具体的な業務上の事故や変更要求を起点に、Discriminated Union、Result 型、スキーマライブラリ、Branded Type などをどのように活用するかを学びます。</p>\n<p>関数型ドメインモデリングに興味のある方はもちろん、他のアーキテクチャにも応用できる汎用的な内容も取り扱いますので、TypeScript 自体に興味のある方もぜひご参加ください。</p>\n<h2>内容</h2>\n<h3>シナリオ</h3>\n<p>あなたは、ある動物病院の予約・カルテ管理システムを開発することになりました。</p>\n<p>最初に任されたのは、予約、受付、診察、会計、キャンセルまでを扱える最低限のアプリケーションです。コードは一見動いています。テストも通っています。</p>\n<p>ところが運用が始まると、次々に問題が見つかります。会計済みの来院がなぜか診察中に戻ってしまう。外部の検査機関APIから想定外のデータが返ってくる。ペットIDと飼い主IDを取り違えて、別のカルテに情報が紐づいてしまう。エラー処理では予想外のレイヤーから例外が飛んできて、どこで何が失敗するのか追いにくくなっていきます。</p>\n<p>このハンズオンでは、こうしたインシデントを一緒に乗り越えながら、壊れやすい実装を少しずつ育てていきます。</p>\n<h3>学べること</h3>\n<ul>\n<li>動物病院の予約・カルテ管理システムを題材にしたドメインモデリング</li>\n<li>壊れやすい状態表現の問題</li>\n<li>Discriminated Union による状態モデリング</li>\n<li>純粋関数による状態遷移の実装</li>\n<li>スキーマライブラリによる Always-Valid Domain Model の実践</li>\n<li>Branded Type による ID 取り違えの防止</li>\n<li>Result 型による明示的なエラー処理</li>\n<li>AIエージェントに実装を依頼するときに、設計原則をどう伝えるか</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: right;\">時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: right;\">0:00-0:10</td>\n<td>オープニング、題材とゴールの説明</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">0:10-0:30</td>\n<td>壊れやすい動物病院アプリを読む</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">0:30-1:10</td>\n<td>Discriminated Union で状態遷移を型にする</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">1:10-1:20</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">1:20-1:55</td>\n<td>Zod と Branded Type で境界とIDを守る</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">1:55-2:30</td>\n<td>Result 型でエラー処理を整理する</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">2:30-2:50</td>\n<td>AIエージェント時代の設計原則</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">2:50-3:00</td>\n<td>まとめ、質疑応答</td>\n</tr>\n</tbody>\n</table>\n<h2>対象</h2>\n<p>TypeScript初級〜中級者を対象にします。TypeScriptに精通している必要はなく、基本的な文法が書けるレベルであれば参加可能です。</p>\n<p>当日は、型定義や関数を読み書きしながら進めます。React やフロントエンドの知識は必須ではありません。</p>\n<h3>こんな方におすすめ</h3>\n<ul>\n<li>バックエンドで TypeScript を採用している</li>\n<li>TypeScriptにおけるアーキテクチャに興味がある</li>\n<li>実プロダクトにおける関数型に興味がある</li>\n<li>Discriminated Union や Result 型を実務でどう使うか知りたい</li>\n<li>AIエージェントにコードを書かせるうえで、設計の指針を持ちたい</li>\n</ul>\n<h2>当日の持ち物・事前準備</h2>\n<ul>\n<li>開発ができるPC</li>\n<li>普段使っているエディタ</li>\n<li>Node.js が動く環境</li>\n<li>pnpm が使える環境</li>\n<li>GitHub からリポジトリを clone できる環境</li>\n</ul>\n<p>当日は、用意されたサンプルアプリを手元で動かしながら進めます。TypeScript のコードを書き換えてテストを実行するため、事前に Node.js / pnpm / Git が使える状態にしておくとスムーズです。</p>\n<p>リポジトリやセットアップ手順は、イベントページまたは当日の案内で共有します。環境構築に不安がある方は、開始前に少し余裕をもって準備してください。</p>\n<h2>FAQ</h2>\n<p><strong>Q. 普段から TypeScript を触るわけではないのですが、参加できますか？</strong></p>\n<p>基本的な文法が書けるレベルであれば大丈夫です。\n当日は、複雑な型テクニックそのものよりも、「業務ルールをどう型や関数で表現するか」に焦点を当てます。細かい構文や慣れない書き方は、必要に応じてフォローしながら進めます。</p>\n<p><strong>Q. 関数型プログラミングの知識は必要ですか？</strong></p>\n<p>不要です。\nこのイベントでは、圏論やモナドといった理論的な内容ではなく、実際のアプリケーション設計で使う考え方に絞って扱います。Discriminated Union、Result 型、純粋関数などを、動物病院の予約・カルテ管理システムという具体的な題材を通して一緒に理解していきます。</p>\n<p><strong>Q. フロントエンドの知識は必要ですか？</strong></p>\n<p>不要です。\n題材は TypeScript のアプリケーションコードですが、中心になるのは UI ではなく、予約、診察、会計、キャンセルといった業務ロジックの設計です。React やブラウザ周りの知識がなくても参加できます。</p>\n<p><strong>Q. ハンズオンではどのくらいコードを書きますか？</strong></p>\n<p>小さなリファクタを段階的に進める想定です。\nゼロから大きなアプリを作るのではなく、最初に用意された「動くけれど壊れやすい」コードを読み、状態モデリング、外部入力の検証、IDの取り違え防止、エラー処理を少しずつ改善していきます。</p>\n<p><strong>Q. AIエージェントを使った開発経験は必要ですか？</strong></p>\n<p>必須ではありません。\nただし、このイベントでは「設計原則を持たないままAIエージェントに依頼すると、どのような壊れやすいコードが生まれやすいか」も扱います。AIエージェントを普段使っている方には、依頼の仕方やレビュー観点のヒントにもなる内容です。</p>\n<p><strong>Q. 事前準備は必要ですか？</strong></p>\n<p>Node.js と pnpm が使える環境を用意しておくとスムーズです。\nリポジトリの clone や依存関係のインストール手順は、イベントページまたは当日の案内で共有します。環境構築に不安がある方は、少し早めに接続して確認できるようにする予定です。</p>\n<h2>協賛</h2>\n<h3>TSKaigi</h3>\n<p><img alt=\"TSKaigi Logo\" src=\"https://2026.tskaigi.org/logo.svg\" style=\"padding:40px;\"></p>",
+      "description": "<h1>関数型ドメインモデリング with TypeScript</h1>\n<h2>概要</h2>\n<p>最近よく聞く「関数型ドメインモデリング」ですが、それを実際の業務アプリケーションへどのように落とし込めば良いか、ご存知の方はまだまだ少ないのではないでしょうか。</p>\n<p>このイベントは、実際にコードを動かしながら、TypeScript における関数型ドメインモデリングを学ぶハンズオンイベントです。</p>\n<p>題材として、動物病院の予約・カルテ管理システムを扱います。最初はちょっとした変更がインシデントにつながるような辛く険しい実装から始め、要件変更や不具合をきっかけに少しずつ設計を改善していきます。</p>\n<p>抽象的な設計論だけでなく、具体的な業務上の事故や変更要求を起点に、Discriminated Union、Result 型、スキーマライブラリ、Branded Type などをどのように活用するかを学びます。</p>\n<p>関数型ドメインモデリングに興味のある方はもちろん、他のアーキテクチャにも応用できる汎用的な内容も取り扱いますので、TypeScript 自体に興味のある方もぜひご参加ください。</p>\n<h2>内容</h2>\n<h3>シナリオ</h3>\n<p>あなたは、ある動物病院の予約・カルテ管理システムを開発することになりました。</p>\n<p>最初に任されたのは、予約、受付、診察、会計、キャンセルまでを扱える最低限のアプリケーションです。コードは一見動いています。テストも通っています。</p>\n<p>ところが運用が始まると、次々に問題が見つかります。会計済みの来院がなぜか診察中に戻ってしまう。外部の検査機関APIから想定外のデータが返ってくる。ペットIDと飼い主IDを取り違えて、別のカルテに情報が紐づいてしまう。エラー処理では予想外のレイヤーから例外が飛んできて、どこで何が失敗するのか追いにくくなっていきます。</p>\n<p>このハンズオンでは、こうしたインシデントを一緒に乗り越えながら、壊れやすい実装を少しずつ育てていきます。</p>\n<h3>学べること</h3>\n<ul>\n<li>動物病院の予約・カルテ管理システムを題材にしたドメインモデリング</li>\n<li>壊れやすい状態表現の問題</li>\n<li>Discriminated Union による状態モデリング</li>\n<li>純粋関数による状態遷移の実装</li>\n<li>スキーマライブラリによる Always-Valid Domain Model の実践</li>\n<li>Branded Type による ID 取り違えの防止</li>\n<li>Result 型による明示的なエラー処理</li>\n<li>AIエージェントに実装を依頼するときに、設計原則をどう伝えるか</li>\n</ul>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: right;\">時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: right;\">0:00-0:10</td>\n<td>オープニング、題材とゴールの説明</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">0:10-0:30</td>\n<td>壊れやすい動物病院アプリを読む</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">0:30-1:10</td>\n<td>Discriminated Union で状態遷移を型にする</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">1:10-1:20</td>\n<td>休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">1:20-1:55</td>\n<td>Zod と Branded Type で境界とIDを守る</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">1:55-2:30</td>\n<td>Result 型でエラー処理を整理する</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">2:30-2:50</td>\n<td>AIエージェント時代の設計原則</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">2:50-3:00</td>\n<td>まとめ、質疑応答</td>\n</tr>\n</tbody>\n</table>\n<h2>対象</h2>\n<p>TypeScript初級〜中級者を対象にします。TypeScriptに精通している必要はなく、基本的な文法が書けるレベルであれば参加可能です。</p>\n<p>当日は、型定義や関数を読み書きしながら進めます。React やフロントエンドの知識は必須ではありません。</p>\n<h3>こんな方におすすめ</h3>\n<ul>\n<li>バックエンドで TypeScript を採用している</li>\n<li>TypeScriptにおけるアーキテクチャに興味がある</li>\n<li>実プロダクトにおける関数型に興味がある</li>\n<li>Discriminated Union や Result 型を実務でどう使うか知りたい</li>\n<li>AIエージェントにコードを書かせるうえで、設計の指針を持ちたい</li>\n</ul>\n<h2>当日の持ち物・事前準備</h2>\n<ul>\n<li>開発ができるPC</li>\n<li>普段使っているエディタ</li>\n<li>Node.js が動く環境</li>\n<li>pnpm が使える環境</li>\n<li>GitHub からリポジトリを clone できる環境</li>\n</ul>\n<p>当日は、用意されたサンプルアプリを手元で動かしながら進めます。TypeScript のコードを書き換えてテストを実行するため、事前に Node.js / pnpm / Git が使える状態にしておくとスムーズです。</p>\n<p>リポジトリやセットアップ手順は、イベントページまたは当日の案内で共有します。環境構築に不安がある方は、開始前に少し余裕をもって準備してください。</p>\n<h2>FAQ</h2>\n<p><strong>Q. 普段から TypeScript を触るわけではないのですが、参加できますか？</strong></p>\n<p>基本的な文法が書けるレベルであれば大丈夫です。\n当日は、複雑な型テクニックそのものよりも、「業務ルールをどう型や関数で表現するか」に焦点を当てます。細かい構文や慣れない書き方は、必要に応じてフォローしながら進めます。</p>\n<p><strong>Q. 関数型プログラミングの知識は必要ですか？</strong></p>\n<p>不要です。\nこのイベントでは、圏論やモナドといった理論的な内容ではなく、実際のアプリケーション設計で使う考え方に絞って扱います。Discriminated Union、Result 型、純粋関数などを、動物病院の予約・カルテ管理システムという具体的な題材を通して一緒に理解していきます。</p>\n<p><strong>Q. フロントエンドの知識は必要ですか？</strong></p>\n<p>不要です。\n題材は TypeScript のアプリケーションコードですが、中心になるのは UI ではなく、予約、診察、会計、キャンセルといった業務ロジックの設計です。React やブラウザ周りの知識がなくても参加できます。</p>\n<p><strong>Q. ハンズオンではどのくらいコードを書きますか？</strong></p>\n<p>小さなリファクタを段階的に進める想定です。\nゼロから大きなアプリを作るのではなく、最初に用意された「動くけれど壊れやすい」コードを読み、状態モデリング、外部入力の検証、IDの取り違え防止、エラー処理を少しずつ改善していきます。</p>\n<p><strong>Q. AIエージェントを使った開発経験は必要ですか？</strong></p>\n<p>必須ではありません。\nただし、このイベントでは「設計原則を持たないままAIエージェントに依頼すると、どのような壊れやすいコードが生まれやすいか」も扱います。AIエージェントを普段使っている方には、依頼の仕方やレビュー観点のヒントにもなる内容です。</p>\n<p><strong>Q. 事前準備は必要ですか？</strong></p>\n<p>Node.js と pnpm が使える環境を用意しておくとスムーズです。\nリポジトリの clone や依存関係のインストール手順は、イベントページまたは当日の案内で共有します。環境構築に不安がある方は、少し早めに接続して確認できるようにする予定です。</p>",
       "url": "https://kamae-ts.connpass.com/event/410350/",
       "image_url": "https://media.connpass.com/thumbs/fc/95/fc9500cbb8b5c8ceb7c48dbf5eec7a98.png",
       "hash_tag": "fp_with_ts",
@@ -47,7 +47,7 @@
       "published_at": "2026-10-21T10:32:42+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17925,
         "subdomain": "kamae-ts",
@@ -63,7 +63,7 @@
       "owner_display_name": "kosui",
       "accepted": 13,
       "waiting": 0,
-      "updated_at": "2026-11-06T23:37:25+09:00"
+      "updated_at": "2026-11-07T15:17:57+09:00"
     },
     {
       "id": 408789,
@@ -78,7 +78,7 @@
       "published_at": "2026-10-03T13:18:40+09:00",
       "limit": 9,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 17693,
         "subdomain": "act-hub",
@@ -109,7 +109,7 @@
       "published_at": "2026-11-05T18:35:25+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -140,7 +140,7 @@
       "published_at": "2026-10-01T20:01:06+09:00",
       "limit": 22,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": null,
       "address": "東京都新宿区新宿1-16-10 コスモス御苑ビル4F",
       "place": "株式会社ジュニ",
@@ -150,7 +150,7 @@
       "owner_nickname": "RyoheiUkon",
       "owner_display_name": "ukonpower",
       "accepted": 22,
-      "waiting": 1,
+      "waiting": 0,
       "updated_at": "2026-11-07T01:32:57+09:00"
     },
     {
@@ -166,7 +166,7 @@
       "published_at": "2026-09-30T19:14:06+09:00",
       "limit": 232,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6644,
         "subdomain": "forcia",
@@ -180,7 +180,7 @@
       "owner_id": 726376,
       "owner_nickname": "yui_miyamoto",
       "owner_display_name": "yui_miyamoto",
-      "accepted": 36,
+      "accepted": 37,
       "waiting": 0,
       "updated_at": "2026-10-29T20:21:56+09:00"
     },
@@ -197,7 +197,7 @@
       "published_at": "2026-10-18T17:01:34+09:00",
       "limit": 43,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15690,
         "subdomain": "jppcc",
@@ -228,7 +228,7 @@
       "published_at": "2026-10-29T08:19:57+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 18228,
         "subdomain": "bitcoinbase",
@@ -321,7 +321,7 @@
       "published_at": "2026-10-16T18:32:13+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17134,
         "subdomain": "tamadev",
@@ -352,7 +352,7 @@
       "published_at": "2026-10-16T16:32:49+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 18230,
         "subdomain": "akishima-koco",
@@ -383,7 +383,7 @@
       "published_at": "2026-10-31T13:01:44+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 11642,
         "subdomain": "techmokmok",
@@ -414,7 +414,7 @@
       "published_at": "2026-10-29T08:23:17+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13830,
         "subdomain": "networktraining",
@@ -445,7 +445,7 @@
       "published_at": "2026-11-02T00:35:58+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 18281,
         "subdomain": "terakoyabase",
