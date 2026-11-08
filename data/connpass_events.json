@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T09:06:09.426093+09:00",
+  "fetched_at": "2026-11-08T15:50:43.939833+09:00",
   "date": "20261108",
   "count": 5,
   "events": [
@@ -47,7 +47,7 @@
       "published_at": "2026-09-30T18:33:17+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15549,
         "subdomain": "yuru-engineer",
@@ -78,7 +78,7 @@
       "published_at": "2026-11-05T09:24:58+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "cancelled",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -94,7 +94,7 @@
       "owner_display_name": "clear_",
       "accepted": 2,
       "waiting": 0,
-      "updated_at": "2026-11-05T09:24:58+09:00"
+      "updated_at": "2026-11-08T12:40:48+09:00"
     },
     {
       "id": 408080,
@@ -109,7 +109,7 @@
       "published_at": "2026-09-27T13:00:00+09:00",
       "limit": 60,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15676,
         "subdomain": "color-creative",
@@ -140,7 +140,7 @@
       "published_at": "2026-10-16T00:53:40+09:00",
       "limit": 5,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 14718,
         "subdomain": "coderdojo-komae",
