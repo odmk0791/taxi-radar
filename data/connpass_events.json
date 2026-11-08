@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T15:50:43.939833+09:00",
+  "fetched_at": "2026-11-08T22:58:57.753824+09:00",
   "date": "20261108",
   "count": 5,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-10-21T22:23:04+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4845,
         "subdomain": "sqlserver",
@@ -47,7 +47,7 @@
       "published_at": "2026-09-30T18:33:17+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15549,
         "subdomain": "yuru-engineer",
@@ -61,7 +61,7 @@
       "owner_id": 780753,
       "owner_nickname": "zukaseka",
       "owner_display_name": "わか",
-      "accepted": 10,
+      "accepted": 11,
       "waiting": 0,
       "updated_at": "2026-10-25T14:01:08+09:00"
     },
@@ -109,7 +109,7 @@
       "published_at": "2026-09-27T13:00:00+09:00",
       "limit": 60,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15676,
         "subdomain": "color-creative",
