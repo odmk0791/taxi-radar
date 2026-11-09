@@ -1,39 +1,8 @@
 {
-  "fetched_at": "2026-11-09T07:36:28.982186+09:00",
+  "fetched_at": "2026-11-09T11:15:35.275557+09:00",
   "date": "20261109",
   "count": 4,
   "events": [
-    {
-      "id": 408932,
-      "title": "AI駆動開発忘年勉強会&交流会（Claude Code / Codexの最前線）",
-      "catch": "2026年11月地点におけるClaude Code / Codexの最前線を学べる",
-      "description": "<h1>🍂 Claude Code / Codex の最前線を学ぶ「秋のAI駆動開発勉強会」</h1>\n<h2>2026年11月時点の最新AI駆動開発を、1日でまとめてキャッチアップ。</h2>\n<p>いま、世界中で注目を集める<strong>「AI駆動開発」</strong>。\nClaude Code、Codex の進化はこの数ヶ月でさらに加速し、\n<strong>「AIに書かせる」から「AIとチームで開発する」</strong>フェーズへと、開発の進め方そのものが変わり始めています。</p>\n<p>夏の勉強会から3ヶ月。\nツールのアップデートも、現場の使い方も、大きく様変わりしました。</p>\n<p>今回の「AI駆動開発忘年勉強会&amp;交流会」では、\n<strong>Claude Code / Codex の最新活用テクニック・現場のリアルな活用事例・AI時代のキャリア戦略</strong>を、\n実践者の知見とともに学べる実践型セッションを開催します。</p>\n<h3>👉 この勉強会のポイント</h3>\n<ul>\n<li>📖 <strong>AI駆動開発の最前線を学べる</strong> — 2026年11月時点の最新トレンドを一気に総まとめ</li>\n<li>💻 <strong>Claude Code の活用事例を知る</strong> — 実務・個人開発での「動いている事例」を公開</li>\n<li>🌱 <strong>AI駆動開発初心者も大歓迎</strong> — 「まだ触ったことがない」方向けの導入解説つき</li>\n</ul>\n<p>【ディスカッションテーマ例】</p>\n<ul>\n<li>Claude Code / Codex の最新アップデートと使い分け</li>\n<li>実務で\"本当に動いている\"AI駆動開発の事例</li>\n<li>AIエージェントを組み込んだ開発ワークフロー</li>\n<li>組織への生成AI導入の成功事例・失敗事例</li>\n<li>AI生成コードの品質管理・レビュー・技術負債との向き合い方</li>\n<li>AIエージェント時代のエンジニアキャリア設計</li>\n<li>現場で起きているリアルな試行錯誤</li>\n</ul>\n<p>を、実践者たちの知見とともに学べる実践型イベントを開催します。</p>\n<p><strong>1日で、AI駆動開発の最前線をまとめてキャッチアップできます。</strong></p>\n<hr>\n<h2>📆 開催概要</h2>\n<ul>\n<li><strong>日時</strong>：2026年11月9日（日）19:00〜21:00（受付 18:55〜）</li>\n<li><strong>会場</strong>：株式会社イノベイティア（代々木駅 徒歩30秒）</li>\n<li><strong>形式</strong>：オフライン（現地開催）</li>\n<li><strong>対象</strong>：エンジニア／開発リーダー／経営者・マネージャー／AI駆動開発にこれから取り組みたい方</li>\n</ul>\n<h3>🕐 タイムテーブル（予定）</h3>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:55~19:20</td>\n<td>受付+交流会</td>\n</tr>\n<tr>\n<td>19:20~20:00</td>\n<td>勉強会</td>\n</tr>\n<tr>\n<td>20:00~21:00</td>\n<td>交流会</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>📝 登壇者（ゲスト枠）</h2>\n<h3>藍 光祐（あい こうすけ）</h3>\n<p><img src=\"https://venture.jp/wp-content/uploads/2025/07/IMG_6299-1024x682.jpg\" alt=\"KNRアイコン\" width=\"250px\" height=\"200px\"></p>\n<p>GustoDevelopment株式会社 代表取締役</p>\n<p>2022年にGustoDevelopment株式会社を創業。AI（人工知能）に特化したシステム開発・コンサルティングを展開し、日本・パキスタン・インドにまたがる多国籍エンジニアチームを率いる。\n現在は「Agentic Workflow」を活用した自律型システムのプロトタイプ開発など、次世代のAI社会実装に注力。自社で「Next AI Leaders Hackathon (Clawathon Tokyo Edition)」や「Merge2026」などのカンファレンスを主催するなど、AIエンジニアのコミュニティ形成にも力を入れている。</p>\n<h3>本城 賢人（ほんじょう けんと）</h3>\n<p><img src=\"https://scontent-nrt1-2.xx.fbcdn.net/v/t39.30808-6/280286574_7383425981698719_4047191409767169916_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx2048x1365&amp;ctp=s2048x1365&amp;_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=6ee11a&amp;_nc_ohc=3pPEmQB2JJ0Q7kNvwERA-F2&amp;_nc_oc=AdpiwD-gX8hSJ0zQpA98uoxdY7fPmSY-Ffz5Dsjadiwv0F2_TJ_cGAaxTJ5_qCLXYgoRBpWhfg1omRrirIP_kva7&amp;_nc_zt=23&amp;_nc_ht=scontent-nrt1-2.xx&amp;_nc_gid=Cnx0NP5bdlTHT5MbRfNb6Q&amp;_nc_ss=7b2a8&amp;oh=00_AQQmmVxXBQYgqCK1MXXGSPFgSRkjlM-WnLlndsz0v6bLpg&amp;oe=6AF58F39\" alt=\"KNRアイコン\" width=\"300px\" height=\"200px\"></p>\n<p>株式会社KAGEMUSHA 代表取締役</p>\n<p>AI受託開発・AIコンサルティング／BPR・AI研修・SESの4領域を展開。</p>\n<p>特に、SES事業およびAI受託開発事業において、AI駆動型開発・AIエージェント開発を中心とした案件を多数保有。これらの実案件と連動したAI駆動型開発研修を提供し、エンジニアのスキルアップから実案件への参画までを一気通貫で支援している。</p>\n<p>単なるAI研修にとどまらず、「AI人材の育成」と「実案件へのアサイン」をセットで提供できることを強みとし、SES企業のエンジニアの高付加価値化やAI領域への事業展開を支援している。</p>\n<h3><a href=\"https://x.com/MacopeninSUTABA\" rel=\"nofollow\">かずなり</a>（Xフォロワー: 11万人）</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1871687946988060673/xDsh_ngS_400x400.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<ul>\n<li>株式会社サードスコープ 取締役 COO</li>\n<li>生成AI系インフルエンサーでフォロワー数は11万人</li>\n<li>国会で自民党大臣と「生成AIの社会実装」についてディスカッション</li>\n<li>著書: AI一行プロンプト100（商業出版・5重版）</li>\n<li>エンジニア技術発信サービス「Qiita」にて年間1位を獲得（2023年, 2024年）</li>\n</ul>\n<h3><a href=\"https://x.com/kiyo_innovatia\" rel=\"nofollow\">中畑貴耀</a>（なかはた きよ）</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1962502935868579840/arBivuBj_400x400.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<ul>\n<li>従業員数250名の株式会社イノベイティア代表取締役CEO</li>\n<li>AI駆動開発でエンジニア組織を束ねる</li>\n<li>大手企業へのAIコンサルティング案件を多数</li>\n</ul>\n<p>そのほか豪華ゲストも続々登場予定。\n<strong>定員になり次第締め切ります。お申し込みはお早めに。</strong></p>\n<hr>\n<h2>📷 前回のイベントの様子（雰囲気の参考）</h2>\n<h3>2026年8月開催 「夏のAI駆動開発勉強会」</h3>\n<p><img src=\"https://i.ibb.co/PsXrKLjh/IMG-8596.jpg\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h3>2026年7月開催 GMOコラボ「夏の生成AI大感謝祭」</h3>\n<p><img src=\"https://i.ibb.co/sd9NYB3C/720243760-1557974642460931-8934840553264759781-n.jpg\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h3>2026年4月開催 「AIエージェントの最前線 勉強会&amp;交流会」</h3>\n<p><img src=\"https://pbs.twimg.com/media/GpoRc-0aMAA90uC?format=jpg&amp;name=4096x4096\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<hr>\n<h2>😋 イベント内容</h2>\n<p>生成AIの急速な進化により、開発現場は今、\n真の「AI Native」なフェーズへと移行しています。</p>\n<p>Claude Code や Codex は、単なるコード補完ツールではなく、\n要件定義・設計・実装・テスト・運用までを横断して関与する\n<strong>「開発チームの一員」</strong>になりつつあります。</p>\n<p>一方で現場では、</p>\n<ul>\n<li>AI生成コードの保守性が崩壊した</li>\n<li>技術負債が急増した</li>\n<li>AI導入したがチーム運用が定着しない</li>\n<li>AIエージェントの責任範囲が曖昧</li>\n<li>人間側の役割が不明瞭</li>\n<li>そもそも何から始めればいいか分からない</li>\n</ul>\n<p>といった、新しい課題も生まれています。</p>\n<p>だからこそ今必要なのは、\n単なるツール知識ではなく、</p>\n<ul>\n<li>AI時代の設計思想</li>\n<li>AIと協働するワークフロー</li>\n<li>AI時代の品質管理</li>\n<li>AI前提のチーム開発</li>\n<li>\"最初の一歩\"の踏み出し方</li>\n</ul>\n<p>といった「実践知」です。</p>\n<hr>\n<h2>🤝 初参加の人でも参加しやすい雰囲気</h2>\n<p>初参加や交流会に慣れていない人からも満足度が高い「シャッフルトーク」。\nグループ形式で時間ごとに交流できるので、数多くの人と1日でたくさん繋がれます！</p>\n<p>お一人での参加も、AI駆動開発がはじめての方も大歓迎です。\n「まだ Claude Code を触ったことがない」という方こそ、ぜひお越しください。</p>\n<p><img src=\"https://i.ibb.co/LXXSWmLS/PHO-3933.jpg\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<p>--</p>\n<h3>🌱 こんな方におすすめ</h3>\n<ul>\n<li><strong>Claude Code / Codex を実務で使いこなしたいエンジニア・開発リーダー</strong></li>\n<li><strong>AI駆動開発に興味はあるが、まだ本格的に触れていない方</strong>（初心者大歓迎）</li>\n<li><strong>AI時代にキャリアを再設計したい若手・中堅エンジニア</strong></li>\n<li><strong>自社開発チームにAIを活かしたい経営者・マネージャー層</strong></li>\n<li><strong>AIを活用して経営・業務を効率化したい経営者</strong></li>\n<li><strong>AI駆動開発の最前線と実践スキルを体系的に学びたい方</strong></li>\n</ul>\n<hr>\n<h2>📝 主催</h2>\n<h3>伊東 和成（いとう かずなり）</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1871687946988060673/xDsh_ngS_400x400.jpg\" alt=\"KNRアイコン\" width=\"150px\" height=\"150px\"></p>\n<ul>\n<li>株式会社サードスコープ 取締役 COO</li>\n<li>Xフォロワー11万人: <a href=\"https://twitter.com/MacopeninSUTABA\" rel=\"nofollow\">https://twitter.com/MacopeninSUTABA</a></li>\n<li>他外部CTO2社、上場企業で非常勤顧問など技術領域で活躍</li>\n<li>上場企業倶楽部の運営</li>\n<li><a href=\"https://qiita.com/KNR109\" rel=\"nofollow\">Qiita 2024年 TOP コントリビューター</a></li>\n<li><a href=\"https://zenn.dev/sutamac\" rel=\"nofollow\">Zenn</a></li>\n</ul>\n<h3>会場提供：株式会社イノベイティア</h3>\n<p>代々木駅 徒歩30秒。詳細な場所・入館方法はお申し込み後にご案内します。</p>\n<hr>\n<h2>⚠️ 連絡事項・諸注意</h2>\n<ul>\n<li>connpass 上でお申し込みの上、ご参加をお願いします。</li>\n<li>当日/直前の不参加の場合でも、必ず connpass 上でキャンセルをお願いします。</li>\n<li>開始時刻までに間に合わない場合は運営までご連絡をお願いします。</li>\n<li>個人情報・機密情報の取り扱いにはご注意ください。こちらでは一切責任を負いません。</li>\n</ul>\n<h2>🚫 禁止事項</h2>\n<p>下記ルールをお守りいただけない方は、参加をお断りさせていただきます。(当日でも途中退出をしていただきます。)</p>\n<ul>\n<li>技術マウント</li>\n<li>高額商材などの販売や営業</li>\n<li>宗教やマルチへの勧誘</li>\n<li>誹謗中傷やハラスメント行為</li>\n<li>他者への迷惑行為</li>\n<li>当日キャンセル (くり上がりを除く)</li>\n<li>無断キャンセル</li>\n</ul>\n<h2>個人情報の取扱について</h2>\n<p>・サードスコープ <a href=\"https://third-scope.com/privacy/\" rel=\"nofollow\">プライバシーポリシー</a> <br>\n・イノベイティア <a href=\"https://innovate-ai.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a><br></p>",
-      "url": "https://creator-square.connpass.com/event/408932/",
-      "image_url": "https://media.connpass.com/thumbs/b4/de/b4de3612d2241d76efb9959e1c73b672.png",
-      "hash_tag": "生成AI",
-      "started_at": "2026-11-09T19:00:00+09:00",
-      "ended_at": "2026-11-09T21:30:00+09:00",
-      "published_at": "2026-10-05T09:50:00+09:00",
-      "limit": 65,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 13827,
-        "subdomain": "creator-square",
-        "title": "クリエイター広場（AI駆動開発研究所）",
-        "url": "https://creator-square.connpass.com/"
-      },
-      "address": "東京都渋谷区代々木１丁目３５−１",
-      "place": "株式会社イノベイティア",
-      "lat": "35.683387800000",
-      "lon": "139.701803000000",
-      "owner_id": 790801,
-      "owner_nickname": "MacopeninSUTABA",
-      "owner_display_name": "かずなり",
-      "accepted": 63,
-      "waiting": 0,
-      "updated_at": "2026-11-09T00:06:17+09:00"
-    },
     {
       "id": 409220,
       "title": "【開催中止】potatotips #97 iOS/Android開発Tips共有会",
@@ -66,6 +35,37 @@
       "updated_at": "2026-10-28T10:45:51+09:00"
     },
     {
+      "id": 408932,
+      "title": "AI駆動開発忘年勉強会&交流会（Claude Code / Codexの最前線）",
+      "catch": "2026年11月地点におけるClaude Code / Codexの最前線を学べる",
+      "description": "<h1>🍂 Claude Code / Codex の最前線を学ぶ「秋のAI駆動開発勉強会」</h1>\n<h2>2026年11月時点の最新AI駆動開発を、1日でまとめてキャッチアップ。</h2>\n<p>いま、世界中で注目を集める<strong>「AI駆動開発」</strong>。\nClaude Code、Codex の進化はこの数ヶ月でさらに加速し、\n<strong>「AIに書かせる」から「AIとチームで開発する」</strong>フェーズへと、開発の進め方そのものが変わり始めています。</p>\n<p>夏の勉強会から3ヶ月。\nツールのアップデートも、現場の使い方も、大きく様変わりしました。</p>\n<p>今回の「AI駆動開発忘年勉強会&amp;交流会」では、\n<strong>Claude Code / Codex の最新活用テクニック・現場のリアルな活用事例・AI時代のキャリア戦略</strong>を、\n実践者の知見とともに学べる実践型セッションを開催します。</p>\n<h3>👉 この勉強会のポイント</h3>\n<ul>\n<li>📖 <strong>AI駆動開発の最前線を学べる</strong> — 2026年11月時点の最新トレンドを一気に総まとめ</li>\n<li>💻 <strong>Claude Code の活用事例を知る</strong> — 実務・個人開発での「動いている事例」を公開</li>\n<li>🌱 <strong>AI駆動開発初心者も大歓迎</strong> — 「まだ触ったことがない」方向けの導入解説つき</li>\n</ul>\n<p>【ディスカッションテーマ例】</p>\n<ul>\n<li>Claude Code / Codex の最新アップデートと使い分け</li>\n<li>実務で\"本当に動いている\"AI駆動開発の事例</li>\n<li>AIエージェントを組み込んだ開発ワークフロー</li>\n<li>組織への生成AI導入の成功事例・失敗事例</li>\n<li>AI生成コードの品質管理・レビュー・技術負債との向き合い方</li>\n<li>AIエージェント時代のエンジニアキャリア設計</li>\n<li>現場で起きているリアルな試行錯誤</li>\n</ul>\n<p>を、実践者たちの知見とともに学べる実践型イベントを開催します。</p>\n<p><strong>1日で、AI駆動開発の最前線をまとめてキャッチアップできます。</strong></p>\n<hr>\n<h2>📆 開催概要</h2>\n<ul>\n<li><strong>日時</strong>：2026年11月9日（日）19:00〜21:00（受付 18:55〜）</li>\n<li><strong>会場</strong>：株式会社イノベイティア（代々木駅 徒歩30秒）</li>\n<li><strong>形式</strong>：オフライン（現地開催）</li>\n<li><strong>対象</strong>：エンジニア／開発リーダー／経営者・マネージャー／AI駆動開発にこれから取り組みたい方</li>\n</ul>\n<h3>🕐 タイムテーブル（予定）</h3>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18:55~19:20</td>\n<td>受付+交流会</td>\n</tr>\n<tr>\n<td>19:20~20:00</td>\n<td>勉強会</td>\n</tr>\n<tr>\n<td>20:00~21:00</td>\n<td>交流会</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>📝 登壇者（ゲスト枠）</h2>\n<h3>藍 光祐（あい こうすけ）</h3>\n<p><img src=\"https://venture.jp/wp-content/uploads/2025/07/IMG_6299-1024x682.jpg\" alt=\"KNRアイコン\" width=\"250px\" height=\"200px\"></p>\n<p>GustoDevelopment株式会社 代表取締役</p>\n<p>2022年にGustoDevelopment株式会社を創業。AI（人工知能）に特化したシステム開発・コンサルティングを展開し、日本・パキスタン・インドにまたがる多国籍エンジニアチームを率いる。\n現在は「Agentic Workflow」を活用した自律型システムのプロトタイプ開発など、次世代のAI社会実装に注力。自社で「Next AI Leaders Hackathon (Clawathon Tokyo Edition)」や「Merge2026」などのカンファレンスを主催するなど、AIエンジニアのコミュニティ形成にも力を入れている。</p>\n<h3>本城 賢人（ほんじょう けんと）</h3>\n<p><img src=\"https://scontent-nrt1-2.xx.fbcdn.net/v/t39.30808-6/280286574_7383425981698719_4047191409767169916_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx2048x1365&amp;ctp=s2048x1365&amp;_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=6ee11a&amp;_nc_ohc=3pPEmQB2JJ0Q7kNvwERA-F2&amp;_nc_oc=AdpiwD-gX8hSJ0zQpA98uoxdY7fPmSY-Ffz5Dsjadiwv0F2_TJ_cGAaxTJ5_qCLXYgoRBpWhfg1omRrirIP_kva7&amp;_nc_zt=23&amp;_nc_ht=scontent-nrt1-2.xx&amp;_nc_gid=Cnx0NP5bdlTHT5MbRfNb6Q&amp;_nc_ss=7b2a8&amp;oh=00_AQQmmVxXBQYgqCK1MXXGSPFgSRkjlM-WnLlndsz0v6bLpg&amp;oe=6AF58F39\" alt=\"KNRアイコン\" width=\"300px\" height=\"200px\"></p>\n<p>株式会社KAGEMUSHA 代表取締役</p>\n<p>AI受託開発・AIコンサルティング／BPR・AI研修・SESの4領域を展開。</p>\n<p>特に、SES事業およびAI受託開発事業において、AI駆動型開発・AIエージェント開発を中心とした案件を多数保有。これらの実案件と連動したAI駆動型開発研修を提供し、エンジニアのスキルアップから実案件への参画までを一気通貫で支援している。</p>\n<p>単なるAI研修にとどまらず、「AI人材の育成」と「実案件へのアサイン」をセットで提供できることを強みとし、SES企業のエンジニアの高付加価値化やAI領域への事業展開を支援している。</p>\n<h3><a href=\"https://x.com/MacopeninSUTABA\" rel=\"nofollow\">かずなり</a>（Xフォロワー: 11万人）</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1871687946988060673/xDsh_ngS_400x400.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<ul>\n<li>株式会社サードスコープ 取締役 COO</li>\n<li>生成AI系インフルエンサーでフォロワー数は11万人</li>\n<li>国会で自民党大臣と「生成AIの社会実装」についてディスカッション</li>\n<li>著書: AI一行プロンプト100（商業出版・5重版）</li>\n<li>エンジニア技術発信サービス「Qiita」にて年間1位を獲得（2023年, 2024年）</li>\n</ul>\n<h3><a href=\"https://x.com/kiyo_innovatia\" rel=\"nofollow\">中畑貴耀</a>（なかはた きよ）</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1962502935868579840/arBivuBj_400x400.jpg\" alt=\"\" width=\"200px\" height=\"200px\"></p>\n<ul>\n<li>従業員数250名の株式会社イノベイティア代表取締役CEO</li>\n<li>AI駆動開発でエンジニア組織を束ねる</li>\n<li>大手企業へのAIコンサルティング案件を多数</li>\n</ul>\n<p>そのほか豪華ゲストも続々登場予定。\n<strong>定員になり次第締め切ります。お申し込みはお早めに。</strong></p>\n<hr>\n<h2>📷 前回のイベントの様子（雰囲気の参考）</h2>\n<h3>2026年8月開催 「夏のAI駆動開発勉強会」</h3>\n<p><img src=\"https://i.ibb.co/PsXrKLjh/IMG-8596.jpg\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h3>2026年7月開催 GMOコラボ「夏の生成AI大感謝祭」</h3>\n<p><img src=\"https://i.ibb.co/sd9NYB3C/720243760-1557974642460931-8934840553264759781-n.jpg\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<h3>2026年4月開催 「AIエージェントの最前線 勉強会&amp;交流会」</h3>\n<p><img src=\"https://pbs.twimg.com/media/GpoRc-0aMAA90uC?format=jpg&amp;name=4096x4096\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<hr>\n<h2>😋 イベント内容</h2>\n<p>生成AIの急速な進化により、開発現場は今、\n真の「AI Native」なフェーズへと移行しています。</p>\n<p>Claude Code や Codex は、単なるコード補完ツールではなく、\n要件定義・設計・実装・テスト・運用までを横断して関与する\n<strong>「開発チームの一員」</strong>になりつつあります。</p>\n<p>一方で現場では、</p>\n<ul>\n<li>AI生成コードの保守性が崩壊した</li>\n<li>技術負債が急増した</li>\n<li>AI導入したがチーム運用が定着しない</li>\n<li>AIエージェントの責任範囲が曖昧</li>\n<li>人間側の役割が不明瞭</li>\n<li>そもそも何から始めればいいか分からない</li>\n</ul>\n<p>といった、新しい課題も生まれています。</p>\n<p>だからこそ今必要なのは、\n単なるツール知識ではなく、</p>\n<ul>\n<li>AI時代の設計思想</li>\n<li>AIと協働するワークフロー</li>\n<li>AI時代の品質管理</li>\n<li>AI前提のチーム開発</li>\n<li>\"最初の一歩\"の踏み出し方</li>\n</ul>\n<p>といった「実践知」です。</p>\n<hr>\n<h2>🤝 初参加の人でも参加しやすい雰囲気</h2>\n<p>初参加や交流会に慣れていない人からも満足度が高い「シャッフルトーク」。\nグループ形式で時間ごとに交流できるので、数多くの人と1日でたくさん繋がれます！</p>\n<p>お一人での参加も、AI駆動開発がはじめての方も大歓迎です。\n「まだ Claude Code を触ったことがない」という方こそ、ぜひお越しください。</p>\n<p><img src=\"https://i.ibb.co/LXXSWmLS/PHO-3933.jpg\" alt=\"\" width=\"500px\" height=\"350px\"></p>\n<p>--</p>\n<h3>🌱 こんな方におすすめ</h3>\n<ul>\n<li><strong>Claude Code / Codex を実務で使いこなしたいエンジニア・開発リーダー</strong></li>\n<li><strong>AI駆動開発に興味はあるが、まだ本格的に触れていない方</strong>（初心者大歓迎）</li>\n<li><strong>AI時代にキャリアを再設計したい若手・中堅エンジニア</strong></li>\n<li><strong>自社開発チームにAIを活かしたい経営者・マネージャー層</strong></li>\n<li><strong>AIを活用して経営・業務を効率化したい経営者</strong></li>\n<li><strong>AI駆動開発の最前線と実践スキルを体系的に学びたい方</strong></li>\n</ul>\n<hr>\n<h2>📝 主催</h2>\n<h3>伊東 和成（いとう かずなり）</h3>\n<p><img src=\"https://pbs.twimg.com/profile_images/1871687946988060673/xDsh_ngS_400x400.jpg\" alt=\"KNRアイコン\" width=\"150px\" height=\"150px\"></p>\n<ul>\n<li>株式会社サードスコープ 取締役 COO</li>\n<li>Xフォロワー11万人: <a href=\"https://twitter.com/MacopeninSUTABA\" rel=\"nofollow\">https://twitter.com/MacopeninSUTABA</a></li>\n<li>他外部CTO2社、上場企業で非常勤顧問など技術領域で活躍</li>\n<li>上場企業倶楽部の運営</li>\n<li><a href=\"https://qiita.com/KNR109\" rel=\"nofollow\">Qiita 2024年 TOP コントリビューター</a></li>\n<li><a href=\"https://zenn.dev/sutamac\" rel=\"nofollow\">Zenn</a></li>\n</ul>\n<h3>会場提供：株式会社イノベイティア</h3>\n<p>代々木駅 徒歩30秒。詳細な場所・入館方法はお申し込み後にご案内します。</p>\n<hr>\n<h2>⚠️ 連絡事項・諸注意</h2>\n<ul>\n<li>connpass 上でお申し込みの上、ご参加をお願いします。</li>\n<li>当日/直前の不参加の場合でも、必ず connpass 上でキャンセルをお願いします。</li>\n<li>開始時刻までに間に合わない場合は運営までご連絡をお願いします。</li>\n<li>個人情報・機密情報の取り扱いにはご注意ください。こちらでは一切責任を負いません。</li>\n</ul>\n<h2>🚫 禁止事項</h2>\n<p>下記ルールをお守りいただけない方は、参加をお断りさせていただきます。(当日でも途中退出をしていただきます。)</p>\n<ul>\n<li>技術マウント</li>\n<li>高額商材などの販売や営業</li>\n<li>宗教やマルチへの勧誘</li>\n<li>誹謗中傷やハラスメント行為</li>\n<li>他者への迷惑行為</li>\n<li>当日キャンセル (くり上がりを除く)</li>\n<li>無断キャンセル</li>\n</ul>\n<h2>個人情報の取扱について</h2>\n<p>・サードスコープ <a href=\"https://third-scope.com/privacy/\" rel=\"nofollow\">プライバシーポリシー</a> <br>\n・イノベイティア <a href=\"https://innovate-ai.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a><br></p>",
+      "url": "https://creator-square.connpass.com/event/408932/",
+      "image_url": "https://media.connpass.com/thumbs/b4/de/b4de3612d2241d76efb9959e1c73b672.png",
+      "hash_tag": "生成AI",
+      "started_at": "2026-11-09T19:00:00+09:00",
+      "ended_at": "2026-11-09T21:30:00+09:00",
+      "published_at": "2026-10-05T09:50:00+09:00",
+      "limit": 67,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 13827,
+        "subdomain": "creator-square",
+        "title": "クリエイター広場（AI駆動開発研究所）",
+        "url": "https://creator-square.connpass.com/"
+      },
+      "address": "東京都渋谷区代々木１丁目３５−１",
+      "place": "株式会社イノベイティア",
+      "lat": "35.683387800000",
+      "lon": "139.701803000000",
+      "owner_id": 790801,
+      "owner_nickname": "MacopeninSUTABA",
+      "owner_display_name": "かずなり",
+      "accepted": 65,
+      "waiting": 0,
+      "updated_at": "2026-11-09T10:59:48+09:00"
+    },
+    {
       "id": 408206,
       "title": "layerx.go #6",
       "catch": "LayerX主催の\"実践的な\"Go言語の勉強会です！",
@@ -92,7 +92,7 @@
       "owner_id": 7648,
       "owner_nickname": "budougumi0617",
       "owner_display_name": "budougumi0617",
-      "accepted": 75,
+      "accepted": 83,
       "waiting": 1,
       "updated_at": "2026-11-08T09:01:27+09:00"
     },
@@ -123,8 +123,8 @@
       "owner_id": 254161,
       "owner_nickname": "sghirokon",
       "owner_display_name": "sghirokon",
-      "accepted": 253,
-      "waiting": 0,
+      "accepted": 262,
+      "waiting": 1,
       "updated_at": "2026-11-08T16:55:56+09:00"
     }
   ]
