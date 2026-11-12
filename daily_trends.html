@@ -95,6 +95,7 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
 .seg-sub{font-size:10px;color:var(--muted);margin-top:1px}
 
 @media(max-width:640px){
+  #pre-table th,#pre-table td{padding:6px 6px;font-size:11px}
   /* 横スクロール防止 */
   *{max-width:100%}
   /* 全グリッドを1カラムに */
@@ -121,6 +122,17 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
 }
 
 /* 昨対比カード */
+.pre-btn{padding:4px 10px;border-radius:4px;border:1px solid var(--border);
+  background:var(--surface2);color:var(--muted);font-size:11px;cursor:pointer}
+.pre-btn.active{background:var(--purple);color:#0d1117;border-color:var(--purple)}
+#pre-table{width:100%;border-collapse:collapse;font-size:12px}
+#pre-table th{font-size:10px;color:var(--muted);font-weight:700;text-align:right;padding:8px 10px;
+  border-bottom:1px solid var(--border);background:var(--surface2);white-space:nowrap}
+#pre-table th:first-child,#pre-table td:first-child{text-align:left}
+#pre-table td{padding:6px 10px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap}
+#pre-table tr.out td{color:var(--muted);opacity:.45}
+#pre-table tr.total td{font-weight:800;background:var(--surface2)}
+.pre-bar{display:inline-block;height:6px;border-radius:3px;background:var(--purple);vertical-align:middle;margin-right:6px}
 .yoy-card{
   background:var(--surface);border:1px solid var(--border);border-radius:8px;
   padding:14px 16px;display:flex;flex-direction:column;gap:6px
@@ -209,6 +221,20 @@ body{background:var(--bg);color:var(--text);overflow-x:hidden;
 <div id="yoy-section" style="padding:0 20px 12px">
   <div id="yoy-periods" style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;font-size:11px;color:var(--muted)"></div>
   <div id="yoy-cards" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px"></div>
+</div>
+
+<div class="section-title">プレタク 時間帯別実績（曜日不問）</div>
+<div id="pre-section" style="padding:0 20px 12px">
+  <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">
+    <button class="pre-btn active" data-mode="A">A勤（10/16〜・8:00〜26:30）</button>
+    <button class="pre-btn" data-mode="J">J勤（〜10/15）</button>
+    <button class="pre-btn" data-mode="ALL">全期間</button>
+  </div>
+  <div id="pre-summary" style="font-size:11px;color:var(--muted);margin-bottom:8px"></div>
+  <div class="chart-card" style="padding:0;overflow:hidden">
+    <table id="pre-table"></table>
+  </div>
+  <div style="font-size:10px;color:var(--muted);margin-top:6px">※日報TAXI列＝PREの出番のみ集計。上部の期間・シフト選択とは連動しません。</div>
 </div>
 
 <div class="section-title">シフト時間帯別分析（詳細日報）</div>
@@ -665,8 +691,83 @@ function renderYoY() {
   document.getElementById('yoy-cards').innerHTML = cardsHtml;
 }
 
+// ══════════════════════════════════════════════════════════
+// プレタク 時間帯別実績（曜日不問）
+// ══════════════════════════════════════════════════════════
+const A_SHIFT_START = parseLocalDate('2026-10-16');
+let preMode = 'A';
+
+function renderPre() {
+  const tbl = document.getElementById('pre-table');
+  if(!tbl || !allDailyRows.length || !allDetailRows.length) return;
+
+  // 対象のプレタク出番（日報TAXI列=PRE）
+  const preDays = allDailyRows.filter(r => r.taxi.startsWith('PRE') && (
+    preMode==='ALL' ? true :
+    preMode==='A'   ? r.date >= A_SHIFT_START : r.date < A_SHIFT_START));
+  const preSet = new Set(preDays.map(r => dateKey(r.date)));
+  const shifts = preDays.length;
+
+  // 時間帯の範囲
+  const [hMin, hMax] = preMode==='A' ? [8,26] : preMode==='J' ? [13,36] : [8,36];
+  const inShift = h => preMode==='A' ? (h>=8 && h<=26) : preMode==='J' ? (h>=13 && h<=36) : true;
+
+  // 詳細日報を集計（翌日付で0〜7時に記録された乗車は前日出番の24〜31時として扱う）
+  const cnt = {}, rev = {};
+  allDetailRows.forEach(r => {
+    let k = dateKey(r.date), h = r.hour;
+    if(!preSet.has(k) && h < 8) {
+      const prev = new Date(r.date); prev.setDate(prev.getDate()-1);
+      if(preSet.has(dateKey(prev))) { k = dateKey(prev); h += 24; }
+    }
+    if(!preSet.has(k)) return;
+    cnt[h] = (cnt[h]||0) + 1;
+    rev[h] = (rev[h]||0) + r.fare;
+  });
+
+  const hours = [];
+  for(let h=hMin; h<=hMax; h++) hours.push(h);
+  const maxRev = Math.max(1, ...hours.map(h => rev[h]||0));
+  const totC = hours.reduce((s,h)=>s+(cnt[h]||0),0);
+  const totR = hours.reduce((s,h)=>s+(rev[h]||0),0);
+  const per = v => shifts ? v/shifts : 0;
+
+  document.getElementById('pre-summary').textContent = shifts
+    ? `対象：プレタク ${shifts}出番 ／ 乗車${totC}回 ／ 1出番あたり ¥${Math.round(per(totR)).toLocaleString()}・${per(totC).toFixed(1)}回`
+    : '対象期間にプレタクの出番がありません';
+
+  const rows = hours.map(h => {
+    const c = cnt[h]||0, r = rev[h]||0;
+    const w = Math.round(r/maxRev*60);
+    return `<tr class="${inShift(h)?'':'out'}">
+      <td>${h}時台</td>
+      <td>${c}</td>
+      <td>${per(c).toFixed(2)}</td>
+      <td><span class="pre-bar" style="width:${w}px"></span>¥${Math.round(per(r)).toLocaleString()}</td>
+      <td>${c?'¥'+Math.round(r/c).toLocaleString():'—'}</td>
+    </tr>`;
+  }).join('');
+
+  tbl.innerHTML = `<thead><tr>
+      <th>時間帯</th><th>乗車回数</th><th>回数/出番</th><th>売上/出番</th><th>平均単価</th>
+    </tr></thead>
+    <tbody>${rows}
+      <tr class="total"><td>合計</td><td>${totC}</td><td>${per(totC).toFixed(1)}</td>
+        <td>¥${Math.round(per(totR)).toLocaleString()}</td>
+        <td>${totC?'¥'+Math.round(totR/totC).toLocaleString():'—'}</td></tr>
+    </tbody>`;
+}
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('.pre-btn'); if(!b) return;
+  preMode = b.dataset.mode;
+  document.querySelectorAll('.pre-btn').forEach(x => x.classList.toggle('active', x===b));
+  renderPre();
+});
+
 function renderAll() {
   renderYoY();
+  renderPre();
   const rows = filterRows(allDailyRows);
   if(!rows.length) return;
   buildKPI(rows);
@@ -1200,6 +1301,7 @@ async function loadDailyReport() {
     handle:   findCol(['ハンドル'], 7),
     kyukei:   findCol(['休憩'], 8),
     occRate:  findCol(['実車率'], 11),
+    taxi:     findCol(['TAXI'], 20),
   };
 
   allDailyRows=rows.slice(start).map(cols=>{
@@ -1209,7 +1311,8 @@ async function loadDailyReport() {
             revenue:parseNum(cols[COL.revenue]), count:parseNum(cols[COL.count]),
             price:parseNum(cols[COL.price]),  occRate:parseFloat2(cols[COL.occRate]),
             handleMin:  parseTimeMin(cols[COL.handle]),
-            kyukeiMin:  parseTimeMin(cols[COL.kyukei])
+            kyukeiMin:  parseTimeMin(cols[COL.kyukei]),
+            taxi: (cols[COL.taxi]||'').trim().toUpperCase()
            };
   }).filter(Boolean);
 }
