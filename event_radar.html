@@ -358,6 +358,7 @@ body { background:var(--bg); color:var(--text); font-family:'Noto Sans JP',sans-
 .pop-nav { display:block; margin-top:8px; text-align:center; font-size:12px; font-weight:700; padding:8px; border-radius:7px; background:#1a73e8; color:#ffffff !important; text-decoration:none; }
 .pop-nav:active { opacity:.85; }
 .leaflet-popup-content a.pop-nav { color:#ffffff !important; }
+.leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.95) contrast(.9) saturate(.6)}
 </style>
 </head>
 <body>
@@ -628,7 +629,7 @@ function switchTab(t){
 function initMap(lat,lng){
   if(map){ map.setView([lat,lng],12); return; }
   map=L.map('map',{zoomControl:true,attributionControl:false}).setView([lat,lng],12);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(map);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
 }
 function setMyMarker(lat,lng){
   const ic=L.divIcon({html:'<div class="my-dot"></div>',className:'',iconSize:[14,14],iconAnchor:[7,7]});

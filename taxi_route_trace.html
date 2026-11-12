@@ -298,6 +298,7 @@ td.cnt-cell,td.avg-cell{text-align:right;}
 }
 
 
+.leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.95) contrast(.9) saturate(.6)}
 </style>
 </head>
 <body>
@@ -416,8 +417,8 @@ const DOW=['日','月','火','水','木','金','土'];
 const DOWMAP={'日':0,'月':1,'火':2,'水':3,'木':4,'金':5,'土':6};
 
 leafMap=L.map('map',{center:[35.68,139.71],zoom:12});
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
-  {attribution:'© OpenStreetMap © CARTO',subdomains:'abcd',maxZoom:19}).addTo(leafMap);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {attribution:'© OpenStreetMap',maxZoom:19}).addTo(leafMap);
 
 // ── utils ────────────────────────────────────────────
 function na(s){
