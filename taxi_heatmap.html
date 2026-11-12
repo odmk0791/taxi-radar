@@ -48,6 +48,10 @@ body{background:var(--bg);color:var(--text);
 .mode-btn{padding:4px 8px;border-radius:4px;border:1px solid var(--border);
   background:var(--surface2);color:var(--muted);font-size:11px;font-weight:700;
   cursor:pointer;transition:all .15s;-webkit-tap-highlight-color:transparent}
+.taxi-btn{padding:4px 8px;border-radius:4px;border:1px solid var(--border);
+  background:var(--surface2);color:var(--muted);font-size:11px;font-weight:700;cursor:pointer}
+.taxi-btn.active{background:#d2a8ff;color:#0d1117;border-color:#d2a8ff}
+.day-btn[data-day="8"].active{background:#d2a8ff;border-color:#d2a8ff}
 .mode-btn.active{background:var(--green);color:#0d1117;border-color:var(--green)}
 .mode-btn:hover{border-color:var(--green);color:var(--green)}
 #play-btn.playing{border-color:var(--orange);color:var(--orange)}
@@ -133,8 +137,15 @@ body{background:var(--bg);color:var(--text);
     <button class="mode-btn" data-mode="revenue">売上</button>
     <button class="mode-btn" data-mode="price">単価</button>
   </div>
+  <div id="taxi-group" style="display:flex;gap:3px;align-items:center">
+    <span class="ctrl-label">車種</span>
+    <button class="taxi-btn active" data-taxi="ALL">全て</button>
+    <button class="taxi-btn" data-taxi="JAP">ジャパ</button>
+    <button class="taxi-btn" data-taxi="PRE">プレタク</button>
+  </div>
   <div id="day-group">
     <span class="ctrl-label">曜日</span>
+    <button class="day-btn" data-day="8">全</button>
     <button class="day-btn" data-day="1">月</button>
     <button class="day-btn" data-day="2">火</button>
     <button class="day-btn" data-day="3">水</button>
@@ -146,7 +157,7 @@ body{background:var(--bg);color:var(--text);
   </div>
   <div id="time-group">
     <span class="ctrl-label">時間帯</span>
-    <input type="range" id="time-slider" min="13" max="36" step="1" value="19">
+    <input type="range" id="time-slider" min="8" max="36" step="1" value="19">
     <span id="time-display">19時台</span>
     <button class="ctrl-btn" id="now-btn">現在時刻</button>
     <button class="ctrl-btn" id="play-btn">▶ 再生</button>
@@ -223,8 +234,12 @@ const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTm1IwbqhN5odnt
 const COL = {date:0, time:2, ward:5, place:6};
 
 let rideData = {}, fareData = {};
+const DAILY_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2iLNU2ehDRMl7CQt2ETLkVwIeIRMAEpNsFjImdrWDBGuiTWLiwXc9aTtnhbJzWl0uvN0kEPw9Bd-0/pub?gid=0&single=true&output=csv";
+let rawRows = [];          // 詳細日報の生データ（車種切替で再集計するため保持）
+let taxiByDate = {};       // 'YYYY-MM-DD' → 'PRE' / 'JAP'
+let taxiFilter = 'ALL';    // ALL / JAP / PRE
 const resetData = () => {
-  for(let d=0;d<=7;d++){
+  for(let d=0;d<=8;d++){
     rideData[d]={}; fareData[d]={};
     for(let h=0;h<=40;h++){ rideData[d][h]={}; fareData[d][h]={}; }
   }
@@ -377,7 +392,7 @@ function drawPolygons(){
     // 全曜日・終日集計
     const allDay = Object.values(rideData[selectedDay]||{})
       .reduce((s,h)=>s+(h[addr]||0),0);
-    const days=['日','月','火','水','木','金','土','祝前'];
+    const days=['日','月','火','水','木','金','土','祝前','全'];
     const barW = Math.round(intensity*100);
 
     L.polygon(latlngs,{
@@ -432,7 +447,7 @@ function updateStats(entries, slotMax){
     document.getElementById('s-top').textContent = `${top[0]}（${top[1]}件）`;
   } else {
     // 近隣の時間帯を探してヒント表示
-    const days=['日','月','火','水','木','金','土','祝前'];
+    const days=['日','月','火','水','木','金','土','祝前','全'];
     let hint='—';
     const dayData = rideData[selectedDay]||{};
     let bestH=-1, bestC=0;
@@ -451,8 +466,8 @@ function updateStats(entries, slotMax){
 // ================================================================
 const computeGlobalMax = () => {
   globalMax=1;
-  for(let d=0;d<=7;d++)
-    for(let h=0;h<=40;h++)  // 16〜40時（余裕込み）
+  for(let d=0;d<=8;d++)
+    for(let h=0;h<=40;h++)
       Object.values(rideData[d][h]||{}).forEach(c=>{if(c>globalMax)globalMax=c;});
 };
 
@@ -463,8 +478,15 @@ function processCSV(rows){
   for(let i=start;i<rows.length;i++){
     const cols=rows[i];
     if(cols.length<7) continue;
-    const ds=normDate(cols[COL.date]); if(!ds){skip++;continue;}
-    const hour=parseHour(cols[COL.time]); if(hour===null){skip++;continue;}
+    let ds=normDate(cols[COL.date]); if(!ds){skip++;continue;}
+    let hour=parseHour(cols[COL.time]); if(hour===null){skip++;continue;}
+    // 翌日付の0〜7時で記録された乗車は、前日出番の24〜31時として扱う
+    if(hour<8 && !taxiByDate[ds]){
+      const pd=new Date(ds+'T00:00:00'); pd.setDate(pd.getDate()-1);
+      const pds=localDateStr(pd);
+      if(taxiByDate[pds]){ ds=pds; hour+=24; }
+    }
+    if(taxiFilter!=='ALL' && (taxiByDate[ds]||'')!==taxiFilter){skip++;continue;}
     const addr=buildAddr(cols[COL.ward],cols[COL.place]); if(!addr){skip++;continue;}
     // 曜日は日付列の日付で判定（34時台も同じ日扱い）
     const date=new Date(ds+'T00:00:00');
@@ -473,8 +495,13 @@ function processCSV(rows){
     // hour が 34 超の場合も安全に対応（深夜残業など）
     if(!rideData[cat][hour]) rideData[cat][hour]={};
     if(!fareData[cat][hour]) fareData[cat][hour]={};
-    rideData[cat][hour][addr]=(rideData[cat][hour][addr]||0)+1;
-    fareData[cat][hour][addr]=(fareData[cat][hour][addr]||0)+parseFare(cols[9]);
+    const fare=parseFare(cols[9]);
+    for(const c of [cat,8]){
+      if(!rideData[c][hour]) rideData[c][hour]={};
+      if(!fareData[c][hour]) fareData[c][hour]={};
+      rideData[c][hour][addr]=(rideData[c][hour][addr]||0)+1;
+      fareData[c][hour][addr]=(fareData[c][hour][addr]||0)+fare;
+    }
     ok++;
   }
   totalCount=ok;
@@ -530,18 +557,32 @@ function startWatchLocation(){
 async function loadData(){
   setStatus('loading','⏳ データ読込中...');
   try{
-    const res=await fetch(CSV_URL);
+    const [res,resD]=await Promise.all([fetch(CSV_URL),fetch(DAILY_URL).catch(()=>null)]);
     if(!res.ok) throw new Error('HTTP '+res.status);
-    const text=await res.text();
-    const rows=parseCSV(text);
-    if(rows.length<2) throw new Error('データが空です');
-    const n=processCSV(rows);
-    setStatus('ok',`✅ ${n.toLocaleString()}件読込済`);
-    drawPolygons();
+    rawRows=parseCSV(await res.text());
+    if(rawRows.length<2) throw new Error('データが空です');
+    // 日報のTAXI列（JAP/PRE）を日付ごとに取得
+    taxiByDate={};
+    if(resD && resD.ok){
+      const d=parseCSV(await resD.text());
+      const ti=(d[0]||[]).findIndex(x=>(x||'').trim()==='TAXI');
+      if(ti>=0) d.slice(1).forEach(c=>{
+        const ds=normDate(c[0]); const t=(c[ti]||'').trim().toUpperCase();
+        if(ds&&t) taxiByDate[ds]=t.startsWith('PRE')?'PRE':'JAP';
+      });
+    }
+    rebuild();
   }catch(e){
     setStatus('error','❌ '+e.message);
     console.error(e);
   }
+}
+function rebuild(){
+  const n=processCSV(rawRows);
+  const preDays=Object.values(taxiByDate).filter(v=>v==='PRE').length;
+  const lbl=taxiFilter==='PRE'?`プレタク${preDays}出番 `:taxiFilter==='JAP'?'ジャパ ':'';
+  setStatus('ok',`✅ ${lbl}${n.toLocaleString()}件`);
+  drawPolygons();
 }
 const setStatus = (type,msg) => {
   const el=document.getElementById('statusmsg');
@@ -577,8 +618,8 @@ const jumpToNow = () => {
   let h = n.getHours();
   // ローカル日付を使用（toISOString はUTCのため日本時間でズレる）
   let ds = localDateStr(n);
-  // 13時前は前日シフトの続き → 時刻+24・日付を前日に（13:00〜36:59で1シフト）
-  if(h < 13){
+  // 8時前は前日出番の続き → 時刻+24・日付を前日に（A勤 8:00〜26:30）
+  if(h < 8){
     h = h + 24;
     const prev = new Date(n.getFullYear(), n.getMonth(), n.getDate() - 1);
     ds = localDateStr(prev);
@@ -598,7 +639,7 @@ const togglePlay = () => {
   }else{
     btn.textContent='⏸ 停止'; btn.classList.add('playing');
     playTimer=setInterval(()=>{
-      selectedHour = selectedHour >= 36 ? 13 : selectedHour + 1;
+      selectedHour = selectedHour >= 36 ? 8 : selectedHour + 1;
       updateTime(); drawPolygons();
     },750);
   }
@@ -608,7 +649,7 @@ const togglePlay = () => {
 // データ確認パネル
 // ================================================================
 function showDebugPanel(){
-  const days=['日','月','火','水','木','金','土','祝前'];
+  const days=['日','月','火','水','木','金','土','祝前','全'];
   const title = `${days[selectedDay]}曜日のデータ分布`;
   document.getElementById('dbg-title').textContent = title;
 
@@ -660,6 +701,13 @@ document.querySelectorAll('.mode-btn').forEach(btn=>
 
 document.querySelectorAll('.day-btn').forEach(btn=>
   btn.addEventListener('click',()=>{selectedDay=+btn.dataset.day;updateDayBtns();drawPolygons();}));
+document.querySelectorAll('.taxi-btn').forEach(btn=>
+  btn.addEventListener('click',()=>{
+    taxiFilter=btn.dataset.taxi;
+    document.querySelectorAll('.taxi-btn').forEach(b=>b.classList.toggle('active',b===btn));
+    if(taxiFilter==='PRE'){ selectedDay=8; updateDayBtns(); }  // プレタクは曜日不問を初期表示
+    if(rawRows.length) rebuild();
+  }));
 document.getElementById('time-slider').addEventListener('input',e=>{
   selectedHour=+e.target.value; updateTime(); drawPolygons();
 });
