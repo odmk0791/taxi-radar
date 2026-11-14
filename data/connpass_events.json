@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T01:15:57.873610+09:00",
+  "fetched_at": "2026-11-15T06:01:13.186108+09:00",
   "date": "20261115",
   "count": 16,
   "events": [
@@ -185,37 +185,6 @@
       "updated_at": "2026-11-05T11:28:21+09:00"
     },
     {
-      "id": 411734,
-      "title": "[秋葉原] テーマ自由もくもく+ AIネタ共有LT会 (初参加・初心者大歓迎！)",
-      "catch": "",
-      "description": "<p>テーマ自由のもくもく会と、AI関連のトピックに関心のある方のLT会(任意参加、聞くだけでもOK)を組み合わせたイベントです。コワーキングスペースに集まって開発や情報共有を行います。    </p>\n<p>もくもくする内容はAIに関係ないものでも全く問題ないです！     </p>\n<p>初参加・初心者も大歓迎の会です。  <br>\nこれから開発を始めたい方や個人開発、スタートアップに興味がある方も気軽にご参加いただけます。  <br>\n一人での開発に不安がある方や他の開発者との交流を求める方、家では集中できない方もぜひどうぞ。     </p>\n<h2>LT（ライトニングトーク）について</h2>\n<blockquote>\n<p>5分以内のLTを募集しています！\nAIや関連する事例や技術を共有したい方がおりましたら、フィードや下記Slackなどでご表明をお願いいたします。\n『今日は作業が進んだから簡単に内容をシェアしたいな』というお気持ちの方の当日ドタ参LTも歓迎です！</p>\n</blockquote>\n<p><a href=\"https://weeyble.com/blog/lightning-talk-guide/\" rel=\"nofollow\">LT（ライトニングトーク）とは</a></p>\n<p>LT（ライトニングトーク）とは、5分以内の短い時間で、自分の知識や経験、好きなことなどを発表するプレゼンテーションです。今回はAIに関連する技術や活用事例、最近試してみたことなどをテーマに発表できます。</p>\n<h2>もくもく会とは？</h2>\n<p><a href=\"https://weeyble.com/blog/2025/10/13/mokumoku-guide/\" rel=\"nofollow\">もくもく会とは</a></p>\n<p>一つの場所に集まって、各自がやりたいこと(勉強したり作業したり本を読んだり)をやる会です。<br>\n家ではどうも集中できない方、集まって作業をしたい方、知り合いを増やしたい方におすすめです。<br>\n是非お気軽にご参加ください。<br></p>\n<h2>ちょこっとサポート</h2>\n<p>以下の内容について、わからないことや作業中に詰まった点があれば、空いている時間でできる限りサポートいたします。</p>\n<p>・Claude Code / Codex のインストール、基本的な使い方  <br>\n・ローカルLLMの導入/検証</p>\n<h2>Slack</h2>\n<p><a href=\"https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q\" rel=\"nofollow\">https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q</a></p>\n<p>情報共有にSlackを使用します。事前に登録をお願いします。</p>\n<p>(#llm というchannelを使用します。)</p>\n<h2>スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:40 -</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:10</td>\n<td style=\"text-align: left;\">簡単な挨拶＆自己紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10 - 16:30</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\">進捗 &amp; 成果発表+LT会<br> LT① 最近のAIニュース振り返り @cosara<br>     ( LT発表者募集中です！ )</td>\n</tr>\n</tbody>\n</table>\n<p>※ 12:40くらいから会場は開いています。時間内の入退室は自由です。 </p>\n<h2>持ち物</h2>\n<p>PC、作業等に必要なもの（書籍等）<br></p>\n<p>※ もくもく会ですが、雑談は自由です。騒がしいのが気になる方は耳栓、ヘッドホン、イヤホンなどを各自でご持参ください。<br></p>\n<p>※ 飲食OKですが、においが強いものはご遠慮ください。 </p>\n<h2>参加費</h2>\n<p>1000円 (コワーキングスペースの利用料)</p>\n<h1>会場</h1>\n<p align=\"center\">\n  <img src=\"https://weeyble.com/weeyble_banner.jpg\" alt=\"weeyble_banner\" width=\"90%\">\n</p>\n\n<p><a href=\"https://weeyble.com/\" rel=\"nofollow\">コワーキングスペース秋葉原 Weeyble</a>  (<a href=\"https://maps.app.goo.gl/qm9rqZAT1FtCvKmr5\" rel=\"nofollow\">地図</a>)</p>\n<p>一緒に勉強会を運営してくださる方募集してます → <a href=\"https://weeyble.com/study-policy\" rel=\"nofollow\">主催者募集</a></p>\n<p>AI駆動開発関連の書籍もおいてあります\n(AIエージェント開発運用入門、初めてのLangChain、Dify関連など)   <br>\n→ <a href=\"https://weeyble-books.pages.dev/\" rel=\"noopener noreferrer nofollow\">書籍リストはこちら</a></p>\n<blockquote>\n<p>最寄り駅：<br>\nJR 秋葉原 昭和通り口徒歩4分くらい<br>\n東京メトロ 日比谷線 秋葉原 4番出口 徒歩3分くらい</p>\n<p><strong>1Fは飲食店となっておりますので、立ち入らないようご注意ください。</strong><br>\n<strong>ビルの南西端側にエレベーターがありますので、そちらから3Fに上がってください。</strong></p>\n<p>迷った場合、遅れる場合等はSlackにてご連絡ください。<br>\n(Connpassからのお問い合わせではリアルタイムでの対応は致しかねます)</p>\n</blockquote>\n<h1>注意事項</h1>\n<blockquote>\n<p>本コミュニティでの勉強会は、技術の共有やエンジニア同士の交流を目的としております。以下の行為は禁止しております。</p>\n<ul>\n<li>ネットワークビジネス、プログラミングスクール、オンラインサロン、有料コミュニティ等への勧誘</li>\n<li>ダイレクトリクルーティング、過度な営業行為など、イベント運営や参加者への迷惑となる行為</li>\n</ul>\n<p>円滑なコミュニティ運営のため、無断欠席や上記に該当する行為が確認された場合は、運営判断により今後のイベントへのお申し込みをお断りする場合があります。</p>\n<p>ご提供いただいた個人情報は、<a href=\"https://weeybrid.co.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a>に基づき適切に管理いたします。</p>\n</blockquote>\n<h2>Q&amp;A</h2>\n<h3>Q. 初参加なのですが、大丈夫でしょうか？</h3>\n<p><strong>A. はい、大丈夫です。</strong><br>\n毎回3割前後は初参加の方です。親切な方がたくさんいらっしゃいます。<br>\nまったりした雰囲気の会なので、気負わずご参加ください。</p>\n<hr>\n<h3>Q. 遅れて参加したり、途中退出したりしても大丈夫ですか？</h3>\n<p><strong>A. はい、問題ありません。</strong><br>\nなお、13:00頃に自己紹介の時間を予定しているため、初参加の方やほかの参加者と交流したい方は、この時間に来ていただくのがおすすめです。スケジュールや会場案内、注意事項はSlackにも掲載していますので、ご不明な点があれば主催またはスタッフまでお気軽にお声がけください。</p>\n<hr>\n<h3>Q. 参加できなくなった場合、個別に連絡は必要ですか？</h3>\n<p><strong>A. 個別のご連絡は不要です。</strong><br>\nこのページ上でキャンセル手続きをしていただければ大丈夫です。</p>\n<hr>\n<h3>Q. 問い合わせはこのページのフィードに書けばよいですか？このページから問い合わせできますか？</h3>\n<p><strong>A. 個別返信が必要なお問い合わせには、このページ上では対応していません。</strong><br>\n営業・会場案内・忘れ物などのご連絡は、Slackでまとめて管理しています。<br>\n返信が必要な内容については、Slackからご連絡をお願いいたします。</p>\n<h2>主催について</h2>\n<p>cosara</p>\n<p>こさらと申します。\n普段は Claude Code / Codex を使って開発しています。  <br>\n当日は最近のAI関連ニュースをまとめて振り返るLTをします。</p>",
-      "url": "https://weeyble-data.connpass.com/event/411734/",
-      "image_url": "https://media.connpass.com/thumbs/f7/82/f7826a5bb5cef847a6980bf22e73da66.png",
-      "hash_tag": "",
-      "started_at": "2026-11-15T13:00:00+09:00",
-      "ended_at": "2026-11-15T17:00:00+09:00",
-      "published_at": "2026-11-01T15:46:42+09:00",
-      "limit": 10,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 3331,
-        "subdomain": "weeyble-data",
-        "title": "Weeyble データサイエンス",
-        "url": "https://weeyble-data.connpass.com/"
-      },
-      "address": "東京都千代田区神田佐久間町3丁目37-1 山茂登ビル3F Weeyble",
-      "place": "コワーキングスペース秋葉原 Weeyble",
-      "lat": "35.697592600000",
-      "lon": "139.777946800000",
-      "owner_id": 109434,
-      "owner_nickname": "weeyble",
-      "owner_display_name": "コワーキングスペース秋葉原Weeyble",
-      "accepted": 8,
-      "waiting": 0,
-      "updated_at": "2026-11-14T19:49:04+09:00"
-    },
-    {
       "id": 411330,
       "title": "もくもく＆LT会＠中野 #13",
       "catch": "",
@@ -245,6 +214,37 @@
       "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-10-28T14:37:04+09:00"
+    },
+    {
+      "id": 411734,
+      "title": "[秋葉原] テーマ自由もくもく+ AIネタ共有LT会 (初参加・初心者大歓迎！)",
+      "catch": "",
+      "description": "<p>テーマ自由のもくもく会と、AI関連のトピックに関心のある方のLT会(任意参加、聞くだけでもOK)を組み合わせたイベントです。コワーキングスペースに集まって開発や情報共有を行います。    </p>\n<p>もくもくする内容はAIに関係ないものでも全く問題ないです！     </p>\n<p>初参加・初心者も大歓迎の会です。  <br>\nこれから開発を始めたい方や個人開発、スタートアップに興味がある方も気軽にご参加いただけます。  <br>\n一人での開発に不安がある方や他の開発者との交流を求める方、家では集中できない方もぜひどうぞ。     </p>\n<h2>LT（ライトニングトーク）について</h2>\n<blockquote>\n<p>5分以内のLTを募集しています！\nAIや関連する事例や技術を共有したい方がおりましたら、フィードや下記Slackなどでご表明をお願いいたします。\n『今日は作業が進んだから簡単に内容をシェアしたいな』というお気持ちの方の当日ドタ参LTも歓迎です！</p>\n</blockquote>\n<p><a href=\"https://weeyble.com/blog/lightning-talk-guide/\" rel=\"nofollow\">LT（ライトニングトーク）とは</a></p>\n<p>LT（ライトニングトーク）とは、5分以内の短い時間で、自分の知識や経験、好きなことなどを発表するプレゼンテーションです。今回はAIに関連する技術や活用事例、最近試してみたことなどをテーマに発表できます。</p>\n<h2>もくもく会とは？</h2>\n<p><a href=\"https://weeyble.com/blog/2025/10/13/mokumoku-guide/\" rel=\"nofollow\">もくもく会とは</a></p>\n<p>一つの場所に集まって、各自がやりたいこと(勉強したり作業したり本を読んだり)をやる会です。<br>\n家ではどうも集中できない方、集まって作業をしたい方、知り合いを増やしたい方におすすめです。<br>\n是非お気軽にご参加ください。<br></p>\n<h2>ちょこっとサポート</h2>\n<p>以下の内容について、わからないことや作業中に詰まった点があれば、空いている時間でできる限りサポートいたします。</p>\n<p>・Claude Code / Codex のインストール、基本的な使い方  <br>\n・ローカルLLMの導入/検証</p>\n<h2>Slack</h2>\n<p><a href=\"https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q\" rel=\"nofollow\">https://join.slack.com/t/weeyble/shared_invite/zt-nz4xw882-eQ4dK~~2kr0iK6EK7K1w6Q</a></p>\n<p>情報共有にSlackを使用します。事前に登録をお願いします。</p>\n<p>(#llm というchannelを使用します。)</p>\n<h2>スケジュール</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:40 -</td>\n<td style=\"text-align: left;\">開場</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:10</td>\n<td style=\"text-align: left;\">簡単な挨拶＆自己紹介</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10 - 16:30</td>\n<td style=\"text-align: left;\">もくもくタイム</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\">進捗 &amp; 成果発表+LT会<br> LT① 最近のAIニュース振り返り @cosara<br>     ( LT発表者募集中です！ )</td>\n</tr>\n</tbody>\n</table>\n<p>※ 12:40くらいから会場は開いています。時間内の入退室は自由です。 </p>\n<h2>持ち物</h2>\n<p>PC、作業等に必要なもの（書籍等）<br></p>\n<p>※ もくもく会ですが、雑談は自由です。騒がしいのが気になる方は耳栓、ヘッドホン、イヤホンなどを各自でご持参ください。<br></p>\n<p>※ 飲食OKですが、においが強いものはご遠慮ください。 </p>\n<h2>参加費</h2>\n<p>1000円 (コワーキングスペースの利用料)</p>\n<h1>会場</h1>\n<p align=\"center\">\n  <img src=\"https://weeyble.com/weeyble_banner.jpg\" alt=\"weeyble_banner\" width=\"90%\">\n</p>\n\n<p><a href=\"https://weeyble.com/\" rel=\"nofollow\">コワーキングスペース秋葉原 Weeyble</a>  (<a href=\"https://maps.app.goo.gl/qm9rqZAT1FtCvKmr5\" rel=\"nofollow\">地図</a>)</p>\n<p>一緒に勉強会を運営してくださる方募集してます → <a href=\"https://weeyble.com/study-policy\" rel=\"nofollow\">主催者募集</a></p>\n<p>AI駆動開発関連の書籍もおいてあります\n(AIエージェント開発運用入門、初めてのLangChain、Dify関連など)   <br>\n→ <a href=\"https://weeyble-books.pages.dev/\" rel=\"noopener noreferrer nofollow\">書籍リストはこちら</a></p>\n<blockquote>\n<p>最寄り駅：<br>\nJR 秋葉原 昭和通り口徒歩4分くらい<br>\n東京メトロ 日比谷線 秋葉原 4番出口 徒歩3分くらい</p>\n<p><strong>1Fは飲食店となっておりますので、立ち入らないようご注意ください。</strong><br>\n<strong>ビルの南西端側にエレベーターがありますので、そちらから3Fに上がってください。</strong></p>\n<p>迷った場合、遅れる場合等はSlackにてご連絡ください。<br>\n(Connpassからのお問い合わせではリアルタイムでの対応は致しかねます)</p>\n</blockquote>\n<h1>注意事項</h1>\n<blockquote>\n<p>本コミュニティでの勉強会は、技術の共有やエンジニア同士の交流を目的としております。以下の行為は禁止しております。</p>\n<ul>\n<li>ネットワークビジネス、プログラミングスクール、オンラインサロン、有料コミュニティ等への勧誘</li>\n<li>ダイレクトリクルーティング、過度な営業行為など、イベント運営や参加者への迷惑となる行為</li>\n</ul>\n<p>円滑なコミュニティ運営のため、無断欠席や上記に該当する行為が確認された場合は、運営判断により今後のイベントへのお申し込みをお断りする場合があります。</p>\n<p>ご提供いただいた個人情報は、<a href=\"https://weeybrid.co.jp/privacy-policy/\" rel=\"nofollow\">プライバシーポリシー</a>に基づき適切に管理いたします。</p>\n</blockquote>\n<h2>Q&amp;A</h2>\n<h3>Q. 初参加なのですが、大丈夫でしょうか？</h3>\n<p><strong>A. はい、大丈夫です。</strong><br>\n毎回3割前後は初参加の方です。親切な方がたくさんいらっしゃいます。<br>\nまったりした雰囲気の会なので、気負わずご参加ください。</p>\n<hr>\n<h3>Q. 遅れて参加したり、途中退出したりしても大丈夫ですか？</h3>\n<p><strong>A. はい、問題ありません。</strong><br>\nなお、13:00頃に自己紹介の時間を予定しているため、初参加の方やほかの参加者と交流したい方は、この時間に来ていただくのがおすすめです。スケジュールや会場案内、注意事項はSlackにも掲載していますので、ご不明な点があれば主催またはスタッフまでお気軽にお声がけください。</p>\n<hr>\n<h3>Q. 参加できなくなった場合、個別に連絡は必要ですか？</h3>\n<p><strong>A. 個別のご連絡は不要です。</strong><br>\nこのページ上でキャンセル手続きをしていただければ大丈夫です。</p>\n<hr>\n<h3>Q. 問い合わせはこのページのフィードに書けばよいですか？このページから問い合わせできますか？</h3>\n<p><strong>A. 個別返信が必要なお問い合わせには、このページ上では対応していません。</strong><br>\n営業・会場案内・忘れ物などのご連絡は、Slackでまとめて管理しています。<br>\n返信が必要な内容については、Slackからご連絡をお願いいたします。</p>\n<h2>主催について</h2>\n<p>cosara</p>\n<p>こさらと申します。\n普段は Claude Code / Codex を使って開発しています。  <br>\n当日は最近のAI関連ニュースをまとめて振り返るLTをします。</p>",
+      "url": "https://weeyble-data.connpass.com/event/411734/",
+      "image_url": "https://media.connpass.com/thumbs/f7/82/f7826a5bb5cef847a6980bf22e73da66.png",
+      "hash_tag": "",
+      "started_at": "2026-11-15T13:00:00+09:00",
+      "ended_at": "2026-11-15T17:00:00+09:00",
+      "published_at": "2026-11-01T15:46:42+09:00",
+      "limit": 10,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 3331,
+        "subdomain": "weeyble-data",
+        "title": "Weeyble データサイエンス",
+        "url": "https://weeyble-data.connpass.com/"
+      },
+      "address": "東京都千代田区神田佐久間町3丁目37-1 山茂登ビル3F Weeyble",
+      "place": "コワーキングスペース秋葉原 Weeyble",
+      "lat": "35.697592600000",
+      "lon": "139.777946800000",
+      "owner_id": 109434,
+      "owner_nickname": "weeyble",
+      "owner_display_name": "コワーキングスペース秋葉原Weeyble",
+      "accepted": 8,
+      "waiting": 0,
+      "updated_at": "2026-11-14T19:49:04+09:00"
     },
     {
       "id": 408863,
@@ -490,7 +490,7 @@
       "owner_id": 115946,
       "owner_nickname": "geekfeed",
       "owner_display_name": "ギークフィード",
-      "accepted": 9,
+      "accepted": 8,
       "waiting": 0,
       "updated_at": "2026-10-27T09:24:11+09:00"
     }
