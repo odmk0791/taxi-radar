@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T05:53:02.667608+09:00",
+  "fetched_at": "2026-11-16T09:34:40.187550+09:00",
   "date": "20261116",
   "count": 5,
   "events": [
@@ -88,7 +88,7 @@
       "owner_nickname": "edamametsubu318",
       "owner_display_name": "ずんだまる（仮）",
       "accepted": 90,
-      "waiting": 6,
+      "waiting": 2,
       "updated_at": "2026-11-14T22:32:37+09:00"
     },
     {
@@ -118,7 +118,7 @@
       "owner_id": 1007965,
       "owner_nickname": "levtech-meetup",
       "owner_display_name": "レバテックMeetup運営",
-      "accepted": 37,
+      "accepted": 41,
       "waiting": 0,
       "updated_at": "2026-11-10T12:17:22+09:00"
     },
