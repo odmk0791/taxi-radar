@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T07:53:05.030725+09:00",
+  "fetched_at": "2026-11-21T12:40:03.579253+09:00",
   "date": "20261121",
   "count": 22,
   "events": [
@@ -66,9 +66,9 @@
       "started_at": "2026-11-21T14:00:00+09:00",
       "ended_at": "2026-11-21T19:00:00+09:00",
       "published_at": "2026-10-11T14:22:16+09:00",
-      "limit": 18,
+      "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "cancelled",
       "group": {
         "id": 16634,
         "subdomain": "kintech",
@@ -84,7 +84,7 @@
       "owner_display_name": "ともち",
       "accepted": 0,
       "waiting": 0,
-      "updated_at": "2026-10-31T16:46:45+09:00"
+      "updated_at": "2026-11-21T09:40:55+09:00"
     },
     {
       "id": 411839,
@@ -113,7 +113,7 @@
       "owner_id": 458146,
       "owner_nickname": "yu-ma22",
       "owner_display_name": "yuma_prog",
-      "accepted": 28,
+      "accepted": 24,
       "waiting": 0,
       "updated_at": "2026-11-20T09:59:15+09:00"
     },
@@ -144,9 +144,9 @@
       "owner_id": 733651,
       "owner_nickname": "masaru_benkyou",
       "owner_display_name": "masaru_benkyou",
-      "accepted": 13,
+      "accepted": 10,
       "waiting": 0,
-      "updated_at": "2026-11-16T18:00:07+09:00"
+      "updated_at": "2026-11-21T10:46:53+09:00"
     },
     {
       "id": 406457,
@@ -214,7 +214,7 @@
       "id": 408375,
       "title": "Dentoo.LT #33",
       "catch": "",
-      "description": "<p>2025年度入学のchrisがDentoo.LT代表として開催する最初のDentoo.LTです。</p>\n<p>ぞろ目の33回目の開催となりました！これからも続けられるように頑張ります！！</p>\n<p>今回はなんと調布祭開催期間中に行なわます！</p>\n<h1>LTってなによ？</h1>\n<p>LT（ライトニングトーク）とは、５分程度で行われるプレゼンテーションのことです。発表テーマは自由。おいしい麦茶の入れ方からちょっとマニアックなEjectコマンドの使い方まで何でも発表してください。</p>\n<p>主催サークルMMAは技術系サークルですが、<em> 発表内容は技術に関係なくても問題ないです！</em> どんなテーマでもいいので発表の方お待ちしております！</p>\n<h1>会場について</h1>\n<p>電気通信大学 e-Nexus棟1階（東11号館）で行います。発表者は全員対面での参加をお願いしています。</p>\n<p>社会情勢や、大学の都合によってはイベントが中止、延期となる可能性を予めご了承ください。</p>\n<h1>登壇登録について</h1>\n<p>登壇を希望される方は、本connpassの「発表者枠」から参加登録をお願いいたします。参加登録をされていない方は登壇できません。\n発表時間は、<strong> 電気通信大学の学生は5分 </strong>、<strong> それ以外の方は10分 </strong>を予定しています。発表時間についてご相談がある場合は、運営までご連絡ください。</p>\n<h1>観覧について</h1>\n<p>学内外学生社会人など問わず、どなたでも観覧することができます。\n観覧される方は、connpassでの参加登録は不要です。入退場も自由ですので、ご都合のよい時間に直接会場までお越しください。</p>\n<p>予定では16時まで開催となっておりますが、発表が早く終わった場合、発表の進行状況によっては、予定より早く終了する場合がございます。予めご了承ください。</p>\n<h1>発表順</h1>\n<p>順次公開します。発表順は当日までに公開します。登壇者が追加された場合、発表順を調整することがあります。</p>\n<h1>LTライブストリーミングについて</h1>\n<p>当日は発表者から要望があった場合を除いて全てのLTをYouTube Liveにてライブストリーミング配信します。 URLは当日、公式Twitterアカウント@dentooltにて公開いたします。公開を希望しない方は当日発表前までに運営までお声がけください。</p>\n<h1>参加における注意について</h1>\n<p>イベントの進行を阻害するような行為や、他の参加者の迷惑になるような行為はお止め下さい。場合によっては退出をお願いする他、次回以降の参加をお断りすることもあります。</p>\n<h1>連絡先</h1>\n<p>質問等ありましたら@dentoolt またはinfo at <a href=\"http://dentoo.lt\" rel=\"nofollow\">dentoo.lt</a>(atをアットマークに置き換える) へご連絡ください。</p>\n<h1>ホームページが新しくなりました</h1>\n<p>過去の動画や発表者向け資料は<a href=\"https://dentoo.lt/\" rel=\"nofollow\">こちら</a>からご覧ください！</p>\n<h1>その他</h1>\n<p>Dentoo.LTは電気通信大学公認サークルMMAが主催するイベントであり、大学主催のものではありません。 内容について大学に問い合わせないようお願いいたします。</p>",
+      "description": "<p>2025年度入学のchrisがDentoo.LT代表として開催する最初のDentoo.LTです。</p>\n<p>ぞろ目の33回目の開催となりました！これからも続けられるように頑張ります！！</p>\n<p>今回はなんと調布祭開催期間中に行なわます！</p>\n<h1>LTってなによ？</h1>\n<p>LT（ライトニングトーク）とは、５分程度で行われるプレゼンテーションのことです。発表テーマは自由。おいしい麦茶の入れ方からちょっとマニアックなEjectコマンドの使い方まで何でも発表してください。</p>\n<p>主催サークルMMAは技術系サークルですが、<em> 発表内容は技術に関係なくても問題ないです！</em> どんなテーマでもいいので発表の方お待ちしております！</p>\n<h1>会場について</h1>\n<p>電気通信大学 e-Nexus棟1階（東11号館）で行います。発表者は全員対面での参加をお願いしています。</p>\n<p>社会情勢や、大学の都合によってはイベントが中止、延期となる可能性を予めご了承ください。</p>\n<h1>登壇登録について</h1>\n<p>登壇を希望される方は、本connpassの「発表者枠」から参加登録をお願いいたします。参加登録をされていない方は登壇できません。\n発表時間は、<strong> 電気通信大学の学生は5分 </strong>、<strong> それ以外の方は10分 </strong>を予定しています。発表時間についてご相談がある場合は、運営までご連絡ください。</p>\n<h1>観覧について</h1>\n<p>学内外学生社会人など問わず、どなたでも観覧することができます。\n観覧される方は、connpassでの参加登録は不要です。入退場も自由ですので、ご都合のよい時間に直接会場までお越しください。</p>\n<p>予定では16時まで開催となっておりますが、発表が早く終わった場合、発表の進行状況によっては、予定より早く終了する場合がございます。予めご了承ください。</p>\n<h1>発表順</h1>\n<p>順次公開します。発表順は当日までに公開します。登壇者が追加された場合、発表順を調整することがあります。</p>\n<table>\n<thead>\n<tr>\n<th>発表者</th>\n<th>発表内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>chakkun1121</td>\n<td>AI絵巻物プロジェクトについて</td>\n</tr>\n<tr>\n<td>void314</td>\n<td>セルフレジを始めよう！ v2</td>\n</tr>\n<tr>\n<td>zan623132</td>\n<td>中高生向け大会管理サイトを作ってみた話</td>\n</tr>\n<tr>\n<td>hydrogen</td>\n<td>他のサービスを使おう</td>\n</tr>\n<tr>\n<td>Tenpura3125</td>\n<td>Ankiを使い倒そう</td>\n</tr>\n</tbody>\n</table>\n<h1>LTライブストリーミングについて</h1>\n<p>当日は発表者から要望があった場合を除いて全てのLTをYouTube Liveにてライブストリーミング配信します。 URLは当日、公式Twitterアカウント@dentooltにて公開いたします。公開を希望しない方は当日発表前までに運営までお声がけください。</p>\n<h1>参加における注意について</h1>\n<p>イベントの進行を阻害するような行為や、他の参加者の迷惑になるような行為はお止め下さい。場合によっては退出をお願いする他、次回以降の参加をお断りすることもあります。</p>\n<h1>連絡先</h1>\n<p>質問等ありましたら@dentoolt またはinfo at <a href=\"http://dentoo.lt\" rel=\"nofollow\">dentoo.lt</a>(atをアットマークに置き換える) へご連絡ください。</p>\n<h1>ホームページが新しくなりました</h1>\n<p>過去の動画や発表者向け資料は<a href=\"https://dentoo.lt/\" rel=\"nofollow\">こちら</a>からご覧ください！</p>\n<h1>その他</h1>\n<p>Dentoo.LTは電気通信大学公認サークルMMAが主催するイベントであり、大学主催のものではありません。 内容について大学に問い合わせないようお願いいたします。</p>",
       "url": "https://dentoolt.connpass.com/event/408375/",
       "image_url": "https://media.connpass.com/thumbs/69/b2/69b29a0b4b2a6d7b67c3d922ea24f70c.png",
       "hash_tag": "",
@@ -239,69 +239,7 @@
       "owner_display_name": "kira924age",
       "accepted": 5,
       "waiting": 0,
-      "updated_at": "2026-10-11T16:52:07+09:00"
-    },
-    {
-      "id": 408867,
-      "title": "【AI駆動開発】AIDDもくもく会（東京） #8 〜AI駆動開発で作業・相談・知見共有〜",
-      "catch": "AI駆動ツールで作業・相談・知見共有（オフライン）",
-      "description": "<h3><strong>今回から会場が変わりました。これまでの紀尾井町ではなく、御茶ノ水（燈株式会社）での開催です</strong></h3>\n<p><strong>最寄駅</strong></p>\n<ul>\n<li>東京メトロ千代田線「新御茶ノ水駅」直結（B2出口から徒歩約1分）</li>\n<li>JR中央線・総武線「御茶ノ水駅」聖橋口から徒歩1分</li>\n</ul>\n<h3>地図</h3>\n<p><a href=\"https://maps.app.goo.gl/iE3Ddi9GbcZtH9S16\" rel=\"nofollow\">https://maps.app.goo.gl/iE3Ddi9GbcZtH9S16</a></p>\n<h3><span style=\"color:red;\">入館後は運営への断り無しに指示のあるエリア以外へ立ち入ることはおやめください</span></h3>\n<h2>イベント概要</h2>\n<p>📢 「知る」から「やる」へ。AI駆動開発のもくもく実践コミュニティ</p>\n<p>生成AI/LLM関連のイベントは「入門セミナー」か「専門家向けカンファレンス」に寄りがちで、\nその中間にいる <strong>\"実際に手を動かして試行錯誤している実践者\"</strong> が継続的に集まれる場が少ないと感じています。</p>\n<p>そこで本イベントでは、理論より実践、形式より成果、そして何より <strong>「継続」</strong> を大切に、\nAI駆動開発（AIDD）をテーマにしたオフラインのもくもく会を企画しました。</p>\n<p>AIが「コードを補完するツール」から、設計を支援し、実装を肩代わりし、開発体験そのものを変革するパートナーへ。</p>\n<p>生成AI・LLMの進化により、開発現場ではすでに<strong>AI駆動コーディング / AI駆動デバッグ / AI駆動ドキュメンテーション</strong>が現実のものとなりつつあります。</p>\n<p>その中で今、私たちエンジニアに突きつけられている問いがあります。</p>\n<ul>\n<li>プロンプトひとつで、生産性はどこまで変わるのか？</li>\n<li>AIに「伝わる」設計とは何か？</li>\n<li>人間の創造性は、どこに注力すべきなのか？</li>\n</ul>\n<p>本イベントでは「<strong>AI駆動開発（AIDD）</strong>」をテーマに、</p>\n<ul>\n<li>各々が持ち寄った課題をAIと共に解決する「もくもく会」</li>\n<li>実践の中で得られた知見やプロンプトを<strong>対面で</strong>共有</li>\n<li>AIネイティブな開発スタイルの模索</li>\n</ul>\n<p>について、<strong>手を動かしながら実践・共有・議論</strong>します。</p>\n<p>ただタスクを消化するだけでなく、<strong>「AIツールを試してみた感想」「うまくいったプロンプト」「困ったこと」</strong>など、気軽に共有し合いながら学びを深めましょう。</p>\n<p><strong>オフライン開催だからこそできる、その場での質問・相談・ディスカッションを通じて、AI駆動開発の\"次の標準\"を一緒に探しに行きませんか。</strong></p>\n<hr>\n<h2>🎯 このイベントの特徴</h2>\n<ul>\n<li><strong>実践ベースの情報共有</strong>: 「実際にやってみた」リアルな工夫・プロンプト・成果物にフォーカス</li>\n<li><strong>ちょうどいい距離感</strong>: 一人では続かない、でも窮屈すぎない\"もくもく + 相談\"の場</li>\n<li><strong>多様なレベル感</strong>: 初心者〜上級者まで、自分のペースでOK（ツール/経験は不問）</li>\n<li><strong>繋がりの創出</strong>: 参加者同士で気軽に相談・コラボのきっかけ作り</li>\n</ul>\n<hr>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>: 2026年11月21日（土） 13:00 - 17:00</li>\n<li><strong>場所</strong>: 燈株式会社（御茶ノ水ソラシティ21階）</li>\n<li>〒101-0062 東京都千代田区神田駿河台四丁目6番地 御茶ノ水ソラシティ21階</li>\n<li><strong>参加費</strong>: 無料</li>\n<li><strong>定員</strong>: 60名（先着順）</li>\n<li><strong>参加資格</strong>: 開発にAIツールを活用したいという意欲（ツールの種類・習熟度は問いません）</li>\n<li><strong>持ち物</strong>: AI開発ができるPC環境、電源アダプタ</li>\n</ul>\n<hr>\n<h2>オフライン開催の特徴</h2>\n<ul>\n<li><strong>対面での相談</strong>: 困ったときにその場で隣の人や運営に相談できます</li>\n<li><strong>リアルタイム共有</strong>: 画面を見せ合いながらのディスカッションが可能</li>\n<li><strong>ネットワーキング</strong>: 他社・他部署のエンジニアとの交流機会</li>\n<li><strong>集中環境</strong>: もくもく作業に集中できる専用スペース</li>\n</ul>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:45 - 13:10</td>\n<td style=\"text-align: left;\"><strong>受付</strong></td>\n<td style=\"text-align: left;\">13:00 のオープニング開始後も、13:10 まで受付します。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:15</td>\n<td style=\"text-align: left;\"><strong>オープニング &amp; 自己紹介</strong></td>\n<td style=\"text-align: left;\">趣旨説明、参加者同士の自己紹介。<br>「今日やること &amp; 使うAIツール」を共有。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:15 - 14:45</td>\n<td style=\"text-align: left;\"><strong>もくもくタイム①</strong></td>\n<td style=\"text-align: left;\">集中作業時間（90分）<br>各自の課題に取り組みます。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45 - 15:15</td>\n<td style=\"text-align: left;\"><strong>ディスカッション・休憩</strong></td>\n<td style=\"text-align: left;\">お悩み相談・知見共有（30分）<br>作業で詰まっている点や、他の人に聞いてみたいことを相談。<br>フリートーク。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:15 - 16:30</td>\n<td style=\"text-align: left;\"><strong>もくもくタイム②</strong></td>\n<td style=\"text-align: left;\">集中作業時間（75分）<br>前半の相談を踏まえて作業再開、または追い込み。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\"><strong>AIDD LT会 &amp; クロージング</strong></td>\n<td style=\"text-align: left;\">気づき・学びのシェア<br>希望者による3分LT（Lightning Talk）や、試してみたこと・困ったことの共有。<br>気軽に話せる雰囲気で進めます。</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>ChatGPT / Claude / Gemini などのAIツールを使った開発に興味がある方</li>\n<li>GitHub Copilot / Cursor などのコーディング支援ツールを試してみたい方</li>\n<li>AIツールを使っているけど、もっと活用したい方</li>\n<li>AI時代の開発スタイルについて対面で議論したい方</li>\n<li>もくもくと作業しながら、他の参加者との交流も楽しみたい方</li>\n<li>他社・他部署のエンジニアとネットワーキングしたい方</li>\n</ul>\n<hr>\n<h2>推奨ツール（例）</h2>\n<p>以下のようなツールを使用した開発を想定していますが、これ以外のツールでも問題ありません。</p>\n<ul>\n<li><strong>対話型AI</strong>: ChatGPT / Claude / Gemini など</li>\n<li><strong>コーディング支援</strong>: GitHub Copilot / Cursor / Claude Code / Codex など</li>\n<li><strong>コード生成</strong>: v0.dev / Bolt.new / Replit Agent など</li>\n<li><strong>その他</strong>: 画像生成AI、ドキュメント作成AI など</li>\n</ul>\n<hr>\n<h2>参加ルール</h2>\n<ul>\n<li><strong>必ずAIツールを使用すること</strong>（種類は問いません）</li>\n<li>作業内容は自由。自分のペースで進めてOK</li>\n<li>困ったことがあれば気軽に周りの人や運営に相談しましょう</li>\n<li>完成度よりも「試してみること」を大切に。失敗も学びです</li>\n<li>他の参加者の集中を妨げないよう配慮をお願いします</li>\n<li>「今ごろそれやってるの？」などのネガティブな言葉はNG。共感と前向きな提案でフィードバックしましょう</li>\n</ul>\n<hr>\n<h2>参加にあたって</h2>\n<p>事前アンケートは実施しません。代わりに、Discord サーバー「AIDDもくもく会」への書き込みをお願いします。</p>\n<p>Discord はオフライン参加者限定の招待制です。招待リンクは、お申し込みの方へ connpass のメッセージでお送りします。参加したら、次の2つをお願いします。</p>\n<ol>\n<li>チャンネル「自己紹介」に、呼んでほしい名前と、普段やっていることを書く（13:00 のオープニングまでに。すでに書いている方は不要です）</li>\n<li>チャンネル「20261121_オフラインもくもく」に、当日やることと使うAIツールを1行で書く（13:00 のオープニングまでに。今から書けます）</li>\n</ol>\n<p>書き込みは、参加者同士がお互いを知り、当日の自己紹介で共有するために使います。</p>\n<hr>\n<h2>会場アクセス</h2>\n<p><strong>燈株式会社（御茶ノ水ソラシティ21階）</strong></p>\n<p>〒101-0062 東京都千代田区神田駿河台四丁目6番地 御茶ノ水ソラシティ21階</p>\n<p><strong>最寄駅</strong>\n- 東京メトロ千代田線「新御茶ノ水駅」直結（B2出口から徒歩約1分）\n- JR中央線・総武線「御茶ノ水駅」聖橋口から徒歩1分</p>\n<h3>地図</h3>\n<p><a href=\"https://www.google.com/maps?cid=14542924879517563420\" rel=\"nofollow\">https://www.google.com/maps?cid=14542924879517563420</a></p>\n<p><strong>入館方法</strong>\n- 詳細は参加者の方に別途ご案内いたします</p>\n<hr>\n<h2>注意事項</h2>\n<ul>\n<li>会場の電源・Wi-Fiは利用可能です</li>\n<li>作業中の画面共有・写真撮影は任意です（見せたい方のみ）</li>\n<li>イベント中の写真撮影・SNS投稿については、参加者のプライバシーに配慮してください</li>\n<li>体調不良時は参加をお控えください</li>\n<li>定員に達し次第、申込を締め切らせていただきます</li>\n</ul>\n<hr>\n<h2>お問い合わせ</h2>\n<p>ご不明点がございましたら、お気軽にお問い合わせください。</p>\n<ul>\n<li>connpassのメッセージ機能、またはイベントページのコメント欄よりご連絡ください</li>\n</ul>\n<p>皆様のご参加をお待ちしております！</p>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n協力：<a href=\"https://www.ai-driven.dev/ai%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0/\" rel=\"nofollow\">AI駆動開発コンソーシアム</a>、<a href=\"https://gais.jp/\" rel=\"nofollow\">一般社団法人 生成ＡＩ協会（GAIS）</a>、ULSコンサルティング株式会社、株式会社ログラス、クラスメソッド株式会社、KDDIアジャイル開発センター株式会社<br>\n後援：さくらインターネット株式会社、株式会社ラック、Autify, Inc.、</p>",
-      "url": "https://aid.connpass.com/event/408867/",
-      "image_url": "https://media.connpass.com/thumbs/98/eb/98eba6beeae79aedb8565f6fef5e0798.png",
-      "hash_tag": "aidd_mokumoku",
-      "started_at": "2026-11-21T13:00:00+09:00",
-      "ended_at": "2026-11-21T17:30:00+09:00",
-      "published_at": "2026-10-04T16:24:08+09:00",
-      "limit": 60,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 14543,
-        "subdomain": "aid",
-        "title": "AI駆動開発(AI-Driven Development)",
-        "url": "https://aid.connpass.com/"
-      },
-      "address": "東京都千代田区神田駿河台４丁目６ 御茶ノ水ソラシティ21階",
-      "place": "燈株式会社",
-      "lat": "35.698783900000",
-      "lon": "139.766785300000",
-      "owner_id": 28038,
-      "owner_nickname": "koji_yamaoka_7",
-      "owner_display_name": "kozzy",
-      "accepted": 47,
-      "waiting": 0,
-      "updated_at": "2026-11-19T22:01:26+09:00"
-    },
-    {
-      "id": 411134,
-      "title": "【御徒町・秋葉原】フリーランスエンジニア交流会 ～みんなのAI活用法とセキュリティ対策について～",
-      "catch": "AIの活用方法やセキュリティ対策について情報交換しながら、エンジニア同士で交流する会です！",
-      "description": "<p>現場で活躍するエンジニアや、AIの活用事例・最新技術・セキュリティ対策について知見を深めたい方など、<br>\nさまざまなエンジニアが集まり、テーマトークや交流を通じて情報交換を行うイベントです！<br><br></p>\n<p>今回のテーマは、<b>「みんなのAI活用法とセキュリティ対策について」</b>です。<br>\nAIの進化によって業務効率化が進む一方、情報漏えいや機密情報の取り扱いなど、セキュリティへの配慮も重要になっています。<br>\n実際の業務で役立つAIツールや活用事例、安全に利用するための工夫などを共有し、AI時代のスキルやキャリアについても意見交換します。<br><br></p>\n<p>「ほかのエンジニアが使っているAIツールを知りたい！」<br>\n「AIに入力してはいけない情報や、セキュリティ上の注意点を知りたい！」<br>\n「情報漏えいやサイバー攻撃への対策について学びたい！」<br>\n「AI時代にエンジニアとして市場価値を高めたい！」<br>\n「最新のIT技術や業界動向について情報交換したい！」<br>\n「エンジニア同士の横のつながりを増やしたい！」<br><br></p>\n<p>そんな方におすすめの交流会です！<br>\nAIを日常的に活用している方はもちろん、これからAIを学びたい方や、セキュリティに詳しくない方も大歓迎です。<br><br></p>\n<p>専門的な知識を一方的に学ぶ勉強会ではなく、それぞれの経験や疑問を持ち寄り、気軽に情報交換できる交流会を目指しています。<br>\nテーマトークだけでなく、参加者同士で自由に交流できる時間も設けていますので、ぜひお気軽にご参加ください！</p>\n<h3>◇スケジュール</h3>\n\n<p>11/21(土) 13:00-15:00</p>\n<table>\n    <thead>\n        <tr>\n            <th align=\"left\">時間</th>\n            <th align=\"left\">内容</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td align=\"left\">12:35-13:00</td>\n            <td align=\"left\">開場・受付</td>\n        </tr>\n        <tr>\n            <td align=\"left\">13:00-13:05</td>\n            <td align=\"left\">オープニング＆乾杯</td>\n        </tr>\n        <tr>\n            <td align=\"left\">13:05-13:25</td>\n            <td align=\"left\">自己紹介</td>\n        </tr>\n        <tr>\n            <td align=\"left\">13:25-14:00</td>\n            <td align=\"left\">テーマトーク <b>「みんなのAI活用法とセキュリティ対策について」</b></td>\n        </tr>\n        <tr>\n            <td align=\"left\">14:00-14:50</td>\n            <td align=\"left\">立食形式で交流・フリータイム</td>\n        </tr>\n        <tr>\n            <td align=\"left\">14:50-15:00</td>\n            <td align=\"left\">主催者挨拶・クロージング</td>\n        </tr>\n    </tbody>\n</table>\n\n<p><br>\n※タイムスケジュールは、予告なく変更させていただく場合がございます。あらかじめご了承ください。</p>\n<h3>◇得られること</h3>\n\n<p>・生成AIを実務で活用するためのヒント<br>\n・開発業務や日常業務を効率化するAIツールの情報<br>\n・AI利用時に注意すべき情報漏えいやセキュリティリスクの知識<br>\n・安全にAIを活用するための考え方や対策<br>\n・AI時代に求められるエンジニアのスキルやキャリアに関する情報<br>\n・最新のAI技術やIT業界の動向に関する知見<br>\n・エンジニア同士の情報交換や横のつながり<br>\n・一緒に学び、成長し合える仲間との出会い<br>\n・今後のスキルアップやキャリアアップにつながる情報</p>\n<h3>◇場所</h3>\n\n<p>ブルースペース上野御徒町<br>\nトミヤマビル B1F<br>\n〒110-0005 東京都台東区上野3丁目13-10<br></p>\n<p>【アクセス】<br>\nJR御徒町駅 徒歩3分 ／ JR上野駅 徒歩6分<br>\n東京メトロ末広町駅 徒歩5分 ／ JR秋葉原駅 徒歩8分</p>\n<h3>◇参加費</h3>\n\n<p>1,000円<br>\n※軽食と飲み物をご用意いたします。</p>\n<h3>◇参加資格</h3>\n\n<p>ITエンジニアの方、ITフリーランスエンジニアの方<br>\n異業種からITエンジニアを目指している方<br><br>\n※SES企業の営業の方、自社への採用を目的とした方、非エンジニアの方の参加はご遠慮ください。<br><br></p>\n<p>ご参考までに、下記のような方におすすめのイベントです！<br></p>\n<p>・フリーランスエンジニアという働き方に興味がある方<br>\n・業務で生成AIを活用している方、これから活用したい方<br>\n・ほかのエンジニアのAI活用事例を知りたい方<br>\n・ChatGPTなどの生成AIツールについて情報交換したい方<br>\n・AI利用時の情報漏えいやセキュリティ対策について学びたい方<br>\n・AI時代に必要なスキルやキャリアについて考えたい方<br>\n・最新のIT技術や業界動向について情報交換したい方<br>\n・現役フリーランスとして働いており、横のつながりを作りたい方<br>\n・エンジニアとしての成長やキャリアに悩んでいる方<br>\n・テーマトークを通じて、さまざまな経験や知見に触れたい方<br>\n・モテたい方</p>\n<h3>◇お知らせ</h3>\n\n<ul>\n    <li>本イベントは別媒体でも募集しております。定員になり次第締め切る場合がありますので、お早めにお申し込みください。</li>\n    <li>参加者が嫌がる行為、MLMや宗教関連の勧誘、その他の営業を目的とした参加は禁止です。主催者の判断により、途中退出をお願いする場合がございます。後日発覚した場合も、厳正に対処いたします。</li>\n</ul>\n\n<h3>◇主催</h3>\n\n<p>めちゃモテSEプロジェクト<br>\n<a href=\"https://mecha-mote-se.connpass.com/&lt;br>\" rel=\"nofollow\">https://mecha-mote-se.connpass.com/<br></a>\nお気軽にご参加ください！</p>",
-      "url": "https://mecha-mote-se.connpass.com/event/411134/",
-      "image_url": "https://media.connpass.com/thumbs/82/36/8236f2a39c9943084ee58f8bbfbf0e45.png",
-      "hash_tag": "フリーランス、フリーランスエンジニア、SE",
-      "started_at": "2026-11-21T13:00:00+09:00",
-      "ended_at": "2026-11-21T15:00:00+09:00",
-      "published_at": "2026-10-26T22:10:20+09:00",
-      "limit": 15,
-      "event_type": "participation",
-      "open_status": "preopen",
-      "group": {
-        "id": 10720,
-        "subdomain": "mecha-mote-se",
-        "title": "めちゃモテSEプロジェクト",
-        "url": "https://mecha-mote-se.connpass.com/"
-      },
-      "address": "東京都台東区上野３丁目１３ー１０",
-      "place": "ブルースペース上野御徒町 トミヤマビル【B1F】",
-      "lat": "35.705158400000",
-      "lon": "139.773189700000",
-      "owner_id": 404171,
-      "owner_nickname": "ma_dash",
-      "owner_display_name": "MasahiroMiyata",
-      "accepted": 11,
-      "waiting": 0,
-      "updated_at": "2026-10-26T23:50:32+09:00"
+      "updated_at": "2026-11-21T12:32:23+09:00"
     },
     {
       "id": 413187,
@@ -361,9 +299,71 @@
       "owner_id": 432614,
       "owner_nickname": "YamaguchiM",
       "owner_display_name": "YamaguchiM",
-      "accepted": 3,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-11-14T23:33:07+09:00"
+    },
+    {
+      "id": 408867,
+      "title": "【AI駆動開発】AIDDもくもく会（東京） #8 〜AI駆動開発で作業・相談・知見共有〜",
+      "catch": "AI駆動ツールで作業・相談・知見共有（オフライン）",
+      "description": "<h3><strong>今回から会場が変わりました。これまでの紀尾井町ではなく、御茶ノ水（燈株式会社）での開催です</strong></h3>\n<p><strong>最寄駅</strong></p>\n<ul>\n<li>東京メトロ千代田線「新御茶ノ水駅」直結（B2出口から徒歩約1分）</li>\n<li>JR中央線・総武線「御茶ノ水駅」聖橋口から徒歩1分</li>\n</ul>\n<h3>地図</h3>\n<p><a href=\"https://maps.app.goo.gl/iE3Ddi9GbcZtH9S16\" rel=\"nofollow\">https://maps.app.goo.gl/iE3Ddi9GbcZtH9S16</a></p>\n<h3><span style=\"color:red;\">入館後は運営への断り無しに指示のあるエリア以外へ立ち入ることはおやめください</span></h3>\n<h2>イベント概要</h2>\n<p>📢 「知る」から「やる」へ。AI駆動開発のもくもく実践コミュニティ</p>\n<p>生成AI/LLM関連のイベントは「入門セミナー」か「専門家向けカンファレンス」に寄りがちで、\nその中間にいる <strong>\"実際に手を動かして試行錯誤している実践者\"</strong> が継続的に集まれる場が少ないと感じています。</p>\n<p>そこで本イベントでは、理論より実践、形式より成果、そして何より <strong>「継続」</strong> を大切に、\nAI駆動開発（AIDD）をテーマにしたオフラインのもくもく会を企画しました。</p>\n<p>AIが「コードを補完するツール」から、設計を支援し、実装を肩代わりし、開発体験そのものを変革するパートナーへ。</p>\n<p>生成AI・LLMの進化により、開発現場ではすでに<strong>AI駆動コーディング / AI駆動デバッグ / AI駆動ドキュメンテーション</strong>が現実のものとなりつつあります。</p>\n<p>その中で今、私たちエンジニアに突きつけられている問いがあります。</p>\n<ul>\n<li>プロンプトひとつで、生産性はどこまで変わるのか？</li>\n<li>AIに「伝わる」設計とは何か？</li>\n<li>人間の創造性は、どこに注力すべきなのか？</li>\n</ul>\n<p>本イベントでは「<strong>AI駆動開発（AIDD）</strong>」をテーマに、</p>\n<ul>\n<li>各々が持ち寄った課題をAIと共に解決する「もくもく会」</li>\n<li>実践の中で得られた知見やプロンプトを<strong>対面で</strong>共有</li>\n<li>AIネイティブな開発スタイルの模索</li>\n</ul>\n<p>について、<strong>手を動かしながら実践・共有・議論</strong>します。</p>\n<p>ただタスクを消化するだけでなく、<strong>「AIツールを試してみた感想」「うまくいったプロンプト」「困ったこと」</strong>など、気軽に共有し合いながら学びを深めましょう。</p>\n<p><strong>オフライン開催だからこそできる、その場での質問・相談・ディスカッションを通じて、AI駆動開発の\"次の標準\"を一緒に探しに行きませんか。</strong></p>\n<hr>\n<h2>🎯 このイベントの特徴</h2>\n<ul>\n<li><strong>実践ベースの情報共有</strong>: 「実際にやってみた」リアルな工夫・プロンプト・成果物にフォーカス</li>\n<li><strong>ちょうどいい距離感</strong>: 一人では続かない、でも窮屈すぎない\"もくもく + 相談\"の場</li>\n<li><strong>多様なレベル感</strong>: 初心者〜上級者まで、自分のペースでOK（ツール/経験は不問）</li>\n<li><strong>繋がりの創出</strong>: 参加者同士で気軽に相談・コラボのきっかけ作り</li>\n</ul>\n<hr>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日時</strong>: 2026年11月21日（土） 13:00 - 17:00</li>\n<li><strong>場所</strong>: 燈株式会社（御茶ノ水ソラシティ21階）</li>\n<li>〒101-0062 東京都千代田区神田駿河台四丁目6番地 御茶ノ水ソラシティ21階</li>\n<li><strong>参加費</strong>: 無料</li>\n<li><strong>定員</strong>: 60名（先着順）</li>\n<li><strong>参加資格</strong>: 開発にAIツールを活用したいという意欲（ツールの種類・習熟度は問いません）</li>\n<li><strong>持ち物</strong>: AI開発ができるPC環境、電源アダプタ</li>\n</ul>\n<hr>\n<h2>オフライン開催の特徴</h2>\n<ul>\n<li><strong>対面での相談</strong>: 困ったときにその場で隣の人や運営に相談できます</li>\n<li><strong>リアルタイム共有</strong>: 画面を見せ合いながらのディスカッションが可能</li>\n<li><strong>ネットワーキング</strong>: 他社・他部署のエンジニアとの交流機会</li>\n<li><strong>集中環境</strong>: もくもく作業に集中できる専用スペース</li>\n</ul>\n<hr>\n<h2>タイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">詳細</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:45 - 13:10</td>\n<td style=\"text-align: left;\"><strong>受付</strong></td>\n<td style=\"text-align: left;\">13:00 のオープニング開始後も、13:10 まで受付します。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 - 13:15</td>\n<td style=\"text-align: left;\"><strong>オープニング &amp; 自己紹介</strong></td>\n<td style=\"text-align: left;\">趣旨説明、参加者同士の自己紹介。<br>「今日やること &amp; 使うAIツール」を共有。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:15 - 14:45</td>\n<td style=\"text-align: left;\"><strong>もくもくタイム①</strong></td>\n<td style=\"text-align: left;\">集中作業時間（90分）<br>各自の課題に取り組みます。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:45 - 15:15</td>\n<td style=\"text-align: left;\"><strong>ディスカッション・休憩</strong></td>\n<td style=\"text-align: left;\">お悩み相談・知見共有（30分）<br>作業で詰まっている点や、他の人に聞いてみたいことを相談。<br>フリートーク。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:15 - 16:30</td>\n<td style=\"text-align: left;\"><strong>もくもくタイム②</strong></td>\n<td style=\"text-align: left;\">集中作業時間（75分）<br>前半の相談を踏まえて作業再開、または追い込み。</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 - 17:00</td>\n<td style=\"text-align: left;\"><strong>AIDD LT会 &amp; クロージング</strong></td>\n<td style=\"text-align: left;\">気づき・学びのシェア<br>希望者による3分LT（Lightning Talk）や、試してみたこと・困ったことの共有。<br>気軽に話せる雰囲気で進めます。</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2>こんな方におすすめ</h2>\n<ul>\n<li>ChatGPT / Claude / Gemini などのAIツールを使った開発に興味がある方</li>\n<li>GitHub Copilot / Cursor などのコーディング支援ツールを試してみたい方</li>\n<li>AIツールを使っているけど、もっと活用したい方</li>\n<li>AI時代の開発スタイルについて対面で議論したい方</li>\n<li>もくもくと作業しながら、他の参加者との交流も楽しみたい方</li>\n<li>他社・他部署のエンジニアとネットワーキングしたい方</li>\n</ul>\n<hr>\n<h2>推奨ツール（例）</h2>\n<p>以下のようなツールを使用した開発を想定していますが、これ以外のツールでも問題ありません。</p>\n<ul>\n<li><strong>対話型AI</strong>: ChatGPT / Claude / Gemini など</li>\n<li><strong>コーディング支援</strong>: GitHub Copilot / Cursor / Claude Code / Codex など</li>\n<li><strong>コード生成</strong>: v0.dev / Bolt.new / Replit Agent など</li>\n<li><strong>その他</strong>: 画像生成AI、ドキュメント作成AI など</li>\n</ul>\n<hr>\n<h2>参加ルール</h2>\n<ul>\n<li><strong>必ずAIツールを使用すること</strong>（種類は問いません）</li>\n<li>作業内容は自由。自分のペースで進めてOK</li>\n<li>困ったことがあれば気軽に周りの人や運営に相談しましょう</li>\n<li>完成度よりも「試してみること」を大切に。失敗も学びです</li>\n<li>他の参加者の集中を妨げないよう配慮をお願いします</li>\n<li>「今ごろそれやってるの？」などのネガティブな言葉はNG。共感と前向きな提案でフィードバックしましょう</li>\n</ul>\n<hr>\n<h2>参加にあたって</h2>\n<p>事前アンケートは実施しません。代わりに、Discord サーバー「AIDDもくもく会」への書き込みをお願いします。</p>\n<p>Discord はオフライン参加者限定の招待制です。招待リンクは、お申し込みの方へ connpass のメッセージでお送りします。参加したら、次の2つをお願いします。</p>\n<ol>\n<li>チャンネル「自己紹介」に、呼んでほしい名前と、普段やっていることを書く（13:00 のオープニングまでに。すでに書いている方は不要です）</li>\n<li>チャンネル「20261121_オフラインもくもく」に、当日やることと使うAIツールを1行で書く（13:00 のオープニングまでに。今から書けます）</li>\n</ol>\n<p>書き込みは、参加者同士がお互いを知り、当日の自己紹介で共有するために使います。</p>\n<hr>\n<h2>会場アクセス</h2>\n<p><strong>燈株式会社（御茶ノ水ソラシティ21階）</strong></p>\n<p>〒101-0062 東京都千代田区神田駿河台四丁目6番地 御茶ノ水ソラシティ21階</p>\n<p><strong>最寄駅</strong>\n- 東京メトロ千代田線「新御茶ノ水駅」直結（B2出口から徒歩約1分）\n- JR中央線・総武線「御茶ノ水駅」聖橋口から徒歩1分</p>\n<h3>地図</h3>\n<p><a href=\"https://www.google.com/maps?cid=14542924879517563420\" rel=\"nofollow\">https://www.google.com/maps?cid=14542924879517563420</a></p>\n<p><strong>入館方法</strong>\n- 詳細は参加者の方に別途ご案内いたします</p>\n<hr>\n<h2>注意事項</h2>\n<ul>\n<li>会場の電源・Wi-Fiは利用可能です</li>\n<li>作業中の画面共有・写真撮影は任意です（見せたい方のみ）</li>\n<li>イベント中の写真撮影・SNS投稿については、参加者のプライバシーに配慮してください</li>\n<li>体調不良時は参加をお控えください</li>\n<li>定員に達し次第、申込を締め切らせていただきます</li>\n</ul>\n<hr>\n<h2>お問い合わせ</h2>\n<p>ご不明点がございましたら、お気軽にお問い合わせください。</p>\n<ul>\n<li>connpassのメッセージ機能、またはイベントページのコメント欄よりご連絡ください</li>\n</ul>\n<p>皆様のご参加をお待ちしております！</p>\n<hr>\n<h3>主催者情報</h3>\n<p>主催：<a href=\"https://www.ai-driven.dev/\" rel=\"nofollow\">AI駆動開発勉強会</a><br>\n会場協力：<a href=\"https://akariinc.co.jp/\" rel=\"nofollow\">燈株式会社</a><br>\n協力：<a href=\"https://www.ai-driven.dev/ai%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0/\" rel=\"nofollow\">AI駆動開発コンソーシアム</a>、<a href=\"https://gais.jp/\" rel=\"nofollow\">一般社団法人 生成ＡＩ協会（GAIS）</a>、ULSコンサルティング株式会社、株式会社ログラス、クラスメソッド株式会社、KDDIアジャイル開発センター株式会社<br>\n後援：さくらインターネット株式会社、株式会社ラック、Autify, Inc.、</p>",
+      "url": "https://aid.connpass.com/event/408867/",
+      "image_url": "https://media.connpass.com/thumbs/98/eb/98eba6beeae79aedb8565f6fef5e0798.png",
+      "hash_tag": "aidd_mokumoku",
+      "started_at": "2026-11-21T13:00:00+09:00",
+      "ended_at": "2026-11-21T17:30:00+09:00",
+      "published_at": "2026-10-04T16:24:08+09:00",
+      "limit": 60,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 14543,
+        "subdomain": "aid",
+        "title": "AI駆動開発(AI-Driven Development)",
+        "url": "https://aid.connpass.com/"
+      },
+      "address": "東京都千代田区神田駿河台４丁目６ 御茶ノ水ソラシティ21階",
+      "place": "燈株式会社",
+      "lat": "35.698783900000",
+      "lon": "139.766785300000",
+      "owner_id": 28038,
+      "owner_nickname": "koji_yamaoka_7",
+      "owner_display_name": "kozzy",
+      "accepted": 45,
+      "waiting": 0,
+      "updated_at": "2026-11-19T22:01:26+09:00"
+    },
+    {
+      "id": 411134,
+      "title": "【御徒町・秋葉原】フリーランスエンジニア交流会 ～みんなのAI活用法とセキュリティ対策について～",
+      "catch": "AIの活用方法やセキュリティ対策について情報交換しながら、エンジニア同士で交流する会です！",
+      "description": "<p>現場で活躍するエンジニアや、AIの活用事例・最新技術・セキュリティ対策について知見を深めたい方など、<br>\nさまざまなエンジニアが集まり、テーマトークや交流を通じて情報交換を行うイベントです！<br><br></p>\n<p>今回のテーマは、<b>「みんなのAI活用法とセキュリティ対策について」</b>です。<br>\nAIの進化によって業務効率化が進む一方、情報漏えいや機密情報の取り扱いなど、セキュリティへの配慮も重要になっています。<br>\n実際の業務で役立つAIツールや活用事例、安全に利用するための工夫などを共有し、AI時代のスキルやキャリアについても意見交換します。<br><br></p>\n<p>「ほかのエンジニアが使っているAIツールを知りたい！」<br>\n「AIに入力してはいけない情報や、セキュリティ上の注意点を知りたい！」<br>\n「情報漏えいやサイバー攻撃への対策について学びたい！」<br>\n「AI時代にエンジニアとして市場価値を高めたい！」<br>\n「最新のIT技術や業界動向について情報交換したい！」<br>\n「エンジニア同士の横のつながりを増やしたい！」<br><br></p>\n<p>そんな方におすすめの交流会です！<br>\nAIを日常的に活用している方はもちろん、これからAIを学びたい方や、セキュリティに詳しくない方も大歓迎です。<br><br></p>\n<p>専門的な知識を一方的に学ぶ勉強会ではなく、それぞれの経験や疑問を持ち寄り、気軽に情報交換できる交流会を目指しています。<br>\nテーマトークだけでなく、参加者同士で自由に交流できる時間も設けていますので、ぜひお気軽にご参加ください！</p>\n<h3>◇スケジュール</h3>\n\n<p>11/21(土) 13:00-15:00</p>\n<table>\n    <thead>\n        <tr>\n            <th align=\"left\">時間</th>\n            <th align=\"left\">内容</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td align=\"left\">12:35-13:00</td>\n            <td align=\"left\">開場・受付</td>\n        </tr>\n        <tr>\n            <td align=\"left\">13:00-13:05</td>\n            <td align=\"left\">オープニング＆乾杯</td>\n        </tr>\n        <tr>\n            <td align=\"left\">13:05-13:25</td>\n            <td align=\"left\">自己紹介</td>\n        </tr>\n        <tr>\n            <td align=\"left\">13:25-14:00</td>\n            <td align=\"left\">テーマトーク <b>「みんなのAI活用法とセキュリティ対策について」</b></td>\n        </tr>\n        <tr>\n            <td align=\"left\">14:00-14:50</td>\n            <td align=\"left\">立食形式で交流・フリータイム</td>\n        </tr>\n        <tr>\n            <td align=\"left\">14:50-15:00</td>\n            <td align=\"left\">主催者挨拶・クロージング</td>\n        </tr>\n    </tbody>\n</table>\n\n<p><br>\n※タイムスケジュールは、予告なく変更させていただく場合がございます。あらかじめご了承ください。</p>\n<h3>◇得られること</h3>\n\n<p>・生成AIを実務で活用するためのヒント<br>\n・開発業務や日常業務を効率化するAIツールの情報<br>\n・AI利用時に注意すべき情報漏えいやセキュリティリスクの知識<br>\n・安全にAIを活用するための考え方や対策<br>\n・AI時代に求められるエンジニアのスキルやキャリアに関する情報<br>\n・最新のAI技術やIT業界の動向に関する知見<br>\n・エンジニア同士の情報交換や横のつながり<br>\n・一緒に学び、成長し合える仲間との出会い<br>\n・今後のスキルアップやキャリアアップにつながる情報</p>\n<h3>◇場所</h3>\n\n<p>ブルースペース上野御徒町<br>\nトミヤマビル B1F<br>\n〒110-0005 東京都台東区上野3丁目13-10<br></p>\n<p>【アクセス】<br>\nJR御徒町駅 徒歩3分 ／ JR上野駅 徒歩6分<br>\n東京メトロ末広町駅 徒歩5分 ／ JR秋葉原駅 徒歩8分</p>\n<h3>◇参加費</h3>\n\n<p>1,000円<br>\n※軽食と飲み物をご用意いたします。</p>\n<h3>◇参加資格</h3>\n\n<p>ITエンジニアの方、ITフリーランスエンジニアの方<br>\n異業種からITエンジニアを目指している方<br><br>\n※SES企業の営業の方、自社への採用を目的とした方、非エンジニアの方の参加はご遠慮ください。<br><br></p>\n<p>ご参考までに、下記のような方におすすめのイベントです！<br></p>\n<p>・フリーランスエンジニアという働き方に興味がある方<br>\n・業務で生成AIを活用している方、これから活用したい方<br>\n・ほかのエンジニアのAI活用事例を知りたい方<br>\n・ChatGPTなどの生成AIツールについて情報交換したい方<br>\n・AI利用時の情報漏えいやセキュリティ対策について学びたい方<br>\n・AI時代に必要なスキルやキャリアについて考えたい方<br>\n・最新のIT技術や業界動向について情報交換したい方<br>\n・現役フリーランスとして働いており、横のつながりを作りたい方<br>\n・エンジニアとしての成長やキャリアに悩んでいる方<br>\n・テーマトークを通じて、さまざまな経験や知見に触れたい方<br>\n・モテたい方</p>\n<h3>◇お知らせ</h3>\n\n<ul>\n    <li>本イベントは別媒体でも募集しております。定員になり次第締め切る場合がありますので、お早めにお申し込みください。</li>\n    <li>参加者が嫌がる行為、MLMや宗教関連の勧誘、その他の営業を目的とした参加は禁止です。主催者の判断により、途中退出をお願いする場合がございます。後日発覚した場合も、厳正に対処いたします。</li>\n</ul>\n\n<h3>◇主催</h3>\n\n<p>めちゃモテSEプロジェクト<br>\n<a href=\"https://mecha-mote-se.connpass.com/&lt;br>\" rel=\"nofollow\">https://mecha-mote-se.connpass.com/<br></a>\nお気軽にご参加ください！</p>",
+      "url": "https://mecha-mote-se.connpass.com/event/411134/",
+      "image_url": "https://media.connpass.com/thumbs/82/36/8236f2a39c9943084ee58f8bbfbf0e45.png",
+      "hash_tag": "フリーランス、フリーランスエンジニア、SE",
+      "started_at": "2026-11-21T13:00:00+09:00",
+      "ended_at": "2026-11-21T15:00:00+09:00",
+      "published_at": "2026-10-26T22:10:20+09:00",
+      "limit": 15,
+      "event_type": "participation",
+      "open_status": "preopen",
+      "group": {
+        "id": 10720,
+        "subdomain": "mecha-mote-se",
+        "title": "めちゃモテSEプロジェクト",
+        "url": "https://mecha-mote-se.connpass.com/"
+      },
+      "address": "東京都台東区上野３丁目１３ー１０",
+      "place": "ブルースペース上野御徒町 トミヤマビル【B1F】",
+      "lat": "35.705158400000",
+      "lon": "139.773189700000",
+      "owner_id": 404171,
+      "owner_nickname": "ma_dash",
+      "owner_display_name": "MasahiroMiyata",
+      "accepted": 10,
+      "waiting": 0,
+      "updated_at": "2026-10-26T23:50:32+09:00"
     },
     {
       "id": 410998,
@@ -400,7 +400,7 @@
       "id": 407094,
       "title": "RTLを語る会 (19) ～ビバ道の壁 + AIの波 = FPGA新時代？ (仮)～",
       "catch": "",
-      "description": "<h1>概要</h1>\n<p>今回も<strong>ここでしか語れないエピソード</strong>も交えつつ、進めていきたいと思います。\n<strong>前回実施した内容は下記リンクをご覧下さい。</strong>ご参考まで。\n<a href=\"https://connpass.com/event/367389/\" rel=\"nofollow\">https://connpass.com/event/367389/</a></p>\n<p>※管理者の判断により、参加をキャンセルさせていただく場合があります。ご了承下さい。</p>\n<h1>発表枠について</h1>\n<p>若手発表枠は、<strong>30歳以下</strong>のためのもので、試験的に導入してみました。是非お気軽にやっていることの発表をして頂ければと思います。発表は6枠用意してありますが、発表希望者多数の場合は一人当たりの発表時間を短くして8枠まで増やす可能性ありです。</p>\n<p>ライトニングトークも開催します。</p>\n<ul>\n<li>事前募集枠 : 6名 x 5分</li>\n<li>当日即席枠：最大10名 x 2分</li>\n</ul>\n<h2>タイムテーブル (暫定)</h2>\n<hr>\n<p>都合に合わせて大きく変わる場合があります。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30 ~ 13:00</td>\n<td style=\"text-align: left;\">開場、受け付け</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 ~ 13:10</td>\n<td style=\"text-align: left;\">あいさつ</td>\n<td style=\"text-align: left;\">HK86</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10 ~ 13:35</td>\n<td style=\"text-align: left;\">発表①：　GOWIN FPGAをClaudeでシバきまくってみた</td>\n<td style=\"text-align: left;\">Kenta IDAさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:35 ~ 14:00</td>\n<td style=\"text-align: left;\">若手発表①：　シミュレーターから見たRTL　 ～RTLを機械語にコンパイルしてCPUで実行する方法～</td>\n<td style=\"text-align: left;\">tigさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:00 ~ 14:15</td>\n<td style=\"text-align: left;\">ライトニングトーク前半の部</td>\n<td style=\"text-align: left;\">石谷さん→NoOne_1024さん→FrostyDesign_JPさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:15 ~ 14:35</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:35 ~ 15:00</td>\n<td style=\"text-align: left;\">発表②：　RTLを語る会で、RTLを書かなくなった話</td>\n<td style=\"text-align: left;\">Hidemi Ishiharaさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00 ~ 15:25</td>\n<td style=\"text-align: left;\">若手発表②：　「経験ゼロ」とは言わない！言わせない！OSS機能検証ツールの紹介</td>\n<td style=\"text-align: left;\">AUDIYさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:25 ~ 15:40</td>\n<td style=\"text-align: left;\">ライトニングトーク後半の部</td>\n<td style=\"text-align: left;\">dalanceさん→kanatasoさん→たるいさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:40 ~ 16:05</td>\n<td style=\"text-align: left;\">発表③：　MATLABとStateflowでLDOをMBDした私は、VerylとRgGenをSV-RNMに添えてDMSを極めます</td>\n<td style=\"text-align: left;\">ds54eさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:05 ~ 16:30</td>\n<td style=\"text-align: left;\">発表④：　タイトル未定</td>\n<td style=\"text-align: left;\">すすたわりさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 ~ 16:40</td>\n<td style=\"text-align: left;\">ライトニングトーク ロスタイムの部</td>\n<td style=\"text-align: left;\">Okabeさん→Fuchigamiさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:40 ~ 16:50</td>\n<td style=\"text-align: left;\">即席ライトニングトーク</td>\n<td style=\"text-align: left;\">即席LT希望者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:50 ~</td>\n<td style=\"text-align: left;\">閉会 &amp; その他皆様と駄弁り</td>\n<td style=\"text-align: left;\">全員</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>(発表20分、QA5分の計25分を想定)\n(ライトニングトークは事前枠は一人5分、即席枠は一人2分)</p>\n<h1>シバク会（懇親会）</h1>\n<p>やります！こちらから、参加登録してください。\n<a href=\"https://connpass.com/event/407502/\" rel=\"nofollow\">https://connpass.com/event/407502/</a></p>\n<hr>\n<h1>FAQ</h1>\n<p>Q: オンライン参加は可能ですか？</p>\n<p>A: できません。</p>",
+      "description": "<h1>概要</h1>\n<p>今回も<strong>ここでしか語れないエピソード</strong>も交えつつ、進めていきたいと思います。\n<strong>前回実施した内容は下記リンクをご覧下さい。</strong>ご参考まで。\n<a href=\"https://connpass.com/event/367389/\" rel=\"nofollow\">https://connpass.com/event/367389/</a></p>\n<p>※管理者の判断により、参加をキャンセルさせていただく場合があります。ご了承下さい。</p>\n<h1>発表枠について</h1>\n<p>若手発表枠は、<strong>30歳以下</strong>のためのもので、試験的に導入してみました。是非お気軽にやっていることの発表をして頂ければと思います。発表は6枠用意してありますが、発表希望者多数の場合は一人当たりの発表時間を短くして8枠まで増やす可能性ありです。</p>\n<p>ライトニングトークも開催します。</p>\n<ul>\n<li>事前募集枠 : 6名 x 5分</li>\n<li>当日即席枠：最大10名 x 2分</li>\n</ul>\n<h2>タイムテーブル (暫定)</h2>\n<hr>\n<p>都合に合わせて大きく変わる場合があります。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">時間</th>\n<th style=\"text-align: left;\">内容</th>\n<th style=\"text-align: left;\">発表者</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">12:30 ~ 13:00</td>\n<td style=\"text-align: left;\">開場、受け付け</td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:00 ~ 13:10</td>\n<td style=\"text-align: left;\">あいさつ</td>\n<td style=\"text-align: left;\">HK86</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:10 ~ 13:35</td>\n<td style=\"text-align: left;\">発表①：　GOWIN FPGAをClaudeでシバきまくってみた</td>\n<td style=\"text-align: left;\">Kenta IDAさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">13:35 ~ 14:00</td>\n<td style=\"text-align: left;\">若手発表①：　シミュレーターから見たRTL　 ～RTLを機械語にコンパイルしてCPUで実行する方法～</td>\n<td style=\"text-align: left;\">tigさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:00 ~ 14:15</td>\n<td style=\"text-align: left;\">ライトニングトーク前半の部</td>\n<td style=\"text-align: left;\">石谷さん→NoOne_1024さん→FrostyDesign_JPさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:15 ~ 14:35</td>\n<td style=\"text-align: left;\">休憩</td>\n<td style=\"text-align: left;\">休憩</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">14:35 ~ 15:00</td>\n<td style=\"text-align: left;\">発表②：　RTLを語る会で、RTLを書かなくなった話</td>\n<td style=\"text-align: left;\">Hidemi Ishiharaさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:00 ~ 15:25</td>\n<td style=\"text-align: left;\">若手発表②：　「経験ゼロ」とは言わない！言わせない！OSS機能検証ツールの紹介</td>\n<td style=\"text-align: left;\">AUDIYさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:25 ~ 15:40</td>\n<td style=\"text-align: left;\">ライトニングトーク後半の部</td>\n<td style=\"text-align: left;\">dalanceさん→kanatasoさん→たるいさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">15:40 ~ 16:05</td>\n<td style=\"text-align: left;\">発表③：　MATLABとStateflowでLDOをMBDした私は、VerylとRgGenをSV-RNMに添えてDMSを極めます</td>\n<td style=\"text-align: left;\">ds54eさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:05 ~ 16:30</td>\n<td style=\"text-align: left;\">発表④：FPGA設計フローの作り直し</td>\n<td style=\"text-align: left;\">すすたわりさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:30 ~ 16:40</td>\n<td style=\"text-align: left;\">ライトニングトーク ロスタイムの部</td>\n<td style=\"text-align: left;\">Okabeさん→Fuchigamiさん</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:40 ~ 16:50</td>\n<td style=\"text-align: left;\">即席ライトニングトーク</td>\n<td style=\"text-align: left;\">即席LT希望者</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">16:50 ~</td>\n<td style=\"text-align: left;\">閉会 &amp; その他皆様と駄弁り</td>\n<td style=\"text-align: left;\">全員</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>(発表20分、QA5分の計25分を想定)\n(ライトニングトークは事前枠は一人5分、即席枠は一人2分)</p>\n<h1>シバク会（懇親会）</h1>\n<p>やります！こちらから、参加登録してください。\n<a href=\"https://connpass.com/event/407502/\" rel=\"nofollow\">https://connpass.com/event/407502/</a></p>\n<hr>\n<h1>FAQ</h1>\n<p>Q: オンライン参加は可能ですか？</p>\n<p>A: できません。</p>",
       "url": "https://talkrtl.connpass.com/event/407094/",
       "image_url": "https://media.connpass.com/thumbs/21/32/2132e8a0dd512cd5ef6c2a2f7b30c970.png",
       "hash_tag": "talkrtl",
@@ -409,23 +409,23 @@
       "published_at": "2026-09-19T21:18:21+09:00",
       "limit": 47,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 2004,
         "subdomain": "talkrtl",
         "title": "RTLを語る会",
         "url": "https://talkrtl.connpass.com/"
       },
-      "address": "東京都港区赤坂2丁目",
-      "place": "赤坂近辺",
-      "lat": "35.671112400000",
-      "lon": "139.739017300000",
+      "address": "東京都港区赤坂2丁目４－６",
+      "place": "赤坂グリーンクロス",
+      "lat": "35.671960500000",
+      "lon": "139.740773500000",
       "owner_id": 13221,
       "owner_nickname": "tethys_seesaa",
       "owner_display_name": "tethys_seesaa",
-      "accepted": 46,
+      "accepted": 44,
       "waiting": 0,
-      "updated_at": "2026-11-20T07:38:35+09:00"
+      "updated_at": "2026-11-21T10:27:25+09:00"
     },
     {
       "id": 408809,
@@ -440,7 +440,7 @@
       "published_at": "2026-10-04T19:19:23+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 11040,
         "subdomain": "ubuntujp",
@@ -454,7 +454,7 @@
       "owner_id": 24564,
       "owner_nickname": "_hito_",
       "owner_display_name": "_hito_",
-      "accepted": 29,
+      "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-11-20T22:12:28+09:00"
     },
@@ -471,7 +471,7 @@
       "published_at": "2026-11-12T09:31:11+09:00",
       "limit": 26,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 6408,
         "subdomain": "geekfeed",
@@ -485,7 +485,7 @@
       "owner_id": 115946,
       "owner_nickname": "geekfeed",
       "owner_display_name": "ギークフィード",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
       "updated_at": "2026-11-12T09:31:11+09:00"
     },
@@ -502,7 +502,7 @@
       "published_at": "2026-11-14T12:01:24+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -516,7 +516,7 @@
       "owner_id": 123017,
       "owner_nickname": "iwski",
       "owner_display_name": "岩崎",
-      "accepted": 39,
+      "accepted": 38,
       "waiting": 0,
       "updated_at": "2026-11-15T13:55:13+09:00"
     },
@@ -533,7 +533,7 @@
       "published_at": "2025-11-23T10:15:00+09:00",
       "limit": 220,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 12137,
         "subdomain": "rjpusers",
@@ -547,7 +547,7 @@
       "owner_id": 55085,
       "owner_nickname": "u_ribo",
       "owner_display_name": "u_ribo",
-      "accepted": 57,
+      "accepted": 61,
       "waiting": 0,
       "updated_at": "2026-11-21T07:26:19+09:00"
     },
@@ -564,7 +564,7 @@
       "published_at": "2026-10-24T10:00:00+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15692,
         "subdomain": "777chord",
@@ -595,7 +595,7 @@
       "published_at": "2026-11-14T13:01:13+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 11642,
         "subdomain": "techmokmok",
@@ -626,7 +626,7 @@
       "published_at": "2026-11-04T01:36:38+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 13830,
         "subdomain": "networktraining",
@@ -657,7 +657,7 @@
       "published_at": "2026-11-19T22:41:19+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16988,
         "subdomain": "mokumokuios",
