@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T03:37:23.487436+09:00",
+  "fetched_at": "2026-11-22T08:39:10.823011+09:00",
   "date": "20261122",
   "count": 13,
   "events": [
@@ -123,7 +123,7 @@
       "owner_id": 909494,
       "owner_nickname": "kota_721",
       "owner_display_name": "こうた",
-      "accepted": 3,
+      "accepted": 2,
       "waiting": 0,
       "updated_at": "2026-10-31T13:40:55+09:00"
     },
@@ -371,7 +371,7 @@
       "owner_id": 227580,
       "owner_nickname": "kou_yan",
       "owner_display_name": "kou_yan",
-      "accepted": 6,
+      "accepted": 5,
       "waiting": 0,
       "updated_at": "2026-11-05T08:55:35+09:00"
     },
@@ -388,7 +388,7 @@
       "published_at": "2026-10-18T19:51:39+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 17413,
         "subdomain": "yokohama-agile",
