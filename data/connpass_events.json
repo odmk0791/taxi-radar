@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T13:22:54.195431+09:00",
+  "fetched_at": "2026-11-22T21:57:43.011686+09:00",
   "date": "20261122",
   "count": 13,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-11-18T17:12:49+09:00",
       "limit": 3,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15508,
         "subdomain": "datamoku",
@@ -47,7 +47,7 @@
       "published_at": "2026-10-29T22:38:33+09:00",
       "limit": 20,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 4453,
         "subdomain": "mlxse",
@@ -61,9 +61,9 @@
       "owner_id": 33987,
       "owner_nickname": "Ryuichirou",
       "owner_display_name": "Asei Sugiyama",
-      "accepted": 8,
+      "accepted": 7,
       "waiting": 0,
-      "updated_at": "2026-11-22T13:10:04+09:00"
+      "updated_at": "2026-11-22T13:52:23+09:00"
     },
     {
       "id": 409406,
@@ -78,7 +78,7 @@
       "published_at": "2026-10-09T10:42:06+09:00",
       "limit": null,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 6999,
         "subdomain": "coderdojo-machida",
@@ -109,7 +109,7 @@
       "published_at": "2026-10-31T13:40:55+09:00",
       "limit": 15,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 16222,
         "subdomain": "mokumoku-daredemo",
@@ -140,7 +140,7 @@
       "published_at": "2026-11-02T01:22:05+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2728,
         "subdomain": "fm-mkmk",
@@ -171,7 +171,7 @@
       "published_at": "2026-11-11T09:36:05+09:00",
       "limit": 4,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15574,
         "subdomain": "robostadion",
@@ -202,7 +202,7 @@
       "published_at": "2026-11-14T15:48:03+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 2959,
         "subdomain": "weeyble-creative",
@@ -233,7 +233,7 @@
       "published_at": "2026-11-09T12:01:35+09:00",
       "limit": 18,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 13436,
         "subdomain": "indiegame",
@@ -264,7 +264,7 @@
       "published_at": "2026-11-09T13:23:54+09:00",
       "limit": 6,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 6766,
         "subdomain": "k-dev",
@@ -388,7 +388,7 @@
       "published_at": "2026-10-18T19:51:39+09:00",
       "limit": 14,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 17413,
         "subdomain": "yokohama-agile",
