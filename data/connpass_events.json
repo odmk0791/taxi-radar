@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-23T05:09:13.975335+09:00",
+  "fetched_at": "2026-11-23T10:16:53.230162+09:00",
   "date": "20261123",
   "count": 13,
   "events": [
@@ -61,7 +61,7 @@
       "owner_id": 128911,
       "owner_nickname": "oyakata2438",
       "owner_display_name": "oyakata2438",
-      "accepted": 19,
+      "accepted": 21,
       "waiting": 0,
       "updated_at": "2026-10-17T22:08:10+09:00"
     },
@@ -309,7 +309,7 @@
       "owner_id": 44407,
       "owner_nickname": "MurabitoL",
       "owner_display_name": "MurabitoL",
-      "accepted": 5,
+      "accepted": 6,
       "waiting": 0,
       "updated_at": "2026-10-30T22:17:34+09:00"
     },
@@ -326,7 +326,7 @@
       "published_at": "2026-09-02T22:38:07+09:00",
       "limit": 43,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15771,
         "subdomain": "68kai",
@@ -357,7 +357,7 @@
       "published_at": "2026-10-25T18:44:47+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": null,
       "address": "東京都文京区春日1-16-21",
       "place": "文京区シビックセンター",
