@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-23T10:16:53.230162+09:00",
+  "fetched_at": "2026-11-23T19:03:18.160863+09:00",
   "date": "20261123",
   "count": 13,
   "events": [
@@ -16,7 +16,7 @@
       "published_at": "2026-09-02T22:38:15+09:00",
       "limit": 12,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 15771,
         "subdomain": "68kai",
@@ -47,7 +47,7 @@
       "published_at": "2026-10-17T22:08:10+09:00",
       "limit": 40,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 4811,
         "subdomain": "techbook-and-ethanol",
@@ -61,7 +61,7 @@
       "owner_id": 128911,
       "owner_nickname": "oyakata2438",
       "owner_display_name": "oyakata2438",
-      "accepted": 21,
+      "accepted": 27,
       "waiting": 0,
       "updated_at": "2026-10-17T22:08:10+09:00"
     },
@@ -78,7 +78,7 @@
       "published_at": "2026-11-13T19:36:04+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "open",
       "group": {
         "id": 16843,
         "subdomain": "kagurazaka-terminal",
@@ -92,9 +92,9 @@
       "owner_id": 513171,
       "owner_nickname": "kawarimidoll",
       "owner_display_name": "カワリミ人形",
-      "accepted": 2,
+      "accepted": 3,
       "waiting": 0,
-      "updated_at": "2026-11-13T19:36:04+09:00"
+      "updated_at": "2026-11-23T17:40:51+09:00"
     },
     {
       "id": 411316,
@@ -109,7 +109,7 @@
       "published_at": "2026-10-28T13:15:03+09:00",
       "limit": 21,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10465,
         "subdomain": "rumicar",
@@ -140,7 +140,7 @@
       "published_at": "2026-09-27T10:30:38+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15267,
         "subdomain": "jawsug-cloudgirl",
@@ -156,7 +156,7 @@
       "owner_display_name": "Nagisa",
       "accepted": 21,
       "waiting": 0,
-      "updated_at": "2026-11-19T16:06:56+09:00"
+      "updated_at": "2026-11-23T14:53:06+09:00"
     },
     {
       "id": 410504,
@@ -171,7 +171,7 @@
       "published_at": "2026-10-24T15:33:52+09:00",
       "limit": 19,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10837,
         "subdomain": "coderdojo-ome",
@@ -202,7 +202,7 @@
       "published_at": "2026-10-26T13:00:22+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10465,
         "subdomain": "rumicar",
@@ -233,7 +233,7 @@
       "published_at": "2026-10-28T13:24:41+09:00",
       "limit": 10,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 10465,
         "subdomain": "rumicar",
@@ -264,7 +264,7 @@
       "published_at": "2026-10-21T14:28:28+09:00",
       "limit": 11,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 15625,
         "subdomain": "tougebu",
@@ -295,7 +295,7 @@
       "published_at": "2026-10-30T22:17:34+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "preopen",
+      "open_status": "close",
       "group": {
         "id": 11168,
         "subdomain": "xddc",
@@ -309,7 +309,7 @@
       "owner_id": 44407,
       "owner_nickname": "MurabitoL",
       "owner_display_name": "MurabitoL",
-      "accepted": 6,
+      "accepted": 7,
       "waiting": 0,
       "updated_at": "2026-10-30T22:17:34+09:00"
     },
@@ -326,7 +326,7 @@
       "published_at": "2026-09-02T22:38:07+09:00",
       "limit": 43,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": {
         "id": 15771,
         "subdomain": "68kai",
@@ -357,7 +357,7 @@
       "published_at": "2026-10-25T18:44:47+09:00",
       "limit": 30,
       "event_type": "participation",
-      "open_status": "open",
+      "open_status": "close",
       "group": null,
       "address": "東京都文京区春日1-16-21",
       "place": "文京区シビックセンター",
